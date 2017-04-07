@@ -1,0 +1,437 @@
+# <a name="get-open-extension"></a>Obter extensão aberta
+
+Obtenha uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) identificada por nome ou nome totalmente qualificado.
+
+A tabela a seguir lista os três cenários em que é possível obter uma extensão aberta de uma instância de recursos com suporte.
+
+|**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
+|:-----|:-----|:-----|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [contact](../resources/contact.md), [event](../resources/event.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md) | Somente extensão aberta.|
+|Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Contato, evento, evento de grupo, mensagem|Uma instância de recurso expandida com a extensão aberta.|
+|Encontre e expanda instâncias de recursos com uma extensão específica. |Contato, evento, evento de grupo, mensagem|Instâncias de recursos expandidas com a extensão aberta.|
+
+
+## <a name="prerequisites"></a>Pré-requisitos
+
+Uma dos seguintes **permissões** é necessária para executar essa API, dependendo do recurso que contém a extensão.
+
+|**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | _Calendars.Read_ | [group event](../resources/event.md) | _Calendars.Read_ | 
+| [Postagem de grupo](../resources/post.md) | _Group.Read.All_ | [mensagem](../resources/message.md) | _Mail.Read_ | 
+| [Contato pessoal](../resources/contact.md) | _Contacts.Read_ |
+ 
+## <a name="http-request"></a>Solicitação HTTP
+
+Esta seção lista a sintaxe de cada um dos três cenários `GET` descritos acima
+
+### <a name="get-a-specific-extension-in-a-known-resource-instance"></a>Obtenha uma extensão específica em uma instância de recurso conhecida
+
+Use a mesma solicitação REST obtendo a instância do recurso e identifique a extensão usando a propriedade de navegação **extensions** dessa instância.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
+GET /groups/{Id}/events/{Id}/extensions/{extensionId}
+GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
+```
+
+
+### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente. 
+
+Use a mesma solicitação REST e, enquanto obtém a instância de recurso, olhe para uma extensão que corresponda com um filtro em sua propriedade de **id** e expanda a instância com a extensão.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+```
+
+### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Filtrar as instâncias do recurso expandidas com uma extensão correspondente 
+
+Use a mesma solicitação REST para obter uma coleção do recurso suportado, filtre a coleção para instâncias que contêm uma extensão com uma propriedade **id** correspondente e expanda essas instâncias com a extensão.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+```
+
+>**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção, para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções dão suporte à obtenção de extensões abertas delas de maneira semelhante.
+
+## <a name="parameters"></a>Parâmetros
+|**Parâmetro**|**Tipo**|**Descrição**|
+|:-----|:-----|:-----|
+|_Parâmetros de URL_|
+|Id|cadeia de caracteres|Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.|
+|extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.|
+
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
+Certifique-se de aplicar a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
+
+|**Nome**|**Valor**|**Descrição**|
+|:---------------|:--------|:-------|
+|$filter|string|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
+|$filter com o operador **any**|string|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.| 
+|$expand|string|Expande uma instância de recurso para incluir uma extensão. |
+
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome       | Valor |
+|:---------------|:----------|
+| Autorização | Bearer %token%|
+
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+## <a name="response"></a>Resposta
+Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.
+## <a name="example"></a>Exemplo
+
+#### <a name="request-1"></a>Solicitação 1
+
+O primeiro exemplo mostra 2 maneiras de referenciar uma extensão e obtém a extensão na mensagem especificada. A resposta é a mesma, independentemente da maneira usada para fazer referência à extensão.
+
+Em primeiro lugar, por nome: 
+
+<!-- {
+  "blockType": "request",
+  "name": "get_opentypeextension_1"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+```
+
+Em segundo lugar, por ID (nome totalmente qualificado):
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+```
+
+#### <a name="response-1"></a>Resposta 1
+Veja a seguir a resposta para o primeiro exemplo.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.opentypeextension"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+    "extensionName": "Com.Contoso.Referral",
+    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+    "companyName": "Wingtip Toys",
+    "dealValue": 500050,
+    "expirationDate": "2015-12-03T10:00:00Z"
+}
+```
+
+****
+
+
+#### <a name="request-2"></a>Solicitação 2
+
+O segundo exemplo faz referência a uma extensão por nome e obtém essa extensão no evento de grupo especificado.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_opentypeextension_2"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions('Com.Contoso.Deal') 
+```
+
+#### <a name="response-2"></a>Resposta 2
+
+Veja a seguir a resposta do segundo exemplo.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.opentypeextension"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
+    "extensionName": "Com.Contoso.Deal",
+    "companyName": "Alpine Skis",
+    "dealValue": 1010100,
+    "expirationDate": "2015-07-03T13:04:00Z"
+}
+```
+
+****
+
+#### <a name="request-3"></a>Solicitação 3
+
+O terceiro exemplo obtém e expande a mensagem especificada, incluindo a extensão retornada de um filtro. O filtro retorna a extensão cujo **id** corresponde a um nome totalmente qualificado.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_opentypeextension_3"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+```
+
+
+#### <a name="response-3"></a>Resposta 3
+
+Veja a seguir a resposta do terceiro exemplo. Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')",
+    "@odata.etag": "W/\"CQAAABYAAACY4MQpaFz9SbqUDe4+bs88AABNsWMM\"",
+    "id": "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===",
+    "changeKey": "CQAAABYAAACY4MQpaFz9SbqUDe4+bs88AABNsWMM",
+    "categories": [
+    ],
+    "createDateTime": "2015-06-19T02:03:31Z",
+    "lastModifiedDateTime": "2015-08-13T02:28:00Z",
+    "subject": "Attached is the requested info",
+    "bodyPreview": "See the images attached.",
+    "body": {
+        "contentType": "HTML",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<style type=\"text/css\" style=\"display:none;\"><!-- P {margin-top:0;margin-bottom:0;} --></style>\r\n</head>\r\n<body dir=\"ltr\">\r\n<div id=\"divtagdefaultwrapper\" style=\"font-size:12pt;color:#000000;background-color:#FFFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;\">\r\n<p>See the images attached. <br>\r\n</p>\r\n</div>\r\n</body>\r\n</html>\r\n"
+    },
+    "importance": "Normal",
+    "hasAttachments": true,
+    "parentFolderId": "AQMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===QAAAA==",
+    "from": {
+        "emailAddress": {
+            "address": "desmond@contoso.com",
+            "name": "Desmond Raley"
+        }
+    },
+    "sender": {
+        "emailAddress": {
+            "address": "desmond@contoso.com",
+            "name": "Desmond Raley"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "address": "wendy@contoso.com",
+                "name": "Wendy Molina"
+            }
+        }
+    ],
+    "ccRecipients": [
+    ],
+    "bccRecipients": [
+    ],
+    "replyTo": [
+    ],
+    "conversationId": "AAQkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===mivdTmQ=",
+    "receivedDateTime": "2015-06-19T02:05:04Z",
+    "sentDateTime": "2015-06-19T02:04:59Z",
+    "isDeliveryReceiptRequested": false,
+    "isReadReceiptRequested": false,
+    "isDraft": false,
+    "isRead": true,
+    "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "Focused",
+    "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "extensions": [ 
+      { 
+        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+        "extensionName": "Com.Contoso.Referral",
+        "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+        "companyName": "Wingtip Toys",
+        "dealValue": 500050,
+        "expirationDate": "2015-12-03T10:00:00Z"
+      }
+     ]
+}
+```
+
+****
+
+#### <a name="request-4"></a>Solicitação 4
+
+O quarto exemplo faz referência a uma extensão por nome totalmente qualificado e obtém essa extensão na postagem de grupo especificada.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_opentypeextension_4"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate') 
+```
+
+#### <a name="response-4"></a>Resposta 4
+
+Veja a seguir a resposta do quarto exemplo. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.opentypeextension"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA%3D%3D')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA%3D')/extensions/$entity",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
+    "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate",
+    "extensionName": "Com.Contoso.Estimate",
+    "companyName": "Contoso",
+    "expirationDate": "2015-07-03T13:04:00Z",
+    "Strings@odata.type": "#Collection(String)",
+    "topPicks": [
+        "Employees only",
+        "Add spouse or guest",
+        "Add family"
+    ]
+}
+```
+
+
+#### <a name="request-5"></a>Solicitação 5
+
+O quinto exemplo analisa todas as mensagens na caixa de correio do usuário conectado para localizar aquelas uma contêm uma extensão correspondente a um filtro e as expande com a inclusão dessa extensão. O filtro retorna extensões cuja propriedade **id** corresponde ao nome da extensão `Com.Contoso.Referral`.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_opentypeextension_5"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
+```
+
+
+####<a name="response-5"></a>Resposta 5
+
+Nessa resposta do quinto exemplo, há apenas uma mensagem na caixa de correio do usuário que tem uma extensão cuja **id** é igual a `Com.Contoso.Referral`.
+
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages",
+  "value": [
+  {
+
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')",
+    "@odata.etag": "W/\"CQAAABYAAACY4MQpaFz9SbqUDe4+bs88AABNsWMM\"",
+    "id": "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===",
+    "changeKey": "CQAAABYAAACY4MQpaFz9SbqUDe4+bs88AABNsWMM",
+    "categories": [
+    ],
+    "createDateTime": "2015-06-19T02:03:31Z",
+    "lastModifiedDateTime": "2015-08-13T02:28:00Z",
+    "subject": "Attached is the requested info",
+    "bodyPreview": "See the images attached.",
+    "body": {
+        "contentType": "HTML",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<style type=\"text/css\" style=\"display:none;\"><!-- P {margin-top:0;margin-bottom:0;} --></style>\r\n</head>\r\n<body dir=\"ltr\">\r\n<div id=\"divtagdefaultwrapper\" style=\"font-size:12pt;color:#000000;background-color:#FFFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;\">\r\n<p>See the images attached. <br>\r\n</p>\r\n</div>\r\n</body>\r\n</html>\r\n"
+    },
+    "importance": "Normal",
+    "hasAttachments": true,
+    "parentFolderId": "AQMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===QAAAA==",
+    "from": {
+        "emailAddress": {
+            "address": "desmond@contoso.com",
+            "name": "Desmond Raley"
+        }
+    },
+    "sender": {
+        "emailAddress": {
+            "address": "desmond@contoso.com",
+            "name": "Desmond Raley"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "address": "wendy@contoso.com",
+                "name": "Wendy Molina"
+            }
+        }
+    ],
+    "ccRecipients": [
+    ],
+    "bccRecipients": [
+    ],
+    "replyTo": [
+    ],
+    "conversationId": "AAQkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===mivdTmQ=",
+    "receivedDateTime": "2015-06-19T02:05:04Z",
+    "sentDateTime": "2015-06-19T02:04:59Z",
+    "isDeliveryReceiptRequested": false,
+    "isReadReceiptRequested": false,
+    "isDraft": false,
+    "isRead": true,
+    "webLink": "https://outlook.office.com/owa/?ItemID=AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===%2FNJTqt5NqHlVnKVBwCY4MQpaFz9SbqUDe4%2Bbs88AAAAAAEJAACY4MQpaFz9SbqUDe4%2Bbs88AAApA4JMAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "Focused",
+    "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
+    "extensions": [ 
+      { 
+        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
+        "extensionName": "Com.Contoso.Referral",
+        "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
+        "companyName": "Wingtip Toys",
+        "dealValue": 500050,
+        "expirationDate": "2015-12-03T10:00:00Z"
+      }
+     ]
+  }
+  ]
+}
+
+```
+
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get openTypeExtension",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
