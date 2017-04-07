@@ -1,0 +1,77 @@
+# <a name="create-rangeborder"></a>Criar RangeBorder
+
+Use essa API para criar uma nova RangeBorder.
+## <a name="prerequisites"></a>Pré-requisitos
+Os seguintes **escopos** são necessários para executar esta API: 
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/names(<name>)/range/format/borders
+POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders
+POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders
+
+```
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | <code> de portador|
+
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça uma representação JSON do objeto [RangeBorder](../resources/rangeborder.md).
+
+
+## <a name="response"></a>Resposta
+Se bem sucedido, este método retorna o código de resposta `201, Created` e o objeto [RangeBorder](../resources/rangeborder.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "create_rangeborder_from_rangeformat"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/borders
+Content-type: application/json
+Content-length: 136
+
+{
+  "id": "id-value",
+  "color": "color-value",
+  "style": "style-value",
+  "sideIndex": "sideIndex-value",
+  "weight": "weight-value"
+}
+```
+No corpo da solicitação, forneça uma representação JSON do objeto [RangeBorder](../resources/rangeborder.md).
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.rangeBorder"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 136
+
+{
+  "id": "id-value",
+  "color": "color-value",
+  "style": "style-value",
+  "sideIndex": "sideIndex-value",
+  "weight": "weight-value"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create RangeBorder",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

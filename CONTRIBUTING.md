@@ -1,10 +1,9 @@
 # <a name="contribute-to-microsoft-graph-documentation"></a>Contribua para a documentação do Microsoft Graph
 
-Agradecemos seu interesse na documentação do Microsoft Graph! 
+Agradecemos seu interesse na documentação do Microsoft Graph!
 
 * [Maneiras de contribuir](#ways-to-contribute)
 * [Antes de podermos aceitar sua solicitação pull](#before-we-can-accept-your-pull-request)
-* [Organização de repositório](#repository-organization)
 * [Use o GitHub, o Git e este repositório](#use-github-git-and-this-repository)
 * [Como usar o Markdown para formatar seu tópico](#how-to-use-markdown-to-format-your-topic)
 * [Markdown-padrão](#standard-markdown)
@@ -12,9 +11,11 @@ Agradecemos seu interesse na documentação do Microsoft Graph!
 
 ## <a name="ways-to-contribute"></a>Maneiras de contribuir
 
-Contribua para a [documentação do Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) dessas maneiras:
+Contribua para a [documentação do Microsoft Graph](http://graph.microsoft.io) dessas maneiras:
 
 * Contribua com artigos por meio do [repositório de documentos do desenvolvedor do Microsoft Graph](https://github.com/microsoftgraph/microsoft-graph-docs)
+    * Envie solicitações de pull separadas em ramificações /beta e/ou /v1.0. Essa etapa é necessária para garantir que as ramificações estão atualizadas até a data com as alterações mais recentes. 
+    * Além disso, envie solicitações de recepção separada para/dominar ramificação. Esta etapa se presta a garantir que o site de documentação do site do Microsoft Graph faça as atualizações de acordo com as alterações mais recentes. 
 * Relatar bugs na documentação via [Problemas no GitHub](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
 * Adicionar solicitações de documentação para o [UserVoice da Plataforma Office Developer](http://officespdev.uservoice.com)
 
@@ -39,12 +40,6 @@ A assinatura do Contrato de Licença de Contribuição (CLA) não lhe concede di
 Você pode baixar o Contrato de Licença de Contribuição (CLA) [aqui](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf). Preencha o formulário e envie-o por email para [officedev@microsoft.com](mailto:officedev@microsoft.com).
 
 Após recebermos e processarmos seu CLA, faremos todo o possível para analisar suas solicitações pull no prazo de dez dias úteis.
-
-## <a name="repository-organization"></a>Organização de repositório
-
-O conteúdo no repositório microsoft-graph-docs é agrupado primeiro pelo idioma do artigo, depois por tópico. O arquivo README.md na raiz de cada diretório de tópicos especifica a estrutura dos artigos dentro do tópico.
-
-Artigos dentro de cada tópico são nomeados por GUID MSDN, não pelo título. Esse é um efeito colateral do nosso processo de gerenciamento de documentos e não pode ser alterado neste momento. É altamente recomendável usar o sumário dentro de cada diretório de tópico para navegar até os arquivos que você deseja exibir ou editar. Confira mais informações em [README.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/README.md).
 
 ## <a name="use-github-git-and-this-repository"></a>Use o GitHub, o Git e este repositório
 
@@ -83,7 +78,7 @@ Limite cada ramificação a um único conceito/artigo para simplificar o fluxo d
 #### <a name="create-a-new-branch"></a>Criar uma nova ramificação
 
 1.    Abra o GitBash.
-2.    Digite `git pull upstream master:<new branch name>` no prompt. Isso cria uma nova ramificação local copiada da última ramificação-mestra do microsoftgraph. **Observação:** Para colaboradores internos, substitua o `master` no comando com a ramificação pela data de publicação que você estiver reproduzindo.
+2.    Digite `git pull upstream master:<new branch name>` no prompt. Isso cria uma nova ramificação local copiada da última ramificação-mestra do *microsoftgraph*. **Observação:** Para colaboradores internos, substitua o `master` no comando com a ramificação pela data de publicação que você estiver reproduzindo.
 3.    Digite `git push origin <new branch name>` no prompt. Isso alertará GitHub para a nova ramificação. Agora você deverá surgir a nova ramificação na sua bifurcação do repositório no GitHub.
 4.    Digite `git checkout <new branch name>` para alternar para sua nova ramificação.
 
@@ -141,7 +136,7 @@ Depois que as alterações são mescladas com êxito no repositório central, vo
 Para excluir sua ramificação, siga estas etapas:
 
 1.    No GitBash, digite `git checkout master` no prompt de comando.  Isso garante que você não fique na ramificação a ser excluída (o que não é permitido).
-2.    Em seguida, digite `git branch -d <branch name>` no prompt de comando.  Isso exclui a ramificação em sua máquina local somente se ela tiver sido mesclada com êxito no repositório upstream. (Você pode superar esse comportamento com o sinalizador `???D`, mas primeiro certifique-se de que você deseja fazer isso.)
+2.    Em seguida, digite `git branch -d <branch name>` no prompt de comando.  Isso exclui a ramificação em sua máquina local somente se ela tiver sido mesclada com êxito no repositório upstream. (Você pode superar esse comportamento com o sinalizador `–D`, mas primeiro certifique-se de que você deseja fazer isso.)
 3.    Por fim, digite `git push origin :<branch name>` no comando prompt (um espaço antes dos dois pontos e nenhum espaço depois deles).   Essa ação excluirá a ramificação em uma bifurcação do github.  
 
 Parabéns, você tem contribuiu com êxito para o projeto.

@@ -1,0 +1,45 @@
+# <a name="location-resource-type"></a>Tipo de recurso Location
+
+Representa informações de localização para um evento.
+
+
+## <a name="properties"></a>Propriedades
+| Propriedade	  | Tipo	   | Descrição                                                     |
+|:----------|:-------|:----------------------------------------------------------------|
+| address | [physicalAddress](physicalAddress.md) |O endereço físico do local. |
+| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
+| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local.              |
+
+
+
+## <a name="json-representation"></a>Representação JSON
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.location"
+}-->
+```json
+{
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "displayName": "string",
+  "locationEmailAddress": "string"
+}
+
+```
+
+## <a name="remarks"></a>Comentários
+
+Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "location resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
