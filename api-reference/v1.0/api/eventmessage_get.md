@@ -1,6 +1,9 @@
 # <a name="get-eventmessage"></a>Obter eventMessage
 
-Recupera as propriedades e os relacionamentos do objeto eventmessage.
+Recupera as propriedades e relações do objeto [eventMessage](../resources/eventmessage.md).
+
+No momento, esta operação retorna corpos de mensagens de eventos somente no formato HTML.
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Read*
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,7 +54,7 @@ Content-length: 248
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
-    "contentType": "",
+    "contentType": "html",
     "content": "content-value"
   },
   "bodyPreview": "bodyPreview-value",

@@ -38,8 +38,8 @@ Uma EventMessage normalmente é encontrada na pasta Caixa de Entrada, na qual el
 | Propriedade	       | Tipo	    |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
-|body|[itemBody](itembody.md)|O corpo da mensagem.|
-|bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem.|
+|body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
+|bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|

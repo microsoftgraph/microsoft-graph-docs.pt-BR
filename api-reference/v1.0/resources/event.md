@@ -35,8 +35,8 @@ Um evento em um calendário.
 | Propriedade	       | Tipo	    |Descrição|
 |:---------------|:--------|:----------|
 |attendees|Coleção [attendee](attendee.md)|A coleção de participantes do evento.|
-|body|[itemBody](itembody.md)|O corpo da mensagem associada ao evento.|
-|bodyPreview|String|A visualização da mensagem associada ao evento.|
+|body|[itemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
+|bodyPreview|String|A visualização da mensagem associada ao evento. Está no formato de texto.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|

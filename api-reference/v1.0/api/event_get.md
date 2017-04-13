@@ -2,6 +2,12 @@
 
 Obtenha as propriedades e as relações do objeto [event](../resources/event.md) especificado.
 
+No momento, esta operação retorna corpos de eventos somente no formato HTML.
+
+Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **event**.
+
+### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
+
 Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 
 
 Por exemplo, o seguinte cabeçalho `Prefer: outlook.timezone` define as horas de início e de término na resposta como Hora Padrão do Leste.
@@ -13,7 +19,6 @@ Se o evento foi criado em um fuso horário diferente, as horas de início e de t
 
 Você pode usar as propriedades **OriginalStartTimeZone** e **OriginalEndTimeZone** no recurso **event** para descobrir o fuso horário usado quando o evento foi criado.
 
-Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **event**.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read*
@@ -43,7 +48,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | <token> de portador. Obrigatório. |
-| Preferir: | outlook.timezone | O fuso horário padrão para eventos na resposta. |
+| Prefira: outlook.timezone | string | O fuso horário padrão para eventos na resposta. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -51,16 +56,21 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [event](../resources/event.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+O primeiro exemplo obtém o evento especificado. Especifica o seguinte:
+
+- um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
+- Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}
+Prefer: outlook.timezone="Pacific Standard Time"
+
+GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato HTML padrão.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,39 +79,64 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 285
+Preference-Applied: outlook.timezone="Pacific Standard Time"
+Content-length: 1928
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
-  },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true,
-  "start": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },
-  "end": {
-    "dateTime": "datetime-value",
-    "timeZone": "timezone-value"
-  },        
-  "location": {
-    "displayName": "displayName-value"
-  },
-  "organizer": {
-    "emailAddress": {
-      "address": "address-value",
-      "name": "name-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
+    "id":"AAMkAGIAAAoZDOFAAA=",
+    "subject":"Orientation ",
+    "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body><p>Dana, this is the time you selected for our orientation. Please bring the notes I sent you.</p></body></html>"
+    },
+    "start":{
+        "dateTime":"2017-04-21T10:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-04-21T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location":{
+        "displayName":"Assembly Hall"
+    },
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Fanny Downs",
+                "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        },
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Dana Swope",
+                "address":"danas@a830edad905084922E17020313.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Fanny Downs",
+            "address":"fannyd@a830edad905084922E17020313.onmicrosoft.com"
+        }
     }
-  }
 }
 ```
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)
