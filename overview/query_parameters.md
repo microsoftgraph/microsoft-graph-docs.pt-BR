@@ -32,9 +32,13 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/addre
 ### <a name="search"></a>$search
 Para restringir os resultados de uma solicitação que correspondam a um critério de pesquisa, use o parâmetro de consulta **$search**. 
 
->  **Observação**: Atualmente, você pode pesquisar mensagens, mas não contatos ou eventos. A solicitação **$search** retorna até 250 resultados. Não é possível usar **$filter** ou **$orderby** em uma solicitação de pesquisa.
+>  **Observação**: No momento, é possível usar **$search** em coleções de [message](../api-reference/v1.0/resources/message.md) e [person](../api-reference/beta/resources/person.md), mas não em [contact](../api-reference/v1.0/resources/contact.md) ou [event](../api-reference/v1.0/resources/event.md). Uma solicitação de **$search** retorna até 250 resultados. Não é possível usar **$filter **ou **$orderby** em uma solicitação de **$search**.
 
-Os critérios de pesquisa são expressos usando a sintaxe de consulta avançada (AQS). Os resultados são classificados pela data e hora em que a mensagem foi enviada.
+Os critérios de pesquisa são expressos usando a sintaxe de consulta avançada (AQS). 
+
+**Aplicação de $search a mensagens**
+
+Os resultados da pesquisa são classificados pela data e hora em que a mensagem foi enviada.
 
 Você pode especificar as propriedades a seguir em uma **message** em um critério **$search**: **attachments**, **bccRecipients**, **body**, **category**, **ccRecipients**, **content**, **from**, **hasAttachments**, **participants**, **receivedDateTime**, **sender**, **subject**, **toRecipients**
 

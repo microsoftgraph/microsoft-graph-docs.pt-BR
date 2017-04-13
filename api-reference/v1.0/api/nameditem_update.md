@@ -11,7 +11,7 @@ PATCH /workbook/names(<name>)
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -20,6 +20,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade       | Tipo	    |Descrição|
 |:---------------|:--------|:----------|
 |visible|booliano|Determina se o objeto fica visível ou não.|
+|comment|    string    |Representa o comentário associado a esse nome.|
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [NamedItem](../resources/nameditem.md) atualizado no corpo da resposta.
@@ -38,6 +39,8 @@ Content-length: 87
 {
   "name": "name-value",
   "type": "type-value",
+  "scope": "scope-value",
+  "comment": "comment-value",
   "value": {
   },
   "visible": true

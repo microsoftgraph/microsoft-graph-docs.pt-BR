@@ -4,6 +4,8 @@ Recupere as propriedades e os relacionamentos de um objeto [message](../resource
 
 Como o recurso **message** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
+No momento, essa operação retorna corpos de mensagens somente no formato HTML.
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Read*  
 ## <a name="http-request"></a>Solicitação HTTP

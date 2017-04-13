@@ -1,6 +1,9 @@
 # <a name="list-messages"></a>Listar mensagens
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).
+
+No momento, essa operação retorna corpos de mensagens somente no formato HTML.
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.Read; Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
@@ -27,7 +30,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | <token> de portador. Obrigatório.  |
-| Content-Type   | application/json  | 
+ 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

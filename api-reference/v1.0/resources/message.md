@@ -40,8 +40,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade	       | Tipo	    |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
-|body|[itemBody](itembody.md)|O corpo da mensagem.|
-|bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem.|
+|body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
+|bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
@@ -65,22 +65,22 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem local. uniqueBody não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo usuário da consulta ?$select=uniqueBody.|
+|uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
-**Removendo o script da propriedade Body**
+**Removendo o script da propriedade de corpo**
 
-O corpo da mensagem pode ser HTML ou texto. Se o corpo for HTML, por padrão, qualquer HTML potencialmente não seguro (por exemplo, JavaScript) inserido na propriedade Body será removido antes que o conteúdo do corpo seja retornado em uma resposta REST. Para obter o conteúdo HTML completo original, inclua o seguinte cabeçalho da solicitação HTTP:
+O corpo da mensagem pode estar em HTML ou em texto. Se o corpo for HTML, por padrão, qualquer HTML potencialmente não seguro (por exemplo, JavaScript) inserido na propriedade **body** será removido antes que o conteúdo do corpo seja retornado em uma resposta REST. Para obter o conteúdo HTML completo original, inclua o seguinte cabeçalho da solicitação HTTP:
 ```
 Prefer: outlook.allow-unsafe-html
 ```
 
-**Definindo as propriedades From e Sender**
+**Definindo as propriedades from e sender**
 
 Quando uma mensagem está sendo redigida, na maioria dos casos, as propriedades From e Sender representam o mesmo usuário conectado, a menos que ele seja atualizado conforme descrito nos seguintes cenários:
 
-- A propriedade **From** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **SendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal de Gerenciamento do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **From** como um desses usuários que têm direitos **SendAs** para essa caixa de correio.
-- A propriedade **Sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado um ou mais usuários como sendo capazes de enviar mensagens dessa caixa de correio. O proprietário da caixa de correio pode fazer a delegação no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, a propriedade **Sender** é definida como a conta desse representante, enquanto a propriedade **From** permanece como o proprietário da caixa de correio. Você pode definir programaticamente a propriedade **Sender** como um usuário com direito de representante para essa caixa de correio.
+- A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal de Gerenciamento do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
+- A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, a propriedade **sender** é definida como a conta desse representante, enquanto a propriedade **from** Você pode definir programaticamente a propriedade **sender** para um usuário com direito de representante para essa caixa de correio.
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo	    |Descrição|
