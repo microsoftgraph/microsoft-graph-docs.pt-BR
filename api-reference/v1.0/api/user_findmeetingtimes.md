@@ -3,13 +3,6 @@ Localize as sugestões de hora da reunião com base no organizador e na disponib
 
 Se **findMeetingTimes** não retorna nenhuma sugestão de reunião, a resposta seria indicar um motivo na propriedade **emptySuggestionsReason**. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
 
-**Observação**
-
-Atualmente, **findMeetingTimes** presume o seguinte:
-
-- Qualquer [participante](../resources/attendee.md) que seja uma pessoa (em vez de um recurso) é um participante necessário. Portanto, especifique `required` para uma pessoa e `resource` para um recurso na propriedade **tipo** correspondente, como parte do parâmetro de conjunto **participantes**.
-- Qualquer sugestão de reunião ocorre apenas durante as horas de trabalho do organizador ou de um participante. Você pode ignorar especificando a propriedade **activityDomain** de um [timeConstraint](../resources/timeConstraint.md). 
-
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.Read.Shared* ou *Calendars.ReadWrite.Shared*
@@ -22,24 +15,37 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor|
 |:---------------|:----------|
-| Authorization  | <code> de portador|
-| Prefira: outlook.timezone | Uma cadeia de caracteres que representa um fuso horário específico para a resposta; por exemplo, "Hora Oficial do Pacífico". |
+| Autorização  | <code>. Required. de portador.|
+| Prefira: outlook.timezone | Uma cadeia de caracteres que representa um fuso horário específico para a resposta; por exemplo, "Hora Oficial do Pacífico". Opcional. UTC será usado se esse cabeçalho não for especificado.|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
-Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, especifique um objeto JSON para cada um dos parâmetros necessários no corpo da solicitação. Com base nos parâmetros especificados,**findMeetingTimes** verifica o status disponível/ocupado nos calendários principais do organizador e dos participantes. A ação calcula os melhores possíveis horários de reuniões e retorna as sugestões de reunião.
+Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, especifique um objeto JSON para cada um dos parâmetros necessários no corpo da solicitação. 
 
 
 | Parâmetro       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|attendees|Coleção [attendeeBase](../resources/attendeebase.md)|Uma coleção de participantes ou recursos da reunião. Uma coleção vazia faz com que **findMeetingTimes** procure gratuitamente alocações de tempo somente para o organizador.|
-|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Os requisitos do organizador sobre o local da reunião, tal como se é necessário sugerir de um local de encontro, ou há locais específicos apenas onde a reunião pode ocorrer.|
-|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|O intervalo de tempo entre o início e o término da reunião. Você pode especificar um fuso horário como parte das propriedades de **início** e **término** para esse parâmetro. No entanto, esse fuso horário afeta apenas o parâmetro **timeConstraint**; os valores de tempo retornados na resposta, se houver, ainda estarão em UTC por padrão. Você pode usar o `Prefer: outlook.timezone` cabeçalho da solicitação para definir um fuso horário específico para os valores de tempo na resposta. |
-|meetingDuration|Edm.Duration|A duração da reunião, indicada no formato [ISO8601](http://www.iso.org/iso/iso8601). Por exemplo, 1 hora é indicada como "PT1H", onde "P" é o designador de duração, "T" é o designador de horário, "H" é o designador de hora. Se a duração da reunião não for especificada, **findMeetingTimes** usará o padrão de 30 minutos. |
-|maxCandidates|Edm.Int32|O número máximo de sugestões de horários de reunião a ser retornados.|
-|isOrganizerOptional|Edm.Boolean|`True`Se a presença do organizador não for necessária, `false` caso contrário.|
-|returnSuggestionReasons|Edm.Boolean|`True` para retornar um motivo para cada sugestão de reunião na propriedade **suggestionReason**. O padrão é `false` para não retornar essa propriedade.|
-|minimumAttendeePercentage|Edm.Double| O mínimo necessário de [confiança](#the-confidence-of-a-meeting-suggestion) para um intervalo de tempo a ser retornado na resposta. É um valor de % variando de 0 a 100. |
+|attendees|Coleção [attendeeBase](../resources/attendeebase.md)|Uma coleção de participantes ou recursos da reunião. Como findMeetingTimes pressupõe que qualquer participante que seja uma pessoa será sempre obrigatório, especifique `required` para uma pessoa e `resource` para um recurso na propriedade **type** correspondente. Uma coleção vazia faz com que **findMeetingTimes** procure gratuitamente alocações de tempo somente para o organizador. Opcional.|
+|isOrganizerOptional|Edm.Boolean|Especifique `True` se o organizador não tiver necessariamente que participar. O padrão é `false`. Opcional.|
+|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Os requisitos do organizador sobre o local da reunião, tal como se é necessário sugerir de um local de encontro, ou há locais específicos apenas onde a reunião pode ocorrer. Opcional.|
+|maxCandidates|Edm.Int32|O número máximo de sugestões de horários de reunião a ser retornados. Opcional.|
+|meetingDuration|Edm.Duration|A duração da reunião, indicada no formato [ISO8601](http://www.iso.org/iso/iso8601). Por exemplo, 1 hora é indicada como "PT1H", onde "P" é o designador de duração, "T" é o designador de horário, "H" é o designador de hora. Se a duração da reunião não for especificada, **findMeetingTimes** usará o padrão de 30 minutos. Opcional.|
+|minimumAttendeePercentage|Edm.Double| O mínimo necessário de [confiança](#the-confidence-of-a-meeting-suggestion) para um intervalo de tempo a ser retornado na resposta. É um valor de % variando de 0 a 100. Opcional.|
+|returnSuggestionReasons|Edm.Boolean|Especifique `True` para retornar um motivo para cada sugestão de reunião na propriedade **suggestionReason**. O padrão é `false` para não retornar essa propriedade. Opcional.|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Qualquer restrição de tempo para uma reunião, o que pode incluir a natureza da reunião (propriedade **activityDomain**) e possíveis intervalos de tempo da reunião (propriedade **timeSlots**). **findMeetingTimes** pressupõe **activityDomain** como `work` se você não especificar este parâmetro. Opcional.|
+
+A tabela a seguir descreve as restrições que você pode especificar ainda mais no parâmetro **timeConstraint**.
+
+|**valor activityDomain em timeConstraint**|**Sugestões de horário para reuniões**|
+|:-----|:-----|
+|trabalho| As sugestões são nas horas de trabalho do usuário que são definidas na configuração do calendário do usuário e podem ser personalizadas pelo usuário ou administrador. As horas de trabalho padrão são de segunda a sexta, das 8h às 17h, no fuso horário definido para a caixa de correio. Este é o valor padrão se nenhum **activityDomain** for especificado. |
+|pessoal| As sugestões são dentro das horas de trabalho do usuário, e sábado e domingo. O padrão é de segunda a sexta, das 8h às 17h, na configuração de fuso horário da caixa de correio.|
+|irrestrito | As sugestões podem ser todas as horas do dia, todos os dias da semana.|
+|desconhecido | Não use esse valor, uma vez que ele será substituído no futuro. Atualmente, se comporta da mesma forma que o `work`. Altere qualquer código existente para usar o `work`, `personal` ou `unrestricted` conforme apropriado.
+
+
+Com base nos parâmetros especificados,**findMeetingTimes** verifica o status disponível/ocupado nos calendários principais do organizador e dos participantes. A ação calcula os melhores possíveis horários de reuniões e retorna as sugestões de reunião.
+
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o recurso [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) no corpo da resposta. 
@@ -48,16 +54,18 @@ Um **meetingTimeSuggestionsResult** inclui uma coleção de sugestões de reuni�
 
 Por padrão, cada sugestão de horário de reunião é retornado em UTC. 
 
+Se **findMeetingTimes** não retorna nenhuma sugestão de reunião, a resposta seria indicar um motivo na propriedade **emptySuggestionsReason**. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
+
 ### <a name="the-confidence-of-a-meeting-suggestion"></a>A confiança de uma sugestão de reunião
 
 A propriedade **confidence** de uma **meetingTimeSuggestion** varia de 0% a 100% e representa a chance de que todos os participantes compareçam à reunião, com base em seu status disponível/ocupado:
 
 - Para cada participante, um status livre para um período de tempo de reunião especificado corresponde à chance de 100% de presença, status desconhecido 49% e status ocupado 0%.
 - A confiança na sugestão de um horário de reunião é calculada pela média da chance de presença de todos os participantes especificados para essa reunião.
-- Se houver diversas sugestões de horário de reunião, a ação **findMeetingTimes** primeiramente classifica as sugestões por seu valor de confiança computado que vai de alto para baixo. Se houver sugestões com a mesma confiança, a ação ordena essas sugestões em ordem cronológica.
 - Você pode usar o parâmetro opcional **minimumAttendeePercentage** **findMeetingTimes** para especificar que apenas as sugestões de horário da reunião com pelo menos determinado nível de confiança retornem. Por exemplo, você pode especificar uma **minimumAttendeePercentage** de 80% se você quiser apenas sugestões que tenham uma chance de 80% ou mais de que todos os participantes comparecerão. Se você não especificar **minimumAttendeePercentage**, **findMeetingTimes** pressupõe um valor de 50%.
+- Se houver diversas sugestões de horário de reunião, a ação **findMeetingTimes** primeiramente classifica as sugestões por seu valor de confiança computado que vai de alto para baixo. Se houver sugestões com a mesma confiança, a ação ordena essas sugestões em ordem cronológica.
 
-Por exemplo, se uma sugestão de horário de reunião envolve 3 participantes com o seguinte status livre/ocupado:
+Por exemplo, se uma sugestão de horário de reunião envolve três participantes com o seguinte status livre/ocupado:
 
 |**Participante**|**Status disponível/ocupado**|**% de chance de comparecer**|
 |:-----|:-----|:-----|
