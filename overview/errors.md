@@ -16,27 +16,27 @@ A tabela a seguir lista e descreve os códigos de status HTTP que podem ser reto
 
 | Código de status | Mensagem de status                  | Descrição                                                                                                                            |
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
-| 400         | Solicitação Incorreta                     | Não é possível processar a solicitação porque está incorreta ou mal feita.                                                                       |
-| 401         | Não Autorizado                    | As informações de autenticação necessárias estão ausentes ou não são válidas para o recurso.                                                   |
-| 403         | Proibido                       | Acesso negado ao recurso solicitado. O usuário pode não ter permissão suficiente.                                                 |
-| 404         | Não Encontrado                       | O recurso solicitado não existe.                                                                                                  |
-| 405         | Método Não Permitido              | O método HTTP na solicitação não é permitido no recurso.                                                                         |
-| 406         | Não Aceitável                  | Esse serviço não dá suporte ao formato solicitado no cabeçalho Accept.                                                                |
-| 409         | Conflito                        | O estado atual está em conflito com o que a solicitação espera. Por exemplo, a pasta pai especificada não existe.                   |
-| 410         | Sumiu                            | O recurso solicitado não está mais disponível no servidor.                                               |
-| 411         | Comprimento Solicitado                 | É necessário um cabeçalho Content-Length na solicitação.                                                                                    |
-| 412         | Falha na Pré-condição             | Uma pré-condição fornecida na solicitação (como um cabeçalho if-match) não corresponde ao estado atual do recurso.                       |
-| 413         | Entidade de Solicitação Muito Grande        | O tamanho da solicitação excede o limite máximo.                                                                                            |
-| 415         | Tipo de Mídia Não Suportado          | O tipo de conteúdo da solicitação é um formato sem suporte pelo serviço.                                                      |
-| 416         | Intervalo Solicitado Não Satisfatório | O intervalo de bytes especificado é inválido ou está indisponível.                                                                                    |
-| 422         | Entidade Não Processável            | Não é possível processar a solicitação porque ela está semanticamente incorreta.                                                                       |
-| 429         | Muitos Pedidos               | O aplicativo cliente foi restringido e não deve tentar repetir a solicitação antes de determinado intervalo de tempo.                |
-| 500         | Erro Interno do Servidor           | Ocorreu um erro interno do servidor ao processar a solicitação.                                                                       |
-| 501         | Não Implementado                 | O recurso solicitado não foi implementado.                                                                                               |
-| 503         | Serviço Indisponível             | O serviço está temporariamente indisponível para manutenção ou está sobrecarregado. Você pode repetir a solicitação após um atraso, cujo comprimento pode ser especificado em um cabeçalho Retry-After.|
-| 504         | Tempo Limite do Gateway                 | O servidor, ao atuar como um proxy, não recebeu uma resposta em tempo hábil do servidor upstream necessário para acessar a tentativa de concluir a solicitação. Pode ocorrer com 503. |
-| 507         | Armazenamento Insuficiente            | A cota máxima de armazenamento foi atingida.                                                                                            |
-| 509         | Limite de Largura de Banda Excedido        | Seu aplicativo foi limitado por exceder o limite máximo de largura de banda. O aplicativo pode tentar a solicitação novamente depois de decorrido algum tempo. |
+| 400         | Solicitação Incorreta (Bad Request)                     | Não é possível processar a solicitação porque está incorreta ou mal feita.                                                                       |
+| 401         | Não Autorizado (Unauthorized)                    | As informações de autenticação necessárias estão ausentes ou não são válidas para o recurso.                                                   |
+| 403         | Proibido (Forbidden)                       | Acesso negado ao recurso solicitado. O usuário pode não ter permissão suficiente.                                                 |
+| 404         | Não Encontrado (Not Found)                       | O recurso solicitado não existe.                                                                                                  |
+| 405         | Método Não Permitido (Method Not Allowed)              | O método HTTP na solicitação não é permitido no recurso.                                                                         |
+| 406         | Não Aceitável (Not Acceptable)                  | Esse serviço não dá suporte ao formato solicitado no cabeçalho Accept.                                                                |
+| 409         | Conflito (Conflict)                        | O estado atual está em conflito com o que a solicitação espera. Por exemplo, a pasta pai especificada não existe.                   |
+| 410         | Sumiu (Gone)                            | O recurso solicitado não está mais disponível no servidor.                                               |
+| 411         | Comprimento Solicitado (Length Required)                 | É necessário um cabeçalho Content-Length na solicitação.                                                                                    |
+| 412         | Falha na Pré-condição (Precondition Failed)             | Uma pré-condição fornecida na solicitação (como um cabeçalho if-match) não corresponde ao estado atual do recurso.                       |
+| 413         | Entidade de Solicitação Muito Grande (Request Entity Too Large)        | O tamanho da solicitação excede o limite máximo.                                                                                            |
+| 415         | Tipo de Mídia Não Suportado (Unsupported Media Type)          | O tipo de conteúdo da solicitação é um formato sem suporte pelo serviço.                                                      |
+| 416         | Intervalo Solicitado Não Satisfatório (Requested Range Not Satisfiable) | O intervalo de bytes especificado é inválido ou está indisponível.                                                                                    |
+| 422         | Entidade Não Processável (Unprocessable Entity)            | Não é possível processar a solicitação porque ela está semanticamente incorreta.                                                                       |
+| 429         | Muitos Pedidos (Too Many Requests)               | O aplicativo cliente foi restringido e não deve tentar repetir a solicitação antes de determinado intervalo de tempo.                |
+| 500         | Erro Interno do Servidor (Internal Server Error)           | Ocorreu um erro interno do servidor ao processar a solicitação.                                                                       |
+| 501         | Não Implementado (Not Implemented)                 | O recurso solicitado não foi implementado.                                                                                               |
+| 503         | Serviço Indisponível (Service Unavailable)             | O serviço está temporariamente indisponível para manutenção ou está sobrecarregado. Você pode repetir a solicitação após um atraso, cujo comprimento pode ser especificado em um cabeçalho Retry-After.|
+| 504         | Tempo Limite do Gateway (Gateway Timeout)                 | O servidor, ao atuar como um proxy, não recebeu uma resposta em tempo hábil do servidor upstream necessário para acessar a tentativa de concluir a solicitação. Pode ocorrer com 503. |
+| 507         | Armazenamento Insuficiente (Insufficient Storage)            | A cota máxima de armazenamento foi atingida.                                                                                            |
+| 509         | Limite de Largura de Banda Excedido (Bandwidth Limit Exceeded)        | Seu aplicativo foi limitado por exceder o limite máximo de largura de banda. O aplicativo pode tentar a solicitação novamente depois de decorrido algum tempo. |
 
 A resposta de erro é um único objeto JSON que contém uma propriedade única chamada **error**. Esse objeto inclui todos os detalhes do erro. Você pode usar as informações retornadas aqui em vez de ou além do código de status HTTP. Este é um exemplo de um corpo de erro JSON completo.
 
@@ -88,9 +88,9 @@ Dentro da resposta de erro há um recurso de erro que inclui as seguintes propri
 
 | Nome da propriedade  | Valor                  | Descrição\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **código**       | cadeia de caracteres                 | Uma cadeia de caracteres de código de erro para o erro ocorrido                                                            |
-| **mensagem**    | string                 | Uma mensagem pronta para o desenvolvedor sobre o erro ocorrido. Isso não deve ser exibido para o usuário diretamente. |
-| **innererror** | objeto error           | Opcional. Objetos error adicionais que podem ser mais específicos do que o erro de nível superior.                     |
+| **code**       | string                 | Uma cadeia de caracteres de código de erro para o erro ocorrido                                                            |
+| **message**    | string                 | Uma mensagem pronta para o desenvolvedor sobre o erro ocorrido. Isso não deve ser exibido para o usuário diretamente. |
+| **innererror** | error object           | Opcional. Objetos error adicionais que podem ser mais específicos do que o erro de nível superior.                     |
 <!-- {
   "type": "#page.annotation",
   "description": "Understand the error format for the API and error codes.",
