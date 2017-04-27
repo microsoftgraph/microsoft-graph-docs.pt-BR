@@ -1,7 +1,7 @@
 
 # <a name="microsoft-graph-app-authentication-using-azure-ad"></a>Autenticação do aplicativo Microsoft Graph usando o Azure AD
 
-Este artigo apresenta uma visão detalhada de um exemplo de fluxo de autenticação e autorização para um aplicativo Microsoft Graph. Este exemplo usa o Azure Active Directory (Azure AD), o provedor de autenticação e o <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Fluxo de Concessão de Código de Autorização</a> como fluxo de autenticação. Este exemplo mostrará como usar o Azure AD em um aplicativo Microsoft Graph para autenticar um usuário, obter um token de acesso e renovar um token de acesso usando um token de atualização.
+Este artigo apresenta uma visão detalhada de um exemplo de fluxo de autenticação e autorização para um aplicativo Microsoft Graph. Este exemplo usa o Azure Active Directory (Azure AD) como o provedor de autenticação e o <a href="https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx" target="_newtab">Fluxo de Concessão de Código de Autorização</a> como fluxo de autenticação. Este exemplo mostrará como usar o Azure AD em um aplicativo Microsoft Graph para autenticar um usuário, obter um token de acesso e renovar um token de acesso usando um token de atualização.
 
 Para fluxos de concessão de código, o processo de autenticação pode ser dividido em duas etapas básicas:
 
@@ -82,11 +82,11 @@ grant_type=authorization_code
 
 | Nome do parâmetro  | Valor  | Descrição                                                                                            |
 |:----------------|:-------|:-------------------------------------------------------------------------------------------------------|
-| *client_id*     | cadeia de caracteres | A ID do cliente criada para o seu aplicativo.  |
-| *client_secret*  | cadeia de caracteres | A chave criada para o aplicativo. Esse valor é o mesmo valor da seção **Chaves** da página de configuração do aplicativo no Portal de Gerenciamento do Azure|
-| *redirect_uri*  | cadeia de caracteres | A URL de redirecionamento para a qual o navegador é enviado quando a autenticação é concluída.  |
+| *client_id*     | string | A ID do cliente criada para o seu aplicativo.  |
+| *client_secret*  | string | A chave criada para o aplicativo. Esse valor é o mesmo valor da seção **Chaves** da página de configuração do aplicativo no Portal de Gerenciamento do Azure|
+| *redirect_uri*  | string | A URL de redirecionamento para a qual o navegador é enviado quando a autenticação é concluída.  |
 | *código*  | string | O código de autorização. O valor do parâmetro de consulta `code` retornado da resposta à solicitação de autorização. |
-| *recurso*   | cadeia de caracteres | O recurso que você deseja acessar. Para chamar a API do Microsoft Graph, defina esse valor de parâmetro como "https://graph.microsoft.com/".|
+| *recurso*   | string | O recurso que você deseja acessar. Para chamar a API do Microsoft Graph, defina esse valor de parâmetro como "https://graph.microsoft.com/".|
 
 O trecho a seguir mostra um exemplo da carga de solicitação usada para adquirir o token de acesso OAuth 2.0 inicial:
 
@@ -154,11 +154,11 @@ grant_type=refresh_token
 
 | Nome do parâmetro  | Valor  | Descrição                                                                                                                                         |
 |:----------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| *client_id*     | cadeia de caracteres | A ID do cliente criada para o aplicativo.  |
-| *redirect_uri*  | cadeia de caracteres | A URL de redirecionamento para a qual o navegador é enviado quando a autenticação é concluída. Isso deve corresponder ao valor *redirect_uri* usado na primeira solicitação. |
-| *client_secret* | cadeia de caracteres | Um dos valores de Chaves criados para o aplicativo.                                                                                                     |
-| *refresh_token* | cadeia de caracteres | O token de atualização recebido anteriormente.    |
-| *recurso*      | cadeia de caracteres | O recurso que você deseja acessar.|
+| *client_id*     | string | A ID do cliente criada para o aplicativo.  |
+| *redirect_uri*  | string | A URL de redirecionamento para a qual o navegador é enviado quando a autenticação é concluída. Isso deve corresponder ao valor *redirect_uri* usado na primeira solicitação. |
+| *client_secret* | string | Um dos valores de Chaves criados para o aplicativo.                                                                                                     |
+| *refresh_token* | string | O token de atualização recebido anteriormente.    |
+| *recurso*      | string | O recurso que você deseja acessar.|
 
 Observe que essa solicitação é quase idêntica à solicitação de aquisição de token inicial. Há duas diferenças na carga de solicitação, isto é, o parâmetro `grant_type` agora tem o valor `refresh_token` (em vez de `code`).
  

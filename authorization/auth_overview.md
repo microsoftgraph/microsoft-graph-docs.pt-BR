@@ -35,8 +35,8 @@ A tabela a seguir resume os principais recursos compatíveis com os pontos de ex
    </tr>
   <tr>
     <td>Tipos de aplicativo compatíveis</td>
-    <td style="vertical-align: text-top;"><p>Aplicativos Web</p><p>APIs da Web</p><p>Aplicativos móveis e nativos</p><p>Aplicativo de página única (SPA)</p><p>APIs da Web autônomas</p><p>Daemons e aplicativos do lado do servidor</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">mais informações</a></p></td> 
-    <td style="vertical-align: text-top;"><p>Aplicativos Web</p><p>APIs da Web</p><p>Aplicativos móveis e nativos</p><p>Aplicativo de página única (SPA)</p><p>Daemons e aplicativos do lado do servidor</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/" target="_newtab">mais informações</a></td>
+    <td style="vertical-align: text-top;"><p>Aplicativos Web</p><p>APIs da Web</p><p>Aplicativos móveis e nativos</p><p>Aplicativo de página única (SPA)</p><p>APIs da Web autônomas</p><p>Aplicativos do lado do servidor/Daemons</p><p>Aplicativos de Provedor de Soluções na Nuvem</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/" target="_newtab">mais informações</a></p></td> 
+    <td style="vertical-align: text-top;"><p>Aplicativos Web</p><p>APIs da Web</p><p>Aplicativos móveis e nativos</p><p>Aplicativo de página única (SPA)</p><p>Aplicativos do lado do servidor/Daemons</p><p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-flows/" target="_newtab">mais informações</a></td>
    </tr>
   <tr>
     <td>Políticas de dispositivo de acesso condicional</td>

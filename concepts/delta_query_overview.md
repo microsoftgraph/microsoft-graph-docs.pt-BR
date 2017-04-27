@@ -20,20 +20,20 @@ O padrão típico de chamada corresponde ao que segue:
 
 Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `nextLink` ou `deltaLink`. A URL `nextLink` inclui um _skipToken_ e uma URL `deltaLink` inclui um _deltaToken_. 
 
- Esses tokens são completamente opacos para o cliente. Isso é tudo o que você precisa saber sobre eles:
+Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você precisa saber sobre eles:
 
 - Cada token reflete o estado e representa um instantâneo do recurso dessa fase do rastreamento de alterações. 
-- Esses tokens de estado também codificam e incluem outros parâmetros da consulta (como `$select` se o recurso o aceita) especificados na solicitação de consulta delta inicial, para que você não tenha repeti-los em solicitações de consulta delta subsequentes.
-- Ao realizar a consulta delta, você poderá simplesmente copiar e aplicar a URL `nextLink` ou `deltaLink`, assim como é para a próxima chamada de função **delta** sem precisar inspecionar o conteúdo da URL, incluindo seu token de estado.
+- Os tokens de estado também codificam e incluem outros parâmetros da consulta (como `$select`) especificados na solicitação de consulta delta inicial. Portanto, ele não é necessário repeti-los em solicitações de consulta delta subsequentes.
+- Ao realizar a consulta delta, você pode copiar e aplicar a URL `nextLink` ou `deltaLink` à próxima chamada de função **delta** sem precisar inspecionar o conteúdo da URL, incluindo seu token de estado.
 
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente os parâmetros de especificados nos parâmetros `nextLink` ou `deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
+Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solicitação inicial. O Microsoft Graph codifica automaticamente o parâmetro especificado nos parâmetros `nextLink` ou `deltaLink` fornecidos na resposta. O aplicativo de chamada só precisa especificar os parâmetros de consulta desejados uma vez antecipados. O Microsoft Graph adiciona os parâmetros especificados automaticamente para todas as solicitações subsequentes.
 
 Para usuários e grupos, existem restrições sobre como usar alguns parâmetros de consulta:
 
--   Se um `$select` parâmetro de consulta é usado, isso indica que o cliente prefere somente controlar alterações no rastreamento das propriedades ou das relações especificadas na instrução `$select`. Isso significa que se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
+-   Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
 -   Não há suporte para `$expand`.
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representação de recurso na resposta da consulta delta
@@ -42,7 +42,7 @@ Para usuários e grupos, existem restrições sobre como usar alguns parâmetros
 
 -   Instâncias atualizadas são representadas por seus **id** com *pelo menos* as propriedades que foram atualizadas, mas podem ser incluídas propriedades adicionais.
 
--   As alterações nos relacionamentos entre os usuários e os grupos são representadas como anotações na representação do recurso padrão. Essas anotações usarão o formato `propertyName@delta`, e aparecerão apenas quando o cliente optar explicitamente por rastrear as alterações no relacionamento usando o parâmetro `$select`.
+-   As alterações nos relacionamentos entre os usuários e os grupos são representadas como anotações na representação do recurso padrão. Essas anotações usam o formato `propertyName@delta` e aparecem apenas quando o cliente opta explicitamente por rastrear as alterações no relacionamento usando o parâmetro `$select`.
 
 -   As instâncias removidas são representadas usando apenas sua **id** e um nó `@removed`.  O nó `@removed` pode incluir informações adicionais sobre o porquê de a instância ter sido removida.
 
@@ -50,7 +50,7 @@ Para usuários e grupos, existem restrições sobre como usar alguns parâmetros
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-A consulta delta é suportada atualmente no modo de visualização no ponto de extremidade /beta do Microsoft Graph para os seguintes recursos.
+A consulta delta é suportada atualmente no modo de visualização no ponto de extremidade /beta do Microsoft Graph para os seguintes recursos:
 
 | **Coleção de recursos** | **API** |
 |:------ | :------ |
@@ -72,7 +72,7 @@ As mesmas [permissões](../authorization/permission_scopes.md) necessárias para
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
-Só há suporte para o controle de alterações nos relacionamentos em usuários e grupos dentro da classe de recursos específicos para os quais as alterações estão sendo controladas. Por exemplo, se um cliente estiver rastreando alterações em *grupos* e tiver selecionado o relacionamento **membros**, ele só receberá atualizações de associação na resposta da consulta delta se esses membros também forem *grupos*. Em outras palavras, o rastreamento de associação a um grupo para os usuários ainda não é suportado. A equipe do Microsoft Graph entende que esse é um cenário de alta prioridade. Há uma atualização prevista março de 2017.
+Para informações sobre limitações conhecidas com o uso da consulta delta, consulte a [seção da consulta delta](../overview/release_notes.md#delta-query) no artigo de problemas conhecidos.
 
 ## <a name="delta-query-request-examples"></a>Exemplos de solicitação de consulta delta 
 

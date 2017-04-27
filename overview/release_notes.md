@@ -33,6 +33,9 @@ Atualmente, há suporte parcial para um calendário com base em uma Inscrição 
 * [Listar os calendários do usuário](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
 * Você também pode [listar os eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de um calendário baseado em ICS.
 
+#### <a name="using-delta-query"></a>Usando a consulta delta
+Para informações sobre problemas conhecidos com o uso da consulta delta, consulte a [seção da consulta delta](#delta-query) deste artigo.
+
 ## <a name="groups"></a>Grupos
 #### <a name="policy"></a>Política
 O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App. 
@@ -65,6 +68,8 @@ A [adição](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/
 #### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
 Atualmente, há um problema que impede a configuração da propriedade **allowExternalSenders** de um grupo em uma operação de POST ou PATCH no `/v1.0` e no `/beta`.
 
+#### <a name="using-delta-query"></a>Usando a consulta delta
+Para informações sobre problemas conhecidos com o uso da consulta delta, consulte a [seção da consulta delta](#delta-query) deste artigo.
 
 ## <a name="contacts"></a>Contatos
 
@@ -161,4 +166,6 @@ Além disso, existem as seguintes limitações da `/beta`:
 
   >  Seus comentários são importantes para nós. Junte-se a nós na página [Stack Overflow](http://stackoverflow.com/questions/tagged/office365). Marque as suas perguntas com {MicrosoftGraph} e {office365}.
 
+## <a name="delta-query"></a>Consulta delta
 
+Só há suporte para o controle de alterações nos relacionamentos em usuários e grupos dentro da classe de recursos específicos para os quais as alterações estão sendo controladas. Por exemplo, se um cliente estiver rastreando alterações em *grupos* e tiver selecionado o relacionamento *membros*, ele só receberá atualizações de associação na resposta da consulta delta se esses membros também forem *grupos*. Em outras palavras, o rastreamento de associação a um grupo para os usuários ainda não é suportado. A equipe do Microsoft Graph entende que esse é um cenário de alta prioridade. Há uma atualização a ser disponibilizada em breve.
