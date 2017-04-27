@@ -1,4 +1,4 @@
-#<a name="third-party-notices-for-microsoft-graph-explorer"></a>Avisos de terceiros para o Microsoft Graph Explorer
+#<a name="third-party-notices-for-microsoft-graph-explorer"></a>Avisos de terceiros para o Explorador do Microsoft Graph
 
 Este projeto incorpora material dos projetos listados abaixo (coletivamente, "Código de Terceiros"). A Microsoft não é a autora original do código de terceiros. Os avisos e as licenças originais de direitos autorais, nos termos dos quais a Microsoft recebeu esse Código de Terceiros, são descritos abaixo, juntamente com o texto completo dessas licenças. Esses avisos e licenças são fornecidos apenas para fins informativos. Esse Código de Terceiros é licenciado para você de acordo com os termos estabelecidos no conjunto de licenças abaixo. A Microsoft se reserva todos os demais direitos não expressamente concedidos ao abrigo deste acordo, seja por implicação, preclusão ou de outra forma. 
 

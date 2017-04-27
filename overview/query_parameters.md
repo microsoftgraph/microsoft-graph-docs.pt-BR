@@ -19,7 +19,7 @@ Esses parâmetros são compatíveis com a [linguagem de consulta OData V4](http:
 
 **Codificação de parâmetros da consulta**
 
-- Se você estiver experimentando parâmetros de consulta no [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer#), é possível apenas copiar e colar os exemplos abaixo sem aplicar nenhuma codificação de URL à cadeia de caracteres de consulta. O exemplo a seguir funciona bem _no Graph Explorer_ sem a codificação de caracteres de espaço e aspas:
+- Se você estiver experimentando parâmetros de consulta no [Explorador do Microsoft Graph](https://graph.microsoft.io/en-us/graph-explorer#), é possível apenas copiar e colar os exemplos abaixo sem aplicar nenhuma codificação de URL à cadeia de caracteres de consulta. O exemplo a seguir funciona bem _no Graph Explorer_ sem a codificação de caracteres de espaço e aspas:
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'jon@contoso.com'
 ``` 
