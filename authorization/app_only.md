@@ -17,7 +17,7 @@ Antes de começar a trabalhar com o Office 365, você precisa registrar seu apli
 
 ## <a name="request-an-access-token-from-the-token-issuing-endpoint"></a>Solicitar um token de acesso do ponto de extremidade de emissão do token
 
-Diferentemente dos aplicativos clientes, o aplicativo de serviço ou daemon é incapaz de fazer um usuário entrar e autorizar seu aplicativo. Em vez disso, seu aplicativo tem que implementar o fluxo de concessão de credenciais de cliente OAuth 2.0, que permite que ele use suas próprias credenciais, sua ID do cliente e uma chave do aplicativo para se autenticar ao chamar o Microsoft Graph, em vez de representar um usuário. Para obter detalhes sobre o fluxo de autenticação, confira [Chamadas serviço a serviço usando as credenciais do cliente](https://msdn.microsoft.com/en-us/library/azure/dn645543.aspx).
+Diferentemente dos aplicativos clientes, o aplicativo de serviço ou daemon é incapaz de fazer um usuário entrar e autorizar seu aplicativo. Em vez disso, seu aplicativo tem que implementar o fluxo de concessão de credenciais de cliente OAuth 2.0, que permite que ele use suas próprias credenciais, sua ID do cliente e uma chave do aplicativo para se autenticar ao chamar o Microsoft Graph, em vez de representar um usuário. Para obter detalhes sobre o fluxo de autenticação, confira [Chamadas serviço a serviço usando as credenciais do cliente](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 Faça uma solicitação HTTP POST ao ponto de extremidade de emissão do token com os seguintes parâmetros, substituindo `<clientId>` e `<clientSecret>` pela ID do cliente e pela chave do aplicativo, respectivamente.
 
