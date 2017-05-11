@@ -13,10 +13,10 @@ Esta seção fornece informações sobre o Microsoft Graph operado pela 21Vianet
 |---------------------------|----------------|
 | https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
 
-### <a name="microsoft-graph-explorer"></a>Microsoft Graph Explorer
-| Microsoft Graph Explorer na China | Microsoft Graph Explorer|
+### <a name="microsoft-graph-explorer"></a>Explorador do Microsoft Graph
+| Explorador do Microsoft Graph na China | Explorador do Microsoft Graph|
 |---------------------------|----------------|
-|https://graph.microsoft.io/zh-cn/graph-explorer| https://graph.microsoft.io/en-us/graph-explorer|
+|https://developer.microsoft.com/pt-br/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
 
 ### <a name="azure-openid-connect-and-oauth20"></a>OpenID Connect e OAuth2.0 do Azure
 Os pontos de extremidade usados para adquirir tokens para entrar ou para chamar o Microsoft Graph operado pelo 21Vianet são diferentes de outras ofertas. 

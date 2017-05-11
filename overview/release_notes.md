@@ -2,8 +2,11 @@
 
 Este artigo descreve os problemas conhecidos com o Microsoft Graph. Para obter informações sobre as atualizações mais recentes, confira o [Log de alterações do Microsoft Graph](http://graph.microsoft.io/en-us/changelog).
 
+## <a name="graph-quick-start"></a>Início rápido do Graph
+30 de abril de 2017 – Há um bug nos fluxos de início rápido no URL de redirecionamento que não está configurado corretamente para Asp.Net MVC, Node.js, Angular, PHP, Python e Ruby. Estamos trabalhando para implantar a correção na produção. Para contornar esse problema, confira nosso [Passo a passo de introdução](https://developer.microsoft.com/en-us/graph/docs/get-started/get-started).   Isso foi resolvido em 3 de maio.
+
 ## <a name="graph-explorer"></a>Explorador do Graph
-Desativamos os logons da conta da Microsoft para o Explorer Graph devido a um problema de serviço. Estamos trabalhando ativamente em uma correção e atualizaremos este texto quando ela estiver pronta.  
+Desativamos os logons da conta da Microsoft para o Explorador do Graph devido a um problema de serviço. Estamos trabalhando ativamente em uma correção e atualizaremos este texto quando ela estiver pronta.  Atualização – 3 de maio – Isso já está resolvido.
 
 Não era possível entrar pelo Internet Explorer e o Microsoft Edge. Esse problema foi resolvido no dia 2 de fevereiro de 2017.
 
