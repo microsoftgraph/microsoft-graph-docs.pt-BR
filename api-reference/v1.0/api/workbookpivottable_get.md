@@ -16,7 +16,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ### <a name="request-body"></a>Corpo da solicitação
@@ -31,7 +31,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "get_workbookpivottable"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/{id}
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

@@ -8,12 +8,12 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "source"
-  ],
+  "optionalProperties": ["source", "small", "medium", "large"],
+  "openType": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.thumbnailSet"
-}-->
+} -->
+
 ```json
 {
   "id": "string (identifier)",
@@ -26,7 +26,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	 | Tipo	                      | Descrição                                                                       |
+| Propriedade | Tipo                      | Descrição                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
 | id       | String                    | A id de dentro do item. Somente leitura.                                                |
 | large    | [Thumbnail](thumbnail.md) | Uma miniatura em escala 1920 x 1920.                                                     |

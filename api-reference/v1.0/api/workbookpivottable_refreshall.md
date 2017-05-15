@@ -30,7 +30,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "workbookpivottable_refreshall"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
 
 ##### <a name="response"></a>Resposta

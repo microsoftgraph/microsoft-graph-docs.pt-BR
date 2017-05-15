@@ -1,6 +1,6 @@
 # <a name="list-events"></a>Listar eventos
 
-Obtenha uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.
+Obtenha uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres da série.
 
 No momento, esta operação retorna corpos de eventos somente no formato HTML.
 
@@ -45,7 +45,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | <token> de portador. Obrigatório. |
-| Prefira: outlook.timezone | string | O fuso horário padrão para eventos na resposta. Opcional. | 
+| Prefira: outlook.timezone | cadeia de caracteres | O fuso horário padrão para eventos na resposta. Opcional. | 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -63,9 +63,8 @@ Veja a seguir um exemplo da solicitação. Especifica o seguinte:
   "name": "get_events"
 }-->
 ```http
-Prefer: outlook.timezone="Pacific Standard Time"
-
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato HTML padrão.

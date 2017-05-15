@@ -60,22 +60,27 @@ O primeiro exemplo obtém o evento especificado. Especifica o seguinte:
 
 - um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
 - Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
+
 <!-- {
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
-Prefer: outlook.timezone="Pacific Standard Time"
 
+```http
 GET https://graph.microsoft.com/v1.0/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+Prefer: outlook.timezone="Pacific Standard Time"
 ```
+
 ##### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato HTML padrão.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

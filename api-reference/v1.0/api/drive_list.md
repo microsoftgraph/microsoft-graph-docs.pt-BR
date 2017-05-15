@@ -1,15 +1,19 @@
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 
 Recupera a lista de recursos [Drive](../resources/drive.md) disponíveis para um [User](../resources/user.md) ou [Group](../resources/group.md) de destino. Seu aplicativo também pode solicitar o conjunto de bibliotecas de documentos no site raiz do SharePoint.
+
 ## <a name="prerequisites"></a>Pré-requisitos
+
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /drives
 GET /me/drives
@@ -20,29 +24,34 @@ GET /groups/{id}/drives
 Esse método é compatível com [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Drive](../resources/drive.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
+
 Eis um exemplo da solicitação de unidades do usuário.
 
 <!-- {
   "blockType": "request",
   "name": "get_drives"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/drives
 ```
 
 ##### <a name="response"></a>Resposta
+
 Este é um exemplo da resposta.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.drive",
   "isCollection": true
 } -->
@@ -55,7 +64,7 @@ Content-length: 579
   "value": [
     {
       "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-      "driveType": "business",    
+      "driveType": "business",
       "owner": {
           "user": {
               "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",

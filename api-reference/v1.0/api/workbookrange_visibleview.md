@@ -28,7 +28,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "workbookrange_visibleview"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range(addres='A1:Z10')/visibleView
 ```
 
 ##### <a name="response"></a>Resposta

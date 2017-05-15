@@ -17,7 +17,7 @@ Veja a seguir uma representação JSON do recurso
 ```json
 {
   "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
-  "confidence": 1024,
+  "confidence": 100.0,
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
   "organizerAvailability": "String",
@@ -26,7 +26,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |attendeeAvailability|Coleção [attendeeAvailability](attendeeavailability.md)|Uma matriz que mostra o status de disponibilidade de cada participante para essa sugestão da reunião.|
 |confidence|Double|Uma porcentagem que representa a probabilidade de todos os participantes comparecerem.|
