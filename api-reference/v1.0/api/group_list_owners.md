@@ -2,7 +2,7 @@
 
 Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: 
+Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.Read.All* ou *Group.ReadWrite.All*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

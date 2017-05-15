@@ -17,7 +17,7 @@ Esta explicação passo a passo descreve como fazer solicitações à API REST d
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 Você pode usar o [ponto de extremidade do Azure AD v2.0](https://graph.microsoft.io/en-us/docs/concepts/converged_auth) para autenticar chamadas da API REST do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
   
-Um dos seguintes [escopos de permissão](https://graph.microsoft.io/en-us/docs/concepts/permission_scopes) é obrigatório para se usar o recurso do Excel:
+Um dos seguintes [escopos de permissão](https://graph.microsoft.io/en-us/docs/concepts/permissions_reference) é obrigatório para se usar o recurso do Excel:
 
 * Files.Read 
 * Files.ReadWrite

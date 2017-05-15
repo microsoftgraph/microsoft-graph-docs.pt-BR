@@ -11,7 +11,7 @@ Há duas opções para registrar o aplicativo com o Azure AD.
   - Registre um aplicativo para usar o ponto de extremidade do Azure AD v2.0 que funciona para identidades pessoais (Microsoft) e contas corporativas ou de estudante (Azure AD).
   - Registre um aplicativo para usar o ponto de extremidade do Azure AD compatível apenas com contas corporativas ou de estudante.
 
-Este artigo pressupõe que haja um registro do v2.0, então você registrará seu aplicativo no [Portal de registro do aplicativo](https://apps.dev.microsoft.com/). Siga as instruções em [Registrar seu aplicativo Microsoft Graph com o ponto de extremidade do Azure AD v2.0](../concepts/auth_register_app_v2.md) para registrar seu aplicativo. Para obter informações sobre como usar o ponto de extremidade do Azure AD, confira [Autenticar usando o Azure AD](../concepts/auth_overview.md).
+Este artigo pressupõe que haja um registro do v2.0, então você registrará seu aplicativo no [Portal de registro do aplicativo](https://apps.dev.microsoft.com/). Siga as instruções em [Registrar seu aplicativo Microsoft Graph com o ponto de extremidade do Azure AD v2.0](../concepts/auth_register_app_v2.md) para registrar seu aplicativo. Para obter informações sobre como usar o ponto de extremidade do Azure AD, confira [Autenticar usando o Azure AD](../concepts/auth_v2_user.md).
 
 > Algumas limitações aplicam-se ao usar o ponto de extremidade do v2.0. Para decidir se ele é ideal para você, confira [Devo usar o ponto de extremidade do v2.0?](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-limitations/)
 
@@ -44,7 +44,7 @@ O segmento *locatário* nos controles de caminho que pode entrar no aplicativo. 
 | client_id | A ID do aplicativo gerada durante o registro do aplicativo. Isso permite que o Azure AD saiba qual aplicativo está solicitando o logon. |
 | redirect_uri | O local para o qual o Azure será redirecionado depois de o usuário conceder permissão para o aplicativo. Esse valor deve corresponder ao valor **URI de redirecionamento** usado ao registrar o aplicativo. |
 | response_type | O tipo de resposta que o aplicativo está esperando. Esse valor é `code` para o fluxo de Concessão de Código de Autorização. |
-| escopo | Uma lista de escopos separados por espaços dos [escopos de permissão do Microsoft Graph](../concepts/permissions_reference.md) que o aplicativo está solicitando. Você também pode especificar [Escopos do OpenId Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) para o [logon único](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).  |
+| escopo | Uma lista de escopos separados por espaços dos [escopos de permissão do Microsoft Graph](./permissions_reference.md) que o aplicativo está solicitando. Você também pode especificar [Escopos do OpenId Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-scopes/#openid-connect-scopes) para o [logon único](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols-oidc/).  |
 | state | Um valor incluído na solicitação que também será retornado na resposta de token, usado para validação. |
 
 Por exemplo, a URL de solicitação para nosso aplicativo que requer acesso de leitura para os emails teria a seguinte aparência:
@@ -72,7 +72,7 @@ Para obter um token de acesso, o aplicativo posta parâmetros codificados em for
 | código | O código de autorização obtido na etapa anterior. |
 | redirect_uri | Esse valor deve ser igual ao valor usado na solicitação de código de autorização. |
 | grant_type | O tipo de concessão que o aplicativo está usando. Esse valor é `code` para o fluxo de Concessão de Código de Autorização. |
-| escopo | Uma lista de escopos separados por espaços dos [escopos de permissão do Microsoft Graph](../concepts/permissions_reference.md) que o aplicativo está solicitando. |
+| escopo | Uma lista de escopos separados por espaços dos [escopos de permissão do Microsoft Graph](./permissions_reference.md) que o aplicativo está solicitando. |
 
 A URL de solicitação de nosso aplicativo, usando o código da etapa anterior, teria a seguinte aparência.
 
