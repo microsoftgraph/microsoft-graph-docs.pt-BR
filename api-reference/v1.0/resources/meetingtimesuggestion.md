@@ -33,7 +33,7 @@ Veja a seguir uma representação JSON do recurso
 |locations|Coleção [location](location.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Um período de tempo sugerido para a reunião.|
 |organizerAvailability|String| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|suggestionReason|Cadeia de caracteres|Razão da sugestão de horário da reunião.|
+|suggestionReason|String|Razão da sugestão de horário da reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

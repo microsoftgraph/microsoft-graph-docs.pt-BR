@@ -7,9 +7,9 @@ Contém informações sobre um plano de serviço associado a uma SKU inscrita. A
 | Propriedade	       | Tipo	    |Descrição|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|O identificador exclusivo do plano de serviços.|
-|servicePlanName|Cadeia de caracteres|O nome do plano de serviços.|
-|provisioningStatus|Cadeia de caracteres|O status de provisionamento do plano de serviços.|
-|appliesTo|Cadeia de caracteres||
+|servicePlanName|String|O nome do plano de serviços.|
+|provisioningStatus|String|O status de provisionamento do plano de serviços.|
+|appliesTo|String||
 
 
 ## <a name="json-representation"></a>Representação JSON

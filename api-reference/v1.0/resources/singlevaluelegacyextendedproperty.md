@@ -17,7 +17,7 @@ Confira [Visão geral de propriedades estendidas](../resources/extended-properti
 | Propriedade	       | Tipo	    |Descrição|
 |:---------------|:--------|:----------|
 |id|string|A ID da propriedade usada para identificar a propriedade. Somente leitura.|
-|valor|cadeia de caracteres|Um valor de propriedade.|
+|value|string|Um valor de propriedade.|
 
 ## <a name="relationships"></a>Relacionamentos
 Nenhum
