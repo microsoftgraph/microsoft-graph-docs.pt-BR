@@ -4,38 +4,41 @@ O recurso **SharePointIds** agrupa os vários identificadores de um item armazen
 
 **Observação:** itens retornados do OneDrive pessoal não incluirão uma faceta **SharePointIds**.
 
-### <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [ "listId", "listItemId", "listItemUniqueId", "siteId", "siteUrl", "webId" ],
   "@odata.type": "microsoft.graph.sharepointIds"
 }-->
+
 ```json
 {
     "listId": "string",
     "listItemId": "string",
     "listItemUniqueId": "string",
     "siteId": "string",
+    "siteUrl": "url",
     "webId": "string"
 }
 ```
 
-### <a name="properties"></a>Propriedades
+## <a name="properties"></a>Propriedades
 
-| Propriedade	          | Tipo	    | Descrição                                                          |
-|:------------------|:--------|:---------------------------------------------------------------------|
-| listId            | cadeia de caracteres  | O identificador exclusivo da lista do item no SharePoint.                          |
-| listItemId        | cadeia de caracteres  | Um identificador inteiro para o item na lista contida.                    |
-| listItemUniqueId  | cadeia de caracteres  | O identificador exclusivo para o item dentro do OneDrive for Busienss ou de um site do SharePoint. |
-| siteId            | cadeia de caracteres  | O identificador exclusivo da coleção de sites do item. |
-| webId             | cadeia de caracteres  | O identificador exclusivo do site do item.                          |
+| Propriedade         | Tipo         | Descrição                                                                                  |
+| :--------------- | :----------- | :------------------------------------------------------------------------------------------- |
+| listId           | string       | O identificador exclusivo (guid) para a lista do item no SharePoint.                              |
+| listItemId       | cadeia de caracteres       | Um identificador inteiro para o item na lista contida.                               |
+| listItemUniqueId | string       | O identificador exclusivo (guid) para o item dentro do OneDrive for Busienss ou de um site do SharePoint. |
+| siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).                        |
+| siteUrl          | cadeia de caracteres (url) | A URL do SharePoint do site que contém o item.                                      |
+| webId            | string       | O identificador exclusivo (guid) do site do item (SPWeb).                                    |
 
-## <a name="remarks"></a>Comentários 
+## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](driveitem.md).
 
 
 

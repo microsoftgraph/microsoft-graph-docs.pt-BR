@@ -2,6 +2,9 @@
 
 Representa um grupo do Azure Active Directory, que pode ser um grupo do Office 365, um grupo dinâmico ou um grupo de segurança. Herda de [directoryObject](directoryobject.md).
 
+Esse recurso permite:
+- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -39,14 +42,21 @@ Representa um grupo do Azure Active Directory, que pode ser um grupo do Office 3
 |[subscribeByMail](../api/group_subscribebymail.md)|None|Definir a propriedade isSubscribedByMail como **true**. Permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
 |[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Definir a propriedade isSubscribedByMail como **false**. Não permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Redefinir unseenCount como 0 para todas as postagens que o usuário atual não viu desde sua última visita. Com suporte apenas para grupos do Office 365.|
+|[delta](../api/group_delta.md)|coleção de grupos| Obtenha as alterações incrementais para grupos. |
+|**Extensões abertas**| | |
+|[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
+|[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
+|**Extensões de esquema**| | |
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|O padrão é **false**. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
 |autoSubscribeNewMembers|Booliano|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo.|
-|descrição|String|Uma descrição opcional para o grupo. |
+|createdDateTime|DateTimeOffset| A data e a hora da criação do grupo. |
+|description|String|Uma descrição opcional para o grupo. |
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo a ser criado. Os valores possíveis são **Unified** para criar um grupo do Office 365 ou **DynamicMembership** para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. Oferece suporte a $filter.|
 |id|String|O identificador exclusivo do grupo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
@@ -63,7 +73,7 @@ Representa um grupo do Azure Active Directory, que pode ser um grupo do Office 3
 |visibility|String| Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |acceptedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que têm permissão para criar eventos de calendário ou postagens nesse grupo. Se essa lista não estiver vazia, somente os usuários ou grupos listados aqui poderão fazer postagens.|
 |calendário|[calendar](calendar.md)|O calendário do grupo. Somente leitura.|
@@ -72,11 +82,14 @@ Representa um grupo do Azure Active Directory, que pode ser um grupo do Office 3
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
 |Unidade|[drive](drive.md)|A unidade do grupo. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos de calendário do grupo.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
 |membros|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança) Anulável.|
+|onenote|[OneNote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 10 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança). Anulável.|
 |Foto|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
 |rejectedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que não têm permissão para criar eventos de calendário ou postagens nesse grupo. Anulável|
+|sites|conjunto de [sites](site.md)|A lista de sites do SharePoint nesse grupo. Acesse o site padrão com /sites/root.
 |threads|Coleção [conversationThread](conversationthread.md)| Os threads de conversas do grupo. Anulável.|
 
 
@@ -95,8 +108,10 @@ Veja a seguir uma representação JSON do recurso
     "createdOnBehalfOf",
     "drive",
     "events",
+    "extensions",
     "memberOf",
     "members",
+    "onenote",
     "owners",
     "photo",
     "rejectedSenders",
@@ -110,6 +125,7 @@ Veja a seguir uma representação JSON do recurso
 {
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
@@ -137,10 +153,17 @@ Veja a seguir uma representação JSON do recurso
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "sites": [ { "@odata.type": "microsoft.graph.site" } ],
   "threads": [ { "@odata.type": "microsoft.graph.conversationThread" }]
 }
 
 ```
+
+## <a name="see-also"></a>Ver também
+
+- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -23,9 +23,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	    | Tipo	   | Descrição                                                                                                                                                                                                                                                                                                           |
+| Propriedade    | Tipo   | Descrição                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | Nome de exibição da identidade. Observe que, talvez, isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [localizar alterações](../api/item_delta.md) |
+| displayName | String | Nome de exibição da identidade. Observe que, talvez, isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/item_delta.md)        |
 | id          | String | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Comentários

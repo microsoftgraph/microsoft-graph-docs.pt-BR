@@ -3,12 +3,15 @@
 Recupera as propriedades e os relacionamentos do objeto chartgridlines.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/majorgridlines
-GET /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/majorgridlines
+GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
@@ -16,7 +19,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -31,7 +34,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "get_chartgridlines"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/minorgridlines
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/minorgridlines
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

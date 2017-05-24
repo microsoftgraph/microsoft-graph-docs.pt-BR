@@ -3,18 +3,21 @@
 Obtém uma coluna incluída no intervalo.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/Column
-POST /workbook/worksheets(<id|name>)/range(<address>)/Column
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/Column
+GET /workbook/names(<name>)/range/Column
+GET /workbook/worksheets/{id|name}/range(<address>)/Column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -36,7 +39,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "range_column"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
 Content-type: application/json
 Content-length: 21
 

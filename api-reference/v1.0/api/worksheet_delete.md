@@ -3,16 +3,19 @@
 Exclui a planilha da pasta de trabalho.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/delete
+POST /workbook/worksheets/{id|name}/delete
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -29,7 +32,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "worksheet_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/delete
 ```
 
 ##### <a name="response"></a>Resposta

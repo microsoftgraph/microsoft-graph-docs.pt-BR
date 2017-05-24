@@ -11,10 +11,11 @@ Representa uma função do diretório do Azure AD. As funções de diretório do
 |[Obter directoryRole](../api/directoryrole_get.md) | [directoryRole](directoryrole.md) | Leia as propriedades e os relacionamentos do objeto directoryRole. |
 |[Criar membro](../api/directoryrole_post_members.md) |[directoryObject](directoryobject.md)| Adicione um usuário à função de diretório postando na propriedade de navegação de membros.|
 |[Listar membros](../api/directoryrole_list_members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são membros da função directory da propriedade de navegação members.|
+|[Remover um membro](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Remova um usuário da função de diretório.|
 |[Ativar directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Ative uma função de diretório.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |description|String|A descrição da função de diretório. Somente leitura. |
 |displayName|String|O nome de exibição da função de diretório. Somente leitura. |
@@ -22,7 +23,7 @@ Representa uma função do diretório do Azure AD. As funções de diretório do
 |roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
 

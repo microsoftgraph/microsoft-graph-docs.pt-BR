@@ -3,17 +3,20 @@
 Obtém o objeto de intervalo associado a toda a tabela.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables(<id|name>)/Range
-POST /workbook/worksheets(<id|name>)/tables(<id|name>)/Range
+POST /workbook/tables/{id|name}/Range
+POST /workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -30,7 +33,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "table_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables(<id|name>)/Range
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/Range
 ```
 
 ##### <a name="response"></a>Resposta

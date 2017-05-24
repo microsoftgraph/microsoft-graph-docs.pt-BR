@@ -3,12 +3,12 @@
 Recupere as propriedades e as relações de um recurso [Drive](../resources/drive.md). Uma Unidade é o contêiner de nível superior para um sistema de arquivos. A API do Graph permite que você acesse o recurso de Unidade do OneDrive ou do OneDrive for Business de um usuário ou bibliotecas de documentos do SharePoint.
 
 ## <a name="prerequisites"></a>Pré-requisitos
+
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.Read
-  * Files.ReadWrite
-  * Sites.Read.All
-
+* Files.Read
+* Files.ReadWrite
+* Sites.Read.All
 
 ## <a name="get-a-users-onedrive"></a>Obtenha o OneDrive do usuário
 
@@ -17,29 +17,35 @@ Para acessar o OneDrive ou o OneDrive for Business de um usuário, seu aplicativ
 ### <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/drive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
-## <a name="get-the-document-library-assocaited-with-a-group"></a>Obtenha a biblioteca de documentos associada um grupo
+## <a name="get-the-document-library-associated-with-a-group"></a>Obtenha a biblioteca de documentos associada a um grupo
 
 Para acessar uma biblioteca de documentos padrão [de um Grupo](../resources/group.md), o aplicativo solicita a relação **drive** no grupo.
 
 ### <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/{idOrUserPrincipalName}/drive
 ```
 
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Esse método é compatível com [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [Drive](../resources/drive.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

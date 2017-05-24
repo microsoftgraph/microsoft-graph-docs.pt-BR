@@ -1,13 +1,17 @@
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
-O recurso **RemoteItem** indica que um [DriveItem](driveitem.md) faz referência a um item que existe em outra unidade. Este recurso fornece as IDs exclusivas do da unidade de origem e do item de destino.
+O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referência a um item que existe em outra unidade. Este recurso fornece as IDs exclusivas do da unidade de origem e do item de destino.
 
-[**DriveItems**](driveitem.md) com uma faceta **remoteItem** não nula são recursos que são compartilhados, adicionados ao OneDrive do usuário ou em itens retornados de coleções de itens heterogêneas (como resultados de pesquisa). 
+[**DriveItems**](driveitem.md) com uma faceta **remoteItem** não nula são recursos que são compartilhados, adicionados ao OneDrive do usuário ou em itens retornados de coleções de itens heterogêneas (como resultados de pesquisa).
 
-**Observação:** Diferentemente de pastas na mesma unidade, um DriveItem movido para um item remoto pode ter seu valor `id` alterado.
+**Observação:** Diferentemente de pastas na mesma unidade, um **driveItem** movido para um item remoto pode ter seu valor `id` alterado.
+
 ## <a name="json-representation"></a>Representação JSON
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.remoteItem", optionalProperties: ["name", "fileSystemInfo", "file", "folder"] } -->
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.remoteItem", 
+       "optionalProperties": ["name", "fileSystemInfo", "file", "folder"] } -->
+
 ```json
 {
   "id": "string",
@@ -21,6 +25,7 @@ O recurso **RemoteItem** indica que um [DriveItem](driveitem.md) faz referência
   "name": "string",
   "package": { "@odata.type": "microsoft.graph.package" },
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
+  "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
@@ -31,28 +36,29 @@ O recurso **RemoteItem** indica que um [DriveItem](driveitem.md) faz referência
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade        | Tipo                                          | Descrição                                                              |
-|:---------------------|:----------------------------------------------|:-------------------------------------------------------------------------|
-| createdBy            | [IdentitySet](identityset.md)                 | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.   |
-| createdDateTime      | Timestamp                                     | Data e hora de criação do item. Somente leitura. |
-| file                 | [File](file.md)                               | Indica que o item remoto é um arquivo. Somente leitura.                     |
-| fileSystemInfo       | [FileSystemInfo](filesysteminfo.md)           | Informações sobre o item remoto do sistema de arquivos local. Somente leitura. |
-| folder               | [Folder](folder.md)                           | Indica que o item remoto é uma pasta. Somente leitura.                   |
-| id                   | String                                        | Identificador exclusivo do item remoto em sua unidade. Somente leitura.           |
-| lastModifiedBy       | [IdentitySet](identityset.md)                 | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura. |
-| lastModifiedDateTime | Timestamp                                     | Data e hora em que o item foi modificado pela última vez. Somente leitura.  | 
-| nome                 | String                                        | Opcional. Nome de arquivo do item remoto. Somente leitura.                        |
-| pacote              | [Pacote](package.md)                         | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura. |
-| parentReference      | [ItemReference](itemreference.md)             | Propriedades do pai do item remoto. Somente leitura.                  |
-| sharepointIds        | [SharepointIds](sharepointids.md)             | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.  |
-| size                 | Int64                                         | Tamanho do item remoto. Somente leitura.                                      |
-| specialFolder        | [SpecialFolder](specialfolder.md)             | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura. |
-| webDavUrl            | URL                                           | URL compatível com DAV para o item.  |
-| webUrl               | URL                                           | URL que exibe o recurso no navegador. Somente leitura. | 
+| Nome da propriedade        | Tipo                                | Descrição                                                                                                                                                       |
+| :------------------- | :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| createdBy            | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.                                                                                  |
+| createdDateTime      | Timestamp                           | Data e hora de criação do item. Somente leitura.                                                                                                                        |
+| file                 | [File](file.md)                     | Indica que o item remoto é um arquivo. Somente leitura.                                                                                                              |
+| fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
+| folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
+| id                   | String                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
+| lastModifiedBy       | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                            |
+| lastModifiedDateTime | Timestamp                           | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                              |
+| nome                 | String                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
+| pacote              | [Pacote](package.md)               | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura. |
+| parentReference      | [ItemReference](itemreference.md)   | Propriedades do pai do item remoto. Somente leitura.                                                                                                           |
+| shared               | [shared](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                       |
+| sharepointIds        | [SharepointIds](sharepointids.md)   | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.                                          |
+| size                 | Int64                               | Tamanho do item remoto. Somente leitura.                                                                                                                               |
+| specialFolder        | [SpecialFolder](specialfolder.md)   | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.                                                                     |
+| webDavUrl            | URL                                 | URL compatível com DAV para o item.                                                                                                                                  |
+| webUrl               | URL                                 | URL que exibe o recurso no navegador. Somente leitura.                                                                                                         |
 
-## <a name="remarks"></a>Comentários 
+## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para saber mais sobre as facetas de um **driveItem**, confira [driveItem](driveitem.md).
 
 
 <!-- {

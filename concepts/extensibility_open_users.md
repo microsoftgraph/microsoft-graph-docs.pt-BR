@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-preview"></a>Adicionar dados personalizados aos usuários usando Extensões Abertas (visualização)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>Adicionar dados personalizados aos usuários usando extensões abertas
 Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*. 
 
 Imagine que você está criando um aplicativo que está disponível em várias plataformas cliente diferentes, como computadores e dispositivos móveis.  Você gostaria que os usuários pudessem configurar a própria experiência de interface do usuário para que ela fosse consistente, independentemente do dispositivo usado para entrar no seu aplicativo. Este é um requisito comum para a maioria dos aplicativos. 
@@ -10,14 +10,15 @@ Neste cenário, vamos mostrar como:
 3. Alterar as informações do perfil móvel do usuário (o valor de extensão aberta).
 4. Excluir informações do perfil móvel do usuário.
 
->**Observação:** Este tópico mostra como adicionar, ler, atualizar e excluir extensões abertas em um recurso *user*.  Esses métodos também são suportados para os tipos de recurso *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* e *organizaton*.  Basta atualizar as solicitações de exemplo abaixo usando qualquer um desses tipos de recursos. As respostas mostradas nos exemplos a seguir podem ser truncadas para resumir. 
+>**Observação:** Este tópico mostra como adicionar, ler, atualizar e excluir extensões abertas em um recurso *user*.  Esses métodos também são suportados para os tipos de recurso *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* e *organizaton*.  
+Basta atualizar as solicitações de exemplo abaixo usando qualquer um desses tipos de recursos. As respostas mostradas nos exemplos a seguir podem ser truncadas para resumir. 
 
 ## <a name="1-add-roaming-profile-information"></a>1. Adicionar informações de perfil móvel
 O usuário entra no aplicativo e configura a aparência do aplicativo.  Essas configurações de aplicativo devem transitar para que o usuário obtenha a mesma experiência em praticamente qualquer dispositivo usado para entrar no aplicativo.  Aqui, veremos como adicionar as informações do perfil móvel a um recurso user.
 
 ##### <a name="request"></a>Solicitação
 ```http
-POST https://graph.microsoft.com/beta/me/extensions
+POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
 {
     "@odata.type":"microsoft.graph.openTypeExtension",
@@ -48,7 +49,7 @@ Quando o usuário entra no aplicativo de outro dispositivo, o aplicativo pode re
 
 ##### <a name="request"></a>Solicitação
 ```http
-GET https://graph.microsoft.com/beta/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
+GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
 ##### <a name="response"></a>Resposta
 ```http
@@ -80,7 +81,7 @@ O usuário pode optar por alterar as próprias informações do perfil móvel.  
 
 ##### <a name="request"></a>Solicitação
 ```http
-PATCH https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
 {
     "theme":"light",
@@ -99,7 +100,7 @@ O usuário decide que, se não quiser mais um perfil móvel, pode excluí-lo. Es
 
 ##### <a name="request"></a>Solicitação
 ```http
-DELETE https://graph.microsoft.com/beta/me/extensions/com.contoso.roamingSettings
+DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
 ##### <a name="response"></a>Resposta
@@ -110,4 +111,9 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>Ver também
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility_overview.md)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](extensibility_schema_groups.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
+- [tipo de recurso openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md)
+- [Criar extensão aberta](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
+- [Obter extensão aberta](../api-reference/v1.0/api/opentypeextension_get.md)
+- [Atualizar extensão aberta](../api-reference/v1.0/api/opentypeextension_update.md)
+- [Excluir extensão aberta](../api-reference/v1.0/api/opentypeextension_delete.md)

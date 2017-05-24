@@ -3,18 +3,21 @@
 Mescla as células do intervalo em uma região da planilha.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/merge
-POST /workbook/worksheets(<id|name>)/range(<address>)/merge
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/merge
+POST /workbook/worksheets/{id|name}/range(<address>)/merge
+POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação

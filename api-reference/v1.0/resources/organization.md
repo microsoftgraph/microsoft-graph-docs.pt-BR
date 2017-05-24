@@ -2,16 +2,24 @@
 
 Representa um locatário do Azure Active Directory. Somente as operações de leitura e atualização têm suporte em locatários; criar e excluir não têm suporte. Herda de [directoryObject](directoryobject.md).
 
+Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Obter organização](../api/organization_get.md) | [organization](organization.md) |Leia as propriedades e as relações do objeto de organização.|
 |[Update](../api/organization_update.md) | [organization](organization.md)  |Atualize o objeto organization. (Somente as propriedades **marketingNotificationMails** e **technicalNotificationMails** podem ser atualizadas.) |
+|**Extensões abertas**| | |
+|[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
+|[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
+|**Extensões de esquema**| | |
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	                             | Tipo	                                                              | Descrição                                                                                                                                                                                                                                                                          |
+| Propriedade                             | Tipo                                                              | Descrição                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | assignedPlans                        | Coleção [assignedPlan](assignedplan.md)                        | A coleção de planos de serviço associados ao locatário. Não anulável.                                                                                                                                                                                                            |
 | city                                 | String                                                            |                                                                                                                                                                                                                                                                                      |
@@ -37,7 +45,10 @@ Representa um locatário do Azure Active Directory. Somente as operações de le
 | verifiedDomains                      | Coleção [VerifiedDomain](verifieddomain.md)                    | A coleção de domínios associados a este locatário. Não anulável.                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
-Nenhum
+| Relação | Tipo    |Descrição|
+|:---------------|:--------|:----------|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a organização. Somente leitura. Anulável.|
+
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,7 +57,7 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "extensions"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.organization"
@@ -76,6 +87,12 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
+## <a name="see-also"></a>Ver também
+
+- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

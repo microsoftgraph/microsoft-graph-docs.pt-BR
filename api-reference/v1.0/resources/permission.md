@@ -28,38 +28,43 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	      | Tipo	                                      | Descrição                                                                                                                           |
-|:--------------|:------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------|
-| id            | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.                                                 |
-| grantedTo     | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.                                    |
-| invitation    | [SharingInvitation](sharinginvitation.md) | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.                                                          |
-| inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.                       |
-| vínculo          | [SharingLink](sharinglink.md)             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.                                     |
-| role          | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.                                                 |
-| shareId       | String                                    | Um token exclusivo para esta permissão. Somente leitura. |
+| Propriedade      | Tipo                                      | Descrição
+|:--------------|:------------------------------------------|:-----------------
+| id            | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
+| grantedTo     | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
+| invitation    | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
+| inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
+| vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
+| role          | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
+| shareId       | String                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [ **API** Shares](../api/shares_get.md). Somente leitura.
 
-O recurso [Permission](../resources/permission.md) usa _facets_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
+O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
-Permissões com uma faceta [**link**](sharinglink.md) representam links de compartilhamento criados no item. Os links de compartilhamento contêm um token exclusivo que fornece acesso ao item para qualquer pessoa com o link.
+Permissões com uma faceta [**link**][SharingLink] representam links de compartilhamento criados no item. Os links de compartilhamento contêm um token exclusivo que fornece acesso ao item para qualquer pessoa com o link.
 
-Permissões com uma faceta [**invitation**](sharinginvitation.md) representam permissões adicionadas convidando usuários ou grupos específicos para ter acesso ao arquivo.
+Permissões com uma faceta [**invitation**][SharingInvitation] representam permissões adicionadas convidando usuários ou grupos específicos para ter acesso ao arquivo.
+
+[SharingInvitation]: sharinginvitation.md
+[SharingLink]: sharinglink.md
 
 ## <a name="roles-enumeration"></a>Enumeração de funções
 
-| Função  | Detalhes                                                                        |
-|:------|:-------------------------------------------------------------------------------|
-| `read`  | Fornece a capacidade de ler os metadados e o conteúdo do item.            |
-| `write` | Fornece a capacidade de ler e modificar os metadados e o conteúdo do item. |
+| Função        | Detalhes                                                                        |
+|:------------|:-------------------------------------------------------------------------------|
+| `read`      | Fornece a capacidade de ler os metadados e o conteúdo do item.            |
+| `write`     | Fornece a capacidade de ler e modificar os metadados e o conteúdo do item. |
+| `sp.owner`  | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
+| `sp.member` | Para o SharePoint e o OneDrive for Business, isso representa a função de membro.      |
 
 ## <a name="methods"></a>Métodos
 
-| Método                                              | Caminho REST                            |
-|:----------------------------------------------------|:---------------------------------------|
-| [Listar permissões](../api/item_list_permissions.md) | `GET /drive/items/{item-id}/permissions`  |
-| [Obter permissão](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}` |
-| [Adicionar](../api/item_invite.md)                        | `POST /drive/items/{item-id}/invite` |
-| [Update](../api/permission_update.md)               | `PATH /drive/items/{item-id}/permissions/{id}` |
-| [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}` |
+| Método                                              | Caminho REST
+|:----------------------------------------------------|:-----------------------
+| [Listar permissões](../api/item_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Obter permissão](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}`
+| [Adicionar](../api/item_invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Update](../api/permission_update.md)               | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## <a name="remarks"></a>Comentários

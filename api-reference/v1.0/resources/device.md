@@ -2,6 +2,9 @@
 
 Representa um dispositivo registrado na organização. Dispositivos também podem ser criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são utilizados por políticas de acesso condicional para autenticação de vários fatores. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de [directoryObject](directoryobject.md).
 
+Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
@@ -15,9 +18,14 @@ Representa um dispositivo registrado na organização. Dispositivos também pode
 |[Listar registeredOwners](../api/device_list_registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Criar registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Adicione um usuário registrado para o dispositivo postando na propriedade de navegação registeredUsers.|
 |[Listar registeredUsers](../api/device_list_registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
+|**Extensões abertas**| | |
+|[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
+|[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
+|**Extensões de esquema**| | |
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
 |alternativeSecurityIds|Coleção [alternativeSecurityId](alternativesecurityid.md)| O operador **any** é necessário para expressões de filtro em propriedades de vários valores. Não anulável. Obrigatório. |
@@ -37,8 +45,9 @@ Representa um dispositivo registrado na organização. Dispositivos também pode
 |trustType|String|    ||
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|Usuários que são proprietários registrados do dispositivo. Somente leitura. Anulável.|
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Usuários que são usuários registrados do dispositivo. Somente leitura. Anulável.|
 
@@ -51,6 +60,7 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "extensions",
     "registeredOwners",
     "registeredUsers"
   ],
@@ -79,6 +89,12 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
+## <a name="see-also"></a>Ver também
+
+- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

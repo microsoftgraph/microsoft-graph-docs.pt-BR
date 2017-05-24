@@ -1,6 +1,6 @@
 # <a name="create-mailfolder"></a>Criar MailFolder
 
-Use essa API para criar uma nova pasta de email.
+Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
@@ -19,11 +19,10 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. 
 
 | Parâmetro       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|parentFolderId|Cadeia de caracteres|A ID da pasta pai ou nomes de pasta bem conhecidos, como `Inbox`, `Drafts`, `SentItems` ou `DeletedItems`.|
 |displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `201, Created` e o objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201, Created` e um objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -38,8 +37,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value"
+  "displayName": "displayName-value"
 }
 ```
 

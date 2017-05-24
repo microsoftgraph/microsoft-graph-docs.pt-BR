@@ -1,12 +1,12 @@
-# <a name="get-incremental-changes-for-groups-preview"></a>Obter as alterações incrementais para grupos (visualização)
+# <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 
-A [Consulta delta](./delta_query_overview.md) permite que você consulte adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função [delta](../api-reference/beta/api/group_delta.md). A consulta Delta permite que você descubra alterações em grupos sem ter que buscar todo o conjunto de grupos do Microsoft Graph e comparar as alterações.
+A [Consulta delta](./delta_query_overview.md) permite que você consulte adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função [delta](../api-reference/v1.0/api/group_delta.md). A consulta Delta permite que você descubra alterações em grupos sem ter que buscar todo o conjunto de grupos do Microsoft Graph e comparar as alterações.
 
-A consulta delta oferece suporte à sincronização completa, que recupera todos os grupos em um locatário, e à sincronização incremental, que recupera somente os grupos que foram alterados desde a última sincronização. Normalmente, você faria uma sincronização completa inicial de todos os grupos e, logo após, obteria alterações incrementais para esses grupos periodicamente. 
+Clientes que sincronizam grupos com um repositório de perfil local, podem usar a Consulta Delta para a sincronização completa inicial juntamente com as sincronizações incrementais no futuro. Normalmente, um cliente faria uma sincronização completa inicial de todos os grupos em um locatário e, logo após, obteria alterações incrementais para esses grupos periodicamente. 
 
 ## <a name="tracking-group-changes"></a>Controle de alterações de grupo
 
-O controle de alterações de grupo corresponde a uma série de uma ou mais solicitações GET com a função **delta**. Criar uma solicitação GET é muito parecido com a forma de [listar grupos](../api-reference/beta/api/group_list.md), exceto se você incluir o seguinte:
+O controle de alterações de grupo corresponde a uma série de uma ou mais solicitações GET com a função **delta**. Criar uma solicitação GET é muito parecido com a forma de [listar grupos](../api-reference/v1.0/api/group_list.md), exceto se você incluir o seguinte:
 
 - A função **delta**.
 - Um [token de estado](./delta_query_overview.md) (_deltaToken_ ou _skipToken_) da chamada de função GET **delta** anterior.
@@ -30,12 +30,12 @@ Observe o seguinte:
 - A solicitação inicial não inclui um token de estado. Os tokens de estado serão usados nas solicitações subsequentes.
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description
 ```
 
-### <a name="initial-response"></a>Resposta inicial
+## <a name="initial-response"></a>Resposta inicial
 
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto da coleção [group](../api-reference/beta/resources/group.md) no corpo da resposta. Pressupondo que todo o conjunto de grupos é muito grande, a resposta também incluirá um token de estado nextLink.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção [group](../api-reference/v1.0/resources/group.md) no corpo da resposta. Pressupondo que todo o conjunto de grupos é muito grande, a resposta também incluirá um token de estado nextLink.
 
 Neste exemplo, uma URL nextLink é retornada indicando que não há páginas adicionais de dados a serem recuperados na sessão. O parâmetro de consulta $select da solicitação inicial é codificado na URL nextLink.
 
@@ -44,8 +44,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups(displayName,description)",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,description)",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ",
   "value": [
     {
       "displayName":"TestGroup1",
@@ -66,7 +66,7 @@ Content-type: application/json
 A segunda solicitação especifica o `skipToken` retornado da resposta anterior. Observe que o parâmetro `$select` não é obrigatório, pois o `skipToken` codifica e o inclui.
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
+GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjvB7XnF_yllFsCrZJ
 ```
 
 ## <a name="nextlink-response"></a>Resposta nextLink
@@ -78,8 +78,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7",
   "value": [
     {
       "displayName":"TestGroup3",
@@ -100,7 +100,7 @@ Content-type: application/json
 A terceira solicitação continua a usar os últimos `skipToken` retornados da última solicitação de sincronização. 
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
+GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
 ```
 
 ## <a name="final-nextlink-response"></a>Resposta nextLink final
@@ -112,8 +112,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
       "displayName":"TestGroup5",
@@ -134,7 +134,7 @@ Content-type: application/json
 Usando o `deltaToken` da [última resposta](#final-nextlink-response), você poderá obter grupos alterados (ao ser adicionado, excluído ou atualizado) desde o último pedido.
 
 ``` http
-GET https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
+GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw
 ```
 
 ## <a name="deltalink-response"></a>Resposta deltaLink
@@ -146,8 +146,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": []
 }
 ```
@@ -159,8 +159,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.deltaLink":"https://graph.microsoft.com/beta/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.deltaLink":"https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1hHhmmDhHzCY0Hs6snoIHJCSIfCHdqKdWNZ2VX3kErpyna9GygROwBk-rqWWMFxJC3pw",
   "value": [
     {
       "displayName":"TestGroup7",

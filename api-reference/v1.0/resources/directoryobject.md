@@ -11,13 +11,16 @@ Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é
 |[checkMemberGroups](../api/directoryobject_checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
 |[getMemberGroups](../api/directoryobject_getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/directoryobject_getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
+|[getByIds](../api/directoryobject_getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+
+| Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |id|String|Um GUID que é o identificador exclusivo do objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
+
 Nenhum
 
 

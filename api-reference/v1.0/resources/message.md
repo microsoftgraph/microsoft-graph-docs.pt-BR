@@ -2,8 +2,10 @@
 
 Uma mensagem em uma mailFolder.
 
-Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+Esse recurso permite:
 
+- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/message_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -18,6 +20,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[createForward](../api/message_createforward.md)|[Message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
+|[delta](../api/message_delta.md)|Coleção [message](message.md)| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
 |[forward](../api/message_forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message_move.md)|[Message](message.md)|Mover a mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
 |[reply](../api/message_reply.md)|None|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
@@ -29,6 +32,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
+|**Extensões de esquema**| | |
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Criar uma ou mais propriedades estendidas de valor único em uma mensagem nova ou existente.   |
 |[Obter mensagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Obter mensagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
@@ -37,7 +42,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
@@ -83,7 +88,7 @@ Quando uma mensagem está sendo redigida, na maioria dos casos, as propriedades 
 - A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, a propriedade **sender** é definida como a conta desse representante, enquanto a propriedade **from** Você pode definir programaticamente a propriedade **sender** para um usuário com direito de representante para essa caixa de correio.
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a mensagem. Somente leitura. Anulável.|
@@ -145,9 +150,11 @@ Veja a seguir uma representação JSON do recurso
 
 - [Get mailbox settings](../api/user_get_mailboxsettings.md) 
 - [Atualizar configurações da caixa de correio](../api/user_update_mailboxsettings.md)
+- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](../../../concepts/extensibility_schema_groups.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

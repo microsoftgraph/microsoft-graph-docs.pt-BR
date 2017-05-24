@@ -8,9 +8,12 @@ Uma das seguintes **permissões** é obrigatória para executar essa API, depend
 
 |**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
 |:-----|:-----|:-----|:-----|
-| [event](../resources/event.md) | _Calendars.ReadWrite_ | [group event](../resources/event.md) | _Calendars.ReadWrite_ | 
-| [postagem de grupo](../resources/post.md) | _Group.ReadWrite.All_ | [mensagem](../resources/message.md) | _Mail.ReadWrite_ | 
-| [contato pessoal](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
+| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensagem](../resources/message.md) | _Mail.ReadWrite_ |
+| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
+| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+
 
  
 ## <a name="http-request"></a>Solicitação HTTP
@@ -21,11 +24,11 @@ Use a mesma solicitação REST conforme cria da instância.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts
 POST /users/{id|userPrincipalName}/events
 POST /users/{id|userPrincipalName}/messages
 POST /groups/{id}/events
 POST /groups/{id}/threads/{id}/posts/{id}/reply
+POST /users/{id|userPrincipalName}/contacts
 ```
 
 >**Observação:** A sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
@@ -38,11 +41,15 @@ Identifique a instância do recurso na solicitação e faça um `POST` para a pr
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /devices/{id}/extensions
 POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /groups/{id}/extensions
 POST /groups/{id}/events/{id}/extensions
 POST /groups/{id}/threads/{id}/posts/{id}/extensions
+POST /users/{id|userPrincipalName}/messages/{id}/extensions
+POST /organization/{id}/extensions
+POST /users/{id|userPrincipalName}/contacts/{id}/extensions
+POST /users/{id|userPrincipalName}/extensions
 ```
 
 >**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.

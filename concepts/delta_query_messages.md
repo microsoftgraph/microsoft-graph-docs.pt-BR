@@ -1,6 +1,6 @@
-# <a name="get-incremental-changes-to-messages-in-a-folder-preview"></a>Obter alterações incrementais para mensagens em uma pasta (prévia)
+# <a name="get-incremental-changes-to-messages-in-a-folder"></a>Obter as alterações incrementais para as mensagens em uma pasta 
 
-A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de chamadas de função [delta](../api-reference/beta/api/message_delta.md). Os dados delta permitem manter e sincronizar um armazenamento local de mensagens do usuário, sem ter de buscar todo o conjunto de mensagens do usuário no servidor a cada vez que precise deles.
+A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de chamadas de função [delta](../api-reference/v1.0/api/message_delta.md). Os dados delta permitem manter e sincronizar um armazenamento local de mensagens do usuário, sem ter de buscar todo o conjunto de mensagens do usuário no servidor a cada vez que precise deles.
 
 A consulta delta oferece suporte à sincronização completa, que recupera todas as mensagens em uma pasta (por exemplo, a Caixa de Entrada do usuário), e à sincronização incremental, que recupera todas as mensagens que foram alteradas nessa pasta desde a última sincronização. Normalmente, você faria uma sincronização completa inicial de todas as mensagens em uma pasta e, logo após, obteria alterações incrementais para essa pasta periodicamente. 
 
@@ -8,10 +8,10 @@ A consulta delta oferece suporte à sincronização completa, que recupera todas
 
 A consulta delta é uma operação por pasta. Para controlar as alterações das mensagens em uma hierarquia de pastas, você precisa controlar cada pasta individualmente. 
 
-O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_messages), exceto se você incluir a função **delta**:
+O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), exceto se você incluir a função **delta**:
 
 ```
-GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
 Uma solicitação GET com a função **delta** retorna:
@@ -92,7 +92,7 @@ A primeira solicitação especifica o seguinte:
   "name": "get_messages_delta_1"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=Subject,Sender HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -109,8 +109,8 @@ A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink`. 
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -149,7 +149,7 @@ A segunda solicitação especifica a URL `nextLink` retornada da resposta anteri
   "name": "get_messages_delta_2"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -165,8 +165,8 @@ A segunda resposta retorna as 2 próximas mensagens na pasta e outro `nextLink`,
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -206,7 +206,7 @@ A terceira solicitação continua a usar a última URL do `nextLink` retornada d
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -222,8 +222,8 @@ A terceira resposta retorna a única mensagem restante em uma pasta, e uma URL `
 } -->
 ```
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(message)",
-    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(message)",
+    "@odata.deltaLink":"https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY",
     "value":[
         {
             "@odata.type":"#microsoft.graph.message",
@@ -251,7 +251,7 @@ Usando o `deltaLink` da [última solicitação](#sample-third-request) na últim
   "name": "get_messages_delta_next"
 }-->
 ```
-GET https://graph.microsoft.com/beta/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -260,6 +260,6 @@ Prefer: odata.maxpagesize=2
 ## <a name="see-also"></a>Ver também
 
 - [Consulta delta do Microsoft Graph](../Concepts/delta_query_overview.md)
-- [Obter as alterações incrementais para os eventos em um modo de exibição de calendário (visualização)](../Concepts/delta_query_events.md)
-- [Obter as alterações incrementais para grupos (visualização)](../Concepts/delta_query_groups.md)
-- [Obter as alterações incrementais para usuários (visualização)](../Concepts/delta_query_users.md)
+- [Obter as alterações incrementais para os eventos em um modo de exibição de calendário](../Concepts/delta_query_events.md)
+- [Obter as alterações incrementais para grupos](../Concepts/delta_query_groups.md)
+- [Obter as alterações incrementais para usuários](../Concepts/delta_query_users.md)

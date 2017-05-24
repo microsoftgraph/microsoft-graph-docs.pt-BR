@@ -3,18 +3,21 @@
 Obtém um objeto de borda usando seu índice.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/borders/ItemAt
-POST /workbook/worksheets(<id|name>)/range(<address>)/format/borders/ItemAt
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/format/borders/ItemAt
+POST /workbook/worksheets/{id|name}/range(<address>)/format/borders/ItemAt
+POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação

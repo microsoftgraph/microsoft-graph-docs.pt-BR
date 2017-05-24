@@ -2,6 +2,7 @@
 
 Uma mailFolder em caixa de correio de um usuário, como Caixa de Entrada, Rascunhos e Itens Enviados. MailFolders podem conter mensagens e mailFolders filho.
 
+Esse recurso suporta a utilização da [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/mailfolder_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -15,6 +16,7 @@ Uma mailFolder em caixa de correio de um usuário, como Caixa de Entrada, Rascun
 |[Update](../api/mailfolder_update.md) | [mailFolder](mailfolder.md)|Atualize o objeto mailFolder especificado. |
 |[Delete](../api/mailfolder_delete.md) | Nenhuma |Exclua o objeto mailFolder especificado. |
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Copie uma mailFolder e seu conteúdo para outra mailFolder.|
+|[delta](../api/mailfolder_delta.md)|Coleção [mailFolder](mailfolder.md)|Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Mova uma mailFolder e seu conteúdo para outra mailFolder.|
 |[Criar propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma mailFolder nova ou existente.   |
 |[Obter mailFolder com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Obtenha mailFolders que contêm uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
@@ -23,7 +25,7 @@ Uma mailFolder em caixa de correio de um usuário, como Caixa de Entrada, Rascun
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
 |displayName|String|O nome de exibição da mailFolder.|
@@ -42,7 +44,7 @@ MailFolders no Outlook podem conter mais de um tipo de itens. Por exemplo, a cai
 
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |childFolders|Coleção [MailFolder](mailfolder.md)|A coleção de pastas filho na mailFolder.|
 |mensagens|Coleção [Message](message.md)|A coleção de mensagens na mailFolder.|
@@ -77,6 +79,12 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
+## <a name="see-also"></a>Veja também
+
+- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

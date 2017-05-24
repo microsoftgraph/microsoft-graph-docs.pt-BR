@@ -2,7 +2,7 @@
 
 O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
 
-Se um recurso [**Permission**](permission.md) tiver uma faceta **sharingLink** não nula, a permissão representará um link sharnig (em vez de permissões concedidas a uma pessoa ou um grupo).
+Se um recurso [**Permission**](permission.md) tiver uma faceta **sharingLink** não nula, a permissão representará um link de compartilhamento (em vez de permissões concedidas a uma pessoa ou um grupo).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -25,7 +25,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	    | Tipo	                    | Descrição                                                                                                                                                                                             |
+| Propriedade    | Tipo                    | Descrição                                                                                                                                                                                             |
 |:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | aplicativo | [identity](identity.md) | O aplicativo ao qual o link está associado.                                                                                                                                                                    |
 | type        | String                  | O tipo do link criado.                                                                                                                                                                           |

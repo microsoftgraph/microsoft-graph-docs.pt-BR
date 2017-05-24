@@ -3,23 +3,26 @@
 Atualiza as propriedades do objeto chartaxistitle.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/seriesaxis/title
-PATCH /workbook/worksheets(<id|name>)/charts(<name>)/axes/categoryaxis/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/title
+PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |texto|string|Representa o título do eixo.|
 |visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
@@ -34,7 +37,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "update_chartaxistitle"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/axes/valueaxis/title
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
 Content-type: application/json
 Content-length: 45
 

@@ -3,18 +3,21 @@
 Obtém um objeto que representa toda a coluna do intervalo.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/EntireColumn
-POST /workbook/worksheets(<id|name>)/range(<address>)/EntireColumn
-POST /workbook/tables(<id|name>)/columns(<id|name>)/range/EntireColumn
+GET /workbook/names(<name>)/range/EntireColumn
+GET /workbook/worksheets/{id|name}/range(<address>)/EntireColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/EntireColumn
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -31,7 +34,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "range_entirecolumn"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/EntireColumn
 ```
 
 ##### <a name="response"></a>Resposta

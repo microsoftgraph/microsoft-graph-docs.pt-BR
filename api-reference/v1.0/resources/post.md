@@ -24,6 +24,8 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
+|**Extensões de esquema**| | |
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[post](post.md)  |Criar uma ou mais propriedades estendidas de valor único em uma postagem nova ou existente.   |
 |[Obter postagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [post](post.md) | Obtenha postagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
@@ -31,7 +33,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Obter postagem com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [post](post.md) | Obtenha uma postagem que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
@@ -48,7 +50,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |sender|[recipient](recipient.md)|Contém o endereço do remetente. O valor de Sender será considerado o endereço do usuário autenticado caso o remetente não seja especificado. Esta é uma propriedade padrão.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [Attachment](attachment.md)| Somente leitura. Anulável.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável.|
@@ -94,8 +96,8 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="see-also"></a>Ver também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](../../../concepts/extensibility_schema_groups.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

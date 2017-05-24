@@ -2,27 +2,25 @@
 
 Contém informações sobre um serviço SKU assinado por uma empresa.
 
-Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e excluir não têm suporte. Não há suporte para expressões de filtro de consulta.
-
-Herda de [directoryObject](directoryobject.md).
-
+Somente a operação de leitura é compatível com as SKUs inscritas; criar, atualizar e excluir não têm suporte. Não há suporte para expressões de filtro de consulta. Herda de [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Ler propriedades do objeto subscribedSku.|
+|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Leia as propriedades e os relacionamentos do objeto subscribedSku.|
+|[Listar subscribedsku](../api/subscribedsku_list.md) | Coleção [subscribedSku](subscribedsku.md) |Recupere a lista de assinaturas comerciais que uma organização adquiriu.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|capabilityStatus|Cadeia de caracteres|Por exemplo, "Ativado", "Bloqueado" e "Suspenso".|
-|consumedUnits|Int32|O número de licenças que foram atribuídas.|
-|id|String|O identificador exclusivo do objeto SKU assinado. Chave. Somente leitura.|
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)|Informações sobre o número e o status das licenças pré-pagas.|
-|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)|Informações sobre os planos do serviço que estão disponíveis com o SKU.|
-|skuId|Guid|O identificador exclusivo (GUID) do SKU do serviço.|
-|skuPartNumber|String|O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC".|
-|appliesTo|Cadeia de caracteres|Por exemplo, “Usuário” ou “Empresa”.|
+|appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
+|capabilityStatus|String| Por exemplo, “Enabled”. |
+|consumedUnits|Int32| O número de licenças que foram atribuídas. |
+|id|Cadeia de caracteres| O identificador exclusivo do objeto SKU assinado. Chave, não anulável. |
+|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
+|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável |
+|skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
+|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". |
 
 ## <a name="relationships"></a>Relações
 Nenhum

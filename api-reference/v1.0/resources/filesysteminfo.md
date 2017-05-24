@@ -11,7 +11,7 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "lastAccessedDateTime"
   ],
   "@odata.type": "microsoft.graph.fileSystemInfo"
 }-->
@@ -25,10 +25,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	                 | Tipo	           | Descrição                                                   |
-|:-------------------------|:---------------|:--------------------------------------------------------------|
-| **createdDateTime**      | DateTimeOffset | A data e a hora UTC em que o arquivo foi criado em um cliente.       |
-| **lastModifiedDateTime** | DateTimeOffset | A data e hora UTC em que o arquivo foi modificado pela última vez em um cliente. |
+| Propriedade                 | Tipo           | Descrição                                                                                                          |
+| :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
+| **createdDateTime**      | DateTimeOffset | A data e a hora UTC da criação do arquivo em um cliente.                                                              |
+| **lastAccessedDateTime** | DateTimeOffset | A data e hora UTC em que o arquivo foi acessado pela última vez. Disponível para o [lista de arquivos recentes](../api/drive_recent.md) apenas. |
+| **lastModifiedDateTime** | DateTimeOffset | A data e hora UTC em que o arquivo foi modificado pela última vez em um cliente.                                                        |
 
 ## <a name="notes"></a>Observações
 

@@ -9,6 +9,8 @@ Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) 
 retorna uma coleção de todos os objetos da planilha que fazem parte da pasta de trabalho.    
 
 
+** Observação: A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML. Não há suporte para pastas de trabalho de extensão de `.xls`. 
+
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
 Você pode usar o [ponto de extremidade do Azure AD v.20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
@@ -146,6 +148,34 @@ content-type: application/json;odata.metadata
 }
 ```
 
+#### <a name="get-a-new-worksheet"></a>Obter uma nova planilha 
+ 
+<!-- { "blockType": "ignored" } -->
+```http
+GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+```
+
+Resposta 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 200, OK
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN')/workbook/worksheets(%27%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D%27)",
+  "id": "{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}",
+  "name": "Sheet32243",
+  "position": 5,
+  "visibility": "Visible"
+}
+```
+
+** Observação: As planilhas também podem ser recuperadas usando a ID. No entanto, atualmente, a ID contém os caracteres `{` e '}' que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter uma planilha com a ID de `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, a URL codifica a ID no caminho como `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+
 #### <a name="delete-a-worksheet"></a>Excluir uma planilha
 
 Solicitação
@@ -168,7 +198,7 @@ HTTP code: 204, No Content
 Solicitação 
 
 ```
-PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B00000000-0001-0000-0100-000000000000%7D')
+PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
 content-type: Application/Json 
 accept: application/Json 
 authorization: Bearer {access-token} 
@@ -228,6 +258,8 @@ content-type: application/json;odata.metadata
   ]
 }
 ```
+
+** Observação: A ID contém os caracteres `{` e `}` (exemplo: `{00000000-0008-0000-0100-000003000000}`) que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter um objeto gráfico, a URL codifica a ID no caminho como `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### <a name="get-chart-image"></a>Obter imagem do gráfico
 
@@ -1191,7 +1223,7 @@ Você pode acessar as funções de pasta de trabalho por meio de uma coleção d
 ##### <a name="request"></a>Solicitação
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
+https://graph.microsoft.com/v1.0/me/drive/root:/book1.xlsx:/workbook/functions/pmt
 content-type: Application/Json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}

@@ -2,6 +2,12 @@
 
 Um evento em um calendário.
 
+Esse recurso permite:
+
+- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/event_delta.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
@@ -14,6 +20,7 @@ Um evento em um calendário.
 |[accept](../api/event_accept.md)|Nenhum|Aceitar o evento especificado.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|Nenhum|Aceitar provisoriamente o evento especificado.|
 |[decline](../api/event_decline.md)|Nenhum|Recusar o convite para o evento especificado.|
+|[delta](../api/event_delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
 |[dismissReminder](../api/event_dismissreminder.md)|Nenhum|Descartar o lembrete para o evento especificado.|
 |[snoozeReminder](../api/event_snoozereminder.md)|Nenhum|Adiar o lembrete para o evento especificado.|
 |[Listar instâncias](../api/event_list_instances.md) |Coleção [event](event.md)| Obter as instâncias (ocorrências) de um evento para um intervalo de tempo especificado. Se o evento for do tipo `SeriesMaster`, isso retornará as exceções e ocorrências desse evento no intervalo de tempo especificado.|
@@ -32,7 +39,7 @@ Um evento em um calendário.
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |attendees|Coleção [attendee](attendee.md)|A coleção de participantes do evento.|
 |body|[itemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
@@ -69,7 +76,7 @@ Um evento em um calendário.
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)|A coleção de anexos [fileAttachment](fileAttachment.md) e [itemAttachment](itemAttachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |calendário|[calendar](calendar.md)|O calendário que contém o evento. Propriedade de navegação. Somente leitura.|
@@ -142,11 +149,13 @@ Veja a seguir uma representação JSON do recurso
 ```
 
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Veja também
 
+- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obter as alterações incrementais para os eventos em uma pasta](../../../concepts/delta_query_events.md)
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](../../../concepts/extensibility_schema_groups.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

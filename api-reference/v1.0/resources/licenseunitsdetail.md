@@ -3,13 +3,11 @@
 A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
-|:---------------|:--------|:----------|
-|enabled|Int32|            |
-|suspended|Int32|            |
-|warning|Int32|            |
-
-
+| Propriedade       | Tipo    |Descrição|
+|:-------------|:-----|:----------|
+|enabled|Int32| O número de unidades que estão habilitadas. |
+|suspended|Int32| O número de unidades que estão suspensas. |
+|warning|Int32| O número de unidades que estão com um status de aviso. |
 
 ## <a name="json-representation"></a>Representação JSON
 

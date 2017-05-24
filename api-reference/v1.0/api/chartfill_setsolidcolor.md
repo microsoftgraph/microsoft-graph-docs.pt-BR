@@ -3,18 +3,21 @@
 Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.
 ## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
+
+    * Files.ReadWrite
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
-POST /workbook/worksheets(<id|name>)/charts(<name>)/title/format/fill/setSolidColor
-POST /workbook/worksheets(<id|name>)/charts(<name>)/legend/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/setSolidColor
+POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/setSolidColor
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -36,7 +39,7 @@ Veja a seguir um exemplo da solicitação.
   "name": "chartfill_setsolidcolor"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets(<id|name>)/charts(<name>)/format/fill/setSolidColor
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/setSolidColor
 Content-type: application/json
 Content-length: 28
 

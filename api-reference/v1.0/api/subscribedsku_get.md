@@ -15,7 +15,7 @@ Esse método **não** tem suporte a [Parâmetros de consulta OData](http://devel
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | Token de portador. Obrigatório. |
+| Autorização  | string  | &lt;Token&gt; de portador. *Obrigatório* |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

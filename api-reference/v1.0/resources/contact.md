@@ -2,6 +2,12 @@
 
 Um contato é um item no Outlook no qual você pode organizar e salvar informações sobre as pessoas e organizações com quem se comunica. Os contatos estão contidos em pastas de contatos.
 
+Esse recurso permite:
+
+- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contact_delta.md).
+
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
@@ -10,8 +16,13 @@ Um contato é um item no Outlook no qual você pode organizar e salvar informaç
 |[Create](../api/user_post_contacts.md) | [contact](contact.md) |Adicione um contato na pasta de Contatos raiz ou no ponto de extremidade de contatos de outra pasta de contatos.|
 |[Update](../api/contact_update.md) | [contact](contact.md) |Atualize o objeto contact. |
 |[Delete](../api/contact_delete.md) | Nenhuma |Exclua um objeto contact. |
+|[delta](../api/contact_delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de contatos que foram adicionados, excluídos ou atualizados em uma pasta especificada.|
+|**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
+|**Extensões de esquema**| | |
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
+|**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |Criar uma ou mais propriedades estendidas de valor único em um contato novo ou existente.   |
 |[Obter contato com propriedade estendida com valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obter contatos que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contact](contact.md) | Criar uma ou mais propriedades estendidas de vários valores em um contato novo ou existente.  |
@@ -19,7 +30,7 @@ Um contato é um item no Outlook no qual você pode organizar e salvar informaç
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |assistantName|String|O nome do assistente do contato.|
 |birthday|DateTimeOffset|O aniversário do contato. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -61,7 +72,7 @@ Um contato é um item no Outlook no qual você pode organizar e salvar informaç
 |yomiSurname|String|O sobrenome japonês fonético do contato.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o contato. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o contato. Somente leitura. Anulável.|
@@ -130,6 +141,15 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
+
+## <a name="see-also"></a>Veja também
+
+- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
+- [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)
+- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
+- [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
