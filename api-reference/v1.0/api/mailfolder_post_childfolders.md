@@ -16,7 +16,7 @@ Especifique a pasta pai na URL de consulta como uma ID de pasta, ou os nomes de 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Authorization  | <token> de portador. Obrigatório.  |
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -24,7 +24,7 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. 
 
 | Parâmetro       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
+|displayName|String|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 Se bem sucedido, este método retorna o código de resposta `201, Created` e o objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
