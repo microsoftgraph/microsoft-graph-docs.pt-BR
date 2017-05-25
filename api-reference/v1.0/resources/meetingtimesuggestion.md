@@ -28,9 +28,9 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|attendeeAvailability|Coleção [attendeeAvailability](attendeeavailability.md)|Uma matriz que mostra o status de disponibilidade de cada participante para essa sugestão da reunião.|
+|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|Uma matriz que mostra o status de disponibilidade de cada participante para essa sugestão da reunião.|
 |confidence|Double|Uma porcentagem que representa a probabilidade de todos os participantes comparecerem.|
-|locations|Coleção [location](location.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
+|locations|[location](location.md) collection|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Um período de tempo sugerido para a reunião.|
 |organizerAvailability|String| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Razão da sugestão de horário da reunião.|
