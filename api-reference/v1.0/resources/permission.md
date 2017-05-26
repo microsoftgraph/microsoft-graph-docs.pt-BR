@@ -69,7 +69,7 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 
 ## <a name="remarks"></a>Comentários
 
-O OneDrive Business e as bibliotecas de documentos do SharePoint não retornam a propriedade **inheritedFrom**.
+O OneDrive for Business e as bibliotecas de documentos do SharePoint não retornam a propriedade **inheritedFrom**.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
