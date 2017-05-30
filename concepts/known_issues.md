@@ -1,0 +1,221 @@
+# <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
+
+Este artigo descreve os problemas conhecidos com o Microsoft Graph. Para obter informações sobre as atualizações mais recentes, confira o [Log de alterações do Microsoft Graph](changelog.md).
+
+## <a name="users"></a>Usuários
+
+### <a name="no-instant-access-after-creation"></a>Sem acesso instantâneo após a criação
+
+Os usuários podem ser criados imediatamente por um POST na entidade do usuário. Uma licença do Office 365 deve ser atribuída a um usuário primeiro para que ele possa ter acesso aos serviços do Office 365. Mesmo assim, devido à natureza distribuída do serviço, pode demorar 15 minutos antes que os arquivos, as mensagens e as entidades de eventos fiquem disponíveis para uso por esse usuário na API do Microsoft Graph. Durante esse período, os aplicativos receberão uma resposta de erro 404 HTTP.
+
+### <a name="photo-restrictions"></a>Restrições de foto
+
+A leitura e a atualização da foto do perfil do usuário só serão possíveis se o usuário tiver uma caixa de correio. Além disso, as fotos que *possam* ter sido previamente armazenadas usando a propriedade **thumbnailPhoto** (usando a visualização da API unificada do Office 365, o Azure AD Graph ou por meio da sincronização do AD Connect) deixarão de estar acessíveis com a propriedade **photo** do recurso [usuário](../api-reference/v1.0/resources/user.md) do Microsoft Graph. A falha na leitura ou na atualização de uma foto, nesse caso, resultaria no seguinte erro:
+
+```javascript
+    {
+      "error": {
+        "code": "ErrorNonExistentMailbox",
+        "message": "The SMTP address has no mailbox associated with it."
+      }
+    }
+```
+
+### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Adicionar e acessar calendários baseados em ICS na caixa de correio do usuário
+
+Atualmente, há suporte parcial para um calendário com base em uma Inscrição em Calendário da Internet (ICS):
+
+* Você pode adicionar um calendário baseado em ICS para uma caixa de correio do usuário por meio da interface do usuário, mas não através da API do Microsoft Graph.
+* [Listar os calendários do usuário](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
+* Você também pode [listar os eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de um calendário baseado em ICS.
+
+### <a name="using-delta-query"></a>Usando a consulta delta
+
+Para informações sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
+
+## <a name="groups-and-microsoft-teams"></a>Grupos e equipes da Microsoft
+
+>**Observação** o Microsoft Teams agora está em status de prévia disponível apenas no ponto de extremidade beta do Microsoft Graph.
+
+### <a name="policy"></a>Política
+
+O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App. 
+
+### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
+
+O Microsoft Graph expõe duas permissões (*Group.Read.All* e *Group.ReadWrite.All*) para obter acesso a APIs de grupos e Microsoft Teams. Essas permissões devem ser permitidas por um administrador (que é uma alteração da prévia).  No futuro, pretendemos adicionar novas permissões de grupos e equipes que possam ser permitidas pelos usuários.
+
+Além disso, somente a API para administração de grupo principal e gerenciamento suporta acesso usando permissões delegadas ou somente para aplicativos. Todos os outros recursos da API do grupo dão suporte apenas a permissões delegadas.
+
+Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e somente para aplicativos:
+
+* Criar e excluir grupos
+* Obter e atualizar propriedades do grupo pertencentes ao gerenciamento ou administração de grupo
+* [Definições do diretório](../api-reference/v1.0/resources/directoryobject.md), tipo e sincronização do grupo
+* Membros e proprietários de grupo
+
+
+Exemplos de recursos de grupo que oferecem suporte somente a permissões delegadas:
+
+* Conversas, eventos e foto de grupo
+* Remetentes externos, remetentes aceitos ou rejeitados e assinatura de grupo
+* Favoritos do usuário e contagem de não vistos
+
+### <a name="teams-in-microsoft-teams-preview"></a>Equipes em Microsoft Teams (prévia)
+
+O Microsoft Teams se baseia em grupos do Office 365.  Todas as APIs de grupo também podem ser usadas com equipes, com a exceção de que 'Criar grupo' não permite atualmente a criação de uma equipe.  Versões futuras da API terão suporte.
+
+### <a name="microsoft-teams-channels-preview"></a>Canais Microsoft Teams (prévia)
+
+Atualmente você pode ler e criar canais, mas não pode atualizá-los ou excluí-los.  Versões futuras da API terão suporte.
+
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Os threads e as mensagens de bate-papo do Microsoft Teams (prévia)
+
+Atualmente é possível criar threads de bate-papo em canais, mas não é possível ler threads de bate-papo existentes ou adicionar respostas a elas.  Assim como não é possível ler ou escrever bate-papos diretos entre usuários que estão fora do escopo de uma equipe ou de um canal.  Versões futuras da API agregarão recursos adicionais nesta área.
+
+
+### <a name="adding-and-getting-attachments-of-group-posts"></a>Adicionando e obtendo anexos de postagens de grupo
+
+A [adição](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) de anexos a postagens de grupo a [listagem](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) e a obtenção de anexos de postagens do grupo atualmente retornam a mensagem de erro "A solicitação de OData não tem suporte." Uma correção foi implementada nas versões `/v1.0` e `/beta`, e deve estar amplamente disponível até o final de janeiro de 2016.
+
+### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
+
+Atualmente, há um problema que impede a configuração da propriedade **allowExternalSenders** de um grupo em uma operação de POST ou PATCH no `/v1.0` e no `/beta`.
+
+### <a name="using-delta-query"></a>Usando a consulta delta
+
+Para informações sobre problemas conhecidos com o uso da consulta delta, consulte a [seção da consulta delta](#delta-query) deste artigo.
+
+## <a name="contacts"></a>Contatos
+
+### <a name="organization-contacts-available-in-only-beta"></a>Contatos de organização disponíveis somente na versão beta
+
+Somente os contatos pessoais têm suporte no momento. Os contatos organizacionais atualmente não têm suporte na `/v1.0`, mas podem ser encontrados na versão `/beta`.
+
+### <a name="default-contacts-folder"></a>Pasta Contatos padrão
+
+Na versão `/v1.0`, `GET /me/contactFolders` não inclui a pasta de contatos do usuário padrão. 
+
+Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
+```
+
+Na consulta acima:
+
+1. `/me/contacts?$top=1` obtém as propriedades de um [contato](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) na pasta de contatos padrão.
+2. A anexação de `&$select=parentFolderId` retorna apenas a propriedade **parentFolderId** do contato, que é a ID da pasta de contatos padrão.
+
+
+### <a name="accessing-contacts-via-a-contact-folder-in-beta"></a>Acessar contatos por meio de uma pasta de contatos na versão beta
+
+Atualmente, não há na versão `/beta` um problema que impeça o acesso a um [contato](../api-reference/beta/resources/contact.md) especificando sua pasta pai na URL de solicitação REST, conforme mostrado nos dois cenários abaixo.
+
+* Acessando um contato a partir de um nível superior do [contactFolder](../api-reference/beta/resources/contactfolder.md) do usuário.
+
+```http
+GET /me/contactfolders/{id}/contacts/{id}
+GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
+```
+
+* Acessando um contato contido em uma pasta filha de um **contactFolder**.  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
+
+```http
+GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
+```
+
+Como alternativa, você pode simplesmente [obter](../api-reference/beta/api/contact_get.md) o contato, especificando sua identificação conforme mostrado abaixo, uma vez que o GET /contacts na versão `/beta` se aplica a todos os contatos na caixa de correio do usuário:
+
+```http
+GET /me/contacts/{id}
+GET /users/{id | userPrincipalName}/contacts/{id}
+```
+
+## <a name="messages"></a>Mensagens
+
+### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
+
+O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) não se torna parte do corpo do rascunho de mensagem resultante.  
+
+## <a name="drives-files-and-content-streaming"></a>Unidades, arquivos e streaming de conteúdo
+
+* O acesso pela primeira vez a uma unidade pessoal de um usuário pelo Microsoft Graph antes que ele acesse seu site pessoal por um navegador resulta em uma resposta 401.
+
+## <a name="query-parameter-limitations"></a>Limitações de parâmetro de consulta
+
+* Limitações **$expand**:
+    * Sem suporte para `nextLink`
+     * Não há suporte para mais de um nível de expansão
+     * Não há suporte com parâmetros adicionais (**$filter**, **$select**)
+* Não há suporte para vários namespaces
+* GETs em `$ref` e conversão não têm suporte em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
+* Não há suporte para `@odata.bind`.  Isso significa que os desenvolvedores não serão capazes de definir corretamente `Accepted` ou `RejectedSenders` em um grupo.
+* `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos
+* Filtragem/pesquisa entre cargas não disponível. 
+* A pesquisa de texto completo (usando **$search**) só está disponível para alguns entidades, como mensagens.
+
+## <a name="delta-query"></a>Consulta delta
+
+* O contexto de OData às vezes é retornado incorretamente ao controlar alterações nas relações.
+* As extensões de esquema (herdadas) não são retornadas com instrução $select, mas são retornadas sem $select.
+* Os clientes não podem controlar alterações em extensões abertas ou extensões de esquema.
+
+## <a name="extensions"></a>Extensões
+
+### <a name="change-tracking-is-not-supported"></a>Não há suporte para o controle de alterações
+
+O rastreamento de alterações (consulta delta) não tem suporte nas propriedades de extensão do esquema ou abrir.
+
+### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Criar um recurso e uma extensão aberta ao mesmo tempo
+
+Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma instância de **administrativeUnit**, **device**, **group**, **organization** ou **user**. Primeiro você deve criar a instância e, depois, especificar os dados da extensão aberta em uma solicitação ``POST`` subsequente nessa instância.
+
+### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Limite de 100 valores de propriedade de extensão de esquema permitido por instância de recursos
+
+Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmente limitam o número total de valores de propriedade de extensão de esquema que podem ser definidas em um recurso, até 100.
+
+## <a name="json-batching"></a>Processamento em lotes JSON
+
+### <a name="no-nested-batch"></a>Nenhum lote aninhado
+
+Solicitações de lote JSON não devem conter quaisquer solicitações em lotes aninhados.
+
+### <a name="all-individual-requests-must-be-synchronous"></a>Todas as solicitações individuais devem ser síncronas
+
+Todas as solicitações contidas em uma solicitação de lote devem ser executadas de forma síncrona. Se estiver presente, a preferência `respond-async` será ignorada.
+
+### <a name="no-transactions"></a>Sem transações
+
+No momento o Microsoft Graph não oferece suporte a processamento transacional de solicitações individuais. A propriedade `atomicityGroup` em solicitações individuais será ignorada.
+
+### <a name="uris-must-be-relative"></a>URIs devem ser relativas
+
+Sempre especifique URIs relativas em solicitações de lote. O Microsoft Graph então torna essas URLs absolutas usando o ponto de extremidade de versão incluído na URL de lote.
+
+### <a name="limit-on-batch-size"></a>Limite de tamanho de lote
+
+Solicitações de lote JSON atualmente estão limitadas a 5 solicitações individuais. Conforme o processamento em lotes JSON amadurece, esse limite é aumentado.
+
+### <a name="simplified-dependencies"></a>Dependências simplificadas
+
+Solicitações individuais podem depender de outras solicitações individuais. Atualmente, solicitações só podem depender de uma única outra solicitação e devem seguir um destes três padrões:
+
+1. Paralelo – nenhuma solicitação individual declara uma dependência na propriedade `dependsOn`.
+2. Serial – todas as solicitações individuais dependem da solicitação individual anterior.
+3. Mesmo – todas as solicitações individuais indicam que uma dependência na propriedade `dependsOn` declaram a mesma dependência.
+
+Conforme o processamento em lotes JSON amadurece, essas limitações são removidas.
+
+## <a name="cloud-solution-provider-apps-must-use-azure-ad-endpoint"></a>Aplicativos de provedor de soluções em nuvem devem usar o ponto de extremidade do Azure AD
+
+Aplicativos de provedor de solução de nuvem (CSP) devem adquirir tokens de pontos de extremidade do Azure AD (v1) para chamar a Microsoft Graph com êxito em seus clientes gerenciados por parceiros. Atualmente, não há suporte para aquisição de um token pelo ponto de extremidade Azure AD v 2.0 mais recente.
+
+## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Azure AD Graph ou REST do Office 365
+
+Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) específicas do ponto de extremidade. Para o Azure Active Directory, veja a postagem no blog [Microsoft Graph ou Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre os recursos que só estão disponíveis pela API Azure AD Graph.
+
+### <a name="feedback"></a>Comentários
+
+> Seus comentários são importantes para nós. Junte-se a nós na página [Stack Overflow](http://stackoverflow.com/questions/tagged/microsoftgraph).
