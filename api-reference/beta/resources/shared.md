@@ -28,7 +28,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade       | Tipo                          | Descrição                                                                                        |
 | :------------- | :---------------------------- | :------------------------------------------------------------------------------------------------- |
 | owner          | [IdentitySet](identityset.md) | A identidade do proprietário do item compartilhado. Somente leitura.                                           |
-| escopo          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura. |
+| scope          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura. |
 | sharedBy       | [identitySet](identityset.md) | A identidade do usuário que compartilhou o item. Somente leitura.                                           |
 | sharedDateTime | DateTimeOffset                | A data e a hora UTC que o item foi compartilhado. Somente leitura.                                         |
 
@@ -37,8 +37,8 @@ Veja a seguir uma representação JSON do recurso
 | Valor        | Descrição                                                                           |
 |:-------------|:--------------------------------------------------------------------------------------|
 | public       | O item é compartilhado usando-se um link que funciona para qualquer pessoa que tem o link.               |
-| organização | O item é compartilhado usando-se um link que funciona para qualquer pessoa na organização do proprietário. |
-| usuários        | O item é compartilhado apenas com usuários específicos.                                          |
+| organization | O item é compartilhado usando-se um link que funciona para qualquer pessoa na organização do proprietário. |
+| users        | O item é compartilhado apenas com usuários específicos.                                          |
 
 ## <a name="remarks"></a>Comentários
 
