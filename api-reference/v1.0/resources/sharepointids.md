@@ -33,7 +33,7 @@ Veja a seguir uma representação JSON do recurso
 | listItemId       | string       | Um identificador inteiro para o item na lista contida.                               |
 | listItemUniqueId | string       | O identificador exclusivo (guid) para o item dentro do OneDrive for Busienss ou de um site do SharePoint. |
 | siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).                        |
-| siteUrl          | cadeia de caracteres (url) | A URL do SharePoint do site que contém o item.                                      |
+| siteUrl          | string (url) | A URL do SharePoint do site que contém o item.                                      |
 | webId            | string       | O identificador exclusivo (guid) do site do item (SPWeb).                                    |
 
 ## <a name="remarks"></a>Comentários
