@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/OffsetRange
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 
 ## <a name="request-body"></a>Corpo da solicitação
