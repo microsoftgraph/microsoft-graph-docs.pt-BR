@@ -20,7 +20,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Exemplo de SDK</a>
     </td> 
         <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">Exemplo de REST</a>
+                <a href="https://github.com/microsoftgraph/android-java-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -29,7 +29,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td> 
         <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/angular-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -38,7 +38,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -65,7 +65,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -74,7 +74,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/php-connect-rest-sample">Exemplo de REST</a>
+            <a href="https://github.com/microsoftgraph/php-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
