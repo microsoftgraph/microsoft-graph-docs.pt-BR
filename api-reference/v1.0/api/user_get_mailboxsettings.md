@@ -5,7 +5,7 @@ Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário. Isso 
 Você pode exibir todas as configurações de caixa de correio ou obter configurações específicas.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-O seguinte **escopo** é necessário para executar esta API: *Mailboxsettings.ReadWrite*  
+O seguinte **escopo** é obrigatório para executar esta API: *MailboxSettings.Read*  
 
 ## <a name="http-request"></a>Solicitação HTTP
 Para acessar todas as configurações de email que incluem configurações de respostas automáticas:

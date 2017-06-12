@@ -27,7 +27,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso
 
 ##### <a name="request"></a>Solicitação
 
-Aqui está um exemplo da solicitação para recuperar um item compartilhado:
+Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:
 
 <!-- {
   "blockType": "request",
@@ -38,7 +38,7 @@ GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
 ```
 ##### <a name="response"></a>Resposta
 
-Este é um exemplo da resposta.
+Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -64,7 +64,7 @@ Content-type: application/json
 
 Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.
 
-### <a name="exmaple-single-file"></a>Exemplo (arquivo único)
+### <a name="example-single-file"></a>Exemplo (arquivo único)
 
 ##### <a name="request"></a>Solicitação
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="exmaple-shared-folder"></a>Exemplo (pasta compartilhada)
+### <a name="example-shared-folder"></a>Exemplo (pasta compartilhada)
 
 ##### <a name="request"></a>Solicitação
 

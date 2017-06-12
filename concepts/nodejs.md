@@ -39,7 +39,7 @@ Registre um aplicativo no Portal de Registro de Aplicativos da Microsoft. Isso g
 
 6. Em **Plataformas**, escolha **Adicionar plataforma** > **Web**.
 
-7. Insira *http://localhost:3000/login* como o URI de redirecionamento. 
+7. Insira *http://localhost:3000/token* como o URI de redirecionamento. 
 
 8. Escolha **Salvar**.
 
@@ -200,7 +200,7 @@ O aplicativo chama o Microsoft Graph para obter informações sobre o usuário e
 1. Como alternativa, edite o endereço de email do destinatário e escolha o botão **Enviar email**. Quando o email for enviado, será exibida uma mensagem de sucesso abaixo do botão. 
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API REST, usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente a API REST usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
 - Explore nossos outros [exemplos de Node.js](https://github.com/search?utf8=%E2%9C%93&q=node+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) no GitHub.
 
 

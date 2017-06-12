@@ -12,24 +12,25 @@ Os seguintes **escopos** são necessários para executar esta API:
 GET /workbook/worksheets/{id|name}/UsedRange
 
 ```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | Portador {código}|
 
-
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+## <a name="optional-request-parameter"></a>Parâmetro de solicitação opcional
+No URL de solicitação, forneça um parâmetro de consulta opcional.
 
 | Parâmetro       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|valuesOnly|booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+|valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
+
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome       | Descrição|
+|:---------------|:----------|
+| Authorization  | Portador {código}|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
+Aqui está um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Veja a seguir um exemplo da solicitação.
 <!-- {
@@ -37,13 +38,9 @@ Veja a seguir um exemplo da solicitação.
   "name": "worksheet_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 Content-type: application/json
-Content-length: 24
 
-{
-  "valuesOnly": true
-}
 ```
 
 ##### <a name="response"></a>Resposta

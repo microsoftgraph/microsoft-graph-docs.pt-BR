@@ -1,6 +1,6 @@
-# <a name="create-thread"></a>Criar thread
+# <a name="create-conversation-thread"></a>Criar thread de conversas
 
-Inicie uma nova conversa criando primeiro um thread. 
+Inicie uma nova conversa em grupo criando primeiro um thread. 
 
 Uma nova conversa, thread de conversas e posts são criados no grupo. Use [reply thread](conversationthread_reply.md) ou [reply post](post_reply.md) para postar mais naquele thread.
 
@@ -16,7 +16,7 @@ POST /groups/{id}/threads
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Authorization  | <token> de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
