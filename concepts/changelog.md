@@ -1,6 +1,6 @@
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
-Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo a versão 1.0 e a beta ponto de extremidade e APIs do Microsoft Graph para pontos de extremidade beta.  
+Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.  
 
 ## <a name="may-2017"></a>Maio de 2017
 
