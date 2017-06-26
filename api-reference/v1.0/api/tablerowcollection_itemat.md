@@ -16,18 +16,18 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |índice|number|Valor de índice do objeto a ser recuperado. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `200, OK` e o objeto [TableRow](../resources/tablerow.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [TableRow](../resources/tablerow.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

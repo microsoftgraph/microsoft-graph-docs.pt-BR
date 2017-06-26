@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 Forneça os seguintes parâmetros de consulta necessários com valores na URL solicitada.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |startDateTime|String|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
@@ -49,7 +49,7 @@ Este método também dá suporte a [Parâmetros de consulta OData](http://develo
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Preferir  | outlook.timezone="Eastern Standard Time". Opcional. Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, a resposta retorna em UTC. |
 
 ## <a name="request-body"></a>Corpo da solicitação

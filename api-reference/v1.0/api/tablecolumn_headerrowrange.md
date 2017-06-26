@@ -16,7 +16,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/HeaderRow
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação

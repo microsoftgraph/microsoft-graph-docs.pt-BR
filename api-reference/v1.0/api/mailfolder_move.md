@@ -13,18 +13,18 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |destinationId|Cadeia de caracteres|A ID da pasta ou um nome de pasta conhecido, como *Inbox*, *Drafts*, *SentItems* ou *DeletedItems*.|
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `200, OK` e o objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

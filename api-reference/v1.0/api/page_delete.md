@@ -16,11 +16,11 @@ DELETE /groups/{id}/oennote/pages/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | `Bearer <token>` Um token OAuth válido fornecido para o aplicativo com base nas credenciais do usuário e o usuário ter acesso autorizado. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

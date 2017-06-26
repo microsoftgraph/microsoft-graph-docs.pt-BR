@@ -16,8 +16,8 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
-| Accept  | application/json|
+| Autorização  | {token} de portador. Obrigatório.  |
+| Aceitar  | application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

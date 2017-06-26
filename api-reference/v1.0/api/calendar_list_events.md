@@ -5,7 +5,7 @@ Recupera uma lista de eventos em um calendário.  A lista contém reuniões de i
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar_list_calendarview.md) ou [obtenha as instâncias de um evento](event_list_instances.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.Read*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
@@ -32,7 +32,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Preferir  | outlook.timezone="Eastern Standard Time". Opcional. Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, a resposta retorna em UTC. |
 
 ## <a name="request-body"></a>Corpo da solicitação

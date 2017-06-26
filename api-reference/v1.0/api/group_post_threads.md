@@ -7,7 +7,7 @@ Uma nova conversa, thread de conversas e posts são criados no grupo. Use [reply
 Observação: também é possível [iniciar um novo thread em uma conversa existente](conversation_post_threads.md). 
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Group.ReadWrite.All*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.ReadWrite.All*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -16,7 +16,7 @@ POST /groups/{id}/threads
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Authorization  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -24,7 +24,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [conversa
 
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `201, Created` e um objeto [conversationThread](../resources/conversationthread.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [conversationThread](../resources/conversationthread.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

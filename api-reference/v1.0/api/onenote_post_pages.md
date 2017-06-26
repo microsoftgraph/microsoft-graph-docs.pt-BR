@@ -22,7 +22,7 @@ POST /groups/{id}/onenote/pages
 ## <a name="request-headers"></a>Cabeçalhos de solicitação  
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | `Bearer <token>` Um token OAuth válido fornecido para o aplicativo com base nas credenciais do usuário e o usuário ter acesso autorizado. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type | string | `text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -35,7 +35,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o no
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo da solicitação.
 
 No caminho `../onenote/pages`, você pode usar o parâmetro de consulta `sectionName` para criar uma página em uma seção específica no bloco de anotações padrão. Exemplo: `../onenote/pages?sectionName=My%20section`. Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.
 

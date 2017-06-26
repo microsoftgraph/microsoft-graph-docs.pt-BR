@@ -11,14 +11,14 @@ POST /users/{id | userPrincipalName}/calendarGroups
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [CalendarGroup](../resources/calendargroup.md).
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `201, Created` e um objeto [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

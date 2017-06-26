@@ -13,7 +13,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ### <a name="request-body"></a>Corpo da solicitação

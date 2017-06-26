@@ -16,14 +16,14 @@ PATCH /groups/{id}/onenote/pages/{id}/content
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | `Bearer <token>` Um token OAuth válido fornecido para o aplicativo com base nas credenciais do usuário e o usuário ter acesso autorizado. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma matriz de objetos [patchContentCommand](../resources/patchcontentcommand.md) que representa as alterações da página. Veja mais informações e exemplos em <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Atualizar páginas do OneNote</a>.
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `204 No Content`.  Nenhum dado JSON é retornado para uma solicitação PATCH.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.  Nenhum dado JSON é retornado para uma solicitação PATCH.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Veja a seguir um exemplo da solicitação.

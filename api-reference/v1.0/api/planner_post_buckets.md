@@ -16,7 +16,7 @@ POST /planner/buckets
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | <code> de portador|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ### <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerBucket](../resources/plannerbucket.md).

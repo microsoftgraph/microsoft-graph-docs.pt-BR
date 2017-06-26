@@ -12,12 +12,12 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ### <a name="parameters"></a>Parâmetros
 
-| Parâmetro	       | Tipo    |Descrição|
+| Parâmetro	    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|O número de linhas pelo qual expandir o canto inferior direito, referente ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo|
 |deltaColumns|Int32|O número de colunas pelo qual expandir o canto inferior direito, em relação ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo.|
@@ -25,7 +25,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 ### <a name="request-body"></a>Corpo da solicitação
 Forneça os seguintes parâmetros de consulta com valores na URL solicitada.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |deltaRows|Int32||
 |deltaColumns|Int32||

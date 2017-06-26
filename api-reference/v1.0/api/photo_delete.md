@@ -2,7 +2,7 @@
 
 Exclua uma foto.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API:
+Um dos seguintes **escopos** é obrigatório para executar esta API:
 
   * File.ReadWrite
 
@@ -18,7 +18,7 @@ DELETE /drive/root/createdByUser/photo
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | if-match  | cadeia de caracteres  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.|
-| Autorização  | string  | <token> de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação

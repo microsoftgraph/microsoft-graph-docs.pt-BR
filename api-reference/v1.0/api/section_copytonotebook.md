@@ -17,13 +17,13 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | `Bearer <token>` Um token OAuth válido fornecido para o aplicativo com base nas credenciais do usuário e o usuário ter acesso autorizado. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um objeto JSON que contém os parâmetros que a operação precisa.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |groupId|String|A id do grupo para o qual copiar. Use somente quando copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A id do bloco de anotações de destino. |

@@ -17,13 +17,13 @@ PATCH /schemaExtensions/{id}
 ### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | &lt;Token&gt; de portador. Obrigatório. |
+| Autorização  | {token} de portador. Obrigatório. |
 | Content-Type   | application/json | 
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
 |propriedades|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente as alterações aditivas são permitidas. |

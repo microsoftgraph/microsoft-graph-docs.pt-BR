@@ -13,13 +13,13 @@ PATCH /planner/tasks/<id>/details
 ### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | <code> de portador|
+| Autorização  | {token} de portador. Obrigatório. |
 | If-Match  | O último valor ETag conhecido do objeto **plannerTaskDetails** a ser atualizado. Obrigatório.|
 
 ### <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |lista de verificação|[plannerChecklistItems](../resources/plannerchecklistitems.md)|A coleção de itens da lista de verificação na tarefa.|
 |description|String|Descrição da tarefa|

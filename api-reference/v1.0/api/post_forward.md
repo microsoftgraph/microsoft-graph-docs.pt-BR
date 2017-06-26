@@ -3,7 +3,7 @@
 Encaminhe uma postagem para um destinatário. Você pode especificar a conversa pai e o thread na solicitação ou pode especificar apenas o thread pai, sem a conversa pai. 
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API:
+Um dos seguintes **escopos** é obrigatório para executar esta API:
 
 *Group.ReadWrite*, *Group.Readwrite.All*
 
@@ -17,12 +17,12 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|Cadeia de caracteres|Comentário opcional que é encaminhado com a postagem.|
 |toRecipients|Coleção [recipient](../resources/recipient.md)|Os destinatários aos quais os threads são encaminhados.|

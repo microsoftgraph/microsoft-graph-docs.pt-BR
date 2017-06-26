@@ -9,8 +9,8 @@ Uma operação GET procura a foto especificada na caixa de correio do usuário n
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é necessário para executar essa API para:
 
-*    Foto do perfil de qualquer usuário no locatário, incluindo o usuário conectado - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*    Foto do perfil especificamente do usuário conectado - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   Foto do perfil de qualquer usuário no locatário, incluindo o usuário conectado - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
+*   Foto do perfil especificamente do usuário conectado - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
 * Foto do perfil de um **grupo** - *Group.Read.All; Group.ReadWrite.All*
 * Foto de um **contato** - *Contacts.Read; Contacts.ReadWrite*
 
@@ -43,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | \<token\> de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -3,7 +3,7 @@
 Atualiza as propriedades de um dispositivo registrado.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Directory.AccessAsUser.All* ou *Device.ReadWrite.All*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.AccessAsUser.All* ou *Device.ReadWrite.All*
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -15,12 +15,12 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | <token> de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para as propriedades [device](../resources/device.md)que devem ser atualizadas.
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `204 No Content`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

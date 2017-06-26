@@ -15,7 +15,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -23,7 +23,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [ChartSer
 
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `201, Created` e um objeto [ChartSeries](../resources/chartseries.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [ChartSeries](../resources/chartseries.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

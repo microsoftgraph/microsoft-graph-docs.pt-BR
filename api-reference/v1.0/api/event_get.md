@@ -21,7 +21,7 @@ Você pode usar as propriedades **OriginalStartTimeZone** e **OriginalEndTimeZon
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.Read*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -47,7 +47,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | <token> de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Prefira: outlook.timezone | string | O fuso horário padrão para eventos na resposta. |
 
 ## <a name="request-body"></a>Corpo da solicitação

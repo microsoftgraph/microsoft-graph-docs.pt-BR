@@ -15,20 +15,20 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |height|number|Opcional. A altura desejada da imagem resultante.|
 |width|number|Opcional. A largura desejada da imagem resultante.|
 |fittingMode|cadeia de caracteres|Opcional. O método usado para dimensionar o gráfico para as dimensões especificadas (se height e width tiverem sido definidas).  Os valores possíveis são: `Fit`, `FitAndCenter` e `Fill`.|
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `200, OK` e a cadeia de caracteres de imagem em base64 no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200, OK` e a cadeia de caracteres de imagem em base64 no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

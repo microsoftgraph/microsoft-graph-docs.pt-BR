@@ -16,7 +16,7 @@ Uma das seguintes **permissões** é necessária para executar essa API, depende
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
 | [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [message](../resources/message.md) | _Mail.ReadWrite_ |
+| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensagem](../resources/message.md) | _Mail.ReadWrite_ |
 | [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
 | [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
  
@@ -52,7 +52,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo d
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | Bearer %token%|
+| Autorização | {token} de portador. Obrigatório. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

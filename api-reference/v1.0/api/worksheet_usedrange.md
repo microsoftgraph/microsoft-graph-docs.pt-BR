@@ -16,7 +16,7 @@ GET /workbook/worksheets/{id|name}/UsedRange
 ## <a name="optional-request-parameter"></a>Parâmetro de solicitação opcional
 No URL de solicitação, forneça um parâmetro de consulta opcional.
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |valuesOnly|Booliano|Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).|
 
@@ -24,7 +24,7 @@ No URL de solicitação, forneça um parâmetro de consulta opcional.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.

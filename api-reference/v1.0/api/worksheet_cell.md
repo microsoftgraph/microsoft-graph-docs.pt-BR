@@ -15,7 +15,7 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 
 ## <a name="response"></a>Resposta

@@ -11,15 +11,15 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. **displayName** é a única propriedade gravável para um objeto [MailFolder](../resources/mailfolder.md).
 
-| Parâmetro       | Tipo    |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
+|displayName|String|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e um objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.

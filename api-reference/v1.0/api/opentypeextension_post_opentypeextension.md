@@ -66,7 +66,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | Bearer %token%|
+| Autorização | {token} de portador. Obrigatório. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

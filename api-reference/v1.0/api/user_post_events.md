@@ -1,6 +1,6 @@
-# <a name="create-event"></a>Criar evento
+# <a name="create-event"></a>Criar Evento
 
-Crie um [event](../resources/event.md) no calendário padrão do usuário. 
+Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
 
 É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
 
@@ -24,7 +24,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:-----------|:------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -33,7 +33,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [event](.
 Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o evento ao criá-lo.
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -14,18 +14,18 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | <token> de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 | Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades graváveis/atualizáveis são
 
-| Propriedade       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Destinatário|Os destinatários Cco da mensagem. Atualizável apenas se IsDraft = true.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
+|categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. Atualizável apenas se IsDraft = true.|
 |from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Atualizável apenas se IsDraft = true.|
-|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). Atualizável apenas se IsDraft = true.|
 |isRead|Boolean|Indica se a mensagem foi lida.|

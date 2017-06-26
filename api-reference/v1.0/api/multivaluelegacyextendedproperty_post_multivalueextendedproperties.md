@@ -109,7 +109,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | Bearer %token%|
+| Autorização | {token} de portador. Obrigatório. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação

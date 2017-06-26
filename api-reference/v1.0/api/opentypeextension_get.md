@@ -108,7 +108,7 @@ Certifique-se de aplicar a [codificação de URL](http://www.w3schools.com/tags/
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
-| Autorização | Bearer %token%|
+| Autorização | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação

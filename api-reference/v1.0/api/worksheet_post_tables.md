@@ -15,20 +15,21 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Autorização  | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os seguintes parâmetros. 
 
 ### <a name="request-parameters"></a>Solicitar parâmetros
-| Nome       | Tipo|Descrição|
-|:---------------|:----------|
-| Endereço  | string| Intervalo de endereço. Se você estiver retirando essa API de `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
+| Nome           | Tipo      |Descrição|
+|:---------------|:----------|:----------|
+| Endereço  | string| Endereço do intervalo. Se você estiver chamando essa API fora do caminho `worksheets/{id or name}/tables/add`, não haverá necessidade do prefixo de nome da planilha no endereço. No entanto, se você a estiver chamando fora do caminho `workbook/tables/add`, forneça então o nome da planilha em que a tabela precisa ser criada (exemplo: `sheet1!A1:D4`)|
 | hasHeaders  | booliano|O valor booliano que indica se o intervalo tem rótulos de coluna. Se a origem não contiver cabeçalhos (ou seja, quando essa propriedade estiver definida como falso), o Excel gerará automaticamente um cabeçalho, deslocando os dados uma linha para baixo.|
 
+
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `201, Created` e o objeto [Table](../resources/table.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Table](../resources/table.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -43,7 +44,7 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "address": "",
+  "address": "A1:D8",
   "hasHeaders": false
 }
 ```

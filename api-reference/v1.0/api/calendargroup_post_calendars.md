@@ -2,7 +2,7 @@
 
 Use esta API para criar um novo calendário em um grupo de calendários.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: _Calendars.ReadWrite_
+Um dos seguintes **escopos** é obrigatório para executar esta API: _Calendars.ReadWrite_
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Um [calendarGroup](../resources/calendargroup.md) padrão do usuário.
@@ -18,7 +18,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
-| Autorização  | <token> de portador. Obrigatório.  |
+| Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -26,7 +26,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Calendar
 
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `201, Created` e um objeto [Calendar](../resources/calendar.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [Calendar](../resources/calendar.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
