@@ -32,7 +32,7 @@ A seguir há exemplos de alterações compatíveis com versões anteriores:
  - Alterações à ordem das propriedades
  - Alterações ao formato ou ao comprimento de cadeias de caracteres opacas, como IDs de recurso
 
->**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API Microsoft Graph. A API Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API Microsoft REST](https://github.com/microsoft/api-guidelines/). 
+>**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API do Microsoft REST](https://github.com/microsoft/api-guidelines/). 
 
 ## <a name="versions"></a>Versões
 
@@ -41,7 +41,7 @@ As seguintes versões da API Microsoft Graph estão disponíveis atualmente.
 ### <a name="beta-version"></a>Versão beta
 Exposto em `https://graph.microsoft.com/beta`, a versão beta da API Microsoft Graph contém recursos que estão atualmente na visualização. Para obter a documentação da API beta, veja [Referência de ponto de extremidade da Microsoft Graph beta](../api-reference/beta/beta-overview.md). Espere alterações significativas na versão beta de tempos em tempos. Não haverá uma dependência de produção em APIs /beta.
 
-Não fazemos nenhuma garantia de que um recurso beta será promovido para a versão atual. Quando a equipe da API Microsoft Graph acredita que um recurso beta está pronto para disponibilidade geral (GA), adicionaremos esse recurso à versão atual mais recente. Se a promoção do recurso resultar em uma alteração significativa de uma versão atual, o número da versão será incrementado e a nova versão se tornará a versão atual. Nossa comunidade do desenvolvedor pode postar solicitação de recursos no [UserVoice](https://officespdev.uservoice.com/), incluindo solicitações de novos recursos, bem como solicitações para promover APIs beta existentes para a versão atual. 
+Não damos nenhuma garantia de que um recurso beta será promovido para a versão atual. Quando a equipe da API Microsoft Graph acredita que um recurso beta está pronto para disponibilidade geral (GA), adicionaremos esse recurso à versão atual mais recente. Se a promoção do recurso resultar em uma alteração significativa de uma versão atual, o número da versão será incrementado e a nova versão se tornará a versão atual. Nossa comunidade do desenvolvedor pode postar solicitação de recursos no [UserVoice](https://officespdev.uservoice.com/), incluindo solicitações de novos recursos, bem como solicitações para promover APIs beta existentes para a versão atual. 
 
 ### <a name="current-version"></a>Versão atual
 
