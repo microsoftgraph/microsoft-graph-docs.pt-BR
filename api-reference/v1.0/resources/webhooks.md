@@ -80,9 +80,9 @@ Content-Type: application/json
 }
 ```
 
-As propriedades changeType, notificationUrl, resource e expirationDateTime são obrigatórias. Confira [Tipo de recurso de assinatura](subscription.md) para valores e definições de propriedade. Embora clientState não seja obrigatória, você deve incluí-la para manter a conformidade com nosso processo recomendada de manipulação de notificações.
+As propriedades `changeType`, `notificationUrl`, `resource` e `expirationDateTime` são obrigatórias. Confira os valores e as definições de propriedade em [tipo de recurso de assinatura](subscription.md). Embora a `clientState` não seja obrigatória, você deve incluí-la para manter a conformidade com nosso processo recomendado de manipulação de notificações.
 
-Se tiver êxito, o Microsoft Graph retornará um código `200 OK` e um objeto [subscription](subscription.md) no corpo.
+Se tiver êxito, o Microsoft Graph retornará um código `201 Created` e um objeto [subscription](subscription.md) no corpo.
 
 # <a name="renewing-a-subscription"></a>Renovar uma assinatura
 
@@ -118,16 +118,16 @@ O cliente começa a receber notificações depois de criar a assinatura. O Micro
 
 O objeto notification tem as seguintes propriedades:
 
-* id – A ID da assinatura à qual essa notificação pertence.
-* expirationDateTime – O tempo de expiração da assinatura.
+* subscriptionId – A ID da assinatura à qual essa notificação pertence.
+* subscriptionExpirationDateTime – O tempo de expiração da assinatura.
 * clientState – A propriedade clientState especificada na solicitação de assinatura.
 * changeType – O tipo de evento que gerou a notificação. Por exemplo, *created* ao receber um email ou *updated* ao marcar uma mensagem como lida.
 * resource – O URI do recurso relativo a `https://graph.microsoft.com`. 
 * resourceData – O objeto dependente do recurso que está sendo assinado.  Por exemplo, para recursos do Outlook:
   * @odata.type – O tipo de entidade OData no Microsoft Graph que descreve o objeto representado.
   * @odata.id – O identificador OData do objeto.
-  * @odata.etag – A marca de entidade HTTP que representa uma versão do objeto.
-  * Id – O identificador do objeto.
+  * @odata.etag – A marca da entidade HTTP que representa uma versão do objeto.
+  * id – O identificador do objeto.
 
 
 > Observação: O valor de Id fornecido em resourceData é válido no momento em que a notificação é enfileirada. Algumas ações, como mover uma mensagem para outra pasta, podem resultar na alteração da Id de um recurso. 
@@ -140,8 +140,8 @@ Quando o usuário recebe um email, o Microsoft Graph envia uma notificação sem
 {
   "value":[
   {
-    "id":"<subscription_guid>",
-    "expirationDateTime":"\"2016-03-19T22:11:09.952Z\"",
+    "subscriptionId":"<subscription_guid>",
+    "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
     "clientState":"SecretClientState",
     "changeType":"Created",
     "resource":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
@@ -150,7 +150,7 @@ Quando o usuário recebe um email, o Microsoft Graph envia uma notificação sem
       "@odata.type":"#Microsoft.Graph.Message",
       "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
       "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-      "Id":"<long_id_string>"
+      "id":"<long_id_string>"
     }
   }
   ]

@@ -3,7 +3,7 @@
 Cria e registra um novo dispositivo na organização.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.AccessAsUser.All* ou *Device.ReadWrite.All*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *Device.ReadWrite.All* ou *Directory.AccessAsUser.All*
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -14,8 +14,8 @@ POST /devices
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-type | cadeia de caracteres | application/json |
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Content-type | string | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).

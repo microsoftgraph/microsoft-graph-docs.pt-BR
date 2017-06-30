@@ -10,7 +10,11 @@ Para carregar um arquivo usando uma sessão de upload, duas etapas são obrigat�
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
+> **Observação**: A permissão de aplicativo Files.ReadWrite.All ainda não tem suporte nessa API. O suporte completo está planejado para breve. 
 
 ## <a name="create-an-upload-session"></a>Criar uma sessão de upload
 

@@ -10,9 +10,7 @@ O Microsoft Graph tem dois tipos de permissões: **Permissões delegadas** e **P
 
 As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer solicitações ao Microsoft Graph. É importante compreender a diferença entre as Permissões delegadas e as Permissões de aplicativo que o aplicativo tem autorização para usar e suas permissões efetivas ao fazer chamadas para o Microsoft Graph.
 
-- Para Permissões delegadas, as _permissões efetivas_ do aplicativo se encontrarão na interseção menos privilegiada das Permissões delegadas que o aplicativo recebeu (via consentimento) e os privilégios de usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).
-   
-  Por exemplo, suponha que seu aplicativo tenha recebido a Permissão delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
+- Para Permissões delegadas, as _permissões efetivas_ do aplicativo se encontrarão na interseção menos privilegiada das Permissões delegadas que o aplicativo recebeu (via consentimento) e os privilégios de usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, suponha que seu aplicativo tenha recebido a Permissão delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
   
 - Para Permissões de aplicativo, as _permissões efetivas_ de seu aplicativo estarão no nível completo de privilégios implicado pela permissão. Por exemplo, um aplicativo que tem a Permissão de aplicativo _User.ReadWrite.All_ poderá atualizar o perfil de todos os usuários na organização. 
 
@@ -210,7 +208,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 ### <a name="remarks"></a>Comentários
 As permissões de diretório não são compatíveis com contas da Microsoft. 
 
- As permissões de diretório fornecem o nível mais alto de privilégio para acessar recursos de diretório, como [Usuário](../api-reference/v1.0/resources/user.md), [Grupo](../api-reference/v1.0/resources/group.md) e [Dispositivo](../api-reference/v1.0/resources/device.md) em uma organização. Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](../api-reference/beta/resources/orgcontact.md), [APIs de extensão de esquema](../api-reference/beta/resources/schemaextension.md), [APIs de PIM (Privileged Identity Management)](../api-reference/beta/resources/privilegedidentitymanagement_root.md) e muitos dos recursos e APIs listados no nó **Diretório** na documentação de referência da API beta e v1.0. São incluídas unidades administrativas, funções de diretório, configurações de diretório, política e muito mais. 
+ As permissões de diretório fornecem o nível mais alto de privilégio para acessar recursos de diretório, como [Usuário](../api-reference/v1.0/resources/user.md), [Grupo](../api-reference/v1.0/resources/group.md) e [Dispositivo](../api-reference/v1.0/resources/device.md) em uma organização. Elas também controlam exclusivamente o acesso a outros recursos de diretório como: [contatos organizacionais](../api-reference/beta/resources/orgcontact.md), [APIs de extensão de esquema](../api-reference/beta/resources/schemaextension.md), [APIs de PIM (Privileged Identity Management)](../api-reference/beta/resources/privilegedidentitymanagement_root.md) e muitos dos recursos e APIs listados no nó **Azure Active Directory** na documentação de referência da API beta e v1.0. Isso inclui unidades administrativas, funções de diretório, configurações de diretório, política e muito mais. 
 
 A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 
@@ -249,11 +247,11 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read_ |    Ler arquivos do usuário e arquivos compartilhados com o usuário | Permite ao aplicativo ler os arquivos do usuário conectado e os arquivos compartilhados com o usuário.| Não |
+| _Files.Read_ |    Ler arquivos do usuário | Permite que o aplicativo leia todos os arquivos do usuário conectado.| Não |
 | _Files.Read.All_ | Ler todos os arquivos que o usuário pode acessar | Permite que o aplicativo para leia todos os arquivos que o usuário conectado pode acessar. | Não |
-| _Files.ReadWrite_ |   Ter acesso total a arquivos do usuário e arquivos compartilhados com o usuário | Permite ao aplicativo ler, criar, atualizar e excluir os arquivos do usuário conectado e os arquivos compartilhados com o usuário. | Não |
+| _Files.ReadWrite_ |   Ter acesso total aos arquivos do usuário | Permite que o aplicativo leia, crie, atualize e exclua os arquivos do usuário conectado. | Não |
 | _Files.ReadWrite.All_ | Ter acesso total a todos os arquivos que o usuário pode acessar | Permite que o aplicativo leia, crie, atualize e exclua todos os arquivos que o usuário conectado pode acessar. | Não |
-| _Files.ReadWrite.AppFolder_ | Tem acesso total à pasta do aplicativo (visualização) | (Visualização) Permite que o aplicativo leia, crie, atualize e exclua arquivos na pasta do aplicativo. | Não |
+| _Files.ReadWrite.AppFolder_ | Ter acesso total à pasta do aplicativo (prévia) | (Prévia) Permite que o aplicativo leia, crie, atualize exclua arquivos na pasta do aplicativo. | Não |
 | _Files.Read.Selected_ |    Ler arquivos selecionados pelo usuário (visualização) | **Suporte limitado no Microsoft Graph – confira Comentários** <br/> (Visualização) Permite ao aplicativo ler arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo. | Não |
 | _Files.ReadWrite.Selected_ |    Ler e gravar arquivos selecionados pelo usuário (visualização) | **Suporte limitado no Microsoft Graph – confira Comentários** <br/> (Visualização) Permite ao aplicativo ler e gravar arquivos selecionados pelo usuário. O aplicativo tem acesso por várias horas depois que o usuário tiver selecionado um arquivo. | Não |
 
@@ -261,21 +259,18 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Files.Read.All_ | Ler todos os arquivos que o usuário pode acessar (visualização) | **Suporte limitado no Microsoft Graph** <br/> (Visualização) Permite ao aplicativo ler todos os arquivos em todos os conjuntos de sites sem um usuário conectado. | Sim |
-| _Files.ReadWrite.All_ | Ter acesso total a todos os arquivos que o usuário pode acessar (visualização) | **Suporte limitado no Microsoft Graph** <br/> (Visualização) Permite ao aplicativo ler, criar, atualizar e excluir todos os arquivos em todos os conjuntos de sites sem um usuário conectado. | Sim |
+| _Files.Read.All_ | Ler arquivos em todos os conjuntos de sites (prévia) | (Prévia) Permite que o aplicativo leia todos os arquivos em todos os conjuntos de sites sem que um usuário esteja conectado. | Sim |
+| _Files.ReadWrite.All_ | Ler e gravar arquivos em todos os conjuntos de sites (prévia) | **Suporte limitado no Microsoft Graph** <br/> (Prévia) Permite que o aplicativo leia, crie, atualize e exclua todos os arquivos em todos os conjuntos de sites sem que um usuário esteja conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
 
-#### <a name="support-for-permissions-in-preview"></a>Suporte para permissões na visualização
-**Permissões Delegadas**: 
+As permissões delegadas Files.Read, Files.ReadWrite, Files.Read.All e Files.ReadWrite.All são válidas nas contas pessoais, corporativas ou de estudante da Microsoft. Observe que nas contas pessoais,Files.Read e Files.ReadWrite também concedem acesso a arquivos compartilhados com o usuário conectado. 
 
-- _Files.Read.Selected_ e _Files.ReadWrite.Selected_ ainda não são compatíveis com o Microsoft Graph. Para fins de compatibilidade com versões anteriores, essas permissões podem ser configuradas e incluídas em solicitações de autorização, mas nenhum privilégio será concedido pelo Microsoft Graph. Há planos para oferecer suporte a essas permissões no futuro. 
-- Files.ReadWrite.AppFolder_ só é compatível em contas da Microsoft. 
+As permissões delegadas Files.Read.Selected e Files.ReadWrite.Selected são válidas apenas em contas corporativas ou de estudante e são expostas apenas para trabalhar com [manipuladores (v1.0) de arquivos do Office 365](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps). Elas não devem ser usadas para chamar diretamente as APIs do Microsoft Graph. 
 
-**Permissões de aplicativos**: 
+A permissão delegada Files.ReadWrite.AppFolder só é válida para contas pessoais e é usada para acessar a [pasta especial da Raiz de Aplicativo](https://dev.onedrive.com/items/special_folders.htm) com a API do Microsoft Graph [Obter pasta especial](../api-reference/v1.0/api/drive_special.md) do OneDrive.
 
-- _Files.Read.All_ e _Files.ReadWrite.All_ atualmente não são totalmente compatíveis com o Microsoft Graph. No entanto, alguns privilégios são concedidos com essas permissões. O suporte completo está planejado para breve. 
-
+A permissão de aplicativo Files.ReadWrite.All ainda não oferece suporte à API do Microsoft Graph [Criar sessão de carregamento retornável](../api-reference/v1.0/api/item_createuploadsession.md) do OneDrive. Suporte completo em breve. 
 
 ### <a name="example-usage"></a>Exemplo de uso
 #### <a name="delegated"></a>Delegado
@@ -506,6 +501,16 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 Nenhum
 
+### <a name="remarks"></a>Comentários
+Você pode usar essas permissões para especificar os artefatos que deseja que sejam retornados nas solicitações de token e de autorização do Azure AD. O suporte a elas é oferecido de formas diferentes nos pontos de extremidade v 1.0 e v 2.0. do Azure AD.
+
+Com o ponto de extremidade (v 1.0) do Azure AD, somente a permissão _openid_ é usada. Você especifica no parâmetro *scope*, na solicitação de autorização, para retornar um token de ID quando usar o protocolo OpenID Connect para conectar um usuário ao seu aplicativo. Para saber mais, confira o artigo [Autorizar o acesso aos aplicativos web usando o OpenID Connect e o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Para retornar com êxito um token de ID, você também deve garantir que a permissão _User.Read_ esteja configurada quando você registrar seu aplicativo. 
+
+Com o ponto de extremidade v 2.0 do Azure AD, você especifica a permissão _offline\_access_ no parâmetro _scope_ para solicitar explicitamente um token de atualização quando estiver usando os protocolos OAuth 2.0 ou OpenID Connect. Com o OpenID Connect, você especifica a permissão _openid_ para solicitar um token de ID. Também é possível especificar a permissão _email_, a permissão _profile_, ou ambas, para retornar declarações adicionais no token de ID. Você não precisa especificar a _User.Read_ para retornar um token de ID com o ponto de extremidade v 2.0. Para saber mais, confira os [escopos do OpenID Connect](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
+
+> **Importante** A Biblioteca de Autenticação da Microsoft (MSAL) atualmente especifica as permissões _offline\_access_, _openid_, _profile_ e _email_ por padrão nas solicitações de autorização e de token. Isso significa que, para o caso padrão, se você especificar explicitamente essas permissões, o Azure AD pode retornar um erro.
+>  
+
 ---
 
 ## <a name="people-permissions"></a>Permissões de pessoas
@@ -712,24 +717,24 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Cenários de acesso do recurso Usuário
 
-| **Tarefas do aplicativo envolvendo o Usuário**     |  **Permissões necessárias** | **Cadeias de caracteres de permissão** |
+| **Tarefas do aplicativo envolvendo o Usuário**   |  **Permissões necessárias** | **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
-| O aplicativo deseja ler as informações básicas de outros usuários (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de pessoas     | _User.ReadBasic.All_  |  Ler todos os perfis básicos do usuário |
+| O aplicativo deseja ler as informações básicas de outros usuários (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de pessoas   | _User.ReadBasic.All_  |  Ler todos os perfis básicos do usuário |
 | O aplicativo deseja ler o perfil completo do usuário de um usuário conectado (ver subordinados diretos, gerente etc.)     | _User.Read_ | Habilitar entrada e ler o perfil de usuário|
-| O aplicativo deseja ler o perfil completo de todos os usuários     | _User.Read.All_ |  Ler os perfis completos de todos os usuários   |
-| O aplicativo deseja ler informações de arquivos, email e calendário do usuário conectado     | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler email do usuário, ler calendários do usuário |
+| O aplicativo deseja ler o perfil completo de todos os usuários  | _User.Read.All_ |  Ler os perfis completos de todos os usuários   |
+| O aplicativo deseja ler informações de arquivos, email e calendário do usuário conectado  | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler email do usuário, ler calendários do usuário |
 | O aplicativo deseja ler os arquivos dos usuários (meus) conectados e os arquivos que outros usuários compartilharam com o usuário conectado (eu). | _User.Read_, _Files.Read_, _Sites.Read.All_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler itens em todos os conjuntos de sites |
-| O aplicativo deseja ler e gravar o perfil completo do usuário conectado     | _User.ReadWrite_ | Acesso de leitura e gravação ao perfil de usuário |
-| O aplicativo deseja ler e gravar o perfil completo de todos os usuários     | _User.ReadWrite.All_ | Ler e gravar os perfis completos de todos os usuários |
-| O aplicativo deseja ler e gravar informações de arquivos, de email e de calendário do usuário conectado     | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao email do usuário, acesso total a calendários do usuário |
+| O aplicativo deseja ler e gravar o perfil completo do usuário conectado   | _User.ReadWrite_ | Acesso de leitura e gravação ao perfil de usuário |
+| O aplicativo deseja ler e gravar o perfil completo de todos os usuários    | _User.ReadWrite.All_ | Ler e gravar os perfis completos de todos os usuários |
+| O aplicativo deseja ler e gravar informações de arquivos, de email e de calendário do usuário conectado    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao email do usuário, acesso total a calendários do usuário |
    
 
 ### <a name="access-scenarios-on-the-group-resource"></a>Cenários de acesso do recurso Grupo
     
-| **Tarefas do aplicativo envolvendo o Grupo**     |  **Permissões necessárias** |  **Cadeias de caracteres de permissão** |
+| **Tarefas do aplicativo envolvendo o Grupo**  |  **Permissões necessárias** |  **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
-| O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo     | _Group.Read.All_  | Ler todos os grupos|
+| O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
 | O aplicativo deseja ler todo o conteúdo em todos os grupos do Office 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
-| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Office 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |     _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
+| O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Office 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
 | O aplicativo deseja descobrir (localizar) um grupo do Office 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.     | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
-| O aplicativo deseja criar um grupo por meio do AAD Graph |     _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
+| O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|

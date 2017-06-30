@@ -2,41 +2,46 @@
 
 Recuperar uma lista de objetos user.
 
-> Observação: Listar usuários retorna somente um conjunto padrão de propriedades (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` para obter outras propriedades e relacionamentos para o objeto[user](../resources/user.md). No entanto, somente as seguintes propriedades podem ser selecionadas para usuários individuais, por exemplo,/v1.0/me?$select=aboutMe, e não para conjuntos de usuários, por exemplo, /v1.0/users?$select=aboutMe:
->* aboutMe
->* birthday
->* hireDate
->* interests
->* mySite
->* pastProjects
->* preferredName
->* responsibilities
->* schools
->* skills
->* mailboxSettings
-
 ## <a name="prerequisites"></a>Pré-requisitos
+
 Um dos seguintes **escopos** é obrigatório para executar esta API: *User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+
+Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+
+Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta ODATA `$select`. Por exemplo, para retornar _displayName_, _givenName_, _id_ e _postalCode_, você pode adicionar o seguinte à sua consulta `$select=displayName,givenName,postalCode`
+
+> Observação: Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só terão suporte na [recuperação de um único usuário](./user_get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor|
-|:-----------|:------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type   | application/json | 
+
+| Cabeçalho        | Valor                      |
+|:--------------|:---------------------------|
+| Autorização | {token} do portador (obrigatório)  |
+| Content-Type  | application/json           | 
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -44,7 +49,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/v1.0/users
 ```
+
 ##### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

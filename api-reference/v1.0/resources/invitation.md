@@ -18,19 +18,19 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |[Criar convite](../api/invitation_post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
 
 ### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório.|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
-|sendInvitationMessage|Booliano|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
+|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
 |inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura|
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se não for administrador da empresa. |
-|status|String|O status do convite. Valores possíveis: Concluído, EmAndamento e Erro|
+|status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
 ### <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
