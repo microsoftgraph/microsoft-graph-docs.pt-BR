@@ -1,4 +1,6 @@
-# <a name="event-resource-type"></a>tipo de recurso de evento
+<a id="event-resource-type" class="xliff"></a>
+
+# tipo de recurso de evento
 
 Um evento em um calendário.
 
@@ -8,7 +10,9 @@ Esse recurso permite:
 - Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/event_delta.md).
 
 
-## <a name="methods"></a>Métodos
+<a id="methods" class="xliff"></a>
+
+## Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -38,8 +42,10 @@ Esse recurso permite:
 
 
 
-## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+<a id="properties" class="xliff"></a>
+
+## Propriedades
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attendees|Coleção [attendee](attendee.md)|A coleção de participantes do evento.|
 |body|[itemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
@@ -75,8 +81,10 @@ Esse recurso permite:
 |type|String|O tipo de evento: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Os valores possíveis são: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
-## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+<a id="relationships" class="xliff"></a>
+
+## Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)|A coleção de anexos [fileAttachment](fileAttachment.md) e [itemAttachment](itemAttachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |calendário|[calendar](calendar.md)|O calendário que contém o evento. Propriedade de navegação. Somente leitura.|
@@ -86,7 +94,9 @@ Esse recurso permite:
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o evento. Somente leitura. Anulável.|
 
 
-## <a name="json-representation"></a>Representação JSON
+<a id="json-representation" class="xliff"></a>
+
+## Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
@@ -142,14 +152,19 @@ Veja a seguir uma representação JSON do recurso
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "instances": [ { "@odata.type": "microsoft.graph.event" }]
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
+  "instances": [ { "@odata.type": "microsoft.graph.event" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 
 }
 
 ```
 
 
-## <a name="see-also"></a>Veja também
+<a id="see-also" class="xliff"></a>
+
+## Veja também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para os eventos em uma pasta](../../../concepts/delta_query_events.md)

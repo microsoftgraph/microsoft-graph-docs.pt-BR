@@ -1,9 +1,13 @@
-# <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
-Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de Concessão do Código de Autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. 
+<a id="get-access-on-behalf-of-a-user" class="xliff"></a>
 
-## <a name="authentication-and-authorization-steps"></a>Etapas de Autenticação e Autorização
+# Obter acesso em nome de um usuário
+Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. 
 
-As etapas básicas necessárias para usar o fluxo de Concessão do Código de Autorização do OAuth 2.0 para obter um token de acesso do ponto de extremidade do Azure AD v2.0 são:
+<a id="authentication-and-authorization-steps" class="xliff"></a>
+
+## Etapas de Autenticação e Autorização
+
+As etapas básicas necessárias para usar o fluxo de concessão de código de autorização do OAuth 2.0 para obter um token de acesso do ponto de extremidade do Microsoft Azure AD v2.0 são:
 
 1. Registre seu aplicativo com o Azure AD. 
 2. Obtenha autorização. 
@@ -11,23 +15,29 @@ As etapas básicas necessárias para usar o fluxo de Concessão do Código de Au
 4. Chame o Microsoft Graph usando o token de acesso.
 5. Use um token de atualização para obter um novo token de acesso.
 
-## <a name="1-register-your-app"></a>1. Registre seu aplicativo
+<a id="1-register-your-app" class="xliff"></a>
+
+## 1. Registre seu aplicativo
 Para usar o ponto de extremidade do Azure v2.0, você deve registrar seu aplicativo no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/). Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar em aplicativo 
 
 A captura de tela a seguir mostra um exemplo de um registro de aplicativo Web. ![Registro de aplicativo Web com senha e Concessão Implícita.](./images/v2-web-registration.png)
 
-Para configurar um aplicativo para usar o fluxo de Concessão do Código de Autorização do OAuth 2.0, você precisará salvar os seguintes valores ao registrar o aplicativo:
+Para configurar um aplicativo para usar o fluxo de concessão do código de autorização do OAuth 2.0, salve os seguintes valores quando registrar o aplicativo:
 
-- A Id do Aplicativo atribuída pelo portal de registro do aplicativo.
+- A ID do Aplicativo atribuída pelo portal de registro do aplicativo.
 - Um Segredo do Aplicativo, que pode ser uma senha ou um par de chaves públicas/particulares (certificado). Isso não é necessário para aplicativos nativos. 
 - Uma URL de redirecionamento para seu aplicativo receber respostas do Azure AD.
 
 Para obter etapas sobre como configurar um aplicativo usando o Portal de Registro de Aplicativos da Microsoft, confira [Registre seu aplicativo](./auth_register_app_v2.md).
 
-## <a name="2-get-authorization"></a>2. Obtenha autorização
-A primeira etapa para obter acesso a um token para muitos fluxos do OpenID Connect e do OAuth 2.0 é redirecionar o usuário para o ponto de extremidade `/authorize` do Azure AD v2.0. O Azure AD conectará o usuário e garantirá seu consentimento para as permissões solicitadas pelo seu aplicativo. No fluxo de Concessão do Código de Autorização, após o consentimento ser obtido, o Azure AD retornará um authorization_code ao aplicativo que ele poderá resgatar no ponto de extremidade `/token` do Azure AD v2.0 para um token de acesso.
+<a id="2-get-authorization" class="xliff"></a>
 
-### <a name="authorization-request"></a>Solicitação de autorização 
+## 2. Obtenha autorização
+A primeira etapa para obter acesso a um token para muitos fluxos do OpenID Connect e do OAuth 2.0 é redirecionar o usuário para o ponto de extremidade `/authorize` do Azure AD v2.0. O Azure AD conectará o usuário e garantirá seu consentimento para as permissões solicitadas pelo seu aplicativo. No fluxo de concessão do código de autorização, depois de obter o consentimento, o Microsoft Azure AD retorna um authorization_code para o aplicativo que pode resgatá-lo no ponto de extremidade `/token` do Microsoft Azure AD v2.0 para obter um token de acesso.
+
+<a id="authorization-request" class="xliff"></a>
+
+### Solicitação de autorização 
 Veja a seguir um exemplo de solicitação para o ponto de extremidade `/authorize`. 
 
 Com o ponto de extremidade do Azure AD v2.0, as permissões são solicitadas usando o parâmetro `scope`. Neste exemplo, as permissões do Microsoft Graph solicitadas são para _ User.Read _ e _ Mail.Read _, o que permitirá que o aplicativo leia o perfil e o email do usuário conectado. A permissão _offline\_access_ é solicitada para que o aplicativo possa obter um token de atualização que pode ser usado para obter um novo token de acesso quando o atual expirar. 
@@ -53,9 +63,11 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | response_mode |recomendado |Especifica o método que deve ser usado para enviar o token resultante de volta para seu aplicativo.  Pode ser `query` ou `form_post`. |
 | estado |recomendado |Um valor incluído na solicitação que também será retornado na resposta do token.  Pode ser uma cadeia de caracteres de qualquer conteúdo desejado.  Um valor exclusivo gerado aleatoriamente é tipicamente usado para [impedir ataques de solicitação entre sites forjada](http://tools.ietf.org/html/rfc6749#section-10.12).  O estado também é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. |
 
-> **Importante**: O Microsoft Graph expõe dois tipos de permissões: delegada e de aplicativo. Para aplicativos que são executados com um usuário conectado, você solicitar Permissões delegadas no parâmetro `scope`. Essas permissões delegam os privilégios do usuário conectado ao seu aplicativo, permitindo que ele atue como o usuário conectado ao fazer chamadas para o Microsoft Graph. Para obter mais informações sobre as permissões disponíveis por meio do Microsoft Graph, confira a [Referência de permissões](./permissions_reference.md).
+> **Importante**: O Microsoft Graph expõe dois tipos de permissões: delegada e de aplicativo. No caso de aplicativos que são executados com um usuário conectado, solicite Permissões Delegadas no parâmetro `scope`. Essas permissões delegam os privilégios do usuário conectado ao seu aplicativo, permitindo que ele atue como o usuário conectado ao fazer chamadas para o Microsoft Graph. Para obter mais informações sobre as permissões disponíveis por meio do Microsoft Graph, confira a [Referência de permissões](./permissions_reference.md).
  
-### <a name="consent-experience"></a>Experiência de consentimento
+<a id="consent-experience" class="xliff"></a>
+
+### Experiência de consentimento
 
 Neste ponto, o usuário será solicitado a digitar suas credenciais para autenticar usando o Azure AD. O ponto de extremidade v2.0 também assegurará que o usuário concordou com as permissões indicadas no parâmetro de consulta `scope`.  Se o usuário não tiver concordado com nenhuma dessas permissões e se um administrador não tiver concordado previamente em nome de todos os usuários na organização, o Azure AD solicitará ao usuário que autorize as permissões necessárias.  
 
@@ -67,7 +79,9 @@ Veja um exemplo do diálogo de consentimento apresentado para uma conta da Micro
 > 
 > <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
 
-### <a name="authorization-response"></a>Resposta da autorização
+<a id="authorization-response" class="xliff"></a>
+
+### Resposta da autorização
 Se o usuário concordar com as permissões que seu aplicativo solicitou, a resposta conterá o código de autorização no parâmetro `code`. Veja um exemplo de uma resposta à solicitação acima. Como o parâmetro `response_mode` na solicitação foi definido como `query`, a resposta é retornada na cadeia de caracteres da consulta da URL de redirecionamento.
 
 ```
@@ -80,10 +94,14 @@ code=M0ab92efe-b6fd-df08-87dc-2c6500a7f84d
 | código |O authorization_code que o aplicativo solicitou. O aplicativo pode usar o código de autorização para solicitar um token de acesso para o recurso de destino.  Os authorization_codes têm períodos de duração muito curtos, geralmente eles expiram após cerca de 10 minutos. |
 | estado |Se um parâmetro de estado estiver incluído na solicitação, o mesmo valor deverá aparecer na resposta. O aplicativo deve verificar se os valores de estado na solicitação e na resposta são idênticos. |
 
-## <a name="3-get-a-token"></a>3. Obtenha um token
+<a id="3-get-a-token" class="xliff"></a>
+
+## 3. Obtenha um token
 Seu aplicativo usa a autorização `code` recebida na etapa anterior para solicitar um token de acesso enviando uma solicitação `POST` para o ponto de extremidade `/token`.
 
-### <a name="token-request"></a>Solicitação de token
+<a id="token-request" class="xliff"></a>
+
+### Solicitação de token
 ```
 // Line breaks for legibility only
 
@@ -109,7 +127,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | redirect_uri |obrigatório |O mesmo valor do redirect_uri que foi usado para adquirir o authorization_code. |
 | client_secret |obrigatório para aplicativos Web |O segredo do aplicativo que você criou no portal de registro de aplicativos para seu aplicativo.  Ele não deve ser usado em um aplicativo nativo já que a permissão client_secrets não pode ser confiavelmente armazenada em dispositivos.  É obrigatório para aplicativos Web e APIs da Web que têm a capacidade de armazenar a permissão client_secret em segurança no lado do servidor. |
 
-### <a name="token-response"></a>Resposta do token
+<a id="token-response" class="xliff"></a>
+
+### Resposta do token
 Embora o token de acesso seja opaco para o aplicativo, a resposta contém uma lista das permissões para as quais o token de acesso servirá no parâmetro `scope`. 
 
 ```
@@ -129,7 +149,9 @@ Embora o token de acesso seja opaco para o aplicativo, a resposta contém uma li
 | access_token |O token de acesso solicitado. Seu aplicativo pode usar esse token para chamar o Microsoft Graph. |
 | refresh_token |Um token de atualização OAuth 2.0. Seu aplicativo pode usar este token para adquirir tokens de acesso adicionais depois que o token de acesso atual expirar.  Os tokens de atualização são de longa duração e podem ser usados para reter o acesso aos recursos por longos períodos de tempo.  Para obter mais detalhes, confira a [referência de token v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
-## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. Use o token de acesso para chamar o Microsoft Graph
+<a id="4-use-the-access-token-to-call-microsoft-graph" class="xliff"></a>
+
+## 4. Use o token de acesso para chamar o Microsoft Graph
 
 Após obter o token de acesso, você pode usá-lo para chamar o Microsoft Graph, incluindo-o no cabeçalho `Authorization` de uma solicitação. A solicitação a seguir obtém o perfil do usuário conectado.
 
@@ -169,11 +191,15 @@ Content-Length: 407
 }
 ```
 
-## <a name="5-use-the-refresh-token-to-get-a-new-access-token"></a>5. Use um token de atualização para obter um novo token de acesso
+<a id="5-use-the-refresh-token-to-get-a-new-access-token" class="xliff"></a>
+
+## 5. Use um token de atualização para obter um novo token de acesso
 
 Os tokens de acesso têm curta duração e você deve atualizá-los após a expiração para continuar acessando os recursos.  Isso pode ser feito enviando outra solicitação `POST` ao ponto de extremidade `/token`, dessa vez fornecendo o `refresh_token` em vez do `code`.
 
-### <a name="request"></a>Solicitação
+<a id="request" class="xliff"></a>
+
+### Solicitação
 ```
 // Line breaks for legibility only
 
@@ -198,7 +224,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 | redirect_uri |obrigatório |O mesmo valor do redirect_uri que foi usado para adquirir o authorization_code. |
 | client_secret |obrigatório para aplicativos Web |O segredo do aplicativo que você criou no portal de registro de aplicativos para seu aplicativo.  Ele não deve ser usado em um aplicativo nativo já que a permissão client_secrets não pode ser confiavelmente armazenada em dispositivos.  É obrigatório para aplicativos Web e APIs da Web que têm a capacidade de armazenar a permissão client_secret em segurança no lado do servidor. |
 
-### <a name="response"></a>Resposta
+<a id="response" class="xliff"></a>
+
+### Resposta
 Uma resposta de token bem-sucedida será semelhante ao seguinte.
 
 ```
@@ -218,7 +246,9 @@ Uma resposta de token bem-sucedida será semelhante ao seguinte.
 | escopo |As permissões (escopos) para as quais o access_token é válido. |
 | refresh_token |Um novo token de atualização OAuth 2.0. Você deve substituir o token de atualização antigo por este token de atualização recém-adquirido para garantir que seus tokens de atualização permaneçam válidos pelo maior tempo possível. |
 
-## <a name="supported-app-scenarios-and-additional-resources"></a>Recursos adicionais e cenários de aplicativo com suporte
+<a id="supported-app-scenarios-and-additional-resources" class="xliff"></a>
+
+## Recursos adicionais e cenários de aplicativo com suporte
 Você pode chamar o Microsoft Graph em nome de um usuário a partir dos seguintes tipos de aplicativos: 
 
 - Aplicativos Nativos/Móveis 
@@ -236,7 +266,9 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 - Para obter explicações detalhadas dos fluxos de autenticação, confira os [protocolos do v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).
 - Para obter mais informações sobre o middleware de servidor e bibliotecas de autenticação recomendadas da Microsoft e de terceiros do Azure AD v2.0, confira as [bibliotecas de autenticação do Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
-## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
+<a id="azure-ad-endpoint-considerations" class="xliff"></a>
+
+## Considerações sobre o ponto de extremidade do Azure AD
 Existem várias diferenças entre a utilização do ponto de extremidade do Azure AD e o ponto de extremidade do Azure AD v2.0. Por exemplo:
 
 - Você usa o [Portal do Azure](https://portal.azure.com) para configurar seu aplicativo. Para obter mais informações sobre como configurar aplicativos com o Portal do Azure, confira [Integração de aplicativos com o Azure Active Directory: Como adicionar um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)

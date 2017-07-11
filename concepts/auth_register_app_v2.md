@@ -1,4 +1,6 @@
-# <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
+<a id="register-your-app-with-the-azure-ad-v20-endpoint" class="xliff"></a>
+
+# Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
 
 Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabelece uma identificação exclusiva do aplicativo e outros valores que o aplicativo usa para autenticar com o Azure AD e obter tokens. Para o ponto de extremidade Azure AD v2.0, você registra o aplicativo no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com). Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar seu aplicativo. Dependendo do tipo de aplicativo que estiver desenvolvendo, você precisará copiar uma ou mais propriedades durante o registro para usar ao configurar autenticação e a autorização para seu aplicativo. 
 
@@ -8,7 +10,7 @@ Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabel
 > Além disso, lembre-se de que se você já registrou aplicativos no Portal de Gerenciamento do Microsoft Azure, esses aplicativos não estarão listados no Portal de Registro do Aplicativo. Gerencie esses aplicativos no Portal de Gerenciamento do Azure. 
 
 
-A captura de tela a seguir mostra um registro de aplicativo Web de exemplo que foi configurado com senha e fluxo implícito. ![Registro de aplicativo Web com senha e Concessão Implícita.](./images/v2-web-registration.png)
+A captura de tela a seguir mostra um registro de aplicativo Web de exemplo que foi configurado com senha e fluxo implícito. ![Registro de aplicativo Web com senha e concessão implícita.](./images/v2-web-registration.png)
 
 Para registrar seu aplicativo, siga estas etapas. Copie os valores indicados para usar ao configurar a autorização para seu aplicativo:
 
@@ -43,7 +45,7 @@ Para registrar seu aplicativo, siga estas etapas. Copie os valores indicados par
 
     2. Dependendo do tipo de fluxo de autenticação que você está usando, poderá ser necessário garantir que a caixa de seleção **Permitir Fluxo Implícito** esteja selecionada. 
         
-        A opção **Permitir Fluxo Implícito** habilita os fluxos híbridos e implícitos do OpenID Connect. O fluxo híbrido permite que o aplicativo receba informações de entrada (o token de id) e artefatos (neste caso, um código de autorização) que o aplicativo usa para obter um token de acesso. O fluxo híbrido é o fluxo padrão usado pelo middleware OWIN de conexão OpenID. Para aplicativos de página única (SPA), o fluxo implícito permite que o aplicativo receba informações de entrada e o token de acesso. 
+        A opção **Permitir Fluxo Implícito** habilita os fluxos híbridos e implícitos do OpenID Connect. O fluxo híbrido permite ao aplicativo receber informações de entrada (o token de id) e artefatos (neste caso, um código de autorização) que o aplicativo usa para obter um token de acesso. O fluxo híbrido é o fluxo padrão usado pelo middleware OpenID Connect do OWIN. Para aplicativos SPA (aplicativos de página única), o fluxo implícito permite ao aplicativo receber informações de entrada e o token de acesso. 
 
     3. Especifique uma URL de redirecionamento.
         
@@ -61,15 +63,17 @@ A tabela a seguir mostra as propriedades que você precisa configurar e copiar p
 | Tipo de aplicativo | Plataforma | ID do Aplicativo | Segredo do Aplicativo | URI/URL de redirecionamento | Fluxo Implícito 
 | --- | --- | --- | --- | --- | --- |
 | Nativos/Móveis | Nativo | Atribuído  | Não | Atribuído | Não |
-| Web App | Web | Atribuído | Sim | Sim | Opcional <br/>Conexão de Open ID middleware usa fluxo híbrido por padrão (Sim) | 
-| Aplicativo de página única (SPA) | Web | Atribuído | Sim | Sim | Sim <br/> SPAs usam fluxo implícito de conexão de Open ID |
+| Web App | Web | Atribuído | Sim | Sim | Opcional <br/>O middleware OpenID Connect usa o fluxo híbrido por padrão (Sim) | 
+| Aplicativo de página única (SPA) | Web | Atribuído | Sim | Sim | Sim <br/> SPAs usam o fluxo implícito do Open ID Connect |
 | Serviço/Daemon | Web | Atribuído | Sim | Sim | Não |
 
 Aplicativos que oferecem uma experiência de consentimento do administrador podem precisar de uma URL adicional de redirecionamento para o Azure AD à qual responder.
 
 Para obter mais detalhes sobre o Portal de Registro de Aplicativos e as propriedades que você pode configurar para seu Aplicativo, veja [Referência de registro de aplicativo](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
-## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
+<a id="azure-ad-endpoint-considerations" class="xliff"></a>
+
+## Considerações sobre o ponto de extremidade do Azure AD
 
 Você usa o [Portal do Azure](https://aka.ms/aadapplist) para registrar seu aplicativo no ponto de extremidade do Azure AD. Você configura as mesmas propriedades básicas como ID de aplicativo, segredo do aplicativo e redirecionar URI/URL, como faria no ponto de extremidade v2.0. No entanto, há algumas diferenças importantes sobre as quais você deve ter ciência: 
 

@@ -1,10 +1,14 @@
-# <a name="get-access-tokens-to-call-microsoft-graph"></a>Obter tokens de acesso para chamar o Microsoft Graph
+<a id="get-access-tokens-to-call-microsoft-graph" class="xliff"></a>
+
+# Obter tokens de acesso para chamar o Microsoft Graph
 
 Para chamar o Microsoft Graph, seu aplicativo deve adquirir um token de acesso do Azure Active Directory (Azure AD), o serviço de identidade em nuvem da Microsoft. O token de acesso contém informações (ou declarações) sobre seu aplicativo e as permissões que ele possui para os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser capaz de se autenticar com o Azure AD e ter a autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph. 
 
 Este tópico fornece uma visão geral dos tokens de acesso, do Azure AD e de como seu aplicativo pode obter tokens de acesso. Se você já estiver familiarizado com a integração de um aplicativo com o Azure AD para obter tokens, avance para as [Próximas Etapas](#next-steps) para obter informações e exemplos específicos do Microsoft Graph. 
 
-## <a name="what-is-an-access-token-and-how-do-i-use-it"></a>O que é um token de acesso e como usá-lo?
+<a id="what-is-an-access-token-and-how-do-i-use-it" class="xliff"></a>
+
+## O que é um token de acesso e como usá-lo?
 
 Os tokens de acesso emitidos pelo Azure AD são JWT (Token Web JSON) codificado em base 64. Eles contêm informações (declarações) que as APIs da Web protegidas pelo Azure AD, como o Microsoft Graph, usam para validar o chamador e para garantir que o chamador tenha as permissões adequadas para executar a operação solicitada. Ao chamar o Microsoft Graph, você pode tratar os tokens de acesso como opacos. Você deve sempre transmitir tokens de acesso em canais seguros, como protocolo TLS (HTTPS).
 
@@ -21,7 +25,9 @@ Host: graph.microsoft.com`
 GET https://graph.microsoft.com/v1.0/me/
 ```
 
-## <a name="what-are-microsoft-graph-permissions"></a>O que são as permissões do Microsoft Graph?
+<a id="what-are-microsoft-graph-permissions" class="xliff"></a>
+
+## O que são as permissões do Microsoft Graph?
 O Microsoft Graph expõe um conjunto valioso de permissões granulares sobre os recursos que ele controla. Essas permissões são expressadas como cadeias de caracteres e concedem aplicativos de acesso a recursos do Microsoft Graph, como usuários, grupos, email de usuário, etc. Por exemplo:
 
 - _User.Read_ permite que um aplicativo leia o perfil do usuário conectado.
@@ -32,9 +38,11 @@ Há dois tipos de permissões:
 - As Permissões delegadas são usadas pelos aplicativos que são executados com um usuário presente. Os privilégios de usuário são delegados ao aplicativo que faz chamadas para o Microsoft Graph em nome do usuário. Muitas dessas permissões podem ser consentidas por um usuário, mas outras exigem consentimento do administrador.  
 - As Permissões de aplicativo são usadas pelos aplicativos que são executados sem um usuário. Elas geralmente concedem amplos privilégios a um aplicativo dentro de uma organização e exigem sempre o consentimento de um administrador.
 
-Para obter uma lista completa das permissões do Microsoft Graph, além das diferenças entre as Permissões delegadas e Permissões de aplicativo, confira a [Referência de permissões](permissions_reference.md).
+Para obter uma lista completa das permissões do Microsoft Graph e saber as diferenças entre as Permissões Delegadas e Permissões de aplicativo, confira a [Referência de permissões](permissions_reference.md).
 
-## <a name="where-does-my-app-get-an-access-token"></a>Onde meu aplicativo pode obter um token de acesso?
+<a id="where-does-my-app-get-an-access-token" class="xliff"></a>
+
+## Onde meu aplicativo pode obter um token de acesso?
 Seu aplicativo adquire tokens de acesso do Azure Active Directory (Azure AD), o serviço de identidade em nuvem da Microsoft. Para obter um token de acesso, o aplicativo troca respostas e solicitações HTTP com o Azure AD usando protocolos padrão da indústria definidos nas especificações do OAuth 2.0 e do OpenID Connect 1.0. Esses protocolos descrevem os pontos de extremidade do Azure AD e as trocas com eles, ou fluxos de autenticação, que seu aplicativo usa para se autenticar de forma segura com o Azure AD e obter tokens de acesso.  
 
 Em um nível muito simples, para obter um token de acesso, seu aplicativo troca solicitações HTTP com os seguintes pontos de extremidade:
@@ -55,13 +63,17 @@ O Azure AD expõe dois conjuntos de pontos de extremidade, o Azure AD e o Azure 
 
 Os tokens do ponto de extremidade do AD do Azure não são intercambiáveis com os do ponto de extremidade do Azure AD v2.0, portanto, antes de começar a trabalhar em um aplicativo para produção, você deve escolher entre os pontos de extremidade. Como o ponto de extremidade do Azure AD v2.0 é mais recente e os recursos ainda estão sendo adicionados, existem algumas limitações importantes que você precisa considerar na decisão sobre qual ponto de extremidade deve ser usado no aplicativo na produção. Para saber mais, confira o tópico [Decidindo entre os pontos de extremidade do Azure AD e do Azure AD v2.0](#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-## <a name="whats-the-difference-between-oauth-20-and-openid-connect"></a>Qual é a diferença entre o OAuth 2.0 e o OpenID Connect?
+<a id="whats-the-difference-between-oauth-20-and-openid-connect" class="xliff"></a>
+
+## Qual é a diferença entre o OAuth 2.0 e o OpenID Connect?
 
 O OAuth 2.0 é um protocolo de autorização. Ele define como seu aplicativo pode obter tokens de acesso, autenticando-se diretamente no Azure AD ou redirecionando um usuário para autenticar-se no Azure AD e concordar com as permissões solicitadas pelo aplicativo. No primeiro caso, seu aplicativo obtém um token de acesso que ele pode usar para chamar o Microsoft Graph como ele próprio. No segundo caso, seu aplicativo obtém um token de acesso que ele pode usar para chamar o Microsoft Graph em nome de um usuário. No entanto, com o OAuth 2.0, seu aplicativo não recebe informações sobre o usuário ou como ele foi autenticado pelo Azure AD. Os fluxos do OAuth 2.0 geralmente são mais usados por aplicativos móveis ou nativos que já conhecem a identidade do usuário, ou por aplicativos, como serviços em segundo plano ou daemons, que chamam o Microsoft Graph com sua própria identidade e não em nome de um usuário.
 
 O OpenID Connect estende o OAuth 2.0 para fornecer uma camada de identidade. Com o OpenID Connect, além de um token de acesso, seu aplicativo também pode obter um token de identificação do Azure AD. Os tokens de identificação do OpenID Connect contêm declarações sobre a identidade do usuário e detalhes sobre como e onde eles foram autenticados. Os fluxos do OpenID Connect são normalmente usados por aplicativos Web, incluindo aplicativos de uma única página (SPAs). Esses aplicativos podem usar o token de identificação para personalizar seu comportamento para o usuário para o qual eles solicitaram um token de acesso e, em muitos casos, terceirizar o logon de seus usuários para o Azure AD e permitir experiências como o logon único (SSO).
 
-## <a name="what-kind-of-apps-can-i-call-microsoft-graph-from"></a>De que tipos de aplicativos posso chamar o Microsoft Graph?
+<a id="what-kind-of-apps-can-i-call-microsoft-graph-from" class="xliff"></a>
+
+## De que tipos de aplicativos posso chamar o Microsoft Graph?
 Você pode chamar o Microsoft Graph a partir dos seguintes tipos de aplicativos: 
 
 - **Aplicativos nativos**: Aplicativos que são executados em um dispositivo como uma área de trabalho, tablet ou celular. Esses aplicativos usam o sistema operacional (SO) nativo do dispositivo como o iOS, o Android ou o Windows na apresentação do usuário e fazer chamadas para o Microsoft Graph em nome de um usuário.
@@ -70,8 +82,10 @@ Você pode chamar o Microsoft Graph a partir dos seguintes tipos de aplicativos:
 - **Daemons/Serviços em segundo plano**: Serviços em segundo plano e daemons que são executados em um servidor sem a presença de um usuário e fazer chamadas para o Microsoft Graph com sua própria identidade.
 - **APIs da Web**: Um aplicativo de cliente chama uma API da Web (protegida pelo Azure AD) que, em seguida, chama o Microsoft Graph, tudo em nome de um usuário. Compatível com o ponto de extremidade do Azure AD. No caso do ponto de extremidade do Azure AD v2.0, só terá suporte se o cliente e a API da Web tiverem a mesmo Id de Aplicativo. Por exemplo, um aplicativo nativo que chama um back-end da API da Web. 
 
-## <a name="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph"></a>Como fazer com que meu aplicativo se comunique com o Azure AD e o Microsoft Graph?
-Seu aplicativo deve estar registrado antes de poder obter um token do Azure AD. Para o ponto de extremidade do Azure AD v2.0, use o [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/) para registrar seu aplicativo. No caso do ponto de extremidade do Azure AD, use o [Portal do Azure](https://azure.portal.com/). O registro integra seu aplicativo com o Azure AD e estabelece as coordenadas e identificadores usados para obter tokens. Eles são:
+<a id="how-do-i-get-my-app-talking-to-azure-ad-and-microsoft-graph" class="xliff"></a>
+
+## Como fazer com que meu aplicativo se comunique com o Azure AD e o Microsoft Graph?
+Seu aplicativo deve estar registrado antes de poder obter um token do Azure AD. Para o ponto de extremidade do Azure AD v2.0, use o [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/) para registrar seu aplicativo. No caso do ponto de extremidade do Azure AD, use o [Portal do Azure](https://portal.azure.com/). O registro integra seu aplicativo com o Azure AD e estabelece as coordenadas e identificadores usados para obter tokens. Eles são:
 
 - **Id do aplicativo**: Um identificador exclusivo atribuído pelo Azure AD. 
 - **URI/URL de redirecionamento**: Um ou mais pontos de extremidade no qual seu aplicativo receberá respostas do Azure AD. (Para aplicativos móveis e nativos, será um URI atribuído pelo Azure AD.)
@@ -96,7 +110,9 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
 ```
 
-## <a name="are-there-authentication-libraries-available"></a>Há bibliotecas de autenticação disponíveis?
+<a id="are-there-authentication-libraries-available" class="xliff"></a>
+
+## Há bibliotecas de autenticação disponíveis?
 Como a maioria dos desenvolvedores, você provavelmente usará bibliotecas de autenticação para gerenciar suas interações com o Azure AD. As bibliotecas de autenticação abstraem muitos detalhes do protocolo, como validação, manipulação de cookies, armazenamento de token em cache e manutenção de conexões seguras, fora do desenvolvedor e isso permite que você focalize seu desenvolvimento no aplicativo. A Microsoft publica bibliotecas de cliente de código-fonte aberto e middleware de servidor para os pontos de extremidade do Azure AD e do Azure AD v2.0. 
 
 Para o ponto de extremidade do Azure AD v2.0: 
@@ -114,7 +130,9 @@ Para o ponto de extremidade do Azure AD:
 
 Para obter uma lista completa de bibliotecas de cliente da Microsoft e middleware de servidor, confira [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
-## <a name="deciding-between-the-azure-ad-and-azure-ad-v20-endpoints"></a>Decidindo entre os pontos de extremidade do Azure AD e do Azure AD v2.0
+<a id="deciding-between-the-azure-ad-and-azure-ad-v20-endpoints" class="xliff"></a>
+
+## Decidindo entre os pontos de extremidade do Azure AD e do Azure AD v2.0
 
 O Azure AD expõe dois conjuntos de pontos de extremidade, o Azure AD e o Azure AD v2.0, onde você pode obter tokens de acesso para usar ao chamar o Microsoft Graph. Os tokens recebidos de cada ponto de extremidade não são intercambiáveis. Para executar exemplos ou explorar a funcionalidade do Microsoft Graph, a escolha dos pontos de extremidade do Azure AD não é essencial. No entanto, antes de iniciar o desenvolvimento em um aplicativo de produção, você precisa decidir qual ponto de extremidade fará mais sentido para seu cenário. A discussão a seguir fornece algumas diretrizes gerais que podem ser usadas para ajudar na tomada de decisão, mas, para informações mais atuais e abrangentes, você deve consultar [Devo usar o ponto de extremidade do v2.0?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations) na documentação do Azure Active Directory. 
 
@@ -141,19 +159,23 @@ Para obter mais informações sobre as diferenças entre o ponto de extremidade 
 >
 >**Antes de tomar uma decisão sobre qual ponto de extremidade usar ao desenvolver um aplicativo para produção, confira [Devo usar o ponto de extremidade v2.0?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations).**
 
-## <a name="next-steps"></a>Próximas etapas
+<a id="next-steps" class="xliff"></a>
+
+## Próximas etapas
 
 Depois de registrar seu aplicativo, você estará pronto para começar!
 
 - Para obter etapas rápidas para obter um token de acesso para aplicativos que chamam o Microsoft Graph em nome de um usuário, confira [Obter acesso em nome dos usuários](auth_v2_user.md).
-- Para obter etapas rápidas para obter um token de acesso para aplicativos que chamam o Microsoft Graph sem um usuário, confira [Obter acesso sem um usuário](auth_v2_user.md).
+- Para obter etapas rápidas para obter um token de acesso para aplicativos que chamam o Microsoft Graph sem um usuário, confira [Obter acesso sem um usuário](auth_v2_service.md).
 - Para ver as permissões que você pode usar com o Microsoft Graph, confira [Permissões](permissions_reference.md).
 - Se você é um provedor de Soluções na Nuvem da Microsoft interessado em acessar dados de clientes gerenciados por parceiros por meio do Microsoft Graph, confira [Gerenciar o acesso ao aplicativo (CSPs)](auth_cloudsolutionprovider.md).
 
 
 Se já estiver pronto para entrar no código, você pode usar os seguintes recursos para ajudá-lo a implementar a autenticação e a autorização com o Azure AD em seu aplicativo.
 
-### <a name="microsoft-graph-connect-samples"></a>Exemplos de Conexão usando o Microsoft Graph 
+<a id="microsoft-graph-connect-samples" class="xliff"></a>
+
+### Exemplos de Conexão usando o Microsoft Graph 
 
 A Microsoft publica exemplos do Connect para o Microsoft Graph para uma ampla variedade de plataformas, incluindo: Android, Angular.JS, ASP.NET, iOS (Obj-C e Swift), Node.JS, PHP, Python, Ruby, UWP e Xamarin. Você pode usar esses exemplos para examinar o código que utiliza diversas bibliotecas de autenticação para obter tokens do Azure AD. Atualmente, a maioria dos exemplos usa bibliotecas de autenticação de terceiros. No entanto, os exemplos de ASP.NET e UWP usam bibliotecas da Microsoft.
 
@@ -161,7 +183,9 @@ A Microsoft publica exemplos do Connect para o Microsoft Graph para uma ampla va
 - Para obter um exemplo executado em sua plataforma preferida, confira [Início Rápido do Microsoft Graph](https://developer.microsoft.com/graph/Quick-Start).
 - Visite o [repositório do Microsoft Graph](https://github.com/microsoftgraph) no GitHub para ver todos os exemplos disponíveis do Microsoft Graph. 
 
-### <a name="azure-active-directory-samples-and-documentation"></a>Documentação e exemplos do Azure Active Directory 
+<a id="azure-active-directory-samples-and-documentation" class="xliff"></a>
+
+### Documentação e exemplos do Azure Active Directory 
 A documentação do Azure AD contém artigos e exemplos que se concentram especificamente na autenticação e autorização no Azure AD.
 
 Para o ponto de extremidade do Azure AD v2.0: 
@@ -178,7 +202,9 @@ Para o ponto de extremidade do Azure AD:
 - Ou você pode explorar exemplos do Azure AD por plataformas na [galeria de Código do Azure](https://azure.microsoft.com/resources/samples/?service=active-directory). Observação: você não pode qualificar sua pesquisa pela versão do ponto de extremidade. 
 
 
-## <a name="see-also"></a>Veja também
+<a id="see-also" class="xliff"></a>
+
+## Ver também
 
 - [Documentação do ponto de extremidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentação do ponto de extremidade do Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview)
