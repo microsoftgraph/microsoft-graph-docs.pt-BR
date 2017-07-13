@@ -1,37 +1,4 @@
-# <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
-
-Exclua uma substituição especificada de acordo com sua ID.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: *Mail.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/inferenceClassification/overrides/{id}
-DELETE /users/{id}/inferenceClassification/overrides/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "delete_inferenceclassificationoverride"
-}-->
-```http
-DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="56f0c-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56f0c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

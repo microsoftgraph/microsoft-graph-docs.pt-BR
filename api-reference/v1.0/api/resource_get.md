@@ -1,33 +1,18 @@
-# <a name="get-resource"></a>Obter recurso
+<span data-ttu-id="45bbc-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="45bbc-p101">Bearer token. Required.</span></span>  | {token} de portador. Obrigatório. |
 
-Recupere os dados binários do objeto [resource](../resources/resource.md) de um arquivo ou imagem.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:  
+## <span data-ttu-id="45bbc-115">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="45bbc-115">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="45bbc-116">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="45bbc-116">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="45bbc-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="45bbc-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="45bbc-118">Se bem-sucedido, este método retorna um código de resposta `200 OK` e os dados binários do arquivo ou imagem no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="45bbc-118">If successful, this method returns a `200 OK` response code and the image or file binary data in the response body.</span></span>
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All ou Notes.ReadWrite.All
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onenote/resources/{id}/content
-GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
-GET /groups/{id}/onenote/resources/{id}/content
-```
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e os dados binários do arquivo ou imagem no corpo da resposta.
-
-Observação: As imagens não serão renderizadas diretamente em um navegador porque elas exigem autorização para recuperá-las, como o restante do conteúdo da página.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+<span data-ttu-id="45bbc-119">Observação: As imagens não serão renderizadas diretamente em um navegador porque elas exigem autorização para recuperá-las, como o restante do conteúdo da página.</span><span class="sxs-lookup"><span data-stu-id="45bbc-119">Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.</span></span>
+## <span data-ttu-id="45bbc-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="45bbc-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="45bbc-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="45bbc-121">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="45bbc-122">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="45bbc-122">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_resource"
@@ -35,8 +20,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="45bbc-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="45bbc-123">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="45bbc-124">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="45bbc-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

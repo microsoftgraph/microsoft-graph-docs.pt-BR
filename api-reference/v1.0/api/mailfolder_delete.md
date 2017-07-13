@@ -1,29 +1,11 @@
-# <a name="delete-mailfolder"></a>Excluir mailFolder
-
-Exclua a mailFolder.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/mailFolders/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="903ab-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="903ab-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="903ab-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="903ab-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="903ab-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="903ab-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="903ab-121">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="903ab-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_mailfolder"
@@ -31,8 +13,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <span data-ttu-id="903ab-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="903ab-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="903ab-123">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="903ab-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

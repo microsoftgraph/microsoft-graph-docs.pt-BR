@@ -1,32 +1,14 @@
-# <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
+<span data-ttu-id="c99b2-p103">Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`. Quando definido como `automatic`, a visualização exibida é escolhida pelo aplicativo que exibe a tarefa.</span><span class="sxs-lookup"><span data-stu-id="c99b2-p103">This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`. When set to `automatic` the displayed preview is chosen by the app viewing the task.</span></span>|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`. Quando definido como `automatic`, a visualização exibida é escolhida pelo aplicativo que exibe a tarefa.|
+|<span data-ttu-id="c99b2-135">referências</span><span class="sxs-lookup"><span data-stu-id="c99b2-135">references</span></span>|[<span data-ttu-id="c99b2-136">plannerExternalReferences</span><span class="sxs-lookup"><span data-stu-id="c99b2-136">plannerExternalReferences</span></span>](plannerexternalreferences.md)|<span data-ttu-id="c99b2-137">A coleção de referências na tarefa.</span><span class="sxs-lookup"><span data-stu-id="c99b2-137">The collection of references on the task.</span></span>|
 
-O recurso **plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto [task](plannertask.md) tem um objeto de detalhes.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get plannerTaskDetails](../api/plannertaskdetails_get.md) | [plannerTaskDetails](plannertaskdetails.md) |Leia as propriedades e as relações do objeto **plannerTaskDetails**.|
-|[Atualizar](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Atualize o objeto **plannerTaskDetails**. |
+## <span data-ttu-id="c99b2-138">Relações</span><span class="sxs-lookup"><span data-stu-id="c99b2-138">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="c99b2-139">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c99b2-139">None</span></span>
 
 
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|lista de verificação|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens da lista de verificação na tarefa.|
-|description|String|Descrição da tarefa|
-|id|String| Somente leitura. ID dos detalhes da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`. Quando definido como `automatic`, a visualização exibida é escolhida pelo aplicativo que exibe a tarefa.|
-|referências|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
-
-### <a name="relationships"></a>Relações
-Nenhum
-
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="c99b2-140">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c99b2-140">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="c99b2-141">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c99b2-141">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

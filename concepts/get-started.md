@@ -1,119 +1,154 @@
-# <a name="getting-started-building-microsoft-graph-apps"></a>Introdução à criação de aplicativos do Microsoft Graph
-
-Os artigos desta seção fornecem orientações detalhadas sobre como criar aplicativos que se conectam ao Microsoft Graph em uma variedade de linguagens e plataformas de desenvolvimento. Cada artigo começa com um exemplo de projeto inicial para a plataforma apropriada e orienta para que você consiga adicionar funcionalidades que autenticam o usuário e fazem um exemplo de solicitação para que o Microsoft Graph envie um email da sua conta. O projeto concluído é idêntico ao [Exemplo de conexão no repositório do Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) para essa plataforma.
-
-Escolha o artigo correspondente ao provedor de autenticação e à plataforma de desenvolvimento de sua escolha e comece a conexão com o Microsoft Graph.
-
-Você pode seguir as etapas no artigo que aborda a plataforma de desenvolvimento que você escolheu ou, para obter rapidamente uma solução que funcione, tente a experiência de [início rápido](http://dev.office.com/getting-started/office365apis).
+<span data-ttu-id="3dfea-p102">Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](https://github.com/microsoftgraph) no GitHub. A tabela a seguir mostra os exemplos por provedor e plataforma de autenticação e observa se eles se conectam ao Microsoft Graph usando REST ou uma biblioteca de cliente do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="3dfea-p102">To explore the finished Connect samples, see [Microsoft Graph](https://github.com/microsoftgraph) in GitHub. The following table lists the samples by authentication provider and platform, and notes whether they connect to Microsoft Graph using REST or a Microsoft Graph client library.</span></span>
 
 Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](https://github.com/microsoftgraph) no GitHub. A tabela a seguir mostra os exemplos por provedor e plataforma de autenticação e observa se eles se conectam ao Microsoft Graph usando REST ou uma biblioteca de cliente do Microsoft Graph.
 
 <table>
   <tr>
-    <th>Plataforma</th>
-    <th>Ponto de extremidade do Azure AD</th> 
-    <th>Ponto de extremidade do Azure AD v2.0</th>
+    <th><span data-ttu-id="3dfea-109">Plataforma</span><span class="sxs-lookup"><span data-stu-id="3dfea-109">Platform</span></span></th>
+    <th><span data-ttu-id="3dfea-110">Ponto de extremidade do Azure AD</span><span class="sxs-lookup"><span data-stu-id="3dfea-110">Azure AD endpoint</span></span></th> 
+    <th><span data-ttu-id="3dfea-111">Ponto de extremidade do Azure AD v2.0</span><span class="sxs-lookup"><span data-stu-id="3dfea-111">Azure AD v2.0 endpoint</span></span></th>
   </tr>
   <tr>
-    <td>Android</td>
-    <td>
+    <td><span data-ttu-id="3dfea-112">Android</span><span class="sxs-lookup"><span data-stu-id="3dfea-112">Android</span></span></td>
+    <td><span data-ttu-id="3dfea-113">
         <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Exemplo de SDK</a>
-    </td> 
-        <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-113">
+        <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">SDK sample</a>
+    </span></span></td> 
+        <td><span data-ttu-id="3dfea-114">
                 <a href="https://github.com/microsoftgraph/android-java-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-114">
+                <a href="https://github.com/microsoftgraph/android-java-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>AngularJS</td>
-    <td>
+    <td><span data-ttu-id="3dfea-115">AngularJS</span><span class="sxs-lookup"><span data-stu-id="3dfea-115">AngularJS</span></span></td>
+    <td><span data-ttu-id="3dfea-116">
         <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td> 
-        <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-116">
+        <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td> 
+        <td><span data-ttu-id="3dfea-117">
         <a href="https://github.com/microsoftgraph/angular-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/angular-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-117">
+        <a href="https://github.com/microsoftgraph/angular-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>ASP.NET</td>
-    <td>
+    <td><span data-ttu-id="3dfea-118">ASP.NET</span><span class="sxs-lookup"><span data-stu-id="3dfea-118">ASP.NET</span></span></td>
+    <td><span data-ttu-id="3dfea-119">
         <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-119">
+        <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="3dfea-120">
         <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-120">
+        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>iOS (Obj-C)</td>
-    <td>
+    <td><span data-ttu-id="3dfea-121">iOS (Obj-C)</span><span class="sxs-lookup"><span data-stu-id="3dfea-121">iOS (Obj-C)</span></span></td>
+    <td><span data-ttu-id="3dfea-122">
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Exemplo de REST</a>
-    </td>     
-     <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-122">
+        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">REST sample</a>
+    </span></span></td>     
+     <td><span data-ttu-id="3dfea-123">
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Exemplo de SDK</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-123">
+        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">SDK sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>iOS (Swift)</td>
-    <td>
+    <td><span data-ttu-id="3dfea-124">iOS (Swift)</span><span class="sxs-lookup"><span data-stu-id="3dfea-124">iOS (Swift)</span></span></td>
+    <td><span data-ttu-id="3dfea-125">
         <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">Exemplo de REST</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-125">
+        <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="3dfea-126">
         <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">Exemplo de SDK</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-126">
+        <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">SDK sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>NodeJS</td>
-    <td>
+    <td><span data-ttu-id="3dfea-127">NodeJS</span><span class="sxs-lookup"><span data-stu-id="3dfea-127">NodeJS</span></span></td>
+    <td><span data-ttu-id="3dfea-128">
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>    
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-128">
+        <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="3dfea-129">    
         <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-129">    
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>PHP</td>
-    <td>
+    <td><span data-ttu-id="3dfea-130">PHP</span><span class="sxs-lookup"><span data-stu-id="3dfea-130">PHP</span></span></td>
+    <td><span data-ttu-id="3dfea-131">
         <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-131">
+        <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="3dfea-132">
             <a href="https://github.com/microsoftgraph/php-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/php-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-132">
+            <a href="https://github.com/microsoftgraph/php-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/php-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>Python</td>
-    <td>
+    <td><span data-ttu-id="3dfea-133">Python</span><span class="sxs-lookup"><span data-stu-id="3dfea-133">Python</span></span></td>
+    <td><span data-ttu-id="3dfea-134">
         <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">Exemplo de REST</a>
-    </td>     
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-134">
+        <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">REST sample</a>
+    </span></span></td>     
     <td>
     </td> 
   </tr>
   <tr>
-    <td>Ruby</td>
-    <td>
+    <td><span data-ttu-id="3dfea-135">Ruby</span><span class="sxs-lookup"><span data-stu-id="3dfea-135">Ruby</span></span></td>
+    <td><span data-ttu-id="3dfea-136">
         <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-136">
+        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="3dfea-137">
         <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-137">
+        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>UWP</td>
-    <td>
+    <td><span data-ttu-id="3dfea-138">UWP</span><span class="sxs-lookup"><span data-stu-id="3dfea-138">UWP</span></span></td>
+    <td><span data-ttu-id="3dfea-139">
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-139">
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">REST sample</a>
+    </span></span></td>     
+    <td><span data-ttu-id="3dfea-140">
         <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">Exemplo de REST</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-140">
+        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">SDK sample</a> or <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">REST sample</a>
+    </span></span></td> 
   </tr>
   <tr>
-    <td>Xamarin</td>
+    <td><span data-ttu-id="3dfea-141">Xamarin</span><span class="sxs-lookup"><span data-stu-id="3dfea-141">Xamarin</span></span></td>
     <td>
     </td>     
-    <td>
+    <td><span data-ttu-id="3dfea-142">
         <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">Exemplo de SDK</a>
-    </td> 
+    </span><span class="sxs-lookup"><span data-stu-id="3dfea-142">
+        <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">SDK sample</a>
+    </span></span></td> 
   </tr>
 </table>
 
-## <a name="see-also"></a>Ver também
-- Experimente exemplos de chamada REST em nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer).
-- [Documentação de ponto de extremidade do Azure AD](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Documentação de ponto de extremidade do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+## <span data-ttu-id="3dfea-143">Ver também</span><span class="sxs-lookup"><span data-stu-id="3dfea-143">See also</span></span>
+<a id="see-also" class="xliff"></a>
+- <span data-ttu-id="3dfea-144">Experimente exemplos de chamada REST em nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="3dfea-144">Try out sample REST calls in our [API Explorer](https://graph.microsoft.io/graph-explorer).</span></span>
+- [<span data-ttu-id="3dfea-145">Documentação de ponto de extremidade do Azure AD</span><span class="sxs-lookup"><span data-stu-id="3dfea-145">Azure AD endpoint documentation</span></span>](https://azure.microsoft.com/documentation/services/active-directory/)
+- [<span data-ttu-id="3dfea-146">Documentação de ponto de extremidade do Azure AD v2.0</span><span class="sxs-lookup"><span data-stu-id="3dfea-146">Azure AD v2.0 endpoint documentation</span></span>](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

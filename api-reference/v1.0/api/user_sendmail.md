@@ -1,38 +1,12 @@
-# <a name="send-mail"></a>Enviar email
-
-Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
-
-Você pode incluir um [anexo de arquivo](../resources/fileattachment.md) na mesma chamada de ação de **sendMail**.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.Send*
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/sendMail
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
-|SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="760ae-p105">Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="760ae-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="760ae-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="760ae-133">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="760ae-134">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="760ae-134">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="760ae-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="760ae-135">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="760ae-136">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="760ae-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -68,8 +42,9 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="760ae-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="760ae-137">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="760ae-138">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="760ae-138">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

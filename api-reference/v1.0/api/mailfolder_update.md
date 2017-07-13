@@ -1,46 +1,4 @@
-# <a name="update-mailfolder"></a>Atualizar mailfolder
-
-Atualize as propriedades do objeto mailfolder.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/mailFolders/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json. Obrigatório.  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
-
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da mailFolder.|
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "update_mailfolder"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/mailFolders/{id}
-Content-type: application/json
-Content-length: 159
-
-{
-  "displayName": "displayName-value",
-}
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="24697-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="24697-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

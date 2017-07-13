@@ -1,39 +1,4 @@
-# <a name="get-plannerassignedtotaskboardtaskformat"></a>Get plannerAssignedToTaskBoardTaskFormat
-
-Recupere as propriedades e os relacionamentos do objeto **plannerAssignedToTaskBoardTaskFormat**.
-### <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: 
-
-*Group.Read.All*
-
-### <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /planner/tasks/<id>/assignedToTaskBoardFormat
-```
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-
-### <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-### <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) no corpo da resposta.
-
-Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).
-
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "get_plannerassignedtotaskboardtaskformat"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="04d65-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="04d65-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

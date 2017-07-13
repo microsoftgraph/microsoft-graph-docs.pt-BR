@@ -1,45 +1,4 @@
-# <a name="domain-verify"></a>domain: verify
-
-Valida a propriedade do domínio.
-
-> **Importante:** Aplica-se somente a um domínio não verificado. Para um domínio não verificado, a propriedade isVerified do [domínio](../resources/domain.md) é falsa.
-
-### <a name="prerequisites"></a>Pré-requisitos
-
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.Read.All* ou *Domain.ReadWrite.All*
-
-### <a name="http-request"></a>Solicitação HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-POST /domains/{id}/verify
-```
-
-> Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.
-
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório.|
-| Content-Type  | application/json |
-
-### <a name="request-body"></a>Corpo da solicitação
-
-### <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [domain](../resources/domain.md) no corpo da resposta.
-
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-<!-- {
-  "blockType": "request",
-  "name": "domain_verify"
-}-->
-```http
-POST https://graph.microsoft.com/V1.0/domains/contoso.com/verify
-```
-
-##### <a name="response"></a>Resposta
+<span data-ttu-id="924f8-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="924f8-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

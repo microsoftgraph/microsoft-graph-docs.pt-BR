@@ -1,41 +1,4 @@
-# <a name="list-tasks"></a>Listar tarefas
-
-Recupere uma lista de objetos **plannertask**.
-### <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API:
-
-*Group.Read.All*
-
-### <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /planner/tasks
-```
-### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](http://graph.microsoft.io/docs/overview/query_parameters) de planId seja especificado.
-
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-
-### <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-### <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [plannerTask](../resources/plannertask.md) no corpo da resposta.
-
-Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "get_tasks"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/planner/tasks
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="b2ff0-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b2ff0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

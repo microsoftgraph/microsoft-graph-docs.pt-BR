@@ -1,42 +1,8 @@
-# <a name="invitation-manager"></a>gerenciador de convites
+<span data-ttu-id="468ba-p108">O usuário criado como parte da criação do convite. Somente leitura</span><span class="sxs-lookup"><span data-stu-id="468ba-p108">The user created as part of the invitation creation. Read-Only</span></span>|O usuário criado como parte da criação do convite. Somente leitura|
 
-Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. 
-
-O processo de convite usa o fluxo a seguir:
-
-* Um convite é criado
-* Um convite é enviado ao usuário convidado (contendo um link do convite)
-* O usuário convidado clica no link do convite, entra e recupera o convite, e a criação da entidade de usuário que representa o usuário convidado é concluída
-* O usuário é redirecionado para uma página específica após a conclusão do resgate
-
-A criação de um convite retornará uma URL de resgate na resposta (*inviteRedeemUrl*). A API de criação de convite pode enviar automaticamente um email que contém a URL de resgate ao usuário convidado, definindo-se *sendInvitationMessage* como true. Você também pode personalizar a mensagem será enviada ao usuário convidado. Em vez disso, se você desejar enviar a URL de resgate por outros meios, poderá definir *sendInvitationMessage* como false e usar a URL de resgate da resposta para criar sua própria comunicação. Atualmente, não há qualquer API para execução do processo de resgate. O usuário convidado tem que clicar no link *inviteRedeemUrl* enviado na comunicação na etapa anterior e passar pelo processo de resgate interativo em um navegador. Após a conclusão, o usuário convidado torna-se um usuário externo na organização.
-
-
-### <a name="methods"></a>Métodos
-| Método       | Tipo de retorno  |Descrição|
-|:---------------|:--------|:----------|
-|[Criar convite](../api/invitation_post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
-
-### <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
-|invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório.|
-|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
-|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
-|inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
-|inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se não for administrador da empresa. |
-|status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
-
-### <a name="relationships"></a>Relações
-| Relação | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso
+## <span data-ttu-id="468ba-165">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="468ba-165">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="468ba-166">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="468ba-166">Here is a JSON representation of the resource</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
 ```json

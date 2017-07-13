@@ -1,29 +1,13 @@
-# <a name="domaindnscnamerecord-resource-type"></a>Tipo de recurso domainDnsCnameRecord
+<span data-ttu-id="778c1-p107">O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulável</span><span class="sxs-lookup"><span data-stu-id="778c1-p107">Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable</span></span>| O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulável |
 
-Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).
-
-
-### <a name="methods"></a>Métodos
-Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|canonicalName|String| O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS. |
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura|
-|isOptional|Booliano| Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável |
-|rótulo|String| O valor usado ao configurar a propriedade *alias/host/name* do registro CNAME no host DNS. |
-|recordType|String| Tipo do registro DNS. Este valor sempre será *CName*. Chave|
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro CNAME.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|ttl|Int32| O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulável |
-
-### <a name="relationships"></a>Relações
-Nenhum
+## <span data-ttu-id="778c1-139">Relações</span><span class="sxs-lookup"><span data-stu-id="778c1-139">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="778c1-140">Nenhum</span><span class="sxs-lookup"><span data-stu-id="778c1-140">None</span></span>
 
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="778c1-141">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="778c1-141">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="778c1-142">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="778c1-142">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

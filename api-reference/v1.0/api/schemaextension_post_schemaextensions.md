@@ -1,149 +1,4 @@
-# <a name="create-schemaextension"></a>Criar schemaExtension
-
-Criar uma nova definição [schemaExtension](../resources/schemaextension.md) para estender um [tipo de recurso de suporte](../../../concepts/extensibility_overview.md#supported-resources).
-
-As extensões de esquema permitem que você adicione dados personalizados fortemente tipados a um recurso. O aplicativo que cria uma extensão de esquema é o aplicativo proprietário. Dependendo do [estado](../../../concepts/extensibility_overview.md#schema-extensions-lifecycle) da extensão, o aplicativo proprietário, e apenas o aplicativo proprietário, poderá atualizar ou excluir a extensão. 
-
-Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group).
-
-## <a name="prerequisites"></a>Pré-requisitos
-O seguinte **escopo** é obrigatório para executar esta API: *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /schemaExtensions
-```
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [schemaExtension](../resources/schemaextension.md).
-
-A tabela a seguir mostra as propriedades que são necessárias ao criar uma extensão de esquema.
-
-| Parâmetro | Tipo | Descrição|
-|:---------------|:--------|:----------|
-|description|String|Descrição da extensão de esquema.|
-|id|String|O identificador exclusivo da definição de extensão de esquema. <br>Você pode atribuir um valor em uma destas duas maneiras: <ul><li>Concatenar o nome de um de seus domínios verificados com um nome da extensão do esquema para formar uma cadeia de caracteres exclusiva neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Como exemplo, `contoso_mySchema`. </li><li>Forneça um nome de esquema e permita que o Microsoft Graph use esse nome de esquema para completar a atribuição de **id** neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}. Um exemplo seria `extkvbmkofy_mySchema`.</li></ul>Esta propriedade não pode ser alterada após a criação. |
-|propriedades|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.|
-|targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos de recursos do Microsoft Graph (com suporte a extensões do esquema) ao qual esta extensão de esquema pode ser aplicada.|
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-### <a name="request-1"></a>Solicitação 1
-O primeiro exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres para a propriedade **id** da definição de extensão do esquema. A cadeia de caracteres exclusiva se baseia neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
-
-No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
-<!-- {
-  "blockType": "request",
-  "name": "create_schemaextension_from_schemaextensions_1"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
-Content-type: application/json
-
-{
-    "id":"graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schemaExtension"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 420
-
-{
-    "id": "graphlearn_courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "status": "InDevelopment",
-    "owner": "24d3b144-21ae-4080-943f-7067b395b913",
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "String"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="request-2"></a>Solicitação 2
-O segundo exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
-
-<!-- {
-  "blockType": "request",
-  "name": "create_schemaextension_from_schemaextensions_2"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/schemaExtensions
-Content-type: application/json
-
-{
-    "id":"courses",
-    "description": "Graph Learn training courses extensions",
-    "targetTypes": [
-        "Group"
-    ],
-    "properties": [
-        {
-            "name": "courseId",
-            "type": "Integer"
-        },
-        {
-            "name": "courseName",
-            "type": "String"
-        },
-        {
-            "name": "courseType",
-            "type": "String"
-        }
-    ]
-}
-```
-
-### <a name="response-2"></a>Resposta 2
+<span data-ttu-id="2b867-p108">A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2b867-p108">The response includes a unique string in the **id** property that is based on the schema name provided in the request, together with the rest of the newly created schema definition. The value in **id** in the response is based on the format, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -181,10 +36,11 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>Ver também
+## <span data-ttu-id="2b867-161">Ver também</span><span class="sxs-lookup"><span data-stu-id="2b867-161">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="2b867-162">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="2b867-162">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="2b867-163">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="2b867-163">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

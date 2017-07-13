@@ -1,30 +1,11 @@
-# <a name="delete-page"></a>Excluir página
-
-Exclua uma página do OneNote.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:   
-
-Notes.ReadWrite ou Notes.ReadWrite.All 
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/onenote/pages/{id}
-DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="59b98-p102">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59b98-p102">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="59b98-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="59b98-118">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="59b98-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="59b98-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="59b98-120">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="59b98-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
@@ -32,8 +13,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="59b98-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="59b98-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="59b98-122">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="59b98-122">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

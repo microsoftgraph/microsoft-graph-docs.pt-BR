@@ -1,29 +1,12 @@
-# <a name="group-subscribebymail"></a>group: subscribeByMail
-
-Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.ReadWrite.All* 
-*Group.ReadWrite.All*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /groups/{id}/subscribeByMail
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-
-## <a name="request-body"></a>Corpo da solicitação
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="074fa-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="074fa-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="074fa-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="074fa-117">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="074fa-118">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="074fa-118">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="074fa-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="074fa-119">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="074fa-120">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="074fa-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
@@ -32,8 +15,9 @@ Veja a seguir um exemplo da solicitação.
 POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <span data-ttu-id="074fa-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="074fa-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="074fa-122">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="074fa-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

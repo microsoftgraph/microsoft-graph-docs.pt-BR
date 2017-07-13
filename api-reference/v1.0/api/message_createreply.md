@@ -1,47 +1,4 @@
-# <a name="message-createreply"></a>message: createReply
-
-Crie um rascunho da mensagem de resposta. Você poderá, então, [update](../api/message_update.md) ou [send](../api/message_send.md) o rascunho.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/createReply
-POST /users/{id | userPrincipalName}/messages/{id}/createReply
-POST /me/mailFolders/{id}/messages/{id}/createReply
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Message](../resources/message.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "message_createreply"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
-```
-
-##### <a name="response"></a>Resposta
+<span data-ttu-id="d9908-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d9908-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

@@ -1,29 +1,18 @@
-# <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
+<span data-ttu-id="7d56d-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7d56d-p101">Bearer token. Required.</span></span>  | {token} de portador. Obrigatório. |
+| <span data-ttu-id="7d56d-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7d56d-114">Content-Type</span></span>  | <span data-ttu-id="7d56d-115">application/json</span><span class="sxs-lookup"><span data-stu-id="7d56d-115">application/json</span></span>  |
 
-Use esta API para criar um novo membro de função de diretório.
+## <span data-ttu-id="7d56d-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7d56d-116">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="7d56d-117">No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="7d56d-117">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="prerequisites"></a>Pré-requisitos
-O seguinte **escopo** é obrigatório para executar esta API: *Directory.AccessAsUser.All*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /directoryRoles/{id}/members/$ref
+## <span data-ttu-id="7d56d-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d56d-118">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7d56d-119">Se bem-sucedido, este método retorna um código de resposta `204, No Content`.</span><span class="sxs-lookup"><span data-stu-id="7d56d-119">If successful, this method returns `204, No Content` response code.</span></span>
 
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204, No Content`.
-
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+## <span data-ttu-id="7d56d-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7d56d-120">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="7d56d-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7d56d-121">Request</span></span>
+<a id="request" class="xliff"></a>
 
 <!-- {
   "blockType": "request",
@@ -38,8 +27,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. 
+##### <span data-ttu-id="7d56d-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d56d-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7d56d-123">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="7d56d-123">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

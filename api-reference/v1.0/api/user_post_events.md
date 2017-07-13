@@ -1,83 +1,4 @@
-# <a name="create-event"></a>Criar Evento
-
-Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.
-
-É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
-
-Ao criar o evento, o servidor envia convites para todos os participantes.
-
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events
-POST /users/{id | userPrincipalName}/events
-
-POST /me/calendar/events
-POST /users/{id | userPrincipalName}/calendar/events
-
-POST /me/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendars/{id}/events
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:-----------|:------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json. Obrigatório.  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-
-Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o evento ao criá-lo.
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar que as horas de **início** e **fim** na resposta devem usar esse fuso horário.
-<!-- {
-  "blockType": "request",
-  "name": "create_event_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/events
-Prefer: outlook.timezone="Pacific Standard Time"
-Content-type: application/json
-Content-length: 600
-
-{
-  "subject": "Let's go for lunch",
-  "body": {
-    "contentType": "HTML",
-    "content": "Does late morning work for you?"
-  },
-  "start": {
-      "dateTime": "2017-04-15T12:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "end": {
-      "dateTime": "2017-04-15T14:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "location":{
-      "displayName":"Harry's Bar"
-  },
-  "attendees": [
-    {
-      "emailAddress": {
-        "address":"fannyd@contoso.onmicrosoft.com",
-        "name": "Fanny Downs"
-      },
-      "type": "required"
-    }
-  ]
-}
-```
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-##### <a name="response"></a>Resposta
+<span data-ttu-id="23ff7-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="23ff7-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -159,10 +80,11 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a>Ver também
+## <span data-ttu-id="23ff7-131">Ver também</span><span class="sxs-lookup"><span data-stu-id="23ff7-131">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="23ff7-132">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="23ff7-132">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="23ff7-133">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="23ff7-133">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

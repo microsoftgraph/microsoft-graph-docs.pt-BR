@@ -1,26 +1,8 @@
-# <a name="plannergroup-resource-type"></a>Tipo de recurso plannerGroup
+<span data-ttu-id="ebf5f-p103">Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) que pertence ao grupo.</span><span class="sxs-lookup"><span data-stu-id="ebf5f-p103">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>| Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) que pertence ao grupo.|
 
-O recurso **plannerGroup** oferece acesso aos recursos do Planner para um [grupo](group.md). Ele não contém quaisquer propriedades utilizáveis.
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Listar planos](../api/plannergroup_list_plans.md) |Coleção [plannerPlan](plannerplan.md)| Obtenha uma coleção de objetos **plannerPlan**.|
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Somente leitura. O identificador do **plannerGroup**|
-
-### <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|plans|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) que pertence ao grupo.|
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="ebf5f-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ebf5f-128">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="ebf5f-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ebf5f-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

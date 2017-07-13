@@ -1,51 +1,4 @@
-# <a name="get-calendar"></a>Obter calendário
-
-Recupera as propriedades e os relacionamentos do objeto de calendário.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.Read*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
-```http
-GET /me/calendar
-GET /users/{id | userPrincipalName}/calendar
-GET /groups/{id}/calendar
-```
-Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.
-```http
-GET /me/calendars/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}
-
-GET /me/calendarGroup/calendars/{id}
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
-```
-Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.
-```http
-GET /me/calendarGroups/{id}/calendars/{id}
-GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
-```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "get_calendar"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/calendar
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="595ad-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="595ad-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -55,14 +8,21 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+    "id": "AAMkAGI2TGuLAAA=",
+    "name": "Calendar",
+    "color": "auto",
+    "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

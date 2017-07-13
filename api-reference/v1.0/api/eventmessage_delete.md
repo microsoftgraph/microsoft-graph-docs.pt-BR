@@ -1,32 +1,11 @@
-# <a name="delete-eventmessage"></a>Excluir eventMessage
-
-Exclui a eventMessage.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: _Mail.ReadWrite_ 
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /me/messages/{id}
-DELETE /users/{id | userPrincipalName}/messages/{id}
-
-DELETE /me/mailFolders/{id}/messages/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="fbd84-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fbd84-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="fbd84-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fbd84-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="fbd84-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fbd84-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="fbd84-121">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fbd84-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_eventmessage"
@@ -34,8 +13,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <span data-ttu-id="fbd84-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="fbd84-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="fbd84-123">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fbd84-123">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

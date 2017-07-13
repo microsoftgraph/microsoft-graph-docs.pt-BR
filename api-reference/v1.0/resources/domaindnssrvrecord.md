@@ -1,33 +1,14 @@
-# <a name="domaindnssrvrecord-resource-type"></a>Tipo de recurso domainDnsSrvRecord
+<span data-ttu-id="ea7a5-p105">O valor a ser usado ao configurar a propriedade *time-to-live (ttl)* do registro SRV no host DNS. Não anulável</span><span class="sxs-lookup"><span data-stu-id="ea7a5-p105">Value to use when configuring the *time-to-live (ttl)* property of the SRV record at the DNS host. Not nullable</span></span>| O valor a ser usado ao configurar a propriedade *time-to-live (ttl)* do registro SRV no host DNS. Não anulável |
+|<span data-ttu-id="ea7a5-149">weight</span><span class="sxs-lookup"><span data-stu-id="ea7a5-149">weight</span></span>|<span data-ttu-id="ea7a5-150">Int32</span><span class="sxs-lookup"><span data-stu-id="ea7a5-150">Int32</span></span>| <span data-ttu-id="ea7a5-151">O valor a ser usado ao configurar a propriedade *weight* do registro SRV no host DNS.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-151">Value to use when configuring the *weight* property of the SRV record at the DNS host.</span></span> |
 
-Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).
-
-### <a name="methods"></a>Métodos
-Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
-|isOptional|Booliano| Se for falso, o registro SRV deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar a propriedade *name* do registro SRV no host DNS. |
-|nameTarget|String| O valor a ser usado ao configurar a propriedade *Target* do registro SRV no host DNS. |
-|porta|Int32| O valor a ser usado ao configurar a propriedade *port* do registro SRV no host DNS. |
-|prioridade|Int32| O valor a ser usado ao configurar a propriedade *priority* do registro SRV no host DNS. |
-|protocolo|String| O valor a ser usado ao configurar a propriedade *protocol* do registro SRV no host DNS. |
-|recordType|String|  Tipo do registro DNS. Este valor sempre será *Srv*. Chave |
-|service|String| O valor a ser usado ao configurar a propriedade *service* do registro SRV no host DNS. |
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro SRV.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|ttl|Int32| O valor a ser usado ao configurar a propriedade *time-to-live (ttl)* do registro SRV no host DNS. Não anulável |
-|weight|Int32| O valor a ser usado ao configurar a propriedade *weight* do registro SRV no host DNS. |
-
-### <a name="relationships"></a>Relações
-Nenhum
+## <span data-ttu-id="ea7a5-152">Relações</span><span class="sxs-lookup"><span data-stu-id="ea7a5-152">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="ea7a5-153">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ea7a5-153">None</span></span>
 
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="ea7a5-154">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ea7a5-154">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="ea7a5-155">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ea7a5-155">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

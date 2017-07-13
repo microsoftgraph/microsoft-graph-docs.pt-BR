@@ -1,48 +1,4 @@
-# <a name="update-contactfolder"></a>Atualizar contactfolder
-
-Atualiza as propriedades do objeto contactfolder.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Contacts.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /me/contactFolders/{id}
-PATCH /users/{id | userPrincipalName}/contactFolders/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json. Obrigatório.  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
-
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
-|parentFolderId|String|A ID da pasta pai da pasta.|
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [contactFolder](../resources/contactfolder.md) atualizado no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "update_contactfolder"
-}-->
-```http
-PATCH https://graph.microsoft.com/v1.0/me/contactFolders/{id}
-Content-type: application/json
-Content-length: 84
-
-{
-  "parentFolderId": "parentFolderId-value",
-  "displayName": "displayName-value"
-}
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="186db-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="186db-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

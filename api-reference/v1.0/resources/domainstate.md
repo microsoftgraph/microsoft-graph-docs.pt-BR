@@ -1,18 +1,9 @@
-# <a name="domainstate-resource-type"></a>Tipo de recurso domainState
+<span data-ttu-id="0ec84-p102">Tipo de operação assíncrona. Os valores podem ser *ForceDelete* ou *Verification*</span><span class="sxs-lookup"><span data-stu-id="0ec84-p102">Type of asynchronous operation. The values can be *ForceDelete* or *Verification*</span></span> | Tipo de operação assíncrona. Os valores podem ser *ForceDelete* ou *Verification* |
+| <span data-ttu-id="0ec84-115">status</span><span class="sxs-lookup"><span data-stu-id="0ec84-115">status</span></span> | <span data-ttu-id="0ec84-116">String</span><span class="sxs-lookup"><span data-stu-id="0ec84-116">String</span></span> | <span data-ttu-id="0ec84-117">Status atual da operação.</span><span class="sxs-lookup"><span data-stu-id="0ec84-117">Current status of the operation.</span></span> <br> <span data-ttu-id="0ec84-118">*Scheduled* – A operação foi agendada, mas não foi iniciada.</span><span class="sxs-lookup"><span data-stu-id="0ec84-118">*Scheduled* - Operation has been scheduled but has not started.</span></span> <br> <span data-ttu-id="0ec84-119">*InProgress* – A tarefa foi iniciada e está em andamento.</span><span class="sxs-lookup"><span data-stu-id="0ec84-119">*InProgress* - Task has started and is in progress.</span></span> <br> <span data-ttu-id="0ec84-120">*Failed* - A operação falhou.</span><span class="sxs-lookup"><span data-stu-id="0ec84-120">*Failed* - Operation has failed.</span></span> |
 
-Representa o status das operações assíncronas agendadas em um domínio.
-
-### <a name="properties"></a>Propriedades
-
-| Propriedade   | Tipo | Descrição |
-|:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | O carimbo de data/hora de quando a última atividade ocorreu. O valor é atualizado quando uma operação é agendada, a tarefa assíncrona começa e quando a operação é concluída. |
-| operação | String | Tipo de operação assíncrona. Os valores podem ser *ForceDelete* ou *Verification* |
-| status | String | Status atual da operação. <br> *Scheduled* – A operação foi agendada, mas não foi iniciada. <br> *InProgress* – A tarefa foi iniciada e está em andamento. <br> *Failed* - A operação falhou. |
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="0ec84-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0ec84-121">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="0ec84-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0ec84-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,29 +1,17 @@
-# <a name="list-manager"></a>Listar gerente
+<span data-ttu-id="63b73-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="63b73-p102">Bearer token. Required.</span></span>  | {token} de portador. Obrigatório.  |
+| <span data-ttu-id="63b73-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="63b73-115">Content-Type</span></span>   | <span data-ttu-id="63b73-116">application/json</span><span class="sxs-lookup"><span data-stu-id="63b73-116">application/json</span></span>  | 
 
-Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | userPrincipalName}/manager
-```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor|
-|:-----------|:------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type   | application/json  | 
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="63b73-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="63b73-117">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="63b73-118">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="63b73-118">Do not supply a request body for this method.</span></span>
+## <span data-ttu-id="63b73-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="63b73-119">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="63b73-120">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="63b73-120">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <span data-ttu-id="63b73-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="63b73-121">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="63b73-122">Solicitação</span><span class="sxs-lookup"><span data-stu-id="63b73-122">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="63b73-123">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="63b73-123">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_manager"
@@ -31,8 +19,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="63b73-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="63b73-124">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="63b73-125">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="63b73-125">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

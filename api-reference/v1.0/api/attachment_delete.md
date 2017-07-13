@@ -1,73 +1,11 @@
-# <a name="delete-attachment"></a>Excluir anexo
-
-Exclua um anexo de um evento de calendário, email ou postagem de grupo.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
-
-* Se estiver acessando anexos em Mensagens: *Mail.ReadWrite*
-* Se estiver acessando anexos em Eventos: *Calendars.ReadWrite*
-* Se estiver acessando anexos em Eventos de grupo ou Postagens: *Group.ReadWrite.All*
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário ou grupo.
-```http
-DELETE /me/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-DELETE /groups/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
-```
-Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.
-```http
-DELETE /me/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-DELETE /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
-```
-Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
-```http
-DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
-```
-Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
-```http
-DELETE /me/messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
-```
-Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário.
-```http
-DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
-```
-Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.
-```http
-DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
-```
-Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
-```http
-DELETE /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
-DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="75899-p103">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75899-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja um exemplo da solicitação para excluir um anexo em um evento.
+## <span data-ttu-id="75899-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="75899-130">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="75899-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="75899-131">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="75899-132">Veja um exemplo da solicitação para excluir um anexo em um evento.</span><span class="sxs-lookup"><span data-stu-id="75899-132">Here is an example of the request to delete an attachment on an event.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_attachment"
@@ -75,8 +13,9 @@ Veja um exemplo da solicitação para excluir um anexo em um evento.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="75899-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="75899-133">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="75899-134">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75899-134">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

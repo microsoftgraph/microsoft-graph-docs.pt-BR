@@ -1,45 +1,9 @@
-<a id="plannerplan-resource-type" class="xliff"></a>
+<span data-ttu-id="f5b5b-p109">Somente leitura. Anulável. A coleção de tarefas no plano.</span><span class="sxs-lookup"><span data-stu-id="f5b5b-p109">Read-only. Nullable. Collection of tasks in the plan.</span></span>| Somente leitura. Anulável. A coleção de tarefas no plano.|
 
-# Tipo de recurso plannerPlan
-
-O recurso **plannerPlan** representa um plano no Office 365. Um plano pode pertencer a um [grupo](group.md) e conter uma coleção de [plannerTasks](plannerTask.md). Ele também pode ter uma coleção de [plannerBuckets](plannerBucket.md). Cada objeto de plano tem um objeto [details](plannerPlanDetails.md) que pode conter mais informações sobre o plano. Para saber mais sobre as relações entre grupos, planos e tarefas, confira o [Planner](planner_overview.md).
-
-<a id="methods" class="xliff"></a>
-
-## Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Leia as propriedades e as relações do objeto **plannerPlan**.|
-|[Listar buckets](../api/plannerplan_list_buckets.md) |Coleção [plannerBucket](plannerbucket.md)| Obter uma coleção de objetos **plannerBucket**.|
-|[Listar tarefas](../api/plannerplan_list_tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
-|[Atualizar](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Atualize o objeto **plannerPlan**. |
-
-<a id="properties" class="xliff"></a>
-
-## Propriedades
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String| Somente leitura. A ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|owner|String|A ID do [Grupo](group.md) que possui o plano. Deve haver um grupo válido para que esse campo possa ser definido. Após definido, ele só poderá ser atualizado pelo proprietário.|
-|title|String|Obrigatório. Título do plano.|
-|createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
-
-<a id="relationships" class="xliff"></a>
-
-## Relações
-| Relação | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|buckets|Coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. A coleção de buckets no plano.|
-|detalhes|[plannerPlanDetails](plannerplandetails.md)| Somente leitura. Anulável. Outros detalhes sobre o plano.|
-|tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. A coleção de tarefas no plano.|
-
+## <span data-ttu-id="f5b5b-171">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f5b5b-171">JSON representation</span></span>
 <a id="json-representation" class="xliff"></a>
 
-## Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+<span data-ttu-id="f5b5b-172">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f5b5b-172">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

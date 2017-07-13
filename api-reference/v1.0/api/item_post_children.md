@@ -1,13 +1,19 @@
-# <a name="create-a-new-folder"></a>Criar uma nova pasta
+# <span data-ttu-id="7dcc4-101">Criar uma nova pasta</span><span class="sxs-lookup"><span data-stu-id="7dcc4-101">Create a new folder</span></span>
+<a id="create-a-new-folder" class="xliff"></a>
 
-Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.
+<span data-ttu-id="7dcc4-102">Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.</span><span class="sxs-lookup"><span data-stu-id="7dcc4-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <span data-ttu-id="7dcc4-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7dcc4-103">Prerequisites</span></span>
+<a id="prerequisites" class="xliff"></a>
+<span data-ttu-id="7dcc4-104">Um dos seguintes **escopos** é obrigatório para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="7dcc4-104">One of the following **scopes** is required to execute this API:</span></span>
 
-  * Files.ReadWrite
+* <span data-ttu-id="7dcc4-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7dcc4-105">Files.ReadWrite</span></span>
+* <span data-ttu-id="7dcc4-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7dcc4-106">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="7dcc4-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7dcc4-107">Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a>Solicitação HTTP
+
+## <span data-ttu-id="7dcc4-108">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7dcc4-108">HTTP request</span></span>
+<a id="http-request" class="xliff"></a>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -16,17 +22,21 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.
+## <span data-ttu-id="7dcc4-109">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7dcc4-109">Request body</span></span>
+<a id="request-body" class="xliff"></a>
+<span data-ttu-id="7dcc4-110">No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.</span><span class="sxs-lookup"><span data-stu-id="7dcc4-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
 
-## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.
+## <span data-ttu-id="7dcc4-111">Resposta</span><span class="sxs-lookup"><span data-stu-id="7dcc4-111">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7dcc4-112">Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7dcc4-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a>Exemplo
+## <span data-ttu-id="7dcc4-113">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7dcc4-113">Example</span></span>
+<a id="example" class="xliff"></a>
 
-##### <a name="request"></a>Solicitação
-Eis um exemplo de solicitação para criar uma nova pasta na raiz do OneDrive do usuário.
+##### <span data-ttu-id="7dcc4-114">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7dcc4-114">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="7dcc4-115">Eis um exemplo de solicitação para criar uma nova pasta na raiz do OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="7dcc4-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -42,9 +52,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Resposta
+##### <span data-ttu-id="7dcc4-116">Resposta</span><span class="sxs-lookup"><span data-stu-id="7dcc4-116">Response</span></span>
+<a id="response" class="xliff"></a>
 
-Veja a seguir um exemplo da resposta.
+<span data-ttu-id="7dcc4-117">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7dcc4-117">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

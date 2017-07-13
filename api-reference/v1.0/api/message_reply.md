@@ -1,37 +1,12 @@
-# <a name="message-reply"></a>message: reply
-
-Responda ao remetente de uma mensagem A mensagem é salva na pasta Itens Enviados.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.Send*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages/{id}/reply
-POST /users/{id | userPrincipalName}/messages/{id}/reply
-POST /me/mailFolders/{id}/messages/{id}/reply
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="b0ee1-p105">Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b0ee1-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="b0ee1-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b0ee1-131">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="b0ee1-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="b0ee1-132">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="b0ee1-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b0ee1-133">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b0ee1-134">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b0ee1-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_reply"
@@ -46,9 +21,11 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a>Resposta
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="b0ee1-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="b0ee1-135">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="b0ee1-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="b0ee1-136">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b0ee1-137">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b0ee1-137">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

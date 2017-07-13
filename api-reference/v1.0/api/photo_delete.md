@@ -1,36 +1,11 @@
-# <a name="delete-photo"></a>Excluir foto
-
-Exclua uma foto.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
-
-  * File.ReadWrite
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}/photo
-DELETE /groups/{id}/photo
-DELETE /drive/root/createdByUser/photo
-
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| if-match  | cadeia de caracteres  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="b1844-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1844-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="b1844-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b1844-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="b1844-124">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b1844-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b1844-125">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b1844-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
 "name": "delete_photo"
@@ -38,8 +13,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="b1844-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1844-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b1844-127">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1844-127">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

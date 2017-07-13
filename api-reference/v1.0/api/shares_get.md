@@ -1,80 +1,21 @@
-# <a name="accessing-shared-driveitems"></a>Acessando DriveItems compartilhados
-
-Acesse um [DriveItem](../resources/driveitem.md) compartilhado ou uma coleção de itens compartilhados usando um **shareId** ou uma URL de compartilhamento.
-
-Para usar uma URL de compartilhamento com esta API, seu aplicativo precisa [transformar a URL em um token de compartilhamento](#transform-a-sharing-url).
-
-## <a name="prerequisites"></a>Pré-requisitos
-
-Um dos seguintes **escopos** é obrigatório para executar esta API:
-
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitação HTTP
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /shares/{sharingIdOrUrl}
-```
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [sharedDriveItem](../resources/shareddriveitem.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-
-##### <a name="request"></a>Solicitação
-
-Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:
-
-<!-- {
-  "blockType": "request",
-  "name": "get_shares_by_url"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
-```
-##### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.sharedDriveItem"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "B64397C8-07AE-43E4-920E-32BFB4331A5B",
-  "name": "contoso project.docx",
-  "owner": {
-    "user": {
-      "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
-      "displayName": "Ryan Gregg"
-    }
-  }
-}
-```
-
-## <a name="access-the-shared-item-directly"></a>Acessar diretamente o item compartilhado
+<span data-ttu-id="05af4-p101">Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="05af4-p101">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
 Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.
 
-### <a name="example-single-file"></a>Exemplo (arquivo único)
+### <span data-ttu-id="05af4-122">Exemplo (arquivo único)</span><span class="sxs-lookup"><span data-stu-id="05af4-122">Example (single file)</span></span>
+<a id="example-single-file" class="xliff"></a>
 
-##### <a name="request"></a>Solicitação
+##### <span data-ttu-id="05af4-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="05af4-123">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Solicitando a relação **root**, o **DriveItem** que foi compartilhado será retornado.
+<span data-ttu-id="05af4-124">Solicitando a relação **root**, o **DriveItem** que foi compartilhado será retornado.</span><span class="sxs-lookup"><span data-stu-id="05af4-124">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a>Resposta
+##### <span data-ttu-id="05af4-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="05af4-125">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -89,17 +30,20 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>Exemplo (pasta compartilhada)
+### <span data-ttu-id="05af4-126">Exemplo (pasta compartilhada)</span><span class="sxs-lookup"><span data-stu-id="05af4-126">Example (shared folder)</span></span>
+<a id="example-shared-folder" class="xliff"></a>
 
-##### <a name="request"></a>Solicitação
+##### <span data-ttu-id="05af4-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="05af4-127">Request</span></span>
+<a id="request" class="xliff"></a>
 
-Solicitando a relação **root** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.
+<span data-ttu-id="05af4-128">Solicitando a relação **root** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.</span><span class="sxs-lookup"><span data-stu-id="05af4-128">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a>Resposta
+##### <span data-ttu-id="05af4-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="05af4-129">Response</span></span>
+<a id="response" class="xliff"></a>
 
 ```http
 HTTP/1.1 200 OK
@@ -128,19 +72,20 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a>Transformar uma URL de compartilhamento
+## <span data-ttu-id="05af4-130">Transformar uma URL de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="05af4-130">Transform a sharing URL</span></span>
+<a id="transform-a-sharing-url" class="xliff"></a>
 
-Para acessar uma URL compartilhamento usando a API **shares**, a URL deve ser transformada em um token de compartilhamento.
+<span data-ttu-id="05af4-131">Para acessar uma URL compartilhamento usando a API **shares**, a URL deve ser transformada em um token de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="05af4-131">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-Transformar uma URL em um token de compartilhamento:
+<span data-ttu-id="05af4-132">Transformar uma URL em um token de compartilhamento:</span><span class="sxs-lookup"><span data-stu-id="05af4-132">To transform a URL into a sharing token:</span></span>
 
-1. Codifique na Base 64 a URL de compartilhamento.
-2. Converta os dados codificados na Base 64 para o [formato base64url sem preenchimento](https://en.wikipedia.org/wiki/Base64) da seguinte forma:
-  1. Cortar `=` caracteres à direita da cadeia de caracteres
-  2. Substitua caracteres não seguros da URL por um caractere equivalente; substitua `/` por `_` e `+` por `-`.
-3. Acrescente `u!` ao início da cadeia de caracteres.
+1. <span data-ttu-id="05af4-133">Codifique na Base 64 a URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="05af4-133">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="05af4-134">Converta os dados codificados na Base 64 para o [formato base64url sem preenchimento](https://en.wikipedia.org/wiki/Base64) da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="05af4-134">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="05af4-135">Cortar `=` caracteres à direita da cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="05af4-135">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="05af4-136">Substitua caracteres não seguros da URL por um caractere equivalente; substitua `/` por `_` e `+` por `-`.</span><span class="sxs-lookup"><span data-stu-id="05af4-136">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="05af4-137">Acrescente `u!` ao início da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="05af4-137">Append `u!` to the beginning of the string.</span></span>
 
-Por exemplo, o seguinte método cC transforma uma cadeia de entrada em um token de compartilhamento:
+<span data-ttu-id="05af4-138">Por exemplo, o seguinte método cC transforma uma cadeia de entrada em um token de compartilhamento:</span><span class="sxs-lookup"><span data-stu-id="05af4-138">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

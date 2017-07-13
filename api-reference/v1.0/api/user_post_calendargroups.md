@@ -1,45 +1,4 @@
-# <a name="create-calendargroup"></a>Atualizar CalendarGroup
-
-Use essa API para criar um novo CalendarGroup.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id | userPrincipalName}/calendarGroups
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [CalendarGroup](../resources/calendargroup.md).
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "create_calendargroup_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/calendarGroups
-Content-type: application/json
-Content-length: 90
-
-{
-  "name": "name-value",
-  "classId": "classId-value",
-  "changeKey": "changeKey-value"
-}
-```
-No corpo da solicitação, forneça uma representação JSON do objeto [calendarGroup](../resources/calendargroup.md).
-##### <a name="response"></a>Resposta
+<span data-ttu-id="a27d8-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a27d8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

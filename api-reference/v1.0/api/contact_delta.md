@@ -1,67 +1,4 @@
-# <a name="contact-delta"></a>entre em contato com: delta
-
-Obtenha um conjunto de contatos que foram adicionados, excluídos ou atualizados em uma pasta especificada.
-
-Uma chamada de função **delta** de contatos em uma pasta é semelhante a uma solicitação GET, exceto que, aplicando adequadamente os [tokens de estado](../../../concepts/delta_query_overview.md) em uma ou mais dessas chamadas, permite consultar alterações incrementais nos contatos dessa pasta. Isso permite manter e sincronizar um armazenamento local de contatos do usuário sem ter de buscar todo o conjunto de contatos do usuário sempre que precisar dele.  
-
-### <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: _Contacts.Read_; _Contacts.ReadWrite_
-### <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
-```
-
-### <a name="query-parameters"></a>Parâmetros de consulta
-
-O controle de alterações em contatos corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, basta copiar e aplicar a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
-
-| Parâmetro de consulta      | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de contatos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
-| $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de contatos. |
-
-
-#### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
-
-- Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
-
-
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição |
-|:---------------|:----------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | string  | odata.maxpagesize={x}. Opcional. |
-
-
-### <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [contact](../resources/contact.md) no corpo da resposta.
-
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra como fazer uma única chamada de função **delta**, use o parâmetro `$select` para obter apenas a propriedade **displayName** de cada contato e limite o número máximo de contatos no corpo de resposta a 2.
-
-Para controlar as alterações nos contatos em uma pastas, faça uma ou mais chamadas de função **delta**, com os tokens de estado apropriados, para obter o conjunto de alterações incrementais desde a última consulta delta. 
-
-Você pode encontrar um exemplo semelhante que mostra como usar os tokens de estado para controlar alterações em mensagens de uma pasta de email: [Obtenha alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md). As principais diferenças entre o controle de contatos e de mensagens em uma pasta encontram-se nas URLs das solicitações da consulta delta e nas respostas da consulta que retornam **contact** em vez de coleções de **mensagens**.
- 
-<!-- {
-  "blockType": "request",
-  "name": "contact_delta"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
-Prefer: odata.maxpagesize=2
-```
-
-##### <a name="response"></a>Resposta
-Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que é um _skipToken_  
-(em um cabeçalho de resposta _@odata.nextLink_) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.
-
-A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
+<span data-ttu-id="34570-p110">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="34570-p110">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -90,10 +27,11 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Ver também
+### <span data-ttu-id="34570-158">Ver também</span><span class="sxs-lookup"><span data-stu-id="34570-158">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
-- [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)
+- [<span data-ttu-id="34570-159">Usar a consulta delta para controlar alterações nos dados do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="34570-159">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="34570-160">Obter as alterações incrementais para as mensagens em uma pasta</span><span class="sxs-lookup"><span data-stu-id="34570-160">Get incremental changes to messages in a folder</span></span>](../../../concepts/delta_query_messages.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

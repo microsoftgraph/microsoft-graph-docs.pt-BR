@@ -1,26 +1,13 @@
-# <a name="update-subscription"></a>Atualizar assinatura
+<span data-ttu-id="b735d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b735d-p102">Bearer token. Required.</span></span>  | {token} de portador. Obrigatório. |
 
-Renove uma assinatura ampliando seu tempo de validade.
-
-As assinaturas a recursos expiram nas datas prescritas pelos tipos de recursos individuais.  Para não perder as notificações, as assinaturas devem ser renovadas bem antes de sua data de vencimento.  Consulte [subscription](../resources/subscription.md) para saber mais sobre datas de vencimento individuais.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **scopes**, dependendo do recurso de destino, é necessário para executar essa API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* ou *Files.ReadWrite.All*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /subscriptions/{subscriptionId}
-```
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="b735d-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="b735d-117">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b735d-118">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b735d-118">If successful, this method returns a `200 OK` response code and [subscription](../resources/subscription.md) object in the response body.</span></span>
+## <span data-ttu-id="b735d-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b735d-119">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="b735d-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b735d-120">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="b735d-121">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b735d-121">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
@@ -34,8 +21,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="b735d-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="b735d-122">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="b735d-123">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b735d-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

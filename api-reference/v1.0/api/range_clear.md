@@ -1,39 +1,12 @@
-# <a name="range-clear"></a>Range: clear
-
-Limpe valores de intervalo, formatação, preenchimento, bordas, etc.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /workbook/names(<name>)/range/clear
-GET /workbook/worksheets/{id|name}/range(<address>)/clear
-GET /workbook/tables/{id|name}/columns/{id|name}/range/clear
-
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-
-
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|applyTo|string|Opcional. Determina o tipo de ação de limpeza.  Os valores possíveis são: `All`, `Formats` e `Contents`.|
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="223a5-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="223a5-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="223a5-126">Exemplo</span><span class="sxs-lookup"><span data-stu-id="223a5-126">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="223a5-127">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="223a5-127">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="223a5-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="223a5-128">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="223a5-129">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="223a5-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_clear"
@@ -48,8 +21,9 @@ Content-length: 32
 }
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <span data-ttu-id="223a5-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="223a5-130">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="223a5-131">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="223a5-131">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

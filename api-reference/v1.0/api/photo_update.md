@@ -1,33 +1,17 @@
-# <a name="update-photo"></a>Atualizar foto
-
-Atualize as propriedades do objeto de foto.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /users/{id | userPrincipalName}/photo
-PATCH /groups/{id}/photo
-PATCH /drive/root/createdByUser/photo
-```
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
-
-## <a name="request-body"></a>Corpo da solicitação
+<span data-ttu-id="7d0e9-p102">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="7d0e9-p102">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   |Descrição|
+| <span data-ttu-id="7d0e9-118">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7d0e9-118">Property</span></span>     | <span data-ttu-id="7d0e9-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="7d0e9-119">Type</span></span>   |<span data-ttu-id="7d0e9-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d0e9-120">Description</span></span>|
 |:---------------|:--------|:----------|
 
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [photo](../resources/photo.md) atualizado no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="7d0e9-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d0e9-121">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7d0e9-122">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [photo](../resources/photo.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d0e9-122">If successful, this method returns a `200 OK` response code and updated [photo](../resources/photo.md) object in the response body.</span></span>
+## <span data-ttu-id="7d0e9-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7d0e9-123">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="7d0e9-124">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7d0e9-124">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="7d0e9-125">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7d0e9-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_photo"
@@ -43,8 +27,9 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="7d0e9-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d0e9-126">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="7d0e9-127">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d0e9-127">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -1,29 +1,8 @@
-# <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
+<span data-ttu-id="769b6-p104">Somente leitura. Anulável. Returna o objeto [plannerTasks](plannerplan.md) atribuído ao usuário.</span><span class="sxs-lookup"><span data-stu-id="769b6-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) shared with the user.</span></span>| Somente leitura. Anulável. Returna o objeto [plannerTasks](plannerplan.md) atribuído ao usuário.|
 
-O recurso **plannerUser** oferece acesso aos recursos do Planner para um [usuário](user.md). Ele não contém quaisquer propriedades utilizáveis.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Listar planos](../api/planneruser_list_plans.md) |Coleção [plannerPlan](plannerplan.md)| Obtenha uma coleção de objetos **plannerPlan**.|
-|[Listar tarefas](../api/planneruser_list_tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Somente leitura. O identificador do plannerUser|
-
-### <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|plans|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Returna o [plannerTasks](plannertask.md) atribuídos ao usuário.|
-|tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Returna o objeto [plannerTasks](plannerplan.md) atribuído ao usuário.|
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="769b6-136">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="769b6-136">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="769b6-137">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="769b6-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

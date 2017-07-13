@@ -1,68 +1,4 @@
-# <a name="event-delta"></a>evento: delta
-
-Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.
-
-A chamada de função **delta** para eventos é semelhante a uma solicitação `GET /calendarview` por um intervalo de dados no calendário principal do usuário, exceto ao aplicar [tokens de estado](../../../concepts/delta_query_overview.md) de forma apropriada em uma ou mais dessas chamadas, você pode consultar alterações incrementais no modo de exibição de calendário. Isso permite manter e sincronizar um armazenamento local de eventos do usuário no calendário principal, sem precisar buscar todos os eventos do calendário do servidor de cada vez.
-
-### <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: _Calendars.Read_; _Calendars.ReadWrite_ 
-
-### <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-GET /users/<id>/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
-
-```
-
-### <a name="query-parameters"></a>Parâmetros de consulta
-
-O controle de alterações em eventos corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, basta copiar e aplicar a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
-
-
-| Parâmetro de consulta      | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|startDateTime|String|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
-|endDateTime|String|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
-| $deltatoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior do mesmo modo de exibição de calendário, indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle do modo de exibição de calendário.|
-| $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas no mesmo modo de exibição de calendário. |
-
-Quando você faz uma consulta delta em um modo de exibição de calendário, espera obter todas as propriedades que obteria normalmente de uma solicitação `GET /calendarview`. O `$select` não é compatível nesse caso. 
-
-
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição |
-|:---------------|:----------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | string  | odata.maxpagesize={x}. Opcional. |
-| Preferir | string | {Fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
-
-
-### <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
-
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-
-O exemplo a seguir mostra como fazer uma única chamada de função **delta** e limitar o número máximo de eventos no corpo da resposta a 2.
-
-Para controlar as alterações em um modo de exibição de calendário, você faz uma ou mais chamadas de função **delta**, com os [tokens de estado](../../../concepts/delta_query_overview.md) apropriados, para obter o conjunto de alterações incrementais desde a última consulta delta. 
-
-<!-- {
-  "blockType": "request",
-  "name": "event_delta"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/calendarview/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
-
-Prefer: odata.maxpagesize=2
-```
-
-##### <a name="response"></a>Resposta
-Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, que é um _skipToken_ (em um cabeçalho de resposta _@odata.nextLink_) ou um _deltaToken_ (em um cabeçalho de resposta _@odata.deltaLink_). Respectivamente, elas indicam se você deverá continuar com a série ou se já concluiu a obtenção de todas as alterações dessa série.
-
-A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
+<span data-ttu-id="8b24d-p112">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8b24d-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -94,10 +30,11 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Ver também
+### <span data-ttu-id="8b24d-166">Ver também</span><span class="sxs-lookup"><span data-stu-id="8b24d-166">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
-- [Obter as alterações incrementais para os eventos em um calendário](../../../concepts/delta_query_events.md)
+- [<span data-ttu-id="8b24d-167">Usar a consulta delta para controlar alterações nos dados do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8b24d-167">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="8b24d-168">Obter as alterações incrementais para os eventos em um calendário</span><span class="sxs-lookup"><span data-stu-id="8b24d-168">Get incremental changes to events in a calendar</span></span>](../../../concepts/delta_query_events.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

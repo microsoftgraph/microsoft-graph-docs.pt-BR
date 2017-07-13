@@ -1,58 +1,12 @@
-# <a name="list-permissions-on-a-driveitem"></a>Listar permissões em um DriveItem
-
-Listar as permissões efetivas de um [DriveItem](../resources/driveitem.md).
-
-A relação **permissions** de um DriveItem não pode ser expandida como parte de uma chamada para [get DriveItem](item_get.md) ou uma coleção de DriveItems. Você deve acessar a propriedade permissions diretamente.
-
-## <a name="access-to-permissions"></a>Acesso a Permissões
-
-A coleção de permissões inclui informações potencialmente confidenciais e pode não estar disponível para todos os chamadores.
-
-* Para o proprietário do item, todas as permissões serão retornadas. Isto inclui os coproprietários.
-* Para um chamador não proprietário, somente as permissões que se aplicam ao chamador são retornadas.
-* Propriedades de permissão que contêm segredos (por exemplo, `shareId` e `webUrl`) são retornadas somente para chamadores que são capazes de criar a permissão.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
-
-  * Files.Read
-  * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/drive/items/{item-id}/permissions
-GET /me/drive/root:/{path}:/permissions
-GET /drives/{drive-id}/items/{item-id}/permissions
-GET /groups/{group-id}/drive/items/{item-id}/permissions
-```
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-
-| Nome          | Tipo   | Descrição                                                                                                                                     |
-|:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida. |
-
-
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método é compatível com [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-## <a name="response"></a>Resposta
-Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de recursos [Permission](../resources/permission.md) no corpo da resposta.
-
-As permissões efetivas de um item podem se originar de duas fontes:
-
-* Permissões aplicadas diretamente ao próprio item
-* Permissões herdadas de ancestrais do item
+<span data-ttu-id="e4c5b-p103">Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.</span><span class="sxs-lookup"><span data-stu-id="e4c5b-p103">Callers can differentiate if the permission is inherited or not by checking the **inheritedFrom** property. This property is an [**itemReference**](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.</span></span>
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="e4c5b-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e4c5b-138">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="e4c5b-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e4c5b-139">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="e4c5b-140">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e4c5b-140">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_permissions"
@@ -62,8 +16,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions
 ```
 
 
-##### <a name="response"></a>Resposta
-Este é um exemplo da resposta.
+##### <span data-ttu-id="e4c5b-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="e4c5b-141">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="e4c5b-142">Este é um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e4c5b-142">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,7 +69,7 @@ Content-Type: application/json
 }
 ```
 
-Veja [Obter permissão](permission_get.md) para obter mais detalhes sobre como recuperar um recurso de permissão única.
+<span data-ttu-id="e4c5b-143">Veja [Obter permissão](permission_get.md) para obter mais detalhes sobre como recuperar um recurso de permissão única.</span><span class="sxs-lookup"><span data-stu-id="e4c5b-143">See [Get permission](permission_get.md) for more details on retrieving a single permission resource.</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,39 +1,4 @@
-# <a name="get-schemaextension"></a>Obter schemaExtension
-Obtenha as propriedades da definição [schemaExtension](../resources/schemaextension.md) especificada.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.Read.All* ou *Directory.AccessAsUser.All*
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /schemaExtensions/{id}
-```
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-| Content-Type   | application/json | 
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "get_schemaextension"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="ae92d-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ae92d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -62,10 +27,11 @@ Content-length: 201
 }
 ```
 
-## <a name="see-also"></a>Ver também
+## <span data-ttu-id="ae92d-127">Ver também</span><span class="sxs-lookup"><span data-stu-id="ae92d-127">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="ae92d-128">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="ae92d-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="ae92d-129">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="ae92d-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

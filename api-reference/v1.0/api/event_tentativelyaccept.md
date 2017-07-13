@@ -1,50 +1,12 @@
-# <a name="event-tentativelyaccept"></a>event: tentativelyAccept
-
-Aceita provisoriamente o evento especificado.
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/events/{id}/tentativelyAccept
-POST /groups/{id}/events/{id}/tentativelyAccept
-
-POST /me/calendar/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
-POST /groups/{id}/calendar/events/{id}/tentativelyAccept
-
-POST /me/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
-
-POST /me/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
-
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|comment|String|Texto incluído na resposta. Opcional.|
-|sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="80829-p105">Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80829-p105">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="80829-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="80829-135">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="80829-136">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="80829-136">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="80829-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="80829-137">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="80829-138">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="80829-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_tentativelyaccept"
@@ -60,9 +22,11 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Resposta
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="80829-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="80829-139">Response</span></span>
+<a id="response" class="xliff"></a>
+##### <span data-ttu-id="80829-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="80829-140">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="80829-141">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="80829-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

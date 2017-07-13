@@ -1,62 +1,11 @@
-# <a name="delete-open-extension"></a>Excluir extensão aberta
-
-Exclua uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) da instância especificada de um recurso. 
-
-## <a name="prerequisites"></a>Pré-requisitos
-
-Um dos seguintes valores de **permissões** é necessário para executar essa API, dependendo do recurso do qual você está excluindo a extensão:
-
-|**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
-|:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensagem](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
- 
-## <a name="http-request"></a>Solicitação HTTP
-Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `DELETE` nessa instância de extensão.
-
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-```
-
->**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso para excluir uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à exclusão de extensões abertas delas de maneira semelhante.
-
-## <a name="parameters"></a>Parâmetros
-|**Parâmetro**|**Tipo**|**Descrição**|
-|:-----|:-----|:-----|
-|_Parâmetros de URL_|
-|id|string|Um identificador exclusivo para uma instância na coleção correspondente. Obrigatório.|
-|extensionId|string|Pode ser um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
-
-
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Valor |
-|:---------------|:----------|
-| Autorização | {token} de portador. Obrigatório. |
-
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="ae536-p105">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ae536-p105">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-O primeiro exemplo referencia uma extensão por seu nome e exclui a extensão da mensagem especificada.
+## <span data-ttu-id="ae536-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ae536-156">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="ae536-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ae536-157">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ae536-158">O primeiro exemplo referencia uma extensão por seu nome e exclui a extensão da mensagem especificada.</span><span class="sxs-lookup"><span data-stu-id="ae536-158">The first example references an extension by its name and deletes the extension in the specified message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_opentypeextension"
@@ -65,7 +14,7 @@ O primeiro exemplo referencia uma extensão por seu nome e exclui a extensão da
 DELETE https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
 ```
 
-O segundo exemplo exclui uma extensão no evento de grupo especificado.
+<span data-ttu-id="ae536-159">O segundo exemplo exclui uma extensão no evento de grupo especificado.</span><span class="sxs-lookup"><span data-stu-id="ae536-159">The second example deletes an extension in the specified group event.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -74,8 +23,9 @@ DELETE https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953c
 
  
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <span data-ttu-id="ae536-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="ae536-160">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ae536-161">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ae536-161">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

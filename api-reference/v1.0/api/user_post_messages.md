@@ -1,60 +1,4 @@
-# <a name="create-message"></a>Criar mensagem
-
-Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
-
-Ao criar o rascunho na mesma chamada de **POST**, você pode incluir um [anexo](../resources/attachment.md).
-
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/messages
-POST /users/{id|userPrincipalName}/messages
-POST /me/mailFolders/{id}/messages
-POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
-
-## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
-
-Como o recurso **message** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.
-
-
-## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [message](../resources/message.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
-Veja a seguir um exemplo da solicitação.
-<!-- {
-  "blockType": "request",
-  "name": "create_message_from_user"
-}-->
-```http
-POST https://graph.microsoft.com/v1.0/me/messages
-Content-type: application/json
-Content-length: 248
-
-{
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
-  "hasAttachments": true,
-  "subject": "subject-value",
-  "body": {
-    "contentType": "",
-    "content": "content-value"
-  },
-  "bodyPreview": "bodyPreview-value"
-}
-```
-No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
-##### <a name="response-1"></a>Resposta 1
+<span data-ttu-id="8f11a-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8f11a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -79,10 +23,11 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Ver também
+## <span data-ttu-id="8f11a-130">Ver também</span><span class="sxs-lookup"><span data-stu-id="8f11a-130">See also</span></span>
+<a id="see-also" class="xliff"></a>
 
-- [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="8f11a-131">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="8f11a-131">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="8f11a-132">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="8f11a-132">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

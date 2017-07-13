@@ -1,40 +1,12 @@
-# <a name="tablesort-apply"></a>TableSort: apply
-
-Execute uma operação de classificação.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: 
-
-    * Files.ReadWrite
-
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /workbook/tables/{id|name}/sort/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
-
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-
-
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|campos|SortField|A lista de condições para a classificação.|
-|matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
-|method|cadeia de caracteres|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.|
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="ed36a-p104">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ed36a-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+## <span data-ttu-id="ed36a-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ed36a-133">Example</span></span>
+<a id="example" class="xliff"></a>
+<span data-ttu-id="ed36a-134">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="ed36a-134">Here is an example of how to call this API.</span></span>
+##### <span data-ttu-id="ed36a-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ed36a-135">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="ed36a-136">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ed36a-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablesort_apply"
@@ -63,8 +35,9 @@ Content-length: 298
 }
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <span data-ttu-id="ed36a-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="ed36a-137">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="ed36a-138">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ed36a-138">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,29 +1,11 @@
-# <a name="remove-rejectedsender"></a>Remover rejectedSender
-
-Remove um usuário ou grupo da lista rejectedSenders.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.ReadWrite.All*
-## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
-
-```
-## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
-
-## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-
-
-## <a name="response"></a>Resposta
+<span data-ttu-id="04b41-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="04b41-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Eis alguns exemplos da solicitação.
+## <span data-ttu-id="04b41-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="04b41-117">Example</span></span>
+<a id="example" class="xliff"></a>
+##### <span data-ttu-id="04b41-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="04b41-118">Request</span></span>
+<a id="request" class="xliff"></a>
+<span data-ttu-id="04b41-119">Eis alguns exemplos da solicitação.</span><span class="sxs-lookup"><span data-stu-id="04b41-119">Here are a couple of examples of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"
@@ -34,8 +16,9 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="us
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id="groups/{id}"
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+##### <span data-ttu-id="04b41-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="04b41-120">Response</span></span>
+<a id="response" class="xliff"></a>
+<span data-ttu-id="04b41-121">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="04b41-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
