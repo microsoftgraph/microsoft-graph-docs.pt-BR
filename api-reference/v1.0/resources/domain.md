@@ -1,62 +1,16 @@
-# <a name="domain-resource-type"></a>tipo de recurso de domínio
-
-Representa um domínio associado ao locatário.
-
-Use operações de domínio para associá-los a um locatário, verificar a propriedade do domínio e configurar os serviços com suporte.  Operações de domínio permitem que os registradores automatizem a associação de domínio para os serviços como o Office 365. Por exemplo, como parte da inscrição no domínio, um registrador pode habilitar um domínio personalizado para emails, sites, autenticação etc.
-
-Para associar um domínio a um locatário:
-
-1. [Associar](../api/domain_post_domains.md) um domínio a um locatário.
-
-2. [Recuperar](../api/domain_list_verificationdnsrecords.md) os registros de verificação do domínio. Adicione os detalhes de registro de verificação ao arquivo de zona do domínio usando o registrador de domínio ou a configuração do servidor DNS.
-
-3. [Verifica](../api/domain_verify.md) a propriedade do domínio. Isso verificará o domínio e configurará a propriedade *isVerified* como *true*.
-
-4. [Indicar](../api/domain_update.md) os serviços com suporte que você planeja usar com o domínio.
-
-5. [Configurar](../api/domain_list_serviceconfigurationrecords.md) serviços como suporte para recuperar uma lista de registros necessários para ativar os serviços para o domínio. Adicione os detalhes de registro de configuração ao arquivo de zona do domínio usando o registrador de domínio ou a configuração do servidor DNS.
-
-### <a name="methods"></a>Métodos
-
-| Método   | Tipo de retorno |Descrição|
-|:---------------|:--------|:----------|
-|[Obter domínio](../api/domain_get.md) | [domain](domain.md) | Leia as propriedades e os relacionamentos de um objeto de domínio.|
-|[Criar domínio](../api/domain_post_domains.md) | [domain](domain.md) | Adiciona um domínio ao inquilino. |
-|[List domainNameReference](../api/domain_list_domainnamereferences.md) |Coleção [directoryObject](directoryobject.md)| Recupere uma lista de objetos de diretório com uma referência ao domínio.|
-|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para configuração de domínio.|
-|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para verificação de domínio.|
-|[Atualizar domínio](../api/domain_update.md) | [domain](domain.md) |Atualiza um domínio.|
-|[Excluir domínio](../api/domain_delete.md) | Nenhum |Exclui um domínio.|
-|[Verificar domínio](../api/domain_verify.md)|[domain](domain.md)|Valida a propriedade do domínio.|
-
-### <a name="properties"></a>Propriedades
-
-| Propriedade   | Tipo | Descrição |
-|:---------------|:--------|:----------|
-|authenticationType|String| Indica o tipo de autenticação configurado para o domínio. O valor será *Gerenciado* ou *Federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem, no qual o Azure AD realiza autenticação do usuário.<br>*Federada* indica que a autenticação é federada com um provedor de identidade como o Active Directory do locatário no local pelos Serviços de Federação do Active Directory. Não anulável |
-|availabilityStatus|String| Essa propriedade é sempre nula, exceto quando a ação [verify](../api/domain_verify.md) é usada. Quando a ação [verify](../api/domain_verify.md) é usada, uma entidade **domain** é retornada na resposta. A propriedade **availabilityStatus** da entidade **domain** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
-|id|String| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusivo |
-|isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio foi delegado para o Office 365. Caso contrário, o valor é verdadeiro. Não anulável |
-|isDefault|Booliano| True se este é o domínio padrão usado para a criação de usuário. Há apenas um domínio padrão por empresa. Não anulável |
-|isInitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (nomedaempresa.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
-|isRoot|Booliano| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
-|isVerified|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
-|supportedServices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Podem incluir 0, 1 ou mais dos seguintes valores: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar ou remover usando a API Graph incluem: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
-|estado|[domainState](domainstate.md)| Status de operações assíncronas agendadas em um domínio. |
-
-### <a name="relationships"></a>Relações
+<span data-ttu-id="d0a7c-p114">As relações entre um domínio e outros objetos no diretório como seus registros de verificação e de configuração de serviço expostas por meio de propriedades de navegação. Você pode ler essas relações ao direcionar essas propriedades de navegação em suas solicitações.</span><span class="sxs-lookup"><span data-stu-id="d0a7c-p114">Relationships between a domain and other objects in the directory such as its verification records and service configuration records are exposed through navigation properties. You can read these relationships by targeting these navigation properties in your requests.</span></span>
 
 As relações entre um domínio e outros objetos no diretório como seus registros de verificação e de configuração de serviço expostas por meio de propriedades de navegação. Você pode ler essas relações ao direcionar essas propriedades de navegação em suas solicitações.
 
-| Relação | Tipo |Descrição|
+| <span data-ttu-id="d0a7c-199">Relação</span><span class="sxs-lookup"><span data-stu-id="d0a7c-199">Relationship</span></span> | <span data-ttu-id="d0a7c-200">Tipo</span><span class="sxs-lookup"><span data-stu-id="d0a7c-200">Type</span></span> |<span data-ttu-id="d0a7c-201">Descrição</span><span class="sxs-lookup"><span data-stu-id="d0a7c-201">Description</span></span>|
 |:---------------|:--------|:----------|
-|domainNameReferences|Coleção [directoryObject](directoryobject.md)| Somente leitura, Anulável|
-|serviceConfigurationRecords|Coleção [domainDnsRecord](domaindnsrecord.md)| Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services.<br>Somente leitura, Anulável |
-|verificationDnsRecords|Coleção [domainDnsRecord](domaindnsrecord.md)| Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio para que o cliente possa concluir a verificação de propriedade de domínio com o Azure AD.<br>Somente leitura, Anulável|
+|<span data-ttu-id="d0a7c-202">domainNameReferences</span><span class="sxs-lookup"><span data-stu-id="d0a7c-202">domainNameReferences</span></span>|<span data-ttu-id="d0a7c-203">Coleção [directoryObject](directoryobject.md)</span><span class="sxs-lookup"><span data-stu-id="d0a7c-203">[directoryObject](directoryobject.md) collection</span></span>| <span data-ttu-id="d0a7c-204">Somente leitura, Anulável</span><span class="sxs-lookup"><span data-stu-id="d0a7c-204">Read-only, Nullable</span></span>|
+|<span data-ttu-id="d0a7c-205">serviceConfigurationRecords</span><span class="sxs-lookup"><span data-stu-id="d0a7c-205">serviceConfigurationRecords</span></span>|<span data-ttu-id="d0a7c-206">Coleção [domainDnsRecord](domaindnsrecord.md)</span><span class="sxs-lookup"><span data-stu-id="d0a7c-206">[domainDnsRecord](domaindnsrecord.md) collection</span></span>| <span data-ttu-id="d0a7c-207">Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="d0a7c-207">DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.</span></span><br><span data-ttu-id="d0a7c-208">Somente leitura, Anulável</span><span class="sxs-lookup"><span data-stu-id="d0a7c-208">Read-only, Nullable</span></span> |
+|<span data-ttu-id="d0a7c-209">verificationDnsRecords</span><span class="sxs-lookup"><span data-stu-id="d0a7c-209">verificationDnsRecords</span></span>|<span data-ttu-id="d0a7c-210">Coleção [domainDnsRecord](domaindnsrecord.md)</span><span class="sxs-lookup"><span data-stu-id="d0a7c-210">[domainDnsRecord](domaindnsrecord.md) collection</span></span>| <span data-ttu-id="d0a7c-211">Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio para que o cliente possa concluir a verificação de propriedade de domínio com o Azure AD.</span><span class="sxs-lookup"><span data-stu-id="d0a7c-211">DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.</span></span><br><span data-ttu-id="d0a7c-212">Somente leitura, Anulável</span><span class="sxs-lookup"><span data-stu-id="d0a7c-212">Read-only, Nullable</span></span>|
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="d0a7c-213">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d0a7c-213">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="d0a7c-214">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d0a7c-214">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,52 +1,8 @@
-# <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
+<span data-ttu-id="1f15f-p118">Somente leitura. Anulável. Usado para renderizar a tarefa corretamente na exibição de quadro de tarefa quando agrupado por progresso.</span><span class="sxs-lookup"><span data-stu-id="1f15f-p118">Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.</span></span>| Somente leitura. Anulável. Usado para renderizar a tarefa corretamente na exibição de quadro de tarefa quando agrupado por progresso.|
 
-O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma tarefa de Planejador está contida em uma [plano](plannerplan.md) e pode ser atribuída a um [bucket](plannerbucket.md) em um plano. Cada objeto de tarefa tem um objeto [details](plannertaskdetails.md) que pode conter mais informações sobre a tarefa. Confira mais informações sobre as relações entre grupo, plano e tarefa na [visão geral](planner_overview.md).
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Obter plannerTask](../api/plannertask_get.md) | [plannerTask](plannertask.md) |Leia as propriedades e as relações do objeto **plannerTask**.|
-|[Update](../api/plannertask_update.md) | [plannerTask](plannertask.md)    |Atualizar o objeto **plannerTask**. |
-|[Delete](../api/plannertask_delete.md) | Nenhum |Excluir o objeto **plannerTask**. |
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|Número de itens de lista de verificação com valor definido como 'false', representando itens incompletos.|
-|appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|As categorias às quais a tarefa foi aplicada. Confira os possíveis valores em [Categorias aplicadas](plannerappliedcategories.md).|
-|assigneePriority|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-|assignments|[plannerAssignments](plannerassignments.md)|O conjunto de destinatários aos quais a tarefa é atribuída.|
-|bucketId|String|ID do bucket ao qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço. |
-|checklistItemCount|Int32|Número de itens de lista de verificação que estão presentes na tarefa.|
-|completedBy|[identitySet](identityset.md)|Identidade do usuário que concluiu a tarefa.|
-|completedDateTime|DateTimeOffset|Somente leitura. A data e a hora na qual o `'percentComplete'` da tarefa está definido como `'100'`. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|conversationThreadId|String|Identificação do thread da conversa na tarefa. Essa é a identificação do objeto do thread da conversa criado no grupo.|
-|createdBy|[identitySet](identityset.md)|Identidade do usuário que criou a tarefa.|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
-|id|String|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-|percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
-|planId|String|ID do plano ao qual a tarefa pertence.|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`.|
-|referenceCount|Int32|Número de referências externas existentes na tarefa.|
-|startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|title|String|Título da tarefa.|
-
-### <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Somente leitura. Anulável. Usado para renderizar a tarefa corretamente na exibição de quadro de tarefa quando agrupado por assignedTo.|
-|bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Somente leitura. Anulável. Usado para renderizar a tarefa corretamente na exibição de quadro de tarefa quando agrupado por bucket.|
-|detalhes|[plannerTaskDetails](plannertaskdetails.md)| Somente leitura. Anulável. Outros detalhes sobre a tarefa.|
-|progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Somente leitura. Anulável. Usado para renderizar a tarefa corretamente na exibição de quadro de tarefa quando agrupado por progresso.|
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="1f15f-233">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1f15f-233">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="1f15f-234">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1f15f-234">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,29 +1,13 @@
-# <a name="plannerassignedtotaskboardtaskformat-resource-type"></a>Tipo de recurso plannerAssignedToTaskBoardTaskFormat
+<span data-ttu-id="79620-p104">Valor da dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não for atribuída a ninguém ou se o dicionário orderHintsByAssignee não oferecer uma dica de ordem para o usuário à qual a tarefa foi atribuída. O formato é definido como descrito [aqui](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="79620-p104">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Valor da dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não for atribuída a ninguém ou se o dicionário orderHintsByAssignee não oferecer uma dica de ordem para o usuário à qual a tarefa foi atribuída. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
 
-O recurso **plannerAssignedToTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição AssignedTo do Quadro de Tarefas (um modo de exibição organizado por usuários aos quais as tarefas são atribuídas). Cada [tarefa](plannertask.md) terá um objeto **plannerAssignedToTaskBoardTaskFormat** associado a ela.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get plannerAssignedToTaskBoardTaskFormat](../api/plannerassignedtotaskboardtaskformat_get.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md) |Leia as propriedades e relações do objeto **plannerAssignedToTaskBoardTaskFormat**.|
-|[Atualizar](../api/plannerassignedtotaskboardtaskformat_update.md) | [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)    |Atualize o objeto **plannerAssignedToTaskBoardTaskFormat**. |
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Somente leitura. A ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](plannerorderhintsbyassignee.md)|O dicionário de dicas usado para ordenar tarefas no modo de exibição AssignedTo do Quadro de Tarefas. A chave de cada entrada é um dos usuários ao qual a tarefa é atribuída, e o valor é a dica de ordem. O formato de cada valor é definido como descrito [aqui](planner_order_hint_format.md).|
-|unassignedOrderHint|String|Valor da dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não for atribuída a ninguém ou se o dicionário orderHintsByAssignee não oferecer uma dica de ordem para o usuário à qual a tarefa foi atribuída. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-
-### <a name="relationships"></a>Relações
-Nenhum
+## <span data-ttu-id="79620-133">Relações</span><span class="sxs-lookup"><span data-stu-id="79620-133">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="79620-134">Nenhum</span><span class="sxs-lookup"><span data-stu-id="79620-134">None</span></span>
 
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="79620-135">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="79620-135">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="79620-136">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="79620-136">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

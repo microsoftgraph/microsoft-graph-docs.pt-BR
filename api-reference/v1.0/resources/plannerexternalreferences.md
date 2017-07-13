@@ -1,14 +1,10 @@
-# <a name="plannerexternalreferences-resource-type"></a>Tipo de recurso plannerExternalReferences
-
-O recurso **plannerExternalReferences** representa a coleção de referências em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [externalReference](plannerexternalreference.md).
-
-
-### <a name="properties"></a>Propriedades
+<span data-ttu-id="8be1c-p102">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **URLs válidas** baseadas nos protocolos **HTTP/HTTPS** como propriedades e seus valores devem ser os objetos [externalReference](plannerexternalreference.md). Com base no OData, os nomes de propriedade em Tipos Abertos não podem conter os seguintes caracteres: `.`, `:` e `%`, portanto, eles precisam ser codificados. Um exemplo é mostrado abaixo. Para remover uma referência, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="8be1c-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide **valid URLs** based on the **HTTP/HTTPS** protocols as properties and their values must be the [externalReference](plannerexternalreference.md) objects. Based on OData, property names in Open Types cannot contain the following characters: `.`, `:`, `%`  so they need to be encoded. Example is shown below. To remove a reference, set the value of the property to `null`.</span></span>
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **URLs válidas** baseadas nos protocolos **HTTP/HTTPS** como propriedades e seus valores devem ser os objetos [externalReference](plannerexternalreference.md). Com base no OData, os nomes de propriedade em Tipos Abertos não podem conter os seguintes caracteres: `.`, `:` e `%`, portanto, eles precisam ser codificados. Um exemplo é mostrado abaixo. Para remover uma referência, defina o valor da propriedade como `null`.
 
-## <a name="json-representation"></a>Representação JSON
+## <span data-ttu-id="8be1c-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8be1c-112">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="8be1c-113">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="8be1c-113">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,7 +28,7 @@ Veja a seguir uma representação JSON do recurso
 }
 ```
 
-// Exemplo
+<span data-ttu-id="8be1c-114">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="8be1c-114">// Example</span></span>
 
 ```json
 {

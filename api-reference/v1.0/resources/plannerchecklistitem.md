@@ -1,21 +1,9 @@
-# <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
+<span data-ttu-id="359bb-p104">Usado para definir a ordem relativa dos itens na lista de verificação. O formato é definido como descrito [aqui](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="359bb-p104">Used to set the relative order of items in the checklist. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Usado para definir a ordem relativa dos itens na lista de verificação. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
+|<span data-ttu-id="359bb-125">title</span><span class="sxs-lookup"><span data-stu-id="359bb-125">title</span></span>|<span data-ttu-id="359bb-126">String</span><span class="sxs-lookup"><span data-stu-id="359bb-126">String</span></span>|<span data-ttu-id="359bb-127">Título do item de lista de verificação</span><span class="sxs-lookup"><span data-stu-id="359bb-127">Title of the checklist item</span></span>|
 
-
-O recurso **plannerChecklistItem** representa um item da lista de verificação de uma tarefa. A lista de verificação em uma tarefa é representada pelo [objeto checklistItems](plannerchecklistitems.md).
-
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|isChecked|Booliano|O valor será `true` se o item estiver marcado ou `false`, caso não estiver marcado.|
-|lastModifiedBy|[identitySet](identityset.md)| Somente leitura. A identificação de usuário pela qual isso foi modificado pela última vez.|
-|lastModifiedDateTime|DateTimeOffset|Somente leitura. A data e a hora pelas quais isso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Usado para definir a ordem relativa dos itens na lista de verificação. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-|title|String|Título do item de lista de verificação|
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="359bb-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="359bb-128">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="359bb-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="359bb-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

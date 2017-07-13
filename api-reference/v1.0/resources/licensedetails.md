@@ -1,29 +1,12 @@
-# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
+<span data-ttu-id="ccdb1-p104">Nome de exibição exclusivo do SKU. Igual à propriedade skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado. Por exemplo: "AAD_Premium". Somente leitura</span><span class="sxs-lookup"><span data-stu-id="ccdb1-p104">Unique SKU display name. Equal to the skuPartNumber on the related [SubscribedSku](subscribedsku.md) object; for example: "AAD_Premium". Read-only</span></span>| Nome de exibição exclusivo do SKU. Igual à propriedade skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado. Por exemplo: "AAD_Premium". Somente leitura |
 
-Contém informações sobre uma licença atribuída a um usuário.
+## <span data-ttu-id="ccdb1-132">Relações</span><span class="sxs-lookup"><span data-stu-id="ccdb1-132">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="ccdb1-133">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ccdb1-133">None</span></span>
 
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Listar licenseDetails](../api/user_list_licensedetails.md) | coleção licenseDetails |Recupere uma lista de objetos licenseDetails para um usuário.|
-
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| O identificador exclusivo do objeto de detalhe de licença. Somente leitura, Chave, Não anulável |
-|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviços que estão disponíveis com a licença. Somente leitura, Não anulável |
-|skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
-|skuPartNumber|String| Nome de exibição exclusivo do SKU. Igual à propriedade skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado. Por exemplo: "AAD_Premium". Somente leitura |
-
-### <a name="relationships"></a>Relações
-Nenhum
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="ccdb1-134">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ccdb1-134">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="ccdb1-135">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ccdb1-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

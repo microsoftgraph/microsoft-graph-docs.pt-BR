@@ -1,28 +1,13 @@
-# <a name="plannerprogresstaskboardtaskformat-resource-type"></a>Tipo de recurso plannerProgressTaskBoardTaskFormat
+<span data-ttu-id="f3c70-p103">Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="f3c70-p103">Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
 
-O recurso **plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição Progress do Quadro de Tarefas (uma exibição organizada pelo estado do campo PercentComplete no objeto da tarefa, com colunas para Não Iniciado, Em Andamento e Concluído). Cada [tarefa](plannertask.md) terá um objeto **plannerProgressTaskBoardTaskFormat** associado a ela.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat_get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Leia as propriedades e as relações do objeto **plannerProgressTaskBoardTaskFormat**.|
-|[Atualizar](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Atualize o objeto **plannerProgressTaskBoardTaskFormat**. |
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Somente leitura. A ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|orderHint|String|Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-
-### <a name="relationships"></a>Relações
-Nenhum
+## <span data-ttu-id="f3c70-128">Relações</span><span class="sxs-lookup"><span data-stu-id="f3c70-128">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="f3c70-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f3c70-129">None</span></span>
 
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="f3c70-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f3c70-130">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="f3c70-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f3c70-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

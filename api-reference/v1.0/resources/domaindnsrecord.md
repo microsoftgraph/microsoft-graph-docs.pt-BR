@@ -1,26 +1,12 @@
-# <a name="domaindnsrecord-resource-type"></a>Tipo de recurso domainDnsRecord
+<span data-ttu-id="7cd1f-p104">O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro DNS no host DNS. Não anulável</span><span class="sxs-lookup"><span data-stu-id="7cd1f-p104">Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable</span></span>| O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro DNS no host DNS. Não anulável |
 
-Para cada domínio no locatário, talvez seja necessário adicionar os registros DNS ao arquivo de zona DNS do domínio para que ele possa ser usado pelo Microsoft Online Services. A entidade **DomainDnsRecord** é usada para apresentar esses registros DNS. A entidade base das entidades [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) e [DomainDnsSrvRecord](domaindnssrvrecord.md).
+## <span data-ttu-id="7cd1f-135">Relações</span><span class="sxs-lookup"><span data-stu-id="7cd1f-135">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="7cd1f-136">Nenhum</span><span class="sxs-lookup"><span data-stu-id="7cd1f-136">None</span></span>
 
-### <a name="methods"></a>Métodos
-Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
-|isOptional|Booliano| Se for falso, o registro deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar o nome da propriedade do registro DNS no host DNS. |
-|recordType|String| Indica que tipo de registro DNS a entidade representa.</br></br>O valor pode ser um dos seguintes: *CName*, *Mx*, *Srv* e *Txt*</br></br>Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registroDNS.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|ttl|Int32| O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro DNS no host DNS. Não anulável |
-
-### <a name="relationships"></a>Relações
-Nenhum
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="7cd1f-137">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7cd1f-137">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="7cd1f-138">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7cd1f-138">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

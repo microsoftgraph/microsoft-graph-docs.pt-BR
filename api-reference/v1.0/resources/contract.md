@@ -1,31 +1,13 @@
-# <a name="contract-resource-type"></a>Tipo de recurso contact
-Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
+<span data-ttu-id="47058-p108">O identificador exclusivo da parceria. Chave, somente leitura</span><span class="sxs-lookup"><span data-stu-id="47058-p108">The unique identifier for the partnership. Key, read-only</span></span>| O identificador exclusivo da parceria. Chave, somente leitura |
 
-> **Importante:** Existe apenas em locatários do parceiro. Locatários do parceiro são locatários Azure AD que pertencem a parceiros da Microsoft que fazem parte do [Provedor de Soluções do Microsoft Cloud](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication ou programas de parceiro Microsoft Advisor.
-
-### <a name="methods"></a>Métodos
-
-| Método   | Tipo de retorno | Descrição |
-|:---------------|:--------|:----------|
-|[Get contract](../api/contract_get.md) | Contrato |Ler propriedades de um objeto de contrato específico. |
-|[List contracts](../api/contract_list.md) | Coleção de contratos | Lista de contratos no locatário parceiro. |
-
-### <a name="properties"></a>Propriedades
-| Propriedade   | Tipo | Descrição |
-|:---------------|:--------|:----------|
-|contractType|String|Tipo de contrato.<br><br>Os valores possíveis são:<br> *SyndicationPartner* – parceiro que revende ou gerencia com exclusividade O365 e Intune para esse cliente. Eles revendem e oferecem suporte aos seus clientes.<br> *BreadthPartner* – parceiro tem a capacidade de fornecer suporte administrativo para esse cliente. No entanto, o parceiro não tem permissão para revender ao cliente.<br>*ResellerPartner* – parceiro que é semelhante a um parceiro de agregação, exceto que o parceiro não tem acesso exclusivo ao locatário. No caso de agregação, o cliente não pode comprar assinaturas diretas adicionais da Microsoft ou de outros parceiros.|
-|customerId|Guid|O identificador exclusivo para o locatário de cliente referenciado por essa parceria. Corresponde à propriedade de identificação do recurso de organização do locatário do cliente. |
-|defaultDomainName|String|Uma cópia do nome de domínio padrão do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não é atualizado automaticamente se o nome de domínio padrão do locatário do cliente for alterado.|
-|displayName|String|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não é atualizado automaticamente se o nome de exibição do locatário do cliente é alterado.|
-|id|String| O identificador exclusivo da parceria. Chave, somente leitura |
-
-### <a name="relationships"></a>Relações
-Nenhum
+## <span data-ttu-id="47058-147">Relações</span><span class="sxs-lookup"><span data-stu-id="47058-147">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="47058-148">Nenhum</span><span class="sxs-lookup"><span data-stu-id="47058-148">None</span></span>
 
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="47058-149">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="47058-149">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="47058-150">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="47058-150">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

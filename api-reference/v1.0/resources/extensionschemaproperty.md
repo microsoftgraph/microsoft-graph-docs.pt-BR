@@ -1,28 +1,9 @@
-# <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
+<span data-ttu-id="836df-p103">Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens.</span><span class="sxs-lookup"><span data-stu-id="836df-p103">32-bit value. Not supported for messages, events and posts.</span></span> | Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens. |
+| <span data-ttu-id="836df-129">String</span><span class="sxs-lookup"><span data-stu-id="836df-129">String</span></span> | <span data-ttu-id="836df-130">Máximo de 256 caracteres.</span><span class="sxs-lookup"><span data-stu-id="836df-130">256 characters maximum.</span></span> |
 
-Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição [schemaExtension](schemaextension.md).
-
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|name|String| O nome da propriedade digitada definido como parte de uma extensão de esquema.|
-|type|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
-
-#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
-Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
-
-| Tipo de propriedade | Comentários |
-|-------------|------------|
-| Binária | No máximo 256 bytes. |
-| Booliano | Não é compatível com as mensagens, eventos e postagens. |
-| DateTime | Deve ser especificado no formato ISO 8601. Serão armazenados no UTC. |
-| Inteiro | Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens. |
-| String | Máximo de 256 caracteres. |
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="836df-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="836df-131">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="836df-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="836df-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

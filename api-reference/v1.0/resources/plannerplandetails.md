@@ -1,31 +1,13 @@
-# <a name="plannerplandetails-resource-type"></a>Tipo de recurso plannerPlanDetails
+<span data-ttu-id="674a0-p103">Conjunto de identificações de usuários com o qual esse plano é compartilhado. Se você estiver aproveitando os Grupos do Office 365, use a API de Grupos para gerenciar a associação a um grupo para compartilhar o plano [do grupo](group.md). Você também pode adicionar membros existentes do grupo a essa coleção, embora isso não seja necessário para que eles possam acessar o plano do grupo.</span><span class="sxs-lookup"><span data-stu-id="674a0-p103">Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|Conjunto de identificações de usuários com o qual esse plano é compartilhado. Se você estiver aproveitando os Grupos do Office 365, use a API de Grupos para gerenciar a associação a um grupo para compartilhar o plano [do grupo](group.md). Você também pode adicionar membros existentes do grupo a essa coleção, embora isso não seja necessário para que eles possam acessar o plano do grupo. |
+
+## <span data-ttu-id="674a0-132">Relações</span><span class="sxs-lookup"><span data-stu-id="674a0-132">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="674a0-133">Nenhum</span><span class="sxs-lookup"><span data-stu-id="674a0-133">None</span></span>
 
 
-O recurso **plannerPlanDetails** representa as informações adicionais sobre um plano. Cada objeto [plan](plannerplan.md) tem um objeto de detalhes.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get plannerPlanDetails](../api/plannerplandetails_get.md) | [plannerPlanDetails](plannerplandetails.md) |Leia as propriedades e as relações do objeto **plannerPlanDetails**.|
-|[Atualizar](../api/plannerplandetails_update.md) | [plannerPlanDetails](plannerplandetails.md)    |Atualize o objeto **plannerPlanDetails**. |
-
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano|
-|id|String| Somente leitura. ID dos detalhes dos planos. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|sharedWith|[plannerUserIds](planneruserids.md)|Conjunto de identificações de usuários com o qual esse plano é compartilhado. Se você estiver aproveitando os Grupos do Office 365, use a API de Grupos para gerenciar a associação a um grupo para compartilhar o plano [do grupo](group.md). Você também pode adicionar membros existentes do grupo a essa coleção, embora isso não seja necessário para que eles possam acessar o plano do grupo. |
-
-### <a name="relationships"></a>Relações
-Nenhum
-
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="674a0-134">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="674a0-134">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="674a0-135">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="674a0-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

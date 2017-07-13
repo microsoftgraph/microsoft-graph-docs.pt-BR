@@ -1,28 +1,13 @@
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
+<span data-ttu-id="9d71f-p103">Dica usada para ordenar tarefas no modo de exibição Bucket do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="9d71f-p103">Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Dica usada para ordenar tarefas no modo de exibição Bucket do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
 
-O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição Buckets do Quadro de Tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais elas são atribuídas). Cada [tarefa](plannertask.md) terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
-
-
-### <a name="methods"></a>Métodos
-
-| Método           | Tipo de retorno    |Descrição|
-|:---------------|:--------|:----------|
-|[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leia as propriedades e as relações do objeto **plannerBucketTaskBoardTaskFormat**.|
-|[Atualizar](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)    |Atualize o objeto **plannerBucketTaskBoardTaskFormat**. |
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Somente leitura. A ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|orderHint|String|Dica usada para ordenar tarefas no modo de exibição Bucket do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-
-### <a name="relationships"></a>Relações
-Nenhum
+## <span data-ttu-id="9d71f-128">Relações</span><span class="sxs-lookup"><span data-stu-id="9d71f-128">Relationships</span></span>
+<a id="relationships" class="xliff"></a>
+<span data-ttu-id="9d71f-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="9d71f-129">None</span></span>
 
 
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="9d71f-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9d71f-130">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="9d71f-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9d71f-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

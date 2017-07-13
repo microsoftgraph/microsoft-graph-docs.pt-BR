@@ -1,18 +1,8 @@
-# <a name="plannerassignment-resource-type"></a>Tipo de recurso plannerAssignment
+<span data-ttu-id="64ef0-p103">Dica usada para ordenar destinatários em uma tarefa. O formato é definido como descrito [aqui](planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="64ef0-p103">Hint used to order assignees in a task. The format is defined as outlined [here](planner_order_hint_format.md).</span></span>|Dica usada para ordenar destinatários em uma tarefa. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
 
-O recurso **plannerAssignment** representa a atribuição de uma tarefa a um usuário. Esse tipo é usado no tipo aberto [plannerAssignments](plannerassignments.md).
-
-
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
-|:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)|A identidade do usuário que executou a atribuição da tarefa, ou seja, a atribuidor.|
-|assignedDateTime|DateTimeOffset|A hora que a tarefa foi atribuída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Dica usada para ordenar destinatários em uma tarefa. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-
-### <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
+## <span data-ttu-id="64ef0-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="64ef0-120">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="64ef0-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="64ef0-121">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,14 +1,10 @@
-# <a name="plannerchecklistitems-resource-type"></a>Tipo de recurso plannerChecklistItems
-
-O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).
-
-
-### <a name="properties"></a>Propriedades
+<span data-ttu-id="b316b-p102">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="b316b-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.
 
-## <a name="json-representation"></a>Representação JSON
+## <span data-ttu-id="b316b-111">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b316b-111">JSON representation</span></span>
+<a id="json-representation" class="xliff"></a>
 
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="b316b-112">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="b316b-112">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -30,7 +26,7 @@ Veja a seguir uma representação JSON do recurso
   }
 }
 ```
-// Exemplo
+<span data-ttu-id="b316b-113">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="b316b-113">// Example</span></span>
 
 ```json
 {
