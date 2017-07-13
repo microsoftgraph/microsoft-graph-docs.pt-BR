@@ -1,9 +1,11 @@
-# <a name="plannerassignments-resource-type"></a>Tipo de recurso plannerAssignments
+# Tipo de recurso plannerAssignments
+<a id="plannerassignments-resource-type" class="xliff"></a>
 
 O recurso **plannerAssignment** representa as atribuições de um recurso [plannerTask](plannertask.md). Este é um Tipo Aberto. Cada nome de propriedade nesse tipo representa a ID do objeto de um usuário à qual uma tarefa é atribuída. Os usuários podem ser atribuídos a tarefas com a criação de novas propriedades nomeadas com sua ID, com um objeto [plannerassignment](plannerassignment.md) com a propriedade orderHint preenchida como o valor. Os destinatários podem ter a atribuição cancelada a partir da tarefa se a propriedade nomeada com a ID for configurada como nula.
 
 
-### <a name="properties"></a>Propriedades
+## Propriedades
+<a id="properties" class="xliff"></a>
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. No entanto, nesse caso, o cliente deve fornecer IDs do usuário atribuídas como nomes de propriedades. A propriedade deve ser definida com um objeto **plannerAssignment** para criar ou modificar os destinatários e como nula para removê-los.
 
 Exemplo:

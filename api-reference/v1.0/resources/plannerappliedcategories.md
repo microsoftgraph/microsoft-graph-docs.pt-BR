@@ -1,12 +1,15 @@
-# <a name="plannerappliedcategories-resource-type"></a>Tipo de recurso plannerAppliedCategories
+# Tipo de recurso plannerAppliedCategories
+<a id="plannerappliedcategories-resource-type" class="xliff"></a>
 
 
 O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicadas a uma tarefa. Ele faz parte do objeto [plannerTask](plannertask.md). Pode haver até seis categorias aplicadas a uma tarefa. Descrições de categorias, por exemplo, `category1`, `category2` etc., fazem parte do objeto [plan details](plannerplandetails.md). Este é um Tipo Aberto.
 
-### <a name="properties"></a>Propriedades
+## Propriedades
+<a id="properties" class="xliff"></a>
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer `category1`, `category2`, `category3`, `category4`, `category5` e/ou `category6` como propriedades com seus valores representados pelo booliano `true` quando as categorias correspondentes são aplicadas à tarefa. Um exemplo é mostrado abaixo. Quando elas não se aplicam, as propriedades são automaticamente removidas ao configurar os valores com o booliano `false`. 
 
-## <a name="json-representation"></a>Representação JSON
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 
 Veja a seguir uma representação JSON do recurso
 

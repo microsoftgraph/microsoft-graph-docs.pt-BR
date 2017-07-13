@@ -1,27 +1,31 @@
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
+# Tipo de recurso plannerBucketTaskBoardTaskFormat
+<a id="plannerbuckettaskboardtaskformat-resource-type" class="xliff"></a>
 
 O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição Buckets do Quadro de Tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais elas são atribuídas). Cada [tarefa](plannertask.md) terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
 
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat_get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leia as propriedades e as relações do objeto **plannerBucketTaskBoardTaskFormat**.|
-|[Atualizar](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)    |Atualize o objeto **plannerBucketTaskBoardTaskFormat**. |
+|[Update](../api/plannerbuckettaskboardtaskformat_update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize o objeto **plannerBucketTaskBoardTaskFormat**. |
 
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## Propriedades
+<a id="properties" class="xliff"></a>
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. A ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
 |orderHint|String|Dica usada para ordenar tarefas no modo de exibição Bucket do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
 
-### <a name="relationships"></a>Relações
+## Relações
+<a id="relationships" class="xliff"></a>
 Nenhum
 
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

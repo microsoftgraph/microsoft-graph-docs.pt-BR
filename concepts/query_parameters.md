@@ -1,8 +1,9 @@
-# <a name="customize-responses-optional-query-parameters"></a>Personalizar respostas: parâmetros de consulta opcional
+# Usar parâmetros de consulta para personalizar respostas
+<a id="use-query-parameters-to-customize-responses" class="xliff"></a>
 
 O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Há suporte para os seguintes parâmetros de consulta.
 
-|Nome|Descrição|Exemplo (clique nos exemplos para experimentar no [Explorador do Graph][graph-explorer])
+|Name|Descrição|Exemplo (clique nos exemplos para experimentar no [Explorador do Graph][graph-explorer])
 |:---------------|:--------|:-------|
 |[$filter](#filter)|Filtra os resultados (linhas).|[`/users?$filter=startswith(givenName,'J')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
 |[$select](#select)|Filtra as propriedades (colunas).|[`/users?$select=givenName,surname`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users?$select=givenName,surname&method=GET&version=v1.0)
@@ -35,7 +36,8 @@ Uma URL codificada adequadamente é semelhante a esta:
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 ```
 
-## <a name="filter"></a>filtro
+## filtro
+<a id="filter" class="xliff"></a>
 
 `$filter` pode ser usado para recuperar apenas um subconjunto de uma coleção. Por exemplo, para encontrar usuários cujo nome de exibição comece com `J`, use `startswith`.
 
@@ -91,7 +93,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 `$filter` tem uma sintaxe muito rica e expressiva com muitos operadores internos. Os operadores lógicos incluem é igual a (`eq`), não é igual a (`ne`), maior (`gt`), maior ou igual a (`gte`), e (`and`), ou (`or`), não (`not`) etc. Os operadores aritméticos incluem somar (`add`), subtrair (`sub`) etc. Os operadores de cadeia de caracteres incluem contém (`contains`), começa com (`startswith`) etc. Os operadores lambda incluem qualquer (`any`) e tudo (`all`). Para obter outros detalhes sobre a sintaxe `$filter`, veja o [protocolo OData][odata-filter].
 
 
-## <a name="select"></a>select
+## select
+<a id="select" class="xliff"></a>
 
 Em uma coleção ou uma entidade individual, para especificar um conjunto diferente de propriedades para retornar em vez do conjunto padrão, use o parâmetro de consulta `$select`. O parâmetro `$select` permite escolher um subconjunto ou superconjunto do conjunto padrão retornado. Por exemplo, ao recuperar suas mensagens, selecione que apenas as propriedades `from` e `subject` das mensagens sejam retornadas.
 
@@ -125,11 +128,12 @@ in the response will only have those property values included.
 }
 ```-->
 
-## <a name="expand"></a>expandir
+## expandir
+<a id="expand" class="xliff"></a>
 
 Em solicitações da API do Microsoft Graph, as navegações para um objeto ou coleção do item referenciado não são expandidas automaticamente. Isso ocorre por design porque reduz o tráfego de rede e o tempo necessário para gerar uma resposta do serviço. No entanto, em alguns casos pode ser ideal incluir esses resultados em uma resposta.
 
-Você pode usar o parâmetro da cadeia de caracteres de consulta `$expand` para instruir a API para expandir uma coleção ou objeto filho e incluir aqueles resultados.
+Você pode usar o parâmetro da cadeia de caracteres de consulta `$expand` para instruir a API a expandir uma coleção ou objeto filho e incluir os resultados.
 
 Por exemplo, para recuperar as informações da unidade raiz e os itens filho de nível superior em uma unidade, use o parâmetro `$expand`. Esse exemplo também usa uma instrução [`$select`](#select) para retornar apenas as propriedades `id` e `name` dos itens filhos.
 
@@ -145,7 +149,8 @@ GET https://graph.microsoft.com/v1.0/users?$expand=directReports
 
 Alguns outros recursos também podem ter um limite, portanto, verifique sempre possíveis erros.
 
-## <a name="orderby"></a>orderby
+## orderby
+<a id="orderby" class="xliff"></a>
 
 Para especificar a ordem de classificação de itens retornados da API do Microsoft Graph, use o parâmetro de consulta `$orderby`.
 
@@ -165,7 +170,8 @@ Para classificar os resultados em ordem crescente ou decrescente, anexe `asc` ou
 
  > **Observação:** Se você consultar o recurso [`user`](../api-reference/v1.0/resources/user.md), `$orderby` não poderá ser combinado com expressões de filtro.
 
-## <a name="top"></a>top
+## top
+<a id="top" class="xliff"></a>
 
 Para especificar o número máximo de itens para retornar em um conjunto de resultados, use o parâmetro de consulta `$top`. O parâmetro de consulta `$top` identifica um subconjunto na coleção. Esse subconjunto é formado selecionando-se apenas os primeiros N itens do conjunto, em que N é um inteiro positivo especificado por esse parâmetro de consulta. Por exemplo, para retornar as cinco primeiras mensagens na caixa de correio do usuário, a sintaxe é a seguinte:
 
@@ -173,7 +179,8 @@ Para especificar o número máximo de itens para retornar em um conjunto de resu
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5
 ```
 
-## <a name="skip"></a>ignorar
+## ignorar
+<a id="skip" class="xliff"></a>
 
 Para definir o número de itens que devem ser ignorados antes de recuperar itens em uma coleção, use o parâmetro de consulta `$skip`. Por exemplo, para retornar eventos classificados por data de criação e começando do 21º evento, a sintaxe é a seguinte:
 
@@ -181,7 +188,8 @@ Para definir o número de itens que devem ser ignorados antes de recuperar itens
 GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=20
 ```
 
-## <a name="skiptoken"></a>skipToken
+## skipToken
+<a id="skiptoken" class="xliff"></a>
 
 Para solicitar a segunda página e as páginas subsequentes dos dados do Graph use o parâmetro de consulta `$skipToken`. O parâmetro de consulta `$skipToken` é fornecido em Urls retornados do Graph quando o Graph retorna um subconjunto parcial de resultados, normalmente devido à paginação do servidor. Ela identifica o ponto em uma coleção onde o servidor terminou de enviar resultados e volta para o Graph para indicar de onde ele deve recomeçar o envio dos resultados. Por exemplo, o valor de um parâmetro de consulta `$skipToken` poderia identificar o décimo item em uma coleção ou o vigésimo item em uma coleção com 50 itens, ou qualquer outra posição nela.
 
@@ -197,7 +205,8 @@ Para retornar para a próxima página de usuários em sua organização, a sinta
 GET  https://graph.microsoft.com/v1.0/users?$orderby=displayName&$skiptoken=X%2783630372100000000000000000000%27
 ```
 
-## <a name="count"></a>count
+## count
+<a id="count" class="xliff"></a>
 
 Use `$count` como um parâmetro de consulta para incluir uma contagem do número total de itens em uma coleção junto com a página de valores de dados retornados do Graph, como no exemplo a seguir:
 
@@ -209,7 +218,8 @@ Isso retornaria ambas as coleções `contacts` e o número de itens na coleção
 
 >**Observação:** Isso não tem suporte das coleções [`directoryObject`](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/directoryobject).
 
-## <a name="search"></a>pesquisar
+## pesquisar
+<a id="search" class="xliff"></a>
 
 Para restringir os resultados de uma solicitação que correspondam a um critério de pesquisa, use o parâmetro de consulta `$search`.
 

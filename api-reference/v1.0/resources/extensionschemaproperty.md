@@ -1,15 +1,18 @@
-# <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
+# Tipo de recurso extensionSchemaProperty
+<a id="extensionschemaproperty-resource-type" class="xliff"></a>
 
 Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição [schemaExtension](schemaextension.md).
 
 
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## Propriedades
+<a id="properties" class="xliff"></a>
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|String| O nome da propriedade digitada definido como parte de uma extensão de esquema.|
 |type|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
-#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
+#### Tipos de dados de propriedade com suporte
+<a id="supported-property-data-types" class="xliff"></a> 
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
 
 | Tipo de propriedade | Comentários |
@@ -20,8 +23,8 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 | Inteiro | Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens. |
 | String | Máximo de 256 caracteres. |
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

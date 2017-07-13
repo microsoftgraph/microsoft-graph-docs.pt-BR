@@ -1,4 +1,5 @@
-# <a name="domain-resource-type"></a>tipo de recurso de domínio
+# tipo de recurso de domínio
+<a id="domain-resource-type" class="xliff"></a>
 
 Representa um domínio associado ao locatário.
 
@@ -16,7 +17,8 @@ Para associar um domínio a um locatário:
 
 5. [Configurar](../api/domain_list_serviceconfigurationrecords.md) serviços como suporte para recuperar uma lista de registros necessários para ativar os serviços para o domínio. Adicione os detalhes de registro de configuração ao arquivo de zona do domínio usando o registrador de domínio ou a configuração do servidor DNS.
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método   | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
@@ -29,7 +31,8 @@ Para associar um domínio a um locatário:
 |[Excluir domínio](../api/domain_delete.md) | Nenhum |Exclui um domínio.|
 |[Verificar domínio](../api/domain_verify.md)|[domain](domain.md)|Valida a propriedade do domínio.|
 
-### <a name="properties"></a>Propriedades
+## Propriedades
+<a id="properties" class="xliff"></a>
 
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
@@ -41,10 +44,11 @@ Para associar um domínio a um locatário:
 |isInitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (nomedaempresa.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
 |isRoot|Booliano| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
 |isVerified|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
-|supportedServices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Podem incluir 0, 1 ou mais dos seguintes valores: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar ou remover usando a API Graph incluem: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
+|supportedServices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Podem incluir 0, 1 ou mais dos seguintes valores: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar ou remover usando a API do Graph incluem: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
 |estado|[domainState](domainstate.md)| Status de operações assíncronas agendadas em um domínio. |
 
-### <a name="relationships"></a>Relações
+## Relações
+<a id="relationships" class="xliff"></a>
 
 As relações entre um domínio e outros objetos no diretório como seus registros de verificação e de configuração de serviço expostas por meio de propriedades de navegação. Você pode ler essas relações ao direcionar essas propriedades de navegação em suas solicitações.
 
@@ -54,8 +58,8 @@ As relações entre um domínio e outros objetos no diretório como seus registr
 |serviceConfigurationRecords|Coleção [domainDnsRecord](domaindnsrecord.md)| Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services.<br>Somente leitura, Anulável |
 |verificationDnsRecords|Coleção [domainDnsRecord](domaindnsrecord.md)| Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio para que o cliente possa concluir a verificação de propriedade de domínio com o Azure AD.<br>Somente leitura, Anulável|
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

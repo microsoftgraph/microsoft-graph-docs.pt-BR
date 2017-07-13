@@ -1,27 +1,31 @@
-# <a name="plannerprogresstaskboardtaskformat-resource-type"></a>Tipo de recurso plannerProgressTaskBoardTaskFormat
+# Tipo de recurso plannerProgressTaskBoardTaskFormat
+<a id="plannerprogresstaskboardtaskformat-resource-type" class="xliff"></a>
 
 O recurso **plannerProgressTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição Progress do Quadro de Tarefas (uma exibição organizada pelo estado do campo PercentComplete no objeto da tarefa, com colunas para Não Iniciado, Em Andamento e Concluído). Cada [tarefa](plannertask.md) terá um objeto **plannerProgressTaskBoardTaskFormat** associado a ela.
 
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get plannerProgressTaskBoardTaskFormat](../api/plannerprogresstaskboardtaskformat_get.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md) |Leia as propriedades e as relações do objeto **plannerProgressTaskBoardTaskFormat**.|
-|[Atualizar](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Atualize o objeto **plannerProgressTaskBoardTaskFormat**. |
+|[Update](../api/plannerprogresstaskboardtaskformat_update.md) | [plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)    |Atualize o objeto **plannerProgressTaskBoardTaskFormat**. |
 
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## Propriedades
+<a id="properties" class="xliff"></a>
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. A ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
 |orderHint|String|Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
 
-### <a name="relationships"></a>Relações
+## Relações
+<a id="relationships" class="xliff"></a>
 Nenhum
 
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
