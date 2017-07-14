@@ -1,9 +1,11 @@
-# <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
+# Tipo de recurso plannerTaskDetails
+<a id="plannertaskdetails-resource-type" class="xliff"></a>
 
 O recurso **plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto [task](plannertask.md) tem um objeto de detalhes.
 
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -11,8 +13,9 @@ O recurso **plannerTaskDetails** representa as informações adicionais sobre um
 |[Atualizar](../api/plannertaskdetails_update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Atualize o objeto **plannerTaskDetails**. |
 
 
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## Propriedades
+<a id="properties" class="xliff"></a>
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |lista de verificação|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens da lista de verificação na tarefa.|
 |description|String|Descrição da tarefa|
@@ -20,12 +23,13 @@ O recurso **plannerTaskDetails** representa as informações adicionais sobre um
 |previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`. Quando definido como `automatic`, a visualização exibida é escolhida pelo aplicativo que exibe a tarefa.|
 |referências|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
 
-### <a name="relationships"></a>Relações
+## Relações
+<a id="relationships" class="xliff"></a>
 Nenhum
 
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

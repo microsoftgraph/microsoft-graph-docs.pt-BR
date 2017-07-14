@@ -1,7 +1,9 @@
-# <a name="rangeview-resource-type"></a>tipo de recurso rangeView
+# tipo de recurso rangeView
+<a id="rangeview-resource-type" class="xliff"></a>
 RangeView representa um conjunto de células visíveis do intervalo pai.
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -10,27 +12,29 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Retorna o objeto de intervalo associado à exibição do intervalo|
 
 
-### <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## Propriedades
+<a id="properties" class="xliff"></a>
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnCount|Int32|Retorna o número de colunas visíveis. Somente leitura.|
-|formulas|Json|Representa a fórmula em notação A1.    |
+|formulas|Json|Representa a fórmula em notação A1. |
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.    |
-|formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.    |
+|formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.   |
 |índice|Int32|O índice do intervalo.|
-|numberFormat|Json|Representa o código de formato de número do Excel para determinada célula. Somente leitura.    |
-|rowCount|Int32|Retorna o número de linhas visíveis. Somente leitura.    |
+|numberFormat|Json|Representa o código de formato de número do Excel para determinada célula. Somente leitura. |
+|rowCount|Int32|Retorna o número de linhas visíveis. Somente leitura.  |
 |text|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.    |
-|valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: Unknown, Empty, String, Integer, Double, Boolean, Error.    |
-|values|Json|Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.    |
+|valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: Unknown, Empty, String, Integer, Double, Boolean, Error. |
+|values|Json|Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.   |
 
-### <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+## Relações
+<a id="relationships" class="xliff"></a>
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |rows|Coleção [workbookRangeView](workbookrangeview.md)| Representa uma coleção de exibições de tabelas associadas ao intervalo. Somente leitura.    Somente leitura.|
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",

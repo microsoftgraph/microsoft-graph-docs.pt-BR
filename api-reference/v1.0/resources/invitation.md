@@ -1,4 +1,5 @@
-# <a name="invitation-manager"></a>gerenciador de convites
+# gerenciador de convites
+<a id="invitation-manager" class="xliff"></a>
 
 Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. 
 
@@ -12,12 +13,14 @@ O processo de convite usa o fluxo a seguir:
 A criação de um convite retornará uma URL de resgate na resposta (*inviteRedeemUrl*). A API de criação de convite pode enviar automaticamente um email que contém a URL de resgate ao usuário convidado, definindo-se *sendInvitationMessage* como true. Você também pode personalizar a mensagem será enviada ao usuário convidado. Em vez disso, se você desejar enviar a URL de resgate por outros meios, poderá definir *sendInvitationMessage* como false e usar a URL de resgate da resposta para criar sua própria comunicação. Atualmente, não há qualquer API para execução do processo de resgate. O usuário convidado tem que clicar no link *inviteRedeemUrl* enviado na comunicação na etapa anterior e passar pelo processo de resgate interativo em um navegador. Após a conclusão, o usuário convidado torna-se um usuário externo na organização.
 
 
-### <a name="methods"></a>Métodos
+## Métodos
+<a id="methods" class="xliff"></a>
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar convite](../api/invitation_post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
 
-### <a name="properties"></a>Propriedades
+## Propriedades
+<a id="properties" class="xliff"></a>
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
@@ -29,13 +32,14 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se não for administrador da empresa. |
 |status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
-### <a name="relationships"></a>Relações
+## Relações
+<a id="relationships" class="xliff"></a>
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
-### <a name="json-representation"></a>Representação JSON
-
+## Representação JSON
+<a id="json-representation" class="xliff"></a>
 Veja a seguir uma representação JSON do recurso
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
