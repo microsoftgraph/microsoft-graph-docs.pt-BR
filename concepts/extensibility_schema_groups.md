@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
+# <a name="add-custom-data-to-groups-using-schema-extensions-example"></a>Adicionar dados personalizados a grupos usando extensões de esquema (exemplo)
 
 Por meio de um exemplo, vamos demonstrar como usar as *extensões de esquema*. 
 
@@ -12,7 +12,7 @@ Neste cenário, vamos mostrar como:
 4. Adicionar, atualizar ou remover dados personalizados em um grupo existente com base em uma definição de extensão de esquema.
 5. Ler novamente um grupo e os dados de extensão.
 
->**Observação:** Este tópico mostra como criar e ler valores de extensão do esquema em um recurso **group** (etapas 3 a 5).  Os mesmos métodos são compatíveis também com os tipos de recurso **administrativeUnit**, **device**, **event**, **message**, **organization**, **post** e **user**.  Portanto, você pode executar operações semelhantes às solicitações de exemplo abaixo em qualquer um desses recursos. Observe que **administrativeUnit" está disponível apenas no ponto de extremidade beta.
+>**Observação:** Este tópico mostra como criar e ler valores de extensão do esquema em um recurso **group** (etapas 3 a 5).  Os mesmos métodos são compatíveis também com os tipos de recurso **administrativeUnit**, **device**, **event**, **message**, **organization**, **post** e **user**.  Portanto, você pode executar operações semelhantes às solicitações de exemplo abaixo em qualquer um desses recursos. Observe que **administrativeUnit** está disponível apenas no ponto de extremidade beta.
 
 ## <a name="1-view-available-schema-extensions"></a>1. Exibir extensões de esquema disponíveis
 Em primeiro lugar, como desenvolvedor, talvez seja interessante localizar todas as outras definições de extensão de esquema que nosso aplicativo possa reutilizar.  Isso pode ser feito consultando o recurso **schemaExtension**.  
@@ -227,7 +227,7 @@ Content-length: 326
 ## <a name="see-also"></a>Ver também
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility_overview.md)
-- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility_open_users.md)
+- [Adicionar dados personalizados a usuários usando extensões abertas (exemplo)](extensibility_open_users.md)
 - [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Adicionando e verificando um domínio para o NOVO Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](../api-reference/v1.0/resources/schemaextension.md)

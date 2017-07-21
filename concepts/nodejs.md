@@ -205,5 +205,7 @@ O aplicativo chama o Microsoft Graph para obter informações sobre o usuário e
 
 
 ## <a name="see-also"></a>Ver também
-- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+- Experimente exemplos de chamada REST no nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer)
+- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

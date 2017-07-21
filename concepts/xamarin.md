@@ -43,7 +43,7 @@ Se quiser executar o projeto do iOS neste exemplo, você precisará do seguinte:
 5. Escolha **Aplicativo Nativo**.
 6. Copie o valor da ID do aplicativo e o valor do URI de redirecionamento personalizado (abaixo do cabeçalho do **Aplicativo Nativo**) criados quando você adicionou a plataforma do **Aplicativo Nativo**. Este URI deve conter o valor da ID do aplicativo e estar neste formato: `msal[Application Id]://auth` Você precisará inserir esses valores no aplicativo de exemplo.
 
-    A ID de aplicativo é o identificador exclusivo do aplicativo. 
+    Essa ID de aplicativo é o identificador exclusivo do aplicativo. 
 
 7. Selecione **Salvar**.
 
@@ -446,5 +446,6 @@ Agora você realizou as três etapas obrigatórias para interagir com o Microsof
 
 ## <a name="see-also"></a>Ver também
 - [Biblioteca de cliente do .NET do Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
-- [Tokens do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)
+- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

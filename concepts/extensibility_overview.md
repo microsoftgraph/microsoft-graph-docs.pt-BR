@@ -9,9 +9,9 @@ O Microsoft Graph oferece dois tipos de extensões. Escolha o tipo de extensão 
 
 >**Importante:** Você não deve usar extensões para armazenar informações de identificação pessoal confidenciais, como credenciais de conta, números de identificação do governo, dados do titular do cartão, dados de conta corrente, informações médicas ou informações básicas confidenciais.
 
-## <a name="supported-resources"></a>Recursos com Suporte
+## <a name="supported-resources"></a>Recursos com suporte
 
-A tabela a seguir mostra o suporte atual para abrir e as extensões de esquema, e se elas estão em disponibilidade geral (GA /v1.0 e /beta endpoints) ou apenas em prévia (/beta endpoints). 
+A seguinte tabela lista os recursos que oferecem suporte às extensões de abertura e esquema e indica se eles atingiram ou não a disponibilidade geral (GA) (disponível em ambos os pontos de extremidade V1.0 e beta) ou se estão como prévia (disponível apenas no ponto de extremidade beta).  
 
 | Recurso | Extensões abertas | Extensões de esquema |
 |---------------|-------|-------|
@@ -36,7 +36,7 @@ As extensões abertas, juntamente com seus dados personalizados, podem ser acess
 
 Você pode [criar uma extensão aberta](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) em uma instância de recurso e armazenar dados personalizados nela na mesma operação (observe a [limitação conhecida abaixo](known_issues.md#extensions) para alguns dos recursos com suporte). Você pode posteriormente [ler](../api-reference/v1.0/api/opentypeextension_get.md), [atualizar](../api-reference/v1.0/api/opentypeextension_update.md) ou [excluir](../api-reference/v1.0/api/opentypeextension_delete.md) a extensão e seus dados.
 
-Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
+Veja o exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
 
 ## <a name="schema-extensions"></a>Extensões de esquema
 
@@ -58,7 +58,7 @@ Como as extensões de esquema são acessíveis como tipos complexos em instânci
 - Use o método `PATCH` de recurso para adicionar ou atualizar dados personalizados em uma instância de recursos existentes.
 - Use o método `PATCH` de recurso para definir o tipo complexo como nulo, para excluir os dados personalizados da instância do recurso. 
 
-Exemplo de extensão do esquema: [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
+Veja o exemplo de extensão do esquema: [Adicionar dados personalizados a grupos usando as extensões de esquema](extensibility_schema_groups.md)
 
 
 ### <a name="schema-extensions-lifecycle"></a>Ciclo de vida das extensões do esquema
@@ -90,7 +90,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensões do esquema de diretório do Azure AD
 
-O Azure AD dá suporte a um tipo semelhante de extensões, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Embora você deva usar a API Graph do Azure AD para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
+O Azure AD dá suporte a um tipo semelhante de extensões, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Embora você deva usar a API do Graph do Azure AD para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
 
 ## <a name="permissions"></a>Permissions
 
@@ -113,14 +113,20 @@ Um aplicativo pode criar não mais de cinco definições de **extensão do esque
 
 Nas limitações conhecidas usando extensões, veja a [seção extensões](known_issues.md#extensions) no artigo problemas conhecidos.
 
-## <a name="extension-examples"></a>Exemplos de extensão
-
-[Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
-
-[Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
-
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Ver também
 
 [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 [Adição e verificação de um domínio para um locatário do Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+
+
+## <a name="next-steps"></a>Próximas etapas
+
+Veja um exemplo que usa uma extensão aberta para estender o recurso **user** com dados de perfil móvel personalizados:
+
+[Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
+
+Veja um exemplo que usa uma extensão de esquema para estender o recurso **group** com dados de curso de treinamento:
+
+[Adicionar dados personalizados a grupos usando as extensões de esquema](extensibility_schema_groups.md)
+

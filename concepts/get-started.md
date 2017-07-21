@@ -4,7 +4,7 @@ Os artigos desta seção fornecem orientações detalhadas sobre como criar apli
 
 Escolha o artigo correspondente ao provedor de autenticação e à plataforma de desenvolvimento de sua escolha e comece a conexão com o Microsoft Graph.
 
-Você pode seguir as etapas no artigo que aborda a plataforma de desenvolvimento que você escolheu ou, para obter rapidamente uma solução que funcione, tente a experiência de [início rápido](http://dev.office.com/getting-started/office365apis).
+Você pode seguir as etapas no artigo que aborda a plataforma de desenvolvimento que você escolheu ou, para obter rapidamente uma solução que funcione, tente a experiência de [início rápido](https://developer.microsoft.com/graph/quick-start).
 
 Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](https://github.com/microsoftgraph) no GitHub. A tabela a seguir mostra os exemplos por provedor e plataforma de autenticação e observa se eles se conectam ao Microsoft Graph usando REST ou uma biblioteca de cliente do Microsoft Graph.
 
@@ -46,7 +46,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Exemplo de REST</a>
     </td>     
-     <td>
+    <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Exemplo de SDK</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -114,6 +114,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
 </table>
 
 ## <a name="see-also"></a>Ver também
-- Experimente exemplos de chamada REST em nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer).
-- [Documentação de ponto de extremidade do Azure AD](https://azure.microsoft.com/en-us/documentation/services/active-directory/)
-- [Documentação de ponto de extremidade do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/?service=active-directory&term=azure+ad+v2.0)
+- Experimente exemplos de chamada REST no nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer)
+- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

@@ -125,7 +125,7 @@ Isso direciona as solicitações de logon para o método `login` do controlador 
 
     def login
         redirect_to '/auth/microsoft_v2_auth'
-      end
+    end
 
 Em seguida, precisamos especificar onde no aplicativo OmniAuth deve redirecionar após a autenticação ocorrer. Tire o comentário da rota a seguir.
 
@@ -150,7 +150,7 @@ Agora vamos adicionar código para manipular o retorno de chamada OmniAuth e rec
 Em `app/controllers/pages_controller.rb`, substitua o método `callback` vazio pelo código a seguir.
 
     ```
-      def callback
+    def callback
         # Access the authentication hash for omniauth
         # and extract the auth token, user name, and email
         data = request.env['omniauth.auth']
@@ -285,7 +285,10 @@ Por fim, o código usa o código de resposta de HTTP retornado para notificar o 
 3. Acesse `http://localhost:3000` no navegador da Web.
 
 ## <a name="see-also"></a>Ver também
-- Experimente a API REST, usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente a API REST usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
 - Explorar nossos outros [exemplos do Microsoft Graph](https://github.com/microsoftgraph) no GitHub.
+- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
 
 
