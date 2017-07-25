@@ -46,7 +46,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Exemplo de REST</a>
     </td>     
-    <td>
+     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Exemplo de SDK</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>
@@ -114,7 +114,6 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
 </table>
 
 ## <a name="see-also"></a>Ver também
-- Experimente exemplos de chamada REST no nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer)
-- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- Experimente exemplos de chamada REST em nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer).
+- [Documentação de ponto de extremidade do Azure AD](https://azure.microsoft.com/documentation/services/active-directory/)
+- [Documentação de ponto de extremidade do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/?service=active-directory&term=azure+ad+v2.0)

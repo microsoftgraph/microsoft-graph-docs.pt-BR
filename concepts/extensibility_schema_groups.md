@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-groups-using-schema-extensions-example"></a>Adicionar dados personalizados a grupos usando extensões de esquema (exemplo)
+# <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 
 Por meio de um exemplo, vamos demonstrar como usar as *extensões de esquema*. 
 
@@ -227,8 +227,9 @@ Content-length: 326
 ## <a name="see-also"></a>Ver também
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility_overview.md)
-- [Adicionar dados personalizados a usuários usando extensões abertas (exemplo)](extensibility_open_users.md)
-- [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility_open_users.md)
+- 
+  [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Adicionando e verificando um domínio para o NOVO Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](../api-reference/v1.0/resources/schemaextension.md)
 - [List schemaExtensions](../api-reference/v1.0/api/schemaextension_list.md)

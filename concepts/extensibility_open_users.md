@@ -1,4 +1,4 @@
-# <a name="add-custom-data-to-users-using-open-extensions-example"></a>Adicionar dados personalizados a usuários usando extensões abertas (exemplo)
+# <a name="add-custom-data-to-users-using-open-extensions"></a>Adicionar dados personalizados aos usuários usando extensões abertas
 Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*. 
 
 Imagine que você está criando um aplicativo que está disponível em várias plataformas cliente diferentes, como computadores e dispositivos móveis.  Você gostaria que os usuários pudessem configurar a própria experiência de interface do usuário para que ela fosse consistente, independentemente do dispositivo usado para entrar no seu aplicativo. Este é um requisito comum para a maioria dos aplicativos. 
@@ -111,7 +111,7 @@ HTTP/1.1 204 No content
 ## <a name="see-also"></a>Ver também
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility_overview.md)
-- [Adicionar dados personalizados a grupos usando extensões de esquema (exemplo)](extensibility_schema_groups.md)
+- [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
 - [tipo de recurso openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md)
 - [Criar extensão aberta](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md)
 - [Obter extensão aberta](../api-reference/v1.0/api/opentypeextension_get.md)

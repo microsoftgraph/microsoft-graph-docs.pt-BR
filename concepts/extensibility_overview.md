@@ -36,7 +36,7 @@ As extensões abertas, juntamente com seus dados personalizados, podem ser acess
 
 Você pode [criar uma extensão aberta](../api-reference/v1.0/api/opentypeextension_post_opentypeextension.md) em uma instância de recurso e armazenar dados personalizados nela na mesma operação (observe a [limitação conhecida abaixo](known_issues.md#extensions) para alguns dos recursos com suporte). Você pode posteriormente [ler](../api-reference/v1.0/api/opentypeextension_get.md), [atualizar](../api-reference/v1.0/api/opentypeextension_update.md) ou [excluir](../api-reference/v1.0/api/opentypeextension_delete.md) a extensão e seus dados.
 
-Veja o exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
+Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
 
 ## <a name="schema-extensions"></a>Extensões de esquema
 
@@ -58,7 +58,7 @@ Como as extensões de esquema são acessíveis como tipos complexos em instânci
 - Use o método `PATCH` de recurso para adicionar ou atualizar dados personalizados em uma instância de recursos existentes.
 - Use o método `PATCH` de recurso para definir o tipo complexo como nulo, para excluir os dados personalizados da instância do recurso. 
 
-Veja o exemplo de extensão do esquema: [Adicionar dados personalizados a grupos usando as extensões de esquema](extensibility_schema_groups.md)
+Exemplo de extensão do esquema: [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
 
 
 ### <a name="schema-extensions-lifecycle"></a>Ciclo de vida das extensões do esquema
@@ -113,20 +113,15 @@ Um aplicativo pode criar não mais de cinco definições de **extensão do esque
 
 Nas limitações conhecidas usando extensões, veja a [seção extensões](known_issues.md#extensions) no artigo problemas conhecidos.
 
-## <a name="see-also"></a>Ver também
-
-[Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
-
-[Adição e verificação de um domínio para um locatário do Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
-
-
-## <a name="next-steps"></a>Próximas etapas
-
-Veja um exemplo que usa uma extensão aberta para estender o recurso **user** com dados de perfil móvel personalizados:
+## <a name="extension-examples"></a>Exemplos de extensão
 
 [Adicionar dados personalizados aos usuários usando extensões abertas](extensibility_open_users.md)
 
-Veja um exemplo que usa uma extensão de esquema para estender o recurso **group** com dados de curso de treinamento:
+[Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
 
-[Adicionar dados personalizados a grupos usando as extensões de esquema](extensibility_schema_groups.md)
+## <a name="see-also"></a>Ver também
 
+
+  [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+
+[Adição e verificação de um domínio para um locatário do Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

@@ -3,11 +3,10 @@
 Recupere as propriedades e os relacionamentos do objeto directoryObject.
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: 
-
 - _Directory.Read.All_ 
 - _Directory.AccessAsUser.All_
 
-> **Observação:** os escopos de permissão estão em ordem da menor para a maior necessidade de privilégio.
+> Observação: escopos de permissão são listados em ordem de privilégio menos necessário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +18,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

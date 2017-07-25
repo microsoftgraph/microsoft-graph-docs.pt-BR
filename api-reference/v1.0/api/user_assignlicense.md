@@ -2,7 +2,7 @@
 Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.ReadWrite.All; Directory.AccessAsUser.All*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *User.ReadWrite.All; Directory.ReadWrite.All*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -28,7 +28,7 @@ Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"

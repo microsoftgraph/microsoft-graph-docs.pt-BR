@@ -73,16 +73,16 @@ Para rever o fluxo de trabalho de interface do usuário, o aplicativo fará o us
 
 1. Abra o espaço de trabalho do projeto Xcode (**O365-iOS-Microsoft-Graph-SDK.xcworkspace**) na pasta **starter-project** e navegue até a pasta **Authentication** e abra o arquivo **AuthenticationProvider.m.** Adicione o código a seguir a essa classe.
 
-        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)   (NSError *))completion{
+        -(void) connectToGraphWithClientId:(NSString *)clientId scopes:(NSArray *)scopes completion:(void (^)    (NSError *))completion{
             [NXOAuth2AuthenticationProvider setClientId:kClientId
                                               scopes:scopes];
     
     
             /**
-            Obtains access token by performing login with UI, where viewController specifies the parent view controller.
-            @param viewController The view controller to present the UI on.
+             Obtains access token by performing login with UI, where viewController specifies the parent view controller.
+             @param viewController The view controller to present the UI on.
              @param completionHandler The completion handler to be called when the authentication has completed.
-            error should be non nil if there was no error, and should contain any error(s) that occurred.
+             error should be non nil if there was no error, and should contain any error(s) that occurred.
              */
 
                 if ([[NXOAuth2AuthenticationProvider sharedAuthProvider] loginSilent]) {
@@ -94,11 +94,11 @@ Para rever o fluxo de trabalho de interface do usuário, o aplicativo fará o us
                     NSLog(@"Authentication successful.");
                     completion(nil);
                     }
-                 else {
-                     NSLog(@"Authentication failed - %@", error.localizedDescription);
+                    else {
+                        NSLog(@"Authentication failed - %@", error.localizedDescription);
                     completion(error);
                     }
-                }];
+                    }];
             }
     
         }
@@ -183,7 +183,7 @@ Depois de configurar o projeto para ser capaz de autenticar, as próximas tarefa
             }
             else {
                 NSLog(NSLocalizedString(@"ERROR", ""), error.localizedDescription);
-                self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
+                    self.statusTextView.text = NSLocalizedString(@"SEND_FAILURE", comment: "");
                 }
             }];
     
@@ -205,11 +205,10 @@ Observação: Você notará que foram configurados os seguintes escopos de permi
 3. Escolha o botão **Enviar email**. Quando o email for enviado, será exibida uma mensagem de sucesso abaixo do botão.
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API REST usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente a API REST, usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
 - Encontre exemplos de operações comuns para operações de REST e SDK no [Exemplo de trechos de código do iOS Objective C do Microsoft Graph](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>Ver também
 - [SDK do Microsoft Graph para iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)
-- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Tokens do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)

@@ -53,7 +53,7 @@ Registre um aplicativo no Portal de Registro de Aplicativos da Microsoft. Isso g
 5. Acesse ```http://localhost:5000/``` no navegador da Web.
 
 <!--<a name="authCode"></a>-->
-## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Receber um código de autorização na sua página de URL de resposta
+## <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Receber um código de autorização em sua página de URL de resposta
 
 Depois que o usuário entra, o navegador é redirecionado para a URL de resposta, a rota ```login/authorized``` em [*connectsample.py*](https://github.com/microsoftgraph/python3-connect-rest-sample/blob/master/connectsample.py), com um token de acesso na resposta. O exemplo armazena o token como uma variável de sessão.
 
@@ -106,9 +106,3 @@ O exemplo de Connect envia um email usando o ponto de extremidade ```me/microsof
 > **Observação** A solicitação também deve enviar um cabeçalho **Content-Type** com um valor aceito pela API do Microsoft Graph, por exemplo, `application/json`.
 
 A API do Microsoft Graph é uma API unificadora muito poderosa que pode ser usada para interagir com todos os tipos de dados da Microsoft. Confira a referência de API para explorar o que mais você pode fazer com o Microsoft Graph.
-
-## <a name="see-also"></a>Ver também
-- Experimente exemplos de chamada REST no nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer)
-- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
