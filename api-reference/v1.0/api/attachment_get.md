@@ -4,11 +4,12 @@ Leia as propriedades e as relações de um anexo, anexado a um [event](../resour
 
 Um anexo pode ser de um dos seguintes tipos:
 
-* Um arquivo (recurso [fileAttachment](../resources/fileattachment.md))
-* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md))
-* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceAttachment.md))
+* Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
+* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)). Você pode usar `$expand` para obter ainda mais as propriedades desse item. Veja um [exemplo](#request-2) abaixo.
+* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceAttachment.md)).
 
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
+
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
@@ -67,12 +68,12 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [attachment](../resources/attachment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto **attachment** no corpo da resposta. As propriedades desse tipo de anexo são retornadas: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceAttachment.md).
 
 ## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
 
@@ -113,17 +114,17 @@ Content-length: 199
 ```
 ## <a name="example-item-attachment"></a>Exemplo (anexo de item)
 
-##### <a name="request"></a>Solicitação
-Veja um exemplo da solicitação para obter um anexo do item em um evento.
+##### <a name="request-1"></a>Solicitação 1
+O primeiro exemplo mostra como obter um anexo do item em uma mensagem. As propriedades de **itemAttachment** são retornadas.
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-##### <a name="response"></a>Resposta
+##### <a name="response-1"></a>Resposta 1
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,15 +135,100 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemAttachment",
-  "lastModifiedDateTime": "datetime-value",
-  "name": "name-value",
-  "contentType": "contentType-value",
-  "size": 99,
-  "isInline": true,
-  "id": "id-value"
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false
 }
 ```
+
+##### <a name="request-2"></a>Solicitação 2
+O exemplo a seguir mostra como usar `$expand` para obter as propriedades do item que está anexado à mensagem. Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.
+<!-- {
+  "blockType": "request",
+  "name": "get_and_expand_item_attachment"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+```
+
+##### <a name="response-2"></a>Resposta 2
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemAttachment"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
+  "@odata.type":"#microsoft.graph.itemAttachment",
+  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+  "name":"Reminder - please bring laptop",
+  "contentType":null,
+  "size":32005,
+  "isInline":false,
+  "item@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments('AAMkADA1M-CJKtzmnlcqVgqI%3D')/microsoft.graph.itemAttachment/item/$entity",
+  "item":{
+    "@odata.type":"#microsoft.graph.message",
+    "id":"",
+    "createdDateTime":"2017-07-21T00:20:41Z",
+    "lastModifiedDateTime":"2017-07-21T00:20:34Z",
+    "receivedDateTime":"2017-07-21T00:19:55Z",
+    "sentDateTime":"2017-07-21T00:19:52Z",
+    "hasAttachments":false,
+    "internetMessageId":"<BY2PR15MB05189A084C01F466709E414F9CA40@BY2PR15MB0518.namprd15.prod.outlook.com>",
+    "subject":"Reminder - please bring laptop",
+    "importance":"normal",
+    "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "isDeliveryReceiptRequested":false,
+    "isReadReceiptRequested":false,
+    "isRead":false,
+    "isDraft":false,
+    "webLink":"https://outlook.office365.com/owa/?ItemID=AAMkADA1M3MTRkOQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "body":{
+      "contentType":"html",
+      "content":"<html><head>\r\n</head>\r\n<body>\r\n</body>\r\n</html>"
+    },
+    "sender":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "from":{
+      "emailAddress":{
+        "name":"Adele Vance",
+        "address":"AdeleV@contoso.onmicrosoft.com"
+      }
+    },
+    "toRecipients":[
+      {
+        "emailAddress":{
+          "name":"Alex Wilbur",
+          "address":"AlexW@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "ccRecipients":[
+      {
+        "emailAddress":{
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.onmicrosoft.com"
+        }
+      }
+    ]
+  }
+}
+```
+
 
 
 ## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)

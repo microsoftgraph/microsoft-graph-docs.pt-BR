@@ -1,6 +1,4 @@
-<a id="register-your-app-with-the-azure-ad-v20-endpoint" class="xliff"></a>
-
-# Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
+# <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
 
 Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabelece uma identificação exclusiva do aplicativo e outros valores que o aplicativo usa para autenticar com o Azure AD e obter tokens. Para o ponto de extremidade Azure AD v2.0, você registra o aplicativo no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com). Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar seu aplicativo. Dependendo do tipo de aplicativo que estiver desenvolvendo, você precisará copiar uma ou mais propriedades durante o registro para usar ao configurar autenticação e a autorização para seu aplicativo. 
 
@@ -71,14 +69,12 @@ Aplicativos que oferecem uma experiência de consentimento do administrador pode
 
 Para obter mais detalhes sobre o Portal de Registro de Aplicativos e as propriedades que você pode configurar para seu Aplicativo, veja [Referência de registro de aplicativo](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
-<a id="azure-ad-endpoint-considerations" class="xliff"></a>
+## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
 
-## Considerações sobre o ponto de extremidade do Azure AD
-
-Você usa o [Portal do Azure](https://aka.ms/aadapplist) para registrar seu aplicativo no ponto de extremidade do Azure AD. Você configura as mesmas propriedades básicas como ID de aplicativo, segredo do aplicativo e redirecionar URI/URL, como faria no ponto de extremidade v2.0. No entanto, há algumas diferenças importantes sobre as quais você deve ter ciência: 
+Você usa o [Portal do Azure](https://aka.ms/aadapplist) para registrar seu aplicativo no ponto de extremidade do Azure AD. Você configura as mesmas propriedades básicas como ID do Aplicativo, Segredo do Aplicativo e URI/URL de Redirecionamento, como faria no ponto de extremidade v2.0. No entanto, há algumas diferenças importantes sobre as quais você deve ter ciência: 
 
 - Você só pode usar uma conta de trabalho ou escolar para registrar um aplicativo.
-- Seu aplicativo exigirá uma Id de aplicativo diferente para cada plataforma.
+- Seu aplicativo exigirá uma ID do Aplicativo diferente para cada plataforma.
 - Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como vários locatários no portal.
 - Você deve configurar previamente todas as permissões (incluindo permissões do Microsoft Graph) que seu aplicativo precisa no portal. 
 

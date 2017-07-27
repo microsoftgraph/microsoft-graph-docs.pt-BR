@@ -4,12 +4,12 @@ Contém informações sobre um plano de serviço associado a uma SKU inscrita. A
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|O identificador exclusivo do plano de serviços.|
 |servicePlanName|String|O nome do plano de serviços.|
-|provisioningStatus|String|O status de provisionamento do plano de serviços.|
-|appliesTo|String||
+|provisioningStatus|String|O status de provisionamento do plano de serviços. Valores possíveis:<br/>"Success" – o serviço está totalmente provisionado.<br/>“Disabled” – o serviço foi desabilitado.<br/>"PendingInput" – o serviço ainda não está provisionado; aguardando confirmação do serviço.<br/>"PendingActivation" – o serviço está provisionado, mas requer ativação explícita pelo administrador (por exemplo, plano de serviço do Intune_O365)<br/>"PendingProvisioning" – a Microsoft adicionou um novo serviço ao SKU do produto e ele não foi ativado no locatário ainda.|
+|appliesTo|String|O objeto ao qual o plano de serviço pode ser atribuído. Valores possíveis:<br/>"Usuário" – o plano de serviço pode ser atribuído a usuários individuais.<br/>"Empresa" – o plano de serviço pode ser atribuído a todos os locatários.|
 
 
 ## <a name="json-representation"></a>Representação JSON
