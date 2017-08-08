@@ -2,30 +2,30 @@
 
 Recupere uma lista de objetos [contract](../resources/contract.md) associados a um locatário do parceiro.
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Um dos seguintes **scopes** é necessário para executar esta API: *Directory.Read.All*, *Directory.ReadWrite.All* ou *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /contracts
 ```
 
-### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsoft.io/docs/overview/query_parameters) para ajudar a personalizar a resposta. 
 
 > A filtragem é compatível com customerId, defaultDomainName e displayName.
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 
 Não forneça um corpo de solicitação para esse método.
 
@@ -33,7 +33,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
 <!-- {

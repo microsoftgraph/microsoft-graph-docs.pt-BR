@@ -12,11 +12,12 @@ Notes.Create, Notes.ReadWrite ou Notes.ReadWrite.All
 POST /me/onenote/sectionGroups/{id}/sectionGroups
 POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sectionGroups
 POST /groups/{id}/onenote/sectionGroups/{id}/sectionGroups
+POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -29,7 +30,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_sectiongroup_from_sectiongroup"
@@ -58,14 +59,14 @@ Content-length: 305
 {
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
-  "displayName": "name-value",
+  "displayName": "name-value",  
   "createdBy": {
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"
     }
   },
-  "lastModifiedBy": {
+  "lastModifiedBy": 
     "user": {
       "id": "id-value",
       "displayName": "displayName-value"

@@ -12,11 +12,12 @@ Notes.Create, Notes.ReadWrite ou Notes.ReadWrite.All
 POST /me/onenote/notebooks
 POST /users/{id | userPrincipalName}/onenote/notebooks
 POST /groups/{id}/onenote/notebooks
+POST /sites/{id}/onenote/notebooks
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -30,7 +31,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_notebook_from_onenote"

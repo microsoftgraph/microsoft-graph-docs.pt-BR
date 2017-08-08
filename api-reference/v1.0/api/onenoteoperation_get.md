@@ -19,6 +19,7 @@ Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All ou Notes.ReadWrite.All
 GET /me/onenote/operations/{id}
 GET /users/{id | userPrincipalName}/onenote/operations/{id}
 GET /groups/{id}/onenote/operations/{id}
+GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Nenhum
@@ -26,7 +27,7 @@ Nenhum
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Aceitar | string | `application/json` | 
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -35,7 +36,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [onenoteOperation](../resources/onenoteoperation.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_onenoteoperation"

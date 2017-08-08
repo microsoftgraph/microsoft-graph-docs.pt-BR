@@ -12,12 +12,13 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All ou Notes.ReadWrite.All
 GET /me/onenote/resources/{id}/content
 GET /users/{id | userPrincipalName}/onenote/resources/{id}/content
 GET /groups/{id}/onenote/resources/{id}/content
+GET /sites/{id}/onenote/resources/{id}/content
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -27,7 +28,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e os dados
 Observação: As imagens não serão renderizadas diretamente em um navegador porque elas exigem autorização para recuperá-las, como o restante do conteúdo da página.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_resource"

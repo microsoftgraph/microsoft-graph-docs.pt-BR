@@ -9,14 +9,15 @@ Notes.Create, Notes.ReadWrite ou Notes.ReadWrite.All
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/oennote/sections/{id}/pages
+POST /me/onenote/sections/{id}/pages
 POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
+POST /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type | string | `text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -29,7 +30,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o no
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 
 <!-- { "blockType": "ignored" } -->
 ```http

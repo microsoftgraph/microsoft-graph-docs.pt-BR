@@ -8,7 +8,9 @@ Para usar uma URL de compartilhamento com esta API, seu aplicativo precisa [tran
 
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Shares.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -64,7 +66,7 @@ Content-type: application/json
 
 Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.
 
-### <a name="example-single-file"></a>Exemplo (arquivo único)
+## <a name="example-single-file"></a>Exemplo (arquivo único)
 
 ##### <a name="request"></a>Solicitação
 
@@ -89,7 +91,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-shared-folder"></a>Exemplo (pasta compartilhada)
+## <a name="example-shared-folder"></a>Exemplo (pasta compartilhada)
 
 ##### <a name="request"></a>Solicitação
 

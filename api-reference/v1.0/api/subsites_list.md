@@ -19,7 +19,7 @@ Um dos seguintes escopos é necessário para executar esta solicitação:
 GET /sites/{site-id}/sites
 ```
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 
 #### <a name="request"></a>Solicitação
 

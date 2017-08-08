@@ -17,7 +17,7 @@ Um dos seguintes **escopos** é obrigatório para executar esta API:
 
 Para acessar o OneDrive ou o OneDrive for Business de um usuário, seu aplicativo deve solicitar a relação **drive** no recurso [User](../resources/user.md).
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
@@ -30,7 +30,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 Para acessar uma biblioteca de documentos padrão [de um Grupo](../resources/group.md), o aplicativo solicita a relação **drive** no grupo.
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 
