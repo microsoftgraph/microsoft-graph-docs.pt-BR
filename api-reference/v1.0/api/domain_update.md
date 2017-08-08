@@ -1,16 +1,13 @@
-<span data-ttu-id="4cbb8-p102">No corpo da solicitação, forneça os valores para os campos relevantes que serão atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter melhor desempenho, somente inclua valores alterados.</span><span class="sxs-lookup"><span data-stu-id="4cbb8-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
+<span data-ttu-id="6fd9d-p102">No corpo da solicitação, forneça os valores para os campos relevantes que serão atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter melhor desempenho, somente inclua valores alterados.</span><span class="sxs-lookup"><span data-stu-id="6fd9d-p102">In the request body, supply the values for relevant fields to be updated. Existing properties not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, only include changed values.</span></span>
 
 No corpo da solicitação, forneça os valores para os campos relevantes que serão atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter melhor desempenho, somente inclua valores alterados.
 
-### <span data-ttu-id="4cbb8-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="4cbb8-120">Response</span></span>
-<a id="response" class="xliff"></a>
+### <a name="response"></a><span data-ttu-id="6fd9d-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fd9d-120">Response</span></span>
 
-<span data-ttu-id="4cbb8-121">Se bem-sucedido, este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4cbb8-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
+<span data-ttu-id="6fd9d-121">Se bem-sucedido, este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6fd9d-121">If successful, this method returns a `204 No Content` response code and no response body.</span></span>
 
-### <span data-ttu-id="4cbb8-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4cbb8-122">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="4cbb8-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4cbb8-123">Request</span></span>
-<a id="request" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="6fd9d-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6fd9d-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6fd9d-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6fd9d-123">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -29,8 +26,7 @@ Content-type: application/json
 }
 ```
 
-##### <span data-ttu-id="4cbb8-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="4cbb8-124">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="6fd9d-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fd9d-124">Response</span></span>
 
 <!-- {
   "blockType": "response",
