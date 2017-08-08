@@ -54,7 +54,7 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 ```
 
 | Parâmetro | Condição | Descrição |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | locatário |Obrigatório |O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. Se você não souber a qual locatário o usuário pertence e quiser permitir que ele entre em qualquer locatário, use `common`. |
 | client_id |Obrigatório |ID de Aplicativo que o [Portal de Registro de Aplicativos](https://apps.dev.microsoft.com/) atribuiu a seu aplicativo. |
 | redirect_uri |Obrigatório |O URI de redirecionamento para onde você deseja que a resposta seja enviada para que o aplicativo trate da situação. Ele deve corresponder exatamente a um dos URIs de redirecionamento registrados no portal, exceto que ele deve ser codificado por URL e pode ter segmentos de caminho adicionais. |
@@ -73,7 +73,7 @@ GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b
 ```
 
 | Parâmetro | Descrição |
-| --- | --- |
+|:----------|:------------|
 | locatário |O locatário do diretório que concedeu as permissões de aplicativo solicitadas, no formato GUID. |
 | estado |Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. |
 | admin_consent |Definir como **true**. |
@@ -103,7 +103,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microso
 ```
 
 | Parâmetro | Condição | Descrição |
-| --- | --- | --- |
+|:----------|:----------|:------------|
 | locatário |Obrigatório |O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. |
 | client_id |Obrigatório |A ID de Aplicativo que o [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com) atribuiu quando você registrou seu aplicativo. |
 | escopo |Obrigatório |O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade do Microsoft Azure ADv2.0 que, de todas as Permissões de aplicativo que você configurou para seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você deseja usar. |
@@ -122,7 +122,7 @@ Uma resposta bem-sucedida tem esta aparência:
 ```
 
 | Parâmetro | Descrição |
-| --- | --- |
+|:----------|:------------|
 | access_token |O token de acesso solicitado. Seu aplicativo pode usar esse token em chamadas para o Microsoft Graph. |
 | token_type |Indica o valor de tipo de token. O único tipo ao qual o Azure AD dá suporte é `bearer`. |
 | expires_in |Por quanto tempo o token de acesso é válido (em segundos). |

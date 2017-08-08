@@ -1,16 +1,26 @@
-# <a name="get-started-with-microsoft-graph-in-a-xamarin-forms-app"></a>Introdução ao Microsoft Graph em um aplicativo Xamarin Forms
+# <a name="get-started-with-microsoft-graph-in-a-universal-windows-10-app"></a>Introdução ao Microsoft Graph em um aplicativo universal do Windows 10
 
-> **Criando aplicativos para clientes corporativos?** O aplicativo pode não funcionar caso o cliente corporativo habilite os recursos Enterprise Mobility + Security, como <a href="https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">acesso condicional ao dispositivo</a>. Nesse caso, pode ser que você não esteja ciente e seu cliente pode enfrentar problemas de erro. 
+> **Criando aplicativos para clientes corporativos?** O aplicativo pode não funcionar caso o cliente corporativo habilite os recursos Enterprise Mobility + Security, como <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">acesso condicional ao dispositivo</a>. Nesse caso, pode ser que você não esteja ciente e seu cliente pode enfrentar problemas de erro. 
 
-Este artigo descreve as tarefas obrigatórias para obter um token de acesso do [ponto de extremidade do Azure AD v2.0](https://developer.microsoft.com/graph/docs/concepts/converged_auth) e chamar o Microsoft Graph. Ele o orienta em relação ao código dentro do [Exemplo de conexão com o Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) para explicar os principais conceitos que você tem que implementar em um aplicativo que usa o Microsoft Graph. O artigo também descreve como acessar o Microsoft Graph, usando a [Biblioteca de cliente do Microsoft Graph](http://www.nuget.org/packages/Microsoft.Graph/).
+> Para fornecer suporte a **todos os clientes corporativos**, em **todos os cenários corporativos**, use o ponto de extremidade do Microsoft Azure AD e gerencie os aplicativos usando o [Portal de Gerenciamento do Microsoft Azure](https://aka.ms/aadapplist). Para saber mais, confira o tópico [Decidindo entre os pontos de extremidade do Microsoft Azure AD e do Microsoft Azure AD versão 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
-Este é o aplicativo que você criará.
+Este artigo descreve as tarefas obrigatórias para obter um token de acesso do [ponto de extremidade do Azure AD v2.0](https://developer.microsoft.com/en-us/graph/docs/concepts/converged_auth) e chamar o Microsoft Graph. Ele o orienta em relação ao código dentro do [Exemplo de Conexão com o Microsoft Graph para UWP (Biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) para explicar os principais conceitos que você tem que implementar em um aplicativo que usa o Microsoft Graph.
 
-| UWP | Android | iOS |
-| --- | ------- | ----|
-| <img src="images/UWP.png" alt="Connect sample on UWP" width="100%" /> | <img src="images/Droid.png" alt="Connect sample on Android" width="100%" /> | <img src="images/iOS.png" alt="Connect sample on iOS" width="100%" /> |
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start) para começar a usar ou baixe o [Exemplo de Conexão com o Microsoft Graph para UWP (Biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) no qual este artigo se baseia. Observe também que temos uma [Versão REST deste exemplo](https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample).
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start) para começar a usar ou baixe o [Exemplo de conexão com o Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) no qual este artigo se baseia.
+## <a name="sample-user-interface"></a>Exemplo de interface do usuário
+
+O exemplo contém uma interface do usuário muito simples, que consiste em uma barra de comando superior, um botão **Conectar**, um botão **Enviar email** e uma caixa de texto que é preenchida automaticamente com o endereço de email do usuário conectado, mas que pode ser editada.
+
+O botão **Enviar email** é desabilitado quando o usuário não está conectado:
+
+![Tela mostrando o botão Conectar habilitado e o botão Enviar email desabilitado](images/SignedOut.png)
+
+A barra de comando superior contém um botão Desconectar quando o usuário está conectado:
+
+![Tela mostrando o endereço de email do usuário conectado e o botão Enviar email habilitado](images/SignedIn.png)
+
+Todas as cadeias de caracteres de interface do usuário do exemplo são armazenadas no arquivo Resources.resw dentro da pasta Ativos.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -18,79 +28,47 @@ Para começar, será necessário:
 
 - Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
 - Visual Studio 2015 
-- [Xamarin para Visual Studio](https://www.xamarin.com/visual-studio)
-- Windows 10 ([modo de desenvolvedor habilitado](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
-- O [Projeto inicial de conexão com o Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample/tree/master/starter). Este modelo contém várias classes às quais você adicionará código. Ele também contém cadeias de caracteres de recursos e modos de exibição completas. Para obter este projeto, clone ou baixe o [Exemplo de conexão com o Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) e abra a solução **XamarinConnect** dentro da pasta **starter**. 
-
-Se quiser executar o projeto do iOS neste exemplo, você precisará do seguinte:
-
-- O SDK mais recente do iOS
-- A versão mais recente do Xcode
-- Mac OS X Sierra(10.12) e superior 
-- [Xamarin.iOS](https://docs.microsoft.com/visualstudio/mac/installation)
-- Um [agente do Xamarin Mac conectado ao Visual Studio](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/)
+- O [Projeto inicial do Microsoft Graph para UWP (Biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample/tree/master/starter). Ambos os modelos contêm classes vazias às quais você adicionará código. Ele também contém cadeias de recursos. Para obter este projeto, clone ou baixe o [Exemplo de Conexão com o Microsoft Graph para UWP (Biblioteca)](https://github.com/microsoftgraph/uwp-csharp-connect-sample) e abra a solução dentro da pasta **starter**.
 
 
 ## <a name="register-the-app"></a>Registrar o aplicativo
  
 1. Entre no [Portal de Registro do Aplicativo](https://apps.dev.microsoft.com/) usando sua conta pessoal ou sua conta corporativa ou de estudante.
 2. Selecione **Adicionar um aplicativo**.
-3. Insira um nome para o aplicativo e selecione **Criar**.
+3. Insira um nome para o aplicativo e selecione **Criar aplicativo**.
     
     A página de registro é exibida, listando as propriedades do seu aplicativo.
  
 4. Em **Plataformas**, selecione **Adicionar plataforma**.
 5. Escolha **Aplicativo Nativo**.
-6. Copie o valor da ID do aplicativo e o valor do URI de redirecionamento personalizado (abaixo do cabeçalho do **Aplicativo Nativo**) criados quando você adicionou a plataforma do **Aplicativo Nativo**. Este URI deve conter o valor da ID do aplicativo e estar neste formato: `msal[Application Id]://auth` Você precisará inserir esses valores no aplicativo de exemplo.
+6. Copie a ID de cliente (ID de aplicativo) e os valores do URI de redirecionamento para a área de transferência. Você precisará inserir esses valores no exemplo de aplicativo.
 
-    Essa ID de aplicativo é o identificador exclusivo do aplicativo. 
+    Essa ID de aplicativo é o identificador exclusivo do aplicativo. Um URI de redirecionamento é um URI exclusivo fornecido pelo Windows 10 para cada aplicativo para garantir que as mensagens enviadas para esse URI sejam enviadas somente para esse aplicativo. 
 
 7. Selecione **Salvar**.
 
 ## <a name="configure-the-project"></a>Configurar o projeto
 
 1. Abra o arquivo de solução para o projeto inicial no Visual Studio.
-2. Abra o arquivo **App.cs** dentro do projeto **XamarinConnect (Portátil)** e localize o campo `ClientId`. Substitua o espaço reservado da ID de aplicativo pela ID do aplicativo que você registrou.
+2. Abra o arquivo **App.xaml** do projeto e localize o nó `Application.Resources`. Substitua a ID do aplicativo e redirecione espaços reservados do URI com os valores correspondentes do aplicativo que você registrou.
 
-    ```
-    public static string ClientID = "ENTER_YOUR_CLIENT_ID";
-    public static string RedirectUri = "msal" + ClientID + "://auth";
-    public static string[] Scopes = { "User.Read", "Mail.Send", "Files.ReadWrite" };
-    ```
-    O valor `Scopes` armazena os escopos de permissão do Microsoft Graph que o aplicativo precisará solicitar quando o usuário autenticar. Observe que o construtor de classe `App` usa o valor ClientID para criar uma instância da classe `PublicClientApplication` do MSAL. Você usará essa classe posteriormente para autenticar o usuário.
-    
-    ```
-    IdentityClientApp = new PublicClientApplication(ClientID);
-    ```
 
-3. Abra o arquivo UserDetailsClient.iOS\info.plist em um editor de texto. Não é possível abri-lo no Visual Studio. Localize o elemento `<string>msalENTER_YOUR_CLIENT_ID</string>` abaixo da chave `CFBundleURLSchemes`.
-
-4. Substitua `ENTER_YOUR_CLIENT_ID` pelo valor da ID do aplicativo obtido quando você registrou o aplicativo. Mantenha `msal` antes da ID do aplicativo. O valor da cadeia de caracteres resultante deve ser semelhante a: `<string>msal[application id]</string>`.
-
-5. Abra o arquivo UserDetailsClient.Droid\Properties\AndroidManifest.xml. Localize este elemento: `<data android:scheme="msalENTER_YOUR_CLIENT_ID" android:host="auth" />`.
-
-6. Substitua `ENTER_YOUR_CLIENT_ID` pelo valor da ID do aplicativo obtido quando você registrou o aplicativo. Mantenha `msal` antes da ID do aplicativo. O valor da cadeia de caracteres resultante deve ser semelhante a: `<data android:scheme="msal[application id]" android:host="auth" />`.
+```xml
+    <Application.Resources>
+        <!-- Add your Client Id here. -->
+        <x:String x:Key="ida:ClientID">ENTER_YOUR_CLIENT_ID</x:String>
+        <!-- Add your Redirect URI here. -->
+        <x:String x:Key="ida:ReturnUrl">ENTER_YOUR_REDIRECT_URI</x:String>
+    </Application.Resources>
+```
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Enviar um email com o Microsoft Graph
 
 Abra o arquivo MailHelper.cs em seu projeto inicial. Este arquivo contém o código que constrói e envia um email. Consiste em um único método -- ``ComposeAndSendMailAsync`` -- que constrói e envia uma solicitação POST para o ponto de extremidade **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
-O método ``ComposeAndSendMailAsync`` usa três valores de cadeia de caracteres, ``subject``, ``bodyContent``, e ``recipients``, que são passados para ele pelo arquivo MainPage.xaml.cs. As cadeias de caracteres ``subject`` e ``bodyContent`` são armazenadas, juntamente com todos os outras cadeias de caracteres de interface do usuário no arquivo AppResources.resx. A cadeia de caracteres ``recipients`` vem da caixa de endereço na interface do aplicativo. 
+O método ``ComposeAndSendMailAsync`` tem três valores de cadeia de caracteres, ou seja, ``subject``, ``bodyContent`` e ``recipients``, que são passados para ele pelo arquivo MainPage.xaml.cs. As cadeias de caracteres ``subject`` e ``bodyContent`` são armazenadas, juntamente com todos os outras cadeias de caracteres de interface do usuário, no arquivo Resources.resw. A cadeia de caracteres ``recipients`` vem da caixa de endereço na interface do aplicativo. 
 
-**Usando declarações**
-
-Verifique se você tem essas declarações na parte superior do arquivo:
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using Microsoft.Graph;
-```
-
-A primeira tarefa no método ``ComposeAndSendMailAsync`` é obter a foto do usuário atual a partir do Microsoft Graph. Esta linha chama o método oculto `GetCurrentUserPhotoStreamAsync`:
+A primeira tarefa no método ``ComposeAndSendMailAsync`` é obter a foto do usuário atual a partir do Microsoft Graph. Esta linha chama o método `GetCurrentUserPhotoStreamAsync`:
 
 ```
             // Get current user photo
@@ -131,12 +109,12 @@ Se o usuário não tiver uma foto, essa lógica obterá outro arquivo de imagem 
 
             if (photoStream == null)
             {
-                var assembly = typeof(MailHelper).GetTypeInfo().Assembly;
-                photoStream = assembly.GetManifestResourceStream("XamarinConnect.test.jpg");
+                StorageFile file = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("test.jpg");
+                photoStream = (await file.OpenReadAsync()).AsStreamForRead();
             }
 ```
 
-Agora que temos um fluxo de imagem, podemos carregar o arquivo no OneDrive chamando o método oculto `UploadFileToOneDriveAsync`:
+Agora que temos um fluxo de imagem, podemos carregar o arquivo no OneDrive chamando o método `UploadFileToOneDriveAsync`:
 
 ```
             MemoryStream photoStreamMS = new MemoryStream();
@@ -185,7 +163,7 @@ Podemos também pode usar este fluxo para criar um objeto `MessageAttachmentsCol
             });
 ```
 
-Podemos obter um link de compartilhamento para o arquivo do OneDrive recém-carregado chamando o método oculto `GetSharingLinkAsync`. A cadeia de caracteres `bodyContent` contém um espaço reservado para o link de compartilhamento:
+Podemos obter um link de compartilhamento para o arquivo do OneDrive recém-carregado chamando o método `GetSharingLinkAsync`. A cadeia de caracteres `bodyContent` contém um espaço reservado para o link de compartilhamento:
 
 ```
             // Get the sharing link and insert it into the message body.
@@ -266,7 +244,7 @@ A última tarefa é construir um objeto `Message` e enviá-lo para o ponto de ex
             }
 ```
 
-A classe completa terá a seguinte aparência:
+A classe completa será semelhante a:
 
 ```
     public class MailHelper
@@ -291,8 +269,8 @@ A classe completa terá a seguinte aparência:
 
             if (photoStream == null)
             {
-                var assembly = typeof(MailHelper).GetTypeInfo().Assembly;
-                photoStream = assembly.GetManifestResourceStream("XamarinConnect.test.jpg");
+                StorageFile file = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFileAsync("test.jpg");
+                photoStream = (await file.OpenReadAsync()).AsStreamForRead();
             }
 
             MemoryStream photoStreamMS = new MemoryStream();
@@ -313,7 +291,6 @@ A classe completa terá a seguinte aparência:
             // Get the sharing link and insert it into the message body.
             Permission sharingLink = await GetSharingLinkAsync(photoFile.Id);
             string bodyContentWithSharingLink = String.Format(bodyContent, sharingLink.Link.WebUrl);
-
 
             // Prepare the recipient list
             string[] splitter = { ";" };
@@ -358,6 +335,7 @@ A classe completa terá a seguinte aparência:
                 throw new Exception("We could not send the message: " + e.Message);
             }
         }
+
 
         // Gets the stream content of the signed-in user's photo. 
         // This snippet doesn't work with consumer accounts.
@@ -422,29 +400,25 @@ A classe completa terá a seguinte aparência:
             return permission;
         }
 
-
     }
 ``` 
 
-Agora você realizou as três etapas obrigatórias para interagir com o Microsoft Graph: registro do aplicativo, autenticação do usuário e solicitação. 
+ 
+Você já realizou as etapas obrigatórias para interagir com o Microsoft Graph: registro do aplicativo, autenticação do usuário e solicitações. 
 
 ## <a name="run-the-app"></a>Executar o aplicativo
-1. Escolha o projeto que você deseja excluir. Se escolher a opção Plataforma Universal do Windows, você poderá executar o exemplo no computador local. Se quiser executar o projeto do iOS, você precisará se conectar a um [Mac que tenha as ferramentas Xamarin](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) instaladas nele. (Você também pode abrir esta solução no Xamarin Studio em um Mac e executar o exemplo diretamente de lá). Você pode usar o [Emulador do Visual Studio para Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) se quiser executar o projeto do Android. 
+1. Pressione F5 para criar e executar o aplicativo. 
 
-    ![](images/SelectProject.png "Select project in Visual Studio")
+2. Entre com sua conta pessoal, comercial ou de estudante, e conceda as permissões solicitadas.
 
-2. Pressione F5 para criar e depurar. Execute a solução e entre com sua conta pessoal ou sua conta comercial ou escolar.
-    > **Observação** Talvez seja necessário abrir o Gerenciador de Configuração de Compilação para certificar-se de que as etapas de Compilar e Implantar estejam selecionadas para o projeto do UWP. 
-
-3. Entre com sua conta pessoal, comercial ou de estudante, e conceda as permissões solicitadas.
-
-4. Escolha o botão **Enviar email**. Quando o email for enviado, será exibida uma mensagem de sucesso. Essa mensagem de email inclui a foto em anexo e também fornece um link de compartilhamento para o arquivo carregado no OneDrive.
+3. Escolha o botão **Enviar email**. Quando esse email é enviado, uma mensagem de Sucesso é exibida na parte inferior do botão. A mensagem de email inclui a foto em anexo e também fornece um link de compartilhamento para o arquivo carregado no OneDrive.
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API REST usando o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Localize exemplos de operações comuns na [Biblioteca de Trechos de Código do SDK do Microsoft Graph para Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) ou explore nossos outros [Exemplos de Xamarin](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) no GitHub.
+- Experimente a API REST usando o [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Encontre exemplos de operações comuns para operações REST e SDK no [Exemplo de trechos de UWP do Microsoft Graph (SDK)](https://github.com/microsoftgraph/uwp-csharp-snippets-sample) e no [Exemplo de trechos de UWP do Microsoft Graph (REST)](https://github.com/microsoftgraph/uwp-csharp-snippets-rest-sample) ou explore nossos outros [exemplos de UWP](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=uwp) no GitHub.
 
 ## <a name="see-also"></a>Ver também
 - [Biblioteca de cliente do .NET do Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
-- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
-- [Tokens do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)
+- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
+- [Tokens do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+

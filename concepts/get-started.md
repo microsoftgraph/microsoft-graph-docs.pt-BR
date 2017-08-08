@@ -46,7 +46,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
     <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Exemplo de REST</a>
     </td>     
-     <td>
+    <td>
         <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Exemplo de SDK</a>
     </td> 
   </tr>
@@ -65,7 +65,7 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
         <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
     </td>     
     <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou ¶<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
+        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
     </td> 
   </tr>
   <tr>

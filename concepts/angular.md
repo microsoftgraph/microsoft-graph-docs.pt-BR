@@ -167,7 +167,7 @@ Abra o app.js e adicione o código a seguir na parte inferior do arquivo. Isso i
 4. Como alternativa, edite o endereço de email do destinatário e escolha o botão **Enviar email**. Quando o email for enviado, será exibida uma mensagem de sucesso abaixo do botão. 
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API REST, usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente a API REST usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
 - Explorar nossos outros [exemplos de AngularJS](https://github.com/search?utf8=%E2%9C%93&q=angular+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) no GitHub.
 
 

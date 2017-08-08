@@ -228,8 +228,7 @@ Content-length: 326
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility_open_users.md)
-- 
-  [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 - [Adicionando e verificando um domínio para o NOVO Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Tipo de recurso schemaExtension](../api-reference/v1.0/resources/schemaextension.md)
 - [List schemaExtensions](../api-reference/v1.0/api/schemaextension_list.md)
