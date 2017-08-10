@@ -1,39 +1,4 @@
-# <a name="list-licensedetails"></a>Listar licenseDetails
-
-Recupere uma lista de objetos licenseDetails.
-
-### <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *User.Read*; *User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
-
-### <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/licenseDetails
-GET /users/{id}/licenseDetails
-```
-### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método **não** suporta [Parâmetros da Consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters).
-
-### <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | &lt;Código&gt; de portador|
-
-### <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
-### <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [licenseDetails](../resources/licensedetails.md) no corpo da resposta.
-### <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-
-<!-- {
-  "blockType": "request",
-  "name": "get_licensedetails"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/licenseDetails
-```
-##### <a name="response"></a>Resposta
+<span data-ttu-id="4e962-p101">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4e962-p101">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
