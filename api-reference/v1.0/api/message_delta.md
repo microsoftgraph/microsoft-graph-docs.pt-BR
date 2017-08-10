@@ -4,9 +4,9 @@ Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizada
 
 Uma chamada de função **delta** de mensagens em uma pasta é semelhante a uma solicitação GET, exceto que, aplicando adequadamente os [tokens de estado](../../../concepts/delta_query_overview.md) em uma ou mais dessas chamadas, permite [consultar alterações incrementais nas mensagens dessa pasta](../../../concepts/delta_query_messages.md). Isso permite manter e sincronizar um armazenamento local de mensagens do usuário sem ter de buscar todo o conjunto de mensagens do usuário sempre que precisar dele.  
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: _Mail.Read_; _Mail.ReadWrite_
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
@@ -32,10 +32,10 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
   * A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
 - Não há suporte DAV para `$search`.
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 
@@ -43,7 +43,7 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 ### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [message](../resources/message.md) no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra como fazer uma única chamada de função **delta** e limitar o número máximo de mensagens no corpo da resposta a dois.
 
@@ -65,7 +65,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +95,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Ver também
+### <a name="see-also"></a>Veja também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)

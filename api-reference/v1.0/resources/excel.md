@@ -9,7 +9,7 @@ Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) 
 retorna uma coleção de todos os objetos da planilha que fazem parte da pasta de trabalho.    
 
 
-** Observação: A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML. Não há suporte para pastas de trabalho de extensão de `.xls`. 
+**Observação:** A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML. Não há suporte para pastas de trabalho de extensão de `.xls`. 
 
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
@@ -30,9 +30,9 @@ As APIs do Excel podem ser chamadas em um destes dois modos:
 
 Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`. 
 
->**Observação:** O cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada da API _serão_ mantidas como persistentes no arquivo.  
+>**Observação:** O cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
 
-### <a name="api-call-to-get-a-session"></a>Chamada de API para obter uma sessão 
+### <a name="api-call-to-get-a-session"></a>Chamada à API para obter uma sessão 
 
 #### <a name="request"></a>Solicitação 
 
@@ -1191,7 +1191,7 @@ Quando uma operação de atualização é tentada nesse intervalo, a API retorna
 
 ### <a name="large-range"></a>Intervalo longo
 
-Um intervalo longo significa um intervalo cujo tamanho é muito grande para uma única chamada de API. Muitos fatores, como o número de células, os valores, os formatos de número e as fórmulas incluídas no intervalo, podem fazer com que a resposta seja tão extensa a ponto de se tornar inadequada para interação com a API. A API faz a melhor tentativa para retornar ou gravar os dados solicitados. No entanto, o tamanho extenso envolvido pode resultar em uma condição de erro da API devido à intensa utilização de recursos.
+Um intervalo longo significa um intervalo cujo tamanho é muito grande para uma única chamada à API. Muitos fatores, como o número de células, os valores, os formatos de número e as fórmulas incluídas no intervalo, podem fazer com que a resposta seja tão extensa a ponto de se tornar inadequada para interação com a API. A API faz a melhor tentativa para retornar ou gravar os dados solicitados. No entanto, o tamanho extenso envolvido pode resultar em uma condição de erro da API devido à intensa utilização de recursos.
 
 Para evitar isso, convém fazer leituras ou gravações para um intervalo longo em vários tamanhos de intervalo menores.
 

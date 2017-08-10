@@ -1,22 +1,22 @@
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 
 Atualize as propriedades do objeto **plannertaskdetails**.
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
 
 *Group.ReadWrite.All*
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/tasks/<id>/details
 ```
-### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | If-Match  | O último valor ETag conhecido do objeto **plannerTaskDetails** a ser atualizado. Obrigatório.|
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
@@ -31,9 +31,9 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_plannertaskdetails"

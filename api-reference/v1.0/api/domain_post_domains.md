@@ -4,23 +4,23 @@ Adiciona um domínio ao inquilino.
 
 **Importante**: Você não pode usar um domínio associado ao seu locatário do Azure AD até que a propriedade seja verificada. Confira [Listar verificationDnsRecords](domain_list_verificationdnsrecords.md) para obter mais detalhes. Os domínios raiz exigem verificação. Por exemplo, contoso.com exige verificação. Se um domínio raiz for verificado, os subdomínios do domínio raiz serão verificados automaticamente. Por exemplo, o subdominio.contoso.com é automaticamente verificado se contoso.com for verificado.
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Um dos seguintes **escopos** é obrigatório para executar esta API: *Domain.ReadWrite.All* ou *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains
 ```
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório.|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [domain](../resources/domain.md).
 
 > O corpo da solicitação contém a propriedade id do novo domínio. Id é a única propriedade que pode ser especificada e isso é necessário. O valor da propriedade id é o nome de domínio totalmente qualificado para criar.
@@ -28,7 +28,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [domain](
 ### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [domain](../resources/domain.md) no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
 No corpo da solicitação, forneça uma representação JSON do objeto [domain](../resources/domain.md).

@@ -8,7 +8,7 @@ Todas as chamadas para o serviço do OneNote pela API do Microsoft Graph usam es
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-A localização pode ser blocos de anotações do usuário no Office 365 ou OneDrive de consumidor e blocos de anotações de grupo no Office 365. Blocos de anotações hospedados no SharePoint não são compatíveis no momento. 
+A localização pode ser blocos de anotações do usuário no Office 365 ou OneDrive do consumidor, blocos de anotações de grupo ou blocos de anotações hospedado no site de equipe do SharePoint no Office 365. 
 
 **Blocos de anotações do usuário** Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
@@ -23,44 +23,22 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+**Blocos de anotações do site do SharePoint** para acessar blocos de anotações que pertencem a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
 
-Os seguintes escopos de permissão fornecem níveis de acesso aos blocos de anotações do OneNote. A escolha de escopos de permissão depende tanto do local dos blocos de anotação desejado e da funcionalidade de seu aplicativo. 
+```
+https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
+```
+## <a name="authorization"></a>Autorização
 
-**Escopos de blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business pertencentes ao usuário atual**
+Para obter informações sobre as permissões necessárias para trabalhar com o APIs do OneNote, confira [Permissões de anotações](../../../concepts/permissions_reference.md#notes-permissions).
 
-| Escopo | Permissão no Portal do Azure | Descrição |
-|:-------|:------|:------|
-| Notes.Create | Criar blocos de anotações do OneNote do usuário | Pode exibir os títulos dos seus blocos de anotações e das seções do OneNote. Crie novos blocos de anotações, seções e páginas. |
-| Notes.Read | Ler blocos de anotações do OneNote do usuário | Pode ler seus blocos de anotações do OneNote. |
-| Notes.ReadWrite | Ler e gravar blocos de anotações do OneNote do usuário | Pode ler, compartilhar e modificar seus blocos de anotações do OneNote. |
-
-**Escopos de blocos de anotações pessoais compartilhados por outros usuários e blocos de anotações de grupo que o usuário atual pode acessar**
-
-| Escopo | Permissão no Portal do Azure | Descrição |
-|:-------|:------|:------|
-| Notes.Read.All | Ler todos os blocos de anotações do OneNote que o usuário pode acessar | Pode ler todos os blocos de anotações do OneNote que o usuário conectado tenha acesso. |
-| Notes.ReadWrite.All | Ler e gravar todos os blocos de anotações do OneNote que o usuário pode acessar | Pode ler, compartilhar e modificar todos os blocos de anotações do OneNote que o usuário conectado tenha acesso. |
-
-**Observação:** O acesso a blocos de anotações do site do SharePoint pela API Graph não é suportada atualmente.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "notebooks",
-    "pages",
-    "resources",
-    "sectionGroups",
-    "sections"
-  ],
-  "@odata.type": "microsoft.graph.onenote"
-}-->
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |notebooks|Coleção [Notebook](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
 |operations|Coleção [Operation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
-|pages|Coleção [Page](page.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|páginas|Coleção [Page](page.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 |resources|Coleção [Resource](resource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|
 |sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 |sections|Coleção [Section](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|

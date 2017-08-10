@@ -60,7 +60,7 @@ A resposta a essa solicitação fornecerá os detalhes da [uploadSession](../res
 POST https://graph.microsoft.com/v1.0/me/drive/root:/{item-path}:/createUploadSession
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response-example"></a>Exemplo de resposta
 Veja a seguir um exemplo da resposta.
 
 <!-- {
@@ -100,7 +100,7 @@ Content-Range: bytes 0-25/128
 
 **Importante:** Seu aplicativo deve garantir que o tamanho total do arquivo especificado no cabeçalho **Content-Range** seja o mesmo para todas as solicitações. Se um fragmento declarar um tamanho de arquivo diferente, a solicitação falhará.
 
-### <a name="response"></a>Resposta
+#### <a name="response-example"></a>Exemplo de resposta
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -166,7 +166,7 @@ A solicitação DELETE fará com que a sessão de upload expire imediatamente e 
 DELETE https://tenant-my.sharepoint.com/alkjl1kjklna
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response-example"></a>Exemplo de resposta
 
 <!-- { "blockType": "response" } -->
 ```http

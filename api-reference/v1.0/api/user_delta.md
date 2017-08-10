@@ -4,9 +4,9 @@ A [consulta delta](../../../concepts/delta_query_overview.md) permite que aplica
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Um dos seguintes **escopos** é necessário para executar esta API: *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *User.Read; User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 
 Para iniciar o rastreamento de alterações, faça uma solicitação incluindo a função delta no recurso de usuários. 
 
@@ -19,12 +19,12 @@ GET /users/delta
 
 O controle de alterações em usuários corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
 
-| Parâmetro de consulta       | Tipo    |Descrição|
+| Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de usuários indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de usuários. |
 
-### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método dá suporte a Parâmetros de Consulta OData para ajudar a personalizar a resposta.
 
@@ -33,13 +33,13 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 - Há suporte limitado para `$orderby`: A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
 - Não há suporte DAV para `$search`.
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
@@ -54,7 +54,7 @@ Confira:</br>
 - [Usando a Consulta Delta](../../../concepts/delta_query_overview.md) para obter detalhes</br>
 - [Obter as alterações incrementais para usuários](../../../concepts/delta_query_users.md) para solicitações de um exemplo.</br>
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",

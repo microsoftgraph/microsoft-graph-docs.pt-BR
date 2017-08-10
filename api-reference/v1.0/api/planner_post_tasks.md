@@ -1,23 +1,23 @@
 # <a name="create-plannertask"></a>Criar plannerTask
 
 Use essa API para criar um novo **plannerTask**.
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 Os seguintes **escopos** são necessários para executar esta API: 
 
 *Group.ReadWrite.All*
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
 
 ```
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerTask](../resources/plannertask.md). A propriedade planId do **plannerTask** deve ser definida como a id de um objeto [plannerPlan](../resources/plannerplan.md) existente.
 
 ### <a name="response"></a>Resposta
@@ -25,7 +25,7 @@ Se bem-sucedido, este método retorna o código de resposta `201, Created` e o o
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {

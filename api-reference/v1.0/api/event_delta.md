@@ -4,10 +4,10 @@ Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados 
 
 A chamada de função **delta** para eventos é semelhante a uma solicitação `GET /calendarview` por um intervalo de dados no calendário principal do usuário, exceto ao aplicar [tokens de estado](../../../concepts/delta_query_overview.md) de forma apropriada em uma ou mais dessas chamadas, você pode consultar alterações incrementais no modo de exibição de calendário. Isso permite manter e sincronizar um armazenamento local de eventos do usuário no calendário principal, sem precisar buscar todos os eventos do calendário do servidor de cada vez.
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: _Calendars.Read_; _Calendars.ReadWrite_ 
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -30,19 +30,19 @@ O controle de alterações em eventos corresponde a uma série de uma ou mais ch
 Quando você faz uma consulta delta em um modo de exibição de calendário, espera obter todas as propriedades que obteria normalmente de uma solicitação `GET /calendarview`. O `$select` não é compatível nesse caso. 
 
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | string  | odata.maxpagesize={x}. Opcional. |
+| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 | Preferir | string | {Fuso horário}. Opcional, supõe-se o UTC se estiver ausente.|
 
 
 ### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra como fazer uma única chamada de função **delta** e limitar o número máximo de eventos no corpo da resposta a 2.
@@ -64,7 +64,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado, qu
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +94,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>Ver também
+### <a name="see-also"></a>Veja também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para os eventos em um calendário](../../../concepts/delta_query_events.md)

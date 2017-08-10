@@ -11,12 +11,13 @@ Notes.ReadWrite ou Notes.ReadWrite.All
 ```http
 DELETE /me/onenote/pages/{id}
 DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
-DELETE /groups/{id}/oennote/pages/{id}
+DELETE /groups/{id}/onenote/pages/{id}
+DELETE /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 
 ## <a name="response"></a>Resposta
@@ -24,7 +25,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "delete_page"

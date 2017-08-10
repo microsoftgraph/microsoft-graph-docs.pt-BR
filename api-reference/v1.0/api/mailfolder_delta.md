@@ -4,17 +4,17 @@ Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou remo
 
 Uma chamada de função **delta** de pastas de email em uma caixa de correio é semelhante a uma solicitação GET, exceto que, aplicando adequadamente os [tokens de estado](../../../concepts/delta_query_overview.md) em uma ou mais dessas chamadas, permite consultar alterações incrementais nas pastas de email. Isso permite manter e sincronizar um armazenamento local de pastas de email do usuário sem ter que sempre buscar todas as pastas de email dessa caixa de correio.
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API: _Mail.Read_; _Mail.ReadWrite_
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
 GET /users/<id>/mailFolders/delta
 ```
 
-### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 O controle de alterações em pastas de email corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, basta copiar e aplicar a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
 
@@ -28,18 +28,18 @@ O controle de alterações em pastas de email corresponde a uma série de uma ou
 
 Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type  | cadeia de caracteres  | application/json. Obrigatório. |
-| Preferir | string  | odata.maxpagesize={x}. Opcional. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Content-Type  | string  | application/json. Obrigatório. |
+| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 
 
 ### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra como fazer uma única chamada de função **delta** e limitar o número máximo de pastas de email no corpo da resposta a 2.
 
@@ -64,7 +64,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,7 @@ Content-length: 254
 }
 ```
 
-### <a name="see-also"></a>Ver também
+### <a name="see-also"></a>Veja também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)

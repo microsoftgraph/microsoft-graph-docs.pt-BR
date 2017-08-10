@@ -26,11 +26,11 @@ Você pode fazer tudo isso e muito mais com a API do Microsoft Graph.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Confira alguns [Cenários em destaque](featured_scenarios.md).
+- Confira alguns [Cenários em destaque](../concepts/featured_scenarios.md).
 - Tente uma solicitação de amostra no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer)
 - Use o [início rápido](https://developer.microsoft.com/graph/quick-start) para configurar um aplicativo de amostra pronto para funcionar.
-- Descubra como [obter um token de autenticação](auth_overview.md) em seu aplicativo.
-- Iniciar [usando a API](use_the_api.md).
+- Descubra como [obter um token de autenticação](../concepts/auth_overview.md) em seu aplicativo.
+- Iniciar [usando a API](../concepts/use_the_api.md).
 
 ## <a name="feedback"></a>Comentários?
 

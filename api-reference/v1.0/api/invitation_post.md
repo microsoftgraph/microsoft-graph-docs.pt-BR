@@ -7,21 +7,21 @@ Ao criar um novo convite, você tem várias opções disponíveis:
 1. À criação do convite, o Microsoft Graph pode enviar automaticamente um email de convite diretamente ao usuário convidado, ou seu aplicativo pode usar o *inviteRedeemUrl* retornado na resposta da criação para articular o seu próprio convite (por meio de seu mecanismo de comunicação de preferência) para o usuário convidado. Se você decidir fazer com que o Microsoft Graph envie um email de convite automaticamente, poderá controlar o conteúdo e o idioma do email usando [ *invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
 2. Quando o usuário é convidado, uma entidade de usuário (do userType Convidado) é criada e, agora, pode ser usada para o controle do acesso aos recursos. O usuário convidado precisa passar pelo processo de resgate para acessar os recursos para os quais ele foi convidado.
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes escopos é necessário para a execução desta API: *User.Invite.All* ou *User.ReadWrite.All*  ou *Directory.ReadWrite.All*
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type  | application/json  |
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [invitation](../resources/invitation.md).
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um convite.
@@ -35,9 +35,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um convi
 ### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"

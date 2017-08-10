@@ -1,4 +1,4 @@
-Lista de proprietários do Gr nº 
+# <a name="list-owners"></a>Listar proprietários
 
 Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. 
 
@@ -15,7 +15,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -23,7 +23,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_owners"

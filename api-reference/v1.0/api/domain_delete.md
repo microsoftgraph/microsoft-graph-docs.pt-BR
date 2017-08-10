@@ -6,11 +6,11 @@ Exclui um domínio de um locatário.
 > - Os domínios excluídos não podem ser recuperados.<br />
 > - As tentativas de exclusão falharão se houver objetos ou recursos dependentes no domínio. Você pode encontrar todos os recursos dependentes usando a API [Listar domainNameReferences](domain_list_domainnamereferences.md).
 
-### <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Um dos seguintes **escopos** é obrigatório para executar esta API: *Domain.ReadWrite.All* ou *Directory.AccessAsUser.All*
 
-### <a name="http-request"></a>Solicitação HTTP
+## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /domains/{id}
@@ -18,14 +18,14 @@ DELETE /domains/{id}
 
 > Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Content-Type  | application/json |
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
 
 Não forneça um corpo de solicitação para esse método.
 
@@ -33,7 +33,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna um corpo de resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
 <!-- {

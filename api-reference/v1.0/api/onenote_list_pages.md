@@ -12,6 +12,7 @@ Notes.Read, Notes.ReadWrite, Notes.Read.All ou Notes.ReadWrite.All
 GET /me/onenote/pages
 GET /users/{id | userPrincipalName}/onenote/pages
 GET /groups/{id}/onenote/pages
+GET /sites/{id}/onenote/pages
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
@@ -23,7 +24,7 @@ A resposta padrão expande `parentSection` e escolhe as propriedades `id`, `disp
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Aceitar | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -32,7 +33,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [page](../resources/page.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
