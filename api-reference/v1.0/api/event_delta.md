@@ -1,6 +1,6 @@
-<span data-ttu-id="67c86-p112">Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="67c86-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8336c-p112">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8336c-p112">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
-Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -30,10 +30,10 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a><span data-ttu-id="67c86-166">Veja também</span><span class="sxs-lookup"><span data-stu-id="67c86-166">See also</span></span>
+### <a name="see-also"></a><span data-ttu-id="8336c-166">Ver também</span><span class="sxs-lookup"><span data-stu-id="8336c-166">See also</span></span>
 
-- [<span data-ttu-id="67c86-167">Usar a consulta delta para controlar alterações nos dados do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="67c86-167">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
-- [<span data-ttu-id="67c86-168">Obter as alterações incrementais para os eventos em um calendário</span><span class="sxs-lookup"><span data-stu-id="67c86-168">Get incremental changes to events in a calendar</span></span>](../../../concepts/delta_query_events.md)
+- [<span data-ttu-id="8336c-167">Usar a consulta delta para controlar alterações nos dados do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="8336c-167">Use delta query to track changes in Microsoft Graph data</span></span>](../../../concepts/delta_query_overview.md)
+- [<span data-ttu-id="8336c-168">Obter as alterações incrementais para os eventos em um calendário</span><span class="sxs-lookup"><span data-stu-id="8336c-168">Get incremental changes to events in a calendar</span></span>](../../../concepts/delta_query_events.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

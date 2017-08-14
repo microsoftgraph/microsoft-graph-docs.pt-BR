@@ -1,4 +1,4 @@
-<span data-ttu-id="3233a-p103">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As [propriedades padrão](../api/group_get.md#default-properties) serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3233a-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
+<span data-ttu-id="fcb44-p103">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As [propriedades padrão](../api/group_get.md#default-properties) serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fcb44-p103">Note: The response object shown here may be truncated for brevity. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.</span></span>
 
 Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As [propriedades padrão](../api/group_get.md#default-properties) serão retornadas de uma chamada real.
 

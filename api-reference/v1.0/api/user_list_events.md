@@ -1,4 +1,4 @@
-<span data-ttu-id="1b74a-p107">Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato HTML padrão.</span><span class="sxs-lookup"><span data-stu-id="1b74a-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
+<span data-ttu-id="562f6-p107">Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato HTML padrão.</span><span class="sxs-lookup"><span data-stu-id="562f6-p107">Here is an example of the response. The **body** property is returned in the default HTML format.</span></span>
 Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato HTML padrão.
 <!-- {
   "blockType": "response",

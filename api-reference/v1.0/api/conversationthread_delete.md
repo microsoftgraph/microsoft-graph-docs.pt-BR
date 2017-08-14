@@ -1,11 +1,10 @@
-<span data-ttu-id="3a4f8-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3a4f8-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="0fe02-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0fe02-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <span data-ttu-id="3a4f8-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3a4f8-117">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="3a4f8-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a4f8-118">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="3a4f8-119">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3a4f8-119">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0fe02-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0fe02-117">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0fe02-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0fe02-118">Request</span></span>
+<span data-ttu-id="0fe02-119">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0fe02-119">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_conversationthread"
@@ -13,9 +12,8 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 ```http
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
-##### <span data-ttu-id="3a4f8-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a4f8-120">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="3a4f8-121">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3a4f8-121">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="0fe02-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="0fe02-120">Response</span></span>
+<span data-ttu-id="0fe02-121">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0fe02-121">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

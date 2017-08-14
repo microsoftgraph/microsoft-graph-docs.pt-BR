@@ -1,11 +1,10 @@
-<span data-ttu-id="b1844-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1844-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4ea4c-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4ea4c-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <span data-ttu-id="b1844-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b1844-123">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="b1844-124">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b1844-124">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="b1844-125">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b1844-125">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="4ea4c-123">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4ea4c-123">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4ea4c-124">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4ea4c-124">Request</span></span>
+<span data-ttu-id="4ea4c-125">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4ea4c-125">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
 "name": "delete_photo"
@@ -13,9 +12,8 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-##### <span data-ttu-id="b1844-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1844-126">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="b1844-127">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1844-127">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="4ea4c-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="4ea4c-126">Response</span></span>
+<span data-ttu-id="4ea4c-127">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4ea4c-127">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false

@@ -1,15 +1,13 @@
-<span data-ttu-id="252be-p110">Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).</span><span class="sxs-lookup"><span data-stu-id="252be-p110">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.</span></span>
+<span data-ttu-id="db259-p110">Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).</span><span class="sxs-lookup"><span data-stu-id="db259-p110">Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes) for examples.</span></span>
 - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/en-us/graph/docs/overview/release_notes#group-permission-scopes).
 
-## <span data-ttu-id="252be-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="252be-162">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="252be-163">Se bem-sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="252be-163">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="db259-162">Resposta</span><span class="sxs-lookup"><span data-stu-id="db259-162">Response</span></span>
 
-## <span data-ttu-id="252be-164">Exemplo</span><span class="sxs-lookup"><span data-stu-id="252be-164">Example</span></span>
-<a id="example" class="xliff"></a>
+<span data-ttu-id="db259-163">Se bem-sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="db259-163">If successful, this method returns a `204 No Content` response code.</span></span>
 
-##### <span data-ttu-id="252be-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="252be-165">Request</span></span>
-<a id="request" class="xliff"></a>
+## <a name="example"></a><span data-ttu-id="db259-164">Exemplo</span><span class="sxs-lookup"><span data-stu-id="db259-164">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="db259-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="db259-165">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -32,8 +30,7 @@ Content-length: 211
 }
 ```
 
-##### <span data-ttu-id="252be-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="252be-166">Response</span></span>
-<a id="response" class="xliff"></a>
+##### <a name="response"></a><span data-ttu-id="db259-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="db259-166">Response</span></span>
 
 <!-- {
   "blockType": "response",

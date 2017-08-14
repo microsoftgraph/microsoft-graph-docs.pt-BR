@@ -1,13 +1,11 @@
-<span data-ttu-id="36714-p123">Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.</span><span class="sxs-lookup"><span data-stu-id="36714-p123">A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.</span></span>|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
+<span data-ttu-id="58298-p123">Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.</span><span class="sxs-lookup"><span data-stu-id="58298-p123">A string value that can be used to classify user types in your directory, such as “Member” and “Guest”. Supports $filter.</span></span>|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
-## <span data-ttu-id="36714-261">Resposta</span><span class="sxs-lookup"><span data-stu-id="36714-261">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="36714-262">Se bem-sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="36714-262">If successful, this method returns a `204 No Content` response code.</span></span>
-## <span data-ttu-id="36714-263">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36714-263">Example</span></span>
-<a id="example" class="xliff"></a>
-##### <span data-ttu-id="36714-264">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36714-264">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="36714-265">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="36714-265">Here is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="58298-261">Resposta</span><span class="sxs-lookup"><span data-stu-id="58298-261">Response</span></span>
+
+<span data-ttu-id="58298-262">Se bem-sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="58298-262">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="example"></a><span data-ttu-id="58298-263">Exemplo</span><span class="sxs-lookup"><span data-stu-id="58298-263">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="58298-264">Solicitação</span><span class="sxs-lookup"><span data-stu-id="58298-264">Request</span></span>
+<span data-ttu-id="58298-265">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="58298-265">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_user"
@@ -40,9 +38,8 @@ Content-length: 491
   "companyName": "companyName-value"
 }
 ```
-##### <span data-ttu-id="36714-266">Resposta</span><span class="sxs-lookup"><span data-stu-id="36714-266">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="36714-267">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="36714-267">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="58298-266">Resposta</span><span class="sxs-lookup"><span data-stu-id="58298-266">Response</span></span>
+<span data-ttu-id="58298-267">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="58298-267">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

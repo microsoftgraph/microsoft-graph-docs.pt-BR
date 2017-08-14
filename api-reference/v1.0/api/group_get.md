@@ -1,4 +1,4 @@
-<span data-ttu-id="ee496-p104">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades padrão serão retornadas de uma chamada real, conforme descrito abaixo.</span><span class="sxs-lookup"><span data-stu-id="ee496-p104">Note: The response object shown here may be truncated for brevity. The default properties will be returned from an actual call, as described above.</span></span>
+<span data-ttu-id="29db9-p104">Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades padrão serão retornadas de uma chamada real, conforme descrito abaixo.</span><span class="sxs-lookup"><span data-stu-id="29db9-p104">Note: The response object shown here may be truncated for brevity. The default properties will be returned from an actual call, as described above.</span></span>
 
 Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades padrão serão retornadas de uma chamada real, conforme descrito abaixo.
 <!-- {

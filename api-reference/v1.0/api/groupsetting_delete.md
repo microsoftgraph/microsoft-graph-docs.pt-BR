@@ -1,9 +1,9 @@
-<span data-ttu-id="13621-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="13621-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="34737-p102">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="34737-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
 
-## <a name="example"></a><span data-ttu-id="13621-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="13621-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="13621-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="13621-121">Request</span></span>
+## <a name="example"></a><span data-ttu-id="34737-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="34737-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="34737-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="34737-121">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_groupsetting"
@@ -11,7 +11,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 ```http
 DELETE https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="13621-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="13621-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="34737-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="34737-122">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
