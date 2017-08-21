@@ -2,7 +2,18 @@
 
 Assina um aplicativo de escuta para receber notificações quando os dados no Microsoft Graph são alterados.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes valores de **escopos**, dependendo do recurso de destino, é obrigatório para executar essa API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* ou *Files.ReadWrite.All*. ***Observação:*** O ponto de extremidade /v1.0 dá permissões do aplicativo para a maioria dos recursos. Não há suporte para conversas em grupo e itens da unidade raiz do OneDrive com permissões de aplicativo.
+Criar uma assinatura exige escopo de leitura para o recurso. Por exemplo, para obter mensagens de notificações, seu aplicativo precisa da permissão `Mail.Read`. A tabela a seguir lista a permissão sugerida necessária para cada recurso.
+
+| Tipo de recurso / item        | Escopo               |
+|-----------------------------|---------------------|
+| Contatos                    | Contacts.Read       |
+| Conversas               | Group.Read.All      |
+| Eventos                      | Calendars.Read      |
+| Mensagens                    | Mail.Read           |
+| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
+| Unidades (unidades e conteúdo compartilhados do Sharepoint) | Files.ReadWrite.All |
+
+ ***Observação:*** O ponto de extremidade /v1.0 dá permissões do aplicativo para a maioria dos recursos. Não há suporte para conversas em grupo e itens da unidade raiz do OneDrive com permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -15,10 +26,10 @@ POST /subscriptions
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
-
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
+
 Se for bem-sucedido, esse método retornará um código de resposta `201, Created` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
@@ -84,7 +95,7 @@ Content-type: text/plain
 Content-length: 7
 <token>
 ```
-##### <a name="notification-payload"></a>Carga de notificação
+## <a name="notification-payload"></a>Carga de notificação
 Quando o recurso assinado mudar, a as alterações de recurso inscrito, as instalações de webhooks enviarão uma notificação para a URL de notificação com a seguinte carga.  O ponto de extremidade de notificação deve enviar uma resposta de 200 ou 204 sem um corpo de resposta dentro de 30 segundos. Caso contrário, a tentativa de notificação será repetida em intervalos exponencialmente crescentes.  Os serviços que demoram consistentemente 30 segundos ou mais podem ser limitados e recebem um conjunto de notificação mais esparso.
 
 Os serviços também podem retornar uma resposta 422 de uma notificação. Nesse caso, a assinatura será automaticamente excluída, e o fluxo de notificações será interrompido.

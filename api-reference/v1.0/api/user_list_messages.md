@@ -5,7 +5,7 @@ Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pas
 No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.Read; Mail.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Read; Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 
 Para obter todas as mensagens na caixa de correio do usuário:
@@ -34,14 +34,16 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
 
 O tamanho de página padrão para essa solicitação é dez mensagens.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_messages"

@@ -8,18 +8,38 @@ Usando a API REST do Microsoft Graph, um aplicativo pode se inscrever para alter
 * Eventos
 * Contatos
 * Conversas em grupo
-* Itens raiz de unidade
+* Conteúdo compartilhado no OneDrive, incluindo unidades associadas a sites do SharePoint
+* Pastas de OneDrive pessoais do usuário
+
+Por exemplo, você pode criar uma assinatura para uma pasta específica: `me/mailfolders('inbox')/messages`
+
+Ou para um recurso de nível superior: `me/messages`, `me/contacts`, `me/events`
+
+Ou em uma unidade do Sharepoint / OneDrive for Business: `/drive/root`
+
+Ou no OneDrive pessoal de um usuário: `/drives/{id}/root`
+`/drives/{id}/root/subfolder`
 
 Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações por push para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
 
-Os aplicativos devem renovar suas assinaturas antes de expirarem. Eles também podem cancelar a assinatura a qualquer momento para deixarem de receber notificações.
+Os aplicativos devem renovar suas assinaturas antes de expirarem. Atualmente, o tempo de expiração mais longo é de três dias menos 90 minutos do tempo de criação. Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, eles precisarão criar uma nova assinatura.
 
-Veja os exemplos de código a seguir no GitHub.
+Os aplicativos também podem cancelar a assinatura a qualquer momento para deixarem de receber notificações.
+
+Em geral, as operações de assinatura exigem permissão de leitura ao recurso. Por exemplo, para obter notificações de mensagens, seu aplicativo precisa da permissão `Mail.Read`. O artigo [criar assinatura](../api/subscription_post_subscriptions.md) lista as permissões necessárias para cada tipo de recurso. A tabela a seguir lista os tipos de permissões que o aplicativo pode solicitar para usar webhooks para tipos específicos de recursos. 
+
+| Tipo de permissão | Tipos de recurso com suporte na v1.0 |
+|:----------------|:---------------------------------|
+| Delegado - conta corporativa ou de estudante | [contact](contact.md), [conversation](conversation.md), [drive](drive.md), [event](event.md), [message](message.md) |
+| Delegado - conta pessoal da Microsoft | None |
+| Aplicativo | [contact](contact.md), [conversation](conversation.md), [event](event.md), [message](message.md) |
+
+## <a name="code-samples"></a>Code samples
+
+Os exemplos de código a seguir estão disponíveis no GitHub.
 
 * [Exemplo de webhooks do Microsoft Graph para Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 * [Exemplo de webhooks do Microsoft Graph para ASP,NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-
-Vamos examinar o processo de assinatura.
 
 # <a name="creating-a-subscription"></a>Criando uma assinatura
 
@@ -32,20 +52,6 @@ Criar uma assinatura é a primeira etapa para começar a receber notificações 
 3. O cliente enviará o token de validação de volta para o Microsoft Graph.
 
 O cliente deve armazenar a ID da assinatura para correlacionar uma notificação com a assinatura correspondente.
-
-## <a name="characteristics-of-subscriptions"></a>Características de assinaturas
-
-Você pode criar assinaturas para recursos, como mensagens, eventos, contatos e itens de raiz de unidade.
-
-Você pode criar uma assinatura para uma pasta específica: `https://graph.microsoft.com/v1.0/me/mailfolders('inbox')/messages`
-
-Ou para um recurso de nível superior: `https://graph.microsoft.com/v1.0/me/messages`
-
-Ou em um item raiz de unidade: `https://graph.microsoft.com/v1.0/me/drive/root`
-
-Na maioria dos casos, criar uma assinatura exige escopo de leitura para o recurso. Por exemplo, para obter mensagens de notificações, seu aplicativo precisa da permissão `mail.read`. Observe que, atualmente, a permissão `Files.ReadWrite` é obrigatória para itens raiz de unidade do OneDrive, enquanto unidades associadas a sites do SharePoint exigem `Files.ReadWrite.All`.
-
-Assinaturas possuem uma data de expiração. O tempo de expiração mais longo é de três dias menos 90 a 4230 minutos do tempo de criação. Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, eles precisarão criar uma nova assinatura.
 
 ## <a name="notification-url-validation"></a>Validação da URL de notificação
 

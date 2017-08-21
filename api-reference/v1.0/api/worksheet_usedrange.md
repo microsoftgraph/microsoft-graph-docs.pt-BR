@@ -27,12 +27,13 @@ No URL de solicitação, forneça um parâmetro de consulta opcional.
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Aqui está um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "worksheet_usedrange"

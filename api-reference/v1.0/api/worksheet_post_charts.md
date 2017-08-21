@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts/
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Chart](../resources/chart.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Chart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

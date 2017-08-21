@@ -2,7 +2,7 @@
 
 Use esta API para criar um novo [event](../resources/event.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.ReadWrite.All*
+Um dos seguintes **escopos** é necessário para executar esta API: *Group.ReadWrite.All*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -17,8 +17,8 @@ POST /groups/{id}/calendar/events
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Event](../resources/event.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

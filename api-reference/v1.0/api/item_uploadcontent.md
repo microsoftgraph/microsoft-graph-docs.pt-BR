@@ -7,7 +7,10 @@ Para carregar arquivos grandes, confira [Carregar arquivos grandes com uma sess�
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -22,6 +25,7 @@ PUT /groups/{id}/drive/items/{parent-id}/children/{filename}/content
 O conteúdo do corpo da solicitação deve ser o fluxo binário do arquivo a ser carregado.
 
 ## <a name="response"></a>Resposta
+
 Se for bem-sucedido, este método retornará um objeto [driveItem](../resources/driveitem.md) no corpo da resposta para o arquivo recém-criado.
 
 ## <a name="example"></a>Exemplo
@@ -38,8 +42,10 @@ Content-type: text/plain
 The contents of the file goes here.
 ```
 
-## <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

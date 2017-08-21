@@ -17,14 +17,14 @@ GET /workbook/worksheets/{id|name}/Cell(row=<row>,column=<column>)
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "worksheet_cell"

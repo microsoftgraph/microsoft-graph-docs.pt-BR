@@ -13,7 +13,7 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -25,8 +25,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao ativar uma fun
 |:---------|:---------|:---------|
 |roleTemplateId | string | A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [directoryRole](../resources/directoryrole.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

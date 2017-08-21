@@ -10,7 +10,7 @@ Um **site** é endereçado para ser um identificador exclusivo que é uma ID com
 * ID exclusiva do conjunto de sites (guid)
 * ID exclusiva do site (guid)
 
-Também é um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:
+Há também um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:
 
 * `/sites/root`: O site raiz do locatário.
 * `/groups/{group-id}/sites/root`: O site da equipe do grupo.
@@ -49,7 +49,7 @@ GET /groups/{group-id}/sites/root
 
 ## <a name="example"></a>Exemplo
 
-### <a name="request"></a>Solicitação
+##### <a name="request"></a>Solicitação
 
 <!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -57,7 +57,7 @@ GET /groups/{group-id}/sites/root
 GET https://graph.microsoft.com/v1.0/sites/{site-id}
 ```
 
-### <a name="response"></a>Resposta
+##### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

@@ -4,7 +4,7 @@ Adicione um novo usuário ou grupo à lista acceptedSender.
 
 Especifique o usuário ou grupo em `@odata.id` no corpo da solicitação. Os usuários na lista de remetentes aceitos podem postar em conversas do grupo. Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.ReadWrite.All*
+Um dos seguintes **escopos** é necessário para executar esta API: *Group.ReadWrite.All*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,13 +18,13 @@ POST /groups/{id}/acceptedSenders/$ref
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça a id de um objeto de usuário ou grupo.
 
-
 ## <a name="response"></a>Resposta
+
 Este método retorna o código de resposta `204, No Content` e nenhum corpo de resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_group"

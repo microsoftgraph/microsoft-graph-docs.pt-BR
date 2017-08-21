@@ -21,8 +21,8 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [ChartPoints](../resources/chartpoint.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [ChartPoints](../resources/chartpoint.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

@@ -6,12 +6,26 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="august-2017"></a>Agosto de 2017
 
+### <a name="people"></a>Pessoas 
+
+|**Tipo de alteração**|**Versão**|**Descrição**|
+|:-------------|:-----------|:--------------|
+| Adição | v1.0 | Adicionada a [API de Pessoas](../api-reference/v1.0/resources/person.md) à versão 1.0. Para obter detalhes sobre a API de Pessoas, confira [Obter informações relevantes sobre as pessoas](people_example.md).|
+
+### <a name="group-lifecycle-policy"></a>Política de ciclo de vida de grupo
+
+|**Tipo de alteração**|**Versão**|**Descrição**|
+|:-------------|:-----------|:--------------|
+| Adição | Beta | Adicionada a entidade [groupLifecyclePolicy](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/grouplifecyclepolicy). |
+| Adição | Beta | Adicionadas as seguintes APIs de política de ciclo de vida de grupo: [criar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [listar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_list), [obter](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_get), [atualizar](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_update), [excluir](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_delete), [adicionar grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_addgroup), [remover grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_removegroup) e [renovar um grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/grouplifecyclepolicy_renewgroup). |
+| Adição | Beta | Adicionada a função [Listar groupLifecylePolicies](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_list_grouplifecyclepolicies.md) à entidade [grupo](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/group). |
+
 ### <a name="onenote"></a>OneNote
 
 |**Tipo de alteração**|**Versão**|**Descrição**|
 |:-------------|:-----------|:--------------|
-| Adição | v1.0 e Beta | Adicionou a propriedade de navegação [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote.md) a **site**.  |
-| Adição | Beta | Adicionou os parâmetros de destino *siteCollectionId* e *siteId* para as operações de cópia. Por exemplo: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook.md). |
+| Adição | v1.0 e Beta | Adicionou a propriedade de navegação [onenote](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/onenote) a **site**.  |
+| Adição | Beta | Adicionou os parâmetros de destino *siteCollectionId* e *siteId* para as operações de cópia. Por exemplo: [CopyNotebook](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/notebook_copynotebook). |
 
 
 ## <a name="july-2017"></a>Julho de 2017
@@ -928,7 +942,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 |Adição|v1.0|Foi adicionado suporte para o segmento de conversão no caminho de expansão. Por exemplo, 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'.|
 |Adição|Beta|Suporte adicional para solicitação de PATCH em relação a propriedades estruturais. Por exemplo: 'PATCH /me/mailboxSettings'.|
 |Adição|Beta|O Azure Active Directory agora é usado como fallback para solicitações /beta/users/id/photo quando o Outlook não consegue atender à solicitação para casos como quando o usuário não tem nenhuma licença de caixa de correio ou o locatário não tem uma assinatura do Exchange Online. OBSERVAÇÃO: esse fallback está disponível para GET e PATCH.|
-|Adição|Beta|Foi adicionado suporte para o segmento de conversão no caminho de expansão. Por exemplo, https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event’.|
+|Adição|Beta|Foi adicionado suporte para o segmento de conversão no caminho de expansão. Por exemplo, 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'.|
 
 ### <a name="onedrive"></a>OneDrive
 

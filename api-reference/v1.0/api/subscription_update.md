@@ -3,8 +3,20 @@
 Renove uma assinatura ampliando seu tempo de validade.
 
 As assinaturas a recursos expiram nas datas prescritas pelos tipos de recursos individuais.  Para não perder as notificações, as assinaturas devem ser renovadas bem antes de sua data de vencimento.  Consulte [subscription](../resources/subscription.md) para saber mais sobre datas de vencimento individuais.
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **scopes**, dependendo do recurso de destino, é necessário para executar essa API: *Mail.Read*, *Calendars.Read*, *Contacts.Read*, *Group.Read.All*, *Files.ReadWrite* ou *Files.ReadWrite.All*
+
+A tabela a seguir lista a permissão sugerida necessária para cada recurso.
+
+| Tipo de recurso / item        | Escopo               |
+|-----------------------------|---------------------|
+| Contatos                    | Contacts.Read       |
+| Conversas               | Group.Read.All      |
+| Eventos                      | Calendars.Read      |
+| Mensagens                    | Mail.Read           |
+| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
+| Unidades (unidades e conteúdo compartilhados do Sharepoint) | Files.ReadWrite.All |
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -14,13 +26,14 @@ PATCH /subscriptions/{subscriptionId}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_subscription"

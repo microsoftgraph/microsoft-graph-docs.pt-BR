@@ -7,7 +7,10 @@ Não é possível mover itens entre [Unidades](../resources/drive.md) usando est
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -31,6 +34,7 @@ No corpo da solicitação, forneça o novo valor para a propriedade **parentRefe
 **Observação:** Ao mover itens para a raiz de um OneDrive, não é possível usar a sintaxe `"id:" "root"`. É preciso usar a ID real da pasta raiz ou usar `{"path": "/drive/root"}` para a referência do pai.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
@@ -50,8 +54,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+##### <a name="response"></a>Resposta
+
+O exemplo a seguir mostra a resposta.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
