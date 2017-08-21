@@ -1,12 +1,31 @@
-<span data-ttu-id="074fa-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="074fa-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
-Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
+# <a name="group-subscribebymail"></a><span data-ttu-id="c33ae-101">group: subscribeByMail</span><span class="sxs-lookup"><span data-stu-id="c33ae-101">group: subscribeByMail</span></span>
 
-## <span data-ttu-id="074fa-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="074fa-117">Example</span></span>
-<a id="example" class="xliff"></a>
-<span data-ttu-id="074fa-118">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="074fa-118">Here is an example of how to call this API.</span></span>
-##### <span data-ttu-id="074fa-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="074fa-119">Request</span></span>
-<a id="request" class="xliff"></a>
-<span data-ttu-id="074fa-120">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="074fa-120">Here is an example of the request.</span></span>
+<span data-ttu-id="c33ae-p101">Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="c33ae-p101">Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group. Supported for only Office 365 groups.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="c33ae-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c33ae-104">Prerequisites</span></span>
+<span data-ttu-id="c33ae-105">Um dos seguintes **escopos** é necessário para executar esta API: *Group.ReadWrite.All* 
+*Group.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="c33ae-105">One of the following **scopes** is required to execute this API: *Group.ReadWrite.All* 
+*Group.ReadWrite.All*</span></span>
+## <a name="http-request"></a><span data-ttu-id="c33ae-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c33ae-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/subscribeByMail
+```
+## <a name="request-headers"></a><span data-ttu-id="c33ae-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c33ae-107">Request headers</span></span>
+| <span data-ttu-id="c33ae-108">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c33ae-108">Header</span></span>       | <span data-ttu-id="c33ae-109">Valor</span><span class="sxs-lookup"><span data-stu-id="c33ae-109">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="c33ae-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="c33ae-110">Authorization</span></span>  | <span data-ttu-id="c33ae-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c33ae-p102">Bearer {token}. Required.</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="c33ae-113">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c33ae-113">Request body</span></span>
+
+## <a name="response"></a><span data-ttu-id="c33ae-114">Resposta</span><span class="sxs-lookup"><span data-stu-id="c33ae-114">Response</span></span>
+
+<span data-ttu-id="c33ae-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c33ae-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="c33ae-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c33ae-117">Example</span></span>
+<span data-ttu-id="c33ae-118">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="c33ae-118">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c33ae-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c33ae-119">Request</span></span>
+<span data-ttu-id="c33ae-120">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c33ae-120">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_subscribebymail"
@@ -15,9 +34,8 @@ Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não ret
 POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```
 
-##### <span data-ttu-id="074fa-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="074fa-121">Response</span></span>
-<a id="response" class="xliff"></a>
-<span data-ttu-id="074fa-122">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="074fa-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c33ae-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="c33ae-121">Response</span></span>
+<span data-ttu-id="c33ae-122">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c33ae-122">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

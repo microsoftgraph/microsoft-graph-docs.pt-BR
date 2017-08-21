@@ -1,5 +1,39 @@
-<span data-ttu-id="d69ed-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d69ed-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+# <a name="list-childfolders"></a><span data-ttu-id="0401b-101">Listar childFolders</span><span class="sxs-lookup"><span data-stu-id="0401b-101">List childFolders</span></span>
+
+<span data-ttu-id="0401b-p101">Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/MailFolders` para obter a coleção de pastas de nível superior e navegar até outra pasta.</span><span class="sxs-lookup"><span data-stu-id="0401b-p101">Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level folder collection and navigate to another folder.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0401b-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="0401b-104">Prerequisites</span></span>
+<span data-ttu-id="0401b-105">Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Read; Mail.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="0401b-105">One of the following scopes is required to execute this API: Mail.Read; Mail.ReadWrite</span></span>
+## <a name="http-request"></a><span data-ttu-id="0401b-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0401b-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/childFolders
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="0401b-107">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0401b-107">Optional query parameters</span></span>
+<span data-ttu-id="0401b-108">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0401b-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0401b-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0401b-109">Request headers</span></span>
+| <span data-ttu-id="0401b-110">Nome</span><span class="sxs-lookup"><span data-stu-id="0401b-110">Name</span></span>       | <span data-ttu-id="0401b-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="0401b-111">Type</span></span> | <span data-ttu-id="0401b-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="0401b-112">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="0401b-113">Autorização</span><span class="sxs-lookup"><span data-stu-id="0401b-113">Authorization</span></span>  | <span data-ttu-id="0401b-114">string</span><span class="sxs-lookup"><span data-stu-id="0401b-114">string</span></span>  | <span data-ttu-id="0401b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0401b-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="0401b-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0401b-117">Request body</span></span>
+<span data-ttu-id="0401b-118">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0401b-118">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="0401b-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="0401b-119">Response</span></span>
+
+<span data-ttu-id="0401b-120">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0401b-120">If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0401b-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0401b-121">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0401b-122">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0401b-122">Request</span></span>
+<span data-ttu-id="0401b-123">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0401b-123">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_childfolders"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/childFolders
+```
+##### <a name="response"></a><span data-ttu-id="0401b-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="0401b-124">Response</span></span>
+<span data-ttu-id="0401b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0401b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
