@@ -2,7 +2,7 @@
 
 Use essa API para criar um novo evento no calendário especificado ou no padrão.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
@@ -33,8 +33,8 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Event](../resources/event.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

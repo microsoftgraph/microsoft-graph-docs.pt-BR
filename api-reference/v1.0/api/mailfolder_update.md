@@ -2,7 +2,7 @@
 
 Atualize as propriedades do objeto mailfolder.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,10 +23,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |displayName|String|O nome de exibição da mailFolder.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_mailfolder"

@@ -11,8 +11,13 @@ As pastas especiais são criadas automaticamente na primeira vez que um aplicati
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.Read
-  * Files.ReadWrite
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Files.ReadWrite.AppFolder
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -26,13 +31,14 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 
 | Nome          | Tipo   | Descrição               |
 |:--------------|:-------|:--------------------------|
-| Autorização | cadeia de caracteres | {token} de portador. Obrigatório. |
+| Autorização | string | {token} de portador. Obrigatório. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [driveItem](../resources/driveitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

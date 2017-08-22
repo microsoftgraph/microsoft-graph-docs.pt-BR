@@ -26,6 +26,7 @@ No corpo da solicitação, forneça a página HTML do conteúdo.
 O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode conter um formato de mensagem com várias partes conforme mostrado no exemplo. Se você estiver enviando dados binários, envie uma solicitação com várias partes.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o novo objeto [page](../resources/page.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

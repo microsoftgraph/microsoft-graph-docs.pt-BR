@@ -42,7 +42,7 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
-### <a name="response"></a>Resposta
+## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta. A resposta também inclui um token de estado que é uma URL nextLink ou uma URL deltaLink.
 

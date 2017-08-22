@@ -20,8 +20,8 @@ POST /devices
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [device](../resources/device.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

@@ -2,7 +2,7 @@
 
 Bloqueia ou desbloqueia um thread, para permitir ou evitar postar ainda mais no thread.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Group.ReadWrite.All*
+Um dos seguintes **escopos** é necessário para executar esta API: *Group.ReadWrite.All*
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -25,10 +25,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |isLocked|Booliano|Indica se o thread está bloqueado. Defina como `true` para proibir a postagem.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [conversationThread](../resources/conversationthread.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_conversationthread"

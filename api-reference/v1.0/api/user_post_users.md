@@ -29,6 +29,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 |userPrincipalName |string |Nome UPN (someuser@contoso.com).|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [user](../resources/user.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

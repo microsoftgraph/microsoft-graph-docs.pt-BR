@@ -39,8 +39,8 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 | Content-Type  | string  | application/json. Obrigatório. |
 | Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 
+## <a name="response"></a>Resposta
 
-### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
@@ -65,7 +65,7 @@ Se a solicitação for bem-sucedida, a resposta incluiria um token de estado que
 
 A resposta abaixo mostra um _skipToken_ em um cabeçalho de resposta _@odata.nextLink_.
 
-Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +95,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Ver também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)

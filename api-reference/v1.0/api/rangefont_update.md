@@ -29,13 +29,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |italic|booliano|Representa o status da fonte em itálico.|
 |name|cadeia de caracteres|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
+|underline|cadeia de caracteres|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [RangeFont](../resources/rangefont.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_rangefont"

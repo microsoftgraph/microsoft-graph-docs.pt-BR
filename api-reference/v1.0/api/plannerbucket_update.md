@@ -26,7 +26,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner_order_hint_format.md).|
 |planId|String|ID do plano ao qual o bucket pertence.|
 
-### <a name="response"></a>Resposta
+## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerBucket](../resources/plannerbucket.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).

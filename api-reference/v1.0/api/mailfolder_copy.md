@@ -3,7 +3,7 @@
 Copie uma pasta de email e seu conteúdo para outra pasta de email.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,12 +24,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |destinationId|Cadeia de caracteres|A ID da pasta ou um nome de pasta conhecido, como *Inbox*, *Drafts*, *SentItems* ou *DeletedItems*.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "mailfolder_copy"

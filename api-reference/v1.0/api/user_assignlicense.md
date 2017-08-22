@@ -2,7 +2,7 @@
 Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *User.ReadWrite.All; Directory.ReadWrite.All*
+Um dos seguintes **escopos** é obrigatório para executar esta API: *User.ReadWrite.All; Directory.ReadWrite.All*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -23,6 +23,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |removeLicenses|Guid|Uma coleção de GUIDs que identifica as licenças a remover.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [user](../resources/user.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

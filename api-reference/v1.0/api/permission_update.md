@@ -6,7 +6,9 @@ Atualize as propriedades de uma permissão corrigindo do recurso.
 
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -22,25 +24,25 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Nome          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | cadeia de caracteres | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
+| if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo	   | Descrição                   |
+| Propriedade     | Tipo   | Descrição                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | Cadeia de caracteres | Uma matriz de tipos de permissão. |
-
+| **roles**    | String | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
+
 Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [permission](../resources/permission.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_permission"

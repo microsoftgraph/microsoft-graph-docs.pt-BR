@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="Visão geral" url="/en-us/concepts/overview" SEOKeyword="Visão geral, API do Microsoft Graph, Visão geral" SEODescription="O Microsoft Graph permite que os aplicativos acessem dados da vida digital e do trabalho digital na nuvem inteligente da Microsoft. Grandes vantagens para os desenvolvedores: Um ponto de extremidade de API Unificada da Microsoft para acessar dados, inteligência e informações vindas da nuvem da Microsoft." />    
   <Item text="Cenários em destaque" url="/en-us/concepts/featured_scenarios"> 
 	  <Item text="Encontrar horários de reunião" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Obter informações sobre pessoas relevantes" url="/en-us/concepts/people_example" SEODescription="Use a API de pessoas para recuperar as pessoas que são mais relevantes para um usuário." />
   </Item>
   <Item text="Desenvolver seu primeiro aplicativo" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Android" />
@@ -547,6 +548,12 @@
       </Item>
     </Item>
   </Item>
+  <Item text="Pessoas" url="/en-us/api-reference/v1.0/resources/social_overview">
+	<Item text="Pessoa" url="/en-us/api-reference/v1.0/resources/person">
+		<Item text="Listar pessoas" url="/en-us/api-reference/v1.0/api/user_list_people" />
+		<Item text="Obter pessoa" url="/en-us/api-reference/v1.0/api/person_get" />
+	</Item>
+  </Item>
   <Item text="Contato pessoal" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="contato do usuário, API do Microsoft Graph, API de usuário" SEODescription="API de contatos pessoais">
     <Item text="Contato" url="/en-us/api-reference/v1.0/resources/contact" SEOKeyword="contato do usuário, API do Microsoft Graph, API de usuário" SEODescription="Contato">
       <Item text="Listar contatos" url="/en-us/api-reference/v1.0/api/user_list_contacts" SEOKeyword="Listar contatos, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos contact." />
@@ -750,8 +757,9 @@
         <Item text="Obter objetos de membros" url="/en-us/api-reference/beta/api/group_getmemberobjects" SEOKeyword="grupo: getMemberObjects, API do Microsoft Graph, API do grupo" SEODescription="" />
         <Item text="Listar grupos excluídos" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Listar grupos" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Listar grupos, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos group." />
-        <Item text="Listar equipes unidas" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="Listar joinedTeams, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista do Microsoft Teams à qual o usuário pertence." />
-        <Item text="Listar membro de" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="Listar memberOf, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos directoryobject." />
+        <Item text="Listar equipes unidas" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="Listar joinedTeams, API do Microsoft Graph, API de Usuários" SEODescription="Recupere uma lista do Microsoft Teams à qual o usuário pertence." />
+        <Item text="Listar políticas de ciclo de vida" url="/en-us/api-reference/beta/api/group_list_grouplifecyclepolicies" />
+		<Item text="Listar membro de" url="/en-us/api-reference/beta/api/group_list_memberof" SEOKeyword="Listar memberOf, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos directoryobject." />
         <Item text="Listar membros" url="/en-us/api-reference/beta/api/group_list_members" SEOKeyword="Listar membros, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos directoryobject." />
         <Item text="Listar proprietários" url="/en-us/api-reference/beta/api/group_list_owners" SEOKeyword="Listar proprietários, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos directoryobject." />
         <Item text="Excluir permanentemente um grupo" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
@@ -814,7 +822,17 @@
           <Item text="Obter uma propriedade de vários valores" url="/en-us/api-reference/beta/api/multivaluelegacyextendedproperty_get" SEODescription="" />
         </Item>
       </Item>
-      <Item text="Observações" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="anotações do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
+      <Item text="Política de ciclo de vida" url="/en-us/api-reference/beta/resources/grouplifecyclepolicy">
+		<Item text="Criar política" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_post_grouplifecyclepolicies" />
+		<Item text="Listar políticas" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_list" />
+		<Item text="Obter política" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_get" />
+		<Item text="Atualizar política" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_update" />
+		<Item text="Excluir política" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_delete" />
+		<Item text="Adicionar grupo" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_addgroup" />
+		<Item text="Remover grupo" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_removegroup" />
+		<Item text="Renovar grupo" url="/en-us/api-reference/beta/api/grouplifecyclepolicy_renewgroup" />	  
+	  </Item>
+	  <Item text="Observações" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="anotações do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar blocos de anotações" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Listar blocos de anotações, API do Microsoft Graph, API de anotações" SEODescription="Recuperar uma lista de objetos notebook(../resources/notebook.md)." />
         <Item text="Criar bloco de anotações" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Criar bloco de anotações, API do Microsoft Graph, API de anotações" SEODescription="Criar um novo bloco de anotações do OneNote(../resources/notebook.md)." />
       </Item>

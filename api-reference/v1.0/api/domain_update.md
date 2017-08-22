@@ -27,7 +27,7 @@ PATCH /domains/{id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que serão atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter melhor desempenho, somente inclua valores alterados.
 
-### <a name="response"></a>Resposta
+## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.
 

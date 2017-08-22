@@ -25,7 +25,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-### <a name="response"></a>Resposta
+## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200, OK` e um objeto [workbookRange](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

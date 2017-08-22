@@ -2,7 +2,7 @@
 
 Use essa API para criar uma nova mensagem em uma pasta de email.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Mail.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -18,8 +18,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Message](../resources/message.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

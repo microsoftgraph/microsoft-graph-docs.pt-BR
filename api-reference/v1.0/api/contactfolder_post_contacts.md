@@ -2,7 +2,7 @@
 
 Adicione um contato na pasta de contatos raiz ou no ponto de extremidade de `contacts` de outra pasta de contatos.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Contacts.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,8 +22,8 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Contact](../resources/contact.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [Contact](../resources/contact.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

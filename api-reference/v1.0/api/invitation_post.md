@@ -31,8 +31,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um convi
 |invitedUserEmailAddress |string | O endereço de email do usuário que você está convidando.|
 |inviteRedirectUrl |string |A URL para a qual o usuário será redirecionado após o resgate.|
 
+## <a name="response"></a>Resposta
 
-### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

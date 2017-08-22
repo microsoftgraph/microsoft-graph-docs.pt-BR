@@ -4,7 +4,7 @@ Cria uma nova contactFolder como um filho de uma pasta especificada.
 
 Também é possível [criar uma nova contactFolder sob a pasta de contatos padrão do usuário](user_post_contactfolders.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Contacts.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -20,8 +20,8 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [ContactFolder](../resources/contactfolder.md).
 
-
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [ContactFolder](../resources/contactfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

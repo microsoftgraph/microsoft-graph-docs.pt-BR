@@ -5,7 +5,12 @@ Recupere as propriedades e os relacionamentos do objeto permission.
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.Read
+* Files.Read
+* Files.ReadWrite
+* Files.Read.All
+* Files.ReadWrite.All
+* Sites.Read.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -17,12 +22,13 @@ GET /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 GET /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método é compatível com [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [Permission](../resources/permission.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
@@ -39,7 +45,7 @@ Aqui está um exemplo da solicitação para acessar uma permissão na pasta raiz
 GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 ##### <a name="response"></a>Resposta
-Este é um exemplo da resposta.
+Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

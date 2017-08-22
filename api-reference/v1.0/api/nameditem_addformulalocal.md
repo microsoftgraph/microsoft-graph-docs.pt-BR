@@ -30,13 +30,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |comentário|string|O comentário associado ao item nomeado|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [NamedItem](../resources/NamedItem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 
 <!-- {
   "blockType": "request",

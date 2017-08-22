@@ -5,7 +5,10 @@ Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -19,8 +22,8 @@ POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.
 
-
 ## <a name="response"></a>Resposta
+
 Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

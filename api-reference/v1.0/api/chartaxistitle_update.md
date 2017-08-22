@@ -28,10 +28,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartAxisTitle](../resources/chartaxistitle.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_chartaxistitle"

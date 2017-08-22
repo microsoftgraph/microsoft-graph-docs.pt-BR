@@ -27,12 +27,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |critérios|FilterCriteria|Os critérios a aplicar.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "filter_apply"

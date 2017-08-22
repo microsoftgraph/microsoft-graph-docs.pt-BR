@@ -8,7 +8,7 @@ Ao criar o evento, o servidor envia convites para todos os participantes.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -33,6 +33,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [event](.
 Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o evento ao criá-lo.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo

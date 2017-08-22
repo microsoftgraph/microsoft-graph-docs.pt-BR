@@ -34,10 +34,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar uma exte
 |targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos de recursos do Microsoft Graph (com suporte a extensões do esquema) ao qual esta extensão de esquema pode ser aplicada.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-### <a name="request-1"></a>Solicitação 1
+
+##### <a name="request-1"></a>Solicitação 1
+
 O primeiro exemplo mostra o uso de um nome de domínio verificado, `graphlearn` e um nome de esquema, `courses`, para formar uma cadeia de caracteres para a propriedade **id** da definição de extensão do esquema. A cadeia de caracteres exclusiva se baseia neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [schemaExtension](../resources/schemaextension.md).
@@ -72,7 +75,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-1"></a>Resposta 1
+##### <a name="response-1"></a>Resposta 1
+
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
@@ -109,7 +113,8 @@ Content-length: 420
 }
 ```
 
-### <a name="request-2"></a>Solicitação 2
+##### <a name="request-2"></a>Solicitação 2
+
 O segundo exemplo mostra a especificação de apenas um nome de esquema, `courses`, na propriedade **id** na solicitação, junto com a representação JSON do resto das propriedades no objeto [schemaExtension](../resources/schemaextension.md). O Microsoft Graph atribuirá e retornará um valor exclusivo de cadeia de caracteres na resposta.
 
 <!-- {
@@ -143,7 +148,8 @@ Content-type: application/json
 }
 ```
 
-### <a name="response-2"></a>Resposta 2
+##### <a name="response-2"></a>Resposta 2
+
 A resposta inclui uma cadeia de caracteres exclusiva na propriedade **id** com base no nome do esquema fornecido na solicitação, junto com o resto da definição de esquema recém-criada. O valor em **id** na resposta se baseia no formato, ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",

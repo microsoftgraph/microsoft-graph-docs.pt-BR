@@ -23,12 +23,13 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 ## <a name="request-body"></a>Corpo da solicitação
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "chartfill_clear"

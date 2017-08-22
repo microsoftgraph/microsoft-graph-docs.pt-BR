@@ -2,7 +2,7 @@
 
 Atualize as propriedades do objeto calendar.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
@@ -39,10 +39,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |nome|String|O nome do calendário.|
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -50,12 +51,9 @@ Veja a seguir um exemplo da solicitação.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/calendar
 Content-type: application/json
-Content-length: 48
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Social events"
 }
 ```
 ##### <a name="response"></a>Resposta
@@ -68,14 +66,21 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "id":"AAMkADJmMVAAA=",
+    "name":"Social events",
+    "color":"auto",
+    "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "canShare":true,
+    "canViewPrivateItems":true,
+    "canEdit":true,
+    "owner":{
+        "name":"Fanny Downs",
+        "address":"fannyd@adatum.onmicrosoft.com"
+    }
 }
 ```
 

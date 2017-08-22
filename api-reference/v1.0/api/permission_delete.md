@@ -7,7 +7,9 @@ Somente as permissões que não são herdadas podem ser excluídas. A propriedad
 ## <a name="prerequisites"></a>Pré-requisitos
 Um dos seguintes **escopos** é obrigatório para executar esta API:
 
-  * Files.ReadWrite
+* Files.ReadWrite
+* Files.ReadWrite.All
+* Sites.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -23,19 +25,20 @@ DELETE /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
 
 | Nome          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | cadeia de caracteres | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
+| if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
+
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 
 <!-- {
   "blockType": "request",
@@ -47,7 +50,7 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/root/items/{item-id}/permission
 
 ##### <a name="response"></a>Resposta
 
-Este é um exemplo da resposta.
+Veja a seguir um exemplo da resposta.
 
 <!-- {
   "blockType": "response",

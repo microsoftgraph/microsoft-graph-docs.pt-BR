@@ -19,8 +19,9 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-### <a name="response"></a>Resposta
-Se bem sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
+## <a name="response"></a>Resposta
+
+Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

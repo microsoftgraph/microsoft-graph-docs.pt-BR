@@ -2,7 +2,7 @@
 
 Recupere as propriedades e os relacionamentos do objeto contact.
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Contacts.Read; Contacts.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.Read; Contacts.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) padrão do usuário.
@@ -23,7 +23,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
+|$expand|cadeia de caracteres|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
 |$select|cadeia de caracteres|Lista separada por vírgulas de propriedades para incluir na resposta.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -33,11 +33,13 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [contact](../resources/contact.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_contact"

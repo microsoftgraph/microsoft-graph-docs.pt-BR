@@ -2,7 +2,7 @@
 
 Obtenha calendários de todos do usuário (propriedade de navegação `/calendars`), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. 
 ## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *Calendars.Read; Calendars.ReadWrite*
+Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read; Calendars.ReadWrite*
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
@@ -34,11 +34,13 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Calendar](../resources/calendar.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_calendars"
@@ -57,17 +59,25 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 147
 
 {
-  "value": [
-    {
-      "name": "name-value",
-      "color": "auto",
-      "changeKey": "changeKey-value",
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars",
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+            "id": "AAMkAGI2TGuLAAA=",
+            "name": "Calendar",
+            "color": "auto",
+            "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "canShare":true,
+            "canViewPrivateItems":true,
+            "canEdit":true,
+            "owner":{
+                "name":"Fanny Downs",
+                "address":"fannyd@adatum.onmicrosoft.com"
+            }
+        }
+    ]
 }
 ```
 

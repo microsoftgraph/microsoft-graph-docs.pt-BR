@@ -22,7 +22,8 @@ Forneça os seguintes parâmetros de consulta com valores na URL solicitada.
 |:---------------|:--------|:----------|
 |índice|Int32|O índice do item a ser retornado.|
 
-### <a name="response"></a>Resposta
+## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200, OK` e um objeto [workbookRangeView](../resources/workbookrangeview.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
