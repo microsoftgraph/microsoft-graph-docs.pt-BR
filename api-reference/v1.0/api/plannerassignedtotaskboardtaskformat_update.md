@@ -1,5 +1,57 @@
+# <a name="update-plannerassignedtotaskboardtaskformat"></a><span data-ttu-id="08da4-101">Atualizar plannerAssignedToTaskBoardTaskFormat</span><span class="sxs-lookup"><span data-stu-id="08da4-101">Update plannerAssignedToTaskBoardTaskFormat</span></span>
+
+<span data-ttu-id="08da4-102">Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat**.</span><span class="sxs-lookup"><span data-stu-id="08da4-102">Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="08da4-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="08da4-103">Prerequisites</span></span>
+<span data-ttu-id="08da4-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="08da4-104">The following **scopes** are required to execute this API:</span></span> 
+
+<span data-ttu-id="08da4-105">*Group.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="08da4-105">*Group.ReadWrite.All*</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="08da4-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="08da4-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
+```
+## <a name="optional-request-headers"></a><span data-ttu-id="08da4-107">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="08da4-107">Optional request headers</span></span>
+| <span data-ttu-id="08da4-108">Nome</span><span class="sxs-lookup"><span data-stu-id="08da4-108">Name</span></span>       | <span data-ttu-id="08da4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="08da4-109">Description</span></span>|
+|:-----------|:-----------|
+| <span data-ttu-id="08da4-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="08da4-110">Authorization</span></span>  | <span data-ttu-id="08da4-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="08da4-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="08da4-113">If-Match</span><span class="sxs-lookup"><span data-stu-id="08da4-113">If-Match</span></span>  | <span data-ttu-id="08da4-p102">Último valor ETag conhecido do objeto **plannerAssignedToTaskBoardTaskFormat** a ser atualizado. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="08da4-p102">Last known ETag value for **plannerAssignedToTaskBoardTaskFormat** to be updated. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="08da4-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="08da4-116">Request body</span></span>
+<span data-ttu-id="08da4-p103">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="08da4-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="08da4-120">Propriedade</span><span class="sxs-lookup"><span data-stu-id="08da4-120">Property</span></span>     | <span data-ttu-id="08da4-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="08da4-121">Type</span></span>   |<span data-ttu-id="08da4-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="08da4-122">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="08da4-123">orderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="08da4-123">orderHintsByAssignee</span></span>|[<span data-ttu-id="08da4-124">plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="08da4-124">plannerOrderHintsByAssignee</span></span>](..\resources\plannerOrderHintsByAssignee.md)|<span data-ttu-id="08da4-p104">O dicionário de dicas usado para ordenar tarefas no modo de exibição AssignedTo do Quadro de Tarefas. A chave de cada entrada é um dos usuários ao qual a tarefa é atribuída, e o valor é a dica de ordem. O formato de cada valor é definido como descrito [aqui](../resources/planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="08da4-p104">Dictionary of hints used to order tasks on the AssignedTo view of the Task Board. The key of each entry is one of the users the task is assigned to and the value is the order hint. The format of each value is defined as outlined [here](../resources/planner_order_hint_format.md).</span></span>|
+|<span data-ttu-id="08da4-128">unassignedOrderHint</span><span class="sxs-lookup"><span data-stu-id="08da4-128">unassignedOrderHint</span></span>|<span data-ttu-id="08da4-129">String</span><span class="sxs-lookup"><span data-stu-id="08da4-129">String</span></span>|<span data-ttu-id="08da4-p105">Valor da dica usado para ordenar a tarefa no modo de exibição AssignedTo do Quadro de Tarefas quando a tarefa não for atribuída a ninguém ou se o dicionário orderHintsByAssignee não oferecer uma dica de ordem para o usuário à qual a tarefa foi atribuída. O formato é definido como descrito [aqui](../resources/planner_order_hint_format.md).</span><span class="sxs-lookup"><span data-stu-id="08da4-p105">Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined [here](../resources/planner_order_hint_format.md).</span></span>|
+
+## <a name="response"></a><span data-ttu-id="08da4-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="08da4-132">Response</span></span>
+
+<span data-ttu-id="08da4-133">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="08da4-133">If successful, this method returns a `200 OK` response code and updated [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) object in the response body.</span></span>
+
+<span data-ttu-id="08da4-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="08da4-p106">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+
+## <a name="example"></a><span data-ttu-id="08da4-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="08da4-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="08da4-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="08da4-138">Request</span></span>
+<span data-ttu-id="08da4-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="08da4-139">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "update_plannerassignedtotaskboardtaskformat"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
+Content-type: application/json
+Content-length: 96
+If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
+
+{
+  "orderHintsByAssignee": {
+    "aaa27244-1db4-476a-a5cb-004607466324": "8566473P 957764Jk!"
+  }
+}
+```
+##### <a name="response"></a><span data-ttu-id="08da4-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="08da4-140">Response</span></span>
 <span data-ttu-id="08da4-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="08da4-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

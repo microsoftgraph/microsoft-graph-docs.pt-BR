@@ -1,5 +1,34 @@
+# <a name="update-permission"></a><span data-ttu-id="20a5f-101">Atualizar permissão</span><span class="sxs-lookup"><span data-stu-id="20a5f-101">Update permission</span></span>
+
+<span data-ttu-id="20a5f-102">Atualize as propriedades de uma permissão corrigindo do recurso.</span><span class="sxs-lookup"><span data-stu-id="20a5f-102">Update the properties of a permission by patching the resource.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="20a5f-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="20a5f-103">Prerequisites</span></span>
+
+<span data-ttu-id="20a5f-104">Um dos seguintes **escopos** é obrigatório para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="20a5f-104">One of the following **scopes** is required to execute this API:</span></span>
+
+* <span data-ttu-id="20a5f-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="20a5f-105">Files.ReadWrite</span></span>
+* <span data-ttu-id="20a5f-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="20a5f-106">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="20a5f-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="20a5f-107">Sites.ReadWrite.All</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="20a5f-108">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="20a5f-108">HTTP request</span></span>
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /me/drive/items/{item-id}/permissions/{perm-id}
+PATCH /me/drive/root:/{path}:/permissions/{perm-id}
+PATCH /drives/{drive-id}/items/{item-id}/permissions/{perm-id}
+PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
+```
+
+## <a name="request-headers"></a><span data-ttu-id="20a5f-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="20a5f-109">Request headers</span></span>
+
+| <span data-ttu-id="20a5f-110">Nome</span><span class="sxs-lookup"><span data-stu-id="20a5f-110">Name</span></span>          | <span data-ttu-id="20a5f-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="20a5f-111">Type</span></span>   | <span data-ttu-id="20a5f-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="20a5f-112">Description</span></span>                                                                                                                                                                                       |
+|:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="20a5f-113">if-match</span><span class="sxs-lookup"><span data-stu-id="20a5f-113">if-match</span></span>      | <span data-ttu-id="20a5f-114">string</span><span class="sxs-lookup"><span data-stu-id="20a5f-114">string</span></span> | <span data-ttu-id="20a5f-115">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="20a5f-115">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="20a5f-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="20a5f-116">Request body</span></span>
 <span data-ttu-id="20a5f-p101">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="20a5f-p101">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | <span data-ttu-id="20a5f-120">Propriedade</span><span class="sxs-lookup"><span data-stu-id="20a5f-120">Property</span></span>     | <span data-ttu-id="20a5f-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="20a5f-121">Type</span></span>   | <span data-ttu-id="20a5f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="20a5f-122">Description</span></span>                   |
 |:-------------|:-------|:------------------------------|

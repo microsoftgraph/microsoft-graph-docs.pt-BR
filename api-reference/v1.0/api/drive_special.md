@@ -1,4 +1,37 @@
-<span data-ttu-id="a21ae-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a21ae-p103">Bearer {token}. Required.</span></span> | {token} de portador. Obrigatório. |
+# <a name="get-a-special-folder-by-name"></a><span data-ttu-id="a21ae-101">Obtenha uma pasta especial por nome</span><span class="sxs-lookup"><span data-stu-id="a21ae-101">Get a special folder by name</span></span>
+
+<span data-ttu-id="a21ae-102">Use a coleção especial para acessar uma pasta especial pelo nome.</span><span class="sxs-lookup"><span data-stu-id="a21ae-102">Use the special collection to access a special folder by name.</span></span>
+
+<span data-ttu-id="a21ae-p101">Pastas especiais fornecem aliases simples para acessar pastas conhecidas no OneDrive sem a necessidade de pesquisar a pasta pelo caminho (o que exigiria a localização) ou fazer referência à pasta com uma ID. Se uma pasta especial for renomeada ou movida para outro local na unidade de disco, esta sintaxe continuará a localizar a pasta.</span><span class="sxs-lookup"><span data-stu-id="a21ae-p101">Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.</span></span>
+
+<span data-ttu-id="a21ae-p102">As pastas especiais são criadas automaticamente na primeira vez que um aplicativo tenta gravar em uma, caso ainda não existam. Se um usuário excluir uma, ela será recriada quando algo for gravado nela novamente.</span><span class="sxs-lookup"><span data-stu-id="a21ae-p102">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+
+<span data-ttu-id="a21ae-107">**Observação:**  Se tiver permissões somente leitura e solicitar uma pasta especial que não exista, você receberá um erro `403 Forbidden`.</span><span class="sxs-lookup"><span data-stu-id="a21ae-107">**Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="a21ae-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="a21ae-108">Prerequisites</span></span>
+<span data-ttu-id="a21ae-109">Um dos seguintes **escopos** é obrigatório para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="a21ae-109">One of the following **scopes** is required to execute this API:</span></span>
+
+* <span data-ttu-id="a21ae-110">Files.Read</span><span class="sxs-lookup"><span data-stu-id="a21ae-110">Files.Read</span></span>
+* <span data-ttu-id="a21ae-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a21ae-111">Files.ReadWrite</span></span>
+* <span data-ttu-id="a21ae-112">Files.Read.All</span><span class="sxs-lookup"><span data-stu-id="a21ae-112">Files.Read.All</span></span>
+* <span data-ttu-id="a21ae-113">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a21ae-113">Files.ReadWrite.All</span></span>
+* <span data-ttu-id="a21ae-114">Files.ReadWrite.AppFolder</span><span class="sxs-lookup"><span data-stu-id="a21ae-114">Files.ReadWrite.AppFolder</span></span>
+* <span data-ttu-id="a21ae-115">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="a21ae-115">Sites.Read.All</span></span>
+* <span data-ttu-id="a21ae-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a21ae-116">Sites.ReadWrite.All</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="a21ae-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a21ae-117">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/drive/special/{name}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="a21ae-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a21ae-118">Optional query parameters</span></span>
+<span data-ttu-id="a21ae-119">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a21ae-119">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="a21ae-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a21ae-120">Request headers</span></span>
+
+| <span data-ttu-id="a21ae-121">Nome</span><span class="sxs-lookup"><span data-stu-id="a21ae-121">Name</span></span>          | <span data-ttu-id="a21ae-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="a21ae-122">Type</span></span>   | <span data-ttu-id="a21ae-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a21ae-123">Description</span></span>               |
+|:--------------|:-------|:--------------------------|
+| <span data-ttu-id="a21ae-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a21ae-124">Authorization</span></span> | <span data-ttu-id="a21ae-125">string</span><span class="sxs-lookup"><span data-stu-id="a21ae-125">string</span></span> | <span data-ttu-id="a21ae-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a21ae-p103">Bearer {token}. Required.</span></span> |
 
 
 ## <a name="request-body"></a><span data-ttu-id="a21ae-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a21ae-128">Request body</span></span>

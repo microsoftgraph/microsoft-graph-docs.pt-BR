@@ -1,4 +1,19 @@
-<span data-ttu-id="2fdf1-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2fdf1-p101">Bearer {token}. Required.</span></span>  | {token} de portador. Obrigatório. |
+# <a name="add-directory-role-member"></a><span data-ttu-id="2fdf1-101">Adicionar membro da função de diretório</span><span class="sxs-lookup"><span data-stu-id="2fdf1-101">Add directory role member</span></span>
+
+<span data-ttu-id="2fdf1-102">Use esta API para criar um novo membro de função de diretório.</span><span class="sxs-lookup"><span data-stu-id="2fdf1-102">Use this API to create a new directory role member.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="2fdf1-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="2fdf1-103">Prerequisites</span></span>
+<span data-ttu-id="2fdf1-104">O seguinte **escopo** é obrigatório para executar esta API: *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="2fdf1-104">The following **scope** is required to execute this API: *Directory.AccessAsUser.All*</span></span>
+## <a name="http-request"></a><span data-ttu-id="2fdf1-105">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2fdf1-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryRoles/{id}/members/$ref
+
+```
+## <a name="request-headers"></a><span data-ttu-id="2fdf1-106">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2fdf1-106">Request headers</span></span>
+| <span data-ttu-id="2fdf1-107">Nome</span><span class="sxs-lookup"><span data-stu-id="2fdf1-107">Name</span></span>       | <span data-ttu-id="2fdf1-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="2fdf1-108">Type</span></span> | <span data-ttu-id="2fdf1-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2fdf1-109">Description</span></span>|
+|:---------------|:--------|:----------|
+| <span data-ttu-id="2fdf1-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="2fdf1-110">Authorization</span></span>  | <span data-ttu-id="2fdf1-111">string</span><span class="sxs-lookup"><span data-stu-id="2fdf1-111">string</span></span>  | <span data-ttu-id="2fdf1-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2fdf1-p101">Bearer {token}. Required.</span></span> |
 | <span data-ttu-id="2fdf1-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2fdf1-114">Content-Type</span></span>  | <span data-ttu-id="2fdf1-115">application/json</span><span class="sxs-lookup"><span data-stu-id="2fdf1-115">application/json</span></span>  |
 
 ## <a name="request-body"></a><span data-ttu-id="2fdf1-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2fdf1-116">Request body</span></span>

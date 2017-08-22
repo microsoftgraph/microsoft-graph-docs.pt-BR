@@ -1,6 +1,29 @@
-<span data-ttu-id="50515-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50515-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="tablesort-clear"></a><span data-ttu-id="50515-101">TableSort: clear</span><span class="sxs-lookup"><span data-stu-id="50515-101">TableSort: clear</span></span>
 
-Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
+<span data-ttu-id="50515-p101">Limpa a classificação que está na tabela. Essa ação não modifica a ordenação da tabela, mas limpa o estado dos botões do cabeçalho.</span><span class="sxs-lookup"><span data-stu-id="50515-p101">Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="50515-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="50515-104">Prerequisites</span></span>
+<span data-ttu-id="50515-105">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="50515-105">The following **scopes** are required to execute this API:</span></span> 
+
+    * <span data-ttu-id="50515-106">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50515-106">Files.ReadWrite</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="50515-107">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50515-107">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/tables/{id|name}/sort/clear
+POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/clear
+
+```
+## <a name="request-headers"></a><span data-ttu-id="50515-108">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50515-108">Request headers</span></span>
+| <span data-ttu-id="50515-109">Nome</span><span class="sxs-lookup"><span data-stu-id="50515-109">Name</span></span>       | <span data-ttu-id="50515-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="50515-110">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="50515-111">Autorização</span><span class="sxs-lookup"><span data-stu-id="50515-111">Authorization</span></span>  | <span data-ttu-id="50515-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50515-p102">Bearer {token}. Required.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="50515-114">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50515-114">Request body</span></span>
+
+## <a name="response"></a><span data-ttu-id="50515-115">Resposta</span><span class="sxs-lookup"><span data-stu-id="50515-115">Response</span></span>
+
+<span data-ttu-id="50515-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50515-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
 ## <a name="example"></a><span data-ttu-id="50515-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="50515-118">Example</span></span>
 <span data-ttu-id="50515-119">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="50515-119">Here is an example of how to call this API.</span></span>

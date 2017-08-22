@@ -1,5 +1,85 @@
+# <a name="create-event"></a><span data-ttu-id="3115d-101">Criar Evento</span><span class="sxs-lookup"><span data-stu-id="3115d-101">Create Event</span></span>
+
+<span data-ttu-id="3115d-102">Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.</span><span class="sxs-lookup"><span data-stu-id="3115d-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+
+<span data-ttu-id="3115d-103">É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="3115d-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
+
+<span data-ttu-id="3115d-104">Ao criar o evento, o servidor envia convites para todos os participantes.</span><span class="sxs-lookup"><span data-stu-id="3115d-104">When the event is created, the server send invitations to all attendees.</span></span>
+
+
+## <a name="prerequisites"></a><span data-ttu-id="3115d-105">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3115d-105">Prerequisites</span></span>
+<span data-ttu-id="3115d-106">Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="3115d-106">One of the following **scopes** is required to execute this API: *Calendars.ReadWrite*</span></span>
+## <a name="http-request"></a><span data-ttu-id="3115d-107">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3115d-107">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/events
+POST /users/{id | userPrincipalName}/events
+
+POST /me/calendar/events
+POST /users/{id | userPrincipalName}/calendar/events
+
+POST /me/calendars/{id}/events
+POST /users/{id | userPrincipalName}/calendars/{id}/events
+```
+## <a name="request-headers"></a><span data-ttu-id="3115d-108">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3115d-108">Request headers</span></span>
+| <span data-ttu-id="3115d-109">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3115d-109">Header</span></span>       | <span data-ttu-id="3115d-110">Valor</span><span class="sxs-lookup"><span data-stu-id="3115d-110">Value</span></span> |
+|:-----------|:------|
+| <span data-ttu-id="3115d-111">Autorização</span><span class="sxs-lookup"><span data-stu-id="3115d-111">Authorization</span></span>  | <span data-ttu-id="3115d-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3115d-p101">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3115d-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3115d-114">Content-Type</span></span>  | <span data-ttu-id="3115d-p102">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3115d-p102">application/json. Required.</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="3115d-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3115d-117">Request body</span></span>
+<span data-ttu-id="3115d-118">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="3115d-118">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+
+<span data-ttu-id="3115d-119">Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o evento ao criá-lo.</span><span class="sxs-lookup"><span data-stu-id="3115d-119">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+
+## <a name="response"></a><span data-ttu-id="3115d-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="3115d-120">Response</span></span>
+
+<span data-ttu-id="3115d-121">Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3115d-121">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="3115d-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3115d-122">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3115d-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3115d-123">Request</span></span>
+<span data-ttu-id="3115d-p103">Veja a seguir um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar que as horas de **início** e **fim** na resposta devem usar esse fuso horário.</span><span class="sxs-lookup"><span data-stu-id="3115d-p103">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_user"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+Content-length: 600
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does late morning work for you?"
+  },
+  "start": {
+      "dateTime": "2017-04-15T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-04-15T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"fannyd@contoso.onmicrosoft.com",
+        "name": "Fanny Downs"
+      },
+      "type": "required"
+    }
+  ]
+}
+```
+<span data-ttu-id="3115d-126">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="3115d-126">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="3115d-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="3115d-127">Response</span></span>
 <span data-ttu-id="3115d-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3115d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

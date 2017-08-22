@@ -1,5 +1,40 @@
+# <a name="get-subscribedsku"></a><span data-ttu-id="9264f-101">Obter subscribedSku</span><span class="sxs-lookup"><span data-stu-id="9264f-101">Get subscribedSku</span></span>
+<span data-ttu-id="9264f-102">Recupere uma assinatura comercial específica que uma organização adquiriu.</span><span class="sxs-lookup"><span data-stu-id="9264f-102">Retrieve a specific commercial subscription that an organization has acquired.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="9264f-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9264f-103">Prerequisites</span></span>
+<span data-ttu-id="9264f-104">Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.Read.All*, *Directory.ReadWrite.All* ou *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="9264f-104">One of the following **scopes** is required to execute this API: *Directory.Read.All*, *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="9264f-105">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9264f-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /subscribedSkus/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="9264f-106">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9264f-106">Optional query parameters</span></span>
+<span data-ttu-id="9264f-107">Esse método **não** tem suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta (por exemplo, $filter não tem suporte aqui).</span><span class="sxs-lookup"><span data-stu-id="9264f-107">This method does **not** support the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="9264f-108">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9264f-108">Request headers</span></span>
+| <span data-ttu-id="9264f-109">Nome</span><span class="sxs-lookup"><span data-stu-id="9264f-109">Name</span></span>       | <span data-ttu-id="9264f-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="9264f-110">Type</span></span> | <span data-ttu-id="9264f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="9264f-111">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="9264f-112">Autorização</span><span class="sxs-lookup"><span data-stu-id="9264f-112">Authorization</span></span>  | <span data-ttu-id="9264f-113">string</span><span class="sxs-lookup"><span data-stu-id="9264f-113">string</span></span>  | <span data-ttu-id="9264f-p101">&lt;Token&gt; de portador. *Obrigatório*</span><span class="sxs-lookup"><span data-stu-id="9264f-p101">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="9264f-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9264f-116">Request body</span></span>
+<span data-ttu-id="9264f-117">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9264f-117">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="9264f-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="9264f-118">Response</span></span>
+
+<span data-ttu-id="9264f-119">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [subscribedSku](../resources/subscribedsku.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9264f-119">If successful, this method returns a `200 OK` response code and [subscribedSku](../resources/subscribedsku.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9264f-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9264f-120">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9264f-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9264f-121">Request</span></span>
+<span data-ttu-id="9264f-122">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9264f-122">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_subscribedsku"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
+```
+##### <a name="response"></a><span data-ttu-id="9264f-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="9264f-123">Response</span></span>
 <span data-ttu-id="9264f-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9264f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,39 @@
+# <a name="list-members"></a><span data-ttu-id="6d188-101">Listar membros</span><span class="sxs-lookup"><span data-stu-id="6d188-101">List members</span></span>
+
+<span data-ttu-id="6d188-p101">Recupera uma lista dos usuários atribuídos à função de diretório.  Somente usuários podem ser atribuídos a uma função de diretório.</span><span class="sxs-lookup"><span data-stu-id="6d188-p101">Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6d188-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6d188-104">Prerequisites</span></span>
+<span data-ttu-id="6d188-105">Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.Read.All*, *Directory.ReadWrite.All* ou *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="6d188-105">One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.ReadWrite.All* or *Directory.AccessAsUser.All*</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="6d188-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6d188-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryRoles/{id}/members
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="6d188-107">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6d188-107">Optional query parameters</span></span>
+<span data-ttu-id="6d188-108">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6d188-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6d188-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6d188-109">Request headers</span></span>
+| <span data-ttu-id="6d188-110">Nome</span><span class="sxs-lookup"><span data-stu-id="6d188-110">Name</span></span>       | <span data-ttu-id="6d188-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="6d188-111">Type</span></span> | <span data-ttu-id="6d188-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="6d188-112">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="6d188-113">Autorização</span><span class="sxs-lookup"><span data-stu-id="6d188-113">Authorization</span></span>  | <span data-ttu-id="6d188-114">string</span><span class="sxs-lookup"><span data-stu-id="6d188-114">string</span></span>  | <span data-ttu-id="6d188-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6d188-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="6d188-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6d188-117">Request body</span></span>
+<span data-ttu-id="6d188-118">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6d188-118">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="6d188-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d188-119">Response</span></span>
+
+<span data-ttu-id="6d188-120">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6d188-120">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6d188-121">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6d188-121">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6d188-122">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6d188-122">Request</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
+```
+##### <a name="response"></a><span data-ttu-id="6d188-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="6d188-123">Response</span></span>
 <span data-ttu-id="6d188-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6d188-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

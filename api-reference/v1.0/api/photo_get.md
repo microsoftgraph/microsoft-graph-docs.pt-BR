@@ -1,4 +1,25 @@
-<span data-ttu-id="9c21c-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9c21c-p101">Bearer {token}. Required.</span></span>  | {token} de portador. Obrigatório. |
+# <a name="get-photo"></a><span data-ttu-id="9c21c-101">Obter foto</span><span class="sxs-lookup"><span data-stu-id="9c21c-101">Get photo</span></span>
+
+<span data-ttu-id="9c21c-102">Recupere as propriedades e os relacionamentos do objeto de foto.</span><span class="sxs-lookup"><span data-stu-id="9c21c-102">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9c21c-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9c21c-103">Prerequisites</span></span>
+<span data-ttu-id="9c21c-104">Um dos seguintes **escopos** é obrigatório para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="9c21c-104">One of the following **scopes** is required to execute this API:</span></span>
+
+  * <span data-ttu-id="9c21c-105">Files.Read</span><span class="sxs-lookup"><span data-stu-id="9c21c-105">Files.Read</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="9c21c-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9c21c-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id | userPrincipalName}/photo
+GET /groups/{id}/photo
+GET /drive/root/createdByUser/photo
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="9c21c-107">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9c21c-107">Optional query parameters</span></span>
+<span data-ttu-id="9c21c-108">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9c21c-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="9c21c-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9c21c-109">Request headers</span></span>
+| <span data-ttu-id="9c21c-110">Nome</span><span class="sxs-lookup"><span data-stu-id="9c21c-110">Name</span></span>       | <span data-ttu-id="9c21c-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="9c21c-111">Type</span></span> | <span data-ttu-id="9c21c-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="9c21c-112">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="9c21c-113">Autorização</span><span class="sxs-lookup"><span data-stu-id="9c21c-113">Authorization</span></span>  | <span data-ttu-id="9c21c-114">string</span><span class="sxs-lookup"><span data-stu-id="9c21c-114">string</span></span>  | <span data-ttu-id="9c21c-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9c21c-p101">Bearer {token}. Required.</span></span> |
 
 ## <a name="request-body"></a><span data-ttu-id="9c21c-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9c21c-117">Request body</span></span>
 <span data-ttu-id="9c21c-118">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9c21c-118">Do not supply a request body for this method.</span></span>

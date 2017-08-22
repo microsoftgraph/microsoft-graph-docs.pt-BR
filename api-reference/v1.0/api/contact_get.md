@@ -1,5 +1,54 @@
+# <a name="get-contact"></a><span data-ttu-id="29706-101">Obter contato</span><span class="sxs-lookup"><span data-stu-id="29706-101">Get contact</span></span>
+
+<span data-ttu-id="29706-102">Recupere as propriedades e os relacionamentos do objeto contact.</span><span class="sxs-lookup"><span data-stu-id="29706-102">Retrieve the properties and relationships of a contact object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="29706-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="29706-103">Prerequisites</span></span>
+<span data-ttu-id="29706-104">Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.Read; Contacts.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="29706-104">One of the following scopes is required to execute this API: Contacts.Read; Contacts.ReadWrite</span></span>
+## <a name="http-request"></a><span data-ttu-id="29706-105">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="29706-105">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="29706-106">Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) padrão do usuário.</span><span class="sxs-lookup"><span data-stu-id="29706-106">A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).</span></span>
+```http
+GET /me/contacts/{id}
+GET /users/{id | userPrincipalName}/contacts/{id}
+```
+<span data-ttu-id="29706-107">Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) de nível superior do usuário.</span><span class="sxs-lookup"><span data-stu-id="29706-107">A [contact](../resources/contact.md) from a user's top level [contactFolder](../resources/contactfolder.md).</span></span>
+```http
+GET /me/contactfolders/{Id}/contacts/{id}
+GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
+```
+<span data-ttu-id="29706-p101">Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md). O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho, e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="29706-p101">A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The example below shows one level of nesting, but a contact can be located in a child of a child and so on.</span></span>
+```http
+GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="29706-110">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="29706-110">Optional query parameters</span></span>
+|<span data-ttu-id="29706-111">Nome</span><span class="sxs-lookup"><span data-stu-id="29706-111">Name</span></span>|<span data-ttu-id="29706-112">Valor</span><span class="sxs-lookup"><span data-stu-id="29706-112">Value</span></span>|<span data-ttu-id="29706-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="29706-113">Description</span></span>|
+|:---------------|:--------|:-------|
+|<span data-ttu-id="29706-114">$expand</span><span class="sxs-lookup"><span data-stu-id="29706-114">$expand</span></span>|<span data-ttu-id="29706-115">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="29706-115">string</span></span>|<span data-ttu-id="29706-p102">Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis.</span><span class="sxs-lookup"><span data-stu-id="29706-p102">Comma-separated list of relationships to expand and include in the response. See the relationships table of the [contact](../resources/contact.md) object for supported names.</span></span> |
+|<span data-ttu-id="29706-118">$select</span><span class="sxs-lookup"><span data-stu-id="29706-118">$select</span></span>|<span data-ttu-id="29706-119">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="29706-119">string</span></span>|<span data-ttu-id="29706-120">Lista separada por vírgulas de propriedades para incluir na resposta.</span><span class="sxs-lookup"><span data-stu-id="29706-120">Comma-separated list of properties to include in the response.</span></span>|
+
+## <a name="request-headers"></a><span data-ttu-id="29706-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="29706-121">Request headers</span></span>
+| <span data-ttu-id="29706-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="29706-122">Header</span></span>       | <span data-ttu-id="29706-123">Valor</span><span class="sxs-lookup"><span data-stu-id="29706-123">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="29706-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="29706-124">Authorization</span></span>  | <span data-ttu-id="29706-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29706-p103">Bearer {token}. Required.</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="29706-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="29706-127">Request body</span></span>
+<span data-ttu-id="29706-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="29706-128">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="29706-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="29706-129">Response</span></span>
+
+<span data-ttu-id="29706-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [contact](../resources/contact.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29706-130">If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="29706-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="29706-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="29706-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29706-132">Request</span></span>
+<span data-ttu-id="29706-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="29706-133">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_contact"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/contacts/{id}
+```
+##### <a name="response"></a><span data-ttu-id="29706-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="29706-134">Response</span></span>
 <span data-ttu-id="29706-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="29706-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,5 +1,61 @@
-<span data-ttu-id="8f11a-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8f11a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+# <a name="create-message"></a><span data-ttu-id="7d890-101">Criar mensagem</span><span class="sxs-lookup"><span data-stu-id="7d890-101">Create Message</span></span>
+
+<span data-ttu-id="7d890-p101">Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.</span><span class="sxs-lookup"><span data-stu-id="7d890-p101">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
+
+<span data-ttu-id="7d890-105">Ao criar o rascunho na mesma chamada de **POST**, você pode incluir um [anexo](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="7d890-105">While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="7d890-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7d890-106">Prerequisites</span></span>
+<span data-ttu-id="7d890-107">Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="7d890-107">One of the following **scopes** is required to execute this API: *Mail.ReadWrite*</span></span>
+## <a name="http-request"></a><span data-ttu-id="7d890-108">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7d890-108">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/messages
+POST /users/{id|userPrincipalName}/messages
+POST /me/mailFolders/{id}/messages
+POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
+```
+## <a name="request-headers"></a><span data-ttu-id="7d890-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7d890-109">Request headers</span></span>
+| <span data-ttu-id="7d890-110">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7d890-110">Header</span></span>       | <span data-ttu-id="7d890-111">Valor</span><span class="sxs-lookup"><span data-stu-id="7d890-111">Value</span></span> |
+|:---------------|:--------|
+| <span data-ttu-id="7d890-112">Autorização</span><span class="sxs-lookup"><span data-stu-id="7d890-112">Authorization</span></span>  | <span data-ttu-id="7d890-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7d890-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7d890-115">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7d890-115">Content-Type</span></span>  | <span data-ttu-id="7d890-116">application/json</span><span class="sxs-lookup"><span data-stu-id="7d890-116">application/json</span></span>  |
+
+## <a name="request-body"></a><span data-ttu-id="7d890-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7d890-117">Request body</span></span>
+<span data-ttu-id="7d890-118">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="7d890-118">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+
+<span data-ttu-id="7d890-119">Como o recurso **message** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="7d890-119">Since the **message** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
+
+## <a name="response"></a><span data-ttu-id="7d890-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="7d890-120">Response</span></span>
+
+<span data-ttu-id="7d890-121">Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7d890-121">If successful, this method returns `201, Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="7d890-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7d890-122">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="7d890-123">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="7d890-123">Request 1</span></span>
+<span data-ttu-id="7d890-124">Veja a seguir um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7d890-124">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "create_message_from_user"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/me/messages
+Content-type: application/json
+Content-length: 248
+
+{
+  "receivedDateTime": "datetime-value",
+  "sentDateTime": "datetime-value",
+  "hasAttachments": true,
+  "subject": "subject-value",
+  "body": {
+    "contentType": "",
+    "content": "content-value"
+  },
+  "bodyPreview": "bodyPreview-value"
+}
+```
+<span data-ttu-id="7d890-125">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="7d890-125">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="7d890-126">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="7d890-126">Response 1</span></span>
+<span data-ttu-id="7d890-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7d890-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -23,11 +79,10 @@ Content-length: 248
 }
 ```
 
-## <span data-ttu-id="8f11a-130">Ver também</span><span class="sxs-lookup"><span data-stu-id="8f11a-130">See also</span></span>
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a><span data-ttu-id="7d890-130">Confira também</span><span class="sxs-lookup"><span data-stu-id="7d890-130">See also</span></span>
 
-- [<span data-ttu-id="8f11a-131">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="8f11a-131">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="8f11a-132">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="8f11a-132">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="7d890-131">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="7d890-131">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="7d890-132">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="7d890-132">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->

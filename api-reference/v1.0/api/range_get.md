@@ -1,5 +1,44 @@
+# <a name="get-range"></a><span data-ttu-id="7ac4d-101">Obter intervalo</span><span class="sxs-lookup"><span data-stu-id="7ac4d-101">Get Range</span></span>
+
+<span data-ttu-id="7ac4d-102">Recupere as propriedades e os relacionamentos do objeto de intervalo.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-102">Retrieve the properties and relationships of range object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7ac4d-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7ac4d-103">Prerequisites</span></span>
+<span data-ttu-id="7ac4d-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="7ac4d-104">The following **scopes** are required to execute this API:</span></span> 
+
+    * <span data-ttu-id="7ac4d-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7ac4d-105">Files.ReadWrite</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="7ac4d-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7ac4d-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /workbook/worksheets/{id|name}/range(address='<address>')
+GET /workbook/tables/{id|name}/columns/{id|name}/range
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="7ac4d-107">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7ac4d-107">Optional query parameters</span></span>
+<span data-ttu-id="7ac4d-108">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="7ac4d-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7ac4d-109">Request headers</span></span>
+| <span data-ttu-id="7ac4d-110">Nome</span><span class="sxs-lookup"><span data-stu-id="7ac4d-110">Name</span></span>      |<span data-ttu-id="7ac4d-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ac4d-111">Description</span></span>|
+|:----------|:----------|
+| <span data-ttu-id="7ac4d-112">Autorização</span><span class="sxs-lookup"><span data-stu-id="7ac4d-112">Authorization</span></span>  | <span data-ttu-id="7ac4d-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-p101">Bearer {token}. Required.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="7ac4d-115">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7ac4d-115">Request body</span></span>
+<span data-ttu-id="7ac4d-116">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-116">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="7ac4d-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ac4d-117">Response</span></span>
+
+<span data-ttu-id="7ac4d-118">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-118">If successful, this method returns a `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7ac4d-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7ac4d-119">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7ac4d-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7ac4d-120">Request</span></span>
+<span data-ttu-id="7ac4d-121">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-121">Here is an example of the request.</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_range"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range
+```
+##### <a name="response"></a><span data-ttu-id="7ac4d-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ac4d-122">Response</span></span>
 <span data-ttu-id="7ac4d-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7ac4d-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

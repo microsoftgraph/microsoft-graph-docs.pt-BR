@@ -1,6 +1,34 @@
-<span data-ttu-id="79b6c-p102">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="79b6c-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+# <a name="filter-apply"></a><span data-ttu-id="79b6c-101">Filter: apply</span><span class="sxs-lookup"><span data-stu-id="79b6c-101">Filter: apply</span></span>
 
-Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
+<span data-ttu-id="79b6c-102">Aplica os critérios de filtro determinados à coluna fornecida.</span><span class="sxs-lookup"><span data-stu-id="79b6c-102">Apply the given filter criteria on the given column.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="79b6c-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="79b6c-103">Prerequisites</span></span>
+<span data-ttu-id="79b6c-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="79b6c-104">The following **scopes** are required to execute this API:</span></span> 
+
+    * <span data-ttu-id="79b6c-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="79b6c-105">Files.ReadWrite</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="79b6c-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="79b6c-106">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
+
+```
+## <a name="request-headers"></a><span data-ttu-id="79b6c-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="79b6c-107">Request headers</span></span>
+| <span data-ttu-id="79b6c-108">Nome</span><span class="sxs-lookup"><span data-stu-id="79b6c-108">Name</span></span>       | <span data-ttu-id="79b6c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="79b6c-109">Description</span></span>|
+|:---------------|:----------|
+| <span data-ttu-id="79b6c-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="79b6c-110">Authorization</span></span>  | <span data-ttu-id="79b6c-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="79b6c-p101">Bearer {token}. Required.</span></span> |
+
+
+## <a name="request-body"></a><span data-ttu-id="79b6c-113">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="79b6c-113">Request body</span></span>
+<span data-ttu-id="79b6c-114">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="79b6c-114">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="79b6c-115">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="79b6c-115">Parameter</span></span>    | <span data-ttu-id="79b6c-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="79b6c-116">Type</span></span>   |<span data-ttu-id="79b6c-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="79b6c-117">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="79b6c-118">critérios</span><span class="sxs-lookup"><span data-stu-id="79b6c-118">criteria</span></span>|<span data-ttu-id="79b6c-119">FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="79b6c-119">FilterCriteria</span></span>|<span data-ttu-id="79b6c-120">Os critérios a aplicar.</span><span class="sxs-lookup"><span data-stu-id="79b6c-120">The criteria to apply.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="79b6c-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="79b6c-121">Response</span></span>
+
+<span data-ttu-id="79b6c-p102">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="79b6c-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
 ## <a name="example"></a><span data-ttu-id="79b6c-124">Exemplo</span><span class="sxs-lookup"><span data-stu-id="79b6c-124">Example</span></span>
 <span data-ttu-id="79b6c-125">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="79b6c-125">Here is an example of how to call this API.</span></span>

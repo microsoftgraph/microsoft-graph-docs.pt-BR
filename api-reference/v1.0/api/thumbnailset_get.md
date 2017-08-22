@@ -1,4 +1,28 @@
-<span data-ttu-id="786b2-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="786b2-p101">Bearer {token}. Required.</span></span>  | {token} de portador. Obrigatório. |
+# <a name="get-thumbnailset"></a><span data-ttu-id="786b2-101">Obter thumbnailSet</span><span class="sxs-lookup"><span data-stu-id="786b2-101">Get thumbnailSet</span></span>
+
+<span data-ttu-id="786b2-102">Recupere as propriedades e os relacionamentos de um objeto [thumbnailSet](../resources/thumbnailset.md).</span><span class="sxs-lookup"><span data-stu-id="786b2-102">Retrieve the properties and relationships of a [thumbnailSet](../resources/thumbnailset.md) object.</span></span>
+
+<span data-ttu-id="786b2-103">Para saber mais, consulte [Listar miniaturas](item_list_thumbnails.md).</span><span class="sxs-lookup"><span data-stu-id="786b2-103">For more info, see [List thumbnails](item_list_thumbnails.md).</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="786b2-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="786b2-104">Prerequisites</span></span>
+<span data-ttu-id="786b2-105">Um dos seguintes **escopos** é obrigatório para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="786b2-105">One of the following **scopes** is required to execute this API:</span></span>
+
+  * <span data-ttu-id="786b2-106">Files.Read</span><span class="sxs-lookup"><span data-stu-id="786b2-106">Files.Read</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="786b2-107">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="786b2-107">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /drive/root/thumbnails/{id}
+GET /drive/items/{id}/thumbnails/{id}
+GET /drives/{id}/root/thumbnails/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="786b2-108">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="786b2-108">Optional query parameters</span></span>
+<span data-ttu-id="786b2-109">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="786b2-109">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="786b2-110">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="786b2-110">Request headers</span></span>
+| <span data-ttu-id="786b2-111">Nome</span><span class="sxs-lookup"><span data-stu-id="786b2-111">Name</span></span>       | <span data-ttu-id="786b2-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="786b2-112">Type</span></span> | <span data-ttu-id="786b2-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="786b2-113">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="786b2-114">Autorização</span><span class="sxs-lookup"><span data-stu-id="786b2-114">Authorization</span></span>  | <span data-ttu-id="786b2-115">string</span><span class="sxs-lookup"><span data-stu-id="786b2-115">string</span></span>  | <span data-ttu-id="786b2-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="786b2-p101">Bearer {token}. Required.</span></span> |
 
 
 ## <a name="request-body"></a><span data-ttu-id="786b2-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="786b2-118">Request body</span></span>
