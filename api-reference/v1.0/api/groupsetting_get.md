@@ -1,6 +1,58 @@
-<span data-ttu-id="1f868-p102">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1f868-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+# <a name="get-a-group-setting"></a><span data-ttu-id="99554-101">Obtenha uma configuração de grupo</span><span class="sxs-lookup"><span data-stu-id="99554-101">Get a group setting</span></span>
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<span data-ttu-id="99554-102">Recupere as propriedades de um determinado objeto de configuração de grupo.</span><span class="sxs-lookup"><span data-stu-id="99554-102">Retrieve the properties of a specific of group setting object.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="99554-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="99554-103">Permissions</span></span>
+
+<span data-ttu-id="99554-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="99554-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+
+|<span data-ttu-id="99554-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="99554-106">Permission type</span></span>      | <span data-ttu-id="99554-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="99554-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="99554-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="99554-108">Delegated (work or school account)</span></span> | <span data-ttu-id="99554-109">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="99554-109">One of the following scopes is required to execute this API: Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All</span></span>    | 
+|<span data-ttu-id="99554-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="99554-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="99554-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="99554-111">Not supported.</span></span>    | 
+|<span data-ttu-id="99554-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="99554-112">Application</span></span> | <span data-ttu-id="99554-113">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="99554-113">Directory.Read.All, Directory.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="99554-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="99554-114">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+
+<span data-ttu-id="99554-115">Obter uma configuração de todo o locatário ou específico.</span><span class="sxs-lookup"><span data-stu-id="99554-115">Get a specific tenant-wide or group setting.</span></span>
+
+```http
+GET /groupSettings/{id}
+GET /groups/{id}/settings/{id}
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="99554-116">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="99554-116">Optional query parameters</span></span>
+<span data-ttu-id="99554-117">Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsoft.io/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="99554-117">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+
+> <span data-ttu-id="99554-118">Observação: $filter não é suportado.</span><span class="sxs-lookup"><span data-stu-id="99554-118">Note: $filter is not supported.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="99554-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="99554-119">Request headers</span></span>
+| <span data-ttu-id="99554-120">Nome</span><span class="sxs-lookup"><span data-stu-id="99554-120">Name</span></span> | <span data-ttu-id="99554-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="99554-121">Description</span></span> |
+|:----------|:----------|
+| <span data-ttu-id="99554-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="99554-122">Authorization</span></span> | <span data-ttu-id="99554-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="99554-p102">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="99554-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="99554-125">Request body</span></span>
+
+<span data-ttu-id="99554-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="99554-126">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="99554-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="99554-127">Response</span></span>
+
+<span data-ttu-id="99554-128">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="99554-128">If successful, this method returns a `200 OK` response code and [groupSetting](../resources/groupsetting.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="99554-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="99554-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="99554-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="99554-130">Request</span></span>
+<!-- {
+  "blockType": "request",
+  "name": "get_groupsetting"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/groupSettings/{id}
+```
+##### <a name="response"></a><span data-ttu-id="99554-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="99554-131">Response</span></span>
+
+<span data-ttu-id="99554-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="99554-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

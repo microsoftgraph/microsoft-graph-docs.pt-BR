@@ -1,16 +1,17 @@
-# <a name="create-a-new-folder"></a><span data-ttu-id="d1a22-101">Criar uma nova pasta</span><span class="sxs-lookup"><span data-stu-id="d1a22-101">Create a new folder</span></span>
+# <a name="create-a-new-folder"></a><span data-ttu-id="db85c-101">Criar uma nova pasta</span><span class="sxs-lookup"><span data-stu-id="db85c-101">Create a new folder</span></span>
 
-<span data-ttu-id="d1a22-102">Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.</span><span class="sxs-lookup"><span data-stu-id="d1a22-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="db85c-102">Criar uma nova pasta ou [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) com um item pai ou caminho especificado.</span><span class="sxs-lookup"><span data-stu-id="db85c-102">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d1a22-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d1a22-103">Prerequisites</span></span>
-<span data-ttu-id="d1a22-104">Um dos seguintes **escopos** é obrigatório para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="d1a22-104">One of the following **scopes** is required to execute this API:</span></span>
+## <a name="permissions"></a><span data-ttu-id="db85c-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="db85c-103">Permissions</span></span>
+<span data-ttu-id="db85c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="db85c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-* <span data-ttu-id="d1a22-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d1a22-105">Files.ReadWrite</span></span>
-* <span data-ttu-id="d1a22-106">Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d1a22-106">Files.ReadWrite.All</span></span>
-* <span data-ttu-id="d1a22-107">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d1a22-107">Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="db85c-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="db85c-106">Permission type</span></span>      | <span data-ttu-id="db85c-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="db85c-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="db85c-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="db85c-108">Delegated (work or school account)</span></span> | <span data-ttu-id="db85c-109">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db85c-109">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="db85c-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="db85c-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db85c-111">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db85c-111">Files.ReadWrite, Files.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="db85c-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="db85c-112">Application</span></span> | <span data-ttu-id="db85c-113">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db85c-113">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> | 
 
-
-## <a name="http-request"></a><span data-ttu-id="d1a22-108">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d1a22-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db85c-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="db85c-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/children
@@ -19,17 +20,17 @@ POST /drives/{drive-id}/items/{parent-item-id}/children
 POST /groups/{group-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="d1a22-109">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d1a22-109">Request body</span></span>
-<span data-ttu-id="d1a22-110">No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.</span><span class="sxs-lookup"><span data-stu-id="d1a22-110">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db85c-115">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="db85c-115">Request body</span></span>
+<span data-ttu-id="db85c-116">No corpo da solicitação, forneça uma representação JSON do recurso [DriveItem](../resources/driveitem.md) a criar.</span><span class="sxs-lookup"><span data-stu-id="db85c-116">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d1a22-111">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1a22-111">Response</span></span>
+## <a name="response"></a><span data-ttu-id="db85c-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="db85c-117">Response</span></span>
 
-<span data-ttu-id="d1a22-112">Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d1a22-112">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="db85c-118">Se bem sucedido, este método retorna o código de resposta `201 Created` e o recurso [Driveitem](../resources/driveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="db85c-118">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d1a22-113">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d1a22-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="db85c-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="db85c-119">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="d1a22-114">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d1a22-114">Request</span></span>
-<span data-ttu-id="d1a22-115">Eis um exemplo de solicitação para criar uma nova pasta na raiz do OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="d1a22-115">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
+##### <a name="request"></a><span data-ttu-id="db85c-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="db85c-120">Request</span></span>
+<span data-ttu-id="db85c-121">Eis um exemplo de solicitação para criar uma nova pasta na raiz do OneDrive do usuário.</span><span class="sxs-lookup"><span data-stu-id="db85c-121">Here is an example of the request to create a new folder in the user's OneDrive root.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -45,9 +46,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d1a22-116">Resposta</span><span class="sxs-lookup"><span data-stu-id="d1a22-116">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="db85c-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="db85c-122">Response</span></span>
 
-<span data-ttu-id="d1a22-117">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d1a22-117">Here is an example of the response.</span></span>
+<span data-ttu-id="db85c-123">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="db85c-123">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

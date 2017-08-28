@@ -1,35 +1,42 @@
-# <a name="assignlicense"></a><span data-ttu-id="27417-101">assignLicense</span><span class="sxs-lookup"><span data-stu-id="27417-101">assignLicense</span></span>
-<span data-ttu-id="27417-p101">Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.</span><span class="sxs-lookup"><span data-stu-id="27417-p101">Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.</span></span>
+# <a name="assignlicense"></a><span data-ttu-id="8ea7b-101">assignLicense</span><span class="sxs-lookup"><span data-stu-id="8ea7b-101">assignLicense</span></span>
+<span data-ttu-id="8ea7b-p101">Adiciona ou remova assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-p101">Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="27417-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="27417-104">Prerequisites</span></span>
-<span data-ttu-id="27417-105">Um dos seguintes **escopos** é obrigatório para executar esta API: *User.ReadWrite.All; Directory.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="27417-105">One of the following **scopes** is required to execute this API: *User.ReadWrite.All; Directory.ReadWrite.All*</span></span>
-## <a name="http-request"></a><span data-ttu-id="27417-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="27417-106">HTTP request</span></span>
+## <a name="permissions"></a><span data-ttu-id="8ea7b-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="8ea7b-104">Permissions</span></span>
+<span data-ttu-id="8ea7b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="8ea7b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="8ea7b-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8ea7b-107">Permission type</span></span>      | <span data-ttu-id="8ea7b-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8ea7b-108">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="8ea7b-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8ea7b-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8ea7b-110">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8ea7b-110">User.ReadWrite.All, Directory.ReadWrite.All</span></span>    | 
+|<span data-ttu-id="8ea7b-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8ea7b-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ea7b-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-112">Not supported.</span></span>    | 
+|<span data-ttu-id="8ea7b-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8ea7b-113">Application</span></span> | <span data-ttu-id="8ea7b-114">User.ReadWrite.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8ea7b-114">User.ReadWrite.All, Directory.ReadWrite.All</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="8ea7b-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8ea7b-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/assignLicense
 ```
-## <a name="request-headers"></a><span data-ttu-id="27417-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="27417-107">Request headers</span></span>
-| <span data-ttu-id="27417-108">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="27417-108">Header</span></span>       | <span data-ttu-id="27417-109">Valor</span><span class="sxs-lookup"><span data-stu-id="27417-109">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="8ea7b-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8ea7b-116">Request headers</span></span>
+| <span data-ttu-id="8ea7b-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8ea7b-117">Header</span></span>       | <span data-ttu-id="8ea7b-118">Valor</span><span class="sxs-lookup"><span data-stu-id="8ea7b-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="27417-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="27417-110">Authorization</span></span>  | <span data-ttu-id="27417-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="27417-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="27417-113">Content-Type</span><span class="sxs-lookup"><span data-stu-id="27417-113">Content-Type</span></span>  | <span data-ttu-id="27417-114">application/json</span><span class="sxs-lookup"><span data-stu-id="27417-114">application/json</span></span>  |
+| <span data-ttu-id="8ea7b-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="8ea7b-119">Authorization</span></span>  | <span data-ttu-id="8ea7b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="8ea7b-122">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8ea7b-122">Content-Type</span></span>  | <span data-ttu-id="8ea7b-123">application/json</span><span class="sxs-lookup"><span data-stu-id="8ea7b-123">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="27417-115">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="27417-115">Request body</span></span>
-<span data-ttu-id="27417-116">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="27417-116">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8ea7b-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8ea7b-124">Request body</span></span>
+<span data-ttu-id="8ea7b-125">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-125">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="27417-117">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="27417-117">Parameter</span></span>    | <span data-ttu-id="27417-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="27417-118">Type</span></span>   |<span data-ttu-id="27417-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="27417-119">Description</span></span>|
+| <span data-ttu-id="8ea7b-126">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="8ea7b-126">Parameter</span></span>    | <span data-ttu-id="8ea7b-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="8ea7b-127">Type</span></span>   |<span data-ttu-id="8ea7b-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="8ea7b-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="27417-120">addLicenses</span><span class="sxs-lookup"><span data-stu-id="27417-120">addLicenses</span></span>|<span data-ttu-id="27417-121">AssignedLicense</span><span class="sxs-lookup"><span data-stu-id="27417-121">AssignedLicense</span></span>|<span data-ttu-id="27417-p103">Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar os planos associados a uma licença definindo a propriedade **disabledPlans** em um objeto [assignedLicense](../resources/assignedlicense.md).</span><span class="sxs-lookup"><span data-stu-id="27417-p103">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
-|<span data-ttu-id="27417-124">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="27417-124">removeLicenses</span></span>|<span data-ttu-id="27417-125">Guid</span><span class="sxs-lookup"><span data-stu-id="27417-125">Guid</span></span>|<span data-ttu-id="27417-126">Uma coleção de GUIDs que identifica as licenças a remover.</span><span class="sxs-lookup"><span data-stu-id="27417-126">A collection of GUIDs that identify the licenses to remove.</span></span>|
+|<span data-ttu-id="8ea7b-129">addLicenses</span><span class="sxs-lookup"><span data-stu-id="8ea7b-129">addLicenses</span></span>|<span data-ttu-id="8ea7b-130">AssignedLicense</span><span class="sxs-lookup"><span data-stu-id="8ea7b-130">AssignedLicense</span></span>|<span data-ttu-id="8ea7b-p104">Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar os planos associados a uma licença definindo a propriedade **disabledPlans** em um objeto [assignedLicense](../resources/assignedlicense.md).</span><span class="sxs-lookup"><span data-stu-id="8ea7b-p104">A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable plans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.</span></span>|
+|<span data-ttu-id="8ea7b-133">removeLicenses</span><span class="sxs-lookup"><span data-stu-id="8ea7b-133">removeLicenses</span></span>|<span data-ttu-id="8ea7b-134">Guid</span><span class="sxs-lookup"><span data-stu-id="8ea7b-134">Guid</span></span>|<span data-ttu-id="8ea7b-135">Uma coleção de GUIDs que identifica as licenças a remover.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-135">A collection of GUIDs that identify the licenses to remove.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="27417-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="27417-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8ea7b-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="8ea7b-136">Response</span></span>
 
-<span data-ttu-id="27417-128">Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="27417-128">If successful, this method returns `200, OK` response code and [user](../resources/user.md) object in the response body.</span></span>
+<span data-ttu-id="8ea7b-137">Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [user](../resources/user.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-137">If successful, this method returns `200, OK` response code and [user](../resources/user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="27417-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="27417-129">Example</span></span>
-<span data-ttu-id="27417-130">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="27417-130">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="27417-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="27417-131">Request</span></span>
-<span data-ttu-id="27417-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="27417-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8ea7b-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8ea7b-138">Example</span></span>
+<span data-ttu-id="8ea7b-139">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="8ea7b-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8ea7b-140">Request</span></span>
+<span data-ttu-id="8ea7b-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_assignlicense"
@@ -50,8 +57,8 @@ Content-length: 185
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="27417-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="27417-133">Response</span></span>
-<span data-ttu-id="27417-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="27417-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8ea7b-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="8ea7b-142">Response</span></span>
+<span data-ttu-id="8ea7b-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8ea7b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

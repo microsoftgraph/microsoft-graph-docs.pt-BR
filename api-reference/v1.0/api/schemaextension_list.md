@@ -1,33 +1,40 @@
-# <a name="list-schemaextensions"></a><span data-ttu-id="38194-101">Listar schemaExtensions</span><span class="sxs-lookup"><span data-stu-id="38194-101">List schemaExtensions</span></span>
+# <a name="list-schemaextensions"></a><span data-ttu-id="d0878-101">Listar schemaExtensions</span><span class="sxs-lookup"><span data-stu-id="d0878-101">List schemaExtensions</span></span>
 
-<span data-ttu-id="38194-102">Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) criados por aplicativos que você possui no locatário atual (que pode ser **InDevelopment**, **Available** ou **Deprecated**) e todas as outras extensões de esquema pertencentes a outros aplicativos que estão marcadas como **Available**.</span><span class="sxs-lookup"><span data-stu-id="38194-102">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
+<span data-ttu-id="d0878-102">Obtenha uma lista de objetos [schemaExtension](../resources/schemaextension.md) criados por aplicativos que você possui no locatário atual (que pode ser **InDevelopment**, **Available** ou **Deprecated**) e todas as outras extensões de esquema pertencentes a outros aplicativos que estão marcadas como **Available**.</span><span class="sxs-lookup"><span data-stu-id="d0878-102">Get a list of [schemaExtension](../resources/schemaextension.md) objects created by any apps you own in the current tenant (that can be **InDevelopment**, **Available**, or **Deprecated**), and all other schema extensions owned by other apps that are marked as **Available**.</span></span> 
 
-## <a name="prerequisites"></a><span data-ttu-id="38194-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="38194-103">Prerequisites</span></span>
-<span data-ttu-id="38194-104">Um dos seguintes **escopos** é obrigatório para executar esta API: *Directory.Read.All* ou *Directory.AccessAsUser.All*</span><span class="sxs-lookup"><span data-stu-id="38194-104">One of the following **scopes** is required to execute this API: *Directory.Read.All* or *Directory.AccessAsUser.All*</span></span>
+## <a name="permissions"></a><span data-ttu-id="d0878-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="d0878-103">Permissions</span></span>
+<span data-ttu-id="d0878-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d0878-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="38194-105">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38194-105">HTTP request</span></span>
+
+|<span data-ttu-id="d0878-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d0878-106">Permission type</span></span>      | <span data-ttu-id="d0878-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d0878-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="d0878-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d0878-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d0878-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="d0878-109">Directory.AccessAsUser.All</span></span>    | 
+|<span data-ttu-id="d0878-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d0878-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0878-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d0878-111">Not supported.</span></span>    | 
+|<span data-ttu-id="d0878-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d0878-112">Application</span></span> | <span data-ttu-id="d0878-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d0878-113">Not supported.</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="d0878-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d0878-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="38194-106">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="38194-106">Optional query parameters</span></span>
-<span data-ttu-id="38194-107">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="38194-107">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d0878-115">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d0878-115">Optional query parameters</span></span>
+<span data-ttu-id="d0878-116">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d0878-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="38194-108">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="38194-108">Request headers</span></span>
-| <span data-ttu-id="38194-109">Nome</span><span class="sxs-lookup"><span data-stu-id="38194-109">Name</span></span>      |<span data-ttu-id="38194-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="38194-110">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d0878-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d0878-117">Request headers</span></span>
+| <span data-ttu-id="d0878-118">Nome</span><span class="sxs-lookup"><span data-stu-id="d0878-118">Name</span></span>      |<span data-ttu-id="d0878-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="d0878-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="38194-111">Autorização</span><span class="sxs-lookup"><span data-stu-id="38194-111">Authorization</span></span>  | <span data-ttu-id="38194-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38194-p101">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="38194-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="38194-114">Content-Type</span></span>   | <span data-ttu-id="38194-115">application/json</span><span class="sxs-lookup"><span data-stu-id="38194-115">application/json</span></span> | 
+| <span data-ttu-id="d0878-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="d0878-120">Authorization</span></span>  | <span data-ttu-id="d0878-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d0878-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d0878-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d0878-123">Content-Type</span></span>   | <span data-ttu-id="d0878-124">application/json</span><span class="sxs-lookup"><span data-stu-id="d0878-124">application/json</span></span> | 
 
-## <a name="request-body"></a><span data-ttu-id="38194-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38194-116">Request body</span></span>
-<span data-ttu-id="38194-117">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="38194-117">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d0878-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d0878-125">Request body</span></span>
+<span data-ttu-id="d0878-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d0878-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="38194-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="38194-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d0878-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0878-127">Response</span></span>
 
-<span data-ttu-id="38194-119">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38194-119">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="38194-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38194-120">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="38194-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38194-121">Request</span></span>
-<span data-ttu-id="38194-122">O exemplo a seguir mostra como procurar entre todas as extensões acessíveis uma que seja específica ao filtrar sua **id** exclusiva.</span><span class="sxs-lookup"><span data-stu-id="38194-122">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
+<span data-ttu-id="d0878-128">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [schemaExtension](../resources/schemaextension.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d0878-128">If successful, this method returns a `200 OK` response code and collection of [schemaExtension](../resources/schemaextension.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d0878-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d0878-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d0878-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d0878-130">Request</span></span>
+<span data-ttu-id="d0878-131">O exemplo a seguir mostra como procurar entre todas as extensões acessíveis uma que seja específica ao filtrar sua **id** exclusiva.</span><span class="sxs-lookup"><span data-stu-id="d0878-131">The following example shows how to look among all the accessible extensions for a specific one by filtering on its unique **id**.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "get_schemaextensions"
@@ -35,8 +42,8 @@ GET /schemaExtensions
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
-##### <a name="response"></a><span data-ttu-id="38194-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="38194-123">Response</span></span>
-<span data-ttu-id="38194-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="38194-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d0878-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="d0878-132">Response</span></span>
+<span data-ttu-id="d0878-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d0878-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,10 +76,10 @@ Content-length: 274
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="38194-127">Ver também</span><span class="sxs-lookup"><span data-stu-id="38194-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d0878-136">Confira também</span><span class="sxs-lookup"><span data-stu-id="d0878-136">See also</span></span>
 
-- [<span data-ttu-id="38194-128">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="38194-128">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="38194-129">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="38194-129">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
+- [<span data-ttu-id="d0878-137">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="d0878-137">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="d0878-138">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="d0878-138">Add custom data to groups using schema extensions</span></span>](../../../concepts/extensibility_schema_groups.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

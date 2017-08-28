@@ -1,15 +1,22 @@
-# <a name="create-event"></a><span data-ttu-id="3115d-101">Criar Evento</span><span class="sxs-lookup"><span data-stu-id="3115d-101">Create Event</span></span>
+# <a name="create-event"></a><span data-ttu-id="2e1da-101">Criar Evento</span><span class="sxs-lookup"><span data-stu-id="2e1da-101">Create Event</span></span>
 
-<span data-ttu-id="3115d-102">Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.</span><span class="sxs-lookup"><span data-stu-id="3115d-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
+<span data-ttu-id="2e1da-102">Criar um [evento](../resources/event.md) no calendário padrão do usuário ou em um calendário específico.</span><span class="sxs-lookup"><span data-stu-id="2e1da-102">Create an [event](../resources/event.md) in the user's default calendar or specified calendar.</span></span>
 
-<span data-ttu-id="3115d-103">É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="3115d-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
+<span data-ttu-id="2e1da-103">É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md).</span><span class="sxs-lookup"><span data-stu-id="2e1da-103">You can specify the time zone for each of the start and end times of the event as part of these values, as the **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.</span></span> 
 
-<span data-ttu-id="3115d-104">Ao criar o evento, o servidor envia convites para todos os participantes.</span><span class="sxs-lookup"><span data-stu-id="3115d-104">When the event is created, the server send invitations to all attendees.</span></span>
+<span data-ttu-id="2e1da-104">Ao criar o evento, o servidor envia convites para todos os participantes.</span><span class="sxs-lookup"><span data-stu-id="2e1da-104">When the event is created, the server send invitations to all attendees.</span></span>
 
 
-## <a name="prerequisites"></a><span data-ttu-id="3115d-105">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3115d-105">Prerequisites</span></span>
-<span data-ttu-id="3115d-106">Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*</span><span class="sxs-lookup"><span data-stu-id="3115d-106">One of the following **scopes** is required to execute this API: *Calendars.ReadWrite*</span></span>
-## <a name="http-request"></a><span data-ttu-id="3115d-107">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3115d-107">HTTP request</span></span>
+## <a name="permissions"></a><span data-ttu-id="2e1da-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="2e1da-105">Permissions</span></span>
+<span data-ttu-id="2e1da-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="2e1da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+
+|<span data-ttu-id="2e1da-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2e1da-108">Permission type</span></span>      | <span data-ttu-id="2e1da-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2e1da-109">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="2e1da-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2e1da-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2e1da-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e1da-111">Calendars.ReadWrite</span></span>    | 
+|<span data-ttu-id="2e1da-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2e1da-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2e1da-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e1da-113">Calendars.ReadWrite</span></span>    | 
+|<span data-ttu-id="2e1da-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2e1da-114">Application</span></span> | <span data-ttu-id="2e1da-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2e1da-115">Calendars.ReadWrite</span></span> | 
+
+## <a name="http-request"></a><span data-ttu-id="2e1da-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2e1da-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events
@@ -21,24 +28,24 @@ POST /users/{id | userPrincipalName}/calendar/events
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
 ```
-## <a name="request-headers"></a><span data-ttu-id="3115d-108">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3115d-108">Request headers</span></span>
-| <span data-ttu-id="3115d-109">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3115d-109">Header</span></span>       | <span data-ttu-id="3115d-110">Valor</span><span class="sxs-lookup"><span data-stu-id="3115d-110">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2e1da-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="2e1da-117">Request headers</span></span>
+| <span data-ttu-id="2e1da-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="2e1da-118">Header</span></span>       | <span data-ttu-id="2e1da-119">Valor</span><span class="sxs-lookup"><span data-stu-id="2e1da-119">Value</span></span> |
 |:-----------|:------|
-| <span data-ttu-id="3115d-111">Autorização</span><span class="sxs-lookup"><span data-stu-id="3115d-111">Authorization</span></span>  | <span data-ttu-id="3115d-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3115d-p101">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="3115d-114">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3115d-114">Content-Type</span></span>  | <span data-ttu-id="3115d-p102">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3115d-p102">application/json. Required.</span></span>  |
+| <span data-ttu-id="2e1da-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="2e1da-120">Authorization</span></span>  | <span data-ttu-id="2e1da-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e1da-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2e1da-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2e1da-123">Content-Type</span></span>  | <span data-ttu-id="2e1da-p103">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2e1da-p103">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3115d-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3115d-117">Request body</span></span>
-<span data-ttu-id="3115d-118">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="3115d-118">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2e1da-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2e1da-126">Request body</span></span>
+<span data-ttu-id="2e1da-127">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="2e1da-127">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
 
-<span data-ttu-id="3115d-119">Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o evento ao criá-lo.</span><span class="sxs-lookup"><span data-stu-id="3115d-119">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
+<span data-ttu-id="2e1da-128">Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados para o evento ao criá-lo.</span><span class="sxs-lookup"><span data-stu-id="2e1da-128">Since the **event** resource supports [extensions](../../../concepts/extensibility_overview.md), you can use the `POST` operation and add custom properties with your own data to the event while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3115d-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="3115d-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2e1da-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e1da-129">Response</span></span>
 
-<span data-ttu-id="3115d-121">Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3115d-121">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
+<span data-ttu-id="2e1da-130">Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2e1da-130">If successful, this method returns `201, Created` response code and [event](../resources/event.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3115d-122">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3115d-122">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3115d-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3115d-123">Request</span></span>
-<span data-ttu-id="3115d-p103">Veja a seguir um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar que as horas de **início** e **fim** na resposta devem usar esse fuso horário.</span><span class="sxs-lookup"><span data-stu-id="3115d-p103">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
+## <a name="example"></a><span data-ttu-id="2e1da-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2e1da-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2e1da-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2e1da-132">Request</span></span>
+<span data-ttu-id="2e1da-p104">Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar que as horas de **início** e **fim** na resposta devem usar esse fuso horário.</span><span class="sxs-lookup"><span data-stu-id="2e1da-p104">Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the **start** and **end** times in the response should use that time zone.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -77,9 +84,9 @@ Content-length: 600
   ]
 }
 ```
-<span data-ttu-id="3115d-126">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="3115d-126">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="3115d-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="3115d-127">Response</span></span>
-<span data-ttu-id="3115d-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3115d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="2e1da-135">No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).</span><span class="sxs-lookup"><span data-stu-id="2e1da-135">In the request body, supply a JSON representation of [event](../resources/event.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="2e1da-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="2e1da-136">Response</span></span>
+<span data-ttu-id="2e1da-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2e1da-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -160,10 +167,10 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a><span data-ttu-id="3115d-131">Ver também</span><span class="sxs-lookup"><span data-stu-id="3115d-131">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2e1da-140">Confira também</span><span class="sxs-lookup"><span data-stu-id="2e1da-140">See also</span></span>
 
-- [<span data-ttu-id="3115d-132">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="3115d-132">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
-- [<span data-ttu-id="3115d-133">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="3115d-133">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
+- [<span data-ttu-id="2e1da-141">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="2e1da-141">Add custom data to resources using extensions</span></span>](../../../concepts/extensibility_overview.md)
+- [<span data-ttu-id="2e1da-142">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="2e1da-142">Add custom data to users using open extensions (preview)</span></span>](../../../concepts/extensibility_open_users.md)
 <!--
 - [Add custom data to groups using schema extensions (preview)](../../../concepts/extensibility_schema_groups.md)
 -->
