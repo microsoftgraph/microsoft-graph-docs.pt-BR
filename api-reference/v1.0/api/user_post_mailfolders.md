@@ -1,8 +1,15 @@
 # <a name="create-mailfolder"></a>Criar MailFolder
 
 Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.ReadWrite    | 
+|Aplicativo | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

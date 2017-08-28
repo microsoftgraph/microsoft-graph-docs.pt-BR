@@ -2,9 +2,14 @@
 Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [member](../api/user_list_memberof.md), que retorna somente os grupos dos quais o usuário é membro direto.
 
 Esta função dá suporte ao Office 365 e a outros tipos de grupos provisionados no Azure AD. O número máximo de grupos de que cada solicitação pode retornar é 2046. Observe que os Grupos do Office 365 não podem conter grupos, portanto associações em um Grupo do Office 365 sempre são diretas.
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *User.Read* ou *User.ReadBasic.All* e *Group.Read.All*; *Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | User.Read and Group.Read.All, User.ReadBasic.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | User.ReadBasic.All e Group.Read.All, Directory.Read.All, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

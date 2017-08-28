@@ -6,8 +6,15 @@ As extensões de esquema permitem que você adicione dados personalizados fortem
 
 Veja exemplos de como [definir uma extensão de esquema que descreve um curso de treinamento](../../../concepts/extensibility_schema_groups.md#2-register-a-schema-extension-definition-that-describes-a-training-course), usar a definição de extensão do esquema para [criar um novo grupo com dados do curso de treinamento](../../../concepts/extensibility_schema_groups.md#3-create-a-new-group-with-extended-data) e [adicionar dados do curso de treinamento a um grupo existente](../../../concepts/extensibility_schema_groups.md#4-add-update-or-remove-custom-data-in-an-existing-group).
 
-## <a name="prerequisites"></a>Pré-requisitos
-O seguinte **escopo** é obrigatório para executar esta API: *Directory.AccessAsUser.All*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -187,7 +194,7 @@ Content-length: 420
 ```
 
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados a grupos usando as extensões do esquema](../../../concepts/extensibility_schema_groups.md)

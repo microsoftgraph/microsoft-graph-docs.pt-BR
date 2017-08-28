@@ -6,13 +6,13 @@ Uma operação GET procura a foto especificada na caixa de correio do usuário n
 
 > **Observação** Esta operação na versão 1.0 é compatível com caixas de correio corporativas ou de estudante ou caixas de correio não pessoais dos usuários
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar essa API para:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-*   Foto do perfil de qualquer usuário no locatário, incluindo o usuário conectado - *User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-*   Foto do perfil especificamente do usuário conectado - *User.Read, User.ReadWrite; User.ReadBasic.All; User.Read.All; User.ReadWrite.All*
-* Foto do perfil de um **grupo** - *Group.Read.All; Group.ReadWrite.All*
-* Foto de um **contato** - *Contacts.Read; Contacts.ReadWrite*
+*   Foto do perfil de qualquer usuário no locatário, incluindo o usuário conectado – User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+*   Foto do perfil especificamente do usuário conectado – User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All
+* Foto do perfil de um **grupo** – Group.Read.All, Group.ReadWrite.All
+* Foto de um **contato** – Contacts.Read, Contacts.ReadWrite
 
 ## <a name="http-request-to-get-the-photo"></a>Solicitação HTTP para obter a foto
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

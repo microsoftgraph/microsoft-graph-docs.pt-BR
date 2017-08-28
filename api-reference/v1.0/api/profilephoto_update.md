@@ -6,13 +6,12 @@ Você pode usar PATCH ou PUT para esta operação na versão 1.0.
 
 > **Observação** Esta operação na versão 1.0 é compatível com caixas de correio corporativas ou de estudante ou caixas de correio não pessoais dos usuários
 
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar essa API para:
-
-- Foto do perfil de **usuário** conectado  - *User.ReadWrite*, *User.ReadWrite.All*
-- Foto do perfil de um **group**  -  *Group.ReadWrite.All*
-- Foto de um **contact**  -  *Contacts.ReadWrite*
+- Foto do perfil de **usuário** conectado – User.ReadWrite, User.ReadWrite.All
+- Foto do perfil de um **grupo** – Group.ReadWrite.All
+- Foto de um **contato** – Contacts.ReadWrite
 
 > **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](../../../concepts/auth_v2_service.md).
 

@@ -1,8 +1,15 @@
 # <a name="list-calendars"></a>Listar calendários
 
 Obtenha calendários de todos do usuário (propriedade de navegação `/calendars`), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read; Calendars.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
+|Aplicativo | Calendars.Read, Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 

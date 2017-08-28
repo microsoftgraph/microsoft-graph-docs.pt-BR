@@ -11,12 +11,12 @@ Um anexo pode ser de um dos seguintes tipos:
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
 
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Se estiver acessando anexos em mensagens: *Mail.Read*
-* Se estiver acessando anexos em eventos: *Calendars.Read*
-* Se estiver acessando anexos em eventos de grupo ou postagens: *Group.Read.All*
+* Se estiver acessando anexos em mensagens: Mail.Read.
+* Se estiver acessando anexos em eventos: Calendars.Read.
+* Se estiver acessando anexos em eventos de grupo ou postagens: Group.Read.All.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

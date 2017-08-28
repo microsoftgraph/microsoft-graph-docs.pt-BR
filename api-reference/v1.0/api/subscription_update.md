@@ -4,11 +4,11 @@ Renove uma assinatura ampliando seu tempo de validade.
 
 As assinaturas a recursos expiram nas datas prescritas pelos tipos de recursos individuais.  Para não perder as notificações, as assinaturas devem ser renovadas bem antes de sua data de vencimento.  Consulte [subscription](../resources/subscription.md) para saber mais sobre datas de vencimento individuais.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-A tabela a seguir lista a permissão sugerida necessária para cada recurso.
+A tabela a seguir lista a permissão sugerida necessária para cada recurso. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-| Tipo de recurso / item        | Escopo               |
+| Tipo de recurso/item        | Permissão          |
 |-----------------------------|---------------------|
 | Contatos                    | Contacts.Read       |
 | Conversas               | Group.Read.All      |

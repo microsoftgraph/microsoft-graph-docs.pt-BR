@@ -1,6 +1,6 @@
 # <a name="list-events"></a>Listar eventos
 
-Obtenha uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.
+Obtenha uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres da série.
 
 No momento, esta operação retorna corpos de eventos somente no formato HTML.
 
@@ -19,8 +19,15 @@ Se o evento foi criado em um fuso horário diferente, as horas de início e de t
 
 Você pode usar as propriedades **OriginalStartTimeZone** e **OriginalEndTimeZone** no recurso **event** para descobrir o fuso horário usado quando o evento foi criado.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read; Calendars.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
+|Aplicativo | Calendars.Read, Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação. Especifica o seguinte:
+Este é um exemplo da solicitação. Especifica o seguinte:
 
 - um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
 - Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.

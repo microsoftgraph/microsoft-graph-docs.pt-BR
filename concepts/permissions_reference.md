@@ -158,7 +158,7 @@ Nenhum
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _DeviceManagementServiceConfig.Read.All_ | Configuração de leitura Microsoft Intune (visualização) | Permite que o aplicativo leia as propriedades do serviço do Microsoft Intune, incluindo o registro do dispositivo e a configuração de conexão de serviço de terceiros. | Sim |
 | _DeviceManagementServiceConfig.ReadWrite.All_ | Ler e registrar o Microsoft Intune (visualização) | Permite que o aplicativo leia e registre propriedades do serviço do Microsoft Intune, incluindo o registro do dispositivo e a configuração de conexão de serviço de terceiros. | Sim |
-| _DeviceManagementConfiguration.Read.All_ | Ler a configuração de dispositivo e as políticas do Microsoft Intune (visualização) | Permite que o aplicativo leia as propriedades configuração de dispositivo e das políticas de conformidade do Microsoft gerenciado Intune e sua atribuição aos grupos.  | Sim |
+| _DeviceManagementConfiguration.Read.All_ | Ler a configuração de dispositivo e as políticas do Microsoft Intune (visualização) | Permite que o aplicativo leia as propriedades de configuração de dispositivo e as políticas de conformidade de dispositivo do Microsoft Intune e sua atribuição aos grupos. | Sim |
 | _DeviceManagementConfiguration.ReadWrite.All_ | Ler e escrever as configurações de dispositivo e as políticas do Microsoft Intune (visualização) | Permite que o aplicativo leia e registre as propriedades de configuração de dispositivo e as políticas de conformidade de dispositivo do Microsoft Intune e sua atribuição aos grupos. | Sim |
 | _DeviceManagementApps.Read.All_ | Ler aplicativos do Microsoft Intune (visualização) | Permite que o aplicativo leia as propriedades, as atribuições de grupo, o status de aplicativos, as configurações de aplicativo e as políticas de proteção de aplicativo gerenciadas pelo Microsoft Intune. | Sim |
 | _DeviceManagementApps.ReadWrite.All_ | Ler e registrar os aplicativos do Microsoft Intune (visualização) | Permite que aplicativo leia e registre s propriedades, as atribuições de grupo, o status dos aplicativos, as configurações de aplicativo e as políticas de proteção de aplicativo gerenciadas pelo Microsoft Intune. | Sim |
@@ -421,7 +421,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-Nenhum
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Member.Read.Hidden_ | Ler associações ocultas | Permite que o aplicativo leia as associações de grupos e unidades administrativas ocultos em nome do usuário conectado para aqueles grupos e unidades administrativas ocultos aos quais o usuário conectado tem acesso. | Sim |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -430,9 +432,16 @@ Nenhum
 | _Member.Read.Hidden_ | Ler todas as associações ocultas | Permite que o aplicativo leia as associações de grupos ocultos e unidades administrativas sem um usuário conectado. | Sim |
 
 ### <a name="remarks"></a>Comentários
+_Member.Read.Hidden_ é válida somente para contas corporativas ou de estudante.
+
 A associação pode estar oculta em alguns grupos do Office 365. Isso significa que somente os membros do grupo podem exibir seus membros. Esse recurso pode ser usado para ajudar a cumprir regulamentos que exijam a ocultação da associação do grupo de pessoas externas (por exemplo, um grupo do Office 365 que representa os alunos registrados em uma classe).
 
 ### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _Member.Read.Hidden_: Ler os membros de uma unidade administrativa com associação oculta em nome do usuário conectado (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_: Ler os membros de um grupo com associação oculta em nome do usuário conectado (`GET /groups/{id}/members`).
 
 #### <a name="application"></a>Aplicativo
 

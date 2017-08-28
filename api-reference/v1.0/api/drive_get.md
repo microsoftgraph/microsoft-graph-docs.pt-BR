@@ -2,16 +2,15 @@
 
 Recupere as propriedades e as relações de um recurso [Drive](../resources/drive.md). Uma Unidade é o contêiner de nível superior para um sistema de arquivos. A API do Graph permite o acesso ao recurso de Unidade do OneDrive ou do OneDrive for Business de um usuário ou a bibliotecas de documentos do SharePoint.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Files.Read
-* Files.ReadWrite
-* Files.Read.All
-* Files.ReadWrite.All
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    | 
+|Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
 
 ## <a name="get-a-users-onedrive"></a>Obtenha o OneDrive de um usuário
 

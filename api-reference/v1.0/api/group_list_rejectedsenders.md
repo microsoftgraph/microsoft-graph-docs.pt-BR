@@ -3,8 +3,15 @@
 Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo. 
 
 Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:  *Group.Read.All* ou *Group.ReadWrite.All*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Group.Read.All, Group.ReadWrite.All | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

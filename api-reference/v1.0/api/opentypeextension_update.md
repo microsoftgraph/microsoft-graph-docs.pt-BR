@@ -7,18 +7,17 @@ Atualize uma extensão aberta (objeto [openTypeExtension](../resources/openTypeE
 
 Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primitivos.
 
+## <a name="permissions"></a>Permissões
 
-## <a name="prerequisites"></a>Pré-requisitos
-
-Uma das seguintes **permissões** é necessária para executar essa API, dependendo do recurso no qual a extensão foi criada:
+Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso no qual a extensão foi criada. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensagem](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
+| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
+| [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | [mensagem](../resources/message.md) | Mail.ReadWrite |
+| [organização](../resources/organization.md) | Directory.AccessAsUser.All | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite |
+| [usuário](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>Solicitação HTTP
 Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `PATCH` nessa instância de extensão.

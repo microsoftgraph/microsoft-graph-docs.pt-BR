@@ -2,8 +2,15 @@
 
 Recusa o convite para o evento especificado.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Calendars.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite    | 
+|Aplicativo | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

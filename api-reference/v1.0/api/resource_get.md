@@ -1,10 +1,14 @@
 # <a name="get-resource"></a>Obter recurso
 
 Recupere os dados binários do objeto [resource](../resources/resource.md) de um arquivo ou imagem.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:  
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-Notes.Read, Notes.ReadWrite, Notes.Read.All ou Notes.ReadWrite.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    | 
+|Aplicativo | Notes.Read.All, Notes.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

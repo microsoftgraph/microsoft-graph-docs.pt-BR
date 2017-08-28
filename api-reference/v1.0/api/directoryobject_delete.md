@@ -2,10 +2,16 @@
 
 Exclui um directoryObject.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **scopes** são necessário para executar esta API: _Directory.AccessAsUser.All_
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-**OBSERVAÇÃO:** usuários, grupos e contatos são tipos de objeto de diretório. Como resultado, se você precisar excluir usuários, o seguinte **scope** pode e deve ser usado: _User.ReadWrite.All_
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Sem suporte. | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

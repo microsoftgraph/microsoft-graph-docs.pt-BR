@@ -4,12 +4,14 @@ Atualize os metadados de um [DriveItem](../resources/driveitem.md) por ID ou cam
 
 Também é possível usar a atualização para [mover um item](item_move.md) para outro pai ao atualizar a propriedade **parentReference** do item.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

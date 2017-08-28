@@ -1,8 +1,15 @@
 # <a name="add-attachment"></a>Adicionar anexo
 
 Use esta API para adicionar um [anexo](../resources/attachment.md) a um evento. Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho do anexo que você pode adicionar a 4 MB.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Calendars.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite    | 
+|Aplicativo | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário ou grupo.
@@ -44,7 +51,7 @@ Se bem-sucedido, este método retorna um código de resposta `201, Created` e um
 ## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
 
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"

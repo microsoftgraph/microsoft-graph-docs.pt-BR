@@ -2,9 +2,16 @@
 
 Remove um membro de um directoryRole.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-O seguinte **escopo** é obrigatório para executar esta API: *Directory.AccessAsUser.All*
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -18,7 +25,7 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -32,7 +39,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 
 ##### <a name="request"></a>Solicitação
 
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole"

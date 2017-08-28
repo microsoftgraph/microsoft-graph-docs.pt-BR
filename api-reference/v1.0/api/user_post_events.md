@@ -7,8 +7,15 @@ Criar um [evento](../resources/event.md) no calendário padrão do usuário ou e
 Ao criar o evento, o servidor envia convites para todos os participantes.
 
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Calendars.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Calendars.ReadWrite    | 
+|Aplicativo | Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -38,7 +45,7 @@ Se bem-sucedido, este método retorna o código de resposta `201, Created` e o o
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar que as horas de **início** e **fim** na resposta devem usar esse fuso horário.
+Este é um exemplo da solicitação. Ela usa o cabeçalho da solicitação `Prefer: outlook.timezone` para especificar que as horas de **início** e **fim** na resposta devem usar esse fuso horário.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user"
@@ -160,7 +167,7 @@ Content-length: 2197
     }
 }
 ```
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)

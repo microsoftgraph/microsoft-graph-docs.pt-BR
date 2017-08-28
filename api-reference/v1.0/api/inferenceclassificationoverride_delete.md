@@ -1,8 +1,15 @@
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 
 Exclua uma substituição especificada de acordo com sua ID.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: *Mail.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.ReadWrite    | 
+|Aplicativo | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

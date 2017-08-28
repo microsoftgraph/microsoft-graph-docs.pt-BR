@@ -21,13 +21,13 @@ Também há suporte para os seguintes recursos de grupo:
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes valores de **scopes** é obrigatório para executar essa API, dependendo do recurso que você está obtendo:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso que você está obtendo. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-- _Mail.Read_
-- _Calendars.Read_
-- _Contacts.Read_
-- _Group.Read.All_ 
+- Mail.Read
+- Calendars.Read
+- Contacts.Read
+- Group.Read.All 
  
 ## <a name="http-request"></a>Solicitação HTTP
 

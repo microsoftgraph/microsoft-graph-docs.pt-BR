@@ -6,10 +6,14 @@ A ação **createLink** criará um novo link de compartilhamento se o tipo de li
 
 Recursos de DriveItem herdam permissões de seus ancestrais.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-  * Files.ReadWrite
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
+|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -26,7 +30,7 @@ O corpo da solicitação define o tipo de link de compartilhamento que seu aplic
 | Name      | Tipo   | Descrição                                                                  |
 |:----------|:-------|:-----------------------------------------------------------------------------|
 | **type**  | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
-| **scope** | cadeia de caracteres | O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. Opcional. |
+| **scope** | string | O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. Opcional. |
 
 ## <a name="link-types"></a>Tipos de link
 Os seguintes valores são permitidos para o parâmetro **type**.
@@ -57,7 +61,7 @@ A resposta será `201 Created` se um novo link de compartilhamento for criado pa
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 
 <!-- {
   "blockType": "request",

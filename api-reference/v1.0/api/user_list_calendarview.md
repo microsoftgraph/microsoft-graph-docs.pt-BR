@@ -1,8 +1,15 @@
 # <a name="list-calendarview"></a>Listar calendarView
 
 Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida por um intervalo de tempo, do calendário padrão do usuário ou grupo ou de algum outro calendário do usuário.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Calendars.Read; Calendars.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
+|Aplicativo | Calendars.Read, Calendars.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 
 Um [calendar](../resources/calendar.md) padrão do usuário.

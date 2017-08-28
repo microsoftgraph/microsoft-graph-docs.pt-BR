@@ -1,8 +1,15 @@
 # <a name="list-childfolders"></a>Listar childFolders
 
 Obtém uma coleção de pastas filho sob a pasta de contatos especificada.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.Read; Contacts.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    | 
+|Aplicativo | Contacts.Read, Contacts.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

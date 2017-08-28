@@ -19,14 +19,13 @@ Também há suporte para os seguintes recursos de grupo:
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso no qual você está criando a propriedade estendida. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-Um dos seguintes valores de **scopes** é obrigatório para executar essa API, dependendo do recurso no qual você está criando a propriedade estendida:
-
-- _Mail.ReadWrite_
-- _Calendars.ReadWrite_
-- _Contacts.ReadWrite_
-- _Group.ReadWrite.All_
+- Mail.ReadWrite
+- Calendars.ReadWrite
+- Contacts.ReadWrite
+- Group.ReadWrite.All
  
 ## <a name="http-request"></a>Solicitação HTTP
 Você pode criar propriedades estendidas em uma instância de recurso nova ou existente.

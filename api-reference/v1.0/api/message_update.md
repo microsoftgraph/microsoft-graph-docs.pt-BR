@@ -1,8 +1,15 @@
 # <a name="update-message"></a>Atualizar mensagem
 
-Atualize as propriedades do objeto message.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*
+Atualizar as propriedades do objeto message.
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.ReadWrite    | 
+|Aplicativo | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -25,8 +32,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. Atualizável apenas se IsDraft = true.|
 |from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Atualizável apenas se IsDraft = true.|
-|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
+|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
+|inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). Atualizável apenas se IsDraft = true.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |replyTo|Coleção Recipient|Os endereços de email a serem usados ao responder. Atualizável apenas se IsDraft = true.|
@@ -89,7 +96,7 @@ Content-length: 248
 }
 ```
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](../../../concepts/extensibility_open_users.md)

@@ -1,8 +1,15 @@
 # <a name="list-mailfolders"></a>Listar mailFolders
 
 Obtenha a coleção de pastas de email sob a pasta raiz do usuário conectado. 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Read; Mail.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    | 
+|Aplicativo | Mail.Read, Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -1,9 +1,16 @@
 # <a name="message-createforward"></a>message: createForward
 
-Crie um rascunho da mensagem de encaminhamento. Você poderá, então, [update](../api/message_update.md) ou [send](../api/message_send.md) o rascunho.
+Crie um rascunho da mensagem de encaminhamento. Você poderá, então, [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) o rascunho.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Mail.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.ReadWrite    | 
+|Aplicativo | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

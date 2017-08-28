@@ -7,9 +7,16 @@ Alguns usos comuns dessa função são:
 * Resolver ids retornadas por funções (que retornam coleções de ids) como [getMemberObjects](directoryobject_getmemberobjects.md) ou [getMemberGroups](directoryobject_getmembergroups.md) para seus objetos de diretório de suporte.
 * Resolver ids que persistem em um repositório externo pelo aplicativo para seus objetos de diretório de suporte.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Um dos seguintes **escopos** é obrigatório para executar esta API: _Directory.Read.All_; _Directory.AccessAsUser.All_
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.AccessAsUser.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Directory.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -23,7 +30,7 @@ POST /directoryObjects/getById
 
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | cadeia de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação

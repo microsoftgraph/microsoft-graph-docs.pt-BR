@@ -1,8 +1,15 @@
 # <a name="list-photos"></a>Listar fotos
 
 Recuperar uma lista dos objetos [profilePhoto](../resources/profilephoto.md).
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: _Group.Read.All_; _Group.ReadWrite.All_
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Group.Read.All, Group.ReadWrite.All | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

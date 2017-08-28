@@ -2,11 +2,11 @@
 
 Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma exibição de calendário definida, do calendário padrão `(../me/calendarview)` de um usuário ou grupo ou algum outro calendário do usuário.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Eventos no calendário de um usuário: _Calendars.Read_ ou _Calendars.ReadWrite_
-* Eventos no calendário de um grupo: _Group.Read.All_ ou _Group.ReadWrite.All_
+* Eventos no calendário de um usuário: Calendars.Read ou Calendars.ReadWrite
+* Eventos no calendário de um grupo: Group.Read.All ou Group.ReadWrite.All
 
 ## <a name="http-request"></a>Solicitação HTTP
 

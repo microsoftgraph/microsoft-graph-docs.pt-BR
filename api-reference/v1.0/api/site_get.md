@@ -15,12 +15,15 @@ Há também um identificador de site reservado, `root`, que sempre faz referênc
 * `/sites/root`: O site raiz do locatário.
 * `/groups/{group-id}/sites/root`: O site da equipe do grupo.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Um dos seguintes escopos é necessário para executar esta solicitação:
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Sites.Read.All
-* Sites.ReadWrite.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | Sites.Read.All, Sites.ReadWrite.All | 
 
 ## <a name="get-the-tenants-root-site"></a>Obter o site raiz do locatário
 

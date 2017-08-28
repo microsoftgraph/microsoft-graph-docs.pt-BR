@@ -1,8 +1,15 @@
 # <a name="list-attachments"></a>Listar anexos
 
 Recupere uma lista de objetos [attachment](../resources/attachment.md) anexados a uma mensagem.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Read* 
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.Read    | 
+|Delegado (conta pessoal da Microsoft) | Mail.Read    | 
+|Aplicativo | Mail.Read | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.

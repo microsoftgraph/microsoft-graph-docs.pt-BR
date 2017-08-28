@@ -4,9 +4,16 @@ Recupere as propriedades e os relacionamentos de um objeto [person](../resources
 
 Você pode obter essas informações por meio da API de Pessoas. Para ver exemplos, confira a seção [Exemplos](#examples) e o artigo [Obter informações relevantes sobre as pessoas](../../../concepts/people_example.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
-As **permissões** a seguir são necessárias para executar partes dessa API: *People.Read*; *People.Read.All*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
  
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | People.Read, People.Read.All    | 
+|Delegado (conta pessoal da Microsoft) | People.Read    | 
+|Aplicativo | People.Read.All | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 

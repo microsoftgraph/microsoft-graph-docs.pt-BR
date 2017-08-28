@@ -8,8 +8,15 @@ Crie uma substituição para um remetente identificado por um endereço SMTP. Me
 - O número máximo de substituições com suporte para uma caixa de correio é 1000, com base nos endereços SMTP exclusivos do remetente.
 - A operação POST dá suporte à criação de apenas uma substituição de cada vez.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: *Mail.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.ReadWrite    | 
+|Aplicativo | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -27,7 +34,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [inferenc
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retornará um código de resposta `201, Created` e um objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

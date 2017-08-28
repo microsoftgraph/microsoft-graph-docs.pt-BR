@@ -1,12 +1,12 @@
 # <a name="delete-attachment"></a>Excluir anexo
 
 Exclua um anexo de um evento de calendário, email ou postagem de grupo.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Se estiver acessando anexos em Mensagens: *Mail.ReadWrite*
-* Se estiver acessando anexos em Eventos: *Calendars.ReadWrite*
-* Se estiver acessando anexos em Eventos de grupo ou Postagens: *Group.ReadWrite.All*
+* Se estiver acessando anexos em Mensagens: Mail.ReadWrite.
+* Se estiver acessando anexos em Eventos: Calendars.ReadWrite.
+* Se estiver acessando anexos em Eventos de grupo ou Postagens: Group.ReadWrite.All.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

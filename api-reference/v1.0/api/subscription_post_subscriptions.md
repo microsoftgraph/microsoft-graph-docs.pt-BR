@@ -1,10 +1,10 @@
 # <a name="create-subscription"></a>Criar assinatura
 
 Assina um aplicativo de escuta para receber notificações quando os dados no Microsoft Graph são alterados.
-## <a name="prerequisites"></a>Pré-requisitos
-Criar uma assinatura exige escopo de leitura para o recurso. Por exemplo, para obter mensagens de notificações, seu aplicativo precisa da permissão `Mail.Read`. A tabela a seguir lista a permissão sugerida necessária para cada recurso.
+## <a name="permissions"></a>Permissões
+Criar uma assinatura exige escopo de leitura para o recurso. Por exemplo, para obter mensagens de notificações, seu aplicativo precisa da permissão `Mail.Read`. A tabela a seguir lista a permissão sugerida necessária para cada recurso. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-| Tipo de recurso / item        | Escopo               |
+| Tipo de recurso/item        | Permissão          |
 |-----------------------------|---------------------|
 | Contatos                    | Contacts.Read       |
 | Conversas               | Group.Read.All      |
@@ -30,7 +30,7 @@ POST /subscriptions
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará um código de resposta `201, Created` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201, Created` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

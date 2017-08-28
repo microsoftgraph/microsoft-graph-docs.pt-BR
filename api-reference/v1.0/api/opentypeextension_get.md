@@ -11,17 +11,17 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 |Encontre e expanda instâncias de recursos com uma extensão específica. |Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal|Instâncias de recursos expandidas com a extensão aberta.|
 
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Uma dos seguintes **permissões** é necessária para executar essa API, dependendo do recurso que contém a extensão.
+Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso que contém a extensão. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
 |:-----|:-----|:-----|:-----|
-| [Dispositivo](../resources/device.md) | _Directory.Read.All_ | [Evento](../resources/event.md) | _Calendars.Read_ | 
-| [Grupo](../resources/group.md) | _Group.Read.All_ | [Evento de grupo](../resources/event.md) | _Group.Read.All_ | 
-| [Postagem de grupo](../resources/post.md) | _Group.Read.All_ | [Mensagem](../resources/message.md) | _Mail.Read_ | 
-| [Organização](../resources/organization.md) | _Directory.Read.All_ | [Contato pessoal](../resources/contact.md) | _Contacts.Read_ |
-| [Usuário](../resources/user.md) | _User.Read.All_ | | |
+| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read | 
+| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All | 
+| [Postagem de grupo](../resources/post.md) | Group.Read.All | [Mensagem](../resources/message.md) | Mail.Read | 
+| [Organização](../resources/organization.md) | Directory.Read.All | [Contato pessoal](../resources/contact.md) | Contacts.Read |
+| [Usuário](../resources/user.md) | User.Read.All | | |
 
 
 
@@ -116,7 +116,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.
 ## <a name="example"></a>Exemplo
 
 #### <a name="request-1"></a>Solicitação 1
@@ -361,7 +361,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 
 Nessa resposta do quinto exemplo, há apenas uma mensagem na caixa de correio do usuário que tem uma extensão cuja **id** é igual a `Com.Contoso.Referral`.
 
-Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

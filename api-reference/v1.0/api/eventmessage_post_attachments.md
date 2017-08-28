@@ -1,8 +1,15 @@
 # <a name="add-attachment"></a>Adicionar anexo
 
-Use essa API para criar um novo Anexo.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API:  _Mail.ReadWrite_
+Use esta API para criar um novo Anexo.
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.ReadWrite    | 
+|Aplicativo | Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -24,7 +31,7 @@ Se bem-sucedido, este método retorna um código de resposta `201, Created` e um
 
 ## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_eventmessage"

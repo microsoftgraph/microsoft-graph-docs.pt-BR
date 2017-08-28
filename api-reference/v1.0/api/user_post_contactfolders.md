@@ -3,8 +3,15 @@
 Crie uma nova contactFolder sob a pasta de contatos padrão do usuário.
 
 Você também pode [criar uma nova contactfolder como um filho de qualquer pasta de contatos especificada](contactfolder_post_childfolders.md).
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Contacts.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Contacts.ReadWrite    | 
+|Aplicativo | Contacts.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http

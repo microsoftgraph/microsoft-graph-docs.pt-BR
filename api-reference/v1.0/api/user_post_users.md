@@ -1,8 +1,15 @@
 # <a name="create-user"></a>Criar Usuário
 
 Use essa API para criar um novo Usuário. O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: *User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
+|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -26,7 +33,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
-|userPrincipalName |string |Nome UPN (someuser@contoso.com).|
+|userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
 ## <a name="response"></a>Resposta
 
@@ -34,7 +41,7 @@ Se bem-sucedido, este método retorna o código de resposta `201, Created` e o o
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Veja a seguir um exemplo da solicitação.
+Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_user_from_users"

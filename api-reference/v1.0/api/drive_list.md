@@ -2,13 +2,15 @@
 
 Recupera a lista de recursos [Drive](../resources/drive.md) disponíveis para um [User](../resources/user.md) ou [Group](../resources/group.md) de destino. Seu aplicativo também pode solicitar o conjunto de bibliotecas de documentos no site raiz do SharePoint.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Files.Read
-* Files.ReadWrite
-* Sites.Read.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
+|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    | 
+|Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -17,11 +19,12 @@ Um dos seguintes **escopos** é obrigatório para executar esta API:
 ```http
 GET /drives
 GET /me/drives
-GET /groups/{id}/drives
+GET /sites/{site-id}/drives
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método é compatível com [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -48,7 +51,7 @@ GET https://graph.microsoft.com/v1.0/me/drives
 
 ##### <a name="response"></a>Resposta
 
-Este é um exemplo da resposta.
+Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,19 +2,17 @@
 
 Crie uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso. 
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-Uma das seguintes **permissões** é obrigatória para executar essa API, dependendo do recurso no qual você está criando a extensão.
+Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso no qual você está criando a extensão. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | _Device.ReadWrite.All_ | [event](../resources/event.md) | _Calendars.ReadWrite_ |
-| [group](../resources/group.md) | _Group.ReadWrite.All_ | [group event](../resources/event.md) | _Group.ReadWrite.All_ |
-| [group post](../resources/post.md) | _Group.ReadWrite.All_ | [mensagem](../resources/message.md) | _Mail.ReadWrite_ |
-| [organization](../resources/organization.md) | _Directory.AccessAsUser.All_ | [personal contact](../resources/contact.md) | _Contacts.ReadWrite_ |
-| [user](../resources/user.md) | _Directory.AccessAsUser.All_ | | |
-
-
+| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
+| [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | [mensagem](../resources/message.md) | Mail.ReadWrite |
+| [organização](../resources/organization.md) | Directory.AccessAsUser.All | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite |
+| [usuário](../resources/user.md) | Directory.AccessAsUser.All | | |
  
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -432,7 +430,7 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
 
 Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão. 
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread_list_posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension_get.md).
 

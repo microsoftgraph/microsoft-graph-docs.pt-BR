@@ -2,8 +2,15 @@
 
 Envie uma mensagem na pasta de rascunho. A mensagem de rascunho pode ser um rascunho de mensagem nova, rascunho de resposta, rascunho de resposta a todos ou rascunho de encaminhamento. A mensagem é salva na pasta Itens Enviados.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Mail.Send*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.Send    | 
+|Delegado (conta pessoal da Microsoft) | Mail.Send    | 
+|Aplicativo | Mail.Send | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -22,7 +29,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
+O exemplo a seguir mostra como chamar essa API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {
@@ -34,7 +41,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
 
 ##### <a name="response"></a>Resposta
-##### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",

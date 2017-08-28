@@ -1,8 +1,15 @@
 # <a name="get-contact"></a>Obter contato
 
 Recupere as propriedades e os relacionamentos do objeto contact.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é necessário para executar esta API: *Contacts.Read; Contacts.ReadWrite*
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    | 
+|Aplicativo | Contacts.Read, Contacts.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) padrão do usuário.
@@ -23,7 +30,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$expand|cadeia de caracteres|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
+|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
 |$select|cadeia de caracteres|Lista separada por vírgulas de propriedades para incluir na resposta.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

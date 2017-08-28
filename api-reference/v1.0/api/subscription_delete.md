@@ -2,11 +2,11 @@
 
 Exclua uma assinatura.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="permissions"></a>Permissões
 
-A tabela a seguir lista a permissão sugerida necessária para cada recurso.
+A tabela a seguir lista a permissão sugerida necessária para cada recurso. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-| Tipo de recurso / item        | Escopo               |
+| Tipo de recurso/item        | Permissão          |
 |-----------------------------|---------------------|
 | Contatos                    | Contacts.Read       |
 | Conversas               | Group.Read.All      |

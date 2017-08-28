@@ -4,8 +4,15 @@ Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizada
 
 Uma chamada de função **delta** de mensagens em uma pasta é semelhante a uma solicitação GET, exceto que, aplicando adequadamente os [tokens de estado](../../../concepts/delta_query_overview.md) em uma ou mais dessas chamadas, permite [consultar alterações incrementais nas mensagens dessa pasta](../../../concepts/delta_query_messages.md). Isso permite manter e sincronizar um armazenamento local de mensagens do usuário sem ter de buscar todo o conjunto de mensagens do usuário sempre que precisar dele.  
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: _Mail.Read_; _Mail.ReadWrite_
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    | 
+|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    | 
+|Aplicativo | Mail.Read, Mail.ReadWrite | 
+
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -30,7 +37,7 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 - Há suporte limitado para `$filter` e `$orderby`:
   * As únicas expressões `$filter` suportadas são `$filter=receivedDateTime+ge+{value}` ou `$filter=receivedDateTime+gt+{value}`.
   * A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
-- Não há suporte DAV para `$search`.
+- Não há suporte para `$search`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
@@ -95,7 +102,7 @@ Content-length: 337
 }
 ```
 
-### <a name="see-also"></a>Ver também
+### <a name="see-also"></a>Confira também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)
