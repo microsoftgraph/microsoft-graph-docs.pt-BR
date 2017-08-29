@@ -22,7 +22,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade                             | Tipo                                                              | Descrição                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | assignedPlans                        | Coleção [assignedPlan](assignedplan.md)                        | A coleção de planos de serviço associados ao locatário. Não anulável.                                                                                                                                                                                                            |
-| city                                 | String                                                            |                                                                                                                                                                                                                                                                                      |
+| cidade                                 | String                                                            |                                                                                                                                                                                                                                                                                      |
 | companyLastDirSyncTime               | DateTimeOffset                                                    | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` |
 | country                              | String                                                            |                                                                                                                                                                                                                                                                                      |
 | countryLetterCode                    | String                                                            |                                                                                                                                                                                                                                                                                      |
@@ -45,10 +45,9 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | verifiedDomains                      | Coleção [VerifiedDomain](verifieddomain.md)                    | A coleção de domínios associados a este locatário. Não anulável.                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a organização. Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -88,7 +87,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)

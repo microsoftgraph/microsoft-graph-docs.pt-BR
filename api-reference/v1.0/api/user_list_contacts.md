@@ -4,11 +4,11 @@ Obtenha uma coleção de contatos da pasta de contatos padrão do usuário conec
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    | 
-|Aplicativo | Contacts.Read, Contacts.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    |
+|Aplicativo | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +43,7 @@ Por exemplo, você pode usar o parâmetro de consulta `$filter` para filtrar os 
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type   | application/json  | 
+| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

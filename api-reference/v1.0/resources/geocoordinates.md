@@ -24,12 +24,11 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	  | Tipo	   | Descrição                                                    |
+| Propriedade  | Tipo   | Descrição                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
 | altitude  | Double | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura. |
 | latitude  | Double | Opcional. A latitude, em valor decimal, para o item. Somente leitura.   |
 | longitude | Double | Opcional. A longitude, em valor decimal, para o item. Somente leitura.  |
-
 
 ## <a name="remarks"></a>Comentários
 

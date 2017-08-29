@@ -16,11 +16,11 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
-|Aplicativo | Group.Read.All, Group.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

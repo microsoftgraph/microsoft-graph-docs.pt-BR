@@ -34,8 +34,6 @@ A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 | Obter informações sobre SKUs do serviço nos quais a empresa está inscrita. | [subscribedSku](../resources/subscribedsku.md) | N/D |
 | Convidar usuários externos (convidado) para uma organização. | [invitation](../resources/invitation.md) | [O que é a colaboração B2B do Azure AD?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 
-
-
 ## <a name="next-steps"></a>Próximas etapas
 APIs e recursos de diretório podem criar novas maneiras para você relacionar-se com os usuários e gerenciar as experiências deles com o Microsoft Graph. Para saber mais: 
 

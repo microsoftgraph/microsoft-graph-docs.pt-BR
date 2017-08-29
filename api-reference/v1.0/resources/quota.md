@@ -41,8 +41,6 @@ Veja a seguir uma representação JSON do recurso.
 | `critical` | A cota restante é inferior a 1% do espaço de cota total.                                                                                                                       |
 | `exceeded` | A cota usada excedeu a cota total. Novos arquivos ou pastas não podem ser adicionadas à unidade até que ela esteja abaixo da quantidade total de cotas ou mais espaço de armazenamento seja adquirido. |
 
-
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

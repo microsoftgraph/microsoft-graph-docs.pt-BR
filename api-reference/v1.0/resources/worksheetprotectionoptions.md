@@ -3,7 +3,7 @@
 Representa as opções de proteção da planilha.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowAutoFilter|booliano|Indica a opção de proteção de planilha para permitir a utilização do recurso de filtro automático.|
 |allowDeleteColumns|booliano|Indica a opção de proteção de planilha para permitir a exclusão de colunas.|
@@ -16,7 +16,6 @@ Representa as opções de proteção da planilha.
 |allowInsertRows|booliano|Indica a opção de proteção de planilha para permitir a inserção de linhas.|
 |allowPivotTables|booliano|Indica a opção de proteção de planilha para permitir a utilização do recurso de tabela dinâmica.|
 |allowSort|booliano|Indica a opção de proteção de planilha para permitir a utilização do recurso de classificação.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

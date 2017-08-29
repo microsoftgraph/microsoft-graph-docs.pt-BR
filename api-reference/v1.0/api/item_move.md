@@ -7,11 +7,11 @@ Não é possível mover itens entre [Unidades](../resources/drive.md) usando est
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
-|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
+|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -27,7 +27,6 @@ PATCH /groups/{group-id}/drive/{item-id}
 | Nome          | Tipo   | Descrição                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
-
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça o novo valor para a propriedade **parentReference**. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.

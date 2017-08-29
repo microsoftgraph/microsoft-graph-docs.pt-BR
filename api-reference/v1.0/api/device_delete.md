@@ -6,11 +6,11 @@ Exclui um dispositivo registrado.
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    | 
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
-|Aplicativo | Device.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Device.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

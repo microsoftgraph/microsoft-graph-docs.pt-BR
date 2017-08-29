@@ -10,14 +10,12 @@ Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes:
 |[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Obtenha a **profilePhoto** especificada ou seus metadados (propriedades de profilePhoto).|
 |[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Atribua uma foto para o usuário, grupo ou contato especificado. A foto deve estar em formato binário. Ela substitui a foto existente, se houver.|
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|cadeia de caracteres|Somente leitura.|
 |height|int32|A altura da foto. Somente leitura.|
 |width|int32|A largura da foto. Somente leitura.|
-
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -5,11 +5,11 @@ Excluir um [DriveItem](../resources/driveitem.md) usando sua ID ou seu caminho. 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
-|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
+|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

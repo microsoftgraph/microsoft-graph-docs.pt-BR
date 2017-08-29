@@ -4,11 +4,11 @@ Obtenha as ocorrências, exceções e instâncias individuais de eventos em uma 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
-|Aplicativo | Calendars.Read, Calendars.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicativo | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Este método também dá suporte a [Parâmetros de consulta OData](http://develo
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type   | string  | application/json | 
+| Content-Type   | string  | application/json |
 | Preferir | string | outlook.timezone="Eastern Standard Time". Opcional. Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, a resposta retorna em UTC. |
 
 ## <a name="request-body"></a>Corpo da solicitação

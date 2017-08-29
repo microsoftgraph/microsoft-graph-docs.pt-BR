@@ -8,11 +8,11 @@ Você pode obter essas informações por meio da API de Pessoas. Para ver exempl
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
  
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | People.Read, People.Read.All    | 
-|Delegado (conta pessoal da Microsoft) | People.Read    | 
-|Aplicativo | People.Read.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | People.Read, People.Read.All    |
+|Delegado (conta pessoal da Microsoft) | People.Read    |
+|Aplicativo | People.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +28,7 @@ GET /me/people/?$filter={person_property} eq '{property_value}'
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.|
 |$orderby|string|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
 |$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa.|
-|$select|cadeia de caracteres|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
+|$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
 |$top|int|Número de resultados a ser retornado.|
 

@@ -104,7 +104,6 @@ PATCH /groups/{id}/events/{id}
 |id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|

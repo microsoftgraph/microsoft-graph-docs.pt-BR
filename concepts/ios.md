@@ -205,7 +205,7 @@ Observação: Você notará que foram configurados os seguintes escopos de permi
 3. Escolha o botão **Enviar email**. Quando o email for enviado, será exibida uma mensagem de sucesso abaixo do botão.
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API REST usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente a API REST usando o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Encontre exemplos de operações comuns para operações de REST e SDK no [Exemplo de trechos de código do iOS Objective C do Microsoft Graph](https://github.com/microsoftgraph/ios-objectiveC-snippets-sample).
 
 ## <a name="see-also"></a>Ver também

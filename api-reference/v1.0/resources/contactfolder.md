@@ -22,23 +22,20 @@ Esse recurso suporta a utilização da [consulta delta](../../../concepts/delta_
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contactFolder](contactFolder.md) | Criar uma ou mais propriedades estendidas de vários valores em uma contactFolder nova ou existente.  |
 |[Obter contactFolder com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [contactFolder](contactFolder.md) | Obtenha uma contactFolder que contém uma propriedade estendida com vários valores usando `$expand`. |
 
-
-
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|String|O nome de exibição da pasta.|
 |id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |childFolders|Coleção [ContactFolder](contactfolder.md)|A coleção de pastas filho na pasta. Propriedade de navegação. Somente leitura. Anulável.|
-|Contatos|Coleção [Contact](contact.md)|Os contatos na pasta. Propriedade de navegação. Somente leitura. Anulável.|
+|contatos|Coleção [Contact](contact.md)|Os contatos na pasta. Propriedade de navegação. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a contactFolder. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a contactFolder. Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

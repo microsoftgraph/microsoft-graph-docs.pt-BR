@@ -5,11 +5,11 @@ Redefina a unseenCount de todas as postagens que o usuário atual não viu desde
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
-|Aplicativo | Group.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

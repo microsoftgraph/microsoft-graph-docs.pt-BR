@@ -24,12 +24,11 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 |[Listar anexos de uma postagem](../api/post_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
 |[Delete](../api/attachment_delete.md) | Nenhum |Exclua um anexo em um evento, mensagem ou postagem. |
 
-
 ## <a name="properties"></a>Propriedades
 
 A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o tipo de anexo específico ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceAttachment.md)) para propriedades adicionais.
 
-| Propriedade       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo MIME.|
 |id|String| Somente leitura.|

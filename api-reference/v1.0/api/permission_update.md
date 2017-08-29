@@ -6,11 +6,11 @@ Atualize as propriedades de uma permissão corrigindo do recurso.
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    | 
-|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
+|Aplicativo | Files.ReadWrite.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -27,7 +27,6 @@ PATCH /groups/{group-id}/drive/items/{item-id}/permissions/{perm-id}
 | Nome          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
-
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.

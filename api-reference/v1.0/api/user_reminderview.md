@@ -4,11 +4,11 @@ Retorne uma lista de lembretes de calendário nas horas de início e término es
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
-|Aplicativo | Calendars.Read, Calendars.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicativo | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -24,13 +24,12 @@ Forneça os seguintes parâmetros de função com valores na URL solicitada.
 |startDateTime|String|A data e hora de início do evento para o qual o lembrete está definido. O valor é representado no formato ISO 8601, por exemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|A data e hora de término do evento para o qual o lembrete está definido. O valor é representado no formato ISO 8601, por exemplo, "2015-11-08T20:00:00.0000000".|
 
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
 | Content-Type   | application/json |
-| Preferir | {Time-zone}. Opcional, supõe-se o UTC se estiver ausente.| 
+| Preferir | {Time-zone}. Opcional, supõe-se o UTC se estiver ausente.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

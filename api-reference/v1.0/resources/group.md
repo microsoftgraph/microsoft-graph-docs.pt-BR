@@ -24,9 +24,9 @@ Esse recurso permite:
 |[Adicionar membro](../api/group_post_members.md) |Nenhum| Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Listar membros](../api/group_list_members.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**.|
 |[Remover membro](../api/group_delete_members.md) | None |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
-|[checkMemberGroups](../api/group_checkmembergroups.md)|Coleção de cadeias de caracteres|Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.|
-|[getMemberGroups](../api/group_getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
-|[getMemberObjects](../api/group_getmemberobjects.md)|Coleção String|Retornar todos os grupos dos quais o grupo é um membro. Essa função é transitiva. |
+|[checkMemberGroups](../api/group_checkmembergroups.md)|Coleção String|Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.|
+|[getMemberGroups](../api/group_getmembergroups.md)|Coleção String|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
+|[getMemberObjects](../api/group_getmemberobjects.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é um membro. Essa função é transitiva. |
 |[delta](../api/group_delta.md)|Coleção group| Obter alterações incrementais para grupos. |
 |**Calendário**| | |
 |[Criar evento](../api/group_post_events.md) |[Event](event.md)| Criar um novo Event postando na coleção events.|
@@ -56,13 +56,12 @@ Esse recurso permite:
 |[Listar fotos](../api/group_list_photos.md) |Coleção [profilePhoto](photo.md)| Obter um conjunto de fotos de perfil para o grupo.|
 |[Listar plannerPlans](../api/plannergroup_list_plans.md) |Coleção [plannerPlan](plannerPlan.md)| Obter os planos de planejador pertencentes ao grupo.|
 |**Configurações do usuário**| | |
-|[addFavorite](../api/group_addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.|
-|[removeFavorite](../api/group_removefavorite.md)|Nenhum|Remover o grupo da lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.|
+|[addFavorite](../api/group_addfavorite.md)|None|Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.|
+|[removeFavorite](../api/group_removefavorite.md)|Nenhum|Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.|
 |[Listar memberOf](../api/group_list_memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação **memberOf**.|
-|[subscribeByMail](../api/group_subscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **true**. Permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
-|[unsubscribeByMail](../api/group_unsubscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **false**. Não permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
+|[subscribeByMail](../api/group_subscribebymail.md)|None|Definir a propriedade isSubscribedByMail como **true**. Permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
+|[unsubscribeByMail](../api/group_unsubscribebymail.md)|None|Definir a propriedade isSubscribedByMail como **false**. Não permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
 |[resetUnseenCount](../api/group_resetunseencount.md)|None|Redefinir unseenCount como 0 para todas as postagens que o usuário atual não viu desde sua última visita. Com suporte apenas para grupos do Office 365.|
-
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -75,14 +74,14 @@ Esse recurso permite:
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |groupTypes|Coleção String| Especifica o tipo de grupo a ser criado. Os valores possíveis são **Unified** para criar um grupo do Office 365 ou **DynamicMembership** para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. Oferece suporte a $filter.|
 |id|String|O identificador exclusivo do grupo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|isSubscribedByMail|Boolean|O valor padrão é **true**. Indica se o usuário atual está inscrito para receber conversas de email.|
-|mail|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". Somente leitura. Oferece suporte a $filter.|
+|isSubscribedByMail|Booliano|O valor padrão é **true**. Indica se o usuário atual está inscrito para receber conversas de email.|
+|Email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". Somente leitura. Oferece suporte a $filter.|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
 |mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Oferece suporte a $filter.|
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. Somente leitura. |
 |onPremisesSyncEnabled|Booliano|**True** se esse grupo está sincronizado de um diretório local; **false** se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. Oferece suporte a $filter.|
-|proxyAddresses|Coleção de cadeias de caracteres| O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura. Não anulável. Oferece suporte a $filter. |
+|proxyAddresses|Coleção String| O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |securityEnabled|Booliano|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
 |unseenCount|Int32|Contagem de postagens que o usuário atual não viu desde a última visita.|
 |visibility|String| Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
@@ -95,11 +94,11 @@ Esse recurso permite:
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura.|
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
-|drive|[drive](drive.md)|A unidade do grupo. Somente leitura.|
+|Unidade|[drive](drive.md)|A unidade do grupo. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos de calendário do grupo.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
-|members|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança) Anulável.|
+|membros|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança) Anulável.|
 |onenote|[OneNote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 10 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança). Anulável.|
 |Foto|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
@@ -109,7 +108,6 @@ Esse recurso permite:
 |configurações|Conjunto [groupSetting](groupsetting.md)| Somente leitura. Anulável.|
 |sites|conjunto de [sites](site.md)|A lista de sites do SharePoint nesse grupo. Acesse o site padrão com /sites/root.
 |threads|Coleção [conversationThread](conversationthread.md)| Os threads de conversas do grupo. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,11 +4,10 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Booliano| **true** se o usuário precisa alterar sua senha no próximo login; caso contrário, **false**. |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

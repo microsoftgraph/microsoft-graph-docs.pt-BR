@@ -3,11 +3,10 @@
 Representa as propriedades do corpo de um item, como uma mensagem, um evento ou uma postagem de grupo.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |content|Cadeia de caracteres|O conteúdo do item.|
-|contentType|String|O tipo de conteúdo. Os valores possíveis são: `Text` e `HTML`.|
-
+|contentType|Cadeia de caracteres|O tipo de conteúdo. Os valores possíveis são: `Text` e `HTML`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -24,11 +24,11 @@ A opção de consulta `includeIDs=true` é usada para [atualizar páginas](../ap
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    | 
-|Aplicativo | Notes.Read.All, Notes.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
+|Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

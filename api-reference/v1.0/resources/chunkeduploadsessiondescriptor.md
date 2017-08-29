@@ -2,11 +2,9 @@
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|Cadeia de caracteres||
-
-
 
 ## <a name="json-representation"></a>Representação JSON
 

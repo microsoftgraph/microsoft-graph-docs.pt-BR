@@ -21,16 +21,15 @@ Esse recurso permite:
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
 |**Extensões de esquema**| | |
-|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[contact](contact.md)  |Criar uma ou mais propriedades estendidas de valor único em um contato novo ou existente.   |
 |[Obter contato com propriedade estendida com valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obter contatos que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [contact](contact.md) | Criar uma ou mais propriedades estendidas de vários valores em um contato novo ou existente.  |
 |[Obter contato com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [contact](contact.md) | Obter um contato que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assistantName|String|O nome do assistente do contato.|
 |birthday|DateTimeOffset|O aniversário do contato. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -72,13 +71,12 @@ Esse recurso permite:
 |yomiSurname|String|O sobrenome japonês fonético do contato.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o contato. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o contato. Somente leitura. Anulável.|
-|Foto|[profilePhoto](profilephoto.md)| Imagem de contato opcional. Você pode obter ou definir uma foto de um contato.|
+|photo|[profilePhoto](profilephoto.md)| Imagem de contato opcional. Você pode obter ou definir uma foto de um contato.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o contato. Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -4,14 +4,13 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
 |isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isInitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
 |name|Cadeia de caracteres|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
 |type|Cadeia de caracteres|Por exemplo, "Managed".|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

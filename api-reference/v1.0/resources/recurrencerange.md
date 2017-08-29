@@ -4,14 +4,13 @@ A duração de um evento.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |endDate|Date|A data de término da série.|
 |numberOfOccurrences|Int32|Quantas vezes o evento deve repetir.|
 |recurrenceTimeZone|Cadeia de caracteres |Fuso horários das propriedades **startDate** e **endDate**. |
 |startDate|Date|A data de início da série.|
-|type|String|O intervalo de recorrência: EndDate = 0, NoEnd = 1, Numbered = 2. Os valores possíveis são: `EndDate`, `NoEnd` e `Numbered`.||
-
+|type|Cadeia de caracteres|O intervalo de recorrência: EndDate = 0, NoEnd = 1, Numbered = 2. Os valores possíveis são: `EndDate`, `NoEnd` e `Numbered`.||
 
 ## <a name="json-representation"></a>Representação JSON
 

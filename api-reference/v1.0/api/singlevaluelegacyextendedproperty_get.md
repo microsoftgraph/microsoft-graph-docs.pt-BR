@@ -159,7 +159,6 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
-
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 

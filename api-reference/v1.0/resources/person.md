@@ -9,7 +9,6 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |[Listar pessoas](../api/user_list_people.md) | **person** |Obtém uma coleção de objetos person ordenados por relevância para o [usuário](../resources/user.md).|
 |[Obter person](../api/person_get.md) | **person** |Obter as propriedades e os relacionamentos de um objeto person.|
 
-
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|

@@ -4,11 +4,11 @@ Obtém uma coleção de contatos da pasta de contatos padrão do usuário conect
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    | 
-|Aplicativo | Contacts.Read, Contacts.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    |
+|Aplicativo | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

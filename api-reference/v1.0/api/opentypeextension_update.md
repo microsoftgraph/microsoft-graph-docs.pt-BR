@@ -18,7 +18,7 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
 | [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | [mensagem](../resources/message.md) | Mail.ReadWrite |
 | [organização](../resources/organization.md) | Directory.AccessAsUser.All | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite |
 | [usuário](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>Solicitação HTTP
 Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `PATCH` nessa instância de extensão.
 
@@ -46,7 +46,6 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo d
 |_Parâmetros de URL_|
 |id|string|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
 |extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
-
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |

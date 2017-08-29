@@ -4,12 +4,11 @@ A propriedade **provisionedPlans** das entidades [user](user.md) e [organization
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
 |provisioningStatus|Cadeia de caracteres|Por exemplo, "Success".|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "AccessControlS2S".|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

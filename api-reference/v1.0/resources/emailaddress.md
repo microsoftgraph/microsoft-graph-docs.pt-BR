@@ -3,12 +3,10 @@
 O nome e o endereço de email de um destinatário da mensagem ou contato.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email da pessoa ou entidade.|
 |name|Cadeia de caracteres|O nome de exibição da pessoa ou entidade.|
-
-
 
 ## <a name="json-representation"></a>Representação JSON
 

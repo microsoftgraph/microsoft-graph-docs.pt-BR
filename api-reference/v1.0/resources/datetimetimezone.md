@@ -3,11 +3,10 @@
 Descreve a data, a hora e o fuso horário de um ponto no tempo.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |DateTime|String|Um único ponto de tempo em uma representação combinada de data e hora (`<date>T<time>`).|
 |TimeZone|String|Um dos seguintes nomes de fuso horário.|
-
 
 A propriedade _TimeZone_ pode ser definida para qualquer um dos fusos horários com suporte no Windows, bem como os nomes de fusos horários a seguir.
 

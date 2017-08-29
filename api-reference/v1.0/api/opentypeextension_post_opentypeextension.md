@@ -13,7 +13,7 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
 | [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | [mensagem](../resources/message.md) | Mail.ReadWrite |
 | [organização](../resources/organization.md) | Directory.AccessAsUser.All | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite |
 | [usuário](../resources/user.md) | Directory.AccessAsUser.All | | |
- 
+
 ## <a name="http-request"></a>Solicitação HTTP
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Crie uma extensão em uma nova instância de recurso
@@ -60,7 +60,6 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 |_Parâmetros de URL_|
 |id|string|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
 
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
@@ -91,8 +90,6 @@ Ao criar uma extensão na mesma operação como criação de uma instância de r
 | Criar uma extensão ao criar explicitamente uma _nova_ instância de recurso | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Inclui a nova instância expandida com o objeto [openTypeExtension](../resources/openTypeExtension.md). |
 | Criando uma extensão ao criar implicitamente uma instância de recursos | [postagem](../resources/post.md) | A resposta inclui somente um código de resposta, mas não um corpo de resposta. |
 | Criar uma extensão em uma instância de recurso _existente_ | Todos os recursos com suporte | Inclui o objeto **openTypeExtension**. |
- 
-
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1

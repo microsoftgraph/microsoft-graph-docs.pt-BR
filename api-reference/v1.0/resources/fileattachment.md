@@ -16,9 +16,8 @@ Derivado de [attachment](attachment.md).
 |[Get](../api/attachment_get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades e os relacionamentos do objeto fileAttachment.|
 |[Delete](../api/attachment_delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentBytes|Binário|O conteúdo binário do arquivo.|
 |contentId|String|A ID do anexo no repositório do Exchange.|

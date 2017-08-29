@@ -16,9 +16,8 @@ Um grupo de calendários.
 |[List calendars](../api/calendargroup_list_calendars.md) |Coleção [Calendar](calendar.md)| Liste os calendários em um grupo de calendários.|
 |[Create Calendar](../api/calendargroup_post_calendars.md) |[Calendar](calendar.md)| Crie um novo calendário em um grupo de calendários.|
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|Cadeia de caracteres|O nome do grupo.|
 |changeKey|String|Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
@@ -26,10 +25,9 @@ Um grupo de calendários.
 |id|String|O identificador exclusivo do grupo. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |calendars|Coleção [Calendar](calendar.md)|Os calendários no grupo de calendários. Propriedade de navegação. Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

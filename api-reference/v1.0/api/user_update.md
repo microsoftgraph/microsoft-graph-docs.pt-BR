@@ -5,11 +5,11 @@ Atualize as propriedades de um objeto user.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    | 
-|Delegado (conta pessoal da Microsoft) | User.ReadWrite    | 
-|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | User.ReadWrite    |
+|Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
 Ao atualizar a propriedade passwordProfile, o escopo seguinte é necessário: Directory.AccessAsUser.All.
 

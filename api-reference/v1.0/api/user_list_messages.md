@@ -7,11 +7,11 @@ No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    | 
-|Aplicativo | Mail.Read, Mail.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    |
+|Aplicativo | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,7 +37,6 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
- 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -22,11 +22,11 @@ Você pode usar as propriedades **OriginalStartTimeZone** e **OriginalEndTimeZon
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    | 
-|Aplicativo | Calendars.Read, Calendars.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read, Calendars.ReadWrite    |
+|Aplicativo | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | cadeia de caracteres | O fuso horário padrão para eventos na resposta. Opcional. | 
+| Prefira: outlook.timezone | cadeia de caracteres | O fuso horário padrão para eventos na resposta. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

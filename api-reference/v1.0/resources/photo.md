@@ -23,17 +23,16 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 ```
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	                | Tipo	                      | Descrição                                                     |
+| Propriedade                | Tipo                      | Descrição                                                     |
 |:------------------------|:--------------------------|:----------------------------------------------------------------|
 | **takenDateTime**       | DateTimeOffset            | Representa a data e a hora em que a foto foi tirada. Somente leitura.               |
-| **cameraMake**          | String                    | Fabricante da câmera. Somente leitura.                                            |
-| **cameraModel**         | String                    | Modelo da câmera. Somente leitura.                                                   |
+| **cameraMake**          | Cadeia de caracteres                    | Fabricante da câmera. Somente leitura.                                            |
+| **cameraModel**         | Cadeia de caracteres                    | Modelo da câmera. Somente leitura.                                                   |
 | **fNumber**             | Double                    | O valor de f-stop da câmera. Somente leitura.                               |
 | **exposureDenominator** | Int32                     | O denominador da fração do tempo de exposição da câmera. Somente leitura. |
 | **exposureNumerator**   | Int32                     | O numerador da fração do tempo de exposição da câmera. Somente leitura.   |
 | **focalLength**         | Double                    | A distância focal da câmera. Somente leitura.                               |
 | **iso**                 | Int32                     | O valor de ISO da câmera. Somente leitura.                                  |
-
 
 ## <a name="remarks"></a>Comentários
 O OneDrive for Business e o SharePoint retornam apenas a propriedade **takenDateTime**.

@@ -3,6 +3,7 @@
 Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite:
+
 - Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
 - Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user_delta.md).
 
@@ -39,7 +40,7 @@ Esse recurso permite:
 |[Listar registeredDevices](../api/user_list_registereddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices.|
 |[Listar createdObjects](../api/user_list_createdobjects.md) |Coleção [directoryObject](directoryobject.md)| Obter os objetos directory criados pelo usuário da propriedade de navegação createdObjects.|
 |[assignLicense](../api/user_assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
-|[Listar licenseDetails](../api/user_list_licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.| 
+|[Listar licenseDetails](../api/user_list_licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.|
 |[checkMemberGroups](../api/user_checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
 |[getMemberGroups](../api/user_getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o usuário é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/user_getmemberobjects.md)|Coleção de cadeias de caracteres| Retorna todos os grupos e funções de diretório dos quais o usuário é membro. A verificação é transitiva. |
@@ -50,8 +51,6 @@ Esse recurso permite:
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
-
-
 
 ## <a name="properties"></a>Propriedades
 
@@ -98,13 +97,13 @@ Esse recurso permite:
 |state|String|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
-|usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países.  Entre os exemplos temos: "US", "JT" e "GB". Não anulável. Oferece suporte a $filter.|
+|usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
 |userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
 ## <a name="relationships"></a>Relações
 
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |calendar|[Calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
@@ -117,12 +116,12 @@ Esse recurso permite:
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
 |drives|coleção de [unidades](drive.md) | Uma coleção de unidades disponíveis para esse usuário. Somente leitura. |
 |events|Coleção [Event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
 |inferenceClassification | [inferenceClassification](inferenceClassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
 |mailFolders|Coleção [MailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
 |manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e as funções de diretório dos quais o usuário é membro. Somente leitura. Anulável.|
-|mensagens|Coleção [Message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
+|messages|Coleção [Message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
 |onenote|[OneNote](onenote.md)| Somente leitura.|
 |ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
 |ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
@@ -234,7 +233,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)

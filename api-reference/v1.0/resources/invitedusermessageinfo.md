@@ -1,20 +1,16 @@
-# Configurando a mensagem de convite
-<a id="configuring-the-invitation-message" class="xliff"></a>
+# <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
 
 O objeto invitedUserMessageInfo permite que você configure a mensagem de [convite](invitation.md).
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ccRecipients|[Recipient](recipient.md)|Outros destinatários aos quais a mensagem de convite deve ser enviada. No momento, só é possível adicionar mais um destinatário.|
 |customizedMessageBody|String|Corpo da mensagem personalizada a ser enviada caso você não queira a mensagem padrão.|
 |messageLanguage|String|O idioma no qual você deseja enviar a mensagem padrão. Se customizedMessageBody for especificada, essa propriedade será ignorada, e a mensagem será enviada usando-se customizedMessageBody. O formato do idioma deve estar no ISO 639. O padrão é en-US.|
 
-
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->

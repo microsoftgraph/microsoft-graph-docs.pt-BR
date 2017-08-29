@@ -3,11 +3,10 @@
 O padrão e o intervalo da recorrência.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |pattern|[RecurrencePattern](recurrencepattern.md)|A frequência de um evento.|
 |range|[RecurrenceRange](recurrencerange.md)|A duração de um evento.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

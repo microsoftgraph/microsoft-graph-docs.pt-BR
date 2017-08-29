@@ -173,7 +173,7 @@ Você está pronto para experimentar seu aplicativo PHP.
 Verifique a caixa de entrada do endereço de email que você configurou na seção [Chamar o Microsoft Graph usando o REST](#call-microsoft-graph-using-rest). É provável que você tenha um email da conta que utilizou para entrar no aplicativo.
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente o [Explorador do Microsoft Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente o [Explorador do Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## <a name="see-also"></a>Ver também

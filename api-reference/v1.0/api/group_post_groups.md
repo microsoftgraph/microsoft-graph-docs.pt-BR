@@ -11,11 +11,11 @@ Use esta API para criar um novo grupo conforme especificado no corpo da solicita
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
-|Aplicativo | Group.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ Especifique a propriedade **groupTypes** se estiver criando um grupo do Office 3
 
 | Tipo de grupo | Propriedade **groupTypes** |
 |:--------------|:------------------------|
-| Office 365 (também conhecido como grupo unificado)| "Unified" | 
-| Dinâmica | "DynamicMembership" | 
-| Segurança | Não defina. | 
+| Office 365 (também conhecido como grupo unificado)| "Unified" |
+| Dinâmica | "DynamicMembership" |
+| Segurança | Não defina. |
 
 Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 

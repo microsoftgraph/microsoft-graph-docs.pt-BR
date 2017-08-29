@@ -10,20 +10,17 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 |Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário |Uma instância de recurso expandida com a extensão aberta.|
 |Encontre e expanda instâncias de recursos com uma extensão específica. |Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal|Instâncias de recursos expandidas com a extensão aberta.|
 
-
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso que contém a extensão. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
 |:-----|:-----|:-----|:-----|
-| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read | 
-| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All | 
-| [Postagem de grupo](../resources/post.md) | Group.Read.All | [Mensagem](../resources/message.md) | Mail.Read | 
+| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read |
+| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All |
+| [Postagem de grupo](../resources/post.md) | Group.Read.All | [Mensagem](../resources/message.md) | Mail.Read |
 | [Organização](../resources/organization.md) | Directory.Read.All | [Contato pessoal](../resources/contact.md) | Contacts.Read |
 | [Usuário](../resources/user.md) | User.Read.All | | |
-
-
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -93,7 +90,6 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |Id|cadeia de caracteres|Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.|
 |extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.|
 
-
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Certifique-se de aplicar a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
@@ -101,15 +97,13 @@ Certifique-se de aplicar a [codificação de URL](http://www.w3schools.com/tags/
 |**Nome**|**Valor**|**Descrição**|
 |:---------------|:--------|:-------|
 |$filter|string|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
-|$filter com o operador **any**|string|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.| 
+|$filter com o operador **any**|string|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|
 |$expand|string|Expande uma instância de recurso para incluir uma extensão. |
-
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
 | Autorização | {token} de portador. Obrigatório. |
-
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

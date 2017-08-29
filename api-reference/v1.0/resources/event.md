@@ -1,6 +1,4 @@
-<a id="event-resource-type" class="xliff"></a>
-
-# tipo de recurso de evento
+# <a name="event-resource-type"></a>tipo de recurso de evento
 
 Um evento em um calendário.
 
@@ -10,9 +8,7 @@ Esse recurso permite:
 - Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/event_delta.md).
 
 
-<a id="methods" class="xliff"></a>
-
-## Métodos
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -40,11 +36,7 @@ Esse recurso permite:
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [event](event.md) | Criar uma ou mais propriedades estendidas de vários valores em um evento novo ou existente.  |
 |[Obter evento com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [event](event.md) | Obter um evento que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
-
-
-<a id="properties" class="xliff"></a>
-
-## Propriedades
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attendees|Coleção [attendee](attendee.md)|A coleção de participantes do evento.|
@@ -81,9 +73,7 @@ Esse recurso permite:
 |type|String|O tipo de evento: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Os valores possíveis são: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
-<a id="relationships" class="xliff"></a>
-
-## Relações
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)|A coleção de anexos [fileAttachment](fileAttachment.md) e [itemAttachment](itemAttachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
@@ -93,10 +83,7 @@ Esse recurso permite:
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o evento. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o evento. Somente leitura. Anulável.|
 
-
-<a id="json-representation" class="xliff"></a>
-
-## Representação JSON
+## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
@@ -162,9 +149,7 @@ Veja a seguir uma representação JSON do recurso
 ```
 
 
-<a id="see-also" class="xliff"></a>
-
-## Veja também
+## <a name="see-also"></a>Veja também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para os eventos em uma pasta](../../../concepts/delta_query_events.md)

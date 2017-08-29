@@ -25,9 +25,9 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
 |alternativeSecurityIds|Coleção [alternativeSecurityId](alternativesecurityid.md)| O operador **any** é necessário para expressões de filtro em propriedades de vários valores. Não anulável. Obrigatório. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |deviceId|Guid| GUID exclusivo especificado pelo cliente para representar o dispositivo. Obrigatório. |
@@ -45,13 +45,11 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |trustType|String|    ||
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|Usuários que são proprietários registrados do dispositivo. Somente leitura. Anulável.|
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Usuários que são usuários registrados do dispositivo. Somente leitura. Anulável.|
-
-
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -90,7 +88,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)

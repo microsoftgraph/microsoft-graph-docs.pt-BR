@@ -13,9 +13,8 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 |[Listar threads de conversas](../api/conversation_list_threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
 |[Criar thread de conversas](../api/conversation_post_threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |hasAttachments|Booliano|Indica se qualquer uma das postagens nesta Conversa tem pelo menos um anexo.|
 |id|String|Identificador exclusivo de conversas. Somente leitura.|
@@ -25,10 +24,9 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 |uniqueSenders|Coleção de cadeias de caracteres|Todos os usuários que enviaram uma mensagem para esta conversa.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |threads|Coleção [conversationThread](conversationthread.md)|Uma coleção de todos os threads de conversa na conversa. Uma propriedade de navegação. Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

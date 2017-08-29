@@ -26,7 +26,6 @@ Representa uma função do diretório do Azure AD. As funções de diretório do
 |:---------------|:--------|:----------|
 |membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
 
-
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso

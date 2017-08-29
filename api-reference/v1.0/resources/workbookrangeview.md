@@ -1,9 +1,7 @@
-# tipo de recurso rangeView
-<a id="rangeview-resource-type" class="xliff"></a>
+# <a name="rangeview-resource-type"></a>tipo de recurso rangeView
 RangeView representa um conjunto de células visíveis do intervalo pai.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -11,9 +9,7 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 |[Itemat](../api/workbookrangeview_itemat.md)|[workbookRangeView](workbookrangeview.md)|Obtenha um item de modo de exibição de intervalo com base no índice.|
 |[Range](../api/workbookrangeview_range.md)|[workbookRange](range.md)|Retorna o objeto de intervalo associado à exibição do intervalo|
 
-
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnCount|Int32|Retorna o número de colunas visíveis. Somente leitura.|
@@ -27,14 +23,12 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 |valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.   |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |rows|Coleção [workbookRangeView](workbookrangeview.md)| Representa uma coleção de exibições de tabelas associadas ao intervalo. Somente leitura.    Somente leitura.|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",

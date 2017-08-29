@@ -33,15 +33,11 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
 | url          | Cadeia de caracteres | A URL usada para buscar o conteúdo da miniatura.                                                                                |
 | width        | Int32  | A largura da miniatura em pixels.                                                                                      |
 
-
 ## <a name="relationships"></a>Relacionamentos
 
 | Nome    | Tipo   | Descrição                           |
 | :------ | :----- | :------------------------------------ |
 | content | Fluxo | O fluxo de conteúdo da miniatura. |
-
-
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

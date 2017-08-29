@@ -333,7 +333,7 @@ Agora você está pronto para [executar o aplicativo](#run-the-app).
 
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente a API REST usando o [Explorador do Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente a API REST usando o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Obtenha exemplos de operações comuns em [Exemplo de trechos do Microsoft Graph para ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-snippets-sample) ou explore nossos outros [Exemplos do ASP.NET](http://aka.ms/aspnetgraphsamples) no GitHub.
 
 ## <a name="see-also"></a>Veja também

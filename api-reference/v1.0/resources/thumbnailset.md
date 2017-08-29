@@ -34,7 +34,6 @@ Veja a seguir uma representação JSON do recurso.
 | small    | [Thumbnail](thumbnail.md) | Uma miniatura cortada em 48 x 48.                                                        |
 | source   | [Thumbnail](thumbnail.md) | Uma imagem em miniatura personalizada ou a imagem original usada para gerar outras miniaturas. |
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

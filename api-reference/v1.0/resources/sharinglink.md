@@ -48,7 +48,6 @@ Esta tabela define os valores possíveis para a propriedade **type**:
 | `anonymous`    | O link de compartilhamento está disponível para uso por qualquer pessoa.                                                                            |
 | `organization` | O link de compartilhamento está disponível para uso por qualquer pessoa na mesma organização (locatário). Não disponível para o OneDrive Personal. |
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

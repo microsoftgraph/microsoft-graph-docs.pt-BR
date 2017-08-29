@@ -7,11 +7,11 @@ Se **findMeetingTimes** não retorna nenhuma sugestão de reunião, a resposta s
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    | 
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    | 
-|Aplicativo | Sem suporte. | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,6 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Prefira: outlook.timezone | Uma cadeia de caracteres que representa um fuso horário específico para a resposta; por exemplo, "Hora Oficial do Pacífico". Opcional. UTC será usado se esse cabeçalho não for especificado.|
-
 
 ## <a name="request-body"></a>Corpo da solicitação
 Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, especifique um objeto JSON para cada um dos parâmetros necessários no corpo da solicitação. 

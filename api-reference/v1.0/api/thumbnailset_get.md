@@ -24,7 +24,6 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
-
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 

@@ -8,7 +8,7 @@ Representa uma coluna em uma tabela.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get TableColumn](../api/tablecolumn_get.md) | [TableColumn](tablecolumn.md) |Leia as propriedades e os relacionamentos do objeto tableColumn.|
-|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md)    |Atualize o objeto TableColumn. |
+|[Update](../api/tablecolumn_update.md) | [TableColumn](tablecolumn.md) |Atualize o objeto TableColumn. |
 |[Databodyrange](../api/tablecolumn_databodyrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado ao corpo de dados da coluna.|
 |[Headerrowrange](../api/tablecolumn_headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.|
 |[Range](../api/tablecolumn_range.md)|[Range](range.md)|Obtém o objeto de intervalo associado a toda a coluna.|
@@ -18,9 +18,8 @@ Representa uma coluna em uma tabela.
 |[Itemat](../api/tablecolumncollection_itemat.md)|[TableColumn](tablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection_add.md)|[TableColumn](tablecolumn.md)|Adiciona uma nova coluna à tabela.|
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|int|Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.|
 |índice|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
@@ -28,7 +27,7 @@ Representa uma coluna em uma tabela.
 |values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |filtro|[Filter](filter.md)|Recupera o filtro aplicado à coluna. Somente leitura.|
 

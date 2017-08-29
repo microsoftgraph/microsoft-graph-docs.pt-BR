@@ -7,11 +7,11 @@ Uma chamada de função **delta** de contatos em uma pasta é semelhante a uma s
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    | 
-|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    | 
-|Aplicativo | Contacts.Read, Contacts.ReadWrite | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    |
+|Aplicativo | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -28,7 +28,6 @@ O controle de alterações em contatos corresponde a uma série de uma ou mais c
 |:---------------|:--------|:----------|
 | $deltatoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de contatos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de contatos. |
-
 
 #### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 

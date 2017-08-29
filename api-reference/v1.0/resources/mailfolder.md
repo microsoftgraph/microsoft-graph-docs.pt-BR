@@ -1,14 +1,10 @@
-<a id="mailfolder-resource-type" class="xliff"></a>
-
-# tipo de recurso mailFolder
+# <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
 Uma mailFolder em caixa de correio de um usuário, como Caixa de Entrada, Rascunhos e Itens Enviados. MailFolders podem conter mensagens e mailFolders filho.
 
 Esse recurso suporta a utilização da [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/mailfolder_delta.md).
 
-<a id="methods" class="xliff"></a>
-
-## Métodos
+## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
@@ -27,10 +23,7 @@ Esse recurso suporta a utilização da [consulta delta](../../../concepts/delta_
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | Criar uma ou mais propriedades estendidas de vários valores em uma mailFolder nova ou existente.  |
 |[Obter mailFolder com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Obtenha uma mailFolder que contém uma propriedade estendida com vários valores usando `$expand`. |
 
-
-<a id="properties" class="xliff"></a>
-
-## Propriedades
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
@@ -49,9 +42,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 MailFolders no Outlook podem conter mais de um tipo de itens. Por exemplo, a caixa de entrada pode conter itens de solicitação de reunião que são diferentes dos itens de email. TotalItemCount e UnreadItemCount incluem itens em uma mailFolder independentemente de seus tipos de item.
 
 
-<a id="relationships" class="xliff"></a>
-
-## Relações
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |childFolders|Coleção [MailFolder](mailfolder.md)|A coleção de pastas filho na mailFolder.|
@@ -59,10 +50,7 @@ MailFolders no Outlook podem conter mais de um tipo de itens. Por exemplo, a cai
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
 
-
-<a id="json-representation" class="xliff"></a>
-
-## Representação JSON
+## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
@@ -95,9 +83,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-<a id="see-also" class="xliff"></a>
-
-## Veja também
+## <a name="see-also"></a>Veja também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)

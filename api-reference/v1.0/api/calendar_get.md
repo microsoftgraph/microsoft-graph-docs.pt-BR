@@ -4,11 +4,11 @@ Recuperar as propriedades e os relacionamentos do objeto calendar.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Calendars.Read    | 
-|Delegado (conta pessoal da Microsoft) | Calendars.Read    | 
-|Aplicativo | Calendars.Read | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Calendars.Read    |
+|Delegado (conta pessoal da Microsoft) | Calendars.Read    |
+|Aplicativo | Calendars.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

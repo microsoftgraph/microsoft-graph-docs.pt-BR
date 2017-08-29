@@ -5,11 +5,11 @@ Responda a todos os destinatários de uma mensagem. A mensagem é então salva n
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Mail.Send    | 
-|Delegado (conta pessoal da Microsoft) | Mail.Send    | 
-|Aplicativo | Mail.Send | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Mail.Send    |
+|Delegado (conta pessoal da Microsoft) | Mail.Send    |
+|Aplicativo | Mail.Send |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

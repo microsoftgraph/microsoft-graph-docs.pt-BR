@@ -548,7 +548,7 @@ Você está pronto para experimentar seu aplicativo Android.
 Verifique a caixa de entrada do endereço de email que você configurou em [Chamar Microsoft Graph](#call-microsoft-graph). É provável que você tenha um email da conta que utilizou para entrar no aplicativo.
 
 ## <a name="next-steps"></a>Próximas etapas
-- Experimente o [Explorador do Microsoft Graph](https://graph.microsoft.io/graph-explorer).
+- Experimente o [Explorador do Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Encontre exemplos de operações comuns em [Exemplo de trechos para Android](https://github.com/microsoftgraph/android-java-snippets-sample) ou explore nossos outros [Exemplos para Android](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=android) no GitHub.
 
 

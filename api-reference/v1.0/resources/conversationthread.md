@@ -16,7 +16,7 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Listar Postagens](../api/conversationthread_list_posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: do thread.|
@@ -29,10 +29,9 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |isLocked|Booliano|Indica se o thread está bloqueado.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |postagens|Coleção [post](post.md)| Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

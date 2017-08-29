@@ -28,7 +28,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |erro|[onenoteOperationError](onenoteoperationerror.md)|O erro retornado pela operação.|
@@ -48,7 +48,6 @@ Nenhuma
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get operation](../api/onenoteoperation_get.md) | [onenoteOperation](onenoteoperation.md) |Obter o status atual da operação. |
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

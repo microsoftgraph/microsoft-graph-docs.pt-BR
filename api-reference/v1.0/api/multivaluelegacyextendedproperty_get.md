@@ -92,12 +92,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 |_Parâmetros de URL_|
 |id_value|String|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
