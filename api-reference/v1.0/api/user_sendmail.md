@@ -1,46 +1,46 @@
-# <a name="send-mail"></a><span data-ttu-id="cc412-101">Enviar email</span><span class="sxs-lookup"><span data-stu-id="cc412-101">Send mail</span></span>
+# <a name="send-mail"></a><span data-ttu-id="3c2af-101">Enviar email</span><span class="sxs-lookup"><span data-stu-id="3c2af-101">Send mail</span></span>
 
-<span data-ttu-id="cc412-p101">Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.</span><span class="sxs-lookup"><span data-stu-id="cc412-p101">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
+<span data-ttu-id="3c2af-p101">Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.</span><span class="sxs-lookup"><span data-stu-id="3c2af-p101">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
 
-<span data-ttu-id="cc412-104">Você pode incluir um [anexo de arquivo](../resources/fileattachment.md) na mesma chamada de ação de **sendMail**.</span><span class="sxs-lookup"><span data-stu-id="cc412-104">You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.</span></span>
+<span data-ttu-id="3c2af-104">Você pode incluir um [anexo de arquivo](../resources/fileattachment.md) na mesma chamada de ação de **sendMail**.</span><span class="sxs-lookup"><span data-stu-id="3c2af-104">You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cc412-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cc412-105">Permissions</span></span>
-<span data-ttu-id="cc412-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="cc412-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3c2af-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3c2af-105">Permissions</span></span>
+<span data-ttu-id="3c2af-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="3c2af-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="cc412-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cc412-108">Permission type</span></span>      | <span data-ttu-id="cc412-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cc412-109">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="cc412-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cc412-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cc412-111">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="cc412-111">Mail.Send</span></span>    | 
-|<span data-ttu-id="cc412-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cc412-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc412-113">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="cc412-113">Mail.Send</span></span>    | 
-|<span data-ttu-id="cc412-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cc412-114">Application</span></span> | <span data-ttu-id="cc412-115">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="cc412-115">Mail.Send</span></span> | 
+|<span data-ttu-id="3c2af-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3c2af-108">Permission type</span></span>      | <span data-ttu-id="3c2af-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3c2af-109">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="3c2af-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3c2af-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3c2af-111">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="3c2af-111">Mail.Send</span></span>    |
+|<span data-ttu-id="3c2af-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3c2af-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3c2af-113">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="3c2af-113">Mail.Send</span></span>    |
+|<span data-ttu-id="3c2af-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3c2af-114">Application</span></span> | <span data-ttu-id="3c2af-115">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="3c2af-115">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc412-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cc412-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3c2af-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3c2af-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/sendMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="cc412-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cc412-117">Request headers</span></span>
-| <span data-ttu-id="cc412-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cc412-118">Header</span></span>       | <span data-ttu-id="cc412-119">Valor</span><span class="sxs-lookup"><span data-stu-id="cc412-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="3c2af-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3c2af-117">Request headers</span></span>
+| <span data-ttu-id="3c2af-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3c2af-118">Header</span></span>       | <span data-ttu-id="3c2af-119">Valor</span><span class="sxs-lookup"><span data-stu-id="3c2af-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cc412-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="cc412-120">Authorization</span></span>  | <span data-ttu-id="cc412-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cc412-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="cc412-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cc412-123">Content-Type</span></span>  | <span data-ttu-id="cc412-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cc412-124">application/json</span></span>  |
+| <span data-ttu-id="3c2af-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3c2af-120">Authorization</span></span>  | <span data-ttu-id="3c2af-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3c2af-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3c2af-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3c2af-123">Content-Type</span></span>  | <span data-ttu-id="3c2af-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3c2af-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="cc412-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cc412-125">Request body</span></span>
-<span data-ttu-id="cc412-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cc412-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3c2af-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3c2af-125">Request body</span></span>
+<span data-ttu-id="3c2af-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3c2af-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="cc412-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="cc412-127">Parameter</span></span>    | <span data-ttu-id="cc412-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="cc412-128">Type</span></span>   |<span data-ttu-id="cc412-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="cc412-129">Description</span></span>|
+| <span data-ttu-id="3c2af-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="3c2af-127">Parameter</span></span>    | <span data-ttu-id="3c2af-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="3c2af-128">Type</span></span>   |<span data-ttu-id="3c2af-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="3c2af-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cc412-130">Message</span><span class="sxs-lookup"><span data-stu-id="cc412-130">Message</span></span>|[<span data-ttu-id="cc412-131">Message</span><span class="sxs-lookup"><span data-stu-id="cc412-131">Message</span></span>](../resources/message.md)|<span data-ttu-id="cc412-p104">A mensagem a enviar. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cc412-p104">The message to send. Required.</span></span>|
-|<span data-ttu-id="cc412-134">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="cc412-134">SaveToSentItems</span></span>|<span data-ttu-id="cc412-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="cc412-135">Boolean</span></span>|<span data-ttu-id="cc412-p105">Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.</span><span class="sxs-lookup"><span data-stu-id="cc412-p105">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span> |
+|<span data-ttu-id="3c2af-130">Message</span><span class="sxs-lookup"><span data-stu-id="3c2af-130">Message</span></span>|[<span data-ttu-id="3c2af-131">Message</span><span class="sxs-lookup"><span data-stu-id="3c2af-131">Message</span></span>](../resources/message.md)|<span data-ttu-id="3c2af-p104">A mensagem a enviar. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3c2af-p104">The message to send. Required.</span></span>|
+|<span data-ttu-id="3c2af-134">SaveToSentItems</span><span class="sxs-lookup"><span data-stu-id="3c2af-134">SaveToSentItems</span></span>|<span data-ttu-id="3c2af-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="3c2af-135">Boolean</span></span>|<span data-ttu-id="3c2af-p105">Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.</span><span class="sxs-lookup"><span data-stu-id="3c2af-p105">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="cc412-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc412-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3c2af-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="3c2af-139">Response</span></span>
 
-<span data-ttu-id="cc412-p106">Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cc412-p106">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="3c2af-p106">Se bem-sucedido, este método retorna um código de resposta `202, Accepted`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3c2af-p106">If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cc412-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cc412-142">Example</span></span>
-<span data-ttu-id="cc412-143">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="cc412-143">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="cc412-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cc412-144">Request</span></span>
-<span data-ttu-id="cc412-145">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cc412-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3c2af-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3c2af-142">Example</span></span>
+<span data-ttu-id="3c2af-143">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="3c2af-143">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="3c2af-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3c2af-144">Request</span></span>
+<span data-ttu-id="3c2af-145">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3c2af-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -76,8 +76,8 @@ Content-length: 512
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="cc412-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="cc412-146">Response</span></span>
-<span data-ttu-id="cc412-147">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cc412-147">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="3c2af-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="3c2af-146">Response</span></span>
+<span data-ttu-id="3c2af-147">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3c2af-147">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

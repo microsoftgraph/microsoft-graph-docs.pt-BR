@@ -1,17 +1,17 @@
-# <a name="event-dismissreminder"></a><span data-ttu-id="566fa-101">evento: dismissReminder</span><span class="sxs-lookup"><span data-stu-id="566fa-101">event: dismissReminder</span></span>
+# <a name="event-dismissreminder"></a><span data-ttu-id="1e545-101">evento: dismissReminder</span><span class="sxs-lookup"><span data-stu-id="1e545-101">event: dismissReminder</span></span>
 
-<span data-ttu-id="566fa-102">Ignorar um lembrete acionado.</span><span class="sxs-lookup"><span data-stu-id="566fa-102">Dissmiss a reminder that has been triggered.</span></span>
+<span data-ttu-id="1e545-102">Ignorar um lembrete acionado.</span><span class="sxs-lookup"><span data-stu-id="1e545-102">Dissmiss a reminder that has been triggered.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="566fa-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="566fa-103">Permissions</span></span>
-<span data-ttu-id="566fa-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="566fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1e545-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="1e545-103">Permissions</span></span>
+<span data-ttu-id="1e545-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="1e545-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="566fa-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="566fa-106">Permission type</span></span>      | <span data-ttu-id="566fa-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="566fa-107">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="566fa-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="566fa-108">Delegated (work or school account)</span></span> | <span data-ttu-id="566fa-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="566fa-109">Calendars.ReadWrite</span></span>    | 
-|<span data-ttu-id="566fa-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="566fa-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="566fa-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="566fa-111">Calendars.ReadWrite</span></span>    | 
-|<span data-ttu-id="566fa-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="566fa-112">Application</span></span> | <span data-ttu-id="566fa-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="566fa-113">Calendars.ReadWrite</span></span> | 
+|<span data-ttu-id="1e545-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1e545-106">Permission type</span></span>      | <span data-ttu-id="1e545-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1e545-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="1e545-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1e545-108">Delegated (work or school account)</span></span> | <span data-ttu-id="1e545-109">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1e545-109">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="1e545-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1e545-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e545-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1e545-111">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="1e545-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1e545-112">Application</span></span> | <span data-ttu-id="1e545-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1e545-113">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="566fa-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="566fa-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1e545-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1e545-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/dismissReminder
@@ -31,21 +31,21 @@ POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/di
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
-## <a name="request-headers"></a><span data-ttu-id="566fa-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="566fa-115">Request headers</span></span>
-| <span data-ttu-id="566fa-116">Nome</span><span class="sxs-lookup"><span data-stu-id="566fa-116">Name</span></span>       | <span data-ttu-id="566fa-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="566fa-117">Type</span></span> | <span data-ttu-id="566fa-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="566fa-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1e545-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1e545-115">Request headers</span></span>
+| <span data-ttu-id="1e545-116">Nome</span><span class="sxs-lookup"><span data-stu-id="1e545-116">Name</span></span>       | <span data-ttu-id="1e545-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="1e545-117">Type</span></span> | <span data-ttu-id="1e545-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="1e545-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="566fa-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="566fa-119">Authorization</span></span>  | <span data-ttu-id="566fa-120">string</span><span class="sxs-lookup"><span data-stu-id="566fa-120">string</span></span>  | <span data-ttu-id="566fa-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="566fa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1e545-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="1e545-119">Authorization</span></span>  | <span data-ttu-id="1e545-120">string</span><span class="sxs-lookup"><span data-stu-id="1e545-120">string</span></span>  | <span data-ttu-id="1e545-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1e545-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="566fa-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="566fa-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1e545-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1e545-123">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="566fa-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="566fa-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1e545-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="1e545-124">Response</span></span>
 
-<span data-ttu-id="566fa-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="566fa-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="1e545-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1e545-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="566fa-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="566fa-127">Example</span></span>
-<span data-ttu-id="566fa-128">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="566fa-128">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="566fa-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="566fa-129">Request</span></span>
-<span data-ttu-id="566fa-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="566fa-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1e545-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1e545-127">Example</span></span>
+<span data-ttu-id="1e545-128">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="1e545-128">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="1e545-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1e545-129">Request</span></span>
+<span data-ttu-id="1e545-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1e545-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "event_dismissreminder"
@@ -54,9 +54,9 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 ```
 
-##### <a name="response"></a><span data-ttu-id="566fa-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="566fa-131">Response</span></span>
-##### <a name="response"></a><span data-ttu-id="566fa-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="566fa-132">Response</span></span>
-<span data-ttu-id="566fa-133">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="566fa-133">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="1e545-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="1e545-131">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1e545-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="1e545-132">Response</span></span>
+<span data-ttu-id="1e545-133">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1e545-133">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

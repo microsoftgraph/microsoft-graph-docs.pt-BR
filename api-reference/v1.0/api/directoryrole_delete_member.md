@@ -1,19 +1,19 @@
-# <a name="remove-directory-role-member"></a><span data-ttu-id="5edf7-101">Remover membro da função de diretório</span><span class="sxs-lookup"><span data-stu-id="5edf7-101">Remove directory role member</span></span>
+# <a name="remove-directory-role-member"></a><span data-ttu-id="c0646-101">Remover membro da função de diretório</span><span class="sxs-lookup"><span data-stu-id="c0646-101">Remove directory role member</span></span>
 
-<span data-ttu-id="5edf7-102">Remove um membro de um directoryRole.</span><span class="sxs-lookup"><span data-stu-id="5edf7-102">Remove a member from a directoryRole.</span></span>
+<span data-ttu-id="c0646-102">Remove um membro de um directoryRole.</span><span class="sxs-lookup"><span data-stu-id="c0646-102">Remove a member from a directoryRole.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5edf7-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="5edf7-103">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c0646-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="c0646-103">Permissions</span></span>
 
-<span data-ttu-id="5edf7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5edf7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="c0646-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c0646-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="5edf7-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5edf7-106">Permission type</span></span>      | <span data-ttu-id="5edf7-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5edf7-107">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="5edf7-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5edf7-108">Delegated (work or school account)</span></span> | <span data-ttu-id="5edf7-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="5edf7-109">Directory.AccessAsUser.All</span></span>    | 
-|<span data-ttu-id="5edf7-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5edf7-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5edf7-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5edf7-111">Not supported.</span></span>    | 
-|<span data-ttu-id="5edf7-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5edf7-112">Application</span></span> | <span data-ttu-id="5edf7-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5edf7-113">Not supported.</span></span> | 
+|<span data-ttu-id="c0646-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c0646-106">Permission type</span></span>      | <span data-ttu-id="c0646-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c0646-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="c0646-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c0646-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c0646-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c0646-109">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="c0646-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c0646-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0646-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0646-111">Not supported.</span></span>    |
+|<span data-ttu-id="c0646-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c0646-112">Application</span></span> | <span data-ttu-id="c0646-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0646-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5edf7-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5edf7-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0646-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c0646-114">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -21,25 +21,25 @@
 DELETE /directoryroles/{id}/members/{id}/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5edf7-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5edf7-115">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c0646-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c0646-115">Request headers</span></span>
 
-| <span data-ttu-id="5edf7-116">Nome</span><span class="sxs-lookup"><span data-stu-id="5edf7-116">Name</span></span>       | <span data-ttu-id="5edf7-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="5edf7-117">Type</span></span> | <span data-ttu-id="5edf7-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="5edf7-118">Description</span></span>|
+| <span data-ttu-id="c0646-116">Nome</span><span class="sxs-lookup"><span data-stu-id="c0646-116">Name</span></span>       | <span data-ttu-id="c0646-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0646-117">Type</span></span> | <span data-ttu-id="c0646-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0646-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5edf7-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="5edf7-119">Authorization</span></span>  | <span data-ttu-id="5edf7-120">string</span><span class="sxs-lookup"><span data-stu-id="5edf7-120">string</span></span>  | <span data-ttu-id="5edf7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5edf7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c0646-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="c0646-119">Authorization</span></span>  | <span data-ttu-id="c0646-120">string</span><span class="sxs-lookup"><span data-stu-id="c0646-120">string</span></span>  | <span data-ttu-id="c0646-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0646-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5edf7-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5edf7-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0646-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c0646-123">Request body</span></span>
 
-<span data-ttu-id="5edf7-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5edf7-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="c0646-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c0646-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5edf7-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="5edf7-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c0646-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0646-125">Response</span></span>
 
-<span data-ttu-id="5edf7-p103">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5edf7-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c0646-p103">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0646-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5edf7-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5edf7-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c0646-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c0646-128">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5edf7-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5edf7-129">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="c0646-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0646-129">Request</span></span>
 
-<span data-ttu-id="5edf7-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5edf7-130">Here is an example of the request.</span></span>
+<span data-ttu-id="c0646-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c0646-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_directoryobject_from_directoryrole"
@@ -49,9 +49,9 @@ DELETE /directoryroles/{id}/members/{id}/$ref
 DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
 ```
 
-##### <a name="response"></a><span data-ttu-id="5edf7-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="5edf7-131">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c0646-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0646-131">Response</span></span>
 
-<span data-ttu-id="5edf7-132">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5edf7-132">Here is an example of the response.</span></span> 
+<span data-ttu-id="c0646-132">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0646-132">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

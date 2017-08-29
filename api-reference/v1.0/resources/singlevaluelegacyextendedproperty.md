@@ -1,31 +1,30 @@
-# <a name="singlevaluelegacyextendedproperty-resource-type"></a>Tipo de recurso singleValueLegacyExtendedProperty
+# <a name="singlevaluelegacyextendedproperty-resource-type"></a><span data-ttu-id="bc8e4-101">Tipo de recurso singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="bc8e4-101">singleValueLegacyExtendedProperty resource type</span></span>
 
-Uma propriedade estendida que contém um único valor. 
+<span data-ttu-id="bc8e4-102">Uma propriedade estendida que contém um único valor.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-102">An extended property that contains a single value.</span></span> 
 
-Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas. 
+<span data-ttu-id="bc8e4-103">Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-103">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span> 
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="bc8e4-104">Métodos</span><span class="sxs-lookup"><span data-stu-id="bc8e4-104">Methods</span></span>
 
-| Método           | Tipo de retorno    |Descrição|
+| <span data-ttu-id="bc8e4-105">Método</span><span class="sxs-lookup"><span data-stu-id="bc8e4-105">Method</span></span>           | <span data-ttu-id="bc8e4-106">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="bc8e4-106">Return Type</span></span>    |<span data-ttu-id="bc8e4-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="bc8e4-107">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Post](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) | Uma instância de recurso compatível: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md) ou [contactFolder](../resources/contactfolder.md), mas não o grupo [post](../resources/post.md). | Crie uma **singleValueLegacyExtendedProperty** em uma instância nova ou existente de um recurso compatível. |
-|[Get](../api/singlevaluelegacyextendedproperty_get.md) |Uma ou mais instâncias de recurso compatíveis ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md) ou o grupo [post](../resources/post.md)) ou uma instância expandida com um objeto [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md). |Obtenha uma instância de recurso com uma propriedade estendida usando `$expand` ou `$filter`.|
+|[<span data-ttu-id="bc8e4-108">Post</span><span class="sxs-lookup"><span data-stu-id="bc8e4-108">Post</span></span>](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) | <span data-ttu-id="bc8e4-109">Uma instância de recurso compatível: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md) ou [contactFolder](../resources/contactfolder.md), mas não o grupo [post](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="bc8e4-109">A supported resource instance: [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), or [contactFolder](../resources/contactfolder.md), but not group [post](../resources/post.md).</span></span> | <span data-ttu-id="bc8e4-110">Crie uma **singleValueLegacyExtendedProperty** em uma instância nova ou existente de um recurso compatível.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-110">Create a **singleValueLegacyExtendedProperty** in a new or existing instance of a supported resource.</span></span> |
+|[<span data-ttu-id="bc8e4-111">Get</span><span class="sxs-lookup"><span data-stu-id="bc8e4-111">Get</span></span>](../api/singlevaluelegacyextendedproperty_get.md) |<span data-ttu-id="bc8e4-112">Uma ou mais instâncias de recurso compatíveis ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md) ou o grupo [post](../resources/post.md)) ou uma instância expandida com um objeto [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md).</span><span class="sxs-lookup"><span data-stu-id="bc8e4-112">One or a collection of supported resource instance ([message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [calendar](../resources/calendar.md), [contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), or group [post](../resources/post.md)), or one such instance expanded with a [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) object.</span></span> |<span data-ttu-id="bc8e4-113">Obtenha uma instância de recurso com uma propriedade estendida usando `$expand` ou `$filter`.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-113">Get a resource instance with an extended property using `$expand` or `$filter`.</span></span>|
 
-
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="bc8e4-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bc8e4-114">Properties</span></span>
+| <span data-ttu-id="bc8e4-115">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bc8e4-115">Property</span></span>     | <span data-ttu-id="bc8e4-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="bc8e4-116">Type</span></span>   |<span data-ttu-id="bc8e4-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="bc8e4-117">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|string|A ID da propriedade usada para identificar a propriedade. Somente leitura.|
-|value|string|Um valor de propriedade.|
+|<span data-ttu-id="bc8e4-118">id</span><span class="sxs-lookup"><span data-stu-id="bc8e4-118">id</span></span>|<span data-ttu-id="bc8e4-119">string</span><span class="sxs-lookup"><span data-stu-id="bc8e4-119">string</span></span>|<span data-ttu-id="bc8e4-p101">A ID da propriedade usada para identificar a propriedade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-p101">The property ID used to identify the property. Read-only.</span></span>|
+|<span data-ttu-id="bc8e4-122">value</span><span class="sxs-lookup"><span data-stu-id="bc8e4-122">value</span></span>|<span data-ttu-id="bc8e4-123">string</span><span class="sxs-lookup"><span data-stu-id="bc8e4-123">string</span></span>|<span data-ttu-id="bc8e4-124">Um valor de propriedade.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-124">A property value.</span></span>|
 
-## <a name="relationships"></a>Relacionamentos
-Nenhum
+## <a name="relationships"></a><span data-ttu-id="bc8e4-125">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="bc8e4-125">Relationships</span></span>
+<span data-ttu-id="bc8e4-126">Nenhum</span><span class="sxs-lookup"><span data-stu-id="bc8e4-126">None</span></span>
 
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="bc8e4-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bc8e4-127">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+<span data-ttu-id="bc8e4-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bc8e4-128">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

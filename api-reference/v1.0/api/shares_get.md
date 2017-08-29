@@ -1,38 +1,38 @@
-# <a name="accessing-shared-driveitems"></a><span data-ttu-id="dc274-101">Acessando DriveItems compartilhados</span><span class="sxs-lookup"><span data-stu-id="dc274-101">Accessing shared DriveItems</span></span>
+# <a name="accessing-shared-driveitems"></a><span data-ttu-id="ccd14-101">Acessando DriveItems compartilhados</span><span class="sxs-lookup"><span data-stu-id="ccd14-101">Accessing shared DriveItems</span></span>
 
-<span data-ttu-id="dc274-102">Acesse um [DriveItem](../resources/driveitem.md) compartilhado ou uma coleção de itens compartilhados usando um **shareId** ou uma URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="dc274-102">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
+<span data-ttu-id="ccd14-102">Acesse um [DriveItem](../resources/driveitem.md) compartilhado ou uma coleção de itens compartilhados usando um **shareId** ou uma URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="ccd14-102">Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.</span></span>
 
-<span data-ttu-id="dc274-103">Para usar uma URL de compartilhamento com esta API, seu aplicativo precisa [transformar a URL em um token de compartilhamento](#transform-a-sharing-url).</span><span class="sxs-lookup"><span data-stu-id="dc274-103">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).</span></span>
+<span data-ttu-id="ccd14-103">Para usar uma URL de compartilhamento com esta API, seu aplicativo precisa [transformar a URL em um token de compartilhamento](#transform-a-sharing-url).</span><span class="sxs-lookup"><span data-stu-id="ccd14-103">To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#transform-a-sharing-url).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="dc274-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="dc274-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ccd14-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="ccd14-104">Permissions</span></span>
 
-<span data-ttu-id="dc274-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="dc274-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="ccd14-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="ccd14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="dc274-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dc274-107">Permission type</span></span>      | <span data-ttu-id="dc274-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="dc274-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="dc274-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dc274-109">Delegated (work or school account)</span></span> | <span data-ttu-id="dc274-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc274-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="dc274-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dc274-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="dc274-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc274-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="dc274-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dc274-113">Application</span></span> | <span data-ttu-id="dc274-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="dc274-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> | 
+|<span data-ttu-id="ccd14-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ccd14-107">Permission type</span></span>      | <span data-ttu-id="ccd14-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ccd14-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="ccd14-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ccd14-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ccd14-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ccd14-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ccd14-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ccd14-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccd14-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ccd14-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ccd14-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ccd14-113">Application</span></span> | <span data-ttu-id="ccd14-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ccd14-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="dc274-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dc274-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ccd14-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ccd14-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /shares/{sharingIdOrUrl}
 ```
 
-## <a name="request-body"></a><span data-ttu-id="dc274-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dc274-116">Request body</span></span>
-<span data-ttu-id="dc274-117">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dc274-117">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ccd14-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ccd14-116">Request body</span></span>
+<span data-ttu-id="ccd14-117">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ccd14-117">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dc274-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc274-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ccd14-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="ccd14-118">Response</span></span>
 
-<span data-ttu-id="dc274-119">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [sharedDriveItem](../resources/shareddriveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dc274-119">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="ccd14-119">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [sharedDriveItem](../resources/shareddriveitem.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ccd14-119">If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dc274-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dc274-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ccd14-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ccd14-120">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dc274-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc274-121">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ccd14-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ccd14-121">Request</span></span>
 
-<span data-ttu-id="dc274-122">Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:</span><span class="sxs-lookup"><span data-stu-id="dc274-122">Here is an example of the request to retrieve a shared item:</span></span>
+<span data-ttu-id="ccd14-122">Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:</span><span class="sxs-lookup"><span data-stu-id="ccd14-122">Here is an example of the request to retrieve a shared item:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -41,9 +41,9 @@ GET /shares/{sharingIdOrUrl}
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}
 ```
-##### <a name="response"></a><span data-ttu-id="dc274-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc274-123">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ccd14-123">Resposta</span><span class="sxs-lookup"><span data-stu-id="ccd14-123">Response</span></span>
 
-<span data-ttu-id="dc274-124">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dc274-124">Here is an example of the response.</span></span>
+<span data-ttu-id="ccd14-124">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ccd14-124">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -65,21 +65,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="access-the-shared-item-directly"></a><span data-ttu-id="dc274-125">Acessar diretamente o item compartilhado</span><span class="sxs-lookup"><span data-stu-id="dc274-125">Access the shared item directly</span></span>
+## <a name="access-the-shared-item-directly"></a><span data-ttu-id="ccd14-125">Acessar diretamente o item compartilhado</span><span class="sxs-lookup"><span data-stu-id="ccd14-125">Access the shared item directly</span></span>
 
-<span data-ttu-id="dc274-p102">Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="dc274-p102">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
+<span data-ttu-id="ccd14-p102">Embora [**SharedDriveItem**](../resources/shareddriveitem.md) contenha algumas informações úteis, a maioria dos aplicativos acessará diretamente o [DriveItem](../resources/driveitem.md) compartilhado. O recurso **SharedDriveItem** inclui **root** e relações **itens** que podem acessar o conteúdo no escopo do item compartilhado.</span><span class="sxs-lookup"><span data-stu-id="ccd14-p102">While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md). The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.</span></span>
 
-## <a name="example-single-file"></a><span data-ttu-id="dc274-128">Exemplo (arquivo único)</span><span class="sxs-lookup"><span data-stu-id="dc274-128">Example (single file)</span></span>
+## <a name="example-single-file"></a><span data-ttu-id="ccd14-128">Exemplo (arquivo único)</span><span class="sxs-lookup"><span data-stu-id="ccd14-128">Example (single file)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dc274-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc274-129">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ccd14-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ccd14-129">Request</span></span>
 
-<span data-ttu-id="dc274-130">Solicitando a relação **root**, o **DriveItem** que foi compartilhado será retornado.</span><span class="sxs-lookup"><span data-stu-id="dc274-130">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
+<span data-ttu-id="ccd14-130">Solicitando a relação **root**, o **DriveItem** que foi compartilhado será retornado.</span><span class="sxs-lookup"><span data-stu-id="ccd14-130">By requesting the **root** relationship, the **DriveItem** that was shared will be returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root
 ```
 
-##### <a name="response"></a><span data-ttu-id="dc274-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc274-131">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ccd14-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="ccd14-131">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -94,17 +94,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-shared-folder"></a><span data-ttu-id="dc274-132">Exemplo (pasta compartilhada)</span><span class="sxs-lookup"><span data-stu-id="dc274-132">Example (shared folder)</span></span>
+## <a name="example-shared-folder"></a><span data-ttu-id="ccd14-132">Exemplo (pasta compartilhada)</span><span class="sxs-lookup"><span data-stu-id="ccd14-132">Example (shared folder)</span></span>
 
-##### <a name="request"></a><span data-ttu-id="dc274-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc274-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="ccd14-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ccd14-133">Request</span></span>
 
-<span data-ttu-id="dc274-134">Solicitando a relação **root** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.</span><span class="sxs-lookup"><span data-stu-id="dc274-134">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
+<span data-ttu-id="ccd14-134">Solicitando a relação **root** e expandindo a coleção **children**, o **DriveItem** que foi compartilhado será retornado junto com os arquivos da pasta compartilhada.</span><span class="sxs-lookup"><span data-stu-id="ccd14-134">By requesting the **root** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/shares/{shareIdOrUrl}/root?$expand=children
 ```
 
-##### <a name="response"></a><span data-ttu-id="dc274-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc274-135">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ccd14-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="ccd14-135">Response</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -133,19 +133,19 @@ Content-Type: application/json
 }
 ```
 
-## <a name="transform-a-sharing-url"></a><span data-ttu-id="dc274-136">Transformar uma URL de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="dc274-136">Transform a sharing URL</span></span>
+## <a name="transform-a-sharing-url"></a><span data-ttu-id="ccd14-136">Transformar uma URL de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="ccd14-136">Transform a sharing URL</span></span>
 
-<span data-ttu-id="dc274-137">Para acessar uma URL compartilhamento usando a API **shares**, a URL deve ser transformada em um token de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="dc274-137">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
+<span data-ttu-id="ccd14-137">Para acessar uma URL compartilhamento usando a API **shares**, a URL deve ser transformada em um token de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="ccd14-137">To access a sharing URL using the **shares** API, the URL needs to be transformed into a sharing token.</span></span>
 
-<span data-ttu-id="dc274-138">Transformar uma URL em um token de compartilhamento:</span><span class="sxs-lookup"><span data-stu-id="dc274-138">To transform a URL into a sharing token:</span></span>
+<span data-ttu-id="ccd14-138">Transformar uma URL em um token de compartilhamento:</span><span class="sxs-lookup"><span data-stu-id="ccd14-138">To transform a URL into a sharing token:</span></span>
 
-1. <span data-ttu-id="dc274-139">Codifique na Base 64 a URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="dc274-139">Base64 encode the sharing URL.</span></span>
-2. <span data-ttu-id="dc274-140">Converta os dados codificados na Base 64 para o [formato base64url sem preenchimento](https://en.wikipedia.org/wiki/Base64) da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="dc274-140">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
-  1. <span data-ttu-id="dc274-141">Cortar `=` caracteres à direita da cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="dc274-141">Trim trailing `=` characters from the string</span></span>
-  2. <span data-ttu-id="dc274-142">Substitua caracteres não seguros da URL por um caractere equivalente; substitua `/` por `_` e `+` por `-`.</span><span class="sxs-lookup"><span data-stu-id="dc274-142">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
-3. <span data-ttu-id="dc274-143">Acrescente `u!` ao início da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="dc274-143">Append `u!` to the beginning of the string.</span></span>
+1. <span data-ttu-id="ccd14-139">Codifique na Base 64 a URL de compartilhamento.</span><span class="sxs-lookup"><span data-stu-id="ccd14-139">Base64 encode the sharing URL.</span></span>
+2. <span data-ttu-id="ccd14-140">Converta os dados codificados na Base 64 para o [formato base64url sem preenchimento](https://en.wikipedia.org/wiki/Base64) da seguinte forma:</span><span class="sxs-lookup"><span data-stu-id="ccd14-140">Convert the base64 encoded data to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by:</span></span>
+  1. <span data-ttu-id="ccd14-141">Cortar `=` caracteres à direita da cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="ccd14-141">Trim trailing `=` characters from the string</span></span>
+  2. <span data-ttu-id="ccd14-142">Substitua caracteres não seguros da URL por um caractere equivalente; substitua `/` por `_` e `+` por `-`.</span><span class="sxs-lookup"><span data-stu-id="ccd14-142">Replace unsafe URL characters with an equivalent character; replace `/` with `_` and `+` with `-`.</span></span>
+3. <span data-ttu-id="ccd14-143">Acrescente `u!` ao início da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="ccd14-143">Append `u!` to the beginning of the string.</span></span>
 
-<span data-ttu-id="dc274-144">Por exemplo, o seguinte método cC transforma uma cadeia de entrada em um token de compartilhamento:</span><span class="sxs-lookup"><span data-stu-id="dc274-144">For example, the following C# method transforms an input string into a sharing token:</span></span>
+<span data-ttu-id="ccd14-144">Por exemplo, o seguinte método cC transforma uma cadeia de entrada em um token de compartilhamento:</span><span class="sxs-lookup"><span data-stu-id="ccd14-144">For example, the following C# method transforms an input string into a sharing token:</span></span>
 
 ```csharp
 string UrlToSharingToken(string inputUrl) {

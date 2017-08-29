@@ -1,36 +1,36 @@
-# <a name="group-addfavorite"></a><span data-ttu-id="69bd3-101">group: addFavorite</span><span class="sxs-lookup"><span data-stu-id="69bd3-101">group: addFavorite</span></span>
-<span data-ttu-id="69bd3-p101">Adiciona o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="69bd3-p101">Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.</span></span>
+# <a name="group-addfavorite"></a><span data-ttu-id="10d07-101">group: addFavorite</span><span class="sxs-lookup"><span data-stu-id="10d07-101">group: addFavorite</span></span>
+<span data-ttu-id="10d07-p101">Adiciona o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="10d07-p101">Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="69bd3-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="69bd3-104">Permissions</span></span>
-<span data-ttu-id="69bd3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="69bd3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="10d07-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="10d07-104">Permissions</span></span>
+<span data-ttu-id="10d07-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="10d07-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="69bd3-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="69bd3-107">Permission type</span></span>      | <span data-ttu-id="69bd3-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="69bd3-108">Permissions (from least to most privileged)</span></span>              | 
-|:--------------------|:---------------------------------------------------------| 
-|<span data-ttu-id="69bd3-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="69bd3-109">Delegated (work or school account)</span></span> | <span data-ttu-id="69bd3-110">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69bd3-110">Group.ReadWrite.All</span></span>    | 
-|<span data-ttu-id="69bd3-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="69bd3-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69bd3-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="69bd3-112">Not supported.</span></span>    | 
-|<span data-ttu-id="69bd3-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="69bd3-113">Application</span></span> | <span data-ttu-id="69bd3-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69bd3-114">Group.ReadWrite.All</span></span> | 
+|<span data-ttu-id="10d07-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="10d07-107">Permission type</span></span>      | <span data-ttu-id="10d07-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="10d07-108">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="10d07-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="10d07-109">Delegated (work or school account)</span></span> | <span data-ttu-id="10d07-110">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10d07-110">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="10d07-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="10d07-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10d07-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="10d07-112">Not supported.</span></span>    |
+|<span data-ttu-id="10d07-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="10d07-113">Application</span></span> | <span data-ttu-id="10d07-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10d07-114">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="69bd3-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="69bd3-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10d07-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="10d07-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/addFavorite
 ```
-## <a name="request-headers"></a><span data-ttu-id="69bd3-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="69bd3-116">Request headers</span></span>
-| <span data-ttu-id="69bd3-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="69bd3-117">Header</span></span>       | <span data-ttu-id="69bd3-118">Valor</span><span class="sxs-lookup"><span data-stu-id="69bd3-118">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="10d07-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="10d07-116">Request headers</span></span>
+| <span data-ttu-id="10d07-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="10d07-117">Header</span></span>       | <span data-ttu-id="10d07-118">Valor</span><span class="sxs-lookup"><span data-stu-id="10d07-118">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="69bd3-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="69bd3-119">Authorization</span></span>  | <span data-ttu-id="69bd3-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="69bd3-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="10d07-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="10d07-119">Authorization</span></span>  | <span data-ttu-id="10d07-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="10d07-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="69bd3-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="69bd3-122">Request body</span></span>
-<span data-ttu-id="69bd3-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="69bd3-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10d07-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="10d07-122">Request body</span></span>
+<span data-ttu-id="10d07-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="10d07-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="69bd3-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="69bd3-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="10d07-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="10d07-124">Response</span></span>
 
-<span data-ttu-id="69bd3-p104">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="69bd3-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="10d07-p104">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10d07-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="69bd3-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="69bd3-127">Example</span></span>
-<span data-ttu-id="69bd3-128">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="69bd3-128">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="69bd3-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="69bd3-129">Request</span></span>
-<span data-ttu-id="69bd3-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="69bd3-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="10d07-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="10d07-127">Example</span></span>
+<span data-ttu-id="10d07-128">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="10d07-128">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="10d07-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="10d07-129">Request</span></span>
+<span data-ttu-id="10d07-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="10d07-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_addfavorite"
@@ -39,8 +39,8 @@ POST /groups/{id}/addFavorite
 POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 ```
 
-##### <a name="response"></a><span data-ttu-id="69bd3-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="69bd3-131">Response</span></span>
-<span data-ttu-id="69bd3-132">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="69bd3-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="10d07-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="10d07-131">Response</span></span>
+<span data-ttu-id="10d07-132">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10d07-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,

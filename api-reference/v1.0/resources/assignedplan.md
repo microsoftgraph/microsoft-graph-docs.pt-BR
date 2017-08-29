@@ -1,20 +1,19 @@
-# <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
+# <a name="assignedplan-resource-type"></a><span data-ttu-id="0f78f-101">Tipo de recurso assignedPlan</span><span class="sxs-lookup"><span data-stu-id="0f78f-101">assignedPlan resource type</span></span>
 
-A propriedade **assignedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **assignedPlan**.
+<span data-ttu-id="0f78f-102">A propriedade **assignedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **assignedPlan**.</span><span class="sxs-lookup"><span data-stu-id="0f78f-102">The **assignedPlans** property of both the [user](user.md) entity and the [organization](organization.md) entity is a collection of **assignedPlan**.</span></span>
 
 
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="0f78f-103">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0f78f-103">Properties</span></span>
+| <span data-ttu-id="0f78f-104">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0f78f-104">Property</span></span>     | <span data-ttu-id="0f78f-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="0f78f-105">Type</span></span>   |<span data-ttu-id="0f78f-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f78f-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|A data e hora em que o plano foi atribuído; por exemplo: 2013-01-02T19:32:30Z. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
-|service|Cadeia de caracteres|O nome do serviço; por exemplo, "Exchange".|
-|servicePlanId|Guid|Um GUID que identifica o plano de serviço.|
+|<span data-ttu-id="0f78f-107">assignedDateTime</span><span class="sxs-lookup"><span data-stu-id="0f78f-107">assignedDateTime</span></span>|<span data-ttu-id="0f78f-108">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0f78f-108">DateTimeOffset</span></span>|<span data-ttu-id="0f78f-p101">A data e hora em que o plano foi atribuído; por exemplo: 2013-01-02T19:32:30Z. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="0f78f-p101">The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="0f78f-112">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="0f78f-112">capabilityStatus</span></span>|<span data-ttu-id="0f78f-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0f78f-113">String</span></span>|<span data-ttu-id="0f78f-114">Por exemplo, “Enabled”.</span><span class="sxs-lookup"><span data-stu-id="0f78f-114">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="0f78f-115">service</span><span class="sxs-lookup"><span data-stu-id="0f78f-115">service</span></span>|<span data-ttu-id="0f78f-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0f78f-116">String</span></span>|<span data-ttu-id="0f78f-117">O nome do serviço; por exemplo, "Exchange".</span><span class="sxs-lookup"><span data-stu-id="0f78f-117">The name of the service; for example, “Exchange”.</span></span>|
+|<span data-ttu-id="0f78f-118">servicePlanId</span><span class="sxs-lookup"><span data-stu-id="0f78f-118">servicePlanId</span></span>|<span data-ttu-id="0f78f-119">Guid</span><span class="sxs-lookup"><span data-stu-id="0f78f-119">Guid</span></span>|<span data-ttu-id="0f78f-120">Um GUID que identifica o plano de serviço.</span><span class="sxs-lookup"><span data-stu-id="0f78f-120">A GUID that identifies the service plan.</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="0f78f-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0f78f-121">JSON representation</span></span>
 
-## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="0f78f-122">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="0f78f-122">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
