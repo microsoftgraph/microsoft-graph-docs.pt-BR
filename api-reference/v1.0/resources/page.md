@@ -1,10 +1,10 @@
-# <a name="page-resource-type"></a>Tipo de recurso page
+# <a name="page-resource-type"></a><span data-ttu-id="018a5-101">Tipo de recurso page</span><span class="sxs-lookup"><span data-stu-id="018a5-101">page resource type</span></span>
 
-Uma página em um bloco de anotações do OneNote.
+<span data-ttu-id="018a5-102">Uma página em um bloco de anotações do OneNote.</span><span class="sxs-lookup"><span data-stu-id="018a5-102">A page in a OneNote notebook.</span></span>
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="018a5-103">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="018a5-103">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+<span data-ttu-id="018a5-104">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="018a5-104">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -31,36 +31,35 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
-## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## <a name="properties"></a><span data-ttu-id="018a5-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="018a5-105">Properties</span></span>
+| <span data-ttu-id="018a5-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="018a5-106">Property</span></span>     | <span data-ttu-id="018a5-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="018a5-107">Type</span></span>   |<span data-ttu-id="018a5-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="018a5-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|content|Fluxo|O conteúdo HTML da página.|
-|contentUrl|String|A URL do conteúdo HTML da página.  Somente leitura.|
-|createdByAppId|String|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
-|createdDateTime|DateTimeOffset|A data e a hora da criação da página. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|id|String|O identificador exclusivo da página.  Somente leitura.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da página. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|nível|Int32|O nível de recuo da página. Somente leitura.|
-|links|[PageLinks](pagelinks.md)|Links para abrir a página. O link `oneNoteClientURL` abre a página no cliente nativo do OneNote se ele estiver instalado. O link `oneNoteWebUrl` abre a página no OneNote Online. Somente leitura.|
-|ordem|Int32|A ordem da página dentro da seção pai dela. Somente leitura.|
-|self|String|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
-|title|String|O título da página. |
+|<span data-ttu-id="018a5-109">content</span><span class="sxs-lookup"><span data-stu-id="018a5-109">content</span></span>|<span data-ttu-id="018a5-110">Fluxo</span><span class="sxs-lookup"><span data-stu-id="018a5-110">Stream</span></span>|<span data-ttu-id="018a5-111">O conteúdo HTML da página.</span><span class="sxs-lookup"><span data-stu-id="018a5-111">The page's HTML content.</span></span>|
+|<span data-ttu-id="018a5-112">contentUrl</span><span class="sxs-lookup"><span data-stu-id="018a5-112">contentUrl</span></span>|<span data-ttu-id="018a5-113">String</span><span class="sxs-lookup"><span data-stu-id="018a5-113">String</span></span>|<span data-ttu-id="018a5-p101">A URL do conteúdo HTML da página.  Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p101">The URL for the page's HTML content.  Read-only.</span></span>|
+|<span data-ttu-id="018a5-116">createdByAppId</span><span class="sxs-lookup"><span data-stu-id="018a5-116">createdByAppId</span></span>|<span data-ttu-id="018a5-117">String</span><span class="sxs-lookup"><span data-stu-id="018a5-117">String</span></span>|<span data-ttu-id="018a5-p102">O identificador exclusivo do aplicativo que criou a página. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p102">The unique identifier of the application that created the page. Read-only.</span></span>|
+|<span data-ttu-id="018a5-120">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="018a5-120">createdDateTime</span></span>|<span data-ttu-id="018a5-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="018a5-121">DateTimeOffset</span></span>|<span data-ttu-id="018a5-p103">A data e a hora da criação da página. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p103">The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.</span></span>|
+|<span data-ttu-id="018a5-126">id</span><span class="sxs-lookup"><span data-stu-id="018a5-126">id</span></span>|<span data-ttu-id="018a5-127">String</span><span class="sxs-lookup"><span data-stu-id="018a5-127">String</span></span>|<span data-ttu-id="018a5-p104">O identificador exclusivo da página.  Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p104">The unique identifier of the page.  Read-only.</span></span>|
+|<span data-ttu-id="018a5-130">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="018a5-130">lastModifiedDateTime</span></span>|<span data-ttu-id="018a5-131">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="018a5-131">DateTimeOffset</span></span>|<span data-ttu-id="018a5-p105">A data e a hora da última modificação da página. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p105">The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.</span></span>|
+|<span data-ttu-id="018a5-136">nível</span><span class="sxs-lookup"><span data-stu-id="018a5-136">level</span></span>|<span data-ttu-id="018a5-137">Int32</span><span class="sxs-lookup"><span data-stu-id="018a5-137">Int32</span></span>|<span data-ttu-id="018a5-p106">O nível de recuo da página. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p106">The indentation level of the page. Read-only.</span></span>|
+|<span data-ttu-id="018a5-140">links</span><span class="sxs-lookup"><span data-stu-id="018a5-140">links</span></span>|[<span data-ttu-id="018a5-141">PageLinks</span><span class="sxs-lookup"><span data-stu-id="018a5-141">PageLinks</span></span>](pagelinks.md)|<span data-ttu-id="018a5-p107">Links para abrir a página. O link `oneNoteClientURL` abre a página no cliente nativo do OneNote se ele estiver instalado. O link `oneNoteWebUrl` abre a página no OneNote Online. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p107">Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote Online. Read-only.</span></span>|
+|<span data-ttu-id="018a5-146">ordem</span><span class="sxs-lookup"><span data-stu-id="018a5-146">order</span></span>|<span data-ttu-id="018a5-147">Int32</span><span class="sxs-lookup"><span data-stu-id="018a5-147">Int32</span></span>|<span data-ttu-id="018a5-p108">A ordem da página dentro da seção pai dela. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p108">The order of the page within its parent section. Read-only.</span></span>|
+|<span data-ttu-id="018a5-150">self</span><span class="sxs-lookup"><span data-stu-id="018a5-150">self</span></span>|<span data-ttu-id="018a5-151">String</span><span class="sxs-lookup"><span data-stu-id="018a5-151">String</span></span>|<span data-ttu-id="018a5-p109">O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p109">The endpoint where you can get details about the page. Read-only.</span></span>|
+|<span data-ttu-id="018a5-154">title</span><span class="sxs-lookup"><span data-stu-id="018a5-154">title</span></span>|<span data-ttu-id="018a5-155">String</span><span class="sxs-lookup"><span data-stu-id="018a5-155">String</span></span>|<span data-ttu-id="018a5-156">O título da página.</span><span class="sxs-lookup"><span data-stu-id="018a5-156">The title of the page.</span></span> |
 
-## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+## <a name="relationships"></a><span data-ttu-id="018a5-157">Relações</span><span class="sxs-lookup"><span data-stu-id="018a5-157">Relationships</span></span>
+| <span data-ttu-id="018a5-158">Relação</span><span class="sxs-lookup"><span data-stu-id="018a5-158">Relationship</span></span> | <span data-ttu-id="018a5-159">Tipo</span><span class="sxs-lookup"><span data-stu-id="018a5-159">Type</span></span>   |<span data-ttu-id="018a5-160">Descrição</span><span class="sxs-lookup"><span data-stu-id="018a5-160">Description</span></span>|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
-|parentSection|[Section](section.md)|A seção que contém a página. Somente leitura.|
+|<span data-ttu-id="018a5-161">parentNotebook</span><span class="sxs-lookup"><span data-stu-id="018a5-161">parentNotebook</span></span>|[<span data-ttu-id="018a5-162">Notebook</span><span class="sxs-lookup"><span data-stu-id="018a5-162">Notebook</span></span>](notebook.md)|<span data-ttu-id="018a5-p110">O bloco de anotações que contém a página.  Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p110">The notebook that contains the page.  Read-only.</span></span>|
+|<span data-ttu-id="018a5-165">parentSection</span><span class="sxs-lookup"><span data-stu-id="018a5-165">parentSection</span></span>|[<span data-ttu-id="018a5-166">Section</span><span class="sxs-lookup"><span data-stu-id="018a5-166">Section</span></span>](section.md)|<span data-ttu-id="018a5-p111">A seção que contém a página. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="018a5-p111">The section that contains the page. Read-only.</span></span>|
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="018a5-169">Métodos</span><span class="sxs-lookup"><span data-stu-id="018a5-169">Methods</span></span>
 
-| Método           | Tipo de retorno    |Descrição|
+| <span data-ttu-id="018a5-170">Método</span><span class="sxs-lookup"><span data-stu-id="018a5-170">Method</span></span>           | <span data-ttu-id="018a5-171">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="018a5-171">Return Type</span></span>    |<span data-ttu-id="018a5-172">Descrição</span><span class="sxs-lookup"><span data-stu-id="018a5-172">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get page](../api/page_get.md) | [Página](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar o conteúdo da página](../api/page_update.md) | None |Atualizar o conteúdo HTML da página. |
-|[Excluir página](../api/page_delete.md) | None |Exclua a página. |
-|[copyToSection](../api/page_copytosection.md)| None |Copia a página para uma seção específica.|
-
+|[<span data-ttu-id="018a5-173">Get page</span><span class="sxs-lookup"><span data-stu-id="018a5-173">Get page</span></span>](../api/page_get.md) | [<span data-ttu-id="018a5-174">Página</span><span class="sxs-lookup"><span data-stu-id="018a5-174">Page</span></span>](page.md) |<span data-ttu-id="018a5-175">Leia as propriedades e as relações da página.</span><span class="sxs-lookup"><span data-stu-id="018a5-175">Read the properties and relationships of the page.</span></span>|
+|[<span data-ttu-id="018a5-176">Atualizar o conteúdo da página</span><span class="sxs-lookup"><span data-stu-id="018a5-176">Update page content</span></span>](../api/page_update.md) | <span data-ttu-id="018a5-177">None</span><span class="sxs-lookup"><span data-stu-id="018a5-177">None</span></span> |<span data-ttu-id="018a5-178">Atualizar o conteúdo HTML da página.</span><span class="sxs-lookup"><span data-stu-id="018a5-178">Update the HTML content of the page.</span></span> |
+|[<span data-ttu-id="018a5-179">Excluir página</span><span class="sxs-lookup"><span data-stu-id="018a5-179">Delete page</span></span>](../api/page_delete.md) | <span data-ttu-id="018a5-180">None</span><span class="sxs-lookup"><span data-stu-id="018a5-180">None</span></span> |<span data-ttu-id="018a5-181">Exclua a página.</span><span class="sxs-lookup"><span data-stu-id="018a5-181">Delete the page.</span></span> |
+|[<span data-ttu-id="018a5-182">copyToSection</span><span class="sxs-lookup"><span data-stu-id="018a5-182">copyToSection</span></span>](../api/page_copytosection.md)| <span data-ttu-id="018a5-183">None</span><span class="sxs-lookup"><span data-stu-id="018a5-183">None</span></span> |<span data-ttu-id="018a5-184">Copia a página para uma seção específica.</span><span class="sxs-lookup"><span data-stu-id="018a5-184">Copies the page to a specific section.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

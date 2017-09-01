@@ -1,38 +1,41 @@
-# <a name="worksheetcollection-add"></a><span data-ttu-id="587fc-101">WorksheetCollection: add</span><span class="sxs-lookup"><span data-stu-id="587fc-101">WorksheetCollection: add</span></span>
+# <a name="worksheetcollection-add"></a><span data-ttu-id="19668-101">WorksheetCollection: add</span><span class="sxs-lookup"><span data-stu-id="19668-101">WorksheetCollection: add</span></span>
 
-<span data-ttu-id="587fc-p101">Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você quiser ativar a planilha recém-adicionada, chame “.activate()” nela.</span><span class="sxs-lookup"><span data-stu-id="587fc-p101">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="587fc-105">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="587fc-105">Prerequisites</span></span>
-<span data-ttu-id="587fc-106">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="587fc-106">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="19668-p101">Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. Se você quiser ativar a planilha recém-adicionada, chame “.activate()” nela.</span><span class="sxs-lookup"><span data-stu-id="19668-p101">Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.</span></span>
+## <a name="permissions"></a><span data-ttu-id="19668-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="19668-105">Permissions</span></span>
+<span data-ttu-id="19668-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="19668-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="587fc-107">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="587fc-107">Files.ReadWrite</span></span>
+|<span data-ttu-id="19668-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="19668-108">Permission type</span></span>      | <span data-ttu-id="19668-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="19668-109">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="19668-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="19668-110">Delegated (work or school account)</span></span> | <span data-ttu-id="19668-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="19668-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="19668-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="19668-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="19668-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="19668-113">Not supported.</span></span>    |
+|<span data-ttu-id="19668-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="19668-114">Application</span></span> | <span data-ttu-id="19668-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="19668-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="587fc-108">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="587fc-108">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="19668-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="19668-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="587fc-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="587fc-109">Request headers</span></span>
-| <span data-ttu-id="587fc-110">Nome</span><span class="sxs-lookup"><span data-stu-id="587fc-110">Name</span></span>       | <span data-ttu-id="587fc-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="587fc-111">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="19668-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="19668-117">Request headers</span></span>
+| <span data-ttu-id="19668-118">Nome</span><span class="sxs-lookup"><span data-stu-id="19668-118">Name</span></span>       | <span data-ttu-id="19668-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="19668-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="587fc-112">Autorização</span><span class="sxs-lookup"><span data-stu-id="587fc-112">Authorization</span></span>  | <span data-ttu-id="587fc-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="587fc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="19668-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="19668-120">Authorization</span></span>  | <span data-ttu-id="19668-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="19668-p103">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="19668-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="19668-123">Request body</span></span>
+<span data-ttu-id="19668-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="19668-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="587fc-115">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="587fc-115">Request body</span></span>
-<span data-ttu-id="587fc-116">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="587fc-116">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="587fc-117">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="587fc-117">Parameter</span></span>    | <span data-ttu-id="587fc-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="587fc-118">Type</span></span>   |<span data-ttu-id="587fc-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="587fc-119">Description</span></span>|
+| <span data-ttu-id="19668-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="19668-125">Parameter</span></span>    | <span data-ttu-id="19668-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="19668-126">Type</span></span>   |<span data-ttu-id="19668-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="19668-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="587fc-120">name</span><span class="sxs-lookup"><span data-stu-id="587fc-120">name</span></span>|<span data-ttu-id="587fc-121">string</span><span class="sxs-lookup"><span data-stu-id="587fc-121">string</span></span>|<span data-ttu-id="587fc-p103">Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.</span><span class="sxs-lookup"><span data-stu-id="587fc-p103">Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.</span></span>|
+|<span data-ttu-id="19668-128">name</span><span class="sxs-lookup"><span data-stu-id="19668-128">name</span></span>|<span data-ttu-id="19668-129">string</span><span class="sxs-lookup"><span data-stu-id="19668-129">string</span></span>|<span data-ttu-id="19668-p104">Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.</span><span class="sxs-lookup"><span data-stu-id="19668-p104">Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="587fc-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="587fc-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="19668-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="19668-134">Response</span></span>
 
-<span data-ttu-id="587fc-127">Se bem-sucedido, este método retorna um código de resposta `200, OK` e um objeto [Worksheet](../resources/worksheet.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="587fc-127">If successful, this method returns `200, OK` response code and [Worksheet](../resources/worksheet.md) object in the response body.</span></span>
+<span data-ttu-id="19668-135">Se bem-sucedido, este método retorna um código de resposta `200, OK` e um objeto [Worksheet](../resources/worksheet.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="19668-135">If successful, this method returns `200, OK` response code and [Worksheet](../resources/worksheet.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="587fc-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="587fc-128">Example</span></span>
-<span data-ttu-id="587fc-129">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="587fc-129">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="587fc-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="587fc-130">Request</span></span>
-<span data-ttu-id="587fc-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="587fc-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="19668-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="19668-136">Example</span></span>
+<span data-ttu-id="19668-137">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="19668-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="19668-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="19668-138">Request</span></span>
+<span data-ttu-id="19668-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="19668-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "worksheetcollection_add"
@@ -47,8 +50,8 @@ Content-length: 26
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="587fc-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="587fc-132">Response</span></span>
-<span data-ttu-id="587fc-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="587fc-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="19668-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="19668-140">Response</span></span>
+<span data-ttu-id="19668-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="19668-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

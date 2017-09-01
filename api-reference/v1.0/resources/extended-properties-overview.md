@@ -1,67 +1,65 @@
-# <a name="outlook-extended-properties-overview"></a>Visão geral das propriedades estendidas do Outlook
+# <a name="outlook-extended-properties-overview"></a><span data-ttu-id="c6d59-101">Visão geral das propriedades estendidas do Outlook</span><span class="sxs-lookup"><span data-stu-id="c6d59-101">Outlook extended properties overview</span></span>
 
-Propriedades estendidas permitem armazenar dados personalizados e servem especificamente como um mecanismo de fallback para os aplicativos acessarem dados personalizados de propriedades MAPI do Outlook quando essas propriedades _ainda não estão expostas nos metadados da API do Microsoft Graph_. Você pode usar a API REST de propriedades estendidas para armazenar ou obter esses dados personalizados nos seguintes recursos de usuário:
+<span data-ttu-id="c6d59-p101">Propriedades estendidas permitem armazenar dados personalizados e servem especificamente como um mecanismo de fallback para os aplicativos acessarem dados personalizados de propriedades MAPI do Outlook quando essas propriedades _ainda não estão expostas nos metadados da API do Microsoft Graph_. Você pode usar a API REST de propriedades estendidas para armazenar ou obter esses dados personalizados nos seguintes recursos de usuário:</span><span class="sxs-lookup"><span data-stu-id="c6d59-p101">Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_. You can use extended properties REST API to store or get such custom data in the following user resources:</span></span>
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
-- [calendar](../resources/calendar.md)
-- [contact](../resources/contact.md)
-- [contactFolder](../resources/contactfolder.md) 
+- [<span data-ttu-id="c6d59-104">message</span><span class="sxs-lookup"><span data-stu-id="c6d59-104">message</span></span>](../resources/message.md)
+- [<span data-ttu-id="c6d59-105">mailFolder</span><span class="sxs-lookup"><span data-stu-id="c6d59-105">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="c6d59-106">event</span><span class="sxs-lookup"><span data-stu-id="c6d59-106">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="c6d59-107">calendar</span><span class="sxs-lookup"><span data-stu-id="c6d59-107">calendar</span></span>](../resources/calendar.md)
+- [<span data-ttu-id="c6d59-108">contact</span><span class="sxs-lookup"><span data-stu-id="c6d59-108">contact</span></span>](../resources/contact.md)
+- [<span data-ttu-id="c6d59-109">contactFolder</span><span class="sxs-lookup"><span data-stu-id="c6d59-109">contactFolder</span></span>](../resources/contactfolder.md) 
 
-Ou, nos seguintes recursos de grupo do Office 365:
+<span data-ttu-id="c6d59-110">Ou, nos seguintes recursos de grupo do Office 365:</span><span class="sxs-lookup"><span data-stu-id="c6d59-110">Or, in the following Office 365 group resources:</span></span>
 
-- grupo [event](../resources/event.md)
-- grupo [calendar](../resources/calendar.md)
-- grupo [post](../resources/post.md) 
+- <span data-ttu-id="c6d59-111">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="c6d59-111">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="c6d59-112">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="c6d59-112">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="c6d59-113">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="c6d59-113">group [post](../resources/post.md)</span></span> 
 
-## <a name="use-extended-properties-or-open-extensions"></a>Usar propriedades estendidas ou extensões abertas?
+## <a name="use-extended-properties-or-open-extensions"></a><span data-ttu-id="c6d59-114">Usar propriedades estendidas ou extensões abertas?</span><span class="sxs-lookup"><span data-stu-id="c6d59-114">Use extended properties or open extensions?</span></span>
 
-Nos cenários mais comuns, você deve ser capaz de usar extensões abertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conhecidas como extensões de dados do Office 365) para armazenar e acessar dados personalizados de instâncias de recursos na caixa de correio do usuário. Use propriedades estendidas somente se você precisar acessar dados personalizados para as propriedades MAPI do Outlook que ainda não estão expostas nos [metadados da API do Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/overview/call_api). 
+<span data-ttu-id="c6d59-p102">Nos cenários mais comuns, você deve ser capaz de usar extensões abertas (representadas por [openTypeExtension](../resources/opentypeextension.md), anteriormente conhecidas como extensões de dados do Office 365) para armazenar e acessar dados personalizados de instâncias de recursos na caixa de correio do usuário. Use propriedades estendidas somente se você precisar acessar dados personalizados para as propriedades MAPI do Outlook que ainda não estão expostas nos [metadados da API do Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs/overview/call_api).</span><span class="sxs-lookup"><span data-stu-id="c6d59-p102">In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you need to access custom data for Outlook MAPI properties that are not already exposed in the [Microsoft Graph API metadata](http://developer.microsoft.com/en-us/graph/docs/overview/call_api).</span></span> 
 
-## <a name="types-of-extended-properties"></a>Tipos de propriedades estendidas
+## <a name="types-of-extended-properties"></a><span data-ttu-id="c6d59-117">Tipos de propriedades estendidas</span><span class="sxs-lookup"><span data-stu-id="c6d59-117">Types of extended properties</span></span>
 
-Dependendo se você pretende armazenar um único valor ou vários valores (do mesmo tipo) em uma propriedade estendida, pode criar uma propriedade estendida como uma [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) ou uma [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md).
+<span data-ttu-id="c6d59-118">Dependendo se você pretende armazenar um único valor ou vários valores (do mesmo tipo) em uma propriedade estendida, pode criar uma propriedade estendida como uma [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md) ou uma [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md).</span><span class="sxs-lookup"><span data-stu-id="c6d59-118">Depending on whether you intend to store a single or multiple values (of the same type) in an extended property, you can create an extended property as a [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md), or [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md).</span></span>
 
-Cada um desses tipos identifica a propriedade por sua **id** e armazena dados em **value**. 
+<span data-ttu-id="c6d59-119">Cada um desses tipos identifica a propriedade por sua **id** e armazena dados em **value**.</span><span class="sxs-lookup"><span data-stu-id="c6d59-119">Each of these types identifies the property by its **id** and stores data in **value**.</span></span> 
 
-Você pode usar **id** para obter uma instância de recurso específica em conjunto com essa propriedade estendida ou para filtrar em uma propriedade estendida de valor único para obter todas as instâncias que possuem essa propriedade. 
+<span data-ttu-id="c6d59-120">Você pode usar **id** para obter uma instância de recurso específica em conjunto com essa propriedade estendida ou para filtrar em uma propriedade estendida de valor único para obter todas as instâncias que possuem essa propriedade.</span><span class="sxs-lookup"><span data-stu-id="c6d59-120">You can use **id** to get a specific resource instance together with that extended property, or filter on a single-value extended property to get all the instances that have that property.</span></span> 
 
-**Observação** Não é possível usar a API REST para obter todas as propriedades estendidas de uma instância específica em uma única chamada.
+<span data-ttu-id="c6d59-121">**Observação** Não é possível usar a API REST para obter todas as propriedades estendidas de uma instância específica em uma única chamada.</span><span class="sxs-lookup"><span data-stu-id="c6d59-121">**Note** You cannot use the REST API to get all the extended properties of a specific instance in one call.</span></span>
   
 
-### <a name="id-formats"></a>Formatos de id
+### <a name="id-formats"></a><span data-ttu-id="c6d59-122">Formatos de id</span><span class="sxs-lookup"><span data-stu-id="c6d59-122">id Formats</span></span>
 
-Ao criar uma propriedade estendida de valor único ou de vários valores, você pode especificar a **id** em um de dois formatos, com base em um nome de cadeia de caracteres ou em um identificador numérico e como base no tipo real dos valores da propriedade. Como propriedades estendidas interoperam na maioria dos casos com propriedades MAPI definidas não expostas nos metadados da API do Microsoft Graph, para manter a simplicidade, o formato escolhido deve refletir se a propriedade MAPI correspondente usa um valor numérico ou uma cadeia de caracteres em seu [identificador de propriedade MAPI](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx). Você pode encontrar informações sobre o mapeamento de uma propriedade estendida para uma propriedade MAPI existente, como o identificador de propriedade e o GUID, na publicação da Microsoft Corporation \[MS OXPROPS\], ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).
+<span data-ttu-id="c6d59-p103">Ao criar uma propriedade estendida de valor único ou de vários valores, você pode especificar a **id** em um de dois formatos, com base em um nome de cadeia de caracteres ou em um identificador numérico e como base no tipo real dos valores da propriedade. Como propriedades estendidas interoperam na maioria dos casos com propriedades MAPI definidas não expostas nos metadados da API do Microsoft Graph, para manter a simplicidade, o formato escolhido deve refletir se a propriedade MAPI correspondente usa um valor numérico ou uma cadeia de caracteres em seu [identificador de propriedade MAPI](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx). Você pode encontrar informações sobre o mapeamento de uma propriedade estendida para uma propriedade MAPI existente, como o identificador de propriedade e o GUID, na publicação da Microsoft Corporation \[MS OXPROPS\], ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="c6d59-p103">When creating a single-value or multi-value extended property, you can specify the **id** in one of two formats, based on either a string name or numeric identifier, and on the actual type of value or values of the property. Since extended properties are in most cases inter-operating with defined MAPI properties not exposed in the Microsoft Graph API metadata, for simplicity, the format you choose should reflect whether the corresponding MAPI property uses a character string or numeric value in its [MAPI property identifier](https://msdn.microsoft.com/en-us/library/office/cc815528.aspx). You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID, in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/en-us/library/cc433490%28v=exchg.80%29.aspx).</span></span>
 
-**Observação** Depois de escolher um formato para a **id**, você deve acessar essa propriedade estendida apenas com esse formato.
+<span data-ttu-id="c6d59-126">**Observação** Depois de escolher um formato para a **id**, você deve acessar essa propriedade estendida apenas com esse formato.</span><span class="sxs-lookup"><span data-stu-id="c6d59-126">**Note** After you have chosen one format for the **id**, you should access that extended property by only that format.</span></span>
 
 
-**Formatos de id válidos para propriedades estendidas de valor único**
+<span data-ttu-id="c6d59-127">**Formatos de id válidos para propriedades estendidas de valor único**</span><span class="sxs-lookup"><span data-stu-id="c6d59-127">**Valid id formats for single-value extended properties**</span></span>
 
-|**Formato**|**Exemplo**|**Descrição**|
+|<span data-ttu-id="c6d59-128">**Formato**</span><span class="sxs-lookup"><span data-stu-id="c6d59-128">**Format**</span></span>|<span data-ttu-id="c6d59-129">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="c6d59-129">**Example**</span></span>|<span data-ttu-id="c6d59-130">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="c6d59-130">**Description**</span></span>|
 |:---------|:----------|:--------------|
-| "*{type} {guid} **Nome** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade pelo namespace (o GUID) ao qual ela pertence e por um nome.         |
-| "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifica uma propriedade pelo namespace (o GUID) ao qual ela pertence e por um identificador.  |
+| <span data-ttu-id="c6d59-131">"*{type} {guid} **Nome** {name}*"</span><span class="sxs-lookup"><span data-stu-id="c6d59-131">"*{type} {guid} **Name** {name}*"</span></span> | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | <span data-ttu-id="c6d59-132">Identifica uma propriedade pelo namespace (o GUID) ao qual ela pertence e por um nome.</span><span class="sxs-lookup"><span data-stu-id="c6d59-132">Identifies a property by the namespace (the GUID) it belongs to, and a name.</span></span>         |
+| <span data-ttu-id="c6d59-133">"*{type} {guid} **Id** {id}*"</span><span class="sxs-lookup"><span data-stu-id="c6d59-133">"*{type} {guid} **Id** {id}*"</span></span>     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | <span data-ttu-id="c6d59-134">Identifica uma propriedade pelo namespace (o GUID) ao qual ela pertence e por um identificador.</span><span class="sxs-lookup"><span data-stu-id="c6d59-134">Identifies a property by the namespace (the GUID) it belongs to, and an identifier.</span></span>  |
 
+<span data-ttu-id="c6d59-135">**Formatos de id válidos para propriedades estendidas de vários valores**</span><span class="sxs-lookup"><span data-stu-id="c6d59-135">**Valid id formats for multi-value extended properties**</span></span>
 
-**Formatos de id válidos para propriedades estendidas de vários valores**
-
-|**Formato**|**Exemplo**|**Descrição**|
+|<span data-ttu-id="c6d59-136">**Formato**</span><span class="sxs-lookup"><span data-stu-id="c6d59-136">**Format**</span></span>|<span data-ttu-id="c6d59-137">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="c6d59-137">**Example**</span></span>|<span data-ttu-id="c6d59-138">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="c6d59-138">**Description**</span></span>|
 |:---------|:----------|:--------------|
-| "*{type} {guid} **Nome** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade pelo namespace (o GUID) e por um nome.         |
-| "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifica uma propriedade pelo namespace (o GUID) e por um identificador.   |
+| <span data-ttu-id="c6d59-139">"*{type} {guid} **Nome** {name}*"</span><span class="sxs-lookup"><span data-stu-id="c6d59-139">"*{type} {guid} **Name** {name}*"</span></span> | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | <span data-ttu-id="c6d59-140">Identifica uma propriedade pelo namespace (o GUID) e por um nome.</span><span class="sxs-lookup"><span data-stu-id="c6d59-140">Identifies a property by namespace (the GUID) and name.</span></span>         |
+| <span data-ttu-id="c6d59-141">"*{type} {guid} **Id** {id}*"</span><span class="sxs-lookup"><span data-stu-id="c6d59-141">"*{type} {guid} **Id** {id}*"</span></span>     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | <span data-ttu-id="c6d59-142">Identifica uma propriedade pelo namespace (o GUID) e por um identificador.</span><span class="sxs-lookup"><span data-stu-id="c6d59-142">Identifies a property by namespace (the GUID) and identifier.</span></span>   |
 
-
-### <a name="rest-api-operations"></a>Operações da API REST
+### <a name="rest-api-operations"></a><span data-ttu-id="c6d59-143">Operações da API REST</span><span class="sxs-lookup"><span data-stu-id="c6d59-143">REST API operations</span></span>
  
-Operações de propriedades estendidas de valor único:
+<span data-ttu-id="c6d59-144">Operações de propriedades estendidas de valor único:</span><span class="sxs-lookup"><span data-stu-id="c6d59-144">Single-value extended property operations:</span></span>
 
-- [Criar uma propriedade estendida em uma instância de recurso nova ou existente](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
-- [Obter uma instância de recurso, ou uma coleção delas, com uma propriedade estendida usando `$expand` ou `$filter`](../api/singlevaluelegacyextendedproperty_get.md)
+- [<span data-ttu-id="c6d59-145">Criar uma propriedade estendida em uma instância de recurso nova ou existente</span><span class="sxs-lookup"><span data-stu-id="c6d59-145">Create an extended property in a new or existing resource instance</span></span>](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md)
+- [<span data-ttu-id="c6d59-146">Obter uma instância de recurso, ou uma coleção delas, com uma propriedade estendida usando `$expand` ou `$filter`</span><span class="sxs-lookup"><span data-stu-id="c6d59-146">Get one or a collection of resource instances with an extended property using `$expand` or `$filter`</span></span>](../api/singlevaluelegacyextendedproperty_get.md)
 
-Operações de propriedades estendidas de vários valores:
+<span data-ttu-id="c6d59-147">Operações de propriedades estendidas de vários valores:</span><span class="sxs-lookup"><span data-stu-id="c6d59-147">Multi-value extended property operations:</span></span>
 
-- [Criar uma propriedade estendida em uma instância de recurso nova ou existente](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
-- [Obter uma instância de recurso com uma propriedade estendida usando `$expand`](../api/multivaluelegacyextendedproperty_get.md).
+- [<span data-ttu-id="c6d59-148">Criar uma propriedade estendida em uma instância de recurso nova ou existente</span><span class="sxs-lookup"><span data-stu-id="c6d59-148">Create an extended property in a new or existing resource instance</span></span>](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md)
+- <span data-ttu-id="c6d59-149">[Obter uma instância de recurso com uma propriedade estendida usando `$expand`](../api/multivaluelegacyextendedproperty_get.md).</span><span class="sxs-lookup"><span data-stu-id="c6d59-149">[Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty_get.md)</span></span>
 

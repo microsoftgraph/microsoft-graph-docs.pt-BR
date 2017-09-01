@@ -1,39 +1,42 @@
-# <a name="chart-setdata"></a><span data-ttu-id="d82c9-101">Chart: setData</span><span class="sxs-lookup"><span data-stu-id="d82c9-101">Chart: setData</span></span>
+# <a name="chart-setdata"></a><span data-ttu-id="d2cb3-101">Chart: setData</span><span class="sxs-lookup"><span data-stu-id="d2cb3-101">Chart: setData</span></span>
 
-<span data-ttu-id="d82c9-102">Redefine os dados de origem do gráfico.</span><span class="sxs-lookup"><span data-stu-id="d82c9-102">Resets the source data for the chart.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="d82c9-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d82c9-103">Prerequisites</span></span>
-<span data-ttu-id="d82c9-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="d82c9-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="d2cb3-102">Redefine os dados de origem do gráfico.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-102">Resets the source data for the chart.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2cb3-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="d2cb3-103">Permissions</span></span>
+<span data-ttu-id="d2cb3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d2cb3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="d82c9-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d82c9-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="d2cb3-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d2cb3-106">Permission type</span></span>      | <span data-ttu-id="d2cb3-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d2cb3-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="d2cb3-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d2cb3-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d2cb3-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="d2cb3-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="d2cb3-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d2cb3-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2cb3-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-111">Not supported.</span></span>    |
+|<span data-ttu-id="d2cb3-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d2cb3-112">Application</span></span> | <span data-ttu-id="d2cb3-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d82c9-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d82c9-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2cb3-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d2cb3-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/setData
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="d82c9-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d82c9-107">Request headers</span></span>
-| <span data-ttu-id="d82c9-108">Nome</span><span class="sxs-lookup"><span data-stu-id="d82c9-108">Name</span></span>       | <span data-ttu-id="d82c9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d82c9-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d2cb3-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d2cb3-115">Request headers</span></span>
+| <span data-ttu-id="d2cb3-116">Nome</span><span class="sxs-lookup"><span data-stu-id="d2cb3-116">Name</span></span>       | <span data-ttu-id="d2cb3-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2cb3-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="d82c9-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="d82c9-110">Authorization</span></span>  | <span data-ttu-id="d82c9-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d82c9-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d2cb3-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="d2cb3-118">Authorization</span></span>  | <span data-ttu-id="d2cb3-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="d2cb3-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d2cb3-121">Request body</span></span>
+<span data-ttu-id="d2cb3-122">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="d82c9-113">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d82c9-113">Request body</span></span>
-<span data-ttu-id="d82c9-114">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d82c9-114">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="d82c9-115">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="d82c9-115">Parameter</span></span>    | <span data-ttu-id="d82c9-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="d82c9-116">Type</span></span>   |<span data-ttu-id="d82c9-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="d82c9-117">Description</span></span>|
+| <span data-ttu-id="d2cb3-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="d2cb3-123">Parameter</span></span>    | <span data-ttu-id="d2cb3-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="d2cb3-124">Type</span></span>   |<span data-ttu-id="d2cb3-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2cb3-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d82c9-118">sourceData</span><span class="sxs-lookup"><span data-stu-id="d82c9-118">sourceData</span></span>|<span data-ttu-id="d82c9-119">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d82c9-119">string</span></span>|<span data-ttu-id="d82c9-120">O objeto Range que corresponde aos dados de origem.</span><span class="sxs-lookup"><span data-stu-id="d82c9-120">The Range object corresponding to the source data.</span></span>|
-|<span data-ttu-id="d82c9-121">seriesBy</span><span class="sxs-lookup"><span data-stu-id="d82c9-121">seriesBy</span></span>|<span data-ttu-id="d82c9-122">string</span><span class="sxs-lookup"><span data-stu-id="d82c9-122">string</span></span>|<span data-ttu-id="d82c9-p102">Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser um dos seguintes: automático (padrão), linhas ou colunas.  Os valores possíveis são: `Auto`, `Columns` e `Rows`.</span><span class="sxs-lookup"><span data-stu-id="d82c9-p102">Optional. Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns.  Possible values are: `Auto`, `Columns`, `Rows`.</span></span>|
+|<span data-ttu-id="d2cb3-126">sourceData</span><span class="sxs-lookup"><span data-stu-id="d2cb3-126">sourceData</span></span>|<span data-ttu-id="d2cb3-127">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d2cb3-127">string</span></span>|<span data-ttu-id="d2cb3-128">O objeto Range que corresponde aos dados de origem.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-128">The Range object corresponding to the source data.</span></span>|
+|<span data-ttu-id="d2cb3-129">seriesBy</span><span class="sxs-lookup"><span data-stu-id="d2cb3-129">seriesBy</span></span>|<span data-ttu-id="d2cb3-130">string</span><span class="sxs-lookup"><span data-stu-id="d2cb3-130">string</span></span>|<span data-ttu-id="d2cb3-p103">Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser um dos seguintes: automático (padrão), linhas ou colunas.  Os valores possíveis são: `Auto`, `Columns` e `Rows`.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-p103">Optional. Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns.  Possible values are: `Auto`, `Columns`, `Rows`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="d82c9-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="d82c9-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2cb3-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2cb3-135">Response</span></span>
 
-<span data-ttu-id="d82c9-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d82c9-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d2cb3-p104">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d82c9-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d82c9-130">Example</span></span>
-<span data-ttu-id="d82c9-131">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="d82c9-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="d82c9-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d82c9-132">Request</span></span>
-<span data-ttu-id="d82c9-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d82c9-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d2cb3-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d2cb3-138">Example</span></span>
+<span data-ttu-id="d2cb3-139">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="d2cb3-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d2cb3-140">Request</span></span>
+<span data-ttu-id="d2cb3-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_setdata"
@@ -49,8 +52,8 @@ Content-length: 70
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="d82c9-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="d82c9-134">Response</span></span>
-<span data-ttu-id="d82c9-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d82c9-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="d2cb3-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2cb3-142">Response</span></span>
+<span data-ttu-id="d2cb3-143">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d2cb3-143">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

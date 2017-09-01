@@ -1,39 +1,42 @@
-# <a name="chart-setposition"></a><span data-ttu-id="5c6ce-101">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="5c6ce-101">Chart: setPosition</span></span>
+# <a name="chart-setposition"></a><span data-ttu-id="676dd-101">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="676dd-101">Chart: setPosition</span></span>
 
-<span data-ttu-id="5c6ce-102">Posiciona o gráfico em relação às células na planilha.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-102">Positions the chart relative to cells on the worksheet.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="5c6ce-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5c6ce-103">Prerequisites</span></span>
-<span data-ttu-id="5c6ce-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="5c6ce-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="676dd-102">Posiciona o gráfico em relação às células na planilha.</span><span class="sxs-lookup"><span data-stu-id="676dd-102">Positions the chart relative to cells on the worksheet.</span></span>
+## <a name="permissions"></a><span data-ttu-id="676dd-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="676dd-103">Permissions</span></span>
+<span data-ttu-id="676dd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="676dd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="5c6ce-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5c6ce-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="676dd-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="676dd-106">Permission type</span></span>      | <span data-ttu-id="676dd-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="676dd-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="676dd-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="676dd-108">Delegated (work or school account)</span></span> | <span data-ttu-id="676dd-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="676dd-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="676dd-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="676dd-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="676dd-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="676dd-111">Not supported.</span></span>    |
+|<span data-ttu-id="676dd-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="676dd-112">Application</span></span> | <span data-ttu-id="676dd-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="676dd-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5c6ce-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5c6ce-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="676dd-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="676dd-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="5c6ce-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5c6ce-107">Request headers</span></span>
-| <span data-ttu-id="5c6ce-108">Nome</span><span class="sxs-lookup"><span data-stu-id="5c6ce-108">Name</span></span>       | <span data-ttu-id="5c6ce-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c6ce-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="676dd-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="676dd-115">Request headers</span></span>
+| <span data-ttu-id="676dd-116">Nome</span><span class="sxs-lookup"><span data-stu-id="676dd-116">Name</span></span>       | <span data-ttu-id="676dd-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="676dd-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="5c6ce-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="5c6ce-110">Authorization</span></span>  | <span data-ttu-id="5c6ce-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="676dd-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="676dd-118">Authorization</span></span>  | <span data-ttu-id="676dd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="676dd-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="676dd-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="676dd-121">Request body</span></span>
+<span data-ttu-id="676dd-122">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="676dd-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="5c6ce-113">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5c6ce-113">Request body</span></span>
-<span data-ttu-id="5c6ce-114">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-114">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="5c6ce-115">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="5c6ce-115">Parameter</span></span>    | <span data-ttu-id="5c6ce-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="5c6ce-116">Type</span></span>   |<span data-ttu-id="5c6ce-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c6ce-117">Description</span></span>|
+| <span data-ttu-id="676dd-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="676dd-123">Parameter</span></span>    | <span data-ttu-id="676dd-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="676dd-124">Type</span></span>   |<span data-ttu-id="676dd-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="676dd-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5c6ce-118">startCell</span><span class="sxs-lookup"><span data-stu-id="5c6ce-118">startCell</span></span>|<span data-ttu-id="5c6ce-119">string</span><span class="sxs-lookup"><span data-stu-id="5c6ce-119">string</span></span>|<span data-ttu-id="5c6ce-p102">A célula inicial. Esse é o local para o qual o gráfico será movido. A célula inicial é a célula superior esquerda ou direita, dependendo das configurações de exibição do usuário, da esquerda para a direita.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-p102">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
-|<span data-ttu-id="5c6ce-123">endCell</span><span class="sxs-lookup"><span data-stu-id="5c6ce-123">endCell</span></span>|<span data-ttu-id="5c6ce-124">string</span><span class="sxs-lookup"><span data-stu-id="5c6ce-124">string</span></span>|<span data-ttu-id="5c6ce-p103">Opcional. A célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-p103">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
+|<span data-ttu-id="676dd-126">startCell</span><span class="sxs-lookup"><span data-stu-id="676dd-126">startCell</span></span>|<span data-ttu-id="676dd-127">string</span><span class="sxs-lookup"><span data-stu-id="676dd-127">string</span></span>|<span data-ttu-id="676dd-p103">A célula inicial. Esse é o local para o qual o gráfico será movido. A célula inicial é a célula superior esquerda ou direita, dependendo das configurações de exibição do usuário, da esquerda para a direita.</span><span class="sxs-lookup"><span data-stu-id="676dd-p103">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
+|<span data-ttu-id="676dd-131">endCell</span><span class="sxs-lookup"><span data-stu-id="676dd-131">endCell</span></span>|<span data-ttu-id="676dd-132">string</span><span class="sxs-lookup"><span data-stu-id="676dd-132">string</span></span>|<span data-ttu-id="676dd-p104">Opcional. A célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.</span><span class="sxs-lookup"><span data-stu-id="676dd-p104">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="5c6ce-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c6ce-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="676dd-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="676dd-136">Response</span></span>
 
-<span data-ttu-id="5c6ce-p104">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-p104">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="676dd-p105">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="676dd-p105">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5c6ce-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5c6ce-131">Example</span></span>
-<span data-ttu-id="5c6ce-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="5c6ce-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5c6ce-133">Request</span></span>
-<span data-ttu-id="5c6ce-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="676dd-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="676dd-139">Example</span></span>
+<span data-ttu-id="676dd-140">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="676dd-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="676dd-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="676dd-141">Request</span></span>
+<span data-ttu-id="676dd-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="676dd-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "chart_setposition"
@@ -49,8 +52,8 @@ Content-length: 66
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="5c6ce-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c6ce-135">Response</span></span>
-<span data-ttu-id="5c6ce-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5c6ce-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="676dd-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="676dd-143">Response</span></span>
+<span data-ttu-id="676dd-144">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="676dd-144">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

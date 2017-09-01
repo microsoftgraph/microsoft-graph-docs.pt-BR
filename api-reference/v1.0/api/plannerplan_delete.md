@@ -1,34 +1,39 @@
-# <a name="delete-plannerplan"></a><span data-ttu-id="81a22-101">Excluir plannerPlan</span><span class="sxs-lookup"><span data-stu-id="81a22-101">Delete plannerPlan</span></span>
+# <a name="delete-plannerplan"></a><span data-ttu-id="d64b4-101">Excluir plannerPlan</span><span class="sxs-lookup"><span data-stu-id="d64b4-101">Delete plannerPlan</span></span>
 
-<span data-ttu-id="81a22-102">Exclua **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="81a22-102">Delete **plannerPlan**.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="81a22-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="81a22-103">Prerequisites</span></span>
-<span data-ttu-id="81a22-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="81a22-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="d64b4-102">Exclua **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="d64b4-102">Delete **plannerPlan**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d64b4-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="d64b4-103">Permissions</span></span>
+<span data-ttu-id="d64b4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d64b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-<span data-ttu-id="81a22-105">*Group.ReadWrite.All*</span><span class="sxs-lookup"><span data-stu-id="81a22-105">*Group.ReadWrite.All*</span></span>
-## <a name="http-request"></a><span data-ttu-id="81a22-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="81a22-106">HTTP request</span></span>
+|<span data-ttu-id="d64b4-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d64b4-106">Permission type</span></span>      | <span data-ttu-id="d64b4-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d64b4-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="d64b4-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d64b4-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d64b4-109">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d64b4-109">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d64b4-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d64b4-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d64b4-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d64b4-111">Not supported.</span></span>    |
+|<span data-ttu-id="d64b4-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d64b4-112">Application</span></span> | <span data-ttu-id="d64b4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d64b4-113">Not supported.</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="d64b4-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d64b4-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /planner/plans/<id>
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="81a22-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="81a22-107">Request headers</span></span>
-| <span data-ttu-id="81a22-108">Nome</span><span class="sxs-lookup"><span data-stu-id="81a22-108">Name</span></span>       | <span data-ttu-id="81a22-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="81a22-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d64b4-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d64b4-115">Request headers</span></span>
+| <span data-ttu-id="d64b4-116">Nome</span><span class="sxs-lookup"><span data-stu-id="d64b4-116">Name</span></span>       | <span data-ttu-id="d64b4-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="d64b4-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="81a22-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="81a22-110">Authorization</span></span>  | <span data-ttu-id="81a22-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="81a22-p101">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="81a22-113">If-Match</span><span class="sxs-lookup"><span data-stu-id="81a22-113">If-Match</span></span>  | <span data-ttu-id="81a22-p102">O último valor ETag conhecido do objeto **plannerPlan** a ser excluído. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="81a22-p102">Last known ETag value for the **plannerPlan** to be deleted. Required.</span></span>|
+| <span data-ttu-id="d64b4-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="d64b4-118">Authorization</span></span>  | <span data-ttu-id="d64b4-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d64b4-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d64b4-121">If-Match</span><span class="sxs-lookup"><span data-stu-id="d64b4-121">If-Match</span></span>  | <span data-ttu-id="d64b4-p103">O último valor ETag conhecido do objeto **plannerPlan** a ser excluído. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d64b4-p103">Last known ETag value for the **plannerPlan** to be deleted. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="81a22-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="81a22-116">Request body</span></span>
-<span data-ttu-id="81a22-117">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="81a22-117">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d64b4-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d64b4-124">Request body</span></span>
+<span data-ttu-id="d64b4-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d64b4-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="81a22-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="81a22-118">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d64b4-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="d64b4-126">Response</span></span>
 
-<span data-ttu-id="81a22-p103">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="81a22-p103">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="d64b4-p104">Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d64b4-p104">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="81a22-p104">Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="81a22-p104">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="d64b4-p105">Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="d64b4-p105">This method can return any of the [HTTP status codes](../../../concepts/errors.md). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner_overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="81a22-124">Exemplo</span><span class="sxs-lookup"><span data-stu-id="81a22-124">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="81a22-125">Solicitação</span><span class="sxs-lookup"><span data-stu-id="81a22-125">Request</span></span>
-<span data-ttu-id="81a22-126">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="81a22-126">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d64b4-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d64b4-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d64b4-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d64b4-133">Request</span></span>
+<span data-ttu-id="d64b4-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d64b4-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_plannerplan"
@@ -37,8 +42,8 @@ DELETE /planner/plans/<id>
 DELETE https://graph.microsoft.com/v1.0/planner/plans/<id>
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
-##### <a name="response"></a><span data-ttu-id="81a22-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="81a22-127">Response</span></span>
-<span data-ttu-id="81a22-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="81a22-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d64b4-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="d64b4-135">Response</span></span>
+<span data-ttu-id="d64b4-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d64b4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

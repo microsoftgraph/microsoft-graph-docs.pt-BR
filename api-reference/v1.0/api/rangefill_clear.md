@@ -1,12 +1,16 @@
-# <a name="rangefill-clear"></a><span data-ttu-id="f5eff-101">RangeFill: clear</span><span class="sxs-lookup"><span data-stu-id="f5eff-101">RangeFill: clear</span></span>
+# <a name="rangefill-clear"></a><span data-ttu-id="62053-101">RangeFill: clear</span><span class="sxs-lookup"><span data-stu-id="62053-101">RangeFill: clear</span></span>
 
-<span data-ttu-id="f5eff-102">Redefine o plano de fundo do intervalo.</span><span class="sxs-lookup"><span data-stu-id="f5eff-102">Resets the range background.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f5eff-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f5eff-103">Prerequisites</span></span>
-<span data-ttu-id="f5eff-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="f5eff-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="62053-102">Redefine o plano de fundo do intervalo.</span><span class="sxs-lookup"><span data-stu-id="62053-102">Resets the range background.</span></span>
+## <a name="permissions"></a><span data-ttu-id="62053-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="62053-103">Permissions</span></span>
+<span data-ttu-id="62053-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="62053-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="f5eff-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f5eff-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="62053-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="62053-106">Permission type</span></span>      | <span data-ttu-id="62053-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="62053-107">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="62053-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="62053-108">Delegated (work or school account)</span></span> | <span data-ttu-id="62053-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="62053-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="62053-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="62053-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62053-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="62053-111">Not supported.</span></span>    |
+|<span data-ttu-id="62053-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="62053-112">Application</span></span> | <span data-ttu-id="62053-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="62053-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f5eff-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f5eff-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="62053-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="62053-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/format/fill/clear
@@ -14,22 +18,21 @@ POST /workbook/worksheets/{id|name}/range(<address>)/format/fill/clear
 POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="f5eff-107">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f5eff-107">Request headers</span></span>
-| <span data-ttu-id="f5eff-108">Nome</span><span class="sxs-lookup"><span data-stu-id="f5eff-108">Name</span></span>       | <span data-ttu-id="f5eff-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5eff-109">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="62053-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="62053-115">Request headers</span></span>
+| <span data-ttu-id="62053-116">Nome</span><span class="sxs-lookup"><span data-stu-id="62053-116">Name</span></span>       | <span data-ttu-id="62053-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="62053-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="f5eff-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="f5eff-110">Authorization</span></span>  | <span data-ttu-id="f5eff-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f5eff-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="62053-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="62053-118">Authorization</span></span>  | <span data-ttu-id="62053-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="62053-p102">Bearer {token}. Required.</span></span> |
 
+## <a name="request-body"></a><span data-ttu-id="62053-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="62053-121">Request body</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="f5eff-113">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f5eff-113">Request body</span></span>
+## <a name="response"></a><span data-ttu-id="62053-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="62053-122">Response</span></span>
 
-## <a name="response"></a><span data-ttu-id="f5eff-114">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5eff-114">Response</span></span>
+<span data-ttu-id="62053-p103">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="62053-p103">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="f5eff-p102">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5eff-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
-
-## <a name="example"></a><span data-ttu-id="f5eff-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f5eff-117">Example</span></span>
-<span data-ttu-id="f5eff-118">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="f5eff-118">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="f5eff-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f5eff-119">Request</span></span>
-<span data-ttu-id="f5eff-120">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f5eff-120">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="62053-125">Exemplo</span><span class="sxs-lookup"><span data-stu-id="62053-125">Example</span></span>
+<span data-ttu-id="62053-126">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="62053-126">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="62053-127">Solicitação</span><span class="sxs-lookup"><span data-stu-id="62053-127">Request</span></span>
+<span data-ttu-id="62053-128">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="62053-128">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "rangefill_clear"
@@ -38,8 +41,8 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/fill/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="f5eff-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="f5eff-121">Response</span></span>
-<span data-ttu-id="f5eff-122">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f5eff-122">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="62053-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="62053-129">Response</span></span>
+<span data-ttu-id="62053-130">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="62053-130">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
