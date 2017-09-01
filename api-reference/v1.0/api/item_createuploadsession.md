@@ -7,12 +7,14 @@ Para carregar um arquivo usando uma sessão de upload, duas etapas são obrigat�
 1. [Criar uma sessão de upload](#create-an-upload-session)
 2. [Carregar bytes na sessão de upload](#upload-bytes-to-the-upload-session)
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-* Files.ReadWrite
-* Files.ReadWrite.All
-* Sites.ReadWrite.All
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
+|Aplicativo | Sites.ReadWrite.All |
 
 > **Observação**: A permissão de aplicativo Files.ReadWrite.All ainda não tem suporte nessa API. O suporte completo está planejado para breve. 
 
@@ -45,7 +47,6 @@ Por exemplo, para controlar o comportamento se o nome do arquivo já estiver em 
 | Nome       | Valor | Descrição                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Se esse cabeçalho de solicitação for incluído, e a eTag (ou cTag) fornecida não corresponder à etag atual no item, uma resposta de erro `412 Precondition Failed` será retornada. |
-
 
 ### <a name="response"></a>Resposta
 A resposta a essa solicitação fornecerá os detalhes da [uploadSession](../resources/uploadsession.md) recém-criada, que inclui a URL usada para carregar as partes do arquivo. 

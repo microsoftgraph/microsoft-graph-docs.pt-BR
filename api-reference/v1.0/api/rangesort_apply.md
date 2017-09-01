@@ -1,10 +1,14 @@
 # <a name="rangesort-apply"></a>RangeSort: apply
 
 Execute uma operação de classificação.
-## <a name="prerequisites"></a>Pré-requisitos
-Os seguintes **escopos** são necessários para executar esta API: 
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-    * Files.ReadWrite
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Files.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -19,7 +23,6 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
-
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
@@ -28,8 +31,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |campos|SortField|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
 |hasHeaders|booliano|Opcional. Se o intervalo tem um cabeçalho.|
-|orientation|cadeia de caracteres|Opcional. Se a operação classifica linhas ou colunas.  Os valores possíveis são: `Rows` e `Columns`.|
-|method|cadeia de caracteres|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.|
+|orientation|string|Opcional. Se a operação classifica linhas ou colunas.  Os valores possíveis são: `Rows` e `Columns`.|
+|método|cadeia de caracteres|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.|
 
 ## <a name="response"></a>Resposta
 

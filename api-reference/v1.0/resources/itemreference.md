@@ -28,12 +28,11 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade      | Tipo                              | Descrição                                                                                                |
 | :------------ | :-------------------------------- | :--------------------------------------------------------------------------------------------------------- |
 | driveId       | String                            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.                                 |
-| id            | Cadeia de caracteres                            | Identificador exclusivo do item na unidade. Somente leitura.                                                     |
-| name          | String                            | O nome do item ao qual se faz referência. Somente leitura.                                                          |
-| path          | Cadeia de caracteres                            | Caminho que pode ser usado para navegar até o item. Somente leitura.                                                  |
+| id            | String                            | Identificador exclusivo do item na unidade. Somente leitura.                                                     |
+| nome          | String                            | O nome do item ao qual se faz referência. Somente leitura.                                                          |
+| caminho          | String                            | Caminho que pode ser usado para navegar até o item. Somente leitura.                                                  |
 | shareId       | String                            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares](../api/shares_get.md). |
 | sharepointIds | [sharepointIds](sharepointids.md) | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                   |
-
 
 ## <a name="remarks"></a>Comentários
 

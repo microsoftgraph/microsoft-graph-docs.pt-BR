@@ -32,7 +32,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |content|Fluxo|O conteúdo HTML da página.|
 |contentUrl|String|A URL do conteúdo HTML da página.  Somente leitura.|
@@ -47,7 +47,7 @@ Veja a seguir uma representação JSON do recurso.
 |title|String|O título da página. |
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
 |parentSection|[Section](section.md)|A seção que contém a página. Somente leitura.|
@@ -60,7 +60,6 @@ Veja a seguir uma representação JSON do recurso.
 |[Atualizar o conteúdo da página](../api/page_update.md) | None |Atualizar o conteúdo HTML da página. |
 |[Excluir página](../api/page_delete.md) | None |Exclua a página. |
 |[copyToSection](../api/page_copytosection.md)| None |Copia a página para uma seção específica.|
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -6,24 +6,27 @@ Pastas especiais fornecem aliases simples para acessar pastas conhecidas no OneD
 
 As pastas especiais são criadas automaticamente na primeira vez que um aplicativo tenta gravar em uma, caso ainda não existam. Se um usuário excluir uma, ela será recriada quando algo for gravado nela novamente.
 
-**Observação:**  Se tiver permissões somente leitura e solicitar uma pasta especial que não exista, você receberá um erro `403 Forbidden`.
+>**Observação:**  Se tiver permissões somente leitura e solicitar uma pasta especial que não exista, você receberá um erro `403 Forbidden`.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Files.ReadWrite.AppFolder    | 
-|Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
+|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                           |
+|:--------------------------------------|:------------------------------------------------------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Files.ReadWrite.AppFolder           |
+|Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/special/{name}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+
+Este método oferece suporte aos [parâmetros de consulta OData](../../../concepts/query_parameters.md) `$expand` e `$select` para personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -31,8 +34,8 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 |:--------------|:-------|:--------------------------|
 | Autorização | string | {token} de portador. Obrigatório. |
 
-
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
@@ -42,6 +45,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
+
 Eis um exemplo da solicitação de unidades do usuário.
 
 <!-- {
@@ -74,7 +78,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Comentários
 
-Para solicitar os filhos de uma pasta especial, você pode solicitar a coleção `children` ou usar a opção [expand](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para expandir a coleção de filhos.
+Para solicitar os filhos de uma pasta especial, você pode solicitar a coleção `children` ou usar a opção [$expand](../../../concepts/query_parameters.md) para expandir a coleção de filhos.
 
 
 <!-- {

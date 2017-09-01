@@ -17,5 +17,6 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 
 **Usar substituições para classificar consistentemente por remetente**
 
-[Criar uma substituição para um remetente](../api/inferenceclassification_post_overrides.md) | [Listar todas as substituições de usuário](../api/inferenceclassification_list_overrides.md) | 
-[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride_update.md) | [Excluir uma substituição de remetente](../api/inferenceclassificationoverride_delete.md) 
+[Criar uma substituição para um remetente](../api/inferenceclassification_post_overrides.md) | [Listar substituições de todos os usuários](../api/inferenceclassification_list_overrides.md) |
+
+[Carregar uma substituição para um remetente](../api/inferenceclassificationoverride_update.md) | [Excluir uma substituição de remetente](../api/inferenceclassificationoverride_delete.md) 

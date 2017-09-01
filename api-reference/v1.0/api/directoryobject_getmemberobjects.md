@@ -3,12 +3,14 @@
  Retorna todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. Esta função é transitiva. 
  > Observação: Somente usuários podem ser membros de funções de diretório.
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **scopes** é necessário para executar esta API:
-- _User.Read.All_ E _Group.Read.All_
-- _Directory.Read.All_
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-> Observação: escopos de permissão são listados em ordem de privilégio menos necessário.
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | User.Read.All e Group.Read.All, Directory.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | User.Read.All e Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

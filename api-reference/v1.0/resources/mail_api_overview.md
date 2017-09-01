@@ -16,13 +16,13 @@ Você pode usar nomes comuns, como `Inbox`, `Drafts`, `SentItems` ou `DeletedIte
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
 
-## <a name="common-use-cases"></a>Casos de uso comuns 
+## <a name="common-use-cases"></a>Casos comuns de uso 
 
 O recurso **message** expõe propriedades como **categories**, **conversationId**, **flag** e **importance** que correspondem a recursos disponíveis na interface do usuário, permitindo que os aplicativos automatizem ou integrem a experiência de usuário interna do Outlook. 
 
 A API do Microsoft Graph também fornece métodos e ações que ofereçam suporte a casos de uso comuns de mensagens.
 
-| Casos de uso           | Recursos REST    | Veja também |
+| Casos de uso        | Recursos REST | Veja também |
 |:---------------|:--------|:----------|
 | **Ações centradas no usuário** | | |
 | Rascunho, ler, responder, encaminhar, enviar, atualizar ou excluir mensagens | [message](../resources/message.md) | [Métodos de mensagem](../resources/message.md#methods) |
@@ -38,9 +38,6 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | **Desenvolvimento de aplicativo** | | |
 | Adicionar dados personalizados de aplicativo a uma mensagem usando extensões | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md) |
 | Acessar dados personalizados para propriedades subexpostas de MAPI do Outlook | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md) |
-
-
-
 
 ## <a name="next-steps"></a>Próximas etapas
 A API de email pode permitir novas formas de envolvimento com os usuários: 

@@ -10,15 +10,14 @@ Um calendário que é um contêiner para eventos.
 |[Criar calendário](../api/user_post_calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendários padrão ou no calendário especificado.|
 |[Obter calendário](../api/calendar_get.md) | [calendar](calendar.md) |Leia as propriedades e as ações do objeto calendar.|
 |[Update](../api/calendar_update.md) | [calendar](calendar.md)  |Atualize o objeto calendar. |
-|[Delete](../api/calendar_delete.md) | Nenhuma |Exclua um objeto calendar. |
+|[Delete](../api/calendar_delete.md) | Nenhum |Exclua um objeto calendar. |
 |[Listar calendarView](../api/calendar_list_calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
 |[Listar eventos](../api/calendar_list_events.md) |Coleção [event](event.md)| Recupere uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres em série.|
 |[Criar Evento](../api/calendar_post_events.md) |[event](event.md)| Criar um novo Evento no calendário especificado ou padrão.|
-|[Criar propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[calendar](calendar.md)  |Criar uma ou mais propriedades estendidas de valor único em um calendário novo ou existente.   |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[calendar](calendar.md)  |Criar uma ou mais propriedades estendidas de valor único em um calendário novo ou existente.   |
 |[Obter calendário com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Obter calendários que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [calendar](calendar.md) | Criar uma ou mais propriedades estendidas de vários valores em um calendário novo ou existente.  |
 |[Obter calendário com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Obter um calendário que contenha uma propriedade estendida de vários valores usando `$expand`. |
-
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

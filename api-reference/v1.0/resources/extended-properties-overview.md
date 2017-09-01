@@ -44,14 +44,12 @@ Ao criar uma propriedade estendida de valor único ou de vários valores, você 
 | "*{type} {guid} **Nome** {name}*" | ```"String {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade pelo namespace (o GUID) ao qual ela pertence e por um nome.         |
 | "*{type} {guid} **Id** {id}*"     | ```"Integer {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8012"```        | Identifica uma propriedade pelo namespace (o GUID) ao qual ela pertence e por um identificador.  |
 
-
 **Formatos de id válidos para propriedades estendidas de vários valores**
 
 |**Formato**|**Exemplo**|**Descrição**|
 |:---------|:----------|:--------------|
 | "*{type} {guid} **Nome** {name}*" | ```"StringArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Name TestProperty"``` | Identifica uma propriedade pelo namespace (o GUID) e por um nome.         |
 | "*{type} {guid} **Id** {id}*"     | ```"IntegerArray {8ECCC264-6880-4EBE-992F-8888D2EEAA1D} Id 0x8013"```        | Identifica uma propriedade pelo namespace (o GUID) e por um identificador.   |
-
 
 ### <a name="rest-api-operations"></a>Operações da API REST
  

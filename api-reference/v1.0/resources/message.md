@@ -11,49 +11,48 @@ Esse recurso permite:
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar mensagens](../api/user_list_messages.md) |[message](message.md) collection | Obter todas as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). |
+|[Listar mensagens](../api/user_list_messages.md) |Coleção [message](message.md) | Obter todas as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). |
 |[Criar mensagem](../api/user_post_messages.md) | [message](message.md) | [Criar](../api/user_post_messages.md#request-1) um rascunho de uma nova mensagem. |
 |[Obter mensagem](../api/message_get.md) | [message](message.md) |Ler propriedades e relações do objeto mensage.|
-|[Atualizar](../api/message_update.md) | [message](message.md) |Atualizar o objeto message.|
-|[Excluir](../api/message_delete.md) | None |Excluir o objeto message. |
+|[Update](../api/message_update.md) | [message](message.md) |Atualizar o objeto message.|
+|[Delete](../api/message_delete.md) | None |Excluir o objeto message. |
 |[copy](../api/message_copy.md)|[Message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message_createforward.md)|[Message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
-|[delta](../api/message_delta.md)|[message](message.md) collection| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
-|[forward](../api/message_forward.md)|None|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[delta](../api/message_delta.md)|Coleção [message](message.md)| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
+|[forward](../api/message_forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message_move.md)|[Message](message.md)|Mover a mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
-|[reply](../api/message_reply.md)|None|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[replyAll](../api/message_replyall.md)|None|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[send](../api/message_send.md)|None|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
+|[reply](../api/message_reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[replyAll](../api/message_replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[send](../api/message_send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |**Anexos**| | |
-|[Listar anexos](../api/message_list_attachments.md) |[Attachment](attachment.md) collection| Obtém todos os anexos em uma mensagem.|
+|[Listar anexos](../api/message_list_attachments.md) |Coleção [Attachment](attachment.md)| Obtém todos os anexos em uma mensagem.|
 |[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Adicione um novo anexo a uma mensagem postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
-|[Obter extensão aberta](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
+|[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
 |**Extensões de esquema**| | |
-|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Criar uma ou mais propriedades estendidas de valor único em uma mensagem nova ou existente.   |
 |[Obter mensagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Obter mensagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [message](message.md) | Criar uma ou mais propriedades estendidas de vários valores em uma mensagem nova ou existente.  |
 |[Obter mensagem com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [message](message.md) | Obter uma mensagem que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
-
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|bccRecipients|[recipient](recipient.md) collection|Os destinatários Cco: da mensagem.|
+|bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
 |categories|String collection|As categorias associadas à mensagem.|
-|ccRecipients|[recipient](recipient.md) collection|Os destinatários Cc: da mensagem.|
+|ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
-|hasAttachments|Boolean|Indica se a mensagem tem anexos.|
+|hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
@@ -65,11 +64,11 @@ Esse recurso permite:
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
-|replyTo|[recipient](recipient.md) collection|Os endereços de email a serem usados ao responder.|
+|replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|String|O assunto da mensagem.|
-|toRecipients|[recipient](recipient.md) collection|Os destinatários Para: da mensagem.|
+|toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
@@ -88,13 +87,12 @@ Quando uma mensagem está sendo redigida, na maioria dos casos, as propriedades 
 - A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, a propriedade **sender** é definida como a conta desse representante, enquanto a propriedade **from** Você pode definir programaticamente a propriedade **sender** para um usuário com direito de representante para essa caixa de correio.
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
-|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para a mensagem. Somente leitura. Anulável.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Somente leitura. Anulável.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| A coleção de propriedades estendidas de valor único definidas para a mensagem. Somente leitura. Anulável.|
-
+|attachments|Coleção [attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a mensagem. Somente leitura. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Somente leitura. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

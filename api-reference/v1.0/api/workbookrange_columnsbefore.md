@@ -1,6 +1,7 @@
-# <a name="tablecolumn-range"></a>TableColumn: Range
+# <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
-Obtém o objeto de intervalo associado a toda a coluna.
+Obtém um determinado número de colunas à esquerda do intervalo especificado.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -13,20 +14,25 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/Range
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
+POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
+| Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
+
+## <a name="parameters"></a>Parâmetros
+
+| Parâmetro	    | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|Count|Int32|O número de colunas a serem incluídas no intervalo resultante. Em geral, use um número positivo para criar um intervalo fora do intervalo atual. Você também pode usar um número negativo para criar um intervalo dentro do intervalo atual. O valor padrão é 1.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-## <a name="response"></a>Resposta
-
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
+### <a name="response"></a>Resposta
+Se bem-sucedido, este método retorna um código de resposta `200, OK` e um objeto [workbookRange](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -34,10 +40,10 @@ Eis um exemplo de como chamar esta API.
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "tablecolumn_range"
+  "name": "workbookrange_columnsbefore"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/Range
+POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)
 ```
 
 ##### <a name="response"></a>Resposta
@@ -50,24 +56,14 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
+Content-length: 157
 
 {
   "address": "address-value",
   "addressLocal": "addressLocal-value",
   "cellCount": 99,
   "columnCount": 99,
-  "columnIndex": 99,
-  "valueTypes": "valueTypes-value"
+  "columnHidden": true,
+  "columnIndex": 99
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "TableColumn: Range",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -1,8 +1,8 @@
 # <a name="list-registeredowners"></a>Listar registeredOwners
 
 Recupera uma lista de usuários que são proprietários registrados do dispositivo.
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API: 
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 - *Device.ReadWrite.All* e *User.ReadBasic.All*
 - *Directory.Read.All*
 - *Directory.ReadWrite.All* 

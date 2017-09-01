@@ -23,11 +23,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	   | Tipo	  | Descrição                                |
+| Propriedade   | Tipo  | Descrição                                |
 |:-----------|:------|:-------------------------------------------|
 | **height** | Int32 | Opcional. A altura da imagem em pixels. Somente leitura. |
 | **width**  | Int32 | Opcional. A largura da imagem em pixels. Somente leitura.  |
-
 
 ## <a name="remarks"></a>Comentários
 

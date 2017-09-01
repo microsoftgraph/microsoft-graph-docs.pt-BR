@@ -18,11 +18,11 @@ Há várias maneiras de trabalhar com miniaturas no OneDrive. Veja a seguir as m
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    | 
-|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    | 
-|Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All | 
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
+|Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -34,7 +34,7 @@ GET /groups/{group-id}/drive/items/{item-id}/thumbnails
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte ao [Parâmetro de consulta OData](../../../concepts/query_parameters.md) `$select` para personalizar a resposta.
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/thumbnails/{thumb-
 | **item-id**  | string | O identificador exclusivo do item referenciado.                                      |
 | **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4.                                            |
 | **size**     | string | O tamanho da miniatura solicitada. Ele deve ser um dos tamanhos padrão listados. |
-
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 ```http

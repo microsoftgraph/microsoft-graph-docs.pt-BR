@@ -98,14 +98,14 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
 | lastModifiedBy       | [identitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                                    |
 | lastModifiedDateTime | DateTimeOffset                      | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                                      |
 | location             | [geoCoordinates](geoCoordinates.md) | Metadados de localização, se o item tiver dados de localização. Somente leitura.                                                                                                              |
-| nome                 | String                              | O nome do item (nome do arquivo e extensão). Leitura e gravação.                                                                                                                |
+| name                 | String                              | O nome do item (nome do arquivo e extensão). Leitura e gravação.                                                                                                                |
 | pacote              | [package](package.md)               | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.         |
 | parentReference      | [itemReference](itemreference.md)   | Informações do pai, se o item tiver um pai. Leitura e gravação.                                                                                                                 |
 | Foto                | [photo](photo.md)                   | Metadados de foto, se o item for uma foto. Somente leitura.                                                                                                                        |
 | remoteItem           | [remoteItem](remoteitem.md)         | Dados do item remoto, se o item for compartilhado de uma unidade diferente daquela que está sendo acessada. Somente leitura.                                                                        |
 | root                 | [root](root.md)                     | Se essa propriedade for não nula, indicará que o driveItem é o principal driveItem na unidade.                                                                     |
 | searchResult         | [searchResult](searchresult.md)     | Metadados de pesquisa, se o item for de um resultado de pesquisa. Somente leitura.                                                                                                          |
-| compartilhado               | [shared](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                               |
+| shared               | [shared](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                               |
 | sharepointIds        | [sharepointIds](sharepointids.md)   | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                                                                                  |
 | size                 | Int64                               | O tamanho do item em bytes. Somente leitura.                                                                                                                                     |
 | specialFolder        | [specialFolder](specialfolder.md)   | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.                                                                             |
@@ -123,9 +123,8 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
 | children           | Coleção [driveitem](driveitem.md)       | Coleção que contêm objetos Item para os filhos imediatos do Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.                                        |
 | createdByUser      | [user](user.md)                            | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.                                                                                                  |
 | lastModifiedByUser | [user](user.md)                            | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                                            |
-| permissões        | Coleção [permission](permission.md)     | O conjunto de permissões do item. Somente leitura. Anulável.                                                                                                                         |
+| permissions        | Coleção [permission](permission.md)     | O conjunto de permissões do item. Somente leitura. Anulável.                                                                                                                         |
 | miniaturas         | Coleção [thumbnailSet](thumbnailset.md) | Coleção contendo objetos [ThumbnailSet](thumbnailSet.md) associados ao item. Para saber mais, confira [obtendo miniaturas](../api/thumbnailset_get.md). Somente leitura. Anulável. |
-
 
 ## <a name="instance-attributes"></a>Atributos de instância
 
@@ -160,7 +159,6 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | [Adicionar permissões](../api/item_invite.md)               | `POST /drive/items/{item-id}/invite`     |
 | [Listar permissões](../api/item_list_permissions.md)    | `GET /drive/items/{item-id}/permissions` |
 | [Excluir permissão](../api/permission_delete.md)       | `DELETE /drive/items/{item-id}/permissions/{perm-id}` |
-
 
 ## <a name="remarks"></a>Comentários
 

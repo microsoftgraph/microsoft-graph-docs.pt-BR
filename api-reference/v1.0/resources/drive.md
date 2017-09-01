@@ -51,11 +51,11 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | driveType            | String                        | Descreve o tipo de unidade representado por esse recurso. As unidades pessoais do OneDrive retornarão `personal`. O OneDrive for Business retornará `business`. As bibliotecas de documentos do SharePoint retornarão `documentLibrary`. Somente leitura. |
 | lastModifiedBy       | [identitySet][]               | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                                                                                             |
-| name                 | string                        | O nome do item. Leitura e gravação.                                                                                                                                                                                                |
+| nome                 | string                        | O nome do item. Leitura e gravação.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.                                                                                                                                                                       |
 | cota                | [quota](quota.md)             | Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                                                                                                                                         |
-| webUrl               | cadeia de caracteres (url)                  | URL que exibe o recurso no navegador. Somente leitura.                                                                                                                                                                        |
+| webUrl               | string (url)                  | URL que exibe o recurso no navegador. Somente leitura.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
@@ -67,7 +67,6 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | items        | Coleção [driveitem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.                   |
 | root         | [driveitem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.                                 |
 | special      | Coleção [driveitem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável. |
-
 
 ## <a name="methods"></a>Métodos
 
