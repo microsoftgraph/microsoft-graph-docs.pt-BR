@@ -1,62 +1,62 @@
-# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário 
+# <a name="get-incremental-changes-to-events-in-a-calendar-view"></a><span data-ttu-id="e0eba-101">Obter as alterações incrementais para os eventos em um modo de exibição de calendário</span><span class="sxs-lookup"><span data-stu-id="e0eba-101">Get incremental changes to events in a calendar view</span></span> 
 
-O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário do calendário-padrão (../me/calendarview) ou algum outro calendário do usuário. Usando a consulta de delta, você pode obter eventos novos, atualizados ou excluídos em um modo de exibição de calendário. Os eventos retornados podem incluir ocorrências e exceções de uma série recorrente e instâncias únicas. Os dados-delta permitem manter e sincronizar o armazenamento local de eventos do usuário, sem ter de buscar todo o conjunto de eventos do usuário no servidor a cada vez que precise deles.
+<span data-ttu-id="e0eba-p101">O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário do calendário-padrão (../me/calendarview) ou algum outro calendário do usuário. Usando a consulta de delta, você pode obter eventos novos, atualizados ou excluídos em um modo de exibição de calendário. Os eventos retornados podem incluir ocorrências e exceções de uma série recorrente e instâncias únicas. Os dados-delta permitem manter e sincronizar o armazenamento local de eventos do usuário, sem ter de buscar todo o conjunto de eventos do usuário no servidor a cada vez que precise deles.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p101">A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) or some other calendar of the user's. By using delta query, you can get new, updated, or deleted events in a calendar view. The returned events may include occurrences and exceptions of a recurring series, and single instances. The delta data enables you to maintain and synchronize a local store of a user's events, without having to fetch the entire set of the user's events from the server every time.</span></span>
 
-A consulta delta oferece suporte à sincronização completa que recupera todos os eventos no modo de exibição calendário especificado e a sincronização incremental que recupera os eventos ocorridos no modo de exibição de calendário desde a última sincronização. Normalmente, você faria uma sincronização completa inicial e, logo após, obteria, periodicamente, as alterações incrementais para esse modo de exibição de calendário. 
+<span data-ttu-id="e0eba-p102">A consulta delta oferece suporte à sincronização completa que recupera todos os eventos no modo de exibição calendário especificado e a sincronização incremental que recupera os eventos ocorridos no modo de exibição de calendário desde a última sincronização. Normalmente, você faria uma sincronização completa inicial e, logo após, obteria, periodicamente, as alterações incrementais para esse modo de exibição de calendário.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p102">Delta query supports both full synchronization that retrieves all the events in the specified calendar view, and incremental synchronization that retrieves those events that have changed in the calendar view since the last synchronization. Typically, you would do an initial full synchronization, and subsequently, get incremental changes to that calendar view periodically.</span></span> 
 
-## <a name="track-event-changes-in-a-calendar-view"></a>Rastrear alterações de evento em um modo de exibição de calendário
+## <a name="track-event-changes-in-a-calendar-view"></a><span data-ttu-id="e0eba-108">Rastrear alterações de evento em um modo de exibição de calendário</span><span class="sxs-lookup"><span data-stu-id="e0eba-108">Track event changes in a calendar view</span></span>
 
-A consulta delta para eventos é específica de um intervalo de calendário e data/hora que você especificar (ou seja, um modo de exibição de calendário). Para controlar as alterações em vários calendários, você precisa controlar cada calendário individualmente. 
+<span data-ttu-id="e0eba-p103">A consulta delta para eventos é específica de um intervalo de calendário e data/hora que você especificar (ou seja, um modo de exibição de calendário). Para controlar as alterações em vários calendários, você precisa controlar cada calendário individualmente.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p103">Delta query for events is specific to a calendar and date/time range that you specify (i.e., a calendar view). To track the changes in multiple calendars, you need to track each calendar individually.</span></span> 
 
-O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](../api-reference/v1.0/api/event_delta.md). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), exceto se você incluir a função **delta**:
+<span data-ttu-id="e0eba-p104">O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](../api-reference/v1.0/api/event_delta.md). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), exceto se você incluir a função **delta**:</span><span class="sxs-lookup"><span data-stu-id="e0eba-p104">Tracking event changes in a calendar view typically is a round of one or more GET requests with the [delta](../api-reference/v1.0/api/event_delta.md) function. The initial GET request is very much like the way you [list a calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), except that you include the **delta** function:</span></span>
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-Uma solicitação GET com a função **delta** retorna:
+<span data-ttu-id="e0eba-113">Uma solicitação GET com a função **delta** retorna:</span><span class="sxs-lookup"><span data-stu-id="e0eba-113">A GET request with the **delta** function returns either:</span></span>
 
-- Uma `nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_) ou 
-- Uma `deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_).
+- <span data-ttu-id="e0eba-114">Uma `nextLink` (que contém uma URL com chamada de função **delta** e um _skipToken_) ou</span><span class="sxs-lookup"><span data-stu-id="e0eba-114">A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or</span></span> 
+- <span data-ttu-id="e0eba-115">Uma `deltaLink` (que contém uma URL com chamada de função **delta** e _deltaToken_).</span><span class="sxs-lookup"><span data-stu-id="e0eba-115">A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).</span></span>
 
-Esses tokens são [tokens de estado](delta_query_overview.md#state-tokens) que codificam os parâmetros refs/remotes/microsoftgraph/master _startDateTime_ e _endDateTime_, bem como qualquer outro parâmetro de consulta em sua solicitação GET de consulta delta inicial. 
+<span data-ttu-id="e0eba-116">Esses tokens são [tokens de estado](delta_query_overview.md#state-tokens) que codificam os parâmetros refs/remotes/microsoftgraph/master _startDateTime_ e _endDateTime_, bem como qualquer outro parâmetro de consulta em sua solicitação GET de consulta delta inicial.</span><span class="sxs-lookup"><span data-stu-id="e0eba-116">These tokens are [state tokens](delta_query_overview.md#state-tokens) which encode the refs/remotes/microsoftgraph/master _startDateTime_ and _endDateTime_ parameters, and any other query parameter in your initial delta query GET request.</span></span> 
 
-Estabeleça tokens de estado que sejam completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `nextLink` ou `deltaLink` retornada da última solicitação GET para a próxima chamada de função **delta** do mesmo modo de exibição de calendário. Uma `deltaLink` retornada em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a próxima fase.
+<span data-ttu-id="e0eba-p105">Estabeleça tokens de estado que sejam completamente opacos para o cliente. Para prosseguir com uma fase de controle de alterações, basta copiar e aplicar a URL `nextLink` ou `deltaLink` retornada da última solicitação GET para a próxima chamada de função **delta** do mesmo modo de exibição de calendário. Uma `deltaLink` retornada em uma resposta significa que a fase atual do rastreamento de alterações está concluída. Você pode salvar e usar a URL `deltaLink` quando começar a próxima fase.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p105">State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next **delta** function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.</span></span>
 
-Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo para aprender a usar essas URLs `nextLink` e `deltaLink`.
+<span data-ttu-id="e0eba-121">Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo para aprender a usar essas URLs `nextLink` e `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="e0eba-121">See the [example](#example-to-synchronize-events-in-a-calendar-view) below to learn how to use these `nextLink` and `deltaLink` URLs.</span></span>
 
-### <a name="use-query-parameters-in-a-delta-query-for-calendar-view"></a>Use os parâmetros de consulta de uma consulta delta para a visualização de calendário
+### <a name="use-query-parameters-in-a-delta-query-for-calendar-view"></a><span data-ttu-id="e0eba-122">Use os parâmetros de consulta de uma consulta delta para a visualização de calendário</span><span class="sxs-lookup"><span data-stu-id="e0eba-122">Use query parameters in a delta query for calendar view</span></span>
 
-- Inclua os parâmetros _startDateTime_ e _endDateTime_ para definir um intervalo de data/hora para o modo de exibição de calendário.
-- Não há suporte para `$select`.
-
-
-### <a name="optional-request-header"></a>Cabeçalhos de solicitação opcionais
-
-Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, _Prefer: odata.maxpagesize={x}_, para configurar o máximo de eventos em uma resposta.
+- <span data-ttu-id="e0eba-123">Inclua os parâmetros _startDateTime_ e _endDateTime_ para definir um intervalo de data/hora para o modo de exibição de calendário.</span><span class="sxs-lookup"><span data-stu-id="e0eba-123">Include the _startDateTime_ and _endDateTime_ parameters to define a date/time range for your calendar view.</span></span>
+- <span data-ttu-id="e0eba-124">Não há suporte para `$select`.</span><span class="sxs-lookup"><span data-stu-id="e0eba-124">`$select` is not supported.</span></span>
 
 
-## <a name="example-to-synchronize-events-in-a-calendar-view"></a>Exemplo de sincronização de eventos em um modo de exibição de calendário
+### <a name="optional-request-header"></a><span data-ttu-id="e0eba-125">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="e0eba-125">Optional request header</span></span>
 
-O exemplo a seguir mostra uma série de 3 solicitações para sincronizar o calendário de padrão do usuário em um intervalo de tempo específico. Há 5 eventos nesse modo de exibição de calendário.
-
-- [Etapa 1: exemplo inicial de solicitação](#step-1-sample-initial-request) e [resposta](#sample-initial-response)
-- [Etapa 2: segundo exemplo de solicitação](#step-2-sample-second-request) e [resposta](#sample-second-response)
-- [Etapa 3: terceiro exemplo de solicitação](#step-3-sample-third-request) e [resposta](#sample-third-and-final-response)
-
-Para economizar tempo, as respostas de exemplo exibem apenas um subconjunto das propriedades para um evento. Em uma chamada real, a maior parte das propriedades dos eventos são retornadas. 
-
-Consulte também o que você vai fazer na [próxima fase](#the-next-round-sample-first-response).
+<span data-ttu-id="e0eba-p106">Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, _Prefer: odata.maxpagesize={x}_, para configurar o máximo de eventos em uma resposta.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p106">Each delta query GET request returns a collection of one or more events in the response. You can optionally specify the request header, _Prefer: odata.maxpagesize={x}_, to set the maximum number of events in a response.</span></span>
 
 
-### <a name="step-1-sample-initial-request"></a>Passo 1: solicitação inicial de exemplo
+## <a name="example-to-synchronize-events-in-a-calendar-view"></a><span data-ttu-id="e0eba-128">Exemplo de sincronização de eventos em um modo de exibição de calendário</span><span class="sxs-lookup"><span data-stu-id="e0eba-128">Example to synchronize events in a calendar view</span></span>
 
-Neste exemplo, o modo de exibição de calendário especificado está sendo sincronizado pela primeira vez, para que a solicitação de sincronização inicial não inclua nenhum token de estado. Esta fase retornará todos os eventos nesse modo de exibição de calendário.
+<span data-ttu-id="e0eba-p107">O exemplo a seguir mostra uma série de 3 solicitações para sincronizar o calendário de padrão do usuário em um intervalo de tempo específico. Há 5 eventos nesse modo de exibição de calendário.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p107">The following example shows a series of 3 requests to synchronize the user's default calendar in a specific time range. There are 5 events in that calendar view.</span></span>
 
-A primeira solicitação especifica o seguinte:
+- <span data-ttu-id="e0eba-131">[Etapa 1: exemplo inicial de solicitação](#step-1-sample-initial-request) e [resposta](#sample-initial-response)</span><span class="sxs-lookup"><span data-stu-id="e0eba-131">[Step 1: sample initial request](#step-1-sample-initial-request) and [response](#sample-initial-response)</span></span>
+- <span data-ttu-id="e0eba-132">[Etapa 2: segundo exemplo de solicitação](#step-2-sample-second-request) e [resposta](#sample-second-response)</span><span class="sxs-lookup"><span data-stu-id="e0eba-132">[Step 2: sample second request](#step-2-sample-second-request) and [response](#sample-second-response)</span></span>
+- <span data-ttu-id="e0eba-133">[Etapa 3: terceiro exemplo de solicitação](#step-3-sample-third-request) e [resposta](#sample-third-and-final-response)</span><span class="sxs-lookup"><span data-stu-id="e0eba-133">[Step 3: sample third request](#step-3-sample-third-request) and [final response](#sample-third-and-final-response)</span></span>
 
-- Data/horário valores para os parâmetros _startDateTime_ e _endDateTime_.
-- O [cabeçalho de solicitação opcional](#optional-request-header), _odata.maxpagesize_, retornando 2 eventos de cada vez.
+<span data-ttu-id="e0eba-p108">Para economizar tempo, as respostas de exemplo exibem apenas um subconjunto das propriedades para um evento. Em uma chamada real, a maior parte das propriedades dos eventos são retornadas.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p108">For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.</span></span> 
+
+<span data-ttu-id="e0eba-136">Consulte também o que você vai fazer na [próxima fase](#the-next-round-sample-first-response).</span><span class="sxs-lookup"><span data-stu-id="e0eba-136">See also what you'll do in the [next round](#the-next-round-sample-first-response).</span></span>
+
+
+### <a name="step-1-sample-initial-request"></a><span data-ttu-id="e0eba-137">Passo 1: solicitação inicial de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-137">Step 1: sample initial request</span></span>
+
+<span data-ttu-id="e0eba-p109">Neste exemplo, o modo de exibição de calendário especificado está sendo sincronizado pela primeira vez, para que a solicitação de sincronização inicial não inclua nenhum token de estado. Esta fase retornará todos os eventos nesse modo de exibição de calendário.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p109">In this example, the specified calendar view is being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the events in that calendar view.</span></span>
+
+<span data-ttu-id="e0eba-140">A primeira solicitação especifica o seguinte:</span><span class="sxs-lookup"><span data-stu-id="e0eba-140">The first request specifies the following:</span></span>
+
+- <span data-ttu-id="e0eba-141">Data/horário valores para os parâmetros _startDateTime_ e _endDateTime_.</span><span class="sxs-lookup"><span data-stu-id="e0eba-141">Date/time values for the _startDateTime_ and _endDateTime_ parameters.</span></span>
+- <span data-ttu-id="e0eba-142">O [cabeçalho de solicitação opcional](#optional-request-header), _odata.maxpagesize_, retornando 2 eventos de cada vez.</span><span class="sxs-lookup"><span data-stu-id="e0eba-142">The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 events at a time.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -68,9 +68,9 @@ Prefer: odata.maxpagesize=2
 ```
 
 
-### <a name="sample-initial-response"></a>Resposta inicial de exemplo
+### <a name="sample-initial-response"></a><span data-ttu-id="e0eba-143">Resposta inicial de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-143">Sample initial response</span></span>
 
-A resposta inclui dois eventos e um `@odata.nextLink`cabeçalho de resposta com um `skipToken`. A URL `nextLink` indica que há mais eventos no modo de exibição de calendário a ser obtidos.
+<span data-ttu-id="e0eba-p110">A resposta inclui dois eventos e um `@odata.nextLink`cabeçalho de resposta com um `skipToken`. A URL `nextLink` indica que há mais eventos no modo de exibição de calendário a ser obtidos.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p110">The response includes two events and a `@odata.nextLink` response header with a `skipToken`. The `nextLink` URL indicates there are more events in the calendar view to get.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -107,8 +107,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },      
             "id":"AAMkADNVxRAAA="
@@ -134,8 +134,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxSAAA="
@@ -144,9 +144,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="step-2-sample-second-request"></a>Etapa 2: segundo exemplo de solicitação
+### <a name="step-2-sample-second-request"></a><span data-ttu-id="e0eba-146">Etapa 2: segundo exemplo de solicitação</span><span class="sxs-lookup"><span data-stu-id="e0eba-146">Step 2: sample second request</span></span>
 
-A segunda solicitação especifica a URL `nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar os mesmos parâmetros _startDateTime_ e _endDateTime_ como na solicitação inicial, conforme o `skipToken` na URL `nextLink` os codifica e inclui.
+<span data-ttu-id="e0eba-p111">A segunda solicitação especifica a URL `nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar os mesmos parâmetros _startDateTime_ e _endDateTime_ como na solicitação inicial, conforme o `skipToken` na URL `nextLink` os codifica e inclui.</span><span class="sxs-lookup"><span data-stu-id="e0eba-p111">The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same _startDateTime_ and _endDateTime_ parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -157,9 +157,9 @@ GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmcCM99
 Prefer: odata.maxpagesize=2
 ```
 
-### <a name="sample-second-response"></a>Segunda resposta de exemplo 
+### <a name="sample-second-response"></a><span data-ttu-id="e0eba-149">Segunda resposta de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-149">Sample second response</span></span> 
 
-A segunda resposta retorna os 2 próximos eventos no modo de visualização de calendário e outro `nextLink`, indicando que há mais eventos a ser obtidos no modo de exibição de calendário.
+<span data-ttu-id="e0eba-150">A segunda resposta retorna os 2 próximos eventos no modo de visualização de calendário e outro `nextLink`, indicando que há mais eventos a ser obtidos no modo de exibição de calendário.</span><span class="sxs-lookup"><span data-stu-id="e0eba-150">The second response returns the next 2 events in the calendar view and another `nextLink`, indicating there are more events to get from the calendar view.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -196,8 +196,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxTAAA="
@@ -223,8 +223,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADVxUAAA="
@@ -234,9 +234,9 @@ Content-type: application/json
 ```
 
 
-### <a name="step-3-sample-third-request"></a>Etapa 3: terceira solicitação de exemplo
+### <a name="step-3-sample-third-request"></a><span data-ttu-id="e0eba-151">Etapa 3: terceira solicitação de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-151">Step 3: sample third request</span></span>
 
-A terceira solicitação continua a usar as últimas `nextLink` retornadas da última solicitação de sincronização. 
+<span data-ttu-id="e0eba-152">A terceira solicitação continua a usar as últimas `nextLink` retornadas da última solicitação de sincronização.</span><span class="sxs-lookup"><span data-stu-id="e0eba-152">The third request continues to use the latest `nextLink` returned from the last sync request.</span></span> 
  
 
 <!-- {
@@ -248,9 +248,9 @@ GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$skiptoken=R0usmci39O
 Prefer: odata.maxpagesize=2
 ```
 
-### <a name="sample-third-and-final-response"></a>Terceira e última resposta de exemplo
+### <a name="sample-third-and-final-response"></a><span data-ttu-id="e0eba-153">Terceira e última resposta de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-153">Sample third and final response</span></span>
 
-A terceira resposta retorna o único evento restante no modo de exibição calendário e uma URL `deltaLink` a indicar que a sincronização está concluída para esse modo de exibição de calendário. Salvar e usar a URL `deltaLink` para [sincronizar esse modo de exibição de calendário na próxima fase](#the-next-round-sample-first-request).
+<span data-ttu-id="e0eba-p112">A terceira resposta retorna o único evento restante no modo de exibição calendário e uma URL `deltaLink` a indicar que a sincronização está concluída para esse modo de exibição de calendário. Salvar e usar a URL `deltaLink` para [sincronizar esse modo de exibição de calendário na próxima fase](#the-next-round-sample-first-request).</span><span class="sxs-lookup"><span data-stu-id="e0eba-p112">The third response returns the only remaining event in the calendar view, and a `deltaLink` URL which indicates synchronization is complete for this calendar view. Save and use the `deltaLink` URL to [synchronize that calendar view in the next round](#the-next-round-sample-first-request).</span></span>
 
 
 <!-- {
@@ -291,8 +291,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADj1HuAAA="
@@ -302,9 +302,9 @@ Content-type: application/json
 ```
 
 
-### <a name="the-next-round-sample-first-request"></a>A próxima fase: primeira solicitação de exemplo
+### <a name="the-next-round-sample-first-request"></a><span data-ttu-id="e0eba-156">A próxima fase: primeira solicitação de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-156">The next round: sample first request</span></span>
 
-Usando o `deltaLink` da [última solicitação](#step-3-sample-third-request) na última fase, você poderá obter somente os eventos que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse modo de exibição de calendário desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:
+<span data-ttu-id="e0eba-p113">Usando o `deltaLink` da [última solicitação](#step-3-sample-third-request) na última fase, você poderá obter somente os eventos que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse modo de exibição de calendário desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:</span><span class="sxs-lookup"><span data-stu-id="e0eba-p113">Using the `deltaLink` from the [last request](#step-3-sample-third-request) in the last round, you will be able to get only those events that have changed (by being added, deleted, or updated) in that calendar view since then. Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
 
 <!-- {
   "blockType": "request",
@@ -315,7 +315,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarview/delta?$deltatoken=R0usmcMDN
 Prefer: odata.maxpagesize=2
 ```
 
-### <a name="the-next-round-sample-first-response"></a>A próxima fase: primeira resposta de exemplo
+### <a name="the-next-round-sample-first-response"></a><span data-ttu-id="e0eba-159">A próxima fase: primeira resposta de exemplo</span><span class="sxs-lookup"><span data-stu-id="e0eba-159">The next round: sample first response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -367,8 +367,8 @@ Content-type: application/json
             ],
             "organizer":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AAMkADj1HvAAA="
@@ -377,9 +377,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a><span data-ttu-id="e0eba-160">Veja também</span><span class="sxs-lookup"><span data-stu-id="e0eba-160">See also</span></span>
 
-- [Consulta delta do Microsoft Graph](../Concepts/delta_query_overview.md)
-- [Obter as alterações incrementais para mensagens](../Concepts/delta_query_messages.md)
-- [Obter as alterações incrementais para grupos](../Concepts/delta_query_groups.md)
-- [Obter as alterações incrementais para usuários](../Concepts/delta_query_users.md)
+- [<span data-ttu-id="e0eba-161">Consulta delta do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="e0eba-161">Microsoft Graph delta query</span></span>](../Concepts/delta_query_overview.md)
+- [<span data-ttu-id="e0eba-162">Obter as alterações incrementais para mensagens</span><span class="sxs-lookup"><span data-stu-id="e0eba-162">Get incremental changes to messages</span></span>](../Concepts/delta_query_messages.md)
+- [<span data-ttu-id="e0eba-163">Obter as alterações incrementais para grupos</span><span class="sxs-lookup"><span data-stu-id="e0eba-163">Get incremental changes to groups</span></span>](../Concepts/delta_query_groups.md)
+- [<span data-ttu-id="e0eba-164">Obter as alterações incrementais para usuários</span><span class="sxs-lookup"><span data-stu-id="e0eba-164">Get incremental changes to users</span></span>](../Concepts/delta_query_users.md)
