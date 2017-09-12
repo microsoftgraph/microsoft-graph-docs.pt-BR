@@ -1,35 +1,40 @@
-# <a name="get-formatprotection"></a><span data-ttu-id="cb6bd-101">Obter FormatProtection</span><span class="sxs-lookup"><span data-stu-id="cb6bd-101">Get FormatProtection</span></span>
+# <a name="get-formatprotection"></a><span data-ttu-id="8ebbb-101">Obter FormatProtection</span><span class="sxs-lookup"><span data-stu-id="8ebbb-101">Get FormatProtection</span></span>
 
-<span data-ttu-id="cb6bd-102">Recupere as propriedades e os relacionamentos do objeto formatprotection.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-102">Retrieve the properties and relationships of formatprotection object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="cb6bd-103">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="cb6bd-103">Prerequisites</span></span>
-<span data-ttu-id="cb6bd-104">Os seguintes **escopos** são necessários para executar esta API:</span><span class="sxs-lookup"><span data-stu-id="cb6bd-104">The following **scopes** are required to execute this API:</span></span> 
+<span data-ttu-id="8ebbb-102">Recupere as propriedades e os relacionamentos do objeto formatprotection.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-102">Retrieve the properties and relationships of formatprotection object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8ebbb-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="8ebbb-103">Permissions</span></span>
+<span data-ttu-id="8ebbb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="8ebbb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-    * <span data-ttu-id="cb6bd-105">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="cb6bd-105">Files.ReadWrite</span></span>
+|<span data-ttu-id="8ebbb-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8ebbb-106">Permission type</span></span>      | <span data-ttu-id="8ebbb-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8ebbb-107">Permissions (from least to most privileged)</span></span>              | 
+|:--------------------|:---------------------------------------------------------| 
+|<span data-ttu-id="8ebbb-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8ebbb-108">Delegated (work or school account)</span></span> | <span data-ttu-id="8ebbb-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8ebbb-109">Files.ReadWrite</span></span>    | 
+|<span data-ttu-id="8ebbb-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8ebbb-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8ebbb-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-111">Not supported.</span></span>    | 
+|<span data-ttu-id="8ebbb-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8ebbb-112">Application</span></span> | <span data-ttu-id="8ebbb-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-113">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="cb6bd-106">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cb6bd-106">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8ebbb-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8ebbb-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/protection
 GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cb6bd-107">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cb6bd-107">Optional query parameters</span></span>
-<span data-ttu-id="cb6bd-108">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-108">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="8ebbb-115">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="8ebbb-115">Optional query parameters</span></span>
+<span data-ttu-id="8ebbb-116">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cb6bd-109">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cb6bd-109">Request headers</span></span>
-| <span data-ttu-id="cb6bd-110">Nome</span><span class="sxs-lookup"><span data-stu-id="cb6bd-110">Name</span></span>      |<span data-ttu-id="cb6bd-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb6bd-111">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8ebbb-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8ebbb-117">Request headers</span></span>
+| <span data-ttu-id="8ebbb-118">Nome</span><span class="sxs-lookup"><span data-stu-id="8ebbb-118">Name</span></span>      |<span data-ttu-id="8ebbb-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="8ebbb-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cb6bd-112">Autorização</span><span class="sxs-lookup"><span data-stu-id="cb6bd-112">Authorization</span></span>  | <span data-ttu-id="cb6bd-p101">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-p101">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8ebbb-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="8ebbb-120">Authorization</span></span>  | <span data-ttu-id="8ebbb-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cb6bd-115">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cb6bd-115">Request body</span></span>
-<span data-ttu-id="cb6bd-116">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-116">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cb6bd-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb6bd-117">Response</span></span>
+## <a name="request-body"></a><span data-ttu-id="8ebbb-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8ebbb-123">Request body</span></span>
+<span data-ttu-id="8ebbb-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-124">Do not supply a request body for this method.</span></span>
 
-<span data-ttu-id="cb6bd-118">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-118">If successful, this method returns a `200 OK` response code and [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cb6bd-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cb6bd-119">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cb6bd-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb6bd-120">Request</span></span>
-<span data-ttu-id="cb6bd-121">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-121">Here is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="8ebbb-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="8ebbb-125">Response</span></span>
+
+<span data-ttu-id="8ebbb-126">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-126">If successful, this method returns a `200 OK` response code and [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8ebbb-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8ebbb-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8ebbb-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8ebbb-128">Request</span></span>
+<span data-ttu-id="8ebbb-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_formatprotection"
@@ -37,8 +42,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/protection
 ```
-##### <a name="response"></a><span data-ttu-id="cb6bd-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb6bd-122">Response</span></span>
-<span data-ttu-id="cb6bd-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb6bd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8ebbb-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="8ebbb-130">Response</span></span>
+<span data-ttu-id="8ebbb-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8ebbb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
