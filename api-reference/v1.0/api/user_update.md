@@ -11,7 +11,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | User.ReadWrite    |
 |Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
-Ao atualizar a propriedade passwordProfile, o escopo seguinte é necessário: Directory.AccessAsUser.All.
+Ao atualizar a propriedade passwordProfile, a seguinte permissão é necessária: Directory.AccessAsUser.All.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

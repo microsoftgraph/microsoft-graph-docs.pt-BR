@@ -1,52 +1,72 @@
-# <a name="sovereign-cloud-deployments"></a>Implantações de nuvem soberana
+# <a name="national-cloud-deployments"></a>Implantar de nuvem nacional
 
 
-Este artigo fornece informações sobre as diferentes instâncias da nuvem soberana do Microsoft Graph e os recursos que estão disponíveis para os desenvolvedores. 
+Os serviços de nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacional são instâncias isoladas de redes físicas e lógicas dos serviços de nuvem corporativa da Microsoft, que são confinados pelas fronteiras geográficas de países específicos e operados pela equipe local. Para saber mais, confira [Nuvens nacionais da Microsoft](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud).
 
+As nuvens nacionais atuais incluem:
 
-## <a name="microsoft-graph-operated-by-21vianet-in-china"></a>Microsoft Graph operado pela 21Vianet na China
+- Microsoft Cloud para o Governo dos EUA
+- Microsoft Cloud Germany
+- Azure e Office 365 operados pela 21Vianet na China
 
-Esta seção fornece informações sobre o Microsoft Graph operado pela 21Vianet e os recursos que estão disponíveis para os desenvolvedores. 
+Este artigo fornece informações sobre as diferentes implantações de nuvem nacional do Microsoft Graph e os recursos em cada implantação que estão disponíveis para os desenvolvedores. 
 
-### <a name="microsoft-graph-service-root-endpoints"></a>Pontos de extremidade de raiz do serviço do Microsoft Graph
-| Microsoft Graph operado pela 21Vianet | Microsoft Graph|
+## <a name="microsoft-graph-and-microsoft-graph-explorer-service-root-endpoints"></a>Pontos de extremidade raiz de serviço do Microsoft Graph e do Microsoft Graph Explorer
+
+A tabela a seguir mostra os pontos de extremidade do serviço raiz do Microsoft Graph e o Microsoft Graph Explorer para cada nuvem nacional. 
+
+| National Cloud | Microsoft Graph | Explorador do Microsoft Graph
+|---------------------------|----------------|----------------|
+| Microsoft Graph operado pela 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/pt-br/graph/graph-explorer-china |
+| Microsoft Graph Germany | https://graph.microsoft.de | Sem suporte. |
+| Microsoft Graph for US Government | https://graph.microsoft.com | Sem suporte. |
+| Serviço global do Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
+
+> **Observação**: Os aplicativos só podem acessar dados organizacionais por meio de pontos de extremidade de nuvem nacional. Isso significa que somente os dados em locatários registrados na nuvem nacional específica podem ser acessados. Os aplicativos que estão tentando acessar dados de consumidor associados a contas da Microsoft pessoais por meio do Microsoft Graph devem usar o serviço global (https://graph.microsoft.com). Tokens de acesso adquiridos para uma implantação de nuvem nacional não são intercambiáveis com aqueles adquiridos pelo serviço global.
+
+## <a name="azure-ad-openid-connect-and-oauth20-endpoints"></a>Pontos de extremidade Azure AD OpenID Connect e OAuth2.0
+
+A tabela a seguir lista as URLs base para os pontos de extremidade do Azure AD (Azure Active Directory) usados para adquirir tokens para chamar o Microsoft Graph para cada nuvem nacional. 
+
+| National Cloud | Ponto de extremidade raiz do Azure AD |
 |---------------------------|----------------|
-| https://microsoftgraph.chinacloudapi.cn | https://graph.microsoft.com|
+| Microsoft Graph operado pela 21Vianet |https://login.chinacloudapi.cn | 
+| Microsoft Graph Germany | https://login.microsoftonline.de | 
+| Microsoft Graph for US Government | https://login-us.microsoftonline.com | 
+| Microsoft Graph (serviço global) | https://login.microsoftonline.com | 
 
-### <a name="microsoft-graph-explorer"></a>Explorador do Microsoft Graph
-| Explorador do Microsoft Graph na China | Explorador do Microsoft Graph|
-|---------------------------|----------------|
-|https://developer.microsoft.com/pt-br/graph/graph-explorer-china| https://developer.microsoft.com/graph/graph-explorer|
+Solicitações para os pontos de extremidade de autorização do Azure AD ou de token podem ser formadas usando a URL de base específica da região apropriada. Por exemplo, para a Alemanha:
 
-### <a name="azure-openid-connect-and-oauth20"></a>OpenID Connect e OAuth2.0 do Azure
-Os pontos de extremidade usados para adquirir tokens para entrar ou para chamar o Microsoft Graph operado pelo 21Vianet são diferentes de outras ofertas. 
+- O ponto de extremidade comum de autorização é https://login.microsoftonline.de/common/oauth2/authorize.
+- O ponto de extremidade comum de token é https://login.microsoftonline.de/common/oauth2/token.
 
-| Microsoft Graph operado pela 21Vianet | Microsoft Graph|
-|---------------------------|----------------|
-| https://login.chinacloudapi.cn | https://login.microsoftonline.com|
- 
-Use https://login.chinacloudapi.cn/common/oauth2/authorize para autenticar o usuário e https://login.chinacloudapi.cn/common/oauth2/token para adquirir um token para seu aplicativo para chamar o Microsoft Graph operado pela 21Vianet.
+Pontos de extremidade específicos do locatário podem ser formados por meio da substituição de "comum" nas URLs acima pela ID de locatário ou um domínio verificado para o locatário. O uso de pontos de extremidade comuns ou específicos do locatário dependerá dos requisitos do aplicativo e do fluxo de autenticação que você está usando para obter tokens. Para saber mais sobre tokens de acesso do Azure AD e do Microsoft Graph, confira [Obter tokens de autenticação](./auth_overview.md).
 
-> **Observação:** os últimos [pontos de extremidade de token e autorização do v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) NÃO estão disponíveis para o uso com o Microsoft Graph operado pela 21Vianet. 
+> **Observação:** Os [pontos de extremidade de Azure autorização e token do AD v 2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) estão disponíveis apenas no serviço global. Eles ainda não têm suporte para uso com implantações de nuvem nacional. 
 
->Os aplicativos só podem acessar dados organizacionais e não os dados de clientes por meio do ponto de extremidade **https://microsoftgraph.chinacloudapi.cn**. Os aplicativos devem usar o ponto de extremidade **https://graph.microsoft.com** para acessar dados de clientes.
+## <a name="supported-features"></a>Recursos com suporte
 
-### <a name="service-capabilities-offered-by-microsoft-graph-operated-by-21vianet"></a>Recursos de serviço oferecidos pelo Microsoft Graph operado pela 21Vianet
-Os seguintes recursos do Microsoft Graph estão disponíveis de maneira geral (no ponto de extremidade do `/v1.0`):
+Os seguintes recursos do Microsoft Graph estão geralmente disponíveis (no ponto de extremidade `/v1.0`) em todas as implantações de nuvens nacionais, exceto quando indicado:
 
 * Usuários
 * Grupos
-* Arquivos
-* Email
-* Calendário
-* Contatos pessoais 
-* CRUD (criar, ler, atualizar e excluir) operações
-* Suporte a CORS (compartilhamento de recursos entre origens).
+* Excel (o suporte é limitado no Microsoft Graph operado pela 21Vianet na China.)
+* OneDrive (o suporte é limitado no Microsoft Graph operado pela 21Vianet na China.)
+* Email do Outlook
+* Calendário do Outlook
+* Contatos Pessoais 
+* SharePoint (o suporte é limitado no Microsoft Graph operado pela 21Vianet na China.)
+* Consulta delta (o suporte varia entre diferentes recursos em cada implantação de nuvem nacional.)
+* Webhooks (o suporte varia entre diferentes recursos em cada implantação de nuvem nacional.)
 
-Os seguintes recursos do Microsoft Graph também estão disponíveis no modo de visualização (no ponto de extremidade do `/beta`):
+Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visualização (no ponto de extremidade `/beta`) em todas as implantações de nuvens nacionais, exceto quando indicado:
 
 * Contatos organizacionais
 * Aplicativos
 * Entidades de serviço
+
+Os seguintes recursos do Microsoft Graph ainda não têm suporte em implantações de nuvem nacionais:
+
+* Microsoft Planner
 * Extensões de esquema de diretório
-* Webhooks
+* Extensões de tipo aberto

@@ -11,7 +11,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Files.Read.All, Files.ReadWrite.All    |
 |Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-Além disso, sem um dos escopos **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.
+Além disso, sem uma das permissões **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

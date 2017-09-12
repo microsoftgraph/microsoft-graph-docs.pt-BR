@@ -2,12 +2,16 @@
 
 Recupere as propriedades e os relacionamentos de um objeto [thumbnailSet](../resources/thumbnailset.md).
 
-Para saber mais, consulte [Listar miniaturas](item_list_thumbnails.md).
+Para saber mais, confira [Listar miniaturas](item_list_thumbnails.md).
 
-## <a name="prerequisites"></a>Pré-requisitos
-Um dos seguintes **escopos** é obrigatório para executar esta API:
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-  * Files.Read
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              | 
+|:--------------------|:---------------------------------------------------------| 
+|Delegado (conta corporativa ou de estudante) | Files.Read    | 
+|Delegado (conta pessoal da Microsoft) | Files.Read    | 
+|Aplicativo | Sem suporte. | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -23,6 +27,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
+
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
