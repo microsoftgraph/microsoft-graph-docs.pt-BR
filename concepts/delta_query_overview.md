@@ -78,7 +78,7 @@ As mesmas [permissões](./permissions_reference.md) necessárias para ler um rec
 
 ## <a name="delta-query-request-examples"></a>Exemplos de solicitação de consulta delta 
 
-- [Obter as alterações incrementais para os eventos em um modo de exibição de calendário](../Concepts/delta_query_events.md)
-- [Obtenha alterações incrementais para as mensagens em uma pasta](./delta_query_messages.md)
+- [Obter as alterações incrementais para os eventos em um modo de exibição de calendário](../concepts/delta_query_events.md)
+- [Obter as alterações incrementais para as mensagens em uma pasta](./delta_query_messages.md)
 - [Obter as alterações incrementais para grupos](./delta_query_groups.md)
 - [Obter as alterações incrementais para usuários](./delta_query_users.md)

@@ -1,9 +1,11 @@
 # <a name="get-access-without-a-user"></a>Obtenha acesso sem um usuário
+
 Alguns aplicativos chamam o Microsoft Graph com sua própria identidade e não em nome de um usuário. Em muitos casos, esses são os serviços em plano de fundo ou daemons que podem ser executados em um servidor sem a presença de um usuário conectado. Um exemplo de como um aplicativo pode ser um serviço de arquivamento de email que é ativado e executado durante a noite. Em alguns casos, aplicativos que tenham um usuário conectado no momento talvez precisem chamar o Microsoft Graph com sua própria identidade também. Por exemplo, um aplicativo talvez precise usar a funcionalidade que exige privilégios mais elevados em uma organização do que aqueles realizados pelo usuário conectado.  
 
 Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam o fluxo de concessão de credenciais do cliente OAuth 2.0 para obter tokens de acesso do Azure AD. Neste tópico, vamos orientá-lo pelas etapas básicas para configurar um serviço e usar o fluxo de concessão de credenciais do cliente OAuth para obter um token de acesso. 
 
 ## <a name="authentication-and-authorization-steps"></a>Etapas de autenticação e autorização
+
 As etapas básicas necessárias para configurar um serviço e obter um token para o ponto de extremidade do Azure AD v2.0 que seu serviço pode usar para fazer chamadas para o Microsoft Graph com sua própria identidade são:
 
 1. Registre seu aplicativo.
@@ -13,6 +15,7 @@ As etapas básicas necessárias para configurar um serviço e obter um token par
 5. Use o token de acesso para chamar o Microsoft Graph.
 
 ## <a name="1-register-your-app"></a>1. Registre seu aplicativo
+
 Para autenticar com o ponto de extremidade do Azure v2.0, primeiro você deve registrar seu aplicativo no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/). Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar seu aplicativo 
 
 A captura de tela a seguir mostra um registro do aplicativo Web que foi configurado para um serviço em segundo plano. ![Registro do aplicativo de serviço](./images/v2-service-registration.png)
@@ -29,6 +32,7 @@ Para obter etapas sobre como configurar um aplicativo usando o Portal de Registr
 Com o fluxo de concessão de credenciais do cliente OAuth 2.0, o aplicativo se autentica diretamente no ponto de extremidade `/token` do Azure AD v2.0 usando a ID do Aplicativo atribuída pelo Azure AD e o Segredo do Aplicativo que você cria usando o portal. 
 
 ## <a name="2-configure-permissions-for-microsoft-graph"></a>2. Configure permissões para o Microsoft Graph
+
 Para aplicativos que chamam o Microsoft Graph com sua própria identidade, o Microsoft Graph expõe permissões do aplicativo. (O Microsoft Graph também expõe as permissões delegadas para aplicativos que chamam o Microsoft Graph em nome de um usuário.) Configure previamente as Permissões de aplicativo necessárias quando registrar o aplicativo. As Permissões de aplicativo sempre exigem o consentimento do administrador. Um administrador pode autorizar essas permissões usando o [Portal do Azure](https://portal.azure.com) quando o aplicativo for instalado em sua organização ou pode fornecer uma experiência de inscrição em seu aplicativo por meio da qual os administradores podem concordar com as permissões configuradas. Depois que o consentimento do administrador for registrado pelo Azure AD, seu aplicativo poderá solicitar tokens sem ter que solicitar consentimento novamente. Para obter mais informações sobre as permissões disponibilizadas pelo Microsoft Graph, confira a [Referência de permissões](./permissions_reference.md)
 
 Para configurar as Permissões de aplicativo para seu aplicativo no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/), em **Microsoft Graph**, escolha **Adicionar** ao lado de **Permissões de aplicativo** e, em seguida, escolha as permissões exigidas pelo aplicativo na caixa de diálogo **Selecionar Permissões**.
@@ -37,83 +41,99 @@ A captura de tela a seguir mostra a caixa de diálogo **Selecionar Permissões**
 
 ![Marque a caixa de diálogo Permissões para as Permissões de aplicativo do Microsoft Graph.](./images/v2-application-permissions.png)
 
-> **Importante**: Recomendamos configurar o conjunto com menos privilégios de permissões necessárias para seu aplicativo. Isso proporciona uma experiência muito mais confortável para os administradores do que ter que consentir com uma longa lista de permissões.
->
+> **Observação**: Recomendamos configurar o conjunto com menos privilégios de permissões necessárias para seu aplicativo. Isso proporciona uma experiência muito mais confortável para os administradores do que ter que consentir com uma longa lista de permissões.
 
 ## <a name="3-get-administrator-consent"></a>3. Obtenha o consentimento do administrador
+
 Você pode confiar em um administrador para conceder as permissões que seu aplicativo precisa no [Portal do Azure](https://portal.azure.com). Entretanto, muitas vezes, a melhor opção seria fornecer uma experiência de inscrição para administradores usando o ponto de extremidade `/adminconsent` do Azure AD v2.0. 
 
+> **Importante**: Sempre que fizer uma alteração nas permissões configuradas, convém repetir o processo de Consentimento do Administrador. As alterações feitas no portal de registro de aplicativos não serão refletidas até que o consentimento tiver sido reaplicado pelo administrador do locatário.
+
 ### <a name="request"></a>Solicitação
+
 ```
 // Line breaks are for legibility only.
 
-GET https://login.microsoftonline.com/{tenant}/adminconsent?
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+GET https://login.microsoftonline.com/{tenant}/adminconsent
+?client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 &state=12345
 &redirect_uri=http://localhost/myapp/permissions
 ```
 
-| Parâmetro | Condição | Descrição |
-|:----------|:----------|:------------|
-| locatário |Obrigatório |O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. Se você não souber a qual locatário o usuário pertence e quiser permitir que ele entre em qualquer locatário, use `common`. |
-| client_id |Obrigatório |ID de Aplicativo que o [Portal de Registro de Aplicativos](https://apps.dev.microsoft.com/) atribuiu a seu aplicativo. |
-| redirect_uri |Obrigatório |O URI de redirecionamento para onde você deseja que a resposta seja enviada para que o aplicativo trate da situação. Ele deve corresponder exatamente a um dos URIs de redirecionamento registrados no portal, exceto que ele deve ser codificado por URL e pode ter segmentos de caminho adicionais. |
-| estado |Recomendado |Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. |
+| Parâmetro     | Condição   | Descrição 
+|:--------------|:------------|:------------
+| locatário        | Obrigatório    | O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. Se você não souber a qual locatário o usuário pertence e quiser permitir que ele entre em qualquer locatário, use `common`. 
+| client_id     | Obrigatório    | ID de Aplicativo que o [Portal de Registro de Aplicativos](https://apps.dev.microsoft.com/) atribuiu a seu aplicativo. 
+| redirect_uri  | Obrigatório    | O URI de redirecionamento para onde você deseja que a resposta seja enviada para que o aplicativo trate da situação. Ele deve corresponder exatamente a um dos URIs de redirecionamento registrados no portal, exceto que ele deve ser codificado por URL e pode ter segmentos de caminho adicionais. 
+| estado         | Recomendado | Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. 
 
 ### <a name="administrator-consent-experience"></a>Experiência de consentimento do administrador
-Através de solicitações ao ponto de extremidade `/adminconsent`, o Azure AD exige que apenas um administrador de locatário possa fazer logon para concluir a solicitação. O administrador será solicitado a aprovar todas as Permissões de aplicativo que você solicitar para seu aplicativo no Portal de Registro de Aplicativos. Veja a seguir um exemplo da caixa de diálogo de consentimento que o Azure AD apresenta ao administrador:
+
+Através de solicitações ao ponto de extremidade `/adminconsent`, o Azure AD exige que apenas um administrador de locatário possa fazer logon para concluir a solicitação. O administrador será solicitado a aprovar todas as Permissões de aplicativo que você solicitar para seu aplicativo no Portal de Registro de Aplicativos. 
+
+Veja a seguir um exemplo da caixa de diálogo de consentimento que o Azure AD apresenta ao administrador:
 
 ![Caixa de diálogo do consentimento do administrador.](./images/admin-consent.png)
 
 ### <a name="response"></a>Resposta
+
 Se o administrador aprovar as permissões de seu aplicativo, a resposta bem-sucedida ficará assim:
 
 ```
-GET http://localhost/myapp/permissions?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345&admin_consent=True
+// Line breaks are for legibility only.
+
+GET http://localhost/myapp/permissions
+?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345
+&admin_consent=True
 ```
 
-| Parâmetro | Descrição |
-|:----------|:------------|
-| locatário |O locatário do diretório que concedeu as permissões de aplicativo solicitadas, no formato GUID. |
-| estado |Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. |
-| admin_consent |Definir como **true**. |
+| Parâmetro     | Descrição 
+|:--------------|:------------
+| locatário        | O locatário do diretório que concedeu as permissões de aplicativo solicitadas, no formato GUID. 
+| estado         | Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. 
+| admin_consent | Definir como **true**. 
 
 
-> **Experimente** Você pode experimentar ao colar a solicitação abaixo em um navegador. Se fizer logon como um Administrador global em um locatário do Azure AD, você verá a caixa de diálogo de consentimento do administrador para o aplicativo. (Este aplicativo será diferente do aplicativo exibido na tela de diálogo de consentimento mostrada acima.)
+> **Experimente**: Você pode experimentar ao colar a solicitação abaixo em um navegador. Se fizer logon como um Administrador global em um locatário do Azure AD, você verá a caixa de diálogo de consentimento do administrador para o aplicativo. (Este aplicativo será diferente do aplicativo exibido na tela da caixa de diálogo do consentimento previamente mostrada.)
 > 
-
-```
-https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=http://localhost/myapp/permissions
-```
+> https://login.microsoftonline.com/common/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=http://localhost/myapp/permissions 
 
 ## <a name="4-get-an-access-token"></a>4. Obter um token de acesso
+
 No fluxo de concessão de credenciais do cliente OAuth 2.0, use os valores da ID do Aplicativo e o Segredo do aplicativo salvos quando você registrou o aplicativo para solicitar um token de acesso diretamente no ponto de extremidade `/token` do Azure AD v2.0.
 
 Você especifica as permissões pré-configuradas passando `https://graph.microsoft.com/.default` como o valor para o parâmetro `scope` na solicitação de token. Confira a descrição do parâmetro `scope` na solicitação de token abaixo para obter detalhes.
 
 ### <a name="token-request"></a>Solicitação de token
+
 Envie uma solicitação POST ao ponto de extremidade `/token` do v2.0 para adquirir um token de acesso:
 
 ```
+// Line breaks are for legibility only.
+
 POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-client_id=535fb089-9ff3-47b6-9bfb-4f1264799865&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default&client_secret=qWgdYAmab0YSkuL1qKv5bPX&grant_type=client_credentials
+client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
+&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default
+&client_secret=qWgdYAmab0YSkuL1qKv5bPX
+&grant_type=client_credentials
 ```
 
-| Parâmetro | Condição | Descrição |
-|:----------|:----------|:------------|
-| locatário |Obrigatório |O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. |
-| client_id |Obrigatório |A ID de Aplicativo que o [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com) atribuiu quando você registrou seu aplicativo. |
-| escopo |Obrigatório |O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade do Microsoft Azure ADv2.0 que, de todas as Permissões de aplicativo que você configurou para seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você deseja usar. |
-| client_secret |Obrigatório |O Segredo do Aplicativo gerado para seu aplicativo no portal de registro de aplicativos. |
-| grant_type |Obrigatório |Deve ser `client_credentials`. |
+| Parâmetro     | Condição | Descrição 
+|:--------------|:----------|:------------
+| locatário        | Obrigatório  | O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. 
+| client_id     | Obrigatório  | A ID de Aplicativo que o [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com) atribuiu quando você registrou seu aplicativo. 
+| escopo         | Obrigatório  | O valor passado para o parâmetro `scope` nesta solicitação deve ser o identificador do recurso (URI da ID do Aplicativo) do recurso desejado, afixado com o sufixo `.default`. Para o Microsoft Graph, o valor é `https://graph.microsoft.com/.default`. Esse valor informa ao ponto de extremidade do Microsoft Azure ADv2.0 que, de todas as Permissões de aplicativo que você configurou para seu aplicativo, ele deve emitir um token para os aplicativos associados ao recurso que você deseja usar. 
+| client_secret | Obrigatório  | O Segredo do Aplicativo gerado para seu aplicativo no portal de registro de aplicativos. 
+| grant_type    | Obrigatório  | Deve ser `client_credentials`. 
 
 #### <a name="token-response"></a>Resposta do token
+
 Uma resposta bem-sucedida tem esta aparência:
 
-```
+```json
 {
   "token_type": "Bearer",
   "expires_in": 3599,
@@ -121,11 +141,11 @@ Uma resposta bem-sucedida tem esta aparência:
 }
 ```
 
-| Parâmetro | Descrição |
-|:----------|:------------|
-| access_token |O token de acesso solicitado. Seu aplicativo pode usar esse token em chamadas para o Microsoft Graph. |
-| token_type |Indica o valor de tipo de token. O único tipo ao qual o Azure AD dá suporte é `bearer`. |
-| expires_in |Por quanto tempo o token de acesso é válido (em segundos). |
+| Parâmetro     | Descrição 
+|:--------------|:------------
+| access_token  | O token de acesso solicitado. Seu aplicativo pode usar esse token em chamadas para o Microsoft Graph. 
+| token_type    | Indica o valor de tipo de token. O único tipo ao qual o Azure AD dá suporte é `bearer`. 
+| expires_in    | Por quanto tempo o token de acesso é válido (em segundos). 
 
 ## <a name="5-use-the-access-token-to-call-microsoft-graph"></a>5. Use o token de acesso para chamar o Microsoft Graph
 
@@ -135,11 +155,10 @@ Após obter o token de acesso, você pode usá-lo para chamar o Microsoft Graph,
 GET https://graph.microsoft.com/v1.0/user/12345678-73a6-4952-a53a-e9916737ff7f 
 Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
 Host: graph.microsoft.com
-
 ```
 Uma resposta bem-sucedida terá a seguinte aparência (alguns cabeçalhos de resposta foram removidos):
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8
 request-id: f45d08c0-6901-473a-90f5-7867287de97f
@@ -148,7 +167,9 @@ OData-Version: 4.0
 Duration: 309.0273
 Date: Wed, 26 Apr 2017 19:53:49 GMT
 Content-Length: 407
+```
 
+```json
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users/$entity",
     "id":"12345678-73a6-4952-a53a-e9916737ff7f",
@@ -168,6 +189,7 @@ Content-Length: 407
 ```
 
 ## <a name="supported-app-scenarios-and-resources"></a>Recursos e cenários de aplicativo com suporte
+
 Os aplicativos que chamam o Microsoft Graph com sua própria identidade se enquadram em uma dessas categorias:
 
 - Serviços em segundo plano (daemons) que podem ser executados em um servidor sem um usuário conectado.
@@ -180,6 +202,7 @@ Os aplicativos que chamam o Microsoft Graph com sua própria identidade usam a c
 - Para obter mais informações sobre bibliotecas de autenticação recomendadas da Microsoft e de terceiros do Azure AD v2.0, confira as [bibliotecas de autenticação do Azure Active Directory v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
 ## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
+
 Se você estiver usando o ponto de extremidade do Azure AD, existem algumas diferenças na maneira de configurar seu aplicativo e a maneira de conectá-lo ao Azure AD:
 
 - Você usa o [Portal do Azure](https://portal.azure.com) para configurar seu aplicativo. Para obter mais informações sobre como configurar aplicativos com o Portal do Azure, confira [Integração de aplicativos com o Azure Active Directory: Como adicionar um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)

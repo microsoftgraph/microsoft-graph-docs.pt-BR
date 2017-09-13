@@ -77,7 +77,7 @@ Por exemplo, se uma sugestão de horário de reunião envolve três participante
 |:-----|:-----|:-----|
 |Sara | Disponível | 100% |
 |Davi | Desconhecido | 49% |
-|Lara | Ocupado | 0% |
+|Sara | Ocupado | 0% |
 
 Então a confiança na sugestão do horário da reunião, que corresponde à chance média de presença, é (100% + 49% + 0%) /3 = 49.66%.
 
@@ -114,8 +114,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Fanny Downs",
-        "address": "fannyd@contoso.onmicrosoft.com" 
+        "name": "Samantha Booth",
+        "address": "samanthab@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -188,7 +188,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }
@@ -219,7 +219,7 @@ Content-Length: 976
                     "attendee":{
                         "type":"required",
                         "emailAddress":{
-                            "address":"fannyd@contoso.onmicrosoft.com"
+                            "address":"samanthab@contoso.onmicrosoft.com"
                         }
                     }
                 }

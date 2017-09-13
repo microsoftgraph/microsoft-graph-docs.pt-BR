@@ -130,8 +130,8 @@ A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink`. 
             "subject":"Holiday promotion sale",
             "sender":{
                 "emailAddress":{
-                    "name":"Fanny Downs",
-                    "address":"fannyd@contoso.onmicrosoft.com"
+                    "name":"Samantha Booth",
+                    "address":"samanthab@contoso.onmicrosoft.com"
                 }
             },
             "id":"AQMkADNkNAAAVRMKAAAAA=="
@@ -257,7 +257,7 @@ Prefer: odata.maxpagesize=2
 
 
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 
 - [Consulta delta do Microsoft Graph](../Concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para os eventos em um modo de exibição de calendário](../Concepts/delta_query_events.md)
