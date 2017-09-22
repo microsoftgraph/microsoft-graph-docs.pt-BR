@@ -34,7 +34,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e hora da criação do bloco de anotações. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
@@ -51,16 +51,17 @@ Veja a seguir uma representação JSON do recurso
 |userRole|String|Os valores possíveis são: `Owner`, `Contributor`, `Reader`, `None`. O proprietário representa o acesso no nível de proprietário ao bloco de anotações. O proprietário representa o acesso de leitura/gravação ao bloco de anotações. O leitor representa o acesso somente leitura ao bloco de anotações. Somente leitura.|
 
 ## <a name="relationships"></a>Relacionamento
-| Relação | Tipo    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Obtém os grupos de seção no bloco de anotações. Somente leitura. Anulável.|
-|seções|Coleção [Section](section.md)|As seções no bloco de anotações. Somente leitura. Anulável.|
+|sections|Coleção [Section](section.md)|As seções no bloco de anotações. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter bloco de anotações](../api/notebook_get.md) | [Notebook](notebook.md) |Leia as propriedades e as relações do bloco de anotações.|
+|[getRecentNotebooks](../api/notebook_getrecentnotebooks.md) | coleção [recentNotebook](recentnotebook.md) | Obtenha uma coleção de blocos de anotações acessados mais recentemente para o usuário. |
 |[Criar grupo de seção](../api/notebook_post_sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crie um grupo de seção postando na coleção sectionGroups no bloco de anotações especificado.|
 |[Listar grupos de seção](../api/notebook_list_sectiongroups.md) |Coleção [SectionGroup](sectiongroup.md)| Obtenha uma coleção de grupos de seção no bloco de anotações especificado.|
 |[Criar seção](../api/notebook_post_sections.md) |[Section](section.md)| Crie uma seção postando na coleção sections no bloco de anotações especificado.|

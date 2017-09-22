@@ -3,13 +3,13 @@
 
 Algumas consultas em relação ao Microsoft Graph retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro de consulta `$top` para limitar especificamente o tamanho da página em uma solicitação. Quando um conjunto de resultados se estende por várias páginas, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. 
 
-Por exemplo, a URL a seguir solicita todos os usuários em uma organização com o tamanho de página de 5 especificado com o parâmetro de consulta `$top`:
+Por exemplo, a URL a seguir solicita todos os usuários em uma organização com o tamanho de página 5 especificado com o parâmetro de consulta `$top`:
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-Se o resultado contiver mais de cinco usuários, o Microsoft Graph retornará uma propriedade `odata:nextLink` semelhante à seguinte, junto com a primeira página de usuários.
+Se o resultado contiver mais de cinco usuários, o Microsoft Graph retornará uma propriedade `odata:nextLink` semelhante à mostrada a seguir, junto com a primeira página de usuários.
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
@@ -25,10 +25,10 @@ O Microsoft Graph continuará retornar uma referência para a próxima página d
 
 >**Importante:** Você deve incluir a URL inteira na propriedade `@odata:nextLink` na solicitação da próxima página de resultados. Dependendo da API em relação à qual a consulta está sendo realizada, o valor de URL `@odata:nextLink` conterá um parâmetro de consulta `$skiptoken` ou `$skip`. A URL também contém todos os outros parâmetros de consulta presentes na solicitação original. Não tente extrair o valor `$skiptoken` ou `$skip` e usá-lo em uma solicitação diferente. 
 
-O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. Ao trabalhar com dados de páginas, você deve considerar o seguinte:
+O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. Ao trabalhar com dados paginados, considere o seguinte:
 
-- APIs diferentes podem ter tamanhos de página padrão e máximo diferentes.
+- APIs diferentes podem ter tamanhos padrão e máximo de página diferentes.
 - APIs diferentes poderão se comportar de maneira diferente se você especificar um tamanho de página (por meio do parâmetro de consulta `$top`) que exceda o tamanho máximo de página para essa API. Dependendo da API, o tamanho de página solicitado pode ser ignorado, ele pode usar por padrão o tamanho máximo de página para essa API ou o Microsoft Graph pode retornar um erro. 
 - Nem todos os recursos ou relações dão suporte à paginação. Por exemplo, consultas em relação a [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) não dão suporte à paginação. Isso inclui os objetos de função de leitura e os membros de função.
-- Algumas APIs do Microsoft Graph dão suporte a paginação para trás acrescentando o parâmetro de consulta `previous-page` (`&previous-page=true`) ao valor de URL da propriedade `@odata:nextLink`. Depois que você acrescentar esse parâmetro a uma solicitação, o valor `@odata:nextLink` da URL em respostas subsequentes o incluirá. Você pode continuar a paginar para trás até que uma resposta para um resultado vazio seja retornada. Se continuar a paginação, isso retornará um erro. Como alternativa, você pode continuar a paginação a partir da resposta atual, removendo o parâmetro `previous-page` ao enviar a solicitação para a próxima página de resultados. 
+- Algumas APIs do Microsoft Graph dão suporte a paginação para trás acrescentando o parâmetro de consulta `previous-page` (`&previous-page=true`) ao valor de URL da propriedade `@odata:nextLink`. Depois que você acrescentar esse parâmetro a uma solicitação, o valor de URL `@odata:nextLink` em respostas subsequentes o incluirá. Você pode continuar a paginar para trás até que uma resposta para um resultado vazio seja retornada. Se continuar a paginação, isso retornará um erro. Como alternativa, você pode continuar a paginação a partir da resposta atual, removendo o parâmetro `previous-page` ao enviar a solicitação para a próxima página de resultados. 
 

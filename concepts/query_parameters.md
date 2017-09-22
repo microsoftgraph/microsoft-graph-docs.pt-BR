@@ -2,7 +2,9 @@
 
 O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Há suporte para os parâmetros de consulta a seguir.
 
-|Nome|Descrição|Exemplo (clique nos exemplos para experimentar no [Explorador do Graph][graph-explorer])
+>**Observação:** Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
+
+|Name|Descrição|Exemplo|
 |:---------------|:--------|:-------|
 |[$count](#count)|Recupera a contagem total de recursos correspondentes.|[`/me/messages?$top=2&$count=true`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$top=2%26$count=true&method=GET&version=v1.0)
 |[$expand](#expand)|Recupera os recursos relacionados.|[`/groups?$expand=members`](https://developer.microsoft.com/graph/graph-explorer?request=groups$expand=members&method=GET&version=v1.0)
@@ -18,9 +20,9 @@ Esses parâmetros são compatíveis com a [linguagem de consulta OData V4][odata
 
 > **Observação:** No ponto de extremidade `beta`, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`. Para obter mais detalhes e exemplos, confira [Suporte a parâmetros da consulta sem prefixos $ no Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
-**Codificação de parâmetros da consulta:**
+## <a name="encoding-query-parameters"></a>Codificação de parâmetros da consulta
 
-Os valores dos parâmetros da consulta devem ser codificados por porcentagem. Muitas ferramentas, navegadores e clientes HTTP (por exemplo, o [Explorador do Graph][graph-explorer]) vão ajudar você com isso. Se uma consulta está falhando, um motivo possível é a falha na codificação adequada dos valores dos parâmetros da consulta.
+Os valores dos parâmetros da consulta devem ser codificados por porcentagem. Muitas ferramentas, navegadores e clientes HTTP (como o [Explorador do Graph][graph-explorer]) ajudarão você com isso. Se uma consulta está falhando, uma causa possível é a falha na codificação adequada dos valores dos parâmetros da consulta.
 
 Uma URL descodificada é semelhante a esta:
 
@@ -47,7 +49,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
->**Observação:** `$count` não há suporte para conjuntos de recursos derivados de [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), como conjuntos de [usuário](../api-reference/v1.0/resources/user.md) ou [grupo](../api-reference/v1.0/resources/group.md).
+>**Observação:**`$count` não há suporte para conjuntos de recursos derivados de [`directoryObject`](../api-reference/v1.0/resources/directoryobject.md), como conjuntos de [usuários](../api-reference/v1.0/resources/user.md) ou [grupos](../api-reference/v1.0/resources/group.md).
 
 ## <a name="expand"></a>expand
 
@@ -87,18 +89,31 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
 
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(givenName,'J')&method=GET&version=v1.0)
 
-O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os operadores lógicos a seguir geralmente têm suporte: é igual a (`eq`), não é igual a (`ne`), maior que (`gt`), maior ou igual a (`ge`), menor que (`lt`), menor ou igual a (`le`) e (`and`) ou (`or`) e não (`not`). O operador de cadeia de caracteres `startswith` muitas vezes tem suporte. O operador lambda `any` tem suporte em algumas APIs. Para ver alguns exemplos de uso, confira a tabela a seguir. Para obter outros detalhes sobre a sintaxe `$filter`, veja o [protocolo OData][odata-filter].  
+O suporte para operadores `$filter` varia entre as APIs do Microsoft Graph. Os seguintes operadores lógicos geralmente são suportados: 
 
-A tabela a seguir mostra alguns exemplos usando o parâmetro de consulta `$filter`.
+- igual a (`eq`)
+- não é igual a (`ne`)
+- maior que (`gt`)
+- maior ou igual a (`ge`)
+- menor que (`lt`), menor ou igual a (`le`)
+- e (`and`)
+- ou (`or`)
+- não (`not`)
+ 
+O operador de cadeia de caracteres `startswith` geralmente é suportado. O operador lambda `any` tem suporte em algumas APIs. Para ver alguns exemplos de uso, confira a tabela a seguir. Para obter mais detalhes sobre a sintaxe `$filter`, confira o [protocolo OData][odata-filter].  
 
-|Descrição|Exemplo (clique nos exemplos para experimentar no [Explorador do Graph][graph-explorer])|
+A tabela a seguir mostra alguns exemplos que usam o parâmetro de consulta `$filter`.
+
+>**Observação:** Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
+
+|Descrição|Exemplo|
 |:--------|:-------|
 |  Pesquisar por usuários com o nome Clara entre várias propriedades. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
-| Obtenha todos os eventos do usuário conectado que se iniciaram após 1/7/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
-| Obtenha todos os emails de um endereço específico recebidos pelo usuário conectado. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
-| Obter todos os emails recebidos pelo usuário conectado abril de 2017 | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
-| Obtenha todos os emails não lidos na caixa de entrada do usuário conectado. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
-| Listar todos os grupos do Office 365 em uma organização | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
+| Obter todos os eventos do usuário conectado que começaram após 1/7/2017. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
+| Obter todos os emails de um endereço específico recebidos pelo usuário conectado. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
+| Obter todos os emails recebidos pelo usuário conectado em abril de 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
+| Obter todos os emails não lidos na caixa de entrada do usuário conectado. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
+| Listar todos os grupos do Office 365 em uma organização. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 
 > **Observação:** Os seguintes operadores `$filter` não têm suporte para recursos do Azure AD: `ne`, `gt`, `ge`, `lt`, `le` e `not`. O operador de cadeia de caracteres `contains` atualmente não tem suporte em nenhum recurso do Microsoft Graph.
 
@@ -122,7 +137,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 
 Para classificar os resultados em ordem crescente ou decrescente, anexe `asc` ou `desc` ao nome do campo, separado por um espaço, por exemplo, `?$orderby=name%20desc`.
 
-Com algumas APIs, você pode ordenar os resultados em várias propriedades. Por exemplo, a solicitação a seguir ordena as mensagens na caixa de entrada do usuário primeiro pelo nome da pessoa que enviou, em ordem decrescente (Z a) e, em seguida, por assunto, em ordem crescente (padrão).
+Com algumas APIs, você pode ordenar os resultados em várias propriedades. Por exemplo, a solicitação a seguir ordena as mensagens na caixa de entrada do usuário primeiro pelo nome da pessoa que enviou, em ordem decrescente (Z - A) e, em seguida, por assunto, em ordem ascendente (padrão).
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
@@ -142,7 +157,21 @@ Use o parâmetro de consulta `$search` para restringir os resultados de uma soli
 
 Critérios de pesquisa em mensagens são expressos usando [AQS (Sintaxe de Consulta Avançada)](https://support.office.com/article/Search-Mail-and-People-in-Outlook-com-and-Outlook-on-the-web-for-business-88108edf-028e-4306-b87e-7400bbb40aa7). Os resultados são classificados pela data e hora em que a mensagem foi enviada.
 
-Você pode especificar as seguintes propriedades em uma `message` em um critério `$search`: `attachments`, `bccRecipients`, `body`, `category`, `ccRecipients`, `content`, `from`, `hasAttachments`, `participants`, `receivedDateTime`, `sender`, `subject`,`toRecipients`
+Você pode especificar as seguintes propriedades em uma `message` em um critério `$search`: 
+
+- `attachments`
+- `bccRecipients`
+- `body`
+- `category`
+- `ccRecipients`
+- `content`
+- `from`
+- `hasAttachments`
+- `participants`
+- `receivedDateTime`
+- `sender`
+- `subject`
+- `toRecipients`
 
 Se você realizar uma pesquisa em mensagens e especificar apenas um valor, a pesquisa será realizada nas propriedades de pesquisa padrão `from`, `subject` e `body`.
 
@@ -183,13 +212,13 @@ Finalmente, você pode combinar pesquisas de pessoas e pesquisas de tópicos na 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
 ```
-Essa solicitação essencialmente realiza duas pesquisas: uma pesquisa difusa em relação às propriedades `displayName` e `emailAddress` de pessoas relevantes ao usuário conectado e um tópico que pesquise "pizza" em relação às pessoas relevantes ao usuário. Os resultados são classificados, ordenados e retornados. Observe que a pesquisa não é restritiva. Você pode obter resultados que contêm pessoas com correspondência difusa "car", que estão interessadas em "pizza" ou ambos.
+Essa solicitação realiza basicamente duas pesquisas: uma pesquisa difusa em relação às propriedades `displayName` e `emailAddress` de pessoas relevantes ao usuário conectado e uma pesquisa pontual por "pizza" em relação às pessoas relevantes ao usuário. Os resultados são classificados, ordenados e retornados. A pesquisa não é restritiva. Você pode obter resultados que contenham pessoas com correspondência difusa "car", que estejam interessadas em "pizza" ou ambos.
 
 Para saber mais sobre a API de Pessoas, confira [Obter informações sobre pessoas relevantes](./people_example.md).  
 
 ## <a name="select"></a>select
 
-Use o parâmetro de consulta `$select` para retornar um conjunto de propriedades diferente do padrão definido para um recurso individual ou um conjunto de recursos. Com $select, você pode especificar um subconjunto ou um subconjunto das propriedades padrão.
+Use o parâmetro de consulta `$select` para retornar um conjunto de propriedades diferente do padrão definido para um recurso individual ou um conjunto de recursos. Com $select, você pode especificar um subconjunto ou um superconjunto das propriedades padrão.
 
 Por exemplo, ao recuperar as mensagens do usuário conectado, você pode especificar que somente as propriedades `from` e `subject` sejam retornadas:
 
@@ -199,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$select=from,subject&method=GET&version=v1.0)
 
-> **Importante:** Em geral, recomendamos que você use `$select` para limitar as propriedades retornadas por uma consulta àqueles exigidas pelo aplicativo. Isso se aplica particularmente a consultas que podem potencialmente retornar um conjunto de resultados grande. Limitar as propriedades retornadas em cada linha reduzirá a carga de rede e ajudará a melhorar o desempenho do aplicativo.
+> **Importante:** Em geral, recomendamos que você use `$select` para limitar as propriedades retornadas por uma consulta àqueles exigidas pelo aplicativo. Isso se aplica particularmente a consultas com o potencial de retornar um conjunto de resultados amplo. Limitar as propriedades retornadas em cada linha reduzirá a carga de rede e ajudará a melhorar o desempenho do aplicativo.
 >
 > No `v1.0`, alguns recursos do Azure AD que derivam de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [usuário](../api-reference/v1.0/resources/user.md) e [grupo](../api-reference/v1.0/resources/group.md), retornam um subconjunto limitado padrão de propriedades em leituras. Para esses recursos, você deve usar `$select` para retornar propriedades fora do conjunto padrão.  
 
@@ -212,7 +241,7 @@ GET  https://graph.microsoft.com/v1.0/me/events?$orderby=createdDateTime&$skip=2
 ```
 [Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$orderby=createdDateTime&$skip=20&method=GET&version=v1.0)
 
-> **Observação:** Algumas APIs do Microsoft Graph, como Email e Calendários do Outlook (`message`, `event` e `calendar`), usam `$skip` para implementar a paginação. Quando os resultados de uma consulta ocuparem várias páginas, essas APIs retornarão uma propriedade `@odata:nextLink` com uma URL que contém um parâmetro `$skip`. Você pode usar essa URL para retornar a próxima página de resultados. Para saber mais, confira [paginação](./paging.md).
+> **Observação:** Algumas APIs do Microsoft Graph, como Email e Calendário do Outlook (`message`, `event` e `calendar`), usam `$skip` para implementar a paginação. Quando os resultados de uma consulta ocuparem várias páginas, essas APIs retornarão uma propriedade `@odata:nextLink` com uma URL que contém um parâmetro `$skip`. Você pode usar essa URL para retornar a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md).
 
 ## <a name="skiptoken"></a>skipToken
 
@@ -223,7 +252,7 @@ Algumas solicitações retornam várias páginas de dados devido à paginação 
 
 Use o parâmetro de consulta `$top` para especificar o tamanho de página do conjunto de resultados. 
 
-Se houver mais itens restantes no conjunto de resultados, o corpo da resposta conterá um parâmetro `@odata.nextLink`. Esse parâmetro contém uma URL que você pode usar para obter a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md). 
+Se restarem mais itens no conjunto de resultados, o corpo da resposta conterá um parâmetro `@odata.nextLink`. Esse parâmetro contém uma URL que você pode usar para obter a próxima página de resultados. Para saber mais, confira [Paginação](./paging.md). 
 
 Por exemplo, a solicitação a seguir retorna as primeiras cinco mensagens na caixa de correio do usuário:
 
