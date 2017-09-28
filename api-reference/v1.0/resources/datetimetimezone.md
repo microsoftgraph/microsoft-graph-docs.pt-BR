@@ -140,7 +140,7 @@ Europa/Moscou
 
 Ásia/Tashkent
 
-Ásia/Calcutá
+Ásia/Kolkata (Calcutá)
 
 Ásia/Colombo
 

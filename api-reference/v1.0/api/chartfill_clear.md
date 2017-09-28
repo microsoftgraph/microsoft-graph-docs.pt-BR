@@ -1,7 +1,7 @@
 # <a name="chartfill-clear"></a>ChartFill: clear
 
 Limpe a cor de preenchimento de um elemento do gráfico.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -24,6 +24,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
