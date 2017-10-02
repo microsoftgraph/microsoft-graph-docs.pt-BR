@@ -121,7 +121,7 @@ Dependendo do recurso assinado, um campo resourceData adicional pode fornecer in
    ]
 }
 ```
-Ao receber notificações de assinaturas de Drive, resourceData será nulo, e a API [delta](item_delta.md) deverá ser chamada para determinar as alterações que ocorreram. Veja a seguir um exemplo de notificação de Drive:
+Ao receber notificações de assinaturas de Drive, resourceData será nulo, e a API [delta](driveitem_delta.md) deverá ser chamada para determinar as alterações que ocorreram. Veja a seguir um exemplo de notificação de Drive:
 ```http
 {
   "subscriptionId": "aa269f87-2a92-4cff-a43e-2771878c3727",

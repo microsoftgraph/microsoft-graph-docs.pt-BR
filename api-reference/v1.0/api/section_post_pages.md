@@ -1,6 +1,7 @@
 # <a name="create-page"></a>Criar página
 
 Crie uma nova [página](../resources/page.md) na seção especificado.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 

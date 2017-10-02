@@ -67,7 +67,7 @@ A consulta Delta é compatível atualmente com os seguintes recursos:
 | Pastas de contatos pessoais | função [delta](../api-reference/v1.0/api/contactfolder_delta.md) do recurso [contactFolder](../api-reference/v1.0/resources/contactfolder.md) |
 | Contatos pessoais em uma pasta | função [delta](../api-reference/v1.0/api/contact_delta.md) do recurso [contato](../api-reference/v1.0/resources/contact.md) |
 | Usuários | função [delta](../api-reference/v1.0/api/user_delta.md) do recurso [usuário](../api-reference/v1.0/resources/user.md) | 
-| Itens de unidade\* | Função [delta](../api-reference/v1.0/api/item_delta.md) do recurso [driveItem](../api-reference/v1.0/resources/driveItem.md) |
+| Itens de unidade\* | Função [delta](../api-reference/v1.0/api/driveitem_delta.md) do recurso [driveItem](../api-reference/v1.0/resources/driveitem.md) |
 
 
 > \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Para obter mais detalhes sobre a sintaxe atual, veja: <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
