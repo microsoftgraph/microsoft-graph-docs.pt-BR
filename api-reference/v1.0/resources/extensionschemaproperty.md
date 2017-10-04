@@ -1,30 +1,26 @@
-# Tipo de recurso extensionSchemaProperty
-<a id="extensionschemaproperty-resource-type" class="xliff"></a>
+# <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
 Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição [schemaExtension](schemaextension.md).
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|String| O nome da propriedade digitada definido como parte de uma extensão de esquema.|
+|name|String| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
 |type|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
-#### Tipos de dados de propriedade com suporte
-<a id="supported-property-data-types" class="xliff"></a> 
+#### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
 Há suporte para os seguintes tipos de dados quando se define uma propriedade em uma extensão do esquema:
 
 | Tipo de propriedade | Comentários |
 |-------------|------------|
 | Binária | No máximo 256 bytes. |
-| Booliano | Não é compatível com as mensagens, eventos e postagens. |
+| Booliano | Não é compatível com os contatos, mensagens, eventos e postagens. |
 | DateTime | Deve ser especificado no formato ISO 8601. Serão armazenados no UTC. |
-| Inteiro | Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens. |
+| Número inteiro | Valor de 32 bits. Não é compatível com os contatos, mensagens, eventos e postagens. |
 | String | Máximo de 256 caracteres. |
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
