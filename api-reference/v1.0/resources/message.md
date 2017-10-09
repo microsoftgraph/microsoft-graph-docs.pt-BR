@@ -21,11 +21,11 @@ Esse recurso permite:
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[delta](../api/message_delta.md)|Coleção [message](message.md)| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
-|[forward](../api/message_forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[forward](../api/message_forward.md)|None|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message_move.md)|[Message](message.md)|Mover a mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
-|[reply](../api/message_reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[replyAll](../api/message_replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[send](../api/message_send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
+|[reply](../api/message_reply.md)|None|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[replyAll](../api/message_replyall.md)|None|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[send](../api/message_send.md)|None|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |**Anexos**| | |
 |[Listar anexos](../api/message_list_attachments.md) |Coleção [Attachment](attachment.md)| Obtém todos os anexos em uma mensagem.|
 |[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Adicione um novo anexo a uma mensagem postando na coleção attachments.|
@@ -139,7 +139,12 @@ Veja a seguir uma representação JSON do recurso
   "subject": "string",
   "toRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "uniqueBody": {"@odata.type": "microsoft.graph.itemBody"},
-  "webLink": "string"
+  "webLink": "string",
+
+  "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
+  "extensions": [{"@odata.type": "microsoft.graph.extension"}],
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
