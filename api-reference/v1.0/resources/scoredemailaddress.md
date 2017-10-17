@@ -7,7 +7,7 @@ Representa um endereço de email pontuado.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|string|O endereço de email.|
-|relevanceScore|duplo|A pontuação de relevância do endereço de email. Uma pontuação de relevância é usada como uma chave de classificação em relação aos outros resultados retornados. Um valor mais alto de pontuação de relevância corresponde a um resultado mais relevante. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
+|relevanceScore|double|A pontuação de relevância do endereço de email. Uma pontuação de relevância é usada como uma chave de classificação em relação aos outros resultados retornados. Um valor mais alto de pontuação de relevância corresponde a um resultado mais relevante. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -24,7 +24,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "address": "string",
-  "relevanceScore": 1024
+  "relevanceScore": 1024.0
 }
 ```
 

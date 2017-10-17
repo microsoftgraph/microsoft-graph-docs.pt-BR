@@ -47,7 +47,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 A solicitação a seguir obtém as pessoas mais relevantes para o usuário conectado (`/me`), com base nos padrões de comunicação e colaboração e nas relações comerciais. 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_person_collection"
 }-->
 
 ```http
@@ -57,8 +57,10 @@ GET https://graph.microsoft.com/v1.0/me/people/
 O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.
 <!-- {
   "blockType": "response",
+  "name": "get_person_collection",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -86,7 +88,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Lorrief@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ],
             "phones": [
@@ -97,10 +99,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "5767393D-42BA-4E5C-BEE4-52BB25639CF4",
@@ -121,7 +125,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Maynardd@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ],
             "phones": [
@@ -132,10 +136,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "914B5191-11FA-4C0B-A354-0FA8C8EFD585",
@@ -156,7 +162,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Darrelh@contoso.onmicrosoft.com",
-                    "relevanceScore": 8
+                    "relevanceScore": 8.0
                 }
             ],
             "phones": [
@@ -167,10 +173,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         }
     ]
 }
@@ -181,7 +189,7 @@ A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na 
 
 <!-- {
   "blockType": "request",
-  "name": "get_person"
+  "name": "get_other_person"
 }-->
 
 ```http
@@ -192,8 +200,10 @@ O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 regi
 
 <!-- {
   "blockType": "response",
+  "name": "get_other_person",
   "truncated": true,
-  "@odata.type": "microsoft.graph.person"
+  "@odata.type": "microsoft.graph.person",
+  "isCollection": true
 } -->
 
 ```http
@@ -221,7 +231,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Cliftonc@contoso.onmicrosoft.com",
-                    "relevanceScore": 20
+                    "relevanceScore": 20.0
                 }
             ],
             "phones": [
@@ -232,10 +242,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
@@ -256,7 +268,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Shereem@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
+                    "relevanceScore": 10.0
                 }
             ],
             "phones": [
@@ -267,10 +279,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         },
         {
             "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
@@ -291,7 +305,7 @@ Content-type: application/json
             "scoredEmailAddresses": [
                 {
                     "address": "Vincentm@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
+                    "relevanceScore": 10.0
                 }
             ],
             "phones": [
@@ -302,10 +316,12 @@ Content-type: application/json
             ],
             "postalAddresses": [],
             "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
+            "personType": [
+                {
+                    "class": "Person",
+                    "subclass": "OrganizationUser"
+                }
+            ]
         }
     ]
 }
