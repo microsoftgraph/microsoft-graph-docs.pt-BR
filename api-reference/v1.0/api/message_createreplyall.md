@@ -1,6 +1,6 @@
 # <a name="message-createreplyall"></a>message: createReplyAll
 
-Crie um rascunho da mensagem de resposta a todos. Você poderá, então, [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) o rascunho.
+Crie um rascunho para responder ao remetente e a todos os destinatários da [mensagem](../resources/message.md) especificada. Você pode [atualizar](../api/message_update.md) o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente [enviar](../api/message_send.md) o rascunho.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -23,9 +23,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
@@ -41,12 +41,6 @@ Este é um exemplo da solicitação.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "comment-value"
-}
 ```
 
 ##### <a name="response"></a>Resposta

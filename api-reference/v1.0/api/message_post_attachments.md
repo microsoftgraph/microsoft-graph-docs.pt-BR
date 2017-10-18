@@ -1,6 +1,14 @@
 # <a name="add-attachment"></a>Adicionar anexo
 
-Use esta API para adicionar um [attachment](../resources/attachment.md) a uma mensagem. 
+Use esta API para adicionar um [anexo](../resources/attachment.md) a uma mensagem. 
+
+Um anexo pode ser de um dos seguintes tipos:
+
+* Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
+* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)).
+* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceAttachment.md)).
+
+Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
 
 Você pode adicionar um anexo a uma mensagem existente postando na seu coleção de anexos, ou pode adicionar um anexo a uma mensagem que está sendo [criada e enviada dinamicamente](../api/user_sendmail.md).
 

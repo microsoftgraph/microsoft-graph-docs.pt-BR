@@ -115,6 +115,6 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
 
 ## <a name="see-also"></a>Confira também
 
-- Experimente exemplos de chamada REST em nosso [Gerenciador de API](https://graph.microsoft.io/graph-explorer).
-- [Documentação de ponto de extremidade do Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
+- Experimente as chamadas REST de exemplo no [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- [Documentação de ponto de extremidade do Microsoft Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentação de ponto de extremidade do Azure AD v2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)

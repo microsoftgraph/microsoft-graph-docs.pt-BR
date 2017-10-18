@@ -1,6 +1,15 @@
 # <a name="add-attachment"></a>Adicionar anexo
 
 Use esta API para criar um novo Anexo.
+
+Um anexo pode ser de um dos seguintes tipos:
+
+* Um arquivo (recurso [fileAttachment](../resources/fileattachment.md)).
+* Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md)).
+* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceAttachment.md)).
+
+Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
