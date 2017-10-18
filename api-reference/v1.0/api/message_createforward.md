@@ -1,17 +1,17 @@
-# <a name="message-createforward"></a><span data-ttu-id="5da23-101">message: createForward</span><span class="sxs-lookup"><span data-stu-id="5da23-101">message: createForward</span></span>
+# <a name="message-createforward"></a><span data-ttu-id="b911d-101">message: createForward</span><span class="sxs-lookup"><span data-stu-id="b911d-101">message: createForward</span></span>
 
-<span data-ttu-id="5da23-p101">Crie um rascunho da mensagem de encaminhamento. Você poderá, então, [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) o rascunho.</span><span class="sxs-lookup"><span data-stu-id="5da23-p101">Create a draft of the Forward message. You can then [update](../api/message_update.md) or [send](../api/message_send.md) the draft.</span></span>
+<span data-ttu-id="b911d-102">Crie um rascunho para encaminhar a [mensagem](../resources/message.md) especificada.</span><span class="sxs-lookup"><span data-stu-id="b911d-102">Create a draft to forward the specified [message](../resources/message.md).</span></span> <span data-ttu-id="b911d-103">Você pode [atualizar](../api/message_update.md) o rascunho para adicionar conteúdo ao **corpo** ou alterar outras propriedades da mensagem ou, simplesmente, [enviar](../api/message_send.md) o rascunho.</span><span class="sxs-lookup"><span data-stu-id="b911d-103">You can then [update](../api/message_update.md) the draft to add content to the **body** or change other message properties, or, simply [send](../api/message_send.md) the draft.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5da23-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="5da23-104">Permissions</span></span>
-<span data-ttu-id="5da23-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5da23-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b911d-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="b911d-104">Permissions</span></span>
+<span data-ttu-id="b911d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="b911d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="5da23-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5da23-107">Permission type</span></span>      | <span data-ttu-id="5da23-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5da23-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b911d-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b911d-107">Permission type</span></span>      | <span data-ttu-id="b911d-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b911d-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5da23-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5da23-109">Delegated (work or school account)</span></span> | <span data-ttu-id="5da23-110">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5da23-110">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="5da23-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5da23-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5da23-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5da23-112">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="5da23-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5da23-113">Application</span></span> | <span data-ttu-id="5da23-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5da23-114">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="b911d-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b911d-109">Delegated (work or school account)</span></span> | <span data-ttu-id="b911d-110">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b911d-110">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b911d-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b911d-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b911d-112">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b911d-112">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="b911d-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b911d-113">Application</span></span> | <span data-ttu-id="b911d-114">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b911d-114">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5da23-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5da23-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b911d-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b911d-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createForward
@@ -19,50 +19,32 @@ POST /users/{id | userPrincipalName}/messages/{id}/createForward
 POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
-## <a name="request-headers"></a><span data-ttu-id="5da23-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5da23-116">Request headers</span></span>
-| <span data-ttu-id="5da23-117">Nome</span><span class="sxs-lookup"><span data-stu-id="5da23-117">Name</span></span>       | <span data-ttu-id="5da23-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="5da23-118">Type</span></span> | <span data-ttu-id="5da23-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="5da23-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b911d-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b911d-116">Request headers</span></span>
+| <span data-ttu-id="b911d-117">Nome</span><span class="sxs-lookup"><span data-stu-id="b911d-117">Name</span></span>       | <span data-ttu-id="b911d-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="b911d-118">Type</span></span> | <span data-ttu-id="b911d-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="b911d-119">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5da23-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="5da23-120">Authorization</span></span>  | <span data-ttu-id="5da23-121">string</span><span class="sxs-lookup"><span data-stu-id="5da23-121">string</span></span>  | <span data-ttu-id="5da23-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5da23-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5da23-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5da23-124">Content-Type</span></span> | <span data-ttu-id="5da23-125">string</span><span class="sxs-lookup"><span data-stu-id="5da23-125">string</span></span>  | <span data-ttu-id="5da23-p104">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5da23-p104">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="b911d-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="b911d-120">Authorization</span></span>  | <span data-ttu-id="b911d-121">string</span><span class="sxs-lookup"><span data-stu-id="b911d-121">string</span></span>  | <span data-ttu-id="b911d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b911d-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5da23-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5da23-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b911d-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b911d-124">Request body</span></span>
+<span data-ttu-id="b911d-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b911d-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5da23-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="5da23-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b911d-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="b911d-126">Response</span></span>
 
-<span data-ttu-id="5da23-130">Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5da23-130">If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="b911d-127">Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b911d-127">If successful, this method returns `201, Created` response code and [Message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5da23-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5da23-131">Example</span></span>
-<span data-ttu-id="5da23-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="5da23-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="5da23-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5da23-133">Request</span></span>
-<span data-ttu-id="5da23-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5da23-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b911d-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b911d-128">Example</span></span>
+<span data-ttu-id="b911d-129">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="b911d-129">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b911d-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b911d-130">Request</span></span>
+<span data-ttu-id="b911d-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b911d-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
-Content-type: application/json
-Content-length: 248
-
-{
-  "comment": "Comment-value",
-  "toRecipients": [
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    },
-    {
-      "emailAddress": {
-        "address": "address-value"
-      }
-    }
-  ]
-}
 ```
 
-##### <a name="response"></a><span data-ttu-id="5da23-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5da23-135">Response</span></span>
-<span data-ttu-id="5da23-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5da23-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b911d-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="b911d-132">Response</span></span>
+<span data-ttu-id="b911d-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b911d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
