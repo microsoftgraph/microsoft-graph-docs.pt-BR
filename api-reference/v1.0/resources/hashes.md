@@ -1,12 +1,22 @@
-# <a name="hashes-resource-type"></a><span data-ttu-id="01720-101">Tipo de recurso de hashes</span><span class="sxs-lookup"><span data-stu-id="01720-101">Hashes resource type</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+ms.openlocfilehash: 9de6923146b915207fc771721d7aeb6767e9f99e
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
+# <a name="hashes-resource-type"></a><span data-ttu-id="168e9-101">Tipo de recurso de hashes</span><span class="sxs-lookup"><span data-stu-id="168e9-101">Hashes resource type</span></span>
 
-<span data-ttu-id="01720-102">O recurso **hash** agrupa hashes disponíveis em uma estrutura simples para um item.</span><span class="sxs-lookup"><span data-stu-id="01720-102">The **Hashes** resource groups available hashes into a single structure for an item.</span></span>
+<span data-ttu-id="168e9-102">O recurso **hash** agrupa hashes disponíveis em uma estrutura simples para um item.</span><span class="sxs-lookup"><span data-stu-id="168e9-102">The **Hashes** resource groups available hashes into a single structure for an item.</span></span>
 
-<span data-ttu-id="01720-103">**Observação:** Nem todos os serviços fornecem um valor para todas as propriedades de hash listadas.</span><span class="sxs-lookup"><span data-stu-id="01720-103">**Note:** Not all services provide a value for all hash properties listed.</span></span>
+<span data-ttu-id="168e9-103">**Observação:** Nem todos os serviços fornecem um valor para todas as propriedades de hash listadas.</span><span class="sxs-lookup"><span data-stu-id="168e9-103">**Note:** Not all services provide a value for all hash properties listed.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="01720-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="01720-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="168e9-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="168e9-104">JSON representation</span></span>
 
-<span data-ttu-id="01720-105">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="01720-105">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="168e9-105">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="168e9-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -16,37 +26,36 @@
 
 ```json
 {
-  "crc32Hash": "string",
-  "sha1Hash": "string",
-  "quickXorHash": "string"
+  "crc32Hash": "string (hex)",
+  "sha1Hash": "string (hex)",
+  "quickXorHash": "string (base64)"
 }
 ```
 
+## <a name="properties"></a><span data-ttu-id="168e9-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="168e9-106">Properties</span></span>
 
-## <a name="properties"></a><span data-ttu-id="01720-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="01720-106">Properties</span></span>
-
-| <span data-ttu-id="01720-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="01720-107">Property</span></span>         | <span data-ttu-id="01720-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="01720-108">Type</span></span>   | <span data-ttu-id="01720-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="01720-109">Description</span></span>                                                       |
+| <span data-ttu-id="168e9-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="168e9-107">Property</span></span>         | <span data-ttu-id="168e9-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="168e9-108">Type</span></span>   | <span data-ttu-id="168e9-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="168e9-109">Description</span></span>                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| <span data-ttu-id="01720-110">**sha1Hash**</span><span class="sxs-lookup"><span data-stu-id="01720-110">**sha1Hash**</span></span>     | <span data-ttu-id="01720-111">String</span><span class="sxs-lookup"><span data-stu-id="01720-111">String</span></span> | <span data-ttu-id="01720-p101">Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="01720-p101">SHA1 hash for the contents of the file (if available). Read-only.</span></span> |
-| <span data-ttu-id="01720-114">**crc32Hash**</span><span class="sxs-lookup"><span data-stu-id="01720-114">**crc32Hash**</span></span>    | <span data-ttu-id="01720-115">String</span><span class="sxs-lookup"><span data-stu-id="01720-115">String</span></span> | <span data-ttu-id="01720-p102">O valor de CRC32 do arquivo (se disponível). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="01720-p102">The CRC32 value of the file (if available). Read-only.</span></span>            |
-| <span data-ttu-id="01720-118">**quickXorHash**</span><span class="sxs-lookup"><span data-stu-id="01720-118">**quickXorHash**</span></span> | <span data-ttu-id="01720-119">String</span><span class="sxs-lookup"><span data-stu-id="01720-119">String</span></span> | <span data-ttu-id="01720-p103">Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="01720-p103">A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.</span></span> |
+| <span data-ttu-id="168e9-110">**sha1Hash**</span><span class="sxs-lookup"><span data-stu-id="168e9-110">**sha1Hash**</span></span>     | <span data-ttu-id="168e9-111">String</span><span class="sxs-lookup"><span data-stu-id="168e9-111">String</span></span> | <span data-ttu-id="168e9-p101">Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="168e9-p101">SHA1 hash for the contents of the file (if available). Read-only.</span></span> |
+| <span data-ttu-id="168e9-114">**crc32Hash**</span><span class="sxs-lookup"><span data-stu-id="168e9-114">**crc32Hash**</span></span>    | <span data-ttu-id="168e9-115">String</span><span class="sxs-lookup"><span data-stu-id="168e9-115">String</span></span> | <span data-ttu-id="168e9-p102">O valor de CRC32 do arquivo (se disponível). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="168e9-p102">The CRC32 value of the file (if available). Read-only.</span></span>            |
+| <span data-ttu-id="168e9-118">**quickXorHash**</span><span class="sxs-lookup"><span data-stu-id="168e9-118">**quickXorHash**</span></span> | <span data-ttu-id="168e9-119">String</span><span class="sxs-lookup"><span data-stu-id="168e9-119">String</span></span> | <span data-ttu-id="168e9-p103">Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="168e9-p103">A proprietary hash of the file that can be used to determine if the contents of the file have changed (if available). Read-only.</span></span> |
 
-<span data-ttu-id="01720-p104">**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.</span><span class="sxs-lookup"><span data-stu-id="01720-p104">**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.</span></span>
+<span data-ttu-id="168e9-p104">**Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.</span><span class="sxs-lookup"><span data-stu-id="168e9-p104">**Note:** In some cases hash values may not be available. If this is the case, the hash values on an item will be updated after the item is downloaded.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="168e9-124">Comentários</span><span class="sxs-lookup"><span data-stu-id="168e9-124">Remarks</span></span>
+
+<span data-ttu-id="168e9-125">No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash** não estão disponíveis.</span><span class="sxs-lookup"><span data-stu-id="168e9-125">In OneDrive for Business and SharePoint Server 2016, **sha1Hash** and **crc32Hash** are not available.</span></span>
+
+<span data-ttu-id="168e9-126">No OneDrive Personal, o **quickXorHash** não está disponível.</span><span class="sxs-lookup"><span data-stu-id="168e9-126">In OneDrive Personal, **quickXorHash** is not available.</span></span>
+
+<span data-ttu-id="168e9-127">Para calcular o **quickXorHash** de um arquivo, confira o [trecho de código QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).</span><span class="sxs-lookup"><span data-stu-id="168e9-127">To calculate **quickXorHash** for a file, refer to the [QuickXorHash snippet](https://dev.onedrive.com/snippets/quickxorhash.htm).</span></span>
+<span data-ttu-id="168e9-128">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="168e9-128">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
-## <a name="remarks"></a><span data-ttu-id="01720-124">Comentários</span><span class="sxs-lookup"><span data-stu-id="01720-124">Remarks</span></span>
-
-<span data-ttu-id="01720-p105">No OneDrive for Business, **sha1Hash** e **crc32Hash** não estão disponíveis. No OneDrive Personal, **quickXorHash** não está disponível.</span><span class="sxs-lookup"><span data-stu-id="01720-p105">In OneDrive for Business, **sha1Hash** and **crc32Hash** are not available. In OneDrive Personal, **quickXorHash** is not available.</span></span>
-
-<span data-ttu-id="01720-127">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="01720-127">For more information about the facets on a [driveItem](driveitem.md), see driveItem.</span></span>
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "hashes resource",
-  "keywords": "",
+  "description": "The hashes facet provides hash identifiers for a file in OneDrive",
+  "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Hashes"
+} -->

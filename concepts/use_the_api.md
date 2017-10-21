@@ -1,75 +1,77 @@
-# <a name="use-the-microsoft-graph-api"></a>Usar a API do Microsoft Graph
+# <a name="use-the-microsoft-graph-api"></a><span data-ttu-id="e8db8-101">Usar a API do Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="e8db8-101">Use the Microsoft Graph API</span></span>
 
-O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você [registrar seu aplicativo](auth_register_app_v2.md) e [obter tokens de autenticação para um usuário](auth_v2_user.md) ou [serviço](auth_v2_service.md), é possível fazer solicitações para a API do Microsoft Graph.
+<span data-ttu-id="e8db8-102">O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="e8db8-102">Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources.</span></span> <span data-ttu-id="e8db8-103">Depois que você [registrar seu aplicativo](auth_register_app_v2.md) e [obter tokens de autenticação para um usuário](auth_v2_user.md) ou [serviço](auth_v2_service.md), é possível fazer solicitações para a API do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="e8db8-103">Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth_register_app_v2.md) and [get authentication tokens for a user](auth_v2_user.md) or [service](auth_v2_service.md), you can make requests to the Microsoft Graph API.</span></span>
 
-Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.
+> <span data-ttu-id="e8db8-104">**Importante:**  A maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando.</span><span class="sxs-lookup"><span data-stu-id="e8db8-104">**Important:**  How conditional access policies apply to Microsoft Graph is changing.</span></span> <span data-ttu-id="e8db8-105">Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas.</span><span class="sxs-lookup"><span data-stu-id="e8db8-105">Applications need to be updated to handle scenarios where conditional access policies are configured.</span></span> <span data-ttu-id="e8db8-106">Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).</span><span class="sxs-lookup"><span data-stu-id="e8db8-106">For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).</span></span>
+
+<span data-ttu-id="e8db8-107">Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.</span><span class="sxs-lookup"><span data-stu-id="e8db8-107">To read from or write to a resource such as a user or an email message, you construct a request that looks like the following.</span></span>
 
 ```http
 https://graph.microsoft.com/{version}/{resource}?query-parameters
 ```
 
-Os componentes de uma solicitação incluem:
+<span data-ttu-id="e8db8-108">Os componentes de uma solicitação incluem:</span><span class="sxs-lookup"><span data-stu-id="e8db8-108">The components of a request include:</span></span>
 
-* [Método HTTP](#http-methods) -o método HTTP usado na solicitação para o Microsoft Graph.
-* [`{version}`](#version) – a versão da API do Microsoft Graph que seu aplicativo está usando.
-* [`{resource}`](#resource) – o recurso no Microsoft Graph ao qual você está fazendo referência.
-* [query-parameters](#query-parameters-optional) – um conjunto opcional de parâmetros para modificar a solicitação ou a resposta.
+* <span data-ttu-id="e8db8-109">[Método HTTP](#http-methods) -o método HTTP usado na solicitação para o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="e8db8-109">[HTTP method](#http-methods) - The HTTP method used on the request to Microsoft Graph.</span></span>
+* <span data-ttu-id="e8db8-110">[`{version}`](#version) – a versão da API do Microsoft Graph que seu aplicativo está usando.</span><span class="sxs-lookup"><span data-stu-id="e8db8-110">[`{version}`](#version) - The version of the Microsoft Graph API your application is using.</span></span>
+* <span data-ttu-id="e8db8-111">[`{resource}`](#resource) – o recurso no Microsoft Graph ao qual você está fazendo referência.</span><span class="sxs-lookup"><span data-stu-id="e8db8-111">[`{resource}`](#resource) - The resource in Microsoft Graph that you're referencing.</span></span>
+* <span data-ttu-id="e8db8-112">[query-parameters](#query-parameters-optional) – um conjunto opcional de parâmetros para modificar a solicitação ou a resposta.</span><span class="sxs-lookup"><span data-stu-id="e8db8-112">[query-parameters](#query-parameters-optional) - An optional set of parameters to modify the request or response.</span></span>
 
-Depois de fazer uma solicitação, uma resposta é retornada, que inclui: 
+<span data-ttu-id="e8db8-113">Depois de fazer uma solicitação, uma resposta é retornada, que inclui:</span><span class="sxs-lookup"><span data-stu-id="e8db8-113">After you make a request, a response is returned that includes:</span></span> 
 
-* Código de status – um código de status HTTP que indica o sucesso ou o fracasso. Para obter detalhes sobre os códigos de erro HTTP, veja [Erros](errors.md).
-* Mensagem de resposta – os dados que você solicitou ou o resultado da operação. A mensagem de resposta pode estar vazia em algumas operações.
-* Link **Avançar** – se a solicitação retornar muitos dados, você precisa percorrê-los escolhendo **Avançar**. Para obter detalhes, veja [Paginação](paging.md).
+* <span data-ttu-id="e8db8-114">Código de status – um código de status HTTP que indica o sucesso ou o fracasso.</span><span class="sxs-lookup"><span data-stu-id="e8db8-114">Status code - An HTTP status code that indicates success or failure. For details about HTTP error codes, see Errors.</span></span> <span data-ttu-id="e8db8-115">Para obter detalhes sobre os códigos de erro HTTP, veja [Erros](errors.md).</span><span class="sxs-lookup"><span data-stu-id="e8db8-115">For details about HTTP error codes, see [Errors](errors.md).</span></span>
+* <span data-ttu-id="e8db8-p104">Mensagem de resposta – os dados que você solicitou ou o resultado da operação. A mensagem de resposta pode estar vazia em algumas operações.</span><span class="sxs-lookup"><span data-stu-id="e8db8-p104">Response message - The data that you requested or the result of the operation. The response message can be empty for some operations.</span></span>
+* <span data-ttu-id="e8db8-118">Link **Avançar** – se a solicitação retornar muitos dados, você precisa percorrê-los escolhendo **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="e8db8-118">**Next** link - If your request returns a lot of data, you need to page through it by choosing **Next. For details, see Paging**.</span></span> <span data-ttu-id="e8db8-119">Para obter detalhes, veja [Paginação](paging.md).</span><span class="sxs-lookup"><span data-stu-id="e8db8-119">For details, see [Paging](paging.md).</span></span>
 
-## <a name="http-methods"></a>Métodos HTTP
+## <a name="http-methods"></a><span data-ttu-id="e8db8-120">Métodos HTTP</span><span class="sxs-lookup"><span data-stu-id="e8db8-120">HTTP methods</span></span>
 
-O Microsoft Graph usa o método HTTP em sua solicitação para determinar sua solicitação está fazendo. A API é compatível com os seguintes métodos.
+<span data-ttu-id="e8db8-p106">O Microsoft Graph usa o método HTTP em sua solicitação para determinar sua solicitação está fazendo. A API é compatível com os seguintes métodos.</span><span class="sxs-lookup"><span data-stu-id="e8db8-p106">Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.</span></span>
 
 
-|**Method** |**Descrição**                             |
+|<span data-ttu-id="e8db8-123">**Method**</span><span class="sxs-lookup"><span data-stu-id="e8db8-123">**Method**</span></span> |<span data-ttu-id="e8db8-124">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="e8db8-124">**Description**</span></span>                             |
 | :----- | :------------------------------------------- |
-| GET    | Ler dados de um recurso.                   |
-| POST   | Criar um novo recurso, ou executar uma ação. |
-| PATCH  | Atualizar um recurso com novos valores.           |
-| PUT    | Substituir um recurso por um novo.           |
-| DELETE | Remover um recurso.                           |
+| <span data-ttu-id="e8db8-125">GET</span><span class="sxs-lookup"><span data-stu-id="e8db8-125">GET</span></span>    | <span data-ttu-id="e8db8-126">Ler dados de um recurso.</span><span class="sxs-lookup"><span data-stu-id="e8db8-126">Read data from a resource.</span></span>                   |
+| <span data-ttu-id="e8db8-127">POST</span><span class="sxs-lookup"><span data-stu-id="e8db8-127">POST</span></span>   | <span data-ttu-id="e8db8-128">Criar um novo recurso, ou executar uma ação.</span><span class="sxs-lookup"><span data-stu-id="e8db8-128">Create a new resource, or perform an action.</span></span> |
+| <span data-ttu-id="e8db8-129">PATCH</span><span class="sxs-lookup"><span data-stu-id="e8db8-129">PATCH</span></span>  | <span data-ttu-id="e8db8-130">Atualizar um recurso com novos valores.</span><span class="sxs-lookup"><span data-stu-id="e8db8-130">Update a resource with new values.</span></span>           |
+| <span data-ttu-id="e8db8-131">PUT</span><span class="sxs-lookup"><span data-stu-id="e8db8-131">PUT</span></span>    | <span data-ttu-id="e8db8-132">Substituir um recurso por um novo.</span><span class="sxs-lookup"><span data-stu-id="e8db8-132">Replace a resource with a new one.</span></span>           |
+| <span data-ttu-id="e8db8-133">DELETE</span><span class="sxs-lookup"><span data-stu-id="e8db8-133">DELETE</span></span> | <span data-ttu-id="e8db8-134">Remover um recurso.</span><span class="sxs-lookup"><span data-stu-id="e8db8-134">Remove a resource.</span></span>                           |
 
-* Nos métodos **GET** e **DELETE**, nenhum corpo de solicitação é obrigatório.
-* Os métodos **POST**, **PATCH** e **PUT** precisam de um corpo de solicitação, normalmente especificado em formato JSON que contém informações adicionais, como os valores das propriedades do recurso.
+* <span data-ttu-id="e8db8-135">Nos métodos **GET** e **DELETE**, nenhum corpo de solicitação é obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e8db8-135">For the methods **GET** and **DELETE**, no request body is required.</span></span>
+* <span data-ttu-id="e8db8-136">Os métodos **POST**, **PATCH** e **PUT** precisam de um corpo de solicitação, normalmente especificado em formato JSON que contém informações adicionais, como os valores das propriedades do recurso.</span><span class="sxs-lookup"><span data-stu-id="e8db8-136">The **POST**, **PATCH**, and **PUT** methods require a request body, usually specified in JSON format, that contains additional information, such as the values for properties of the resource.</span></span>
 
-## <a name="version"></a>Versão
+## <a name="version"></a><span data-ttu-id="e8db8-137">Versão</span><span class="sxs-lookup"><span data-stu-id="e8db8-137">Version</span></span>
 
-O Microsoft Graph atualmente é compatível com duas versões: `v1.0` e `beta`.
+<span data-ttu-id="e8db8-138">O Microsoft Graph atualmente é compatível com duas versões: `v1.0` e `beta`.</span><span class="sxs-lookup"><span data-stu-id="e8db8-138">Microsoft Graph currently supports two versions: `v1.0` and `beta`.</span></span>
 
-* O `v1.0` inclui APIs normalmente disponíveis. Use a versão 1.0 para todos os aplicativos de produção.
-* O `beta` inclui APIs que estão atualmente em modo de visualização. Como podemos apresentar alterações significativas a nossas APIs beta, recomendamos que você use a versão beta apenas para testar aplicativos em desenvolvimento. Não use APIs beta em seus aplicativos de produção.
+* <span data-ttu-id="e8db8-139">O `v1.0` inclui APIs normalmente disponíveis.</span><span class="sxs-lookup"><span data-stu-id="e8db8-139">`v1.0` includes generally available APIs.</span></span> <span data-ttu-id="e8db8-140">Use a versão 1.0 para todos os aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e8db8-140"> includes generally available APIs. Use the v1.0 version for all production apps.</span></span>
+* <span data-ttu-id="e8db8-141">O `beta` inclui APIs que estão atualmente em modo de visualização.</span><span class="sxs-lookup"><span data-stu-id="e8db8-141">`beta` includes APIs that are currently in preview.</span></span> <span data-ttu-id="e8db8-142">Como podemos apresentar alterações significativas a nossas APIs beta, recomendamos que você use a versão beta apenas para testar aplicativos em desenvolvimento. Não use APIs beta em seus aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e8db8-142"> includes APIs that are currently in preview. Because we might introduce breaking changes to our beta APIs, we recommend that you use the beta version only to test apps that are in development; do not use beta APIs in your production apps.</span></span>
 
-Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comentários ou solicitar recursos, veja nossa página [UserVoice](https://officespdev.uservoice.com/).
+<span data-ttu-id="e8db8-143">Estamos sempre buscando comentários sobre nossas APIs beta.</span><span class="sxs-lookup"><span data-stu-id="e8db8-143">We are always looking for feedback on our beta APIs. To provide feedback or request features, see our UserVoice page.</span></span> <span data-ttu-id="e8db8-144">Para fornecer comentários ou solicitar recursos, veja nossa página [UserVoice](https://officespdev.uservoice.com/).</span><span class="sxs-lookup"><span data-stu-id="e8db8-144">We are always looking for feedback on our beta APIs. To provide feedback or request features, see our [UserVoice](https://officespdev.uservoice.com/) page.</span></span>
 
-Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning_and_support.md).
+<span data-ttu-id="e8db8-145">Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning_and_support.md).</span><span class="sxs-lookup"><span data-stu-id="e8db8-145">For more information about API versions, see [Versioning and support](versioning_and_support.md).</span></span>
 
-## <a name="resource"></a>Recurso
+## <a name="resource"></a><span data-ttu-id="e8db8-146">Recurso</span><span class="sxs-lookup"><span data-stu-id="e8db8-146">Resource</span></span>
 
-Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`. Cada um dos recursos de nível superior também inclui **relações**, que podem ser usados para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando **métodos**, por exemplo, para enviar um email, use `me/sendMail`.
+<span data-ttu-id="e8db8-147">Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`.</span><span class="sxs-lookup"><span data-stu-id="e8db8-147">Your URL will include the resource or resources you are interacting with in the request, such as `me`, `users`, `groups`, `drives`, and `sites`.</span></span> <span data-ttu-id="e8db8-148">Cada um dos recursos de nível superior também inclui **relações**, que podem ser usadas para acessar recursos adicionais, como `me/messages` ou `me/drive`.</span><span class="sxs-lookup"><span data-stu-id="e8db8-148">Each of the top-level resources also include **relationships**, which you can use to access additional resources, like `me/messages` or `me/drive`.</span></span> <span data-ttu-id="e8db8-149">Você também pode interagir com os recursos usando **métodos**; por exemplo, para enviar um email, use `me/sendMail`.</span><span class="sxs-lookup"><span data-stu-id="e8db8-149">You can also interact with resources using **methods**; for example, to send an email, use `me/sendMail`.</span></span>
 
-Para saber mais sobre como navegar por métodos e relações do recurso, veja Desviar o gráfico. 
+<span data-ttu-id="e8db8-150">Para saber mais sobre como navegar por métodos e relações do recurso, veja Desviar o gráfico.</span><span class="sxs-lookup"><span data-stu-id="e8db8-150">For more information about how to navigate resource relationships and methods, see Traverse the graph.</span></span> 
 
-Cada recurso pode exigir diferentes permissões de acesso. Muitas vezes será necessário um nível mais alto de permissões para criar ou atualizar um recurso do que para lê-lo. Para obter detalhes sobre as permissões necessárias, veja o tópico de referência do método. 
+<span data-ttu-id="e8db8-p111">Cada recurso pode exigir diferentes permissões de acesso. Muitas vezes será necessário um nível mais alto de permissões para criar ou atualizar um recurso do que para lê-lo. Para obter detalhes sobre as permissões necessárias, veja o tópico de referência do método.</span><span class="sxs-lookup"><span data-stu-id="e8db8-p111">Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic.</span></span> 
 
-Para obter detalhes sobre permissões, veja [Referência de permissões](permissions_reference.md).
+<span data-ttu-id="e8db8-154">Para obter detalhes sobre permissões, veja [Referência de permissões](permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="e8db8-154">For details about permissions, see [Permissions reference](permissions_reference.md).</span></span>
 
-## <a name="query-parameters-optional"></a>Parâmetros de consulta (opcional)
+## <a name="query-parameters-optional"></a><span data-ttu-id="e8db8-155">Parâmetros de consulta (opcional)</span><span class="sxs-lookup"><span data-stu-id="e8db8-155">Query parameters (optional)</span></span>
 
-Você pode usar parâmetros de consulta opcionais para personalizar a resposta em seu aplicativo Microsoft Graph. Use parâmetros de consulta para incluir mais ou menos propriedades do que a resposta padrão, filtrar a resposta para itens que correspondem a uma consulta personalizada ou oferecem parâmetros adicionais para um método.
+<span data-ttu-id="e8db8-p112">Você pode usar parâmetros de consulta opcionais para personalizar a resposta em seu aplicativo Microsoft Graph. Use parâmetros de consulta para incluir mais ou menos propriedades do que a resposta padrão, filtrar a resposta para itens que correspondem a uma consulta personalizada ou oferecem parâmetros adicionais para um método.</span><span class="sxs-lookup"><span data-stu-id="e8db8-p112">You can use optional query parameters to customize the response in your Microsoft Graph app. Use query parameters to include more or fewer properties than the default response, filter the response for items that match a custom query, or provide additional parameters for a method.</span></span>
 
-Por exemplo, adicionar o seguinte parâmetro de filtro restringe as mensagens retornadas para apenas aquelas com a propriedade `emailAddress` de `jon@contoso.com`.
+<span data-ttu-id="e8db8-158">Por exemplo, adicionar o seguinte parâmetro de filtro restringe as mensagens retornadas para apenas aquelas com a propriedade `emailAddress` de `jon@contoso.com`.</span><span class="sxs-lookup"><span data-stu-id="e8db8-158">For example, adding the following filter parameter restricts the messages returned to only those with the `emailAddress` property of `jon@contoso.com`.</span></span>
 
 ```http
 https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso.com'
 ```
 
-Para saber mais sobre os parâmetros de consulta, veja [Personalizar respostas](query_parameters.md).
+<span data-ttu-id="e8db8-159">Para saber mais sobre os parâmetros de consulta, veja [Personalizar respostas](query_parameters.md).</span><span class="sxs-lookup"><span data-stu-id="e8db8-159">For more information about query parameters, see [Customize responses](query_parameters.md).</span></span>
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a><span data-ttu-id="e8db8-160">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="e8db8-160">Next steps</span></span>
 
-Você está pronto para começar a trabalhar com o Microsoft Graph. Para saber mais, vá para o [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer) para experimentar algumas solicitações, tente o [Início Rápido](https://developer.microsoft.com/en-us/graph/quick-start) ou comece a usar um dos nossos [SDKs e exemplos de código](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks).
+<span data-ttu-id="e8db8-161">Você está pronto para começar a trabalhar com o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="e8db8-161">You're ready to get up and running with Microsoft Graph.</span></span> <span data-ttu-id="e8db8-162">Para saber mais, vá para o [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer) para experimentar algumas solicitações, tente o [Início Rápido](https://developer.microsoft.com/en-us/graph/quick-start) ou comece a usar um dos nossos [SDKs e exemplos de código](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks).</span><span class="sxs-lookup"><span data-stu-id="e8db8-162">You're ready to get up and running with Microsoft Graph. To learn more, go to the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) to try out some requests, try the [Quick Start](https://developer.microsoft.com/en-us/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks).</span></span>

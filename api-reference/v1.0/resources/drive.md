@@ -1,92 +1,110 @@
-# <a name="drive-resource-type"></a><span data-ttu-id="d9750-101">Tipo de unidade de recurso</span><span class="sxs-lookup"><span data-stu-id="d9750-101">Drive resource type</span></span>
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Unidade
+ms.openlocfilehash: 0b178967f7eb8da8bdf8584bb13a7d4f9950392b
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
+# <a name="drive-resource-type"></a><span data-ttu-id="9d834-102">Tipo de unidade de recurso</span><span class="sxs-lookup"><span data-stu-id="9d834-102">Drive resource type</span></span>
 
-<span data-ttu-id="d9750-102">O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d9750-102">The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.</span></span>
+<span data-ttu-id="9d834-103">O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="9d834-103">The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.</span></span>
 
-<span data-ttu-id="d9750-p101">Os usuários do OneDrive sempre terão pelo menos uma unidade disponível, sua unidade padrão. Usuários sem uma licença do OneDrive talvez não tenham uma unidade padrão disponível.</span><span class="sxs-lookup"><span data-stu-id="d9750-p101">OneDrive users will always have at least one drive available, their default drive. Users without a OneDrive license may not have a default drive available.</span></span>
+<span data-ttu-id="9d834-p101">Os usuários do OneDrive sempre terão pelo menos uma unidade disponível, sua unidade padrão. Usuários sem uma licença do OneDrive talvez não tenham uma unidade padrão disponível.</span><span class="sxs-lookup"><span data-stu-id="9d834-p101">OneDrive users will always have at least one drive available, their default drive. Users without a OneDrive license may not have a default drive available.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d9750-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d9750-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9d834-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9d834-106">JSON representation</span></span>
 
-<span data-ttu-id="d9750-106">Veja a seguir uma representação JSON de um recurso **drive**.</span><span class="sxs-lookup"><span data-stu-id="d9750-106">Here is a JSON representation of a Drive resource.</span></span>
+<span data-ttu-id="9d834-107">Veja a seguir uma representação JSON de um recurso Drive.</span><span class="sxs-lookup"><span data-stu-id="9d834-107">Here is a JSON representation of a Drive resource.</span></span>
 
-<span data-ttu-id="d9750-107">O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda propriedades desse recurso.</span><span class="sxs-lookup"><span data-stu-id="d9750-107">The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.</span></span>
+<span data-ttu-id="9d834-108">O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda propriedades desse recurso.</span><span class="sxs-lookup"><span data-stu-id="9d834-108">The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits properties from that resource.</span></span>
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "items", "root", "special", "owner", "description" ],
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.drive"
-}-->
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.drive",
+       "keyProperty": "id", 
+       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
 
 ```json
 {
-  "id": "string (identifier)",
-  "driveType": "string",
-  "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "quota": {"@odata.type": "microsoft.graph.quota"},
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "root": {"@odata.type": "microsoft.graph.driveItem" },
-  "items": [ {"@odata.type": "microsoft.graph.driveItem" }],
-  "special": [ {"@odata.type": "microsoft.graph.driveItem" }],
-
-  /* inherited from baseItem */
+  "id": "string",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "datetime",
+  "createdDateTime": "string (timestamp)",
   "description": "string",
+  "driveType": "personal | business | documentLibrary",
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "quota": { "@odata.type": "microsoft.graph.quota" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d9750-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d9750-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9d834-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9d834-109">Properties</span></span>
 
-| <span data-ttu-id="d9750-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d9750-109">Property</span></span>             | <span data-ttu-id="d9750-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="d9750-110">Type</span></span>                          | <span data-ttu-id="d9750-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9750-111">Description</span></span>                                                                                                                                                                                                                      |
+| <span data-ttu-id="9d834-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9d834-110">Property</span></span>             | <span data-ttu-id="9d834-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="9d834-111">Type</span></span>                          | <span data-ttu-id="9d834-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="9d834-112">Description</span></span>                                                                                                                                                                                                                      |
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="d9750-112">id</span><span class="sxs-lookup"><span data-stu-id="d9750-112">id</span></span>                   | <span data-ttu-id="d9750-113">String</span><span class="sxs-lookup"><span data-stu-id="d9750-113">String</span></span>                        | <span data-ttu-id="d9750-p102">O identificador exclusivo da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p102">The unique identifier of the drive. Read-only.</span></span>                                                                                                                                                                                   |
-| <span data-ttu-id="d9750-116">createdBy</span><span class="sxs-lookup"><span data-stu-id="d9750-116">createdBy</span></span>            | <span data-ttu-id="d9750-117">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="d9750-117">[identitySet][]</span></span>               | <span data-ttu-id="d9750-p103">Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p103">Identity of the user, device, or application which created the item. Read-only.</span></span>                                                                                                                                                  |
-| <span data-ttu-id="d9750-120">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="d9750-120">createdDateTime</span></span>      | <span data-ttu-id="d9750-121">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d9750-121">dateTimeOffset</span></span>                | <span data-ttu-id="d9750-p104">Data e hora de criação do item. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p104">Date and time of item creation. Read-only.</span></span>                                                                                                                                                                                       |
-| <span data-ttu-id="d9750-124">driveType</span><span class="sxs-lookup"><span data-stu-id="d9750-124">driveType</span></span>            | <span data-ttu-id="d9750-125">String</span><span class="sxs-lookup"><span data-stu-id="d9750-125">String</span></span>                        | <span data-ttu-id="d9750-p105">Descreve o tipo de unidade representado por esse recurso. As unidades pessoais do OneDrive retornarão `personal`. O OneDrive for Business retornará `business`. As bibliotecas de documentos do SharePoint retornarão `documentLibrary`. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p105">Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only.</span></span> |
-| <span data-ttu-id="d9750-131">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="d9750-131">lastModifiedBy</span></span>       | <span data-ttu-id="d9750-132">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="d9750-132">[identitySet][]</span></span>               | <span data-ttu-id="d9750-p106">Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p106">Identity of the user, device, and application which last modified the item. Read-only.</span></span>                                                                                                                                           |
-| <span data-ttu-id="d9750-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="d9750-135">lastModifiedDateTime</span></span> | <span data-ttu-id="d9750-136">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d9750-136">dateTimeOffset</span></span>                | <span data-ttu-id="d9750-p107">Data e hora em que o item foi modificado pela última vez. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p107">Date and time the item was last modified. Read-only.</span></span>                                                                                                                                                                             |
-| <span data-ttu-id="d9750-139">nome</span><span class="sxs-lookup"><span data-stu-id="d9750-139">name</span></span>                 | <span data-ttu-id="d9750-140">string</span><span class="sxs-lookup"><span data-stu-id="d9750-140">string</span></span>                        | <span data-ttu-id="d9750-p108">O nome do item. Leitura e gravação.</span><span class="sxs-lookup"><span data-stu-id="d9750-p108">The name of the item. Read-write.</span></span>                                                                                                                                                                                                |
-| <span data-ttu-id="d9750-143">owner</span><span class="sxs-lookup"><span data-stu-id="d9750-143">owner</span></span>                | [<span data-ttu-id="d9750-144">identitySet</span><span class="sxs-lookup"><span data-stu-id="d9750-144">identitySet</span></span>](identityset.md) | <span data-ttu-id="d9750-p109">Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p109">Optional. The user account that owns the drive. Read-only.</span></span>                                                                                                                                                                       |
-| <span data-ttu-id="d9750-148">cota</span><span class="sxs-lookup"><span data-stu-id="d9750-148">quota</span></span>                | [<span data-ttu-id="d9750-149">quota</span><span class="sxs-lookup"><span data-stu-id="d9750-149">quota</span></span>](quota.md)             | <span data-ttu-id="d9750-p110">Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p110">Optional. Information about the drive's storage space quota. Read-only.</span></span>                                                                                                                                                          |
-| <span data-ttu-id="d9750-153">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="d9750-153">sharepointIds</span></span>        | <span data-ttu-id="d9750-154">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="d9750-154">[sharepointIds][]</span></span>             | <span data-ttu-id="d9750-p111">Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p111">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>                                                                                                                                                         |
-| <span data-ttu-id="d9750-157">webUrl</span><span class="sxs-lookup"><span data-stu-id="d9750-157">webUrl</span></span>               | <span data-ttu-id="d9750-158">string (url)</span><span class="sxs-lookup"><span data-stu-id="d9750-158">string (url)</span></span>                  | <span data-ttu-id="d9750-p112">URL que exibe o recurso no navegador. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p112">URL that displays the resource in the browser. Read-only.</span></span>                                                                                                                                                                        |
+| <span data-ttu-id="9d834-113">createdBy</span><span class="sxs-lookup"><span data-stu-id="9d834-113">createdBy</span></span>            | <span data-ttu-id="9d834-114">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="9d834-114">[identitySet][]</span></span>               | <span data-ttu-id="9d834-p102">Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p102">Identity of the user, device, or application which created the item. Read-only.</span></span>                                                                                                                                                  |
+| <span data-ttu-id="9d834-117">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="9d834-117">createdDateTime</span></span>      | <span data-ttu-id="9d834-118">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9d834-118">dateTimeOffset</span></span>                | <span data-ttu-id="9d834-p103">Data e hora de criação do item. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p103">Date and time of item creation. Read-only.</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="9d834-121">description</span><span class="sxs-lookup"><span data-stu-id="9d834-121">description</span></span>          | <span data-ttu-id="9d834-122">String</span><span class="sxs-lookup"><span data-stu-id="9d834-122">String</span></span>                        | <span data-ttu-id="9d834-123">Fornecer uma descrição visível para os usuários da unidade.</span><span class="sxs-lookup"><span data-stu-id="9d834-123">Provide a user-visible description of the drive.</span></span> <span data-ttu-id="9d834-124">Leitura e gravação.</span><span class="sxs-lookup"><span data-stu-id="9d834-124">Read-write.</span></span>
+| <span data-ttu-id="9d834-125">driveType</span><span class="sxs-lookup"><span data-stu-id="9d834-125">driveType</span></span>            | <span data-ttu-id="9d834-126">String</span><span class="sxs-lookup"><span data-stu-id="9d834-126">String</span></span>                        | <span data-ttu-id="9d834-p105">Descreve o tipo de unidade representado por esse recurso. As unidades pessoais do OneDrive retornarão `personal`. O OneDrive for Business retornará `business`. As bibliotecas de documentos do SharePoint retornarão `documentLibrary`. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p105">Describes the type of drive represented by this resource. OneDrive personal drives will return `personal`. OneDrive for Business will return `business`. SharePoint document libraries will return `documentLibrary`. Read-only.</span></span> |
+| <span data-ttu-id="9d834-132">id</span><span class="sxs-lookup"><span data-stu-id="9d834-132">id</span></span>                   | <span data-ttu-id="9d834-133">String</span><span class="sxs-lookup"><span data-stu-id="9d834-133">String</span></span>                        | <span data-ttu-id="9d834-p106">O identificador exclusivo da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p106">The unique identifier of the drive. Read-only.</span></span>                                                                                                                                                                                   |
+| <span data-ttu-id="9d834-136">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="9d834-136">lastModifiedBy</span></span>       | <span data-ttu-id="9d834-137">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="9d834-137">[identitySet][]</span></span>               | <span data-ttu-id="9d834-p107">Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p107">Identity of the user, device, and application which last modified the item. Read-only.</span></span>                                                                                                                                           |
+| <span data-ttu-id="9d834-140">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9d834-140">lastModifiedDateTime</span></span> | <span data-ttu-id="9d834-141">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9d834-141">dateTimeOffset</span></span>                | <span data-ttu-id="9d834-p108">Data e hora em que o item foi modificado pela última vez. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p108">Date and time the item was last modified. Read-only.</span></span>                                                                                                                                                                             |
+| <span data-ttu-id="9d834-144">nome</span><span class="sxs-lookup"><span data-stu-id="9d834-144">name</span></span>                 | <span data-ttu-id="9d834-145">string</span><span class="sxs-lookup"><span data-stu-id="9d834-145">string</span></span>                        | <span data-ttu-id="9d834-p109">O nome do item. Leitura e gravação.</span><span class="sxs-lookup"><span data-stu-id="9d834-p109">The name of the item. Read-write.</span></span>                                                                                                                                                                                                |
+| <span data-ttu-id="9d834-148">owner</span><span class="sxs-lookup"><span data-stu-id="9d834-148">owner</span></span>                | [<span data-ttu-id="9d834-149">identitySet</span><span class="sxs-lookup"><span data-stu-id="9d834-149">identitySet</span></span>](identityset.md) | <span data-ttu-id="9d834-p110">Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p110">Optional. The user account that owns the drive. Read-only.</span></span>                                                                                                                                                                       |
+| <span data-ttu-id="9d834-153">quota</span><span class="sxs-lookup"><span data-stu-id="9d834-153">quota</span></span>                | [<span data-ttu-id="9d834-154">quota</span><span class="sxs-lookup"><span data-stu-id="9d834-154">quota</span></span>](quota.md)             | <span data-ttu-id="9d834-p111">Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p111">Optional. Information about the drive's storage space quota. Read-only.</span></span>                                                                                                                                                          |
+| <span data-ttu-id="9d834-158">sharepointIds</span><span class="sxs-lookup"><span data-stu-id="9d834-158">sharepointIds</span></span>        | <span data-ttu-id="9d834-159">[sharepointIds][]</span><span class="sxs-lookup"><span data-stu-id="9d834-159">[sharepointIds][]</span></span>             | <span data-ttu-id="9d834-p112">Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p112">Returns identifiers useful for SharePoint REST compatibility. Read-only.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="9d834-162">sistema</span><span class="sxs-lookup"><span data-stu-id="9d834-162">System</span></span>               | <span data-ttu-id="9d834-163">[systemFacet][]</span><span class="sxs-lookup"><span data-stu-id="9d834-163">[systemFacet][]</span></span>               | <span data-ttu-id="9d834-164">Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema.</span><span class="sxs-lookup"><span data-stu-id="9d834-164">If present, indicates that this is a system-managed drive.</span></span> <span data-ttu-id="9d834-165">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-165">Read-only.</span></span>
+| <span data-ttu-id="9d834-166">webUrl</span><span class="sxs-lookup"><span data-stu-id="9d834-166">webUrl</span></span>               | <span data-ttu-id="9d834-167">string (url)</span><span class="sxs-lookup"><span data-stu-id="9d834-167">string (url)</span></span>                  | <span data-ttu-id="9d834-p114">URL que exibe o recurso no navegador. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p114">URL that displays the resource in the browser. Read-only.</span></span>                                                                                                                                                                        |
 
-<span data-ttu-id="d9750-161">[identitySet]: identityset.md</span><span class="sxs-lookup"><span data-stu-id="d9750-161">[identitySet]: identityset.md</span></span>
-<span data-ttu-id="d9750-162">[sharepointIds]: sharepointids.md</span><span class="sxs-lookup"><span data-stu-id="d9750-162">[sharepointIds]: sharepointids.md</span></span>
+[identitySet]: identityset.md
+[sharepointIds]: sharepointids.md
+[systemFacet]: systemfacet.md
 
-## <a name="relationships"></a><span data-ttu-id="d9750-163">Relações</span><span class="sxs-lookup"><span data-stu-id="d9750-163">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="9d834-173">Relações</span><span class="sxs-lookup"><span data-stu-id="9d834-173">Relationships</span></span>
 
-| <span data-ttu-id="d9750-164">Relação</span><span class="sxs-lookup"><span data-stu-id="d9750-164">Relationship</span></span> | <span data-ttu-id="d9750-165">Tipo</span><span class="sxs-lookup"><span data-stu-id="d9750-165">Type</span></span>                                 | <span data-ttu-id="d9750-166">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9750-166">Description</span></span>                                                              |
-| :----------- | :----------------------------------- | :----------------------------------------------------------------------- |
-| <span data-ttu-id="d9750-167">items</span><span class="sxs-lookup"><span data-stu-id="d9750-167">items</span></span>        | <span data-ttu-id="d9750-168">Coleção [driveitem](driveitem.md)</span><span class="sxs-lookup"><span data-stu-id="d9750-168">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="d9750-p113">Todos os itens contidos na unidade. Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="d9750-p113">All items contained in the drive. Read-only. Nullable.</span></span>                   |
-| <span data-ttu-id="d9750-172">root</span><span class="sxs-lookup"><span data-stu-id="d9750-172">root</span></span>         | [<span data-ttu-id="d9750-173">driveitem</span><span class="sxs-lookup"><span data-stu-id="d9750-173">driveitem</span></span>](driveitem.md)            | <span data-ttu-id="d9750-p114">A pasta raiz da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d9750-p114">The root folder of the drive. Read-only.</span></span>                                 |
-| <span data-ttu-id="d9750-176">special</span><span class="sxs-lookup"><span data-stu-id="d9750-176">special</span></span>      | <span data-ttu-id="d9750-177">Coleção [driveitem](driveitem.md)</span><span class="sxs-lookup"><span data-stu-id="d9750-177">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="d9750-p115">Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="d9750-p115">Collection of common folders available in OneDrive. Read-only. Nullable.</span></span> |
+| <span data-ttu-id="9d834-174">Relação</span><span class="sxs-lookup"><span data-stu-id="9d834-174">Relationship</span></span> | <span data-ttu-id="9d834-175">Tipo</span><span class="sxs-lookup"><span data-stu-id="9d834-175">Type</span></span>                                 | <span data-ttu-id="9d834-176">Descrição</span><span class="sxs-lookup"><span data-stu-id="9d834-176">Description</span></span>
+|:-------------|:-------------------------------------|:-----------------------
+| <span data-ttu-id="9d834-177">items</span><span class="sxs-lookup"><span data-stu-id="9d834-177">items</span></span>        | <span data-ttu-id="9d834-178">Coleção [driveitem](driveitem.md)</span><span class="sxs-lookup"><span data-stu-id="9d834-178">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="9d834-p115">Todos os itens contidos na unidade. Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="9d834-p115">All items contained in the drive. Read-only. Nullable.</span></span>
+| <span data-ttu-id="9d834-182">root</span><span class="sxs-lookup"><span data-stu-id="9d834-182">root</span></span>         | [<span data-ttu-id="9d834-183">driveitem</span><span class="sxs-lookup"><span data-stu-id="9d834-183">driveitem</span></span>](driveitem.md)            | <span data-ttu-id="9d834-p116">A pasta raiz da unidade. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="9d834-p116">The root folder of the drive. Read-only.</span></span>
+| <span data-ttu-id="9d834-186">special</span><span class="sxs-lookup"><span data-stu-id="9d834-186">special</span></span>      | <span data-ttu-id="9d834-187">Coleção [driveitem](driveitem.md)</span><span class="sxs-lookup"><span data-stu-id="9d834-187">[driveitem](driveitem.md) collection</span></span> | <span data-ttu-id="9d834-p117">Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="9d834-p117">Collection of common folders available in OneDrive. Read-only. Nullable.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="d9750-181">Métodos</span><span class="sxs-lookup"><span data-stu-id="d9750-181">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="9d834-191">Métodos</span><span class="sxs-lookup"><span data-stu-id="9d834-191">Methods</span></span>
 
-<span data-ttu-id="d9750-182">Os métodos a seguir estão disponíveis para os recursos drive.</span><span class="sxs-lookup"><span data-stu-id="d9750-182">The following methods are available for drive resources.</span></span>
+|                        <span data-ttu-id="9d834-192">Tarefa comum</span><span class="sxs-lookup"><span data-stu-id="9d834-192">Common task</span></span>                         |         <span data-ttu-id="9d834-193">Método HTTP</span><span class="sxs-lookup"><span data-stu-id="9d834-193">HTTP method</span></span>         |
+| :--------------------------------------------------------- | :-------------------------- |
+| <span data-ttu-id="9d834-194">[Recuperar metadados de outra Unidade][drive-get]</span><span class="sxs-lookup"><span data-stu-id="9d834-194">[Get Drive metadata of another Drive][drive-get]</span></span>           | `GET /drives/{drive-id}`    |
+| <span data-ttu-id="9d834-195">[Recuperar pasta raiz padrão da Unidade do usuário][item-get]</span><span class="sxs-lookup"><span data-stu-id="9d834-195">[Get root folder for user's default Drive][item-get]</span></span>       | `GET /drive/root`           |
+| <span data-ttu-id="9d834-196">[Listar filhos na Unidade][item-children]</span><span class="sxs-lookup"><span data-stu-id="9d834-196">[List children under the Drive][item-children]</span></span>             | `GET /drive/root/children`  |
+| <span data-ttu-id="9d834-197">[Listar alterações de todos os Itens na Unidade][item-changes]</span><span class="sxs-lookup"><span data-stu-id="9d834-197">[List changes for all Items in the Drive][item-changes]</span></span>    | `GET /drive/root/delta`     |
+| <span data-ttu-id="9d834-198">[Pesquisar Itens na Unidade][item-search]</span><span class="sxs-lookup"><span data-stu-id="9d834-198">[Search for Items in the Drive][item-search]</span></span>               | `GET /drive/root/search`    |
+| [<span data-ttu-id="9d834-199">Acessar pasta especial</span><span class="sxs-lookup"><span data-stu-id="9d834-199">Access special folder</span></span>](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
 
-| <span data-ttu-id="d9750-183">Método</span><span class="sxs-lookup"><span data-stu-id="d9750-183">Method</span></span>                                                | <span data-ttu-id="d9750-184">Caminho REST</span><span class="sxs-lookup"><span data-stu-id="d9750-184">REST Path</span></span>                        |
-| :---------------------------------------------------- | :------------------------------- |
-| [<span data-ttu-id="d9750-185">Obter unidade padrão do usuário</span><span class="sxs-lookup"><span data-stu-id="d9750-185">Get user's default drive</span></span>](../api/drive_get.md)       | `GET /me/drive`                  |
-| [<span data-ttu-id="d9750-186">Obter a unidade de outro usuário</span><span class="sxs-lookup"><span data-stu-id="d9750-186">Get another user's drive</span></span>](../api/drive_get.md)       | `GET /users/{user-id}/drive`     |
-| [<span data-ttu-id="d9750-187">Obter pasta raiz de uma unidade</span><span class="sxs-lookup"><span data-stu-id="d9750-187">Get root folder for a drive</span></span>](../api/item_get.md)     | `GET /drives/{drive-id}/root`    |
-| [<span data-ttu-id="d9750-188">Listar itens em uma unidade</span><span class="sxs-lookup"><span data-stu-id="d9750-188">List items in a drive</span></span>](../api/item_list_children.md) | `GET /me/drive/root/children`    |
-| [<span data-ttu-id="d9750-189">Listar alterações em uma unidade</span><span class="sxs-lookup"><span data-stu-id="d9750-189">List changes in a drive</span></span>](../api/item_delta.md)       | `GET /me/drive/root/delta`       |
-| [<span data-ttu-id="d9750-190">Pesquisar itens em uma unidade</span><span class="sxs-lookup"><span data-stu-id="d9750-190">Search items in a drive</span></span>](../api/item_search.md)      | `GET /me/drive/search(q='text')` |
+<span data-ttu-id="9d834-200">Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos também são válidos.</span><span class="sxs-lookup"><span data-stu-id="9d834-200">In the previous table, the examples use , but  is valid too.</span></span>
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: driveitem.md
+[identity-set]: identityset.md
+[quota-facet]: quota.md
+[drive-resource]: drive.md
+[drive-get]: ../api/drive_get.md
+[item-get]: ../api/driveitem_get.md
+[item-changes]: ../api/driveitem_delta.md
+[item-search]: ../api/driveitem_search.md
+[item-children]: ../api/driveitem_list_children.md
+
+
 <!-- {
   "type": "#page.annotation",
-  "description": "drive resource",
-  "keywords": "",
+  "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
+  "keywords": "drive,objects,resources",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive"
-}-->
+  "tocPath": "Drives",
+  "tocBookmarks": { "Resources/Drive": "#" }
+} -->
