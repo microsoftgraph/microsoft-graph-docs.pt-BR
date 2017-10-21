@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Site
+ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="site-resource"></a>Recurso site
 
 O recurso **site** fornece metadados e relações para um site do SharePoint.
@@ -6,17 +17,19 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 
 Todos os exemplos a seguir referem-se ao endereço `https://graph.microsoft.com/v1.0`.
 
-| Nome da tarefa            | Exemplo de Solicitação                                   |
-| :------------------- | :------------------------------------------------ |
-| [Obter site raiz][]    | GET /sites/root                                   |
-| [Obter site][]         | GET /sites/{site-id}                              |
-| [Obter site por caminho][] | GET /sites/{hostname}:/{site-path}                |
-| [Obter o site para um grupo][] | GET /groups/{group-id}/sites/root             |
+| Nome da tarefa                | Exemplo de Solicitação
+|:-------------------------|:--------------------------------------------------
+| [Obter site raiz][]        | GET /sites/root
+| [Obter site][]             | GET /sites/{site-id}
+| [Obter site por caminho][]     | GET /sites/{hostname}:/{site-path}
+| [Obter o site para um grupo][] | GET /groups/{group-id}/sites/root
+| [Procurar sites][]     | GET /sites?search={query}
 
 [Obter site]: ../api/site_get.md
 [Obter site raiz]: ../api/site_get.md
-[Obter site por caminho]: ../api/site_get.md
+[Obter site por caminho]: ../api/site_getbypath.md
 [Obter o site para um grupo]: ../api/site_get.md
+[Procurar sites]: ../api/site_search.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,10 +51,13 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
   "displayName": "string",
 
   /* relationships */
+  "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
+  "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
+  "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
 
   /* inherited from baseItem */
@@ -71,17 +87,23 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
 
 ## <a name="relationships"></a>Relações
 
-| Nome da relação | Tipo                     | Descrição
-|:------------------|:-------------------------|:----------------------------------
-| **drive**         | [drive][]                | A unidade padrão (biblioteca de documentos) desse site.
-| **drives**        | Collection([drive][])    | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][]) | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
-| **sites**         | Collection([site][])     | O conjunto dos subsites neste site.
-| **onenote**       | [onenote][]              | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
+| Nome da relação | Tipo                             | Descrição
+|:------------------|:---------------------------------|:----------------------
+| **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
+| **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
+| **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
+| **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
+| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
+| **lists**         | Collection([list][])             | O conjunto de listas neste site.
+| **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
+| **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
 
+[columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
+[contentType]: contentType.md
 [drive]: drive.md
 [identitySet]: identityset.md
+[list]: list.md
 [site]: site.md
 [onenote]: onenote.md
 
@@ -90,8 +112,6 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Site",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Sites",
+  "tocBookmarks": { "Resources/Site": "#" }
 } -->

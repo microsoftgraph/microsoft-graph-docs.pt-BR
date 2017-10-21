@@ -1,6 +1,17 @@
-# <a name="driverecipient-resource-type"></a>Tipo recurso DriveRecipient
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: DriveRecipient
+ms.openlocfilehash: 53f6a5559cb90142a88b839a996cb2eedfd1037a
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
+# <a name="driverecipient-resource"></a>Recurso DriveRecipient
 
-O recurso **DriveRecipient** representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação [invite](../api/item_invite.md).
+O recurso **DriveRecipient** representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação [invite](../api/driveitem_invite.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -27,11 +38,13 @@ O recurso de destinatários possui essas propriedades.
 
 ## <a name="remarks"></a>Comentários
 
-Ao usar [invite](../api/item_invite.md) para adicionar permissões, DriveRecipient pode especificar **email**, **alias** ou **objectId**. É necessário somente um desses valores.
+Ao usar [invite](../api/driveitem_invite.md) para adicionar permissões, DriveRecipient pode especificar **email**, **alias** ou **objectId**.
+É necessário somente um desses valores.
 
 <!-- {
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
-  "section": "documentation"
+  "section": "documentation",
+  "tocPath": "Resources/Recipients"
 } -->

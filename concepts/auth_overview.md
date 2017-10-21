@@ -4,6 +4,8 @@ Para chamar o Microsoft Graph, seu aplicativo deve adquirir um token de acesso d
 
 Este tópico fornece uma visão geral dos tokens de acesso, do Azure AD e de como seu aplicativo pode obter tokens de acesso. Se você já estiver familiarizado com a integração de um aplicativo com o Azure AD para obter tokens, avance para as [Próximas Etapas](#next-steps) para obter informações e exemplos específicos do Microsoft Graph. 
 
+> **Importante:**  A maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 ## <a name="what-is-an-access-token-and-how-do-i-use-it"></a>O que é um token de acesso e como usá-lo?
 
 Os tokens de acesso emitidos pelo Azure AD são JWT (Token Web JSON) codificado em base 64. Eles contêm informações (declarações) que as APIs da Web protegidas pelo Azure AD, como o Microsoft Graph, usam para validar o chamador e para garantir que o chamador tenha as permissões adequadas para executar a operação solicitada. Ao chamar o Microsoft Graph, você pode tratar os tokens de acesso como opacos. Você deve sempre transmitir tokens de acesso em canais seguros, como protocolo TLS (HTTPS).

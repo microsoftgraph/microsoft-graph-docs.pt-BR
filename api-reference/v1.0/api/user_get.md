@@ -20,6 +20,11 @@ GET /users/{id | userPrincipalName}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+
+Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
+
+Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------|:------|
@@ -32,9 +37,15 @@ Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/user.md) no corpo da resposta.
-## <a name="example"></a>Exemplo
+
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-standard-users-request"></a>Exemplo 1: Solicitação de usuários padrão
+
+Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Este exemplo ilustra a solicitação padrão e a resposta. 
+
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_user"
@@ -43,7 +54,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/v1.0/me
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -68,6 +79,36 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>Exemplo 2: Solicitação de usuários usando $select
+
+Se precisar de um conjunto de propriedades diferente, você poderá usar o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
+
+##### <a name="request"></a>Solicitação
+<!-- {
+  "blockType": "request",
+  "name": "get_user"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me?$select=displayName,givenName,postalCode
+```
+##### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+   "displayName": "displayName-value",
+   "givenName": "givenName-value",
+   "postalCode": "postalCode-value"
 }
 ```
 

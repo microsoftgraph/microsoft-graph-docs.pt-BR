@@ -1,0 +1,57 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/11/2017
+title: FieldValueSet
+ms.openlocfilehash: dfe11b4cdf095e8878da54760032d788f97756fb
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
+# <a name="fieldvalueset-resource"></a>Recurso de FieldValueSet
+
+Representa os valores de coluna em um recurso [listItem](listItem.md).
+
+## <a name="json-representation"></a>Representação JSON
+
+Aqui está uma representação JSON de um recurso **fieldValueSet**.
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
+       "keyProperty": "id", "openType": true } -->
+
+```json
+{
+    "Author": "Brad Cleaver",
+    "AuthorLookupId": "13",
+    "Name": "Kangaroos and Wallabies: A Deep Dive",
+    "Color": "Red",
+    "Quantity": 350,
+}
+```
+
+## <a name="properties"></a>Propriedades
+
+Cada campo de usuário visível em **listItem** é retornado como um par de nome e valor em **fieldValueSet**.
+O exemplo acima é para uma lista que contém quatro colunas **Autor**, **Nome**, **Cor** e **Quantidade**.
+
+Campos de pesquisa (como `Author` acima) não são retornados por padrão.
+Em vez disso, o servidor retorna um campo 'LookupId' (como `AuthorLookupId` acima) referenciando o listItem direcionado na pesquisa.
+O nome do campo 'LookupId' é o nome do campo original seguido de `LookupId`.
+
+Até 12 campos de pesquisa podem ser solicitados em uma única consulta.
+O servidor retornará valores de pesquisa se sua solicitação incluir uma instrução `select` com os campos necessários.
+Exemplo:
+
+```http
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
+```
+
+você pode solicitar até 12 campos de pesquisa em uma única consulta, além de qualquer número de campos normais.
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "Resources/FieldValueSet"
+} -->

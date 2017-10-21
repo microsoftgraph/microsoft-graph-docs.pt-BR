@@ -1,6 +1,19 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Obter Unidade
+ms.openlocfilehash: 91a140dbcb1550bc850656452a6fa24a84dd5500
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="get-drive"></a>Obter Unidade
 
-Recupere as propriedades e as relações de um recurso [Drive](../resources/drive.md). Uma Unidade é o contêiner de nível superior para um sistema de arquivos. A API do Graph permite o acesso ao recurso de Unidade do OneDrive ou do OneDrive for Business de um usuário ou a bibliotecas de documentos do SharePoint.
+Recupere as propriedades e as relações de um recurso [Drive](../resources/drive.md).
+
+Uma unidade é um contêiner de nível superior para um sistema de arquivos como as bibliotecas de documentos do OneDrive ou do SharePoint.
 
 ## <a name="permissions"></a>Permissões
 
@@ -12,74 +25,109 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-## <a name="get-a-users-onedrive"></a>Obtenha o OneDrive de um usuário
+## <a name="get-current-users-onedrive"></a>Obter o OneDrive do usuário atual
 
-Para acessar o OneDrive ou o OneDrive for Business de um usuário, seu aplicativo deve solicitar a relação **drive** no recurso [User](../resources/user.md).
+A unidade do usuário conectado (ao usar a autenticação delegada) poderá ser acessada pelo `me` singleton.
 
-## <a name="http-request"></a>Solicitação HTTP
+Se o OneDrive do usuário não está provisionado, mas o usuário tem uma licença para usar o OneDrive, esta solicitação provisionará automaticamente ao usar a autenticação delegada.
 
-<!-- { "blockType": "ignored" } -->
+### <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
+```
+
+## <a name="get-a-users-onedrive"></a>Obtenha o OneDrive de um usuário
+
+Para acessar o OneDrive ou o OneDrive for Business de um usuário, seu aplicativo deve solicitar a relação **drive** no recurso User.
+
+Se o OneDrive do usuário não está provisionado, mas o usuário tem uma licença para usar o OneDrive, esta solicitação provisionará automaticamente ao usar a autenticação delegada.
+
+### <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+
+```http
 GET /users/{idOrUserPrincipalName}/drive
 ```
 
+### <a name="path-parameters"></a>Parâmetros do caminho
+
+| Nome do parâmetro | Valor  | Descrição                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _idOrUserPrincipalName_     | string | Obrigatório. O identificador de objeto do usuário proprietário do OneDrive. |
+
 ## <a name="get-the-document-library-associated-with-a-group"></a>Obtenha a biblioteca de documentos associada a um grupo
 
-Para acessar uma biblioteca de documentos padrão [de um Grupo](../resources/group.md), o aplicativo solicita a relação **drive** no grupo.
+Para acessar uma biblioteca de documentos padrão de um Grupo, o aplicativo solicita a relação **drive** no grupo.
 
-## <a name="http-request"></a>Solicitação HTTP
+### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
-GET /groups/{idOrUserPrincipalName}/drive
+GET /groups/{groupId}/drive
 ```
 
+### <a name="path-parameters"></a>Parâmetros do caminho
+
+| Nome do parâmetro | Valor  | Descrição                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _groupId_      | string | Obrigatório. O identificador do grupo proprietário da biblioteca de documentos. |
+
+## <a name="get-the-document-library-for-a-site"></a>Obter a biblioteca de documentos de um site
+
+Para acessar uma biblioteca de documentos padrão [de um Site](../resources/site.md), o aplicativo solicita a relação **drive** no Site.
+
+### <a name="http-request"></a>Solicitação HTTP
+
+```http
+GET /sites/{siteId}/drive
+```
+
+### <a name="path-parameters"></a>Parâmetros do caminho
+
+| Nome do parâmetro | Valor  | Descrição                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _siteId_       | string | Obrigatório. O identificador do site que contém a biblioteca de documentos. |
+
+## <a name="get-a-drive-by-id"></a>Obtenha uma unidade por ID
+
+Se tiver o identificador exclusivo de uma unidade, você poderá acessá-lo diretamente da coleção de unidades de nível superior.
+
+### <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
+
+```http
+GET /drives/{driveId}
+```
+
+### <a name="path-parameters"></a>Parâmetros do caminho
+
+| Nome do parâmetro | Valor  | Descrição                                       |
+|:---------------|:-------|:--------------------------------------------------|
+| _driveId_      | string | Obrigatório. O identificador da unidade solicitada. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos [parâmetros de consulta OData](../../../concepts/query_parameters.md) `$expand` e `$select` para personalizar a resposta.
+Esse método é compatível com o [parâmetro de consulta $select][odata-query-parameters] para formar a resposta.
 
-## <a name="request-body"></a>Corpo da solicitação
+## <a name="http-response"></a>Resposta HTTP
 
-Não forneça um corpo de solicitação para esse método.
+Cada um desses métodos retorna um [recurso de unidade][drive-resource] para a unidade correspondente no corpo da resposta.
 
-## <a name="response"></a>Resposta
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [Drive](../resources/drive.md) no corpo da resposta.
-
-## <a name="example"></a>Exemplo
-
-##### <a name="request"></a>Solicitação
-
-Aqui está um exemplo da solicitação para obter o OneDrive ou o OneDrive for Business do usuário conectado.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_drive"
-}-->
-```http
-GET https://graph.microsoft.com/v1.0/me/drive
-```
-
-##### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.drive"
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
     "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
-    "driveType": "business",    
+    "driveType": "business",
     "owner": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
@@ -95,12 +143,17 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+### <a name="error-response-codes"></a>Códigos de resposta de erro
+
+Se a unidade não existir e não puder ser provisionada automaticamente (ao usar autenticação delegada) uma resposta `HTTP 404` será retornada.
+
+[drive-resource]: ../resources/drive.md
+[odata-query-parameters]: ../../../concepts/query_parameters.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Get Drive"
-}-->
+  "tocPath": "Drives/Get drive"
+} -->

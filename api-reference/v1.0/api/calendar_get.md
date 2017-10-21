@@ -1,6 +1,38 @@
 # <a name="get-calendar"></a>Obter calendário
 
 Recuperar as propriedades e os relacionamentos do objeto calendar.
+
+
+### <a name="get-another-users-calendar"></a>Obter o calendário de outro usuário
+
+Se você tiver permissões de aplicativo ou se tiver as [permissões](#permissions) delegadas apropriadas de um usuário, será possível obter o calendário de outro usuário. Esta seção se concentra em cenários que envolvem permissões delegadas.
+
+Por exemplo, seu aplicativo adquiriu permissões delegadas do usuário, Diogo. Suponha que outro usuário, Henrique, tenha um calendário compartilhado com Diogo. Você pode obter esse calendário compartilhado especificando a ID de usuário de Henrique (ou nome de entidade de segurança) na consulta de exemplo mostrada abaixo.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/calendar
+```
+
+Esse recurso se aplica a todas as operações de calendário GET com suporte para usuários individuais, conforme listado na seção [Solicitação HTTP](#http-request) abaixo. Também se aplica se Henrique delegou sua caixa de correio inteira a Diogo.
+
+Se Henrique não tiver compartilhado seu calendário com Diogo nem delegado sua caixa de correio a Diogo, a especificação da ID de usuário de Henrique ou do nome de entidade de segurança nessas operações GET retornará um erro. Nesses casos, especificar uma ID de usuário ou um nome de entidade de segurança só funcionará para obter o calendário do usuário conectado, e a consulta será equivalente a usar o atalho /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendar
+```
+
+Esse recurso só está disponível nas operações GET de:
+
+- Pastas de contatos compartilhadas
+- Calendários compartilhados
+- Contatos e eventos em pastas compartilhadas
+- Os recursos acima em caixas de correio delegadas
+
+Esse recurso não está disponível em outras operações para contatos, eventos e suas pastas.
+
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 

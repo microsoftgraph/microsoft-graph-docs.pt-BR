@@ -1,6 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: RemoteItem
+ms.openlocfilehash: fd324460b3486f90c342feb1c782c0cf74d77416
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
-O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referência a um item que existe em outra unidade. Este recurso fornece as IDs exclusivas do da unidade de origem e do item de destino.
+O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referência a um item que existe em outra unidade.
+Este recurso fornece as IDs exclusivas do da unidade de origem e do item de destino.
 
 [**DriveItems**](driveitem.md) com uma faceta **remoteItem** não nula são recursos que são compartilhados, adicionados ao OneDrive do usuário ou em itens retornados de coleções de itens heterogêneas (como resultados de pesquisa).
 
@@ -28,7 +40,6 @@ O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referê
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
-  "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -52,7 +63,6 @@ O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referê
 | shared               | [shared](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.                                          |
 | size                 | Int64                               | Tamanho do item remoto. Somente leitura.                                                                                                                               |
-| specialFolder        | [SpecialFolder](specialfolder.md)   | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.                                                                     |
 | webDavUrl            | URL                                 | URL compatível com DAV para o item.                                                                                                                                  |
 | webUrl               | URL                                 | URL que exibe o recurso no navegador. Somente leitura.                                                                                                         |
 
@@ -60,10 +70,10 @@ O recurso **remoteItem** indica que um [**driveItem**](driveitem.md) faz referê
 
 Para saber mais sobre as facetas de um **driveItem**, confira [driveItem](driveitem.md).
 
-
 <!-- {
   "type": "#page.annotation",
-  "description": "remoteItem resource type provides a link to an item in another drive.",
-  "keywords": "remoteitem symlink remote drive shared with me add to onedrive",
-  "section": "documentation"
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
+  "section": "documentation",
+  "tocPath": "Facets/RemoteItem"
 } -->

@@ -1,12 +1,22 @@
-# <a name="filesysteminfo-resource-type"></a>tipo de recurso FileSystemInfo
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: FileSystemInfo
+ms.openlocfilehash: 9a5214f9c5e161de0be66ac634c7c5538b203772
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
+# <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
 
-O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.
+O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item.
+Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.
 
-**Observação:** A propriedade **FileSystemInfo** não está disponível para DriveItems no SharePoint ou no OneDrive for Business.
+Ele está disponível na propriedade fileSystemInfo dos recursos [driveItem] [ item-resource].
 
 ## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -18,8 +28,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "createdDateTime": "datetime",
-  "lastModifiedDateTime": "datetime"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
 ```
 
@@ -33,7 +44,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="notes"></a>Observações
 
-Os valores para **createdDateTime** e **lastModifiedDateTime** variam em relação às mesmas propriedades no recurso [DriveItem](driveitem.md). Os valores no recurso DriveItem são a data e a hora de criação e modificação, como visto do serviço. Os valores armazenados no recurso **FileSystemInfo** são fornecidos pelo cliente.
+Os valores para **createdDateTime** e **lastModifiedDateTime** variam em relação às mesmas propriedades no recurso [DriveItem](driveitem.md).
+Os valores no recurso DriveItem são a data e a hora de criação e modificação, como visto do serviço.
+Os valores armazenados no recurso **FileSystemInfo** são fornecidos pelo cliente.
 
 Por exemplo, se um arquivo foi criado no dispositivo na segunda-feira, mas não foi carregado no serviço até terça-feira, o cliente que carrega o arquivo deve gravar a faceta `fileSystemInfo` para incluir a data de criação na segunda-feira. Quando os metadados de item forem recuperados, a data de criação do item refletirá terça-feira, mas a faceta `fileSystemInfo` mostrará a data de criação original na segunda-feira.
 
@@ -43,14 +56,16 @@ Se o conteúdo do arquivo for atualizado e estas propriedades não forem forneci
 
 ## <a name="remarks"></a>Comentários
 
+* **lastAccessedDateTime** não está disponível para itens no SharePoint Online ou OneDrive for Business.
+
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

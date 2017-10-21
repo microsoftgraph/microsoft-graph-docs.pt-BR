@@ -1,6 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Pasta
+ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 
-O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
+O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. 
+[**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -16,26 +28,29 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo	  | Descrição                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Número de filhos imediatamente neste contêiner. |
+| Propriedade       | Tipo           | Descrição
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int64          | Número de filhos imediatamente neste contêiner.
+| **view**       | [folderView][] | Uma coleção de propriedades que definem o modo de exibição recomendado para a pasta.
 
 ## <a name="remarks"></a>Comentários 
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para saber mais sobre as facetas de um DriveItem, confira [DriveItem][].
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderView.md
+[DriveItem]: driveItem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ThumbnailSet
+ms.openlocfilehash: c8f8d9c2232b845c746a6a215c81194e97c0431d
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
 O recurso **ThumbnailSet** é uma coleção com chave dos recursos [thumbnail](thumbnail.md). Ele é usado para representar um conjunto de miniaturas associado a um DriveItem.
@@ -17,10 +28,10 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "string (identifier)",
-  "large": {"@odata.type": "microsoft.graph.thumbnail"},
-  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
-  "small": {"@odata.type": "microsoft.graph.thumbnail"},
-  "source": {"@odata.type": "microsoft.graph.thumbnail"}
+  "large": { "@odata.type": "microsoft.graph.thumbnail" },
+  "medium": { "@odata.type": "microsoft.graph.thumbnail" },
+  "small": { "@odata.type": "microsoft.graph.thumbnail" },
+  "source": { "@odata.type": "microsoft.graph.thumbnail" }
 }
 ```
 
@@ -38,8 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnailSet resource",
-  "keywords": "",
+  "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/ThumbnailSet"
+} -->

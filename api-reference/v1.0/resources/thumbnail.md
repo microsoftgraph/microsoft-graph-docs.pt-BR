@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Miniatura
+ms.openlocfilehash: 065c6ae7bbd4f6aca3172afd4399f0a1b5ff3d25
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="thumbnail-resource-type"></a>Tipo de recurso thumbnail
 
 O tipo de recurso **thumbnail** representa a miniatura de uma imagem, vídeo, documento ou qualquer item que tenha uma representação de bitmap.
@@ -33,7 +44,7 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
 | url          | Cadeia de caracteres | A URL usada para buscar o conteúdo da miniatura.                                                                                |
 | width        | Int32  | A largura da miniatura em pixels.                                                                                      |
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 
 | Nome    | Tipo   | Descrição                           |
 | :------ | :----- | :------------------------------------ |
@@ -43,8 +54,7 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnail resource",
-  "keywords": "",
+  "description": "Thumbnail resource represents a single thumbnail for an item.",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Thumbnail"
+} -->

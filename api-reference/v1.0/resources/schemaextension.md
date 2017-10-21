@@ -1,6 +1,4 @@
-<a id="schemaextension-resource-type-schema-extensions" class="xliff"></a>
-
-# Tipo de recurso schemaExtension (extensões de esquema)
+# <a name="schemaextension-resource-type-schema-extensions"></a>Tipo de recurso schemaExtension (extensões de esquema)
 
 As extensões de esquema permitem que você defina um esquema para estender e adicionar dados personalizados digitados a um tipo de recurso. Os dados personalizados aparecem como um tipo complexo no recurso estendido. 
 
@@ -17,9 +15,7 @@ As extensões de esquema são suportadas pelos seguintes tipos de recursos:
 
 Confira o [exemplo de extensão de esquema](../../../concepts/extensibility_schema_groups.md) para aprender a adicionar dados personalizados aos grupos.
 
-<a id="methods" class="xliff"></a>
-
-## Métodos
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -29,21 +25,17 @@ Confira o [exemplo de extensão de esquema](../../../concepts/extensibility_sche
 |[Atualizar](../api/schemaextension_update.md) | schemaExtension   |Atualize uma definição de schemaExtension. |
 |[Excluir](../api/schemaextension_delete.md) | None |Exclua uma definição de schemaExtension. |
 
-<a id="properties" class="xliff"></a>
-
-## Propriedades
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
 |id|String|O identificador exclusivo da definição de extensão de esquema. <br>Você pode atribuir um valor em uma destas duas maneiras: <ul><li>Concatenar o nome de um de seus domínios verificados com um nome da extensão do esquema para formar uma cadeia de caracteres exclusiva neste formato, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. Como exemplo, `contoso_mySchema`. </li><li>Forneça um nome de esquema e permita que o Microsoft Graph use esse nome de esquema para completar a atribuição de **id** neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}. Um exemplo seria `extkvbmkofy_mySchema`.</li></ul>Esta propriedade não pode ser alterada após a criação. |
-|owner|String|O appId do aplicativo que criou a extensão do esquema. Somente leitura.|
-|propriedades|Coleção [extensionSchemaProperty](extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.|
+|owner|String|O `appId` do aplicativo que é o proprietário da extensão de esquema. Essa propriedade pode ser fornecida na criação, para definir o proprietário.  Se não for fornecida, o aplicativo de chamada `appId` será definido como o proprietário. Em ambos os casos, o usuário conectado deve ser o proprietário do aplicativo. Uma vez definida, essa propriedade é somente leitura e não pode ser alterada.| 
+|properties|Coleção [extensionSchemaProperty](extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema.|
 |status|String|O estado do ciclo de vida da extensão de esquema. Os estados possíveis são **InDevelopment**, **Available** e **Deprecated**. Defina automaticamente como **InDevelopment** na criação. As [extensões de esquema](../../../concepts/extensibility_overview.md#schema-extensions) fornecem mais informações sobre as possíveis transições e comportamentos.|
 |targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos do Microsoft Graph (que podem suportar extensões) ao qual a extensão de esquema pode ser aplicada. Escolha entre **contact**, **device**, **event**, **group**, **message**, **organization**, **post** ou **user**.|
 
-<a id="json-representation" class="xliff"></a>
-
-## Representação JSON
+## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 

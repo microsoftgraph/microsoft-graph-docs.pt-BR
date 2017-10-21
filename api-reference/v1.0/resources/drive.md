@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Unidade
+ms.openlocfilehash: 0b178967f7eb8da8bdf8584bb13a7d4f9950392b
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="drive-resource-type"></a>Tipo de unidade de recurso
 
 O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.
@@ -6,37 +17,31 @@ Os usuários do OneDrive sempre terão pelo menos uma unidade disponível, sua u
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON de um recurso **drive**.
+Veja a seguir uma representação JSON de um recurso Drive.
 
 O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda propriedades desse recurso.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "items", "root", "special", "owner", "description" ],
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.drive"
-}-->
+<!-- { "blockType": "resource", 
+       "@odata.type": "microsoft.graph.drive",
+       "keyProperty": "id", 
+       "optionalProperties": [ "activities", "createdBy", "createdDateTime", "description", "lastModifiedBy", "lastModifiedDateTime", "name", "webUrl", "items", "root", "special", "system"] } -->
 
 ```json
 {
-  "id": "string (identifier)",
-  "driveType": "string",
-  "owner": {"@odata.type": "microsoft.graph.identitySet"},
-  "quota": {"@odata.type": "microsoft.graph.quota"},
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
-
-  /* relationships */
-  "root": {"@odata.type": "microsoft.graph.driveItem" },
-  "items": [ {"@odata.type": "microsoft.graph.driveItem" }],
-  "special": [ {"@odata.type": "microsoft.graph.driveItem" }],
-
-  /* inherited from baseItem */
+  "id": "string",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "datetime",
+  "createdDateTime": "string (timestamp)",
   "description": "string",
+  "driveType": "personal | business | documentLibrary",
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "string (timestamp)",
   "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "quota": { "@odata.type": "microsoft.graph.quota" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "special": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "system": { "@odata.type": "microsoft.graph.systemFacet" },
   "webUrl": "url"
 }
 ```
@@ -45,48 +50,61 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 
 | Propriedade             | Tipo                          | Descrição                                                                                                                                                                                                                      |
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id                   | String                        | O identificador exclusivo da unidade. Somente leitura.                                                                                                                                                                                   |
 | createdBy            | [identitySet][]               | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Data e hora de criação do item. Somente leitura.                                                                                                                                                                                       |
+| description          | String                        | Fornecer uma descrição visível para os usuários da unidade. Leitura e gravação.
 | driveType            | String                        | Descreve o tipo de unidade representado por esse recurso. As unidades pessoais do OneDrive retornarão `personal`. O OneDrive for Business retornará `business`. As bibliotecas de documentos do SharePoint retornarão `documentLibrary`. Somente leitura. |
+| id                   | String                        | O identificador exclusivo da unidade. Somente leitura.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                                                                                             |
 | nome                 | string                        | O nome do item. Leitura e gravação.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.                                                                                                                                                                       |
-| cota                | [quota](quota.md)             | Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.                                                                                                                                                          |
+| quota                | [quota](quota.md)             | Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                                                                                                                                         |
+| sistema               | [systemFacet][]               | Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema. Somente leitura.
 | webUrl               | string (url)                  | URL que exibe o recurso no navegador. Somente leitura.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
 [sharepointIds]: sharepointids.md
+[systemFacet]: systemfacet.md
 
 ## <a name="relationships"></a>Relações
 
-| Relação | Tipo                                 | Descrição                                                              |
-| :----------- | :----------------------------------- | :----------------------------------------------------------------------- |
-| items        | Coleção [driveitem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.                   |
-| root         | [driveitem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.                                 |
-| special      | Coleção [driveitem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável. |
+| Relação | Tipo                                 | Descrição
+|:-------------|:-------------------------------------|:-----------------------
+| items        | Coleção [driveitem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
+| root         | [driveitem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
+| special      | Coleção [driveitem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
 
 ## <a name="methods"></a>Métodos
 
-Os métodos a seguir estão disponíveis para os recursos drive.
+|                        Tarefa comum                         |         Método HTTP         |
+| :--------------------------------------------------------- | :-------------------------- |
+| [Recuperar metadados de outra Unidade][drive-get]           | `GET /drives/{drive-id}`    |
+| [Recuperar pasta raiz padrão da Unidade do usuário][item-get]       | `GET /drive/root`           |
+| [Listar filhos na Unidade][item-children]             | `GET /drive/root/children`  |
+| [Listar alterações de todos os Itens na Unidade][item-changes]    | `GET /drive/root/delta`     |
+| [Pesquisar Itens na Unidade][item-search]               | `GET /drive/root/search`    |
+| [Acessar pasta especial](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
 
-| Método                                                | Caminho REST                        |
-| :---------------------------------------------------- | :------------------------------- |
-| [Obter unidade padrão do usuário](../api/drive_get.md)       | `GET /me/drive`                  |
-| [Obter a unidade de outro usuário](../api/drive_get.md)       | `GET /users/{user-id}/drive`     |
-| [Obter pasta raiz de uma unidade](../api/item_get.md)     | `GET /drives/{drive-id}/root`    |
-| [Listar itens em uma unidade](../api/item_list_children.md) | `GET /me/drive/root/children`    |
-| [Listar alterações em uma unidade](../api/item_delta.md)       | `GET /me/drive/root/delta`       |
-| [Pesquisar itens em uma unidade](../api/item_search.md)      | `GET /me/drive/search(q='text')` |
+Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos também são válidos.
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: driveitem.md
+[identity-set]: identityset.md
+[quota-facet]: quota.md
+[drive-resource]: drive.md
+[drive-get]: ../api/drive_get.md
+[item-get]: ../api/driveitem_get.md
+[item-changes]: ../api/driveitem_delta.md
+[item-search]: ../api/driveitem_search.md
+[item-children]: ../api/driveitem_list_children.md
+
+
 <!-- {
   "type": "#page.annotation",
-  "description": "drive resource",
-  "keywords": "",
+  "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
+  "keywords": "drive,objects,resources",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive"
-}-->
+  "tocPath": "Drives",
+  "tocBookmarks": { "Resources/Drive": "#" }
+} -->

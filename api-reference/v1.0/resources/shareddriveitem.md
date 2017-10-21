@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharedDriveItem
+ms.openlocfilehash: 3b4497c1a15704388dbb4bb4ba181d3985d65a69
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
 O recurso **sharedDriveItem** é retornado ao se usar a API [Shares](../api/shares_get.md) para acessar um [driveItem](driveitem.md) compartilhado.
@@ -16,15 +27,16 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 
 ```json
 {
-    "id": "string",
-    "name": "string",
-    "owner": { "@odata.type": "microsoft.graph.identitySet" },
+  "id": "string",
+  "name": "string",
+  "owner": { "@odata.type": "microsoft.graph.identitySet" },
 
-    /* relationships*/
-    "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
-    "root": { "@odata.type": "microsoft.graph.driveItem" },
-    "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
-    "site": { "@odata.type": "microsoft.graph.site" }
+  "driveItem": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "items": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "list": { "@odata.type": "microsoft.graph.list" },
+  "listItem": { "@odata.type": "microsoft.graph.listItem" },
+  "root": { "@odata.type": "microsoft.graph.driveItem" },
+  "site": { "@odata.type": "microsoft.graph.site" }
 }
 ```
 
@@ -38,12 +50,25 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 
 ## <a name="relationships"></a>Relações
 
-| Relação | Tipo                                  | Descrição                                                                                                                                                                                                |
-| :----------- | :------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| itens        | Collection([DriveItem](driveitem.md)) | Um conjunto de recursos **driveItem** compartilhados. Não é possível enumerar este conjunto, mas os itens podem ser acessados por sua ID exclusiva.                                                                        |
-| root         | [DriveItem](driveitem.md)             | O **driveItem** compartilhado de nível superior. Se um único arquivo for compartilhado, este item será o arquivo. Se uma pasta for compartilhada, este item será a pasta. Você pode usar aspectos do item para determinar qual caso é aplicável. |
-| driveItem    | [driveItem](driveitem.md)             | Um **driveItem** do recurso que foi compartilhado.  É idêntico à propriedade **root**.                                                                                                             |
-| site         | [site](site.md)                       | Um recurso **site** que contém o item que foi compartilhado.                                                                                                                                                |
+| Nome da relação | Tipo                | Descrição
+| ------------------|:--------------------|:-----------------------------------
+| **driveItem**     | [**driveItem**][driveItem]   | Usado para acessar o **driveItem** subjacente
+| **list**          | [**list**][list]        | Usado para acessar a **lista** subjacente
+| **listItem**      | [**listItem**][listItem]    | Usado para acessar o **listItem** subjacente
+| **site**          | [**site**][site]        | Usado para acessar o **site** subjacente
+
+
+Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDrive, as relações a seguir também podem ser usadas.
+
+| Nome da relação | Tipo                         | Descrição
+| ------------------|:-----------------------------|:-----------------------------------
+| **items**         | Coleção [**driveItem**][driveItem] | Todos os driveItems contidos na raiz de compartilhamento. Não é possível enumerar este conjunto.
+| **driveItem**     | [**driveItem**][driveItem]            | Usado para acessar o **driveItem** subjacente
+
+[driveItem]: driveItem.md
+[list]: list.md
+[listItem]: listItem.md
+[site]: site.md
 
 ## <a name="methods"></a>Métodos
 
@@ -55,12 +80,10 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharepointIds resource",
-  "keywords": "",
+  "description": "Share resource returns information about a shared item or collection of items.",
+  "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Share"
+} -->

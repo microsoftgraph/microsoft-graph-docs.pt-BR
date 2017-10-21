@@ -58,7 +58,9 @@ A maioria das solicitações de API para interações de arquivo usa um destes r
 | `/groups/{group-id}/drive` | Acessar a biblioteca de documentos padrão de um grupo com base na ID exclusiva desse grupo. |
 | `/shares/{share-id}` | Acessar **DriveItem** com base em sua **sharedId** ou URL de compartilhamento. |
 
-Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, seu aplicativo também pode endereçar **DriveItem** com base no caminho relativo de um recurso conhecido. Para endereçar usando um caminho, um caractere de dois pontos (`:`) é usado para escapar o caminho relativo. Essa tabela fornece um exemplo de diferentes maneiras de usar o caractere de dois-pontos para endereçar um item com base no caminho.
+Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, seu aplicativo também pode endereçar **DriveItem** com base no caminho relativo de um recurso conhecido.
+Para endereçar usando um caminho, um caractere de dois pontos (`:`) é usado para escapar o caminho relativo.
+Essa tabela fornece um exemplo de diferentes maneiras de usar o caractere de dois-pontos para endereçar um item com base no caminho.
 
 | Caminho | Recurso |
 |---|---|
@@ -69,13 +71,15 @@ Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, 
 
 ## <a name="drive-resource"></a>Recurso Drive
 
-O [recurso Drive](drive.md) é o objeto de nível superior no OneDrive de um usuário ou em uma biblioteca de documentos do SharePoint. Quase todas as operações de arquivos serão iniciadas com o endereçamento de um recurso Drive específico.
+O [recurso Drive](drive.md) é o objeto de nível superior no OneDrive de um usuário ou em uma biblioteca de documentos do SharePoint.
+Quase todas as operações de arquivos serão iniciadas com o endereçamento de um recurso Drive específico.
 
 Um recurso Drive pode ser endereçado pela ID exclusiva da unidade ou pela unidade padrão de um [Usuário](user.md), [Grupo](group.md) ou organização. 
 
 ## <a name="driveitem-resource"></a>Recurso DriveItem
 
-[DriveItems](driveitem.md) são os objetos dentro do sistema de arquivos da unidade. Eles podem ser acessados por **id** usando a sintaxe `/items/{item-id}` ou por caminho no sistema de arquivos usando a sintaxe `/root:/path/to/item/`.
+[DriveItems](driveitem.md) são os objetos dentro do sistema de arquivos da unidade.
+Eles podem ser acessados por **id** usando a sintaxe `/items/{item-id}` ou por caminho no sistema de arquivos usando a sintaxe `/root:/path/to/item/`.
 
 DriveItems têm _facetas_ que fornecem dados sobre a identidades e as capacidades do item.
 
@@ -83,13 +87,15 @@ DriveItems com uma faceta **folder** atuam como contêineres de itens e têm uma
 
 ## <a name="shared-folders-and-remote-items"></a>Pastas compartilhadas e itens remotos
 
-Um usuário pessoal do OneDrive pode adicionar um ou mais itens compartilhados de outra unidade a seu próprio OneDrive. Esses itens compartilhados aparecem como **DriveItem** na coleção **children** com uma faceta [remoteItem](remoteitem.md).
+Um usuário pessoal do OneDrive pode adicionar um ou mais itens compartilhados de outra unidade a seu próprio OneDrive.
+Esses itens compartilhados aparecem como **DriveItem** na coleção **children** com uma faceta [remoteItem](remoteitem.md).
 
 Para saber mais sobre como trabalhar com pastas compartilhadas e itens remotos, confira [Itens remotos e pastas compartilhadas](remoteitem.md).   
 
 ## <a name="sharing-and-permissions"></a>Compartilhamento e permissões
 
-Uma das ações mais comuns para bibliotecas de documentos do OneDrive e do SharePoint é compartilhar conteúdo com outras pessoas. O Microsoft Graph permite que seu aplicativo crie [links de compartilhamento](../api/item_createLink.md), [adicione permissões e envie convites](../api/item_invite.md) para itens em uma unidade.
+Uma das ações mais comuns para bibliotecas de documentos do OneDrive e do SharePoint é compartilhar conteúdo com outras pessoas.
+O Microsoft Graph permite que seu aplicativo crie [links de compartilhamento](../api/driveitem_createlink.md), [adicione permissões e envie convites](../api/driveitem_invite.md) para itens em uma unidade.
 
 O Microsoft Graph também fornece uma maneira de seu aplicativo [acessar conteúdo compartilhado](../api/shares_get.md) diretamente de um link de compartilhamento.
 

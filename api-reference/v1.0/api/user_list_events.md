@@ -6,6 +6,37 @@ No momento, esta operação retorna corpos de eventos somente no formato HTML.
 
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar_list_calendarview.md) ou [obtenha as instâncias de um evento](event_list_instances.md).
 
+
+### <a name="get-events-in-another-users-calendar"></a>Obter eventos do calendário de outro usuário
+
+Se você tiver permissões de aplicativo ou se tiver as [permissões](#permissions) delegadas apropriadas de um usuário, será possível obter eventos de calendário de outro usuário. Esta seção se concentra em cenários que envolvem permissões delegadas.
+
+Por exemplo, seu aplicativo adquiriu permissões delegadas do usuário, Diogo. Suponha que outro usuário, Henrique, tenha um calendário compartilhado com Diogo. Você pode obter os eventos desse calendário compartilhado especificando a ID de usuário de Henrique (ou o nome de entidade de segurança) na consulta de exemplo mostrada abaixo.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/events
+```
+
+Esse recurso se aplica a todas as operações de eventos GET com suporte para usuários individuais, conforme listado na seção [Solicitação HTTP](#http-request) abaixo. Também se aplica se Henrique delegou sua caixa de correio inteira a Diogo.
+
+Se Henrique não tiver compartilhado seu calendário com Diogo nem delegado sua caixa de correio a Diogo, a especificação da ID de usuário de Henrique ou do nome de entidade de segurança nessas operações GET retornará um erro. Nesses casos, especificar uma ID de usuário ou um nome de entidade de segurança só funcionará para obter eventos nos próprios calendários do usuário conectado, e a consulta será equivalente a usar o atalho /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events
+```
+
+Esse recurso só está disponível nas operações GET de:
+
+- Pastas de contatos compartilhadas
+- Calendários compartilhados
+- Contatos e eventos em pastas compartilhadas
+- Os recursos acima em caixas de correio delegadas
+
+Esse recurso não está disponível em outras operações para contatos, eventos e suas pastas.
+
+
 ### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
 
 Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 

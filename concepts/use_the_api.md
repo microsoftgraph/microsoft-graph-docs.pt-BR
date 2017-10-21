@@ -2,6 +2,8 @@
 
 O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você [registrar seu aplicativo](auth_register_app_v2.md) e [obter tokens de autenticação para um usuário](auth_v2_user.md) ou [serviço](auth_v2_service.md), é possível fazer solicitações para a API do Microsoft Graph.
 
+> **Importante:**  A maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+
 Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.
 
 ```http
@@ -50,7 +52,7 @@ Para saber mais sobre as versões da API, veja [Suporte e controle de versão](v
 
 ## <a name="resource"></a>Recurso
 
-Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`. Cada um dos recursos de nível superior também inclui **relações**, que podem ser usados para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando **métodos**, por exemplo, para enviar um email, use `me/sendMail`.
+Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`. Cada um dos recursos de nível superior também inclui **relações**, que podem ser usadas para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando **métodos**; por exemplo, para enviar um email, use `me/sendMail`.
 
 Para saber mais sobre como navegar por métodos e relações do recurso, veja Desviar o gráfico. 
 

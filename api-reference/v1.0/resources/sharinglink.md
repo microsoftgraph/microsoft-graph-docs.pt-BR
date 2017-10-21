@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingLink
+ms.openlocfilehash: 7b7729899d134fa1d5de7debb1f209ec5aadd70d
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
 O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
@@ -16,30 +27,35 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "application": {"@odata.type": "microsoft.graph.identity"},
-  "type": "view | edit",
+  "application": { "@odata.type": "microsoft.graph.identity" },
+  "type": "view | edit | embed",
   "scope": "anonymous | organization",
+  "webHtml": "string",
   "webUrl": "url"
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade    | Tipo                    | Descrição                                                                                                                                                                                             |
-|:------------|:------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| aplicativo | [identity](identity.md) | O aplicativo ao qual o link está associado.                                                                                                                                                                    |
-| type        | String                  | O tipo do link criado.                                                                                                                                                                           |
-| scope       | String                  | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário. |
-| webUrl      | String                  | Uma URL que abre o item no navegador no site do OneDrive.                                                                                                                                       |
+| Propriedade    | Tipo          | Descrição
+|:------------|:--------------|:-------------------------------------
+| aplicativo | [identity][]  | O aplicativo ao qual o link está associado.
+| type        | String        | O tipo do link criado.
+| scope       | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
+| webHtml     | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
+| webUrl      | String        | Uma URL que abre o item no navegador no site do OneDrive.
+
+[Identity]: identity.md
 
 ## <a name="type-enumeration"></a>Enumeração Type
 
 Esta tabela define os valores possíveis para a propriedade **type**:
 
-| Valor   | Função    | Descrição                                                                     |
-|:--------|:--------|:--------------------------------------------------------------------------------|
-| `view`  | `read`  | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.                            |
-| `edit`  | `write` | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.                               |
+| Valor   | Função    | Descrição
+|:--------|:--------|:---------------------------------------------------------
+| `view`  | `read`  | Um link somente de compartilhamento para exibição, permitindo o acesso somente leitura.
+| `edit`  | `write` | Um link de compartilhamento de edição, permitindo o acesso de leitura e gravação.
+| `embed` | `read`  | Um link de compartilhamento somente exibição que pode ser usado para inserir o conteúdo em uma página da Web de hospedagem. Os links de compartilhamento não estão disponíveis para OneDrive for Business ou SharePoint.
 
 ## <a name="scope-enumeration"></a>Enumeração de escopo
 
@@ -52,8 +68,8 @@ Esta tabela define os valores possíveis para a propriedade **type**:
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingLink resource",
-  "keywords": "",
+  "description": "The sharing link facet provides information about how a file is shared.",
+  "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SharingLink"
+} -->

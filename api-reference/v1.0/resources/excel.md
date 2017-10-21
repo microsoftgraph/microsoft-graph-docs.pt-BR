@@ -5,7 +5,7 @@ Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis le
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
 `https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`  
 
-Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) usando APIs REST padrão para realizar operações de criação, leitura, atualização e exclusão (CRUD) na pasta de trabalho. Por exemplo, `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  
+Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) usando APIs REST padrão para realizar operações de criação, leitura, atualização e exclusão (CRUD) na pasta de trabalho. Por exemplo, `GET https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/worksheets`  
 retorna uma coleção de todos os objetos da planilha que fazem parte da pasta de trabalho.    
 
 
@@ -13,20 +13,21 @@ retorna uma coleção de todos os objetos da planilha que fazem parte da pasta d
 
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
-Você pode usar o [ponto de extremidade do Azure AD v.20](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
+Você pode usar o [ponto de extremidade do Azure AD v.2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
   
 Um dos seguintes [escopos de permissão](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) é obrigatório para usar o recurso do Excel:
 
-* Files.Read 
-* Files.ReadWrite
+* Files.Read (para ações de leitura)
+* Files.ReadWrite (para ações de leitura e gravação)
 
 
 ## <a name="sessions-and-persistence"></a>Sessões e persistência
 
-As APIs do Excel podem ser chamadas em um destes dois modos: 
+As APIs do Excel podem ser chamadas em um destes três modos: 
 
-1. Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Este é o modo normal de operação. 
-2. Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento.   
+1. Sessão persistente – Todas as alterações feitas na pasta de trabalho são persistentes (salvas). Esse é o modo de operação mais eficiente e com desempenho mais elevado. 
+2. Sessão não persistente – As alterações feitas pela API não são salvas na localização de origem. Em vez disso, o servidor back-end do Excel mantém uma cópia temporária do arquivo que reflete as alterações feitas durante essa sessão de API específica. Quando a sessão do Excel expirar, as alterações serão perdidas. Esse modo é útil para aplicativos que precisam fazer uma análise ou obter os resultados de um cálculo ou de uma imagem de gráfico, mas não afeta o estado do documento. 
+3. Sem sessão ‒ a chamada à API é feita sem informações sobre a sessão. Os servidores do Excel têm que localizar a cópia do servidor de pasta de trabalho sempre que executam a operação. Portanto, essa não é uma maneira eficiente de chamar APIs do Excel. Ele é adequado para fazer solicitações únicas. 
 
 Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`. 
 
@@ -75,6 +76,8 @@ GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksh
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 ```
+
+>Observação: Se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de sete minutos de inatividade. A sessão não persistente expira após cerca de cinco minutos de inatividade. 
 
 ## <a name="common-excel-scenarios"></a>Cenários comuns do Excel
 
@@ -149,7 +152,9 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-a-new-worksheet"></a>Obter uma nova planilha 
- 
+
+Obter uma planilha com base no nome. 
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/Sheet32243

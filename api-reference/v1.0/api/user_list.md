@@ -24,7 +24,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 
 Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
 
-Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta ODATA `$select`. Por exemplo, para retornar _displayName_, _givenName_, _id_ e _postalCode_, você pode adicionar o seguinte à sua consulta `$select=displayName,givenName,postalCode`
+Para retornar um conjunto de propriedades alternativo, você deve especificar o conjunto desejado das propriedades [user](../resources/user.md) usando o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
 
 > Observação: Determinadas propriedades não podem ser retornadas dentro de uma coleção de usuário. As seguintes propriedades só terão suporte na [recuperação de um único usuário](./user_get.md): _aboutMe, birthday, hireDate, interests, mySite, pastProjects, preferredName, responsibilities, schools, skills, mailboxSettings_
 
@@ -43,11 +43,14 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [user](../resources/user.md) no corpo da resposta.
 
-## <a name="example"></a>Exemplo
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-standard-users-request"></a>Exemplo 1: Solicitação de usuários padrão
+
+Por padrão, somente um conjunto limitado de propriedades é retornado (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). Este exemplo ilustra a solicitação padrão e a resposta. 
 
 ##### <a name="request"></a>Solicitação
 
-Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -58,7 +61,6 @@ GET https://graph.microsoft.com/v1.0/users
 
 ##### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,6 +88,45 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-users-request-using-select"></a>Exemplo 2: Solicitação de usuários usando $select
+
+Se precisar de um conjunto de propriedades diferente, você poderá usar o parâmetro de consulta OData `$select`. Por exemplo, para retornar _displayName_, _givenName_ e _postalCode_, você pode adicionar o seguinte à consulta `$select=displayName,givenName,postalCode`
+
+##### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "get_users"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
+```
+
+##### <a name="response"></a>Resposta
+
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 159
+
+{
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "postalCode": "postalCode-value"
     }
   ]
 }

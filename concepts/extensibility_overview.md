@@ -44,10 +44,10 @@ Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usand
 
 Ao criar uma definição de extensão de esquema, você deve fornecer um nome exclusivo para sua **id**. Há duas opções de nomes:
 
-- Se já tiver um domínio `.com` personalizado que verificou com seu locatário, você poderá usar o nome de domínio com o nome de esquema para definir um nome exclusivo, neste formato: \{_&#65279;nomedoDomínio_\}\_\{_&#65279;nomedoEsquema_\}. Por exemplo, se seu domínio personalizado for contoso.com, você poderá definir a **id** `contoso_mySchema`.  Essa é a opção preferencial.
+- Se já tiver um domínio personalizado `.com`,`.net`, `.gov`, `.edu` ou `.org` que verificou com seu locatário, você poderá usar o nome de domínio com o nome de esquema para definir um nome exclusivo, neste formato: \{_&#65279;nomedoDomínio_\}\_\{_&#65279;nomedoEsquema_\}. Por exemplo, se seu domínio personalizado for contoso.com, você poderá definir a **id** de `contoso_mySchema`.  Essa é a opção preferencial.
 - Se não tiver um domínio personalizado verificado, você poderá definir apenas a **id** para um nome de esquema (sem um prefixo de nome de domínio), por exemplo, `mySchema`. O Microsoft Graph atribuirá uma ID de cadeia de caracteres com base no nome fornecido, neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}.  Por exemplo, `extkvbmkofy_mySchema`.
 
-Você verá esse nome exclusivo na **id** usada como o nome do tipo complexo que armazenará os dados personalizados na instância do recurso estendido. 
+Você verá esse nome exclusivo na **id** usada como o nome do tipo complexo que armazenará os dados personalizados na instância do recurso estendido.
 
 Diferentemente das extensões abertas, o gerenciamento de definições de extensão de esquema ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md) e [delete](../api-reference/v1.0/api/schemaextension_delete.md)) e gerenciar seus dados (adicionar, obter, atualizar e excluir dados) são conjuntos separados de operações de API. 
 
@@ -119,7 +119,7 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 
 [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 

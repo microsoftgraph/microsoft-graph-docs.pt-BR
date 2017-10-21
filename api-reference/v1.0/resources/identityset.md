@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: IdentitySet
+ms.openlocfilehash: 4d2bb5d92ebe06e79a68d69b949baec19a33a4c6
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="identityset-resource-type"></a>Tipo de recurso IdentitySet
 
 O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
@@ -6,12 +17,9 @@ O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](ide
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ "user", "device", "application" ],
-  "@odata.type": "microsoft.graph.identitySet"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identitySet",
+       "optionalProperties": ["user", "application", "device"],
+       "openType": true } -->
 ```json
 {
   "application": {"@odata.type": "microsoft.graph.identity"},
@@ -22,7 +30,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	    | Tipo	                    | Descrição                                            |
+| Propriedade    | Tipo                    | Descrição                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
 | application | [Identity](identity.md) | Opcional. O aplicativo associado a essa ação. |
 | dispositivo      | [Identity](identity.md) | Opcional. O dispositivo associado a essa ação.      |
@@ -37,8 +45,7 @@ Consulte [DriveItem](driveitem.md) para saber mais sobre o uso de recursos **Ide
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySet resource",
-  "keywords": "",
+  "description": "Identity set is a collection of identities",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/IdentitySet"
+} -->

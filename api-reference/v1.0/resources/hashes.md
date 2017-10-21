@@ -1,3 +1,13 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+ms.openlocfilehash: 9de6923146b915207fc771721d7aeb6767e9f99e
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 
 O recurso **hash** agrupa hashes disponíveis em uma estrutura simples para um item.
@@ -16,12 +26,11 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "crc32Hash": "string",
-  "sha1Hash": "string",
-  "quickXorHash": "string"
+  "crc32Hash": "string (hex)",
+  "sha1Hash": "string (hex)",
+  "quickXorHash": "string (base64)"
 }
 ```
-
 
 ## <a name="properties"></a>Propriedades
 
@@ -33,20 +42,20 @@ Veja a seguir uma representação JSON do recurso.
 
 **Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
 
-
 ## <a name="remarks"></a>Comentários
 
-No OneDrive for Business, **sha1Hash** e **crc32Hash** não estão disponíveis. No OneDrive Personal, **quickXorHash** não está disponível.
+No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash** não estão disponíveis.
 
+No OneDrive Personal, o **quickXorHash** não está disponível.
+
+Para calcular o **quickXorHash** de um arquivo, confira o [trecho de código QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "hashes resource",
-  "keywords": "",
+  "description": "The hashes facet provides hash identifiers for a file in OneDrive",
+  "keywords": "hash,sha1,crc32,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Hashes"
+} -->

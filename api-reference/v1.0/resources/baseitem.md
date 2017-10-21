@@ -1,3 +1,14 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+ms.openlocfilehash: bbfebd734407259c391cdb1ce74beb96dc74d8bf
+ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 09/28/2017
+---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
 O recurso **baseItem** é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos. Recursos que derivam de **baseItem** incluem:
@@ -43,11 +54,11 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura. |
 | lastModifiedDateTime | dateTimeOffset    | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                   |
-| name                 | string            | O nome do item. Leitura e gravação.                                                      |
+| nome                 | string            | O nome do item. Leitura e gravação.                                                      |
 | parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.                              |
-| webUrl               | cadeia de caracteres (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
+| webUrl               | string (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
 
-[identitySet]: identitySet.md
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
 
 ## <a name="remarks"></a>Comentários
@@ -61,8 +72,5 @@ O tipo `baseItem` não deve ser usado diretamente.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->
