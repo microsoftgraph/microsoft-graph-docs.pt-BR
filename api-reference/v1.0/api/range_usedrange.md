@@ -1,16 +1,16 @@
-# <a name="range-usedrange"></a><span data-ttu-id="41a31-101">Range: UsedRange</span><span class="sxs-lookup"><span data-stu-id="41a31-101">Range: UsedRange</span></span>
+# <a name="range-usedrange"></a><span data-ttu-id="e2c1b-101">Range: UsedRange</span><span class="sxs-lookup"><span data-stu-id="e2c1b-101">Range: UsedRange</span></span>
 
-<span data-ttu-id="41a31-102">Retorna o intervalo usado do objeto range determinado.</span><span class="sxs-lookup"><span data-stu-id="41a31-102">Returns the used range of the given range object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="41a31-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="41a31-103">Permissions</span></span>
-<span data-ttu-id="41a31-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="41a31-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="e2c1b-102">Retorna o intervalo usado do objeto range determinado.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-102">Returns the used range of the given range object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e2c1b-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="e2c1b-103">Permissions</span></span>
+<span data-ttu-id="e2c1b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="e2c1b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="41a31-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="41a31-106">Permission type</span></span>      | <span data-ttu-id="41a31-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="41a31-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e2c1b-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e2c1b-106">Permission type</span></span>      | <span data-ttu-id="e2c1b-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e2c1b-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="41a31-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="41a31-108">Delegated (work or school account)</span></span> | <span data-ttu-id="41a31-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41a31-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="41a31-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="41a31-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="41a31-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="41a31-111">Not supported.</span></span>    |
-|<span data-ttu-id="41a31-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="41a31-112">Application</span></span> | <span data-ttu-id="41a31-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="41a31-113">Not supported.</span></span> |
+|<span data-ttu-id="e2c1b-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e2c1b-108">Delegated (work or school account)</span></span> | <span data-ttu-id="e2c1b-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e2c1b-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e2c1b-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e2c1b-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2c1b-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-111">Not supported.</span></span>    |
+|<span data-ttu-id="e2c1b-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e2c1b-112">Application</span></span> | <span data-ttu-id="e2c1b-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="41a31-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="41a31-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e2c1b-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e2c1b-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/UsedRange
@@ -18,26 +18,26 @@ GET /workbook/worksheets/{id|name}/range(<address>)/UsedRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="41a31-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="41a31-115">Request headers</span></span>
-| <span data-ttu-id="41a31-116">Nome</span><span class="sxs-lookup"><span data-stu-id="41a31-116">Name</span></span>       | <span data-ttu-id="41a31-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="41a31-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e2c1b-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e2c1b-115">Request headers</span></span>
+| <span data-ttu-id="e2c1b-116">Nome</span><span class="sxs-lookup"><span data-stu-id="e2c1b-116">Name</span></span>       | <span data-ttu-id="e2c1b-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2c1b-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="41a31-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="41a31-118">Authorization</span></span>  | <span data-ttu-id="41a31-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="41a31-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e2c1b-118">Autorização</span><span class="sxs-lookup"><span data-stu-id="e2c1b-118">Authorization</span></span>  | <span data-ttu-id="e2c1b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="41a31-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="41a31-121">Request body</span></span>
-<span data-ttu-id="41a31-122">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="41a31-122">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e2c1b-121">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e2c1b-121">Request body</span></span>
+<span data-ttu-id="e2c1b-122">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-122">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="41a31-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="41a31-123">Parameter</span></span>    | <span data-ttu-id="41a31-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="41a31-124">Type</span></span>   |<span data-ttu-id="41a31-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="41a31-125">Description</span></span>|
+| <span data-ttu-id="e2c1b-123">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e2c1b-123">Parameter</span></span>    | <span data-ttu-id="e2c1b-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="e2c1b-124">Type</span></span>   |<span data-ttu-id="e2c1b-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2c1b-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="41a31-126">valuesOnly</span><span class="sxs-lookup"><span data-stu-id="41a31-126">valuesOnly</span></span>|<span data-ttu-id="41a31-127">booliano</span><span class="sxs-lookup"><span data-stu-id="41a31-127">boolean</span></span>|<span data-ttu-id="41a31-p103">Opcional. Considera apenas as células com valores como células usadas.</span><span class="sxs-lookup"><span data-stu-id="41a31-p103">Optional. Considers only cells with values as used cells.</span></span>|
+|<span data-ttu-id="e2c1b-126">valuesOnly</span><span class="sxs-lookup"><span data-stu-id="e2c1b-126">valuesOnly</span></span>|<span data-ttu-id="e2c1b-127">booliano</span><span class="sxs-lookup"><span data-stu-id="e2c1b-127">boolean</span></span>|<span data-ttu-id="e2c1b-p103">Opcional. Considera apenas as células com valores como células usadas.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-p103">Optional. Considers only cells with values as used cells.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="41a31-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="41a31-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e2c1b-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2c1b-130">Response</span></span>
 
-<span data-ttu-id="41a31-131">Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="41a31-131">If successful, this method returns `200, OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="e2c1b-131">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-131">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41a31-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="41a31-132">Example</span></span>
-<span data-ttu-id="41a31-133">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="41a31-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="41a31-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="41a31-134">Request</span></span>
-<span data-ttu-id="41a31-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="41a31-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e2c1b-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e2c1b-132">Example</span></span>
+<span data-ttu-id="e2c1b-133">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e2c1b-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e2c1b-134">Request</span></span>
+<span data-ttu-id="e2c1b-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_usedrange"
@@ -52,8 +52,8 @@ Content-length: 24
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="41a31-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="41a31-136">Response</span></span>
-<span data-ttu-id="41a31-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="41a31-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e2c1b-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2c1b-136">Response</span></span>
+<span data-ttu-id="e2c1b-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e2c1b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
