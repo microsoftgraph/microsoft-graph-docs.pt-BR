@@ -54,7 +54,7 @@ Com base nos parâmetros especificados,**findMeetingTimes** verifica o status di
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e o recurso [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) no corpo da resposta. 
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [meetingTimeSuggestionsResult](../resources/meetingTimeSuggestionsResult.md) no corpo da resposta. 
 
 Um **meetingTimeSuggestionsResult** inclui uma coleção de sugestões de reunião e uma propriedade **emptySuggestionsReason**. Cada sugestão é definida como uma [meetingTimeSuggestion](../resources/meetingTimeSuggestion.md), e participantes com um nível de confiança de 50% na média para participar ou uma % específica que definida no parâmetro **minimumAttendeePercentage**. 
 

@@ -34,7 +34,7 @@ Como o recurso **message** dá suporte a [extensions](../../../concepts/extensib
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [message](../resources/message.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1

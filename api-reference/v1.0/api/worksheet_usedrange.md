@@ -31,7 +31,7 @@ No URL de solicitação, forneça um parâmetro de consulta opcional.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Aqui está um exemplo de como chamar esta API.
@@ -43,8 +43,6 @@ Este é um exemplo da solicitação.
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
-Content-type: application/json
-
 ```
 
 ##### <a name="response"></a>Resposta

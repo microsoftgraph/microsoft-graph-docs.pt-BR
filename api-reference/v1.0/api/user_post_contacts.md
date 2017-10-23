@@ -29,7 +29,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Contact]
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [Contact](../resources/contact.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [Contact](../resources/contact.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

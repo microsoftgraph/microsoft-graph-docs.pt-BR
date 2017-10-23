@@ -27,7 +27,7 @@ No corpo da solicitação, forneça a id de um objeto de usuário ou grupo.
 
 ## <a name="response"></a>Resposta
 
-Este método retorna o código de resposta `204, No Content` e nenhum corpo de resposta.
+Este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

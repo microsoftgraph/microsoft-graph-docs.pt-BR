@@ -43,7 +43,7 @@ O controle de alterações em contatos corresponde a uma série de uma ou mais c
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [contact](../resources/contact.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [contact](../resources/contact.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

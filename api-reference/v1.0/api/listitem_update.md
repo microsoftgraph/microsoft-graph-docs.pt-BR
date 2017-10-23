@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Atualizar um registro em uma lista do SharePoint
-ms.openlocfilehash: fc025ef8c38a7d0768240038955187ee551d6b42
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: ca1c3dcb96ba347b457253b3843114402dba8ba3
+ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
@@ -50,7 +50,7 @@ Todos os outros valores no listItem ficam inalterados.
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
 {

@@ -26,7 +26,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Chart](.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [Chart](../resources/chart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Chart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

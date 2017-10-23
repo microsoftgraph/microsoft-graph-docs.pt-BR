@@ -28,7 +28,7 @@ Esta API não exige o corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204, No content`.
+Se bem sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -43,6 +43,9 @@ Content-type: application/json
 workbook-session-id: {session-id}
 Content-length: 0
 
+{
+
+}
 ```
 
 Observe que o cabeçalho workbook-session-id é necessário. 

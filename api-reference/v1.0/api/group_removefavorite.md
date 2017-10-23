@@ -1,5 +1,5 @@
 # <a name="group-removefavorite"></a>group: removeFavorite
-Remova o grupo da lista de grupos favoritos do usuário atual. Com suporte apenas para grupos do Office 365.
+Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -25,7 +25,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

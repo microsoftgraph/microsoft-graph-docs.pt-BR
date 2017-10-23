@@ -18,7 +18,7 @@ Nenhuma
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |names|Coleção [NamedItem](nameditem.md)|Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
-|tabelas|Coleção [Table](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
+|tables|Coleção [Table](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
 |worksheets|Coleção [Worksheet](worksheet.md)|Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
 
 ## <a name="functions"></a>Funções
@@ -54,7 +54,7 @@ workbook-session-id: {session-id}
 Resposta:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -89,7 +89,7 @@ workbook-session-id: {session-id}
 Resposta:
 
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {

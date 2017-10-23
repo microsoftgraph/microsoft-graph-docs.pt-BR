@@ -1,7 +1,7 @@
 # <a name="assign-a-manager"></a>Atribuir um gerente
 
 Use essa API para atribuir um gerente ao usuário.
-> Observação: Não é possível atribuir subordinados diretamente; em vez disso, use essa API.
+> Observação: não é possível atribuir subordinados diretamente; em vez disso, use essa API.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -27,7 +27,7 @@ No corpo da solicitação, forneça uma representação JSON de um objeto [direc
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -47,7 +47,7 @@ Quando você faz uma consulta delta em um modo de exibição de calendário, esp
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200, OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

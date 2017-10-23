@@ -40,7 +40,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um convi
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [invitation](../resources/invitation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

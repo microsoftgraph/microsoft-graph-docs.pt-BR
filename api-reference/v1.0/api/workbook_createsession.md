@@ -36,7 +36,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Workbook
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará o código de resposta `201, Created` e o objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.
+Se for bem-sucedido, esse método retornará o código de resposta `201 Created` e o objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

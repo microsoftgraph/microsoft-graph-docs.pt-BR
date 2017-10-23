@@ -30,7 +30,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Conversa
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [ConversationThread](../resources/conversationthread.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [ConversationThread](../resources/conversationthread.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -56,7 +56,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).
 ##### <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retornará um código de resposta `201, Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta. 
+Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true,

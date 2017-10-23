@@ -28,7 +28,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |securityEnabledOnly|Boolean| Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200, OK` e a coleção de cadeias de caracteres no corpo da resposta que contém as IDs dos grupos dos quais o grupo é membro.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e a coleção de cadeias de caracteres no corpo da resposta que contém as IDs dos grupos dos quais o grupo é membro.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

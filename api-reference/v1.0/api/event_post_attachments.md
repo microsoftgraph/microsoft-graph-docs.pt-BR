@@ -46,7 +46,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [attachme
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201, Created` e um objeto [attachment](../resources/attachment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [attachment](../resources/attachment.md) no corpo da resposta.
 
 ## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
 
