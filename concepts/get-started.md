@@ -8,113 +8,25 @@ Você pode seguir as etapas no artigo que aborda a plataforma de desenvolvimento
 
 Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](https://github.com/microsoftgraph) no GitHub. A tabela a seguir mostra os exemplos por provedor e plataforma de autenticação e observa se eles se conectam ao Microsoft Graph usando REST ou uma biblioteca de cliente do Microsoft Graph.
 
-<table>
-  <tr>
-    <th>Plataforma</th>
-    <th>Ponto de extremidade do Azure AD</th> 
-    <th>Ponto de extremidade do Azure AD v2.0</th>
-  </tr>
-  <tr>
-    <td>Android</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Exemplo de SDK</a>
-    </td> 
-        <td>
-                <a href="https://github.com/microsoftgraph/android-java-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>AngularJS</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td> 
-        <td>
-        <a href="https://github.com/microsoftgraph/angular-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>ASP.NET</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/aspnet-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>iOS (Obj-C)</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Exemplo de REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Exemplo de SDK</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>iOS (Swift)</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">Exemplo de REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ios-swift-connect-sample">Exemplo de SDK</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>NodeJS</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>    
-        <a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>PHP</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
-            <a href="https://github.com/microsoftgraph/php-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/php-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>Python</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/python3-connect-rest-sample">Exemplo de REST</a>
-    </td>     
-    <td>
-    </td> 
-  </tr>
-  <tr>
-    <td>Ruby</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>UWP</td>
-    <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">Exemplo de REST</a>
-    </td> 
-  </tr>
-  <tr>
-    <td>Xamarin</td>
-    <td>
-    </td>     
-    <td>
-        <a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">Exemplo de SDK</a>
-    </td> 
-  </tr>
-</table>
 
-## <a name="see-also"></a>Confira também
+|Plataforma |Ponto de extremidade do Azure AD |Ponto de extremidade do Azure AD v2.0 |
+|:--- |:--- |:---|
+|Android |<a href="https://github.com/microsoftgraph/android-java-connect-sample/tree/last_v1_auth">Exemplo de SDK</a> |<a href="https://github.com/microsoftgraph/android-java-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/android-java-connect-rest-sample">Exemplo de REST</a> |
+|AngularJS |<a href="https://github.com/microsoftgraph/angular-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/angular-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/angular-connect-rest-sample">Exemplo de REST</a> |
+|ASP.NET |<a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/aspnet-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/aspnet-connect-rest-sample">Exemplo de REST</a> |
+|iOS (Obj-C) |<a href="https://github.com/microsoftgraph/ios-objectivec-connect-rest-sample">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/ios-objectivec-connect-sample">Exemplo de SDK</a> |
+|iOS (Swift) |<a href="https://github.com/microsoftgraph/ios-swift-connect-rest-sample">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/ios-swift-connect-sample">Exemplo de SDK</a> |
+|NodeJS |<a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/nodejs-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/nodejs-connect-rest-sample">Exemplo de REST</a> |
+|PHP |<a href="https://github.com/microsoftgraph/php-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/php-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/php-connect-rest-sample">Exemplo de REST</a> |
+|Python |<a href="https://github.com/microsoftgraph/python3-connect-rest-sample">Exemplo de REST</a> |
+|Ruby |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/ruby-connect-rest-sample">Exemplo de REST</a> |
+|UWP |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample/tree/last_v1_auth">Exemplo de REST</a> |<a href="https://github.com/microsoftgraph/uwp-csharp-connect-sample">Exemplo de SDK</a> ou <a href="https://github.com/microsoftgraph/uwp-csharp-connect-rest-sample">Exemplo de REST</a> |
+|Xamarin | |<a href="https://github.com/microsoftgraph/xamarin-csharp-connect-sample">Exemplo de SDK</a> |
 
-- Experimente as chamadas REST de exemplo no [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+<br/>
+
+## <a name="see-also"></a>Ver também
+
+- Experimente as chamadas REST de exemplo no [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer)
 - [Documentação de ponto de extremidade do Microsoft Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
 - [Documentação de ponto de extremidade do Azure AD v2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
