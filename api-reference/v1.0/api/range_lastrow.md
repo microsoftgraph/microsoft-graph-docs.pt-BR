@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/LastRow
-GET /workbook/worksheets/{id|name}/range(<address>)/LastRow
+GET /workbook/worksheets/{id|name}/range(address='<address>')/LastRow
 GET /workbook/tables/{id|name}/columns/{id|name}/range/LastRow
 
 ```

@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/Row
-POST /workbook/worksheets/{id|name}/range(<address>)/Row
+POST /workbook/worksheets/{id|name}/range(address='<address>')/Row
 POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 
 ```

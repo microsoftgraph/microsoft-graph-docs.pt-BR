@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/format/borders(<sideIndex>)
-GET /workbook/worksheets/{id|name}/range(<address>)/format/borders(<sideIndex>)
+GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders(<sideIndex>)
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders(<sideIndex>)
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

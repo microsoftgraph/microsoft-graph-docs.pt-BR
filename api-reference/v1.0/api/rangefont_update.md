@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names(<name>)/range/format/font
-PATCH /workbook/worksheets/{id|name}/range(<address>)/format/font
+PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais

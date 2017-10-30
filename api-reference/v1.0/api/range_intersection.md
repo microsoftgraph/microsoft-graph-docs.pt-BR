@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names(<name>)/range/Intersection
-GET /workbook/worksheets/{id|name}/range(<address>)/Intersection
+GET /workbook/worksheets/{id|name}/range(address='<address>')/Intersection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
