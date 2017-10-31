@@ -52,11 +52,11 @@ Possíveis motivos @removed podem ser *changed* ou *deleted*.
 - *Alterado* indica que o item foi excluído e poderá ser restaurado de [deletedItems](../api-reference/beta/resources/directory.md).
 - *Deleted* indica que o item foi excluído e não pode ser restaurado.
 
-O objeto @removed pode ser retornado na resposta da consulta delta inicial e em respostas controladas (deltaLink). Os clientes que usam solicitações de consulta delta devem ser projetados para lidar com esses objetos nas respostas.
+O objeto `@removed` pode ser retornado na resposta de consulta delta inicial e nas respostas rastreadas (deltaLink). Os clientes que usam solicitações de consulta delta devem ser designados para lidar com esses objetos nas respostas.
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-A consulta Delta é compatível atualmente com os seguintes recursos:
+A consulta delta é compatível atualmente com os seguintes recursos.
 
 | **Coleção de recursos** | **API** |
 |:------ | :------ |
@@ -70,7 +70,7 @@ A consulta Delta é compatível atualmente com os seguintes recursos:
 | Itens de unidade\* | Função [delta](../api-reference/v1.0/api/driveitem_delta.md) do recurso [driveItem](../api-reference/v1.0/resources/driveitem.md) |
 
 
-> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Para obter mais detalhes sobre a sintaxe atual, veja: <https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta>
+> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

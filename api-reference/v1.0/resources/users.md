@@ -8,6 +8,7 @@ Você pode acessar [usuários](user.md) pelo Microsoft Graph de duas maneiras:
 - Usando o alias `/me` para o usuário conectado, que é igual a `/users/{signed-in user's id}`
 
 ## <a name="authorization"></a>Autorização
+
 Uma das seguintes [permissões](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) é necessária para acessar operações de usuário. As três primeiras permissões podem ser concedidas a um aplicativo por um usuário. O restante só pode ser concedido a um aplicativo pelo administrador.
 
 - User.ReadBasic.All
@@ -20,10 +21,11 @@ Uma das seguintes [permissões](https://developer.microsoft.com/en-us/graph/docs
 - Directory.AccessAsUser.All
 
 ## <a name="common-properties"></a>Propriedades comuns
-O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários.  Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`. 
 
-| Propriedade | Descrição |
-|----------|-------------|
+O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários. Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`. 
+
+|Propriedade |Descrição |
+|:----------|:-------------|
 |id | O identificador exclusivo do usuário.|
 |businessPhones | Os números de telefone do usuário.|
 |displayName | O nome exibido no catálogo de endereços do usuário.|
@@ -36,13 +38,16 @@ O item a seguir representa o conjunto padrão de propriedades que serão retorna
 |surname| O sobrenome do usuário. |
 |userPrincipalName| O nome UPN do usuário. |
 
+<br/>
+
 Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user](user.md).
 
 ## <a name="common-operations"></a>Operações comuns
->**Observação:** Algumas destas operações exigem permissões adicionais.
 
-| Caminho    | Descrição |
-|---------|-------------|
+> **Observação:** Algumas destas operações exigem permissões adicionais.
+
+| Path    | Descrição |
+|:---------|:-------------|
 |[`/users`](../api/user_list.md) | Lista os usuários na organização. |
 |[`/users/{id}`](../api/user_get.md) | Obtém um usuário específico pela id. |
 |[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Obtém a foto de perfil do usuário. |

@@ -19,7 +19,7 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |scoredEmailAddresses|Coleção [scoredEmailAddress](scoredemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|String|O nome fornecido da pessoa.|
 |id|String|O identificador exclusivo da pessoa. Somente leitura.|
-|imAddress|Coleção de cadeias de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
+|imAddress|Cadeia de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voz sobre IP) da mensagem instantânea para o usuário. Somente leitura.|
 |isFavorite|Boolean|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
 |jobTitle|String|O cargo da pessoa.|
 |officeLocation|String|O local do escritório da pessoa.|
@@ -55,14 +55,15 @@ Veja a seguir uma representação JSON do recurso.
   "companyName": "string",
   "department": "string",
   "displayName": "string",
-  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredemailaddress"}],
+  "scoredEmailAddresses": [{"@odata.type": "microsoft.graph.scoredEmailAddress"}],
   "givenName": "string",
   "id": "string (identifier)",
+  "imAddress": "string",
   "isFavorite": true,
   "jobTitle": "string",
   "officeLocation": "string",
   "personNotes": "string",
-  "personType": [{"@odata.type": "microsoft.graph.persontype"}],
+  "personType": [{"@odata.type": "microsoft.graph.personType"}],
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.location"}],
   "profession": "string",

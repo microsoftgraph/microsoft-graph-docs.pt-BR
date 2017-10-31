@@ -110,7 +110,7 @@ Você pode receber HTTP 500 com o código de erro `ErrorInternalServerTransientE
 - Não é possível usar a API REST de calendário para exibir ou editar esses calendários ou os respectivos eventos quando eles são compartilhados de acordo com a **antiga** abordagem.
 
 
-Se você compartilhar o calendário com permissões de exibição ou edição usando a abordagem antiga, poderá resolver o problema e atualizar manualmente o compartilhamento do calendário para usar a nova abordagem. O Outlook atualizará automaticamente todos os calendários compartilhados ao longo do tempo para usar a nova abordagem, inclusive os compartilhados com permissões de representante. 
+Se você compartilhar o calendário com permissões de exibição ou edição usando a abordagem antiga, poderá resolver o problema e atualizar manualmente o compartilhamento do calendário para usar a nova abordagem. Com o tempo, o Outlook atualizará automaticamente todos os calendários compartilhados para usar a nova abordagem, incluindo calendários compartilhados com permissões delegadas. 
 
 Para atualizar manualmente um calendário compartilhado e usar a nova abordagem, faça os seguintes procedimentos:
 1.  O destinatário remove o calendário previamente compartilhado com ele.

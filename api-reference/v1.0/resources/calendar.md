@@ -1,18 +1,18 @@
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
-Um calendário que é um contêiner para eventos.
+Um calendário que é um contêiner para eventos. Pode ser um calendário para um [user](user.md) ou o calendário padrão de um [group](group.md) do Office 365.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Listar calendários](../api/user_list_calendars.md)|Coleção [calendar](calendar.md)|Obtenha todos os calendários do usuário ou os calendários no grupo de calendários padrão ou em outro grupo de calendários específico.|
-|[Criar calendário](../api/user_post_calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendários padrão ou no calendário especificado.|
-|[Obter calendário](../api/calendar_get.md) | [calendar](calendar.md) |Leia as propriedades e as ações do objeto calendar.|
-|[Update](../api/calendar_update.md) | [calendar](calendar.md)  |Atualize o objeto calendar. |
-|[Delete](../api/calendar_delete.md) | Nenhum |Exclua um objeto calendar. |
+|[Criar calendário](../api/user_post_calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendário padrão ou no grupo de calendários especificado para um usuário.|
+|[Obter calendário](../api/calendar_get.md) | [calendar](calendar.md) |Obtenha as propriedades e as relações de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Office 365. |
+|[Atualizar](../api/calendar_update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Office 365. |
+|[Excluir](../api/calendar_delete.md) | Nenhum |Exclua um objeto calendar. |
 |[Listar calendarView](../api/calendar_list_calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
-|[Listar eventos](../api/calendar_list_events.md) |Coleção [event](event.md)| Recupere uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres em série.|
+|[Listar eventos](../api/calendar_list_events.md) |Coleção [event](event.md)| Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.|
 |[Criar Evento](../api/calendar_post_events.md) |[event](event.md)| Criar um novo Evento no calendário especificado ou padrão.|
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[calendar](calendar.md)  |Criar uma ou mais propriedades estendidas de valor único em um calendário novo ou existente.   |
 |[Obter calendário com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Obter calendários que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |

@@ -1,6 +1,6 @@
 # <a name="get-calendar"></a>Obter calendário
 
-Recuperar as propriedades e os relacionamentos do objeto calendar.
+Obtenha as propriedades e as relações de um objeto [calendar](../resources/calendar.md). O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.
 
 
 ### <a name="get-another-users-calendar"></a>Obter o calendário de outro usuário
