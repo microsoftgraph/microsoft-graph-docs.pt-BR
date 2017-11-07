@@ -1,6 +1,6 @@
 # <a name="create-calendar"></a>Criar calendário
 
-Use esta API para criar um novo calendário.
+Use esta API para criar um novo Calendar para um [usuário](../resources/user.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -26,7 +26,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [calendar
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201, Created` e o objeto [calendar](../resources/calendar.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [calendar](../resources/calendar.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

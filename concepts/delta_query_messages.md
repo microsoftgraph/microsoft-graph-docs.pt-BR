@@ -35,7 +35,7 @@ Verifique o [exemplo](#example-to-synchronize-messages-in-a-folder) abaixo para 
 
 ### <a name="optional-request-header"></a>Cabeçalhos de solicitação opcionais
 
-Cada solicitação GET de consulta delta retorna um conjunto de um ou mais mensagens na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, _Prefer: odata.maxpagesize={x}_, para configurar o máximo de mensagens em uma resposta.
+Cada solicitação GET de consulta delta retorna um conjunto de um ou mais mensagens na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, `Prefer: odata.maxpagesize={x}`, para configurar o máximo de mensagens em uma resposta.
 
 <!--
 ### Iterative process 

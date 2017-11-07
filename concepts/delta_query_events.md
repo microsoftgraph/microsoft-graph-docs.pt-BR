@@ -33,7 +33,7 @@ Verifique o [exemplo](#example-to-synchronize-events-in-a-calendar-view) abaixo 
 
 ### <a name="optional-request-header"></a>Cabeçalhos de solicitação opcionais
 
-Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, _Prefer: odata.maxpagesize={x}_, para configurar o máximo de eventos em uma resposta.
+Cada solicitação GET de consulta delta retorna um conjunto de um ou mais eventos na resposta. Como alternativa, você pode especificar o cabeçalho de solicitação, `Prefer: odata.maxpagesize={x}`, para configurar o número máximo de eventos em uma resposta.
 
 
 ## <a name="example-to-synchronize-events-in-a-calendar-view"></a>Exemplo de sincronização de eventos em um modo de exibição de calendário
@@ -46,7 +46,7 @@ O exemplo a seguir mostra uma série de 3 solicitações para sincronizar o cale
 
 Para economizar tempo, as respostas de exemplo exibem apenas um subconjunto das propriedades para um evento. Em uma chamada real, a maior parte das propriedades dos eventos são retornadas. 
 
-Consulte também o que você vai fazer na [próxima fase](#the-next-round-sample-first-response).
+Confira também o que você vai fazer na [próxima fase](#the-next-round-sample-first-response).
 
 
 ### <a name="step-1-sample-initial-request"></a>Passo 1: solicitação inicial de exemplo
@@ -377,7 +377,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Consulta delta do Microsoft Graph](../Concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para mensagens](../Concepts/delta_query_messages.md)

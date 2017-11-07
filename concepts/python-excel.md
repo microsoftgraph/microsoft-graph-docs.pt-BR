@@ -81,7 +81,7 @@ Seu aplicativo precisa registrar uma instância do cliente Flask OAuth que você
     )
 ```
 
-### <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Receber um código de autorização em sua página de URL de resposta
+### <a name="receive-an-authorization-code-in-your-reply-url-page"></a>Receber um código de autorização na sua página de URL de resposta
 
 Depois que o usuário entrar, o navegador será redirecionado para a URL de resposta. Após a autorização bem-sucedida, será retornado o token de acesso (que será usado para autorizar solicitações adicionais) no corpo da resposta. 
 
@@ -118,8 +118,8 @@ Com um token de acesso, o aplicativo pode fazer solicitações autenticadas à A
     headers = { 
         'User-Agent' : 'python_tutorial/1.0',
         'Authorization' : 'Bearer {0}'.format(access_token),
-         'Accept' : 'application/json',
-         'Content-Type' : 'application/json'
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
     }
 ```
 > **Observação** A solicitação também deve enviar um cabeçalho **Content-Type** com um valor aceito pela API do Microsoft Graph, por exemplo, `application/json`.
@@ -130,7 +130,7 @@ Com um token de acesso, o aplicativo pode fazer solicitações autenticadas à A
 Passe um objeto JSON definindo o valor de `persistChanges` como `true` ou `false`. Quando o valor de `persistChanges` está definido como `false`, uma id de sessão não persistente é retornada. Este exemplo usa a biblioteca HTTP de [Solicitações](http://docs.python-requests.org/en/latest/user/quickstart) 
 
 ```python
-     # Replace the id with your Excel workbook's drive id
+    # Replace the id with your Excel workbook's drive id
     url = 'https://graph.microsoft.com/v1.0/me/drive/items/01TBZDUE23F3CNYSIEGNBZV2LZGWHMC7TE/workbook/createSession'
     # Set request headers
     headers = { 
@@ -151,7 +151,7 @@ Passe um objeto JSON definindo o valor de `persistChanges` como `true` ou `false
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 201, Created
+HTTP code: 201 Created
 content-type: application/json;odata.metadata 
 
 {
@@ -183,7 +183,7 @@ A ID de sessão retornada da chamada anterior é transmitida como um cabeçalho 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-HTTP code: 200, OK
+HTTP code: 200 OK
 content-type: application/json;odata.metadata 
 
 {
