@@ -2,13 +2,13 @@
 
 Descreve um intervalo de datas sobre o qual um [event](event.md) recorrente se repete. 
 
-É possível especificar o intervalo de datas para um evento recorrente de uma de três maneiras, dependendo do seu cenário. Enquanto você deve sempre especificar um valor de **startDate** para o intervalo de datas, você pode, por exemplo, especificar um evento recorrente que termina em uma data específica ou que não termina ou que termina após cinco ocorrências. As ocorrências reais dentro do intervalo de datas sempre seguem o padrão de recorrência que você especifica para o evento recorrente. Um evento recorrente é sempre definido por seu [recurrencePattern](recurrencepattern.md) (com que frequência o evento se repete) e seu **recurrenceRange** (por quanto tempo o evento se repete).
+É possível especificar o intervalo de datas para um evento recorrente de uma de três maneiras, dependendo do seu cenário. Como você deve sempre especificar um valor de **startDate** para o intervalo de datas, é possível especificar um evento recorrente que termina em uma data específica, que não termina ou que termina após um número específico de ocorrências. As ocorrências reais dentro do intervalo de datas sempre seguem o padrão de recorrência que você especifica para o evento recorrente. Um evento recorrente é sempre definido por seu [recurrencePattern](recurrencepattern.md) (com que frequência o evento se repete) e seu **recurrenceRange** (por quanto tempo o evento se repete).
 
 Use a propriedade **type** para especificar os diferentes tipos de **recorrenceRange**. Observe as propriedades necessárias para cada tipo, conforme descrito na tabela a seguir.
 
 | Tipo de intervalo de recorrência | Valor da propriedade type | Descrição | Exemplo | Propriedades necessárias |
 |:---------------|:--------|:--------|:--------|:----------|
-|Intervalo com data final | `endDate` | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente entre **startDate** e **endDate**. | Repita o evento no período entre 1º de junho de 2017 e 15 de junho de 2017. | **type**, **startDate**, **endDate** | 
+|Intervalo com data final | `endDate` | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente entre **startDate** e **endDate**, incluindo essas datas. | Repita o evento no período entre 1º de junho de 2017 e 15 de junho de 2017. | **type**, **startDate**, **endDate** | 
 |Intervalo sem uma data final | `noEnd` | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente começando em **startDate**. | Repita o evento no intervalo de datas que começa em 1º de junho de 2017, indefinidamente. | **type**, **startDate** |
 |Intervalo com número específico de ocorrências | `numbered` | O evento se repete para **numberOfOccurrences** com base no padrão de recorrência começando em **startDate**. | Repita o evento no período que começa em 1º de junho de 2017, para dez ocorrências.  | **type**, **startDate**, **numberOfOccurrences** |
 

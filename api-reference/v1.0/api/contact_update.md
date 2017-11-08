@@ -66,7 +66,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
 |profession|String|A profissão do contato.|
-|spouseName|String|O nome do cônjuge do contato.|
+|spouseName|String|O nome do cônjuge/parceiro do contato.|
 |surname|String|O sobrenome do contato.|
 |title|String|O título do contato.|
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|

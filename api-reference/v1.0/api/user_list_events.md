@@ -29,15 +29,14 @@ GET /me/events
 
 Esse recurso só está disponível nas operações GET de:
 
-- Pastas de contatos compartilhadas
-- Calendários compartilhados
-- Contatos e eventos em pastas compartilhadas
+- Pastas de contatos, calendários e pastas de mensagens compartilhados 
+- Contatos, eventos e mensagens em pastas compartilhadas
 - Os recursos acima em caixas de correio delegadas
 
-Esse recurso não está disponível em outras operações para contatos, eventos e suas pastas.
+Esse recurso não está disponível em outras operações para contatos, eventos, mensagens e respectivas pastas.
 
 
-### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
+### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
 
 Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 
 

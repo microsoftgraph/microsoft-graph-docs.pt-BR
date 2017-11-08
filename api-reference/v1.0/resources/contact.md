@@ -63,7 +63,7 @@ Esse recurso permite:
 |parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
 |profession|String|A profissão do contato.|
-|spouseName|String|O nome do cônjuge do contato.|
+|spouseName|String|O nome do cônjuge/parceiro do contato.|
 |surname|String|O sobrenome do contato.|
 |title|String|O título do contato.|
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato.|
@@ -75,7 +75,7 @@ Esse recurso permite:
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o contato. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o contato. Somente leitura. Anulável.|
-|photo|[profilePhoto](profilephoto.md)| Imagem de contato opcional. Você pode obter ou definir uma foto de um contato.|
+|Foto|[profilePhoto](profilephoto.md)| Imagem de contato opcional. Você pode obter ou definir uma foto de um contato.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o contato. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -140,7 +140,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)

@@ -8,8 +8,8 @@ Você pode enviar um email com este exemplo, mas ele não recupera a foto do usu
 
 - [Introdução ao Microsoft Graph em um aplicativo Objective-C iOS](ios_objectivec.md)
 
-## <a name="ios-swift-sonnect-sample"></a>Exemplo de iOS Swift Sonnect
-Este exemplo utiliza a biblioteca de cliente do Microsoft Graph para Objective-C para acessar o ponto de extremidade do Microsoft Graph. A autenticação do usuário é tratada pela biblioteca de terceiros [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client). Esta biblioteca permite que o aplicativo autentique um usuário de uma instância do Azure Active Directory local, mas não permite autenticar usuários MSA.
+## <a name="ios-swift-connect-sample"></a>Exemplo de iOS Swift Connect
+Este exemplo utiliza a biblioteca de cliente do Microsoft Graph para Objective C para acessar o ponto de extremidade do Microsoft Graph. A autenticação do usuário é tratada pela biblioteca de terceiros [NXOAuth2Client](https://github.com/nxtbgthng/OAuth2Client). Esta biblioteca permite que o aplicativo autentique um usuário de uma instância do Azure Active Directory local, mas não permite autenticar usuários MSA.
 
 O exemplo mostra como acessar o perfil do Azure do usuário por meio do Graph. Você também aprenderá a obter foto do perfil do usuário, carregar a foto para o armazenamento do OneDrive do usuário e inserir a foto no corpo de uma mensagem de email do Outlook.
 

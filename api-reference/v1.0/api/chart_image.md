@@ -28,7 +28,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |height|number|Opcional. A altura desejada da imagem resultante.|
 |width|number|Opcional. A largura desejada da imagem resultante.|
-|fittingMode|cadeia de caracteres|Opcional. O método usado para dimensionar o gráfico para as dimensões especificadas (se height e width tiverem sido definidas).  Os valores possíveis são: `Fit`, `FitAndCenter` e `Fill`.|
+|fittingMode|cadeia de caracteres|Opcional. O método usado para dimensionar o gráfico para as dimensões especificadas (se height e width tiverem sido definidas)."  Os valores possíveis são: `Fit`, `FitAndCenter` e `Fill`.|
 
 ## <a name="response"></a>Resposta
 
@@ -41,16 +41,6 @@ Este é um exemplo da solicitação.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
-Content-type: application/json
-Content-length: 77
-
-{
-  "height": {
-  },
-  "width": {
-  },
-  "fittingMode": "fittingMode-value"
-}
 ```
 
 ##### <a name="response"></a>Resposta
@@ -58,13 +48,24 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 3
+Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 {
 "value" : "base-64 chart image string"
 }
 ```
+
+## <a name="usage"></a>Uso
+
+Você pode exibir a cadeia de caracteres Base64 dentro de uma marca de imagem HTML: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+
+Para o comportamento padrão, use `Image(width=0,height=0,fittingMode='fit')`. Veja um exemplo de uma imagem de gráfico retornada com os parâmetros padrão.
+
+![A imagem de gráfico do Excel com altura e largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+
+Se você quiser personalizar a exibição da imagem, especifique uma altura, largura e um modo de ajuste. Esta é a aparência da imagem do gráfico quando você a recupera com esses parâmetros: `Image(width=500,height=500,fittingMode='Fill')`.
+
+![A imagem de gráfico do Excel com altura e largura padrão.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

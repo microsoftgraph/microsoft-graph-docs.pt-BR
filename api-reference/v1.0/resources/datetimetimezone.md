@@ -104,7 +104,7 @@ Europa/Bucareste
 
 África/Joanesburgo
 
-Europa/Kiev
+Europa/Kiev (Kiev)
 
 Europa/Istambul
 
@@ -138,7 +138,7 @@ Europa/Moscou
 
 Ásia/Karachi
 
-Ásia/Tashkent
+Ásia/Toshkent (Tashkent)
 
 Ásia/Kolkata (Calcutá)
 
@@ -146,13 +146,13 @@ Europa/Moscou
 
 Ásia/Katmandu
 
-Ásia/Almaty
+Ásia/Astana (Almaty)
 
 Ásia/Dacca
 
 Ásia/Ecaterimburgo
 
-Ásia/Rangoon
+Ásia/Yakutsk (Rangoon)
 
 Ásia/Bangcoc
 

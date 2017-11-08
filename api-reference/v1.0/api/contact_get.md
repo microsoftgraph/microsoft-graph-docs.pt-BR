@@ -25,12 +25,11 @@ GET /me/contacts/{id}
 
 Esse recurso só está disponível nas operações GET de:
 
-- Pastas de contatos compartilhadas
-- Calendários compartilhados
-- Contatos e eventos em pastas compartilhadas
+- Pastas de contatos, calendários e pastas de mensagens compartilhados 
+- Contatos, eventos e mensagens em pastas compartilhadas
 - Os recursos acima em caixas de correio delegadas
 
-Esse recurso não está disponível em outras operações para contatos, eventos e suas pastas.
+Esse recurso não está disponível em outras operações para contatos, eventos, mensagens e respectivas pastas.
 
 
 ## <a name="permissions"></a>Permissões

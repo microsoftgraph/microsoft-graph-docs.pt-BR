@@ -62,7 +62,7 @@ Diferentemente das extensões abertas, o gerenciamento de definições de extens
 
 Como as extensões de esquema são acessíveis como tipos complexos em instâncias de recursos direcionados, você pode realizar operações CRUD nos dados personalizados em uma extensão de esquema das seguintes maneiras:
 
-- Use o método `POST` de recurso para especificar dados personalizados ao criar uma nova instância de recurso.
+- Use o método `POST` de recurso para especificar dados personalizados ao criar uma nova instância de recurso. Observe que há um [problema conhecido](known_issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) nos recursos **contato**, **evento**, **mensagem** e **postagem** que requer a criação de uma extensão de esquema usando uma operação `PATCH`.
 - Use o método `GET` de recurso para ler os dados personalizados.
 - Use o método `PATCH` de recurso para adicionar ou atualizar dados personalizados em uma instância de recursos existentes.
 - Use o método `PATCH` de recurso para definir o tipo complexo como nulo, para excluir os dados personalizados da instância do recurso. 

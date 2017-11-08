@@ -67,10 +67,10 @@ Esse recurso permite:
 |responseStatus|[responseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|As categorias atribuídas ao item.|
-|showAs|String|O status a ser exibido: Free = 0, Tentative = 1, Busy = 2, Oof = 3, WorkingElsewhere = 4, Unknown = -1. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
-|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
+|showAs|String|O status a ser exibido. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` e `Unknown`.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
 |subject|String|O texto da linha de assunto do evento.|
-|type|String|O tipo de evento: SingleInstance = 0, Occurrence = 1, Exception = 2, SeriesMaster = 3. Os valores possíveis são: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`.|
+|type|String|O tipo de evento. Os valores possíveis são: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Somente leitura.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 ## <a name="relationships"></a>Relações
@@ -149,7 +149,7 @@ Veja a seguir uma representação JSON do recurso
 ```
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para os eventos em uma pasta](../../../concepts/delta_query_events.md)

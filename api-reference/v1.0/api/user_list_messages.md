@@ -4,6 +4,36 @@ Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pas
 
 No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 
+
+### <a name="get-messages-in-another-users-message-folder"></a>Receber mensagens na pasta de mensagens de outro usuário
+
+Se você tem permissões de aplicativo ou as [permissões](#permissions) delegadas apropriadas de um usuário, é possível receber mensagens da pasta de mensagens de outro usuário. Esta seção se concentra em cenários que envolvem permissões delegadas.
+
+Por exemplo, seu aplicativo adquiriu permissões delegadas do usuário, Diogo. Suponha que outro usuário, Henrique, tenha compartilhado uma pasta de mensagens com Diogo. Você pode receber mensagens nessa pasta compartilhada especificando a ID de usuário do Henrique (ou o nome de entidade de segurança) na consulta de exemplo mostrada abaixo.
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{Garth-id | Garth-userPrincipalName}/messages
+```
+
+Esse recurso se aplica a todas as operações de mensagens GET com suporte a usuários individuais, como mostra a seção [Solicitação HTTP](#http-request) abaixo. Também se aplica se Henrique delegou sua caixa de correio inteira a Diogo.
+
+Se Henrique não tiver compartilhado a pasta de mensagens dele com Diogo nem delegado a caixa de correio dele a Diogo, a especificação da ID de usuário do Henrique ou do nome de entidade de segurança nessas operações GET retornará um erro. Nesses casos, especificar uma ID de usuário ou um nome de entidade de segurança só funcionará para receber mensagens nas próprias pastas de mensagens do usuário conectado, e a consulta será equivalente a usar o atalho /me:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/messages
+```
+
+Esse recurso só está disponível nas operações GET de:
+
+- Pastas de contatos, calendários e pastas de mensagens compartilhados 
+- Contatos, eventos e mensagens em pastas compartilhadas
+- Os recursos acima em caixas de correio delegadas
+
+Esse recurso não está disponível em outras operações para contatos, eventos, mensagens e respectivas pastas.
+
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 

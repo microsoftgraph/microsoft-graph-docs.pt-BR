@@ -6,12 +6,12 @@ Descreve a frequência com que um [event](event.md) recorrente se repete.
 
 Use a propriedade **type** para especificar os diferentes tipos de **recurrencePattern** e a propriedade **interval** para especificar o tempo entre as ocorrências, que pode ser em número de dias, semanas, meses ou anos, dependendo do **type**. Observe quais propriedades são necessárias para cada tipo, conforme descrito na tabela a seguir.
 
-> **Observação** Inclua apenas as propriedades necessárias para um padrão de recorrência. Qualquer propriedade que você incluir que não tenha um valor compatível retornará um erro.
+> **Observação** Inclua apenas as propriedades necessárias para um padrão de recorrência. Qualquer propriedade que você incluir que não tenha um valor compatível resultará em erro.
 
 | Tipo de padrão de recorrência | Valor da propriedade type | Descrição | Exemplo | Propriedades necessárias |
 |:---------------|:--------|:--------|:--------|:----------|
 | Diariamente | `daily` | O evento se repete com base no número de dias especificado pelo **interval** entre ocorrências. | Repita o evento a cada três dias. | **type**, **interval** |
-| Semanalmente | `weekly` | O evento se repete no mesmo dia ou dias da semana, com base no número de semanas entre cada conjunto de ocorrências. | Repita o evento cada segunda-feira e terça-feira. | **type**, **interval**, **daysOfWeek**, **firstDayOfWeek** |
+| Semanalmente | `weekly` | O evento se repete no mesmo dia ou dias da semana, com base no número de semanas entre cada conjunto de ocorrências. | Repita o evento nas segundas e terças-feiras a cada duas semanas. | **type**, **interval**, **daysOfWeek**, **firstDayOfWeek** |
 | Mensal absoluto | `absoluteMonthly` | O evento se repete no dia especificado do mês (por exemplo, o dia 15), com base no número de meses entre as ocorrências. | Repita o evento trimestralmente (a cada três meses) no dia 15. | **type**, **interval**, **dayOfMonth** |
 | Mensal relativo | `relativeMonthly` | O evento se repete no dia ou dias específicos da semana, na mesma posição relativa no mês, com base no número de meses entre as ocorrências. | Repita o evento na segunda quinta-feira ou sexta-feira a cada três meses. | **type**, **interval**, **daysOfWeek** |
 | Anual absoluto | `absoluteYearly` | O evento se repete no dia e mês específicos, com base no número de anos entre as ocorrências. | Repita o evento no dia 15 de março a cada três anos. | **type**, **interval**, **dayOfMonth**, **month** |
