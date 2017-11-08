@@ -88,7 +88,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-|Permissão    |Cadeia de Exibição   |Descrição |Consentimento Obrigatório do Administrador |
+|Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |Ler contatos do usuário  |Permite ao aplicativo ler os contatos do usuário. |Não |
 |_Contacts.Read.Shared_ |Ler usuário e contatos compartilhados |Permite que o aplicativo leia os contatos que o usuário tem permissão de acessar, incluindo os próprios contatos do usuário e os contatos compartilhados. |Não |
