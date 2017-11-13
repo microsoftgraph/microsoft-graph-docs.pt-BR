@@ -1,4 +1,3 @@
-
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Paginação de dados do Microsoft Graph em seu aplicativo 
 
 Algumas consultas em relação ao Microsoft Graph retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro de consulta `$top` para limitar especificamente o tamanho da página em uma solicitação. Quando um conjunto de resultados se estende por várias páginas, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. 
@@ -30,5 +29,3 @@ O comportamento de paginação varia entre diferentes APIs do Microsoft Graph. A
 - APIs diferentes podem ter tamanhos padrão e máximo de página diferentes.
 - APIs diferentes poderão se comportar de maneira diferente se você especificar um tamanho de página (por meio do parâmetro de consulta `$top`) que exceda o tamanho máximo de página para essa API. Dependendo da API, o tamanho de página solicitado pode ser ignorado, ele pode usar por padrão o tamanho máximo de página para essa API ou o Microsoft Graph pode retornar um erro. 
 - Nem todos os recursos ou relações dão suporte à paginação. Por exemplo, consultas em relação a [directoryRoles](../api-reference/v1.0/resources/directoryrole.md) não dão suporte à paginação. Isso inclui os objetos de função de leitura e os membros de função.
-- Algumas APIs do Microsoft Graph dão suporte à paginação para trás acrescentando o parâmetro de consulta `previous-page` (`&previous-page=true`) ao valor de URL da propriedade `@odata:nextLink`. Depois que você acrescentar esse parâmetro a uma solicitação, o valor de URL `@odata:nextLink` em respostas subsequentes o incluirá. Você pode continuar a paginar para trás até que uma resposta para um resultado vazio seja retornada. Se continuar a paginação, isso retornará um erro. Como alternativa, você pode continuar a paginação a partir da resposta atual, removendo o parâmetro `previous-page` ao enviar a solicitação para a próxima página de resultados. 
-

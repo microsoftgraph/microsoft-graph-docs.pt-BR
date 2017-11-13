@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.recurrencepattern"
+  "@odata.type": "microsoft.graph.recurrencePattern"
 }-->
 
 ```json
