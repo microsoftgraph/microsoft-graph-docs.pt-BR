@@ -83,13 +83,13 @@ Content-Type: application/json
 
 Solicitações de lote são sempre enviadas usando `POST` para o ponto de extremidade `/$batch`.
 
-O corpo da solicitação JSON em lote consiste em um único objeto JSON com uma propriedade obrigatória: `requests`. A propriedade `requests` é uma matriz de solicitações individuais. Para cada solicitação individual, as propriedades `id`, `method` e `url` propriedades são necessárias.
+O corpo da solicitação JSON em lote consiste em um único objeto JSON com uma propriedade obrigatória: `requests`. A propriedade `requests` é uma matriz de solicitações individuais. Para cada solicitação individual, as propriedades `id`, `method` e `url` são necessárias.
 
 A propriedade `id` funciona principalmente como um valor de correlação para associar solicitações a respostas individuais. Isso permite que o servidor processe solicitações em lote na ordem mais eficiente.
 
 As propriedades `method` e `url` são exatamente o que você vê no início de qualquer solicitação HTTP. O método é o método HTTP e a URL é a URL de recurso para a qual a solicitação individual normalmente seria enviada.
 
-As solicitações individuais podem, como opção, também conter uma propriedade `headers` e uma propriedade`body`. Essas duas propriedades geralmente são objetos JSON, conforme mostrado no exemplo anterior. Em alguns casos, o `body` pode ser um valor codificado como URL base64 em vez de um objeto JSON, por exemplo, quando o corpo é uma imagem. Nesses casos, o objeto `headers` deve conter um valor para `content-type`.
+As solicitações individuais podem, como opção, também conter uma propriedade `headers` e uma propriedade`body`. Essas duas propriedades geralmente são objetos JSON. Em alguns casos, o `body` pode ser um valor codificado como URL base64 em vez de um objeto JSON; por exemplo, quando o corpo é uma imagem. Quando um `body` está incluído na solicitação, o objeto `headers` deve conter um valor para `content-type`.
 
 ## <a name="response-format"></a>Formato de resposta
 
@@ -99,13 +99,13 @@ O formato de resposta para solicitações de lote JSON é semelhante ao formato 
 * As respostas individuais podem aparecer em uma ordem diferente das solicitações.
 * Em vez de `method` e `url`, as respostas individuais têm uma propriedade `status`. O valor de `status` é um número que representa o código de status HTTP.
 
-O código de status em uma resposta de lote geralmente é `200` ou `400`. Se a solicitação em lotes em si for mal formada, o código de status será `400`. Se a solicitação de lote for analisável, o código de status será `200`. Um código de status `200` na resposta em lote não indica que as solicitações individuais no lote são bem-sucedidas. É por isso que cada resposta individual na propriedade `responses` tem um código de status.
+O código de status em uma resposta de lote geralmente é `200` ou `400`. Se a solicitação de lote em si for mal formada, o código de status será `400`. Se a solicitação de lote for analisável, o código de status será `200`. Um código de status `200` na resposta de lote não indica que as solicitações individuais no lote foram bem-sucedidas. Por esse motivo, cada resposta individual na propriedade `responses` tem um código de status.
 
-Além da propriedade `responses`, pode haver uma propriedade `nextLink` na resposta em lotes. Isso permite que o Microsoft Graph retorne uma resposta em lotes assim que qualquer uma das solicitações individuais for concluída. Para garantir que todas as respostas individuais foram recebidas, continue a acompanhar os `nextLink` enquanto existirem.
+Além da propriedade `responses`, pode haver uma propriedade `nextLink` na resposta em lotes. Isso permite que o Microsoft Graph retorne uma resposta em lotes assim que qualquer uma das solicitações individuais for concluída. Para garantir que todas as respostas individuais foram recebidas, continue a acompanhar o `nextLink` enquanto existir.
 
 ## <a name="sequencing-requests-with-the-dependson-property"></a>Solicitações de sequenciamento com a propriedade dependsOn
 
-As solicitações individuais podem ser executadas em uma ordem especificada pela propriedade `dependsOn`. Essa propriedade é uma matriz de cadeias de caracteres que fazem referência a `id` de uma solicitação individual diferente. Por esse motivo, os valores de `id` precisam ser exclusivos. Por exemplo, na solicitação a seguir, o cliente está especificando que as solicitações 1 e 3 devem ser executadas primeiro, em seguida a solicitação 2 e a solicitação 4.
+As solicitações individuais podem ser executadas em uma ordem especificada pela propriedade `dependsOn`. Essa propriedade é uma matriz de cadeias de caracteres que fazem referência a `id` de uma solicitação individual diferente. Por esse motivo, os valores de `id` devem ser exclusivos. Por exemplo, na solicitação a seguir, o cliente está especificando que as solicitações 1 e 3 devem ser executadas primeiro, em seguida a solicitação 2 e depois a solicitação 4.
 
 ```json
 {

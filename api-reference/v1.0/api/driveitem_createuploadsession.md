@@ -3,11 +3,11 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: "Upload de arquivos retomável"
-ms.openlocfilehash: 11418e4f2dcb761faddbb8d8ed045e87278b8699
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 39aee7121483e423c4adbd910c80e1ca059c685a
+ms.sourcegitcommit: e9b5d370a1d9a03d908dc430994d6a196b1345b4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -50,6 +50,7 @@ Nenhum corpo de solicitação é obrigatório. No entanto, você pode especifica
 
 Por exemplo, para controlar o comportamento se o nome do arquivo já estiver em uso, você pode especificar a propriedade de comportamento conflitante no corpo da solicitação.
 
+<!-- { "blockType": "ignored" } -->
 ```json
 {
     "item": {
@@ -62,9 +63,9 @@ Por exemplo, para controlar o comportamento se o nome do arquivo já estiver em 
 
 | Nome       | Valor | Descrição                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | Se esse cabeçalho de solicitação for incluído, e a eTag (ou cTag) fornecida não corresponder à etag atual no item, uma resposta de erro `412 Precondition Failed` será retornada. |
+| *if-match* | etag  | Se esse cabeçalho de solicitação for incluído e a eTag (ou cTag) fornecida não corresponder à eTag atual no item, uma resposta de erro `412 Precondition Failed` será retornada. |
 
-### <a name="response"></a>Resposta
+### <a name="request"></a>Solicitação
 
 A resposta a essa solicitação fornecerá os detalhes da [uploadSession](../resources/uploadsession.md) recém-criada, que inclui a URL usada para carregar as partes do arquivo. 
 
@@ -310,7 +311,7 @@ If-Match: {etag or ctag}
 
 Se o arquivo puder ser confirmado usando os novos metadados, uma resposta `HTTP 201 Created` ou `HTTP 200 OK` será retornada com os metadados de Item para o arquivo carregado.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+<!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 201 Created
