@@ -1,16 +1,16 @@
-# <a name="range-insert"></a><span data-ttu-id="addfd-101">Range: insert</span><span class="sxs-lookup"><span data-stu-id="addfd-101">Range: insert</span></span>
+# <a name="range-insert"></a><span data-ttu-id="5f152-101">Range: insert</span><span class="sxs-lookup"><span data-stu-id="5f152-101">Range: insert</span></span>
 
-<span data-ttu-id="addfd-p101">Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.</span><span class="sxs-lookup"><span data-stu-id="addfd-p101">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
-## <a name="permissions"></a><span data-ttu-id="addfd-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="addfd-104">Permissions</span></span>
-<span data-ttu-id="addfd-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="addfd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="5f152-p101">Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.</span><span class="sxs-lookup"><span data-stu-id="5f152-p101">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
+## <a name="permissions"></a><span data-ttu-id="5f152-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="5f152-104">Permissions</span></span>
+<span data-ttu-id="5f152-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5f152-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="addfd-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="addfd-107">Permission type</span></span>      | <span data-ttu-id="addfd-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="addfd-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5f152-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5f152-107">Permission type</span></span>      | <span data-ttu-id="5f152-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5f152-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="addfd-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="addfd-109">Delegated (work or school account)</span></span> | <span data-ttu-id="addfd-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="addfd-110">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="addfd-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="addfd-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="addfd-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="addfd-112">Not supported.</span></span>    |
-|<span data-ttu-id="addfd-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="addfd-113">Application</span></span> | <span data-ttu-id="addfd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="addfd-114">Not supported.</span></span> |
+|<span data-ttu-id="5f152-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5f152-109">Delegated (work or school account)</span></span> | <span data-ttu-id="5f152-110">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5f152-110">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="5f152-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5f152-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5f152-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5f152-112">Not supported.</span></span>    |
+|<span data-ttu-id="5f152-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5f152-113">Application</span></span> | <span data-ttu-id="5f152-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5f152-114">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="addfd-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="addfd-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5f152-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5f152-115">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
@@ -18,26 +18,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="addfd-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="addfd-116">Request headers</span></span>
-| <span data-ttu-id="addfd-117">Nome</span><span class="sxs-lookup"><span data-stu-id="addfd-117">Name</span></span>       | <span data-ttu-id="addfd-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="addfd-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5f152-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5f152-116">Request headers</span></span>
+| <span data-ttu-id="5f152-117">Nome</span><span class="sxs-lookup"><span data-stu-id="5f152-117">Name</span></span>       | <span data-ttu-id="5f152-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="5f152-118">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="addfd-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="addfd-119">Authorization</span></span>  | <span data-ttu-id="addfd-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="addfd-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5f152-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="5f152-119">Authorization</span></span>  | <span data-ttu-id="5f152-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5f152-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5f152-122">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5f152-122">Workbook-Session-Id</span></span>  | <span data-ttu-id="5f152-p104">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="5f152-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="addfd-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="addfd-122">Request body</span></span>
-<span data-ttu-id="addfd-123">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="addfd-123">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5f152-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5f152-125">Request body</span></span>
+<span data-ttu-id="5f152-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5f152-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="addfd-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="addfd-124">Parameter</span></span>    | <span data-ttu-id="addfd-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="addfd-125">Type</span></span>   |<span data-ttu-id="addfd-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="addfd-126">Description</span></span>|
+| <span data-ttu-id="5f152-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="5f152-127">Parameter</span></span>    | <span data-ttu-id="5f152-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="5f152-128">Type</span></span>   |<span data-ttu-id="5f152-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="5f152-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="addfd-127">shift</span><span class="sxs-lookup"><span data-stu-id="addfd-127">shift</span></span>|<span data-ttu-id="addfd-128">string</span><span class="sxs-lookup"><span data-stu-id="addfd-128">string</span></span>|<span data-ttu-id="addfd-p104">Especifica como deslocar as células.  Os valores possíveis são: `Down` e `Right`.</span><span class="sxs-lookup"><span data-stu-id="addfd-p104">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
+|<span data-ttu-id="5f152-130">shift</span><span class="sxs-lookup"><span data-stu-id="5f152-130">shift</span></span>|<span data-ttu-id="5f152-131">string</span><span class="sxs-lookup"><span data-stu-id="5f152-131">string</span></span>|<span data-ttu-id="5f152-p105">Especifica como deslocar as células.  Os valores possíveis são: `Down` e `Right`.</span><span class="sxs-lookup"><span data-stu-id="5f152-p105">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="addfd-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="addfd-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5f152-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="5f152-134">Response</span></span>
 
-<span data-ttu-id="addfd-132">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="addfd-132">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="5f152-135">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5f152-135">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="addfd-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="addfd-133">Example</span></span>
-<span data-ttu-id="addfd-134">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="addfd-134">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="addfd-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="addfd-135">Request</span></span>
-<span data-ttu-id="addfd-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="addfd-136">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5f152-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5f152-136">Example</span></span>
+<span data-ttu-id="5f152-137">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="5f152-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="5f152-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5f152-138">Request</span></span>
+<span data-ttu-id="5f152-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5f152-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_insert"
@@ -52,8 +53,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="addfd-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="addfd-137">Response</span></span>
-<span data-ttu-id="addfd-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="addfd-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5f152-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="5f152-140">Response</span></span>
+<span data-ttu-id="5f152-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5f152-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
