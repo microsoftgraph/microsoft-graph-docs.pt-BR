@@ -20,7 +20,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | {token} de portador. Obrigatório. | | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 | workbook-session-id | Id de sessão de pasta de trabalho a ser fechada |
 
 ## <a name="request-body"></a>Corpo da solicitação

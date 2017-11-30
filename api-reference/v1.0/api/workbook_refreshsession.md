@@ -21,7 +21,7 @@ workbook-session-id: {session-id}
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| workbook-session-id | Id de sessão de pasta de trabalho a ser atualizada |
+| workbook-session-id | ID de sessão da pasta de trabalho que será atualizada |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Esta API não exige o corpo da solicitação.
