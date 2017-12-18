@@ -37,10 +37,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `204 OK` e o objeto [groupSetting](../resources/groupsetting.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -109,15 +109,15 @@ Content-length: 173
   ]
 }
 ```
-##### <a name="response"></a>Resposta
+
+#### <a name="response"></a>Resposta
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.groupSetting"
+  "truncated": false
 } -->
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
