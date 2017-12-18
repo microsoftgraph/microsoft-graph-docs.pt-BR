@@ -1,6 +1,6 @@
 # <a name="create-event"></a>Criar evento
-
 Use esta API para criar um novo [event](../resources/event.md).
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -8,7 +8,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -16,6 +16,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /groups/{id}/events
 POST /groups/{id}/calendar/events
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -25,11 +26,10 @@ POST /groups/{id}/calendar/events
 No corpo da solicitação, forneça uma representação JSON do objeto [Event](../resources/event.md).
 
 ## <a name="response"></a>Resposta
-
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -53,8 +53,11 @@ Content-length: 285
 }
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

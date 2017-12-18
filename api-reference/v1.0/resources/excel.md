@@ -9,13 +9,13 @@ Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) 
 retorna uma coleção de todos os objetos da planilha que fazem parte da pasta de trabalho.    
 
 
-**Observação:** A API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML. Não há suporte para pastas de trabalho de extensão de `.xls`. 
+**Observação:** a API REST do Excel só oferece suporte para pastas de trabalho formatadas pelo arquivo do Office Open XML. Não há suporte para pastas de trabalho de extensão de `.xls`. 
 
 ## <a name="authorization-and-scopes"></a>Autorização e escopos
 
-Você pode usar o [ponto de extremidade do Azure AD v.2](https://developer.microsoft.com/en-us/graph/docs/authorization/converged_auth) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
+Você pode usar o [ponto de extremidade do Azure AD v.2](https://developer.microsoft.com/pt-BR/graph/docs/authorization/converged_auth) para autenticar APIs do Excel. Todas as APIs exigem o cabeçalho HTTP `Authorization: Bearer {access-token}`.   
   
-Um dos seguintes [escopos de permissão](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) é obrigatório para usar o recurso do Excel:
+Um dos seguintes [escopos de permissão](https://developer.microsoft.com/pt-BR/graph/docs/authorization/permission_scopes) é obrigatório para usar o recurso do Excel:
 
 * Files.Read (para ações de leitura)
 * Files.ReadWrite (para ações de leitura e gravação)
@@ -31,7 +31,7 @@ As APIs do Excel podem ser chamadas em um destes três modos:
 
 Para representar a sessão na API, use o cabeçalho `workbook-session-id: {session-id}`. 
 
->**Observação:** O cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
+>**Observação:** o cabeçalho de sessão não é obrigatório para uma API do Excel funcionar. No entanto, recomendamos que você use o cabeçalho de sessão para melhorar o desempenho. Se você não usar um cabeçalho de sessão, as alterações feitas durante a chamada à API _serão_ mantidas como persistentes no arquivo.  
 
 ### <a name="api-call-to-get-a-session"></a>Chamada à API para obter uma sessão 
 
@@ -77,7 +77,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Observação: Se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de sete minutos de inatividade. A sessão não persistente expira após cerca de cinco minutos de inatividade. 
+>Observação: se a id da sessão tiver expirado, um código de erro HTTP `404` será retornado na sessão. Nesse cenário, você pode optar por criar uma nova sessão e continuar. Outra abordagem seria atualizar a sessão periodicamente para manter a sessão ativa. Normalmente, a sessão persistente expira após cerca de sete minutos de inatividade. A sessão não persistente expira após cerca de cinco minutos de inatividade. 
 
 ## <a name="common-excel-scenarios"></a>Cenários comuns do Excel
 
@@ -179,7 +179,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Observação: As planilhas também podem ser recuperadas usando a ID. No entanto, atualmente, a ID contém os caracteres `{` e '}' que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter uma planilha com a ID de `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, a URL codifica a ID no caminho como `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
+** Observação: as planilhas também podem ser recuperadas usando a ID. No entanto, atualmente, a ID contém os caracteres `{` e '}' que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter uma planilha com a ID de `{75A18F35-34AA-4F44-97CC-FDC3C05D9F40}`, a URL codifica a ID no caminho como `/workbook/worksheets/%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D`. 
 
 #### <a name="delete-a-worksheet"></a>Excluir uma planilha
 
@@ -264,7 +264,7 @@ content-type: application/json;odata.metadata
 }
 ```
 
-** Observação: A ID contém os caracteres `{` e `}` (exemplo: `{00000000-0008-0000-0100-000003000000}`) que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter um objeto gráfico, a URL codifica a ID no caminho como `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
+** Observação: a ID contém os caracteres `{` e `}` (exemplo: `{00000000-0008-0000-0100-000003000000}`) que precisam ser codificados pela URL para a API funcionar. Exemplo: Para obter um objeto gráfico, a URL codifica a ID no caminho como `/charts/%7B00000000-0008-0000-0100-000003000000%7D`. 
 
 #### <a name="get-chart-image"></a>Obter imagem do gráfico
 
@@ -390,6 +390,36 @@ Resposta
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
+```
+
+#### <a name="create-table"></a>Criar tabela
+
+Solicitação 
+<!-- { "blockType": "ignored" } -->
+```http 
+POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
+content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
+
+{ "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
+```
+
+Resposta 
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP code: 201 Created
+content-type: application/json;odata.metadata 
+
+{
+  "@odata.context": "https://graph.microsoft.com/{version}/$metadata#users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables/$entity",
+  "@odata.id": "/users('f6d92604-4b76-4b70-9a4c-93dfbcc054d5')/drive/items('01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4')/workbook/tables(%272%27)",
+  "id": "2",
+  "name": "NewTableName",
+  "showHeaders": true,
+  "showTotals": false,
+  "style": "TableStyleMedium4"
+}
 ```
 
 #### <a name="update-table"></a>Atualizar tabela

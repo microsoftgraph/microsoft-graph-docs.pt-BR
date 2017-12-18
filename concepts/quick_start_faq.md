@@ -1,6 +1,6 @@
 # <a name="microsoft-graph-quick-start-faq"></a>Perguntas frequentes do início rápido do Microsoft Graph
 
-Estas perguntas frequentes respondem dúvidas relacionadas aos [Inícios Rápidos do Microsoft Graph](https://developer.microsoft.com/en-us/graph/quick-start).
+Estas perguntas frequentes respondem dúvidas relacionadas aos [Inícios Rápidos do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/quick-start).
 
 ## <a name="what-do-the-quick-starts-do"></a>O que os inícios rápidos fazem?
 
@@ -11,9 +11,10 @@ Se você usa as APIs REST do Office 365, você deve autenticar para cada serviç
 Os inícios rápidos do Microsoft Graph acessa três serviços com uma autenticação: Conta da Microsoft, OneDrive e Outlook. Cada guia de início rápido acessa informações de perfis de usuários da conta da Microsoft, grava dados no OneDrive (uma foto) e gera um email usando o Outlook (incluindo um link para a foto). 
 
 Os inícios rápidos envolvem quatro etapas:
+
 - Selecione sua plataforma 
-- Obter sua ID de aplicativo (também conhecida como ID de cliente)
-- Criar o exemplo,
+- Obter sua ID de aplicativo (ID do cliente)
+- Criar o exemplo
 - Entrar e enviar uma foto do perfil via email
 
 Quando você completar o início rápido, você possui um aplicativo pronto para ser executado.

@@ -27,7 +27,7 @@ Representa uma tabela do Excel.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|int|Retorna um valor que identifica de forma exclusiva a tabela em uma determinada pasta de trabalho. O valor do identificador permanece o mesmo, ainda que a tabela seja renomeada. Somente leitura.|
+|id|cadeia de caracteres|Retorna um valor que identifica de forma exclusiva a tabela em uma determinada pasta de trabalho. O valor do identificador permanece o mesmo, ainda que a tabela seja renomeada. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.|
 |name|string|Nome da tabela.|
 |showHeaders|booliano|Indica se a linha do cabeçalho está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.|
 |showTotals|booliano|Indica se a linha do total está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do total.|
@@ -44,7 +44,7 @@ Representa uma tabela do Excel.
 |columns|Coleção [TableColumn](tablecolumn.md)|Representa uma coleção de todas as colunas na tabela. Somente leitura.|
 |rows|Coleção [TableRow](tablerow.md)|Representa uma coleção de todas as linhas na tabela. Somente leitura.|
 |sort|[TableSort](tablesort.md)|Representa a classificação da tabela. Somente leitura.|
-|worksheet|[Worksheet](worksheet.md)|A planilha que contém a tabela atual. Somente leitura.|
+|planilha|[Worksheet](worksheet.md)|A planilha que contém a tabela atual. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -22,7 +22,7 @@ Ou no OneDrive pessoal de um usuário: `/drives/{id}/root`
 
 Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia notificações por push para a URL especificada na assinatura. O aplicativo então realiza ações de acordo com sua lógica comercial. Por exemplo, ele busca mais dados, atualiza o cache e as exibições, etc.
 
-Os aplicativos devem renovar suas assinaturas antes de expirarem. Atualmente, o tempo de expiração mais longo é de três dias menos 90 minutos do tempo de criação. Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, eles precisarão criar uma nova assinatura.
+Os aplicativos precisam renovar suas assinaturas antes do tempo de expiração. Caso contrário, será preciso criar uma nova assinatura. Confira a lista de prazos máximos em [Prazo máximo de assinatura por tipo de recurso](subscription.md#maximum-length-of-subscription-per-resource-type).
 
 Os aplicativos também podem cancelar a assinatura a qualquer momento para deixarem de receber notificações.
 
@@ -31,7 +31,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 | Tipo de permissão | Tipos de recurso com suporte na v1.0 |
 |:----------------|:---------------------------------|
 | Delegado - conta corporativa ou de estudante | [contact](contact.md), [conversation](conversation.md), [drive](drive.md), [event](event.md), [message](message.md) |
-| Delegado - conta pessoal da Microsoft | None |
+| Delegado - conta pessoal da Microsoft | Nenhum |
 | Aplicativo | [contact](contact.md), [conversation](conversation.md), [event](event.md), [message](message.md) |
 
 ## <a name="code-samples"></a>Code samples
@@ -136,7 +136,7 @@ O objeto notification tem as seguintes propriedades:
   * id – O identificador do objeto.
 
 
-> Observação: O valor de Id fornecido em resourceData é válido no momento em que a notificação é enfileirada. Algumas ações, como mover uma mensagem para outra pasta, podem resultar na alteração da Id de um recurso. 
+> Observação: o valor de Id fornecido em resourceData é válido no momento em que a notificação é enfileirada. Algumas ações, como mover uma mensagem para outra pasta, podem resultar na alteração da Id de um recurso. 
 
 ## <a name="notification-example"></a>Exemplo de notificação
 
@@ -170,7 +170,7 @@ Observe que o objeto value contém uma lista. Se houver muitas notificações na
 Depois que o seu aplicativo começar a receber notificações, ele precisa processá-las. Estas são as tarefas mínimas que o seu aplicativo deve realizar para processar uma notificação:
 
 1. Validar a propriedade `clientState`. A propriedade clientState na notificação deve corresponder àquela enviada com a solicitação de assinatura.
-  > Observação: Se isso não for verdadeiro, você não deve considerá-la uma notificação válida. Você também deve investigar de onde vem a notificação e tomar as medidas apropriadas.
+  > Observação: se isso não for verdadeiro, você não deve considerá-la uma notificação válida. Você também deve investigar de onde vem a notificação e tomar as medidas apropriadas.
 
 2. Atualize seu aplicativo com base na sua lógica comercial.
 3. Envie um código de status `202 - Accepted` na sua resposta para o Microsoft Graph. Se o Microsoft Graph não receber um código de classe 2xx, ele tentará reenviar a notificação várias vezes.

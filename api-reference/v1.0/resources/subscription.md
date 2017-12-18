@@ -30,23 +30,23 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|changeType|cadeia de caracteres|Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.|
+|changeType|string|Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.|
 |notificationUrl|string|A URL do ponto de extremidade que receberá as notificações. Esta URL tem que usar o protocolo HTTPS.|
 |recurso|cadeia de caracteres|Especifica o recurso que será monitorado para detectar alterações. Não inclua a URL base ("https://graph.microsoft.com/v1.0/").|
-|expirationDateTime|[dateTime](http://tools.ietf.org/html/rfc3339)|Especifica a data e a hora em que a assinatura de webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Veja a tabela abaixo para obter os valores máximos.|
+|expirationDateTime|[dateTime](http://tools.ietf.org/html/rfc3339)|Especifica a data e a hora em que a assinatura de webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
 |clientState|string|Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação foi proveniente do serviço comparando o valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida com cada notificação.|
 |id|string|Identificador exclusivo da assinatura. Somente leitura.|
 
-## <a name="maximum-expiration-times-per-resource"></a>Tempos de Expiração Máximos por recurso
+## <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 | Recurso | Tempo de Expiração Máximo |
 |:---------------------|:--------------------|
 |Email| 4230 minutos.|
 |Calendário| 4230 minutos.|
 |Contatos| 4230 minutos.|
 |Conversas em grupo| 4230 minutos.|
-|Itens raiz de unidade| 86400 minutos|
+|Itens raiz de unidade| 43.200 minutos. Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor máximo. Valores maiores não serão permitidos nos próximos lançamentos. |
 
 ## <a name="relationships"></a>Relações
 Nenhuma

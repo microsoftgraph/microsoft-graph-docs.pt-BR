@@ -28,7 +28,7 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ## <a name="groups-and-microsoft-teams"></a>Grupos e o Microsoft Teams
 
->**Observação** o Microsoft Teams está atualmente como prévia e disponível apenas no ponto de extremidade beta do Microsoft Graph.
+>**Observação** o Microsoft Teams está atualmente como visualização e disponível apenas no ponto de extremidade beta do Microsoft Graph.
 
 ### <a name="policy"></a>Política
 
@@ -36,7 +36,7 @@ O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa q
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
 
-O Microsoft Graph expõe duas permissões (*Group.Read.All* e *Group.ReadWrite.All*) para obter acesso a APIs de grupos e Microsoft Teams. Essas permissões devem ser consentidas por um administrador (que é uma alteração da prévia).  No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
+O Microsoft Graph expõe duas permissões (*Group.Read.All* e *Group.ReadWrite.All*) para obter acesso a APIs de grupos e Microsoft Teams. Essas permissões devem ser consentidas por um administrador (que é uma alteração da visualização).  No futuro, pretendemos adicionar novas permissões para grupos e equipes que possam ser consentidas pelos usuários.
 
 Além disso, somente a API para administração de grupo principal e gerenciamento suporta acesso usando permissões delegadas ou somente para aplicativos. Todos os outros recursos da API do grupo dão suporte apenas a permissões delegadas.
 
@@ -47,7 +47,6 @@ Exemplos de recursos de grupo que oferecem suporte a permissões delegadas e som
 * [Definições do diretório](../api-reference/v1.0/resources/directoryobject.md), tipo e sincronização do grupo
 * Membros e proprietários de grupo
 
-
 Exemplos de recursos de grupo que oferecem suporte somente a permissões delegadas:
 
 * Conversas, eventos e foto de grupo
@@ -55,25 +54,25 @@ Exemplos de recursos de grupo que oferecem suporte somente a permissões delegad
 * Favoritos do usuário e contagem de não vistos
 * Canais e chats do Microsoft Teams
 
-### <a name="teams-in-microsoft-teams-preview"></a>Equipes no Microsoft Teams (prévia)
+### <a name="teams-in-microsoft-teams-preview"></a>Equipes no Microsoft Teams (visualização)
 
 Os grupos do Microsoft Teams e do Office 365 [têm funcionalidades parecidas](../api-reference/beta/resources/teams_api_overview.md). Todas as APIs de grupo podem ser usadas com as equipes, com a exceção de que a API Criar grupo não permite atualmente a criação de uma equipe.  As versões futuras da API oferecerão suporte para isso.
 
-### <a name="microsoft-teams-channels-preview"></a>Canais do Microsoft Teams (prévia)
+### <a name="microsoft-teams-channels-preview"></a>Canais do Microsoft Teams (visualização)
 
 Atualmente você pode ler e criar canais, mas não pode atualizá-los ou excluí-los.  Versões futuras da API terão suporte.
 
-### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Threads de chat e mensagens de chat do Microsoft Teams (prévia)
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Threads de chat e mensagens de chat do Microsoft Teams (visualização)
 
 Atualmente é possível criar threads de chat em canais, mas não é possível ler os threads de chat existentes ou adicionar respostas a eles. Além disso, não é possível ler ou gravar chats diretos entre usuários que estejam fora do escopo de uma equipe ou de um canal.  As versões futuras da API agregarão recursos adicionais nessa área.
 
-### <a name="microsoft-teams-users-list-of-joined-teams-preview"></a>Lista de equipes unidas do usuário do Microsoft Teams (prévia)
+### <a name="microsoft-teams-users-list-of-joined-teams-preview"></a>Lista de equipes unidas do usuário do Microsoft Teams (visualização)
 
 Atualmente, [listar as equipes em que um usuário ingressou](../api-reference/beta/api/user_list_joinedteams.md) só funciona para o usuário "eu" para o qual o chamador [delegou permissões](permissions_reference.md).  Versões futuras terão suporte a esta operação para qualquer ID de usuário especificado.
 
 ### <a name="adding-and-getting-attachments-of-group-posts"></a>Adicionando e obtendo anexos de postagens de grupo
 
-A [adição](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_post_attachments) de anexos a postagens de grupo a [listagem](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/post_list_attachments) e a obtenção de anexos de postagens do grupo atualmente retornam a mensagem de erro "A solicitação de OData não tem suporte." Uma correção foi implementada nas versões `/v1.0` e `/beta`, e deve estar amplamente disponível até o final de janeiro de 2016.
+A [adição](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/post_post_attachments) de anexos a postagens de grupo a [listagem](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/post_list_attachments) e a obtenção de anexos de postagens do grupo atualmente retornam a mensagem de erro "A solicitação de OData não tem suporte." Uma correção foi implementada nas versões `/v1.0` e `/beta`, e deve estar amplamente disponível até o final de janeiro de 2016.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Definir a propriedade allowExternalSenders
 
@@ -91,8 +90,8 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 Atualmente, há suporte parcial para um calendário com base em uma Inscrição em Calendário da Internet (ICS):
 
 * Você pode adicionar um calendário baseado em ICS para uma caixa de correio do usuário por meio da interface do usuário, mas não através da API do Microsoft Graph.
-* [Listar os calendários do usuário](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_calendars) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
-* Você também pode [listar os eventos](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_events) de um calendário baseado em ICS.
+* [Listar os calendários do usuário](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/user_list_calendars) permite que você obtenha as propriedades **name**, **color** e **id** de cada [calendar](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/calendar) no grupo de calendários padrão do usuário ou em um grupo de calendários especificado, inclusive todos os calendários com base em ICS. Não é possível armazenar ou acessar a URL da ICS no recurso de calendário.
+* Você também pode [listar os eventos](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/calendar_list_events) de um calendário baseado em ICS.
 
 ### <a name="accessing-a-shared-calendar"></a>Acessar um calendário compartilhado
 
@@ -135,7 +134,7 @@ Somente os contatos pessoais têm suporte no momento. Os contatos organizacionai
 
 Na versão `/v1.0`, `GET /me/contactFolders` não inclui a pasta de contatos do usuário padrão. 
 
-Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
+Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/user_list_contacts) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -143,7 +142,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 Na consulta acima:
 
-1. `/me/contacts?$top=1` obtém as propriedades de um [contato](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact) na pasta de contatos padrão.
+1. `/me/contacts?$top=1` obtém as propriedades de um [contato](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/contact) na pasta de contatos padrão.
 2. A anexação de `&$select=parentFolderId` retorna apenas a propriedade **parentFolderId** do contato, que é a ID da pasta de contatos padrão.
 
 
@@ -291,7 +290,7 @@ Estamos trabalhando para corrigir esse problema o mais rápido possível, de mod
 
 Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a seguinte solução alternativa.
 
->**OBSERVAÇÃO:** Esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento.  Esta solução alternativa não será necessária uma vez que a questão acima mencionada seja corrigida.  Esta solução alternativa não precisa ser desfeita após a correção.
+>**OBSERVAÇÃO:** esta não é uma solução permanente e destina-se apenas a desbloquear o desenvolvimento.  Esta solução alternativa não será necessária uma vez que a questão acima mencionada seja corrigida.  Esta solução alternativa não precisa ser desfeita após a correção.
 
 1. Abra uma sessão do Azure AD v2 PowerShell e conecte-se ao locatário do parceiro `customer`digitando suas credenciais de administrador na janela de entrada. Você pode baixar e instalar o Azure AD PowerShell V2 [aqui](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -307,7 +306,7 @@ Enquanto isso, para desbloquear o desenvolvimento e testes, você pode usar a se
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Funcionalidade disponível apenas nas APIs Graph do Azure AD ou REST do Office 365
 
-Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](https://msdn.microsoft.com/en-us/office/office365/api/api-catalog) específicas do ponto de extremidade. Para o Azure Active Directory, veja a postagem no blog [Microsoft Graph ou Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre os recursos que só estão disponíveis pela API do Graph do Azure AD.
+Alguns recursos ainda não estão disponíveis no Microsoft Graph. Se você não vir a funcionalidade que está procurando, poderá usar as [APIs REST do Office 365](https://msdn.microsoft.com/pt-BR/office/office365/api/api-catalog) específicas do ponto de extremidade. Para o Azure Active Directory, veja a postagem no blog [Microsoft Graph ou Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) sobre os recursos que só estão disponíveis pela API do Graph do Azure AD.
 
 ## <a name="feedback"></a>Comentários
 

@@ -1,12 +1,12 @@
-Agradecemos por nos ajudar a melhorar a documentação do Microsoft Graph.
+<!---
+Thank you for helping us to improve the Microsoft Graph documentation.
 
-Para que possamos oferecer um melhor suporte a você, observe o seguinte:
-- Se você tiver uma dúvida, precisar de ajuda ou estiver com um problema em seu código, recomendamos postar suas dúvidas ou problemas no **Stack Overflow**. Marque sua pergunta com [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) ou [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
-- Se você tiver uma sugestão de recurso, poste sua ideia na nossa página no [**User Voice**](https://officespdev.uservoice.com/) e vote em suas sugestões nela.
-- Se você tiver um problema com a documentação, forneça as informações aqui ou fique à vontade para enviar uma solicitação de recepção com as alterações sugeridas. Iremos analisar suas contribuições e atualizar nossa documentação conforme necessário.
+So that we can better assist you, please note the following:
+- If you have a question, need help, or are experiencing an issue with your code, we encourage you to post your question or issue on **Stack Overflow**. Tag your question with [microsoftgraph](http://stackoverflow.com/questions/tagged/microsoftgraph) or [Office 365](http://stackoverflow.com/questions/tagged/microsoftgraph).
+- If you have a feature suggestion, please post your idea on our [**User Voice**](https://officespdev.uservoice.com/) page, and vote for your suggestions there.
+- If you have an issue with the documentation, please provide the information here, or feel free to submit a pull request with your suggested changes. We will review your contributions and update our documentation accordingly.
+-->
 
-------------
- 
 Problema: 
 
 Artigo:

@@ -1,4 +1,4 @@
-# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes (prévia)
+# <a name="combine-multiple-requests-in-one-http-call-using-json-batching-preview"></a>Combinar várias solicitações em uma chamada HTTP usando processamento JSON em lotes (visualização)
 
 Os lotes JSON permitem otimizar seu aplicativo combinando várias solicitações em um único objeto JSON. Por exemplo, um cliente talvez queira criar um modo de exibição de dados não relacionados, como:
 
@@ -35,6 +35,17 @@ Content-Type: application/json
       "id": "3",
       "method": "GET",
       "url": "/groups/{id}/events"
+    },
+    {
+      "id": "4",
+      "url": "/me",
+      "method": "PATCH",
+      "body": {
+        "city" : "Redmond"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
     }
   ]
 }
@@ -74,6 +85,11 @@ Content-Type: application/json
         "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.plannerTask)",
         "value": []
       }
+    },
+    {
+      "id": "4",
+      "status": 204,
+      "body": null
     }
   ]
 }
@@ -89,7 +105,7 @@ A propriedade `id` funciona principalmente como um valor de correlação para as
 
 As propriedades `method` e `url` são exatamente o que você vê no início de qualquer solicitação HTTP. O método é o método HTTP e a URL é a URL de recurso para a qual a solicitação individual normalmente seria enviada.
 
-As solicitações individuais podem, como opção, também conter uma propriedade `headers` e uma propriedade`body`. Essas duas propriedades geralmente são objetos JSON. Em alguns casos, o `body` pode ser um valor codificado como URL base64 em vez de um objeto JSON; por exemplo, quando o corpo é uma imagem. Quando um `body` está incluído na solicitação, o objeto `headers` deve conter um valor para `content-type`.
+As solicitações individuais podem, como opção, também conter uma propriedade `headers` e uma propriedade`body`. Essas duas propriedades geralmente são objetos JSON, conforme mostrado no exemplo anterior. Em alguns casos, o `body` pode ser um valor codificado como URL base64 em vez de um objeto JSON; por exemplo, quando o corpo é uma imagem. Quando um `body` está incluído na solicitação, o objeto `headers` deve conter um valor para `Content-Type`.
 
 ## <a name="response-format"></a>Formato de resposta
 
@@ -150,7 +166,7 @@ Para obter uma lista de limitações atuais relacionadas a lotes, veja [problema
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 Para saber mais sobre o formato de solicitação/resposta em lote JSON, veja o [Especificação de formato OData JSON versão 4.01][odata-4.01-json], seção 18. Observe que essa especificação está atualmente em uma versão de rascunho, mas alterações não são esperadas.
 
