@@ -152,7 +152,7 @@ Europa/Moscou
 
 Ásia/Ecaterimburgo
 
-Ásia/Yakutsk (Rangoon)
+Ásia/Yakutsk (Yangon)
 
 Ásia/Bangcoc
 
