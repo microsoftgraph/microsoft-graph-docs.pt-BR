@@ -4,13 +4,13 @@ O Microsoft Graph expõe as permissões granulares que controlam o acesso que os
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Permissões delegadas, Permissões de aplicativo e permissões efetivas
 O Microsoft Graph tem dois tipos de permissões: **Permissões delegadas** e **Permissões de aplicativo**. 
 
-- As **Permissões delegadas** são usadas pelos aplicativos que têm um usuário conectado atualmente. Para esses aplicativos, o usuário ou um administrador concorda com as permissões que o aplicativo solicita e o aplicativo tem permissão delegada para agir como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões Delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o consentimento do administrador.  
+- As **Permissões delegadas** são usadas por aplicativos com um usuário conectado. Para eles, o usuário ou um administrador concorda com as permissões que o aplicativo solicita, e o aplicativo tem permissão delegada para atuar como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o [consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- As **Permissões de aplicativo** são usadas pelos aplicativos que são executados sem um usuário conectado. Por exemplo, aplicativos executados como daemons ou serviços em segundo plano.  As Permissões de aplicativo só podem ser autorizadas por um administrador. 
+- As **Permissões de aplicativo** são usadas por aplicativos sem um usuário conectado. Por exemplo, aplicativos executados como daemonst ou serviços em segundo plano. As Permissões de aplicativo só podem ser [autorizadas por um administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer solicitações ao Microsoft Graph. É importante compreender a diferença entre as Permissões Delegadas e as Permissões de aplicativo que o aplicativo tem autorização para usar e as respectivas Permissões Efetivas ao fazer chamadas para o Microsoft Graph
 
-- No caso de Permissões Delegadas, as _Permissões Efetivas_ do aplicativo estarão na interseção menos privilegiada das Permissões Delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a Permissão Delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
+- No caso de Permissões Delegadas, as _Permissões Efetivas_ do aplicativo estarão na interseção menos privilegiada das Permissões Delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a Permissão Delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
   
 - No caso de Permissões de aplicativo, as _Permissões Efetivas_ do aplicativo estarão no nível completo de privilégios implícitos da permissão. Por exemplo, um aplicativo que tem a Permissão de aplicativo _User.ReadWrite.All_ pode atualizar o perfil de todos os usuários na organização. 
 
@@ -255,6 +255,41 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="education-graph-permissions"></a>Permissões do Education Graph
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|Permissão |Exibir Cadeia de Caracteres |Descrição | Consentimento Obrigatório do Administrador |
+|:--------- |:------------- |:---------- | :--------------------- |
+|EduAssignments.ReadBasic | Ler as tarefas de classe sem notas dos usuários | Permite ao aplicativo ler as tarefas sem notas em nome do usuário | Sim |
+|EduAssignments.ReadWriteBasic | Ler e gravar as tarefas de classe sem notas dos usuários | Permite ao aplicativo ler e gravar as tarefas sem notas em nome do usuário | Sim |
+|EduAssignments.Read | Ler o modo de exibição de tarefas de classe e as notas delas dos usuários | Permite ao aplicativo ler as tarefas e as notas delas em nome do usuário| Sim |
+|EduAssignments.ReadWrite | Ler e gravar o modo de exibição de tarefas da classe e as notas delas dos usuários | Permite ao aplicativo ler e gravar as tarefas e as notas delas em nome do usuário|Sim |
+|EduRostering.ReadBasic| Ler um subconjunto limitado do modo de exibição da lista de participação dos usuários | Permite ao aplicativo ler um subconjunto limitado de dados da estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre os usuários a serem lidas em nome do usuário.  | Sim  |
+
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+| Permissão | Exibir Cadeia de Caracteres | Descrição | Consentimento Obrigatório do Administrador |
+| :--------- | :------------- | :---------- | :--------------------- |
+|EduAssignments.ReadBasic.All| Ler as tarefas de classe sem notas|Permite ao aplicativo ler as tarefas sem notas para todos os usuários| Sim |
+|EduAssignments.ReadWriteBasic.All | Ler e gravar as tarefas de classe sem notas | Permite ao aplicativo ler e gravar as tarefas sem notas para todos os usuários| Sim |
+|EduAssignments.Read.All| Ler as tarefas de classe com notas | Permite ao aplicativo ler as tarefas e as notas delas para todos os usuários | Sim |
+|EduAssignments.ReadWrite.All | Ler e gravar as tarefas de classe com notas | Permite ao aplicativo ler e gravar as tarefas e as notas delas para todos os usuários | Sim |
+|EduRostering.ReadBasic.All | Ler um subconjunto limitado da lista de participação da organização. | Permite ao aplicativo ler um subconjunto limitado de estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários. | Sim |
+|EduRostering.Read.All | Ler a lista de participação da organização. | Permite ao aplicativo ler a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas. | Sim |
+|EduRostering.ReadWrite.All| Ler e gravar a lista de participação da organização. | Permite ao aplicativo ler e gravar a estrutura de escolas e aulas na lista de participação de uma organização e informações específicas de educação sobre todos os usuários a serem lidas e gravadas.  | Sim |
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+
+* _EduAssignments.Read_: extrair as informações de atribuição do aluno conectado (`GET /education/classes/<id>/assignments/<id>`)
+* _EduAssignments.ReadWriteBasic_: enviar a tarefa do aluno conectado (`GET /education/classes/<id>/assignments/<id>submit`)
+* _EduRoster.ReadBasic_: aulas de que um usuário conectado participa como aluno ou professor (`GET /education/classes/<id>/members`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
 ## <a name="files-permissions"></a>Permissões de arquivos
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
@@ -445,7 +480,7 @@ Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar em
 * _Mail.Send_: Enviar uma mensagem (`POST /me/sendmail`).
 * _MailboxSettings.ReadWrite_: Atualizar a resposta automática do usuário (`PATCH /me/mailboxSettings`).
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _Mail.Read_: Localizar mensagens de pedro@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
 * _Mail.ReadWrite_: Criar uma nova pasta na Caixa de Entrada chamada `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
@@ -483,7 +518,7 @@ A associação pode estar oculta em alguns grupos do Office 365. Isso significa 
 * _Member.Read.Hidden_: Ler os membros de uma unidade administrativa com associação oculta em nome do usuário conectado (`GET /administrativeUnits/{id}/members`).
 * _Member.Read.Hidden_: Ler os membros de um grupo com associação oculta em nome do usuário conectado (`GET /groups/{id}/members`).
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _Member.Read.Hidden_: Ler os membros de uma unidade administrativa com associação oculta (`GET /administrativeUnits/{id}/members`).
 * _Member.Read.Hidden_: Ler os membros de um grupo com associação oculta (`GET /groups/{id}/members`).
@@ -530,7 +565,7 @@ Para contas corporativas ou de estudante, _Notes.Read.All_ e _Notes.ReadWrite.Al
 * _Notes.ReadWrite_: Atualizar a página do usuário conectado (`PATCH /me/onenote/pages/{id}/$value`).
 * _Notes.ReadWrite.All_: Criar uma página no bloco de anotações de outro usuário ao qual o usuário conectado tenha acesso dentro da organização (`POST /users/{id}/onenote/pages`).
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _Notes.Read.All_: Ler todos os blocos de anotações de usuários em um grupo (`GET /groups/{id}/onenote/notebooks`).
 * _Notes.ReadWrite.All_: Atualizar a página em um bloco de anotações para qualquer usuário da organização (`PATCH /users/{id}/onenote/pages/{id}/$value`).
@@ -610,7 +645,7 @@ As permissões de relatórios só são válidas para contas corporativas ou de e
 
 ### <a name="example-usage"></a>Exemplo de uso
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _Reports.Read.All_: Ler o relatório de detalhes de uso de aplicativos de email com período de 7 dias (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
 * _Reports.Read.All_: Ler o relatório de detalhes de atividade de email com data de '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
@@ -769,7 +804,7 @@ Para ler as associações de grupos de um usuário (`memberOf`), o aplicativo de
 * _User.Read.All_: Ler o gerente de um usuário (`GET /user/{id | userPrincipalName}/manager`).
 
 
-#### <a name="application"></a>Application
+#### <a name="application"></a>Aplicativo
 
 * _User.Read.All_: Ler todos os usuários e relações usando a consulta delta (`GET /beta/users/delta?$select=displayName,givenName,surname`).
 * _User.ReadWrite.All_: Atualizar a foto de qualquer usuário na organização (`PUT /user/{id | userPrincipalName}/photo/$value`).
