@@ -25,15 +25,28 @@ Nenhuma
 
 [Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função. 
 
-A lista completa de funções com suporte está listada [aqui](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
+A lista completa de funções com suporte está listada [aqui]((https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 
 _Observações importantes:_ 
 * O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  
-* O parâmetro index é indexado como -1, diferentemente do índice 0 usado na maioria das APIs. 
+* O parâmetro index é indexado como 1, diferentemente do índice 0 usado na maioria das APIs. 
 
-Exemplo: 
+Exemplo: **vlookup**
 
-No exemplo abaixo, a função `vlookup` é chamada passando o valor de pesquisa, o intervalo de entrada e o valor a ser retornado. 
+Em uma planilha do Excel, a função `vlookup` utiliza os seguintes argumentos:
+
+1. O valor que você deseja pesquisar, também chamado de valor de pesquisa.
+2. O intervalo em que o valor de pesquisa está localizado. Lembre-se de que o valor de pesquisa sempre deve estar na primeira coluna no intervalo para que o PROCV funcione corretamente. Por exemplo, se o valor de pesquisa estiver na célula C2, o intervalo deve começar com C.
+3. O número da coluna no intervalo que contém o valor de retorno. Por exemplo, se você especificar B2: D11 como o intervalo, deverá contar B como a primeira coluna, C como a segunda e assim por diante.
+4. Opcionalmente, você pode especificar TRUE se desejar uma correspondência aproximada ou FALSE se desejar uma correspondência exata do valor de retorno. Se você não especificar nada, o valor padrão sempre será TRUE ou uma correspondência aproximada.
+
+Dentro de uma célula, a função `vlookup` tem esta aparência: 
+
+= PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)
+
+(Confira a documentação para a função do Excel [PROCV]((https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1))).
+
+O exemplo abaixo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.
 
 Solicitação: 
 
@@ -66,9 +79,17 @@ content-type: application/json;odata.metadata
 }
 ```
 
-Exemplo: 
+Exemplo: `median`
 
-No exemplo abaixo, a função `median` é chamada passando o(s) intervalo(s) de entrada em uma matriz. 
+Em uma planilha do Excel, a função `median` possui uma matriz de um ou mais intervalos de entrada.
+
+Dentro de uma célula, a função `median` se parece com este exemplo:
+
+=MED(A2:A6)
+
+(Confira a documentação para a função [MED]((https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2))).
+
+O exemplo abaixo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel. 
 
 Solicitação: 
 

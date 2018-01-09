@@ -1,5 +1,5 @@
 # <a name="create-conversation"></a>Criar conversa
-Crie uma nova conversa incluindo um thread e uma postagem. 
+Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma postagem. 
 
 Use [reply thread](conversationthread_reply.md) ou [reply post](post_reply.md) para postar mais na conversa.
 
@@ -32,7 +32,7 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_conversation_from_group"

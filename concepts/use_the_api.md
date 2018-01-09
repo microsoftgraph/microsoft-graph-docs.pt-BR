@@ -2,7 +2,7 @@
 
 O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você [registrar seu aplicativo](auth_register_app_v2.md) e [obter tokens de autenticação para um usuário](auth_v2_user.md) ou [serviço](auth_v2_service.md), é possível fazer solicitações para a API do Microsoft Graph.
 
-> **Importante:**  A maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+> **Importante:**  A maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory]((https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)).
 
 Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.
 
@@ -46,7 +46,7 @@ O Microsoft Graph atualmente é compatível com duas versões: `v1.0` e `beta`.
 * O `v1.0` inclui APIs normalmente disponíveis. Use a versão 1.0 para todos os aplicativos de produção.
 * O `beta` inclui APIs que estão atualmente em modo de visualização. Como podemos apresentar alterações significativas a nossas APIs beta, recomendamos que você use a versão beta apenas para testar aplicativos em desenvolvimento. Não use APIs beta em seus aplicativos de produção.
 
-Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comentários ou solicitar recursos, veja nossa página [UserVoice](https://officespdev.uservoice.com/).
+Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comentários ou solicitar recursos, veja nossa página [UserVoice]((https://officespdev.uservoice.com/)).
 
 Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning_and_support.md).
 
@@ -54,7 +54,7 @@ Para saber mais sobre as versões da API, veja [Suporte e controle de versão](v
 
 Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`. Cada um dos recursos de nível superior também inclui **relações**, que podem ser usadas para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando **métodos**; por exemplo, para enviar um email, use `me/sendMail`.
 
-Para saber mais sobre como navegar por métodos e relações do recurso, veja Desviar o gráfico. 
+Para saber mais sobre como navegar por métodos e relações do recurso, confira [Desviar o gráfico](traverse_the_graph.md). 
 
 Cada recurso pode exigir diferentes permissões de acesso. Muitas vezes será necessário um nível mais alto de permissões para criar ou atualizar um recurso do que para lê-lo. Para obter detalhes sobre as permissões necessárias, veja o tópico de referência do método. 
 
@@ -74,4 +74,4 @@ Para saber mais sobre os parâmetros de consulta, veja [Personalizar respostas](
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Você está pronto para começar a trabalhar com o Microsoft Graph. Para saber mais, vá para o [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer) para experimentar algumas solicitações, tente o [Início Rápido](https://developer.microsoft.com/en-us/graph/quick-start) ou comece a usar um dos nossos [SDKs e exemplos de código](https://developer.microsoft.com/en-us/graph/code-samples-and-sdks).
+Você está pronto para começar a trabalhar com o Microsoft Graph. Para saber mais, vá para o [Explorador do Graph]((https://developer.microsoft.com/pt-BR/graph/graph-explorer)) para experimentar algumas solicitações, tente o [Início Rápido]((https://developer.microsoft.com/pt-BR/graph/quick-start)) ou comece a usar um dos nossos [SDKs e exemplos de código]((https://developer.microsoft.com/pt-BR/graph/code-samples-and-sdks)).

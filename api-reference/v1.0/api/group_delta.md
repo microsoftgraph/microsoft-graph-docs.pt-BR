@@ -1,11 +1,8 @@
 # <a name="group-delta"></a>group: delta
-
 A [consulta delta](../../../concepts/delta_query_overview.md) permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Para descobrir as alterações nos grupos, realize uma solicitação usando a função *delta*. Confira [Usando a Consulta Delta](../../../concepts/delta_query_overview.md) para obter detalhes.
 
 ## <a name="permissions"></a>Permissões
-
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
-
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -14,7 +11,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-
 Para iniciar o rastreamento de alterações, faça uma solicitação incluindo a função delta no recurso de grupos. 
 
 <!-- { "blockType": "ignored" } -->
@@ -23,7 +19,6 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
-
 O controle de alterações em grupos corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
@@ -32,7 +27,6 @@ O controle de alterações em grupos corresponde a uma série de uma ou mais cha
 | $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de grupos. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-
 Este método dá suporte a Parâmetros de Consulta OData para ajudar a personalizar a resposta.
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
@@ -50,7 +44,6 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e uma coleção de objetos [group](../resources/group.md) no corpo da resposta. A resposta também inclui um token de estado que é uma URL nextLink ou uma URL deltaLink.
 
 - Se uma URL nextLink é retornada, existem páginas de dado adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL nextLink até uma URL deltaLink ser incluída na resposta.
@@ -62,7 +55,7 @@ Confira:</br>
 - [Obter as alterações incrementais para grupos](../../../concepts/delta_query_groups.md) para solicitações de um exemplo.</br>
     
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -71,8 +64,8 @@ Confira:</br>
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
-##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

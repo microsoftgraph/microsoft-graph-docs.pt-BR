@@ -8,7 +8,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All |
+|Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -24,13 +24,13 @@ POST /groups/{id}/removeFavorite
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-
-Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Eis um exemplo de como chamar esta API.
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de como chamar esta API.
+
+#### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "group_removefavorite"
@@ -39,15 +39,15 @@ Este é um exemplo da solicitação.
 POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

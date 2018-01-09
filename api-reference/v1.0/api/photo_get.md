@@ -18,7 +18,7 @@ GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData]((http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters)) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -33,7 +33,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [photo](../resources/photo.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Veja a seguir um exemplo de solicitação de metadados de fotos.
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -59,7 +59,36 @@ Content-length: 53
   "id": "id-value"
 }
 ```
+##### <a name="request"></a>Solicitação
+Veja a seguir um exemplo de solicitação de bytes de fotos.
+<!-- {
+  "blockType": "request",
+  "name": "get_photo"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
+```
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta.
 
+<!-- { "blockType": "response", "@odata.type": "stream" } -->
+
+```http
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: image/jpeg
+ETag: "A19A6498"
+request-id: 16e1bff0-6d74-47d6-944c-61707916a74c
+client-request-id: 16e1bff0-6d74-47d6-944c-61707916a74c
+x-ms-ags-diagnostic: {"ServerInfo":{"DataCenter":"West US","Slice":"SliceA","Ring":"5","ScaleUnit":"003","Host":"AGSFE_IN_14","ADSiteName":"WST"}}
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: ETag, Location, Preference-Applied, Content-Range, request-id, client-request-id
+Duration: 125.9389
+Date: Wed, 13 Dec 2017 22:02:17 GMT
+Content-Length: 250526
+
+<binary image data>
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

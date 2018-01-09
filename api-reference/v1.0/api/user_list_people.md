@@ -21,13 +21,13 @@ GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](../../../concepts/people_example.md) para ajudar a personalizar a resposta.
+Este método oferece suporte aos [ parâmetros de consulta OData ](../../../concepts/query_parameters.md) para personalizar a resposta, como mostrado nos exemplos no artigo [Obter informações relevantes sobre pessoas](../../../concepts/people_example.md).
 
 |Nome|Valor|Descrição| 
 |:---------------|:--------|:-------| 
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.| 
 |$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.| 
-|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa| 
+|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa.| 
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.| 
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.| 
 |$top|int|Número de resultados a ser retornado.| 
@@ -46,7 +46,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 
 ## <a name="examples"></a>Exemplos
 #### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",

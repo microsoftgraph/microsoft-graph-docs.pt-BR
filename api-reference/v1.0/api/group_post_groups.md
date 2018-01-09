@@ -1,5 +1,4 @@
 # <a name="create-group"></a>Criar grupo
-
 Use esta API para criar um novo grupo conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:
 
 * Grupo do Office 365 (grupo unificado)
@@ -22,6 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /groups
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
@@ -48,12 +48,11 @@ Especifique a propriedade **groupTypes** se estiver criando um grupo do Office 3
 Especifique outras propriedades graváveis conforme necessário para o seu grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 
 ## <a name="response"></a>Resposta
-
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [group](../resources/group.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Aqui está um exemplo de uma solicitação que cria um grupo do Office 365.
+#### <a name="request"></a>Solicitação
+Este é um exemplo de uma solicitação que cria um grupo do Office 365.
 <!-- {
   "blockType": "request",
   "name": "create_group_from_groups"
@@ -75,8 +74,9 @@ Content-length: 244
 }
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Mais propriedades serão retornadas de uma chamada real.
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

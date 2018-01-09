@@ -23,14 +23,14 @@ POST /groups/{id}/calendar/events
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Event](../resources/event.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Event](../resources/event.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_event_from_group"

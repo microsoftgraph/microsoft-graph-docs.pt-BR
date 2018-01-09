@@ -6,7 +6,6 @@ Você pode obter essas informações por meio da API de Pessoas. Para ver exempl
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
- 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -23,13 +22,13 @@ GET /users/{id | userPrincipalName}/people/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes [Parâmetros de consulta OData](../../../concepts/people_example.md) para ajudar a personalizar a resposta.
+Este método oferece suporte aos seguintes [parâmetros de consulta de OData](../../../concepts/query_parameters.md) para personalizar a resposta, como mostrado nos exemplos no artigo [Obter informações relevantes sobre pessoas](../../../concepts/people_example.md).
 
 |Nome|Valor|Descrição| 
 |:---------------|:--------|:-------| 
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.| 
 |$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.| 
-|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa| 
+|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa.| 
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.| 
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.| 
 |$top|int|Número de resultados a ser retornado.| 
@@ -47,7 +46,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto
 
 ## <a name="examples"></a>Exemplos
 #### <a name="request-1"></a>Solicitação 1
-O seguinte é um exemplo da solicitação que obtém a pessoa que possui essa ID na organização do usuário. 
+O seguinte é um exemplo de solicitação que obtém a pessoa que possui essa ID na organização do usuário. 
 
 <!-- {
   "blockType": "request",
@@ -112,7 +111,7 @@ Content-length: 629
 ```
 
 #### <a name="request-2"></a>Solicitação 2
-O seguinte é um exemplo da solicitação que obtém a pessoa que possui essa ID na organização do usuário e restringe a resposta a propriedades selecionadas.
+O seguinte é um exemplo de solicitação que obtém a pessoa que possui essa ID na organização do usuário e restringe a resposta a propriedades selecionadas.
 
 <!-- {
   "blockType": "request",

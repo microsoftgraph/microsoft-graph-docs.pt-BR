@@ -1,12 +1,11 @@
 # <a name="get-group"></a>Obter grupo
-
 Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 
 ##### <a name="default-properties"></a>Propriedades padrão
 
 O seguinte item representa o conjunto padrão de propriedades que são retornadas ao obter ou listar grupos. Este é um subconjunto de todas as propriedades disponíveis. 
 
-* descrição
+* description
 * displayName
 * groupTypes
 * id
@@ -51,8 +50,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 GET /groups/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](../../../concepts/query_parameters.md) para ajudar a personalizar a resposta.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
@@ -62,11 +63,11 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+#### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_group"
@@ -74,10 +75,11 @@ Este é um exemplo da solicitação.
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades padrão serão retornadas de uma chamada real, conforme descrito abaixo.
+#### <a name="response"></a>Resposta
+Este é um exemplo de resposta.
+
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. As propriedades padrão serão retornadas de uma chamada real, conforme descrito anteriormente.
 <!-- {
   "blockType": "response",
   "truncated": true,

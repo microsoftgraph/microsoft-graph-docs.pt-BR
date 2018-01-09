@@ -16,7 +16,7 @@ Esse recurso permite:
 |[Criar grupo](../api/group_post_groups.md) | [group](group.md) |Criar um novo grupo. Pode ser um grupo do Office 365, um grupo dinâmico ou um grupo de segurança.|
 |[Obter grupo](../api/group_get.md) | [group](group.md) |Ler as propriedades de um objeto group.|
 |[Listar grupos](../api/group_list.md) |Coleção [group](group.md) |Listar objetos group e suas propriedades.|
-|[Atualizar grupo](../api/group_update.md) | [group](group.md) |Atualizar as propriedades de um objeto group. |
+|[Atualizar grupo](../api/group_update.md) | Nenhum |Atualizar as propriedades de um objeto group. |
 |[Excluir grupo](../api/group_delete.md) | Nenhum |Excluir um objeto group. |
 |[Adicionar proprietário](../api/group_post_owners.md) |Nenhum| Adicionar um novo proprietário para o grupo postando na propriedade de navegação **owners** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Listar proprietários](../api/group_list_owners.md) |Coleção [directoryObject](directoryobject.md)| Obter os proprietários do grupo da propriedade de navegação **owners**.|
@@ -24,18 +24,26 @@ Esse recurso permite:
 |[Adicionar membro](../api/group_post_members.md) |Nenhum| Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Listar membros](../api/group_list_members.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**.|
 |[Remover membro](../api/group_delete_members.md) | None |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
-|[checkMemberGroups](../api/group_checkmembergroups.md)|Coleção String|Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.|
-|[getMemberGroups](../api/group_getmembergroups.md)|Coleção String|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
+|[checkMemberGroups](../api/group_checkmembergroups.md)|Coleção de cadeias de caracteres|Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.|
+|[getMemberGroups](../api/group_getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
 |[getMemberObjects](../api/group_getmemberobjects.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é um membro. Essa função é transitiva. |
 |[delta](../api/group_delta.md)|Coleção group| Obter alterações incrementais para grupos. |
 |**Calendário**| | |
-|[Criar evento](../api/group_post_events.md) |[Event](event.md)| Criar um novo Event postando na coleção events.|
-|[Listar eventos](../api/group_list_events.md) |Coleção [Event](event.md)| Obter uma coleção de objetos Event.|
-|[Listar calendarView](../api/group_list_calendarview.md) |Coleção [Event](event.md)| Obter um conjunto de eventos em uma janela de tempo especificada.|
+|[Criar evento](../api/group_post_events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
+|[Obter evento](../api/group_get_event.md) |[event](event.md)|Ler as propriedades de um objeto event.|
+|[Listar eventos](../api/group_list_events.md) |Coleção [event](event.md)| Obter uma coleção de objetos Event.|
+|[Atualizar evento](../api/group_update_event.md) |Nenhum|Atualizar as propriedades de um objeto event.|
+|[Excluir evento](../api/group_delete_event.md) |Nenhum|Excluir o objeto event.|
+|[Listar calendarView](../api/group_list_calendarview.md) |Coleção [event](event.md)| Obter um conjunto de eventos em uma janela de tempo especificada.|
 |**Conversas**| | |
-|[Criar conversa](../api/group_post_conversations.md) |[Conversation](conversation.md)| Criar uma nova Conversation postando noa coleção conversations.|
-|[Listar conversas](../api/group_list_conversations.md) |Coleção [Conversation](conversation.md)| Obter uma coleção de objetos Conversation.|
-|[Lista threads](../api/group_list_threads.md) |Coleção [ConversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
+|[Criar conversa](../api/group_post_conversations.md) |[conversation](conversation.md)| Criar uma nova Conversation postando na coleção de conversas.|
+|[Obter conversa](../api/group_get_conversation.md) |[conversation](conversation.md)| Ler as propriedades de um objeto conversation.|
+|[Listar conversas](../api/group_list_conversations.md) |Coleção [conversation](conversation.md)| Obter uma coleção de objetos Conversation.|
+|[Excluir conversa](../api/group_delete_conversation.md) |Nenhum|Excluir objeto conversation.|
+|[Acessar thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Ler as propriedades de um objeto thread.|
+|[Listar threads](../api/group_list_threads.md) |Coleção [conversationThread](conversationthread.md)| Obter todos os threads de um grupo.|
+|[Atualizar thread](../api/group_update_thread.md) |Nenhum| Atualizar as propriedades de um objeto thread.|
+|[Excluir thread](../api/group_delete_thread.md) |Nenhum| Excluir objeto thread.|
 |[Listar acceptedSenders](../api/group_list_acceptedsenders.md) |Coleção [directoryObject](directoryobject.md)| Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.|
 |[Adicionar acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Adicionar um Usuário ou Grupo à coleção acceptSenders.|
 |[Remover acceptedSender](../api/group_delete_acceptedsenders.md) |[directoryObject](directoryobject.md)| Remover um Usuário ou Grupo da coleção acceptedSenders.|
@@ -45,7 +53,7 @@ Esse recurso permite:
 |[Criar configuração](../api/groupsetting_post_groupsettings.md) | [groupSetting](groupsetting.md) |Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação.|
 |[Obter configuração](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 |[Listar configurações](../api/groupsetting_list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
-|[Atualizar configuração](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Atualizar um objeto de configuração. |
+|[Atualizar configuração](../api/groupsetting_update.md) | Nenhum | Atualizar um objeto setting. |
 |[Excluir configuração](../api/groupsetting_delete.md) | None | Excluir um objeto de configuração. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -72,7 +80,7 @@ Esse recurso permite:
 |createdDateTime|DateTimeOffset| A data e a hora da criação do grupo. |
 |description|String|Uma descrição opcional para o grupo. |
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|groupTypes|Coleção String| Especifica o tipo de grupo a ser criado. Os valores possíveis são **Unified** para criar um grupo do Office 365 ou **DynamicMembership** para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. Oferece suporte a $filter.|
+|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo a ser criado. Os valores possíveis são **Unified** para criar um grupo do Office 365 ou **DynamicMembership** para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. Oferece suporte a $filter.|
 |id|String|O identificador exclusivo do grupo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isSubscribedByMail|Booliano|O valor padrão é **true**. Indica se o usuário atual está inscrito para receber conversas de email.|
 |Email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". Somente leitura. Oferece suporte a $filter.|
@@ -81,7 +89,7 @@ Esse recurso permite:
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Oferece suporte a $filter.|
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. Somente leitura. |
 |onPremisesSyncEnabled|Booliano|**True** se esse grupo está sincronizado de um diretório local; **false** se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. Oferece suporte a $filter.|
-|proxyAddresses|Coleção String| O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura. Não anulável. Oferece suporte a $filter. |
+|proxyAddresses|Coleção de cadeias de caracteres| O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |securityEnabled|Booliano|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
 |unseenCount|Int32|Contagem de postagens que o usuário atual não viu desde a última visita.|
 |visibility|String| Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
@@ -103,15 +111,15 @@ Esse recurso permite:
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 10 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança). Anulável.|
 |Foto|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|
-|planejador|[Planner](planner.md)| Ponto de entrada para o recurso Planejador que pode existir para um grupo unificado.|
+|planejador|[planejador](planner.md)| Ponto de entrada para o recurso Planejador que pode existir para um grupo unificado.|
 |rejectedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que não têm permissão para criar eventos de calendário ou postagens nesse grupo. Anulável|
 |configurações|Conjunto [groupSetting](groupsetting.md)| Somente leitura. Anulável.|
-|sites|conjunto de [sites](site.md)|A lista de sites do SharePoint nesse grupo. Acesse o site padrão com /sites/root.
+|sites|conjunto de [sites](site.md)|A lista de sites do SharePoint nesse grupo. Acesse o site padrão com /sites/root.|
 |threads|Coleção [conversationThread](conversationthread.md)| Os threads de conversas do grupo. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -175,7 +183,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)
