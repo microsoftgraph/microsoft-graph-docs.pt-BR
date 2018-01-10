@@ -33,7 +33,7 @@ Este método retorna o código de resposta `204 No Content` e nenhum corpo de re
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_acceptedsender"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref
