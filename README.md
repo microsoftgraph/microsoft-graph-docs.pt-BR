@@ -153,7 +153,7 @@ Depois que as alterações são mescladas com êxito no repositório central, vo
 Para excluir seu branch, siga estas etapas:
 
 1. No GitBash, digite `git checkout master` no prompt de comando.  Isso garante que você não fique na ramificação a ser excluída (o que não é permitido).
-2. Em seguida, digite `git branch -d <branch name>` no prompt de comando.  Isso exclui a ramificação em sua máquina local somente se ela tiver sido mesclada com êxito no repositório upstream. (Você pode superar esse comportamento com o sinalizador `�D`, mas primeiro certifique-se de que você deseja fazer isso.)
+2. Em seguida, digite `git branch -d <branch name>` no prompt de comando.  Isso exclui a ramificação em sua máquina local somente se ela tiver sido mesclada com êxito no repositório upstream. (Você pode superar esse comportamento com o sinalizador `D`, mas primeiro certifique-se de que você deseja fazer isso.)
 3. Por fim, digite `git push origin :<branch name>` no comando prompt (um espaço antes dos dois pontos e nenhum espaço depois deles).   Essa ação excluirá a ramificação em uma bifurcação do github.
 
 Parabéns, você tem contribuiu com êxito para o projeto.
@@ -213,3 +213,5 @@ Usando as referências agrupadas na parte inferior de seu arquivo, você encontr
 [Página Inicial de Markdown]: http://daringfireball.net/projects/markdown/
 [Teclado de markdown]: http://markdownpad.com/
 [microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
+
+Este projeto adotou o [Código de Conduta do Código Aberto da Microsoft](https://opensource.microsoft.com/codeofconduct/). Para saber mais, confira as [Perguntas frequentes do Código de Conduta](https://opensource.microsoft.com/codeofconduct/faq/) ou contate [opencode@microsoft.com](mailto:opencode@microsoft.com) se tiver outras dúvidas ou comentários.
