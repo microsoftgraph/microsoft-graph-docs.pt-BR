@@ -25,7 +25,7 @@ Nenhuma
 
 [Funções do Excel](#functions): Invoque uma função de pasta de trabalho usando a sintaxe `POST /workbook/functions/{function-name}` e fornecendo os argumentos de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado de função. O valor `error` de `null` indica a execução bem-sucedida da função. 
 
-A lista completa de funções com suporte está listada [aqui]((https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188)). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
+A lista completa de funções com suporte está listada [aqui](https://support.office.com/pt-BR/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Confira a assinatura de função para tipos de dados e nomes de parâmetro específicos.
 
 _Observações importantes:_ 
 * O parâmetro de entrada do intervalo é fornecido usando um objeto range, em vez da cadeia de caracteres de endereço do intervalo.  
@@ -44,7 +44,7 @@ Dentro de uma célula, a função `vlookup` tem esta aparência:
 
 = PROCV(valor de pesquisa, intervalo que contém o valor de pesquisa, o número da coluna no intervalo que contém o valor de retorno, opcionalmente, TRUE para coincidência aproximada ou FALSE para uma correspondência exata)
 
-(Confira a documentação para a função do Excel [PROCV]((https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1))).
+(Confira a documentação para a função do Excel [PROCV](https://support.office.com/pt-BR/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1)).
 
 O exemplo abaixo mostra como chamar a função `vlookup` e passar esses parâmetros com a API REST do Excel.
 
@@ -87,7 +87,7 @@ Dentro de uma célula, a função `median` se parece com este exemplo:
 
 =MED(A2:A6)
 
-(Confira a documentação para a função [MED]((https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2))).
+(Confira a documentação para a função [MED](https://support.office.com/pt-BR/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2)).
 
 O exemplo abaixo mostra como chamar a função `median` e um ou mais intervalos de entrada com a API REST do Excel. 
 

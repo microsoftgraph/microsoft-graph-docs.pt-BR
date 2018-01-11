@@ -2,7 +2,7 @@
 
 Você pode usar os relatórios de atividades dos Grupos para obter informações sobre a atividade dos Grupos do Office 365 em sua organização e ver quantos Grupos do Office 365 estão sendo criados e usados.
 
-> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Grupos do Office 365]((https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40)).
+> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Grupos do Office 365](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
 ## <a name="reports"></a>Relatórios
 

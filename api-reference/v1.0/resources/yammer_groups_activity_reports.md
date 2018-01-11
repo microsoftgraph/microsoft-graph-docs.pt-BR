@@ -2,7 +2,7 @@
 
 Você pode usar os relatórios de atividades dos grupos Yammer para obter informações sobre a atividade dos grupos Yammer em sua organização e ver quantos grupos Yammer estão sendo criados e usados.
 
-> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade de grupos do Yammer]((https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31)).
+> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade de grupos do Yammer](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
 ## <a name="reports"></a>Relatórios
 

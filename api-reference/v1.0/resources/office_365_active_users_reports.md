@@ -2,7 +2,7 @@
 
 Você pode usar os relatórios dos usuários ativos do Office 365 para descobrir quantas licenças de produtos estão sendo usadas por indivíduos em sua organização e detalhar informações sobre quais usuários estão usando quais produtos. Esses relatórios podem ajudar os administradores a identificar produtos ou usuários subutilizados que possam precisar de treinamento ou informações adicionais.
 
-> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Usuários ativos]((https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d)).
+> **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Usuários ativos](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
 
 ## <a name="reports"></a>Relatórios
 | Função                                 | Tipo de retorno | Descrição                              |
