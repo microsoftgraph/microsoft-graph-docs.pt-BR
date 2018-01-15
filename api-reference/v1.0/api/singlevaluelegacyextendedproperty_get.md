@@ -34,7 +34,7 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
 ## <a name="http-request"></a>Solicitação HTTP
 
 #### <a name="get-a-resource-instance-using-expand"></a>OBTER uma instância de recurso usando `$expand`
-Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.
+Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) aos caracteres de espaço na cadeia de filtro.
 
 Obtenha uma instância de **message**:
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>OBTER instâncias de recursos usando `$filter`
 
-Obtenha instâncias de um recurso com suporte que tenham a propriedade estendida correspondente a um filtro nas propriedades **id** e **value**. Certifique-se de aplicar a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro - barra e espaço.
+Obtenha instâncias de um recurso com suporte que tenham a propriedade estendida correspondente a um filtro nas propriedades **id** e **value**. Aplique a [codificação de URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.
 
 
 Obtenha instâncias de **message**:
@@ -152,7 +152,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 |:-----|:-----|:-----|
 |_Parâmetros de URL_|
 |id_value|String|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
-|property_value|String|O valor da propriedade estendida a ser correspondida. Obrigatório onde listado na seção **Solicitação HTTP** acima.|
+|property_value |String|O valor da propriedade estendida a ser correspondida. Obrigatório quando indicado na seção **Solicitação HTTP** acima. Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}. Confira exemplos na [solicitação 3](#request-3) abaixo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -184,7 +184,7 @@ O primeiro exemplo obtém e expande a mensagem especificada, incluindo uma propr
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-##### <a name="response-1"></a>Resposta 1
+#### <a name="response-1"></a>Resposta 1
 O corpo da resposta inclui todas as propriedades da mensagem especificada e a propriedade estendida retornada do filtro.
 
 Observação: O objeto **message** mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -228,22 +228,56 @@ Content-type: application/json
 }
 ```
 
-****
-
 #### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo obtém mensagens que possuem a propriedade estendida de valor único especificada no filtro. O filtro retorna a propriedade estendida cujo valor de:
+O segundo exemplo obtém mensagens que possuem a propriedade estendida de valor único com cadeia de caracteres digitada especificada no filtro. O filtro procura a propriedade estendida com:
+
 - **id** corresponde à cadeia de caracteres `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (com a URL de codificação removida aqui para facilitar a leitura).
-- **value** é igual a `Green`.
+
+- Sendo o **valor** a cadeia de caracteres `Green`.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/api/v1.0/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-##### <a name="response-2"></a>Resposta 2
+#### <a name="response-2"></a>Resposta 2
 
 Uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK`, e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro. O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user_list_messages.md). A resposta não inclui a propriedade estendida correspondente.
+
+
+#### <a name="request-3"></a>Solicitação 3
+
+Os próximos dois exemplos mostram como obter mensagens que possuam propriedades estendidas de valor único sem cadeia de caracteres digitada. Para facilitar a leitura, elas não incluem a codificação de URL necessária.
+
+O exemplo a seguir mostra um filtro que procura a propriedade estendida com:
+
+- O **id** correspondente à cadeia de caracteres `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.
+
+- Sendo o **valor** o GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`. Para comparar o valor da propriedade com um GUID, converta o `ep/value` para `Edm.Guid`.
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
+```
+
+O próximo exemplo mostra um filtro que procura a propriedade estendida com:
+
+- O **id** correspondente à cadeia de caracteres `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.
+
+- O **valor** igual inteiro 12. Para comparar o valor da propriedade com um número inteiro, converta o `ep/value` para `Edm.Int32`.
+
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete' and cast(ep/value, Edm.Int32) eq 12)
+```
+
+
+#### <a name="response-3"></a>Resposta 3
+
+Para cada um dos dois exemplos anteriores, uma resposta bem-sucedida é indicada por um código de resposta `HTTP 200 OK`, e o corpo da resposta inclui todas as propriedades das mensagens cuja propriedade estendida corresponde ao filtro. O corpo da resposta é semelhante à resposta da [obtenção de uma coleção de mensagens](../api/user_list_messages.md). A resposta não inclui a propriedade estendida correspondente.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -30,4 +30,15 @@ Quando você implementa a manipulação de erro, use o código de erro HTTP 429 
 2. Repita a solicitação.
 3. Se a solicitação falhar novamente com um código de erro 429, você ainda estará limitado. Continue a usar o atraso Retry-After recomendado e repita a solicitação até obter êxito.
 
-Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
+Atualmente, os seguintes recursos oferecem atualmente um cabeçalho retry-after:
+- [Usuário](../api-reference/v1.0/resources/user.md)
+- [Foto](../api-reference/v1.0/resources/profilephoto.md)
+- [Email](../api-reference/v1.0/resources/message.md)
+- [Calendário (usuários e grupos)](../api-reference/v1.0/resources/event.md)
+- [Contato](../api-reference/v1.0/resources/contact.md)
+- [Anexo](../api-reference/v1.0/resources/attachment.md)
+- [Conversas em grupo](../api-reference/v1.0/resources/conversation.md)
+- [Pessoas e social](../api-reference/beta/resources/social_overview.md)
+- [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
+
+Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação]((https://msdn.microsoft.com/pt-BR/library/office/dn589798.aspx)).

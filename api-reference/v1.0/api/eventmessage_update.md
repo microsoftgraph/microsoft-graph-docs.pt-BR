@@ -1,6 +1,6 @@
-# <a name="update-eventmessage"></a>Atualizar eventmessage
+# <a name="update-eventmessage"></a>Atualizar eventMessage
 
-Atualizar as propriedades do objeto eventmessage.
+Atualize as propriedades de um objeto [eventMessage](../resources/eventmessage.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -29,7 +29,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|categories|Cadeia de caracteres|As categorias associadas à mensagem.|
+|categories|String|As categorias associadas à mensagem.|
 |importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
@@ -59,7 +59,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventmessage"
+  "@odata.type": "microsoft.graph.eventMessage"
 } -->
 ```http
 HTTP/1.1 200 OK
