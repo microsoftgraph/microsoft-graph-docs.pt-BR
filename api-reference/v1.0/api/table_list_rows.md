@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData]((http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters)) para ajudar a personalizar a resposta.  Para resultados confiáveis, use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -39,7 +39,7 @@ Este é um exemplo da solicitação.
   "name": "get_rows"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows?$top=5&$skip=5
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -63,7 +63,8 @@ Content-length: 82
   ]
 }
 ```
-> **Observação:** use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) para navegar por um grande número de linhas.
+> 
+  **Observação:** use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar por um grande número de linhas.
 
 Exemplo: 
 
