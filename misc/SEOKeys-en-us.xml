@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Menu>
   <Item text="Visão geral" url="/en-us/concepts/overview" SEOKeyword="Visão geral, API do Microsoft Graph, Visão geral" SEODescription="O Microsoft Graph permite que os aplicativos acessem dados da vida digital e do trabalho digital na nuvem inteligente da Microsoft. Grandes vantagens para os desenvolvedores: Um ponto de extremidade de API Unificada da Microsoft para acessar dados, inteligência e informações vindas da nuvem da Microsoft." />    
   <Item text="Cenários em destaque" url="/en-us/concepts/featured_scenarios"> 
@@ -9,8 +9,9 @@
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Android" />
     <Item text="Angular" url="/en-us/concepts/angular" SEOKeyword="Angular, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Angular" />
     <Item text="ASP.NET MVC" url="/en-us/concepts/aspnetmvc" SEOKeyword=".NET, ASP.NET MVC, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo ASP.NET MVC" />
-    <Item text="iOS" url="/en-us/concepts/ios" SEOKeyword="iOS, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo iOS" />
-    <Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Node.js" />
+    <Item text="iOS (Objective-C)" url="/en-us/concepts/ios_objectivec" SEOKeyword="iOS, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo iOS Objective-C." />
+    <Item text="iOS (Swift)" url="/en-us/concepts/ios_swift" SEOKeyword="iOS, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo iOS Swift." />
+	<Item text="Node.js" url="/en-us/concepts/nodejs" SEOKeyword="Node.js, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Node.js" />
     <Item text="PHP" url="/en-us/concepts/php" SEOKeyword="PHP, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo PHP" />
     <Item text="Python" url="/en-us/concepts/python" SEOKeyword="Python, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Python" />
     <Item text="Ruby" url="/en-us/concepts/ruby" SEOKeyword="Ruby, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Ruby" />
@@ -91,7 +92,7 @@
     </Item>
     <Item text="Unidade" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="API de Unidade">
       <Item text="Obter unidade" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
-      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
     </Item>
     <Item text="Grupos" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="grupos de usuários, API do Microsoft Graph, API de usuário" SEODescription="API de Grupos">
       <Item text="Listar memberOf" url="/en-us/api-reference/v1.0/api/user_list_memberof" SEOKeyword="Listar memberOf, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos directoryobject." />
@@ -124,7 +125,7 @@
         <Item text="Listar tarefas" url="/en-us/api-reference/v1.0/api/planneruser_list_tasks" SEOKeyword="Listar planos, API do Microsoft Graph, API de usuário" SEODescription="Recuperar uma lista de objetos plan." />
     </Item>  
   </Item>
-  <Item text="Grupos" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="grupos de usuários, API do Microsoft Graph, API de usuário" SEODescription="API de Grupos">
+  <Item text="Grupos" url="/en-us/api-reference/v1.0/resources/groups-overview" SEOKeyword="grupos de usuários, API do Microsoft Graph, API de usuário" SEODescription="API de Grupos">
     <Item text="Grupo" url="/en-us/api-reference/v1.0/resources/group" SEOKeyword="grupos de usuários, API do Microsoft Graph, API de usuário" SEODescription="API de Grupos">
       <Item text="Adicionar favorito" url="/en-us/api-reference/v1.0/api/group_addfavorite" />
       <Item text="Adicionar membro" url="/en-us/api-reference/v1.0/api/group_post_members" SEOKeyword="Criar membro, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo membro." />
@@ -157,9 +158,9 @@
 	<Item text="Calendário" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="calendário do usuário, API do Microsoft Graph, API de usuário" SEODescription="Calendário">
       <Item text="Listar eventos" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="Listar eventos, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos event." />
       <Item text="Criar evento" url="/en-us/api-reference/v1.0/api/group_post_events" SEOKeyword="Criar evento, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo Event." />
-      <Item text="Obter evento" url="/en-us/api-reference/v1.0/api/event_get" />
-      <Item text="Atualizar evento" url="/en-us/api-reference/v1.0/api/event_update" />
-      <Item text="Excluir evento" url="/en-us/api-reference/v1.0/api/event_delete" />
+      <Item text="Obter evento" url="/en-us/api-reference/v1.0/api/group_get_event" />
+      <Item text="Atualizar evento" url="/en-us/api-reference/v1.0/api/group_update_event" />
+      <Item text="Excluir evento" url="/en-us/api-reference/v1.0/api/group_delete_event" />
       <Item text="Listar visão de calendário" url="/en-us/api-reference/v1.0/api/group_list_calendarview" SEOKeyword="Listar calendarView, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos event." />
       <Item text="Listar anexos" url="/en-us/api-reference/v1.0/api/event_list_attachments" SEOKeyword="Listar anexos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos de anexo." />
       <Item text="Adicionar anexo" url="/en-us/api-reference/v1.0/api/event_post_attachments" SEOKeyword="Criar anexo, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Use esta API para criar um novo Attachment." />
@@ -169,28 +170,28 @@
     <Item text="Conversa" url="/en-us/api-reference/v1.0/resources/conversation" SEOKeyword="conversas de grupo, API do Microsoft Graph, API de grupo" SEODescription="Conversa">
       <Item text="Listar conversas" url="/en-us/api-reference/v1.0/api/group_list_conversations" SEOKeyword="Listar conversas, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos conversation." />
       <Item text="Criar conversa" url="/en-us/api-reference/v1.0/api/group_post_conversations" SEOKeyword="Criar Conversa, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar uma nova Conversation." />
-      <Item text="Obter conversa em grupo" url="/en-us/api-reference/v1.0/api/conversation_get" SEOKeyword="Obter conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversation." />
-      <Item text="Excluir conversa em grupo" url="/en-us/api-reference/v1.0/api/conversation_delete" SEOKeyword="Excluir conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua uma conversa." />
+      <Item text="Obter conversa em grupo" url="/en-us/api-reference/v1.0/api/group_get_conversation" SEOKeyword="Obter conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversation." />
+      <Item text="Excluir conversa em grupo" url="/en-us/api-reference/v1.0/api/group_delete_conversation" SEOKeyword="Excluir conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua uma conversa." />
       <Item text="Listar threads de conversas" url="/en-us/api-reference/v1.0/api/conversation_list_threads" SEOKeyword="Listar threads, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos conversationthread." />
       <Item text="Criar thread de conversas" url="/en-us/api-reference/v1.0/api/conversation_post_threads" SEOKeyword="Criar thread, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo thread." />
       <Item text="Listar remetentes aceitos" url="/en-us/api-reference/v1.0/api/group_list_acceptedsenders" SEOKeyword="Listar acceptedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos directoryobject." />
-      <Item text="Criar remetente aceito" url="/en-us/api-reference/v1.0/api/group_post_acceptedsenders" SEOKeyword="Criar acceptedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo acceptedSender." />
-      <Item text="Excluir remetente aceito" url="/en-us/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="Excluir acceptedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um acceptedSender." />
+      <Item text="Criar remetente aceito" url="/en-us/api-reference/v1.0/api/group_post_acceptedsenders" SEOKeyword="Criar acceptedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo acceptedSender." />
+      <Item text="Remover remetente aceito" url="/en-us/api-reference/v1.0/api/group_delete_acceptedsenders" SEOKeyword="Excluir acceptedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um acceptedSender." />
       <Item text="Listar remetentes rejeitados" url="/en-us/api-reference/v1.0/api/group_list_rejectedsenders" SEOKeyword="Listar rejectedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de rejectedSenders." />
       <Item text="Criar remetente rejeitado" url="/en-us/api-reference/v1.0/api/group_post_rejectedsenders" SEOKeyword="Criar rejectedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo rejectedSender." />
-      <Item text="Excluir remetentes rejeitados" url="/en-us/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="Excluir rejectedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um rejectedSender." />
+      <Item text="Remover remetentes rejeitados" url="/en-us/api-reference/v1.0/api/group_delete_rejectedsenders" SEOKeyword="Excluir rejectedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um rejectedSender." />
     </Item>
     <Item text="Thread de conversas" url="/en-us/api-reference/v1.0/resources/conversationthread" SEOKeyword="API de conversationthread, API do Microsoft Graph, API de conversationthread" SEODescription="Thread de conversas">
       <Item text="Listar threads" url="/en-us/api-reference/v1.0/api/group_list_threads" SEOKeyword="Listar threads, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar uma lista de objetos conversationthread." />
       <Item text="Criar thread" url="/en-us/api-reference/v1.0/api/group_post_threads" SEOKeyword="Criar thread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Use esta API para criar um novo thread." />
-      <Item text="Obter thread de conversas" url="/en-us/api-reference/v1.0/api/conversationthread_get" SEOKeyword="Obter conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversationthread." />
-      <Item text="Atualizar thread de conversas" url="/en-us/api-reference/v1.0/api/conversationthread_update" SEOKeyword="Atualizar conversationthread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Atualizar as propriedades do objeto conversationthread." />
-      <Item text="Excluir thread de conversas" url="/en-us/api-reference/v1.0/api/conversationthread_delete" SEOKeyword="Excluir conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua um conversationThread." />
+      <Item text="Obter thread de conversas" url="/en-us/api-reference/v1.0/api/group_get_thread" SEOKeyword="Obter conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversationthread." />
+      <Item text="Atualizar thread de conversas" url="/en-us/api-reference/v1.0/api/group_update_thread" SEOKeyword="Atualizar conversationthread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Atualizar as propriedades do objeto conversationthread." />
+      <Item text="Excluir thread de conversas" url="/en-us/api-reference/v1.0/api/group_delete_thread" SEOKeyword="Excluir conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua um conversationThread." />
       <Item text="Responder thread de conversas" url="/en-us/api-reference/v1.0/api/conversationthread_reply" SEOKeyword="conversationThread: responder, API do Microsoft Graph, API do conversationthread" SEODescription="" />
     </Item>
     <Item text="Unidade" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="Unidade">
       <Item text="Obter unidade" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
-      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
     </Item>
     <Item text="Propriedades estendidas" url="/en-us/api-reference/v1.0/resources/extended-properties-overview" SEODescription="">
       <Item text="Propriedade estendida de valor único" url="/en-us/api-reference/v1.0/resources/singlevaluelegacyextendedproperty" SEODescription="">
@@ -288,12 +289,15 @@
     </Item>
     <Item text="Sku inscrita" url="/en-us/api-reference/v1.0/resources/subscribedsku" SEOKeyword="API de subscribedsku, API do Microsoft Graph, API de subscribedsku" SEODescription="Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e excluir não têm suporte. Não há suporte para expressões de filtro de consulta. Herda do DirectoryObject.">
       <Item text="Listar subscribedSkus" url="/en-us/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="Listar subscribedSkus, API do Microsoft Graph, API do subscribedsku" SEODescription="Recuperar uma lista de objetos subscribedsku." />
-      <Item text="Obter subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="Obter subscribedsku, API do Microsoft Graph, API de subscribedsku" SEODescription="Recuperar as propriedades e os relacionamentos do objeto subscribedsku." />
+      <Item text="Obter subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="Obter subscribedSku, API do Microsoft Graph, API de subscribedsku" SEODescription="Recuperar as propriedades e os relacionamentos do objeto subscribedsku." />
     </Item>
   </Item>
   <Item text="Excel" url="/en-us/api-reference/v1.0/resources/excel" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
     <Item text="Pasta de trabalho" url="/en-us/api-reference/v1.0/resources/workbook" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
-      <Item text="Listar tabelas" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+      <Item text="Criar sessão" url="/en-us/api-reference/v1.0/api/workbook_createsession" />
+	  <Item text="Atualizar sessão" url="/en-us/api-reference/v1.0/api/workbook_refreshsession" />
+	  <Item text="Fechar sessão" url="/en-us/api-reference/v1.0/api/workbook_closesession" />
+	  <Item text="Listar tabelas" url="/en-us/api-reference/v1.0/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
       <Item text="Listar planilhas" url="/en-us/api-reference/v1.0/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
       <Item text="Listar nomes" url="/en-us/api-reference/v1.0/api/workbook_list_names" SEOKeyword="" SEODescription="" />
     </Item>
@@ -311,7 +315,11 @@
     </Item>
     <Item text="Intervalo" url="/en-us/api-reference/v1.0/resources/range" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
       <Item text="Obter intervalo" url="/en-us/api-reference/v1.0/api/range_get" SEOKeyword="" SEODescription="" />
-      <Item text="Mesclar" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
+	  <Item text="Intervalo de atualização" url="/en-us/api-reference/v1.0/api/range_update" />
+	  <Item text="Inserir intervalo" url="/en-us/api-reference/v1.0/api/range_insert" />
+	  <Item text="Obter formato de intervalo" url="/en-us/api-reference/v1.0/api/rangeformat_get" />
+	  <Item text="Atualizar formato de intervalo" url="/en-us/api-reference/v1.0/api/rangeformat_update" />
+	  <Item text="Mesclar" url="/en-us/api-reference/v1.0/api/range_merge" SEOKeyword="" SEODescription="" />
       <Item text="Desfazer mesclagem" url="/en-us/api-reference/v1.0/api/range_unmerge" SEOKeyword="" SEODescription="" />
       <Item text="Limpar" url="/en-us/api-reference/v1.0/api/range_clear" SEOKeyword="" SEODescription="" />
       <Item text="Excluir" url="/en-us/api-reference/v1.0/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -320,58 +328,72 @@
       <Item text="Adicionar tabela" url="/en-us/api-reference/v1.0/api/tablecollection_add" SEOKeyword="" SEODescription="" />
       <Item text="Obter tabela" url="/en-us/api-reference/v1.0/api/table_get" SEOKeyword="" SEODescription="" />
       <Item text="Atualizar tabela" url="/en-us/api-reference/v1.0/api/table_update" SEOKeyword="" SEODescription="" />
-      <Item text="Obter intervalo" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
+	  <Item text="Excluir tabela" url="/en-us/api-reference/v1.0/api/table_delete" />
       <Item text="Listar linhas" url="/en-us/api-reference/v1.0/api/table_list_rows" SEOKeyword="" SEODescription="" />
+	  <Item text="Criar linha" url="/en-us/api-reference/v1.0/api/table_post_rows" />
       <Item text="Listar colunas" url="/en-us/api-reference/v1.0/api/table_list_columns" SEOKeyword="" SEODescription="" />
+	  <Item text="Criar coluna" url="/en-us/api-reference/v1.0/api/table_post_columns" />
+	  <Item text="Obter intervalo" url="/en-us/api-reference/v1.0/api/table_range" SEOKeyword="" SEODescription="" />
     </Item>
     <Item text="Gráfico" url="/en-us/api-reference/v1.0/resources/chart" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
-      <Item text="Obter gráfico" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+      <Item text="Gráficos de lista" url="/en-us/api-reference/v1.0/api/chart_list" />
+	  <Item text="Obter gráfico" url="/en-us/api-reference/v1.0/api/chart_get" SEOKeyword="" SEODescription="" />
+	  <Item text="Atualizar gráfico" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
+	  <Item text="Excluir gráfico" url="/en-us/api-reference/v1.0/api/chart_delete" />
+	  <Item text="Adicionar gráfico" url="/en-us/api-reference/v1.0/api/chartcollection_add" />
       <Item text="Obter imagem do gráfico" url="/en-us/api-reference/v1.0/api/chart_image" SEOKeyword="" SEODescription="" />
       <Item text="Redefinir dados" url="/en-us/api-reference/v1.0/api/chart_setdata" SEOKeyword="" SEODescription="" />
       <Item text="Definir dados de posição" url="/en-us/api-reference/v1.0/api/chart_setposition" SEOKeyword="" SEODescription="" />
-      <Item text="Atualizar gráfico" url="/en-us/api-reference/v1.0/api/chart_update" SEOKeyword="" SEODescription="" />
     </Item>
-    <Item text="Nameditem" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
-      <Item text="Listar nameditem" url="/en-us/api-reference/v1.0/api/nameditem_get" SEOKeyword="" SEODescription="" />
-      <Item text="Listar intervalo" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
+    <Item text="Item nomeado" url="/en-us/api-reference/v1.0/resources/nameditem" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
+      <Item text="Listar item nomeado" url="/en-us/api-reference/v1.0/api/nameditem_list" SEOKeyword="" SEODescription="" />
+      <Item text="Obter item nomeado" url="/en-us/api-reference/v1.0/api/nameditem_get" />
+	  <Item text="Atualizar item nomeado" url="/en-us/api-reference/v1.0/api/nameditem_update" />
+	  <Item text="Adicionar item nomeado" url="/en-us/api-reference/v1.0/api/nameditem_add" />
+	  <Item text="Listar intervalo" url="/en-us/api-reference/v1.0/api/nameditem_range" SEOKeyword="" SEODescription="" />
     </Item>
   </Item>
   <Item text="OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs do OneDrive">
     <Item text="Unidades" url="/en-us/api-reference/v1.0/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="API de Unidade">
       <Item text="Obter unidade" url="/en-us/api-reference/v1.0/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
       <Item text="Listar unidades" url="/en-us/api-reference/v1.0/api/drive_list" SEOKeyword="Listar unidades, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
       <Item text="Arquivos recentes" url="/en-us/api-reference/v1.0/api/drive_recent" SEOKeyword="Arquivos recentes, API do Microsoft Graph, API da unidade" SEODescription="Obter arquivos recentes." />
       <Item text="Arquivos compartilhados" url="/en-us/api-reference/v1.0/api/drive_sharedwithme" SEOKeyword="Compartilhado com arquivos recentes, API do Microsoft Graph, API da unidade" SEODescription="Obter arquivos compartilhados comigo." />
-      <Item text="Obter pasta especial" url="/en-us/api-reference/v1.0/api/drive_special" SEOKeyword="Pastas especiais, API do Microsoft Graph, API da unidade" SEODescription="Obter pastas especiais." />
+      <Item text="Obter pasta especial" url="/en-us/api-reference/v1.0/api/drive_get_specialfolder" SEOKeyword="Pastas especiais, API do Microsoft Graph, API da unidade" SEODescription="Obter pastas especiais." />
     </Item>
     <Item text="DriveItems" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="API do item, API do Microsoft Graph, API do item" SEODescription="O recurso de item representa um item contido em uma unidade, como um arquivo ou pasta.">
-      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
-      <Item text="Obter item" url="/en-us/api-reference/v1.0/api/item_get" SEOKeyword="Obter item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Recuperar as propriedades e os relacionamentos do objeto de item." />
-      <Item text="Obter miniaturas" url="/en-us/api-reference/v1.0/api/item_list_thumbnails" SEOKeyword="Obter miniaturas, API do Microsoft Graph, API do thumbnailset" SEODescription="" />
-      <Item text="Criar pasta" url="/en-us/api-reference/v1.0/api/item_post_children" SEOKeyword="Criar filhos, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Use esta API para criar novos filhos." />
-      <Item text="Atualizar item" url="/en-us/api-reference/v1.0/api/item_update" SEOKeyword="Atualizar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Atualizar as propriedades do objeto de item." />
-      <Item text="Excluir item" url="/en-us/api-reference/v1.0/api/item_delete" SEOKeyword="Excluir item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Exclua o item." />
-      <Item text="Mover item" url="/en-us/api-reference/v1.0/api/item_move" SEOKeyword="Mover item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-      <Item text="Copiar item" url="/en-us/api-reference/v1.0/api/item_copy" SEOKeyword="Copiar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-      <Item text="Baixar" url="/en-us/api-reference/v1.0/api/item_downloadcontent" SEOKeyword="Baixar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-      <Item text="Carregar" url="/en-us/api-reference/v1.0/api/item_uploadcontent" SEOKeyword="Carregar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-      <Item text="Carregamento retomável" url="/en-us/api-reference/v1.0/api/item_createuploadsession" SEOKeyword="carregamento de arquivo grande, carregamento retomável, API do Microsoft Graph, API da Unidade do OneDrive, fragmentos, arquivos" />
-      <Item text="Pesquisar itens" url="/en-us/api-reference/v1.0/api/item_search" SEOKeyword="Pesquisar itens, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-      <Item text="Controlar alterações" url="/en-us/api-reference/v1.0/api/item_delta" SEOKeyword="Controlar alterações, API do Microsoft Graph" SEODescription="" />
+      <Item text="Listar filhos" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+      <Item text="Obter item" url="/en-us/api-reference/v1.0/api/driveitem_get" SEOKeyword="Obter item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Recuperar as propriedades e os relacionamentos do objeto de item." />
+      <Item text="Obter miniaturas" url="/en-us/api-reference/v1.0/api/driveitem_list_thumbnails" SEOKeyword="Obter miniaturas, API do Microsoft Graph, API do thumbnailset" SEODescription="" />
+      <Item text="Criar pasta" url="/en-us/api-reference/v1.0/api/driveitem_post_children" SEOKeyword="Criar filhos, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Use esta API para criar novos filhos." />
+      <Item text="Atualizar item" url="/en-us/api-reference/v1.0/api/driveitem_update" SEOKeyword="Atualizar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Atualizar as propriedades do objeto de item." />
+      <Item text="Excluir item" url="/en-us/api-reference/v1.0/api/driveitem_delete" SEOKeyword="Excluir item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Exclua o item." />
+      <Item text="Mover item" url="/en-us/api-reference/v1.0/api/driveitem_move" SEOKeyword="Mover item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+      <Item text="Copiar item" url="/en-us/api-reference/v1.0/api/driveitem_copy" SEOKeyword="Copiar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+      <Item text="Baixar o arquivo" url="/en-us/api-reference/v1.0/api/driveitem_get_content" SEOKeyword="Baixar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+      <Item text="Converter o conteúdo" url="/en-us/api-reference/v1.0/api/driveitem_get_content_format" SEOKeyword="Baixar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+	  <Item text="Carregar" url="/en-us/api-reference/v1.0/api/driveitem_put_content" SEOKeyword="Carregar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+      <Item text="Carregamento retomável" url="/en-us/api-reference/v1.0/api/driveitem_createuploadsession" SEOKeyword="carregamento de arquivo grande, carregamento retomável, API do Microsoft Graph, API da Unidade do OneDrive, fragmentos, arquivos" />
+      <Item text="Pesquisar itens" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="Pesquisar itens, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+      <Item text="Controlar alterações" url="/en-us/api-reference/v1.0/api/driveitem_delta" SEOKeyword="Controlar alterações, API do Microsoft Graph" SEODescription="" />
     </Item>
     <Item text="Permissões" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="Criar item de link, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="">
-      <Item text="Criar um link de compartilhamento" url="/en-us/api-reference/v1.0/api/item_createlink" SEOKeyword="Criar item de link, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+      <Item text="Criar um link de compartilhamento" url="/en-us/api-reference/v1.0/api/driveitem_createlink" SEOKeyword="Criar item de link, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
       <Item text="Usar links de compartilhamento" url="/en-us/api-reference/v1.0/api/shares_get" SEOKeyword="usar links de compartilhamento, API do Microsoft Graph, API da Unidade do OneDrive, compartilhamentos, compartilhando" SEODescription="" />
-      <Item text="Permissões de lista" url="/en-us/api-reference/v1.0/api/item_list_permissions" SEOKeyword="Lista, permissões enumeradas em um item, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
-      <Item text="Adicionar permissões" url="/en-us/api-reference/v1.0/api/item_invite" SEOKeyword="Adicionar permissão, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
+      <Item text="Permissões de lista" url="/en-us/api-reference/v1.0/api/driveitem_list_permissions" SEOKeyword="Lista, permissões enumeradas em um item, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
+      <Item text="Adicionar permissões" url="/en-us/api-reference/v1.0/api/driveitem_invite" SEOKeyword="Adicionar permissão, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
       <Item text="Obter permissão" url="/en-us/api-reference/v1.0/api/permission_get" SEOKeyword="Obter permissão, API do Microsoft Graph, API de permissão" SEODescription="Recuperar as propriedades e os relacionamentos do objeto permission." />
       <Item text="Atualizar permissão" url="/en-us/api-reference/v1.0/api/permission_update" SEOKeyword="Atualizar permissão, API do Microsoft Graph, API de permissão" SEODescription="Atualizar as propriedades do objeto permission." />
       <Item text="Excluir permissão" url="/en-us/api-reference/v1.0/api/permission_delete" SEOKeyword="Excluir permissão, API do Microsoft Graph, API de permissão" SEODescription="Excluir a permissão." />
     </Item>
   </Item>
-  <Item text="OneNote" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="API do OneNote, API do Microsoft Graph" SEODescription="">
-      <Item text="Observações" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="API de anotações, API do Microsoft Graph, API de anotações" SEODescription="">
+  <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use o Microsoft Graph para integrar seus aplicativos com o OneNote.">
+      <Item text="HTML de entrada e saída" url="/en-us/concepts/onenote_input_output_html" SEODescription="Entenda o HTML de entrada e saída ao criar, atualizar ou analisar o conteúdo retornado da página do OneNote." />
+	  <Item text="Abra o cliente do OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abra um aplicativo do OneNote em uma determinada página ou um bloco de anotações." />
+      <Item text="Códigos de erro" url="/en-us/concepts/onenote_error_codes" SEODescription="Localize os códigos de erro que foram retornados pelas APIs do OneNote no Microsoft Graph." />
+      <Item text="Práticas recomendadas" url="/en-us/concepts/onenote_best_practices" SEODescription="Use as práticas recomendadas ao trabalhar com as APIs do OneNote no Microsoft Graph." />  
+	  <Item text="Observações" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="API de anotações, API do Microsoft Graph, API de anotações" SEODescription="">
         <Item text="Listar blocos de anotações" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="Listar blocos de anotações, API do Microsoft Graph, API de anotações" SEODescription="Recuperar uma lista de objetos notebook(../resources/notebook.md)." />
         <Item text="Criar bloco de anotações" url="/en-us/api-reference/v1.0/api/onenote_post_notebooks" SEOKeyword="Criar bloco de anotações, API do Microsoft Graph, API de anotações" SEODescription="Criar um novo bloco de anotações do OneNote(../resources/notebook.md)." />
         <Item text="Listar seções" url="/en-us/api-reference/v1.0/api/onenote_list_sections" SEOKeyword="Listar seções, API do Microsoft Graph, API de anotações" SEODescription="Recuperar uma lista de objetos section(../resources/section.md)." />
@@ -644,6 +666,106 @@
       <Item text="Atualizar progresso do formato de quadro de tarefas" url="/en-us/api-reference/v1.0/api/plannerprogresstaskboardtaskformat_update" />
 	  </Item>
   </Item>
+  <Item text="Relatórios" url="/en-us/api-reference/v1.0/resources/report">
+	  <Item text="Atividade do Outlook" url="/en-us/api-reference/v1.0/resources/email_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Uso do aplicativo do Outlook" url="/en-us/api-reference/v1.0/resources/email_app_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageuserdetail" />
+		<Item text="Obter contagens de usuários do aplicativo" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageusercounts" />
+		<Item text="Obter contagens de usuários das versões" url="/en-us/api-reference/v1.0/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Uso de caixas de correio do Outlook" url="/en-us/api-reference/v1.0/resources/mailbox_usage_reports">
+		<Item text="Obter detalhes de caixa de correio" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagedetail" />
+		<Item text="Obter contagens da caixa de correio" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="Obter status da cota de contagens da caixa de correio" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/v1.0/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Ativações do Office 365" url="/en-us/api-reference/v1.0/resources/office_365_activations_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="Obter contagens de ativações" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationcounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Usuários ativos do Office 365" url="/en-us/api-reference/v1.0/resources/office_365_active_users_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365activeusercounts" />
+		<Item text="Obter contagens de usuários dos serviços" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Atividades de grupos do Office 365" url="/en-us/api-reference/v1.0/resources/office_365_groups_activity_reports">
+		<Item text="Obter detalhe do grupo" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="Obter contagens do grupo" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/v1.0/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="Atividade do OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="Uso do OneDrive" url="/en-us/api-reference/v1.0/resources/onedrive_usage_reports">
+		<Item text="Obter detalhes da conta" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="Obter contagens de contas" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/v1.0/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="Atividade do SharePoint" url="/en-us/api-reference/v1.0/resources/sharepoint_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="Obter páginas" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="Utilização do site do SharePoint" url="/en-us/api-reference/v1.0/resources/sharepoint_site_usage_reports">
+		<Item text="Obter detalhes do site" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="Obter contagens do site" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="Obter páginas" url="/en-us/api-reference/v1.0/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Atividade do Skype for Business" url="/en-us/api-reference/v1.0/resources/skype_for_business_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Uso do dispositivo do Skype for Business" url="/en-us/api-reference/v1.0/resources/skype_for_business_device_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="Obter contagens de usuários de distribuição" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Atividade do organizador do Skype for Business" url="/en-us/api-reference/v1.0/resources/skype_for_business_organizer_activity_reports">
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="Obter contagens de minutos" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Atividade de participantes do Skype for Business" url="/en-us/api-reference/v1.0/resources/skype_for_business_participant_activity_reports">
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="Obter contagens de minutos" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Atividade de colega para colega do Skype for Business" url="/en-us/api-reference/v1.0/resources/skype_for_business_peer_to_peer_activity">
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="Obter contagens de minutos" url="/en-us/api-reference/v1.0/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Atividade do Yammer" url="/en-us/api-reference/v1.0/resources/yammer_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Uso do dispositivo do Yammer" url="/en-us/api-reference/v1.0/resources/yammer_device_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="Obter contagens de usuários de distribuição" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/v1.0/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Atividade de grupos do Yammer" url="/en-us/api-reference/v1.0/resources/yammer_groups_activity_reports">
+		<Item text="Obter detalhe do grupo" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="Obter contagens do grupo" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/v1.0/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
+	</Item>
   <Item text="Extensões de esquema" url="/en-us/api-reference/v1.0/resources/schemaextension" SEOKeyword="API de extensão, API do Microsoft Graph, API de extensão de esquema, extensões de esquema" SEODescription="API para adicionar dados personalizados a recursos no Microsoft Graph.">
       <Item text="Listar extensões de esquema" url="/en-us/api-reference/v1.0/api/schemaextension_list" SEOKeyword="Listar extensões de esquema, API do Microsoft Graph" SEODescription="Recuperar um conjunto de definições de extensão de esquema e suas propriedades." />
       <Item text="Criar extensão de esquema" url="/en-us/api-reference/v1.0/api/schemaextension_post_schemaextensions" SEOKeyword="Criar uma extensão de esquema, API do Microsoft Graph" SEODescription="API para criar uma definição de extensão de esquema." />
@@ -654,8 +776,20 @@
   <Item text="SharePoint" url="/en-us/api-reference/v1.0/resources/sharepoint" SEOKeyword="SharePoint, sites, listas, unidades, API do Microsoft Graph, API do SharePoint">
     <Item text="Sites" url="/en-us/api-reference/v1.0/resources/site" SEOKeyword="sharepoint, site, sites, api do microsoft graph, api de sites do sharepoint">
       <Item text="Obter site" url="/en-us/api-reference/v1.0/api/site_get" SEOKeyword="SharePoint, site, obter site" SEODescription="" />&gt;
+      <Item text="Obter listas" url="/en-us/api-reference/v1.0/api/list_list" SEOKeyword="" SEODescription="" />&gt;
       <Item text="Listar subsites" url="/en-us/api-reference/v1.0/api/subsites_list" SEOKeyword="SharePoint, listar subsites" SEODescription="" />
     </Item>
+    <Item text="Listas" url="/en-us/api-reference/v1.0/resources/list" SEOKeyword="" SEODescription="">
+      <Item text="Obter lista" url="/en-us/api-reference/v1.0/api/list_get" SEOKeyword="" SEODescription="" />&gt;
+      <Item text="Obter itens" url="/en-us/api-reference/v1.0/api/listitem_list" SEOKeyword="SharePoint, listar itens, obter itens, obter listitems" SEODescription="" />
+      <Item text="Criar lista" url="/en-us/api-reference/v1.0/api/list_create" SEOKeyword="" SEODescription="" />&gt;
+    </Item>
+    <Item text="ListItems" url="/en-us/api-reference/v1.0/resources/listitem" SEOKeyword="sharepoint, listitems, api do microsoft graph, api da lista do sharepoint" SEODescription="">
+        <Item text="Obter item" url="/en-us/api-reference/v1.0/api/listitem_get" SEOKeyword="sharepoint, obter item, api do microsoft graph, api da lista do sharepoint" SEODescription="" />
+        <Item text="Criar item" url="/en-us/api-reference/v1.0/api/listitem_create" SEOKeyword="sharepoint, criar item, criar, api do microsoft graph, api da lista do sharepoint" SEODescription="" />
+        <Item text="Atualizar item" url="/en-us/api-reference/v1.0/api/listitem_update" SEOKeyword="sharepoint, atualizar item, atualizar, api do microsoft graph, api da lista do sharepoint" SEODescription="" />
+        <Item text="Excluir item" url="/en-us/api-reference/v1.0/api/listitem_delete" SEOKeyword="sharepoint, excluir item, excluir, api do microsoft graph, api da lista do sharepoint" SEODescription="" />
+      </Item>
   </Item>
   <Item text="Webhooks" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="informações, API do Microsoft Graph, API de usuário" SEODescription="">
     <Item text="Assinatura" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="informações, API do Microsoft Graph, API de usuário" SEODescription="">
@@ -688,6 +822,8 @@
         <Item text="Listar visão de calendário" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="Listar calendarView, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos event." />
         <Item text="Modo de exibição Lembrete" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="usuário: reminderView, API do Microsoft Graph, API de usuário" SEODescription="" />
         <Item text="Encontrar horários de reunião" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="usuário: horários de reuniões, API do Microsoft Graph, API de usuário" SEODescription="" />
+		<Item text="Encontrar listas de salas" url="/en-us/api-reference/beta/api/user_findroomlists" />
+		<Item text="Encontrar salas" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
       <Item text="Contatos" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="contato do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar contatos" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="Listar contatos, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos contact." />
@@ -709,7 +845,7 @@
       </Item>
       <Item text="Unidade" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Obter unidade" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
-        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
       </Item>
       <Item text="Grupos" url="/en-us/api-reference/beta/resources/group" SEOKeyword="grupos, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar equipes unidas" url="/en-us/api-reference/beta/api/user_list_joinedteams" SEOKeyword="Listar joinedTeams, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista do Microsoft Teams à qual o usuário pertence." />
@@ -764,7 +900,7 @@
         <Item text="Listar tarefas" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="Listar planos, API do Microsoft Graph, API de usuário" SEODescription="Recuperar uma lista de objetos plan." />
       </Item>
     </Item>
-    <Item text="Grupos" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API de Grupos, API do Microsoft Graph, API de Grupos, API do Microsoft Teams, API de Equipes" SEODescription="Representa um Grupo do Azure Active Directory. Herdado do DirectoryObject.">
+    <Item text="Grupos" url="/en-us/api-reference/beta/resources/groups-overview" SEOKeyword="API de Grupos, API do Microsoft Graph, API de Grupos, API do Microsoft Teams, API de Equipes" SEODescription="Representa um Grupo do Azure Active Directory. Herdado do DirectoryObject.">
       <Item text="Grupo" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API de Grupos, API do Microsoft Graph, API de Grupos, API do Microsoft Teams, API de Equipes" SEODescription="Representa um Grupo do Azure Active Directory. Herdado do DirectoryObject.">
         <Item text="Adicionar favorito" url="/en-us/api-reference/beta/api/group_addfavorite" SEOKeyword="grupo: addFavorite, API do Microsoft Graph, API de grupo" SEODescription="" />
         <Item text="Adicionar membro" url="/en-us/api-reference/beta/api/group_post_members" SEOKeyword="Criar membro, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo membro." />
@@ -803,9 +939,9 @@
 	  <Item text="Calendário" url="/en-us/api-reference/beta/resources/event" SEOKeyword="calendário do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar eventos" url="/en-us/api-reference/beta/api/group_list_events" SEOKeyword="Listar eventos, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos event." />
         <Item text="Criar evento" url="/en-us/api-reference/beta/api/group_post_events" SEOKeyword="Criar evento, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo Event." />
-        <Item text="Obter evento" url="/en-us/api-reference/beta/api/event_get" />
-        <Item text="Atualizar evento" url="/en-us/api-reference/beta/api/event_update" />
-        <Item text="Excluir evento" url="/en-us/api-reference/beta/api/event_delete" />
+        <Item text="Obter evento" url="/en-us/api-reference/beta/api/group_get_event" />
+        <Item text="Atualizar evento" url="/en-us/api-reference/beta/api/group_update_event" />
+        <Item text="Excluir evento" url="/en-us/api-reference/beta/api/group_delete_event" />
         <Item text="Listar visão de calendário" url="/en-us/api-reference/beta/api/group_list_calendarview" SEOKeyword="Listar calendarView, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos event." />
         <Item text="Listar anexos" url="/en-us/api-reference/beta/api/event_list_attachments" SEOKeyword="Listar anexos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos de anexo." />
         <Item text="Adicionar anexo" url="/en-us/api-reference/beta/api/event_post_attachments" SEOKeyword="Criar anexo, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Use esta API para criar um novo Attachment." />
@@ -815,30 +951,30 @@
       <Item text="Conversa" url="/en-us/api-reference/beta/resources/conversation" SEOKeyword="API de conversa, API do Microsoft Graph, API de conversa" SEODescription="">
         <Item text="Listar conversas" url="/en-us/api-reference/beta/api/group_list_conversations" SEOKeyword="Listar conversas, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos conversation." />
         <Item text="Criar conversa" url="/en-us/api-reference/beta/api/group_post_conversations" SEOKeyword="Criar Conversa, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar uma nova Conversation." />
-        <Item text="Obter conversa em grupo" url="/en-us/api-reference/beta/api/conversation_get" SEOKeyword="Obter conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversation." />
-        <Item text="Excluir conversa em grupo" url="/en-us/api-reference/beta/api/conversation_delete" SEOKeyword="Excluir conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua uma conversa." />
+        <Item text="Obter conversa em grupo" url="/en-us/api-reference/beta/api/group_get_conversation" SEOKeyword="Obter conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversation." />
+        <Item text="Excluir conversa em grupo" url="/en-us/api-reference/beta/api/group_delete_conversation" SEOKeyword="Excluir conversa de grupo, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua uma conversa." />
         <Item text="Listar threads de conversas" url="/en-us/api-reference/beta/api/conversation_list_threads" SEOKeyword="Listar threads, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos conversationthread." />
         <Item text="Criar thread de conversas" url="/en-us/api-reference/beta/api/conversation_post_threads" SEOKeyword="Criar thread, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo thread." />
         <Item text="Listar remetentes aceitos" url="/en-us/api-reference/beta/api/group_list_acceptedsenders" SEOKeyword="Listar acceptedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos directoryobject." />
-        <Item text="Criar remetente aceito" url="/en-us/api-reference/beta/api/group_post_acceptedsenders" SEOKeyword="Criar acceptedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo acceptedSender." />
-        <Item text="Excluir remetente aceito" url="/en-us/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="Excluir acceptedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um acceptedSender." />
+        <Item text="Criar remetente aceito" url="/en-us/api-reference/beta/api/group_post_acceptedsenders" SEOKeyword="Criar acceptedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo acceptedSender." />
+        <Item text="Remover remetente aceito" url="/en-us/api-reference/beta/api/group_delete_acceptedsenders" SEOKeyword="Excluir acceptedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um acceptedSender." />
         <Item text="Listar remetentes rejeitados" url="/en-us/api-reference/beta/api/group_list_rejectedsenders" SEOKeyword="Listar rejectedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de rejectedSenders." />
         <Item text="Criar remetente rejeitado" url="/en-us/api-reference/beta/api/group_post_rejectedsenders" SEOKeyword="Criar rejectedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para criar um novo rejectedSender." />
-        <Item text="Excluir remetentes rejeitados" url="/en-us/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="Excluir rejectedSender, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um rejectedSender." />
+        <Item text="Remover remetentes rejeitados" url="/en-us/api-reference/beta/api/group_delete_rejectedsenders" SEOKeyword="Excluir rejectedSenders, API do Microsoft Graph, API de Grupos" SEODescription="Use esta API para excluir um rejectedSender." />
       </Item>
       <Item text="Thread de conversas" url="/en-us/api-reference/beta/resources/conversationthread" SEOKeyword="API de conversationthread, API do Microsoft Graph, API de conversationthread" SEODescription="">
         <Item text="Listar threads" url="/en-us/api-reference/beta/api/group_list_threads" SEOKeyword="Listar threads, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar uma lista de objetos conversationthread." />
         <Item text="Criar thread" url="/en-us/api-reference/beta/api/group_post_threads" SEOKeyword="Criar thread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Use esta API para criar um novo thread." />
-        <Item text="Obter thread de conversas" url="/en-us/api-reference/beta/api/conversationthread_get" SEOKeyword="Obter conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversationthread." />
-        <Item text="Atualizar thread de conversas" url="/en-us/api-reference/beta/api/conversationthread_update" SEOKeyword="Atualizar conversationthread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Atualizar as propriedades do objeto conversationthread." />
-        <Item text="Excluir thread de conversas" url="/en-us/api-reference/beta/api/conversationthread_delete" SEOKeyword="Excluir conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua um conversationThread." />
+        <Item text="Obter thread de conversas" url="/en-us/api-reference/beta/api/group_get_thread" SEOKeyword="Obter conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto conversationthread." />
+        <Item text="Atualizar thread de conversas" url="/en-us/api-reference/beta/api/group_update_thread" SEOKeyword="Atualizar conversationthread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Atualizar as propriedades do objeto conversationthread." />
+        <Item text="Excluir thread de conversas" url="/en-us/api-reference/beta/api/group_delete_thread" SEOKeyword="Excluir conversationThread, API do Microsoft Graph, API de conversa do Outlook" SEODescription="Exclua um conversationThread." />
         <Item text="Responder thread de conversas" url="/en-us/api-reference/beta/api/conversationthread_reply" SEOKeyword="conversationThread: responder, API do Microsoft Graph, API do conversationthread" SEODescription="" />
       </Item>
       <Item text="Objeto de diretório" url="/en-us/api-reference/beta/resources/directoryobject" SEOKeyword="objeto de diretório, API do Microsoft Graph, API de usuário" SEODescription="">
       </Item>
       <Item text="Unidade" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Obter unidade" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
-        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
       </Item>
       <Item text="Propriedades estendidas" url="/en-us/api-reference/beta/resources/extended-properties-overview" SEODescription="">
         <Item text="Propriedade estendida de valor único" url="/en-us/api-reference/beta/resources/singlevaluelegacyextendedproperty" SEODescription="">
@@ -999,14 +1135,21 @@
         <Item text="Obter unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="API do Microsoft Graph, API de Identity Protection, Azure AD, AADIP, Identity Protection, Risco de Evento, API de unfamiliarLocationRiskEvent" SEODescription="Recuperar um objeto unfamiliarLocationRiskEvent." />
       </Item>
     </Item>
+      <Item text="Provedor de identidade" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure os Provedores de Identidade no Azure Active Directory e no Azure Active Directory B2C.">
+        <Item text="Listar provedores de identidade" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="Listar todos os identityProviders do diretório." />
+        <Item text="Criar o provedor de identidade" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="Criar um novo identityProvider." />
+        <Item text="Obter o provedor de identidade" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Obter um identityProvider pela id." />
+        <Item text="Atualizar o provedor de identidade" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Atualizar as propriedades de um identityProvider." />
+        <Item text="Excluir o provedor de identidade" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Excluir o identityProvider existente." />
+      </Item>
       <Item text="Gerenciador de convites" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use o gerenciador de convites para criar um convite para adicionar um usuário externo ao diretório da organização. ">
         <Item text="Criar convite" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Cria um novo convite para adicionar um usuário externo ao diretório da organização." />
       </Item>
 
-      <Item text="Concessão de permissão oauth2" url="/en-us/api-reference/beta/resources/oauth2permissiongrant" SEOKeyword="API de oauth2permissiongrant, API do Microsoft Graph, API de oauth2permissiongrant" SEODescription="Representa os escopos de permissões delegadas do OAuth 2.0 que foram concedidas a um aplicativo (representado por uma entidade de serviço) como parte do processo de consentimento do usuário ou administrador.">
-        <Item text="Obter concessão de permissão oauth2" url="/en-us/api-reference/beta/api/oauth2permissiongrant_get" SEOKeyword="Obter oAuth2PermissionGrant, API do Microsoft Graph, API de oauth2permissiongrant" SEODescription="Recuperar as propriedades e os relacionamentos do objeto oauth2permissiongrant." />
-        <Item text="Atualizar concessão de permissão oauth2" url="/en-us/api-reference/beta/api/oauth2permissiongrant_update" SEOKeyword="Atualizar oauth2permissiongrant, API do Microsoft Graph, API de oauth2permissiongrant" SEODescription="Atualizar as propriedades do objeto oauth2permissiongrant." />
-        <Item text="Excluir concessão de permissão oauth2" url="/en-us/api-reference/beta/api/oauth2permissiongrant_delete" SEOKeyword="Excluir oAuth2PermissionGrant, API do Microsoft Graph, API do oauth2permissiongrant" SEODescription="Exclua uma oAuth2PermissionGrant." />
+      <Item text="Concessão de permissão OAuth2" url="/en-us/api-reference/beta/resources/oauth2permissiongrant" SEOKeyword="API oauth2permissiongrant, API do Microsoft Graph, API oauth2permissiongrant" SEODescription="Representa os escopos de permissões delegadas do OAuth 2.0 que foram concedidas a um aplicativo (representado por uma entidade de serviço) como parte do processo de consentimento do usuário ou administrador.">
+        <Item text="Obter concessão de permissão OAuth2" url="/en-us/api-reference/beta/api/oauth2permissiongrant_get" SEOKeyword="Obter oAuth2PermissionGrant, API do Microsoft Graph, API oauth2permissiongrant" SEODescription="Recuperar as propriedades e os relacionamentos do objeto oauth2permissiongrant." />
+        <Item text="Atualizar concessão de permissão OAuth2" url="/en-us/api-reference/beta/api/oauth2permissiongrant_update" SEOKeyword="Atualizar oauth2permissiongrant, API do Microsoft Graph, API oauth2permissiongrant" SEODescription="Atualizar as propriedades do objeto oauth2permissiongrant." />
+        <Item text="Excluir concessão de permissão OAuth2" url="/en-us/api-reference/beta/api/oauth2permissiongrant_delete" SEOKeyword="Excluir oAuth2PermissionGrant, API do Microsoft Graph, API oauth2permissiongrant" SEODescription="Exclua uma oAuth2PermissionGrant." />
       </Item>
       <Item text="Organização" url="/en-us/api-reference/beta/resources/organization" SEOKeyword="grupos, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Obter detalhes org" url="/en-us/api-reference/beta/api/organization_get" SEOKeyword="Obter tenantDetail, API do Microsoft Graph, API do Diretório" SEODescription="Recuperar as propriedades e os relacionamentos do objeto tenantdetail." />
@@ -1047,18 +1190,125 @@
     </Item>
       <Item text="Entidade de serviço" url="/en-us/api-reference/beta/resources/serviceprincipal">
         <Item text="Listar entidade de serviço" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
-		<Item text="Obter entidade de serviço" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
+		    <Item text="Obter entidade de serviço" url="/en-us/api-reference/beta/api/serviceprincipal_get" />
         <Item text="Atualizar entidade de serviço" url="/en-us/api-reference/beta/api/serviceprincipal_update" />
         <Item text="Excluir entidade de serviço" url="/en-us/api-reference/beta/api/serviceprincipal_delete" />
       </Item>
       <Item text="Sku inscrita" url="/en-us/api-reference/beta/resources/subscribedsku" SEOKeyword="API de subscribedsku, API do Microsoft Graph, API de subscribedsku" SEODescription="Somente a operação de leitura tem nos SKUs inscritos; criar, atualizar e excluir não têm suporte. Não há suporte para expressões de filtro de consulta. Herda do DirectoryObject.">
         <Item text="Listar subscribedSkus" url="/en-us/api-reference/beta/api/subscribedsku_list" SEOKeyword="Listar subscribedSkus, API do Microsoft Graph, API do subscribedsku" SEODescription="Recuperar uma lista de objetos subscribedsku." />
-        <Item text="Obter subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Obter subscribedsku, API do Microsoft Graph, API de subscribedsku" SEODescription="Recuperar as propriedades e os relacionamentos do objeto subscribedsku." />
+        <Item text="Obter subscribedSku" url="/en-us/api-reference/beta/api/subscribedsku_get" SEOKeyword="Obter subscribedSku, API do Microsoft Graph, API de subscribedsku" SEODescription="Recuperar as propriedades e os relacionamentos do objeto subscribedsku." />
+      </Item>
+      <Item text="Sincronização" url="/en-us/api-reference/beta/resources/synchronization-overview" SEOKeyword="API de sincronização, API de provisionamento, Azure Active Directory, provisionamento">
+        <Item text="Sincronizar atributos de destino personalizados" url="/en-us/api-reference/beta/resources/synchronization-configure-with-custom-target-attributes" />
+        <Item text="Sincronizar atributos de extensão de diretório" url="/en-us/api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes" />
+        <Item text="Cargo" url="/en-us/api-reference/beta/resources/synchronization_synchronizationjob" SEOKeyword="Trabalho de sincronização, API de sincronização, API de provisionamento, Azure Active Directory, provisionamento">
+          <Item text="Listar trabalhos" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_list" />
+          <Item text="Criar trabalho" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_post" />
+		  <Item text="Obter trabalho" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_get" />
+          <Item text="Iniciar trabalho" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_start" />
+          <Item text="Pausar trabalho" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_pause" />
+          <Item text="Reiniciar trabalho" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_restart" />
+          <Item text="Excluir trabalho" url="/en-us/api-reference/beta/api/synchronization_synchronizationjob_delete" />
+        </Item>
+        <Item text="Esquema" url="/en-us/api-reference/beta/resources/synchronization_synchronizationschema" SEOKeyword="Esquema de sincronização, API de sincronização, API de provisionamento, Azure Active Directory, provisionamento">
+            <Item text="Obter esquema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_get" />
+            <Item text="Obter funções de esquema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_functions" />
+            <Item text="Obter operadores do filtro de esquema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_filteroperators" />
+            <Item text="Atualizar esquema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_update" />
+            <Item text="Redefinir esquema" url="/en-us/api-reference/beta/api/synchronization_synchronizationschema_delete" />
+        </Item>
+        <Item text="Modelo" url="/en-us/api-reference/beta/resources/synchronization_synchronizationtemplate" SEOKeyword="Modelo de sincronização, API de sincronização, API de provisionamento, Azure Active Directory, provisionamento">/&gt;<Item text="Modelos de lista" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_list" />
+            <Item text="Obter modelo" url="/en-us/api-reference/beta/api/synchronization_synchronizationtemplate_get" />
+        </Item>
       </Item>
     </Item>
-    <Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
+    <Item text="Educação" url="/en-us/api-reference/beta/resources/education-overview">
+		<Item text="Escolas" url="/en-us/api-reference/beta/resources/educationschool">
+			<Item text="Listar escolas" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
+			<Item text="Criar escola" url="/en-us/api-reference/beta/api/educationroot_post_schools" />
+			<Item text="Obter escola" url="/en-us/api-reference/beta/api/educationschool_get" />
+			<Item text="Atualizar escola" url="/en-us/api-reference/beta/api/educationschool_update" />
+			<Item text="Excluir escola" url="/en-us/api-reference/beta/api/educationschool_delete" />
+			<Item text="Listar classes" url="/en-us/api-reference/beta/api/educationschool_list_classes" />
+			<Item text="Criar classe" url="/en-us/api-reference/beta/api/educationschool_post_classes" />
+			<Item text="Remover classe" url="/en-us/api-reference/beta/api/educationschool_delete_classes" />
+			<Item text="Listar usuários" url="/en-us/api-reference/beta/api/educationschool_list_users" />
+			<Item text="Adicionar usuário" url="/en-us/api-reference/beta/api/educationschool_post_users" />
+			<Item text="Remover usuário" url="/en-us/api-reference/beta/api/educationschool_delete_users" />
+		</Item>
+		<Item text="Aulas" url="/en-us/api-reference/beta/resources/educationclass">
+			<Item text="Listar escolas" url="/en-us/api-reference/beta/api/educationclass_list_schools" />
+			<Item text="Listar classes" url="/en-us/api-reference/beta/api/educationroot_list_classes" />
+			<Item text="Criar classe" url="/en-us/api-reference/beta/api/educationroot_post_classes" />
+			<Item text="Obter classe" url="/en-us/api-reference/beta/api/educationclass_get" />
+			<Item text="Atualizar classe" url="/en-us/api-reference/beta/api/educationclass_update" />
+			<Item text="Excluir classe" url="/en-us/api-reference/beta/api/educationclass_delete" />
+			<Item text="Listar professores" url="/en-us/api-reference/beta/api/educationclass_list_teachers" />
+			<Item text="Adicionar professor" url="/en-us/api-reference/beta/api/educationclass_post_teachers" />
+			<Item text="Remover professor" url="/en-us/api-reference/beta/api/educationclass_delete_teachers" />
+			<Item text="Listar membros" url="/en-us/api-reference/beta/api/educationclass_list_members" />
+			<Item text="Adicionar membro" url="/en-us/api-reference/beta/api/educationclass_post_members" />
+			<Item text="Remover membro" url="/en-us/api-reference/beta/api/educationclass_delete_members" />
+			<Item text="Listar tarefas" url="/en-us/api-reference/beta/api/educationclass_list_assignments" />
+			<Item text="Criar tarefa" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />	
+		</Item>
+		<Item text="Usuários" url="/en-us/api-reference/beta/resources/educationuser">
+			<Item text="Listar escolas" url="/en-us/api-reference/beta/api/educationuser_list_schools" />
+			<Item text="Listar classes" url="/en-us/api-reference/beta/api/educationuser_list_classes" />
+			<Item text="Obter usuário" url="/en-us/api-reference/beta/api/educationuser_get" />
+			<Item text="Excluir usuário" url="/en-us/api-reference/beta/api/educationuser_delete" />
+		</Item>
+		<Item text="Tarefa" url="/en-us/api-reference/beta/resources/educationassignment">
+			<Item text="Criar tarefa" url="/en-us/api-reference/beta/api/educationclass_post_assignments" />
+			<Item text="Obter tarefa" url="/en-us/api-reference/beta/api/educationassignment_get" />
+			<Item text="Atualizar tarefa" url="/en-us/api-reference/beta/api/educationassignment_update" />
+			<Item text="Excluir tarefa" url="/en-us/api-reference/beta/api/educationassignment_delete" />
+			<Item text="Listar recursos de tarefa" url="/en-us/api-reference/beta/api/educationassignment_list_resources" />
+			<Item text="Criar recurso de tarefa" url="/en-us/api-reference/beta/api/educationassignment_post_resources" />
+			<Item text="Obter recurso de tarefa" url="/en-us/api-reference/beta/api/educationassignmentresource_get" />
+			<Item text="Atualizar recurso de tarefa" url="/en-us/api-reference/beta/api/educationassignmentresource_update" />
+			<Item text="Excluir recurso da tarefa" url="/en-us/api-reference/beta/api/educationassignmentresource_delete" />
+			<Item text="Publicar tarefa" url="/en-us/api-reference/beta/api/educationassignment_publish" />
+			<Item text="Listar envios da tarefa" url="/en-us/api-reference/beta/api/educationassignment_list_submissions" />
+			<Item text="Obter URL da pasta do recurso" url="/en-us/api-reference/beta/api/educationassignment_getresourcesfolderurl" />
+		</Item>
+		<Item text="Envio" url="/en-us/api-reference/beta/resources/educationsubmission">
+			<Item text="Listar recursos de envio" url="/en-us/api-reference/beta/api/educationsubmission_list_resources" />
+			<Item text="Adicionar recurso de envio" url="/en-us/api-reference/beta/api/educationsubmission_post_resources" />
+			<Item text="Obter recurso de envio" url="/en-us/api-reference/beta/api/educationsubmissionresource_get" />
+			<Item text="Excluir recurso de envio" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
+			<Item text="Obter envio" url="/en-us/api-reference/beta/api/educationsubmission_get" />
+			<Item text="Enviar" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
+			<Item text="Cancelar envio" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="Listar recursos enviados" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
+			<Item text="Obter recurso enviado" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
+			<Item text="Classificar envio" url="/en-us/api-reference/beta/api/educationsubmission_update" />
+			<Item text="Liberar envio" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+		</Item>
+		<Item text="Perfil de sincronização" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile">
+			<Item text="Listar perfil" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
+			<Item text="Criar perfil" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_post" />
+			<Item text="Obter perfil" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_get" />
+			<Item text="Excluir perfil" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_delete" />
+			<Item text="Iniciar sincronização" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_start" />
+			<Item text="Pausar sincronização" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_pause" />
+			<Item text="Retomar sincronização" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Redefinir sincronização" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_resume" />
+			<Item text="Obter URL de Carregamento" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_uploadurl" />
+		</Item>
+		<Item text="Status do perfil de sincronização" url="/en-us/api-reference/beta/resources/educationsynchronizationprofilestatus">
+			<Item text="Obter status de sincronização" url="/en-us/api-reference/beta/api/educationsynchronizationprofilestatus_get" />
+		</Item>
+		<Item text="Erros de sincronização" url="/en-us/api-reference/beta/resources/educationsynchronizationerror">
+			<Item text="Obter erros de sincronização" url="/en-us/api-reference/beta/api/educationsynchronizationerrors_get" />
+		</Item>
+		</Item>
+	<Item text="Excel" url="/en-us/api-reference/beta/resources/excel" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
       <Item text="Pasta de trabalho" url="/en-us/api-reference/beta/resources/workbook" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
-        <Item text="Listar tabelas" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
+        <Item text="Criar sessão" url="/en-us/api-reference/beta/api/workbook_createsession" />
+	    <Item text="Atualizar sessão" url="/en-us/api-reference/beta/api/workbook_refreshsession" />
+	    <Item text="Fechar sessão" url="/en-us/api-reference/beta/api/workbook_closesession" />
+		<Item text="Listar tabelas" url="/en-us/api-reference/beta/api/workbook_list_tables" SEOKeyword="" SEODescription="" />
         <Item text="Listar planilhas" url="/en-us/api-reference/beta/api/workbook_list_worksheets" SEOKeyword="" SEODescription="" />
         <Item text="Listar nomes" url="/en-us/api-reference/beta/api/workbook_list_names" SEOKeyword="" SEODescription="" />
       </Item>
@@ -1076,7 +1326,11 @@
       </Item>
       <Item text="Intervalo" url="/en-us/api-reference/beta/resources/range" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
         <Item text="Obter intervalo" url="/en-us/api-reference/beta/api/range_get" SEOKeyword="" SEODescription="" />
-        <Item text="Mesclar" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
+        <Item text="Intervalo de atualização" url="/en-us/api-reference/beta/api/range_update" />
+	    <Item text="Inserir intervalo" url="/en-us/api-reference/beta/api/range_insert" />
+	    <Item text="Obter formato de intervalo" url="/en-us/api-reference/beta/api/rangeformat_get" />
+	    <Item text="Atualizar formato de intervalo" url="/en-us/api-reference/beta/api/rangeformat_update" />
+		<Item text="Mesclar" url="/en-us/api-reference/beta/api/range_merge" SEOKeyword="" SEODescription="" />
         <Item text="Desfazer mesclagem" url="/en-us/api-reference/beta/api/range_unmerge" SEOKeyword="" SEODescription="" />
         <Item text="Limpar" url="/en-us/api-reference/beta/api/range_clear" SEOKeyword="" SEODescription="" />
         <Item text="Excluir" url="/en-us/api-reference/beta/api/range_delete" SEOKeyword="" SEODescription="" />
@@ -1085,20 +1339,29 @@
         <Item text="Adicionar tabela" url="/en-us/api-reference/beta/api/tablecollection_add" SEOKeyword="" SEODescription="" />
         <Item text="Obter tabela" url="/en-us/api-reference/beta/api/table_get" SEOKeyword="" SEODescription="" />
         <Item text="Atualizar tabela" url="/en-us/api-reference/beta/api/table_update" SEOKeyword="" SEODescription="" />
-        <Item text="Obter intervalo" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
+        <Item text="Excluir tabela" url="/en-us/api-reference/beta/api/table_delete" />
         <Item text="Listar linhas" url="/en-us/api-reference/beta/api/table_list_rows" SEOKeyword="" SEODescription="" />
-        <Item text="Listar colunas" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+        <Item text="Criar linha" url="/en-us/api-reference/beta/api/table_post_rows" />
+		<Item text="Listar colunas" url="/en-us/api-reference/beta/api/table_list_columns" SEOKeyword="" SEODescription="" />
+		<Item text="Criar coluna" url="/en-us/api-reference/beta/api/table_post_columns" />
+		<Item text="Obter intervalo" url="/en-us/api-reference/beta/api/table_range" SEOKeyword="" SEODescription="" />
       </Item>
       <Item text="Gráfico" url="/en-us/api-reference/beta/resources/chart" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
-        <Item text="Obter gráfico" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
-        <Item text="Obter imagem do gráfico" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
+        <Item text="Gráficos de lista" url="/en-us/api-reference/beta/api/chart_list" />
+		<Item text="Obter gráfico" url="/en-us/api-reference/beta/api/chart_get" SEOKeyword="" SEODescription="" />
+        <Item text="Atualizar gráfico" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
+		<Item text="Excluir gráfico" url="/en-us/api-reference/beta/api/chart_delete" />
+		<Item text="Adicionar gráfico" url="/en-us/api-reference/beta/api/chartcollection_add" />
+		<Item text="Obter imagem do gráfico" url="/en-us/api-reference/beta/api/chart_image" SEOKeyword="" SEODescription="" />
         <Item text="Redefinir dados" url="/en-us/api-reference/beta/api/chart_setdata" SEOKeyword="" SEODescription="" />
         <Item text="Definir dados de posição" url="/en-us/api-reference/beta/api/chart_setposition" SEOKeyword="" SEODescription="" />
-        <Item text="Atualizar gráfico" url="/en-us/api-reference/beta/api/chart_update" SEOKeyword="" SEODescription="" />
       </Item>
-      <Item text="Nameditem" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
-        <Item text="Listar nameditem" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
-        <Item text="Listar intervalo" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
+      <Item text="Item nomeado" url="/en-us/api-reference/beta/resources/nameditem" SEOKeyword="API do Excel, API do Microsoft Graph, API do Excel" SEODescription="">
+        <Item text="Listar item nomeado" url="/en-us/api-reference/beta/api/nameditem_get" SEOKeyword="" SEODescription="" />
+        <Item text="Obter item nomeado" url="/en-us/api-reference/beta/api/nameditem_get" />
+	    <Item text="Atualizar item nomeado" url="/en-us/api-reference/beta/api/nameditem_update" />
+	    <Item text="Adicionar item nomeado" url="/en-us/api-reference/beta/api/nameditem_add" />
+		<Item text="Listar intervalo" url="/en-us/api-reference/beta/api/nameditem_range" SEOKeyword="" SEODescription="" />
       </Item>
     </Item>
     <Item text="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
@@ -1239,6 +1502,14 @@
         </Item>
         <Item text="Informações sobre criptografia de arquivo" url="/en-us/api-reference/beta/resources/intune_apps_fileencryptioninfo" />
         <Item text="Tipo de dispositivo iOS" url="/en-us/api-reference/beta/resources/intune_apps_iosdevicetype" />
+        <Item text="Atribuição da configuração de provisionamento do aplicativo LOB do iOS" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_ioslobappprovisioningconfigurationassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_ioslobappprovisioningconfigurationassignment_update" />
+          <Item text="atribuir ação" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_ioslobappprovisioningconfiguration_assign" />
+        </Item>
         <Item text="Aplicativo LOB do iOS" url="/en-us/api-reference/beta/resources/intune_apps_ioslobapp">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_ioslobapp_delete" />
@@ -1305,6 +1576,35 @@
           <Item text="Listar os estados de instalação de dispositivos" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_deviceinstallstate" />
           <Item text="Listar resumos de estado de instalação de usuários" url="/en-us/api-reference/beta/api/intune_books_iosvppebook_list_userinstallstatesummary" />
         </Item>
+        <Item text="Atribuição de livros eletrônicos do VPP do iOS" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_iosvppebookassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_books_iosvppebookassignment_update" />
+        </Item>
+        <Item text="Aplicativo LOB para macOS" url="en-us/api-reference/beta/resources/intune_apps_macoslobapp">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_macoslobapp_update" />
+        </Item>
+        <Item text="Aplicativo do macOS Office Suite" url="en-us/api-reference/beta/resources/intune_apps_macosofficesuiteapp">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_macosofficesuiteapp_update" />
+        </Item>
+        <Item text="Atribuição da configuração do aplicativo móvel do dispositivo gerenciado" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationassignment_update" />
+          <Item text="atribuir ação" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
+        </Item>
         <Item text="Resumo do dispositivo de configuração do aplicativo móvel do dispositivo gerenciado" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfigurationdevicesummary">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_get" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfigurationdevicesummary_update" />
@@ -1319,7 +1619,29 @@
           <Item text="Listar atribuições de grupo do livro eletrônico" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_ebookgroupassignment" />
           <Item text="Listar os estados de instalação de dispositivos" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_deviceinstallstate" />
           <Item text="Listar resumos de estado de instalação de usuários" url="/en-us/api-reference/beta/api/intune_books_managedebook_list_userinstallstatesummary" />
-          <Item text="Atribuir" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign" />
+          <Item text="Atribuir ação" url="/en-us/graph/docs/api-reference/beta/api/intune_books_managedebook_assign" />
+        </Item>
+        <Item text="Atribuição de livros eletrônicos gerenciados" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_books_managedebookassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_books_managedebookassignment_update" />
+        </Item>
+        <Item text="Aplicativo da Microsoft Store para Empresas" url="en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update" />
+        </Item>
+        <Item text="Atribuição de aplicativos móveis" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_apps_mobileappassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_apps_mobileappassignment_update" />
+          <Item text="atribuir ação" url="/en-us/graph/docs/api-reference/beta/api/intune_apps_mobileapp_assign" />
         </Item>
         <Item text="Configuração do aplicativo móvel" url="/en-us/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="Atribuir" url="/en-us/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign" />
@@ -1643,6 +1965,13 @@
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsacceptancestatus_update" />
         </Item>
+        <Item text="Atribuição de termos e condições" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_companyterms_termsandconditionsassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsassignment_update" />
+        </Item>
         <Item text="Atribuição de grupo dos termos e das condições" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditionsgroupassignment">
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditionsgroupassignment_get" />
@@ -1652,6 +1981,20 @@
         </Item>
       </Item>
       <Item text="Registro corporativo" url="/en-us/api-reference/beta/resources/intune_corporate_enrollment_conceptual">
+        <Item text="Perfil de implantação do Windows Autopilot do Active Directory" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_enrollment_activedirectorywindowsautopilotdeploymentprofile_update" />
+        </Item>
+        <Item text="Perfil de implantação do Windows Autopilot do Azure AD" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_azureadwindowsautopilotdeploymentprofile">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_enrollment_azureadwindowsautopilotdeploymentprofile_update" />
+        </Item>
         <Item text="Perfil de registro do DEP" url="/en-us/api-reference/beta/resources/intune_corpenrollment_depenrollmentprofile">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_corpenrollment_depenrollmentprofile_delete" />
@@ -1743,6 +2086,13 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidcustomconfiguration_update" />
         </Item>
+        <Item text="Dispositivo de bloqueio de ação local da conformidade de dispositivos Android com senha" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androiddevicecompliancelocalactionlockdevicewithpasscode_update" />
+        </Item>
         <Item text="Configuração de perfil de email do EAS do Android" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androideasemailprofileconfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_androideasemailprofileconfiguration_delete" />
@@ -1812,6 +2162,15 @@
           <Item text="Obter a visão geral do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="Obter a visão geral do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_deviceconfigurationuseroverview" />
           <Item text="Obter base de perfil de certificado do EAS do Android for Work" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkeasemailprofilebase_get_androidforworkcertificateprofilebase" />
+        </Item>
+        <Item text="Perfil de registro do Android for Work" url="/en-us/graph/docs/api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_update" />
+          <Item text="Criar ação de token" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_createtoken" />
+          <Item text="Revogar ação de token" url="/en-us/api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketokens" />
         </Item>
         <Item text="Configuração de Wi-Fi corporativa do Android for Work" url="/en-us/api-reference/beta/resources/intune_deviceconfig_androidforworkenterprisewificonfiguration">
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_androidforworkenterprisewificonfiguration_list" />
@@ -2017,6 +2376,13 @@
         </Item>
         <Item text="Item da lista do aplicativo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applistitem" />
         <Item text="Item da lista de conformidade do aplicativo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_appscompliancelistitem" />
+        <Item text="Evento de auditoria" url="en-us/api-reference/beta/resources/intune_auditing_auditevent">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_auditing_auditevent_update" />
+        </Item>
         <Item text="Credenciais de administrador de PKI da nuvem" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkiadministratorcredentials" />
         <Item text="Assinatura de PKI da nuvem" url="/en-us/api-reference/beta/resources/intune_deviceconfig_cloudpkisubscription">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_cloudpkisubscription_create" />
@@ -2077,6 +2443,7 @@
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get" />
           <Item text="Obter visão geral de conformidade do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_get_devicecompliancedeviceoverview" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list" />
+          <Item text="atribuir ação" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_assign" />
           <Item text="Listar o status de conformidade do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancedevicestatus" />
           <Item text="Listar atribuição de grupo da política de conformidade do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancepolicygroupassignment" />
           <Item text="Listar ação de conformidade agendada do dispositivo para a regra" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicecompliancepolicy_list_devicecompliancescheduledactionforrule" />
@@ -2142,7 +2509,7 @@
           <Item text="Atribuir" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assign" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_get" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_list" />
-
+          <Item text="assignedAccessMultiModeProfiles" url="/en-us/graph/docs/api-reference/beta/api/intune_deviceconfig_deviceconfiguration_assignedaccessmultimodeprofiles" />
           <Item text="windowsPrivacyAccessControls" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/api/intune_deviceconfig_deviceconfiguration_windowsprivacyaccesscontrols" />
         </Item>
         <Item text="Atribuição de configuração do dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationassignment">
@@ -2215,6 +2582,24 @@
           <Item text="Listar atribuição de grupo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationgroupassignment" />
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_editionupgradeconfiguration_update" />
+        </Item>
+        <Item text="Evento de solução de problemas de gerenciamento de dispositivo" url="en-us/api-reference/beta/resources/intune_troubleshooting_devicemanagementtroubleshootingevent">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_troubleshooting_devicemanagementtroubleshootingevent_update" />
+        </Item>
+        <Item text="Ajuste de configuração de dispositivo" url="en-us/api-reference/beta/resources/intune_deviceconfig_devicesetupconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_devicesetupconfiguration_get" />
+        </Item>
+        <Item text="Evento de solução de problemas de registro" url="en-us/api-reference/beta/resources/intune_troubleshooting_enrollmenttroubleshootingevent">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_troubleshooting_enrollmenttroubleshootingevent_update" />
         </Item>
         <Item text="Uso estendido de chave" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage" />
         <Item text="Base de perfil de certificado do iOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase">
@@ -2411,7 +2796,7 @@
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_list" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_localizednotificationmessage_update" />
         </Item>
-        <Item text="Base de perfil de certificado do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
+        <Item text="Base de perfil de certificado do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscertificateprofilebase">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get" />
           <Item text="Obter visão geral da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list" />
@@ -2419,7 +2804,7 @@
           <Item text="Listar atribuição de grupo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationgroupassignment" />
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscertificateprofilebase_list_deviceconfigurationuserstatus" />
         </Item>
-        <Item text="Política de conformidade do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
+        <Item text="Política de conformidade do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscompliancepolicy">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_get" />
@@ -2431,7 +2816,7 @@
           <Item text="Listar o status de usuário de conformidade do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscompliancepolicy_update" />
         </Item>
-        <Item text="Configuração personalizada do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
+        <Item text="Configuração personalizada do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoscustomconfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoscustomconfiguration_get" />
@@ -2454,7 +2839,7 @@
           <Item text="Obter a visão geral do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationdeviceoverview" />
           <Item text="Obter a visão geral do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosdevicefeaturesconfiguration_get_deviceconfigurationuseroverview" />
         </Item>
-        <Item text="Configuração de Wi-Fi corporativa do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
+        <Item text="Configuração de Wi-Fi corporativa do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosenterprisewificonfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_get" />
@@ -2467,7 +2852,7 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosenterprisewificonfiguration_update" />
         </Item>
-        <Item text="Configuração geral do dispositivo MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
+        <Item text="Configuração geral do dispositivo macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_get" />
@@ -2478,7 +2863,7 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosgeneraldeviceconfiguration_update" />
         </Item>
-        <Item text="Perfil de Certificado do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
+        <Item text="Perfil de Certificado do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosscepcertificateprofile">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_get" />
@@ -2490,7 +2875,7 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosscepcertificateprofile_update" />
         </Item>
-        <Item text="Certificado raiz confiável do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
+        <Item text="Certificado raiz confiável do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macostrustedrootcertificate">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_get" />
@@ -2501,7 +2886,7 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macostrustedrootcertificate_update" />
         </Item>
-        <Item text="Configuração de VPN do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
+        <Item text="Configuração de VPN do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macosvpnconfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_get" />
@@ -2513,7 +2898,7 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macosvpnconfiguration_update" />
         </Item>
-        <Item text="Configuração de Wi-Fi do MacOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
+        <Item text="Configuração de Wi-Fi do macOS" url="/en-us/api-reference/beta/resources/intune_deviceconfig_macoswificonfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_macoswificonfiguration_get" />
@@ -2530,6 +2915,7 @@
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_delete" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_manageddevicecertificatestate_update" />
+          <Item text="updateWindowsDeviceAccount" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount" />
           <Item text="Ação windowsDefenderScan" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderscan" />
           <Item text="windowsDefenderUpdateSignatures" url="/en-us/graph/docs/api-reference/beta/api/api/intune_devices_manageddevice_windowsdefenderupdatesignatures" />
         </Item>
@@ -2542,6 +2928,13 @@
         <Item text="Classificação de conteúdo de mídia da Nova Zelândia" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingnewzealand" />
         <Item text="Classificação de conteúdo de mídia do Reino Unido" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom" />
         <Item text="Classificação de conteúdo de mídia dos Estados Unidos" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates" />
+        <Item text="Conector NDES" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_update" />
+        </Item>
         <Item text="Modelo de mensagem de notificação." url="/en-us/api-reference/beta/resources/intune_deviceconfig_notificationmessagetemplate">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_get" />
           <Item text="Listar mensagem de notificação localizada" url="/en-us/api-reference/beta/api/intune_deviceconfig_notificationmessagetemplate_list_localizednotificationmessage" />
@@ -2682,6 +3075,13 @@
           <Item text="Listar o status de usuário de conformidade do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10mobilecompliancepolicy_update" />
         </Item>
+        <Item text="Perfil de certificado de importação do PFX do Windows 10" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10pfximportcertificateprofile">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pfximportcertificateprofile_update" />
+        </Item>
         <Item text="Perfil de certificado dos PKCS do Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10pkcscertificateprofile">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_delete" />
@@ -2693,6 +3093,7 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10pkcscertificateprofile_update" />
         </Item>
+        <Item text="Servidor proxy do Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver" />
         <Item text="Configuração de avaliação segura do Windows 10 " url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10secureassessmentconfiguration_delete" />
@@ -2727,7 +3128,6 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10vpnconfiguration_update" />
         </Item>
-        <Item text="Servidor proxy do Windows 10" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows10vpnproxyserver" />
         <Item text="Base de perfil de certificado do Windows 8.1" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windows81certificateprofilebase">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get" />
           <Item text="Obter visão geral da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81certificateprofilebase_get_deviceconfigurationdeviceoverview" />
@@ -2805,6 +3205,13 @@
           <Item text="Listar o status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_list_deviceconfigurationuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows81wifiimportconfiguration_update" />
         </Item>
+        <Item text="Perfil de acesso atribuído pelo Windows" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsassignedaccessprofile">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsassignedaccessprofile_update" />
+        </Item>
         <Item text="Base de perfil de certificado do Windows" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase">
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_list" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get" />
@@ -2814,6 +3221,13 @@
           <Item text="Obter a visão geral do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationdeviceoverview" />
           <Item text="Obter a visão geral do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowscertificateprofilebase_get_deviceconfigurationuseroverview" />
         </Item>
+        <Item text="Configuração de ingresso no domínio do Windows" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windowsdomainjoinconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdomainjoinconfiguration_update" />
+        </Item>
         <Item text="Informações sobre malware para Windows" url="/en-us/api-reference/beta/resources/intune_endpointprotection_windowsmalwareinformation">
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_get" />
@@ -2821,6 +3235,20 @@
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_delete" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_update" />
           <Item text="Listar os estados de proteção do Windows" url="/en-us/api-reference/beta/api/intune_endpointprotection_windowsmalwareinformation_list_windowsprotectionstate" />
+        </Item>
+        <Item text="Configuração de proteção avançada contra ameaças do Windows Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
+            <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
+          <Item text="Listar atribuições de grupo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment" />
+          <Item text="Listar os status do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus" />
+          <Item text="Listar os status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus" />
+          <Item text="Obter a visão geral do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview" />
+          <Item text="Obter a visão geral do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview" />
+          <Item text="Listar resumos de dispositivo de estado de configuração" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary" />
+          <Item text="Obter um resumo do estado do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary" />
         </Item>
         <Item text="Base de perfil de certificado do Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81certificateprofilebase">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81certificateprofilebase_get" />
@@ -2841,20 +3269,6 @@
           <Item text="Listar ação de agendamento de conformidade do dispositivo para a regra" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecompliancescheduledactionforrule" />
           <Item text="Listar o status de usuário de conformidade do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_list_devicecomplianceuserstatus" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81compliancepolicy_update" />
-        </Item>
-        <Item text="Configuração de proteção avançada contra ameaças do Windows Defender" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration">
-            <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list" />
-          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get" />
-          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_create" />
-          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_delete" />
-          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_update" />
-          <Item text="Listar atribuições de grupo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationgroupassignment" />
-          <Item text="Listar os status do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationdevicestatus" />
-          <Item text="Listar os status do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_deviceconfigurationuserstatus" />
-          <Item text="Obter a visão geral do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdeviceoverview" />
-          <Item text="Obter a visão geral do usuário da configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationuseroverview" />
-          <Item text="Listar resumos de dispositivo de estado de configuração" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_list_settingstatedevicesummary" />
-          <Item text="Obter um resumo do estado do dispositivo de configuração do dispositivo" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration_get_deviceconfigurationdevicestatesummary" />
         </Item>
         <Item text="Configuração personalizada do Windows Phone 8.1" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsphone81customconfiguration">
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsphone81customconfiguration_create" />
@@ -3173,10 +3587,8 @@
         </Item>
         <Item text="Política de aplicativo gerenciado" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicy">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get" />
-          <Item text="Obter resumo da implantação da política de aplicativo gerenciado" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_get_managedapppolicydeploymentsummary" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list" />
-          <Item text="Listar implantação do identificador de aplicativo móvel" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_list_mobileappidentifierdeployment" />
-          <Item text="Atualizar implantação do identificador de aplicativo móvel" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicy_updatemobileappidentifierdeployments" />
+          <Item text="ação targetApps" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedapppolicy_targetapps" />
         </Item>
         <Item text="Resumo da implantação da política de aplicativo gerenciado" url="/en-us/api-reference/beta/resources/intune_mam_managedapppolicydeploymentsummary">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_managedapppolicydeploymentsummary_get" />
@@ -3188,6 +3600,7 @@
           <Item text="Obter resumo da implantação da política de aplicativo gerenciado" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_get_managedapppolicydeploymentsummary" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list" />
           <Item text="Listar implantação do identificador de aplicativo móvel" url="/en-us/api-reference/beta/api/intune_mam_managedappprotection_list_mobileappidentifierdeployment" />
+          <Item text="ação targetApps" url="/en-us/graph/docs/api-reference/beta/api/intune_mam_managedappprotection_targetapps" />
         </Item>
         <Item text="Registro de aplicativo gerenciado" url="/en-us/api-reference/beta/resources/intune_mam_managedappregistration">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_managedappregistration_get" />
@@ -3215,6 +3628,13 @@
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_list" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_mam_mobileappidentifierdeployment_update" />
         </Item>
+        <Item text="Aplicativo móvel gerenciado" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedmobileapp">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_mam_managedmobileapp_update" />
+        </Item>
         <Item text="Política de Proteção de Informações do Windows MDM" url="/en-us/api-reference/beta/resources/intune_mam_mdmwindowsinformationprotectionpolicy">
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_list" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_mdmwindowsinformationprotectionpolicy_get" />
@@ -3231,13 +3651,9 @@
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_delete" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get" />
-          <Item text="Obter resumo da implantação da política de aplicativo gerenciado" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_get_managedapppolicydeploymentsummary" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list" />
-          <Item text="Listar objeto de diretório" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_directoryobject" />
-          <Item text="Listar implantação do identificador de aplicativo móvel" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_list_mobileappidentifierdeployment" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_update" />
-          <Item text="Atualizar implantações do identificador de aplicativo móvel" url="/en-us/api-reference/beta/api/intune_mam_targetedManagedAppConfiguration_updatemobileappidentifierdeployments" />
-          <Item text="Atualizar grupos de segurança direcionada" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_updatetargetedsecuritygroups" />
+          <Item text="ação targetApps" url="en-us/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_targetapps" />
         </Item>
         <Item text="Proteção de aplicativo gerenciado direcionado" url="/en-us/api-reference/beta/resources/intune_mam_targetedmanagedappprotection">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_targetedmanagedappprotection_get" />
@@ -3327,6 +3743,19 @@
             <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_list" />
             <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicecategory_update" />
         </Item>
+        <Item text="Configuração de registro do dispositivo" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_get" />
+          <Item text="atribuir ação" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_assign" />
+          <Item text="ação setPriority" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentconfiguration_setpriority" />
+        </Item>
+        <Item text="Configuração de limite do registro do dispositivo" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentlimitconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentlimitconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta" />
+        </Item>
         <Item text="Restrições de plataforma do registro de dispositivo" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceenrollmentplatformrestrictions" />
         <Item text="Geolocalização de dispositivo" url="/en-us/api-reference/beta/resources/intune_onboarding_devicegeolocation" />
         <Item text="Conector do Exchange de gerenciamento de dispositivo" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeconnector">
@@ -3337,12 +3766,34 @@
           <Item text="Sincronizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_sync" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeconnector_update" />
         </Item>
+        <Item text="Configuração das restrições da plataforma de registro do dispositivo" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentplatformrestrictionsconfiguration_update" />
+        </Item>
+        <Item text="Configuração do Windows Hello para Empresas do registro do dispositivo" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_deviceenrollmentwindowshelloforbusinessconfiguration_update" />
+        </Item>
         <Item text="Política local do Exchange para gerenciamento de dispositivo" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementexchangeonpremisespolicy">
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get" />
           <Item text="Obter configuração de acesso condicional local" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_get_onpremisesconditionalaccesssettings" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementexchangeonpremisespolicy_update" />
         </Item>
+        <Item text="Parceiro de gerenciamento do dispositivo" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_devicemanagementpartner">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_devicemanagementpartner_update" />
+        </Item>
         <Item text="Resumo do sistema operacional do dispositivo" url="/en-us/api-reference/beta/resources/intune_onboarding_deviceoperatingsystemsummary" />
+        <Item text="Atribuição de configuração do registro" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_enrollmentconfigurationassignment">
         <Item text="Informações de hardware" url="/en-us/api-reference/beta/resources/intune_onboarding_hardwareinformation" />
         <Item text="Marca Intune" url="/en-us/api-reference/beta/resources/intune_onboarding_intunebrand" />
         <Item text="Resultado de ação de dispositivo localizado" url="/en-us/api-reference/beta/resources/intune_onboarding_locatedeviceactionresult" />
@@ -3381,6 +3832,45 @@
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get" />
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_update" />
+        </Item>
+      <Item text="Token VPP" url="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_onboarding_vpptoken">
+        <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_list" />
+        <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_get" />
+        <Item text="Criar" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_create" />
+        <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_delete" />
+        <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_update" />
+        <Item text="Ação revokeLicenses" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_revokelicenses" />
+        <Item text="ação syncLicenses" url="/en-us/api-reference/beta/api/intune_onboarding_vpptoken_synclicenses" />
+      </Item>
+        <Item text="Configuração da página de conclusão do registro do Windows 10" url="en-us/graph/docs/api-reference/beta/api/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_onboarding_windows10enrollmentcompletionpageconfiguration_update" />
+        </Item>
+        <Item text="Configuração de limite de rede do Windows 10" url="en-us/graph/docs/api-reference/beta/api/resources/intune_deviceconfig_windows10networkboundaryconfiguration">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_deviceconfig_windows10networkboundaryconfiguration_update" />
+        </Item>
+        <Item text="Perfil de implantação do Windows Autopilot" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeploymentprofile">
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_get" />
+          <Item text="atribuir ação" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeploymentprofile_assign" />
+        </Item>
+        <Item text="Identidade do dispositivo do Windows Autopilot" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotdeviceidentity">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update" />
+        </Item>
+        <Item text="Configurações do Windows Autopilot" url="en-us/graph/docs/api-reference/beta/api/resources/intune_enrollment_windowsautopilotsettings">
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_get" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_update" />
+          <Item text="ação sync" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotsettings_sync" />
         </Item>
       </Item>
       <Item text="Controle de acesso baseado na função" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
@@ -3422,6 +3912,20 @@
           <Item text="Listar atribuição de função" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list_roleassignment" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_update" />
         </Item>
+        <Item text="Atribuição de função de gerenciamento de aplicativo e dispositivo" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_update" />
+        </Item>
+        <Item text="Definição de função de gerenciamento de aplicativo e dispositivo" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroledefinition">
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_list" />
+          <Item text="Obter" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_get" />
+          <Item text="Criar" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_create" />
+          <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_delete" />
+          <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroledefinition_update" />
+        </Item>
       </Item>
       <Item text="Gerenciamento de despesas com telecomunicações" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">
         <Item text="Gerenciamento de dispositivo" url="/en-us/api-reference/beta/resources/intune_tem_devicemanagement">
@@ -3439,7 +3943,8 @@
         </Item>
       </Item>
     </Item>
-    <Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="API de Equipes, APi do Microsoft Graph, API do Microsoft Teams" SEODescription="Representa um Grupo do Azure Active Directory. Herdado do DirectoryObject.">
+    </Item>
+	<Item text="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="API de Equipes, API do Microsoft Graph, API do Microsoft Teams" SEODescription="Representa um Grupo do Azure Active Directory. Herdado do DirectoryObject.">
       <Item text="Grupo (equipe)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="API de Grupos, API do Microsoft Graph, API de Grupos, API do Microsoft Teams, API de Equipes" SEODescription="Representa um Grupo do Azure Active Directory. Herdado do DirectoryObject.">
         <Item text="Obter grupo" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Obter grupo, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar as propriedades e os relacionamentos do objeto group." />
         <Item text="Listar grupos" url="/en-us/api-reference/beta/api/group_list" SEOKeyword="Listar grupos, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos group." />
@@ -3461,9 +3966,14 @@
         <Item text="Excluir permanentemente um grupo" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restaurar grupo excluído" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
-      <Item text="Foto" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="pessoas do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
-        <Item text="Obter foto" url="/en-us/api-reference/v1.0/api/profilephoto_get" />
-        <Item text="Atualizar foto" url="/en-us/api-reference/v1.0/api/profilephoto_update" />
+      <Item text="Equipe" url="/en-us/api-reference/beta/resources/team">
+		<Item text="Criar equipe" url="/en-us/api-reference/beta/api/team_put_teams" />
+		<Item text="Obter equipe" url="/en-us/api-reference/beta/api/team_get" />
+		<Item text="Atualizar equipe" url="/en-us/api-reference/beta/api/team_update" />
+	  </Item>
+	  <Item text="Foto" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="pessoas do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
+        <Item text="Obter foto" url="/en-us/api-reference/beta/api/profilephoto_get" />
+        <Item text="Atualizar foto" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
       <Item text="Canal" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="API do canal, API do Microsoft Graph, API do canal" SEODescription="">
         <Item text="Listar canais" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="Listar canais, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos channel." />
@@ -3489,7 +3999,7 @@
       </Item>
       <Item text="Unidade" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Obter unidade" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
-        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
       </Item>
       <Item text="Planos" url="/en-us/api-reference/beta/resources/plannerplan" SEOKeyword="calendário de grupo, API do Microsoft Graph, API de grupo" SEODescription="">
         <Item text="Listar planos" url="/en-us/api-reference/beta/api/plannergroup_list_plans" SEOKeyword="Listar planos, API do Microsoft Graph, API de grupo" SEODescription="Recuperar uma lista de objetos plan." />
@@ -3513,37 +4023,42 @@
       <Item text="Unidades" url="/en-us/api-reference/beta/resources/drive" SEOKeyword="unidade do usuário, API do Microsoft Graph, API de usuário" SEODescription="API de Unidade">
         <Item text="Obter unidade" url="/en-us/api-reference/beta/api/drive_get" SEOKeyword="Obter unidade, API do Microsoft Graph, API de unidade" SEODescription="Recuperar as propriedades e os relacionamentos do objeto da unidade." />
         <Item text="Listar unidades" url="/en-us/api-reference/beta/api/drive_list" SEOKeyword="Listar unidades, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
         <Item text="Arquivos recentes" url="/en-us/api-reference/beta/api/drive_recent" SEOKeyword="Arquivos recentes, API do Microsoft Graph, API da unidade" SEODescription="Obter arquivos recentes." />
         <Item text="Arquivos compartilhados" url="/en-us/api-reference/beta/api/drive_sharedwithme" SEOKeyword="Compartilhado com arquivos recentes, API do Microsoft Graph, API da unidade" SEODescription="Obter arquivos compartilhados comigo." />
-        <Item text="Obter pasta especial" url="/en-us/api-reference/beta/api/drive_special" SEOKeyword="Pastas especiais, API do Microsoft Graph, API da unidade" SEODescription="Obter pastas especiais." />
+        <Item text="Obter pasta especial" url="/en-us/api-reference/beta/api/drive_get_specialfolder" SEOKeyword="Pastas especiais, API do Microsoft Graph, API da unidade" SEODescription="Obter pastas especiais." />
       </Item>
       <Item text="DriveItems" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="API do item, API do Microsoft Graph, API do item" SEODescription="O recurso de item representa um item contido em uma unidade, como um arquivo ou pasta.">
-        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/item_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
-        <Item text="Obter item" url="/en-us/api-reference/beta/api/item_get" SEOKeyword="Obter item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Recuperar as propriedades e os relacionamentos do objeto de item." />
-        <Item text="Obter miniaturas" url="/en-us/api-reference/beta/api/item_list_thumbnails" SEOKeyword="Obter miniaturas, API do Microsoft Graph, API do thumbnailset" SEODescription="" />
-        <Item text="Criar pasta" url="/en-us/api-reference/beta/api/item_post_children" SEOKeyword="Criar filhos, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Use esta API para criar novos filhos." />
-        <Item text="Atualizar item" url="/en-us/api-reference/beta/api/item_update" SEOKeyword="Atualizar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Atualizar as propriedades do objeto de item." />
-        <Item text="Excluir item" url="/en-us/api-reference/beta/api/item_delete" SEOKeyword="Excluir item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Exclua o item." />
-        <Item text="Mover item" url="/en-us/api-reference/beta/api/item_move" SEOKeyword="Mover item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-        <Item text="Copiar item" url="/en-us/api-reference/beta/api/item_copy" SEOKeyword="Copiar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-        <Item text="Baixar" url="/en-us/api-reference/beta/api/item_downloadcontent" SEOKeyword="Baixar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-        <Item text="Carregar" url="/en-us/api-reference/beta/api/item_uploadcontent" SEOKeyword="Carregar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-        <Item text="Carregamento retomável" url="/en-us/api-reference/beta/api/item_createuploadsession" SEOKeyword="carregamento de arquivo grande, carregamento retomável, API do Microsoft Graph, API da Unidade do OneDrive, fragmentos, arquivos" />
-        <Item text="Pesquisar itens" url="/en-us/api-reference/beta/api/item_search" SEOKeyword="Pesquisar itens, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
-        <Item text="Controlar alterações" url="/en-us/api-reference/beta/api/item_delta" SEOKeyword="Controlar alterações, API do Microsoft Graph" SEODescription="" />
+        <Item text="Listar filhos" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="Listar itens, API do Microsoft Graph, API da unidade" SEODescription="Recuperar uma lista de objetos item." />
+        <Item text="Obter item" url="/en-us/api-reference/beta/api/driveitem_get" SEOKeyword="Obter item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Recuperar as propriedades e os relacionamentos do objeto de item." />
+        <Item text="Obter miniaturas" url="/en-us/api-reference/beta/api/driveitem_list_thumbnails" SEOKeyword="Obter miniaturas, API do Microsoft Graph, API do thumbnailset" SEODescription="" />
+        <Item text="Criar pasta" url="/en-us/api-reference/beta/api/driveitem_post_children" SEOKeyword="Criar filhos, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Use esta API para criar novos filhos." />
+        <Item text="Atualizar item" url="/en-us/api-reference/beta/api/driveitem_update" SEOKeyword="Atualizar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Atualizar as propriedades do objeto de item." />
+        <Item text="Excluir item" url="/en-us/api-reference/beta/api/driveitem_delete" SEOKeyword="Excluir item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="Exclua o item." />
+        <Item text="Mover item" url="/en-us/api-reference/beta/api/driveitem_move" SEOKeyword="Mover item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+        <Item text="Copiar item" url="/en-us/api-reference/beta/api/driveitem_copy" SEOKeyword="Copiar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+        <Item text="Baixar o arquivo" url="/en-us/api-reference/beta/api/driveitem_get_content" SEOKeyword="Baixar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+		<Item text="Converter arquivo" url="/en-us/api-reference/beta/api/driveitem_get_content_format" SEOKeyword="Baixar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+        <Item text="Carregar" url="/en-us/api-reference/beta/api/driveitem_put_content" SEOKeyword="Carregar item, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+        <Item text="Carregamento retomável" url="/en-us/api-reference/beta/api/driveitem_createuploadsession" SEOKeyword="carregamento de arquivo grande, carregamento retomável, API do Microsoft Graph, API da Unidade do OneDrive, fragmentos, arquivos" />
+        <Item text="Pesquisar itens" url="/en-us/api-reference/beta/api/driveitem_search" SEOKeyword="Pesquisar itens, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+        <Item text="Controlar alterações" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="Controlar alterações, API do Microsoft Graph" SEODescription="" />
       </Item>
       <Item text="Permissões" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Criar item de link, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="">
-        <Item text="Criar um link de compartilhamento" url="/en-us/api-reference/beta/api/item_createlink" SEOKeyword="Criar item de link, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
+        <Item text="Criar um link de compartilhamento" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="Criar item de link, API do Microsoft Graph, API da Unidade do OneDrive" SEODescription="" />
         <Item text="Usar links de compartilhamento" url="/en-us/api-reference/beta/api/shares_get" SEOKeyword="usar links de compartilhamento, API do Microsoft Graph, API da Unidade do OneDrive, compartilhamentos, compartilhando" SEODescription="" />
-        <Item text="Permissões de lista" url="/en-us/api-reference/beta/api/item_list_permissions" SEOKeyword="Lista, permissões enumeradas em um item, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
-        <Item text="Adicionar permissões" url="/en-us/api-reference/beta/api/item_invite" SEOKeyword="Adicionar permissão, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
+        <Item text="Permissões de lista" url="/en-us/api-reference/beta/api/driveitem_list_permissions" SEOKeyword="Lista, permissões enumeradas em um item, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
+        <Item text="Adicionar permissões" url="/en-us/api-reference/beta/api/driveitem_invite" SEOKeyword="Adicionar permissão, convite, compartilhamento, API do Microsoft Graph" SEODescription="" />
         <Item text="Obter permissão" url="/en-us/api-reference/beta/api/permission_get" SEOKeyword="Obter permissão, API do Microsoft Graph, API de permissão" SEODescription="Recuperar as propriedades e os relacionamentos do objeto permission." />
         <Item text="Atualizar permissão" url="/en-us/api-reference/beta/api/permission_update" SEOKeyword="Atualizar permissão, API do Microsoft Graph, API de permissão" SEODescription="Atualizar as propriedades do objeto permission." />
         <Item text="Excluir permissão" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Excluir permissão, API do Microsoft Graph, API de permissão" SEODescription="Excluir a permissão." />
       </Item>
     </Item>
-    <Item text="OneNote" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="API do OneNote, API do Microsoft Graph" SEODescription="">
+    <Item text="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use o Microsoft Graph para integrar seus aplicativos com o OneNote.">
+      <Item text="HTML de entrada e saída" url="/en-us/concepts/onenote_input_output_html" SEODescription="Entenda o HTML de entrada e saída ao criar, atualizar ou analisar o conteúdo retornado da página do OneNote." />
+	  <Item text="Abra o cliente do OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abra um aplicativo do OneNote em uma determinada página ou um bloco de anotações." />
+      <Item text="Códigos de erro" url="/en-us/concepts/onenote_error_codes" SEODescription="Localize os códigos de erro que foram retornados pelas APIs do OneNote no Microsoft Graph." />
+      <Item text="Práticas recomendadas" url="/en-us/concepts/onenote_best_practices" SEODescription="Use as práticas recomendadas ao trabalhar com as APIs do OneNote no Microsoft Graph." />  
       <Item text="Observações" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="API de anotações, API do Microsoft Graph, API de anotações" SEODescription="">
         <Item text="Listar blocos de anotações" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="Listar blocos de anotações, API do Microsoft Graph, API de anotações" SEODescription="Recuperar uma lista de objetos notebook(../resources/notebook.md)." />
         <Item text="Criar bloco de anotações" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Criar bloco de anotações, API do Microsoft Graph, API de anotações" SEODescription="Criar um novo bloco de anotações do OneNote(../resources/notebook.md)." />
@@ -3668,10 +4183,12 @@
         <Item text="Atualizar calendário" url="/en-us/api-reference/beta/api/calendar_update" SEOKeyword="Atualizar calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Atualizar as propriedades do objeto calendar." />
         <Item text="Excluir calendário" url="/en-us/api-reference/beta/api/calendar_delete" SEOKeyword="Excluir calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Exclua um calendário." />
         <Item text="Listar visão de calendário" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="Listar a visão de calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
-        <Item text="Listar eventos" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="Listar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
-        <Item text="Encontrar horários de reunião" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Horários de reuniões, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
-        <Item text="Criar Evento" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Criar Evento, API do Microsoft Graph, API do calendário" SEODescription="Use esta API para criar um novo Event." />
         <Item text="Modo de exibição Lembrete" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="usuário: reminderView, API do Microsoft Graph, API de usuário" SEODescription="" />
+		<Item text="Listar eventos" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="Listar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
+         <Item text="Criar Evento" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Criar Evento, API do Microsoft Graph, API do calendário" SEODescription="Use esta API para criar um novo Event." />
+		<Item text="Encontrar horários de reunião" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Horários de reuniões, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
+		<Item text="Encontrar listas de salas" url="/en-us/api-reference/beta/api/user_findroomlists" />
+		<Item text="Encontrar salas" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>  
 	  <Item text="Grupo de calendários" url="/en-us/api-reference/beta/resources/calendargroup" SEOKeyword="API de calendargroup, API do Microsoft Graph, API do calendargroup" SEODescription="Um grupo de calendários.">
         <Item text="Listar grupos de calendários" url="/en-us/api-reference/beta/api/user_list_calendargroups" SEOKeyword="Listar calendarGroups, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos calendargroup." />
@@ -3721,7 +4238,8 @@
         <Item text="Criar mensagem de Encaminhamento" url="/en-us/api-reference/beta/api/message_createforward" SEOKeyword="Criar Encaminhar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="" />
         <Item text="Encaminhar mensagens" url="/en-us/api-reference/beta/api/message_forward" SEOKeyword="Encaminhar mensagens, API do Microsoft Graph, API de Email do Outlook" SEODescription="" />
         <Item text="Enviar email" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="usuário: sendMail, API do Microsoft Graph, API de usuário" SEODescription="" />
-        <Item text="Obter Dicas de Email" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="Cancelar assinatura" url="/en-us/api-reference/beta/api/message_unsubscribe" />
+		<Item text="Obter Dicas de Email" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
         <Item text="Listar anexos" url="/en-us/api-reference/beta/api/message_list_attachments" SEOKeyword="Listar anexos, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos de anexo." />
         <Item text="Adicionar anexo" url="/en-us/api-reference/beta/api/message_post_attachments" SEOKeyword="Criar anexo, API do Microsoft Graph, API da mensagem" SEODescription="Use esta API para criar um novo Attachment." />
         <Item text="Criar extensão aberta" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Criar extensão aberta, API do Microsoft Graph, API de mensagem" SEODescription="Use esta API para criar extensão aberta" />
@@ -3947,26 +4465,114 @@
 		</Item>
 	</Item>
 	<Item text="Relatórios" url="/en-us/api-reference/beta/resources/report">
-      <Item text="Relatórios de uso do Office 365" url="/en-us/api-reference/beta/resources/report">
-		  <Item text="Obter relatório de atividades do email" url="/en-us/api-reference/beta/api/reportroot_emailactivity" SEOKeyword="Obter relatório de Atividades do Email, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios Atividades do Email do Exchange. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter relatório de uso de aplicativo de email" url="/en-us/api-reference/beta/api/reportroot_emailappusage" SEOKeyword="Obter relatório de Uso do Aplicativo de Email, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Uso do Aplicativo de Email. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de uso de caixa de correio" url="/en-us/api-reference/beta/api/reportroot_mailboxusage" SEOKeyword="Obter relatório de Uso da Caixa de Correio, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Uso da Caixa de Correio. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter relatório de ativações do Office 365" url="/en-us/api-reference/beta/api/reportroot_office365activations" SEOKeyword="Obter relatório de Ativações do Office 365, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Ativação do Office 365. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de usuários ativos do Office 365" url="/en-us/api-reference/beta/api/reportroot_office365activeusers" SEOKeyword="Obter relatório de Usuários Ativos do Office 365, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Usuários Ativos do Office 365. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatórios de atividades do Office 365" url="/en-us/api-reference/beta/api/reportroot_office365groupsactivity" SEOKeyword="Obter o relatório de Atividades de Grupos do Office 365, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades de Grupos do Office 365. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de atividades do OneDrive" url="/en-us/api-reference/beta/api/reportroot_onedriveactivity" SEOKeyword="Obter relatório de Atividades do OneDrive, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades do OneDrive. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de uso do OneDrive" url="/en-us/api-reference/beta/api/reportroot_onedriveusage" SEOKeyword="Obter relatório de Uso do OneDrive, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Uso do OneDrive. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de atividades do Skype for Business" url="/en-us/api-reference/beta/api/reportroot_sfbactivity" SEOKeyword="Obter relatório de Atividades do Usuário do Skype for Business, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades do Usuário do Skype for Business. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de uso do dispositivo do Skype for Business" url="/en-us/api-reference/beta/api/reportroot_sfbdeviceusage" SEOKeyword="Obter relatório de Uso do Dispositivo do Skype for Business, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Uso do Dispositivo do Skype for Business. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de atividades do organizador do Skype for Business" url="/en-us/api-reference/beta/api/reportroot_sfborganizeractivity" SEOKeyword="Obter relatório de Atividades do Organizador do Skype for Business, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades do Organizador do Skype for Business. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de atividades do participante do Skype for Business" url="/en-us/api-reference/beta/api/reportroot_sfbparticipantactivity" SEOKeyword="Obter relatório de Atividades do Participante do Skype for Business, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades do Participante do Skype for Business. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de atividades de colega para colega do Skype for Business" url="/en-us/api-reference/beta/api/reportroot_sfbp2pactivity" SEOKeyword="Obter relatório de Atividades de Colega para Colega do Skype for Business, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades de Colega para Colega do Skype for Business. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter o relatório de atividades do SharePoint" url="/en-us/api-reference/beta/api/reportroot_sharepointactivity" SEOKeyword="Obter relatório de Atividades do SharePoint, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades do SharePoint. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter relatório de uso do site do SharePoint" url="/en-us/api-reference/beta/api/reportroot_sharepointsiteusage" SEOKeyword="Obter relatório de Uso do Site do SharePoint, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Uso do Site do SharePoint. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter relatório de atividades do Yammer" url="/en-us/api-reference/beta/api/reportroot_yammeractivity" SEOKeyword="Obter relatório de Atividades do Yammer, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Atividades do Yammer. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter relatório de uso de dispositivo do Yammer" url="/en-us/api-reference/beta/api/reportroot_yammerdeviceusage" SEOKeyword="Obter relatório de Uso de Dispositivo do Yammer, API do Microsoft Graph, API de Relatório" SEODescription="Recuperar os relatórios de Uso de Dispositivo do Yammer. A resposta será um arquivo CSV em um fluxo binário." />
-		  <Item text="Obter relatório de atividades de grupos do Yammer" url="/en-us/api-reference/beta/api/reportroot_yammergroupsactivity" SEODescription="Recuperar o relatório de atividades de grupos do Yammer" />
-		</Item>
+	  <Item text="Uso do dispositivo do Microsoft Teams" url="/en-us/api-reference/beta/resources/microsoft_teams_device_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageuserdetail" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusageusercounts" />
+		<Item text="Obter contagens de usuários de distribuição" url="/en-us/api-reference/beta/api/reportroot_getteamsdeviceusagedistributionusercounts" />
+	  </Item>
+	  <Item text="Atividade do usuário do Microsoft Teams" url="/en-us/api-reference/beta/resources/microsoft_teams_user_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getteamsuseractivityusercounts" />
+	  </Item>
+	  <Item text="Atividade do Outlook" url="/en-us/api-reference/beta/resources/email_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getemailactivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getemailactivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getemailactivityusercounts" />
+	  </Item>
+	  <Item text="Uso do aplicativo do Outlook" url="/en-us/api-reference/beta/resources/email_app_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getemailappusageuserdetail" />
+		<Item text="Obter contagens de usuários do aplicativo" url="/en-us/api-reference/beta/api/reportroot_getemailappusageappsusercounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getemailappusageusercounts" />
+		<Item text="Obter contagens de usuários das versões" url="/en-us/api-reference/beta/api/reportroot_getemailappusageversionsusercounts" />
+	  </Item>
+	  <Item text="Uso de caixas de correio do Outlook" url="/en-us/api-reference/beta/resources/mailbox_usage_reports">
+		<Item text="Obter detalhes de caixa de correio" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagedetail" />
+		<Item text="Obter contagens da caixa de correio" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagemailboxcounts" />
+		<Item text="Obter status da cota de contagens da caixa de correio" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagequotastatusmailboxcounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/beta/api/reportroot_getmailboxusagestorage" />
+	  </Item>
+	  <Item text="Ativações do Office 365" url="/en-us/api-reference/beta/resources/office_365_activations_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsuserdetail" />
+		<Item text="Obter contagens de ativações" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationcounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getoffice365activationsusercounts" />
+	  </Item>
+	  <Item text="Usuários ativos do Office 365" url="/en-us/api-reference/beta/resources/office_365_active_users_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeuserdetail" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getoffice365activeusercounts" />
+		<Item text="Obter contagens de usuários dos serviços" url="/en-us/api-reference/beta/api/reportroot_getoffice365servicesusercounts" />
+	  </Item>
+	  <Item text="Atividades de grupos do Office 365" url="/en-us/api-reference/beta/resources/office_365_groups_activity_reports">
+		<Item text="Obter detalhe do grupo" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitydetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitycounts" />
+		<Item text="Obter contagens do grupo" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitygroupcounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivitystorage" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/beta/api/reportroot_getoffice365groupsactivityfilecounts" />
+	  </Item>
+	  <Item text="Atividade do OneDrive" url="/en-us/api-reference/beta/resources/onedrive_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityuserdetail" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityusercounts" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/beta/api/reportroot_getonedriveactivityfilecounts" />
+	  </Item>
+	  <Item text="Uso do OneDrive" url="/en-us/api-reference/beta/resources/onedrive_usage_reports">
+		<Item text="Obter detalhes da conta" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountdetail" />
+		<Item text="Obter contagens de contas" url="/en-us/api-reference/beta/api/reportroot_getonedriveusageaccountcounts" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagefilecounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/beta/api/reportroot_getonedriveusagestorage" />
+	  </Item>
+	  <Item text="Atividade do SharePoint" url="/en-us/api-reference/beta/resources/sharepoint_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityuserdetail" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityfilecounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivityusercounts" />
+		<Item text="Obter páginas" url="/en-us/api-reference/beta/api/reportroot_getsharepointactivitypages" />
+	  </Item>
+	  <Item text="Utilização do site do SharePoint" url="/en-us/api-reference/beta/resources/sharepoint_site_usage_reports">
+		<Item text="Obter detalhes do site" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagedetail" />
+		<Item text="Obter contagens do arquivo" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagefilecounts" />
+		<Item text="Obter contagens do site" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagesitecounts" />
+		<Item text="Obter armazenamento" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagestorage" />
+		<Item text="Obter páginas" url="/en-us/api-reference/beta/api/reportroot_getsharepointsiteusagepages" />
+	  </Item>
+	  <Item text="Atividade do Skype for Business" url="/en-us/api-reference/beta/resources/skype_for_business_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessactivityusercounts" />
+	  </Item>
+	  <Item text="Uso do dispositivo do Skype for Business" url="/en-us/api-reference/beta/resources/skype_for_business_device_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageuserdetail" />
+		<Item text="Obter contagens de usuários de distribuição" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusagedistributionusercounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Atividade do organizador do Skype for Business" url="/en-us/api-reference/beta/resources/skype_for_business_organizer_activity_reports">
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityusercounts" />
+		<Item text="Obter contagens de minutos" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessorganizeractivityminutecounts" />
+	  </Item>
+	  <Item text="Atividade de participantes do Skype for Business" url="/en-us/api-reference/beta/resources/skype_for_business_participant_activity_reports">
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityusercounts" />
+		<Item text="Obter contagens de minutos" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinessparticipantactivityminutecounts" />
+	  </Item>
+	  <Item text="Atividade de colega para colega do Skype for Business" url="/en-us/api-reference/beta/resources/skype_for_business_peer_to_peer_activity">
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityusercounts" />
+		<Item text="Obter contagens de minutos" url="/en-us/api-reference/beta/api/reportroot_getskypeforbusinesspeertopeeractivityminutecounts" />
+	  </Item>
+	  <Item text="Atividade do Yammer" url="/en-us/api-reference/beta/resources/yammer_activity_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityuserdetail" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getyammeractivitycounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getyammeractivityusercounts" />
+	  </Item>
+	  <Item text="Uso do dispositivo do Yammer" url="/en-us/api-reference/beta/resources/yammer_device_usage_reports">
+		<Item text="Obter detalhes do usuário" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageuserdetail" />
+		<Item text="Obter contagens de usuários de distribuição" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusagedistributionusercounts" />
+		<Item text="Obter contagens de usuários" url="/en-us/api-reference/beta/api/reportroot_getyammerdeviceusageusercounts" />
+	  </Item>
+	  <Item text="Atividade de grupos do Yammer" url="/en-us/api-reference/beta/resources/yammer_groups_activity_reports">
+		<Item text="Obter detalhe do grupo" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitydetail" />
+		<Item text="Obter contagens do grupo" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitygroupcounts" />
+		<Item text="Obter contagens de atividades" url="/en-us/api-reference/beta/api/reportroot_getyammergroupsactivitycounts" />
+	  </Item>
 	</Item>
     <Item text="Extensões de esquema" url="/en-us/api-reference/beta/resources/schemaextension" SEOKeyword="API de extensão, API do Microsoft Graph, API de extensão de esquema, extensões de esquema" SEODescription="API para adicionar dados personalizados a recursos no Microsoft Graph.">
       <Item text="Listar extensões de esquema" url="/en-us/api-reference/beta/api/schemaextension_list" SEOKeyword="Listar extensões de esquema, API do Microsoft Graph" SEODescription="Recuperar um conjunto de definições de extensão de esquema e suas propriedades." />
@@ -3983,8 +4589,9 @@
       </Item>
       <Item text="Listas" url="/en-us/api-reference/beta/resources/list" SEOKeyword="SharePoint, lista, listas, API do Microsoft Graph, API da Lista do SharePoint">
         <Item text="Obter lista" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="SharePoint, site, obter site" SEODescription="" />
-        <Item text="Obter itens" url="/en-us/api-reference/beta/api/listitems_list" SEOKeyword="SharePoint, listar itens, obter itens, obter listitems" SEODescription="" />
+        <Item text="Obter itens" url="/en-us/api-reference/beta/api/listitem_list" SEOKeyword="SharePoint, listar itens, obter itens, obter listitems" SEODescription="" />
         <Item text="Criar lista" url="/en-us/api-reference/beta/api/list_create" SEOKeyword="sharepoint, criar lista, criar, api do microsoft graph, api da lista do sharepoint" SEODescription="" />
+
       </Item>
       <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, api do microsoft graph, api da lista do sharepoint" SEODescription="">
         <Item text="Obter item" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="sharepoint, obter item, api do microsoft graph, api da lista do sharepoint" SEODescription="" />
