@@ -41,4 +41,4 @@ Atualmente, os seguintes recursos oferecem atualmente um cabeçalho retry-after:
 - [Pessoas e social](../api-reference/beta/resources/social_overview.md)
 - [Drive (OneDrive)](../api-reference/v1.0/resources/drive.md)
 
-Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação]((https://msdn.microsoft.com/pt-BR/library/office/dn589798.aspx)).
+Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://msdn.microsoft.com/pt-BR/library/office/dn589798.aspx).

@@ -21,7 +21,7 @@ O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar p
 
 Esses parâmetros são compatíveis com a [linguagem de consulta OData V4][odata-query]. Nem todos os parâmetros têm suporte em todas as APIs do Microsoft Graph, e o suporte pode diferir significativamente entre os pontos de extremidade `v1.0` e `beta`. 
 
-> **Observação:** No ponto de extremidade `beta`, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`. Para obter mais detalhes e exemplos, confira [Suporte a parâmetros da consulta sem prefixos $ no Microsoft Graph]((http://dev.office.com/queryparametersinMicrosoftGraph)).
+> **Observação:** No ponto de extremidade `beta`, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`. Para obter mais detalhes e exemplos, confira [Suporte a parâmetros da consulta sem prefixos $ no Microsoft Graph](http://dev.office.com/queryparametersinMicrosoftGraph).
 
 ## <a name="encoding-query-parameters"></a>Codificação de parâmetros da consulta
 
@@ -210,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="from:help@contoso.com"
 ```
 Para saber mais sobre a KQL como a sintaxe, operadores com suporte e dicas de pesquisa, confira os seguintes artigos:
 
-- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)]((https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference))
+- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
   [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)

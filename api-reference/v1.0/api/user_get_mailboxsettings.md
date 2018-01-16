@@ -4,7 +4,7 @@ Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário. Isso 
 
 Você pode exibir todas as configurações de caixa de correio ou obter configurações específicas.
 
-O fuso horário é uma das configurações de preferência que um usuário pode fazer na caixa de correio. Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)]((http://www.iana.org/time-zones)) (também conhecido como fuso horário de Olson). O formato do Windows é o padrão. 
+O fuso horário é uma das configurações de preferência que um usuário pode fazer na caixa de correio. Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)](http://www.iana.org/time-zones) (também conhecido como fuso horário de Olson). O formato do Windows é o padrão. 
 
 Ao obter o fuso horário de preferência de um usuário, ele é retornado no formato em que foi configurado. Se quiser que o fuso horário esteja em um formato específico (Windows ou IANA), você pode primeiro [atualizar o fuso horário de preferência nesse formato como uma configuração de caixa de correio](user_update_mailboxsettings.md). Posteriormente, você poderá obter o fuso horário nesse formato. Como alternativa, você pode gerenciar a conversão de formato separadamente no seu aplicativo.
 
@@ -38,7 +38,7 @@ GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData]((http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters)) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|

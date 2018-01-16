@@ -34,7 +34,7 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
 ## <a name="http-request"></a>Solicitação HTTP
 
 #### <a name="get-a-resource-instance-using-expand"></a>OBTER uma instância de recurso usando `$expand`
-Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) aos caracteres de espaço na cadeia de filtro.
+Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.
 
 Obtenha uma instância de **message**:
 <!-- { "blockType": "ignored" } -->
@@ -91,7 +91,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueE
 
 #### <a name="get-resource-instances-using-filter"></a>OBTER instâncias de recursos usando `$filter`
 
-Obtenha instâncias de um recurso com suporte que tenham a propriedade estendida correspondente a um filtro nas propriedades **id** e **value**. Aplique a [codificação de URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.
+Obtenha instâncias de um recurso com suporte que tenham a propriedade estendida correspondente a um filtro nas propriedades **id** e **value**. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.
 
 
 Obtenha instâncias de **message**:

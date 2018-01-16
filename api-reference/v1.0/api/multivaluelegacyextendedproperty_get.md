@@ -31,7 +31,7 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
  
 ## <a name="http-request"></a>Solicitação HTTP
 
-Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL]((http://www.w3schools.com/tags/ref_urlencode.asp)) aos caracteres de espaço na cadeia de filtro.
+Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.
 
 Obtenha uma instância de **message**:
 <!-- { "blockType": "ignored" } -->

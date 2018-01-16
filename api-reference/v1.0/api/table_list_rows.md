@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData]((http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters)) para ajudar a personalizar a resposta.  Para resultados confiáveis, use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.  Para resultados confiáveis, use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

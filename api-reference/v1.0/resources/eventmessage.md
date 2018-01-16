@@ -54,7 +54,7 @@ Além de uma solicitação de reunião, uma instância **eventMessage** pode ser
 |id|String||
 |importance|String| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused` e `other`.|
-|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822]((http://www.ietf.org/rfc/rfc2822.txt)). |
+|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
