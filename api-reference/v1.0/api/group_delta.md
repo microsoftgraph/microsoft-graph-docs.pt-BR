@@ -19,7 +19,11 @@ GET /groups/delta
 ```
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
-O controle de alterações em grupos corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
+Controlar alterações em grupos resulta em uma rodada de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e de `$skiptoken`), especifique na solicitação inicial **delta**. O Microsoft Graph codifica automaticamente os parâmetros especificados para a parte de token da URL `nextLink` ou `deltaLink` fornecida na resposta.
+
+Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente.
+
+Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -56,6 +60,7 @@ Confira:</br>
     
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -65,7 +70,8 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
 #### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

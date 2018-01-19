@@ -31,12 +31,12 @@ Esse recurso permite:
 |**Calendário**| | |
 |[Criar evento](../api/group_post_events.md) |[event](event.md)| Criar um novo Event postando na coleção de eventos.|
 |[Obter evento](../api/group_get_event.md) |[event](event.md)|Ler as propriedades de um objeto event.|
-|[Listar eventos](../api/group_list_events.md) |Coleção [event](event.md)| Obter uma coleção de objetos Event.|
+|[Listar eventos](../api/group_list_events.md) |Coleção de [eventos](event.md)| Obter uma coleção de objetos de evento.|
 |[Atualizar evento](../api/group_update_event.md) |Nenhum|Atualizar as propriedades de um objeto event.|
 |[Excluir evento](../api/group_delete_event.md) |Nenhum|Excluir o objeto event.|
 |[Listar calendarView](../api/group_list_calendarview.md) |Coleção [event](event.md)| Obter um conjunto de eventos em uma janela de tempo especificada.|
 |**Conversas**| | |
-|[Criar conversa](../api/group_post_conversations.md) |[conversation](conversation.md)| Criar uma nova Conversation postando na coleção de conversas.|
+|[Criar conversa](../api/group_post_conversations.md) |[conversa](conversation.md)| Crie uma nova conversa postando na coleção de conversas.|
 |[Obter conversa](../api/group_get_conversation.md) |[conversation](conversation.md)| Ler as propriedades de um objeto conversation.|
 |[Listar conversas](../api/group_list_conversations.md) |Coleção [conversation](conversation.md)| Obter uma coleção de objetos Conversation.|
 |[Excluir conversa](../api/group_delete_conversation.md) |Nenhum|Excluir objeto conversation.|

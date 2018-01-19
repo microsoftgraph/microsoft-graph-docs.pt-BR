@@ -5,7 +5,7 @@ Use esta API para criar um novo grupo conforme especificado no corpo da solicita
 * Grupo dinâmico
 * Grupo de segurança
 
-> **Observação**: Embora o Microsoft Teams tenha como base grupos do Office 365, não é possível criar uma equipe por meio desta API atualmente. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
+> **Observação**: embora o Microsoft Teams tenha como base grupos do Office 365, não é possível criar uma equipe por meio desta API atualmente. Você pode usar outras APIs de grupos para gerenciar uma equipe que foi criada na interface do usuário do Microsoft Teams.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -33,7 +33,7 @@ A tabela a seguir mostra as propriedades do recurso [group](../resources/group.m
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | displayName | string | O nome de exibição no catálogo de endereços do grupo. |
-| mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Defina isto como **false** se estiver criando um grupo do Office 365. Defina como **false** se estiver criando um grupo dinâmico ou de segurança.|
+| mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Defina como **true** se estiver criando um grupo do Office 365. Defina como **false** se estiver criando um grupo dinâmico ou de segurança.|
 | mailNickname | string | O alias de email do grupo. |
 | securityEnabled | booliano | Defina como **true** para grupos de segurança. Definir isto como **true** se estiver criando um grupo dinâmico ou de segurança. Defina isto como **false** se estiver criando um grupo do Office 365. |
 
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 Este é um exemplo de uma solicitação que cria um grupo do Office 365.
 <!-- {
   "blockType": "request",
-  "name": "create_group_from_groups"
+  "name": "create_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups

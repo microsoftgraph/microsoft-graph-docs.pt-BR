@@ -21,9 +21,11 @@ GET /groups/{id}/calendar/events
 Este método dá suporte a [Parâmetros de consulta OData](../../../concepts/query_parameters.md) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Cabeçalho       | Valor |
-|:---------------|:--------|
-| Autorização  | {token} de portador. Obrigatório.  |
+| Nome       | Tipo | Descrição |
+|:---------------|:--------|:--------|
+| Autorização  | string | {token} de portador. Obrigatório.  |
+| Prefira: outlook.timezone  | cadeia de caracteres | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
