@@ -26,12 +26,12 @@ A seguir, estão algumas das solicitações mais populares para trabalhar com os
 
 |Operação|URL|
 |:--------|:--|
-|GET meus blocos de anotações|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
-|GET minhas seções|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
-|GET minhas páginas|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/en-us/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
+|GET meus blocos de anotações|[https://graph.microsoft.com/v1.0/me/onenote/notebooks](https://developer.microsoft.com/pt-BR/graph/graph-explorer?request=me/onenote/notebooks&version=1.0)|
+|GET minhas seções|[https://graph.microsoft.com/v1.0/me/onenote/sections](https://developer.microsoft.com/pt-BR/graph/graph-explorer?request=me/onenote/sections&version=1.0)|
+|GET minhas páginas|[https://graph.microsoft.com/v1.0/me/onenote/pages](https://developer.microsoft.com/pt-BR/graph/graph-explorer?request=me/onenote/pages&version=1.0)|
 
 ## <a name="explore-the-onenote-apis"></a>Explorar as APIs do OneNote
-Use o [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) para experimentar as APIs do OneNote com seus próprios blocos de anotações do OneNote.
+Use o [Microsoft Graph Explorer](https://developer.microsoft.com/pt-BR/graph/graph-explorer) para experimentar as APIs do OneNote com seus próprios blocos de anotações do OneNote.
 
 Para fazer chamadas à API do OneNote por meio do Explorador do Graph, escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para **Ativar** o OneNote. Você também precisará habilitar as permissões apropriadas. No nome da conta no menu à esquerda, escolha **modificar permissões**. Para saber mais sobre as permissões do OneNote, confira [Permissões de anotações](permissions_reference.md#notes-permissions).
 
@@ -39,10 +39,10 @@ Para começar a usar as APIs do OneNote no Microsoft Graph, confira o [conteúdo
 
 ## <a name="see-also"></a>Confira também
 
-* [Diretrizes de identidade visual](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-branding)
-* [Obter a estrutura e o conteúdo do OneNote](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
-* [Adicionar imagens, vídeos e arquivos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files)
-* [Criar elementos posicionados absolutos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos)
-* [Extrair dados](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data)
-* [Usar marcas de anotação](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+* [Diretrizes de identidade visual](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-branding)
+* [Obter a estrutura e o conteúdo do OneNote](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-get-content)
+* [Adicionar imagens, vídeos e arquivos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-images-files)
+* [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos)
+* [Extrair dados](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-extract-data)
+* [Usar marcas de anotação](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-note-tags)
 
