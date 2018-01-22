@@ -30,6 +30,8 @@ No corpo da solicitação, forneça uma representação JSON do objeto [conversa
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [conversation](../resources/conversation.md) no corpo da resposta.
 
+A resposta inclui as IDs da nova conversa e do thread, que você pode usar na operação [listar postagens](conversationthread_list_posts.md) para obter a nova postagem também.
+
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -38,25 +40,31 @@ Este é um exemplo de solicitação.
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations
+POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
 Content-type: application/json
 
 {
-  "topic": "New Conversation Topic",
-  "threads": [{
-    "posts": [{
-      "body": {
-        "contentType": "html",
-        "content": "this is body content"
-      },
-      "newParticipants": [{
-        "emailAddress": {
-          "name": "Alex Darrow",
-          "address": "alexd@contoso.com"
+    "topic":"New locations for this quarter",
+    "threads":[
+        {
+            "posts":[
+                {
+                    "body":{
+                        "contentType":"html",
+                        "content":"What do we know so far?"
+                    },
+                    "newParticipants":[
+                        {
+                            "emailAddress":{
+                                "name":"Adele Vance",
+                                "address":"AdeleV@contoso.onmicrosoft.com"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      }]
-    }]
-  }]
+    ]
 }
 ```
 
@@ -72,17 +80,16 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "topic": "topic-value",
-  "hasAttachments": true,
-  "lastDeliveredDateTime": "datetime-value",
-  "uniqueSenders": [
-    "uniqueSenders-value"
-  ],
-  "preview": "preview-value",
-  "id": "id-value"
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+    "id":"AAQkADDVKtMlRp4Txc6k=",
+    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+    "threads":[
+        {
+            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+        }
+    ]
 }
 ```
 
