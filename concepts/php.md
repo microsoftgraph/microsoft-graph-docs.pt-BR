@@ -6,7 +6,7 @@ Para usar o Microsoft Graph em seu aplicativo PHP, é preciso mostrar a página 
 
 ![Página de entrada das contas da Microsoft](images/MicrosoftSignIn.png)
 
-**Não está com vontade de criar um aplicativo?** Comece rapidamente baixando o [Exemplo de Connect para PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) no qual este artigo se baseia. Ou experimente a versão do [Exemplo de Connect para PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) que usa a [Biblioteca do Microsoft Graph para PHP](https://github.com/microsoftgraph/msgraph-sdk-php) (Visualização).
+**Não está com vontade de criar um aplicativo?** Comece rapidamente baixando o [Exemplo de Connect para PHP (REST)](https://github.com/microsoftgraph/php-connect-rest-sample) no qual este artigo se baseia. Ou experimente a versão do [Exemplo de Connect para PHP (SDK)](https://github.com/microsoftgraph/php-connect-sample) que usa a [Biblioteca do Microsoft Graph para PHP](https://github.com/microsoftgraph/msgraph-sdk-php).
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -168,7 +168,7 @@ Você está pronto para experimentar seu aplicativo PHP.
     
 2. Acesse `http://localhost:8000` no navegador da Web.
 3. Escolha **Entrar na Microsoft**.
-4. Entre com sua conta pessoal, comercial ou de estudante, e conceda as permissões solicitadas.
+4. Entre com sua conta pessoal, corporativa ou de estudante, e conceda as permissões solicitadas.
 
 Verifique a caixa de entrada do endereço de email que você configurou na seção [Chamar o Microsoft Graph usando o REST](#call-microsoft-graph-using-rest). É provável que você tenha um email da conta que utilizou para entrar no aplicativo.
 
@@ -176,6 +176,6 @@ Verifique a caixa de entrada do endereço de email que você configurou na seç�
 - Experimente o [Explorador do Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 
-## <a name="see-also"></a>Ver também
-* [Protocolos do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-* [Tokens do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+## <a name="see-also"></a>Confira também
+* [Protocolos do Azure AD v2.0](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-v2-protocols/)
+* [Tokens do Azure AD v2.0](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-v2-tokens/)

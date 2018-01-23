@@ -2,7 +2,7 @@
 
 > **Criando aplicativos para clientes corporativos?** O aplicativo pode não funcionar caso o cliente corporativo habilite os recursos Enterprise Mobility + Security, como <a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-device-policies/" target="_newtab">acesso condicional ao dispositivo</a>. Nesse caso, pode ser que você não esteja ciente e seu cliente pode enfrentar problemas de erro. 
 
-> Para fornecer suporte a **todos os clientes corporativos**, em **todos os cenários corporativos**, use o ponto de extremidade do Microsoft Azure AD e gerencie os aplicativos usando o [Portal de Gerenciamento do Microsoft Azure](https://aka.ms/aadapplist). Para saber mais, confira o tópico [Decidindo entre os pontos de extremidade do Azure AD e do Azure AD v2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
+> Para dar suporte a **todos os clientes corporativos**, em **todos os cenários corporativos**, use o ponto de extremidade do Microsoft Azure AD e gerencie seus aplicativos usando o [Portal do Azure](https://aka.ms/aadapplist). Para saber mais, confira o tópico [Decidindo entre os pontos de extremidade do Microsoft Azure AD e do Microsoft Azure AD versão 2.0](../concepts/auth_overview.md#deciding-between-the-azure-ad-and-azure-ad-v20-endpoints).
 
 Este artigo descreve as tarefas obrigatórias para obter um token de acesso do ponto de extremidade do Azure AD v2.0 e chamar o Microsoft Graph. Ele o orienta sobre como criar um [Exemplo do Connect para Android](https://github.com/microsoftgraph/android-java-connect-sample) e explica os principais conceitos que você implementa para utilizar o Microsoft Graph em seu aplicativo para Android. O artigo também descreve como acessar o Microsoft Graph usando o [SDK do Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) ou chamadas REST não processadas.
 
@@ -74,7 +74,7 @@ Registre um aplicativo no Portal de Registro de Aplicativos da Microsoft. Isso g
 
     b. Selecione **Adicionar plataforma** e **Aplicativo nativo**.
 
-      > **Observação:** O Portal de registro de Aplicativos fornece um URI de redirecionamento com um valor de `msalENTER_YOUR_CLIENT_ID://auth`. Não use URIs de redirecionamento incorporados. O [Exemplo do Connect para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa a biblioteca de autenticação de MSAL que requer esse URI de redirecionamento. Se estiver usando uma [biblioteca de terceiros com suporte](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) ou uma biblioteca **ADAL**, você deverá usar URIs de redirecionamento incorporados.
+      > **Observação:** O Portal de registro de Aplicativos fornece um URI de redirecionamento com um valor de `msalENTER_YOUR_CLIENT_ID://auth`. Não use URIs de redirecionamento incorporados. O [Exemplo do Connect para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa a biblioteca de autenticação de MSAL que requer esse URI de redirecionamento. Se estiver usando uma [biblioteca de terceiros com suporte](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) ou uma biblioteca **ADAL**, você deverá usar URIs de redirecionamento incorporados.
       
       c. Adicione permissões delegadas. Você precisará de **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** e **User.ReadBasic.All**. 
 
@@ -498,7 +498,7 @@ O [SDK do Microsoft Graph para Android](https://github.com/microsoftgraph/msgrap
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Chamar o Microsoft Graph usando a API REST do Microsoft Graph
 
-A [API REST do Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) expõe várias APIs dos serviços de nuvem da Microsoft por meio de um único ponto de extremidade da API REST. Siga estas etapas para usar a API REST.
+A [API REST do Microsoft Graph](http://developer.microsoft.com/pt-BR/graph/docs) expõe várias APIs dos serviços em nuvem da Microsoft por meio de um único ponto de extremidade da API REST. Siga estas etapas para usar a API REST.
 
 1. Adicione permissões de Internet ao seu aplicativo. Abra o arquivo **AndroidManifest** e adicione os seguintes filhos ao elemento de manifesto.
     
@@ -584,7 +584,7 @@ Você está pronto para experimentar seu aplicativo Android.
 2. No Android Studio, pressione Shift+F10 para executar seu aplicativo.
 3. Escolha seu dispositivo ou emulador Android na caixa de diálogo de implantação.
 4. Toque no botão **Ação Flutuante** na atividade principal.
-5. Entre com sua conta pessoal, corporativa ou de estudante e conceda as permissões solicitadas.
+5. Entre com sua conta pessoal, corporativa ou de estudante, e conceda as permissões solicitadas.
 6. Na caixa de diálogo de seleção de aplicativo, toque em seu aplicativo para continuar.
 
 Verifique a caixa de entrada do endereço de email que você configurou em [Chamar Microsoft Graph](#call-microsoft-graph). É provável que você tenha um email da conta que utilizou para entrar no aplicativo.
@@ -598,6 +598,6 @@ Verifique a caixa de entrada do endereço de email que você configurou em [Cham
 ## <a name="see-also"></a>Confira também
 
 - [SDK do Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
-- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
-- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)
+- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_overview)
+- [Obter acesso em nome de um usuário](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_v2_user)
+- [Obter acesso sem um usuário](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_v2_service)

@@ -1,6 +1,6 @@
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
-Representa um dispositivo registrado na organização. Dispositivos também podem ser criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são utilizados por políticas de acesso condicional para autenticação de vários fatores. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de [directoryObject](directoryobject.md).
+Representa um dispositivo registrado na organização. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
 
@@ -9,47 +9,44 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Create device](../api/device_post_devices.md) | [device](device.md) |Crie um novo dispositivo registrado no diretório.|
 |[Obter dispositivo](../api/device_get.md) | [device](device.md) |Leia as propriedades e os relacionamentos de um objeto device.|
 |[Listar dispositivos](../api/device_list.md) | Coleção [device](device.md)| Recupere uma lista de dispositivos registrados no diretório. |
 |[Atualizar dispositivo](../api/device_update.md) | [device](device.md) |Atualize as propriedades de um objeto device. |
 |[Excluir dispositivo](../api/device_delete.md) | Nenhuma |Exclua um objeto device. |
-|[Criar registeredOwner](../api/device_post_registeredowners.md) |[directoryObject](directoryobject.md)| Adicione um usuário como um novo proprietário do dispositivo postando na propriedade de navegação registeredOwners.|
 |[Listar registeredOwners](../api/device_list_registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
-|[Criar registeredUser](../api/device_post_registeredusers.md) |[directoryObject](directoryobject.md)| Adicione um usuário registrado para o dispositivo postando na propriedade de navegação registeredUsers.|
 |[Listar registeredUsers](../api/device_list_registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|
 |**Extensões de esquema**| | |
-|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Crie uma definição para a extensão de esquema e use-a para adicionar dados digitados personalizados a um recurso.|
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Criar uma definição para a extensão de esquema e usá-la para adicionar dados digitados personalizados a um recurso.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
-|alternativeSecurityIds|Coleção [alternativeSecurityId](alternativesecurityid.md)| O operador **any** é necessário para expressões de filtro em propriedades de vários valores. Não anulável. Obrigatório. |
-|approximateLastSignInDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|deviceId|Guid| GUID exclusivo especificado pelo cliente para representar o dispositivo. Obrigatório. |
-|deviceMetadata|String|    |
-|deviceVersion|Int32|            |
+|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
+|alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
+|approximateLastSignInDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura. |
+|deviceId|Guid| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
+|deviceMetadata|Cadeia de caracteres| Somente para uso interno. Definido como nulo. |
+|deviceVersion|Int32| Somente para uso interno. |
 |displayName|String|O nome de exibição do dispositivo. Obrigatório. |
 |id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura.|
-|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**.|
-|isManaged|Booliano|**True** se o dispositivo é gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM), como o Intune; caso contrário, **false**.|
-|onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|onPremisesSyncEnabled|Boolean|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
-|operatingSystem|String|O tipo de sistema operacional do dispositivo. Obrigatório. |
+|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. |
+|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**.|
+|onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura.|
+|onPremisesSyncEnabled|Boolean|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. |
+|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. |
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. |
-|physicalIds|Coleção de cadeias de caracteres| Não anulável.            |
-|trustType|String|    ||
+|physicalIds|Coleção de cadeia de caracteres| Somente para uso interno. Não anulável. |
+|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
-|registeredOwners|Coleção [directoryObject](directoryobject.md)|Usuários que são proprietários registrados do dispositivo. Somente leitura. Anulável.|
-|registeredUsers|Coleção [directoryObject](directoryobject.md)|Usuários que são usuários registrados do dispositivo. Somente leitura. Anulável.|
+|registeredOwners|Coleção [directoryObject](directoryobject.md)|O usuário que associou o dispositivo na nuvem ou registrou seu dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário. Somente leitura. Anulável. |
+|registeredUsers|Coleção [directoryObject](directoryobject.md)|Coleção de usuários registrados do dispositivo. Para dispositivos associados em nuvem e dispositivos pessoais registrados, os usuários registrados são definidos para o mesmo valor que proprietários registrados no momento do registro. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -69,7 +66,6 @@ Veja a seguir uma representação JSON do recurso
 ```json
 {
   "accountEnabled": true,
-  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
@@ -88,7 +84,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar dados personalizados a recursos usando extensões](../../../concepts/extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas](../../../concepts/extensibility_open_users.md)

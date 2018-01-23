@@ -5,7 +5,7 @@ Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabel
 
 > **Observação:** Este artigo aborda principalmente o registro de aplicativos no ponto de extremidade do Azure AD v2.0. Para saber mais sobre como registrar seu aplicativo com o ponto de extremidade do Azure AD, veja [Considerações de ponto de extremidade do Azure AD](#azure-ad-endpoint-considerations) abaixo.
 > 
-> Além disso, lembre-se de que se você já registrou aplicativos no Portal de Gerenciamento do Microsoft Azure, esses aplicativos não estarão listados no Portal de Registro do Aplicativo. Gerencie esses aplicativos no Portal de Gerenciamento do Azure. 
+> Além disso, lembre-se de que se você alguma vez registrou aplicativos no Portal do Microsoft Azure, esses aplicativos não estarão listados no Portal de Registro do Aplicativo. Gerencie esses aplicativos no Portal do Azure. 
 
 
 A captura de tela a seguir mostra um registro de aplicativo Web de exemplo que foi configurado com senha e fluxo implícito. ![Registro de aplicativo Web com senha e concessão implícita.](./images/v2-web-registration.png)
@@ -14,10 +14,10 @@ Para registrar seu aplicativo, siga estas etapas. Copie os valores indicados par
 
 1. Entrar no [Portal de Registro de Aplicativos da Microsoft](https://apps.dev.microsoft.com/).
    
-    Você pode entrar com uma conta da Microsoft ou uma conta de trabalho ou da escola. 
+    Você pode entrar com uma conta da Microsoft ou uma conta corporativa ou de estudante. 
 
 2. Escolha **Adicionar um aplicativo**.
-    > Observação: Se você entrou com uma conta de trabalho ou da escola, selecione o botão **Adicionar um aplicativo** em **Aplicativos convergentes**. 
+    > Observação: Se você entrou com uma conta corporativa ou de estudante, selecione o botão **Adicionar um aplicativo** em **Aplicativos convergentes**. 
 
 3. Insira um nome para o aplicativo e escolha **Criar aplicativo**.
 
@@ -67,13 +67,13 @@ A tabela a seguir mostra as propriedades que você precisa configurar e copiar p
 
 Aplicativos que oferecem uma experiência de consentimento do administrador podem precisar de uma URL adicional de redirecionamento para o Azure AD à qual responder.
 
-Para obter mais detalhes sobre o Portal de Registro de Aplicativos e as propriedades que você pode configurar para seu Aplicativo, veja [Referência de registro de aplicativo](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
+Para obter mais detalhes sobre o Portal de Registro de Aplicativos e as propriedades que você pode configurar para seu Aplicativo, veja [Referência de registro de aplicativo](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
 ## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
 
 Você usa o [Portal do Azure](https://aka.ms/aadapplist) para registrar seu aplicativo no ponto de extremidade do Azure AD. Você configura as mesmas propriedades básicas como ID do Aplicativo, Segredo do Aplicativo e URI/URL de Redirecionamento, como faria no ponto de extremidade v2.0. No entanto, há algumas diferenças importantes sobre as quais você deve ter ciência: 
 
-- Você só pode usar uma conta de trabalho ou escolar para registrar um aplicativo.
+- Você só pode usar uma conta corporativa ou de estudante para registrar um aplicativo.
 - Seu aplicativo exigirá uma ID do Aplicativo diferente para cada plataforma.
 - Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como vários locatários no portal.
 - Você deve configurar previamente todas as permissões (incluindo permissões do Microsoft Graph) que seu aplicativo precisa no portal. 

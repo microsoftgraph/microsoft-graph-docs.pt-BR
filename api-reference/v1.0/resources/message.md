@@ -21,11 +21,11 @@ Esse recurso permite:
 |[createReply](../api/message_createreply.md)|[Message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[createReplyAll](../api/message_createreplyall.md)|[Message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message_update.md) ou [enviar](../api/message_send.md) esse rascunho.|
 |[delta](../api/message_delta.md)|Coleção [message](message.md)| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
-|[forward](../api/message_forward.md)|None|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[forward](../api/message_forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message_move.md)|[Message](message.md)|Mover a mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
-|[reply](../api/message_reply.md)|None|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[replyAll](../api/message_replyall.md)|None|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[send](../api/message_send.md)|None|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
+|[reply](../api/message_reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[replyAll](../api/message_replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[send](../api/message_send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |**Anexos**| | |
 |[Listar anexos](../api/message_list_attachments.md) |Coleção [Attachment](attachment.md)| Obtém todos os anexos em uma mensagem.|
 |[Add attachment](../api/message_post_attachments.md) |[Attachment](attachment.md)| Adicione um novo anexo a uma mensagem postando na coleção attachments.|
@@ -33,7 +33,7 @@ Esse recurso permite:
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension_get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obter um ou mais objetos de extensão ou identificados por nome ou nome totalmente qualificado.|
 |**Extensões de esquema**| | |
-|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
+|[Adicionar valores de extensões de esquema](../../../concepts/extensibility_schema_groups.md) || Criar uma definição para a extensão de esquema e usá-la para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[message](message.md)  |Criar uma ou mais propriedades estendidas de valor único em uma mensagem nova ou existente.   |
 |[Obter mensagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [message](message.md) | Obter mensagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
@@ -83,7 +83,7 @@ Prefer: outlook.allow-unsafe-html
 
 Quando uma mensagem está sendo redigida, na maioria dos casos, as propriedades From e Sender representam o mesmo usuário conectado, a menos que ele seja atualizado conforme descrito nos seguintes cenários:
 
-- A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal de Gerenciamento do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
+- A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
 - A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, a propriedade **sender** é definida como a conta desse representante, enquanto a propriedade **from** Você pode definir programaticamente a propriedade **sender** para um usuário com direito de representante para essa caixa de correio.
 
 ## <a name="relationships"></a>Relações
@@ -149,7 +149,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Get mailbox settings](../api/user_get_mailboxsettings.md) 
 - [Atualizar configurações da caixa de correio](../api/user_update_mailboxsettings.md)
