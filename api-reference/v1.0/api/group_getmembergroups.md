@@ -6,11 +6,13 @@ Esta função dá suporte ao Office 365 e a outros tipos de grupos provisionados
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
+>**Observação:** esta API atualmente exige permissão Directory.Read.All ou posterior. Usar a permissão Group.Read.All retornará um erro. Este é um bug conhecido.
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ Content-length: 33
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -228,31 +228,62 @@ Para saber mais sobre a KQL como a sintaxe, operadores com suporte e dicas de pe
 
 Você pode usar a API de Pessoas do Microsoft Graph para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. A API de Pessoas dá suporte ao parâmetro de consulta `$search`.
 
-As pesquisas de pessoas ocorrem nas propriedades **displayName** and **emailAddress** do recurso [person](../api-reference/v1.0/resources/person.md). As pesquisas implementam um algoritmo de correspondência difusa. Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa. Por exemplo, imagine que um usuário com o nome de exibição "Carlos Lima" e o endereço de email carloslim@example.com que esteja no conjunto **pessoas** do usuário conectado. Todas as pesquisas a seguintes retornarão resultados que contêm Carlos.
+As pesquisas de pessoas ocorrem nas propriedades **displayName** e **emailAddress** do recurso [person](../api-reference/v1.0/resources/person.md).
+
+A seguinte solicitação faz uma pesquisa por uma pessoa chamada "Clara Barbosa" nas propriedades **displayName** e **emailAddress** em todos os indivíduos no conjunto de **Pessoas** do usuário conectado. Como uma pessoa denominada "Clara Barbosa" é relevante para o usuário conectado, as informações para "Clara Barbosa" são retornadas.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
-GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
-GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
+GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
 ```
 
-Você também pode executar pesquisas de pessoas que estão interessadas em determinado tópico. As pesquisas são executadas com base nas inferências derivadas das conversas de email do usuário. Por exemplo, a pesquisa a seguir retornará um conjunto de pessoas relevantes para o usuário conectado que tenham expressado interesse por pizza nas comunicações com o usuário. Observe que a frase de pesquisa está entre aspas.
+O exemplo a seguir mostra a resposta. 
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+       {
+           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
+           "displayName": "Irene McGowan",
+           "givenName": "Irene",
+           "surname": "McGowan",
+           "birthday": "",
+           "personNotes": "",
+           "isFavorite": false,
+           "jobTitle": "Auditor",
+           "companyName": null,
+           "yomiCompany": "",
+           "department": "Finance",
+           "officeLocation": "12/1110",
+           "profession": "",
+           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
+           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
+           "scoredEmailAddresses": [
+               {
+                   "address": "irenem@contoso.onmicrosoft.com",
+                   "relevanceScore": -16.446060612802224
+               }
+           ],
+           "phones": [
+               {
+                   "type": "Business",
+                   "number": "+1 412 555 0109"
+               }
+           ],
+           "postalAddresses": [],
+           "websites": [],
+           "personType": {
+               "class": "Person",
+               "subclass": "OrganizationUser"
+           }
+       }
+   ]
+}
 ```
 
-Finalmente, você pode combinar pesquisas de pessoas e pesquisas de tópicos na mesma solicitação combinando os dois tipos de expressão de pesquisa.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-Essa solicitação realiza basicamente duas pesquisas: uma pesquisa difusa em relação às propriedades **displayName** e **emailAddress** de pessoas relevantes ao usuário conectado e uma pesquisa pontual por "pizza" em relação às pessoas relevantes ao usuário. Os resultados são classificados, ordenados e retornados. A pesquisa não é restritiva. Você pode obter resultados que contenham pessoas com correspondência difusa "car", que estejam interessadas em "pizza" ou ambos.
-
-Para saber mais sobre a API de Pessoas, confira [Obter informações sobre pessoas relevantes](./people_example.md).  
+Saiba mais sobre a API de Pessoas em [Obter informações sobre pessoas relevantes](./people_example.md#search-people).  
 
 ## <a name="select-parameter"></a>parâmetro select
 

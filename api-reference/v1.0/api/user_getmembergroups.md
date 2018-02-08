@@ -5,11 +5,13 @@ Esta função dá suporte ao Office 365 e a outros tipos de grupos provisionados
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
+>**Observação:** esta API atualmente exige permissão Directory.Read.All ou posterior. Usar as permissões User.Read ou User.ReadBasic.All em combinação com a permissão Group.Read.All retornará um erro. Este é um bug conhecido.
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read and Group.Read.All, User.ReadBasic.All and Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | *User.Read and Group.Read.All*, *User.ReadBasic.All and Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | *Group.Read.All*, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

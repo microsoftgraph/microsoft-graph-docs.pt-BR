@@ -25,7 +25,7 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 
 ## <a name="request-parameters"></a>Solicitar parâmetros
 
-Na URL da solicitação, forneça um valor válido ao parâmetro de consulta escolhido.
+Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |
@@ -72,7 +72,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Minutos de áudios/vídeos em conferência organizada
 - Contagem de compartilhamentos de aplicativos em conferência organizada
 - Contagem de Web em conferência organizada
-- Contagem de chamadas  dial-in/out por terceiros em conferência organizada
+- Contagem de chamadas dial-in/out por terceiros em conferência organizada
 - Contagem de chamadas dial-in/out pela Microsoft em conferência organizada
 - Minutos de chamadas dial-in pela Microsoft em conferência organizada
 - Minutos de chamadas dial-out pela Microsoft em conferência organizada

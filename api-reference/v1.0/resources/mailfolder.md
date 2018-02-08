@@ -1,8 +1,10 @@
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
-Uma mailFolder em caixa de correio de um usuário, como Caixa de Entrada, Rascunhos e Itens Enviados. MailFolders podem conter mensagens e mailFolders filho.
+Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
 
-Esse recurso suporta a utilização da [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/mailfolder_delta.md).
+O Outlook cria determinadas pastas para usuários por padrão. Em vez de usar o valor **id** da pasta correspondente, para mais praticidade, é possível usar os seguintes nomes de pasta comuns ao acessar essas pastas em um conjunto de **mailFolder**: `ArchiveRoot`, `ConversationHistory`, `DeletedItems`, `Drafts`, `Inbox`, `JunkEmail`, `Outbox` e `SentItems`.
+
+Esse recurso tem suporte para o uso da [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/mailfolder_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -83,7 +85,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar a consulta delta para controlar alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](../../../concepts/delta_query_messages.md)

@@ -1,6 +1,6 @@
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
-Copie uma pasta de email e seu conteúdo para outra pasta de email.
+Copie uma mailFolder e seu conteúdo para outra mailFolder.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -28,7 +28,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|destinationId|Cadeia de caracteres|A ID da pasta ou um nome de pasta conhecido, como *Inbox*, *Drafts*, *SentItems* ou *DeletedItems*.|
+|destinationId|Cadeia de caracteres|A ID da pasta ou um nome de pasta comum, como *Caixa de Entrada*, *Rascunhos*, *Itens Enviados* ou *Itens Excluídos*. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Resposta
 

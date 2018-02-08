@@ -15,14 +15,15 @@ Você pode usar nomes comuns, como `Inbox`, `Drafts`, `SentItems` ou `DeletedIte
 ```
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
+Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).
 
-## <a name="common-use-cases"></a>Casos comuns de uso 
+## <a name="common-use-cases"></a>Casos de uso comuns 
 
 O recurso **message** expõe propriedades como **categories**, **conversationId**, **flag** e **importance** que correspondem a recursos disponíveis na interface do usuário, permitindo que os aplicativos automatizem ou integrem a experiência de usuário interna do Outlook. 
 
 A API do Microsoft Graph também fornece métodos e ações que ofereçam suporte a casos de uso comuns de mensagens.
 
-| Casos de uso        | Recursos REST | Veja também |
+| Casos de uso        | Recursos REST | Confira também |
 |:---------------|:--------|:----------|
 | **Ações centradas no usuário** | | |
 | Rascunho, ler, responder, encaminhar, enviar, atualizar ou excluir mensagens | [message](../resources/message.md) | [Métodos de mensagem](../resources/message.md#methods) |
@@ -43,8 +44,8 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 A API de email pode permitir novas formas de envolvimento com os usuários: 
 
 - Analise em detalhes os [métodos](../resources/message.md#methods), [propriedades](../resources/message.md#properties) e [relações](../resources/message.md#relationships) dos recursos de [message](../resources/message.md) e [mailFolder](../resources/mailfolder.md).
-- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
 
-Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph/examples#partners).
+Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/graph/examples#partners).
 
 

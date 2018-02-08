@@ -25,7 +25,7 @@ GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 
 ## <a name="request-parameters"></a>Solicitar parâmetros
 
-Na URL da solicitação, forneça um valor válido ao parâmetro de consulta escolhido.
+Na URL da solicitação, forneça um valor válido ao parâmetro de consulta.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |

@@ -6,11 +6,13 @@ Você pode verificar até 20 grupos por solicitação. Esta função é compatí
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
+>**Observação:** esta API atualmente exige permissão Directory.Read.All ou posterior. Usar permissões User.Read.All ou User.ReadWrite.All retornará um erro. Este é um bug conhecido.
+
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | *User.Read.All*, *User.ReadWrite.All*, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Aplicativo | *User.Read.All*, *User.ReadWrite.All*, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

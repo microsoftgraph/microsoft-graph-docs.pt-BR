@@ -24,7 +24,7 @@ GET /reports/getMailboxUsageMailboxCounts(period='{period_value}')
 
 ## <a name="request-parameters"></a>Solicitar parâmetros
 
-Na URL da solicitação, forneça um valor válido ao seguinte parâmetro de consulta.
+Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |

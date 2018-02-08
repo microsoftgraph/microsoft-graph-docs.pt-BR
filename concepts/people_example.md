@@ -659,7 +659,7 @@ As solicitações nesta seção permitem procurar pessoas relevantes para o usu�
 ### <a name="use-search-to-select-people"></a>Usar a pesquisa para selecionar pessoas 
 Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios. 
 
-A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **displayName** tem uma palavra que começa com a letra "j".
+A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **displayName** ou *emailAddress" tem uma palavra que começa com a letra "j".
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
@@ -772,58 +772,40 @@ Content-type: application/json
 }
 ```
 ### <a name="perform-a-fuzzy-search"></a>Realizar uma pesquisa difusa 
-A solicitação a seguir faz uma pesquisa por uma pessoa denominada “Clara Barbosa”. Como uma pessoa denominada "Clara Barbosa" é relevante para o usuário conectado, as informações para "Clara Barbosa" são retornadas.
+
+As pesquisas implementam um algoritmo de correspondência difusa. Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa. Por exemplo, imagine que um usuário com o nome de exibição "Carlos Lima" e o endereço de email carloslim@example.com que esteja no conjunto **pessoas** do usuário conectado. Todas as pesquisas a seguir retornarão esse usuário Carlos como um dos resultados.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="Irene McGowen"
+GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
+GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-O exemplo a seguir mostra a resposta. 
+Também é possível executar pesquisas para pessoas relevantes para o usuário conectado e que tenham manifestado interesse em se comunicar com esse usuário sobre tópicos como pizzas no exemplo a seguir:
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-       {
-           "id": "C0BD1BA1-A84E-4796-9C65-F8A0293741D1",
-           "displayName": "Irene McGowan",
-           "givenName": "Irene",
-           "surname": "McGowan",
-           "birthday": "",
-           "personNotes": "",
-           "isFavorite": false,
-           "jobTitle": "Auditor",
-           "companyName": null,
-           "yomiCompany": "",
-           "department": "Finance",
-           "officeLocation": "12/1110",
-           "profession": "",
-           "userPrincipalName": "irenem@contoso.onmicrosoft.com",
-           "imAddress": "sip:irenem@contoso.onmicrosoft.com",
-           "scoredEmailAddresses": [
-               {
-                   "address": "irenem@contoso.onmicrosoft.com",
-                   "relevanceScore": -16.446060612802224
-               }
-           ],
-           "phones": [
-               {
-                   "type": "Business",
-                   "number": "+1 412 555 0109"
-               }
-           ],
-           "postalAddresses": [],
-           "websites": [],
-           "personType": {
-               "class": "Person",
-               "subclass": "OrganizationUser"
-           }
-       }
-   ]
-}
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
 ```
+
+Os tópicos neste contexto são apenas palavras que os usuários usaram com mais frequência nas conversas de email. A Microsoft extrai essas palavras e cria um índice para esses dados para facilitar pesquisas difusas. 
+
+A frase de pesquisa está entre aspas, e os tópicos nesses dados são extraídos dos contextos. Por exemplo, ao pesquisar por "windows" na seguinte consulta:
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
+```
+temos uma busca difusa no índice de dados do tópico, e os resultados podem incluir instâncias que significam o sistema operacional Windows, uma abertura em uma parede ou outras definições.
+
+Finalmente, é possível combinar pesquisas de pessoas e pesquisas de tópicos na mesma solicitação combinando os dois tipos de expressão de pesquisa.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
+```
+
+Essa solicitação realiza basicamente duas pesquisas: uma pesquisa difusa em relação às propriedades **displayName** e **emailAddress** de pessoas relevantes ao usuário conectado e uma pesquisa pontual por "pizza" em relação às pessoas relevantes ao usuário. Os resultados são classificados, ordenados e retornados. A pesquisa não é restritiva. Você pode obter resultados que contenham pessoas com correspondência difusa "car", que estejam interessadas em "pizza" ou ambos.
+
 ### <a name="search-other-users-relevant-people"></a>Pesquisar pessoas relevantes de outro usuário
 A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado. Esta solicitação requer a permissão People.Read.All. Neste exemplo, as pessoas relevantes de Roscoe Seidel são exibidas.
 

@@ -30,7 +30,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|DestinationId|Cadeia de caracteres|O ID da pasta de destino ou nomes de pasta bem conhecidos, como `Inbox`, `Drafts`, `SentItems` ou `DeletedItems`.|
+|DestinationId|String|A ID da pasta de destino ou um nome de pasta comum, como *Caixa de Entrada*, *Rascunhos*, *Itens Enviados* ou *Itens Excluídos*. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Resposta
 
