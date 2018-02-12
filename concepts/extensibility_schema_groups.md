@@ -93,7 +93,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 Content-length: 420
 {
-    "id": "graphlearn_course",
+    "id": "graphlearn_courses",
     "description": "Graph Learn training courses extensions",
     "targetTypes": [
         "Group"
@@ -224,7 +224,7 @@ Content-length: 326
 }
 ```
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar dados personalizados a recursos usando extensões](extensibility_overview.md)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility_open_users.md)

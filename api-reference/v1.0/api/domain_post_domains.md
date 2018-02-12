@@ -46,7 +46,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [domain](
   "id": "create_domain_from_domains"
 }-->
 ```http
-POST https://graph.microsoft.com/V1.0/domains
+POST https://graph.microsoft.com/v1.0/domains
 Content-type: application/json
 Content-length: 192
 
