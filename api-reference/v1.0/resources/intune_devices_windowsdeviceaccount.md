@@ -1,0 +1,29 @@
+# <a name="windowsdeviceaccount-resource-type"></a><span data-ttu-id="f9fae-101">Tipo de recurso windowsDeviceAccount</span><span class="sxs-lookup"><span data-stu-id="f9fae-101">windowsDeviceAccount resource type</span></span>
+
+> <span data-ttu-id="f9fae-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="f9fae-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="f9fae-103">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="f9fae-103">Not yet documented</span></span>
+## <a name="properties"></a><span data-ttu-id="f9fae-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f9fae-104">Properties</span></span>
+|<span data-ttu-id="f9fae-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f9fae-105">Property</span></span>|<span data-ttu-id="f9fae-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="f9fae-106">Type</span></span>|<span data-ttu-id="f9fae-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9fae-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="f9fae-108">password</span><span class="sxs-lookup"><span data-stu-id="f9fae-108">password</span></span>|<span data-ttu-id="f9fae-109">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f9fae-109">String</span></span>|<span data-ttu-id="f9fae-110">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="f9fae-110">Not yet documented</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="f9fae-111">Relações</span><span class="sxs-lookup"><span data-stu-id="f9fae-111">Relationships</span></span>
+<span data-ttu-id="f9fae-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="f9fae-112">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f9fae-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f9fae-113">JSON Representation</span></span>
+<span data-ttu-id="f9fae-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f9fae-114">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsDeviceAccount"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsDeviceAccount",
+  "password": "String"
+}
+```
+
+
+
