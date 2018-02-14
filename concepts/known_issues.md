@@ -261,7 +261,7 @@ Sempre especifique URIs relativas em solicitações de lote. O Microsoft Graph e
 
 ### <a name="limit-on-batch-size"></a>Limite de tamanho de lote
 
-Solicitações de lote JSON atualmente estão limitadas a 5 solicitações individuais. Conforme o processamento em lotes JSON amadurece, esse limite é aumentado.
+No momento, as solicitações de lote JSON estão limitadas a 20 solicitações individuais.
 
 ### <a name="simplified-dependencies"></a>Dependências simplificadas
 
