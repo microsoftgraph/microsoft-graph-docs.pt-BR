@@ -1,0 +1,32 @@
+# <a name="edgesearchengine-resource-type"></a><span data-ttu-id="b2745-101">Tipo de recurso edgeSearchEngine</span><span class="sxs-lookup"><span data-stu-id="b2745-101">edgeSearchEngine resource type</span></span>
+
+> <span data-ttu-id="b2745-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="b2745-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="b2745-103">Permite que os administradores de TI configurem um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM.</span><span class="sxs-lookup"><span data-stu-id="b2745-103">Allows IT admins to set a predefined default search engine for MDM-Controlled devices.</span></span>
+
+<span data-ttu-id="b2745-104">Herda de [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)</span><span class="sxs-lookup"><span data-stu-id="b2745-104">Inherits from [edgeSearchEngineBase](../resources/intune_deviceconfig_edgesearchenginebase.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="b2745-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b2745-105">Properties</span></span>
+|<span data-ttu-id="b2745-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b2745-106">Property</span></span>|<span data-ttu-id="b2745-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="b2745-107">Type</span></span>|<span data-ttu-id="b2745-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="b2745-108">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="b2745-109">edgeSearchEngineType</span><span class="sxs-lookup"><span data-stu-id="b2745-109">edgeSearchEngineType</span></span>|<span data-ttu-id="b2745-110">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b2745-110">String</span></span>|<span data-ttu-id="b2745-111">Permite que os administradores de TI configurem um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM.</span><span class="sxs-lookup"><span data-stu-id="b2745-111">Allows IT admins to set a predefined default search engine for MDM-Controlled devices.</span></span> <span data-ttu-id="b2745-112">Os valores possíveis são: `default`, `bing`.</span><span class="sxs-lookup"><span data-stu-id="b2745-112">Possible values are: `default`, `bing`.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="b2745-113">Relações</span><span class="sxs-lookup"><span data-stu-id="b2745-113">Relationships</span></span>
+<span data-ttu-id="b2745-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b2745-114">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b2745-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b2745-115">JSON Representation</span></span>
+<span data-ttu-id="b2745-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b2745-116">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.edgeSearchEngine"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.edgeSearchEngine",
+  "edgeSearchEngineType": "String"
+}
+```
+
+
+
