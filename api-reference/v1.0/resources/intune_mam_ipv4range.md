@@ -1,13 +1,16 @@
-# <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
+# <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Par chave-valor para armazenar configurações personalizadas
+Intervalo de IP V4
+
+Herda de [ipRange](../resources/intune_mam_iprange.md)
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|Nome deste par chave-valor|
-|valor|Cadeia de caracteres|Valor deste par chave-valor|
+|lowerAddress|Cadeia de caracteres|Endereço IP de número mais baixo|
+|upperAddress|Cadeia de caracteres|Endereço IP de número mais alto|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -16,14 +19,14 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.keyValuePair"
+  "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.keyValuePair",
-  "name": "String",
-  "value": "String"
+  "@odata.type": "#microsoft.graph.iPv4Range",
+  "lowerAddress": "String",
+  "upperAddress": "String"
 }
 ```
 

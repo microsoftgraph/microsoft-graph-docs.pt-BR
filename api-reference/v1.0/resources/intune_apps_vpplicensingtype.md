@@ -1,13 +1,13 @@
-# <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
+# <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Par chave-valor para armazenar configurações personalizadas
+Contém propriedades para o tipo de licenciamento iOS Volume-Purchased Program (VPP).
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|Nome deste par chave-valor|
-|valor|Cadeia de caracteres|Valor deste par chave-valor|
+|supportsUserLicensing|Booliano|Se o programa dá suporte ao tipo de licença do usuário.|
+|supportsDeviceLicensing|Booliano|Se o programa dá suporte ao tipo de licenciamento do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -16,14 +16,14 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.keyValuePair"
+  "@odata.type": "microsoft.graph.vppLicensingType"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.keyValuePair",
-  "name": "String",
-  "value": "String"
+  "@odata.type": "#microsoft.graph.vppLicensingType",
+  "supportsUserLicensing": true,
+  "supportsDeviceLicensing": true
 }
 ```
 

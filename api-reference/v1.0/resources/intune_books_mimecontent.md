@@ -7,7 +7,7 @@ Contém as propriedades de um conteúdo genérico MIME.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |type|Cadeia de caracteres|Indica o tipo de conteúdo MIME.|
-|value|Binária|A matriz de byte que contém o conteúdo atual.|
+|valor|Binário|A matriz de byte que contém o conteúdo atual.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

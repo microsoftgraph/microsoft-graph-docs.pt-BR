@@ -1,6 +1,6 @@
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
-Um participante do evento.
+Um participante do evento. Pode ser uma pessoa ou recurso, como uma sala de reunião ou equipamento, que seja configurado como um recurso no Exchange Server para o locatário.
 
 Derivado de [attendeeBase](attendeebase.md).
 
@@ -8,7 +8,7 @@ Derivado de [attendeeBase](attendeebase.md).
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|type|Cadeia de caracteres|O tipo de participante: `Required`, `Optional` ou `Resource`.|
+|type|Cadeia de caracteres|O tipo de participante: `required`, `optional` ou `resource`.|
 |emailAddress|[emailAddress](emailAddress.md)|Inclui o nome e endereço SMTP do participante.|
 
 ## <a name="json-representation"></a>Representação JSON
