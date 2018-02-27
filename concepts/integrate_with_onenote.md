@@ -16,7 +16,8 @@ Capture HTML, insira imagens (originadas localmente ou em uma URL pública), ví
 Aproveite outros recursos poderosos do OneNote. As APIs do OneNote no Microsoft Graph executam OCR em imagens, dão suporte à pesquisa de texto completo, sincronizam clientes automaticamente, processam imagens e extraem capturas de cartões de visita e listagens de receitas e produtos online. Use o OneNote como seu repositório de memória digital na nuvem para anotações e mídia leve ou como um feed de dados para dados específicos de domínio. 
 
 ### <a name="reach-millions-of-onenote-users-on-all-major-platforms"></a>Alcance milhares de usuários do OneNote em todas as principais plataformas
-Use o OneNote para aumentar o uso do aplicativo. O OneNote vem pré-instalado no novos dispositivos Windows e está disponível para a maioria das plataformas, online e como parte do Office 365. Ao publicar aplicativos que usam o ambiente do OneNote repleto de recursos, você tem acesso a um amplo potencial de mercado em várias plataformas.
+Use o OneNote para aumentar o uso do aplicativo. O OneNote vem pré-instalado nos novos dispositivos Windows e está disponível para a maioria das plataformas, online e como parte do Office 365.
+ Ao publicar aplicativos que usam o ambiente do OneNote repleto de recursos, você tem acesso a um amplo potencial de mercado em várias plataformas.
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: https://developer.microsoft.com/en-us/graph/docs/concepts/featured_scenarios. You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 
