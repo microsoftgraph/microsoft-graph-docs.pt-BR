@@ -12,7 +12,7 @@ Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará ad
 
 Para implantar os aplicativos que são integrados às APIs de educação do Microsoft Graph, primeiramente, os administradores de TI da escola devem dar consentimento para as permissões solicitadas pelo aplicativo. Esse consentimento deve ser concedido apenas uma vez, a menos que as permissões mudem. Após o consentimento do administrador, o aplicativo está provisionado para todos os usuários no locatário.
 
-Para acionar uma caixa de diálogo de consentimento, use a chamada REST a seguir.
+Para mostrar uma caixa de diálogo de consentimento, use a chamada REST a seguir.
 
 ```
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
