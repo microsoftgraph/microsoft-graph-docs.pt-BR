@@ -46,14 +46,14 @@ Esse recurso permite:
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
-|hasAttachments|Boolean|Defina como true se o evento tiver anexos.|
+|hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |iCalUId|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes.|
 |id|String| Somente leitura.|
-|importance|String|A importância do evento: Low = 0, Normal = 1, High = 2. Os valores possíveis são: `Low`, `Normal`, `High`.|
-|isAllDay|Boolean|Defina como true se o evento durar o dia inteiro.|
-|isCancelled|Boolean|Defina como true se o evento tiver sido cancelado.|
-|isOrganizer|Boolean|Defina como true se o remetente da mensagem também for o organizador.|
-|isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
+|isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
+|isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
+|isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|O local do evento.|
 |onlineMeetingUrl|String|Uma URL para uma reunião online.|
@@ -63,11 +63,11 @@ Esse recurso permite:
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `Normal`, `Personal`, `Private`, `Confidential`.|
 |seriesMasterId|String|As categorias atribuídas ao item.|
-|showAs|String|O status a ser exibido. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` e `Unknown`.|
+|showAs|String|O status a ser exibido. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
 |subject|String|O texto da linha de assunto do evento.|
 |type|String|O tipo de evento. Os valores possíveis são: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Somente leitura.|

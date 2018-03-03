@@ -43,18 +43,18 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |attendees|[Attendee](../resources/attendee.md)|A coleção de participantes do evento.|
 |corpo|[ItemBody](../resources/itembody.md)|O corpo da mensagem associada ao evento.|
 |categories|String|As categorias associadas ao evento.|
-|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|A data e a hora em que o evento termina.<br/><br/>Por padrão, a hora de término é em UTC. Você pode especificar um fuso horário opcional em EndTimeZone, expressar a hora de término nesse fuso horário e incluir uma diferença de tempo em relação a UTC. Observe que, se usar EndTimeZone, você deverá especificar um valor para StartTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 21: 34 na Hora Padrão do Pacífico: "2015-02-25T21:34:00-08:00". |
-|importance|String|A importância do evento: Low = 0, Normal = 1, High = 2. Os valores possíveis são: `Low`, `Normal`, `High`.|
-|isAllDay|Boolean|Defina como true se o evento durar o dia inteiro.|
-|isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|A data e a hora em que o evento termina.<br/><br/>Por padrão, a hora de término é em UTC. Você pode especificar um fuso horário opcional em EndTimeZone, expressar a hora de término nesse fuso horário e incluir uma diferença de tempo em relação a UTC. Se usar EndTimeZone, você deverá especificar um valor para StartTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 21: 34 na Hora Padrão do Pacífico: "2015-02-25T21:34:00-08:00". |
+|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
+|isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |location|[Location](../resources/location.md)|O local do evento.|
 |onlineMeetingUrl|String|Uma URL para uma reunião online.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |sensitivity|String| Os valores possíveis são: `Normal`, `Personal`, `Private`, `Confidential`.|
-|showAs|String|O status a ser exibido. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere` e `Unknown`.|
-|iniciar|[DateTimeTimeZone](../resources/datetimetimezone.md)|A hora de início do evento. <br/><br/>Por padrão, a hora de início é em UTC. Você pode especificar um fuso horário opcional em StartTimeZone, expressar a hora de início no fuso horário correspondente e incluir uma diferença de tempo em relação a UTC. Observe que, se usar StartTimeZone, você deverá especificar um valor para EndTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 19:34 na Hora Padrão do Pacífico: "2015-02-25T19:34:00-08:00".  |
+|showAs|String|O status a ser exibido. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|iniciar|[DateTimeTimeZone](../resources/datetimetimezone.md)|A hora de início do evento. <br/><br/>Por padrão, a hora de início é em UTC. Você pode especificar um fuso horário opcional em StartTimeZone, expressar a hora de início no fuso horário correspondente e incluir uma diferença de tempo em relação a UTC. Se usar StartTimeZone, você deverá especificar um valor para EndTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 19:34 na Hora Padrão do Pacífico: "2015-02-25T19:34:00-08:00".  |
 |subject|String|O texto da linha de assunto do evento.|
 
 Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **event** existente.

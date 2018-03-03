@@ -38,7 +38,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -113,6 +113,23 @@ Content-type: application/json
     "height": 1
 }
 ```
+## <a name="using-the-binary-data-of-the-requested-photo"></a>Usando os dados binários da foto solicitada
+
+Ao usar o ponto de extremidade `/photo/$value` para obter os dados binários de uma foto de perfil, você precisa converter os dados em uma cadeia de caracteres da base 64 para adicioná-la como um anexo de email. Veja aqui um exemplo no JavaScript de como criar uma matriz que você pode passar como o valor do parâmetro `Attachments` de uma [Mensagem do Outlook](user_post_messages.md).
+
+      const attachments = [{
+        '@odata.type': '#microsoft.graph.fileAttachment',
+        ContentBytes: file.toString('base64'),
+        Name: 'mypic.jpg'
+      }];
+
+Confira [Amostra de conexão do Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) para ver uma implementação desse exemplo.
+
+Se quiser exibir a imagem em uma página da Web, crie um objeto de memória usando a imagem e torne esse objeto a fonte de um elemento de imagem. Veja aqui um exemplo dessa operação no JavaScript.
+
+    const url = window.URL || window.webkitURL;
+    const blobUrl = url.createObjectURL(image.data);
+    document.getElementById(imageElement).setAttribute("src", blobUrl);
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
