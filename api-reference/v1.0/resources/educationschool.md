@@ -1,14 +1,6 @@
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
-Escola A. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](../../beta/resources/administrativeunit.md) e compartilha a mesma ID.  
-
->**Observação:** atualmente, os recursos **administrativeUnit** e **educationOrganization** estão na versão beta. Se estiver usando esses recursos, certifique-se de revisar o [Log de mudanças](../../../concepts/changelog.md) periodicamente. Quando os recursos de API do Microsoft Graph forem lançados para o ponto de extremidade v1.0, anotaremos isso no Log de mudanças. Se o aplicativo consumir os recursos **administrativeUnit** ou **educationOrganization**, você precisará declarar URLs básicas de solicitação, como mostrado no bloco de códigos a seguir.  
-  ```JavaScript
-  var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
-  var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
-  ```
-
-Esse recurso é um subtipo de [educationOrganization](../../beta/resources/educationorganization.md).
+Recurso usado para gerenciar aulas, professores e alunos da escola representada.  
 
 
 ## <a name="methods"></a>Métodos
@@ -22,7 +14,6 @@ Esse recurso é um subtipo de [educationOrganization](../../beta/resources/educa
 |[Adicionar usuário](../api/educationschool_post_users.md) |[educationUser](educationuser.md)| Adicione um novo **educationUser** para a escola postando na propriedade de navegação de **usuários**.|
 |[Listar usuários](../api/educationschool_list_users.md) |Coleção [educationUser](educationuser.md)| Obtenha a coleção de objetos **educationUser**.|
 |[Remover usuário](../api/educationschool_delete_users.md) |[educationUser](educationuser.md)| Remova um **educationUser** da escola por meio da propriedade de navegação **users**.|
-|[Obter administrativeUnit](../api/educationschool_get_administrativeunit.md) |[administrativeUnit](../../beta/resources/administrativeunit.md)| Obtenha a **administrativeUnit** que corresponde a essa **educationSchool**.|
 |[Atualizar](../api/educationschool_update.md) | [educationSchool](educationschool.md) |Atualize um objeto **educationSchool**. |
 |[Excluir](../api/educationschool_delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
 
