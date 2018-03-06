@@ -37,7 +37,9 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
 - Suporte à consulta delta `$select`, `$top` e `$expand` para mensagens. 
-- Há suporte limitado para `$orderby`: A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
+- Há suporte limitado para `$filter` e `$orderby`:
+  * A única expressão `$filter` suportada é para controlar alterações em um ou dois usuários específicos: `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}` 
+  * A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
 - Não há suporte para `$search`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -35,7 +35,8 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
 - Suporte à consulta delta `$select`, `$top` e `$expand` para grupos. 
-- Há suporte limitado para `$orderby`: A única expressão `$orderby` suportada é `$orderby=receivedDateTime+desc`. Se você não incluir uma expressão `$orderby`, a ordem de retorno não será garantida. 
+- Há suporte limitado para `$filter` e `$orderby`:
+  * A única expressão `$filter` suportada é para controlar alterações em um objeto específico: `$filter=id+eq+{value}`. É possível filtrar vários objetos. Por exemplo, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`. Há um limite de 50 objetos filtrados.
 - Não há suporte para `$search`.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -71,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

@@ -22,7 +22,7 @@ Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de 
 
 Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você precisa saber sobre eles:
 
-- Cada token reflete o estado e representa um instantâneo do recurso dessa fase do rastreamento de alterações. 
+- Cada token reflete o estado e representa um instantâneo do recurso dessa fase do controle de alterações. 
 - Os tokens de estado também codificam e incluem outros parâmetros da consulta (como `$select`) especificados na solicitação de consulta delta inicial. Portanto, ele não é necessário repeti-los em solicitações de consulta delta subsequentes.
 - Ao realizar a consulta delta, você pode copiar e aplicar a URL `nextLink` ou `deltaLink` à próxima chamada de função **delta** sem precisar inspecionar o conteúdo da URL, incluindo seu token de estado.
 
@@ -36,7 +36,7 @@ Para usuários e grupos, existem restrições sobre como usar alguns parâmetros
 -   Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
 -   Não há suporte para `$expand`.
 
-Nas APIs de usuários e grupos beta (prévia), os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações dos grupos que correspondem às IDs especificadas no filtro de consulta. 
+Nas APIs de usuários e grupos, os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' ou id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações dos grupos que correspondem às IDs especificadas no filtro de consulta. 
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representação de recurso na resposta da consulta delta
 
@@ -70,7 +70,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Itens de unidade\* | Função [delta](../api-reference/v1.0/api/driveitem_delta.md) do recurso [driveItem](../api-reference/v1.0/resources/driveitem.md) |
 
 
-> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
+> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/item_delta).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
