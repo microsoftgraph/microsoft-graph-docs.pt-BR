@@ -6,7 +6,7 @@ Representa informações de localização para um evento.
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo   | Descrição                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
-| address | [physicalAddress](physicalAddress.md) |O endereço físico do local. |
+| address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | displayName  | Cadeia de caracteres | O nome associado ao local.                       |
 | locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local.              |
 
