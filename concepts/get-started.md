@@ -1,12 +1,21 @@
 # <a name="getting-started-building-microsoft-graph-apps"></a>Introdução à criação de aplicativos do Microsoft Graph
 
-Os artigos desta seção fornecem orientações detalhadas sobre como criar aplicativos que se conectam ao Microsoft Graph em uma variedade de linguagens e plataformas de desenvolvimento. Cada artigo começa com um exemplo de projeto inicial para a plataforma apropriada e orienta para que você consiga adicionar funcionalidades que autenticam o usuário e fazem um exemplo de solicitação para que o Microsoft Graph envie um email da sua conta. O projeto concluído é idêntico ao [Exemplo de conexão no repositório do Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) para essa plataforma.
+Os artigos desta seção fornecem orientações detalhadas sobre como criar aplicativos que se conectam ao Microsoft Graph em uma variedade de linguagens e plataformas de desenvolvimento. Cada artigo funciona como um projeto inicial e orienta você pelas etapas fundamentais para se conectar ao Microsoft Graph:
 
-Escolha o artigo correspondente ao provedor de autenticação e à plataforma de desenvolvimento de sua escolha e comece a conexão com o Microsoft Graph. Para mais informações, confira [Qual é a diferença do ponto de extremidade v2.0?](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare)
+ 1. Registrar o aplicativo
+ 2. Autenticar o usuário e obter um token de acesso no aplicativo
+ 3. Chamar o Microsoft Graph pelo aplicativo
+ 4. Executar o aplicativo
 
-Você pode seguir as etapas no artigo que aborda a plataforma de desenvolvimento que você escolheu ou, para obter rapidamente uma solução que funcione, tente a experiência de [início rápido](https://developer.microsoft.com/graph/quick-start).
+Se quiser uma solução de trabalho que entre em funcionamento mais rapidamente, experimente o [início rápido](https://developer.microsoft.com/graph/quick-start).
 
-Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](https://github.com/microsoftgraph) no GitHub. A tabela a seguir mostra os exemplos por provedor e plataforma de autenticação e observa se eles se conectam ao Microsoft Graph usando REST ou uma biblioteca de cliente do Microsoft Graph.
+Cada projeto concluído é idêntico ao [Exemplo de conexão no repositório do Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=connect) para essa plataforma.
+
+Deseja ver ainda mais códigos?
+
+Explore todos os [Exemplos do Microsoft Graph](https://github.com/microsoftgraph) no GitHub. A tabela a seguir mostra as versões adicionais dos exemplos abordados nesta seção. Elas demonstram como autenticar o usuário com os dois pontos de extremidade ADAL (v1.0 e v2.0) e usam as chamadas REST não processadas ou a biblioteca de cliente do Microsoft Graph (SDK) para se conectar ao Microsoft Graph.
+
+Escolha o artigo correspondente ao provedor de autenticação e à plataforma de desenvolvimento de sua escolha e comece se conectando ao Microsoft Graph. Confira mais informações em [Qual é a diferença do ponto de extremidade v2.0?](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-compare).
 
 
 |Plataforma |Ponto de extremidade do Azure AD |Ponto de extremidade do Azure AD v2.0 |
@@ -25,8 +34,8 @@ Para explorar os exemplos de Conexão concluídos, confira [Microsoft Graph](htt
 
 <br/>
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 
-- Experimente as chamadas REST de exemplo no [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer)
-- [Documentação de ponto de extremidade do Microsoft Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-developers-guide)
-- [Documentação de ponto de extremidade do Azure AD v2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-appmodel-v2-overview)
+- Experimente as chamadas REST de exemplo no [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer)
+- [Documentação de ponto de extremidade do Microsoft Azure AD](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-developers-guide)
+- [Documentação de ponto de extremidade do Azure AD v2.0](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-appmodel-v2-overview)

@@ -127,7 +127,7 @@ Embora o token de acesso seja opaco para o aplicativo, a resposta contém uma li
 | escopo |Uma lista separada por espaços das permissões do Microsoft Graph para as quais o access_token é válido. |
 | expires_in |Por quanto tempo o token de acesso é válido (em segundos). |
 | access_token |O token de acesso solicitado. Seu aplicativo pode usar esse token para chamar o Microsoft Graph. |
-| refresh_token |Um token de atualização OAuth 2.0. Seu aplicativo pode usar este token para adquirir tokens de acesso adicionais depois que o token de acesso atual expirar.  Os tokens de atualização são de longa duração e podem ser usados para reter o acesso aos recursos por longos períodos de tempo.  Para obter mais detalhes, confira a [referência de token v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
+| refresh_token |Um token de atualização OAuth 2.0. Seu aplicativo poderá usar este token para adquirir tokens de acesso adicionais depois que o token de acesso atual expirar.  Os tokens de atualização são de longa duração e podem ser usados para manter o acesso aos recursos por longos períodos de tempo.  Confira mais detalhes na [referência de token v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-tokens). |
 
 ## <a name="4-use-the-access-token-to-call-microsoft-graph"></a>4. Use o token de acesso para chamar o Microsoft Graph
 
@@ -251,5 +251,3 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 - Para obter informações sobre como usar o ponto de extremidade do Azure AD com diferentes tipos de aplicativos, confira os links **Introdução** no [guia do desenvolvedor do Azure Active Directory ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). O guia contém links para tópicos de visão geral, orientações para códigos e documentação de protocolos para diferentes tipos de aplicativos com suporte do ponto de extremidade do Azure AD.
 - Para saber mais sobre a ADAL (Active Directory Authentication Library) e o middleware de servidor disponíveis para uso com o ponto de extremidade do Azure AD, confira as [Bibliotecas de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries).
 
-
- 
