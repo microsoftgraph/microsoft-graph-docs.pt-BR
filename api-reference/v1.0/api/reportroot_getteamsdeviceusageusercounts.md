@@ -1,0 +1,95 @@
+# <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
+
+Obtém o número de usuários exclusivos diários do Microsoft Teams por tipo de dispositivo.
+
+## <a name="permissions"></a>Permissões
+
+Uma das permissões a seguir é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :--------------------------------------- |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                           |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                           |
+| Aplicativo                            | Reports.Read.All                         |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /reports/getTeamsDeviceUsageUserCounts(period='{period_value}')
+```
+
+## <a name="request-parameters"></a>Solicitar parâmetros
+
+Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
+
+| Parâmetro | Tipo   | Descrição                              |
+| :-------- | :----- | :--------------------------------------- |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Esses valores seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
+
+## <a name="response"></a>Resposta
+
+Se for bem-sucedido, este método retornará uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
+
+As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.
+
+O arquivo CSV possui os seguintes cabeçalhos para colunas:
+
+- Data de Atualização do Relatório
+- Web
+- Windows Phone
+- Telefone Android
+- iOS
+- Mac
+- Windows
+- Data do Relatório
+- Período de Relatório
+
+## <a name="example"></a>Exemplo
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getteamsdeviceusageusercounts"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserCounts(period='D7')
+```
+
+#### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+
+<!-- { "blockType": "ignored" } --> 
+
+```http
+HTTP/1.1 302 Found
+Content-Type: text/plain
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+
+Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,Report Period
+```
