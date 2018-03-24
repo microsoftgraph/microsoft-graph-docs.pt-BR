@@ -18,9 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceAppManagement/managedEBooks/{managedEBookId}/assign
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -36,7 +34,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Ainda não documentado|
+|managedEBookAssignments|Coleção [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|Ainda não documentado|
 
 
 
@@ -47,19 +45,20 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assign
 
 Content-type: application/json
-Content-length: 282
+Content-length: 318
 
 {
-  "assignments": [
+  "managedEBookAssignments": [
     {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
+      "@odata.type": "#microsoft.graph.managedEBookAssignment",
+      "id": "ae8b0d27-0d27-ae8b-270d-8bae270d8bae",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
+      },
+      "installIntent": "required"
     }
   ]
 }

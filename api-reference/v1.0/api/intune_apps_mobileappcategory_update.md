@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>atribuir ação
+# <a name="update-mobileappcategory"></a>Atualizar mobileAppCategory
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Ainda não documentado
+Atualizar as propriedades de um objeto [mobileAppCategory](../resources/intune_apps_mobileappcategory.md).
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -18,9 +18,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+PATCH /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -30,45 +29,48 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros.
+No corpo da solicitação, forneça uma representação JSON do objeto [mobileAppCategory](../resources/intune_apps_mobileappcategory.md).
 
-A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileAppCategory](../resources/intune_apps_mobileappcategory.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Ainda não documentado|
+|id|Cadeia de caracteres|A chave da entidade.|
+|displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
+|lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [mobileAppCategory](../resources/intune_apps_mobileappcategory.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 Content-type: application/json
-Content-length: 282
+Content-length: 107
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
+  "displayName": "Display Name value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 212
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppCategory",
+  "id": "d85d9cee-9cee-d85d-ee9c-5dd8ee9c5dd8",
+  "displayName": "Display Name value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+}
 ```
 
 

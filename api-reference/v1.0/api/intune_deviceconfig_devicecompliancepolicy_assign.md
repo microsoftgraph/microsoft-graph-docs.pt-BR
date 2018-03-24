@@ -8,7 +8,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -18,9 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -36,27 +34,27 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Ainda não documentado|
+|assignments|Coleção [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md)|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção [deviceCompliancePolicyAssignment](../resources/intune_deviceconfig_devicecompliancepolicyassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 
 Content-type: application/json
-Content-length: 282
+Content-length: 280
 
 {
   "assignments": [
     {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
       }
@@ -68,7 +66,21 @@ Content-length: 282
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 274
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
+      "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
+      "target": {
+        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+      }
+    }
+  ]
+}
 ```
 
 

@@ -1,4 +1,4 @@
-# <a name="assign-action"></a>atribuir ação
+# <a name="getauditactivitytypes-function"></a>Função getAuditActivityTypes
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
@@ -8,7 +8,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -18,9 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+GET /deviceManagement/auditEvents/getAuditActivityTypes
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -30,45 +28,37 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON dos parâmetros.
-
-A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
+Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
+A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Ainda não documentado|
+|Ferramentas para desenvolvedores|Cadeia de caracteres|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma Coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-
-Content-type: application/json
-Content-length: 282
-
-{
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
-}
+GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/getAuditActivityTypes(category='parameterValue')
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 61
+
+{
+  "value": [
+    "Get Audit Activity Types value"
+  ]
+}
 ```
 
 

@@ -1,14 +1,14 @@
-# <a name="assign-action"></a>atribuir ação
+# <a name="completesignup-action"></a>Ação completeSignup
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Ainda não documentado
+Conclui o fluxo de inscrição para gerenciamento do Android for Work.
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -18,9 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /deviceManagement/androidForWorkSettings/completeSignup
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -36,7 +34,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Ainda não documentado|
+|enterpriseToken|Cadeia de caracteres|O token do Enterprise anexado à URL de retorno de chamada depois da conclusão bem-sucedida da inscrição.|
 
 
 
@@ -47,21 +45,13 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/v1.0/deviceManagement/androidForWorkSettings/completeSignup
 
 Content-type: application/json
-Content-length: 282
+Content-length: 51
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
+  "enterpriseToken": "Enterprise Token value"
 }
 ```
 

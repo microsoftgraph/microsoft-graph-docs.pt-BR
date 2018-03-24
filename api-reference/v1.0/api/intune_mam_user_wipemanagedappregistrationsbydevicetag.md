@@ -1,8 +1,8 @@
-# <a name="assign-action"></a>atribuir ação
+# <a name="wipemanagedappregistrationsbydevicetag-action"></a>Ação wipeManagedAppRegistrationsByDeviceTag
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Ainda não documentado
+Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -18,9 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appliedPolicies/{managedAppPolicyId}/assign
-POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies/{managedAppPolicyId}/assign
+POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -36,7 +34,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Ainda não documentado|
+|deviceTag|Cadeia de caracteres|marca de dispositivo|
 
 
 
@@ -47,21 +45,13 @@ Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/assign
+POST https://graph.microsoft.com/v1.0/users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 
 Content-type: application/json
-Content-length: 282
+Content-length: 39
 
 {
-  "assignments": [
-    {
-      "@odata.type": "#microsoft.graph.targetedManagedAppPolicyAssignment",
-      "id": "8b68c4a6-c4a6-8b68-a6c4-688ba6c4688b",
-      "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
-    }
-  ]
+  "deviceTag": "Device Tag value"
 }
 ```
 
