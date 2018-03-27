@@ -8,7 +8,7 @@ A consulta delta oferece suporte à sincronização completa que recupera todos 
 
 A consulta delta para eventos é específica de um intervalo de calendário e data/hora que você especificar (ou seja, um modo de exibição de calendário). Para controlar as alterações em vários calendários, você precisa controlar cada calendário individualmente. 
 
-O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](../api-reference/v1.0/api/event_delta.md). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), exceto se você incluir a função **delta**:
+O rastreamento de alterações de evento em um modo de exibição de calendário normalmente corresponde a uma série de eventos de uma ou mais solicitações GET com a função [delta](../api-reference/v1.0/api/event_delta.md). A solicitação GET inicial é muito semelhante à maneira como você [lista uma calendarView](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/calendar_list_calendarview), exceto se você incluir a função **delta**:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}

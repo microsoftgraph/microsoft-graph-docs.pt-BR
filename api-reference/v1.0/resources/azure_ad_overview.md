@@ -17,7 +17,7 @@ Para saber mais sobre permissões, incluindo permissões delegadas e de aplicati
 
 A tabela a seguir lista alguns casos comuns de uso de recursos do Azure AD.
 
-| **Casos de uso**        | **Recursos REST** | **Veja também** |
+| **Casos de uso**        | **Recursos REST** | **Confira também** |
 |:---------------|:--------|:----------|
 | **Métodos e objeto de diretório** | | |
 | `directoryObject` é a classe-base da qual herdam muitos recursos de diretório, como usuários e grupos. O Microsoft Graph expõe vários métodos que você pode usar para descobrir informações sobre usuários, grupos e outros objetos de diretório. Por exemplo, é possível verificar a associação transitiva em uma lista de grupos, retornar todos os grupos e funções de diretório da qual um objeto de diretório é membro transitivo ou obter todos os recursos de um tipo especificado (como o usuário ou grupo) de uma lista de IDs de recurso genérico. | [directoryObject](../resources/directoryobject.md) | N/D |

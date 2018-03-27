@@ -36,7 +36,7 @@ A conta do usuário atual excedeu o número máximo de solicitações ativas. Se
 O serviço não pode criar uma página na seção solicitada porque essa seção é protegida por uma senha.
 
 ### <a name="10005"></a>10005
-A solicitação contém mais do que o número máximo de marcas de imagem nas quais o atributo **data-render-src** contém um PDF. Confira [Adicionar imagens e arquivos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files).
+A solicitação contém mais do que o número máximo de marcas de imagem nas quais o atributo **data-render-src** contém um PDF. Confira [Adicionar imagens e arquivos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-images-files).
 
 ### <a name="10006"></a>10006
 A API do OneNote não pôde criar uma página na seção especificada porque a seção está corrompida.
@@ -142,7 +142,7 @@ A propriedade solicitada não existe.
 Você solicitou um recurso que não existe.
 
 ### <a name="20103"></a>20103
-A consulta **expand** não tem suporte para essa solicitação. Confira [Opções de cadeia de caracteres de consulta OData com suporte](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+A consulta **expand** não tem suporte para essa solicitação. Confira [Opções de cadeia de caracteres de consulta OData com suporte](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-get-content#query-options).
 
 ### <a name="20104"></a>20104
 A opção de consulta **pagelevel** tem suporte somente na consulta para a coleção de páginas em uma seção ou para uma página específica. Por exemplo:  
@@ -231,7 +231,7 @@ Sua solicitação especifica um elemento inválido como o destino da ação PATC
 Sua solicitação especifica um tipo de entidade que não tem suporte para a operação PATCH. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20136"></a>20136
-Sua solicitação contém um atributo **data-render-src** ou **data-render-method** inválido ou que está ausente. Confira [Extrair dados de capturas](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-extract-data).
+Sua solicitação contém um atributo **data-render-src** ou **data-render-method** inválido ou que está ausente. Confira [Extrair dados de capturas](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-extract-data).
 
 ### <a name="20137"></a>20137
 A página de destino não dá suporte a solicitações PATCH.
@@ -240,20 +240,20 @@ A página de destino não dá suporte a solicitações PATCH.
 O tipo de elemento de destino em sua solicitação PATCH não dá suporte à ação **acrescentar**. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20139"></a>20139
-Sua solicitação contém um valor de atributo **data-tag** inválido. Confira [Usar marcas de anotação](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+Sua solicitação contém um valor de atributo **data-tag** inválido. Confira [Usar marcas de anotação](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-note-tags).
 
 ### <a name="20140"></a>20140
 Sua solicitação contém um valor de status **data-tag** inválido. A caixa de seleção de marcas de anotação pode ter um status **concluído**. Exemplo:
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-Confira [Usar marcas de anotação](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags).
+Confira [Usar marcas de anotação](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-note-tags).
 
 ### <a name="20141"></a>20141
 O destino em sua solicitação PATCH não dá suporte à ação especificada. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
 
 ### <a name="20142"></a>20142
-Sua solicitação contém uma expressão **expand** para um pai de entidades filho ou um filho de entidades pai, que não tem suporte. Confira [Opções de cadeia de caracteres de consulta OData com suporte](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content#query-options).
+Sua solicitação contém uma expressão **expand** para um pai de entidades filho ou um filho de entidades pai, que não tem suporte. Confira [Opções de cadeia de caracteres de consulta OData com suporte](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-get-content#query-options).
 
 ### <a name="20143"></a>20143
 A consulta OData é inválida.
@@ -265,13 +265,13 @@ Sua solicitação contém uma expressão **expand** para uma propriedade de não
 A expressão **select** ou **expand** em sua solicitação contém um termo inválido.
 
 ### <a name="20146"></a>20146
-O atributo `style="position:absolute"`é especificado em um elemento, mas o elemento **body** não especifica `data-absolute-enabled="true"`, que é exigido para dar suporte ao posicionamento. Todas as configurações de posição serão ignoradas. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+O atributo `style="position:absolute"`é especificado em um elemento, mas o elemento **body** não especifica `data-absolute-enabled="true"`, que é exigido para dar suporte ao posicionamento. Todas as configurações de posição serão ignoradas. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos).
 
 ### <a name="20147"></a>20147
-O atributo `style="position:absolute"` é especificado em um elemento que não é um filho direto do elemento **body**, que não tem suporte. Se o elemento for um **div**, **img** ou **object**, torne-o um filho direto de body; caso contrário, as configurações de posição serão ignoradas e seu conteúdo será renderizado dentro de um div posicionado absoluto. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+O atributo `style="position:absolute"` é especificado em um elemento que não é um filho direto do elemento **body**, que não tem suporte. Se o elemento for um **div**, **img** ou **object**, torne-o um filho direto de body; caso contrário, as configurações de posição serão ignoradas e seu conteúdo será renderizado dentro de um div posicionado absoluto. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos).
 
 ### <a name="20148"></a>20148
-O atributo `style="position:absolute"` é especificado em um tipo de elemento que não dá suporte a ele. Somente elementos **div**, **img** e **object** que são filhos direto do corpo da página dão suporte ao posicionamento. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-abs-pos).
+O atributo `style="position:absolute"` é especificado em um tipo de elemento que não dá suporte a ele. Somente elementos **div**, **img** e **object** que são filhos direto do corpo da página dão suporte ao posicionamento. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos).
 
 ### <a name="20149"></a>20149
 Sua solicitação especifica um elemento de destino que não pode ser encontrado.
@@ -315,14 +315,14 @@ O aplicativo emitiu muitas solicitações em nome de um usuário em um curto per
 Para saber mais, confira [Limitação da API do OneNote e como evitá-la](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### <a name="20168"></a>20168
-Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-images-files#videos) para a lista atual.
+Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-images-files#videos) para a lista atual.
 
 
 ## <a name="codes-from-30001-to-39999"></a>Códigos de 30001 às 39999
 Algo está errado com a conta do usuário.
 
 ### <a name="30101"></a>30101
-A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/en-us/).
+A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/pt-BR/).
 
 ### <a name="30102"></a>30102
 Nada mais pode ser adicionado à seção solicitada porque ela atingiu seu tamanho máximo.

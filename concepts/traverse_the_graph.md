@@ -1,12 +1,8 @@
-<a id="traverse-microsoft-graph" class="xliff"></a>
-
-# Percorrer o Microsoft Graph
+# <a name="traverse-microsoft-graph"></a>Percorrer o Microsoft Graph
 
 Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
 
-<a id="microsoft-graph-api-metadata" class="xliff"></a>
-
-## Metadados da API do Microsoft Graph
+## <a name="microsoft-graph-api-metadata"></a>Metadados da API do Microsoft Graph
 
 O documento de metadados ($metadata) é publicado na raiz do serviço. Você pode exibir o documento de serviço das versões 1.0 e beta da API Microsoft Graph com as URLs a seguir.
 
@@ -27,9 +23,7 @@ Você pode usar os metadados para compreender as relações entre entidades no M
 
 Os nomes de recursos, parâmetros de consulta, parâmetros de ação e valores da URL do caminho não diferenciam maiúsculas de minúsculas. No entanto, os valores atribuídos, as IDs de entidade e outros valores Codificados em Base 64 diferenciam maiúsculas de minúsculas.
 
-<a id="view-a-collection-of-resources" class="xliff"></a>
-
-## Exibir uma coleção de recursos
+## <a name="view-a-collection-of-resources"></a>Exibir uma coleção de recursos
 
 O Microsoft Graph permite exibir recursos em um locatário usando consultas HTTP GET. A resposta da consulta inclui as propriedades de cada recurso, com todos os recursos identificados pelas respectivas IDs. O formato da ID do recurso pode ser um GUID e normalmente varia de acordo com o tipo de recurso. 
 
@@ -130,9 +124,7 @@ Content-type: application/json
 
 
 
-<a id="view-a-specific-resource-from-a-collection-by-id" class="xliff"></a>
-
-## Exibir um recurso específico de uma coleção pela ID
+## <a name="view-a-specific-resource-from-a-collection-by-id"></a>Exibir um recurso específico de uma coleção pela ID
 
 Para exibir as informações sobre um usuário, ainda com o uso do recurso **user** como exemplo, use uma solicitação GET HTTPS para chegar a um usuário específico pela ID do usuário. No caso de uma entidade **user**, você pode usar a propriedade **id** ou **userPrincipalName** como identificador. A solicitação de exemplo a seguir usa o valor **userPrincipalName** como ID do usuário. 
 
@@ -162,9 +154,7 @@ content-length: 982
 }
 ```
 
-<a id="read-specific-properties-of-a-resource" class="xliff"></a>
-
-## Ler propriedades específicas de um recurso
+## <a name="read-specific-properties-of-a-resource"></a>Ler propriedades específicas de um recurso
 Para recuperar apenas os dados biográficos do usuário, conforme fornecido por ele na descrição _Sobre mim_, e suas habilidades, você pode adicionar o parâmetro de consulta [$select](query_parameters.md) à solicitação anterior, como mostrado no exemplo a seguir. 
 
 ```no-highlight 
@@ -192,9 +182,7 @@ content-length: 169
 ```
 Aqui, em vez de todos os conjuntos de propriedade na entidade **user**, somente as propriedades básicas **aboutMe**, **displayName** e **skills** são retornadas.
 
-<a id="read-specific-properties-of-the-resources-in-a-collection" class="xliff"></a>
-
-## Ler propriedades específicas dos recursos em uma coleção
+## <a name="read-specific-properties-of-the-resources-in-a-collection"></a>Ler propriedades específicas dos recursos em uma coleção
 Além de ler propriedades específicas de um único recurso, você também pode aplicar o parâmetro de consulta [$select](query_parameters.md) semelhante a uma coleção para obter todos os recursos na coleção com apenas as propriedades específicas retornadas em cada um. Por exemplo, para consultar o nome dos itens na unidade do usuário conectado, você pode enviar a seguinte solicitação HTTPS GET.
 
 ```no-highlight 
@@ -224,9 +212,7 @@ A resposta bem-sucedida retorna um código de status 200 OK e uma carga que cont
 }
 ```
 
-<a id="traverse-from-one-resource-to-another-via-relationship" class="xliff"></a>
-
-## Passar de um recurso para outro pela relação
+## <a name="traverse-from-one-resource-to-another-via-relationship"></a>Passar de um recurso para outro pela relação
 Um gerente tem uma relação **directReports** com outros usuários diretamente subordinados a ele. Para consultar a lista de subordinados de um usuário, você pode usar a solicitação HTTPS GET a seguir para navegar para o destino pretendido via passagem de relação. 
 
 ```no-highlight 
@@ -299,9 +285,7 @@ content-length: 147
 ```
 Você pode ver todas as relações em um determinado recurso indo para os metadados, localizando EntityType e examinando todas as NavigationProperties do EntityType.
 
-<a id="call-functions" class="xliff"></a>
-
-## Funções de chamada
+## <a name="call-functions"></a>Funções de chamada
 O Microsoft Graph também oferece suporte a _funções_ para manipular recursos de maneiras que não são apenas operações de criar, ler, atualizar e excluir (CRUD). Eles normalmente estão na forma de solicitações de HTTPS POST para receber argumentos para a função. Por exemplo, a seguinte função permite que o usuário conectado (`me`) envie uma mensagem de email.
 
 ```no-highlight 
@@ -338,15 +322,11 @@ content-length: 96
 
 Você pode ver todas as funções que estão disponíveis nos metadados. Eles aparecem como Funções ou Ações.
 
-<a id="use-the-microsoft-graph-sdks" class="xliff"></a>
+## <a name="use-the-microsoft-graph-sdks"></a>Usar os SDKs do Microsoft Graph
 
-## Usar os SDKs do Microsoft Graph
+Como o poder e a facilidade dos SDKs? Enquanto você sempre pode usar APIs REST para chamar o Microsoft Graph, também fornecemos SDKs para muitas plataformas populares. Para explorar os SDKs disponíveis, veja [Amostras de código e SDKs](https://graph.microsoft.io/pt-BR/code-samples-and-sdks).
 
-Como o poder e a facilidade dos SDKs? Enquanto você sempre pode usar APIs REST para chamar o Microsoft Graph, também fornecemos SDKs para muitas plataformas populares. Para explorar os SDKs disponíveis, veja [Amostras de código e SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).
-
-<a id="see-also" class="xliff"></a>
-
-## Ver também
+## <a name="see-also"></a>Confira também
 
 - [Usar a API do Microsoft Graph](use_the_api.md)
 - [Obter tokens de autenticação](auth_overview.md)

@@ -170,5 +170,5 @@ if (response.getResponseCode() == 201) {
 
 ## <a name="see-also"></a>Confira também
 
-- [Obter a estrutura e o conteúdo do OneNote](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-get-content)
+- [Obter a estrutura e o conteúdo do OneNote](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-get-content)
 - [Criar páginas do OneNote](../api-reference/v1.0/api/section_post_pages.md)
