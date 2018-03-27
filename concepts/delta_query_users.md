@@ -183,5 +183,5 @@ Content-type: application/json
   ]
 }
 ```
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 Visão geral da [consulta delta do Microsoft Graph](../concepts/delta_query_overview.md).
