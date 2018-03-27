@@ -19,11 +19,11 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |scoredEmailAddresses|Coleção [scoredEmailAddress](scoredemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|String|O nome fornecido da pessoa.|
 |id|String|O identificador exclusivo da pessoa. Somente leitura.|
-|imAddress|Cadeia de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voz sobre IP) da mensagem instantânea para o usuário. Somente leitura.|
+|imAddress|Cadeia de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |isFavorite|Boolean|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
 |jobTitle|String|O cargo da pessoa.|
 |officeLocation|String|O local do escritório da pessoa.|
-|personNotes|String|Anotações de forma livre que o usuário fez sobre essa pessoa.|
+|personNotes|Cadeia de caracteres|As anotações de forma livre que o usuário fez sobre essa pessoa.|
 |personType|Coleção [personType](persontype.md)|O tipo de pessoa.|
 |telefones|Coleção [phone](phone.md)|Os números de telefone da pessoa.|
 |postalAddresses|[location](location.md) collection|Os endereços da pessoa.|

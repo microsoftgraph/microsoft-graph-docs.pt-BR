@@ -53,7 +53,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |schools|Coleção [educationSchool](educationschool.md)| Escolas às quais o usuário pertence. Anulável.|
 |assignments| [educationAssignment](../../beta/resources/educationAssignment.md)| Lista de atribuições do usuário. Anulável.|
 
->**Observação:** o recurso **educationassignment** é uma versão /beta. Se for usar esse recurso, não se esqueça de revisar o [log de alterações](../../../concepts/changelog.md) periodicamente. Quando os recursos de API do Microsoft Graph forem lançados no ponto de extremidade /v1.0, o lançamento será anotado no log de alterações. Se o aplicativo consumir o recurso **educationassignment**, você precisará declarar as URLs de solicitação básicas, como mostrado no seguinte bloco de códigos:  
+>**Observação:** o recurso **educationassignment** é uma versão /beta. Se for usar esse recurso, não se esqueça de revisar o [log de alterações](../../../concepts/changelog.md) periodicamente. Quando os recursos de API do Microsoft Graph forem lançados no ponto de extremidade /v1.0, o lançamento será anotado no log de alterações. Se o aplicativo consumir o recurso **educationassignment**, será necessário declarar as URLs de solicitação básicas, como mostrado no seguinte bloco de códigos:  
 ```JavaScript
 var v1BaseUrl = “https://graph.microsoft.com/v1.0/education”;
 var betaBaseUrl = “https://graph.microsoft.com/beta/education”;  // for administrativeUnit and educationOrganization
