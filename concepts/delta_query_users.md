@@ -1,43 +1,43 @@
-# <a name="get-incremental-changes-for-users"></a>Obter as alterações incrementais para usuários
+# <a name="get-incremental-changes-for-users"></a><span data-ttu-id="d0213-101">Obter as alterações incrementais para usuários</span><span class="sxs-lookup"><span data-stu-id="d0213-101">Get incremental changes for users (preview)</span></span>
 
-A [consulta delta](./delta_query_overview.md) permite que você consulte adições, exclusões ou atualizações de usuários, por meio de uma série de chamadas de função [delta](../api-reference/v1.0/api/user_delta.md). A consulta Delta permite que você descubra alterações em usuários sem ter que buscar todo o conjunto de usuários do Microsoft Graph e comparar as alterações.
+<span data-ttu-id="d0213-p101">A [consulta delta](./delta_query_overview.md) permite que você consulte adições, exclusões ou atualizações de usuários, por meio de uma série de chamadas de função [delta](../api-reference/v1.0/api/user_delta.md). A consulta Delta permite que você descubra alterações em usuários sem ter que buscar todo o conjunto de usuários do Microsoft Graph e comparar as alterações.</span><span class="sxs-lookup"><span data-stu-id="d0213-p101">[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to users, by way of a series of [delta](../api-reference/v1.0/api/user_delta.md) function calls. Delta query enables you discover changes to users without having to fetch the entire set of users from Microsoft Graph and compare changes.</span></span>
 
-Clientes que sincronizam usuários com um repositório de perfil local podem usar a Consulta Delta para a sincronização completa inicial juntamente com as sincronizações incrementais no futuro. Normalmente, um cliente faria uma sincronização completa inicial de todos os usuários em um locatário e, logo após, obteria alterações incrementais para esses usuários periodicamente.
+<span data-ttu-id="d0213-p102">Clientes que sincronizam usuários com um repositório de perfil local podem usar a Consulta Delta para a sincronização completa inicial juntamente com as sincronizações incrementais no futuro. Normalmente, um cliente faria uma sincronização completa inicial de todos os usuários em um locatário e, logo após, obteria alterações incrementais para esses usuários periodicamente.</span><span class="sxs-lookup"><span data-stu-id="d0213-p102">Clients using synchronizing users with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the users in a tenant, and subsequently, get incremental changes to users periodically.</span></span>
 
-## <a name="tracking-user-changes"></a>Controle de alterações de usuários
+## <a name="tracking-user-changes"></a><span data-ttu-id="d0213-106">Controle de alterações de usuários</span><span class="sxs-lookup"><span data-stu-id="d0213-106">Tracking user changes</span></span>
 
-O controle de alterações de usuários corresponde a uma série de uma ou mais solicitações GET com a função **delta**. Criar uma solicitação GET é muito parecido com a forma de [listar usuários](../api-reference/v1.0/api/user_list.md), exceto se você incluir o seguinte:
+<span data-ttu-id="d0213-p103">O controle de alterações de usuários corresponde a uma série de uma ou mais solicitações GET com a função **delta**. Criar uma solicitação GET é muito parecido com a forma de [listar usuários](../api-reference/v1.0/api/user_list.md), exceto se você incluir o seguinte:</span><span class="sxs-lookup"><span data-stu-id="d0213-p103">Tracking user changes is a round of one or more GET requests with the **delta** function. You make a GET request much like the way you [list users](../api-reference/v1.0/api/user_list.md), except that you include the following:</span></span>
 
-- A função **delta**.
-- Um [token de estado](./delta_query_overview.md) (_deltaToken_ ou _skipToken_) da chamada de função GET **delta** anterior.
+- <span data-ttu-id="d0213-109">A função **delta**.</span><span class="sxs-lookup"><span data-stu-id="d0213-109">The **delta** function.</span></span>
+- <span data-ttu-id="d0213-110">Um [token de estado](./delta_query_overview.md) (_deltaToken_ ou _skipToken_) da chamada de função GET **delta** anterior.</span><span class="sxs-lookup"><span data-stu-id="d0213-110">A [state token](./delta_query_overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.</span></span>
 
-## <a name="example"></a>Exemplo
+## <a name="example"></a><span data-ttu-id="d0213-111">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d0213-111">Example</span></span>
 
-O exemplo a seguir mostra uma série de solicitações para rastrear as alterações nos usuários:
+<span data-ttu-id="d0213-112">O exemplo a seguir mostra uma série de solicitações para rastrear as alterações nos usuários:</span><span class="sxs-lookup"><span data-stu-id="d0213-112">The following example shows a series  requests to track changes to users:</span></span>
 
-1. [Solicitação inicial](#initial-request) e [resposta](#initial-response)
-2. [solicitação nextLink](#nextlink-request) e [resposta](#nextlink-response)
-3. [Solicitação final nextLink](#final-nextlink-request) e [resposta](#final-nextlink-response)
-4. [Solicitação deltaLink](#deltalink-request) e [resposta deltaLink](#deltalink-response)
+1. <span data-ttu-id="d0213-113">[Solicitação inicial](#initial-request) e [resposta](#initial-response)</span><span class="sxs-lookup"><span data-stu-id="d0213-113">[Initial request](#initial-request) and [response](#initial-response)</span></span>
+2. <span data-ttu-id="d0213-114">[solicitação nextLink](#nextlink-request) e [resposta](#nextlink-response)</span><span class="sxs-lookup"><span data-stu-id="d0213-114">[nextLink request](#nextlink-request) and [response](#nextlink-response)</span></span>
+3. <span data-ttu-id="d0213-115">[Solicitação final nextLink](#final-nextlink-request) e [resposta](#final-nextlink-response)</span><span class="sxs-lookup"><span data-stu-id="d0213-115">[Final nextLink request](#final-nextlink-request) and [response](#final-nextlink-response)</span></span>
+4. <span data-ttu-id="d0213-116">[Solicitação deltaLink](#deltalink-request) e [resposta deltaLink](#deltalink-response)</span><span class="sxs-lookup"><span data-stu-id="d0213-116">[deltaLink request](#deltalink-request) and [deltaLink response](#deltalink-response)</span></span>
 
-## <a name="initial-request"></a>Solicitação inicial
+## <a name="initial-request"></a><span data-ttu-id="d0213-117">Solicitação inicial</span><span class="sxs-lookup"><span data-stu-id="d0213-117">Initial request</span></span>
 
-Para iniciar o controle das alterações no recurso de usuário, faça uma solicitação incluindo a função delta do recurso de usuário.
+<span data-ttu-id="d0213-118">Para iniciar o controle das alterações no recurso de usuário, faça uma solicitação incluindo a função delta do recurso de usuário.</span><span class="sxs-lookup"><span data-stu-id="d0213-118">To begin tracking changes in the user resource, you make a request including the delta function on the user resource.</span></span>
 
-Observe o seguinte:
+<span data-ttu-id="d0213-119">Observe o seguinte:</span><span class="sxs-lookup"><span data-stu-id="d0213-119">Note the following:</span></span>
 
-- O parâmetro de consulta $select opcional está incluído na solicitação para demonstrar como os parâmetros de consulta são automaticamente incluídos nas futuras solicitações.
-- A solicitação inicial não inclui um token de estado. Os tokens de estado serão usados nas solicitações subsequentes.
+- <span data-ttu-id="d0213-120">O parâmetro de consulta $select opcional está incluído na solicitação para demonstrar como os parâmetros de consulta são automaticamente incluídos nas futuras solicitações.</span><span class="sxs-lookup"><span data-stu-id="d0213-120">The optional $select query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.</span></span>
+- <span data-ttu-id="d0213-p104">A solicitação inicial não inclui um token de estado. Os tokens de estado serão usados nas solicitações subsequentes.</span><span class="sxs-lookup"><span data-stu-id="d0213-p104">The initial request does not include a state token. State tokens will be used in subsequent requests.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,givenName,surname
 ```
 
-## <a name="initial-response"></a>Resposta inicial
+## <a name="initial-response"></a><span data-ttu-id="d0213-123">Resposta inicial</span><span class="sxs-lookup"><span data-stu-id="d0213-123">Initial response</span></span>
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção [user](../api-reference/v1.0/resources/user.md) no corpo da resposta. Pressupondo que todo o conjunto de usuários é muito grande, a resposta também incluirá um token de estado nextLink.
+<span data-ttu-id="d0213-p105">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto da coleção [user](../api-reference/v1.0/resources/user.md) no corpo da resposta. Pressupondo que todo o conjunto de usuários é muito grande, a resposta também incluirá um token de estado nextLink.</span><span class="sxs-lookup"><span data-stu-id="d0213-p105">If successful, this method returns `200 OK` response code and [user](../api-reference/v1.0/resources/user.md) collection object in the response body. Assuming the entire set of users is too large, the response will also include a nextLink state token.</span></span>
 
-Neste exemplo, uma URL nextLink é retornada indicando que não há páginas adicionais de dados a serem recuperados na sessão. O parâmetro de consulta $select da solicitação inicial é codificado na URL nextLink.
+<span data-ttu-id="d0213-p106">Neste exemplo, uma URL nextLink é retornada indicando que não há páginas adicionais de dados a serem recuperados na sessão. O parâmetro de consulta $select da solicitação inicial é codificado na URL nextLink.</span><span class="sxs-lookup"><span data-stu-id="d0213-p106">In this example, a nextLink URL is returned indicating there are additional pages of data to be retrieved in the session. The $select query parameter from the initial request is encoded into the nextLink URL.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -63,17 +63,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="nextlink-request"></a>solicitação nextLink
+## <a name="nextlink-request"></a><span data-ttu-id="d0213-128">solicitação nextLink</span><span class="sxs-lookup"><span data-stu-id="d0213-128">nextLink request</span></span>
 
-A segunda solicitação especifica o `skipToken` retornado da resposta anterior. Observe que o parâmetro `$select` não é obrigatório, pois o `skipToken` codifica e o inclui.
+<span data-ttu-id="d0213-p107">A segunda solicitação especifica o `skipToken` retornado da resposta anterior. Observe que o parâmetro `$select` não é obrigatório, pois o `skipToken` codifica e o inclui.</span><span class="sxs-lookup"><span data-stu-id="d0213-p107">The second request specifies the `skipToken` returned from the previous response. Notice the `$select` parameter is not required, as the `skipToken` encodes and includes it.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhZRi1hQ7Spe__dpvm3U4zReE4CYXC2zOtaKdi7KHlUtC2CbRiBIUwOxPKLa
 ```
 
-## <a name="nextlink-response"></a>Resposta nextLink
+## <a name="nextlink-response"></a><span data-ttu-id="d0213-131">Resposta nextLink</span><span class="sxs-lookup"><span data-stu-id="d0213-131">nextLink response</span></span>
 
-A resposta contém um `nextLink` e outro `skipToken`, indicando que não há mais usuários disponíveis. Continue fazendo solicitações usando a URL nextLink até uma URL deltaLink ser retornada na resposta.
+<span data-ttu-id="d0213-p108">A resposta contém um `nextLink` e outro `skipToken`, indicando que não há mais usuários disponíveis. Continue fazendo solicitações usando a URL nextLink até uma URL deltaLink ser retornada na resposta.</span><span class="sxs-lookup"><span data-stu-id="d0213-p108">The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -99,17 +99,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="final-nextlink-request"></a>Solicitação nextLink final
+## <a name="final-nextlink-request"></a><span data-ttu-id="d0213-134">Solicitação nextLink final</span><span class="sxs-lookup"><span data-stu-id="d0213-134">Final nextLink request</span></span>
 
-A terceira solicitação continua a usar os últimos `skipToken` retornados da última solicitação de sincronização. 
+<span data-ttu-id="d0213-135">A terceira solicitação continua a usar os últimos `skipToken` retornados da última solicitação de sincronização.</span><span class="sxs-lookup"><span data-stu-id="d0213-135">The third request continues to use the latest `skipToken` returned from the last sync request.</span></span> 
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3Ksh_TLol6KIm3stvdc6hGhaOYDE2VPA4vxIPA90-P6OzGd6Rvku5fDgBRIGS
 ```
 
-## <a name="final-nextlink-response"></a>Resposta nextLink final
+## <a name="final-nextlink-response"></a><span data-ttu-id="d0213-136">Resposta nextLink final</span><span class="sxs-lookup"><span data-stu-id="d0213-136">Final nextLink response</span></span>
 
-Quando a URL deltaLink é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Em solicitações futuras, o aplicativo usa a URL deltaLink para se inteirar das alterações feitas no recurso. Salve o `deltaToken` e use-o na solicitação da URL para descobrir as alterações feitas nos usuários. 
+<span data-ttu-id="d0213-p109">Quando a URL deltaLink é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Em solicitações futuras, o aplicativo usa a URL deltaLink para se inteirar das alterações feitas no recurso. Salve o `deltaToken` e use-o na solicitação da URL para descobrir as alterações feitas nos usuários.</span><span class="sxs-lookup"><span data-stu-id="d0213-p109">When the deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource. Save the `deltaToken` and use it in the request URL to discover changes to users.</span></span> 
 
 ```http
 HTTP/1.1 200 OK
@@ -135,17 +135,17 @@ Content-type: application/json
 }
 ```
 
-## <a name="deltalink-request"></a>Solicitação deltaLink
+## <a name="deltalink-request"></a><span data-ttu-id="d0213-140">Solicitação deltaLink</span><span class="sxs-lookup"><span data-stu-id="d0213-140">deltaLink request</span></span>
 
-Usando o `deltaToken` da [última resposta](#final-nextlink-response), você poderá obter usuários alterados (ao ser adicionado, excluído ou atualizado) desde o último pedido.
+<span data-ttu-id="d0213-141">Usando o `deltaToken` da [última resposta](#final-nextlink-response), você poderá obter usuários alterados (ao ser adicionado, excluído ou atualizado) desde o último pedido.</span><span class="sxs-lookup"><span data-stu-id="d0213-141">Using the `deltaToken` from the [last response](#final-nextlink-response), you will be able to get changed (by being added, deleted, or updated) users since the last request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmvQC6T2dbL-9O7nSU-njKhFiGlAZqewNAThmCVnNxqPu5gOBegrm1CaVZ-ZtFZ2tPOAO98OD9y0ao460
 ```
 
-## <a name="deltalink-response"></a>Resposta deltaLink
+## <a name="deltalink-response"></a><span data-ttu-id="d0213-142">Resposta deltaLink</span><span class="sxs-lookup"><span data-stu-id="d0213-142">deltaLink response</span></span>
 
-Se não houve alterações, o mesmo `deltatoken` é retornado com nenhum resultado.
+<span data-ttu-id="d0213-143">Se não houve alterações, o mesmo `deltatoken` é retornado com nenhum resultado.</span><span class="sxs-lookup"><span data-stu-id="d0213-143">If no changes have occurred, the same `deltatoken` is returned with no results.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -158,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-Caso tenha havido alterações, o mesmo `deltatoken` é retornado incluindo um conjunto de usuários alterados.
+<span data-ttu-id="d0213-144">Caso tenha havido alterações, o mesmo `deltatoken` é retornado incluindo um conjunto de usuários alterados.</span><span class="sxs-lookup"><span data-stu-id="d0213-144">If changes have occurred, the same `deltatoken` is returned including a collection of changed users.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -183,5 +183,5 @@ Content-type: application/json
   ]
 }
 ```
-## <a name="see-also"></a>Veja também
-Visão geral da [consulta delta do Microsoft Graph](../concepts/delta_query_overview.md).
+## <a name="see-also"></a><span data-ttu-id="d0213-145">Confira também</span><span class="sxs-lookup"><span data-stu-id="d0213-145">See also</span></span>
+<span data-ttu-id="d0213-146">Visão geral da [consulta delta do Microsoft Graph](../concepts/delta_query_overview.md).</span><span class="sxs-lookup"><span data-stu-id="d0213-146">[Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.</span></span>
