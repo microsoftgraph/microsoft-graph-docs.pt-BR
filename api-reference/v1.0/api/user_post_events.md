@@ -4,7 +4,25 @@ Criar um [evento](../resources/event.md) no calendário padrão do usuário ou e
 
 É possível especificar o fuso horário para cada hora de início e fim do evento como parte desses valores, já que as propriedades **start** e **end** são do tipo [dateTimeTimeZone](../resources/datetimetimezone.md). 
 
-Ao criar o evento, o servidor envia convites para todos os participantes.
+Quando um evento é enviado, o servidor envia convites para os participantes.
+
+**Definir o local em um evento**
+
+Um administrador do Exchange pode configurar um endereço de email e uma caixa de correio para um recurso como uma sala de reunião ou equipamento como um projetor. Os usuários podem convidar o recurso como um participante para uma reunião. Em nome do recurso, o servidor aceita ou recusa a solicitação de reunião com base na disponibilidade do recurso. Se o servidor aceitar uma reunião do recurso, ele criará um evento para a reunião no calendário do recurso. Se a reunião for reagendada, o servidor atualizará o evento no calendário do recurso.
+
+Outra vantagem de configurar uma caixa de correio para um recurso é controlar o agendamento do recurso. Por exemplo, somente executivos ou seus representantes podem agendar uma sala de reunião particular.
+
+Se você está organizando um evento que envolve um local de reunião:
+
+1. Defina a propriedade **location** de **event** adequadamente. 
+2. Defina a propriedade opcional **locationEmailAddress** se o local da reunião tiver um endereço de email.
+
+Além disso, se o local da reunião tiver sido configurado como um recurso ou se o evento envolver algum equipamento que tenha sido definido como um recurso:
+
+3. Convide o recurso como um [participante](../resources/attendee.md).
+4. Defina a propriedade **type** do participante como `resource`.
+5. Defina o **emailAddress** do participante como o endereço de email do recurso.
+
 
 
 ## <a name="permissions"></a>Permissões
