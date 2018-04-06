@@ -34,20 +34,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|descrição|Cadeia de caracteres|Descrição. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|publicador|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|description|Cadeia de caracteres|Descrição. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|publisher|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
-|genres|Coleção de cadeias de caracteres|Gêneros.|
+|genres|Coleção de cadeia de caracteres|Gêneros.|
 |idioma|Cadeia de caracteres|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
