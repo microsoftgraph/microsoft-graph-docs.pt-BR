@@ -6,6 +6,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="march-2018"></a>Março de 2018
 
+### <a name="excel-apis"></a>APIs do Excel
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Alteração|v1.0|A propriedade **legacyId** foi adicionada à entidade [tabela do Excel](../api-reference/v1.0/resources/table.md). Isso inclui o identificador do valor numérico (tipo de dados String) que permanecerá constante para uma determinada tabela do Excel. Isso é fornecido como metadados adicionais se o aplicativo dependeu do identificador antigo usado em aplicativos cliente anteriores. Observação: a propriedade `id` e `legacyId` deve ser tratada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo no seu aplicativo. |
+
+
+### <a name="reports-apis"></a>APIs de relatórios
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|A propriedade **SiteId** foi adicionada à entidade [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md).|
+
 ### <a name="group-lifecycle-policy"></a>Política de ciclo de vida de grupo
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
@@ -1642,7 +1653,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | v1.0          | Foi adicionado suporte para o segmento de conversão no caminho de expansão. Por exemplo, 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
 | Adição        | Beta          | Suporte adicional para solicitação de PATCH em relação a propriedades estruturais. Por exemplo: 'PATCH /me/mailboxSettings'. |
 | Adição        | Beta          | O Azure Active Directory agora é usado como fallback para solicitações /beta/users/id/photo quando o Outlook não consegue atender à solicitação para casos como quando o usuário não tem nenhuma licença de caixa de correio ou o locatário não tem uma assinatura do Exchange Online. OBSERVAÇÃO: esse fallback está disponível para GET e PATCH. |
-| Adição        | Beta          | Foi adicionado suporte para o segmento de conversão no caminho de expansão. Por exemplo, 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
+| Adição        | Beta          | Foi adicionado suporte para o segmento de conversão no caminho de expansão. Por exemplo: 'https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event'. |
 
 ### <a name="onedrive"></a>OneDrive
 
@@ -1707,7 +1718,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0 e beta | Melhorar mensagens de erro ao resolver tokens JWT (AAD) rejeitados e alias do locatário. |
 | Adição        | v1.0 e beta | A localização do ponto de extremidade do serviço de autorização agora é retornada no cabeçalho _www-authenticate_ quando uma solicitação é recebida com um token de portador vazio. |
-| Adição        | v1.0 e beta | A capacidade de filtrar na propriedade de id da entidade já está corrigida. Exemplo: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Antes, qualquer solicitação POST para ações de serviço e funções exigia a prefixação do nome da função ou ação com o prefixo microsoft.graph. Por exemplo: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups<br/>Agora, o prefixo não é mais necessário (embora ele ainda possa ser especificado). Portanto, o seguinte também funcionará agora: POST https://graph.microsoft.com/v1.0/me/getMemberGroups |
+| Adição        | v1.0 e beta | A capacidade de filtrar na propriedade de ID da entidade já está corrigida. Exemplo: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Antes, qualquer solicitação POST para ações de serviço e funções exigia a prefixação do nome da função ou ação com o prefixo microsoft.graph. Por exemplo: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Agora, o prefixo não é mais necessário (embora ele ainda possa ser especificado). Portanto, o seguinte também funcionará agora: POST https://graph.microsoft.com/v1.0/me/getMemberGroups. |
 | Alteração          | Beta          | Foram limpos os nomes de propriedades de assinatura.  |
 | Adição        | Beta          | Adicionamos a capacidade de descobrir (por meio de _directorySettingTemplates_) e substituir o comportamento padrão (criando uma _configuração_ do modelo) para entidades e suas funcionalidades associadas. Inicialmente, esse único modelo fornecido serve para controlar comportamentos de grupos do Office. |
 
@@ -1840,6 +1851,6 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Correção             | v1.0 e beta | Corrigiu a possibilidade de selecionar determinadas propriedades de usuário em outros usuários ao referenciar o usuário pelo nome UPN. Por exemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Correção             | v1.0 e beta | Foi corrigida a possibilidade de selecionar determinadas propriedades de usuário em outros usuários ao referenciar o usuário pelo nome UPN. Por exemplo: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select = aboutMe |
 | Correção             | v1.0 e beta | Foi corrigida a chamada à função de limite do usuário _microsoft.graph.reminderView_, pois estava falhando com o seguinte erro: Não foi possível localizar uma propriedade chamada businessPhones no tipo 'Microsoft.OutlookServices.Reminder. |
 | Correção             | v1.0 e beta | Foram corrigidas a criação e a atualização de usuário (POST/PATCH /v1.0/users), que estava falhando com um erro 400. |
