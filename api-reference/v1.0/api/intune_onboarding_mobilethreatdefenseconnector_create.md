@@ -34,14 +34,14 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar mobileThreatDefe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após a opção habilitada pelo administrador Conectar-se ao MTP|
-|partnerState|String|Estado do parceiro deste locatário. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|androidEnabled|Boolean|Botão Ativar ou Desativar do Android|
-|androidDeviceBlockedOnMissingPartnerData|Boolean|Para o Android, os administradores com permissão para configurar devem receber dados do parceiro de sincronização de dados antes de serem considerados compatíveis|
-|iosDeviceBlockedOnMissingPartnerData|Boolean|Para o iOS, os administradores com permissão para configurar devem receber dados do parceiro de sincronização de dados antes de serem considerados compatíveis|
-|partnerUnsupportedOsVersionBlocked|Boolean|Permite que o administrador bloqueie dispositivos nas plataformas habilitadas que não atenderem aos requisitos de versão mínima|
-|iosEnabled|Boolean|Botão Ativar ou Desativar do iOS|
+|id|Cadeia de caracteres|Ainda não documentado|
+|lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
+|partnerState|Cadeia de caracteres|Estado do Parceiro de Sincronização de Dados para essa conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|androidEnabled|Boolean|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|iosEnabled|Boolean|No iOS, obter ou definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|
+|androidDeviceBlockedOnMissingPartnerData|Boolean|No Android, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
+|iosDeviceBlockedOnMissingPartnerData|Boolean|No iOS, definir se o Intune deve receber os dados do parceiro de sincronização de dados antes de marcar um dispositivo como compatível|
+|partnerUnsupportedOsVersionBlocked|Boolean|Obter ou definir se dispositivos devem ser bloqueados nas plataformas habilitadas que não atendam aos requisitos mínimos de versão do Parceiro de Sincronização de Dados|
 |partnerUnresponsivenessThresholdInDays|Int32|Obtém ou define dias de tolerância por locatário à falta de resposta para esta integração de parceiro|
 
 
@@ -62,10 +62,10 @@ Content-length: 414
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
   "androidEnabled": true,
+  "iosEnabled": true,
   "androidDeviceBlockedOnMissingPartnerData": true,
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
-  "iosEnabled": true,
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
@@ -83,10 +83,10 @@ Content-Length: 463
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
   "androidEnabled": true,
+  "iosEnabled": true,
   "androidDeviceBlockedOnMissingPartnerData": true,
   "iosDeviceBlockedOnMissingPartnerData": true,
   "partnerUnsupportedOsVersionBlocked": true,
-  "iosEnabled": true,
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```

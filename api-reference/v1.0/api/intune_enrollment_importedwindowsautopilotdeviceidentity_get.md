@@ -1,16 +1,14 @@
-# <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
-
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+# <a name="get-importedwindowsautopilotdeviceidentity"></a>Obter importedWindowsAutopilotDeviceIdentity
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Propriedades de leitura e relações do objeto [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md).
+Lê as propriedades e relações do objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md).
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -20,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -35,13 +33,13 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [enrollmentTroubleshootingEvent](../resources/intune_troubleshooting_enrollmenttroubleshootingevent.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -49,22 +47,23 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 601
+Content-Length: 635
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
-    "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
-    "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-    "correlationId": "Correlation Id value",
-    "managedDeviceIdentifier": "Managed Device Identifier value",
-    "operatingSystem": "Operating System value",
-    "osVersion": "Os Version value",
-    "userId": "User Id value",
-    "deviceId": "Device Id value",
-    "enrollmentType": "userEnrollment",
-    "failureCategory": "authentication",
-    "failureReason": "Failure Reason value"
+    "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
+    "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
+    "orderIdentifier": "Order Identifier value",
+    "serialNumber": "Serial Number value",
+    "productKey": "Product Key value",
+    "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
+    "state": {
+      "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
+      "deviceImportStatus": "pending",
+      "deviceRegistrationId": "Device Registration Id value",
+      "deviceErrorCode": 15,
+      "deviceErrorName": "Device Error Name value"
+    }
   }
 }
 ```

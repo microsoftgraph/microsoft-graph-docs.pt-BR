@@ -1,16 +1,14 @@
-# <a name="create-user"></a>Criar usuário
-
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+# <a name="synclicenses-action"></a>Ação syncLicenses
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Criar um novo objeto [user](../resources/intune_troubleshooting_user.md).
+Sincroniza as licenças associadas a um appleVolumePurchaseProgramToken específico
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -20,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-POST /users
+POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -30,42 +28,41 @@ POST /users
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto user.
-
-A tabela a seguir mostra as propriedades que são necessárias ao criar user.
-
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do usuário.|
-
-
+Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [user](../resources/intune_troubleshooting_user.md) no corpo da resposta.
+Se tiver êxito, esta ação retornará um código de resposta `200 OK` e um [vppToken](../resources/intune_onboarding_vpptoken.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/users
-Content-type: application/json
-Content-length: 46
-
-{
-  "@odata.type": "#microsoft.graph.user"
-}
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 95
+Content-Length: 619
 
 {
-  "@odata.type": "#microsoft.graph.user",
-  "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
+  "value": {
+    "@odata.type": "#microsoft.graph.vppToken",
+    "id": "9ceb2f92-2f92-9ceb-922f-eb9c922feb9c",
+    "organizationName": "Organization Name value",
+    "vppTokenAccountType": "education",
+    "appleId": "Apple Id value",
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+    "token": "Token value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "state": "valid",
+    "lastSyncStatus": "inProgress",
+    "automaticallyUpdateApps": true,
+    "countryOrRegion": "Country Or Region value"
+  }
 }
 ```
 
