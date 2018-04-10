@@ -1,16 +1,14 @@
-# <a name="get-devicemanagement"></a>Get deviceManagement
-
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+# <a name="get-vpptoken"></a>Obter vppToken
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Ler propriedades e relações do objeto [deviceManagement](../resources/intune_troubleshooting_devicemanagement.md).
+Ler propriedades e relações de objetos [vppToken](../resources/intune_onboarding_vpptoken.md).
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -20,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement
+GET /deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -35,13 +33,13 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceManagement](../resources/intune_troubleshooting_devicemanagement.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [vppToken](../resources/intune_onboarding_vpptoken.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -49,12 +47,23 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 130
+Content-Length: 619
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
+    "@odata.type": "#microsoft.graph.vppToken",
+    "id": "9ceb2f92-2f92-9ceb-922f-eb9c922feb9c",
+    "organizationName": "Organization Name value",
+    "vppTokenAccountType": "education",
+    "appleId": "Apple Id value",
+    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+    "token": "Token value",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "state": "valid",
+    "lastSyncStatus": "inProgress",
+    "automaticallyUpdateApps": true,
+    "countryOrRegion": "Country Or Region value"
   }
 }
 ```
