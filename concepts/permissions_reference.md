@@ -4,9 +4,9 @@ O Microsoft Graph expõe as permissões granulares que controlam o acesso que os
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Permissões delegadas, Permissões de aplicativo e permissões efetivas
 O Microsoft Graph tem dois tipos de permissões: **Permissões delegadas** e **Permissões de aplicativo**. 
 
-- As **Permissões delegadas** são usadas por aplicativos com um usuário conectado. Para eles, o usuário ou um administrador concorda com as permissões que o aplicativo solicita, e o aplicativo tem permissão delegada para atuar como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o [consentimento do administrador](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
+- As **Permissões delegadas** são usadas por aplicativos com um usuário conectado. Para eles, o usuário ou um administrador concorda com as permissões que o aplicativo solicita, e o aplicativo tem permissão delegada para atuar como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o [consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- As **Permissões de aplicativo** são usadas por aplicativos sem um usuário conectado. Por exemplo, aplicativos executados como daemonst ou serviços em segundo plano. As Permissões de aplicativo só podem ser [autorizadas por um administrador](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- As **Permissões de aplicativo** são usadas por aplicativos sem um usuário conectado. Por exemplo, aplicativos executados como daemonst ou serviços em segundo plano. As Permissões de aplicativo só podem ser [autorizadas por um administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer solicitações ao Microsoft Graph. É importante compreender a diferença entre as Permissões Delegadas e as Permissões de aplicativo que o aplicativo tem autorização para usar e as respectivas Permissões Efetivas ao fazer chamadas para o Microsoft Graph
 
@@ -203,7 +203,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Directory.Read.All_ |Ler dados do diretório | Permite ao aplicativo ler dados no diretório da sua organização, como usuários, grupos e aplicativos. | Sim |
+| _Directory.Read.All_ |Ler dados do diretório | Permite ao aplicativo ler dados no diretório da sua organização, como usuários, grupos e aplicativos. **Observação**: os usuários poderão dar o consentimento aos aplicativos que exigem essa permissão se o aplicativo estiver registrado no locatário da própria organização.| Sim |
 | _Directory.ReadWrite.All_ |Ler e gravar dados de diretório | Permite ao aplicativo ler e gravar dados no diretório da sua organização, como usuários e grupos. Não permite ao aplicativo excluir usuários ou grupos, ou redefinir senhas de usuário. | Sim |
 | _Directory.AccessAsUser.All_ |Access Directory como o usuário conectado  | Permite ao aplicativo ter o mesmo acesso que o usuário conectado a informações no diretório. | Sim |
 
