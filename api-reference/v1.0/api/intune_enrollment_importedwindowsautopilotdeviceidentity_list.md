@@ -1,16 +1,14 @@
-# <a name="get-user"></a>Obter usuário
-
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+# <a name="list-importedwindowsautopilotdeviceidentities"></a>Listar importedWindowsAutopilotDeviceIdentities
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Leia as propriedades e as relações do objeto [user](../resources/intune_troubleshooting_user.md).
+Lista as propriedades e relações de objetos [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md).
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -20,11 +18,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /users/{usersId}
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentities
 ```
 
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
@@ -35,13 +31,13 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retorna o código de resposta `200 OK` e o objeto [user](../resources/intune_troubleshooting_user.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}
+GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentities
 ```
 
 ### <a name="response"></a>Resposta
@@ -49,13 +45,26 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 118
+Content-Length: 675
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.user",
-    "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
+      "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
+      "orderIdentifier": "Order Identifier value",
+      "serialNumber": "Serial Number value",
+      "productKey": "Product Key value",
+      "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
+      "state": {
+        "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
+        "deviceImportStatus": "pending",
+        "deviceRegistrationId": "Device Registration Id value",
+        "deviceErrorCode": 15,
+        "deviceErrorName": "Device Error Name value"
+      }
+    }
+  ]
 }
 ```
 

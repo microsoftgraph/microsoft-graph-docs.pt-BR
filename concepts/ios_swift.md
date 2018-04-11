@@ -8,7 +8,7 @@ Este artigo descreve as tarefas obrigatórias para obter um token de acesso do [
 
 Você pode baixar a versão do aplicativo que você criará a partir deste repositório do GitHub:
 
-* [Exemplo de conexão com o Office 365 para iOS usando o SDK do Microsoft Graph](https://github.com/microsoftgraph/ios-objectivec-connect-sample)
+* [Exemplo de conexão com o Office 365 para iOS usando o SDK do Microsoft Graph](https://github.com/microsoftgraph/ios-swift-connect-sample)
 
 A imagem a seguir mostra o aplicativo que você criará.
 
@@ -342,7 +342,7 @@ Por padrão, o usuário conectado será o destinatário, mas você tem a capacid
 
 
 ## <a name="run-the-app"></a>Executar o aplicativo
-1. Antes de executar o exemplo, será necessário fornecer a identificação do cliente que você recebeu do processo de registro na seção **Registrar o aplicativo.** Abra **ApplicationConstants.swift**. Observe que você pode adicionar o valor de ClientID do processo de registro, na parte superior do arquivo.  
+1. Antes de executar o exemplo, será necessário fornecer a identificação do cliente que você recebeu do processo de registro na seção **Registrar o aplicativo.** Abra **ApplicationConstants.swift**. Observe que você pode adicionar o valor de ClientID do processo de registro à parte superior do arquivo.  
 
   ```swift
 struct ApplicationConstants {
