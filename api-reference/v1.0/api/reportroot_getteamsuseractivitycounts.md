@@ -8,7 +8,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Sem suporte.                           |
+| Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
 | Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
@@ -26,7 +26,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Esses valores seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -36,7 +36,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
+Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório. Essa URL pode ser encontrada no cabeçalho `Location` na resposta.
 
 As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.
 
@@ -48,7 +48,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas:
 - Mensagens de chat privadas
 - Chamadas
 - Reuniões
-- Período do Relatório
+- Período de Relatório
 
 ## <a name="example"></a>Exemplo
 

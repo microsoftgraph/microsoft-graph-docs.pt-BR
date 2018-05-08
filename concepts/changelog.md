@@ -1,20 +1,97 @@
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
-Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.  
+Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known_issues.md).
 
-## <a name="march-2018"></a>Março de 2018
-
-### <a name="excel-apis"></a>APIs do Excel
-|Tipo de alteração|Versão|Descrição|
-|:---|:---|:---|
-|Alteração|v1.0|A propriedade **legacyId** foi adicionada à entidade [tabela do Excel](../api-reference/v1.0/resources/table.md). Isso inclui o identificador do valor numérico (tipo de dados String) que permanecerá constante para uma determinada tabela do Excel. Isso é fornecido como metadados adicionais se o aplicativo dependeu do identificador antigo usado em aplicativos cliente anteriores. Observação: a propriedade `id` e `legacyId` deve ser tratada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo no seu aplicativo. |
-
+## <a name="april-2018"></a>Abril de 2018
 
 ### <a name="reports-apis"></a>APIs de relatórios
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
+|Adição|beta| Adição de suporte para acesso delegado. |
+|Adição|v1.0| Adição de suporte para acesso delegado. |
+
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | V1.0        | Adição do tipo complexo **privacyProfile** à entidade [organization](../api-reference/v1.0/resources/organization.md). |
+
+### <a name="outlook-calendar"></a>Calendário do Outlook
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | v1.0          | Adição da propriedade **locations** à entidade [event](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/event) para dar suporte à organização de um evento em que os participantes podem participar de mais de um local. |
+| Adição        | v1.0          | Adição da propriedade **locationType** ao tipo complexo [location](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/location). |
+| Adição        | v1.0          | Adição das propriedades **uniqueId** e **uniqueIdType** ao tipo complexo [location](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/location). Atualmente, essas propriedades são apenas para uso interno. |
+
+
+### <a name="outlook-contacts"></a>Contatos do Outlook
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0          | Adição da propriedade **flag** à entidade [contact](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/contact). Adição do tipo complexo [followupFlag](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/followupflag) compartilhado.|
+
+
+### <a name="outlook-mail"></a>Email do Outlook
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0          | Adição da propriedade **flag** à entidade [message](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/message). Adição do tipo complexo [followupFlag](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/followupflag) compartilhado.|
+| Adição        | v1.0        | Adição da propriedade **internetMessageHeaders** à entidade [message](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/message). |
+| Adição        | v1.0        | Adição do tipo complexo [internetMessageHeader](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/internetmessageheader). |
+| Adição        | v1.0        | Adição da propriedade de navegação **messageRules** à entidade [mailFolder](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/mailfolder). **messageRules** é uma coleção das instâncias [messageRule](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/messagerule). |
+| Adição        | v1.0        | Adição da entidade [messageRule](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/messagerule) e dos tipos complexos [messageRuleActions](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/messageruleactions), [messageRulePredicates](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/messagerulepredicates) e [sizeRange](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/sizerange). |
+| Adição        | v1.0        | Adição das seguintes operações CRUD às regras de mensagem: [create](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/mailfolder_post_messagerules), [list](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/mailfolder_list_messagerules), [get](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/messagerule_get), [update](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/messagerule_update) e [delete](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/messagerule_delete). |
+
+
+### <a name="outlook-user-choices"></a>Opções de usuário do Outlook
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0        | Adição da nova propriedade de navegação **masterCategories** à entidade [outlookUser](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/outlookuser). **masterCategories** é uma coleção de objetos [outlookCategory](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/outlookCategory). |
+| Adição        | v1.0        | Adição da entidade [outlookCategory](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/outlookCategory). |
+| Adição        | v1.0        | Adição das seguintes operações CRUD para [outlookCategory](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/outlookCategory): [create](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/outlookuser_post_mastercategories), [get](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/outlookcategory_get), [update](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/outlookcategory_update) e [delete](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/outlookcategory_delete). |
+| Adição        | v1.0        | Adição da nova função [supportedLanguages](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/outlookuser_supportedlanguages) à entidade [outlookUser](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/outlookuser). |
+| Adição        | v1.0        | Adição da nova função [supportedTimeZones](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/outlookuser_supportedtimezones) à entidade [outlookUser](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/outlookuser). |
+|Adição | v1.0 | Adição da nova propriedade **workingHours** a [mailboxSettings](../api-reference/v1.0/resources/mailboxsettings.md). Confira [tipo de recurso workingHours](../api-reference/v1.0/resources/workinghours.md) para saber mais sobre casos de uso com suporte.|
+|Adição | v1.0 | Adição dos seguintes tipos complexos: <br> [workingHours](../api-reference/v1.0/resources/workinghours.md) <br> [timeZoneBase](../api-reference/v1.0/resources/timezonebase.md) <br> [customTimeZone](../api-reference/v1.0/resources/customtimezone.md) <br> [standardTimeZoneOffset](../api-reference/v1.0/resources/standardtimezoneoffset.md) <br> [daylightTimeZoneOffset](../api-reference/v1.0/resources/daylighttimezoneoffset.md)|
+
+## <a name="march-2018"></a>Março de 2018
+
+### <a name="activityfeedservice-apis"></a>APIs de ActivityFeedService
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta       | Adição da [API Obter atividades recentes](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
+| Adição        | Beta       | Adição da [API Obter atividades](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/projectrome_get_activities) |
+| Alteração | Beta | Adição da permissão UserActivity.ReadWrite.CreatedByApp a [Upsert Activity](https://developer.microsoft.com/pt-BR/graph/docs/beta/api/projectrome_put_activity) |
+| Alteração | Beta | Adição da permissão UserActivity.ReadWrite.CreatedByApp a [Upsert HistoryItem](https://developer.microsoft.com/pt-BR/graph/docs/beta/projectrome_put_historyitem) |
+| Alteração | Beta | Adição da permissão UserActivity.ReadWrite.CreatedByApp a [Excluir Atividade](https://developer.microsoft.com/pt-BR/graph/docs/beta/projectrome_delete_activity) |
+| Alteração | Beta | Adição da permissão UserActivity.ReadWrite.CreatedByApp a [Upsert HistoryItem](https://developer.microsoft.com/pt-BR/graph/docs/beta/projectrome_delete_historyItem) |
+| Alteração | Beta | Adição da propriedade **status** a [activity](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/projectrome_activity) |
+| Alteração | Beta | Adição da propriedade de navegação **activity** a [historyItem](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/projectrome_historyitem) |
+| Alteração | Beta | Adição de novas APIs a [Visão geral do Projeto Roma](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/project_rome_overview) |
+
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | Adição do tipo complexo **onPremisesExtensionAttributes** à entidade [user](../api-reference/beta/resources/user.md) entity. Ele contém os atributos de extensão do AD locais, 1-15. |
+| Adição        | Beta        | Adição do tipo complexo **privacyProfile** à entidade [organization](../api-reference/beta/resources/organization.md). |
+| Adição        | V1.0        | Adição de suporte para a [restauração e a exclusão permanente de usuários e grupos](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/directory). |
+
+### <a name="excel-apis"></a>APIs do Excel
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Alteração|v1.0|A propriedade **legacyId** foi adicionada à entidade [tabela do Excel](../api-reference/v1.0/resources/table.md). Isso inclui o identificador do valor numérico (tipo de dados String) que permanecerá constante para uma determinada tabela do Excel. Isso é fornecido como metadados adicionais se o aplicativo dependeu do identificador antigo usado em aplicativos cliente anteriores. Observação: a propriedade `id` e `legacyId` deve ser tratada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo no seu aplicativo. |
+
+### <a name="reports-apis"></a>APIs de relatórios
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 |Adição|beta|A propriedade **SiteId** foi adicionada à entidade [sharePointSiteUsageDetail](../api-reference/beta/resources/sharepointsiteusagedetail.md).|
 
 ### <a name="group-lifecycle-policy"></a>Política de ciclo de vida de grupo
@@ -24,7 +101,71 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0        | Foi adicionado [groupLifecyclePolicy](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/grouplifecyclepolicy). |
 | Adição        | v1.0        | Foram adicionadas as seguintes APIs de política de ciclo de vida de grupo: [Criar](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_post_grouplifecyclepolicies), [Listar](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_list), [Obter](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_get), [Atualizar](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_update), [Excluir](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_delete), [Adicionar grupo](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_addgroup), [Remover grupo](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/grouplifecyclepolicy_removegroup) |
 | Adição        | v1.0        | Foi adicionada a função [List groupLifecyclePolicies](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/group_list_grouplifecyclepolicies.md) a [group](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/group). |
-| Alteração | V1.0 | Foi adicionada a propriedade renewedDateTime e [renew](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/group_renew) a [group](../api-reference/v1.0/resources/group.md) | 
+| Alteração | v1.0 | Adição da propriedade renewedDateTime e [renew](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/group_renew) a [group](../api-reference/v1.0/resources/group.md) | 
+
+### <a name="terms-of-use"></a>Termos de uso
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | Adição dos recursos [agreement](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/agreement) e [agreementAcceptance](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/agreementAcceptance). |
+| Adição        | Beta        | Adição das seguintes APIs para [agreement](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/agreement): [Criar](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/greement_post_agreements), [Listar](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/agreement_list), [Obter](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/agreement_get), [Atualizar](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/agreement_update), [Excluir](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/agreement_delete). |
+| Adição        | Beta        | Adição dos relacionamentos [agreementAcceptance](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/agreementAcceptance) ao recurso [user](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/user). |
+
+### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
+
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|v1.0|Foram adicionadas novas entidades:<br/>[iosMobileAppConfiguration](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_apps_iosmobileappconfiguration)<br/>[vppToken](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken)<br/>|
+|Adição|v1.0|Adição de novos tipos complexos:<br/>[appConfigurationSettingItem](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_apps_appconfigurationsettingitem)<br/>|
+|Adição|v1.0|Adição da ação [syncLicenses](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/intune_onboarding_vpptoken_synclicenses.md) a [vppToken](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_onboarding_vpptoken) |
+|Adição|v1.0|Adição da propriedade de navegação **vppTokens** à entidade [deviceAppManagement](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_apps_deviceappmanagement)|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile)<br/>[androidDeviceOwnerGeneralDeviceConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_androiddeviceownergeneraldeviceconfiguration)<br/>[androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings)<br/>[androidManagedStoreAppConfigurationSchema](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschema)<br/>[dataSharingConsent](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_datasharingconsent)<br/>[deviceConfigurationUserStateSummary](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_deviceconfigurationuserstatesummary)<br/>[macOSEndpointProtectionConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_macosendpointprotectionconfiguration)<br/>[macOSImportedPFXCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_macosimportedpfxcertificateprofile)<br/>[macOSLobApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_macoslobapp)<br/>[managedEBookCategory](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_books_managedebookcategory)<br/>[microsoftStoreForBusinessContainedApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp)<br/>[mobileContainedApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_mobilecontainedapp)<br/>[windowsUniversalAppXContainedApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_windowsuniversalappxcontainedapp)<br/>|
+|Adição|beta|Adição de novos tipos complexos:<br/>[androidManagedStoreAppConfigurationSchemaItem](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreappconfigurationschemaitem)<br/>[deviceAndAppManagementData](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_onboarding_deviceandappmanagementdata)<br/>[loggedOnUser](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_loggedonuser)<br/>[macOSFirewallApplication](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_macosfirewallapplication)<br/>[macOSLobChildApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_macoslobchildapp)<br/>[macOSMinimumOperatingSystem](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_macosminimumoperatingsystem)<br/>[windowsAppXAppAssignmentSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_windowsappxappassignmentsettings)<br/>[windowsUniversalAppXAppAssignmentSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_windowsuniversalappxappassignmentsettings)<br/>|
+|Adição|beta|Adição da ação [requestSignupUrl](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_requestsignupurl.md) em [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) |
+|Adição|beta|Adição da ação [completeSignup](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_completesignup.md) em [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) |
+|Adição|beta|Adição da ação [syncApps](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_syncapps.md) em [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) |
+|Adição|beta|Adição da ação [unbind](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_androidforwork_androidmanagedstoreaccountenterprisesettings_unbind.md) em [androidManagedStoreAccountEnterpriseSettings](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androidmanagedstoreaccountenterprisesettings) |
+|Adição|beta|Adição da ação [revokeToken](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_revoketoken.md) em [androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile) |
+|Adição|beta|Adição da ação [createToken](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_createtoken.md) em [androidDeviceOwnerEnrollmentProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile) |
+|Adição|beta|Adição da ação [assign](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign.md) a [managedDeviceMobileAppConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) |
+|Adição|beta|Adição da ação [consentToDataSharing](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_devices_datasharingconsent_consenttodatasharing.md) em [dataSharingConsent](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_datasharingconsent) |
+|Adição|beta|Adição da função [getLoggedOnManagedDevices](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_devices_user_getloggedonmanageddevices.md) em [user](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_user) |
+|Adição|beta|Adição da função [exportDeviceAndAppManagementData](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_onboarding_user_exportdeviceandappmanagementdata.md) em [user](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_user) |
+|Adição|beta|Adição da função [exportDeviceAndAppManagementData](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_onboarding_user_exportdeviceandappmanagementdata.md) em [user](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_user) |
+|Exclusão|beta|Remoção das seguintes entidades:<br/>**appleVolumePurchaseProgramToken**<br/>**mdmAppConfigGroupAssignment**<br/>**windows10KioskConfiguration**<br/>|
+|Exclusão|beta|Remoção da ação [assign](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_apps_manageddevicemobileappconfiguration_assign.md) em [managedDeviceMobileAppConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration) |
+|Exclusão|beta|Remoção da ação [syncApps](https://developer.microsoft.com/pt-BR/api-reference/beta/api/intune_onboarding_applevolumepurchaseprogramtoken_syncapps.md) em [appleVolumePurchaseProgramToken](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_onboarding_applevolumepurchaseprogramtoken) |
+|Adição|beta|Adição da propriedade **workProfileBluetoothEnableContactSharing** à entidade [androidForWorkGeneralDeviceConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration)|
+|Adição|beta|Adição da propriedade **intendedPurpose** à entidade [androidForWorkImportedPFXCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_androidforworkimportedpfxcertificateprofile)|
+|Adição|beta|Adição da propriedade **intendedPurpose** à entidade [androidImportedPFXCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_androidimportedpfxcertificateprofile)|
+|Adição|beta|Adição da propriedade **intendedPurpose** à entidade [iosImportedPFXCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_iosimportedpfxcertificateprofile)|
+|Adição|beta|Adição da propriedade **encodedSettingXml** à entidade [iosMobileAppConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_iosmobileappconfiguration)|
+|Adição|beta|Adição da propriedades **managedDeviceId** e **azureADDeviceId** à entidade [managedAppRegistration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_mam_managedappregistration)|
+|Adição|beta|Adição da propriedade **usersLoggedOn** à entidade [managedDevice](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_manageddevice)|
+|Exclusão|beta|Remoção da propriedade **lastLoggedOnUserId** da entidade [managedDevice](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_manageddevice)|
+|Adição|beta|Adição da propriedade **lastModifiedDateTime** à entidade [managedDeviceOverview](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_devices_manageddeviceoverview)|
+|Adição|beta|Adição da propriedade **isDependency** à entidade [mobileAppContentFile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_mobileappcontentfile)|
+|Adição|beta|Adição das propriedades **windowsEnabled**, **macEnabled**, **windowsDeviceBlockedOnMissingPartnerData** e **macDeviceBlockedOnMissingPartnerData** à entidade [mobileThreatDefenseConnector](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_onboarding_mobilethreatdefenseconnector)|
+|Adição|beta|Adição da propriedade **shouldUninstallOlderVersionsOfOffice** à entidade [officeSuiteApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_officesuiteapp)|
+|Adição|beta|Adição da propriedade **dataSharingConsentGranted** à entidade [vppToken](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_onboarding_vpptoken)|
+|Adição|beta|Adição das propriedades **localSecurityOptionsBlockRemoteLogonWithBlankPassword**, **localSecurityOptionsAdministratorAccountName**, **localSecurityOptionsEnableGuestAccount**, **localSecurityOptionsGuestAccountName**, **localSecurityOptionsAllowUndockWithoutHavingToLogon**, **localSecurityOptionsBlockUsersInstallingPrinterDrivers**, **localSecurityOptionsBlockRemoteOpticalDriveAccess**, **localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser**, **localSecurityOptionsMachineInactivityLimit**, **localSecurityOptionsDoNotRequireCtrlAltDel**, **localSecurityOptionsInformationDisplayedOnLockScreen**, **localSecurityOptionsHideLastSignedInUser**, **localSecurityOptionsHideUsernameAtSignIn**, **localSecurityOptionsLogOnMessageTitle**, **localSecurityOptionsLogOnMessageText**, **localSecurityOptionsAllowPKU2UAuthenticationRequests**, **localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager**, **localSecurityOptionsClearVirtualMemoryPageFile**, **localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn**, **localSecurityOptionsAllowUIAccessApplicationElevation**, **localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations**, **localSecurityOptionsOnlyElevateSignedExecutables**, **localSecurityOptionsAdministratorElevationPromptBehavior**, **localSecurityOptionsStandardUserElevationPromptBehavior**, **localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation**, **localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation**, **localSecurityOptionsAllowUIAccessApplicationsForSecureLocations**, **localSecurityOptionsUseAdminApprovalMode**, **localSecurityOptionsUseAdminApprovalModeForAdministrators**, **deviceGuardLocalSystemAuthorityCredentialGuardSettings**, **deviceGuardEnableVirtualizationBasedSecurity** e **deviceGuardEnableSecureBootWithDMA** à entidade [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration)|
+|Exclusão|beta|Remoção da propriedade **defenderPasswordProtectedEmailContentExecutionType** da entidade [windows10EndpointProtectionConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration)|
+|Adição|beta|Adição da propriedade **intendedPurpose** à entidade [windows10ImportedPFXCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windows10importedpfxcertificateprofile)|
+|Exclusão|beta|Remoção das propriedades **printerNames**, **defaultPrinterName** e **blockAddingNewPrinter** da entidade [windows10SecureAssessmentConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windows10secureassessmentconfiguration)|
+|Adição|beta|Adição da propriedade **certificateStore** à entidade [windows81SCEPCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windows81scepcertificateprofile)|
+|Adição|beta|Adição da propriedade **purchaseOrderIdentifier** à entidade [windowsAutopilotDeviceIdentity](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity)|
+|Alteração|beta|Foram alteradas as seguintes propriedades na entidade [windowsCertificateProfileBase](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windowscertificateprofilebase):<br/>**subjectAlternativeNameType** de obrigatória para opcional<br/>|
+|Adição|beta|Adição das propriedades **advancedThreatProtectionOnboardingFilename** e **advancedThreatProtectionOffboardingFilename** à entidade [windowsDefenderAdvancedThreatProtectionConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windowsdefenderadvancedthreatprotectionconfiguration)|
+|Adição|beta|Adição da propriedade **intendedPurpose** à entidade [windowsPhone81ImportedPFXCertificateProfile](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windowsphone81importedpfxcertificateprofile)|
+|Adição|beta|Adição das propriedades **skipChecksBeforeRestart** e **updateWeeks** à entidade [windowsUpdateForBusinessConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration)|
+|Adição|beta|Adição da propriedade de navegação **managedEBookCategories** à entidade [deviceAppManagement](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_deviceappmanagement)|
+|Adição|beta|Adição das propriedades de navegação **androidManagedStoreAccountEnterpriseSettings**, **androidManagedStoreAppConfigurationSchemas**, **androidDeviceOwnerEnrollmentProfiles**, **dataSharingConsents** e **deviceConfigurationUserStateSummaries** à entidade [deviceManagement](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_devicemanagement)|
+|Exclusão|beta|Remoção da propriedade de navegação **deviceSetupConfigurations** da entidade [deviceManagement](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_androidforwork_devicemanagement)|
+|Exclusão|beta|Remoção da propriedade de navegação **groupAssignments** da entidade [managedDeviceMobileAppConfiguration](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration)|
+|Adição|beta|Adição da propriedade de navegação **categories** à entidade [managedEBook](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_books_managedebook)|
+|Adição|beta|Adição da propriedade de navegação **containedApps** à entidade [microsoftStoreForBusinessApp](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessapp)|
+|Adição|beta|Adição da propriedade de navegação **containedApps** à entidade [mobileAppContent](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_mobileappcontent)|
+|Adição|beta|Adição da propriedade de navegação **committedContainedApps** à entidade [windowsUniversalAppX](https://developer.microsoft.com/pt-BR/api-reference/beta/resources/intune_apps_windowsuniversalappx)|
 
 ## <a name="february-2018"></a>Fevereiro de 2018
 

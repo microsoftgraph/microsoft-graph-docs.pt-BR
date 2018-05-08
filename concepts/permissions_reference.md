@@ -634,7 +634,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-Nenhum.
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Reports.Read.All_ | Ler todos os relatórios de uso | Permite que um aplicativo leia todos os relatórios de uso de serviço sem um usuário conectado. Serviços que fornecem relatórios de uso incluem o Office 365 e Azure Active Directory. | Sim |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -722,6 +724,36 @@ As permissões _Compartilhadas_ atualmente só são compatíveis com contas corp
 * _Tasks.Read_: Obter todas as tarefas não concluídas na caixa de correio do usuário (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
 * _Tasks.ReadWrite_: Atualizar uma tarefa na caixa de correio do usuário (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
 * _Tasks.ReadWrite.Shared_: Concluir uma tarefa em nome de outro usuário (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="terms-of-use-permissions"></a>Permissões de termos de uso
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Agreement.Read.All_ | Ler todos os acordos de termos de uso | Permite que o aplicativo leia acordos de termos de uso em nome do usuário conectado. | Sim |
+| _Agreement.ReadWrite.All_ | Ler e gravar todos os acordos de termos de uso | Permite que o aplicativo leia e grave acordos de termos de uso em nome do usuário conectado. | Sim |
+| _AgreementAcceptance.Read_ | Ler os status de aceitação de termos de uso do usuário | Permite que o aplicativo leia status de aceitação de termos de uso em nome do usuário conectado. | Sim |
+| _AgreementAcceptance.Read.All_ | Ler os status de aceitação de termos de uso que o usuário pode acessar | Permite que o aplicativo leia status de aceitação de termos de uso em nome do usuário conectado. | Sim |
+
+### <a name="remarks"></a>Comentários
+
+Todas as permissões acima são válidas apenas para contas corporativas ou de estudante.
+
+Para que um aplicativo leia ou grave todos os acordos ou aceitações de acordos com permissões delegadas, o usuário conectado deve ter a função Administrador Global, Administrador de Acesso Condicional ou Administrador de Segurança. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+Os seguintes usos são válidos para permissões delegadas:
+
+* _Agreement.Read.All_: ler todos os acordos de termos de uso (`GET /beta/agreements`)
+* _Agreement.ReadWrite.All_: ler e gravar todos os acordos de termos de uso (`POST /beta/agreements`)
+* _AgreementAcceptance.Read_: ler os status de aceitação de termos de uso do usuário (`GET /beta/me/agreementAcceptances`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 

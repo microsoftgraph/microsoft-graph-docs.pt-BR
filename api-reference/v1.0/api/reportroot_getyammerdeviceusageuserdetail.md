@@ -10,8 +10,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Sem suporte.                           |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                           |
+| Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -29,16 +29,16 @@ Na URL da solicitação, forneça um valor válido ao parâmetro de consulta.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Esses valores seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. |
+| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. |
 | data      | Data   | Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade. {date_value} deve ter um formato de AAAA-MM-DD. Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo. |
 
 > **Observação:** você precisa definir o período ou data na URL.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome          | Descrição               |
-| :------------ | :------------------------ |
-| Autorização | {token} de portador. Obrigatório. |
+| Nome          | Descrição                              |
+| :------------ | :--------------------------------------- |
+| Autorização | {token} de portador. Obrigatório.                |
 | If-None-Match | Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido. Opcional. |
 
 ## <a name="response"></a>Resposta
@@ -55,12 +55,12 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Estado do usuário
 - Data de alteração de estado
 - Data da última atividade
-- Utilizada Web
-- Utilizado Windows Phone 
-- Utilizado telefone Android
-- Utilizado iPhone
-- Utilizado IPad
-- Utilizados outros
+- Usou Web
+- Usou Windows Phone
+- Usou telefone Android
+- Usou iPhone
+- Usou iPad
+- Usou outros
 - Período de Relatório
 
 ## <a name="example"></a>Exemplo

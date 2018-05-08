@@ -4,11 +4,13 @@ Configurações para a caixa de correio principal do usuário conectado.
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|archiveFolder|string|ID de uma pasta de arquivo morto do usuário.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado.|
 |idioma|[localeInfo](localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
+|workingHours|[workingHours](workinghours.md)|Os dias da semana e as horas de um fuso horário específico que o usuário trabalha.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -17,16 +19,18 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "archiveFolder"
   ],
   "@odata.type": "microsoft.graph.mailboxSettings"
 }-->
 
 ```json
 {
+  "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
-  "timeZone": "string"
+  "timeZone": "string",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
 
 ```

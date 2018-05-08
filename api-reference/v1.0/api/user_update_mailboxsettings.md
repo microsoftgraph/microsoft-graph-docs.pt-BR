@@ -1,6 +1,6 @@
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
-Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de fuso horário, localidade ou respostas automáticas (notificar as pessoas automaticamente ao receber seus emails).
+Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de [respostas automáticas](../resources/automaticrepliessetting.md) (notificar pessoas automaticamente ao receber emails), [localidade](../resources/localeinfo.md) (idioma e país/região), fuso horário e [horário de trabalho](../resources/workinghours.md).
 
 Você pode habilitar, configurar ou desabilitar um ou mais destas configurações como parte de [mailboxSettings](../resources/mailboxsettings.md).
 
@@ -38,13 +38,28 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
+|workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [mailboxSettings](../resources/mailboxSettings.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e o objeto [mailboxSettings](../resources/mailboxSettings.md) no corpo da resposta.
+
+
+## <a name="errors"></a>Erros
+
+Definir horas de trabalho com valores inadequados pode retornar os seguintes erros.
+
+| Cenário   | Código de status de HTTP | Código de erro | Mensagem de erro |
+|:-----------|:------|:----------|:----------|
+| **startTime** ou **endTime** inválido | 400 | RequestBodyRead | Não é possível converter o literal '08"para o tipo 'Edm.TimeOfDay' esperado.|
+| A hora de início é maior do que a hora de término | 400 | ErrorInvalidTimeSettings | A Hora de Início deve ocorrer antes da Hora de Término. |
+| Dia inválido em **daysOfWeek** | 400 | InvalidArguments | O valor solicitada "RandomDay" não foi encontrado.|
+| **timeZone** inválido | 400 | InvalidTimeZone | As configurações de Fuso Horário fornecidas são inválidas.|
+
+
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir habilita as respostas automáticas para um intervalo de datas, definindo as seguintes propriedades da propriedade **automaticRepliesSetting**: **status**, **scheduledStartDateTime** e **scheduledEndDateTime**.
+O primeiro exemplo habilita as respostas automáticas de um intervalo de datas, definindo as seguintes propriedades da propriedade **automaticRepliesSetting**: **status**, **scheduledStartDateTime** e **scheduledEndDateTime**.
 
 <!-- {
   "blockType": "request",
@@ -70,7 +85,7 @@ Content-Type: application/json
 }
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -84,7 +99,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "scheduled",
-        "externalAudience": "none",
+        "externalAudience": "all",
         "scheduledStartDateTime": {
             "dateTime": "2016-03-20T02:00:00.0000000",
             "timeZone": "UTC"
@@ -95,14 +110,105 @@ Content-type: application/json
         },
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
-    },
-    "timeZone":"UTC",
-    "language":{
-      "locale":"en-US",
-      "displayName":"English (United States)"
     }
 }
 ```
+
+
+##### <a name="request-2"></a>Solicitação 2
+O segundo exemplo personaliza o fuso horário das horas de trabalho do usuário conectado definindo a propriedade **timeZone** para um [fuso horário personalizado](../resources/customtimezone.md).
+
+<!-- {
+  "blockType": "ignored",
+  "name": "update_mailboxsettings_2"
+}-->
+```http
+PATCH https://graph.microsoft.com/api/v1.0/me/mailboxSettings
+Content-Type: application/json
+
+{
+  "workingHours": {
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
+         "name": "Customized Time Zone",
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
+  }
+} 
+```
+##### <a name="response-2"></a>Resposta 2
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "ignored",
+  "name": "update_mailboxsettings_2",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxSettings"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings",
+    "workingHours":{
+        "daysOfWeek":[
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday",
+            "saturday"
+        ],
+        "startTime":"09:00:00.0000000",
+        "endTime":"18:30:00.0000000",
+        "timeZone":{
+            "@odata.type":"#microsoft.graph.customTimeZone",
+            "bias":-200,
+            "name":"Customized Time Zone",
+            "standardOffset":{
+                "time":"02:00:00.0000000",
+                "dayOccurrence":4,
+                "dayOfWeek":"sunday",
+                "month":5,
+                "year":0
+            },
+            "daylightOffset":{
+                "daylightBias":-100,
+                "time":"02:00:00.0000000",
+                "dayOccurrence":2,
+                "dayOfWeek":"sunday",
+                "month":10,
+                "year":0
+            }
+        }
+    }
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

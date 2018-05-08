@@ -1,6 +1,6 @@
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
-Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente ao receber seus emails), localidade (país/região e idioma) e fuso horário.
+Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente ao receber seus emails), localidade (país/região e idioma), fuso horário e horário de trabalho.
 
 Você pode exibir todas as configurações de caixa de correio ou obter configurações específicas.
 
@@ -18,14 +18,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para acessar todas as configurações de email que incluem configurações de respostas automáticas:
+Para obter todas as configurações de caixa de correio de um usuário:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obter configurações específicas, por exemplo, somente as configurações de respostas automáticas, localidade ou fuso horário:
+Para obter configurações específicas, por exemplo, somente as configurações de respostas automáticas, localidade, fuso horário ou horário de trabalho:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -36,6 +36,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/language
 
 GET /me/mailboxSettings/timeZone
 GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
+
+GET /me/mailboxSettings/workingHours
+GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
@@ -55,10 +58,11 @@ Se for bem-sucedido, este método retornará um código de resposta `200 OK` e u
 - Objeto [automaticRepliesSetting](../resources/automaticRepliesSetting.md)
 - Objeto [localeInfo](../resources/localeinfo.md)
 - cadeia de caracteres (para **timeZone**)
+- [workingHours](../resources/workinghours.md)
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O primeiro exemplo obtém todas as configurações da caixa de correio do usuário conectado, que incluem configurações de respostas automáticas, fuso horário e configurações de idioma.
+O primeiro exemplo obtém todas as configurações da caixa de correio do usuário conectado, que incluem configurações de fuso horário, respostas automáticas, localidade (idioma e país/região) e horário de trabalho.
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
@@ -98,6 +102,20 @@ Content-type: application/json
     "language":{
       "locale":"en-US",
       "displayName":"English (United States)"
+    },
+    "workingHours":{
+        "daysOfWeek":[
+            "monday",
+            "tuesday",
+            "wednesday",
+            "thursday",
+            "friday"
+        ],
+        "startTime":"08:00:00.0000000",
+        "endTime":"17:00:00.0000000",
+        "timeZone":{
+            "name":"Pacific Standard Time"
+        }
     }
 }
 ```
@@ -137,6 +155,64 @@ Content-type: application/json
     },
     "internalReplyMessage": "<html>\n<body>\n<p>I'm at our company's worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n",
     "externalReplyMessage": "<html>\n<body>\n<p>I'm at the Contoso worldwide reunion and will respond to your message as soon as I return.<br>\n</p></body>\n</html>\n"
+}
+```
+
+
+##### <a name="request-3"></a>Solicitação 3
+O terceiro exemplo obtém especificamente as configurações de horário de trabalho da caixa de correio do usuário conectado.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
+```
+##### <a name="response-3"></a>Resposta 3
+A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md). Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_mailboxsettings_3",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workingHours"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings/workingHours",
+    "daysOfWeek":[
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ],
+    "startTime":"09:00:00.0000000",
+    "endTime":"18:30:00.0000000",
+    "timeZone":{
+        "@odata.type":"#microsoft.graph.customTimeZone",
+        "bias":-200,
+        "name":"Customized Time Zone",
+        "standardOffset":{
+            "time":"02:00:00.0000000",
+            "dayOccurrence":4,
+            "dayOfWeek":"sunday",
+            "month":5,
+            "year":0
+        },
+        "daylightOffset":{
+            "daylightBias":-100,
+            "time":"02:00:00.0000000",
+            "dayOccurrence":2,
+            "dayOfWeek":"sunday",
+            "month":10,
+            "year":0
+        }
+    }
 }
 ```
 

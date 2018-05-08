@@ -49,13 +49,14 @@ Esse recurso permite:
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |iCalUId|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes.|
 |id|String| Somente leitura.|
-|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
 |isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|O local do evento.|
+|locations|Coleção [location](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
 |onlineMeetingUrl|String|Uma URL para uma reunião online.|
 |organizer|[recipient](recipient.md)|O organizador do evento.|
 |originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
@@ -65,12 +66,12 @@ Esse recurso permite:
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
 |responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
-|sensitivity|String| Os valores possíveis são: `Normal`, `Personal`, `Private`, `Confidential`.|
+|sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|As categorias atribuídas ao item.|
-|showAs|String|O status a ser exibido. Os valores possíveis são: `Free`, `Tentative`, `Busy`, `Oof`, `WorkingElsewhere`, `Unknown`.|
+|showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
 |subject|String|O texto da linha de assunto do evento.|
-|type|String|O tipo de evento. Os valores possíveis são: `SingleInstance`, `Occurrence`, `Exception`, `SeriesMaster`. Somente leitura.|
+|type|String|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 ## <a name="relationships"></a>Relações
@@ -120,6 +121,7 @@ Veja a seguir uma representação JSON do recurso
   "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
   "onlineMeetingUrl": "string",
   "organizer": {"@odata.type": "microsoft.graph.recipient"},
   "originalEndTimeZone": "string",

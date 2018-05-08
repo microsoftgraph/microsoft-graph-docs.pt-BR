@@ -20,7 +20,7 @@ Esse recurso tem suporte para o uso da [consulta delta](../../../concepts/delta_
 |[copy](../api/mailfolder_copy.md)|[MailFolder](mailfolder.md)|Copie uma mailFolder e seu conteúdo para outra mailFolder.|
 |[delta](../api/mailfolder_delta.md)|Coleção [mailFolder](mailfolder.md)|Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[move](../api/mailfolder_move.md)|[MailFolder](mailfolder.md)|Mova uma mailFolder e seu conteúdo para outra mailFolder.|
-|[Criar propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma mailFolder nova ou existente.   |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[mailFolder](mailFolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma mailFolder nova ou existente.   |
 |[Obter mailFolder com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Obtenha mailFolders que contêm uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [mailFolder](mailFolder.md) | Criar uma ou mais propriedades estendidas de vários valores em uma mailFolder nova ou existente.  |
 |[Obter mailFolder com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [mailFolder](mailFolder.md) | Obtenha uma mailFolder que contém uma propriedade estendida com vários valores usando `$expand`. |
@@ -48,6 +48,7 @@ MailFolders no Outlook podem conter mais de um tipo de itens. Por exemplo, a cai
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |childFolders|Coleção [MailFolder](mailfolder.md)|A coleção de pastas filho na mailFolder.|
+|messageRules | Coleção [messageRule](messagerule.md) | A coleção de regras que se aplicam à pasta da Caixa de Entrada do usuário. | 
 |mensagens|Coleção [Message](message.md)|A coleção de mensagens na mailFolder.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
@@ -60,6 +61,7 @@ Veja a seguir uma representação JSON do recurso
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
+    "messageRules", 
     "messages",
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
@@ -78,6 +80,7 @@ Veja a seguir uma representação JSON do recurso
   "unreadItemCount": 1024,
 
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
+  "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]

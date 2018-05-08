@@ -6,9 +6,9 @@ Atualize as propriedades da organização autenticada no momento.
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -32,37 +32,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedPlans|AssignedPlan|A coleção de planos de serviço associados ao locatário. **Anotações**: não anulável.            |
-|cidade|String|            |
-|companyLastDirSyncTime|DateTimeOffset|A hora e a data em que o locatário foi sincronizado pela última vez com o diretório no local.|
-|country|String|            |
-|countryLetterCode|String|            |
-|deletionTimestamp|DateTimeOffset||
-|dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
-|displayName|String|O nome de exibição do locatário.|
-|marketingNotificationEmails|String|                                        **Anotações**: não anulável.            |
-|objectType|String|Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". Herdado de [directoryObject](../resources/directoryobject.md).|
-|postalCode|String|            |
-|preferredLanguage|String|            |
-|provisionedPlans|ProvisionedPlan|                                        **Anotações**: não anulável.            |
-|provisioningErrors|ProvisioningError|                                        **Anotações**: não anulável.            |
-|securityComplianceNotificationMails|String||
-|securityComplianceNotificationPhones|String||
-|state|String|            |
-|street|String|            |
-|technicalNotificationMails|String|                                        **Anotações**: não anulável.            |
-|telephoneNumber|String|            |
-|verifiedDomains|VerifiedDomain|A coleção de domínios associados a este locatário. **Anotações**: não anulável.            |
+|marketingNotificationEmails|Coleção de cadeia de caracteres|                                        **Anotações**: não anulável.            |
+|privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
+|securityComplianceNotificationMails|Coleção de cadeias de caracteres||
+|securityComplianceNotificationPhones|Coleção de cadeia de caracteres||
+|technicalNotificationMails|Coleção de cadeia de caracteres|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [organization](../resources/organization.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
-
-Este é um exemplo da solicitação.
 
 <!-- {
   "blockType": "request",
@@ -75,29 +57,19 @@ Content-type: application/json
 Content-length: 411
 
 {
-  "assignedPlans": [
+  "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "privacyProfile" :
     {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
+      "contactEmail":"alice@contoso.com",
+      "statementUrl":"https://contoso.com/privacyStatement"
+    },
+  "securityComplianceNotificationMails" : ["security@contoso.com"],
+  "securityComplianceNotificationPhones" : ["(123) 456-7890"],
+  "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
 
-<br/>
-
 ### <a name="response"></a>Resposta
-
-Veja a seguir um exemplo da resposta. **Observação**: o objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -106,30 +78,8 @@ Veja a seguir um exemplo da resposta. **Observação**: o objeto da resposta mos
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 411
-
-{
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "servicePlanId-value"
-    }
-  ],
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "country": "country-value",
-  "countryLetterCode": "countryLetterCode-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
-
-<br/>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
