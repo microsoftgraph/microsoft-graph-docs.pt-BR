@@ -10,18 +10,15 @@ Herda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppStatusRaws](../api/intune_mam_managedappstatusraw_list.md)|Conjunto [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Listar propriedades e relações de objetos de [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Obter managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Ler propriedades e relações de objetos de [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Criar managedAppStatusRaw](../api/intune_mam_managedappstatusraw_create.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Criar um novo objeto de [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Excluir managedAppStatusRaw](../api/intune_mam_managedappstatusraw_delete.md)|Nenhum|Excluir [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
-|[Atualizar managedAppStatusRaw](../api/intune_mam_managedappstatusraw_update.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Atualizar as propriedades de um objeto de [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
+|[Obter managedAppStatusRaw](../api/intune_mam_managedappstatusraw_get.md)|[managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md)|Ler propriedades e relações do objeto [managedAppStatusRaw](../resources/intune_mam_managedappstatusraw.md).|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome amigável do relatório de status. Herda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|versão|Cadeia de caracteres|Versão da entidade. Herda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
-|conteúdo|[Json](../resources/intune_mam_json.md)|Conteúdo do relatório de status.|
+|id|String|Chave da entidade. Herda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|version|Cadeia de caracteres|Versão da entidade. Herda de [managedAppStatus](../resources/intune_mam_managedappstatus.md)|
+|content|[Json](../resources/intune_mam_json.md)|Conteúdo do relatório de status.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

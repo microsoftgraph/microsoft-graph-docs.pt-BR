@@ -659,6 +659,35 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 ---
 
+## <a name="security-permissions"></a>Permissões de segurança
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Ler os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. | Sim  |
+| _SecurityEvents.ReadWrite.All_   | Ler e atualizar os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. Também permite ao aplicativo atualizar as propriedades editáveis em eventos de segurança em nome do usuário conectado. | Sim  |
+
+#### <a name="application-permissions"></a>Permissões de aplicativos
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _SecurityEvents.Read.All_        |  Ler os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização. | Sim  |
+| _SecurityEvents.ReadWrite.All_   | Ler e atualizar os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização. Também permite ao aplicativo atualizar as propriedades editáveis em eventos de segurança. | Sim  |
+
+### <a name="remarks"></a>Comentários
+
+As permissões de segurança só são válidas para contas corporativas ou de estudante.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated-and-application"></a>Permissões delegadas e de aplicativo
+
+- _SecurityEvents.Read.All_: ler a lista de todos os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o locatário (`GET /beta/security/alerts`)
+- _SecurityEvents.ReadWrite.All_: atualizar ou ler os alertas de segurança de todos os provedores de segurança licenciados disponíveis para o locatário (`PATCH /beta/security/alerts/{id}`)
+
+---
+
 ## <a name="sites-permissions"></a>Permissões de sites
 
 #### <a name="delegated-permissions"></a>Permissões delegadas

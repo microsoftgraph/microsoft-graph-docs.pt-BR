@@ -11,26 +11,23 @@ Herda de [managedAppRegistration](../resources/intune_mam_managedappregistration
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosManagedAppRegistrations](../api/intune_mam_iosmanagedappregistration_list.md)|Coleção [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Lista propriedades e relações dos objetos [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
-|[Obter iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_get.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Propriedades de leitura e relações do objeto [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
-|[Criar iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_create.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Cria um novo objeto [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
-|[Excluir iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_delete.md)|Nenhum|Exclui um [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
-|[Atualizar iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_update.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Atualiza as propriedades de um objeto [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
+|[Obter iosManagedAppRegistration](../api/intune_mam_iosmanagedappregistration_get.md)|[iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md)|Ler propriedades e relações do objeto [iosManagedAppRegistration](../resources/intune_mam_iosmanagedappregistration.md).|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Data e hora de criação. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|applicationVersion|Cadeia de caracteres|Versão do aplicativo. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|managementSdkVersion|Cadeia de caracteres|Versão do SDK do gerenciamento de aplicativos. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|platformVersion|Cadeia de caracteres|Versão do sistema operacional. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|createdDateTime|DateTimeOffset|Data e hora de criação. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento. Herdada da [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|applicationVersion|Cadeia de caracteres|Versão do aplicativo. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|managementSdkVersion|Cadeia de caracteres|Versão do SDK do gerenciamento de aplicativos. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|platformVersion|Cadeia de caracteres|Versão do sistema operacional. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceType|Cadeia de caracteres|Tipo de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|Cadeia de caracteres|Nome de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |flaggedReasons|Coleção de cadeias de caracteres|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. Aplicativo em execução em um dispositivo root. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|id|String|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |version|Cadeia de caracteres|Versão da entidade. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 
 ## <a name="relationships"></a>Relações

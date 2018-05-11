@@ -42,7 +42,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Identificador de aplicativo móvel](intune_mam_mobileappidentifier.md)
 - [Domínio com proxy](intune_mam_proxieddomain.md)
 - [Configuração direcionada de aplicativo gerenciado](intune_mam_targetedmanagedappconfiguration.md)
-- [Atribuição de política de proteção de aplicativo gerenciado direcionado](intune_mam_targetedmanagedapppolicyassignment.md)
 - [Proteção de aplicativo gerenciado direcionado](intune_mam_targetedmanagedappprotection.md)
 - [Usuário](intune_mam_user.md)
 - [Resumo de aprendizagem de aplicativos da proteção de informações do Windows](intune_wip_windowsinformationprotectionapplearningsummary.md)
