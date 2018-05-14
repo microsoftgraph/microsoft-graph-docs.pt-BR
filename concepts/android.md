@@ -19,7 +19,7 @@ Para usar o Microsoft Graph no seu aplicativo para Android, você precisa mostra
 
 Para começar, será necessário: 
 
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - Android Studio 2.0 ou posterior
 
 
@@ -74,7 +74,7 @@ Registre um aplicativo no Portal de Registro de Aplicativos da Microsoft. Isso g
 
     b. Selecione **Adicionar plataforma** e **Aplicativo nativo**.
 
-      > **Observação:** O Portal de registro de Aplicativos fornece um URI de redirecionamento com um valor de `msalENTER_YOUR_CLIENT_ID://auth`. Não use URIs de redirecionamento incorporados. O [Exemplo do Connect para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa a biblioteca de autenticação de MSAL que requer esse URI de redirecionamento. Se estiver usando uma [biblioteca de terceiros com suporte](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) ou uma biblioteca **ADAL**, você deverá usar URIs de redirecionamento incorporados.
+      > **Observação:** O Portal de registro de Aplicativos fornece um URI de redirecionamento com um valor de `msalENTER_YOUR_CLIENT_ID://auth`. Não use URIs de redirecionamento incorporados. O [Exemplo do Connect para Android](https://github.com/microsoftgraph/android-java-connect-sample) implementa a biblioteca de autenticação de MSAL que requer esse URI de redirecionamento. Se estiver usando uma [biblioteca de terceiros com suporte](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries#compatible-client-libraries) ou uma biblioteca **ADAL**, você deverá usar URIs de redirecionamento incorporados.
       
       c. Adicione permissões delegadas. Você precisará de **profile**, **Mail.ReadWrite**, **Mail.Send**, **Files.ReadWrite** e **User.ReadBasic.All**. 
 
@@ -498,7 +498,7 @@ O [SDK do Microsoft Graph para Android](https://github.com/microsoftgraph/msgrap
 
 ### <a name="call-microsoft-graph-using-the-microsoft-graph-rest-api"></a>Chamar o Microsoft Graph usando a API REST do Microsoft Graph
 
-A [API REST do Microsoft Graph](http://developer.microsoft.com/pt-BR/graph/docs) expõe várias APIs dos serviços em nuvem da Microsoft por meio de um único ponto de extremidade da API REST. Siga estas etapas para usar a API REST.
+A [API REST do Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) expõe várias APIs dos serviços em nuvem da Microsoft por meio de um único ponto de extremidade da API REST. Siga estas etapas para usar a API REST.
 
 1. Adicione permissões de Internet ao seu aplicativo. Abra o arquivo **AndroidManifest** e adicione os seguintes filhos ao elemento de manifesto.
     
@@ -598,6 +598,6 @@ Verifique a caixa de entrada do endereço de email que você configurou em [Cham
 ## <a name="see-also"></a>Confira também
 
 - [SDK do Microsoft Graph para Android](https://github.com/microsoftgraph/msgraph-sdk-android) 
-- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_overview)
-- [Obter acesso em nome de um usuário](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_v2_user)
-- [Obter acesso sem um usuário](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_v2_service)
+- [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview)
+- [Obter acesso em nome de um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_user)
+- [Obter acesso sem um usuário](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_v2_service)

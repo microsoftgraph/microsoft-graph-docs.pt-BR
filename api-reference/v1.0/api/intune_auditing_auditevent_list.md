@@ -45,7 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1698
+Content-Length: 1629
 
 {
   "value": [
@@ -57,9 +57,6 @@ Content-Length: 1698
       "actor": {
         "@odata.type": "microsoft.graph.auditActor",
         "type": "Type value",
-        "permissions": [
-          "Permissions value"
-        ],
         "userPermissions": [
           "User Permissions value"
         ],

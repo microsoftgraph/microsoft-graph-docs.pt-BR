@@ -35,7 +35,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enrollm
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_onboarding_deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
 
 
 

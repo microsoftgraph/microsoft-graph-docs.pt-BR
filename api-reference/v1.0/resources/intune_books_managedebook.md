@@ -18,7 +18,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |description|Cadeia de caracteres|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
-|largeCover|[mimeContent](../resources/intune_books_mimecontent.md)|Capa do livro.|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Capa do livro.|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico.|
 |informationUrl|String|A URL de informações adicionais.|

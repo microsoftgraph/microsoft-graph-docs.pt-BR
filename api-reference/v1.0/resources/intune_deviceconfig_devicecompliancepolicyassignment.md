@@ -16,7 +16,7 @@ Atribuição de política de conformidade do dispositivo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

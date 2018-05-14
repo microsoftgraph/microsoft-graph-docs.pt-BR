@@ -47,7 +47,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5086
+Content-Length: 5130
 
 {
   "value": [
@@ -56,6 +56,7 @@ Content-Length: 5086
       "id": "705c034c-034c-705c-4c03-5c704c035c70",
       "userId": "User Id value",
       "deviceName": "Device Name value",
+      "managedDeviceOwnerType": "company",
       "deviceActionResults": [
         {
           "@odata.type": "microsoft.graph.deviceActionResult",

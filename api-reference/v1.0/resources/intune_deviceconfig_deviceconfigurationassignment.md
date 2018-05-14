@@ -16,7 +16,7 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da atribuição.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_deviceconfig_deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
