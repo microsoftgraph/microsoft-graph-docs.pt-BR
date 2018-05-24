@@ -1,6 +1,6 @@
 # <a name="best-practices-for-working-with-the-onenote-api-in-microsoft-graph"></a>Práticas recomendadas para trabalhar com a API do OneNote no Microsoft Graph
 
-Este artigo fornece recomendações para trabalhar com APIs do OneNote no Microsoft Graph. Essas recomendações são baseadas em respostas a perguntas comuns que vemos no StackOverflow e no Twitter.
+Este artigo fornece recomendações para trabalhar com APIs do OneNote no Microsoft Graph. Essas recomendações são baseadas em respostas a perguntas comuns do Stack Overflow e do Twitter.
 
 ## <a name="use-select-to-select-the-minimum-set-of-properties-you-need"></a>Use $select para selecionar o conjunto mínimo de propriedades de que você precisa
 Quando você consulta um recurso (por exemplo, seções em um bloco de anotações), faz uma solicitação semelhante à seguinte.

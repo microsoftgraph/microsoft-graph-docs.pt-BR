@@ -41,7 +41,7 @@ A seguir há exemplos de alterações compatíveis com versões anteriores:
 As seguintes versões da API Microsoft Graph estão disponíveis atualmente.
 
 ### <a name="beta-version"></a>Versão beta
-Exposto em `https://graph.microsoft.com/beta`, a versão beta da API Microsoft Graph contém recursos que estão atualmente na visualização. Para obter a documentação da API beta, veja [Referência de ponto de extremidade da Microsoft Graph beta](../api-reference/beta/beta-overview.md). Espere alterações significativas na versão beta regularmente. Não haverá uma dependência de produção em APIs /beta.
+Exposto em `https://graph.microsoft.com/beta`, a versão beta da API Microsoft Graph contém recursos que estão atualmente _**na visualização**_. Para obter a documentação da API beta, veja [Referência de ponto de extremidade do Microsoft Graph beta](../api-reference/beta/beta-overview.md). Espere alterações significativas na versão beta regularmente. Não haverá uma dependência de produção em APIs /beta.
 
 Não damos nenhuma garantia de que um recurso beta será promovido para a versão atual. Quando a equipe da API Microsoft Graph acredita que um recurso beta está pronto para disponibilidade geral (GA), adicionaremos esse recurso à versão atual mais recente. Se a promoção do recurso resultar em uma alteração significativa de uma versão atual, o número da versão será incrementado e a nova versão se tornará a versão atual.
 Nossa comunidade do desenvolvedor pode postar solicitação de recursos no [UserVoice](https://officespdev.uservoice.com/), incluindo solicitações de novos recursos, bem como solicitações para promover APIs beta existentes para a versão atual. 
@@ -56,6 +56,6 @@ Não há atualmente nenhuma versão preterida da Microsoft Graph.
 
 ## <a name="terms-of-use"></a>Termos de uso
 
-Ao usar as APIs Microsoft Graph, você concorda com os [Termos de Uso](https://msdn.microsoft.com/pt-BR/cc300389). 
+Ao usar as APIs Microsoft Graph, você concorda com os [Termos de Uso](../misc/terms-of-use.md). 
 
 Seus comentários são importantes para nós. Junte-se a nós na página [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque suas perguntas com {MicrosoftGraph}.
