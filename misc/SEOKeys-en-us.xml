@@ -8,6 +8,7 @@
 		<Item text="Implantações híbridas (visualização)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="Controle de versão e suporte" url="/en-us/concepts/versioning_and_support" />
+	<Item text="Termos de uso" url="/en-us/misc/terms-of-use" />
   </Item>
   <Item text="Inícios rápidos" url="/en-us/concepts/get-started">
     <Item text="Android" url="/en-us/concepts/android" SEOKeyword="Android, API do Microsoft Graph, Passo a Passo" SEODescription="Comece a usar o Microsoft Graph para acessar os dados de nuvem da Microsoft em um aplicativo Android" />
@@ -35,6 +36,7 @@
   <Item text="Experiências entre dispositivos" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview">
     <Item text="Feed de atividades" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Retransmissão de dispositivo (prévia)" url="/en-us/concepts/device-relay-concept-overview" />
+	<Item text="Crie aplicativos entre dispositivos" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="Reserva de clientes (prévia)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="Dispositivos e aplicativos" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
@@ -64,6 +66,7 @@
   <Item text="Relatórios" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Segurança (visualização)" url="/en-us/concepts/security-concept-overview">
 	<Item text="Integrar com um SIEM" url="/en-us/concepts/security_siemintegration" />
+	<Item text="Autorização" url="/en-us/concepts/security-authorization" />
   </Item>
   <Item text="Sites e listas" ProdTag="SharePoint" url="/en-us/concepts/sharepoint-concept-overview" />
   <Item text="Inteligência social" url="/en-us/concepts/social-intel-concept-overview">
@@ -2404,7 +2407,7 @@
         <Item text="Encaminhar evento" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="Excluir evento" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="Excluir evento, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Exclua um evento." />
         <Item text="Cancelar o evento" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Cancelar evento, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Cancele o evento." />
-        <Item text="Aceitar eventos" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Aceitar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="" />
+        <Item text="Aceitar os eventos" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Aceitar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="" />
         <Item text="Aceitar provisoriamente" url="/en-us/api-reference/beta/api/event_tentativelyaccept" SEOKeyword="evento: tentativelyAccept, API do Microsoft Graph, API do evento" SEODescription="" />
         <Item text="Recusar eventos" url="/en-us/api-reference/beta/api/event_decline" SEOKeyword="evento: recusar, API do Microsoft Graph, API do evento" SEODescription="" />
         <Item text="Descartar lembrete" url="/en-us/api-reference/beta/api/event_dismissreminder" SEOKeyword="evento: dismissReminder, API do Microsoft Graph, API do evento" SEODescription="" />
@@ -5572,7 +5575,6 @@
 			<Item text="Atualizar alerta" url="/en-us/api-reference/beta/api/alert_update" />
 		</Item>
 		<Item text="Erros" url="/en-us/api-reference/beta/resources/security-error-codes" />
-	    <Item text="Integrar com um SIEM" url="/en-us/concepts/security_siemintegration" />
 	</Item>
 	<Item text="Sites e listas" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="SharePoint, sites, listas, unidades, API do Microsoft Graph, API do SharePoint">
       <Item text="Sites" url="/en-us/api-reference/beta/resources/site" SEOKeyword="sharepoint, site, sites, api do microsoft graph, api de sites do sharepoint">
