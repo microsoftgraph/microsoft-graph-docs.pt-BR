@@ -48,19 +48,20 @@
 	  <Item text="Organizar mensagens" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Compartilhar pastas de mensagens" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
-  <Item text="Observações" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use o Microsoft Graph para integrar seus aplicativos com o OneNote.">
-    <Item text="Práticas recomendadas" url="/en-us/concepts/onenote_best_practices" SEODescription="Use as práticas recomendadas ao trabalhar com as APIs do OneNote no Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
-	<Item text="Diretrizes de identidade visual" url="/en-us/concepts/onenote-branding" />
-	<Item text="Abra o cliente do OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abra um aplicativo do OneNote em uma determinada página ou um bloco de anotações." />
-	<Item text="Usar marcas de anotação" url="/en-us/concepts/onenote-note-tags" />
-	<Item text="Códigos de erro" url="/en-us/concepts/onenote_error_codes" SEODescription="Localize os códigos de erro que foram retornados pelas APIs do OneNote no Microsoft Graph." />
-  <Item text="Obter conteúdo do OneNote" url="/en-us/concepts/onenote-get-content" />
+  <Item text="Observações" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use o Microsoft Graph para integrar os aplicativos ao OneNote.">
+    <Item text="Obter conteúdo do OneNote" url="/en-us/concepts/onenote-get-content" />
+	<Item text="Abrir o cliente do OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abra um aplicativo do OneNote em uma determinada página ou um bloco de anotações." />
 	<Item text="Criar páginas" url="/en-us/concepts/onenote-create-page" />
 	<Item text="Atualizar conteúdo da página" url="/en-us/concepts/onenote_update_page" />
-	<Item text="Criar elementos posicionados absolutos" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Adicionar imagens, vídeos e arquivos" url="/en-us/concepts/onenote_images_files" />
+	<Item text="Criar elementos posicionados absolutos" url="/en-us/concepts/onenote-abs-pos" />
 	<Item text="Extrair dados" url="/en-us/concepts/onenote-extract-data" />
+	<Item text="Usar marcas de anotação" url="/en-us/concepts/onenote-note-tags" />
+	<Item Label="RECURSOS" url="" />
 	<Item text="HTML de entrada e saída" url="/en-us/concepts/onenote_input_output_html" SEODescription="Entenda o HTML de entrada e saída ao criar, atualizar ou analisar o conteúdo retornado da página do OneNote." />
+	<Item text="Práticas recomendadas" url="/en-us/concepts/onenote_best_practices" SEODescription="Use as práticas recomendadas ao trabalhar com as APIs do OneNote no Microsoft Graph." />  <Item text="" url="/en-us/concepts/" />
+	<Item text="Diretrizes de identidade visual" url="/en-us/concepts/onenote-branding" />
+	<Item text="Códigos de erro" url="/en-us/concepts/onenote_error_codes" SEODescription="Localize os códigos de erro que foram retornados pelas APIs do OneNote no Microsoft Graph." />
   </Item>
   <Item text="Contatos pessoais" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
   <Item text="Relatórios" url="/en-us/concepts/reportroot-concept-overview" />
@@ -2168,6 +2169,7 @@
   </Item>
    <Item text="Notificações de alteração" url="/en-us/api-reference/v1.0/resources/webhooks" SEOKeyword="informações, API do Microsoft Graph, API de usuário" SEODescription="">
     <Item text="Assinatura" url="/en-us/api-reference/v1.0/resources/subscription" SEOKeyword="informações, API do Microsoft Graph, API de usuário" SEODescription="">
+	  <Item text="Lista de assinaturas" url="/en-us/api-reference/v1.0/api/subscription_list" />
       <Item text="Obter assinatura" url="/en-us/api-reference/v1.0/api/subscription_get" SEOKeyword="Listar assinaturas, API do Microsoft Graph, API de webhooks" SEODescription="Recuperar uma lista de assinaturas." />
       <Item text="Criar assinatura" url="/en-us/api-reference/v1.0/api/subscription_post_subscriptions" />
       <Item text="Atualizar assinatura" url="/en-us/api-reference/v1.0/api/subscription_update" />
@@ -3476,7 +3478,7 @@
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_get" />
         </Item>
         <Item text="Tipo de conexão de VPN da Apple" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype" />
-        <Item text="Tipo de compartilhamento de área de transferência do Application Guard Block" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="Tipo de bloqueio de compartilhamento de área de transferência do Application Guard" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
         <Item text="Tipo de transferência de arquivo do Application Guard Block" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
         <Item text="Modo de atualização automática" url="/en-us/api-reference/beta/resources/intune_deviceconfig_automaticupdatemode" />
         <Item text="Método de criptografia do BitLocker" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerencryptionmethod" />
