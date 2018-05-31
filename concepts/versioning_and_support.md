@@ -4,7 +4,7 @@ Este artigo descreve o suporte e as alterações significativas de políticas do
 
 ## <a name="support-policy-and-deprecation-information"></a>Informações de política e substituição de suporte
 
-O Microsoft Graph segue a [Política de Ciclo de Vida da Microsoft](https://support.microsoft.com/pt-BR/lifecycle). 
+O Microsoft Graph segue a [Política de Ciclo de Vida da Microsoft](https://support.microsoft.com/en-us/lifecycle). 
 
 Conforme novas versões das APIs REST Microsoft Graph e SDKs do Microsoft Graph são lançadas, as versões anteriores são desativadas. A Microsoft declarará uma versão como preterida pelo menos 24 meses antes de retirar uma API ou um SDK. 
 
@@ -34,7 +34,7 @@ A seguir há exemplos de alterações compatíveis com versões anteriores:
  - Alterações à ordem das propriedades
  - Alterações ao formato ou ao comprimento de cadeias de caracteres opacas, como IDs de recurso
 
->**Nota:** ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API REST da Microsoft](https://github.com/microsoft/api-guidelines/). 
+>**Nota:** ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API REST da Microsoft](https://github.com/microsoft/api-guidelines/). 
 
 ## <a name="versions"></a>Versões
 

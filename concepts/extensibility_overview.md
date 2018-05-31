@@ -1,6 +1,6 @@
 # <a name="add-custom-data-to-resources-using-extensions"></a>Adicionar dados personalizados a recursos usando extensões
 
-O Microsoft Graph fornece um único ponto de extremidade de API que lhe dá acesso a dados e insights avançados centrados em pessoas através de uma série de recursos, como [usuário](../api-reference/v1.0/resources/user.md) e [mensagem](../api-reference/v1.0/resources/message.md). Agora há uma maneira de _**estender**_ o Microsoft Graph com seus próprios dados de aplicativo. Você pode adicionar propriedades personalizadas aos recursos do Microsoft Graph sem a necessidade de um repositório de dados externos. 
+O Microsoft Graph fornece um único ponto de extremidade de API que lhe dá acesso a dados e insights avançados centrados em pessoas através de uma série de recursos, como [usuário](../api-reference/v1.0/resources/user.md) e [mensagem](../api-reference/v1.0/resources/message.md). Você também pode ampliar o Microsoft Graph com seus próprios dados de aplicativo. Você pode adicionar propriedades personalizadas aos recursos do Microsoft Graph sem a necessidade de um repositório de dados externos.
 
 Por exemplo, você pode decidir manter seu aplicativo leve e armazenar dados de perfil de usuário específicos do aplicativo no Microsoft Graph estendendo o recurso **user**. Como alternativa, convém manter o repositório de perfil de usuário existente do aplicativo e simplesmente adicionar um identificador de repositório específico do aplicativo para o recurso **user**.
 
@@ -13,7 +13,7 @@ O Microsoft Graph oferece dois tipos de extensões. Escolha o tipo de extensão 
 
 ## <a name="supported-resources"></a>Recursos com suporte
 
-A seguinte tabela lista os recursos que oferecem suporte às extensões de abertura e esquema e indica se eles atingiram ou não a disponibilidade geral (GA - disponível em ambos os pontos de extremidade V1.0 e beta) ou se estão como prévia (disponível apenas no ponto de extremidade beta).  
+A seguinte tabela lista os recursos que oferecem suporte às extensões de abertura e esquema e indica se eles atingiram ou não a disponibilidade geral (GA - disponível em ambos os pontos de extremidade V1.0 e beta) ou se estão como prévia (disponível apenas no ponto de extremidade beta).
 
 |Recurso |Extensões abertas |Extensões de esquema |
 |:------- |:------ |:------ |
@@ -28,16 +28,16 @@ A seguinte tabela lista os recursos que oferecem suporte às extensões de abert
 | [Contato pessoal](../api-reference/v1.0/resources/contact.md)| GA | GA |
 | [Usuário](../api-reference/v1.0/resources/user.md) | GA | GA |
 
-Você pode usar extensões em todos esses recursos ao se conectar com uma conta corporativa ou de estudante. Além disso, você pode usar extensões desses recursos–**evento**, **postar**, **grupo**, **mensagem**, **contato** e **usuário**–quando conectado com uma conta pessoal. 
+Você pode usar extensões em todos esses recursos ao se conectar com uma conta corporativa ou de estudante. Além disso, você pode usar extensões de recursos de **evento**, **post**, **grupo**, **mensagem**, **contato** e **usuário**quando conectado a uma conta pessoal.
 
 ## <a name="open-extensions"></a>Extensões abertas
 
-[Extensões abertas](../api-reference/v1.0/resources/opentypeextension.md) (anteriormente conhecidas como extensões de dados do Office 365) são [tipos abertos](http://www.odata.org/getting-started/advanced-tutorial/#openType) que oferecem uma maneira flexível de adicionar dados de aplicativo não tipados diretamente a uma instância do recurso. 
+[Extensões abertas](../api-reference/v1.0/resources/opentypeextension.md) (anteriormente conhecidas como extensões de dados do Office 365) são [tipos abertos](http://www.odata.org/getting-started/advanced-tutorial/#openType) que oferecem uma maneira flexível de adicionar dados de aplicativo não tipados diretamente a uma instância do recurso.
 
 As extensões abertas, juntamente com seus dados personalizados, podem ser acessadas por meio da propriedade de navegação **extensões** da instância do recurso.
-A propriedade **extensionName** é a única propriedade _predefinida_ gravável em uma extensão aberta. Ao criar uma extensão aberta, você deve atribuir à propriedade **extensionName** um nome exclusivo no locatário. 
+A propriedade **extensionName** é a única propriedade _predefinida_ gravável em uma extensão aberta. Ao criar uma extensão aberta, você deve atribuir à propriedade **extensionName** um nome exclusivo no locatário.
 
-Uma maneira de fazer isso é usar um formato DNS (sistema de nomes de domínio) inverso que seja dependente de _seu próprio domínio_, por exemplo, `Com.Contoso.ContactInfo`. 
+Uma maneira de fazer isso é usar um formato DNS (sistema de nomes de domínio) inverso que seja dependente de _seu próprio domínio_, por exemplo, `Com.Contoso.ContactInfo`.
 
 Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
 
@@ -58,28 +58,26 @@ Ao criar uma definição de extensão de esquema, você deve fornecer um nome ex
 
 Você verá este nome exclusivo na **id** usado como o nome do tipo complexo que armazenará seus dados personalizados na instância de recurso estendida.
 
-Diferentemente das extensões abertas, o gerenciamento de definições de extensão de esquema ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md) e [delete](../api-reference/v1.0/api/schemaextension_delete.md)) e gerenciar seus dados (adicionar, obter, atualizar e excluir dados) são conjuntos separados de operações de API. 
+Diferentemente das extensões abertas, o gerenciamento de definições de extensão de esquema ([list](../api-reference/v1.0/api/schemaextension_list.md), [create](../api-reference/v1.0/api/schemaextension_post_schemaextensions.md), [get](../api-reference/v1.0/api/schemaextension_get.md), [update](../api-reference/v1.0/api/schemaextension_update.md) e [delete](../api-reference/v1.0/api/schemaextension_delete.md)) e gerenciar seus dados (adicionar, obter, atualizar e excluir dados) são conjuntos separados de operações de API.
 
 Como as extensões de esquema são acessíveis como tipos complexos em instâncias de recursos direcionados, você pode realizar operações CRUD nos dados personalizados em uma extensão de esquema das seguintes maneiras:
 
 - Use o método `POST` de recurso para especificar dados personalizados ao criar uma nova instância de recurso. Observe que há um [problema conhecido](known_issues.md#creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time) nos recursos **contato**, **evento**, **mensagem** e **postagem** que requer a criação de uma extensão de esquema usando uma operação `PATCH`.
 - Use o método `GET` de recurso para ler os dados personalizados.
 - Use o método `PATCH` de recurso para adicionar ou atualizar dados personalizados em uma instância de recursos existentes.
-- Use o método `PATCH` de recurso para definir o tipo complexo como nulo, para excluir os dados personalizados da instância do recurso. 
+- Use o método `PATCH` de recurso para definir o tipo complexo como nulo, para excluir os dados personalizados da instância do recurso.
 
 Exemplo de extensão do esquema: [Adicionar dados personalizados a grupos usando as extensões do esquema](extensibility_schema_groups.md)
 
-
 ### <a name="schema-extensions-lifecycle"></a>Ciclo de vida das extensões do esquema
 
-Quando o aplicativo cria uma definição de extensão do esquema, ele é marcado como proprietária da extensão do esquema. 
+Quando o aplicativo cria uma definição de extensão do esquema, ele é marcado como proprietária da extensão do esquema.
 
 O aplicativo proprietário pode mover a extensão pelos diferentes estados de um ciclo de vida, usando uma operação PATCH na propriedade **status**. Dependendo do estado atual, o aplicativo proprietário poderá atualizar ou excluir a extensão. Todas as atualizações para uma extensão de esquema devem ser sempre apenas aditivas e incondicionais.
 
-
 |Estado |Comportamento de estado de ciclo de vida |
 |:-------------|:------------|
-| InDevelopment | <ul><li>Estado inicial após a criação. O aplicativo de proprietário ainda está desenvolvendo a extensão do esquema. </li><li>Nesse estado, somente o aplicativo do proprietário pode estender instâncias de recursos com essa definição do esquema e apenas no mesmo diretório onde o proprietário do aplicativo está registrado. </li><li>Apenas o aplicativo proprietário pode atualizar a definição de extensão com alterações aditivas ou excluí-la. </li><li>O aplicativo proprietário pode mover a extensão do esquema de **InDevelopment** para o estado **Disponível**.</li></ul> |
+| InDevelopment | <ul><li>Estado inicial após a criação. O aplicativo de proprietário ainda está desenvolvendo a extensão do esquema. </li><li>Nesse estado, qualquer aplicativo no mesmo diretório em que o aplicativo proprietário está registrado pode ampliar as instâncias de recursos com essa definição de esquema (contanto que o aplicativo tenha permissões para esse recurso). </li><li>Apenas o aplicativo proprietário pode atualizar a definição de extensão com alterações aditivas ou excluí-la. </li><li>O aplicativo proprietário pode mover a extensão do esquema de **InDevelopment** para o estado **Disponível**.</li></ul> |
 | Disponível | <ul><li>A extensão do esquema está disponível para ser usada por todos os aplicativos em qualquer locatário. </li><li>Depois que o aplicativo proprietário define a extensão como **Disponível**, qualquer aplicativo pode simplesmente adicionar dados personalizados a instâncias desses tipos de recursos especificados na extensão (desde que o aplicativo tenha permissões para esse recurso). O aplicativo pode atribuir dados personalizados ao criar uma nova instância ou atualizar uma instância existente. </li><li>O aplicativo proprietário pode atualizar a definição de extensão com alterações aditivas. Nenhum aplicativo pode excluir a definição de extensão nesse estado. </li><li>O proprietário do aplicativo pode mover a extensão do esquema de **Disponível** para o estado **Preterido**.</li></ul> |
 | Preterido | <ul><li>A definição de extensão de esquema não pode ser lido nem modificada. </li><li>Nenhum aplicativo pode ler, atualizar, adicionar novas propriedades ou excluir a extensão. </li><li>No entanto, os aplicativos ainda podem ler, atualizar ou excluir _valores de propriedade_ de extensão existentes. </li><li>O aplicativo proprietário pode mover a extensão do esquema de **Preterida** de volta ao estado **Disponível**.</li></ul> |
 
@@ -99,7 +97,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensões do esquema de diretório do Azure AD
 
-O Azure AD dá suporte a um tipo semelhante de extensões, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Embora você deva usar a API do Graph do Azure AD para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
+O Microsoft Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/pt-BR/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Apesar de você ter que usar a [API do Graph do Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -110,12 +108,18 @@ Além disso, para criar e gerenciar definições de extensão do esquema, um apl
 ## <a name="data-limits"></a>Limites de dados
 
 ### <a name="open-extension-limits"></a>Limites de extensão aberta
+
 Os seguintes limites se aplicam aos recursos de diretório (como **usuário**, **grupo**, **dispositivo**):
 
 - Cada extensão aberta pode ter até 2 KB de dados (incluindo a própria definição da extensão).
 - Um aplicativo pode adicionar até duas extensões abertas por instância do recurso.
 
+Os seguintes limites se aplicam aos recursos do Outlook (como **mensagem**, **evento** e **contatos**):
+
+- Cada extensão aberta é armazenada em uma [propriedade nomeada MAPI](https://msdn.microsoft.com/en-us/library/cc765864(v=office.15).aspx), que é um recurso limitado na caixa de correio de um usuário. Para mais detalhes, confira [tipo de recurso openTypeExtension](../api-reference/v1.0/resources/opentypeextension.md).
+
 ### <a name="schema-extension-limits"></a>Limites de extensão do esquema
+
 Um aplicativo pode criar não mais de cinco definições de **extensão do esquema**.
 
 ## <a name="known-limitations"></a>Limitações conhecidas
@@ -130,6 +134,6 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
 
 - [Adição e verificação de um domínio para um locatário do Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
