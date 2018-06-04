@@ -7,7 +7,7 @@ A imagem a seguir mostra o aplicativo que você criará.
 ![O aplicativo Web após o login mostrando o botão "Enviar email"](./images/angular-connect-sample.png)
 
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) para começar a usar rapidamente.
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/pt-BR/getting-started) para agilizar o processo.
 
 Para baixar uma versão do exemplo de conexão que usa o ponto de extremidade do Azure AD, confira [Exemplo de conexão com o Microsoft Graph para AngularJS](https://github.com/microsoftgraph/angular-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -16,7 +16,7 @@ Para baixar uma versão do exemplo de conexão que usa o ponto de extremidade do
 
 Para começar, será necessário: 
 
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/pt-BR/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js com npm](https://nodejs.org/en/download/)
 - [Bower](https://bower.io)
 - O [Exemplo de conexão da Microsoft para AngularJS](https://github.com/microsoftgraph/angular-connect-sample). Você usará a pasta **starter-project** nos exemplos de arquivo para este passo a passo.
@@ -36,7 +36,7 @@ Registre um aplicativo no Portal de Registro de Aplicativos da Microsoft. Isso g
 
 5. Em **Plataformas**, escolha **Adicionar plataforma** > **Web**.
 
-6. Não deixe de marcar a caixa de diálogo **Permitir Fluxo Implícito** e insira *http://localhost:8080* como o URI de Redirecionamento. 
+6. Não se esqueça de marcar a caixa **Permitir Fluxo Implícito** e insira *http://localhost:8080* como o URI de redirecionamento. 
 
 7. Escolha **Salvar**.
 
@@ -160,7 +160,7 @@ Abra o app.js e adicione o código a seguir na parte inferior do arquivo. Isso i
 
         npm start
 
-2. Em um navegador, acesse *http://localhost:8080* e escolha o botão **Connect**.
+2. Em um navegador, navegue até *http://localhost:8080* e escolha o botão **Conectar**.
 
 3. Entre e conceda as permissões solicitadas. 
 
@@ -171,6 +171,6 @@ Abra o app.js e adicione o código a seguir na parte inferior do arquivo. Isso i
 - Explorar nossos outros [exemplos de AngularJS](https://github.com/search?utf8=%E2%9C%93&q=angular+sample+user%3Amicrosoftgraph&type=Repositories&ref=searchresults) no GitHub.
 
 
-## <a name="see-also"></a>Ver também
-- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-protocols/)
-- [Tokens do Azure AD v2.0](https://azure.microsoft.com/en-us/documentation/articles/active-directory-v2-tokens/)
+## <a name="see-also"></a>Confira também
+- [Protocolos do Azure AD v2.0](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-v2-protocols/)
+- [Tokens do Azure AD v2.0](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-v2-tokens/)

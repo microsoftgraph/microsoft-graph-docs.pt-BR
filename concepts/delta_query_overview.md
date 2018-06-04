@@ -36,7 +36,7 @@ Para usuários e grupos, existem restrições sobre como usar alguns parâmetros
 -   Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
 -   Não há suporte para `$expand`.
 
-Nas APIs de usuários e grupos, os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' ou id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações dos grupos que correspondem às IDs especificadas no filtro de consulta. 
+Nas APIs de usuários e grupos, os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações para os grupos que correspondem às ids especificadas no filtro de consulta. 
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representação de recurso na resposta da consulta delta
 
@@ -68,9 +68,11 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Contatos pessoais em uma pasta | função [delta](../api-reference/v1.0/api/contact_delta.md) do recurso [contato](../api-reference/v1.0/resources/contact.md) |
 | Usuários | função [delta](../api-reference/v1.0/api/user_delta.md) do recurso [usuário](../api-reference/v1.0/resources/user.md) | 
 | Itens de unidade\* | Função [delta](../api-reference/v1.0/api/driveitem_delta.md) do recurso [driveItem](../api-reference/v1.0/resources/driveitem.md) |
-
+| Itens do Planner\*\* | Função [delta](../api-reference/beta/api/planneruser_list_delta.md) de todos os segmentos do recurso [plannerUser](../api-reference/beta/resources/planneruser.md) (visualização) |
 
 > \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/item_delta).
+
+> \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos compatíveis, mas com algumas diferenças.  Para saber mais, consulte [Controlar alterações para o Planner](../api-reference/beta/api/planneruser_list_delta.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

@@ -10,13 +10,13 @@ Este é o aplicativo que você criará.
 | --- | ------- | ----|
 | <img src="images/UWP.png" alt="Connect sample on UWP" width="100%" /> | <img src="images/Droid.png" alt="Connect sample on Android" width="100%" /> | <img src="images/iOS.png" alt="Connect sample on iOS" width="100%" /> |
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start) para começar a usar ou baixe o [Exemplo de conexão com o Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) no qual este artigo se baseia.
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://developer.microsoft.com/graph/quick-start) para agilizar o processo ou baixe o [Exemplo de conexão com o Microsoft Graph para Xamarin Forms](https://github.com/microsoftgraph/xamarin-csharp-connect-sample) no qual este artigo se baseia.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para começar, será necessário: 
 
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/pt-BR/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - [Xamarin para Visual Studio](https://www.xamarin.com/visual-studio)
 - Windows 10 ([modo de desenvolvedor habilitado](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx))
@@ -73,7 +73,7 @@ Se quiser executar o projeto do iOS neste exemplo, você precisará do seguinte:
 
 ## <a name="send-an-email-with-microsoft-graph"></a>Enviar um email com o Microsoft Graph
 
-Abra o arquivo MailHelper.cs em seu projeto inicial. Este arquivo contém o código que constrói e envia um email. Consiste em um único método -- ``ComposeAndSendMailAsync`` -- que constrói e envia uma solicitação POST para o ponto de extremidade **https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
+Abra o arquivo MailHelper.cs em seu projeto inicial. Este arquivo contém o código que constrói e envia um email. Consiste em um único método, ``ComposeAndSendMailAsync``, que constrói e envia uma solicitação POST para o ponto de extremidade**https://graph.microsoft.com/v1.0/me/microsoft.graph.SendMail**. 
 
 O método ``ComposeAndSendMailAsync`` usa três valores de cadeia de caracteres, ``subject``, ``bodyContent``, e ``recipients``, que são passados para ele pelo arquivo MainPage.xaml.cs. As cadeias de caracteres ``subject`` e ``bodyContent`` são armazenadas, juntamente com todos os outras cadeias de caracteres de interface do usuário no arquivo AppResources.resx. A cadeia de caracteres ``recipients`` vem da caixa de endereço na interface do aplicativo. 
 
@@ -431,12 +431,12 @@ Agora você realizou as três etapas obrigatórias para interagir com o Microsof
 ## <a name="run-the-app"></a>Executar o aplicativo
 1. Escolha o projeto que você deseja excluir. Se escolher a opção Plataforma Universal do Windows, você poderá executar o exemplo no computador local. Se quiser executar o projeto do iOS, você precisará se conectar a um [Mac que tenha as ferramentas Xamarin](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/) instaladas nele. (Você também pode abrir esta solução no Xamarin Studio em um Mac e executar o exemplo diretamente de lá). Você pode usar o [Emulador do Visual Studio para Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx) se quiser executar o projeto do Android. 
 
-    ![](images/SelectProject.png "Select project in Visual Studio")
+    ![](images/SelectProject.png "Selecionar um projeto no Visual Studio")
 
-2. Pressione F5 para criar e depurar. Execute a solução e entre com sua conta pessoal ou sua conta comercial ou escolar.
+2. Pressione F5 para criar e depurar. Execute a solução e entre com sua conta pessoal ou conta corporativa ou de estudante.
     > **Observação** Talvez seja necessário abrir o Gerenciador de Configuração de Compilação para certificar-se de que as etapas de Compilar e Implantar estejam selecionadas para o projeto do UWP. 
 
-3. Entre com sua conta pessoal, comercial ou de estudante, e conceda as permissões solicitadas.
+3. Entre com sua conta pessoal, corporativa ou de estudante, e conceda as permissões solicitadas.
 
 4. Escolha o botão **Enviar email**. Quando o email for enviado, será exibida uma mensagem de sucesso. Essa mensagem de email inclui a foto em anexo e também fornece um link de compartilhamento para o arquivo carregado no OneDrive.
 
@@ -444,7 +444,7 @@ Agora você realizou as três etapas obrigatórias para interagir com o Microsof
 - Experimente a API REST usando o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Localize exemplos de operações comuns na [Biblioteca de Trechos de Código do SDK do Microsoft Graph para Xamarin.Forms](https://github.com/microsoftgraph/xamarin-csharp-snippets-sample) ou explore nossos outros [Exemplos de Xamarin](https://github.com/microsoftgraph?utf8=%E2%9C%93&query=xamarin) no GitHub.
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 - [Biblioteca de cliente do .NET do Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 - [Protocolos do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-protocols/)
 - [Tokens do Azure AD v2.0](https://azure.microsoft.com/documentation/articles/active-directory-v2-tokens/)

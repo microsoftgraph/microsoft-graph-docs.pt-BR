@@ -8,13 +8,13 @@ A imagem a seguir mostra o aplicativo que você criará.
 
 O [Ponto de extremidade do Azure AD v2.0](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-appmodel-v2-overview) permite que os usuários entrem com uma MSA(conta da Microsoft) ou uma conta corporativa ou de estudante. O aplicativo usa o [ASP.Net OpenID Connect OWIN middleware](https://www.nuget.org/packages/Microsoft.Owin.Security.OpenIdConnect/) e a [MSAL (Biblioteca de Autenticação da Microsoft) para .NET](https://www.nuget.org/packages/Microsoft.Identity.Client) para entrada e gerenciamento de tokens.
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/quick-start) para começar a usar rapidamente. Observe também que temos uma [Versão REST deste exemplo](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/quick-start) para agilizar o processo. Observe também que temos uma [Versão REST deste exemplo](https://github.com/microsoftgraph/aspnet-connect-rest-sample).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para começar, será necessário: 
 
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/pt-BR/office/developer-program/office-365-developer-program-faq#account-types)
 - Visual Studio 2015 
 - O [Exemplo do Microsoft Graph Connect para ASP.NET 4.6](https://github.com/microsoftgraph/aspnet-connect-sample). Você usará a pasta **starter-project** nos exemplos de arquivo.
 
@@ -39,7 +39,7 @@ Nesta etapa, você registrará um aplicativo no Portal de Registro de Aplicativo
 
 6. Em **Plataformas**, escolha **Adicionar plataforma** > **Web**.
 
-7. Não deixe de marcar a caixa de diálogo **Permitir Fluxo Implícito** e insira *http://localhost:55065/* como o URI de Redirecionamento. 
+7. Não se esqueça de marcar a caixa **Permitir Fluxo Implícito** e insira *http://localhost:55065/* como o URI de redirecionamento. 
 
     A opção **Permitir Fluxo Implícito** habilita o fluxo híbrido do OpenID Connect. Durante a autenticação, isso permite que o aplicativo receba informações de entrada (o **id_token**) e artefatos (neste caso, um código de autorização) que o aplicativo usa para obter um token de acesso.
 
@@ -325,7 +325,7 @@ Agora você está pronto para [executar o aplicativo](#run-the-app).
 ## <a name="run-the-app"></a>Executar o aplicativo
 1. Pressione F5 para criar e executar o aplicativo. 
 
-2. Entre com sua conta pessoal, comercial ou de estudante e conceda as permissões solicitadas.
+2. Entre com sua conta pessoal, corporativa ou de estudante, e conceda as permissões solicitadas.
 
 3. Escolha o botão **Obter endereço de email**. Quando a operação for concluída, o endereço de email do usuário conectado será exibido na página.
 

@@ -8,7 +8,7 @@ A imagem a seguir mostra o aplicativo que você criará.
 
 ![Captura de tela do exemplo de conexão com o Microsoft Graph para Ruby on Rails](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) para começar a usar ou baixe o [Exemplo de conexão REST para Ruby](https://github.com/microsoftgraph/ruby-connect-rest-sample) no qual este artigo se baseia.
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/pt-BR/getting-started) para agilizar o processo ou baixe o [Exemplo de conexão REST para Ruby](https://github.com/microsoftgraph/ruby-connect-rest-sample) no qual este artigo se baseia.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -19,7 +19,7 @@ Para começar, será necessário:
 - Estrutura do Rails (o exemplo foi testado nos Rails 4.2).
 - Gerenciador de dependências do Bundler.
 - Interface de servidor Web Rack para Ruby.
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/pt-BR/office/developer-program/office-365-developer-program-faq#account-types)
 - O Projeto inicial de conexão com o Microsoft Graph para Ruby on Rails. Baixe o [Exemplo de conexão com o Microsoft Graph para Ruby on Rails](https://github.com/microsoftgraph/ruby-connect-rest-sample). O projeto inicial está localizado na pasta _starter_.
 
 
@@ -43,7 +43,7 @@ Registre um aplicativo no Portal de Registro de Aplicativos da Microsoft. Isso g
 
 6. Em **Plataformas**, escolha **Adicionar plataforma** > **Web**.
 
-7. Não deixe de marcar a caixa de diálogo **Permitir Fluxo Implícito** e inserir *http://localhost:3000/auth/microsoft_v2_auth/callback* como o URI de Redirecionamento.
+7. Não se esqueça de marcar a caixa **Permitir Fluxo Implícito** e insira *http://localhost:3000/auth/microsoft_v2_auth/callback* como o URI de redirecionamento.
 
     A opção Permitir Fluxo Implícito habilita o fluxo híbrido do OpenID Connect. Durante a autenticação, isso permite que o aplicativo receba informações de entrada (o id_token) e artefatos (neste caso, um código de autorização) que o aplicativo usa para obter um token de acesso.
 
@@ -79,7 +79,7 @@ O fluxo de autenticação pode ser dividido nestas etapas básicas:
 2. Obter um código de autorização
 3. Resgatar o código de autorização para solicitar um token de acesso
 
->Para mais informações sobre esse fluxo de autenticação, confira [Aplicativo Web para API Web](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) e [Integrar a identidade da Microsoft e o Microsoft Graph em um aplicativo Web usando OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) na documentação do Azure AD.
+>Para mais informações sobre esse fluxo de autenticação, confira [Aplicativo Web para API Web](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) e [Integrar a identidade da Microsoft e o Microsoft Graph em um aplicativo Web usando OpenID Connect](https://azure.microsoft.com/pt-BR/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) na documentação do Azure AD.
 
 Usaremos uma pilha de três partes do middleware [Rack](http://rack.github.io/) para habilitar o aplicativo para autenticar no Microsoft Graph:
 
@@ -127,7 +127,7 @@ Isso direciona as solicitações de logon para o método `login` do controlador 
         redirect_to '/auth/microsoft_v2_auth'
     end
 
-Em seguida, precisamos especificar onde no aplicativo OmniAuth deve redirecionar após a autenticação ocorrer. Tire o comentário da rota a seguir.
+Em seguida, precisamos especificar para onde no aplicativo OmniAuth deve-se redirecionar após a autenticação. Tire o comentário da rota a seguir.
 
     match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
 
@@ -284,7 +284,7 @@ Por fim, o código usa o código de resposta de HTTP retornado para notificar o 
     ```
 3. Acesse `http://localhost:3000` no navegador da Web.
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Confira também
 - Experimente a API REST usando o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Explorar nossos outros [exemplos do Microsoft Graph](https://github.com/microsoftgraph) no GitHub.
 

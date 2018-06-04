@@ -48,7 +48,7 @@ O servidor está ocupado demais para lidar com a solicitação de entrada neste 
 Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 5.000 itens do OneNote (bloco de anotações, seções, grupos de seções) e não podem ser consultadas usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 5000 itens do OneNote. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
 
 ### <a name="10012"></a>10012
-Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira https://support.office.com/pt-br/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, consulte https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
 
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
@@ -265,13 +265,13 @@ Sua solicitação contém uma expressão **expand** para uma propriedade de não
 A expressão **select** ou **expand** em sua solicitação contém um termo inválido.
 
 ### <a name="20146"></a>20146
-O atributo `style="position:absolute"`é especificado em um elemento, mas o elemento **body** não especifica `data-absolute-enabled="true"`, que é exigido para dar suporte ao posicionamento. Todas as configurações de posição serão ignoradas. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos).
+O atributo `style="position:absolute"`é especificado em um elemento, mas o elemento **body** não especifica `data-absolute-enabled="true"`, que é exigido para dar suporte ao posicionamento. Todas as configurações de posição serão ignoradas. Confira [Criar elementos posicionados absolutos](onenote-abs-pos.md).
 
 ### <a name="20147"></a>20147
-O atributo `style="position:absolute"` é especificado em um elemento que não é um filho direto do elemento **body**, que não tem suporte. Se o elemento for um **div**, **img** ou **object**, torne-o um filho direto de body; caso contrário, as configurações de posição serão ignoradas e seu conteúdo será renderizado dentro de um div posicionado absoluto. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos).
+O atributo `style="position:absolute"` é especificado em um elemento que não é um filho direto do elemento **body**, que não tem suporte. Se o elemento for um **div**, **img** ou **object**, torne-o um filho direto de body; caso contrário, as configurações de posição serão ignoradas e seu conteúdo será renderizado dentro de um div posicionado absoluto. Confira [Criar elementos posicionados absolutos](onenote-abs-pos.md).
 
 ### <a name="20148"></a>20148
-O atributo `style="position:absolute"` é especificado em um tipo de elemento que não dá suporte a ele. Somente elementos **div**, **img** e **object** que são filhos direto do corpo da página dão suporte ao posicionamento. Confira [Criar elementos posicionados absolutos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-abs-pos).
+O atributo `style="position:absolute"` é especificado em um tipo de elemento que não dá suporte a ele. Somente elementos **div**, **img** e **object** que são filhos direto do corpo da página dão suporte ao posicionamento. Confira [Criar elementos posicionados absolutos](onenote-abs-pos.md).
 
 ### <a name="20149"></a>20149
 Sua solicitação especifica um elemento de destino que não pode ser encontrado.

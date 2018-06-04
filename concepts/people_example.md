@@ -4,10 +4,10 @@ Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as 
 ## <a name="authorization"></a>Autorização
 Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas: 
 
-* People.Read - use para fazer chamadas gerais da API de Pessoas; por exemplo, https://graph.microsoft.com/v1.0/me/people/. People.Read requer o consentimento do usuário final.
-* People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas da organização do usuário conectado (https://graph.microsoft.com/v1.0/users('{id}')/people). People.Read.All requer o consentimento do administrador.
+* People.Read – use para fazer chamadas gerais da API de Pessoas; por exemplo, https://graph.microsoft.com/v1.0/me/people/. People.Read requer o consentimento do usuário final.
+* People.Read.All – necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas da organização do usuário conectado (https://graph.microsoft.com/v1.0/users('{id}')/people). People.Read.All requer o consentimento do administrador.
 ## <a name="browse-people"></a>Procurar pessoas
-As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`). Essas solicitações requerem a permissão People.Read. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top*. 
+As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top*. 
 ### <a name="get-a-collection-of-relevant-people"></a>Obter uma coleção de pessoas relevantes 
 A solicitação a seguir obtém as pessoas mais relevantes para o usuário conectado (`/me`), com base nos padrões de comunicação e colaboração e nas relações comerciais. 
 
@@ -654,6 +654,133 @@ Content-type: application/json
     ]
 }
 ```
+
+### <a name="browse-another-users-relevant-people"></a>Procurar pessoas relevantes de outro usuário
+A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado. Esta solicitação requer a permissão People.Read.All. Os parâmetros de consulta descritos nas seções acima também se aplicam.
+
+Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.
+
+```http
+GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
+```
+
+O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. O exemplo abaixo usa *$top* para limitar a resposta a três registros.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+     "value": [
+        {
+            "id": "56155636-703F-47F2-B657-C83F01F49BBC",
+            "displayName": "Clifton Clemente",
+            "givenName": "Clifton",
+            "surname": "Clemente",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "Director",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Legal",
+            "officeLocation": "19/2106",
+            "profession": "",
+            "userPrincipalName": "Cliftonc@contoso.onmicrosoft.com",
+            "imAddress": "sip:Cliftonc@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "Cliftonc@contoso.onmicrosoft.com",
+                    "relevanceScore": 20
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 309 555 0101"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        },
+        {
+            "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
+            "displayName": "Sheree Mitchell",
+            "givenName": "Sheree",
+            "surname": "Mitchell",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "Product Manager",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Sales & Marketing",
+            "officeLocation": "20/2107",
+            "profession": "",
+            "userPrincipalName": "Shereem@contoso.onmicrosoft.com",
+            "imAddress": "sip:shereem@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "Shereem@contoso.onmicrosoft.com",
+                    "relevanceScore": 10
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 918 555 0107"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        },
+        {
+            "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
+            "displayName": "Vincent Matney",
+            "givenName": "Vincent",
+            "surname": "Matney",
+            "birthday": "",
+            "personNotes": "",
+            "isFavorite": false,
+            "jobTitle": "CVP Engineering",
+            "companyName": null,
+            "yomiCompany": "",
+            "department": "Engineering",
+            "officeLocation": "23/2102",
+            "profession": "",
+            "userPrincipalName": "Vincentm@contoso.onmicrosoft.com",
+            "imAddress": "sip:vincentm@contoso.onmicrosoft.com",
+            "scoredEmailAddresses": [
+                {
+                    "address": "Vincentm@contoso.onmicrosoft.com",
+                    "relevanceScore": 10
+                }
+            ],
+            "phones": [
+                {
+                    "type": "Business",
+                    "number": "+1 502 555 0102"
+                }
+            ],
+            "postalAddresses": [],
+            "websites": [],
+            "personType": {
+                "class": "Person",
+                "subclass": "OrganizationUser"
+            }
+        }
+    ]
+}
+```
+
 ## <a name="search-people"></a>Pesquisar pessoas
 As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top*. 
 ### <a name="use-search-to-select-people"></a>Usar a pesquisa para selecionar pessoas 
@@ -806,126 +933,3 @@ GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"
 
 Essa solicitação realiza basicamente duas pesquisas: uma pesquisa difusa em relação às propriedades **displayName** e **emailAddress** de pessoas relevantes ao usuário conectado e uma pesquisa pontual por "pizza" em relação às pessoas relevantes ao usuário. Os resultados são classificados, ordenados e retornados. A pesquisa não é restritiva. Você pode obter resultados que contenham pessoas com correspondência difusa "car", que estejam interessadas em "pizza" ou ambos.
 
-### <a name="search-other-users-relevant-people"></a>Pesquisar pessoas relevantes de outro usuário
-A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado. Esta solicitação requer a permissão People.Read.All. Neste exemplo, as pessoas relevantes de Roscoe Seidel são exibidas.
-
-```http
-GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
-```
-
-O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. O exemplo abaixo usa *$top* para limitar a resposta a três registros.
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-     "value": [
-        {
-            "id": "56155636-703F-47F2-B657-C83F01F49BBC",
-            "displayName": "Clifton Clemente",
-            "givenName": "Clifton",
-            "surname": "Clemente",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Director",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Legal",
-            "officeLocation": "19/2106",
-            "profession": "",
-            "userPrincipalName": "Cliftonc@contoso.onmicrosoft.com",
-            "imAddress": "sip:Cliftonc@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Cliftonc@contoso.onmicrosoft.com",
-                    "relevanceScore": 20
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 309 555 0101"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        },
-        {
-            "id": "6BF27D5A-AB4F-4C43-BED0-7DAD9EB0C1C4",
-            "displayName": "Sheree Mitchell",
-            "givenName": "Sheree",
-            "surname": "Mitchell",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "Product Manager",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Sales & Marketing",
-            "officeLocation": "20/2107",
-            "profession": "",
-            "userPrincipalName": "Shereem@contoso.onmicrosoft.com",
-            "imAddress": "sip:shereem@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Shereem@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 918 555 0107"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        },
-        {
-            "id": "B3E5302D-EAF0-4E8B-8C6C-A2AE64B4B163",
-            "displayName": "Vincent Matney",
-            "givenName": "Vincent",
-            "surname": "Matney",
-            "birthday": "",
-            "personNotes": "",
-            "isFavorite": false,
-            "jobTitle": "CVP Engineering",
-            "companyName": null,
-            "yomiCompany": "",
-            "department": "Engineering",
-            "officeLocation": "23/2102",
-            "profession": "",
-            "userPrincipalName": "Vincentm@contoso.onmicrosoft.com",
-            "imAddress": "sip:vincentm@contoso.onmicrosoft.com",
-            "scoredEmailAddresses": [
-                {
-                    "address": "Vincentm@contoso.onmicrosoft.com",
-                    "relevanceScore": 10
-                }
-            ],
-            "phones": [
-                {
-                    "type": "Business",
-                    "number": "+1 502 555 0102"
-                }
-            ],
-            "postalAddresses": [],
-            "websites": [],
-            "personType": {
-                "class": "Person",
-                "subclass": "OrganizationUser"
-            }
-        }
-    ]
-}
-```

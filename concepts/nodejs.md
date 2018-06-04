@@ -7,7 +7,7 @@ A imagem a seguir mostra o aplicativo que você criará.
 ![O aplicativo Web após o login mostrando o botão "Enviar email"](./images/web-screenshot.png)
 
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/pt-BR/getting-started) para começar a usar rapidamente.
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/pt-BR/getting-started) para agilizar o processo.
 
 Para baixar uma versão do exemplo de conexão que usa o ponto de extremidade do Azure AD, confira [Exemplo de conexão com o Microsoft Graph para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample/releases/tag/last_v1_auth).
 
@@ -16,7 +16,7 @@ Para baixar uma versão do exemplo de conexão que usa o ponto de extremidade do
 
 Para começar, será necessário: 
 
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](http://dev.office.com/devprogram)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/pt-BR/office/developer-program/office-365-developer-program-faq#account-types)
 - [Node.js com npm](https://nodejs.org/en/download/) 
 - O [Exemplo de conexão da Microsoft para Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample). Você usará a pasta **starter-project** nos exemplos de arquivo para este passo a passo.
 

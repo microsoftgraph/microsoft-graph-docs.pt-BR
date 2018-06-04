@@ -39,29 +39,29 @@ Se o usuário conectado for um usuário convidado, dependendo das permissões qu
 Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou grupos que ele obtém seguindo os links nas propriedades de navegação. Por exemplo, `/users/{id}/directReports` ou `/groups/{id}/members`.
 
 
-## <a name="bookings-permissions"></a>Bookings permissions
+## <a name="bookings-permissions"></a>Permissões do Bookings
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Bookings.Read.All_ |  Allows an app to read Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user. | Intended for read-only applications. Typical target user is the customer of a booking business. | Não |
-| _Bookings.ReadWrite.Appointments_ | Allows an app to read and write Bookings appointments and customers, and additionally allows reading businesses, services, and staff on behalf of the signed-in user. | Intended for scheduling applications which need to manipulate appointments and customers. Cannot change fundamental information about the booking business, nor its services and staff members. Typical target user is the customer of a booking business.| Não |
-| _Bookings.ReadWrite.All_ | Allows an app to read and write Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user. Does not allow create, delete, or publish of Bookings businesses. | Intended for management applications that manipulate existing businesses, their services and staff members. Cannot create, delete, or change the publishing status of a booking business. Typical target user is the support staff of an organization.| Não |
-| _Bookings.Manage_ | Allows an app to read, write, and manage Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user.  | Allows the app to have full access. <br>Intended for a full management experience. Typical target user is the administrator of an organization.| Não |
+| _Bookings.Read.All_ |  Permite que um aplicativo leia compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. | Voltado a aplicativos somente leitura. O usuário-alvo típico é o cliente de uma empresa de reservas. | Não |
+| _Bookings.ReadWrite.Appointments_ | Permite que um aplicativo leia e grave compromissos e clientes do Bookings, permitindo também a leitura de empresas, serviços e funcionários em nome do usuário conectado. | Desenvolvido para aplicativos de agendamento que precisam manipular compromissos e clientes. Não pode alterar informações fundamentais sobre a empresa de reservas, nem seus serviços e funcionários. O usuário-alvo típico é o cliente de uma empresa de reservas.| Não |
+| _Bookings.ReadWrite.All_ | Permite que um aplicativo leia e grave compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado. Não permite criar, excluir ou publicar de empresas do Bookings. | Voltado a aplicativos de gerenciamento que manipulam empresas existentes, seus serviços e seus funcionários. Não pode criar, excluir ou alterar o status de publicação de uma empresa de reservas. O usuário-alvo típico é o funcionário de suporte de uma organização.| Não |
+| _Bookings.Manage_ | Permite que um aplicativo leia, grave e gerencie compromissos, empresas, clientes, serviços e funcionários do Bookings em nome do usuário conectado.  | Permite que o aplicativo tenha acesso total. <br>Voltado a uma experiência de gerenciamento completa. O usuário-alvo típico é o administrador de uma organização.| Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+Nenhuma.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
 
-* _Bookings.Read.All_: Get the ID and names of the collection of Bookings businesses that has been created for a tenant (`GET /bookingBusinesses`).
-* _Bookings.ReadWrite.Appointments_: Create an appointment for a service at a Bookings business (`POST /bookingBusinesses/{id}/appointments`).
-* _Bookings.ReadWrite.All_: Create a new service for the specified Bookings business (`POST /bookingBusinesses/{id}/services`).
-* _Bookings.Manage_: Make the scheduling page of this business available to external customers (`POST /bookingBusinesses/{id}/publish`).
+* _Bookings.Read.All_: obter a ID e os nomes do conjunto de empresas do Bookings que foi criado para um locatário (`GET /bookingBusinesses`).
+* _Bookings.ReadWrite.Appointments_: criar um compromisso para um serviço em uma empresa do Bookings (`POST /bookingBusinesses/{id}/appointments`).
+* _Bookings.ReadWrite.All_: criar um novo serviço para as empresas do Bookings especificadas (`POST /bookingBusinesses/{id}/services`).
+* _Bookings.Manage_: disponibilizar a página de agendamento dessa empresa para clientes externos (`POST /bookingBusinesses/{id}/publish`).
 
 ---
 
@@ -480,7 +480,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _Mail.Send_ |    Enviar email como um usuário | Permite ao aplicativo enviar emails como usuários na organização. | Não |
 | _Mail.Send.Shared_ |    Enviar email em nome de outras pessoas | Permite que o aplicativo enviar emails como o usuário conectado no, incluindo o envio de nome de terceiros. | Não |
 | _MailboxSettings.Read_ |  Ler as configurações da caixa de correio do usuário | Permite ao aplicativo ler as configurações da caixa de correio do usuário. Não inclui a permissão para enviar emails. | Não |
-| _MailboxSettings.ReadWrite_ |  Leia e grave as configurações de caixa de correio do usuário | Permite ao aplicativo criar, ler, atualizar e excluir as configurações da caixa de correio do usuário. Não inclui a permissão para enviar emails. Does not include permission to directly send mail, but allows the app to create rules that can forward or redirect messages. | Não |
+| _MailboxSettings.ReadWrite_ |  Leia e grave as configurações de caixa de correio do usuário | Permite ao aplicativo criar, ler, atualizar e excluir as configurações da caixa de correio do usuário. Não inclui permissão para enviar emails diretamente, mas permite que o aplicativo crie regras que podem encaminhar ou redirecionar mensagens. | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -721,7 +721,7 @@ As permissões de segurança só são válidas para contas corporativas ou de es
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Sites.Read.All_        | Ler itens em todos os conjuntos de sites | Permite ao aplicativo ler documentos e listar itens em todos os conjuntos de sites em nome do usuário conectado. | Não  |
-| _Sites.ReadWrite.All_   | Ler e gravar itens em todos os conjuntos de sites | Permite ao aplicativo ler documentos e listar itens em todos os conjuntos de sites em nome do usuário conectado. | Não  |
+| _Sites.ReadWrite.All_   | Ler e gravar itens em todos os conjuntos de sites | Permite ao aplicativo editar ou excluir documentos e listar itens em todos os conjuntos de sites em nome do usuário conectado. | Não  |
 | _Sites.Manage.All_      | Criar, editar e excluir itens e listas em todos os conjuntos de sites | Permite ao aplicativo gerenciar e criar listas, documentos e listar itens em todos os conjuntos de sites em nome do usuário conectado. | Não |
 | _Sites.FullControl.All_ | Ter controle total de todos os conjuntos de sites | Permite ao aplicativo ter controle total nos sites do SharePoint em todos os conjuntos de sites em nome do usuário conectado.  | Sim  |
 
@@ -821,12 +821,12 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
 | _User.Read_       |    Entrar e ler o perfil do usuário | Permite aos usuários entrar no aplicativo e permite ao aplicativo ler o perfil de usuários conectados. Também permite que o aplicativo leia as informações básicas da empresa sobre os usuários conectados.| Não |
-| _User.ReadWrite_ |    Acesso de leitura e gravação ao perfil de usuário | Permite que o aplicativo leia todos os arquivos do usuário conectado. It also allows the app to update the signed-in user's profile information on their behalf. | Não |
-| _User.ReadBasic.All_ |    Ler os perfis básicos de todos usuários | Permite ao aplicativo ler um conjunto básico de propriedades de perfil de outros usuários em sua organização em nome do usuário conectado. Inclui o nome para exibição, nome e sobrenome, endereço de email e foto. This includes display name, first and last name, email address, open extensions and photo. User.Read permite que um aplicativo leia o perfil do usuário conectado. | Não |
+| _User.ReadWrite_ |    Acesso de leitura e gravação ao perfil de usuário | Permite que o aplicativo leia o perfil completo do usuário conectado. Também possibilita que o aplicativo atualize as informações de perfil do usuário conectado em seu nome. | Não |
+| _User.ReadBasic.All_ |    Ler os perfis básicos de todos usuários | Permite ao aplicativo ler um conjunto básico de propriedades de perfil de outros usuários em sua organização em nome do usuário conectado. Inclui o nome para exibição, nome e sobrenome, endereço de email, extensões abertas e foto. Também permite que o aplicativo leia o perfil completo do usuário conectado. | Não |
 | _User.Read.All_  |     Ler os perfis completos de todos os usuários           | Permite ao aplicativo ler o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários em sua organização, em nome do usuário conectado. | Sim |
 | _User.ReadWrite.All_ |     Ler e gravar os perfis completos de todos os usuários | Permite ao aplicativo ler e gravar o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários na sua organização, em nome do usuário conectado. Também permite que o aplicativo crie e exclua usuários, além de redefinir senhas de usuário em nome do usuário conectado. | Sim |
 | _User.Invite.All_  |     Convidar usuários convidados para a organização | Permite que o aplicativo convide usuários para sua organização em nome do usuário conectado. | Sim |
-| _User.Export.All_       |    Export users' data | Allows the app to export an organizational user's data, when performed by a Company Administrator.| Sim |
+| _User.Export.All_       |    Exportar dados de usuários | Permite que o aplicativo exporte os dados de um usuário organizacional, quando executado por um administrador da empresa.| Sim |
 
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
@@ -836,7 +836,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _User.Read.All_ |    Ler os perfis completos de todos os usuários | Permite ao aplicativo ler o conjunto completo de propriedades do perfil, relatórios e gerenciadores de outros usuários na sua organização, sem um usuário conectado.| Sim |
 | _User.ReadWrite.All_ |   Ler e gravar os perfis completos de todos os usuários | Permite ao aplicativo ler e gravar o conjunto completo de propriedades do perfil, relatórios e gerentes de outros usuários na sua organização, sem um usuário conectado.  Também permite que o aplicativo crie e exclua usuários não administrativos. Não permite a redefinição de senhas de usuário. | Sim |
 | _User.Invite.All_  |     Convidar usuários convidados para a organização | Permite que o aplicativo convide usuários para sua organização sem um usuário conectado. | Sim |
-| _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Sim |
+| _User.Export.All_       |    Exportar dados de usuários | Permite que o aplicativo exporte dados de usuários organizacionais, sem um usuário conectado.| Sim |
 
 ### <a name="remarks"></a>Comentários
 
@@ -921,7 +921,7 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | O aplicativo deseja ler e gravar o perfil completo do usuário conectado   | _User.ReadWrite_ | Acesso de leitura e gravação ao perfil de usuário |
 | O aplicativo deseja ler e gravar o perfil completo de todos os usuários    | _User.ReadWrite.All_ | Ler e gravar os perfis completos de todos os usuários |
 | O aplicativo deseja ler e gravar informações de arquivos, de email e de calendário do usuário conectado    | _User.ReadWrite_, _Files.ReadWrite_, _Mail.ReadWrite_, _Calendars.ReadWrite_  |  Acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao perfil de usuário, acesso de leitura e gravação ao email do usuário, acesso total a calendários do usuário |
-| App wants to submit a data policy operation request to export a user's personal data | _User.Export.All_ | Export a user'a personal data. |
+| O aplicativo deseja enviar uma solicitação de operação de política de dados para exportar dados pessoais de um usuário | _User.Export.All_ | Exportar os dados pessoais e de um usuário. |
    
 
 ### <a name="access-scenarios-on-the-group-resource"></a>Cenários de acesso do recurso Grupo
@@ -934,29 +934,29 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | O aplicativo deseja descobrir (localizar) um grupo do Office 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.     | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 | O aplicativo deseja criar um grupo por meio do AAD Graph |   _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
 
-## <a name="user-activity-permissions"></a>User Activity permissions
+## <a name="user-activity-permissions"></a>Permissões de Atividades do Usuário
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
 |Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _UserActivity.ReadWrite.CreatedByApp_ |Read and write app activity to users' activity feed |Allows the app to read and report the signed-in user's activity in the app. |Não |
+| _UserActivity.ReadWrite.CreatedByApp_ |Ler e gravar a atividades de aplicativos no feed de atividades de usuários |Permite que o aplicativo leia e relate as atividades do usuário conectado no aplicativo. |Não |
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 Nenhum.
 
 ### <a name="remarks"></a>Comentários
-*UserActivity.ReadWrite.CreatedByApp* is valid for both Microsoft accounts and work or school accounts. 
+*UserActivity.ReadWrite.CreatedByApp* é válida tanto para contas da Microsoft como para contas corporativas e de estudante. 
  
-The *CreatedByApp* constraint associated with this permission indicates the service will apply implicit filtering to results based on the identity of the calling app, either the MSA app id or a set of app ids configured for a cross-platform application identity. 
+A restrição *CreatedByApp* associada a essa permissão indica que o serviço aplicará filtragem implícita aos resultados com base na identidade aplicativo que realizar a chamada, seja a ID de aplicativo MSA ou um conjunto de IDs de aplicativos configurados para uma identidade de aplicativo de plataformas cruzadas. 
 
 ### <a name="example-usage"></a>Exemplo de uso
 
 #### <a name="delegated"></a>Delegado
-* _UserActivity.ReadWrite.CreatedByApp_: Get a list of recent unique user activities based on associated history items published in the last day. (GET /me/activities/recent).
-* _UserActivity.ReadWrite.CreatedByApp_: Publish or update a user activity which may be resumed by the user of the application. (PUT /me/activities/%2Farticle%3F12345).
-*   _UserActivity.ReadWrite.CreatedByApp_: Publish or update a history item for a specified user activity in order to represent the period of user engagement. (PUT /me/activities/{id}/historyItems/{id}).
-*   _UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
-*   _UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
+* _UserActivity.ReadWrite.CreatedByApp_: obter uma lista de atividades de usuários recentes únicos com base nos itens de histórico associados publicados no último dia. (GET /me/activities/recent).
+* _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar uma atividade do usuário que poderá ser retomada pelo usuário do aplicativo. (PUT /me/activities/%2Farticle%3F12345).
+*   _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar um item de histórico de uma atividade de usuário especificada para representar o período de engajamento do usuário. (PUT /me/activities/{id}/historyItems/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_: excluir uma atividade de usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
+*   _UserActivity.ReadWrite.CreatedByApp_: excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
 
 <br/>

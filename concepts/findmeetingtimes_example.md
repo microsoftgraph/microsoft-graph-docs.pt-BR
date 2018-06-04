@@ -231,5 +231,7 @@ Há momentos em que nem todos os participantes podem participar de uma reunião.
 
 Depois de receber sugestões de horário de reunião, você talvez queira:
 
-1. [Criar um evento e enviá-lo como uma solicitação de reunião](../api-reference/v1.0/api/user_post_events.md) 
-2. [Adicionar um anexo](../api-reference/v1.0/api/event_post_attachments.md) a um evento
+1. [Criar um evento e enviá-lo como uma solicitação de reunião](../api-reference/v1.0/api/user_post_events.md).
+2. [Adicionar um anexo](../api-reference/v1.0/api/event_post_attachments.md) a um evento.
+
+Veja mais detalhes em [integração com o calendário do Outlook](outlook-calendar-concept-overview.md).

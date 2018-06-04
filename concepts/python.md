@@ -70,6 +70,7 @@ Aqui estão algumas outras amostras do Python que demonstram como trabalhar com 
 * [Amostras de autenticação do Python para Microsoft Graph](https://github.com/microsoftgraph/python-sample-auth)
 * [Trabalhar com respostas paginadas do Microsoft Graph no Python](https://github.com/microsoftgraph/python-sample-pagination)
 * [Trabalhar com extensões abertas do Graph no Python](https://github.com/microsoftgraph/python-sample-open-extensions)
+* [Conecte um aplicativo Web Python à API de Segurança](https://github.com/microsoftgraph/python-security-rest-sample)
 
 [Envie uma questão](https://github.com/microsoftgraph/python-sample-auth/issues) para nos informar sobre uma amostra específica que você queira ver. Gostaríamos de ouvir seus comentários sobre qualquer cenário do Microsoft Graph que você queira criar no Python!
 
