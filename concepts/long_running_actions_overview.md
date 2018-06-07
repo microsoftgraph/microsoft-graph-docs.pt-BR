@@ -3,15 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 963d2b71b879c285a43378d07c1bfd755f150b9f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
+ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 05/25/2018
+ms.locfileid: "19473150"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 
-> **Importante:** As APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Algumas respostas de API exigem tempo indeterminado para serem concluídas.
 Em vez de ter que esperar até que a ação seja concluída antes de retornar uma resposta, o Microsoft Graph pode usar um padrão de ações de execução longa.
@@ -55,7 +56,7 @@ Location: https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 
 **Observação:** o local da URL retornado pode não estar no ponto de extremidade da API do Microsoft Graph.
 
-Em muitos casos, esse pode ser o fim da solicitação, pois a ação de cópia será concluída sem que o aplicativo faça trabalho adicional.
+Em muitos casos, esse pode ser o fim da solicitação, pois a ação de cópia será concluída sem que o aplicativo realize tarefas adicionais.
 No entanto, se o aplicativo precisar mostrar o status da ação de cópia ou garantir que ela seja concluída sem erros, poderá fazer isso usando a URL de monitor.
 
 ## <a name="retrieve-a-status-report-from-the-monitor-url"></a>Recuperar um relatório de status da URL de monitor

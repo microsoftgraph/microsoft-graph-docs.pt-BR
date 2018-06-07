@@ -32,7 +32,7 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ### <a name="policy"></a>Política
 
-O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App. 
+O uso do Microsoft Graph para criar e nomear um grupo do Office 365 ultrapassa qualquer política de grupo do Office 365 que seja configurada pelo Outlook Web App.
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Permissões para grupos e Microsoft Teams
 
@@ -104,12 +104,13 @@ GET \users('{id}')\calendars('{id}')\events
 Você pode receber HTTP 500 com o código de erro `ErrorInternalServerTransientError`. O erro ocorre porque:
 
 - Historicamente, há duas maneiras de compartilhar o calendário, que são chamadas de "antiga" e "nova" abordagens, para fins de diferenciá-las.
-- A nova abordagem está disponível atualmente para compartilhamento de calendários, com permissões de exibição ou edição, mas não com permissões de representante. 
-- Você pode usar a API REST de calendário para exibir ou editar calendários compartilhados somente quando os calendários são compartilhados de acordo com a **nova** abordagem. 
+- A nova abordagem está disponível atualmente para compartilhamento de calendários, com permissões de exibição ou edição, mas não com permissões de representante.
+- Você pode usar a API REST de calendário para exibir ou editar calendários compartilhados somente quando os calendários são compartilhados de acordo com a **nova** abordagem.
 - Não é possível usar a API REST de calendário para exibir ou editar esses calendários ou os respectivos eventos quando eles são compartilhados de acordo com a **antiga** abordagem.
 
 
-Se você compartilhar o calendário com permissões de exibição ou edição usando a abordagem antiga, poderá resolver o problema e atualizar manualmente o compartilhamento do calendário para usar a nova abordagem. Com o tempo, o Outlook atualizará automaticamente todos os calendários compartilhados para usar a nova abordagem, incluindo calendários compartilhados com permissões delegadas. 
+Se você compartilhar o calendário com permissões de exibição ou edição usando a abordagem antiga, poderá resolver o problema e atualizar manualmente o compartilhamento do calendário para usar a nova abordagem.
+Com o tempo, o Outlook atualizará automaticamente todos os calendários compartilhados para usar a nova abordagem, incluindo calendários compartilhados com permissões delegadas.
 
 Para atualizar manualmente um calendário compartilhado e usar a nova abordagem, faça os seguintes procedimentos:
 1.  O destinatário remove o calendário previamente compartilhado com ele.
@@ -132,7 +133,7 @@ Somente os contatos pessoais têm suporte no momento. Os contatos organizacionai
 
 ### <a name="default-contacts-folder"></a>Pasta Contatos padrão
 
-Na versão `/v1.0`, `GET /me/contactFolders` não inclui a pasta de contatos do usuário padrão. 
+Na versão `/v1.0`, `GET /me/contactFolders` não inclui a pasta de contatos do usuário padrão.
 
 Uma correção será disponibilizada. Enquanto isso, você pode usar a seguinte consulta [list contacts](http://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/user_list_contacts) e a propriedade **parentFolderId** como uma solução alternativa para obter a ID da pasta de contatos padrão:
 
@@ -175,7 +176,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>O parâmetro de comentário para criar um rascunho
 
-O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) não se torna parte do corpo do rascunho de mensagem resultante.  
+O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) não se torna parte do corpo do rascunho de mensagem resultante.
 
 ## <a name="drives-files-and-content-streaming"></a>Unidades, arquivos e streaming de conteúdo
 
@@ -183,16 +184,20 @@ O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento (
 
 ## <a name="query-parameter-limitations"></a>Limitações de parâmetro de consulta
 
-* Limitações **$expand**:
-    * Sem suporte para `nextLink`
-    * Não há suporte para mais de um nível de expansão
-    * Não há suporte com parâmetros adicionais (**$filter**, **$select**)
-* Não há suporte para vários namespaces
-* GETs em `$ref` e conversão não têm suporte em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
-* Não há suporte para `@odata.bind`.  Isso significa que os desenvolvedores não serão capazes de definir corretamente `Accepted` ou `RejectedSenders` em um grupo.
-* `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos
-* Filtragem/pesquisa entre cargas não disponível. 
-* A pesquisa de texto completo (usando **$search**) só está disponível para alguns entidades, como mensagens.
+* Não há suporte para vários namespaces.
+* Não há suporte para GETs em `$ref` e conversão em usuários, grupos, dispositivos, entidades de serviço e aplicativos.
+* Não há suporte para `@odata.bind`. Isso significa que os desenvolvedores não poderão definir corretamente `Accepted` ou `RejectedSenders` em um grupo.
+* `@odata.id` não está presente na navegação sem confinamento (como mensagens) quando há o uso de metadados mínimos.
+* `$expand`:
+  * Não há suporte para `nextLink`
+  * Não há suporte para mais de um nível de expansão
+  * Não há suporte com parâmetros adicionais (`$filter`, `$select`)
+* `$filter`:
+  * Não há suporte para filtros no ponto de extremidade `/attachments`. Se presente, o parâmetro `$filter` é ignorado.
+  * Não há suporte para filtragem de carga de trabalho cruzada.
+* `$search`:
+  * A pesquisa de texto completo só está disponível para um subconjunto de entidades, como mensagens.
+  * Não há suporte para pesquisa de carga de trabalho cruzada.
 
 ## <a name="delta-query"></a>Consulta delta
 
@@ -206,13 +211,13 @@ Há alterações para as entidades [application](../api-reference/beta/resources
 
 Limitações atuais:
 
-* Algumas propriedades do aplicativo (como funções de aplicativos e suplementos) não estarão disponíveis até que todas as alterações sejam concluídas.
+* Algumas propriedades do aplicativo (como appRoles e addIns) não estarão disponíveis até que todas as alterações sejam concluídas.
 * Somente aplicativos multilocatários podem ser registrados.
 * Atualizar aplicativos é restrito aos aplicativos registrados após a atualização inicial beta.
 * Usuários do Azure Active Directory podem registrar aplicativos e adicionar proprietários adicionais.
 * Suporte para protocolos OpenID Connect e OAuth.
-* Atribuições de política para uma falha de aplicativo. 
-* Falha em operações em ownedObjects que exigem ID do aplicativo (por exemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+* Atribuições de política para uma falha de aplicativo.
+* Falha em operações em ownedObjects que exigem appId (por exemplo, users/{id|userPrincipalName}/ownedObjects/{id}/...).
 
 Em desenvolvimento:
 
@@ -235,7 +240,8 @@ Você não pode especificar uma extensão aberta ao mesmo tempo que cria uma ins
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Criar uma instância de recurso e adicionar dados de extensão de esquema ao mesmo tempo
 
-Não é possível especificar uma extensão de esquema na mesma operação, como criar uma instância de **contato**, **evento**, **mensagem** ou **postagem**. Você deve primeiro criar a instância de recurso e, em seguida, fazer um `PATCH` para essa instância para adicionar uma extensão de esquema e dados personalizados. 
+Não é possível especificar uma extensão de esquema na mesma operação, como criar uma instância de **contato**, **evento**, **mensagem** ou **postagem**.
+Você deve primeiro criar a instância de recurso e, em seguida, fazer um `PATCH` para essa instância para adicionar uma extensão de esquema e dados personalizados.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Limite de 100 valores de propriedade de extensão de esquema permitido por instância de recursos
 
