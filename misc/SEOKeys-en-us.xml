@@ -1796,7 +1796,7 @@
       <Item text="Copiar pasta de email" url="/en-us/api-reference/v1.0/api/mailfolder_copy" SEOKeyword="mailFolder: copiar, API do Microsoft Graph, API de mailfolder" SEODescription="Copiar pasta de email" />
       <Item text="Mover pasta de email" url="/en-us/api-reference/v1.0/api/mailfolder_move" SEOKeyword="mailFolder: mover, API do Microsoft Graph, API de mailfolder" SEODescription="Mover pasta de email" />
       <Item text="Listar mensagens na pasta" url="/en-us/api-reference/v1.0/api/mailfolder_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem na pasta" url="/en-us/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Use esta API para criar uma nova Message." />
+      <Item text="Criar mensagem na pasta" url="/en-us/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Listar pastas filho" url="/en-us/api-reference/v1.0/api/mailfolder_list_childfolders" SEOKeyword="Listar childFolders, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos mailfolder." />
       <Item text="Criar pasta filho de email" url="/en-us/api-reference/v1.0/api/mailfolder_post_childfolders" SEOKeyword="Criar mailFolder, API do Microsoft Graph, API de Email do Outlook" SEODescription="Use esta API para criar uma nova MailFolder." />
     </Item>
@@ -4591,7 +4591,7 @@
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_delete" />
           <Item text="Atualizar" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_update" />
         </Item>
-        <Item text="Registro de aplicativo gerenciado iOS" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
+        <Item text="Registro de aplicativo gerenciado do iOS" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappregistration">
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_list" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_get" />
         </Item>
@@ -5110,7 +5110,7 @@
           <Item text="Atribuir proprietário" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Criar proprietário, API do Microsoft Graph, API de aplicativo" SEODescription="Use esta API para criar um novo proprietário." />
           <Item text="Listar propriedades de extensão" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Listar extensionProperties, API do Microsoft Graph, API de aplicativo" SEODescription="Recuperar uma lista de objetos extensionproperty." />
         </Item>
-	  <Item text="Logs de auditoria" url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Logs de auditoria" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Auditoria de diretório" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="objeto directoryAudit, API do Microsoft Graph, Azure AD, logs de auditoria" SEODescription="">
 			<Item text="Listar auditorias de diretório" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="API de log de auditoria, API do Microsoft Graph, Azure AD, logs de auditoria" SEODescription="API para retornar uma lista de objetos directoryAudit." />
 			<Item text="Obter auditoria de diretório" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="API de log de auditoria, API do Microsoft Graph, Azure AD, logs de auditoria" SEODescription="API para retornar um objeto directoryAudit." />
