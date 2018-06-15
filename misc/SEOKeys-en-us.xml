@@ -48,7 +48,7 @@
 	  <Item text="Organizar mensagens" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Compartilhar pastas de mensagens" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
-  <Item text="Observações" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use o Microsoft Graph para integrar os aplicativos ao OneNote.">
+  <Item text="Observações" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use o Microsoft Graph para integrar seus aplicativos com o OneNote.">
     <Item text="Obter conteúdo do OneNote" url="/en-us/concepts/onenote-get-content" />
 	<Item text="Abrir o cliente do OneNote" url="/en-us/concepts/open_onenote_client" SEODescription="Abra um aplicativo do OneNote em uma determinada página ou um bloco de anotações." />
 	<Item text="Criar páginas" url="/en-us/concepts/onenote-create-page" />
@@ -162,7 +162,7 @@
     </Item>
     <Item text="Email" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="API de Email">
       <Item text="Listar mensagens" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Use esta API para criar uma nova Message." />
+      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Substituições de Lista" url="/en-us/api-reference/v1.0/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Listar as substituições para um remetente identificado por um endereço SMTP." />
       <Item text="Criar Substituição" url="/en-us/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Crie uma substituição para um remetente identificado por um endereço SMTP." />
       <Item text="Listar pastas de email" url="/en-us/api-reference/v1.0/api/user_list_mailfolders" SEOKeyword="Listar mailFolders, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos mailfolder." />
@@ -693,7 +693,7 @@
         </Item>
         <Item text="Destino de atribuição de grupos de exclusão" url="/en-us/api-reference/v1.0/resources/intune_companyterms_exclusiongroupassignmenttarget" />
         <Item text="Destino de atribuição de grupo" url="/en-us/api-reference/v1.0/resources/intune_companyterms_groupassignmenttarget" />
-        <Item text="Status de aceitação dos termos e das condições" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
+        <Item text="Status de aceitação dos termos e condições" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditionsacceptancestatus">
           <Item text="Listar" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_list" />
           <Item text="Obter" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_get" />
           <Item text="Criar" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsacceptancestatus_create" />
@@ -1585,7 +1585,7 @@
           <Item text="Atualizar" url="/en-us/api-reference/v1.0/api/intune_rbac_roleassignment_update" />
         </Item>
         <Item text="Definição de função" url="/en-us/api-reference/v1.0/resources/intune_rbac_roledefinition">
-          <Item text="Lista" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_list" />
+          <Item text="Listar" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_list" />
           <Item text="Obter" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_get" />
           <Item text="Criar" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_create" />
           <Item text="Excluir" url="/en-us/api-reference/v1.0/api/intune_rbac_roledefinition_delete" />
@@ -1689,6 +1689,7 @@
       <Item text="Listar itens excluídos" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="Excluir permanentemente item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
       <Item text="Restaurar item excluído" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="Listar itens excluídos pertencentes ao usuário" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="Dispositivo" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="API do dispositivo, API do Microsoft Graph, API do dispositivo" SEODescription="Representa um dispositivo registrado no diretório. Herda do DirectoryObject.">
       <Item text="Listar dispositivos" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="Listar dispositivos, API do Microsoft Graph, API de Dispositivo" SEODescription="Recuperar uma lista de objetos device." />
@@ -1755,7 +1756,7 @@
   <Item text="Email" ProdTag="Outlook" url="/en-us/api-reference/v1.0/resources/mail_api_overview" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs de email do Outlook">
     <Item text="Mensagem" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs de Email">
       <Item text="Listar mensagens" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Use esta API para criar uma nova Message." />
+      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Obter mensagem" url="/en-us/api-reference/v1.0/api/message_get" SEOKeyword="Obter mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto message." />
       <Item text="Atualizar mensagem" url="/en-us/api-reference/v1.0/api/message_update" SEOKeyword="Atualizar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Atualizar as propriedades do objeto message." />
       <Item text="Excluir mensagem" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="Excluir mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Exclua a mensagem." />
@@ -1796,7 +1797,7 @@
       <Item text="Copiar pasta de email" url="/en-us/api-reference/v1.0/api/mailfolder_copy" SEOKeyword="mailFolder: copiar, API do Microsoft Graph, API de mailfolder" SEODescription="Copiar pasta de email" />
       <Item text="Mover pasta de email" url="/en-us/api-reference/v1.0/api/mailfolder_move" SEOKeyword="mailFolder: mover, API do Microsoft Graph, API de mailfolder" SEODescription="Mover pasta de email" />
       <Item text="Listar mensagens na pasta" url="/en-us/api-reference/v1.0/api/mailfolder_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem na pasta" url="/en-us/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Usar esta API para criar uma nova mensagem." />
+      <Item text="Criar mensagem na pasta" url="/en-us/api-reference/v1.0/api/mailfolder_post_messages" SEOKeyword="Criar mensagem na pasta, API do Microsoft Graph, API de Email do Outlook" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Listar pastas filho" url="/en-us/api-reference/v1.0/api/mailfolder_list_childfolders" SEOKeyword="Listar childFolders, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos mailfolder." />
       <Item text="Criar pasta filho de email" url="/en-us/api-reference/v1.0/api/mailfolder_post_childfolders" SEOKeyword="Criar mailFolder, API do Microsoft Graph, API de Email do Outlook" SEODescription="Use esta API para criar uma nova MailFolder." />
     </Item>
@@ -2234,7 +2235,7 @@
       </Item>
       <Item text="Email" url="/en-us/api-reference/beta/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar mensagens" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Use esta API para criar uma nova Message." />
+        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
         <Item text="Substituições de Lista" url="/en-us/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Listar as substituições para um remetente identificado por um endereço SMTP." />
         <Item text="Criar Substituição" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Crie uma substituição para um remetente identificado por um endereço SMTP." />
         <Item text="Listar pastas de email" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="Listar mailFolders, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos mailfolder." />
@@ -2405,7 +2406,7 @@
         <Item text="Encaminhar evento" url="/en-us/api-reference/beta/api/event_forward" SEODescription="" />
         <Item text="Excluir evento" url="/en-us/api-reference/beta/api/event_delete" SEOKeyword="Excluir evento, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Exclua um evento." />
         <Item text="Cancelar o evento" url="/en-us/api-reference/beta/api/event_cancel" SEOKeyword="Cancelar evento, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Cancele o evento." />
-        <Item text="Aceitar os eventos" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Aceitar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="" />
+        <Item text="Aceitar eventos" url="/en-us/api-reference/beta/api/event_accept" SEOKeyword="Aceitar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="" />
         <Item text="Aceitar provisoriamente" url="/en-us/api-reference/beta/api/event_tentativelyaccept" SEOKeyword="evento: tentativelyAccept, API do Microsoft Graph, API do evento" SEODescription="" />
         <Item text="Recusar eventos" url="/en-us/api-reference/beta/api/event_decline" SEOKeyword="evento: recusar, API do Microsoft Graph, API do evento" SEODescription="" />
         <Item text="Descartar lembrete" url="/en-us/api-reference/beta/api/event_dismissreminder" SEOKeyword="evento: dismissReminder, API do Microsoft Graph, API do evento" SEODescription="" />
@@ -4881,7 +4882,7 @@
         </Item>
         <Item text="Tipo de escopo de atribuição de função" url="/en-us/api-reference/beta/resources/intune_rbac_roleassignmentscopetype" />
         <Item text="Definição de função" url="/en-us/api-reference/beta/resources/intune_rbac_roledefinition">
-          <Item text="Lista" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list" />
+          <Item text="Listar" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_list" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_get" />
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_create" />
           <Item text="Excluir" url="/en-us/api-reference/beta/api/intune_rbac_roledefinition_delete" />
@@ -5079,7 +5080,7 @@
         <Item text="Excluir permissão" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Excluir permissão, API do Microsoft Graph, API de permissão" SEODescription="Excluir permissão." />
       </Item>
     </Item>
-	<Item text="Identidade e acesso" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="objeto directory, API do Microsoft Graph, API de usuário" SEODescription="">
+	<Item text="Identidade e acesso" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="objeto de diretório, API do Microsoft Graph, API de usuário" SEODescription="">
       <Item text="Unidade administrativa" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de Usuário e Grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos no escopo ou definidos nele para uma unidade administrativa a um administrador regional ou de departamento.">
         <Item text="Criar unidade administrativa" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para criar um novo administrativeUnit." />
         <Item text="Listar unidade administrativa" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para listar objetos administrativeUnit." />
@@ -5129,7 +5130,7 @@
         <Item text="Listar itens excluídos" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Excluir permanentemente item" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restaurar item excluído" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="Listar proprietários de itens excluídos pelo usuário" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="Listar itens excluídos pertencentes ao usuário" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
 
       <Item text="Dispositivo" url="/en-us/api-reference/beta/resources/device" SEOKeyword="API do dispositivo, API do Microsoft Graph, API do dispositivo" SEODescription="Representa um dispositivo registrado no diretório. Herda do DirectoryObject.">
@@ -5305,7 +5306,7 @@
     <Item text="Email" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/mail_api_overview" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
       <Item text="Mensagem" url="/en-us/api-reference/beta/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar mensagens" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Use esta API para criar uma nova Message." />
+        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
         <Item text="Obter mensagem" url="/en-us/api-reference/beta/api/message_get" SEOKeyword="Obter mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto message." />
         <Item text="Atualizar mensagem" url="/en-us/api-reference/beta/api/message_update" SEOKeyword="Atualizar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Atualizar as propriedades do objeto message." />
         <Item text="Excluir mensagem" url="/en-us/api-reference/beta/api/message_delete" SEOKeyword="Excluir mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Exclua a mensagem." />
@@ -5355,7 +5356,7 @@
         <Item text="Copiar pasta de email" url="/en-us/api-reference/beta/api/mailfolder_copy" SEOKeyword="mailFolder: copiar, API do Microsoft Graph, API de mailfolder" SEODescription="" />
         <Item text="Mover pasta de email" url="/en-us/api-reference/beta/api/mailfolder_move" SEOKeyword="mailFolder: mover, API do Microsoft Graph, API de mailfolder" SEODescription="" />
         <Item text="Listar mensagens na pasta" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos message." />
-        <Item text="Criar mensagem na pasta" url="/en-us/api-reference/beta/api/mailfolder_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Usar esta API para criar uma nova mensagem." />
+        <Item text="Criar mensagem na pasta" url="/en-us/api-reference/beta/api/mailfolder_post_messages" SEOKeyword="Criar mensagem na pasta, API do Microsoft Graph, API de Email do Outlook" SEODescription="Usar esta API para criar uma nova mensagem." />
         <Item text="Listar pastas filho" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEOKeyword="Listar childFolders, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar uma lista de objetos mailfolder." />
         <Item text="Criar pasta filho de email" url="/en-us/api-reference/beta/api/mailfolder_post_childfolders" SEOKeyword="Criar mailFolder, API do Microsoft Graph, API de Email do Outlook" SEODescription="Use esta API para criar uma nova MailFolder." />
       </Item>
@@ -5363,7 +5364,7 @@
 		<Item text="Listar pastas de pesquisa de email" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEODescription="Recuperar uma lista de objetos mailfolder." />
 		<Item text="Criar pasta de pesquisa de email" url="/en-us/api-reference/beta/api/mailsearchfolder_post" SEODescription="Use esta API para criar uma nova MailFolder." />
 		<Item text="Obter pasta de pesquisa de email" url="/en-us/api-reference/beta/api/mailfolder_get" SEODescription="Recuperar as propriedades e os relacionamentos do objeto mailfolder." />
-		<Item text="Atualizar pasta de pesquisa de email" url="/en-us/api-reference/beta/api/mailsearchfolder_update" SEODescription="Atualizar as propriedades do objeto mailfolder." />
+		<Item text="Atualizar pasta de pesquisa de email" url="/en-us/api-reference/beta/api/mailsearchfolder_update" SEODescription="Atualizar as propriedades do objeto de mailfolder." />
 		<Item text="Excluir pasta de pesquisa de email" url="/en-us/api-reference/beta/api/mailfolder_delete" SEODescription="Exclua a mailFolder." />
 		<Item text="Listar mensagens na pasta" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEODescription="Recuperar uma lista de objetos message." />
 		<Item text="Listar pastas filho" url="/en-us/api-reference/beta/api/mailfolder_list_childfolders" SEODescription="Recuperar uma lista de objetos mailfolder." />
