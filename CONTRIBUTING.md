@@ -2,21 +2,19 @@
 
 Agradecemos seu interesse na documentação do Microsoft Graph!
 
-* [Maneiras de contribuir](#ways-to-contribute)
-* [Antes de podermos aceitar sua solicitação pull](#before-we-can-accept-your-pull-request)
-* [Organização de repositório](#repository-organization)
-* [Use o GitHub, o Git e este repositório](#use-github-git-and-this-repository)
-* [Como usar o Markdown para formatar seu tópico](#how-to-use-markdown-to-format-your-topic)
-* [Markdown-padrão](#standard-markdown)
-* [Mais recursos](#more-resources)
+- [Maneiras de contribuir](#ways-to-contribute)
+- [Antes de podermos aceitar sua solicitação pull](#before-we-can-accept-your-pull-request)
+- [Use o GitHub, o Git e este repositório](#use-github-git-and-this-repository)
+- [Como usar o Markdown para formatar seu tópico](#how-to-use-markdown-to-format-your-topic)
+- [Mais recursos](#more-resources)
 
 ## <a name="ways-to-contribute"></a>Maneiras de contribuir
 
-Contribua para a [documentação do Microsoft Graph](http://developer.microsoft.com/en-us/graph/docs) dessas maneiras:
+Contribua para a [documentação do Microsoft Graph](http://developer.microsoft.com/graph/docs) dessas maneiras:
 
-* Contribua com artigos por meio do [repositório de documentos do desenvolvedor do Microsoft Graph](https://github.com/microsoftgraph/microsoft-graph-docs)
-* Relatar bugs na documentação via [Problemas no GitHub](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
-* Adicionar solicitações de documentação para o [UserVoice da Plataforma Office Developer](http://officespdev.uservoice.com)
+- Contribua com artigos por meio do [repositório de documentos do desenvolvedor do Microsoft Graph](https://github.com/microsoftgraph/microsoft-graph-docs)
+- Relatar bugs na documentação via [Problemas no GitHub](https://github.com/microsoftgraph/microsoft-graph-docs/issues)
+- Adicionar solicitações de documentação para o [UserVoice da Plataforma Office Developer](http://officespdev.uservoice.com)
 
 ## <a name="before-we-can-accept-your-pull-request"></a>Antes de podermos aceitar sua solicitação pull
 
@@ -24,31 +22,22 @@ Contribua para a [documentação do Microsoft Graph](http://developer.microsoft.
 
 As correções ou os esclarecimentos secundários enviados para fins de documentação e exemplos de código neste repositório não exigem um Contrato de Licença de Contribuição (CLA). Os envios são recebidos na forma de solicitações pull. Faremos todo o possível para examinar as solicitações pull no período de dez dias úteis.
 
-
 ### <a name="larger-submissions"></a>Envios maiores
 
-Se você enviar alterações novas ou significativas para a documentação e os exemplos de código, será necessário enviar-nos um Contrato de Licença de Contribuição (CLA) assinado antes que possamos aceitar sua solicitação pull caso você esteja em um desses grupos:
+Se você enviar alterações novas ou significativas para a documentação e os exemplos de código, será necessário assinar um Contrato de Licença de Contribuição (CLA) antes que possamos aceitar sua solicitação pull caso você esteja em um desses grupos:
 
-* Membros do grupo Microsoft Open Technologies
-* Colaboradores que não trabalham na Microsoft
+- Membros do grupo Microsoft Open Technologies
+- Colaboradores que não trabalham na Microsoft
 
 Como membro da comunidade, **você deve assinar o CLA (Contrato de Licença do Colaborador) antes de poder contribuir com envios volumosos para esse projeto**, mas é necessário completar e enviar a documentação uma única vez. Faça uma revisão cuidadosa do documento; talvez a assinatura de seu empregador também precise constar no documento.
 
-A assinatura do Contrato de Licença de Contribuição (CLA) não lhe concede direitos para confirmar no repositório principal, mas isso significa que as equipes do Office Developer e do Office Developer Content Publishing serão capazes de analisar e considerar suas contribuições, e você receberá o crédito caso elas sejam aceitas.
+A assinatura do Contrato de Licença de Contribuição (CLA) não lhe concede direitos para confirmar no repositório principal, mas isso significa que as equipes da Microsoft serão capazes de analisar e considerar suas contribuições, e você receberá o crédito caso elas sejam aceitas.
 
-Você pode baixar o Contrato de Licença de Contribuição (CLA) [aqui](https://github.com/microsoftgraph/microsoft-graph-docs/raw/master/Contribution%20License%20Agreement.pdf). Preencha o formulário e envie-o por email para [officedev@microsoft.com](mailto:officedev@microsoft.com).
-
-Após recebermos e processarmos seu CLA, faremos todo o possível para analisar suas solicitações pull no prazo de dez dias úteis.
-
-## <a name="repository-organization"></a>Organização de repositório
-
-O conteúdo no repositório microsoft-graph-docs é agrupado primeiro pelo idioma do artigo, depois por tópico. O arquivo README.md na raiz de cada diretório de tópicos especifica a estrutura dos artigos dentro do tópico.
-
-Artigos dentro de cada tópico são nomeados por GUID MSDN, não pelo título. Esse é um efeito colateral do nosso processo de gerenciamento de documentos e não pode ser alterado neste momento. É altamente recomendável usar o sumário dentro de cada diretório de tópico para navegar até os arquivos que você deseja exibir ou editar. Confira mais informações em [README.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/master/README.md).
+Você pode baixar ou assinar digitalmente o Contrato de Licença de Contribuição (CLA) [aqui](https://cla.microsoft.com). Após recebermos e processarmos seu CLA, faremos todo o possível para analisar suas solicitações pull no prazo de dez dias úteis.
 
 ## <a name="use-github-git-and-this-repository"></a>Use o GitHub, o Git e este repositório
 
-**Observação:** a maior parte das informações desta seção pode ser encontrada nos artigos da [Ajuda do GitHub][].  Se você estiver familiarizado com Git e o GitHub, pule para a seção **Contribuir e editar conteúdo** para ver as informações específicas do fluxo de código/conteúdo deste repositório.
+**Observação:** a maior parte das informações desta seção pode ser encontrada nos artigos de [ajuda no GitHub][].  Se você estiver familiarizado com Git e o GitHub, pule para a seção **Contribuir e editar conteúdo** para ver as informações específicas do fluxo de código/conteúdo deste repositório.
 
 ### <a name="setting-up-your-fork-of-the-repository"></a>Configurando sua bifurcação do repositório
 
@@ -76,39 +65,37 @@ Parabéns! Agora seu repositório está configurado. Você não precisará repet
 Para fazer com que o processo de contribuição se torne contínuo, siga este procedimento.
 
 1. Crie uma nova ramificação.
-2. Adicione novo conteúdo ou edite o conteúdo existente.
-3. Envie uma solicitação pull para o repositório principal.
-4. Exclua a ramificação.
+1. Adicione novo conteúdo ou edite o conteúdo existente.
+1. Envie uma solicitação pull para o repositório principal.
+1. Exclua a ramificação.
 
 Limite cada ramificação a um único conceito/artigo para simplificar o fluxo de trabalho e reduzir a chance de conflitos de mesclagem. Os seguintes tipos de contribuição são apropriados para uma nova ramificação:
 
-* Um novo artigo (e imagens associadas)
-* Edições de ortografia e gramática em um artigo
-* Aplicar uma única alteração na formatação em um grande conjunto de artigos (por exemplo, aplicando um novo rodapé de direito autoral).
+- Um novo artigo (e imagens associadas)
+- Edições de ortografia e gramática em um artigo
+- Aplicar uma única alteração na formatação em um grande conjunto de artigos (por exemplo, aplicando um novo rodapé de direito autoral).
 
 #### <a name="create-a-new-branch"></a>Criar uma nova ramificação
 
 1. Abra o GitBash.
-2. Digite `git pull upstream master:<new branch name>` no prompt. Isso cria uma nova ramificação local copiada da última ramificação-mestra do *microsoftgraph*. **Observação:** Para colaboradores internos, substitua o `master` no comando com a ramificação pela data de publicação que você estiver reproduzindo.
-3. Digite `git push origin <new branch name>` no prompt. Isso alertará GitHub para a nova ramificação. Agora você deverá surgir a nova ramificação na sua bifurcação do repositório no GitHub.
-4. Digite `git checkout <new branch name>` para alternar para sua nova ramificação.
+1. Digite `git pull upstream master:<new branch name>` no prompt. Isso cria uma nova ramificação local copiada da última ramificação-mestra do *microsoftgraph*. **Observação:** Para colaboradores internos, substitua o `master` no comando com a ramificação pela data de publicação que você estiver reproduzindo.
+1. Digite `git push origin <new branch name>` no prompt. Isso alertará GitHub para a nova ramificação. Agora você deverá surgir a nova ramificação na sua bifurcação do repositório no GitHub.
+1. Digite `git checkout <new branch name>` para alternar para sua nova ramificação.
 
 #### <a name="add-new-content-or-edit-existing-content"></a>Adicionar novo conteúdo ou editar o conteúdo existente
 
-Navegue até o repositório em sua máquina local usando o Explorador de Arquivos. Os arquivos do repositório estão no `C:\Users\<yourusername>\microsoft-graph-docs`.
-
 Para editar arquivos, abra-os em um editor de sua escolha e modifique-os. Para criar um novo arquivo, use o editor de sua escolha e salve o novo arquivo no local apropriado em sua cópia local do repositório. Enquanto estiver trabalhando, certifique-se de salvar seu trabalho com frequência.
 
-Os arquivos localizados no `C:\Users\<yourusername>\microsoft-graph-docs` são uma cópia de trabalho da ramificação nova que você criou em seu repositório local. Qualquer que seja a alteração você faça nessa pasta, ela só afetará o repositório local quando você confirmar uma alteração. Para confirmar uma alteração no repositório local, digite os seguintes comandos no GitBash:
+Os arquivos localizados na sua máquina local são uma cópia de trabalho da ramificação nova que você criou em seu repositório local. Qualquer que seja a alteração você faça nessa pasta, ela só afetará o repositório local quando você confirmar uma alteração. Para confirmar uma alteração no repositório local, digite os seguintes comandos no GitBash:
 
 ```cmd
 git add .
 git commit -v -a -m "<Describe the changes made in this commit>"
 ```
 
-O comando `add` adiciona suas alterações para uma área de preparo em preparação para confirmá-las no repositório. O período posterior ao comando `add` especifica que você deseja preparar todos os arquivos adicionados ou modificados, verificando repetidamente as subpastas. (Caso você não queira confirmar todas as alterações, é possível adicionar arquivos específicos. Você também pode desfazer uma confirmação. Para ajuda, digite `git add -help` ou `git status`.)
+O comando `add` adiciona suas alterações para uma área de preparo em preparação para confirmá-las no repositório. O período posterior ao comando `add` especifica que você deseja preparar todos os arquivos adicionados ou modificados, verificando repetidamente as subpastas. (Caso você não queira confirmar todas as alterações, é possível adicionar arquivos específicos. Você também pode desfazer uma confirmação. Para obter ajuda, digite `git add -help` ou `git status`.)
 
-O comando `commit` aplica as alterações em etapas no repositório. `-m` significa que você fornece o comentário de confirmação na linha de comando. Se você não estiver direcionando uma data específica para publicação, diga "para publicação o mais rápido possível".  As opções -v e -a podem ser omitidas. A opção -v corresponde à saída detalhada do comando, e a opção -a faz o que você já fez com o comando Adicionar.) 
+O comando `commit` aplica as alterações preparadas ao repositório. `-m` significa que você está fornecendo o comentário de confirmação na linha de comando. Se você não estiver direcionando uma data específica para publicação, diga "para publicação o mais rápido possível".  As opções -v e -a podem ser omitidas. A opção -v corresponde à saída detalhada do comando, e a opção -a faz o que você já fez com o comando Adicionar.)
 
 Você pode confirmar várias vezes enquanto estiver fazendo seu trabalho, ou esperar e confirmar apenas uma vez quando terminar.
 
@@ -144,16 +131,18 @@ Agora você tem cópias locais (em uma nova ramificação local) do trabalho que
 git checkout X2
 ```
 
-... e verificando o conteúdo. O comando `checkout` atualiza os arquivos no `C:\Users\<yourusername>\microsoft-graph-docs` para o estado atual do branch do X2. Assim que você verificar um novo branch, será possível fazer atualizações no conteúdo e confirmá-las como de costume. No entanto, para evitar trabalhar na ramificação mesclada (X) por engano, o melhor a fazer será excluí-la (confira a seguinte seção: **Excluir uma ramificação**).
+... e verificando o conteúdo. O comando `checkout` atualiza os arquivos no disco para o estado atual da ramificação do X2.
+Assim que você verificar a nova ramificação, será possível fazer atualizações no conteúdo e confirmá-las como de costume.
+No entanto, para evitar trabalhar na ramificação mesclada (X) por engano, o melhor a fazer será excluí-la (confira a seguinte seção: **Excluir uma ramificação**).
 
 #### <a name="delete-a-branch"></a>Excluir uma ramificação
 
 Depois que as alterações são mescladas com êxito no repositório central, você pode excluir a ramificação utilizada porque você não precisa mais dela. Qualquer trabalho adicional exige uma nova ramificação.
 
-Para excluir seu branch, siga estas etapas:
+Para excluir sua ramificação, siga estas etapas:
 
 1. No GitBash, digite `git checkout master` no prompt de comando.  Isso garante que você não fique na ramificação a ser excluída (o que não é permitido).
-2. Em seguida, digite `git branch -d <branch name>` no prompt de comando.  Isso exclui a ramificação em sua máquina local somente se ela tiver sido mesclada com êxito no repositório upstream. (Você pode superar esse comportamento com o sinalizador `–D`, mas primeiro certifique-se de que você deseja fazer isso.)
+2. Em seguida, digite `git branch -d <branch name>` no prompt de comando.  Isso exclui a ramificação em sua máquina local somente se ela tiver sido mesclada com êxito no repositório upstream. (Você pode substituir esse comportamento com o sinalizador `–D`, mas primeiro certifique-se de que deseja fazer isso).
 3. Por fim, digite `git push origin :<branch name>` no comando prompt (um espaço antes dos dois pontos e nenhum espaço depois deles).   Essa ação excluirá a ramificação em uma bifurcação do github.
 
 Parabéns, você tem contribuiu com êxito para o projeto.
@@ -164,27 +153,28 @@ Parabéns, você tem contribuiu com êxito para o projeto.
 
 Todos os artigos neste repositório usam Markdown.  Embora uma introdução completa (e a listagem de toda a sintaxe) podem ser encontradas em [Página Inicial de Markdown] [], falaremos sobre os conceitos básicos que você precisa conhecer.
 
-Se você estiver procurando um editor bom editor, tente [Markdown Pad][].
+Se você estiver procurando um bom editor, tente [Visual Studio Code][vscode].
 
+### <a name="markdown-basics"></a>Noções básicas de Markdown
 
-### <a name="markdown-basics"></a>Noções básicas de markdown
+Esta é uma lista com as ocorrências mais comuns para a sintaxe de Markdown:
 
-Esta é uma lista com as ocorrências mais comuns para a sintaxe de markdown:
+- **Quebras de linhas versus parágrafos:** no Markdown não há elemento HTML `<br />`. Em vez disso, um novo parágrafo é indicado por uma linha vazia entre dois blocos de texto.
+- **Itálico:** o HTML `<i>some text</i>` é gravado em `*some text*`
+- **Negrito:** o elemento HTML `<strong>some text</strong>` é gravado em `**some text**`
+- **Cabeçalhos:** os cabeçalhos HTML são designados por um número de caracteres `#` no início da linha.  A quantidade de caracteres `#` corresponde ao nível hierárquico do cabeçalho (por exemplo, `#` = h1, `##` = h2 e `###` = h3).
+- **Listas numeradas:** para criar uma lista numerada (ordenada), inicie a linha com `1. `. Se você quiser vários elementos dentro de um elemento única da lista, formate sua lista da seguinte maneira:
 
-* **Quebras de linha vs. parágrafos:** No markdown não há nenhum elemento de HTML `<br />`. Em vez disso, um novo parágrafo é indicado por uma linha vazia entre dois blocos de texto.
-* **Itálico:** O HTML `<i>some text</i>` é gravado em `*some text*`
-* **Negrito:** O elemento HTML `<strong>some text</strong>` é gravado em `**some text**`
-* **Cabeçalhos:** Os cabeçalhos HTML são designados por um número de caracteres `#` no início da linha.  A quantidade de caracteres `#` corresponde ao nível hierárquico do cabeçalho (por exemplo, `#` = h1, `##` = h2, e `###` = h3).
-* **Listas numeradas:** Para criar uma lista numerada (ordenada), inicie a linha com `1. `. Se você quiser vários elementos dentro de um elemento única da lista, formate sua lista da seguinte maneira:
-
-    1. Observe que essa linha será tabulada após o '.'
+    1. Observe que há um espaço depois o '.'
 
        Agora observe que há uma quebra de linha entre os dois parágrafos no elemento da lista e que o recuo aqui coincide com o recuo de linha acima.
 
-* **Listas com marcadores:** Listas com marcadores (desordenadas) são praticamente idênticas às listas ordenadas em que `1. ` é substituído por `* `, `- ` ou `+ `.  As listas de elementos múltiplos funcionam da mesma maneira que as listas com ordenadas.
-* **Links:** A sintaxe básica para um link é `[visible link text](link url)`. Os links também podem ter referências, conforme se discute na seção **Referências de link e imagem** abaixo.
-* **Imagens:** A sintaxe básica de uma imagem é `![alt text for the image](image url)`. As imagens também podem ter referências, conforme se discute na seção **Referências de link e imagem** abaixo.
-* **HTML em linha:** O markdown permite que você inclua HTML em linha, mas isso deve ser evitado.
+- **Listas com marcadores:** as Listas com marcadores (desordenadas) são praticamente idênticas às listas ordenadas em que `1. ` é substituído por `- `, `* ` ou `+ `.  As listas de elementos múltiplos funcionam da mesma maneira que as listas com ordenadas.
+- **Links:** a sintaxe básica para um link é `[visible link text](link url)`.
+  Os links também podem ter referências, conforme se discute na seção **Link e referências de imagem** abaixo.
+- **Imagens:** A sintaxe básica de uma imagem é `![alt text for the image](image url)`.
+  As imagens também podem ter referências, conforme se discute na seção **Link e referências de imagem** abaixo.
+- **HTML em linha:** o Markdown permite que você inclua HTML em linha, mas isso deve ser evitado.
 
 ### <a name="link-and-image-references"></a>Referências de link e de imagem
 
@@ -201,15 +191,13 @@ The image below is from [Google][googleweb]
 
 Usando as referências agrupadas na parte inferior de seu arquivo, você encontrará com facilidade as URLs de link e de imagem, poderá editá-las e reutilizá-las.
 
-
 ## <a name="more-resources"></a>Mais recursos
 
-* Para saber mais sobre Markdown, acesse [seus sites][Página Inicial de Markdown].
-* Para saber mais sobre como usar o Git e o GitHub, primeiro verifique a [seção Ajuda do GitHub] [Ajuda do GitHub] e, se for necessário, entre em contato com os administradores do site.
+- Para saber mais sobre Markdown, acesse [seus sites][Página Inicial de Markdown].
+- Para saber mais sobre como usar o Git e o GitHub, primeiro verifique a [seção Ajuda do GitHub] [Ajuda do GitHub] e, se for necessário, entre em contato com os administradores do site.
 
 [Página inicial do GitHub]: http://github.com
 [Ajuda do GitHub]: http://help.github.com/
 [Set Up Git]: http://help.github.com/win-set-up-git/
-[Página Inicial de Markdown]: http://daringfireball.net/projects/markdown/
-[Teclado de markdown]: http://markdownpad.com/
-[microsoftgraph/microsoft-graph-docs issues]: https://github.com/microsoftgraph/microsoft-graph-docs/issues
+[Página inicial do Markdown]: http://daringfireball.net/projects/markdown/
+[vscode]: https://code.visualstudio.com/
