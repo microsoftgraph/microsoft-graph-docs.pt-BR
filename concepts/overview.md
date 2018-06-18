@@ -35,11 +35,11 @@ Você pode usar o Microsoft Graph para criar experiências de acordo com o conte
 
 Você pode fazer tudo isso e muito mais com a API do Microsoft Graph.
 
->**Observação:** ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso do Microsoft Graph](../misc/terms-of-use.md) e com a [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
+>**Observação:** ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso do Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use) e com a [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ### <a name="popular-requests"></a>Solicitações mais usadas
 
-Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft Graph. Os links levam você ao [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
+Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft Graph. Os links levam você ao [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 | **Operação** | **URL** |
 |:--------------------------|:----------------------------------------|

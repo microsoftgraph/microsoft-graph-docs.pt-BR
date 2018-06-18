@@ -56,6 +56,6 @@ Não há atualmente nenhuma versão preterida da Microsoft Graph.
 
 ## <a name="terms-of-use"></a>Termos de uso
 
-Ao usar as APIs Microsoft Graph, você concorda com os [Termos de Uso](../misc/terms-of-use.md). 
+Ao usar as APIs Microsoft Graph, você concorda com os [Termos de Uso](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). 
 
 Seus comentários são importantes para nós. Junte-se a nós na página [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque suas perguntas com {MicrosoftGraph}.
