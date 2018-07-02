@@ -83,7 +83,7 @@ composer update
     
 3. Adicione uma rota */oauth* ao arquivo **app** > **Http** > **routes.php**. Para adicionar a rota, copie o código a seguir após a declaração da rota padrão. Insira o **ID do aplicativo** e a **senha** do seu aplicativo nos espaços reservados marcados com **\<ID_DO_SEU_APLICATIVO\>** e **\<SUA_SENHA\>** respectivamente.
     ```php
-    Route::get('/oauth', function () {
+    Route::get('/oauth', function (Request $request) {
         $provider = new \League\OAuth2\Client\Provider\GenericProvider([
             'clientId'                => '<YOUR_APPLICATION_ID>',
             'clientSecret'            => '<YOUR_PASSWORD>',
