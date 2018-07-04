@@ -178,6 +178,28 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) não se torna parte do corpo do rascunho de mensagem resultante.
 
+## <a name="bookings"></a>Bookings
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>ErrorExceededFindCountLimit ao consultar bookingBusinesses
+
+A obtenção da lista de `bookingBusinesses` falha com o seguinte código de erro quando a organização tem várias empresas de reservas e a conta que está fazendo a solicitação não é um administrador:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+O conjunto de empresas retornado pela solicitação pode ser limitado com a inclusão de um parâmetro de consulta, por exemplo:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## <a name="drives-files-and-content-streaming"></a>Unidades, arquivos e streaming de conteúdo
 
 * O acesso pela primeira vez a uma unidade pessoal de um usuário pelo Microsoft Graph antes que ele acesse seu site pessoal por um navegador resulta em uma resposta 401.
@@ -246,6 +268,10 @@ Você deve primeiro criar a instância de recurso e, em seguida, fazer um `PATCH
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Limite de 100 valores de propriedade de extensão de esquema permitido por instância de recursos
 
 Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmente limitam o número total de valores de propriedade de extensão de esquema que podem ser definidas em um recurso, até 100.
+
+### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
+
+Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contact**, **event**, **message** ou **post**.
 
 ## <a name="json-batching"></a>Processamento em lotes JSON
 
