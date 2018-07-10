@@ -163,7 +163,7 @@ Veja algumas orientações para trabalhar com marcas de anotação em listas:
 
 - Para criar ou atualizar listas que exibem marcas de anotação **exclusivas** para todos os itens da lista:
   
-   <p id="indent">Defina `data-tag` nos elementos `li` e não aninhe os elementos `li` em um `ul` ou `ol`. Para atualizar a lista inteira, será preciso remover o `ul` que é retornado na saída HTML e fornecer somente os elementos `li` não aninhados.</p>
+   <p id="indent">Defina `data-tag` nos elementos `li` e não aninhe os elementos `li` em um `ul` ou `ol`. Para atualizar a lista inteira, será preciso remover o `ul`, que é retornado na saída HTML, e fornecer somente os elementos `li` não aninhados.</p>
 
 - Para atualizar elementos `li` específicos:
 

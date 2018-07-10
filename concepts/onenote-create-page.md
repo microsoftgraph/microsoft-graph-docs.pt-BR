@@ -115,7 +115,7 @@ Ao enviar HTML de entrada, lembre-se desses requisitos e limitações gerais:
 <a name="supported-html"></a>
 ### <a name="supported-html-and-css-for-onenote-pages"></a>HTML e CSS compatíveis com páginas do OneNote
 
-Nem todos os elementos, atributos e propriedades são compatíveis (em HTML4, Extensible HTML, CSS, HTML5, etc.). Em vez disso, o Microsoft Graph aceita um conjunto limitado de HTML mais adequado à forma como as pessoas usam o OneNote. Saiba mais em [Suporte de marca HTML para páginas](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). Se uma marca não estiver listada aqui, provavelmente será ignorada.
+Nem todos os elementos, atributos e propriedades são compatíveis (em HTML4, Extensible HTML, CSS, HTML5 etc.). Em vez disso, o Microsoft Graph aceita um conjunto limitado de HTML mais adequado à forma como as pessoas usam o OneNote. Saiba mais em [Suporte de marca HTML para páginas](http://dev.onenote.com/docs#/introduction/html-tag-support-for-pages). Se uma marca não estiver listada aqui, provavelmente será ignorada.
 
 <!--Microsoft Graph only accepts UTF-8 data. Be sure that all requests are encoded that way, and your content-type headers indicate that as well. xx our examples don't show this-->
 
@@ -130,7 +130,7 @@ A lista a seguir mostra os tipos de elementos básicos compatíveis com o Micros
 - `<pre>` para texto pré-formatado (preserva as quebras de linha e espaços em branco)</p>
 - `<b>` e `<i>` para estilos de caractere em negrito e itálico</p>
 
-O Microsoft Graph preserva o conteúdo semântico e a estrutura básica do HTML de entrada ao criar páginas, mas converte o HTML de entrada para usar o conjunto compatível de HTML e CSS. Os recursos que não existem no OneNote não têm nada para ser convertido, portanto podem não ser reconhecidos no HTML de origem. 
+O Microsoft Graph preserva o conteúdo semântico e a estrutura básica do HTML de entrada ao criar páginas, mas converte o HTML de entrada para usar o conjunto compatível de HTML e CSS. Os recursos que não existem no OneNote não têm nada para ser convertido, portanto, podem não ser reconhecidos no HTML de origem. 
 
 
 <a name="example"></a>
