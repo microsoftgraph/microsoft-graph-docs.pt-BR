@@ -12,6 +12,24 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | As APIs de [aplicativo](https://graph.microsoft.io/pt-BR/docs/api-reference/beta/resources/application) e [servicePrincipal](https://graph.microsoft.io/pt-BR/docs/api-reference/beta/resources/serviceprincipal) serão atualizadas na visualização (beta). O primeiro conjunto de alterações será aplicado em 16 de julho de 2018. As alterações incluem a renomeação e a reestruturação de propriedade. A maioria das propriedades existentes não estará disponível até que as alterações sejam concluídas. Novas propriedades serão adicionadas. As alterações serão lançadas na Visualização (beta) antes do lançamento da versão 1.0. |
 
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Exclusão|beta|Removido DELETE /groups/{id}/team/channels/{id}, em vez disso use DELETE /teams/{id}/channels/{id}. |
+|Exclusão|beta|Removido GET /groups/{id}/team/channels/{id}, em vez disso use GET /teams/{id}/channels/{id}. |
+|Exclusão|beta|Removido PATCH /groups/{id}/team/channels/{id}, em vez disso use PATCH /teams/{id}/channels/{id}. |
+|Exclusão|beta|Removido POST /groups/{id}/team/channels/{id}/chatthreads, em vez disso use POST /teams/{id}/channels/{id}/chatthreads. |
+|Exclusão|beta|Removido GET /groups/{id}/team/channels, em vez disso use GET /teams/{id}/channels. |
+|Exclusão|beta|Removido DELETE /groups/{id}/channels/{id}, em vez disso use DELETE /teams/{id}/channels/{id}. |
+|Exclusão|beta|Removido GET /groups/{id}/channels/{id}, em vez disso use GET /teams/{id}/channels/{id}. |
+|Exclusão|beta|Removido PATCH /groups/{id}/channels/{id}, em vez disso use PATCH /teams/{id}/channels/{id}. |
+|Exclusão|beta|Removido POST /groups/{id}/channels/{id}/chatthreads, em vez disso use POST /teams/{id}/channels/{id}/chatthreads. |
+|Exclusão|beta|Removido GET /groups/{id}/channels, em vez disso use GET /teams/{id}/channels. |
+|Exclusão|beta|Removido POST /groups/{id}/team/channels, em vez disso use POST /teams/{id}/channels. |
+|Exclusão|beta|Removido GET /groups/{id}/team, em vez disso use GET /teams/{id}. |
+|Exclusão|beta|Removido PATCH /groups/{id}/team, em vez disso use PATCH /teams/{id}. |
+
+
 ## <a name="june-2018"></a>Junho de 2018
 
 ### <a name="directory-apis"></a>APIs de diretório

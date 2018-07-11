@@ -15,7 +15,7 @@ Para acessar os dados no Microsoft Graph, seu aplicativo precisará adquirir um 
 - O cabeçalho de solicitação HTTP *Authorization*, como um token de *Portador*
 - O construtor do cliente gráfico ao usar uma biblioteca de cliente do Microsoft Graph
 
-Use a API da Biblioteca de Autenticação Microsoft, [MSAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-libraries), para adquirir o token de acesso para o Microsoft Graph.
+Use a API da Biblioteca de Autenticação Microsoft, [MSAL](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-libraries), para adquirir o token de acesso para o Microsoft Graph.
 
 ## <a name="consent-and-authorization"></a>Consentimento e autorização
 
@@ -30,8 +30,8 @@ Aplique as seguintes práticas recomendadas de consentimento e autorização ao 
 - **Esteja atento ao configurar seu aplicativo**. Isso afetará diretamente as experiências do usuário final e do administrador, além da adoção e segurança do aplicativo. Por exemplo:
 
     - A declaração de privacidade, os termos de uso, o nome, o logotipo e o domínio do seu aplicativo serão exibidos com consentimento e outras experiências. Portanto, verifique se foram configurados com cuidado para que sejam compreendidos pelos usuários finais.
-    - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes).
-    - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+    - Leve em consideração quem consentirá com seu aplicativo, seja o usuário final ou administrador, e configure seu aplicativo para [solicitar permissões de forma adequada](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes).
+    - Verifique se você entende a diferença entre [consentimento estático, dinâmico e incremental](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
 - **Considere usar aplicativos multilocatários**. Tenha em mente que os clientes podem ter vários controles de aplicativo e consentimentos em diferentes estados. Por exemplo:
 
@@ -80,9 +80,10 @@ Por padrão, o Microsoft Graph não retorna membros desconhecidos. Se, no entant
 
 >**Observação:** se o aplicativo estiver preparado para lidar com membros enum desconhecidos, ele deverá aceitar a condição usando um cabeçalho solicitação HTTP *prefer*: `Prefer: include-unknown-enum-members`.
 
+
 ## <a name="storing-data-locally"></a>Armazenamento de dados no local
 
-Idealmente, seu aplicativo deveria fazer chamadas para o Microsoft Graph para recuperar dados em tempo real conforme necessário. Você só deve armazenar em cache ou armazenar dados localmente se um cenário específico assim o exigir e, se esse caso de uso for abrangido pelos seus termos de uso e pela política de privacidade e não violar os [termos de uso do Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). O aplicativo também deve implementar políticas adequadas de retenção e de exclusão.
+Idealmente, seu aplicativo deveria fazer chamadas para o Microsoft Graph para recuperar dados em tempo real conforme necessário. Você só deve armazenar em cache ou armazenar dados localmente se um cenário específico assim o exigir e, se esse caso de uso for abrangido pelos seus termos de uso e pela política de privacidade e não violar os [termos de uso do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/misc/terms-of-use). O aplicativo também deve implementar políticas adequadas de retenção e de exclusão.
 
 ## <a name="optimizations"></a>Otimizações
 
@@ -133,4 +134,6 @@ Para garantir a segurança e facilitar o suporte do aplicativo:
 
 - Respeite o TTL DNS e defina a conexão TTL para correspondê-lo. Isso garantirá a disponibilidade em caso de failovers.
 - Abra conexões para todas as respostas de DNS anunciadas.
-- Sempre registre a *request-id* e o *carimbo de data/hora* no cabeçalho de resposta HTTP. Essa ação é necessária ao escalar ou relatar problemas no Stack Overflow ou no Atendimento ao Cliente da Microsoft.
+- Gerar um GUID exclusivo e o enviar em cada solicitação REST do Microsoft Graph. Isso ajudará a Microsoft a investigar os erros com maior facilidade, caso seja necessário relatar um problema com o Microsoft Graph.
+  - Em todas as solicitações do Microsoft Graph, gere um GUID exclusivo, envie-o no cabeçalho de solicitação HTTP do `client-request-id` e também registre-o nos logs dos aplicativos.
+  - Registre sempre o `request-id`, o `timestamp` e o `x-ms-ags-diagnostic` dos cabeçalhos de resposta HTTP. Estes, juntamente com o `client-request-id`, são necessários para relatar os problemas no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) ou no Suporte da Microsoft.

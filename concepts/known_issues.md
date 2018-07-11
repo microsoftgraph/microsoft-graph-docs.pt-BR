@@ -83,6 +83,29 @@ Atualmente, há um problema que impede a configuração da propriedade **allowEx
 Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
 
 
+## <a name="bookings"></a>Reservas
+
+### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>ErrorExceededFindCountLimit ao consultar bookingBusinesses
+
+A obtenção da lista de `bookingBusinesses` falha com o seguinte código de erro quando a organização tem várias empresas de Reservas e a conta que está fazendo a solicitação não é um administrador:
+
+```json
+{
+  "error": {
+    "code": "ErrorExceededFindCountLimit",
+    "message":
+      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
+  }
+}
+```
+
+Como alternativa, você pode limitar o conjunto de empresas retornadas pela solicitação, incluindo um parâmetro `query`, por exemplo:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
+
 ## <a name="calendars"></a>Calendários
 
 ### <a name="adding-and-accessing-ics-based-calendars-in-users-mailbox"></a>Adicionar e acessar calendários baseados em ICS na caixa de correio do usuário
@@ -178,27 +201,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) não se torna parte do corpo do rascunho de mensagem resultante.
 
-## <a name="bookings"></a>Bookings
-
-### <a name="errorexceededfindcountlimit-when-querying-bookingbusinesses"></a>ErrorExceededFindCountLimit ao consultar bookingBusinesses
-
-A obtenção da lista de `bookingBusinesses` falha com o seguinte código de erro quando a organização tem várias empresas de reservas e a conta que está fazendo a solicitação não é um administrador:
-
-```json
-{
-  "error": {
-    "code": "ErrorExceededFindCountLimit",
-    "message":
-      "The GetBookingMailboxes request returned too many results. Please specify a query to limit the results.",
-  }
-}
-```
-
-O conjunto de empresas retornado pela solicitação pode ser limitado com a inclusão de um parâmetro de consulta, por exemplo:
-
-```
-GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
-```
 
 ## <a name="drives-files-and-content-streaming"></a>Unidades, arquivos e streaming de conteúdo
 
