@@ -68,3 +68,10 @@ Use o [Microsoft Graph Explorer](https://developer.microsoft.com/pt-BR/graph/gra
 Para fazer chamadas à API do OneNote por meio do Explorador do Graph, escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para **Ativar** o OneNote. Você também precisará habilitar as permissões apropriadas. No nome da conta no menu à esquerda, escolha **modificar permissões**. Para saber mais sobre as permissões do OneNote, confira [Permissões de anotações](permissions_reference.md#notes-permissions).
 
 Para começar a usar as APIs do OneNote no Microsoft Graph, confira o [conteúdo de referência do OneNote](../api-reference/v1.0/resources/onenote-api-overview.md).
+
+## <a name="see-also"></a>Confira também
+
+- [Desenvolvimento do OneNote](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Trabalhar com Blocos de Anotações de Classe](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Trabalhar com Blocos de Anotações de Equipe](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Assinar webhooks](https://docs.microsoft.com/pt-BR/previous-versions/office/office-365-api/how-to/onenote-sync)

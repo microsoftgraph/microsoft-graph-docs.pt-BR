@@ -58,11 +58,7 @@ Exemplos de recursos de grupo que oferecem suporte somente a permissões delegad
 
 Os grupos do Microsoft Teams e do Office 365 [têm funcionalidades parecidas](../api-reference/beta/resources/teams_api_overview.md). Todas as APIs de grupo podem ser usadas com as equipes, com a exceção de que a API Criar grupo não permite atualmente a criação de uma equipe.  As versões futuras da API oferecerão suporte para isso.
 
-### <a name="microsoft-teams-channels-preview"></a>Canais do Microsoft Teams (visualização)
-
-Atualmente você pode ler e criar canais, mas não pode atualizá-los ou excluí-los.  Versões futuras da API terão suporte.
-
-### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Threads de chat e mensagens de chat do Microsoft Teams (visualização)
+### <a name="microsoft-teams-chat-threads-and-chat-messages-preview"></a>Threads e mensagens de chat do Microsoft Teams (visualização)
 
 Atualmente é possível criar threads de chat em canais, mas não é possível ler os threads de chat existentes ou adicionar respostas a eles. Além disso, não é possível ler ou gravar chats diretos entre usuários que estejam fora do escopo de uma equipe ou de um canal.  As versões futuras da API agregarão recursos adicionais nessa área.
 
