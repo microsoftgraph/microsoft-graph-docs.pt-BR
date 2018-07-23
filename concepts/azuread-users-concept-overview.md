@@ -8,7 +8,7 @@ Os usuários são a representação de uma conta de usuário corporativa ou de e
 
 Você pode usar o Microsoft Graph para acessar relações, documentos, contatos e preferências contextualmente relevantes para o usuário conectado. O recurso **usuário** oferece uma forma simples de acessar e manipular recursos do usuário sem precisar realizar chamadas adicionais, consultar informações de autenticação específicas e emitir consultas diretamente em outros recursos do Microsoft Graph.
 
-Para acessar as informações e os dados de um usuário, será necessário [obter acesso em nome dele](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Autenticar seu aplicativo com o [consentimento do administrador](https://developer.microsoft.com/pt-BR/graph/docs/concepts/permissions_reference) permite que você trabalhe e atualize uma gama maior de entidades associadas a um usuário.
+Para acessar as informações e os dados de um usuário, será necessário [obter acesso em nome dele](https://developer.microsoft.com/graph/docs/concepts/auth_v2_user). Autenticar seu aplicativo com o [consentimento do administrador](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference) permite que você trabalhe e atualize uma gama maior de entidades associadas a um usuário.
 
 ### <a name="manage-your-organization"></a>Gerenciar sua organização
 
@@ -52,5 +52,5 @@ Maximizar a relevância no aplicativo promovendo documentos e contatos mais popu
 - Configure o controle de acesso e políticas para usuários com a [API do Azure AD](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Analise as [permissões](permissions_reference.md) que serão necessárias para o aplicativo acessar dados do usuário. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with the Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
+- Stay up to date with Microsoft Graph [changelog](https://developer.microsoft.com/graph/docs/concepts/changelog).
 -->
