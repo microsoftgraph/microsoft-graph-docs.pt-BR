@@ -353,7 +353,7 @@
       <Item text="Obter calendário" url="/en-us/api-reference/v1.0/api/calendar_get" SEOKeyword="Obter calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto calendar." />
       <Item text="Atualizar calendário" url="/en-us/api-reference/v1.0/api/calendar_update" SEOKeyword="Atualizar calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Atualizar as propriedades do objeto calendar." />
       <Item text="Excluir calendário" url="/en-us/api-reference/v1.0/api/calendar_delete" SEOKeyword="Excluir calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Exclua um calendário." />
-      <Item text="Listar modo de exibição de calendário" url="/en-us/api-reference/v1.0/api/calendar_list_calendarview" SEOKeyword="Listar a visão de calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
+      <Item text="Listar modo de exibição de calendário" url="/en-us/api-reference/v1.0/api/calendar_list_calendarview" SEOKeyword="Listar modo de exibição de calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
       <Item text="Listar eventos" url="/en-us/api-reference/v1.0/api/calendar_list_events" SEOKeyword="Listar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
       <Item text="Criar Evento" url="/en-us/api-reference/v1.0/api/calendar_post_events" SEOKeyword="Criar Evento, API do Microsoft Graph, API do calendário" SEODescription="Use esta API para criar um novo Event." />
       <Item text="Modo de exibição Lembrete" url="/en-us/api-reference/v1.0/api/user_reminderview" SEOKeyword="usuário: reminderView, API do Microsoft Graph, API de usuário" SEODescription="Modo de exibição Lembrete" />
@@ -688,7 +688,7 @@
           <Item text="Atualizar" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_update" />
         </Item>
         <Item text="Status de importação da identidade de dispositivo importada do windows autopilot" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus" />
-        <Item text="Estado de identidade importada de dispositivo do Windows Autopilot" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
+        <Item text="Estado de identidade de dispositivo importada do windows autopilot" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate" />
       </Item>
       <Item text="Configuração do dispositivo" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
         <Item text="Política de conformidade do Android" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
@@ -843,7 +843,7 @@
         <Item text="Configurações de gerenciamento de dispositivo" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicemanagementsettings" />
         <Item text="Nível de proteção contra ameaças ao dispositivo" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_devicethreatprotectionlevel" />
         <Item text="Modo de envio de dados de diagnóstico" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
-        <Item text="Política de cookies do Microsoft Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgecookiepolicy" />
+        <Item text="Política de cookies do Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgecookiepolicy" />
         <Item text="Mecanismo de pesquisa do Edge" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchengine" />
         <Item text="Base do mecanismo de pesquisa de borda" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginebase" />
         <Item text="Personalização do mecanismo de pesquisa de borda" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_edgesearchenginecustom" />
@@ -1752,7 +1752,7 @@
   <Item text="Email" ProdTag="Outlook" url="/en-us/api-reference/v1.0/resources/mail_api_overview" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs de email do Outlook">
     <Item text="Mensagem" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs de Email">
       <Item text="Listar mensagens" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
+      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Obter mensagem" url="/en-us/api-reference/v1.0/api/message_get" SEOKeyword="Obter mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto message." />
       <Item text="Atualizar mensagem" url="/en-us/api-reference/v1.0/api/message_update" SEOKeyword="Atualizar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Atualizar as propriedades do objeto message." />
       <Item text="Excluir mensagem" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="Excluir mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Exclua a mensagem." />
@@ -2444,7 +2444,7 @@
         <Item text="Obter calendário" url="/en-us/api-reference/beta/api/calendar_get" SEOKeyword="Obter calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto calendar." />
         <Item text="Atualizar calendário" url="/en-us/api-reference/beta/api/calendar_update" SEOKeyword="Atualizar calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Atualizar as propriedades do objeto calendar." />
         <Item text="Excluir calendário" url="/en-us/api-reference/beta/api/calendar_delete" SEOKeyword="Excluir calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Exclua um calendário." />
-        <Item text="Listar modo de exibição de calendário" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="Listar a visão de calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
+        <Item text="Listar modo de exibição de calendário" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="Listar modo de exibição de calendário, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
         <Item text="Modo de exibição Lembrete" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="usuário: reminderView, API do Microsoft Graph, API de usuário" SEODescription="" />
 		<Item text="Listar eventos" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="Listar eventos, API do Microsoft Graph, API do Calendário do Outlook" SEODescription="Recuperar uma lista de objetos event." />
          <Item text="Criar Evento" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Criar Evento, API do Microsoft Graph, API do calendário" SEODescription="Use esta API para criar um novo Event." />
@@ -2490,7 +2490,6 @@
 		<Item text="Feed de atividades" url="/en-us/api-reference/beta/resources/activity-feed-api-overview">
 			<Item text="Atividade" url="/en-us/api-reference/beta/resources/projectrome_activity">
 				<Item text="Criar ou substituir uma atividade" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
-				<Item text="Criar ou substituir atividade" url="/en-us/api-reference/beta/api/projectrome_put_activity" />
 				<Item text="Excluir uma atividade" url="/en-us/api-reference/beta/api/projectrome_delete_activity" />
 				<Item text="Obter atividades" url="/en-us/api-reference/beta/api/projectrome_get_activities" />
 				<Item text="Obter atividades recentes" url="/en-us/api-reference/beta/api/projectrome_get_recent_activities" />
@@ -2512,13 +2511,14 @@
 			<Item text="Publicar" url="/en-us/api-reference/beta/api/bookingbusiness_publish" />
 			<Item text="Cancelar publicação" url="/en-us/api-reference/beta/api/bookingbusiness_unpublish" />
 		</Item>
-		<Item text="Marcação de reserva" url="/en-us/api-reference/beta/resources/bookingappointment">
-			<Item text="Listar" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
-			<Item text="Criar" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
-			<Item text="Obter" url="/en-us/api-reference/beta/api/bookingappointment_get" />
-			<Item text="Atualizar" url="/en-us/api-reference/beta/api/bookingappointment_update" />
-			<Item text="Excluir" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
-			<Item text="Cancelar" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
+		<Item text="Marcação de compromisso" url="/en-us/api-reference/beta/resources/bookingappointment">
+			<Item text="Listar modo de exibição de calendário" url="/en-us/api-reference/beta/api/bookingbusiness_list_calendarview" />
+			<Item text="Listar compromissos" url="/en-us/api-reference/beta/api/bookingbusiness_list_appointments" />
+			<Item text="Criar compromisso" url="/en-us/api-reference/beta/api/bookingbusiness_post_appointments" />
+			<Item text="Obter compromisso" url="/en-us/api-reference/beta/api/bookingappointment_get" />
+			<Item text="Atualizar compromisso" url="/en-us/api-reference/beta/api/bookingappointment_update" />
+			<Item text="Excluir compromisso" url="/en-us/api-reference/beta/api/bookingappointment_delete" />
+			<Item text="Cancelar compromisso" url="/en-us/api-reference/beta/api/bookingappointment_cancel" />
 		</Item>
 		<Item text="Moeda da reserva" url="/en-us/api-reference/beta/resources/bookingcurrency">
 			<Item text="Listar" url="/en-us/api-reference/beta/api/bookingcurrency_list" />
@@ -3644,7 +3644,7 @@
         <Item text="Configurações de gerenciamento de dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicemanagementsettings" />
         <Item text="Tipo de plataforma do dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_deviceplatformtype" />
         <Item text="Nível de proteção contra ameaças ao dispositivo" url="/en-us/api-reference/beta/resources/intune_deviceconfig_devicethreatprotectionlevel" />
-        <Item text="Modo de envio dados de diagnóstico" url="/en-us/api-reference/beta/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
+        <Item text="Modo de envio de dados de diagnóstico" url="/en-us/api-reference/beta/resources/intune_deviceconfig_diagnosticdatasubmissionmode" />
         <Item text="Origem do nome do domínio" url="/en-us/api-reference/beta/resources/intune_deviceconfig_domainnamesource" />
         <Item text="Configuração rápida de EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_eapfastconfiguration" />
         <Item text="Tipo de EAP" url="/en-us/api-reference/beta/resources/intune_deviceconfig_eaptype" />
@@ -5174,7 +5174,6 @@
           <Item text="Excluir aplicativo" url="/en-us/api-reference/beta/api/application_delete" SEOKeyword="Excluir aplicativo, API do Microsoft Graph, API de aplicativo" SEODescription="Exclua um aplicativo." />
           <Item text="Listar proprietários" url="/en-us/api-reference/beta/api/application_list_owners" SEOKeyword="Listar proprietários, API do Microsoft Graph, API de aplicativo" SEODescription="Recuperar uma lista de objetos directoryobject." />
           <Item text="Atribuir proprietário" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Criar proprietário, API do Microsoft Graph, API de aplicativo" SEODescription="Use esta API para criar um novo proprietário." />
-          <Item text="Listar propriedades de extensão" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="Listar extensionProperties, API do Microsoft Graph, API de aplicativo" SEODescription="Recuperar uma lista de objetos extensionproperty." />
         </Item>
 	  <Item text="Logs de auditoria" url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Auditoria de diretório" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="objeto directoryAudit, API do Microsoft Graph, Azure AD, logs de auditoria" SEODescription="">
@@ -5248,11 +5247,6 @@
         <Item text="Obter domínio" url="/en-us/api-reference/beta/api/domain_get" />
         <Item text="Atualizar domínio" url="/en-us/api-reference/beta/api/domain_update" />
         <Item text="Verificar domínio" url="/en-us/api-reference/beta/api/domain_verify" />
-      </Item>
-      <Item text="Propriedade de extensão" url="/en-us/api-reference/beta/resources/extensionproperty" SEOKeyword="API de extensionproperty, API do Microsoft Graph, API de extensionproperty" SEODescription="Permite a um aplicativo definir e usar um conjunto de propriedades adicionais que podem ser adicionadas aos objetos de diretório (usuários, grupos, detalhes de locatário, dispositivos, aplicativos e entidades de serviço) sem que o aplicativo exija um armazenamento de dados externo. Para mais informações sobre as propriedades de extensão, confira Extensões de esquema do diretório da Graph API do AD do Azure (https://msdn.microsoft.com/pt-br/library/azure/dn720459.aspx). Herda do DirectoryObject.">
-        <Item text="Obter extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_get" SEOKeyword="Obter extensionProperty, API do Microsoft Graph, API do extensionproperty" SEODescription="Recuperar as propriedades e os relacionamentos do objeto extensionproperty." />
-        <Item text="Atualizar extensionproperty" url="/en-us/api-reference/beta/api/extensionproperty_update" SEOKeyword="Atualizar extensionproperty, API do Microsoft Graph, API do extensionproperty" SEODescription="Atualizar as propriedades do objeto extensionproperty." />
-        <Item text="Excluir extensionProperty" url="/en-us/api-reference/beta/api/extensionproperty_delete" SEOKeyword="Excluir extensionProperty, API do Microsoft Graph, API do extensionproperty" SEODescription="Excluir extensionProperty." />
       </Item>
     <Item text="Identity Protection" url="/en-us/api-reference/beta/resources/identityprotection_root" SEOKeyword="API de Identity Protection, Azure AD, AADIP, API do Microsoft Graph, Identity Protection" SEODescription="API para consultar dados de e usando o Azure Active Directory Identity Protection">
       <Item text="Eventos de risco de identidade" url="/en-us/api-reference/beta/resources/identityriskevent" SEOKeyword="API de Identity Protection, Azure AD, AADIP, API do Microsoft Graph, Identity Protection, Risco de Evento, Risco de Identidade" SEODescription="Consulta dados de evento de risco do Azure AD Identity Protection">
