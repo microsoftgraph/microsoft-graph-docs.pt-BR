@@ -1,6 +1,6 @@
 # <a name="use-note-tags-in-onenote-pages"></a>Usar marcas de anotação nas páginas do OneNote
 
-*__Aplica-se a:__ Bloco de anotações dos consumidores no OneDrive | Bloco de anotações empresariais no Office 365*
+**Aplica-se a** Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
 
 Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrelas e outras marcas de anotação incorporadas em uma página do OneNote, conforme mostrado na imagem a seguir.
 
@@ -8,15 +8,18 @@ Use o atributo `data-tag` para adicionar e atualizar caixas de seleção, estrel
 
 
 <a name="attributes"></a>
+
 ## <a name="note-tag-attributes"></a>Atributos de marcas de anotação
 
 No código HTML de uma página do OneNote, uma marca de anotação é representada pelo atributo `data-tag`. Por exemplo:
 
 - Uma caixa de tarefas pendentes desmarcada: `<p data-tag="to-do">` 
+
 - Uma caixa de tarefas pendentes marcada: `<p data-tag="to-do:completed">` 
+
 - Uma estrela:  `<h2 data-tag="important">` 
 
-O valor `data-tag` é composto por uma forma e, às vezes, um status. (*confira todos os [valores compatíveis](#built-in-note-tags-for-onenote)*)
+O valor `data-tag` é composto por uma forma e, às vezes, um status (confira todos os [valores compatíveis](#built-in-note-tags-for-onenote)).
 
 | Propriedade | Descrição |  
 |:------|:------|  
@@ -25,6 +28,7 @@ O valor `data-tag` é composto por uma forma e, às vezes, um status. (*confira 
  
 
 <a name="note-tags"></a>
+
 ## <a name="add-or-update-note-tags"></a>Adicionar ou atualizar marcas de anotação
 
 Para adicionar ou atualizar uma marca de anotação incorporada, basta usar o atributo `data-tag` em um elemento com suporte. Por exemplo, observe um parágrafo marcado como importante:
@@ -42,14 +46,14 @@ Separe várias marca de anotação por vírgulas:
 Você pode definir uma `data-tag` nos seguintes elementos:
 
 - p 
-- ul, ol, li (*saiba mais sobre [marcas de anotação em listas](#note-tags-on-lists)*)
+- ul, ol, li (saiba mais sobre [marcas de anotação em listas](#note-tags-on-lists))
 - img 
 - h1 – h6 
 - título 
 
 Confira [Marcas de anotação incorporadas](#built-in-note-tags-for-onenote) para obter uma lista de marcas de anotação que podem ser usadas com o Microsoft Graph. Não há suporte para adicionar ou atualizar marcas personalizadas usando o Microsoft Graph.
  
-**Exemplos**
+### <a name="examples"></a>Exemplos
 
 Veja uma lista simples de tarefas pendentes com o primeiro item marcado como concluído.
 
@@ -59,9 +63,9 @@ Veja uma lista simples de tarefas pendentes com o primeiro item marcado como con
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
 
-Observe que as marcas `<p>` acima incluem cada uma o atributo `data-id`. Isso facilita a atualização das marcas de anotação da caixa de seleção. Por exemplo, a seguinte solicitação marca o item “plantio da primavera” como concluído.
+Observe que as `<p>` marcas acima incluem cada uma o atributo `data-id`. Isso facilita a atualização das marcas de anotação da caixa de seleção. Por exemplo, a seguinte solicitação marca o item “plantio da primavera” como concluído.
 
-``` 
+```json
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -78,7 +82,7 @@ Authorization: Bearer {token}
 
 A seguinte solicitação cria uma página que contém todas as [marcas de anotação incorporadas](#built-in-note-tags-for-onenote).
 
-``` 
+```html 
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
 
 Content-Type: text/html
@@ -151,44 +155,39 @@ Para obter mais informações sobre a criação de páginas, confira [Criar pág
 
 
 <a name="note-tags-lists"></a>
-### <a name="note-tags-on-lists"></a>Marcas de anotação em listas
+
+## <a name="note-tags-on-lists"></a>Marcas de anotação em listas
 
 Veja algumas orientações para trabalhar com marcas de anotação em listas:
 
 - Use os elementos `p` para listas de tarefas pendentes. Eles não exibem um marcador ou número e são mais fáceis de atualizar.
 
-- Para criar ou atualizar listas que exibem as **mesmas** marcas de anotação para todos os itens da lista:
-  
-   <p id="indent">Defina `data-tag` no `ul` ou no `ol`. Para atualizar a lista inteira, será necessário redefinir `data-tag` no `ul` ou no `ol`.</p>
+- Para criar ou atualizar listas que exibem a **mesma** marca de anotação para todos os itens da lista, defina `data-tag` no `ul` ou no `ol`. Para atualizar a lista inteira, será necessário redefinir `data-tag` no `ul` ou no `ol`.
 
-- Para criar ou atualizar listas que exibem marcas de anotação **exclusivas** para todos os itens da lista:
-  
-   <p id="indent">Defina `data-tag` nos elementos `li` e não aninhe os elementos `li` em um `ul` ou `ol`. Para atualizar a lista inteira, será preciso remover o `ul`, que é retornado na saída HTML, e fornecer somente os elementos `li` não aninhados.</p>
+- Para criar ou atualizar listas que exibem uma marca de anotação **exclusiva** para alguns ou todos os itens da lista, defina `data-tag` nos elementos `li` e não aninhe os elementos `li` em um `ul` ou no `ol`. Para atualizar a lista inteira, será preciso remover o `ul`, que é retornado na saída HTML, e fornecer somente os elementos `li` não aninhados.
 
-- Para atualizar elementos `li` específicos:
+- Para atualizar elementos `li` específicos, defina individualmente como destino os elementos `li` e defina a `data-tag` no elemento `li`. Qualquer elemento `li` tratado individualmente pode ser atualizado para exibir uma marca de anotação exclusiva, independentemente de como a lista foi originalmente definida.
 
-   <p id="indent">Aponte os elementos `li` individualmente e defina a `data-tag` no elemento `li`. Qualquer elemento `li` tratado individualmente pode ser atualizado para exibir uma marca de anotação exclusiva, independentemente de como a lista foi originalmente definida.</p>
+  As diretrizes são baseadas nas seguintes regras aplicadas pelo Microsoft Graph:
 
-As diretrizes são baseadas nas seguintes regras aplicadas pelo Microsoft Graph:
+  - A configuração `data-tag` para um `ul` ou `ol` substitui todas as configurações em elementos filho `li`. Isso se aplica mesmo quando o `ul` ou `ol` não especifica um `data-tag`, mas seus elementos filho `li` sim.
 
-- A configuração `data-tag` para um `ul` ou `ol` substitui todas as configurações em elementos filho `li`. Isso se aplica mesmo quando o `ul` ou `ol` não especifica um `data-tag`, mas seus elementos filho `li` sim.
-
-   Por exemplo, se você criar um `ul` ou `ol` que defina `data-tag="project-a"`, todos os seus itens de lista serão exibidos na marca de anotação *Project A*. Ou, se `ul` ou `ol` não definir um `data-tag`, nenhum dos seus itens exibirá uma marca de anotação. Essa substituição acontece independentemente das configurações explícitas nos elementos filho `li`.
+    Por exemplo, se você criar um `ul` ou `ol` que defina `data-tag="project-a"`, todos os seus itens de lista serão exibidos na marca de anotação *Project A*. Ou, se `ul` ou `ol` não definir um `data-tag`, nenhum dos seus itens exibirá uma marca de anotação. Essa substituição acontece independentemente das configurações explícitas nos elementos filho `li`.
 
 - As configurações exclusivas `data-tag` são liquidadas para itens de lista nas seguintes condições:
 
-   - Os elementos `li` não estão aninhados em um `ul` ou `ol` em uma solicitação de criação ou atualização.
+  - Os elementos `li` não estão aninhados em um `ul` ou `ol` em uma solicitação de criação ou atualização.
 
-   - Um elemento `li` é tratado individualmente em uma solicitação de atualização.
+  - Um elemento `li` é tratado individualmente em uma solicitação de atualização.
 
 - Os elementos `li` não aninhados enviados no HTML de entrada são retornados em um `ul` no HTML de saída.
 
 - No HTML de saída, todas as configurações da lista `data-tag` são definidas em elementos `span` nos itens da lista.
 
-<br />
+
 O código a seguir mostra como algumas dessas regras são aplicadas. O HTML de entrada cria duas listas com marcas de anotação. O HTML de saída é o que é retornado para as listas quando você recupera o conteúdo da página.
 
-**HTML de entrada**
+#### <a name="input-html"></a>HTML de entrada
 
 ```html 
 <!--To display the same note tag on all list items, define note tags on the ul or ol.--> 
@@ -202,7 +201,7 @@ O código a seguir mostra como algumas dessas regras são aplicadas. O HTML de e
 <li data-tag="question" data-id="my-question">An item with a Question note tag</li>
 ```
  
-**HTML de saída**
+#### <a name="output-html"></a>HTML de saída
 
 ```html 
 <ul>
@@ -217,6 +216,7 @@ O código a seguir mostra como algumas dessas regras são aplicadas. O HTML de e
 ```
 
 <a name="output-html"></a>
+
 ## <a name="retrieve-note-tags"></a>Recuperar marcas de anotação
 
 As marcas de anotação incorporadas são incluídas no HTML de saída quando você obtém o conteúdo da página:
@@ -225,7 +225,7 @@ As marcas de anotação incorporadas são incluídas no HTML de saída quando vo
 
 Um atributo `data-tag` no HTML de saída sempre inclui um valor de forma e inclui apenas um status se ele representar uma marca de anotação de caixa de seleção definida como concluída. Os exemplos a seguir mostram o HTML de entrada usado para criar algumas marcas de anotação e o HTML de saída que é retornado.
 
-**HTML de entrada**
+#### <a name="input-html"></a>HTML de entrada
 
 ```html 
 <h1>Status meeting</h1>
@@ -239,7 +239,7 @@ Um atributo `data-tag` no HTML de saída sempre inclui um valor de forma e inclu
 </ul>
 ```
 
-**HTML de saída**
+#### <a name="output-html"></a>HTML de saída
 
 ```html 
 <h1 style="...">Status meeting</h1>
@@ -257,31 +257,37 @@ Observe que o atributo `data-tag` definido no nível de lista é enviado para se
 
 > **Observação:** no HTML de saída, a definição e as marcas de anotação de lembrar posteriormente são retornadas como `data-tag="remember-for-later"`. O elemento `title` não retorna informações sobre marcas de anotação.
 
+
+
+
 <a name="built-in-tags"></a>
+
 ## <a name="built-in-note-tags-for-onenote"></a>Marcas de anotação incorporadas para o OneNote
 
 O OneNote inclui as seguintes marcas de anotação incorporadas:
 
 ![Todas as marcas de anotação internas.](images/note-tags-all.png)
 
-Os valores que você pode atribuir ao atributo `data-tag` são mostrados abaixo. Não há suporte para marcas personalizadas.
+Os valores que você pode atribuir ao atributo `data-tag` são mostrados na tabela abaixo. Não há suporte para marcas personalizadas.
 
 ||Rótulos||
 |:---|:---|:-----|
-| `shape[:status]` |`to-do`<br />`to-do:completed`|`important`|
+|`shape[:status]` |`to-do`<br/><br/>`to-do:completed`|`important`|
 |`question`|`definition`|`highlight`|
 |`contact`|`address`|`phone-number`|
 |`web-site-to-visit`|`idea`|`password`|
 |`critical`|`project-a`|`project-b`|
 |`remember-for-later`|`movie-to-see`|`book-to-read`|
 |`music-to-listen-to`|`source-for-article`|`remember-for-blog`|
-|`discuss-with-person-a`<br />`discuss-with-person-a:completed`|`discuss-with-person-b`<br />`discuss-with-person-b:completed`|`discuss-with-manager`<br />`discuss-with-manager:completed`|
-|`send-in-email`|`schedule-meeting`<br />`schedule-meeting:completed`|`call-back`<br />`call-back:completed`|
-|`to-do-priority-1`<br />`to-do-priority-1:completed`|`to-do-priority-2`<br />`to-do-priority-2:completed`|`client-request`<br />`client-request:completed`|
+|`discuss-with-person-a`<br/><br/>`discuss-with-person-a:completed`|`discuss-with-person-b`<br/><br/>`discuss-with-person-b:completed`|`discuss-with-manager`<br/><br/>`discuss-with-manager:completed`|
+|`send-in-email`|`schedule-meeting`<br/><br/>`schedule-meeting:completed`|`call-back`<br/><br/>`call-back:completed`|
+|`to-do-priority-1`<br/><br/>`to-do-priority-1:completed`|`to-do-priority-2`<br/><br/>`to-do-priority-2:completed`|`client-request`<br/><br/>`client-request:completed`|
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>Informações de resposta
+
 O Microsoft Graph retornará as seguintes informações na resposta.
 
 | Dados de resposta | Descrição |  
@@ -291,17 +297,18 @@ O Microsoft Graph retornará as seguintes informações na resposta.
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Permissões
 
 Para criar ou atualizar páginas do OneNote, solicite permissões apropriadas. Escolha o nível mais baixo de permissões que seu aplicativo precisa para realizar o trabalho.
 
-**Permissões para _páginas POST_**
+#### <a name="permissions-for-post-pages"></a>Permissões para páginas POST
 
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-**Permissões para _páginas PATCH_**
+#### <a name="permissions-for-patch-pages"></a>Permissões para páginas PATCH
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
@@ -310,7 +317,8 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Esco
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Recursos adicionais
+
+## <a name="see-also"></a>Confira também
 
 - [Criar páginas do OneNote](onenote-create-page.md)
 - [Atualizar o conteúdo da página do OneNote](onenote_update_page.md)

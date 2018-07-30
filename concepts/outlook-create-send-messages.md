@@ -1,6 +1,6 @@
 # <a name="create-and-send-outlook-messages"></a>Criar e enviar mensagens do Outlook
 
-Emails são representados pelo recurso de [mensagem](../api-reference/v1.0/resources/message.md) no Microsoft Graph. 
+Emails são representados pelo recurso de [mensagem](../api-reference/v1.0/resources/message.md) no Microsoft Graph.
 
 Por padrão, as mensagens são identificadas por uma ID de entrada exclusiva na propriedade **id**. Um provedor de armazenamento atribui uma ID de entrada a uma mensagem quando a mensagem é salva incialmente como um rascunho ou enviada. Essa ID muda quando a mensagem é copiada ou movida para outra pasta, armazenada ou um arquivo .PST.
 
@@ -10,9 +10,9 @@ No Outlook, você pode criar e enviar um email na mesma ação [sendMail](../api
 
 Da mesma forma, quando responder a um email, você pode criar e enviar a resposta da mesma ação ([responder](../api-reference/v1.0/api/message_reply.md), [responder a todos](../api-reference/v1.0/api//message_replyall.md) ou [encaminhar](../api-reference/v1.0/api/message_forward.md)). Ou você pode criar um rascunho da resposta ([responder](../api-reference/v1.0/api/message_createreply.md), [responder a todos](../api-reference/v1.0/api//message_createreplyall.md), ou [encaminhar](../api-reference/v1.0/api/message_createforward.md)), [adicionar conteúdo](../api-reference/v1.0/api/message_update.md)e então [enviar](../api-reference/v1.0/api/message_send.md) o rascunho mais tarde.
 
-Para distinguir entre um rascunho e uma mensagem enviada por programação, verifique a propriedade **isDraft**. 
+Para distinguir entre um rascunho e uma mensagem enviada por programação, verifique a propriedade **isDraft**.
 
-Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens Enviados por seus nomes de pasta correspondentes já bem conhecidos. Por exemplo, você pode fazer o seguinte para [acessar as mensagens](../api-reference/v1.0/api/user_list_messages.md) na pasta Rascunhos:
+Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). Por exemplo, você pode fazer o seguinte para [acessar as mensagens](../api-reference/v1.0/api/user_list_messages.md) na pasta Rascunhos:
 
 ```http
 GET /me/mailfolders('Drafts')
@@ -20,18 +20,20 @@ GET /me/mailfolders('Drafts')
 
 ### <a name="body-format-and-malicious-script"></a>Formato do corpo e script mal-intencionado
 
-<!-- Remove the following 2 sections from the message.md topics 
+<!-- Remove the following 2 sections from the message.md topics
 -->
 
 O corpo da mensagem pode ser HTML ou texto, com HTML sendo retornado como o tipo de corpo da mensagem padrão na resposta GET.
 
 Quando [receber uma mensagem](../api-reference/v1.0/api/message_get.md), você pode especificar o cabeçalho da solicitação a seguir para retornar as propriedades **body** e **uniqueBody** no formato de texto:
 
-```
+```http
 Prefer: outlook.body-content-type="text"
 ```
+
 Você pode especificar o cabeçalho a seguir ou, apenas ignorar o cabeçalho, para obter o corpo da mensagem no formato HTML:
-```
+
+```http
 Prefer: outlook.body-content-type="html"
 ```
 
@@ -43,7 +45,8 @@ Quando você especifica um cabeçalho, uma resposta bem-sucedida inclui o cabeç
 Se o corpo for HTML, por padrão, o Outlook remove qualquer HTML potencialmente não seguro (por exemplo, JavaScript) inserido na propriedade **body** antes de retornar o conteúdo do corpo em uma resposta REST.
 
 Para obter o conteúdo HTML completo original, inclua o seguinte cabeçalho da solicitação HTTP:
-```
+
+```http
 Prefer: outlook.allow-unsafe-html
 ```
 
@@ -56,7 +59,8 @@ Quando uma mensagem está sendo redigida, na maioria dos casos, o Outlook config
 
 ## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar as Dicas de Email para verificar o status do destinatário e economizar tempo (prévia)
 
-Use as [Dicas de Email](../api-reference/beta/resources/mailtips.md) para tomar decisões inteligentes antes de enviar um email. As Dicas de Email podem lhe dar informações, como saber que a caixa de correio do destinatário é restrita para remetentes específicos, ou que aprovação é necessária para enviar emails ao destinatário.
+Use as [Dicas de Email](../api-reference/beta/resources/mailtips.md) para tomar decisões inteligentes antes de enviar um email.
+As Dicas de Email podem lhe dar informações, como saber que a caixa de correio do destinatário é restrita para remetentes específicos, ou que aprovação é necessária para enviar emails ao destinatário.
 
 ## <a name="integrating-with--social-gesture-preview"></a>Integração com o gesto social "@" (prévia)
 
@@ -65,8 +69,7 @@ Você pode:
 
 - Criar menções com @ quando [criar uma mensagem](../api-reference/beta/api/user_post_messages.md#request-2)
 - [Obter todas as mensagens na caixa de correio do usuário que contenham uma menção com @ do usuário](../api-reference/beta/api/user_list_messages.md#request-2)
-- [Obter todas as menções com @ que sejam mensagens](../api-reference/beta/api/message_get.md#request-2) 
-
+- [Obter todas as menções com @ que sejam mensagens](../api-reference/beta/api/message_get.md#request-2)
 
 ## <a name="other-shared-capabilities"></a>Outras funcionalidades compartilhadas
 

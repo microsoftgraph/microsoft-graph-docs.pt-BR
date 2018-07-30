@@ -1,15 +1,16 @@
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Usar marcas DIV da API do OneNote para extrair dados de capturas 
 
-*__Aplica-se a:__ Bloco de anotações dos consumidores no OneDrive | Bloco de anotações empresariais no Office 365*
+**Aplica-se a** Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
 
 Use a API do OneNote para extrair dados do cartão de visitas de uma imagem ou dados de receita e produto de uma URL.
 
 <a name="attributes"></a>
+
 ## <a name="extraction-attributes"></a>Atributos de extração
 
 Para extrair e transformar dados, basta incluir um div que especifique o conteúdo de origem, o método de extração e o comportamento de fallback na sua solicitação [create-page](onenote-create-page.md) ou [update-page](onenote_update_page.md). A API processa dados extraídos da página em um formato que é fácil de ler. 
 
-```
+```html
 <div
   data-render-src="image-or-url"
   data-render-method="extraction-method"
@@ -17,7 +18,7 @@ Para extrair e transformar dados, basta incluir um div que especifique o conteú
 </div>
 ```
 
-**data-render-src**
+### <a name="data-render-src"></a>data-render-src
 
 A fonte de conteúdo. Pode ser uma imagem de um cartão de visitas ou uma URL absoluta de muitos sites populares de receitas ou produtos. Obrigatório.
 
@@ -26,7 +27,7 @@ Para obter melhores resultados ao especificar uma URL, use a URL canônica defin
 `<link rel="canonical" href="www.domainname.com/page/123/size12/type987" />` 
 
 
-**data-render-method**
+### <a name="data-render-method"></a>data-render-method
 
 O método de extração a ser executado. Obrigatório.
 
@@ -39,20 +40,20 @@ O método de extração a ser executado. Obrigatório.
 
 Para obter melhores resultados, especifique o tipo de conteúdo (`extract.businesscard`, `extract.recipe` ou `extract.product`) se você conhecê-lo. Se o tipo for desconhecido, use o método `extract` e a API do OneNote tentará detectar o tipo automaticamente.
 
-**data-render-fallback**
+### <a name="data-render-fallback"></a>data-render-fallback
 
 O comportamento de fallback se a extração falhar. Usa o padrão **renderizar** caso seja omitido. 
 
 | Valor | Descrição |
 |:------|:------|
 | render | Renderiza a imagem de origem ou um instantâneo da página do produto ou receita. |
-| nenhum | Não faz nada.<br />Essa opção é útil se você quiser sempre incluir um instantâneo do cartão de visitas ou da página da Web na página, além de outro conteúdo extraído. Certifique-se enviar um elemento `img` separado na solicitação, conforme mostrado nos exemplos. |
+| nenhum | Não faz nada.<br /><br />Essa opção é útil se você quiser sempre incluir um instantâneo do cartão de visitas ou da página da Web na página, além de outro conteúdo extraído. Certifique-se enviar um elemento `img` separado na solicitação, conforme mostrado nos exemplos. |
 
 <a name="biz-card"></a>
+
 ## <a name="business-card-extractions"></a>Extrações de cartões de visita
 
 A API do OneNote tenta localizar e renderizar as seguintes informações de contato com base em uma imagem do cartão de visitas de uma pessoa ou empresa.
-
 
 - Nome
 - Título
@@ -61,14 +62,16 @@ A API do OneNote tenta localizar e renderizar as seguintes informações de cont
 - Endereços para correspondência e físicos
 - Emails
 - Sites
-   
-  ![Uma extração de cartão de visita de exemplo.](images/biz-card-extraction.png)
+
+
+
+<img alt="An example business card extraction" src="images/biz-card-extraction.png" width="200">
 
 Um vCard (arquivo .VCF) com as informações de contato extraídas também é incorporado na página. O vCard é uma maneira conveniente de obter as informações de contato ao recuperar o conteúdo HTML da página.
 
 ### <a name="common-scenarios-for-business-card-extractions"></a>Cenários comuns para extrações de cartões de visita
 
-**Extrair informações do cartão de visitas e também renderizar a imagem do cartão de visitas**
+#### <a name="extract-business-card-information-and-also-render-the-business-card-image"></a>Extrair informações do cartão de visitas e também renderizar a imagem do cartão de visitas
 
 Especifique o método `extract.businesscard` e o fallback `none`. Envie também um elemento `img` com o atributo `src` que também faz referência à imagem. Se a API não conseguir extrair conteúdo, ela renderizará apenas a imagem do cartão de visita.
 
@@ -82,7 +85,7 @@ Especifique o método `extract.businesscard` e o fallback `none`. Envie também 
 ```
 
 
-**Extrair informações do cartão de visitas e renderizar a imagem do cartão de visitas apenas se a extração falhar**
+#### <a name="extract-business-card-information-and-render-the-business-card-image-only-if-the-extraction-fails"></a>Extrair informações do cartão de visitas e renderizar a imagem do cartão de visitas apenas se a extração falhar
 
 Especifique o método `extract.businesscard` e use o fallback `render` padrão. Se a API não conseguir extrair conteúdo, ela renderizará a imagem do cartão de visita.
 
@@ -97,6 +100,7 @@ Para extrações de cartão de visita, a imagem é enviada como uma parte nomead
 
 
 <a name="recipe"></a>
+
 ## <a name="recipe-extractions"></a>Extrações receitas
 
 A API do OneNote tenta localizar e renderizar as seguintes informações com base na URL de uma receita.
@@ -108,13 +112,14 @@ A API do OneNote tenta localizar e renderizar as seguintes informações com bas
 - Preparação, instruções sobre como cozinhar e tempos totais
 - Porções
 
-   ![Um exemplo de extração de receita](images/recipe-extraction.png)
+
+<img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
 A API é otimizada para receitas de muitos sites populares, como *Allrecipes.com*, *FoodNetwork.com* e *SeriousEats.com*.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Cenários comuns para extrações de receitas
 
-**Extrair informações da receita e também renderizar um instantâneo da página da receita**
+#### <a name="extract-recipe-information-and-also-render-a-snapshot-of-the-recipe-webpage"></a>Extrair informações da receita e também renderizar um instantâneo da página da receita
 
 Especifique o método `extract.recipe` e o fallback `none`. Envie também um elemento `img` com o atributo `data-render-src` definido como URL da receita. Se a API não conseguir extrair conteúdo, ela renderizará apenas um instantâneo da página da Web da receita.
 
@@ -130,7 +135,7 @@ Este cenário potencialmente fornece mais informações porque a página da Web 
 ```
  
 
-**Extrair informações da receita e renderizar um instantâneo da página da receita apenas se a extração falhar**
+#### <a name="extract-recipe-information-and-render-a-snapshot-of-the-recipe-webpage-only-if-the-extraction-fails"></a>Extrair informações da receita e renderizar um instantâneo da página da receita apenas se a extração falhar
 
 Especifique o método `extract.recipe` e use o fallback de renderização padrão. Se a API não conseguir extrair conteúdo, ela renderizará um instantâneo da página da Web da receita.
 
@@ -142,7 +147,7 @@ Especifique o método `extract.recipe` e use o fallback de renderização padrã
 ```
 
 
-**Extrair informações da receita e também renderizar um link para a receita**
+#### <a name="extract-recipe-information-and-also-render-a-link-to-the-recipe"></a>Extrair informações da receita e também renderizar um link para a receita
 
 Especifique o método `extract.recipe` e o fallback `none`. Envie também um elemento `a` com o atributo `src` definido com a URL da receita (ou você pode enviar qualquer outra informação que queira adicionar à página). Se a API não conseguir extrair conteúdo, apenas o link da receita será renderizado.
 
@@ -157,6 +162,7 @@ Especifique o método `extract.recipe` e o fallback `none`. Envie também um ele
 
 
 <a name="product"></a>
+
 ## <a name="product-listing-extractions"></a>Extrações da lista de produtos
 
 - Título
@@ -164,15 +170,17 @@ Especifique o método `extract.recipe` e o fallback `none`. Envie também um ele
 - Imagem principal
 - Descrição
 - Recursos
-- Especificações</td>
+- Especificações
 
-  ![Um exemplo de extração de uma lista de produtos.](images/product-extraction.png)
+
+
+<img alt="An example product listing extraction" src="images/product-extraction.png" width="200">
 
 A API é otimizada para produtos de muitos sites populares, como *Amazon.com* e *HomeDepot.com*.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Cenários comuns para extrações de receitas
 
-**Extrair informações do produto e também renderizar um instantâneo da página da Web do produto**
+#### <a name="extract-product-information-and-also-render-a-snapshot-of-the-product-webpage"></a>Extrair informações do produto e também renderizar um instantâneo da página da Web do produto
 
 Especifique o método `extract.product` e o fallback `none`. Envie também um elemento `img` com o atributo `data-render-src` definido como URL do produto. Se a API não conseguir extrair conteúdo, ela renderizará apenas um instantâneo da página da Web do produto.
 
@@ -188,7 +196,7 @@ Este cenário potencialmente fornece mais informações porque a página da Web 
 ```
 
 
-**Extrair informações do produto e renderizar um instantâneo da página do produto apenas se a extração falhar**
+#### <a name="extract-product-information-and-render-a-snapshot-of-the-product-webpage-only-if-the-extraction-fails"></a>Extrair informações do produto e renderizar um instantâneo da página do produto apenas se a extração falhar
 
 Especifique o método `extract.product` e use o fallback de renderização padrão. Se a API não conseguir extrair conteúdo, ela renderizará um instantâneo da página da Web do produto.
 
@@ -200,7 +208,7 @@ Especifique o método `extract.product` e use o fallback de renderização padr�
 ```
  
 
-**Extrair informações do produto e também renderizar um link para o produto**
+#### <a name="extract-product-information-and-also-render-a-link-to-the-product"></a>Extrair informações do produto e também renderizar um link para o produto
 
 Especifique o método `extract.product` e o fallback `none`. Envie também um elemento `a` com o atributo `src` definido com a URL do produto (ou você pode enviar qualquer outra informação que queira adicionar à página). Se a API não conseguir extrair conteúdo, apenas o link da página será renderizado.
 
@@ -215,6 +223,7 @@ Especifique o método `extract.product` e o fallback `none`. Envie também um el
 
 
 <a name="unknown"></a> 
+
 ## <a name="unknown-content-type-extractions"></a>Extrações de tipos de conteúdo desconhecidos
 
 Se você não souber o tipo de conteúdo (cartão de visita, receita ou produto) que está enviando, poderá usar o método não qualificado `extract` e permitir que a API do OneNote detecte automaticamente o tipo. É provável que você queira fazer isso se seu aplicativo enviar diferentes tipos de captura.
@@ -223,7 +232,7 @@ Se você não souber o tipo de conteúdo (cartão de visita, receita ou produto)
  
 ### <a name="common-scenarios-for-unknown-extractions"></a>Cenários comuns para extrações desconhecidas
 
-**Enviar uma imagem ou uma URL e renderizar a imagem fornecida ou um instantâneo da página da Web se a extração falhar**
+#### <a name="send-an-image-or-a-url-and-render-the-supplied-image-or-a-snapshot-of-the-webpage-if-the-extraction-fails"></a>Enviar uma imagem ou uma URL e renderizar a imagem fornecida ou um instantâneo da página da Web se a extração falhar
 
 Especifique o método `extract` para que a API detecte automaticamente o tipo de conteúdo e use o fallback de renderização padrão. Se a API não conseguir extrair conteúdo, ela renderizará a imagem fornecida ou o instantâneo da página da Web.
 
@@ -236,6 +245,7 @@ Especifique o método `extract` para que a API detecte automaticamente o tipo de
 
 
 <a name="request-response-info"></a>
+
 ## <a name="response-information"></a>Informações de resposta
 
 | Dados de resposta | Descrição |  
@@ -245,17 +255,18 @@ Especifique o método `extract` para que a API detecte automaticamente o tipo de
 
 
 <a name="permissions"></a>
+
 ## <a name="permissions"></a>Permissões
 
 Para criar ou atualizar páginas do OneNote, solicite permissões apropriadas. Escolha o nível mais baixo de permissões que seu aplicativo precisa para realizar o trabalho.
 
-**Permissões para _páginas POST_**
+#### <a name="permissions-for-post-pages"></a>Permissões para páginas POST
 
 - Notes.Create
 - Notes.ReadWrite
 - Notes.ReadWrite.All  
 
-**Permissões para _páginas PATCH_**
+#### <a name="permissions-for-patch-pages"></a>Permissões para páginas PATCH
 
 - Notes.ReadWrite
 - Notes.ReadWrite.All
@@ -264,7 +275,8 @@ Para saber mais sobre escopos de permissão e como eles funcionam, confira [Refe
 
 
 <a name="see-also"></a>
-## <a name="additional-resources"></a>Recursos adicionais
+
+## <a name="see-also"></a>Confira também
 
 - [Criar páginas do OneNote](onenote-create-page.md)
 - [Atualizar o conteúdo da página do OneNote](onenote_update_page.md)
