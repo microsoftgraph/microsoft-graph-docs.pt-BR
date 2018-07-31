@@ -3,6 +3,7 @@
 Este artigo descreve os códigos de erro que são retornados pelas APIs do OneNote no Microsoft Graph sempre que uma solicitação enviada pela API falha.
 
 ## <a name="error-response-example"></a>Exemplo de resposta de erro
+
 Quando sua solicitação gera um erro, a API do OneNote para de executar a solicitação e retorna uma resposta de erro como um objeto JSON. Uma resposta de erro contém o código de erro associado, uma mensagem e um link para a seção apropriada deste artigo. O exemplo a seguir mostra como é uma resposta de erro.
 
 ```json
@@ -21,6 +22,7 @@ Quando sua solicitação gera um erro, a API do OneNote para de executar a solic
 Para saber mais sobre erros do Microsoft Graph, confira [Respostas de erros e tipos de recurso do Microsoft Graph](errors.md).
 
 ## <a name="codes-from-10001-to-19999"></a>Códigos de 10001 às 19999
+
 O serviço está tendo problemas ou está enviando informações ao aplicativo.
 
 ### <a name="10001"></a>10001
@@ -36,7 +38,7 @@ A conta do usuário atual excedeu o número máximo de solicitações ativas. Se
 O serviço não pode criar uma página na seção solicitada porque essa seção é protegida por uma senha.
 
 ### <a name="10005"></a>10005
-A solicitação contém mais do que o número máximo de marcas de imagem nas quais o atributo **data-render-src** contém um PDF. Confira [Adicionar imagens e arquivos](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-images-files).
+A solicitação contém mais do que o número máximo de marcas de imagem nas quais o atributo **data-render-src** contém um PDF. Confira [Adicionar imagens e arquivos](onenote_images_files.md).
 
 ### <a name="10006"></a>10006
 A API do OneNote não pôde criar uma página na seção especificada porque a seção está corrompida.
@@ -48,7 +50,7 @@ O servidor está ocupado demais para lidar com a solicitação de entrada neste 
 Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 5.000 itens do OneNote (bloco de anotações, seções, grupos de seções) e não podem ser consultadas usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 5000 itens do OneNote. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
 
 ### <a name="10012"></a>10012
-Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, consulte https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7.
+Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira [Configurar uma biblioteca para exigir check-out de arquivos](https://support.office.com/pt-BR/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
@@ -71,6 +73,7 @@ Solicitação Incorreta.
 A solicitação falhou porque ocorreu um erro indeterminado.
 
 ## <a name="codes-from-20001-to-29999"></a>Códigos de 20001 às 29999
+
 O código do aplicativo fez algo errado.
 
 ### <a name="20001"></a>20001
@@ -109,6 +112,7 @@ A solicitação contém uma carga de partes múltiplas malformadas. Os problemas
 
 ### <a name="20012"></a>20012
 A solicitação não fornece um tipo de conteúdo para a parte especificada. 
+
 ### <a name="20013"></a>20013
 A solicitação não fornece cabeçalhos Content-Type e Content-Disposition para a parte especificada. 
 
@@ -135,6 +139,7 @@ Json malformado encontrado no corpo da solicitação.
 
 ### <a name="20100"></a>20100
 Algo está errado com a sintaxe da sua solicitação. 
+
 ### <a name="20101"></a>20101
 A propriedade solicitada não existe.
 
@@ -142,7 +147,7 @@ A propriedade solicitada não existe.
 Você solicitou um recurso que não existe.
 
 ### <a name="20103"></a>20103
-A consulta **expand** não tem suporte para essa solicitação. Confira [Opções de cadeia de caracteres de consulta OData com suporte](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-get-content#query-options).
+A consulta **expand** não tem suporte para essa solicitação. Confira [Opções de cadeia de caracteres de consulta OData com suporte](onenote-get-content.md#supported-odata-query-string-options).
 
 ### <a name="20104"></a>20104
 A opção de consulta **pagelevel** tem suporte somente na consulta para a coleção de páginas em uma seção ou para uma página específica. Por exemplo:  
@@ -186,19 +191,19 @@ O HTML na parte "Apresentação" contém um atributo **data-attachment** que nã
 Sua solicitação especifica um destino PATCH que não pode ser localizado.
 
 ### <a name="20121"></a>20121
-Sua solicitação contém um argumento PATCH inválido. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação contém um argumento PATCH inválido. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20122"></a>20122
-Sua solicitação especifica uma ação PATCH sem suporte. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação especifica uma ação PATCH sem suporte. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20123"></a>20123
 A solicitação PATCH não pode alterar a página especificada.
 
 ### <a name="20124"></a>20124
-Sua solicitação PATCH de partes múltiplas não inclui uma parte "comandos" com a estrutura JSON da ação PATCH. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação PATCH de partes múltiplas não inclui uma parte "comandos" com a estrutura JSON da ação PATCH. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20125"></a>20125
-Sua solicitação PATCH não contém ações. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação PATCH não contém ações. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20126"></a>20126
 O corpo da mensagem contém JSON incorretamente formatado ou arquivos que não têm suporte para essa operação.
@@ -222,38 +227,41 @@ Sua solicitação contém um valor inválido para Content-Type. Use o valor indi
 Sua solicitação apresentas conteúdo inválido. As causas mais comuns para isso são a ausência do cabeçalho da solicitação Content-Type e/ou nenhum conteúdo no corpo da solicitação. 
 
 ### <a name="20133"></a>20133
-Sua solicitação especifica um destino PATCH sem suporte. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação especifica um destino PATCH sem suporte. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20134"></a>20134
-Sua solicitação especifica um elemento inválido como o destino da ação PATCH. Se o destino usar o identificador **data-id**, verifique se ele tem o símbolo # como prefixo. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação especifica um elemento inválido como o destino da ação PATCH. Se o destino usar o identificador **data-id**, verifique se ele tem o símbolo # como prefixo. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20135"></a>20135
-Sua solicitação especifica um tipo de entidade que não tem suporte para a operação PATCH. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+Sua solicitação especifica um tipo de entidade que não tem suporte para a operação PATCH. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20136"></a>20136
-Sua solicitação contém um atributo **data-render-src** ou **data-render-method** inválido ou que está ausente. Confira [Extrair dados de capturas](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-extract-data).
+Sua solicitação contém um atributo **data-render-src** ou **data-render-method** inválido ou que está ausente. Confira [Extrair dados de capturas](onenote-extract-data.md).
 
 ### <a name="20137"></a>20137
 A página de destino não dá suporte a solicitações PATCH.
 
 ### <a name="20138"></a>20138
-O tipo de elemento de destino em sua solicitação PATCH não dá suporte à ação **acrescentar**. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+O tipo de elemento de destino em sua solicitação PATCH não dá suporte à ação **acrescentar**. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20139"></a>20139
-Sua solicitação contém um valor de atributo **data-tag** inválido. Confira [Usar marcas de anotação](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-note-tags).
+Sua solicitação contém um valor de atributo **data-tag** inválido. Confira [Usar marcas de anotação](onenote-note-tags.md).
 
 ### <a name="20140"></a>20140
-Sua solicitação contém um valor de status **data-tag** inválido. A caixa de seleção de marcas de anotação pode ter um status **concluído**. Exemplo:
+Sua solicitação contém um valor de status **data-tag** inválido. A caixa de seleção de marcas de anotação pode ter um status **concluído**. 
+
+Exemplo:
+
 ```html
     <p data-tag="to-do:completed">To-do note tag in completed state (checked box in the UI)</p>
 ```
-Confira [Usar marcas de anotação](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-note-tags).
+Confira [Usar marcas de anotação](onenote-note-tags.md).
 
 ### <a name="20141"></a>20141
-O destino em sua solicitação PATCH não dá suporte à ação especificada. Confira [Atualizar conteúdo da página](../api-reference/v1.0/api/page_update.md).
+O destino em sua solicitação PATCH não dá suporte à ação especificada. Confira [Atualizar conteúdo da página](onenote_update_page.md).
 
 ### <a name="20142"></a>20142
-Sua solicitação contém uma expressão **expand** para um pai de entidades filho ou um filho de entidades pai, que não tem suporte. Confira [Opções de cadeia de caracteres de consulta OData com suporte](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-get-content#query-options).
+Sua solicitação contém uma expressão **expand** para um pai de entidades filho ou um filho de entidades pai, que não tem suporte. Confira [Opções de cadeia de caracteres de consulta OData com suporte](onenote-get-content.md#supported-odata-query-string-options).
 
 ### <a name="20143"></a>20143
 A consulta OData é inválida.
@@ -315,7 +323,7 @@ O aplicativo emitiu muitas solicitações em nome de um usuário em um curto per
 Para saber mais, confira [Limitação da API do OneNote e como evitá-la](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### <a name="20168"></a>20168
-Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](https://msdn.microsoft.com/pt-BR/office/office365/howto/onenote-images-files#videos) para a lista atual.
+Não há suporte para a fonte do vídeo especificada na solicitação. Confira [Sites de vídeo com suporte](onenote_images_files.md#adding-videos) para a lista atual.
 
 
 ## <a name="codes-from-30001-to-39999"></a>Códigos de 30001 às 39999

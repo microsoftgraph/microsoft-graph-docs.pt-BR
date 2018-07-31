@@ -12,17 +12,17 @@ O padrão típico de chamada corresponde ao que segue:
      a.  Se uma URL `nextLink` é retornada, poderá haver páginas de dados adicionais a serem recuperadas na sessão. O aplicativo continua fazendo solicitações usando a URL `nextLink` para recuperar todas as páginas de dados até que uma URL `deltaLink` seja retornada na resposta.
 
      b.  Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Em solicitações futuras, o aplicativo usa a URL `deltaLink` para inteirar-se das alterações feitas no recurso.
-     
+
 3.  Quando o aplicativo precisa saber das alterações no recurso, ele faz uma nova solicitação usando a URL `deltaLink` recebida na etapa 2. Esta solicitação *pode* ser feita imediatamente após concluir a etapa 2 ou quando o aplicativo verifica as alterações.
 4.  O Microsoft Graph retorna uma resposta descrevendo alterações no recurso desde a solicitação anterior e em uma URL `nextLink` ou uma URL `deltaLink`.
 
 ### <a name="state-tokens"></a>Tokens de estado
 
-Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `nextLink` ou `deltaLink`. A URL `nextLink` inclui um _skipToken_ e uma URL `deltaLink` inclui um _deltaToken_. 
+Um GET de consulta delta sempre inclui uma URL especificada em um cabeçalho de resposta `nextLink` ou `deltaLink`. A URL `nextLink` inclui um _skipToken_ e uma URL `deltaLink` inclui um _deltaToken_.
 
 Esses tokens são opacos para o cliente. Os seguintes detalhes são o que você precisa saber sobre eles:
 
-- Cada token reflete o estado e representa um instantâneo do recurso dessa fase do controle de alterações. 
+- Cada token reflete o estado e representa um instantâneo do recurso dessa fase do controle de alterações.
 - Os tokens de estado também codificam e incluem outros parâmetros da consulta (como `$select`) especificados na solicitação de consulta delta inicial. Portanto, ele não é necessário repeti-los em solicitações de consulta delta subsequentes.
 - Ao realizar a consulta delta, você pode copiar e aplicar a URL `nextLink` ou `deltaLink` à próxima chamada de função **delta** sem precisar inspecionar o conteúdo da URL, incluindo seu token de estado.
 
@@ -34,9 +34,9 @@ Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solici
 Para usuários e grupos, existem restrições sobre como usar alguns parâmetros de consulta:
 
 -   Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
--   Não há suporte para `$expand`.
+-   `$expand` tem suporte somente para as propriedades de navegação `manager` e `members` para usuários e grupos, respectivamente.
 
-Nas APIs de usuários e grupos, os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações para os grupos que correspondem às ids especificadas no filtro de consulta. 
+Nas APIs de usuários e grupos, os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações para os grupos que correspondem às ids especificadas no filtro de consulta.
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representação de recurso na resposta da consulta delta
 
@@ -63,10 +63,10 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](../api-reference/v1.0/api/event_delta.md) do recurso [evento](../api-reference/v1.0/resources/event.md) |
 | Grupos | Função [delta](../api-reference/v1.0/api/group_delta.md) do recurso [group](../api-reference/v1.0/resources/group.md) |
 | Pastas de email | função [delta](../api-reference/v1.0/api/mailfolder_delta.md) do recurso [mailFolder](../api-reference/v1.0/resources/mailFolder.md)  |
-| Mensagens de uma pasta | função [delta](../api-reference/v1.0/api/message_delta.md) do recurso [mensagem](../api-reference/v1.0/resources/message.md)  | 
+| Mensagens de uma pasta | função [delta](../api-reference/v1.0/api/message_delta.md) do recurso [mensagem](../api-reference/v1.0/resources/message.md)  |
 | Pastas de contatos pessoais | função [delta](../api-reference/v1.0/api/contactfolder_delta.md) do recurso [contactFolder](../api-reference/v1.0/resources/contactfolder.md) |
 | Contatos pessoais em uma pasta | função [delta](../api-reference/v1.0/api/contact_delta.md) do recurso [contato](../api-reference/v1.0/resources/contact.md) |
-| Usuários | função [delta](../api-reference/v1.0/api/user_delta.md) do recurso [usuário](../api-reference/v1.0/resources/user.md) | 
+| Usuários | função [delta](../api-reference/v1.0/api/user_delta.md) do recurso [usuário](../api-reference/v1.0/resources/user.md) |
 | Itens de unidade\* | Função [delta](../api-reference/v1.0/api/driveitem_delta.md) do recurso [driveItem](../api-reference/v1.0/resources/driveitem.md) |
 | Itens do Planner\*\* | Função [delta](../api-reference/beta/api/planneruser_list_delta.md) de todos os segmentos do recurso [plannerUser](../api-reference/beta/resources/planneruser.md) (visualização) |
 
@@ -78,7 +78,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 
 As mesmas [permissões](./permissions_reference.md) necessárias para ler um recurso específico também são necessárias para executar a consulta delta nesse recurso.
 
-## <a name="delta-query-request-examples"></a>Exemplos de solicitação de consulta delta 
+## <a name="delta-query-request-examples"></a>Exemplos de solicitação de consulta delta
 
 - [Obter as alterações incrementais para os eventos em um modo de exibição de calendário](../concepts/delta_query_events.md)
 - [Obter as alterações incrementais para as mensagens em uma pasta](./delta_query_messages.md)

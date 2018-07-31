@@ -162,7 +162,7 @@
     </Item>
     <Item text="Email" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="API de Email">
       <Item text="Listar mensagens" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
+      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Substituições de Lista" url="/en-us/api-reference/v1.0/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Listar as substituições para um remetente identificado por um endereço SMTP." />
       <Item text="Criar Substituição" url="/en-us/api-reference/v1.0/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Crie uma substituição para um remetente identificado por um endereço SMTP." />
       <Item text="Listar pastas de email" url="/en-us/api-reference/v1.0/api/user_list_mailfolders" SEOKeyword="Listar mailFolders, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos mailfolder." />
@@ -720,7 +720,7 @@
           <Item text="Listar" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_list" />
           <Item text="Obter" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_appledevicefeaturesconfigurationbase_get" />
         </Item>
-        <Item text="Tipo de bloqueio de compartilhamento de área de transferência do Application Guard" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="Tipo de compartilhamento de área de transferência do Application Guard Block" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
         <Item text="Tipo de transferência de arquivo do Application Guard Block" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
         <Item text="Modo de atualização automática" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_automaticupdatemode" />
         <Item text="Método de criptografia do BitLocker" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_bitlockerencryptionmethod" />
@@ -1264,7 +1264,7 @@
         <Item text="Conta Azure AD do dispositivo Windows" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount" />
       </Item>
       <Item text="Proteção do aplicativo móvel" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
-        <Item text="Proteção de aplicativo gerenciado Android" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
+        <Item text="Proteção de aplicativo gerenciado pelo Android" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="Listar" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="Obter" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get" />
           <Item text="Criar" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_create" />
@@ -1752,7 +1752,7 @@
   <Item text="Email" ProdTag="Outlook" url="/en-us/api-reference/v1.0/resources/mail_api_overview" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs de email do Outlook">
     <Item text="Mensagem" url="/en-us/api-reference/v1.0/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="APIs de Email">
       <Item text="Listar mensagens" url="/en-us/api-reference/v1.0/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
+      <Item text="Criar mensagem" url="/en-us/api-reference/v1.0/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
       <Item text="Obter mensagem" url="/en-us/api-reference/v1.0/api/message_get" SEOKeyword="Obter mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto message." />
       <Item text="Atualizar mensagem" url="/en-us/api-reference/v1.0/api/message_update" SEOKeyword="Atualizar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Atualizar as propriedades do objeto message." />
       <Item text="Excluir mensagem" url="/en-us/api-reference/v1.0/api/message_delete" SEOKeyword="Excluir mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Exclua a mensagem." />
@@ -2208,7 +2208,7 @@
         <Item text="Listar dispositivos de que se é proprietário" url="/en-us/api-reference/beta/api/user_list_owneddevices" SEOKeyword="Listar ownedDevices, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos directoryobject." />
             <Item text="Listar dispositivos registrados" url="/en-us/api-reference/beta/api/user_list_registereddevices" SEOKeyword="Listar registeredDevices, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos directoryobject." />
             <Item text="Listar objetos de propriedade" url="/en-us/api-reference/beta/api/user_list_ownedobjects" SEOKeyword="Listar ownedObjects, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos directoryobject." />
-            <Item text="Listar associações de administrador no escopo" url="/en-us/api-reference/beta/api/user_list_scopedadministratorof" SEOKeyword="Listar associações de administrador no escopo, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos de associação de administrador no escopo." />
+            <Item text="Listar associações de administrador no escopo" url="/en-us/api-reference/beta/api/user_list_scopedmemberof" SEOKeyword="Listar associações de administrador no escopo, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos de associação de administrador no escopo." />
             <Item text="Listar objetos criados" url="/en-us/api-reference/beta/api/user_list_createdobjects" SEOKeyword="Listar createdObjects, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos directoryobject." />
             <Item text="Atribuir licença" url="/en-us/api-reference/beta/api/user_assignlicense" SEOKeyword="usuário: assignLicense, API do Microsoft Graph, API de usuário" SEODescription="" />
             <Item text="Obter objetos de membros" url="/en-us/api-reference/beta/api/user_getmemberobjects" SEOKeyword="usuário: getMemberObjects, API do Microsoft Graph, API de usuário" SEODescription="" />
@@ -2231,7 +2231,7 @@
       </Item>
       <Item text="Email" url="/en-us/api-reference/beta/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar mensagens" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
+        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
         <Item text="Substituições de Lista" url="/en-us/api-reference/beta/api/inferenceclassification_list_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Listar as substituições para um remetente identificado por um endereço SMTP." />
         <Item text="Criar Substituição" url="/en-us/api-reference/beta/api/inferenceclassification_post_overrides" SEOKeyword="Microsoft Graph, Caixa de Entrada Prioritária" SEODescription="Crie uma substituição para um remetente identificado por um endereço SMTP." />
         <Item text="Listar pastas de email" url="/en-us/api-reference/beta/api/user_list_mailfolders" SEOKeyword="Listar mailFolders, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos mailfolder." />
@@ -3464,7 +3464,7 @@
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_deviceconfig_applevpnconfiguration_get" />
         </Item>
         <Item text="Tipo de conexão de VPN da Apple" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype" />
-        <Item text="Tipo de bloqueio de compartilhamento de área de transferência do Application Guard" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
+        <Item text="Tipo de compartilhamento de área de transferência do Application Guard Block" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype" />
         <Item text="Tipo de transferência de arquivo do Application Guard Block" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockfiletransfertype" />
         <Item text="Modo de atualização automática" url="/en-us/api-reference/beta/resources/intune_deviceconfig_automaticupdatemode" />
         <Item text="Método de criptografia do BitLocker" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerencryptionmethod" />
@@ -4597,7 +4597,7 @@
         </Item>
       </Item>
       <Item text="Proteção do aplicativo móvel" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
-        <Item text="Proteção de aplicativo gerenciado Android" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
+        <Item text="Proteção de aplicativo gerenciado pelo Android" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
           <Item text="Listar" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list" />
           <Item text="Obter" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_get" />
           <Item text="Criar" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_create" />
@@ -5156,10 +5156,10 @@
         <Item text="Listar membros" url="/en-us/api-reference/beta/api/administrativeunit_list_members" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para listar membros de um objeto administrativeUnit." />
         <Item text="Obter um membro" url="/en-us/api-reference/beta/api/administrativeunit_get_members" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para obter um membro de um objeto administrativeUnit." />
         <Item text="Remover um membro" url="/en-us/api-reference/beta/api/administrativeunit_delete_members" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para excluir um membro de um objeto administrativeUnit." />
-        <Item text="Adicionar um administrador de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_post_scopedadministrators" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para adicionar um administrador de função no escopo a um objeto administrativeUnit." />
-        <Item text="Listar administradores de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_list_scopedadministrators" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para listar administradores de função no escopo de um objeto administrativeUnit." />
-        <Item text="Obter um administrador de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_get_scopedadministrators" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para obter um administrador de função no escopo de um objeto administrativeUnit." />
-        <Item text="Remover um administrador de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedadministrators" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para excluir um administrador de função no escopo de um objeto administrativeUnit." />
+        <Item text="Adicionar um administrador de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_post_scopedrolemembers" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para adicionar um administrador de função no escopo a um objeto administrativeUnit." />
+        <Item text="Listar administradores de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_list_scopedrolemembers" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para listar administradores de função no escopo de um objeto administrativeUnit." />
+        <Item text="Obter um administrador de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_get_scopedrolemembers" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para obter um administrador de função no escopo de um objeto administrativeUnit." />
+        <Item text="Remover um administrador de função no escopo" url="/en-us/api-reference/beta/api/administrativeunit_delete_scopedrolemembers" SEOKeyword="API de Unidade Administrativa, API do Microsoft Graph" SEODescription="API para excluir um administrador de função no escopo de um objeto administrativeUnit." />
       </Item>
       <Item text="Atribuição de função do aplicativo" url="/en-us/api-reference/beta/resources/approleassignment" SEOKeyword="API de approleassignment, API do Microsoft Graph, API de approleassignment" SEODescription="Usado para registrar quando um usuário ou grupo é atribuído a um aplicativo. Nesse caso, a atribuição de função resultará em um bloco do aplicativo exibido no painel de acesso de aplicativo do usuário. Essa entidade também pode ser usada para conceder a outro aplicativo (modelado como uma entidade de serviço) acesso a um aplicativo de recurso em uma função específica. Você pode criar, ler, atualizar e excluir as atribuições de função. Herda do DirectoryObject.">
           <Item text="Obter appRoleAssignment" url="/en-us/api-reference/beta/api/approleassignment_get" SEOKeyword="Obter appRoleAssignment, API do Microsoft Graph, API do approleassignment" SEODescription="Recuperar as propriedades e os relacionamentos do objeto approleassignment." />
@@ -5389,7 +5389,7 @@
     <Item text="Email" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/mail_api_overview" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
       <Item text="Mensagem" url="/en-us/api-reference/beta/resources/message" SEOKeyword="email do usuário, API do Microsoft Graph, API de usuário" SEODescription="">
         <Item text="Listar mensagens" url="/en-us/api-reference/beta/api/user_list_messages" SEOKeyword="Listar mensagens, API do Microsoft Graph, API de Usuários" SEODescription="Recuperar uma lista de objetos message." />
-        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar Mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
+        <Item text="Criar mensagem" url="/en-us/api-reference/beta/api/user_post_messages" SEOKeyword="Criar mensagem, API do Microsoft Graph, API de Usuários" SEODescription="Usar esta API para criar uma nova mensagem." />
         <Item text="Obter mensagem" url="/en-us/api-reference/beta/api/message_get" SEOKeyword="Obter mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Recuperar as propriedades e os relacionamentos do objeto message." />
         <Item text="Atualizar mensagem" url="/en-us/api-reference/beta/api/message_update" SEOKeyword="Atualizar mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Atualizar as propriedades do objeto message." />
         <Item text="Excluir mensagem" url="/en-us/api-reference/beta/api/message_delete" SEOKeyword="Excluir mensagem, API do Microsoft Graph, API de Email do Outlook" SEODescription="Exclua a mensagem." />
@@ -5811,7 +5811,11 @@
       <Item text="Canal" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="API do canal, API do Microsoft Graph, API do canal" SEODescription="">
         <Item text="Listar canais" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="Listar canais, API do Microsoft Graph, API de Grupos" SEODescription="Recuperar uma lista de objetos channel." />
         <Item text="Criar canal" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="Criar Conversa, API do Microsoft Graph, API de Grupos" SEODescription="Use essa API para criar um novo canal." />
-        <Item text="Obter canal da equipe" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="Obter o canal da equipe, API do Microsoft Graph, API do canal do Microsoft Teams" SEODescription="Recuperar as propriedades e os relacionamentos do objeto channel." />
+        <Item text="Obter um canal" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="Obter o canal da equipe, API do Microsoft Graph, API do canal do Microsoft Teams" SEODescription="Recuperar as propriedades e os relacionamentos do objeto channel." />
+		<Item text="Listar mensagens do canal" url="/en-us/api-reference/beta/api/channel_list_messages" />
+		<Item text="Obter mensagens do canal" url="/en-us/api-reference/beta/api/channel_get_message" />
+		<Item text="Listar respostas da mensagem" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
+		<Item text="Obter resposta da mensagem" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
       </Item>
       <Item text="Thread de chat" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="API de chatthread, API do Microsoft Graph, API de chatthread" SEODescription="">
         <Item text="Criar thread de chat" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Criar thread de chat, API do Microsoft Graph, API do Microsoft Teams" SEODescription="Use esta API para criar um novo thread de chat." />

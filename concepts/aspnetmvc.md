@@ -60,7 +60,7 @@ O URI de redirecionamento é a URL do projeto que você registrou. Os [escopos d
 Nesta etapa, você se concentrará nas classes **SDKHelper**, **GraphService** e **HomeController**. 
 
  - O **SDKHelper** inicializa uma instância de **GraphServiceClient** da biblioteca antes de cada chamada ao Microsoft Graph. O token de acesso é adicionado à solicitação nesse momento. 
- - **GraphService** cria e envia solicitações ao Microsoft Graph usando a biblioteca e processa as respostas.
+ - O **GraphService** cria e envia solicitações ao Microsoft Graph usando a biblioteca e processa as respostas.
  - **HomeController** contém ações que iniciam as chamadas à biblioteca em resposta a eventos da interface do usuário.
 
 O projeto inicial já declara uma dependência para o pacote NuGet da Biblioteca de Cliente .NET do Microsoft Graph:  *Microsoft.Graph*.

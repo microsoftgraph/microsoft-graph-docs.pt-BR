@@ -29,6 +29,10 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Exclusão|beta|Removido GET /groups/{id}/team, em vez disso use GET /teams/{id}. |
 |Exclusão|beta|Removido PATCH /groups/{id}/team, em vez disso use PATCH /teams/{id}. |
 
+### <a name="webhooks"></a>Webhooks
+| Tipo de alteração | Versão | Descrição                              |
+|:------------|:--------|:-----------------------------------------|
+| Alteração significativa | Beta e v1.0 | [Webhooks](../api-reference/v1.0/resources/webhooks.md) [reduzidos ao tempo de expiração máximo da assinatura](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) para itens raiz da unidade, ou seja, três dias. | 
 
 ## <a name="june-2018"></a>Junho de 2018
 

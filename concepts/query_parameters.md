@@ -4,7 +4,7 @@ O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar p
 
 >**Observação:** Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 
-| Name                     | Descrição | Exemplo
+| Nome                     | Descrição | Exemplo
 |:-------------------------|:------------|:---------|
 | [$count](#count-parameter)         | Recupera a contagem total de recursos correspondentes. | [`/me/messages?$top=2&$count=true`][count-example]
 | [$expand](#expand-parameter)       | Recupera os recursos relacionados.|[`/groups?$expand=members`][expand-example]
@@ -167,10 +167,10 @@ Quando você especifica $filter, servidor deduz uma ordem de classificação par
 O exemplo a seguir mostra uma consulta filtrada pelas propriedades **subject** e **priority** e classificadas pelas propriedades **subject**, **priority** e **receivedDateTime** em ordem decrescente.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome to exchange unified messaging' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome to exchange unified messaging%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Observação:** Com os recursos do Azure AD derivados de [directoryObject](../api-reference/v1.0/resources/directoryobject.md), como [user](../api-reference/v1.0/resources/user.md) e [group](../api-reference/v1.0/resources/group.md), você não pode combinar `$orderby` a expressões `$filter`. 
 
@@ -184,25 +184,26 @@ Use o parâmetro de consulta `$search` para restringir os resultados de uma soli
 
 Aplicativos do Office 365, como Outlook e SharePoint, oferecem suporte à sintaxe da Linguagem de Consulta de Palavra-Chave (KQL) para fazer pesquisas. Isso oferece a comodidade de um domínio de descoberta comum para os repositórios de dados. 
 
-Quando você pesquisa conjuntos de mensagens, os resultados são classificados pela data e hora em que a mensagem foi enviada. 
+Você pode especificar os seguintes nomes de propriedade reconhecidos pelo KQL em uma cadeia de consulta $search. Esses nomes de propriedade não são definidos em propriedades na entidade **message**, mas são internamente mapeados para propriedades na entidade **message**. Confira [propriedades pesquisáveis no Exchange](https://docs.microsoft.com/pt-BR/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange) para obter exemplos e saber mais.
 
-Você pode especificar as seguintes propriedades em uma **message** em um critério `$search`: 
-
-- **attachments**
-- **bccRecipients**
+- **attachment**
+- **bcc**
 - **body**
 - **category**
-- **ccRecipients**
+- **cc**
 - **content**
 - **from**
-- **hasAttachments**
+- **has**
+- **importance**
 - **participants**
-- **receivedDateTime**
+- **received**
 - **sender**
 - **subject**
-- **toRecipients**
+- **to**
 
 Se você realizar uma pesquisa em mensagens e especificar apenas um valor, a pesquisa será realizada nas propriedades de pesquisa padrão **from**, **subject** e **body**.
+
+Os resultados de uma pesquisa em um conjunto de mensagens são classificados pela data e hora em que a mensagem foi enviada.
 
 O exemplo a seguir retorna todas as mensagens na Caixa de Entrada do usuário que contenham "pizza" em qualquer uma das três propriedades de pesquisa padrão:
 

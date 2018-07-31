@@ -39,7 +39,9 @@ Metadados `beta` da API do Microsoft Graph.
     https://graph.microsoft.com/beta/$metadata
 ```
 
-Os metadados permitem que você veja e entenda o modelo de dados do Microsoft Graph, incluindo os tipos de entidade e conjuntos, os tipos complexos e as enums que compõem os pacotes de solicitação e resposta enviados para e do Microsoft Graph. Você pode usar os metadados para compreender as relações entre entidades no Microsoft Graph e estabelecer URLs que navegam entre entidades. Essa capacidade de interconexão baseada em navegação dá ao Microsoft Graph seu caráter exclusivo.
+Os metadados permitem que você veja e entenda o modelo de dados do Microsoft Graph, incluindo os tipos de entidade e conjuntos, os tipos complexos e as enums que compõem os pacotes de solicitação e resposta enviados para e do Microsoft Graph.
+Você pode usar os metadados para compreender as relações entre entidades no Microsoft Graph e estabelecer URLs que navegam entre entidades.
+Essa capacidade de interconexão baseada em navegação dá ao Microsoft Graph seu caráter exclusivo.
 
 Os nomes de recursos e parâmetros de consulta da URL do caminho e os parâmetros e valores de ação não diferenciam maiúsculas de minúsculas. No entanto, os valores que atribuir, as IDs de entidade e outros valores codificados na base 64 diferenciam maiúsculas de minúsculas.
 
@@ -292,4 +294,4 @@ A carga de solicitação contém a entrada para a ação `sendMail`, que também
 ## <a name="use-microsoft-graph-client-libraries"></a>Usar as bibliotecas de cliente do Microsoft Graph
 Como o poder e a facilidade dos SDKs? Enquanto você sempre pode chamar o Microsoft Graph usando a API REST, fornecemos também SDKs para muitas plataformas populares.
 
-Explore nossos [SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).
+Explore nossos [SDKs](https://graph.microsoft.io/pt-BR/code-samples-and-sdks).
