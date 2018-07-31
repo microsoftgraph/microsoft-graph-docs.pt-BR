@@ -77,7 +77,6 @@ O exemplo a seguir envia o HTML de entrada diretamente no corpo da mensagem.
 ```html
 POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Authorization: Bearer {token}
-Authorization: Bearer {token}
 Content-Type: application/xhtml+xml
 
 <!DOCTYPE html>
