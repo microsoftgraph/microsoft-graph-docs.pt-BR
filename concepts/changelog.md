@@ -6,7 +6,26 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="july-2018"></a>Julho de 2018
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Alterações da API Application e servicePrincipal
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta | Adicionada a propriedade isMultipleDataLocationsForServicesEnabled para o recurso [Organização](../api-reference/beta/resources/organization.md) que permite que os aplicativos verifiquem se esse locatário está habilitado para funcionalidades Multi-Geo. Adicionada a propriedade preferredDataLocation aos recursos [usuário](../api-reference/beta/resources/user.md) e [grupo](../api-reference/beta/resources/group.md) que permitem a configurar os locais de dados preferenciais para um usuário e um grupo.|
+
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Alteração|beta|Atualizado o recurso [Mensagem de chat](../api-reference/beta/resources/chatmessage.md))|
+|Adição|beta|Adicionado o tipo de recurso [Anexo de chat](../api-reference/beta/resources/chatattachment.md)|
+|Adição|beta|Adicionado o tipo de recurso [Menção a chat](../api-reference/beta/resources/chatattachment.md)|
+|Adição|beta|Adicionado o tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md)|
+|Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
+|Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
+|Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Adição|beta|Adicionada a [API Obter resposta a mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
+
+
+### <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -15,6 +34,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Adição|beta| Adicionado o suporte a permissões do aplicativo para [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Exclusão|beta|Removido DELETE /groups/{id}/team/channels/{id}, em vez disso use DELETE /teams/{id}/channels/{id}. |
 |Exclusão|beta|Removido GET /groups/{id}/team/channels/{id}, em vez disso use GET /teams/{id}/channels/{id}. |
 |Exclusão|beta|Removido PATCH /groups/{id}/team/channels/{id}, em vez disso use PATCH /teams/{id}/channels/{id}. |
@@ -28,6 +48,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Exclusão|beta|Removido POST /groups/{id}/team/channels, em vez disso use POST /teams/{id}/channels. |
 |Exclusão|beta|Removido GET /groups/{id}/team, em vez disso use GET /teams/{id}. |
 |Exclusão|beta|Removido PATCH /groups/{id}/team, em vez disso use PATCH /teams/{id}. |
+|Adição|beta|Adicionada API para [listar todas as equipes da organização](../api-reference/beta/api/team_list_all_teams.md). |
 
 ### <a name="webhooks"></a>Webhooks
 | Tipo de alteração | Versão | Descrição                              |
@@ -40,7 +61,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | Tudo | Novas permissões de aplicativos _Application.ReadWrite.All_ e _Application.ReadWrite.OwnedBy que admitem que um aplicativo cliente crie, leia, atualize e exclua aplicativos e entidades de serviço conforme descrito no [tópico de permissões](permissions_reference.md#application-resource-permissions). |
+| Adição | Tudo | Novas permissões de aplicativos _Application.ReadWrite.All_ e __Application.ReadWrite.OwnedBy_ que permitem ao aplicativo cliente criar, ler, atualizar e excluir aplicativos e entidades de serviço como descrito no [tópico de permissões](permissions_reference.md#application-resource-permissions). |
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 
@@ -85,7 +106,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|O membro **notConfigured** foi adicionado ao tipo de enumeração [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md)|
 |Adição|beta|O membro **unknown** foi adicionado ao tipo de enumeração [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md)|
 |Adição|beta|O membro **userRequestedInstall** foi adicionado ao tipo de enumeração [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md)|
-|Adição|beta|O membro **notConfigured** foi adicionado ao tipo de enumeração [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md)|
+|Adição|beta|O membro **notConfigured** foi adicionado ao tipo de enumeração [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md)
 
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -1590,7 +1611,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | As APIs das unidades administrativas serão atualizadas na visualização (beta). O primeiro conjunto de alterações será aplicado em 3 de maio de 2017. As alterações incluem a seguinte renomeação de propriedade:<br />Tipo complexo - **roleMemberInfo** para o tipo complexo **identity** da entidade scopedRoleMembership<br />Propriedade de navegação - **scopedAdministratorOf** para **scopedRoleMemberOf** da entidade do usuário<br />Propriedade de navegação - **scopedAdministrators** para **scopedRoleMembers** da entidade administrativeUnit<br />Propriedade de navegação - **scopedAdministrators** para **scopedMembers** da entidade directoryRole |
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Alterações da API Application e servicePrincipal
+### <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |

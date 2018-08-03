@@ -601,7 +601,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Notes.Read_ |    Ler blocos de anotações do OneNote do usuário | Permite ao aplicativo ler os títulos dos blocos de anotações e seções do OneNote e criar novas páginas, blocos de anotações e seções em nome do usuário conectado. | Não |
+| _Notes.Read_ |    Ler blocos de anotações do OneNote do usuário | Permite ao aplicativo ler os blocos de anotações do OneNote em nome do usuário conectado.| Não |
 | _Notes.Create_ |    Criar blocos de anotações do OneNote do usuário | Permite ao aplicativo ler os títulos dos blocos de anotações e seções do OneNote e criar novas páginas, blocos de anotações e seções em nome do usuário conectado.| Não |
 | _Notes.ReadWrite_ |    Ler e gravar blocos de anotações do OneNote do usuário | Permite ao aplicativo ler, compartilhar e modificar blocos de anotações do OneNote em nome do usuário conectado. | Não |
 | _Notes.Read.All_ |    Ler todos os blocos de anotações do OneNote que o usuário pode acessar | Permite que o aplicativo leia os blocos de anotações do OneNote aos quais o usuário conectado tem acesso dentro da organização. | Não |

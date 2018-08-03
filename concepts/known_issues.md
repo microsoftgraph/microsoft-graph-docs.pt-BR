@@ -197,6 +197,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento ([createReply](../api-reference/v1.0/api/message_createreply.md), [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md)) não se torna parte do corpo do rascunho de mensagem resultante.
 
+### <a name="get-messages-returns-chats-in-microsoft-teams"></a>As mensagens GET retornam chats no Microsoft Teams
+
+Em pontos de extremidade beta e v1, a resposta de `GET /users/id/messages` inclui chats do usuário no Microsoft Teams que ocorreu fora do escopo de uma equipe ou de um canal. Essas mensagens de chat tem "IM" como o assunto.
+
 
 ## <a name="drives-files-and-content-streaming"></a>Unidades, arquivos e streaming de conteúdo
 
@@ -225,7 +229,7 @@ O parâmetro **comment** para criar uma resposta ou rascunho de encaminhamento (
 * As extensões de esquema (herdadas) não são retornadas com instrução $select, mas são retornadas sem $select.
 * Os clientes não podem controlar alterações em extensões abertas ou extensões de esquema.
 
-## <a name="application-and-serviceprincipal-api-changes"></a>Alterações da API Application e servicePrincipal
+## <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
 
 Há alterações para as entidades [application](../api-reference/beta/resources/application.md) e [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) atualmente em desenvolvimento. A seguir, encontra-se um resumo das limitações atuais e os recursos da API em desenvolvimento:
 
