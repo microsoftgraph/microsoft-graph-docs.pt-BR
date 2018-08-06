@@ -6,7 +6,7 @@ O Outlook permite que os clientes organizem suas mensagens da maneira que quiser
 
 De forma programática, as pastas de mensagens são representadas pelo recurso [mailFolder](../api-reference/v1.0/resources/mailfolder.md) e a Caixa de Entrada é uma das pastas na raiz da estrutura de pastas.
 
-Cada **mailFolder** identificado por sua ID de pasta e tem uma propriedade **displayName** gravável. O Outlook cria algumas outras pastas para usuários por padrão. Você pode fazer referência a essas pastas padrão usando suas IDs de pasta ou seus nomes conhecidos. Confira uma lista de nomes de pasta comuns disponíveis em [Tipo de recurso mailFolder](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names).
+Cada **mailFolder** identificado por sua ID de pasta e tem uma propriedade **displayName** gravável. O Outlook cria algumas outras pastas para usuários por padrão. Você pode fazer referência a essas pastas padrão usando suas IDs de pasta ou seus nomes conhecidos. Confira uma lista de nomes de pasta comuns disponíveis em [Tipo de recurso mailFolder](../api-reference/v1.0/resources/mailfolder.md).
 
 No caso de uma pasta personalizada, não padrão, se você souber o caminho da pasta, poderá acessar a pasta primeiro usando o atalho `/users/{id}/mailfolders` para chegar ao nível raiz e obter todas as pastas de nível superior:
 

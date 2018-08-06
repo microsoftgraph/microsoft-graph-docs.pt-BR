@@ -12,7 +12,7 @@ Da mesma forma, quando responder a um email, você pode criar e enviar a respost
 
 Para distinguir entre um rascunho e uma mensagem enviada por programação, verifique a propriedade **isDraft**.
 
-Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). Por exemplo, você pode fazer o seguinte para [acessar as mensagens](../api-reference/v1.0/api/user_list_messages.md) na pasta Rascunhos:
+Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](../api-reference/v1.0/resources/mailfolder.md). Por exemplo, você pode fazer o seguinte para [acessar as mensagens](../api-reference/v1.0/api/user_list_messages.md) na pasta Rascunhos:
 
 ```http
 GET /me/mailfolders('Drafts')
