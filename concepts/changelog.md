@@ -50,10 +50,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Exclusão|beta|Removido PATCH /groups/{id}/team, em vez disso use PATCH /teams/{id}. |
 |Adição|beta|Adicionada API para [listar todas as equipes da organização](../api-reference/beta/api/team_list_all_teams.md). |
 
+### <a name="outlook-contacts"></a>Contatos do Outlook
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Adição |Beta | Adicionado o tipo complexo [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md). |
+|Alteração | Beta | Alterado o tipo da propriedade **emailAddresses** de [contact](../api-reference/beta/resources/contact.md) para ser um conjunto de instâncias **typedEmailAddress**.|
+
 ### <a name="webhooks"></a>Webhooks
 | Tipo de alteração | Versão | Descrição                              |
 |:------------|:--------|:-----------------------------------------|
 | Alteração significativa | Beta e v1.0 | [Webhooks](../api-reference/v1.0/resources/webhooks.md) [reduzidos ao tempo de expiração máximo da assinatura](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) para itens raiz da unidade, ou seja, três dias. | 
+
 
 ## <a name="june-2018"></a>Junho de 2018
 
@@ -666,7 +673,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|v1.0|A função [getManagedAppPolicies](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/intune_mam_user_getmanagedapppolicies.md) foi adicionada a [user](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_shared_user) |
 |Adição|v1.0|A função [getEffectivePermissions](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/intune_rbac_devicemanagement_geteffectivepermissions.md) foi adicionada a [deviceManagement](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_androidforwork_devicemanagement) |
 |Alteração|v1.0|A propriedade **mobileDeviceManagementAuthority** foi adicionada à entidade [organization](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_onboarding_organization)|
-|Alteração|v1.0|A propriedade **id** foi adicionada à entidade [user](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_shared_user) |
+|Alteração|v1.0|A propriedade **deviceEnrollmentLimit** foi adicionada à entidade [user](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_shared_user) |
 |Alteração|v1.0|As propriedades de navegação **managedDevices**, **managedAppRegistrations** e **deviceManagementTroubleshootingEvents** foram adicionadas à entidade [user](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_shared_user)|
 |||
 |Adição|Beta|Foram adicionadas novas entidades:<br/>[deviceManagementScriptAssignment](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/intune_devices_devicemanagementscriptassignment)<br/>[iosCertificateProfile](https://developer.microsoft.com/pt-BR/graph/docs/resources/intune_deviceconfig_ioscertificateprofile)<br/>[windowsInformationProtectionNetworkLearningSummary](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/resources/intune_wip_windowsinformationprotectionnetworklearningsummary)<br/>|
@@ -1404,7 +1411,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_overview):<br/>contato<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_users) |
+| Adição        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_users) |
 | Alteração          | Beta        | Adicionar um novo recurso de filtragem de consulta opcional (por ID) para [users](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/user_delta) e [groups](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/beta/api/group_delta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Foi adicionado suporte a recursos de usuário para os itens excluídos
@@ -1909,7 +1916,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionar uma nova função delta para as seguintes entidades realizem [consulta delta](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_overview):<br/>contato<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos (visualização)](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta (visualização)](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários (visualização)](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_users) |
+| Adição        | Beta        | Adicionar uma nova função delta para as seguintes entidades realizem [consulta delta](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos (visualização)](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta (visualização)](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários (visualização)](https://developer.microsoft.com/pt-BR/graph/docs/concepts/delta_query_users) |
 
 ### <a name="excel-apis"></a>APIs do Excel
 
