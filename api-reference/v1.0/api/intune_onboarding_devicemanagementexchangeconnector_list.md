@@ -8,8 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -45,7 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 555
+Content-Length: 616
 
 {
   "value": [
@@ -56,6 +56,7 @@ Content-Length: 555
       "status": "connectionPending",
       "primarySmtpAddress": "Primary Smtp Address value",
       "serverName": "Server Name value",
+      "connectorServerName": "Connector Server Name value",
       "exchangeConnectorType": "hosted",
       "version": "Version value",
       "exchangeAlias": "Exchange Alias value",

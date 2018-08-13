@@ -15,13 +15,13 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 | Propriedade  | Tipo   | Descrição                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
-| coordenadas | [outlookGeoCoordinates](outlookGeoCoordinates.md) | As coordenadas geográficas e a elevação do local. |
-| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
-| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local.              |
-| locationUri | Cadeia de caracteres | URI opcional que representa o local. |
-| locationType | Cadeia de caracteres | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
-| uniqueId | Cadeia de caracteres | Apenas para uso interno.|
-| uniqueIdType | Cadeia de caracteres | Apenas para uso interno. |
+| coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
+| displayName  | String | O nome associado ao local.                       |
+| locationEmailAddress | String | O endereço de email opcional do local.              |
+| locationUri | String | URI opcional que representa o local. |
+| locationType | String | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
+| uniqueId | String | Apenas para uso interno.|
+| uniqueIdType | String | Apenas para uso interno. |
 
 ## <a name="json-representation"></a>Representação JSON
 

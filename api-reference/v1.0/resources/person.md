@@ -4,13 +4,13 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 
 ## <a name="methods"></a>Métodos
 
-| Método           | Tipo de retorno    |Descrição|
+| Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 |[Listar pessoas](../api/user_list_people.md) | **person** |Obtém uma coleção de objetos person ordenados por relevância para o [usuário](../resources/user.md).|
-|[Obter person](../api/person_get.md) | **person** |Obter as propriedades e os relacionamentos de um objeto person.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade     | Tipo   |Descrição|
+
+| Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |birthday|String|O aniversário da pessoa.|
 |companyName|String|O nome da empresa da pessoa.|
@@ -19,11 +19,11 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |scoredEmailAddresses|Coleção [scoredEmailAddress](scoredemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|String|O nome fornecido da pessoa.|
 |id|String|O identificador exclusivo da pessoa. Somente leitura.|
-|imAddress|Cadeia de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
+|imAddress|String|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |isFavorite|Boolean|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
 |jobTitle|String|O cargo da pessoa.|
 |officeLocation|String|O local do escritório da pessoa.|
-|personNotes|Cadeia de caracteres|As anotações de forma livre que o usuário fez sobre essa pessoa.|
+|personNotes|String|As anotações de forma livre que o usuário fez sobre essa pessoa.|
 |personType|Coleção [personType](persontype.md)|O tipo de pessoa.|
 |telefones|Coleção [phone](phone.md)|Os números de telefone da pessoa.|
 |postalAddresses|[location](location.md) collection|Os endereços da pessoa.|
@@ -34,8 +34,8 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |yomiCompany|String|O nome japonês fonético da empresa da pessoa.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
 
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 

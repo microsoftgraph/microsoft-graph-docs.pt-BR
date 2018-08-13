@@ -35,14 +35,17 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManagement
 ```
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 ``` http
 HTTP/1.1 204 No Content
 ```

@@ -47,7 +47,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 979
+Content-Length: 1088
 
 {
   "value": {
@@ -71,7 +71,10 @@ Content-Length: 979
     "systemIntegrityProtectionEnabled": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
-    "storageRequireEncryption": true
+    "storageRequireEncryption": true,
+    "firewallEnabled": true,
+    "firewallBlockAllIncoming": true,
+    "firewallEnableStealthMode": true
   }
 }
 ```

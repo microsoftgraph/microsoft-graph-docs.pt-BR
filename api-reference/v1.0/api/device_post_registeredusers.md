@@ -15,7 +15,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /devices/{id}/registeredUsers
+POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

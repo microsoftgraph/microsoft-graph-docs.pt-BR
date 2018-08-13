@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Sincronizar o conteúdo de uma unidade"
-ms.openlocfilehash: f9891b639b44b235bb62795e181c5c0a37b99f45
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Sincronizar o conteúdo de uma unidade
+ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
+ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "20050825"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 

@@ -3,7 +3,7 @@ Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 
 ##### <a name="default-properties"></a>Propriedades padrão
 
-O seguinte item representa o conjunto padrão de propriedades que são retornadas ao obter ou listar grupos. Este é um subconjunto de todas as propriedades disponíveis. 
+O seguinte item representa o conjunto padrão de propriedades que são retornadas ao obter ou listar grupos. Este é um subconjunto de todas as propriedades disponíveis.
 
 * description
 * displayName
