@@ -39,6 +39,6 @@ Automatize o Intune usando a API do Intune para:
 
 - [Usar o Azure AD para acessar a API do Intune](https://docs.microsoft.com/intune/intune-graph-apis).
 - Veja como realizar tarefas comuns usando os [exemplos do PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples).
-- Saiba como [usar a API REST do Intune](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/resources/intune_graph_overview).
+- Saiba como [usar a API REST do Intune](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/intune_graph_overview).
 - Confira o [log de alterações](changelog.md) para obter informações sobre as novidades na API do Intune.
-- Explore [exemplos](https://developer.microsoft.com/pt-BR/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.
+- Explore [exemplos](https://developer.microsoft.com/en-us/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.
