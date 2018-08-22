@@ -1,16 +1,16 @@
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="762c7-101">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="762c7-101">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="a2333-101">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="a2333-101">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="762c7-102">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="762c7-102">The recurrence pattern and range.</span></span>
+<span data-ttu-id="a2333-102">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="a2333-102">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="762c7-103">Propriedades</span><span class="sxs-lookup"><span data-stu-id="762c7-103">Properties</span></span>
-| <span data-ttu-id="762c7-104">Propriedade</span><span class="sxs-lookup"><span data-stu-id="762c7-104">Property</span></span>     | <span data-ttu-id="762c7-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="762c7-105">Type</span></span>   |<span data-ttu-id="762c7-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="762c7-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a2333-103">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a2333-103">Properties</span></span>
+| <span data-ttu-id="a2333-104">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a2333-104">Property</span></span>     | <span data-ttu-id="a2333-105">Tipo</span><span class="sxs-lookup"><span data-stu-id="a2333-105">Type</span></span>   |<span data-ttu-id="a2333-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="a2333-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="762c7-107">pattern</span><span class="sxs-lookup"><span data-stu-id="762c7-107">pattern</span></span>|[<span data-ttu-id="762c7-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="762c7-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="762c7-109">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="762c7-109">The frequency of an event.</span></span>|
-|<span data-ttu-id="762c7-110">range</span><span class="sxs-lookup"><span data-stu-id="762c7-110">range</span></span>|[<span data-ttu-id="762c7-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="762c7-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="762c7-112">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="762c7-112">The duration of an event.</span></span>|
+|<span data-ttu-id="a2333-107">pattern</span><span class="sxs-lookup"><span data-stu-id="a2333-107">pattern</span></span>|[<span data-ttu-id="a2333-108">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="a2333-108">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="a2333-109">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="a2333-109">The frequency of an event.</span></span>|
+|<span data-ttu-id="a2333-110">range</span><span class="sxs-lookup"><span data-stu-id="a2333-110">range</span></span>|[<span data-ttu-id="a2333-111">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="a2333-111">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="a2333-112">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="a2333-112">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="762c7-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="762c7-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a2333-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a2333-113">JSON representation</span></span>
 
-<span data-ttu-id="762c7-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="762c7-114">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a2333-114">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="a2333-114">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
