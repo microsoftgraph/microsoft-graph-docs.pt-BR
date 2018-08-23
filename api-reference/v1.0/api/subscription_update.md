@@ -1,8 +1,8 @@
 # <a name="update-subscription"></a>Atualizar assinatura
 
-Renove uma assinatura ampliando seu tempo de validade.
+Renove uma assinatura ampliando seu tempo de expiração.
 
-As assinaturas a recursos expiram nas datas prescritas pelos tipos de recursos individuais.  Para não perder as notificações, as assinaturas devem ser renovadas bem antes de sua data de vencimento.  Consulte [subscription](../resources/subscription.md) para saber mais sobre datas de vencimento individuais.
+Assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para não deixar de receber notificações, um aplicativo deve renovar sua assinatura com uma boa antecedência da data de expiração. Consulte [assinatura](../resources/subscription.md) para o comprimento máximo de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -14,32 +14,41 @@ A tabela a seguir lista a permissão sugerida necessária para cada recurso. Par
 | Conversas               | Group.Read.All      |
 | Eventos                      | Calendars.Read      |
 | Mensagens                    | Mail.Read           |
-| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
-| Unidades (unidades e conteúdo compartilhados do Sharepoint) | Files.ReadWrite.All |
+| Grupos                      | Group.Read.All      |
+| Usuários                       | User.Read.All       |
+| Unidade (OneDrive do usuário)    | Files.ReadWrite     |
+| Unidades (unidades e conteúdo compartilhado do SharePoint) | Files.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-PATCH /subscriptions/{subscriptionId}
+PATCH /subscriptions/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [subscription](../resources/subscription.md) no corpo da resposta.
+
 ## <a name="example"></a>Exemplo
+
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_subscription"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/v1.0/subscriptions/{subscriptionId}
+PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
 Content-type: application/json
 
 {
@@ -48,12 +57,14 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": false,
   "@odata.type": "microsoft.graph.subscription"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -62,13 +73,14 @@ Content-length: 252
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/messages",
+  "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
   "changeType":"created,updated",
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "expirationDateTime":"2016-11-22T18:23:45.9356913Z"
+  "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
 }
 ```
-
 
 <!-- {
   "type": "#page.annotation",

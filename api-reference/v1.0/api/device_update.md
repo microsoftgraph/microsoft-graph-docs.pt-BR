@@ -23,7 +23,7 @@ PATCH /devices/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -32,15 +32,15 @@ No corpo da solicitação, forneça os valores para as propriedades [device](../
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. |
-|operatingSystem|String|O tipo de sistema operacional do dispositivo.|
-|operatingSystemVersion|Cadeia de caracteres|A versão do sistema operacional do dispositivo.|
-|displayName|String|O nome de exibição do dispositivo.|
-|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. A atualização só pode ser feita por um aplicativo MDM aprovado. |
-|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. A atualização só pode ser feita por um aplicativo MDM aprovado. |
+|operatingSystem|Sequência de caracteres|O tipo de sistema operacional do dispositivo.|
+|operatingSystemVersion|Sequência de caracteres|A versão do sistema operacional do dispositivo.|
+|displayName|Sequência de caracteres|O nome de exibição do dispositivo.|
+|isCompliant|Boolean|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para dispositivos de qualquer tipo de sistema operacional ou por um [app aprovado MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
+|isManaged|Boolean|**true** se o dispositivo for gerenciado por um aplicativo de Gerenciamento de Dispositivo Móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para dispositivos de qualquer tipo de sistema operacional ou por um [app aprovado MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -1,45 +1,11 @@
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/pt-BR/cloud-platform/microsoft-intune-pricing) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
 
 É possível registrar dispositivos, incluindo computadores Windows, para habilitar o gerenciamento de dispositivo móvel (MDM) com o Microsoft Intune. Este tópico descreve as diferentes maneiras de registrar dispositivos móveis no gerenciamento do Intune. A maneira de registrar dispositivos depende do tipo de dispositivo, da propriedade e do nível de gerenciamento necessário. O registro "Traga seu próprio dispositivo" (BYOD) permite aos usuários registrar seus telefones, computador e tablets pessoais. O registro de dispositivo de propriedade corporativa (COD) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade de usuários em um dispositivo.
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar registros no Intune:
 
-- [Certificado de notificação por push da Apple](intune_devices_applepushnotificationcertificate.md)
-- [Ator de auditoria](intune_auditing_auditactor.md)
-- [Evento de auditoria](intune_auditing_auditevent.md)
-- [Propriedade de auditoria](intune_auditing_auditproperty.md)
-- [Recurso de auditoria](intune_auditing_auditresource.md)
-- [Recursos habilitados pelo cliente do Gerenciador de Configurações](intune_devices_configurationmanagerclientenabledfeatures.md)
-- [Resultado da ação de excluir o usuário do dispositivo compartilhado da Apple](intune_devices_deleteuserfromsharedappledeviceactionresult.md)
-- [Aplicativo detectado](intune_devices_detectedapp.md)
-- [Resultado da ação do dispositivo](intune_devices_deviceactionresult.md)
-- [Categoria do dispositivo](intune_devices_devicecategory.md)
-- [Resumo do Estado de Acesso ao Exchange do dispositivo](intune_devices_deviceexchangeaccessstatesummary.md)
-- [Geolocalização do dispositivo](intune_devices_devicegeolocation.md)
-- [Estado do atestado de integridade do dispositivo](intune_devices_devicehealthattestationstate.md)
-- [Evento de solução de problemas com o gerenciamento de dispositivos](intune_troubleshooting_devicemanagementtroubleshootingevent.md)
-- [Gerenciamento de dispositivos](intune_devices_devicemanagement.md)
-- [Gerenciamento de dispositivos](intune_endpointprotection_devicemanagement.md)
-- [Gerenciamento de dispositivos](intune_notification_devicemanagement.md)
-- [Gerenciamento de dispositivos](intune_remoteassistance_devicemanagement.md)
-- [Gerenciamento de dispositivos](intune_troubleshooting_devicemanagement.md)
-- [Gerenciamento de dispositivos](intune_auditing_devicemanagement.md)
-- [Resumo do sistema operacional do dispositivo](intune_devices_deviceoperatingsystemsummary.md)
-- [Evento de solução de problemas de registro](intune_troubleshooting_enrollmenttroubleshootingevent.md)
-- [Mensagem de notificação localizada](intune_notification_localizednotificationmessage.md)
-- [Resultado da ação de localizar dispositivo](intune_devices_locatedeviceactionresult.md)
-- [Visão geral do dispositivo gerenciado](intune_devices_manageddeviceoverview.md)
-- [Dispositivo gerenciado](intune_devices_manageddevice.md)
-- [Modelo de mensagem de notificação](intune_notification_notificationmessagetemplate.md)
-- [Parceiro de assistência remota](intune_remoteassistance_remoteassistancepartner.md)
-- [Resultado da ação de bloqueio remoto](intune_devices_remotelockactionresult.md)
-- [Resultado da ação de redefinir a senha](intune_devices_resetpasscodeactionresult.md)
-- [Parâmetro da ação de atualização de conta de dispositivo Windows](intune_devices_updatewindowsdeviceaccountactionparameter.md)
-- [Usuário](intune_devices_user.md)
-- [Usuário](intune_troubleshooting_user.md)
-- [Resultado da ação de verificação do Windows Defender](intune_devices_windowsdefenderscanactionresult.md)
-- [Conta do dispositivo Windows](intune_devices_windowsdeviceaccount.md)
-- [Conta do AD de dispositivo Windows](intune_devices_windowsdeviceadaccount.md)
-- [Conta do Azure AD de dispositivo Windows](intune_devices_windowsdeviceazureadaccount.md)
+- [Identidade de dispositivo importada do Windows Autopilot](intune_enrollment_importedwindowsautopilotdeviceidentity.md)
+- [Status de importação de identidade de dispositivo importada do Windows Autopilot](intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)
+- [Status da identidade de dispositivo importada do Windows Autopilot](intune_enrollment_importedwindowsautopilotdeviceidentitystate.md)

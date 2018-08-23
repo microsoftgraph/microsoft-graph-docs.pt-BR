@@ -53,8 +53,8 @@ Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usand
 
 Ao criar uma definição de extensão de esquema, você deve fornecer um nome exclusivo para sua **id**. Há duas opções de nomes:
 
-- Se já tiver um domínio personalizado `.com`,`.net`, `.gov`, `.edu` ou `.org` que verificou com seu locatário, você poderá usar o nome de domínio com o nome de esquema para definir um nome exclusivo, neste formato: \{_&#65279;nomedoDomínio_\}\_\{_&#65279;nomedoEsquema_\}. Por exemplo, se o seu domínio personalizado for contoso.com, você pode definir uma **id** de `contoso_mySchema`. Essa é a opção preferencial.
-- Se não tiver um domínio personalizado verificado, você poderá definir apenas a **id** para um nome de esquema (sem um prefixo de nome de domínio), por exemplo, `mySchema`. O Microsoft Graph atribuirá uma ID de cadeia de caracteres com base no nome fornecido, neste formato: ext\{_&#65279;8-caracteres-alfanuméricos-aleatórios_\}\_\{_&#65279;nome-do-esquema_\}.  Por exemplo, `extkvbmkofy_mySchema`.
+- Se já tiver um domínio personalizado `.com`,`.net`, `.gov`, `.edu` ou `.org` que verificou com seu locatário, você poderá usar o nome de domínio com o nome de esquema para definir um nome exclusivo, neste formato: \{_﻿nomedoDomínio_\}\_\{_﻿nomedoEsquema_\}. Por exemplo, se o seu domínio personalizado for contoso.com, você pode definir uma **id** de `contoso_mySchema`. Essa é a opção preferencial.
+- Se não tiver um domínio personalizado verificado, você poderá definir apenas a **id** para um nome de esquema (sem um prefixo de nome de domínio), por exemplo, `mySchema`. O Microsoft Graph atribuirá uma ID de cadeia de caracteres com base no nome fornecido, neste formato: ext\{_﻿8-caracteres-alfanuméricos-aleatórios_\}\_\{_﻿nome-do-esquema_\}.  Por exemplo, `extkvbmkofy_mySchema`.
 
 Você verá este nome exclusivo na **id** usado como o nome do tipo complexo que armazenará seus dados personalizados na instância de recurso estendida.
 
@@ -91,13 +91,13 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 | Booliano | Não é compatível com as mensagens, eventos e postagens. |
 | DateTime | Deve ser especificado no formato ISO 8601. Serão armazenados no UTC. |
 | Inteiro | Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens. |
-| String | Máximo de 256 caracteres. |
+| Cadeia de caracteres | Máximo de 256 caracteres. |
 
 > **Observação:** Propriedades de múltiplos valores não são suportadas.
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Extensões do esquema de diretório do Azure AD
 
-O Microsoft Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/pt-BR/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Apesar de você ter que usar a [API do Graph do Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
+O Microsoft Azure AD dá suporte a um tipo semelhante de extensão, conhecido como [extensões de esquema de diretório](https://msdn.microsoft.com/en-us/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), em alguns recursos [directoryObject](../api-reference/v1.0/resources/directoryObject.md). Apesar de você ter que usar a [API do Graph do Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog) para criar e gerenciar as definições de extensões de esquema de diretório, pode usar a API do Microsoft Graph para adicionar, obter, atualizar e excluir _dados_ nas propriedades dessas extensões.
 
 ## <a name="permissions"></a>Permissões
 
@@ -134,6 +134,6 @@ Nas limitações conhecidas usando extensões, veja a [seção extensões](known
 
 ## <a name="see-also"></a>Confira também
 
-- [Domínios do Office 365](https://technet.microsoft.com/pt-BR/library/office-365-domains.aspx)
+- [Domínios do Office 365](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
 
 - [Adição e verificação de um domínio para um locatário do Office 365](http://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
