@@ -1,6 +1,6 @@
-# <a name="event-accept"></a>event: accept
+# <a name="event-accept"></a>evento: aceitar
 
-Aceita o evento especificado.
+Aceite o [evento](../resources/event.md) específico em um [calendário](../resources/calendar.md) do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -16,11 +16,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /me/events/{id}/accept
 POST /users/{id | userPrincipalName}/events/{id}/accept
-POST /groups/{id}/events/{id}/accept
 
 POST /me/calendar/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
-POST /groups/{id}/calendar/events/{id}/accept
 
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
@@ -34,15 +32,15 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Tipo de Conteúdo | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Texto incluído na resposta. Opcional.|
+|comentário|Cadeia de caracteres|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta

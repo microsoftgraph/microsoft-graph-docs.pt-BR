@@ -1,6 +1,11 @@
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 
-Exclua a mailFolder.
+Excluir o objeto [mailFolder](../resources/mailfolder.md) especificado.
+
+Você pode especificar uma pasta de email por sua ID de pasta, ou por seu [nome da pasta conhecido](../resources/mailfolder.md), se houver uma. 
+
+>**Observação** Você não poderá excluir itens na pasta de itens excluídos recuperáveis (representado pelo nome da pasta conhecido `recoverableitemsdeletions`). Confira [Retenção de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [Limpeza de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para mais informações.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -19,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
