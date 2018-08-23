@@ -1,0 +1,15 @@
+# <a name="vpptokenstate-enum-type"></a><span data-ttu-id="862e1-101">tipo enumerado vppTokenState</span><span class="sxs-lookup"><span data-stu-id="862e1-101">vppTokenState enum type</span></span>
+
+> <span data-ttu-id="862e1-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="862e1-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="862e1-103">Estados possíveis associados a um token de Programa de compra por volume da Apple.</span><span class="sxs-lookup"><span data-stu-id="862e1-103">Possible states associated with an Apple Volume Purchase Program token.</span></span>
+## <a name="members"></a><span data-ttu-id="862e1-104">Membros</span><span class="sxs-lookup"><span data-stu-id="862e1-104">Members</span></span>
+|<span data-ttu-id="862e1-105">Membro</span><span class="sxs-lookup"><span data-stu-id="862e1-105">Member</span></span>|<span data-ttu-id="862e1-106">Valor</span><span class="sxs-lookup"><span data-stu-id="862e1-106">Value</span></span>|<span data-ttu-id="862e1-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="862e1-107">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="862e1-108">desconhecido</span><span class="sxs-lookup"><span data-stu-id="862e1-108">unknown</span></span>|<span data-ttu-id="862e1-109">0</span><span class="sxs-lookup"><span data-stu-id="862e1-109">0%</span></span>|<span data-ttu-id="862e1-110">Estado padrão.</span><span class="sxs-lookup"><span data-stu-id="862e1-110">Default state</span></span>|
+|<span data-ttu-id="862e1-111">válido</span><span class="sxs-lookup"><span data-stu-id="862e1-111">valid</span></span>|<span data-ttu-id="862e1-112">1</span><span class="sxs-lookup"><span data-stu-id="862e1-112">$1</span></span>|<span data-ttu-id="862e1-113">Token é válido.</span><span class="sxs-lookup"><span data-stu-id="862e1-113">Token is valid.</span></span>|
+|<span data-ttu-id="862e1-114">expirou</span><span class="sxs-lookup"><span data-stu-id="862e1-114">Expired</span></span>|<span data-ttu-id="862e1-115">2</span><span class="sxs-lookup"><span data-stu-id="862e1-115">-2</span></span>|<span data-ttu-id="862e1-116">Token expirou.</span><span class="sxs-lookup"><span data-stu-id="862e1-116">Token is expired.</span></span>|
+|<span data-ttu-id="862e1-117">inválido</span><span class="sxs-lookup"><span data-stu-id="862e1-117">invalid</span></span>|<span data-ttu-id="862e1-118">3</span><span class="sxs-lookup"><span data-stu-id="862e1-118">-3</span></span>|<span data-ttu-id="862e1-119">Token é inválido.</span><span class="sxs-lookup"><span data-stu-id="862e1-119">Token is invalid.</span></span>|
+
+
+
