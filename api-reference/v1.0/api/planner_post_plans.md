@@ -3,27 +3,34 @@
 Use essa API para criar um novo **plannerPlan**.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegado (conta corporativa ou de estudante)     | Group.ReadWrite.All                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                              |
+| Aplicativo                            | Sem suporte.                              |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /planner/plans
 
+<!-- { "blockType": "ignored" } -->
+``` http
+POST /planner/plans
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Descrição|
-|:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+
+| Nome          | Descrição               |
+| :------------ | :------------------------ |
+| Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md). A propriedade owner do **plannerPlan** deve ser definida com uma identificação de um objeto [group](../resources/group.md).
+
+>**Nota:** o usuário que está criando o plano deve ser membro do grupo que será o proprietário do plano. Ao criar um novo grupo usando [Criar grupo](../api/group_post_groups.md), você não é adicionado ao grupo como um membro. Após criar o grupo, adicione-se como membro usando [membros de postagem de grupo](../api/group_post_members.md).
+
 
 ## <a name="response"></a>Resposta
 
@@ -32,13 +39,16 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e o ob
 Este método pode retornar qualquer um dos [códigos de status de HTTP](../../../concepts/errors.md). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner_overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
@@ -48,15 +58,19 @@ Content-length: 381
   "title": "title-value"
 }
 ```
+
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md).
-##### <a name="response"></a>Resposta
+
+### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
 } -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 357

@@ -10,7 +10,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.Read.All |
+|Aplicativo | Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -24,7 +24,7 @@ Este método dá suporte a [Parâmetros de consulta OData](../../../concepts/que
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -45,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

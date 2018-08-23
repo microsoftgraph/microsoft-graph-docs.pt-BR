@@ -1,6 +1,9 @@
 # <a name="delete-message"></a>Excluir mensagem
 
-Exclua a mensagem.
+Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
+
+>**Observação** Você não poderá excluir itens da pasta de itens excluídos recuperáveis (representado pelo [nome da pasta conhecido](../resources/mailfolder.md) `recoverableitemsdeletions`). Confira [Retenção de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [Limpeza de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para mais informações.
+
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -21,7 +24,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

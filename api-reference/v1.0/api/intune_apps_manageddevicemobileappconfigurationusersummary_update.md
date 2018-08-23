@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -36,7 +36,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |pendingCount|Int32|Número de usuários pendentes|
-|notApplicableCount|Int32|Número de dispositivos não aplicáveis|
+|notApplicableCount|Int32|Número de usuários não aplicáveis|
 |successCount|Int32|Número de usuários bem-sucedidos|
 |errorCount|Int32|Número de usuários com erro|
 |failedCount|Int32|Número de usuários com falhas|
