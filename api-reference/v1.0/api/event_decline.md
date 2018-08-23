@@ -1,6 +1,6 @@
-# <a name="event-decline"></a>event: decline
+# <a name="event-decline"></a>evento: decline
 
-Recusa o convite para o evento especificado.
+Recusa o convite para o [evento](../resources/event.md) específico no [calendário](../resources/calendar.md) de um usuário.
 
 ## <a name="permissions"></a>Permissões
 
@@ -19,11 +19,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /me/events/{id}/decline
 POST /users/{id | userPrincipalName}/events/{id}/decline
-POST /groups/{id}/events/{id}/decline
 
 POST /me/calendar/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendar/events/{id}/decline
-POST /groups/{id}/calendar/events/{id}/decline
 
 POST /me/calendars/{id}/events/{id}/decline
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/decline
@@ -41,8 +39,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -50,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Texto incluído na resposta. Opcional.|
+|comentário|Cadeia de caracteres|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta
