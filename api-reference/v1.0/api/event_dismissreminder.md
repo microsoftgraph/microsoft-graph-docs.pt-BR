@@ -1,6 +1,6 @@
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 
-Ignorar um lembrete acionado.
+Descarte um lembrete disparado em um [evento](../resources/event.md) no [calendário](../resources/calendar.md) de um usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -18,11 +18,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /me/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/events/{id}/dismissReminder
-POST /groups/{id}/events/{id}/dismissReminder
 
 POST /me/calendar/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
-POST /groups/{id}/calendar/events/{id}/dismissReminder
 
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
@@ -39,7 +37,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 <br/>
 

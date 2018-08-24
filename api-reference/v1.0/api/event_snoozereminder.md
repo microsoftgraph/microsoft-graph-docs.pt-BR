@@ -1,6 +1,6 @@
-# <a name="event-snoozereminder"></a>event: snoozeReminder
+# <a name="event-snoozereminder"></a>evento: snoozeReminder
 
-Adia um lembrete para um novo horário.
+Adie um lembrete de um [evento](../resources/event.md) no [calendário](../resources/calendar.md) de um usuário para um novo horário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
@@ -16,11 +16,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /me/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/events/{id}/snoozeReminder
-POST /groups/{id}/events/{id}/snoozeReminder
 
 POST /me/calendar/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
-POST /groups/{id}/calendar/events/{id}/snoozeReminder
 
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
@@ -34,8 +32,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
