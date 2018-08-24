@@ -65,7 +65,7 @@ GET https://login.microsoftonline.com/{tenant}/adminconsent
 | locatário        | Obrigatório    | O locatário do diretório do qual você deseja solicitar permissão. Pode ser no formato de nome amigável ou GUID. Se você não souber a qual locatário o usuário pertence e quiser permitir que ele entre em qualquer locatário, use `common`. 
 | client_id     | Obrigatório    | ID de Aplicativo que o [Portal de Registro de Aplicativos](https://apps.dev.microsoft.com/) atribuiu a seu aplicativo. 
 | redirect_uri  | Obrigatório    | O URI de redirecionamento para onde você deseja que a resposta seja enviada para que o aplicativo trate da situação. Ele deve corresponder exatamente a um dos URIs de redirecionamento registrados no portal, exceto que ele deve ser codificado por URL e pode ter segmentos de caminho adicionais. 
-| state         | Recomendado | Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. 
+| estado         | Recomendado | Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. 
 
 ### <a name="administrator-consent-experience"></a>Experiência de consentimento do administrador
 
@@ -83,14 +83,14 @@ Se o administrador aprovar as permissões de seu aplicativo, a resposta bem-suce
 // Line breaks are for legibility only.
 
 GET http://localhost/myapp/permissions
-?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=state=12345
+?tenant=a8990e1f-ff32-408a-9f8e-78d3b9139b95&state=12345
 &admin_consent=True
 ```
 
 | Parâmetro     | Descrição 
 |:--------------|:------------
 | locatário        | O locatário do diretório que concedeu as permissões de aplicativo solicitadas, no formato GUID. 
-| state         | Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. 
+| estado         | Um valor incluído na solicitação e que também será retornado na resposta do token. Pode ser uma cadeia de caracteres de qualquer conteúdo que você desejar. O estado é usado para codificar as informações sobre o estado do usuário no aplicativo antes da solicitação de autenticação ter ocorrido, como a página ou o modo de exibição em que ele estava. 
 | admin_consent | Definir como **true**. 
 
 
