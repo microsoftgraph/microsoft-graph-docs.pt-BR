@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ChoiceColumn
-ms.openlocfilehash: c266550e8918603c3ee6104818c0aa721f1281d9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9feb49fc9c581a4518f63a0367087d54de32cff4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264067"
 ---
 # <a name="choicecolumn-resource-type"></a>Tipo de recurso ChoiceColumn
 
@@ -31,8 +32,8 @@ Aqui está uma representação JSON de um recurso **choiceColumn**.
 | Nome da propriedade      | Tipo               | Descrição
 |:-------------------|:-------------------|:----------------------------------------------
 | **allowTextEntry** | booliano            | Se verdadeiro, permite valores personalizados que não estão em opções configuradas.
-| **choices**        | collection(string) | A lista de valores disponíveis para essa coluna.
-| **displayAs**      | string             | Como as opções devem ser apresentadas na UX. Deve ser `checkBoxes`, `dropDownMenu` ou `radioButtons`
+| **escolhas**        | collection(string) | A lista de valores disponíveis para essa coluna.
+| **displayAs**      | sequência de caracteres             | Como as opções devem ser apresentadas na UX. Deve ser `checkBoxes`, `dropDownMenu` ou `radioButtons`
 
 
 <!-- {
@@ -40,5 +41,9 @@ Aqui está uma representação JSON de um recurso **choiceColumn**.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ChoiceColumn"
 } -->

@@ -18,18 +18,19 @@ O recurso ManagedAppPolicy representa um tipo de base para políticas específic
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política.|
 |lastModifiedDateTime|DateTimeOffset|Última hora em que a política foi modificada.|
 |id|Cadeia de caracteres|Chave da entidade.|
-|versão|Cadeia de caracteres|Versão da entidade.|
+|version|Cadeia de caracteres|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedAppPolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicy",

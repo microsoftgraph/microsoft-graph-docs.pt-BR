@@ -3,17 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
-ms.openlocfilehash: 8c3d8da3e8dc4ab3aa2f399eb09d916ea602e1c5
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+ms.openlocfilehash: 5d88720ecf3d183f806526364130dd2812874f3c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267644"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
 Obter a coleção de [listas][] de um [site][].
 
-[lists]: ../resources/list.md
+[listas]: ../resources/list.md
 [site]: ../resources/site.md
 
 ## <a name="permissions"></a>Permissões
@@ -36,7 +37,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 #### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
@@ -75,6 +76,13 @@ Content-type: application/json
   ]
 }
 ```
+
+## <a name="remarks"></a>Comentários
+
+Listas com a faceta [system][] estão ocultas por padrão.
+Para listá-los, inclua `system` na instrução `$select`.
+
+[sistema]: ../resources/systemFacet.md
 
 <!-- {
   "type": "#page.annotation",

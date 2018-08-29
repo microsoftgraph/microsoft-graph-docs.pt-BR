@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: FolderView
-ms.openlocfilehash: 65fc0a6aa702e6cd08f18dc16957bb7a41589f40
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e73846a18f8576af8fe3cf5949e8ca5c63891837
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265152"
 ---
 # <a name="folderview-resource-type"></a>Tipo de recurso FolderView
 
@@ -22,7 +23,7 @@ Está disponível a partir da propriedade [folder][folder-facet] dos recursos [d
 ```json
 {
   "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
-  "sortDescending": "ascending | descending",
+  "sortOrder": "ascending | descending",
   "viewType": "default | icons | details | thumbnails"
 }
 ```
@@ -31,13 +32,13 @@ Está disponível a partir da propriedade [folder][folder-facet] dos recursos [d
 
 | Nome da propriedade         | Tipo   | Descrição
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | string | O método pelo qual a pasta deve ser classificada.
-| **sortOrder**         | string | Se for verdadeiro, indica que os itens devem ser classificados em ordem decrescente. Caso contrário, os itens devem ser classificados em ordem crescente.
-| **viewType**          | string | O tipo de modo de exibição que deve ser usado para representar a pasta.
+| **sortBy**            | sequência de caracteres | O método pelo qual a pasta deve ser classificada.
+| **sortOrder**         | sequência de caracteres | Se for verdadeiro, indica que os itens devem ser classificados em ordem decrescente. Caso contrário, os itens devem ser classificados em ordem crescente.
+| **viewType**          | sequência de caracteres | O tipo de modo de exibição que deve ser usado para representar a pasta.
 
 Você pode usar a propriedade _sortBy_ para controlar a ordem de classificação dos itens em aplicativos que respeitam a faceta **viewType**.
 
-### <a name="sortby-values"></a>Valores sortBy
+### <a name="sortby-options"></a>Opções de sortBy
 
 Os seguintes valores são definidos para a propriedade **sortBy**.
 
@@ -52,7 +53,7 @@ Os seguintes valores são definidos para a propriedade **sortBy**.
 | `sequence`               | Os itens seguem uma sequência personalizada especificada pelo usuário.
 
 
-### <a name="sortorder-values"></a>Valores sortOrder
+### <a name="sortorder-options"></a>Opções de sortOrder
 
 Os seguintes valores são definidos para a propriedade **sortOrder**.
 
@@ -62,7 +63,7 @@ Os seguintes valores são definidos para a propriedade **sortOrder**.
 | `descending` | Os itens devem ser organizados em ordem decrescente.
 
 
-### <a name="viewtype-values"></a>Valores viewType
+### <a name="viewtype-options"></a>Opções de viewType
 
 Os seguintes valores são definidos para a propriedade **viewType**.
 
@@ -82,5 +83,13 @@ Os seguintes valores são definidos para a propriedade **viewType**.
   "description": "The FolderView facet provides or sets recommendations on the user-experience of a folder.",
   "keywords": "view, folderview, sortby, sortorder, viewtype, coversourceid, folder",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(default,icons,details,thumbnails) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(default,name,type,size,takenOrCreatedDateTime,lastModifiedDateTime,sequence) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/folderview.md:
+      Found potential enums in resource example that weren't defined in a table:(ascending,descending) are in resource, but () are in table"
+  ],
   "tocPath": "Facets/FolderView"
 } -->

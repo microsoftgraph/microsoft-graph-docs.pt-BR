@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
-ms.openlocfilehash: 94f6981d817de638878f4876104f049ebfa383c7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9d45cf345981eb3da638d2f25bb51428ec40b7f9
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267980"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
 
@@ -50,7 +51,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](../../../concep
 
 | Nome          | Valor  | Descrição                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
+| if-none-match | Sequência de caracteres | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
 ## <a name="response"></a>Resposta
 
@@ -62,7 +63,7 @@ Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso
 
 Eis um exemplo de solicitação para a pasta raiz do OneDrive do usuário.
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root

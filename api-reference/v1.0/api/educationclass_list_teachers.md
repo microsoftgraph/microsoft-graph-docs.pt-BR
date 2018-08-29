@@ -36,7 +36,7 @@ Este é um exemplo de solicitação.
   "name": "get_teachers"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11023/teachers
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

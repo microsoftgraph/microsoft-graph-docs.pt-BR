@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names(<name>)/range
+PATCH /workbook/names/{name}/range
 PATCH /workbook/worksheets/{id|name}/range(address='<address>')
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range
 ```
@@ -29,12 +29,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|fórmulas|json|Representa a fórmula em notação A1.|
-|formulasLocal|json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
-|formulasR1C1|json|Representa a fórmula em notação no estilo L1C1.|
-|numberFormat|json|Representa o código de formato de número do Excel para determinada célula.|
+|formulas|Json|Representa a fórmula em notação A1.|
+|formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
+|formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.|
+|numberFormat|Json|Representa o código de formato de número do Excel para determinada célula.|
 |rowHidden|booliano|Representa se todas as linhas do intervalo atual estão ocultas.|
-|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="response"></a>Resposta
 
@@ -48,7 +48,7 @@ Este é um exemplo da solicitação. Atualiza um intervalo: valores, formato de 
   "name": "update_range"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets('sheet1')/range(address='A1:B2')
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
 Content-length: 169
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,5 +87,15 @@ Content-length: 169
   "description": "Update range",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Warning: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Inconsistent types between parameter (Collection) and table (None)",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/numberFormat:
+      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
+    "Error: /api-reference/v1.0/api/range_update.md/update_range/values:
+      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
+  ],
   "tocPath": ""
 }-->

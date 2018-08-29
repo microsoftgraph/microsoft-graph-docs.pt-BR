@@ -22,27 +22,26 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade                             | Tipo                                                              | Descrição                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | assignedPlans                        | Coleção [assignedPlan](assignedplan.md)                        | A coleção de planos de serviço associados ao locatário. Não anulável.                                                                                                                                                                                                            |
-| city                                 | String                                                            | Nome da cidade do endereço da organização                                                                                                                                                                                                                                        |
+| city                                 | Sequência de caracteres                                                            | Nome da cidade do endereço da organização                                                                                                                                                                                                                                        |
 | companyLastDirSyncTime               | DateTimeOffset                                                    | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` |
-| country                              | String                                                            | Nome do país/região do endereço da organização                                                                                                                                                                                                                                     |
-| countryLetterCode                    | String                                                            | Abreviação de país/região da organização                                                                                                                                                                                                                                            |
+| country                              | Sequência de caracteres                                                            | Nome do país/região do endereço da organização                                                                                                                                                                                                                              |
+| countryLetterCode                    | Sequência de caracteres                                                            | Abreviação de país/região da organização                                                                                                                                                                                                                                     |
 | deletionTimestamp                    | DateTimeOffset                                                    | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`                                                                                     |
-| dirSyncEnabled                       | Booliano                                                           | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).                        |
-| displayName                          | String                                                            | O nome de exibição do locatário.                                                                                                                                                                                                                                                     |
-| id                                   | String                                                            | O identificador exclusivo do locatário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.                                                                                                                                                            |
+| dirSyncEnabled                       | Booleano                                                           | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).                        |
+| displayName                          | Sequência de caracteres                                                            | O nome de exibição do locatário.                                                                                                                                                                                                                                                     |
+| id                                   | Sequência de caracteres                                                            | O identificador exclusivo do locatário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.                                                                                                                                                            |
 | marketingNotificationEmails          | Coleção de cadeias de caracteres                                                 | Não anulável.                                                                                                                                                                                                                                                                        |
-| objectType                           | String                                                            | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa".                                                                                                                                                                                                 |
-| postalCode                           | String                                                            | CEP do endereço da organização                                                                                                                                                                                                                                      |
-| preferredLanguage                    | String                                                            | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en".                                                                                                                                                                                         |
+| objectType                           | Sequência de caracteres                                                            | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa".                                                                                                                                                                                                 |
+| postalCode                           | Sequência de caracteres                                                            | CEP do endereço da organização                                                                                                                                                                                                                                      |
+| preferredLanguage                    | Sequência de caracteres                                                            | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en".                                                                                                                                                                                         |
 | privacyProfile                       | [privacyProfile](privacyprofile.md)                               | O perfil de privacidade de uma organização.                                                                                                                                                                                                                                              |
 | provisionedPlans                     | Coleção [ProvisionedPlan](provisionedplan.md)                  | Não anulável.                                                                                                                                                                                                                                                                        |
-| provisioningErrors                   | Coleção ProvisioningError                                      | Não anulável.                                                                                                                                                                                                                                                                        |
 | securityComplianceNotificationMails  | Coleção de cadeias de caracteres                                                 |                                                                                                                                                                                                                                                                                      |
 | securityComplianceNotificationPhones | Coleção de cadeias de caracteres                                                 |                                                                                                                                                                                                                                                                                      |
-| state                                | String                                                            | Nome do estado do endereço da organização                                                                                                                                                                                                                                       |
-| street                               | String                                                            | Nome da rua do endereço da organização                                                                                                                                                                                                                                          |
+| state                                | Sequência de caracteres                                                            | Nome do estado do endereço da organização                                                                                                                                                                                                                                       |
+| street                               | Sequência de caracteres                                                            | Nome da rua do endereço da organização                                                                                                                                                                                                                                          |
 | technicalNotificationMails           | Coleção de cadeias de caracteres                                                 | Não anulável.                                                                                                                                                                                                                                                                        |
-| telephoneNumber                      | String                                                            | Número de telefone da organização                                                                                                                                                                                                                                                |
+| telephoneNumber                      | Sequência de caracteres                                                            | Número de telefone da organização                                                                                                                                                                                                                                                |
 | verifiedDomains                      | Coleção [VerifiedDomain](verifieddomain.md)                    | A coleção de domínios associados a este locatário. Não anulável.                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
@@ -54,12 +53,14 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "extensions"
   ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.organization"
 }-->
 
@@ -68,11 +69,15 @@ Veja a seguir uma representação JSON do recurso
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["string"],
   "city": "string",
+  "companyLastDirSyncTime": "2018-05-12T13:09:20.111Z",
   "country": "string",
   "countryLetterCode": "string",
+  "deletionTimestamp": "2018-05-12T15:37:52.763Z",
+  "dirSyncEnabled": true,
   "displayName": "string",
   "id": "string (identifier)",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -84,6 +89,7 @@ Veja a seguir uma representação JSON do recurso
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
+  "telephoneNumber": "555-555-6568",
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 
@@ -102,5 +108,17 @@ Veja a seguir uma representação JSON do recurso
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'businessPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'onPremisesLastSyncDateTime' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'onPremisesSyncEnabled' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'securityComplianceNotificationMails' found in resource definition for 'microsoft.graph.organization', but not described in markdown table.",
+    "Warning: /api-reference/v1.0/resources/organization.md:
+      Property 'securityComplianceNotificationPhones' found in resource definition for 'microsoft.graph.organization', but not described in markdown table."
+  ],
   "tocPath": ""
 }-->

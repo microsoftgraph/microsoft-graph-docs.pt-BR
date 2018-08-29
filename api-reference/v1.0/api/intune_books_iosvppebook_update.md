@@ -24,7 +24,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -34,7 +34,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |description|Cadeia de caracteres|Descrição. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publisher|Cadeia de caracteres|Publicador. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
@@ -42,14 +42,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppE
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
-|genres|Coleção de cadeia de caracteres|Gêneros.|
+|temporadas|Coleção de cadeias de caracteres|Gêneros.|
 |idioma|Cadeia de caracteres|Idioma.|
-|seller|Cadeia de caracteres|Vendedor.|
+|vendedor|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
 
@@ -79,7 +79,7 @@ Content-length: 803
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -115,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [

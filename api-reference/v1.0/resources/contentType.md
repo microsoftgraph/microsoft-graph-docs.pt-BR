@@ -3,11 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
-ms.openlocfilehash: ee869e5f2925af92fea9eef04fd26ec483baad5b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: cb16559aa9da3a885be1977bbd1466265d0a72f0
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268330"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
 
@@ -20,7 +21,10 @@ Os tipos de conteúdo permitem definir um conjunto de colunas que devem estar pr
 ## <a name="json-representation"></a>Representação JSON
 
 Aqui está uma representação JSON de um recurso **contentType**.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType" } -->
+<!-- {
+  "blockType": "resource",
+ "baseType": "microsoft.graph.entity",
+ "@odata.type": "microsoft.graph.contentType" } -->
 
 ```json
 {
@@ -43,14 +47,14 @@ Aqui está uma representação JSON de um recurso **contentType**.
 
 | Nome da propriedade     | Tipo                 | Descrição
 |:------------------|:---------------------|:----------------------------------
-| **description**   | string               | O texto descritivo do item.
-| **group**         | string               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
+| **description**   | sequência de caracteres               | O texto descritivo do item.
+| **group**         | sequência de caracteres               | O nome do grupo ao qual esse tipo de conteúdo pertence. Ajuda a organizar os tipos de conteúdo relacionados.
 | **hidden**        | booliano              | Indica se o tipo de conteúdo está oculto no menu “Novo” da lista.
-| **id**            | string               | O identificador exclusivo do tipo de conteúdo.
+| **id**            | sequência de caracteres               | O identificador exclusivo do tipo de conteúdo.
 | **inheritedFrom** | [itemReference][]    | Se esse tipo de conteúdo for herdado de outro escopo (como um site), fornece uma referência para o item no qual o tipo de conteúdo foi definido.
-| **name**          | string               | O nome do tipo de conteúdo.
+| **name**          | sequência de caracteres               | O nome do tipo de conteúdo.
 | **order**         | [contentTypeOrder][] | Especifica a ordem na qual o tipo de conteúdo aparece na seleção da interface do usuário.
-| **parentId**      | string               | O identificador exclusivo do tipo de conteúdo.
+| **parentId**      | sequência de caracteres               | O identificador exclusivo do tipo de conteúdo.
 | **readOnly**      | booliano              | Se `true`, o tipo de conteúdo não pode ser modificado, a menos que esse valor seja definido primeiro como `false`.
 | **sealed**        | booliano              | Se `true`, o tipo de conteúdo não pode ser modificado por usuários ou por operações de push-down. Somente administradores de conjunto de sites podem lacrar ou retirar o lacre dos tipos de conteúdo.
 

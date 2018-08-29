@@ -8,13 +8,13 @@ Somente a operação de leitura é compatível com as SKUs inscritas; criar, atu
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Leia as propriedades e os relacionamentos do objeto subscribedSku.|
-|[Listar subscribedsku](../api/subscribedsku_list.md) | Coleção [subscribedSku](subscribedsku.md) |Recupere a lista de assinaturas comerciais que uma organização adquiriu.|
+|[Lista subscribedSku](../api/subscribedsku_list.md) | Coleção [subscribedSku](subscribedsku.md) |Recupere a lista de assinaturas comerciais que uma organização adquiriu.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
-|capabilityStatus|String| Por exemplo, “Enabled”. |
+|capabilityStatus|Sequência de caracteres| Por exemplo, “Enabled”. |
 |consumedUnits|Int32| O número de licenças que foram atribuídas. |
 |id|Cadeia de caracteres| O identificador exclusivo do objeto SKU assinado. Chave, não anulável. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
@@ -29,13 +29,25 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

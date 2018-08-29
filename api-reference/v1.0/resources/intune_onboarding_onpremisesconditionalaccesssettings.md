@@ -13,7 +13,7 @@ Entidade singleton que representa as Configurações de acesso condicional do Ex
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
-|habilitado|Booliano|Indica se o acesso condicional local está habilitado para esta organização|
+|enabled|Booliano|Indica se o acesso condicional local está habilitado para esta organização|
 |includedGroups|Coleção de GUIDs|Grupos de usuários que serão direcionados pelo acesso condicional local. Todos os usuários nesses grupos deverão ter dispositivos móveis gerenciados e compatíveis com o acesso a email.|
 |excludedGroups|Coleção de GUIDs|Grupos de usuários que estarão isentos ao acesso condicional local. Todos os usuários desses grupos ficarão isentos da política de acesso condicional.|
 |overrideDefaultRule|Booliano|Substitui as regras de acesso padrão ao permitir a um dispositivo que seja concedida a garantia de acesso.|
@@ -22,22 +22,22 @@ Entidade singleton que representa as Configurações de acesso condicional do Ex
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.onPremisesConditionalAccessSettings",
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }

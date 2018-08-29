@@ -7,19 +7,17 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appConfigKey|Cadeia de caracteres|chave de configuração do aplicativo.|
-|appConfigKeyType|Cadeia de caracteres|tipo de chave de configuração de aplicativo. Os valores possíveis são: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|mdmAppConfigKeyType|tipo de chave de configuração de aplicativo. Os valores possíveis são: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Cadeia de caracteres|valor de chave de configuração de aplicativo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
