@@ -1,37 +1,37 @@
-# <a name="add-directory-role-member"></a><span data-ttu-id="0e3ef-101">Adicionar membro da função de diretório</span><span class="sxs-lookup"><span data-stu-id="0e3ef-101">Add directory role member</span></span>
+# <a name="add-directory-role-member"></a><span data-ttu-id="959fa-101">Adicionar membro da função de diretório</span><span class="sxs-lookup"><span data-stu-id="959fa-101">Add directory role member</span></span>
 
-<span data-ttu-id="0e3ef-102">Use esta API para criar um novo membro de função de diretório.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-102">Use this API to create a new directory role member.</span></span>
+<span data-ttu-id="959fa-102">Use esta API para criar um novo membro de função de diretório.</span><span class="sxs-lookup"><span data-stu-id="959fa-102">Use this API to create a new directory role member.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0e3ef-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="0e3ef-103">Permissions</span></span>
-<span data-ttu-id="0e3ef-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="0e3ef-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="959fa-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="959fa-103">Permissions</span></span>
+<span data-ttu-id="959fa-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="959fa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="0e3ef-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0e3ef-106">Permission type</span></span>      | <span data-ttu-id="0e3ef-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0e3ef-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="959fa-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="959fa-106">Permission type</span></span>      | <span data-ttu-id="959fa-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="959fa-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0e3ef-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0e3ef-108">Delegated (work or school account)</span></span> | <span data-ttu-id="0e3ef-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="0e3ef-109">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="0e3ef-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0e3ef-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0e3ef-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-111">Not supported.</span></span>    |
-|<span data-ttu-id="0e3ef-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0e3ef-112">Application</span></span> | <span data-ttu-id="0e3ef-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-113">Not supported.</span></span> |
+|<span data-ttu-id="959fa-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="959fa-108">Delegated (work or school account)</span></span> | <span data-ttu-id="959fa-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="959fa-109">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="959fa-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="959fa-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="959fa-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="959fa-111">Not supported.</span></span>    |
+|<span data-ttu-id="959fa-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="959fa-112">Application</span></span> | <span data-ttu-id="959fa-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="959fa-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0e3ef-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0e3ef-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="959fa-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="959fa-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directoryRoles/{id}/members/$ref
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="0e3ef-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0e3ef-115">Request headers</span></span>
-| <span data-ttu-id="0e3ef-116">Nome</span><span class="sxs-lookup"><span data-stu-id="0e3ef-116">Name</span></span>       | <span data-ttu-id="0e3ef-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="0e3ef-117">Type</span></span> | <span data-ttu-id="0e3ef-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="0e3ef-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="959fa-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="959fa-115">Request headers</span></span>
+| <span data-ttu-id="959fa-116">Nome</span><span class="sxs-lookup"><span data-stu-id="959fa-116">Name</span></span>       | <span data-ttu-id="959fa-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="959fa-117">Type</span></span> | <span data-ttu-id="959fa-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="959fa-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="0e3ef-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="0e3ef-119">Authorization</span></span>  | <span data-ttu-id="0e3ef-120">string</span><span class="sxs-lookup"><span data-stu-id="0e3ef-120">string</span></span>  | <span data-ttu-id="0e3ef-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0e3ef-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0e3ef-123">Content-Type</span></span>  | <span data-ttu-id="0e3ef-124">application/json</span><span class="sxs-lookup"><span data-stu-id="0e3ef-124">application/json</span></span>  |
+| <span data-ttu-id="959fa-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="959fa-119">Authorization</span></span>  | <span data-ttu-id="959fa-120">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="959fa-120">string</span></span>  | <span data-ttu-id="959fa-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="959fa-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="959fa-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="959fa-123">Content-Type</span></span>  | <span data-ttu-id="959fa-124">string</span><span class="sxs-lookup"><span data-stu-id="959fa-124">string</span></span>  | <span data-ttu-id="959fa-125">application/json</span><span class="sxs-lookup"><span data-stu-id="959fa-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="0e3ef-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0e3ef-125">Request body</span></span>
-<span data-ttu-id="0e3ef-126">No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-126">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="959fa-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="959fa-126">Request body</span></span>
+<span data-ttu-id="959fa-127">No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.</span><span class="sxs-lookup"><span data-stu-id="959fa-127">In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0e3ef-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e3ef-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="959fa-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="959fa-128">Response</span></span>
 
-<span data-ttu-id="0e3ef-128">Se bem sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="959fa-129">Se bem sucedido, este método retorna um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="959fa-129">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0e3ef-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0e3ef-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0e3ef-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0e3ef-130">Request</span></span>
+## <a name="example"></a><span data-ttu-id="959fa-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="959fa-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="959fa-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="959fa-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -46,8 +46,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="0e3ef-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="0e3ef-131">Response</span></span>
-<span data-ttu-id="0e3ef-132">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="0e3ef-132">Note: The response object shown here may be truncated for brevity.</span></span> 
+##### <a name="response"></a><span data-ttu-id="959fa-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="959fa-132">Response</span></span>
+<span data-ttu-id="959fa-133">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="959fa-133">Note: The response object shown here may be truncated for brevity.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

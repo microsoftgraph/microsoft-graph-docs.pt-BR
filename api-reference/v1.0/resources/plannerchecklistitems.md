@@ -1,16 +1,19 @@
-<span data-ttu-id="b316b-p102">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="b316b-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
-As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="f90f3-101">Tipo de recurso plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="f90f3-101">plannerChecklistItems resource type</span></span>
 
-## <span data-ttu-id="b316b-111">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b316b-111">JSON representation</span></span>
-<a id="json-representation" class="xliff"></a>
+<span data-ttu-id="f90f3-p101">O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).</span><span class="sxs-lookup"><span data-stu-id="f90f3-p101">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
-<span data-ttu-id="b316b-112">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="b316b-112">Here is a JSON representation of the resource</span></span>
+
+## <a name="properties"></a><span data-ttu-id="f90f3-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f90f3-106">Properties</span></span>
+<span data-ttu-id="f90f3-p102">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="f90f3-p102">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="f90f3-111">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f90f3-111">JSON representation</span></span>
+
+<span data-ttu-id="f90f3-112">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="f90f3-112">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 
@@ -26,7 +29,7 @@ As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, 
   }
 }
 ```
-<span data-ttu-id="b316b-113">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="b316b-113">// Example</span></span>
+<span data-ttu-id="f90f3-113">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="f90f3-113">// Example</span></span>
 
 ```json
 {

@@ -3,37 +3,38 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar os subsites de um site do SharePoint
-ms.openlocfilehash: a2acf82fca78249e6ea8d05a4a95f88ed741c913
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 873b3666352e7e90dc7ffeccdfe984b384f857f2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265418"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="6ce2d-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="6ce2d-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="148e4-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="148e4-102">Enumerate subsites</span></span>
 
-<span data-ttu-id="6ce2d-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="6ce2d-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="148e4-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="148e4-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="6ce2d-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6ce2d-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="148e4-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="148e4-105">Permissions</span></span>
 
-<span data-ttu-id="6ce2d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="6ce2d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="148e4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="148e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="6ce2d-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6ce2d-108">Permission type</span></span>      | <span data-ttu-id="6ce2d-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6ce2d-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="148e4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="148e4-108">Permission type</span></span>      | <span data-ttu-id="148e4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="148e4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6ce2d-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6ce2d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6ce2d-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ce2d-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6ce2d-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6ce2d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6ce2d-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6ce2d-113">Not supported.</span></span>    |
-|<span data-ttu-id="6ce2d-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6ce2d-114">Application</span></span> | <span data-ttu-id="6ce2d-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6ce2d-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="148e4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="148e4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="148e4-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="148e4-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="148e4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="148e4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="148e4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="148e4-113">Not supported.</span></span>    |
+|<span data-ttu-id="148e4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="148e4-114">Application</span></span> | <span data-ttu-id="148e4-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="148e4-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6ce2d-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6ce2d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="148e4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="148e4-116">HTTP request</span></span>
 
-<!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
+<!-- { "blockType": "request", "name": "list-subsites", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="6ce2d-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="6ce2d-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="148e4-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="148e4-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
