@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 ms.topic: conceptual
-ms.openlocfilehash: 30f98afa7b75784b0ee2b9ec446c6389cc876949
-ms.sourcegitcommit: af8fdd5ea762fb54b7fbebb9a70bd942a56c6b7a
+ms.openlocfilehash: 2dc0ecdf553b41b92202a2d5835108f2861adfa2
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "19473150"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23280757"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 
@@ -64,7 +64,7 @@ No entanto, se o aplicativo precisar mostrar o status da ação de cópia ou gar
 Para verificar o status da ação de cópia, o aplicativo faz uma solicitação para a URL fornecida na resposta anterior.
 *Observação:* Essa solicitação não requer autenticação, pois a URL é de curta duração e exclusiva para o chamador original. 
 
-<!-- { "blockType": "request", "name": "lro-check-status", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -93,7 +93,7 @@ O aplicativo pode continuar a sondar a URL de monitor para solicitar atualizaç�
 Após alguns segundos, a operação de cópia foi concluída.
 Dessa vez, quando o aplicativo faz uma solicitação para a URL de monitor, a resposta é um redirecionamento para o resultado concluído da ação.
 
-<!-- { "blockType": "request", "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 
 ```http
 GET https://api.onedrive.com/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
@@ -119,13 +119,17 @@ Content-type: application/json
 Depois que o trabalho for concluído, a URL do monitor retornará o resourceId do resultado. Neste caso, trata-se da nova cópia do item original.
 Você pode resolver esse novo item usando resourceId; por exemplo:
 
-<!-- { "blockType": "request", "name": "lro-copy-item-example-complete", "scopes": "files.readwrite" } -->
+<!-- {
+  "blockType": "request",
+  "name": "lro-copy-item-example-complete",
+  "scopes": "files.readwrite"
+} -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/01MOWKYVJML57KN2ANMBA3JZJS2MBGC7KM
+GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -159,5 +163,11 @@ As mesmas [permissões](./permissions_reference.md) que são necessárias para r
   "description": "Monitor the progress of long-running actions in the API.",
   "keywords": "monitor,long,running,operation,action",
   "section": "documentation",
+  "suppressions": [
+    "Error: lro-check-status:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus",
+    "Error: lro-check-status-complete:
+      Unable to locate a definition for resource type: microsoft.graph.asyncJobStatus"
+  ],
   "tocPath": "Concepts/Long running actions"
 } -->

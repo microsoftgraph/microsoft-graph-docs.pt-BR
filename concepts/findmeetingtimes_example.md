@@ -46,7 +46,7 @@ As duas chamadas para **findMeetingTimes** incluem os seguintes parâmetros. Tod
 Procure por um intervalo de tempo disponível de 2 horas para ambos os usuários de 18 a 20 abril.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_first"
 }-->
 ```http
@@ -65,11 +65,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -90,15 +90,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### <a name="first-response"></a>Primeira resposta
 Não há nenhum intervalo de 2 horas durante o horário de trabalho de 18 a 20 de abril em que ambos os usuários estejam disponíveis.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
@@ -121,7 +121,7 @@ Content-Length: 184
 ### <a name="second-request"></a>Segunda solicitação
 Procure um intervalo de tempo de 2 horas em 21 de abril.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "findmeetingtimes_example_second"
 }-->
 ```http
@@ -140,11 +140,11 @@ Content-type: application/json
     }
   ],  
   "locationConstraint": { 
-    "isRequired": "false",  
-    "suggestLocation": "false",  
+    "isRequired": false,  
+    "suggestLocation": false,  
     "locations": [ 
       { 
-        "resolveAvailability": "false",
+        "resolveAvailability": false,
         "displayName": "Conf room Hood" 
       } 
     ] 
@@ -165,15 +165,15 @@ Content-type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100
 }
 ```
 
 ### <a name="second-response"></a>Segunda resposta
 A segunda solicitação **findMeetingTimes** sugere de 21 de abril, das 14h às 16h, para que os dois usuários se reúnam.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false

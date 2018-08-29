@@ -34,7 +34,7 @@ GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [user](..\api-reference\v1.0\resources\user.md) no payload. Cada usuário será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades padrão. O payload exibido abaixo foi truncado por uma questão de resumo.
+Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [user](../api-reference/v1.0/resources/user.md) no payload. Cada usuário será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades padrão. O payload exibido abaixo foi truncado por uma questão de resumo.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -77,14 +77,14 @@ Content-type: application/json
 }
 ```
 
-O Microsoft Graph também permite exibir coleções navegando entre as relações de um recurso com o outro. Por exemplo, por meio de uma propriedade de navegação **mailFolders**,você pode consultar uma coleção de recursos [mailFolder](..\api-reference\v1.0\resources\mailfolder.md), na caixa de correio do usuário:
+O Microsoft Graph também permite exibir coleções navegando entre as relações de um recurso com o outro. Por exemplo, por meio de uma propriedade de navegação **mailFolders**,você pode consultar uma coleção de recursos [mailFolder](../api-reference/v1.0/resources/mailfolder.md), na caixa de correio do usuário:
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [mailFolder](..\api-reference\v1.0\resources\user.md) no payload. Cada recurso **mailFolder** será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades. O payload exibido abaixo foi truncado por uma questão de resumo.
+Se tiver êxito, você receberá uma resposta 200 OK que contém a coleção de recursos [mailFolder](../api-reference/v1.0/resources/user.md) no payload. Cada recurso **mailFolder** será identificado pela propriedade **id** e acompanhado pelas respectivas propriedades. O payload exibido abaixo foi truncado por uma questão de resumo.
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -310,7 +310,7 @@ content-length: 96
     ],
     "attachments": [
       {
-        "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+        "@odata.type": "microsoft.graph.fileAttachment",
         "name": "menu.txt",
         "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
       }
@@ -324,7 +324,7 @@ Você pode ver todas as funções que estão disponíveis nos metadados. Eles ap
 
 ## <a name="use-the-microsoft-graph-sdks"></a>Usar os SDKs do Microsoft Graph
 
-Como o poder e a facilidade dos SDKs? Enquanto você sempre pode usar APIs REST para chamar o Microsoft Graph, também fornecemos SDKs para muitas plataformas populares. Para explorar os SDKs disponíveis, veja [Amostras de código e SDKs](https://graph.microsoft.io/pt-BR/code-samples-and-sdks).
+Como o poder e a facilidade dos SDKs? Enquanto você sempre pode usar APIs REST para chamar o Microsoft Graph, também fornecemos SDKs para muitas plataformas populares. Para explorar os SDKs disponíveis, veja [Amostras de código e SDKs](https://graph.microsoft.io/en-us/code-samples-and-sdks).
 
 ## <a name="see-also"></a>Confira também
 

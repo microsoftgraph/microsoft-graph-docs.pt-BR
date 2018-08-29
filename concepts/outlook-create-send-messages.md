@@ -86,3 +86,16 @@ Saiba mais sobre:
 
 - [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
 - [Como usar a API de email](../api-reference/v1.0/resources/mail_api_overview.md) e seus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) do Microsoft Graph versão 1.0.
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /concepts/outlook-create-send-messages.md:
+        BookmarkSkippedDocFileNotFound: Link '[creating a message](../api-reference/beta/api/user_post_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)'.",
+    "Error: /concepts/outlook-create-send-messages.md:
+      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)'."
+  ]
+}-->

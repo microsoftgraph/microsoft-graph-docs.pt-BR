@@ -4,13 +4,13 @@ O Microsoft Graph expõe as permissões granulares que controlam o acesso que os
 ## <a name="delegated-permissions-application-permissions-and-effective-permissions"></a>Permissões delegadas, Permissões de aplicativo e permissões efetivas
 O Microsoft Graph tem dois tipos de permissões: **Permissões delegadas** e **Permissões de aplicativo**. 
 
-- As **Permissões delegadas** são usadas por aplicativos com um usuário conectado. Para eles, o usuário ou um administrador concorda com as permissões que o aplicativo solicita, e o aplicativo tem permissão delegada para atuar como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o [consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
+- As **Permissões delegadas** são usadas por aplicativos com um usuário conectado. Para eles, o usuário ou um administrador concorda com as permissões que o aplicativo solicita, e o aplicativo tem permissão delegada para atuar como o usuário conectado ao fazer chamadas para o Microsoft Graph. Algumas Permissões delegadas podem ser autorizadas por usuários não administrativos, mas algumas permissões com privilégios mais altos exigem o [consentimento do administrador](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#admin-restricted-scopes).  
 
-- As **Permissões de aplicativo** são usadas por aplicativos sem um usuário conectado. Por exemplo, aplicativos executados como daemonst ou serviços em segundo plano. As Permissões de aplicativo só podem ser [autorizadas por um administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
+- As **Permissões de aplicativo** são usadas por aplicativos sem um usuário conectado. Por exemplo, aplicativos executados como daemonst ou serviços em segundo plano. As Permissões de aplicativo só podem ser [autorizadas por um administrador](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#requesting-consent-for-an-entire-tenant). 
 
 As _permissões efetivas_ são as permissões que seu aplicativo terá ao fazer solicitações ao Microsoft Graph. É importante compreender a diferença entre as Permissões Delegadas e as Permissões de aplicativo que o aplicativo tem autorização para usar e as respectivas Permissões Efetivas ao fazer chamadas para o Microsoft Graph
 
-- No caso de Permissões Delegadas, as _Permissões Efetivas_ do aplicativo estarão na interseção menos privilegiada das Permissões Delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a Permissão Delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
+- No caso de Permissões Delegadas, as _Permissões Efetivas_ do aplicativo estarão na interseção menos privilegiada das Permissões Delegadas que o aplicativo recebeu (por meio de consentimento) e dos privilégios do usuário atualmente conectado. O aplicativo jamais pode ter mais privilégios do que o usuário conectado. Nas organizações, os privilégios do usuário conectado podem ser determinados por uma política ou pela associação a uma ou mais funções de administrador. Para obter mais informações sobre funções de administrador, confira [Atribuindo funções de administrador no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles).<br/><br/>Por exemplo, digamos que o aplicativo recebeu a Permissão Delegada _User.ReadWrite.All_. Essa permissão autoriza o aplicativo a ler e atualizar o perfil de todos os usuários em uma organização. Se o usuário conectado for um administrador global, seu aplicativo conseguirá atualizar o perfil de todos os usuários na organização. No entanto, se o usuário conectado não tiver uma função de administrador, seu aplicativo conseguirá atualizar apenas o perfil do usuário conectado. Ele não conseguirá atualizar os perfis de outros usuários na organização porque o usuário que tem permissão para agir em nome de outra pessoa não tem esses privilégios.
   
 - No caso de Permissões de aplicativo, as _Permissões Efetivas_ do aplicativo estarão no nível completo de privilégios implícitos da permissão. Por exemplo, um aplicativo que tem a Permissão de aplicativo _User.ReadWrite.All_ pode atualizar o perfil de todos os usuários na organização. 
 
@@ -45,7 +45,7 @@ Com as permissões apropriadas, o aplicativo pode ler os perfis de usuários ou 
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
 
-Nenhum.
+Nenhum
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -88,7 +88,7 @@ Nenhum.
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhuma.
+Nenhum.
 
 ### <a name="example-usage"></a>Exemplo de uso
 
@@ -300,9 +300,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="delegated"></a>Delegado
 
-* _EduAssignments.Read_: extrair as informações de atribuição do aluno conectado (`GET /education/classes/<id>/assignments/<id>`)
-* _EduAssignments.ReadWriteBasic_: enviar a tarefa do aluno conectado (`GET /education/classes/<id>/assignments/<id>submit`)
-* _EduRoster.ReadBasic_: aulas de que um usuário conectado participa como aluno ou professor (`GET /education/classes/<id>/members`)
+* _EduAssignments.Read_: extrair as informações de atribuição do aluno conectado (`GET /education/classes/{id}/assignments/{id}`)
+* _EduAssignments.ReadWriteBasic_: enviar a tarefa do aluno conectado (`GET /education/classes/{id}/assignments/{id}submit`)
+* _EduRoster.ReadBasic_: aulas de que um usuário conectado participa como aluno ou professor (`GET /education/classes/{id}/members`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
@@ -480,7 +480,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+Nenhum
 
 ### <a name="remarks"></a>Comentários
 
@@ -655,7 +655,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+Nenhum
 
 ### <a name="remarks"></a>Comentários
 Você pode usar essas permissões para especificar os artefatos que deseja que sejam retornados nas solicitações de token e de autorização do Azure AD. O suporte a elas é oferecido de formas diferentes nos pontos de extremidade v 1.0 e v 2.0. do Azure AD.
@@ -804,7 +804,7 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
-Nenhum.
+Nenhum
 
 ### <a name="remarks"></a>Comentários
 As permissões de _tarefas_ são usadas para controlar o acesso de tarefas do Outlook. O acesso a tarefas do Microsoft Planner é controlado pelas permissões do [_Grupo_](#group-permissions).
@@ -984,7 +984,7 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 | _UserActivity.ReadWrite.CreatedByApp_ |Ler e gravar a atividades de aplicativos no feed de atividades de usuários |Permite que o aplicativo leia e relate as atividades do usuário conectado no aplicativo. |Não |
 
 #### <a name="delegated-permissions"></a>Permissões delegadas
-Nenhum.
+Nenhum
 
 ### <a name="remarks"></a>Comentários
 *UserActivity.ReadWrite.CreatedByApp* é válida tanto para contas da Microsoft como para contas corporativas e de estudante. 

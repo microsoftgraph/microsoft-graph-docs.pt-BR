@@ -8,7 +8,7 @@ A consulta delta oferece suporte à sincronização completa, que recupera todas
 
 A consulta delta é uma operação por pasta. Para controlar as alterações das mensagens em uma hierarquia de pastas, você precisa controlar cada pasta individualmente.
 
-O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](https://developer.microsoft.com/pt-BR/graph/docs/api-reference/v1.0/api/user_list_messages), exceto se você incluir a função **delta**:
+O rastreamento de alterações de mensagem em uma paste de email corresponde a uma série de solicitações GET com a função **delta**. A solicitação GET inicial é muito semelhante à maneira como você [obtém mensagens](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_messages), exceto se você incluir a função **delta**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -88,12 +88,13 @@ A primeira solicitação especifica o seguinte:
 - O [cabeçalho de solicitação opcional](#optional-request-header), _odata.maxpagesize_, retornando 2 mensagens de cada vez.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_1"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$select=subject,sender,isRead HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$select=subject,sender,isRead HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -148,12 +149,13 @@ A resposta inclui duas mensagens e um cabeçalho de resposta `@odata.nextLink`. 
 A segunda solicitação especifica a URL `nextLink` retornada da resposta anterior. Observe que não é mais necessário especificar o mesmo parâmetro `$select` como na solicitação inicial, pois o `skipToken` na URL `nextLink` os codifica e inclui.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_2"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -208,12 +210,12 @@ A segunda resposta retorna as 2 próximas mensagens na pasta e outro `nextLink`,
 A terceira solicitação continua a usar a última URL do `nextLink` retornada da última solicitação de sincronização.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_3"
 }-->
-
-```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+```
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -255,12 +257,13 @@ A terceira resposta retorna a única mensagem restante em uma pasta, e uma URL `
 Usando o `deltaLink` da [última solicitação](#sample-third-request) na última fase, você poderá obter somente as mensagens que sofreram alteração (por serem adicionados, excluídos ou atualizados) nesse nessa pasta desde então. Sua primeira solicitação na próxima fase terá aparência semelhante à seguinte, supondo que você prefira manter o mesmo tamanho máximo de página na resposta:
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_next"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders('AQMkADNkNAAAgEMAAAA')/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
