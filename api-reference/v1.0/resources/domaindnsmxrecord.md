@@ -1,35 +1,31 @@
-# Tipo de recurso domainDnsMxRecord
-<a id="domaindnsmxrecord-resource-type" class="xliff"></a>
+# <a name="domaindnsmxrecord-resource-type"></a>Tipo de recurso domainDnsMxRecord
 
 Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
+|id|Cadeia de caracteres| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
 |isOptional|Booliano| Se for falso, o registro MX deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar a propriedade *alias/host/name* do registro MX no host DNS. |
-|mailExchange|String| O valor usado ao configurar a propriedade *answer/destination/value* do registro MX no host DNS.|
+|rótulo|Cadeia de caracteres| O valor usado ao configurar a propriedade *alias/host/name* do registro MX no host DNS. |
+|mailExchange|Cadeia de caracteres| O valor usado ao configurar a propriedade *answer/destination/value* do registro MX no host DNS.|
 |preference|Int32| O valor usado ao configurar a propriedade *Preference/Priority* do registro MX no host DNS. |
-|recordType|String| Tipo do registro DNS. Este valor sempre será *Mx*. Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro MX.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|recordType|Cadeia de caracteres| Tipo do registro DNS. Este valor sempre será *Mx*. Chave |
+|supportedService|Cadeia de caracteres| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro MX.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| O valor a ser usado ao configurar a propriedade *time-to-live (ttl)* do registro MX no host DNS. Não anulável |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 Nenhum
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -38,7 +34,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

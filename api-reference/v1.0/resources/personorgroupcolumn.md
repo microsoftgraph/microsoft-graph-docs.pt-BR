@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
-ms.openlocfilehash: 715c6ca22957cbd951784e6cf32edf2bf47f1098
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 37c324ddb1863e3e589e7d17ea60bd879e50771f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267553"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -31,10 +32,10 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 | Nome da propriedade              | Tipo    | Descrição
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | booliano | Indica se vários valores podem ser selecionados da origem.
-| **displayAs**              | string  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.
-| **chooseFromType**         | string  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser `peopleAndGroups` ou `peopleOnly`.
+| **displayAs**              | sequência de caracteres  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.
+| **chooseFromType**         | sequência de caracteres  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser um de `peopleAndGroups` ou `peopleOnly`.
 
-## <a name="displayas-values"></a>Valores de displayAs
+## <a name="displayas-options"></a>Opções de displayAs
 
 | Valor de displayAs               | Descrição
 |:------------------------------|:-----------------------
@@ -64,5 +65,11 @@ Observação: podem ser retornados tipos adicionais de DisplayAs.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(peopleAndGroups,peopleOnly) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/personorgroupcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(account,contentType,created,department,...) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->

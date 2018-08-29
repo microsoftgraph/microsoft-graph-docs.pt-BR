@@ -28,7 +28,7 @@ A consulta padrão expande `parentNotebook` e escolhe suas propriedades `id`, `d
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 | Aceitar | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -52,7 +52,7 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http

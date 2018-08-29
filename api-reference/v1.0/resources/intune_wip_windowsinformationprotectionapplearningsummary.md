@@ -17,19 +17,19 @@ Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
-|applicationType|Cadeia de caracteres|Tipo de aplicativo Os valores possíveis são: `universal`, `desktop`.|
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal`, `desktop`.|
 |deviceCount|Int32|Contagem de dispositivos|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.windowsInformationProtectionAppLearningSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLearningSummary",

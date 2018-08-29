@@ -27,11 +27,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres| Descrição da aula.|
+|descrição|Cadeia de caracteres| Descrição da aula.|
 |displayName|Cadeia de caracteres| Nome da aula.|
-|mailNickname|Cadeia de caracteres| Alias de email para envio de email a todos os usuários, se esse recurso estiver habilitado. |
-<!-- Please verify the revised description here. -->
-|classCode|Cadeia de caracteres| Código de aula usado pela escola.| |externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. | |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.| |externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|mailNickname|Cadeia de caracteres| Alias de e-mail para envio de e-mail a todos os usuários quando esse recurso estiver habilitado. |
+<!-- Please verify the revised description here. --> |classCode|Sequência de caracteres| Código de classe usado pela escola.| |externalId|Sequência de caracteres| ID da classe no sistema de sincronização. | |externalName|Sequência de caracteres|Nome da classe no sistema de sincronização.| |externalSource|sequência de caracteres| Como essa classe foi criada. Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationClass](../resources/educationclass.md) atualizado no corpo da resposta.
@@ -43,7 +42,7 @@ Este é um exemplo de solicitação.
   "name": "update_educationclass"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/11014
+PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
 Content-length: 224
 
