@@ -26,7 +26,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
 }-->
 
 ```json

@@ -17,12 +17,11 @@ Herda de [windowsDeviceAccount](../resources/intune_devices_windowsdeviceaccount
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.windowsDeviceAccount",
   "@odata.type": "microsoft.graph.windowsDeviceADAccount"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsDeviceADAccount",

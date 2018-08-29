@@ -13,19 +13,17 @@ Uma página que contém aplicativos e pastas na tela inicial
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosHomeScreenPage"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenPage",
   "displayName": "String",
   "icons": [
     {
-      "@odata.type": "microsoft.graph.iosHomeScreenFolder",
+      "@odata.type": "microsoft.graph.iosHomeScreenItem",
       "displayName": "String",
       "pages": [
         {

@@ -21,6 +21,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.timeZoneBase",
   "@odata.type": "microsoft.graph.customTimeZone"
 }-->
 

@@ -11,15 +11,13 @@ Política de Servidor Proxy de Rede.
 |useForLocalAddresses|Booliano|Especifica se o servidor proxy deve ser usado para endereços locais (intranet).|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10NetworkProxyServer"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10NetworkProxyServer",

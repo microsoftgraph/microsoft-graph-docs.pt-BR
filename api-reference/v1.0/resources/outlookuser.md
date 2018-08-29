@@ -15,12 +15,32 @@ Representa os serviços do Outlook disponíveis para um usuário.
 
 
 ## <a name="properties"></a>Propriedades
-Nenhuma
+Nenhum
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |masterCategories|Coleção [outlookCategory](../resources/outlookCategory.md)| Uma lista de categorias definidas para o usuário. | 
+
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.outlookUser",
+  "@odata.annotations": [
+    {
+      "property": "masterCategories",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
+}-->
+```json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

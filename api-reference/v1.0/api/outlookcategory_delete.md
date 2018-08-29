@@ -38,10 +38,11 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
   "name": "delete_outlookcategory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories('4b1c2495-54c9-4a5e-90a2-0ab0b31987d8')
+DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

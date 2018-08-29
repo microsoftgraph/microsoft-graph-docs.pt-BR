@@ -18,14 +18,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryroles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -46,7 +46,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryroles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
 ```
 
 ##### <a name="response"></a>Resposta

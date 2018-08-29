@@ -16,7 +16,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/<id>/renew
+POST /groups/{id}/renew
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -42,7 +42,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
   "name": "group_renew"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/<id>/renew
+POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
 
 ##### <a name="response"></a>Resposta

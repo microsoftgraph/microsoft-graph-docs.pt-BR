@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/unmerge
+POST /workbook/names/{name}/range/unmerge
 POST /workbook/worksheets/{id|name}/range(address='<address>')/unmerge
 POST /workbook/tables/{id|name}/columns/{id|name}/range/unmerge
 
@@ -39,15 +39,14 @@ Este é um exemplo da solicitação.
   "name": "range_unmerge"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/unmerge
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/unmerge
 ```
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

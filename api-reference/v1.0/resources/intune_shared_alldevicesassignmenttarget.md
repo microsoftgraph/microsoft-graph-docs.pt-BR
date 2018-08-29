@@ -16,7 +16,7 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
 }
 -->

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Foto
-ms.openlocfilehash: a4284caa7c20e266d87e22e9b3d729e17bc88abf
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 391eafd84ab1abd4670c953720ff7097e060bfd3
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267063"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 
@@ -20,6 +21,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.photo"
 }-->
+
 ```json
 {
   "cameraMake": "string",
@@ -38,15 +40,16 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 | Propriedade                | Tipo           | Descrição
 |:------------------------|:---------------|:----------------------------------
 | **takenDateTime**       | DateTimeOffset | Representa a data e a hora em que a foto foi tirada. Somente leitura.
-| **cameraMake**          | String         | Fabricante da câmera. Somente leitura.
-| **cameraModel**         | String         | Modelo da câmera. Somente leitura.
+| **cameraMake**          | Cadeia de caracteres         | Fabricante da câmera. Somente leitura.
+| **cameraModel**         | Cadeia de caracteres         | Modelo da câmera. Somente leitura.
 | **fNumber**             | Double         | O valor de f-stop da câmera. Somente leitura.
 | **exposureDenominator** | Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura.
 | **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
 | **focalLength**         | Double         | A distância focal da câmera. Somente leitura.
-| **iso**                 | Int64          | O valor de ISO da câmera. Somente leitura.
+| **iso**                 | Int32          | O valor de ISO da câmera. Somente leitura.
 
 ## <a name="remarks"></a>Comentários
+
 O OneDrive for Business e o SharePoint retornam apenas a propriedade **takenDateTime**.
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).

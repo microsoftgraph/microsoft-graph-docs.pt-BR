@@ -18,7 +18,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

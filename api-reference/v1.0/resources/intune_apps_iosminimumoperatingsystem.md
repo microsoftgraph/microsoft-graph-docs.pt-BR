@@ -15,12 +15,10 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosMinimumOperatingSystem"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosMinimumOperatingSystem",

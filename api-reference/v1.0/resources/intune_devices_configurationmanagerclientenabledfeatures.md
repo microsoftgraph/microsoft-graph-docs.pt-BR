@@ -14,15 +14,13 @@ recursos habilitados pelo cliente do Gerenciador de Configurações
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.configurationManagerClientEnabledFeatures"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.configurationManagerClientEnabledFeatures",

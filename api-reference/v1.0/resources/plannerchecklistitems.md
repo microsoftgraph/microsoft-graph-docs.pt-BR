@@ -1,23 +1,19 @@
-# Tipo de recurso plannerChecklistItems
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
+# <a name="plannerchecklistitems-resource-type"></a>Tipo de recurso plannerChecklistItems
 
 O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "String-value" ],
   "@odata.type": "microsoft.graph.plannerChecklistItems"
 }-->
 

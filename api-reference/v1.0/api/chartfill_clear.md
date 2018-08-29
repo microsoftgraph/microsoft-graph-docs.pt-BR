@@ -1,7 +1,7 @@
 # <a name="chartfill-clear"></a>ChartFill: clear
 
 Limpe a cor de preenchimento de um elemento do gráfico.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -13,9 +13,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/title/format/fill/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/title/format/fill/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/clear
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -40,15 +40,14 @@ Este é um exemplo da solicitação.
   "name": "chartfill_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/format/fill/clear
 ```
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

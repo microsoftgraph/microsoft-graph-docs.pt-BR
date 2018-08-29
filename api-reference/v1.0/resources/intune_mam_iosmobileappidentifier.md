@@ -17,7 +17,7 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.mobileAppIdentifier",
   "@odata.type": "microsoft.graph.iosMobileAppIdentifier"
 }
 -->

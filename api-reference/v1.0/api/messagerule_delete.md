@@ -15,8 +15,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /me/mailFolders/inbox/messagerules/{id}
-DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+DELETE /me/mailFolders/inbox/messageRules/{id}
+DELETE /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -36,10 +36,11 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZp8="],
   "name": "delete_messagerule"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZp8=')
+DELETE https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZp8=
 
 ```
 ##### <a name="response"></a>Resposta

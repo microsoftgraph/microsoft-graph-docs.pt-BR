@@ -21,7 +21,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -38,7 +38,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
   "name": "delete_directoryobject"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryObject/{id}
+DELETE https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 ##### <a name="response"></a>Resposta
 

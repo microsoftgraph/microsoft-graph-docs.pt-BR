@@ -19,7 +19,7 @@ DELETE /groups/{id}/threads/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -32,6 +32,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
   "name": "delete_group_thread"
 }-->
 ```http
@@ -40,7 +41,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true

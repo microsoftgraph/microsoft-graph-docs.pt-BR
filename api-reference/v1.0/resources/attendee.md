@@ -8,7 +8,7 @@ Derivado de [attendeeBase](attendeebase.md).
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|A resposta do participante (nenhum, aceito, recusado, etc.) para o evento e a data e a hora em que a resposta foi enviada.|
-|type|String|O tipo de participante: `required`, `optional` ou `resource`.|
+|type|Cadeia de caracteres|O tipo de participante: `required`, `optional` ou `resource`.|
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -17,6 +17,7 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

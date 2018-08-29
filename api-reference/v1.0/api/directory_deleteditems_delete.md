@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/deleteditems/{id}
+DELETE /directory/deletedItems/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -49,7 +49,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
   "name": "delete_directory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 ##### <a name="response"></a>Resposta
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

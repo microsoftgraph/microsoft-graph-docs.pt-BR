@@ -37,10 +37,11 @@ A resposta inclui as IDs da nova conversa e do thread, que você pode usar na op
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["29981b6a-0e57-42dc-94c9-cd24f5306196"],
   "name": "create_conversation_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations
+POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations
 Content-type: application/json
 
 {

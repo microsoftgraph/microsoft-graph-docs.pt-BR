@@ -1,28 +1,24 @@
-# Tipo de recurso domainDnsUnavailableRecord
-<a id="domaindnsunavailablerecord-resource-type" class="xliff"></a>
+# <a name="domaindnsunavailablerecord-resource-type"></a>Tipo de recurso domainDnsUnavailableRecord
 
 Ao consultar a propriedade de navegação **serviceConfigurationRecords** de uma entidade [Domain](domain.md), você pode receber novamente uma ou mais entidades [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) e/ou [DomainDnsTxtRecord](domaindnstxtrecord.md). Essas entidades indicam quais registros DNS você deve adicionar ao arquivo de zona do domínio antes que ele possa ser usado pelo Microsoft Online Services. Quando não for possível gerar essas entidades, uma entidade DomainDnsUnavailableRecord será retornada. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|String|Fornece a razão pela qual a entidade **DomainDnsUnavailableRecord** será retornada. |
+|descrição|String|Fornece a razão pela qual a entidade **DomainDnsUnavailableRecord** será retornada. |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 Nenhum
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -31,15 +27,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "canonicalName": "String",
-  "description": "String",
-  "id": "String (identifier)",
-  "isOptional": true,
-  "label": "String",
-  "recordType": "String",
-  "supportedService": "String",
-  "text": "String",
-  "ttl": 1024
+  "description": "String"
 }
 
 ```

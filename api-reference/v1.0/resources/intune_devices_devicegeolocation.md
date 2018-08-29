@@ -16,26 +16,25 @@ Localização do dispositivo
 |speed|Double|Velocidade na qual o dispositivo está viajando, em metros por segundo|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
   "lastCollectedDateTime": "String (timestamp)",
-  "longitude": "<Unknown Primitive Type Edm.Double>",
-  "latitude": "<Unknown Primitive Type Edm.Double>",
-  "altitude": "<Unknown Primitive Type Edm.Double>",
-  "horizontalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "verticalAccuracy": "<Unknown Primitive Type Edm.Double>",
-  "heading": "<Unknown Primitive Type Edm.Double>",
-  "speed": "<Unknown Primitive Type Edm.Double>"
+  "altitude": 1024.13,
+  "latitude": 26.13246,
+  "longitude": 24.34616,
+  "horizontalAccuracy": 2.9,
+  "verticalAccuracy": 1.25,
+  "heading": 36.3,
+  "speed": 705.9
+
 }
 ```
 

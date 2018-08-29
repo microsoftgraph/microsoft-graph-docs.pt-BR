@@ -13,9 +13,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line/clear
-POST /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line/clear
+POST /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/format/line/clear
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -39,15 +39,14 @@ Este é um exemplo da solicitação.
   "name": "chartlineformat_clear"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line/clear
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line/clear
 ```
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -11,15 +11,13 @@ Ainda não documentado
 |secureByDefault|Booliano|Quando true, o dispositivo deve ser incompatível quando não há nenhuma política de conformidade direcionada|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettings",

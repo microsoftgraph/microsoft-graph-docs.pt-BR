@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar arquivos recentes
-ms.openlocfilehash: fd1b25a41369d354d18167f17b3c35e9d40bf3f4
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 9713803cb639f3eb27e46d087b0e8fec41abb5a7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267651"
 ---
 # <a name="list-recent-files"></a>Listar arquivos recentes
 
@@ -28,6 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
+       "tags": "service.graph",
        "target": "action" } -->
 
 ```http

@@ -11,12 +11,11 @@ Classe base de intervalo de IP para intervalo de endereços IPV4 e IPv6
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.ipRange"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.ipRange"

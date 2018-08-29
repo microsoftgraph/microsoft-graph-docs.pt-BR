@@ -13,7 +13,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
+DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
+DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{other-group-id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -30,15 +31,13 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
-Estes são alguns exemplos de solicitação.
+Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "remove_rejectedSender_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{id}
-
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/groups/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
 #### <a name="response"></a>Resposta

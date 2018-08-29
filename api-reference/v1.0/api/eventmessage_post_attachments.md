@@ -28,8 +28,8 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Attachment](../resources/attachment.md).
@@ -51,12 +51,12 @@ Content-type: application/json
 Content-length: 142
 
 {
-  "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "name": "name-value",
   "contentType": "contentType-value",
   "isInline": false,
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value"
+  "contentBytes": "base64-contentBytes-value"
 }
 ```
 

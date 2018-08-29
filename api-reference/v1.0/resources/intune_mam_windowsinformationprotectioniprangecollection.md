@@ -13,19 +13,17 @@ Coleção de intervalos de IP da Proteção de Informações do Windows
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionIPRangeCollection",
   "displayName": "String",
   "ranges": [
     {
-      "@odata.type": "microsoft.graph.iPv6Range",
+      "@odata.type": "microsoft.graph.ipRange",
       "lowerAddress": "String",
       "upperAddress": "String"
     }

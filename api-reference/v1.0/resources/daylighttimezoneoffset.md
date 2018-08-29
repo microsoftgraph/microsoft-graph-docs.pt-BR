@@ -32,6 +32,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.standardTimeZoneOffset",
   "@odata.type": "microsoft.graph.daylightTimeZoneOffset"
 }-->
 

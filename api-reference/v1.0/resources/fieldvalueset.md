@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: FieldValueSet
-ms.openlocfilehash: dfe11b4cdf095e8878da54760032d788f97756fb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: b0e3accc05ddf10328f8d27f8798f865e579e529
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266601"
 ---
 # <a name="fieldvalueset-resource"></a>Recurso de FieldValueSet
 
@@ -17,7 +18,8 @@ Representa os valores de coluna em um recurso [listItem](listItem.md).
 
 Aqui está uma representação JSON de um recurso **fieldValueSet**.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {

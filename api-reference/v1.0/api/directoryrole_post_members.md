@@ -20,8 +20,8 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type  | string  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [directoryObject](../resources/directoryobject.md) ou [user](../resources/user.md) a ser adicionado.

@@ -13,8 +13,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows(<index>)/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows/{index}/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -38,15 +38,14 @@ Este é um exemplo da solicitação.
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
 ```
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

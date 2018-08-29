@@ -21,7 +21,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidMinimumOperatingSystem"
 }
 -->

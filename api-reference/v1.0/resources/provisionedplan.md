@@ -19,7 +19,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

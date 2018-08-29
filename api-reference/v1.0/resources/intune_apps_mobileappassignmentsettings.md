@@ -11,12 +11,11 @@ Classe de resumo que contém as propriedades usadas para atribuir um aplicativo 
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "abstract": true,
   "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"

@@ -37,7 +37,7 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- { "blockType": "resource", "baseType": "microsoft.graph.entity", "@odata.type": "microsoft.graph.invitation" } -->
 ```json
 {
   "invitedUserDisplayName": "string",
@@ -47,8 +47,8 @@ Veja a seguir uma representação JSON do recurso
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 
