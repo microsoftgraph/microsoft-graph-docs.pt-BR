@@ -1,26 +1,25 @@
-# <a name="groupassignmenttarget-resource-type"></a><span data-ttu-id="585b6-101">Tipo de recurso groupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="585b6-101">groupAssignmentTarget resource type</span></span>
+# <a name="groupassignmenttarget-resource-type"></a><span data-ttu-id="15c44-101">Tipo de recurso groupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="15c44-101">groupAssignmentTarget resource type</span></span>
 
-> <span data-ttu-id="585b6-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="585b6-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="15c44-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="15c44-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="585b6-103">Representa uma atribuição para um grupo.</span><span class="sxs-lookup"><span data-stu-id="585b6-103">Represents an assignment to a group.</span></span>
+<span data-ttu-id="15c44-103">Representa uma atribuição para um grupo.</span><span class="sxs-lookup"><span data-stu-id="15c44-103">Represents an assignment to a group.</span></span>
 
-<span data-ttu-id="585b6-104">Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="585b6-104">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="15c44-104">Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="15c44-104">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="585b6-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="585b6-105">Properties</span></span>
-|<span data-ttu-id="585b6-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="585b6-106">Property</span></span>|<span data-ttu-id="585b6-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="585b6-107">Type</span></span>|<span data-ttu-id="585b6-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="585b6-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="15c44-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="15c44-105">Properties</span></span>
+|<span data-ttu-id="15c44-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="15c44-106">Property</span></span>|<span data-ttu-id="15c44-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="15c44-107">Type</span></span>|<span data-ttu-id="15c44-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="15c44-108">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="585b6-109">groupId</span><span class="sxs-lookup"><span data-stu-id="585b6-109">groupId</span></span>|<span data-ttu-id="585b6-110">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="585b6-110">String</span></span>|<span data-ttu-id="585b6-111">A ID do Grupo que representa o destino da atribuição.</span><span class="sxs-lookup"><span data-stu-id="585b6-111">The group Id that is the target of the assignment.</span></span>|
+|<span data-ttu-id="15c44-109">groupId</span><span class="sxs-lookup"><span data-stu-id="15c44-109">groupId</span></span>|<span data-ttu-id="15c44-110">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="15c44-110">String</span></span>|<span data-ttu-id="15c44-111">A ID do Grupo que representa o destino da atribuição.</span><span class="sxs-lookup"><span data-stu-id="15c44-111">The group Id that is the target of the assignment.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="585b6-112">Relações</span><span class="sxs-lookup"><span data-stu-id="585b6-112">Relationships</span></span>
-<span data-ttu-id="585b6-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="585b6-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="585b6-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="585b6-114">JSON Representation</span></span>
-<span data-ttu-id="585b6-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="585b6-115">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="15c44-112">Relações</span><span class="sxs-lookup"><span data-stu-id="15c44-112">Relationships</span></span>
+<span data-ttu-id="15c44-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="15c44-113">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="15c44-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="15c44-114">JSON Representation</span></span>
+<span data-ttu-id="15c44-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="15c44-115">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.groupAssignmentTarget",

@@ -1,39 +1,39 @@
-# <a name="create-device"></a><span data-ttu-id="b0dde-101">Criar dispositivo</span><span class="sxs-lookup"><span data-stu-id="b0dde-101">Create device</span></span>
+# <a name="create-device"></a><span data-ttu-id="c9d31-101">Criar dispositivo</span><span class="sxs-lookup"><span data-stu-id="c9d31-101">Create device</span></span>
 
-<span data-ttu-id="b0dde-102">Cria e registra um novo dispositivo na organização.</span><span class="sxs-lookup"><span data-stu-id="b0dde-102">Create and register a new device in the organization.</span></span>
+<span data-ttu-id="c9d31-102">Cria e registra um novo dispositivo na organização.</span><span class="sxs-lookup"><span data-stu-id="c9d31-102">Create and register a new device in the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b0dde-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="b0dde-103">Permissions</span></span>
-<span data-ttu-id="b0dde-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="b0dde-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c9d31-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="c9d31-103">Permissions</span></span>
+<span data-ttu-id="c9d31-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="c9d31-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="b0dde-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b0dde-106">Permission type</span></span>      | <span data-ttu-id="b0dde-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b0dde-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c9d31-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c9d31-106">Permission type</span></span>      | <span data-ttu-id="c9d31-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c9d31-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b0dde-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b0dde-108">Delegated (work or school account)</span></span> | <span data-ttu-id="b0dde-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b0dde-109">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b0dde-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b0dde-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b0dde-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b0dde-111">Not supported.</span></span>    |
-|<span data-ttu-id="b0dde-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b0dde-112">Application</span></span> | <span data-ttu-id="b0dde-113">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b0dde-113">Device.ReadWrite.All</span></span> |
+|<span data-ttu-id="c9d31-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c9d31-108">Delegated (work or school account)</span></span> | <span data-ttu-id="c9d31-109">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c9d31-109">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="c9d31-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c9d31-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9d31-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c9d31-111">Not supported.</span></span>    |
+|<span data-ttu-id="c9d31-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c9d31-112">Application</span></span> | <span data-ttu-id="c9d31-113">Device.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c9d31-113">Device.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b0dde-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b0dde-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c9d31-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c9d31-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="b0dde-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b0dde-115">Request headers</span></span>
-| <span data-ttu-id="b0dde-116">Nome</span><span class="sxs-lookup"><span data-stu-id="b0dde-116">Name</span></span>       | <span data-ttu-id="b0dde-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="b0dde-117">Type</span></span> | <span data-ttu-id="b0dde-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="b0dde-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c9d31-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c9d31-115">Request headers</span></span>
+| <span data-ttu-id="c9d31-116">Nome</span><span class="sxs-lookup"><span data-stu-id="c9d31-116">Name</span></span>       | <span data-ttu-id="c9d31-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="c9d31-117">Type</span></span> | <span data-ttu-id="c9d31-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9d31-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b0dde-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="b0dde-119">Authorization</span></span>  | <span data-ttu-id="b0dde-120">string</span><span class="sxs-lookup"><span data-stu-id="b0dde-120">string</span></span>  | <span data-ttu-id="b0dde-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b0dde-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b0dde-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="b0dde-123">Content-type</span></span> | <span data-ttu-id="b0dde-124">string</span><span class="sxs-lookup"><span data-stu-id="b0dde-124">string</span></span> | <span data-ttu-id="b0dde-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b0dde-125">application/json</span></span> |
+| <span data-ttu-id="c9d31-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="c9d31-119">Authorization</span></span>  | <span data-ttu-id="c9d31-120">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="c9d31-120">string</span></span>  | <span data-ttu-id="c9d31-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c9d31-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c9d31-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="c9d31-123">Content-type</span></span> | <span data-ttu-id="c9d31-124">string</span><span class="sxs-lookup"><span data-stu-id="c9d31-124">string</span></span> | <span data-ttu-id="c9d31-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c9d31-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b0dde-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b0dde-126">Request body</span></span>
-<span data-ttu-id="b0dde-127">No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).</span><span class="sxs-lookup"><span data-stu-id="b0dde-127">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c9d31-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c9d31-126">Request body</span></span>
+<span data-ttu-id="c9d31-127">No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).</span><span class="sxs-lookup"><span data-stu-id="c9d31-127">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b0dde-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="b0dde-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c9d31-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9d31-128">Response</span></span>
 
-<span data-ttu-id="b0dde-129">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [device](../resources/device.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b0dde-129">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+<span data-ttu-id="c9d31-129">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [device](../resources/device.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c9d31-129">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b0dde-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b0dde-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b0dde-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b0dde-131">Request</span></span>
-<span data-ttu-id="b0dde-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b0dde-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c9d31-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c9d31-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c9d31-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c9d31-131">Request</span></span>
+<span data-ttu-id="c9d31-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c9d31-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -48,7 +48,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
@@ -57,9 +57,9 @@ Content-type: application/json
   "operatingSystemVersion":"1"
 }
 ```
-<span data-ttu-id="b0dde-133">No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).</span><span class="sxs-lookup"><span data-stu-id="b0dde-133">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="b0dde-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="b0dde-134">Response</span></span>
-<span data-ttu-id="b0dde-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b0dde-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="c9d31-133">No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).</span><span class="sxs-lookup"><span data-stu-id="c9d31-133">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9d31-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="c9d31-134">Response</span></span>
+<span data-ttu-id="c9d31-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c9d31-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -75,7 +75,7 @@ Content-type: application/json
   [
     {
       "type":2,
-      "key":"Y3YxN2E1MWFlYw=="
+      "key":"base64Y3YxN2E1MWFlYw=="
     }
   ],
   "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
