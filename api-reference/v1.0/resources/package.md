@@ -3,13 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Pacote
-ms.openlocfilehash: 33be73ed79438bdf28b76747b6efb79290be8d0c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 12ae750a0f4fbe0e951554308d4041928c31a16d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267539"
 ---
-# <a name="package-resource-type"></a>Tipo de recurso de pacote
+# <a name="package-resource-type"></a>Tipo de recurso Package
 
 O recurso **Package** indica que um DriveItem é o item de nível superior em um "pacote" ou uma coleção de itens que devem ser tratados como uma coleção, em vez de itens individuais.
 
@@ -26,9 +27,11 @@ DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file
 }
 ```
 
-| Nome da Propriedade | Tipo   | Descrição                                                                                                                                                                      |
+## <a name="properties"></a>Propriedades
+
+| Nome da propriedade | Tipo   | Descrição                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | Uma cadeia de caracteres indicando o tipo de pacote. Embora `oneNote` seja o único valor definido atualmente, você deve esperar que outros tipos de pacote sejam retornados e lidar com eles da forma apropriada. |
+| type          | sequência de caracteres | Uma cadeia de caracteres indicando o tipo de pacote. Embora `oneNote` seja o único valor definido atualmente, você deve esperar que outros tipos de pacote sejam retornados e lidar com eles da forma apropriada. |
 
 ## <a name="remarks"></a>Comentários 
 

@@ -7,18 +7,18 @@ Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines_get.md) | [ChartGridlines](chartgridlines.md) |Leia as propriedades e os relacionamentos do objeto chartGridlines.|
-|[Update](../api/chartgridlines_update.md) | [ChartGridlines](chartgridlines.md)    |Atualize o objeto ChartGridlines. |
+|[Get ChartGridlines](../api/chartgridlines_get.md) | [WorkbookChartGridlines](chartgridlines.md) |Leia as propriedades e os relacionamentos do objeto chartGridlines.|
+|[Update](../api/chartgridlines_update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Atualiza o objeto ChartGridlines. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|visible|booliano|Valor booliano que determina se as linhas de grade do eixo ficam visíveis ou não.|
+|visible|boolean|Valor booleano que determina se as linhas de grade do eixo ficam visíveis ou não.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|
+|formato|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -26,10 +26,11 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartGridLines"
+  "@odata.type": "microsoft.graph.workbookChartGridlines"
 }-->
 
 ```json

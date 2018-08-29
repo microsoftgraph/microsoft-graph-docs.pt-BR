@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: DateTimeColumn
-ms.openlocfilehash: ce5f06b6e0d88324813372c2431b62e6b9105bcb
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 6f2c14d5fa67fa80c869c20081250bfa55e0f5e4
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267826"
 ---
 # <a name="datetimecolumn-resource-type"></a>Tipo de recurso DateTimeColumn
 
@@ -32,7 +33,7 @@ Aqui está uma representação JSON de um recurso **dateTimeColumn**.
 | **displayAs**      | string             | Como o valor deve ser apresentado na experiência do usuário. Deve ser `default`, `friendly` ou `standard`. Consulte abaixo para ver mais detalhes. Se não for especificado, é tratado como `default`.
 | **format**         | string             | Indica se o valor deve ser apresentado como apenas uma data ou uma data e hora. Deve ser `dateOnly` ou `dateTime`
 
-## <a name="displayas-values"></a>Valores de displayAs
+## <a name="displayas-options"></a>Opções de DisplayAs
 
 | Valor        | Descrição
 |:-------------|:--------------------------------------------------------------
@@ -46,5 +47,13 @@ Aqui está uma representação JSON de um recurso **dateTimeColumn**.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/choicecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(checkBoxes,dropDownMenu,radioButtons) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(default,friendly,standard) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/datetimecolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/DateTimeColumn"
 } -->

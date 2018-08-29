@@ -7,9 +7,9 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Listar conversas](../api/group_list_conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
-|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
-|[Obter conversa](../api/conversation_get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
-|[Delete](../api/conversation_delete.md) | Nenhuma |Exclua um objeto conversation. |
+|[Criar](../api/group_post_conversations.md) |[conversa](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
+|[Obter conversa](../api/conversation_get.md) | [conversa](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
+|[Excluir](../api/conversation_delete.md) | Nenhum |Exclua um objeto conversation. |
 |[Listar threads de conversas](../api/conversation_list_threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
 |[Criar thread de conversas](../api/conversation_post_threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
 
@@ -17,10 +17,10 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |hasAttachments|Booliano|Indica se qualquer uma das postagens nesta Conversa tem pelo menos um anexo.|
-|id|String|Identificador exclusivo de conversas. Somente leitura.|
+|id|Sequência de caracteres|Identificador exclusivo de conversas. Somente leitura.|
 |lastDeliveredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|visualização|String|Um breve resumo do corpo da última postagem nesta conversa.|
-|topic|String|O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.|
+|visualização|Sequência de caracteres|Um breve resumo do corpo da última postagem nesta conversa.|
+|tópico|Sequência de caracteres|O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.|
 |uniqueSenders|Coleção de cadeias de caracteres|Todos os usuários que enviaram uma mensagem para esta conversa.|
 
 ## <a name="relationships"></a>Relações
@@ -32,13 +32,23 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversation"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversation",
+  "@odata.annotations": [
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -48,7 +58,9 @@ Veja a seguir uma representação JSON do recurso
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"]
+  "uniqueSenders": ["string"],
+
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
 }
 
 ```

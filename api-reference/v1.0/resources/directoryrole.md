@@ -16,10 +16,10 @@ Representa uma função do diretório do Azure AD. As funções de diretório do
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|String|A descrição da função de diretório. Somente leitura. |
-|displayName|String|O nome de exibição da função de diretório. Somente leitura. |
-|id|String|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
-|roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
+|descrição|Sequência de caracteres|A descrição da função de diretório. Somente leitura. |
+|displayName|Sequência de caracteres|O nome de exibição da função de diretório. Somente leitura. |
+|id|Sequência de caracteres|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
+|roleTemplateId|Sequência de caracteres| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
@@ -30,8 +30,9 @@ Representa uma função do diretório do Azure AD. As funções de diretório do
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
     "memberOf",
     "members",
@@ -39,7 +40,15 @@ Veja a seguir uma representação JSON do recurso
     "owners"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRole"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRole",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

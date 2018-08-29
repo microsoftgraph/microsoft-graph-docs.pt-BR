@@ -37,22 +37,35 @@ Para obter informações sobre as permissões necessárias para trabalhar com o 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |notebooks|Coleção [Notebook](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
-|operations|Coleção [Operation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
-|páginas|Coleção [Page](page.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
-|recursos|Coleção [Resource](resource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|
+|operations|Coleção [OnenoteOperation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
+|pages|Coleção [OnenotePage](page.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|resources|Coleção [OnenoteResource](resource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|
 |sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
-|seções|Coleção [Section](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|sections|Coleção [OnenoteSection](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Create notebook](../api/onenote_post_notebooks.md) |[Notebook](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
-|[List notebooks](../api/onenote_list_notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
-|[Create page](../api/onenote_post_pages.md) |[Page](page.md)| Crie uma página postando na coleção pages.|
-|[List pages](../api/onenote_list_pages.md) |Coleção [Page](page.md)| Obter uma coleção de páginas.|
-|[List section groups](../api/onenote_list_sectiongroups.md) |Coleção [SectionGroup](sectiongroup.md)| Obter uma coleção de grupos de seção.|
-|[List sections](../api/onenote_list_sections.md) |Coleção [Section](section.md)| Obter uma coleção de seções.|
+|[Criar bloco de anotações](../api/onenote_post_notebooks.md) |[Bloco de anotações](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
+|[Listar bloco de anotações](../api/onenote_list_notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
+|[Criar página](../api/onenote_post_pages.md) |[Página](page.md)| Crie uma página postando na coleção pages.|
+|[Listar páginas](../api/onenote_list_pages.md) |Coleção [Page](page.md)| Obter uma coleção de páginas.|
+|[Listar grupos de seção](../api/onenote_list_sectiongroups.md) |Coleção [SectionGroup](sectiongroup.md)| Obter uma coleção de grupos de seção.|
+|[Listar seções](../api/onenote_list_sections.md) |Coleção [OnenoteSection](section.md)| Obter uma coleção de seções.|
+
+
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

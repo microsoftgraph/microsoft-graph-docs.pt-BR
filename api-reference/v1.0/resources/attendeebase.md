@@ -10,6 +10,7 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.recipient",
   "optionalProperties": [
 
   ],
@@ -24,9 +25,9 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|type|String| O tipo de participante. Os valores possíveis são: `required`, `optional`, `resource`. Atualmente, se o participante é uma pessoa, [findMeetingTimes](../api/user_findmeetingtimes.md) sempre considera que a pessoa é do tipo `Required`.|
+|type|attendeeType| O tipo de participante. Os valores possíveis são: `required`, `optional`, `resource`. Atualmente, se o participante for uma pessoa, [findMeetingTimes](../api/user_findmeetingtimes.md) sempre considera que a pessoa é do tipo `Required`.|
 |emailAddress|[emailAddress](emailAddress.md)|Inclui o nome e endereço SMTP do participante.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

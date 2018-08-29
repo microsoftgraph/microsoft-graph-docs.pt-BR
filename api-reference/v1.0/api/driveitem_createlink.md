@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Compartilhar um arquivo com um link
-ms.openlocfilehash: 2a1471cf08545bb24b8da47ce1792f85860d07ca
-ms.sourcegitcommit: 9f78a3506e1c1ad0733264ce21a1f8acfeadb90a
+ms.openlocfilehash: bbdf872216a5a9e266e04c95868e0179cf15e553
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "22223470"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266804"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
@@ -47,8 +47,8 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
 |   Nome    |  Tipo  |                                 Descrição                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
-| **scope** | string | Opcional. O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. |
+| **type**  | sequência de caracteres | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
+| **scope** | sequência de caracteres | Opcional. O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. |
 
 
 ### <a name="link-types"></a>Tipos de link
@@ -66,10 +66,11 @@ Os seguintes valores são permitidos para o parâmetro **type**.
 Os seguintes valores são permitidos para o parâmetro **scope**.
 Se o parâmetro **scope** não for especificado, o tipo de link padrão será criado para a organização.
 
-| Valor do tipo     | Descrição                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Cria um link para o DriveItem, que pode ser acessado por qualquer pessoa com o link. Links anônimos podem ser desabilitados por um administrador.                 |
-| `organization` | Cria um link para o DriveItem, que pode ser acessado por qualquer pessoa dentro da organização do usuário. O escopo do link da organização não está disponível para uso pessoal do OneDrive. |
+| Valor          | Descrição
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Qualquer pessoa com o link possui acesso, sem precisar entrar. Isso pode incluir pessoas fora da sua organização. Suporte a link anônimo pode ser desabilitado por um administrador.
+| `organization` | Qualquer pessoa conectada na sua organização (inquilino) pode usar o link para obter acesso. Disponível somente no OneDrive for Business e no SharePoint.
+
 
 ## <a name="response"></a>Resposta
 
@@ -86,11 +87,11 @@ O link de compartilhamento é configurado como somente leitura e utilizável por
 
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "create-link"
 }-->
 
 ```http
-POST /me/drive/items/{itemId}/createLink
+POST /me/drive/items/{item-id}/createLink
 Content-type: application/json
 
 {
@@ -130,7 +131,7 @@ Para criar um link compartilhável pela empresa, use o parâmetro **scope** com 
 
 ### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -171,9 +172,9 @@ Ao usar o tipo de link `embed`, a webUrl retornada pode ser inserida em um eleme
 
 **Observação:** os links de inseridos só tem suporte no OneDrive Pessoal.
 
-### <a name="request"></a>Solicitar
+### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink

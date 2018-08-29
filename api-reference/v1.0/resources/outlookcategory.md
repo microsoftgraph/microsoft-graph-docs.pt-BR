@@ -12,10 +12,9 @@ Cada categoria é atribuída por duas propriedades: **displayName** e **color**.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|Cadeia de caracteres|Um nome exclusivo que identifica uma categoria na caixa de correio do usuário. Após a criação de uma categoria, o nome não poderá ser alterado. Somente leitura.|
-|color|Cadeia de caracteres|Uma constante de cor predefinida que caracteriza uma categoria e que é mapeada para uma das 25 cores predefinidas. Confira a observação abaixo. |
+|cor|categoryColor|Uma constante de cor predefinida que caracteriza uma categoria e que é mapeada para uma das 25 cores predefinidas. Confira a observação abaixo. |
 
 > **Observação** Os valores possíveis para **color** são constantes predefinidas como `None`, `preset0` e `preset1`. Cada constante predefinida é mapeada para uma cor. A cor real depende do cliente do Outlook em que as categorias estão sendo exibidas. A tabela a seguir mostra as cores mapeadas para cada constante predefinida do Outlook (cliente da área de trabalho). 
-
 
 | Constante predefinida  | Cor mapeada para no Outlook |
 |:---------------|:--------|
@@ -29,8 +28,8 @@ Cada categoria é atribuída por duas propriedades: **displayName** e **color**.
 | Preset6 | Verde-oliva |
 | Preset7 | Azul |
 | Preset8 | Roxo |
-| Preset9 | Cranberry |
-| Preset10 | Steel |
+| Preset9 | Uva |
+| Preset10 | Aço |
 | Preset11 | DarkSteel |
 | Preset12 | Cinza |
 | Preset13 | DarkGray |
@@ -54,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookCategory"
 }-->
 
@@ -82,6 +82,10 @@ Veja a seguir uma representação JSON do recurso.
   "description": "outlookCategory resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
+      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
+  ],
   "tocPath": ""
 }-->
  

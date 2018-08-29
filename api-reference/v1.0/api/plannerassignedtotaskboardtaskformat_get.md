@@ -1,4 +1,4 @@
-# <a name="get-plannerassignedtotaskboardtaskformat"></a>Get plannerAssignedToTaskBoardTaskFormat
+# <a name="get-plannerassignedtotaskboardtaskformat"></a>Obter plannerAssignedToTaskBoardTaskFormat
 
 Recupere as propriedades e os relacionamentos do objeto **plannerAssignedToTaskBoardTaskFormat**.
 ## <a name="permissions"></a>Permissões
@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/assignedToTaskBoardFormat
+GET /planner/tasks/{id}/assignedToTaskBoardFormat
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -37,7 +37,7 @@ Este é um exemplo da solicitação.
   "name": "get_plannerassignedtotaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
+GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/assignedToTaskBoardFormat
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

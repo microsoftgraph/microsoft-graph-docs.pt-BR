@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/buckets/<id>
+PATCH /planner/buckets/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -26,9 +26,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|String|Nome do bucket.|
-|orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner_order_hint_format.md).|
-|planId|String|ID do plano ao qual o bucket pertence.|
+|name|Sequência de caracteres|Nome do bucket.|
+|orderHint|Sequência de caracteres|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner_order_hint_format.md).|
+|planId|Sequência de caracteres|ID do plano ao qual o bucket pertence.|
 
 ## <a name="response"></a>Resposta
 
@@ -44,7 +44,7 @@ Este é um exemplo da solicitação.
   "name": "update_plannerbucket"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR
+PATCH https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}
 Content-type: application/json
 Content-length: 27
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

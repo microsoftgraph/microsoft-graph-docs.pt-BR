@@ -26,7 +26,7 @@ Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
+| ponto    | string | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. Obrigatório. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -42,7 +42,7 @@ As URLs de download previamente autenticadas são válidas apenas por um curto p
 
 O arquivo CSV possui os seguintes cabeçalhos para colunas:
 
-- Data de Atualização do Relatório
+- Data de atualização do relatório
 - Web
 - Windows Phone
 - Telefone Android
@@ -70,7 +70,11 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageDistributionUser
 
 Este é um exemplo de resposta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -80,11 +84,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK
