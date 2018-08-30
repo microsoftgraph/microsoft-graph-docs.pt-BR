@@ -1,38 +1,37 @@
-# <a name="list-attachments"></a><span data-ttu-id="efb05-101">Listar anexos</span><span class="sxs-lookup"><span data-stu-id="efb05-101">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="d934b-101">Listar anexos</span><span class="sxs-lookup"><span data-stu-id="d934b-101">List attachments</span></span>
 
-<span data-ttu-id="efb05-102">Recupere uma lista de objetos [attachment](../resources/attachment.md) anexados a uma postagem.</span><span class="sxs-lookup"><span data-stu-id="efb05-102">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.</span></span>
-## <a name="permissions"></a><span data-ttu-id="efb05-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="efb05-103">Permissions</span></span>
-<span data-ttu-id="efb05-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="efb05-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="d934b-102">Recupere uma lista de objetos [attachment](../resources/attachment.md) anexados a uma postagem.</span><span class="sxs-lookup"><span data-stu-id="d934b-102">Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d934b-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="d934b-103">Permissions</span></span>
+<span data-ttu-id="d934b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="d934b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="efb05-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="efb05-106">Permission type</span></span>      | <span data-ttu-id="efb05-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="efb05-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d934b-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d934b-106">Permission type</span></span>      | <span data-ttu-id="d934b-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d934b-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="efb05-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="efb05-108">Delegated (work or school account)</span></span> | <span data-ttu-id="efb05-109">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="efb05-109">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="efb05-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="efb05-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="efb05-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="efb05-111">Not supported.</span></span>    |
-|<span data-ttu-id="efb05-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="efb05-112">Application</span></span> | <span data-ttu-id="efb05-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="efb05-113">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="d934b-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d934b-108">Delegated (work or school account)</span></span> | <span data-ttu-id="d934b-109">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d934b-109">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d934b-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d934b-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d934b-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d934b-111">Not supported.</span></span>    |
+|<span data-ttu-id="d934b-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d934b-112">Application</span></span> | <span data-ttu-id="d934b-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d934b-113">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="efb05-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="efb05-114">HTTP request</span></span>
-<!-- { "blockType": "ignored" } -->
-<span data-ttu-id="efb05-115">Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.</span><span class="sxs-lookup"><span data-stu-id="efb05-115">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
+## <a name="http-request"></a><span data-ttu-id="d934b-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d934b-114">HTTP request</span></span>
+<span data-ttu-id="d934b-115"><!-- { "blockType": "ignored" } --> Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.</span><span class="sxs-lookup"><span data-stu-id="d934b-115">Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.</span></span>
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="efb05-116">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="efb05-116">Optional query parameters</span></span>
-<span data-ttu-id="efb05-117">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="efb05-117">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="efb05-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="efb05-118">Request headers</span></span>
-| <span data-ttu-id="efb05-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="efb05-119">Header</span></span>       | <span data-ttu-id="efb05-120">Valor</span><span class="sxs-lookup"><span data-stu-id="efb05-120">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="d934b-116">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d934b-116">Optional query parameters</span></span>
+<span data-ttu-id="d934b-117">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d934b-117">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d934b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d934b-118">Request headers</span></span>
+| <span data-ttu-id="d934b-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d934b-119">Header</span></span>       | <span data-ttu-id="d934b-120">Valor</span><span class="sxs-lookup"><span data-stu-id="d934b-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="efb05-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="efb05-121">Authorization</span></span>  | <span data-ttu-id="efb05-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="efb05-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="d934b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="d934b-121">Authorization</span></span>  | <span data-ttu-id="d934b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d934b-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="efb05-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="efb05-124">Request body</span></span>
-<span data-ttu-id="efb05-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="efb05-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d934b-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d934b-124">Request body</span></span>
+<span data-ttu-id="d934b-125">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d934b-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="efb05-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="efb05-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d934b-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="d934b-126">Response</span></span>
 
-<span data-ttu-id="efb05-127">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="efb05-127">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="efb05-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="efb05-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="efb05-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="efb05-129">Request</span></span>
-<span data-ttu-id="efb05-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="efb05-130">Here is an example of the request.</span></span>
+<span data-ttu-id="d934b-127">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d934b-127">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d934b-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d934b-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d934b-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d934b-129">Request</span></span>
+<span data-ttu-id="d934b-130">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d934b-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_attachments"
@@ -40,12 +39,12 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}/attachments
 ```
-##### <a name="response"></a><span data-ttu-id="efb05-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="efb05-131">Response</span></span>
-<span data-ttu-id="efb05-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="efb05-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d934b-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="d934b-131">Response</span></span>
+<span data-ttu-id="d934b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d934b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -56,11 +55,11 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "id": "id-value",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "isInline": false,
