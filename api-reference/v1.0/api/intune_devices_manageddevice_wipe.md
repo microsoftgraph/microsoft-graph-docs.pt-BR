@@ -26,7 +26,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -43,16 +43,16 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, esta ação retornará um código de resposta `204 No Content`.
+Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+
+<!-- { "blockType": "request" } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/wipe
-
 Content-type: application/json
-Content-length: 109
 
 {
   "keepEnrollmentData": true,
@@ -63,6 +63,8 @@ Content-length: 109
 
 ### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- { "blockType": "response" } -->
 ``` http
 HTTP/1.1 204 No Content
 ```

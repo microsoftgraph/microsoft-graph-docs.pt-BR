@@ -13,9 +13,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Cell
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Cell
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
+GET /workbook/names/{name}/range/cell
+GET /workbook/worksheets/{id|name}/range(address='<address>')/cell
+GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -24,13 +24,13 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/Cell
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+## <a name="path-parameters"></a>Parâmetros do caminho
+Forneça os seguintes parâmetros no caminho.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|row|number|O número da linha da célula a ser recuperada. Indexados com zero.|
-|column|number|O número da coluna da célula a ser recuperada. Indexados com zero.|
+|linha|Int32|O número da linha da célula a ser recuperada. Indexados com zero.|
+|coluna|Int32|O número da coluna da célula a ser recuperada. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 
@@ -40,21 +40,13 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_cell"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Cell
-Content-type: application/json
-Content-length: 37
-
-{
-  "row": {
-  },
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/cell(row=5,column=6)
 ```
 
 ##### <a name="response"></a>Resposta
@@ -62,7 +54,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

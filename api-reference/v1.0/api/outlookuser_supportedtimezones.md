@@ -28,14 +28,13 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de responsável. Obrigatório. |
 
 
-## <a name="parameters"></a>Parâmetros
-| Parâmetros da função       | Tipo | Descrição|
+## <a name="function-parameters"></a>Parâmetros de função
+| Parâmetro       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| TimeZoneStandard  | Cadeia de caracteres  | Um formato de fuso horário. Os valores com suporte são: `Windows` e `Iana`. Opcional. |
-
+| TimeZoneStandard  | timeZoneStandard  | Um formato de fuso horário. Os valores com suporte são: `Windows` e `Iana`. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

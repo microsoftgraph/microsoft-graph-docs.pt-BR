@@ -7,19 +7,19 @@ Representa uma linha em uma tabela.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
-|[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)    |Atualize o objeto TableRow. |
-|[Range](../api/tablerow_range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow_delete.md)|Nenhum|Exclui a linha da tabela.|
-|[List](../api/tablerow_list.md) | Coleção [TableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
-|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Adiciona uma nova linha à tabela.|
+|[Get TableRow](../api/tablerow_get.md) | [WorkbookTableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
+|[Atualizar](../api/tablerow_update.md) | [WorkbookTableRow](tablerow.md)  |Atualize o objeto TableRow. |
+|[Intervalo](../api/tablerow_range.md)|[Intervalo](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
+|[Excluir](../api/tablerow_delete.md)|Nenhum|Exclui a linha da tabela.|
+|[Lista](../api/tablerow_list.md) | Coleção [WorkbookTableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
+|[Itemat](../api/tablerowcollection_itemat.md)|[WorkbookTableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
+|[Adicionar](../api/tablerowcollection_add.md)|[WorkbookTableRow](tablerow.md)|Adiciona uma nova linha à tabela.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |índice|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
-|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -29,12 +29,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableRow"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableRow"
 }-->
 
 ```json

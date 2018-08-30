@@ -22,18 +22,18 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades graváveis/atualizáveis são
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|categories|String|As categorias associadas à mensagem.|
-|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
-|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isRead|Boolean|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|categories|Cadeia de caracteres|As categorias associadas à mensagem.|
+|importance|Sequência de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isRead|Booliano|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 
 ## <a name="response"></a>Resposta
 

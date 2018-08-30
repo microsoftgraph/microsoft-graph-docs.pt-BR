@@ -1,4 +1,4 @@
-# <a name="microsoft-teams-teamwork-api-overview"></a>Visão geral da API de trabalho em equipe do Microsoft Teams
+# <a name="microsoft-teams-api-overview-preview"></a>Visão geral da API de equipes da Microsoft (versão prévia)
 
 O Microsoft Teams é o melhor hub para trabalhos em equipe e comunicações inteligentes. Criado com base na força e na escala do Office 365, que conta com mais de 120 milhões de usuários, o Microsoft Teams oferece recursos de colaboração, reuniões, chamadas e voz empresarial baseados em bate-papo.
 
@@ -16,7 +16,7 @@ Os sites, serviços e aplicativos de plataformas nativas não são executados na
 
 ![Chame a API do Microsoft Teams em guias, bots, sites e serviços](images/TeamsAppEndpoints.png)
 
-Essas ferramentas de colaboração incluem guias habilitadas para o Microsoft Graph ou aplicativos de bot executados no Microsoft Teams. Você também pode chamar o Microsoft Graph fora de um aplicativo do Microsoft Teams, como de um site ou de serviço Web. Se já tiver habilitado seu site para o Microsoft Graph, você poderá usar esse trabalho para o Microsoft Teams utilizando a [plataforma de desenvolvedor do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/#pivot=home&panel=home-all) para criar um aplicativo de guias que usa o código de site existente.
+Essas ferramentas de colaboração incluem guias habilitadas para o Microsoft Graph ou aplicativos de bot executados no Microsoft Teams. Você também pode chamar o Microsoft Graph fora de um aplicativo do Microsoft Teams, como de um site ou de serviço Web. Se já tiver habilitado seu site para o Microsoft Graph, você poderá usar esse trabalho para o Microsoft Teams utilizando a [plataforma de desenvolvedor do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) para criar um aplicativo de guias que usa o código de site existente.
 
 Se um aplicativo de bot ou uma guia do Microsoft Teams não for a maneira ideal de concluir seu cenário, escolha um dos seguintes tipos de aplicativos.
 
@@ -31,7 +31,6 @@ Se um aplicativo de bot ou uma guia do Microsoft Teams não for a maneira ideal 
 |Extensões de mensagens|Permita que os usuários consultem e compartilhem cartões aprimorados em conversas.|
 |Serviços|Aprimore seus aplicativos cliente com dados do Microsoft Graph por meio do seu serviço Web.|
 
-
 ### <a name="create-multiple-teams-and-channels"></a>Criar várias equipes e canais
 
 Permita que seus clientes criem novas [equipes](../api-reference/beta/resources/team.md) e [canais](../api-reference/beta/resources/channel.md) vinculados ao seu aplicativo. Facilite a criação de um grande número de equipes e o preenchimento delas com usuários e canais usando a API do Microsoft Teams.
@@ -45,9 +44,7 @@ Quando o problema de negócios for resolvido e você já não precisar da equipe
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [usar a API do Microsoft Teams](../api-reference/beta/resources/teams_api_overview.md).
-- Analise em detalhes os métodos, propriedades e relações dos recursos de [equipe](../api-reference/beta/resources/team.md), [canal](../api-reference/beta/resources/channel.md) e [grupo](.../api-reference/v1.0/resources/group.md).
-- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
-- Leia mais sobre o [modelo de programação do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/concepts-overview).
+- Analise em detalhes os métodos, propriedades e relações dos recursos de [equipe](../api-reference/beta/resources/team.md), [canal](../api-reference/beta/resources/channel.md) e [grupo](../api-reference/v1.0/resources/group.md).
+- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
+- Leia mais sobre o [modelo de programação do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Comece a trabalhar com um [código de exemplo](https://github.com/OfficeDev/microsoft-teams-sample-graph).
-
-
