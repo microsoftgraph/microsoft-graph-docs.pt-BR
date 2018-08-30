@@ -18,7 +18,7 @@ Herda de [managedEBook](../resources/intune_books_managedebook.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |description|Cadeia de caracteres|Descrição. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |publisher|Cadeia de caracteres|Publicador. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
@@ -26,12 +26,12 @@ Herda de [managedEBook](../resources/intune_books_managedebook.md)
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
-|genres|Coleção de cadeia de caracteres|Gêneros.|
+|genres|Coleção de cadeias de caracteres|Gêneros.|
 |idioma|Cadeia de caracteres|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
@@ -47,12 +47,12 @@ Herda de [managedEBook](../resources/intune_books_managedebook.md)
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.managedEBook",
   "@odata.type": "microsoft.graph.iosVppEBook"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -70,7 +70,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [

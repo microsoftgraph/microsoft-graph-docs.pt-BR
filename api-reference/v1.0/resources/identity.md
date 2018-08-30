@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Identidade
-ms.openlocfilehash: ada6fd22f59ceb01e10cc57ea3640c5f67b65144
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 521952ab8ea3350fcf29aa80cb82928e5017e5bb
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267161"
 ---
 # <a name="identity-resource-type"></a>Tipo de recurso Identity
 
@@ -15,7 +16,9 @@ O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e a
 
 ## <a name="json-representation"></a>Representação JSON
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "thumbnails"] } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity",
+  "openType": true,
+ "optionalProperties": ["displayName", "thumbnails"] } -->
 ```json
 {
   "displayName": "string",
@@ -28,8 +31,8 @@ O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e a
 
 | Propriedade    | Tipo   | Descrição                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem_delta.md).     |
-| id          | String | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
+| displayName | Sequência de caracteres | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem_delta.md).     |
+| id          | Sequência de caracteres | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
 
 ## <a name="remarks"></a>Comentários
 

@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/delete
+POST /workbook/names/{name}/range/delete
 POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
@@ -29,7 +29,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|shift|string|Especifica como deslocar as células.  Os valores possíveis são: `Up` e `Left`.|
+|shift|string|Especifica como deslocar as células.  Os valores possíveis são: `Up`, `Left`.|
 
 ## <a name="response"></a>Resposta
 
@@ -44,7 +44,7 @@ Este é um exemplo da solicitação.
   "name": "range_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/delete
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/delete
 Content-type: application/json
 Content-length: 28
 
@@ -57,8 +57,7 @@ Content-length: 28
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -8,7 +8,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |:---|:---|:---|
 |[Listar mobileApps](../api/intune_apps_mobileapp_list.md)|Coleção [mobileApp](../resources/intune_apps_mobileapp.md)|Lista propriedades e relações dos objetos [mobileApp](../resources/intune_apps_mobileapp.md).|
 |[Obter mobileApp](../api/intune_apps_mobileapp_get.md)|[mobileApp](../resources/intune_apps_mobileapp.md)|Propriedades de leitura e relações do objeto [mobileApp](../resources/intune_apps_mobileapp.md).|
-|[ação assign](../api/intune_apps_mobileapp_assign.md)|Nenhuma|Ainda não documentado|
+|[ação assign](../api/intune_apps_mobileapp_assign.md)|Nenhum|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -17,7 +17,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
 |description|Cadeia de caracteres|A descrição do aplicativo.|
 |publisher|Cadeia de caracteres|O publicador do aplicativo.|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez.|
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
@@ -26,9 +26,9 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |owner|Cadeia de caracteres|O proprietário do conteúdo.|
 |developer|Cadeia de caracteres|O desenvolvedor do aplicativo.|
 |notes|Cadeia de caracteres|Anotações para o aplicativo.|
-|publishingState|Cadeia de caracteres|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser atribuído, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |categories|Coleção [mobileAppCategory](../resources/intune_apps_mobileappcategory.md)|A lista de categorias para este aplicativo.|
@@ -36,12 +36,13 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "abstract": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mobileApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileApp",

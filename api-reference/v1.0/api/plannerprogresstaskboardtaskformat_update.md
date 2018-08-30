@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/tasks/<id>/progressTaskBoardFormat
+PATCH /planner/tasks/{id}/progressTaskBoardFormat
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -26,7 +26,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|orderHint|String|Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](../resources/planner_order_hint_format.md).|
+|orderHint|Sequência de caracteres|Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](../resources/planner_order_hint_format.md).|
 
 ## <a name="response"></a>Resposta
 
@@ -42,7 +42,7 @@ Este é um exemplo da solicitação.
   "name": "update_plannerprogresstaskboardtaskformat"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/tasks/hsOf2dhOJkqyYYZEtdzDe2QAIUCR/progressTaskBoardFormat
+PATCH https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFormat
 Content-type: application/json
 Content-length: 34
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

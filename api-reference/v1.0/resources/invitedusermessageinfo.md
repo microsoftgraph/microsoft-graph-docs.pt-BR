@@ -6,9 +6,9 @@ O objeto invitedUserMessageInfo permite que você configure a mensagem de [convi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipient](recipient.md)|Outros destinatários aos quais a mensagem de convite deve ser enviada. No momento, só é possível adicionar mais um destinatário.|
-|customizedMessageBody|String|Corpo da mensagem personalizada a ser enviada caso você não queira a mensagem padrão.|
-|messageLanguage|String|O idioma no qual você deseja enviar a mensagem padrão. Se customizedMessageBody for especificada, essa propriedade será ignorada, e a mensagem será enviada usando-se customizedMessageBody. O formato do idioma deve estar no ISO 639. O padrão é en-US.|
+|ccRecipients|Coleção [Recipient](recipient.md)|Outros destinatários aos quais a mensagem de convite deve ser enviada. No momento, só é possível adicionar mais um destinatário.|
+|customizedMessageBody|Cadeia de caracteres|Corpo da mensagem personalizada a ser enviada caso você não queira a mensagem padrão.|
+|messageLanguage|Cadeia de caracteres|O idioma no qual você deseja enviar a mensagem padrão. Se customizedMessageBody for especificada, essa propriedade será ignorada, e a mensagem será enviada usando-se customizedMessageBody. O formato do idioma deve estar no ISO 639. O padrão é en-US.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

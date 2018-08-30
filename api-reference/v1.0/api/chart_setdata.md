@@ -1,4 +1,4 @@
-# <a name="chart-setdata"></a>Chart: setData
+# <a name="chart-setdata"></a>Gráfico: setData
 
 Redefine os dados de origem do gráfico.
 ## <a name="permissions"></a>Permissões
@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/setData
+POST /workbook/worksheets/{id|name}/charts/{name}/setData
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -27,8 +27,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|sourceData|cadeia de caracteres|O objeto Range que corresponde aos dados de origem.|
-|seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser um dos seguintes: automático (padrão), linhas ou colunas.  Os valores possíveis são: `Auto`, `Columns` e `Rows`.|
+|sourceData|Json|O objeto Range que corresponde aos dados de origem.|
+|seriesBy|sequência de caracteres|Opcional. Especifica a maneira como colunas ou linhas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções: Auto (padrão), Linhas, Colunas.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Resposta
 
@@ -43,7 +43,7 @@ Este é um exemplo da solicitação.
   "name": "chart_setdata"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/setData
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/setData
 Content-type: application/json
 Content-length: 70
 
@@ -56,9 +56,7 @@ Content-length: 70
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

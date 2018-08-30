@@ -7,7 +7,7 @@ Informações adicionais incluídas a um [educationUser](educationuser.md) que e
 |:---------------|:--------|:----------|
 |birthDate|Data| Data de nascimento do aluno.|
 |externalId|Cadeia de caracteres| ID do aluno no sistema de origem.|
-|gender|`educationGender enumeration`| Os valores possíveis são: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|educationGender| Os valores possíveis são: `female`, `male`, `other`, `unknownFutureValue`.|
 |grade|Cadeia de caracteres|Nível de classificação atual do aluno.|
 |graduationYear|Cadeia de caracteres| Ano que o aluno está graduando na escola.|
 |studentNumber|Cadeia de caracteres| Número do aluno.|
