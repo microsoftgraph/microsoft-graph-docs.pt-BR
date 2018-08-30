@@ -1,53 +1,53 @@
-# <a name="get-chartaxis"></a><span data-ttu-id="6c36c-101">Obter ChartAxis</span><span class="sxs-lookup"><span data-stu-id="6c36c-101">Get ChartAxis</span></span>
+# <a name="get-chartaxis"></a><span data-ttu-id="5accd-101">Obter ChartAxis</span><span class="sxs-lookup"><span data-stu-id="5accd-101">Get ChartAxis</span></span>
 
-<span data-ttu-id="6c36c-102">Lê as propriedades e os relacionamentos do objeto chartaxis.</span><span class="sxs-lookup"><span data-stu-id="6c36c-102">Retrieve the properties and relationships of chartaxis object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6c36c-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="6c36c-103">Permissions</span></span>
-<span data-ttu-id="6c36c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="6c36c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="5accd-102">Lê as propriedades e os relacionamentos do objeto chartaxis.</span><span class="sxs-lookup"><span data-stu-id="5accd-102">Retrieve the properties and relationships of chartaxis object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="5accd-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="5accd-103">Permissions</span></span>
+<span data-ttu-id="5accd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="5accd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="6c36c-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6c36c-106">Permission type</span></span>      | <span data-ttu-id="6c36c-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6c36c-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5accd-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5accd-106">Permission type</span></span>      | <span data-ttu-id="5accd-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5accd-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6c36c-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6c36c-108">Delegated (work or school account)</span></span> | <span data-ttu-id="6c36c-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6c36c-109">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="6c36c-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6c36c-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c36c-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c36c-111">Not supported.</span></span>    |
-|<span data-ttu-id="6c36c-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6c36c-112">Application</span></span> | <span data-ttu-id="6c36c-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c36c-113">Not supported.</span></span> |
+|<span data-ttu-id="5accd-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5accd-108">Delegated (work or school account)</span></span> | <span data-ttu-id="5accd-109">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5accd-109">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="5accd-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5accd-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5accd-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5accd-111">Not supported.</span></span>    |
+|<span data-ttu-id="5accd-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5accd-112">Application</span></span> | <span data-ttu-id="5accd-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5accd-113">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6c36c-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6c36c-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5accd-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5accd-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis
-GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis
+GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6c36c-115">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6c36c-115">Optional query parameters</span></span>
-<span data-ttu-id="6c36c-116">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="6c36c-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5accd-115">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="5accd-115">Optional query parameters</span></span>
+<span data-ttu-id="5accd-116">Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="5accd-116">This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6c36c-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6c36c-117">Request headers</span></span>
-| <span data-ttu-id="6c36c-118">Nome</span><span class="sxs-lookup"><span data-stu-id="6c36c-118">Name</span></span>      |<span data-ttu-id="6c36c-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="6c36c-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5accd-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5accd-117">Request headers</span></span>
+| <span data-ttu-id="5accd-118">Nome</span><span class="sxs-lookup"><span data-stu-id="5accd-118">Name</span></span>      |<span data-ttu-id="5accd-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="5accd-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="6c36c-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="6c36c-120">Authorization</span></span>  | <span data-ttu-id="6c36c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6c36c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6c36c-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6c36c-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="6c36c-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6c36c-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="5accd-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="5accd-120">Authorization</span></span>  | <span data-ttu-id="5accd-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5accd-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5accd-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5accd-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="5accd-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="5accd-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6c36c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6c36c-126">Request body</span></span>
-<span data-ttu-id="6c36c-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6c36c-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5accd-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5accd-126">Request body</span></span>
+<span data-ttu-id="5accd-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5accd-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6c36c-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c36c-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5accd-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="5accd-128">Response</span></span>
 
-<span data-ttu-id="6c36c-129">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartAxis](../resources/chartaxis.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6c36c-129">If successful, this method returns a `200 OK` response code and [ChartAxis](../resources/chartaxis.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6c36c-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6c36c-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6c36c-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6c36c-131">Request</span></span>
-<span data-ttu-id="6c36c-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6c36c-132">Here is an example of the request.</span></span>
+<span data-ttu-id="5accd-129">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [WorkbookChartAxis](../resources/chartaxis.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5accd-129">If successful, this method returns a `200 OK` response code and a [managedDeviceMobileAppConfigurationAssignment](../resources/chartaxis.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="5accd-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5accd-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5accd-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5accd-131">Request</span></span>
+<span data-ttu-id="5accd-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5accd-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chartaxis"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis
 ```
-##### <a name="response"></a><span data-ttu-id="6c36c-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c36c-133">Response</span></span>
-<span data-ttu-id="6c36c-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6c36c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5accd-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="5accd-133">Response</span></span>
+<span data-ttu-id="5accd-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5accd-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK
