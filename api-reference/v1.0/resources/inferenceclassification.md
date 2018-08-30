@@ -9,16 +9,16 @@ Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage_foc
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Create inferenceClassificationOverride](../api/inferenceclassification_post_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.|
-|[List overrides](../api/inferenceclassification_list_overrides.md) |Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.|
+|[Criar inferenceClassificationOverride](../api/inferenceclassification_post_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.|
+|[Listar substituições](../api/inferenceclassification_list_overrides.md) |Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres| Somente leitura.|
+|id|sequência de caracteres| Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |overrides|Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Um conjunto de substituições para um usuário sempre classificar mensagens a partir de remetentes específicos, de maneiras específicas: `focused`, ou `other`. Somente leitura. Anulável.|
 
@@ -31,7 +31,18 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inferenceClassification"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.inferenceClassification",
+  "@odata.annotations": [
+    {
+      "property": "overrides",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
