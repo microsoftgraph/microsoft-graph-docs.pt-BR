@@ -6,7 +6,7 @@ Políticas de perfil do firewall do Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|firewallEnabled|Cadeia de caracteres|Ativar o firewall e a imposição de segurança avançada Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|firewallEnabled|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Ligar o firewall e a imposição de segurança avançada. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |stealthModeBlocked|Booliano|Impedir que o servidor funcione no modo furtivo|
 |incomingTrafficBlocked|Booliano|Configura o firewall para bloquear todo o tráfego de entrada, independentemente de outras configurações de política|
 |unicastResponsesToMulticastBroadcastsBlocked|Booliano|Configura o firewall para bloquear respostas unicast para tráfego de difusão multicast|
@@ -23,12 +23,10 @@ Políticas de perfil do firewall do Windows.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsFirewallNetworkProfile"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsFirewallNetworkProfile",

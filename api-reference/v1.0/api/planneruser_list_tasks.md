@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/tasks
-GET /users/<id>/planner/tasks
+GET /users/{id}/planner/tasks
 GET /drive/root/createdByUser/planner/tasks
 ```
 

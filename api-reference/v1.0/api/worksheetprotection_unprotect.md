@@ -27,7 +27,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|password|cadeia de caracteres|Opcional. Senha de proteção para a planilha.|
+|senha|sequência de caracteres|Opcional. Senha de proteção para a planilha.|
 
 ## <a name="response"></a>Resposta
 
@@ -55,8 +55,7 @@ Content-length: 34
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

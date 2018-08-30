@@ -2,27 +2,27 @@
 
 Um contato, evento ou mensagem que está anexado a outro evento, mensagem ou postagem.  
 
-Derivado de [attachment](attachment.md).
+Derivado de [anexo](attachment.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
-|[Delete](../api/attachment_delete.md) | Nenhum |Exclua o objeto itemAttachment. |
+|[Obter](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
+|[Excluir](../api/attachment_delete.md) | Nenhum |Exclua o objeto itemAttachment. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentType|String|O tipo de conteúdo do anexo.|
-|id|String| A ID do anexo.|
+|contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
+|id|Cadeia de caracteres| A ID do anexo.|
 |isInline|Booliano|Defina como verdadeiro se o anexo estiver embutido, como uma imagem incorporada no corpo do item.|
 |lastModifiedDateTime|DateTimeOffset|Última data e hora em que o anexo foi alterado.|
-|name|Cadeia de caracteres|O nome de exibição do anexo.|
-|size|Int32|O tamanho do anexo em bytes.|
+|nome|Cadeia de caracteres|O nome de exibição do anexo.|
+|dimensionar|Int32|O tamanho do anexo em bytes.|
 
-## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|A mensagem ou evento anexado. Propriedade de navegação.|
 
@@ -30,12 +30,25 @@ Derivado de [attachment](attachment.md).
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "item"
   ],
-  "@odata.type": "microsoft.graph.itemAttachment"
+  "baseType": "microsoft.graph.attachment",
+  "@odata.type": "microsoft.graph.itemAttachment",
+  "@odata.annotations": [
+    {
+      "property": "item",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -45,7 +58,8 @@ Veja a seguir uma representação JSON do recurso
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "size": 1024
+  "size": 1024,
+  "item": { "@odata.type": "microsoft.graph.outlookItem" }
 }
 
 ```

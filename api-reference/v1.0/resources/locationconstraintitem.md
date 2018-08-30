@@ -1,6 +1,6 @@
 # <a name="locationconstraintitem-resource-type"></a>Tipo de recurso locationConstraintItem
 
-As condições indicadas por um cliente para o local de uma reunião.
+As condições indicadas por um cliente para a localização de uma reunião.
 
 Derivado de [location](location.md).
 
@@ -8,11 +8,10 @@ Derivado de [location](location.md).
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-  
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.location",
   "@odata.type": "microsoft.graph.locationConstraintItem"
 }-->
 
@@ -26,12 +25,12 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicalAddress.md) |O endereço físico do local. |
 | displayName  | Cadeia de caracteres | O nome associado ao local.                       |
 | locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local. |
-| resolveAvailability | Boolean | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user_findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
+| resolveAvailability | Booliano | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user_findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

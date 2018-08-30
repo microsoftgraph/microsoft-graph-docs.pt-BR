@@ -19,7 +19,7 @@ Contém propriedades do estado de instalação de um dispositivo.
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
-|installState|Cadeia de caracteres|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune_books_installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
 |osVersion|Cadeia de caracteres|Versão do sistema operacional.|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
@@ -29,12 +29,12 @@ Contém propriedades do estado de instalação de um dispositivo.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceInstallState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceInstallState",

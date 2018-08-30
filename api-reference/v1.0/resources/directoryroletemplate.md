@@ -8,16 +8,16 @@ Representa um modelo de função de diretório. Um modelo de função de diretó
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Obter directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Leia as propriedades e os relacionamentos do objeto directoryRoleTemplate.|
-|[Listar directoryRoleTemplate](../api/directoryroletemplate_list.md) | Coleção [directoryRoleTemplate](directoryroletemplate.md) |Recupere uma lista de objetos directoryRoleTemplate.|
+|[Lista directoryRoleTemplate](../api/directoryroletemplate_list.md) | Coleção [directoryRoleTemplate](directoryroletemplate.md) |Recupere uma lista de objetos directoryRoleTemplate.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|String|A descrição definida para a função de diretório. Somente leitura.|
-|displayName|String|O nome de exibição para definir para a função de diretório. Somente leitura. |
-|id|String|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
+|descrição|Sequência de caracteres|A descrição definida para a função de diretório. Somente leitura.|
+|displayName|Sequência de caracteres|O nome de exibição para definir para a função de diretório. Somente leitura. |
+|id|Sequência de caracteres|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 Nenhum
 
 
@@ -26,13 +26,20 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json

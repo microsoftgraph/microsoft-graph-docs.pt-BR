@@ -23,8 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
+<!-- { "blockType": "ignored" } --> Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -42,8 +41,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [Attachment](../resources/attachment.md).
@@ -58,6 +57,7 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_file_attachment_from_message"
 }-->
 ```http
@@ -68,7 +68,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 ```
 
@@ -94,7 +94,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "base64R0lGODdhEAYEAA7"
 }
 
 ```
@@ -105,6 +105,7 @@ Content-length: 202
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkpsDRVK"],
   "name": "create_item_attachment_from_message"
 }-->
 

@@ -7,7 +7,6 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |type|Cadeia de caracteres|Tipo de ator.|
-|permissões|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
 |ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
 |applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
@@ -20,19 +19,14 @@ Uma classe que contém as propriedades para Ator de auditoria.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.auditActor"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditActor",
   "type": "String",
-  "permissions": [
-    "String"
-  ],
   "userPermissions": [
     "String"
   ],

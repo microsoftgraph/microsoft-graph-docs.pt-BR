@@ -7,20 +7,20 @@ Representa um objeto de título de gráfico de um gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle_get.md) | [ChartTitle](charttitle.md) |Leia as propriedades e os relacionamentos do objeto chartTitle.|
-|[Update](../api/charttitle_update.md) | [ChartTitle](charttitle.md)    |Atualize o objeto ChartTitle. |
+|[Obter ChartTitle](../api/charttitle_get.md) | [WorkbookChartTitle](charttitle.md) |Leia as propriedades e as relações do objeto chartTitle.|
+|[Atualizar](../api/charttitle_update.md) | [WorkbookChartTitle](charttitle.md)    |Atualize o objeto ChartTitle. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |overlay|booliano|Valor booliano que determina se o título do gráfico deve se sobrepor ao gráfico ou não.|
 |texto|string|Representa o texto do título de um gráfico.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto de título de gráfico.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartTitleFormat](charttitleformat.md)|Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
+|format|[WorkbookChartTitleFormat](charttitleformat.md)|Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -28,10 +28,11 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

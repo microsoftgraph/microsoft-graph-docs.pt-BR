@@ -1,4 +1,4 @@
-# <a name="range-lastcolumn"></a>Range: LastColumn
+# <a name="range-lastcolumn"></a>Intervalo: LastColumn
 
 Obtém a última coluna do intervalo. Por exemplo, a última coluna de "B2:D5" é "D2:D5".
 ## <a name="permissions"></a>Permissões
@@ -13,9 +13,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/LastColumn
-GET /workbook/worksheets/{id|name}/range(address='<address>')/LastColumn
-GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
+GET /workbook/names/{name}/range/lastColumn
+GET /workbook/worksheets/{id|name}/range(address='<address>')/lastColumn
+GET /workbook/tables/{id|name}/columns/{id|name}/range/lastColumn
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -34,12 +34,13 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_lastcolumn"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/lastColumn
 ```
 
 ##### <a name="response"></a>Resposta
@@ -47,7 +48,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

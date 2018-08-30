@@ -24,11 +24,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [TableColum](../resources/tablecolumn.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/tablecolumn.md).
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [TableColumn](../resources/tablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -49,13 +49,13 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [TableColum](../resources/tablecolumn.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookTableColumn](../resources/tablecolumn.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 201 Created
