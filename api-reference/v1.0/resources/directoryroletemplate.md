@@ -1,38 +1,45 @@
-# <a name="directoryroletemplate-resource-type"></a>tipo de recurso directoryRoleTemplate
+# <a name="directoryroletemplate-resource-type"></a><span data-ttu-id="486c9-101">tipo de recurso directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="486c9-101">directoryRoleTemplate resource type</span></span>
 
-Representa um modelo de função de diretório. Um modelo de função de diretório especifica os valores de propriedade de uma função de diretório ([directoryRole](directoryrole.md)). Há um modelo de função de diretório associado para cada uma das funções de diretório que podem ser ativadas em um locatário. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Apenas a função de diretório Administradores de Empresa é ativada por padrão. Para ativar outras funções de diretório disponíveis, você envia uma solicitação POST para o ponto de extremidade `/directoryRoles` com a ID do modelo de função de diretório no qual se baseia a função directory especificada no parâmetro **roleTemplateId** da solicitação. Após a conclusão bem-sucedida da solicitação, você pode começar a ler e atribuir membros à função de diretório. **Observação**: Um modelo de função de diretório é exposto para a função de diretório Usuários. A função de diretório Users está implícita e não é visível para os clientes de diretório. Todos os usuários do locatário são atribuídos a essa função pela infraestrutura. A função já está ativada. Não use este modelo.
+<span data-ttu-id="486c9-p101">Representa um modelo de função de diretório. Um modelo de função de diretório especifica os valores de propriedade de uma função de diretório ([directoryRole](directoryrole.md)). Há um modelo de função de diretório associado para cada uma das funções de diretório que podem ser ativadas em um locatário. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Apenas a função de diretório Administradores de Empresa é ativada por padrão. Para ativar outras funções de diretório disponíveis, você envia uma solicitação POST para o ponto de extremidade `/directoryRoles` com a ID do modelo de função de diretório no qual se baseia a função directory especificada no parâmetro **roleTemplateId** da solicitação. Após a conclusão bem-sucedida da solicitação, você pode começar a ler e atribuir membros à função de diretório. **Observação**: Um modelo de função de diretório é exposto para a função de diretório Usuários. A função de diretório Users está implícita e não é visível para os clientes de diretório. Todos os usuários do locatário são atribuídos a essa função pela infraestrutura. A função já está ativada. Não use este modelo.</span><span class="sxs-lookup"><span data-stu-id="486c9-p101">Represents a directory role template. A directory role template specifies the property values of a directory role ([directoryRole](directoryrole.md)). There is an associated directory role template object for each of the directory roles that may be activated in a tenant. To read a directory role or update its members, it must first be activated in the tenant. Only the Company Administrators directory role is activated by default. To activate other available directory roles you send a POST request to the `/directoryRoles` endpoint with the ID of the directory role template on which the directory role is based specified in the **roleTemplateId** parameter of the request. Upon successful completion of this request, you can then start to read and assign members to the directory role. **Note**: A directory role template is exposed for the Users directory role. The Users directory role is implicit and is not visible to directory clients. Every User in the tenant is assigned to this role by the infrastructure. The role is already activated. Do not use this template.</span></span>
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="486c9-114">Métodos</span><span class="sxs-lookup"><span data-stu-id="486c9-114">Methods</span></span>
 
-| Método       | Tipo de retorno  |Descrição|
+| <span data-ttu-id="486c9-115">Método</span><span class="sxs-lookup"><span data-stu-id="486c9-115">Method</span></span>       | <span data-ttu-id="486c9-116">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="486c9-116">Return Type</span></span>  |<span data-ttu-id="486c9-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="486c9-117">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Obter directoryRoleTemplate](../api/directoryroletemplate_get.md) | [directoryRoleTemplate](directoryroletemplate.md) |Leia as propriedades e os relacionamentos do objeto directoryRoleTemplate.|
-|[Listar directoryRoleTemplate](../api/directoryroletemplate_list.md) | Coleção [directoryRoleTemplate](directoryroletemplate.md) |Recupere uma lista de objetos directoryRoleTemplate.|
+|[<span data-ttu-id="486c9-118">Obter directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="486c9-118">Get directoryRoleTemplate</span></span>](../api/directoryroletemplate_get.md) | [<span data-ttu-id="486c9-119">directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="486c9-119">directoryRoleTemplate</span></span>](directoryroletemplate.md) |<span data-ttu-id="486c9-120">Leia as propriedades e os relacionamentos do objeto directoryRoleTemplate.</span><span class="sxs-lookup"><span data-stu-id="486c9-120">Read properties and relationships of directoryRoleTemplate object.</span></span>|
+|[<span data-ttu-id="486c9-121">Lista directoryRoleTemplate</span><span class="sxs-lookup"><span data-stu-id="486c9-121">List directoryRoleTemplate</span></span>](../api/directoryroletemplate_list.md) | <span data-ttu-id="486c9-122">Coleção [directoryRoleTemplate](directoryroletemplate.md)</span><span class="sxs-lookup"><span data-stu-id="486c9-122">[directoryRoleTemplate](directoryroletemplate.md) collection</span></span> |<span data-ttu-id="486c9-123">Recupere uma lista de objetos directoryRoleTemplate.</span><span class="sxs-lookup"><span data-stu-id="486c9-123">Retrieve a list of directoryRoleTemplate objects.</span></span>|
 
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="486c9-124">Propriedades</span><span class="sxs-lookup"><span data-stu-id="486c9-124">Properties</span></span>
+| <span data-ttu-id="486c9-125">Propriedade</span><span class="sxs-lookup"><span data-stu-id="486c9-125">Property</span></span>     | <span data-ttu-id="486c9-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="486c9-126">Type</span></span>   |<span data-ttu-id="486c9-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="486c9-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|description|String|A descrição definida para a função de diretório. Somente leitura.|
-|displayName|String|O nome de exibição para definir para a função de diretório. Somente leitura. |
-|id|String|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
+|<span data-ttu-id="486c9-128">descrição</span><span class="sxs-lookup"><span data-stu-id="486c9-128">description</span></span>|<span data-ttu-id="486c9-129">Sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="486c9-129">String</span></span>|<span data-ttu-id="486c9-p102">A descrição definida para a função de diretório. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="486c9-p102">The description to set for the directory role. Read-only.</span></span>|
+|<span data-ttu-id="486c9-132">displayName</span><span class="sxs-lookup"><span data-stu-id="486c9-132">displayName</span></span>|<span data-ttu-id="486c9-133">Sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="486c9-133">String</span></span>|<span data-ttu-id="486c9-p103">O nome de exibição para definir para a função de diretório. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="486c9-p103">The display name to set for the directory role. Read-only.</span></span> |
+|<span data-ttu-id="486c9-136">id</span><span class="sxs-lookup"><span data-stu-id="486c9-136">id</span></span>|<span data-ttu-id="486c9-137">Sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="486c9-137">String</span></span>|<span data-ttu-id="486c9-p104">O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="486c9-p104">The unique identifier for the template. Inherited from [directoryObject](directoryobject.md). You specify the **id** of the directory role template for the **roleTemplateId** property in the POST request activate a [directoryRole](directoryrole.md) in a tenant. Key, Not nullable. Read-only.</span></span>|
 
-## <a name="relationships"></a>Relações
-Nenhum
+## <a name="relationships"></a><span data-ttu-id="486c9-143">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="486c9-143">Relationships</span></span>
+<span data-ttu-id="486c9-144">Nenhum</span><span class="sxs-lookup"><span data-stu-id="486c9-144">None</span></span>
 
 
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="486c9-145">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="486c9-145">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="486c9-146">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="486c9-146">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryRoleTemplate"
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.directoryRoleTemplate",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "toppable": false
+      }
+    }
+  ]
 }-->
 
 ```json
