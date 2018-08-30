@@ -1,6 +1,6 @@
 # <a name="update-onpremisesconditionalaccesssettings"></a>Atualizar onPremisesConditionalAccessSettings
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Atualizar as propriedades de um objeto [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; obrigatório.|
-|Accept|application/json|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Aceitar|aplicativo/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md).
@@ -56,10 +56,10 @@ Content-length: 195
 {
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }
@@ -77,10 +77,10 @@ Content-Length: 318
   "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
   "enabled": true,
   "includedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "excludedGroups": [
-    "<Unknown Primitive Type Edm.Guid>"
+    "79199ed9-e50b-4257-8de4-70b9c8685061"
   ],
   "overrideDefaultRule": true
 }

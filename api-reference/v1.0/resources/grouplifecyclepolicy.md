@@ -30,11 +30,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupLifecyclePolicy"
 }-->
 

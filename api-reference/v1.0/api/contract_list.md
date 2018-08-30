@@ -57,7 +57,7 @@ Observação: o objeto response mostrado aqui pode estar truncado por motivos de
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract",
+  "@odata.type": "microsoft.graph.contract",
   "isCollection": true
 } -->
 ```http

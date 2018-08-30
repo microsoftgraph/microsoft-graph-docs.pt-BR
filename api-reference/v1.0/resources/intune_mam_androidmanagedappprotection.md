@@ -22,57 +22,57 @@ Herda de [targetedManagedAppProtection](../resources/intune_mam_targetedmanageda
 |description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|id|String|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|Cadeia de caracteres|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |periodOnlineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo está conectado à Internet. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|allowedInboundDataTransferSources|String|Fontes das quais os dados podem ser transferidos. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os possíveis valores são: `allApps`, `managedApps`, `none`.|
-|allowedOutboundDataTransferDestinations|String|Destinos para os quais os dados podem ser transferidos. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os possíveis valores são: `allApps`, `managedApps`, `none`.|
-|organizationalCredentialsRequired|Boolean|Indica se as credenciais organizacionais são obrigatórias para o uso do aplicativo. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|allowedOutboundClipboardSharingLevel|String|O nível em que a área de transferência pode ser compartilhada entre os aplicativos no dispositivo gerenciado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os possíveis valores são: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
-|dataBackupBlocked|Boolean|Indica se o backup de dados de um aplicativo gerenciado está bloqueado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|deviceComplianceRequired|Boolean|Indica se a compatibilidade de dispositivos é necessária. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|managedBrowserToOpenLinksRequired|Boolean|Indica se os links da Internet devem ser abertos no aplicativo de navegador gerenciado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|saveAsBlocked|Boolean|Indica se os usuários podem usar o item de menu "Salvar como" para salvar uma cópia dos arquivos protegidos. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Fontes das quais os dados podem ser transferidos. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os valores possíveis são: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Destinos para os quais os dados podem ser transferidos. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os valores possíveis são: `allApps`, `managedApps`, `none`.|
+|organizationalCredentialsRequired|Booleano|Indica se as credenciais organizacionais são obrigatórias para o uso do aplicativo. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|O nível em que a área de transferência pode ser compartilhada entre os aplicativos no dispositivo gerenciado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os valores possíveis são: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|dataBackupBlocked|Booleano|Indica se o backup de dados de um aplicativo gerenciado está bloqueado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|deviceComplianceRequired|Booleano|Indica se a compatibilidade de dispositivos é necessária. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|managedBrowserToOpenLinksRequired|Booleano|Indica se os links da Internet devem ser abertos no aplicativo de navegador gerenciado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|saveAsBlocked|Booleano|Indica se os usuários podem usar o item de menu "Salvar como" para salvar uma cópia dos arquivos protegidos. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |periodOfflineBeforeWipeIsEnforced|Duração|A quantidade de tempo que um aplicativo pode permanecer desconectado da Internet antes que todos os dados gerenciados sejam apagados. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinRequired|Boolean|Indica se é necessário um pin no nível do aplicativo. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|maximumPinRetries|Int32|Número máximo de tentativas incorretas de pin antes que o aplicativo gerenciado seja apagado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|simplePinBlocked|Boolean|Indica se simplePin está bloqueado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|pinRequired|Booleano|Indica se é necessário um pin no nível do aplicativo. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|maximumPinRetries|Int32|Número máximo de tentativas incorretas de pin antes que o aplicativo gerenciado seja bloqueado ou apagado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|simplePinBlocked|Booleano|Indica se simplePin está bloqueado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
 |minimumPinLength|Int32|Tamanho mínimo de pin necessário para um pin no nível do aplicativo se PinRequired estiver definido como True Herdad de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|pinCharacterSet|String|Conjunto de caracteres que poderá ser usado para um pin no nível do aplicativo se PinRequired estiver definido como True. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os possíveis valores são: `numeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Conjunto de caracteres que poderá ser usado para um pin no nível do aplicativo se PinRequired estiver definido como True. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md). Os valores possíveis são: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duração|TimePeriod antes que o pin em todos os níveis tenha que ser redefinido, caso PinRequired esteja definido como True. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|allowedDataStorageLocations|String collection|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|contactSyncBlocked|Boolean|Indica se os contatos podem ser sincronizados com o dispositivo do usuário. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|printBlocked|Boolean|Indica se a impressão a partir de aplicativos gerenciados é permitida. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|fingerprintBlocked|Boolean|Indica se será permitido o uso do leitor de impressão digital em vez de um pin se PinRequired estiver definido como True. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|disableAppPinIfDevicePinIsSet|Boolean|Indica se o uso do pin do aplicativo será obrigatório se o pin do dispositivo estiver definido. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|minimumRequiredOsVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|minimumWarningOsVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado ao acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|minimumRequiredAppVersion|String|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|minimumWarningAppVersion|String|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
-|isAssigned|Boolean|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
-|screenCaptureBlocked|Boolean|Indica se um usuário gerenciado pode fazer capturas de tela dos aplicativos gerenciados|
-|disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Quando essa configuração estiver habilitada, a criptografia no nível do aplicativo será desabilitada se a criptografia no nível do dispositivo for habilitada|
-|encryptAppData|Boolean|Indica se os dados de aplicativos gerenciados devem ser criptografados|
+|allowedDataStorageLocations|Coleção enumerada [managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|contactSyncBlocked|Booleano|Indica se os contatos podem ser sincronizados com o dispositivo do usuário. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|printBlocked|Booleano|Indica se a impressão a partir de aplicativos gerenciados é permitida. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|fingerprintBlocked|Booleano|Indica se será permitido o uso do leitor de impressão digital em vez de um pin se PinRequired estiver definido como True. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|disableAppPinIfDevicePinIsSet|Booleano|Indica se o uso do pin do aplicativo será obrigatório se o pin do dispositivo estiver definido. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredOsVersion|Cadeia de caracteres|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningOsVersion|Cadeia de caracteres|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado ao acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumRequiredAppVersion|Cadeia de caracteres|Versões anteriores à versão especificada impedirão o aplicativo gerenciado de acessar dados da empresa. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|minimumWarningAppVersion|Cadeia de caracteres|Versões anteriores à versão especificada resultarão em uma mensagem de aviso no aplicativo gerenciado. Herdado de [managedAppProtection](../resources/intune_mam_managedappprotection.md)|
+|isAssigned|Booleano|Indica se a política foi implantada a grupos de inclusão ou não. Herdado de [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|screenCaptureBlocked|Booleano|Indica se um usuário gerenciado pode fazer capturas de tela dos aplicativos gerenciados|
+|disableAppEncryptionIfDeviceEncryptionIsEnabled|Booleano|Quando essa configuração estiver habilitada, a criptografia no nível do aplicativo será desabilitada se a criptografia no nível do dispositivo for habilitada|
+|encryptAppData|Booleano|Indica se os dados de aplicativos gerenciados devem ser criptografados|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
-|minimumRequiredPatchVersion|String|Define o nível mais antigo de patch de segurança do Android necessário que um usuário pode ter para obter acesso seguro ao aplicativo.|
-|minimumWarningPatchVersion|String|Define o nível mais antigo de patch de segurança do Android recomendado que um usuário pode ter para obter acesso seguro ao aplicativo.|
+|minimumRequiredPatchVersion|Cadeia de caracteres|Define o nível mais antigo de patch de segurança do Android necessário que um usuário pode ter para obter acesso seguro ao aplicativo.|
+|minimumWarningPatchVersion|Cadeia de caracteres|Define o nível mais antigo de patch de segurança do Android recomendado que um usuário pode ter para obter acesso seguro ao aplicativo.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção targetedManagedAppPolicyAssignment|Propriedades de navegação para lista de grupos de inclusão e exclusão às quais a política é implantada. Herdado de [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
+|tarefas|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Propriedades de navegação para lista de grupos de inclusão e exclusão às quais a política é implantada. Herdado de [targetedManagedAppProtection](../resources/intune_mam_targetedmanagedappprotection.md)|
 |aplicativos|Coleção [managedMobileApp](../resources/intune_mam_managedmobileapp.md)|Lista de aplicativos em que a política é implantada.|
 |deploymentSummary|[managedAppPolicyDeploymentSummary](../resources/intune_mam_managedapppolicydeploymentsummary.md)|Propriedade de navegação para o resumo de implantação da configuração.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.targetedManagedAppProtection",
   "@odata.type": "microsoft.graph.androidManagedAppProtection"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",

@@ -21,17 +21,17 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordBlockSimple|Booliano|Se a sincronização do calendário deve ou não ser bloqueada.|
+|passwordBlockSimple|Booleano|Se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
-|passwordRequiredType|Cadeia de caracteres|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
-|passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
+|passwordRequired|Booleano|Se uma senha deve ou não ser exigida.|
 |osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows Phone.|
@@ -49,12 +49,12 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceCompliancePolicy",
   "@odata.type": "microsoft.graph.windowsPhone81CompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",

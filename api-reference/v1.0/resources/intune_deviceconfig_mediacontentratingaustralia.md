@@ -6,8 +6,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|movieRating|Cadeia de caracteres|Classificação de filmes selecionada para a Austrália Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
-|tvRating|Cadeia de caracteres|Classificação de TV selecionada para a Austrália Os valores possíveis são: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
+|movieRating|[ratingAustraliaMoviesType](../resources/intune_deviceconfig_ratingaustraliamoviestype.md)|Classificações de filmes selecionadas para Austrália. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingAustraliaTelevisionType](../resources/intune_deviceconfig_ratingaustraliatelevisiontype.md)|Classificação de TV selecionada para Austrália. Os valores possíveis são: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -15,7 +15,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mediaContentRatingAustralia"
 }
 -->

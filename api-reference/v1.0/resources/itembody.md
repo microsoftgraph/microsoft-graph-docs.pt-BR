@@ -6,7 +6,7 @@ Representa as propriedades do corpo de um item, como uma mensagem, um evento ou 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |content|Cadeia de caracteres|O conteúdo do item.|
-|contentType|Cadeia de caracteres|O tipo de conteúdo. Os valores possíveis são: `Text` e `HTML`.|
+|contentType|bodyType|O tipo de conteúdo. Os valores possíveis são: `Text` e `HTML`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

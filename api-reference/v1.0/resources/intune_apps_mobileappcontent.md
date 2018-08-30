@@ -24,12 +24,12 @@ Contém propriedades de conteúdo para uma versão específica do aplicativo. Ca
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.mobileAppContent"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppContent",

@@ -20,7 +20,7 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
 | [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All |
 | [Postagem de grupo](../resources/post.md) | Group.Read.All | [Mensagem](../resources/message.md) | Mail.Read |
 | [Organização](../resources/organization.md) | Directory.Read.All | [Contato pessoal](../resources/contact.md) | Contacts.Read |
-| [Usuário](../resources/user.md) | User.Read.All | | |
+| [Usuário](../resources/user.md) | User.ReadBasic.All | | |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -83,22 +83,21 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 >**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção, para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções dão suporte à obtenção de extensões abertas delas de maneira semelhante.
 
-## <a name="parameters"></a>Parâmetros
-|**Parâmetro**|**Tipo**|**Descrição**|
+## <a name="path-parameters"></a>Parâmetros do caminho
+|Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|_Parâmetros de URL_|
-|Id|cadeia de caracteres|Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.|
-|extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.|
+|Id|sequência de caracteres|Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.|
+|extensionId|sequência de caracteres|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.|
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Certifique-se de aplicar a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
+Não esqueça de aplicar a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na sequência de caracteres `$filter`.
 
-|**Nome**|**Valor**|**Descrição**|
+|Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$filter|string|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
-|$filter com o operador **any**|string|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|
-|$expand|string|Expande uma instância de recurso para incluir uma extensão. |
+|$filter|sequência de caracteres|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
+|$filter com o operador **any**|sequência de caracteres|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|
+|$expand|sequência de caracteres|Expande uma instância de recurso para incluir uma extensão. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
@@ -121,17 +120,18 @@ Em primeiro lugar, por nome:
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Referral", "AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_1"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 Em segundo lugar, por ID (nome totalmente qualificado):
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
 #### <a name="response-1"></a>Resposta 1
@@ -139,7 +139,7 @@ Veja a seguir a resposta para o primeiro exemplo.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -147,7 +147,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -167,10 +167,11 @@ O segundo exemplo faz referência a uma extensão por nome e obtém essa extens�
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Com.Contoso.Deal", "f5480dfd-7d77-4d0b-ba2e-3391953cc74a", "AAMkADVl17IsAAA="],
   "name": "get_opentypeextension_2"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions('Com.Contoso.Deal') 
+GET https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions/Com.Contoso.Deal/
 ```
 
 #### <a name="response-2"></a>Resposta 2
@@ -180,7 +181,7 @@ Veja a seguir a resposta do segundo exemplo.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -188,7 +189,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -205,10 +206,11 @@ O terceiro exemplo obtém e expande a mensagem especificada, incluindo a extens�
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="],
   "name": "get_opentypeextension_3"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===?$expand=extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
 ```
 
 
@@ -282,7 +284,7 @@ Content-type: application/json
     "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "#microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -301,11 +303,11 @@ Content-type: application/json
 O quarto exemplo faz referência a uma extensão por nome totalmente qualificado e obtém essa extensão na postagem de grupo especificada.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_opentypeextension_4"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate') 
+GET https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 ```
 
 #### <a name="response-4"></a>Resposta 4
@@ -313,9 +315,9 @@ GET https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef
 Veja a seguir a resposta do quarto exemplo. 
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -365,6 +367,7 @@ Observação: O objeto response mostrado aqui pode estar truncado por motivos de
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages",
@@ -426,7 +429,7 @@ HTTP/1.1 200 OK
     "extensions@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('desmond40contoso.com')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions", 
     "extensions": [ 
       { 
-        "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+        "@odata.type": "#microsoft.graph.openTypeExtension",
         "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
         "extensionName": "Com.Contoso.Referral",
         "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -450,5 +453,13 @@ HTTP/1.1 200 OK
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/opentypeextension_get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get_opentypeextension_1, get_opentypeextension_2, get_opentypeextension_3, get_opentypeextension_5
+            Unmapped tables:
+        Get open extension - Unknown, Permissions - AuthScopes, Path parameters - PathParameters, Optional query parameters - PathParameters, Request headers - HttpHeaders"
+  ],
   "tocPath": ""
 }-->

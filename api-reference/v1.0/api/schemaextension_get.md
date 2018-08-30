@@ -23,7 +23,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Content-Type   | application/json |
+| Content-Type   | aplicativo/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -35,7 +35,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_schemaextension"
 }-->
 ```http
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.schemaExtension"
 } -->

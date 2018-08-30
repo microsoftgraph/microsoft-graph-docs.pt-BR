@@ -18,12 +18,12 @@ GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -63,7 +63,7 @@ Content-length: 53
 Veja a seguir um exemplo de solicitação de bytes de fotos.
 <!-- {
   "blockType": "request",
-  "name": "get_photo"
+  "name": "get_photo_value"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 
 ```http
 HTTP/1.1 200 OK

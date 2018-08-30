@@ -6,7 +6,7 @@ O status de resposta de uma solicitação de reunião.
 
 | Propriedade | Tipo           | Descrição |
 |:---------|:---------------|:------------|
-| response | Cadeia de caracteres         | O tipo de resposta. Os valores possíveis são: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
+| response | ResponseType   | O tipo de resposta. Os valores possíveis são: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
 | time     | DateTimeOffset | A data e hora em que a resposta retornou. Usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`
 
 ## <a name="json-representation"></a>Representação JSON

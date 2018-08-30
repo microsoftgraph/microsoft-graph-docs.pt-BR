@@ -46,7 +46,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

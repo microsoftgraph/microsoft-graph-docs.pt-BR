@@ -8,7 +8,7 @@ O recurso de Atribuição de Função. Atribuições de função unem uma defini
 |:---|:---|:---|
 |[Listar roleAssignments](../api/intune_rbac_roleassignment_list.md)|Conjunto [roleAssignment](../resources/intune_rbac_roleassignment.md)|Listar propriedades e relações de objeto de [roleAssignment](../resources/intune_rbac_roleassignment.md).|
 |[Obter roleAssignment](../api/intune_rbac_roleassignment_get.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Ler propriedades e relações de objetos de [roleAssignment](../resources/intune_rbac_roleassignment.md).|
-|[Create roleAssignment](../api/intune_rbac_roleassignment_create.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Criar um novo objeto de [roleAssignment](../resources/intune_rbac_roleassignment.md).|
+|[Criar roleAssignment](../api/intune_rbac_roleassignment_create.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Criar um novo objeto de [roleAssignment](../resources/intune_rbac_roleassignment.md).|
 |[Excluir roleAssignment](../api/intune_rbac_roleassignment_delete.md)|Nenhum|Excluir [roleAssignment](../resources/intune_rbac_roleassignment.md).|
 |[Atualizar roleAssignment](../api/intune_rbac_roleassignment_update.md)|[roleAssignment](../resources/intune_rbac_roleassignment.md)|Atualizar as propriedades de um objeto de [roleAssignment](../resources/intune_rbac_roleassignment.md).|
 
@@ -16,9 +16,9 @@ O recurso de Atribuição de Função. Atribuições de função unem uma defini
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da atribuição de função.|
+|displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
 |descrição|Cadeia de caracteres|Descrição da atribuição de função.|
-|resourceScopes|Conjunto de cadeia de caracteres|Lista de IDs dos grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
+|resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -27,12 +27,12 @@ O recurso de Atribuição de Função. Atribuições de função unem uma defini
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.roleAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.roleAssignment",

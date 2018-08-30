@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -37,7 +37,7 @@ Este é um exemplo da solicitação.
   "name": "create_chartpoints_from_chartseries"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points
 Content-type: application/json
 Content-length: 3
 
@@ -50,7 +50,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartPoint"
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 } -->
 ```http
 HTTP/1.1 201 Created

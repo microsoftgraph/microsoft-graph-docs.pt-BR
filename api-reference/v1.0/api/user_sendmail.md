@@ -30,8 +30,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
-|SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
+|message|[Mensagem](../resources/message.md)|A mensagem a enviar. Obrigatório.|
+|saveToSentItems|Booleano|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
 
 ## <a name="response"></a>Resposta
 

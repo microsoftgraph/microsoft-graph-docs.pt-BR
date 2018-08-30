@@ -18,9 +18,9 @@ Herda de [roleDefinition](../resources/intune_rbac_roledefinition.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|description|Cadeia de caracteres|Descrição da definição de Função. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|descrição|Cadeia de caracteres|Descrição da definição de Função. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |rolePermissions|Coleção [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
@@ -31,12 +31,12 @@ Herda de [roleDefinition](../resources/intune_rbac_roledefinition.md)
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.roleDefinition",
   "@odata.type": "microsoft.graph.deviceAndAppManagementRoleDefinition"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceAndAppManagementRoleDefinition",
