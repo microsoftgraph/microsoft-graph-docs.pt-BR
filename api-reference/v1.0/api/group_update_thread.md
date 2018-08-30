@@ -19,13 +19,13 @@ PATCH /groups/{id}/threads/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -33,6 +33,7 @@ Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315", "AAQkAGI5MWY5ZmUyLTJiNzYtNDE0ZC04OWEwLWM3M2FjYmM3NzNlZgMkABAAG5c7eC4NYEynIoXsuxXB9RAAG5c7eC4NYEynIoXsuxXB9Q=="],
   "name": "update_group_thread"
 }-->
 ```http

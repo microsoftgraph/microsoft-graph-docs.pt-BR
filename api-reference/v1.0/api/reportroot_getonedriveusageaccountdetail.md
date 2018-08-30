@@ -16,7 +16,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getOneDriveUsageAccountDetail(period='{period_value}')
@@ -29,7 +29,7 @@ Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetro
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |
-| ponto    | cadeia de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. |
+| ponto    | sequência de caracteres | Especifica o período de tempo durante o qual o relatório é agregado. Os valores com suporte para {period_value} são: D7, D30, D90 e D180. Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado. |
 | data      | Data   | Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade. {date_value} deve ter um formato de AAAA-MM-DD. Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo. |
 
 > **Observação:** você precisa definir o período ou data na URL.
@@ -66,8 +66,9 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 Este é um exemplo de solicitação.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getonedriveusageuserdetail"
 }-->
 
@@ -79,7 +80,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOneDriveUsageAccountDetail(perio
 
 Este é um exemplo de resposta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -89,11 +94,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK

@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/buckets/<id>
+DELETE /planner/buckets/{id}
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -38,7 +38,7 @@ Este é um exemplo da solicitação.
   "name": "delete_plannerbucket"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/planner/buckets/<id>
+DELETE https://graph.microsoft.com/v1.0/planner/buckets/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 ##### <a name="response"></a>Resposta

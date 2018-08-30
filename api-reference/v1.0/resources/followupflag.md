@@ -8,7 +8,7 @@ Permite definir um sinalizador para que o usuário possa acompanhar um item post
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](dateTimeTimeZone.md)|Data e hora em que o acompanhamento foi concluído.|
 |dueDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve ser concluído.|
-|flagStatus|Cadeia de caracteres|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
+|flagStatus|followupFlagStatus|O status de acompanhamento de um item. Os valores possíveis são: `notFlagged`, `complete` e `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Data e hora em que o acompanhamento deve começar.|
 
 ## <a name="json-representation"></a>Representação JSON

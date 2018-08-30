@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /planner/plans/<id>/details
+PATCH /planner/plans/{id}/details
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -43,7 +43,7 @@ Este é um exemplo da solicitação.
   "name": "update_plannerplandetails"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/details
+PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 Content-type: application/json
 Content-length: 212
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="

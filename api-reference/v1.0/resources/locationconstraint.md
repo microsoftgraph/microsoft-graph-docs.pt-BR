@@ -11,7 +11,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationconstraint"
+  "@odata.type": "microsoft.graph.locationConstraint"
 }-->
 
 ```json
@@ -23,9 +23,9 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|isRequired|Boolean|O cliente solicita o serviço para incluir na resposta um local para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, [findMeetingTimes](../api/user_findmeetingtimes.md) não retorna nenhuma sugestão de horário para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, **findMeetingTimes** continuará procurando horários para a reunião sem local. |
+|isRequired|Booleano|O cliente solicita o serviço para incluir na resposta um local para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, [findMeetingTimes](../api/user_findmeetingtimes.md) não retorna nenhuma sugestão de horário para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, **findMeetingTimes** continuará procurando horários para a reunião sem local. |
 |locations|Coleção [locationConstraintItem](locationconstraintitem.md)|Informações de restrição de um ou mais locais que o cliente solicita para a reunião.|
 |suggestLocation|Booliano|O cliente solicita o serviço para sugerir um ou mais locais para a reunião.|
 

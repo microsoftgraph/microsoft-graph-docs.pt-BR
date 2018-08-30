@@ -1,4 +1,4 @@
-# <a name="get-plannerprogresstaskboardtaskformat"></a>Get plannerProgressTaskBoardTaskFormat
+# <a name="get-plannerprogresstaskboardtaskformat"></a>Obter plannerProgressTaskBoardTaskFormat
 
 Recupere as propriedades e os relacionamentos do objeto **plannerProgressTaskBoardTaskFormat**.
 ## <a name="permissions"></a>Permissões
@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/progressTaskBoardFormat
+GET /planner/tasks/{id}/progressTaskBoardFormat
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -38,7 +38,7 @@ Este é um exemplo da solicitação.
   "name": "get_plannerprogresstaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/progressTaskBoardFormat
+GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFormat
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

@@ -3,17 +3,18 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: ListInfo
-ms.openlocfilehash: eb4952c1a49c41dfae6683153753711158c70f01
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: da8398bbb87111648ea561e1799e062ed46b0ee6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23270773"
 ---
 # <a name="listinfo-resource"></a>Recurso de ListInfo
 
 O tipo complexo **listInfo** oferece informações adicionais sobre uma [lista][].
 
-[list]: list.md
+[lista]: list.md
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -40,7 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 |:------------------------|:--------|:------------------------------------------------
 | **contentTypesEnabled** | Booliano | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
 | **hidden**              | Booliano | Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.
-| **template**            | String  | Um valor enumerado que representa o modelo de lista básica usado na criação da lista. Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.
+| **template**            | Sequência de caracteres  | Um valor enumerado que representa o modelo de lista básica usado na criação da lista. Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.
 
 ### <a name="remarks"></a>Comentários
 
@@ -55,5 +56,9 @@ Para os desenvolvedores familiarizados com APIs de CSOM do SharePoint, o valor `
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/listinfo.md:
+      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
+  ],
   "tocPath": ""
 }-->

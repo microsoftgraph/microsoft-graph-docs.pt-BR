@@ -2,28 +2,36 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Permissão"
-ms.openlocfilehash: 9f73684d51ab4cee047219e142f72edf778cb171
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Permissão
+ms.openlocfilehash: 4c39722653cd61f5d58a4de5b317cb3a1a9afb9d
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269611"
 ---
-# <a name="permission-resource-type"></a>Tipo de recurso permission
+# <a name="permission-resource-type"></a>Tipo de recurso de permissão
 
 O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
 
 As permissões de compartilhamento têm várias formas diferentes.
-O recurso **Permission** representa estes diferentes formulários por meio de facetas do recurso.
+O recurso **Permission** representa estes diferentes formatos por meio de facetas do recurso.
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -42,13 +50,13 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade      | Tipo                                      | Descrição
 |:--------------|:------------------------------------------|:-----------------
-| id            | String                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
+| id            | Sequência de caracteres                                    | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
 | grantedTo     | [IdentitySet](identityset.md)             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
 | invitation    | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
-| role          | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId       | String                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [ **API** Shares](../api/shares_get.md). Somente leitura.
+| funções         | Coleção de sequências de caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
+| shareId       | Sequência de caracteres                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [ **API** Shares](../api/shares_get.md). Somente leitura.
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -154,8 +162,8 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Listar permissões](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Obter permissão](../api/permission_get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Adicionar](../api/driveitem_invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Atualizar](../api/permission_update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Excluir](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## <a name="remarks"></a>Comentários

@@ -6,7 +6,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceImportStatus|Cadeia de caracteres|Status do dispositivo relatado pelo Device Directory Service (DDS). Os valores possíveis são: `unknown`, `pending`, `partial`, `complete`, `error`.|
+|deviceImportStatus|[importedWindowsAutopilotDeviceIdentityImportStatus](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus.md)|Status do dispositivo relatado pelo Device Directory Service (DDS). Os valores possíveis são: `unknown`, `pending`, `partial`, `complete`, `error`.|
 |deviceRegistrationId|Cadeia de caracteres|ID de Registro do Dispositivo para dispositivo adicionado com êxito relatada pelo Device Directory Service (DDS).|
 |deviceErrorCode|Int32|Código de erro do dispositivo relatado pelo Device Directory Service (DDS).|
 |deviceErrorName|Cadeia de caracteres|Nome do erro de dispositivo relatado pelo Device Directory Service(DDS).|
@@ -15,12 +15,10 @@ Ainda não documentado
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityState",

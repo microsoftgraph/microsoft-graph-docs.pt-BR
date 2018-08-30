@@ -11,13 +11,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Mail.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
+<!-- { "blockType": "ignored" } --> Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário.
+Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior em uma caixa de correio de usuário.
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
@@ -32,7 +31,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -55,7 +54,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment",
+  "@odata.type": "collection(microsoft.graph.attachment)",
   "isCollection": true
 } -->
 ```http
@@ -66,15 +65,14 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
+      "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "contentBytes-value",
+      "contentBytes": "base64-contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",
       "isInline": false,
-      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }

@@ -20,7 +20,7 @@ POST /education/classes/{id}/teachers/$ref
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Conteúdo-Tipo  | aplicativo/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON de um objeto [educationUser](../resources/educationuser.md).
@@ -37,7 +37,7 @@ Este é um exemplo de solicitação.
   "name": "create_educationuser_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/11017/teachers/$ref
+POST https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/$ref
 Content-type: application/json
 Content-length: 508
 

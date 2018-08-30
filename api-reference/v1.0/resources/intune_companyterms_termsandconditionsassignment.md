@@ -16,18 +16,18 @@ Uma entidade termsAndConditionsAssignment representa a atribuição de uma deter
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|Destino de atribuição ao qual a política de T&C foi designada.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.termsAndConditionsAssignment"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",

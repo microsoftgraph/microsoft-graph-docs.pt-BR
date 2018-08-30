@@ -7,7 +7,10 @@ Um tipo abstrato para oferecer suporte ao tipo [openTypeExtension](openTypeExten
 Veja a seguir uma representação JSON do recurso
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -21,12 +24,12 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="methods"></a>Métodos

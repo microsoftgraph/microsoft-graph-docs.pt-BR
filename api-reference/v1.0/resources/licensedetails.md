@@ -1,10 +1,8 @@
-# Tipo de recurso licenseDetails
-<a id="licensedetails-resource-type" class="xliff"></a>
+# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
 
 Contém informações sobre uma licença atribuída a um usuário.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -12,25 +10,23 @@ Contém informações sobre uma licença atribuída a um usuário.
 
 <!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| O identificador exclusivo do objeto de detalhe de licença. Somente leitura, Chave, Não anulável |
+|id|Sequência de caracteres| O identificador exclusivo do objeto de detalhe de licença. Somente leitura, Chave, Não anulável |
 |servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos de serviços que estão disponíveis com a licença. Somente leitura, Não anulável |
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
-|skuPartNumber|String| Nome de exibição exclusivo do SKU. Igual à propriedade skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado. Por exemplo: "AAD_Premium". Somente leitura |
+|skuPartNumber|Sequência de caracteres| Nome de exibição exclusivo do SKU. Igual à propriedade skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado. Por exemplo: "AAD_Premium". Somente leitura |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 Nenhum
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

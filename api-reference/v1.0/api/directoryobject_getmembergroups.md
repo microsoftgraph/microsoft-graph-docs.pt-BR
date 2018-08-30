@@ -22,8 +22,8 @@ POST /directoryObjects/{id}/getMemberGroups
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type   | sequência de caracteres  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
@@ -45,7 +45,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
   "name": "directoryobject_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMemberGroups
+POST https://graph.microsoft.com/v1.0/directoryObjects/{object-id}/getMemberGroups
 Content-type: application/json
 
 {
