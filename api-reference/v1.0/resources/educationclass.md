@@ -30,9 +30,8 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |classCode|Cadeia de caracteres| Código de aula usada pela escola para identificar a aula.|
 |externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
 |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
-|externalSource|cadeia de caracteres| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|educationExternalSource| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Termos dessa aula.|
-
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -40,16 +39,17 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |members|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|
 |schools|Coleção [educationSchool](../resources/educationschool.md)| Todas as escolas às quais essa aula está associada. Anulável.|
 |teachers|Coleção [educationUser](../resources/educationuser.md)|  Todos os professores da aula. Anulável.|
+|group|[group](../resources/group.md)| O grupo de diretório correspondente a esta aula.|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationClass"
 }-->
 
@@ -64,7 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: CalculatedColumn
-ms.openlocfilehash: 44700ba7606243002798ec0ec84c3be30d38ef1f
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 7e26b3683c2c84d1c413f3214da39e0a3d016f40
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267840"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Tipo de recurso CalculatedColumn
 
@@ -30,9 +31,9 @@ Aqui está uma representação JSON de um recurso **calculatedColumn**.
 
 | Nome da propriedade  | Tipo    | Descrição
 |:---------------|:--------|:--------------------------------------------------
-| **format**     | string  | Nos tipos de saída `dateTime`, o formato do valor. Deve ser `dateOnly` ou `dateTime`.
-| **formula**    | string  | A fórmula usada para calcular o valor dessa coluna.
-| **outputType** | string  | O tipo de saída usado para formatar valores nessa coluna. Deve ser `boolean`, `currency`, `dateTime`, `number` ou `text`.
+| **format**     | sequência de caracteres  | Nos tipos de saída `dateTime`, o formato do valor. Deve ser `dateOnly` ou `dateTime`.
+| **formula**    | sequência de caracteres  | A fórmula usada para calcular o valor dessa coluna.
+| **outputType** | sequência de caracteres  | O tipo de saída usado para formatar valores nessa coluna. Deve ser `boolean`, `currency`, `dateTime`, `number` ou `text`.
 
 As fórmulas do SharePoint usam uma sintaxe semelhante a fórmulas do Excel.
 Consulte [Exemplos de fórmulas comuns em listas do SharePoint][SPFormulas] para obter mais informações.
@@ -44,5 +45,11 @@ Consulte [Exemplos de fórmulas comuns em listas do SharePoint][SPFormulas] para
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(dateOnly,dateTime) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/calculatedcolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(boolean,currency,dateTime,number,text) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/CalculatedColumn"
 } -->

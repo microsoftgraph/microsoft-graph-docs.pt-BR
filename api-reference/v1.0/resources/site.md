@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
-ms.openlocfilehash: db465f93f336a51d862daf6e05b1d6bc422247ea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 20d31a9cdc0e540c2b2f2d93fedabdc254e9c03e
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265712"
 ---
 # <a name="site-resource"></a>Recurso site
 
@@ -35,12 +36,22 @@ Todos os exemplos a seguir referem-se ao endereço `https://graph.microsoft.com/
 
 Veja a seguir uma representação JSON de um recurso **site**.
 
-O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propriedades desse recurso.
+O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedades desse recurso.
 
-<!-- { "blockType": "resource",
-       "@odata.type": "microsoft.graph.site",
-       "keyProperty": "id",
-       "optionalProperties": [ "root", "sharepointIds", "siteCollection", "drive", "drives", "sites" ] } -->
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [
+    "root",
+    "sharepointIds",
+    "siteCollection",
+    "drive",
+    "drives",
+    "sites"
+  ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.site"
+}-->
 
 ```json
 {
@@ -58,7 +69,7 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-  "onenote": [ { "@odata.type": "microsoft.graph.onenote"} ],
+  "onenote": { "@odata.type": "microsoft.graph.onenote"},
 
   /* inherited from baseItem */
   "name": "string",
@@ -74,28 +85,29 @@ O recurso **driveItem** é derivado de [**baseItem**](baseitem.md) e herda propr
 
 | Nome da propriedade            | Tipo                                | Descrição                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
-| **id**                   | string                              | O identificador exclusivo do item. Somente leitura.                                                  |
+| **id**                   | sequência de caracteres                              | O identificador exclusivo do item. Somente leitura.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | A data e a hora da criação do item. Somente leitura.                                             |
-| **description**          | string                              | O texto descritivo do site.                                                             |
-| **displayName**          | cadeia de caracteres                              | O texto completo do site. Somente leitura.                                                        |
+| **description**          | sequência de caracteres                              | O texto descritivo do site.                                                             |
+| **displayName**          | sequência de caracteres                              | O texto completo do site. Somente leitura.                                                        |
+| **eTag**                 | sequência de caracteres                              | ETag do item. Somente leitura.                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
-| **name**                 | string                              | O nome/título do item.                                                                  |
+| **name**                 | sequência de caracteres                              | O nome/título do item.                                                                  |
 | **root**                 | [root](root.md)                     | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.            |
 | **sharepointIds**        | [sharepointIds](sharepointids.md)   | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                       |
 | **siteCollection**       | [siteCollection](sitecollection.md) | Fornece detalhes sobre o conjunto de sites do site. Disponível apenas no site raiz. Somente leitura. |
-| **webUrl**               | string (url)                        | A URL que exibe o item no navegador. Somente leitura.                                          |
+| **webUrl**               | sequência de caracteres (url)                        | A URL que exibe o item no navegador. Somente leitura.                                          |
 
 ## <a name="relationships"></a>Relações
 
 | Nome da relação | Tipo                             | Descrição
 |:------------------|:---------------------------------|:----------------------
-| **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
-| **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
+| **columns**       | Coleção([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
+| **contentTypes**  | Coleção([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
 | **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
-| **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
-| **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
-| **lists**         | Collection([list][])             | O conjunto de listas neste site.
-| **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
+| **drives**        | Coleção([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
+| **items**         | Coleção([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
+| **lists**         | Coleção([list][])             | O conjunto de listas neste site.
+| **sites**         | Coleção([site][])             | O conjunto dos subsites neste site.
 | **onenote**       | [onenote][]                      | Chama o serviço OneNote para operações relacionadas ao bloco de anotações.
 
 [columnDefinition]: columndefinition.md
