@@ -6,10 +6,10 @@ Estado da configuração da política de conformidade de dispositivo para um det
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|setting|Cadeia de caracteres|A configuração que está sendo relatada|
+|configuração|Cadeia de caracteres|A configuração que está sendo relatada|
 |settingName|Cadeia de caracteres|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
 |instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração está sendo relatada.|
-|state|Cadeia de caracteres|O estado de conformidade da configuração. Os possíveis valores são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|state|[complianceStatus](../resources/intune_shared_compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
 |errorCode|Int64|Código de erro da configuração|
 |errorDescription|Cadeia de caracteres|Descrição do erro|
 |userId|Cadeia de caracteres|UserId|
@@ -20,15 +20,13 @@ Estado da configuração da política de conformidade de dispositivo para um det
 |currentValue|Cadeia de caracteres|Valor atual da configuração no dispositivo|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingState"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingState",

@@ -26,18 +26,18 @@ PATCH /groups/{id}/settings/{id}
 | Nome | Descrição |
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
+| Content-Type  | aplicativo/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. 
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| values | settingValue | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
+| values | conjunto settingValue | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação

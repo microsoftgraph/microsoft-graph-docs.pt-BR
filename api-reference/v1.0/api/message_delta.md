@@ -1,4 +1,4 @@
-# <a name="message-delta"></a>message: delta
+# <a name="message-delta"></a>mensagem: delta
 
 Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.
 
@@ -17,7 +17,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta
-GET /users/<id>/mailFolders/{id}/messages/delta
+GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
@@ -26,8 +26,8 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | cadeia de caracteres | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de mensagens indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
-| $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de mensagens. |
+| $deltatoken | sequência de caracteres | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de mensagens indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $skiptoken | sequência de caracteres | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de mensagens. |
 
 #### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
@@ -41,9 +41,9 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type  | sequência de caracteres  | application/json. Obrigatório. |
+| Preferir | sequência de caracteres  | odata.maxpagesize={x}. Opcional. |
 
 ## <a name="response"></a>Resposta
 
@@ -61,7 +61,6 @@ Para controlar alterações nas mensagens em uma pasta, faça uma ou mais chamad
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
-
 Prefer: odata.maxpagesize=2
 ```
 

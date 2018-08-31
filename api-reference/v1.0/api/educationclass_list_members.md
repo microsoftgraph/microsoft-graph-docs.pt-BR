@@ -9,7 +9,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ Este é um exemplo de solicitação.
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/11016/members
+GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -79,8 +79,6 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
-      "externalId": "13013",
-      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -88,6 +86,10 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
+      "teacher": {
+        "externalId": "13013",
+        "teacherNumber": "8802",
+      }
     },
     {
       "id": "13005",
@@ -111,13 +113,15 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
+      "student": {
+        "birthDate": "2001-01-01T00:00:00Z",
+        "externalId": "13005",
+        "gender": "female",
+        "grade": "9",
+        "graduationYear": "2019",
+        "studentNumber": "13005",
+      },
       "primaryRole": "student",
-      "externalId": "13005",
-      "birthDate": "2001-01-01T00:00:00Z",
-      "gender": "female",
-      "grade": "9",
-      "graduationYear": "2019",
-      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",

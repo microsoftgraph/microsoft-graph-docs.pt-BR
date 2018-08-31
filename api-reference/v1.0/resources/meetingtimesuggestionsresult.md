@@ -32,10 +32,10 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|Um motivo para não retornar qualquer sugestão de reunião. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` ou `unknown`. Essa propriedade será uma cadeia de caracteres vazia se a propriedade **meetingTimeSuggestions** incluir sugestões de reunião.|
-|meetingTimeSuggestions|[meetingTimeSuggestion](meetingTimeSuggestion.md) collection|Uma matriz de sugestões de reunião.|
+|emptySuggestionsReason|Sequência de caracteres|Um motivo para não retornar sugestões de reuniões. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable` ou `unknown`. Essa propriedade é uma sequência de caracteres vazia se a propriedade **meetingTimeSuggestions** incluir qualquer sugestão de reunião.|
+|meetingTimeSuggestions|coleção [meetingTimeSuggestion](meetingTimeSuggestion.md)|Uma matriz de sugestões de reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

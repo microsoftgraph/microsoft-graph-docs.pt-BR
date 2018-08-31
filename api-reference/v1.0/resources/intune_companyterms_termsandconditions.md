@@ -17,7 +17,7 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto.|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
 |description|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
 |title|Cadeia de caracteres|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
@@ -33,12 +33,12 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.termsAndConditions"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",

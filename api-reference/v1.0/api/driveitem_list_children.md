@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Listar o conteúdo de uma pasta"
-ms.openlocfilehash: e4c8f7b66333d739aeeaff9a8b92c0088d2fde0b
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Listar o conteúdo de uma pasta
+ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265215"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -40,11 +41,11 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte aos [parâmetros de consulta OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar a resposta.
+Este método oferece suporte aos [Parâmetros de consulta OData](../../../concepts/query_parameters.md) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar a resposta.
 
 ### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome de cabeçalho     | Valor | Descrição                                                                                                                                              |
+| Nome     | Valor | Descrição                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | etag  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
@@ -54,7 +55,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](../../../concep
 
 Para recuperar arquivos na raiz da unidade, use a relação `root` na unidade e acesse a relação de filhos.
 
-<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/root/children
@@ -106,7 +107,7 @@ Content-type: application/json
 
 **Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
 
-Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
+Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de consulta opcionais](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
 
 ### <a name="error-responses"></a>Respostas de erro
 

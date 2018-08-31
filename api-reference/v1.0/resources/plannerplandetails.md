@@ -15,7 +15,7 @@ O recurso **plannerPlanDetails** representa as informações adicionais sobre um
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano|
-|id|String| Somente leitura. ID dos detalhes dos planos. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
+|id|Cadeia de caracteres| Somente leitura. ID dos detalhes do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. A [validação de formato](planner_identifiers_disclaimer.md) é feita no serviço.|
 |sharedWith|[plannerUserIds](planneruserids.md)|Conjunto de identificações de usuários com o qual esse plano é compartilhado. Se você estiver aproveitando os Grupos do Office 365, use a API de Grupos para gerenciar a associação a um grupo para compartilhar o plano [do grupo](group.md). Você também pode adicionar membros existentes do grupo a essa coleção, embora isso não seja necessário para que eles possam acessar o plano do grupo. |
 
 ## <a name="relationships"></a>Relações
@@ -25,11 +25,10 @@ Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.plannerPlanDetails"
 }-->
 

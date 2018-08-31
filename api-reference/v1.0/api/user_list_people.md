@@ -5,6 +5,7 @@ Recupere uma coleção de objetos [person](../resources/person.md) ordenados por
 Você pode obter essas informações por meio da API de Pessoas. Para ver exemplos, confira a seção [Exemplos](#examples) e o artigo [Obter informações relevantes sobre as pessoas](../../../concepts/people_example.md).
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -14,49 +15,59 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | People.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/people
 GET /users/{id | userPrincipalName}/people
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método oferece suporte aos [ parâmetros de consulta OData ](../../../concepts/query_parameters.md) para personalizar a resposta, como mostrado nos exemplos no artigo [Obter informações relevantes sobre pessoas](../../../concepts/people_example.md).
 
-|Nome|Valor|Descrição| 
-|:---------------|:--------|:-------| 
-|$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.| 
-|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.| 
-|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa.| 
-|$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.| 
-|$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.| 
-|$top|int|Número de resultados a ser retornado.| 
+|Nome|Valor|Descrição|
+|:---------------|:--------|:-------|
+|$filter|sequência de caracteres|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.|
+|$orderby|sequência de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
+|$search|sequência de caracteres|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. O parâmetro funciona apenas para pesquisar pessoas relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também oferece suporte à palavra-chave `topic` para localizar pessoas com base em tópicos extraídos de conversas de e-mail com essa pessoa. Consulte a seção *Executar uma pesquisa difusa* em [Obter informações relevantes sobre pessoas](../../../concepts/people_example.md#perform-a-fuzzy-search) para mais informações e exemplos. |
+|$select|sequência de caracteres|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
+|$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
+|$top|int|Número de resultados a ser retornado.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Aceitar | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [person](../resources/person.md) no corpo da resposta. A resposta pode conter um objeto person ou uma coleção de objetos person.
 
 ## <a name="examples"></a>Exemplos
+
 #### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 
 <!-- {
   "blockType": "request",
   "name": "get_person_collection"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/people
 ```
 
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
 
 <!-- {

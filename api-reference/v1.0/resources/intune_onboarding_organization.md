@@ -15,18 +15,19 @@ O recurso da organização representa uma instância de configurações e recurs
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|mobileDeviceManagementAuthority|Cadeia de caracteres|Define autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "openType": true,
   "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.organization"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.organization",
@@ -35,5 +36,9 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md"
+  ]
+}-->
