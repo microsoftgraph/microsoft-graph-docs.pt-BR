@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
-ms.openlocfilehash: 47f3ebbc7936b6bd97b58a62db4805197c3bb3c1
-ms.sourcegitcommit: 126066a65b7c59f0d71667d722ee987b8ee97713
+ms.openlocfilehash: 64ca2eb0593c7eb6da518dadf3722b65c8472966
+ms.sourcegitcommit: 7d7c4476483b95e960d944053974794a4073a4c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "20050825"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23798184"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -44,6 +44,12 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
+## <a name="function-parameters"></a>Parâmetros de função
+
+| Nome   | Valor  | Descrição                                                                                                                          |
+|:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| token  | cadeia de caracteres | Opcional. Se não for especificado, enumera o estado atual da hierarquia. Se `latest`, retorna a resposta vazia com o token de delta mais recente. Se for um token delta anterior, retorna o novo estado desde esse token.
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método oferece suporte aos [Parâmetros de consulta OData](../../../concepts/query_parameters.md) `$select`, `$expand` e `$top` para personalizar as resposta.
@@ -67,7 +73,7 @@ Veja a seguir um exemplo de como chamar essa API para estabelecer seu estado loc
 
 Veja a seguir um exemplo da solicitação inicial.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -115,7 +121,7 @@ Veja a seguir um exemplo de como chamar essa API para atualizar seu estado local
 
 Veja a seguir um exemplo da solicitação após a solicitação inicial.
 
-<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
+<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -171,7 +177,7 @@ Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cade
 
 ### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -179,7 +185,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>Resposta
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK

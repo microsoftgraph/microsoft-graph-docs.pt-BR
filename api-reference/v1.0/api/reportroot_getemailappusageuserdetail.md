@@ -23,7 +23,7 @@ GET /reports/getEmailAppUsageUserDetail(period='{period_value}')
 GET /reports/getEmailAppUsageUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Solicitar parâmetros
+## <a name="function-parameters"></a>Parâmetros de função
 
 Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.
 

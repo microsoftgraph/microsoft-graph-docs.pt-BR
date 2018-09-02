@@ -16,26 +16,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 
 ```
+
+## <a name="function-parameters"></a>Parâmetros da função
+
+| Parâmetro    | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|deltaRows|Int32|O número de linhas pelo qual expandir o canto inferior direito, referente ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo|
+|deltaColumns|Int32|O número de colunas pelo qual expandir o canto inferior direito, em relação ao intervalo atual. Use um número positivo expandir o intervalo, ou um número negativo para diminui-lo.|
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
-## <a name="parameters"></a>Parâmetros
-
-| Parâmetro	    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|deltaRows|Int32|O número de linhas pelo qual expandir o canto inferior direito, referente ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo|
-|deltaColumns|Int32|O número de colunas pelo qual expandir o canto inferior direito, em relação ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo.|
-
 ## <a name="request-body"></a>Corpo da solicitação
-Forneça os seguintes parâmetros de consulta com valores na URL solicitada.
-
-| Parâmetro    | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|deltaRows|Int32||
-|deltaColumns|Int32||
+Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [workbookRange](../resources/range.md) no corpo da resposta.
@@ -44,12 +40,14 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objet
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "workbookrange_resizedrange"
+  "isComposable": true,
+  "name": "workbookrange_resizedrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/worksheets/{id}/range/resizedRange(deltarows={n}, deltaColumns={n})
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
 ##### <a name="response"></a>Resposta
@@ -57,7 +55,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

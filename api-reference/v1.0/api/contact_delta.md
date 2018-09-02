@@ -17,19 +17,19 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactFolders/{id}/contacts/delta
-GET /users/<id>/contactFolders/{id}/contacts/delta
+GET /users/{id}/contactFolders/{id}/contacts/delta
 ```
 
-### <a name="query-parameters"></a>Parâmetros de consulta
+## <a name="query-parameters"></a>Parâmetros de consulta
 
 O controle de alterações em contatos corresponde a uma série de uma ou mais chamadas de função **delta**. Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), especifique-o na primeira solicitação **delta**. O Microsoft Graph codifica automaticamente todos os parâmetros especificados na porção do token da URL `nextLink` ou `deltaLink` fornecida na resposta. Você só precisa especificar os parâmetros de consulta desejados uma vez antecipados. Em solicitações subsequentes, basta copiar e aplicar a URL `nextLink` ou `deltaLink` da resposta anterior já que essa URL inclui os parâmetros codificados desejados.
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de contatos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
-| $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de contatos. |
+| $deltatoken | sequência de caracteres | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de contatos indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $skiptoken | sequência de caracteres | Um [token de estado](../../../concepts/delta_query_overview.md) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de contatos. |
 
-#### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
+### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
 
 - Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada. 
 
@@ -37,9 +37,9 @@ O controle de alterações em contatos corresponde a uma série de uma ou mais c
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type  | sequência de caracteres  | application/json. Obrigatório. |
+| Preferir | sequência de caracteres  | odata.maxpagesize={x}. Opcional. |
 
 ## <a name="response"></a>Resposta
 
@@ -59,7 +59,6 @@ Você pode encontrar um exemplo semelhante que mostra como usar os tokens de est
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
-
 Prefer: odata.maxpagesize=2
 ```
 
