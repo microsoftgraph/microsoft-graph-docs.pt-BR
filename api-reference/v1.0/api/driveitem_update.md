@@ -3,29 +3,30 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Atualizar um arquivo ou uma pasta
-ms.openlocfilehash: 1662007d030f51b0fd9242ba0f22b670e5e2bde2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: af936948371ada7f0a8cd52115eac31ea6388d10
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266888"
 ---
-# <a name="update-driveitem-properties"></a><span data-ttu-id="ba1bc-102">Atualizar propriedades de DriveItem</span><span class="sxs-lookup"><span data-stu-id="ba1bc-102">Update DriveItem properties</span></span>
+# <a name="update-driveitem-properties"></a><span data-ttu-id="fc752-102">Atualizar propriedades de DriveItem</span><span class="sxs-lookup"><span data-stu-id="fc752-102">Update DriveItem properties</span></span>
 
-<span data-ttu-id="ba1bc-103">Atualize os metadados de um [DriveItem](../resources/driveitem.md) por ID ou caminho.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-103">Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.</span></span>
+<span data-ttu-id="fc752-103">Atualize os metadados de um [DriveItem](../resources/driveitem.md) por ID ou caminho.</span><span class="sxs-lookup"><span data-stu-id="fc752-103">Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.</span></span>
 
-<span data-ttu-id="ba1bc-104">Também é possível usar a atualização para [mover um item](driveitem_move.md) para outro pai ao atualizar a propriedade **parentReference** do item.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-104">You can also use update to [move an item](driveitem_move.md) to another parent by updating the item's **parentReference** property.</span></span>
+<span data-ttu-id="fc752-104">Também é possível usar a atualização para [mover um item](driveitem_move.md) para outro pai ao atualizar a propriedade **parentReference** do item.</span><span class="sxs-lookup"><span data-stu-id="fc752-104">You can also use update to [move an item](driveitem_move.md) to another parent by updating the item's **parentReference** property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ba1bc-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ba1bc-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fc752-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="fc752-105">Permissions</span></span>
 
-<span data-ttu-id="ba1bc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="ba1bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="fc752-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="fc752-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="ba1bc-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ba1bc-108">Permission type</span></span>      | <span data-ttu-id="ba1bc-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ba1bc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc752-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fc752-108">Permission type</span></span>      | <span data-ttu-id="fc752-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fc752-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ba1bc-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ba1bc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ba1bc-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba1bc-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ba1bc-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ba1bc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba1bc-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba1bc-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ba1bc-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ba1bc-114">Application</span></span> | <span data-ttu-id="ba1bc-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba1bc-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="fc752-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fc752-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fc752-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc752-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fc752-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fc752-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc752-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc752-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fc752-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fc752-114">Application</span></span> | <span data-ttu-id="fc752-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fc752-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ba1bc-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ba1bc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc752-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fc752-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,28 +38,28 @@ PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="ba1bc-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="ba1bc-117">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="fc752-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="fc752-117">Optional request headers</span></span>
 
-| <span data-ttu-id="ba1bc-118">Name</span><span class="sxs-lookup"><span data-stu-id="ba1bc-118">Name</span></span>          | <span data-ttu-id="ba1bc-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="ba1bc-119">Type</span></span>   | <span data-ttu-id="ba1bc-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="ba1bc-120">Description</span></span>                                                                                                                                                         |
+| <span data-ttu-id="fc752-118">Nome</span><span class="sxs-lookup"><span data-stu-id="fc752-118">Name</span></span>          | <span data-ttu-id="fc752-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="fc752-119">Type</span></span>   | <span data-ttu-id="fc752-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="fc752-120">Description</span></span>                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ba1bc-121">if-match</span><span class="sxs-lookup"><span data-stu-id="ba1bc-121">if-match</span></span>      | <span data-ttu-id="ba1bc-122">String</span><span class="sxs-lookup"><span data-stu-id="ba1bc-122">String</span></span> | <span data-ttu-id="ba1bc-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-123">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
+| <span data-ttu-id="fc752-121">if-match</span><span class="sxs-lookup"><span data-stu-id="fc752-121">if-match</span></span>      | <span data-ttu-id="fc752-122">Sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="fc752-122">String</span></span> | <span data-ttu-id="fc752-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida.</span><span class="sxs-lookup"><span data-stu-id="fc752-123">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ba1bc-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ba1bc-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fc752-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fc752-124">Request body</span></span>
 
-<span data-ttu-id="ba1bc-125">No corpo da solicitação, forneça os valores para as propriedades que devem ser atualizadas.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-125">In the request body, supply the values for the device properties that should be updated.</span></span>
+<span data-ttu-id="fc752-125">No corpo da solicitação, forneça os valores para as propriedades que devem ser atualizadas.</span><span class="sxs-lookup"><span data-stu-id="fc752-125">In the request body, supply the values for properties that should be updated.</span></span>
 
-<span data-ttu-id="ba1bc-126">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-126">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
-<span data-ttu-id="ba1bc-127">Para obter melhor desempenho, seu aplicativo não deve incluir propriedades que não tenham sido alteradas.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-127">For best performance your app should not include properties that haven't changed.</span></span>
+<span data-ttu-id="fc752-126">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="fc752-126">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
+<span data-ttu-id="fc752-127">Para obter melhor desempenho, seu aplicativo não deve incluir propriedades que não tenham sido alteradas.</span><span class="sxs-lookup"><span data-stu-id="fc752-127">For best performance your app should not include properties that haven't changed.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ba1bc-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba1bc-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc752-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="fc752-128">Response</span></span>
 
-<span data-ttu-id="ba1bc-129">Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-129">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="fc752-129">Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurso [DriveItem](../resources/driveitem.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fc752-129">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ba1bc-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ba1bc-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fc752-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fc752-130">Example</span></span>
 
-<span data-ttu-id="ba1bc-131">Este exemplo renomeia o recurso DriveItem como "new-file-name.docx".</span><span class="sxs-lookup"><span data-stu-id="ba1bc-131">This example renames the DriveItem resource to "new-file-name.docx".</span></span>
+<span data-ttu-id="fc752-131">Este exemplo renomeia o recurso DriveItem como "new-file-name.docx".</span><span class="sxs-lookup"><span data-stu-id="fc752-131">This example renames the DriveItem resource to "new-file-name.docx".</span></span>
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -69,9 +70,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ba1bc-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="ba1bc-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="fc752-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="fc752-132">Response</span></span>
 
-<span data-ttu-id="ba1bc-133">Se tiver êxito, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ba1bc-133">If successful, this method returns an [driveItem][item-resource] resource in the response body.</span></span>
+<span data-ttu-id="fc752-133">Se tiver êxito, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fc752-133">If successful, this method returns an [driveItem][item-resource] resource in the response body.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -86,9 +87,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="ba1bc-134">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="ba1bc-134">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="fc752-134">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="fc752-134">Error responses</span></span>
 
-<span data-ttu-id="ba1bc-135">Confira mais detalhes sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="ba1bc-135">See [Error Responses][error-response] for details about how errors are returned.</span></span>
+<span data-ttu-id="fc752-135">Confira mais detalhes sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="fc752-135">See [Error Responses][error-response] for details about how errors are returned.</span></span>
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md

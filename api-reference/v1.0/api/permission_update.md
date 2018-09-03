@@ -2,30 +2,31 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Alterar permissões de compartilhamento"
-ms.openlocfilehash: ead6babf88b7efc578ef8be6d11cc9fb59dd5fdd
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Alterar permissões de compartilhamento
+ms.openlocfilehash: 051520ed62fdfe6499a8cca2387e65f14714205f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267280"
 ---
-# <a name="update-sharing-permission"></a><span data-ttu-id="63e51-102">Atualizar a permissão de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="63e51-102">Update sharing permission</span></span>
+# <a name="update-sharing-permission"></a><span data-ttu-id="a6016-102">Atualizar a permissão de compartilhamento</span><span class="sxs-lookup"><span data-stu-id="a6016-102">Update sharing permission</span></span>
 
-<span data-ttu-id="63e51-103">Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.</span><span class="sxs-lookup"><span data-stu-id="63e51-103">Update the properties of a permission by patching the resource.</span></span>
+<span data-ttu-id="a6016-103">Atualiza as propriedades de permissão de compartilhamento pela correção do recurso de permissão.</span><span class="sxs-lookup"><span data-stu-id="a6016-103">Update the properties of a sharing permission by patching the permission resource.</span></span>
 
-<span data-ttu-id="63e51-104">Somente a propriedade **roles** pode ser modificada dessa forma.</span><span class="sxs-lookup"><span data-stu-id="63e51-104">Only the **roles** property can be modified this way.</span></span>
+<span data-ttu-id="a6016-104">Somente a propriedade **roles** pode ser modificada dessa forma.</span><span class="sxs-lookup"><span data-stu-id="a6016-104">Only the **roles** property can be modified this way.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="63e51-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="63e51-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a6016-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a6016-105">Permissions</span></span>
 
-<span data-ttu-id="63e51-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="63e51-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="a6016-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="a6016-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="63e51-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="63e51-108">Permission type</span></span>      | <span data-ttu-id="63e51-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="63e51-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a6016-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a6016-108">Permission type</span></span>      | <span data-ttu-id="a6016-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a6016-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="63e51-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="63e51-110">Delegated (work or school account)</span></span> | <span data-ttu-id="63e51-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63e51-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="63e51-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="63e51-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="63e51-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63e51-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="63e51-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="63e51-114">Application</span></span> | <span data-ttu-id="63e51-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63e51-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a6016-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a6016-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a6016-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6016-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a6016-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a6016-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a6016-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6016-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a6016-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a6016-114">Application</span></span> | <span data-ttu-id="a6016-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a6016-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="63e51-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="63e51-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a6016-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a6016-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,32 +38,32 @@ PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="63e51-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="63e51-117">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="a6016-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="a6016-117">Optional request headers</span></span>
 
-| <span data-ttu-id="63e51-118">Name</span><span class="sxs-lookup"><span data-stu-id="63e51-118">Name</span></span>          | <span data-ttu-id="63e51-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="63e51-119">Type</span></span>   | <span data-ttu-id="63e51-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="63e51-120">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="a6016-118">Nome</span><span class="sxs-lookup"><span data-stu-id="a6016-118">Name</span></span>          | <span data-ttu-id="a6016-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="a6016-119">Type</span></span>   | <span data-ttu-id="a6016-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6016-120">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="63e51-121">if-match</span><span class="sxs-lookup"><span data-stu-id="63e51-121">if-match</span></span>      | <span data-ttu-id="63e51-122">string</span><span class="sxs-lookup"><span data-stu-id="63e51-122">string</span></span> | <span data-ttu-id="63e51-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="63e51-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="a6016-121">if-match</span><span class="sxs-lookup"><span data-stu-id="a6016-121">if-match</span></span>      | <span data-ttu-id="a6016-122">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="a6016-122">string</span></span> | <span data-ttu-id="a6016-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="a6016-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="63e51-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="63e51-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a6016-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a6016-124">Request body</span></span>
 
-<span data-ttu-id="63e51-125">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="63e51-125">In the request body, supply the values for relevant fields that should be updated.</span></span>
+<span data-ttu-id="a6016-125">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="a6016-125">In the request body, supply the values for relevant fields that should be updated.</span></span>
 
-<span data-ttu-id="63e51-126">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="63e51-126">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
-<span data-ttu-id="63e51-127">Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="63e51-127">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="a6016-126">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="a6016-126">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
+<span data-ttu-id="a6016-127">Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="a6016-127">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="63e51-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="63e51-128">Property</span></span>     | <span data-ttu-id="63e51-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="63e51-129">Type</span></span>   | <span data-ttu-id="63e51-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="63e51-130">Description</span></span>                   |
-|:-------------|:-------|:------------------------------|
-| <span data-ttu-id="63e51-131">**roles**</span><span class="sxs-lookup"><span data-stu-id="63e51-131">**roles**</span></span>    | <span data-ttu-id="63e51-132">String</span><span class="sxs-lookup"><span data-stu-id="63e51-132">String</span></span> | <span data-ttu-id="63e51-133">Uma matriz de tipos de permissão.</span><span class="sxs-lookup"><span data-stu-id="63e51-133">An array of permission types.</span></span> |
+| <span data-ttu-id="a6016-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a6016-128">Property</span></span> | <span data-ttu-id="a6016-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="a6016-129">Type</span></span>              | <span data-ttu-id="a6016-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="a6016-130">Description</span></span>                   |
+|:---------|:------------------|:------------------------------|
+| <span data-ttu-id="a6016-131">roles</span><span class="sxs-lookup"><span data-stu-id="a6016-131">roles</span></span>    | <span data-ttu-id="a6016-132">Conjunto de sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="a6016-132">String collection</span></span> | <span data-ttu-id="a6016-133">Uma matriz de tipos de permissão.</span><span class="sxs-lookup"><span data-stu-id="a6016-133">An array of permission types.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="63e51-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="63e51-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a6016-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6016-134">Response</span></span>
 
-<span data-ttu-id="63e51-135">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [permission](../resources/permission.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="63e51-135">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="a6016-135">Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [permission](../resources/permission.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a6016-135">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="63e51-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="63e51-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a6016-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a6016-136">Example</span></span>
 
-<span data-ttu-id="63e51-137">Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.</span><span class="sxs-lookup"><span data-stu-id="63e51-137">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
+<span data-ttu-id="a6016-137">Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6016-137">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
 
-<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+<!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}/permissions/{perm-id}
@@ -73,9 +74,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="63e51-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="63e51-138">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a6016-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="a6016-138">Response</span></span>
 
-<span data-ttu-id="63e51-139">Se for bem-sucedido, esse método retornará um recurso [Permission](../resources/permission.md) no corpo da resposta que representa o estado atualizado da permissão.</span><span class="sxs-lookup"><span data-stu-id="63e51-139">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
+<span data-ttu-id="a6016-139">Se for bem-sucedido, esse método retornará um recurso [Permission](../resources/permission.md) no corpo da resposta que representa o estado atualizado da permissão.</span><span class="sxs-lookup"><span data-stu-id="a6016-139">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
 
@@ -95,9 +96,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="63e51-140">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="63e51-140">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="a6016-140">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="a6016-140">Error responses</span></span>
 
-<span data-ttu-id="63e51-141">Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="63e51-141">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="a6016-141">Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="a6016-141">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 [error-response]: ../../../concepts/errors.md
 
