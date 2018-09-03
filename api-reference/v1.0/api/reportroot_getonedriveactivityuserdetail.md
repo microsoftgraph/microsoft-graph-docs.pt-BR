@@ -16,14 +16,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "samples" } --> 
 
 ```http
 GET /reports/getOneDriveActivityUserDetail(period='{period_value}')
 GET /reports/getOneDriveActivityUserDetail(date={date_value})
 ```
 
-## <a name="request-parameters"></a>Parâmetros da solicitação
+## <a name="function-parameters"></a>Parâmetros de função
 
 Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.
 
@@ -67,8 +67,9 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 
 Este é um exemplo de solicitação.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getonedriveactivityuserdetail"
 }-->
 
@@ -80,7 +81,11 @@ GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityUserDetail(perio
 
 Este é um exemplo de resposta.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.report"
+} -->
 
 ```http
 HTTP/1.1 302 Found
@@ -90,11 +95,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 
 Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
-} -->
+<!-- { "blockType": "ignored" } --> 
 
 ```http
 HTTP/1.1 200 OK
