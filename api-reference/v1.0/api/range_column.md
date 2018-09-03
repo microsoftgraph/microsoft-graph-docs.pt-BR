@@ -13,23 +13,23 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Column
-GET /workbook/worksheets/{id|name}/range(address='<address>')/Column
-GET /workbook/tables/{id|name}/columns/{id|name}/range/Column
+GET /workbook/names/{name}/range/column
+GET /workbook/worksheets/{id|name}/range(address='<address>')/column
+GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
+| Autorização  | Portador {token}. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+## <a name="path-parameters"></a>Parâmetros de caminho
+Forneça os seguintes parâmetros no caminho da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|column|number|O número da coluna do intervalo a ser recuperado. Indexados com zero.|
+|column|Int32|O número da coluna do intervalo a ser recuperado. Indexado com zero.|
 
 ## <a name="response"></a>Resposta
 
@@ -39,19 +39,13 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_column"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/Column
-Content-type: application/json
-Content-length: 21
-
-{
-  "column": {
-  }
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
 
 ##### <a name="response"></a>Resposta
@@ -59,7 +53,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

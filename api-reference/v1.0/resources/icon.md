@@ -7,14 +7,14 @@ Representa um ícone de célula.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Leia as propriedades e os relacionamentos do objeto de ícone.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)    |Atualize o objeto Icon. |
+|[Obter ícone](../api/icon_get.md) | [Ícone](icon.md) |Propriedades de leitura e relacionamentos do objeto de ícone.|
+|[Atualizar](../api/icon_update.md) | [Ícone](icon.md)  |Atualizar o objeto ícone. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |índice|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.|
+|set|sequência de caracteres|Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -29,7 +29,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

@@ -93,28 +93,24 @@ PATCH /users/{id|userPrincipalName}/contactFolders/{id}
 PATCH /groups/{id}/events/{id}
 ```
 
-
-## <a name="parameters"></a>Parâmetros
-|**Parâmetro**|**Tipo**|**Descrição**|
-|:-----|:-----|:-----|
-|_Parâmetros de URL_|
-|id|string|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
-|_Parâmetros de corpo_|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
-|id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
-|valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
-
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
 |:---------------|:----------|
 | Autorização | {token} de portador. Obrigatório. |
-| Content-Type | application/json |
+| Content-Type | aplicativo/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md) na propriedade da coleção **multiValueExtendedProperties** da instância de recurso.
 
-Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
+|Propriedade|Tipo|Descrição|
+|:-----|:-----|:-----|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multiValueLegacyExtendedProperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
+|id|Sequência de caracteres|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|valor|sequência de caracteres|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
+
+Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties**, forneça uma também uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.).
+
 
 ## <a name="response"></a>Resposta
 
