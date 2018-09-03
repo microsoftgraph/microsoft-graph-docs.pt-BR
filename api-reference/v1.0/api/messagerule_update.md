@@ -15,8 +15,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/mailFolders/inbox/messagerules/{id}
-PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
+PATCH /me/mailFolders/inbox/messageRules/{id}
+PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -33,8 +33,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | conditions | [messageRulePredicates](../resources/messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
 | displayName | Cadeia de caracteres | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](../resources/messagerulepredicates.md) | Condições de exceção para a regra. |
-| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
-| isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
+| isEnabled | Booleano | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isReadOnly | Booleano | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 
 
@@ -45,11 +45,11 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e o obj
 O exemplo a seguir muda o nome da regra e as ações a serem seguidas para essa regra no [exemplo](messagerule_get.md#example) em [Obter regra](messagerule_get.md), do encaminhamento para um endereço a marcar sua importância como alta. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "update_messagerule"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
-
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 Content-type: application/json
 
 {

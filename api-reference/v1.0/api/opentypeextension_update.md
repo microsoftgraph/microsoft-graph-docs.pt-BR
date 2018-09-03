@@ -40,12 +40,11 @@ PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
 
 
-## <a name="parameters"></a>Parâmetros
-|**Parâmetro**|**Tipo**|**Descrição**|
+## <a name="path-parameters"></a>Parâmetros do caminho
+|Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|_Parâmetros de URL_|
-|id|string|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
-|extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
+|id|sequência de caracteres|Um identificador exclusivo para uma instância da coleção correspondente. Obrigatório.|
+|extensionId|sequência de caracteres|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para a extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade `id` quando você cria a extensão. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |
@@ -59,7 +58,7 @@ Forneça um corpo JSON de um objeto [openTypeExtension](../resources/openTypeExt
 
 | Nome       | Valor |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>Resposta
@@ -76,7 +75,7 @@ O primeiro exemplo mostra como atualizar uma extensão de uma mensagem. A extens
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -91,14 +90,14 @@ Você pode fazer referência à extensão por seu nome:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 Ou você pode fazer referência à extensão por seu nome totalmente qualificado:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
 Você pode usar o exemplo de solicitação e o seguinte corpo de solicitação para atualizar a extensão acima da seguinte forma:
@@ -109,7 +108,7 @@ Você pode usar o exemplo de solicitação e o seguinte corpo de solicitação p
 <!-- { "blockType": "ignored" } -->
 ```http
 {
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "extensionName": "Com.Contoso.Referral",
     "companyName": "Wingtip Toys (USA)",
     "dealValue": "500100",
@@ -130,7 +129,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -170,11 +169,12 @@ O segundo exemplo mostra como atualizar uma extensão em uma postagem de grupo. 
 A seguir estão a solicitação e o corpo da solicitação para alterar o `expirationDate` para `2016-07-30T11:00:00Z`:
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
+  "sampleKeys": ["Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate"],
   "name": "update_opentypeextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')
+PATCH https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 Content-type: application/json
 
 {
@@ -196,9 +196,9 @@ Content-type: application/json
 Aqui está a resposta do segundo exemplo, que mostra o `expirationDate` atualizado na extensão.
 
 <!-- {  
-  "blockType": "response",  
+  "blockType": "ignored",  
   "truncated": true,  
-  "@odata.type": "microsoft.graph.opentypeextension"  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 
 ```http
 HTTP/1.1 200 OK

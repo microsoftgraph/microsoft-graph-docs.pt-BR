@@ -24,7 +24,7 @@ POST /deviceManagement/remoteAssistancePartners
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -37,7 +37,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar remoteAs
 |id|Cadeia de caracteres|O identificador exclusivo do parceiro.|
 |displayName|Cadeia de caracteres|Nome de exibição do parceiro.|
 |onboardingUrl|Cadeia de caracteres|URL do portal de integração do parceiro, no qual um administrador pode configurar o serviço de assistência remota.|
-|onboardingStatus|Cadeia de caracteres|TBD Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune_remoteassistance_remoteassistanceonboardingstatus.md)|A definir. Os valores possíveis são: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.|
 
 

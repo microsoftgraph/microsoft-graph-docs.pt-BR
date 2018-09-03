@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Obter permissões"
-ms.openlocfilehash: 34171ca2c862857069f904103681ecc9b1646fc7
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Obter permissões
+ms.openlocfilehash: 48c0d7f07565c87e5f2b77ca7a3d5beec83540e7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268547"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 
@@ -17,7 +18,7 @@ Permissões efetivas de um item podem vir de duas fontes: permissões definidas 
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade `inheritedFrom` Esta propriedade é um recurso [itemReference](../resources/itemReference.md) que faz referência ao ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Consulte a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
 ## <a name="permissions"></a>Permissões
 
@@ -43,7 +44,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método dá suporte ao [parâmetro de consulta $select](../../../concepts/query_parameters.md) para formar a resposta.
+Esse método é compatível com o [parâmetro de consulta $select](../../../concepts/query_parameters.md) para formar a resposta.
 
 ## <a name="response"></a>Resposta
 
@@ -55,7 +56,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso
 
 Aqui está um exemplo da solicitação para acessar uma permissão em uma pasta.
 
-<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions/{perm-id}
@@ -93,7 +94,7 @@ Permissões com uma faceta [**invitation**](../resources/sharinginvitation.md) r
 
 ### <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 
 [error-response]: ../../../concepts/errors.md
 

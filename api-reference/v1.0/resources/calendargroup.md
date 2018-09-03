@@ -1,6 +1,6 @@
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
 
-Um grupo de calendários.
+Um grupo de calendários de usuários.
 
 ## <a name="methods"></a>Métodos
 
@@ -19,9 +19,9 @@ Um grupo de calendários.
 | Propriedade  | Tipo   | Descrição                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name      | Cadeia de caracteres | O nome do grupo.                                                                                                                                                                                           |
-| changeKey | String | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
+| changeKey | Cadeia de caracteres | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
 | classId   | Guid   | O identificador de classe. Somente leitura.                                                                                                                                                                          |
-| id        | String | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
+| id        | Cadeia de caracteres | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
 
@@ -33,13 +33,25 @@ Um grupo de calendários.
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

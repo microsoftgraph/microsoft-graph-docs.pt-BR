@@ -7,35 +7,31 @@ Representa a proteção de um objeto de planilha.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorksheetProtection](worksheetprotection.md) |Leia as propriedades e os relacionamentos do objeto worksheetProtection.|
-|[Protect](../api/worksheetprotection_protect.md)|Nenhum|Protege uma planilha. Gera uma exceção se a planilha estiver protegida.|
-|[Unprotect](../api/worksheetprotection_unprotect.md)|Nenhum|Desprotege uma planilha.|
+|[Get WorksheetProtection](../api/worksheetprotection_get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Leia as propriedades e os relacionamentos do objeto worksheetProtection.|
+|[Proteger](../api/worksheetprotection_protect.md)|Nenhum|Protege uma planilha. Gera uma exceção se a planilha estiver protegida.|
+|[Desproteger](../api/worksheetprotection_unprotect.md)|Nenhum|Desprotege uma planilha.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
+|opções|[WorkbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|Opções de proteção da planilha. Somente leitura.|
 |protected|booliano|Indica se a planilha está protegida.  Somente leitura.|
-
-## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
-|:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Opções de proteção da planilha. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```

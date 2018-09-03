@@ -22,11 +22,11 @@ GET /deviceManagement/conditionalAccessSettings
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -55,10 +55,10 @@ Content-Length: 357
     "id": "a0efde21-de21-a0ef-21de-efa021deefa0",
     "enabled": true,
     "includedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "79199ed9-e50b-4257-8de4-70b9c8685061"
     ],
     "excludedGroups": [
-      "<Unknown Primitive Type Edm.Guid>"
+      "79199ed9-e50b-4257-8de4-70b9c8685061"
     ],
     "overrideDefaultRule": true
   }

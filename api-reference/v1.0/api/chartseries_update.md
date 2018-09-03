@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
+PATCH /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
@@ -26,11 +26,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Representa o nome de uma série em um gráfico.|
+|name|sequência de caracteres|Representa o nome de uma série em um gráfico.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartSeries](../resources/chartseries.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [WorkbookChartSeries](../resources/chartseries.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -39,7 +39,7 @@ Este é um exemplo da solicitação.
   "name": "update_chartseries"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
+PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 Content-type: application/json
 Content-length: 26
 
@@ -52,7 +52,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

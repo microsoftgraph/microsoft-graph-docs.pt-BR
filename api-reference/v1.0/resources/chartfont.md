@@ -7,18 +7,18 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Atualize o objeto ChartFont. |
+|[Get ChartFont](../api/chartfont_get.md) | [WorkbookChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
+|[Update](../api/chartfont_update.md) | [WorkbookChartFont](chartfont.md)   |Atualize o objeto ChartFont. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|sequência de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|cadeia de caracteres|Nome da fonte (por exemplo, "Calibri")|
+|name|sequência de caracteres|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` e `Single`.|
+|underline|sequência de caracteres|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -28,12 +28,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json

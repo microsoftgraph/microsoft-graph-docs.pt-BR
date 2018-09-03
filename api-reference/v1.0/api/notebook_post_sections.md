@@ -1,6 +1,6 @@
 # <a name="create-section"></a>Criar seção
 
-Crie uma nova [seção](../resources/section.md) no bloco de anotações especificado.
+Crie um novo [onenoteSection](../resources/section.md) no bloco de anotações especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -21,8 +21,8 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string | `application/json` |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um nome para a seção.
@@ -31,7 +31,7 @@ Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [section](../resources/section.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [onenoteSection](../resources/section.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

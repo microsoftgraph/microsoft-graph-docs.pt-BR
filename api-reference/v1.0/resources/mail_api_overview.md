@@ -12,9 +12,9 @@ As mensagens de email são representadas pelo recurso [message](../resources/mes
 
 Os corpos de mensagens podem estar no formato HTML ou no formato de texto.
 
-Você pode usar os nomes de pasta conhecido como `Inbox`, `Drafts`, `SentItems` ou `DeletedItems` para identificar determinadas pastas de email que existem por padrão para todos os usuários. Confira uma lista de nomes de pasta comuns com suporte em [tipo de recurso mailFolder](../resources/mailfolder.md).
+Você pode usar nomes de pasta conhecidos como `Inbox`, `Drafts`, `SentItems` ou `DeletedItems` para identificar determinadas pastas de e-mail que existem por padrão para todos os usuários. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).
 
-Por exemplo, você pode obter mensagens na pasta **Itens enviados** do Outlook do usuário conectado, sem primeiro obte o ID de pasta:
+Por exemplo, você pode obter mensagens na pasta **Itens enviados** do Outlook do usuário conectado, sem primeiro obter a ID da pasta:
 
 ```http
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
@@ -34,6 +34,7 @@ A API do Microsoft Graph também fornece métodos e ações que ofereçam suport
 | Permitir que o usuário visualize as mensagens mais importantes primeiro | [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) | [Caixa de Entrada Prioritária](../resources/manage_focused_inbox.md) |
 | Adicionar, obter ou excluir anexos de uma mensagem | [anexo](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [mensagem](../resources/message.md) | [Métodos de anexo](../resources/attachment.md#methods) |
 | Obter ou atualizar resposta automática, localidade, fuso horário ou horário de trabalho de um usuário | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Obter configurações da caixa de correio do usuário](../api/user_get_mailboxsettings.md), <br> [Atualizar configurações da caixa de correio do usuários](../api/user_update_mailboxsettings.md) |
+| Obtenha dicas de e-mail do status especiais de outros destinatários, como fora do escritório | [usuário](../resources/user.md), <br> [Dicas de E-mail](../resources/mailtips.md) | [Obtenha dicas de e-mail](../api/user_getmailtips.md) |
 | **Gerenciamento de pasta e email** | | |
 | Organizar mensagens em uma hierarquia de pasta de email | [mailFolder](../resources/mailfolder.md)  | [Métodos de mailFolder](../resources/mailfolder.md#methods) |
 | Pesquisar e filtrar mensagens | [mensagem](../resources/message.md) | [Parâmetros de consulta](../../../concepts/query_parameters.md)  |

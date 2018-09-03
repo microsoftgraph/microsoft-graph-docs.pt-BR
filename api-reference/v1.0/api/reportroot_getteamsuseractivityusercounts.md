@@ -20,7 +20,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /reports/getTeamsUserActivityUserCounts(period='{period_value}')
 ```
 
-## <a name="request-parameters"></a>Solicitar parâmetros
+## <a name="function-parameters"></a>Parâmetros de função
 
 Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.
 

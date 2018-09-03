@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
-ms.openlocfilehash: 8b8671fbad37601a42127119f8bef6e5eca23dea
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: d7090939fb2b950ed92fd9574cf9dd5b80ec8a6c
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266629"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um DriveItem
 
@@ -46,13 +47,13 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte aos `$select` [Parâmetros de consulta OData](../../../concepts/query_parameters.md) para personalizar a resposta.
+Este método oferece suporte aos [Parâmetros de consulta OData](../../../concepts/query_parameters.md) `$select` para personalizar as resposta.
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Tipo   | Descrição                                                                                                                                     |
+| Nome          | Tipo   | Descrição                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida. |
+| if-none-match | sequência de caracteres | Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida. |
 
 ## <a name="response"></a>Resposta
 
@@ -65,13 +66,13 @@ As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fo
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.
 
-Os níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Consulte a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
 ## <a name="example"></a>Exemplo
 
 Este exemplo recupera a coleção de permissões em um item na unidade do usuário conectado.
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -133,7 +134,7 @@ A relação **permissions** de um DriveItem não pode ser expandida como parte d
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 
 [error-response]: ../../../concepts/errors.md
 

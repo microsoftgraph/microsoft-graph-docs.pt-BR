@@ -15,10 +15,10 @@ Programaticamente, você pode acessar regras por meio da propriedade de navegaç
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Condições que, quando atendidas, acionarão as ações correspondentes dessa regra. |
 | displayName | Cadeia de caracteres | O nome de exibição da regra. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Condições de exceção para a regra. |
-| hasError | Boolean | Indica se a regra está em uma condição de erro. Somente leitura. |
+| hasError | Booleano | Indica se a regra está em uma condição de erro. Somente leitura. |
 | id |Cadeia de caracteres|O identificador exclusivo da regra. Somente leitura.|
-| isEnabled | Boolean | Indica se a regra está habilitada para ser aplicada a mensagens. |
-| isReadOnly | Boolean | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
+| isEnabled | Booleano | Indica se a regra está habilitada para ser aplicada a mensagens. |
+| isReadOnly | Booleano | Indica se a regra é somente leitura e não pode ser modificada ou excluída pelas regras da API REST. |
 | sequence | Int32 | Indica a ordem em que a regra é executada, entre outras regras. |
 
 
@@ -29,6 +29,7 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "optionalProperties": [
    ],
+   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.messageRule"
 }-->
 

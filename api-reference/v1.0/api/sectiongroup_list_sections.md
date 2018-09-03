@@ -1,6 +1,6 @@
 # <a name="list-sections"></a>Listar seções
 
-Recupere uma lista de objetos [section](../resources/section.md) do grupo de seção especificado.
+Recupere uma lista de objetos [onenoteSection](../resources/section.md) do grupo de seção especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -29,7 +29,7 @@ A consulta padrão expande `parentNotebook` e escolhe suas propriedades `id`, `d
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 | Aceitar | string | `application/json` |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -37,7 +37,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [section](../resources/section.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta `200 OK` e a coleção de objetos [onenoteSection](../resources/section.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

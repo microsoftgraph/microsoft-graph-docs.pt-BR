@@ -30,7 +30,7 @@ Você pode atribuir usuários a [funções de diretório](../api-reference/v1.0/
 
 ### <a name="manage-devices"></a>Gerenciar dispositivos
 
-[Gerencie os dispositivos](https://docs.microsoft.com/pt-BR/azure/active-directory/device-management-introduction.md) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
+[Gerencie os dispositivos](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
 
 ### <a name="partner-tenant-management"></a>Gerenciamento de locatário do parceiro
 
@@ -54,11 +54,14 @@ Recuperar eventos de risco gerados pela [Proteção de Identidade](../api-refere
 
 Você pode garantir o acesso a recursos ativando privilégios administrativos sob demanda. O [Gerenciamento de Identidade Privilegiada](../api-reference/beta/resources/privilegedidentitymanagement_root.md) é oferecido no Azure AD Premium P2.
 
+### <a name="manage-user-access-reviews-preview"></a>Gerenciar revisões de acesso de usuários (versão prévia)
+
+Você pode configurar revisões de acesso de associações de grupo e do acesso do aplicativo. O recurso de [revisões de acesso](../api-reference/beta/resources/accessreviews_root.md) é oferecido no Windows Azure AD Premium P2.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [Usar as APIs REST do Azure AD](../api-reference/v1.0/resources/azure_ad_overview.md).
 - Use o Azure AD para se [autenticar](auth_overview.md) no Microsoft Graph. 
-- Integre o [logon do Azure AD](https://azure.microsoft.com/pt-BR/develop/identity/signin/) ao seu aplicativo ou website.
+- Integre o [logon do Azure AD](https://azure.microsoft.com/en-us/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
-- Explore [exemplos](https://developer.microsoft.com/pt-BR/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.
+- Explore [exemplos](https://developer.microsoft.com/en-us/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.

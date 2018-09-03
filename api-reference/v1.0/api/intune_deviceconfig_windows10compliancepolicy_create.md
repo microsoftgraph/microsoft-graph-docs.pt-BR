@@ -1,6 +1,6 @@
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Cria um novo objeto [windows10CompliancePolicy](../resources/intune_deviceconfig_windows10compliancepolicy.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; obrigatório.|
-|Accept|application/json|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto windows10CompliancePolicy.
@@ -47,18 +47,18 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |passwordExpirationDays|Int32|A expiração da senha em dias.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha.|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
-|passwordRequiredType|Cadeia de caracteres|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
 |requireHealthyDeviceReport|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows 10.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows 10.|
 |mobileOsMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |mobileOsMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
-|bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
-|secureBootEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
-|codeIntegrityEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
-|storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows.|
+|earlyLaunchAntiMalwareDriverEnabled|Booleano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
+|bitLockerEnabled|Booleano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
+|secureBootEnabled|Booleano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
+|codeIntegrityEnabled|Booleano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
+|storageRequireEncryption|Booleano|Exige criptografia em dispositivos Windows.|
 
 
 

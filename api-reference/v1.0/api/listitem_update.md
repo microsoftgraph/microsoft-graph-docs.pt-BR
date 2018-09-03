@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Atualizar um registro em uma lista do SharePoint
-ms.openlocfilehash: ca1c3dcb96ba347b457253b3843114402dba8ba3
-ms.sourcegitcommit: 339070a20730bc4d363da7eb346d5f3c1e1d6c3e
+ms.openlocfilehash: d59167e740d28d832cd9cf6b1175f6b5be1cd729
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268526"
 ---
 # <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
 
@@ -47,7 +48,7 @@ No corpo da solicitação, forneça uma representação JSON de [fieldValueSet][
 Aqui está um exemplo que atualiza os campos de cor e quantidade do item de lista com novos valores.
 Todos os outros valores no listItem ficam inalterados. 
 
-<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
@@ -63,7 +64,7 @@ Content-Type: application/json
 
 Se for bem-sucedido, esse método retornará um [fieldValueSet][] no corpo da resposta do item de lista atualizada.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
 ```json
 HTTP/1.1 201 Created

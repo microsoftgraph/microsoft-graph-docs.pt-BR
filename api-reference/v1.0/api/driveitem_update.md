@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Atualizar um arquivo ou uma pasta
-ms.openlocfilehash: 1662007d030f51b0fd9242ba0f22b670e5e2bde2
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: af936948371ada7f0a8cd52115eac31ea6388d10
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266888"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
 
@@ -39,15 +40,15 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Tipo   | Descrição                                                                                                                                                         |
+| Nome          | Tipo   | Descrição                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
+| if-match      | Sequência de caracteres | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça os valores para as propriedades que devem ser atualizadas.
 
-Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
+Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.
 Para obter melhor desempenho, seu aplicativo não deve incluir propriedades que não tenham sido alteradas.
 
 ## <a name="response"></a>Resposta
@@ -58,7 +59,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 
 Este exemplo renomeia o recurso DriveItem como "new-file-name.docx".
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}

@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Alterar permissões de compartilhamento"
-ms.openlocfilehash: ead6babf88b7efc578ef8be6d11cc9fb59dd5fdd
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Alterar permissões de compartilhamento
+ms.openlocfilehash: 051520ed62fdfe6499a8cca2387e65f14714205f
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267280"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -39,20 +40,20 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Tipo   | Descrição                                                                                                                                                                                       |
+| Nome          | Tipo   | Descrição                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-match      | string | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
+| if-match      | sequência de caracteres | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.
 
-Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
+Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.
 Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   | Descrição                   |
-|:-------------|:-------|:------------------------------|
-| **roles**    | String | Uma matriz de tipos de permissão. |
+| Propriedade | Tipo              | Descrição                   |
+|:---------|:------------------|:------------------------------|
+| roles    | Conjunto de sequência de caracteres | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 
@@ -62,7 +63,7 @@ Se bem sucedido, este método retorna um código de resposta `200 OK` e um objet
 
 Aqui está um exemplo da solicitação que altera a função da permissão de compartilhamento para somente leitura.
 
-<!-- {"blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite"} -->
+<!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}/permissions/{perm-id}
@@ -97,7 +98,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>Respostas de erro
 
-Veja mais informações sobre como os erros são retornados no tópico [Respostas de erro][error-response].
+Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 
 [error-response]: ../../../concepts/errors.md
 

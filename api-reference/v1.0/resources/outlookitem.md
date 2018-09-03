@@ -6,12 +6,12 @@
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.outlookitem"
+  "abstract": true,
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.outlookItem"
 }-->
 
 ```json
@@ -25,12 +25,12 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|categories|Coleção de cadeias de caracteres||
-|changeKey|Cadeia de caracteres||
+|categories|Conjunto de sequência de caracteres|As categorias associadas ao item|
+|changeKey|Sequência de caracteres|Identifica a versão do item. Toda vez que o item é alterado, changeKey também é alterado. Isso permite que o Exchange aplique alterações na versão correta do objeto. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relações

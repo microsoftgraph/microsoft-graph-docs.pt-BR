@@ -23,11 +23,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Chart](../resources/chart.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookChart](../resources/chart.md).
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Chart](../resources/chart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -47,13 +47,13 @@ Content-length: 52
   "left": 99
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [Chart](../resources/chart.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookChart](../resources/chart.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 201 Created

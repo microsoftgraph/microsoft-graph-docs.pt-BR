@@ -11,18 +11,27 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
+Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
 <!-- { "blockType": "ignored" } -->
-Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário ou grupo.
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-POST /groups/{id}/events/{id}/attachments
 
 POST /me/calendar/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 ```
+
+<!--
+POST /groups/{id}/events/{id}/attachments
+POST /groups/{id}/calendar/events/{id}/attachments
+-->
+
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
@@ -31,6 +40,7 @@ POST /me/calendargroup/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
@@ -38,8 +48,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [attachment](../resources/attachment.md).
@@ -54,17 +64,18 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_file_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
 }
 ```
 
@@ -79,7 +90,7 @@ Veja a seguir um exemplo da resposta.
 } -->
 ```http
 HTTP 201 Created
-Content-Length: 735
+Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events('AAMkAGI1AAAt9AHjAAA%3D')/attachments/$entity",
@@ -92,7 +103,7 @@ Content-Length: 735
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
@@ -104,10 +115,11 @@ Eis um exemplo que anexa um evento com outro evento como um anexo de item.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
   "name": "create_item_attachment_from_event"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
+POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
 Content-type: application/json
 Content-length: 600
 
@@ -146,9 +158,9 @@ Content-type: application/json
 Content-length: 162
 
 {
-    "@odata.context":"https://graph.microsoft.com/api/v1.0/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/events('AAMkAGI1AAAt9AHjAAA=')/attachments/$entity",
     "@odata.type":"#microsoft.graph.itemAttachment",
-    "@odata.id":"https://graph.microsoft.com/api/v1.0/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('fdcbcf34-2505-4d07-be5b-0a55b699d157@41a5b830-45ac-4f1b-9bfc-baafa3b7db2e')/events('AAMkAGI1AAAt9AHjAAA=')/attachments('AAMkADNkN2Jp5JVnQIe9r0=')",
     "id":"AAMkADNkNJp5JVnQIe9r0=",
     "lastModifiedDateTime":"2016-12-01T22:27:13Z",
     "name":"Holiday event",

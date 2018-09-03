@@ -1,6 +1,6 @@
 # <a name="update-event"></a>Atualizar evento
 
-Atualizar as propriedades do objeto event.
+Atualizar as propriedades do objeto [event](../resources/event.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -33,7 +33,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -42,27 +42,30 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |attendees|[Attendee](../resources/attendee.md)|A coleção de participantes do evento.|
 |corpo|[ItemBody](../resources/itembody.md)|O corpo da mensagem associada ao evento.|
-|categories|String|As categorias associadas ao evento.|
+|categories|Sequência de caracteres|As categorias associadas ao evento.|
 |end|[DateTimeTimeZone](../resources/datetimetimezone.md)|A data e a hora em que o evento termina.<br/><br/>Por padrão, a hora de término é em UTC. Você pode especificar um fuso horário opcional em EndTimeZone, expressar a hora de término nesse fuso horário e incluir uma diferença de tempo em relação a UTC. Se usar EndTimeZone, você deverá especificar um valor para StartTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 21: 34 na Hora Padrão do Pacífico: "2015-02-25T21:34:00-08:00". |
-|importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
-|isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+|importance|Sequência de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+|isAllDay|Booleano|Defina como true se o evento durar o dia inteiro.|
+|isReminderOn|Booleano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |location|[Location](../resources/location.md)|O local do evento.|
 |locations|Coleção [location](../resources/location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-|onlineMeetingUrl|String|Uma URL para uma reunião online.|
 |recurrence|[PatternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
-|sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-|showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|responseRequested|Booleano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|sensitivity|Sequência de caracteres| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+|showAs|Sequência de caracteres|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[DateTimeTimeZone](../resources/datetimetimezone.md)|A hora de início do evento. <br/><br/>Por padrão, a hora de início é em UTC. Você pode especificar um fuso horário opcional em StartTimeZone, expressar a hora de início no fuso horário correspondente e incluir uma diferença de tempo em relação a UTC. Se usar StartTimeZone, você deverá especificar um valor para EndTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 19:34 na Hora Padrão do Pacífico: "2015-02-25T19:34:00-08:00".  |
-|subject|String|O texto da linha de assunto do evento.|
+|subject|Sequência de caracteres|O texto da linha de assunto do evento.|
 
-Como o recurso **event** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **event** existente.
+Como o recurso **event** oferece suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **event** existente.  
+  
+Se o **evento** que você está atualizando é o evento mestre de uma série recorrente, contém vários participantes e tem instâncias que foram atualizadas separadamente, várias notificações por email serão enviadas: uma para a série mestra e um para cada instância que tenha foi atualizada.  
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [event](../resources/event.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [event](../resources/event.md) atualizado no corpo da resposta.  
+
+>**Observação:** Este método pode retornar uma resposta de HTTP 400 Solicitação incorreta com um código de erro de `ErrorOccurrenceCrossingBoundary` e a seguinte mensagem de erro: a ocorrência modificada é cruzada ou sobreposta à ocorrência adjacente. Isso indica que a atualização viola a seguinte restrição do Outlook em exceções de recorrência: uma ocorrência não pode ser transferida para o dia ou antes da ocorrência anterior e não pode ser transferida para o dia ou depois da ocorrência seguinte.
 
 ## <a name="example"></a>Exemplo
 

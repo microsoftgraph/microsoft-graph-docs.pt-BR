@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Vídeo"
-ms.openlocfilehash: dd6ece46ce54fe791c0e6b5801287e2abad4fe48
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Vídeo
+ms.openlocfilehash: cb9e28c1b26aa60fe7d854796df8bff34ca8e5df
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23265845"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 
 O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **video** não nula, o item representa um vídeo.
-As propriedades do recurso **Video** são preenchidas extraindo-se os metadados do arquivo.
+Se um [**DriveItem**](driveitem.md) tiver uma faceta **video** não nula, o item representa um vídeo. As propriedades do recurso **Video** são preenchidas extraindo-se os metadados do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,14 +45,14 @@ Veja a seguir uma representação JSON do recurso
 
 | Nome da propriedade             | Tipo   | Descrição
 |:--------------------------|:-------|:----------------------------------------
-| **audioBitsPerSample**    | Int32  | Número de bits de áudio por amostra.
+| **audioBitsPerSample**    | Int32  | Número de bits áudio por amostra.
 | **audioChannels**         | Int32  | Número de canais de áudio.
-| **audioFormat**           | string | Nome do formato de áudio (AAC, MP3, etc.).
+| **audioFormat**           | sequência de caracteres | Nome do formato áudio (AAC, MP3, etc.).
 | **audioSamplesPerSecond** | Int32  | Número de amostras de áudio por segundo.
 | **bitrate**               | Int32  | Taxa de bits do vídeo em bits por segundo.
 | **duration**              | Int64  | Duração do arquivo em milissegundos.
-| **fourCC**                | string | Nome do formato de vídeo "Código de quatro caracteres".
-| **framerate**             | double | Taxa de quadros do vídeo.
+| **fourCC**                | sequência de caracteres | Nome do formato de vídeo "Código de quatro caracteres".
+| **frameRate**             | double | Taxa de quadros do vídeo.
 | **height**                | Int32  | A altura do vídeo em pixels.
 | **width**                 | Int32  | A largura do vídeo em pixels.
 
