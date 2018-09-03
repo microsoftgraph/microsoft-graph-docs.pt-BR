@@ -12,15 +12,15 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 |[Obter configuração](../api/groupsetting_get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 |[Listar configurações](../api/groupsetting_list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 |[Atualizar configuração](../api/groupsetting_update.md) | [groupSetting](groupsetting.md) | Atualize o objeto groupsetting. |
-|[Excluir configuração](../api/groupsetting_delete.md) | None | Excluir um objeto de configuração. |
+|[Excluir configuração](../api/groupsetting_delete.md) | Nenhum | Excluir um objeto de configuração. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|displayName|String| Nome de exibição deste grupo de configurações, originado do modelo associado. |
-|id|String| Identificador exclusivo destas configurações. Somente leitura. |
-|templateId|String| Identificador exclusivo para o modelo usado para criar este grupo de configurações. Somente leitura. |
+|displayName|Sequência de caracteres| Nome de exibição deste grupo de configurações, originado do modelo associado. |
+|id|Sequência de caracteres| Identificador exclusivo destas configurações. Somente leitura. |
+|templateId|Sequência de caracteres| Identificador exclusivo para o modelo usado para criar este grupo de configurações. Somente leitura. |
 |values|conjunto [settingValue](settingvalue.md)| Conjunto de pares de nome/valor. Deve conter e ajustar todas as configurações definidas no modelo. |
 
 ## <a name="relationships"></a>Relações
@@ -31,11 +31,12 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.groupSetting"
 }-->
 

@@ -8,16 +8,15 @@ Representa o conjunto de ações que estão disponíveis para uma regra.
 |:---------------|:--------|:----------|
 | assignCategories | Coleção de cadeia de caracteres | Uma lista de categorias a serem atribuídas a uma mensagem. |
 | copyToFolder | Cadeia de caracteres | O ID de uma pasta para a qual uma mensagem deve ser copiada. |
-| delete | Boolean | Indica se uma mensagem deve ser movida para a pasta Itens Excluídos. |
+| delete | Booleano | Indica se uma mensagem deve ser movida para a pasta Itens Excluídos. |
 | forwardAsAttachmentTo | Coleção [recipient](recipient.md) | Os endereços de email dos destinatários para os quais uma mensagem deve ser encaminhada como um anexo. |
 | forwardTo | Coleção [recipient](recipient.md) | Os endereços de email dos destinatários para os quais uma mensagem deve ser encaminhada. |
-| markAsRead | Boolean | Indica se uma mensagem deve ser marcada como lida. |
-| markImportance | Cadeia de caracteres | Define a importância da mensagem, que pode ser: `low`, `normal`, `high`. |
+| markAsRead | Booleano | Indica se uma mensagem deve ser marcada como lida. |
+| markImportance | importance | Define a importância da mensagem, que pode ser: `low`, `normal`, `high`. |
 | moveToFolder |  Cadeia de caracteres| O ID da pasta para a qual uma mensagem será movida. |
-| permanentDelete | Boolean | Indica se uma mensagem deve ser excluída permanentemente e não salva na pasta Itens Excluídos. |
-| redirectTo | [recipient](recipient.md) | Os endereço de email para o qual uma mensagem deve ser redirecionada. |
-| stopProcessingRules | Boolean | Indica se regras subsequentes devem ser avaliadas. |
-
+| permanentDelete | Booleano | Indica se uma mensagem deve ser excluída permanentemente e não salva na pasta Itens Excluídos. |
+| redirectTo | Coleção [recipient](recipient.md) | Os endereço de email para o qual uma mensagem deve ser redirecionada. |
+| stopProcessingRules | Booleano | Indica se regras subsequentes devem ser avaliadas. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
   "markImportance": "String",
   "moveToFolder": "String",
   "permanentDelete": "Boolean",
-  "redirectTo": {"@odata.type": "microsoft.graph.recipient"},
+  "redirectTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "stopProcessingRules": "Boolean"
 }
 

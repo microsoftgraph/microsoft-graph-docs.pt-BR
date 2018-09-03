@@ -20,13 +20,13 @@ Derivado de [attachment](attachment.md).
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentBytes|Binária|O conteúdo do arquivo codificado pela base64.|
-|contentId|String|A ID do anexo no repositório do Exchange.|
-|contentLocation|String|O URI (Uniform Resource Identifier) que corresponde ao local do conteúdo do anexo.|
-|contentType|String|O tipo de conteúdo do anexo.|
-|id|String|A ID do anexo.|
+|contentId|Sequência de caracteres|A ID do anexo no repositório do Exchange.|
+|contentLocation|Sequência de caracteres|O URI (Uniform Resource Identifier) que corresponde ao local do conteúdo do anexo.|
+|contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
+|id|Cadeia de caracteres|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
-|name|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
+|name|Sequência de caracteres|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
 |size|Int32|O tamanho do anexo em bytes.|
 
 ## <a name="relationships"></a>Relações
@@ -39,6 +39,7 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "optionalProperties": [
 
   ],
