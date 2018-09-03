@@ -16,7 +16,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A ação [uploadDepToken](../api-reference/beta/api/intune_enrollment_deponboardingsetting_uploaddeptoken.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A ação [syncWithAppleDeviceEnrollmentProgram](../api-reference/beta/api/intune_enrollment_deponboardingsetting_syncwithappledeviceenrollmentprogram.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A ação [setDefaultProfile](../api-reference/beta/api/intune_enrollment_enrollmentprofile_setdefaultprofile.md.md) foi adicionada em [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
-|Adição|beta|A ação **importAppleDeviceIdentityList** foi adicionada na coleção [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md) |
+|Adição|beta|A ação**importAppleDeviceIdentityList** foi adicionada na coleção [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md) |
 |Adição|beta|A ação [updateDeviceProfileAssignment](../api-reference/beta/api/intune_enrollment_enrollmentprofile_updatedeviceprofileassignment.md.md) foi adicionada em [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
 |Adição|beta|A ação [shareForSchoolDataSyncService](../api-reference/beta/api/intune_enrollment_deponboardingsetting_shareforschooldatasyncservice.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A ação [unshareForSchoolDataSyncService](../api-reference/beta/api/intune_enrollment_deponboardingsetting_unshareforschooldatasyncservice.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
@@ -28,21 +28,21 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A função [autopilotDeviceStream](../api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_autopilotdevicestream.md.md) foi adicionada em [importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) |
 |Exclusão|beta|A coleção **uploadDepToken** foi excluída |
 |Exclusão|beta|A ação **syncWithAppleDeviceEnrollmentProgram** foi excluída da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
-|Exclusão|beta|A função **getEncryptionPublicKey** foi excluída da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Exclusão|beta|A função**getEncryptionPublicKey** foi excluída da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)|
 |Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e**vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)|
-|Exclusão|beta|A propriedade **packageName** foi excluída da entidade [androidForWorkMobileAppConfiguration](../api-reference/beta/resources/intune_apps_androidforworkmobileappconfiguration.md)|
+|Exclusão|beta|A propriedade **packageName** foi removida da entidade [androidForWorkMobileAppConfiguration](../api-reference/beta/resources/intune_apps_androidforworkmobileappconfiguration.md)|
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [androidWorkProfileCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)|
 |Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e **vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidWorkProfileGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)|
 |Adição|beta|A propriedade **optInToDeviceIdSharing** foi adicionada à entidade [appleVpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_applevpnconfiguration.md)|
 |Adição|beta|Adicionadas as propriedades **tokenType**, **tokenName**, **syncedDeviceCount**, **defaultProfileDisplayName** e **dataSharingConsentGranted** à entidade [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md)|
 |Adição|beta|A propriedade **roleScopeTagIds** foi adicionada à entidade [deviceCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |Adição|beta|As propriedades **roleScopeTagIds** e **supportsScopeTags** foram adicionadas à entidade [deviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_deviceconfiguration.md)|
-|Adição|beta|A propriedade **windowsMalwareOverview** foi adicionada à entidade [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)|
+|Adição|beta|A propriedade**windowsMalwareOverview** foi adicionada à entidade [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)|
 |Alteração|beta|As propriedades a seguir foram alteradas na entidade [iosCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofilebase.md):<br/>**subjectAlternativeNameType** de obrigatória para opcional<br/>|
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [iosCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_ioscompliancepolicy.md)|
 |Adição|beta|Adicionadas as propriedades **certificateStore** e **customSubjectAlternativeNames** à entidade [iosScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_iosscepcertificateprofile.md)|
-|Adição|beta|A propriedade **enforcedSoftwareUpdateDelayInDays** fi adicionada à entidade [iosUpdateConfiguration](../api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration.md)|
+|Adição|beta|A propriedade **enforcedSoftwareUpdateDelayInDays** foi adicionada à entidade [iosUpdateConfiguration](../api-reference/beta/resources/intune_deviceconfig_iosupdateconfiguration.md)|
 |Adição|beta|Adicionadas as propriedades **providerType**, **userDomain**, **strictEnforcement**, **cloudName** e **excludeList** à entidade [iosVpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_iosvpnconfiguration.md)|
 |Adição|beta|As propriedades **safariBlockAutofill**, **cameraBlocked**, **iTunesBlockMusicService**, **spotlightBlockInternetResults**, **keyboardBlockDictation**, **definitionLookupBlocked**, **appleWatchBlockAutoUnlock**, **iTunesBlockFileSharing**, **iCloudBlockDocumentSync**, **iCloudBlockMail**, **iCloudBlockAddressBook**, **iCloudBlockCalendar**, **iCloudBlockReminders**, **iCloudBlockBookmarks**, **iCloudBlockNotes**, **airDropBlocked**, **passwordBlockModification** e **passwordBlockFingerprintUnlock** à entidade [macOSGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_macosgeneraldeviceconfiguration.md)|
 |Adição|beta|Adicionadas as propriedades **roleScopeTagIds**, **windowsActiveMalwareCount**, **windowsRemediatedMalwareCount**, **anotações** e **configurationManagerClientHealthState** à entidade [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md)|
@@ -81,12 +81,37 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta | A ação [getSchedule](../api-reference/beta/api/calendar_getschedule.md) e os tipos complexos [freeBusyError](../api-reference/beta/resources/freebusyerror.md), [scheduleInformation](../api-reference/beta/resources/scheduleinformation.md)e [scheduleItem](../api-reference/beta/resources/scheduleitem.md) foram adicionados para oferecer suporte a [obtendo as informações de disponibilidade para usuários, listas de distribuição e recursos para um determinado período de tempo](outlook-get-free-busy-schedule.md). |
 
-### <a name="outlook-mail"></a>E-mail do Outlook
+### <a name="outlook-mail"></a>Email do Outlook
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) foi adicionado para obter quaisquer dicas de e-mail para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
 
+### <a name="security-apis"></a>APIs de segurança
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | beta       | Adicionadas as propriedades **activityGroupName**, **cloudAppStates**, **confidence**e**registryKeyStates** a [alerta](../api-reference/beta/resources/alert.md ). |
+|Exclusão|beta| Removidas as propriedades **activityGroupStates**, **applicationStates**, **malwareWasRunning**, **riskScore** e **tipo** de [alerta](../api-reference/beta/resources/alert.md ). |
+|Alteração|beta| Alterado o tipo**comments** de `String` para `String collection` e alterado tipo**severity** de `String` para um enum[alertSeverity](../api-reference/beta/resources/alertseverityenumtype.md) em [alert](../api-reference/beta/resources/alert.md). |
+| Adição        | beta       | Adicionados os seguintes tipos de recursos: <br/> [cloudAppSecurityState](../api-reference/beta/resources/cloudappsecuritystate.md) <br/> [fileHash](../api-reference/beta/resources/filehash.md) <br/> [registryKeyState](../api-reference/beta/resources/registrykeystate.md) |
+|Exclusão|beta| Removidos os seguintes tipos de recursos: <br/> **activityGroupState**  <br/> **applicationSecurityState** |
+| Adição        | beta       | Adicionados os enumerados seguintes: <br/> [alertSeverity](../api-reference/beta/resources/alertseverityenumtype.md) <br/> [connectionDirection](../api-reference/beta/resources/connectiondirectionenumtype.md) <br/> [connectionStatus](../api-reference/beta/resources/connectionstatusenumtype.md) <br/> [emailRole](../api-reference/beta/resources/emailroleenumtype.md) <br/> [fileHashType](../api-reference/beta/resources/filehashtypeenumtype.md) <br/> [registryHive](../api-reference/beta/resources/registryhiveenumtype.md)  <br/> [registryOperation](../api-reference/beta/resources/registryoperationenumtype.md) <br/> [registryValueType](../api-reference/beta/resources/registryvaluetypeenumtype.md)|
+|Exclusão|beta| Foram removidos os seguintes tipos enumerados: <br/> **alertType** <br/> **applicationPermissionsRequired** |
+| Adição        | beta       | Adicionada a propriedade **fileHash** a [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md ).|
+|Exclusão|beta| Propriedades **authenticodeHash256** e **sha256** removidas de [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md). |
+| Adição | beta | Adicionada a propriedade **SO** a [hostSecurityState](../api-reference/beta/resources/hostsecuritystate.md).|
+| Adição | beta | Adicionadas as propriedades **category**, **family**e**wasRunning** a [malwareState](../api-reference/beta/resources/malwarestate.md).|
+|Exclusão|beta| Removida a propriedade **aliases** de [malwareState](../api-reference/beta/resources/malwarestate.md). |
+|Alteração|beta| Propriedade **malwareWasRunning** movida de [alert](../api-reference/beta/resources/alert.md ) para [malwareState](../api-reference/beta/resources/malwarestate.md) e renomeada para **wasRunning**. |
+| Adição        | beta       | Adicionadas as propriedades **applicationName**, **destinationDomain**, **direction**, **domainRegisteredDateTime**, **localDnsName**, **natDestinationAddress**, **natDestinationPort**, **natSourceAddress**, **natSourcePort**, **riskScore**, **status**e **urlParameters** a [networkConnection](../api-reference/beta/resources/networkconnection.md ).|
+|Alteração|beta| Alterada a propriedade **uri** para **destinationUrl** em [networkConnection](../api-reference/beta/resources/networkconnection.md ). |
+| Adição        | beta       | Adicionada a propriedade **fileHash** a [process](../api-reference/beta/resources/process.md ).|
+|Exclusão|beta| Propriedades **authenticodeHash256** e **sha256** removidas de [process](../api-reference/beta/resources/process.md ). |
+| Adição        | beta       | Adicionadas as propriedades **aadUserId**, **emailRole**, **isVpn**e **logonIp** a [userSecurityState](../api-reference/beta/resources/usersecuritystate.md).|
+|Alteração|beta| Alterada a propriedade **logonIpAddress** para **logonIp** em [userSecurityState](../api-reference/beta/resources/usersecuritystate.md). |
+| Adição        | beta       | Adicionada a propriedade **wasRunning** a [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md).|
+|Exclusão|beta| Removida a propriedade **name** de [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md). |
 
 ## <a name="july-2018"></a>Julho de 2018
 
@@ -101,7 +126,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
 |Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
 |Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Adição|beta|[Obter resposta a uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) foi adicionado |
+|Adição|beta|Adicionada [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
 
 ### <a name="synchronization-apis"></a>APIs de sincronização
 
@@ -119,15 +144,15 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição|beta|O suporte para permissões do aplicativo para [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) foi adicionado |
+|Adição|beta|Adicionado o suporte a permissões do aplicativo a [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
 |Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
 |Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Adição|beta|[Obter resposta a uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) foi adicionado |
+|Adição|beta|Adicionada a [API Obter resposta a mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
 |Adição|beta|Adicionado o tipo de recurso [Anexo de chat](../api-reference/beta/resources/chatattachment.md)|
 |Adição|beta|Adicionado o tipo de recurso [Menção a chat](../api-reference/beta/resources/chatattachment.md)|
-|Adição|beta|O tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md) foi adicionado|
-|Alteração|beta|O recurso [chatmessage](../api-reference/beta/resources/chatmessage.md) foi atualizado|
+|Adição|beta|Adicionado o tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md)|
+|Alteração|beta|Atualizado o recurso [Mensagem de chat](../api-reference/beta/resources/chatmessage.md))|
 |Exclusão|beta|Removido DELETE /groups/{id}/team/channels/{id}, em vez disso use DELETE /teams/{id}/channels/{id}. |
 |Exclusão|beta|Removido GET /groups/{id}/team/channels/{id}, em vez disso use GET /teams/{id}/channels/{id}. |
 |Exclusão|beta|Removido PATCH /groups/{id}/team/channels/{id}, em vez disso use PATCH /teams/{id}/channels/{id}. |
@@ -186,7 +211,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A ação [revokeDeviceLicense](../api-reference/beta/api/intune_apps_iosvppapp_revokedevicelicense.md) foi adicionada a [iosVppApp](../api-reference/beta/resources/intune_apps_iosvppapp.md) |
 |Adição|beta|A ação [sendCustomNotificationToCompanyPortal](../api-reference/beta/api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal.md) foi adicionada a [deviceManagement](../api-reference/beta/resources/intune_shared_devicemanagement.md) |
 |Adição|beta|A ação **getLicensesForApp** foi adicionada ao conjunto [vppToken](../api-reference/beta/resources/intune_onboarding_vpptoken.md) |
-|Exclusão|beta|Foram removidos os seguintes tipos de enumeração:<br/>**windowsUpdateInsiderBuildControl**<br/>|
+|Exclusão|beta|Foram removidos os seguintes tipos enumerados:<br/>**windowsUpdateInsiderBuildControl**<br/>|
 |Adição|beta|As propriedades **systemUpdateWindowStartMinutesAfterMidnight**, **systemUpdateWindowEndMinutesAfterMidnight** e **systemUpdateInstallType** foram adicionadas à entidade [androidDeviceOwnerGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownergeneraldeviceconfiguration.md)|
 |Alteração|beta|Foi alterado o tipo das seguintes propriedades na entidade [androidDeviceOwnerGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androiddeviceownergeneraldeviceconfiguration.md):<br/>**passwordMinutesOfInactivityBeforeScreenTimeout** de Int64 para Int32<br/>|
 |Adição|beta|A propriedade **customKeyValueData** foi adicionada à entidade [androidForWorkVpnConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkvpnconfiguration.md)|
@@ -234,7 +259,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | A entidade [governanceSubject](../api-reference/beta/resources/governancesubject.md) foi adicionada.|
 | Adição | beta | A entidade [governanceRoleDefinition](../api-reference/beta/resources/governanceroledefinition.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroledefinition_list.md) <br> [Obter](../api-reference/beta/api/governanceroledefinition_get.md) |
 | Adição | beta | A entidade [governanceRoleAssignment](../api-reference/beta/resources/governanceroleassignment.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroleassignment_list.md) <br> [Obter](../api-reference/beta/api/governanceroleassignment_get.md) <br> [Exportar](../api-reference/beta/api/governanceroleassignment_export.md) |
-| Adição | beta | A entidade [governanceRoleAssignmentRequest](../api-reference/beta/resources/governanceroleassignmentrequest.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroleassignmentrequest_list.md) <br> [Obter](../api-reference/beta/api/governanceroleassignmentrequest_get.md) <br> [Criar](../api-reference/beta/api/governanceroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/governanceroleassignmentrequest_cancel.md) <br> [Atualizar](../api-reference/beta/api/governanceroleassignmentrequest_update.md) |
+| Adição | beta | A entidade [governanceRoleAssignmentRequest](../api-reference/beta/resources/governanceroleassignmentrequest.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroleassignmentrequest_list.md) <br> [Obter](../api-reference/beta/api/governanceroleassignmentrequest_get.md) <br> [Create](../api-reference/beta/api/governanceroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/governanceroleassignmentrequest_cancel.md) <br> [Atualizar](../api-reference/beta/api/governanceroleassignmentrequest_update.md) |
 | Adição | beta | A entidade [governanceRoleSetting](../api-reference/beta/resources/governancerolesetting.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governancerolesetting_list.md) <br> [Obter](../api-reference/beta/api/governancerolesetting_get.md) <br> [Atualizar](../api-reference/beta/api/governancerolesetting_update.md) |
 | Adição | beta | Os seguintes tipos complexos foram adicionados: <br> [governancePermission](../api-reference/beta/resources/governancepermission.md) <br> [governanceRoleAssignmentRequestStatus](../api-reference/beta/resources/governanceroleassignmentrequeststatus.md) <br> [governanceRuleSetting](../api-reference/beta/resources/governancerulesetting.md) <br> [governanceSchedule](../api-reference/beta/resources/governanceschedule.md)|
 
@@ -274,7 +299,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) e os seguintes métodos e ações CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Obter](../api-reference/beta/api/bookingbusiness_get.md) <br> [Atualizar](../api-reference/beta/api/bookingbusiness_update.md) <br> [Excluir](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Cancelar publicação](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) e os seguintes métodos e ações CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Obter](../api-reference/beta/api/bookingbusiness_get.md) <br> [Atualizar](../api-reference/beta/api/bookingbusiness_update.md) <br> [Excluir](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Unpublish](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](../api-reference/beta/resources/bookingappointment.md) e os seguintes métodos e ação CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list_appointments.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_appointments.md) <br> [Obter](../api-reference/beta/api/bookingappointment_get.md) <br> [Atualizar](../api-reference/beta/api/bookingappointment_update.md) <br> [Excluir](../api-reference/beta/api/bookingappointment_delete.md) <br> [Cancelar](../api-reference/beta/api/bookingappointment_cancel.md). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](../api-reference/beta/resources/bookingcurrency.md) e os seguintes métodos: <br> [Lista](../api-reference/beta/api/bookingcurrency_list.md) <br> [Obter](../api-reference/beta/api/bookingcurrency_get.md). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](../api-reference/beta/resources/bookingcustomer.md) e os seguintes métodos CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list_customers.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_customers.md) <br> [Obter](../api-reference/beta/api/bookingcustomer_get.md) <br> [Atualizar](../api-reference/beta/api/bookingcustomer_update.md) <br> [Excluir](../api-reference/beta/api/bookingcustomer_delete.md).|
@@ -291,7 +316,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionado o [setDeviceName](../api-reference/beta/api/intune_devices_manageddevice_setdevicename.md)<br/>ação no [managedDevice](../api-reference/beta/resources/intune_devices_manageddevice.md) |
 |Exclusão|beta|Foram removidas as seguintes entidades:<br/>**depEnrollmentProfile**<br/>**enrollmentProfile**<br/>**importedAppleDeviceIdentity**<br/>**importedAppleDeviceIdentityResult**<br/>|
 |Exclusão|beta|Foram removidos os seguintes tipos complexos:<br/>**managementCertificateWithThumbprint**<br/>|
-|Exclusão|beta|Foram removidos os seguintes tipos de enumeração:<br/>**depTokenType**<br/>**discoverySource**<br/>**iTunesPairingMode**<br/>|
+|Exclusão|beta|Foram removidos os seguintes tipos enumerados:<br/>**depTokenType**<br/>**discoverySource**<br/>**iTunesPairingMode**<br/>|
 |Exclusão|beta|Removida a ação importAppleDeviceIdentityList da coleção [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_corpenrollment_importedappledeviceidentity.md) |
 |Exclusão|beta|Removida a ação [updateDeviceProfileAssignment](../api-reference/beta/api/intune_corpenrollment_enrollmentprofile_updatedeviceprofileassignment.md) do [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) |
 |Exclusão|beta|Removida a ação setDefaultProfile do [enrollmentProfile](../api-reference/beta/resources/intune_corpenrollment_enrollmentprofile.md) |
@@ -383,7 +408,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[managedDeviceModelsAndManufacturers](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers)<br/>[managedDeviceReportedApp](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_manageddevicereportedapp)<br/>[windowsEnrollmentStatusScreenSettings](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_enrollment_windowsenrollmentstatusscreensettings)<br/>|
 |Adição|beta|Foram adicionados novos tipos enumerados:<br/>[androidWorkProfileCrossProfileDataSharingType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype)<br/>[androidWorkProfileRequiredPasswordType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype)<br/>[androidWorkProfileVpnConnectionType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidworkprofilevpnconnectiontype)<br/>[bitLockerRecoveryInformationType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_bitlockerrecoveryinformationtype)<br/>[localSecurityOptionsInformationShownOnLockScreenType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsinformationshownonlockscreentype)<br/>[managedAppRemediationAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_managedappremediationaction)<br/>[managedDeviceOwnerType](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_manageddeviceownertype)<br/>[restrictedAppsState](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_restrictedappsstate)<br/>[windows10VpnProfileTarget](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_windows10vpnprofiletarget)<br/>|
 |Adição|beta|Foi adicionada a ação [playLostModeSound](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_devices_manageddevice_playlostmodesound.md) em [managedDevice](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_devices_manageddevice) |
-|Exclusão|beta|Foram removidos os seguintes tipos de enumeração:<br/>**bitLockerRecoveryinformationType**<br/>**windowsUpdateRestartMode**<br/>|
+|Exclusão|beta|Foram removidos os seguintes tipos enumerados:<br/>**bitLockerRecoveryinformationType**<br/>**windowsUpdateRestartMode**<br/>|
 |Adição|beta|Foram adicionadas as propriedades **workProfileBlockScreenCapture** e **workProfileBlockCrossProfileCallerId** à entidade [androidForWorkGeneralDeviceConfiguration](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration)|
 |Adição|beta|Foram adicionadas as propriedades **minimumWipePatchVersion**, **allowedAndroidDeviceManufacturers** e **appActionIfAndroidDeviceManufacturerNotAllowed** à entidade [androidManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_androidmanagedappprotection)|
 |Adição|beta|Foram adicionadas as propriedades **minimumWipeSdkVersion**, **minimumWipePatchVersion**, **allowedIosDeviceModels**, **appActionIfIosDeviceModelNotAllowed**, **allowedAndroidDeviceManufacturers** e **appActionIfAndroidDeviceManufacturerNotAllowed** à entidade [defaultManagedAppProtection](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_mam_defaultmanagedappprotection)|
@@ -1483,7 +1508,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="remove-deprecated-planner-api"></a>Remover a API do Planner descontinuada
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Exclusão        | Beta        | Foram removidas as seguintes entidades:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard** |
+| Exclusão        | Beta        | Foram removidas as seguintes entidades:<br/>**tarefa**<br/>**plano**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard** |
 
 ### <a name="project-rome"></a>Project Rome
 
@@ -1511,7 +1536,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users) |
+| Adição        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contato<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>usuário<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users) |
 | Alteração          | Beta        | Adicionar um novo recurso de filtragem de consulta opcional (por ID) para [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_delta) e [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/group_delta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Foi adicionado suporte a recursos de usuário para os itens excluídos
@@ -1539,13 +1564,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Operações adicionadas a [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>Novas entidades:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Novas ações:</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
+| Adição        | v1.0        | Operações adicionadas a [domains](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain).<br/>Novas entidades:</br>[domínio](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/domainDnsUnavailableRecord)<br/>Novas ações:</br>[verificar](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/api/domain_verify) |
 
 ### <a name="added-contracts-to-v10"></a>Adicionou contratos para v1.0
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Nova entidade:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
+| Adição        | v1.0        | Nova entidade:</br>[contrato](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/contract) |
 
 ### <a name="added-licensedetails-to-v10"></a>Adicionou licenseDetails para v1.0
 
@@ -1889,19 +1914,19 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Novo recurso:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+| Adição        | Beta        | Novo recurso:</br>[contrato](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
 ### <a name="add-domain-operations-to-microsoft-graph"></a>Adicionar operações de domínio ao Microsoft Graph
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionou funções nos [domínios](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain).<br/>Novas entidades:</br>[domain](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>Novas ações:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verify](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
+| Adição        | Beta        | Adicionou funções nos [domínios](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain).<br/>Novas entidades:</br>[domínio](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domain)<br/>[domainDnsRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domaindnsrecord)<br/>[domainDnsCnameRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsCnameRecord)<br/>[domainDnsMxRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsMxRecord)<br/>[domainDnsSrvRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsSrvRecord)<br/>[domainDnsTxtRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsTxtRecord)<br/>[domainDnsUnavailableRecord](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/domainDnsUnavailableRecord)<br/>Novas ações:</br>[forceDelete](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_forcedelete)</br>[verificar](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/domain_verify) |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>Adicionar dados personalizados ao Microsoft Graph usando extensões de esquema
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Estenda o Microsoft Graph com dados de aplicativos usando [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Isso é suportado nos seguintes recursos:<br/>unidade administrativa<br/>evento de calendário<br/>dispositivo<br/>group<br/>mensagem<br/>organização<br/>contato pessoal<br/>postagem<br/>user<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados a grupos usando Extensões do Esquema (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups) |
+| Adição        | Beta        | Estenda o Microsoft Graph com dados de aplicativos usando [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Isso é suportado nos seguintes recursos:<br/>unidade administrativa<br/>evento de calendário<br/>dispositivo<br/>grupo<br/>mensagem<br/>organização<br/>contato pessoal<br/>postagem<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados a grupos usando Extensões do Esquema (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups) |
 | Adição        | Beta        | Foi fornecido uma maneira alternativa de criar uma definição de extensão do esquema sem a necessidade de um domínio personalizado .com verificado. Confira [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview) para obter detalhes. |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Adicionar dados personalizados ao Microsoft Graph usando extensões abertas
@@ -1909,7 +1934,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | As "extensões de dados do Office 365" anteriores foram renomeadas como "abrir extensões". |
-| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>Unidade administrativa<br/>dispositivo<br/>group<br/>organização<br/>user<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
+| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>Unidade administrativa<br/>dispositivo<br/>grupo<br/>organização<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -1931,7 +1956,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Nova entidade:</br>[contract](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
+| Adição        | Beta        | Nova entidade:</br>[contrato](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/contract) |
 
 ## <a name="february-2017"></a>Fevereiro de 2017
 
@@ -2016,7 +2041,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionar uma nova função delta para as seguintes entidades realizem [consulta delta](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users) |
+| Adição        | Beta        | Adicionar uma nova função delta para as seguintes entidades realizem [consulta delta](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview):<br/>contato<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>usuário<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_groups)<br/>[Obter as alterações incrementais para as mensagens em uma pasta (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_messages)<br/>[Obter as alterações incrementais para usuários (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_users) |
 
 ### <a name="excel-apis"></a>APIs do Excel
 

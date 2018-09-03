@@ -28,12 +28,12 @@ Um aplicativo gerenciado ou não gerenciado que está instalado em um dispositiv
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.detectedApp"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.detectedApp",

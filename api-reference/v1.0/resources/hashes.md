@@ -2,11 +2,12 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-ms.openlocfilehash: 9de6923146b915207fc771721d7aeb6767e9f99e
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 92882910ecf86d19e1f0a8a5767d148f5aa95775
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23264032"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 
@@ -36,9 +37,9 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade         | Tipo   | Descrição                                                       |
 |:-----------------|:-------|:------------------------------------------------------------------|
-| **sha1Hash**     | String | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
-| **crc32Hash**    | String | O valor de CRC32 do arquivo (se disponível). Somente leitura.            |
-| **quickXorHash** | String | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
+| **sha1Hash**     | Sequência de caracteres | Hash SHA1 para o conteúdo do arquivo (se disponível). Somente leitura. |
+| **crc32Hash**    | Sequência de caracteres | O valor de CRC32 do arquivo em little endian (se disponível). Somente leitura.            |
+| **quickXorHash** | Sequência de caracteres | Um hash de proprietário do arquivo que pode ser usado para determinar se o conteúdo do arquivo foi alterado (se disponível). Somente leitura. |
 
 **Observação:** Em alguns casos, os valores de hash podem não estar disponíveis. Nesse caso, os valores de hash em um item serão atualizados depois que o item for baixado.
 
@@ -48,7 +49,7 @@ No OneDrive for Business e no SharePoint Server 2016, **sha1Hash** e **crc32Hash
 
 No OneDrive Personal, o **quickXorHash** não está disponível.
 
-Para calcular o **quickXorHash** de um arquivo, confira o [trecho de código QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).
+Para calcular o **quickXorHash** de um arquivo, consulte o [trecho de código QuickXorHash](https://dev.onedrive.com/snippets/quickxorhash.htm).
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
 

@@ -45,6 +45,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "delete_domain"
 }-->
 ```http

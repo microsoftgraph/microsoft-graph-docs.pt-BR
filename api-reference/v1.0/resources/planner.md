@@ -1,11 +1,9 @@
-# Tipo de recurso planner
-<a id="planner-resource-type" class="xliff"></a>
+# <a name="planner-resource-type"></a>Tipo de recurso planner
 
 O recurso **planner** é o ponto de entrada do modelo de objeto do Planner. Ele retorna um único recurso **planner**.  Ele não contém quaisquer propriedades utilizáveis.
 
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
@@ -13,37 +11,49 @@ O recurso **planner** é o ponto de entrada do modelo de objeto do Planner. Ele 
 |[Criar plannerPlan](../api/planner_post_plans.md) |[plannerPlan](plannerplan.md)| Crie um novo **plannerPlan** ao postar na coleção de planos.|
 |[Criar plannerTask](../api/planner_post_tasks.md) |[plannerTask](plannertask.md)| Crie um novo **plannerTask** ao postar na coleção de tarefas.|
 
-## Propriedades
-<a id="properties" class="xliff"></a>
-| Propriedade     | Tipo   |Descrição|
-|:---------------|:--------|:----------|
-|id|String| Somente leitura. O identificador do recurso **planner**|
-
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |buckets|Coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. Retorna uma coleção dos buckets especificados|
 |plans|Coleção [plannerPlan](plannerplan.md)| Somente leitura. Anulável. Retorna uma coleção dos planos especificados|
 |tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Retorna uma coleção das tarefas especificadas|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.planner"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
 }
+```
 
+## <a name="example"></a>Exemplo
+
+O recurso de **planner** estará disponível na raiz do gráfico.
+
+<!--{
+  "blockType": "request"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/planner
+```
+
+<!--{
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.planner"
+}-->
+```json
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

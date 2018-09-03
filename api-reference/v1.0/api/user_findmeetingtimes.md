@@ -40,9 +40,9 @@ Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, 
 |returnSuggestionReasons|Edm.Boolean|Especifique `True` para retornar um motivo para cada sugestão de reunião na propriedade **suggestionReason**. O padrão é `false` para não retornar essa propriedade. Opcional.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Qualquer restrição de tempo para uma reunião, o que pode incluir a natureza da reunião (propriedade **activityDomain**) e possíveis intervalos de tempo da reunião (propriedade **timeSlots**). **findMeetingTimes** pressupõe **activityDomain** como `work` se você não especificar este parâmetro. Opcional.|
 
-A tabela a seguir descreve as restrições que você pode especificar ainda mais no parâmetro **timeConstraint**.
+A tabela a seguir descreve as restrições **activityDomain** que você pode especificar ainda mais no parâmetro **timeConstraint**.
 
-|**valor activityDomain em timeConstraint**|**Sugestões de horário para reuniões**|
+|Valor activityDomain|Sugestões de horário para reuniões|
 |:-----|:-----|
 |trabalho| As sugestões são nas horas de trabalho do usuário que são definidas na configuração do calendário do usuário e podem ser personalizadas pelo usuário ou administrador. As horas de trabalho padrão são de segunda a sexta, das 8h às 17h, no fuso horário definido para a caixa de correio. Este é o valor padrão se nenhum **activityDomain** for especificado. |
 |pessoal| As sugestões são dentro das horas de trabalho do usuário, e sábado e domingo. O padrão é de segunda a sexta, das 8h às 17h, na configuração de fuso horário da caixa de correio.|
@@ -76,7 +76,7 @@ Por exemplo, se uma sugestão de horário de reunião envolve três participante
 |**Participante**|**Status disponível/ocupado**|**% de chance de comparecer**|
 |:-----|:-----|:-----|
 |Sara | Disponível | 100% |
-|Davi | Desconhecido | 49% |
+|Davi | Desconhecida | 49% |
 |Sara | Ocupado | 0% |
 
 Então a confiança na sugestão do horário da reunião, que corresponde à chance média de presença, é (100% + 49% + 0%) /3 = 49.66%.
@@ -145,8 +145,8 @@ Content-Type: application/json
     ] 
   },  
   "meetingDuration": "PT2H",
-  "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "returnSuggestionReasons": true,
+  "minimumAttendeePercentage": 100.0
 }
 ```
 
@@ -241,5 +241,9 @@ Content-Length: 976
   "description": "user: findMeetingTimes",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/api/user_findmeetingtimes.md:
+      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|"
+  ],
   "tocPath": ""
 }-->

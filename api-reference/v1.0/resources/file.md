@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: File
-ms.openlocfilehash: fd1aa4628fb4f3ba58474028c46840e7c1e2d53c
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Arquivo
+ms.openlocfilehash: 2201533457863c3cac6b7a9463f80e37bd5a569a
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23267462"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
-O recurso **File** agrupa itens de dados relacionados a arquivos em uma única estrutura.
+O recurso de **Arquivo** agrupa itens de dados relacionados a arquivos em uma única estrutura.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **file** não nula, o item representa um arquivo.
-Além de outras propriedades, os arquivos têm um relacionamento **content**, que contém o fluxo de bytes do arquivo.
+Se um [**DriveItem**](driveitem.md) tiver uma faceta **file** não nula, o item representa um arquivo. Além de outras propriedades, os arquivos têm um relacionamento **content**, que contém o fluxo de bytes do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -37,8 +37,8 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo                    | Descrição                                                                                                                                      |
 |:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [HashesType](hashes.md) | Hash do conteúdo binário do arquivo, se houver. Somente leitura.                                                                                    |
-| mimeType | cadeia de caracteres                  | O tipo MIME para o arquivo. Determinado pela lógica no servidor e pode não ser o valor fornecido quando o arquivo foi carregado. Somente leitura. |
+| hashes   | [Hashes](hashes.md) | Hash do conteúdo binário do arquivo, se houver. Somente leitura.                                                                                    |
+| mimeType | sequência de caracteres                  | O tipo MIME para o arquivo. Determinado pela lógica no servidor e pode não ser o valor fornecido quando o arquivo foi carregado. Somente leitura. |
 
 ## <a name="remarks"></a>Comentários 
 

@@ -43,6 +43,7 @@ Se bem-sucedido, este método retorna o código de resposta `204 No Content` e n
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http

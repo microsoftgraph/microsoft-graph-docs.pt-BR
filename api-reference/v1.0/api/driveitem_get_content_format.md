@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Converter em outros formatos
-ms.openlocfilehash: 3031500beaec2d765075abfd925a6333f50368f9
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 46e8ed178384a81f232a753fe683f8e11efe8585
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23269177"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -33,28 +34,30 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Nome            | Valor   | Descrição                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | String  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
+| _if-none-match_ | Sequência de caracteres  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
 
 ### <a name="query-string-parameters"></a>Parâmetros de cadeia de caracteres de consulta
 
-| Name      | Valor  | Descrição                                                    |
+| Nome      | Valor  | Descrição                                                    |
 |:----------|:-------|:---------------------------------------------------------------|
-| _format_  | string | Especifique o formato em que o conteúdo do item deve ser baixado. |
+| _format_  | sequência de caracteres | Especificar o formato em que o conteúdo do item deve ser baixado. |
 
 
-Os seguintes valores são válidos para o parâmetro **convert**:
+#### <a name="format-options"></a>Opções de formato
 
-| Valor   | Descrição                        | Extensões de origem com suporte |
-|:--------|:-----------------------------------|-----------------------------|
-| **pdf** | Converte o item em formato PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx | 
+Os seguintes valores são válidos para o parâmetro **format**:
+
+| Valor de formato | Descrição                        | Extensões de origem com suporte
+|:-------------|:-----------------------------------|----------------------------
+| pdf          | Converte o item em formato PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
 ### <a name="example"></a>Exemplo
 
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```http
-GET /drive/items/{item-id}/content?format={format}
+GET /me/drive/items/{item-id}/content?format={format}
 ```
 
 ## <a name="response"></a>Resposta

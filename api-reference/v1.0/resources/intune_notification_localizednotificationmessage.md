@@ -16,7 +16,7 @@ O conteúdo do texto de um Modelo de mensagem de notificação para a localidade
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto.|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
 |assunto|Cadeia de caracteres|O assunto do modelo da mensagem.|
 |messageTemplate|Cadeia de caracteres|O conteúdo do modelo da mensagem.|
@@ -26,12 +26,12 @@ O conteúdo do texto de um Modelo de mensagem de notificação para a localidade
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.localizedNotificationMessage"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.localizedNotificationMessage",

@@ -11,27 +11,32 @@ O recurso que representa uma instância dos Relatórios de históricos.
 |[Função deviceConfigurationUserActivity](../api/intune_deviceconfig_reportroot_deviceconfigurationuseractivity.md)|[relatório](../resources/intune_deviceconfig_report.md)|Metadados para o Relatório de atividades do usuário de configuração do dispositivo|
 |[função deviceConfigurationDeviceActivity](../api/intune_deviceconfig_reportroot_deviceconfigurationdeviceactivity.md)|[relatório](../resources/intune_deviceconfig_report.md)|Metadados para o relatório de atividade do dispositivo de configuração do dispositivo|
 
-## <a name="properties"></a>Propriedades
-|Propriedade|Tipo|Descrição|
-|:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
-
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.reportRoot"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.reportRoot",
-  "id": "String (identifier)"
 }
 ```
 
+## <a name="example"></a>Exemplo
 
+<!--{"blockType": "request"}-->
+```http
+GET https://graph.microsoft.com/v1.0/reports
+```
 
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.reportRoot"}-->
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+}
+```

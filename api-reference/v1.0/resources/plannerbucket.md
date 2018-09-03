@@ -1,42 +1,38 @@
-# Tipo de recurso plannerBucket
-<a id="plannerbucket-resource-type" class="xliff"></a>
+# <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 
 O recurso **plannerBucket** representa um Bucket (ou "coluna personalizada") para tarefas em um plano no Office 365. Ele está contido em um [plannerPlan](plannerPlan.md) e pode ter uma coleção de [plannerTasks](plannerTask.md).
 
 
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get plannerBucket](../api/plannerbucket_get.md) | [plannerBucket](plannerbucket.md) |Leia as propriedades e as relações do objeto **plannerBucket**.|
 |[Listar plannerTasks](../api/plannerbucket_list_tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 |[Criar](../api/planner_post_buckets.md) | [plannerBucket](plannerbucket.md)   | Crie um novo objeto **plannerBucket**. |
-|[Update](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)   |Atualize o objeto **plannerBucket**. |
-|[Delete](../api/plannerbucket_delete.md) | None |Exclua o objeto **plannerBucket**. |
+|[Atualizar](../api/plannerbucket_update.md) | [plannerBucket](plannerbucket.md)   |Atualize o objeto **plannerBucket**. |
+|[Excluir](../api/plannerbucket_delete.md) | Nenhum |Exclua o objeto **plannerBucket**. |
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID do bucket. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner_identifiers_disclaimer.md) é feito no serviço.|
-|nome|String|Nome do bucket.|
-|orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
-|planId|String|ID do plano ao qual o bucket pertence.|
+|id|Cadeia de caracteres| Somente leitura. ID do bucket. Tem 28 caracteres de comprimento e diferencia maiúsculas de minúsculas. A [validação de formato](planner_identifiers_disclaimer.md) é feita no serviço.|
+|name|Sequência de caracteres|Nome do bucket.|
+|orderHint|Sequência de caracteres|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
+|planId|Sequência de caracteres|ID do plano ao qual o bucket pertence.|
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. A coleção de tarefas no bucket.|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

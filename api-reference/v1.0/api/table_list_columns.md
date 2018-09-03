@@ -17,7 +17,7 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.  Para resultados confiáveis, use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.  Para resultados confiáveis, use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar pelos resultados. Isso ajudará a evitar problemas de desempenho relacionados a grandes conjuntos de resultados.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -30,7 +30,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [TableColumn](../resources/tablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -46,7 +46,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn",
+  "@odata.type": "microsoft.graph.workbookTableColumn",
   "isCollection": true
 } -->
 ```http
@@ -66,8 +66,7 @@ Content-length: 126
 }
 ```
 
-> 
-  **Observação:** use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar por um grande número de colunas.
+> **Observação:** use os parâmetros de consulta [$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top) e [$skip](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skip-parameter) para navegar por um grande número de colunas.
 
 Exemplo: 
 

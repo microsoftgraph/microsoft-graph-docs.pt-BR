@@ -22,7 +22,7 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 |[Listar anexos de um evento](../api/event_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento. |
 |[Listar anexos de uma mensagem](../api/message_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
 |[Listar anexos de uma postagem](../api/post_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
-|[Delete](../api/attachment_delete.md) | Nenhum |Exclua um anexo em um evento, mensagem ou postagem. |
+|[Excluir](../api/attachment_delete.md) | Nenhum |Exclua um anexo em um evento, mensagem ou postagem. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -30,11 +30,11 @@ A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentType|String|O tipo MIME.|
-|id|String| Somente leitura.|
+|contentType|Sequência de caracteres|O tipo MIME.|
+|id|Cadeia de caracteres| Somente leitura.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|nome|String|Nome de arquivo do anexo.|
+|nome|Sequência de caracteres|Nome de arquivo do anexo.|
 |size|Int32|O comprimento do anexo em bytes.|
 
 ## <a name="relationships"></a>Relações
@@ -46,6 +46,8 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

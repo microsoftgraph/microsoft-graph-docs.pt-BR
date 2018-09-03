@@ -1,40 +1,36 @@
-# Tipo de recurso domainDnsSrvRecord
-<a id="domaindnssrvrecord-resource-type" class="xliff"></a>
+# <a name="domaindnssrvrecord-resource-type"></a>Tipo de recurso domainDnsSrvRecord
 
 Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
+|id|Sequência de caracteres| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
 |isOptional|Booliano| Se for falso, o registro SRV deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar a propriedade *name* do registro SRV no host DNS. |
-|nameTarget|String| O valor a ser usado ao configurar a propriedade *Target* do registro SRV no host DNS. |
+|rótulo|Sequência de caracteres| O valor usado ao configurar a propriedade *name* do registro SRV no host DNS. |
+|nameTarget|Sequência de caracteres| O valor a ser usado ao configurar a propriedade *Target* do registro SRV no host DNS. |
 |porta|Int32| O valor a ser usado ao configurar a propriedade *port* do registro SRV no host DNS. |
 |prioridade|Int32| O valor a ser usado ao configurar a propriedade *priority* do registro SRV no host DNS. |
-|protocolo|String| O valor a ser usado ao configurar a propriedade *protocol* do registro SRV no host DNS. |
-|recordType|String|  Tipo do registro DNS. Este valor sempre será *Srv*. Chave |
-|service|String| O valor a ser usado ao configurar a propriedade *service* do registro SRV no host DNS. |
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro SRV.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|protocolo|Sequência de caracteres| O valor a ser usado ao configurar a propriedade *protocol* do registro SRV no host DNS. |
+|recordType|Sequência de caracteres|  Tipo do registro DNS. Este valor sempre será *Srv*. Chave |
+|service|Sequência de caracteres| O valor a ser usado ao configurar a propriedade *service* do registro SRV no host DNS. |
+|supportedService|Sequência de caracteres| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro SRV.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |ttl|Int32| O valor a ser usado ao configurar a propriedade *time-to-live (ttl)* do registro SRV no host DNS. Não anulável |
 |weight|Int32| O valor a ser usado ao configurar a propriedade *weight* do registro SRV no host DNS. |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 Nenhum
 
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -43,7 +39,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

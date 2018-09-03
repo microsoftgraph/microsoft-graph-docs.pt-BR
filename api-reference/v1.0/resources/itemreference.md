@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ItemReference
-ms.openlocfilehash: abd8b438e6c4e364a7a4b010d0808255425fa4df
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: e83b0a18725d587094a00e9cc84a51b030d83340
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268463"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -39,15 +40,15 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade      | Tipo              | Descrição
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | String            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
-| driveType     | String            | Identifica o tipo de unidade. Confira o recurso [unidade][] para obter os valores.
-| id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
-| nome          | String            | O nome do item ao qual se faz referência. Somente leitura.
-| caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
-| shareId       | String            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
+| driveId       | Sequência de caracteres            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
+| driveType     | Sequência de caracteres            | Identifica o tipo de unidade. Consulte o recurso [unidade][] para obter os valores.
+| id            | Cadeia de caracteres            | Identificador exclusivo do item na unidade. Somente leitura.
+| name          | Sequência de caracteres            | O nome do item ao qual se faz referência. Somente leitura.
+| caminho          | Sequência de caracteres            | Caminho que pode ser usado para navegar até o item. Somente leitura.
+| shareId       | Sequência de caracteres            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 
-[drive]: ../resources/drive.md
+[unidade]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares_get.md
 
@@ -69,5 +70,9 @@ Para recuperar o caminho legível para a navegação estrutural, ignore tudo at�
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

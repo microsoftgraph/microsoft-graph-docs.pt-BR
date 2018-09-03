@@ -34,7 +34,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsof
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json |
+| Tipo de Conteúdo  | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -52,7 +52,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Resposta

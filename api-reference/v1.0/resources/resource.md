@@ -1,16 +1,23 @@
-# <a name="resource-resource-type"></a>Tipo de recurso resource
+# <a name="onenoteresource-resource-type"></a>Tipo de recurso OneNoteResource
 
 Uma imagem ou outro recurso de arquivo em uma página do OneNote. 
 
 É possível obter os dados binários de um recurso, mas não há suporte para obter uma representação JSON de um objeto de recurso ou uma coleção de recursos.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.onenoteEntityBaseModel",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
+
+```json
+{
+  "content": { "@odata.type": "Edm.Stream" },
+  "contentUrl": "string (url)"
+}
+```
 
 Obtenha os dados binários de um recurso específico enviando uma solicitação GET para o ponto de extremidade `content` do recurso:
 
@@ -43,7 +50,11 @@ Uma marca `object` (que representa arquivos como PDF, DOCX e PNG) inclui o ponto
 ```
 
 ## <a name="properties"></a>Propriedades
-Nenhum.
+
+| Propriedade             | Tipo            | Descrição
+|:---------------------|:----------------|:---------------------------------
+| content              | Fluxo          | O fluxo de conteúdo
+| contentUrl           | String (url)    | A URL para baixar o conteúdo
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -25,19 +25,21 @@ POST /groups
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 A tabela a seguir mostra as propriedades do recurso [group](../resources/group.md) que você deve especificar no mínimo quando cria um grupo. 
 
 | Propriedade | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| displayName | string | O nome de exibição no catálogo de endereços do grupo. |
+| displayName | sequência de caracteres | O nome de exibição no catálogo de endereços do grupo. |
 | mailEnabled | booliano | Defina como **true** para grupos habilitados para email. Defina como **true** se estiver criando um grupo do Office 365. Defina como **false** se estiver criando um grupo dinâmico ou de segurança.|
-| mailNickname | string | O alias de email do grupo. |
+| mailNickname | sequência de caracteres | O alias de email do grupo. |
 | securityEnabled | booliano | Defina como **true** para grupos de segurança. Definir isto como **true** se estiver criando um grupo dinâmico ou de segurança. Defina isto como **false** se estiver criando um grupo do Office 365. |
 
 Especifique a propriedade **groupTypes** se estiver criando um grupo do Office 365 ou um grupo dinâmico, conforme descrito a seguir.
+
+### <a name="grouptypes-options"></a>opções de groupTypes
 
 | Tipo de grupo | Propriedade **groupTypes** |
 |:--------------|:------------------------|
@@ -76,7 +78,7 @@ Content-length: 244
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

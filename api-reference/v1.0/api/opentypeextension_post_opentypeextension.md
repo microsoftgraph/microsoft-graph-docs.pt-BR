@@ -1,6 +1,8 @@
 # <a name="create-open-extension"></a>Criar extensão aberta
 
-Crie uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso. 
+Criar uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.
+
+> **Observação:** Se você estiver criando extensões abertas nos recursos do Outlook, consulte **Considerações específicas do Outlook** em [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Permissões
 
@@ -16,9 +18,9 @@ Uma das seguintes permissões é necessária para chamar essa API, dependendo do
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-### <a name="create-an-extension-in-a-new-resource-instance"></a>Crie uma extensão em uma nova instância de recurso
+### <a name="create-an-extension-in-a-new-resource-instance"></a>Criar uma extensão em uma nova instância de recurso
 
-Use a mesma solicitação REST conforme cria da instância. 
+Usar a mesma solicitação REST que você usa para criar a instância.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -29,9 +31,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem que você crie essas instâncias de recurso suportam a criação de extensões abertas de forma semelhante.
 
-Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.
+Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância de recurso _e a extensão_ no corpo da solicitação.
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Crie uma extensão em uma instância de recurso existente
 
@@ -50,17 +52,17 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, para criar uma extensão nela. Todas as outras sintaxes POST que permitem que você crie essas instâncias de recurso suportam a criação de extensões abertas de forma semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.
 
-## <a name="parameters"></a>Parâmetros
-|**Parâmetro**|**Tipo**|**Descrição**|
+## <a name="path-parameters"></a>Parâmetros do caminho
+|Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|_Parâmetros de URL_|
-|id|string|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
+|id|sequência de caracteres|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Valor |
 |:---------------|:----------|
 | Autorização | {token} de portador. Obrigatório. |
@@ -70,21 +72,24 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 
 Forneça um corpo JSON de uma [openTypeExtension](../resources/openTypeExtension.md), com os seguintes pares de nome/valor obrigatórios e dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-| Name       | Valor |
+| Nome       | Valor |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.
 
 ## <a name="response"></a>Resposta
 
-#### <a name="response-code"></a>Código da resposta
+### <a name="response-code"></a>Código da resposta
+
 Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.
 
-Ao criar uma extensão na mesma operação como criação de uma instância de recurso, uma operação bem-sucedida retorna o mesmo código de resposta que quando a operação é usada para criar apenas a instância de recurso sem a extensão. Consulte os tópicos correspondentes para criar a instância conforme listado [cima](#create-an-extension-in-a-new-resource-instance).
+Quando você cria uma extensão usando a mesma operação que usa para criar uma instância de recurso, a operação retorna o mesmo código de resposta ao usar a operação para criar a instância de recurso sem a extensão.
+Consulte os tópicos correspondentes para criar a instância, como listados [acima](#create-an-extension-in-a-new-resource-instance).
 
-#### <a name="response-body"></a>Corpo da resposta
+### <a name="response-body"></a>Corpo da resposta
+
 | Cenário       | Recurso  | Corpo da resposta |
 |:---------------|:----------|:--------------|
 | Criar uma extensão ao criar explicitamente uma _nova_ instância de recurso | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Inclui a nova instância expandida com o objeto [openTypeExtension](../resources/openTypeExtension.md). |
@@ -92,19 +97,20 @@ Ao criar uma extensão na mesma operação como criação de uma instância de r
 | Criar uma extensão em uma instância de recurso _existente_ | Todos os recursos com suporte | Inclui o objeto **openTypeExtension**. |
 
 ## <a name="example"></a>Exemplo
-##### <a name="request-1"></a>Solicitação 1
+
+### <a name="request-1"></a>Solicitação 1
 
 O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo da solicitação inclui o seguinte:
 
-- As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem. 
+- As propriedades **subject**, **body** e **toRecipients** típicas de uma nova mensagem.
 - E para a extensão:
 
-  - O tipo `Microsoft.Graph.OpenTypeExtension`. 
-  - O nome da extensão "Com.Contoso.Referral". 
-  - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e `dealValue`.  
+  - O tipo `microsoft.graph.openTypeExtension`.
+  - O nome da extensão "Com.Contoso.Referral".
+  - Dados adicionais a serem armazenados como três propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e `dealValue`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_1"
 }-->
 ```http
@@ -125,7 +131,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "microsoft.graph.openTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -135,11 +141,11 @@ POST https://graph.microsoft.com/v1.0/me/messages
 }
 ```
 
-##### <a name="response-1"></a>Resposta 1
+### <a name="response-1"></a>Resposta 1
 
 Veja a seguir a resposta para o primeiro exemplo. O corpo da resposta inclui propriedades da nova mensagem e o seguinte para a nova extensão:
 
-- A propriedade **id** com o nome totalmente qualificado de `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`. 
+- A propriedade **id** com o nome totalmente qualificado de `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
 - A propriedade padrão **extensionName** especificada na solicitação.
 - Os dados personalizados especificados na solicitação, armazenados como 3 propriedades personalizadas.
 
@@ -201,7 +207,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -214,45 +220,44 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 }
 ```
 
-
 ****
 
-##### <a name="request-2"></a>Solicitação 2
+### <a name="request-2"></a>Solicitação 2
 
 O segundo exemplo cria uma extensão na mensagem especificada. O corpo da solicitação inclui o seguinte para essa extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`. 
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.Referral".
-- Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.  
+- Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_2"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions
 
-{ 
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension", 
-  "extensionName" : "Com.Contoso.Referral", 
-  "companyName" : "Wingtip Toys", 
-  "dealValue" : 500050, 
-  "expirationDate" : "2015-12-03T10:00:00.000Z" 
-} 
+{
+  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "extensionName" : "Com.Contoso.Referral",
+  "companyName" : "Wingtip Toys",
+  "dealValue" : 500050,
+  "expirationDate" : "2015-12-03T10:00:00.000Z"
+}
 ```
 
-##### <a name="response-2"></a>Resposta 2
+### <a name="response-2"></a>Resposta 2
 
 Veja a seguir a resposta para o segundo exemplo. O corpo da solicitação inclui o seguinte para a nova extensão:
 
 - A propriedade padrão **extensionName**.
-- A propriedade **id** com o nome totalmente qualificado de `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`. 
-- Os dados personalizados a serem armazenados.  
+- A propriedade **id** com o nome totalmente qualificado de `Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral`.
+- Os dados personalizados a serem armazenados.
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -260,7 +265,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -273,23 +278,23 @@ Content-type: application/json
 
 ****
 
-##### <a name="request-3"></a>Solicitação 3
+### <a name="request-3"></a>Solicitação 3
 
 O terceiro exemplo cria uma extensão no evento de grupo especificado. O corpo da solicitação inclui o seguinte para essa extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`. 
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.Deal".
-- Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.  
+- Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `dealValue` e `expirationDate`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_3"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions 
+POST https://graph.microsoft.com/v1.0/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a/events/AAMkADVl17IsAAA=/extensions
 
 {
-  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
+  "@odata.type" : "microsoft.graph.openTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -297,14 +302,14 @@ POST https://graph.microsoft.com/v1.0/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc7
 }
 ```
 
-##### <a name="response-3"></a>Resposta 3
+### <a name="response-3"></a>Resposta 3
 
 Veja a seguir a resposta da terceira solicitação de exemplo.
 
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -312,7 +317,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -323,20 +328,20 @@ Content-type: application/json
 
 ****
 
-##### <a name="request-4"></a>Solicitação 4
+### <a name="request-4"></a>Solicitação 4
 
 O quarto exemplo cria uma extensão em uma nova postagem de grupo, usando a mesma chamada de ação **reply** para uma postagem de grupo existente. A ação **reply** cria uma nova postagem e uma nova extensão inserida nessa postagem. O corpo da solicitação inclui uma propriedade **post** que, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a nova extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`. 
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
 - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_4"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/microsoft.graph.reply 
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=/reply
 
 {
   "post": {
@@ -356,12 +361,12 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
         "Add family"
       ]
     }
-  ]        
+  ]
   }
 }
 ```
 
-##### <a name="response-4"></a>Resposta 4
+### <a name="response-4"></a>Resposta 4
 
 Veja a seguir a resposta do quarto exemplo. Criar uma extensão com êxito em uma nova postagem de grupo resulta apenas no código de resposta HTTP 202.
 
@@ -375,23 +380,22 @@ Content-type: text/plain
 Content-Length: 0
 ```
 
-
 ****
 
-##### <a name="request-5"></a>Solicitação 5
+### <a name="request-5"></a>Solicitação 5
 
 O quinto exemplo cria uma extensão em uma nova postagem de grupo usando a mesma operação POST para criar uma conversa. A operação POST cria uma nova conversa, thread ou postagem e uma nova extensão inserida na postagem. O corpo da solicitação inclui as propriedades **Topic** e **Threads** e o objeto filho **post** para a nova conversa. O objeto **post**, por sua vez, contém o **corpo** da nova postagem e os seguintes dados para a extensão:
 
-- O tipo `Microsoft.Graph.OpenTypeExtension`. 
+- O tipo `microsoft.graph.openTypeExtension`.
 - O nome da extensão "Com.Contoso.HR".
 - Dados adicionais a serem armazenados como 3 propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e a matriz de cadeias de caracteres `topPicks`.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "post_opentypeextension_5"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/conversations
 
 {
   "Topic": "Does anyone have a second?",
@@ -413,19 +417,19 @@ POST https://graph.microsoft.com/v1.0/groups('37df2ff0-0de0-4c33-8aee-75289364ae
                 "Employees only",
                 "Add spouse or guest",
                 "Add family"
-              ]  
-            }  
-          ] 
-        } 
-      ]  
-    } 
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
 ```
 
-##### <a name="response-5"></a>Resposta 5
+### <a name="response-5"></a>Resposta 5
 
-Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão. 
+Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.
 
 Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
@@ -452,7 +456,6 @@ Content-type: application/json
 }
 
 ```
-
 
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -12,11 +12,10 @@ Quando outras pessoas solicitarem reuniões de trabalho com você no seu local h
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| daysOfWeek | Coleção de cadeia de caracteres | Os dias da semana em que o usuário trabalha. |
+| daysOfWeek | coleção dayOfWeek | Os dias da semana em que o usuário trabalha. |
 | startTime | Edm.TimeOfDay | A hora do dia em que o usuário começa a trabalhar. |
 | endTime | Edm.TimeOfDay | A hora do dia em que o usuário para de trabalhar. |
 | timeZone | [timeZoneBase](timezonebase.md) | O fuso horário ao qual o horário de trabalho se aplica. |
-
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,5 +46,9 @@ Veja a seguir uma representação JSON do recurso.
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/workinghours.md/microsoft.graph.workingHours/daysOfWeek:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
   "tocPath": ""
 }-->
