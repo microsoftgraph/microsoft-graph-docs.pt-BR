@@ -13,11 +13,10 @@ Por exemplo, se um fuso horário estiver especificado com as seguintes proprieda
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | dayOccurrence | Edm.Int32 | Representa a enésima ocorrência do dia da semana em que ocorre a transição do horário de verão para o horário padrão. |
-| dayOfWeek | string | Representa o dia da semana em que ocorre a transição do horário de verão para o horário padrão. |
+| dayOfWeek | dayOfWeek | Representa o dia da semana em que ocorre a transição do horário de verão para o horário padrão. |
 | month | Edm.Int32 | Representa o mês do ano em que ocorre a transição do horário de verão para o horário padrão. |
 | time | Edm.TimeOfDay | Representa a hora do dia em que ocorre a transição do horário de verão para o horário padrão. |
 | year | Edm.Int32 | Representa com que frequência, em anos, ocorre a mudança do horário de verão para o horário padrão. Por exemplo, um valor 0 significa todos os anos.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

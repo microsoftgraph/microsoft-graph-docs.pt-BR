@@ -28,9 +28,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|campos|SortField|A lista de condições para a classificação.|
+|campos|Coleção WorkbookSortField|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
-|method|cadeia de caracteres|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.|
+|method|sequência de caracteres|Opcional. O método de ordenação usado para caracteres chineses.  Os valores possíveis são: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Resposta
 
@@ -72,8 +72,7 @@ Content-length: 298
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

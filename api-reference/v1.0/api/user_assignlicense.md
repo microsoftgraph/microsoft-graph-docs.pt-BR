@@ -19,15 +19,15 @@ POST /users/{id | userPrincipalName}/assignLicense
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Content-Type  | application/json  |
+| Content-Type  | aplicativo/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|addLicenses|AssignedLicense|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar os planos associados a uma licença definindo a propriedade **disabledPlans** em um objeto [assignedLicense](../resources/assignedlicense.md).|
-|removeLicenses|Guid|Uma coleção de GUIDs que identifica as licenças a remover.|
+|addLicenses|Coleção AssignedLicense|Uma coleção de objetos [assignedLicense](../resources/assignedlicense.md) que especifica as licenças a adicionar. Você pode desabilitar os planos associados a uma licença definindo a propriedade **disabledPlans** em um objeto [assignedLicense](../resources/assignedlicense.md).|
+|removeLicenses|Coleção de GUIDs|Uma coleção de GUIDs que identifica as licenças a remover.|
 
 ## <a name="response"></a>Resposta
 
@@ -50,7 +50,7 @@ Content-length: 185
   "addLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "guid"
     }
   ],
   "removeLicenses": [ "bea13e0c-3828-4daa-a392-28af7ff61a0f" ]
@@ -74,12 +74,12 @@ Content-length: 491
   "assignedLicenses": [
     {
       "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value"
+      "skuId": "0118A350-71FC-4EC3-8F0C-6A1CB8867561"
     }
   ],
   "assignedPlans": [
     {
-      "assignedDateTime": "datetime-value",
+      "assignedDateTime": "2016-10-02T12:13:14Z",
       "capabilityStatus": "capabilityStatus-value",
       "service": "service-value",
       "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"

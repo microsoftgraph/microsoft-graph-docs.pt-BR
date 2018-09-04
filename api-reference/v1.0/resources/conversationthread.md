@@ -10,22 +10,22 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Listar threads](../api/group_list_threads.md) | Coleção [conversationThread](conversationthread.md) |Obter todos os threads de um grupo.|
 |[Criar thread](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
 |[Obter conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
-|[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Delete](../api/conversationthread_delete.md) | Nenhuma |Exclua um objeto conversationThread. |
+|[Atualizar](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
+|[Excluir](../api/conversationthread_delete.md) | Nenhuma |Exclua um objeto conversationThread. |
 |[Responder](../api/conversationthread_reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
 |[Listar Postagens](../api/conversationthread_list_posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: do thread.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: do thread.|
-|topic|String|O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.||
+|topic|Sequência de caracteres|O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.||
 |hasAttachments|Booliano|Indica se qualquer uma das postagens neste thread tem pelo menos um anexo.|
 |lastDeliveredDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |uniqueSenders|Coleção de cadeias de caracteres|Todos os usuários que enviaram uma mensagem para este thread.|
-|visualização|String|Um breve resumo do corpo da última postagem nesta conversa.|
+|visualização|Sequência de caracteres|Um breve resumo do corpo da última postagem nesta conversa.|
 |isLocked|Booliano|Indica se o thread está bloqueado.|
 
 ## <a name="relationships"></a>Relações
@@ -37,13 +37,26 @@ A coleção de destinatários da última postagem são os destinatários agregad
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

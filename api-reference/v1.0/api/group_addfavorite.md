@@ -43,8 +43,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 200 OK

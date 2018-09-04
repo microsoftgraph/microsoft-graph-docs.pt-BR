@@ -18,19 +18,32 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 * Se estiver acessando anexos em eventos: Calendars.Read.
 * Se estiver acessando anexos em eventos de grupo ou postagens: Group.Read.All.
 
+<!--
+* If accessing attachments in group events or posts: Group.Read.All.
+-->
+
 ## <a name="http-request"></a>Solicitação HTTP
+Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.
+
+<!--
+Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+-->
 <!-- { "blockType": "ignored" } -->
-Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário ou grupo.
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
-GET /groups/{id}/events/{id}/attachments/{id}
 
 GET /me/calendar/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
-GET /groups/{id}/calendar/events/{id}/attachments/{id}
 ```
+
+<!--
+GET /groups/{id}/events/{id}/attachments/{id}
+GET /groups/{id}/calendar/events/{id}/attachments/{id}
+-->
+
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence ao [calendarGroup](../resources/calendargroup.md) padrão do usuário.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
@@ -39,26 +52,31 @@ GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 ```
 Anexos de um [event](../resources/event.md) em um [calendar](../resources/calendar.md) que pertence a um [calendarGroup](../resources/calendargroup.md) de um usuário.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments/{id}
 ```
 Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 ```
 Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](../resources/mailfolder.md) de nível superior na caixa de correio de um usuário.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.
+Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio do usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada na filha de uma filha e assim por diante.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
@@ -68,7 +86,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -105,7 +123,7 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
+  "contentBytes": "binary",
   "contentId": "null",
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",
@@ -120,10 +138,11 @@ Content-length: 199
 O primeiro exemplo mostra como obter um anexo do item em uma mensagem. As propriedades de **itemAttachment** são retornadas.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=
 ```
 
 ##### <a name="response-1"></a>Resposta 1
@@ -152,10 +171,11 @@ Content-type: application/json
 O exemplo a seguir mostra como usar `$expand` para obter as propriedades do item que está anexado à mensagem. Neste exemplo, esse item é uma mensagem. As propriedades dessa mensagem anexadas também são retornadas.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADA1M-zAAA=", "AAMkADA1M-CJKtzmnlcqVgqI="],
   "name": "get_and_expand_item_attachment"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item 
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkADA1M-zAAA=/attachments/AAMkADA1M-CJKtzmnlcqVgqI=/?$expand=microsoft.graph.itemattachment/item 
 ```
 
 ##### <a name="response-2"></a>Resposta 2
@@ -275,5 +295,9 @@ Content-length: 215
   "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Error: get_and_expand_item_attachment/item:
+      Property 'item' is of type Custom but has no custom members."
+  ],
   "tocPath": ""
 }-->

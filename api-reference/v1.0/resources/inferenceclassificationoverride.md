@@ -7,15 +7,15 @@ Representa a substituição de um usuário para definir como classificar as mens
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
+|[Atualizar](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
+|[Excluir](../api/inferenceclassificationoverride_delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.|
-|id|cadeia de caracteres| O identificador exclusivo da substituição. Somente leitura.|
-|senderEmailAddress|[emailAddress](emailaddress.md)|As informações de endereço de email do remetente para quem a substituição é criada.|
+|classifyAs|inferenceClassificationType| Especifica como as mensagens recebidas de um remetente específico sempre devem ser classificadas. Os valores possíveis são: `focused`, `other`.|
+|id|sequência de caracteres| O identificador exclusivo da substituição. Somente leitura.|
+|senderEmailAddress|[emailAddress](emailaddress.md)|A informação de endereço de email do remetente para quem a substituição é criada.|
 
 ## <a name="relationships"></a>Relacionamentos
 Nenhum
@@ -27,6 +27,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

@@ -8,8 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -22,11 +22,11 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -51,7 +51,7 @@ Content-Length: 4343
 
 {
   "value": {
-    "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+    "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
     "displayName": "Display Name value",
     "description": "Description value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
@@ -78,7 +78,7 @@ Content-Length: 4343
       "certificate": "Y2VydGlmaWNhdGU="
     },
     "revokeOnUnenrollDisabled": true,
-    "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+    "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
     "azureRightsManagementServicesAllowed": true,
     "iconsVisible": true,
     "protectedApps": [

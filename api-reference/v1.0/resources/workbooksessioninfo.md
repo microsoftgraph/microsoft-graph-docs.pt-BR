@@ -24,6 +24,6 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade | Tipo  | Descrição                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | ID da sessão de pasta de trabalho. |
-| persistChanges | string |  `true` para sessão persistente. `false` para sessão não persistente (modo de exibição) |
+| id  | cadeia de caracteres | ID da sessão de pasta de trabalho. |
+| persistChanges | booleano |  `true` para sessão persistente. `false` para sessão não persistente (modo de exibição) |
 

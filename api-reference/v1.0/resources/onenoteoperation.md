@@ -6,11 +6,10 @@ O status de determinadas operações demoradas do OneNote.
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.operation",
   "@odata.type": "microsoft.graph.onenoteOperation"
 }-->
 
@@ -32,15 +31,15 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |erro|[onenoteOperationError](onenoteoperationerror.md)|O erro retornado pela operação.|
-|id|string|A id da operação. Somente leitura.|
+|id|sequência de caracteres|A id da operação. Somente leitura.|
 |lastActionDateTime| DateTimeOffset |A hora da última ação da operação.|
-|resourceId|string|A id do recurso.|
-|resourceLocation|string|O URI de recurso do objeto. Por exemplo, o URI de recurso para uma seção ou página copiada. |
-|status|string|O status atual da operação: `notstarted`, `running`, `completed`, `failed` |
-|percentComplete|string|A porcentagem concluída da operação se a operação ainda estiver com um status `running`
+|resourceId|sequência de caracteres|A id do recurso.|
+|resourceLocation|sequência de caracteres|O URI de recurso do objeto. Por exemplo, o URI de recurso para uma seção ou página copiada. |
+|status|sequência de caracteres|O status atual da operação: `notstarted`, `running`, `completed`, `failed` |
+|percentComplete|sequência de caracteres|A porcentagem concluída da operação se a operação ainda estiver com um status`running`
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="methods"></a>Métodos
