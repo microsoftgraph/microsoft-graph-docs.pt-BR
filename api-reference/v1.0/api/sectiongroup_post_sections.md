@@ -1,16 +1,16 @@
-# <a name="create-section"></a><span data-ttu-id="6402f-101">Criar seção</span><span class="sxs-lookup"><span data-stu-id="6402f-101">Create section</span></span>
+# <a name="create-section"></a><span data-ttu-id="bdd99-101">Criar seção</span><span class="sxs-lookup"><span data-stu-id="bdd99-101">Create section</span></span>
 
-<span data-ttu-id="6402f-102">Crie uma nova [seção](../resources/section.md) no grupo de seção especificado.</span><span class="sxs-lookup"><span data-stu-id="6402f-102">Create a new [section](../resources/section.md) in the specified section group.</span></span>
-## <a name="permissions"></a><span data-ttu-id="6402f-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="6402f-103">Permissions</span></span>
-<span data-ttu-id="6402f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="6402f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="bdd99-102">Crie uma nova [onenoteSection](../resources/section.md) no grupo de seção especificado.</span><span class="sxs-lookup"><span data-stu-id="bdd99-102">Create a new [section](../resources/section.md) in the specified section group.</span></span>
+## <a name="permissions"></a><span data-ttu-id="bdd99-103">Permissões</span><span class="sxs-lookup"><span data-stu-id="bdd99-103">Permissions</span></span>
+<span data-ttu-id="bdd99-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="bdd99-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="6402f-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6402f-106">Permission type</span></span>      | <span data-ttu-id="6402f-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6402f-107">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bdd99-106">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bdd99-106">Permission type</span></span>      | <span data-ttu-id="bdd99-107">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bdd99-107">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6402f-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6402f-108">Delegated (work or school account)</span></span> | <span data-ttu-id="6402f-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6402f-109">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6402f-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6402f-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6402f-111">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6402f-111">Notes.Create, Notes.ReadWrite, or Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="6402f-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6402f-112">Application</span></span> | <span data-ttu-id="6402f-113">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6402f-113">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="bdd99-108">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bdd99-108">Delegated (work or school account)</span></span> | <span data-ttu-id="bdd99-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd99-109">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bdd99-110">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bdd99-110">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bdd99-111">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bdd99-111">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="bdd99-112">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bdd99-112">Application</span></span> | <span data-ttu-id="bdd99-113">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bdd99-113">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6402f-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6402f-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bdd99-114">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bdd99-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sectionGroups/{id}/sections
@@ -18,24 +18,24 @@ POST /users/{id | userPrincipalName}/onenote/sectionGroups/{id}/sections
 POST /groups/{id}/onenote/sectionGroups/{id}/sections
 POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```
-## <a name="request-headers"></a><span data-ttu-id="6402f-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6402f-115">Request headers</span></span>
-| <span data-ttu-id="6402f-116">Nome</span><span class="sxs-lookup"><span data-stu-id="6402f-116">Name</span></span>       | <span data-ttu-id="6402f-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="6402f-117">Type</span></span> | <span data-ttu-id="6402f-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="6402f-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bdd99-115">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bdd99-115">Request headers</span></span>
+| <span data-ttu-id="bdd99-116">Nome</span><span class="sxs-lookup"><span data-stu-id="bdd99-116">Name</span></span>       | <span data-ttu-id="bdd99-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="bdd99-117">Type</span></span> | <span data-ttu-id="bdd99-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdd99-118">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="6402f-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="6402f-119">Authorization</span></span>  | <span data-ttu-id="6402f-120">string</span><span class="sxs-lookup"><span data-stu-id="6402f-120">string</span></span>  | <span data-ttu-id="6402f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6402f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="6402f-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6402f-123">Content-Type</span></span> | <span data-ttu-id="6402f-124">string</span><span class="sxs-lookup"><span data-stu-id="6402f-124">string</span></span> | `application/json` |
+| <span data-ttu-id="bdd99-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="bdd99-119">Authorization</span></span>  | <span data-ttu-id="bdd99-120">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdd99-120">string</span></span>  | <span data-ttu-id="bdd99-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bdd99-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="bdd99-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bdd99-123">Content-Type</span></span> | <span data-ttu-id="bdd99-124">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdd99-124">string</span></span> | `application/json` |
 
-## <a name="request-body"></a><span data-ttu-id="6402f-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6402f-125">Request body</span></span>
-<span data-ttu-id="6402f-126">No corpo da solicitação, forneça um nome para a seção.</span><span class="sxs-lookup"><span data-stu-id="6402f-126">In the request body, supply a name for the section.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bdd99-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bdd99-125">Request body</span></span>
+<span data-ttu-id="bdd99-126">No corpo da solicitação, forneça um nome para a seção.</span><span class="sxs-lookup"><span data-stu-id="bdd99-126">In the request body, supply a name for the section.</span></span>
 
-<span data-ttu-id="6402f-p103">Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos. O nome não pode conter mais de 50 caracteres ou conter os seguintes caracteres:  ?*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="6402f-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?*\/:<>|&#''%~</span></span>
+<span data-ttu-id="bdd99-p103">Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos. O nome não pode conter mais de 50 caracteres ou conter os seguintes caracteres:  ?\*\/:<>|&#''%~</span><span class="sxs-lookup"><span data-stu-id="bdd99-p103">Within the same hierarchy level, section names must be unique. The name cannot contain more than 50 characters or contain the following characters:  ?\*\/:<>|&#''%~</span></span>
 
-## <a name="response"></a><span data-ttu-id="6402f-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="6402f-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bdd99-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="bdd99-129">Response</span></span>
 
-<span data-ttu-id="6402f-130">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [section](../resources/section.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6402f-130">If successful, this method returns a `201 Created` response code and a [section](../resources/section.md) object in the response body.</span></span>
+<span data-ttu-id="bdd99-130">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [onenoteSection](../resources/section.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bdd99-130">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationAssignment](../resources/section.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6402f-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6402f-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6402f-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6402f-132">Request</span></span>
-<span data-ttu-id="6402f-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6402f-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="bdd99-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bdd99-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bdd99-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bdd99-132">Request</span></span>
+<span data-ttu-id="bdd99-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bdd99-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_section_from_sectiongroup"
@@ -50,8 +50,8 @@ Content-length: 27
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="6402f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="6402f-134">Response</span></span>
-<span data-ttu-id="6402f-p104">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6402f-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="bdd99-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="bdd99-134">Response</span></span>
+<span data-ttu-id="bdd99-p104">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bdd99-p104">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

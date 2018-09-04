@@ -1,55 +1,55 @@
-# <a name="chart-resource-type"></a>Tipo de recurso Chart
+# <a name="chart-resource-type"></a><span data-ttu-id="6632d-101">Tipo de recurso Chart</span><span class="sxs-lookup"><span data-stu-id="6632d-101">Chart resource type</span></span>
 
-Representa um objeto de gráfico em uma pasta de trabalho.
+<span data-ttu-id="6632d-102">Representa um objeto de gráfico em uma pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="6632d-102">Represents a chart object in a workbook.</span></span>
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="6632d-103">Métodos</span><span class="sxs-lookup"><span data-stu-id="6632d-103">Methods</span></span>
 
-| Método           | Tipo de retorno    |Descrição|
+| <span data-ttu-id="6632d-104">Método</span><span class="sxs-lookup"><span data-stu-id="6632d-104">Method</span></span>           | <span data-ttu-id="6632d-105">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="6632d-105">Return Type</span></span>    |<span data-ttu-id="6632d-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="6632d-106">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [Chart](chart.md) |Leia as propriedades e os relacionamentos do objeto de gráfico.|
-|[Create ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Crie uma nova ChartSeries postando na coleção de séries.|
-|[List series](../api/chart_list_series.md) |Coleção [ChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)    |Atualize um objeto Chart. |
-|[Image](../api/chart_image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
-|[Delete](../api/chart_delete.md)|Nenhum|Exclui o objeto de gráfico.|
-|[SetData](../api/chart_setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
-|[Setposition](../api/chart_setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
-|[List](../api/chart_list.md) | Coleção [Chart](chart.md) |Obtenha a coleção de objetos do gráfico. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Obtém um gráfico com base em sua posição na coleção.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Cria um novo gráfico.|
+|[<span data-ttu-id="6632d-107">Obter Chart</span><span class="sxs-lookup"><span data-stu-id="6632d-107">Get Chart</span></span>](../api/chart_get.md) | [<span data-ttu-id="6632d-108">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="6632d-108">WorkbookChart</span></span>](chart.md) |<span data-ttu-id="6632d-109">Lê as propriedades e os relacionamentos do objeto de gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-109">Read properties and relationships of chart object.</span></span>|
+|[<span data-ttu-id="6632d-110">Criar ChartSeries</span><span class="sxs-lookup"><span data-stu-id="6632d-110">Create ChartSeries</span></span>](../api/chart_post_series.md) |[<span data-ttu-id="6632d-111">WorkbookChartSeries</span><span class="sxs-lookup"><span data-stu-id="6632d-111">WorkbookChartSeries</span></span>](chartseries.md)| <span data-ttu-id="6632d-112">Cria um novo ChartSeries postando na coleção de séries.</span><span class="sxs-lookup"><span data-stu-id="6632d-112">Create a new ChartSeries by posting to the series collection.</span></span>|
+|[<span data-ttu-id="6632d-113">Lista de séries</span><span class="sxs-lookup"><span data-stu-id="6632d-113">List series</span></span>](../api/chart_list_series.md) |<span data-ttu-id="6632d-114">Coleção [WorkbookChartSeries](chartseries.md)</span><span class="sxs-lookup"><span data-stu-id="6632d-114">[WorkbookChartSeries](chartseries.md) collection</span></span>| <span data-ttu-id="6632d-115">Obtém uma coleção de objetos ChartSeries.</span><span class="sxs-lookup"><span data-stu-id="6632d-115">Get a ChartSeries object collection.</span></span>|
+|[<span data-ttu-id="6632d-116">Atualizar</span><span class="sxs-lookup"><span data-stu-id="6632d-116">Update</span></span>](../api/chart_update.md) | [<span data-ttu-id="6632d-117">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="6632d-117">WorkbookChart</span></span>](chart.md)   |<span data-ttu-id="6632d-118">Atualiza um objeto Chart.</span><span class="sxs-lookup"><span data-stu-id="6632d-118">Update Chart object.</span></span> |
+|[<span data-ttu-id="6632d-119">Imagem</span><span class="sxs-lookup"><span data-stu-id="6632d-119">Image</span></span>](../api/chart_image.md)|<span data-ttu-id="6632d-120">Sequência de caracteres de imagem codificada em base64</span><span class="sxs-lookup"><span data-stu-id="6632d-120">Image base64 encoded string</span></span>|<span data-ttu-id="6632d-121">Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.</span><span class="sxs-lookup"><span data-stu-id="6632d-121">Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.</span></span>|
+|[<span data-ttu-id="6632d-122">Excluir</span><span class="sxs-lookup"><span data-stu-id="6632d-122">Delete</span></span>](../api/chart_delete.md)|<span data-ttu-id="6632d-123">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6632d-123">None</span></span>|<span data-ttu-id="6632d-124">Exclui o objeto de gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-124">Deletes the chart object.</span></span>|
+|[<span data-ttu-id="6632d-125">SetData</span><span class="sxs-lookup"><span data-stu-id="6632d-125">Setdata</span></span>](../api/chart_setdata.md)|<span data-ttu-id="6632d-126">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6632d-126">None</span></span>|<span data-ttu-id="6632d-127">Redefine os dados de origem do gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-127">Resets the source data for the chart.</span></span>|
+|[<span data-ttu-id="6632d-128">Setposition</span><span class="sxs-lookup"><span data-stu-id="6632d-128">Setposition</span></span>](../api/chart_setposition.md)|<span data-ttu-id="6632d-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6632d-129">None</span></span>|<span data-ttu-id="6632d-130">Posiciona o gráfico em relação às células na planilha.</span><span class="sxs-lookup"><span data-stu-id="6632d-130">Positions the chart relative to cells on the worksheet.</span></span>|
+|[<span data-ttu-id="6632d-131">Lista</span><span class="sxs-lookup"><span data-stu-id="6632d-131">List</span></span>](../api/chart_list.md) | <span data-ttu-id="6632d-132">Coleção [WorkbookChart](chart.md)</span><span class="sxs-lookup"><span data-stu-id="6632d-132">[WorkbookChart](chart.md) collection</span></span> |<span data-ttu-id="6632d-133">Obtém a coleção de objetos do gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-133">Get chart object collection.</span></span> |
+|[<span data-ttu-id="6632d-134">Itemat</span><span class="sxs-lookup"><span data-stu-id="6632d-134">Itemat</span></span>](../api/chartcollection_itemat.md)|[<span data-ttu-id="6632d-135">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="6632d-135">WorkbookChart</span></span>](chart.md)|<span data-ttu-id="6632d-136">Obtém um gráfico com base em sua posição na coleção.</span><span class="sxs-lookup"><span data-stu-id="6632d-136">Gets a chart based on its position in the collection.</span></span>|
+|[<span data-ttu-id="6632d-137">Adicionar</span><span class="sxs-lookup"><span data-stu-id="6632d-137">Add</span></span>](../api/chartcollection_add.md)|[<span data-ttu-id="6632d-138">WorkbookChart</span><span class="sxs-lookup"><span data-stu-id="6632d-138">WorkbookChart</span></span>](chart.md)|<span data-ttu-id="6632d-139">Cria um novo gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-139">Creates a new chart.</span></span>|
 
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="6632d-140">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6632d-140">Properties</span></span>
+| <span data-ttu-id="6632d-141">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6632d-141">Property</span></span>     | <span data-ttu-id="6632d-142">Tipo</span><span class="sxs-lookup"><span data-stu-id="6632d-142">Type</span></span>   |<span data-ttu-id="6632d-143">Descrição</span><span class="sxs-lookup"><span data-stu-id="6632d-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|height|Double|Representa a altura, em pontos, do objeto Chart.|
-|id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
-|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
-|name|string|Representa o nome de um objeto Chart.|
-|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
-|width|Double|Representa a largura, em pontos, do objeto de gráfico.|
+|<span data-ttu-id="6632d-144">altura</span><span class="sxs-lookup"><span data-stu-id="6632d-144">height</span></span>|<span data-ttu-id="6632d-145">Double</span><span class="sxs-lookup"><span data-stu-id="6632d-145">double</span></span>|<span data-ttu-id="6632d-146">Representa a altura, em pontos, do objeto Chart.</span><span class="sxs-lookup"><span data-stu-id="6632d-146">Represents the height, in points, of the chart object.</span></span>|
+|<span data-ttu-id="6632d-147">id</span><span class="sxs-lookup"><span data-stu-id="6632d-147">id</span></span>|<span data-ttu-id="6632d-148">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="6632d-148">string</span></span>|<span data-ttu-id="6632d-p101">Obtém um gráfico com base em sua posição no conjunto. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p101">Gets a chart based on its position in the collection. Read-only.</span></span>|
+|<span data-ttu-id="6632d-151">esquerda</span><span class="sxs-lookup"><span data-stu-id="6632d-151">left</span></span>|<span data-ttu-id="6632d-152">Double</span><span class="sxs-lookup"><span data-stu-id="6632d-152">double</span></span>|<span data-ttu-id="6632d-153">A distância, em pontos, da esquerda do gráfico à origem da planilha.</span><span class="sxs-lookup"><span data-stu-id="6632d-153">The distance, in points, from the left side of the chart to the worksheet origin.</span></span>|
+|<span data-ttu-id="6632d-154">nome</span><span class="sxs-lookup"><span data-stu-id="6632d-154">name</span></span>|<span data-ttu-id="6632d-155">sequência de caracteres</span><span class="sxs-lookup"><span data-stu-id="6632d-155">string</span></span>|<span data-ttu-id="6632d-156">Representa o nome de um objeto Chart.</span><span class="sxs-lookup"><span data-stu-id="6632d-156">Represents the name of a chart object.</span></span>|
+|<span data-ttu-id="6632d-157">superior</span><span class="sxs-lookup"><span data-stu-id="6632d-157">top</span></span>|<span data-ttu-id="6632d-158">Double</span><span class="sxs-lookup"><span data-stu-id="6632d-158">double</span></span>|<span data-ttu-id="6632d-159">Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-159">Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).</span></span>|
+|<span data-ttu-id="6632d-160">largura</span><span class="sxs-lookup"><span data-stu-id="6632d-160">width</span></span>|<span data-ttu-id="6632d-161">Double</span><span class="sxs-lookup"><span data-stu-id="6632d-161">double</span></span>|<span data-ttu-id="6632d-162">Representa a largura, em pontos, do objeto de gráfico.</span><span class="sxs-lookup"><span data-stu-id="6632d-162">Represents the width, in points, of the chart object.</span></span>|
 
-## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a><span data-ttu-id="6632d-163">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="6632d-163">Relationships</span></span>
+| <span data-ttu-id="6632d-164">Relação</span><span class="sxs-lookup"><span data-stu-id="6632d-164">Relationship</span></span> | <span data-ttu-id="6632d-165">Tipo</span><span class="sxs-lookup"><span data-stu-id="6632d-165">Type</span></span>   |<span data-ttu-id="6632d-166">Descrição</span><span class="sxs-lookup"><span data-stu-id="6632d-166">Description</span></span>|
 |:---------------|:--------|:----------|
-|axes|[ChartAxes](chartaxes.md)|Representa os eixos de um gráfico. Somente leitura.|
-|dataLabels|[ChartDataLabels](chartdatalabels.md)|Representa os rótulos de dados no gráfico. Somente leitura.|
-|format|[ChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
-|legend|[ChartLegend](chartlegend.md)|Representa a legenda do gráfico. Somente leitura.|
-|series|Coleção [ChartSeries](chartseries.md)|Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.|
-|title|[ChartTitle](charttitle.md)|Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.|
-|planilha|[Worksheet](worksheet.md)|A planilha que contém o gráfico atual. Somente leitura.|
+|<span data-ttu-id="6632d-167">eixos</span><span class="sxs-lookup"><span data-stu-id="6632d-167">axes</span></span>|[<span data-ttu-id="6632d-168">WorkbookChartAxes</span><span class="sxs-lookup"><span data-stu-id="6632d-168">WorkbookChartAxes</span></span>](chartaxes.md)|<span data-ttu-id="6632d-p102">Representa os eixos de um gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p102">Represents chart axes. Read-only.</span></span>|
+|<span data-ttu-id="6632d-171">dataLabels</span><span class="sxs-lookup"><span data-stu-id="6632d-171">dataLabels</span></span>|[<span data-ttu-id="6632d-172">WorkbookChartDataLabels</span><span class="sxs-lookup"><span data-stu-id="6632d-172">WorkbookChartDataLabels</span></span>](chartdatalabels.md)|<span data-ttu-id="6632d-p103">Representa os rótulos de dados no gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p103">Represents the datalabels on the chart. Read-only.</span></span>|
+|<span data-ttu-id="6632d-175">formato</span><span class="sxs-lookup"><span data-stu-id="6632d-175">format</span></span>|[<span data-ttu-id="6632d-176">WorkbookChartAreaFormat</span><span class="sxs-lookup"><span data-stu-id="6632d-176">WorkbookChartAreaFormat</span></span>](chartareaformat.md)|<span data-ttu-id="6632d-p104">Encapsula as propriedades de formato da área do gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p104">Encapsulates the format properties for the chart area. Read-only.</span></span>|
+|<span data-ttu-id="6632d-179">legenda</span><span class="sxs-lookup"><span data-stu-id="6632d-179">legend</span></span>|[<span data-ttu-id="6632d-180">WorkbookChartLegend</span><span class="sxs-lookup"><span data-stu-id="6632d-180">WorkbookChartLegend</span></span>](chartlegend.md)|<span data-ttu-id="6632d-p105">Representa a legenda do gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p105">Represents the legend for the chart. Read-only.</span></span>|
+|<span data-ttu-id="6632d-183">série</span><span class="sxs-lookup"><span data-stu-id="6632d-183">series</span></span>|<span data-ttu-id="6632d-184">Coleção [WorkbookChartSeries](chartseries.md)</span><span class="sxs-lookup"><span data-stu-id="6632d-184">[WorkbookChartSeries](chartseries.md) collection</span></span>|<span data-ttu-id="6632d-p106">Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p106">Represents either a single series or collection of series in the chart. Read-only.</span></span>|
+|<span data-ttu-id="6632d-187">título</span><span class="sxs-lookup"><span data-stu-id="6632d-187">title</span></span>|[<span data-ttu-id="6632d-188">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="6632d-188">WorkbookChartTitle</span></span>](charttitle.md)|<span data-ttu-id="6632d-p107">Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p107">Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.</span></span>|
+|<span data-ttu-id="6632d-191">planilha</span><span class="sxs-lookup"><span data-stu-id="6632d-191">worksheet</span></span>|[<span data-ttu-id="6632d-192">WorkbookWorksheet</span><span class="sxs-lookup"><span data-stu-id="6632d-192">WorkbookWorksheet</span></span>](worksheet.md)|<span data-ttu-id="6632d-p108">A planilha que contém o gráfico atual. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6632d-p108">The worksheet containing the current chart. Read-only.</span></span>|
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="6632d-195">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6632d-195">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+<span data-ttu-id="6632d-196">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6632d-196">Here is a JSON representation of the resource.</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chart"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChart"
 }-->
 
 ```json
