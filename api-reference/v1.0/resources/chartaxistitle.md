@@ -7,36 +7,36 @@ Representa o título de um eixo do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |Recupere as propriedades e os relacionamentos do objeto chartAxisTitle.|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)    |Atualize o objeto ChartAxisTitle. |
+|[Obter ChartAxisTitle](../api/chartaxistitle_get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Recupere as propriedades e os relacionamentos do objeto chartAxisTitle.|
+|[Atualizar](../api/chartaxistitle_update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |Atualize o objeto ChartAxisTitle. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|texto|string|Representa o título do eixo.|
-|visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
+|texto|sequência de caracteres|Representa o título do eixo.|
+|visível|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartAxisTitleFormat](chartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|
+|formato|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
 }
 
 ```

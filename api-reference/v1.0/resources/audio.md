@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: "Áudio"
-ms.openlocfilehash: 43b9999ecfb472a82e00a12ca820fdf8548eec64
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+title: Áudio
+ms.openlocfilehash: e68b70565f0eccd7847fba2b8085661071a75ae7
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266230"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 
 O recurso **Audio** agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item representará um arquivo de áudio.
-As propriedades do recurso **Audio** são preenchidas extraindo-se os metadados do arquivo. 
+Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item representará um arquivo de áudio. As propriedades do recurso **Áudio** são preenchidas extraindo-se os metadados do arquivo. 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,11 +47,11 @@ As propriedades do recurso **Audio** são preenchidas extraindo-se os metadados 
 | **album**             | string  | O título do álbum deste arquivo de áudio.                          |
 | **albumArtist**       | string  | Artista nomeado no álbum para o arquivo de áudio.                    |
 | **artist**            | string  | O artista do arquivo de áudio.                            |
-| **bitrate**           | Int32   | Taxa de bits expressa em kbps.                                           |
+| **bitrate**           | Int64   | Taxa de bits expressa em kbps.                                           |
 | **composers**         | string  | O nome do compositor do arquivo de áudio.                          |
 | **copyright**         | string  | Informações de direitos autorais para o arquivo de áudio.                            |
-| **disc**              | Int32   | O número do disco do qual este arquivo de áudio é proveniente.                    |
-| **discCount**         | Int32   | O número total de discos neste álbum.                             |
+| **disc**              | Int16   | O número do disco de origem deste arquivo de áudio.                    |
+| **discCount**         | Int16   | O número total de discos neste álbum.                             |
 | **duration**          | Int64   | Duração do arquivo de áudio, expressa em milissegundos                |
 | **genre**             | string  | O gênero deste arquivo de áudio.                                        |
 | **hasDrm**            | booliano | Indica se o arquivo está protegido com o gerenciamento de direitos digitais.   |

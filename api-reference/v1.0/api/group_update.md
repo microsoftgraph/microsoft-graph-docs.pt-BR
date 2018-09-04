@@ -1,7 +1,9 @@
 # <a name="update-group"></a>Atualizar grupo
+
 Atualizar as propriedades de um objeto group.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -13,6 +15,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /groups/{id}
 ```
@@ -21,40 +24,43 @@ PATCH /groups/{id}
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade     | Tipo   |Descrição|
+| Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|O padrão é **false**. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
-|autoSubscribeNewMembers|Boolean|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email.|
-|description|String|Uma descrição opcional para o grupo. |
-|displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
+|allowExternalSenders|Booleano|O padrão é **false**. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
+|autoSubscribeNewMembers|Booleano|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email.|
+|description|Sequência de caracteres|Uma descrição opcional para o grupo. |
+|displayName|Sequência de caracteres|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |groupTypes|Coleção de cadeias de caracteres|Especifica o tipo de grupo a ser criado. Os valores possíveis são **Unified** para criar um grupo do Office 365 ou **DynamicMembership** para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade.|
-|mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
-|mailNickname|String|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter.|
-|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
-|visibilidade|Boolean|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Private**, **Public** ou vazio (que é interpretado como **Public**).|
+|mailEnabled|Booleano|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
+|mailNickname|Sequência de caracteres|O alias de email do grupo. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter.|
+|securityEnabled|Booleano|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
+|visibilidade|Sequência de caracteres|Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: **Private**, **Public**, ou em branco (que será interpretado como **Public**).|
 
-**Observação**
-
-- Você pode atualizar o **autoSubscribeNewMembers** especificando-o em sua própria solicitação PATCH, sem incluir as demais propriedades na tabela acima.
-- Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes).
+> **Observação:**
+>
+> - Você pode atualizar o **autoSubscribeNewMembers** especificando-o em sua própria solicitação PATCH, sem incluir as demais propriedades na tabela acima.
+> - Apenas um subconjunto da API de grupo relacionado à administração do grupo principal e ao aplicativo de suporte para gerenciamento às permissões delegadas. Todos os outros membros da API do grupo, inclusive a atualização **autoSubscribeNewMembers**, dão suporte apenas a permissões delegadas. Confira exemplos nos [problemas conhecidos](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes).
 
 ## <a name="response"></a>Resposta
+
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
 #### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
   "name": "update_group"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
 Content-type: application/json
@@ -73,13 +79,15 @@ Content-length: 211
 ```
 
 #### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

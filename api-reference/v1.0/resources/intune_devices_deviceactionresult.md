@@ -7,7 +7,7 @@ Resultado de ação de dispositivo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação|
-|actionState|Cadeia de caracteres|Estado da ação Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado da ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora em que a ação foi iniciada|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação|
 
@@ -15,12 +15,10 @@ Resultado de ação de dispositivo
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceActionResult"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceActionResult",

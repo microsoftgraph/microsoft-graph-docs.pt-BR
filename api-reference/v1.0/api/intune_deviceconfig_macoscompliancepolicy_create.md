@@ -1,6 +1,6 @@
 # <a name="create-macoscompliancepolicy"></a>Criar macOSCompliancePolicy
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Cria um novo objeto [macOSCompliancePolicy](../resources/intune_deviceconfig_macoscompliancepolicy.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ POST /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; obrigatório.|
-|Accept|application/json|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto macOSCompliancePolicy.
@@ -40,20 +40,23 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSComplianceP
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md)|
-|passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
+|passwordRequired|Booleano|Se uma senha deve ou não ser exigida.|
 |passwordBlockSimple|Booliano|Indica se senhas simples devem ou não ser bloqueadas.|
-|passwordExpirationDays|Int32|Número de dias antes que a senha expire. Valores válidos de 1 a 65535|
+|passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 65535|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha. Valores válidos de 4 a 14|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 1 a 24|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
-|passwordRequiredType|Cadeia de caracteres|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |osMinimumVersion|Cadeia de caracteres|Versão mínima do IOS.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do iOS.|
 |systemIntegrityProtectionEnabled|Booliano|Exige que dispositivos tenham habilitado a proteção de integridade do sistema.|
-|deviceThreatProtectionEnabled|Booliano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
-|deviceThreatProtectionRequiredSecurityLevel|Cadeia de caracteres|Exige o nível mínimo de risco de Proteção contra Ameaças Móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionEnabled|Booleano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra ameaças móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Mac OS.|
+|firewallEnabled|Booleano|Se o firewall deve ser habilitado ou não.|
+|firewallBlockAllIncoming|Booleano|Corresponde à opção "Bloquear todas as conexões de entrada".|
+|firewallEnableStealthMode|Booleano|Corresponde à "Habilitar modo furtivo".|
 
 
 
@@ -66,7 +69,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 810
+Content-length: 913
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -87,7 +90,10 @@ Content-length: 810
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": true,
+  "firewallEnableStealthMode": true
 }
 ```
 
@@ -96,7 +102,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 918
+Content-Length: 1021
 
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -119,7 +125,10 @@ Content-Length: 918
   "systemIntegrityProtectionEnabled": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "storageRequireEncryption": true
+  "storageRequireEncryption": true,
+  "firewallEnabled": true,
+  "firewallBlockAllIncoming": true,
+  "firewallEnableStealthMode": true
 }
 ```
 

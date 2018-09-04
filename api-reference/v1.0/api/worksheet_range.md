@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/Range
+GET /workbook/worksheets/{id|name}/range
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -22,12 +22,11 @@ POST /workbook/worksheets/{id|name}/Range
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
+## <a name="function-parameters"></a>Parâmetros de função
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|string|Opcional. O endereço ou nome do intervalo. Caso não seja especificado, todo o intervalo da planilha será retornado.|
+|address|sequência de caracteres|Opcional. O endereço ou nome do intervalo. Caso não seja especificado, todo o intervalo da planilha será retornado.|
 
 ## <a name="response"></a>Resposta
 
@@ -42,13 +41,7 @@ Este é um exemplo da solicitação.
   "name": "worksheet_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/Range
-Content-type: application/json
-Content-length: 32
-
-{
-  "address": "address-value"
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='A1:B2')
 ```
 
 ##### <a name="response"></a>Resposta
@@ -56,7 +49,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -72,6 +65,41 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+Se o parâmetro opcional `address` não for especificado, essa função retorna o intervalo inteiro da planilha.
+
+##### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "worksheet_range_noaddress"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
+```
+
+##### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 99,
+  "columnCount": 99,
+  "columnIndex": 99,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

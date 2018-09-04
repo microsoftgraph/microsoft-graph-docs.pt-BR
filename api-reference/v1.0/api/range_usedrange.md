@@ -13,9 +13,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/UsedRange
-GET /workbook/worksheets/{id|name}/range(address='<address>')/UsedRange
-GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
+GET /workbook/names/{name}/range/usedRange
+GET /workbook/worksheets/{id|name}/range(address='<address>')/usedRange
+GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -24,9 +24,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/UsedRange
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
-## <a name="request-body"></a>Corpo da solicitação
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
-
+## <a name="path-parameters"></a>Parâmetros do caminho
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |valuesOnly|booliano|Opcional. Considera apenas as células com valores como células usadas.|
@@ -39,18 +37,13 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "range_usedrange"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/UsedRange
-Content-type: application/json
-Content-length: 24
-
-{
-  "valuesOnly": true
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange
 ```
 
 ##### <a name="response"></a>Resposta
@@ -58,7 +51,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -74,6 +67,42 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+
+Aqui está um exemplo especificando o parâmetro `valuesOnly` opcional.
+
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "range_usedrange_valuesonly"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
+```
+
+##### <a name="response"></a>Resposta
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRange"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 169
+
+{
+  "address": "address-value",
+  "addressLocal": "addressLocal-value",
+  "cellCount": 90,
+  "columnCount": 90,
+  "columnIndex": 90,
+  "valueTypes": "valueTypes-value"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

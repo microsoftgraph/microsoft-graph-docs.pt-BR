@@ -13,8 +13,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/ItemAt
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/ItemAt
+POST /workbook/tables/{id|name}/columns/itemAt
+POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/itemAt
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -28,28 +28,30 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|index|number|Valor de índice do objeto a ser recuperado. Indexados com zero.|
+|índice|Int32|Valor de índice do objeto a ser recuperado. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [TableColumn](../resources/tablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "tablecolumncollection_itemat"
+  "isComposable": true,
+  "name": "tablecolumncollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.tablecolumncollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/ItemAt
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt
 Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 3
 }
 ```
 
@@ -58,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK

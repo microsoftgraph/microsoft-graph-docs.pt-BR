@@ -7,13 +7,13 @@ Os tamanhos de fotos em HD compatíveis com o Exchange Online são os seguintes:
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Obtenha a **profilePhoto** especificada ou seus metadados (propriedades de profilePhoto).|
-|[Update](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Atribua uma foto para o usuário, grupo ou contato especificado. A foto deve estar em formato binário. Ela substitui a foto existente, se houver.|
+|[Obter profilePhoto](../api/profilephoto_get.md) | [profilePhoto](profilephoto.md) |Obtenha a **profilePhoto** especificada ou seus metadados (propriedades de profilePhoto).|
+|[Atualizar](../api/profilephoto_update.md) | [profilePhoto](profilephoto.md)  |Atribua uma foto para o usuário, grupo ou contato especificado. A foto deve estar em formato binário. Ela substitui a foto existente, se houver.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres|Somente leitura.|
+|id|sequência de caracteres|Somente leitura.|
 |height|int32|A altura da foto. Somente leitura.|
 |width|int32|A largura da foto. Somente leitura.|
 
@@ -25,11 +25,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->

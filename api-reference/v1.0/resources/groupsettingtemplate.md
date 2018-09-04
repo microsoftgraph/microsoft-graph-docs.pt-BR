@@ -13,9 +13,9 @@ Os modelos de configuração de grupo representam configurações definidas pelo
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|String| Descrição do modelo. |
-|displayName|String| Nome para exibição do modelo |
-|id|String| O identificador exclusivo do modelo. Somente leitura.|
+|descrição|Sequência de caracteres| Descrição do modelo. |
+|displayName|Sequência de caracteres| Nome para exibição do modelo |
+|id|Sequência de caracteres| O identificador exclusivo do modelo. Somente leitura.|
 |values|Conjunto [settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações disponíveis, padrões e tipos que compõem este modelo. |
 
 ## <a name="relationships"></a>Relações
@@ -27,11 +27,12 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
   "@odata.type": "microsoft.graph.groupSettingTemplate"
 }-->
 

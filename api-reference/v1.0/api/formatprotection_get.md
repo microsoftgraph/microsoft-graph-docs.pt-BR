@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/format/protection
+GET /workbook/names/{name}/range/format/protection
 GET /workbook/worksheets/{id|name}/range(<address>)/format/protection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
@@ -40,14 +40,14 @@ Este é um exemplo da solicitação.
   "name": "get_formatprotection"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/format/protection
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.formatProtection"
+  "@odata.type": "microsoft.graph.workbookFormatProtection"
 } -->
 ```http
 HTTP/1.1 200 OK
