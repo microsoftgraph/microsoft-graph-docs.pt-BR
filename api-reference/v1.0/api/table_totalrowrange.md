@@ -13,8 +13,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/TotalRowRange
-POST /workbook/worksheets/{id|name}/tables/{id|name}/TotalRowRange
+POST /workbook/tables/{id|name}/totalRowRange
+POST /workbook/worksheets/{id|name}/tables/{id|name}/totalRowRange
 
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -33,12 +33,14 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-<!-- {
+<!--{
   "blockType": "request",
-  "name": "table_totalrowrange"
+  "isComposable": true,
+  "name": "table_totalrowrange",
+  "idempotent": true
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/TotalRowRange
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/totalRowRange
 ```
 
 ##### <a name="response"></a>Resposta
@@ -46,7 +48,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

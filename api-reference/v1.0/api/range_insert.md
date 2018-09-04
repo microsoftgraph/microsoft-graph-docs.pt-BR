@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names(<name>)/range/insert
+POST /workbook/names/{name}/range/insert
 POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
@@ -29,7 +29,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|shift|string|Especifica como deslocar as células.  Os valores possíveis são: `Down` e `Right`.|
+|shift|sequência de caracteres|Especifica como deslocar as células.  Os valores possíveis são: `Down`, `Right`.|
 
 ## <a name="response"></a>Resposta
 
@@ -44,7 +44,7 @@ Este é um exemplo da solicitação.
   "name": "range_insert"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names(<name>)/range/insert
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/insert
 Content-type: application/json
 Content-length: 28
 
@@ -58,7 +58,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

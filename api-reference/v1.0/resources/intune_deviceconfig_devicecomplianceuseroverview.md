@@ -14,7 +14,7 @@ Ainda não documentado
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |pendingCount|Int32|Número de usuários pendentes|
-|notApplicableCount|Int32|Número de dispositivos não aplicáveis|
+|notApplicableCount|Int32|Número de usuários não aplicáveis|
 |successCount|Int32|Número de usuários bem-sucedidos|
 |errorCount|Int32|Número de usuários com erro|
 |failedCount|Int32|Número de usuários com falhas|
@@ -25,12 +25,12 @@ Ainda não documentado
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceComplianceUserOverview"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",

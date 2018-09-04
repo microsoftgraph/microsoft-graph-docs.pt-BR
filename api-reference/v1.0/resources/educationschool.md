@@ -23,8 +23,8 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 |id|Cadeia de caracteres|GUID desta escola.|
 |displayName| Cadeia de caracteres| Nome de exibição da escola.| 
 |description| Cadeia de caracteres | Descrição da escola.| 
-|status| cadeia de caracteres| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| cadeia de caracteres| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
+|status| sequência de caracteres| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
+|externalSource| educationExternalSource| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| Cadeia de caracteres| Endereço de email da entidade de segurança.|
 |principalName| Cadeia de caracteres | Nome da entidade de segurança.|
 |externalPrincipalId| Cadeia de caracteres | ID da entidade de segurança no sistema de sincronização. |
@@ -37,7 +37,6 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 |address|[physicalAddress](physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](identityset.md)|Entidade que criou a escola.|
 
-
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -48,11 +47,10 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.educationOrganization",
   "@odata.type": "microsoft.graph.educationSchool"
 }-->
 

@@ -33,11 +33,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |surname| Cadeia de caracteres | Sobrenome do usuário|
 |mail| Cadeia de caracteres| endereço de email|
 |mobilePhone| Cadeia de caracteres | O número de celular do usuário |
-|externalSource|cadeia de caracteres| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|cadeia de caracteres| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|sequência de caracteres| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|sequência de caracteres| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço de email do usuário.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
-|primaryRole|cadeia de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
+|primaryRole|sequência de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma classe individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
 |teacher|[educationTeacher](../resources/educationteacher.md)| Se a função principal for professor, esse bloco conterá dados específicos do professor.|
 
@@ -52,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "update_educationuser"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/users/13020
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
 Content-type: application/json
 Content-length: 508
 
@@ -97,7 +97,7 @@ Content-length: 508
         "state": "CA",
         "street": "12345 Main St."
       },
-  "primaryRole": "string",
+  "primaryRole": "student",
   "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -106,7 +106,6 @@ Content-length: 508
         "street": "12345 Main St."
       },
   "student": {
-      "primaryRole": "student",
       "externalId": "13005",
       "birthDate": "2001-01-01T00:00:00Z"
     }
