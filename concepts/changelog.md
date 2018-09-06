@@ -2,9 +2,17 @@
 
 Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
-Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known_issues.md).
+Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [Problemas conhecidos](known_issues.md).
 
 ## <a name="august-2018"></a>Agosto de 2018
+
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Propriedade [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) adicionada para entidades de [User](../api-reference/v1.0/resources/user.md) e [Group](../api-reference/v1.0/resources/group.md) que representa os erros de sincronização de diretório durante a sincronização de diretórios no local com o Active Directory do Azure ao usar o produto de sincronização da Microsoft (incluindo Azure AD Connect, DirSync e MIM + Connector).|
+| Adição | v1.0 | Propriedade [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) adicionada à entidade de [User](../api-reference/v1.0/resources/user.md) que contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é administrado no Active Directory local e sincronizado com o Azure AD, e é somente para leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é false), essas propriedades podem ser definidas durante a criação ou atualização.|
+|Adição|v1.0|A propriedade **onPremisesDomainName** foi adicionada à entidade [User](../api-reference/v1.0/resources/user.md)|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 
@@ -16,7 +24,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A ação [uploadDepToken](../api-reference/beta/api/intune_enrollment_deponboardingsetting_uploaddeptoken.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A ação [syncWithAppleDeviceEnrollmentProgram](../api-reference/beta/api/intune_enrollment_deponboardingsetting_syncwithappledeviceenrollmentprogram.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A ação [setDefaultProfile](../api-reference/beta/api/intune_enrollment_enrollmentprofile_setdefaultprofile.md.md) foi adicionada em [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
-|Adição|beta|A ação**importAppleDeviceIdentityList** foi adicionada na coleção [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md) |
+|Adição|beta|A ação **importAppleDeviceIdentityList** foi adicionada na coleção [importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md) |
 |Adição|beta|A ação [updateDeviceProfileAssignment](../api-reference/beta/api/intune_enrollment_enrollmentprofile_updatedeviceprofileassignment.md.md) foi adicionada em [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
 |Adição|beta|A ação [shareForSchoolDataSyncService](../api-reference/beta/api/intune_enrollment_deponboardingsetting_shareforschooldatasyncservice.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A ação [unshareForSchoolDataSyncService](../api-reference/beta/api/intune_enrollment_deponboardingsetting_unshareforschooldatasyncservice.md.md) foi adicionada em [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
@@ -28,7 +36,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A função [autopilotDeviceStream](../api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_autopilotdevicestream.md.md) foi adicionada em [importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) |
 |Exclusão|beta|A coleção **uploadDepToken** foi excluída |
 |Exclusão|beta|A ação **syncWithAppleDeviceEnrollmentProgram** foi excluída da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
-|Exclusão|beta|A função**getEncryptionPublicKey** foi excluída da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Exclusão|beta|A função**getEncryptionPublicKey** foi removida da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)|
 |Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e**vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)|
 |Exclusão|beta|A propriedade **packageName** foi removida da entidade [androidForWorkMobileAppConfiguration](../api-reference/beta/resources/intune_apps_androidforworkmobileappconfiguration.md)|
@@ -85,7 +93,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | v1.0        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) foi adicionado para obter quaisquer dicas de e-mail para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
+| Adição        | v1.0        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) foi adicionado para obter quaisquer Dicas de Email para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
 
 ### <a name="security-apis"></a>APIs de segurança
 
@@ -126,7 +134,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
 |Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
 |Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Adição|beta|Adicionada [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+|Adição|beta|Adicionada a [Obter resposta para uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
 
 ### <a name="synchronization-apis"></a>APIs de sincronização
 
@@ -144,11 +152,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Adição|beta|Adicionado o suporte a permissões do aplicativo a [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
+|Adição|beta|Adicionado o suporte a permissões do aplicativo para [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
 |Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
 |Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Adição|beta|Adicionada a [API Obter resposta a mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
+|Adição|beta|Adicionada a [Obter resposta para uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
 |Adição|beta|Adicionado o tipo de recurso [Anexo de chat](../api-reference/beta/resources/chatattachment.md)|
 |Adição|beta|Adicionado o tipo de recurso [Menção a chat](../api-reference/beta/resources/chatattachment.md)|
 |Adição|beta|Adicionado o tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md)|
@@ -259,7 +267,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | A entidade [governanceSubject](../api-reference/beta/resources/governancesubject.md) foi adicionada.|
 | Adição | beta | A entidade [governanceRoleDefinition](../api-reference/beta/resources/governanceroledefinition.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroledefinition_list.md) <br> [Obter](../api-reference/beta/api/governanceroledefinition_get.md) |
 | Adição | beta | A entidade [governanceRoleAssignment](../api-reference/beta/resources/governanceroleassignment.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroleassignment_list.md) <br> [Obter](../api-reference/beta/api/governanceroleassignment_get.md) <br> [Exportar](../api-reference/beta/api/governanceroleassignment_export.md) |
-| Adição | beta | A entidade [governanceRoleAssignmentRequest](../api-reference/beta/resources/governanceroleassignmentrequest.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroleassignmentrequest_list.md) <br> [Obter](../api-reference/beta/api/governanceroleassignmentrequest_get.md) <br> [Create](../api-reference/beta/api/governanceroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/governanceroleassignmentrequest_cancel.md) <br> [Atualizar](../api-reference/beta/api/governanceroleassignmentrequest_update.md) |
+| Adição | beta | A entidade [governanceRoleAssignmentRequest](../api-reference/beta/resources/governanceroleassignmentrequest.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governanceroleassignmentrequest_list.md) <br> [Obter](../api-reference/beta/api/governanceroleassignmentrequest_get.md) <br> [Criar](../api-reference/beta/api/governanceroleassignmentrequest_post.md) <br> [Cancelar](../api-reference/beta/api/governanceroleassignmentrequest_cancel.md) <br> [Atualizar](../api-reference/beta/api/governanceroleassignmentrequest_update.md) |
 | Adição | beta | A entidade [governanceRoleSetting](../api-reference/beta/resources/governancerolesetting.md) e os seguintes métodos e ações foram adicionados:<br> [Lista](../api-reference/beta/api/governancerolesetting_list.md) <br> [Obter](../api-reference/beta/api/governancerolesetting_get.md) <br> [Atualizar](../api-reference/beta/api/governancerolesetting_update.md) |
 | Adição | beta | Os seguintes tipos complexos foram adicionados: <br> [governancePermission](../api-reference/beta/resources/governancepermission.md) <br> [governanceRoleAssignmentRequestStatus](../api-reference/beta/resources/governanceroleassignmentrequeststatus.md) <br> [governanceRuleSetting](../api-reference/beta/resources/governancerulesetting.md) <br> [governanceSchedule](../api-reference/beta/resources/governanceschedule.md)|
 
@@ -1926,7 +1934,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Estenda o Microsoft Graph com dados de aplicativos usando [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Isso é suportado nos seguintes recursos:<br/>unidade administrativa<br/>evento de calendário<br/>dispositivo<br/>grupo<br/>mensagem<br/>organização<br/>contato pessoal<br/>postagem<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados a grupos usando Extensões do Esquema (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups) |
+| Adição        | Beta        | Estenda o Microsoft Graph com dados de aplicativos usando [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Isso é suportado nos seguintes recursos:<br/>unidade administrativa<br/>evento de calendário<br/>dispositivo<br/>group<br/>message<br/>organização<br/>contato pessoal<br/>postagem<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados a grupos usando Extensões do Esquema (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups) |
 | Adição        | Beta        | Foi fornecido uma maneira alternativa de criar uma definição de extensão do esquema sem a necessidade de um domínio personalizado .com verificado. Confira [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview) para obter detalhes. |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Adicionar dados personalizados ao Microsoft Graph usando extensões abertas
@@ -1934,7 +1942,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | As "extensões de dados do Office 365" anteriores foram renomeadas como "abrir extensões". |
-| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>Unidade administrativa<br/>dispositivo<br/>grupo<br/>organização<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
+| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>Unidade administrativa<br/>dispositivo<br/>group<br/>organização<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -2161,7 +2169,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | v1.0        | Foi adicionado o tipo complexo [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings), que inclui as propriedades **automaticRepliesSetting**, **timeZone** e **language**. |
 | Adição        | v1.0        | A propriedade **mailboxSettings** foi adicionada ao recurso [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
 | Adição        | Beta        | Foi adicionado o suporte para criar, listar, obter e excluir uma ou mais instâncias de [mencionar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention) em uma mensagem. As menções dão suporte a chamadas para chamar a atenção dos outros usuários em uma mensagem. |
-| Adição        | Beta        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) foi adicionado para obter quaisquer dicas de e-mail para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/beta/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/beta/resources/mailtips.md), [mailTipsError](../api-reference/beta/resources/mailtipserror.md). |
+| Adição        | Beta        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) foi adicionado para obter quaisquer Dicas de Email para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/beta/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/beta/resources/mailtips.md), [mailTipsError](../api-reference/beta/resources/mailtipserror.md). |
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
