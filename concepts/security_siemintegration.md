@@ -1,6 +1,6 @@
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Integração dos alertas da API de segurança do Microsoft Graph com seu SIEM usando o Azure Monitor
 
-A API de segurança do Microsoft Graph permite gerenciar alertas de segurança de todos os produtos de segurança da Microsoft, conhecidos como provedores, por meio de um único ponto de extremidade REST. Algumas organizações talvez já incluam dados de log específicos do Azure por meio do Azure Monitor nas soluções SIEM. Para simplificar a integração, os alertas de segurança disponíveis por meio da API de segurança do Microsoft Graph também podem ser configurados pelo cliente para sua assinatura via Azure Monitor. Se a organização já configurou a integração do Azure Monitor com a solução SIEM, é possível adicionar facilmente os alertas de segurança dela aos dados disponíveis pelo Azure Monitor. Este artigo apresentará as etapas de habilitação dessa integração.
+A API de segurança do Microsoft Graph permite gerenciar alertas de segurança de todos os produtos de segurança da Microsoft, conhecidos como provedores, por meio de um único ponto de extremidade REST. Algumas organizações talvez já incluam dados de log específicos do Azure por meio do Azure Monitor nas soluções SIEM. Para simplificar a integração, os alertas de segurança disponíveis por meio da API de segurança do Microsoft Graph também podem ser configurados pelo cliente para sua assinatura via Azure Monitor. Se a organização já configurou a integração do Azure Monitor com a solução SIEM, é possível adicionar facilmente os alertas de segurança dela aos dados disponíveis pelo Azure Monitor. Este artigo apresentará as etapas de habilitação desta integração.
 
 O Azure Monitor é compatível com conectores para vários produtos SIEM. Uma lista de produtos SIEM compatíveis pode ser encontrada em [Enviar dados de monitoramento para um hub de evento](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). As instruções nas etapas 1 e 2 deste artigo se referem a todos os conectores do Azure Monitor compatíveis com o consumo pelo hub de eventos. Este artigo descreve a integração de ponta a ponta do conector Splunk SIEM.
 
@@ -49,7 +49,7 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
 > **Observação:** Neste momento, a folha de configurações do Azure Monitor Diagnostic não permite a configuração de recursos no nível do locatário. Os alertas da API de segurança do Microsoft Graph são um recurso de nível de locatário que requerem o uso da API do Gerenciador de Recursos do Azure para configurar o Azure Monitor para suportar o consumo de alertas de segurança da sua organização.
 
 1. Em sua assinatura do Azure, registre o "microsoft.insights" (Azure Monitor) como provedor do recursos.  
-> **Observação:** Não registre "Microsoft.SecurityGraph" (API de segurança do Microsoft Graph) como um provedor de recursos na sua assinatura do Azure, pois o "Microsoft.SecurityGraph" é um recurso no nível de locatário, como explicado acima. A configuração de nível de locatário fará parte do nº 6 abaixo.
+> **Observação:** Não registre "Microsoft.SecurityGraph" (API de segurança do Microsoft Graph) como um provedor de recursos na sua assinatura do Azure, pois o "Microsoft.SecurityGraph" é um recurso no nível de locatário, como explicado acima. Configuração de nível de locatário fará parte do nº 6 abaixo.
 
 2. Para configurar o Azure Monitor usando a API Azure Resource Manager, obtenha a ferramenta [ARMClient](https://github.com/projectkudu/ARMClient). Ela será usada para enviar chamadas da API REST para o portal do Azure de uma linha de comando.
 
@@ -85,7 +85,7 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
 
      **"days":** é o número de dias pelos quais você deseja manter as mensagens no hub de eventos.
 
-4. Salve o arquivo como JSON no diretório onde você vai chamar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
+4. Salve o arquivo como JSON no diretório onde você vai usar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
 
 5. Execute o seguinte comando para entrar na ferramenta ARMClient. Você precisará usar credenciais da conta de Administrador Global.
 
@@ -109,7 +109,7 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>Etapa 3: baixar e instalar o complemento do Azure Monitor para o Splunk permitindo a este consumir alertas de segurança
 
 1. Essa integração só oferece suporte a implantações do Splunk Enterprise.
-2. Baixe e instale o [Complemento do Azure Monitor para o Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). Confira instruções detalhadas em [Instalação](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation). **Somente o Complemento do Azure Monitor para Splunk versão 1.2.9 ou superior é suportado.**
+2. Baixe e instale o [complemento do Azure Monitor para o Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). Confira instruções detalhadas em [Instalação](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation). **Somente o Complemento do Azure Monitor para Splunk versão 1.2.9 ou superior é suportado.**
 3. Depois de instalar o complemento, siga as etapas de configuração descritas em [Wiki de configuração de complementos do Azure Monitor](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk ) para configurar o Splunk.
 4. Conforme indicado nas instruções de instalação, o complemento funcionará fazendo um ciclo de habilitar/desabilitar na página Gerenciar aplicativos no Splunk Web. Ou reinicie o Splunk.
 
@@ -180,16 +180,16 @@ A última etapa para concluir o processo de configuração é definir as entrada
 
 ## <a name="optional-use-splunk-search-to-explore-data"></a>(Opcional) Use a pesquisa do Splunk para explorar dados
 
-Depois que você tiver configurado o plug-in do Splunk para o Azure Monitor, sua instância Splunk começará a recuperar eventos do hub de eventos configurado. Por padrão, o Splunk indexará cada propriedade do esquema de alertas de segurança do Graph para permitir a pesquisa.
+Depois que você tiver configurado o plug-in do Splunk para o Azure Monitor, sua instância Splunk começará a recuperar eventos do hub de eventos configurado. Por padrão, o Splunk indexará cada propriedade do esquema de alertas de segurança do Microsoft Graph para permitir a pesquisa.
 
-Para pesquisar por alertas de segurança do Graph, criar painéis ou para definir alertas do Splunk com sua consulta de pesquisa, navegue até aplicativos -> Aplicativo de consultas e relatórios no Splunk.
+Para pesquisar por alertas de segurança do Microsoft Graph, criar painéis ou definir alertas do Splunk com sua consulta de pesquisa, navegue até aplicativos -> Aplicativo de consultas e relatórios no Splunk.
 
 **Exemplos**:<br/>
 Experimente pesquisar alertas de segurança do Graph:
 
 - Digite `sourcetype="amdl:securitygraph:alert"` na barra de pesquisa para obter todos os alertas exibidos pela API de segurança do Graph. No lado direito, você verá as propriedades de nível superior do log do Azure Monitor onde os alertas de segurança do Graph estão abaixo do campo de propriedades.<br/>
 - No painel esquerdo, você verá campos selecionados e campos interessantes. Você pode usar os campos selecionados para criar painéis ou alertas do Splunk. Também é possível adicionar ou remover campos selecionados clicando neles com o botão direito.  
-> **Observação:** Como mostrado na consulta de pesquisa abaixo, você pode restringir sua pesquisa conforme necessário. No exemplo, filtramos os alertas de segurança do Graph por alertas de severidade alta da Central de Segurança do Azure. Usamos também `eventDatetime`, `severity`, `status` e `provider` como campos selecionados que serão exibidos. Para mais termos de pesquisa avançada, consulte [Tutoriais de pesquisa do Splunk](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
+> **Observação:** Como mostrado na consulta de pesquisa a seguir, você pode restringir sua pesquisa conforme necessário. No exemplo, filtramos os alertas de segurança do Graph por alertas de severidade alta da Central de Segurança do Azure. Usamos também `eventDatetime`, `severity`, `status` e `provider` como campos selecionados que serão exibidos. Para mais termos de pesquisa avançada, consulte [Tutoriais de pesquisa do Splunk](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
 
  ![splunk_search_query](../concepts/images/splunk_search_query.png)
 > Consulta de pesquisa: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
