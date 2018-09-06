@@ -1,8 +1,8 @@
-# <a name="integrate-security-api-alerts-with-your-siem-using-azure-monitor"></a>Integração dos alertas da API de segurança com o SIEM usando o Azure Monitor
+# <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Integração dos alertas da API de segurança do Microsoft Graph com seu SIEM usando o Azure Monitor
 
-A API de segurança do Microsoft Graph oferece a capacidade de gerenciar alertas de segurança de diversos produtos de segurança, conhecidos como provedores, por um único ponto de extremidade REST. Algumas organizações talvez já incluam dados de log específicos do Azure pelo Azure Monitor nas soluções SIEM. Para facilitar a integração, os alertas de segurança disponíveis na API REST também são disponibilizados no Azure Monitor. Se a organização já configurou a integração do Azure Monitor com a solução SIEM, é possível adicionar facilmente os alertas de segurança dela aos dados disponíveis pelo Azure Monitor. Este artigo apresentará as etapas de habilitação desta integração.
+A API de segurança do Microsoft Graph permite gerenciar alertas de segurança de todos os produtos de segurança da Microsoft, conhecidos como provedores, por meio de um único ponto de extremidade REST. Algumas organizações talvez já incluam dados de log específicos do Azure por meio do Azure Monitor nas soluções SIEM. Para simplificar a integração, os alertas de segurança disponíveis por meio da API de segurança do Microsoft Graph também podem ser configurados pelo cliente para sua assinatura via Azure Monitor. Se a organização já configurou a integração do Azure Monitor com a solução SIEM, é possível adicionar facilmente os alertas de segurança dela aos dados disponíveis pelo Azure Monitor. Este artigo apresentará as etapas de habilitação dessa integração.
 
-O Azure Monitor é compatível com diversos conectores SIEM de vários fornecedores. Confira uma lista parcial de ferramentas SIEM para os conectores de dados do Azure Monitor no artigo [Envio de dados de monitoramento a um hub de eventos](https://docs.microsoft.com/pt-BR/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). As instruções nas etapa 1 e 2 deste artigo são relevantes para todos os conectores do Azure Monitor compatíveis com o consumo pelo hub de eventos. Este artigo descreve a configuração de ponta a ponta do conector Splunk SIEM.
+O Azure Monitor é compatível com conectores para vários produtos SIEM. Uma lista de produtos SIEM compatíveis pode ser encontrada em [Enviar dados de monitoramento para um hub de evento](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). As instruções nas etapas 1 e 2 deste artigo se referem a todos os conectores do Azure Monitor compatíveis com o consumo pelo hub de eventos. Este artigo descreve a integração de ponta a ponta do conector Splunk SIEM.
 
 O processo de integração envolve as seguintes etapas:
 
@@ -26,7 +26,7 @@ Para começar, você precisa criar um namespace e um hub de eventos para o Hub d
 - Recomendamos o uso do grupo de consumidores padrão para o hub de eventos. Não é necessário criar outros grupos de consumidores ou usar um grupo de consumidores separado, a menos que você pretenda que duas ferramentas diferentes consumam os mesmos dados do mesmo hub de eventos.
 - Normalmente, as portas 5671 e 5672 devem estar abertas no computador que consome os dados do hub de eventos.
 
-Confira também as [Perguntas frequentes do Hub de Eventos do Azure](https://docs.microsoft.com/pt-BR/azure/event-hubs/event-hubs-faq).
+Confira também as [Perguntas frequentes do Hub de Eventos do Azure](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq).
 
 1. Faça logon no [portal do Azure](https://portal.azure.com/) e escolha **Criar um recurso** na parte superior esquerda da tela.
 
@@ -46,10 +46,10 @@ A habilitação do streaming dos alertas de segurança da organização pelo Azu
 
 Os alertas de segurança são dados altamente privilegiados, normalmente visíveis apenas pelas equipes de resposta de segurança e administradores globais de uma organização. Por esse motivo, as etapas necessárias para configurar a integração dos alertas de segurança do locatário com os sistemas SIEM exigem uma conta de Administrador Global do Azure AD. Essa conta só é necessária uma única vez, durante a instalação, para solicitação do envio dos alertas de segurança da sua organização ao Azure Monitor.
 
-> **Observação:** neste momento, a folha de configurações do Azure Monitor Diagnostic não permite a configuração de recursos no nível do locatário. Como os alertas da API de segurança são um recurso no nível do locatário, é preciso usar a API Azure Resource Manager na configuração do Azure Monitor para os alertas de segurança da organização.
+> **Observação:** Neste momento, a folha de configurações do Azure Monitor Diagnostic não permite a configuração de recursos no nível do locatário. Os alertas da API de segurança do Microsoft Graph são um recurso de nível de locatário que requerem o uso da API do Gerenciador de Recursos do Azure para configurar o Azure Monitor para suportar o consumo de alertas de segurança da sua organização.
 
 1. Em sua assinatura do Azure, registre o "microsoft.insights" (Azure Monitor) como provedor do recursos.  
-> **Observação:** não registre o "Microsoft.SecurityGraph" (Security Graph API) como um provedor de recursos em sua assinatura do Azure, pois o "Microsoft.SecurityGraph" é um provedor de nível de locatário. Configuração de nível de locatário fará parte do nº 6 abaixo. 
+> **Observação:** Não registre "Microsoft.SecurityGraph" (API de segurança do Microsoft Graph) como um provedor de recursos na sua assinatura do Azure, pois o "Microsoft.SecurityGraph" é um recurso no nível de locatário, como explicado acima. A configuração de nível de locatário fará parte do nº 6 abaixo.
 
 2. Para configurar o Azure Monitor usando a API Azure Resource Manager, obtenha a ferramenta [ARMClient](https://github.com/projectkudu/ARMClient). Ela será usada para enviar chamadas da API REST para o portal do Azure de uma linha de comando.
 
@@ -78,14 +78,14 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
     Substitua os valores no arquivo JSON da seguinte maneira:
 
      **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-     
-     **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-     
-     **EVENT_HUB_NAMESPACE** é o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-     
-     **"days":** 7 é o número de dias pelos quais você deseja manter as mensagens no hub de eventos.
 
-4. Salve o arquivo como JSON no diretório onde você vai usar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
+     **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
+
+     **EVENT_HUB_NAMESPACE** é o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
+
+     **"days":** é o número de dias pelos quais você deseja manter as mensagens no hub de eventos.
+
+4. Salve o arquivo como JSON no diretório onde você vai chamar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
 
 5. Execute o seguinte comando para entrar na ferramenta ARMClient. Você precisará usar credenciais da conta de Administrador Global.
 
@@ -108,25 +108,14 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
 
 ## <a name="step-3-download-and-install-the-azure-monitor-add-on-for-splunk-which-will-allow-splunk-to-consume-security-alerts"></a>Etapa 3: baixar e instalar o complemento do Azure Monitor para o Splunk permitindo a este consumir alertas de segurança
 
-1. Baixe o **Splunk Enterprise** ou use uma instalação existente do Splunk Enterprise.
-2. Baixe e instale o [complemento do Azure Monitor para o Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). Confira instruções detalhadas em [Instalação](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation).
-3. Uma etapa adicional é necessária porque o complemento do Azure Monitor para o Splunk foi criado antes dos alertas da API de segurança estarem disponíveis na integração com o Azure Monitor. Dois arquivos de configuração do Splunk precisam ser alterados para permitir que o Splunk entenda a nova categoria de log usada pela API de segurança do Azure Monitor e o nome do hub de eventos que você configurou para os alertas de segurança da organização.
-
-    a.  Abra o arquivo **logCategories.json** do caminho                 **\etc\apps\TA-Azure_Monitor\bin\app** no diretório de instalação do Splunk.
-   Acrescente a seguinte linha à lista de categorias de log padrão:  
-    `“MICROSOFT.SECURITYGRAPH/ALERT”: “_json”`  
-    Isso informa ao complemento do Azure Monitor para o Splunk o tipo de log a ser tratado como JSON.
-
-    b. Abra o arquivo **hubs.json** do caminho **\etc\apps\TA-Azure_Monitor\bin\app** no diretório de instalação do Splunk.  
-    Acrescente a seguinte linha à lista de hubs de eventos padrão:  
-    `“insights-logs-alert”: “tenantId”`  
-    Isso informa ao complemento do Azure Monitor para o Splunk o nome do hub de eventos e indica que a ID do recurso é a ID de locatário do Azure AD porque esses alertas de segurança são um recurso no nível do locatário. Altere o nome do hub de eventos (insights-logs-alert) aqui se tiver escolhido um nome personalizado para o hub de eventos durante o provisionamento anterior.
-
+1. Essa integração só oferece suporte a implantações do Splunk Enterprise.
+2. Baixe e instale o [Complemento do Azure Monitor para o Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). Confira instruções detalhadas em [Instalação](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation). **Somente o Complemento do Azure Monitor para Splunk versão 1.2.9 ou superior é suportado.**
+3. Depois de instalar o complemento, siga as etapas de configuração descritas em [Wiki de configuração de complementos do Azure Monitor](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk ) para configurar o Splunk.
 4. Conforme indicado nas instruções de instalação, o complemento funcionará fazendo um ciclo de habilitar/desabilitar na página Gerenciar aplicativos no Splunk Web. Ou reinicie o Splunk.
 
 ## <a name="step-4-register-an-application-with-your-tenant-azure-active-directory-which-splunk-will-use-to-read-from-the-event-hub"></a>Etapa 4: registrar um aplicativo no Azure Active Directory do locatário que o Splunk usará para a leitura do hub de eventos
 
-O Splunk precisa de um registro do aplicativo no Azure Active Directory da organização para obter as permissões e os segredos necessários para a leitura dos alertas de segurança do hub de eventos. Qualquer conta de usuário padrão no domínio pode registrar um aplicativo. 
+O Splunk precisa de um registro de aplicativo no Active Directory do Azure da sua organização para receber as permissões necessárias e credenciais de aplicativo requeridas para autenticar o hub de evento do Azure Monitor.
 
 1. No portal do Azure, acesse **Registro de aplicativos** e selecione **Novo registro de aplicativo**.
 
@@ -188,3 +177,30 @@ A última etapa para concluir o processo de configuração é definir as entrada
     ![azure monitor fields](../concepts/images/azure-monitor-fields.png)
 
 3. Selecione **Próximo** e comece a pesquisar os alertas de segurança da sua organização recebidos do Azure Monitor.
+
+## <a name="optional-use-splunk-search-to-explore-data"></a>(Opcional) Use a pesquisa do Splunk para explorar dados
+
+Depois que você tiver configurado o plug-in do Splunk para o Azure Monitor, sua instância Splunk começará a recuperar eventos do hub de eventos configurado. Por padrão, o Splunk indexará cada propriedade do esquema de alertas de segurança do Graph para permitir a pesquisa.
+
+Para pesquisar por alertas de segurança do Graph, criar painéis ou para definir alertas do Splunk com sua consulta de pesquisa, navegue até aplicativos -> Aplicativo de consultas e relatórios no Splunk.
+
+**Exemplos**:<br/>
+Experimente pesquisar alertas de segurança do Graph:
+
+- Digite `sourcetype="amdl:securitygraph:alert"` na barra de pesquisa para obter todos os alertas exibidos pela API de segurança do Graph. No lado direito, você verá as propriedades de nível superior do log do Azure Monitor onde os alertas de segurança do Graph estão abaixo do campo de propriedades.<br/>
+- No painel esquerdo, você verá campos selecionados e campos interessantes. Você pode usar os campos selecionados para criar painéis ou alertas do Splunk. Também é possível adicionar ou remover campos selecionados clicando neles com o botão direito.  
+> **Observação:** Como mostrado na consulta de pesquisa abaixo, você pode restringir sua pesquisa conforme necessário. No exemplo, filtramos os alertas de segurança do Graph por alertas de severidade alta da Central de Segurança do Azure. Usamos também `eventDatetime`, `severity`, `status` e `provider` como campos selecionados que serão exibidos. Para mais termos de pesquisa avançada, consulte [Tutoriais de pesquisa do Splunk](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
+
+ ![splunk_search_query](../concepts/images/splunk_search_query.png)
+> Consulta de pesquisa: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
+
+O Splunk também permite várias ações sobre os resultados da pesquisa usando a opção de menu "Salvar como" na parte superior direita da tela. Você pode criar relatórios, painéis ou alertas com base em seu filtro de pesquisa.
+A seguir está um exemplo de um painel com um fluxo de evento baseado na consulta anterior. Você pode adicionar um link para analisar cada evento acessando mais detalhes no site do Microsoft Graph. Consulte a [Documentação de análise do Splunk](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
+
+ ![splunk_search_results](../concepts/images/splunk_search_results.png)
+
+Ou você pode criar um painel, como um gráfico de linha do tempo:
+
+ ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
+
+Você pode consultar o [Tutorial de pesquisa e relatórios do Splunk](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) para obter mais detalhes.
