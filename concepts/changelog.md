@@ -2,7 +2,7 @@
 
 Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
-Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [Problemas conhecidos](known_issues.md).
+Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known_issues.md).
 
 ## <a name="august-2018"></a>Agosto de 2018
 
@@ -11,8 +11,8 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | v1.0 | Propriedade [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) adicionada para entidades de [User](../api-reference/v1.0/resources/user.md) e [Group](../api-reference/v1.0/resources/group.md) que representa os erros de sincronização de diretório durante a sincronização de diretórios no local com o Active Directory do Azure ao usar o produto de sincronização da Microsoft (incluindo Azure AD Connect, DirSync e MIM + Connector).|
-| Adição | v1.0 | Propriedade [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) adicionada à entidade de [User](../api-reference/v1.0/resources/user.md) que contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é administrado no Active Directory local e sincronizado com o Azure AD, e é somente para leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é false), essas propriedades podem ser definidas durante a criação ou atualização.|
-|Adição|v1.0|A propriedade **onPremisesDomainName** foi adicionada à entidade [User](../api-reference/v1.0/resources/user.md)|
+| Adição | v1.0 | Propriedade [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesextensionattributes.md) adicionada para entidade de [User](../api-reference/v1.0/resources/user.md) que contém quinze propriedades personalizadas do atributo de extensão. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é masterizado no Active Directory local e sincronizado ao Azure AD, sendo somente leitura. Para um usuário somente da nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser configuradas durante a criação ou atualização.|
+|Adição|v1.0|Propriedades **onPremisesDomainName**, **onPremisesSamAccountName** e **onPremisesUserPrincipalName** adicionadas à entidade de [User](../api-reference/v1.0/resources/user.md)|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 
@@ -35,10 +35,10 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A função [exportMobileConfig](../api-reference/beta/api/intune_enrollment_enrollmentprofile_exportmobileconfig.md.md) foi adicionada em [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
 |Adição|beta|A função [autopilotDeviceStream](../api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_autopilotdevicestream.md.md) foi adicionada em [importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) |
 |Exclusão|beta|A coleção **uploadDepToken** foi excluída |
-|Exclusão|beta|A ação **syncWithAppleDeviceEnrollmentProgram** foi excluída da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Exclusão|beta|A ação **syncWithAppleDeviceEnrollmentProgram** foi removida da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Exclusão|beta|A função**getEncryptionPublicKey** foi removida da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)|
-|Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e**vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)|
+|Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e **vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)|
 |Exclusão|beta|A propriedade **packageName** foi removida da entidade [androidForWorkMobileAppConfiguration](../api-reference/beta/resources/intune_apps_androidforworkmobileappconfiguration.md)|
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [androidWorkProfileCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)|
 |Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e **vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidWorkProfileGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)|
@@ -72,7 +72,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A propriedade **trustedServerCertificateNames** foi adicionada à entidade [windowsWifiEnterpriseEAPConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowswifienterpriseeapconfiguration.md)|
 |Adição|beta|Adicionadas as propriedades de navegação **defaultIosEnrollmentProfile**, **defaultMacOsEnrollmentProfile**, **enrollmentProfiles** e **importedAppleDeviceIdentities** à entidade [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md)|
 |Adição|beta|A propriedade de navegação **roleScopeTags** foi adicionada à entidade [deviceAndAppManagementRoleAssignment](../api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment.md)|
-|Adição|beta|As propriedades de navegação **advancedThreatProtectionOnboardingStateSummary**, **roleScopeTags** e**importedWindowsAutopilotDeviceIdentityUploads** foram adicionadas à entidade [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)|
+|Adição|beta|As propriedades de navegação **advancedThreatProtectionOnboardingStateSummary**, **roleScopeTags** e **importedWindowsAutopilotDeviceIdentityUploads** foram adicionadas à entidade [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md)|
 |Adição|beta|A propriedade **supportedDeviceTypes** foi adicionada ao tipo complexo[mobileAppIntentAndStateDetail](../api-reference/beta/resources/intune_troubleshooting_mobileappintentandstatedetail.md)|
 |Adição|beta|A propriedade **hideEscapeLink** foi adicionada ao tipo complexo [outOfBoxExperienceSettings](../api-reference/beta/resources/intune_enrollment_outofboxexperiencesettings.md)|
 |Adição|beta|Adicionados os membros **zscalerPrivateAccess**, **f5Access2018**, **citrixSso** e **paloAltoGlobalProtectV2** ao tipo enumerado [appleVpnConnectionType](../api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype.md)|
@@ -89,7 +89,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | Beta | A ação [getSchedule](../api-reference/beta/api/calendar_getschedule.md) e os tipos complexos [freeBusyError](../api-reference/beta/resources/freebusyerror.md), [scheduleInformation](../api-reference/beta/resources/scheduleinformation.md)e [scheduleItem](../api-reference/beta/resources/scheduleitem.md) foram adicionados para oferecer suporte a [obtendo as informações de disponibilidade para usuários, listas de distribuição e recursos para um determinado período de tempo](outlook-get-free-busy-schedule.md). |
 
-### <a name="outlook-mail"></a>Email do Outlook
+### <a name="outlook-mail"></a>E-mail do Outlook
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -130,11 +130,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Alteração|beta|Recurso [chatmessage](../api-reference/beta/resources/chatmessage.md) atualizado|
 |Adição|beta|Adicionado o tipo de recurso [Anexo de chat](../api-reference/beta/resources/chatattachment.md)|
 |Adição|beta|Adicionado o tipo de recurso [Menção a chat](../api-reference/beta/resources/chatattachment.md)|
-|Adição|beta|Adicionado o tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md)|
+|Adição|beta|O tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md) foi adicionado|
 |Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
 |Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
 |Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Adição|beta|Adicionada a [Obter resposta para uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
+|Adição|beta|[Obter resposta a uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) foi adicionado |
 
 ### <a name="synchronization-apis"></a>APIs de sincronização
 
@@ -143,7 +143,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | Beta | Adicionada a propriedade **progress** ao [sychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) para permitir que clientes monitorem o andamento de um trabalho de sincronização.|
 
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
+### <a name="application-and-serviceprincipal-api-changes"></a>Alterações de API de aplicativo e servicePrincipal
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -156,11 +156,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Adicionada a [API Obter todas as mensagens de canal](../api-reference/beta/api/channel_list_messages.md) |
 |Adição|beta|Adicionada a [API Obter mensagem do canal](../api-reference/beta/api/channel_get_message.md) |
 |Adição|beta|Adicionada a [API Obter todas as respostas a mensagens](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Adição|beta|Adicionada a [Obter resposta para uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) |
+|Adição|beta|[Obter resposta a uma API de mensagem](../api-reference/beta/api/channel_get_messagereply.md) foi adicionado |
 |Adição|beta|Adicionado o tipo de recurso [Anexo de chat](../api-reference/beta/resources/chatattachment.md)|
 |Adição|beta|Adicionado o tipo de recurso [Menção a chat](../api-reference/beta/resources/chatattachment.md)|
-|Adição|beta|Adicionado o tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md)|
-|Alteração|beta|Atualizado o recurso [Mensagem de chat](../api-reference/beta/resources/chatmessage.md))|
+|Adição|beta|O tipo de recurso [Reação a chat](../api-reference/beta/resources/chatattachment.md) foi adicionado|
+|Alteração|beta|O recurso [Mensagem de chat](../api-reference/beta/resources/chatmessage.md) foi adicionado|
 |Exclusão|beta|Removido DELETE /groups/{id}/team/channels/{id}, em vez disso use DELETE /teams/{id}/channels/{id}. |
 |Exclusão|beta|Removido GET /groups/{id}/team/channels/{id}, em vez disso use GET /teams/{id}/channels/{id}. |
 |Exclusão|beta|Removido PATCH /groups/{id}/team/channels/{id}, em vez disso use PATCH /teams/{id}/channels/{id}. |
@@ -307,7 +307,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) e os seguintes métodos e ações CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Obter](../api-reference/beta/api/bookingbusiness_get.md) <br> [Atualizar](../api-reference/beta/api/bookingbusiness_update.md) <br> [Excluir](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publish](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Unpublish](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](../api-reference/beta/resources/bookingbusiness.md) e os seguintes métodos e ações CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_bookingbusinesses.md) <br> [Obter](../api-reference/beta/api/bookingbusiness_get.md) <br> [Atualizar](../api-reference/beta/api/bookingbusiness_update.md) <br> [Excluir](../api-reference/beta/api/bookingbusiness_delete.md) <br> [Publicar](../api-reference/beta/api/bookingbusiness_publish.md) <br> [Cancelar publicação](../api-reference/beta/api/bookingbusiness_unpublish.md). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](../api-reference/beta/resources/bookingappointment.md) e os seguintes métodos e ação CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list_appointments.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_appointments.md) <br> [Obter](../api-reference/beta/api/bookingappointment_get.md) <br> [Atualizar](../api-reference/beta/api/bookingappointment_update.md) <br> [Excluir](../api-reference/beta/api/bookingappointment_delete.md) <br> [Cancelar](../api-reference/beta/api/bookingappointment_cancel.md). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](../api-reference/beta/resources/bookingcurrency.md) e os seguintes métodos: <br> [Lista](../api-reference/beta/api/bookingcurrency_list.md) <br> [Obter](../api-reference/beta/api/bookingcurrency_get.md). |
 | Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](../api-reference/beta/resources/bookingcustomer.md) e os seguintes métodos CRUD: <br> [Lista](../api-reference/beta/api/bookingbusiness_list_customers.md) <br> [Criar](../api-reference/beta/api/bookingbusiness_post_customers.md) <br> [Obter](../api-reference/beta/api/bookingcustomer_get.md) <br> [Atualizar](../api-reference/beta/api/bookingcustomer_update.md) <br> [Excluir](../api-reference/beta/api/bookingcustomer_delete.md).|
@@ -461,7 +461,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0          | Adição da propriedade **flag** à entidade [contact](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact). Adição do tipo complexo [followupFlag](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/followupflag) compartilhado.|
 
 
-### <a name="outlook-mail"></a>Email do Outlook
+### <a name="outlook-mail"></a>E-mail do Outlook
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1245,7 +1245,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | Esse aprimoramento do comportamento recai sobre a obtenção de uma pasta de contatos compartilhada ou do conteúdo dos contatos desta pasta quando um usuário compartilhar uma pasta de contatos com o usuário conectado ou delegar ou não sua caixa de correio ao usuário conectado. Nesses casos, um aplicativo poderá especificar a identificação desse usuário ou nome da entidade de segurança do usuário para [obter essa pasta de contatos compartilhada](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/contactfolder_get) ou [obter os contatos dessa pasta compartilhada](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_list_contacts), desde que o usuário conectado tenha fornecido permissões delegadas ao aplicativo. |
 
-### <a name="outlook-mail"></a>Email do Outlook
+### <a name="outlook-mail"></a>E-mail do Outlook
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1703,7 +1703,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | v1.0 e beta | Para **findMeetingTimes**, adicionou o novo valor de enumeração **unrestricted** que você especifica como a propriedade **activityDomain**, parte do parâmetro **timeConstraint**. Isso permite que **findMeetingTimes** procure os horários apropriados para o tipo de atividade que você está agendando. Confira detalhes na seção [corpo da solicitação](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_findmeetingtimes#request-body). |
 | Adição        | Beta          | Suporte para obter um corpo de **event** em um texto sem formatação, como alternativa ao formato HTML padrão. Confira os eventos [get](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_get) e [list](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_list_events) para obter detalhes. |
 
-### <a name="outlook-mail"></a>Email do Outlook
+### <a name="outlook-mail"></a>E-mail do Outlook
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1751,7 +1751,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | As APIs das unidades administrativas serão atualizadas na visualização (beta). O primeiro conjunto de alterações será aplicado em 3 de maio de 2017. As alterações incluem a seguinte renomeação de propriedade:<br />- Tipo complexo - **roleMemberInfo** para o tipo complexo **identity** da entidade scopedRoleMembership<br />- Propriedade de navegação - **scopedAdministratorOf** para **scopedRoleMemberOf** da entidade do usuário<br />- Propriedade de navegação - **scopedAdministrators** para **scopedRoleMembers** da entidade administrativeUnit<br />- Propriedade de navegação - **scopedAdministrators** para **scopedMembers** da entidade directoryRole |
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
+### <a name="application-and-serviceprincipal-api-changes"></a>Alterações de API de aplicativo e servicePrincipal
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2162,7 +2162,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | Beta        | A ação [forward](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/event_forward) foi adicionada ao recurso event. |
 | Adição        | Beta        | Foram adicionadas as propriedades ao recurso [calendar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/calendar) para dar suporte ao compartilhamento de calendários: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe** e **owner**. |
 
-### <a name="outlook-mail"></a>Email do Outlook
+### <a name="outlook-mail"></a>E-mail do Outlook
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
