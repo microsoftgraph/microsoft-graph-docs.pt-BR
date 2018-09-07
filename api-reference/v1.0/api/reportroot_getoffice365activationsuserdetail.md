@@ -47,6 +47,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Windows 10 Mobile
 - iOS
 - Android
+- Ativado em uma computador compartilhado
 
 ## <a name="example"></a>Exemplo
 
@@ -88,5 +89,5 @@ Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android
+Report Refresh Date,User Principal Name,Display Name,Product Type,Last Activated Date,Windows,Mac,Windows 10 Mobile,iOS,Android,Activated On Shared Computer
 ```
