@@ -1,23 +1,22 @@
-# <a name="mimecontent-resource-type"></a><span data-ttu-id="db6bc-101">Tipo de recurso mimeContent</span><span class="sxs-lookup"><span data-stu-id="db6bc-101">mimeContent resource type</span></span>
+# <a name="mimecontent-resource-type"></a><span data-ttu-id="60656-101">Tipo de recurso mimeContent</span><span class="sxs-lookup"><span data-stu-id="60656-101">mimeContent resource type</span></span>
 
-> <span data-ttu-id="db6bc-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="db6bc-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="60656-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="60656-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="db6bc-103">Contém as propriedades de um conteúdo genérico MIME.</span><span class="sxs-lookup"><span data-stu-id="db6bc-103">Contains properties for a generic mime content.</span></span>
-## <a name="properties"></a><span data-ttu-id="db6bc-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="db6bc-104">Properties</span></span>
-|<span data-ttu-id="db6bc-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="db6bc-105">Property</span></span>|<span data-ttu-id="db6bc-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="db6bc-106">Type</span></span>|<span data-ttu-id="db6bc-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="db6bc-107">Description</span></span>|
+<span data-ttu-id="60656-103">Contém as propriedades de um conteúdo genérico MIME.</span><span class="sxs-lookup"><span data-stu-id="60656-103">Contains properties for a generic mime content.</span></span>
+## <a name="properties"></a><span data-ttu-id="60656-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="60656-104">Properties</span></span>
+|<span data-ttu-id="60656-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="60656-105">Property</span></span>|<span data-ttu-id="60656-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="60656-106">Type</span></span>|<span data-ttu-id="60656-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="60656-107">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="db6bc-108">type</span><span class="sxs-lookup"><span data-stu-id="db6bc-108">type</span></span>|<span data-ttu-id="db6bc-109">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="db6bc-109">String</span></span>|<span data-ttu-id="db6bc-110">Indica o tipo de conteúdo MIME.</span><span class="sxs-lookup"><span data-stu-id="db6bc-110">Indicates the content mime type.</span></span>|
-|<span data-ttu-id="db6bc-111">valor</span><span class="sxs-lookup"><span data-stu-id="db6bc-111">value</span></span>|<span data-ttu-id="db6bc-112">Binário</span><span class="sxs-lookup"><span data-stu-id="db6bc-112">Binary</span></span>|<span data-ttu-id="db6bc-113">A matriz de byte que contém o conteúdo atual.</span><span class="sxs-lookup"><span data-stu-id="db6bc-113">The byte array that contains the actual content.</span></span>|
+|<span data-ttu-id="60656-108">type</span><span class="sxs-lookup"><span data-stu-id="60656-108">type</span></span>|<span data-ttu-id="60656-109">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="60656-109">String</span></span>|<span data-ttu-id="60656-110">Indica o tipo de conteúdo MIME.</span><span class="sxs-lookup"><span data-stu-id="60656-110">Indicates the content mime type.</span></span>|
+|<span data-ttu-id="60656-111">valor</span><span class="sxs-lookup"><span data-stu-id="60656-111">value</span></span>|<span data-ttu-id="60656-112">Binário</span><span class="sxs-lookup"><span data-stu-id="60656-112">Binary</span></span>|<span data-ttu-id="60656-113">A matriz de byte que contém o conteúdo atual.</span><span class="sxs-lookup"><span data-stu-id="60656-113">The byte array that contains the actual content.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="db6bc-114">Relações</span><span class="sxs-lookup"><span data-stu-id="db6bc-114">Relationships</span></span>
-<span data-ttu-id="db6bc-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="db6bc-115">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="db6bc-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="db6bc-116">JSON Representation</span></span>
-<span data-ttu-id="db6bc-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="db6bc-117">Here is a JSON representation of the resource.</span></span>
-<!-- {
+## <a name="relationships"></a><span data-ttu-id="60656-114">Relações</span><span class="sxs-lookup"><span data-stu-id="60656-114">Relationships</span></span>
+<span data-ttu-id="60656-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="60656-115">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="60656-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="60656-116">JSON Representation</span></span>
+<span data-ttu-id="60656-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="60656-117">Here is a JSON representation of the resource.</span></span>
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mimeContent"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mimeContent",
@@ -25,6 +24,11 @@
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 
