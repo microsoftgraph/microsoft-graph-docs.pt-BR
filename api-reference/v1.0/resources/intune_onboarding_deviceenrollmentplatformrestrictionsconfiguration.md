@@ -40,8 +40,8 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceen
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceEnrollmentConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration"
 }-->
 ``` json
@@ -91,6 +91,11 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
+
+
 
 
 

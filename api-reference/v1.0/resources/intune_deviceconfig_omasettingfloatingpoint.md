@@ -20,7 +20,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingFloatingPoint"
 }-->
 ``` json
@@ -29,9 +28,14 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1.5
+  "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
+
+
+
+
 
 
 

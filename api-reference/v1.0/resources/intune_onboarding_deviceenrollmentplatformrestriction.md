@@ -15,11 +15,10 @@ Restrições de registro específicas de plataformas
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestriction",
@@ -29,6 +28,11 @@ Veja a seguir uma representação JSON do recurso.
   "osMaximumVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

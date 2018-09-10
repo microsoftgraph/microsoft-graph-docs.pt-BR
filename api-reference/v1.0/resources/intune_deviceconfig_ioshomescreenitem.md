@@ -14,7 +14,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
 }-->
 ``` json
@@ -23,6 +22,11 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
+
+
+
+
 
 
 

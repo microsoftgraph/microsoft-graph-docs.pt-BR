@@ -30,8 +30,8 @@ O recurso de Definição de Função. A definição da função é a base do ace
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.roleDefinition"
 }-->
 ``` json
@@ -59,6 +59,11 @@ Veja a seguir uma representação JSON do recurso.
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 

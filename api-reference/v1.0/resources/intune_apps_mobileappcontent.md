@@ -26,8 +26,8 @@ Contém propriedades de conteúdo para uma versão específica do aplicativo. Ca
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppContent"
 }-->
 ``` json
@@ -36,6 +36,11 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)"
 }
 ```
+
+
+
+
+
 
 
 

@@ -24,8 +24,8 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.onPremisesConditionalAccessSettings"
 }-->
 ``` json
@@ -34,14 +34,19 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "enabled": true,
   "includedGroups": [
-    "fe4d7f2b-e7b8-4276-9976-7a3fc83edbbc"
+    "Guid"
   ],
   "excludedGroups": [
-    "79199ed9-e50b-4257-8de4-70b9c8685061"
+    "Guid"
   ],
   "overrideDefaultRule": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -25,11 +25,10 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.intuneBrand"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.intuneBrand",
@@ -62,6 +61,11 @@ Veja a seguir uma representação JSON do recurso.
   "showDisplayNameNextToLogo": true
 }
 ```
+
+
+
+
+
 
 
 

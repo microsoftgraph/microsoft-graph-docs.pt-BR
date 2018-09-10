@@ -36,9 +36,8 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
 }-->
 ``` json
@@ -60,6 +59,11 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

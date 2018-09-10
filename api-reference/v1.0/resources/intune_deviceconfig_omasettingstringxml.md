@@ -21,7 +21,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.omaSetting",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
+
+
+
+
+
 
 
 

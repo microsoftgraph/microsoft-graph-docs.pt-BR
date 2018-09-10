@@ -49,8 +49,8 @@ Herda de [managedEBook](../resources/intune_books_managedebook.md)
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedEBook",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosVppEBook"
 }-->
 ``` json
@@ -70,7 +70,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)",
   "informationUrl": "String",
   "privacyInformationUrl": "String",
-  "vppTokenId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "vppTokenId": "Guid",
   "appleId": "String",
   "vppOrganizationName": "String",
   "genres": [
@@ -82,6 +82,11 @@ Veja a seguir uma representação JSON do recurso.
   "usedLicenseCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ Representa um aplicativo na lista de aplicativos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|Cadeia de caracteres|O nome do aplicativo|
+|nome|Cadeia de caracteres|O nome do aplicativo|
 |distribuidor|Cadeia de caracteres|O distribuidor do aplicativo|
 |appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
 |appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
@@ -28,6 +28,11 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String"
 }
 ```
+
+
+
+
+
 
 
 

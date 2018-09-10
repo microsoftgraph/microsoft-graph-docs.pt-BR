@@ -35,8 +35,8 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditions"
 }-->
 ``` json
@@ -53,6 +53,11 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

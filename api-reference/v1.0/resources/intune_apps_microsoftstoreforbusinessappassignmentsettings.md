@@ -17,7 +17,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppAssignmentSettings",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessAppAssignmentSettings"
 }-->
 ``` json
@@ -26,6 +25,11 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
+
+
+
+
+
 
 
 

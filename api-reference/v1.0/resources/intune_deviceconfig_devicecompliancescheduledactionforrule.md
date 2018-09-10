@@ -27,8 +27,8 @@ Ação agendada para a regra
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceScheduledActionForRule"
 }-->
 ``` json
@@ -38,6 +38,11 @@ Veja a seguir uma representação JSON do recurso.
   "ruleName": "String"
 }
 ```
+
+
+
+
+
 
 
 

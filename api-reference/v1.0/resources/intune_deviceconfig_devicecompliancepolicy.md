@@ -34,13 +34,12 @@ Esta é a classe base para a política de Conformidade. Políticas de conformida
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
-  "abstract": true,
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
@@ -52,6 +51,11 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

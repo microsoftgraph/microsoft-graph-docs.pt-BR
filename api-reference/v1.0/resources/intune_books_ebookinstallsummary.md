@@ -24,12 +24,12 @@ Contém propriedades do resumo da instalação de um livro para um dispositivo.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.eBookInstallSummary"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.eBookInstallSummary",
@@ -42,6 +42,11 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledUserCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

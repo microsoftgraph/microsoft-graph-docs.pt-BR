@@ -30,8 +30,8 @@ Um aplicativo gerenciado ou não gerenciado que está instalado em um dispositiv
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.detectedApp"
 }-->
 ``` json
@@ -44,6 +44,11 @@ Veja a seguir uma representação JSON do recurso.
   "deviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 
