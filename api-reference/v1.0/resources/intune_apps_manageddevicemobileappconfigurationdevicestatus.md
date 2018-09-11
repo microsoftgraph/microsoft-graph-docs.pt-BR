@@ -2,7 +2,7 @@
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Contém propriedades, propriedades herdadas e ações para um status de configuração do aplicativo móvel de MDM para um dispositivo.
+Contém propriedades, propriedades herdadas e ações para um status de configuração de um aplicativo móvel de MDM para um dispositivo.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -20,7 +20,7 @@ Contém propriedades, propriedades herdadas e ações para um status de configur
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
-|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`.|
+|status|[complianceStatus](../resources/intune_shared_compliancestatus.md)|Status de conformidade do relatório de política. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
 |userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
 
@@ -28,12 +28,12 @@ Contém propriedades, propriedades herdadas e ações para um status de configur
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationDeviceStatus",
@@ -47,6 +47,11 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
+
+
+
+
 
 
 

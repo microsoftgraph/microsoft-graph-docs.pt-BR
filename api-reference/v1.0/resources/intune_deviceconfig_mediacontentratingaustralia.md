@@ -6,18 +6,17 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|movieRating|[ratingAustraliaMoviesType](../resources/intune_deviceconfig_ratingaustraliamoviestype.md)|Classificações de filmes selecionadas para Austrália. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
-|tvRating|[ratingAustraliaTelevisionType](../resources/intune_deviceconfig_ratingaustraliatelevisiontype.md)|Classificação de TV selecionada para Austrália. Os valores possíveis são: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
+|movieRating|[ratingAustraliaMoviesType](../resources/intune_deviceconfig_ratingaustraliamoviestype.md)|Classificação de filmes selecionada para a Austrália. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingAustraliaTelevisionType](../resources/intune_deviceconfig_ratingaustraliatelevisiontype.md)|Classificação de filmes selecionada para a Austrália. Os valores possíveis são: `allAllowed` `allBlocked` `preschoolers` `children` `general` `parentalGuidance` `mature` `agesAbove15` `agesAbove15AdultViolence`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingAustralia"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingAustralia",
@@ -25,6 +24,11 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

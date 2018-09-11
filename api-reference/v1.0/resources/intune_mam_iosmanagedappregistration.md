@@ -39,13 +39,12 @@ Herda de [managedAppRegistration](../resources/intune_mam_managedappregistration
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppRegistration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosManagedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosManagedAppRegistration",
@@ -62,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.iosMobileAppIdentifier",
     "bundleId": "String"
   },
   "id": "String (identifier)",
@@ -70,5 +69,22 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
 
+"Warning: /api-reference/v1.0/resources/intune_mam_androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/appIdentifier:
+      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.androidMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
 
+"Warning: /api-reference/v1.0/resources/intune_mam_androidmanagedappregistration.md/microsoft.graph.androidManagedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/appIdentifier:
+      Type mismatch between example and table. Parameter name: appIdentifier; example type: (microsoft.graph.iosMobileAppIdentifier); table type: (microsoft.graph.mobileAppIdentifier)",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)"
+
+  ],
+}
+-->
