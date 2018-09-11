@@ -6,10 +6,15 @@ Status de sincronização possíveis associados a um token de programa de compra
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Status padrão.|
+|none|0|Status padrão.|
 |inProgress|1|Última sincronização em andamento.|
-|concluída|2|Última sincronização concluída com êxito.|
+|completed|2|Última sincronização concluída com êxito.|
 |failed|3|Última sincronização falhou.|
+
+
+
+
+
 
 
 

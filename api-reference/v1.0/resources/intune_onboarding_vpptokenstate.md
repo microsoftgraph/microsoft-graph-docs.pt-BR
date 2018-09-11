@@ -6,10 +6,16 @@ Estados possíveis associados a um token de Programa de compra por volume da App
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|0|Estado padrão.|
-|válido|1|Token é válido.|
-|expirou|2|Token expirou.|
-|inválido|3|Token é inválido.|
+|unknown|0|Estado padrão.|
+|valid|1|Token é válido.|
+|expired|2|Token expirou.|
+|invalid|3|Token é inválido.|
+|assignedToExternalMDM|4|Token é gerenciado por outro serviço MDM.|
+
+
+
+
+
 
 
 

@@ -36,17 +36,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |**Nível de contratação**|
-|isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
+|isEnabledForMicrosoftStoreForBusiness|Booleano|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|Cadeia de caracteres|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
-|microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|A última vez em que uma sincronização de aplicativo na Microsoft Store para Empresas foi concluída.|
-|microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para essa conta.|
+|microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|A última vez que a sincronização de um aplicativo da Microsoft Store para Empresas foi concluída.|
+|microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para a conta.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) atualizado no corpo da resposta.
 
-## <a name="example"></a>Exemplo
-### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+## <a name="example-request"></a>Exemplo de solicitação
+
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement
 Content-type: application/json
@@ -55,8 +54,10 @@ Content-length: 2
 {}
 ```
 
-### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+## <a name="example-response"></a>Resposta de exemplo
+
+O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

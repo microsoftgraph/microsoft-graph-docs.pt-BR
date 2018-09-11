@@ -9,10 +9,15 @@ Ação padrão do Defender para assumir as ameaças de malware detectadas.
 |deviceDefault|0|Aplique a ação com base na definição de atualização.|
 |clean|1|Apague a ameaça detectada.|
 |quarantine|2|Coloque a ameaça detectada em quarentena.|
-|remove|3|Remova a ameaça detectada.|
+|remover|3|Remova a ameaça detectada.|
 |allow|4|Permita a ameaça detectada.|
 |userDefined|5|Permita que o usuário determine a ação a ser tomada para a ameaça detectada.|
-|block|6|Bloqueie a ameaça detectada.|
+|bloqueio|6|Bloqueie a ameaça detectada.|
+
+
+
+
+
 
 
 

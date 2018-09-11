@@ -6,10 +6,10 @@ Contém propriedades para estados de solicitação de carregamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sucesso|0|Ainda não documentado|
+|success|0|Ainda não documentado|
 |transientError|1|Ainda não documentado|
-|erro|2|Ainda não documentado|
-|desconhecido|3|Ainda não documentado|
+|error|2|Ainda não documentado|
+|unknown|3|Ainda não documentado|
 |azureStorageUriRequestSuccess|100|Ainda não documentado|
 |azureStorageUriRequestPending|101|Ainda não documentado|
 |azureStorageUriRequestFailed|102|Ainda não documentado|
@@ -22,6 +22,11 @@ Contém propriedades para estados de solicitação de carregamento.
 |commitFilePending|301|Ainda não documentado|
 |commitFileFailed|302|Ainda não documentado|
 |commitFileTimedOut|303|Ainda não documentado|
+
+
+
+
+
 
 
 

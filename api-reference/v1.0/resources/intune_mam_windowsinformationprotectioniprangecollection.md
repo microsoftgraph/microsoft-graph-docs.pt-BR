@@ -7,7 +7,7 @@ Coleção de intervalos de IP da Proteção de Informações do Windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição|
-|ranges|Coleção [ipRange](../resources/intune_mam_iprange.md)|Coleção de intervalos de IP|
+|intervalos|Coleção [ipRange](../resources/intune_mam_iprange.md)|Coleção de intervalos de IP|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -30,6 +30,11 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
+
+
+
+
 
 
 

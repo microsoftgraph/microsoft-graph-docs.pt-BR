@@ -39,11 +39,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceI
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
-|installState|[installState](../resources/intune_books_installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
+|installState|[installState](../resources/intune_books_installstate.md)|O estado de instalação do eBook. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|Código de erro|Cadeia de caracteres|O código de erro de falhas de instalação.|
 |osVersion|Cadeia de caracteres|Versão do sistema operacional.|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
-|userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
+|Nome de usuário|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 
 
@@ -90,6 +90,11 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
+
+
+
+
 
 
 
