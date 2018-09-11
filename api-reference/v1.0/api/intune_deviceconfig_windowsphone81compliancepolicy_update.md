@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |passwordRequired|Booleano|Se uma senha deve ou não ser exigida.|
 |osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
-|storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows Phone.|
+|storageRequireEncryption|Booleano|Exige criptografia em dispositivos Windows Phone.|
 
 
 
@@ -112,6 +112,11 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

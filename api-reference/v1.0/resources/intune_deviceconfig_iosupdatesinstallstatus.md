@@ -6,10 +6,10 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sucesso|0|Ainda não documentado|
-|disponível|1|Ainda não documentado|
-|ocioso|2|Ainda não documentado|
-|desconhecido|3|Ainda não documentado|
+|success|0|Ainda não documentado|
+|available|1|Ainda não documentado|
+|idle|2|Ainda não documentado|
+|unknown|3|Ainda não documentado|
 |baixando|-2016330712|Ainda não documentado|
 |downloadFailed|-2016330711|Ainda não documentado|
 |downloadRequiresComputer|-2016330710|Ainda não documentado|
@@ -23,6 +23,11 @@ Ainda não documentado
 |installFailed|-2016330702|Ainda não documentado|
 |notSupportedOperation|-2016330701|Ainda não documentado|
 |sharedDeviceUserLoggedInError|-2016330699|Ainda não documentado|
+
+
+
+
+
 
 
 

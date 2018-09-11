@@ -51,8 +51,8 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows81CompliancePolicy"
 }-->
 ``` json
@@ -77,6 +77,11 @@ Veja a seguir uma representação JSON do recurso.
   "storageRequireEncryption": true
 }
 ```
+
+
+
+
+
 
 
 

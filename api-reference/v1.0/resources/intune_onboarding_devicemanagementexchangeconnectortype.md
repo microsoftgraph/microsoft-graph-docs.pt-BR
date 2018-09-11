@@ -9,7 +9,12 @@ O tipo de Exchange Connector.
 |onPremises|0|Conecta-se ao ambiente do Exchange local.|
 |hospedado|1|Conecta-se ao ambiente do Exchange de multilocatário O365|
 |serviceToService|2|Intune Service conecta-se diretamente ao ambiente do Exchange de multilocatário O365|
-|dedicado|3|Conecta-se ao ambiente do Exchange dedicado do O365.|
+|dedicated|3|Conecta-se ao ambiente do Exchange dedicado do O365.|
+
+
+
+
+
 
 
 

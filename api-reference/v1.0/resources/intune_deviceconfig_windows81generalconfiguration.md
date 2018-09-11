@@ -36,8 +36,8 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |browserBlockSingleWordEntryOnIntranetSites|Booleano|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
 |browserRequireSmartScreen|Booleano|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |browserEnterpriseModeSiteListLocation|Cadeia de caracteres|O local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|O nível de segurança da Internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança da Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|O nível de segurança da internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança de Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|Cadeia de caracteres|O local do relatório de registro em log.|
 |browserRequireHighSecurityForRestrictedSites|Booleano|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
 |browserRequireFirewall|Booleano|Indica se um firewall deve ou não ser exigido.|
@@ -55,7 +55,7 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |passwordSignInFailureCountBeforeFactoryReset|Int32|O número de falhas de entrada antes da redefinição de fábrica.|
 |storageRequireDeviceEncryption|Booleano|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
 |updatesRequireAutomaticUpdates|Booleano|Indica se as atualizações automáticas devem ou não ser exigidas.|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|As configurações de controle da conta do usuário. Os valores possíveis são: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|As configurações de controle de conta de usuário. Os valores possíveis são: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|Cadeia de caracteres|A URL das pastas de trabalho|
 
 ## <a name="relationships"></a>Relações
@@ -72,18 +72,9 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
-  "@odata.type": "microsoft.graph.windows81GeneralConfiguration",
-  "@odata.annotations": [
-    {
-      "property": "applyOnlyToWindows81",
-      "capabilities": {
-        "computed": true,
-        "permissions": "Read"
-      }
-    }
-  ]
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windows81GeneralConfiguration"
 }-->
 ``` json
 {
@@ -129,6 +120,11 @@ Veja a seguir uma representação JSON do recurso.
   "workFoldersUrl": "String"
 }
 ```
+
+
+
+
+
 
 
 

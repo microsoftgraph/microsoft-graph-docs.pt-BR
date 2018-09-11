@@ -6,8 +6,13 @@ O motivo pelo qual um usuário foi sinalizado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum problema.|
+|none|0|Nenhum problema.|
 |rootedDevice|1|O registro de aplicativo está sendo executado em um dispositivo com raiz/desbloqueado.|
+
+
+
+
+
 
 
 

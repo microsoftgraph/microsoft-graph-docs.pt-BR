@@ -38,10 +38,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagemen
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|Sequência de caracteres|O nome do servidor do Exchange.|
-|connectorServerName|Sequência de caracteres|O nome do servidor que hospeda o Exchange Connector.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|versão|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
+|serverName|Cadeia de caracteres|O nome do Exchange Server.|
+|connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|O tipo de conector do Exchange configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
 |exchangeAlias|Cadeia de caracteres|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 
@@ -92,6 +92,11 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
+
+
+
+
 
 
 

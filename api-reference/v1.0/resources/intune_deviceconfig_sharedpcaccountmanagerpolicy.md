@@ -6,11 +6,10 @@ Política do gerenciador de conta de PC compartilhado. Aplica-se somente quando 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountDeletionPolicy|[sharedPCAccountDeletionPolicyType](../resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype.md)|Configura quando as contas são excluídas. Os valores possíveis são: `immediate`, `diskSpaceThreshold`, `diskSpaceThresholdOrInactiveThreshold`.|
+|accountDeletionPolicy|[sharedPCAccountDeletionPolicyType](../resources/intune_deviceconfig_sharedpcaccountdeletionpolicytype.md)|Configura quando contas são excluídas. Os valores possíveis são: `immediate`, `diskSpaceThreshold`, `diskSpaceThresholdOrInactiveThreshold`.|
 |cacheAccountsAboveDiskFreePercentage|Int32|Define a porcentagem de espaço em disco disponível que um computador deve ter antes de parar de excluir contas do computador compartilhadas em cache. Aplicável apenas quando AccountDeletionPolicy é DiskSpaceThreshold ou DiskSpaceThresholdOrInactiveThreshold. Valores válidos de 0 a 100|
 |inactiveThresholdDays|Int32|Especifica quando as contas começarão a ser excluídas quando não forem conectadas durante o período especificado, fornecido como um número de dias. Aplicável apenas quando AccountDeletionPolicy é DiskSpaceThreshold ou DiskSpaceThresholdOrInactiveThreshold.|
 |removeAccountsBelowDiskFreePercentage|Int32|Define a porcentagem de espaço em disco restante em um computador antes que contas em cache sejam excluídas para liberar espaço em disco. Contas inativas há mais tempo serão excluídas primeiro. Aplicável apenas quando AccountDeletionPolicy é DiskSpaceThresholdOrInactiveThreshold. Valores válidos de 0 a 100|
-
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -29,6 +28,11 @@ Veja a seguir uma representação JSON do recurso.
   "removeAccountsBelowDiskFreePercentage": 1024
 }
 ```
+
+
+
+
+
 
 
 

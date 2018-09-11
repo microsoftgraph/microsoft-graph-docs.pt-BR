@@ -24,10 +24,10 @@ Herda de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |version|Cadeia de caracteres|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo não está conectado à Internet.|
 |periodOnlineBeforeAccessCheck|Duração|Período após o qual o acesso é verificado quando o dispositivo está conectado à Internet.|
-|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Fontes das quais os dados podem ser transferidos. Os valores possíveis são: `allApps`, `managedApps`, `none`.|
-|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Destinos para os quais os dados podem ser transferidos. Os valores possíveis são: `allApps`, `managedApps`, `none`.|
+|allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Fontes de onde os dados podem ser transferidos. Os valores possíveis são: `allApps`, `managedApps`, `none`.|
+|allowedOutboundDataTransferDestinations|[managedAppDataTransferLevel](../resources/intune_mam_managedappdatatransferlevel.md)|Destinos para onde os dados podem ser transferidos. Os valores possíveis são: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Booleano|Indica se as credenciais organizacionais são obrigatórias para o uso do aplicativo.|
-|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|O nível em que a área de transferência pode ser compartilhada entre os aplicativos no dispositivo gerenciado. Os valores possíveis são: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
+|allowedOutboundClipboardSharingLevel|[managedAppClipboardSharingLevel](../resources/intune_mam_managedappclipboardsharinglevel.md)|O nível em que a área de transferência pode ser compartilhada entre aplicativos no dispositivo gerenciado. Os valores possíveis são: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
 |dataBackupBlocked|Booleano|Indica se o backup de dados de um aplicativo gerenciado está bloqueado.|
 |deviceComplianceRequired|Booleano|Indica se a compatibilidade de dispositivos é necessária.|
 |managedBrowserToOpenLinksRequired|Booleano|Indica se os links da Internet devem ser abertos no aplicativo de navegador gerenciado.|
@@ -37,9 +37,9 @@ Herda de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)
 |maximumPinRetries|Int32|Número máximo de tentativas incorretas de pin antes que o aplicativo gerenciado seja bloqueado ou apagado.|
 |simplePinBlocked|Booleano|Indica se simplePin está bloqueado.|
 |minimumPinLength|Int32|Tamanho mínimo de pin necessário para um pin no nível do aplicativo se PinRequired estiver definido como True|
-|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Conjunto de caracteres que poderá ser usado para um pin no nível do aplicativo se PinRequired estiver definido como True. Os valores possíveis são: `numeric`, `alphanumericAndSymbol`.|
+|pinCharacterSet|[managedAppPinCharacterSet](../resources/intune_mam_managedapppincharacterset.md)|Conjunto de caracteres que podem ser usados para um pin de nível de aplicativo se PinRequired for definido como True. Os valores possíveis são: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duração|TimePeriod antes que o pin em todos os níveis tenha que ser redefinido, caso PinRequired esteja definido como True.|
-|allowedDataStorageLocations|coleção [managedAppDataStorageLocation enum](../resources/intune_mam_managedappdatastoragelocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados.|
+|allowedDataStorageLocations|Coleção enumerada [managedAppDataStorageLocation](../resources/intune_mam_managedappdatastoragelocation.md)|Locais de armazenamento de dados em que um usuário pode armazenar dados gerenciados.|
 |contactSyncBlocked|Booleano|Indica se os contatos podem ser sincronizados com o dispositivo do usuário.|
 |printBlocked|Booleano|Indica se a impressão a partir de aplicativos gerenciados é permitida.|
 |fingerprintBlocked|Booleano|Indica se será permitido o uso do leitor de impressão digital em vez de um pin se PinRequired estiver definido como True.|
@@ -55,9 +55,8 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppPolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppProtection"
 }-->
 ``` json
@@ -99,6 +98,11 @@ Veja a seguir uma representação JSON do recurso.
   "minimumWarningAppVersion": "String"
 }
 ```
+
+
+
+
+
 
 
 

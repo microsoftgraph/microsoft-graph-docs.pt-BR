@@ -12,3 +12,8 @@ Tipo de proprietário de dispositivo.
 
 
 
+
+
+
+
+

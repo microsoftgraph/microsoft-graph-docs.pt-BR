@@ -8,11 +8,16 @@ Valores possíveis para um dia da semana
 |:---|:---|:---|
 |sunday|0|Domingo.|
 |monday|1|Segunda-feira.|
-|terça-feira|2|Terça-feira.|
+|tuesday|2|Terça-feira.|
 |wednesday|3|Quarta-feira.|
-|quinta-feira|4|Quinta-feira.|
+|thursday|4|Quinta-feira.|
 |friday|5|Sexta-feira.|
-|sábado|6|Sábado.|
+|saturday|6|Sábado.|
+
+
+
+
+
 
 
 
