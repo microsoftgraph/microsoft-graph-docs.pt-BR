@@ -1,18 +1,18 @@
-# <a name="list-iosmobileappconfigurations"></a><span data-ttu-id="afabe-101">Listar iosMobileAppConfigurations</span><span class="sxs-lookup"><span data-stu-id="afabe-101">List iosMobileAppConfigurations</span></span>
+# <a name="list-iosmobileappconfigurations"></a><span data-ttu-id="86568-101">Listar iosMobileAppConfigurations</span><span class="sxs-lookup"><span data-stu-id="86568-101">List iosMobileAppConfigurations</span></span>
 
-> <span data-ttu-id="afabe-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="afabe-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="86568-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="86568-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="afabe-103">Lista propriedades e relações dos objetos [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="afabe-103">List properties and relationships of the [managedMobileApp](../resources/intune_apps_iosmobileappconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="afabe-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="afabe-104">Prerequisites</span></span>
-<span data-ttu-id="afabe-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="afabe-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="86568-103">Lista propriedades e relações dos objetos [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="86568-103">List properties and relationships of the [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="86568-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="86568-104">Prerequisites</span></span>
+<span data-ttu-id="86568-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="86568-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="afabe-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="afabe-107">Permission type</span></span>|<span data-ttu-id="afabe-108">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="afabe-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="86568-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="86568-107">Permission type</span></span>|<span data-ttu-id="86568-108">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="86568-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="afabe-109">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="afabe-109">Delegated (work or school account)</span></span>|<span data-ttu-id="afabe-110">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="afabe-110">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="afabe-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="afabe-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="afabe-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="afabe-112">Not supported.</span></span>|
-|<span data-ttu-id="afabe-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="afabe-113">Application</span></span>|<span data-ttu-id="afabe-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="afabe-114">Not supported.</span></span>|
+|<span data-ttu-id="86568-109">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="86568-109">Delegated (work or school account)</span></span>|<span data-ttu-id="86568-110">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="86568-110">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="86568-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="86568-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="86568-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="86568-112">Not supported.</span></span>|
+|<span data-ttu-id="86568-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="86568-113">Application</span></span>|<span data-ttu-id="86568-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="86568-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="afabe-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="afabe-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86568-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="86568-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,27 +21,27 @@
 GET /deviceAppManagement/mobileAppConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="afabe-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="afabe-116">Request headers</span></span>
-|<span data-ttu-id="afabe-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="afabe-117">Header</span></span>|<span data-ttu-id="afabe-118">Valor</span><span class="sxs-lookup"><span data-stu-id="afabe-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="86568-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="86568-116">Request headers</span></span>
+|<span data-ttu-id="86568-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="86568-117">Header</span></span>|<span data-ttu-id="86568-118">Valor</span><span class="sxs-lookup"><span data-stu-id="86568-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="afabe-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="afabe-119">Authorization</span></span>|<span data-ttu-id="afabe-120">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="afabe-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="afabe-121">Aceitar</span><span class="sxs-lookup"><span data-stu-id="afabe-121">Accept</span></span>|<span data-ttu-id="afabe-122">application/json</span><span class="sxs-lookup"><span data-stu-id="afabe-122">application/json</span></span>|
+|<span data-ttu-id="86568-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="86568-119">Authorization</span></span>|<span data-ttu-id="86568-120">Token&gt; de portador obrigatório.&lt;</span><span class="sxs-lookup"><span data-stu-id="86568-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="86568-121">Aceitar</span><span class="sxs-lookup"><span data-stu-id="86568-121">Accept</span></span>|<span data-ttu-id="86568-122">application/json</span><span class="sxs-lookup"><span data-stu-id="86568-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="afabe-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="afabe-123">Request body</span></span>
-<span data-ttu-id="afabe-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="afabe-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="86568-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="86568-123">Request body</span></span>
+<span data-ttu-id="86568-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="86568-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="afabe-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="afabe-125">Response</span></span>
-<span data-ttu-id="afabe-126">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="afabe-126">If successful, this method returns a `200 OK` response code and collection of [workbookRangeView](../resources/intune_apps_iosmobileappconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="86568-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="86568-125">Response</span></span>
+<span data-ttu-id="86568-126">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="86568-126">If successful, this method returns a `200 OK` response code and a collection of [iosMobileAppConfiguration](../resources/intune_apps_iosmobileappconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="afabe-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="afabe-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="afabe-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="afabe-128">Request</span></span>
-<span data-ttu-id="afabe-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="afabe-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="86568-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="86568-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="86568-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="86568-128">Request</span></span>
+<span data-ttu-id="86568-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="86568-129">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations
 ```
 
-### <a name="response"></a><span data-ttu-id="afabe-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="afabe-130">Response</span></span>
-<span data-ttu-id="afabe-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="afabe-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="86568-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="86568-130">Response</span></span>
+<span data-ttu-id="86568-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="86568-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -73,6 +73,11 @@ Content-Length: 815
   ]
 }
 ```
+
+
+
+
+
 
 
 
