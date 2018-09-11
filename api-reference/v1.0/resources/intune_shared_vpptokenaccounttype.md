@@ -6,8 +6,13 @@ Tipos possíveis de um token de Programa de Compra de Volume da Apple.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|negócios|0|Token de Programa de Compra de Volume da Apple associado a um programa de negócios.|
-|educação|1|Token de Programa de Compra de Volume da Apple associado a um programa educativo.|
+|business|0|Token de Programa de Compra de Volume da Apple associado a um programa de negócios.|
+|education|1|Token de Programa de Compra de Volume da Apple associado a um programa educativo.|
+
+
+
+
+
 
 
 
