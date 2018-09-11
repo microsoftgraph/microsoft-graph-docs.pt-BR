@@ -6,10 +6,15 @@ Estado do parceiro deste locatário.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não disponível|0|Parceiro não está disponível.|
-|disponível|1|Parceiro está disponível.|
+|unavailable|0|Parceiro não está disponível.|
+|available|1|Parceiro está disponível.|
 |enabled|2|Parceiro está habilitado.|
 |não responde|3|Parceiro não está respondendo.|
+
+
+
+
+
 
 
 

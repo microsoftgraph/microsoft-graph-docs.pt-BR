@@ -16,3 +16,8 @@ Entregar modo de otimização para distribuição de mesmo nível
 
 
 
+
+
+
+
+

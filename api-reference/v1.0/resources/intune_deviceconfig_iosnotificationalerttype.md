@@ -7,9 +7,14 @@ Tipo de alerta de configurações de notificação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Valor padrão de dispositivo, sem intenção.|
-|barra de notificação|1|Barra de notificação.|
-|janela restrita|2|Janela restrita.|
-|nenhum|3|Nenhum.|
+|banner|1|Barra de notificação.|
+|modal|2|Janela restrita.|
+|none|3|Nenhuma.|
+
+
+
+
+
 
 
 

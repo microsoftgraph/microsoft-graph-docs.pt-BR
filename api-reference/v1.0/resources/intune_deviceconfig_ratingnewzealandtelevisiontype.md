@@ -8,9 +8,14 @@ Identificações de classificação de conteúdo de TV na Nova Zelândia
 |:---|:---|:---|
 |allAllowed|0|Valor padrão, permitir todo o conteúdo dos programas de TV|
 |allBlocked|1|Não permitir nenhum conteúdo de programas de TV|
-|geral|2|A classificação G exclui materiais com probabilidade de prejudicar crianças com idade abaixo de 14 anos|
+|general|2|A classificação G exclui materiais com probabilidade de prejudicar crianças com idade abaixo de 14 anos|
 |parentalGuidance|3|A classificação PGR incentiva pais e responsáveis a supervisionarem espectadores mais jovens|
-|adultos|4|A classificação AO não é adequada para crianças|
+|adults|4|A classificação AO não é adequada para crianças|
+
+
+
+
+
 
 
 
