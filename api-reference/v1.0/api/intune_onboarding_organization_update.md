@@ -35,7 +35,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [organiz
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Define a autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 
 
 
@@ -68,6 +68,11 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
+
+
+
+
 
 
 

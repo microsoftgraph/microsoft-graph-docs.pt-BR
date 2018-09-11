@@ -47,8 +47,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [managedAndroidS
 |owner|Cadeia de caracteres|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|Cadeia de caracteres|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
 |Observações|Cadeia de caracteres|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser atribuído, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
-|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|A disponibilidade do Aplicativo. Herdado de [managedApp](../resources/intune_apps_managedapp.md). Os valores possíveis são: `global`, `lineOfBusiness`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser atribuído a menos que esteja publicado. Herdada de [mobileApp](../resources/intune_apps_mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune_apps_managedappavailability.md)|A disponibilidade do aplicativo. Herdada de [managedApp](../resources/intune_apps_managedapp.md). Os valores possíveis são: `global`, `lineOfBusiness`.|
 |version|Cadeia de caracteres|A versão do Aplicativo. Herdado de [managedApp](../resources/intune_apps_managedapp.md)|
 |packageId|Cadeia de caracteres|A ID de pacote do aplicativo.|
 |appStoreUrl|Cadeia de caracteres|A AppStoreUrl do Android.|
@@ -146,6 +146,11 @@ Content-Length: 1188
   }
 }
 ```
+
+
+
+
+
 
 
 

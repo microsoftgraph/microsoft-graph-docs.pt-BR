@@ -18,12 +18,12 @@ Entidade que representa uma conexão a um ambiente do Exchange.
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status do conector do Exchange. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|Sequência de caracteres|O nome do Exchange Server.|
+|serverName|Sequência de caracteres|O nome do servidor Exchange.|
 |connectorServerName|Sequência de caracteres|O nome do servidor que hospeda o Exchange Connector.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|versão|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|O tipo de conector do Exchange configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
+|version|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
 |exchangeAlias|Cadeia de caracteres|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 
@@ -33,8 +33,8 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementExchangeConnector"
 }-->
 ``` json
@@ -52,6 +52,11 @@ Veja a seguir uma representação JSON do recurso.
   "exchangeOrganization": "String"
 }
 ```
+
+
+
+
+
 
 
 

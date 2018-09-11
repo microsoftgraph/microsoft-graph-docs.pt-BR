@@ -25,14 +25,14 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -46,6 +46,11 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 

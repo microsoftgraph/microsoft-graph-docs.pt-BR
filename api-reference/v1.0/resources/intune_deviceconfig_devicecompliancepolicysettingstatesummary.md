@@ -15,10 +15,10 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|setting|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
 |platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Plataforma de configuração. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
-|id|Cadeia de caracteres|Chave da entidade.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|
@@ -36,17 +36,17 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
 }-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "String (identifier)",
   "setting": "String",
   "settingName": "String",
   "platformType": "String",
-  "id": "String (identifier)",
   "unknownDeviceCount": 1024,
   "notApplicableDeviceCount": 1024,
   "compliantDeviceCount": 1024,
@@ -56,6 +56,11 @@ Veja a seguir uma representação JSON do recurso.
   "conflictDeviceCount": 1024
 }
 ```
+
+
+
+
+
 
 
 

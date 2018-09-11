@@ -19,6 +19,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -67,6 +68,11 @@ Content-Length: 675
   ]
 }
 ```
+
+
+
+
+
 
 
 

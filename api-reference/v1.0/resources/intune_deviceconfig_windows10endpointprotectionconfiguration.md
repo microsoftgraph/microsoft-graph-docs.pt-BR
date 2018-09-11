@@ -18,67 +18,67 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|version|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|firewallBlockStatefulFTP|Booliano|Bloqueia conexões de FTP com estado ao dispositivo|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|firewallBlockStatefulFTP|Booleano|Bloqueia conexões de FTP com estado ao dispositivo|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura o tempo limite ocioso das associações de segurança, em segundos, de 300 para 3.600, inclusive. Após esse período, as associações de segurança expirarão e serão excluídas. Valores válidos de 300 a 3.600|
-|firewallPreSharedKeyEncodingMethod|Cadeia de caracteres|Selecione a codificação de chave pré compartilhada a ser usada Os valores possíveis são: `deviceDefault`, `none`, `utF8`.|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Booliano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
-|firewallIPSecExemptionsAllowICMP|Booliano|Configura isenções IPSec para permitir que ICMP|
-|firewallIPSecExemptionsAllowRouterDiscovery|Booliano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
-|firewallIPSecExemptionsAllowDHCP|Booliano|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
-|firewallCertificateRevocationListCheckMethod|Cadeia de caracteres|Especifique como a lista de revogação de certificados é aplicada Os valores possíveis são: `deviceDefault`, `none`, `attempt`, `require`.|
-|firewallMergeKeyingModuleSettings|Booliano|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
-|firewallPacketQueueingMethod|Cadeia de caracteres|Configura como o enfileiramento de pacote deve aplicado no cenário de gateway de túnel Os valores possíveis são: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype.md)|Seleciona a codificação de chave pré-compartilhada a ser usada. Os valores possíveis são: `deviceDefault`, `none`, `utF8`.|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Booleano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
+|firewallIPSecExemptionsAllowICMP|Booleano|Configura isenções IPSec para permitir ICMP|
+|firewallIPSecExemptionsAllowRouterDiscovery|Booleano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
+|firewallIPSecExemptionsAllowDHCP|Booleano|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md)|Especifica como a lista de revogação de certificados deve ser imposta. Os valores possíveis são: `deviceDefault`, `none`, `attempt`, `require`.|
+|firewallMergeKeyingModuleSettings|Booleano|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune_deviceconfig_firewallpacketqueueingmethodtype.md)|Configura como o enfileiramento de pacotes deve ser aplicado no cenário de gateway de túnel. Os valores possíveis são: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes do domínio|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes públicas|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes privadas|
-|defenderAttackSurfaceReductionExcludedPaths|Coleção String|Lista de arquivos executáveis e pastas a serem excluídos das regras de redução de superfície de ataque|
-|defenderGuardedFoldersAllowedAppPaths|Coleção String|Lista de caminhos para exe com permissão para acessar as pastas protegidas|
-|defenderAdditionalGuardedFolders|Coleção String|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
+|defenderAttackSurfaceReductionExcludedPaths|Coleção de sequência de caracteres|Lista de arquivos executáveis e pastas a serem excluídos das regras de redução de superfície de ataque|
+|defenderGuardedFoldersAllowedAppPaths|Coleção de sequência de caracteres|Lista de caminhos para execução com permissão para acessar as pastas protegidas|
+|defenderAdditionalGuardedFolders|Coleção de sequência de caracteres|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
 |defenderExploitProtectionXmlFileName|Cadeia de caracteres|Nome do arquivo do qual DefenderExploitProtectionXml foi obtido.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Booliano|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
-|appLockerApplicationControl|Cadeia de caracteres|Permite que o administrador escolha quais tipos de aplicativo permitir nos dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
-|smartScreenEnableInShell|Booliano|Permite que os administradores de TI configurem SmartScreen para Windows.|
-|smartScreenBlockOverrideForFiles|Booliano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
-|applicationGuardEnabled|Booliano|Habilitar o Windows Defender Application Guard|
-|applicationGuardBlockFileTransfer|Cadeia de caracteres|Impedir a área de transferência de transferir arquivo de imagem, arquivo de texto ou ambos Os valores possíveis são: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Booliano|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
-|applicationGuardAllowPersistence|Booliano|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web etc.)|
-|applicationGuardForceAuditing|Booliano|A auditoria forçada persistirá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema etc.)|
-|applicationGuardBlockClipboardSharing|Cadeia de caracteres|Impedir a área de transferência de compartilhar dados do host para o contêiner, do contêiner para o host ou em ambas as direções. Os valores possíveis são: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
-|applicationGuardAllowPrintToPDF|Booliano|Permitir a impressão em PDF pelo contêiner|
-|applicationGuardAllowPrintToXPS|Booliano|Permitir a impressão em XPS pelo contêiner|
-|applicationGuardAllowPrintToLocalPrinters|Booliano|Permitir a impressão em impressoras locais pelo contêiner|
-|applicationGuardAllowPrintToNetworkPrinters|Booliano|Permitir a impressão em impressoras da rede pelo contêiner|
-|bitLockerDisableWarningForOtherDiskEncryption|Booliano|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Booliano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
-|bitLockerEncryptDevice|Booliano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Booleano|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune_deviceconfig_applockerapplicationcontroltype.md)|Permite que o administrador escolha quais tipos de aplicativo permitir nos dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|smartScreenEnableInShell|Booleano|Permite que os administradores de TI configurem SmartScreen para Windows.|
+|smartScreenBlockOverrideForFiles|Booleano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
+|applicationGuardEnabled|Booleano|Habilitar o Windows Defender Application Guard|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Bloqueia área de transferência para transferir arquivos de imagem, arquivos de texto ou nenhum deles. Os valores possíveis são: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
+|applicationGuardBlockNonEnterpriseContent|Booleano|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
+|applicationGuardAllowPersistence|Booleano|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web, etc.)|
+|applicationGuardForceAuditing|Booleano|A auditoria forçada manterá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema, etc.)|
+|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune_deviceconfig_applicationguardblockclipboardsharingtype.md)|Impedir a área de transferência de compartilhar dados do Host para o Contêiner, do Contêiner para o Host ou em ambas as direções. Os valores possíveis são: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
+|applicationGuardAllowPrintToPDF|Booleano|Permitir a impressão em PDF pelo contêiner|
+|applicationGuardAllowPrintToXPS|Booleano|Permitir a impressão em XPS pelo contêiner|
+|applicationGuardAllowPrintToLocalPrinters|Booleano|Permitir a impressão em Impressoras Locais pelo contêiner|
+|applicationGuardAllowPrintToNetworkPrinters|Booleano|Permitir a impressão em Impressoras da Rede pelo contêiner|
+|bitLockerDisableWarningForOtherDiskEncryption|Booleano|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Booleano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
+|bitLockerEncryptDevice|Booleano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune_deviceconfig_bitlockerremovabledrivepolicy.md)|Política da unidade removível do BitLocker.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Status da instalação da configuração do dispositivo por usuário. Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|assignments|Coleção [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10EndpointProtectionConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -179,6 +179,11 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
+
+
+
+
 
 
 

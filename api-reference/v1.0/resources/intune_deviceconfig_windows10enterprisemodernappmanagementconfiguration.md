@@ -40,8 +40,8 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows10EnterpriseModernAppManagementConfiguration"
 }-->
 ``` json
@@ -56,6 +56,11 @@ Veja a seguir uma representação JSON do recurso.
   "uninstallBuiltInApps": true
 }
 ```
+
+
+
+
+
 
 
 

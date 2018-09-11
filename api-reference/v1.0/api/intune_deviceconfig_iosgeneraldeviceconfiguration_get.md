@@ -1,4 +1,4 @@
-# <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
+# <a name="get-iosgeneraldeviceconfiguration"></a>Obter o iosGeneralDeviceConfiguration
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
@@ -22,11 +22,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -47,7 +47,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8404
+Content-Length: 8470
 
 {
   "value": {
@@ -160,6 +160,7 @@ Content-Length: 8404
     "kioskModeAllowVolumeButtons": true,
     "kioskModeAllowZoomSettings": true,
     "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+    "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
     "kioskModeRequireAssistiveTouch": true,
     "kioskModeRequireColorInversion": true,
     "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8404
   }
 }
 ```
+
+
+
+
+
 
 
 

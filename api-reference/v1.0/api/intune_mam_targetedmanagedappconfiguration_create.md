@@ -1,6 +1,6 @@
 # <a name="create-targetedmanagedappconfiguration"></a>Criar targetedManagedAppConfiguration
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Cria um novo objeto [targetedManagedAppConfiguration](../resources/intune_mam_targetedmanagedappconfiguration.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ POST /deviceAppManagement/targetedManagedAppConfigurations
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; obrigatório.|
-|Accept|application/json|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto targetedManagedAppConfiguration.
@@ -34,15 +34,15 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar targetedManagedA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|description|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|displayName|Cadeia de caracteres|Nome para exibição da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
+|descrição|Cadeia de caracteres|A descrição da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|Cadeia de caracteres|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |customSettings|Coleção [keyValuePair](../resources/intune_mam_keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres a serem enviados aos aplicativos para usuários para os quais a configuração tem escopo definido, não alterados por esse serviço Herdado de [managedAppConfiguration](../resources/intune_mam_managedappconfiguration.md)|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
-|isAssigned|Booliano|Indica se a política foi implantada a grupos de inclusão ou não.|
+|isAssigned|Booleano|Indica se a política foi implantada a grupos de inclusão ou não.|
 
 
 
@@ -101,6 +101,11 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,7 +1,5 @@
 # <a name="delete-devicemanagementtroubleshootingevent"></a>Excluir deviceManagementTroubleshootingEvent
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
-
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Exclui [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).
@@ -26,7 +24,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -39,7 +37,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+DELETE https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -47,6 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
