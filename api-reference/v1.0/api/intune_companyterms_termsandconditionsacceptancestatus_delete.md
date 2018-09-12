@@ -1,18 +1,18 @@
-# <a name="delete-termsandconditionsacceptancestatus"></a><span data-ttu-id="652eb-101">Excluir termsAndConditionsAcceptanceStatus</span><span class="sxs-lookup"><span data-stu-id="652eb-101">Delete termsAndConditionsAcceptanceStatus</span></span>
+# <a name="delete-termsandconditionsacceptancestatus"></a><span data-ttu-id="10996-101">Excluir termsAndConditionsAcceptanceStatus</span><span class="sxs-lookup"><span data-stu-id="10996-101">Delete termsAndConditionsAcceptanceStatus</span></span>
 
-> <span data-ttu-id="652eb-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="652eb-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="10996-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="10996-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="652eb-103">Exclui [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="652eb-103">Deletes a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="652eb-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="652eb-104">Prerequisites</span></span>
-<span data-ttu-id="652eb-p101">Uma das permissões a seguir é obrigatória para chamar esta API. Para saber mais, inclusive como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="652eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="10996-103">Exclui [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md).</span><span class="sxs-lookup"><span data-stu-id="10996-103">Deletes a [termsAndConditionsAcceptanceStatus](../resources/intune_companyterms_termsandconditionsacceptancestatus.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="10996-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="10996-104">Prerequisites</span></span>
+<span data-ttu-id="10996-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="10996-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="652eb-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="652eb-107">Permission type</span></span>|<span data-ttu-id="652eb-108">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="652eb-108">Permissions (from least to most privileged)</span></span>|
+|<span data-ttu-id="10996-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="10996-107">Permission type</span></span>|<span data-ttu-id="10996-108">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="10996-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="652eb-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="652eb-109">Delegated (work or school account)</span></span>|<span data-ttu-id="652eb-110">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="652eb-110">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="652eb-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="652eb-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="652eb-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="652eb-112">Not supported.</span></span>|
-|<span data-ttu-id="652eb-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="652eb-113">Application</span></span>|<span data-ttu-id="652eb-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="652eb-114">Not supported.</span></span>|
+|<span data-ttu-id="10996-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="10996-109">Delegated (work or school account)</span></span>|<span data-ttu-id="10996-110">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="10996-110">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="10996-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="10996-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10996-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="10996-112">Not supported.</span></span>|
+|<span data-ttu-id="10996-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="10996-113">Application</span></span>|<span data-ttu-id="10996-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="10996-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="652eb-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="652eb-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="10996-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="10996-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,30 +21,35 @@
 DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="652eb-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="652eb-116">Request headers</span></span>
-|<span data-ttu-id="652eb-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="652eb-117">Header</span></span>|<span data-ttu-id="652eb-118">Valor</span><span class="sxs-lookup"><span data-stu-id="652eb-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="10996-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="10996-116">Request headers</span></span>
+|<span data-ttu-id="10996-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="10996-117">Header</span></span>|<span data-ttu-id="10996-118">Valor</span><span class="sxs-lookup"><span data-stu-id="10996-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="652eb-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="652eb-119">Authorization</span></span>|<span data-ttu-id="652eb-120">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="652eb-120">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="652eb-121">Aceitar</span><span class="sxs-lookup"><span data-stu-id="652eb-121">Accept</span></span>|<span data-ttu-id="652eb-122">application/json</span><span class="sxs-lookup"><span data-stu-id="652eb-122">application/json</span></span>|
+|<span data-ttu-id="10996-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="10996-119">Authorization</span></span>|<span data-ttu-id="10996-120">Token&gt; de portador obrigatório.&lt;</span><span class="sxs-lookup"><span data-stu-id="10996-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="10996-121">Aceitar</span><span class="sxs-lookup"><span data-stu-id="10996-121">Accept</span></span>|<span data-ttu-id="10996-122">application/json</span><span class="sxs-lookup"><span data-stu-id="10996-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="652eb-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="652eb-123">Request body</span></span>
-<span data-ttu-id="652eb-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="652eb-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="10996-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="10996-123">Request body</span></span>
+<span data-ttu-id="10996-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="10996-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="652eb-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="652eb-125">Response</span></span>
-<span data-ttu-id="652eb-126">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="652eb-126">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="10996-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="10996-125">Response</span></span>
+<span data-ttu-id="10996-126">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="10996-126">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="652eb-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="652eb-127">Example</span></span>
-### <a name="request"></a><span data-ttu-id="652eb-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="652eb-128">Request</span></span>
-<span data-ttu-id="652eb-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="652eb-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="10996-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="10996-127">Example</span></span>
+### <a name="request"></a><span data-ttu-id="10996-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="10996-128">Request</span></span>
+<span data-ttu-id="10996-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="10996-129">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}
 ```
 
-### <a name="response"></a><span data-ttu-id="652eb-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="652eb-130">Response</span></span>
-<span data-ttu-id="652eb-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="652eb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="10996-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="10996-130">Response</span></span>
+<span data-ttu-id="10996-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="10996-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
 
 
 
