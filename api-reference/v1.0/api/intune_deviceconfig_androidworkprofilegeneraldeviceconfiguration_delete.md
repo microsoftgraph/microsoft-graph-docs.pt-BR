@@ -1,14 +1,14 @@
-# <a name="delete-managedebookassignment"></a>Excluir managedEBookAssignment
+# <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Delete androidWorkProfileGeneralDeviceConfiguration
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Exclui [managedEBookAssignment](../resources/intune_books_managedebookassignment.md).
+Exclui um [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md).
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -18,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -37,7 +37,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBookAssignmentId}
+DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>Resposta

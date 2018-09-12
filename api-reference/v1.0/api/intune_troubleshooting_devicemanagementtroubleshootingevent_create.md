@@ -1,7 +1,5 @@
 # <a name="create-devicemanagementtroubleshootingevent"></a>Criar deviceManagementTroubleshootingEvent
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
-
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Criar um novo objeto [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).
@@ -26,7 +24,7 @@ POST /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -49,7 +47,7 @@ Se tiver êxito, este método retornará um código de resposta `201 Created` e 
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
+POST https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
 Content-type: application/json
 Content-length: 179
 
@@ -74,6 +72,7 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
 
 
 

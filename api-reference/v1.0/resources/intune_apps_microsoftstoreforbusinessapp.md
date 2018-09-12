@@ -31,11 +31,11 @@ Herda de [mobileApp](../resources/intune_apps_mobileapp.md)
 |owner|Cadeia de caracteres|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|Cadeia de caracteres|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
 |Observações|Cadeia de caracteres|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser atribuído a menos que esteja publicado. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|O número de aplicativos da Microsoft Store for Business em uso.|
 |totalLicenseCount|Int32|O número total de aplicativos da Microsoft Store for Business.|
 |productKey|Cadeia de caracteres|A chave de produto do aplicativo|
-|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|O tipo de licença de aplicativo. Os valores possíveis são: `offline`, `online`.|
+|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune_apps_microsoftstoreforbusinesslicensetype.md)|O tipo de licença do aplicativo Os valores possíveis são: `offline`, `online`.|
 |packageIdentityName|Cadeia de caracteres|O identificador do pacote do aplicativo|
 
 ## <a name="relationships"></a>Relações
@@ -48,8 +48,8 @@ Herda de [mobileApp](../resources/intune_apps_mobileapp.md)
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.microsoftStoreForBusinessApp"
 }-->
 ``` json
@@ -80,6 +80,11 @@ Veja a seguir uma representação JSON do recurso.
   "packageIdentityName": "String"
 }
 ```
+
+
+
+
+
 
 
 

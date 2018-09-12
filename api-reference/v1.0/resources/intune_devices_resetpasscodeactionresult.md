@@ -10,10 +10,10 @@ Herda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado da ação herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado da ação herdado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora em que ação foi iniciada, herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação Herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|senha|Cadeia de caracteres|Senha recentemente gerada para o dispositivo |
+|passcode|Cadeia de caracteres|Senha recentemente gerada para o dispositivo |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -21,7 +21,6 @@ Nenhum
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceActionResult",
   "@odata.type": "microsoft.graph.resetPasscodeActionResult"
 }-->
 ``` json
@@ -34,6 +33,11 @@ Veja a seguir uma representação JSON do recurso.
   "passcode": "String"
 }
 ```
+
+
+
+
+
 
 
 
