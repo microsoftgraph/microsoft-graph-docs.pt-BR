@@ -7,11 +7,17 @@ Enumeração do tipo ação programada
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |noAction|0|Nenhuma ação|
-|notificação|1|Enviar notificação|
-|bloqueio|2|Bloquear o dispositivo em AAD|
-|desativar|3|Desativar o dispositivo|
-|apagar|4|Apagar o dispositivo|
+|notification|1|Enviar notificação|
+|block|2|Bloquear o dispositivo em AAD|
+|retire|3|Desativar o dispositivo|
+|wipe|4|Apagar o dispositivo|
 |removeResourceAccessProfiles|5|Remover os perfis de acesso ao recurso do dispositivo|
+|pushNotification|9|Enviar notificação por push para o dispositivo|
+
+
+
+
+
 
 
 

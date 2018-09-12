@@ -2,7 +2,8 @@
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Ainda não documentado
+Recupera permissões efetivas de usuário autenticado no momento
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -34,7 +35,6 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |escopo|Cadeia de caracteres|Ainda não documentado|
-
 
 
 ## <a name="response"></a>Resposta

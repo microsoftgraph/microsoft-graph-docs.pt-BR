@@ -6,8 +6,8 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum motivo do estado de acesso descoberto do Exchange|
-|desconhecido|1|Motivo do estado de acesso desconhecido|
+|none|0|Nenhum motivo do estado de acesso descoberto do Exchange|
+|unknown|1|Motivo do estado de acesso desconhecido|
 |exchangeGlobalRule|2|Estado de acesso determinado pela regra Global do Exchange|
 |exchangeIndividualRule|3|Estado de acesso determinado pela regra Individual do Exchange|
 |exchangeDeviceRule|4|Estado de acesso determinado pela regra de Dispositivo do Exchange|
@@ -22,6 +22,11 @@ Motivo do estado de acesso ao Exchange do dispositivo.
 |azureADBlockDueToAccessPolicy|14|Estado de acesso revogado pela Política de acesso do AAD|
 |compromisedPassword|15|Estado de acesso revogado por senha comprometida|
 |deviceNotKnownWithManagedApp|16|Estado de acesso revogado pelo desafio de aplicativo gerenciado|
+
+
+
+
+
 
 
 

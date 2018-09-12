@@ -36,7 +36,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosVppEB
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade. Herda do [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|O destino da atribuição do livro eletrônico. Herda do [managedEBookAssignment](../resources/intune_books_managedebookassignment.md)|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|A tentativa de instalação do livro eletrônico. Herdado de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|A intenção de instalação para eBook. Herdada de [managedEBookAssignment](../resources/intune_books_managedebookassignment.md). Os possíveis valores são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

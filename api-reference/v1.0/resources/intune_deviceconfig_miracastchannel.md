@@ -30,3 +30,8 @@ Valores possíveis para o canal de Miracast.
 
 
 
+
+
+
+
+

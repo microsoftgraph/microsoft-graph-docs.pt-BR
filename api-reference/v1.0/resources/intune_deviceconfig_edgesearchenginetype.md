@@ -6,8 +6,13 @@ Permite que os administradores de TI configurem um mecanismo de pesquisa padrão
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|padrão|0|Usa as configurações de fábrica do Edge para atribuir o mecanismo de pesquisa padrão conforme o mercado de usuário|
+|default|0|Usa as configurações de fábrica do Edge para atribuir o mecanismo de pesquisa padrão conforme o mercado de usuário|
 |bing|1|Define o Bing como o mecanismo de pesquisa padrão|
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@ Uma das seguintes permissões é necessária para chamar essa API. Para saber ma
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegada (conta corporativa ou de estudante)| _varia de acordo com o contexto_ |
-| &nbsp; &nbsp; Dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; MAM | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; Nível de contratação | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
@@ -40,7 +40,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar user.
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do usuário.|
 |**Nível de contratação**|
-|deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos são 5 ou 1000.|
+|deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
 Suporte de propriedade de corpo de solicitação varia de acordo com o contexto.
 
@@ -63,7 +63,7 @@ Content-length: 46
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto resposta mostrado aqui pode estar truncado por motivo de concisão. Propriedades retornadas de uma chamada real variam de acordo com o contexto.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Propriedades retornadas de uma chamada real variam de acordo com o contexto.
 
 ``` http
 HTTP/1.1 201 Created

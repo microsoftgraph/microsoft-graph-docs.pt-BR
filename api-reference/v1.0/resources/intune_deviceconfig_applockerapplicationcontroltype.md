@@ -14,3 +14,8 @@ Valores possíveis de tipos de controle do aplicativo AppLocker
 
 
 
+
+
+
+
+

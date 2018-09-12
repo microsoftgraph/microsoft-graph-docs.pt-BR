@@ -6,13 +6,19 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|0|Ainda não documentado|
+|unknown|0|Ainda não documentado|
 |notApplicable|1|Ainda não documentado|
 |compliant|2|Ainda não documentado|
 |remediated|3|Ainda não documentado|
 |nonCompliant|4|Ainda não documentado|
-|error|5|Ainda não documentado|
+|erro|5|Ainda não documentado|
 |conflict|6|Ainda não documentado|
+|notAssigned|7|Ainda não documentado|
+
+
+
+
+
 
 
 

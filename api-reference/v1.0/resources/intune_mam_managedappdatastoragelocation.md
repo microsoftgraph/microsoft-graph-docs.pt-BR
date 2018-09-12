@@ -12,3 +12,8 @@ Locais de armazenamento onde aplicativos gerenciados podem potencialmente armaze
 
 
 
+
+
+
+
+

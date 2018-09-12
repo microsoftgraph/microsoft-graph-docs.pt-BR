@@ -22,7 +22,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
 |deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|flaggedReasons|coleção enumerada [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. Ex: aplicativo usado em dispositivo modificado|
+|flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. Ex: aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|O identificador do pacote do aplicativo|
 |id|Cadeia de caracteres|Chave da entidade.|
@@ -31,7 +31,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|appliedPolicies|Coleção [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Zero ou mais políticas já aplicadas ao aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
+|appliedPolicies|Coleção [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
 |intendedPolicies|Coleção [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Zero ou mais administradores de políticas destinados ao aplicativo a partir de agora.|
 |operations|Coleção [managedAppOperation](../resources/intune_mam_managedappoperation.md)|Zero ou mais operações de longa execução desencadeadas no registro do aplicativo.|
 
@@ -39,9 +39,8 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration"
 }-->
 ``` json
@@ -66,3 +65,11 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
+
+
+
+
+
+
+

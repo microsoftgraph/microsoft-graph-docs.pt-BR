@@ -18,14 +18,14 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |:---|:---|:---|
 |id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
 |organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra por Volume da Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|O tipo de programa de compra de volume ao qual o Token do Programa de Compra de Volume Apple especificado está associado. Os valores possíveis são: `business`, `education`. Os valores possíveis são: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|O tipo de programa de compra de volume ao qual o Token do Programa de Compra de Volume da Apple está associado. Os valores possíveis são: , . Os valores possíveis são: , .`business``education``business``education`|
 |appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
 |expirationDateTime|DateTimeOffset|A data e hora de expiração do Token do Apple Volume Purchase Program.|
 |lastSyncDateTime|DateTimeOffset|A última vez que uma sincronização de aplicativo foi realizada com o serviço do Apple Volume Purchase Program usando Token do Apple Volume Purchase Program.|
 |token|Cadeia de caracteres|A cadeia de caracteres do Token do Apple Volume Purchase Program baixada do Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação associada com o Token do Apple Volume Purchase Program.|
-|state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Estado atual do Token do Programa de Compra de Volume Apple. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`.|
-|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Programa de Compra de Volume Apple. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
+|state|[vppTokenState](../resources/intune_onboarding_vpptokenstate.md)|Estado atual do token do Programa de Compra de Volume da Apple. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Os valores possíveis são: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
+|lastSyncStatus|[vppTokenSyncStatus](../resources/intune_onboarding_vpptokensyncstatus.md)|Status de sincronização atual da última sincronização de aplicativo que foi disparada usando o token do Programa de Compra de Volume da Apple. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Booleano|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados.|
 
@@ -33,12 +33,12 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.vppToken"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -56,6 +56,11 @@ Veja a seguir uma representação JSON do recurso.
   "countryOrRegion": "String"
 }
 ```
+
+
+
+
+
 
 
 

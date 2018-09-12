@@ -26,7 +26,7 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 |owner|Cadeia de caracteres|O proprietário do conteúdo.|
 |developer|Cadeia de caracteres|O desenvolvedor do aplicativo.|
 |notes|Cadeia de caracteres|Anotações para o aplicativo.|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser atribuído, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser atribuído a menos esteja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -38,9 +38,8 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileApp"
 }-->
 ``` json
@@ -66,6 +65,11 @@ Veja a seguir uma representação JSON do recurso.
   "publishingState": "String"
 }
 ```
+
+
+
+
+
 
 
 

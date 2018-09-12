@@ -13,7 +13,12 @@ Tipo de senha necessária para Android.
 |lowSecurityBiometric|4|Senha com base em biometria de baixa segurança necessária.|
 |numérico|5|Senha numérica necessária.|
 |numericComplex|6|Senha numérica complexa necessária.|
-|qualquer um|7|É necessária uma senha ou padrão e qualquer um deles é aceitável.|
+|qualquer|7|É necessária uma senha ou padrão e qualquer um deles é aceitável.|
+
+
+
+
+
 
 
 
