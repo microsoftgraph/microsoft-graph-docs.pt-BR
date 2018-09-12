@@ -36,7 +36,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedE
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|O destino da atribuição do livro eletrônico.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|A tentativa de instalação do livro eletrônico. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|A tentativa de instalação para eBook. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 
 
@@ -76,6 +76,11 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
+
+
+
+
 
 
 

@@ -2,7 +2,7 @@
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Permitir que o dispositivo envie dados telemétricos de diagnóstico e uso, como Watson.
+Permitir que o dispositivo envie dados telemétricos de diagnóstico e uso, como o Watson.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -11,6 +11,11 @@ Permitir que o dispositivo envie dados telemétricos de diagnóstico e uso, como
 |basic|2|Envia dados telemétricos básicos.|
 |enhanced|3|Envia dados telemétricos avançados, incluindo dados de uso e insights.|
 |full|4|Envia dados telemétricos completos incluindo dados de diagnósticos, como o estado do sistema.|
+
+
+
+
+
 
 
 

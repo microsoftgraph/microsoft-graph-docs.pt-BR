@@ -7,9 +7,14 @@ Valores possíveis para nível de segurança do site.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|meio|1|Meio.|
+|medium|1|Média.|
 |mediumHigh|2|Meio-alto.|
 |high|3|Alto.|
+
+
+
+
+
 
 
 

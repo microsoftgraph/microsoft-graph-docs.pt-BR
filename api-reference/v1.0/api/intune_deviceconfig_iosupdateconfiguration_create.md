@@ -42,7 +42,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosUpdateConfigu
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|Início do Horário Ativo (o horário ativo significa a janela de tempo quando a instalação das atualizações não deve acontecer)|
 |activeHoursEnd|TimeOfDay|Término do Horário Ativo (o horário ativo significa a janela de tempo quando a instalação das atualizações não deve acontecer)|
-|scheduledInstallDays|coleção [dayOfWeek enum](../resources/intune_deviceconfig_dayofweek.md)|Dias na semana para os quais o horário ativo está configurado. Essa coleção pode conter um máximo de 7 elementos. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDays|coleção [dayOfWeek enum](../resources/intune_deviceconfig_dayofweek.md)|Dias na semana para os quais as horas ativas são configuradas. Essa coleção pode conter um máximo de 7 elementos. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |utcTimeOffsetInMinutes|Int32|Deslocamento do horário UTC indicado em minutos|
 
 
@@ -96,6 +96,11 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
+
+
+
 
 
 

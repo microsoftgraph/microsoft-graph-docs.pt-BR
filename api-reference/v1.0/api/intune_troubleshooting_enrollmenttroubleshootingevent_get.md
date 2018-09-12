@@ -1,6 +1,4 @@
-# <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
-
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+# <a name="get-enrollmenttroubleshootingevent"></a>Obter enrollmentTroubleshootingEvent
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
@@ -41,7 +39,7 @@ Se bem-sucedido, este método retornará um código de resposta `200 OK` e um ob
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 ```
 
 ### <a name="response"></a>Resposta
@@ -68,6 +66,7 @@ Content-Length: 601
   }
 }
 ```
+
 
 
 
