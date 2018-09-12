@@ -42,14 +42,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |firewallBlockStatefulFTP|Booleano|Bloqueia conexões de FTP com estado ao dispositivo|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura o tempo limite ocioso das associações de segurança, em segundos, de 300 para 3.600, inclusive. Após esse período, as associações de segurança expirarão e serão excluídas. Valores válidos de 300 a 3.600|
-|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype.md)|Selecionar a codificação de chave pré-compartilhada a ser usada. Os valores possíveis são: `deviceDefault`, `none`, `utF8`.|
+|firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune_deviceconfig_firewallpresharedkeyencodingmethodtype.md)|Seleciona a codificação de chave pré-compartilhada a ser usada Os valores possíveis são: `deviceDefault`, `none`, `utF8`.|
 |firewallIPSecExemptionsAllowNeighborDiscovery|Booleano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
 |firewallIPSecExemptionsAllowICMP|Booleano|Configura isenções IPSec para permitir ICMP|
 |firewallIPSecExemptionsAllowRouterDiscovery|Booleano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
 |firewallIPSecExemptionsAllowDHCP|Booleano|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
-|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md)|Especifique como a lista de revogação de certificado deve ser imposta. Os valores possíveis são: `deviceDefault`, `none`, `attempt`, `require`.|
+|firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype.md)|Especifica como a lista de revogação de certificados é aplicada Os valores possíveis são: `deviceDefault`, `none`, `attempt`, `require`.|
 |firewallMergeKeyingModuleSettings|Booleano|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
-|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune_deviceconfig_firewallpacketqueueingmethodtype.md)|Configura como o enfileiramento de pacotes deve ser aplicado no cenário gateway de túnel. Os valores possíveis são: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
+|firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune_deviceconfig_firewallpacketqueueingmethodtype.md)|Configura como o enfileiramento de pacote deve ser aplicado no cenário de gateway de túnel. Os valores possíveis são: `deviceDefault` `disabled` `queueInbound` `queueOutbound` `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes do domínio|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes públicas|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune_deviceconfig_windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes privadas|
@@ -59,15 +59,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
 |defenderExploitProtectionXmlFileName|Cadeia de caracteres|Nome do arquivo do qual DefenderExploitProtectionXml foi obtido.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Booleano|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
-|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune_deviceconfig_applockerapplicationcontroltype.md)|Habilita o administrador a escolher quais tipos de aplicativo quer permitir nos dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
+|appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune_deviceconfig_applockerapplicationcontroltype.md)|Permite que o administrador escolha quais tipos de aplicativo permitir em dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |smartScreenEnableInShell|Booleano|Permite que os administradores de TI configurem SmartScreen para Windows.|
 |smartScreenBlockOverrideForFiles|Booleano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
 |applicationGuardEnabled|Booleano|Habilitar o Windows Defender Application Guard|
-|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Impedir a área de transferência de transferir um arquivo de imagem, arquivo de texto ou nenhum deles. Os valores possíveis são: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
+|applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune_deviceconfig_applicationguardblockfiletransfertype.md)|Impedir a área de transferência de transferir arquivo de imagem, arquivo de texto ou nenhum deles. Os valores possíveis são: `notConfigured` `blockImageAndTextFile` `blockImageFile` `blockNone` `blockTextFile`|
 |applicationGuardBlockNonEnterpriseContent|Booleano|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
 |applicationGuardAllowPersistence|Booleano|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web, etc.)|
 |applicationGuardForceAuditing|Booleano|A auditoria forçada manterá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema, etc.)|
-|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune_deviceconfig_applicationguardblockclipboardsharingtype.md)|Impedir a área de transferência de compartilhar dados do Host para o Contêiner, do Contêiner para o Host ou em ambas as direções. Os valores possíveis são: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
+|applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune_deviceconfig_applicationguardblockclipboardsharingtype.md)|Impede a área de transferência de compartilhar dados do Host para o Contêiner, do Contêiner para o Host ou em ambas as direções. Os valores possíveis são: `notConfigured` `blockBoth` `blockHostToContainer` `blockContainerToHost` `blockNone`.|
 |applicationGuardAllowPrintToPDF|Booleano|Permitir a impressão em PDF pelo contêiner|
 |applicationGuardAllowPrintToXPS|Booleano|Permitir a impressão em XPS pelo contêiner|
 |applicationGuardAllowPrintToLocalPrinters|Booleano|Permitir a impressão em Impressoras Locais pelo contêiner|
@@ -294,6 +294,11 @@ Content-Length: 4417
   }
 }
 ```
+
+
+
+
+
 
 
 
