@@ -8,8 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,7 +38,7 @@ A seguir alguns exemplos de consultas compatíveis com a codificação de URL.
 /me/activities/recent?$top=5
 ```
 
-## <a name="request-headers"></a>Cabeçalhos da solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
@@ -136,7 +136,23 @@ Content-Type: application/json
   "section": "documentation",
   "suppressions": [
     "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members."
+      Property 'contentInfo' is of type Custom but has no custom members.",
+
+    "Warning: get_recent_activities/container/visualElements:
+      Schema validation failed on property 'visualElements' ['microsoft.graph.visualInfo']",
+
+    "Warning: get_recent_activities/container/visualElements/content:
+      Schema validation failed on property 'content' ['microsoft.graph.Json']",
+
+    "Warning: get_recent_activities/container/visualElements/content/$schema:
+      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/body:
+      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/type:
+      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
+
   ],
   "tocPath": ""
 }-->

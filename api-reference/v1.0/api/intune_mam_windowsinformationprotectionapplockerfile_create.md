@@ -27,7 +27,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -39,7 +39,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
-|file|Binária|Arquivo como uma matriz de bytes|
+|file|Binário|Arquivo como uma matriz de bytes|
 |id|Cadeia de caracteres|Chave da entidade.|
 |version|Cadeia de caracteres|Versão da entidade.|
 
@@ -81,6 +81,11 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
+
+
+
 
 
 

@@ -8,10 +8,15 @@ Valores possíveis para o estado da instalação.
 |:---|:---|:---|
 |notApplicable|0|Não aplicável.|
 |installed|1|Instalado.|
-|falhou|2|Falhou.|
+|failed|2|Falhou.|
 |notInstalled|3|Não instalado.|
 |uninstallFailed|4|Desinstalação falhou.|
 |unknown|5|Desconhecido.|
+
+
+
+
+
 
 
 
