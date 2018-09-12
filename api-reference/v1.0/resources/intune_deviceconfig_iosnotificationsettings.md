@@ -12,7 +12,7 @@ Um item que descreve a configuração de notificação.
 |enabled|Booliano|Indica se são permitidas notificações neste aplicativo.|
 |showInNotificationCenter|Booliano|Indica se as notificações podem ser exibidas no centro de notificações.|
 |showOnLockScreen|Booliano|Indica se as notificações podem ser exibidas na tela de bloqueio.|
-|alertType|[iosNotificationAlertType](../resources/intune_deviceconfig_iosnotificationalerttype.md)|Indica o tipo de alerta para notificações neste aplicativo. Os valores possíveis são: `deviceDefault`, `banner`, `modal`, `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune_deviceconfig_iosnotificationalerttype.md)|Indica o tipo de alerta para notificações para esse aplicativo. Os valores possíveis são: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Booliano|Indica se serão permitidos selos neste aplicativo.|
 |soundsEnabled|Booliano|Indica se são permitidos sons neste aplicativo.|
 
@@ -38,6 +38,11 @@ Veja a seguir uma representação JSON do recurso.
   "soundsEnabled": true
 }
 ```
+
+
+
+
+
 
 
 

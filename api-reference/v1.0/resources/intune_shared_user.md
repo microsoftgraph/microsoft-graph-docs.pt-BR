@@ -7,15 +7,15 @@ Representa um objeto de usuário do Azure Active Directory.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|Objetos [List users](../api/intune_shared_user_list.md).|
-|Objeto [Get user](../api/intune_shared_user_get.md).|
-|Objeto  [Create user](../api/intune_shared_user_create.md).|
-|[Delete user](../api/intune_shared_user_delete.md).|
-|Objeto [Update user](../api/intune_shared_user_update.md).|
+|Objetos [List users](../api/intune_shared_user_list.md).|Coleção [user](../resources/intune_shared_user.md)|Propriedades de lista e relacionamentos de objetos de [usuário](../resources/intune_shared_user.md).|
+|Objeto [Get user](../api/intune_shared_user_get.md).|Coleção [user](../resources/intune_shared_user.md)|Propriedades de leitura e relacionamentos do objeto [user](../resources/intune_shared_user.md).|
+|Objeto [Create user](../api/intune_shared_user_create.md).|Coleção [user](../resources/intune_shared_user.md)|Criar um novo objeto [user](../resources/intune_shared_user.md).|
+|[Delete user](../api/intune_shared_user_delete.md).|Nenhum|Exclui um [usuário](../resources/intune_shared_user.md).|
+|Objeto [Update user](../api/intune_shared_user_update.md).|[user](../resources/intune_shared_user.md)|Atualizar as propriedades de um objeto [user](../resources/intune_shared_user.md).|
 |**Gerenciamento de dispositivos**|
 |[Ação removeAllDevicesFromManagement](../api/intune_shared_user_removealldevicesfrommanagement.md)|Nenhum|Desativa todos os dispositivos de gerenciamento deste usuário|
 |**Gerenciamento de aplicativo móvel (MAM)**|
-|[função getManagedAppDiagnosticStatuses](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|Conjunto [managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md)|Obtém diagnóstico do status de validação para um determinado usuário.|
+|[Função getManagedAppDiagnosticStatuses](../api/intune_shared_user_getmanagedappdiagnosticstatuses.md)|Conjunto [managedAppDiagnosticStatus](../resources/intune_mam_managedappdiagnosticstatus.md)|Obtém diagnóstico do status de validação para um determinado usuário.|
 |[Função getManagedAppPolicies](../api/intune_shared_user_getmanagedapppolicies.md)|Conjunto [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|Obtém as restrições de aplicativo para um determinado usuário.|
 |[Ação wipeManagedAppRegistrationsByDeviceTag](../api/intune_shared_user_wipemanagedappregistrationsbydevicetag.md)|Nenhum|Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.|
 

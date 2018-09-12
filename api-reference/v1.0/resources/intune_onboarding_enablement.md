@@ -7,8 +7,13 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|0|Ainda não documentado|
-|habilitado|1|Ainda não documentado|
-|desabilitado|2|Ainda não documentado|
+|enabled|1|Ainda não documentado|
+|disabled|2|Ainda não documentado|
+
+
+
+
+
 
 
 
