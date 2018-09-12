@@ -7,8 +7,13 @@ Valores possíveis para firewallPreSharedKeyEncodingMethod
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Nenhum valor configurado por Intune, não substituir o valor padrão de dispositivo configurado pelo usuário|
-|none|1|A chave pré-compartilhada não é codificada. É mantida em seu formato de caractere largo|
+|nenhum|1|A chave pré-compartilhada não é codificada. É mantida em seu formato de caractere largo|
 |utF8|2|Codificar a chave pré-compartilhada usando UTF-8|
+
+
+
+
+
 
 
 

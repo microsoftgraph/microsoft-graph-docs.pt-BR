@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade necessários antes que uma senha seja necessária.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade necessários antes que a tela atinja o tempo limite.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|Tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Booleano|Se uma senha deve ou não ser exigida.|
 
 
@@ -136,6 +136,11 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
+
+
+
+
+
 
 
 

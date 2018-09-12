@@ -6,18 +6,17 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|movieRating|[ratingGermanyMoviesType](../resources/intune_deviceconfig_ratinggermanymoviestype.md)|Classificação de filmes selecionados para a Alemanha. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
+|movieRating|[ratingGermanyMoviesType](../resources/intune_deviceconfig_ratinggermanymoviestype.md)|Classificação de filmes selecionada para a Alemanha. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
 |tvRating|[ratingGermanyTelevisionType](../resources/intune_deviceconfig_ratinggermanytelevisiontype.md)|Classificação de TV selecionada para a Alemanha. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults`.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingGermany"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mediaContentRatingGermany",
@@ -25,6 +24,11 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
+
+
+
+
 
 
 

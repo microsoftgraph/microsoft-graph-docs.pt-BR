@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10TeamGen
 |settingsSleepTimeoutInMinutes|Int32|Especifica o número de minutos até o Hub entrar no modo de suspensão.|
 |welcomeScreenBlockAutomaticWakeUp|Booleano|Indica se a tela de boas-vindas será impedida de ser desativada automaticamente quando alguém entrar na sala.|
 |welcomeScreenBackgroundImageUrl|Cadeia de caracteres|A URL da imagem de fundo da tela de boas-vindas. A URL deve usar o protocolo HTTPS e retornar uma imagem PNG.|
-|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|As informações da reunião mostradas na tela de boas-vindas. Os valores possíveis são: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune_deviceconfig_welcomescreenmeetinginformation.md)|As informações da reunião da tela de boas-vindas são mostradas. Os valores possíveis são: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 
 
 
@@ -140,6 +140,11 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
+
+
+
+
 
 
 

@@ -25,7 +25,7 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune_deviceconfig_sharedpcaccountmanagerpolicy.md)|Especifica como as contas são gerenciadas em um PC compartilhado. Aplica-se somente quando disableAccountManager é false.|
-|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune_deviceconfig_sharedpcallowedaccounttype.md)|Indica que tipos de contas podem ser usadas em um PC compartilhado. Os valores possíveis são: `guest`, `domain`.|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune_deviceconfig_sharedpcallowedaccounttype.md)|Indica quais tipos de contas têm permissão para usar em um PC compartilhado. Os valores possíveis são: `guest`, `domain`.|
 |allowLocalStorage|Booleano|Especifica se o armazenamento local é permitido em um PC compartilhado.|
 |disableAccountManager|Booleano|Desabilita o gerente de contas para o modo de PC compartilhado.|
 |disableEduPolicies|Booleano|Especifica se as políticas padrão de ambiente de educação do PC compartilhado devem ser desabilitadas. Para o Windows 10 RS2 e posterior, essa política será aplicada sem configurar Enabled como true.|
@@ -42,7 +42,7 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |:---|:---|:---|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|Conjunto [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
@@ -51,8 +51,8 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedPCConfiguration"
 }-->
 ``` json
@@ -84,6 +84,11 @@ Veja a seguir uma representação JSON do recurso.
   "maintenanceStartTime": "String (time of day)"
 }
 ```
+
+
+
+
+
 
 
 

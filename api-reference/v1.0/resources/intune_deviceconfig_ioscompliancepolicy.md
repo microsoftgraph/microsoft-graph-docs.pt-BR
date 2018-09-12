@@ -36,7 +36,7 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do iOS.|
 |securityBlockJailbrokenDevices|Booleano|Os dispositivos não podem ser desbloqueados ou modificados.|
 |deviceThreatProtectionEnabled|Booleano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível mínimo de risco de Proteção contra ameaças móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível de risco mínimo de Proteção Contra Ameaças Móveis para relatar a não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Booleano|Indica se um perfil de email gerenciado deve ou não ser exigido.|
 
 ## <a name="relationships"></a>Relações
@@ -52,13 +52,12 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosCompliancePolicy",
@@ -84,6 +83,11 @@ Veja a seguir uma representação JSON do recurso.
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
+
+
 
 
 

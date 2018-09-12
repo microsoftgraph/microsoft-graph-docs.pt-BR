@@ -4,12 +4,12 @@
 
 Leia as propriedades e as relações do objeto [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das permissões a seguir é obrigatória para chamar esta API. Para saber mais, inclusive como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -22,11 +22,11 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComplia
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -52,10 +52,10 @@ Content-Length: 483
 {
   "value": {
     "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "setting": "Setting value",
     "settingName": "Setting Name value",
     "platformType": "iOS",
-    "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
     "unknownDeviceCount": 2,
     "notApplicableDeviceCount": 8,
     "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 483
   }
 }
 ```
+
+
+
+
+
 
 
 

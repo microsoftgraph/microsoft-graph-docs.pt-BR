@@ -28,7 +28,7 @@ Herda de [mobileApp](../resources/intune_apps_mobileapp.md)
 |owner|Cadeia de caracteres|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
 |developer|Cadeia de caracteres|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
 |Observações|Cadeia de caracteres|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser atribuído, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune_apps_mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser atribuído a menos que esteja publicado. Herdada de [mobileApp](../resources/intune_apps_mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |committedContentVersion|Cadeia de caracteres|A versão do conteúdo interno confirmado.|
 |fileName|Cadeia de caracteres|O nome do arquivo do aplicativo Lob principal.|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados.|
@@ -44,9 +44,8 @@ Herda de [mobileApp](../resources/intune_apps_mobileapp.md)
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "abstract": true,
-  "keyProperty": "id",
   "baseType": "microsoft.graph.mobileApp",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileLobApp"
 }-->
 ``` json
@@ -75,6 +74,11 @@ Veja a seguir uma representação JSON do recurso.
   "size": 1024
 }
 ```
+
+
+
+
+
 
 
 

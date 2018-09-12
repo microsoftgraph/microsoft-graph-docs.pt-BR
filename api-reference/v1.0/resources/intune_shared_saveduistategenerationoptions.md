@@ -6,8 +6,13 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Ainda não documentado|
+|none|0|Ainda não documentado|
 |omitSilverlightPolicyReferences|1|Ainda não documentado|
+
+
+
+
+
 
 
 

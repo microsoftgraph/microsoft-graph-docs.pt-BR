@@ -26,7 +26,7 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|Início do Horário Ativo (o horário ativo significa a janela de tempo quando a instalação das atualizações não deve acontecer)|
 |activeHoursEnd|TimeOfDay|Término do Horário Ativo (o horário ativo significa a janela de tempo quando a instalação das atualizações não deve acontecer)|
-|scheduledInstallDays|coleção [dayOfWeek enum](../resources/intune_deviceconfig_dayofweek.md)|Dias na semana para os quais o horário ativo está configurado. Essa coleção pode conter um máximo de 7 elementos.|
+|scheduledInstallDays|coleção [dayOfWeek](../resources/intune_deviceconfig_dayofweek.md)|Dias na semana em que as horas ativas estão configuradas. Essa coleção pode conter um máximo de 7 elementos.|
 |utcTimeOffsetInMinutes|Int32|Deslocamento do horário UTC indicado em minutos|
 
 ## <a name="relationships"></a>Relações
@@ -43,8 +43,8 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 Veja a seguir uma representação JSON do recurso.
 <!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceConfiguration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosUpdateConfiguration"
 }-->
 ``` json
@@ -64,6 +64,19 @@ Veja a seguir uma representação JSON do recurso.
   "utcTimeOffsetInMinutes": 1024
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/intune_deviceconfig_iosupdateconfiguration.md/microsoft.graph.iosUpdateConfiguration/scheduledInstallDays:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
+}
+-->
+
+
+
+
 
 
 

@@ -49,28 +49,28 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| changeType | sequência de caracteres | Obrigatório. Indica o tipo de alteração no recurso da assinatura que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgulas.<br><br>Nota: Notificações de item de raiz de unidade suportam somente a `updated` changeType. Suporte a notificações de usuários e grupos `updated` e `deleted` changeType.|
+| changeType | sequência de caracteres | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula.<br><br>Nota: Notificações de item de raiz de unidade suportam somente a `updated` changeType. Suporte a notificações de usuários e grupos `updated` e `deleted` changeType.|
 | notificationUrl | sequência de caracteres | Obrigatório. A URL do ponto de extremidade que receberá as notificações. Essa URL deve usar o protocolo HTTPS. |
 | recurso | sequência de caracteres | Obrigatório. Especifica o recurso cujas alterações serão monitoradas. Não incluir a URL base (`https://graph.microsoft.com/v1.0/`). |
-| expirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura de webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
+| expirationDateTime | [dateTime](http://tools.ietf.org/html/rfc3339) | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
 | clientState | sequência de caracteres | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação. O comprimento máximo é de 128 caracteres. O cliente pode verificar se a notificação foi proveniente do serviço comparando o valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida com cada notificação. |
-| id | sequência de caracteres | Identificador único para a assinatura. Somente leitura. |
-| applicationId | sequência de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
-| creatorId | sequência de caracteres | Identificador do usuário ou da entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, esse campo contém o ID do usuário conectado em nome do qual o aplicativo foi chamado. Se o aplicativo usou as permissões do aplicativo, esse campo contém o id da entidade de serviço correspondente para o aplicativo. Somente leitura. |
+| id | sequência de caracteres | Identificador exclusivo da assinatura. Somente leitura. |
+| applicationId | cadeia de caracteres | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
+| creatorId | cadeia de caracteres | Identificador do usuário ou da entidade de serviço que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, esse campo contém o ID do usuário conectado em nome do qual o aplicativo foi chamado. Se o aplicativo usou as permissões do aplicativo, esse campo contém o id da entidade de serviço correspondente para o aplicativo. Somente leitura. |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 
 | Recurso            | Tempo de Expiração Máximo  |
 |:--------------------|:-------------------------|
-| Email                | 4320 minutos (3 dias)    |
-| Calendário            | 4320 minutos (3 dias)    |
-| Contatos            | 4320 minutos (3 dias)    |
-| Conversas em grupo | 4320 minutos (3 dias)    |
-| Itens raiz de unidade    | 4320 minutos (3 dias) |
+| Email                | 4230 minutos (menos de 3 dias)    |
+| Calendário            | 4230 minutos (menos de 3 dias)    |
+| Contatos            | 4230 minutos (menos de 3 dias)    |
+| Conversas em grupo | 4230 minutos (menos de 3 dias)    |
+| Itens raiz de unidade    | 4230 minutos (menos de 3 dias)    |
 
-> **Note:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor máximo. No futuro, quaisquer solicitações para criar ou renovar uma assinatura além do valor máximo, falhará.
+> **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor máximo. No futuro, quaisquer solicitações para criar ou renovar uma assinatura além do valor máximo, falhará.
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 
 Nenhum
 

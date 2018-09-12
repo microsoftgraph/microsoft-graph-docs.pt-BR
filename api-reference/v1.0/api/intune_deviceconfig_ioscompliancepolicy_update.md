@@ -46,13 +46,13 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [iosCompliancePo
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que um código de acesso seja necessário.|
 |passcodePreviousPasscodeBlockCount|Int32|Número de códigos de acesso anteriores para bloquear. Valores válidos de 1 a 24|
 |passcodeMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Booleano|Indica se um código de acesso deve ou não ser exigido.|
 |osMinimumVersion|Cadeia de caracteres|Versão mínima do IOS.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do iOS.|
 |securityBlockJailbrokenDevices|Booleano|Os dispositivos não podem ser desbloqueados ou modificados.|
 |deviceThreatProtectionEnabled|Booleano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível de risco mínimo de proteção contra ameaças móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível de risco mínimo de Proteção Contra Ameaças Móveis para relatar a não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Booleano|Indica se um perfil de email gerenciado deve ou não ser exigido.|
 
 
@@ -121,6 +121,11 @@ Content-Length: 917
   "managedEmailProfileRequired": true
 }
 ```
+
+
+
+
+
 
 
 

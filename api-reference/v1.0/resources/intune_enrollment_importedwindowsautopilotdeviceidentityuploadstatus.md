@@ -1,13 +1,15 @@
-# <a name="sharedpcallowedaccounttype-enum-type"></a>tipo enumerado sharedPCAllowedAccountType
+# <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>Tipo enumerado importedWindowsAutopilotDeviceIdentityUploadStatus
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Tipo de contas que têm permissão para compartilhar o PC.
+Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|guest|1|Apenas contas de convidados. Valor padrão.|
-|domain|2|Somente contas associados a um domínio.|
+|noUpload|0|Nenhum status de carregamento.|
+|pending|1|Status pendente.|
+|complete|2|Status concluído.|
+|erro|3|Status de erro.|
 
 
 

@@ -11,3 +11,8 @@ O tipo de sincronização solicitada do Exchange Connector.
 
 
 
+
+
+
+
+

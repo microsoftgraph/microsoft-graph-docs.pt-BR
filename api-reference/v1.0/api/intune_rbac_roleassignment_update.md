@@ -24,7 +24,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -34,7 +34,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleAss
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
 |descrição|Cadeia de caracteres|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
@@ -78,6 +78,11 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
+
+
 
 
 

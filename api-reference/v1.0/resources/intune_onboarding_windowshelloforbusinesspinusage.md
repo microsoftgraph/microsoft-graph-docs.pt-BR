@@ -12,3 +12,8 @@ Opções de uso de pin para o Windows Hello for Business
 
 
 
+
+
+
+
+

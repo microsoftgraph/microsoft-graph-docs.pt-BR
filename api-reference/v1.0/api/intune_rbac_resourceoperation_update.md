@@ -1,6 +1,6 @@
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Atualizar as propriedades de um objeto [resourceOperation](../resources/intune_rbac_resourceoperation.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt; obrigatório.|
-|Accept|application/json|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [resourceOperation](../resources/intune_rbac_resourceoperation.md).
@@ -74,6 +74,11 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
+
+
 
 
 
