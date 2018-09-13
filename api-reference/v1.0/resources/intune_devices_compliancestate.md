@@ -6,13 +6,18 @@ Estado de conformidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|desconhecido|0|Desconhecido.|
+|unknown|0|Desconhecido.|
 |em conformidade|1|Em conformidade.|
 |sem conformidade|2|Dispositivo não está em conformidade e está bloqueado para recursos corporativos.|
 |conflito|3|Conflito com outras regras.|
-|erro|4|Erro.|
+|erro|4|Erro|
 |prazo de tolerância|254|Dispositivo não está em conformidade, mas ainda tem acesso aos recursos corporativos|
 |configManager|255|Gerenciado pelo Gerenciador de configuração|
+
+
+
+
+
 
 
 

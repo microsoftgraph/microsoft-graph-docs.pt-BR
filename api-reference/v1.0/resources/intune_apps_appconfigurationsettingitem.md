@@ -7,7 +7,7 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appConfigKey|Cadeia de caracteres|chave de configuração do aplicativo.|
-|appConfigKeyType|mdmAppConfigKeyType|tipo de chave de configuração de aplicativo. Os valores possíveis são: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
+|appConfigKeyType|[mdmAppConfigKeyType](../resources/intune_apps_mdmappconfigkeytype.md)|tipo de chave de configuração de aplicativo. Os valores possíveis são: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Cadeia de caracteres|valor de chave de configuração de aplicativo.|
 
 ## <a name="relationships"></a>Relações
@@ -26,6 +26,11 @@ Veja a seguir uma representação JSON do recurso.
   "appConfigKeyValue": "String"
 }
 ```
+
+
+
+
+
 
 
 

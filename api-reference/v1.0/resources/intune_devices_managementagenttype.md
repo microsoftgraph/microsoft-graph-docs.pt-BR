@@ -14,9 +14,14 @@ Tipo de agente de gerenciamento.
 |configurationManagerClient|8|O dispositivo é gerenciado pelo Gerenciador de Configurações.|
 |configurationManagerClientMdm|10|O dispositivo é gerenciado pelo Gerenciador de Configurações e pelo gerenciamento de dispositivo móvel.|
 |configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Gerenciador de Configurações, pelo gerenciamento de dispositivo móvel e pelo Eas.|
-|desconhecido|16|Tipo de agente de gerenciamento desconhecido.|
+|unknown|16|Tipo de agente de gerenciamento desconhecido.|
 |jamf|32|Os atributos de dispositivo são obtidos no Jamf.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado por CloudDPC do Google.|
+
+
+
+
+
 
 
 

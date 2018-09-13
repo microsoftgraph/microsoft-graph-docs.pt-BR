@@ -13,3 +13,8 @@ Representa o nível ao qual a área de transferência do dispositivo pode ser co
 
 
 
+
+
+
+
+

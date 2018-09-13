@@ -7,8 +7,13 @@ Especifica qual nível de pesquisa segura (filtragem de conteúdo para adultos) 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|restrito|1|Restrito, mais alto de filtragem em relação a conteúdo para adultos.|
-|moderado|2|Moderar filtragem em relação a conteúdo para adultos (resultados de pesquisa válidos não serão filtrados).|
+|strict|1|Restrito, mais alto de filtragem em relação a conteúdo para adultos.|
+|moderate|2|Moderar filtragem em relação a conteúdo para adultos (resultados de pesquisa válidos não serão filtrados).|
+
+
+
+
+
 
 
 

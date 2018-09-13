@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |searchDisableIndexerBackoff|Booleano|Indica se o recurso de retirada de indexador de pesquisa deve ou não ser desativado.|
 |searchDisableIndexingRemovableDrive|Booleano|Indica se os usuários poderão ou não adicionar locais de unidades removíveis a bibliotecas e para serem indexados.|
 |searchEnableAutomaticIndexSizeManangement|Booleano|Especifica uma quantidade mínima de espaço em disco rígido na mesma unidade como o local do índice antes que a indexação seja interrompida.|
-|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|Obtém ou define um valor que permite que o dispositivo envie dados de diagnóstico e de telemetria de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
+|diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune_deviceconfig_diagnosticdatasubmissionmode.md)|Obtém ou define um valor, permitindo que o dispositivo envie diagnóstico e dados telemétricos de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Booleano|Obtém ou define um valor para permitir que os administradores de TI impeçam aplicativos e recursos de trabalhar com arquivos no OneDrive.|
 |smartScreenEnableAppInstallControl|Booleano|Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store.|
 |personalizationDesktopImageUrl|Cadeia de caracteres|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da área de trabalho ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da área de trabalho.|
@@ -64,7 +64,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |bluetoothBlockPrePairing|Booleano|Se determinados periféricos Bluetooth agrupados serão bloqueados ou não do emparelhamento automático com o dispositivo host.|
 |edgeBlockAutofill|Booleano|Indica se o preenchimento automático deve ou não ser bloqueado.|
 |edgeBlocked|Booleano|Indica se o usuário será ou não impedido de usar o navegador Edge.|
-|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|Indica quais cookies bloquear no navegador Edge. Os valores possíveis são: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
+|edgeCookiePolicy|[edgeCookiePolicy](../resources/intune_deviceconfig_edgecookiepolicy.md)|Indica quais cookies bloquear no navegador do Edge. Os valores possíveis são: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
 |edgeBlockDeveloperTools|Booleano|Indica se as ferramentas de desenvolvedor serão bloqueadas ou não no navegador Edge.|
 |edgeBlockSendingDoNotTrackHeader|Booleano|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
 |edgeBlockExtensions|Booleano|Indica se as extensões serão bloqueadas ou não no navegador Edge.|
@@ -84,13 +84,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderBlockEndUserAccess|Booleano|Se o usuário final será ou não impedido de acessar o Defender.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de dias antes da exclusão do malware em quarentena. Valores válidos de 0 a 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune_deviceconfig_defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Dia da semana no Defender para varredura do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |defenderFilesAndFoldersToExclude|Coleção de sequência de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
 |defenderFileExtensionsToExclude|Coleção de sequência de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
 |defenderScanMaxCpu|Int32|Porcentagem máxima de uso da CPU durante a verificação. Valores válidos de 0 a 100|
-|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Valor de monitoramento da atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune_deviceconfig_defendermonitorfileactivity.md)|Valor para monitorar a atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderProcessesToExclude|Coleção de sequência de caracteres|Processos a serem excluídos das verificações e da proteção em tempo real.|
-|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|A configuração do modo como avisar um usuário do envio de exemplo. Os valores possíveis são: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
+|defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune_deviceconfig_defenderpromptforsamplesubmission.md)|A configuração sobre como solicitar ao usuário o envio da amostra. os valores possíveis são: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Booleano|Indica se o monitoramento de comportamento deve ou não ser exigido.|
 |defenderRequireCloudProtection|Booleano|Indica se a proteção na nuvem deve ou não ser exigida.|
 |defenderRequireNetworkInspectionSystem|Booleano|Indica se o sistema de inspeção de rede deve ou não ser exigido.|
@@ -103,10 +103,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderScanRemovableDrivesDuringFullScan|Booleano|Indica se as unidades removíveis devem ou não ser verificadas durante a verificação completa.|
 |defenderScanScriptsLoadedInInternetExplorer|Booleano|Indica se os scripts carregados no navegador Internet Explorer devem ou não ser verificados.|
 |defenderSignatureUpdateIntervalInHours|Int32|O intervalo de atualização da assinatura em horas. Especifique 0 para não verificar. Valores válidos de 0 a 24|
-|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|O tipo de verificação do sistema do Defender. Os valores possíveis são: `userDefined`, `disabled`, `quick`, `full`.|
+|defenderScanType|[defenderScanType](../resources/intune_deviceconfig_defenderscantype.md)|O tipo de varredura do sistema do Defender. Os valores possíveis são: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|A hora em que o Defender fará a verificação do sistema.|
 |defenderScheduledQuickScanTime|TimeOfDay|O horário de realização da verificação diária rápida.|
-|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Especifica o nível de proteção oferecido na nuvem. Os valores possíveis são: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
+|defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune_deviceconfig_defendercloudblockleveltype.md)|Especifica o nível de proteção entregue na nuvem. Os valores possíveis são: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
 |lockScreenAllowTimeoutConfiguration|Booleano|Especifique se deseja mostrar uma definição configurável pelo usuário para controlar o tempo limite da tela enquanto estiver na tela de bloqueio de dispositivos Windows Mobile 10. Se essa política estiver definida como Permitir, o valor definido por lockScreenTimeoutInSeconds será ignorado.|
 |lockScreenBlockActionCenterNotifications|Booleano|Indica se as notificações da central de ações na tela de bloqueio serão bloqueadas.|
 |lockScreenBlockCortana|Booleano|Indica se o usuário pode ou não interagir com a Cortana usando a fala enquanto o sistema estiver bloqueado.|
@@ -122,11 +122,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |passwordRequireWhenResumeFromIdleState|Booleano|Indica se uma senha deve ou não ser exigida ao sair de um estado inativo.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|O número de falhas de entrada antes da redefinição de fábrica. Valores válidos de 0 a 999|
-|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Habilita ou desabilita o uso da ID de publicidade. Adicionado no Windows 10, versão 1607. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|privacyAdvertisingId|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Habilita ou desabilita o uso da ID de publicidade. Adicionado ao Windows 10, versão 1607. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Booleano|Indica se será permitida ou não a aceitação automática da caixa de diálogo de consentimento do usuário com emparelhamento e privacidade ao iniciar aplicativos.|
 |privacyBlockInputPersonalization|Booleano|Indica se o uso dos serviços de fala baseados na nuvem será bloqueado para os aplicativos Cortana, Ditado ou Store.|
 |startBlockUnpinningAppsFromTaskbar|Booleano|Indica se o usuário será ou não impedido de desafixar aplicativos da barra de tarefas.|
-|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|A definição desse valor recolhe a lista de aplicativos, remove a lista de aplicativos totalmente ou desabilita a alternância correspondente no aplicativo Configurações. Os valores possíveis são: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
+|startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune_deviceconfig_windowsstartmenuapplistvisibilitytype.md)|A definição desse valor recolhe a lista de aplicativos, remove a lista de aplicativos totalmente ou desabilita a alternância correspondente no aplicativo de Configurações. Os valores possíveis são: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Booleano|Habilitar essa política impede a exibição da configuração de conta de alteração no bloco de usuário no menu Iniciar.|
 |startMenuHideFrequentlyUsedApps|Booleano|Habilitar essa política impede a exibição dos aplicativos mais usados no menu Iniciar e desabilita a alternância correspondente no aplicativo Configurações.|
 |startMenuHideHibernate|Booleano|Habilitar essa política impede a exibição da hibernação no botão de energia no menu Iniciar.|
@@ -142,14 +142,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |startMenuHideUserTile|Booleano|Habilitar essa política impede a exibição do bloco de usuário no menu Iniciar.|
 |startMenuLayoutEdgeAssetsXml|Binária|Essa configuração de política permite importar ativos do Edge a serem usados com a política startMenuLayoutXml. O layout inicial pode conter um bloco secundário do aplicativo Microsoft Edge que procura pelo arquivo do ativo local do Edge. Nesse caso, o ativo local do Edge não existiria e faria com que o bloco secundário do Edge aparecesse vazio. Essa política só é aplicada quando a política startMenuLayoutXml é modificada. O valor deve ser uma matriz de bytes codificada em Base64 UTF-8.|
 |startMenuLayoutXml|Binária|Permite aos administradores substituir o layout padrão do menu Iniciar e impede que o usuário o altere. O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. O XML deve estar em um formato de matriz de bytes codificada em UTF8.|
-|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|Permite aos administradores decidir como o menu Iniciar é exibido. Os valores possíveis são: `userDefined`, `fullScreen`, `nonFullScreen`.|
+|startMenuMode|[windowsStartMenuModeType](../resources/intune_deviceconfig_windowsstartmenumodetype.md)|Permite que os administradores decidam como o menu Iniciar será exibido. Os valores possíveis são: `userDefined`, `fullScreen`, `nonFullScreen`.|
 |startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Documentos no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderDownloads|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Downloads no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho do Explorador de Arquivos no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderFileExplorer|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho FileExplorer no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderHomeGroup|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta HomeGroup no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderMusic|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Música no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderNetwork|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Rede no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
-|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Pessoal no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
+|startMenuPinnedFolderPersonalFolder|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho PersonalFolder no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderPictures|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Imagens no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderSettings|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Configurações no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderVideos|[visibilitySetting](../resources/intune_deviceconfig_visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Vídeos no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
@@ -172,7 +172,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |windowsSpotlightBlockThirdPartyNotifications|Booleano|Bloquear conteúdo de terceiros fornecido por meio do Destaque do Windows|
 |windowsSpotlightBlockWelcomeExperience|Booleano|Bloquear a experiência de boas-vindas do Destaque do Windows|
 |windowsSpotlightBlockWindowsTips|Booleano|Permite que os administradores de TI desativem os popups de Dicas do Windows.|
-|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|Especifica o tipo de Destaque. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`.|
+|windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune_deviceconfig_windowsspotlightenablementsettings.md)|Especifica o tipo de Destaque Os valores possíveis são: `notConfigured`, `disabled`, `enabled`.|
 |networkProxyApplySettingsDeviceWide|Booleano|Se definida, as configurações de proxy serão aplicadas a todos os processos e contas no dispositivo. Caso contrário, serão aplicadas à conta de usuário registrada no MDM.|
 |networkProxyDisableAutoDetect|Booleano|Desabilitar a detecção automática de configurações. Se habilitada, o sistema tentará encontrar o caminho para um script de configuração automática de proxy (PAC).|
 |networkProxyAutomaticConfigurationUrl|Cadeia de caracteres|Endereço para o script de configuração automática de proxy (PAC) desejado.|
@@ -187,7 +187,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |cortanaBlocked|Booleano|Se o usuário será ou não impedido de usar a Cortana.|
 |deviceManagementBlockFactoryResetOnMobile|Booleano|Se o usuário será ou não impedido de redefinir o telefone.|
 |deviceManagementBlockManualUnenroll|Booleano|Indica se o usuário será ou não impedido de cancelar manualmente o registro no gerenciamento de dispositivo.|
-|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|Especifica que nível de filtro de pesquisa segura é necessário. Os valores possíveis são: `userDefined`, `strict`, `moderate`.|
+|safeSearchFilter|[safeSearchFilterType](../resources/intune_deviceconfig_safesearchfiltertype.md)|Especifica qual nível de filtro de pesquisa segura é necessário. Os valores possíveis são: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Booleano|Indica se janelas pop-ups devem ou não ser bloqueadas.|
 |edgeBlockSearchSuggestions|Booleano|Indica se o usuário será ou não impedido de usar as sugestões de pesquisa na barra de endereços.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Booleano|Indica se o usuário será ou não impedido de enviar tráfego da Intranet para o Internet Explorer a partir do Edge.|
@@ -226,9 +226,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |wirelessDisplayBlockUserInputFromReceiver|Booleano|Indica se a entrada do usuário pelo receptor de vídeo sem fio será permitida ou não.|
 |wirelessDisplayRequirePinForPairing|Booleano|Indica se será exigido um PIN para que novos dispositivo iniciem o emparelhamento.|
 |windowsStoreBlocked|Booleano|Indica se o usuário será ou não impedido de usar a Windows Store.|
-|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica se aplicativos de pacotes AppX assinados com um certificado confiável podem ser transferidos por sideload. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|appsAllowTrustedAppsSideloading|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica se os aplicativos dos pacotes AppX assinados com um certificado confiável podem ser carregados no lado. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |windowsStoreBlockAutoUpdate|Booleano|Indica se a atualização automática de aplicativos pela Windows Store será bloqueada ou não.|
-|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica se o desbloqueio do desenvolver será permitido ou não. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|developerUnlockSetting|[stateManagementSetting](../resources/intune_deviceconfig_statemanagementsetting.md)|Indica se a permissão de desbloquear os desenvolvedores será feita ou não. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |sharedUserAppDataAllowed|Booleano|Indica se vários usuários do mesmo aplicativo serão ou não impedidos de compartilhar dados.|
 |appsBlockWindowsStoreOriginatedApps|Booleano|Indica se será desabilitada ou não a inicialização de todos os aplicativos da Windows Store pré-instalados ou baixados.|
 |windowsStoreEnablePrivateStoreOnly|Booleano|Indica se o Repositório particular será ativado ou não.|
@@ -727,6 +727,11 @@ Content-Length: 9875
   "logonBlockFastUserSwitching": true
 }
 ```
+
+
+
+
+
 
 
 

@@ -29,7 +29,7 @@ O elemento _constraint_ do nome determina a extensão potencial do acesso que o 
 
 ### <a name="microsoft-accounts-and-work-or-school-accounts"></a>Contas da Microsoft e contas corporativas ou de estudante
 
-Nem todas as permissões são igualmente válidas para contas da Microsoft e contas corporativas e ou de estudante. Você pode verificar a coluna **Conta da Microsoft suportada** para cada grupo de permissões para determinar se uma permissão específica é válida para contas da Microsoft, contas corporativas ou de estudante, ou ambas. 
+Nem todas as permissões são igualmente válidas para contas da Microsoft e contas corporativas ou de estudante. Você pode verificar a coluna **Conta da Microsoft suportada** para cada grupo de permissões para determinar se uma permissão específica é válida para contas da Microsoft, contas corporativas ou de estudante, ou ambas. 
 
 ### <a name="user-and-group-search-limitations-for-guest-users-in-organizations"></a>Limitações de pesquisa de usuário e grupo para usuários convidados em organizações
 
@@ -236,7 +236,7 @@ A permissão _Directory.ReadWrite.All_ concede os seguintes privilégios:
 - Gerenciar associações do grupo
 - Atualizar o proprietário do grupo
 - Gerenciar as atribuições de licença
-- Definir extensões de esquema em aplicativos
+- Definir as extensões de esquema em aplicativos
 > **Observação**:
 > - Sem permissão para redefinir senhas de usuários
 > - Sem permissão para excluir recursos (incluindo usuários ou grupos)
@@ -990,5 +990,17 @@ A restrição *CreatedByApp* associada a essa permissão indica que o serviço a
 *   _UserActivity.ReadWrite.CreatedByApp_: publicar ou atualizar um item de histórico de uma atividade de usuário especificada para representar o período de engajamento do usuário. (PUT /me/activities/{id}/historyItems/{id}).
 *   _UserActivity.ReadWrite.CreatedByApp_: excluir uma atividade de usuário em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}).
 *   _UserActivity.ReadWrite.CreatedByApp_: excluir um item de histórico em resposta a uma solicitação iniciada pelo usuário ou para remover dados inválidos. (DELETE /me/activities/{id}/historyItems/{id}).
+
+## <a name="notifications-permissions"></a>Permissões de notificações
+#### <a name="delegated-permissions"></a>Permissões delegadas
+|Permissão    |Exibir Cadeia de Caracteres   |Descrição |Consentimento Obrigatório do Administrador |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Notifications.ReadWrite.CreatedByApp_ | Entregar e gerenciar notificações para esse aplicativo. | Permitir que o aplicativo entregue suas notificações em nome de usuários conectado. Também permite que o aplicativo leia, atualize e exclua itens de notificação do usuário para esse aplicativo. |Não |
+### <a name="remarks"></a>Comentários
+*UserActivity.ReadWrite.CreatedByApp* é válida tanto para contas da Microsoft como para contas corporativas ou de estudante. A restrição *CreatedByApp* associada a essa permissão indica que o serviço aplicará filtragem implícita aos resultados com base na identidade do aplicativo que realizar a chamada, seja a ID de aplicativo da conta da Microsoft ou um conjunto de IDs de aplicativo configurado para uma identidade de aplicativo de plataforma cruzada. 
+### <a name="example-usage"></a>Exemplo de uso
+#### <a name="delegated"></a>Delegado
+* _Notifications.ReadWrite.CreatedByApp_: publicar uma notificação centrada no usuário, que possa ser entregue a vários clientes do aplicativos do usuário em execução em diferentes pontos de extremidade. (POST /me/notifications/).
+
 
 <br/>

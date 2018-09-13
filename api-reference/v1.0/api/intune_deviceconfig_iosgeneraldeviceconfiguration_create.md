@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |appleNewsBlocked|Booleano|Indica se o usuário será ou não impedido de usar Notícias quando o dispositivo estiver no modo supervisionado (iOS 9.0 ou posterior).|
 |appsSingleAppModeList|Coleção [appListItem](../resources/intune_deviceconfig_applistitem.md)|Obtém ou define a lista de aplicativos iOS que podem entrar de forma autônoma no Modo de Aplicativo Único. Apenas em modo supervisionado. iOS 7.0 e posterior. Esta coleção pode conter um máximo de 500 elementos.|
 |appsVisibilityList|Coleção [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicativos na lista de visibilidade (lista de aplicativos visíveis/inicializávelis ou lista de aplicativos ocultos/não inicializáveis, controlados por AppsVisibilityListType) (iOS 9.3 e posterior). Essa coleção pode conter um máximo de 10.000 elementos.|
-|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que está em AppsVisibilityList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|appsVisibilityListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Tipo de lista que está na AppsVisibilityList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Booleano|Indica se será bloqueado ou não o download automático de aplicativos comprados em outros dispositivos quando o dispositivo estiver no modo supervisionado (iOS 9.0 ou posterior).|
 |appStoreBlocked|Booleano|Indica se o usuário será ou não impedido de usar a App Store.|
 |appStoreBlockInAppPurchases|Booleano|Indica se o usuário será ou não impedido de fazer compras no aplicativo.|
@@ -67,7 +67,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |classroomAppBlockRemoteScreenObservation|Booleano|Indica se a observação de tela remota pelo aplicativo Classroom será ou não permitida quando o dispositivo estiver no modo supervisionado (iOS 9.3 ou posterior).|
 |classroomAppForceUnpromptedScreenObservation|Booleano|Indica se o professor de um curso gerenciado no aplicativo Classroom terá ou não permissão automática para visualizar a tela de um aluno sem solicitar quando o dispositivo estiver no modo supervisionado.|
 |compliantAppsList|Coleção [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
-|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que está em AppComplianceList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune_deviceconfig_applisttype.md)|Lista que está na AppComplianceList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Booleano|Indica se o usuário será ou não impedido de instalar perfis e certificados de configuração de maneira interativa quando o dispositivo estiver no modo supervisionado.|
 |definitionLookupBlocked|Booleano|Indica se a consulta de definição será ou não bloqueada quando o dispositivo estiver no modo supervisionado (iOS 8.1.3 ou posterior).|
 |deviceBlockEnableRestrictions|Booleano|Indica se o usuário poderá ou não habilitar restrições nas configurações do dispositivo quando o dispositivo estiver no modo supervisionado.|
@@ -116,6 +116,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |kioskModeAllowVolumeButtons|Booleano|Indica se o uso dos botões de volume será permitido ou não no modo quiosque.|
 |kioskModeAllowZoomSettings|Booleano|Indica se o acesso às configurações de zoom será permitido ou não no modo quiosque.|
 |kioskModeAppStoreUrl|Cadeia de caracteres|URL na loja de aplicativos do aplicativo para uso no modo de quiosque. Use se KioskModeManagedAppId não for conhecido.|
+|kioskModeBuiltInAppId|Sequência de caracteres|ID para aplicativos internos a ser usado para o modo de quiosque. Usado quando KioskModeManagedAppId e KioskModeAppStoreUrl não são definidas.|
 |kioskModeRequireAssistiveTouch|Booleano|Indica se o toque assistencial deve ou não ser exigido no modo quiosque.|
 |kioskModeRequireColorInversion|Booleano|Indica se a inversão de cores deve ou não ser exigida no modo quiosque.|
 |kioskModeRequireMonoAudio|Booleano|Indica se o áudio mono deve ou não ser exigido no modo quiosque.|
@@ -136,7 +137,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosGener
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune_deviceconfig_mediacontentratingunitedkingdom.md)|Configurações de classificação de conteúdo de mídia do Reino Unido|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune_deviceconfig_mediacontentratingunitedstates.md)|Configurações de classificação de conteúdo de mídia dos Estados Unidos|
 |networkUsageRules|Coleção [iosNetworkUsageRule](../resources/intune_deviceconfig_iosnetworkusagerule.md)|Lista de aplicativos gerenciados e regras de rede que se aplicam a eles. Essa coleção pode conter um máximo de 1.000 elementos.|
-|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|As configurações de classificação de conteúdo de mídia para aplicativos. Os valores possíveis são: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
+|mediaContentRatingApps|[ratingAppsType](../resources/intune_deviceconfig_ratingappstype.md)|As configurações de classificação de conteúdo de mídia para aplicativos. Os possíveis valores são: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Booleano|Indica se o usuário será ou não impedido de usar o aplicativo Mensagens no dispositivo supervisionado.|
 |notificationsBlockSettingsModification|Booleano|Indica se a modificação de configurações de notificações será permitida ou não no dispositivo supervisionado (iOS 9.3 ou posterior).|
 |passcodeBlockFingerprintUnlock|Booleano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
@@ -182,7 +183,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 7841
+Content-length: 7905
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -292,6 +293,7 @@ Content-length: 7841
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -409,7 +411,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7949
+Content-Length: 8013
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -521,6 +523,7 @@ Content-Length: 7949
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+  "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -632,6 +635,11 @@ Content-Length: 7949
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
+
+
+
+
 
 
 

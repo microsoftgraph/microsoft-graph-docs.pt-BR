@@ -12,7 +12,7 @@ Herda de [managedAppRegistration](../resources/intune_mam_managedappregistration
 |:---|:---|:---|
 |[Listar androidManagedAppRegistrations](../api/intune_mam_androidmanagedappregistration_list.md)|Coleção [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Lista propriedades e relações dos objetos [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 |[Obter androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_get.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Propriedades de leitura e relações do objeto [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
-|[Criar androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Cria um novo objeto [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
+|[Criar androidManagedAppRegistration](../api/intune_mam_androidmanagedappregistration_create.md)|[androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md)|Crie um novo objeto [androidManagedAppRegistration](../resources/intune_mam_androidmanagedappregistration.md).|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -25,7 +25,7 @@ Herda de [managedAppRegistration](../resources/intune_mam_managedappregistration
 |deviceType|Cadeia de caracteres|Tipo de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |deviceName|Cadeia de caracteres|Nome de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
-|flaggedReasons|coleção enumerada [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. Ex. Aplicativo em execução em um dispositivo root. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
+|flaggedReasons|Coleção [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. Ex: Aplicativo em execução em um dispositivo root. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppRegistration](../resources/intune_mam_managedappregistration.md)|
@@ -40,13 +40,12 @@ Herda de [managedAppRegistration](../resources/intune_mam_managedappregistration
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.managedAppRegistration",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -63,13 +62,18 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier",
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
   "version": "String"
 }
 ```
+
+
+
+
+
 
 
 

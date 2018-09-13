@@ -7,8 +7,13 @@ Indica o estado de publicação de um aplicativo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notPublished|0|O aplicativo ainda não foi publicado.|
-|processamento|1|O aplicativo está aguardando processamento no lado do serviço.|
-|publicado|2|O aplicativo foi publicado.|
+|processing|1|O aplicativo está aguardando processamento no lado do serviço.|
+|published|2|O aplicativo foi publicado.|
+
+
+
+
+
 
 
 
