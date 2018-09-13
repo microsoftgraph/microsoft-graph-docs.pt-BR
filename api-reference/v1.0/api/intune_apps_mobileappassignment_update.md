@@ -35,8 +35,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|A intenção de instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
+|finalidade|[installIntent](../resources/intune_shared_installintent.md)|A finalidade da instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
 
 
@@ -82,6 +82,11 @@ Content-Length: 322
   }
 }
 ```
+
+
+
+
+
 
 
 
