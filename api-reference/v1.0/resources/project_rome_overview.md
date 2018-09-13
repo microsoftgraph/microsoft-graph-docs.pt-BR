@@ -1,4 +1,4 @@
-# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Rome
+# <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Utilização da API do Microsoft Graph para trabalhar com o Project Rome
 
 [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) é uma iniciativa da Microsoft para compilar uma plataforma de experiências entre dispositivos. O Project Rome permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entra com a mesma conta da Microsoft usada para entrar no dispositivo do cliente. Isso permite que você programe experiências entre dispositivos e plataformas, com foco em tarefas do usuário em vez de dispositivos.
 
@@ -10,7 +10,7 @@ Atividades no Microsoft Graph permitem que você aumente o engajamento do usuár
 
 - Um link profundo
 - Uma representação visual
-- Metadados do conteúdo que descrevem a atividade, usando o vocabulário compartilhado [http://schema.org/](http://schema.org/)
+- Metadados do conteúdo que descrevem a atividade, usando o vocabulário compartilhado[http://schema.org/](http://schema.org/)
 
 Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de engajamento do usuário. Cada vez que um usuário retoma uma atividade, um novo item de histórico é adicionado à atividade para acumular o engajamento do usuário.
 
@@ -24,3 +24,4 @@ Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar as a
 - [Excluir uma atividade](../api/projectrome_delete_activity.md)
 - [Criar ou substituir um item do histórico](../api/projectrome_put_historyitem.md)
 - [Excluir um item do histórico](../api/projectrome_delete_historyitem.md)
+
