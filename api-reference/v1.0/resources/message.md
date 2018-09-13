@@ -4,8 +4,9 @@ Uma mensagem em uma mailFolder.
 
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
-- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/message_delta.md).
+- Adicionar seus próprios dados como cabeçalhos personalizados de mensagem da internet. Adicione cabeçalhos personalizados apenas ao criar uma mensagem e acrescente "x-" no início do nome. Você não pode modificar os cabeçalhos depois que a mensagem foi enviada. Para obter os cabeçalhos de uma mensagem, use o parâmetro de consulta `$select` em uma operação para [obter mensagem](../api/message_get.md).
+- Adicionar seus próprios dados como propriedades personalizadas em [extensões](../../../concepts/extensibility_overview.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais por meio de uma função [delta](../api/message_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -46,18 +47,18 @@ Esse recurso permite:
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |corpo|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|Cadeia de caracteres|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
-|categories|Conjunto de cadeia de caracteres|As categorias associadas à mensagem.|
+|categories|Coleção de sequência de caracteres|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|Cadeia de caracteres|A versão da mensagem.|
 |conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
-|sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|de|[destinatário](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real usada.|
+|flag|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data prevista ou a data de finalização da mensagem.|
+|de|[destinatário](recipient.md)|O proprietário da caixa de correio e remetente da mensagem. O valor deve corresponder à caixa de correio real usada.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|Cadeia de caracteres|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
-|importância|importância| A importância da mensagem: `Low`, `Normal`, `High`.|
-|inferenceClassification | inferenceClassificationType | A classificação dessa mensagem para o usuário, com base na relevância ou importância deduzida, ou em uma substituição explícita. Os valores possíveis são `focused` ou `other`. |
-|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
+|importance|importance| A importância da mensagem: `Low`, `Normal`, `High`.|
+|inferenceClassification | inferenceClassificationType | A classificação dessa mensagem para o usuário, com base na relevância ou importância deduzida, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
+|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagem definidas pela [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagem indicando o caminho de rede seguido por uma mensagem do remetente ao destinatário. Ele também pode conter cabeçalhos personalizados de mensagem que armazenam dados do aplicativo para a mensagem. |
 |internetMessageId |Cadeia de caracteres |A ID da mensagem no formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). |
 |isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
