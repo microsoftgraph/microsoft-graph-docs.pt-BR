@@ -6,8 +6,13 @@ Conjunto de caracteres que será usado para o aplicativo de um usuário PIN
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|numérico|0|Caracteres numéricos|
+|numeric|0|Caracteres numéricos|
 |alphanumericAndSymbol|1|Caracteres alfanuméricos e simbólicos|
+
+
+
+
+
 
 
 

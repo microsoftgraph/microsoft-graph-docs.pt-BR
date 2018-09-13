@@ -14,8 +14,15 @@ Com as atividades, você pode capturar as tarefas exclusivas dos usuários do se
 ### <a name="build-rich-cross-device-experiences-by-using-the-device-relay-api"></a>Criar experiências avançadas em vários dispositivos usando a API de retransmissão de dispositivo 
 Além dos dispositivos da Microsoft (PCs, Windows Phone, Xbox, IoT, HoloLens e muito mais), a API de retransmissão de dispositivo também abrange dispositivos Android e iOS. Isso possibilita que você reduza os limites entre os dispositivos dos usuários. Você pode criar aplicativos que utilizam o ambiente do usuário e criar experiências avançadas que vão além de um único dispositivo em tempo real. 
 
+## <a name="reach-out-to-and-engage-with-users-anywhere-via-a-coherent-and-human-centric-notification-story-preview"></a>Alcance e relacione-se com usuários em qualquer lugar por meio de uma sequência coerente de notificações focada no ser humano (versão prévia)
+
+Notificações são uma das maneiras mais eficientes e diretas para se comunicar e se relacionar com seus usuários. 
+
+Com a API de notificações do Microsoft Graph, você pode entregar notificações de uma maneira centrada no ser humano ao invés do dispositivo. Você pode definir um usuário para quem enviar as notificações e contar com a estrutura de notificações do Microsoft Graph para entregar as notificações para cada ponto de extremidade em que o usuário estiver conectado. A API de notificações do Microsoft Graph também facilita o gerenciamento de notificações entre dispositivos para que você possa sincronizar as notificações entre os dispositivos dos usuários e reduzir a redundância e a quantidade de interrupções. 
+
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Usar a API do Microsoft Graph para habilitar experiências em vários dispositivos](../api-reference/v1.0/resources/cross-device-reference-overview.md)
 - [Saiba mais sobre a API do feed de atividades no Microsoft Graph](activity-feed-concept-overview.md)
 - [Saiba mais sobre a API de retransmissão de dispositivo no Microsoft Graph](device-relay-concept-overview.md)
+- [Saiba mais sobre a API de notificações do Microsoft Graph API em Microsoft Graph](notifications-concept-overview.md)

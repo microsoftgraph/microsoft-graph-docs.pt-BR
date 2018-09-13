@@ -2,7 +2,7 @@
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Estado de acesso ao Exchange do dispositivo.
+Estado de acesso ao Exchange do dispositivo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -11,6 +11,11 @@ Estado de acesso ao Exchange do dispositivo.
 |allowed|2|Dispositivo tem acesso ao Exchange|
 |blocked|3|Dispositivo está bloqueado no Exchange|
 |quarantined|4|Dispositivo está em quarentena no Exchange|
+
+
+
+
+
 
 
 

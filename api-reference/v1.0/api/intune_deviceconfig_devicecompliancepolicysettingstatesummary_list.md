@@ -8,8 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -24,7 +24,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -51,10 +51,10 @@ Content-Length: 521
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "setting": "Setting value",
       "settingName": "Setting Name value",
       "platformType": "iOS",
-      "id": "7474d6d5-d6d5-7474-d5d6-7474d5d67474",
       "unknownDeviceCount": 2,
       "notApplicableDeviceCount": 8,
       "compliantDeviceCount": 4,
@@ -66,6 +66,11 @@ Content-Length: 521
   ]
 }
 ```
+
+
+
+
+
 
 
 
