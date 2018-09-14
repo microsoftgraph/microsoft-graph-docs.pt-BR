@@ -25,7 +25,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -35,11 +35,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Herdada de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdada de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|descrição|Cadeia de caracteres|Descrição da definição de Função. Herdada de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|rolePermissions|Coleção [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdada de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
-|isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdada de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|descrição|Cadeia de caracteres|Descrição da definição de Função. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|rolePermissions|Coleção [rolePermission](../resources/intune_rbac_rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
+|isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdado de [roleDefinition](../resources/intune_rbac_roledefinition.md)|
 
 
 
@@ -108,6 +108,11 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
+
+
+
+
+
 
 
 
