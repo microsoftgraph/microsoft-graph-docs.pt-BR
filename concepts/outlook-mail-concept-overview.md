@@ -28,16 +28,18 @@ Use o Microsoft Graph para sugerir dados contextuais aos usuários de seu aplica
 
 - Integrar-se a [Caixa de Entrada Destaques](../api-reference/v1.0/resources/manage_focused_inbox.md) e [menções @ (prévia)](../api-reference/beta/api/message_get.md#request-2) e permitir que os usuários de seu aplicativo leiam e respondam primeiro ao que é relevante para eles. 
 
-- Verificar as [dicas de emails (prévia)](../api-reference/beta/resources/mailtips.md) ao redigir uma mensagem para obter informações úteis de status sobre um destinatário (por exemplo, se o destinatário enviou uma resposta automática ou se a caixa de correio está cheia). As dicas de email podem alertar os aplicativos a respeito de determinadas condições para permitir que se tomem ações de acompanhamento mais eficientes. 
+- Verificar as [dicas de emails](../api-reference/v1.0/resources/mailtips.md) ao redigir uma mensagem para obter informações de status úteis sobre um destinatário (por exemplo, se o destinatário enviou uma resposta automática ou se a caixa de correio está cheia). As dicas de email podem alertar os aplicativos a respeito de determinadas condições para permitir que se tomem ações de acompanhamento mais eficientes. 
 
 - Utilizar a [API de pessoas](people_example.md) para fornecer controles interativos, como o seletor de pessoas em seu aplicativo. A API de pessoas pode sugerir as pessoas mais relevantes para um usuário, tendo como base as comunicações, os padrões de colaboração e as relações comerciais desse usuário. 
 
-- Oferecer aos usuários do aplicativo um seletor de arquivos inteligente e sugerir arquivos com os quais eles tenham interagido recentemente para serem adicionados como anexos quando estiverem escrevendo uma mensagem. Os [Insights](../api-reference/beta/resources/insights.md) usam a análise avançada para sugerir arquivos que são familiares a um usuário, aqueles que tenham sido editados ou vistos pelo usuário ou compartilhados recentemente com ele.
+- Oferecer aos usuários do aplicativo um seletor de arquivos inteligente e sugerir arquivos com os quais eles tenham interagido recentemente para serem adicionados como anexos quando estiverem escrevendo uma mensagem. Os [Insights (versão prévia)](../api-reference/beta/resources/insights.md) usam análise avançada para sugerir arquivos mais populares para um usuário, que tenham sido editados ou vistos pelo usuário, ou compartilhados recentemente com ele.
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>Armazenar os dados do aplicativo em um recurso ou em uma instância do recurso
 
-Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso dos dados. O Microsoft Graph permite que o aplicativo simplesmente [armazene os dados personalizados em instâncias individuais de recursos](extensibility_overview.md#open-extensions) ou, se apropriado, você pode estender o esquema, adicionar propriedades personalizadas e armazenar os dados digitados nos recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility_overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas. 
+Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso aos dados. O Microsoft Graph permite que você inclua dados de aplicativo como cabeçalhos de mensagem da internet ao [Criar](../api-reference/v1.0/api/user_post_messages.md#request-2) ou [enviar](../api-reference/v1.0/api/user_sendmail.md#request-2) uma nova mensagem ou uma resposta a uma mensagem. 
+
+Se você precisar adicionar e subsequentemente atualizar dados personalizados, você pode [armazenar os dados em instâncias de recursos individuais](extensibility_overview.md#open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados em recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility_overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas. 
 
 
 ## <a name="next-steps"></a>Próximas etapas

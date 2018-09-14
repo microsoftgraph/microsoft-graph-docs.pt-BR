@@ -2,7 +2,7 @@
 
 Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
-Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, confira [Problemas conhecidos](known_issues.md).
+Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [Problemas conhecidos](known_issues.md).
 
 ## <a name="september-2018"></a>Setembro de 2018
 
@@ -10,8 +10,30 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Exclusão|beta| Propriedades isBlocks e installedState removidas do [teamsApp](../api-reference/beta/resources/teamsapp.md)|
-|Alteração | beta | Anunciado que a propriedade de contexto em [teamsApp](../api-reference/beta/resources/teamsapp.md) será renomeada|
+|Exclusão|beta| Propriedades isBlocks e installedState removidas do [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Alteração | beta | Anunciado que a propriedade de contexto em [teamsApp](../api-reference/beta/resources/teamsapp.md) será renomeada.|
+|Adição|beta|Adicionado suporte a permissões de aplicativos para [GET/teams/{id}](../api-reference/beta/api/team_get.md). |
+|Adição|beta|Adicionado suporte a permissões de aplicativos para [GET/teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
+|Adição|beta|Adicionado suporte a permissões de aplicativos para [GET/teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
+
+### <a name="outlook-mail"></a>Email do Outlook
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | v1.0 e beta | A propriedade **internetMessageHeaders** da entidade [mensagem](../api-reference/v1.0/resources/message.md) agora é gravável na criação da mensagem. |
+
+### <a name="project-rome-notifications-api"></a>APIs de notificação do Project Rome
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição          | Beta        | O tipo de recurso [notification](../api-reference/beta/resources/projectrome_notification.md) foi adicionado. |
+| Adição          | Beta        | A API [Criar e publicar notificação] (../api-reference/beta/api/projectrome_notification_post.md) foi adicionada.|
+
+### <a name="security-apis"></a>APIs de segurança
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta       | Adição das APIs de classificação de segurança na [API de segurança](../api-reference/beta/resources/security-api-overview.md), incluindo as operações e os recursos a seguir:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (e entidades relacionadas)<br/>[Lista secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[Lista secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Atualizar secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
 
 ## <a name="august-2018"></a>Agosto de 2018
 
@@ -19,14 +41,25 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Propriedade [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) adicionada às entidades [User](../api-reference/v1.0/resources/user.md) e [Group](../api-reference/v1.0/resources/group.md), representando os erros de sincronização de diretório durante a sincronização de diretórios no local com o Active Directory do Azure ao usar o produto de sincronização da Microsoft (incluindo Azure AD Connect, DirSync e MIM + Connector).|
-| Adição | v1.0 | Propriedade [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesextensionattributes.md) adicionada à entidade de [User](../api-reference/v1.0/resources/user.md) que contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é administrado no Active Directory local e sincronizado com o Azure AD, e é somente para leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser definidas durante a criação ou atualização.|
+| Adição | v1.0 | A propriedade [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) foi adicionada às entidades [User](../api-reference/v1.0/resources/user.md) e [Group](../api-reference/v1.0/resources/group.md) que representam os erros de sincronização de diretório durante a sincronização de diretórios locais com o Active Directory do Azure ao usar o produto de sincronização da Microsoft (incluindo Azure AD Connect, DirSync e MIM + Connector).|
+| Adição | v1.0 | A propriedade [onPremisesExtensionAttribute](../api-reference/v1.0/resources/onpremisesextensionattributes.md) foi adicionada à entidade [User](../api-reference/v1.0/resources/user.md) que contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é administrado no Active Directory local e sincronizado com o Azure AD, e é somente para leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é false), essas propriedades podem ser definidas durante a criação ou atualização.|
 |Adição|v1.0|Propriedades **onPremisesDomainName**, **onPremisesSamAccountName** e **onPremisesUserPrincipalName** adicionadas à entidade [User](../api-reference/v1.0/resources/user.md)|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
+|Adição|v1.0|Foram adicionadas novas entidades:<br/>[androidWorkProfileCompliancePolicy](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)<br/>[androidWorkProfileCustomConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md)<br/>[androidWorkProfileGeneralDeviceConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)<br/>|
+|Adição|v1.0|Foram adicionados novos tipos enumerados:<br/>[androidWorkProfileCrossProfileDataSharingType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype.md)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype.md)<br/>[androidWorkProfileRequiredPasswordType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype.md)<br/>|
+|Adição|v1.0|A função [managedDeviceEnrollmentFailureDetails](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmentfailuredetails.md) foi adicionada ao [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md) |
+|Adição|v1.0|A função [managedDeviceEnrollmentTopFailures](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmenttopfailures.md) foi adicionada ao [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md) |
+|Adição|v1.0|A propriedade **kioskModeBuiltInAppId** foi adicionada à entidade [iosGeneralDeviceConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md).|
+|Adição|v1.0|O membro **notAssigned** foi adicionado ao tipo enumerado [complianceStatus](../api-reference/v1.0/resources/intune_shared_compliancestatus.md)|
+|Adição|v1.0|O membro **pushNotification** foi adicionado ao tipo enumerado [deviceComplianceActionType](../api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype.md)|
+|Adição|v1.0|O membro **userAbandonment** foi adicionado ao tipo enumerado [deviceEnrollmentFailureReason](../api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason.md)|
+|Adição|v1.0|Os membros **compromised** e **misconfigured** foram adicionados ao tipo enumerado [managedDevicePartnerReportedHealthState](../api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate.md)|
+|Adição|v1.0|O membro **assignedToExternalMDM** foi adicionado ao tipo enumerado [vppTokenState](../api-reference/v1.0/resources/intune_onboarding_vpptokenstate.md)|
+||
 |Adição|beta|Foram adicionadas novas entidades:<br/>[advancedThreatProtectionOnboardingDeviceSettingState](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)<br/>[advancedThreatProtectionOnboardingStateSummary](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md)<br/>[depEnrollmentBaseProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentbaseprofile.md)<br/>[depEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentprofile.md)<br/>[depIOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depiosenrollmentprofile.md)<br/>[depMacOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depmacosenrollmentprofile.md)<br/>[enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md)<br/>[importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md)<br/>[importedAppleDeviceIdentityResult](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentityresult.md)<br/>[importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)<br/>[roleScopeTag](../api-reference/beta/resources/intune_rbac_rolescopetag.md)<br/>[windowsIdentityProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsidentityprotectionconfiguration.md)<br/>|
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[configurationManagerClientHealthState](../api-reference/beta/resources/intune_devices_configurationmanagerclienthealthstate.md)<br/>[customSubjectAlternativeName](../api-reference/beta/resources/intune_deviceconfig_customsubjectalternativename.md)<br/>[deviceManagementUserRightsLocalUserOrGroup](../api-reference/beta/resources/intune_deviceconfig_devicemanagementuserrightslocaluserorgroup.md)<br/>[deviceManagementUserRightsSetting](../api-reference/beta/resources/intune_deviceconfig_devicemanagementuserrightssetting.md)<br/>[managementCertificateWithThumbprint](../api-reference/beta/resources/intune_enrollment_managementcertificatewiththumbprint.md)<br/>[mobileAppSupportedDeviceType](../api-reference/beta/resources/intune_troubleshooting_mobileappsupporteddevicetype.md)<br/>[osVersionCount](../api-reference/beta/resources/intune_devices_osversioncount.md)<br/>[windowsMalwareCategoryCount](../api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md)<br/>[windowsMalwareExecutionStateCount](../api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md)<br/>[windowsMalwareNameCount](../api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md)<br/>[windowsMalwareOverview](../api-reference/beta/resources/intune_devices_windowsmalwareoverview.md)<br/>[windowsMalwareStateCount](../api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md)<br/>|
 |Adição|beta|Foram adicionados novos tipos enumerados:<br/>[configurationManagerClientState](../api-reference/beta/resources/intune_devices_configurationmanagerclientstate.md)<br/>[depTokenType](../api-reference/beta/resources/intune_enrollment_deptokentype.md)<br/>[discoverySource](../api-reference/beta/resources/intune_enrollment_discoverysource.md)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityuploadstatus.md)<br/>[iTunesPairingMode](../api-reference/beta/resources/intune_enrollment_itunespairingmode.md)<br/>[lanManagerAuthenticationLevel](../api-reference/beta/resources/intune_deviceconfig_lanmanagerauthenticationlevel.md)<br/>[localSecurityOptionsMinimumSessionSecurity](../api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsminimumsessionsecurity.md)<br/>[resultantAppStateDetail](../api-reference/beta/resources/intune_apps_resultantappstatedetail.md)<br/>[vpnProviderType](../api-reference/beta/resources/intune_deviceconfig_vpnprovidertype.md)<br/>[windowsMalwareThreatState](../api-reference/beta/resources/intune_devices_windowsmalwarethreatstate.md)<br/>|
@@ -44,7 +77,7 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 |Adição|beta|A função [exportMobileConfig](../api-reference/beta/api/intune_enrollment_enrollmentprofile_exportmobileconfig.md.md) foi adicionada em [enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md) |
 |Adição|beta|A função [autopilotDeviceStream](../api-reference/beta/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_autopilotdevicestream.md.md) foi adicionada em [importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) |
 |Exclusão|beta|A coleção **uploadDepToken** foi excluída |
-|Exclusão|beta|A ação **syncWithAppleDeviceEnrollmentProgram** foi removida na coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
+|Exclusão|beta|A ação **syncWithAppleDeviceEnrollmentProgram** foi removida da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Exclusão|beta|A função **getEncryptionPublicKey** foi removida da coleção [depOnboardingSetting](../api-reference/beta/resources/intune_enrollment_deponboardingsetting.md) |
 |Adição|beta|A propriedade **restrictedApps** foi adicionada à entidade [androidForWorkCompliancePolicy](../api-reference/beta/resources/intune_deviceconfig_androidforworkcompliancepolicy.md)|
 |Adição|beta|As propriedades **vpnAlwaysOnPackageIdentifier** e **vpnEnableAlwaysOnLockdownMode** foram adicionadas à entidade [androidForWorkGeneralDeviceConfiguration](../api-reference/beta/resources/intune_deviceconfig_androidforworkgeneraldeviceconfiguration.md)|
@@ -102,7 +135,7 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | v1.0        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) foi adicionado para obter quaisquer Dicas de email para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
+| Adição        | v1.0        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) foi adicionado para obter quaisquer MailTips para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
 
 ### <a name="reports-apis"></a>APIs de relatórios
 | Tipo de alteração | Versão | Descrição                              |
@@ -205,7 +238,7 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 
 ## <a name="june-2018"></a>Junho de 2018
 
-### <a name="identity-and-access-apis"></a>API de acesso e identidade
+### <a name="identity-and-access-apis"></a>APIs de acesso e identidade
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1949,7 +1982,7 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Estenda o Microsoft Graph com dados de aplicativos usando [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Isso é suportado nos seguintes recursos:<br/>unidade administrativa<br/>evento de calendário<br/>dispositivo<br/>grupo<br/>message<br/>organização<br/>contato pessoal<br/>postagem<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados a grupos usando Extensões do Esquema (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups) |
+| Adição        | Beta        | Estenda o Microsoft Graph com dados de aplicativos usando [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview).  Isso é suportado nos seguintes recursos:<br/>unidade administrativa<br/>evento de calendário<br/>dispositivo<br/>group<br/>message<br/>organização<br/>contato pessoal<br/>postagem<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados a grupos usando Extensões do Esquema (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_schema_groups) |
 | Adição        | Beta        | Foi fornecido uma maneira alternativa de criar uma definição de extensão do esquema sem a necessidade de um domínio personalizado .com verificado. Confira [extensões de esquema](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#schema-extensions-preview) para obter detalhes. |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Adicionar dados personalizados ao Microsoft Graph usando extensões abertas
@@ -1957,7 +1990,7 @@ Para ver detalhes sobre problemas conhecidos com as APIs do Microsoft Graph, con
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | As "extensões de dados do Office 365" anteriores foram renomeadas como "abrir extensões". |
-| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>Unidade administrativa<br/>dispositivo<br/>grupo<br/>organização<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
+| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_overview#open-extensions): <br/>Unidade administrativa<br/>dispositivo<br/>group<br/>organização<br/>usuário<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](https://developer.microsoft.com/en-us/graph/docs/concepts/extensibility_open_users) |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -2184,7 +2217,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 | Adição        | v1.0        | Foi adicionado o tipo complexo [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings), que inclui as propriedades **automaticRepliesSetting**, **timeZone** e **language**. |
 | Adição        | v1.0        | A propriedade **mailboxSettings** foi adicionada ao recurso [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user). |
 | Adição        | Beta        | Foi adicionado o suporte para criar, listar, obter e excluir uma ou mais instâncias de [mencionar](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention) em uma mensagem. As menções dão suporte a chamadas para chamar a atenção dos outros usuários em uma mensagem. |
-| Adição        | Beta        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) foi adicionado para obter quaisquer Dicas de email para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/beta/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/beta/resources/mailtips.md), [mailTipsError](../api-reference/beta/resources/mailtipserror.md). |
+| Adição        | Beta        | O suporte para a ação [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) foi adicionado para obter quaisquer MailTips para destinatários específicos. Os seguintes recursos foram adicionados: [automaticRepliesMailTips](../api-reference/beta/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/beta/resources/mailtips.md), [mailTipsError](../api-reference/beta/resources/mailtipserror.md). |
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
