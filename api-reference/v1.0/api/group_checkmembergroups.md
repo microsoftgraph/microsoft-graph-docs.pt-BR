@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
 | Aplicativo                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **Observação:** Essa API atualmente requer a permissão `Directory.Read.All` ou superior. Usando a permissão `Gorup.Read.All` retornará um erro. Este é um bug conhecido.
+> **Observação:** Essa API atualmente requer a permissão `Directory.Read.All` ou superior. Usando a permissão `Group.Read.All` retornará um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -36,7 +36,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo              | Descrição           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | Conjunto de cadeia de caracteres | Uma matriz de IDs de grupo |
+| groupIds  | Coleção de sequência de caracteres | Uma matriz de IDs de grupo |
 
 ## <a name="response"></a>Resposta
 
