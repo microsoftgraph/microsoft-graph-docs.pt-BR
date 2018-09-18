@@ -5,7 +5,8 @@ Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directo
 Esse recurso permite:
 
 - Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
-- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user_delta.md).
+- Inscrever-se para receber [notificações de alteração](../../../concepts/webhooks.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais por meio de uma função [delta](../api/user_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -58,14 +59,14 @@ Esse recurso permite:
 |:---------------|:--------|:----------|
 |aboutMe|Sequência de caracteres|Um campo de entrada de texto em forma livre para o usuário se descrever.|
 |accountEnabled|Booleano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
-|ageGroup|Sequência de caracteres|Define a faixa etário do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Para obter mais informações, confira as [definições da propriedade de faixa etária legal](#legal-age-group-property-definitions). |
+|ageGroup|Cadeia de caracteres|Define a faixa etário do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Para obter mais informações, confira as [definições da propriedade de faixa etária legal](#legal-age-group-property-definitions). |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |businessPhones|Coleção de sequência de caracteres|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|Sequência de caracteres|A cidade em que o usuário está localizado. Oferece suporte a $filter.|
 |companyName| Sequência de caracteres | O nome da empresa em que o usuário está associado. Somente leitura.
-|consentProvidedForMinor|Sequência de caracteres|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Para obter mais informações, confira as [definições da propriedade de faixa etária legal](#legal-age-group-property-definitions).|
+|consentProvidedForMinor|Cadeia de caracteres|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Para obter mais informações, confira as [definições da propriedade de faixa etária legal](#legal-age-group-property-definitions).|
 |country|Sequência de caracteres|País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |department|Sequência de caracteres|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|Sequência de caracteres|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
@@ -75,8 +76,8 @@ Esse recurso permite:
 |imAddresses|Coleção de sequência de caracteres|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |jobTitle|Sequência de caracteres|O cargo do usuário. Oferece suporte a $filter.|
-|legalAgeGroupClassification|Sequência de caracteres| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Para obter mais informações, confira as [definições da propriedade de faixa etária legal](#legal-age-group-property-definitions).)|
-|mail|Sequência de caracteres|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
+|legalAgeGroupClassification|Cadeia de caracteres| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Para obter mais informações, confira as [definições da propriedade de faixa etária legal](#legal-age-group-property-definitions).)|
+|Email|Sequência de caracteres|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user_get_mailboxsettings.md) ou [atualizar](../api/user_update_mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.|
 |mailNickname|Sequência de caracteres|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
 |mobilePhone|Sequência de caracteres|O número de celular principal do usuário.|
@@ -87,10 +88,10 @@ Esse recurso permite:
 |onPremisesImmutableId|Sequência de caracteres|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Essa propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **_** não podem ser usados ao especificar essa propriedade. Oferece suporte a $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |onPremisesProvisioningErrors|coleção [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. |
-|onPremisesSamAccountName|Sequência de caracteres| Contém o `samAccountName` local sincronizado com o diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Active Directory do Azure por meio do Azure AD Connect. Somente leitura. |
+|onPremisesSamAccountName|Cadeia de caracteres| Contém o `samAccountName` local sincronizado com o diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Active Directory do Azure por meio do Azure AD Connect. Somente leitura. |
 |onPremisesSecurityIdentifier|Sequência de caracteres|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booleano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
-|onPremisesUserPrincipalName|Sequência de caracteres| Contém o `userPrincipalName` local sincronizado com o diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Active Directory do Azure por meio do Azure AD Connect. Somente leitura. |
+|onPremisesUserPrincipalName|Cadeia de caracteres| Contém o `userPrincipalName` local sincronizado com o diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Active Directory do Azure por meio do Azure AD Connect. Somente leitura. |
 |passwordPolicies|Sequência de caracteres|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
@@ -107,7 +108,7 @@ Esse recurso permite:
 |surname|Sequência de caracteres|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
 |usageLocation|Sequência de caracteres|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
 |userPrincipalName|Sequência de caracteres|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
-|userType|Sequência de caracteres|Um valor de sequência de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
+|userType|Sequência de caracteres|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
 ### <a name="legal-age-group-property-definitions"></a>Definições da propriedade de faixa etária legal
 
@@ -147,7 +148,7 @@ As propriedades de faixa etária e consentimento para menores são propriedades 
 |:---------------|:--------|:----------|
 |nulo|0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
 |granted|1|O consentimento foi obtido para o usuário ter uma conta.|
-|denied|2|O consentimento não foi obtido para o usuário ter uma conta.|
+|negado|2|O consentimento não foi obtido para o usuário ter uma conta.|
 |notRequired|3|O usuário vem de um local que não exige consentimento.|
  
 ## <a name="relationships"></a>Relações
@@ -178,8 +179,8 @@ As propriedades de faixa etária e consentimento para menores são propriedades 
 |ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
 |ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
 |people|Coleção [person](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
-|photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
-|planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso Planner que pode existir para um usuário. Somente leitura.|
+|Foto|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
+|planejador|[plannerUser](planneruser.md)| Ponto de entrada para o recurso Planner que pode existir para um usuário. Somente leitura.|
 |registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON

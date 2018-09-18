@@ -2,6 +2,8 @@
 
 Uma conversa é uma coleção de [threads](conversationthread.md) e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
 
+Este recurso oferece suporte para assinatura de [notificações de alteração](../../../concepts/webhooks.md).
+
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|

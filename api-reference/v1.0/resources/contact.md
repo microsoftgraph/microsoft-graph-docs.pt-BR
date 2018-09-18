@@ -5,7 +5,8 @@ Um contato é um item no Outlook no qual você pode organizar e salvar informaç
 Esse recurso permite:
 
 - Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
-- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contact_delta.md).
+- Inscrever-se para receber [notificações de alteração](../../../concepts/webhooks.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais por meio de uma função [delta](../api/contact_delta.md).
 
 
 ## <a name="methods"></a>Métodos
