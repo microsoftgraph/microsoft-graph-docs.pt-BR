@@ -1,4 +1,4 @@
-# <a name="get-freebusy-schedule-for-users-and-resources-preview"></a>Obtenha a agenda de disponibilidade livre/ocupado para usuários e recursos (visualização)
+# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Obtenha a agenda de disponibilidade livre/ocupado de usuários e recursos (versão prévia)
 
 Em um ambiente de trabalho ou escola, um cenário comum é ver quando um usuário está livre para reuniões ou procurar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 
@@ -175,6 +175,6 @@ Esteja ciente dos seguintes limites e condições de erro:
 - O período de tempo para procurar deve ser inferior a 42 dias.
 - Se **getSchedule** não é possível identificar um usuário ou recurso especificado, ele retorna um único item de agenda e indica o erro. 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de permissões](permissions_reference.md#calendars-permissions)
 - [Encontrar possíveis horários de reunião no calendário do Outlook](findmeetingtimes_example.md)

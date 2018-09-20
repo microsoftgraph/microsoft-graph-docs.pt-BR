@@ -28,7 +28,7 @@ Use o Microsoft Graph para sugerir dados contextuais aos usuários de seu aplica
 
 - Integrar-se a [Caixa de Entrada Destaques](../api-reference/v1.0/resources/manage_focused_inbox.md) e [menções @ (prévia)](../api-reference/beta/api/message_get.md#request-2) e permitir que os usuários de seu aplicativo leiam e respondam primeiro ao que é relevante para eles. 
 
-- Verificar as [dicas de emails](../api-reference/v1.0/resources/mailtips.md) ao redigir uma mensagem para obter informações de status úteis sobre um destinatário (por exemplo, se o destinatário enviou uma resposta automática ou se a caixa de correio está cheia). As dicas de email podem alertar os aplicativos a respeito de determinadas condições para permitir que se tomem ações de acompanhamento mais eficientes. 
+- Verificar as [dicas de email](../api-reference/v1.0/resources/mailtips.md) ao redigir uma mensagem para obter informações de status úteis sobre um destinatário (por exemplo, se o destinatário enviou uma resposta automática ou se a caixa de correio dele está cheia). As dicas de email podem alertar os aplicativos a respeito de determinadas condições para permitir que se tomem ações de acompanhamento mais eficientes. 
 
 - Utilizar a [API de pessoas](people_example.md) para fornecer controles interativos, como o seletor de pessoas em seu aplicativo. A API de pessoas pode sugerir as pessoas mais relevantes para um usuário, tendo como base as comunicações, os padrões de colaboração e as relações comerciais desse usuário. 
 
@@ -37,7 +37,7 @@ Use o Microsoft Graph para sugerir dados contextuais aos usuários de seu aplica
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>Armazenar os dados do aplicativo em um recurso ou em uma instância do recurso
 
-Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso aos dados. O Microsoft Graph permite que você inclua dados de aplicativo como cabeçalhos de mensagem da internet ao [Criar](../api-reference/v1.0/api/user_post_messages.md#request-2) ou [enviar](../api-reference/v1.0/api/user_sendmail.md#request-2) uma nova mensagem ou uma resposta a uma mensagem. 
+Muitas vezes os aplicativos precisam armazenar dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso dos dados. O Microsoft Graph permite que você inclua dados de aplicativo como cabeçalhos de mensagem da internet ao [Criar](../api-reference/v1.0/api/user_post_messages.md#request-2) ou [enviar](../api-reference/v1.0/api/user_sendmail.md#request-2) uma nova mensagem ou uma resposta a uma mensagem. 
 
 Se você precisar adicionar e subsequentemente atualizar dados personalizados, você pode [armazenar os dados em instâncias de recursos individuais](extensibility_overview.md#open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados em recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility_overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas. 
 
@@ -49,7 +49,7 @@ Se você precisar adicionar e subsequentemente atualizar dados personalizados, v
 
   - [Criar e enviar mensagens](outlook-create-send-messages.md)
   - Formas de [organizar mensagens](outlook-organize-messages.md)
-  - Como [compartilhar pastas de mensagens](outlook-share-messages-folders.md)
+  - Como [obter mensagens compartilhadas](outlook-share-messages-folders.md)
 
 - Saiba mais sobre como [usar a API de email](../api-reference/v1.0/resources/mail_api_overview.md) e seus [casos de uso](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) no Microsoft Graph v1.0.
 
