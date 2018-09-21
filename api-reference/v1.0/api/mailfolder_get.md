@@ -1,35 +1,11 @@
 # <a name="get-mailfolder"></a>Obter mailFolder
 
-Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
+Recuperar propriedades e relacionamentos de um objeto da pasta de mensagens.
 
+Há dois cenários onde um aplicativo pode obter mensagens na pasta de email de outro usuário:
 
-### <a name="get-another-users-message-folder"></a>Receber a pasta de mensagens de outro usuário
-
-Se você tem permissões de aplicativo ou as [permissões](#permissions) delegadas apropriadas de um usuário, é possível receber a pasta de mensagens de outro usuário. Esta seção se concentra em cenários que envolvem permissões delegadas.
-
-Por exemplo, seu aplicativo adquiriu permissões delegadas do usuário, Diogo. Suponha que outro usuário, Henrique, tenha compartilhado uma pasta de mensagens com Diogo. Você pode obter essa pasta compartilhada especificando a ID de usuário de Henrique (ou nome de entidade de segurança) na consulta de exemplo mostrada abaixo.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/mailFolders/{id}
-```
-
-Esse recurso se aplica a todas as operações de pastas de mensagens GET para usuários individuais, conforme descrito na seção [Solicitação HTTP](#http-request) abaixo. Também se aplica se Henrique delegou sua caixa de correio inteira a Diogo.
-
-Se Henrique não tiver compartilhado a pasta de mensagens dele com Diogo nem delegado a caixa de correio dele a Diogo, a especificação da ID de usuário do Henrique ou do nome de entidade de segurança nessas operações GET retornará um erro. Nesses casos, especificar uma ID de usuário ou um nome de entidade de segurança só funcionará para receber a pasta de mensagens do usuário conectado, e a consulta será equivalente a usar o atalho /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/mailFolders/{id}
-```
-
-Esse recurso só está disponível nas operações GET de:
-
-- Pastas de contatos, calendários e pastas de mensagens compartilhados 
-- Contatos, eventos e mensagens em pastas compartilhadas
-- Os recursos acima em caixas de correio delegadas
-
-Esse recurso não está disponível em outras operações para contatos, eventos, mensagens e respectivas pastas.
+* Se o aplicativo tiver permissões de aplicativo ou,
+* Se o aplicativo tiver as [permissões](#permissions) apropriadas delegadas de um usuário, e outro usuário tiver compartilhado uma pasta de email com o primeiro usuário ou, tiver dado acesso delegado a ele. Confira os [detalhes e um exemplo](../../../concepts/outlook-share-messages-folders.md).
 
 
 ## <a name="permissions"></a>Permissões
@@ -52,7 +28,7 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

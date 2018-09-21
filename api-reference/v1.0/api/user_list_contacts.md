@@ -1,35 +1,11 @@
-# <a name="list-contacts"></a>Listar contatos
+# <a name="list-contacts"></a>List contacts
 
-Obter uma coleção de contatos da pasta Contatos padrão do usuário conectado.
+Obter uma coleção de contatos da pasta de Contatos padrão do usuário conectado.
 
+Há dois cenários em que um aplicativo pode obter um contato da pasta de contatos de outro usuário:
 
-### <a name="get-contacts-in-another-users-contact-folder"></a>Obter contatos na pasta de contatos de outro usuário
-
-Se você tiver permissões de aplicativo ou se você tiver as [permissões](#permissions) delegadas apropriadas de um usuário, será possível obter os contatos da pasta de contatos de outro usuário. Esta seção se concentra em cenários que envolvem permissões delegadas.
-
-Por exemplo, seu aplicativo adquiriu permissões delegadas do usuário, Diogo. Suponha que outro usuário, Henrique, tenha compartilhado uma pasta de contatos com Diogo. Você pode obter os contatos nessa pasta compartilhada especificando a ID de usuário de Henrique (ou o nome de entidade de segurança) na consulta de exemplo mostrada abaixo.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/contacts
-```
-
-Esse recurso se aplica a todas as operações de contatos GET com suporte para usuários individuais, conforme listado na seção [solicitação HTTP](#http-request) abaixo. Também se aplica se Henrique delegou sua caixa de correio inteira a Diogo.
-
-Se Henrique não tiver compartilhado sua pasta de contatos com Diogo nem delegado sua caixa de correio a Diogo, a especificação da ID de usuário de Henrique ou do nome de entidade de segurança nessas operações GET retornará um erro. Nesses casos, especificar uma ID de usuário ou um nome de entidade de segurança só funcionará para obter contatos nas próprias pastas de contatos do usuário conectado, e a consulta será equivalente a usar o atalho /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/contacts
-```
-
-Esse recurso só está disponível nas operações GET de:
-
-- Pastas de contatos, calendários e pastas de mensagens compartilhados 
-- Contatos, eventos e mensagens em pastas compartilhadas
-- Os recursos acima em caixas de correio delegadas
-
-Esse recurso não está disponível em outras operações para contatos, eventos, mensagens e respectivas pastas.
+* Se o aplicativo tiver permissões de aplicativo ou,
+* Se o aplicativo tiver as [permissões](#permissions) apropriadas delegadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com o primeiro usuário ou, tiver dado acesso delegado a ele. Confira os [detalhes e um exemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
 ## <a name="permissions"></a>Permissões
