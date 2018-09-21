@@ -1,40 +1,15 @@
 # <a name="list-events"></a>Listar eventos
 
-Obtenha uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres da série.
+Obter uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e mestres de séries.
 
-No momento, esta operação retorna corpos de eventos somente no formato HTML.
+Para obter instâncias de evento expandidas, você pode [obter a visualização de calendário](calendar_list_calendarview.md) ou [obter as instâncias de um evento](event_list_instances.md).
 
-Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar_list_calendarview.md) ou [obtenha as instâncias de um evento](event_list_instances.md).
+No momento, esta operação retorna o corpo dos eventos somente no formato HTML.
 
+Há dois cenários em que um aplicativo pode obter eventos no calendário de outro usuário:
 
-### <a name="get-events-in-another-users-calendar"></a>Obter eventos do calendário de outro usuário
-
-Se você tiver permissões de aplicativo ou se tiver as [permissões](#permissions) delegadas apropriadas de um usuário, será possível obter eventos de calendário de outro usuário. Esta seção se concentra em cenários que envolvem permissões delegadas.
-
-Por exemplo, seu aplicativo adquiriu permissões delegadas do usuário, Diogo. Suponha que outro usuário, Henrique, tenha um calendário compartilhado com Diogo. Você pode obter os eventos desse calendário compartilhado especificando a ID de usuário de Henrique (ou o nome de entidade de segurança) na consulta de exemplo mostrada abaixo.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{Garth-id | Garth-userPrincipalName}/events
-```
-
-Esse recurso se aplica a todas as operações de eventos GET com suporte para usuários individuais, conforme listado na seção [Solicitação HTTP](#http-request) abaixo. Também se aplica se Henrique delegou sua caixa de correio inteira a Diogo.
-
-Se Henrique não tiver compartilhado seu calendário com Diogo nem delegado sua caixa de correio a Diogo, a especificação da ID de usuário de Henrique ou do nome de entidade de segurança nessas operações GET retornará um erro. Nesses casos, especificar uma ID de usuário ou um nome de entidade de segurança só funcionará para obter eventos nos próprios calendários do usuário conectado, e a consulta será equivalente a usar o atalho /me:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/events
-```
-
-Esse recurso só está disponível nas operações GET de:
-
-- Pastas de contatos, calendários e pastas de mensagens compartilhados 
-- Contatos, eventos e mensagens em pastas compartilhadas
-- Os recursos acima em caixas de correio delegadas
-
-Esse recurso não está disponível em outras operações para contatos, eventos, mensagens e respectivas pastas.
-
+* Se o aplicativo tiver permissões de aplicativo ou,
+* Se o aplicativo tiver as [permissões](#permissions) apropriadas delegadas de um usuário, e outro usuário tiver compartilhado um calendário com o primeiro usuário ou, tiver dado acesso delegado a ele. Confira os [detalhes e um exemplo](../../../concepts/outlook-get-shared-events-calendars.md).
 
 ### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
 
@@ -81,9 +56,9 @@ Este método dá suporte a [Parâmetros de consulta OData](http://developer.micr
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
 |:---------------|:--------|:--------|
-| Autorização  | string | {token} de portador. Obrigatório.  |
-| Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
+| Autorização  | sequência de caracteres | {token} de portador. Obrigatório.  |
+| Prefira: outlook.timezone  | sequência de caracteres | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
+| Prefer: outlook.body-content-type | sequência de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
