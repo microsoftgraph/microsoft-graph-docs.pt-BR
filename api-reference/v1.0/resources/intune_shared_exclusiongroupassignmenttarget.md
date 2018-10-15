@@ -15,18 +15,21 @@ Herda de [groupAssignmentTarget](../resources/intune_shared_groupassignmenttarge
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "baseType": "microsoft.graph.groupAssignmentTarget",
   "@odata.type": "microsoft.graph.exclusionGroupAssignmentTarget"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
   "groupId": "String"
 }
 ```
+
+
+
+
+
 
 
 

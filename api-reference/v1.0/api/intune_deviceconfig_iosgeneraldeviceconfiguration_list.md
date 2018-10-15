@@ -8,8 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegada (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -24,7 +24,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Autorização|Token&gt; de portador obrigatório.&lt;|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -45,7 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8854
+Content-Length: 8922
 
 {
   "value": [
@@ -159,6 +159,7 @@ Content-Length: 8854
       "kioskModeAllowVolumeButtons": true,
       "kioskModeAllowZoomSettings": true,
       "kioskModeAppStoreUrl": "https://example.com/kioskModeAppStoreUrl/",
+      "kioskModeBuiltInAppId": "Kiosk Mode Built In App Id value",
       "kioskModeRequireAssistiveTouch": true,
       "kioskModeRequireColorInversion": true,
       "kioskModeRequireMonoAudio": true,
@@ -272,6 +273,11 @@ Content-Length: 8854
   ]
 }
 ```
+
+
+
+
+
 
 
 

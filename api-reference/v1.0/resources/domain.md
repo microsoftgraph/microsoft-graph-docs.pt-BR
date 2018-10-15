@@ -1,5 +1,4 @@
-# tipo de recurso de domínio
-<a id="domain-resource-type" class="xliff"></a>
+# <a name="domain-resource-type"></a>tipo de recurso de domínio
 
 Representa um domínio associado ao locatário.
 
@@ -17,28 +16,26 @@ Para associar um domínio a um locatário:
 
 5. [Configurar](../api/domain_list_serviceconfigurationrecords.md) serviços como suporte para recuperar uma lista de registros necessários para ativar os serviços para o domínio. Adicione os detalhes de registro de configuração ao arquivo de zona do domínio usando o registrador de domínio ou a configuração do servidor DNS.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
-|[Obter domínio](../api/domain_get.md) | [domain](domain.md) | Leia as propriedades e os relacionamentos de um objeto de domínio.|
-|[Criar domínio](../api/domain_post_domains.md) | [domain](domain.md) | Adiciona um domínio ao inquilino. |
-|[List domainNameReference](../api/domain_list_domainnamereferences.md) |Coleção [directoryObject](directoryobject.md)| Recupere uma lista de objetos de diretório com uma referência ao domínio.|
-|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para configuração de domínio.|
-|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para verificação de domínio.|
-|[Atualizar domínio](../api/domain_update.md) | [domain](domain.md) |Atualiza um domínio.|
+|[Obter domínio](../api/domain_get.md) | [domínio](domain.md) | Leia as propriedades e os relacionamentos de um objeto de domínio.|
+|[Criar domínio](../api/domain_post_domains.md) | [domínio](domain.md) | Adiciona um domínio ao inquilino. |
+|[Lista domainNameReference](../api/domain_list_domainnamereferences.md) |Coleção [directoryObject](directoryobject.md)| Recupere uma lista de objetos de diretório com uma referência ao domínio.|
+|[Lista serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para configuração de domínio.|
+|[Lista verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para verificação de domínio.|
+|[Atualizar domínio](../api/domain_update.md) | [domínio](domain.md) |Atualiza um domínio.|
 |[Excluir domínio](../api/domain_delete.md) | Nenhum |Exclui um domínio.|
-|[Verificar domínio](../api/domain_verify.md)|[domain](domain.md)|Valida a propriedade do domínio.|
+|[Verificar domínio](../api/domain_verify.md)|[domínio](domain.md)|Valida a propriedade do domínio.|
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indica o tipo de autenticação configurado para o domínio. O valor será *Gerenciado* ou *Federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem, no qual o Azure AD realiza autenticação do usuário.<br>*Federada* indica que a autenticação é federada com um provedor de identidade como o Active Directory do locatário no local pelos Serviços de Federação do Active Directory. Não anulável |
-|availabilityStatus|String| Essa propriedade é sempre nula, exceto quando a ação [verify](../api/domain_verify.md) é usada. Quando a ação [verify](../api/domain_verify.md) é usada, uma entidade **domain** é retornada na resposta. A propriedade **availabilityStatus** da entidade **domain** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
-|id|String| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusivo |
+|authenticationType|Sequência de caracteres| Indica o tipo de autenticação configurado para o domínio. O valor será *Gerenciado* ou *Federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem, no qual o Azure AD realiza autenticação do usuário.<br>*Federada* indica que a autenticação é federada com um provedor de identidade como o Active Directory do locatário no local pelos Serviços de Federação do Active Directory. Não anulável |
+|availabilityStatus|Sequência de caracteres| Essa propriedade é sempre nula, exceto quando a ação [verify](../api/domain_verify.md) é usada. Quando a ação [verify](../api/domain_verify.md) é usada, uma entidade **domain** é retornada na resposta. A propriedade **availabilityStatus** da entidade **domain** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
+|id|Sequência de caracteres| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusivo |
 |isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio foi delegado para o Office 365. Caso contrário, o valor é verdadeiro. Não anulável |
 |isDefault|Booliano| True se este é o domínio padrão usado para a criação de usuário. Há apenas um domínio padrão por empresa. Não anulável |
 |isInitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (nomedaempresa.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
@@ -47,8 +44,7 @@ Para associar um domínio a um locatário:
 |supportedServices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Podem incluir 0, 1 ou mais dos seguintes valores: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar ou remover usando a API do Graph incluem: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
 |estado|[domainState](domainstate.md)| Status de operações assíncronas agendadas em um domínio. |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 
 As relações entre um domínio e outros objetos no diretório como seus registros de verificação e de configuração de serviço expostas por meio de propriedades de navegação. Você pode ler essas relações ao direcionar essas propriedades de navegação em suas solicitações.
 
@@ -58,15 +54,14 @@ As relações entre um domínio e outros objetos no diretório como seus registr
 |serviceConfigurationRecords|Coleção [domainDnsRecord](domaindnsrecord.md)| Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services.<br>Somente leitura, Anulável |
 |verificationDnsRecords|Coleção [domainDnsRecord](domaindnsrecord.md)| Os registros DNS que o cliente adiciona ao arquivo de zona DNS do domínio para que o cliente possa concluir a verificação de propriedade de domínio com o Azure AD.<br>Somente leitura, Anulável|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.domain"
 }-->
 

@@ -18,15 +18,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter todas as configurações de caixa de correio de um usuário:
-<!-- { "blockType": "ignored" } -->
+Para obter todas as configurações da caixa de correio de um usuário: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obter configurações específicas, por exemplo, somente as configurações de respostas automáticas, localidade, fuso horário ou horário de trabalho:
-<!-- { "blockType": "ignored" } -->
+Para obter configurações específicas, por exemplo, somente as configurações de respostas automáticas, localidade, fuso horário ou horário de trabalho: <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -41,11 +39,11 @@ GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/pt-BR/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -111,8 +109,8 @@ Content-type: application/json
             "thursday",
             "friday"
         ],
-        "startTime":"08:00:00.0000000",
-        "endTime":"17:00:00.0000000",
+        "startTime":"08:00:00.000",
+        "endTime":"17:00:00.000",
         "timeZone":{
             "name":"Pacific Standard Time"
         }
@@ -142,7 +140,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/api/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings/automaticRepliesSetting",
     "status": "alwaysEnabled",
     "externalAudience": "None",
     "scheduledStartDateTime": {

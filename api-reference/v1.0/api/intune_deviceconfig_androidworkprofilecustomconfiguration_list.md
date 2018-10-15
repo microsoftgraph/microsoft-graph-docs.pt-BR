@@ -1,8 +1,8 @@
-# <a name="list-devicecompliancescheduledactionforrules"></a>Listar deviceComplianceScheduledActionForRules
+# <a name="list-androidworkprofilecustomconfigurations"></a>Listar androidWorkProfileCustomConfigurations
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Listar propriedades e relações dos objetos [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md).
+Propriedades da lista e relacionamentos de objetos [androidWorkProfileCustomConfiguration](../resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md).
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -18,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 }
 -->
 ``` http
-GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule
+GET /deviceManagement/deviceConfigurations
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -31,13 +31,13 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retornará um código de resposta `200 OK` e uma coleção de objetos [deviceComplianceScheduledActionForRule](../resources/intune_deviceconfig_devicecompliancescheduledactionforrule.md) no corpo da resposta.
+Se tiver êxito, este método retorna um código de resposta `200 OK` e uma coleção de objetos [androidWorkProfileCustomConfiguration](../resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule
+GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Resposta
@@ -45,14 +45,27 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 208
+Content-Length: 682
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.deviceComplianceScheduledActionForRule",
-      "id": "f0075d5e-5d5e-f007-5e5d-07f05e5d07f0",
-      "ruleName": "Rule Name value"
+      "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
+      "id": "76c5d59b-d59b-76c5-9bd5-c5769bd5c576",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "description": "Description value",
+      "displayName": "Display Name value",
+      "version": 7,
+      "omaSettings": [
+        {
+          "@odata.type": "microsoft.graph.omaSettingInteger",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "omaUri": "Oma Uri value",
+          "value": 5
+        }
+      ]
     }
   ]
 }

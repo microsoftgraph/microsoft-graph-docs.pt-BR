@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deleteditems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
@@ -38,8 +38,8 @@ Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsof
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | &lt;Código&gt; do portador *Obrigatório*|
-| Aceitar  | application/json |
+| Autorização  | Código&gt; do portador *Obrigatório*&lt;|
+| Aceitar  | aplicativo/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
   "name": "get_deleteditems"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directory/deleteditems/microsoft.graph.group
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
 ##### <a name="response"></a>Resposta
 Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

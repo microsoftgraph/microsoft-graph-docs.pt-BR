@@ -1,8 +1,8 @@
-# <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso mdmWindowsInformationProtectionPolicy
+Tipo de recurso de dmWindowsInformationProtectionPolicy
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Política para proteção de informações do Windows com MDM
+Política para proteção de informações do Windows com MDM.  
 
 Herda de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)
 
@@ -24,7 +24,7 @@ Herda de [windowsInformationProtection](../resources/intune_mam_windowsinformati
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a política foi modificada. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |versão|Cadeia de caracteres|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Nível da imposição de WIP. Consulte a definição de Enum de valores suportados herdados de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Os valores possíveis são: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|Nível de imposição WIP. Veja a definição de Enum para valores suportados. Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Os valores possíveis são: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|Cadeia de caracteres|Domínio primário da empresa Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|Coleção [windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md)|Lista de domínios primários da empresa a serem protegidos Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|Booleano|Especifica se a proteção no recurso de bloqueio (também conhecido como criptografar com pin) deve ser configurada Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -50,21 +50,21 @@ Herda de [windowsInformationProtection](../resources/intune_mam_windowsinformati
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|protectedAppLockerFiles|Coleção [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Outra maneira de inserir aplicativos protegidos por meio de arquivos xml Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|exemptAppLockerFiles|Coleção [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Outra maneira de inserir aplicativos isentos por meio de arquivos xml Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|atribuições|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Propriedade de navegação para lista de grupos de segurança direcionados para política. Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedAppLockerFiles|Coleção [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Outra maneira de inserir aplicativos protegidos por meio de arquivos XML. Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|exemptAppLockerFiles|Coleção [windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md)|Outra maneira de inserir aplicativos isentos por meio de arquivos XML. Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|assignments|Coleção [targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md)|Propriedade de navegação para lista de grupos de segurança direcionados para política. Herdado de [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -91,7 +91,7 @@ Veja a seguir uma representação JSON do recurso.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -191,6 +191,30 @@ Veja a seguir uma representação JSON do recurso.
   "isAssigned": true
 }
 ```
+
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: dmWindowsInformation...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Policy for Windows i...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Inherits from [windo...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_managedappprotection.md/microsoft.graph.managedAppProtection/allowedDataStorageLocations:
+      Inconsistent types between parameter (String) and table (Object)"
+
+  ],
+}
+-->
 
 
 

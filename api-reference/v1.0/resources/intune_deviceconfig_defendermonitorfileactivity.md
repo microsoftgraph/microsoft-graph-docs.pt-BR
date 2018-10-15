@@ -7,10 +7,15 @@ Valores possíveis para monitoramento da atividade do arquivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|desativar|1|Desativar o monitoramento de atividade de arquivo.|
+|disable|1|Desativar o monitoramento de atividade de arquivo.|
 |monitorAllFiles|2|Monitorar todos os arquivos.|
 |monitorIncomingFilesOnly|3| Monitorar apenas os arquivos de entrada.|
 |monitorOutgoingFilesOnly|4|Monitorar apenas os arquivos de saída.|
+
+
+
+
+
 
 
 

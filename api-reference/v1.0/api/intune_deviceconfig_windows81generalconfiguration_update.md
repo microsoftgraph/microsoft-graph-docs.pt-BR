@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |browserBlockSingleWordEntryOnIntranetSites|Booleano|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
 |browserRequireSmartScreen|Booleano|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |browserEnterpriseModeSiteListLocation|Cadeia de caracteres|O local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|O nível de segurança da Internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança da Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|O nível de segurança da internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança de Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|Cadeia de caracteres|O local do relatório de registro em log.|
 |browserRequireHighSecurityForRestrictedSites|Booleano|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
 |browserRequireFirewall|Booleano|Indica se um firewall deve ou não ser exigido.|
@@ -178,6 +178,11 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
+
+
+
+
 
 
 

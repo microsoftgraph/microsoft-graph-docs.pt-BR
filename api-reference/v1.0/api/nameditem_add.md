@@ -29,13 +29,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|O nome do item nomeado.|
-|reference|string|A fórmula ou o intervalo ao qual o nome fará referência.|
-|comentário|string|O comentário associado ao item nomeado|
+|name|sequência de caracteres|O nome do item nomeado.|
+|reference|Json|A fórmula ou o intervalo ao qual o nome fará referência.|
+|comentário|sequência de caracteres|O comentário associado ao item nomeado|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [NamedItem](../resources/NamedItem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e o objeto [WorkbookNamedItem](../resources/NamedItem.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -93,5 +93,9 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: NamedItemcollection_add/value:
+      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
+  ],
   "tocPath": ""
 }-->

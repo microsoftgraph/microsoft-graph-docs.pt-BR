@@ -23,15 +23,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Content-Type  | sequência de caracteres | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -39,8 +39,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|ids|Coleção de cadeias de caracteres| Uma coleção de ids para a qual retornar objetos. Você pode especificar até 1000 ids. |
-|tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto derivado de `directoryObject` pode ser especificado na coleção. Por exemplo: [usuário](../resources/user.md), [grupo](../resources/group.md), [dispositivo](../resources/device.md) e assim por diante. Os valores não diferenciam maiúsculas de minúsculas.|
+|ids|Conjunto de sequência de caracteres| Uma coleção de ids para a qual retornar objetos. Você pode especificar até 1000 ids. |
+|tipos|Conjunto de sequência de caracteres| Uma coleção dos tipos de recursos que especifica o conjunto de coleções de recursos a pesquisar. Se não especificado, o padrão é [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que derive de `directoryObject` pode ser especificado na coleção; por exemplo: [user](../resources/user.md), [group](../resources/group.md), [device](../resources/device.md)e assim por diante. Os valores não diferenciam entre maiúsculas e minúsculas.|
 
 ## <a name="response"></a>Resposta
 
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getByIds
 Content-type: application/json
 
 {
-    "ids":["84b80893-8749-40a3-97b7-68513b600544","5d6059b6-368d-45f8-91e1-8e07d485f1d0"],
+    "ids":["84b80893874940a3-97b7-68513b600544","5d6059b6368d-45f8-91e18e07d485f1d0"],
     "types":["user"]
 }
 ```

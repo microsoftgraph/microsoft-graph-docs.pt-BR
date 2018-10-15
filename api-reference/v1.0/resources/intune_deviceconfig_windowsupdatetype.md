@@ -7,11 +7,16 @@ De qual ramificação os dispositivos receberão suas atualizações
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Permitir que o usuário configure.|
-|todos|1|Canal Semestral (Direcionado). O dispositivo recebe todas as atualizações aplicáveis de recursos do Canal Semestral (Direcionado).|
+|all|1|Canal Semestral (Direcionado). O dispositivo recebe todas as atualizações aplicáveis de recursos do Canal Semestral (Direcionado).|
 |businessReadyOnly|2|Canal Semestral. O dispositivo recebe atualizações de recursos do Canal Semestral.|
 |windowsInsiderBuildFast|3|Compilação do Windows Insider - Rápido|
 |windowsInsiderBuildSlow|4|Compilação do Windows Insider - Lento|
 |windowsInsiderBuildRelease|5|Versão do Windows Insider|
+
+
+
+
+
 
 
 

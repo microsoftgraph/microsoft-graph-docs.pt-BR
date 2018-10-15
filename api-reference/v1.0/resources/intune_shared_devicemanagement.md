@@ -2,7 +2,7 @@
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:
+O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
 
 - Eventos de auditoria
 - Termos e condições corporativas 
@@ -23,28 +23,28 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagement](../api/intune_shared_devicemanagement_get.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
-|[Atualizar deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Atualize as propriedades de um objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
-|**Integração**|
+|[Atualizar deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Atualizar as propriedades de um objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
+|**Nível de contratação**|
 |[Função verifyWindowsEnrollmentAutoDiscovery](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Booliano|Ainda não documentado|
 |**RBAC**|
-|[Função getEffectivePermissions](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|Coleção [rolePermission](../resources/intune_rbac_rolepermission.md) ou conjunto de sequência de caracteres|Recupera permissões efetivas do usuário autenticado no momento|
+|[Função getEffectivePermissions](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|Coleção [rolePermission](../resources/intune_rbac_rolepermission.md) ou conjunto de sequência de caracteres|Recupera permissões efetivas de usuário autenticado no momento|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
-|settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Configurações de nível da conta.|
+|configurações|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
 |subscriptionState|Cadeia de caracteres|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**Integração**|
+|**Nível de contratação**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |**Auditoria**|
-|auditEvents|Conjunto [auditEvent](../resources/intune_auditing_auditevent.md)|Os eventos de auditoria|
+|auditEvents|Conjunto [auditEvent](../resources/intune_auditing_auditevent.md)|Eventos de auditoria|
 |**Termos e condições corporativas**|
 |termsAndConditions|Conjunto [termsAndConditions](../resources/intune_companyterms_termsandconditions.md)|Os termos e condições associados ao gerenciamento do dispositivo da empresa.|
 |**Configuração do dispositivo**|
@@ -52,7 +52,7 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|O resumo do estado de conformidade dos dispositivos para esta conta.|
 |deviceCompliancePolicySettingStateSummaries|Coleção [deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md)|Os estados resumidos das configurações da política de conformidade para esta conta.|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|O resumo do estado de configuração de dispositivos para esta conta.|
-|deviceConfigurations|Coleção [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|As configurações do dispositivo.|
+|deviceConfigurations|Coleção [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|As configurações de dispositivos.|
 |iosUpdateStatuses|Coleção [iosUpdateDeviceStatus](../resources/intune_deviceconfig_iosupdatedevicestatus.md)|Os status de instalação de atualizações de software do iOS para esta conta.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune_deviceconfig_softwareupdatestatussummary.md)|O resumo do status de atualização do software.|
 |**Gerenciamento de dispositivos**|
@@ -62,18 +62,19 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |managedDevices|Conjunto [managedDevice](../resources/intune_devices_manageddevice.md)|A lista de dispositivos gerenciados.|
 |**Registro**|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
+|importedWindowsAutopilotDeviceIdentityUploads|Coleção [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)|Coleção de carregamento de dispositivos de piloto automático do Windows.|
 |**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
-|**Integração**|
-|conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|As configurações de acesso condicional do Exchange no local. O acesso condicional no local exigirá que os dispositivos sejam registrados e estejam em conformidade para o acesso ao e-mail|
+|**Nível de contratação**|
+|conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|As configurações de acesso condicional do Exchange no local. O acesso condicional no local exigirá que os dispositivos sejam registrados e estejam em conformidade para o acesso ao email|
 |deviceCategories|Coleção [deviceCategory](../resources/intune_shared_devicecategory.md)|A lista de categorias de dispositivo com o locatário.|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|
-|deviceManagementPartners|Coleção [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|A lista de parceiros de gerenciamento de dispositivos configurada pelo locatário.|
+|deviceManagementPartners|Coleção [deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md)|A lista de Parceiros de gerenciamento de dispositivos configurados pelo locatário.|
 |exchangeConnectors|Coleção [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md)|A lista dos Conectores do Exchange configurados pelo locatário.|
 |mobileThreatDefenseConnectors|Coleção [mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md)|A lista dos conectores de defesa contra ameaças móveis configurados pelo locatário.|
 |**RBAC**|
 |resourceOperations|Conjunto [resourceOperation](../resources/intune_rbac_resourceoperation.md)|As operações de recurso.|
-|roleAssignments|Conjunto [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md)|As atribuições da função.|
+|roleAssignments|Conjunto [deviceAndAppManagementRoleAssignment](../resources/intune_rbac_deviceandappmanagementroleassignment.md)|As atribuições da função|
 |roleDefinitions|Conjunto [roleDefinition](../resources/intune_rbac_roledefinition.md)|As definições da função.|
 |**Assistência remota**|
 |remoteAssistancePartners|Conjunto [remoteAssistancePartner](../resources/intune_remoteassistance_remoteassistancepartner.md)|Os parceiros de assistência remota.|

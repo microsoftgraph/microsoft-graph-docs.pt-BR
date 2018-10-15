@@ -7,8 +7,13 @@ Tipo de modos de exibição para o menu Iniciar.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Definido pelo usuário. Valor padrão.|
-|fullScreen|1|Tela cheia.|
+|fullScreen|1|Tela inteira.|
 |nonFullScreen|2|Sem tela cheia.|
+
+
+
+
+
 
 
 

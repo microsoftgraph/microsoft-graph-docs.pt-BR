@@ -7,9 +7,14 @@ Valores possíveis para especificar quais cookies são permitidos no Microsoft E
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Permitir que o usuário configure.|
-|permitir|1|Permitir.|
+|allow|1|Permitir.|
 |blockThirdParty|2|Bloquear somente cookies de terceiros.|
 |blockAll|3|Bloquear todos os cookies.|
+
+
+
+
+
 
 
 

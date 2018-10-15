@@ -36,7 +36,7 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do iOS.|
 |systemIntegrityProtectionEnabled|Booliano|Exige que dispositivos tenham habilitado a proteção de integridade do sistema.|
 |deviceThreatProtectionEnabled|Booleano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível de risco mínimo de proteção contra ameaças móveis para indicar falta de conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune_deviceconfig_devicethreatprotectionlevel.md)|Exige o nível de risco mínimo de Proteção Contra Ameaças Móveis para relatar a não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Booliano|Exige criptografia em dispositivos Mac OS.|
 |firewallEnabled|Booleano|Se o firewall deve ser habilitado ou não.|
 |firewallBlockAllIncoming|Booleano|Corresponde à opção "Bloquear todas as conexões de entrada".|
@@ -55,13 +55,12 @@ Herda de [deviceCompliancePolicy](../resources/intune_deviceconfig_devicecomplia
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
+<!--{
   "blockType": "resource",
-  "keyProperty": "id",
   "baseType": "microsoft.graph.deviceCompliancePolicy",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.macOSCompliancePolicy"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
@@ -90,6 +89,11 @@ Veja a seguir uma representação JSON do recurso.
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
+
+
 
 
 

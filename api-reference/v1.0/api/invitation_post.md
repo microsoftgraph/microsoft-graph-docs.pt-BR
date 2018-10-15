@@ -35,8 +35,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um convi
 
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | O endereço de email do usuário que você está convidando.|
-|inviteRedirectUrl |string |A URL para a qual o usuário será redirecionado após o resgate.|
+|invitedUserEmailAddress |sequência de caracteres | O endereço de email do usuário que você está convidando.|
+|inviteRedirectUrl |sequência de caracteres |A URL para a qual o usuário será redirecionado após o resgate.|
 
 ## <a name="response"></a>Resposta
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -95,3 +95,11 @@ Content-length: 551
   "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
+  ]
+}-->

@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Baixar um arquivo
-ms.openlocfilehash: b5456acc6661fdc7a9682bf2b0ff70a2e5e38a3e
-ms.sourcegitcommit: 9f5a17e9978197ab47b460c53f7fe2cec180d4a2
+ms.openlocfilehash: efed0b12484c3656e5b2b4b9cbe8fb84cdc27006
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "19492727"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23268085"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Baixe o conteúdo de um DriveItem
 
@@ -41,7 +41,7 @@ GET /users/{userId}/drive/items/{item-id}/content
 
 | Nome          | Valor  | Descrição                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
+| if-none-match | Sequência de caracteres | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
 ## <a name="example"></a>Exemplo
 
@@ -58,7 +58,8 @@ GET /me/drive/items/{item-id}/content
 
 Retorna uma resposta `302 Found` que redireciona para uma URL de download previamente autenticada do arquivo. Esta é a mesma URL disponível por meio da propriedade `@microsoft.graph.downloadUrl` no DriveItem.
 
-Para baixar o conteúdo do arquivo, seu aplicativo precisará seguir o cabeçalho `Location` na resposta. Várias bibliotecas de cliente HTTP seguirão automaticamente o redirecionamento 302 e começarão a baixar imediatamente o arquivo.
+Para baixar o conteúdo do arquivo, seu aplicativo precisa seguir o cabeçalho `Location` na resposta.
+Muitas bibliotecas de clientes HTTP seguem automaticamente o redirecionamento 302 e começam a baixar o arquivo imediatamente.
 
 URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.
 
@@ -73,7 +74,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 Para baixar um intervalo parcial de bytes do arquivo, o aplicativo pode usar o cabeçalho `Range` conforme especificado em [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Observe que você deve acrescentar o cabeçalho `Range` à URL `@microsoft.graph.downloadUrl` real e não à solicitação para `/content`.
 
-<!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
 ```http
 GET https://b0mpua-by3301.files.1drv.com/y23vmag
@@ -87,6 +88,7 @@ Isso retornará uma resposta `HTTP 206 Partial Content` com o intervalo de solic
 ```http
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/2048
+Content-Type: application/octet-stream
 
 <first 1024 bytes of file>
 ```

@@ -3,16 +3,16 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Pasta
-ms.openlocfilehash: 664597297700f7af096ef30cfbd5342a45a6c157
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: c0ab787f1c1f04ff77eeb69979dc6a825d4f3c33
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266559"
 ---
-# <a name="folder-resource-type"></a>Tipo de recurso Folder
+# <a name="folder-resource-type"></a>Tipo de recurso pasta
 
-O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. 
-[**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
+O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -37,8 +37,8 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade       | Tipo           | Descrição
 |:---------------|:---------------|:-------------------------------------------
-| **childCount** | Int64          | Número de filhos imediatamente neste contêiner.
-| **view**       | [folderView][] | Uma coleção de propriedades que definem o modo de exibição recomendado para a pasta.
+| **childCount** | Int32          | Número de filhos contidos imediatamente dentro deste contêiner.
+| **modo de exibição**       | [folderView][] | Uma coleção de propriedades que definem o modo de exibição recomendado para a pasta.
 
 ## <a name="remarks"></a>Comentários 
 

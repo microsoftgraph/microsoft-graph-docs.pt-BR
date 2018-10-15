@@ -3,11 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
-ms.openlocfilehash: 8aa366e3c4f59fc5d22f945c863bab4f91373b67
-ms.sourcegitcommit: 7aea7a97e36e6d146214de3a90fdbc71628aadba
+ms.openlocfilehash: 4aaff6539fc9c7ce77029463562c0f8fca57cac6
+ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23266503"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -31,22 +32,22 @@ Aqui está uma representação JSON de um recurso **numberColumn**.
 
 | Nome da propriedade      | Tipo   | Descrição
 |:-------------------|:-------|:-----------------------------------------------
-| **decimalPlaces**  | string | Quantas casas decimais exibir. Consulte abaixo para saber mais sobre os valores possíveis.
-| **displayAs**      | string | Como o valor deve ser apresentado na experiência do usuário. Deve ser `number` ou `percentage`. Se não for especificado, é tratado como `number`.
-| **maximum**        | double | O valor máximo permitido.
-| **minimum**        | double | O valor mínimo permitido.
+| **decimalPlaces**  | sequência de caracteres | Quantas casas decimais exibir. Consulte abaixo para saber mais sobre os valores possíveis.
+| **displayAs**      | sequência de caracteres | Como o valor deve ser apresentado na experiência do usuário. Deve ser `number` ou `percentage`. Se não for especificado, é tratado como `number`.
+| **máximo**        | double | O valor máximo permitido.
+| **mínimo**        | double | O valor mínimo permitido.
 
-## <a name="decimalplaces-values"></a>Valores de DecimalPlaces
+## <a name="decimalplaces"></a>DecimalPlaces
 
 | Valor          | Descrição
 |:---------------|:--------------------------------------------------------------
-| **automatic**  | Padrão. Exibir casas decimais automaticamente conforme necessário.
-| **none**       | Não exibir casas decimais.
-| **one**        | Exibir sempre uma casa decimal.
-| **two**        | Exibir sempre duas casas decimais.
-| **three**      | Exibir sempre três casas decimais.
-| **four**       | Exibir sempre quatro casas decimais.
-| **five**       | Exibir sempre cinco casas decimais.
+| **automático**  | Padrão. Exibir casas decimais automaticamente conforme necessário.
+| **nenhum**       | Não exibir casas decimais.
+| **um**        | Exibir sempre uma casa decimal.
+| **dois**        | Exibir sempre duas casas decimais.
+| **três**      | Exibir sempre três casas decimais.
+| **quatro**       | Exibir sempre quatro casas decimais.
+| **cinco**       | Exibir sempre cinco casas decimais.
 
 Observação: **decimalPlaces** e **displayAs** aplicam-se a como os números são processados, não armazenados.
 Essas propriedades podem ser atualizadas.
@@ -56,5 +57,11 @@ Essas propriedades podem ser atualizadas.
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(automatic,none,one,two,three,four,five) are in resource, but () are in table",
+    "Warning: /api-reference/v1.0/resources/numbercolumn.md:
+      Found potential enums in resource example that weren't defined in a table:(number,percentage) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/NumberColumn"
 } -->

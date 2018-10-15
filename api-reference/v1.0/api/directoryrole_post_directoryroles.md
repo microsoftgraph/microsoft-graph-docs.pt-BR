@@ -20,17 +20,17 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | application/json  |
+| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Conteúdo-Tipo  | sequência de caracteres  | aplicativo/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [directoryRole](../resources/directoryrole.md).
 
 A tabela a seguir mostra as propriedades que são necessárias ao ativar uma função de diretório.
 
-|Parâmetro obrigatório | Tipo | Descrição|
+|Parâmetro | Tipo | Descrição|
 |:---------|:---------|:---------|
-|roleTemplateId | string | A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
+|roleTemplateId | sequência de caracteres | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função é baseada. Esta é a única propriedade que pode ser especificada na solicitação.|
 
 ## <a name="response"></a>Resposta
 
