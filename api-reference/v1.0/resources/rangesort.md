@@ -7,13 +7,57 @@ Gerencia as operações de classificação em objetos Range.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Apply](../api/rangesort_apply.md)|Nenhum|Execute uma operação de classificação.|
+|[Aplicar](../api/rangesort_apply.md)|Nenhum|Execute uma operação de classificação.|
 
 ## <a name="properties"></a>Propriedades
-Nenhuma
+Nenhum
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.workbookRangeSort"
+}-->
+
+```json
+{
+}
+```
+
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+
+<!--{
+  "blockType": "request",
+  "name": "range_sort"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
+```
+
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookRangeSort"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

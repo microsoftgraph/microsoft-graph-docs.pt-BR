@@ -8,7 +8,7 @@ A imagem a seguir mostra o aplicativo que você criará.
 
 ![Captura de tela do exemplo de conexão com o Microsoft Graph para Ruby on Rails](./images/Microsoft-Graph-Ruby-Connect-UI.png)
 
-**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/pt-BR/getting-started) para agilizar o processo ou baixe o [Exemplo de conexão REST para Ruby](https://github.com/microsoftgraph/ruby-connect-rest-sample) no qual este artigo se baseia.
+**Não está com vontade de criar um aplicativo?** Use o [Início rápido do Microsoft Graph](https://graph.microsoft.io/en-us/getting-started) para agilizar o processo ou baixe o [Exemplo de conexão REST para Ruby](https://github.com/microsoftgraph/ruby-connect-rest-sample) no qual este artigo se baseia.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -19,7 +19,7 @@ Para começar, será necessário:
 - Estrutura do Rails (o exemplo foi testado nos Rails 4.2).
 - Gerenciador de dependências do Bundler.
 - Interface de servidor Web Rack para Ruby.
-- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/pt-BR/office/developer-program/office-365-developer-program-faq#account-types)
+- Uma [conta da Microsoft](https://www.outlook.com/) ou uma [conta corporativa ou de estudante](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-faq#account-types)
 - O Projeto inicial de conexão com o Microsoft Graph para Ruby on Rails. Baixe o [Exemplo de conexão com o Microsoft Graph para Ruby on Rails](https://github.com/microsoftgraph/ruby-connect-rest-sample). O projeto inicial está localizado na pasta _starter_.
 
 
@@ -79,7 +79,7 @@ O fluxo de autenticação pode ser dividido nestas etapas básicas:
 2. Obter um código de autorização
 3. Resgatar o código de autorização para solicitar um token de acesso
 
->Para mais informações sobre esse fluxo de autenticação, confira [Aplicativo Web para API Web](https://azure.microsoft.com/pt-BR/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) e [Integrar a identidade da Microsoft e o Microsoft Graph em um aplicativo Web usando OpenID Connect](https://azure.microsoft.com/pt-BR/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) na documentação do Azure AD.
+>Para mais informações sobre esse fluxo de autenticação, confira [Aplicativo Web para API Web](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#web-application-to-web-api) e [Integrar a identidade da Microsoft e o Microsoft Graph em um aplicativo Web usando OpenID Connect](https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-openidconnect-v2/) na documentação do Azure AD.
 
 Usaremos uma pilha de três partes do middleware [Rack](http://rack.github.io/) para habilitar o aplicativo para autenticar no Microsoft Graph:
 
