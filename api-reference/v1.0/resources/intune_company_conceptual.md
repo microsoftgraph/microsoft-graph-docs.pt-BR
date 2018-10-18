@@ -8,6 +8,6 @@
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar termos e condições no Intune:
 
+- [Termos e condições](intune_companyterms_termsandconditions.md)
 - [Status de aceitação dos termos e das condições](intune_companyterms_termsandconditionsacceptancestatus.md)
 - [Atribuição de termos e condições](intune_companyterms_termsandconditionsassignment.md)
-- [Termos e condições](intune_companyterms_termsandconditions.md)
