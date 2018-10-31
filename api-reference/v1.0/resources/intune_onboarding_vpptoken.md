@@ -18,7 +18,7 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |:---|:---|:---|
 |id|Cadeia de caracteres|Isso é gerado automaticamente quando o appleVolumePurchaseProgramToken é criado. É a Chave da entidade.|
 |organizationName|Cadeia de caracteres|A organização associada ao Token do Programa de Compra por Volume da Apple|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|O tipo de programa de compra de volume ao qual o Token do Programa de Compra de Volume da Apple está associado. Os valores possíveis são: , . Os valores possíveis são: , .`business``education``business``education`|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune_shared_vpptokenaccounttype.md)|O tipo de programa de compra de volume ao qual o Token do Programa de Compra de Volume da Apple está associado. Os valores possíveis são: , . Os valores possíveis são: , .`business` `education` `business` `education`|
 |appleId|Cadeia de caracteres|O Apple ID associado ao Token do Apple Volume Purchase Program.|
 |expirationDateTime|DateTimeOffset|A data e hora de expiração do Token do Apple Volume Purchase Program.|
 |lastSyncDateTime|DateTimeOffset|A última vez que uma sincronização de aplicativo foi realizada com o serviço do Apple Volume Purchase Program usando Token do Apple Volume Purchase Program.|

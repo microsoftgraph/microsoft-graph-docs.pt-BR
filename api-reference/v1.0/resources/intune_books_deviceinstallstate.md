@@ -19,7 +19,7 @@ Contém propriedades do estado de instalação de um dispositivo.
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
-|installState|[installState](../resources/intune_books_installstate.md)||||UNTRANSLATED_CONTENT_START|||The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|||UNTRANSLATED_CONTENT_END||||
+|installState|[installState](../resources/intune_books_installstate.md)|O estado da instalação do eBook. Os valores possíveis são: .`notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
 |osVersion|Cadeia de caracteres|Versão do sistema operacional.|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional.|

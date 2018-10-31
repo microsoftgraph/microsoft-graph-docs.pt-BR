@@ -82,7 +82,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |webBrowserBlockAutofill|Booleano|Indica se o recurso de preenchimento automático do navegador da Web deve ou não ser bloqueado.|
 |webBrowserBlockJavaScript|Booleano|Indica se o JavaScript dentro do navegador da Web deve ou não ser bloqueado.|
 |webBrowserBlocked|Booleano|Indica se o navegador da Web deve ou não ser bloqueado.|
-|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)||||UNTRANSLATED_CONTENT_START|||Cookie settings within the web browser. Possible values are: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|||UNTRANSLATED_CONTENT_END||||
+|webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune_deviceconfig_webbrowsercookiesettings.md)|Configurações de cookie dentro do navegador da Web. Os valores possíveis são:`browserDefault` , `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
 |wiFiBlocked|Booleano|Indica se a sincronização de Wi-Fi deve ou não ser bloqueada.|
 |appsInstallAllowList|Coleção [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicativos que podem ser instalados no dispositivo KNOX. Esta coleção pode conter um máximo de 500 elementos.|
 |appsLaunchBlockList|Coleção [appListItem](../resources/intune_deviceconfig_applistitem.md)|Lista de aplicativos que não podem ser abertos no dispositivo KNOX. Esta coleção pode conter um máximo de 500 elementos.|

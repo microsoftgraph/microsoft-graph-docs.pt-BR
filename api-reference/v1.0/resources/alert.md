@@ -1,6 +1,6 @@
 # <a name="alert-resource-type"></a>tipo de recurso alert
 
-Representa possíveis problemas de segurança no locatário de um cliente identificado pela Microsoft ou por soluções de segurança de parceiros. Use alertas para unificar e simplificar o gerenciamento de problemas de segurança em todas as soluções integradas. |||UNTRANSLATED_CONTENT_START|||To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).|||UNTRANSLATED_CONTENT_END|||
+Representa possíveis problemas de segurança no locatário de um cliente identificado pela Microsoft ou por soluções de segurança de parceiros. Use alertas para unificar e simplificar o gerenciamento de problemas de segurança em todas as soluções integradas. Para saber mais, consulte os exemplos de consultas no [Graph Explorer.](https://developer.microsoft.com/en-us/graph/graph-explorer)
 
 Alertas podem ser recuperados dos seguintes provedores: Central de Segurança do Azure e Azure Active Directory Identity Protection. Outros provedores de alertas se integrarão nos próximos meses.
 

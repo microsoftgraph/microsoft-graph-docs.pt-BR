@@ -36,7 +36,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
-|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)||||UNTRANSLATED_CONTENT_START|||Application Type. Possible values are: `universal`, `desktop`.|||UNTRANSLATED_CONTENT_END||||
+|applicationType|[applicationType](../resources/intune_wip_applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: , .`universal` `desktop`|
 |deviceCount|Int32|Contagem de dispositivos|
 
 
