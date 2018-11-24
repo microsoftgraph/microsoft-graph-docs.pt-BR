@@ -1,47 +1,47 @@
-# <a name="list-serviceconfigurationrecords"></a><span data-ttu-id="b536b-101">Listar serviceConfigurationRecords</span><span class="sxs-lookup"><span data-stu-id="b536b-101">List serviceConfigurationRecords</span></span>
+# <a name="list-serviceconfigurationrecords"></a><span data-ttu-id="29ac8-101">Listar serviceConfigurationRecords</span><span class="sxs-lookup"><span data-stu-id="29ac8-101">List serviceConfigurationRecords</span></span>
 
-<span data-ttu-id="b536b-102">Recupera uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) necessários para ativar os serviços do domínio.</span><span class="sxs-lookup"><span data-stu-id="b536b-102">Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.</span></span>
+<span data-ttu-id="29ac8-102">Recupera uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) necessários para ativar os serviços do domínio.</span><span class="sxs-lookup"><span data-stu-id="29ac8-102">Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.</span></span>
 
-<span data-ttu-id="b536b-p101">Use a lista retornada para adicionar registros para ao arquivo de zona do domínio. Isso pode ser feito por meio da configuração do servidor DNS ou do registrador de domínios.</span><span class="sxs-lookup"><span data-stu-id="b536b-p101">Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.</span></span>
+<span data-ttu-id="29ac8-p101">Use a lista retornada para adicionar registros para ao arquivo de zona do domínio. Isso pode ser feito por meio da configuração do servidor DNS ou do registrador de domínios.</span><span class="sxs-lookup"><span data-stu-id="29ac8-p101">Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b536b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b536b-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="29ac8-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="29ac8-105">Permissions</span></span>
 
-<span data-ttu-id="b536b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="b536b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="29ac8-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="29ac8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
 
-|<span data-ttu-id="b536b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b536b-108">Permission type</span></span>      | <span data-ttu-id="b536b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b536b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="29ac8-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="29ac8-108">Permission type</span></span>      | <span data-ttu-id="29ac8-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="29ac8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b536b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b536b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b536b-111">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="b536b-111">Directory.Read.All</span></span>    |
-|<span data-ttu-id="b536b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b536b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b536b-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b536b-113">Not supported.</span></span>    |
-|<span data-ttu-id="b536b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b536b-114">Application</span></span> | <span data-ttu-id="b536b-115">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b536b-115">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="29ac8-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="29ac8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="29ac8-111">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="29ac8-111">Directory.Read.All</span></span>    |
+|<span data-ttu-id="29ac8-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="29ac8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="29ac8-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="29ac8-113">Not supported.</span></span>    |
+|<span data-ttu-id="29ac8-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="29ac8-114">Application</span></span> | <span data-ttu-id="29ac8-115">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29ac8-115">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b536b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b536b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="29ac8-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="29ac8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/contoso.com/serviceConfigurationRecords
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b536b-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b536b-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="29ac8-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="29ac8-117">Optional query parameters</span></span>
 
-<span data-ttu-id="b536b-118">Este método dá suporte a [Parâmetros de consulta OData](http://graph.microsoft.io/docs/overview/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="b536b-118">This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="29ac8-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="29ac8-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b536b-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b536b-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="29ac8-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="29ac8-119">Request headers</span></span>
 
-| <span data-ttu-id="b536b-120">Nome</span><span class="sxs-lookup"><span data-stu-id="b536b-120">Name</span></span>      |<span data-ttu-id="b536b-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="b536b-121">Description</span></span>|
+| <span data-ttu-id="29ac8-120">Nome</span><span class="sxs-lookup"><span data-stu-id="29ac8-120">Name</span></span>      |<span data-ttu-id="29ac8-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="29ac8-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b536b-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b536b-122">Authorization</span></span>  | <span data-ttu-id="b536b-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b536b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b536b-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b536b-125">Content-Type</span></span>  | <span data-ttu-id="b536b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b536b-126">application/json</span></span> |
+| <span data-ttu-id="29ac8-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="29ac8-122">Authorization</span></span>  | <span data-ttu-id="29ac8-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="29ac8-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="29ac8-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="29ac8-125">Content-Type</span></span>  | <span data-ttu-id="29ac8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="29ac8-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b536b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b536b-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="29ac8-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="29ac8-127">Request body</span></span>
 
-<span data-ttu-id="b536b-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b536b-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="29ac8-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="29ac8-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b536b-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="b536b-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="29ac8-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="29ac8-129">Response</span></span>
 
-<span data-ttu-id="b536b-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b536b-130">If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.</span></span>
+<span data-ttu-id="29ac8-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="29ac8-130">If successful, this method returns a `200 OK` response code and collection of [domainDnsRecord](../resources/domaindnsrecord.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b536b-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b536b-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="b536b-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b536b-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="29ac8-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="29ac8-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="29ac8-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="29ac8-132">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -50,8 +50,8 @@ GET /domains/contoso.com/serviceConfigurationRecords
 ```http
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
-##### <a name="response"></a><span data-ttu-id="b536b-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="b536b-133">Response</span></span>
-<span data-ttu-id="b536b-p104">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b536b-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="29ac8-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="29ac8-133">Response</span></span>
+<span data-ttu-id="29ac8-p104">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="29ac8-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

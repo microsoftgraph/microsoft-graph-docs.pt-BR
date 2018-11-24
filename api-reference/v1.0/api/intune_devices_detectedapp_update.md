@@ -1,18 +1,18 @@
-# <a name="update-detectedapp"></a><span data-ttu-id="09629-101">Atualizar detectedApp</span><span class="sxs-lookup"><span data-stu-id="09629-101">Update detectedApp</span></span>
+# <a name="update-detectedapp"></a><span data-ttu-id="300b3-101">Atualizar detectedApp</span><span class="sxs-lookup"><span data-stu-id="300b3-101">Update detectedApp</span></span>
 
-> <span data-ttu-id="09629-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="09629-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="300b3-102">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="300b3-102">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="09629-103">Atualizar as propriedades de um objeto [detectedApp](../resources/intune_devices_detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="09629-103">Update the properties of a [detectedApp](../resources/intune_devices_detectedapp.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="09629-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="09629-104">Prerequisites</span></span>
-<span data-ttu-id="09629-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="09629-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
+<span data-ttu-id="300b3-103">Atualizar as propriedades de um objeto [detectedApp](../resources/intune_devices_detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="300b3-103">Update the properties of a [detectedApp](../resources/intune_devices_detectedapp.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="300b3-104">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="300b3-104">Prerequisites</span></span>
+<span data-ttu-id="300b3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).</span><span class="sxs-lookup"><span data-stu-id="300b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).</span></span>
 
-|<span data-ttu-id="09629-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="09629-107">Permission type</span></span>|<span data-ttu-id="09629-108">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="09629-108">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="300b3-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="300b3-107">Permission type</span></span>|<span data-ttu-id="300b3-108">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="300b3-108">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="09629-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="09629-109">Delegated (work or school account)</span></span>|<span data-ttu-id="09629-110">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="09629-110">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="09629-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="09629-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="09629-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="09629-112">Not supported.</span></span>|
-|<span data-ttu-id="09629-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="09629-113">Application</span></span>|<span data-ttu-id="09629-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="09629-114">Not supported.</span></span>|
+|<span data-ttu-id="300b3-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="300b3-109">Delegated (work or school account)</span></span>|<span data-ttu-id="300b3-110">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="300b3-110">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="300b3-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="300b3-111">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="300b3-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="300b3-112">Not supported.</span></span>|
+|<span data-ttu-id="300b3-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="300b3-113">Application</span></span>|<span data-ttu-id="300b3-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="300b3-114">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="09629-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="09629-115">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="300b3-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="300b3-115">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -21,39 +21,40 @@
 PATCH /deviceManagement/detectedApps/{detectedAppId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="09629-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="09629-116">Request headers</span></span>
-|<span data-ttu-id="09629-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="09629-117">Header</span></span>|<span data-ttu-id="09629-118">Valor</span><span class="sxs-lookup"><span data-stu-id="09629-118">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="300b3-116">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="300b3-116">Request headers</span></span>
+|<span data-ttu-id="300b3-117">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="300b3-117">Header</span></span>|<span data-ttu-id="300b3-118">Valor</span><span class="sxs-lookup"><span data-stu-id="300b3-118">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="09629-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="09629-119">Authorization</span></span>|<span data-ttu-id="09629-120">Token&gt; de portador obrigatório.&lt;</span><span class="sxs-lookup"><span data-stu-id="09629-120">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="09629-121">Aceitar</span><span class="sxs-lookup"><span data-stu-id="09629-121">Accept</span></span>|<span data-ttu-id="09629-122">application/json</span><span class="sxs-lookup"><span data-stu-id="09629-122">application/json</span></span>|
+|<span data-ttu-id="300b3-119">Autorização</span><span class="sxs-lookup"><span data-stu-id="300b3-119">Authorization</span></span>|<span data-ttu-id="300b3-120">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="300b3-120">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="300b3-121">Aceitar</span><span class="sxs-lookup"><span data-stu-id="300b3-121">Accept</span></span>|<span data-ttu-id="300b3-122">application/json</span><span class="sxs-lookup"><span data-stu-id="300b3-122">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="09629-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="09629-123">Request body</span></span>
-<span data-ttu-id="09629-124">No corpo da solicitação, forneça uma representação JSON do objeto [detectedApp](../resources/intune_devices_detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="09629-124">In the request body, supply a JSON representation for the [detectedApp](../resources/intune_devices_detectedapp.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="300b3-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="300b3-123">Request body</span></span>
+<span data-ttu-id="300b3-124">No corpo da solicitação, forneça uma representação JSON do objeto [detectedApp](../resources/intune_devices_detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="300b3-124">In the request body, supply a JSON representation for the [detectedApp](../resources/intune_devices_detectedapp.md) object.</span></span>
 
-<span data-ttu-id="09629-125">A tabela a seguir mostra as propriedades que são necessárias ao criar [detectedApp](../resources/intune_devices_detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="09629-125">The following table shows the properties that are required when you create the [detectedApp](../resources/intune_devices_detectedapp.md).</span></span>
+<span data-ttu-id="300b3-125">A tabela a seguir mostra as propriedades que são necessárias ao criar [detectedApp](../resources/intune_devices_detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="300b3-125">The following table shows the properties that are required when you create the [detectedApp](../resources/intune_devices_detectedapp.md).</span></span>
 
-|<span data-ttu-id="09629-126">Propriedade</span><span class="sxs-lookup"><span data-stu-id="09629-126">Property</span></span>|<span data-ttu-id="09629-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="09629-127">Type</span></span>|<span data-ttu-id="09629-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="09629-128">Description</span></span>|
+|<span data-ttu-id="300b3-126">Propriedade</span><span class="sxs-lookup"><span data-stu-id="300b3-126">Property</span></span>|<span data-ttu-id="300b3-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="300b3-127">Type</span></span>|<span data-ttu-id="300b3-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="300b3-128">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="09629-129">id</span><span class="sxs-lookup"><span data-stu-id="09629-129">id</span></span>|<span data-ttu-id="09629-130">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="09629-130">String</span></span>|<span data-ttu-id="09629-131">O identificador exclusivo do aplicativo detectado.</span><span class="sxs-lookup"><span data-stu-id="09629-131">The unique Identifier for the detected application.</span></span> <span data-ttu-id="09629-132">Ele é gerado automaticamente pelo Intune no momento em que o aplicativo é criado.</span><span class="sxs-lookup"><span data-stu-id="09629-132">This is automatically generated by Intune at the time the application is created.</span></span> <span data-ttu-id="09629-133">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="09629-133">Read-only.</span></span>|
-|<span data-ttu-id="09629-134">displayName</span><span class="sxs-lookup"><span data-stu-id="09629-134">displayName</span></span>|<span data-ttu-id="09629-135">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="09629-135">String</span></span>|<span data-ttu-id="09629-136">Nome do aplicativo descoberto.</span><span class="sxs-lookup"><span data-stu-id="09629-136">Name of the discovered application.</span></span> <span data-ttu-id="09629-137">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="09629-137">Read-only</span></span>|
-|<span data-ttu-id="09629-138">version</span><span class="sxs-lookup"><span data-stu-id="09629-138">version</span></span>|<span data-ttu-id="09629-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="09629-139">String</span></span>|<span data-ttu-id="09629-140">Versão do aplicativo descoberto.</span><span class="sxs-lookup"><span data-stu-id="09629-140">Version of the discovered application.</span></span> <span data-ttu-id="09629-141">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="09629-141">Read-only</span></span>|
-|<span data-ttu-id="09629-142">sizeInByte</span><span class="sxs-lookup"><span data-stu-id="09629-142">sizeInByte</span></span>|<span data-ttu-id="09629-143">Int64</span><span class="sxs-lookup"><span data-stu-id="09629-143">Int64</span></span>|<span data-ttu-id="09629-144">Tamanho do aplicativo descoberto, em bytes.</span><span class="sxs-lookup"><span data-stu-id="09629-144">Discovered application size in bytes.</span></span> <span data-ttu-id="09629-145">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="09629-145">Read-only</span></span>|
-|<span data-ttu-id="09629-146">deviceCount</span><span class="sxs-lookup"><span data-stu-id="09629-146">deviceCount</span></span>|<span data-ttu-id="09629-147">Int32</span><span class="sxs-lookup"><span data-stu-id="09629-147">Int32</span></span>|<span data-ttu-id="09629-148">O número de dispositivos que instalaram esse aplicativo</span><span class="sxs-lookup"><span data-stu-id="09629-148">The number of devices that have installed this application</span></span>|
+|<span data-ttu-id="300b3-129">id</span><span class="sxs-lookup"><span data-stu-id="300b3-129">id</span></span>|<span data-ttu-id="300b3-130">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="300b3-130">String</span></span>|<span data-ttu-id="300b3-131">O identificador exclusivo do aplicativo detectado.</span><span class="sxs-lookup"><span data-stu-id="300b3-131">The unique Identifier for the detected application.</span></span> <span data-ttu-id="300b3-132">Ele é gerado automaticamente pelo Intune no momento em que o aplicativo é criado.</span><span class="sxs-lookup"><span data-stu-id="300b3-132">This is automatically generated by Intune at the time the application is created.</span></span> <span data-ttu-id="300b3-133">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="300b3-133">Read-only.</span></span>|
+|<span data-ttu-id="300b3-134">displayName</span><span class="sxs-lookup"><span data-stu-id="300b3-134">displayName</span></span>|<span data-ttu-id="300b3-135">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="300b3-135">String</span></span>|<span data-ttu-id="300b3-136">Nome do aplicativo descoberto.</span><span class="sxs-lookup"><span data-stu-id="300b3-136">Name of the discovered application.</span></span> <span data-ttu-id="300b3-137">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="300b3-137">Read-only</span></span>|
+|<span data-ttu-id="300b3-138">version</span><span class="sxs-lookup"><span data-stu-id="300b3-138">version</span></span>|<span data-ttu-id="300b3-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="300b3-139">String</span></span>|<span data-ttu-id="300b3-140">Versão do aplicativo descoberto.</span><span class="sxs-lookup"><span data-stu-id="300b3-140">Version of the discovered application.</span></span> <span data-ttu-id="300b3-141">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="300b3-141">Read-only</span></span>|
+|<span data-ttu-id="300b3-142">sizeInByte</span><span class="sxs-lookup"><span data-stu-id="300b3-142">sizeInByte</span></span>|<span data-ttu-id="300b3-143">Int64</span><span class="sxs-lookup"><span data-stu-id="300b3-143">Int64</span></span>|<span data-ttu-id="300b3-144">Tamanho do aplicativo descoberto, em bytes.</span><span class="sxs-lookup"><span data-stu-id="300b3-144">Discovered application size in bytes.</span></span> <span data-ttu-id="300b3-145">Somente leitura</span><span class="sxs-lookup"><span data-stu-id="300b3-145">Read-only</span></span>|
+|<span data-ttu-id="300b3-146">deviceCount</span><span class="sxs-lookup"><span data-stu-id="300b3-146">deviceCount</span></span>|<span data-ttu-id="300b3-147">Int32</span><span class="sxs-lookup"><span data-stu-id="300b3-147">Int32</span></span>|<span data-ttu-id="300b3-148">O número de dispositivos que instalaram esse aplicativo</span><span class="sxs-lookup"><span data-stu-id="300b3-148">The number of devices that have installed this application</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="09629-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="09629-149">Response</span></span>
-<span data-ttu-id="09629-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [detectedApp](../resources/intune_devices_detectedapp.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="09629-150">If successful, this method returns a `200 OK` response code and an updated [detectedApp](../resources/intune_devices_detectedapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="300b3-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="300b3-149">Response</span></span>
+<span data-ttu-id="300b3-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [detectedApp](../resources/intune_devices_detectedapp.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="300b3-150">If successful, this method returns a `200 OK` response code and an updated [detectedApp](../resources/intune_devices_detectedapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="09629-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="09629-151">Example</span></span>
-### <a name="request"></a><span data-ttu-id="09629-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="09629-152">Request</span></span>
-<span data-ttu-id="09629-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="09629-153">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="300b3-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="300b3-151">Example</span></span>
+### <a name="request"></a><span data-ttu-id="300b3-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="300b3-152">Request</span></span>
+<span data-ttu-id="300b3-153">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="300b3-153">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
-Content-length: 117
+Content-length: 167
 
 {
+  "@odata.type": "#microsoft.graph.detectedApp",
   "displayName": "Display Name value",
   "version": "Version value",
   "sizeInByte": 10,
@@ -61,8 +62,8 @@ Content-length: 117
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="09629-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="09629-154">Response</span></span>
-<span data-ttu-id="09629-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="09629-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="300b3-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="300b3-154">Response</span></span>
+<span data-ttu-id="300b3-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="300b3-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -77,11 +78,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 
