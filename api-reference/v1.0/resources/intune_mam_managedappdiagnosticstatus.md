@@ -14,10 +14,11 @@ Representa o status de diagnóstico.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedAppDiagnosticStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppDiagnosticStatus",
@@ -26,11 +27,6 @@ Veja a seguir uma representação JSON do recurso.
   "mitigationInstruction": "String"
 }
 ```
-
-
-
-
-
 
 
 

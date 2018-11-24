@@ -1,8 +1,8 @@
-# <a name="autopilotdevicestream-function"></a>Função autopilotDeviceStream
+# <a name="autopilotdevicestream-function"></a>função autopilotDeviceStream
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Crie uma solicitação de carregamento com fluxo de dispositivo do autopilot nela.
+Crie uma solicitação de carregamento com fluxo de dispositivo piloto automático nela.
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -24,8 +24,8 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -51,11 +51,6 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
-
-
-
-
-
 
 
 

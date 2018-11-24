@@ -4,9 +4,9 @@ Um evento em um calendário.
 
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
-- Inscrever-se para receber [notificações de alteração](../../../concepts/webhooks.md).
-- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais por meio de uma função [delta](../api/event_delta.md).
+- Adicionar seus próprios dados às propriedades personalizadas como [extensões](../../../concepts/extensibility_overview.md).
+- Assinatura de [notificações de alteração](../../../concepts/webhooks.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/event_delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -26,7 +26,7 @@ Esse recurso permite:
 |[snoozeReminder](../api/event_snoozereminder.md)|Nenhum|Adiar o lembrete para o evento especificado.|
 |[Listar instâncias](../api/event_list_instances.md) |Coleção [event](event.md)| Obter as instâncias (ocorrências) de um evento para um intervalo de tempo especificado. Se o evento for do tipo `SeriesMaster`, isso retornará as exceções e ocorrências desse evento no intervalo de tempo especificado.|
 |**Anexos**| | |
-|[Listar anexos](../api/event_list_attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um evento.|
+|[List attachments](../api/event_list_attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um evento.|
 |[Add attachment](../api/event_post_attachments.md) |[attachment](attachment.md)| Adicione um novo anexo a um evento postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
@@ -41,44 +41,44 @@ Esse recurso permite:
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attendees|Coleção [attendee](attendee.md)|A coleção de participantes do evento.|
-|corpo|[itemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
-|bodyPreview|Sequência de caracteres|A visualização da mensagem associada ao evento. Está no formato de texto.|
+|body|[itemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
+|bodyPreview|String|A visualização da mensagem associada ao evento. Está no formato de texto.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao evento.|
-|changeKey|Sequência de caracteres|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
+|changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
-|hasAttachments|Booleano|Defina como true se o evento tiver anexos.|
-|iCalUId|Sequência de caracteres|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes.|
-|id|Sequência de caracteres| Somente leitura.|
+|hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
+|iCalUId|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. Somente leitura.|
+|id|String| Somente leitura.|
 |importance|importance|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isAllDay|Booleano|Defina como true se o evento durar o dia inteiro.|
-|isCancelled|Booleano|Defina como true se o evento tiver sido cancelado.|
-|isOrganizer|Booleano|Defina como true se o remetente da mensagem também for o organizador.|
-|isReminderOn|Booleano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+|isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
+|isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
+|isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
+|isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[location](location.md)|O local do evento.|
 |locations|Coleção [location](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-|onlineMeetingUrl|Sequência de caracteres|Uma URL para uma reunião online. A propriedade é definida somente quando um organizador especifica um evento como uma reunião online, como uma reunião do Skype. Somente leitura.|
+|onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade é definida somente quando um organizador Especifica um evento como uma reunião online, como uma reunião do Skype. Somente leitura.|
 |organizer|[recipient](recipient.md)|O organizador do evento.|
-|originalEndTimeZone|Sequência de caracteres|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
+|originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |originalStart|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|originalStartTimeZone|Sequência de caracteres|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho. |
+|originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho. |
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Booleano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |responseStatus|[responseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
-|sensitivity|sensitivity| Os valores possíveis são:`normal`  ,`personal`   ,`private`    , `confidential` .|
-|seriesMasterId|Sequência de caracteres|O ID do item mestre da série recorrente, se esse evento fizer parte de uma série recorrente.|
+|sensitivity|sensitivity| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+|seriesMasterId|String|A ID para a série item mestre recorrente, se esse evento for parte de uma série recorrente.|
 |showAs|freeBusyStatus|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
-|subject|Sequência de caracteres|O texto da linha de assunto do evento.|
+|start|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
+|subject|String|O texto da linha de assunto do evento.|
 |type|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
-|webLink|Sequência de caracteres|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
+|webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|anexos|Coleção [attachment](attachment.md)|A coleção de anexos [fileAttachment](fileAttachment.md) e [itemAttachment](itemAttachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
+|attachments|Coleção [attachment](attachment.md)|A coleção de anexos [fileAttachment](fileAttachment.md) e [itemAttachment](itemAttachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |calendário|[calendar](calendar.md)|O calendário que contém o evento. Propriedade de navegação. Somente leitura.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para o evento. Somente leitura. Anulável.|
 |instances|Coleção [event](event.md)|As instâncias do evento. Propriedade de navegação. Somente leitura. Anulável.|

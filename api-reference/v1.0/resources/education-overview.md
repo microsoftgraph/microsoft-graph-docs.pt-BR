@@ -6,7 +6,7 @@ As APIs de educação incluem recursos de escalação e recursos de atribuiçõe
 
 ## <a name="authorization"></a>Autorização
 
-Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará adquirir um token de acesso. Para obter detalhes sobre tokens de acesso, confira [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/docs/concepts/auth_overview). O aplicativo também precisará das permissões apropriadas. Para saber mais, confira [Permissões de educação](../../../concepts/permissions_reference.md#education-permissions). 
+Para chamar as APIs de educação no Microsoft Graph, o aplicativo precisará adquirir um token de acesso. Para obter detalhes sobre tokens de acesso, confira [Obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). O aplicativo também precisará das permissões apropriadas. Para saber mais, confira [Permissões de educação](../../../concepts/permissions_reference.md#education-permissions). 
 
 ### <a name="app-permissions-to-enable-school-it-admins-to-consent"></a>Permissões de aplicativo para permitir o consentimento dos administradores de TI da escola 
 
@@ -64,5 +64,5 @@ As APIs de escalação dão suporte aos seguintes cenários:
 Use as APIs de educação do Microsoft Graph para criar soluções de educação que acessam listas de participantes da escola. Para saber mais:
 
 - Explore os recursos e os métodos mais úteis para seu cenário.
-- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/pt-BR/graph/graph-explorer).
+- Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 

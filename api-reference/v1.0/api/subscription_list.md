@@ -1,37 +1,37 @@
-# <a name="list-subscriptions"></a>Assinaturas de lista
+# <a name="list-subscriptions"></a>Inscrições de lista
 
-Recupere as propriedades e relações de assinaturas de webhook, com base no ID do aplicativo, no usuário e na função do usuário com um locatário.
+Recupere as propriedades e relacionamentos de inscrições de webhook, com base na função do usuário com um locatário, o usuário e a ID de aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
-Essa API suporta os seguintes escopos de permissão; para saber mais, incluindo como escolher permissões, veja [Permissões](../../../concepts/permissions_reference.md).
+Essa API suporta os seguintes escopos de permissão; Para saber mais, incluindo como escolher permissões, consulte [permissões](../../../concepts/permissions_reference.md).
 
-| Tipo de permissão  | Permissões (da menos para a mais privilegiada)  |
+| Tipo de permissão  | Permissões (da com menos para a com mais privilégios)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegada](../../../concepts/auth_v2_user.md) (conta de estudante ou corporativa) | Função necessária para [criar assinatura](subscription_get.md) ou Subscriptions.Read.All (veja a seguir). |
-| [Delegada](../../../concepts/auth_v2_user.md)(conta pessoal da Microsoft) | Função necessária para [criar assinatura](./subscription_get.md) ou Subscriptions.Read.All (veja a seguir). |
-| [Aplicativo](../../../concepts/auth_v2_service.md) | Função necessária para [criar assinatura](./subscription_get.md). |
+| [Permissão delegadas](../../../concepts/auth_v2_user.md) (conta do trabalho ou da escola) | Função exigida para [criar a inscrição](subscription_post_subscriptions.md) ou Subscription.Read.All (veja abaixo). |
+| [Permissão delegadas](../../../concepts/auth_v2_user.md) (conta pessoal da Microsoft) | Função exigida para [criar a inscrição](subscription_post_subscriptions.md) ou Subscription.Read.All (veja abaixo). |
+| [Permissão de aplicativo](../../../concepts/auth_v2_service.md) | Função necessária para [criar a assinatura](subscription_post_subscriptions.md). |
 
-Os resultados de resposta são baseados no contexto do aplicativo de chamada. Apresentamos a seguir um resumo dos cenários comuns:
+Resultados de resposta são baseados no contexto do aplicativo chamado. Apresentamos a seguir um resumo dos cenários comuns:
 
 ### <a name="basic-scenarios"></a>Cenários básicos
 
-Mais comumente, um aplicativo deseja recuperar as assinaturas que originalmente criou para o usuário conectado no momento, ou para todos os usuários no diretório (contas de trabalho/escola). Esses cenários não exigem quaisquer permissões especiais além do aplicativo originalmente usado para criar suas assinaturas.
+Mais comumente, um aplicativo deseja recuperar as assinaturas que originalmente criado para o usuário conectado no momento, ou para todos os usuários no diretório (contas de trabalho/escola). Esses cenários não exigem qualquer permissões especiais além do aplicativo originalmente usado para criar suas assinaturas.
 
-| Contexto do aplicativo de chamada | A resposta conterá |
+| Contexto do aplicativo chamado | Resposta conterá |
 |:-----|:---------------- |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). <br/>- e -<br/>O aplicativo tem a permissão original necessária para [ criar a assinatura](subscription_post_subscriptions.md) .<br/><br/>Observação: Isso se aplica às contas pessoais e às contas de trabalho/escola da Microsoft. | Assinaturas criadas por **este aplicativo** apenas para o usuário conectado. |
-| O aplicativo está chamando em nome do próprio (permissão de aplicativo).<br/>- e -<br/>O aplicativo tem a permissão original necessária para [ criar a assinatura](subscription_post_subscriptions.md) .<br/><br/>Observação: Isso se aplica apenas a contas de trabalho/escola.| Assinaturas criadas por **este aplicativo** para si mesmo ou para qualquer usuário no diretório.|
+| App está chamando em nome do usuário conectado (delegada permissão). <br/>- e -<br/>App tem a permissão original necessária para [criar a assinatura](subscription_post_subscriptions.md).<br/><br/>Observação: Isso se aplica ao pessoais contas da Microsoft e contas de trabalho/escola. | Inscrições criadas por **Este aplicativo** para o usuário entrou no apenas. |
+| App está chamando em nome do próprio (permissão de aplicativo).<br/>- e -<br/>App tem a permissão original necessária para [criar a assinatura](subscription_post_subscriptions.md).<br/><br/>Observação: Isso se aplica a apenas contas de trabalho/escola.| Inscrições criadas por **Este aplicativo** para si mesmo ou para qualquer usuário no diretório.|
 
 ### <a name="advanced-scenarios"></a>Cenários avançados
 
-Em alguns casos, um aplicativo deseja recuperar assinaturas criadas por outros aplicativos. Por exemplo, um usuário deseja ver todas as assinaturas criadas por qualquer aplicativo em seu nome. Ou então, um administrador talvez queira ver todas as assinaturas de todos os aplicativos no seu diretório.
-Para esses cenários, uma permissão delegada Subscription.Read.All é necessária.
+Em alguns casos, um aplicativo quer recuperar inscrições criadas por outros aplicativos. Por exemplo, um usuário quiser ver todas as inscrições criadas por qualquer aplicativo em nome deles. Ou então, um administrador talvez queira ver todas as inscrições de todos os aplicativos no seu diretório.
+Para nesses cenários, uma permissão delegada Subscription.Read.All é necessária.
 
-| Contexto do aplicativo de chamada | A resposta conterá |
+| Contexto do aplicativo chamado | Resposta conterá |
 |:-----|:---------------- |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário não é um administrador*. <br/>- e -<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica às contas pessoais e às contas de trabalho/escola da Microsoft. | Assinaturas criadas por **qualquer aplicativo** apenas para o usuário conectado. |
-| O aplicativo está chamando em nome do usuário conectado (permissão delegada). *O usuário é um administrador*.<br/>- e -<br/>O aplicativo tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica apenas a contas de trabalho/escola. | Assinaturas criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
+| App está chamando em nome do usuário conectado (delegada permissão). *O usuário é um não seja o administrador*. <br/>- e -<br/>App tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica ao pessoais contas da Microsoft e contas de trabalho/escola. | Inscrições criadas por **qualquer aplicativo** para o usuário entrou no apenas. |
+| App está chamando em nome do usuário conectado (delegada permissão). *O usuário é um administrador*.<br/>- e -<br/>App tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica a apenas contas de trabalho/escola. | Inscrições criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,13 +43,13 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método não oferece suporte para os [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método não oferece suporte para os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -57,7 +57,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de objetos de [assinatura](../resources/subscription.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma lista de objetos de [inscrição](../resources/subscription.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### <a name="response"></a>Resposta
 
-Aqui está um exemplo da resposta.  Observe que ele pode estar truncado para fins de concisão.  Todas as propriedades apropriadas suportadas para a solicitação e o contexto de chamada serão retornadas de uma chamada real.
+Aqui está um exemplo da resposta.  Observe que ele pode estar truncado para fins de concisão.  Todas as propriedades apropriadas para a solicitação de compatíveis e o contexto de chamada será retornado de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -115,4 +115,4 @@ Content-length: 586
   "tocPath": ""
 }-->
 
-Quando uma solicitação retorna várias páginas de dados, a resposta inclui uma `@odata.nextLink` propriedade para ajudá-lo a gerenciar os resultados.  Para saber mais, veja [Dados de paginação do Microsoft Graph em seu aplicativo](../../../concepts/paging.md).
+Quando uma solicitação retorna várias páginas de dados, a resposta inclui um `@odata.nextLink` propriedade para ajudá-lo a gerenciar os resultados.  Para saber mais, consulte [os dados de paginação Microsoft Graph em seu aplicativo](../../../concepts/paging.md).

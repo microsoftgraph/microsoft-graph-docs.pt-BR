@@ -1,7 +1,7 @@
 # <a name="list-plans"></a>Listar planos
 
-Recupere uma lista de objetos **plannerplan** pertencentes a um objeto [group](../resources/group.md).
-## <a name="permissions"></a>Permissões
+Recupere uma lista de objetos **plannerPlan** pertencentes a um objeto [group](../resources/group.md) .
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -13,7 +13,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/planner/plans
+GET /groups/{group-id}/planner/plans
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

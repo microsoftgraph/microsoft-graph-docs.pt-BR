@@ -14,10 +14,11 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsMinimumOperatingSystem",
@@ -26,11 +27,6 @@ Veja a seguir uma representação JSON do recurso.
   "v10_0": true
 }
 ```
-
-
-
-
-
 
 
 

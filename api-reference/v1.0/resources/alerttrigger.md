@@ -1,14 +1,14 @@
-# <a name="alerttrigger-resource-type"></a>Tipo de recurso alertTrigger
+# <a name="alerttrigger-resource-type"></a>tipo de recurso de alertTrigger
 
-Contém informações sobre as propriedades que dispararam uma detecção (as propriedades existem na entidade alerta).
+Contém informações sobre as propriedades que disparou uma detecção (Propriedades existirem na entidade alerta).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|name|Sequência de caracteres|Nome da propriedade servindo como um disparo de detecção.|
-|type|Sequência de caracteres|Tipo da propriedade no par de chave:valor para interpretação. Por exemplo, sequência de caracteres, Booleano, etc.|
-|value|Sequência de caracteres|Nome da propriedade que serve como um disparo de detecção.|
+|name|String|Nome da propriedade servindo como um gatilho de detecção.|
+|type|String|Tipo da propriedade no par de chave: valor de interpretação. Por exemplo, String, Boolean, etc.|
+|valor|String|Valor da propriedade servindo como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,8 +35,8 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "name": "endpointAddress",
-  "type": "networkConnection.sourceAddress",
+  "name": "hostState.privateIpAddress",
+  "type": "String",
   "value": "10.154.9.40"
 }
 

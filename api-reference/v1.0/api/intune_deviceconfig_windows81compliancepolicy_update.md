@@ -1,6 +1,6 @@
 # <a name="update-windows81compliancepolicy"></a>Atualizar windows81CompliancePolicy
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Atualiza as propriedades de um objeto [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Authorization|Bearer &lt;token&gt; obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [windows81CompliancePolicy](../resources/intune_deviceconfig_windows81compliancepolicy.md).
@@ -66,8 +66,8 @@ Content-type: application/json
 Content-length: 602
 
 {
+  "@odata.type": "#microsoft.graph.windows81CompliancePolicy",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
   "passwordRequired": true,
@@ -112,11 +112,6 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

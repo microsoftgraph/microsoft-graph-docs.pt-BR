@@ -16,7 +16,7 @@ Contém as propriedades do resumo de estado de instalação de um usuário.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|userName|Cadeia de caracteres|Nome de usuário.|
+|userName|Cadeia de caracteres|Nome do usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|
@@ -28,12 +28,12 @@ Contém as propriedades do resumo de estado de instalação de um usuário.
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.userInstallStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.userInstallStateSummary",
@@ -44,11 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

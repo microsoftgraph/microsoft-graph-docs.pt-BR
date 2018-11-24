@@ -13,10 +13,11 @@ Uma pasta com os aplicativos na tela inicial
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenFolderPage"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenFolderPage",
@@ -30,11 +31,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
-
-
-
 
 
 

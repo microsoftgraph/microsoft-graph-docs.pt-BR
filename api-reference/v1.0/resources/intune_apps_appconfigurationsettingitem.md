@@ -14,10 +14,11 @@ Contém propriedades do item de configuração de Configuração do aplicativo.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appConfigurationSettingItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appConfigurationSettingItem",
@@ -26,11 +27,6 @@ Veja a seguir uma representação JSON do recurso.
   "appConfigKeyValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -27,12 +27,12 @@ Uma entidade termsAndConditionsAcceptanceStatus representa o status de aceitaç�
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.termsAndConditionsAcceptanceStatus"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
@@ -42,11 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "acceptedDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

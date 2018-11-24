@@ -8,8 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegada (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Delegada (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -24,7 +24,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -45,7 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10832
+Content-Length: 10901
 
 {
   "value": [
@@ -280,16 +280,12 @@ Content-Length: 10832
       "experienceBlockDeviceDiscovery": true,
       "experienceBlockErrorDialogWhenNoSIM": true,
       "experienceBlockTaskSwitcher": true,
-      "logonBlockFastUserSwitching": true
+      "logonBlockFastUserSwitching": true,
+      "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

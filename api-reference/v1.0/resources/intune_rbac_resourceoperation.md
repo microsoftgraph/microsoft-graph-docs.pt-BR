@@ -24,12 +24,12 @@ Isso define uma operação ou ação que pode ser executada em um recurso (ou en
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.resourceOperation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.resourceOperation",
@@ -39,11 +39,6 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
-
-
-
-
-
 
 
 

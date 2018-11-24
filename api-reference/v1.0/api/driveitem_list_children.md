@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
-ms.openlocfilehash: 31e20780379055b9ec8217bb90b4da26414a64e5
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 2bf094f424ed0a1fda1c790c435619bf65f25e36
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265215"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26596683"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -107,11 +107,11 @@ Content-type: application/json
 
 **Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
 
-Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de consulta opcionais](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters)
+Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de consulta opcionais](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
 ### <a name="error-responses"></a>Respostas de erro
 
-Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].
+Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 
 [error-response]: ../../../concepts/errors.md
 [item-resource]: ../resources/driveitem.md

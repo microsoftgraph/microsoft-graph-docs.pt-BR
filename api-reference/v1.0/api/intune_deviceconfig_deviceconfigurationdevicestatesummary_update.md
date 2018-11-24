@@ -24,7 +24,7 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -54,9 +54,10 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurationDeviceStateSummaries
 Content-type: application/json
-Content-length: 214
+Content-length: 290
 
 {
+  "@odata.type": "#microsoft.graph.deviceConfigurationDeviceStateSummary",
   "unknownDeviceCount": 2,
   "notApplicableDeviceCount": 8,
   "compliantDeviceCount": 4,
@@ -86,11 +87,6 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
-
-
-
-
-
 
 
 

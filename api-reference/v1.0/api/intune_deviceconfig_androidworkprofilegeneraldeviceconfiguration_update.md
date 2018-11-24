@@ -1,8 +1,8 @@
-# <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>Update androidWorkProfileGeneralDeviceConfiguration
+# <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>Atualizar androidWorkProfileGeneralDeviceConfiguration
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Atualiza as propriedades de um objeto [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md).
+Atualize as propriedades de um objeto [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) .
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -24,61 +24,61 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md).
+No corpo da solicitação, fornece uma representação JSON para o objeto [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) .
 
-A tabela a seguir mostra as propriedades necessárias ao criar [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md).
+A tabela a seguir mostra as propriedades que são necessárias quando você cria o [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|descrição|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|passwordBlockFingerprintUnlock|Booleano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
-|passwordBlockTrustAgents|Booleano|Indica se o Smart Lock e outros agentes confiáveis devem ou não ser bloqueados.|
+|passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
+|passwordBlockTrustAgents|Booliano|Indica se o Smart Lock e outros agentes confiáveis devem ou não ser bloqueados.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica. Valores válidos de 4 a 11|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype.md)|Tipo de dados de compartilhamento permitido. Os valores possíveis são: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
-|workProfileBlockNotificationsWhileDeviceLocked|Booleano|Indica se deve ou não bloquear notificações enquanto o dispositivo estiver bloqueado.|
-|workProfileBlockAddingAccounts|Booleano|Impede que os usuários adicionem/removam contas no perfil de trabalho.|
-|workProfileBluetoothEnableContactSharing|Booleano|Permite que dispositivos bluetooth acessem contatos da empresa.|
-|workProfileBlockScreenCapture|Booleano|Bloqueia captura de tela no perfil de trabalho.|
-|workProfileBlockCrossProfileCallerId|Booleano|Bloqueia a exibição de identificação de chamadas de perfil de trabalho no perfil pessoal.|
-|workProfileBlockCamera|Booleano|Bloqueia a câmera no perfil de trabalho.|
-|workProfileBlockCrossProfileContactsSearch|Booleano|Bloqueia a disponibilidade de contatos do perfil de trabalho no perfil pessoal.|
-|workProfileBlockCrossProfileCopyPaste|Booleano|Booleano que indica se a configuração para impedir copiar/colar entre perfis está habilitada.|
+|workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype.md)|Tipo de dados de compartilhamento que é permitido. Os valores possíveis são: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
+|workProfileBlockNotificationsWhileDeviceLocked|Booliano|Indica se deve ou não bloquear notificações de dispositivo bloqueado.|
+|workProfileBlockAddingAccounts|Booliano|Impedir que os usuários de adicionar/remover contas no perfil de trabalho.|
+|workProfileBluetoothEnableContactSharing|Booliano|Permitir que os dispositivos bluetooth acessar contatos da empresa.|
+|workProfileBlockScreenCapture|Booliano|Captura de tela de bloqueio no perfil de trabalho.|
+|workProfileBlockCrossProfileCallerId|Booliano|Bloquear exibição trabalho perfil ID do chamador no perfil pessoal.|
+|workProfileBlockCamera|Booliano|Câmera de perfil de trabalho de bloco.|
+|workProfileBlockCrossProfileContactsSearch|Booliano|Disponibilidade do bloco trabalho perfil contatos no perfil pessoal.|
+|workProfileBlockCrossProfileCopyPaste|Booliano|Boolean que indica se a configuração não permitir cruzado perfil copiar/colar está habilitada.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|workProfilePasswordBlockFingerprintUnlock|Booleano|Indica se o desbloqueio por impressão digital deve ou não ser bloqueado no perfil de trabalho.|
-|workProfilePasswordBlockTrustAgents|Booleano|Indica se o Smart Lock e outros agentes confiáveis devem ou não ser bloqueados no perfil de trabalho.|
-|workProfilePasswordExpirationDays|Int32|Número de dias antes da expiração da senha do perfil de trabalho. Valores válidos de 1 a 365|
-|workProfilePasswordMinimumLength|Int32|Tamanho mínimo da senha do perfil de trabalho. Valores válidos de 4 a 16|
-|workProfilePasswordMinNumericCharacters|Int32|Número mínimo de caracteres numéricos obrigatórios na senha do perfil de trabalho. Valores válidos de 1 a 10|
-|workProfilePasswordMinNonLetterCharacters|Int32|Número mínimo de caracteres não alfabéticos obrigatórios na senha de perfil de trabalho. Valores válidos de 1 a 10|
-|workProfilePasswordMinLetterCharacters|Int32|Número mínimo de caracteres de alfabéticos obrigatórios na senha do perfil de trabalho. Valores válidos de 1 a 10|
-|workProfilePasswordMinLowerCaseCharacters|Int32|Número mínimo de letras minúsculas obrigatórias na senha do perfil de trabalho. Valores válidos de 1 a 10|
-|workProfilePasswordMinUpperCaseCharacters|Int32|Número mínimo de letras maiúsculas obrigatórias na senha do perfil de trabalho. Valores válidos de 1 a 10|
-|workProfilePasswordMinSymbolCharacters|Int32|Número mínimo de símbolos obrigatórios na senha do perfil de trabalho. Valores válidos de 1 a 10|
+|workProfilePasswordBlockFingerprintUnlock|Booliano|Indica se o bloqueio da impressão digital ou não desbloquear para o perfil de trabalho.|
+|workProfilePasswordBlockTrustAgents|Booliano|Indica se deve ou não bloquear bloqueio inteligente e outros operadores de confiabilidade para o perfil de trabalho.|
+|workProfilePasswordExpirationDays|Int32|Número de dias até a senha do perfil de trabalho expira. Valores válidos de 1 a 365|
+|workProfilePasswordMinimumLength|Int32|Comprimento mínimo da senha do perfil de trabalho. Valores válidos de 4 a 16|
+|workProfilePasswordMinNumericCharacters|Int32|Número mínimo de caracteres numéricos necessários em senha do perfil de trabalho. Valores válidos 1 a 10|
+|workProfilePasswordMinNonLetterCharacters|Int32|Número mínimo de caracteres não alfabéticos necessários em senha de perfil de trabalho. Valores válidos 1 a 10|
+|workProfilePasswordMinLetterCharacters|Int32|Número mínimo de caracteres de carta necessários em senha de perfil de trabalho. Valores válidos 1 a 10|
+|workProfilePasswordMinLowerCaseCharacters|Int32|Número mínimo de caracteres minúscula necessários em senha de perfil de trabalho. Valores válidos 1 a 10|
+|workProfilePasswordMinUpperCaseCharacters|Int32|Número mínimo de caracteres de maiusculas necessários em senha de perfil de trabalho. Valores válidos 1 a 10|
+|workProfilePasswordMinSymbolCharacters|Int32|Número mínimo de símbolos necessários em senha de perfil de trabalho. Valores válidos 1 a 10|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
-|workProfilePasswordPreviousPasswordBlockCount|Int32|Número de senhas do perfil de trabalho anteriores a serem bloqueadas. Valores válidos de 0 a 24|
-|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Número de falhas de entrada permitidas antes que o perfil de trabalho seja removido e todos os dados corporativos sejam excluídos. Valores válidos de 4 a 11|
-|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype.md)|Tipo de senha de perfil de trabalho obrigatório. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|workProfileRequirePassword|Booleano|A senha é ou não obrigatória para o perfil de trabalho|
-|securityRequireVerifyApps|Booleano|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
+|workProfilePasswordPreviousPasswordBlockCount|Int32|Número de senhas anteriores de perfil de trabalho para bloquear. Valores válidos de 0 a 24|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Número de falhas permitidas antes que o perfil de trabalho é removido e todos os dados corporativos excluídos de entrada. Valores válidos de 4 a 11|
+|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype.md)|Tipo de senha de perfil de trabalho que é necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequirePassword|Booliano|A senha é necessária ou não para o perfil de trabalho|
+|securityRequireVerifyApps|Booliano|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto atualizado [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [androidWorkProfileGeneralDeviceConfiguration](../resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
@@ -86,10 +86,10 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1812
+Content-length: 1831
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -181,11 +181,6 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
-
-
-
-
-
 
 
 

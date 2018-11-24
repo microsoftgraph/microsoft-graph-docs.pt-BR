@@ -11,20 +11,16 @@ Permite aos administradores de TI definir um mecanismo de pesquisa padrão para 
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.edgeSearchEngineBase"
 }
 ```
-
-
-
-
-
 
 
 

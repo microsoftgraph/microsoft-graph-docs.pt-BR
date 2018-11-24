@@ -12,17 +12,18 @@ Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |descrição|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade Value (*.cer | *.crt | *.p7b | *.bin).|
-|value|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|
+|fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade do valor (*.cer | CRT | p7b | *. bin).|
+|valor|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBase64"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBase64",
@@ -33,11 +34,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

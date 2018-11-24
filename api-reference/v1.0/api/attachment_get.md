@@ -16,14 +16,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 * Se estiver acessando anexos em mensagens: Mail.Read.
 * Se estiver acessando anexos em eventos: Calendars.Read.
-* Se estiver acessando anexos em eventos de grupo ou postagens: Group.Read.All.
+* Se acessando anexos em postagens de grupo: Group.Read.All.
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All.
 -->
 
 ## <a name="http-request"></a>Solicitação HTTP
-Anexos de um [event](../resources/event.md) no [calendar](../resources/calendar.md) padrão do usuário.
+Anexos em um [evento](../resources/event.md) do usuário padrão [calendário](../resources/calendar.md).
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
@@ -69,7 +69,7 @@ Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](..
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio do usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada na filha de uma filha e assim por diante.
+Anexos de uma [mensagem](../resources/message.md) contidos em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio do usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada no filho de um filho e assim por diante.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -82,11 +82,11 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

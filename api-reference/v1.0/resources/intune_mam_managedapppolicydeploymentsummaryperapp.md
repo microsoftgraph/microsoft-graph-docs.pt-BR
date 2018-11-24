@@ -13,10 +13,11 @@ Representa o resumo da implantação da política por aplicativo.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
@@ -26,11 +27,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationAppliedUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

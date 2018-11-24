@@ -8,7 +8,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta corporativa ou de estudante)||
+| &nbsp;&nbsp; **Onboarding** | DeviceManagementManaged Devices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -24,8 +25,8 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceCategory.
@@ -35,8 +36,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|**Inclusão**|
 |displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
-|descrição|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 
 

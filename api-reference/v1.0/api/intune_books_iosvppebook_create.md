@@ -1,6 +1,6 @@
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Cria um novo objeto [iosVppEBook](../resources/intune_books_iosvppebook.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,7 +24,7 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -34,20 +34,20 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|description|Cadeia de caracteres|Descrição. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|publisher|Cadeia de caracteres|Publicador. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|description|Cadeia de caracteres|Descrição. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|publisher|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune_books_managedebook.md)|
+|informationUrl|String|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune_books_managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
-|genres|Coleção de cadeias de caracteres|Gêneros.|
+|genres|Coleção de cadeia de caracteres|Gêneros.|
 |idioma|Cadeia de caracteres|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
@@ -64,7 +64,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks
 Content-type: application/json
-Content-length: 853
+Content-length: 792
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -77,10 +77,9 @@ Content-length: 853
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -98,7 +97,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 964
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -116,7 +115,7 @@ Content-Length: 961
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-  "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+  "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
   "appleId": "Apple Id value",
   "vppOrganizationName": "Vpp Organization Name value",
   "genres": [
@@ -128,11 +127,6 @@ Content-Length: 961
   "usedLicenseCount": 0
 }
 ```
-
-
-
-
-
 
 
 
