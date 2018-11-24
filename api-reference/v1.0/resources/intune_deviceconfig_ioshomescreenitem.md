@@ -12,21 +12,17 @@ Representa um item na tela inicial do iOS
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenItem",
   "displayName": "String"
 }
 ```
-
-
-
-
-
 
 
 

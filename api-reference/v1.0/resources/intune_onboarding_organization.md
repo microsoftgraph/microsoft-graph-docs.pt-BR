@@ -15,9 +15,9 @@ O recurso da organização representa uma instância de configurações e recurs
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune_onboarding_mdmauthority.md)|Define autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -35,6 +35,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
@@ -51,9 +52,4 @@ Veja a seguir uma representação JSON do recurso.
 
 }
 -->
-
-
-
-
-
 

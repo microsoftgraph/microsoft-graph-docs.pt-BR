@@ -11,20 +11,16 @@ O identificador de um aplicativo móvel.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppIdentifier"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
-
-
-
-
-
 
 
 

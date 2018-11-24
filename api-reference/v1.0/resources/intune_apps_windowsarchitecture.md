@@ -1,21 +1,16 @@
-# <a name="windowsarchitecture-enum-type"></a>Tipo enumerado windowsArchitecture
+# <a name="windowsarchitecture-enum-type"></a>tipo de enum windowsArchitecture
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-Contém propriedades da arquitetura do Windows.
+Contém propriedades para a arquitetura do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum sinalizador definido.|
-|x86|1|Se o tipo de arquitetura X86 do Windows é suportado ou não.|
-|x64|2|Se o tipo de arquitetura X64 do Windows é suportado ou não.|
-|arm|4|Se o tipo de arquitetura Arm do Windows é suportado ou não.|
-|neutral|8|Se o tipo de arquitetura Neutral do Windows é suportado ou não.|
-
-
-
-
-
+|nenhum|0|Nenhum sinalizador definido.|
+|x86|1|Ou não o X86 tipo de arquitetura do Windows é suportado.|
+|x64|2|Ou não o X64 tipo de arquitetura do Windows é suportado.|
+|ARM|4|Ou não há suporte para o tipo de arquitetura do Windows Arm.|
+|neutro|8|Ou não há suporte para o tipo de arquitetura do Windows neutro.|
 
 
 

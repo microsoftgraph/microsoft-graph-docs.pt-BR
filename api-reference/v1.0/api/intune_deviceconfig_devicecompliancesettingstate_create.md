@@ -24,7 +24,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompli
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -36,11 +36,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade|
 |configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
-|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
+|settingName|Cadeia de caracteres|O Nome da configuração sendo relatada|
 |deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
-|deviceName|Cadeia de caracteres|O nome do dispositivo sendo relatado|
+|deviceName|Cadeia de caracteres|O Nome do dispositivo sendo relatado|
 |userId|Cadeia de caracteres|A ID do usuário sendo relatada|
-|userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
+|userEmail|Cadeia de caracteres|O Endereço de email do usuário que está sendo relatado|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
@@ -99,11 +99,6 @@ Content-Length: 566
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
-
-
-
 
 
 

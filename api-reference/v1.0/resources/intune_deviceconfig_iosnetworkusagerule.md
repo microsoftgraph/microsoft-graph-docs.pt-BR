@@ -11,13 +11,14 @@ Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenc
 |cellularDataBlocked|Booliano|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em nenhum momento.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosNetworkUsageRule",
@@ -34,11 +35,6 @@ Veja a seguir uma representação JSON do recurso.
   "cellularDataBlocked": true
 }
 ```
-
-
-
-
-
 
 
 

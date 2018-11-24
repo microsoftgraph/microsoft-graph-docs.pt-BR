@@ -15,13 +15,14 @@ Contém propriedades de informações de criptografia de arquivos para a versão
 |fileDigestAlgorithm|Cadeia de caracteres|O algoritmo de conteúdo do arquivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileEncryptionInfo"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.fileEncryptionInfo",
@@ -34,11 +35,6 @@ Veja a seguir uma representação JSON do recurso.
   "fileDigestAlgorithm": "String"
 }
 ```
-
-
-
-
-
 
 
 

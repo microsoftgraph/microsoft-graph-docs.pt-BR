@@ -2,42 +2,41 @@
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
-O recurso deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
+O recurso de deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
 
-- Eventos de auditoria
-- Termos e condições corporativas 
-- Perfis de inscrição corporativos
-- Definições de configuração de dispositivo
-- Gerenciamento de dispositivo
-- Proteção de ponto de extremidade
-- Perfis de inscrição
-- Notificações
-- Políticas, configurações e detalhes de integração
-- Políticas de controle de acesso baseado em função (RBAC)
-- Parceiros de assistência remota
-- Parceiros de gerenciamento de extensão de telecomunicações
-- Eventos de solução de problemas
-- Resumos de proteção de informações do Windows
+- Eventos de auditoria  
+- Termos e condições corporativas   
+- Definições de configuração de dispositivo  
+- Gerenciamento de dispositivo  
+- Proteção de ponto de extremidade  
+- Perfis de inscrição  
+- Notifications  
+- Detalhes, configurações e políticas de inclusão  
+- Políticas de RBAC (controle) de acesso baseado em função  
+- Parceiros de assistência remota  
+- Parceiros de gerenciamento de extensão de telecomunicações  
+- Solução de problemas de eventos  
+- Resumos de proteção de informações do Windows  
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter deviceManagement](../api/intune_shared_devicemanagement_get.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
-|[Atualizar deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Atualizar as propriedades de um objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
-|**Nível de contratação**|
+|[Atualizar deviceManagement](../api/intune_shared_devicemanagement_update.md)|[deviceManagement](../resources/intune_shared_devicemanagement.md)|Atualize as propriedades de um objeto [deviceManagement](../resources/intune_shared_devicemanagement.md).|
+|**Inclusão**|
 |[Função verifyWindowsEnrollmentAutoDiscovery](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Booliano|Ainda não documentado|
 |**RBAC**|
-|[Função getEffectivePermissions](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|Coleção [rolePermission](../resources/intune_rbac_rolepermission.md) ou conjunto de sequência de caracteres|Recupera permissões efetivas de usuário autenticado no momento|
+|[Função getEffectivePermissions](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|coleção [rolePermission](../resources/intune_rbac_rolepermission.md) ou conjunto de cadeia de caracteres|Recupera permissões efetivas de usuário autenticado no momento|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
+|id|String|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
 |configurações|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
 |subscriptionState|Cadeia de caracteres|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**Nível de contratação**|
+|**Inclusão**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
 ## <a name="relationships"></a>Relações
@@ -62,10 +61,10 @@ O recurso deviceManagement representa um contêiner cujo conteúdo varia de acor
 |managedDevices|Conjunto [managedDevice](../resources/intune_devices_manageddevice.md)|A lista de dispositivos gerenciados.|
 |**Registro**|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
-|importedWindowsAutopilotDeviceIdentityUploads|Coleção [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)|Coleção de carregamento de dispositivos de piloto automático do Windows.|
-|**Notificações**|
+|importedWindowsAutopilotDeviceIdentityUploads|coleção [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)|Coleção de piloto automático do Windows carregar de dispositivos.|
+|**Notifications**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
-|**Nível de contratação**|
+|**Inclusão**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|As configurações de acesso condicional do Exchange no local. O acesso condicional no local exigirá que os dispositivos sejam registrados e estejam em conformidade para o acesso ao email|
 |deviceCategories|Coleção [deviceCategory](../resources/intune_shared_devicecategory.md)|A lista de categorias de dispositivo com o locatário.|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md)|A lista de configurações de registro de dispositivos|

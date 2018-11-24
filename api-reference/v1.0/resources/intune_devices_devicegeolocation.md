@@ -16,13 +16,14 @@ Localização do dispositivo
 |speed|Double|Velocidade na qual o dispositivo está viajando, em metros por segundo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceGeoLocation"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
@@ -36,11 +37,6 @@ Veja a seguir uma representação JSON do recurso.
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
-
-
-
-
-
 
 
 

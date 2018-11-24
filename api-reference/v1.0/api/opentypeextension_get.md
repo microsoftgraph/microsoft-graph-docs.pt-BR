@@ -12,15 +12,20 @@ A tabela a seguir lista os três cenários em que é possível obter uma extens�
 
 ## <a name="permissions"></a>Permissões
 
-Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso que contém a extensão. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+Dependendo do recurso que contém a extensão e a permissão tipo (delegado ou aplicativo) solicitada, a permissão especificada na tabela a seguir é o menos privilegiada necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
+| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-| [Dispositivo](../resources/device.md) | Directory.Read.All | [Evento](../resources/event.md) | Calendars.Read |
-| [Grupo](../resources/group.md) | Group.Read.All | [Evento de grupo](../resources/event.md) | Group.Read.All |
-| [Postagem de grupo](../resources/post.md) | Group.Read.All | [Mensagem](../resources/message.md) | Mail.Read |
-| [Organização](../resources/organization.md) | Directory.Read.All | [Contato pessoal](../resources/contact.md) | Contacts.Read |
-| [Usuário](../resources/user.md) | User.ReadBasic.All | | |
+| [device](../resources/device.md) | Directory.Read.All | Sem suporte | Device.ReadWrite.All |
+| [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [group](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
+| [evento de grupo](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
+| [postagem de grupo](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organization](../resources/organization.md) | User.Read | Sem suporte | Sem suporte |
+| [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -86,18 +91,18 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|Id|sequência de caracteres|Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.|
-|extensionId|sequência de caracteres|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.|
+|Id|string|Espaço reservado para um identificador exclusivo de um objeto na coleção correspondente, como mensagens, contatos e eventos. Obrigatório. Não deve ser confundido com a propriedade **id** de uma **openTypeExtension**.|
+|extensionId|string|Espaço reservado para um nome de extensão que é um identificador de texto exclusivo para um a uma extensão ou um nome totalmente qualificado que concatena o tipo de extensão e o identificador de texto exclusivo. O nome totalmente qualificado é retornado na propriedade **id** quando você cria a extensão. Obrigatório.|
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Não esqueça de aplicar a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na sequência de caracteres `$filter`.
+Certifique-se de aplicar a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
 
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$filter|sequência de caracteres|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
-|$filter com o operador **any**|sequência de caracteres|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|
-|$expand|sequência de caracteres|Expande uma instância de recurso para incluir uma extensão. |
+|$filter|string|Retorna uma extensão com sua **id** correspondentes ao valor do parâmetro `extensionId`.|
+|$filter com o operador **any**|string|Retorna instâncias de uma coleção de recursos que contêm uma extensão com sua **id** correspondente ao valor do parâmetro `extensionId`.|
+|$expand|string|Expande uma instância de recurso para incluir uma extensão. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Valor |

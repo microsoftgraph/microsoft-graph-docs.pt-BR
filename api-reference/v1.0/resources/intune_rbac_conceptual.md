@@ -4,7 +4,7 @@
 
 O controle de acesso baseado em função do Intune determina quem pode executar ações em objetos do Intune e fazer alterações para aplicativos gerenciados, usuários e dispositivos.   
 
-Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de acesso baseado em função no Intune:
+Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de acesso baseado em função no Intune:  
 
 - [Atribuição de função de gerenciamento de aplicativo e dispositivo](intune_rbac_deviceandappmanagementroleassignment.md)
 - [Definição de função de gerenciamento de aplicativo e dispositivo](intune_rbac_deviceandappmanagementroledefinition.md)

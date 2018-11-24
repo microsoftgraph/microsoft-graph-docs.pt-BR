@@ -14,10 +14,11 @@ Uma classe que contém as propriedades para a Propriedade de auditoria.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.auditProperty"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.auditProperty",
@@ -26,11 +27,6 @@ Veja a seguir uma representação JSON do recurso.
   "newValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

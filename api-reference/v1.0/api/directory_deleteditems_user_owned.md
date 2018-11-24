@@ -2,13 +2,13 @@
 
 Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  
 
-Atualmente, a funcionalidade de listagem de itens de excluídos é oferece suporte apenas para recursos de [grupo](../resources/group.md) pertencentes ao usuário.
+Atualmente, a funcionalidade de itens de lista excluída é suportada somente para [Agrupar](../resources/group.md) recursos pertencentes ao usuário.
 
-Esta é uma ação de serviço, o que significa que ele não oferece suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificados por ID.
+Esta é uma ação de serviço, o que significa que ele não dá suporte a paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificado por ID.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | --- | --- |
@@ -41,13 +41,13 @@ O corpo da solicitação requer os seguintes parâmetros:
 
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|userId|Sequência de caracteres|ID do proprietário.|
-|type|Sequência de caracteres|Tipo de objetos pertencentes para retornar; `Group` atualmente é o único valor com suporte.|
+|userId|String|ID do proprietário.|
+|type|String|Tipo de objetos pertencentes para retornar; `Group` atualmente é o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta
 
-Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto de resposta inclui propriedades do [diretório (itens excluídos)](../resources/directory.md).
+Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto de resposta inclui propriedades do [diretório (itens excluídos)](../resources/directory.md) .
 
 ## <a name="example"></a>Exemplo
 
@@ -69,7 +69,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: Esta resposta pode estar truncada para fins de concisão. Todas as propriedades suportadas são retornadas de chamadas reais.
+Veja a seguir um exemplo da resposta. Observação: Este objeto de resposta pode estar truncado para fins de concisão. Todas as propriedades com suporte são retornadas de chamadas reais.
 
 ``` http
 HTTP/1.1 200

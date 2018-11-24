@@ -21,28 +21,28 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
-| Content-Type | sequência de caracteres  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Content-Type | string  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados. As propriedades graváveis/atualizáveis são
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|bccRecipients|Destinatário|Os destinatários Cco da mensagem. Atualizável somente se isDraft = verdadeiro.|
-|categorias|Coleção de sequência de caracteres|As categorias associadas à mensagem.|
-|ccRecipients|Coleção de destinatários|Os destinatários Cc da mensagem. Atualizável somente se isDraft = verdadeiro.|
-|de|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Atualizável somente se isDraft = verdadeiro. Deve corresponder à caixa de correio real usada.|
-|importância|Sequência de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
-|inferenceClassification | Sequência de caracteres | A classificação da mensagem para o usuário, com base na relevância ou na importância deduzida, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
-|internetMessageId |Sequência de caracteres |A ID da mensagem no formato especificado por [RFC2822](http://www.ietf.org/rfc/rfc2822.txt). Atualizável somente se isDraft = verdadeiro.|
-|isRead|Booleano|Indica se a mensagem foi lida.|
-|replyTo|Coleção de destinatários|Os endereços de e-mail a serem usados ao responder. Atualizável somente se isDraft = verdadeiro.|
-|remetente|Destinatário|A conta que é realmente usada para gerar a mensagem. Atualizável somente se isDraft = verdadeiro, e quando enviar uma mensagem a partir de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviar uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada.|
-|toRecipients|Coleção de destinatários|Os destinatários Para da mensagem. Atualizável somente se isDraft = verdadeiro.|
-|corpo|ItemBody|O corpo da mensagem. Atualizável somente se isDraft = verdadeiro.|
-|isDeliveryReceiptRequested|Booleano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isReadReceiptRequested|Booleano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|assunto|Sequência de caracteres|O assunto da mensagem. Atualizável somente se isDraft = verdadeiro.|
+|bccRecipients|Destinatário|Os destinatários Cco da mensagem. Somente se atualizável isDraft = true.|
+|categories|String collection|As categorias associadas à mensagem.|
+|ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. Somente se atualizável isDraft = true.|
+|from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Somente se atualizável isDraft = true. Deve corresponder à caixa de correio real usada.|
+|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou importância, ou em um caso de sobreposição explícito. Os valores possíveis são: `focused` ou `other`. |
+|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Somente se atualizável isDraft = true.|
+|isRead|Booliano|Indica se a mensagem foi lida.|
+|replyTo|Coleção Recipient|Os endereços de email a serem usados ao responder. Somente se atualizável isDraft = true.|
+|sender|Destinatário|A conta que é realmente usada para gerar a mensagem. Somente se atualizável isDraft = verdadeiro e quando enviando uma mensagem a partir de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada.|
+|toRecipients|Coleção Recipient|Dos destinatários da mensagem. Somente se atualizável isDraft = true.|
+|corpo|ItemBody|O corpo da mensagem. Somente se atualizável isDraft = true.|
+|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|subject|String|O assunto da mensagem. Somente se atualizável isDraft = true.|
 
 Como o recurso **message** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **message** existente.
 

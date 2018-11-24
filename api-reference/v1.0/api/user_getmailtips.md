@@ -1,10 +1,10 @@
-# <a name="user-getmailtips"></a>user: getMailTips
+# <a name="user-getmailtips"></a>usuário: getMailTips
 
-Obter as Dicas de Email de um ou mais destinatários como disponíveis para o [usuário](../resources/user.md) conectado.
+Obtenha dicas de email de um ou mais destinatários conforme disponível ao entrou no [usuário](../resources/user.md).
 
-Observe que ao fazer uma chamada `POST` para a ação `getMailTips`, você poderá solicitar tipos específicos de dicas de email que podem ser retornados para mais de um destinatário de uma só vez. As dicas de email solicitadas são retornadas em uma coleção [mailTips](../resources/mailtips.md).
+Observe que, tornando uma `POST` chamada para o `getMailTips` ação, você poderá solicitar tipos específicos de dicas de email a ser retornado por mais de um destinatário de uma só vez. As dicas de email solicitadas são retornadas em uma coleção de [dicas de email](../resources/mailtips.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -20,7 +20,7 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor|
 |:-----------  |:------|
@@ -32,15 +32,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção de sequência de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|Sequência de caracteres|Uma enumeração de sinalizadores que representa as dicas de e-mail solicitadas. Os valores possíveis são: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions` e `totalMemberCount`.|
+|EmailAddresses|String collection|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|MailTipsOptions|String|Enumeração dos sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
 
-## <a name="response"></a>Response
+## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta `200 OK` e uma coleção de objetos [mailTips](../resources/mailtips.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [dicas de email](../resources/mailtips.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir obtém Dicas de Email para os destinatários especificados, para qualquer configuração de resposta automática e status de caixa de correio cheia.
+O exemplo a seguir obtém as dicas de email para os destinatários especificados, para quaisquer configurações de resposta automática e o status completo de caixa de correio.
 
 <!-- {
   "blockType": "request",

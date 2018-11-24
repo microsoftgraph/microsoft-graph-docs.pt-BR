@@ -1,7 +1,7 @@
 # <a name="timezoneinformation-resource-type"></a>Tipo de recurso timeZoneInformation
 
 
-Representa um fuso horário. Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)](http://www.iana.org/time-zones) (também conhecido como fuso horário de Olson), além de quando o atual problema conhecido foi corrigido.
+Representa um fuso horário. Entre os formatos de fuso horário válidos estão o do Windows e o da [Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson), além de quando o atual problema conhecido foi corrigido.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

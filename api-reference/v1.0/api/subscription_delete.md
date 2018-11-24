@@ -15,7 +15,8 @@ A tabela a seguir lista a permissão sugerida necessária para cada recurso. Par
 | Grupos                      | Group.Read.All      |
 | Usuários                       | User.Read.All       |
 | Drive (o OneDrive do usuário)    | Files.ReadWrite     |
-| Unidades (unidades e conteúdo compartilhados do SharePoint) | Files.ReadWrite.All |
+| Drives (conteúdo do SharePoint shared e unidades) | Files.ReadWrite.All |
+|Alerta de segurança| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -29,7 +30,7 @@ DELETE /subscriptions/{id}
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

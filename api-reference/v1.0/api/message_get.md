@@ -2,17 +2,17 @@
 
 Recupere as propriedades e os relacionamentos de um objeto [message](../resources/message.md).
 
-No momento, essa operação retorna o corpo da mensagem somente no formato HTML.
+No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 
-Há dois cenários em que um aplicativo pode obter mensagens da pasta de email de outro usuário:
+Há dois cenários onde um aplicativo pode obter uma mensagem na pasta de email de outro usuário:
 
-* Se o aplicativo tiver permissões de aplicativo ou,
-* Se o aplicativo tiver as [permissões](#permissions) apropriadas delegadas de um usuário, e outro usuário tiver compartilhado uma pasta de email com o primeiro usuário ou, tiver dado acesso delegado a ele. Confira os [detalhes e um exemplo](../../../concepts/outlook-share-messages-folders.md).
+* Se o aplicativo tem permissões de aplicativo, ou,
+* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](../../../concepts/outlook-share-messages-folders.md).
 
-Como o recurso **message** suporta [extensions](../../../concepts/extensibility_overview.md), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
+Como o recurso **message** dá suporte a [extensions](../../../concepts/extensibility_overview.md), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -30,12 +30,12 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
-| Prefer: outlook.body-content-type | sequência de caracteres | O formato das propriedades **body** e **uniqueBody** a serem retornadas. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado. Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML. Opcional. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
+| Prefer: outlook.body-content-type | string | O formato das propriedades **body** e **uniqueBody** a serem retornadas. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado. Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -130,7 +130,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo usa um parâmetro de consulta `$select` para obter os cabeçalhos de mensagem de internet de uma mensagem. 
+O próximo exemplo utiliza uma `$select` parâmetro para obter os cabeçalhos de mensagem de Internet de uma mensagem de consulta. 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
@@ -140,7 +140,7 @@ O próximo exemplo usa um parâmetro de consulta `$select` para obter os cabeça
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. Observação: O conjunto de cabeçalhos de mensagem no objeto response está truncado para fins de concisão. Todas os cabeçalhos serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: O conjunto de cabeçalhos de mensagem no objeto response será truncado para fins de concisão. Serão retornados todos dos cabeçalhos de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

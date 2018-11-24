@@ -10,7 +10,7 @@ Herda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|Cadeia de caracteres|Nome da ação herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
-|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado da ação herdado de [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune_devices_actionstate.md)|Estado da ação Inherited de [deviceActionResult](../resources/intune_devices_deviceactionresult.md). Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Hora em que ação foi iniciada, herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|Hora em que o estado da ação foi atualizado pela última vez, herdada de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)|
 |unlockPin|Cadeia de caracteres|PIN para desbloquear o cliente|
@@ -19,10 +19,11 @@ Herda de [deviceActionResult](../resources/intune_devices_deviceactionresult.md)
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.remoteLockActionResult"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.remoteLockActionResult",
@@ -33,11 +34,6 @@ Veja a seguir uma representação JSON do recurso.
   "unlockPin": "String"
 }
 ```
-
-
-
-
-
 
 
 

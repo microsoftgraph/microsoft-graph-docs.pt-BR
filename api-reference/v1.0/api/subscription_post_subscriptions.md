@@ -15,9 +15,10 @@ Criar uma assinatura exige escopo de leitura para o recurso. Por exemplo, para o
 | Grupos                      | Group.Read.All      |
 | Usuários                       | User.Read.All       |
 | Drive (o OneDrive do usuário)    | Files.ReadWrite     |
-| Unidades (unidades e conteúdo compartilhado do SharePoint) | Files.ReadWrite.All |
+| Drives (conteúdo do SharePoint shared e unidades) | Files.ReadWrite.All |
+|Alerta de segurança| SecurityEvents.ReadWrite.All |
 
- > **Observação:** O ponto de extremidade /v1.0 concede permissões de aplicativo para a maioria dos recursos. Não há suporte para conversas em grupo e itens da unidade raiz do OneDrive com permissões de aplicativo.
+ > **Observação:** O ponto de extremidade /v1.0 permite que as permissões de aplicativo para a maioria dos recursos. Não há suporte para conversas em itens de raiz uma unidade OneDrive e de grupo com permissões de aplicativo.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -31,7 +32,7 @@ POST /subscriptions
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 
@@ -60,8 +61,8 @@ Content-type: application/json
 }
 ```
 
-No corpo da solicitação, forneça uma representação JSON do objeto [subscription](../resources/subscription.md).
-O preenchimento do campo `clientState` é opcional.
+No corpo da solicitação, fornece uma representação JSON do objeto de [inscrição](../resources/subscription.md) .
+O `clientState` campo é opcional.
 
 ##### <a name="resources-examples"></a>Exemplos de recursos
 
@@ -73,9 +74,10 @@ Estes são os valores válidos da propriedade de recurso da assinatura:
 |Contatos|me/contacts|
 |Calendários|me/events|
 |Usuários|users|
-|Grupos|groups|
+|Grupos|grupos|
 |Conversas|groups('*{id}*')/conversations|
 |Unidades|me/drive/root|
+|Alerta de segurança|alertas de segurança /? $filter = status eq 'Novo'|
 
 ##### <a name="response"></a>Resposta
 
@@ -106,7 +108,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
-O ponto de extremidade de notificação de assinatura (especificado na propriedade `notificationUrl`) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [Configurar notificações para alterações nos dados do usuário](../../../concepts/webhooks.md#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro 400 de solicitação inválida.
+O ponto de extremidade de notificação de inscrição (especificado no `notificationUrl` propriedade) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [Configurar notificações para que as alterações nos dados do usuário](../../../concepts/webhooks.md#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de solicitação inválida a 400.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

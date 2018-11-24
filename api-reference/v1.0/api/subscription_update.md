@@ -1,8 +1,8 @@
 # <a name="update-subscription"></a>Atualizar assinatura
 
-Renove uma assinatura ampliando seu tempo de expiração.
+Renove uma assinatura ampliando seu tempo de validade.
 
-Assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para não deixar de receber notificações, um aplicativo deve renovar sua assinatura com uma boa antecedência da data de expiração. Consulte [assinatura](../resources/subscription.md) para o comprimento máximo de uma assinatura para cada tipo de recurso.
+Assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações de ausentes, um aplicativo deve renovar suas assinaturas bem antes de começar sua data de expiração. Consulte [assinatura](../resources/subscription.md) para o comprimento máximo de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
@@ -16,8 +16,9 @@ A tabela a seguir lista a permissão sugerida necessária para cada recurso. Par
 | Mensagens                    | Mail.Read           |
 | Grupos                      | Group.Read.All      |
 | Usuários                       | User.Read.All       |
-| Unidade (OneDrive do usuário)    | Files.ReadWrite     |
-| Unidades (unidades e conteúdo compartilhado do SharePoint) | Files.ReadWrite.All |
+| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
+| Drives (conteúdo do SharePoint shared e unidades) | Files.ReadWrite.All |
+|Alerta de segurança| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -31,7 +32,7 @@ PATCH /subscriptions/{id}
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="response"></a>Resposta
 

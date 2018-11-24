@@ -13,13 +13,14 @@ Resumo do Estado de Acesso ao Exchange do dispositivo
 |unavailableDeviceCount|Int32|Contagem total de dispositivos para os quais nenhum Estado de Acesso ao Exchange pôde ser encontrado.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceExchangeAccessStateSummary",
@@ -30,11 +31,6 @@ Veja a seguir uma representação JSON do recurso.
   "unavailableDeviceCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

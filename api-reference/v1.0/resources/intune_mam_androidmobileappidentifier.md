@@ -15,21 +15,17 @@ Herda de [mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.androidMobileAppIdentifier"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidMobileAppIdentifier",
   "packageId": "String"
 }
 ```
-
-
-
-
-
 
 
 

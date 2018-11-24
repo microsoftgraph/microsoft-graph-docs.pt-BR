@@ -3,14 +3,14 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Upload de arquivos retomável
-ms.openlocfilehash: d6a6066ea04d087efef556a1d5b5af888a34dad2
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: 14b9047f84b5390aea2f5285660e6c04a6bc3149
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23265509"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26564755"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
+# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes em uma sessão de carregamento
 
 Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo. Uma sessão de upload permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, permitindo que a transferência seja retomada se uma conexão for interrompida enquanto o upload estiver em andamento.
 
@@ -47,13 +47,13 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### <a name="request-body"></a>Corpo da solicitação
 
-Nenhum corpo de solicitação é necessário.
-No entanto, você pode especificar uma propriedade `item` no corpo da solicitação, fornecendo dados adicionais sobre o arquivo que está sendo carregado.
+Nenhum corpo de solicitação é obrigatório.
+No entanto, você pode especificar um `item` propriedade no corpo da solicitação, fornecendo dados adicionais sobre o arquivo que está sendo carregado.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "name": "filename.txt"
@@ -81,9 +81,9 @@ Por exemplo, para controlar o comportamento se o nome do arquivo já estiver em 
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| descrição          | Sequência de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Pessoal
+| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
-| name                 | Sequência de caracteres             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 Para carregar o arquivo, ou uma parte do arquivo, o aplicativo faz uma solicitação PUT ao valor de **uploadUrl** recebido na resposta de **createUploadSession**.
 Você pode carregar o arquivo inteiro ou dividi-lo em vários intervalos de byte, desde que o máximo de bytes em qualquer solicitação específica seja menor que 60 MiB.
 
-Os fragmentos do arquivo devem ser carregados sequencialmente em ordem.
+Os fragmentos do arquivo devem ser carregados sequencialmente na ordem.
 O upload de fragmentos fora de ordem resultará em um erro.
 
 **Observação:** se seu aplicativo dividir um arquivo em vários intervalos de byte, o tamanho de cada intervalo de bytes **DEVE** ser um múltiplo de 320 KiB (327.680 bytes). Usar um tamanho de fragmento que não divide uniformemente por 320 KiB resultará em erros ao confirmar alguns arquivos.
@@ -375,7 +375,7 @@ Confira o tópico [Respostas de erro][error-response] para saber detalhes sobre 
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
     "Warning: /api-reference/v1.0/api/driveitem_createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,overwrite) are in resource, but () are in table"
+      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

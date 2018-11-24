@@ -1,4 +1,4 @@
-# <a name="deviceregistrationstate-enum-type"></a>tipo enumerado deviceRegistrationState
+# <a name="deviceregistrationstate-enum-type"></a>tipo de enum deviceRegistrationState
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
@@ -7,18 +7,13 @@ Status do registro do dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notRegistered|0|O dispositivo não está registrado.|
-|registered|2|O dispositivo está registrado.|
+|registrado|2|O dispositivo está registrado.|
 |revogado|3|O dispositivo foi bloqueado, apagado ou desativado.|
 |keyConflict|4|O dispositivo tem um conflito de chave.|
 |approvalPending|5|O dispositivo está aguardando aprovação.|
 |certificateReset|6|O certificado do dispositivo foi redefinido.|
-|notRegisteredPendingEnrollment|7|O dispositivo não está registrado e está com inscrição pendente.|
+|notRegisteredPendingEnrollment|7|O dispositivo não está registrado e pendentes de inscrição.|
 |unknown|8|O status do registro de dispositivo é desconhecido.|
-
-
-
-
-
 
 
 

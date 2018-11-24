@@ -22,12 +22,12 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceConfigurationAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -37,11 +37,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
-
-
-
-
 
 
 

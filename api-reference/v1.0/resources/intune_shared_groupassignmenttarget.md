@@ -15,21 +15,17 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune_shared_dev
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.groupAssignmentTarget",
   "groupId": "String"
 }
 ```
-
-
-
-
-
 
 
 

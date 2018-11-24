@@ -1,4 +1,4 @@
-# <a name="miracastchannel-enum-type"></a>tipo enumerado miracastChannel
+# <a name="miracastchannel-enum-type"></a>tipo de enum miracastChannel
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
@@ -7,31 +7,26 @@ Valores possíveis para o canal de Miracast.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|one|1|One.|
-|two|2|Two.|
-|three|3|Three.|
-|four|4|Four.|
-|five|5|Five.|
-|six|6|Six.|
-|seven|7|Seven.|
-|eight|8|Eight.|
-|nine|9|Nine.|
-|ten|10|Ten.|
-|eleven|11|Eleven.|
-|thirtySix|36|Thirty-Six.|
-|forty|40|Forty.|
-|fortyFour|44|Forty-Four.|
-|fortyEight|48|Forty-Eight.|
-|oneHundredFortyNine|149|OneHundredForty-Nine.|
-|oneHundredFiftyThree|153|OneHundredFifty-Three.|
-|oneHundredFiftySeven|157|OneHundredFifty-Seven.|
-|oneHundredSixtyOne|161|OneHundredSixty-One.|
-|oneHundredSixtyFive|165|OneHundredSixty-Five.|
-
-
-
-
-
+|one|1|Um.|
+|two|2|Dois.|
+|three|3|Três.|
+|four|4|Quatro.|
+|five|5|Cinco.|
+|seis|6|Seis.|
+|sete|7|Sete.|
+|oito|8|Oito.|
+|nove|9|Nove.|
+|dez|10|Dez.|
+|onze|11|Onze.|
+|thirtySix|36|36.|
+|40|40|40.|
+|fortyFour|44|Quarenta e quatro.|
+|fortyEight|48|Quarenta e oito.|
+|oneHundredFortyNine|149|OneHundredForty e nove.|
+|oneHundredFiftyThree|153|OneHundredFifty-três.|
+|oneHundredFiftySeven|157|OneHundredFifty-sete.|
+|oneHundredSixtyOne|161|Um OneHundredSixty.|
+|oneHundredSixtyFive|165|Cinco OneHundredSixty.|
 
 
 

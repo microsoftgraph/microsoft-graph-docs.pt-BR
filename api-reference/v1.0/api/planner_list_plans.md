@@ -16,7 +16,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /planner/plans
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método requer que o [filtro](http://graph.microsoft.io/docs/overview/query_parameters) de proprietário seja especificado.
+Este método requer que o [filtro](https://developer.microsoft.com/graph/docs/concepts/query_parameters) de proprietário seja especificado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

@@ -22,7 +22,7 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
 |deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. Ex: aplicativo usado em dispositivo modificado|
+|flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune_mam_managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune_mam_mobileappidentifier.md)|O identificador do pacote do aplicativo|
 |id|Cadeia de caracteres|Chave da entidade.|
@@ -37,12 +37,12 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedAppRegistration",
@@ -67,9 +67,11 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 
-
-
-
-
-
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
+}
+-->

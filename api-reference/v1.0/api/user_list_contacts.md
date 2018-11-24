@@ -1,14 +1,14 @@
-# <a name="list-contacts"></a>List contacts
+# <a name="list-contacts"></a>Listar contatos
 
-Obter uma coleção de contatos da pasta de Contatos padrão do usuário conectado.
+Obter uma coleção de contato da pasta padrão Contatos do usuário conectado.
 
-Há dois cenários em que um aplicativo pode obter um contato da pasta de contatos de outro usuário:
+Há dois cenários onde um aplicativo pode obter contatos na pasta de contatos de outro usuário:
 
-* Se o aplicativo tiver permissões de aplicativo ou,
-* Se o aplicativo tiver as [permissões](#permissions) apropriadas delegadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com o primeiro usuário ou, tiver dado acesso delegado a ele. Confira os [detalhes e um exemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Se o aplicativo tem permissões de aplicativo, ou,
+* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -38,7 +38,7 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 Por exemplo, você pode usar o parâmetro de consulta `$filter` para filtrar os contatos com base no domínio dos endereços de email deles:
 

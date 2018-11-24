@@ -14,13 +14,14 @@ Resumo do sistema operacional do dispositivo.
 |unknownCount|Int32|Número da contagem de dispositivos desconhecidos.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceOperatingSystemSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceOperatingSystemSummary",
@@ -32,11 +33,6 @@ Veja a seguir uma representação JSON do recurso.
   "unknownCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

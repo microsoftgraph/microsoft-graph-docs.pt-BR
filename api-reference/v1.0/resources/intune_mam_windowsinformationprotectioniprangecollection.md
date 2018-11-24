@@ -7,16 +7,17 @@ Coleção de intervalos de IP da Proteção de Informações do Windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|Nome de exibição|
-|intervalos|Coleção [ipRange](../resources/intune_mam_iprange.md)|Coleção de intervalos de IP|
+|ranges|Coleção [ipRange](../resources/intune_mam_iprange.md)|Coleção de intervalos de IP|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionIPRangeCollection",
@@ -30,11 +31,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
-
-
-
 
 
 

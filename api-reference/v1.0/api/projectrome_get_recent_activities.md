@@ -1,15 +1,15 @@
-# <a name="get-recent-user-activities"></a>Obter atividades recentes do usuário
+# <a name="get-recent-user-activities"></a>Obtenha as atividades recentes do usuário
 
-Obter as atividades recentes de um determinado usuário. Esta função OData tem alguns comportamentos padrão incluídos para fazê-la operar como uma API "usada mais recentemente". O serviço consultará o [historyItems](../resources/projectrome_historyitem.md) mais recente e, em seguida, buscar essas atividades relacionadas. As atividades serão classificadas de acordo com o **lastModified** mais recente do **historyItem**. Isso significa que atividades sem **historyItems** não serão incluídas na resposta. A permissão UserActivity.ReadWrite.CreatedByApp aplicará um filtro extra à resposta para que apenas as atividades criadas pelo seu aplicativo sejam retornadas. A filtragem do lado do servidor pode resultar em páginas vazias se o usuário é especialmente ativo e se outros aplicativos criaram atividades mais recentes. Para obter as atividades do seu aplicativo, use a propriedade **nextLink** para paginar.
+Obtenha atividades recentes para um determinado usuário. Esta função de OData tem alguns comportamentos padrão incluídos para torná-lo a operar como uma API "usado mais recentemente". O serviço de consulta para o mais recente [historyItems](../resources/projectrome_historyitem.md)e, em seguida, coloque essas atividades relacionadas. Atividades serão classificadas de acordo com o **lastModified** mais recentes sobre o **historyItem**. Isso significa que atividades sem **historyItems** não serão incluídas na resposta. A permissão de UserActivity.ReadWrite.CreatedByApp também se aplicará filtragem extra à resposta, para que apenas as atividades criadas pelo seu aplicativo são retornadas. A filtragem do lado do servidor pode resultar em páginas vazias se o usuário é particularmente ativo e outros aplicativos criou atividades mais recentes. Para obter as atividades do seu aplicativo, use a propriedade **nextLink** para paginar.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -22,13 +22,13 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta. São suportados os parâmetros de consulta a seguir:
+Este método oferece suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Os parâmetros de consulta a seguir são suportados:
 
-- $expand para a propriedade de navegação **historyItems**.
+- $expand para a propriedade de navegação **historyItems** .
 - $top para limitar o número máximo de itens nas páginas.
-- $filter na propriedade **lastModifiedDateTime** para **activities** ou **historyItems**, se expandida.
+- $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.
 
-A seguir alguns exemplos de consultas compatíveis com a codificação de URL.
+A seguir estão alguns exemplos de consultas compatíveis com a codificação de URL.
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -42,7 +42,7 @@ A seguir alguns exemplos de consultas compatíveis com a codificação de URL.
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|Autorização | sequência de caracteres | {token} de portador. Obrigatório.|
+|Autorização | string | {token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -50,7 +50,7 @@ Não especifique o corpo de uma solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o código de resposta`200 OK` com as atividades recentes do usuário no seu aplicativo.
+Se tiver êxito, este método retornará o `200 OK` código de resposta com a atividades recentes do usuário para o seu aplicativo.
 
 ## <a name="example"></a>Exemplo
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "appActivityId": "/article?12345",
         "visualElements": {
             "attribution": {
-              "iconUrl": "http://www.contoso.com/icon",
+              "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
               "addImageQuery": false,
               },
@@ -101,7 +101,7 @@ Content-Type: application/json
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
             "backgroundColor": "#ff0000",
             "content": {
-              "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+              "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
               "type": "AdaptiveCard",
               "body":
               [{
@@ -110,13 +110,13 @@ Content-Type: application/json
               }]
             }
         },
-        "activationUrl": "http://www.contoso.com/article?id=12345",
+        "activationUrl": "https://www.contoso.com/article?id=12345",
         "appDisplayName": "Contoso, Ltd.",
         "userTimezone": "Africa/Casablanca",
-        "fallbackUrl": "http://www.contoso.com/article?id=12345",
-        "contentUrl": "http://www.contoso.com/article?id=12345",
+        "fallbackUrl": "https://www.contoso.com/article?id=12345",
+        "contentUrl": "https://www.contoso.com/article?id=12345",
         "contentInfo": {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "Article",
             "author": "John Doe",
             "name": "How to Tie a Reef Knot"

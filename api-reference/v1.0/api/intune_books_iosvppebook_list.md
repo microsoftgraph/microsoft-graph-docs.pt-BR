@@ -24,8 +24,8 @@ GET /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|aplicativo/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -45,7 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1094
+Content-Length: 1097
 
 {
   "value": [
@@ -65,7 +65,7 @@ Content-Length: 1094
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "informationUrl": "https://example.com/informationUrl/",
       "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
-      "vppTokenId": "<Unknown Primitive Type Edm.Guid>",
+      "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
       "appleId": "Apple Id value",
       "vppOrganizationName": "Vpp Organization Name value",
       "genres": [
@@ -79,11 +79,6 @@ Content-Length: 1094
   ]
 }
 ```
-
-
-
-
-
 
 
 

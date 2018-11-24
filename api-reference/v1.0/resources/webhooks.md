@@ -1,8 +1,8 @@
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para obter notificações de alteração
 
-A API REST do Microsoft Graph usa um mecanismo de webhook para enviar notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após as alterações. Para obter mais detalhes, incluindo como assinar e manipular notificações de entrada, consulte [Configurar notificações para alterações nos dados do usuário](../../../concepts/webhooks.md).
+A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após as alterações. Para obter mais detalhes, incluindo como assinar e manipular notificações de entrada, consulte [Configurar notificações para que as alterações nos dados do usuário](../../../concepts/webhooks.md).
 
-Usando a API do Microsoft Graph, um aplicativo pode se inscrever para ser notificado de alterações nos seguintes recursos:
+Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
 - Mensagens
 - Eventos
@@ -10,18 +10,19 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para ser notifi
 - Usuários
 - Grupos
 - Conversas em grupo
-- Conteúdo compartilhado no OneDrive, incluindo unidades associadas a sites do SharePoint
-- Pastas pessoais de usuários no OneDrive
+- Conteúdo compartilhado na OneDrive, incluindo as unidades associadas a sites do SharePoint
+- Pastas de OneDrive pessoais dos usuários
+- Alertas de segurança
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Em geral, as operações de assinatura exigem permissão de leitura ao recurso. Por exemplo, para obter notificações de mensagens, seu aplicativo precisa da permissão `Mail.Read`. O artigo [criar assinatura](../api/subscription_post_subscriptions.md) lista as permissões necessárias para cada tipo de recurso. A tabela a seguir lista os tipos de permissões que o aplicativo pode solicitar para usar webhooks para tipos específicos de recursos.
 
 | Tipo de permissão                        | Tipos de recurso com suporte na v1.0                                 |
 | :------------------------------------- | :--------------------------------------------------------------- |
-| Delegado - conta corporativa ou de estudante     | [contato][], [conversa][], [unidade][], [evento][], [mensagem][] |
+| Delegado - conta corporativa ou de estudante     | [entre em contato][], [conversa][], [unidade][], [evento][], [mensagem][], [alerta][] |
 | Delegado - conta pessoal da Microsoft | Nenhum                                                             |
-| Aplicativo                            | [contato][], [conversa][], [evento][], [mensagem][]            |
+| Aplicativo                            | [entre em contato][], [conversa][], [evento][], [mensagem][], [alerta][]           |
 
 ## <a name="see-also"></a>Confira também
 
@@ -36,3 +37,4 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [unidade]: ./drive.md
 [evento]: ./event.md
 [mensagem]: ./message.md
+[alerta]: ./alert.md

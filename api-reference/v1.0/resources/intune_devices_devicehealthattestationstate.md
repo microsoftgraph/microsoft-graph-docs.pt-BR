@@ -43,10 +43,11 @@ Ainda não documentado
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceHealthAttestationState"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceHealthAttestationState",
@@ -84,11 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   "healthAttestationSupportedStatus": "String"
 }
 ```
-
-
-
-
-
 
 
 

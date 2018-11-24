@@ -1,6 +1,9 @@
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
-Representa uma função do diretório do Azure AD. As funções de diretório do AD do Azure também são conhecidas como *funções de administrador*. Para obter mais informações sobre funções de diretório (administrador), confira [Atribuindo funções de administrador no Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). Com o Microsoft Graph, você pode atribuir usuários a funções de diretório para conceder a eles as permissões da função de destino. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Apenas a função de diretório Administradores de Empresa é ativada por padrão. Para ativar outras funções de diretório disponíveis, você envia uma solicitação POST com a ID do [directoryRoleTemplate](directoryroletemplate.md) no qual a função directory se baseia. Herda de [directoryObject](directoryobject.md).
+Representa uma função de diretório do Windows Azure AD. Funções de diretório do Windows Azure AD também são conhecidos como *funções de administrador*. Para obter mais informações sobre as funções de diretório (administrador), consulte [Atribuindo funções de administrador no Azure AD](http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/). Com o Microsoft Graph, você pode atribuir usuários a funções de diretório para conceder as permissões da função de destino. Para ler uma função de diretório ou atualizar seus membros, ele deve primeiro ser ativado no inquilino. Por padrão, apenas a função do diretório de administradores de empresa é ativada. Para ativar a outras funções de diretório disponíveis que você enviar uma solicitação POST com a ID de [directoryRoleTemplate](directoryroletemplate.md) na qual a função de diretório se baseia. Herda de [directoryObject](directoryobject.md).
+Esse recurso permite:
+
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/directoryrole_delta.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -12,14 +15,15 @@ Representa uma função do diretório do Azure AD. As funções de diretório do
 |[Listar membros](../api/directoryrole_list_members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são membros da função directory da propriedade de navegação members.|
 |[Remover um membro](../api/directoryrole_delete_member.md) |[directoryObject](directoryobject.md)| Remova um usuário da função de diretório.|
 |[Ativar directoryRole](../api/directoryrole_post_directoryroles.md) |[directoryRole](directoryrole.md) | Ative uma função de diretório.|
+|[delta](../api/directoryrole_delta.md)|Coleção directoryRole| Obtenha as alterações incrementais para funções de diretório. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|descrição|Sequência de caracteres|A descrição da função de diretório. Somente leitura. |
-|displayName|Sequência de caracteres|O nome de exibição da função de diretório. Somente leitura. |
-|id|Sequência de caracteres|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
-|roleTemplateId|Sequência de caracteres| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
+|description|String|A descrição da função de diretório. Somente leitura. |
+|displayName|String|O nome de exibição da função de diretório. Somente leitura. |
+|id|String|O identificador exclusivo da função de diretório. Herdado de [directoryObject](directoryobject.md). Chave, Não Anulável, Somente Leitura.|
+|roleTemplateId|String| A **id** do [directoryRoleTemplate](directoryroletemplate.md) em que esta função se baseia. A propriedade deve ser especificada ao ativar uma função de diretório em um locatário com uma operação POST. Depois que a função directory tiver sido ativada, a propriedade será somente leitura. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|

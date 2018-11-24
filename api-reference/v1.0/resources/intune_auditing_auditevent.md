@@ -20,15 +20,15 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
-|actor|[auditActor](../resources/intune_auditing_auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
+|ator|[auditActor](../resources/intune_auditing_auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
 |atividade|Cadeia de caracteres|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
 |activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
 |activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
-|correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
-|recursos|Coleção [auditResource](../resources/intune_auditing_auditresource.md)|Recursos em modificação.|
-|Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|
+|correlationId|GUID|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
+|recursos|Conjunto [auditResource](../resources/intune_auditing_auditresource.md)|Recursos em modificação.|
+|categoria|Cadeia de caracteres|Categoria de auditoria.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -84,11 +84,6 @@ Veja a seguir uma representação JSON do recurso.
   "category": "String"
 }
 ```
-
-
-
-
-
 
 
 

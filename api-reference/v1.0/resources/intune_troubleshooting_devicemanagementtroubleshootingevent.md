@@ -23,12 +23,12 @@ Evento que representa uma falha geral.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceManagementTroubleshootingEvent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceManagementTroubleshootingEvent",
@@ -37,7 +37,6 @@ Veja a seguir uma representação JSON do recurso.
   "correlationId": "String"
 }
 ```
-
 
 
 

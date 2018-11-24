@@ -15,10 +15,11 @@ DataRecoveryCertificate da proteção de informações do Windows
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionDataRecoveryCertificate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionDataRecoveryCertificate",
@@ -28,11 +29,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "binary"
 }
 ```
-
-
-
-
-
 
 
 

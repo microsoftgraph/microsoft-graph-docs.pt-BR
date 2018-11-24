@@ -13,10 +13,11 @@ Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosDeviceType"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosDeviceType",
@@ -24,11 +25,6 @@ Veja a seguir uma representação JSON do recurso.
   "iPhoneAndIPod": true
 }
 ```
-
-
-
-
-
 
 
 

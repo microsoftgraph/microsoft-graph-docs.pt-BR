@@ -12,16 +12,17 @@ Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 |displayName|Cadeia de caracteres|Nome de exibição. Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |descrição|Cadeia de caracteres|Descrição. Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)|
-|valor|Boolean|Valor.|
+|value|Boolean|Valor.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBoolean"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingBoolean",
@@ -31,11 +32,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": true
 }
 ```
-
-
-
-
-
 
 
 
