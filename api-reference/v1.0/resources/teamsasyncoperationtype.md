@@ -1,0 +1,16 @@
+# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="45175-101">tipo de enum teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="45175-101">teamsAsyncOperationType enum type</span></span>
+
+
+
+<span data-ttu-id="45175-102">Tipos de [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="45175-102">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="45175-103">Os membros serão adicionados aqui assíncrono conforme mais operações são suportadas.</span><span class="sxs-lookup"><span data-stu-id="45175-103">Members will be added here as more async operations are supported.</span></span>
+
+## <a name="members"></a><span data-ttu-id="45175-104">Membros</span><span class="sxs-lookup"><span data-stu-id="45175-104">Members</span></span>
+
+| <span data-ttu-id="45175-105">Membro</span><span class="sxs-lookup"><span data-stu-id="45175-105">Member</span></span> | <span data-ttu-id="45175-106">Valor</span><span class="sxs-lookup"><span data-stu-id="45175-106">Value</span></span>| <span data-ttu-id="45175-107">Descrição</span><span class="sxs-lookup"><span data-stu-id="45175-107">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="45175-108">Inválido</span><span class="sxs-lookup"><span data-stu-id="45175-108">invalid</span></span>|<span data-ttu-id="45175-109">0</span><span class="sxs-lookup"><span data-stu-id="45175-109">0</span></span>|<span data-ttu-id="45175-110">Valor inválido.</span><span class="sxs-lookup"><span data-stu-id="45175-110">Invalid value.</span></span>|
+|<span data-ttu-id="45175-111">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="45175-111">cloneTeam</span></span>|<span data-ttu-id="45175-112">1</span><span class="sxs-lookup"><span data-stu-id="45175-112">1</span></span>|<span data-ttu-id="45175-113">Operação para clonar uma equipe.</span><span class="sxs-lookup"><span data-stu-id="45175-113">Operation to clone a team.</span></span>|
+|<span data-ttu-id="45175-114">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="45175-114">archiveTeam</span></span>|<span data-ttu-id="45175-115">2</span><span class="sxs-lookup"><span data-stu-id="45175-115">2</span></span>|<span data-ttu-id="45175-116">Operação de uma equipe de arquivamento.</span><span class="sxs-lookup"><span data-stu-id="45175-116">Operation to archive a team.</span></span>|
+|<span data-ttu-id="45175-117">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="45175-117">unarchiveTeam</span></span>|<span data-ttu-id="45175-118">3</span><span class="sxs-lookup"><span data-stu-id="45175-118">3</span></span>|<span data-ttu-id="45175-119">Operação de restauração uma equipe arquivada.</span><span class="sxs-lookup"><span data-stu-id="45175-119">Operation to restore an archived team.</span></span>|
+|<span data-ttu-id="45175-120">createTeam</span><span class="sxs-lookup"><span data-stu-id="45175-120">createTeam</span></span>|<span data-ttu-id="45175-121">3</span><span class="sxs-lookup"><span data-stu-id="45175-121">3</span></span>|<span data-ttu-id="45175-122">Operação para criar uma equipe a partir do zero.</span><span class="sxs-lookup"><span data-stu-id="45175-122">Operation to create a team from scratch.</span></span>|
+

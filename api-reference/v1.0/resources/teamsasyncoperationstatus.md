@@ -1,0 +1,15 @@
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="f0a9e-101">tipo de enum teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="f0a9e-101">teamsAsyncOperationStatus enum type</span></span>
+
+
+
+<span data-ttu-id="f0a9e-102">Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="f0a9e-102">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+
+## <a name="members"></a><span data-ttu-id="f0a9e-103">Membros</span><span class="sxs-lookup"><span data-stu-id="f0a9e-103">Members</span></span>
+
+| <span data-ttu-id="f0a9e-104">Membro</span><span class="sxs-lookup"><span data-stu-id="f0a9e-104">Member</span></span> | <span data-ttu-id="f0a9e-105">Valor</span><span class="sxs-lookup"><span data-stu-id="f0a9e-105">Value</span></span>| <span data-ttu-id="f0a9e-106">Descrição</span><span class="sxs-lookup"><span data-stu-id="f0a9e-106">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="f0a9e-107">Inválido</span><span class="sxs-lookup"><span data-stu-id="f0a9e-107">invalid</span></span>|<span data-ttu-id="f0a9e-108">0</span><span class="sxs-lookup"><span data-stu-id="f0a9e-108">0</span></span>|<span data-ttu-id="f0a9e-109">Valor inválido.</span><span class="sxs-lookup"><span data-stu-id="f0a9e-109">Invalid value.</span></span>|
+|<span data-ttu-id="f0a9e-110">notStarted</span><span class="sxs-lookup"><span data-stu-id="f0a9e-110">notStarted</span></span>|<span data-ttu-id="f0a9e-111">1</span><span class="sxs-lookup"><span data-stu-id="f0a9e-111">1</span></span>|<span data-ttu-id="f0a9e-112">A operação não foi iniciada.</span><span class="sxs-lookup"><span data-stu-id="f0a9e-112">The operation has not started.</span></span>|
+|<span data-ttu-id="f0a9e-113">inProgress</span><span class="sxs-lookup"><span data-stu-id="f0a9e-113">inProgress</span></span>|<span data-ttu-id="f0a9e-114">2</span><span class="sxs-lookup"><span data-stu-id="f0a9e-114">2</span></span>|<span data-ttu-id="f0a9e-115">A operação está sendo executado.</span><span class="sxs-lookup"><span data-stu-id="f0a9e-115">The operation is running.</span></span>|
+|<span data-ttu-id="f0a9e-116">foi bem-sucedida</span><span class="sxs-lookup"><span data-stu-id="f0a9e-116">succeeded</span></span>|<span data-ttu-id="f0a9e-117">3</span><span class="sxs-lookup"><span data-stu-id="f0a9e-117">3</span></span>|<span data-ttu-id="f0a9e-118">A operação foi bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="f0a9e-118">The operation succeeded.</span></span>|
+|<span data-ttu-id="f0a9e-119">Falha</span><span class="sxs-lookup"><span data-stu-id="f0a9e-119">failed</span></span>|<span data-ttu-id="f0a9e-120">4</span><span class="sxs-lookup"><span data-stu-id="f0a9e-120">4</span></span>|<span data-ttu-id="f0a9e-121">Falha na operação.</span><span class="sxs-lookup"><span data-stu-id="f0a9e-121">The operation failed.</span></span>|
