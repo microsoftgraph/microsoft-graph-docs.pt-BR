@@ -34,12 +34,12 @@ Herda de [deviceManagementTroubleshootingEvent](../resources/intune_troubleshoot
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceManagementTroubleshootingEvent",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.enrollmentTroubleshootingEvent"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
@@ -57,6 +57,13 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+  ],
+}
+-->
 
 
 

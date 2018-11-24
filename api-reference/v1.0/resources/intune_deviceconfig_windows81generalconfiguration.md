@@ -24,28 +24,28 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|accountsBlockAddingNonMicrosoftAccountEmail|Booleano|Indica se o usuário será impedido ou não de adicionar ao dispositivo contas de email não associadas a uma conta da Microsoft.|
-|applyOnlyToWindows81|Booleano|Valor que indica se esta política se aplica somente ao Windows 8.1. Essa propriedade é somente leitura.|
-|browserBlockAutofill|Booleano|Indica se o preenchimento automático deve ou não ser bloqueado.|
-|browserBlockAutomaticDetectionOfIntranetSites|Booleano|Indica se a detecção automática de sites da Intranet deve ou não ser bloqueada.|
-|browserBlockEnterpriseModeAccess|Booleano|Indica se o acesso ao modo Empresarial deve ou não ser bloqueado.|
-|browserBlockJavaScript|Booleano|Indica se o usuário será ou não impedido de usar JavaScript.|
-|browserBlockPlugins|Booleano|Indica se os plug-ins devem ou não ser bloqueados.|
-|browserBlockPopups|Booleano|Indica se janelas pop-ups devem ou não ser bloqueadas.|
-|browserBlockSendingDoNotTrackHeader|Booleano|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
-|browserBlockSingleWordEntryOnIntranetSites|Booleano|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
-|browserRequireSmartScreen|Booleano|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Booliano|Indica se o usuário será impedido ou não de adicionar ao dispositivo contas de email não associadas a uma conta da Microsoft.|
+|applyOnlyToWindows81|Booliano|Valor que indica se esta política se aplica somente ao Windows 8.1. Essa propriedade é somente leitura.|
+|browserBlockAutofill|Booliano|Indica se o preenchimento automático deve ou não ser bloqueado.|
+|browserBlockAutomaticDetectionOfIntranetSites|Booliano|Indica se a detecção automática de sites da Intranet deve ou não ser bloqueada.|
+|browserBlockEnterpriseModeAccess|Booliano|Indica se o acesso ao modo Empresarial deve ou não ser bloqueado.|
+|browserBlockJavaScript|Booliano|Indica se o usuário será ou não impedido de usar JavaScript.|
+|browserBlockPlugins|Booliano|Indica se os plug-ins devem ou não ser bloqueados.|
+|browserBlockPopups|Booliano|Indica se janelas pop-ups devem ou não ser bloqueadas.|
+|browserBlockSendingDoNotTrackHeader|Booliano|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
+|browserBlockSingleWordEntryOnIntranetSites|Booliano|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
+|browserRequireSmartScreen|Booliano|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |browserEnterpriseModeSiteListLocation|Cadeia de caracteres|O local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
-|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|O nível de segurança da internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança de Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune_deviceconfig_internetsitesecuritylevel.md)|O nível de segurança da Internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança da Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|Cadeia de caracteres|O local do relatório de registro em log.|
-|browserRequireHighSecurityForRestrictedSites|Booleano|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
-|browserRequireFirewall|Booleano|Indica se um firewall deve ou não ser exigido.|
-|browserRequireFraudWarning|Booleano|Indica se um aviso de fraude deve ou não ser exigido.|
+|browserRequireHighSecurityForRestrictedSites|Booliano|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
+|browserRequireFirewall|Booliano|Indica se um firewall deve ou não ser exigido.|
+|browserRequireFraudWarning|Booliano|Indica se um aviso de fraude deve ou não ser exigido.|
 |browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune_deviceconfig_sitesecuritylevel.md)|O nível de segurança de sites confiáveis. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
-|cellularBlockDataRoaming|Booleano|Indica se o roaming de dados deve ou não ser bloqueado.|
-|diagnosticsBlockDataSubmission|Booleano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
-|passwordBlockPicturePasswordAndPin|Booleano|Indica se o usuário será ou não impedido de usar senha com imagens ou pin.|
+|cellularBlockDataRoaming|Booliano|Indica se o roaming de dados deve ou não ser bloqueado.|
+|diagnosticsBlockDataSubmission|Booliano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
+|passwordBlockPicturePasswordAndPin|Booliano|Indica se o usuário será ou não impedido de usar senha com imagens ou pin.|
 |passwordExpirationDays|Int32|Expiração da senha em dias.|
 |passwordMinimumLength|Int32|O comprimento mínimo da senha.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Os minutos de inatividade antes que a tela atinja o tempo limite.|
@@ -53,9 +53,9 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado. Valores válidos de 0 a 24|
 |passwordRequiredType|[requiredPasswordType](../resources/intune_deviceconfig_requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|O número de falhas de entrada antes da redefinição de fábrica.|
-|storageRequireDeviceEncryption|Booleano|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
-|updatesRequireAutomaticUpdates|Booleano|Indica se as atualizações automáticas devem ou não ser exigidas.|
-|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|As configurações de controle de conta de usuário. Os valores possíveis são: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
+|storageRequireDeviceEncryption|Booliano|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
+|updatesRequireAutomaticUpdates|Booliano|Indica se as atualizações automáticas devem ou não ser exigidas.|
+|userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune_deviceconfig_windowsuseraccountcontrolsettings.md)|As configurações de controle da conta do usuário. Os valores possíveis são: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|Cadeia de caracteres|A URL das pastas de trabalho|
 
 ## <a name="relationships"></a>Relações
@@ -63,19 +63,19 @@ Herda de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfigurat
 |:---|:---|:---|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md)|Status de instalação da configuração de dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windows81GeneralConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windows81GeneralConfiguration",
@@ -120,11 +120,6 @@ Veja a seguir uma representação JSON do recurso.
   "workFoldersUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

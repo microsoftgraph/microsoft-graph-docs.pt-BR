@@ -19,19 +19,19 @@ Recursos telecomExpenseManagementPartner representam os metadados e o status de 
 |displayName|Cadeia de caracteres|Nome de exibição do parceiro TEM.|
 |url|Cadeia de caracteres|URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.|
 |appAuthorized|Booliano|Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.|
-|habilitado|Booliano|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
+|enabled|Booliano|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
 |lastConnectionDateTime|DateTimeOffset|Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.telecomExpenseManagementPartner"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.telecomExpenseManagementPartner",
@@ -43,11 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
 
 
 

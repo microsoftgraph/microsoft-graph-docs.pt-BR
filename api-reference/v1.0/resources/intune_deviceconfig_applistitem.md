@@ -6,7 +6,7 @@ Representa um aplicativo na lista de aplicativos gerenciados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|O nome do aplicativo|
+|name|Cadeia de caracteres|O nome do aplicativo|
 |distribuidor|Cadeia de caracteres|O distribuidor do aplicativo|
 |appStoreUrl|Cadeia de caracteres|A URL da loja do aplicativo|
 |appId|Cadeia de caracteres|O aplicativo ou identificador do pacote do aplicativo|
@@ -15,10 +15,11 @@ Representa um aplicativo na lista de aplicativos gerenciados
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appListItem"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.appListItem",
@@ -28,11 +29,6 @@ Veja a seguir uma representação JSON do recurso.
   "appId": "String"
 }
 ```
-
-
-
-
-
 
 
 

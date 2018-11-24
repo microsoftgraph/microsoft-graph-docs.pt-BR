@@ -1,6 +1,6 @@
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
 Crie um novo objeto [deviceManagementExchangeConnector](../resources/intune_onboarding_devicemanagementexchangeconnector.md).
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -24,8 +24,8 @@ POST /deviceManagement/exchangeConnectors
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Authorization|Bearer &lt;token&gt; obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementExchangeConnector.
@@ -36,9 +36,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagement
 |:---|:---|:---|
 |id|Cadeia de caracteres|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status do conector do Exchange. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune_onboarding_devicemanagementexchangeconnectorstatus.md)|Status de conector do Exchange. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|Cadeia de caracteres|O nome do servidor Exchange.|
+|serverName|Cadeia de caracteres|O nome do servidor do Exchange.|
 |connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune_onboarding_devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
@@ -93,11 +93,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
-
-
-
 
 
 

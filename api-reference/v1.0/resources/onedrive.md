@@ -1,6 +1,7 @@
 # <a name="working-with-files-in-microsoft-graph"></a>Trabalhando com arquivos no Microsoft Graph
 
-Você pode usar o Microsoft Graph para criar um aplicativo que se conecta a arquivos entre bibliotecas de documentos do OneDrive, OneDrive for Business e SharePoint. Com o Microsoft Graph, é possível criar uma variedade de experiências com arquivos armazenados no Office 365, desde simplesmente armazenar documentos de usuários até cenários de compartilhamento de arquivos complexos.
+Você pode usar o Microsoft Graph para criar um aplicativo que se conecta com arquivos entre OneDrive, o OneDrive for Business e SharePoint bibliotecas de documentos.
+Com o Microsoft Graph, você pode construir uma variedade de experiências com arquivos armazenados no Office 365, de simplesmente armazenar documentos do usuário para cenários de compartilhamento de arquivos complexos.
 
 O Microsoft Graph expõe dois tipos de recursos para trabalhar com arquivos:
 
@@ -11,7 +12,7 @@ Grande parte da interação com os arquivos ocorre por meio da interação com r
 
 ```json
 {
-  "@content.downloadUrl":"http://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
+  "@content.downloadUrl":"https://public-sn3302.files.1drv.com/y2pcT7OaUEExF7EHOlpTjCE55mIUoiX7H3sx1ff6I-nP35XUTBqZlnkh9FJhWb_pf9sZ7LEpEchvDznIbQig0hWBeidpwFkOqSKCwQylisarN6T0ecAeMvantizBUzM2PA1",
   "createdDateTime": "2016-09-16T03:37:04.72Z",
   "cTag": "aYzpENDY0OEYwNkM5MUQ5RDNEITU0OTI3LjI1Ng",
   "eTag": "aRDQ2NDhGMDZDOTFEOUQzRCE1NDkyNy4w",
@@ -46,21 +47,21 @@ Recursos **Drive** e **DriveItem** expõem dados de três maneiras diferentes:
 
 A maioria das solicitações de API para interações de arquivo usa um destes recursos base para acessar **Drive** ou **DriveItem**.
 
-| Caminho    | Recurso    |
-|---------|-------------|
-| `/me/drive` | OneDrive do usuário |
-| `/me/drives` | Enumerar recursos do OneDrive disponíveis para o usuário. |
-| `/drives/{drive-id}` | Acessar uma determinada **Unidade** com base na ID dessa unidade. |
-| `/drives/{drive-id}/root/children` | Enumerar os recursos **DriveItem** na raiz de um determinada **Unidade**. |
-| `/me/drive/items/{item-id}` | Acessar um **DriveItem** no OneDrive do usuário com base em sua ID exclusiva. |
-| `/me/drive/special/{special-id}` | Acessar uma pasta especial (nomeada) no OneDrive do usuário com base em seu nome conhecido. |
-| `/users/{user-id}/drive` | Acessar o OneDrive de outro usuário usando a ID exclusiva desse usuário. |
-| `/groups/{group-id}/drive` | Acessar a biblioteca de documentos padrão de um grupo com base na ID exclusiva desse grupo. |
-| `/shares/{share-id}` | Acessar **DriveItem** com base em sua **sharedId** ou URL de compartilhamento. |
+| Caminho                               | Recurso
+|------------------------------------|-----------------------------------------
+| `/me/drive`                        | OneDrive do usuário
+| `/me/drives`                       | Enumerar recursos do OneDrive disponíveis para o usuário.
+| `/drives/{drive-id}`               | Acessar uma determinada **Unidade** com base na ID dessa unidade.
+| `/drives/{drive-id}/root/children` | Enumerar os recursos **DriveItem** na raiz de um determinada **Unidade**.
+| `/me/drive/items/{item-id}`        | Acessar um **DriveItem** no OneDrive do usuário com base em sua ID exclusiva.
+| `/me/drive/special/{special-id}`   | Acessar uma pasta especial (nomeada) no OneDrive do usuário com base em seu nome conhecido.
+| `/users/{user-id}/drive`           | Acessar o OneDrive de outro usuário usando a ID exclusiva desse usuário.
+| `/groups/{group-id}/drive`         | Acessar a biblioteca de documentos padrão de um grupo com base na ID exclusiva desse grupo.
+| `/shares/{share-id}`               | Acessar **DriveItem** com base em sua **sharedId** ou URL de compartilhamento.
+| `/sites/{site-id}/drive`           | Acessar o padrão de **unidade** (biblioteca de documentos) para [SharePoint][] determinado [site][]
+| `/sites/{site-id}/drives`          | Enumerar as **unidades** (bibliotecas de documentos) em [SharePoint][] determinado [site][]
 
-Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, seu aplicativo também pode endereçar **DriveItem** com base no caminho relativo de um recurso conhecido.
-Para endereçar usando um caminho, um caractere de dois pontos (`:`) é usado para escapar o caminho relativo.
-Essa tabela fornece um exemplo de diferentes maneiras de usar o caractere de dois-pontos para endereçar um item com base no caminho.
+Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, seu aplicativo também pode endereçar **DriveItem** com base no caminho relativo de um recurso conhecido. Para endereçar usando um caminho, um caractere de dois pontos (`:`) é usado para escapar o caminho relativo. Essa tabela fornece um exemplo de diferentes maneiras de usar o caractere de dois-pontos para endereçar um item com base no caminho.
 
 | Caminho | Recurso |
 |---|---|
@@ -71,15 +72,14 @@ Essa tabela fornece um exemplo de diferentes maneiras de usar o caractere de doi
 
 ## <a name="drive-resource"></a>Recurso Drive
 
-O [recurso Drive](drive.md) é o objeto de nível superior no OneDrive de um usuário ou em uma biblioteca de documentos do SharePoint.
+O [recurso de unidade](drive.md) é o objeto de nível superior dentro de OneDrive um usuário ou uma biblioteca de documentos do [SharePoint][] .
 Quase todas as operações de arquivos serão iniciadas com o endereçamento de um recurso Drive específico.
 
 Um recurso Drive pode ser endereçado pela ID exclusiva da unidade ou pela unidade padrão de um [Usuário](user.md), [Grupo](group.md) ou organização. 
 
 ## <a name="driveitem-resource"></a>Recurso DriveItem
 
-[DriveItems](driveitem.md) são os objetos dentro do sistema de arquivos da unidade.
-Eles podem ser acessados por **id** usando a sintaxe `/items/{item-id}` ou por caminho no sistema de arquivos usando a sintaxe `/root:/path/to/item/`.
+[DriveItems](driveitem.md) são os objetos dentro do sistema de arquivos da unidade. Eles podem ser acessados por **id** usando a sintaxe `/items/{item-id}` ou por caminho no sistema de arquivos usando a sintaxe `/root:/path/to/item/`.
 
 DriveItems têm _facetas_ que fornecem dados sobre a identidades e as capacidades do item.
 
@@ -87,16 +87,15 @@ DriveItems com uma faceta **folder** atuam como contêineres de itens e têm uma
 
 ## <a name="shared-folders-and-remote-items"></a>Pastas compartilhadas e itens remotos
 
-Um usuário pessoal do OneDrive pode adicionar um ou mais itens compartilhados de outra unidade a seu próprio OneDrive.
-Esses itens compartilhados aparecem como **DriveItem** na coleção **children** com uma faceta [remoteItem](remoteitem.md).
+Um usuário pessoal do OneDrive pode adicionar um ou mais itens compartilhados de outra unidade a seu próprio OneDrive. Esses itens compartilhados aparecem como **DriveItem** na coleção **children** com uma faceta [remoteItem](remoteitem.md).
 
 Para saber mais sobre como trabalhar com pastas compartilhadas e itens remotos, confira [Itens remotos e pastas compartilhadas](remoteitem.md).   
 
 ## <a name="sharing-and-permissions"></a>Compartilhamento e permissões
 
-Uma das ações mais comuns para bibliotecas de documentos do OneDrive e do SharePoint é compartilhar conteúdo com outras pessoas.
-O Microsoft Graph permite que seu aplicativo crie [links de compartilhamento](../api/driveitem_createlink.md), [adicione permissões e envie convites](../api/driveitem_invite.md) para itens em uma unidade.
+Uma das ações mais comuns para bibliotecas de documentos do OneDrive e do SharePoint é compartilhar conteúdo com outras pessoas. O Microsoft Graph permite que seu aplicativo crie [links de compartilhamento](../api/driveitem_createlink.md), [adicione permissões e envie convites](../api/driveitem_invite.md) para itens em uma unidade.
 
 O Microsoft Graph também fornece uma maneira de seu aplicativo [acessar conteúdo compartilhado](../api/shares_get.md) diretamente de um link de compartilhamento.
 
- 
+[SharePoint]: sharepoint.md
+[site]: site.md

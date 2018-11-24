@@ -1,7 +1,7 @@
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
 
-Permite definir um sinalizador para que o usuário possa acompanhar um item posteriormente. Os itens com suporte incluem [message](message.md) e [contact](contact.md).
+Permite a definição de um sinalizador em um item para o usuário acompanhar posteriormente. 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

@@ -22,7 +22,7 @@ Ainda não documentado
 |conflictDeviceCount|Int32|Número de dispositivos em conflito.|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis.|
 |compliantUserCount|Int32|Número de usuários em conformidade.|
-|nonCompliantUserCount|Int32|Número de usuários em não conformidade.|
+|nonCompliantUserCount|Int32|Número de usuários sem conformidade.|
 |remediatedUserCount|Int32|Número de usuários corrigidos.|
 |errorUserCount|Int32|Número de usuários com erro.|
 |unknownUserCount|Int32|Número de usuários desconhecidos.|
@@ -33,12 +33,12 @@ Ainda não documentado
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.softwareUpdateStatusSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.softwareUpdateStatusSummary",
@@ -60,11 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "notApplicableUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

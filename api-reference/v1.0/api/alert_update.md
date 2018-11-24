@@ -1,8 +1,8 @@
-# <a name="update-alert"></a>Update alert
+# <a name="update-alert"></a>Atualizar alertas
 
-Atualiza uma propriedade editável **alert** dentro de qualquer solução integrada para manter o status do alerta e as tarefas atribuídas em sincronia em todas soluções. Este método atualiza qualquer solução que tenha um registro do alerta referenciado pelo ID.
+Atualize uma propriedade editável **alerta** dentro de qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções. Esse método atualiza qualquer solução que tem um registro de alerta referenciado ID.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
@@ -14,7 +14,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-> **Observação:** Você deve incluir o ID do **alerta** como parâmetro e vendorInformation contendo `provider` e `vendor` neste método.
+> **Observação:** Você deve incluir o ID de **alerta** como um parâmetro e vendorInformation contendo o `provider` e `vendor` com este método.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -25,29 +25,28 @@ PATCH /security/alerts/{alert_id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Authorization  | Portador {código}. Obrigatório.|
-|Prefer | return=representation |
+| Autorização  | Portador {código}. Obrigatório.|
+|Preferir | retornar = representação |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. O corpo **deve** conter a propriedade `vendorInformation` com os campos `provider` e `vendor` válidos. A tabela a seguir lista os campos que podem ser atualizados em um alerta. Os valores para propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar um melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, fornece uma representação JSON dos valores para os campos relevantes que devem ser atualizados. O corpo **deve** conter o `vendorInformation` propriedade com válido `provider` e `vendor` campos. A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores para propriedades existentes que não estão incluídos no corpo da solicitação não serão alterado. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|Cadeia de caracteres|Nome do analista para quem foi atribuída a triagem, investigação ou correção do alerta.|
+|assignedTo|String|Nome do analista de alerta é atribuída a triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Hora em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|comments|Coleção de cadeias de caracteres|Comentários do analista sobre o alerta (para gerenciamento de alerta do cliente).|
-|feedback|alertFeedback|Feedback do analista sobre o alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|alertStatus|Status do ciclo de vida do alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|Coleção de cadeias de caracteres|Rótulos definidos pelo usuário que podem ser aplicados a um alerta e servir como condições de filtro (por exemplo, "HVA", "SAW").|
-|vendorInformation *|[securityVendorInformation](../resources/securityvendorinformation.md)|Tipo complexo contendo detalhes sobre o produto de segurança/provedor de serviço (por exemplo, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Os campos provider e vendor são obrigatórios.**|
-(\* Indica um campo obrigatório.)
+|comentários|String collection|Comentários de analistas no alerta (para gerenciamento de alerta do cliente).|
+|comentários|alertFeedback|Comentários analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
+|status|alertStatus|Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
+|marcas|String collection|Rótulos podem ser definidos pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SERRA).|
+|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor de serviço do produto de segurança, o provedor e subprovider (por exemplo, o fornecedor = Microsoft; provider = ATP do Windows Defender; subProvider = AppLocker). **Campos de provedor e fornecedor são necessários.**|
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho opcional da solicitação for usado, o método retornará um código de resposta `200 OK` e o objeto [alert](../resources/alert.md) atualizado no corpo da resposta.
+Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto atualizado [alerta](../resources/alert.md) no corpo da resposta.
 
 ## <a name="example-1"></a>Exemplo 1
 
@@ -80,7 +79,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Resposta
 
-Este é um exemplo de uma resposta bem-sucedida.
+O exemplo a seguir é um exemplo de uma resposta bem-sucedida.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,7 +94,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que inclui o cabeçalho de solicitação `Prefer`.
+O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho de solicitação.
 
 <!-- {
   "blockType": "request",
@@ -124,7 +123,7 @@ Prefer: return=representation
 
 ### <a name="response"></a>Resposta
 
-A seguir está um exemplo da resposta quando o cabeçalho de solicitação opcional `Prefer: return=representation` é usado.
+A seguir está um exemplo da resposta quando o opcional `Prefer: return=representation` cabeçalho de solicitação é usado.
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

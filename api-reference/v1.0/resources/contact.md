@@ -4,9 +4,9 @@ Um contato é um item no Outlook no qual você pode organizar e salvar informaç
 
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas usando [extensions](../../../concepts/extensibility_overview.md).
-- Inscrever-se para receber [notificações de alteração](../../../concepts/webhooks.md).
-- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais por meio de uma função [delta](../api/contact_delta.md).
+- Adicionar seus próprios dados às propriedades personalizadas como [extensões](../../../concepts/extensibility_overview.md).
+- Assinatura de [notificações de alteração](../../../concepts/webhooks.md).
+- Usar a [consulta delta](../../../concepts/delta_query_overview.md) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contact_delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -32,45 +32,44 @@ Esse recurso permite:
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assistantName|Sequência de caracteres|O nome do assistente do contato.|
+|assistantName|String|O nome do assistente do contato.|
 |birthday|DateTimeOffset|O aniversário do contato. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |businessAddress|[PhysicalAddress](physicaladdress.md)|O endereço comercial do contato.|
-|businessHomePage|Sequência de caracteres|A home page comercial do contato.|
+|businessHomePage|String|A home page comercial do contato.|
 |businessPhones|Coleção de cadeias de caracteres|Os números de telefone comerciais do contato.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao contato.|
-|changeKey|Sequência de caracteres|Identifica a versão do contato. Toda vez que o contato muda, a ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
+|changeKey|String|Identifica a versão do contato. Toda vez que o contato muda, a ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |children|Coleção de cadeias de caracteres|Os nomes dos filhos do contato.|
-|nomeDaEmpresa|Sequência de caracteres|O nome da empresa do contato.|
+|nomeDaEmpresa|String|O nome da empresa do contato.|
 |createdDateTime|DateTimeOffset|A hora em que o contato foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|department|Sequência de caracteres|O departamento do contato.|
-|displayName|Sequência de caracteres|O nome para exibição do contato.|
+|department|String|O departamento do contato.|
+|displayName|String|O nome para exibição do contato. Você pode especificar o nome para exibição em uma operação de [criar](../api/user_post_contacts.md) ou [Atualizar](../api/contact_update.md) . Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de [atualização](../api/contact_update.md) .|
 |emailAddresses|Coleção [EmailAddress](emailaddress.md)|Os endereços de email do contato.|
-|sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|fileAs|Sequência de caracteres|O nome com o qual o contato está arquivado.|
-|generation|Sequência de caracteres|A geração do contato.|
-|givenName|Sequência de caracteres|O nome do contato.|
+|fileAs|String|O nome com o qual o contato está arquivado.|
+|generation|String|A geração do contato.|
+|givenName|String|O nome do contato.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|O endereço residencial do contato.|
 |homePhones|Coleção de cadeias de caracteres|Os números de telefone residenciais do contato.|
-|id|Sequência de caracteres|O identificador exclusivo do contato. Somente leitura.|
+|id|String|O identificador exclusivo do contato. Somente leitura.|
 |imAddresses|Coleção de cadeias de caracteres|Os endereços de mensagens instantâneas do contato.|
-|initials|Sequência de caracteres|As iniciais do contato.|
-|jobTitle|Sequência de caracteres|O cargo do contato.|
+|initials|String|As iniciais do contato.|
+|jobTitle|String|O cargo do contato.|
 |lastModifiedDateTime|DateTimeOffset|A hora em que o contato foi modificado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|manager|Sequência de caracteres|O nome do gerente do contato.
-|middleName|Sequência de caracteres|O nome do meio do contato.|
-|mobilePhone|Sequência de caracteres|O número de celular do contato.|
-|nickName|Sequência de caracteres|O apelido do contato.|
-|officeLocation|Sequência de caracteres|O local do escritório do contato.|
+|manager|String|O nome do gerente do contato.
+|middleName|String|O nome do meio do contato.|
+|mobilePhone|String|O número de celular do contato.|
+|nickName|String|O apelido do contato.|
+|officeLocation|String|O local do escritório do contato.|
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Outros endereços do contato.|
-|parentFolderId|Sequência de caracteres|A ID da pasta pai do contato.|
-|personalNotes|Sequência de caracteres|As anotações do usuário sobre o contato.|
-|profession|Sequência de caracteres|A profissão do contato.|
-|spouseName|Sequência de caracteres|O nome do cônjuge/parceiro do contato.|
-|surname|Sequência de caracteres|O sobrenome do contato.|
-|title|Sequência de caracteres|O título do contato.|
-|yomiCompanyName|Sequência de caracteres|O nome de empresa japonês fonético do contato.|
-|yomiGivenName|Sequência de caracteres|O nome japonês fonético do contato.|
-|yomiSurname|Sequência de caracteres|O sobrenome japonês fonético do contato.|
+|parentFolderId|String|A ID da pasta pai do contato.|
+|personalNotes|String|As anotações do usuário sobre o contato.|
+|profession|String|A profissão do contato.|
+|spouseName|String|O nome do cônjuge/parceiro do contato.|
+|surname|String|O sobrenome do contato.|
+|title|String|O título do contato.|
+|yomiCompanyName|String|O nome de empresa japonês fonético do contato.|
+|yomiGivenName|String|O nome japonês fonético do contato.|
+|yomiSurname|String|O sobrenome japonês fonético do contato.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -132,7 +131,6 @@ Veja a seguir uma representação JSON do recurso
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
-  "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

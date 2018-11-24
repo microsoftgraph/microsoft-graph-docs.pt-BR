@@ -24,8 +24,8 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md).
@@ -47,7 +47,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-PATCH https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
+PATCH https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEventId}
 Content-type: application/json
 Content-length: 104
 
@@ -71,7 +71,6 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
-
 
 
 

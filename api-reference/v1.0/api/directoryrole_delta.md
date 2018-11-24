@@ -1,0 +1,116 @@
+# <a name="directoryrole-delta"></a>directoryRole: delta
+
+Get recentemente criado, atualizado ou excluído funções de diretório sem precisar realizar uma leitura completa do conjunto de recurso inteiro. Consulte [Usando Delta consulta](../../../concepts/delta_query_overview.md) para obter detalhes.
+
+## <a name="permissions"></a>Permissions
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+Para começar a controlar alterações, você deve fazer uma solicitação, incluindo a função **delta** no recurso [directoryRole](../resources/directoryrole.md) .
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /directoryRoles/delta
+```
+
+## <a name="query-parameters"></a>Parâmetros de consulta
+
+Controle de alterações provoca uma round de um ou mais chamadas de função **delta** . Se você usar qualquer parâmetro de consulta (diferente de `$deltatoken` e `$skiptoken`), você deve especificá-lo na solicitação inicial **delta** . O Microsoft Graph codifica automaticamente quaisquer parâmetros especificados a parte de token do `nextLink` ou `deltaLink` URL fornecida na resposta. Você só precisa especificar uma vez os parâmetros de consulta desejados antecipadamente. Em solicitações subsequentes, copie e aplique a URL `nextLink` ou `deltaLink` da resposta anterior, já que essa URL inclui os parâmetros codificados desejados.
+
+| Parâmetro de consulta      | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+| $deltatoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornados no `deltaLink` URL da chamada de função **delta** anterior para o mesmo conjunto de recursos, indicando a conclusão do que round de controle de alterações. Salvar e aplicar a toda a `deltaLink` URL incluindo este token na primeira solicitação da próxima fase de rastreamento para esse conjunto de alterações.|
+| $skiptoken | string | Um [token de estado](../../../concepts/delta_query_overview.md) retornados no `nextLink` URL da chamada de função **delta** anterior, indicando que não há mais alterações a serem rastreados no mesmo conjunto de recursos. |
+
+### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
+
+Este método oferece suporte a OData parâmetros de consulta para ajudar a personalizar a resposta.
+
+- Você pode usar um parâmetro de consulta `$select` como em qualquer solicitação GET para especificar somente as propriedades necessárias para obter melhor desempenho. A propriedade _id_ sempre será retornada.
+
+- Não há suporte limitado para `$filter`:
+
+  - A única suportada `$filter` expression é para controle de alterações de recursos específicos, por sua id: `$filter=id+eq+{value}` ou `$filter=id+eq+{value1}+or+id+eq+{value2}`. O número de identificações, que você pode especificar é limitado pelo comprimento máximo da URL.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | &lt;Token&gt; de portador|
+| Content-Type  | application/json |
+
+## <a name="request-body"></a>Corpo da solicitação
+
+Não forneça um corpo de solicitação para esse método.
+
+### <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará `200 OK` objeto de coleção [directoryRole](../resources/directoryrole.md) e código de resposta no corpo da resposta. A resposta também inclui um `nextLink` URL ou um `deltaLink` URL.
+
+- Se um `nextLink` URL é retornado, existem páginas adicionais de dados a ser recuperado na sessão. O aplicativo continua fazendo solicitações usando o `nextLink` URL até um `deltaLink` URL está incluído na resposta.
+
+- Se um `deltaLink` URL é retornado, não há nenhum dado mais sobre o estado existente do recurso a ser retornado. Salvar `deltaLink` URL e aplicá-la na próxima chamada **delta** para saber mais sobre as alterações do recurso no futuro.
+
+### <a name="example"></a>Exemplo
+
+##### <a name="request"></a>Solicitação
+
+<!-- {
+  "blockType": "request",
+  "name": "directoryRole_delta"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/directoryRoles/delta
+```
+
+##### <a name="response"></a>Resposta
+
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- { 
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRole",
+  "isCollection": true 
+} --> 
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+      {
+      "description": "description-value",
+      "displayName": "displayName-value",
+      "roleTemplateId": "roleTemplateId-value",
+      "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="see-also"></a>Confira também
+
+- [Consulta de delta usar para rastrear alterações nos dados do Microsoft Graph](../../../concepts/delta_query_overview.md) para obter mais detalhes
+- [Obter as alterações incrementais para usuários](../../../concepts/delta_query_users.md) para solicitações de um exemplo.
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "directoryRole: delta",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

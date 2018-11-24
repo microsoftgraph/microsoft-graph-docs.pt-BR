@@ -14,8 +14,9 @@ A tabela a seguir lista a permissão sugerida necessária para cada recurso. Par
 | Mensagens                    | Mail.Read           |
 | Grupos                      | Group.Read.All      |
 | Usuários                       | User.Read.All       |
-| Unidade (OneDrive do usuário)    | Files.ReadWrite     |
-| Unidades (unidades e conteúdo compartilhados do SharePoint) | Files.ReadWrite.All |
+| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
+| Drives (conteúdo do SharePoint shared e unidades) | Files.ReadWrite.All |
+|Alerta de segurança| SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -27,13 +28,13 @@ GET /subscriptions/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método dá suporte a [Parâmetros de consulta OData](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
-| Autorização  | sequência de caracteres  | {token} de portador. Obrigatório. |
+| Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

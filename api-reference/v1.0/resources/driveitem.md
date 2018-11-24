@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 60f2d58331f349f9990f78f36f04df055ce90b9e
-ms.sourcegitcommit: abf4b739257e3ffd9d045f783ec595d846172590
-ms.translationtype: HT
+ms.openlocfilehash: d73b43b0ba1d98f496b4a1b2a606ec9f95298efa
+ms.sourcegitcommit: ebac77d2ca32438e552831de0258fe5e86fa225a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23269835"
+ms.lasthandoff: 11/17/2018
+ms.locfileid: "26602381"
 ---
 # <a name="driveitem-resource-type"></a>Tipo de recurso DriveItem
 
@@ -101,19 +101,19 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | content              | Fluxo             | O fluxo de conteúdo, se o item representar um arquivo.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
-| cTag                 | Sequência de caracteres             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
+| cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| description          | Sequência de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
-| eTag                 | Sequência de caracteres             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
+| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
 | folder               | [folder][]         | Metadados de pasta, se o item for uma pasta. Somente leitura.
-| id                   | Sequência de caracteres             | O identificador exclusivo do item na Unidade. Somente leitura.
+| id                   | String             | O identificador exclusivo do item na Unidade. Somente leitura.
 | imagem                | [image][]          | Metadados de imagem, se o item for uma imagem. Somente leitura.
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
-| name                 | Sequência de caracteres             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | Foto                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
@@ -126,8 +126,8 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | size                 | Int64              | O tamanho do item em bytes. Somente leitura.
 | specialFolder        | [specialFolder][]  | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.
 | video                | [video][]          | Metadados de vídeo, se o item for um vídeo. Somente leitura.
-| webDavUrl            | Sequência de caracteres             | URL compatível com WebDAV para o item.
-| webUrl               | Sequência de caracteres             | URL que exibe o recurso no navegador. Somente leitura.
+| webDavUrl            | String             | URL compatível com WebDAV para o item.
+| webUrl               | String             | URL que exibe o recurso no navegador. Somente leitura.
 
 **Observação:** As propriedades eTag e cTag funcionam de maneira diferente em contêineres (pastas). O valor de cTag é modificado quando o conteúdo ou os metadados de qualquer descendente da pasta são alterados. O valor de eTag é modificado apenas quando as propriedades da pasta são alteradas, exceto para propriedades derivadas de descendentes (como **childCount** ou **lastModifiedDateTime**).
 
@@ -135,14 +135,14 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 | Relação       | Tipo                        | Descrição
 |:-------------------|:----------------------------|:--------------------------
-| children           | Coleção driveItem        | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
+| children           | coleção driveItem        | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
 | createdByUser      | [user][]                    | A identidade do usuário que criou o item. Somente leitura.
 | lastModifiedByUser | [user][]                    | A identidade do usuário que modificou o item pela última vez. Somente leitura.
-| listItem           | [listItem][]                | Para as unidades no SharePoint, o item associado de lista da biblioteca de documentos. Somente leitura. Anulável.
+| listItem           | [listItem][]                | Para as unidades no SharePoint, o item de lista da biblioteca de documento associado. Somente leitura. Anulável.
 | permissions        | Coleção [permission][]   | O conjunto de permissões do item. Somente leitura. Anulável.
-| miniaturas         | Coleção [thumbnailSet][] | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obter miniaturas][]. Somente leitura. Anulável.
-| versions           | Coleção [driveItemVersion][] | Lista de versões anteriores do item. Para obter mais informações, consulte [obter de versões anteriores][]. Somente leitura. Anulável.
-| workbook           | [workbook][]                | Para arquivos de planilhas do Excel, acessa a pasta de trabalho API para trabalhar com o conteúdo da planilha. Anulável.
+| miniaturas         | Coleção [thumbnailSet][] | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.
+| versions           | coleção [driveItemVersion][] | Lista de versões anteriores do item. Para obter mais informações, consulte a [obtenção de versões anteriores][]. Somente leitura. Anulável.
+| pasta de trabalho           | [workbook][]                | Para arquivos de planilhas do Excel, acessa a pasta de trabalho API para trabalhar com o conteúdo da planilha. Anulável.
 
 ## <a name="instance-attributes"></a>Atributos de instância
 
@@ -150,9 +150,9 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 
 | Nome da propriedade                     | Tipo   | Descrição
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | sequência de caracteres | O comportamento de resolução de conflitos para ações que criam um novo item. Você pode usar os valores *fail*, *replace* ou *rename*. O padrão para PUT é *replace*. Um item nunca será retornado com essa anotação. Somente gravação.
-| @microsoft.graph.downloadUrl      | sequência de caracteres | Uma URL que pode ser usada para baixar conteúdo desse arquivo. Uma autenticação não é obrigatória com essa URL. Somente leitura.
-| @microsoft.graph.sourceUrl        | sequência de caracteres | Quando uma solicitação PUT é emitida, essa anotação de instância pode ser usada para instruir o serviço a baixar o conteúdo da URL e armazená-lo como o arquivo. Somente gravação.
+| @microsoft.graph.conflictBehavior | string | O comportamento de resolução de conflitos para ações que criam um novo item. Você pode usar os valores *fail*, *replace* ou *rename*. O padrão para PUT é *replace*. Um item nunca será retornado com essa anotação. Somente gravação.
+| @microsoft.graph.downloadUrl      | string | Uma URL que pode ser usada para baixar conteúdo desse arquivo. Uma autenticação não é obrigatória com essa URL. Somente leitura.
+| @microsoft.graph.sourceUrl        | string | Quando uma solicitação PUT é emitida, essa anotação de instância pode ser usada para instruir o serviço a baixar o conteúdo da URL e armazená-lo como o arquivo. Somente gravação.
 
 **Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache. A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
 
@@ -178,7 +178,9 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | [Adicionar permissões](../api/driveitem_invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Listar permissões](../api/driveitem_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Excluir permissão](../api/permission_delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
+[item-preview]: ../api/driveItem_preview.md
 
 ## <a name="remarks"></a>Comentários
 
@@ -192,8 +194,8 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [file]: file.md
 [fileSystemInfo]: fileSystemInfo.md
 [folder]: folder.md
-[obter versões anteriores]: ../api/driveitem_list_versions.md
-[obter miniaturas]: ../api/driveitem_list_thumbnails.md
+[obtenção de versões anteriores]: ../api/driveitem_list_versions.md
+[obtendo miniaturas]: ../api/driveitem_list_thumbnails.md
 [identitySet]: identitySet.md
 [image]: image.md
 [itemReference]: itemReference.md
@@ -211,7 +213,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [thumbnailSet]: thumbnailSet.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/users
+[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- {

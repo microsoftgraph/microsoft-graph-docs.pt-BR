@@ -24,12 +24,12 @@ Uma classe com as propriedades usadas para atribuição de grupos de um aplicati
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mobileAppAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -43,11 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
-
-
-
-
 
 
 

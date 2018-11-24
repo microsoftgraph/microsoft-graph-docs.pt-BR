@@ -34,12 +34,12 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceen
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.deviceEnrollmentConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceEnrollmentLimitConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
@@ -53,11 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "limit": 1024
 }
 ```
-
-
-
-
-
 
 
 

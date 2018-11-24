@@ -24,8 +24,8 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|application/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -37,7 +37,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e uma c
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
-GET https://graph.microsoft.com/v1/deviceManagement/troubleshootingEvents
+GET https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents
 ```
 
 ### <a name="response"></a>Resposta
@@ -58,7 +58,6 @@ Content-Length: 277
   ]
 }
 ```
-
 
 
 

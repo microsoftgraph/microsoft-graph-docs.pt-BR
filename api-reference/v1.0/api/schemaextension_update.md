@@ -37,13 +37,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
-|propriedades|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente as alterações aditivas são permitidas. |
-|status|String|O estado do ciclo de vida da extensão de esquema. O estado inicial após a criação é **InDevelopment**. As transições de estados possíveis são: de **InDevelopment** para **Available**, **Available** para **Deprecated** e **Deprecated** para **Available**.|
+|properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente as alterações aditivas são permitidas. |
+|status|String|O estado de ciclo de vida da extensão do esquema. O estado inicial após a criação é **InDevelopment**. Transições de estados possíveis vão de **InDevelopment** a **disponível** e **disponível** para **obsoleto**.|
 |targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos do Microsoft Graph (que podem suportar extensões) ao qual a extensão de esquema pode ser aplicada.  Somente as alterações aditivas são permitidas.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 

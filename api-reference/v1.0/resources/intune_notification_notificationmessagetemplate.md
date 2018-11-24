@@ -17,10 +17,10 @@ Mensagens de notificação são mensagens enviadas para usuários finais conside
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
+|lastModifiedDateTime|DateTimeOffset|Última modificação de DateTime do objeto.|
 |displayName|Cadeia de caracteres|Nome de exibição do modelo de mensagem de notificação.|
 |defaultLocale|Cadeia de caracteres|A localidade padrão para fallback quando a localidade solicitada não está disponível.|
-|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|As opções de identidade visual do modelo de mensagem. A identidade visual é definida no Console do Admin do Intune. Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
+|brandingOptions|[notificationTemplateBrandingOptions](../resources/intune_notification_notificationtemplatebrandingoptions.md)|As opções de identidade visual do modelo de mensagem. A identidade visual é definida no Console do administrador do Intune. Os valores possíveis são: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
 ## <a name="relationships"></a>Relacionamentos
 |Relação|Tipo|Descrição|
@@ -29,12 +29,12 @@ Mensagens de notificação são mensagens enviadas para usuários finais conside
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.notificationMessageTemplate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.notificationMessageTemplate",
@@ -45,11 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "brandingOptions": "String"
 }
 ```
-
-
-
-
-
 
 
 

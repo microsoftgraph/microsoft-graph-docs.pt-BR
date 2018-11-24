@@ -25,12 +25,12 @@ Ainda não documentado
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.deviceComplianceUserOverview"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceComplianceUserOverview",
@@ -44,11 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "configurationVersion": 1024
 }
 ```
-
-
-
-
-
 
 
 

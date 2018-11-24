@@ -6,17 +6,18 @@ Par chave-valor para armazenar configurações personalizadas
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|nome|Cadeia de caracteres|Nome deste par chave-valor|
-|valor|Cadeia de caracteres|Valor deste par chave-valor|
+|name|Cadeia de caracteres|Nome deste par chave-valor|
+|value|Cadeia de caracteres|Valor deste par chave-valor|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.keyValuePair"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.keyValuePair",
@@ -24,11 +25,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
-
-
-
-
-
 
 
 

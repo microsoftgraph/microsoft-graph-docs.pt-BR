@@ -24,7 +24,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -49,9 +49,10 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 Content-type: application/json
-Content-length: 48
+Content-length: 137
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionNetworkLearningSummary",
   "url": "Url value",
   "deviceCount": 11
 }
@@ -71,11 +72,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
-
-
-
-
 
 
 

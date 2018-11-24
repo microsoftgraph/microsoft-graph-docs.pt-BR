@@ -13,7 +13,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico.|
 |description|Cadeia de caracteres|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
@@ -21,8 +21,8 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |largeCover|[mimeContent](../resources/intune_shared_mimecontent.md)|Capa do livro.|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico.|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais.|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
+|informationUrl|String|A URL de informações adicionais.|
+|privacyInformationUrl|String|A URL da declaração de privacidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -34,12 +34,12 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBook"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBook",
@@ -59,11 +59,6 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-
 
 
 

@@ -20,22 +20,23 @@ Para associar um domínio a um locatário:
 
 | Método   | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
-|[Obter domínio](../api/domain_get.md) | [domínio](domain.md) | Leia as propriedades e os relacionamentos de um objeto de domínio.|
-|[Criar domínio](../api/domain_post_domains.md) | [domínio](domain.md) | Adiciona um domínio ao inquilino. |
-|[Lista domainNameReference](../api/domain_list_domainnamereferences.md) |Coleção [directoryObject](directoryobject.md)| Recupere uma lista de objetos de diretório com uma referência ao domínio.|
-|[Lista serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para configuração de domínio.|
-|[Lista verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para verificação de domínio.|
-|[Atualizar domínio](../api/domain_update.md) | [domínio](domain.md) |Atualiza um domínio.|
+|[Obter domínio](../api/domain_get.md) | [domain](domain.md) | Leia as propriedades e os relacionamentos de um objeto de domínio.|
+|[Criar domínio](../api/domain_post_domains.md) | [domain](domain.md) | Adiciona um domínio ao inquilino. |
+|[List domainNameReference](../api/domain_list_domainnamereferences.md) |Coleção [directoryObject](directoryobject.md)| Recupere uma lista de objetos de diretório com uma referência ao domínio.|
+|[List serviceConfigurationRecords](../api/domain_list_serviceconfigurationrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para configuração de domínio.|
+|[List verificationDnsRecords](../api/domain_list_verificationdnsrecords.md) |Coleção [domainDnsRecord](domaindnsrecord.md)|  Recupere uma lista dos registros DNS do domínio para verificação de domínio.|
+|[Atualizar domínio](../api/domain_update.md) | [domain](domain.md) |Atualiza um domínio.|
 |[Excluir domínio](../api/domain_delete.md) | Nenhum |Exclui um domínio.|
-|[Verificar domínio](../api/domain_verify.md)|[domínio](domain.md)|Valida a propriedade do domínio.|
+|[Domínio ForceDelete](../api/domain_forcedelete.md)|Nenhum|Exclui um domínio usando uma operação assíncrona.|
+|[Verificar domínio](../api/domain_verify.md)|[domain](domain.md)|Valida a propriedade do domínio.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|authenticationType|Sequência de caracteres| Indica o tipo de autenticação configurado para o domínio. O valor será *Gerenciado* ou *Federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem, no qual o Azure AD realiza autenticação do usuário.<br>*Federada* indica que a autenticação é federada com um provedor de identidade como o Active Directory do locatário no local pelos Serviços de Federação do Active Directory. Não anulável |
-|availabilityStatus|Sequência de caracteres| Essa propriedade é sempre nula, exceto quando a ação [verify](../api/domain_verify.md) é usada. Quando a ação [verify](../api/domain_verify.md) é usada, uma entidade **domain** é retornada na resposta. A propriedade **availabilityStatus** da entidade **domain** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
-|id|Sequência de caracteres| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusivo |
+|authenticationType|String| Indica o tipo de autenticação configurado para o domínio. O valor será *Gerenciado* ou *Federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem, no qual o Azure AD realiza autenticação do usuário.<br>*Federada* indica que a autenticação é federada com um provedor de identidade como o Active Directory do locatário no local pelos Serviços de Federação do Active Directory. Não anulável |
+|availabilityStatus|String| Essa propriedade é sempre nula, exceto quando a ação [verify](../api/domain_verify.md) é usada. Quando a ação [verify](../api/domain_verify.md) é usada, uma entidade **domain** é retornada na resposta. A propriedade **availabilityStatus** da entidade **domain** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
+|id|String| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusivo |
 |isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio foi delegado para o Office 365. Caso contrário, o valor é verdadeiro. Não anulável |
 |isDefault|Booliano| True se este é o domínio padrão usado para a criação de usuário. Há apenas um domínio padrão por empresa. Não anulável |
 |isInitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (nomedaempresa.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |

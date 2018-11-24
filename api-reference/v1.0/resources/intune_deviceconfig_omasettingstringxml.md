@@ -19,10 +19,11 @@ Herda de [omaSetting](../resources/intune_deviceconfig_omasetting.md)
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingStringXml"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.omaSettingStringXml",
@@ -33,11 +34,6 @@ Veja a seguir uma representação JSON do recurso.
   "value": "binary"
 }
 ```
-
-
-
-
-
 
 
 

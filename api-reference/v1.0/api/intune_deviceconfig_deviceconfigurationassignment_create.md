@@ -24,7 +24,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -35,7 +35,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da atribuição.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 
 
 
@@ -73,11 +73,6 @@ Content-Length: 218
   }
 }
 ```
-
-
-
-
-
 
 
 

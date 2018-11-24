@@ -17,18 +17,18 @@ Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|O destino da atribuição do livro eletrônico.|
-|installIntent|[installIntent](../resources/intune_shared_installintent.md)|A intenção de instalação para eBook. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune_shared_installintent.md)|A tentativa de instalação do livro eletrônico. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedEBookAssignment"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
@@ -39,11 +39,6 @@ Veja a seguir uma representação JSON do recurso.
   "installIntent": "String"
 }
 ```
-
-
-
-
-
 
 
 

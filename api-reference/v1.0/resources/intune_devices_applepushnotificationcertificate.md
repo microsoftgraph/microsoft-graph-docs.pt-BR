@@ -24,12 +24,12 @@ Certificado de notificação por push da Apple.
 Nenhum
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.applePushNotificationCertificate"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -41,11 +41,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "String"
 }
 ```
-
-
-
-
-
 
 
 

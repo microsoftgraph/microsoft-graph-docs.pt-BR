@@ -1,4 +1,4 @@
-# <a name="get-windows10generalconfiguration"></a>Obter o windows10GeneralConfiguration
+# <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
 
@@ -22,11 +22,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -47,7 +47,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10356
+Content-Length: 10423
 
 {
   "value": {
@@ -281,15 +281,11 @@ Content-Length: 10356
     "experienceBlockDeviceDiscovery": true,
     "experienceBlockErrorDialogWhenNoSIM": true,
     "experienceBlockTaskSwitcher": true,
-    "logonBlockFastUserSwitching": true
+    "logonBlockFastUserSwitching": true,
+    "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
   }
 }
 ```
-
-
-
-
-
 
 
 

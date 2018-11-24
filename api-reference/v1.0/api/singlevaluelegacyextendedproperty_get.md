@@ -12,125 +12,132 @@ Maiúsculas e minúsculas são diferenciadas ao filtrar o nome de cadeia de cara
 
 Há suporte para os seguintes recursos de usuário:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [evento](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md) 
 
 Também há suporte para os seguintes recursos de grupo:
 
-- grupo [event](../resources/event.md)
 - grupo [calendar](../resources/calendar.md)
+- grupo [event](../resources/event.md)
 - grupo [post](../resources/post.md) 
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Uma das permissões a seguir é obrigatória para chamar esta API, dependendo do recurso que você está obtendo. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+Dependendo do recurso estiver recebendo a propriedade estendida da e a permissão digite (delegada ou aplicativos) você solicitação, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-- Mail.Read
-- Calendars.Read
-- Contacts.Read
-- Group.Read.All 
+| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [evento](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| grupo [calendar](../resources/calendar.md) | Group.Read.All | Sem suporte | Sem suporte |
+| grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
+| grupo [post](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 #### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a>Instância de recurso GET expandida com uma propriedade estendida que corresponde a um filtro
-Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.
+Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.
 
-Obter uma instância de **message** : <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **mensagem** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtenha uma instância de **mailFolder**: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **mailFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Obtenha uma instância de **event**: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância do **evento** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtenha uma instância de **calendar**: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **calendário** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtenha uma instância de **contact**: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **contato** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtenha uma instância de **contactFolder**: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **contactFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Obtenha uma instância de **group event**: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **evento** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Obter uma instância de **post** de grupo: <!-- { "blockType": "ignored" } -->
+Obtenha uma instância de **postagem** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Instâncias de recurso GET que incluem as propriedades estendidas numéricas que correspondem a um filtro
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a>Instâncias de recurso GET que incluem as propriedades estendidas numéricas que correspondem a um filtro.
 
-Acesse as instâncias de um recurso com suporte que têm uma propriedade estendida numérica que corresponde a um filtro. O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **value**: `eq`, `ne`,`ge`, `gt`, `le` ou `lt`. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.
+Acesse as instâncias de um recurso com suporte que têm uma propriedade estendida numérica que corresponde a um filtro. O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **value**: `eq`, `ne`,`ge`, `gt`, `le` ou `lt`. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.
 
-As linhas de sintaxe a seguir mostram um filtro que usa um operador `eq` na id e outro operador `eq` no valor da propriedade. Você pode substituir o operador `eq` no **valor** por qualquer um dos outros operadores (`ne`,`ge`, `gt`, `le` ou `lt`) que se aplicam aos valores numéricos.
+As linhas de sintaxe a seguir mostram um filtro que usa um operador `eq` na id e outro operador `eq` no valor da propriedade. Você pode substituir o operador `eq` no **value** por qualquer um dos outros operadores (`ne`,`ge`, `gt`, `le` ou `lt`) que se aplicam aos valores numéricos.
 
-Obter instâncias de **message** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **mensagem** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Obter instâncias de **mailFolder** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **mailFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Obter instâncias de **event** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **evento** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Obter instâncias de **calendar** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **calendário** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Obter instâncias de **contact** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **contato** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Obter instâncias de **contactFolder** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **contactFolder** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-Obter instâncias de **event** de grupo: <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **eventos** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-Obter instâncias de **post** de grupo: <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **postagem** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -138,10 +145,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtend
 
 #### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a>Instâncias de recurso GET com propriedades estendidas de cadeia de caracteres digitados que correspondem a um filtro
 
-Acesse as instâncias do recurso **message** ou **event** que têm uma propriedade estendida de cadeia de caracteres digitados que correspondem a um filtro. O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **valor**: `contains`, `startswith`, `eq` ou `ne`. Aplique a [codificação de URL](http://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de caracteres de filtro: dois pontos, barra inclinada e espaço.
+Acesse as instâncias do recurso **message** ou **event** que têm uma propriedade estendida de cadeia de caracteres digitados que correspondem a um filtro. O filtro usa um operador `eq` na propriedade **id** e um dos seguintes operadores na propriedade **valor**: `contains`, `startswith`, `eq` ou `ne`. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos seguintes caracteres na cadeia de filtro: dois pontos, barra inclinada e espaço.
 
 
-Obter instâncias de **message** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **mensagem** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -160,7 +167,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-Obter instâncias de **event** : <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **evento** :<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -175,7 +182,7 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-Obter instâncias de **event** de grupo: <!-- { "blockType": "ignored" } -->
+Obtenha as instâncias de **eventos** de grupo:<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and startswith(ep/value, '{property_value}'))
@@ -186,8 +193,8 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id_value|Cadeia de caracteres|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
-|property_value |Cadeia de caracteres|O valor da propriedade estendida a ser correspondida. Obrigatório quando indicado na seção **Solicitação HTTP** acima. Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}. Confira exemplos na [solicitação 4](#request-4) abaixo. |
+|id_value|String|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|property_value |String|O valor da propriedade estendida a ser correspondida. Obrigatório quando indicado na seção **Solicitação HTTP** acima. Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}. Confira exemplos na [solicitação 4](#request-4) abaixo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

@@ -1,14 +1,14 @@
 # <a name="get-contact"></a>Obter contato
 
-Recuperar propriedades e relacionamentos de um objeto contact.
+Recupere as propriedades e os relacionamentos do objeto contact.
 
-Há dois cenários em que um aplicativo pode obter um contato na pasta de contatos de outro usuário:
+Há dois cenários em que um aplicativo pode receber um contato na pasta de contatos de outro usuário:
 
-* Se o aplicativo tiver permissões de aplicativo ou,
-* Se o aplicativo tiver as [permissões](#permissions) apropriadas delegadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com o primeiro usuário ou, tiver dado acesso delegado a ele. Confira os [detalhes e um exemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
+* Se o aplicativo tem permissões de aplicativo, ou,
+* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](../../../concepts/outlook-get-shared-contacts-folders.md).
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -18,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } --> Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) padrão do usuário.
+<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) do padrão de um usuário [contactFolder](../resources/contactfolder.md).
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
@@ -36,8 +36,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$expand|sequência de caracteres|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
-|$select|sequência de caracteres|Lista separada por vírgulas de propriedades para incluir na resposta.|
+|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
+|$select|string|Lista separada por vírgulas de propriedades para incluir na resposta.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -106,7 +106,7 @@ Content-length: 1977
   "department": "Sales & Marketing",
   "officeLocation": "20/1101",
   "profession": null,
-  "businessHomePage": "http://www.contoso.com",
+  "businessHomePage": "https://www.contoso.com",
   "assistantName": null,
   "manager": null,
   "homePhones": [],

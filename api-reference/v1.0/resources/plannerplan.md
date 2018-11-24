@@ -6,7 +6,7 @@ O recurso **plannerPlan** representa um plano no Office 365. Um plano pode perte
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Leia as propriedades e as relações do objeto **plannerPlan**.|
+|[Get plannerPlan](../api/plannerplan_get.md) | [plannerPlan](plannerplan.md) |Leia as propriedades e as relações do objeto **plannerPlan**.|
 |[Listar buckets](../api/plannerplan_list_buckets.md) |Coleção [plannerBucket](plannerbucket.md)| Obter uma coleção de objetos **plannerBucket**.|
 |[Listar tarefas](../api/plannerplan_list_tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
 |[Atualizar](../api/plannerplan_update.md) | [plannerPlan](plannerplan.md) |Atualize o objeto **plannerPlan**. |
@@ -15,9 +15,9 @@ O recurso **plannerPlan** representa um plano no Office 365. Um plano pode perte
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|Cadeia de caracteres| Somente leitura. ID do plano. Tem 28 caracteres de comprimento e diferencia maiúsculas de minúsculas. A[validação de formato](planner_identifiers_disclaimer.md) é feita no serviço.|
-|proprietário|Cadeia de caracteres|A ID do [Grupo](group.md) que possui o plano. Deve haver um grupo válido para que esse campo possa ser definido. Após definido, ele só poderá ser atualizado pelo proprietário.|
-|título|Cadeia de caracteres|Obrigatório. Título do plano.|
+|id|String| Somente leitura. ID do plano. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner_identifiers_disclaimer.md) é feita no serviço.|
+|owner|String|ID do [grupo](group.md) que possui o plano. Um grupo válido deve existir antes que esse campo pode ser definido. Depois que ele for definido, essa propriedade não pode ser atualizada.|
+|title|String|Obrigatório. Título do plano.|
 |createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
 
 ## <a name="relationships"></a>Relações

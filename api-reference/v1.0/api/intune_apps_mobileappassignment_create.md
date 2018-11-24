@@ -24,8 +24,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|aplicativo/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto mobileAppAssignment.
@@ -35,8 +35,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da entidade.|
-|intent|[installIntent](../resources/intune_shared_installintent.md)|A finalidade da instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
-|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
+|finalidade|[installIntent](../resources/intune_shared_installintent.md)|A finalidade da instalação definida pelo administrador. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune_shared_deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 |configurações|[mobileAppAssignmentSettings](../resources/intune_apps_mobileappassignmentsettings.md)|As configurações para a atribuição de destino definida pelo administrador.|
 
 
@@ -83,11 +83,6 @@ Content-Length: 322
   }
 }
 ```
-
-
-
-
-
 
 
 

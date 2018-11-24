@@ -4,29 +4,36 @@ Crie uma ou mais propriedades estendidas de vários valores em uma instância no
 
 Há suporte para as seguintes fontes de dados:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
+- [evento](../resources/event.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 Também há suporte para os seguintes recursos de grupo:
 
-- grupo [event](../resources/event.md)
 - grupo [calendar](../resources/calendar.md)
+- grupo [event](../resources/event.md)
 - grupo [post](../resources/post.md) 
 
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso no qual você está criando a propriedade estendida. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+Dependendo do recurso, você está criando a propriedade estendida no e a permissão digite (delegada ou aplicativos) você solicitação, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-- Mail.ReadWrite
-- Calendars.ReadWrite
-- Contacts.ReadWrite
-- Group.ReadWrite.All
- 
+| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicativo |
+|:-----|:-----|:-----|:-----|
+| [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
+| grupo [calendar](../resources/calendar.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+| grupo [event](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+| grupo [post](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+
 ## <a name="http-request"></a>Solicitação HTTP
 Você pode criar propriedades estendidas em uma instância de recurso nova ou existente.
 
@@ -106,8 +113,8 @@ Forneça um corpo JSON de cada objeto [singleValueLegacyExtendedProperty](../res
 |Propriedade|Tipo|Descrição|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](../resources/singleValueLegacyExtendedProperty.md)| Uma matriz de uma ou mais propriedades estendidas de valor único. |
-|id|Sequência de caracteres|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
-|valor|sequência de caracteres|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
+|id|String|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|valor|string|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
 Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **singleValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 

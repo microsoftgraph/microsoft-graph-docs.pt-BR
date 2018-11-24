@@ -1,26 +1,30 @@
 # <a name="create-open-extension"></a>Criar extensão aberta
 
-Criar uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.
+Crie uma extensão aberta (objeto [openTypeExtension](../resources/openTypeExtension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso.
 
-> **Observação:** Se você estiver criando extensões abertas nos recursos do Outlook, consulte **Considerações específicas do Outlook** em [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
+> **Observação:** Se você estiver criando extensões open nos recursos do Outlook, consulte **Considerações específicas do Outlook** em [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
-Uma das seguintes permissões é necessária para chamar essa API, dependendo do recurso no qual você está criando a extensão. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
+Dependendo do recurso que você está criando a extensão na e a permissão tipo (delegado ou aplicativo) solicitada, a permissão especificada na tabela a seguir é o menos privilegiada necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](../../../concepts/permissions_reference.md).
 
-|**Recurso com suporte**|**Permissão**|**Recurso com suporte**|**Permissão** |
+| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
-| [dispositivo](../resources/device.md) | Device.ReadWrite.All | [evento](../resources/event.md) | Calendars.ReadWrite |
-| [grupo](../resources/group.md) | Group.ReadWrite.All | [evento de grupo](../resources/event.md) | Group.ReadWrite.All |
-| [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | [mensagem](../resources/message.md) | Mail.ReadWrite |
-| [organização](../resources/organization.md) | Directory.AccessAsUser.All | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite |
-| [usuário](../resources/user.md) | Directory.AccessAsUser.All | | |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
+| [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [grupo](../resources/group.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
+| [evento de grupo](../resources/event.md) | Group.ReadWrite.All | Sem suporte | Sem suporte |
+| [postagem de grupo](../resources/post.md) | Group.ReadWrite.All | Sem suporte | Group.ReadWrite.All |
+| [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
+| [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [usuário](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-### <a name="create-an-extension-in-a-new-resource-instance"></a>Criar uma extensão em uma nova instância de recurso
+### <a name="create-an-extension-in-a-new-resource-instance"></a>Crie uma extensão em uma nova instância de recurso
 
-Usar a mesma solicitação REST que você usa para criar a instância.
+Use a mesma solicitação REST que você usa para criar a instância.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -31,9 +35,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Observação:** Esta sintaxe mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem que você crie essas instâncias de recurso suportam a criação de extensões abertas de forma semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permite que você crie essas instâncias de recurso suporta as extensões de open criação de forma semelhante.
 
-Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância de recurso _e a extensão_ no corpo da solicitação.
+Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Crie uma extensão em uma instância de recurso existente
 
@@ -52,14 +56,14 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, para criar uma extensão nela. Todas as outras sintaxes POST que permitem que você crie essas instâncias de recurso suportam a criação de extensões abertas de forma semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, para criar uma extensão nela. Oferece suporte a todas as outras sintaxes que permite que você identifique essas instâncias de recurso, Criando extensões open de forma semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |Parâmetro|Tipo|Descrição|
 |:-----|:-----|:-----|
-|id|sequência de caracteres|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
+|id|string|Um identificador exclusivo para um objeto na coleção correspondente. Obrigatório.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -72,7 +76,7 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 
 Forneça um corpo JSON de uma [openTypeExtension](../resources/openTypeExtension.md), com os seguintes pares de nome/valor obrigatórios e dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
-| Nome       | Valor |
+| Name       | Valor |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
@@ -85,8 +89,8 @@ Ao criar uma extensão em uma _nova_ instância de recursos, além de novos obje
 
 Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.
 
-Quando você cria uma extensão usando a mesma operação que usa para criar uma instância de recurso, a operação retorna o mesmo código de resposta ao usar a operação para criar a instância de recurso sem a extensão.
-Consulte os tópicos correspondentes para criar a instância, como listados [acima](#create-an-extension-in-a-new-resource-instance).
+Quando você cria uma extensão usando a mesma operação que você pode usar para criar uma instância de recurso, a operação retorna o código de resposta mesmo que ele retorna ao usar a operação para criar a instância de recurso sem a extensão.
+Consulte os tópicos correspondentes para criar a instância, como listadas [acima](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Corpo da resposta
 
@@ -107,7 +111,7 @@ O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo d
 
   - O tipo `microsoft.graph.openTypeExtension`.
   - O nome da extensão "Com.Contoso.Referral".
-  - Dados adicionais a serem armazenados como três propriedades personalizadas na carga JSON: `companyName`, `expirationDate` e `dealValue`.
+  - Dados adicionais a serem armazenados como três propriedades personalizadas na carga JSON: `companyName`, `expirationDate`, e `dealValue`.
 
 <!-- {
   "blockType": "ignored",

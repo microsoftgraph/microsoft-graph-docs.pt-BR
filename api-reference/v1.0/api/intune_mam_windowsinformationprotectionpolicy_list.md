@@ -24,8 +24,8 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
-|Autorização|Token&gt; de portador obrigatório.&lt;|
-|Aceitar|aplicativo/json|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -45,7 +45,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5155
+Content-Length: 5158
 
 {
   "value": [
@@ -77,7 +77,7 @@ Content-Length: 5155
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+      "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [
@@ -191,11 +191,6 @@ Content-Length: 5155
   ]
 }
 ```
-
-
-
-
-
 
 
 
