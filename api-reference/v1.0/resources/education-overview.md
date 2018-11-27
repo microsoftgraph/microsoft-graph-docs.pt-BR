@@ -49,7 +49,7 @@ As APIs de escalação dão suporte aos seguintes cenários:
 - [Listar todas as escolas](../api/educationroot_list_schools.md) 
 - [Listar escolas nas quais uma aula é ministrada](../api/educationclass_list_schools.md)
 - [Listar escolas para um usuário](../api/educationuser_list_schools.md)
-- [Obter todas as aulas](../api/educationroot_list_classes.md )
+- [Obter todas as aulas](../api/educationroot_list_classes.md)
 - [Obter aulas em um escola](../api/educationschool_list_classes.md)
 - [Listar aulas para um usuário](../api/educationuser_list_classes.md)
 - [Adicionar aulas a uma escola](../api/educationschool_post_classes.md)
