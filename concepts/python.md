@@ -1,3 +1,0 @@
-<span data-ttu-id="167e5-p110">A API do Microsoft Graph é uma API unificadora muito poderosa que pode ser usada para interagir com todos os tipos de dados da Microsoft. Confira a referência de API para explorar o que mais você pode fazer com o Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="167e5-p110">The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the API reference to explore what else you can accomplish with Microsoft Graph.</span></span>
-
-A API do Microsoft Graph é uma API unificadora muito poderosa que pode ser usada para interagir com todos os tipos de dados da Microsoft. Confira a referência de API para explorar o que mais você pode fazer com o Microsoft Graph.
