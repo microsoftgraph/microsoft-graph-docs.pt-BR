@@ -1,0 +1,72 @@
+---
+title: Tipo de recurso deviceManagementPartner
+description: Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivos.
+ms.openlocfilehash: c682b700636ad80f20719e40f35a929cf740c7a0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039926"
+---
+# <a name="devicemanagementpartner-resource-type"></a>Tipo de recurso deviceManagementPartner
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Entidade que representa uma conexão ao parceiro de gerenciamento de dispositivos.
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar deviceManagementPartners](../api/intune-onboarding-devicemanagementpartner-list.md)|Conjunto [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Listar propriedades e relações de objetos de [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
+|[Obter deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-get.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Ler propriedades e relações de objetos de [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
+|[Criar deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-create.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Crie um novo objeto de [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
+|[Excluir deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-delete.md)|Nenhum|Excluir [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
+|[Atualizar deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Atualizar as propriedades de um objeto de [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
+
+## <a name="properties"></a>Propriedades
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Ainda não documentado|
+|lastHeartbeatDateTime|DateTimeOffset|Carimbo de data/hora da última pulsação após a opção de administrador habilitado conectar-se ao parceiro de gerenciamento de dispositivo|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Estado de parceiro deste locatário. Os possíveis valores são: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Tipo de aplicativo de parceiro. Os valores possíveis são: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|singleTenantAppId|Cadeia de caracteres|Id do aplicativo do único locatário do parceiro|
+|displayName|Cadeia de caracteres|Nome de exibição de parceiro|
+|isConfigured|Booliano|Se o parceiro de gerenciamento de dispositivo está configurado ou não|
+|whenPartnerDevicesWillBeRemoved|DateTimeOffset|Data e hora em UTC quando PartnerDevices serão removidas. Isso tornará obsoleto em breve.|
+|whenPartnerDevicesWillBeMarkedAsNonCompliant|DateTimeOffset|Data e hora em UTC quando PartnerDevices será marcada como incompatível. Isso tornará obsoleto em breve.|
+|whenPartnerDevicesWillBeRemovedDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for removido|
+|whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime|DateTimeOffset|DateTime no UTC quando PartnerDevices for marcado como não compatível|
+
+## <a name="relationships"></a>Relações
+Nenhum
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementPartner"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementPartner",
+  "id": "String (identifier)",
+  "lastHeartbeatDateTime": "String (timestamp)",
+  "partnerState": "String",
+  "partnerAppType": "String",
+  "singleTenantAppId": "String",
+  "displayName": "String",
+  "isConfigured": true,
+  "whenPartnerDevicesWillBeRemoved": "String (timestamp)",
+  "whenPartnerDevicesWillBeMarkedAsNonCompliant": "String (timestamp)",
+  "whenPartnerDevicesWillBeRemovedDateTime": "String (timestamp)",
+  "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
+}
+```
+
+
+
+
+
