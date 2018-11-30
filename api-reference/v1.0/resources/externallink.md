@@ -1,10 +1,20 @@
-# <a name="externallink-resource-type"></a>Tipo de recurso externalLink
+---
+title: Tipo de recurso externalLink
+description: Uma url que abre uma página do OneNote ou o bloco de anotações.
+ms.openlocfilehash: ae25c6220545ff55259a18b6180225cc602e129b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004288"
+---
+# <a name="externallink-resource-type"></a><span data-ttu-id="5da29-103">Tipo de recurso externalLink</span><span class="sxs-lookup"><span data-stu-id="5da29-103">externalLink resource type</span></span>
 
-Uma url que abre uma página do OneNote ou o bloco de anotações.
+<span data-ttu-id="5da29-104">Uma url que abre uma página do OneNote ou o bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="5da29-104">A url that opens a OneNote page or notebook.</span></span>
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="5da29-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5da29-105">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="5da29-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="5da29-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -20,10 +30,10 @@ Veja a seguir uma representação JSON do recurso
 }
 
 ```
-## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## <a name="properties"></a><span data-ttu-id="5da29-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5da29-107">Properties</span></span>
+| <span data-ttu-id="5da29-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5da29-108">Property</span></span>     | <span data-ttu-id="5da29-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="5da29-109">Type</span></span>   |<span data-ttu-id="5da29-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="5da29-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|href|String|A URL do link.|
+|<span data-ttu-id="5da29-111">href</span><span class="sxs-lookup"><span data-stu-id="5da29-111">href</span></span>|<span data-ttu-id="5da29-112">String</span><span class="sxs-lookup"><span data-stu-id="5da29-112">String</span></span>|<span data-ttu-id="5da29-113">A URL do link.</span><span class="sxs-lookup"><span data-stu-id="5da29-113">The url of the link.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
