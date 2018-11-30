@@ -1,0 +1,145 @@
+---
+title: Criar activeDirectoryWindowsAutopilotDeploymentProfile
+description: Crie um novo objeto de activeDirectoryWindowsAutopilotDeploymentProfile.
+ms.openlocfilehash: f5f0bca53cd45d060c8a2619ffd4b851a106e59b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27035745"
+---
+# <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a><span data-ttu-id="709df-103">Criar activeDirectoryWindowsAutopilotDeploymentProfile</span><span class="sxs-lookup"><span data-stu-id="709df-103">Create activeDirectoryWindowsAutopilotDeploymentProfile</span></span>
+
+> <span data-ttu-id="709df-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="709df-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="709df-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="709df-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="709df-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="709df-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+
+<span data-ttu-id="709df-107">Crie um novo objeto de [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="709df-107">Create a new [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="709df-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="709df-108">Prerequisites</span></span>
+<span data-ttu-id="709df-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="709df-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="709df-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="709df-111">Permission type</span></span>|<span data-ttu-id="709df-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="709df-112">Permissions (from most to least privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="709df-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="709df-113">Delegated (work or school account)</span></span>|<span data-ttu-id="709df-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="709df-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="709df-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="709df-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="709df-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="709df-116">Not supported.</span></span>|
+|<span data-ttu-id="709df-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="709df-117">Application</span></span>|<span data-ttu-id="709df-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="709df-118">Not supported.</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="709df-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="709df-119">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/windowsAutopilotDeploymentProfiles
+```
+
+## <a name="request-headers"></a><span data-ttu-id="709df-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="709df-120">Request headers</span></span>
+|<span data-ttu-id="709df-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="709df-121">Header</span></span>|<span data-ttu-id="709df-122">Valor</span><span class="sxs-lookup"><span data-stu-id="709df-122">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="709df-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="709df-123">Authorization</span></span>|<span data-ttu-id="709df-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="709df-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="709df-125">Accept</span><span class="sxs-lookup"><span data-stu-id="709df-125">Accept</span></span>|<span data-ttu-id="709df-126">application/json</span><span class="sxs-lookup"><span data-stu-id="709df-126">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="709df-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="709df-127">Request body</span></span>
+<span data-ttu-id="709df-128">No corpo da solicitação, fornece uma representação JSON para o objeto activeDirectoryWindowsAutopilotDeploymentProfile.</span><span class="sxs-lookup"><span data-stu-id="709df-128">In the request body, supply a JSON representation for the activeDirectoryWindowsAutopilotDeploymentProfile object.</span></span>
+
+<span data-ttu-id="709df-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o activeDirectoryWindowsAutopilotDeploymentProfile.</span><span class="sxs-lookup"><span data-stu-id="709df-129">The following table shows the properties that are required when you create the activeDirectoryWindowsAutopilotDeploymentProfile.</span></span>
+
+|<span data-ttu-id="709df-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="709df-130">Property</span></span>|<span data-ttu-id="709df-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="709df-131">Type</span></span>|<span data-ttu-id="709df-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="709df-132">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="709df-133">id</span><span class="sxs-lookup"><span data-stu-id="709df-133">id</span></span>|<span data-ttu-id="709df-134">String</span><span class="sxs-lookup"><span data-stu-id="709df-134">String</span></span>|<span data-ttu-id="709df-135">Herdado de chave de perfil de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-135">Profile Key Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-136">displayName</span><span class="sxs-lookup"><span data-stu-id="709df-136">displayName</span></span>|<span data-ttu-id="709df-137">String</span><span class="sxs-lookup"><span data-stu-id="709df-137">String</span></span>|<span data-ttu-id="709df-138">Nome do perfil Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-138">Name of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-139">description</span><span class="sxs-lookup"><span data-stu-id="709df-139">description</span></span>|<span data-ttu-id="709df-140">String</span><span class="sxs-lookup"><span data-stu-id="709df-140">String</span></span>|<span data-ttu-id="709df-141">Descrição do perfil de Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-141">Description of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-142">idioma</span><span class="sxs-lookup"><span data-stu-id="709df-142">language</span></span>|<span data-ttu-id="709df-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="709df-143">String</span></span>|<span data-ttu-id="709df-144">Idioma configurado no dispositivo Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-144">Language configured on the device Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="709df-145">createdDateTime</span></span>|<span data-ttu-id="709df-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="709df-146">DateTimeOffset</span></span>|<span data-ttu-id="709df-147">Hora da criação do perfil Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-147">Profile creation time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="709df-148">lastModifiedDateTime</span></span>|<span data-ttu-id="709df-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="709df-149">DateTimeOffset</span></span>|<span data-ttu-id="709df-150">Perfil da última modificação tempo Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-150">Profile last modified time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-151">outOfBoxExperienceSettings</span><span class="sxs-lookup"><span data-stu-id="709df-151">outOfBoxExperienceSettings</span></span>|[<span data-ttu-id="709df-152">outOfBoxExperienceSettings</span><span class="sxs-lookup"><span data-stu-id="709df-152">outOfBoxExperienceSettings</span></span>](../resources/intune-enrollment-outofboxexperiencesettings.md)|<span data-ttu-id="709df-153">Configuração inicial pelo usuário Inherited a definição de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-153">Out of box experience setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-154">enrollmentStatusScreenSettings</span><span class="sxs-lookup"><span data-stu-id="709df-154">enrollmentStatusScreenSettings</span></span>|[<span data-ttu-id="709df-155">windowsEnrollmentStatusScreenSettings</span><span class="sxs-lookup"><span data-stu-id="709df-155">windowsEnrollmentStatusScreenSettings</span></span>](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|<span data-ttu-id="709df-156">Configuração Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) de tela de status de inscrição</span><span class="sxs-lookup"><span data-stu-id="709df-156">Enrollment status screen setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-157">extractHardwareHash</span><span class="sxs-lookup"><span data-stu-id="709df-157">extractHardwareHash</span></span>|<span data-ttu-id="709df-158">Booliano</span><span class="sxs-lookup"><span data-stu-id="709df-158">Boolean</span></span>|<span data-ttu-id="709df-159">Extração de HardwareHash para o perfil Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-159">HardwareHash Extraction for the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+|<span data-ttu-id="709df-160">deviceNameTemplate</span><span class="sxs-lookup"><span data-stu-id="709df-160">deviceNameTemplate</span></span>|<span data-ttu-id="709df-161">String</span><span class="sxs-lookup"><span data-stu-id="709df-161">String</span></span>|<span data-ttu-id="709df-162">O modelo usado para nomear o dispositivo piloto automático.</span><span class="sxs-lookup"><span data-stu-id="709df-162">The template used to name the AutoPilot Device.</span></span> <span data-ttu-id="709df-163">Isso pode ser um texto personalizado e também pode conter o número de série do dispositivo, ou um número gerado aleatoriamente.</span><span class="sxs-lookup"><span data-stu-id="709df-163">This can be a custom text and can also contain either the serial number of the device, or a randomly generated number.</span></span> <span data-ttu-id="709df-164">O comprimento total do texto gerado pelo modelo pode ser mais do que 15 caracteres.</span><span class="sxs-lookup"><span data-stu-id="709df-164">The total length of the text generated by the template can be no more than 15 characters.</span></span> <span data-ttu-id="709df-165">Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span><span class="sxs-lookup"><span data-stu-id="709df-165">Inherited from [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)</span></span>|
+
+
+
+## <a name="response"></a><span data-ttu-id="709df-166">Resposta</span><span class="sxs-lookup"><span data-stu-id="709df-166">Response</span></span>
+<span data-ttu-id="709df-167">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="709df-167">If successful, this method returns a `201 Created` response code and a [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="709df-168">Exemplo</span><span class="sxs-lookup"><span data-stu-id="709df-168">Example</span></span>
+### <a name="request"></a><span data-ttu-id="709df-169">Solicitação</span><span class="sxs-lookup"><span data-stu-id="709df-169">Request</span></span>
+<span data-ttu-id="709df-170">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="709df-170">Here is an example of the request.</span></span>
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles
+Content-type: application/json
+Content-length: 1108
+
+{
+  "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "language": "Language value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "outOfBoxExperienceSettings": {
+    "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
+    "hidePrivacySettings": true,
+    "hideEULA": true,
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "skipKeyboardSelectionPage": true,
+    "hideEscapeLink": true
+  },
+  "enrollmentStatusScreenSettings": {
+    "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
+    "hideInstallationProgress": true,
+    "allowDeviceUseBeforeProfileAndAppInstallComplete": true,
+    "blockDeviceSetupRetryByUser": true,
+    "allowLogCollectionOnInstallFailure": true,
+    "customErrorMessage": "Custom Error Message value",
+    "installProgressTimeoutInMinutes": 15,
+    "allowDeviceUseOnInstallFailure": true
+  },
+  "extractHardwareHash": true,
+  "deviceNameTemplate": "Device Name Template value"
+}
+```
+
+### <a name="response"></a><span data-ttu-id="709df-171">Resposta</span><span class="sxs-lookup"><span data-stu-id="709df-171">Response</span></span>
+<span data-ttu-id="709df-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="709df-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 1216
+
+{
+  "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
+  "id": "49fe234a-234a-49fe-4a23-fe494a23fe49",
+  "displayName": "Display Name value",
+  "description": "Description value",
+  "language": "Language value",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "outOfBoxExperienceSettings": {
+    "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
+    "hidePrivacySettings": true,
+    "hideEULA": true,
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "skipKeyboardSelectionPage": true,
+    "hideEscapeLink": true
+  },
+  "enrollmentStatusScreenSettings": {
+    "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
+    "hideInstallationProgress": true,
+    "allowDeviceUseBeforeProfileAndAppInstallComplete": true,
+    "blockDeviceSetupRetryByUser": true,
+    "allowLogCollectionOnInstallFailure": true,
+    "customErrorMessage": "Custom Error Message value",
+    "installProgressTimeoutInMinutes": 15,
+    "allowDeviceUseOnInstallFailure": true
+  },
+  "extractHardwareHash": true,
+  "deviceNameTemplate": "Device Name Template value"
+}
+```
+
+
+
+
+
