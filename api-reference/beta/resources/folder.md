@@ -1,10 +1,24 @@
-# <a name="folder-resource-type"></a>Tipo de recurso Folder
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Pasta
+ms.openlocfilehash: 834b2cd7c81a947ca1e6d4619f39a8533677e6c3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039203"
+---
+# <a name="folder-resource-type"></a><span data-ttu-id="5c160-102">Tipo de recurso Folder</span><span class="sxs-lookup"><span data-stu-id="5c160-102">Folder resource type</span></span>
 
-O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
+> <span data-ttu-id="5c160-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="5c160-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5c160-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="5c160-104">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="json-representation"></a>Representação JSON
+<span data-ttu-id="5c160-p102">O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.</span><span class="sxs-lookup"><span data-stu-id="5c160-p102">The **Folder** resource groups folder-related data on an item into a single structure. [**DriveItems**](driveitem.md) with a non-null **folder** facet are containers for other DriveItems.</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+## <a name="json-representation"></a><span data-ttu-id="5c160-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5c160-107">JSON representation</span></span>
+
+<span data-ttu-id="5c160-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5c160-108">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -16,22 +30,26 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
-## <a name="properties"></a>Propriedades
+## <a name="properties"></a><span data-ttu-id="5c160-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5c160-109">Properties</span></span>
 
-| Propriedade	       | Tipo	  | Descrição                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Número de filhos imediatamente neste contêiner. |
+| <span data-ttu-id="5c160-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5c160-110">Property</span></span>       | <span data-ttu-id="5c160-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="5c160-111">Type</span></span>           | <span data-ttu-id="5c160-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c160-112">Description</span></span>
+|:---------------|:---------------|:-------------------------------------------
+| <span data-ttu-id="5c160-113">**childCount**</span><span class="sxs-lookup"><span data-stu-id="5c160-113">**childCount**</span></span> | <span data-ttu-id="5c160-114">Int64</span><span class="sxs-lookup"><span data-stu-id="5c160-114">Int64</span></span>          | <span data-ttu-id="5c160-115">Número de filhos imediatamente neste contêiner.</span><span class="sxs-lookup"><span data-stu-id="5c160-115">Number of children contained immediately within this container.</span></span>
+| <span data-ttu-id="5c160-116">**view**</span><span class="sxs-lookup"><span data-stu-id="5c160-116">**view**</span></span>       | <span data-ttu-id="5c160-117">[folderView][]</span><span class="sxs-lookup"><span data-stu-id="5c160-117">[folderView][]</span></span> | <span data-ttu-id="5c160-118">Uma coleção de propriedades que definem o modo de exibição recomendado para a pasta.</span><span class="sxs-lookup"><span data-stu-id="5c160-118">A collection of properties defining the recommended view for the folder.</span></span>
 
-## <a name="remarks"></a>Comentários 
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+## <a name="remarks"></a><span data-ttu-id="5c160-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="5c160-119">Remarks</span></span> 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+<span data-ttu-id="5c160-120">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem][].</span><span class="sxs-lookup"><span data-stu-id="5c160-120">For more information about the facets on a DriveItem, see [DriveItem][].</span></span>
+
+[folderView]: folderview.md
+[DriveItem]: driveitem.md
+
 <!-- {
   "type": "#page.annotation",
   "description": "folder resource",

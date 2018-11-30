@@ -1,10 +1,24 @@
-# <a name="quota-resource-type"></a>Tipo de recurso Quota
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Cota
+ms.openlocfilehash: f4518021da8ad180b91472feb52199678c2edc83
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039190"
+---
+# <a name="quota-resource-type"></a><span data-ttu-id="6fd17-102">tipo de recurso de cota</span><span class="sxs-lookup"><span data-stu-id="6fd17-102">quota resource type</span></span>
 
-O recurso **quota** fornece detalhes sobre restrições de espaço em um recurso [Drive](drive.md).
+> <span data-ttu-id="6fd17-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="6fd17-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6fd17-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="6fd17-104">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="json-representation"></a>Representação JSON
+<span data-ttu-id="6fd17-105">O recurso de **cota** fornece detalhes sobre o espaço restringe em um recurso de [unidade](drive.md) .</span><span class="sxs-lookup"><span data-stu-id="6fd17-105">The **quota** resource provides details about space constrains on a [drive](drive.md) resource.</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+## <a name="json-representation"></a><span data-ttu-id="6fd17-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6fd17-106">JSON representation</span></span>
+
+<span data-ttu-id="6fd17-107">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6fd17-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -17,38 +31,38 @@ Veja a seguir uma representação JSON do recurso.
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
 ```
 
-## <a name="properties"></a>Propriedades
+## <a name="properties"></a><span data-ttu-id="6fd17-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6fd17-108">Properties</span></span>
 
-| Nome da propriedade | Tipo   | Descrição                                                                 |
+| <span data-ttu-id="6fd17-109">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="6fd17-109">Property name</span></span> | <span data-ttu-id="6fd17-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="6fd17-110">Type</span></span>   | <span data-ttu-id="6fd17-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6fd17-111">Description</span></span>                                                                 |
 |:--------------|:-------|:----------------------------------------------------------------------------|
-| total         | Int64  | Espaço de armazenamento permitido total, em bytes. Somente leitura.                           |
-| used          | Int64  | Espaço total, em bytes. Somente leitura.                                      |
-| remaining     | Int64  | Espaço total restante antes de atingir o limite de cota, em bytes. Somente leitura. |
-| deleted       | Int64  | Espaço total consumido por arquivos na Lixeira, em bytes. Somente leitura.      |
-| estado         | string | Valor de enumeração que indica o estado do espaço de armazenamento. Somente leitura. |
+| <span data-ttu-id="6fd17-112">total</span><span class="sxs-lookup"><span data-stu-id="6fd17-112">total</span></span>         | <span data-ttu-id="6fd17-113">Int64</span><span class="sxs-lookup"><span data-stu-id="6fd17-113">Int64</span></span>  | <span data-ttu-id="6fd17-p102">Espaço de armazenamento permitido total, em bytes. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6fd17-p102">Total allowed storage space, in bytes. Read-only.</span></span>                           |
+| <span data-ttu-id="6fd17-116">used</span><span class="sxs-lookup"><span data-stu-id="6fd17-116">used</span></span>          | <span data-ttu-id="6fd17-117">Int64</span><span class="sxs-lookup"><span data-stu-id="6fd17-117">Int64</span></span>  | <span data-ttu-id="6fd17-p103">Espaço total, em bytes. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6fd17-p103">Total space used, in bytes. Read-only.</span></span>                                      |
+| <span data-ttu-id="6fd17-120">remaining</span><span class="sxs-lookup"><span data-stu-id="6fd17-120">remaining</span></span>     | <span data-ttu-id="6fd17-121">Int64</span><span class="sxs-lookup"><span data-stu-id="6fd17-121">Int64</span></span>  | <span data-ttu-id="6fd17-p104">Espaço total restante antes de atingir o limite de cota, em bytes. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6fd17-p104">Total space remaining before reaching the quota limit, in bytes. Read-only.</span></span> |
+| <span data-ttu-id="6fd17-124">deleted</span><span class="sxs-lookup"><span data-stu-id="6fd17-124">deleted</span></span>       | <span data-ttu-id="6fd17-125">Int64</span><span class="sxs-lookup"><span data-stu-id="6fd17-125">Int64</span></span>  | <span data-ttu-id="6fd17-p105">Espaço total consumido por arquivos na Lixeira, em bytes. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6fd17-p105">Total space consumed by files in the recycle bin, in bytes. Read-only.</span></span>      |
+| <span data-ttu-id="6fd17-128">state</span><span class="sxs-lookup"><span data-stu-id="6fd17-128">state</span></span>         | <span data-ttu-id="6fd17-129">string</span><span class="sxs-lookup"><span data-stu-id="6fd17-129">string</span></span> | <span data-ttu-id="6fd17-p106">Valor de enumeração que indica o estado do espaço de armazenamento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="6fd17-p106">Enumeration value that indicates the state of the storage space. Read-only.</span></span> |
+| <span data-ttu-id="6fd17-132">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="6fd17-132">storagePlanInformation</span></span>  | [<span data-ttu-id="6fd17-133">storagePlanInformation</span><span class="sxs-lookup"><span data-stu-id="6fd17-133">storagePlanInformation</span></span>](storageplaninformation.md) | <span data-ttu-id="6fd17-134">Informações sobre planos de cota de armazenamento da unidade.</span><span class="sxs-lookup"><span data-stu-id="6fd17-134">Information about the drive's storage quota plans.</span></span> <span data-ttu-id="6fd17-135">Somente no OneDrive pessoal.</span><span class="sxs-lookup"><span data-stu-id="6fd17-135">Only in Personal OneDrive.</span></span>|
 
-## <a name="state-enumeration"></a>Enumeração de Estado
+### <a name="state-enumeration-values"></a><span data-ttu-id="6fd17-136">Valores de enumeração State</span><span class="sxs-lookup"><span data-stu-id="6fd17-136">State enumeration values</span></span>
 
-| Valor      | Descrição                                                                                                                                                                 |
+| <span data-ttu-id="6fd17-137">Valor</span><span class="sxs-lookup"><span data-stu-id="6fd17-137">Value</span></span>      | <span data-ttu-id="6fd17-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="6fd17-138">Description</span></span>                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `normal`   | A unidade tem bastante cota restante.                                                                                                                               |
-| `nearing`  | A cota restante é inferior a 10% do espaço de cota total.                                                                                                                      |
-| `critical` | A cota restante é inferior a 1% do espaço de cota total.                                                                                                                       |
-| `exceeded` | A cota usada excedeu a cota total. Novos arquivos ou pastas não podem ser adicionadas à unidade até que ela esteja abaixo da quantidade total de cotas ou mais espaço de armazenamento seja adquirido. |
+| `normal`   | <span data-ttu-id="6fd17-139">A unidade tem bastante cota restante.</span><span class="sxs-lookup"><span data-stu-id="6fd17-139">The drive has plenty of remaining quota left.</span></span>                                                                                                                               |
+| `nearing`  | <span data-ttu-id="6fd17-140">A cota restante é inferior a 10% do espaço de cota total.</span><span class="sxs-lookup"><span data-stu-id="6fd17-140">Remaining quota is less than 10% of total quota space.</span></span>                                                                                                                      |
+| `critical` | <span data-ttu-id="6fd17-141">A cota restante é inferior a 1% do espaço de cota total.</span><span class="sxs-lookup"><span data-stu-id="6fd17-141">Remaining quota is less than 1% of total quota space.</span></span>                                                                                                                       |
+| `exceeded` | <span data-ttu-id="6fd17-p108">A cota usada excedeu a cota total. Novos arquivos ou pastas não podem ser adicionadas à unidade até que ela esteja abaixo da quantidade total de cotas ou mais espaço de armazenamento seja adquirido.</span><span class="sxs-lookup"><span data-stu-id="6fd17-p108">The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased.</span></span> |
 
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "quota resource",
-  "keywords": "",
+  "description": "The quota facet provides information about how much space the OneDrive has available.",
+  "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Quota"
+} -->
