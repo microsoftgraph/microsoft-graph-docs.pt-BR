@@ -1,12 +1,22 @@
-# <a name="filesysteminfo-resource-type"></a>tipo de recurso FileSystemInfo
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: FileSystemInfo
+ms.openlocfilehash: 2a2e31754e64d18f8fce873212d7c582e6611e60
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006461"
+---
+# <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
 
 O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.
 
-**Observação:** A propriedade **FileSystemInfo** não está disponível para DriveItems no SharePoint ou no OneDrive for Business.
+Ele está disponível na propriedade fileSystemInfo dos recursos [driveItem] [ item-resource].
 
 ## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
@@ -18,8 +28,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "createdDateTime": "datetime",
-  "lastModifiedDateTime": "datetime"
+  "createdDateTime" : "datetime",
+  "lastAccessedDateTime": "datetime",
+  "lastModifiedDateTime" : "datetime"
 }
 ```
 
@@ -28,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade                 | Tipo           | Descrição                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
 | **createdDateTime**      | DateTimeOffset | A data e a hora UTC da criação do arquivo em um cliente.                                                              |
-| **lastAccessedDateTime** | DateTimeOffset | A data e hora UTC em que o arquivo foi acessado pela última vez. Disponível para o [lista de arquivos recentes](../api/drive_recent.md) apenas. |
+| **lastAccessedDateTime** | DateTimeOffset | A data e hora UTC em que o arquivo foi acessado pela última vez. Disponível para o [lista de arquivos recentes](../api/drive-recent.md) apenas. |
 | **lastModifiedDateTime** | DateTimeOffset | A data e hora UTC em que o arquivo foi modificado pela última vez em um cliente.                                                        |
 
 ## <a name="notes"></a>Observações
@@ -43,14 +54,16 @@ Se o conteúdo do arquivo for atualizado e estas propriedades não forem forneci
 
 ## <a name="remarks"></a>Comentários
 
+* **lastAccessedDateTime** não está disponível para itens no SharePoint Online ou OneDrive for Business.
+
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[item-resource]: ../resources/driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "fileSystemInfo resource",
-  "keywords": "",
+  "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
+  "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

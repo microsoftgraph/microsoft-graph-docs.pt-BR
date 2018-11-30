@@ -1,22 +1,29 @@
-# Tipo de recurso plannerChecklistItem
-<a id="plannerchecklistitem-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerChecklistItem
+description: O recurso de **plannerChecklistItem** representa um item na lista de verificação de uma tarefa. A lista de verificação em uma tarefa é representada pelo objeto itens.
+ms.openlocfilehash: b3c4f9c7e7429487c1a9d44ba76ce1ef0a551f9c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007410"
+---
+# <a name="plannerchecklistitem-resource-type"></a>Tipo de recurso plannerChecklistItem
 
 
 O recurso **plannerChecklistItem** representa um item da lista de verificação de uma tarefa. A lista de verificação em uma tarefa é representada pelo [objeto checklistItems](plannerchecklistitems.md).
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |isChecked|Booliano|O valor será `true` se o item estiver marcado ou `false`, caso não estiver marcado.|
 |lastModifiedBy|[identitySet](identityset.md)| Somente leitura. A identificação de usuário pela qual isso foi modificado pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|Somente leitura. A data e a hora pelas quais isso foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|orderHint|String|Usado para definir a ordem relativa dos itens na lista de verificação. O formato é definido como descrito [aqui](planner_order_hint_format.md).|
+|orderHint|String|Usado para definir a ordem relativa dos itens na lista de verificação. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |title|String|Título do item de lista de verificação|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

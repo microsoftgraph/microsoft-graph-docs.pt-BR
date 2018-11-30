@@ -1,23 +1,29 @@
-# Tipo de recurso plannerAssignments
-<a id="plannerassignments-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerAssignments
+description: 'O recurso de **plannerAssignments** representa atribuições de um recurso de plannerTask. Esse tipo é um tipo aberto. Nesse tipo de cada nome de propriedade '
+ms.openlocfilehash: 1cb080ff8d66c2319b77dd560f10422e1663a46d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007239"
+---
+# <a name="plannerassignments-resource-type"></a>Tipo de recurso plannerAssignments
 
 O recurso **plannerAssignment** representa as atribuições de um recurso [plannerTask](plannertask.md). Este é um Tipo Aberto. Cada nome de propriedade nesse tipo representa a ID do objeto de um usuário à qual uma tarefa é atribuída. Os usuários podem ser atribuídos a tarefas com a criação de novas propriedades nomeadas com sua ID, com um objeto [plannerassignment](plannerassignment.md) com a propriedade orderHint preenchida como o valor. Os destinatários podem ter a atribuição cancelada a partir da tarefa se a propriedade nomeada com a ID for configurada como nula.
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. No entanto, nesse caso, o cliente deve fornecer IDs do usuário atribuídas como nomes de propriedades. A propriedade deve ser definida com um objeto **plannerAssignment** para criar ou modificar os destinatários e como nula para removê-los.
 
 Exemplo:
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "openType": true,
+  "optionalProperties": [ "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47", "4e98f8f1-bb03-4015-b8e0-19bb370949d8" ],
   "@odata.type": "microsoft.graph.plannerAssignments"
 }-->
-
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": null,
