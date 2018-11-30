@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartLegend
+description: Representa a legenda de um gráfico.
+ms.openlocfilehash: d01eee45245d17fb142ddb75b70a6cde6a89213c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039878"
+---
 # <a name="chartlegend-resource-type"></a>Tipo de recurso ChartLegend
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa a legenda de um gráfico.
 
@@ -7,18 +19,18 @@ Representa a legenda de um gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend_get.md) | [ChartLegend](chartlegend.md) |Leia as propriedades e os relacionamentos do objeto chartLegend.|
-|[Update](../api/chartlegend_update.md) | [ChartLegend](chartlegend.md)    |Atualize o objeto ChartLegend. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Leia as propriedades e os relacionamentos do objeto chartLegend.|
+|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |Atualize o objeto ChartLegend. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |overlay|booliano|Valor booliano para determinar se a legenda do gráfico deve se sobrepor ao corpo principal do gráfico.|
 |position|string|Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner` e `Custom`.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto ChartLegend.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[ChartLegendFormat](chartlegendformat.md)|Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
 

@@ -1,0 +1,107 @@
+---
+title: Cancelar privilegedRoleAssignmentRequest
+description: Cancele um privilegedRoleAssignmentRequest.
+ms.openlocfilehash: 99c1102235e93ca365dcdd0e619bcceac9f396f1
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037867"
+---
+# <a name="cancel-privilegedroleassignmentrequest"></a>Cancelar privilegedRoleAssignmentRequest
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Cancele um [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
+
+## <a name="permissions"></a>Permissions
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Aplicativo                            | Sem suporte. |
+
+
+### <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+POST /privilegedRoleAssignmentRequests({requestid})/cancel
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização  | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um código de resposta `200 Ok`. Ele retorna [privilegedRoleAssignmentRequest] (… / resources/privilegedRoleAssignmentRequest.md) no corpo da resposta.
+
+### <a name="error-codes"></a>Códigos de erro
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os códigos de erro personalizado listados na tabela a seguir.
+
+|Código de erro     | Mensagem de erro              |
+|:--------------------| :---------------------|
+| 400 BadRequest | RequestId não pode ser Null. |
+| 400 BadRequest | Solicitar com ID de solicitação não encontrado. |
+| 400 BadRequest | Cancelamento pode ser feito somente em status agendadas e PendingApproval. |
+| 403 não autorizado | Solicitante não pode fazer a chamada de cancelar ou solicitação não encontrado. |
+
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "cancel_privilegedRoleAssignmentRequests"
+}-->
+```http
+POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/cancel
+```
+
+##### <a name="response"></a>Resposta
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 304
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",
+    "schedule": {
+        "type": "activation",
+        "startDateTime": "2018-02-08T02:35:17.903Z",
+        "endDateTime": null,
+        "duration" : null
+    },
+    "id": "bcfb11e3-fc0d-49ea-b3d5-7d60a48e5043",
+    "evaluateOnly": false,
+    "type": "UserAdd",
+    "assignmentState": "Active",
+    "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
+    "status": "Cancelling",
+    "duration": "2",
+    "reason": "Activate the role for business purpose",
+    "ticketNumber": "234",
+    "ticketSystem": "system",
+    "userId": "Self"，
+    "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Cancel privilegedRoleAssignmentRequests",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso Range
+description: Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.
+ms.openlocfilehash: 95951b45653309f1999ca5d8103c5c63a1249ada
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27040011"
+---
 # <a name="range-resource-type"></a>Tipo de recurso Range
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.
 
@@ -7,57 +19,57 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get Range](../api/range_get.md) | [Range](range.md) |Leia as propriedades e relacionamentos do objeto de intervalo.|
-|[Update](../api/range_update.md) | [Range](range.md)    |Atualize o objeto Range. |
-|[Boundingrect](../api/range_boundingrect.md)|[Range](range.md)|Obtém o menor objeto de intervalo que abrange os intervalos determinados. Por exemplo, GetBoundingRect de "B2:C5" e "D10:E15" é "B2:E16".|
-|[Cell](../api/range_cell.md)|[Range](range.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.|
-|[Column](../api/range_column.md)|[Range](range.md)|Obtém uma coluna incluída no intervalo.|
-|[Columnsafter](../api/workbookrange_columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à direita do intervalo especificado.|
-|[Columnsbefore](../api/workbookrange_columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à esquerda do intervalo especificado.|
-|[Entirecolumn](../api/range_entirecolumn.md)|[Range](range.md)|Obtém um objeto que representa toda a coluna do intervalo.|
-|[Entirerow](../api/range_entirerow.md)|[Range](range.md)|Obtém um objeto que representa toda a linha do intervalo.|
-|[Intersection](../api/range_intersection.md)|[Range](range.md)|Obtém o objeto de intervalo que representa a interseção retangular dos intervalos determinados.|
-|[Lastcell](../api/range_lastcell.md)|[Range](range.md)|Obtém a última célula do intervalo. Por exemplo, a última célula de "B2:D5" é "D5".|
-|[Lastcolumn](../api/range_lastcolumn.md)|[Range](range.md)|Obtém a última coluna do intervalo. Por exemplo, a última coluna de "B2:D5" é "D2:D5".|
-|[Lastrow](../api/range_lastrow.md)|[Range](range.md)|Obtém a última linha do intervalo. Por exemplo, a última linha de "B2:D5" é "B5:D5".|
-|[Offsetrange](../api/range_offsetrange.md)|[Range](range.md)|Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.|
-|[Row](../api/range_row.md)|[Range](range.md)|Obtém uma linha contida no intervalo.|
-|[Rowsabove](../api/workbookrange_rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas acima de um determinado intervalo.|
-|[Rowsbelow](../api/workbookrange_rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
-|[Usedrange](../api/range_usedrange.md)|[Range](range.md)|Retorna o intervalo usado do objeto de intervalo determinado.|
-|[Clear](../api/range_clear.md)|Nenhum|Limpe valores de intervalo, formatação, preenchimento, bordas, etc.|
-|[Delete](../api/range_delete.md)|Nenhum|Exclui as células associadas ao intervalo.|
-|[Insert](../api/range_insert.md)|[Range](range.md)|Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.|
-|[Merge](../api/range_merge.md)|Nenhum|Mescla as células do intervalo em uma região da planilha.|
-|[Resizedrange](../api/workbookrange_resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|
-|[Unmerge](../api/range_unmerge.md)|Nenhum|Desfaz a mesclagem das células do intervalo em células separadas.|
-|[Visibleview](../api/workbookrange_visibleview.md)|[workbookRangeView](workbookrangeview.md)|Obtenha o intervalo visível de um intervalo filtrado.|
+|[Get Range](../api/range-get.md) | [Range](range.md) |Leia as propriedades e relacionamentos do objeto de intervalo.|
+|[Update](../api/range-update.md) | [Range](range.md)   |Atualize o objeto Range. |
+|[Boundingrect](../api/range-boundingrect.md)|[Range](range.md)|Obtém o menor objeto de intervalo que abrange os intervalos determinados. Por exemplo, GetBoundingRect de "B2:C5" e "D10:E15" é "B2:E16".|
+|[Cell](../api/range-cell.md)|[Range](range.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.|
+|[Coluna](../api/range-column.md)|[Range](range.md)|Obtém uma coluna incluída no intervalo.|
+|[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à direita do intervalo especificado.|
+|[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à esquerda do intervalo especificado.|
+|[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|Obtém um objeto que representa toda a coluna do intervalo.|
+|[Entirerow](../api/range-entirerow.md)|[Range](range.md)|Obtém um objeto que representa toda a linha do intervalo.|
+|[Intersection](../api/range-intersection.md)|[Range](range.md)|Obtém o objeto de intervalo que representa a interseção retangular dos intervalos determinados.|
+|[Lastcell](../api/range-lastcell.md)|[Range](range.md)|Obtém a última célula do intervalo. Por exemplo, a última célula de "B2:D5" é "D5".|
+|[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Obtém a última coluna do intervalo. Por exemplo, a última coluna de "B2:D5" é "D2:D5".|
+|[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Obtém a última linha do intervalo. Por exemplo, a última linha de "B2:D5" é "B5:D5".|
+|[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.|
+|[Linha](../api/range-row.md)|[Range](range.md)|Obtém uma linha contida no intervalo.|
+|[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas acima de um determinado intervalo.|
+|[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
+|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Retorna o intervalo usado do objeto range determinado.|
+|[Clear](../api/range-clear.md)|Nenhum|Limpe valores de intervalo, formatação, preenchimento, bordas, etc.|
+|[Delete](../api/range-delete.md)|Nenhum|Exclui as células associadas ao intervalo.|
+|[Insert](../api/range-insert.md)|[Range](range.md)|Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.|
+|[Merge](../api/range-merge.md)|Nenhum|Mescla as células do intervalo em uma região da planilha.|
+|[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|
+|[Unmerge](../api/range-unmerge.md)|Nenhum|Desfaz a mesclagem das células do intervalo em células separadas.|
+|[Visibleview](../api/workbookrange-visibleview.md)|[workbookRangeView](workbookrangeview.md)|Obtenha o intervalo visível de um intervalo filtrado.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|cadeia de caracteres|Representa a referência do intervalo no estilo A1. O valor do endereço inclui a referência de planilha (por exemplo, Plan1!A1:B4). Somente leitura.|
+|address|string|Representa a referência do intervalo no estilo A1. O valor do endereço inclui a referência de planilha (por exemplo, Plan1!A1:B4). Somente leitura.|
 |addressLocal|string|Representa a referência de intervalo para o intervalo especificado no idioma do usuário. Somente leitura.|
-|cellCount|int|Número de células no intervalo. Somente leitura.|
-|columnCount|int|Representa o número total de colunas no intervalo. Somente leitura.|
+|cellCount|inteiro|Número de células no intervalo. Somente leitura.|
+|columnCount|inteiro|Representa o número total de colunas no intervalo. Somente leitura.|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|columnIndex|int|Representa o número de colunas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
+|columnIndex|inteiro|Representa o número de colunas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
 |formulas|json|Representa a fórmula em notação A1.|
 |formulasLocal|json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
 |formulasR1C1|json|Representa a fórmula em notação no estilo L1C1.|
 |hidden|booliano|Representa se todas as células do intervalo atual estão ocultas. Somente leitura.|
 |numberFormat|json|Representa o código de formato de número do Excel para determinada célula.|
-|rowCount|int|Retorna o número total de linhas no intervalo. Somente leitura.|
+|rowCount|inteiro|Retorna o número total de linhas no intervalo. Somente leitura.|
 |rowHidden|booliano|Representa se todas as linhas do intervalo atual estão ocultas.|
-|rowIndex|int|Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
+|rowIndex|inteiro|Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
 |text|json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.|
-|valueTypes|cadeia de caracteres|Representa o tipo de dados de cada célula. Os valores possíveis são: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean` e `Error`. Somente leitura.|
+|valueTypes|string|Representa o tipo de dados de cada célula. Os valores possíveis são: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean` e `Error`. Somente leitura.|
 |values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[RangeFormat](rangeformat.md)|Retorna um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo. Somente leitura.|
+|format|[RangeFormat](rangeformat.md)|Retorna um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo. Somente leitura.|
 |sort|[RangeSort](rangesort.md)|A planilha que contém o intervalo atual. Somente leitura.|
 |planilha|[Worksheet](worksheet.md)|A planilha que contém o intervalo atual. Somente leitura.|
 

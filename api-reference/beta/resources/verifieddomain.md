@@ -1,17 +1,28 @@
+---
+title: Tipo de recurso verifiedDomain
+description: Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade organization é uma coleção de **VerifiedDomain**.
+ms.openlocfilehash: 810b5fea0fbaf82eeb452c0f5c6032679590ff49
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27038429"
+---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade [organization](organization.md) é uma coleção de **VerifiedDomain**.
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
 |isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isInitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
 |name|Cadeia de caracteres|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
 |type|Cadeia de caracteres|Por exemplo, "Managed".|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

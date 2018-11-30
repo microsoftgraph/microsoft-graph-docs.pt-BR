@@ -1,0 +1,33 @@
+---
+title: tipo de enum ratingUnitedStatesTelevisionType
+description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
+ms.openlocfilehash: 7e962716e70c2cf88d70011843094ce9bebeb8b0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039534"
+---
+# <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enum ratingUnitedStatesTelevisionType
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Rótulos de classificação de conteúdo de TV nos Estados Unidos
+## <a name="members"></a>Membros
+|Membro|Valor|Descrição|
+|:---|:---|:---|
+|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
+|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
+|childrenAll|2|TV-Y, todos os filhos|
+|childrenAbove7|3|TV-Y7 filhos age 7 e acima|
+|geral|4|TV-G, adequado para todos os anos|
+|parentalGuidance|5|TV-PG, orientação dos pais|
+|childrenAbove14|6|14 de TV, filhos age 14 e acima|
+|adultos|7|TV-MA, somente para adultos|
+
+
+
+
+

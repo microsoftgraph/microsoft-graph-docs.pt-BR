@@ -1,10 +1,22 @@
+---
+title: Tipo de recurso patchContentCommand
+description: As alterações a serem feitas em uma página do OneNote em uma solicitação PATCH.
+ms.openlocfilehash: fb559a96aa5eef94dd07280b888da0df989b2363
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039937"
+---
 # <a name="patchcontentcommand-resource-type"></a>Tipo de recurso patchContentCommand
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 As alterações a serem feitas em uma página do OneNote em uma solicitação PATCH.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso, que é enviado no corpo da solicitação [PATCH pages/{id}`](../api/page_update.md). 
+Veja a seguir uma representação JSON do recurso, que é enviado no corpo da solicitação [PATCH pages/{id}`](../api/page-update.md). 
 
 <!-- {
   "blockType": "resource",
@@ -25,10 +37,10 @@ Veja a seguir uma representação JSON do recurso, que é enviado no corpo da so
 ```
 
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ação|String|A ação a ser executada no elemento de destino. Os valores possíveis são: `replace`, `append`, `delete`, `insert` ou `prepend`.|
-|conteúdo|String|Uma cadeia de caracteres de HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada usando o tipo de conteúdo `multipart/form-data` com uma parte "Commands". |
+|content|String|Uma cadeia de caracteres de HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada usando o tipo de conteúdo `multipart/form-data` com uma parte "Commands". |
 |position|String|O local para adicionar o conteúdo fornecido em relação ao elemento de destino. Os valores possíveis são: `after` (padrão) ou `before`.|
 |destino|String|O elemento a atualizar. Deve ser `#<data-id>` ou o `<id>` gerado do elemento ou o `body` ou a palavra-chave de `title`.|
 

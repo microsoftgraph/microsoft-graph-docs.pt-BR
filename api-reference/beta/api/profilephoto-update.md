@@ -1,0 +1,88 @@
+---
+title: Atualizar profilephoto
+description: Atualizar a foto para qualquer usuário no locatário incluindo assinado do usuário, ou o grupo especificado ou o contato. Desde daí
+ms.openlocfilehash: 801ccd58e57cb02c1805f927dc22c9fd593cbae5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037864"
+---
+# <a name="update-profilephoto"></a>Atualizar profilephoto
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Atualizar a foto para qualquer usuário no locatário incluindo assinado do usuário, ou o grupo especificado ou o contato. Como no momento, há um limite de 4MB no tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar ao menos de 4MB.
+
+Use apenas PUT para essa operação na versão beta.
+
+> **Observação** A operação de atualização de foto no beta suporta apenas o usuário comercial ou caixas de correio da escola e caixas de correio não pessoais.
+
+## <a name="permissions"></a>Permissions
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante)     | Foto de perfil do entrou no **usuário**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+
+> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+PUT /me/photo/$value
+PUT /users/{id | userPrincipalName}/photo/$value
+PUT /groups/{id}/photo/$value
+PUT /me/contacts/{id}/photo/$value
+PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+```
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Cabeçalho       | Valor |
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório.  |
+| Content-Type  | image/jpeg. Obrigatório.  |
+
+## <a name="request-body"></a>Corpo da solicitação
+Inclua os dados binários da foto no corpo da solicitação.
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "update_profilephoto"
+}-->
+```http
+PUT https://graph.microsoft.com/beta/me/photo/$value
+Content-type: image/jpeg
+
+Binary data for the image
+
+```
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.profilePhoto"
+} -->
+```http
+HTTP/1.1 200 OK
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update profilephoto",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

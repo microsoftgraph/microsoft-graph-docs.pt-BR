@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso sectionLinks
+description: Links para abrir uma seção do OneNote.
+ms.openlocfilehash: 26dbffd6f3bde9c05efabc737852c3619cc1e275
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27038462"
+---
 # <a name="sectionlinks-resource-type"></a>Tipo de recurso sectionLinks
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Links para abrir uma seção do OneNote.
 
@@ -22,7 +34,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Abre a seção no cliente nativo do OneNote se ele estiver instalado.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Abre a seção no OneNote Online.|
