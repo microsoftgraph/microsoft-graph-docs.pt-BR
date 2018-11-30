@@ -1,41 +1,63 @@
-# <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
+---
+title: Tipo de recurso subscribedSku
+description: Contém informações sobre um serviço SKU assinado por uma empresa.
+ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006258"
+---
+# <a name="subscribedsku-resource-type"></a><span data-ttu-id="789a4-103">Tipo de recurso subscribedSku</span><span class="sxs-lookup"><span data-stu-id="789a4-103">subscribedSku resource type</span></span>
 
-Contém informações sobre um serviço SKU assinado por uma empresa.
+<span data-ttu-id="789a4-104">Contém informações sobre um serviço SKU assinado por uma empresa.</span><span class="sxs-lookup"><span data-stu-id="789a4-104">Contains information about a service SKU that a company is subscribed to.</span></span>
 
-Somente a operação de leitura é compatível com as SKUs inscritas; criar, atualizar e excluir não têm suporte. Não há suporte para expressões de filtro de consulta. Herda de [directoryObject](directoryobject.md).
+<span data-ttu-id="789a4-p101">Somente a operação de leitura é compatível com as SKUs inscritas; criar, atualizar e excluir não têm suporte. Não há suporte para expressões de filtro de consulta. Herda de [directoryObject](directoryobject.md).</span><span class="sxs-lookup"><span data-stu-id="789a4-p101">Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from [directoryObject](directoryobject.md).</span></span>
 
-## <a name="methods"></a>Métodos
-| Método           | Tipo de retorno    |Descrição|
+## <a name="methods"></a><span data-ttu-id="789a4-108">Métodos</span><span class="sxs-lookup"><span data-stu-id="789a4-108">Methods</span></span>
+| <span data-ttu-id="789a4-109">Método</span><span class="sxs-lookup"><span data-stu-id="789a4-109">Method</span></span>           | <span data-ttu-id="789a4-110">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="789a4-110">Return Type</span></span>    |<span data-ttu-id="789a4-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="789a4-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get subscribedSku](../api/subscribedsku_get.md) | [subscribedSku](subscribedsku.md) |Leia as propriedades e os relacionamentos do objeto subscribedSku.|
-|[Listar subscribedsku](../api/subscribedsku_list.md) | Coleção [subscribedSku](subscribedsku.md) |Recupere a lista de assinaturas comerciais que uma organização adquiriu.|
+|[<span data-ttu-id="789a4-112">Get subscribedSku</span><span class="sxs-lookup"><span data-stu-id="789a4-112">Get subscribedSku</span></span>](../api/subscribedsku-get.md) | [<span data-ttu-id="789a4-113">subscribedSku</span><span class="sxs-lookup"><span data-stu-id="789a4-113">subscribedSku</span></span>](subscribedsku.md) |<span data-ttu-id="789a4-114">Leia as propriedades e os relacionamentos do objeto subscribedSku.</span><span class="sxs-lookup"><span data-stu-id="789a4-114">Read properties and relationships of subscribedSku object.</span></span>|
+|[<span data-ttu-id="789a4-115">Lista subscribedsku</span><span class="sxs-lookup"><span data-stu-id="789a4-115">List subscribedsku</span></span>](../api/subscribedsku-list.md) | <span data-ttu-id="789a4-116">Coleção [subscribedSku](subscribedsku.md)</span><span class="sxs-lookup"><span data-stu-id="789a4-116">[subscribedSku](subscribedsku.md) collection</span></span> |<span data-ttu-id="789a4-117">Recupere a lista de assinaturas comerciais que uma organização adquiriu.</span><span class="sxs-lookup"><span data-stu-id="789a4-117">Retrieve the list of commercial subscriptions that an organization has acquired.</span></span>|
 
-## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## <a name="properties"></a><span data-ttu-id="789a4-118">Propriedades</span><span class="sxs-lookup"><span data-stu-id="789a4-118">Properties</span></span>
+| <span data-ttu-id="789a4-119">Propriedade</span><span class="sxs-lookup"><span data-stu-id="789a4-119">Property</span></span>     | <span data-ttu-id="789a4-120">Tipo</span><span class="sxs-lookup"><span data-stu-id="789a4-120">Type</span></span>   |<span data-ttu-id="789a4-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="789a4-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|appliesTo|Cadeia de caracteres| Por exemplo, “Usuário” ou “Empresa”. |
-|capabilityStatus|String| Por exemplo, “Enabled”. |
-|consumedUnits|Int32| O número de licenças que foram atribuídas. |
-|id|Cadeia de caracteres| O identificador exclusivo do objeto SKU assinado. Chave, não anulável. |
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
-|servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável |
-|skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
-|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". |
+|<span data-ttu-id="789a4-122">appliesTo</span><span class="sxs-lookup"><span data-stu-id="789a4-122">appliesTo</span></span>|<span data-ttu-id="789a4-123">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="789a4-123">String</span></span>| <span data-ttu-id="789a4-124">Por exemplo, “Usuário” ou “Empresa”.</span><span class="sxs-lookup"><span data-stu-id="789a4-124">For example, "User" or "Company".</span></span> |
+|<span data-ttu-id="789a4-125">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="789a4-125">capabilityStatus</span></span>|<span data-ttu-id="789a4-126">String</span><span class="sxs-lookup"><span data-stu-id="789a4-126">String</span></span>| <span data-ttu-id="789a4-127">Por exemplo, “Enabled”.</span><span class="sxs-lookup"><span data-stu-id="789a4-127">For example, "Enabled".</span></span> |
+|<span data-ttu-id="789a4-128">consumedUnits</span><span class="sxs-lookup"><span data-stu-id="789a4-128">consumedUnits</span></span>|<span data-ttu-id="789a4-129">Int32</span><span class="sxs-lookup"><span data-stu-id="789a4-129">Int32</span></span>| <span data-ttu-id="789a4-130">O número de licenças que foram atribuídas.</span><span class="sxs-lookup"><span data-stu-id="789a4-130">The number of licenses that have been assigned.</span></span> |
+|<span data-ttu-id="789a4-131">id</span><span class="sxs-lookup"><span data-stu-id="789a4-131">id</span></span>|<span data-ttu-id="789a4-132">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="789a4-132">String</span></span>| <span data-ttu-id="789a4-p102">O identificador exclusivo do objeto SKU assinado. Chave, não anulável.</span><span class="sxs-lookup"><span data-stu-id="789a4-p102">The unique identifier for the subscribed sku object. Key, not nullable.</span></span> |
+|<span data-ttu-id="789a4-135">prepaidUnits</span><span class="sxs-lookup"><span data-stu-id="789a4-135">prepaidUnits</span></span>|[<span data-ttu-id="789a4-136">licenseUnitsDetail</span><span class="sxs-lookup"><span data-stu-id="789a4-136">licenseUnitsDetail</span></span>](licenseunitsdetail.md)| <span data-ttu-id="789a4-137">Informações sobre o número e o status das licenças pré-pagas.</span><span class="sxs-lookup"><span data-stu-id="789a4-137">Information about the number and status of prepaid licenses.</span></span> |
+|<span data-ttu-id="789a4-138">servicePlans</span><span class="sxs-lookup"><span data-stu-id="789a4-138">servicePlans</span></span>|<span data-ttu-id="789a4-139">Coleção [servicePlanInfo](serviceplaninfo.md)</span><span class="sxs-lookup"><span data-stu-id="789a4-139">[servicePlanInfo](serviceplaninfo.md) collection</span></span>| <span data-ttu-id="789a4-p103">Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável</span><span class="sxs-lookup"><span data-stu-id="789a4-p103">Information about the service plans that are available with the SKU. Not nullable</span></span> |
+|<span data-ttu-id="789a4-142">skuId</span><span class="sxs-lookup"><span data-stu-id="789a4-142">skuId</span></span>|<span data-ttu-id="789a4-143">Guid</span><span class="sxs-lookup"><span data-stu-id="789a4-143">Guid</span></span>| <span data-ttu-id="789a4-144">O identificador exclusivo (GUID) do SKU do serviço.</span><span class="sxs-lookup"><span data-stu-id="789a4-144">The unique identifier (GUID) for the service SKU.</span></span> |
+|<span data-ttu-id="789a4-145">skuPartNumber</span><span class="sxs-lookup"><span data-stu-id="789a4-145">skuPartNumber</span></span>|<span data-ttu-id="789a4-146">String</span><span class="sxs-lookup"><span data-stu-id="789a4-146">String</span></span>| <span data-ttu-id="789a4-147">O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC".</span><span class="sxs-lookup"><span data-stu-id="789a4-147">The SKU part number; for example: "AAD_PREMIUM" or "RMSBASIC".</span></span> |
 
-## <a name="relationships"></a>Relações
-Nenhum
+## <a name="relationships"></a><span data-ttu-id="789a4-148">Relações</span><span class="sxs-lookup"><span data-stu-id="789a4-148">Relationships</span></span>
+<span data-ttu-id="789a4-149">Nenhum</span><span class="sxs-lookup"><span data-stu-id="789a4-149">None</span></span>
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="789a4-150">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="789a4-150">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="789a4-151">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="789a4-151">Here is a JSON representation of the resource</span></span>
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.subscribedSku"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.subscribedSku",
+  "@odata.annotations": [
+    {
+      "capabilities": {
+        "skippable": false,
+        "toppable": false,
+        "countable": false,
+        "expandable": false,
+        "filterable": false,
+        "referenceable": false,
+        "selectable": false
+      }
+    }
+  ]
 }-->
 
 ```json

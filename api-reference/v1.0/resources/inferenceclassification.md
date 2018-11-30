@@ -1,37 +1,58 @@
-# <a name="inferenceclassification-resource-type"></a>Tipo de recurso inferenceClassification
+---
+title: Tipo de recurso inferenceClassification
+description: 'Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. '
+ms.openlocfilehash: 0fb1e01ad9710a0ff5f2de7f63808a6f3e988c13
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004292"
+---
+# <a name="inferenceclassification-resource-type"></a><span data-ttu-id="0dbc3-103">Tipo de recurso inferenceClassification</span><span class="sxs-lookup"><span data-stu-id="0dbc3-103">inferenceClassification resource type</span></span>
 
-Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. 
+<span data-ttu-id="0dbc3-104">Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário.</span><span class="sxs-lookup"><span data-stu-id="0dbc3-104">Classification of a user's messages to enable focus on those that are more relevant or important to the user.</span></span> 
 
-Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage_focused_inbox.md).
+<span data-ttu-id="0dbc3-105">Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage-focused-inbox.md).</span><span class="sxs-lookup"><span data-stu-id="0dbc3-105">For more information, see [Manage Focused Inbox](manage-focused-inbox.md).</span></span>
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="0dbc3-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="0dbc3-106">Methods</span></span>
 
-| Método           | Tipo de retorno    |Descrição|
+| <span data-ttu-id="0dbc3-107">Método</span><span class="sxs-lookup"><span data-stu-id="0dbc3-107">Method</span></span>           | <span data-ttu-id="0dbc3-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="0dbc3-108">Return Type</span></span>    |<span data-ttu-id="0dbc3-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="0dbc3-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Create inferenceClassificationOverride](../api/inferenceclassification_post_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.|
-|[List overrides](../api/inferenceclassification_list_overrides.md) |Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.|
+|[<span data-ttu-id="0dbc3-110">Create inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="0dbc3-110">Create inferenceClassificationOverride</span></span>](../api/inferenceclassification-post-overrides.md) |[<span data-ttu-id="0dbc3-111">inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="0dbc3-111">inferenceClassificationOverride</span></span>](inferenceclassificationoverride.md)| <span data-ttu-id="0dbc3-p101">Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.</span><span class="sxs-lookup"><span data-stu-id="0dbc3-p101">Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>|
+|[<span data-ttu-id="0dbc3-114">List overrides</span><span class="sxs-lookup"><span data-stu-id="0dbc3-114">List overrides</span></span>](../api/inferenceclassification-list-overrides.md) |<span data-ttu-id="0dbc3-115">Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)</span><span class="sxs-lookup"><span data-stu-id="0dbc3-115">[inferenceClassificationOverride](inferenceclassificationoverride.md) collection</span></span>| <span data-ttu-id="0dbc3-116">Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.</span><span class="sxs-lookup"><span data-stu-id="0dbc3-116">Get the overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>|
 
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="0dbc3-117">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0dbc3-117">Properties</span></span>
+| <span data-ttu-id="0dbc3-118">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0dbc3-118">Property</span></span>     | <span data-ttu-id="0dbc3-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="0dbc3-119">Type</span></span>   |<span data-ttu-id="0dbc3-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="0dbc3-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres| Somente leitura.|
+|<span data-ttu-id="0dbc3-121">id</span><span class="sxs-lookup"><span data-stu-id="0dbc3-121">id</span></span>|<span data-ttu-id="0dbc3-122">string</span><span class="sxs-lookup"><span data-stu-id="0dbc3-122">string</span></span>| <span data-ttu-id="0dbc3-123">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="0dbc3-123">Read-only.</span></span>|
 
-## <a name="relationships"></a>Relacionamento
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a><span data-ttu-id="0dbc3-124">Relações</span><span class="sxs-lookup"><span data-stu-id="0dbc3-124">Relationships</span></span>
+| <span data-ttu-id="0dbc3-125">Relação</span><span class="sxs-lookup"><span data-stu-id="0dbc3-125">Relationship</span></span> | <span data-ttu-id="0dbc3-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="0dbc3-126">Type</span></span>   |<span data-ttu-id="0dbc3-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="0dbc3-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|overrides|Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Um conjunto de substituições para um usuário sempre classificar mensagens a partir de remetentes específicos, de maneiras específicas: `focused`, ou `other`. Somente leitura. Anulável.|
+|<span data-ttu-id="0dbc3-128">overrides</span><span class="sxs-lookup"><span data-stu-id="0dbc3-128">overrides</span></span>|<span data-ttu-id="0dbc3-129">Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)</span><span class="sxs-lookup"><span data-stu-id="0dbc3-129">[inferenceClassificationOverride](inferenceclassificationoverride.md) collection</span></span>| <span data-ttu-id="0dbc3-p102">Um conjunto de substituições para um usuário sempre classificar mensagens a partir de remetentes específicos, de maneiras específicas: `focused`, ou `other`. Somente leitura. Anulável.</span><span class="sxs-lookup"><span data-stu-id="0dbc3-p102">A set of overrides for a user to always classify messages from specific senders in certain ways: `focused`, or `other`. Read-only. Nullable.</span></span>|
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="0dbc3-133">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0dbc3-133">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+<span data-ttu-id="0dbc3-134">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0dbc3-134">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inferenceClassification"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.inferenceClassification",
+  "@odata.annotations": [
+    {
+      "property": "overrides",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
