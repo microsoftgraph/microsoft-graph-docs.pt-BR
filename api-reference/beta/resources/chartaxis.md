@@ -1,34 +1,46 @@
-# <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
+---
+title: Tipo de recurso ChartAxis
+description: Representa um único eixo em um gráfico.
+ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037592"
+---
+# <a name="chartaxis-resource-type"></a><span data-ttu-id="d36c0-103">Tipo de recurso ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d36c0-103">ChartAxis resource type</span></span>
 
-Representa um único eixo em um gráfico.
+> <span data-ttu-id="d36c0-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="d36c0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d36c0-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="d36c0-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="d36c0-106">Representa um único eixo em um gráfico.</span><span class="sxs-lookup"><span data-stu-id="d36c0-106">Represents a single axis in a chart.</span></span>
 
 
-## <a name="methods"></a>Métodos
+## <a name="methods"></a><span data-ttu-id="d36c0-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="d36c0-107">Methods</span></span>
 
-| Método           | Tipo de retorno    |Descrição|
+| <span data-ttu-id="d36c0-108">Método</span><span class="sxs-lookup"><span data-stu-id="d36c0-108">Method</span></span>           | <span data-ttu-id="d36c0-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="d36c0-109">Return Type</span></span>    |<span data-ttu-id="d36c0-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d36c0-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Leia as propriedades e os relacionamentos do objeto chartAxis.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |Atualize o objeto ChartAxis. |
+|[<span data-ttu-id="d36c0-111">Get ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d36c0-111">Get ChartAxis</span></span>](../api/chartaxis-get.md) | [<span data-ttu-id="d36c0-112">ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d36c0-112">ChartAxis</span></span>](chartaxis.md) |<span data-ttu-id="d36c0-113">Leia as propriedades e os relacionamentos do objeto chartAxis.</span><span class="sxs-lookup"><span data-stu-id="d36c0-113">Read properties and relationships of chartAxis object.</span></span>|
+|[<span data-ttu-id="d36c0-114">Update</span><span class="sxs-lookup"><span data-stu-id="d36c0-114">Update</span></span>](../api/chartaxis-update.md) | [<span data-ttu-id="d36c0-115">ChartAxis</span><span class="sxs-lookup"><span data-stu-id="d36c0-115">ChartAxis</span></span>](chartaxis.md)   |<span data-ttu-id="d36c0-116">Atualize o objeto ChartAxis.</span><span class="sxs-lookup"><span data-stu-id="d36c0-116">Update ChartAxis object.</span></span> |
 
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="d36c0-117">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d36c0-117">Properties</span></span>
+| <span data-ttu-id="d36c0-118">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d36c0-118">Property</span></span>     | <span data-ttu-id="d36c0-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="d36c0-119">Type</span></span>   |<span data-ttu-id="d36c0-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="d36c0-120">Description</span></span>|
 |:---------------|:--------|:----------|
-|majorUnit|object|Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia.  O valor retornado sempre é um número.|
-|maximum|object|Representa o valor máximo no eixo dos valores.  Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
-|minimum|object|Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
-|minorUnit|object|Representa o intervalo entre duas marcas de escala secundárias. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.|
+|<span data-ttu-id="d36c0-121">majorUnit</span><span class="sxs-lookup"><span data-stu-id="d36c0-121">majorUnit</span></span>|<span data-ttu-id="d36c0-122">object</span><span class="sxs-lookup"><span data-stu-id="d36c0-122">object</span></span>|<span data-ttu-id="d36c0-p102">Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia.  O valor retornado sempre é um número.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p102">Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.</span></span>|
+|<span data-ttu-id="d36c0-126">maximum</span><span class="sxs-lookup"><span data-stu-id="d36c0-126">maximum</span></span>|<span data-ttu-id="d36c0-127">object</span><span class="sxs-lookup"><span data-stu-id="d36c0-127">object</span></span>|<span data-ttu-id="d36c0-p103">Representa o valor máximo no eixo dos valores.  Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p103">Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="d36c0-131">minimum</span><span class="sxs-lookup"><span data-stu-id="d36c0-131">minimum</span></span>|<span data-ttu-id="d36c0-132">object</span><span class="sxs-lookup"><span data-stu-id="d36c0-132">object</span></span>|<span data-ttu-id="d36c0-p104">Representa o valor mínimo no eixo dos valores. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p104">Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.</span></span>|
+|<span data-ttu-id="d36c0-136">minorUnit</span><span class="sxs-lookup"><span data-stu-id="d36c0-136">minorUnit</span></span>|<span data-ttu-id="d36c0-137">object</span><span class="sxs-lookup"><span data-stu-id="d36c0-137">object</span></span>|<span data-ttu-id="d36c0-p105">Representa o intervalo entre duas marcas de escala secundárias. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p105">Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.</span></span>|
 
-## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a><span data-ttu-id="d36c0-141">Relações</span><span class="sxs-lookup"><span data-stu-id="d36c0-141">Relationships</span></span>
+| <span data-ttu-id="d36c0-142">Relação</span><span class="sxs-lookup"><span data-stu-id="d36c0-142">Relationship</span></span> | <span data-ttu-id="d36c0-143">Tipo</span><span class="sxs-lookup"><span data-stu-id="d36c0-143">Type</span></span>   |<span data-ttu-id="d36c0-144">Descrição</span><span class="sxs-lookup"><span data-stu-id="d36c0-144">Description</span></span>|
 |:---------------|:--------|:----------|
-|formato|[ChartAxisFormat](chartaxisformat.md)|Representa a formatação de um objeto Chart, que inclui formatação de linha e de fonte. Somente leitura.|
-|majorGridlines|[ChartGridlines](chartgridlines.md)|Retorna um objeto de linha de grade que representa as principais linhas de grade do eixo especificado. Somente leitura.|
-|minorGridlines|[ChartGridlines](chartgridlines.md)|Retorna um objeto Gridlines que representa as linhas de grade secundárias do eixo especificado. Somente leitura.|
-|title|[ChartAxisTitle](chartaxistitle.md)|Representa o título do eixo. Somente leitura.|
+|<span data-ttu-id="d36c0-145">formato</span><span class="sxs-lookup"><span data-stu-id="d36c0-145">format</span></span>|[<span data-ttu-id="d36c0-146">ChartAxisFormat</span><span class="sxs-lookup"><span data-stu-id="d36c0-146">ChartAxisFormat</span></span>](chartaxisformat.md)|<span data-ttu-id="d36c0-p106">Representa a formatação de um objeto Chart, que inclui formatação de linha e de fonte. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p106">Represents the formatting of a chart object, which includes line and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="d36c0-149">majorGridlines</span><span class="sxs-lookup"><span data-stu-id="d36c0-149">majorGridlines</span></span>|[<span data-ttu-id="d36c0-150">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="d36c0-150">ChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="d36c0-p107">Retorna um objeto de linha de grade que representa as principais linhas de grade do eixo especificado. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p107">Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="d36c0-153">minorGridlines</span><span class="sxs-lookup"><span data-stu-id="d36c0-153">minorGridlines</span></span>|[<span data-ttu-id="d36c0-154">ChartGridlines</span><span class="sxs-lookup"><span data-stu-id="d36c0-154">ChartGridlines</span></span>](chartgridlines.md)|<span data-ttu-id="d36c0-p108">Retorna um objeto Gridlines que representa as linhas de grade secundárias do eixo especificado. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p108">Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.</span></span>|
+|<span data-ttu-id="d36c0-157">title</span><span class="sxs-lookup"><span data-stu-id="d36c0-157">title</span></span>|[<span data-ttu-id="d36c0-158">ChartAxisTitle</span><span class="sxs-lookup"><span data-stu-id="d36c0-158">ChartAxisTitle</span></span>](chartaxistitle.md)|<span data-ttu-id="d36c0-p109">Representa o título do eixo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d36c0-p109">Represents the axis title. Read-only.</span></span>|
 
-## <a name="json-representation"></a>Representação JSON
+## <a name="json-representation"></a><span data-ttu-id="d36c0-161">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d36c0-161">JSON representation</span></span>
 
-Veja a seguir uma representação JSON do recurso.
+<span data-ttu-id="d36c0-162">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d36c0-162">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
