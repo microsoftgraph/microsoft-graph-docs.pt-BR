@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso ChartAxisTitle
+description: Representa o título de um eixo do gráfico.
+ms.openlocfilehash: ede660e2ba5d0ab34e8b985574e3077ca06b32b6
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004828"
+---
 # <a name="chartaxistitle-resource-type"></a>Tipo de recurso ChartAxisTitle
 
 Representa o título de um eixo do gráfico.
@@ -7,36 +17,36 @@ Representa o título de um eixo do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle_get.md) | [ChartAxisTitle](chartaxistitle.md) |Recupere as propriedades e os relacionamentos do objeto chartAxisTitle.|
-|[Update](../api/chartaxistitle_update.md) | [ChartAxisTitle](chartaxistitle.md)    |Atualize o objeto ChartAxisTitle. |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Recupere as propriedades e os relacionamentos do objeto chartAxisTitle.|
+|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |Atualize o objeto ChartAxisTitle. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |texto|string|Representa o título do eixo.|
 |visible|booliano|Um booliano que especifica a visibilidade de um título do eixo.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartAxisTitleFormat](chartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|
+|formato|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Representa a formatação do título do eixo do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
 }
 
 ```

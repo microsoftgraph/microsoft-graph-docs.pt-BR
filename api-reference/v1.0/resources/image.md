@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Image
+ms.openlocfilehash: 3652eeb71f6a73fe0089dafc9908cc8b3451aa34
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006874"
+---
 # <a name="image-resource-type"></a>Tipo de recurso Image
 
 O recurso **Image** agrupa propriedades relacionadas a imagens em uma única estrutura. Se um [**DriveItem**](driveitem.md) tiver uma faceta **image** não nula, o item representa uma imagem bitmap.
@@ -6,18 +18,11 @@ O recurso **Image** agrupa propriedades relacionadas a imagens em uma única est
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@odata.type": "microsoft.graph.image"
-}-->
-
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
 {
-  "height": 1024,
-  "width": 1024
+  "width": 100,
+  "height": 200
 }
 ```
 
@@ -30,17 +35,15 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="remarks"></a>Comentários
 
-No OneDrive for Business, esse recurso retorna em itens que devem ser imagens com base na extensão de arquivo. Este recurso não retorna propriedades no OneDrive for Business.
+No OneDrive for Business, esse recurso retorna em itens que devem ser imagens com base na extensão de arquivo.
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "image resource",
-  "keywords": "",
+  "description": "The image facet describes properties of an image like width and height",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Image"
+} -->

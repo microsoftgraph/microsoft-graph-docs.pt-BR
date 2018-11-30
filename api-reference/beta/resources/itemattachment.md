@@ -1,6 +1,18 @@
+---
+title: Tipo de recurso itemAttachment
+description: Um contato, evento ou mensagem anexado a outro evento,
+ms.openlocfilehash: fd8638a7d263c2ebbe09c77f717af989e1dd5a0e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27038566"
+---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
-Um contato, evento ou mensagem que está anexado a outro evento, mensagem ou postagem.  
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Um contato, evento ou mensagem anexado a outro [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md).  
 
 Derivado de [attachment](attachment.md).
 
@@ -8,11 +20,11 @@ Derivado de [attachment](attachment.md).
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment_get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
-|[Delete](../api/attachment_delete.md) | Nenhum |Exclua o objeto itemAttachment. |
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
+|[Delete](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo.|
 |id|String| A ID do anexo.|
@@ -21,10 +33,10 @@ Derivado de [attachment](attachment.md).
 |name|Cadeia de caracteres|O nome de exibição do anexo.|
 |size|Int32|O tamanho do anexo em bytes.|
 
-## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|A mensagem ou evento anexado. Propriedade de navegação.|
+|item|[OutlookItem](outlookitem.md)|O contato anexado, mensagem ou evento. Propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 

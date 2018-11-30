@@ -1,0 +1,103 @@
+---
+title: Obter plannerUser
+description: 'Recupere as propriedades e relacionamentos de um objeto plannerUser. As propriedades retornadas incluem planos de favoritos do usuário e visualizados recentemente planos. '
+ms.openlocfilehash: fca4b37560ad0c6cd7e05aee56ebdeb1e6509101
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033670"
+---
+# <a name="get-planneruser"></a>Obter plannerUser
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Recupere as propriedades e relacionamentos de um objeto [plannerUser](../resources/planneruser.md) . As propriedades retornadas incluem planos de favoritos do usuário e visualizados recentemente planos. 
+## <a name="permissions"></a>Permissions
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.Read.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Sem suporte. |
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/planner
+GET /users/<id>/planner
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome      |Descrição|
+|:----------|:----------|
+| Autorização  | Portador {código}. Obrigatório.|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [plannerUser](../resources/planneruser.md) no corpo da resposta.
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_planneruser"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/planner
+```
+##### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.plannerUser"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 979
+
+{
+  "favoritePlanReferences": {
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": "8586866870001551087",
+      "planTitle": "Next Release Discussion"
+    },
+    "uZWtCtli30CGoWLIWSat1mQAC0ai": {
+      "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",
+      "orderHint": "8586888705198093378",
+      "planTitle": "Product Support"
+    }
+  },
+  "recentPlanReferences": {
+    "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2018-01-02T22:49:46.155Z",
+      "planTitle": "Next Release Discussion"
+    },
+    "XYE5pqNJu0uuRC2PM4ZQrmQAF2Pn": {
+      "@odata.type": "#microsoft.graph.plannerRecentPlanReference",
+      "lastAccessedDateTime": "2018-01-01T19:39:17.57Z",
+      "planTitle": "Success Metrics"
+    }
+  },
+  "id": "-YPnMJRiIUSKFyaVjYEkBWQAAc47"
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get plannerUser",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

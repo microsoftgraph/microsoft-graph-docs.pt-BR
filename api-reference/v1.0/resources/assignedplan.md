@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso assignedPlan
+description: A propriedade **assignedPlans** das entidades user e organization é uma coleção de **assignedPlan**.
+ms.openlocfilehash: 306c485b31189e7693075735ceda0812d3259251
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004430"
+---
 # <a name="assignedplan-resource-type"></a>Tipo de recurso assignedPlan
 
 A propriedade **assignedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **assignedPlan**.

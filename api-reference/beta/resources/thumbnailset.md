@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: ThumbnailSet
+ms.openlocfilehash: d88e19242ea6c271e206a4c1a582fdbbfac8877b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27034366"
+---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso **ThumbnailSet** é uma coleção com chave dos recursos [thumbnail](thumbnail.md). Ele é usado para representar um conjunto de miniaturas associado a um DriveItem.
 
@@ -17,10 +31,10 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "string (identifier)",
-  "large": {"@odata.type": "microsoft.graph.thumbnail"},
-  "medium": {"@odata.type": "microsoft.graph.thumbnail"},
-  "small": {"@odata.type": "microsoft.graph.thumbnail"},
-  "source": {"@odata.type": "microsoft.graph.thumbnail"}
+  "large": { "@odata.type": "microsoft.graph.thumbnail" },
+  "medium": { "@odata.type": "microsoft.graph.thumbnail" },
+  "small": { "@odata.type": "microsoft.graph.thumbnail" },
+  "source": { "@odata.type": "microsoft.graph.thumbnail" }
 }
 ```
 
@@ -34,13 +48,11 @@ Veja a seguir uma representação JSON do recurso.
 | small    | [Thumbnail](thumbnail.md) | Uma miniatura cortada em 48 x 48.                                                        |
 | source   | [Thumbnail](thumbnail.md) | Uma imagem em miniatura personalizada ou a imagem original usada para gerar outras miniaturas. |
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "thumbnailSet resource",
-  "keywords": "",
+  "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/ThumbnailSet"
+} -->

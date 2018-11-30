@@ -1,0 +1,150 @@
+---
+title: Obter contato
+description: Recupere as propriedades e os relacionamentos do objeto contact.
+ms.openlocfilehash: a44e90cac7a114afc8dbe1e20d4a09b89e5bd50d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004958"
+---
+# <a name="get-contact"></a>Obter contato
+
+Recupere as propriedades e os relacionamentos do objeto contact.
+
+Há dois cenários em que um aplicativo pode receber um contato na pasta de contatos de outro usuário:
+
+* Se o aplicativo tem permissões de aplicativo, ou,
+* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+
+
+## <a name="permissions"></a>Permissions
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Contacts.Read, Contacts.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Contacts.Read, Contacts.ReadWrite    |
+|Aplicativo | Contacts.Read, Contacts.ReadWrite |
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) do padrão de um usuário [contactFolder](../resources/contactfolder.md).
+```http
+GET /me/contacts/{id}
+GET /users/{id | userPrincipalName}/contacts/{id}
+```
+Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) de nível superior do usuário.
+```http
+GET /me/contactfolders/{Id}/contacts/{id}
+GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
+```
+Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md). O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho, e assim por diante.
+```http
+GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
+```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+|Nome|Valor|Descrição|
+|:---------------|:--------|:-------|
+|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relacionamentos do objeto [contact](../resources/contact.md) para conhecer os nomes compatíveis. |
+|$select|string|Lista separada por vírgulas de propriedades para incluir na resposta.|
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Cabeçalho       | Valor |
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório.  |
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [contact](../resources/contact.md) no corpo da resposta.
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "get_contact"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/contacts/{id}
+```
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.contact"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1977
+
+{
+  "id": "AAMkAGI2THk0AAA=",
+  "createdDateTime": "2014-10-19T23:08:24Z",
+  "lastModifiedDateTime": "2014-10-19T23:08:24Z",
+  "changeKey": "EQAAABYAAACd9nJ/tVysQos2hTfspaWRAAADTIa4",
+  "categories": [],
+  "parentFolderId": "AAMkAGI2AAEOAAA=",
+  "birthday": "1974-07-22",
+  "fileAs": "Fort, Garth",
+  "displayName": "Garth Fort",
+  "givenName": "Garth",
+  "initials": "G.F.",
+  "middleName": null,
+  "nickName": "Garth",
+  "surname": "Fort",
+  "title": null,
+  "yomiGivenName": null,
+  "yomiSurname": null,
+  "yomiCompanyName": null,
+  "generation": null,
+  "emailAddresses": [
+    {
+      "name": "Garth",
+      "address": "garth@a830edad9050849NDA1.onmicrosoft.com"
+    }
+  ],
+  "imAddresses": [
+    "sip:garthf@a830edad9050849nda1.onmicrosoft.com"
+  ],
+  "jobTitle": "Web Marketing Manager",
+  "companyName": "Contoso, Inc.",
+  "department": "Sales & Marketing",
+  "officeLocation": "20/1101",
+  "profession": null,
+  "businessHomePage": "https://www.contoso.com",
+  "assistantName": null,
+  "manager": null,
+  "homePhones": [],
+  "mobilePhone": null,
+  "businessPhones": [
+    "+1 918 555 0101"
+  ],
+  "homeAddress": {},
+  "businessAddress": {
+      "street": "10 Contoso Way",
+      "city": "Redmond",
+      "state": "WA",
+      "countryOrRegion": "USA",
+      "postalCode": "98075"  
+  },
+  "otherAddress": {},
+  "spouseName": null,
+  "personalNotes": null,
+  "children": []
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get contact",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

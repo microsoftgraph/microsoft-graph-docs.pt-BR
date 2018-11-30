@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartLineFormat
+description: Abrange as opções de formatação dos elementos de linha.
+ms.openlocfilehash: 6646f985fd106ed738432852fec5a3bad187ab61
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037147"
+---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Abrange as opções de formatação dos elementos de linha.
 
@@ -7,12 +19,12 @@ Abrange as opções de formatação dos elementos de linha.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat_get.md) | [ChartLineFormat](chartlineformat.md) |Leia as propriedades e os relacionamentos do objeto chartLineFormat.|
-|[Update](../api/chartlineformat_update.md) | [ChartLineFormat](chartlineformat.md)    |Atualize o objeto ChartLineFormat. |
-|[Clear](../api/chartlineformat_clear.md)|Nenhum|Limpe a formatação da linha de um elemento do gráfico.|
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Leia as propriedades e os relacionamentos do objeto chartLineFormat.|
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Atualize o objeto ChartLineFormat. |
+|[Clear](../api/chartlineformat-clear.md)|Nenhum|Limpe a formatação da linha de um elemento do gráfico.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |color|string|Código de cor HTML que representa a cor das linhas no gráfico.|
 

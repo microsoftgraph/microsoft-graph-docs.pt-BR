@@ -1,0 +1,36 @@
+---
+title: Tipo de recurso deviceAndAppManagementAssignmentTarget
+description: Tipo base para destinos de atribuição.
+ms.openlocfilehash: c2776251383306e247796cd88e450a8c482f3ac3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006644"
+---
+# <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Tipo base para destinos de atribuição.
+## <a name="properties"></a>Propriedades
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+
+## <a name="relationships"></a>Relações
+Nenhum
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
+}
+```
+
+
+

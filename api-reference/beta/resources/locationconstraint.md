@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso locationConstraint
+description: As condições indicadas por um cliente para o local de uma reunião.
+ms.openlocfilehash: d151ea97aa65aabdb759be4cb90b577606c648a5
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27034846"
+---
 # <a name="locationconstraint-resource-type"></a>Tipo de recurso locationConstraint
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 As condições indicadas por um cliente para o local de uma reunião.
 
@@ -23,9 +35,9 @@ Veja a seguir uma representação JSON do recurso
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|isRequired|Boolean|O cliente solicita o serviço para incluir na resposta um local para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, [findMeetingTimes](../api/user_findmeetingtimes.md) não retorna nenhuma sugestão de horário para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, **findMeetingTimes** continuará procurando horários para a reunião sem local. |
+|isRequired|Booliano|O cliente solicita o serviço para incluir na resposta um local para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, [findMeetingTimes](../api/user-findmeetingtimes.md) não retorna nenhuma sugestão de horário para a reunião. Se isso é verdadeiro e todos os recursos estão ocupados, **findMeetingTimes** continuará procurando horários para a reunião sem local. |
 |locations|Coleção [locationConstraintItem](locationconstraintitem.md)|Informações de restrição de um ou mais locais que o cliente solicita para a reunião.|
 |suggestLocation|Booliano|O cliente solicita o serviço para sugerir um ou mais locais para a reunião.|
 

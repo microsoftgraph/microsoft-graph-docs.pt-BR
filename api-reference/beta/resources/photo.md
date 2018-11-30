@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Foto
+ms.openlocfilehash: f61d37eecccd4bf08a2f8abbf4cda15dee5eb94d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037023"
+---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadados EXIF, em um [driveItem](driveitem.md).
 
@@ -13,39 +27,36 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 {
   "cameraMake": "string",
   "cameraModel": "string",
-  "exposureDenominator": 1024,
-  "exposureNumerator": 1024,
-  "fNumber": 1024,
-  "focalLength": 1024,
-  "iso": 1024,
+  "exposureDenominator": 1000.0,
+  "exposureNumerator": 1.0,
+  "fNumber": 1.8,
+  "focalLength": 22.5,
+  "iso": 100,
   "takenDateTime": "String (timestamp)"
 }
 ```
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	                | Tipo	                      | Descrição                                                     |
-|:------------------------|:--------------------------|:----------------------------------------------------------------|
-| **takenDateTime**       | DateTimeOffset            | Representa a data e a hora em que a foto foi tirada. Somente leitura.               |
-| **cameraMake**          | String                    | Fabricante da câmera. Somente leitura.                                            |
-| **cameraModel**         | String                    | Modelo da câmera. Somente leitura.                                                   |
-| **fNumber**             | Double                    | O valor de f-stop da câmera. Somente leitura.                               |
-| **exposureDenominator** | Int32                     | O denominador da fração do tempo de exposição da câmera. Somente leitura. |
-| **exposureNumerator**   | Int32                     | O numerador da fração do tempo de exposição da câmera. Somente leitura.   |
-| **focalLength**         | Double                    | A distância focal da câmera. Somente leitura.                               |
-| **iso**                 | Int32                     | O valor de ISO da câmera. Somente leitura.                                  |
 
+| Propriedade                | Tipo           | Descrição
+|:------------------------|:---------------|:----------------------------------
+| **takenDateTime**       | DateTimeOffset | Representa a data e a hora em que a foto foi tirada. Somente leitura.
+| **cameraMake**          | String         | Fabricante da câmera. Somente leitura.
+| **cameraModel**         | String         | Modelo da câmera. Somente leitura.
+| **fNumber**             | Double         | O valor de f-stop da câmera. Somente leitura.
+| **exposureDenominator** | Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura.
+| **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
+| **focalLength**         | Double         | A distância focal da câmera. Somente leitura.
+| **iso**                 | Int64          | O valor de ISO da câmera. Somente leitura.
 
 ## <a name="remarks"></a>Comentários
 O OneDrive for Business e o SharePoint retornam apenas a propriedade **takenDateTime**.
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "photo resource",
-  "keywords": "",
+  "description": "The photo facet provides details about the camera and settings on the camera for photos.",
+  "keywords": "camera make,camera model, exposure, f-stop, iso",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Photo"
+} -->

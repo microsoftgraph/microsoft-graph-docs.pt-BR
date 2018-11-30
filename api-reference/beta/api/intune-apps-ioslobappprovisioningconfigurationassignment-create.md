@@ -1,0 +1,92 @@
+---
+title: Criar iosLobAppProvisioningConfigurationAssignment
+description: Crie um novo objeto de iosLobAppProvisioningConfigurationAssignment.
+ms.openlocfilehash: 5d3a51aab8560e4922d74e48675aa95c25be5c72
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033586"
+---
+# <a name="create-ioslobappprovisioningconfigurationassignment"></a>Criar iosLobAppProvisioningConfigurationAssignment
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Crie um novo objeto de [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) .
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementApps.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, fornece uma representação JSON para o objeto iosLobAppProvisioningConfigurationAssignment.
+
+A tabela a seguir mostra as propriedades que são necessárias quando você cria o iosLobAppProvisioningConfigurationAssignment.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Chave da entidade.|
+|destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
+
+
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments
+Content-type: application/json
+Content-length: 184
+
+{
+  "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfigurationAssignment",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  }
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 233
+
+{
+  "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfigurationAssignment",
+  "id": "eac7008e-008e-eac7-8e00-c7ea8e00c7ea",
+  "target": {
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  }
+}
+```
+
+
+
+
+

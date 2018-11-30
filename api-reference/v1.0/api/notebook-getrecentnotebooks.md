@@ -1,0 +1,96 @@
+---
+title: 'notebook: getRecentNotebooks'
+description: Obtenha uma lista de instâncias recentNotebook que tenham sido acessadas pelo usuário conectado.
+ms.openlocfilehash: 598d703732060f6d2074ce53c3157597c0d3cc7e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005211"
+---
+# <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
+
+Obtenha uma lista de instâncias [recentNotebook](../resources/recentnotebook.md) que tenham sido acessadas pelo usuário conectado.
+
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,|
+|Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.Read, Notes.ReadWrite |
+|Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+```
+
+O `<id | userPrincipalName>` para o usuário deve corresponder ao usuário codificado no token de autorização usado para fazer a solicitação.
+
+## <a name="function-parameters"></a>Parâmetros de função
+
+| Parâmetro    | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|includePersonalNotebooks|Booliano|Inclua os blocos de anotações de propriedade do usuário. Defina para `true` para incluir os blocos de anotações pertencentes ao usuário; caso contrário, configure para `false`. Se você não incluir o parâmetro `includePersonalNotebooks`, sua solicitação retornará uma resposta de erro `400`.|
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome       | Descrição|
+|:---------------|:----------|
+| Autorização  | Portador {código}|
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+Uma resposta bem-sucedida retorna um `200 OK` que contém uma coleção JSON de **recentNotebooks**.
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como chamar essa API.
+
+##### <a name="request"></a>Solicitação
+O exemplo a seguir mostra a solicitação.
+<!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
+```http
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)
+```
+
+#### <a name="response"></a>Resposta
+O exemplo a seguir mostra a resposta.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.recentNotebook)",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-Length: 1110
+
+{
+  "value":[
+    {
+      "displayName":"Personal Notebook","lastAccessedTime":"timestamp","links":{
+        "oneNoteClientUrl":{
+          "href":"onenote:href-value"
+        },"oneNoteWebUrl":{
+          "href":"href-value"
+        }
+      },"sourceService":"OneDrive"
+    },{
+      "displayName":"Team Shared Notebook","lastAccessedTime":"timestamp","links":{
+        "oneNoteClientUrl":{
+          "href":"onenote:href-value"
+        },"oneNoteWebUrl":{
+          "href":"href-value"
+        }
+      },"sourceService":"OneDriveForBusiness"
+    }
+  ]
+}
+```

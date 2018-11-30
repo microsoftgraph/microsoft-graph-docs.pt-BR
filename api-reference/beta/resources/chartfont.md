@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartFont
+description: Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
+ms.openlocfilehash: a0aa3150cb6ad31b4ad635253fd6ae35647b5ff7
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037058"
+---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
 
@@ -7,16 +19,16 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Atualize o objeto ChartFont. |
+|[Get ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
+|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |Atualize o objeto ChartFont. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|cadeia de caracteres|Nome da fonte (por exemplo, "Calibri")|
+|name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
 |underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` e `Single`.|
 

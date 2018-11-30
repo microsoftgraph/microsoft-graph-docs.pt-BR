@@ -1,17 +1,37 @@
-# <a name="permission-resource-type"></a>Tipo de recurso permission
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Permissão
+ms.openlocfilehash: 0a98080434dcb18944e58c2f1ada5019e3c32332
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006566"
+---
+# <a name="permission-resource-type"></a>Tipo de recurso de permissão
 
-O recurso **Permission** fornece informações sobre uma permissão concedida a um recurso [DriveItem](driveitem.md).
+O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
 
-Permissões têm um número de formas diferentes. O recurso **Permission** representa estes diferentes formulários por meio de facetas do recurso.
+As permissões de compartilhamento têm várias formas diferentes.
+O recurso **Permission** representa estes diferentes formatos por meio de facetas do recurso.
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
+  "optionalProperties": [
+    "link",
+    "grantedTo",
+    "invitation",
+    "inheritedFrom",
+    "shareId"
+  ],
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
@@ -35,8 +55,8 @@ Veja a seguir uma representação JSON do recurso
 | invitation    | [SharingInvitation][]                     | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
-| role          | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId       | String                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [ **API** Shares](../api/shares_get.md). Somente leitura.
+| funções         | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
+| shareId       | String                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [ **API** Shares](../api/shares-get.md). Somente leitura.
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -56,15 +76,94 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 | `sp.owner`  | Para o SharePoint e o OneDrive for Business, isso representa a função de proprietário.       |
 | `sp.member` | Para o SharePoint e o OneDrive for Business, isso representa a função de membro.      |
 
+## <a name="sharing-links"></a>Links de compartilhamento
+O tipo mais comum de permissões são os links de compartilhamento.
+Esses links fornecem uma URL exclusiva que inclui o recurso que está sendo compartilhado e um token de autenticação que fornece acesso ao recurso. Os usuários não precisam entrar para acessar o conteúdo compartilhado com um link de compartilhamento. Os usuários podem compartilhar um link que concede acesso somente leitura ou acesso de gravação ao conteúdo.
+
+### <a name="view-link"></a>Link de exibição
+Um link de exibição oferece acesso somente leitura a um item.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
+```json
+{
+  "id": "1",
+  "roles": ["read"],
+  "link": {
+    "type": "view",
+    "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
+    "application": { "id": "1234", "displayName": "Sample Application" }
+  },
+  "shareId": "!LKj1lkdlals90j1nlkascl"
+}
+```
+
+### <a name="edit-link"></a>Link de edição
+Um link de edição fornece acesso de leitura e gravação a um item.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
+```json
+{
+  "id": "2",
+  "roles": ["write"],
+  "link": {
+    "type": "edit",
+    "webUrl": "https://onedrive.live.com/redir?resid=5D33DD65C6932946!70859&authkey=!AL7N1QAfSWcjNU8&ithint=folder%2cgif",
+    "application": { "id": "1234", "displayName": "Sample Application" }
+  },
+  "shareId": "!LKj1lkdlals90j1nlkascl"
+}
+```
+
+### <a name="sharing-invitation"></a>Convite de compartilhamento
+Além de criar links de compartilhamento, um usuário pode ser convidado pelo endereço de email.
+Nesse cenário, a permissão cria um convite que é enviado ao email do usuário.
+
+#### <a name="invitation-to-an-email-address"></a>Convite para um endereço de email
+Se a permissão for enviada por meio do endereço de email para um destinatário que não tem uma conta correspondente, a propriedade **grantedTo** não poderá ser definida até que o convite seja resgatado, o que ocorre na primeira vez que um usuário clica no link e entra na sessão.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
+```json
+{
+  "id": "1",
+  "roles": ["write"],
+  "invitation": {
+    "email": "jd@gmail.com",
+    "signInRequired": true
+  },
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+}
+```
+
+Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a propriedade **grantedTo** conterá as informações sobre a conta que resgatou as permissões:
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+```json
+{
+  "id": "1",
+  "roles": ["write"],
+  "grantedTo": {
+    "user": {
+      "id": "5D33DD65C6932946",
+      "displayName": "John Doe"
+    }
+  },
+  "invitation": {
+    "email": "jd@outlook.com",
+    "signInRequired": true
+  },
+  "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U"
+}
+```
+
 ## <a name="methods"></a>Métodos
 
-| Método                                              | Caminho REST
-|:----------------------------------------------------|:-----------------------
-| [Listar permissões](../api/item_list_permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Obter permissão](../api/permission_get.md)          | `GET /drive/items/{item-id}/permissions/{id}`
-| [Adicionar](../api/item_invite.md)                        | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission_update.md)               | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Delete](../api/permission_delete.md)               | `DELETE /drive/items/{item-id}/permissions/{id}`
+| Método                                                   | Caminho REST
+|:---------------------------------------------------------|:-----------------------
+| [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Obter permissão](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
+| [Adicionar](../api/driveitem-invite.md)                        | `POST /drive/items/{item-id}/invite`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 ## <a name="remarks"></a>Comentários
@@ -75,8 +174,8 @@ O OneDrive for Business e as bibliotecas de documentos do SharePoint não retorn
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "permission resource",
-  "keywords": "",
+  "description": "The permission object provides information about permissions and roles and sharing information.",
+  "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Resources/Permission"
+} -->

@@ -1,3 +1,13 @@
+---
+title: Trabalhando com usuários no Microsoft Graph
+description: Você pode usar o Microsoft Graph para criar experiências envolventes do aplicativo com base nos usuários, em suas relações com outros usuários e em grupos e seus emails, calendário e arquivos.
+ms.openlocfilehash: edbf9eb36f3c4d3276b5ddd594b9514e0d8ae15e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005668"
+---
 # <a name="working-with-users-in-microsoft-graph"></a>Trabalhando com usuários no Microsoft Graph
 
 Você pode usar o Microsoft Graph para criar experiências envolventes do aplicativo com base nos usuários, em suas relações com outros usuários e em grupos e seus emails, calendário e arquivos.
@@ -8,7 +18,8 @@ Você pode acessar [usuários](user.md) pelo Microsoft Graph de duas maneiras:
 - Usando o alias `/me` para o usuário conectado, que é igual a `/users/{signed-in user's id}`
 
 ## <a name="authorization"></a>Autorização
-Uma das seguintes [permissões](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes) é necessária para acessar operações de usuário. As três primeiras permissões podem ser concedidas a um aplicativo por um usuário. O restante só pode ser concedido a um aplicativo pelo administrador.
+
+Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) é necessária para acessar operações de usuário. As três primeiras permissões podem ser concedidas a um aplicativo por um usuário. O restante só pode ser concedido a um aplicativo pelo administrador.
 
 - User.ReadBasic.All
 - User.Read
@@ -20,10 +31,11 @@ Uma das seguintes [permissões](https://developer.microsoft.com/en-us/graph/docs
 - Directory.AccessAsUser.All
 
 ## <a name="common-properties"></a>Propriedades comuns
-O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários.  Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`. 
 
-| Propriedade | Descrição |
-|----------|-------------|
+O item a seguir representa o conjunto padrão de propriedades que serão retornadas ao se obter um usuário ou listar usuários. Este é um subconjunto de todas as propriedades disponíveis. Para obter mais propriedades do usuário, use o parâmetro de consulta `$select`. 
+
+|Propriedade |Descrição |
+|:----------|:-------------|
 |id | O identificador exclusivo do usuário.|
 |businessPhones | Os números de telefone do usuário.|
 |displayName | O nome exibido no catálogo de endereços do usuário.|
@@ -36,18 +48,21 @@ O item a seguir representa o conjunto padrão de propriedades que serão retorna
 |surname| O sobrenome do usuário. |
 |userPrincipalName| O nome UPN do usuário. |
 
+<br/>
+
 Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user](user.md).
 
 ## <a name="common-operations"></a>Operações comuns
->**Observação:** Algumas destas operações exigem permissões adicionais.
 
-| Caminho    | Descrição |
-|---------|-------------|
-|[`/users`](../api/user_list.md) | Lista os usuários na organização. |
-|[`/users/{id}`](../api/user_get.md) | Obtém um usuário específico pela id. |
-|[`/users/{id}/photo/$value`](../api/profilephoto_get.md)| Obtém a foto de perfil do usuário. |
-|[`/users/{id}/manager`](../api/user_list_manager.md) | Obtém o gerente do usuário. |
-|[`/users/{id}/messages`](../api/user_list_messages.md)| Lista as mensagens de email do usuário em sua caixa de entrada principal. |
-|[`/users/{id}/events`](../api/user_list_events.md) | Lista os eventos futuros do usuário em seu calendário. |
-|[`/users/{id}/drive`](../api/drive_get.md)| Obtém o repositório de arquivos do OneDrive do usuário. |
-|[`/users/{id}/memberOf`](../api/user_list_memberof.md)| Lista os grupos dos quais o usuário é membro. |
+> **Observação:** Algumas destas operações exigem permissões adicionais.
+
+| Path    | Descrição |
+|:---------|:-------------|
+|[`/users`](../api/user-list.md) | Lista os usuários na organização. |
+|[`/users/{id}`](../api/user-get.md) | Obtém um usuário específico pela id. |
+|[`/users/{id}/photo/$value`](../api/profilephoto-get.md)| Obtém a foto de perfil do usuário. |
+|[`/users/{id}/manager`](../api/user-list-manager.md) | Obtém o gerente do usuário. |
+|[`/users/{id}/messages`](../api/user-list-messages.md)| Lista as mensagens de email do usuário em sua caixa de entrada principal. |
+|[`/users/{id}/events`](../api/user-list-events.md) | Lista os eventos futuros do usuário em seu calendário. |
+|[`/users/{id}/drive`](../api/drive-get.md)| Obtém o repositório de arquivos do OneDrive do usuário. |
+|[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lista os grupos dos quais o usuário é membro. |
