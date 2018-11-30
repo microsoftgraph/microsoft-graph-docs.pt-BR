@@ -1,0 +1,120 @@
+---
+title: Atualizar depOnboardingSetting
+description: Atualize as propriedades de um objeto depOnboardingSetting.
+ms.openlocfilehash: 931df96b837610044a8c9337fa1fbd5de2a3d52d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033206"
+---
+# <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Atualize as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, fornece uma representação JSON para o objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+
+A tabela a seguir mostra as propriedades que são necessárias quando você cria o [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|O UUID do objeto.|
+|appleIdentifier|Cadeia de caracteres|A ID do Apple usada para obter o token atual.|
+|tokenExpirationDateTime|DateTimeOffset|Quando o token irá expirar.|
+|lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
+|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
+|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
+|shareTokenWithSchoolDataSyncService|Booliano|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
+|lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
+|tokenName|String|Nome amigável para o Token de Dep|
+|syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
+|defaultProfileDisplayName|String|Obtém sincronizados contagem de dispositivo|
+|dataSharingConsentGranted|Booliano|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+
+
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
+Content-type: application/json
+Content-length: 589
+
+{
+  "appleIdentifier": "Apple Identifier value",
+  "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+  "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
+  "shareTokenWithSchoolDataSyncService": true,
+  "lastSyncErrorCode": 1,
+  "tokenType": "dep",
+  "tokenName": "Token Name value",
+  "syncedDeviceCount": 1,
+  "defaultProfileDisplayName": "Default Profile Display Name value",
+  "dataSharingConsentGranted": true
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 697
+
+{
+  "@odata.type": "#microsoft.graph.depOnboardingSetting",
+  "id": "40342229-2229-4034-2922-344029223440",
+  "appleIdentifier": "Apple Identifier value",
+  "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
+  "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
+  "shareTokenWithSchoolDataSyncService": true,
+  "lastSyncErrorCode": 1,
+  "tokenType": "dep",
+  "tokenName": "Token Name value",
+  "syncedDeviceCount": 1,
+  "defaultProfileDisplayName": "Default Profile Display Name value",
+  "dataSharingConsentGranted": true
+}
+```
+
+
+
+
+

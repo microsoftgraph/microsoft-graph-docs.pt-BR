@@ -1,0 +1,133 @@
+---
+title: Atualizar propriedades de educationUser
+description: Atualize as propriedades de um objeto **educationuser**.
+ms.openlocfilehash: e5aa15075ac3e4f9386ac27d048ee339e7455b29
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005881"
+---
+# <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
+
+Atualize as propriedades de um objeto **educationuser**.
+## <a name="permissions"></a>Permissões
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | EduRoster.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /education/me
+PATCH /education/users/{id}
+```
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Cabeçalho       | Valor |
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório.  |
+| Content-Type  | application/json  |
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|displayName| Cadeia de caracteres| Nome de exibição do usuário|
+|givenName| Cadeia de caracteres | Nome |
+|middleName| Cadeia de caracteres | O nome do meio do usuário|
+|surname| Cadeia de caracteres | Sobrenome do usuário|
+|mail| Cadeia de caracteres| endereço de email|
+|mobilePhone| Cadeia de caracteres | O número de celular do usuário |
+|externalSource|string| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|externalSource|string| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
+|mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço de email do usuário.|
+|residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
+|primaryRole|string| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
+|student|[educationStudent](../resources/educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
+|teacher|[educationTeacher](../resources/educationteacher.md)| Se a função principal for professor, esse bloco conterá dados específicos do professor.|
+
+
+## <a name="response"></a>Resposta
+Se bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [educationUser](../resources/educationuser.md) atualizado no corpo da resposta.
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "update_educationuser"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/education/users/{user-id}
+Content-type: application/json
+Content-length: 508
+
+{
+  "displayName": "Rogelio Cazares",
+  "givenName": "Rogelio",
+  "middleName": "Fernando",
+  "surname": "Cazares",
+}
+```
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationUser"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 508
+
+{
+  "id": "13020",
+  "displayName": "Rogelio Cazares",
+  "givenName": "Rogelio",
+  "middleName": "Fernando",
+  "surname": "Cazares",
+  "mail": "rogelioC@contoso.com",
+  "mobilePhone": "+1 (253) 555-0101",
+  "createdBy": {
+        "user": {
+          "displayName": "Susana Rocha",
+          "id": "14012",
+        }
+  },
+  "externalSource": "sis",
+  "mailingAddress": {
+        "city": "Los Angeles",
+        "countryOrRegion": "United States",
+        "postalCode": "98055",
+        "state": "CA",
+        "street": "12345 Main St."
+      },
+  "primaryRole": "student",
+  "residenceAddress": {
+        "city": "Los Angeles",
+        "countryOrRegion": "United States",
+        "postalCode": "98055",
+        "state": "CA",
+        "street": "12345 Main St."
+      },
+  "student": {
+      "externalId": "13005",
+      "birthDate": "2001-01-01T00:00:00Z"
+    }
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update educationuser",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

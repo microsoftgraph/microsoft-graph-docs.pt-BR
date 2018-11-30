@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso onenoteOperationError
+description: Um erro de uma operação do OneNote que falhou.
+ms.openlocfilehash: 0dab8b405c99f2931d2cc02cc915df5f805322d8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039733"
+---
 # <a name="onenoteoperationerror-resource-type"></a>Tipo de recurso onenoteOperationError
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Um erro de uma operação do OneNote que falhou.
 
@@ -22,7 +34,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |código|string|O código do erro.|
 |message|string|A mensagem de erro.|

@@ -1,3 +1,13 @@
+---
+title: tipo de recurso dateTimeTimeZone
+description: Descreve a data, a hora e o fuso horário de um ponto no tempo.
+ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003857"
+---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
 
 Descreve a data, a hora e o fuso horário de um ponto no tempo.
@@ -5,8 +15,8 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|DateTime|String|Um único ponto de tempo em uma representação combinada de data e hora (`<date>T<time>`).|
-|TimeZone|String|Um dos seguintes nomes de fuso horário.|
+|dateTime|String|Um único ponto de tempo em uma representação combinada de data e hora (`<date>T<time>`).|
+|timeZone|String|Um dos seguintes nomes de fuso horário.|
 
 A propriedade _TimeZone_ pode ser definida para qualquer um dos fusos horários com suporte no Windows, bem como os nomes de fusos horários a seguir.
 
@@ -104,7 +114,7 @@ Europa/Bucareste
 
 África/Joanesburgo
 
-Europa/Kiev
+Europa/Kiev (Kiev)
 
 Europa/Istambul
 
@@ -138,21 +148,21 @@ Europa/Moscou
 
 Ásia/Karachi
 
-Ásia/Tashkent
+Ásia/Toshkent (Tashkent)
 
-Ásia/Calcutá
+Ásia/Kolkata (Calcutá)
 
 Ásia/Colombo
 
 Ásia/Katmandu
 
-Ásia/Almaty
+Ásia/Astana (Almaty)
 
 Ásia/Dacca
 
 Ásia/Ecaterimburgo
 
-Ásia/Rangoon
+Ásia/Yakutsk (Yangon)
 
 Ásia/Bangcoc
 

@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: BaseItem
+ms.openlocfilehash: eaf73cf54671393b61cc37b5a5d1922060640882
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004673"
+---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
 O recurso **baseItem** é um recurso abstrato que contém um conjunto comum de propriedades compartilhado entre vários outros tipos de recursos. Recursos que derivam de **baseItem** incluem:
@@ -15,6 +27,8 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 
@@ -40,15 +54,24 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 | id                   | string            | O identificador exclusivo da unidade. Somente leitura.                                         |
 | createdBy            | [identitySet][]   | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.        |
 | createdDateTime      | dateTimeOffset    | Data e hora de criação do item. Somente leitura.                                             |
+| description          | String            | Fornece uma descrição do usuário visíveis do item. Opcional.                             |
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura. |
 | lastModifiedDateTime | dateTimeOffset    | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                   |
 | name                 | string            | O nome do item. Leitura e gravação.                                                      |
 | parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.                              |
-| webUrl               | cadeia de caracteres (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
+| webUrl               | string (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
 
-[identitySet]: identitySet.md
+## <a name="relationships"></a>Relações
+
+| Relação       | Tipo     | Descrição
+|:-------------------|:---------|:---------------------------------------------
+| createdByUser      | [user][] | A identidade do usuário que criou o item. Somente leitura.
+| lastModifiedByUser | [user][] | A identidade do usuário que modificou o item pela última vez. Somente leitura.
+
+[identitySet]: identityset.md
 [itemReference]: itemreference.md
+[user]: user.md
 
 ## <a name="remarks"></a>Comentários
 
@@ -61,8 +84,5 @@ O tipo `baseItem` não deve ser usado diretamente.
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/baseItem",
-  "tocBookmarks": {
-    "Site": "#"
-  }
+  "tocPath": "Resources/BaseItem"
 } -->

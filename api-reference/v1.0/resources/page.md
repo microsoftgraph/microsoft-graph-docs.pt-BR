@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso page
+description: Uma página em um bloco de anotações do OneNote.
+ms.openlocfilehash: 19380f06ad4706f623397681a020054e65eba029
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006753"
+---
 # <a name="page-resource-type"></a>Tipo de recurso page
 
 Uma página em um bloco de anotações do OneNote.
@@ -6,12 +16,14 @@ Uma página em um bloco de anotações do OneNote.
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.onenoteEntitySchemaObjectModel",
   "optionalProperties": [
     "parentNotebook",
     "parentSection"
   ],
+  "isMediaEntity": true,
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -50,16 +62,16 @@ Veja a seguir uma representação JSON do recurso.
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
-|parentSection|[Section](section.md)|A seção que contém a página. Somente leitura.|
+|parentSection|[OnenoteSection](section.md)|A seção que contém a página. Somente leitura.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get page](../api/page_get.md) | [Página](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar o conteúdo da página](../api/page_update.md) | None |Atualizar o conteúdo HTML da página. |
-|[Excluir página](../api/page_delete.md) | None |Exclua a página. |
-|[copyToSection](../api/page_copytosection.md)| None |Copia a página para uma seção específica.|
+|[Get page](../api/page-get.md) | [Página](page.md) |Leia as propriedades e as relações da página.|
+|[Atualizar o conteúdo da página](../api/page-update.md) | None |Atualizar o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | None |Exclua a página. |
+|[copyToSection](../api/page-copytosection.md)| None |Copia a página para uma seção específica.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

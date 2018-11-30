@@ -1,3 +1,13 @@
+---
+title: tipo de recurso attachment
+description: Você pode adicionar conteúdo relacionado a um evento,
+ms.openlocfilehash: 418d8d4e60d12fed5a54f994e14e996c65731926
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005427"
+---
 # <a name="attachment-resource-type"></a>tipo de recurso attachment
 
 Você pode adicionar conteúdo relacionado a um [event](../resources/event.md), [message](../resources/message.md) u [post](../resources/post.md) na forma de anexo
@@ -6,7 +16,7 @@ Você pode adicionar conteúdo relacionado a um [event](../resources/event.md), 
 
 * Um arquivo (recurso [fileAttachment](../resources/fileattachment.md))
 * Um item (contato, evento ou mensagem, representado por um recurso [itemAttachment](../resources/itemattachment.md))
-* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceAttachment.md))
+* Um link para um arquivo (recurso [referenceAttachment](../resources/referenceattachment.md))
 
 
 ## <a name="methods"></a>Métodos
@@ -15,18 +25,18 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter anexo](../api/attachment_get.md) | [attachment](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento, mensagem ou postagem.|
-|[Adicionar anexo a um event](../api/event_post_attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento.|
-|[Adicionar um anexo a uma mensagem](../api/message_post_attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
-|[Adicionar anexo a uma postagem](../api/post_post_attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem.|
-|[Listar anexos de um evento](../api/event_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento. |
-|[Listar anexos de uma mensagem](../api/message_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
-|[Listar anexos de uma postagem](../api/post_list_attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
-|[Delete](../api/attachment_delete.md) | Nenhum |Exclua um anexo em um evento, mensagem ou postagem. |
+|[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades e as relações de um anexo, anexados a um evento, mensagem ou postagem.|
+|[Adicionar anexo a um event](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento.|
+|[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
+|[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem.|
+|[Listar anexos de um evento](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento. |
+|[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
+|[Listar anexos de uma postagem](../api/post-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
+|[Delete](../api/attachment-delete.md) | Nenhum |Exclua um anexo em um evento, mensagem ou postagem. |
 
 ## <a name="properties"></a>Propriedades
 
-A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o tipo de anexo específico ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceAttachment.md)) para propriedades adicionais.
+A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o tipo de anexo específico ([fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) ou [referenceAttachment](../resources/referenceattachment.md)) para propriedades adicionais.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -46,6 +56,8 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

@@ -1,3 +1,13 @@
+---
+title: tipo de recurso do onenote
+description: O ponto de entrada para os recursos do OneNote.
+ms.openlocfilehash: f244fdf1770cbe34110097d8885b05e6407ee45f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006716"
+---
 # <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
 O ponto de entrada para os recursos do OneNote.
@@ -30,29 +40,42 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 ```
 ## <a name="authorization"></a>Autorização
 
-Para obter informações sobre as permissões necessárias para trabalhar com o APIs do OneNote, confira [Permissões de anotações](../../../concepts/permissions_reference.md#notes-permissions).
+Para obter informações sobre as permissões necessárias para trabalhar com o APIs do OneNote, confira [Permissões de anotações](/graph/permissions-reference#notes-permissions).
 
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |notebooks|Coleção [Notebook](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
-|operations|Coleção [Operation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
-|páginas|Coleção [Page](page.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
-|recursos|Coleção [Resource](resource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|
+|operations|Coleção [OnenoteOperation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
+|páginas|Coleção [OnenotePage](page.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|recursos|Coleção [OnenoteResource](resource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](resource.md). Somente leitura. Anulável.|
 |sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
-|seções|Coleção [Section](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|sections|Coleção [OnenoteSection](section.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Create notebook](../api/onenote_post_notebooks.md) |[Notebook](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
-|[List notebooks](../api/onenote_list_notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
-|[Create page](../api/onenote_post_pages.md) |[Page](page.md)| Crie uma página postando na coleção pages.|
-|[List pages](../api/onenote_list_pages.md) |Coleção [Page](page.md)| Obter uma coleção de páginas.|
-|[List section groups](../api/onenote_list_sectiongroups.md) |Coleção [SectionGroup](sectiongroup.md)| Obter uma coleção de grupos de seção.|
-|[List sections](../api/onenote_list_sections.md) |Coleção [Section](section.md)| Obter uma coleção de seções.|
+|[Create notebook](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
+|[List notebooks](../api/onenote-list-notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
+|[Create page](../api/onenote-post-pages.md) |[Page](page.md)| Crie uma página postando na coleção pages.|
+|[List pages](../api/onenote-list-pages.md) |Coleção [Page](page.md)| Obter uma coleção de páginas.|
+|[List section groups](../api/onenote-list-sectiongroups.md) |Coleção [SectionGroup](sectiongroup.md)| Obter uma coleção de grupos de seção.|
+|[List sections](../api/onenote-list-sections.md) |Coleção [OnenoteSection](section.md)| Obter uma coleção de seções.|
+
+
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
