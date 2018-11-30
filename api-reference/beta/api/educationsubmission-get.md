@@ -1,0 +1,125 @@
+---
+title: Obter educationSubmission
+description: 'Recupere o envio de um determinado. Um objeto de envio representa trabalho student para uma atribuição. Recursos associados representam o envio isso funcione. Somente o aluno a que o envio é atribuído pode ver e modificar o envio. Um professor possui acesso total para todos os envios. '
+ms.openlocfilehash: 016e8d2e04377ec24fa55ad940fb97364786f433
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27036928"
+---
+# <a name="get-educationsubmission"></a>Obter educationSubmission
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Recupere o envio de um determinado. Um objeto de envio representa trabalho student para uma atribuição. Recursos associados representam o envio isso funcione. Somente o aluno a que o envio é atribuído pode ver e modificar o envio. Um professor possui acesso total para todos os envios. 
+
+O nível e os comentários feitos durante um professor também fazem parte deste objeto. Professores só podem adicionar ou alterar comentários e notas. Alunos não verá o nível ou comentários até que a atribuição foi liberada. As permissões básicas não incluir nível e comentários mas incluem todos os outros.
+
+## <a name="permissions"></a>Permissions
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | Sem suporte. | 
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+GET /education/classes/{id}/assignments/{id}/submissions/{id}
+```
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Cabeçalho       | Valor |
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório.  |
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_educationsubmission"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/submissions/33223
+```
+##### <a name="response"></a>Resposta
+Este é um exemplo de resposta. 
+
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 712
+
+{
+    "feedback": {
+      text: {
+        "content": "Good work!",
+        "contentType": "Text"
+      },
+      feedbackDateTime: "2014-01-01T00:00:00Z",
+      feedbackBy: {
+        "user": {
+          "displayName": "Susana Rocha",
+          "id": "14012"
+        }
+      },
+      "@odata.type": "microsoft.graph.educationFeedback"
+      },
+      "grade": {
+         "gradedBy": {
+          "user": {
+            "displayName": "Susana Rocha",
+            "id": "14012"
+          },
+        },
+        "gradedDateTime": "2014-01-01T00:00:00Z"
+      },
+      "id": "33223",
+      "recipient": {
+        "userId": "13015"
+      },
+      "releasedBy": {
+          "user": {
+            "displayName": "Susana Rocha",
+            "id": "14012"
+          },
+        },
+      "releasedDateTime": "2014-01-01T00:00:00Z",
+      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+      "status": "working",
+      "submittedBy": {
+          "user": {
+            "displayName": "Susana Rocha",
+            "id": "14012"
+          },
+        },
+      "submittedDateTime": "2014-01-01T00:00:00Z"
+    }
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get educationSubmission",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartPoint
+description: Representa um ponto de uma série do gráfico.
+ms.openlocfilehash: 3d1bcc26fdc78bd7b844c870d40346a5f1f0496f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037848"
+---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa um ponto de uma série do gráfico.
 
@@ -7,17 +19,17 @@ Representa um ponto de uma série do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Leia as propriedades e os relacionamentos do objeto chartPoint.|
-|[List](../api/chartpoint_list.md) | Coleção [ChartPoint](chartpoint.md) |Obtenha a coleção de objetos chartPoint. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Recupera um ponto com base na respectiva posição dentro da série.|
+|[Get ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |Leia as propriedades e os relacionamentos do objeto chartPoint.|
+|[List](../api/chartpoint-list.md) | Coleção [ChartPoint](chartpoint.md) |Obtenha a coleção de objetos chartPoint. |
+|[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|Recupera um ponto com base na respectiva posição dentro da série.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|value|object|Retorna o valor de um ponto do gráfico. Somente leitura.|
+|valor|object|Retorna o valor de um ponto do gráfico. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[ChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
 

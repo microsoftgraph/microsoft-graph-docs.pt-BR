@@ -1,24 +1,36 @@
+---
+title: Tipo de recurso inferenceClassification
+description: 'Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. '
+ms.openlocfilehash: c1536ff2b88b1830c2f2a2bc5a7bed519782df4e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033029"
+---
 # <a name="inferenceclassification-resource-type"></a>Tipo de recurso inferenceClassification
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Classificação das mensagens de um usuário para possibilitar a atenção nas mensagens que são mais relevantes ou importantes para o usuário. 
 
-Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage_focused_inbox.md).
+Para saber mais, consulte [Gerenciar a Caixa de Entrada Prioritária](manage-focused-inbox.md).
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Create inferenceClassificationOverride](../api/inferenceclassification_post_overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.|
-|[List overrides](../api/inferenceclassification_list_overrides.md) |Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.|
+|[Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) |[inferenceClassificationOverride](inferenceclassificationoverride.md)| Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.|
+|[List overrides](../api/inferenceclassification-list-overrides.md) |Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|cadeia de caracteres| Somente leitura.|
+|id|string| Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
-| Relação | Tipo	    |Descrição|
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |overrides|Coleção [inferenceClassificationOverride](inferenceclassificationoverride.md)| Um conjunto de substituições para um usuário sempre classificar mensagens a partir de remetentes específicos, de maneiras específicas: `focused`, ou `other`. Somente leitura. Anulável.|
 

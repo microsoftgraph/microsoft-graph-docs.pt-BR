@@ -1,0 +1,217 @@
+---
+title: Atualizar contato
+description: Atualize as propriedades do objeto de contato.
+ms.openlocfilehash: 2fbf597ebc8a6c65141c64ae42ae42266f14cbde
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27035636"
+---
+# <a name="update-contact"></a>Atualizar contato
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Atualize as propriedades do objeto de contato.
+## <a name="permissions"></a>Permissions
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Contacts.ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Contacts.ReadWrite    |
+|Aplicativo | Contacts.ReadWrite |
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) de de padrão do usuário [contactFolder](../resources/contactfolder.md).
+```http
+PATCH /me/contacts/{id}
+PATCH /users/{id | userPrincipalName}/contacts/{id}
+```
+Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) de nível superior do usuário.
+```http
+PATCH /me/contactFolders/{id}/contacts/{id}
+PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
+```
+Um [contato](../resources/contact.md) contidos em uma pasta filho de um [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado no filho de um filho e assim por diante.
+```http
+PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
+```
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Cabeçalho       | Valor |
+|:---------------|:--------|
+| Autorização  | {token} de portador. Obrigatório.  |
+| Content-Type  | application/json. Obrigatório.  |
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
+
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|assistantName|String|O nome do assistente do contato.|
+|birthday|DateTimeOffset|O aniversário do contato.|
+|categories|String|As categorias associadas ao contato.|
+|children|String||
+|companyName|String|O nome da empresa do contato.|
+|departamento|String|O departamento do contato.|
+|displayName|String|O nome para exibição do contato. Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de atualização.|
+|emailAddresses|coleção [typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
+|fileAs|String|O nome com o qual o contato está arquivado.|
+|gender |String |Gênero do contato. |
+|generation|String|A geração do contato.|
+|givenName|String|O nome do contato.|
+|imAddresses|String|Os endereços de mensagens instantâneas do contato.|
+|initials|String|As iniciais do contato.|
+|jobTitle|String|O cargo do contato.|
+|manager|String|O nome do gerente do contato.
+|middleName|String|O nome do meio do contato.|
+|nickName|String|O apelido do contato.|
+|officeLocation|String|O local do escritório do contato.|
+|parentFolderId|String|A ID da pasta pai do contato.|
+|personalNotes|String|As anotações do usuário sobre o contato.|
+|telefones |Coleção [phone](../resources/phone.md) |Números de telefone associados com o contato, por exemplo, telefone residencial, celular e telefone comercial. |
+|postalAddresses |coleção [physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, início endereço e o endereço comercial. |
+|profession|String|A profissão do contato.|
+|spouseName|String|O nome do cônjuge/parceiro do contato.|
+|surname|String|O sobrenome do contato.|
+|title|String|O título do contato.|
+|websites |Coleção [website](../resources/website.md)|Sites da Web associados ao contato. |
+|weddingAnniversary |Data |Aniversário de chá do contato. |
+|yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
+|yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
+|yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|
+
+Desde que o recurso **Contatos** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância existente do **contato** .
+
+## <a name="response"></a>Resposta
+
+Se tiver êxito, este método retornará um `200 OK` código de resposta e atualizadas, [entre em contato com](../resources/contact.md) o objeto no corpo da resposta.
+## <a name="example"></a>Exemplo
+##### <a name="request"></a>Solicitação
+O exemplo a seguir atualiza o endereço de email pessoal do contato especificado.
+<!-- {
+  "blockType": "request",
+  "name": "update_contact"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/me/contacts/AAMkADh6v5AAAvgTCEAAA=
+Content-type: application/json
+
+{
+    "emailAddresses":[
+        {
+            "type":"personal",
+            "name":"Pavel Bansky",
+            "address":"pavelb@adatum.onmicrosoft.com"
+        },
+        {
+          "address": "pavelb@fabrikam.onmicrosoft.com",
+          "name": "Pavel Bansky",
+          "type": "other",
+          "otherLabel": "Volunteer work"
+        }
+    ]
+}
+```
+##### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.contact"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('c3e1fcd2-db78-42a8-aec5-1f2cd59abb5c')/contacts/$entity",
+    "@odata.etag":"W/\"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fh\"",
+    "id":"AAMkADh6v5AAAvgTCEAAA=",
+    "createdDateTime":"2018-06-11T19:56:07Z",
+    "lastModifiedDateTime":"2018-06-11T20:26:23Z",
+    "changeKey":"EQAAABYAAACv7At+UNVFRLhGciJGF6v5AAAve7fh",
+    "categories":[
+
+    ],
+    "parentFolderId":"AAMkADh6v5AAAAAAEOAAA=",
+    "birthday":null,
+    "fileAs":"",
+    "displayName":"Pavel Bansky",
+    "givenName":"Pavel",
+    "initials":null,
+    "middleName":null,
+    "nickName":null,
+    "surname":"Bansky",
+    "title":null,
+    "yomiGivenName":null,
+    "yomiSurname":null,
+    "yomiCompanyName":null,
+    "generation":null,
+    "imAddresses":[
+
+    ],
+    "jobTitle":null,
+    "companyName":null,
+    "department":null,
+    "officeLocation":null,
+    "profession":null,
+    "assistantName":null,
+    "manager":null,
+    "spouseName":null,
+    "personalNotes":"",
+    "children":[
+
+    ],
+    "gender":null,
+    "isFavorite":null,
+    "emailAddresses":[
+        {
+            "type":"personal",
+            "name":"Pavel Bansky",
+            "address":"pavelb@adatum.onmicrosoft.com"
+        },
+        {
+            "type":"other",
+            "otherLabel":"Volunteer work",
+            "name":"Pavel Bansky",
+            "address":"pavelb@fabrikam.onmicrosoft.com"
+        }
+    ],
+    "websites":[
+
+    ],
+    "phones":[
+        {
+            "type":"business",
+            "number":"+1 732 555 0102"
+        }
+    ],
+    "postalAddresses":[
+
+    ],
+    "flag":{
+        "flagStatus":"notFlagged"
+    }
+}
+```
+
+## <a name="see-also"></a>Confira também
+
+- [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
+- [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
+<!--
+- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+-->
+
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Update contact",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

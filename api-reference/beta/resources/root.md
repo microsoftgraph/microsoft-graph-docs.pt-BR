@@ -1,12 +1,29 @@
-# <a name="root-resource"></a>Recurso raiz
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Raiz
+ms.openlocfilehash: 771eb39baf2a7ce7a85fb43120d6e9e7358f6f6c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27036877"
+---
+# <a name="root-resource-type"></a>Tipo de recurso Root
 
-O tipo de recurso **Root** é um recurso vazio. Uma instância desse recurso em um [DriveItem](driveitem.md) ou [Site](site.md) indica que o item é a raiz de uma hierarquia.
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+A faceta **Root** indica que um objeto é o mais alto em sua hierarquia.
+A presença (não nulo) do valor da faceta indica que o objeto é a raiz.
+Um valor nulo (ou ausente) indica que o objeto não é a raiz.
+
+**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON de um recurso **Root**.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.root",
-       "keyProperty": "id", "optionalProperties": [ ] } -->
+<!-- { "blockType": "resource", "@type": "microsoft.graph.root" } -->
+
 ```json
 {
 }
@@ -19,11 +36,6 @@ O recurso **Root** não tem propriedades.
 
 <!-- {
   "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/Root",
-  "tocBookmarks": {
-    "Root": "#"
-  }
+  "tocPath": "Facets/Root"
 } -->

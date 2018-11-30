@@ -1,21 +1,34 @@
+---
+title: tipo de recurso conversation
+description: Uma conversa é uma coleção de threads e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
+ms.openlocfilehash: 8a4a83fdc109eb047a22afbd3b15ad2d575f0795
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033443"
+---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
 Uma conversa é uma coleção de [threads](conversationthread.md) e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
+
+Este recurso oferece suporte a assinatura de [notificações de alteração](/graph/webhooks).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar conversas](../api/group_list_conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
-|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
-|[Obter conversa](../api/conversation_get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
-|[Delete](../api/conversation_delete.md) | Nenhuma |Exclua um objeto conversation. |
-|[Listar threads de conversas](../api/conversation_list_threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
-|[Criar thread de conversas](../api/conversation_post_threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
-
+|[Listar conversas](../api/group-list-conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
+|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
+|[Obter conversa](../api/conversation-get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
+|[Delete](../api/conversation-delete.md) | Nenhum |Exclua um objeto conversation. |
+|[Listar threads de conversas](../api/conversation-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
+|[Criar thread de conversas](../api/conversation-post-threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |hasAttachments|Booliano|Indica se qualquer uma das postagens nesta Conversa tem pelo menos um anexo.|
 |id|String|Identificador exclusivo de conversas. Somente leitura.|
@@ -25,10 +38,9 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 |uniqueSenders|Coleção de cadeias de caracteres|Todos os usuários que enviaram uma mensagem para esta conversa.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |threads|Coleção [conversationThread](conversationthread.md)|Uma coleção de todos os threads de conversa na conversa. Uma propriedade de navegação. Somente leitura. Anulável.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

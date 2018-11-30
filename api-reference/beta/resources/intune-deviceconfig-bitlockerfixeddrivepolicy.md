@@ -1,0 +1,55 @@
+---
+title: tipo de recurso de bitLockerFixedDrivePolicy
+description: O BitLocker fixa políticas de unidade.
+ms.openlocfilehash: c29f736515333fcdbeca8c18017b9403f845de9e
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27036974"
+---
+# <a name="bitlockerfixeddrivepolicy-resource-type"></a>tipo de recurso de bitLockerFixedDrivePolicy
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+O BitLocker fixa políticas de unidade.
+## <a name="properties"></a>Propriedades
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Selecione o método de criptografia para unidades fixas. Os valores possíveis são: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
+|requireEncryptionForWriteAccess|Booliano|Essa configuração de diretiva determina se a proteção BitLocker é necessária para unidades de dados fixas ser gravado em um computador.|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Essa configuração de política permite que você controle de dados fixo como protegidas pelo BitLocker unidades são recuperadas na ausência das credenciais necessárias. Essa configuração de política é aplicada quando você ativa o BitLocker.|
+
+## <a name="relationships"></a>Relações
+Nenhum
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.bitLockerFixedDrivePolicy"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.bitLockerFixedDrivePolicy",
+  "encryptionMethod": "String",
+  "requireEncryptionForWriteAccess": true,
+  "recoveryOptions": {
+    "@odata.type": "microsoft.graph.bitLockerRecoveryOptions",
+    "blockDataRecoveryAgent": true,
+    "recoveryPasswordUsage": "String",
+    "recoveryKeyUsage": "String",
+    "hideRecoveryOptions": true,
+    "enableRecoveryInformationSaveToStore": true,
+    "recoveryInformationToStore": "String",
+    "enableBitLockerAfterRecoveryInformationToStore": true
+  }
+}
+```
+
+
+
+
+

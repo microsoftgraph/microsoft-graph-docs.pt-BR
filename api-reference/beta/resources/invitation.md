@@ -1,4 +1,16 @@
+---
+title: gerenciador de convites
+description: 'Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. '
+ms.openlocfilehash: 3f179df6c11dfc815ffbfc42c39aae5407a66a93
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27032937"
+---
 # <a name="invitation-manager"></a>gerenciador de convites
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Use o gerenciador de convites para criar um convite para adicionar um usuário externo à organização. 
 
@@ -12,13 +24,13 @@ O processo de convite usa o fluxo a seguir:
 A criação de um convite retornará uma URL de resgate na resposta (*inviteRedeemUrl*). A API de criação de convite pode enviar automaticamente um email que contém a URL de resgate ao usuário convidado, definindo-se *sendInvitationMessage* como true. Você também pode personalizar a mensagem será enviada ao usuário convidado. Em vez disso, se você desejar enviar a URL de resgate por outros meios, poderá definir *sendInvitationMessage* como false e usar a URL de resgate da resposta para criar sua própria comunicação. Atualmente, não há qualquer API para execução do processo de resgate. O usuário convidado tem que clicar no link *inviteRedeemUrl* enviado na comunicação na etapa anterior e passar pelo processo de resgate interativo em um navegador. Após a conclusão, o usuário convidado torna-se um usuário externo na organização.
 
 
-### <a name="methods"></a>Métodos
+## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar convite](../api/invitation_post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
+|[Criar convite](../api/invitation-post.md) | invitation | Escreva as propriedades e os relacionamentos do objeto invitation.|
 
-### <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório.|
@@ -27,15 +39,14 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
 |inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura|
 |invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se não for administrador da empresa. |
-|status|String|O status do convite. Valores possíveis: Concluído, EmAndamento e Erro|
+|status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
-### <a name="relationships"></a>Relações
-| Relação | Tipo    |Descrição|
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|O usuário criado como parte da criação do convite. Somente leitura|
 
-### <a name="json-representation"></a>Representação JSON
-
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
