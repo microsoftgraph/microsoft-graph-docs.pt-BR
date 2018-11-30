@@ -1,0 +1,139 @@
+---
+title: Criar windowsPhone81CompliancePolicy
+description: Cria um novo objeto windowsPhone81CompliancePolicy.
+ms.openlocfilehash: 7bb9c6d77af5f1f2be730b8b7cdca533a1304731
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037166"
+---
+# <a name="create-windowsphone81compliancepolicy"></a>Criar windowsPhone81CompliancePolicy
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Cria um novo objeto [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/deviceCompliancePolicies
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça uma representação JSON do objeto windowsPhone81CompliancePolicy.
+
+A tabela a seguir mostra as propriedades obrigatórias ao criar windowsPhone81CompliancePolicy.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|id|String|Chave da entidade. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|passwordBlockSimple|Booliano|Se a sincronização do calendário deve ou não ser bloqueada.|
+|passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
+|passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
+|passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
+|passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
+|passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
+|osMinimumVersion|String|Versão mínima do Windows Phone.|
+|osMaximumVersion|String|Versão máxima do Windows Phone.|
+|storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows Phone.|
+
+
+
+## <a name="response"></a>Resposta
+Se bem-sucedido, este método retornará um código de resposta `201 Created` e um objeto [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
+Content-type: application/json
+Content-length: 733
+
+{
+  "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordRequired": true,
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "storageRequireEncryption": true
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 841
+
+{
+  "@odata.type": "#microsoft.graph.windowsPhone81CompliancePolicy",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "id": "e6021ad4-1ad4-e602-d41a-02e6d41a02e6",
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "displayName": "Display Name value",
+  "version": 7,
+  "passwordBlockSimple": true,
+  "passwordExpirationDays": 6,
+  "passwordMinimumLength": 5,
+  "passwordMinutesOfInactivityBeforeLock": 5,
+  "passwordMinimumCharacterSetCount": 0,
+  "passwordRequiredType": "alphanumeric",
+  "passwordPreviousPasswordBlockCount": 2,
+  "passwordRequired": true,
+  "osMinimumVersion": "Os Minimum Version value",
+  "osMaximumVersion": "Os Maximum Version value",
+  "storageRequireEncryption": true
+}
+```
+
+
+
+
+

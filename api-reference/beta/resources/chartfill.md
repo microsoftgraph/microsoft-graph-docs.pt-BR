@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartFill
+description: Representa a formatação de preenchimento de um elemento do gráfico.
+ms.openlocfilehash: f24caa0f06d147ad1ab1f0c8d45cae71d5e619c2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039952"
+---
 # <a name="chartfill-resource-type"></a>Tipo de recurso ChartFill
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa a formatação de preenchimento de um elemento do gráfico.
 
@@ -7,11 +19,11 @@ Representa a formatação de preenchimento de um elemento do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Clear](../api/chartfill_clear.md)|Nenhum|Limpe a cor de preenchimento de um elemento do gráfico.|
-|[Setsolidcolor](../api/chartfill_setsolidcolor.md)|Nenhum|Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.|
+|[Clear](../api/chartfill-clear.md)|Nenhum|Limpe a cor de preenchimento de um elemento do gráfico.|
+|[Setsolidcolor](../api/chartfill-setsolidcolor.md)|Nenhum|Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.|
 
 ## <a name="properties"></a>Propriedades
-Nenhuma
+Nenhum
 
 ## <a name="relationships"></a>Relações
 Nenhum

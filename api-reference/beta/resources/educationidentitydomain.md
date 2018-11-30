@@ -1,0 +1,38 @@
+---
+title: tipo de recurso de educationIdentityDomain
+description: 'Representa o mapeamento entre um tipo de usuário de educação e o domínio em que a conta do usuário pertence. O recurso de domínio é parte da configuração de criação de identidade. '
+ms.openlocfilehash: 8298e1eb38ae70f982719ee3a7d6588cd181bdd8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27038347"
+---
+# <a name="educationidentitydomain-resource-type"></a>tipo de recurso de educationIdentityDomain
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Representa o mapeamento entre um tipo de usuário de educação e o domínio em que a conta do usuário pertence. O recurso de domínio é parte da [configuração de criação de identidade](educationidentitycreationconfiguration.md). 
+
+## <a name="properties"></a>Propriedades
+
+| Propriedade | Tipo | Descrição |
+|:-|:-|:-|
+| **appliesTo** | string |  O tipo de função de usuário para atribuir a licença. Os valores possíveis são: `student` e `teacher`.      |
+| **name** | string |  Representa o domínio da conta de usuário.         |
+
+## <a name="json-representation"></a>Representação JSON
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "#microsoft.graph.educationIdentityDomain"
+}-->
+
+```json
+{
+    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "name": "String"
+}
+```

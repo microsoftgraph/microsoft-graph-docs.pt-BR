@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso section
+description: Uma seção em um bloco de anotações do OneNote. As seções podem conter páginas.
+ms.openlocfilehash: c07f8f2e5c9f9f9d367cbc1186983c0870b2e979
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033826"
+---
 # <a name="section-resource-type"></a>Tipo de recurso section
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Uma seção em um bloco de anotações do OneNote. As seções podem conter páginas.
 
@@ -32,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |createdDateTime|DateTimeOffset|A data e hora da criação da seção. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
@@ -45,8 +57,8 @@ Veja a seguir uma representação JSON do recurso.
 |pagesUrl|String|O ponto de extremidade `pages` onde você pode obter detalhes de todas as páginas na seção. Somente leitura.|
 |self|String|O ponto de extremidade onde você pode obter detalhes sobre a seção. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
-| Relação | Tipo    |Descrição|
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |páginas|Coleção [Page](page.md)|Obtém o conjunto de páginas da seção.  Somente leitura. Anulável.|
 |parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém a seção.  Somente leitura.|
@@ -56,12 +68,11 @@ Veja a seguir uma representação JSON do recurso.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get section](../api/section_get.md) | [Section](section.md) |Leia as propriedades e as relações da seção.|
-|[Criar página](../api/section_post_pages.md) |[Página](page.md)| Crie uma página postando na coleção pages do grupo de seção especificado.|
-|[Listar páginas](../api/section_list_pages.md) |Coleção [Page](page.md)| Obtém uma coleção de páginas na seção especificada.|
-|[copyToNotebook](../api/section_copytonotebook.md)|None|Copia a seção para um bloco de anotações específico.|
-|[copyToSectionGroup](../api/section_copytosectiongroup.md)|None|Copia uma seção para um grupo de seção específico.|
-
+|[Get section](../api/section-get.md) | [Section](section.md) |Leia as propriedades e as relações da seção.|
+|[Criar página](../api/section-post-pages.md) |[Página](page.md)| Crie uma página postando na coleção pages do grupo de seção especificado.|
+|[Listar páginas](../api/section-list-pages.md) |Coleção [Page](page.md)| Obtém uma coleção de páginas na seção especificada.|
+|[copyToNotebook](../api/section-copytonotebook.md)|None|Copia a seção para um bloco de anotações específico.|
+|[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copia uma seção para um grupo de seção específico.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

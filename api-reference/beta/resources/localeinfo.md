@@ -1,13 +1,25 @@
+---
+title: Tipo de recurso localeInfo
+description: Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
+ms.openlocfilehash: 5dae464a4931fb094ae47cce600a95d55c6c3f93
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039463"
+---
 # <a name="localeinfo-resource-type"></a>Tipo de recurso localeInfo
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|localidade|string|Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](http://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](http://www.iso.org/iso/country_codes.htm).|
-|displayName|cadeia de caracteres|Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".|
+|localidade|string|Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
+|displayName|string|Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".|
 
 ## <a name="json-representation"></a>Representação JSON
 
