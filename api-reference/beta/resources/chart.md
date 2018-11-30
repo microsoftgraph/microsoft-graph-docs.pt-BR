@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso Chart
+description: Representa um objeto de gráfico em uma pasta de trabalho.
+ms.openlocfilehash: 3305c674bf299fa68ce139ba16b3174965b694ac
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039263"
+---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa um objeto de gráfico em uma pasta de trabalho.
 
@@ -7,20 +19,20 @@ Representa um objeto de gráfico em uma pasta de trabalho.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [Chart](chart.md) |Leia as propriedades e os relacionamentos do objeto de gráfico.|
-|[Create ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Crie uma nova ChartSeries postando na coleção de séries.|
-|[List series](../api/chart_list_series.md) |Coleção [ChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)    |Atualize um objeto Chart. |
-|[Image](../api/chart_image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
-|[Delete](../api/chart_delete.md)|Nenhum|Exclui o objeto de gráfico.|
-|[SetData](../api/chart_setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
-|[Setposition](../api/chart_setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
-|[List](../api/chart_list.md) | Coleção [Chart](chart.md) |Obtenha a coleção de objetos do gráfico. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Obtém um gráfico com base em sua posição na coleção.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Cria um novo gráfico.|
+|[Get Chart](../api/chart-get.md) | [Chart](chart.md) |Leia as propriedades e os relacionamentos do objeto de gráfico.|
+|[Create ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Crie uma nova ChartSeries postando na coleção de séries.|
+|[List series](../api/chart-list-series.md) |Coleção [ChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
+|[Update](../api/chart-update.md) | [Chart](chart.md)   |Atualize um objeto Chart. |
+|[Imagem](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
+|[Delete](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
+|[SetData](../api/chart-setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
+|[Setposition](../api/chart-setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
+|[List](../api/chart-list.md) | Coleção [Chart](chart.md) |Obtenha a coleção de objetos do gráfico. |
+|[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|Obtém um gráfico com base em sua posição na coleção.|
+|[Add](../api/chartcollection-add.md)|[Chart](chart.md)|Cria um novo gráfico.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |height|Double|Representa a altura, em pontos, do objeto Chart.|
 |id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
@@ -30,11 +42,11 @@ Representa um objeto de gráfico em uma pasta de trabalho.
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |axes|[ChartAxes](chartaxes.md)|Representa os eixos de um gráfico. Somente leitura.|
 |dataLabels|[ChartDataLabels](chartdatalabels.md)|Representa os rótulos de dados no gráfico. Somente leitura.|
-|format|[ChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
+|formato|[ChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
 |legend|[ChartLegend](chartlegend.md)|Representa a legenda do gráfico. Somente leitura.|
 |series|Coleção [ChartSeries](chartseries.md)|Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.|
 |title|[ChartTitle](charttitle.md)|Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.|

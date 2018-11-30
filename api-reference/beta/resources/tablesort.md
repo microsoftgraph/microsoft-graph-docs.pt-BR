@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso TableSort
+description: Gerencia operações de classificação em objetos Table.
+ms.openlocfilehash: 02ee1f72bc53a3097c76cf9bab62a165fe3c56f8
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27041060"
+---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Gerencia operações de classificação em objetos Table.
 
@@ -7,19 +19,19 @@ Gerencia operações de classificação em objetos Table.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get TableSort](../api/tablesort_get.md) | [TableSort](tablesort.md) |Leia as propriedades e os relacionamentos do objeto tableSort.|
-|[Apply](../api/tablesort_apply.md)|Nenhum|Execute uma operação de classificação.|
-|[Clear](../api/tablesort_clear.md)|Nenhum|Limpa a classificação que está na tabela. Essa ação não modifica a ordenação da tabela, mas limpa o estado dos botões do cabeçalho.|
-|[Reapply](../api/tablesort_reapply.md)|Nenhum|Reaplica os parâmetros de classificação atuais à tabela.|
+|[Get TableSort](../api/tablesort-get.md) | [TableSort](tablesort.md) |Leia as propriedades e os relacionamentos do objeto tableSort.|
+|[Aplicar](../api/tablesort-apply.md)|Nenhum|Execute uma operação de classificação.|
+|[Clear](../api/tablesort-clear.md)|Nenhum|Limpa a classificação que está na tabela. Essa ação não modifica a ordenação da tabela, mas limpa o estado dos botões do cabeçalho.|
+|[Reapply](../api/tablesort-reapply.md)|Nenhum|Reaplica os parâmetros de classificação atuais à tabela.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |matchCase|booliano|Indica se o uso de maiúsculas ou minúsculas afetou a última classificação da tabela. Somente leitura.|
 |method|string|Indica o último método de ordenação de caracteres chineses usado para classificar a tabela. Os valores possíveis são: `PinYin` e `StrokeCount`. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |campos|[SortField](sortfield.md)|Representa as condições atuais usadas para a última classificação da tabela. Somente leitura.|
 

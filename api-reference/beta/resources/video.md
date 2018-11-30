@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Vídeo
+ms.openlocfilehash: a9bf228d814526d089fb102444e6952558b07e1c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039939"
+---
 # <a name="video-resource-type"></a>Tipo de recurso Video
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
 
@@ -16,23 +30,37 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "bitrate": 1024,
-  "duration": 1024,
-  "height": 1024,
-  "width": 1024
+  "audioBitsPerSample": 16,
+  "audioChannels": 1,
+  "audioFormat": "AAC",
+  "audioSamplesPerSecond": 44100,
+  "bitrate": 39101896,
+  "duration": 8053,
+  "fourCC": "H264",
+  "frameRate": 239.877,
+  "height": 1280,
+  "width": 720
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	 | Tipo	  | Descrição                               |
-|:---------|:------|:------------------------------------------|
-| bitrate  | Int32 | Taxa de bits do vídeo em bits por segundo. |
-| duration | Int64 | Duração do arquivo em milissegundos.     |
-| height   | Int32 | A altura do vídeo em pixels.           |
-| width    | Int32 | A largura do vídeo em pixels.            |
+| Nome da propriedade             | Tipo   | Descrição
+|:--------------------------|:-------|:----------------------------------------
+| **audioBitsPerSample**    | Int32  | Número de bits áudio por amostra.
+| **audioChannels**         | Int32  | Número de canais de áudio.
+| **audioFormat**           | string | Nome do formato áudio (AAC, MP3, etc.).
+| **audioSamplesPerSecond** | Int32  | Número de amostras de áudio por segundo.
+| **bitrate**               | Int32  | Taxa de bits do vídeo em bits por segundo.
+| **duration**              | Int64  | Duração do arquivo em milissegundos.
+| **fourCC**                | string | Nome do formato de vídeo "Código de quatro caracteres".
+| **framerate**             | double | Taxa de quadros do vídeo.
+| **height**                | Int32  | A altura do vídeo em pixels.
+| **width**                 | Int32  | A largura do vídeo em pixels.
 
-## <a name="remarks"></a>Comentários 
+[item-resource]: ../resources/driveitem.md
+
+## <a name="remarks"></a>Comentários
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
@@ -44,8 +72,8 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "video resource",
-  "keywords": "",
+  "description": "The video facet provides information about the properties of a video file.",
+  "keywords": "bitrate,duration,size,video",
   "section": "documentation",
   "tocPath": ""
 }-->

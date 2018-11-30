@@ -1,0 +1,131 @@
+---
+title: Criar windowsDefenderAdvancedThreatProtectionConfiguration
+description: Criar um novo objeto windowsDefenderAdvancedThreatProtectionConfiguration.
+ms.openlocfilehash: 5188b30dc6d87f3d37064a5ac512341ad9919716
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27038414"
+---
+# <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Criar windowsDefenderAdvancedThreatProtectionConfiguration
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Criar um novo objeto [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md).
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/deviceConfigurations
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, forneça uma representação JSON do objeto windowsDefenderAdvancedThreatProtectionConfiguration.
+
+A tabela a seguir mostra as propriedades que são necessárias ao criar windowsDefenderAdvancedThreatProtectionConfiguration.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection inclusão Blob.|
+|advancedThreatProtectionOnboardingFilename|String|Nome do arquivo do qual AdvancedThreatProtectionOnboardingBlob foi obtido.|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Booliano|Auto preencher blob de inclusão programaticamente a partir de serviço de proteção de ameaça avançadas|
+|allowSampleSharing|Booliano|Regra para "Permitir o compartilhamento de exemplo" de AdvancedThreatProtection do Windows Defender|
+|enableExpeditedTelemetryReporting|Booliano|Acelera a frequência de relatórios de telemetria da Proteção Avançada Contra Ameaças do Windows Defender.|
+|advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection exclusão Blob.|
+|advancedThreatProtectionOffboardingFilename|String|Nome do arquivo do qual AdvancedThreatProtectionOffboardingBlob foi obtido.|
+
+
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+Content-type: application/json
+Content-length: 894
+
+{
+  "@odata.type": "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
+  "advancedThreatProtectionOnboardingFilename": "Advanced Threat Protection Onboarding Filename value",
+  "advancedThreatProtectionAutoPopulateOnboardingBlob": true,
+  "allowSampleSharing": true,
+  "enableExpeditedTelemetryReporting": true,
+  "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value",
+  "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 1002
+
+{
+  "@odata.type": "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
+  "id": "294373aa-73aa-2943-aa73-4329aa734329",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "advancedThreatProtectionOnboardingBlob": "Advanced Threat Protection Onboarding Blob value",
+  "advancedThreatProtectionOnboardingFilename": "Advanced Threat Protection Onboarding Filename value",
+  "advancedThreatProtectionAutoPopulateOnboardingBlob": true,
+  "allowSampleSharing": true,
+  "enableExpeditedTelemetryReporting": true,
+  "advancedThreatProtectionOffboardingBlob": "Advanced Threat Protection Offboarding Blob value",
+  "advancedThreatProtectionOffboardingFilename": "Advanced Threat Protection Offboarding Filename value"
+}
+```
+
+
+
+
+

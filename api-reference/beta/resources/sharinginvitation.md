@@ -1,4 +1,18 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SharingInvitation
+ms.openlocfilehash: ba909158ce0ba28b6af20b8dbff858c65f07cbe9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039188"
+---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso **SharingInvitation** agrupa itens de dados relacionados ao convite em uma única estrutura.
 
@@ -40,8 +54,8 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "sharingInvitation resource",
-  "keywords": "",
+  "description": "The sharing invitation facet describes details of a sharing invitation associated with a permission.",
+  "keywords": "image,width,height,item,facet",
   "section": "documentation",
   "tocPath": ""
 }-->

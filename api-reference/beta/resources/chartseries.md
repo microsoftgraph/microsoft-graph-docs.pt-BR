@@ -1,26 +1,38 @@
+---
+title: Tipo de recurso ChartSeries
+description: Representa uma série em um gráfico.
+ms.openlocfilehash: 301fd3ba3c299108836bbd92497f4d6f6af94b0a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27041048"
+---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
-Representa uma série em um gráfico.
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Representa uma série de um gráfico.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartSeries](../api/chartseries_get.md) | [ChartSeries](chartseries.md) |Leia as propriedades e os relacionamentos do objeto chartSeries.|
-|[Create ChartPoints](../api/chartseries_post_points.md) |[ChartPoints](chartpoint.md)| Crie um novo ChartPoints postando na coleção de pontos.|
-|[List points](../api/chartseries_list_points.md) |Coleção [ChartPoints](chartpoint.md)| Obtenha uma coleção de objetos ChartPoints.|
-|[Update](../api/chartseries_update.md) | [ChartSeries](chartseries.md)    |Atualize o objeto ChartSeries. |
-|[List](../api/chartseries_list.md) | Coleção [ChartSeries](chartseries.md) |Obtenha uma coleção de objetos chartSeries. |
-|[Itemat](../api/chartseriescollection_itemat.md)|[ChartSeries](chartseries.md)|Recupera uma série com base na respectiva posição na coleção.|
+|[Get ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Leia as propriedades e os relacionamentos do objeto chartSeries.|
+|[Create ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Crie um novo ChartPoints postando na coleção de pontos.|
+|[List points](../api/chartseries-list-points.md) |Coleção [ChartPoints](chartpoint.md)| Obtenha uma coleção de objetos ChartPoints.|
+|[Update](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |Atualize o objeto ChartSeries. |
+|[List](../api/chartseries-list.md) | Coleção [ChartSeries](chartseries.md) |Obtenha uma coleção de objetos chartSeries. |
+|[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Recupera uma série com base na respectiva posição na coleção.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|string|Representa o nome de uma série em um gráfico.|
 
 ## <a name="relationships"></a>Relacionamentos
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[ChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
 |points|Coleção [ChartPoints](chartpoint.md)|Representa uma coleção de todos os pontos da série. Somente leitura.|

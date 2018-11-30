@@ -1,4 +1,18 @@
-# <a name="package-resource-type"></a>Tipo de recurso de pacote
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Pacote
+ms.openlocfilehash: fe26cf0dc5de00673d5c3c2ae4a90ac80a62897f
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27039478"
+---
+# <a name="package-resource-type"></a>Tipo de recurso Package
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso **Package** indica que um DriveItem é o item de nível superior em um "pacote" ou uma coleção de itens que devem ser tratados como uma coleção, em vez de itens individuais.
 
@@ -11,7 +25,7 @@ DriveItems com a faceta **package** não incluem uma faceta **folder** ou **file
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.package" } -->
 ```json
 {
-  "type": "string"
+  "type": "oneNote"
 }
 ```
 
