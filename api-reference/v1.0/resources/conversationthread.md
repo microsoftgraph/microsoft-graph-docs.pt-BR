@@ -1,3 +1,13 @@
+---
+title: tipo de recurso conversationThread
+description: Um conversationThread é uma coleção de postagens.
+ms.openlocfilehash: 7fc248957ed81a9d02d6f2d404110690b350ca1a
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27007052"
+---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 Um conversationThread é uma coleção de [postagens](post.md).
 
@@ -7,13 +17,13 @@ A coleção de destinatários da última postagem são os destinatários agregad
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar threads](../api/group_list_threads.md) | Coleção [conversationThread](conversationthread.md) |Obter todos os threads de um grupo.|
-|[Criar thread](../api/group_post_threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
-|[Obter conversationThread](../api/conversationthread_get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
-|[Update](../api/conversationthread_update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Delete](../api/conversationthread_delete.md) | Nenhuma |Exclua um objeto conversationThread. |
-|[Responder](../api/conversationthread_reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
-|[Listar Postagens](../api/conversationthread_list_posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
+|[Listar threads](../api/group-list-threads.md) | Coleção [conversationThread](conversationthread.md) |Obter todos os threads de um grupo.|
+|[Criar thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
+|[Obter conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
+|[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
+|[Delete](../api/conversationthread-delete.md) | Nenhuma |Exclua um objeto conversationThread. |
+|[Responder](../api/conversationthread-reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
+|[Listar Postagens](../api/conversationthread-list-posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -37,13 +47,26 @@ A coleção de destinatários da última postagem são os destinatários agregad
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "posts"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversationThread"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversationThread",
+  "@odata.annotations": [
+    {
+      "property": "posts",
+      "capabilities": {
+        "changeTracking": false,
+        "deletable": false,
+        "insertable": false,
+        "searchable": false,
+        "updatable": false
+      }
+    }
+  ]
 }-->
 
 ```json

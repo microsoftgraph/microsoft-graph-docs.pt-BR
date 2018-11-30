@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso provisionedPlan
+description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
+ms.openlocfilehash: 7808e3a17e471123f702381fb52535e53682e276
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006061"
+---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 
 A propriedade **provisionedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **provisionedPlan**.
@@ -19,7 +29,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

@@ -1,10 +1,20 @@
-# Tipo de recurso domainState
-<a id="domainstate-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso domainState
+description: Representa o status das operações assíncronas agendadas em um domínio.
+ms.openlocfilehash: 84c2e418a14de8aa05abfac7a2f04d6637d410b4
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27033855"
+---
+# <a name="domainstate-resource-type"></a>Tipo de recurso domainState
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa o status das operações assíncronas agendadas em um domínio.
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
@@ -12,8 +22,7 @@ Representa o status das operações assíncronas agendadas em um domínio.
 | operação | String | Tipo de operação assíncrona. Os valores podem ser *ForceDelete* ou *Verification* |
 | status | String | Status atual da operação. <br> *Scheduled* – A operação foi agendada, mas não foi iniciada. <br> *InProgress* – A tarefa foi iniciada e está em andamento. <br> *Failed* - A operação falhou. |
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

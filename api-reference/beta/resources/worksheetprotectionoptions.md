@@ -1,9 +1,21 @@
+---
+title: Tipo de recurso WorksheetProtectionOptions
+description: Representa as opções de proteção da planilha.
+ms.openlocfilehash: 2944663c62edd6533a12afe8e24cdd4f84f038fc
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27034378"
+---
 # <a name="worksheetprotectionoptions-resource-type"></a>Tipo de recurso WorksheetProtectionOptions
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa as opções de proteção da planilha.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowAutoFilter|booliano|Indica a opção de proteção de planilha para permitir a utilização do recurso de filtro automático.|
 |allowDeleteColumns|booliano|Indica a opção de proteção de planilha para permitir a exclusão de colunas.|
@@ -16,7 +28,6 @@ Representa as opções de proteção da planilha.
 |allowInsertRows|booliano|Indica a opção de proteção de planilha para permitir a inserção de linhas.|
 |allowPivotTables|booliano|Indica a opção de proteção de planilha para permitir a utilização do recurso de tabela dinâmica.|
 |allowSort|booliano|Indica a opção de proteção de planilha para permitir a utilização do recurso de classificação.|
-
 
 ## <a name="json-representation"></a>Representação JSON
 

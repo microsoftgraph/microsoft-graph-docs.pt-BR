@@ -1,0 +1,94 @@
+---
+title: Membro do grupo de lista
+description: Obtenha grupos e unidades administrativas que o grupo é um membro direto.
+ms.openlocfilehash: 5c189571095676d0c52b8bb93a8d27136d4aaa3c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27036154"
+---
+# <a name="list-group-memberof"></a>Membro do grupo de lista
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Obtenha grupos e unidades administrativas que o grupo é um membro direto.
+
+Esta operação não é transitiva. Diferentemente obtendo Office 365 grupos de um usuário, isto retorna todos os tipos de grupos, não apenas a grupos do Office 365. 
+
+## <a name="permissions"></a>Permissions
+
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegado (conta corporativa ou de estudante) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{id}/memberOf
+```
+
+## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+| Nome       | Tipo | Descrição|
+|:-----------|:------|:----------|
+| Autorização  | string  | {token} de portador. Obrigatório. |
+
+## <a name="request-body"></a>Corpo da solicitação
+Não forneça um corpo de solicitação para esse método.
+
+## <a name="response"></a>Resposta
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [directoryObject](../resources/directoryobject.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+
+### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+<!-- {
+  "blockType": "request",
+  "name": "get_memberof"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/{id}/memberOf
+```
+
+### <a name="response"></a>Resposta
+
+Este é um exemplo de resposta.
+>**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 55
+
+{
+  "value": [
+    {
+      "id": "id-value"
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List memberOf",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

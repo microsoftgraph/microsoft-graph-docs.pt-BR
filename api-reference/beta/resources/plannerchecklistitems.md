@@ -1,15 +1,24 @@
-# Tipo de recurso plannerChecklistItems
-<a id="plannerchecklistitems-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerChecklistItems
+description: O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto task details. O valor no par propriedade-valor é o objeto checklistItem.
+ms.openlocfilehash: 44e64872c34a70062e847889576bd226d4fe51fb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037296"
+---
+# <a name="plannerchecklistitems-resource-type"></a>Tipo de recurso plannerChecklistItems
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 

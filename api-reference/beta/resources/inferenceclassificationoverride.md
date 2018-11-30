@@ -1,0 +1,65 @@
+---
+title: Tipo de recurso inferenceClassificationOverride
+description: Representa a substituição do usuário para como mensagens recebidas de um remetente específico sempre deve ser classificada como
+ms.openlocfilehash: 63c753b7af21907717d7d9706d0606726d5670f2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27034187"
+---
+# <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Representa a substituição de um usuário para como mensagens recebidas de um remetente específico sempre devem ser classificadas como uma [Caixa de entrada com foco](manage-focused-inbox.md).
+
+
+## <a name="methods"></a>Métodos
+
+| Método           | Tipo de retorno    |Descrição|
+|:---------------|:--------|:----------|
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
+
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.|
+|id|string| O identificador exclusivo da substituição. Somente leitura.|
+|senderEmailAddress|[emailAddress](emailaddress.md)|As informações de endereço de email do remetente para quem a substituição é criada.|
+
+## <a name="relationships"></a>Relacionamentos
+Nenhum
+
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.inferenceClassificationOverride"
+}-->
+
+```json
+{
+  "classifyAs": "string",
+  "id": "string (identifier)",
+  "senderEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "inferenceClassificationOverride resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
