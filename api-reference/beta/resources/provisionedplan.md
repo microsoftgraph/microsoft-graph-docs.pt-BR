@@ -1,19 +1,30 @@
-# <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
+---
+title: Tipo de recurso provisionedPlan
+description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
+ms.openlocfilehash: efaf4dc2916189e2bf6a8078a693059369f7cb2b
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27036724"
+---
+# <a name="provisionedplan-resource-type"></a><span data-ttu-id="8e05c-103">Tipo de recurso provisionedPlan</span><span class="sxs-lookup"><span data-stu-id="8e05c-103">provisionedPlan resource type</span></span>
 
-A propriedade **provisionedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **provisionedPlan**.
+> <span data-ttu-id="8e05c-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="8e05c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8e05c-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="8e05c-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="8e05c-106">A propriedade **provisionedPlans** das entidades [user](user.md) e [organization](organization.md) é uma coleção de **provisionedPlan**.</span><span class="sxs-lookup"><span data-stu-id="8e05c-106">The **provisionedPlans** property of the [user](user.md) entity and the [organization](organization.md) entity is a collection of **provisionedPlan**.</span></span>
 
 
-## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+## <a name="properties"></a><span data-ttu-id="8e05c-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8e05c-107">Properties</span></span>
+| <span data-ttu-id="8e05c-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8e05c-108">Property</span></span>     | <span data-ttu-id="8e05c-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="8e05c-109">Type</span></span>   |<span data-ttu-id="8e05c-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8e05c-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
-|provisioningStatus|Cadeia de caracteres|Por exemplo, "Success".|
-|service|Cadeia de caracteres|O nome do serviço; por exemplo, "AccessControlS2S".|
+|<span data-ttu-id="8e05c-111">capabilityStatus</span><span class="sxs-lookup"><span data-stu-id="8e05c-111">capabilityStatus</span></span>|<span data-ttu-id="8e05c-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8e05c-112">String</span></span>|<span data-ttu-id="8e05c-113">Por exemplo, “Enabled”.</span><span class="sxs-lookup"><span data-stu-id="8e05c-113">For example, “Enabled”.</span></span>|
+|<span data-ttu-id="8e05c-114">provisioningStatus</span><span class="sxs-lookup"><span data-stu-id="8e05c-114">provisioningStatus</span></span>|<span data-ttu-id="8e05c-115">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8e05c-115">String</span></span>|<span data-ttu-id="8e05c-116">Por exemplo, "Success".</span><span class="sxs-lookup"><span data-stu-id="8e05c-116">For example, “Success”.</span></span>|
+|<span data-ttu-id="8e05c-117">service</span><span class="sxs-lookup"><span data-stu-id="8e05c-117">service</span></span>|<span data-ttu-id="8e05c-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8e05c-118">String</span></span>|<span data-ttu-id="8e05c-119">O nome do serviço; por exemplo, "AccessControlS2S".</span><span class="sxs-lookup"><span data-stu-id="8e05c-119">The name of the service; for example, “AccessControlS2S”</span></span>|
 
+## <a name="json-representation"></a><span data-ttu-id="8e05c-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8e05c-120">JSON representation</span></span>
 
-## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso
+<span data-ttu-id="8e05c-121">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="8e05c-121">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
