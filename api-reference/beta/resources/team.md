@@ -1,0 +1,92 @@
+---
+title: tipo de recurso de equipe
+description: 'Uma equipe Teams da Microsoft é uma coleção de canais. '
+ms.openlocfilehash: 5ebb4dbc2c5913d69b69bdb244d8a7cfc83cec8d
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037245"
+---
+# <a name="team-resource-type"></a><span data-ttu-id="d28bb-103">tipo de recurso de equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-103">team resource type</span></span>
+
+> <span data-ttu-id="d28bb-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="d28bb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d28bb-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="d28bb-105">Use of these APIs in production applications is not supported.</span></span>
+
+<span data-ttu-id="d28bb-106">Uma equipe Teams da Microsoft é uma coleção de [canais](channel.md).</span><span class="sxs-lookup"><span data-stu-id="d28bb-106">A team in Microsoft Teams is a collection of [channels](channel.md).</span></span> <span data-ttu-id="d28bb-107">Um canal representa um tópico e, portanto, um isolamento lógico discussão, dentro de uma equipe.</span><span class="sxs-lookup"><span data-stu-id="d28bb-107">A channel represents a topic, and therefore a logical isolation of discussion, within a team.</span></span>
+
+<span data-ttu-id="d28bb-108">Cada equipe é associado um [grupo](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="d28bb-108">Every team is associated with a [group](../resources/group.md).</span></span>
+<span data-ttu-id="d28bb-109">O grupo tem a mesma identificação que a equipe - por exemplo, /groups/ {id} / equipe é igual ao /teams/ {id}.</span><span class="sxs-lookup"><span data-stu-id="d28bb-109">The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}.</span></span>
+<span data-ttu-id="d28bb-110">Para obter mais informações sobre como trabalhar com grupos e membros de equipes, consulte [Use a API do Microsoft Graph REST para trabalhar com as equipes da Microsoft](teams-api-overview.md).</span><span class="sxs-lookup"><span data-stu-id="d28bb-110">For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).</span></span>
+
+## <a name="methods"></a><span data-ttu-id="d28bb-111">Métodos</span><span class="sxs-lookup"><span data-stu-id="d28bb-111">Methods</span></span>
+
+| <span data-ttu-id="d28bb-112">Método</span><span class="sxs-lookup"><span data-stu-id="d28bb-112">Method</span></span>       | <span data-ttu-id="d28bb-113">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="d28bb-113">Return Type</span></span>  |<span data-ttu-id="d28bb-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="d28bb-114">Description</span></span>|
+|:---------------|:--------|:----------|
+|[<span data-ttu-id="d28bb-115">Criar equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-115">Create team</span></span>](../api/team-put-teams.md) | [<span data-ttu-id="d28bb-116">equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-116">team</span></span>](team.md) | <span data-ttu-id="d28bb-117">Criar um novo equipe ou adicione uma equipe a um grupo existente.</span><span class="sxs-lookup"><span data-stu-id="d28bb-117">Create a new team, or add a team to an existing group.</span></span>|
+|[<span data-ttu-id="d28bb-118">Obtenha a equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-118">Get team</span></span>](../api/team-get.md) | [<span data-ttu-id="d28bb-119">equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-119">team</span></span>](team.md) | <span data-ttu-id="d28bb-120">Recupere as propriedades e relacionamentos da equipe especificado.</span><span class="sxs-lookup"><span data-stu-id="d28bb-120">Retrieve the properties and relationships of the specified team.</span></span>|
+|[<span data-ttu-id="d28bb-121">Equipe de atualização</span><span class="sxs-lookup"><span data-stu-id="d28bb-121">Update team</span></span>](../api/team-update.md) | [<span data-ttu-id="d28bb-122">equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-122">team</span></span>](team.md) |<span data-ttu-id="d28bb-123">Atualize as propriedades da equipe especificado.</span><span class="sxs-lookup"><span data-stu-id="d28bb-123">Update the properties of the specified team.</span></span> |
+|[<span data-ttu-id="d28bb-124">Excluir equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-124">Delete team</span></span>](/graph/api/group-delete?view=graph-rest-1.0) | <span data-ttu-id="d28bb-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d28bb-125">None</span></span> |<span data-ttu-id="d28bb-126">Exclua a equipe e seu grupo associado.</span><span class="sxs-lookup"><span data-stu-id="d28bb-126">Delete the team and its associated group.</span></span> |
+|[<span data-ttu-id="d28bb-127">Equipe de clone</span><span class="sxs-lookup"><span data-stu-id="d28bb-127">Clone team</span></span>](../api/team-clone.md) | [<span data-ttu-id="d28bb-128">teamsAsyncOperation</span><span class="sxs-lookup"><span data-stu-id="d28bb-128">teamsAsyncOperation</span></span>](../resources/teamsasyncoperation.md) |<span data-ttu-id="d28bb-129">Copie a equipe e seu grupo associado.</span><span class="sxs-lookup"><span data-stu-id="d28bb-129">Copy the team and its associated group.</span></span> |
+|[<span data-ttu-id="d28bb-130">Equipe de arquivo morto</span><span class="sxs-lookup"><span data-stu-id="d28bb-130">Archive team</span></span>](../api/team-archive.md) | [<span data-ttu-id="d28bb-131">teamsAsyncOperation</span><span class="sxs-lookup"><span data-stu-id="d28bb-131">teamsAsyncOperation</span></span>](../resources/teamsasyncoperation.md) |<span data-ttu-id="d28bb-132">Colocar a equipe em um estado somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d28bb-132">Put the team in a read-only state.</span></span> |
+|[<span data-ttu-id="d28bb-133">Equipe de unarchive</span><span class="sxs-lookup"><span data-stu-id="d28bb-133">Unarchive team</span></span>](../api/team-unarchive.md) | [<span data-ttu-id="d28bb-134">teamsAsyncOperation</span><span class="sxs-lookup"><span data-stu-id="d28bb-134">teamsAsyncOperation</span></span>](../resources/teamsasyncoperation.md) |<span data-ttu-id="d28bb-135">Restaure a equipe em um estado de leitura / gravação.</span><span class="sxs-lookup"><span data-stu-id="d28bb-135">Restore the team to a read-write state.</span></span> |
+|[<span data-ttu-id="d28bb-136">Listar suas equipes</span><span class="sxs-lookup"><span data-stu-id="d28bb-136">List your teams</span></span>](../api/user-list-joinedteams.md) | <span data-ttu-id="d28bb-137">coleção de [equipe](team.md)</span><span class="sxs-lookup"><span data-stu-id="d28bb-137">[team](team.md) collection</span></span> | <span data-ttu-id="d28bb-138">Liste as equipes que você é um membro de.</span><span class="sxs-lookup"><span data-stu-id="d28bb-138">List the teams you are a member of.</span></span> |
+|[<span data-ttu-id="d28bb-139">Liste todas as equipes</span><span class="sxs-lookup"><span data-stu-id="d28bb-139">List all teams</span></span>](/graph/teams-list-all-teams) | <span data-ttu-id="d28bb-140">Coleção [group](group.md)</span><span class="sxs-lookup"><span data-stu-id="d28bb-140">[group](group.md) collection</span></span> | <span data-ttu-id="d28bb-141">Liste todos os grupos que possuem equipes.</span><span class="sxs-lookup"><span data-stu-id="d28bb-141">List all groups that have teams.</span></span> |
+|[<span data-ttu-id="d28bb-142">Publicar aplicativos à sua organização</span><span class="sxs-lookup"><span data-stu-id="d28bb-142">Publish apps to your organization</span></span>](../resources/teamsapp.md)| [<span data-ttu-id="d28bb-143">teamsApp</span><span class="sxs-lookup"><span data-stu-id="d28bb-143">teamsApp</span></span>](../resources/teamsapp.md) | <span data-ttu-id="d28bb-144">Crie aplicativos de equipes visível somente para sua organização.</span><span class="sxs-lookup"><span data-stu-id="d28bb-144">Create Teams apps visible only to your organization.</span></span> |
+|[<span data-ttu-id="d28bb-145">Adicionar o aplicativo à equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-145">Add app to team</span></span>](../api/teamsappinstallation-add.md) | [<span data-ttu-id="d28bb-146">teamsappinstallation</span><span class="sxs-lookup"><span data-stu-id="d28bb-146">teamsappinstallation</span></span>](teamsappinstallation.md) | <span data-ttu-id="d28bb-147">Adiciona (instala) um aplicativo para uma equipe.</span><span class="sxs-lookup"><span data-stu-id="d28bb-147">Adds (installs) an app to a team.</span></span>|
+|[<span data-ttu-id="d28bb-148">Adicionar guia ao canal</span><span class="sxs-lookup"><span data-stu-id="d28bb-148">Add tab to channel</span></span>](../api/teamstab-add.md) | [<span data-ttu-id="d28bb-149">teamsTab</span><span class="sxs-lookup"><span data-stu-id="d28bb-149">teamsTab</span></span>](../resources/teamstab.md) | <span data-ttu-id="d28bb-150">Adiciona (instala) uma guia ao canal da equipe.</span><span class="sxs-lookup"><span data-stu-id="d28bb-150">Adds (installs) a tab to a team's channel.</span></span>|
+|[<span data-ttu-id="d28bb-151">Lista de mensagens de canal</span><span class="sxs-lookup"><span data-stu-id="d28bb-151">List channel messages</span></span>](../api/channel-list-messages.md)  | [<span data-ttu-id="d28bb-152">chatMessage</span><span class="sxs-lookup"><span data-stu-id="d28bb-152">chatMessage</span></span>](../resources/chatmessage.md) | [<span data-ttu-id="d28bb-153">Obter mensagens em um canal</span><span class="sxs-lookup"><span data-stu-id="d28bb-153">Get messages in a channel</span></span>](../api/channel-list-messages.md) |
+
+## <a name="properties"></a><span data-ttu-id="d28bb-154">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d28bb-154">Properties</span></span>
+
+| <span data-ttu-id="d28bb-155">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d28bb-155">Property</span></span> | <span data-ttu-id="d28bb-156">Tipo</span><span class="sxs-lookup"><span data-stu-id="d28bb-156">Type</span></span>   | <span data-ttu-id="d28bb-157">Descrição</span><span class="sxs-lookup"><span data-stu-id="d28bb-157">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="d28bb-158">funSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-158">funSettings</span></span>|[<span data-ttu-id="d28bb-159">teamFunSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-159">teamFunSettings</span></span>](teamfunsettings.md) |<span data-ttu-id="d28bb-160">Configurações para configurar o uso de Giphy, memes e adesivos na equipe de.</span><span class="sxs-lookup"><span data-stu-id="d28bb-160">Settings to configure use of Giphy, memes, and stickers in the team.</span></span>|
+|<span data-ttu-id="d28bb-161">guestSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-161">guestSettings</span></span>|[<span data-ttu-id="d28bb-162">teamGuestSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-162">teamGuestSettings</span></span>](teamguestsettings.md) |<span data-ttu-id="d28bb-163">Configurações para configurar se os convidados podem criar, atualizar ou excluir canais na equipe de.</span><span class="sxs-lookup"><span data-stu-id="d28bb-163">Settings to configure whether guests can create, update, or delete channels in the team.</span></span>|
+|<span data-ttu-id="d28bb-164">isArchived</span><span class="sxs-lookup"><span data-stu-id="d28bb-164">isArchived</span></span>|<span data-ttu-id="d28bb-165">Booliano</span><span class="sxs-lookup"><span data-stu-id="d28bb-165">Boolean</span></span>|<span data-ttu-id="d28bb-166">Se essa equipe está em modo somente leitura.</span><span class="sxs-lookup"><span data-stu-id="d28bb-166">Whether this team is in read-only mode.</span></span> |
+|<span data-ttu-id="d28bb-167">memberSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-167">memberSettings</span></span>|[<span data-ttu-id="d28bb-168">teamMemberSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-168">teamMemberSettings</span></span>](teammembersettings.md) |<span data-ttu-id="d28bb-169">Configurações para configurar se os membros podem realizar determinadas ações, por exemplo, criam canais e adicionar bots, na equipe de.</span><span class="sxs-lookup"><span data-stu-id="d28bb-169">Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.</span></span>|
+|<span data-ttu-id="d28bb-170">messagingSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-170">messagingSettings</span></span>|[<span data-ttu-id="d28bb-171">teamMessagingSettings</span><span class="sxs-lookup"><span data-stu-id="d28bb-171">teamMessagingSettings</span></span>](teammessagingsettings.md) |<span data-ttu-id="d28bb-172">Configurações para configurar mensagens e menções na equipe de.</span><span class="sxs-lookup"><span data-stu-id="d28bb-172">Settings to configure messaging and mentions in the team.</span></span>|
+|<span data-ttu-id="d28bb-173">webUrl</span><span class="sxs-lookup"><span data-stu-id="d28bb-173">webUrl</span></span>|<span data-ttu-id="d28bb-174">cadeia de caracteres (somente leitura)</span><span class="sxs-lookup"><span data-stu-id="d28bb-174">string (readonly)</span></span> | <span data-ttu-id="d28bb-175">Um hiperlink que irão para a equipe no cliente do Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="d28bb-175">A hyperlink that will go to the team in the Microsoft Teams client.</span></span> <span data-ttu-id="d28bb-176">Esta é a URL que você obtém quando você uma equipe no cliente do Microsoft Teams do mouse em e selecione o **link para a equipe de obter**.</span><span class="sxs-lookup"><span data-stu-id="d28bb-176">This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**.</span></span> <span data-ttu-id="d28bb-177">Essa URL deve ser tratado como um blob opaco e não analisado.</span><span class="sxs-lookup"><span data-stu-id="d28bb-177">This URL should be treated as an opaque blob, and not parsed.</span></span> |
+
+## <a name="relationships"></a><span data-ttu-id="d28bb-178">Relações</span><span class="sxs-lookup"><span data-stu-id="d28bb-178">Relationships</span></span>
+
+| <span data-ttu-id="d28bb-179">Relação</span><span class="sxs-lookup"><span data-stu-id="d28bb-179">Relationship</span></span> | <span data-ttu-id="d28bb-180">Tipo</span><span class="sxs-lookup"><span data-stu-id="d28bb-180">Type</span></span>   | <span data-ttu-id="d28bb-181">Descrição</span><span class="sxs-lookup"><span data-stu-id="d28bb-181">Description</span></span> |
+|:---------------|:--------|:----------|
+|<span data-ttu-id="d28bb-182">Aplicativos</span><span class="sxs-lookup"><span data-stu-id="d28bb-182">apps</span></span>|<span data-ttu-id="d28bb-183">coleção [teamsApp](teamsapp.md)</span><span class="sxs-lookup"><span data-stu-id="d28bb-183">[teamsApp](teamsapp.md) collection</span></span>| <span data-ttu-id="d28bb-184">(Obsoleto) Os aplicativos instalados nesse conjunto.</span><span class="sxs-lookup"><span data-stu-id="d28bb-184">(Obsolete) The apps installed in this team.</span></span>|
+|<span data-ttu-id="d28bb-185">canais</span><span class="sxs-lookup"><span data-stu-id="d28bb-185">channels</span></span>|<span data-ttu-id="d28bb-186">coleção de [canal](channel.md)</span><span class="sxs-lookup"><span data-stu-id="d28bb-186">[channel](channel.md) collection</span></span>|<span data-ttu-id="d28bb-187">A coleção de canais & associadas à equipe de mensagens.</span><span class="sxs-lookup"><span data-stu-id="d28bb-187">The collection of channels & messages associated with the team.</span></span>|
+|<span data-ttu-id="d28bb-188">installedApps</span><span class="sxs-lookup"><span data-stu-id="d28bb-188">installedApps</span></span>|<span data-ttu-id="d28bb-189">coleção [teamsAppInstallation](teamsappinstallation.md)</span><span class="sxs-lookup"><span data-stu-id="d28bb-189">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="d28bb-190">Os aplicativos instalados nesse conjunto.</span><span class="sxs-lookup"><span data-stu-id="d28bb-190">The apps installed in this team.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="d28bb-191">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d28bb-191">JSON representation</span></span>
+
+<span data-ttu-id="d28bb-192">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d28bb-192">The following is a JSON representation of the resource.</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.team",
+  "baseType": "microsoft.graph.entity"
+}-->
+
+```json
+{  
+  "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
+  "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "isArchived": false,
+  "webUrl": "https://...longUrl..."
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "team resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
+## <a name="see-also"></a><span data-ttu-id="d28bb-193">Confira também</span><span class="sxs-lookup"><span data-stu-id="d28bb-193">See Also</span></span>
+- [<span data-ttu-id="d28bb-194">Criando um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="d28bb-194">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="d28bb-195">Visão geral da API de equipes</span><span class="sxs-lookup"><span data-stu-id="d28bb-195">Teams API Overview</span></span>](teams-api-overview.md)
