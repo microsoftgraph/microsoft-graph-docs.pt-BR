@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso ChartAxis
+description: Representa um único eixo em um gráfico.
+ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27037592"
+---
 # <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa um único eixo em um gráfico.
 
@@ -7,11 +19,11 @@ Representa um único eixo em um gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartAxis](../api/chartaxis_get.md) | [ChartAxis](chartaxis.md) |Leia as propriedades e os relacionamentos do objeto chartAxis.|
-|[Update](../api/chartaxis_update.md) | [ChartAxis](chartaxis.md)    |Atualize o objeto ChartAxis. |
+|[Get ChartAxis](../api/chartaxis-get.md) | [ChartAxis](chartaxis.md) |Leia as propriedades e os relacionamentos do objeto chartAxis.|
+|[Update](../api/chartaxis-update.md) | [ChartAxis](chartaxis.md)   |Atualize o objeto ChartAxis. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |majorUnit|object|Representa o intervalo entre as duas principais marcas de escala. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia.  O valor retornado sempre é um número.|
 |maximum|object|Representa o valor máximo no eixo dos valores.  Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo).  O valor retornado sempre é um número.|
@@ -19,7 +31,7 @@ Representa um único eixo em um gráfico.
 |minorUnit|object|Representa o intervalo entre duas marcas de escala secundárias. Pode ser definido como um valor numérico ou uma cadeia de caracteres vazia (para valores automáticos de eixo). O valor retornado sempre é um número.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |formato|[ChartAxisFormat](chartaxisformat.md)|Representa a formatação de um objeto Chart, que inclui formatação de linha e de fonte. Somente leitura.|
 |majorGridlines|[ChartGridlines](chartgridlines.md)|Retorna um objeto de linha de grade que representa as principais linhas de grade do eixo especificado. Somente leitura.|
