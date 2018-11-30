@@ -1,0 +1,338 @@
+---
+title: Criar windows10VpnConfiguration
+description: Crie um novo objeto de windows10VpnConfiguration.
+ms.openlocfilehash: 18b11fd56a76a89d2432e3c07756dbf318876488
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27040735"
+---
+# <a name="create-windows10vpnconfiguration"></a>Criar windows10VpnConfiguration
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Crie um novo objeto de [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) .
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /deviceManagement/deviceConfigurations
+POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Accept|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, fornece uma representação JSON para o objeto windows10VpnConfiguration.
+
+A tabela a seguir mostra as propriedades que são necessárias quando você cria o windows10VpnConfiguration.
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|connectionName|String|Nome da Conexão exibida para o usuário. Herdado de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|servidores|coleção [vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Lista de servidores VPN na rede. Verifique se os usuários finais podem acessar esses locais de rede. Esta coleção pode conter um máximo de 500 elementos. Herdado de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|customXml|Binário|Comandos XML personalizados que configura a conexão VPN. (Array de byte codificado UTF8) Herdado de [windowsVpnConfiguration](../resources/intune-deviceconfig-windowsvpnconfiguration.md)|
+|profileTarget|[windows10VpnProfileTarget](../resources/intune-deviceconfig-windows10vpnprofiletarget.md)|Tipo de perfil de destino. Os valores possíveis são: `user`, `device`, `autoPilotDevice`.|
+|connectionType|[windows10VpnConnectionType](../resources/intune-deviceconfig-windows10vpnconnectiontype.md)|Tipo de Conexão. Os valores possíveis são: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `automatic`, `ikEv2`, `l2tp`, `pptp`, `citrix`, `paloAltoGlobalProtect`.|
+|enableSplitTunneling|Booliano|Habilite o túnel em divisão.|
+|enableAlwaysOn|Booliano|Habilite o modo Always On.|
+|enableDeviceTunnel|Booliano|Habilite o túnel de dispositivo.|
+|enableDnsRegistration|Booliano|Habilite o registro de endereço IP com DNS interno.|
+|dnsSuffixes|String collection|Especifica os sufixos DNS para adicionar à lista de pesquisa de DNS para rotear corretamente nomes curtos.|
+|authenticationMethod|[windows10VpnAuthenticationMethod](../resources/intune-deviceconfig-windows10vpnauthenticationmethod.md)|Método de autenticação. Os valores possíveis são: `certificate`, `usernameAndPassword`, `customEapXml`.|
+|rememberUserCredentials|Booliano|Lembre-se as credenciais do usuário.|
+|enableConditionalAccess|Booliano|Habilite o acesso condicional.|
+|enableSingleSignOnWithAlternateCertificate|Booliano|Habilite logon único (SSO) com o certificado alternativo.|
+|singleSignOnEku|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Single sign-on chave EKU (uso estendido).|
+|singleSignOnIssuerHash|String|Hash de emissor de logon único.|
+|eapXml|Binário|Protocolo de autenticação extensível (EAP) XML. (Matriz de bytes codificados em UTF8)|
+|proxyServer|[windows10VpnProxyServer](../resources/intune-deviceconfig-windows10vpnproxyserver.md)|Servidor proxy.|
+|associatedApps|coleção [windows10AssociatedApps](../resources/intune-deviceconfig-windows10associatedapps.md)|Aplicativos associados. Essa coleção pode conter um máximo de 10.000 elementos.|
+|onlyAssociatedAppsCanUseConnection|Booliano|Apenas os aplicativos associados podem usar a conexão (-app VPN).|
+|windowsInformationProtectionDomain|String|Domínio de proteção de informações do Windows (WIP) para associar a essa conexão.|
+|trafficRules|coleção [vpnTrafficRule](../resources/intune-deviceconfig-vpntrafficrule.md)|Regras de tráfego. Essa coleção pode conter um máximo de 1.000 elementos.|
+|rotas|coleção [vpnRoute](../resources/intune-deviceconfig-vpnroute.md)|Roteia (opcional para provedores de terceiros). Essa coleção pode conter um máximo de 1.000 elementos.|
+|dnsRules|coleção [vpnDnsRule](../resources/intune-deviceconfig-vpndnsrule.md)|Regras DNS. Essa coleção pode conter um máximo de 1.000 elementos.|
+
+
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+Content-type: application/json
+Content-length: 3323
+
+{
+  "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "connectionName": "Connection Name value",
+  "servers": [
+    {
+      "@odata.type": "microsoft.graph.vpnServer",
+      "description": "Description value",
+      "address": "Address value",
+      "isDefaultServer": true
+    }
+  ],
+  "customXml": "Y3VzdG9tWG1s",
+  "profileTarget": "device",
+  "connectionType": "f5EdgeClient",
+  "enableSplitTunneling": true,
+  "enableAlwaysOn": true,
+  "enableDeviceTunnel": true,
+  "enableDnsRegistration": true,
+  "dnsSuffixes": [
+    "Dns Suffixes value"
+  ],
+  "authenticationMethod": "usernameAndPassword",
+  "rememberUserCredentials": true,
+  "enableConditionalAccess": true,
+  "enableSingleSignOnWithAlternateCertificate": true,
+  "singleSignOnEku": {
+    "@odata.type": "microsoft.graph.extendedKeyUsage",
+    "name": "Name value",
+    "objectIdentifier": "Object Identifier value"
+  },
+  "singleSignOnIssuerHash": "Single Sign On Issuer Hash value",
+  "eapXml": "ZWFwWG1s",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.windows10VpnProxyServer",
+    "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+    "address": "Address value",
+    "port": 4,
+    "bypassProxyServerForLocalAddress": true
+  },
+  "associatedApps": [
+    {
+      "@odata.type": "microsoft.graph.windows10AssociatedApps",
+      "appType": "universal",
+      "identifier": "Identifier value"
+    }
+  ],
+  "onlyAssociatedAppsCanUseConnection": true,
+  "windowsInformationProtectionDomain": "Windows Information Protection Domain value",
+  "trafficRules": [
+    {
+      "@odata.type": "microsoft.graph.vpnTrafficRule",
+      "name": "Name value",
+      "protocols": 9,
+      "localPortRanges": [
+        {
+          "@odata.type": "microsoft.graph.numberRange",
+          "lowerNumber": 11,
+          "upperNumber": 11
+        }
+      ],
+      "remotePortRanges": [
+        {
+          "@odata.type": "microsoft.graph.numberRange",
+          "lowerNumber": 11,
+          "upperNumber": 11
+        }
+      ],
+      "localAddressRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv4Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "remoteAddressRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv4Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "appId": "App Id value",
+      "appType": "desktop",
+      "routingPolicyType": "splitTunnel",
+      "claims": "Claims value"
+    }
+  ],
+  "routes": [
+    {
+      "@odata.type": "microsoft.graph.vpnRoute",
+      "destinationPrefix": "Destination Prefix value",
+      "prefixSize": 10
+    }
+  ],
+  "dnsRules": [
+    {
+      "@odata.type": "microsoft.graph.vpnDnsRule",
+      "name": "Name value",
+      "servers": [
+        "Servers value"
+      ],
+      "proxyServerUri": "Proxy Server Uri value"
+    }
+  ]
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+Content-Length: 3431
+
+{
+  "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
+  "id": "c23c9727-9727-c23c-2797-3cc227973cc2",
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "supportsScopeTags": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+  "description": "Description value",
+  "displayName": "Display Name value",
+  "version": 7,
+  "connectionName": "Connection Name value",
+  "servers": [
+    {
+      "@odata.type": "microsoft.graph.vpnServer",
+      "description": "Description value",
+      "address": "Address value",
+      "isDefaultServer": true
+    }
+  ],
+  "customXml": "Y3VzdG9tWG1s",
+  "profileTarget": "device",
+  "connectionType": "f5EdgeClient",
+  "enableSplitTunneling": true,
+  "enableAlwaysOn": true,
+  "enableDeviceTunnel": true,
+  "enableDnsRegistration": true,
+  "dnsSuffixes": [
+    "Dns Suffixes value"
+  ],
+  "authenticationMethod": "usernameAndPassword",
+  "rememberUserCredentials": true,
+  "enableConditionalAccess": true,
+  "enableSingleSignOnWithAlternateCertificate": true,
+  "singleSignOnEku": {
+    "@odata.type": "microsoft.graph.extendedKeyUsage",
+    "name": "Name value",
+    "objectIdentifier": "Object Identifier value"
+  },
+  "singleSignOnIssuerHash": "Single Sign On Issuer Hash value",
+  "eapXml": "ZWFwWG1s",
+  "proxyServer": {
+    "@odata.type": "microsoft.graph.windows10VpnProxyServer",
+    "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
+    "address": "Address value",
+    "port": 4,
+    "bypassProxyServerForLocalAddress": true
+  },
+  "associatedApps": [
+    {
+      "@odata.type": "microsoft.graph.windows10AssociatedApps",
+      "appType": "universal",
+      "identifier": "Identifier value"
+    }
+  ],
+  "onlyAssociatedAppsCanUseConnection": true,
+  "windowsInformationProtectionDomain": "Windows Information Protection Domain value",
+  "trafficRules": [
+    {
+      "@odata.type": "microsoft.graph.vpnTrafficRule",
+      "name": "Name value",
+      "protocols": 9,
+      "localPortRanges": [
+        {
+          "@odata.type": "microsoft.graph.numberRange",
+          "lowerNumber": 11,
+          "upperNumber": 11
+        }
+      ],
+      "remotePortRanges": [
+        {
+          "@odata.type": "microsoft.graph.numberRange",
+          "lowerNumber": 11,
+          "upperNumber": 11
+        }
+      ],
+      "localAddressRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv4Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "remoteAddressRanges": [
+        {
+          "@odata.type": "microsoft.graph.iPv4Range",
+          "lowerAddress": "Lower Address value",
+          "upperAddress": "Upper Address value"
+        }
+      ],
+      "appId": "App Id value",
+      "appType": "desktop",
+      "routingPolicyType": "splitTunnel",
+      "claims": "Claims value"
+    }
+  ],
+  "routes": [
+    {
+      "@odata.type": "microsoft.graph.vpnRoute",
+      "destinationPrefix": "Destination Prefix value",
+      "prefixSize": 10
+    }
+  ],
+  "dnsRules": [
+    {
+      "@odata.type": "microsoft.graph.vpnDnsRule",
+      "name": "Name value",
+      "servers": [
+        "Servers value"
+      ],
+      "proxyServerUri": "Proxy Server Uri value"
+    }
+  ]
+}
+```
+
+
+
+
+
