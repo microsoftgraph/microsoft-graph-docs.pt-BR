@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso RangeFont
+description: Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, etc.
+ms.openlocfilehash: bafb7c052458c7b3f4001d7e999acc14c7aaabee
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006365"
+---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
 
 Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, etc.
@@ -7,18 +17,18 @@ Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, c
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get RangeFont](../api/rangefont_get.md) | [RangeFont](rangefont.md) |Leia as propriedades e os relacionamentos do objeto rangeFormat.|
-|[Update](../api/rangefont_update.md) | [RangeFont](rangefont.md)    |Atualize o objeto RangeFont. |
+|[Get RangeFont](../api/rangefont-get.md) | [WorkbookRangeFont](rangefont.md) |Leia as propriedades e os relacionamentos do objeto rangeFormat.|
+|[Update](../api/rangefont-update.md) | [WorkbookRangeFont](rangefont.md)   |Atualize o objeto RangeFont. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|cadeia de caracteres|Nome da fonte (por exemplo, "Calibri")|
+|name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
+|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -28,12 +38,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFont"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 }-->
 
 ```json

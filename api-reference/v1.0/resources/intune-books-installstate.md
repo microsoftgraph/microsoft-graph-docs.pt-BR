@@ -1,0 +1,27 @@
+---
+title: tipo de enum installState
+description: Valores possíveis para o estado de instalação.
+ms.openlocfilehash: 0c22ff4c5f7fb7668ccd51ed743fed61087fcd73
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006209"
+---
+# <a name="installstate-enum-type"></a>tipo de enum installState
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Valores possíveis para o estado de instalação.
+## <a name="members"></a>Membros
+|Membro|Valor|Descrição|
+|:---|:---|:---|
+|notApplicable|0|Não aplicável.|
+|instalado|1|Instalado.|
+|Falha|2|Falha.|
+|notInstalled|3|Não instalado.|
+|uninstallFailed|4|Desinstalar falhou.|
+|unknown|5|Desconhecido.|
+
+
+

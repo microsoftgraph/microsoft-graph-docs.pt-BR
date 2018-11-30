@@ -1,19 +1,26 @@
-# Tipo de recurso contact
-<a id="contract-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso contact
+description: Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
+ms.openlocfilehash: 5058ea32946df677596dfb0e4502c6f9d4145ec2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003577"
+---
+# <a name="contract-resource-type"></a>Tipo de recurso contact
 Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
 
 > **Importante:** Existe apenas em locatários do parceiro. Locatários do parceiro são locatários Azure AD que pertencem a parceiros da Microsoft que fazem parte do [Provedor de Soluções do Microsoft Cloud](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication ou programas de parceiro Microsoft Advisor.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método   | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Get contract](../api/contract_get.md) | Contrato |Ler propriedades de um objeto de contrato específico. |
-|[List contracts](../api/contract_list.md) | Coleção de contratos | Lista de contratos no locatário parceiro. |
+|[Get contract](../api/contract-get.md) | Contrato |Ler propriedades de um objeto de contrato específico. |
+|[List contracts](../api/contract-list.md) | Coleção de contratos | Lista de contratos no locatário parceiro. |
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |contractType|String|Tipo de contrato.<br><br>Os valores possíveis são:<br> *SyndicationPartner* – parceiro que revende ou gerencia com exclusividade O365 e Intune para esse cliente. Eles revendem e oferecem suporte aos seus clientes.<br> *BreadthPartner* – parceiro tem a capacidade de fornecer suporte administrativo para esse cliente. No entanto, o parceiro não tem permissão para revender ao cliente.<br>*ResellerPartner* – parceiro que é semelhante a um parceiro de agregação, exceto que o parceiro não tem acesso exclusivo ao locatário. No caso de agregação, o cliente não pode comprar assinaturas diretas adicionais da Microsoft ou de outros parceiros.|
@@ -22,21 +29,20 @@ Representa uma parceria existente que o locatário parceiro tem com um locatári
 |displayName|String|Uma cópia do nome de exibição do locatário do cliente. A cópia é feita quando a parceria com o cliente é estabelecida. Ele não é atualizado automaticamente se o nome de exibição do locatário do cliente é alterado.|
 |id|String| O identificador exclusivo da parceria. Chave, somente leitura |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 Nenhum
 
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.Contract"
+  "openType": true,
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.contract"
 }-->
 
 ```json

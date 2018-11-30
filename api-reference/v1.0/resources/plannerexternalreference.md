@@ -1,12 +1,20 @@
-# Tipo de recurso plannerExternalReference
-<a id="plannerexternalreference-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerExternalReference
+description: O recurso de **plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor de pares de valor da propriedade no objeto externalReferences.
+ms.openlocfilehash: a9d53b487fd2ca6584af934c55388ee66b2071d2
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003830"
+---
+# <a name="plannerexternalreference-resource-type"></a>Tipo de recurso plannerExternalReference
 
 O recurso **plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor de pares propriedade-valor no [objeto externalReferences](plannerexternalreferences.md).
 
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |alias|String|Um alias de nome para descrever a referência.|
@@ -15,8 +23,7 @@ O recurso **plannerExternalReference** representa os metadados de uma referênci
 |previewPriority|String|Usado para definir a ordem de prioridade relativa na qual a referência será mostrada como uma visualização na tarefa.|
 |type|String|Usado para descrever o tipo da referência. Os tipos incluem: `PowerPoint`, `Word`, `Excel`, `Other`.|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

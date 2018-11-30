@@ -1,19 +1,26 @@
-# Tipo de recurso licenseDetails
-<a id="licensedetails-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso licenseDetails
+description: Contém informações sobre uma licença atribuída a um usuário.
+ms.openlocfilehash: 8c357617eea04151851a0e3a27c41937abd07b28
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004995"
+---
+# <a name="licensedetails-resource-type"></a>Tipo de recurso licenseDetails
 
 Contém informações sobre uma licença atribuída a um usuário.
 
-## Métodos
-<a id="methods" class="xliff"></a>
+## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar licenseDetails](../api/user_list_licensedetails.md) | coleção licenseDetails |Recupere uma lista de objetos licenseDetails para um usuário.|
+|[Listar licenseDetails](../api/user-list-licensedetails.md) | coleção licenseDetails |Recupere uma lista de objetos licenseDetails para um usuário.|
 
-<!--|[Get licenseDetails](../api/licensedetails_get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
+<!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| O identificador exclusivo do objeto de detalhe de licença. Somente leitura, Chave, Não anulável |
@@ -21,16 +28,15 @@ Contém informações sobre uma licença atribuída a um usuário.
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. Igual à propriedade skuId no objeto [SubscribedSku](subscribedsku.md) relacionado. Somente leitura |
 |skuPartNumber|String| Nome de exibição exclusivo do SKU. Igual à propriedade skuPartNumber no objeto [SubscribedSku](subscribedsku.md) relacionado. Por exemplo: "AAD_Premium". Somente leitura |
 
-## Relações
-<a id="relationships" class="xliff"></a>
+## <a name="relationships"></a>Relações
 Nenhum
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

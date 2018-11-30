@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso TableRow
+description: Representa uma linha em uma tabela.
+ms.openlocfilehash: e96367137fb6b2fe70e15aa932a104c2042651c0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003529"
+---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
 Representa uma linha em uma tabela.
@@ -7,19 +17,19 @@ Representa uma linha em uma tabela.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get TableRow](../api/tablerow_get.md) | [TableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
-|[Update](../api/tablerow_update.md) | [TableRow](tablerow.md)    |Atualize o objeto TableRow. |
-|[Range](../api/tablerow_range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow_delete.md)|Nenhum|Exclui a linha da tabela.|
-|[List](../api/tablerow_list.md) | Coleção [TableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
-|[Itemat](../api/tablerowcollection_itemat.md)|[TableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
-|[Add](../api/tablerowcollection_add.md)|[TableRow](tablerow.md)|Adiciona uma nova linha à tabela.|
+|[Get TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
+|[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Atualize o objeto TableRow. |
+|[Range](../api/tablerow-range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
+|[Delete](../api/tablerow-delete.md)|Nenhum|Exclui a linha da tabela.|
+|[List](../api/tablerow-list.md) | Coleção [WorkbookTableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
+|[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
+|[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Adiciona uma nova linha à tabela.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
-|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|índice|inteiro|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
+|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -29,12 +39,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.tableRow"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookTableRow"
 }-->
 
 ```json

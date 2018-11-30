@@ -1,12 +1,22 @@
+---
+title: Tipo de recurso FilterDatetime
+description: Indica como filtrar uma data ao filtrar valores.
+ms.openlocfilehash: 8156b9f5779dd8d70ff3a839d8a6ef4f5753bacd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003573"
+---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 
 Indica como filtrar uma data ao filtrar valores.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|data|cadeia de caracteres|A data no formato ISO8601 usada para filtrar os dados.|
-|especificidade|string|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute` e `Second`.|
+|data|string|A data no formato ISO8601 usada para filtrar os dados.|
+|especificidade|string|Específico como a data deve ser usada para manter os dados. Por exemplo, se a data é 2005-04-02 e o specifity estiver definido como "mês", a operação de filtro manterá todas as linhas com uma data no mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -21,7 +31,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.filterDateTime"
+  "@odata.type": "microsoft.graph.workbookFilterDateTime"
 }-->
 
 ```json

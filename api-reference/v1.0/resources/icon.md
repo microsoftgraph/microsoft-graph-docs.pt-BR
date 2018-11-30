@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso Icon
+description: Representa um ícone de célula.
+ms.openlocfilehash: 9485a831241ce92be3f8e7c4df5173285f926bbf
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006228"
+---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
 Representa um ícone de célula.
@@ -7,14 +17,14 @@ Representa um ícone de célula.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get Icon](../api/icon_get.md) | [Icon](icon.md) |Leia as propriedades e os relacionamentos do objeto de ícone.|
-|[Update](../api/icon_update.md) | [Icon](icon.md)    |Atualize o objeto Icon. |
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Leia as propriedades e os relacionamentos do objeto de ícone.|
+|[Update](../api/icon-update.md) | [Icon](icon.md)  |Atualize o objeto Icon. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.|
+|índice|inteiro|Representa o índice do ícone em determinado conjunto.|
+|set|string|Representa o que o ícone faz parte do conjunto. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars` , `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -29,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.icon"
+  "@odata.type": "microsoft.graph.workbookIcon"
 }-->
 
 ```json

@@ -1,11 +1,72 @@
+---
+title: Trabalhar com sites do SharePoint no Microsoft Graph
+description: 'A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais:'
+ms.openlocfilehash: d86872ac714ad4675232cd76508310f3f265e4f0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004481"
+---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Trabalhar com sites do SharePoint no Microsoft Graph
 
 A API do SharePoint no Microsoft Graph suporta os seguintes cenários principais:
 
-* Acesso aos **sites** e às **unidades** do SharePoint (bibliotecas de documentos)
+* Acesso aos **sites**, **lists** e **drives** do SharePoint (bibliotecas de documentos)
 * Suporte somente leitura para recursos de **site** (nenhuma capacidade de criar novos sites)
-* Suporte a leitura e gravação **driveItems**
+* Suporte a leitura e gravação para **lists**, **listItems** e **driveItems**
 * Lidar com recursos por ID do SharePoint, URL ou caminho relativo
+
+A API do SharePoint expõe três tipos de recursos principais:
+
+* [Site](site.md) _(objeto de nível superior)_
+* [List](list.md)
+* [ListItem](listitem.md)
+
+A seguir está um exemplo de um recurso listItem.
+
+```json
+{
+  "fields": {
+    "Title": "Access card",
+    "Employee": "Ryan Gregg",
+    "EmployeeId": "10",
+    "CardSerial": "01235492",
+    "Alias": "RGregg",
+    "ID": 1,
+    "ContentType": "Item",
+    "Modified": "2016-09-19T23:15:25-07:00",
+    "Created": "2016-09-19T23:15:25-07:00"
+  },
+  "createdBy": {
+    "user": {
+      "id": "b757fdcb-0271-4807-b243-504139e4ba04",
+      "displayName": "Ryan Gregg"
+    }
+  },
+  "createdDateTime": "2016-09-20T06:15:25Z",
+  "eTag": "48e941c3-9515-4c48-9760-c07c90c79d48,1",
+  "id": "4",
+  "lastModifiedBy": {
+    "user": {
+      "id": "b757fdcb-0271-4807-b243-504139e4ba04",
+      "displayName": "Ryan Gregg"
+    }
+  },
+  "lastModifiedDateTime": "2016-09-20T06:15:25Z",
+}
+```
+
+Recursos expõem dados de três maneiras diferentes:
+
+* _Propriedades_ (como **id** e **name**) expõem valores simples.
+* _Facetas_ (como **campos** e **createdBy**) expõem valores complexos.
+* _Referências_ (como **itens**) apontam para conjuntos de outros recursos.
+
+Você pode expandir referências na URL com o parâmetro de consulta _expand_; por exemplo, `?expand=fields`.
+Você pode solicitar propriedades e facetas específicas com o parâmetro de consulta _select_; por exemplo, `?select=id,name`.
+Por padrão, a maioria das propriedades e facetas retorna enquanto todas as referências ficam ocultas.
+Por questões de eficiência, recomendamos que você especifique _selecionar_ e _expandir_ para só retornar os dados mais importantes para você.
 
 ## <a name="sharepoint-api-root-resources"></a>Recursos de raiz da API do SharePoint
 
@@ -18,13 +79,15 @@ Os exemplos a seguir são relativos a `https://graph.microsoft.com/v1.0`.
 | /sites/{site-id}/drive                 | Acessar a [unidade](drive.md) padrão (biblioteca de documentos) desse [site][].
 | /sites/{site-id}/drives                | Enumerar as [unidades](drive.md) (bibliotecas de documentos) no [site][].
 | /sites/{site-id}/sites                 | Enumerar os subsites no [site][].
+| /sites/{site-id}/lists                 | Enumerar as [listas](list.md) sob o [site](site.md).
+| /sites/{site-id}/lists/{list-id}/items | Enumerar [listItems](listitem.md) sob a [lista](list.md).
 | /groups/{group-id}/sites/root          | Acesse um [site][] de equipe do grupo.
 
 Sites também podem ser tratados pelo caminho usando o nome de host do SharePoint, seguido por dois pontos e o caminho relativo para o site. Opcionalmente, você pode fazer a transição para lidar com o modelo de recurso colocando outros dois pontos no final.
 
 | Caminho                                           | Descrição
 |:-----------------------------------------------|:-----------------------------------
-| /sites/contoso.sharepoint.com:/teams/hr        | O site associado a https://contoso.sharepoint.com/teams/hr
+| /sites/contoso.sharepoint.com:/teams/hr        | O site associadohttps://contoso.sharepoint.com/teams/hr
 | /sites/contoso.sharepoint.com:/teams/hr:/drive | Acessar a [unidade](drive.md) padrão desse.
 
 ## <a name="note-for-existing-sharepoint-developers"></a>Observação para desenvolvedores do SharePoint existentes
@@ -47,8 +110,9 @@ GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 ```
 
 [site]: site.md
+[list]: list.md
 [drive]: drive.md
-[siteCollection]: siteCollection.md
+[siteCollection]: sitecollection.md
 
 <!-- {
   "type": "#page.annotation",

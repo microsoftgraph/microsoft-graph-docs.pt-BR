@@ -1,0 +1,114 @@
+---
+title: managedAndroidLobApp resource type
+description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Android gerenciados.
+ms.openlocfilehash: 6821d488a5ffb5827e66c13964cde70b1c74d5d3
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005474"
+---
+# <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp resource type
+
+> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+
+Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Android gerenciados.
+
+Herda de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)
+
+## <a name="methods"></a>Métodos
+|Método|Tipo de retorno|Descrição|
+|:---|:---|:---|
+|[Listar managedAndroidLobApps](../api/intune-apps-managedandroidlobapp-list.md)|Coleção [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md)|Lista propriedades e relações dos objetos [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).|
+|[Obter managedAndroidLobApp](../api/intune-apps-managedandroidlobapp-get.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md)|Propriedades de leitura e relações do objeto [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).|
+|[Criar managedAndroidLobApp](../api/intune-apps-managedandroidlobapp-create.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md)|Cria um novo objeto [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).|
+|[Excluir managedAndroidLobApp](../api/intune-apps-managedandroidlobapp-delete.md)|Nenhum|Exclui um [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).|
+|[Atualizar managedAndroidLobApp](../api/intune-apps-managedandroidlobapp-update.md)|[managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md)|Atualiza as propriedades de um objeto [managedAndroidLobApp](../resources/intune-apps-managedandroidlobapp.md).|
+
+## <a name="properties"></a>Propriedades
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publisher|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|Observações|String|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|A disponibilidade do Aplicativo. Herdada do [managedApp](../resources/intune-apps-managedapp.md). Os valores possíveis são: `global`, `lineOfBusiness`.|
+|version|String|A versão do Aplicativo. Herdado de [managedApp](../resources/intune-apps-managedapp.md)|
+|committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
+|fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
+|size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
+|packageId|String|O identificador do pacote.|
+|minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
+|versionName|String|O nome da versão do aplicativo gerenciado de Linha de Negócios (LoB) Android gerenciado.|
+|versionCode|String|O código da versão do aplicativo gerenciado de Linha de Negócios (LoB) Android gerenciado.|
+
+## <a name="relationships"></a>Relações
+|Relação|Tipo|Descrição|
+|:---|:---|:---|
+|categories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|A lista de categorias para este aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|assignments|Coleção [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|A lista de atribuições de grupo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|contentVersions|Coleção [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|A lista das versões de conteúdo deste aplicativo. Herdado de [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
+
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.managedAndroidLobApp"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.managedAndroidLobApp",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "publisher": "String",
+  "largeIcon": {
+    "@odata.type": "microsoft.graph.mimeContent",
+    "type": "String",
+    "value": "binary"
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "isFeatured": true,
+  "privacyInformationUrl": "String",
+  "informationUrl": "String",
+  "owner": "String",
+  "developer": "String",
+  "notes": "String",
+  "publishingState": "String",
+  "appAvailability": "String",
+  "version": "String",
+  "committedContentVersion": "String",
+  "fileName": "String",
+  "size": 1024,
+  "packageId": "String",
+  "minimumSupportedOperatingSystem": {
+    "@odata.type": "microsoft.graph.androidMinimumOperatingSystem",
+    "v4_0": true,
+    "v4_0_3": true,
+    "v4_1": true,
+    "v4_2": true,
+    "v4_3": true,
+    "v4_4": true,
+    "v5_0": true,
+    "v5_1": true
+  },
+  "versionName": "String",
+  "versionCode": "String"
+}
+```
+
+
+

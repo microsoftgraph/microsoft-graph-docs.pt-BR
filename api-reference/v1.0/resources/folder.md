@@ -1,3 +1,15 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: Pasta
+ms.openlocfilehash: dc90624b14a88d06b45302f421a7e3fcfa802a67
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003486"
+---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 
 O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
@@ -16,26 +28,29 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "childCount": 1024
+  "childCount": 1024,
+  "view": { "@odata.type": "microsoft.graph.folderView" }
 }
 ```
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo	  | Descrição                                                     |
-|:---------------|:------|:----------------------------------------------------------------|
-| **childCount** | Int64 | Número de filhos imediatamente neste contêiner. |
+| Propriedade       | Tipo           | Descrição
+|:---------------|:---------------|:-------------------------------------------
+| **childCount** | Int32          | Número de filhos imediatamente neste contêiner.
+| **view**       | [folderView][] | Uma coleção de propriedades que definem o modo de exibição recomendado para a pasta.
 
 ## <a name="remarks"></a>Comentários 
 
-Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
+Para saber mais sobre as facetas de um DriveItem, confira [DriveItem][].
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+[folderView]: folderview.md
+[DriveItem]: driveitem.md
+
 <!-- {
   "type": "#page.annotation",
-  "description": "folder resource",
-  "keywords": "",
+  "description": "The Folder facet describes properties of a folder",
+  "keywords": "folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/Folder"
+} -->

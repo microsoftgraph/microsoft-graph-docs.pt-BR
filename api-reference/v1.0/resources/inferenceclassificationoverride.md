@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso inferenceClassificationOverride
+description: Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
+ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005245"
+---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
 Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
@@ -7,14 +17,14 @@ Representa a substituição de um usuário para definir como classificar as mens
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride_update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md)    |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride_delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
+|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.|
-|id|cadeia de caracteres| O identificador exclusivo da substituição. Somente leitura.|
+|classifyAs|inferenceClassificationType| Especifica como mensagens recebidas de uma determinada remetente deve sempre ser classificada como. Os valores possíveis são: `focused`, `other`.|
+|id|string| O identificador exclusivo da substituição. Somente leitura.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|As informações de endereço de email do remetente para quem a substituição é criada.|
 
 ## <a name="relationships"></a>Relacionamentos
@@ -27,6 +37,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],

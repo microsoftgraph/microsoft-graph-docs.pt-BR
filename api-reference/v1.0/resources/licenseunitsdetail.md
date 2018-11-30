@@ -1,9 +1,19 @@
+---
+title: Tipo de recurso licenseUnitsDetail
+description: A propriedade **prepaidUnits** da entidade subscribedSku é do tipo **licenseUnitsDetail**.
+ms.openlocfilehash: e8cf5253676dab8a4b31c3ab33faa0af3ddfd527
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003605"
+---
 # <a name="licenseunitsdetail-resource-type"></a>Tipo de recurso licenseUnitsDetail
 
 A propriedade **prepaidUnits** da entidade [subscribedSku](subscribedsku.md) é do tipo **licenseUnitsDetail**.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:-------------|:-----|:----------|
 |enabled|Int32| O número de unidades que estão habilitadas. |
 |suspended|Int32| O número de unidades que estão suspensas. |

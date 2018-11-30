@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso ChartFont
+description: Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
+ms.openlocfilehash: dc4b1f8cd0653d89c3486a61604dd09c0e23cb2c
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004586"
+---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
 
 Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho, cor, dentre outros.
@@ -7,18 +17,18 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont_get.md) | [ChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
-|[Update](../api/chartfont_update.md) | [ChartFont](chartfont.md)    |Atualize o objeto ChartFont. |
+|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
+|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Atualize o objeto ChartFont. |
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|cadeia de caracteres|Nome da fonte (por exemplo, "Calibri")|
+|name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` e `Single`.|
+|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -28,12 +38,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json

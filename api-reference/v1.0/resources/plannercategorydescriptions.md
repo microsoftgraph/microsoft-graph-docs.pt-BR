@@ -1,11 +1,19 @@
-# Tipo de recurso plannerCategoryDescriptions
-<a id="plannercategorydescriptions-resource-type" class="xliff"></a>
+---
+title: Tipo de recurso plannerCategoryDescriptions
+description: 'O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto plan details. Pode haver até 6 categorias definidas. '
+ms.openlocfilehash: e71cbd1f41d23747691b3738b5a46ff302a72168
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27004443"
+---
+# <a name="plannercategorydescriptions-resource-type"></a>Tipo de recurso plannerCategoryDescriptions
 
 O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto [plan details](plannerplandetails.md). Pode haver até 6 categorias definidas. 
 
 
-## Propriedades
-<a id="properties" class="xliff"></a>
+## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categoria1|String|O rótulo associado à Categoria 1.|
@@ -15,8 +23,7 @@ O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das
 |categoria5|String|O rótulo associado à Categoria 5.|
 |categoria6|String|O rótulo associado à Categoria 6.|
 
-## Representação JSON
-<a id="json-representation" class="xliff"></a>
+## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {

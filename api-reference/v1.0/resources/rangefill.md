@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso RangeFill
+description: Representa o plano de fundo de um objeto de intervalo.
+ms.openlocfilehash: 7a9919d5190c34937319de1c15f722453b7c79e0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003998"
+---
 # <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
 
 Representa o plano de fundo de um objeto de intervalo.
@@ -7,12 +17,12 @@ Representa o plano de fundo de um objeto de intervalo.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill_get.md) | [RangeFill](rangefill.md) |Leia as propriedades e os relacionamentos do objeto rangeFill.|
-|[Update](../api/rangefill_update.md) | [RangeFill](rangefill.md)    |Atualize o objeto RangeFill. |
-|[Clear](../api/rangefill_clear.md)|Nenhum|Redefine o plano de fundo do intervalo.|
+|[Get RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Leia as propriedades e os relacionamentos do objeto rangeFill.|
+|[Update](../api/rangefill-update.md) | [WorkbookRangeFill](rangefill.md)   |Atualize o objeto RangeFill. |
+|[Clear](../api/rangefill-clear.md)|Nenhum|Redefine o plano de fundo do intervalo.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |color|string|Código de cor HTML que representa a cor #RRGGBB da linha de borda do formulário (por exemplo, "FFA500") ou uma cor HTML nomeada (por exemplo, "laranja").|
 
@@ -24,12 +34,11 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.rangeFill"
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 }-->
 
 ```json
