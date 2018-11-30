@@ -1,0 +1,57 @@
+---
+author: daspek
+ms.author: dspektor
+ms.date: 09/14/2017
+title: CommentAction
+ms.openlocfilehash: 92dc26945cd591de2ba107907a593159f1e128c9
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27040827"
+---
+# <a name="commentaction-resource-type"></a>Tipo de recurso CommentAction
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+O recurso **CommentAction** fornece informações sobre uma [atividade][] de comentário feitas em um item.
+
+[atividade]: itemactivity.md
+
+## <a name="json-representation"></a>Representação JSON
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@type": "microsoft.graph.commentAction"
+}-->
+
+```json
+{
+  "isReply": false,
+  "parentAuthor": {"@odata.type": "microsoft.graph.identitySet"},
+  "participants": [{"@odata.type": "microsoft.graph.identitySet"}]
+}
+```
+
+## <a name="properties"></a>Propriedades
+
+| Nome da propriedade    | Tipo                       | Descrição
+|:-----------------|:---------------------------|:-----------------------------
+| isReply          | booliano                    | Se for verdadeiro, essa atividade era uma resposta para um thread de comentário existente.
+| parentAuthor     | [identitySet][]            | A identidade do usuário que iniciou o thread de comentários.
+| participantes     | Coleção [identitySet][] | As identidades dos usuários que participam deste thread de comentário.
+
+[identitySet]: identityset.md
+
+## <a name="remarks"></a>Comentários
+
+Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "The CommentAction object provides information about a comment that was made on an item.",
+  "keywords": "activities,activity,action,comment",
+  "section": "documentation",
+  "tocPath": "Resources/CommentAction"
+} -->
