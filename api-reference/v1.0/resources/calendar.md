@@ -1,23 +1,40 @@
+---
+title: tipo de recurso calendar
+description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um user ou o calendário padrão de um group do Office 365.
+ms.openlocfilehash: 1c1797897c0efcd7d7196977f93b6a8c611f83f6
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006809"
+---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
-Um calendário que é um contêiner para eventos.
+Um calendário que é um contêiner para eventos. Pode ser um calendário para um [user](user.md) ou o calendário padrão de um [group](group.md) do Office 365.
+
+> **Observação:** Existem algumas pequenas diferenças da maneira que você pode interagir com calendários do usuário e calendários de grupo:
+
+ - Você pode organizar somente os calendários de usuário em um [calendarGroup](calendargroup.md).
+ - Outlook automaticamente aceita todas as solicitações de reunião em nome de grupos. Você pode [Aceitar](../api/event-accept.md), [Aceitar provisoriamente](../api/event-tentativelyaccept.md)ou [Recusar](../api/event-decline.md) solicitações de reunião para apenas calendários de usuário.
+  - O Outlook não oferece suporte a lembretes para eventos de grupo. É possível [Adiar](../api/event-snoozereminder.md) ou [Descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) para apenas calendários de usuário.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar calendários](../api/user_list_calendars.md)|Coleção [calendar](calendar.md)|Obtenha todos os calendários do usuário ou os calendários no grupo de calendários padrão ou em outro grupo de calendários específico.|
-|[Criar calendário](../api/user_post_calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendários padrão ou no calendário especificado.|
-|[Obter calendário](../api/calendar_get.md) | [calendar](calendar.md) |Leia as propriedades e as ações do objeto calendar.|
-|[Update](../api/calendar_update.md) | [calendar](calendar.md)  |Atualize o objeto calendar. |
-|[Delete](../api/calendar_delete.md) | Nenhum |Exclua um objeto calendar. |
-|[Listar calendarView](../api/calendar_list_calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
-|[Listar eventos](../api/calendar_list_events.md) |Coleção [event](event.md)| Recupere uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres em série.|
-|[Criar Evento](../api/calendar_post_events.md) |[event](event.md)| Criar um novo Evento no calendário especificado ou padrão.|
-|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_post_singlevalueextendedproperties.md) |[calendar](calendar.md)  |Criar uma ou mais propriedades estendidas de valor único em um calendário novo ou existente.   |
-|[Obter calendário com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Obter calendários que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
-|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_post_multivalueextendedproperties.md) | [calendar](calendar.md) | Criar uma ou mais propriedades estendidas de vários valores em um calendário novo ou existente.  |
-|[Obter calendário com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty_get.md)  | [calendar](calendar.md) | Obter um calendário que contenha uma propriedade estendida de vários valores usando `$expand`. |
+|[Listar calendários](../api/user-list-calendars.md)|Coleção [calendar](calendar.md)|Obtenha todos os calendários do usuário ou os calendários no grupo de calendários padrão ou em outro grupo de calendários específico.|
+|[Criar calendário](../api/user-post-calendars.md) |[calendar](calendar.md)| Crie um novo calendário no grupo de calendário padrão ou no grupo de calendários especificado para um usuário.|
+|[Obter calendário](../api/calendar-get.md) | [calendar](calendar.md) |Obtenha as propriedades e as relações de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Office 365. |
+|[Atualizar](../api/calendar-update.md) | [calendar](calendar.md)  |Atualize as propriedades de um objeto **calendar**. O calendário pode ser um para um usuário ou o calendário padrão de um grupo do Office 365. |
+|[Excluir](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
+|[Listar calendarView](../api/calendar-list-calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
+|[Listar eventos](../api/calendar-list-events.md) |Coleção [event](event.md)| Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.|
+|[Criar evento](../api/calendar-post-events.md) |[event](event.md)| Crie um novo evento no padrão ou calendário especificado.|
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Sugerir horários de reunião e locais com base na disponibilidade do organizador e participante e restrições de tempo ou local. |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Criar uma ou mais propriedades estendidas de valor único em um calendário novo ou existente.   |
+|[Obter calendário com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Obter calendários que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [calendar](calendar.md) | Criar uma ou mais propriedades estendidas de vários valores em um calendário novo ou existente.  |
+|[Obter calendário com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Obter um calendário que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -26,7 +43,7 @@ Um calendário que é um contêiner para eventos.
 |canShare |Boolean |Verdadeira se o usuário tem permissão para compartilhar o calendário, falsa caso contrário. Somente o usuário que criou o calendário pode compartilhá-lo. |
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. |
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
-|color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |id|String|O identificador exclusivo do grupo. Somente leitura.|
 |name|String|O nome do calendário.|
 |owner |[emailAddress](emailaddress.md) | Se definida, representa o usuário que criou ou adicionou o calendário. Para um calendário que o usuário criou ou adicionou, a propriedade **owner** é definida para o usuário. Para um calendário compartilhado com o usuário, a propriedade **owner** é definida para a pessoa que compartilhou o calendário com o usuário. |
@@ -43,7 +60,7 @@ Um calendário que é um contêiner para eventos.
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "calendarView",
@@ -52,7 +69,31 @@ Veja a seguir uma representação JSON do recurso
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendar"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendar",
+  "@odata.annotations": [
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

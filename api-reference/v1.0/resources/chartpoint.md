@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso ChartPoint
+description: Representa um ponto de uma série do gráfico.
+ms.openlocfilehash: 93c89bca61f27924621df0376bdf50e925e25c86
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27006769"
+---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
 
 Representa um ponto de uma série do gráfico.
@@ -7,35 +17,37 @@ Representa um ponto de uma série do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint_get.md) | [ChartPoint](chartpoint.md) |Leia as propriedades e os relacionamentos do objeto chartPoint.|
-|[List](../api/chartpoint_list.md) | Coleção [ChartPoint](chartpoint.md) |Obtenha a coleção de objetos chartPoint. |
-|[Itemat](../api/chartpointscollection_itemat.md)|[ChartPoint](chartpoint.md)|Recupera um ponto com base na respectiva posição dentro da série.|
+|[Get ChartPoint](../api/chartpoint-get.md) | [WorkbookChartPoint](chartpoint.md) |Leia as propriedades e os relacionamentos do objeto chartPoint.|
+|[List](../api/chartpoint-list.md) | Coleção [WorkbookChartPoint](chartpoint.md) |Obtenha a coleção de objetos chartPoint. |
+|[ItemAt](../api/chartpointscollection-itemat.md)|[WorkbookChartPoint](chartpoint.md)|Recupera um ponto com base na respectiva posição dentro da série.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|value|object|Retorna o valor de um ponto do gráfico. Somente leitura.|
+|valor|Json|Retorna o valor de um ponto do gráfico. Somente leitura.|
+|id|string|Identificador exclusivo|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
+|formato|[WorkbookChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartPoint"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartPoint"
 }-->
 
 ```json
 {
-  "value": "string"
+  "value": "string",
+  "id": "string"
 }
 
 ```
