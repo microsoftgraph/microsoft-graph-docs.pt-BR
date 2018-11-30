@@ -1,8 +1,21 @@
+---
+author: rgregg
+ms.author: rgregg
+ms.date: 09/10/2017
+title: SpecialFolder
+ms.openlocfilehash: bbf12aa0bf127116fd5f1250717c19f3f053f751
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003389"
+---
 # <a name="specialfolder-resource-type"></a>Tipo de recurso SpecialFolder
 
 O recurso **SpecialFolder** agrupa itens de dados relacionados a pastas especiais em uma única estrutura.
 
-Se um **DriveItem** tiver uma faceta **specialFolder** não nula, o item representará uma pasta especial (nomeada). Pastas especiais que podem ser acessadas diretamente por meio da [coleção de pastas especiais](../api/drive_special.md).
+Se um **DriveItem** tiver uma faceta **specialFolder** não nula, o item representará uma pasta especial (nomeada).
+Pastas especiais que podem ser acessadas diretamente por meio da [coleção de pastas especiais](../api/drive-get-specialfolder.md).
 
 Pastas especiais fornecem aliases simples para acessar pastas conhecidas sem a necessidade de pesquisar a pasta pelo caminho (o que exigiria a localização) ou fazer referência à pasta com uma ID. Se uma pasta especial for renomeada ou movida para outro local na unidade de disco, esta sintaxe continuará a retornar a pasta.
 
@@ -27,7 +40,7 @@ As pastas especiais são criadas automaticamente na primeira vez que um aplicati
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	  | Tipo	   | Descrição                                                            |
+| Propriedade  | Tipo   | Descrição                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
 | name      | string | O identificador exclusivo deste item na coleção `/drive/special` |
 
@@ -47,13 +60,10 @@ Aqui estão as pastas especiais disponíveis no OneDrive Personal e no OneDrive 
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "specialFolder resource",
-  "keywords": "",
+  "description": "The SpecialFolder facet provides information about folders accessible as special folders.",
+  "keywords": "special folder,item,facet",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "Facets/SpecialFolder"
+} -->
