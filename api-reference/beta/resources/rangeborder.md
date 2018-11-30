@@ -1,4 +1,16 @@
+---
+title: Tipo de recurso RangeBorder
+description: Representa a borda de um objeto.
+ms.openlocfilehash: ace494607d7e5803bf0ab0be5d5b3c86be875dcb
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27040693"
+---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa a borda de um objeto.
 
@@ -7,17 +19,17 @@ Representa a borda de um objeto.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get RangeBorder](../api/rangeborder_get.md) | [RangeBorder](rangeborder.md) |Leia as propriedades e relacionamentos do objeto rangeBorder.|
-|[Update](../api/rangeborder_update.md) | [RangeBorder](rangeborder.md)    |Atualize o objeto RangeBorder. |
-|[List](../api/rangeborder_list.md) | Coleção [RangeBorder](rangeborder.md) |Obtenha a coleção de objetos rangeBorder. |
-|[Itemat](../api/rangebordercollection_itemat.md)|[RangeBorder](rangeborder.md)|Obtém um objeto de borda usando seu índice.|
+|[Get RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |Leia as propriedades e relacionamentos do objeto rangeBorder.|
+|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |Atualize o objeto RangeBorder. |
+|[List](../api/rangeborder-list.md) | Coleção [RangeBorder](rangeborder.md) |Obtenha a coleção de objetos rangeBorder. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|Obtém um objeto de borda usando seu índice.|
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |color|string|Código de cor HTML que representa a cor #RRGGBB da linha de borda do formulário (por exemplo, "FFA500") ou uma cor HTML nomeada (por exemplo, "laranja").|
 |id|string|Representa o identificador da borda. Os valores possíveis são: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown` e `DiagonalUp`. Somente leitura.|
-|sideIndex|cadeia de caracteres|Valor constante que indica o lado específico da borda. Os valores possíveis são: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown` e `DiagonalUp`. Somente leitura.|
+|sideIndex|string|Valor constante que indica o lado específico da borda. Os valores possíveis são: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown` e `DiagonalUp`. Somente leitura.|
 |estilo|string|Uma das constantes de estilo de linha especificando o estilo de linha da borda. Os valores possíveis são: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double` e `SlantDashDot`.|
 |weight|string|Especifica a espessura da borda em torno de um intervalo. Os valores possíveis são: `Hairline`, `Thin`, `Medium` e `Thick`.|
 
