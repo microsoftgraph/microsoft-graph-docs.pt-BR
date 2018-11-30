@@ -1,3 +1,13 @@
+---
+title: Tipo de recurso emailAddress
+description: O nome e o endereço de email de um destinatário da mensagem ou contato.
+ms.openlocfilehash: 962b2f36af9e292125edc3da8606cd532b8c2ec0
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27003763"
+---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 
 O nome e o endereço de email de um destinatário da mensagem ou contato.

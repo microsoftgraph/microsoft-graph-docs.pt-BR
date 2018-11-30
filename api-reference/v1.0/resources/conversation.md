@@ -1,17 +1,29 @@
+---
+title: tipo de recurso conversation
+description: Uma conversa é uma coleção de threads e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
+ms.openlocfilehash: 7ba9cfbd04f25d2005bc3390fe10f6aac76f9eea
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27005251"
+---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 
 Uma conversa é uma coleção de [threads](conversationthread.md) e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
+
+Este recurso oferece suporte a assinatura de [notificações de alteração](/graph/webhooks).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar conversas](../api/group_list_conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
-|[Create](../api/group_post_conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
-|[Obter conversa](../api/conversation_get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
-|[Delete](../api/conversation_delete.md) | Nenhuma |Exclua um objeto conversation. |
-|[Listar threads de conversas](../api/conversation_list_threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
-|[Criar thread de conversas](../api/conversation_post_threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
+|[Listar conversas](../api/group-list-conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
+|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
+|[Obter conversa](../api/conversation-get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
+|[Delete](../api/conversation-delete.md) | Nenhum |Exclua um objeto conversation. |
+|[Listar threads de conversas](../api/conversation-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
+|[Criar thread de conversas](../api/conversation-post-threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -32,13 +44,23 @@ Uma conversa é uma coleção de [threads](conversationthread.md) e um thread co
 
 Veja a seguir uma representação JSON do recurso
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "threads"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.conversation"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.conversation",
+  "@odata.annotations": [
+    {
+      "property": "threads",
+      "capabilities": {
+        "changeTracking": false,
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -48,7 +70,9 @@ Veja a seguir uma representação JSON do recurso
   "lastDeliveredDateTime": "String (timestamp)",
   "preview": "string",
   "topic": "string",
-  "uniqueSenders": ["string"]
+  "uniqueSenders": ["string"],
+
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}]
 }
 
 ```
