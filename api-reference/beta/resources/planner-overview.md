@@ -1,18 +1,20 @@
 ---
 title: Use o Planejador de API REST
 description: Você pode usar a API do planejador no Microsoft Graph criar tarefas e atribuí-las aos usuários em um grupo no Office 365.
-ms.openlocfilehash: b1ec3f6e179f05a41fa30aec1697c9bfcefad7ee
+ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
 ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123949"
+ms.locfileid: "27123963"
 ---
 # <a name="use-the-planner-rest-api"></a>Use o Planejador de API REST
 
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
 Você pode usar a API do planejador no Microsoft Graph criar tarefas e atribuí-las aos usuários em um grupo no Office 365.
 
-Antes de começar com a API do planejador, convém entender como os objetos principais se relacionam entre si, bem como para grupos do Office 365.
+Antes de começar com a API do planejador, será útil compreender como os objetos principais se relacionam entre si, bem como para grupos do Office 365.
 
 ## <a name="office-365-groups"></a>Grupos do Office 365
 
@@ -61,6 +63,58 @@ As colunas personalizadas no quadro de tarefas do bucket são representadas pelo
 
 Todos os a ordenação é controlada pelos princípios descritos em [dicas de ordem Planejador](planner-order-hint-format.md).
 
+## <a name="delta">Controlar alterações usando consulta delta</a>
+
+Consulta de delta do planejador suporta consultando objetos que o usuário está inscrito.
+
+Os usuários estão inscritos para os objetos a seguir.
+
+| Tipo de recurso de Planejador | Instâncias inscritas                                                                                                                                                                                    |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Tarefas                 | <ul><li>Criadas pelo usuário</li><li>Atribuída ao usuário</li><li>Pertencem a um plano de que o usuário possui</li><li>Contidos em um plano no compartilhados com o usuário por meio da coleção de **SharedWith** do plano</li> |
+| Planos                 | <ul><li>Compartilhados com o usuário por meio da coleção de **SharedWith** do plano</li></ul>                                                                                                                     |
+| Partições de memória               | <ul><li>Contidos em um plano no compartilhados com o usuário por meio da coleção de **SharedWith** do plano</li></ul>                                                                                                 |  |
+
+### <a name="objectcache">Preencher o cache de objetos para consultas delta</a>
+
+Se você quiser usar a API de consulta delta planejador, manter um cache local de objetos que o usuário está interessado em observando para aplicar as alterações a partir do feed de resposta delta.
+
+Os objetos de carga de delta que a consulta de delta Planejador atualmente pode retornar será dos seguintes tipos:
+
+* [plannerTask](plannertask.md)
+* [plannerTaskDetails](plannertaskdetails.md)
+* [plannerPlan](plannerplan.md)
+* [plannerPlanDetails](plannerplandetails.md)
+* [plannerBucket](plannerbucket.md)
+* [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
+* [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)
+* [plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)
+
+Use o correspondente `GET` métodos no recurso para obter o estado inicial dos objetos a serem preenchidos no cache local.
+
+### <a name="differentiating-between-object-creation-and-object-modification"></a>Distinguir entre a criação do objeto e modificação de objeto
+
+Em determinados cenários, o chamador talvez queira distinguir entre a criação do objeto e a modificação do objeto dentro da consulta de delta do planejador feed.
+
+Estas diretrizes podem ser usadas para interpretar a criação do objeto:
+
+* O `createdBy` propriedade aparecerá somente em objetos recentemente criados.
+* Uma recém-criadas `plannerTask` objeto será seguido por correspondente `plannerTaskDetails` objeto.
+* Uma recém-criadas `plannerPlan` objeto será seguido por correspondente `plannerPlanDetails` objeto.
+
+### <a name="usage"></a>Uso
+
+O chamador deve ter um cache que contém objetos inscritos. Para obter detalhes sobre como preencher o cache local de objetos inscritos, consulte [preencher o cache de objetos para consultas delta](#populate-the-object-cache-for-delta-queries).
+
+Fluxo de chamadas de consulta do planejador delta é da seguinte maneira:
+
+1. O chamador inicia uma consulta de sincronização delta, obtendo uma `nextLink` e uma coleção vazia das alterações.
+2. O chamador deve [preencher o cache de objetos para consultas delta](#populate-the-object-cache-for-delta-queries) com objetos que o usuário está inscrito em, atualizando seu cache.
+3. O chamador segue o `nextLink` fornecido na consulta sincronização delta inicial para obter uma nova `deltaLink` para quaisquer alterações desde a etapa anterior.
+4. O chamador aplica as alterações na resposta delta retornado para os objetos em seu cache.
+5. O chamador segue o novo deltaLink para obter o próximo deltaLink e altera desde atual `deltaLink` foi gerado.
+6. O chamador aplica as alterações (se houver) e aguarda pouco antes de executar novamente o anterior etapa e esta etapa.
+
 ## <a name="planner-resource-versioning"></a>Versão do recurso do Planner
 
 Versões do planejador todos os recursos usando **etags**. Esses **etags** são retornadas com `@odata.etag` propriedade em cada recurso. `PATCH`e `DELETE` solicitações exige a última **etag** conhecidos pelo cliente seja especificado com um `If-Match` cabeçalho.
@@ -97,6 +151,9 @@ A seguir estão os valores possíveis para os tipos de limite.
 | MaximumReferencesOnTask       | A propriedade `references` no recurso [plannerTaskDetails](plannertaskdetails.md) contém muitos valores.                                                                                          |
 | MaximumChecklistItemsOnTask   | A propriedade `checklist` no recurso [plannerTaskDetails](plannertaskdetails.md) contém muitos valores.                                                                                           |
 | MaximumAssigneesInTasks       | A propriedade `assignments` no recurso [plannerTask](plannertask.md) contém muitos valores.                                                                                                       |
+| MaximumFavoritePlansForUser   | O `favoritePlanReferences` propriedade no recurso [plannerUser](planneruser.md) contém muitos valores.                                                                                            |
+| MaximumRecentPlansForUser     | O `recentPlanReferences` propriedade no recurso [plannerUser](planneruser.md) contém muitos valores.                                                                                              |
+| MaximumContextsOnPlan         | O `contexts` propriedade no recurso [plannerPlan](plannerplan.md) contém muitos valores.                                                                                                          |
 | MaximumPlannerPlans       | O grupo já contém um plano. Atualmente, os grupos podem conter somente um plano. **Observação:** Alguns aplicativos Microsoft podem exceder esse limite. No futuro, podemos estenderá esse recurso para todos os aplicativos.                                                                                                      |
 
 ### <a name="412-precondition-failed"></a>412 Falha na Pré-condição 
