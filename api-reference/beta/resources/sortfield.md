@@ -1,18 +1,30 @@
+---
+title: Tipo de recurso SortField
+description: Representa uma condição em uma operação de classificação.
+ms.openlocfilehash: bb5915e9d9637912b97c0425819acd15a6ed40ca
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27038899"
+---
 # <a name="sortfield-resource-type"></a>Tipo de recurso SortField
+
+> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa uma condição em uma operação de classificação.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo	    |Descrição|
+| Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ascending|booliano|Indica se a classificação é feita de forma crescente.|
-|color|cadeia de caracteres|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
-|dataOption|cadeia de caracteres|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal` e `TextAsNumber`.|
-|key|int|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
+|color|string|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
+|dataOption|string|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal` e `TextAsNumber`.|
+|key|inteiro|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
 |sortOn|string|Representa o tipo de classificação dessa condição. Os valores possíveis são: `Value`, `CellColor`, `FontColor` e `Icon`.|
 
 ## <a name="relationships"></a>Relações
-| Relação | Tipo	    |Descrição|
+| Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ícone|[Icon](icon.md)|Representa o ícone que é o destino da condição se a classificação está no ícone da célula.|
 
