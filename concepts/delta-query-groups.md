@@ -1,6 +1,6 @@
 ---
 title: Obter as alterações incrementais para grupos
-description: Consulta delta permite criar consultas para adições, exclusões ou atualizações para grupos, por meio de uma série de chamadas de função delta. Habilita de consulta delta descobertos alterações nos grupos
+description: A consulta delta permite que você consulte adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função delta. A consulta delta permite que você descubra as alterações nos grupos
 ms.openlocfilehash: b043d62e0d99b4d71e25a8367abc731d39ad6d45
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -82,7 +82,7 @@ Content-type: application/json
 }
 ```
 
->**Observação:** o `members@delta` propriedade está incluída no objeto group - TestGroup1 - primeiro e contém dois membros do grupo atuais. O TestGroup2 não contém essa propriedade porque o grupo não tem nenhum membro.
+>**Observação:**  a propriedade `members@delta` está incluída no primeiro objeto de grupo, o TestGroup1, e contém os dois membros atuais do grupo. O TestGroup2 não contém essa propriedade porque o grupo não tem nenhum membro.
 
 ## <a name="nextlink-request"></a>solicitação nextLink
 

@@ -1,12 +1,12 @@
 ---
 title: Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 description: 'O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.  '
-ms.openlocfilehash: 7094b91ac57a00cbcf3b79978e8a199b82c6cdac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f933e47f890f228865968d47040fdb1316607692
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091725"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27156044"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 
@@ -40,7 +40,7 @@ Você pode atribuir usuários a [funções de diretório](/graph/api/resources/d
 
 ### <a name="manage-devices"></a>Gerenciar dispositivos
 
-[Gerencie os dispositivos](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction.md) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
+[Gerencie os dispositivos](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
 
 ### <a name="partner-tenant-management"></a>Gerenciamento de locatário do parceiro
 
@@ -73,6 +73,7 @@ Você pode garantir o acesso a recursos ativando privilégios administrativos so
 Você pode configurar o acesso de avaliações de associações de grupo e o acesso ao aplicativo. [Access analisa](/graph/api/resources/accessreviews-root?view=graph-rest-beta) em destaque no Windows Azure AD Premium P2.
 
 ## <a name="api-reference"></a>Referência da API
+
 Procurando a referência de API para esse serviço?
 
 - [Azure AD acesso e identidade API de gerenciamento na versão 1.0 do Microsoft Graph](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
@@ -81,7 +82,7 @@ Procurando a referência de API para esse serviço?
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [Usar as APIs REST do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Use o Azure AD para se [autenticar](auth-overview.md) no Microsoft Graph. 
+- Use o Azure AD para se [autenticar](auth-overview.md) no Microsoft Graph.
 - Integre o [logon do Azure AD](https://azure.microsoft.com/en-us/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
 - Explore [exemplos](https://developer.microsoft.com/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.
