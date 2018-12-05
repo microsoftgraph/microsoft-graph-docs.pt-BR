@@ -1,12 +1,12 @@
 ---
 title: Grupos de roteamento áudio de lista
 description: Recupere uma lista de objetos **audioRoutingGroup** .
-ms.openlocfilehash: da6724f95fbc2c4365a1b1e4d34d317c130f12df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d188d8478b8bf57f45f0fa15eed9973cafba7b2f
+ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037674"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27155996"
 ---
 # <a name="list-audio-routing-groups"></a>Grupos de roteamento áudio de lista
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não são suportados.                               |
 | Delegado (conta pessoal da Microsoft) | Não são suportados.                               |
-| Aplicativo     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

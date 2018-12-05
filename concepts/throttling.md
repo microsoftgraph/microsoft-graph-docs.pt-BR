@@ -1,3 +1,13 @@
+---
+title: Diretrizes de limitação do Microsoft Graph
+description: Os limites de controle limitam número de chamadas simultâneas para um serviço para evitar a utilização exagerada dos recursos. O Microsoft Graph foi projetado para lidar com um alto volume de solicitações. Se ocorrer um número impressionante de solicitações, a limitação ajuda a manter um desempenho ideal e a confiabilidade do serviço Microsoft Graph.
+ms.openlocfilehash: dfe7fed3efc01932137df00d6d62ad069faf64cd
+ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "27091600"
+---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 
 
@@ -22,7 +32,7 @@ Estas são as práticas recomendadas para lidar com a limitação:
 
 * Reduza o número de operações por solicitação.
 * Reduza a frequência de chamadas.
-* Evite repetições imediatas, pois todas as solicitações se acumulam em relação a seus limites de uso.
+* Evite novas tentativas imediatas, pois todas as solicitações se acumulam em relação aos seus limites de uso.
 
 Quando você implementa a manipulação de erro, use o código de erro HTTP 429 para detectar a limitação. A resposta com falha inclui o campo *Retry-After* no cabeçalho de resposta. Desativar solicitações usando o atraso *Retry-After* é a forma mais rápida de se recuperar da limitação, já que o Microsoft Graph continua a registrar a utilização de recursos enquanto o cliente continua limitado.
 
@@ -30,4 +40,15 @@ Quando você implementa a manipulação de erro, use o código de erro HTTP 429 
 2. Repita a solicitação.
 3. Se a solicitação falhar novamente com um código de erro 429, você ainda estará limitado. Continue a usar o atraso Retry-After recomendado e repita a solicitação até obter êxito.
 
-Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://msdn.microsoft.com/en-us/library/office/dn589798.aspx).
+Atualmente, os seguintes recursos oferecem atualmente um cabeçalho retry-after:
+- [Usuário](/graph/api/resources/user?view=graph-rest-1.0)
+- [Foto](/graph/api/resources/profilephoto?view=graph-rest-1.0)
+- [Email](/graph/api/resources/message?view=graph-rest-1.0)
+- [Calendário (usuários e grupos)](/graph/api/resources/event?view=graph-rest-1.0)
+- [Contato](/graph/api/resources/contact?view=graph-rest-1.0)
+- [Anexo](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [Conversas em grupo](/graph/api/resources/conversation?view=graph-rest-1.0)
+- [Pessoas e social](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
+
+Para ter uma discussão mais ampla sobre a limitação no Microsoft Cloud, veja [Padrão de Limitação](https://msdn.microsoft.com/library/office/dn589798.aspx).
