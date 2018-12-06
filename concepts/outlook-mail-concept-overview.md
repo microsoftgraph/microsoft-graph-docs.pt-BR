@@ -1,6 +1,6 @@
 ---
 title: Visão geral da API de email do Outlook
-description: O Outlook é um hub de comunicação de mensagens do Office 365. Ele também permite gerenciar contatos, agendar reuniões, encontre informações sobre os usuários em uma organização,
+description: O Outlook é um hub de comunicação de mensagens do Office 365. Ele também permite gerenciar contatos, agendar reuniões, encontrar informações sobre usuários em uma organização,
 ms.openlocfilehash: a4ae3c00b578cf2f3bce7a23b73ec47dadc81cf8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -36,26 +36,26 @@ Os clientes gostam da forma como o Outlook ajuda na organização. O Microsoft G
 
 Use o Microsoft Graph para sugerir dados contextuais aos usuários de seu aplicativo:
 
-- Integrar-se a [Caixa de Entrada Destaques](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0) e [menções @ (prévia)](/graph/api/message-get?view=graph-rest-beta#request-2) e permitir que os usuários de seu aplicativo leiam e respondam primeiro ao que é relevante para eles.
+- Integrar-se à [Caixa de Entrada Destaques](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0) e [menções @ (prévia)](/graph/api/message-get?view=graph-rest-beta#request-2) e permitir que os usuários de seu aplicativo leiam e respondam primeiro ao que é relevante para eles.
 
-- Verifique [as dicas de email](/graph/api/resources/mailtips?view=graph-rest-1.0) enquanto ainda redigir uma mensagem para obter informações de status úteis sobre um destinatário (como o destinatário enviar uma resposta automática ou que tenha uma caixa de correio completa). As dicas de email podem alertar os aplicativos a respeito de determinadas condições para permitir que se tomem ações de acompanhamento mais eficientes.
+- Verificar as [dicas de email](/graph/api/resources/mailtips?view=graph-rest-1.0) ao redigir uma mensagem para obter informações úteis de status sobre um destinatário (por exemplo, se o destinatário enviou uma resposta automática ou se a caixa de correio está cheia). As dicas de email podem alertar os aplicativos a respeito de determinadas condições para permitir que se tomem ações de acompanhamento mais eficientes.
 
 - Utilizar a [API de pessoas](people-example.md) para fornecer controles interativos, como o seletor de pessoas em seu aplicativo. A API de pessoas pode sugerir as pessoas mais relevantes para um usuário, tendo como base as comunicações, os padrões de colaboração e as relações comerciais desse usuário.
 
-- Oferecer aos usuários do aplicativo um seletor de arquivos inteligente e sugerir arquivos com os quais eles tenham interagido recentemente para serem adicionados como anexos quando estiverem escrevendo uma mensagem. [Ideias (preview)](/graph/api/resources/insights?view=graph-rest-beta) use avançado de análise para sugerir arquivos que são tendências em torno de um usuário, visualizados recentemente ou editada pelo usuário ou compartilhadas com o usuário.
+- Oferecer aos usuários do aplicativo um seletor de arquivos inteligente e sugerir arquivos com os quais eles tenham interagido recentemente para serem adicionados como anexos quando estiverem escrevendo uma mensagem. Os [Insights (prévia)](/graph/api/resources/insights?view=graph-rest-beta) usam a análise avançada para sugerir arquivos que são familiares a um usuário, aqueles que tenham sido editados ou vistos pelo usuário ou compartilhados recentemente com ele.
 
 
 ### <a name="store-app-data-in-a-resource-or-resource-instance"></a>Armazenar os dados do aplicativo em um recurso ou em uma instância do recurso
 
-Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso dos dados. O Microsoft Graph permite basta incluir dados de aplicativo como cabeçalhos de mensagem da Internet quando [Criando](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) ou [enviando](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) uma nova mensagem ou uma resposta a uma mensagem.
+Muitas vezes os aplicativos precisam armazenar os dados em um repositório de dados externo e acarretam sobrecarga no gerenciamento e no acesso dos dados. O Microsoft Graph permite que você simplesmente inclua dados de aplicativos como cabeçalhos de mensagens da Internet quando [criar](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) ou [enviar](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) uma nova mensagem ou uma resposta a uma mensagem.
 
-Se você precisar adicionar e subsequentemente atualizar dados personalizados, você pode [armazenar os dados em instâncias de recursos individuais](extensibility-overview.md#open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados em recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility-overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas.
+Se você precisar adicionar e atualizar dados personalizados subsequentemente, poderá [armazenar os dados em instâncias de recursos individuais](extensibility-overview.md#open-extensions). Se apropriado, como alternativa, você pode estender o esquema, adicionar propriedades personalizadas e armazenar dados digitados nos recursos do Microsoft Graph. Você pode fazer com que essas [extensões de esquema](extensibility-overview.md#schema-extensions) sejam passíveis de ser descobertas e compartilhadas.
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API de email do Outlook na versão 1.0 do Microsoft Graph](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
-- [API de email do Outlook na versão beta do Microsoft Graph](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
+- [API do email do Outlook no Microsoft Graph v1.0](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
+- [API do email do Outlook no Microsoft Graph beta](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -65,8 +65,8 @@ Procurando a referência de API para esse serviço?
 
   - [Criar e enviar mensagens](outlook-create-send-messages.md)
   - Formas de [organizar mensagens](outlook-organize-messages.md)
-  - Como [obter mensagens compartilhadas](outlook-share-messages-folders.md)
-  - [Obtendo imutáveis identificadores de recursos do Outlook](outlook-immutable-id.md)
+  - Como [receber mensagens compartilhadas](outlook-share-messages-folders.md)
+  - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
 
 - Saiba mais sobre como [usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) no Microsoft Graph v1.0.
 

@@ -1,6 +1,6 @@
 ---
 title: Visão geral da API do calendário do Outlook
-description: Calendário do Outlook é parte do hub de mensagens do Outlook no Office 365 que também permite que você gerencie emails e contatos, encontre informações sobre os usuários em uma organização,
+description: O calendário do Outlook faz parte do hub de mensagens do Outlook no Office 365, que também permite o gerenciamento de emails e contatos e a localização de informações sobre usuários em uma organização.
 ms.openlocfilehash: fe62ca40af348cdfaf559ea3e137733a4d25d8e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -55,9 +55,9 @@ A API de calendário ajuda os clientes a orientar seu dia de trabalho e aumentar
 O Outlook e a API de calendário oferecem muitas conveniências inteligentes para agendar eventos:
 
 - Com as configurações do aplicativo de calendário do Outlook, os clientes podem ativar a adição automática de eventos nos emails, como reservas de voos, hotéis ou restaurantes, e cobrar faturas. Após a adição dessas configurações, você poderá interagir com esses eventos da mesma maneira que interagiria com outros objetos [events](/graph/api/resources/event?view=graph-rest-1.0) na caixa de correio do usuário e criar cenários criativos sobre esse recurso do Outlook.
-- ** No Outlook, reservar uma sala de reunião é tão simples quanto adicionar um participante ao **evento**. A API de calendário representa uma sala de reunião como um objeto [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0). Você pode [obter salas (preview)](/graph/api/user-findrooms?view=graph-rest-beta) e [obter listas de sala (preview)](/graph/api/user-findroomlists?view=graph-rest-beta) que estão disponíveis em um locatário. Para organizar uma reunião em uma sala específica, atribua-a à propriedade **local** do **evento**.
-- * * Você pode [consultar as informações de livre/ocupado para usuários e recursos (preview)](outlook-get-free-busy-schedule.md) por um período de tempo específico. Em seguida, você pode usar esses dados para aplicar a cenários diferentes, incluindo o planejamento de recursos e agendamento de evento.
-- * * Se seu cenário envolve o agendamento de reuniões momento ideal, você pode considerar o [uso de findMeetingTimes para identificar possíveis tempos ou locais para atender](findmeetingtimes-example.md). A função [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) considera o status de disponibilidade dos participantes e as salas, horários e outras restrições que você tenha marcado como preferencial. Se a primeira tentativa não retornar um horário de reunião comum, verifique o motivo, ajuste seus critérios e chame **findMeetingTimes** novamente.
+- ** No Outlook, reservar uma sala de reunião é tão simples quanto adicionar um participante ao **evento**. A API de calendário representa uma sala de reunião como um objeto [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0). Você pode [obter salas (versão prévia)](/graph/api/user-findrooms?view=graph-rest-beta) e [obter listas de salas (versão prévia)](/graph/api/user-findroomlists?view=graph-rest-beta) disponíveis em um locatário. Para organizar uma reunião em uma sala específica, atribua-a à propriedade **local** do **evento**.
+- ** Você pode [consultar informações de disponibilidade de usuários e recursos (versão prévia)](outlook-get-free-busy-schedule.md) para um período específico. Depois, pode aplicar esses dados a cenários diferentes, incluindo o planejamento de recursos e agendamento de eventos.
+- ** Se o seu cenário envolver o agendamento de reuniões em horários ideais, considere o [uso de findMeetingTimes para identificar horários ou locais possíveis para a reunião](findmeetingtimes-example.md). A função [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) considera o status de disponibilidade dos participantes e as salas, horários e outras restrições que você tenha marcado como preferencial. Se a primeira tentativa não retornar um horário de reunião comum, verifique o motivo, ajuste seus critérios e chame **findMeetingTimes** novamente.
 
 
 ### <a name="teleconference-across-multiple-locations-and-time-zones"></a>Teleconferência em vários locais e fusos horários
@@ -76,10 +76,10 @@ Use a [API de pessoas](people-example.md) no Microsoft Graph para conectar-se a 
 Economize custos indiretos ao armazenar e gerenciar dados de aplicativos em armazenamentos de dados externos. Com o Microsoft Graph, você pode armazenar dados de aplicativos personalizados como [extensões abertas](extensibility-overview.md#open-extensions) em instâncias de recursos individuais. Se você precisar que os dados sejam digitados ou gostaria de poder compartilhar o esquema digitado, poderá armazenar dados de aplicativos personalizados em [extensões de esquema](extensibility-overview.md#schema-extensions).
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API do calendário do Outlook na versão 1.0 do Microsoft Graph](/graph/api/resources/calendar?view=graph-rest-1.0)
-- [API do calendário do Outlook na versão beta do Microsoft Graph](/graph/api/resources/calendar?view=graph-rest-beta)
+- [API do Calendário do Outlook no Microsoft Graph v1.0](/graph/api/resources/calendar?view=graph-rest-1.0)
+- [API do Calendário do Outlook no Microsoft Graph beta](/graph/api/resources/calendar?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -87,10 +87,10 @@ Procurando a referência de API para esse serviço?
 - Escolha e experimente consultas de exemplo de calendários no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fevents&version=v1.0).
 - Saiba mais:
   - [Encontrar possíveis horários de reunião no calendário do Outlook](findmeetingtimes-example.md)
-  - [Obtendo o agendamento de livre/ocupado para usuários e recursos (preview)](outlook-get-free-busy-schedule.md)
+  - [Obter informações de disponibilidade de usuários e recursos (versão prévia)](outlook-get-free-busy-schedule.md)
   - [Agendar compromissos repetidos como eventos recorrentes no Outlook](outlook-schedule-recurring-events.md)
-  - [Obtendo imutáveis identificadores de recursos do Outlook](outlook-immutable-id.md)
-  - [Obtendo eventos compartilhados](outlook-get-shared-events-calendars.md)
+  - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
+  - [Obter eventos compartilhados](outlook-get-shared-events-calendars.md)
 - Examine a referência da [API de calendário](/graph/api/resources/calendar?view=graph-rest-1.0) do Outlook.
 
 <!-- Replace the last item with the calendar API overview when it's published.

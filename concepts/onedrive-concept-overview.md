@@ -59,13 +59,13 @@ Use a [API de anotações][] para acessar o conteúdo dos blocos de anotações 
 ### <a name="react-to-file-changes"></a>Reagir a alterações de arquivo
 
 Com o [webhooks][], seu aplicativo pode ser notificado sobre a alteração de arquivos, o que possibilita que você reaja rapidamente.
-Use a [API delta][] para ver o que foi alterado desde a última vez que o aplicativo foi sincronizado com a nuvem.
+Use a [API delta][] para ver o que foi alterado desde a última vez em que o aplicativo foi sincronizado com a nuvem.
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API deste serviço?
 
-- [Armazenamento de arquivos OneDrive API na versão 1.0 do Microsoft Graph](/graph/api/resources/onedrive?view=graph-rest-1.0)
-- [Armazenamento de arquivos OneDrive API na versão beta do Microsoft Graph](/graph/api/resources/onedrive?view=graph-rest-beta)
+- [API de armazenamento de arquivos do OneDrive no Microsoft Graph versão 1.0](/graph/api/resources/onedrive?view=graph-rest-1.0)
+- [API de armazenamento de arquivos do OneDrive no Microsoft Graph beta](/graph/api/resources/onedrive?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -74,27 +74,16 @@ Saiba mais sobre [como usar a API do OneDrive][Drive API] no Microsoft Graph v1.
 [SharePoint]: sharepoint-concept-overview.md
 [seletor de arquivos]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
 [manipulador de arquivos]: https://docs.microsoft.com/onedrive/developer/file-handlers
-
-  [pastas especiais]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
-
-  [API de anotações]: integrate-with-onenote.md
-
-  [API do Excel]: /graph/api/resources/excel?view=graph-rest-1.0
+[pastas especiais]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
+[API de anotações]: integrate-with-onenote.md
+[API do Excel]: /graph/api/resources/excel?view=graph-rest-1.0
 [REST API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-
-  [API delta]: /graph/api/driveitem-delta?view=graph-rest-1.0
-
-  [vídeo]: /graph/api/resources/video?view=graph-rest-1.0
-
-  [foto]: /graph/api/resources/photo?view=graph-rest-1.0
-
-  [áudio]: /graph/api/resources/audio?view=graph-rest-1.0
-
-  [formatos]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
-
-  [miniaturas]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
-
-  [visualização]: /graph/api/driveitem-preview?view=graph-rest-beta
-
-  [webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
+[API delta]: /graph/api/driveitem-delta?view=graph-rest-1.0
+[vídeo]: /graph/api/resources/video?view=graph-rest-1.0
+[foto]: /graph/api/resources/photo?view=graph-rest-1.0
+[áudio]: /graph/api/resources/audio?view=graph-rest-1.0
+[formatos]: /graph/api/driveitem-get-content-format?view=graph-rest-1.0
+[miniaturas]: /graph/api/driveitem-list-thumbnails?view=graph-rest-1.0
+[visualização]: /graph/api/driveitem-preview?view=graph-rest-beta
+[webhooks]: /graph/api/resources/webhooks?view=graph-rest-1.0
 [Drive API]: /graph/api/resources/onedrive?view=graph-rest-1.0

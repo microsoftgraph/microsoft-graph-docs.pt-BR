@@ -1,4 +1,4 @@
-name: Gráfico de documentos
+name: Documentos do Graph
 items:
   - name: Visão geral do Microsoft Graph
     href: overview.md
@@ -11,10 +11,10 @@ items:
             href: overview-major-services.md
             expanded: true
             items:
-              - name: Usuários que podem chegar
+              - name: Usuários que você pode alcançar
                 href: users-you-can-reach.md
                 items:
-                  - name: Implantações de nuvens nacionais
+                  - name: Implantações de nuvem nacional
                     href: deployments.md
                   - name: Implantações híbridas (visualização)
                     href: hybrid-rest-support.md
@@ -22,7 +22,7 @@ items:
                 href: versioning-and-support.md
               - name: Termos de uso
                 href: 'https://developer.microsoft.com/graph/terms-of-use'
-          - name: Conexão de dados do Microsoft Graph (preview)
+          - name: Conexão de dados do Microsoft Graph (visualização)
             href: data-connect-overview.md
           - name: Treinamento
             href: training.md
@@ -43,7 +43,7 @@ items:
                 href: /graph/training/react-tutorial/
               - name: UWP
                 href: /graph/training/uwp-tutorial/
-      - name: Saiba mais
+      - name: Aprenda
         expanded: true
         items:
           - name: Usuários
@@ -53,30 +53,30 @@ items:
           - name: Calendário
             href: outlook-calendar-concept-overview.md
             items:
-              - name: Localizar horários de reunião
+              - name: Encontrar horários de reunião
                 href: findmeetingtimes-example.md
-              - name: Obtenha o cronograma de livre/ocupado
+              - name: Obter agenda de disponibilidade
                 href: outlook-get-free-busy-schedule.md
               - name: Agendar eventos recorrentes
                 href: outlook-schedule-recurring-events.md
               - name: Obter eventos compartilhados
                 href: outlook-get-shared-events-calendars.md
-              - name: ID imutável (preview)
+              - name: ID imutável (visualização)
                 href: outlook-immutable-id.md
           - name: Experiências entre dispositivos
             href: cross-device-concept-overview.md
             items:
               - name: Feed de atividades
                 href: activity-feed-concept-overview.md
-              - name: Retransmissão de dispositivo (preview)
+              - name: Retransmissão de dispositivo (visualização)
                 href: device-relay-concept-overview.md
-              - name: Notificações (preview)
+              - name: Notificações (visualização)
                 href: notifications-concept-overview.md
-              - name: Crie aplicativos entre dispositivos
+              - name: Criar aplicativos entre dispositivos
                 href: cross-device-app-configuration.md
-          - name: Reserva de clientes (prévia)
+          - name: Reserva de clientes (visualização)
             href: booking-concept-overview.md
-          - name: Acesso a dados (preview)
+          - name: Acesso a dados (visualização)
             href: data-connect-concept-overview.md
             items:
               - name: Introdução
@@ -87,7 +87,7 @@ items:
             href: education-concept-overview.md
           - name: Arquivos
             href: onedrive-concept-overview.md
-          - name: Acesso e identidade
+          - name: Identidade e acesso
             href: azuread-identity-access-management-concept-overview.md
           - name: Email
             href: outlook-mail-concept-overview.md
@@ -96,20 +96,20 @@ items:
                 href: outlook-create-send-messages.md
               - name: Organizar mensagens
                 href: outlook-organize-messages.md
-              - name: Obter mensagens compartilhadas
+              - name: Receber mensagens compartilhadas
                 href: outlook-share-messages-folders.md
-              - name: ID imutável (preview)
+              - name: ID imutável (visualização)
                 href: outlook-immutable-id.md
           - name: Observações
             href: integrate-with-onenote.md
             items:
-              - name: Obter o OneNote conteúdo
+              - name: Obter conteúdo do OneNote
                 href: onenote-get-content.md
-              - name: abrir o cliente do OneNote
+              - name: Abrir o cliente do OneNote
                 href: open-onenote-client.md
               - name: Criar páginas
                 href: onenote-create-page.md
-              - name: Atualizar o conteúdo da página
+              - name: Atualizar conteúdo da página
                 href: onenote-update-page.md
               - name: 'Adicionar imagens, vídeos e arquivos'
                 href: onenote-images-files.md
@@ -133,7 +133,7 @@ items:
             items:
               - name: Obter contatos compartilhados
                 href: outlook-get-shared-contacts-folders.md
-              - name: ID imutável (preview)
+              - name: ID imutável (visualização)
                 href: outlook-immutable-id.md
           - name: Relatórios
             href: reportroot-concept-overview.md
@@ -167,11 +167,11 @@ items:
             items:
               - name: Gerenciar sessões
                 href: excel-manage-sessions.md
-              - name: Exibir uma imagem do gráfico
+              - name: Exibir uma imagem de gráfico
                 href: excel-display-chart-image.md
-              - name: Use as funções da pasta de trabalho
+              - name: Usar funções de pasta de trabalho
                 href: excel-use-functions.md
-              - name: Um formato de intervalo de atualização
+              - name: Atualizar um formato de intervalo
                 href: excel-update-range-format.md
               - name: Gravar dados em uma pasta de trabalho
                 href: excel-write-to-workbook.md
@@ -185,11 +185,11 @@ items:
                 href: auth-register-app-v2.md
               - name: Obter acesso em nome de um usuário
                 href: auth-v2-user.md
-              - name: Obtenha acesso sem um usuário
+              - name: Obter acesso sem um usuário
                 href: auth-v2-service.md
-              - name: Permissions
+              - name: Permissões
                 href: permissions-reference.md
-              - name: Gerenciar o acesso de aplicativo (CSP)
+              - name: Gerenciar o acesso ao aplicativo (Provedores de Soluções na Nuvem da Microsoft)
                 href: auth-cloudsolutionprovider.md
           - name: Usar a API
             href: use-the-api.md
@@ -207,18 +207,18 @@ items:
               - name: Controlar alterações
                 href: delta-query-overview.md
                 items:
-                  - name: Fazer alterações a eventos (exemplo)
+                  - name: Obter alterações em eventos (exemplo)
                     href: delta-query-events.md
-                  - name: Fazer alterações aos grupos (exemplo)
+                  - name: Obter alterações em grupos (exemplo)
                     href: delta-query-groups.md
-                  - name: Fazer alterações nas mensagens (exemplo)
+                  - name: Obter alterações em mensagens (exemplo)
                     href: delta-query-messages.md
-                  - name: Fazer alterações aos usuários (exemplo)
+                  - name: Obter alterações em usuários (exemplo)
                     href: delta-query-users.md
               - name: Adicionar dados personalizados
                 href: extensibility-overview.md
                 items:
-                  - name: Usar extensões open (exemplo)
+                  - name: Usar extensões abertas (exemplo)
                     href: extensibility-open-users.md
                   - name: Usar extensões de esquema (exemplo)
                     href: extensibility-schema-groups.md
@@ -233,7 +233,7 @@ items:
                 href: changelog.md
               - name: Erros
                 href: errors.md
-      - name: referência de v 1.0
+      - name: Referência v1.0
         href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-      - name: Referência de beta
+      - name: Referência beta
         href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

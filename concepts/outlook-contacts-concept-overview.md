@@ -45,15 +45,15 @@ Você pode usar as operações CRUD típicas de um [contact](/graph/api/resource
 - Você pode ampliar o armazenamento de aplicativos em uma instância de contato como uma [extensão aberta](extensibility-overview.md#open-extensions) ou adicionar dados personalizados fortemente tipados ao esquema de contatos como uma [extensão de esquema](extensibility-overview.md#schema-extensions).
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API de contatos do Outlook na versão 1.0 do Microsoft Graph](/graph/api/resources/contact?view=graph-rest-1.0)
-- [API de contatos do Outlook na versão beta do Microsoft Graph](/graph/api/resources/contact?view=graph-rest-beta)
+- [API de Contatos do Outlook no Microsoft Graph v1.0](/graph/api/resources/contact?view=graph-rest-1.0)
+- [API de Contatos do Outlook no Microsoft Graph beta](/graph/api/resources/contact?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Escolha e experimente os exemplos de consulta dos contatos no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0). Escolha **Mostrar mais exemplos** na coluna à esquerda. Use o menu para ativar **Contatos pessoais**.
 - Saiba mais:
-  - [Obtendo imutáveis identificadores de recursos do Outlook](outlook-immutable-id.md)
-  - [Obtendo contatos compartilhados](outlook-get-shared-contacts-folders.md)
+  - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
+  - [Obter contatos compartilhados](outlook-get-shared-contacts-folders.md)
 - Examine a referência da [API de contatos](/graph/api/resources/contact?view=graph-rest-1.0) do Outlook.

@@ -151,11 +151,11 @@ Para obter mais informações sobre as diferenças entre o ponto de extremidade 
 
 >**Importante**
 >
->**Antes de tomar uma decisão sobre qual ponto de extremidade para serem usados quando o desenvolvimento de um aplicativo para produção, consulte [eu devo usar o ponto de extremidade v 2.0?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations).**
+>**Antes de tomar uma decisão sobre qual ponto de extremidade usar ao desenvolver um aplicativo para produção, confira [Devo usar o ponto de extremidade v2.0?](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations).**
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Após ter registrado seu aplicativo, você está pronto para começar!
+Depois de registrar seu aplicativo, você estará pronto para começar!
 
 - Para obter etapas rápidas para obter um token de acesso para aplicativos que chamam o Microsoft Graph em nome de um usuário, confira [Obter acesso em nome dos usuários](auth-v2-user.md).
 - Para obter etapas rápidas para obter um token de acesso para aplicativos que chamam o Microsoft Graph sem um usuário, confira [Obter acesso sem um usuário](auth-v2-service.md).
@@ -165,12 +165,12 @@ Após ter registrado seu aplicativo, você está pronto para começar!
 
 Se já estiver pronto para entrar no código, você pode usar os seguintes recursos para ajudá-lo a implementar a autenticação e a autorização com o Azure AD em seu aplicativo.
 
-### <a name="microsoft-graph-training-and-samples"></a>Amostras e treinamento do Microsoft Graph
-Para ajudá-lo a começar rapidamente, criamos uma série de módulos de treinamento e outros recursos que mostram como autenticar e usar a API em diversas plataformas. 
+### <a name="microsoft-graph-training-and-samples"></a>Exemplos e treinamento do Microsoft Graph
+Para ajudá-lo a começar rapidamente, criamos uma série de módulos de treinamento e outros recursos que mostram como se autenticar e usar a API em diversas plataformas. 
 
-- Use a página de [Introdução](https://developer.microsoft.com/en-us/graph/get-started) para localizar as bibliotecas, amostras, conteúdo de treinamento e outros recursos para sua plataforma favorita. 
-- Para obter executando rapidamente com uma amostra pré-configurado para sua plataforma, consulte o [Início rápido do Microsoft Graph](https://developer.microsoft.com/en-us/graph/quick-start).
-- Consulte nosso [exemplos do Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) no GitHub.
+- Use a página [Introdução](https://developer.microsoft.com/pt-BR/graph/get-started) para encontrar bibliotecas, exemplos, conteúdo de treinamento e outros recursos para sua plataforma favorita. 
+- Para começar a trabalhar rapidamente com um exemplo pré-configurado para sua plataforma, confira o [Início Rápido do Microsoft Graph](https://developer.microsoft.com/pt-BR/graph/quick-start).
+- Veja nossos [exemplos do Microsoft Graph](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sample&type=&language=) no GitHub.
 
 
 ### <a name="azure-active-directory-samples-and-documentation"></a>Documentação e exemplos do Azure Active Directory 

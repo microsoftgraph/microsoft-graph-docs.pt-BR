@@ -40,10 +40,10 @@ Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis le
 Você pode acessar um conjunto de objetos do Excel (como Table, Range ou Chart) usando APIs REST padrão para realizar operações de criação, leitura, atualização e exclusão (CRUD) na pasta de trabalho.
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API do Excel na versão 1.0 do Microsoft Graph](/graph/api/resources/excel?view=graph-rest-1.0)
-- [API do Excel na versão beta do Microsoft Graph](/graph/api/resources/excel?view=graph-rest-beta)
+- [API do Excel no Microsoft Graph v1.0](/graph/api/resources/excel?view=graph-rest-1.0)
+- [API do Excel no Microsoft Graph beta](/graph/api/resources/excel?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 

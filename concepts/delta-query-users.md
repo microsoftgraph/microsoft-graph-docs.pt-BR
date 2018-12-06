@@ -168,7 +168,7 @@ Content-type: application/json
 }
 ```
 
-Caso tenha havido alterações, o mesmo `deltaToken` é retornado incluindo um conjunto de usuários alterados.
+No caso de alterações, o mesmo `deltaToken` é retornado incluindo um conjunto de usuários alterados.
 
 ```http
 HTTP/1.1 200 OK

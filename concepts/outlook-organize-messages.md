@@ -1,6 +1,6 @@
 ---
 title: Organizar mensagens do Outlook
-description: O Outlook permite que os clientes organizem suas mensagens da maneira que quiserem, seja deixando todas na mesma pasta da Caixa de Entrada ou organizando-as em uma estrutura de pastas em forma de árvore na Caixa de Entrada para atender a necessidades específicas. Você pode filtrar convenientemente, pesquisar ou classificar mensagens em que o usuário
+description: O Outlook permite que os clientes organizem suas mensagens da maneira que quiserem, seja deixando todas na mesma pasta da Caixa de Entrada ou organizando-as em uma estrutura de pastas em forma de árvore na Caixa de Entrada para atender a necessidades específicas. Você pode filtrar, pesquisar ou classificar mensagens convenientemente na caixa de correio do usuário
 ms.openlocfilehash: 870da6cfed6bc286c0e9869dd98220d260b1e7ad
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

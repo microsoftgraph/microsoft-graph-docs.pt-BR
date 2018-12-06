@@ -55,10 +55,10 @@ Maximizar a relevância no aplicativo promovendo documentos e contatos mais popu
 - Listar documentos compartilhados com um usuário por email ou pelo OneDrive for Business.
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API de usuários na versão 1.0 do Microsoft Graph](/graph/api/resources/users?view=graph-rest-1.0)
-- [API de usuários na versão beta do Microsoft Graph](/graph/api/resources/users?view=graph-rest-beta)
+- [API de Usuários no Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)
+- [API de Usuários no Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 

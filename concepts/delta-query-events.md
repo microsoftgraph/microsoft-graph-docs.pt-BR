@@ -1,6 +1,6 @@
 ---
 title: 'Obter as alterações incrementais para os eventos em um modo de exibição de calendário '
-description: 'Um modo de exibição de calendário é um conjunto de eventos em um intervalo de data/hora do calendário padrão (… / me/calendarview) '
+description: 'O modo de visualização de calendário em um conjunto de eventos em um intervalo de data/horário do calendário-padrão (../me/calendarview) '
 ms.openlocfilehash: 68e4053c29fd95f04ff0b031bf519301e63dc08a
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

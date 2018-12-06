@@ -45,10 +45,10 @@ Automatize o Intune usando a API do Intune para:
 - Gerenciar [despesas de telecomunicações](/graph/api/resources/intune-tem-conceptual?view=graph-rest-1.0).
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [Intune API na versão 1.0 do Microsoft Graph](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
-- [API de Intune na versão beta do Microsoft Graph](/graph/api/resources/intune-graph-overview?view=graph-rest-beta)
+- [API do Intune no Microsoft Graph v1.0](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0)
+- [API do Intune no Microsoft Graph beta](/graph/api/resources/intune-graph-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 

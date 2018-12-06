@@ -43,13 +43,13 @@ Você está trabalhando em um processo ou tipo de projeto repetido? Você pode u
 |Ver todas as [minhas tarefas](/graph/api/planneruser-list-tasks?view=graph-rest-beta) atribuídas a mim nos planos|GET [https://graph.microsoft.com/v1.0/me/planner/tasks/](https://developer.microsoft.com/graph/graph-explorer?request=me/planner/tasks/&version=v1.0)|
 |[Criar uma nova tarefa](/graph/api/planner-post-tasks?view=graph-rest-1.0)|POST [https://graph.microsoft.com/v1.0/planner/tasks](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 |[Atualizar uma tarefa](/graph/api/plannertask-update?view=graph-rest-1.0)|PATCH [https://graph.microsoft.com/v1.0/planner/tasks/{task-id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
-|[Excluir uma tarefa](/graph/api/plannertask-delete?view=graph-rest-1.0)|DELETE [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
+|[Excluir uma tarefa](/graph/api/plannertask-delete?view=graph-rest-1.0)|EXCLUIR [https://graph.microsoft.com/v1.0/planner/tasks/{id}](https://developer.microsoft.com/graph/graph-explorer?request=groups/{id}/planner/plans&version=v1.0)|
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [Planejador API na versão 1.0 do Microsoft Graph](/graph/api/resources/planner-overview?view=graph-rest-1.0)
-- [Planejador API na versão beta do Microsoft Graph](/graph/api/resources/planner-overview?view=graph-rest-beta)
+- [API do Planner no Microsoft Graph v1.0](/graph/api/resources/planner-overview?view=graph-rest-1.0)
+- [API do Planner no Microsoft Graph beta](/graph/api/resources/planner-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>Próximas etapas

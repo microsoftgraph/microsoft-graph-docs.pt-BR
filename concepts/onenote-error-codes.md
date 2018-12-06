@@ -60,7 +60,7 @@ O servidor está ocupado demais para lidar com a solicitação de entrada neste 
 Uma ou mais das bibliotecas de documentos no OneDrive do usuário ou grupo contêm mais de 5.000 itens do OneNote (bloco de anotações, seções, grupos de seções) e não podem ser consultadas usando a API. Certifique-se de que nenhuma das bibliotecas de documentos do grupo ou usuário contenha mais de 5000 itens do OneNote. Confira o [blog de desenvolvimento do OneNote](https://blogs.msdn.microsoft.com/onenotedev/2016/09/11/onenote-api-calls-fail-with-a-large-number-of-items-in-a-sharepoint-document-library/) para ver as etapas de mitigação.
 
 ### <a name="10012"></a>10012
-Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira [Configurar uma biblioteca para exigir check-out de arquivos](https://support.office.com/en-us/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
+Não é possível criar nem atualizar a entidade porque a biblioteca que contém o bloco de anotações exige que seja feito check-out dos itens para que eles possam ser editados. Para saber mais, confira [Configurar uma biblioteca para exigir check-out de arquivos](https://support.office.com/pt-BR/article/Configure-a-site-library-to-require-check-out-of-files-f63fcbdc-1db6-4eb7-a3eb-dd815500c9e7).
 
 Remova o requisito de check-out da biblioteca ou mova o bloco de anotações.
 
@@ -97,7 +97,7 @@ A solicitação contém duas ou mais partes de "Apresentação". Exatamente uma 
 O tipo de conteúdo da parte "Apresentação" pode ser somente texto/HTML ou aplicativo/XHTML+XML. 
 
 ### <a name="20004"></a>20004
-O HTML da parte "Apresentação" contém uma marca de imagem com a **src** e o conjunto de propriedades **data-render-src**. A API vai ignorar a propriedade **src** e o uso da propriedade **data-render-src**. 
+O HTML da parte "Apresentação" contém uma marca de imagem com a **src** e o conjunto de propriedades **data-render-src**. A API irá ignorar a propriedade **src** e usar a propriedade **data-render-src**. 
 
 ### <a name="20005"></a>20005
 O URI da solicitação é muito longo. O tamanho máximo do URI (incluindo todos os parâmetros e dados) é de 16 KB ou 16.384 caracteres.
@@ -340,7 +340,7 @@ Não há suporte para a fonte do vídeo especificada na solicitação. Confira [
 Algo está errado com a conta do usuário.
 
 ### <a name="30101"></a>30101
-A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/en-us/).
+A conta do usuário excedeu sua cota do OneDrive. Confira [OneDrive](https://onedrive.live.com/about/pt-BR/).
 
 ### <a name="30102"></a>30102
 Nada mais pode ser adicionado à seção solicitada porque ela atingiu seu tamanho máximo.

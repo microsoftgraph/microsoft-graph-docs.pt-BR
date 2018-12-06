@@ -34,7 +34,7 @@ Vejamos a seguir alguns dos cenários permitidos pelas APIs de lista de particip
 
 Você pode usar a API de tarefas para criar um aplicativo Web que gerencia as tarefas da aula e, em seguida, integrar o seu aplicativo ao Microsoft Teams em uma nova guia personalizada.  
 
-O Microsoft Teams no Office 365 é um hub digital que reúne conversas, conteúdo e aplicativos em um só lugar para as salas de aula. O Microsoft Teams oferece um [conjunto avançado de pontos de extensibilidade](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-overview), incluindo a criação de guias, conectores e bots. Esses pontos de extensibilidade podem chamar as APIs educacionais do Microsoft Graph para lidar com tarefas e trabalhos. Crie uma experiência mais abrangente habilitando o seu ponto de extensão com qualquer outra API do Microsoft Graph e as APIs de tarefa e de trabalhos.
+O Microsoft Teams no Office 365 é um hub digital que reúne conversas, conteúdo e aplicativos em um só lugar para as salas de aula. O Microsoft Teams oferece um [conjunto avançado de pontos de extensibilidade](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-overview), incluindo a criação de guias, conectores e bots. Esses pontos de extensibilidade podem chamar as APIs educacionais do Microsoft Graph para lidar com tarefas e trabalhos. Crie uma experiência mais abrangente habilitando o seu ponto de extensão com qualquer outra API do Microsoft Graph e as APIs de tarefa e de trabalhos.
 
 Para o setor educacional, os aplicativos de guia personalizada do Microsoft Teams são abertos em um contexto de sala de aula educacional (uma equipe), onde faz sentido gerenciar o fluxo de tarefas de ponta a ponta, desde a criação e a distribuição até as notas e o feedback. Isso é apenas um exemplo de como o Microsoft Teams economiza tempo e simplifica a logística do dia a dia, deixando os educadores livres para se dedicarem aos alunos.
 
@@ -61,10 +61,10 @@ As APIs de gerenciamento da School Data Sync oferecem suporte a cenários comple
 - Gerenciar o ciclo de vida da sincronização com as operações [pausar](/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta), [retomar](/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta) e [redefinir](/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta)
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API de educação na versão 1.0 do Microsoft Graph](/graph/api/resources/education-overview?view=graph-rest-1.0)
-- [API de educação na versão beta do Microsoft Graph](/graph/api/resources/education-overview?view=graph-rest-beta)
+- [API de Educação no Microsoft Graph v1.0](/graph/api/resources/education-overview?view=graph-rest-1.0)
+- [API de Educação no Microsoft Graph beta](/graph/api/resources/education-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>Próximas etapas

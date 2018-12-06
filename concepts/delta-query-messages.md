@@ -1,6 +1,6 @@
 ---
 title: Obter as alterações incrementais para as mensagens em uma pasta
-description: Consulta delta permite criar consultas para adições, exclusões ou atualizações às mensagens em uma pasta, por meio de uma série de
+description: A consulta delta permite consultar adições, exclusões ou atualizações de mensagens em uma pasta, por meio de uma série de
 ms.openlocfilehash: bae652cc8382ae1b966a24fc4af58f720a2f0c9f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT

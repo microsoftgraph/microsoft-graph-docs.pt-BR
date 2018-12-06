@@ -25,7 +25,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Grupos
 - Conversas em grupo
 - Conteúdo compartilhado no OneDrive, incluindo unidades associadas a sites do SharePoint
-- Pastas de OneDrive pessoais do usuário
+- Pastas do OneDrive pessoais do usuário
 - Alertas de segurança
 
 Por exemplo, você pode criar uma assinatura para uma pasta de email específica: `me/mailFolders('inbox')/messages`
@@ -39,7 +39,7 @@ Ou para uma unidade do SharePoint/OneDrive for Business: `/drive/root`
 Ou para o OneDrive pessoal de um usuário: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Ou para um novo [alerta de API de segurança](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`,`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+Ou, para um novo [alerta da API de segurança](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Limitações de recursos do Microsoft Azure AD
 
@@ -112,7 +112,7 @@ O Microsoft Graph valida o ponto de extremidade de notificação fornecido na pr
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > **Importante:** Desde que o `validationToken` é um parâmetro de consulta deve ser decodificado corretamente pelo cliente, conforme as práticas recomendadas de codificação de HTTP. Se o cliente não decodificar o token e, em vez disso, usa o valor codificado na próxima etapa (resposta), a validação falhará. Além disso, o cliente deve tratar o valor do token como opaco, desde que o formato de token pode mudar no futuro, sem aviso prévio.
+    > **Importante:** como `validationToken` é um parâmetro de consulta, ele deve ser decodificado corretamente pelo cliente, de acordo com as práticas de codificação HTTP. Se o cliente não decodificar o token e usar o valor codificado na próxima etapa (resposta), a validação falhará. Além disso, o cliente deve tratar o valor de token como opaco, pois o formato de token pode ser alterado no futuro, sem aviso prévio.
 
 1. O cliente deve fornecer uma resposta com as seguintes características em até 10 segundos:
 

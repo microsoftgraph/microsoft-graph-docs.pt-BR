@@ -49,10 +49,10 @@ Quando seu aplicativo é executado em uma página do SharePoint, você pode usar
 Para saber mais sobre esses modelos, acesse o [Centro de Desenvolvedores do SharePoint][] ou os [Documentos para Desenvolvedores do SharePoint][].
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API do SharePoint na versão 1.0 do Microsoft Graph](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [API do SharePoint na versão beta do Microsoft Graph](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [API do SharePoint no Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
+- [API do SharePoint no Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -64,8 +64,7 @@ Aprenda mais sobre como [trabalhar com sites][SharePoint] usando o SharePoint co
 [criar]: /graph/api/list-create?view=graph-rest-1.0
 [consultar]: /graph/api/listitem-get?view=graph-rest-1.0
 [unidade]: /graph/api/resources/drive?view=graph-rest-1.0
-
-  [API do OneDrive]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[API do OneDrive]: /graph/api/resources/onedrive?view=graph-rest-1.0
 [Estrutura do SharePoint]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
 [Suplementos do SharePoint]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [Centro de Desenvolvedores do SharePoint]: https://developer.microsoft.com/sharepoint

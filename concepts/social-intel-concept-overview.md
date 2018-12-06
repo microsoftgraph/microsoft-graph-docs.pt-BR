@@ -87,10 +87,10 @@ A API do Insights fornece uma com uma funcionalidade semelhante às entidades [u
 ![Captura de tela de um cartão de pessoas para um usuário no Outlook na Web, mostrando os arquivos recentes](images/peoplecard-concept.png)
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência à API para esses serviços?
+Procurando a referência de API para estes serviços?
 
-- [API de pessoas no Microsoft v 1.0 do gráfico](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [API da inteligência de dados social e análises na versão beta do Microsoft Graph](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [API de Pessoas no Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
+- [API para inteligência social e análises no Microsoft Graph beta](/graph/api/resources/social-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 

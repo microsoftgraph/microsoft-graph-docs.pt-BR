@@ -1,6 +1,6 @@
 ---
 title: Atualizar o conteúdo da página do OneNote
-description: " Blocos de anotações empresarial no Office 365"
+description: " Blocos de anotações empresariais no Office 365"
 ms.openlocfilehash: 746520c5071dba0cf11d2fde02daa502522c56f6
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -13,7 +13,7 @@ ms.locfileid: "27091615"
 **Aplica-se a** Blocos de anotações de consumidor no OneDrive | Blocos de anotações empresariais no Office 365
 
 
-Para atualizar o conteúdo de uma página do OneNote, envie uma solicitação PATCH para o ponto de extremidade de *conteúdo* da página:
+Para atualizar o conteúdo de uma página do OneNote, envie uma solicitação de PATCH para o ponto de extremidade do *conteúdo* da página:
 
 `PATCH ../notes/pages/{id}/content`</p>
 
@@ -24,19 +24,19 @@ Envie um objeto de alteração JSON no corpo da mensagem. Se a solicitação for
 
 ## <a name="construct-the-request-uri"></a>Construir a URI de solicitação
 
-Para construir o URI de solicitação, comece com a URL raiz do serviço:
+Para construir a URI de solicitação, comece com a URL raiz do serviço:
 
 `https://graph.microsoft.com/v1.0/me/onenote`
 
 <br/>
 
-Em seguida, acrescente o ponto de extremidade de *conteúdo* da página:
+Acrescente então o ponto de extremidade do *conteúdo* da página:
 
-- **Obtenha a página HTML e todos os valores de *data-id* definidos**<br/><br/>`../pages/{id}/content`   
+- **Obter o HTML da página e todos os valores de *data-id* definidos**<br/><br/>`../pages/{id}/content`   
 
-- **Obtenha a página HTML, todos os valores de *data-id* definidos e todos os valores de *id* gerados**<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
+- **Obter o HTML da página, todos os valores de *data-id* definidos e todos os valores de *id* gerados**<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
 
-Os valores de **data-id** e **id** são usados ​​como identificadores **target** para os elementos que você deseja atualizar.
+A **data-id** e os valores de **id** são usados como identificadores de **destino** para elementos que você deseja atualizar.
 
  
 Sua solicitação de URI completa terá a seguinte aparência:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`

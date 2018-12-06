@@ -58,10 +58,10 @@ Os grupos do Office 365 são conjuntos de usuários que compartilham o acesso ao
 - [Restaurar](/graph/api/directory-deleteditems-restore?view=graph-rest-1.0) os grupos excluídos.
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API de grupos na versão 1.0 do Microsoft Graph](/graph/api/resources/groups-overview?view=graph-rest-1.0)
-- [API de grupos na versão beta do Microsoft Graph](/graph/api/resources/groups-overview?view=graph-rest-beta)
+- [API de Grupos no Microsoft Graph v1.0](/graph/api/resources/groups-overview?view=graph-rest-1.0)
+- [API de Grupos no Microsoft Graph beta](/graph/api/resources/groups-overview?view=graph-rest-beta)
 
 
 ## <a name="next-steps"></a>Próximas etapas

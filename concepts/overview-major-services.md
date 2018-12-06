@@ -1,6 +1,6 @@
 ---
 title: Principais serviços e recursos do Microsoft Graph
-description: 'O Microsoft Graph permite que você integre o melhor dos Office 365, Windows 10 e mobilidade corporativos e serviços de segurança no Microsoft 365, usando bibliotecas de cliente e APIs REST. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
+description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
 ms.openlocfilehash: 12092b4b36159ae1b1cbd490815b0b00722e5ad8
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -10,7 +10,7 @@ ms.locfileid: "27091579"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
-O Microsoft Graph permite que você integre o melhor dos Office 365, Windows 10 e mobilidade corporativos e serviços de segurança no Microsoft 365, usando bibliotecas de cliente e APIs REST. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
+O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. 
 
 ## <a name="users-and-groups"></a>Usuários e grupos
 
@@ -40,7 +40,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Gerenciamento de identidades e acesso | Azure AD | Cria e gerencia recursos de diretório, como usuários, grupos e aplicativos. Gerencie o acesso a recursos e dados. Proporciona aos clientes acesso aos dados de risco de entrar e conta no Azure AD.| [Visão geral do gerenciamento de identidade e acesso do Azure AD](azuread-identity-access-management-concept-overview.md)  |
+| Gerenciamento de identidades e acesso | Azure AD | Cria e gerencia recursos de diretório, como usuários, grupos e aplicativos. Gerencie o acesso a recursos e dados. Oferece acesso aos clientes a dados de entrada e de risco da conta no Azure AD.| [Visão geral do gerenciamento de identidade e acesso do Azure AD](azuread-identity-access-management-concept-overview.md)  |
 
 
 ## <a name="productivity"></a>Produtividade
@@ -85,7 +85,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
-| Integração de segurança | Azure proteção de identidade AD, proteção de informações do Windows Azure, Central de segurança do Windows Azure, segurança de aplicativo do Microsoft Cloud, a proteção de ameaça avançado do Windows Defender e [mais](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
+| Integração de segurança | Azure AD Identity Protection, Proteção de Informações do Azure, Central de Segurança do Azure, Segurança do Aplicativo Microsoft Cloud, Proteção Avançada contra Ameaças do Windows Defender e [mais](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | Fornece um gateway unificado para insights e ações de segurança em todos os parceiros da Microsoft e do ecossistema. | [Segurança no Microsoft Graph](security-concept-overview.md) |
 
 
 

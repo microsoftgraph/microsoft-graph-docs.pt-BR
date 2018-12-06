@@ -1,5 +1,5 @@
 ---
-title: Visão geral da API do Microsoft reservas (preview)
+title: Visão geral da API do Microsoft Bookings (versão prévia)
 description: O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer pequena empresa que forneça serviços com base em agendamentos, como oficinas mecânicas, salões de cabeleireiros e empresas de advocacia, podem beneficiar com o gerenciamento de seus agendamentos para liberar tempo para tarefas mais importantes para expandir seus negócios. O Microsoft Bookings está disponível para empresas que possuem uma assinatura do Office 365 Business Premium.
 ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
@@ -8,14 +8,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091674"
 ---
-# <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft reservas (preview)
+# <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 
 O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer pequena empresa que forneça serviços com base em agendamentos, como oficinas mecânicas, salões de cabeleireiros e empresas de advocacia, podem beneficiar com o gerenciamento de seus agendamentos para liberar tempo para tarefas mais importantes para expandir seus negócios. O Microsoft Bookings está disponível para empresas que possuem uma assinatura do Office 365 Business Premium.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Por que se integrar ao Microsoft Bookings usando o Microsoft Graph?
 
 ### <a name="streamline-appointment-booking"></a>Simplificar o agendamento de compromissos
-Um operador de negócios nunca perderá um compromisso com um cliente mesmo estando longe do telefone ou com a empresa fechada. Os clientes podem [ver os serviços disponíveis](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) e [compromissos de catálogo](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) sempre diretamente na página de agendamento, no site da empresa ou Facebook. 
+Um operador de negócios nunca perderá um compromisso com um cliente mesmo estando longe do telefone ou com a empresa fechada. Os clientes poderão [ver os serviços disponíveis](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) e [agendar compromissos](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) diretamente na página de agendamento, no site da empresa ou pelo Facebook. 
 
 Os operadores de negócios podem realizar agendamentos em qualquer lugar, pela Web ou em um aplicativo móvel, pessoalmente ou pelo telefone. Eles podem [reagendar](/graph/api/bookingappointment-update?view=graph-rest-beta), [cancelar](/graph/api/bookingappointment-cancel?view=graph-rest-beta) ou [reatribuir](/graph/api/bookingappointment-update?view=graph-rest-beta) um agendamento existente para outro membro da equipe disponível. 
 
@@ -29,9 +29,9 @@ A realização automática de agendamentos verifica se o cliente já se encontra
 Ao usar o mesmo ponto de extremidade REST unificado do Microsoft Graph, você pode acessar a API do Bookings e [integrar-se com o melhor do Microsoft 365](overview-major-services.md) para permitir cenários mais amplos. Por exemplo, você pode usar o [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) para acompanhar e analisar dados financeiros da empresa e gerar relatórios profissionais ou usar o [SharePoint](sharepoint-concept-overview.md) ou o [Microsoft Teams](teams-concept-overview.md) para aprimorar colaboração em equipe.
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-Consulte a [API do Microsoft reservas na versão beta do Microsoft Graph](/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+Confira [API do Microsoft Bookings no Microsoft Graph beta](/graph/api/resources/booking-api-overview?view=graph-rest-beta).
 
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -39,6 +39,6 @@ Consulte a [API do Microsoft reservas na versão beta do Microsoft Graph](/graph
 Saiba mais sobre:
 
 - 
-  [Microsoft Bookings](https://support.office.com/en-us/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos do Office 365 business](https://support.office.com/en-us/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+  [Microsoft Bookings](https://support.office.com/pt-BR/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) e outros [aplicativos do Office 365 business](https://support.office.com/pt-BR/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Usar a API do Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) do Microsoft Graph.
 

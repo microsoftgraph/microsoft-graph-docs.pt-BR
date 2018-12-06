@@ -24,9 +24,9 @@ O padrão típico de chamada corresponde ao que segue:
      b.  Se uma URL `deltaLink` é retornada, não há mais nenhum dado sobre o estado do recurso a ser retornado. Em solicitações futuras, o aplicativo usa a URL `deltaLink` para inteirar-se das alterações feitas no recurso.
 
 3. Quando o aplicativo precisa saber das alterações no recurso, ele faz uma nova solicitação usando a URL `deltaLink` recebida na etapa 2. Esta solicitação *pode* ser feita imediatamente após concluir a etapa 2 ou quando o aplicativo verifica as alterações.
-4. O Microsoft Graph retorna uma resposta descrevendo alterações no recurso desde a solicitação anterior e em uma URL `nextLink` ou uma URL `deltaLink`.
+4. O Microsoft Graph retorna uma resposta, descrevendo alterações no recurso desde a solicitação anterior e em uma URL `nextLink` ou uma URL `deltaLink`.
 
->**Observação:** Recursos armazenados em cenários de "sync daqui" de suporte do Azure Active Directory (por exemplo, usuários e grupos). Isso permite que você ignore as etapas 1 e 2 acima (se você não estiver interessado em recuperar o estado do recurso completo) e pedir as informações mais recentes `deltaLink` em vez disso. Acrescentar `$deltaToken=latest` para o `delta` função e a resposta conterá uma `deltaLink` e nenhum dado de recurso.
+>**Observação:** recursos armazenados no Azure Active Directory (por exemplo, usuários e grupos) dão suporte a cenários do tipo "sincronizar a partir de agora". Isso permite que você ignore as etapas 1 e 2 acima (se você não está interessado em recuperar o estado completo do recurso) e peça para conferir o último `deltaLink` em vez disso. Acrescente `$deltaToken=latest` à função `delta`, e a resposta conterá um `deltaLink` e nenhum dado do recurso.
 
 ### <a name="state-tokens"></a>Tokens de estado
 
@@ -49,7 +49,7 @@ Para usuários e grupos, existem restrições sobre como usar alguns parâmetros
 - Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
 - `$expand` tem suporte somente para as propriedades de navegação `manager` e `members` para usuários e grupos, respectivamente.
 
-- Filtros do escopo permitem controlar alterações em um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter = id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' ou id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações aos grupos de correspondência as ids especificadas no filtro da consulta.
+- Os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações dos grupos que correspondem às IDs especificadas no filtro de consulta.
 
 ## <a name="resource-representation-in-the-delta-query-response"></a>Representação de recurso na resposta da consulta delta
 
@@ -75,16 +75,16 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 
 | **Coleção de recursos** | **API** |
 |:------ | :------ |
-| Aplicativos (preview) | função [delta](/graph/api/application-delta?view=graph-rest-beta) do [aplicativo de](/graph/api/resources/application?view=graph-rest-beta) recurso (preview) |
-| Objetos de diretório | função [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) do recurso [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) (preview) |
-| Funções de diretório | função [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) do recurso [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) |
+| Aplicativos (visualização) | Função [delta](/graph/api/application-delta?view=graph-rest-beta) do recurso [application](/graph/api/resources/application?view=graph-rest-beta) (visualização) |
+| Objetos de diretório | Função [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) do recurso [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) (visualização) |
+| Funções de diretório | Função [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) do recurso [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) |
 | Eventos em um modo de exibição de calendário (intervalo de datas) do calendário principal | função [delta](/graph/api/event-delta?view=graph-rest-1.0) do recurso [evento](/graph/api/resources/event?view=graph-rest-1.0) |
 | Grupos | Função [delta](/graph/api/group-delta?view=graph-rest-1.0) do recurso [group](/graph/api/resources/group?view=graph-rest-1.0) |
 | Pastas de email | função [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) do recurso [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)  |
 | Mensagens de uma pasta | função [delta](/graph/api/message-delta?view=graph-rest-1.0) do recurso [mensagem](/graph/api/resources/message?view=graph-rest-1.0)  |
 | Pastas de contatos pessoais | função [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) do recurso [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) |
-| Contatos pessoais em uma pasta | função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0) |
-| Entidades de serviço (preview) | função [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (preview) |
+| Contatos pessoais em uma pasta | Função [delta](/graph/api/contact-delta?view=graph-rest-1.0) do recurso [contato](/graph/api/resources/contact?view=graph-rest-1.0) |
+| Entidades de serviço (visualização) | Função [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) do recurso [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (visualização) |
 | Usuários | função [delta](/graph/api/user-delta?view=graph-rest-1.0) do recurso [usuário](/graph/api/resources/user?view=graph-rest-1.0) |
 | Itens de unidade\* | Função [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) do recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
 | Itens do Planner\*\* | Função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização) |

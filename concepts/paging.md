@@ -1,6 +1,6 @@
 ---
 title: 'Paginação de dados do Microsoft Graph em seu aplicativo '
-description: "odata.nextLink' propriedade na resposta que contém uma URL para a próxima página de resultados. "
+description: 'Propriedade odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. '
 ms.openlocfilehash: 9a9224a6dc710fa70ebec2448bf2eef2238968ca
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -12,7 +12,7 @@ ms.locfileid: "27091687"
 
 Algumas consultas em relação ao Microsoft Graph retornam várias páginas de dados devido à paginação do lado do servidor ou devido ao uso do parâmetro de consulta `$top` para limitar especificamente o tamanho da página em uma solicitação. Quando um conjunto de resultados se estende por várias páginas, o Microsoft Graph retorna uma propriedade `@odata.nextLink` na resposta que contém uma URL para a próxima página de resultados. 
 
-Por exemplo, a seguinte URL solicita todos os usuários em uma organização com um tamanho de página de 5, especificado com o `$top` parâmetro de consulta:
+Por exemplo, a URL a seguir solicita todos os usuários em uma organização com o tamanho de página 5 especificado com o parâmetro de consulta `$top`:
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5

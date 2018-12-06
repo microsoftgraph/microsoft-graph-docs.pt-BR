@@ -1,6 +1,6 @@
 ---
-title: Autorização e a segurança do Microsoft Graph API
-description: Dados de segurança está acessíveis através da API de segurança do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure Active Directory (AD Azure).
+title: Autorização e API de Segurança do Microsoft Graph
+description: Os dados de segurança acessíveis por meio da API de Segurança do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure AD (Azure Active Directory).
 ms.openlocfilehash: c69621fa7059a96381bed76b58c4a77e80d984dd
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,38 +8,38 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091537"
 ---
-# <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e a segurança do Microsoft Graph API
+# <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
-Dados de segurança está acessíveis através da API de segurança do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure Active Directory (AD Azure).
+Os dados de segurança acessíveis por meio da API de Segurança do Microsoft Graph são confidenciais e protegidos por permissões e funções do Azure AD (Azure Active Directory).
 
-A API de segurança do Microsoft Graph suporta dois tipos de autorização:
+A API de Segurança do Microsoft Graph dá suporte a dois tipos de autorização:
 
 - **Autorização no nível de aplicativo** - não há usuário conectado (por exemplo, um cenário SIEM). As permissões concedidas ao aplicativo determinam a autorização. 
     >**Observação:** Esta opção também pode suportar casos em que o RBAC (controle de acesso baseado em função) é gerenciado pelo aplicativo.
 - **Autorização delegada pelo usuário** - um usuário que é um membro do locatário do Microsoft Azure AD está conectado. O usuário deve ser um membro de uma função de administrador do Microsoft Azure AD limitado, o leitor de segurança ou o administrador de segurança, além de o aplicativo ter recebido as permissões necessárias.
 
-Se você estiver chamando a API de segurança do Microsoft Graph do Explorer do gráfico:
+Se você estiver chamando a API de Segurança do Microsoft Graph no Explorador do Graph:
 
 - O administrador do locatário do Microsoft Azure AD deve conceder explicitamente o consentimento das permissões solicitadas ao aplicativo do Explorador do Graph.
 - O usuário deve ser um membro da função administrador limitado do leitor de segurança no Microsoft Azure AD (leitor de segurança ou administrador de segurança).
 
 >**Observação**: O Explorador do Graph não suporta autorização no nível de aplicativo.
 
-Se você estiver chamando a API de segurança do Microsoft Graph um personalizado ou seu próprio aplicativo:
+Se você estiver chamando a API de Segurança do Microsoft Graph de um aplicativo personalizado ou do seu próprio:
 
 - O administrador de locatário do Microsoft Azure AD deve conceder explicitamente o consentimento para o aplicativo. Isso é necessário para autorização no nível de aplicativo e autorização delegada pelo usuário.
 - Se você estiver usando autorização delegada do usuário, o usuário deverá ser membro da função Administrador Limitado do Leitor de Segurança ou administrador de segurança no Microsoft Azure AD.
 
 ## <a name="manage-authorization-in-security-api-client-applications"></a>Gerenciar autorizações nos aplicativos de clientes de API de segurança
 
-Dados de segurança fornecidos através da API de segurança do Microsoft Graph são confidenciais e devem ser protegidos por mecanismos de autorização e autenticação apropriado. A tabela a seguir lista as etapas para registrar e criar um aplicativo cliente que pode acessar a API de segurança do Microsoft Graph.
+Os dados de segurança fornecidos por meio da API de Segurança do Microsoft Graph são confidenciais e devem ser protegidos por mecanismos de autenticação e autorização apropriados. A tabela a seguir lista as etapas para registrar e criar um aplicativo cliente que pode acessar a API de Segurança do Microsoft Graph.
 
 | **Quem** | **Ação** |
 |:---------------------|:------------------|
 |Desenvolvedor ou proprietário do aplicativo|Registar o aplicativo como um aplicativo de empresa.|
 |Administrador de locatários|Conceda permissões para o aplicativo.|
 |Administrador de locatários|Atribuir funções aos usuários.|
-|Desenvolvedor do aplicativo|Entrar como o usuário e usar o aplicativo para acessar a API de segurança do Microsoft Graph.|
+|Desenvolvedor do aplicativo|Entre como usuário e use o aplicativo para acessar a API de Segurança do Microsoft Graph.|
 
 O registro do aplicativo define somente quais permissões o mesmo precisa para ser executado. Ele NÃO concede estas permissões ao aplicativo.
 
@@ -75,9 +75,9 @@ Para registrar seu aplicativo:
 3. Na página de registro do novo aplicativo, escolha **Adicionar Plataforma ** > **Web**. No campo **URL de redirecionamento**, insira o URL de redirecionamento.
 4. Na seção **Permissões do Microsoft Graph**, em **Permissões delegadas**, escolha **Adicionar**. Na caixa de diálogo, escolha as permissões necessárias. Para obter uma lista de permissões, consulte [Permissões de segurança](permissions-reference.md#security-permissions).
 
-    >A API de segurança do Microsoft Graph requer o escopo de SecurityEvents.Read.All para consultas GET e o escopo de SecurityEvents.ReadWrite.All para consultas de PATCH/POST.
+    >A API de Segurança do Microsoft Graph requer o escopo SecurityEvents.Read.All para consultas GET e o escopo SecurityEvents.ReadWrite.All para consultas PATCH/POST.
 
-5. Selecione **Salvar**.
+5. Escolha **Salvar**.
 
 Salve as informações a seguir:
 
@@ -89,7 +89,7 @@ Para mais informações, consulte [Registrar seu aplicativo com o ponto de extre
 
 ## <a name="grant-permissions-to-an-application"></a>Conceder permissões a um aplicativo.
 
-O registro do aplicativo define somente qual permissão o aplicativo requer - ele não concede essas permissões ao aplicativo. Um administrador de locatários do Microsoft Azure AD deve conceder explicitamente essas permissões, fazendo uma chamada para o ponto de extremidade de consentimento do administrador. Para detalhes, consulte [Usando o ponto de extremidade de consentimento do administrador](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
+O registro do aplicativo define somente qual permissão o aplicativo requer - ele não concede essas permissões ao aplicativo. Um administrador de locatários do Microsoft Azure AD deve conceder explicitamente essas permissões, fazendo uma chamada para o ponto de extremidade de consentimento do administrador. Para detalhes, consulte [Usando o ponto de extremidade de consentimento do administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
 Para conceder permissões a um aplicativo, você precisará:
 
@@ -108,7 +108,7 @@ Para conceder as permissões:
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Atribuir funções do Microsoft Azure AD aos usuários
 
-Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para obter mais proteger dados confidenciais de segurança, a API de segurança do Microsoft Graph também requer que os usuários a ser atribuído à função de **Segurança leitor** de Azure AD. Para mais detalhes, consulte [Atribuindo funções de administrador](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para mais detalhes, consulte [Atribuindo funções de administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Observação:** Você precisa ser um administrador de locatários para executar esta etapa.
 
@@ -133,19 +133,19 @@ A tabela a seguir lista os recursos que você pode usar para criar um código de
 
 |**Tipo de aplicativo**|**Biblioteca de autenticação**|
 |------------------------|----------------------------|
-|[Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Aplicativos da área de trabalho - Android](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Aplicativos da área de trabalho, iOS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Visualização da Biblioteca de Autenticação da Microsoft para iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Aplicativos da área de trabalho - Android](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-android)|[Biblioteca de Autenticação Microsoft (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Aplicativos da área de trabalho - .Net](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Biblioteca de Autenticação Microsoft (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Aplicativos Web - JavaScript SPA](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Biblioteca de autenticação da Microsoft para visualização de JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Aplicativos Web - Servidor Web .NET](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Aplicativos Web - Aplicativo da Web NodeJS](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 Para aplicativos que não usam nenhuma das bibliotecas existentes, consulte [Obter acesso em nome de um usuário](auth-v2-user.md).
 
 1. Obter um código do Microsoft Azure AD. A consulta a ser chamada contém o parâmetro para a ID do aplicativo, o URL de redirecionamento e as **permissões necessárias**.
 2. Use o código para obter um token de acesso.
 
-Se você usa a biblioteca OpenId Connect, consulte [Autenticar usando o Microsoft Azure AD e OpenID Connect](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/authenticate) e ligar`app.UseOpenIdConnectAuthentication()`.
+Se você usa a biblioteca OpenId Connect, consulte [Autenticar usando o Microsoft Azure AD e OpenID Connect](https://docs.microsoft.com/pt-BR/azure/architecture/multitenant-identity/authenticate) e ligar`app.UseOpenIdConnectAuthentication()`.
 
 >**Observação:** Se você estiver solicitando tokens de autenticação delegada pelo usuário, o parâmetro da biblioteca será **Escopos solicitados**. Use o User.Read para este parâmetro ao invés do que o aplicativo registrado solicitar. O parâmetro **Escopos solicitados** NÃO afeta as permissões contidas nos tokens de autenticação retornados. Estes são determinados pelas permissões que o administrador de locatários concedeu ao aplicativo.
 

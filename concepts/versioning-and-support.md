@@ -8,13 +8,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091719"
 ---
-# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas para o Microsoft Graph 
+# <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Controle de versão, suporte e mudanças significativas de políticas do Microsoft Graph 
 
 Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
 
 ## <a name="support-policy-and-deprecation-information"></a>Informações de política e substituição de suporte
 
-O Microsoft Graph segue a [Política de Ciclo de Vida da Microsoft](https://support.microsoft.com/en-us/lifecycle). 
+O Microsoft Graph segue a [Política de Ciclo de Vida da Microsoft](https://support.microsoft.com/pt-BR/lifecycle). 
 
 Conforme novas versões das APIs REST Microsoft Graph e SDKs do Microsoft Graph são lançadas, as versões anteriores são desativadas. A Microsoft declarará uma versão como preterida pelo menos 24 meses antes de retirar uma API ou um SDK. 
 
@@ -42,16 +42,16 @@ A seguir há exemplos de alterações compatíveis com versões anteriores:
  - Introdução de paginação a coleções existentes
  - Alterações de códigos de erro
  - Alterações à ordem das propriedades
- - Alterações ao formato ou ao comprimento de cadeias de caracteres opacas, como IDs de recurso
+ - Alterações no formato ou no comprimento de cadeias de caracteres opacas, como IDs de recurso
 
->**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API do Microsoft REST](https://github.com/microsoft/api-guidelines/). 
+>**Observação:** Ao longo do tempo, atualizaremos a lista de alterações compatíveis com versões anteriores. Se você gerar seus próprios proxies de cliente (como clientes WCF), nossa orientação é que os aplicativos cliente devem estar preparados para receber propriedades e tipos derivados definidos anteriormente pelo serviço da API do Microsoft Graph. A API do Microsoft Graph segue a orientação descrita na seção [Controle de Versão de Modelo](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) nas [diretrizes da API do Microsoft REST](https://github.com/microsoft/api-guidelines/). 
 
 ## <a name="versions"></a>Versões
 
 As seguintes versões da API Microsoft Graph estão disponíveis atualmente.
 
 ### <a name="beta-version"></a>Versão beta
-Exposto em `https://graph.microsoft.com/beta`, a versão beta da API Microsoft Graph contém recursos que estão atualmente _**na visualização**_. Para obter a documentação da API beta, veja [Referência de ponto de extremidade do Microsoft Graph beta](/graph/api/overview?view=graph-rest-beta). Espere alterações significativas na versão beta regularmente. Não haverá uma dependência de produção em APIs /beta.
+Exposto em `https://graph.microsoft.com/beta`, a versão beta da API Microsoft Graph contém recursos que estão atualmente _**na visualização**_. Para obter a documentação da API beta, veja [Referência de ponto de extremidade do Microsoft Graph beta](/graph/api/overview?view=graph-rest-beta). Espere alterações significativas na versão beta regularmente. Não use uma dependência de produção em APIs /beta.
 
 Não damos nenhuma garantia de que um recurso beta será promovido para a versão atual. Quando a equipe da API Microsoft Graph acredita que um recurso beta está pronto para disponibilidade geral (GA), adicionaremos esse recurso à versão atual mais recente. Se a promoção do recurso resultar em uma alteração significativa de uma versão atual, o número da versão será incrementado e a nova versão se tornará a versão atual. Nossa comunidade do desenvolvedor pode postar solicitação de recursos no [UserVoice](https://officespdev.uservoice.com/), incluindo solicitações de novos recursos, bem como solicitações para promover APIs beta existentes para a versão atual. 
 
@@ -65,6 +65,6 @@ Não há atualmente nenhuma versão preterida da Microsoft Graph.
 
 ## <a name="terms-of-use"></a>Termos de uso
 
-Ao usar as APIs Microsoft Graph, você concorda com os [Termos de Uso](https://developer.microsoft.com/graph/docs/misc/terms-of-use). 
+Ao usar as APIs do Microsoft Graph, você concorda com os [Termos de Uso](https://developer.microsoft.com/graph/docs/misc/terms-of-use). 
 
-Seus comentários são importantes para nós. Junte-se a nós na página [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque suas perguntas com {MicrosoftGraph}.
+Seus comentários são importantes para nós. Junte-se a nós no [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque suas perguntas com {MicrosoftGraph}.

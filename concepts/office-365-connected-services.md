@@ -18,7 +18,7 @@ Para usar os serviços conectados do Office 365 com o Microsoft Graph, você pre
 
 - Baixe o [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), caso ainda não tenha feito isso. Se estiver usando uma versão anterior do Visual Studio, você pode usar o Visual Studio 2017 Preview lado a lado com sua versão atual.
 
-- Obter uma assinatura do Office 365 Para obter uma avaliação gratuita, ingresse no [Programa do Office 365 Developer](https://dev.office.com/devprogram).
+- Obtenha uma assinatura do Office 365. Para obter uma avaliação gratuita, entre no [Programa para Desenvolvedores do Office 365](https://dev.office.com/devprogram).
 
 ## <a name="get-the-starter-project"></a>Obter o projeto inicial
 
@@ -30,7 +30,7 @@ Agora você está pronto para adicionar o serviço Microsoft Graph ao seu projet
 
 1. No Gerenciador de Soluções, escolha **Serviços Conectados** para abrir a guia Serviços Conectados. 
 
-2. Escolha o provedor de **Acesso aos Serviços do Office 365 com o Microsoft Graph**. Siga o assistente. Selecione as permissões a seguir (você pode alterar as permissões posteriormente):
+2. Escolha o provedor **Acessar os Serviços do Office 365 com o Microsoft Graph**. Siga o assistente. Selecione as seguintes permissões (você pode alterar a permissões depois):
 
     - Nas APIs **Arquivo** defina permissões como **Ter acesso total a seus arquivos**.
     - Nas APIs **Email**, defina permissões como **Enviar email como você**.
@@ -56,7 +56,7 @@ A amostra inicial é configurada para enviar um email simples. Você pode usar o
         GetSharingLink(GraphServiceClient graphClient, string Id)
     ```
  
-> **Dica:** Cada comentário começa com '//Uncomment:'
+> **Dica:** cada comentário começa com "//Uncomment:"
  
 
 ## <a name="run-the-sample"></a>Executar o exemplo
@@ -78,9 +78,9 @@ O exemplo inicial inclui os seguintes arquivos:
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) – autentica o usuário atual e inicializa o cache de token do exemplo.
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) – armazena as informações de token do usuário. Você pode substituir pelo seu próprio cache de token personalizado. Para saber mais, veja [Armazenamento de tokens de acesso em cache em um aplicativo de vários locatários](https://azure.microsoft.com/en-us/documentation/articles/guidance-multitenant-identity-token-cache/).
+- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) – armazena as informações de token do usuário. Você pode substituir pelo seu próprio cache de token personalizado. Para saber mais, veja [Armazenamento de tokens de acesso em cache em um aplicativo de vários locatários](https://azure.microsoft.com/pt-BR/documentation/articles/guidance-multitenant-identity-token-cache/).
 
-- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) – implementa o a interface IAuthProvider local e obtém um token de acesso. 
+- Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) – implementa a interface IAuthProvider local e obtém um token de acesso. 
 
 - Helpers\\[SDKHelper.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SDKHelper.cs) – inicializa o **GraphServiceClient**, na [Biblioteca do Cliente .NET para Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet), que é usada para interagir com o Microsoft Graph.
 
@@ -91,5 +91,5 @@ O exemplo inicial inclui os seguintes arquivos:
 
 ## <a name="need-help"></a>Precisa de ajuda?
 
-Se precisar de ajuda, publique suas perguntas em [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque sua postagem com {microsoftgraph}.
+Se precisar de ajuda, publique suas perguntas no [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Marque sua postagem com {microsoftgraph}.
 

@@ -12,7 +12,7 @@ ms.locfileid: "27091682"
 
 O Microsoft Graph é uma API Web RESTful que permite que você acesse os recursos de serviço do Microsoft Cloud. Depois que você [registrar seu aplicativo](auth-register-app-v2.md) e [obter tokens de autenticação para um usuário](auth-v2-user.md) ou [serviço](auth-v2-service.md), é possível fazer solicitações para a API do Microsoft Graph.
 
-> **Importante:**  A maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+> **Importante:**  a maneira como políticas de acesso condicional se aplicam ao Microsoft Graph está mudando. Os aplicativos precisam ser atualizados para lidar com cenários em que as políticas de acesso condicional são configuradas. Para obter mais informações e orientações, confira [Diretrizes de desenvolvedor para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 Para ler de ou gravar em um recurso como um usuário ou uma mensagem de email, você constrói uma solicitação semelhante ao seguinte.
 
@@ -29,9 +29,9 @@ Os componentes de uma solicitação incluem:
 
 Depois de fazer uma solicitação, uma resposta é retornada, que inclui: 
 
-* Código de status – um código de status HTTP que indica o sucesso ou o fracasso. Para obter detalhes sobre os códigos de erro HTTP, veja [Erros](errors.md).
+* Código de status – um código de status HTTP que indica o sucesso ou o fracasso. Para obter detalhes sobre os códigos de erro HTTP, confira [Erros](errors.md).
 * Mensagem de resposta – os dados que você solicitou ou o resultado da operação. A mensagem de resposta pode estar vazia em algumas operações.
-* Link **Avançar** – se a solicitação retornar muitos dados, você precisa percorrê-los escolhendo **Avançar**. Para obter detalhes, veja [Paginação](paging.md).
+* Link **Avançar** – se a solicitação retornar muitos dados, será necessário percorrê-los escolhendo **Avançar**. Para obter detalhes, confira [Paginação](paging.md).
 
 ## <a name="http-methods"></a>Métodos HTTP
 
@@ -60,7 +60,7 @@ Estamos sempre buscando comentários sobre nossas APIs beta. Para fornecer comen
 
 Para saber mais sobre as versões da API, veja [Suporte e controle de versão](versioning-and-support.md).
 
-## <a name="resource"></a>Recurso
+## <a name="resource"></a>Resource
 
 Sua URL incluirá um ou mais recursos com que você está interagindo na solicitação, como `me`, `users`, `groups`, `drives` e `sites`. Cada um dos recursos de nível superior também inclui **relações**, que podem ser usados para acessar recursos adicionais, como `me/messages` ou `me/drive`. Você também pode interagir com os recursos usando **métodos**, por exemplo, para enviar um email, use `me/sendMail`.
 

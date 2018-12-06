@@ -35,10 +35,10 @@ Você pode usar a API de relatórios para acessar os conjuntos de dados listados
 |Yammer |[Atividades](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0)<br/>[Uso do dispositivo](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0)<br/>[Atividades de grupos](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0)|
 
 ## <a name="api-reference"></a>Referência da API
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [API de relatórios de uso do Office 365 na versão 1.0 do Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0)
-- [API de relatórios de uso do Office 365 Beta do Microsoft Graph](/graph/api/resources/report?view=graph-rest-beta)
+- [API de relatórios de uso do Office 365 no Microsoft Graph v1.0](/graph/api/resources/report?view=graph-rest-1.0)
+- [API de relatórios de uso do Office 365 no Microsoft Graph beta](/graph/api/resources/report?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
