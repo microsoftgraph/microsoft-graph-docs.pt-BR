@@ -1,6 +1,6 @@
 ---
-title: Obtenha os contatos do Outlook em uma pasta compartilhada
-description: " Isso também é "
+title: Obter contatos do Outlook em uma pasta compartilhada
+description: " isso também é "
 ms.openlocfilehash: c8c5b3a2eac49153826113af036146cc4475d9e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,55 +8,55 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091588"
 ---
-# <a name="get-outlook-contacts-in-a-shared-folder"></a>Obtenha os contatos do Outlook em uma pasta compartilhada
+# <a name="get-outlook-contacts-in-a-shared-folder"></a>Obter contatos do Outlook em uma pasta compartilhada
 
-Permite que os clientes do Outlook compartilhar pastas umas com as outras e forneça "ler", "criar", "modificar" ou "excluir" o acesso às pastas de contatos individuais. O Outlook também permite que um cliente delegar a outro usuário para agir em nome do cliente e pastas específicas de acesso ou caixa de correio inteira do cliente; Isso também é conhecida como "delegação" no Outlook.
+O Outlook permite que os clientes compartilhem pastas entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas de contatos individuais. O Outlook também permite que um cliente delegue outro usuário para agir em nome do cliente e acesse pastas específicas ou toda a caixa de correio do cliente; isso também é conhecido como "delegação" no Outlook.
 
-Programaticamente, o Microsoft Graph suporta obtendo contatos em pastas de contatos que foram compartilhadas por outros usuários, bem como introdução às próprias pastas compartilhadas. O suporte também se aplica às pastas em uma caixa de correio delegada.
+O Microsoft Graph oferece suporte de forma programática à obtenção de contatos em pastas de contatos que foram compartilhadas por outros usuários, além de receber as pastas compartilhadas em si. O suporte também se aplica a pastas em uma caixa de correio delegada.
 
-Por exemplo, Garth tem compartilhadas com John uma pasta de contato personalizada e oferecido acesso de leitura de John. Se John tiver entrado no seu aplicativo e oferecido permissões delegadas (Contacts.Read.Shared ou Contacts.ReadWrite.Shared), o seu aplicativo será capaz de acessar a pasta contato personalizada e os contatos nessa pasta, conforme descrito abaixo do Garth.
+Por exemplo, Henrique compartilhou com Diogo uma pasta de contatos personalizada e deu a ele acesso de leitura. Se Diogo se conectou ao seu aplicativo e forneceu permissões delegadas (Contacts.Read.Shared ou Contacts.ReadWrite.Shared), o aplicativo poderá acessar a pasta de contatos personalizada de Henrique e os contatos nessa pasta, conforme descrito abaixo.
 
-## <a name="get-a-contact-in-the-shared-folder"></a>Obtenha um contato na pasta compartilhada
+## <a name="get-a-contact-in-the-shared-folder"></a>Obter um contato na pasta compartilhada
 
-Você pode obter um contato específico na pasta contato personalizada que Garth tiver compartilhado com John:
+Você pode obter um contato específico na pasta de contatos personalizada que Henrique compartilhou com Diogo:
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/contactFolders/{folder-id}/contacts/{id}
 ```
 
-Após a conclusão bem-sucedida, você obterá HTTP 200 Okey e a instância de [contato](/graph/api/resources/contact?view=graph-rest-1.0) identificado pela `{id}` da pasta compartilhada de contato do Garth.
+Após a conclusão bem-sucedida, você receberá HTTP 200 OK e a instância de [contact](/graph/api/resources/contact?view=graph-rest-1.0) identificada por `{id}` da pasta de contatos compartilhada de Henrique.
 
-## <a name="get-all-contacts-in-the-shared-folder"></a>Obtenha todos os contatos na pasta compartilhada
+## <a name="get-all-contacts-in-the-shared-folder"></a>Obter todos os contatos na pasta compartilhada
 
-Obtenha todos os contatos na pasta compartilhada de contato do Garth:
+Obtenha todos os contatos na pasta de contatos compartilhada do Henrique:
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/contactFolders/{folder-id}/contacts
 ```
 
-Após a conclusão bem-sucedida, você obterá HTTP 200 Okey e um conjunto de instâncias de [contato](/graph/api/resources/contact?view=graph-rest-1.0) do Garth compartilhado a pasta de contato.
+Após a conclusão bem-sucedida, você receberá HTTP 200 OK e uma coleção de instâncias de [contact](/graph/api/resources/contact?view=graph-rest-1.0) na pasta de contatos compartilhada de Henrique.
 
 ## <a name="get-the-shared-folder"></a>Obter a pasta compartilhada
 
-Obtenha a pasta de contato que Garth compartilhada com John.
+Obtenha a pasta de contatos que Henrique compartilhou com Diogo.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET users/{Garth-userId | Garth-userPrincipalName}/contactFolders/{folder-id}
 ```
 
-Após a conclusão bem-sucedida, você obterá HTTP 200 Okey e compartilhados de uma instância de [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) que representa Garth pasta de contato.
+Após a conclusão bem-sucedida, você receberá HTTP 200 OK e uma instância de [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) que representa a pasta de contatos compartilhada de Henrique.
 
-Os mesmos recursos GET aplicam se Garth tinha delegada John sua caixa de correio inteira.
+As mesmas funcionalidades GET se aplicariam se Henrique tivesse delegado a Diogo toda a sua caixa de correio.
 
-Se Garth não compartilhou a pasta de contato com John, nem ele tem delegado sua caixa de correio de John, a especificação user ID do Garth ou o nome principal do usuário nessas operações GET retornará um erro. 
+Se Henrique não tiver compartilhado sua pasta de contatos com Diogo nem delegado sua caixa de correio a Diogo, a especificação da ID de usuário de Henrique ou do nome UPN nessas operações GET retornará um erro. 
 
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre:
 
-- [Por que integram com contatos pessoais do Outlook](outlook-contacts-concept-overview.md)
-- Os [Contatos API](/graph/api/resources/contact?view=graph-rest-1.0) v 1.0 do Microsoft Graph.
+- [Por que se integrar aos contatos pessoais do Outlook](outlook-contacts-concept-overview.md)
+- A [API de contatos](/graph/api/resources/contact?view=graph-rest-1.0) do Outlook no Microsoft Graph v1.0.

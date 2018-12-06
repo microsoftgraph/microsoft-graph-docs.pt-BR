@@ -1,6 +1,6 @@
 ---
-title: Integre os alertas de API de segurança do Microsoft Graph SIEM do IBM QRadar usando o Monitor do Azure
-description: Os provedores de segurança do Microsoft Graph podem ser gerenciados por meio de um único ponto de extremidade do REST. Neste ponto de extremidade pode ser configurado para monitorar o Azure, que suporta conectores para vários produtos SIEM. As instruções nas etapas 1 e 2 deste artigo se referir a todos os conectores do Monitor do Azure que dão suporte ao consumo via hubs de evento. Este artigo descreve a integração de ponta a ponta do conector QRadar SIEM.
+title: Integração dos alertas da API de Segurança do Microsoft Graph com o IBM QRadar SIEM usando o Azure Monitor
+description: Os provedores de Segurança do Microsoft Graph podem ser gerenciados por meio de um único ponto de extremidade REST. Este ponto de extremidade pode ser configurado para o Azure Monitor, que dá suporte a conectores para vários produtos SIEM. As instruções nas etapas 1 e 2 deste artigo referem-se a todos os conectores do Azure Monitor compatíveis com o consumo por Hubs de Eventos. Este artigo descreve a integração de ponta a ponta do conector QRadar SIEM.
 ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,21 +8,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091609"
 ---
-# <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Integre os alertas de API de segurança do Microsoft Graph SIEM do IBM QRadar usando o Monitor do Azure
+# <a name="integrate-microsoft-graph-security-api-alerts-with-ibm-qradar-siem-using-azure-monitor"></a>Integração dos alertas da API de Segurança do Microsoft Graph com o IBM QRadar SIEM usando o Azure Monitor
 
-Os provedores de segurança do Microsoft Graph podem ser gerenciados por meio de um único ponto de extremidade do REST. Neste ponto de extremidade pode ser configurado para [Monitorar do Azure](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/), que oferece suporte a conectores para vários produtos SIEM. As instruções nas etapas 1 e 2 deste artigo se referir a todos os conectores do Monitor do Azure que dão suporte ao consumo via hubs de evento. Este artigo descreve a integração de ponta a ponta do conector [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM.
+Os provedores de Segurança do Microsoft Graph podem ser gerenciados por meio de um único ponto de extremidade REST. Este ponto de extremidade pode ser configurado para o [Azure Monitor](https://docs.microsoft.com/pt-BR/azure/monitoring-and-diagnostics/), que dá suporte a conectores para vários produtos SIEM. As instruções nas etapas 1 e 2 deste artigo referem-se a todos os conectores do Azure Monitor compatíveis com o consumo por Hubs de Eventos. Este artigo descreve a integração de ponta a ponta do conector [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM.
 
 O processo de integração envolve as seguintes etapas:
 
-1. [Configurar o hub de evento do Windows Azure para receber alertas de segurança para o seu locatário](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant).
-2. [Configurar o Azure Monitor para enviar alertas de segurança de seu locatário do hub do evento](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub).
-3. [Baixe e instale o QRadar para consumir os alertas de segurança](#step-3-download-and-install-the-qradar-to-consume-security-alerts).
+1. [Configure o Hub de Eventos do Azure para receber alertas de segurança para o locatário](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant).
+2. [Configurar o Azure Monitor para enviar alertas de segurança do locatário para o Hub de Eventos](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub).
+3. [Baixe e instale o QRadar para consumir alertas de segurança](#step-3-download-and-install-the-qradar-to-consume-security-alerts).
 
-Após concluir essas etapas, seu IBM QRadar consumirá alertas de segurança de todos os produtos de segurança para o qual seu locatário é licenciado integrado do Microsoft Graph. Todos os novos produtos de segurança que você licenciar também enviarão alertas por essa conexão, no mesmo esquema sem qualquer trabalho de integração adicional necessário.
+Após a conclusão dessas etapas, o IBM QRadar consumirá alertas de segurança de todos os produtos de segurança integrados ao Microsoft Graph para os quais seu locatário estiver licenciado. Todos os novos produtos de segurança que você licenciar também enviarão alertas por essa conexão, no mesmo esquema sem qualquer trabalho de integração adicional necessário.
 
-## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>Etapa 1: definir um namespace para o Hub de Eventos no Azure para receber alertas de segurança do locatário
+## <a name="step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant"></a>Etapa 1: definir um namespace para o Hubs de Eventos no Azure para receber alertas de segurança do locatário
 
-Para começar, você precisará criar um hub de namespace e eventos do [Microsoft Azure evento Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/) . Esse hub de eventos e namespace serão o destino de todos os alertas de segurança da organização. Um namespace do Hub de Eventos é um agrupamento lógico de hubs de eventos que compartilham a mesma política de acesso. Observe alguns detalhes importantes sobre o namespace e os hubs de eventos dos Hubs de Eventos criados por você:
+Para começar, você precisa criar um Hub de Eventos e um namespace dos [Hubs de Eventos do Microsoft Azure](https://docs.microsoft.com/pt-BR/azure/event-hubs/). Esse Hub de Eventos e namespace serão o destino de todos os alertas de segurança da organização. Um namespace do Hub de Eventos é um agrupamento lógico de hubs de eventos que compartilham a mesma política de acesso. Observe alguns detalhes importantes sobre o namespace e os hubs de eventos dos Hubs de Eventos criados por você:
 
 - É recomendável usar um namespace para os Hubs de Eventos Padrão, especialmente se você estiver enviando outros dados de monitoramento do Azure por esses mesmos hubs de eventos.
 - Normalmente, apenas uma unidade de taxa de transferência é necessária. Se uma ampliação é necessária à medida que a utilização aumenta, é possível aumentar manualmente a quantidade de unidades de taxa de transferência do namespace posteriormente ou habilitar a inflação automática.
@@ -31,7 +31,7 @@ Para começar, você precisará criar um hub de namespace e eventos do [Microsof
 - Recomendamos o uso do grupo de consumidores padrão para o hub de eventos. Não é necessário criar outros grupos de consumidores ou usar um grupo de consumidores separado, a menos que você pretenda que duas ferramentas diferentes consumam os mesmos dados do mesmo hub de eventos.
 - Normalmente, as portas 5671 e 5672 devem estar abertas no computador que consome os dados do hub de eventos.
 
-Veja também as [Perguntas frequentes do Hub de Eventos do Azure](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-faq).
+Confira também as [Perguntas frequentes do Hub de Eventos do Azure](https://docs.microsoft.com/pt-BR/azure/event-hubs/event-hubs-faq).
 
 1. Faça logon no [portal do Azure](https://portal.azure.com/) e escolha **Criar um recurso** na parte superior esquerda da tela.
 
@@ -47,14 +47,14 @@ Veja também as [Perguntas frequentes do Hub de Eventos do Azure](https://docs.m
 
 ## <a name="step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub"></a>Etapa 2: configurar o Azure Monitor para enviar alertas de segurança do locatário para o hub de eventos
 
-A habilitação do streaming dos alertas de segurança da organização pelo Azure Monitor é feita uma vez para todo o locatário do Azure Active Directory (Azure AD). Todas as API de segurança do Microsoft Graph licenciado e produtos habilitados começará a enviar alertas de segurança para monitorar o Azure, streaming de dados para consumir os aplicativos. Qualquer habilitados na API de segurança do Microsoft Graph produtos adicionais licenciado e implantado pela sua organização irá transmitir automaticamente os alertas de segurança por meio dessa mesma configuração Monitor do Azure. Nenhum trabalho adicional de integração é necessário por parte da organização.
+A habilitação do streaming dos alertas de segurança da organização pelo Azure Monitor é feita uma vez para todo o locatário do Azure Active Directory (Azure AD). Todos os produtos licenciados e habilitados para a API de Segurança do Microsoft Graph começarão a enviar alertas de segurança ao Azure Monitor, fazendo o streaming de dados para aplicativos de consumo. Todos os produtos adicionais habilitados para a API de Segurança do Microsoft Graph que a organização implantar e licenciar farão o streaming automático dos alertas de segurança pela mesma configuração do Azure Monitor. Nenhum trabalho adicional de integração é necessário por parte da organização.
 
 Os alertas de segurança são dados altamente privilegiados, normalmente visíveis apenas pelas equipes de resposta de segurança e administradores globais de uma organização. Por esse motivo, as etapas necessárias para configurar a integração dos alertas de segurança do locatário com os sistemas SIEM exigem uma conta de Administrador Global do Azure AD. Essa conta só é necessária uma única vez, durante a instalação, para solicitação do envio dos alertas de segurança da sua organização ao Azure Monitor.
 
-> **Observação:** Atualmente, o diagnóstico do Azure Monitor blade configurações não oferece suporte a configuração de recursos de nível de locatário. Alertas de API de segurança do Microsoft Graph são um recurso de nível de locatário, que requer usando a API de gerente de recursos do Windows Azure para configurar o Azure Monitor para suportar o consumo de alertas de segurança da sua organização.
+> **Observação:** neste momento, a folha de configurações do Azure Monitor Diagnostic não permite a configuração de recursos no nível do locatário. Os alertas da API de Segurança do Microsoft Graph são um recurso no nível do locatário, que requer o uso da API do Azure Resource Manager na configuração do Azure Monitor para dar suporte aos alertas de segurança da organização.
 
-1. Na sua assinatura do Windows Azure (pode ser encontrado em "Todos os serviços"), registre "microsoft.insights" (Azure Monitor) como um provedor de recursos.  
- > **Observação:** Não registre "Microsoft.SecurityGraph" (API de segurança do Microsoft Graph) como um provedor de recursos em sua assinatura do Windows Azure, como "Microsoft.SecurityGraph" é um recurso de nível de locatário, conforme explicado acima. Configuração de nível de locatário fará parte do nº 6 abaixo.
+1. Em sua assinatura do Azure (pode ser encontrada em "Todos os serviços"), registre o "microsoft.insights" (Azure Monitor) como provedor de recursos.  
+ > **Observação:** não registre o "Microsoft.SecurityGraph" (API de Segurança do Microsoft Graph) como um provedor de recursos em sua assinatura do Azure, pois conforme explicado acima, o "Microsoft.SecurityGraph" é um recurso de nível de locatário. Configuração de nível de locatário fará parte do nº 6 abaixo.
 
 2. Para configurar o Azure Monitor usando a API Azure Resource Manager, obtenha a ferramenta [ARMClient](https://github.com/projectkudu/ARMClient). Ela será usada para enviar chamadas da API REST para o portal do Azure de uma linha de comando.
 
@@ -84,12 +84,12 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
 
   * **SUBSCRIPTION_ID** é a ID de assinatura do Azure que hospeda o grupo de recursos e o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
   * **RESOURCE_GROUP** é o grupo de recursos que contém o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-  * **EVENT_HUB_NAMESPACE** é o namespace do hub de eventos para onde você enviará os alertas de segurança da organização.
-  * **"dias":** é o número de dias que deseja reter as mensagens no seu hub de evento.
+  * **EVENT_HUB_NAMESPACE** é o namespace do Hub de Eventos para o qual você enviará os alertas de segurança da organização.
+  * **"days":** é o número de dias pelos quais você deseja manter as mensagens no Hub de evEntos.
   
 &nbsp;
 
-4. Salve o arquivo como JSON no diretório onde você vai usar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
+4. Salve o arquivo como JSON no diretório onde você vai invocar o ARMClient.exe. Por exemplo, chame o arquivo de **AzMonConfig.json.**
 
 5. Execute o seguinte comando para entrar na ferramenta ARMClient. Você precisará usar credenciais da conta de Administrador Global.
 
@@ -109,12 +109,12 @@ Os alertas de segurança são dados altamente privilegiados, normalmente visíve
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
 
-8. Saia da ferramenta ARMClient. Você concluiu a configuração do Azure Monitor para o envio de alertas de segurança do locatário para hub de eventos.
+8. Saia da ferramenta ARMClient. Você concluiu a configuração do Azure Monitor para o envio de alertas de segurança do locatário para Hub de Eventos.
 
-## <a name="step-3-download-and-install-the-qradar-to-consume-security-alerts"></a>Etapa 3: Baixe e instale o QRadar para consumir os alertas de segurança
+## <a name="step-3-download-and-install-the-qradar-to-consume-security-alerts"></a>Etapa 3: baixar e instalar o QRadar para consumir alertas de segurança
 
-1. Baixe e instale o [IBM QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem). A **versão 7.2.8 com Patch 7 ou superior é necessária** para ler eventos de um Hub de evento do Microsoft Azure.
-2. Siga as etapas em [Configurando o Microsoft Azure evento Hubs para se comunicar com IBM QRadar](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/t_dsm_guide_microsoft_azure_enable_event_hubs.html) para configurar seu hub de evento.
-3. Finalmente, siga as etapas em [Configurando QRadar para coletar eventos do Microsoft Azure evento Hubs usando o protocolo do Microsoft Azure evento Hubs](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/t_logsource_microsoft_azure_event_hubs.html) para começar o meio da exibição de alertas de segurança.
+1. Baixe e instale o [IBM QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem). **A versão 7.2.8 com Patch 7 ou posterior é necessária** para ler eventos de um Hub de Eventos do Microsoft Azure.
+2. Siga as etapas em [Configurar Hubs de Eventos do Microsoft Azure para se comunicar com o IBM QRadar](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/t_dsm_guide_microsoft_azure_enable_event_hubs.html) para configurar o seu Hub de Eventos.
+3. Por fim, siga as etapas em [Configurar o QRadar para coletar eventos de Hubs de Eventos do Microsoft Azure usando o protocolo de Hubs de Eventos do Microsoft Azure](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/t_logsource_microsoft_azure_event_hubs.html) para começar a revelar alertas de segurança.
   
- > **Observação:** Integração do Microsoft Azure com IBM QRadar suporta os eventos listados na [Microsoft Azure DSM especificações](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_microsoft_azure_DSM_specs.html). Estamos atualmente trabalhando com IBM QRadar para adicionar suporte completo para alertas de API de segurança do Microsoft Graph. Atualmente, você será capaz de receber os alertas de API do Microsoft Security gráfico e exibi-los no seu console IBM QRadar. Você pode usar o [editor de DSM](https://www.ibm.com/support/knowledgecenter/SS42VS_7.2.8/com.ibm.qradar.doc/c_qradar_adm_dsm_ed_overview.html) para habilitar os alertas de API do Microsoft Security gráfico de análise.  
+ > **Observação:** a integração do Microsoft Azure com o IBM QRadar dá aos eventos listados em [especificações de DSM do Microsoft Azure](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_microsoft_azure_DSM_specs.html). Estamos trabalhando atualmente com o IBM QRadar para adicionar suporte completo a alertas de API de Segurança do Microsoft Graph. No momento, você pode receber os alertas de segurança da API de Segurança do Microsoft Graph e exibi-los no console do IBM QRadar. Você pode usar o [editor DSM](https://www.ibm.com/support/knowledgecenter/SS42VS_7.2.8/com.ibm.qradar.doc/c_qradar_adm_dsm_ed_overview.html) para habilitar a análise de alertas da API de Segurança do Microsoft Graph.  

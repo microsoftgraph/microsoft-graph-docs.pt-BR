@@ -1,6 +1,6 @@
 ---
 title: Visão geral do Microsoft Graph
-description: " Segurança e Windows 10. "
+description: " Segurança e o Windows 10. "
 ms.openlocfilehash: 7d8ed0d16ed24e20d1b48a1e44f573dce24d838f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -15,7 +15,7 @@ O Microsoft Graph é o gateway para dados e inteligência no Microsoft 365. O Mi
 Você pode usar a API do Microsoft Graph para criar aplicativos para organizações e clientes que interagem com os dados de milhões de usuários. Com o Microsoft Graph, você pode se conectar a uma ampla variedade de recursos, relações e inteligência, tudo por um único ponto de extremidade: `https://graph.microsoft.com`.
 
 ## <a name="whats-in-the-graph"></a>O que há no gráfico?
-O Microsoft Graph expõe APIs REST e bibliotecas de cliente para acessar dados nos tópicos a seguir:
+O Microsoft Graph expõe as APIs REST e bibliotecas do cliente para acessar dados no seguinte:
 
 - Azure Active Directory
 - Serviços do Office 365: SharePoint, OneDrive, Outlook/Exchange, Microsoft Teams, OneNote, Planner e Excel
@@ -66,33 +66,33 @@ Veja alguns desses cenários mais comuns para trabalhar com a API do Microsoft G
 |   OBTER grupos em minha organização | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   GET as pessoas relacionadas a mim    | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
 |   Itens GET mais populares à minha volta |  [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
-|   GET minhas anotações |  [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
+|   GET my notes |  [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
 ## <a name="access-microsoft-graph-at-scale"></a>Acessar o Microsoft Graph em escala
 
 
-Conexão de dados do Microsoft Graph permite em massa - em vez do tradicional transacional - acesso aos dados do Office 365. Com a Office 365 dados em massa, você pode usar ferramentas do Windows Azure para criar aplicativos de inteligentes que:
+O Microsoft Graph Data Connect habilita acesso em massa (em vez do tradicional acesso transacional) aos dados do Office 365. Com os dados em massa do Office 365, você pode usar as ferramentas do Azure para criar aplicativos inteligentes que:
 
-- Encontre o mais próximo especialista em um tópico a você em sua organização 
-- Automatize a criação da base de Conhecimento
-- Analisar as solicitações de reunião para fornecer a ideias para utilização de sala de conferência
-- Detectar fraude com dados de produtividade e comunicação
+- Encontram para você o especialista em um determinado tópico mais próximo em sua organização 
+- Automatizam a criação de base de dados de conhecimento
+- Analisam solicitações de reunião para fornecer insights sobre o uso de sala de conferência
+- Detectam fraudes envolvendo dados de comunicação e de produtividade
 
-## <a name="when-should-i-use-microsoft-graph-data-connect"></a>Quando usar uma conexão de dados do Microsoft Graph?
+## <a name="when-should-i-use-microsoft-graph-data-connect"></a>Por que devo usar o Microsoft Graph Data Connect?
 
-Conexão de dados do Microsoft Graph fornece uma nova maneira de interagir com os dados que estão disponíveis por meio de APIs do Microsoft Graph. Além de fornecer escalonável acesso aos dados do Office 365, a conexão de dados do Microsoft Graph também fornece um conjunto exclusivo de recursos que simplificar o desenvolvimento de aplicativos inteligentes, dentro de nuvem da Microsoft.
+O Microsoft Graph Data Connect fornece uma nova maneira de interagir com os dados que estão disponíveis por meio de APIs do Microsoft Graph. Além de fornecer acesso escalonável aos dados do Office 365, o Microsoft Graph Data Connect também fornece um conjunto exclusivo de recursos que facilitam o desenvolvimento de aplicativos inteligentes, tudo isso na nuvem da Microsoft.
 
-|**Recurso**| **API do Microsoft Graph** | **Conexão de dados do Microsoft Graph** |
+|**Recurso**| **API do Microsoft Graph** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
-| **Escopo de acesso** | Usuário único ou Locatário inteiro | Muitos usuários ou grupos |
-| **Padrão de acesso** | Tempo real | Agendamento recorrente |
-| **Operações de dados** | Opera no mestre de dados | Opera em um cache dos dados |
-| **Proteção de dados** | Os dados são protegidos enquanto estiver no Microsoft 365 | Proteção de dados é estendida até o cache de dados em sua assinatura do Windows Azure |
+| **Escopo de acesso** | Usuário único ou locatário inteiro | Muitos usuários ou grupos |
+| **Padrão de acesso** | Tempo real | Cronograma recorrente |
+| **Operações de dados** | Funciona em mestre de dados | Funciona em um cache dos dados |
+| **Proteção de dados** | Os dados são protegidos enquanto estão no Microsoft 365 | A proteção de dados é estendida ao cache dos dados em sua assinatura do Azure |
 | **Consentimento do usuário** | Self<br>Tipos de recursos | Nenhum |
-| **Consentimento de Admin** | Toda a organização<br>Tipos de recursos | Selecione os grupos de usuários<br>Propriedades e tipos de recursos<br>Exclui os usuários |
-| **Ferramentas de acesso** | Consultas por REST web | Alocador de dados do Azure |
+| **Consentimento do administrador** | Toda a organização<br>Tipos de recursos | Selecione grupos de usuários<br>Propriedades e tipos de recursos<br>Exclui usuários |
+| **Ferramentas de acesso** | Consultas da Web RESTful | Azure Data Factory |
 
-Para obter mais informações sobre a conexão de dados do Microsoft Graph, consulte a [Conexão de dados do Microsoft Graph](data-connect-overview.md). Para começar, consulte [Visão geral do Microsoft Graph dados conectar](data-connect-concept-overview.md). 
+Para obter mais informações sobre o Microsoft Graph Data Connect, veja [Microsoft Graph Data Connect](data-connect-overview.md). Para começar, veja [Visão geral do Microsoft Graph Data Connect](data-connect-concept-overview.md). 
 
 ## <a name="next-steps"></a>Próximas etapas
 

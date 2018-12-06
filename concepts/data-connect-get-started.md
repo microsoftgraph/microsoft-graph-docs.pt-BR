@@ -1,6 +1,6 @@
 ---
-title: Introdução ao Microsoft Graph dados conectar (preview)
-description: 'Antes de poder usar a conexão de dados do Microsoft Graph, um administrador do Office 365 deve levar duas ações, ambos habilitam a capacidade para o administrador para movimentação de dados de controle por meio de gerenciamento de acesso privilegiado (PAM). '
+title: Introdução ao Microsoft Graph Data Connect (versão prévia)
+description: 'Antes de poder usar o Microsoft Graph Data Connect, um administrador do Office 365 deve realizar duas ações que habilitam a capacidade do administrador de controlar a movimentação de dados de controle por meio de PAM (Privileged Access Management). '
 ms.openlocfilehash: eb21f0d850f64694514c0ecd82f03de687606a56
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,15 +8,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091565"
 ---
-# <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Introdução ao Microsoft Graph dados conectar (preview)
+# <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Introdução ao Microsoft Graph Data Connect (versão prévia)
 
-Antes de poder usar a conexão de dados do Microsoft Graph, um administrador do Office 365 deve levar duas ações, ambos habilitam a capacidade para o administrador para movimentação de dados de controle por meio de gerenciamento de acesso privilegiado (PAM). 
+Antes de poder usar o Microsoft Graph Data Connect, um administrador do Office 365 deve realizar duas ações que habilitam a capacidade do administrador de controlar a movimentação de dados de controle por meio de PAM (Privileged Access Management). 
 
-1. Conceder consentimento optarem dados se conectar por meio de Portal de administração do Microsoft 365, na página **serviços e suplementos** do Microsoft Graph. Isso permitirá que as solicitações de movimentação de dados para o Microsoft Azure (isto é, mantenha o controle total sobre os dados, mas permitir recursos Azure para acessá-lo). Nenhum dado será transferido, a menos que a aprovação de um pipeline específico é fornecida posteriormente.
-2. Defina um grupo de aprovador dentro de assinatura do Office 365. Certifique-se de que o grupo de aprovador não está vazio. Somente os usuários no grupo podem aprovar solicitações de movimentação de dados.
+1. Dê consentimento à aceitação do Microsoft Graph Data Connect por meio do Portal de Administração do Microsoft 365, na página **Serviços e suplementos**. Isso permitirá solicitações de movimentação de dados no Microsoft Azure (ou seja, manter o controle total sobre os dados, mas permitir que os recursos do Azure os acessem). Nenhum dado é transferido, a menos que aprovação de um pipeline específico seja fornecida mais tarde.
+2. Configure um grupo aprovador dentro da assinatura do Office 365. Verifique se o grupo aprovador não está vazio. Somente os usuários no grupo podem aprovar solicitações de movimentação de dados.
 
-Para obter instruções detalhadas passo a passo, consulte o [módulo de treinamento de conexão de dados do Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md).
+Para obter instruções passo a passo, veja o [módulo de treinamento do Microsoft Graph Data Connect](https://github.com/microsoftgraph/msgraph-training-dataconnect/blob/master/Lab.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Parabéns! Agora você está pronto para começar a criar aplicativos inteligentes com ferramentas do Windows Azure. Para obter um exemplo de aplicativo e documentação adicional, consulte os [dados do Microsoft Graph conectar GitHub repo](https://github.com/OfficeDev/MS-Graph-Data-Connect/wiki). 
+Parabéns! Agora você está pronto para começar a criar aplicativos inteligentes com as ferramentas do Azure. Para documentação adicional e um aplicativo de exemplo, veja o [repositório do GitHub do Microsoft Graph Data Connect](https://github.com/OfficeDev/MS-Graph-Data-Connect/wiki). 

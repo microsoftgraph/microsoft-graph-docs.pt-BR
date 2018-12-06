@@ -1,6 +1,6 @@
 ---
-title: Obter imutáveis identificadores de recursos do Outlook
-description: 'Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente tiver um nunca percebeu ou causou aborrecimento significativo: altere seus IDs. Isso não acontece com frequência, apenas se o item é movido, mas ele pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. Identificadores imutáveis permite que o seu aplicativo obter uma ID que não é alterado para o tempo de vida do item.'
+title: Obter identificadores imutáveis para recursos do Outlook
+description: 'Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente nunca percebeu ou que lhe causou frustração significativa: suas IDs se alteram. Isso não acontece com frequência, somente se o item é movido, mas pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. Identificadores imutáveis permitem que o aplicativo obtenha uma ID que não é alterada durante o tempo de vida do item.'
 ms.openlocfilehash: a7b188c968ad6e0bf93f92ec99cb473075f29a4d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
 ms.translationtype: MT
@@ -8,59 +8,59 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091698"
 ---
-# <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter imutáveis identificadores de recursos do Outlook
+# <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
 
-Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente tiver um nunca percebeu ou causou aborrecimento significativo: altere seus IDs. Isso não acontece com frequência, apenas se o item é movido, mas ele pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. Identificadores imutáveis permite que o seu aplicativo obter uma ID que não é alterado para o tempo de vida do item.
+Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente nunca percebeu ou que lhe causou frustração significativa: suas IDs se alteram. Isso não acontece com frequência, somente se o item é movido, mas pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. Identificadores imutáveis permitem que o aplicativo obtenha uma ID que não é alterada durante o tempo de vida do item.
 
-> **Importante:** Identificadores imutáveis são apenas disponível na versão /beta no Microsoft Graph.
+> **Importante:** identificadores imutáveis estão disponíveis apenas na versão /beta no Microsoft Graph.
 
 ## <a name="how-it-works"></a>Como funciona
 
-ID imutável é um recurso opcional do Microsoft Graph. Para aceitar, seu aplicativo precisa para enviar um cabeçalho HTTP adicional em suas solicitações da API:
+A ID imutável é um recurso opcional do Microsoft Graph. Para aceitar, seu aplicativo deve enviar um cabeçalho HTTP adicional em suas solicitações de API:
 
 ```http
 Prefer: IdType="ImmutableId"
 ```
 
-Este cabeçalho se aplica somente a solicitação é incluído com. Se você quiser usar sempre imutáveis IDs, você deve incluir esse cabeçalho com cada solicitação de API.
+Esse cabeçalho só se aplica à solicitação com a qual ele está incluído. Se quiser usar IDs imutáveis, você deverá incluir esse cabeçalho com todas as solicitações de API.
 
-## <a name="lifetime-of-immutable-ids"></a>Tempo de vida de IDs imutáveis
+## <a name="lifetime-of-immutable-ids"></a>Tempo de vida das IDs imutáveis
 
-ID de um item imutáveis não será alterado desde que o item permanece na mesma caixa de correio. Isso significa que imutável ID não será alterada se o item é movido para uma pasta diferente na caixa de correio. No entanto, a ID imutável mudarão se:
+A ID imutável de um item não se alterará, desde que o item permaneça na mesma caixa de correio. Isso significa que a ID imutável NÃO será alterada se o item for movido para uma pasta diferente na caixa de correio. No entanto, a ID imutável será alterada se:
 
-- O usuário move o item para uma caixa de correio de arquivo morto
-- O usuário exporta o item (para um PST, como um arquivo MSG, etc.) e importa-lo novamente em suas caixas de correio
+- O usuário mover o item para uma caixa de correio de arquivo morto
+- O usuário exportar o item (para um PST, como um arquivo MSG, etc.) e importá-lo novamente na sua caixa de correio
 
-## <a name="items-that-support-immutable-id"></a>Itens que oferecem suporte a ID imutável
+## <a name="items-that-support-immutable-id"></a>Itens que dão suporte a IDs imutáveis
 
-Os seguintes itens imutáveis IDs de suporte:
+Os seguintes itens dão suporte a IDs imutáveis:
 
 - [tipo de recurso de mensagem](/graph/api/resources/message?view=graph-rest-beta)
-- [tipo de recurso attachment](/graph/api/resources/attachment?view=graph-rest-beta)
+- [tipo de recurso de anexo](/graph/api/resources/attachment?view=graph-rest-beta)
 - [tipo de recurso de evento](/graph/api/resources/event?view=graph-rest-beta)
-- [Tipo de recurso eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta)
-- [tipo de recurso contact](/graph/api/resources/contact?view=graph-rest-beta)
-- [tipo de recurso de outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta)
+- [tipo de recurso eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta)
+- [tipo de recurso de contato](/graph/api/resources/contact?view=graph-rest-beta)
+- [tipo de recurso outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta)
 
-Tipos de contêiner (mailFolder, calendário, etc.) não suportam imutável ID, mas seus IDs regulares já foram constantes.
+Tipos de contêiner (mailFolder, calendário, etc.) não dão suporte a IDs imutáveis, mas suas IDs normais já eram constantes.
 
 ## <a name="immutable-id-with-change-notifications"></a>ID imutável com notificações de alteração
 
-Você pode solicitar que o Microsoft Graph enviar notificações de alteração de IDs imutáveis no, incluindo o `Prefer: IdType="ImmutableId"` cabeçalho quando [Criando uma assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-beta). Inscrições existentes criadas sem o cabeçalho continuará usam o formato de ID de padrão. Para alternar inscrições existentes para usar IDs imutáveis, você deve excluir e recriá-los usando o cabeçalho.
+Você pode solicitar que o Microsoft Graph envie IDs imutáveis em notificações de alteração, incluindo o cabeçalho `Prefer: IdType="ImmutableId"` ao [criar uma assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-beta). Assinaturas existentes criadas sem cabeçalho continuarão a usar o formato padrão de ID. Para fazer com que as assinaturas existentes passem a usar IDs imutáveis, você precisa excluí-las e recriá-las usando o cabeçalho.
 
-## <a name="immutable-id-with-delta-query"></a>ID imutável com consulta delta
+## <a name="immutable-id-with-delta-query"></a>ID imutável com a consulta delta
 
-Você pode solicitar que o Microsoft Graph retornar IDs imutáveis nas [respostas de consulta delta](delta-query-overview.md) para tipos de recursos com suporte, incluindo o `Prefer: IdType="ImmutableId"` cabeçalho. O `nextLink` e `deltaLink` valores retornados por consultas delta são compatíveis com ambos os formatos de ID, seu aplicativo precisa sincronizar novamente para se beneficiar dos ID imutável. Você pode usar o cabeçalho para obter as IDs imutáveis no futuro, e você pode [atualizar o armazenamento do seu aplicativo](#updating-existing-data) separadamente.
+Ao incluir o cabeçalho `Prefer: IdType="ImmutableId"`, você pode solicitar que o Microsoft Graph retorne IDs imutáveis em [respostas de consulta delta](delta-query-overview.md) para tipos de recursos compatíveis. Os valores `nextLink` e `deltaLink` retornados por consultas delta são compatíveis com os dois formatos de ID, então o aplicativo não precisa sincronizar novamente para poder aproveitar o recurso de ID imutável. Você pode usar o cabeçalho para obter as IDs imutáveis de agora em diante e pode [atualizar o armazenamento do aplicativo](#updating-existing-data) separadamente.
 
-## <a name="updating-existing-data"></a>Atualizando dados existentes
+## <a name="updating-existing-data"></a>Atualização de dados existentes
 
-Se você já tem um banco de dados preenchido com milhares de IDs regulares, você pode migrar os IDs de formato imutável usando a função [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta) . Você pode fornecer uma matriz de até 1000 IDs ser traduzidos em um formato de destino.
+Se você já tem um banco de dados preenchido com milhares de IDs normais, pode migrar essas IDs para o formato imutável usando a função [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta). Você pode fornecer uma matriz de até 1.000 IDs para serem convertidas em um formato de destino.
 
-> **Observação:** Você também pode usar `translateExchangeIds` migrar os aplicativos de serviços Web do Exchange para o Microsoft Graph.
+> **Observação:** você também pode usar `translateExchangeIds` para migrar aplicativos dos Serviços Web do Exchange para o Microsoft Graph.
 
 ### <a name="example"></a>Exemplo
 
-O exemplo a seguir converte uma ID de gráfico normal para uma ID de gráfico imutável.
+O exemplo a seguir converte uma ID normal do Graph em uma ID imutável do Graph.
 
 #### <a name="request"></a>Solicitação
 
