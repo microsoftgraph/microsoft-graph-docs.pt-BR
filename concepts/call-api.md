@@ -3,7 +3,7 @@ title: Chamando a API do Microsoft Graph
 description: 'Para acessar e manipular um recurso do Microsoft Graph, você chama e especifica as URLs de recurso usando uma das operações a seguir:   '
 ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091622"

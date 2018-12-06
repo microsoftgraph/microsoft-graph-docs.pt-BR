@@ -3,7 +3,7 @@ title: Conexão de dados do Microsoft Graph (visualização)
 description: 'A conexão de dados do Microsoft Graph traz dados do Office 365 e recursos do Microsoft Azure para você através de um pipeline de dados principal. Você pode usar a conexão de dados do Microsoft Graph para criar aplicativos inteligentes que acessam dados valiosos usando as melhores ferramentas de desenvolvimento oferecidas pela Microsoft, tudo isso dentro da nuvem segura da Microsoft. Todas as empresas estão interessadas em melhorar a produtividade, o que significa que a criação de produtos que tornam os trabalhadores do conhecimento mais produtivos apresenta grandes oportunidades. '
 ms.openlocfilehash: ebd64bf994564decadd44f29c73c0117a99ce176
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091713"

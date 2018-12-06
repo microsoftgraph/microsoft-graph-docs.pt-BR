@@ -3,7 +3,7 @@ title: Associar sua conta do Office 365 ao Azure AD para criar e gerenciar aplic
 description: 'Para autenticar seus aplicativos usando o Microsoft Azure Active Directory (Azure AD), você precisa registrá-los no Azure AD. É lá que as informações da conta de usuário do Office 365 e do aplicativo estão armazenadas. Para gerenciar o Azure AD no Portal do Azure, você precisará de uma assinatura do Microsoft Azure. Use o portal no Microsoft Azure para gerenciar usuários, funções e aplicativos. '
 ms.openlocfilehash: 1a0935a88d985d8be72197c2652586bbbc19bd1d
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091627"

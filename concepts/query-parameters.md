@@ -3,7 +3,7 @@ title: Usar parâmetros de consulta para personalizar respostas
 description: O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Há suporte para os parâmetros de consulta a seguir.
 ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
 ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/30/2018
 ms.locfileid: "27091735"
@@ -233,7 +233,7 @@ Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe
 - [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 - 
-  [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/pt-BR/library/dn774955(v=exchg.160).aspx)
+  [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Usando $search em conjuntos de pessoas
 

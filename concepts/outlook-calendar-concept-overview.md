@@ -3,7 +3,7 @@ title: Visão geral da API do calendário do Outlook
 description: O calendário do Outlook faz parte do hub de mensagens do Outlook no Office 365, que também permite o gerenciamento de emails e contatos e a localização de informações sobre usuários em uma organização.
 ms.openlocfilehash: fe62ca40af348cdfaf559ea3e137733a4d25d8e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091619"

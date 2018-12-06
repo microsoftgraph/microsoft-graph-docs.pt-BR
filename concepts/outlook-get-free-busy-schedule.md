@@ -3,7 +3,7 @@ title: Obtenha a agenda de horários livres/ocupados de usuários e recursos (vi
 description: Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 ms.openlocfilehash: 8a2dd9318bdd806c99d525ee41f46d78d1963b47
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091692"

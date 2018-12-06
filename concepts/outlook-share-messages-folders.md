@@ -3,7 +3,7 @@ title: Obter mensagens do Outlook em uma pasta compartilhada ou delegada
 description: 'Esses tópicos também têm eventos similares de lista de seções: obter evento, obter calendário, listar contatos, obter contato, obter a pasta de contatos.'
 ms.openlocfilehash: d9e04527879cb32f14dc8d74a814a54150c5b2d0
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091638"

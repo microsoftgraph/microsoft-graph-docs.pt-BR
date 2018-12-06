@@ -3,7 +3,7 @@ title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: "  "
 ms.openlocfilehash: a4641b4e4de5adcb3ce6b935aaabe504d76e6676
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091571"

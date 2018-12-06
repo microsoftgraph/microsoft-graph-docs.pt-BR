@@ -3,7 +3,7 @@ title: Adicionar dados personalizados aos usuários usando extensões abertas
 description: 'Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*. '
 ms.openlocfilehash: b2ff767e9eb0762ec3600166328d2bb0c5218936
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091723"

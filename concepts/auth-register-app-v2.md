@@ -3,7 +3,7 @@ title: Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
 description: 'Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabelece uma identificação exclusiva do aplicativo e outros valores que o aplicativo usa para autenticar com o Azure AD e obter tokens. Para o ponto de extremidade Azure AD v2.0, você registra o aplicativo no Portal de Registro de Aplicativos da Microsoft. Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar seu aplicativo. Dependendo do tipo de aplicativo que estiver desenvolvendo, você precisará copiar uma ou mais propriedades durante o registro para usar ao configurar autenticação e a autorização para seu aplicativo. '
 ms.openlocfilehash: 552ae1c98a401589345f3dc78fbe40dc7cd70ca9
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091575"

@@ -3,7 +3,7 @@ title: 'Controle de versão, suporte e mudanças significativas de políticas pa
 description: Este artigo descreve o suporte e as alterações significativas de políticas do Microsoft Graph e as versões da API Microsoft Graph disponível no momento.
 ms.openlocfilehash: 2a2c7f338e4bc26dc61d9cf88855b9760ff22d6f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091719"

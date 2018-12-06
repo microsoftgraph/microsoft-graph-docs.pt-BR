@@ -3,7 +3,7 @@ title: 'Adicionar dados personalizados a grupos usando as extensões do esquema 
 description: 'Por meio de um exemplo, vamos demonstrar como usar as *extensões de esquema*. '
 ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091613"

@@ -3,7 +3,7 @@ title: Criar elementos posicionados absolutos nas páginas do OneNote
 description: O corpo de uma página do OneNote pode conter vários elementos filhos diretos `div`, `img` e `object` que podem ser posicionados de forma independente na página.
 ms.openlocfilehash: 8478f5ae0da4d8c4617573fb99f91646a67d9356
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091583"

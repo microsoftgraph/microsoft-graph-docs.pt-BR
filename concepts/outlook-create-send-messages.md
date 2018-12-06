@@ -3,7 +3,7 @@ title: Criar e enviar mensagens do Outlook
 description: Emails são representados pelo recurso de mensagem no Microsoft Graph.
 ms.openlocfilehash: 49670df0d5d735e412a0fd97e3404fab044f6f50
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091658"

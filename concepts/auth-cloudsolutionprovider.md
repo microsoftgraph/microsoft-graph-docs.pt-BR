@@ -3,7 +3,7 @@ title: Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 description: Este tópico descreve como habilitar o acesso do aplicativo aos dados do cliente gerenciados por parceiros através do Microsoft Graph usando o fluxo de concessão do código de autorização ou o fluxo de credenciais do cliente de serviços.
 ms.openlocfilehash: a14c610090a1232c72ec2fde4469dd1cd1d6f694
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091634"

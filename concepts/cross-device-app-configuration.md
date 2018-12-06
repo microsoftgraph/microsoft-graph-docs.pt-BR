@@ -3,7 +3,7 @@ title: 'Criar aplicativos para diversos dispositivos com a tecnologia do Project
 description: 'Você pode usar o Project Rome para criar experiências que abrangem vários dispositivos e plataformas sem complicações, reduzindo conflitos para usuários e ajudando a promover o engajamento com o aplicativo. Para que aplicativos compartilhem dados entre vários dispositivos e plataformas usando as APIs do Project Rome, é necessário configurar um aplicativo para diversos dispositivos que inclua informações sobre os aplicativos específicos de plataforma. '
 ms.openlocfilehash: b555356fd523605837cd339630f64757fa8106bf
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091663"
@@ -68,8 +68,8 @@ Você precisará coletar cada uma das IDs de aplicativo específicas da platafor
 
 Para encontrar as IDs:
 
-* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** – para saber mais, veja [Alterar o nome do pacote](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** – para saber mais, veja [Pacote](https://developer.apple.com/documentation/foundation/bundle) e [Propriedades obrigatórias, localizáveis e editáveis](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   
@@ -94,7 +94,7 @@ Se você tiver optado por configurar o aplicativo entre dispositivos no Centro d
 Para encontrar as IDs:
 
 * 
-  **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/pt-BR/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
+  **Serviço de Notificação do Windows** – veja [Registrar seu aplicativo e receber as credenciais para o serviço de nuvem](https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) e o [Portal de registro do aplicativo](https://apps.dev.microsoft.com).
 * **Apple Push Notification Service** – confira [Visão geral de APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** – veja [Mensagens em nuvem Firebase](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -141,8 +141,8 @@ O exemplo a seguir inclui todos os identificadores de plataforma válidos aceito
 
 Para encontrar as IDs:
 
-* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/pt-BR/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** – forneça uma AUMID para cada aplicativo UWP. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)) e [Aplicativo](https://docs.microsoft.com/pt-BR/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** – forneça um AUMID para cada aplicativo. Nos aplicativos win32, você precisará usar um script para recuperar essas informações. Para saber mais, veja [Encontrar a ID de modelo de usuário do aplicativo de um aplicativo instalado (Industry 8.1)](https://docs.microsoft.com/en-us/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** – para saber mais, veja [Alterar o nome do pacote](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** – para saber mais, veja [Pacote](https://developer.apple.com/documentation/foundation/bundle) e [Propriedades obrigatórias, localizáveis e editáveis](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** – entre no [portal de registro do Aplicativo](https://apps.dev.microsoft.com). Você pode exibir a ID de aplicativo/ID de cliente para qualquer um de seus aplicativos. O Live SDK (valores hexadecimais) e os Identificadores de aplicativos convergentes (GUIDs) têm suporte.   

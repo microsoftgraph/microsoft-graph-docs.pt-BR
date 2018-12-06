@@ -3,7 +3,7 @@ title: Usar funções de pasta de trabalho do Excel com o Microsoft Graph
 description: 'Você pode usar qualquer função de pasta de trabalho com a seguinte sintaxe: `POST /workbook/functions/{function-name}`. Forneça o(s) argumento(s) de função no corpo usando um objeto JSON. O `value` resultante da função e quaisquer cadeias de caracteres `error` são retornados no objeto de resultado da função. O valor `error` de `null` indica a execução bem-sucedida da função.'
 ms.openlocfilehash: 36b07277123ccb04de5607a513cee6f576be5550
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091724"

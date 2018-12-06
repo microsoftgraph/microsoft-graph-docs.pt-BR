@@ -3,7 +3,7 @@ title: 'Usar marcas DIV da API do OneNote para extrair dados de capturas '
 description: " Blocos de anotações empresariais no Office 365"
 ms.openlocfilehash: 201c20261d47e66df877e0138670b96ee377b7cb
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091625"

@@ -3,7 +3,7 @@ title: Combinar várias solicitações em uma chamada HTTP usando processamento 
 description: 'Os lotes JSON permitem otimizar seu aplicativo combinando várias solicitações em um único objeto JSON. Por exemplo, um cliente talvez queira criar um modo de exibição de dados não relacionados, como:'
 ms.openlocfilehash: 875f5f8758d37e84498446876eb863f474e00f21
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091548"
