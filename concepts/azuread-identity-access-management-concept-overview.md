@@ -3,7 +3,7 @@ title: Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 description: 'O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.  '
 ms.openlocfilehash: f933e47f890f228865968d47040fdb1316607692
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156044"
@@ -40,7 +40,7 @@ Você pode atribuir usuários a [funções de diretório](/graph/api/resources/d
 
 ### <a name="manage-devices"></a>Gerenciar dispositivos
 
-[Gerencie os dispositivos](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
+[Gerencie os dispositivos](https://docs.microsoft.com/pt-BR/azure/active-directory/device-management-introduction) registrados na organização. Os dispositivos são registrados a usuários e incluem itens como laptops, computadores desktop e celulares. Os dispositivos são em geral criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Microsoft Intune. Eles são utilizados por políticas de acesso condicional para a autenticação multifator.
 
 ### <a name="partner-tenant-management"></a>Gerenciamento de locatário do parceiro
 
@@ -56,33 +56,33 @@ As APIs do Azure AD para o gerenciamento de locatários permitem:
 - Obter informações sobre [SKUs do serviço](/graph/api/resources/subscribedsku?view=graph-rest-1.0) nos quais a empresa está inscrita.
 - [Convidar usuários externos](/graph/api/resources/invitation?view=graph-rest-1.0) (convidados) para uma organização.
 
-### <a name="monitor-identity-risks-preview"></a>Monitorar os riscos de identidade (preview)
+### <a name="monitor-identity-risks-preview"></a>Monitorar os riscos de identidade (prévia)
 
 A maioria das violações de segurança resulta de invasores que roubam a identidade do usuário. Os invasores tem sido muito eficientes em aproveitar de violações de terceiros, ataques de pulverização de senhas e ataques de phishing sofisticados. Isso significa que você precisa proteger todas as suas contas de usuário desses ataques e proativamente evitar identidades comprometidas de serem violadas.
 
-O Azure AD usa algoritmos de aprendizado de máquina adaptativos e heurística para detectar anomalias que indicam potencialmente contas comprometidas. Usando esses dados, a proteção de identidade do Windows Azure AD protege os usuários com as políticas de acesso condicional baseado em risco e gera relatórios e alertas sobre suas detecções.
+O Azure AD usa algoritmos de aprendizado de máquina adaptativos e heurística para detectar anomalias que indicam potencialmente contas comprometidas. Com esses dados, o Azure Active Directory Identity Protection protege os usuários com políticas de acesso condicional baseadas em risco e gera relatórios e alertas com base em suas detecções.
 
-Atualmente, o Microsoft Graph oferece acesso fácil aos clientes do Windows Azure AD Premium P2 aos [eventos de risco de consulta detectados pelo proteção de identidade](/graph/api/resources/identityprotection-root?view=graph-rest-beta), incluindo o evento de risco tipo, gravidade, data, hora, local, usuário afetado e muito mais. Os clientes, em seguida, podem usar esses eventos nos sistemas SIEM e aplicativos de segurança.
+Hoje, o Microsoft Graph oferece acesso fácil aos clientes do Azure AD Premium P2 para [consultar eventos de risco detectados pelo Identity Protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta), incluindo o tipo do evento de risco, a gravidade, a data, a hora, o local, o usuário afetado e mais. Os clientes podem então usar esses eventos em sistemas SIEM e aplicativos de segurança.
 
 ### <a name="activate-users-into-privileged-roles-preview"></a>Ativar usuários em funções privilegiadas (prévia)
 
 Você pode garantir o acesso a recursos ativando privilégios administrativos sob demanda. O [Gerenciamento de Identidade Privilegiada](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) é oferecido no Azure AD Premium P2.
 
-### <a name="manage-user-access-reviews-preview"></a>Gerenciar análises de acesso de usuários (preview)
+### <a name="manage-user-access-reviews-preview"></a>Gerenciar as revisões de acesso do usuário (prévia)
 
-Você pode configurar o acesso de avaliações de associações de grupo e o acesso ao aplicativo. [Access analisa](/graph/api/resources/accessreviews-root?view=graph-rest-beta) em destaque no Windows Azure AD Premium P2.
+Você pode configurar revisões de acesso de associações a grupos e acesso a aplicativos. As [Revisões de Acesso](/graph/api/resources/accessreviews-root?view=graph-rest-beta) são apresentadas no Azure AD Premium P2.
 
 ## <a name="api-reference"></a>Referência da API
 
-Procurando a referência de API para esse serviço?
+Está procurando a referência de API para esse serviço?
 
-- [Azure AD acesso e identidade API de gerenciamento na versão 1.0 do Microsoft Graph](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
-- [Azure AD acesso e identidade API de gerenciamento na versão beta do Microsoft Graph](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
+- [API de gerenciamento de acesso e identidade do Azure AD no Microsoft Graph v1.0](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0)
+- [API de gerenciamento de acesso e identidade do Azure AD no Microsoft Graph beta](/graph/api/resources/azure-ad-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba como [Usar as APIs REST do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
 - Use o Azure AD para se [autenticar](auth-overview.md) no Microsoft Graph.
-- Integre o [logon do Azure AD](https://azure.microsoft.com/en-us/develop/identity/signin/) ao seu aplicativo ou website.
+- Integre o [logon do Azure AD](https://azure.microsoft.com/pt-BR/develop/identity/signin/) ao seu aplicativo ou website.
 - Confira o [Changelog](changelog.md) para obter informações sobre novidades nas APIs do Azure AD.
 - Explore [exemplos](https://developer.microsoft.com/graph/graph/examples) para obter mais ideias sobre como usar o Microsoft Graph.
