@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de logon
 description: 'Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. '
-ms.openlocfilehash: 2bc6c8b961f0626a6409d9be868235f285f48e52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040004"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184536"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de logon
 Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. 
@@ -23,7 +23,6 @@ Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em
 |:---------------|:--------|:----------|
 |appDisplayName|String|Refere-se ao nome do aplicativo exibido no Portal do Windows Azure.|
 |appId|Cadeia de caracteres|Refere-se o GUID exclusivo que representa a Id do aplicativo no Windows Azure Active Directory.|
-|authenticationProcessingDetails|`authenticationProcessingDetails`|Fornece detalhes associados ao processador de autenticação.|
 |clientAppUsed|String|Fornece o cliente herdado usado para entrar activty.E.g. inclui um navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|coleção [conditionalAccessPolicy](conditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional que são acionadas pela atividade de entrada correspondente.|
 |conditionalAccessStatus|string| Fornece o status da política de acesso condicional disparado. Os valores possíveis são: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
@@ -41,7 +40,7 @@ Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em
 |riskDetail|`riskDetail`|Fornece o motivo por trás de um estado específico de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada no usuário ou entrar até o momento.|
 |riskLevelAggregated|`riskLevel`|Fornece o nível de risco agregados. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD.|
 |riskLevelDuringSignIn|`riskLevel`|Fornece o nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD.|
-|riskEventTypes|`riskEventTypes`|Fornece a lista de tipos de evento de risco associados a entrar. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecurePasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD.|
+|riskEventTypes|`riskEventTypes`|Fornece a lista de tipos de evento de risco associados a entrar. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, e `unknownFutureValue`.|
 |riskState|`riskState`|Fornece o 'estado de risco' de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Fornece o MFA relacionado informações como MFA, MFA Status Requerido para a entrada correspondente.|
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Fornece detalhes sobre o local de rede.|
@@ -91,7 +90,14 @@ Veja a seguir uma representação JSON do recurso.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskLevel": "string",
+  "riskDetail": "string",
+  "riskLevelAggregated": "string",
+  "riskLevelDuringSignIn": "string",
+  "riskState": "string",
+  "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 

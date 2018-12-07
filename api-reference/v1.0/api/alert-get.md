@@ -1,18 +1,18 @@
 ---
 title: Obter alerta
 description: " Recupere as propriedades e relacionamentos de um objeto de alerta."
-ms.openlocfilehash: b5e85fe33f4896714c4100c22a26417091d154ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006516"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184473"
 ---
 # <a name="get-alert"></a>Obter alerta
 
  Recupere as propriedades e relacionamentos de um objeto de [alerta](../resources/alert.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de **alerta** no corpo da resposta. Se um código de status diferente 2xx ou 404 é retornado por um provedor ou se um provedor de tempo limite, a resposta será um `206 Partial Content` código de status com a resposta de provedores em um cabeçalho de aviso. Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de **alerta** no corpo da resposta. Se um código de status diferente 2xx ou 404 é retornado por um provedor ou se um provedor de tempo limite, a resposta será um `206 Partial Content` código de status com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 

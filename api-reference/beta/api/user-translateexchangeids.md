@@ -1,12 +1,12 @@
 ---
 title: 'usuário: translateExchangeIds'
 description: Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
-ms.openlocfilehash: 0c6e74ad0bb9676f261ed0202757b1e036b09c85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037582"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184487"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -14,7 +14,7 @@ ms.locfileid: "27037582"
 
 Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e um conjunto de [convertIdResult](../resources/meetingtimesuggestionsresult.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` código de resposta e um conjunto de [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

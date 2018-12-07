@@ -1,12 +1,12 @@
 ---
 title: Grupos de dispositivos de lista
 description: Obtenha os grupos dos quais este dispositivo é um membro direto. Esta operação não é transitiva.
-ms.openlocfilehash: 8674bed8f00c6cbe9c55dd218a3611ecde9e548d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fae373a896a2fc048257a5dc6cd9eb07a85ec677
+ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035581"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27184466"
 ---
 # <a name="list-device-groups"></a>Grupos de dispositivos de lista
 
@@ -14,7 +14,7 @@ ms.locfileid: "27035581"
 
 Obtenha os grupos dos quais este dispositivo é um membro direto. Esta operação não é transitiva.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -27,10 +27,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{id | userPrincipalName}/memberOf
+GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
