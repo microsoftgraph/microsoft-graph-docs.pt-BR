@@ -9,9 +9,9 @@ items:
         href: /graph/auth-register-app-v2?toc=./ref/toc.json
       - name: Obter acesso em nome de um usuário
         href: /graph/auth-v2-user?toc=./ref/toc.json
-      - name: Obtenha acesso sem um usuário
+      - name: Obter acesso sem um usuário
         href: /graph/auth-v2-service?toc=./ref/toc.json
-      - name: Permissions
+      - name: Permissões
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: Gerenciar o acesso de aplicativo (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
@@ -426,7 +426,7 @@ items:
       - name: Calendário
         href: resources/calendar.md
         items:
-          - name: Event
+          - name: Evento
             href: resources/event.md
             items:
               - name: Listar eventos
@@ -3015,7 +3015,7 @@ items:
                 href: api/driveitem-list-versions.md
               - name: Item de visualização
                 href: api/driveitem-preview.md
-          - name: Permissions
+          - name: Permissões
             href: resources/permission.md
             items:
               - name: Criar um link de compartilhamento
@@ -3076,6 +3076,8 @@ items:
                 href: api/device-post-registeredowners.md
               - name: Criar um usuário registrado
                 href: api/device-post-registeredusers.md
+              - name: Grupos de dispositivos de lista
+                href: api/device-list-memberof.md
           - name: Objeto de diretório
             href: resources/directoryobject.md
             items:

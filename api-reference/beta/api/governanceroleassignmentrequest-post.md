@@ -1,12 +1,12 @@
 ---
 title: Criar governanceRoleAssignmentRequest
 description: Crie uma solicitação de atribuição de função para representar a operação desejado em uma atribuição de função. A tabela a seguir lista as operações.
-ms.openlocfilehash: b0d9edab1182d4a6fa620cfb953df1cb8af20c66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 775cc8e22e7d273bfe387e5be2cc183d3d919a38
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036014"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191169"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -27,10 +27,10 @@ Crie uma solicitação de atribuição de função para representar a operação
 | Renovar uma atribuição de função expirados| AdminRenew | 
 
  
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissions              |
+|Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -42,17 +42,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
-## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método não **suporte [parâmetros de consulta OData](/graph/query-parameters)** .
-
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | Portador {código}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, fornece uma representação JSON de um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 | Propriedade     | Tipo    |Obrigatório|  Descrição|
 |:---------------|:--------|:----------|:----------|
@@ -64,11 +61,11 @@ No corpo da solicitação, fornece uma representação JSON do objeto [governanc
 |motivo|String| |O motivo pelo qual deve ser fornecido para a solicitação de atribuição de função de auditoria e revise finalidade.|
 |agenda|[governanceSchedule](../resources/governanceschedule.md)| | O agendamento da solicitação de atribuição de função. Tipo de solicitação de `UserAdd`, `AdminAdd`, `AdminUpdate`, e `AdminExtend`, é necessário.|
 
-### <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201, Created` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
-## <a name="error-codes"></a>Códigos de erro
-Essa API segue o padrão dos códigos HTTP, além dos códigos de erro listados na tabela a seguir.
+### <a name="error-codes"></a>Códigos de erro
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele também retorna os códigos de erro listados na tabela a seguir.
 
 |Código de erro     | Mensagem de erro              | Detalhes |
 |:--------------------| :---------------------|:--------------------|
@@ -80,10 +77,13 @@ Essa API segue o padrão dos códigos HTTP, além dos códigos de erro listados 
 | 400 BadRequest | RoleAssignmentDoesNotExist    | [GovernanceRoleAssignment](../resources/governanceroleassignment.md) solicitado a ser atualizado/estendido não existe no sistema.
 | 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | O [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) não atende às políticas internas e não pode ser criado.
 
-## <a name="example-1"></a>Exemplo 1
+## <a name="examples"></a>Exemplos
+Os exemplos a seguir mostram como usar essa API.
+
+### <a name="example-1"></a>Exemplo 1
 Neste exemplo, os administradores atribuem nawu@fimdev.net usuário à função Leitor de cobrança.
 
- >**Observação:** Além de permissão, este exemplo requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso. 
+ >**Observação:** Além de permissão, este exemplo exige que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso. 
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
@@ -137,8 +137,6 @@ Content-length: 226
     "type": "AdminAdd",
     "assignmentState": "Eligible",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:38:34.6007266Z",
-    "roleAssignmentEndDateTime": "2018-11-08T23:37:43.356Z",
     "reason": "Evaluate Only",
     "status": {
         "status": "InProgress",
@@ -167,7 +165,7 @@ Content-length: 226
 }
 ```
 
-## <a name="example-2"></a>Exemplo 2
+### <a name="example-2"></a>Exemplo 2
 Neste exemplo, nawu@fimdev.net o usuário ativa a função de leitor de faturamento elegível.
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
@@ -222,8 +220,6 @@ Content-type: application/json
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": "2018-05-12T23:29:29.5123911Z",
-    "roleAssignmentEndDateTime": "2018-05-13T08:28:43.537Z",
     "reason": "Activate the owner role",
     "status": {
         "status": "InProgress",
@@ -264,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3"></a>Exemplo 3
+### <a name="example-3"></a>Exemplo 3
 Neste exemplo, o nawu@fimdev.net usuário desativa a função de leitor de cobrança ativa.
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
@@ -315,8 +311,6 @@ Content-length: 226
     "type": "UserRemove",
     "assignmentState": "Active",
     "requestedDateTime": "0001-01-01T00:00:00Z",
-    "roleAssignmentStartDateTime": null,
-    "roleAssignmentEndDateTime": null,
     "reason": "Evaluate only",
     "schedule": null,
     "status": {
@@ -330,7 +324,7 @@ Content-length: 226
 ### <a name="example-4"></a>Exemplo 4
 Neste exemplo, os administradores remover nawu@fimdev.net o usuário da função Leitor de cobrança.
 
- >**Observação:** Além do escopo de permissão, este exemplo requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Observação:** Além de permissão, este exemplo exige que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
  
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
@@ -379,8 +373,6 @@ Content-length: 226
   "type":"AdminRemove",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":null,
-  "roleAssignmentEndDateTime":null,
   "reason":null,
   "status":{
     "status":"Closed",
@@ -394,7 +386,8 @@ Content-length: 226
 ### <a name="example-5"></a>Exemplo 5
 Neste exemplo, os administradores atualizar a atribuição de função para o usuário de nawu@fimdev.net ao proprietário.
 
- >**Observação:** Além do escopo de permissão, este exemplo requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso. 
+ >**Observação:** Além de permissão, este exemplo exige que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso. 
+
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
 |resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
@@ -447,8 +440,6 @@ Content-length: 226
   "type":"AdminUpdate",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:50:03.4755896Z",
-  "roleAssignmentEndDateTime":"2018-06-05T05:42:31Z",
   "reason":null,
   "status":{
     "status":"InProgress",
@@ -475,7 +466,7 @@ Content-length: 226
 ### <a name="example-6"></a>Exemplo 6
 Este exemplo estende a atribuição de função expirar para usuário ANUJCUSER Colaborador do serviço de gerenciamento de API.
 
- >**Observação:** Além do escopo de permissão, este exemplo requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+ >**Observação:** Additon à permissão, este exemplo exige que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
  
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
@@ -530,8 +521,6 @@ Content-length: 226
   "type":"AdminExtend",
   "assignmentState":"Eligible",
   "requestedDateTime":"0001-01-01T00:00:00Z",
-  "roleAssignmentStartDateTime":"2018-05-12T23:54:09.7221332Z",
-  "roleAssignmentEndDateTime":"2018-08-10T23:53:55.327Z",
   "reason":"extend role assignment",
   "status":{
     "status":"InProgress",

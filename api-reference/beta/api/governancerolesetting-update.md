@@ -1,12 +1,12 @@
 ---
 title: Atualizar governanceRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
-ms.openlocfilehash: ca5752d51e5d59578594a12c80ae1cac316b48bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2d9417c99e63b1b4c7302c2afdda4c272b2fce82
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033383"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191113"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
@@ -14,22 +14,23 @@ ms.locfileid: "27033383"
 
 Atualize as propriedades de [governanceRoleSetting](../resources/governancerolesetting.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissions              |
+>**Observação:** Essa API também requer que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+
+|Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
 
-Além do escopo de permissão, essa API requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador {código}|
@@ -37,7 +38,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para [governanceRuleSettings](../resources/governancerulesetting.md) que precisa ser atualizado. 
+No corpo da solicitação, forneça os valores para [governanceRuleSettings](../resources/governancerulesetting.md) que precisam ser atualizados. 
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -49,8 +50,9 @@ No corpo da solicitação, forneça os valores para [governanceRuleSettings](../
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta. 
 
-## <a name="error-codes"></a>Códigos de erro
-Essa API segue o padrão dos códigos HTTP. Além disso, os códigos de erro personalizadas são mostrados abaixo.
+### <a name="error-codes"></a>Códigos de erro
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os seguintes códigos de erro personalizada.
+
 |Código de erro     | Mensagem de erro         | Detalhes             |
 |:--------------| :---------------------|:--------------------|
 | 400 BadRequest| RoleSettingNotFound   | O [governanceRoleSetting](../resources/governancerolesetting.md) não existe no sistema.

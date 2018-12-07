@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de governanceRoleAssignmentRequest
 description: Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
-ms.openlocfilehash: 4b19ed04b4c78fa084c1247fc1798a39b08c3fdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b3f3c7b3ec324b9b3df24cc0c53eaa6d1cda7a4c
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032942"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191120"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso de governanceRoleAssignmentRequest
 
@@ -31,13 +31,11 @@ Representa a solicitação para operações de atribuição de função no geren
 |:--------------------------|:--------------|:----------|
 |id                         |String         |A identificação da solicitação de atribuição de função.|
 |resourceId                 |Cadeia de caracteres         |Obrigatório. A identificação do recurso que a solicitação de atribuição de função é associada.|
-|roleDefinitionId           |Cadeia de caracteres         |Obrigatório. A id da definição de função que a solicitação de atribuição de função é associada.|
-|subjectId                  |Cadeia de caracteres         |Obrigatório. A identificação do assunto da qual a solicitação de atribuição de função é associada.|
-|type                       |Cadeia de caracteres         |Obrigatório. Representando o o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores de atribuir funções; a usuários/grupos</li><li>`UserAdd`: Usuários ativarem elegíveis atribuições;</li><li> `AdminUpdate`: Os administradores alterar as atribuições de função existente</li><li>`AdminRemove`: Os administradores de removam usuários/grupos de funções;<li>`UserRemove`: Usuários desativar atribuições ativas;<li>`UserExtend`: Solicitação de usuários para estender as suas atribuições expiradas;</li><li>`AdminExtend`: Administradores estendem atribuições expiradas.</li><li>`UserRenew`: Solicitação de os usuários de renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Administradores estendem atribuições expiradas.</li></ul>|
-|assignmentState|Cadeia de caracteres  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
+|roleDefinitionId           |String         |Obrigatório. A id da definição de função que a solicitação de atribuição de função é associada.|
+|subjectId                  |String         |Obrigatório. A identificação do assunto da qual a solicitação de atribuição de função é associada.|
+|type                       |String         |Obrigatório. Representando o o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores de atribuir funções; a usuários/grupos</li><li>`UserAdd`: Usuários ativarem elegíveis atribuições;</li><li> `AdminUpdate`: Os administradores alterar as atribuições de função existente</li><li>`AdminRemove`: Os administradores de removam usuários/grupos de funções;<li>`UserRemove`: Usuários desativar atribuições ativas;<li>`UserExtend`: Solicitação de usuários para estender as suas atribuições expiradas;</li><li>`AdminExtend`: Administradores estendem atribuições expiradas.</li><li>`UserRenew`: Solicitação de os usuários de renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Administradores estendem atribuições expiradas.</li></ul>|
+|assignmentState|String  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Somente leitura. A solicitação criar horário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|roleAssignmentStartDateTime|DateTimeOffset |A hora de início para a atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|roleAssignmentEndDateTime|DateTimeOffset   |A hora de término para a atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |agenda                   |[governanceSchedule](governanceschedule.md)|O objeto de agendamento da solicitação de atribuição de função.|
 |motivo                     |String         |Uma mensagem fornecida por usuários e administradores quando criar a solicitação sobre por que ele é necessário.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |O status da solicitação de atribuição de função.|
@@ -74,8 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "assignmentState": "String",
   "reason": "String",
   "requestedDateTime": "String (timestamp)",
-  "roleAssignmentStartDateTime": "String (timestamp)",
-  "roleAssignmentEndDateTime": "String (timestamp)",
   "schedule": {"@odata.type": "microsoft.graph.governanceSchedule"},
   "status": {"@odata.type": "microsoft.graph.governanceRoleAssignmentRequestStatus"},
   "linkedEligibleRoleAssignmentId": "String"

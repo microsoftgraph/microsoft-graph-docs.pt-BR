@@ -1,12 +1,12 @@
 ---
 title: Atualizar governanceRoleAssignmentRequests
 description: Permitem que administradores atualizar suas decisões (`AdminApproved` ou `AdminDenied`) em governanceRoleAssignmentRequests que estão no status de `PendingAdminDecision`.
-ms.openlocfilehash: 0f52b810b861e18a679ae8aea4ffdf7fd2d67abd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040622"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191148"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
@@ -14,16 +14,16 @@ ms.locfileid: "27040622"
 
 Permitem que administradores atualizar suas decisões (`AdminApproved` ou `AdminDenied`) em [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão no status de `PendingAdminDecision`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissions              |
+>**Observação:** Essa API também requer que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) em relação ao qual pertence o [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) recurso. 
+
+|Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
-
-Além do escopo de permissão, essa API requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso, qual pertence o [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -31,13 +31,14 @@ Além do escopo de permissão, essa API requer o solicitante ter pelo menos um `
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
 ```
 
-### <a name="request-headers"></a>Cabeçalhos de solicitação
+## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome           | Descrição|
 |:---------------|:----------|
 | Autorização  | Portador {código}|
 | Content-type  | application/json|
 
-### <a name="request-body"></a>Corpo da solicitação
+## <a name="request-body"></a>Corpo da solicitação
+
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
 |motivo        |String                 |✓        |O motivo fornecido pelo administrador para a sua decisão.|
@@ -47,9 +48,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ### <a name="response"></a>Resposta
 Esse método só pode ser aplicado a solicitações que estejam no status de `PendingAdminDecision`.
 
-Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-### <a name="example"></a>Exemplo
+## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",

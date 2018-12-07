@@ -1,12 +1,12 @@
 ---
 title: Lista governanceRoleAssignmentRequests
 description: 'Recupere uma coleção de governanceRoleAssignmentRequests. '
-ms.openlocfilehash: 2d3cb7e668e6da4016106843f2e80ed4be784aef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 89cb6130b586a44723ec636cbdbe311e0bf8d510
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035277"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191155"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Lista governanceRoleAssignmentRequests
 
@@ -14,10 +14,10 @@ ms.locfileid: "27035277"
 
 Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissions              |
+|Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -98,8 +98,6 @@ Content-length: 279
             "type": "UserRemove",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-09T23:41:34.367Z",
-            "roleAssignmentStartDateTime": null,
-            "roleAssignmentEndDateTime": null,
             "reason": "Deactivation request",
             "schedule": null,
             "status": {
@@ -117,8 +115,6 @@ Content-length: 279
             "type": "UserAdd",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-10T20:58:09.163Z",
-            "roleAssignmentStartDateTime": "2018-01-10T20:58:11.363Z",
-            "roleAssignmentEndDateTime": "2018-01-11T01:58:11.363914Z",
             "reason": "test activations",
             "status": {
                 "status": "Closed",

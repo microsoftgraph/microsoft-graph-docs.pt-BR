@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
-ms.openlocfilehash: 0dc7b55053ba70272c4e639dba4b62160f58f435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035808"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191141"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -38,6 +38,7 @@ Somente as operações de leitura e a atualização são suportadas no inquilino
 |companyLastDirSyncTime|DateTimeOffset|A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |country|String| Nome do país/região do endereço da organização |
 |countryLetterCode|String| Abreviação de país/região da organização |
+|createdDateTime|DateTimeOffset| Carimbo de hora de quando a organização foi criada. O valor não pode ser modificado e é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |deletionTimestamp|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
 |displayName|String|O nome de exibição do locatário.|

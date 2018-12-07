@@ -1,12 +1,12 @@
 ---
 title: Lista governanceResources
 description: Recupere uma coleção de governanceResource que o solicitante tem acesso.
-ms.openlocfilehash: 0c50fa03cc8294650fa592e3ff7a1692d89cfbb9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a8f0fc03dbd880c82bca7c9d8f6e84a2940511d9
+ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036240"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27191084"
 ---
 # <a name="list-governanceresources"></a>Lista governanceResources
 
@@ -14,10 +14,10 @@ ms.locfileid: "27036240"
 
 Recupere uma coleção de [governanceResource](../resources/governanceresource.md) que o solicitante tem acesso.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissions              |
+|Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -75,7 +75,8 @@ Content-Length: 1289
             "type": "Microsoft.Storage/storageAccounts",
             "displayName": "anujstoragefimdev",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "0e0e4461-0c46-4d13-bf69-7cacbec75471",
@@ -83,7 +84,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines",
             "displayName": "APRJ-VM-01-T",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "c072eb85-e47b-4627-81cb-5af82a8fc9fb",
@@ -91,7 +93,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "displayName": "APRJ-VM-01-T/IaaSAntimalware",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         }
     ]
 }
