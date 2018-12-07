@@ -9,9 +9,9 @@ items:
         href: /graph/auth-register-app-v2?toc=./ref/toc.json
       - name: Obter acesso em nome de um usuário
         href: /graph/auth-v2-user?toc=./ref/toc.json
-      - name: Obtenha acesso sem um usuário
+      - name: Obter acesso sem um usuário
         href: /graph/auth-v2-service?toc=./ref/toc.json
-      - name: Permissions
+      - name: Permissões
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: Gerenciar o acesso de aplicativo (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
@@ -475,7 +475,7 @@ items:
       - name: Calendário
         href: resources/calendar.md
         items:
-          - name: Event
+          - name: Evento
             href: resources/event.md
             items:
               - name: Listar eventos
@@ -749,7 +749,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Excluir um item do histórico
                     href: api/projectrome-delete-historyitem.md
-          - name: Notifications
+          - name: Notificações
             href: resources/notifications-api-overview.md
             items:
               - name: Notification
@@ -6094,7 +6094,7 @@ items:
                 href: api/itemactivity-getbyinterval.md
               - name: Item de visualização
                 href: api/driveitem-preview.md
-          - name: Permissions
+          - name: Permissões
             href: resources/permission.md
             items:
               - name: Criar um link de compartilhamento
@@ -6519,6 +6519,8 @@ items:
                     href: api/governanceresource-list.md
                   - name: Get
                     href: api/governanceresource-get.md
+                  - name: Registro
+                    href: api/governanceresource-register.md
               - name: Definições de função
                 href: resources/governanceroledefinition.md
                 items:
