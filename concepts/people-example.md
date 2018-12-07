@@ -1,10 +1,10 @@
 ---
 title: Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
-description: Aplicativos do Microsoft Graph podem usar a API de pessoas para recuperar as pessoas que são mais relevantes para um usuário. Relevância é determinada pelos padrões de comunicação e colaboração e relacionamentos de negócios do usuário. Pessoas podem ser locais contatos, contatos de social redes ou do diretório da organização e pessoas de comunicações recentes (por exemplo, email e Skype). Junto com gerando essa percepção, a API de pessoas também fornece difusa correspondentes suporte de pesquisa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
+description: Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório de uma organização e as pessoas de comunicações recentes (como emails e Skype). Além de gerar essas informações, a API de Pessoas também fornece suporte para pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
 ms.date: 12/04/2018
 ms.openlocfilehash: b01ca4538c3155bbb30224b1f92d6e7ae55c5878
 ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/05/2018
 ms.locfileid: "27156051"
@@ -18,7 +18,7 @@ Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as 
 Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:
 
 * People.Read – use para fazer chamadas gerais da API de Pessoas; por exemplo, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requer o consentimento do usuário final.
-* People.Read.All - necessários para recuperar as pessoas importantes para um usuário específico na organização do usuário conectado (`https://graph.microsoft.com/v1.0/users('{id}')/people`) chamadas. People.Read.All requer o consentimento de admin.
+* People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas (`https://graph.microsoft.com/v1.0/users('{id}')/people`) da organização do usuário conectado. People.Read.All requer o consentimento do administrador.
 
 ## <a name="browse-people"></a>Procurar pessoas
 
