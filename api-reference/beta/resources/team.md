@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de equipe
 description: 'Uma equipe Teams da Microsoft é uma coleção de canais. '
-ms.openlocfilehash: 5ebb4dbc2c5913d69b69bdb244d8a7cfc83cec8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037245"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209695"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -22,7 +22,8 @@ Para obter mais informações sobre como trabalhar com grupos e membros de equip
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar equipe](../api/team-put-teams.md) | [equipe](team.md) | Criar um novo equipe ou adicione uma equipe a um grupo existente.|
+|[Criar equipe](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Crie uma equipe do zero. |
+|[Criar equipe a partir de grupo](../api/team-put-teams.md) | [equipe](team.md) | Criar um novo equipe ou adicione uma equipe a um grupo existente.|
 |[Obtenha a equipe](../api/team-get.md) | [equipe](team.md) | Recupere as propriedades e relacionamentos da equipe especificado.|
 |[Equipe de atualização](../api/team-update.md) | [equipe](team.md) |Atualize as propriedades da equipe especificado. |
 |[Excluir equipe](/graph/api/group-delete?view=graph-rest-1.0) | Nenhum |Exclua a equipe e seu grupo associado. |
@@ -40,6 +41,11 @@ Para obter mais informações sobre como trabalhar com grupos e membros de equip
 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
+|displayName|string| O nome da equipe. |
+|description|string| Uma descrição opcional para a equipe. |
+|classificação|cadeia de caracteres| Um rótulo opcional. Normalmente, descreve a sensibilidade de dados ou de negócios da equipe. Deve corresponder a um conjunto pré-configurado no diretório de locatário. |
+|especialização|[teamSpecialization](teamspecialization.md)| Opcional. Indica se a equipe destina-se de um caso de uso específico.  Especialização cada equipe tem acesso aos comportamentos exclusivos e experiências destinadas ao seu caso de uso. |
+|visibilidade|[teamVisibilityType](teamvisibilitytype.md)| A visibilidade de um o grupo e da equipe. Por padrão, público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações para configurar o uso de Giphy, memes e adesivos na equipe de.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações para configurar se os convidados podem criar, atualizar ou excluir canais na equipe de.|
 |isArchived|Booliano|Se essa equipe está em modo somente leitura. |
@@ -54,6 +60,8 @@ Para obter mais informações sobre como trabalhar com grupos e membros de equip
 |Aplicativos|coleção [teamsApp](teamsapp.md)| (Obsoleto) Os aplicativos instalados nesse conjunto.|
 |canais|coleção de [canal](channel.md)|A coleção de canais & associadas à equipe de mensagens.|
 |installedApps|coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nesse conjunto.|
+|owners|[user](user.md)| A lista de proprietários dessa equipe. |
+|modelo|[teamsTemplate](teamstemplate.md)| O modelo a partir do qual essa equipe foi criada. |
 
 ## <a name="json-representation"></a>Representação JSON
 

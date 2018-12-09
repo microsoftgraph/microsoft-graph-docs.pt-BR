@@ -1,12 +1,12 @@
 ---
 title: Obter educationSynchronizationErrors
 description: 'Obtenha os erros gerados durante a validação de e/ou durante uma sincronização de um perfil de sincronização de dados escola específico no inquilino. '
-ms.openlocfilehash: 5853834187dcf470dff093a21589b3eba798e793
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036547"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209660"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
@@ -47,7 +47,7 @@ Este é um exemplo de solicitação.
   "name": "get_educationSynchronizationProfile_error"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/error
+GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 
 ##### <a name="response"></a>Resposta

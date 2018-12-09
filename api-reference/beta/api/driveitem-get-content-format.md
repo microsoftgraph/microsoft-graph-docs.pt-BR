@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Converter em outros formatos
-ms.openlocfilehash: fef327291310b8355c28478185e285217fe99886
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 70558e7c0497c71f620481ff67b7d07cc255cd95
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034268"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209716"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -17,7 +17,7 @@ ms.locfileid: "27034268"
 Use esta API para recuperar os conteúdos de um item em um formato específico.
 Nem todos os arquivos podem ser convertidos em todos os formatos.
 
-Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).
+Para baixar o item no formato original, consulte [fazer o download de conteúdo de um item](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -79,7 +79,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### <a name="error-responses"></a>Respostas de erro
 
-Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].
+Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

@@ -1,12 +1,12 @@
 ---
 title: Obter riskyUsers
 description: Recupere as propriedades e relacionamentos de um objeto **riskyUsers** .
-ms.openlocfilehash: f0a6ac24bf66184d0547e9284f5a35b84b9358b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7212e99e53d990df9cd9fea7dae754a693edc745
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034130"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209681"
 ---
 # <a name="get-riskyusers"></a>Obter riskyUsers
 
@@ -18,7 +18,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityrRskyUser.Read.All    |
+|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | IdentityRiskyUser.Read.All |
 

@@ -11,7 +11,7 @@ items:
         href: /graph/auth-v2-user?toc=./ref/toc.json
       - name: Obter acesso sem um usuário
         href: /graph/auth-v2-service?toc=./ref/toc.json
-      - name: Permissões
+      - name: Permissions
         href: /graph/permissions-reference?toc=./ref/toc.json
       - name: Gerenciar o acesso de aplicativo (CSP)
         href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
@@ -6094,7 +6094,7 @@ items:
                 href: api/itemactivity-getbyinterval.md
               - name: Item de visualização
                 href: api/driveitem-preview.md
-          - name: Permissões
+          - name: Permissions
             href: resources/permission.md
             items:
               - name: Criar um link de compartilhamento
@@ -6289,6 +6289,8 @@ items:
                 href: api/device-post-registeredowners.md
               - name: Criar um usuário registrado
                 href: api/device-post-registeredusers.md
+              - name: Grupos de dispositivos de lista
+                href: api/device-list-memberof.md
           - name: Objeto de diretório
             href: resources/directoryobject.md
             items:
@@ -7411,6 +7413,8 @@ items:
             href: resources/team.md
             items:
               - name: Criar equipe
+                href: api/team-post.md
+              - name: Criar equipe a partir de grupo
                 href: api/team-put-teams.md
               - name: Obtenha a equipe
                 href: api/team-get.md
