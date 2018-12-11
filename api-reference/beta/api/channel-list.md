@@ -1,53 +1,55 @@
 ---
 title: Canais de lista
 description: Recupere a lista de canais nesse conjunto.
-ms.openlocfilehash: a37ca4e6012dd287b1b637fe3ddb3cfc2aaf5518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 024751f0d77889249d2f2dcf6b2bb1f709128db1
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034004"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222538"
 ---
-# <a name="list-channels"></a><span data-ttu-id="8498c-103">Canais de lista</span><span class="sxs-lookup"><span data-stu-id="8498c-103">List channels</span></span>
+# <a name="list-channels"></a><span data-ttu-id="04f16-103">Canais de lista</span><span class="sxs-lookup"><span data-stu-id="04f16-103">List channels</span></span>
 
-> <span data-ttu-id="8498c-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="8498c-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8498c-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="8498c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="04f16-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="04f16-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="04f16-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="04f16-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="8498c-106">Recupere a lista de [canais](../resources/channel.md) nesse conjunto.</span><span class="sxs-lookup"><span data-stu-id="8498c-106">Retrieve the list of [channels](../resources/channel.md) in this team.</span></span>
+<span data-ttu-id="04f16-106">Recupere a lista de [canais](../resources/channel.md) nesse conjunto.</span><span class="sxs-lookup"><span data-stu-id="04f16-106">Retrieve the list of [channels](../resources/channel.md) in this team.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8498c-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="8498c-107">Permissions</span></span>
-<span data-ttu-id="8498c-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8498c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="04f16-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="04f16-107">Permissions</span></span>
+<span data-ttu-id="04f16-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="04f16-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="8498c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8498c-110">Permission type</span></span>      | <span data-ttu-id="8498c-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8498c-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="04f16-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="04f16-110">Permission type</span></span>      | <span data-ttu-id="04f16-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="04f16-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8498c-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8498c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8498c-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8498c-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8498c-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8498c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8498c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8498c-115">Not supported.</span></span>    |
-|<span data-ttu-id="8498c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8498c-116">Application</span></span> | <span data-ttu-id="8498c-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8498c-117">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="04f16-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="04f16-112">Delegated (work or school account)</span></span> | <span data-ttu-id="04f16-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04f16-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="04f16-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="04f16-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04f16-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="04f16-115">Not supported.</span></span>    |
+|<span data-ttu-id="04f16-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="04f16-116">Application</span></span> | <span data-ttu-id="04f16-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04f16-117">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-## <a name="http-request"></a><span data-ttu-id="8498c-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8498c-118">HTTP request</span></span>
+> <span data-ttu-id="04f16-118">**Observação**: Esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="04f16-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="04f16-119">Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.</span><span class="sxs-lookup"><span data-stu-id="04f16-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="04f16-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="04f16-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8498c-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="8498c-119">Optional query parameters</span></span>
-<span data-ttu-id="8498c-120">Este método oferece suporte a $filter, $select, e $expand [OData parâmetros de consulta](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="8498c-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="04f16-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="04f16-121">Optional query parameters</span></span>
+<span data-ttu-id="04f16-122">Este método oferece suporte a $filter, $select, e $expand [OData parâmetros de consulta](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="04f16-122">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8498c-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8498c-121">Request headers</span></span>
-| <span data-ttu-id="8498c-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="8498c-122">Header</span></span>       | <span data-ttu-id="8498c-123">Valor</span><span class="sxs-lookup"><span data-stu-id="8498c-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="04f16-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="04f16-123">Request headers</span></span>
+| <span data-ttu-id="04f16-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="04f16-124">Header</span></span>       | <span data-ttu-id="04f16-125">Valor</span><span class="sxs-lookup"><span data-stu-id="04f16-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="8498c-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="8498c-124">Authorization</span></span>  | <span data-ttu-id="8498c-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8498c-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="04f16-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="04f16-126">Authorization</span></span>  | <span data-ttu-id="04f16-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="04f16-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="8498c-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8498c-127">Request body</span></span>
-<span data-ttu-id="8498c-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8498c-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="04f16-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="04f16-129">Request body</span></span>
+<span data-ttu-id="04f16-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="04f16-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8498c-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="8498c-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="04f16-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="04f16-131">Response</span></span>
 
-<span data-ttu-id="8498c-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [canal](../resources/channel.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8498c-130">If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.</span></span>
+<span data-ttu-id="04f16-132">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [canal](../resources/channel.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="04f16-132">If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8498c-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8498c-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8498c-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8498c-132">Request</span></span>
-<span data-ttu-id="8498c-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="8498c-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="04f16-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="04f16-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="04f16-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="04f16-134">Request</span></span>
+<span data-ttu-id="04f16-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="04f16-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_channels"
@@ -55,8 +57,8 @@ GET /teams/{id}/channels
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
-##### <a name="response"></a><span data-ttu-id="8498c-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="8498c-134">Response</span></span>
-<span data-ttu-id="8498c-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8498c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="04f16-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="04f16-136">Response</span></span>
+<span data-ttu-id="04f16-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="04f16-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
