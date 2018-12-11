@@ -1,12 +1,12 @@
 ---
 title: Obtenha o guia
 description: 'Recupere as propriedades e relacionamentos da guia especificado. '
-ms.openlocfilehash: 57bd7d8b11b0bf20d54bf8da16cdd41220320fcd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7bef495fbb37a878a291f2aac6004d386e932cbd
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033415"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222405"
 ---
 # <a name="get-tab"></a>Obtenha o guia
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All |
 
-> Atualmente, somente [permissões delegadas](/graph/permissions-reference) têm suporte para esta operação.
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http

@@ -1,12 +1,12 @@
 ---
 title: Adicionar guia ao canal
 description: 'Adiciona (pins) uma guia para o canal especificado dentro de uma equipe. '
-ms.openlocfilehash: be246b0308be83e0b411fa89fe16034018756829
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f4e57839436b6c40669125114b82fe67d58efc2d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034721"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222636"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar guia ao canal
 
@@ -22,6 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                            | Group.ReadWrite.All                         |
+
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

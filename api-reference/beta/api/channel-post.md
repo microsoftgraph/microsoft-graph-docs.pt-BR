@@ -1,12 +1,12 @@
 ---
 title: Criar canal
 description: Crie um novo canal em um Microsoft Team, conforme especificado no corpo da solicitação.
-ms.openlocfilehash: f9767c70c94ce4cfe3379310c425005ace8fbe1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 7f561c13b688d76ec4d45f03c2fd7f73192fe8a8
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035610"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222524"
 ---
 # <a name="create-channel"></a>Criar canal
 
@@ -25,6 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All    |
+
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

@@ -1,12 +1,12 @@
 ---
 title: Guias de lista no canal
 description: 'Recupere a lista das guias no canal especificado dentro de uma equipe. '
-ms.openlocfilehash: 6c72bae20542911c7ab1563e994ca9ebdb79b37a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0628874876093447802583db70e160ad17e21f87
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040019"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222503"
 ---
 # <a name="list-tabs-in-channel"></a>Guias de lista no canal
 
@@ -22,6 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Group.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                            | Group.Read.All, Group.ReadWrite.All         |
+
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

@@ -1,12 +1,12 @@
 ---
 title: Criar equipe a partir de grupo
 description: Crie uma nova equipe a partir de um grupo.
-ms.openlocfilehash: 50915ff025a724565f1eaa4c37a01942133f9e4f
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+ms.openlocfilehash: d43c9032811c2ddc1733117642f9e2ae4f343a7e
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209667"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222629"
 ---
 # <a name="create-team-from-group"></a>Criar equipe a partir de grupo
 
@@ -27,6 +27,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All |
+
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar que eles não são membros de grupos.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

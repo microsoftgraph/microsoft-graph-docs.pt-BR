@@ -1,12 +1,12 @@
 ---
 title: Obtenha a equipe
 description: Recupere as propriedades e relacionamentos da equipe especificado.
-ms.openlocfilehash: 790d550024742875b0fb3a5b4383f0ec9ba793bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e1f3b08134377492fc00f9bc0b43c190d1d8a81d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005998"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222643"
 ---
 # <a name="get-team"></a>Obtenha a equipe
 
@@ -23,7 +23,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All    |
 
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}

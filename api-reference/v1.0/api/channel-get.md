@@ -1,12 +1,12 @@
 ---
 title: Obtenha o canal
 description: Recupere as propriedades e relacionamentos de um canal.
-ms.openlocfilehash: 42f25d0866af9000cfb6f96952ac19e32af0e87c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: fd46e3f27c9da53a36107c3ec39c1ac5da1c0753
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004225"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222419"
 ---
 # <a name="get-channel"></a>Obtenha o canal
 
@@ -22,6 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All    |
+
+> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

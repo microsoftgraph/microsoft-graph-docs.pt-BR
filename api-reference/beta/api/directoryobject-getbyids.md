@@ -1,12 +1,12 @@
 ---
 title: Obter objetos directory a partir de uma lista de ids
 description: Selecione ' opção de consulta não está disponível para esta operação.
-ms.openlocfilehash: 87fa774910c1ea6795b6df65ee0f5538d12296bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
+ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034066"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27222441"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obter objetos directory a partir de uma lista de ids
 
@@ -16,7 +16,7 @@ Retorna os objetos directory especificados a partir de uma lista de ids  OBSERVA
 
 Alguns usos comuns dessa função são:
 
-* Resolver ids retornadas por funções (que retornam coleções de ids) como [getMemberObjects](directoryobject-getmemberobjects.md) ou [getMemberGroups](directoryobject-getmembergroups.md) para seus objetos de diretório de suporte.
+* Resolver ids retornadas por funções (que retornam coleções de ids) como [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) ou [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta) para seus objetos de diretório de suporte.
 * Resolver ids que persistem em um repositório externo pelo aplicativo para seus objetos de diretório de suporte.
 
 ## <a name="permissions"></a>Permissões
@@ -35,7 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /directoryObjects/getById
+POST /directoryObjects/getByIds
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |ids|Coleção de cadeias de caracteres| Uma coleção de ids para a qual retornar objetos. Você pode especificar até 1000 ids. |
-|tipos|Coleção de cadeias de caracteres| Uma coleção dos tipos de recursos que especifica o conjunto de conjuntos de recursos para pesquisar. Se não especificado, o padrão é [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que derive da `directoryObject` podem ser especificados na coleção; Por exemplo: [usuário](../resources/user.md), [grupo](../resources/group.md), [dispositivo](../resources/device.md)e assim por diante. Os valores não diferenciam maiusculas de minúsculas.|
+|tipos|Coleção de cadeias de caracteres| Uma coleção dos tipos de recursos que especifica o conjunto de conjuntos de recursos para pesquisar. Se não especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que derive da [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) pode ser especificado na coleção; Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta)e assim por diante. Para pesquisar referências a um parceiro de [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) organização especificar [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Se não especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório, exceto para referências a uma organização parceira de [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) . Os valores não diferenciam maiusculas de minúsculas.|
 
 ## <a name="response"></a>Resposta
 
@@ -64,7 +64,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_getById"
+  "name": "directoryobject_getByIds"
 }-->
 
 ```http
