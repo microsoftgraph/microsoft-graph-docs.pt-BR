@@ -1,12 +1,12 @@
 ---
 title: Excluir o aplicativo da equipe
 description: Desinstala um aplicativo da equipe do especificado.
-ms.openlocfilehash: a1ba2ce7234796e3a2df508d40432a15690b1a63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: f9e04ad9d6672c3b9cfaaee9109b1bba0f7ab4c6
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004407"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241052"
 ---
 # <a name="delete-app-from-team"></a>Excluir o aplicativo da equipe
 
@@ -14,7 +14,7 @@ ms.locfileid: "27004407"
 
 Desinstala um [aplicativo](../resources/teamsappinstallation.md) da [equipe](../resources/team.md)especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -49,7 +49,7 @@ Este é um exemplo de solicitação.
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+DELETE /teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

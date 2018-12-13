@@ -1,12 +1,12 @@
 ---
 title: Lista de aplicativos na equipe
 description: Recupere a lista de aplicativos instalados na equipe de especificado.
-ms.openlocfilehash: 6a9deb01e4874861b798ffcae32bebd77899fad9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 214685302b9c3a09f06cb4d5c13525c222bf658f
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004061"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241045"
 ---
 # <a name="list-apps-in-team"></a>Lista de aplicativos na equipe
 
@@ -14,7 +14,7 @@ ms.locfileid: "27004061"
 
 Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)de especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -61,7 +61,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps
+GET /teams/{id}/installedApps
 ```
 
 ### <a name="response"></a>Resposta
@@ -100,7 +100,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
 ### <a name="response"></a>Resposta

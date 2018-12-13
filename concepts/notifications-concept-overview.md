@@ -3,7 +3,7 @@ title: 'Usar a API de notificações do Microsoft Graph para habilitar experiên
 description: 'As notificações são a maneira mais eficaz de voltar a envolver os usuários. Eles podem chamam a atenção de seus usuários e trazê-los de volta para o aplicativo. Em um mundo de vários dispositivos, seus usuários podem acessar seus aplicativos e serviços em qualquer lugar e em diferentes plataformas e dispositivos nos quais os aplicativos estão presentes. '
 ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091590"

@@ -1,18 +1,60 @@
 ---
 title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
-ms.openlocfilehash: b98389d40e6a64e31efed755558c25dbfc542002
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: 03dc6e993ff219ca38b16c6db7bbbb5ebc0ccb48
+ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184557"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "27209765"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
 Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
+
+## <a name="december-2018"></a>Dezembro de 2018
+
+### <a name="directory-apis"></a>APIs de diretório
+
+| Tipo de alteração | Versão                                    | Descrição                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| Adição    | Beta | Adicionar a propriedade `createdDateTime` para o recurso[organização](/graph/api/resources/organization?view=graph-rest-beta).|
+| Adição | v1.0 | Adicionado método `memberOf` para obter uma direta [associação](/graph/api/resources/device?view=graph-rest-1.0) de [dispositivos](/graph/api/device-list-memberOf?view=graph-rest-1.0). Esse método foi adicionado para obter a lista de associações, incluindo associações aninhadas.|
+
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |beta| Introduzido um novo tipo de recurso [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Adição |beta| Introduzido um novo tipo de recurso [teamsSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Adição |beta| Adicionadas as propriedades isFavoriteByDefault, email e webUrl para o[canal](/graph/api/resources/channel?view=graph-rest-beta).|
+|Adição |beta| Adicionou a propriedade displayName a [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionou a propriedade de descrição a [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionou a propriedade classificação a [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionou a propriedade [especialização](/graph/api/resources/teamspecialization?view=graph-rest-beta) a [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionou a propriedade [visibilidade](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) a [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionou a propriedade [modelo](/graph/api/resources/teamstemplate?view=graph-rest-beta) a [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Adicionado o conjunto de proprietários [equipe](/graph/api/resources/team?view=graph-rest-beta).|
+|Adição |beta| Apresentamos a nova enumeração do membro unknownFutureValue para teamVisibilityType.|
+|Adição |beta| Apresentamos a nova enumeração do membro unknownFutureValue para giphyRatingType.|
+|Adição |beta| Apresentamos a nova enumeração do membro unknownFutureValue para teamsAsyncOperationType.|
+|Adição |beta| Apresentamos a nova enumeração do membro unknownFutureValue para teamsAsyncOperationStatus.|
+|Adição |beta| Apresentamos a nova enumeração do membro unknownFutureValue para teamsAppDistributionMethod.|
+|Adição |beta| Introduzido um novo recurso [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+
+
+### <a name="privileged-identity-management-apis"></a>APIs de Privileged Identity Management
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionada a propriedade `registeredRoot` à entidade[governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta).|
+| Alteração | beta | Renomeada a propriedade `onboardDateTime` na entidade[governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) para `registeredDateTime`.|
+| Adição | beta | Adicionada a nova ação [Registre-se o recurso](/graph/api/governanceresource-register?view=graph-rest-beta).|
+| Remoção | beta | Remover a entidade `isPermanent` propriedade no [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
+| Remoção | beta | Remover a entidade `roleAssignmentStartDateTime` propriedade no [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Remoção | beta | Remover a entidade `roleAssignmentEndDateTime` propriedade no [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 
 ## <a name="november-2018"></a>Novembro de 2018
 
@@ -2805,7 +2847,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="users"></a>Usuários
 
-| **Tipo de alteração** | **Version**   | **Descrição**                          |
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | _displayName_ agora é retornado para contas da Microsoft. |
 

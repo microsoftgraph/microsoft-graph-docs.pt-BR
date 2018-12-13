@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de logon
 description: 'Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. '
-ms.openlocfilehash: f176f707e87b3e88292c32fba3748b9e70110e87
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184536"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241073"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de logon
 Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. 
@@ -37,9 +37,9 @@ Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em
 |ipAddress|Cadeia de caracteres|Fornece o endereço IP do cliente de onde a entrar ocorreu.|
 |location|[signInLocation](signinlocation.md)|Fornece a cidade, estado e código do país 2 de carta do qual a entrar ocorreu.|
 |processingTimeInMilliseconds|Int|Fornece o tempo em milissegundos no AD STS de processamento de solicitação|
-|riskDetail|`riskDetail`|Fornece o motivo por trás de um estado específico de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada no usuário ou entrar até o momento.|
-|riskLevelAggregated|`riskLevel`|Fornece o nível de risco agregados. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD.|
-|riskLevelDuringSignIn|`riskLevel`|Fornece o nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD.|
+|riskDetail|`riskDetail`|Fornece o motivo por trás de um estado específico de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada no usuário ou entrar até o momento. **Observação:** Detalhes para essa propriedade só estarão disponíveis para clientes do Windows Azure AD Premium P2. Serão retornados todos os outros clientes `hidden`.|
+|riskLevelAggregated|`riskLevel`|Fornece o nível de risco agregados. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD. **Observação:** Detalhes para essa propriedade só estarão disponíveis para clientes do Windows Azure AD Premium P2. Serão retornados todos os outros clientes `hidden`.|
+|riskLevelDuringSignIn|`riskLevel`|Fornece o nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD. **Observação:** Detalhes para essa propriedade só estarão disponíveis para clientes do Windows Azure AD Premium P2. Serão retornados todos os outros clientes `hidden`.|
 |riskEventTypes|`riskEventTypes`|Fornece a lista de tipos de evento de risco associados a entrar. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, e `unknownFutureValue`.|
 |riskState|`riskState`|Fornece o 'estado de risco' de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Fornece o MFA relacionado informações como MFA, MFA Status Requerido para a entrada correspondente.|

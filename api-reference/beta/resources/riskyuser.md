@@ -1,18 +1,20 @@
 ---
 title: tipo de recurso de riskyUsers
 description: Representa os usuários do Windows Azure AD que estão em risco. Azure AD continuamente avalia o risco de usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todos os usuários em risco em sua Azure AD.
-ms.openlocfilehash: 5d51c303d25a781f8e432badb42acb48cf135217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 47856ab28a52046f19087e0f59745efb9855e81a
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034964"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241059"
 ---
 # <a name="riskyusers-resource-type"></a>tipo de recurso de riskyUsers
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Representa os usuários do Windows Azure AD que estão em risco. Azure AD continuamente avalia o risco de usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todos os usuários em risco em sua Azure AD.
+
+> **Observação:** Esta API requer uma licença de P2 Premium do Windows Azure AD.
 
 Para obter mais informações sobre eventos de risco, consulte [Proteção de identidade do Windows Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 

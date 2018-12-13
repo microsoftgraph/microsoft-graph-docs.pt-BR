@@ -1,12 +1,12 @@
 ---
 title: Adicionar o aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
-ms.openlocfilehash: de5817f243b02462817d23d0e2b3864d5644b1d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: ec03c0f8744bd2f1dd5cf5e2a7e84c9b59a7c6ce
+ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004937"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27241031"
 ---
 # <a name="add-app-to-team"></a>Adicionar o aplicativo à equipe
 
@@ -14,7 +14,7 @@ ms.locfileid: "27004937"
 
 Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)de especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -53,9 +53,9 @@ Este é um exemplo de solicitação.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+POST /teams/{id}/installedApps
 {
-   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 #### <a name="response"></a>Resposta

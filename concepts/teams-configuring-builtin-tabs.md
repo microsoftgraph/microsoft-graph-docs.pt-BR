@@ -3,7 +3,7 @@ title: Configurar tipos de guia internos no Microsoft Teams
 description: 'Para criar ou configurar uma guia do Microsoft Teams usando as APIs do Microsoft Graph, '
 ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091593"
@@ -15,7 +15,7 @@ Este artigo explica como obter esses valores para os tipos internos de guia.
 
 ## <a name="custom-tabs"></a>Guias personalizadas
 
-Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](https://docs.microsoft.com/pt-BR/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
+Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
 
 O `teamsAppId` é igual a `id` no [esquema manifesto de aplicativo do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/resources/schema/manifest-schema).
 

@@ -3,7 +3,7 @@ title: Integração dos alertas da API de Segurança do Microsoft Graph com o IB
 description: Os provedores de Segurança do Microsoft Graph podem ser gerenciados por meio de um único ponto de extremidade REST. Este ponto de extremidade pode ser configurado para o Azure Monitor, que dá suporte a conectores para vários produtos SIEM. As instruções nas etapas 1 e 2 deste artigo referem-se a todos os conectores do Azure Monitor compatíveis com o consumo por Hubs de Eventos. Este artigo descreve a integração de ponta a ponta do conector QRadar SIEM.
 ms.openlocfilehash: 107435c463116c002c86955559209d2dffd4d688
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091609"

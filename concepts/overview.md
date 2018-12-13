@@ -3,7 +3,7 @@ title: Visão geral do Microsoft Graph
 description: " Segurança e o Windows 10. "
 ms.openlocfilehash: 7d8ed0d16ed24e20d1b48a1e44f573dce24d838f
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091602"

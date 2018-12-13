@@ -3,7 +3,7 @@ title: Obter contatos do Outlook em uma pasta compartilhada
 description: " isso também é "
 ms.openlocfilehash: c8c5b3a2eac49153826113af036146cc4475d9e5
 ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "27091588"
