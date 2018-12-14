@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de grupo
 description: Representa um grupo do Windows Azure Active Directory (AD Azure), que pode ser um grupo do Office 365, uma equipe no Microsoft Teams, um grupo dinâmico ou um grupo de segurança.
-ms.openlocfilehash: a1a200918c34f5e2fa220a88d3c69871d6b93ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
+ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039488"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "27265231"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -89,7 +89,7 @@ Esse recurso permite:
 |[addFavorite](../api/group-addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.|
 |[removeFavorite](../api/group-removefavorite.md)|None|Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.|
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação **memberOf**.|
-|[Lista joinedTeams](../api/user-list-joinedteams.md) |Coleção [group](group.md)| Obtenha o Microsoft Teams que o usuário é um membro direto.|
+|[Listar joinedTeams](../api/user-list-joinedteams.md) |Coleção [group](group.md)| Obtenha o Microsoft Teams que o usuário é um membro direto.|
 |[subscribeByMail](../api/group-subscribebymail.md)|Nenhum|Defina a propriedade isSubscribedByMail como **true**. Permitir que o usuário atual receber as conversas de email. Suporte para Office 365 apenas para grupos.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|Nenhum|Defina a propriedade isSubscribedByMail como **false**. Desabilitando o usuário atual em conversas de email de recebimento. Suporte para Office 365 apenas para grupos.|
 |[resetUnseenCount](../api/group-resetunseencount.md)|None|Redefina o unseenCount como 0 das postagens que o usuário atual não observou desde sua última visita. Suporte para Office 365 apenas para grupos.|
@@ -145,11 +145,13 @@ Aqui está o que significa que cada valor de propriedade de **visibilidade** :
 |calendário|[calendar](calendar.md)|O calendário do grupo. Somente leitura.|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura.|
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
-|Unidade|[drive](drive.md)|A unidade do grupo. Somente leitura.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
+|Unidade|[drive](drive.md)|Unidade de padrão do grupo. Somente leitura.|
+|drives|Coleção [drive](drive.md)|Unidades do grupo. Somente leitura.|
 |pontos de extremidade|Coleção de [ponto de extremidade](endpoint.md)| Pontos de extremidade para o grupo. Somente leitura. Anulável.|
 |events|Coleção [event](event.md)|Eventos do grupo.|
-|extensions|Coleção [Extension](extension.md)|A coleção de extensões open definidos para o grupo. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
+|groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|A coleção de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos e unidades administrativas que este grupo é um membro de. Métodos HTTP: Obtenha (suportado para todos os grupos). Somente leitura. Anulável.|
 |membros|Coleção [directoryObject](directoryobject.md)| Usuários, contatos e grupos que são membros desse grupo. Métodos HTTP: Obtenha (suporte para todos os grupos), POST (oferece suportada aos grupos de segurança e grupos de segurança habilitados para email), DELETE (suportada somente para grupos de segurança) somente leitura. Anulável.|
 |membersWithLicenseErrors|Conjunto de [usuário](user.md)|Uma lista de membros de grupo com erros de licença dessa atribuição de licença baseadas em grupos. Somente leitura.|
