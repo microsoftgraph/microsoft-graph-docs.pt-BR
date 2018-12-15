@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de mensagem
 description: Uma mensagem em uma mailFolder.
-ms.openlocfilehash: 0a68b48ea89fa41db1e77e0597a54f6fb495a438
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 146418a03944eb7bc3c1b537f359887b5515906f
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004145"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283672"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -56,7 +56,7 @@ Esse recurso permite:
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
-|body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
+|body|[itemBody](itembody.md)|O corpo da mensagem. Ele pode ser no formato HTML ou texto. Saiba mais sobre [HTML seguro no corpo da mensagem](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
@@ -64,41 +64,28 @@ Esse recurso permite:
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |sinalizar|[Sinalizador de acompanhamento](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real usada.|
+|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real usada. Saiba mais sobre [configuração o de propriedades de remetente e](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
 |importance|importance| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification | inferenceClassificationType | A classificação da mensagem para o usuário, com base na relevância deduzida ou importância, ou em um caso de sobreposição explícito. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagem definidas pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagem indicando o caminho de rede ocupado por uma mensagem do remetente ao destinatário. Ele também pode conter cabeçalhos de mensagem personalizada que armazenam os dados de aplicativo para a mensagem. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo que a propriedade **from** . Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada.|
+|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo que a propriedade **from** . Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada. Saiba mais sobre [configuração o de propriedades de remetente e](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
-**Removendo o script da propriedade de corpo**
-
-O corpo da mensagem pode estar em HTML ou em texto. Se o corpo for HTML, por padrão, qualquer HTML potencialmente não seguro (por exemplo, JavaScript) inserido na propriedade **body** será removido antes que o conteúdo do corpo seja retornado em uma resposta REST. Para obter o conteúdo HTML completo original, inclua o seguinte cabeçalho da solicitação HTTP:
-```
-Prefer: outlook.allow-unsafe-html
-```
-
-**Definindo as propriedades from e sender**
-
-Quando uma mensagem está sendo redigida, na maioria dos casos, as propriedades From e Sender representam o mesmo usuário conectado, a menos que ele seja atualizado conforme descrito nos seguintes cenários:
-
-- A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
-- A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, a propriedade **sender** é definida como a conta desse representante, enquanto a propriedade **from** Você pode definir programaticamente a propriedade **sender** para um usuário com direito de representante para essa caixa de correio.
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

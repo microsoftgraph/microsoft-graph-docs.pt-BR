@@ -1,12 +1,12 @@
 ---
 title: Lista orgContacts
 description: Recupere a lista de contatos organizacionais para esta organização.
-ms.openlocfilehash: 3860a4a4235bca9ea1aefe7ef420da5dfdd16c22
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 01be5350898bed181f2e1d304bf58f8ec1e4e47f
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038484"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283623"
 ---
 # <a name="list-orgcontacts"></a>Lista orgContacts
 
@@ -14,7 +14,7 @@ ms.locfileid: "27038484"
 
 Recupere a lista de contatos organizacionais para esta organização.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -68,14 +68,25 @@ Content-length: 222
 {
   "value": [
     {
-      "businessPhones": [
-        "businessPhones-value"
+      "addresses":[
+          {
+            "city": "string",
+            "countryOrRegion": "string",
+            "officeLocation": "string",
+            "postalCode": "string",
+            "state": "string",
+            "street": "string"
+          }
       ],
-      "city": "city-value",
       "companyName": "companyName-value",
-      "country": "country-value",
       "department": "department-value",
-      "displayName": "displayName-value"
+      "displayName": "displayName-value",
+      "phones":[
+          {
+            "type": "string",
+            "number": "string"
+          }
+      ]
     }
   ]
 }
