@@ -1,16 +1,23 @@
 ---
 title: Usar parâmetros de consulta para personalizar respostas
 description: O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Há suporte para os parâmetros de consulta a seguir.
-ms.openlocfilehash: e41a6e8d9cc42506985bd82f00bcdc4efaec8add
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+ms.openlocfilehash: b79192a028be278ab38dc28f1d9d913b3bcb7209
+ms.sourcegitcommit: 9f953e0c4cd624ba31919bfd5e82bf3e33cb9e21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27091735"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245103"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
-O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. Há suporte para os parâmetros de consulta a seguir.
+O Microsoft Graph fornece suporte a parâmetros de consulta opcionais que você pode usar para especificar e controlar a quantidade de dados retornados em uma resposta. O suporte para os parâmetros de consulta exatos variam de uma operação de API para outra e, dependendo da API, podem diferir entre os pontos de extremidade v1.0 e beta. 
+
+> **Observação:** nos pontos de extremidade v1.0 e beta, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`.
+
+Os parâmetros de consulta podem ser opções de consulta de sistema OData ou outros parâmetros de consulta. 
+
+## <a name="odata-system-query-options"></a>Opções de consulta de sistema OData
+Uma operação de API do Microsoft Graph pode oferecer suporte a uma ou mais das seguintes opções de consulta de sistema OData. Essas opções de consulta são compatíveis com a [linguagem de consulta OData V4][odata-query].
 
 >**Observação:** Clique nos exemplos para testá-los no [Explorador do Graph][graph-explorer].
 
@@ -24,14 +31,14 @@ O Microsoft Graph fornece parâmetros de consulta opcional que você pode usar p
 | [$search](#search-parameter)       | Retorna os resultados com base nos critérios de pesquisa. Atualmente, com suporte em conjuntos de **mensagens** e **pessoa**.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filtra as propriedades (colunas).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Índices em um conjunto de resultados. Também usado por algumas APIs para implementar a paginação e pode ser usado com `$top` para paginar resultados manualmente. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. (Algumas APIs usam `$skip` em vez disso.) | `/users?$skiptoken=X%274453707402000100000017...`|
 | [$top](#top-parameter)             | Define o tamanho de página de resultados. |[`/users?$top=2`][top-example]
 
 
+## <a name="other-query-parameters"></a>Outros parâmetros de consulta
 
-Esses parâmetros são compatíveis com a [linguagem de consulta OData V4][odata-query]. Nem todos os parâmetros têm suporte em todas as APIs do Microsoft Graph, e o suporte pode diferir significativamente entre os pontos de extremidade `v1.0` e `beta`. 
-
-> **Observação:** no ponto de extremidade `beta` e `v1.0`, o prefixo `$` é opcional. Por exemplo, em vez de `$filter`, você pode usar `filter`. 
+| Nome                     | Descrição | Exemplo
+|:-------------------------|:------------|:---------|
+| [$skipToken](#skiptoken-parameter) | Recupera a próxima página de resultados de conjuntos de resultados que abrangem várias páginas. (Algumas APIs usam `$skip` em vez disso.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## <a name="encoding-query-parameters"></a>Codificação de parâmetros da consulta
 
