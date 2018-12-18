@@ -1,12 +1,13 @@
 ---
 title: Listar windowsMobileMSIs
 description: Listar propriedades e relações dos objetos windowsMobileMSI.
-ms.openlocfilehash: c6743d6c79bdac8563399f2a01f08f0e628ed112
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6874f769330a3c9e0877fffb1c09688d7828bab3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036182"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319709"
 ---
 # <a name="list-windowsmobilemsis"></a>Listar windowsMobileMSIs
 

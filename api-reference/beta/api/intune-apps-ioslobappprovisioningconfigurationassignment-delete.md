@@ -1,12 +1,13 @@
 ---
 title: Excluir iosLobAppProvisioningConfigurationAssignment
 description: Exclui um iosLobAppProvisioningConfigurationAssignment.
-ms.openlocfilehash: 461821255ba5e7c29bcf43b8da8c2f3208441c13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17e5f12682c6907b4c33b050745f0648539fb809
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038032"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319779"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>Excluir iosLobAppProvisioningConfigurationAssignment
 

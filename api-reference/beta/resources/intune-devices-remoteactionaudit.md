@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de remoteActionAudit
 description: Relatório de ações remotos iniciadas nos dispositivos que pertencem a um determinado inquilino.
-ms.openlocfilehash: 9183330971e5c624d1e88532e4ea2c16691875da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323475"
 ---
 # <a name="remoteactionaudit-resource-type"></a>tipo de recurso de remoteActionAudit
 

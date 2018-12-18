@@ -1,12 +1,13 @@
 ---
 title: Excluir managementConditionStatement
 description: Exclui um managementConditionStatement.
-ms.openlocfilehash: 6effa13d1f89d5acf36c8fe0656290d1d30423ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 595218c9e04516b31d04e04897cdf8f6b9a0cba7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316174"
 ---
 # <a name="delete-managementconditionstatement"></a>Excluir managementConditionStatement
 

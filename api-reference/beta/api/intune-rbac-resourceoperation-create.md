@@ -1,12 +1,13 @@
 ---
 title: Criar resourceOperation
 description: Criar um novo objeto resourceOperation.
-ms.openlocfilehash: a7d2bff86c0430b48d0c757df404ad7cad4cfe74
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317833"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Booliano|Determina se a permissão é validada para escopos definidos por atribuição de função.|
+|enabledForScopeValidation|Boolean|Determina se a permissão é validada para escopos definidos por atribuição de função.|
 
 
 

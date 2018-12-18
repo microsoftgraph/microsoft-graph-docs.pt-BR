@@ -1,12 +1,13 @@
 ---
 title: 'domínio: forceDelete'
 description: Exclui um domínio usando uma operação assíncrona.
-ms.openlocfilehash: 590ba49a4aff99385a2584b3d544d7682a030eb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4af5b70fca7600538d4212768243d8de82eb79ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034569"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316209"
 ---
 # <a name="domain-forcedelete"></a>domínio: forceDelete
 
@@ -28,7 +29,7 @@ As seguintes ações são executadas como parte dessa operação:
 
 Após a exclusão de domínio for concluído, as operações de API para o domínio excluído retornará um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio de obter](domain-get.md). Se o domínio foi excluído com êxito, será retornado um código de resposta HTTP 404 na resposta.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -59,9 +60,9 @@ POST /domains/{id}/forceDelete
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Booliano| Opção para desabilitar contas de usuário renomeado. Se uma conta de usuário estiver desabilitada, o usuário não poderão entrar.<br>*True* (padrão) - usuário renomeadas como parte desta operação de contas estão desabilitadas.<br>*False* - contas de usuário renomeadas como parte desta operação não estejam desabilitados. |
+|disableUserAccounts|Boolean| Opção para desabilitar contas de usuário renomeado. Se uma conta de usuário estiver desabilitada, o usuário não poderão entrar.<br>*True* (padrão) - usuário renomeadas como parte desta operação de contas estão desabilitadas.<br>*False* - contas de usuário renomeadas como parte desta operação não estejam desabilitados. |
 
 ## <a name="response"></a>Resposta
 

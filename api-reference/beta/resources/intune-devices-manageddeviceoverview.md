@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedDeviceOverview
 description: Dados de resumo de dispositivos gerenciados
-ms.openlocfilehash: 11f1012329d0217499d813b94f72474da8c683a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 223f11b49ee3cbc9b114047f25b301d9b0c08b24
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317532"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 

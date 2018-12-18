@@ -1,12 +1,13 @@
 ---
 title: Excluir categoria do Outlook
 description: Exclua o objeto outlookCategory especificado.
-ms.openlocfilehash: a240df167918892face0da8932af0f2ff3d23152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 1654b0d67e61ea9f999495eb239eb1d837690159
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034997"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321235"
 ---
 # <a name="delete-outlook-category"></a>Excluir categoria do Outlook
 

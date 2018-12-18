@@ -1,12 +1,13 @@
 ---
 title: tipo de enum usernameSource
 description: Nome de usuário origem.
-ms.openlocfilehash: 6adcb6b13e976b29e9bae5f5cf8207105decd604
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8da5ea0e3487fc32ad202d4b651776a003216b57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039418"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321347"
 ---
 # <a name="usernamesource-enum-type"></a>tipo de enum usernameSource
 

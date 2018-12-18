@@ -1,12 +1,13 @@
 ---
 title: Listar windowsDefenderAdvancedThreatProtectionConfigurations
 description: Listar propriedades e relações dos objetos windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 46ff1e96caf70dc4f4e56a1ab19c0f64a4e729a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a1214cfe215e8db9e0c8e1c209987e045b45940
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005188"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316993"
 ---
 # <a name="list-windowsdefenderadvancedthreatprotectionconfigurations"></a>Listar windowsDefenderAdvancedThreatProtectionConfigurations
 

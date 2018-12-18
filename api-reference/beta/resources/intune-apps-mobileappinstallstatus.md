@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mobileAppInstallStatus
 description: Contém propriedades para o estado de instalação de um aplicativo móvel para um dispositivo.
-ms.openlocfilehash: efd5969e2c00d0230d8efeddff3c41bac90fe9c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba2c0026d54235683a2f5d5b26c19b88ea11a9d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320885"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso de mobileAppInstallStatus
 

@@ -1,12 +1,13 @@
 ---
 title: Obter organização
 description: Leia as propriedades e as relações do objeto organização.
-ms.openlocfilehash: 4a6e52a189fc1bb06fb462ae9158b9a9554fe92c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c741449f18bfba0bb25d07ad0edf578a9760c2dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316972"
 ---
 # <a name="get-organization"></a>Acessar organização
 

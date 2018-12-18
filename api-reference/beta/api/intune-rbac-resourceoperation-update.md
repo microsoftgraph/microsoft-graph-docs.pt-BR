@@ -1,12 +1,13 @@
 ---
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
-ms.openlocfilehash: b89cfb962c6c7f573b4f7f7c6862edd9a66fa833
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040493"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317819"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Booliano|Determina se a permissão é validada para escopos definidos por atribuição de função.|
+|enabledForScopeValidation|Boolean|Determina se a permissão é validada para escopos definidos por atribuição de função.|
 
 
 

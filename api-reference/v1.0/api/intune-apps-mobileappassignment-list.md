@@ -1,12 +1,13 @@
 ---
 title: Listar mobileAppAssignments
 description: Listar propriedades e relações dos objetos mobileAppAssignment.
-ms.openlocfilehash: 8a4cbd101678e9a712a30ffeaf3c0196d807fa1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4cac347aec66a6b41e260941b72cd71514e4a95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318015"
 ---
 # <a name="list-mobileappassignments"></a>Listar mobileAppAssignments
 

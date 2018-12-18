@@ -1,12 +1,13 @@
 ---
 title: Get reportRoot
 description: Ler propriedades e relações do objeto reportRoot.
-ms.openlocfilehash: 681c378977a8439d4876e4a650d1d9cea6d91f60
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9c33b39dd3bf504c1ebfaad7ca41ca19eff69975
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038715"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316321"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 

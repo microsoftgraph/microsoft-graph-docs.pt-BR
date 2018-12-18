@@ -1,12 +1,13 @@
 ---
 title: tipo de enum certificateStore
 description: Tipos de CertificateStore
-ms.openlocfilehash: ffcf3e47260cc5fab15c8d15c07f0adbf587c832
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32a40db850d5b725e12e7244a00b9c7fcee139de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316916"
 ---
 # <a name="certificatestore-enum-type"></a>tipo de enum certificateStore
 

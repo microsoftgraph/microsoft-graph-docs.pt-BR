@@ -1,12 +1,13 @@
 ---
 title: Criar deviceComplianceActionItem
 description: Criar um novo objeto deviceComplianceActionItem.
-ms.openlocfilehash: e4bf13c8d61a44155472b1b0559ac4ebe8fa9329
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4e0facb0a9d34d840b6ef737c09737c9a6626a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006154"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317972"
 ---
 # <a name="create-devicecomplianceactionitem"></a>Criar deviceComplianceActionItem
 

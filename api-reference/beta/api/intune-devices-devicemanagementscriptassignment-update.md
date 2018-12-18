@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceManagementScriptAssignment
 description: Atualize as propriedades de um objeto deviceManagementScriptAssignment.
-ms.openlocfilehash: c69cc71181eb1a46a3505e474991079e5e196590
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6afe48222bf3d74a88fb683222edebd5af025f12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040463"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318344"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>Atualizar deviceManagementScriptAssignment
 

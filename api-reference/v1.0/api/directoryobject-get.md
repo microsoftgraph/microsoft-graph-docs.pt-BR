@@ -1,12 +1,13 @@
 ---
 title: Obter directoryObject
 description: Recupere as propriedades e os relacionamentos do objeto directoryObject.
-ms.openlocfilehash: 21086b7d30b1e4480450b0bb63f4be27f7e7bd5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 452d88e5443a4fdf0f9c48cad127b3882a82217b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006957"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316853"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 

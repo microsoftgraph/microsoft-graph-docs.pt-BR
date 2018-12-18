@@ -1,12 +1,13 @@
 ---
 title: Obter ChartLegend
 description: Recupera as propriedades e os relacionamentos do objeto chartlegend.
-ms.openlocfilehash: 2a98ad13b93900c516921c246f18f6f4f370e574
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 27b1680adb36222e9d05ca01619d87e73f1a6d8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321886"
 ---
 # <a name="get-chartlegend"></a>Obter ChartLegend
 

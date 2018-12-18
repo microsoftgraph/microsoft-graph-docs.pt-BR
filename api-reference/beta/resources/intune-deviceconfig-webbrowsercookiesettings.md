@@ -1,12 +1,13 @@
 ---
 title: tipo de enum webBrowserCookieSettings
 description: Configurações de Cookie do navegador da Web.
-ms.openlocfilehash: cfa691d0a63679a824fe0e693ac7bb91c2276319
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3904bc02d1bccdbe6c2da2c30bbf3872f3c6cb49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035292"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317056"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>tipo de enum webBrowserCookieSettings
 

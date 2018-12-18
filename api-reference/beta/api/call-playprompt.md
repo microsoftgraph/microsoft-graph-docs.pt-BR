@@ -1,12 +1,13 @@
 ---
 title: 'chamar: playPrompt'
 description: Reproduza um prompt na chamada.
-ms.openlocfilehash: a5fb5d34264298726add6cf2742d1319bfcb6c95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 37192d916a1fe4365abafa0564329450a7c67077
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037768"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316580"
 ---
 # <a name="call-playprompt"></a>chamar: playPrompt
 
@@ -14,7 +15,7 @@ ms.locfileid: "27037768"
 
 Reproduza um prompt na chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/playPrompt
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |solicita|coleção de [prompt](../resources/prompt.md)||
 |clientContext|String|O contexto de cliente.|

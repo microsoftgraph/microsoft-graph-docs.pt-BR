@@ -1,19 +1,20 @@
 ---
 title: Atualizar o aplicativo
 description: Atualize as propriedades do objeto application.
-ms.openlocfilehash: eaf3eaaab7e14407c6c778e4e38711b2842ed46c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316685"
 ---
 # <a name="update-application"></a>Atualizar o aplicativo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades do objeto application.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -38,7 +39,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowPublicClient|Booliano| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
+|allowPublicClient|Boolean| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
 |API|[API](../resources/api.md)| Especifica as configurações para um aplicativo de API. |
 |appRoles|coleção [appRole](../resources/approle.md)|A coleção de funções de aplicativos que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
 |applicationAliases|String collection| Os URIs que identifique o aplicativo. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Operador *any* é necessário para expressões de filtro propriedades de valores múltiplos. Não anulável. |
@@ -54,7 +55,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |preAuthorizedApplications|coleção [preAuthorizedApplication](../resources/preauthorizedapplication.md)| Lista de aplicativos e as permissões solicitadas para consentimento implícito. Requer um administrador tenha fornecido a consentimento para o aplicativo. preAuthorizedApplications não exigem o usuário concorda com as permissões solicitadas. Permissões listadas na preAuthorizedApplications não exigem consentimento do usuário. No entanto, qualquer permissões solicitadas adicionais não listados no preAuthorizedApplications exigem o consentimento do usuário. |
 |requiredResourceAccess|coleção [requiredResourceAccess](../resources/requiredresourceaccess.md)|Especifica os recursos que esse aplicativo requer acesso aos e o conjunto de escopos de permissão do OAuth e funções de aplicativos que ele precisa em cada um desses recursos. Essa configuração prévia do acesso a recursos necessários drives a experiência de consentimento. Não anulável.|
 |marcas|String collection| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[web](../resources/web.md)| Especifica as configurações para um aplicativo web. |
+|web|[Web](../resources/web.md)| Especifica as configurações para um aplicativo web. |
 
 ## <a name="response"></a>Resposta
 

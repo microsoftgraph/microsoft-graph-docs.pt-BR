@@ -1,12 +1,13 @@
 ---
 title: Obter windowsPhone81StoreApp
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81StoreApp.
-ms.openlocfilehash: 65a242a1ac906ee07ac7be98afa945db10b9e048
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea7a0fc6f379523cf6e5485578c9092ea9a5c02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038276"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323216"
 ---
 # <a name="get-windowsphone81storeapp"></a>Obter windowsPhone81StoreApp
 

@@ -1,12 +1,13 @@
 ---
 title: Ação resetPasscode
 description: Redefinir senha
-ms.openlocfilehash: 1bd86bd2d4eb136e64c814018ccb763fa5f072d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f000a8c3e7c78f8fefabbaabff0727ff6f3385e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316734"
 ---
 # <a name="resetpasscode-action"></a>Ação resetPasscode
 

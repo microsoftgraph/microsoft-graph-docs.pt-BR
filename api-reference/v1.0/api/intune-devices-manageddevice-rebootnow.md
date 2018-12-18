@@ -1,12 +1,13 @@
 ---
 title: Ação rebootNow
 description: Reinicie o dispositivo
-ms.openlocfilehash: 75505a0018ae599e74500fd0b7ae9f80ff285a47
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54b058a5dc8c425c70667c2d04f6a12fe1a81685
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006980"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323321"
 ---
 # <a name="rebootnow-action"></a>Ação rebootNow
 

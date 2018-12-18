@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceManagementSubscriptionState
 description: Estado de assinatura de gerenciamento de dispositivo móvel do locatário.
-ms.openlocfilehash: db3787b327608d4ffabdf40189f64bcf63269ec7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 840614cad992fb057f8bd4a803a1fe9479a26be3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323608"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>tipo de enum deviceManagementSubscriptionState
 
@@ -18,12 +19,12 @@ Estado de assinatura de gerenciamento de dispositivo móvel do locatário.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|pendente|0|Pendente|
+|pendente|0|Pending|
 |ativo|1|Ativo|
 |warning|2|Aviso|
 |desabilitado|3|Desabilitado|
-|deleted|4|Excluído|
-|bloqueado|5|Bloqueado|
+|deleted|4|Deleted|
+|bloqueado|5|Blocked|
 |lockedOut|8|LockedOut|
 
 

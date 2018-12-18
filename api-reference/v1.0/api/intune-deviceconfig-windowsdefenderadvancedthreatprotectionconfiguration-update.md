@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Atualizar as propriedades de um objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 59fca8540c5c2f5e499f709c2a4547274fde800f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49e8a1fb44933d3ff43c38f1b4b3b0e71a6a7b2d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319828"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 

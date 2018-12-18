@@ -1,12 +1,13 @@
 ---
 title: Obtenha uma resposta a uma mensagem de canal
 description: Obtenha uma única resposta a uma mensagem em um canal de uma equipe.
-ms.openlocfilehash: 3bb13cecb644b8ef1de4ebb0681408f16260a279
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 190bcd04adb07ccdeed83095e6a29b0bc1d23241
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037670"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319275"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Obtenha uma resposta a uma mensagem de canal
 
@@ -14,7 +15,7 @@ ms.locfileid: "27037670"
 
 Obtenha uma única resposta a uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

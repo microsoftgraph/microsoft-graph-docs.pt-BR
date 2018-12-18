@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso organization
 description: O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
-ms.openlocfilehash: e7e49e5676e412ea0e174b2e158b98efea8e0c7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 447ad5bb87c3c5783ba9097097fbc08281442a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323426"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

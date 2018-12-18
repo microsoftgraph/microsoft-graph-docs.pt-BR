@@ -1,12 +1,13 @@
 ---
 title: Criar auditEvent
 description: Criar um novo objeto auditEvent.
-ms.openlocfilehash: b26b9fda355cda5b72133bc5257c0606a84de9a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0997ca2e9a7bf5421d20e2e3c784ebd444943d4b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005399"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318407"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 

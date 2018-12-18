@@ -1,12 +1,13 @@
 ---
 title: Obter dataSharingConsent
 description: Leia as propriedades e os relacionamentos do objeto dataSharingConsent.
-ms.openlocfilehash: baa1995d55c820ae3fe148320186265d6dbf81a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5cb961260d7d22479abc4c16acf83d6a91378d12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317623"
 ---
 # <a name="get-datasharingconsent"></a>Obter dataSharingConsent
 

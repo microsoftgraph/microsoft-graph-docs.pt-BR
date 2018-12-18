@@ -1,12 +1,13 @@
 ---
 title: Obter termsAndConditionsAssignment
 description: Ler propriedades e relações do objeto termsAndConditionsAssignment.
-ms.openlocfilehash: ad1defe1403afad9ac30a3d056d198e4e116802c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb0f56703e50a48966dc2a8c27aa6a66e5fbdb6b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003725"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319436"
 ---
 # <a name="get-termsandconditionsassignment"></a>Obter termsAndConditionsAssignment
 

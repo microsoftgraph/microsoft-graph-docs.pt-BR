@@ -1,12 +1,13 @@
 ---
 title: Lista androidWorkProfileEnterpriseWiFiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileEnterpriseWiFiConfiguration.
-ms.openlocfilehash: 23af237e69f50256406b17491d2fb6297b631ffd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e69f9f3793de0421cadb8ec27220e0369aeebc3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034584"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321648"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>Lista androidWorkProfileEnterpriseWiFiConfigurations
 

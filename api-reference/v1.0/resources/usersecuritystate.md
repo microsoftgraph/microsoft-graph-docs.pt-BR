@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de userSecurityState
 description: Contém informações com informações de estado sobre a conta de usuário.
-ms.openlocfilehash: dbb4b6600cc11a75c84f2f0b233535d012309f88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5347ec599b88ffa65138c44cfb294339585484c8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005962"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319485"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso de userSecurityState
 
@@ -20,7 +21,7 @@ Contém informações com informações de estado sobre a conta de usuário.
 |accountName|String|Nome da conta de usuário (sem o domínio do Active Directory ou domínio DNS) - conta (também chamado de `mailNickName`).|
 |domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, o formato domínio \ conta).|
 |emailRole|emailRole|Para alertas relacionados a email - o email de uma conta de usuário 'função'. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Booliano|Indica se o usuário conectado por meio da VPN.|
+|isVpn|Boolean|Indica se o usuário conectado por meio da VPN.|
 |logonDateTime|DateTimeOffset|Hora em que a entrar ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |identificação de logon|String|ID de usuário entrar.|
 |logonIp|String|Endereço IP que a solicitação de entrada se originou.|

@@ -1,19 +1,20 @@
 ---
 title: Obter directoryObject
 description: Recupere as propriedades e relações do objeto directoryobject.
-ms.openlocfilehash: ed1e765cb7cbde38cbb47a8dfdd58b018d142e7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 52862d10c8361ea8ba365d06dcbaf0ce06b2779f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037696"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316370"
 ---
 # <a name="get-directoryobject"></a>Obter directoryObject
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere as propriedades e relações do objeto directoryobject.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

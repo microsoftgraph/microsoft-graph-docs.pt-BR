@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso proxiedDomain
 description: Domínio com proxy
-ms.openlocfilehash: d73ed20341a7de025f6f2d39536a1e791b978f55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc924d75bc2cf1310cb715033281f59b70abb32a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005975"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320290"
 ---
 # <a name="proxieddomain-resource-type"></a>Tipo de recurso proxiedDomain
 

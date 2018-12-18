@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceConfigurationUserStatus
 description: Ainda não documentado
-ms.openlocfilehash: 69e4c4b23d786c52a89ba633a12351f1fe2fef5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d47881bcc13e14d96be86056e3cc83fa9e47a697
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006498"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319940"
 ---
 # <a name="deviceconfigurationuserstatus-resource-type"></a>Tipo de recurso deviceConfigurationUserStatus
 

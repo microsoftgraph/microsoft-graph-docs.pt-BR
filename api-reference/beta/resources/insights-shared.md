@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso compartilhado
 description: 'Uma compreensão dos representando arquivos compartilhados com ou por um usuário específico. Há suporte para os seguintes arquivos compartilhados:'
-ms.openlocfilehash: 786e3cc94a3c108b30cca880491dab5725014570
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: fc48fe3c591d981bd6229c26aaccb85552f4836f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038111"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315803"
 ---
 # <a name="shared-resource-type"></a>tipo de recurso compartilhado
 
@@ -38,7 +39,7 @@ Uma compreensão dos representando arquivos compartilhados com ou por um usuári
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entidade        | Usado para navegar até o item que foi compartilhado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
+| recurso      | Entity        | Usado para navegar até o item que foi compartilhado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

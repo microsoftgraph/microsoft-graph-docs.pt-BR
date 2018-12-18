@@ -1,12 +1,13 @@
 ---
 title: 'Range: merge'
 description: Mescla as células do intervalo em uma região da planilha.
-ms.openlocfilehash: 8680afec198cebb820fc695cf7714494a2539cdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 628acea9c86ff7cf8b460fb5db2abb7157c85146
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037069"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317336"
 ---
 # <a name="range-merge"></a>Range: merge
 
@@ -39,7 +40,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |across|booliano|Opcional. Defina true para mesclar células em todas as linhas do intervalo especificado como células mescladas separadamente. O valor padrão é false.|
 

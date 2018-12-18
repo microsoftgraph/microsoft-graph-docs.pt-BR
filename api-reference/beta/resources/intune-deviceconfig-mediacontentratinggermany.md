@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso mediaContentRatingGermany
 description: Ainda não documentado
-ms.openlocfilehash: 821a648f839e531c2efaa3da4b4b1aead65c9673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b7e02226ccea817a609d6e7f3059bff8e6bdb9ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036597"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318358"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Tipo de recurso mediaContentRatingGermany
 

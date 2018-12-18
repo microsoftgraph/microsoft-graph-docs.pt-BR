@@ -1,12 +1,13 @@
 ---
 title: Obter windowsManagementApp
 description: Leia as propriedades e os relacionamentos do objeto windowsManagementApp.
-ms.openlocfilehash: b5a614a4bfdf68d94bef266f6013bade627cc7f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dc1baf7e8d85d315d2778102b0e86f3c51178abb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316573"
 ---
 # <a name="get-windowsmanagementapp"></a>Obter windowsManagementApp
 

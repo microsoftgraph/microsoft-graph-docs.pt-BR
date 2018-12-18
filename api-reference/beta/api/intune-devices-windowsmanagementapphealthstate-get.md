@@ -1,12 +1,13 @@
 ---
 title: Obter windowsManagementAppHealthState
 description: Leia as propriedades e os relacionamentos do objeto windowsManagementAppHealthState.
-ms.openlocfilehash: be59679c926a0500f5b891e63f565fe67419d96d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 08a6964f44b8169867aa9514049cce9f0e8cd3f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316153"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>Obter windowsManagementAppHealthState
 

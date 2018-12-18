@@ -1,12 +1,13 @@
 ---
 title: Criar userInstallStateSummary
 description: Criar um novo objeto userInstallStateSummary.
-ms.openlocfilehash: d524801d8ee1b44ea955afdeb2a7c78364d89360
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1da2855896bae9d9c902ae978d3ce8c127f3bc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007152"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318414"
 ---
 # <a name="create-userinstallstatesummary"></a>Criar userInstallStateSummary
 

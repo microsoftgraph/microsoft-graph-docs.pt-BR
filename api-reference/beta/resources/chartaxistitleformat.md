@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartAxisTitleFormat
 description: Representa a formatação do título do eixo do gráfico.
-ms.openlocfilehash: 70a1dd344355c82d3a8afe9daf2a2e713cce14ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 1884b38acbe9cc312c37966f0f6231c17fde01c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318743"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Tipo de recurso ChartAxisTitleFormat
 

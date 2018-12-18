@@ -1,12 +1,13 @@
 ---
 title: Atualizar chartlineformat
 description: Atualiza as propriedades do objeto chartlineformat.
-ms.openlocfilehash: 9bd1a267a463b9ba7a12f743b25571d2825b09a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 816056cefea715317a05d65eebf696c2cc907cfe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316440"
 ---
 # <a name="update-chartlineformat"></a>Atualizar chartlineformat
 

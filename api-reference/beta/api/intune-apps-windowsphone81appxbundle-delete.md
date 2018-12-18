@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPhone81AppXBundle
 description: Exclui um windowsPhone81AppXBundle.
-ms.openlocfilehash: 2d629bc68710d579c1b6da29bc28feff38509467
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e63d69255866565807ac23e3f6801bdd97be9861
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035288"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318897"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>Excluir windowsPhone81AppXBundle
 

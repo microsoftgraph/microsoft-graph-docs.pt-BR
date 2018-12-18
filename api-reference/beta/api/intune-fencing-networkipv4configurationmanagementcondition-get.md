@@ -1,12 +1,13 @@
 ---
 title: Obter networkIPv4ConfigurationManagementCondition
 description: Leia as propriedades e os relacionamentos do objeto networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: ab6b216b031b457206440f3b01ffffdf7e325248
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a13e202d1347705edd4d26e01a65668dba971f73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038753"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319492"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Obter networkIPv4ConfigurationManagementCondition
 

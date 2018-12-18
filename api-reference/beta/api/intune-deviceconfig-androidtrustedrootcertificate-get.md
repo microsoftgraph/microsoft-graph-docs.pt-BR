@@ -1,12 +1,13 @@
 ---
 title: Obter androidTrustedRootCertificate
 description: Leia as propriedades e os relacionamentos do objeto androidTrustedRootCertificate.
-ms.openlocfilehash: 5133f483a45398ca05174cda0c3a6ae10eb0cf8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a96e5b393ecb9ea60fd9945beadc742b2e5bc4af
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040165"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319835"
 ---
 # <a name="get-androidtrustedrootcertificate"></a>Obter androidTrustedRootCertificate
 

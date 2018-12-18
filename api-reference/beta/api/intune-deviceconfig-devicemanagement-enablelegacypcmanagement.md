@@ -1,12 +1,13 @@
 ---
 title: ação de enableLegacyPcManagement
 description: Ainda não documentado
-ms.openlocfilehash: aac634c2e39ad02b3812b1c45df636c5bedc52dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f911be27dee293a1e968809eff1bf1646d3e69de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037623"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317805"
 ---
 # <a name="enablelegacypcmanagement-action"></a>ação de enableLegacyPcManagement
 

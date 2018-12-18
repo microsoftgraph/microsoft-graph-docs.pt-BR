@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceCategory
 description: Atualizar as propriedades de um objeto deviceCategory.
-ms.openlocfilehash: bd01264d6e7e07a71c683c948fe6b01fd3822f5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8676067ff4ce34358bcfd8400d28e1d73bd11f68
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041176"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321515"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 

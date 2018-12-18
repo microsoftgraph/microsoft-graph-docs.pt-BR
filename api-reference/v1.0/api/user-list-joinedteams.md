@@ -1,20 +1,21 @@
 ---
-title: Lista joinedTeams
+title: Listar joinedTeams
 description: Obtenha as equipes no Microsoft Teams que o usuário é um membro direto.
-ms.openlocfilehash: fc5e7f01775e352c61802c457bfa9c41a218463a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 1e29b21adbf37128ccf8fe7ff9d70596c7b72499
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005226"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317742"
 ---
-# <a name="list-joinedteams"></a>Lista joinedTeams
+# <a name="list-joinedteams"></a>Listar joinedTeams
 
 
 
 Obtenha as [equipes](../resources/team.md) no Microsoft Teams que o usuário é um membro direto.
  
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

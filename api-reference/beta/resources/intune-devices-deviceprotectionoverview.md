@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceProtectionOverview
 description: Informações de hardware de um determinado dispositivo.
-ms.openlocfilehash: 81252fdf60c1de129a615b075968e0e6f1eca943
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e705324bfc611117657ec629f8770e76c69be28d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317049"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso de deviceProtectionOverview
 

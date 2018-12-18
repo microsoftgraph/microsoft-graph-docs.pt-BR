@@ -1,12 +1,13 @@
 ---
 title: Acessar macOSOfficeSuiteApp
 description: Leia as propriedades e as relações do objeto macOSOfficeSuiteApp.
-ms.openlocfilehash: 82c0d87599169f45dc94b573c983b1d2318cb41b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 828ce8c90e7e33abef398bfc1dcdc0953ed3f5f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317994"
 ---
 # <a name="get-macosofficesuiteapp"></a>Acessar macOSOfficeSuiteApp
 

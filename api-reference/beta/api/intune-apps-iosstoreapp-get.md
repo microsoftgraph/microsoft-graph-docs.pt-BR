@@ -1,12 +1,13 @@
 ---
 title: Acessar iosStoreApp
 description: Leia as propriedades e as relações do objeto iosStoreApp.
-ms.openlocfilehash: 74d5cbd2aedf884214d384c9fb00ec783cebca9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f6a8f2c08eeaa44604f3d9c4d65f77d9f1a53232
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033016"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316132"
 ---
 # <a name="get-iosstoreapp"></a>Acessar iosStoreApp
 

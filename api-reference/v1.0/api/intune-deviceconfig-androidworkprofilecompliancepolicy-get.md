@@ -1,12 +1,13 @@
 ---
 title: Obter androidWorkProfileCompliancePolicy
 description: Leia as propriedades e os relacionamentos do objeto androidWorkProfileCompliancePolicy.
-ms.openlocfilehash: cc4724968280201c883f7d6016caaeecc8910628
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5426fe184f370c84701913db28ec98d397db10ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006588"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322061"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Obter androidWorkProfileCompliancePolicy
 

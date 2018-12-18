@@ -1,12 +1,13 @@
 ---
 title: Atualizar telecomExpenseManagementPartner
 description: Atualizar as propriedades de um objeto telecomExpenseManagementPartner.
-ms.openlocfilehash: 51c3ed10b0002b4ba1a2d70a3be0a3cde69a5a05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5180ce7338bdffde0fb51f504882e2b82ca96cac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318722"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Atualizar telecomExpenseManagementPartner
 

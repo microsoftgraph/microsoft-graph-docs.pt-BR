@@ -1,12 +1,13 @@
 ---
 title: tipo de enum devicePlatformType
 description: Tipos de plataforma com suporte.
-ms.openlocfilehash: a5698a00b712606632e9b44783b5b9d1ffc3caab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6609ea65eb7469155f4e1bf3f8d6e5ccc424d338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037981"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316216"
 ---
 # <a name="deviceplatformtype-enum-type"></a>tipo de enum devicePlatformType
 

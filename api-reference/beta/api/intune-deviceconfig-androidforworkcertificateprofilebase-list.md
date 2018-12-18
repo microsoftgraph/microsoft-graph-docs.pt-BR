@@ -1,12 +1,13 @@
 ---
 title: Lista androidForWorkCertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkCertificateProfileBase.
-ms.openlocfilehash: 794d716307a79236c4e21e7811a49b1000c8bf1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a0bd2de1408ad6fa41bb8b1e7be9d691460ceb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318155"
 ---
 # <a name="list-androidforworkcertificateprofilebases"></a>Lista androidForWorkCertificateProfileBases
 

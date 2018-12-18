@@ -1,12 +1,13 @@
 ---
 title: tipo de enum complianceState
 description: Estado de conformidade.
-ms.openlocfilehash: c49c0ecc2511f612e743fb5d86a53d150d3fbf45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3fa0548c2a67aa5def5f859014f52e97bdda815b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321228"
 ---
 # <a name="compliancestate-enum-type"></a>tipo de enum complianceState
 

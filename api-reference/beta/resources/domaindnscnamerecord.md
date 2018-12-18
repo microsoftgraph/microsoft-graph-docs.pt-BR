@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso domainDnsCnameRecord
 description: Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade DomainDnsRecord.
-ms.openlocfilehash: 9eaa48bb492572d4e5cac57ee07420ed492aac73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0ce5a748d9a1b558b4ac49e104eb9498efe674aa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040167"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315838"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Tipo de recurso domainDnsCnameRecord
 

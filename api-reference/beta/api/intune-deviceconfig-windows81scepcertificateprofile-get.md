@@ -1,12 +1,13 @@
 ---
 title: Obter windows81SCEPCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto windows81SCEPCertificateProfile.
-ms.openlocfilehash: 389914336d4d937306829336b155440fe8ac14d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb2f627738b3ab0e86826979f75f0863855e2142
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040501"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316279"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Obter windows81SCEPCertificateProfile
 

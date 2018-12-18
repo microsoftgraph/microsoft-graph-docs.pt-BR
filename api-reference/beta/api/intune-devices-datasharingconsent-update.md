@@ -1,12 +1,13 @@
 ---
 title: Atualizar dataSharingConsent
 description: Atualize as propriedades de um objeto dataSharingConsent.
-ms.openlocfilehash: 75cf844a279bf45dc5297b08a3926031b8cdc06a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1d7759def9c11165fca0b646f166ac792c14369e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317630"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|String|O consentimento de compartilhamento de dados Id|
 |Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
 |termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
-|concedido|Booliano|O estado foram concedido para os consentimento de compartilhamento de dados|
+|concedido|Boolean|O estado foram concedido para os consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
 |grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
 |grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|

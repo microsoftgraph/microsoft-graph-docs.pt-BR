@@ -1,12 +1,13 @@
 ---
 title: Criar windowsInformationProtectionNetworkLearningSummary
 description: Criar um novo objeto windowsInformationProtectionNetworkLearningSummary.
-ms.openlocfilehash: 55ec7f58b3c7bac3d90798bc7e7b940043f1ac94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: daa85ae02a94594c03b110c9a407f41db02c1c8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006480"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319121"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Criar windowsInformationProtectionNetworkLearningSummary
 

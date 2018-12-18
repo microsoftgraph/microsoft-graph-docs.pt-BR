@@ -1,12 +1,13 @@
 ---
 title: Criar iosUpdateConfiguration
 description: Cria um novo objeto iosUpdateConfiguration.
-ms.openlocfilehash: 65acd8334cc53e637563cae45d4a6d5721405843
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5eccada804cccaa4df4b9be29d5550a66a35e990
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320563"
 ---
 # <a name="create-iosupdateconfiguration"></a>Criar iosUpdateConfiguration
 

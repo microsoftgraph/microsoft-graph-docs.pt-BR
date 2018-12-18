@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de importedAppleDeviceIdentity
 description: O recurso de importedAppleDeviceIdentity representa a identidade do dispositivo importadas de um dispositivo da Apple.
-ms.openlocfilehash: 8441d169e0e7aa1cbf9c79a017599cca1cc4aa04
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 966e384b63026def366ba19ea634d635d77d9083
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034570"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317588"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>tipo de recurso de importedAppleDeviceIdentity
 
@@ -32,7 +33,7 @@ O recurso de importedAppleDeviceIdentity representa a identidade do dispositivo 
 |serialNumber|String|Número de série do dispositivo|
 |requestedEnrollmentProfileId|String|Administração de Id de perfil de inscrição pretende aplicáveis ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de inscrição de tempo foi atribuído ao dispositivo|
-|isSupervised|Booliano|Indica se o dispositivo Apple seja supervisionado. Mais informações estão em:https://support.apple.com/en-us/HT202837|
+|isSupervised|Boolean|Indica se o dispositivo Apple seja supervisionado. Mais informações estão em:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta do dispositivo Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Criada data hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última contatado data hora do dispositivo|

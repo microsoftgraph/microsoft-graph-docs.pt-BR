@@ -1,12 +1,13 @@
 ---
 title: Listar androidManagedAppProtections
 description: Listar propriedades e relações dos objetos androidManagedAppProtection.
-ms.openlocfilehash: c135f687aaa8d9e7a6ae4fd872f40cb028298bb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00b2ffe54aaeb37087520210386b00821882c8e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006248"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317357"
 ---
 # <a name="list-androidmanagedappprotections"></a>Listar androidManagedAppProtections
 

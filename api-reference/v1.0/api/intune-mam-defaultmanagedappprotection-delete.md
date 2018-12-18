@@ -1,12 +1,13 @@
 ---
 title: Excluir defaultManagedAppProtection
 description: Exclui defaultManagedAppProtection.
-ms.openlocfilehash: 8f1b77cbcf487c3eec9c31b89e97ff5ca5eb0e2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9e9e4909d420fcf6747c6cfdba1d9c85a4d8667
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006606"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319919"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>Excluir defaultManagedAppProtection
 

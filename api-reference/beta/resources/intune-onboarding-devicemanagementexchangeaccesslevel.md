@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceManagementExchangeAccessLevel
 description: Nível de acesso no Exchange.
-ms.openlocfilehash: 2d45dab4cecc65fa7514eef178b134da05e466d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f163c5186c1fc8dac13a22d730870c52df66a06
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037185"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320794"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>tipo de enum deviceManagementExchangeAccessLevel
 
@@ -18,7 +19,7 @@ Nível de acesso no Exchange.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhuma regra de acesso do dispositivo foi configurada no Exchange.|
+|none|0|Nenhuma regra de acesso do dispositivo foi configurada no Exchange.|
 |permitir|1|Permita o acesso de dispositivo para o Exchange.|
 |bloquear|2|Bloquear o dispositivo acessem o Exchange.|
 |quarentena|3|O dispositivo de quarentena no Exchange.|

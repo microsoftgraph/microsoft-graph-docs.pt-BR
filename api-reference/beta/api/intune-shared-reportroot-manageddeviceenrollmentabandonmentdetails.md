@@ -1,12 +1,13 @@
 ---
 title: função managedDeviceEnrollmentAbandonmentDetails
 description: Metadados para o relatório de detalhes de abandono de inscrição
-ms.openlocfilehash: 53096db451630240c7d87f40250a8c55aec9618d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 187f5389bbea761555f4067081d4e0557f2ce5bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033769"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317952"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>função managedDeviceEnrollmentAbandonmentDetails
 

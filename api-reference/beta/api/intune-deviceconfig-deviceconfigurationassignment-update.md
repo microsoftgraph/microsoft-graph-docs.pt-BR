@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceConfigurationAssignment
 description: Atualizar as propriedades de um objeto deviceConfigurationAssignment.
-ms.openlocfilehash: 2933f66f648a00f4fd66dd4ec20cbcbba395acd2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 50a4c677cf54b4d4b262a7b559f14d454e6765be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035830"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317679"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Atualizar deviceConfigurationAssignment
 

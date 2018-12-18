@@ -1,12 +1,13 @@
 ---
 title: Ação disableLostMode
 description: Desabilitar o modo perdido
-ms.openlocfilehash: d0482dc00d0c397ca7a2c20d35d178257295e4f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2fb8b58862640aa40a0722e24a223feb07a1ec15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035726"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317504"
 ---
 # <a name="disablelostmode-action"></a>Ação disableLostMode
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceConfigurationUserStatus
 description: Atualizar as propriedades de um objeto deviceConfigurationUserStatus.
-ms.openlocfilehash: c8d34042be1e5166880c0a23ab9ec7fd0126df01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11ad78aa074eb42e57d8c74af6d20b039e164a28
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27317812"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>Atualizar deviceConfigurationUserStatus
 

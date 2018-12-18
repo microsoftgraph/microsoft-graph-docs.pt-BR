@@ -1,12 +1,13 @@
 ---
 title: Obter windows81TrustedRootCertificate
 description: Leia as propriedades e os relacionamentos do objeto windows81TrustedRootCertificate.
-ms.openlocfilehash: 17ad19e1c0cac90a268f63d67256dc34bfc6fd87
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bc3013a8925ff30f31652d458a4e5236ab169982
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032911"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320353"
 ---
 # <a name="get-windows81trustedrootcertificate"></a>Obter windows81TrustedRootCertificate
 
