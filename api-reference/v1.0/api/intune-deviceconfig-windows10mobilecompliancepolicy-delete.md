@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10MobileCompliancePolicy
 description: Exclui windows10MobileCompliancePolicy.
-ms.openlocfilehash: 48ecade29a261aada86cf6a106faf0a0479d8e94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46c9b22edfb84e0bb709b7de238c6a09fe82ee3d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003971"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301817"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>Excluir windows10MobileCompliancePolicy
 

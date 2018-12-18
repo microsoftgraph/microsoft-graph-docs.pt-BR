@@ -1,12 +1,13 @@
 ---
 title: Obtenha o aplicativo
 description: Recupere as propriedades e relações do objeto application.
-ms.openlocfilehash: 6e1b3f9771205b8b7decb4650993953dd6df2acb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: a041cbc4e97a59500106542b88e754b9c495f985
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034667"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303490"
 ---
 # <a name="get-application"></a>Obtenha o aplicativo
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034667"
 
 Recupere as propriedades e relações do objeto application.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

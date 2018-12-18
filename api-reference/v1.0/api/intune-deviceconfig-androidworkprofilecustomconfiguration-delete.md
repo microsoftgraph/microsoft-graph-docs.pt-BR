@@ -1,12 +1,13 @@
 ---
 title: Excluir androidWorkProfileCustomConfiguration
 description: Exclui um androidWorkProfileCustomConfiguration.
-ms.openlocfilehash: c7e04ef0c68fd5f04ce18af673dc89551c98d5df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91df3e95903621b603c30fc403f37e9e8c7b8ff3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007303"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303700"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>Excluir androidWorkProfileCustomConfiguration
 

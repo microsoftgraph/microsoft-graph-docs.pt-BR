@@ -1,12 +1,13 @@
 ---
 title: Obter RangeFormat
 description: Recupere as propriedades e os relacionamentos do objeto rangeformat.
-ms.openlocfilehash: a60c2b7c61f07e70ed9a858069647a60a90b42b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 180f9a0088e0c6f724e4983acdb51f87458962ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003530"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304785"
 ---
 # <a name="get-rangeformat"></a>Obter RangeFormat
 

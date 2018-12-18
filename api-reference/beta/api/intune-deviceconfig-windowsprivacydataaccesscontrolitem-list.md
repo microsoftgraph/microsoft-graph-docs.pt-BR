@@ -1,12 +1,13 @@
 ---
 title: Lista windowsPrivacyDataAccessControlItems
 description: Lista as propriedades e os relacionamentos dos objetos windowsPrivacyDataAccessControlItem.
-ms.openlocfilehash: b176b7632d62957f855597598b8b6ade9050b26a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 642db3e0381adf3bedfff52baf4987b7ea43cdaf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040308"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303168"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>Lista windowsPrivacyDataAccessControlItems
 

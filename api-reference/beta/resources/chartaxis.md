@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartAxis
 description: Representa um único eixo em um gráfico.
-ms.openlocfilehash: f92e8dd12dc2d7036d5022e2b293cfc290faf910
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 766a1a6823cc83efb3ecaf7250f230216fc13cb0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301824"
 ---
 # <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
 

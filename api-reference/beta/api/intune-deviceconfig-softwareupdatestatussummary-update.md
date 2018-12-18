@@ -1,12 +1,13 @@
 ---
 title: Atualizar softwareUpdateStatusSummary
 description: Atualizar as propriedades de um objeto softwareUpdateStatusSummary.
-ms.openlocfilehash: 943de78a4a1d1a6297a1cf3b93cc5cf1bd05ec16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6cb95a9bfb28e0488148d1f8773c87209c585b70
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040341"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302279"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Atualizar softwareUpdateStatusSummary
 

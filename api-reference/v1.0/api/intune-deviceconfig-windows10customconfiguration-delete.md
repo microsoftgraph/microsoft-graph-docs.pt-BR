@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10CustomConfiguration
 description: Exclui windows10CustomConfiguration.
-ms.openlocfilehash: 5dd5d76fb3339527d740ef0891e383510bf9f284
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 983bdc29dd5eeec2b8a743ba560cf73b34874f35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003785"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302146"
 ---
 # <a name="delete-windows10customconfiguration"></a>Excluir windows10CustomConfiguration
 

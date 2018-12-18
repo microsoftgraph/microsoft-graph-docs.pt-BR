@@ -1,12 +1,13 @@
 ---
 title: Listar directoryRoles
 description: Lista as funções de diretório ativadas no locatário.
-ms.openlocfilehash: ef43a0b016aadccd4a92a53672a18b7fe74ec154
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: c5639bac02fd002130657bc4e8b95f62d3bec986
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006213"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301705"
 ---
 # <a name="list-directoryroles"></a>Listar directoryRoles
 

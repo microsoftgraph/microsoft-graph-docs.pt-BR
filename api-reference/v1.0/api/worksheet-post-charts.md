@@ -1,12 +1,13 @@
 ---
 title: Criar gráfico
 description: Use esta API para criar um novo gráfico.
-ms.openlocfilehash: 95ca5233ef21ee73b244720493d07913fec9d088
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 507972400367056b9ba2a97668f388a46b7f86b8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301005"
 ---
 # <a name="create-chart"></a>Criar gráfico
 

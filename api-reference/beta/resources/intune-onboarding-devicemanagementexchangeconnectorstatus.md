@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceManagementExchangeConnectorStatus
 description: O status atual do Exchange Connector.
-ms.openlocfilehash: cd8b845f4902788029be8661b47161997203fc73
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b2576d75eef285fe64e8ebf4d89dd004130fa78
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303791"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>tipo de enum deviceManagementExchangeConnectorStatus
 
@@ -18,7 +19,7 @@ O status atual do Exchange Connector.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum conector existe.|
+|none|0|Nenhum conector existe.|
 |connectionPending|1|Conexão pendente para o ambiente do Exchange.|
 |conectado|2|Conectado ao ambiente do Exchange|
 |desconectados|3|Desconectado do ambiente do Exchange|

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de managedDeviceCleanupSettings
 description: Defina a regra quando o administrador deseja que os dispositivos devem ser limpos.
-ms.openlocfilehash: f7782ac9d6571b58c8ed1e7964637736fcb5f3d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84650c4d2d182fe0da30ced56786a2c0216a6358
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037169"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304085"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso de managedDeviceCleanupSettings
 

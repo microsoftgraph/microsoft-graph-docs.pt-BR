@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceConfigurationUserStateSummary
 description: Atualize as propriedades de um objeto deviceConfigurationUserStateSummary.
-ms.openlocfilehash: fd22d51f9d52f97c080cace5c6cf434ccaff2416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a11c4447fee84116b68416ba78f610e8067a6104
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038235"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301565"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Atualizar deviceConfigurationUserStateSummary
 

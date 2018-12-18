@@ -1,12 +1,13 @@
 ---
 title: 'TableRow: Range'
 description: Retorna o objeto de intervalo associado a toda a linha.
-ms.openlocfilehash: 22e113c7a0d9b93bb84d0e26722c6db666be9b51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f6ad50c8d4bd94e2f37c774b8dba8696be43026e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303847"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 

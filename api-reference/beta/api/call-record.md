@@ -1,12 +1,13 @@
 ---
 title: 'chamar: registro'
 description: Registre a chamada.
-ms.openlocfilehash: 2d876b30205594e162ac9f5aa1b2068058efea7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035624"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303546"
 ---
 # <a name="call-record"></a>chamar: registro
 
@@ -14,14 +15,14 @@ ms.locfileid: "27035624"
 
 Registre a chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,15 +39,15 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |solicita|coleção [mediaprompt](../resources/mediaprompt.md) | Inicia a coleção de prompts para reproduzir (se houver) antes da gravação. Os clientes podem escolher especificar a ação de "playPrompt" separadamente ou especificar como parte do "Registro" - principalmente todos os registros são precedido por um prompt |
-|bargeInAllowed|Booliano| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
+|bargeInAllowed|Boolean| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Silêncio inicial máximo permitido desde o momento em que iniciamos a operação de registro antes de tempo limite e a operação de falha. Se podemos estiver reproduzindo um prompt, este timer começa após a conclusão da prompt. |
 |maxSilenceTimeoutInSeconds|Int32| O tempo limite de silêncio máximo em segundos.|
 |maxRecordDurationInSeconds|Int32| A duração máxima de registro em segundos.|
-|playBeep|Booliano| Reproduz um alarme sonoro depois de reproduzir o prompt.|
-|streamWhileRecording|Booliano|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
+|playBeep|Boolean| Reproduz um alarme sonoro depois de reproduzir o prompt.|
+|streamWhileRecording|Boolean|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
 |stopTones|String collection|Pare de toques especificados para terminar gravação.|
 |clientContext|String|O contexto de cliente.|
 

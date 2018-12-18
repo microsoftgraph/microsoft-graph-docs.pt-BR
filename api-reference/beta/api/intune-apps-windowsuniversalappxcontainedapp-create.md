@@ -1,12 +1,13 @@
 ---
 title: Criar windowsUniversalAppXContainedApp
 description: Crie um novo objeto de windowsUniversalAppXContainedApp.
-ms.openlocfilehash: 156af7a32e6041fbe06bc4f3dca4071425e5b468
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 97f50a79194af878569327073ae8911bf08199f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040176"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302811"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Criar windowsUniversalAppXContainedApp
 

@@ -1,12 +1,13 @@
 ---
 title: Listar sectionGroups
 description: Recupere uma lista de objetossectionGroup.
-ms.openlocfilehash: c81d216917fef7032c210490ac6ba3a0ef922a30
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: eeadff91bab167ae9e3be2f4e80d42f1515d7c8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305450"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 

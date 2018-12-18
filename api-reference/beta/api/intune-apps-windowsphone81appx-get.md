@@ -1,12 +1,13 @@
 ---
 title: Obter windowsPhone81AppX
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81AppX.
-ms.openlocfilehash: e0648a200018ea0e1c23046bfaa0a6854dc586cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e7c58e88fc701222ae290c9774f5a56f01f7960
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304974"
 ---
 # <a name="get-windowsphone81appx"></a>Obter windowsPhone81AppX
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPhone81CustomConfiguration
 description: Exclui windowsPhone81CustomConfiguration.
-ms.openlocfilehash: 7cb8b7eaa444752de2c8dfee6eb235bf3b0d80c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd43d5de7ae40a16bf42e3b2f114730b7549f045
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006135"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304484"
 ---
 # <a name="delete-windowsphone81customconfiguration"></a>Excluir windowsPhone81CustomConfiguration
 

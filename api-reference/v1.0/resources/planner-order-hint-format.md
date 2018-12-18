@@ -1,12 +1,13 @@
 ---
 title: Usando dicas de ordenação no Planner
 description: '`)'
-ms.openlocfilehash: eaacbcad509fd778990f7f73834897ff6cf79e15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 17aee5f0a867f086ff8171bb3a7f8609526bf1ff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006740"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304001"
 ---
 # <a name="using-order-hints-in-planner"></a>Usando dicas de ordenação no Planner
 

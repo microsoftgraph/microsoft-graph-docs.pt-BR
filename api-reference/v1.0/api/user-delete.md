@@ -1,12 +1,13 @@
 ---
 title: Excluir um usuário
 description: Excluir usuário.
-ms.openlocfilehash: 365b0385bed62b117cfcd77ad9f5deeaa252de6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 44e0439a95b0104472101b43adfae39b2c553d58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003875"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301173"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 

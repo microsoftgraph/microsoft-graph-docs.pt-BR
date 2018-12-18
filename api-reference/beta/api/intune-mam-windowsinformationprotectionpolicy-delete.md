@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsInformationProtectionPolicy
 description: Excluir um windowsInformationProtectionPolicy.
-ms.openlocfilehash: cba88a6b5b876e7827df8a6647cf8ae93fdbb3e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17d0a626331e4ec06b0a9c13c0bb3f0e7963c019
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304582"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Excluir windowsInformationProtectionPolicy
 

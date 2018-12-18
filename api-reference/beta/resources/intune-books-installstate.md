@@ -1,12 +1,13 @@
 ---
 title: tipo de enum installState
 description: Valores possíveis para o estado de instalação.
-ms.openlocfilehash: c452deb5bc04e944139870d0ccceebc65a91ac1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c8e1a6ef50574eaa6f704e1d9f49d56c83046ab7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304631"
 ---
 # <a name="installstate-enum-type"></a>tipo de enum installState
 

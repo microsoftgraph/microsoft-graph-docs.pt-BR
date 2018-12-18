@@ -1,12 +1,13 @@
 ---
 title: Excluir iosVppEBookAssignment
 description: Exclui iosVppEBookAssignment.
-ms.openlocfilehash: 4f791150eb14deaec79be82166e2695d7bb8fbce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cda2654ba20e04f27fd9e38a4d3708d11ba9df7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006682"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301852"
 ---
 # <a name="delete-iosvppebookassignment"></a>Excluir iosVppEBookAssignment
 

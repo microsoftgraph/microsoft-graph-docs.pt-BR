@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso auditResource
 description: Uma classe que contém as propriedades para o Recurso de auditoria.
-ms.openlocfilehash: 452df4cb27dba5de04022c6ba7be08471286d866
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5cfc23a80b2247b9f561d802ce844091c623ef62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006427"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302657"
 ---
 # <a name="auditresource-resource-type"></a>Tipo de recurso auditResource
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsKioskUWPApp
 description: A classe base para um tipo de aplicativos
-ms.openlocfilehash: 8d0d6c609eec4b8194bb72d2fb723d1816873e75
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 328a91065692a7b315ade5dae86c15d6def320eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035773"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305177"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>tipo de recurso de windowsKioskUWPApp
 

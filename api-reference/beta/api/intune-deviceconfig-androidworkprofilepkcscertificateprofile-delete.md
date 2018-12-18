@@ -1,12 +1,13 @@
 ---
 title: Excluir androidWorkProfilePkcsCertificateProfile
 description: Exclui um androidWorkProfilePkcsCertificateProfile.
-ms.openlocfilehash: 77a9d7abde7fc40a7766a378929d38a1c4042c0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a42c70bb0949e81482aeb2af46cc7e193743257
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036893"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305268"
 ---
 # <a name="delete-androidworkprofilepkcscertificateprofile"></a>Excluir androidWorkProfilePkcsCertificateProfile
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir androidForWorkVpnConfiguration
 description: Exclui um androidForWorkVpnConfiguration.
-ms.openlocfilehash: 63e1eb2daeb7aa66c5202a5e1f7458d258a99005
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48e7e0fb58e471833d3d1f8aeb3e5ed4ba886cdf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037615"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303091"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>Excluir androidForWorkVpnConfiguration
 

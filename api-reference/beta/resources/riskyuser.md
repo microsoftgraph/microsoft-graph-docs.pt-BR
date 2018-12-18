@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de riskyUsers
 description: Representa os usuários do Windows Azure AD que estão em risco. Azure AD continuamente avalia o risco de usuário com base em vários sinais e aprendizado de máquina. Essa API fornece acesso programático a todos os usuários em risco em sua Azure AD.
-ms.openlocfilehash: 47856ab28a52046f19087e0f59745efb9855e81a
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+author: cloudhandler
+ms.openlocfilehash: b987b36ce1b695e2f1707a44d628850a39929e80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241059"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303119"
 ---
 # <a name="riskyusers-resource-type"></a>tipo de recurso de riskyUsers
 

@@ -1,12 +1,13 @@
 ---
 title: Obter bloco de anotações
 description: Recupere as propriedades e os relacionamentos de um objeto notebook.
-ms.openlocfilehash: e00f9eb8f7ede1bc247d41dc466f58ededb1ecd5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 657b38e56f654024c82ea6f76f0423b56d4ec33f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006614"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304687"
 ---
 # <a name="get-notebook"></a>Obter bloco de anotações
 

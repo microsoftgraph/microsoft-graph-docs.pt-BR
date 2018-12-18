@@ -1,12 +1,13 @@
 ---
 title: 'message: forward'
 description: Encaminhe uma mensagem. A mensagem é salva na pasta Itens Enviados.
-ms.openlocfilehash: 862ce3c40d6e83595373c5530df94cfa18c14b67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fe1b5f9498d8be417818168b83abc56da8986bd1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003917"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301579"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |toRecipients|Coleção [Recipient](../resources/recipient.md)|A lista de destinatários.|

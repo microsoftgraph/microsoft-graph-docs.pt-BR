@@ -1,12 +1,13 @@
 ---
 title: Get managedAppConfiguration
 description: Ler propriedades e relações do objeto managedAppConfiguration.
-ms.openlocfilehash: 77dcdc5785f3b04825ae8250abebdaa5dc16dd01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 282ae5c8476ac623c0152bf89fb8ad3e5fda1852
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004029"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302818"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 

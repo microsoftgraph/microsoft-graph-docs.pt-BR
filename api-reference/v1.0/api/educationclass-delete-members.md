@@ -1,12 +1,13 @@
 ---
 title: Remover um aluno
 description: Remove um educationUser de uma educationClass
-ms.openlocfilehash: 538eb6f69e30fcc355a9ea3ce88af8afffd5993e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: a887b3286a0c9cbdbb7d12f0bdaa26131332346f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006329"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303812"
 ---
 # <a name="remove-a-student"></a>Remover um aluno
 

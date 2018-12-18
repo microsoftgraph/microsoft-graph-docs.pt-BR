@@ -1,12 +1,13 @@
 ---
 title: Acessar iosCompliancePolicy
 description: Leia as propriedades e as relações do objeto iosCompliancePolicy.
-ms.openlocfilehash: 8dea39098e36cc384c366aec4c110140b8aa9bf9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 89e0c7c6d121fbc6ef73b84ba644748e79bf46ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004322"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304106"
 ---
 # <a name="get-ioscompliancepolicy"></a>Acessar iosCompliancePolicy
 

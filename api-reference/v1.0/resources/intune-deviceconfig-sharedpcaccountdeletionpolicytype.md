@@ -1,12 +1,13 @@
 ---
 title: tipo de enum sharedPCAccountDeletionPolicyType
 description: Valores possíveis para quando as contas são excluídas em um PC compartilhado.
-ms.openlocfilehash: 48d36881646bce344d99bc3d1a15a2679ddeb11d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8789faeeec7772cd6115cae82691c62894446f59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300998"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enum sharedPCAccountDeletionPolicyType
 

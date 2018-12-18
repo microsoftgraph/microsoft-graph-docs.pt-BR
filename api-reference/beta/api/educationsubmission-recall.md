@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: recall'
-description: .
-ms.openlocfilehash: 8df134a6d8325e5b497baada89bc0fa16d0ee9e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: 'Indica que um estudante deseja reassumir o envio de um. Essa ação só pode ser feita por um estudante. '
+author: dipakboyed
+ms.openlocfilehash: ad49302ac9010923d0da2e31686ae4f6967bb50b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033991"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302314"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: recall
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033991"
 
 Indica que um estudante deseja reassumir o envio de um. Essa ação só pode ser feita por um estudante. Ele alterará o status do envio de "enviado" Voltar ao "trabalho".
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceConfigurationAssignment
 description: Exclui deviceConfigurationAssignment.
-ms.openlocfilehash: d35090e1e23206131775631cc86d4458f62a4ae2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e056b2ab6a4f5e6ba84ab6aa3bc48f47473d3763
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004340"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301530"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Excluir deviceConfigurationAssignment
 

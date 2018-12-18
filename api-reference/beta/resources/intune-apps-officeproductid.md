@@ -1,12 +1,13 @@
 ---
 title: tipo de enum officeProductId
 description: A enumeração para especificar o ProductIds Office365 que representam os SKUs do pacote Office365.
-ms.openlocfilehash: 6b69a2477bb0f8779303f8d9f741f100501a3fe5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 228478b6814bed360cbba77539e5ee39343e2bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037413"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302790"
 ---
 # <a name="officeproductid-enum-type"></a>tipo de enum officeProductId
 

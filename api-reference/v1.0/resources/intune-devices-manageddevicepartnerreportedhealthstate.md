@@ -1,12 +1,13 @@
 ---
 title: tipo de enum managedDevicePartnerReportedHealthState
 description: Estados de integridade disponíveis para a API de integridade do dispositivo
-ms.openlocfilehash: 76e1110c7d21744f840f5d9c9154f6680d4b964a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56935f924c0796fe0db1be7b34a4782b5072784f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301075"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enum managedDevicePartnerReportedHealthState
 

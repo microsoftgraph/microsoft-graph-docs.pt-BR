@@ -1,12 +1,13 @@
 ---
 title: Lista educationSynchronizationProfiles
 description: Recupere a coleção de perfis de sincronização de dados escola no inquilino.
-ms.openlocfilehash: a303178a930f207aa92e7a49c769afbc06a7e1e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d7ee2b643259eec6c9106ab6ff89245ab79a3044
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034000"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303098"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Lista educationSynchronizationProfiles
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034000"
 
 Recupere a coleção de [perfis de sincronização](../resources/educationsynchronizationprofile.md) de dados escola no inquilino.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |

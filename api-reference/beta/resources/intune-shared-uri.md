@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso uri
 description: Ainda não documentado
-ms.openlocfilehash: 20a7b6ff04bbf8e8c51cfc51efe13189c6de6e17
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e94f8b18e4e475d6e6dc69036028860ae4b1da54
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303021"
 ---
 # <a name="uri-resource-type"></a>Tipo de recurso uri
 

@@ -1,12 +1,13 @@
 ---
 title: Criar windowsAssignedAccessProfile
 description: Crie um novo objeto de windowsAssignedAccessProfile.
-ms.openlocfilehash: 6ef13530dcd3d0064d829c3341710c5a32f02a2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 626b0815234153f585d74edcdad65f7ad2dfd3a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040874"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304540"
 ---
 # <a name="create-windowsassignedaccessprofile"></a>Criar windowsAssignedAccessProfile
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |profileName|String|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu Iniciar e os usuários aos quais essa configuração de quiosque é atribuída.|
-|showTaskBar|Booliano|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
+|showTaskBar|Boolean|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
 |appUserModelIds|String collection|Estes são os únicos repositório aplicativos do Windows que estarão disponíveis para início no menu Iniciar.|
 |desktopAppPaths|String collection|Estes são os caminhos dos aplicativos de área de trabalho que estarão disponíveis no menu Iniciar e os aplicativos somente o usuário será capaz de início.|
 |userAccounts|String collection|As contas de usuário que serão bloqueadas para esta configuração de quiosque.|

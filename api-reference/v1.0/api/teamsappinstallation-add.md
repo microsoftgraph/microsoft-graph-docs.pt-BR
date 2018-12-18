@@ -1,12 +1,13 @@
 ---
 title: Adicionar o aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
-ms.openlocfilehash: ec03c0f8744bd2f1dd5cf5e2a7e84c9b59a7c6ce
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+author: nkramer
+ms.openlocfilehash: 41682d1280b9aaa76f6ef09d0b5ddbd5338d110f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301999"
 ---
 # <a name="add-app-to-team"></a>Adicionar o aplicativo à equipe
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10EnterpriseModernAppManagementConfiguration
 description: Exclui windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: 21f5646e6eaeb5187c5f46201806950a062d12fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41343f6c4914b5dae264c5e6403635d54464895f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302183"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>Excluir windows10EnterpriseModernAppManagementConfiguration
 

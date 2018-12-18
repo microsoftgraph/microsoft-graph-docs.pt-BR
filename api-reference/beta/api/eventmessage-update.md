@@ -1,12 +1,13 @@
 ---
 title: Atualizar eventMessage
 description: Atualize as propriedades de um objeto eventMessage.
-ms.openlocfilehash: 3d81977c815737ae96839c6fc883692bf2555597
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 922f17528b864c8cdfae39a4df475a0a61f40103
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302468"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -43,10 +44,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |categories|String|As categorias associadas à mensagem.|
 |importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
-|isAllDay |Booliano|Indica se o evento durar o dia inteiro. Ajustar essa propriedade requer ajustando as propriedades **startDateTime** e **endDateTime** do evento também.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isAllDay |Boolean|Indica se o evento durar o dia inteiro. Ajustar essa propriedade requer ajustando as propriedades **startDateTime** e **endDateTime** do evento também.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 
 ## <a name="response"></a>Resposta
 

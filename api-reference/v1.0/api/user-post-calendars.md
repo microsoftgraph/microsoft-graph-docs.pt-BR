@@ -1,12 +1,13 @@
 ---
 title: Criar calendário
 description: Use esta API para criar um novo Calendar para um usuário.
-ms.openlocfilehash: 8ffa88331478d7bbbe1e94c87d58505041d63d41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: ecc86df41dd5d54f07545170ce33f42f782c5dc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006935"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300865"
 ---
 # <a name="create-calendar"></a>Criar calendário
 

@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceConfigurationUserStatus
 description: Leia as propriedades e as relações do objeto deviceConfigurationUserStatus.
-ms.openlocfilehash: 053fa844bb09b9967c95b604fbb2d02d5d5896c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19ae9c0abcae8a46d252bd6b09eeee2e7338a4c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304057"
 ---
 # <a name="get-deviceconfigurationuserstatus"></a>Acessar deviceConfigurationUserStatus
 

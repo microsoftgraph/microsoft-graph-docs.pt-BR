@@ -1,12 +1,13 @@
 ---
 title: Ação windowsDefenderScan
 description: Ainda não documentado
-ms.openlocfilehash: 5f78197e8324136cbd85211880a98bdd0d63a67d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d64ce1e595717d99608547ff4622d35d22d18552
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305086"
 ---
 # <a name="windowsdefenderscan-action"></a>Ação windowsDefenderScan
 

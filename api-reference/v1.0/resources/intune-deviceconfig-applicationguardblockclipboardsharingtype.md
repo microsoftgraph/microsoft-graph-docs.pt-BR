@@ -1,12 +1,13 @@
 ---
 title: tipo de enum applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
-ms.openlocfilehash: 59d325612430a184feaf7df655a4da660b65ea78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: af1843a8d7515e5ca14997256968942f485eab64
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004753"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304078"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enum applicationGuardBlockClipboardSharingType
 

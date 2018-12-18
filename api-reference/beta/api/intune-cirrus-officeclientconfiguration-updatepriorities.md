@@ -1,12 +1,13 @@
 ---
 title: ação de updatePriorities
 description: Atualize as prioridades de política.
-ms.openlocfilehash: 23f41214b0dbbbdbf5949edea8857f8623ef0208
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8c493200d5ed1c0e6eb2228a1e74337237e73e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040378"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302587"
 ---
 # <a name="updatepriorities-action"></a>ação de updatePriorities
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir vppToken
 description: Exclui um vppToken.
-ms.openlocfilehash: e1c6471752bcf4414942de954848a6424d6a01ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34d079883344f0725b87d4c1b46c92a37000fb40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004079"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302853"
 ---
 # <a name="delete-vpptoken"></a>Excluir vppToken
 

@@ -1,12 +1,13 @@
 ---
 title: Acessar windows81CompliancePolicy
 description: Leia as propriedades e as relações do objeto windows81CompliancePolicy.
-ms.openlocfilehash: 7e7b104c547c3a703d47aec8c6d952ad34cf7dac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a156ec9d40d3e952b635a8a0dccbf2e46a4001d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301201"
 ---
 # <a name="get-windows81compliancepolicy"></a>Acessar windows81CompliancePolicy
 

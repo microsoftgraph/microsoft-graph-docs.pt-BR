@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso roleAssignment
 description: O recurso de Atribuição de Função. Atribuições de função unem uma definição de função a membros e escopos. Pode haver uma ou mais atribuições de função por função. Aplica-se às funções internas e personalizadas.
-ms.openlocfilehash: a0c3e1d6a9f9611a67916075cdc6a2f90210d89d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5c4b09151a7957f52dbaa525f696b89479a898ef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036435"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302097"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 

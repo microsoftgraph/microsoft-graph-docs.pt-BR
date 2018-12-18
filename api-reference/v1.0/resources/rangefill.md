@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso RangeFill
 description: Representa o plano de fundo de um objeto de intervalo.
-ms.openlocfilehash: 7a9919d5190c34937319de1c15f722453b7c79e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6ddd039190af0e86067dfda651b2bc387b4cf74f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003998"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303560"
 ---
 # <a name="rangefill-resource-type"></a>Tipo de recurso RangeFill
 

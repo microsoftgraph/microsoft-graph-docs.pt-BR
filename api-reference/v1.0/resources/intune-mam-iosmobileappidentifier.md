@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosMobileAppIdentifier
 description: O identificador de um aplicativo iOS.
-ms.openlocfilehash: dbf37da4f225a42b1686896e3fa1fafa472b4a67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7d668d6b1751b125fc3cb4f5e2bb74d481aca9f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006686"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303343"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Tipo de recurso iosMobileAppIdentifier
 

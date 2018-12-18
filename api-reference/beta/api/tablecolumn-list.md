@@ -1,12 +1,13 @@
 ---
 title: Listar TableColumnCollection
 description: Recupere uma lista de objetos tablecolumn.
-ms.openlocfilehash: 1eaae1bec61b144ee1d27354015baef441c5a720
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 02b04e619dddc352bc5af2da486cee843e941bb3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039152"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302020"
 ---
 # <a name="list-tablecolumncollection"></a>Listar TableColumnCollection
 

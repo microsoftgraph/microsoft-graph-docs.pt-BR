@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de restrictedAppsViolation
 description: Violação de perfil de configuração de aplicativos restritos por dispositivo por usuário
-ms.openlocfilehash: 6d7f6cb8b52671c311c39c3306a329ad37194b85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb614bc56f27281198fcecb73bae2b7beddfa266
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039345"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304932"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso de restrictedAppsViolation
 

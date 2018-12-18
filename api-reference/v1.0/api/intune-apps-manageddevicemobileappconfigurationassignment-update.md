@@ -1,12 +1,13 @@
 ---
 title: Atualizar managedDeviceMobileAppConfigurationAssignment
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationAssignment.
-ms.openlocfilehash: 3753b4d95a1f13c701ac6c5c9e27dda9c1a67fbc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a9c1c7b1f0af2ec49080d6b6e225d3923b7f37b5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005396"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301432"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Atualizar managedDeviceMobileAppConfigurationAssignment
 

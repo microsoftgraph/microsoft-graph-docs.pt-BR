@@ -1,12 +1,13 @@
 ---
 title: Excluir mobileAppContent
 description: Exclui mobileAppContent.
-ms.openlocfilehash: e631e414ff0a29caef8584a3649d296cf50e2076
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcce8b7a1a79506218b9ac0a306b5e1b9f22bbb7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040952"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302608"
 ---
 # <a name="delete-mobileappcontent"></a>Excluir mobileAppContent
 

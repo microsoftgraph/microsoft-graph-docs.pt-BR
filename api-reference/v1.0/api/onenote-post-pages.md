@@ -1,12 +1,13 @@
 ---
 title: Criar página
 description: Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
-ms.openlocfilehash: 07f5eef560145a9aec1206d6966d1c113774444d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 7d8faf66d95bdeaf5e566a70026f1bc894cc2803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004332"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303217"
 ---
 # <a name="create-page"></a>Criar página
 

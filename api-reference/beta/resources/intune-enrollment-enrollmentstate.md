@@ -1,12 +1,13 @@
 ---
 title: tipo de enum enrollmentState
 description: Ainda não documentado
-ms.openlocfilehash: 8e8e20c0fd04e4da57eddfa7384052a6ab468152
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5e432f73ace1adbd529c910f70b97b7357a406e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301292"
 ---
 # <a name="enrollmentstate-enum-type"></a>tipo de enum enrollmentState
 

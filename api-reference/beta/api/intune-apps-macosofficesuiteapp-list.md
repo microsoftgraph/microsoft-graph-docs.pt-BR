@@ -1,12 +1,13 @@
 ---
 title: Listar macOSOfficeSuiteApps
 description: Listar propriedades e relações dos objetos macOSOfficeSuiteApp.
-ms.openlocfilehash: 193c264844c40d2ca05cc3b9a6ec2bc1b07755ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 93ab8d850cee71f635e61a6a2ab3aa39853bd31f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302762"
 ---
 # <a name="list-macosofficesuiteapps"></a>Listar macOSOfficeSuiteApps
 

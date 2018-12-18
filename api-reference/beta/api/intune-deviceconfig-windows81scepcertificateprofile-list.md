@@ -1,12 +1,13 @@
 ---
 title: Lista windows81SCEPCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos windows81SCEPCertificateProfile.
-ms.openlocfilehash: 9f233f8c3b4a967d21ced809c8989df40e824b49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9f05ef49cb6e5cc5f347c419595276ce8164cdf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040468"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304497"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>Lista windows81SCEPCertificateProfiles
 

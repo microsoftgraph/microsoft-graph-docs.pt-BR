@@ -1,12 +1,13 @@
 ---
 title: Criar acceptedSender
 description: Adicione um novo usuário ou grupo à lista acceptedSender.
-ms.openlocfilehash: 4a3cfd89d37a18cbb85644b2c4adc71470950235
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 7a0fc795507a1c2b6a8b20407b9f72347503e507
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006783"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27300851"
 ---
 # <a name="create-acceptedsender"></a>Criar acceptedSender
 Adicione um novo usuário ou grupo à lista acceptedSender.

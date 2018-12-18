@@ -1,19 +1,20 @@
 ---
 title: Lista identityRiskEvents
 description: Recupere uma lista de objetos identityriskevent.
-ms.openlocfilehash: 8581aefcdcfb479c607c83d3478d7d4f5af4e269
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: ee730b2da90cd1d458bd3e3ad4c432db93fa4cea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302776"
 ---
 # <a name="list-identityriskevents"></a>Lista identityRiskEvents
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere uma lista de objetos identityriskevent.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,12 +1,13 @@
 ---
 title: Excluir educationSchool
 description: Exclua uma escola.
-ms.openlocfilehash: 48516780c0132012b8b7f2d8aa9295af7ade0711
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 16c7edc747fe481fe10180f919a12c39dbfcd150
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006812"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303226"
 ---
 # <a name="delete-educationschool"></a>Excluir educationSchool
 

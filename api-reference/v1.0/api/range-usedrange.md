@@ -1,12 +1,13 @@
 ---
 title: 'Range: UsedRange'
 description: Retorna o intervalo usado do objeto range determinado.
-ms.openlocfilehash: 26938b010a42e58b8bdc01687211c434514277de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 108c19b5af6fcaf5b4c0792d9a71b8f32f1d6148
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005945"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301708"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -35,7 +36,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |valuesOnly|booliano|Opcional. Considera apenas as células com valores como células usadas.|
 

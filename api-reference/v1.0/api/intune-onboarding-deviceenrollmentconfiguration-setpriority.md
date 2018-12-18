@@ -1,12 +1,13 @@
 ---
 title: Ação setPriority
 description: Ainda não documentado
-ms.openlocfilehash: 5c446dcc1951e459e736048d34218faee5745428
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d9d4eb0beb72187a71771148985466a5f72644a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006325"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27303938"
 ---
 # <a name="setpriority-action"></a>Ação setPriority
 

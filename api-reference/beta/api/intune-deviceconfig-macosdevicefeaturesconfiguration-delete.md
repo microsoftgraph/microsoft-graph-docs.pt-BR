@@ -1,12 +1,13 @@
 ---
 title: Excluir macOSDeviceFeaturesConfiguration
 description: Exclui macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: e7557f34ce07725a5a0c13d909208e3cc1e9b90c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff436f0071346d89ab89ce68f8d99e00093d2b2f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040154"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301362"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Excluir macOSDeviceFeaturesConfiguration
 

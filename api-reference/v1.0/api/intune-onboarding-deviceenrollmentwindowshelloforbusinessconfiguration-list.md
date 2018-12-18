@@ -1,12 +1,13 @@
 ---
 title: Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: be1e717a03daecc1f9c37ad00831cd1413781f2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a3cb02ce561ccd618269eaee1e0d8495d7ff7f6c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304295"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 

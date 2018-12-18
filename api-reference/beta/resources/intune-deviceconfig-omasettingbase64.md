@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso omaSettingBase64
 description: Definição de Base64 das configurações de OMA.
-ms.openlocfilehash: eebe9730c36ab4bc7e48aa765ecd3959897c6c12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee25db94cc1426194166a7c66b9a8a626d62c3e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27304071"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 

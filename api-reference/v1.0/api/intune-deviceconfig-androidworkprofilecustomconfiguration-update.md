@@ -1,12 +1,13 @@
 ---
 title: Atualizar androidWorkProfileCustomConfiguration
 description: Atualize as propriedades de um objeto androidWorkProfileCustomConfiguration.
-ms.openlocfilehash: 85d8d361f89358079b1ca945b80be3b9e239af0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1293ca362719440871576c3976f184ed60e37e43
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006100"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302363"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>Atualizar androidWorkProfileCustomConfiguration
 
