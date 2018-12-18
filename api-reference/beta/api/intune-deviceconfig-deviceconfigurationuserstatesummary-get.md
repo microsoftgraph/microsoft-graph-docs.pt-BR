@@ -1,12 +1,13 @@
 ---
 title: Obter deviceConfigurationUserStateSummary
 description: Leia as propriedades e os relacionamentos do objeto deviceConfigurationUserStateSummary.
-ms.openlocfilehash: d915bdef304224ef15e4700a7851fea7278092b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a4a875dd8a909b2c896457b5df5d1edf79edab6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349676"
 ---
 # <a name="get-deviceconfigurationuserstatesummary"></a>Obter deviceConfigurationUserStateSummary
 

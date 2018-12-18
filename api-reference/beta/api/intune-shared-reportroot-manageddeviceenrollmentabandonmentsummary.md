@@ -1,12 +1,13 @@
 ---
 title: função managedDeviceEnrollmentAbandonmentSummary
 description: Metadados para o relatório de resumo de abandono de inscrição
-ms.openlocfilehash: a9197ec93829f1270f2cd19956632cf09c00f7b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 133f04da7256ec8f1bbec93c9614ce1dfcd477a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038818"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349508"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>função managedDeviceEnrollmentAbandonmentSummary
 

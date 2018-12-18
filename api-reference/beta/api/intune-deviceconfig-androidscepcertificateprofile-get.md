@@ -1,12 +1,13 @@
 ---
 title: Obter androidScepCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto androidScepCertificateProfile.
-ms.openlocfilehash: 02e8ab767a10fdb44686c9d18c73cca469b216ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccfe35eb5bff25ee41afc73b7e01a1cd128884a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036904"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349613"
 ---
 # <a name="get-androidscepcertificateprofile"></a>Obter androidScepCertificateProfile
 

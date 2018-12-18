@@ -1,12 +1,13 @@
 ---
 title: Criar dataSharingConsent
 description: Crie um novo objeto de dataSharingConsent.
-ms.openlocfilehash: 9973820ad8354e78f05569b8e1b46da680c2fa0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07d76bbd92d2741571683bb7614b3336c10d9058
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035735"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349669"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|String|O consentimento de compartilhamento de dados Id|
 |Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
 |termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
-|concedido|Booliano|O estado foram concedido para os consentimento de compartilhamento de dados|
+|concedido|Boolean|O estado foram concedido para os consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
 |grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
 |grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|

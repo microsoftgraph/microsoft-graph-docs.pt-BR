@@ -1,12 +1,13 @@
 ---
 title: Listar telecomExpenseManagementPartners
 description: Lista propriedades e relações dos objetos telecomExpenseManagementPartner.
-ms.openlocfilehash: e71be2fb4975407fc0e1ad272899d2d73f39d861
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ef437d2aa8eb6a6f36f10e8951530fba1d5207d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003397"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349389"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>Listar telecomExpenseManagementPartners
 

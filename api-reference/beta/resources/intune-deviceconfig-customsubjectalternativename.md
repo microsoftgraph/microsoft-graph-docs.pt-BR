@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de customSubjectAlternativeName
 description: Definição de nome alternativo da entidade personalizada
-ms.openlocfilehash: 14d6c24cd5e8c087b81fa51194301da522d169b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ed3f62cef38340ae7204b98e1fc984ba9bcb9cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349312"
 ---
 # <a name="customsubjectalternativename-resource-type"></a>tipo de recurso de customSubjectAlternativeName
 

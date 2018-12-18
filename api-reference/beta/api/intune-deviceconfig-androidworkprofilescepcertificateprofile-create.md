@@ -1,12 +1,13 @@
 ---
 title: Criar androidWorkProfileScepCertificateProfile
 description: Crie um novo objeto de androidWorkProfileScepCertificateProfile.
-ms.openlocfilehash: 780418250a7d8e00cc7923dda66d4f8d8682dddc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1a8c6afcc040841281205e55b22dce4507395cfc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349697"
 ---
 # <a name="create-androidworkprofilescepcertificateprofile"></a>Criar androidWorkProfileScepCertificateProfile
 

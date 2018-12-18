@@ -1,12 +1,13 @@
 ---
 title: Obter androidForWorkImportedPFXCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkImportedPFXCertificateProfile.
-ms.openlocfilehash: d8905b7b002b35495141b82430d3e8548fbc487b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4729380334e65094f42e717cf48ac03fecce42dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033266"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349627"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Obter androidForWorkImportedPFXCertificateProfile
 

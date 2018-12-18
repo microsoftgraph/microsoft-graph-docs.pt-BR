@@ -1,12 +1,13 @@
 ---
 title: Obter deviceManagementScriptDeviceState
 description: Leia as propriedades e os relacionamentos do objeto deviceManagementScriptDeviceState.
-ms.openlocfilehash: 2f29f1bfa657afe96e40d8e43b8a62a8f2fbc0d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a050737c4e4aedd9c42228fc685ebfeb3bc02f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036999"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349753"
 ---
 # <a name="get-devicemanagementscriptdevicestate"></a>Obter deviceManagementScriptDeviceState
 
