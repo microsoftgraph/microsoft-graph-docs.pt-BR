@@ -1,12 +1,13 @@
 ---
 title: Criar networkIPv4ConfigurationManagementCondition
 description: Crie um novo objeto de networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: f42bd52da9175192a71ed0be2b36f8f656f6a538
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 60d79584af38ca709d597b4919a7e6dc4171ff73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356361"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>Criar networkIPv4ConfigurationManagementCondition
 

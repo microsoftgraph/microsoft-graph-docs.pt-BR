@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPhone81AppX
 description: Exclui um windowsPhone81AppX.
-ms.openlocfilehash: 72d0f0eae4c5cbb1d30c0fdf93b2c2a8d633083e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff815a74d09b739146f36f248a601a75fe06bccf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356326"
 ---
 # <a name="delete-windowsphone81appx"></a>Excluir windowsPhone81AppX
 

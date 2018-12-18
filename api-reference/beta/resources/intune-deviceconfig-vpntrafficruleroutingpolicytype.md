@@ -1,12 +1,13 @@
 ---
 title: tipo de enum vpnTrafficRuleRoutingPolicyType
 description: Especifica a política de roteamento para uma regra de tráfego VPN.
-ms.openlocfilehash: df51851ef0820f5982a6689421503364e9064c78
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5aa3f44f0e4ccf177154f97e9849093c52728b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035902"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343418"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>tipo de enum vpnTrafficRuleRoutingPolicyType
 
@@ -18,7 +19,7 @@ Especifica a política de roteamento para uma regra de tráfego VPN.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhuma política de roteamento especificada.|
+|none|0|Nenhuma política de roteamento especificada.|
 |splitTunnel|1|Tráfego de rede para o aplicativo especificado será roteado através da VPN.|
 |forceTunnel|2|Todo o tráfego de rede será roteado através da VPN.|
 

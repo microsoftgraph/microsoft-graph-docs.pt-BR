@@ -1,12 +1,13 @@
 ---
 title: Criar iosVppEBook
 description: Cria um novo objeto iosVppEBook.
-ms.openlocfilehash: e9a6802a25b76f62a6fc3960648b2265c3ea0de4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 753e49af6b00124b18b687decbeee195e2e1ee1d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356066"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 

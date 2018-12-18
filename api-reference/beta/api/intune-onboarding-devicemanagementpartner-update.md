@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceManagementPartner
 description: Atualize as propriedades de um objeto deviceManagementPartner.
-ms.openlocfilehash: 06dd0099657dd9b697027637c2b5388c1c8b12be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 47aba10ebe744d4f8211081e5c947df4d61599ed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035979"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356319"
 ---
 # <a name="update-devicemanagementpartner"></a>Atualizar deviceManagementPartner
 

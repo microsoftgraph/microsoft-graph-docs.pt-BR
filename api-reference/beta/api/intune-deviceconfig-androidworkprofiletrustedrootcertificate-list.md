@@ -1,12 +1,13 @@
 ---
 title: Lista androidWorkProfileTrustedRootCertificates
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileTrustedRootCertificate.
-ms.openlocfilehash: 71abfb714a513a09b66d30c700e8ad3f6c313ede
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87fd15f1e97e7924abbae4fc47537e298058788d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355118"
 ---
 # <a name="list-androidworkprofiletrustedrootcertificates"></a>Lista androidWorkProfileTrustedRootCertificates
 

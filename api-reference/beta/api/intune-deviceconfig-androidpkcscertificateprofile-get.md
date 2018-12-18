@@ -1,12 +1,13 @@
 ---
 title: Obter androidPkcsCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto androidPkcsCertificateProfile.
-ms.openlocfilehash: 3f910c8d90e866e2646df2509b226b1d6bfd510b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 302c0bdc0977f7eb3fa09c3cc2fe285522295d60
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036871"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360547"
 ---
 # <a name="get-androidpkcscertificateprofile"></a>Obter androidPkcsCertificateProfile
 

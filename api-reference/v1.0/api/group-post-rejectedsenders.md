@@ -1,12 +1,13 @@
 ---
 title: Criar rejectedSender
 description: Adiciona um novo usuário ou grupo à lista rejectedSender.
-ms.openlocfilehash: caf0e69db01b446861dce819396a1f034e5cf13c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 26965d41c2f5f688303a19f94d717b62713e6482
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354863"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
 Adiciona um novo usuário ou grupo à lista rejectedSender.

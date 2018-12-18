@@ -1,12 +1,13 @@
 ---
 title: Obter androidDeviceOwnerGeneralDeviceConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidDeviceOwnerGeneralDeviceConfiguration.
-ms.openlocfilehash: 2f1f4311656a52c001d4c0d1256015b182d8e9b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79cbfc66b697de3bc55b96fc289103b07e2baecc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357782"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Obter androidDeviceOwnerGeneralDeviceConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Obter windowsPhone81TrustedRootCertificate
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81TrustedRootCertificate.
-ms.openlocfilehash: 2b828b36e801a365542a6d64f030c1e381534912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1bfb8c7e92c40cb6194dbcae1d56add7bbf0fc84
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035092"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355066"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>Obter windowsPhone81TrustedRootCertificate
 

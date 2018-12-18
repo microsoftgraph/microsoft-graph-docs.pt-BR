@@ -1,12 +1,13 @@
 ---
 title: Lista androidWorkProfileVpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileVpnConfiguration.
-ms.openlocfilehash: 1bee87fdc1ccc028d68bb9390edc1fa09e5dd6ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef47d2cbd4a3ebd0d305ce38eb27ad172eecb0eb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357992"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Lista androidWorkProfileVpnConfigurations
 

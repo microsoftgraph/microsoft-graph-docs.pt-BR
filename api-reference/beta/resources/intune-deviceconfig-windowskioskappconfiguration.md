@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsKioskAppConfiguration
 description: A classe de base do aplicativo usada para identificar a informação de aplicativo para a configuração de quiosque
-ms.openlocfilehash: 0f756abe2c6fb21b85e9c83fef85420aab9b85b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 93d8b19e621986d4384885f7f87f76df028127e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036320"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356879"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>tipo de recurso de windowsKioskAppConfiguration
 

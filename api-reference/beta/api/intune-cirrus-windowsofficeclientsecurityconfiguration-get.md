@@ -1,12 +1,13 @@
 ---
 title: Obter windowsOfficeClientSecurityConfiguration
 description: Obtenha um objeto de windowsOfficeClientSecurityConfiguration de diretiva de segurança específicos.
-ms.openlocfilehash: 1266ad20101a702dccbc36eea1bb16162a541204
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d549adaf511eff18b890b1fff16a3bfed08a054
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032935"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358440"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Obter windowsOfficeClientSecurityConfiguration
 

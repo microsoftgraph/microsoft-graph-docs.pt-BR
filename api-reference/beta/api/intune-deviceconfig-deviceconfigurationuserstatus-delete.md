@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceConfigurationUserStatus
 description: Exclui deviceConfigurationUserStatus.
-ms.openlocfilehash: a72949065193c204262ad4e41ea34f20ed3c4891
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 333b657aaa65f4ff9cdf4e163592f6ae643678ec
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357754"
 ---
 # <a name="delete-deviceconfigurationuserstatus"></a>Excluir deviceConfigurationUserStatus
 

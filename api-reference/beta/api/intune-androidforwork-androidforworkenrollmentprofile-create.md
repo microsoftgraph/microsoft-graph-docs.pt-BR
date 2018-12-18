@@ -1,12 +1,13 @@
 ---
 title: Criar androidForWorkEnrollmentProfile
 description: Cria um novo objeto androidForWorkEnrollmentProfile.
-ms.openlocfilehash: e7dfefd7163f3b133b4e91936e7ee0e7317dd823
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 794179968afc4f39c809373b3425c076f7a591a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037301"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355971"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Criar androidForWorkEnrollmentProfile
 

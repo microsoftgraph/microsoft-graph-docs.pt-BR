@@ -1,12 +1,13 @@
 ---
 title: tipo de enum meteredConnectionLimitType
 description: Configurações de limite de Conexão monitorados.
-ms.openlocfilehash: 8a09b746710b54286b9c86cbd09fa57b2a520be7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5507585c9301135022aa0bccd370db2c35699607
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038361"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355836"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>tipo de enum meteredConnectionLimitType
 

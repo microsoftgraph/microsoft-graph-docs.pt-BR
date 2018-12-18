@@ -1,12 +1,13 @@
 ---
 title: Atualizar propriedades educationclass
 description: Atualize as propriedades de uma aula.
-ms.openlocfilehash: 5b601fae6680b84d425a105bc39c559110872b76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 9a11ae5e1a2139df4ade3417c940d00dea2d1888
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004492"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358706"
 ---
 # <a name="update-educationclass-properties"></a>Atualizar propriedades educationclass
 

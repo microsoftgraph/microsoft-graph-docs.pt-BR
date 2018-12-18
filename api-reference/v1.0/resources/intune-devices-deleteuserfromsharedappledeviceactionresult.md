@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
 description: Resultado de ação de excluir o usuário do dispositivo compartilhado da Apple
-ms.openlocfilehash: dc21e22ca2e819835178a7cb2ed3aa824cd40004
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2dc6dbdeb8bb72314b25f695f82e4f4dfff0b8fd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356032"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>Tipo de recurso deleteUserFromSharedAppleDeviceActionResult
 

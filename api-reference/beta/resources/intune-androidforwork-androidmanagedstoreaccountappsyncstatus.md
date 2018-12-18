@@ -1,12 +1,13 @@
 ---
 title: tipo de enum androidManagedStoreAccountAppSyncStatus
 description: Status de sincronização do inquilino com a API do EMM Google
-ms.openlocfilehash: 42362df4576fe7c5f2559e603da74d53118cd0d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38131e49734cc76809729dcedf7c133d4f624af5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355486"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>tipo de enum androidManagedStoreAccountAppSyncStatus
 
@@ -23,7 +24,7 @@ Status de sincronização do inquilino com a API do EMM Google
 |androidForWorkApiError|2|Ainda não documentado|
 |managementServiceError|3|Ainda não documentado|
 |unknownError|4|Ainda não documentado|
-|nenhum|5|Ainda não documentado|
+|none|5|Ainda não documentado|
 
 
 

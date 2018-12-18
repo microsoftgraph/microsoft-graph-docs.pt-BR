@@ -1,12 +1,13 @@
 ---
 title: 'evento: encaminhar'
 description: 'Essa ação permite que o organizador ou o participante de um evento de reunião para encaminhar o '
-ms.openlocfilehash: 09a98f82e72eef7b223dfccb1f4433c3206f0f7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 77f2c99b1adc7fcece353120e4692b37fd65a78f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355990"
 ---
 # <a name="event-forward"></a>evento: encaminhar
 
@@ -17,7 +18,7 @@ Essa ação permite que o organizador ou o participante de uma reunião de [even
 Se o evento de reunião é encaminhado de caixa de correio do de um participante Office 365 para outro destinatário, essa ação também envia uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário para a cópia do organizador do evento reunião. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -55,7 +56,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |Comentário|String|Um comentário a incluir. Não pode ficar vazio.|
 |ToRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários para os quais o evento será encaminhado.|

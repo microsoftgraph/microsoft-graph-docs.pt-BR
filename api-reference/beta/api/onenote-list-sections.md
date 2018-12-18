@@ -1,12 +1,13 @@
 ---
 title: Listar seções
 description: Recupere uma lista de objetos section.
-ms.openlocfilehash: f5c8c04358d6f689982a295328fa63b0c77e4dc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 074afecfcf358a349cfa251e3222cc4c2a2887ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041106"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356452"
 ---
 # <a name="list-sections"></a>Listar seções
 

@@ -1,12 +1,13 @@
 ---
 title: Obter applePushNotificationCertificate
 description: Ler propriedades e relações do objeto applePushNotificationCertificate.
-ms.openlocfilehash: 9b9cd38019749b548c00baff0e0411b50a780df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b7cf69922386b6b025bf23b4ddbcfeefc67bbb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039183"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357719"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Obter applePushNotificationCertificate
 

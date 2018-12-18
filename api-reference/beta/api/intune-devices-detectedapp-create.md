@@ -1,12 +1,13 @@
 ---
 title: Criar detectedApp
 description: Criar um novo objeto detectedApp.
-ms.openlocfilehash: 1ff48803609ce03aed1ff6f979cfe6d7a804d68b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e48d1fc38316144eb8aa800667b17a505d1e0a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040322"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357600"
 ---
 # <a name="create-detectedapp"></a>Criar detectedApp
 

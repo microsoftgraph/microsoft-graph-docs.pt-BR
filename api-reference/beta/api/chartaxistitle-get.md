@@ -1,12 +1,13 @@
 ---
 title: Obter ChartAxisTitle
 description: Recupera as propriedades e os relacionamentos do objeto chartaxistitle.
-ms.openlocfilehash: 69e59232710f5a47a714a0e531c96683c3a11ee5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5928474dfc2ef98cab5d0f540d7314bb2c629b9c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033344"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356550"
 ---
 # <a name="get-chartaxistitle"></a>Obter ChartAxisTitle
 

@@ -1,12 +1,13 @@
 ---
 title: Obter windows10NetworkBoundaryConfiguration
 description: Leia as propriedades e os relacionamentos do objeto windows10NetworkBoundaryConfiguration.
-ms.openlocfilehash: 1c8cfb8136a453d94457dd74d81d495e5572f4dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3fb567119ebacc4fdcffa3c252e0300ba145bcf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358349"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Obter windows10NetworkBoundaryConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mobileAppProvisioningConfigGroupAssignment
 description: Contém as propriedades usadas para atribuir uma configuração de provisionamento de aplicativos a um grupo.
-ms.openlocfilehash: 216eadd958fd4743210be4e49631645a85f5bda8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c38faf3f8de9aea79667664051bba6e45c83c238
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356480"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>tipo de recurso de mobileAppProvisioningConfigGroupAssignment
 
