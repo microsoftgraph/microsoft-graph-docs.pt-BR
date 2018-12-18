@@ -1,48 +1,49 @@
 ---
 title: 'Table: convertToRange'
 description: Converte a tabela em um intervalo de células normal. Todos os dados são preservados.
-ms.openlocfilehash: 5ab84f5fc4d849f46175a594bdbe088f747379ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4685d29bf84f7e30dc8e289ff46c4293e5553421
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004380"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331523"
 ---
-# <a name="table-converttorange"></a><span data-ttu-id="165c4-104">Table: convertToRange</span><span class="sxs-lookup"><span data-stu-id="165c4-104">Table: convertToRange</span></span>
+# <a name="table-converttorange"></a><span data-ttu-id="33c89-104">Table: convertToRange</span><span class="sxs-lookup"><span data-stu-id="33c89-104">Table: convertToRange</span></span>
 
-<span data-ttu-id="165c4-p102">Converte a tabela em um intervalo de células normal. Todos os dados são preservados.</span><span class="sxs-lookup"><span data-stu-id="165c4-p102">Converts the table into a normal range of cells. All data is preserved.</span></span>
-## <a name="permissions"></a><span data-ttu-id="165c4-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="165c4-107">Permissions</span></span>
-<span data-ttu-id="165c4-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="165c4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="33c89-p102">Converte a tabela em um intervalo de células normal. Todos os dados são preservados.</span><span class="sxs-lookup"><span data-stu-id="33c89-p102">Converts the table into a normal range of cells. All data is preserved.</span></span>
+## <a name="permissions"></a><span data-ttu-id="33c89-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="33c89-107">Permissions</span></span>
+<span data-ttu-id="33c89-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="33c89-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="165c4-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="165c4-110">Permission type</span></span>      | <span data-ttu-id="165c4-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="165c4-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="33c89-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="33c89-110">Permission type</span></span>      | <span data-ttu-id="33c89-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="33c89-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="165c4-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="165c4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="165c4-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="165c4-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="165c4-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="165c4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="165c4-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="165c4-115">Not supported.</span></span>    |
-|<span data-ttu-id="165c4-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="165c4-116">Application</span></span> | <span data-ttu-id="165c4-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="165c4-117">Not supported.</span></span> |
+|<span data-ttu-id="33c89-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="33c89-112">Delegated (work or school account)</span></span> | <span data-ttu-id="33c89-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="33c89-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="33c89-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="33c89-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="33c89-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33c89-115">Not supported.</span></span>    |
+|<span data-ttu-id="33c89-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="33c89-116">Application</span></span> | <span data-ttu-id="33c89-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="33c89-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="165c4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="165c4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="33c89-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="33c89-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/convertToRange
 POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="165c4-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="165c4-119">Request headers</span></span>
-| <span data-ttu-id="165c4-120">Nome</span><span class="sxs-lookup"><span data-stu-id="165c4-120">Name</span></span>       | <span data-ttu-id="165c4-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="165c4-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="33c89-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="33c89-119">Request headers</span></span>
+| <span data-ttu-id="33c89-120">Nome</span><span class="sxs-lookup"><span data-stu-id="33c89-120">Name</span></span>       | <span data-ttu-id="33c89-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="33c89-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="165c4-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="165c4-122">Authorization</span></span>  | <span data-ttu-id="165c4-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="165c4-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="165c4-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="165c4-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="165c4-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="165c4-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="33c89-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="33c89-122">Authorization</span></span>  | <span data-ttu-id="33c89-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="33c89-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="33c89-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="33c89-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="33c89-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="33c89-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="165c4-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="165c4-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="33c89-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="33c89-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="165c4-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="165c4-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="33c89-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="33c89-129">Response</span></span>
 
-<span data-ttu-id="165c4-130">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="165c4-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="33c89-130">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="33c89-130">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="165c4-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="165c4-131">Example</span></span>
-<span data-ttu-id="165c4-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="165c4-132">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="165c4-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="165c4-133">Request</span></span>
-<span data-ttu-id="165c4-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="165c4-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="33c89-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="33c89-131">Example</span></span>
+<span data-ttu-id="33c89-132">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="33c89-132">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="33c89-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="33c89-133">Request</span></span>
+<span data-ttu-id="33c89-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="33c89-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "table_converttorange"
@@ -51,8 +52,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/convertToRange
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/convertToRange
 ```
 
-##### <a name="response"></a><span data-ttu-id="165c4-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="165c4-135">Response</span></span>
-<span data-ttu-id="165c4-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="165c4-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="33c89-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="33c89-135">Response</span></span>
+<span data-ttu-id="33c89-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="33c89-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

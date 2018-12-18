@@ -1,28 +1,29 @@
 ---
 title: Listar managedAppConfigurations
 description: Listar propriedades e relações dos objetos managedAppConfiguration.
-ms.openlocfilehash: fd71ab496e0eddb8089e4eb0b1257a0fa219c72f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1cb84794d52f202fae1abac40f4aa74dbdf65ae1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332148"
 ---
-# <a name="list-managedappconfigurations"></a><span data-ttu-id="ca2fb-103">Listar managedAppConfigurations</span><span class="sxs-lookup"><span data-stu-id="ca2fb-103">List managedAppConfigurations</span></span>
+# <a name="list-managedappconfigurations"></a><span data-ttu-id="f2bcd-103">Listar managedAppConfigurations</span><span class="sxs-lookup"><span data-stu-id="f2bcd-103">List managedAppConfigurations</span></span>
 
-> <span data-ttu-id="ca2fb-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f2bcd-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="ca2fb-105">Listar propriedades e relações dos objetos [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="ca2fb-105">List properties and relationships of the [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="ca2fb-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ca2fb-106">Prerequisites</span></span>
-<span data-ttu-id="ca2fb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca2fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f2bcd-105">Listar propriedades e relações dos objetos [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="f2bcd-105">List properties and relationships of the [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f2bcd-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f2bcd-106">Prerequisites</span></span>
+<span data-ttu-id="f2bcd-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2bcd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ca2fb-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ca2fb-109">Permission type</span></span>|<span data-ttu-id="ca2fb-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ca2fb-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f2bcd-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f2bcd-109">Permission type</span></span>|<span data-ttu-id="f2bcd-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f2bcd-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ca2fb-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ca2fb-111">Delegated (work or school account)</span></span>|<span data-ttu-id="ca2fb-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ca2fb-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="ca2fb-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ca2fb-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ca2fb-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-114">Not supported.</span></span>|
-|<span data-ttu-id="ca2fb-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ca2fb-115">Application</span></span>|<span data-ttu-id="ca2fb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-116">Not supported.</span></span>|
+|<span data-ttu-id="f2bcd-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f2bcd-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f2bcd-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2bcd-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="f2bcd-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f2bcd-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f2bcd-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-114">Not supported.</span></span>|
+|<span data-ttu-id="f2bcd-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f2bcd-115">Application</span></span>|<span data-ttu-id="f2bcd-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ca2fb-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ca2fb-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2bcd-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f2bcd-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,27 +34,27 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/appl
 GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/intendedPolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ca2fb-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ca2fb-118">Request headers</span></span>
-|<span data-ttu-id="ca2fb-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ca2fb-119">Header</span></span>|<span data-ttu-id="ca2fb-120">Valor</span><span class="sxs-lookup"><span data-stu-id="ca2fb-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f2bcd-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f2bcd-118">Request headers</span></span>
+|<span data-ttu-id="f2bcd-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f2bcd-119">Header</span></span>|<span data-ttu-id="f2bcd-120">Valor</span><span class="sxs-lookup"><span data-stu-id="f2bcd-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ca2fb-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="ca2fb-121">Authorization</span></span>|<span data-ttu-id="ca2fb-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ca2fb-123">Accept</span><span class="sxs-lookup"><span data-stu-id="ca2fb-123">Accept</span></span>|<span data-ttu-id="ca2fb-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ca2fb-124">application/json</span></span>|
+|<span data-ttu-id="f2bcd-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f2bcd-121">Authorization</span></span>|<span data-ttu-id="f2bcd-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f2bcd-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f2bcd-123">Accept</span></span>|<span data-ttu-id="f2bcd-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f2bcd-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ca2fb-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ca2fb-125">Request body</span></span>
-<span data-ttu-id="ca2fb-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2bcd-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f2bcd-125">Request body</span></span>
+<span data-ttu-id="f2bcd-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ca2fb-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca2fb-127">Response</span></span>
-<span data-ttu-id="ca2fb-128">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-128">If successful, this method returns a `200 OK` response code and a collection of [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f2bcd-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2bcd-127">Response</span></span>
+<span data-ttu-id="f2bcd-128">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-128">If successful, this method returns a `200 OK` response code and a collection of [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ca2fb-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ca2fb-129">Example</span></span>
-### <a name="request"></a><span data-ttu-id="ca2fb-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ca2fb-130">Request</span></span>
-<span data-ttu-id="ca2fb-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f2bcd-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f2bcd-129">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f2bcd-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f2bcd-130">Request</span></span>
+<span data-ttu-id="f2bcd-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedAppPolicies
 ```
 
-### <a name="response"></a><span data-ttu-id="ca2fb-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="ca2fb-132">Response</span></span>
-<span data-ttu-id="ca2fb-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ca2fb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f2bcd-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="f2bcd-132">Response</span></span>
+<span data-ttu-id="f2bcd-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f2bcd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
