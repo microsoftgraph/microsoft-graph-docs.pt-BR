@@ -1,12 +1,13 @@
 ---
 title: Listar windows10EnterpriseModernAppManagementConfigurations
 description: Listar propriedades e relações dos objetos windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: 0b6e2e155d9d5dbc0c1bfa3cfc95153580873f40
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c5a5155f45888bb06fef1a2e1513dfbc12395d71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005450"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311323"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Listar windows10EnterpriseModernAppManagementConfigurations
 

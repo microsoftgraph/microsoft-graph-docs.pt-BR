@@ -1,12 +1,13 @@
 ---
 title: Obter o status de um educationSynchronizationProfile
 description: Obter o status de um perfil de sincronização de dados específicos escola no inquilino. A resposta indicará que o status da sincronização.
-ms.openlocfilehash: 87ced84dc0960eb6d5808fb8d21bc40d9d9e64e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 8c48565e22df54e81f17110bb0b13654e0e69cd7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034002"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313570"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Obter o status de um educationSynchronizationProfile
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034002"
 
 Obter o status de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino. A resposta indicará que o status da sincronização.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |

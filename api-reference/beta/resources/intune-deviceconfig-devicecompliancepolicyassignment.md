@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceCompliancePolicyAssignment
 description: Atribuição de política de conformidade do dispositivo
-ms.openlocfilehash: 1e553553e81a3d3d68f0766754d770c3f3f24d7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e589cb6191a7d8ca7406125419bcfae03304ade
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310672"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>Tipo de recurso deviceCompliancePolicyAssignment
 

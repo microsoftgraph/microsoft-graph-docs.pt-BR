@@ -1,12 +1,13 @@
 ---
 title: Listar defaultManagedAppProtections
 description: Listar propriedades e relações dos objetos defaultManagedAppProtection.
-ms.openlocfilehash: 344a3241639be941d8473c21d5aa55bbbddcd552
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 18c19c98e7b1a16d63f419ecb7ac05a20d1a9412
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315089"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Listar defaultManagedAppProtections
 

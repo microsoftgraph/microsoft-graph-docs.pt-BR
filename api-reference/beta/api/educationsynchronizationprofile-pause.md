@@ -1,12 +1,13 @@
 ---
 title: Sincronização de pausa em um educationSynchronizationProfile
 description: Pause a sincronização de um perfil de sincronização de dados escola específico no inquilino.
-ms.openlocfilehash: ee2ed2133619bbcded7a31afece55191a0cfd4e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 14e94cf4a083e8f37b03f96b287a75aa40b7afed
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313283"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Sincronização de pausa em um educationSynchronizationProfile
 
@@ -14,10 +15,10 @@ ms.locfileid: "27033604"
 
 Pause a sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|

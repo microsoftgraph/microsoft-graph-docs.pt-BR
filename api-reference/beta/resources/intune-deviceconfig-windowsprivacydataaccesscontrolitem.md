@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsPrivacyDataAccessControlItem
 description: Especificar o nível de controle de acesso por categoria de dados de privacidade
-ms.openlocfilehash: b72571602b96f7b228361db4bf2526fda8def70f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3655282d7b3b6ff31268f9fe536a4a8f6ac85341
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314984"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>tipo de recurso de windowsPrivacyDataAccessControlItem
 

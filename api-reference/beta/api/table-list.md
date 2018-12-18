@@ -1,12 +1,13 @@
 ---
 title: Listar TableCollection
 description: Recupere uma lista de objetos de tabela.
-ms.openlocfilehash: 45188450c978ab75ed9fd085bf23cf6e6741ebd3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 95819efbcd2a8b88294efb2b4933f7f4edcce5b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313759"
 ---
 # <a name="list-tablecollection"></a>Listar TableCollection
 

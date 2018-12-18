@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windowsSpotlightEnablementSettings
 description: Permite que admind IT definir um mecanismo de pesquisa padrão predefinido para dispositivos controlados pelo MDM
-ms.openlocfilehash: a9d2d1231abf57f47fb510ad0ebe603ff2fa5213
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e5ce0c09bd155e493a4df9a105edb12d09e8f9e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312989"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>tipo de enum windowsSpotlightEnablementSettings
 

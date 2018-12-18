@@ -1,12 +1,13 @@
 ---
 title: Lista windows10PFXImportCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos windows10PFXImportCertificateProfile.
-ms.openlocfilehash: b53e4bed99bc1ea9a1704c403e512f549b0c843c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3332f23464b761da6a44841d9353d16ce59c6576
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313668"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>Lista windows10PFXImportCertificateProfiles
 

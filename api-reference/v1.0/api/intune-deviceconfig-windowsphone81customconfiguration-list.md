@@ -1,12 +1,13 @@
 ---
 title: Listar windowsPhone81CustomConfigurations
 description: Listar propriedades e relações dos objetos windowsPhone81CustomConfiguration.
-ms.openlocfilehash: 14b5c5dceaf044ab9988714f6a202f1ec38e18cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c12126afc281ee3f0fb3dec6047d5350ee66f00
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006703"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315586"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Listar windowsPhone81CustomConfigurations
 

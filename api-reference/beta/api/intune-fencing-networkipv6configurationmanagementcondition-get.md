@@ -1,12 +1,13 @@
 ---
 title: Obter networkIPv6ConfigurationManagementCondition
 description: Leia as propriedades e os relacionamentos do objeto networkIPv6ConfigurationManagementCondition.
-ms.openlocfilehash: acd7c5d08f0b926f411a468c8c0d03814d23a114
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ca4417a66c869a65cc7ff3a6ed9700801452140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312779"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>Obter networkIPv6ConfigurationManagementCondition
 

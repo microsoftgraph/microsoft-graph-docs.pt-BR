@@ -1,12 +1,13 @@
 ---
 title: Criar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Criar um novo objeto windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: 5188b30dc6d87f3d37064a5ac512341ad9919716
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab9dbf4132c18e40e4a72194d1fe456a2777d02e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038414"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313304"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Criar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -50,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsD
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection inclusão Blob.|
 |advancedThreatProtectionOnboardingFilename|String|Nome do arquivo do qual AdvancedThreatProtectionOnboardingBlob foi obtido.|
-|advancedThreatProtectionAutoPopulateOnboardingBlob|Booliano|Auto preencher blob de inclusão programaticamente a partir de serviço de proteção de ameaça avançadas|
+|advancedThreatProtectionAutoPopulateOnboardingBlob|Boolean|Auto preencher blob de inclusão programaticamente a partir de serviço de proteção de ameaça avançadas|
 |allowSampleSharing|Booliano|Regra para "Permitir o compartilhamento de exemplo" de AdvancedThreatProtection do Windows Defender|
 |enableExpeditedTelemetryReporting|Booliano|Acelera a frequência de relatórios de telemetria da Proteção Avançada Contra Ameaças do Windows Defender.|
 |advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection exclusão Blob.|

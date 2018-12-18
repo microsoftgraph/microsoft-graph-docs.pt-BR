@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de directoryAudit
 description: Esse recurso representa os itens de auditoria de diretório e sua coleção
-ms.openlocfilehash: 8656bd910cd5b84d7760f973b160d91efe08abe1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032928"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312786"
 ---
 # <a name="directoryaudit-resource-type"></a>tipo de recurso de directoryAudit
 Esse recurso representa os itens de auditoria de diretório e sua coleção

@@ -1,12 +1,13 @@
 ---
 title: Atualizar macOSGeneralDeviceConfiguration
 description: Atualiza as propriedades de um objeto macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: a2ed3f7aa939f7df18389306cc840e3afdcaf856
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb21b987cdcd547a18752a24443ffd8e515da4dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003406"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315607"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Atualizar macOSGeneralDeviceConfiguration
 
@@ -53,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em CompliantAppsList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|String collection|Um endereço de email sem um sufixo que corresponde a qualquer uma dessas strings será considerado fora do domínio.|
-|passwordBlockSimple|Booliano|Bloquear senhas simples.|
+|passwordBlockSimple|Boolean|Bloquear senhas simples.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
 |passwordMinimumCharacterSetCount|Int32|Número de conjuntos de caracteres que uma senha deve conter. Valores válidos de 0 a 4|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
@@ -61,7 +62,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade necessários antes que a tela atinja o tempo limite.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
+|passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
 
 
 

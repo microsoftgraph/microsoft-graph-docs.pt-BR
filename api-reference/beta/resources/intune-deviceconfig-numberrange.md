@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de numberRange
 description: Definição do intervalo de número.
-ms.openlocfilehash: ef4b24e3034414221365d81c40b453e7ca66a94b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b9703524e1562a7367a3c5b9bf0212e29620429
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314655"
 ---
 # <a name="numberrange-resource-type"></a>tipo de recurso de numberRange
 

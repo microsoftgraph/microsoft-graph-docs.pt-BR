@@ -1,12 +1,13 @@
 ---
 title: ação de shareForSchoolDataSyncService
 description: Ainda não documentado
-ms.openlocfilehash: 80548b52ee9d10dc2fee1bf27921814892395e9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11b7d890a6fd6d0199fcfbc099cef38eab414c57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039174"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313514"
 ---
 # <a name="shareforschooldatasyncservice-action"></a>ação de shareForSchoolDataSyncService
 

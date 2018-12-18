@@ -1,12 +1,13 @@
 ---
 title: tipo de enum restrictedAppsState
 description: Estado restrito de aplicativos
-ms.openlocfilehash: 953e669e2a5c02b6c6eb92318c3fb7f8a0a166a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9210a7c2dca1238a86d774297261045e7fd672f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312436"
 ---
 # <a name="restrictedappsstate-enum-type"></a>tipo de enum restrictedAppsState
 

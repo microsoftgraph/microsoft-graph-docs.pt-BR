@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingJapanTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Japão
-ms.openlocfilehash: b9962bc48f235c0ee1b9a08ab69d72677e746c01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1300119ceda0931354502dc881afc281bf7a3809
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005231"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311652"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>tipo de enum ratingJapanTelevisionType
 

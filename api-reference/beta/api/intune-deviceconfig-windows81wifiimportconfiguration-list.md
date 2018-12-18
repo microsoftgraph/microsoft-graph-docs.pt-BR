@@ -1,12 +1,13 @@
 ---
 title: Lista windows81WifiImportConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windows81WifiImportConfiguration.
-ms.openlocfilehash: d09538a0f6a74b243efb6605601ac20c18496795
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 144c78fd00ad46702b6a042d2d11018498325cc3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313962"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Lista windows81WifiImportConfigurations
 

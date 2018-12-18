@@ -1,12 +1,13 @@
 ---
 title: Atualizar importedWindowsAutopilotDeviceIdentityUpload
 description: Atualize as propriedades de um objeto importedWindowsAutopilotDeviceIdentityUpload.
-ms.openlocfilehash: 88de01687c1ad112c106a36d57563a6b6aa2b357
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: feda1e9307843dacd130680de9d57db0360a138a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039181"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315096"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Atualizar importedWindowsAutopilotDeviceIdentityUpload
 

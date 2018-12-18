@@ -1,12 +1,13 @@
 ---
 title: Atualizar azureADWindowsAutopilotDeploymentProfile
 description: Atualize as propriedades de um objeto azureADWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: 0e2a3ae9c9e93b8d48c0eea9afba97b0bf8ca1d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e47ef4aa80254ca7f08ef40c9bda9d43006f0d49
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036774"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315208"
 ---
 # <a name="update-azureadwindowsautopilotdeploymentprofile"></a>Atualizar azureADWindowsAutopilotDeploymentProfile
 
@@ -56,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |lastModifiedDateTime|DateTimeOffset|Perfil da última modificação tempo Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Configuração inicial pelo usuário Inherited a definição de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuração Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) de tela de status de inscrição|
-|extractHardwareHash|Booliano|Extração de HardwareHash para o perfil Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Boolean|Extração de HardwareHash para o perfil Inherited de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |deviceNameTemplate|String|O modelo usado para nomear o dispositivo piloto automático. Isso pode ser um texto personalizado e também pode conter o número de série do dispositivo, ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo pode ser mais do que 15 caracteres. Herdado de [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 

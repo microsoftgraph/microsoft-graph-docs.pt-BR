@@ -1,12 +1,13 @@
 ---
 title: Get androidCustomConfiguration
 description: Ler propriedades e relações do objeto androidCustomConfiguration.
-ms.openlocfilehash: a9eddb2380d96dec2279deb0548292a6205fcff8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 79f2cafe9ad01b7e58ee3cbc798929662d506307
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005169"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313171"
 ---
 # <a name="get-androidcustomconfiguration"></a>Get androidCustomConfiguration
 

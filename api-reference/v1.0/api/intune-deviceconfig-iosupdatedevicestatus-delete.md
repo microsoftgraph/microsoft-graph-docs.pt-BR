@@ -1,12 +1,13 @@
 ---
 title: Excluir iosUpdateDeviceStatus
 description: Exclui iosUpdateDeviceStatus.
-ms.openlocfilehash: 791bd7ef8d4ae104f777b5855dc35cbdb031405d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c84a01b8f9d8cc4ddb69a5c69c3a2a50140b8bb4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005498"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311295"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>Excluir iosUpdateDeviceStatus
 

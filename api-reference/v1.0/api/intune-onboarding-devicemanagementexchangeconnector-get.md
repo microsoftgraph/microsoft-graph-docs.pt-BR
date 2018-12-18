@@ -1,12 +1,13 @@
 ---
 title: Get deviceManagementExchangeConnector
 description: Ler propriedades e relações do objeto deviceManagementExchangeConnector.
-ms.openlocfilehash: 6036b44246aa27ff35e34ba63c1f31d0f51b2064
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91c83f715e023079c439b64c002ae9fb317fdfeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003918"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311918"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Get deviceManagementExchangeConnector
 

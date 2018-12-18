@@ -1,12 +1,13 @@
 ---
 title: Criar restrictedAppsViolation
 description: Crie um novo objeto de restrictedAppsViolation.
-ms.openlocfilehash: 2d43ddf5ae6c5965f67fdb32c4b242fd0a3f82e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f20463363c37e8ab9ed47bebb3b2323ca308656
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036382"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313325"
 ---
 # <a name="create-restrictedappsviolation"></a>Criar restrictedAppsViolation
 

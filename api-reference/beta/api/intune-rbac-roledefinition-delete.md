@@ -1,12 +1,13 @@
 ---
 title: Excluir roleDefinition
 description: Exclui roleDefinition
-ms.openlocfilehash: 4f423c8aafc98f8cefce632c3e3fadc617a04376
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5cba2f9e1f72f3f766836e9778f1a6a9de9c0c39
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039415"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315131"
 ---
 # <a name="delete-roledefinition"></a>Excluir roleDefinition
 

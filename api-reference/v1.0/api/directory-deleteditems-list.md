@@ -1,12 +1,13 @@
 ---
 title: Listar itens excluídos
 description: Recupere uma lista de itens recentemente excluídos em itens excluídos.
-ms.openlocfilehash: 939930a158c182780f01ff568a0e56757fec692e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 4c972ca554f7a073ddfb5b3472784240c691c973
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006006"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314277"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 

@@ -1,12 +1,13 @@
 ---
 title: Lista iosEducationDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosEducationDeviceConfiguration.
-ms.openlocfilehash: 1de543c42e19394d60f0d609afed6f567e7ec952
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9801e7603e49343f58f94e4267b05d3d75c5d880
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311057"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>Lista iosEducationDeviceConfigurations
 

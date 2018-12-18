@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingNewZealandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Nova Zelândia
-ms.openlocfilehash: 46852ba7bfc6ac55977b6d44d07619a98bd081b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2a9e8eb055c54c08df00e324909ba893c8e5b081
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314669"
 ---
 # <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enum ratingNewZealandTelevisionType
 

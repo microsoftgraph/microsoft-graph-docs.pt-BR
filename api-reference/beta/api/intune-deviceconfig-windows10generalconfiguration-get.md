@@ -1,12 +1,13 @@
 ---
 title: Get windows10GeneralConfiguration
 description: Ler propriedades e relações do objeto windows10GeneralConfiguration.
-ms.openlocfilehash: fb0259775e542518d7abaa0711eba612813800b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f0ae3d32df8290616bcf50defa84515575c5bf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313311"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 

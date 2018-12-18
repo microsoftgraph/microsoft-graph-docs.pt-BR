@@ -1,12 +1,13 @@
 ---
 title: Criar roleScopeTag
 description: Crie um novo objeto de roleScopeTag.
-ms.openlocfilehash: b2f42999c785786175e5a6fb4dfd2b510d148927
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2aaede673afa4346a1defbc9449a4e08d9d1c614
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036677"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315145"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 

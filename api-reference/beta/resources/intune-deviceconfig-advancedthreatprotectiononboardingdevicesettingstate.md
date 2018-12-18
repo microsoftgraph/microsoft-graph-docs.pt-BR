@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de advancedThreatProtectionOnboardingDeviceSettingState
 description: Estado de inclusão de ATP para um determinado dispositivo.
-ms.openlocfilehash: 44dabd71706679a5ce55bdf14eef77dc905fbb54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eecdcc1cbaf9c783da6dcf902281aa6394a842a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035422"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310868"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>tipo de recurso de advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -38,7 +39,7 @@ Estado de inclusão de ATP para um determinado dispositivo.
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
 ## <a name="relationships"></a>Relações

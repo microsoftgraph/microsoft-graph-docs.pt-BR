@@ -1,12 +1,13 @@
 ---
 title: Atualizar rangeborder
 description: Atualize as propriedades do objeto rangeborder.
-ms.openlocfilehash: b3152bb9bc67ab5551389d0e87e46856f201f73b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ed9b2e5fa6b3d4a1dd3c227160eb71435e9a3817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005303"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311939"
 ---
 # <a name="update-rangeborder"></a>Atualizar rangeborder
 
@@ -39,7 +40,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |color|string|Código de cor HTML que representa a cor #RRGGBB da linha de borda do formulário (por exemplo, "FFA500") ou uma cor HTML nomeada (por exemplo, "laranja").|
-|estilo|string|Uma das constantes de estilo de linha, especificando o estilo de linha da borda. Os valores possíveis são: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
+|style|string|Uma das constantes de estilo de linha, especificando o estilo de linha da borda. Os valores possíveis são: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`, `SlantDashDot`.|
 |weight|string|Especifica o peso da borda em torno de um intervalo. Os valores possíveis são: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
 ## <a name="response"></a>Resposta

@@ -1,12 +1,13 @@
 ---
 title: 'ChartPointsCollection: ItemAt'
 description: Recupera um ponto com base na respectiva posição dentro da série.
-ms.openlocfilehash: 36631a66ccdab48caeb18d32162853625f0b73ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: f48a51e8da2c3dca76952460da61b492ea1235ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037357"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311582"
 ---
 # <a name="chartpointscollection-itemat"></a>ChartPointsCollection: ItemAt
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points/It
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |índice|número|Valor de índice do objeto a ser recuperado. Indexados com zero.|
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
-ms.openlocfilehash: a4707e40ff90649f93cd673a3904caa8b4cd2b9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d070dd0021cd9529c55f6f4a31d8a61d0cb32413
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314949"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 

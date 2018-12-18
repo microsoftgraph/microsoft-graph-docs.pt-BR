@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso mediaContentRatingUnitedKingdom
 description: Ainda não documentado
-ms.openlocfilehash: 8bc3b7cf1de10a6ef5b72feb7e633018766b0397
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0fcd17f27d999f933ce6824f8a49018013341c7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315530"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>Tipo de recurso mediaContentRatingUnitedKingdom
 

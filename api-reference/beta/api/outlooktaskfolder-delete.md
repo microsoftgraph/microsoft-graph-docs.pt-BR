@@ -1,19 +1,20 @@
 ---
 title: Excluir outlookTaskFolder
 description: Exclua a pasta de tarefas do Outlook especificada.
-ms.openlocfilehash: de287113f6e0eded982947d310239db4d028abc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: c3024bb6f9fad987d98370787427880739993b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314809"
 ---
 # <a name="delete-outlooktaskfolder"></a>Excluir outlookTaskFolder
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Exclua a pasta de tarefas do Outlook especificada.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

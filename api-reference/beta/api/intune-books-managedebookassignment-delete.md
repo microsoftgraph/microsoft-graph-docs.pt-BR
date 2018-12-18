@@ -1,12 +1,13 @@
 ---
 title: Excluir managedEBookAssignment
 description: Exclui managedEBookAssignment.
-ms.openlocfilehash: dfeaa13ec8ce8c0670331a9fccef1d43a3f1aece
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 512ebf28739a29f941ce0a9175c7cdae2e6b9bc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038267"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313563"
 ---
 # <a name="delete-managedebookassignment"></a>Excluir managedEBookAssignment
 

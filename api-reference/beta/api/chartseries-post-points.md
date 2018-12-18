@@ -1,12 +1,13 @@
 ---
 title: Criar ChartPoints
 description: Use essa API para criar novos ChartPoints.
-ms.openlocfilehash: be10973510b053b30178a3c5b35a866f828bf927
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: bc6d386b7508e98797fbaa79f9b79d066918518a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311575"
 ---
 # <a name="create-chartpoints"></a>Criar ChartPoints
 

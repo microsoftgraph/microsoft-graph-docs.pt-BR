@@ -1,12 +1,13 @@
 ---
 title: Acessar windows10SecureAssessmentConfiguration
 description: Leia as propriedades e relações de objetos de windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: e341ab9da5ea2727427c2101338061549fdc4f66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7bdef0ef87bdc1af6e00ab950ee0d1601ab6b846
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313766"
 ---
 # <a name="get-windows10secureassessmentconfiguration"></a>Acessar windows10SecureAssessmentConfiguration
 

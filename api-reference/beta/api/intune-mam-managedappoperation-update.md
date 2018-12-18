@@ -1,12 +1,13 @@
 ---
 title: Atualizar managedAppOperation
 description: Atualizar as propriedades de um objeto managedAppOperation.
-ms.openlocfilehash: 793b4eb48a0f70c0b1877aebd40969fba334e65e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ec9e327f1eae83eca31661742c241cec58740bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037524"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312940"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|Cadeia de caracteres|O estado atual da operação|
+|estado|Cadeia de caracteres|O estado atual da operação|
 |id|String|Chave da entidade.|
 |version|String|Versão da entidade.|
 

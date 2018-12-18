@@ -1,12 +1,13 @@
 ---
 title: Get detectedApp
 description: Ler propriedades e relações do objeto detectedApp.
-ms.openlocfilehash: a9b5b06a47b4606cc45ba07315331536fb4267c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8d52d614d060d433fcee468a0b5663de33a5dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003401"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311953"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 

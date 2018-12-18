@@ -1,12 +1,13 @@
 ---
 title: 'Table: DataBodyRange'
 description: Obtém o objeto de intervalo associado ao corpo de dados da tabela.
-ms.openlocfilehash: 0b43ec153ca01f42053100c56381692d0e790db9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: a61690aef261725ca87053a01428b153c5a05c7a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311169"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 

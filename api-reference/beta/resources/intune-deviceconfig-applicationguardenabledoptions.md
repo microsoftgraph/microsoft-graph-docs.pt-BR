@@ -1,12 +1,13 @@
 ---
 title: tipo de enum applicationGuardEnabledOptions
 description: Valores possíveis para ApplicationGuardEnabledOptions
-ms.openlocfilehash: d58406682d38eaba3044cf195ea2a1c2082984d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9dd5327bb964f27706a0671a4cca41dda5b10780
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038646"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311967"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>tipo de enum applicationGuardEnabledOptions
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de configurações
 description: 'As configurações do usuário atual. '
-ms.openlocfilehash: 291ec0b8d11a94d082534f5a890b556df89d665e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c6a130dc9232114110735ebb0a98b0beeecbf835
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005960"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314494"
 ---
 # <a name="settings-resource-type"></a>tipo de recurso de configurações
 
@@ -27,8 +28,8 @@ Esse recurso permite:
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Booliano|API [de tendências](/graph/api/resources/insights-trending?view=graph-rest-beta) quando definido como true, o acesso de representante para o usuário está desabilitado. Quando definido como true, documentos no Office de me aprofundar o usuário estão desabilitadas. Quando definido como true, a relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de exibição de descoberta no OneDrive for Business é afetado. Os usuários podem controlar essa configuração no [Office me aprofundar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a [configuração de nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlar o acesso de representante para a [análise de tendências](/graph/api/resources/insights-trending?view=graph-rest-beta) API. Quando definido como true, a organização não tem acesso ao Office me aprofundar. A relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de descoberta no OneDrive for Business será afetada para toda a organização. Essa configuração é somente leitura e só pode ser alterada pelos administradores, no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Boolean|API [de tendências](/graph/api/resources/insights-trending?view=graph-rest-beta) quando definido como true, o acesso de representante para o usuário está desabilitado. Quando definido como true, documentos no Office de me aprofundar o usuário estão desabilitadas. Quando definido como true, a relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de exibição de descoberta no OneDrive for Business é afetado. Os usuários podem controlar essa configuração no [Office me aprofundar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Boolean|Reflete a [configuração de nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlar o acesso de representante para a [análise de tendências](/graph/api/resources/insights-trending?view=graph-rest-beta) API. Quando definido como true, a organização não tem acesso ao Office me aprofundar. A relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de descoberta no OneDrive for Business será afetada para toda a organização. Essa configuração é somente leitura e só pode ser alterada pelos administradores, no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 
 ## <a name="json-representation"></a>Representação JSON

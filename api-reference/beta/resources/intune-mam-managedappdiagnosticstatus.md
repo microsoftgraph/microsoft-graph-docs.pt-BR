@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppDiagnosticStatus
 description: Representa o status de diagnóstico.
-ms.openlocfilehash: 44284b54692e4a123b1837bbfb0f5f04a2b01a2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1618c65b46654832fc7706f01cb6d6a9f78926e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040606"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314774"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Tipo de recurso managedAppDiagnosticStatus
 

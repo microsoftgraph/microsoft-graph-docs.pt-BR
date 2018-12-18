@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mobileAppTroubleshootingEvent
 description: Status de instalação de evento que representa um aplicativo de dispositivo de usuários.
-ms.openlocfilehash: 8e8f45c2008600ebfb75b3207b4f3bb310ae072b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92b16d0dd3678aed8cec810f27172e05f37f1ad8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033468"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314396"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>tipo de recurso de mobileAppTroubleshootingEvent
 

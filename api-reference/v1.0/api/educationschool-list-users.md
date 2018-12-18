@@ -1,12 +1,13 @@
 ---
 title: Listar educationUsers
 description: Recupere uma lista de usuários em uma escola.
-ms.openlocfilehash: 77d19abc915566e8f048343b84473cf28a799367
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: d282c2df8f78b38e8e21adff115f1af8b11bc1db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314214"
 ---
 # <a name="list-educationusers"></a>Listar educationUsers
 

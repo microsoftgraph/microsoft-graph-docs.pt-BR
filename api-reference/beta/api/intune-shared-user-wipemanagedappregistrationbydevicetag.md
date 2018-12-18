@@ -1,12 +1,13 @@
 ---
 title: ação de wipeManagedAppRegistrationByDeviceTag
 description: Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.
-ms.openlocfilehash: 7ea037eecb0a581dd55d212fe541391f24d0819f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54b5e969d66bff44d0ed19561546ebdc1bdb2c4c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040887"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312156"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>ação de wipeManagedAppRegistrationByDeviceTag
 

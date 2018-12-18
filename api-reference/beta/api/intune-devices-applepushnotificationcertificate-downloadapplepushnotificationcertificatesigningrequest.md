@@ -1,12 +1,13 @@
 ---
 title: Função downloadApplePushNotificationCertificateSigningRequest
 description: Baixa a solicitação de assinatura de certificado de notificação por push da Apple
-ms.openlocfilehash: 12ceee63ab753c0540e0a8df7dfeff0e62de5748
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c65b700a7c3eca69d6207d4fa8d69073e9b54ce0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036736"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312667"
 ---
 # <a name="downloadapplepushnotificationcertificatesigningrequest-function"></a>Função downloadApplePushNotificationCertificateSigningRequest
 

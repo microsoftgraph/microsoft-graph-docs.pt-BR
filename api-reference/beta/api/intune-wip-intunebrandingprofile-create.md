@@ -1,12 +1,13 @@
 ---
 title: Criar intuneBrandingProfile
 description: Crie um novo objeto de intuneBrandingProfile.
-ms.openlocfilehash: 42a90e6a5488e8f9e37fa5c3a5fda18a9d4f424f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4058e30fe858c261a59b105652d198946b630222
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036433"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314872"
 ---
 # <a name="create-intunebrandingprofile"></a>Criar intuneBrandingProfile
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|String|Chave de perfil|
 |profileName|String|Nome do perfil|
 |profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Booliano|Apresenta se o perfil é usado para padrão.|
+|isDefaultProfile|Boolean|Apresenta se o perfil é usado para padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile última modificação.|
 |displayName|Cadeia de caracteres|Nome da empresa/organização exibido para usuários finais.|

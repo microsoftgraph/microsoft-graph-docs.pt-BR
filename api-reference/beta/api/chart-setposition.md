@@ -1,12 +1,13 @@
 ---
 title: 'Chart: setPosition'
 description: Posiciona o gráfico em relação às células na planilha.
-ms.openlocfilehash: 8cb85aef81ac3399cf1b8825144dd889acebee66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8d5a5f2b599d9d3b3902c8bbb5feec2d8178a6e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033599"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314921"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |startCell|string|A célula inicial. Esse é o local para o qual o gráfico será movido. A célula inicial é a célula superior esquerda ou direita, dependendo das configurações de exibição do usuário, da esquerda para a direita.|
 |endCell|string|Opcional. A célula final. Quando é especificada, a altura e a largura do gráfico são definidas para cobrirem totalmente essa célula ou intervalo.|

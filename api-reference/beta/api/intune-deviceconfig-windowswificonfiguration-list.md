@@ -1,12 +1,13 @@
 ---
 title: Lista windowsWifiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsWifiConfiguration.
-ms.openlocfilehash: 055eb6722ebaf049b2654a681711f3073b66faae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e35f4e29237d8f20371553a1d4a5f4815744c0d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312380"
 ---
 # <a name="list-windowswificonfigurations"></a>Lista windowsWifiConfigurations
 

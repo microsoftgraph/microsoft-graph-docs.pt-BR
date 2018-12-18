@@ -1,12 +1,13 @@
 ---
 title: 'ChartLineFormat: clear'
 description: Limpe a formatação da linha de um elemento do gráfico.
-ms.openlocfilehash: 0006df0fec41d422d46ee11263b7c22360a53162
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 123efee9740c2ef78d5dc4c1ad76c5fb28c23ba7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033336"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314032"
 ---
 # <a name="chartlineformat-clear"></a>ChartLineFormat: clear
 

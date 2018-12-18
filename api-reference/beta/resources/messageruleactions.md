@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso messageRuleActions
 description: Representa o conjunto de ações que estão disponíveis para uma regra.
-ms.openlocfilehash: fbd189d8a43dc47e139f69cd345b4c14744d94f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 515d31ff8c11b95a3aa0042449d22df883e0eecf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314991"
 ---
 # <a name="messageruleactions-resource-type"></a>Tipo de recurso messageRuleActions
 

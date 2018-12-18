@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceConfigurationGroupAssignment
 description: Atualize as propriedades de um objeto deviceConfigurationGroupAssignment.
-ms.openlocfilehash: 303ecefdccafc133c4680bc0fd7eb866b682fded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038237"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313878"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Atualizar deviceConfigurationGroupAssignment
 
@@ -56,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetGroupId|String|A identificação do grupo AAD pretendemos a configuração do dispositivo.|
-|excludeGroup|Booliano|Indica se este grupo devem ser excluídos. Padrões que o grupo deve ser incluído|
+|excludeGroup|Boolean|Indica se este grupo devem ser excluídos. Padrões que o grupo deve ser incluído|
 
 
 

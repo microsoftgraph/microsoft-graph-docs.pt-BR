@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de embeddedSIMActivationCode
 description: O código de ativação SIM incorporado como fornecido pela operadora móvel.
-ms.openlocfilehash: ad0b5d9ff2ac06387d81354cf74f2784d4838600
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e768a4047b8ddc785b545d3b850128a8e44f256
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039089"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311785"
 ---
 # <a name="embeddedsimactivationcode-resource-type"></a>tipo de recurso de embeddedSIMActivationCode
 

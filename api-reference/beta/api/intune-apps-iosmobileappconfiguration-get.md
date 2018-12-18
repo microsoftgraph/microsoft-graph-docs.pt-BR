@@ -1,12 +1,13 @@
 ---
 title: Obter iosMobileAppConfiguration
 description: Lê propriedades e relações do objeto iosMobileAppConfiguration.
-ms.openlocfilehash: cbff1c1405d02aa21069ba7fa4c981d494d6ffb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4784930ca0d61d898af0801be2661148958c1bc7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312996"
 ---
 # <a name="get-iosmobileappconfiguration"></a>Obter iosMobileAppConfiguration
 

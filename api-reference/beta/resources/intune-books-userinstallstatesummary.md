@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso userInstallStateSummary
 description: Contém as propriedades do resumo de estado de instalação de um usuário.
-ms.openlocfilehash: 87d3dfbf5132c495c3d2507e94534972b30fd56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d8976cd7db7baabaec60bdf3fe2ed18094156c1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314382"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Tipo de recurso userInstallStateSummary
 

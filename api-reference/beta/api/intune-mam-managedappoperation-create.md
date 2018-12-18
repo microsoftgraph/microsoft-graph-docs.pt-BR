@@ -1,12 +1,13 @@
 ---
 title: Criar managedAppOperation
 description: Criar um novo objeto managedAppOperation.
-ms.openlocfilehash: ac6a6933a7cceac298e2cbd1c59d3cb1ec4aaade
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21b9fdd862b72b6935e694f3a7937e675dcd5343
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036708"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313339"
 ---
 # <a name="create-managedappoperation"></a>Criar managedAppOperation
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|Cadeia de caracteres|O estado atual da operação|
+|estado|Cadeia de caracteres|O estado atual da operação|
 |id|String|Chave da entidade.|
 |version|String|Versão da entidade.|
 

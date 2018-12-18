@@ -1,12 +1,13 @@
 ---
 title: Atualizar outlooktaskfolder
 description: Atualize as propriedades graváveis de uma pasta de tarefas do Outlook.
-ms.openlocfilehash: 8b02f3b8eea104ba0a0cfaa3fddaf286fa41f389
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 83b78a7d3ff625a6eaaacd3ac54612e487350cde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313969"
 ---
 # <a name="update-outlooktaskfolder"></a>Atualizar outlooktaskfolder
 
@@ -15,7 +16,7 @@ ms.locfileid: "27040022"
 Atualize as propriedades graváveis de uma pasta de tarefas do Outlook.
 
 Você não pode alterar o valor da propriedade de **nome** da pasta de tarefas padrão, "Tarefas".
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

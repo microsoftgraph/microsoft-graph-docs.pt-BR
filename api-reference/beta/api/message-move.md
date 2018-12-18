@@ -1,12 +1,13 @@
 ---
 title: 'message: move'
 description: Mova uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
-ms.openlocfilehash: ea05cf2d07a9dc0719c4485f9dd940a0cc96ed24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 46f62d8793a20db41d19c1677b3d6f48aa7dbd14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038950"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311694"
 ---
 # <a name="message-move"></a>message: move
 
@@ -14,7 +15,7 @@ ms.locfileid: "27038950"
 
 Mova uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino e remove a mensagem original.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro   | Tipo |Descrição|
+| Parâmetro   | Type |Descrição|
 |:---------------|:--------|:----------|
 |DestinationId|String|O ID da pasta de destino, ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 

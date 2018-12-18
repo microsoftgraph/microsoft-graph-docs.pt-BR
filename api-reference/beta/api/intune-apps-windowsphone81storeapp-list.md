@@ -1,12 +1,13 @@
 ---
 title: Lista windowsPhone81StoreApps
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81StoreApp.
-ms.openlocfilehash: 4c65ffad64457a5aa1608d8f1325efc3c2bc48a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 39fb1b2f9c7fe766bd294ebc05295f6e1b374034
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034885"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313381"
 ---
 # <a name="list-windowsphone81storeapps"></a>Lista windowsPhone81StoreApps
 

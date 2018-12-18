@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
-ms.openlocfilehash: 893a5bef5fd3a2fce730c5f971ceca523e260be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006967"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312478"
 ---
 # <a name="user-resource-type"></a>tipo de recurso de usuário
 
@@ -68,7 +69,7 @@ Esse recurso permite:
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
 |ageGroup|String|Define o grupo de idade do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |

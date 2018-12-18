@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windowsInformationProtectionEnforcementLevel
 description: Valores possíveis para níveis de imposição de proteção de WIP
-ms.openlocfilehash: a590132f80028af513d4244f49904267b3a85f50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb30ffb58b129fc302d7896c148072a54b98c0a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037475"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315159"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>tipo de enum windowsInformationProtectionEnforcementLevel
 

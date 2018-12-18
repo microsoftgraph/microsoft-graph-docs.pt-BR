@@ -1,12 +1,13 @@
 ---
 title: função getRoleScopeTagsByResource
 description: Ainda não documentado
-ms.openlocfilehash: 10c440464224877865e74d9c9fe1750088241af7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fc5592927d51a8f153d02d74834aeefdb449604
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313542"
 ---
 # <a name="getrolescopetagsbyresource-function"></a>função getRoleScopeTagsByResource
 

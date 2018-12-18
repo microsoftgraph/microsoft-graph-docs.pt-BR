@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsOfficeClientConfiguration
 description: Patch uma carga de diretiva específicas do não relacionadas à segurança.
-ms.openlocfilehash: 7d825d84a73df05ec9cde35bcb0121d7237eb279
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 728fe7b6ffdb4b964488317551fdbaef139d2803
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310749"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Atualizar windowsOfficeClientConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Listar macOSDeviceFeaturesConfigurations
 description: Listar propriedades e relações dos objetos macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: e9888496ab5c94307217815be5764ab5ea0c6067
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5fb6d0c2e8068cf5fe2adb45f9bfd9ff8c26139a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314081"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Listar macOSDeviceFeaturesConfigurations
 

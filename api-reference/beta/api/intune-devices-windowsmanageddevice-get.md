@@ -1,12 +1,13 @@
 ---
 title: Obter windowsManagedDevice
 description: Leia as propriedades e os relacionamentos do objeto windowsManagedDevice.
-ms.openlocfilehash: 9e15fe9357a8ebc14868ef24043e5131acfc84c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51d5adb884779a850c9689ec8b25704cde916a13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036284"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27314053"
 ---
 # <a name="get-windowsmanageddevice"></a>Obter windowsManagedDevice
 

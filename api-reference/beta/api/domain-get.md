@@ -1,12 +1,13 @@
 ---
 title: Obter domínio
 description: Recupere as propriedades e os relacionamentos do objeto domain.
-ms.openlocfilehash: 55c0d9b2685d57e9ff5282b34c3335f469c0b374
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 00afe2423dd5c294a701d0a6f38e5f395d890571
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036546"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27313787"
 ---
 # <a name="get-domain"></a>Obter domínio
 

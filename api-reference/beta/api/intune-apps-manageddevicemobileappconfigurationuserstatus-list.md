@@ -1,12 +1,13 @@
 ---
 title: Listar managedDeviceMobileAppConfigurationUserStatuses
 description: Listar propriedades e relações dos objetos managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 5444e3c30edfe90491432268a82a554da0b4443d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 081d359bb1b34f3842d59786df2692a8261982a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311449"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>Listar managedDeviceMobileAppConfigurationUserStatuses
 

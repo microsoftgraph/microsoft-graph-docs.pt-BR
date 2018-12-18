@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPrivacyDataAccessControlItem
 description: Exclui um windowsPrivacyDataAccessControlItem.
-ms.openlocfilehash: e2267a4186d57a8c2e56d0f5ed3e455c11d64b09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 76931f9481659e244e1c0235ee19732dd40854a2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038767"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27311127"
 ---
 # <a name="delete-windowsprivacydataaccesscontrolitem"></a>Excluir windowsPrivacyDataAccessControlItem
 

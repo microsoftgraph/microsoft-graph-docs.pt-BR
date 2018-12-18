@@ -1,12 +1,13 @@
 ---
 title: Atualizar mobileAppInstallSummary
 description: Atualize as propriedades de um objeto mobileAppInstallSummary.
-ms.openlocfilehash: 0fa1343d52fa82c69f6511d3e320ebae2d98a084
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94dc7fa5023d26de91b4d64efda27332dd51de63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034899"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315635"
 ---
 # <a name="update-mobileappinstallsummary"></a>Atualizar mobileAppInstallSummary
 

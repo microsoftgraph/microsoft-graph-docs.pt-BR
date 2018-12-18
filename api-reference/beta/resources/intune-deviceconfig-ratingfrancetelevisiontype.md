@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingFranceTelevisionType
 description: Rótulos de classificação de conteúdo de TV na França
-ms.openlocfilehash: 700e74261c820c32e20aa80cc34883a2452169ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f202b2e942e36e7c13052643a31ee0a984723f5d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040543"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27312212"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>tipo de enum ratingFranceTelevisionType
 
