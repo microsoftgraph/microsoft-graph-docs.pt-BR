@@ -1,12 +1,13 @@
 ---
 title: Listar windows10SecureAssessmentConfigurations
 description: Listar propriedades e relações dos objetos windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: 640d014eb047c5c873aa05aaf9c28c456f7698bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30f742e7280502bd0f7a77f67eb85fd54ef142b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038795"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305681"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Listar windows10SecureAssessmentConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: Obter circularGeofenceManagementCondition
 description: Leia as propriedades e os relacionamentos do objeto circularGeofenceManagementCondition.
-ms.openlocfilehash: 5ca0b3bd9ce989311bc1311ecdb35495bbab6464
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4fdc0cae52ac1590a8788b4c80cfe3e989752902
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034819"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305863"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>Obter circularGeofenceManagementCondition
 

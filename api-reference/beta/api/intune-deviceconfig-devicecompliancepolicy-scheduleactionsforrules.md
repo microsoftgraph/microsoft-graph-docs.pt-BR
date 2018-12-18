@@ -1,12 +1,13 @@
 ---
 title: Ação scheduleActionsForRules
 description: Ainda não documentado
-ms.openlocfilehash: 9b51c826d6b31a51ac97d52daf23f9dc9cb18985
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f069f8bb6c1c4540353f0eb43731bff6739c0a30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038434"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306024"
 ---
 # <a name="scheduleactionsforrules-action"></a>Ação scheduleActionsForRules
 

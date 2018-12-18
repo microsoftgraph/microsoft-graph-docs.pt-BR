@@ -1,12 +1,13 @@
 ---
 title: Obter gráfico
 description: Recupera as propriedades e os relacionamentos do objeto de gráfico.
-ms.openlocfilehash: db6fc68c50ef608e4ee81a576911499039676b63
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 85a2e92808a4622a539cccf832b87fe2f65324f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306038"
 ---
 # <a name="get-chart"></a>Obter gráfico
 

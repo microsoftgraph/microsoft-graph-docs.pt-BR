@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceCompliancePolicyAssignment
 description: Exclui deviceCompliancePolicyAssignment.
-ms.openlocfilehash: dc8a7ea898fe3c1d9b1d93bd180acd925489a8b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7fc38acb1e8eed0b61694cf9aa63bec296bfdf89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005714"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306535"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>Excluir deviceCompliancePolicyAssignment
 

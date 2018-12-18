@@ -1,12 +1,13 @@
 ---
 title: Criar deviceConfigurationDeviceStatus
 description: Criar um novo objeto deviceConfigurationDeviceStatus.
-ms.openlocfilehash: b79a58ef701d22b35b1c2c19a0c166db02cada11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05e8280d7b4bda79feef9cd6f5055f00ee783822
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003817"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306542"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>Criar deviceConfigurationDeviceStatus
 

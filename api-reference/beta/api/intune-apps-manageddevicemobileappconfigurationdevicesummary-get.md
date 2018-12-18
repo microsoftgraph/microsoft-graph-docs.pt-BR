@@ -1,12 +1,13 @@
 ---
 title: Obter managedDeviceMobileAppConfigurationDeviceSummary
 description: Ler propriedades e relações do objeto managedDeviceMobileAppConfigurationDeviceSummary.
-ms.openlocfilehash: 426c2c65f6bbf0c8969ae98330ee04f6d4b7c4a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c435fcb8c91b540fc8fa07b1ee9660bf193b7bc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306031"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicesummary"></a>Obter managedDeviceMobileAppConfigurationDeviceSummary
 

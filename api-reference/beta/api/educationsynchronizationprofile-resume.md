@@ -1,12 +1,13 @@
 ---
 title: Reiniciar a sincronização de um educationSynchronizationProfile
 description: Retome a sincronização de um perfil de sincronização de dados escola específico no inquilino.
-ms.openlocfilehash: a184c6d7903da891d93275f87501ab38f83c3e88
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: fd148db59d34f6455ba01e721453972f9cf65be4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038080"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305646"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Reiniciar a sincronização de um educationSynchronizationProfile
 
@@ -14,10 +15,10 @@ ms.locfileid: "27038080"
 
 Retome a sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|

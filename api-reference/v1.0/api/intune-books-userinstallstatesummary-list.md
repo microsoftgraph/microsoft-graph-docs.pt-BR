@@ -1,12 +1,13 @@
 ---
 title: Listar userInstallStateSummaries
 description: Listar propriedades e relações dos objetos userInstallStateSummary.
-ms.openlocfilehash: 9c28b1b8ab7fd4b3d9b009bc4e436c8de9f64c54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c061a443ce26074240abc2ce0056696805fa01d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007142"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306297"
 ---
 # <a name="list-userinstallstatesummaries"></a>Listar userInstallStateSummaries
 

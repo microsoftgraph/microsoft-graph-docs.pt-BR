@@ -1,12 +1,13 @@
 ---
 title: Listar registeredUsers
 description: Recupera uma lista de usuários que são usuários registrados do dispositivo.
-ms.openlocfilehash: 08c6cc2268daa31b0d365e0201536df3586a798c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56bfac40f5103a6e6c459511d428c03b88cb523f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305849"
 ---
 # <a name="list-registeredusers"></a>Listar registeredUsers
 

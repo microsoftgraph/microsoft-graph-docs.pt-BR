@@ -1,12 +1,13 @@
 ---
 title: Ação bypassActivationLock
 description: Ignorar bloqueio de ativação
-ms.openlocfilehash: 262f746e63980dd646638fa4600297c9a9e9e049
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: faf627a3f2c0d635398c11b1a7a82431884152a5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040867"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306052"
 ---
 # <a name="bypassactivationlock-action"></a>Ação bypassActivationLock
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de officeUserCheckinSummary
 description: Entidade que descreve as estatísticas de check-in do inquilino.
-ms.openlocfilehash: b8b3cc0c6129782a25a12cf22659cb6849a81e26
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5064882f74a13feca726a6ebb91c34cf9a85af86
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035558"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306325"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>tipo de recurso de officeUserCheckinSummary
 

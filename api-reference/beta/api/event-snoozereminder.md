@@ -1,12 +1,13 @@
 ---
 title: 'event: snoozeReminder'
 description: Adie um lembrete para um evento em um calendário do usuário até um novo horário.
-ms.openlocfilehash: 8b7cb8f2ada513aac0fd048bb49a69198bc630d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: fc97ae4fffca5eeb054f708fe1dec8575382e6be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038654"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305709"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
@@ -14,7 +15,7 @@ ms.locfileid: "27038654"
 
 Adie um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) do usuário até um novo horário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |newReminderTime|DateTimeTimeZone|A nova data e hora para disparar o lembrete.|
 

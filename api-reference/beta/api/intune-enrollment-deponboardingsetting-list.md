@@ -1,12 +1,13 @@
 ---
 title: Lista depOnboardingSettings
 description: Lista as propriedades e os relacionamentos dos objetos depOnboardingSetting.
-ms.openlocfilehash: 9f1f4d7574083d3ee2c85112400b5fc6c5c39b85
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e3a84246f20b6939e156172f77c76a9baac18b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038777"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305576"
 ---
 # <a name="list-deponboardingsettings"></a>Lista depOnboardingSettings
 

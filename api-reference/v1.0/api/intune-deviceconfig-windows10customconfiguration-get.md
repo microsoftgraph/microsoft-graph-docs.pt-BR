@@ -1,12 +1,13 @@
 ---
 title: Acessar windows10CustomConfiguration
 description: Leia as propriedades e as relações do objeto windows10CustomConfiguration.
-ms.openlocfilehash: 60abc91cbb0d29b5839599814cca494574a1fee7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8a52f9cd7aeefc560ff786a6e51e2bbec3047494
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005446"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306367"
 ---
 # <a name="get-windows10customconfiguration"></a>Acessar windows10CustomConfiguration
 

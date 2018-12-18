@@ -1,12 +1,13 @@
 ---
 title: Lista circularGeofenceManagementConditions
 description: Lista as propriedades e os relacionamentos dos objetos circularGeofenceManagementCondition.
-ms.openlocfilehash: 39acde133ee07051242ff48ed23b41feb7ba01a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b8f57677fc5c3017d069d2e1fae7da3eb70b2d7d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038334"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305975"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>Lista circularGeofenceManagementConditions
 

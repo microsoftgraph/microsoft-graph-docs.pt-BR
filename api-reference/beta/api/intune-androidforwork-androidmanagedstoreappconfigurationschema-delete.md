@@ -1,12 +1,13 @@
 ---
 title: Excluir androidManagedStoreAppConfigurationSchema
 description: Exclui um androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: acfc1b02fef1382349c266fd08df8101fb839e13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e64923a206329086e053052eb7c5f2314714dac6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039057"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27305667"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>Excluir androidManagedStoreAppConfigurationSchema
 

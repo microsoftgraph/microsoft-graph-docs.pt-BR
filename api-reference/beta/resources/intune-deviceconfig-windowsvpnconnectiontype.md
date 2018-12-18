@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windowsVpnConnectionType
 description: Tipo de conexão VPN do Windows.
-ms.openlocfilehash: a0b860da5e84f546c6e94fad66bc44302a470eed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d26b55b2d1b8fb38336c2dffcab4f002b03b1e82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039411"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306360"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>tipo de enum windowsVpnConnectionType
 

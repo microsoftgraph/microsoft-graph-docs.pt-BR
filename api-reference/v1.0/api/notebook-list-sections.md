@@ -1,17 +1,18 @@
 ---
 title: Listar seções
 description: Recupere uma lista de objetos onenoteSection do bloco de anotações especificado.
-ms.openlocfilehash: a092630db8815117110c29420481a91aaac57164
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 06072dc31a18c6573dffef67d905da04afec1aa1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006615"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306290"
 ---
 # <a name="list-sections"></a>Listar seções
 
 Recupere uma lista de objetos [onenoteSection](../resources/section.md) do bloco de anotações especificado.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
