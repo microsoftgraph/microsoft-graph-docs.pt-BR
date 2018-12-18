@@ -1,12 +1,13 @@
 ---
 title: Ação sendTestMessage
 description: Envia mensagens de teste usando o notificationMessageTemplate especificado no local padrão
-ms.openlocfilehash: 99e93f64d1ca308c17b1a548c938a46922039c46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4495b4064f18739744d0f1f5f8709f28373d5f89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007072"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362752"
 ---
 # <a name="sendtestmessage-action"></a>Ação sendTestMessage
 

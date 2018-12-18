@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsMobileMSI
 description: Exclui windowsMobileMSI.
-ms.openlocfilehash: 853909784d9b2d7bc336b9484b802b46c0aa4422
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb88ea22f0f9d5e8aa6205c2827f1bc1eb646f97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040221"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333681"
 ---
 # <a name="delete-windowsmobilemsi"></a>Excluir windowsMobileMSI
 

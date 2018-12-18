@@ -1,12 +1,13 @@
 ---
 title: tipo de enum mobileAppContentFileUploadState
 description: Contém propriedades para estados de solicitação de carregamento.
-ms.openlocfilehash: 4a312c46ebef8832cd7e8c33cf099fea705974ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ed4f238c907a9eec3a11643b1e05a40cffd804a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035757"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337006"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enum mobileAppContentFileUploadState
 

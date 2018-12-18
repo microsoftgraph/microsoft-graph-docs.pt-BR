@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceGuardVirtualizationBasedSecurityState
 description: Ainda não documentado
-ms.openlocfilehash: 719916717f711fa9230bc111e12d492557329830
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d40293a16fb3d424fed38cead82cfd7177df890
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040439"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354233"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enum deviceGuardVirtualizationBasedSecurityState
 

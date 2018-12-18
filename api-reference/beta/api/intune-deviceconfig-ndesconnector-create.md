@@ -1,12 +1,13 @@
 ---
 title: Criar ndesConnector
 description: Crie um novo objeto de ndesConnector.
-ms.openlocfilehash: 0dd1ee403a03d72e5bd9c0dd8febcfb28a01a36e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 16580e9d69850139edd8f268bbaf3688b29d06e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036371"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333597"
 ---
 # <a name="create-ndesconnector"></a>Criar ndesConnector
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |:---|:---|:---|
 |id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector Ndes|
-|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
+|estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|String|O nome amigável do conector Ndes.|
 
 

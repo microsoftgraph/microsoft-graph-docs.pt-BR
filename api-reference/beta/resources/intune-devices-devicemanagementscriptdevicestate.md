@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceManagementScriptDeviceState
 description: Contém propriedades para o dispositivo executada no estado do script de gerenciamento de dispositivo.
-ms.openlocfilehash: 11c9e574e880df371f45181dd02fdb2292d0cb15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5667de5351ea3130ab0c3e00a55013ada66ed01a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337321"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso de deviceManagementScriptDeviceState
 

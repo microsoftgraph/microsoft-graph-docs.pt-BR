@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de embeddedSIMActivationCodePoolAssignment
 description: A incorporado entidade SIM ativação código pool atribuição atribui um embeddedSIMActivationCodePool específico a um grupo de dispositivo AAD.
-ms.openlocfilehash: 27a7ed5a524d7033225ec8dfbafdf2f3f74b5ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 67d563a630fb1c1092416f1081c4decda0d9eaf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033287"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337433"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>tipo de recurso de embeddedSIMActivationCodePoolAssignment
 

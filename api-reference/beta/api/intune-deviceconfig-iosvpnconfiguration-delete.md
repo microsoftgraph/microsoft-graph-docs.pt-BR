@@ -1,12 +1,13 @@
 ---
 title: Excluir iosVpnConfiguration
 description: Exclui um iosVpnConfiguration.
-ms.openlocfilehash: 319f8ba6168f7b36e9d63b7ff2b354e25944081c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5cc3cdb344426122c6a8daa1066c72af0d44cbe1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338168"
 ---
 # <a name="delete-iosvpnconfiguration"></a>Excluir iosVpnConfiguration
 

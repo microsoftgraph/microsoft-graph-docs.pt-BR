@@ -1,12 +1,13 @@
 ---
 title: Lista windows10EnrollmentCompletionPageConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windows10EnrollmentCompletionPageConfiguration.
-ms.openlocfilehash: 0346b16e507d8c312ac82c94781fb962f5ae7392
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a58303efbf97e8f447d0fdd0345d46d559b3c77
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032916"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338721"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>Lista windows10EnrollmentCompletionPageConfigurations
 

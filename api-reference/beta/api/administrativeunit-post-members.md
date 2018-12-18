@@ -1,12 +1,13 @@
 ---
 title: Adicionar um membro
 description: Use essa API para adicionar um membro (usuário ou grupo) para uma unidade administrativa.
-ms.openlocfilehash: d969be353a1ae41f0b1ba0d302b497596804e325
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: be47dbf06c5f59c0a4aaaea4f8c8b4aa8c3ce902
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034073"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339225"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
@@ -16,7 +17,7 @@ Use essa API para adicionar um membro (usuário ou grupo) para uma unidade admin
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

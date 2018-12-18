@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagementSettings
 description: Ainda não documentado
-ms.openlocfilehash: 81aa176af23451675b58a916e9b092ef119dfcb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 048755ef068bf28381e84067a9eff5d5cbe88ad6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035574"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334885"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 
@@ -21,7 +22,7 @@ Ainda não documentado
 |deviceComplianceCheckinThresholdDays|Int32|O número de dias que tem um dispositivo pode ser executado sem fazer check-in para permanecer em conformidade. Valores válidos de 0 a 120|
 |isScheduledActionEnabled|Booliano|O recurso está habilitado ou não para ação agendada para a regra.|
 |secureByDefault|Booliano|Quando true, o dispositivo deve ser incompatível quando não há nenhuma política de conformidade direcionada|
-|enhancedJailBreak|Booliano|É o recurso habilitado ou não para maior detecção de jailbreak.|
+|enhancedJailBreak|Boolean|É o recurso habilitado ou não para maior detecção de jailbreak.|
 |deviceInactivityBeforeRetirementInDay|Int32|Quando o dispositivo não check-in do número especificado de dias, os dados da empresa podem ser removidos e o dispositivo não estará sob gerenciamento. Valores válidos 30 a 270|
 
 ## <a name="relationships"></a>Relações

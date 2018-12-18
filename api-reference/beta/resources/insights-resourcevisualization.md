@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de resourceVisualization
 description: Tipo complexo que contém propriedades de ideias.
-ms.openlocfilehash: 3ed61a8547e072938fc073d90f2592baf4c08fba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: d0c54895468fc9a01017e448df57c09c654616e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038203"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333534"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso de resourceVisualization
 
@@ -54,7 +55,7 @@ Veja a seguir uma representação JSON do recurso
 -   InfoPath
 -   Visio
 -   Publisher
--   Projeto
+-   Project
 -   Access
 -   Email
 -   CSV
@@ -68,8 +69,8 @@ Veja a seguir uma representação JSON do recurso
 -   Xml
 -   Story
 -   ExternalContent
--   Pasta
--   Outro
+-   Folder
+-   Other
 
 Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 

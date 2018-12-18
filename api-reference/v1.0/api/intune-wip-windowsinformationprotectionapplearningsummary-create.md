@@ -1,12 +1,13 @@
 ---
 title: Criar windowsInformationProtectionAppLearningSummary
 description: Criar um novo objeto windowsInformationProtectionAppLearningSummary.
-ms.openlocfilehash: 03a03e0e32115cd0f5b2f56e652c608073db7d94
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdcf4be10f26036c06f4cfd0a67f98601c296ec7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005356"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354296"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>Criar windowsInformationProtectionAppLearningSummary
 

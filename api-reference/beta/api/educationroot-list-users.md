@@ -1,12 +1,13 @@
 ---
 title: Listar usuários
 description: Recupera uma lista de objetos de usuário. Esses objetos de usuário incluirão propriedades específicas de educação.
-ms.openlocfilehash: 476741b04da049c019276f78b4842e9732ff9c29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: dd7d086b4471b2938cb5480f9d351a46a27e1f06
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034578"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338497"
 ---
 # <a name="list-users"></a>Listar usuários
 

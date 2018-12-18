@@ -1,14 +1,15 @@
 ---
-title: tipo de recurso de outlookTask
+title: tipo de recurso outlookTask
 description: 'Um item do Outlook que pode rastrear um item de trabalho. '
-ms.openlocfilehash: c197591d40b4c65e9a7ab5e047e9a93c522e6400
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034123"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335228"
 ---
-# <a name="outlooktask-resource-type"></a>tipo de recurso de outlookTask
+# <a name="outlooktask-resource-type"></a>tipo de recurso outlookTask
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
@@ -58,10 +59,10 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e hora em que a tarefa foi criada. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data em que o fuso horário especificado que a tarefa deve ser concluído.|
-|hasAttachments|Booliano|Defina como true se a tarefa tiver anexos.|
+|hasAttachments|Boolean|Defina como true se a tarefa tiver anexos.|
 |id|String|O identificador exclusivo da tarefa. Somente leitura.|
 |importance|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isReminderOn|Booliano|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
+|isReminderOn|Boolean|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação a tarefa. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |owner|String|O nome da pessoa que criou a tarefa.|
 |parentFolderId|String|O identificador exclusivo para a pasta do pai da tarefa.|

@@ -1,12 +1,13 @@
 ---
 title: Excluir editionUpgradeConfiguration
 description: Exclui editionUpgradeConfiguration.
-ms.openlocfilehash: fecd500f9200631cc766158d207bee0a8ed44071
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fdb8319e5e14857be2fc06721cf991d913ee6eb4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006390"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340394"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>Excluir editionUpgradeConfiguration
 

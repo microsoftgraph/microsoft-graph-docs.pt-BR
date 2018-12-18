@@ -1,12 +1,13 @@
 ---
 title: Adicionar guia ao canal
 description: 'Adiciona (pins) uma guia para o canal especificado dentro de uma equipe. '
-ms.openlocfilehash: a32f0a289de08d49cfc12a9fa0cef60732f3364c
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 2e99e2297fd21f651b9461798c1a2236f9ffb321
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337503"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar guia ao canal
 
@@ -14,7 +15,7 @@ ms.locfileid: "27222440"
 
 Adiciona (pins) um [guia](../resources/teamstab.md) para o [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). O aplicativo correspondente já deve estar [instalado na equipe de](../api/teamsappinstallation-add.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

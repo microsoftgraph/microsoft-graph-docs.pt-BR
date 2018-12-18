@@ -1,12 +1,13 @@
 ---
 title: 'Range: EntireColumn'
 description: Obtém um objeto que representa toda a coluna do intervalo.
-ms.openlocfilehash: d7a11ff6c177ec90f26a85ad0a323b6a01cc7872
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b2aa75e6739c535e1af040186ab0d2b9f0420b2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357348"
 ---
 # <a name="range-entirecolumn"></a>Range: EntireColumn
 

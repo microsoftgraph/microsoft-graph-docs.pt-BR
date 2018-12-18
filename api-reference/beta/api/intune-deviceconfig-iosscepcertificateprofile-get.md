@@ -1,12 +1,13 @@
 ---
 title: Obter iosScepCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto iosScepCertificateProfile.
-ms.openlocfilehash: 5c352689e334ae3ad5ca5b8a614985bc4496e8fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a038f619ac9f5cf6d12b3f2506a83a5e07a827d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036870"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332960"
 ---
 # <a name="get-iosscepcertificateprofile"></a>Obter iosScepCertificateProfile
 

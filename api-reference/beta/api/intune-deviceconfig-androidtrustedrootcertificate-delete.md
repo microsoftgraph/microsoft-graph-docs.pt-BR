@@ -1,12 +1,13 @@
 ---
 title: Excluir androidTrustedRootCertificate
 description: Exclui um androidTrustedRootCertificate.
-ms.openlocfilehash: 2e4f1a6d4ddda7e43677d12d8520ce1ea8fb47cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 51a01d89683db7d3acbdaf6edbc24fdf8f082480
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036557"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335375"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>Excluir androidTrustedRootCertificate
 

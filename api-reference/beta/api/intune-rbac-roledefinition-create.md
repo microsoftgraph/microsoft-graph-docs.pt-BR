@@ -1,12 +1,13 @@
 ---
 title: Criar roleDefinition
 description: Criar um novo objeto roleDefinition
-ms.openlocfilehash: 6772b065e4d4d73615540667470829b31a2de804
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03134f270d49002c5882a1e65cb0c4454684cd4a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041180"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337342"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 

@@ -1,12 +1,13 @@
 ---
 title: Get managedDevice
 description: Ler propriedades e relações do objeto managedDevice.
-ms.openlocfilehash: 313bf301800468842a1d3432bbe6573d9321f315
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 827688dfc8b928e4d88073868c5eab9af72dfc3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006989"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363582"
 ---
 # <a name="get-manageddevice"></a>Get managedDevice
 

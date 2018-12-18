@@ -1,12 +1,13 @@
 ---
 title: Get notificationMessageTemplate
 description: Ler propriedades e relações do objeto notificationMessageTemplate.
-ms.openlocfilehash: ce5d53e53deeedd2976d614100d67de40870166f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c0b30043aabe1d5f1ded67a11907ea5f86a4fb8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007074"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337636"
 ---
 # <a name="get-notificationmessagetemplate"></a>Get notificationMessageTemplate
 

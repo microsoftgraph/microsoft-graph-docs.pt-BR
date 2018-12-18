@@ -1,12 +1,13 @@
 ---
 title: ação de sendCustomNotificationToCompanyPortal
 description: Ainda não documentado
-ms.openlocfilehash: bf19f87c385568a38407fff0df144c6df165fbc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4dac88c0ec9325e5c1b268feda3c98226438f8b2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336446"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>ação de sendCustomNotificationToCompanyPortal
 

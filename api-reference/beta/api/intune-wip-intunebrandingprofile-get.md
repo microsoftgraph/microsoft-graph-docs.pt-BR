@@ -1,12 +1,13 @@
 ---
 title: Obter intuneBrandingProfile
 description: Leia as propriedades e os relacionamentos do objeto intuneBrandingProfile.
-ms.openlocfilehash: 2c1c4d16cdd6166de0f7170bdef7a038a7ebd98b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c90dc24f85f6c259c48cdf0ba2e431ef5c8c55a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333569"
 ---
 # <a name="get-intunebrandingprofile"></a>Obter intuneBrandingProfile
 

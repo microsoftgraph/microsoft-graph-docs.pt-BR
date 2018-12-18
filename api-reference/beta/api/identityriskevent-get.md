@@ -1,19 +1,20 @@
 ---
 title: Obter identityRiskEvent
 description: Recupere as propriedades e relações do objeto identityriskevent.
-ms.openlocfilehash: 3e00f93fc80f68799687ba6e9b1ec25d803779dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: 09c33e2d6df33c1a3375f05f44670592ebe1982b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035843"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363694"
 ---
 # <a name="get-identityriskevent"></a>Obter identityRiskEvent
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere as propriedades e relações do objeto identityriskevent.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,12 +1,13 @@
 ---
 title: Lista networkIPv4ConfigurationManagementConditions
 description: Lista as propriedades e os relacionamentos dos objetos networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: e217a3d9e2c0cd7b3358d6380f92450fb3aa3864
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e1707fa85788fb5085f37654645b0863b5a8b46
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363610"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Lista networkIPv4ConfigurationManagementConditions
 

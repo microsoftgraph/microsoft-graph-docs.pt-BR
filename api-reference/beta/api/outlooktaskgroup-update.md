@@ -1,12 +1,13 @@
 ---
 title: Atualizar outlooktaskgroup
 description: Atualize as propriedades graváveis de um grupo de tarefa do Outlook.
-ms.openlocfilehash: cbe2ae7248f37d9d243673610550a6a974acffb0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 40d146f90bf512ec9afa8790d7f02d4039dd53cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035359"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334899"
 ---
 # <a name="update-outlooktaskgroup"></a>Atualizar outlooktaskgroup
 
@@ -15,7 +16,7 @@ ms.locfileid: "27035359"
 Atualize as propriedades graváveis de um grupo de tarefa do Outlook.
 
 Observe que você não pode modificar o nome do grupo de tarefas padrão, "Minhas tarefas".
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

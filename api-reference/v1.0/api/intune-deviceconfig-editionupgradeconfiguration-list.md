@@ -1,12 +1,13 @@
 ---
 title: Listar editionUpgradeConfigurations
 description: Listar propriedades e relações dos objetos editionUpgradeConfiguration.
-ms.openlocfilehash: 1b60625a37fb95fefc5748b4feef460341d9ebc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e3dc33fbecf05f65eac49adf50c747ce5545ed3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005973"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355087"
 ---
 # <a name="list-editionupgradeconfigurations"></a>Listar editionUpgradeConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: 'Table: reapplyFilters'
 description: Aplica novamente todos os filtros à tabela.
-ms.openlocfilehash: 2ba5d0cc70fc93153d5b441b608df1dbc9670e51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3a6b4f7ca8db046c5009fb710122c5b15e57030b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038673"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362108"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 

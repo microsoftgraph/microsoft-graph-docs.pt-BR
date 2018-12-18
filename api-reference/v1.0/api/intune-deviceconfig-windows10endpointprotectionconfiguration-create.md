@@ -1,12 +1,13 @@
 ---
 title: Criar windows10EndpointProtectionConfiguration
 description: Criar um novo objeto windows10EndpointProtectionConfiguration.
-ms.openlocfilehash: 64b8b38926ab73bffe454b66bdeb7bba4f81e82e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bc2c393872f548637b5b390dc6694cc6b4216feb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005298"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338308"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Criar windows10EndpointProtectionConfiguration
 
@@ -50,15 +51,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|firewallBlockStatefulFTP|Booliano|Bloqueia conexões de FTP com estado ao dispositivo|
+|firewallBlockStatefulFTP|Boolean|Bloqueia conexões de FTP com estado ao dispositivo|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura o tempo limite ocioso das associações de segurança, em segundos, de 300 para 3.600, inclusive. Após esse período, as associações de segurança expirarão e serão excluídas. Valores válidos de 300 a 3.600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Selecione a chave pré compartilhada codificação a ser usada. Os valores possíveis são: `deviceDefault`, `none`, `utF8`.|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Booliano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
-|firewallIPSecExemptionsAllowICMP|Booliano|Configura isenções IPSec para permitir ICMP|
-|firewallIPSecExemptionsAllowRouterDiscovery|Booliano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
-|firewallIPSecExemptionsAllowDHCP|Booliano|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
+|firewallIPSecExemptionsAllowICMP|Boolean|Configura isenções IPSec para permitir ICMP|
+|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
+|firewallIPSecExemptionsAllowDHCP|Boolean|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
 |firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Especifique como a lista de revogação de certificado deve ser impostas. Os valores possíveis são: `deviceDefault`, `none`, `attempt`, `require`.|
-|firewallMergeKeyingModuleSettings|Booliano|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
+|firewallMergeKeyingModuleSettings|Boolean|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
 |firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Configura como queueing pacotes deve ser aplicada no cenário túnel gateway. Os valores possíveis são: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes do domínio|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes públicas|
@@ -68,24 +69,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderAdditionalGuardedFolders|String collection|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
 |defenderExploitProtectionXmlFileName|String|Nome do arquivo do qual DefenderExploitProtectionXml foi obtido.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Booliano|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Permite que o administrador escolha quais tipos de aplicativo permitir nos dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
-|smartScreenEnableInShell|Booliano|Permite que os administradores de TI configurem SmartScreen para Windows.|
-|smartScreenBlockOverrideForFiles|Booliano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
-|applicationGuardEnabled|Booliano|Habilitar o Windows Defender Application Guard|
+|smartScreenEnableInShell|Boolean|Permite que os administradores de TI configurem SmartScreen para Windows.|
+|smartScreenBlockOverrideForFiles|Boolean|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
+|applicationGuardEnabled|Boolean|Habilitar o Windows Defender Application Guard|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Área de transferência de bloqueio para um arquivo de imagem de transferência, arquivo de texto ou nenhum deles. Os valores possíveis são: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Booliano|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
-|applicationGuardAllowPersistence|Booliano|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web, etc.)|
-|applicationGuardForceAuditing|Booliano|A auditoria forçada manterá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema, etc.)
+|applicationGuardBlockNonEnterpriseContent|Boolean|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
+|applicationGuardAllowPersistence|Boolean|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web, etc.)|
+|applicationGuardForceAuditing|Boolean|A auditoria forçada manterá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema, etc.)
 |
 |applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Impedir a área de transferência de compartilhar dados do Host para o Contêiner, do Contêiner para o Host ou em ambas as direções. Os valores possíveis são: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
-|applicationGuardAllowPrintToPDF|Booliano|Permitir a impressão em PDF pelo contêiner|
-|applicationGuardAllowPrintToXPS|Booliano|Permitir a impressão em XPS pelo contêiner|
-|applicationGuardAllowPrintToLocalPrinters|Booliano|Permitir a impressão em Impressoras Locais pelo contêiner|
-|applicationGuardAllowPrintToNetworkPrinters|Booliano|Permitir a impressão em Impressoras da Rede pelo contêiner|
-|bitLockerDisableWarningForOtherDiskEncryption|Booliano|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Booliano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
-|bitLockerEncryptDevice|Booliano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker.|
+|applicationGuardAllowPrintToPDF|Boolean|Permitir a impressão em PDF pelo contêiner|
+|applicationGuardAllowPrintToXPS|Boolean|Permitir a impressão em XPS pelo contêiner|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Permitir a impressão em Impressoras Locais pelo contêiner|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Permitir a impressão em Impressoras da Rede pelo contêiner|
+|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
+|bitLockerEncryptDevice|Boolean|Permite que o administrador exija que a criptografia seja ativada usando BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Política da unidade removível do BitLocker.|
 
 

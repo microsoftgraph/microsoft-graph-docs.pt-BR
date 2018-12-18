@@ -1,12 +1,13 @@
 ---
 title: Get enrollmentConfigurationAssignment
 description: Ler propriedades e relações do objeto enrollmentConfigurationAssignment.
-ms.openlocfilehash: 43e24d13802d07883e4a99daa19fe12fc7ca9390
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e42fa6976d08a56668d2f6dfb871d689f0b893e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333773"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
 

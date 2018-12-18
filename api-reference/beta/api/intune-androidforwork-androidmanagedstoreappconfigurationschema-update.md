@@ -1,12 +1,13 @@
 ---
 title: Atualizar androidManagedStoreAppConfigurationSchema
 description: Atualize as propriedades de um objeto androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: e762a909db958b62d1128ff1dae178181124990c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcdacb235de85392ab39fb410b6b936fd7ce0195
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362626"
 ---
 # <a name="update-androidmanagedstoreappconfigurationschema"></a>Atualizar androidManagedStoreAppConfigurationSchema
 
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
-|exampleJson|Binário|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
+|exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
 |schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema|
 
 

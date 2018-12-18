@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de resourceReference
 description: Tipo complexo que contém propriedades de ideias.
-ms.openlocfilehash: d171151a1c3547aa6863a7f70cc3a42ddec13e5d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 2f1a44412eebbb7a74895c12db9a07696d6ee409
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363617"
 ---
 # <a name="resourcereference-resource-type"></a>tipo de recurso de resourceReference
 

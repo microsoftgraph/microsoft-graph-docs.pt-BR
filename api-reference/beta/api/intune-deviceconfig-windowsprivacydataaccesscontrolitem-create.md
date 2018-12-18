@@ -1,12 +1,13 @@
 ---
 title: Criar windowsPrivacyDataAccessControlItem
 description: Crie um novo objeto de windowsPrivacyDataAccessControlItem.
-ms.openlocfilehash: 6466e4ddc0db738c30111e1ca836c60e5ec885ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 262f6866c37d3ed624916189a25ce5a5b5fd0634
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038781"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337678"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>Criar windowsPrivacyDataAccessControlItem
 

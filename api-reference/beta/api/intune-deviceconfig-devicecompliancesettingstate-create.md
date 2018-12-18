@@ -1,12 +1,13 @@
 ---
 title: Criar deviceComplianceSettingState
 description: Criar um novo objeto deviceComplianceSettingState.
-ms.openlocfilehash: cb5f4ba5a71b9c7887dabdbf1c51c7665db26d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab149e492b133ae2d39805e6ef6e3b6f93e484e6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040784"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332890"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Criar deviceComplianceSettingState
 
@@ -57,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
 

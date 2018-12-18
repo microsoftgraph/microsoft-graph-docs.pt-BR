@@ -1,12 +1,13 @@
 ---
 title: Excluir managedEBookCategory
 description: Exclui um managedEBookCategory.
-ms.openlocfilehash: 959342895569a7f63f65c03a3793d3ebfff46cec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1333a93081ebc77f53345e07b68af6c30de19d7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039707"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334003"
 ---
 # <a name="delete-managedebookcategory"></a>Excluir managedEBookCategory
 

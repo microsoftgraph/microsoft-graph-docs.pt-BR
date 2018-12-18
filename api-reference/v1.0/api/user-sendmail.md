@@ -1,12 +1,13 @@
 ---
 title: Enviar email
 description: Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
-ms.openlocfilehash: 6d8150f7292747e7c1d182395f9a98b1a199389f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a818ec5cc455b6ca78c920be57ad34155a03a1bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333289"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -38,10 +39,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
-|saveToSentItems|Booliano|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
+|saveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
 
 ## <a name="response"></a>Resposta
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso notebook
 description: Um bloco de anotações do OneNote.
-ms.openlocfilehash: b84cb85cea58939a5414c51ce58c82b684ca0997
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 2e435a208395e34e9c10474e3df15f1ad16f3996
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006294"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335578"
 ---
 # <a name="notebook-resource-type"></a>Tipo de recurso notebook
 

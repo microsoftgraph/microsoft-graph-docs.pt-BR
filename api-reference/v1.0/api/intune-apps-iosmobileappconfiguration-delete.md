@@ -1,12 +1,13 @@
 ---
 title: Excluir iosMobileAppConfiguration
 description: Exclui um iosMobileAppConfiguration.
-ms.openlocfilehash: 86f8ce601e427aa5c02ffe7e29193d554019a096
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32d0ca60e4ff226b333b8b60c5510dfe0a7a2b23
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004551"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339260"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Excluir iosMobileAppConfiguration
 

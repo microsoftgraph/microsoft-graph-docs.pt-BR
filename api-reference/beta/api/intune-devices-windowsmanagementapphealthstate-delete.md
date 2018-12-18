@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsManagementAppHealthState
 description: Exclui um windowsManagementAppHealthState.
-ms.openlocfilehash: 32716b879804ef08eeaf5d94b65a5cec774c652c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 42d8ddcded88d43e49627830cc73b8be525ef817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362402"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>Excluir windowsManagementAppHealthState
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedEBookAssignment
 description: Contém propriedades usadas para atribuir um livro eletrônico a um grupo.
-ms.openlocfilehash: ecf79b4055ea87d710cb62ac4446bb5bd65793ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d5b9d7a3d4574c2098dbe694eb208894c4262514
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006231"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362759"
 ---
 # <a name="managedebookassignment-resource-type"></a>Tipo de recurso managedEBookAssignment
 

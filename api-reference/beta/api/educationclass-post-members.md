@@ -1,12 +1,13 @@
 ---
 title: Adicionar um aluno
 description: Adicione um membro a uma aula.
-ms.openlocfilehash: 0b748a924de1f882372c0117f94d0de06f64dbc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: f38edbfdf3abbb66e3de839485b2c4fdbfaa48df
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034015"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333373"
 ---
 # <a name="add-a-student"></a>Adicionar um aluno
 

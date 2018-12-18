@@ -1,12 +1,13 @@
 ---
 title: Lista importedWindowsAutopilotDeviceIdentityUploads
 description: Lista as propriedades e os relacionamentos dos objetos importedWindowsAutopilotDeviceIdentityUpload.
-ms.openlocfilehash: 710bc72af1d674999c44b3608c7eec5cde0798b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c949a665a2d77e69ccd646c1da45f25a82953a7c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038792"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344531"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>Lista importedWindowsAutopilotDeviceIdentityUploads
 

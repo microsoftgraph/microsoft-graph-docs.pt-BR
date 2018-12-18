@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windows10AssociatedApps
 description: Definição de aplicativo do Windows 10 associados.
-ms.openlocfilehash: 80aa2ad172260a5817ed07813ec634d4deb46ae8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a990d3b1f9b2b33a1e98fd30f5dea4da7fbf4ae8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036326"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344825"
 ---
 # <a name="windows10associatedapps-resource-type"></a>tipo de recurso de windows10AssociatedApps
 

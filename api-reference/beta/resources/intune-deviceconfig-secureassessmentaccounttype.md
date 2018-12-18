@@ -1,12 +1,13 @@
 ---
 title: tipo de enum secureAssessmentAccountType
 description: Tipo de contas que têm permissão para Windows10SecureAssessment ConfigurationAccount.
-ms.openlocfilehash: 97dc60d8d15e90c43923d939cf957e1092b2cc45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: faf504410336bdc491c29b676aaa1b57cd0a5ee2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039213"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362220"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>tipo de enum secureAssessmentAccountType
 

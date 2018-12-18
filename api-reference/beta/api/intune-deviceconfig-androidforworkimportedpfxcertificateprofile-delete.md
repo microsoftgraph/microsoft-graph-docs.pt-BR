@@ -1,12 +1,13 @@
 ---
 title: Excluir androidForWorkImportedPFXCertificateProfile
 description: Exclui um androidForWorkImportedPFXCertificateProfile.
-ms.openlocfilehash: 627fc05d618af09444c30170995e88a3853b068f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2f0424dd5a627072ead8f618c5319a3702be4b40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038254"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362577"
 ---
 # <a name="delete-androidforworkimportedpfxcertificateprofile"></a>Excluir androidForWorkImportedPFXCertificateProfile
 

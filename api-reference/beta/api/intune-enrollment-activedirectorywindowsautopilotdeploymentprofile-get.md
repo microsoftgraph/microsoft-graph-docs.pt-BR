@@ -1,12 +1,13 @@
 ---
 title: Obter activeDirectoryWindowsAutopilotDeploymentProfile
 description: Leia as propriedades e os relacionamentos do objeto activeDirectoryWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: dec8ab3b9bd65acba8198be5b4942524815fe93a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cddb09b39dbf8a95be627e77c244fd507a477b33
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037116"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337720"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>Obter activeDirectoryWindowsAutopilotDeploymentProfile
 

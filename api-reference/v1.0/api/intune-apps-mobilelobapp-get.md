@@ -1,12 +1,13 @@
 ---
 title: Acessar mobileLobApp
 description: Leia as propriedades e as relações do objeto mobileLobApp.
-ms.openlocfilehash: aa8d69b7b782a3178127c7cd2db93a2c3f42bfb9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d94e4b89b481b0b567b92b35f19f71473393fe53
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005703"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333359"
 ---
 # <a name="get-mobilelobapp"></a>Acessar mobileLobApp
 

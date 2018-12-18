@@ -1,12 +1,13 @@
 ---
 title: Atualizar managedDeviceMobileAppConfigurationUserStatus
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 42cf0fad50b205adfe71c794a80ba358d0951b0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 581b332687e591da13dc4705c6d9cede2a524a13
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355437"
 ---
 # <a name="update-manageddevicemobileappconfigurationuserstatus"></a>Atualizar managedDeviceMobileAppConfigurationUserStatus
 

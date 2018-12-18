@@ -1,12 +1,13 @@
 ---
 title: Como proteger dados de aplicativos corporativos com o Microsoft Intune
 description: As políticas de proteção de aplicativos do Microsoft Intune ajudam a proteger os dados da empresa e evitar a perda de dados.
-ms.openlocfilehash: 9dffd9c06baf49274d3c5a0192aa5410f4647c9d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dd47d1765d53cb8beed7c3b0e87b330b306f8b12
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033296"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334507"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 

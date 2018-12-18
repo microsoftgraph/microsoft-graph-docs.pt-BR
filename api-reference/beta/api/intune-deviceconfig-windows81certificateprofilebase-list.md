@@ -1,12 +1,13 @@
 ---
 title: Lista windows81CertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos windows81CertificateProfileBase.
-ms.openlocfilehash: f9b7cbc509edc1db397a29564d4983f1690ece1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 310f49f36e53df3e9aef31b180c13a71280cca08
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037571"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344741"
 ---
 # <a name="list-windows81certificateprofilebases"></a>Lista windows81CertificateProfileBases
 

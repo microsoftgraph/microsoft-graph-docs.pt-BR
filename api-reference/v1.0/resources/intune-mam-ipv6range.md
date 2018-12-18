@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iPv6Range
 description: Intervalo de IPV6
-ms.openlocfilehash: c2f17529b589fc2d7837f6a8f539ff64d5d82dd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b5a2ad772d45b4be5fa3a8f4da04b28bc965195d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337545"
 ---
 # <a name="ipv6range-resource-type"></a>Tipo de recurso iPv6Range
 

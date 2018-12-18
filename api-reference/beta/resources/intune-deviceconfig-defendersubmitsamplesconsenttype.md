@@ -1,12 +1,13 @@
 ---
 title: tipo de enum defenderSubmitSamplesConsentType
 description: Valores possíveis para DefenderSubmitSamplesConsentType
-ms.openlocfilehash: 34acecc1a18d271e02e6b75152a09a781e52f6fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9d9e02e384c4042d45b7850593559e86c1fe68d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337020"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>tipo de enum defenderSubmitSamplesConsentType
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir androidWorkProfileCompliancePolicy
 description: Exclui um androidWorkProfileCompliancePolicy.
-ms.openlocfilehash: b98498a6c39bb7354d140f98c0b15fd1788fbe2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 50c84b4f5e78ba70c376fc51a7c7ddcb0cc7dd6d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333310"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>Excluir androidWorkProfileCompliancePolicy
 

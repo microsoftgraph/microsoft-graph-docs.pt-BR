@@ -1,12 +1,13 @@
 ---
 title: 'TableSort: apply'
 description: Execute uma operação de classificação.
-ms.openlocfilehash: 4c99ff84e88154cc4eb287f4a834590f685d535b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ed5b862227986e9e280462d0118f2286dd1c9107
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333121"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |campos|SortField|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|

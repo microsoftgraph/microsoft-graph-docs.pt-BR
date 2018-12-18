@@ -1,12 +1,13 @@
 ---
 title: Get managedEBookAssignment
 description: Ler propriedades e relações do objeto managedEBookAssignment.
-ms.openlocfilehash: 99fc7dcaa42d6d6d5f1d1943d23831b09d3ac5af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: df8147dfafd928e89c32850a0f8b4b9cdb57f2dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036888"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335937"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 

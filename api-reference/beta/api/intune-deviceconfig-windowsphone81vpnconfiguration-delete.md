@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPhone81VpnConfiguration
 description: Exclui um windowsPhone81VpnConfiguration.
-ms.openlocfilehash: 3629bb76be61245b798f3f0aec1dc2b797d0ec7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 171c3fafaca7a34ec8482474dd8107dd161f7c4d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036740"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333031"
 ---
 # <a name="delete-windowsphone81vpnconfiguration"></a>Excluir windowsPhone81VpnConfiguration
 

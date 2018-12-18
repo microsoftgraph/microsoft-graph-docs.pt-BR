@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso post
 description: Representa um item de postagem individuais dentro de uma entidade converstaionThread.
-ms.openlocfilehash: 718224bba399186a390545b0f6037b9691cc02b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6030bd5ef3c59edbad9712b549531a193b808b14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040789"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363715"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 

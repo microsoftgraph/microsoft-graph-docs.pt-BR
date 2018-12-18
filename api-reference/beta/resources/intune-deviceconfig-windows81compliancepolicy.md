@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windows81CompliancePolicy
 description: Essa classe contém configurações de conformidade para o Windows 8.1.
-ms.openlocfilehash: 6a073d9b4e3eeaace80d7982ec9bec4196f7a252
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43a61c203a74123877264b070c3ed6a0322f3859
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335991"
 ---
 # <a name="windows81compliancepolicy-resource-type"></a>Tipo de recurso windows81CompliancePolicy
 

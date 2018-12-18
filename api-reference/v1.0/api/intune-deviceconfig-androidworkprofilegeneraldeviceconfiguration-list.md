@@ -1,12 +1,13 @@
 ---
 title: Lista androidWorkProfileGeneralDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileGeneralDeviceConfiguration.
-ms.openlocfilehash: a38db4f5fa714968f9a66ffd244db254d774f0db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa1ee9daf168cc9c74e736e38705a957c09ef49b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007005"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334136"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Lista androidWorkProfileGeneralDeviceConfigurations
 

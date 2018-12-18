@@ -1,12 +1,13 @@
 ---
 title: Obter windowsPhone81SCEPCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81SCEPCertificateProfile.
-ms.openlocfilehash: a826080593ef0c05f16914389bb57a70e2d90f1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cf26d39793939a722485bab6d7a8589d5d461f1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363638"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Obter windowsPhone81SCEPCertificateProfile
 

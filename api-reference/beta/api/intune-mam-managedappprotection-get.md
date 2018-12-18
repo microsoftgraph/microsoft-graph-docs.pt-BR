@@ -1,12 +1,13 @@
 ---
 title: Get managedAppProtection
 description: Ler propriedades e relações do objeto managedAppProtection.
-ms.openlocfilehash: e1bb1bbf81a177570ba099edd69709fe3b1bee1c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac2d6b3e501903fb0433b86bc19488e264619e9a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041136"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345112"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 

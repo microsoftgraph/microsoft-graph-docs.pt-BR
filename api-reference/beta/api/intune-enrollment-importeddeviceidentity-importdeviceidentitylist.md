@@ -1,12 +1,13 @@
 ---
 title: ação de importDeviceIdentityList
 description: Ainda não documentado
-ms.openlocfilehash: a99b610e4a781aa6f11aec3517f06646f3b436ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d3f719a9f2b7358acfa413810b6bd091d32f52f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033848"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338161"
 ---
 # <a name="importdeviceidentitylist-action"></a>ação de importDeviceIdentityList
 

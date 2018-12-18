@@ -1,12 +1,13 @@
 ---
 title: Lista windowsPhone81TrustedRootCertificates
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81TrustedRootCertificate.
-ms.openlocfilehash: 5d2f6f56a3d6a6731313424e29a66833d9b7721e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73a6f00d2ab82ba72570424ef11d49642d802208
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339176"
 ---
 # <a name="list-windowsphone81trustedrootcertificates"></a>Lista windowsPhone81TrustedRootCertificates
 

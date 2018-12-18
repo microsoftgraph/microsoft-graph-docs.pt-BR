@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsInformationProtectionAppLockerFile
 description: Arquivo do AppLocker da Proteção de Informações do Windows
-ms.openlocfilehash: ab6dc6e0cada610f21a09a90193e286f5b555838
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6bc4a9dde44199ce8552772a47f2f68df0c50810
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345098"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLockerFile
 
@@ -27,7 +28,7 @@ Arquivo do AppLocker da Proteção de Informações do Windows
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
-|file|Binário|Arquivo como uma matriz de bytes|
+|file|Binária|Arquivo como uma matriz de bytes|
 |id|String|Chave da entidade.|
 |version|String|Versão da entidade.|
 

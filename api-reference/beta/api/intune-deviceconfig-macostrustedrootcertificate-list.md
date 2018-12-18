@@ -1,12 +1,13 @@
 ---
 title: Lista macOSTrustedRootCertificates
 description: Lista as propriedades e os relacionamentos dos objetos macOSTrustedRootCertificate.
-ms.openlocfilehash: 944040d2f17224a80202bd051d95c05dc8f31c5a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 76f8b0b23a2d69dda0df0af0fa32f628baac19ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035897"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332897"
 ---
 # <a name="list-macostrustedrootcertificates"></a>Lista macOSTrustedRootCertificates
 

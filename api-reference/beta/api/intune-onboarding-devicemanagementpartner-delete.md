@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceManagementPartner
 description: Exclui deviceManagementPartner.
-ms.openlocfilehash: 1c5442c6878f2d1df14f2c128b6c93fa93cdd1dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d7b61cda45950039791a0a7f0407642335723228
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038352"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334906"
 ---
 # <a name="delete-devicemanagementpartner"></a>Excluir deviceManagementPartner
 

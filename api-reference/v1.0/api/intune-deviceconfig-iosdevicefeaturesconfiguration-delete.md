@@ -1,12 +1,13 @@
 ---
 title: Excluir iosDeviceFeaturesConfiguration
 description: Exclui um iosDeviceFeaturesConfiguration.
-ms.openlocfilehash: f3ae8140beb89ff1da3c40a56cdc1a381ba7cfdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b4931679c6f5cf2d9359182e46e0ec28d69d817e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003787"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354282"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>Excluir iosDeviceFeaturesConfiguration
 

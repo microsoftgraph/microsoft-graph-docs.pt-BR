@@ -1,12 +1,13 @@
 ---
 title: Lista windows81VpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windows81VpnConfiguration.
-ms.openlocfilehash: 12fdc04cd379f884a24e7070804677873dee27c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e4452a114b562106d491d5d53e37869bb51d61f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036370"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336453"
 ---
 # <a name="list-windows81vpnconfigurations"></a>Lista windows81VpnConfigurations
 

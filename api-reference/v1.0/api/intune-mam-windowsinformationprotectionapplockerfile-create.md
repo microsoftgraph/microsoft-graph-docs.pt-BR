@@ -1,12 +1,13 @@
 ---
 title: Criar windowsInformationProtectionAppLockerFile
 description: Criar um novo objeto windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: a5496b599506e81e10e8a1f7d502796bdcb8d0f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: affd7838727ee79e4eef79a87b4dd4358cf4bb6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006987"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334423"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Criar windowsInformationProtectionAppLockerFile
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
-|file|Binário|Arquivo como uma matriz de bytes|
+|file|Binária|Arquivo como uma matriz de bytes|
 |id|String|Chave da entidade.|
 |version|String|Versão da entidade.|
 

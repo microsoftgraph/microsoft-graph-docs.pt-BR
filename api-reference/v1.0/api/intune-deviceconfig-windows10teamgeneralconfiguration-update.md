@@ -1,12 +1,13 @@
 ---
 title: Atualizar windows10TeamGeneralConfiguration
 description: Atualizar as propriedades de um objeto windows10TeamGeneralConfiguration.
-ms.openlocfilehash: f3eeccfdb5d632e19e533ea9ec2bb07fc9ade297
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 283e7211c98899b1c8eb02007c9b0d9b889f8ce5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004906"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334486"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Atualizar windows10TeamGeneralConfiguration
 
@@ -50,24 +51,24 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|azureOperationalInsightsBlockTelemetry|Booliano|Indica se os Insights Operacionais do Azure devem ou não ser bloqueados.|
+|azureOperationalInsightsBlockTelemetry|Boolean|Indica se os Insights Operacionais do Azure devem ou não ser bloqueados.|
 |azureOperationalInsightsWorkspaceId|String|A ID do espaço de trabalho dos Insights Operacionais do Azure.|
 |azureOperationalInsightsWorkspaceKey|String|A chave do espaço de trabalho dos Insights Operacionais do Azure.|
-|connectAppBlockAutoLaunch|Booliano|Especifica se o aplicativo Connect deverá ser iniciado automaticamente sempre que uma projeção for iniciada.|
-|maintenanceWindowBlocked|Booliano|Indica se a configuração de uma janela de manutenção para atualizações do dispositivo deverá ou não ser bloqueada.|
+|connectAppBlockAutoLaunch|Boolean|Especifica se o aplicativo Connect deverá ser iniciado automaticamente sempre que uma projeção for iniciada.|
+|maintenanceWindowBlocked|Boolean|Indica se a configuração de uma janela de manutenção para atualizações do dispositivo deverá ou não ser bloqueada.|
 |maintenanceWindowDurationInHours|Int32|Duração da janela de manutenção para atualizações do dispositivo. Valores válidos: 0 a 5|
 |maintenanceWindowStartTime|TimeOfDay|Hora de Início da janela de manutenção para atualizações do dispositivo.|
 |miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|O canal. Os valores possíveis são: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
-|miracastBlocked|Booliano|Indica se a projeção sem fio deve ou não ser bloqueada.|
-|miracastRequirePin|Booliano|Indica se será exigido um pin para a projeção sem fio.|
-|settingsBlockMyMeetingsAndFiles|Booliano|Especifica se o recurso "Meus arquivos e reuniões" no menu Iniciar, que mostra as reuniões e arquivos do usuário conectado do Office 365, deverá ser desativado.|
-|settingsBlockSessionResume|Booliano|Especifica se a capacidade de retomar uma sessão quando a sessão expirar será permitida.|
-|settingsBlockSigninSuggestions|Booliano|Especifica se o preenchimento automático da caixa de diálogo de entrada com os convidados de reuniões agendadas será desativado.|
+|miracastBlocked|Boolean|Indica se a projeção sem fio deve ou não ser bloqueada.|
+|miracastRequirePin|Boolean|Indica se será exigido um pin para a projeção sem fio.|
+|settingsBlockMyMeetingsAndFiles|Boolean|Especifica se o recurso "Meus arquivos e reuniões" no menu Iniciar, que mostra as reuniões e arquivos do usuário conectado do Office 365, deverá ser desativado.|
+|settingsBlockSessionResume|Boolean|Especifica se a capacidade de retomar uma sessão quando a sessão expirar será permitida.|
+|settingsBlockSigninSuggestions|Boolean|Especifica se o preenchimento automático da caixa de diálogo de entrada com os convidados de reuniões agendadas será desativado.|
 |settingsDefaultVolume|Int32|Especifica o valor padrão de volume de uma nova sessão. Os valores permitidos ficam entre 0 e 100. O padrão é 45. Valores válidos de 0 a 100|
 |settingsScreenTimeoutInMinutes|Int32|Especifica o número de minutos até a tela do Hub ser desligada.|
 |settingsSessionTimeoutInMinutes|Int32|Especifica o número de minutos até a sessão atingir o tempo limite.|
 |settingsSleepTimeoutInMinutes|Int32|Especifica o número de minutos até o Hub entrar no modo de suspensão.|
-|welcomeScreenBlockAutomaticWakeUp|Booliano|Indica se a tela de boas-vindas será impedida de ser desativada automaticamente quando alguém entrar na sala.|
+|welcomeScreenBlockAutomaticWakeUp|Boolean|Indica se a tela de boas-vindas será impedida de ser desativada automaticamente quando alguém entrar na sala.|
 |welcomeScreenBackgroundImageUrl|String|The welcome screen background image URL. A URL deve usar o protocolo HTTPS e retornar uma imagem PNG.|
 |welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune-deviceconfig-welcomescreenmeetinginformation.md)|As informações da reunião mostradas na tela de boas-vindas. Os valores possíveis são: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 

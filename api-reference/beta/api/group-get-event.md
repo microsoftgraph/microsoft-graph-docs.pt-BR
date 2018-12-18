@@ -1,12 +1,13 @@
 ---
 title: Obter evento
 description: Obter um objeto event.
-ms.openlocfilehash: f67c7aef7203f86edf963e6b3d0add1f0260dfcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 88a19af3e9f57e4b4c5856b56387136ccdd876de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362409"
 ---
 # <a name="get-event"></a>Obter evento
 

@@ -1,12 +1,13 @@
 ---
 title: Criar settingStateDeviceSummary
 description: Criar um novo objeto settingStateDeviceSummary.
-ms.openlocfilehash: 434461f7c5dd77c190692099fd83824d4a106297
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 44cb33bd0445586ead64c5101c297b7a27351344
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036379"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333366"
 ---
 # <a name="create-settingstatedevicesummary"></a>Criar settingStateDeviceSummary
 

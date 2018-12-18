@@ -1,12 +1,13 @@
 ---
 title: Acessar windowsPhone81CustomConfiguration
 description: Leia as propriedades e as relações do objeto windowsPhone81CustomConfiguration.
-ms.openlocfilehash: f1a9ed4a2a4a94ebb865c30741e9417b3859619f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01ae3255368b713a9090c3a6a33d116b2f0235a4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27363568"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Acessar windowsPhone81CustomConfiguration
 

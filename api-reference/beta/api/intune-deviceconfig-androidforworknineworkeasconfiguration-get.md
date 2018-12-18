@@ -1,12 +1,13 @@
 ---
 title: Obter androidForWorkNineWorkEasConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkNineWorkEasConfiguration.
-ms.openlocfilehash: 2420451b63d1fef2383e12b0eb2bb092e93915b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d03fd33d686e40537403c6c1f88c69f14137d15b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035235"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354835"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>Obter androidForWorkNineWorkEasConfiguration
 
