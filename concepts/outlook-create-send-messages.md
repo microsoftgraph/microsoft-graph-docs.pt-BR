@@ -1,18 +1,18 @@
 ---
-title: Criar e enviar mensagens do Outlook
+title: Automatizar a criação, o envio e o processamento de mensagens
 description: Emails são representados pelo recurso de mensagem no Microsoft Graph.
-ms.openlocfilehash: 49670df0d5d735e412a0fd97e3404fab044f6f50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9eba9e04426bdf1339d9ae287c1cf085bcf3b500
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091658"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283686"
 ---
-# <a name="create-and-send-outlook-messages"></a>Criar e enviar mensagens do Outlook
+# <a name="automate-creating-sending-and-processing-messages"></a>Automatizar a criação, o envio e o processamento de mensagens
 
 Emails são representados pelo recurso de [mensagem](/graph/api/resources/message?view=graph-rest-1.0) no Microsoft Graph.
 
-Por padrão, as mensagens são identificadas por uma ID de entrada exclusiva na propriedade **id**. Um provedor de armazenamento atribui uma ID de entrada a uma mensagem quando a mensagem é salva incialmente como um rascunho ou enviada. Essa ID muda quando a mensagem é copiada ou movida para outra pasta, armazenada ou um arquivo .PST.
+Por padrão, as mensagens são identificadas por uma ID de entrada exclusiva na propriedade **id**. Quando uma mensagem é criada e salva incialmente como um rascunho ou enviada, o provedor de armazenamento atribui a mensagem a uma ID de entrada. Por padrão, essa ID muda quando a mensagem é copiada ou movida para outra pasta, armazenada ou um arquivo .PST. Faça referência à mensagem usando sua ID atual para o processá-la.
 
 ## <a name="creating-and-sending-mail"></a>Criar e enviar mensagens
 
@@ -22,20 +22,43 @@ Da mesma forma, quando responder a um email, você pode criar e enviar a respost
 
 Para distinguir entre um rascunho e uma mensagem enviada por programação, verifique a propriedade **isDraft**.
 
-Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](/graph/api/resources/mailfolder?view=graph-rest-1.0). Por exemplo, você pode fazer o seguinte para [acessar as mensagens](/graph/api/user-list-messages?view=graph-rest-1.0) na pasta Rascunhos:
+Por padrão, as mensagens de rascunho são salvas na pasta `Drafts` As mensagens enviadas são salvas na pasta `Sent Items`. Para sua conveniência, é possível identificar a pasta Rascunhos e a pasta Itens enviados por seus [nomes de pasta correspondentes já bem conhecidos](/graph/api/resources/mailfolder?view=graph-rest-1.0). 
 
+### <a name="setting-the-from-and-sender-properties"></a>Definindo as propriedades from e sender
+
+Quando uma mensagem está sendo redigida, na maioria dos casos, o Outlook configura as propriedades **from** e **sender** para o mesmo usuário conectado. Você pode atualizar essas propriedades nas seguintes situações:
+
+- A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
+- A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, o Outlook define a propriedade **sender** como a conta desse representante, enquanto a propriedade **from** continua a do proprietário da caixa de correio. Você pode definir programaticamente a propriedade **sender** para um usuário com permissões de representante para essa caixa de correio.
+
+## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar as Dicas de Email para verificar o status do destinatário e economizar tempo (prévia)
+
+Use as [Dicas de Email](/graph/api/resources/mailtips?view=graph-rest-beta) para tomar decisões inteligentes antes de enviar um email.
+As Dicas de Email podem lhe dar informações, como saber que a caixa de correio do destinatário é restrita para remetentes específicos, ou que aprovação é necessária para enviar emails ao destinatário.
+
+
+## <a name="reading-messages-with-control-over-the-body-format-returned"></a>Ler mensagens com controle sobre o formato de corpo retornado
+
+Você pode [ler uma mensagem](/graph/api/message-get?view=graph-rest-1.0) em uma caixa de correio fazendo referência a sua ID:
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["AAMkADhMGAAA="]
+}-->
+```http
+GET /me/messages/AAMkADhMGAAA=
+```
+
+Ou, pode [receber as mensagens](/graph/api/user-list-messages?view=graph-rest-1.0) em uma pasta específica. Por exemplo, para ler mensagens na pasta Rascunhos do usuário conectado:
+
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailfolders('Drafts')
 ```
 
-### <a name="body-format-and-malicious-script"></a>Formato do corpo e script mal-intencionado
+O corpo de uma mensagem do Outlook pode ser HTML ou texto, com HTML sendo retornado como o tipo de corpo da mensagem padrão na resposta GET.
 
-<!-- Remove the following 2 sections from the message.md topics
--->
-
-O corpo da mensagem pode ser HTML ou texto, com HTML sendo retornado como o tipo de corpo da mensagem padrão na resposta GET.
-
-Quando [receber uma mensagem](/graph/api/message-get?view=graph-rest-1.0), você pode especificar o cabeçalho da solicitação a seguir para retornar as propriedades **body** e **uniqueBody** no formato de texto:
+Quando receber uma mensagem, você poderá especificar o cabeçalho da solicitação a seguir para retornar as propriedades **body** e **uniqueBody** no formato de texto:
 
 ```http
 Prefer: outlook.body-content-type="text"
@@ -60,18 +83,6 @@ Para obter o conteúdo HTML completo original, inclua o seguinte cabeçalho da s
 Prefer: outlook.allow-unsafe-html
 ```
 
-### <a name="differentiating-the-from-and-sender-properties"></a>Diferenciar as propriedades from e sender
-
-Quando uma mensagem está sendo redigida, na maioria dos casos, o Outlook configura as propriedades **from** e **sender** para o mesmo usuário conectado. Você pode atualizar essas propriedades nas seguintes situações:
-
-- A propriedade **from** poderá ser alterada se o administrador do Exchange tiver atribuído direitos **sendAs** da caixa de correio a alguns outros usuários. O administrador pode fazer isso selecionando as **Permissões de Caixa de Correio** do proprietário da caixa de correio no Portal do Azure ou usando o Centro de Administração do Exchange ou um cmdlet Add-ADPermission do Windows PowerShell. Em seguida, você pode definir programaticamente a propriedade **from** como um desses usuários com direitos **sendAs** para essa caixa de correio.
-- A propriedade **sender** poderá ser alterada se o proprietário da caixa de correio tiver delegado o envio de mensagens dessa caixa de correio para um ou mais usuários. O proprietário da caixa de correio pode delegar no Outlook. Quando um representante envia uma mensagem em nome do proprietário da caixa de correio, o Outlook define a propriedade **sender** como a conta desse representante, enquanto a propriedade **from** continua a do proprietário da caixa de correio. Você pode definir programaticamente a propriedade **sender** para um usuário com permissões de representante para essa caixa de correio.
-
-## <a name="using-mailtips-to-check-recipient-status-and-save-time-preview"></a>Usar as Dicas de Email para verificar o status do destinatário e economizar tempo (prévia)
-
-Use as [Dicas de Email](/graph/api/resources/mailtips?view=graph-rest-beta) para tomar decisões inteligentes antes de enviar um email.
-As Dicas de Email podem lhe dar informações, como saber que a caixa de correio do destinatário é restrita para remetentes específicos, ou que aprovação é necessária para enviar emails ao destinatário.
-
 ## <a name="integrating-with--social-gesture-preview"></a>Integração com o gesto social "@" (prévia)
 
 As menções com @ são notificações para alertar os usuários quando eles são mencionados nas mensagens. O recurso [mention](/graph/api/resources/mention?view=graph-rest-beta) permite que os aplicativos configurem e acessem gestos sociais online comuns, como o prefixo "@", em emails.
@@ -95,4 +106,5 @@ Aproveite as seguintes funcionalidades comuns que são compartilhadas entre enti
 Saiba mais sobre:
 
 - [Por que integrar-se com o email do Outlook](outlook-mail-concept-overview.md)
+- [Obter identificadores imutáveis para recursos do Outlook (visualização)](outlook-immutable-id.md)
 - [Como usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) do Microsoft Graph versão 1.0.

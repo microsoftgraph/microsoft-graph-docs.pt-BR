@@ -1,12 +1,12 @@
 ---
 title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
-ms.openlocfilehash: e8b4671d527bac65d1855c21d7612077ed18203e
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+ms.openlocfilehash: 4317439af246701f9a1de214198e74933ef55632
+ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222657"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283728"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -16,6 +16,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="december-2018"></a>Dezembro de 2018
 
+### <a name="data-policy-api"></a>API da Política de Dados
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Adição |v1.0| Foi adicionada a nova entidade [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0). Isso representa uma operação de política de dados enviados para fins de acompanhamento.
+|Adição |v1.0| Foi adicionada a ação [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) em [users](/graph/api/resources/users?view=graph-rest-1.0). Essa ação envia uma solicitação de operação de política de dados para exportar dados pessoais armazenados pela Microsoft para um usuário. |
+|Adição |v1.0| Foi adicionado o método [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0). Isso recupera propriedades do objeto dataPolicyOperation.|
+
 ### <a name="directory-apis"></a>APIs de diretório
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
@@ -23,6 +31,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | beta | Adicionado novo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Adição | beta | Adicionada a propriedade `createdDateTime` para o recurso [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Adição | v1.0 | Adicionado método `memberOf` para obter uma direta [associação](/graph/api/resources/device?view=graph-rest-1.0) de [dispositivos](/graph/api/device-list-memberOf?view=graph-rest-1.0). Esse método foi adicionado para obter a lista de associações, incluindo associações aninhadas.|
+| Alteração    | Beta | O recurso de [contatos organizacionais](/graph/api/resources/orgcontact?view=graph-rest-beta) foi reestruturado. As propriedades de endereço físico (`city`, `country`, `postalCode`, `streetAddress` e `state`) e `officeLocation` agora estão em uma coleção de `addresses` (do novo tipo de recursos [physicalOfficeAddress](/graph/api/resources/physicalofficeaddress?view=graph-rest-beta)), e `mobilePhone`, `businessPhones` e `faxNumber` agora estão em uma coleção de `phones`. `companyName` e `imAddresses` também foram adicionados|
 
 ### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 
@@ -610,7 +619,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A ação [revokeDeviceLicense](/graph/api/intune-apps-iosvppapp-revokedevicelicense?view=graph-rest-beta) foi adicionada a [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta) |
 |Adição|beta|A ação [sendCustomNotificationToCompanyPortal](/graph/api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal?view=graph-rest-beta) foi adicionada a [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) |
 |Adição|beta|A ação **getLicensesForApp** foi adicionada ao conjunto [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) |
-|Exclusão|Beta|Foram removidos os seguintes tipos de enumeração:<br/>**windowsUpdateInsiderBuildControl**<br/>|
+|Exclusão|beta|Foram removidos os seguintes tipos de enumeração:<br/>**windowsUpdateInsiderBuildControl**<br/>|
 |Adição|beta|As propriedades **systemUpdateWindowStartMinutesAfterMidnight**, **systemUpdateWindowEndMinutesAfterMidnight** e **systemUpdateInstallType** foram adicionadas à entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)|
 |Alteração|beta|Foi alterado o tipo das seguintes propriedades na entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta):<br/>**passwordMinutesOfInactivityBeforeScreenTimeout** de Int64 para Int32<br/>|
 |Adição|beta|A propriedade **customKeyValueData** foi adicionada à entidade [androidForWorkVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkvpnconfiguration?view=graph-rest-beta)|
