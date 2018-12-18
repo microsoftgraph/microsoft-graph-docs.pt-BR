@@ -1,49 +1,50 @@
 ---
 title: Excluir educationAssignmentResource
 description: .
-ms.openlocfilehash: 9a9798170e8aab9d167a305a8815c26aec8eed13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 304ec56c8b2da36626f226104568cd353e58e88b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034984"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322642"
 ---
-# <a name="delete-educationassignmentresource"></a><span data-ttu-id="7575d-103">Excluir educationAssignmentResource</span><span class="sxs-lookup"><span data-stu-id="7575d-103">Delete educationAssignmentResource</span></span>
+# <a name="delete-educationassignmentresource"></a><span data-ttu-id="da6ef-103">Excluir educationAssignmentResource</span><span class="sxs-lookup"><span data-stu-id="da6ef-103">Delete educationAssignmentResource</span></span>
 
-> <span data-ttu-id="7575d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="7575d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7575d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="7575d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="da6ef-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="da6ef-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="da6ef-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="da6ef-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7575d-106">Exclua um recurso de uma atribuição.</span><span class="sxs-lookup"><span data-stu-id="7575d-106">Delete a resource from an assignment.</span></span> <span data-ttu-id="7575d-107">Somente professores na classe podem remover um recurso.</span><span class="sxs-lookup"><span data-stu-id="7575d-107">Only teachers in the class can remove a resource.</span></span> <span data-ttu-id="7575d-108">Depois que uma atribuição tiver sido publicada aos alunos, professores não é possível remover os recursos que são marcados como "distributeToStudents".</span><span class="sxs-lookup"><span data-stu-id="7575d-108">After an assignment has been published to students, teachers cannot remove resources that are marked as "distributeToStudents".</span></span>
+<span data-ttu-id="da6ef-106">Exclua um recurso de uma atribuição.</span><span class="sxs-lookup"><span data-stu-id="da6ef-106">Delete a resource from an assignment.</span></span> <span data-ttu-id="da6ef-107">Somente professores na classe podem remover um recurso.</span><span class="sxs-lookup"><span data-stu-id="da6ef-107">Only teachers in the class can remove a resource.</span></span> <span data-ttu-id="da6ef-108">Depois que uma atribuição tiver sido publicada aos alunos, professores não é possível remover os recursos que são marcados como "distributeToStudents".</span><span class="sxs-lookup"><span data-stu-id="da6ef-108">After an assignment has been published to students, teachers cannot remove resources that are marked as "distributeToStudents".</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7575d-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="7575d-109">Permissions</span></span>
-<span data-ttu-id="7575d-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7575d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="da6ef-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="da6ef-109">Permissions</span></span>
+<span data-ttu-id="da6ef-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da6ef-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7575d-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7575d-112">Permission type</span></span>      | <span data-ttu-id="7575d-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7575d-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="da6ef-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="da6ef-112">Permission type</span></span>      | <span data-ttu-id="da6ef-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="da6ef-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7575d-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7575d-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="7575d-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7575d-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="7575d-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7575d-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="7575d-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7575d-117">Not supported.</span></span>  |
-|<span data-ttu-id="7575d-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7575d-118">Application</span></span> | <span data-ttu-id="7575d-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7575d-119">Not supported.</span></span> | 
+|<span data-ttu-id="da6ef-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="da6ef-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="da6ef-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="da6ef-115">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="da6ef-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="da6ef-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="da6ef-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="da6ef-117">Not supported.</span></span>  |
+|<span data-ttu-id="da6ef-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="da6ef-118">Application</span></span> | <span data-ttu-id="da6ef-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="da6ef-119">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="7575d-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7575d-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da6ef-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="da6ef-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /educationClasses/assignments/{id}/resources/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7575d-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7575d-121">Request headers</span></span>
-| <span data-ttu-id="7575d-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7575d-122">Header</span></span>       | <span data-ttu-id="7575d-123">Valor</span><span class="sxs-lookup"><span data-stu-id="7575d-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="da6ef-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="da6ef-121">Request headers</span></span>
+| <span data-ttu-id="da6ef-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="da6ef-122">Header</span></span>       | <span data-ttu-id="da6ef-123">Valor</span><span class="sxs-lookup"><span data-stu-id="da6ef-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="7575d-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="7575d-124">Authorization</span></span>  | <span data-ttu-id="7575d-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7575d-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="da6ef-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="da6ef-124">Authorization</span></span>  | <span data-ttu-id="da6ef-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="da6ef-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="7575d-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7575d-127">Request body</span></span>
-<span data-ttu-id="7575d-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7575d-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="da6ef-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="da6ef-127">Request body</span></span>
+<span data-ttu-id="da6ef-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="da6ef-128">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="7575d-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="7575d-129">Response</span></span>
-<span data-ttu-id="7575d-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7575d-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="da6ef-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="da6ef-129">Response</span></span>
+<span data-ttu-id="da6ef-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="da6ef-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7575d-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7575d-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="7575d-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7575d-133">Request</span></span>
-<span data-ttu-id="7575d-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7575d-134">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="da6ef-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="da6ef-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="da6ef-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="da6ef-133">Request</span></span>
+<span data-ttu-id="da6ef-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="da6ef-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationassignmentresource"
@@ -51,8 +52,8 @@ DELETE /educationClasses/assignments/{id}/resources/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
 ```
-##### <a name="response"></a><span data-ttu-id="7575d-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="7575d-135">Response</span></span>
-<span data-ttu-id="7575d-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7575d-136">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="da6ef-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="da6ef-135">Response</span></span>
+<span data-ttu-id="da6ef-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="da6ef-136">The following is an example of the response.</span></span> 
 
 
 <!-- {

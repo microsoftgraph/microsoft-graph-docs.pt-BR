@@ -1,50 +1,51 @@
 ---
 title: Listar tabelas
 description: Recupere uma lista de objetos de tabela.
-ms.openlocfilehash: f60a4336ae387a5d48e815b1076ab95daa4a034f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d84c8ac2c17021eb930074e733c56e1aa3bb25dc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318995"
 ---
-# <a name="list-tables"></a><span data-ttu-id="bea51-103">Listar tabelas</span><span class="sxs-lookup"><span data-stu-id="bea51-103">List tables</span></span>
+# <a name="list-tables"></a><span data-ttu-id="46d8a-103">Listar tabelas</span><span class="sxs-lookup"><span data-stu-id="46d8a-103">List tables</span></span>
 
-> <span data-ttu-id="bea51-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="bea51-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bea51-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="bea51-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="46d8a-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="46d8a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="46d8a-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="46d8a-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="bea51-106">Recupere uma lista de objetos de tabela.</span><span class="sxs-lookup"><span data-stu-id="bea51-106">Retrieve a list of table objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="bea51-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="bea51-107">Permissions</span></span>
-<span data-ttu-id="bea51-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bea51-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="46d8a-106">Recupere uma lista de objetos de tabela.</span><span class="sxs-lookup"><span data-stu-id="46d8a-106">Retrieve a list of table objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="46d8a-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="46d8a-107">Permissions</span></span>
+<span data-ttu-id="46d8a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46d8a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bea51-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bea51-110">Permission type</span></span>      | <span data-ttu-id="bea51-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bea51-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="46d8a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="46d8a-110">Permission type</span></span>      | <span data-ttu-id="46d8a-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="46d8a-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bea51-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bea51-112">Delegated (work or school account)</span></span> | <span data-ttu-id="bea51-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bea51-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="bea51-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bea51-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bea51-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="bea51-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="bea51-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bea51-116">Application</span></span> | <span data-ttu-id="bea51-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bea51-117">Not supported.</span></span> |
+|<span data-ttu-id="46d8a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="46d8a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="46d8a-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46d8a-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="46d8a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="46d8a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46d8a-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46d8a-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="46d8a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="46d8a-116">Application</span></span> | <span data-ttu-id="46d8a-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="46d8a-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bea51-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bea51-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46d8a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="46d8a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/tables
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="bea51-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="bea51-119">Optional query parameters</span></span>
-<span data-ttu-id="bea51-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="bea51-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="46d8a-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="46d8a-119">Optional query parameters</span></span>
+<span data-ttu-id="46d8a-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="46d8a-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bea51-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bea51-121">Request headers</span></span>
-| <span data-ttu-id="bea51-122">Nome</span><span class="sxs-lookup"><span data-stu-id="bea51-122">Name</span></span>      |<span data-ttu-id="bea51-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="bea51-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="46d8a-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="46d8a-121">Request headers</span></span>
+| <span data-ttu-id="46d8a-122">Nome</span><span class="sxs-lookup"><span data-stu-id="46d8a-122">Name</span></span>      |<span data-ttu-id="46d8a-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="46d8a-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="bea51-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="bea51-124">Authorization</span></span>  | <span data-ttu-id="bea51-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bea51-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="bea51-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="bea51-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="bea51-p104">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="bea51-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="46d8a-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="46d8a-124">Authorization</span></span>  | <span data-ttu-id="46d8a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="46d8a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="46d8a-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="46d8a-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="46d8a-p104">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="46d8a-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bea51-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bea51-130">Request body</span></span>
-<span data-ttu-id="bea51-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="bea51-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46d8a-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="46d8a-130">Request body</span></span>
+<span data-ttu-id="46d8a-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="46d8a-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bea51-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="bea51-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="46d8a-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="46d8a-132">Response</span></span>
 
-<span data-ttu-id="bea51-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Table](../resources/table.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bea51-133">If successful, this method returns a `200 OK` response code and collection of [Table](../resources/table.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="bea51-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bea51-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="bea51-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bea51-135">Request</span></span>
-<span data-ttu-id="bea51-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bea51-136">Here is an example of the request.</span></span>
+<span data-ttu-id="46d8a-133">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Table](../resources/table.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="46d8a-133">If successful, this method returns a `200 OK` response code and collection of [Table](../resources/table.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="46d8a-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="46d8a-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="46d8a-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="46d8a-135">Request</span></span>
+<span data-ttu-id="46d8a-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="46d8a-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_tables"
@@ -52,8 +53,8 @@ GET /workbook/worksheets/{id|name}/tables
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/tables
 ```
-##### <a name="response"></a><span data-ttu-id="bea51-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="bea51-137">Response</span></span>
-<span data-ttu-id="bea51-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bea51-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="46d8a-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="46d8a-137">Response</span></span>
+<span data-ttu-id="46d8a-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="46d8a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
