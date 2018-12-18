@@ -1,12 +1,13 @@
 ---
 title: Ação locateDevice
 description: Localizar um dispositivo
-ms.openlocfilehash: 8e92e236ff52a00ee9a5390b062f6c48917a2e24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 05687da2909860ce209e763e69ee3468e166bb86
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037015"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340121"
 ---
 # <a name="locatedevice-action"></a>Ação locateDevice
 

@@ -1,12 +1,13 @@
 ---
 title: Obter androidForWorkVpnConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkVpnConfiguration.
-ms.openlocfilehash: 95da6115f0eb521f398aae3760e9895e95b59b86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8eee69d5304e72bfcbd27ede1bccb25368eba518
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037621"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350439"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>Obter androidForWorkVpnConfiguration
 

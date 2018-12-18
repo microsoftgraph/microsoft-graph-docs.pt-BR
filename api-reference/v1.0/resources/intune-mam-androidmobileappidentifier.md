@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidMobileAppIdentifier
 description: O identificador de um app Android.
-ms.openlocfilehash: 16f142c40083b9410f84e128951680ced269ea12
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa55d84c3f676d23caeba1e5fda33166b60aaada
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005856"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350824"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>Tipo de recurso androidMobileAppIdentifier
 

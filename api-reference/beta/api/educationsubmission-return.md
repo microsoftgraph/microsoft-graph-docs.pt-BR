@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: retornar'
-description: " e indica que o comentário for fornecido ou classificação é feito. Essa ação só pode ser feita com o professor."
-ms.openlocfilehash: de81f5429119556753462781f701fb7c936826b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Esta ação faz com que o nível e os comentários associados a esse envio disponível ao aluno.
+author: dipakboyed
+ms.openlocfilehash: d73300328168baf9481b329b36f056aa27044b2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033037"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350873"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: retornar
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033037"
 
 Esta ação faz com que o nível e os comentários associados a esse envio disponível ao aluno. Isso irá alterar o status do envio de "enviado" a "retornado" e indica que o comentário for fornecido ou classificação é feito. Essa ação só pode ser feita com o professor.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

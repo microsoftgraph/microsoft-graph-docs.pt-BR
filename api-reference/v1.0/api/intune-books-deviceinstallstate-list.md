@@ -1,12 +1,13 @@
 ---
 title: Listar deviceInstallStates
 description: Listar propriedades e relações dos objetos deviceInstallState.
-ms.openlocfilehash: 609686153c42f04b56fd2226b56d7edad7b6cb79
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94c4039e2605ab6139623cfac50343aac5b0b925
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350782"
 ---
 # <a name="list-deviceinstallstates"></a>Listar deviceInstallStates
 

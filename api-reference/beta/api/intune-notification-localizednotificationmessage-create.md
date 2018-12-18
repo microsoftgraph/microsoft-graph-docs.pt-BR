@@ -1,12 +1,13 @@
 ---
 title: Criar localizedNotificationMessage
 description: Criar um novo objeto localizedNotificationMessage.
-ms.openlocfilehash: b894055804104c61c9991066f273f4c9bce34629
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8070921493ec7430ee31376b0788d59013595184
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324357"
 ---
 # <a name="create-localizednotificationmessage"></a>Criar localizedNotificationMessage
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar iosVppAppAssignedUserLicense
 description: Atualize as propriedades de um objeto iosVppAppAssignedUserLicense.
-ms.openlocfilehash: 4374a2288c633da47773c827fc47a6e3ef0ee1d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea8384ebeb9f217ef8353896f10e4bcba242aefe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040990"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342011"
 ---
 # <a name="update-iosvppappassigneduserlicense"></a>Atualizar iosVppAppAssignedUserLicense
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |userEmailAddress|String|O endereço de email do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|ID do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|Cadeia de caracteres|O nome de usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|String|O nome principal do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|String|O nome da entidade de segurança do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 
 
 

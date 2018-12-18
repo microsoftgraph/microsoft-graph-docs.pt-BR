@@ -1,12 +1,13 @@
 ---
 title: função managedDeviceEnrollmentTopFailures
 description: Ainda não documentado
-ms.openlocfilehash: 2fb1fc9d611f4a61cf243de0d1c44fa2a3da889e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7804118a6e612916d68897ef0f880ee8a0f9b38d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007357"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339365"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>função managedDeviceEnrollmentTopFailures
 

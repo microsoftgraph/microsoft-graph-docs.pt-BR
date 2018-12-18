@@ -1,12 +1,13 @@
 ---
 title: Get targetedManagedAppPolicyAssignment
 description: Ler propriedades e relações do objeto targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: 1d318a63f731fd3b28f2dd67a0e3c2ce8cff4740
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d70a0897c2d750ac02ccd4fec9a7e7d97882e0e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004239"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339540"
 ---
 # <a name="get-targetedmanagedapppolicyassignment"></a>Get targetedManagedAppPolicyAssignment
 

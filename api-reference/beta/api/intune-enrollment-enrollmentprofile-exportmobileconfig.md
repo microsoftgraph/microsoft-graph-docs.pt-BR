@@ -1,12 +1,13 @@
 ---
 title: função exportMobileConfig
 description: Exporta a configuração móvel
-ms.openlocfilehash: 44af58f78ed3f26b5ecb00c86dc6ffb675e86162
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d6f663a729e45433c6f56f08ba02bb642749f5f5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350667"
 ---
 # <a name="exportmobileconfig-function"></a>função exportMobileConfig
 

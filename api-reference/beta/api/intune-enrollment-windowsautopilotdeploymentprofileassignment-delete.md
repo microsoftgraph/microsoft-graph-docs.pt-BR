@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsAutopilotDeploymentProfileAssignment
 description: Exclui um windowsAutopilotDeploymentProfileAssignment.
-ms.openlocfilehash: 381bdbf428e0ac028acf9b199aac0e660c485c27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5d6aa06e98be733994d2f24e5183b3a2ea790f62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037447"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324286"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>Excluir windowsAutopilotDeploymentProfileAssignment
 

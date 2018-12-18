@@ -1,12 +1,13 @@
 ---
 title: Listar termsAndConditionsAssignments
 description: Listar propriedades e relações dos objetos termsAndConditionsAssignment.
-ms.openlocfilehash: 79a8533a556cfc78944948403f2cfa533284c748
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8f32698a82447e18b6086f565e0acf2f07055662
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040001"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340233"
 ---
 # <a name="list-termsandconditionsassignments"></a>Listar termsAndConditionsAssignments
 

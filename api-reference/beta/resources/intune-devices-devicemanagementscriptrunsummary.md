@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceManagementScriptRunSummary
 description: Contém propriedades para o resumo de execução de um script de gerenciamento de dispositivo.
-ms.openlocfilehash: 9269ae5f3f6fc889cb02ad90e2897c9a3e979241
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 347a4e5cd3c4201949841054b69c217ad4f9fa8e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338994"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>tipo de recurso de deviceManagementScriptRunSummary
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bulkManagedDeviceActionResult
 description: Ainda não documentado
-ms.openlocfilehash: 856054f293dca0ae86681246d4783aae6a0373c0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a80a05b1caba7cd5ac1e672c9e39366ca29048c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036766"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339512"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>tipo de recurso de bulkManagedDeviceActionResult
 

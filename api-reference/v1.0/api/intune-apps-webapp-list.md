@@ -1,12 +1,13 @@
 ---
 title: Listar webApps
 description: Listar propriedades e relações dos objetos webApp.
-ms.openlocfilehash: eff068f95cb4fafe008fe3aafb654cd9d4abf5ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8170786b5bd3bf8af5276c40674a8e7e8d8bf664
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328319"
 ---
 # <a name="list-webapps"></a>Listar webApps
 

@@ -1,12 +1,13 @@
 ---
 title: Obter objetos directory a partir de uma lista de ids
 description: Selecione ' opção de consulta não está disponível para esta operação.
-ms.openlocfilehash: 4a2b765d71fe799195a4afcd404ba21718fa87c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 78653f6db76092685de119390053624bbc6be882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350502"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obter objetos directory a partir de uma lista de ids
 
@@ -47,7 +48,7 @@ POST /directoryObjects/getByIds
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro   | Tipo |Descrição|
+| Parâmetro   | Type |Descrição|
 |:---------------|:--------|:----------|
 |ids|Coleção de cadeias de caracteres| Uma coleção de ids para a qual retornar objetos. Você pode especificar até 1000 ids. |
 |tipos|Coleção de cadeias de caracteres| Uma coleção dos tipos de recursos que especifica o conjunto de conjuntos de recursos para pesquisar. Se não especificado, o padrão é [directoryObject](../resources/directoryobject.md), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que derive da `directoryObject` podem ser especificados na coleção; Por exemplo: [usuário](../resources/user.md), [grupo](../resources/group.md), [dispositivo](../resources/device.md)e assim por diante. Os valores não diferenciam maiusculas de minúsculas.|

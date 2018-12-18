@@ -1,12 +1,13 @@
 ---
 title: Get windowsUniversalAppX
 description: Ler propriedades e relações do objeto windowsUniversalAppX.
-ms.openlocfilehash: d607fc0122e2167034a454f6bb6bf8e79e1ae351
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 53d3a796831304e7fc11613098b40fb03e4cbff3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342473"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
 

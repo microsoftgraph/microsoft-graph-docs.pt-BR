@@ -1,12 +1,13 @@
 ---
 title: Ação desativar
 description: Desativa um dispositivo
-ms.openlocfilehash: d5934485344929006654d0f3efaa827bd9ed8828
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a9f7dd38db64d71fe90c90e697f92ab157345d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339379"
 ---
 # <a name="retire-action"></a>Ação desativar
 

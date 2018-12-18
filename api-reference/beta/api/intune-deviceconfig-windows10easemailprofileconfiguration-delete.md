@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10EasEmailProfileConfiguration
 description: Exclui um windows10EasEmailProfileConfiguration.
-ms.openlocfilehash: 4664e10fd6c8e3ef4830d35c66824736ef4abac8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca709bc7a1d2ffde0c0eb3f4da9188d98681906b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037468"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338336"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>Excluir windows10EasEmailProfileConfiguration
 

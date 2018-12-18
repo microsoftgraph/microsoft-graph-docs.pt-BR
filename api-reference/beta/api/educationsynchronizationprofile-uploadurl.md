@@ -1,12 +1,13 @@
 ---
 title: 'educationSynchronizationProfile: uploadUrl'
 description: Recupere uma assinatura de acesso compartilhado (SAS) para o carregamento de arquivos de origem para o armazenamento de blob Azure para um perfil de sincronização de dados específicos escola no inquilino. O token SAS tem uma validade de uma hora.
-ms.openlocfilehash: cf685b56718664ca68e0fde697872fe624c7e7b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 15a4536e21307067ac55783edd9eac675ae4144b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341059"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -18,10 +19,10 @@ O carregamento URL é fornecido apenas para o [provedor de dados CSV](../resourc
 
 > **Observação:** Para acessar o armazenamento de blob com o token SAS, use o [armazenamento do Azure SDKs](https://github.com/search?q=org%3AAzure+azure-storage) ou [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|

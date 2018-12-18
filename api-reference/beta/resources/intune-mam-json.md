@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Json
 description: Representa os dados retornados no formato do JSON
-ms.openlocfilehash: a94f83e6d78c67554cd8eeba3bf89e25ac5d3188
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8bf946e4b9762274fe95de720b178cb1d4e5bb89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339617"
 ---
 # <a name="json-resource-type"></a>Tipo de recurso Json
 

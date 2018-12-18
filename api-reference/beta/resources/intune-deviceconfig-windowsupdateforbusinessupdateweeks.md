@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windowsUpdateForBusinessUpdateWeeks
 description: Agendada a instalação da atualização as semanas do mês
-ms.openlocfilehash: 16c119ebfabcc0249db2faecfb320f2f51aab6d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2d42e9e4951cdcbec1acc89f9478421b1aef0a36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034510"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328803"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>tipo de enum windowsUpdateForBusinessUpdateWeeks
 

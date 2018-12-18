@@ -1,12 +1,13 @@
 ---
 title: Excluir managedIOSStoreApp
 description: Exclui managedIOSStoreApp.
-ms.openlocfilehash: 87ff05ebfe0968dc8528579cdbbb2d62033e489a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c52637cf5e74e9006dc703689e7ad1a64f0123f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038645"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337944"
 ---
 # <a name="delete-managediosstoreapp"></a>Excluir managedIOSStoreApp
 

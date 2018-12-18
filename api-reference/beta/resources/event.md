@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de evento
 description: Um evento em um calendário.
-ms.openlocfilehash: aa7d667ac35c4e76dab40dca1cce264b9bd7ec96
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340646"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -93,13 +94,13 @@ Veja a seguir uma representação JSON do recurso
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data e a hora em que o evento termina.|
-|hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
+|hasAttachments|Boolean|Defina como true se o evento tiver anexos.|
 |id|String| Somente leitura.|
 |importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
-|isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
-|isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
-|isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+|isAllDay|Boolean|Defina como true se o evento durar o dia inteiro.|
+|isCancelled|Boolean|Defina como true se o evento tiver sido cancelado.|
+|isOrganizer|Boolean|Defina como true se o remetente da mensagem também for o organizador.|
+|isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|O local do evento.|
 |locations|Coleção de [local](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
@@ -110,7 +111,7 @@ Veja a seguir uma representação JSON do recurso
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|A ID para a série item mestre recorrente, se esse evento for parte de uma série recorrente.|

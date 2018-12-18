@@ -1,12 +1,13 @@
 ---
 title: Obter administrativeUnit
 description: Recupere as propriedades e relacionamentos de um objeto administrativeUnit.
-ms.openlocfilehash: d6e19762a74883da3dcff1d8ea423dc06192dd46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: ff087591191780edaaf88981654d3431ac1308d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034652"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351034"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
@@ -16,7 +17,7 @@ Recupere as propriedades e relacionamentos de um objeto [administrativeUnit](../
 
 Desde que o recurso de **administrativeUnit** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância de **administrativeUnit** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

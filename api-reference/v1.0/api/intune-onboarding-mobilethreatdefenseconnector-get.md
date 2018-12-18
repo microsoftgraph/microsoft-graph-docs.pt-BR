@@ -1,12 +1,13 @@
 ---
 title: Obter mobileThreatDefenseConnector
 description: Propriedades de leitura e relações do objeto mobileThreatDefenseConnector.
-ms.openlocfilehash: c19bfc556306bb596c5764bd8527aba5be8f01f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e2276ea1925ff8379b71ae30cfa74e09633fa63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003431"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339554"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Obter mobileThreatDefenseConnector
 

@@ -1,12 +1,13 @@
 ---
 title: Criar importedAppleDeviceIdentity
 description: Crie um novo objeto de importedAppleDeviceIdentity.
-ms.openlocfilehash: dae2d56990c9f6cdfb5c0adc5c6a457ade52e161
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f329e520659bea7332a84c78ed32f1abf071744d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338868"
 ---
 # <a name="create-importedappledeviceidentity"></a>Criar importedAppleDeviceIdentity
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |serialNumber|String|Número de série do dispositivo|
 |requestedEnrollmentProfileId|String|Administração de Id de perfil de inscrição pretende aplicáveis ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de inscrição de tempo foi atribuído ao dispositivo|
-|isSupervised|Booliano|Indica se o dispositivo Apple seja supervisionado. Mais informações estão em:https://support.apple.com/en-us/HT202837|
+|isSupervised|Boolean|Indica se o dispositivo Apple seja supervisionado. Mais informações estão em:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta do dispositivo Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Criada data hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última contatado data hora do dispositivo|

@@ -1,12 +1,13 @@
 ---
 title: Atualizar mensagem
 description: Atualizar as propriedades do objeto message.
-ms.openlocfilehash: 7d78f3827618378299043c601fcf490556b5d5b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: b8f39dc9648203f86749ba06b88bf2f74b79d88a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337538"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 
@@ -45,13 +46,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou importância, ou em um caso de sobreposição explícito. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Somente se atualizável isDraft = true.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
 |replyTo|Coleção Recipient|Os endereços de email a serem usados ao responder. Somente se atualizável isDraft = true.|
 |sender|Destinatário|A conta que é realmente usada para gerar a mensagem. Somente se atualizável isDraft = verdadeiro e quando enviando uma mensagem a partir de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada.|
 |toRecipients|Coleção Recipient|Dos destinatários da mensagem. Somente se atualizável isDraft = true.|
 |corpo|ItemBody|O corpo da mensagem. Somente se atualizável isDraft = true.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |subject|String|O assunto da mensagem. Somente se atualizável isDraft = true.|
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **message** existente.

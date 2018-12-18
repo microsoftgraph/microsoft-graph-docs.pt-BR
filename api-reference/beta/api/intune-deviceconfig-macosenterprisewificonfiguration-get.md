@@ -1,12 +1,13 @@
 ---
 title: Obter macOSEnterpriseWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto macOSEnterpriseWiFiConfiguration.
-ms.openlocfilehash: 14b05ab5bfb7c78f0c4da8a347b7d4b8c083cdf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c33a2427bf6d576209567df71361a244ef4601c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338007"
 ---
 # <a name="get-macosenterprisewificonfiguration"></a>Obter macOSEnterpriseWiFiConfiguration
 

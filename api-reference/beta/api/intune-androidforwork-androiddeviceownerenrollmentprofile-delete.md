@@ -1,12 +1,13 @@
 ---
 title: Excluir androidDeviceOwnerEnrollmentProfile
 description: Exclui um androidDeviceOwnerEnrollmentProfile.
-ms.openlocfilehash: 0b434a97e65c38399f04a069167f2cd2840943b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ccd34f7d4afc1254c1665e881c28fa3ef04119e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342921"
 ---
 # <a name="delete-androiddeviceownerenrollmentprofile"></a>Excluir androidDeviceOwnerEnrollmentProfile
 

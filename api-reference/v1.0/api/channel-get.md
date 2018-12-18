@@ -1,12 +1,13 @@
 ---
 title: Obtenha o canal
 description: Recupere as propriedades e relacionamentos de um canal.
-ms.openlocfilehash: fd46e3f27c9da53a36107c3ec39c1ac5da1c0753
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 38081fbc23e0f77dc69d1dbb6beba64b8f6d0a82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222419"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324770"
 ---
 # <a name="get-channel"></a>Obtenha o canal
 
@@ -14,7 +15,7 @@ ms.locfileid: "27222419"
 
 Recupere as propriedades e relacionamentos de um [canal](../resources/channel.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

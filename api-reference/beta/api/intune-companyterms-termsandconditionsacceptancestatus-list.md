@@ -1,12 +1,13 @@
 ---
 title: Listar termsAndConditionsAcceptanceStatuses
 description: Listar propriedades e relações dos objetos termsAndConditionsAcceptanceStatus.
-ms.openlocfilehash: 0f519f399b1c13f227b0375270d45ca229c4081e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c538d331dfaedde5c2cabe483f5860a1c53e56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036188"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343250"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Listar termsAndConditionsAcceptanceStatuses
 

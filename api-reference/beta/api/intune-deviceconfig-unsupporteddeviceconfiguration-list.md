@@ -1,12 +1,13 @@
 ---
 title: Lista unsupportedDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos unsupportedDeviceConfiguration.
-ms.openlocfilehash: e798f35fa8c1fdbe3d2d8d315a8765da4fbd861a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2800ca9e4e3ed732f3163de1d2ca5d8fd2936ddb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033795"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338623"
 ---
 # <a name="list-unsupporteddeviceconfigurations"></a>Lista unsupportedDeviceConfigurations
 

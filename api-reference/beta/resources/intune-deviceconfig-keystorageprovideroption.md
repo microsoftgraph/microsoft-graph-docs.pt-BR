@@ -1,12 +1,13 @@
 ---
 title: tipo de enum keyStorageProviderOption
 description: Opções de importação do armazenamento de chave KSP (provedor).
-ms.openlocfilehash: 236489d288ec0be70a818e1c51b8c634ad3933a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7923dd5c4b8a09d834d29b65928430828f3dafac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034040"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342214"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>tipo de enum keyStorageProviderOption
 

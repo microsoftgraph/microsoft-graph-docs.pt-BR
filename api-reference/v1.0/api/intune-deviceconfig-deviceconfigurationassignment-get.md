@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceConfigurationAssignment
 description: Leia as propriedades e as relações do objeto deviceConfigurationAssignment.
-ms.openlocfilehash: 231d58fc4988e37ae02cc6efa599481aa490c4e5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d52361f20f315fa8486d5b4f2baf4f2b9d2d3d15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005571"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329866"
 ---
 # <a name="get-deviceconfigurationassignment"></a>Acessar deviceConfigurationAssignment
 

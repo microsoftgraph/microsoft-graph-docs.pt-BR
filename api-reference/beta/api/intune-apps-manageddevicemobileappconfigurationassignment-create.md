@@ -1,12 +1,13 @@
 ---
 title: Criar managedDeviceMobileAppConfigurationAssignment
 description: Criar um novo objeto managedDeviceMobileAppConfigurationAssignment.
-ms.openlocfilehash: 02607c3da0aca7bbd7c9ff7dbfd710c688b10a11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8418b853c4d82f0a56d592a90542505f0355df0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035283"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342774"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Criar managedDeviceMobileAppConfigurationAssignment
 

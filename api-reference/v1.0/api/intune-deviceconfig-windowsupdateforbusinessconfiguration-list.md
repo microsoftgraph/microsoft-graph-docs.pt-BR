@@ -1,12 +1,13 @@
 ---
 title: Listar windowsUpdateForBusinessConfigurations
 description: Listar propriedades e relações dos objetos windowsUpdateForBusinessConfiguration.
-ms.openlocfilehash: b2242e0a53203f2699a90050af88a16480c7fd4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 071271816d1241e30d202e22c5ce9488c368c566
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005190"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325022"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Listar windowsUpdateForBusinessConfigurations
 

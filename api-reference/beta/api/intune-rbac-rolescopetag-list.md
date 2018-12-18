@@ -1,12 +1,13 @@
 ---
 title: Lista roleScopeTags
 description: Lista as propriedades e os relacionamentos dos objetos roleScopeTag.
-ms.openlocfilehash: 632c40126197ca7905ad4075c3da7688ed258441
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 786276f5e0d74871ebf38fce235f584911bebb20
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337797"
 ---
 # <a name="list-rolescopetags"></a>Lista roleScopeTags
 

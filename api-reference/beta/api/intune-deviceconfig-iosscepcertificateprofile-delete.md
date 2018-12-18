@@ -1,12 +1,13 @@
 ---
 title: Excluir iosScepCertificateProfile
 description: Exclui um iosScepCertificateProfile.
-ms.openlocfilehash: 664b986018fbb7e44d9fb3e41cae215b93e1016d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef3573afd0b2309949e335da77c7a7c778137651
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033460"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342391"
 ---
 # <a name="delete-iosscepcertificateprofile"></a>Excluir iosScepCertificateProfile
 

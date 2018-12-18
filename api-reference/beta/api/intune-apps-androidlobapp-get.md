@@ -1,12 +1,13 @@
 ---
 title: Acessar androidLobApp
 description: Leia as propriedades e as relações do objeto androidLobApp.
-ms.openlocfilehash: 72423a63919f9e038df6c705daa350b3736114ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ed993f85b03f13e0b5d2fc6f3f37cbce6151d55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034036"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338693"
 ---
 # <a name="get-androidlobapp"></a>Acessar androidLobApp
 

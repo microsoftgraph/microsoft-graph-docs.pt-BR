@@ -1,12 +1,13 @@
 ---
 title: 'message: copy'
 description: Copie uma mensagem para uma pasta.
-ms.openlocfilehash: c0c5428ff2f661d865a6cb2cd17bc0a48e177a52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e9d0661c01103fbfcf8991e0b28126b2f92e6ea4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353246"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro | Tipo | Descrição |
+| Parâmetro | Type | Descrição |
 |:----------|:-----|:------------|
 |destinationId|Cadeia de caracteres|O ID da pasta de destino, ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 

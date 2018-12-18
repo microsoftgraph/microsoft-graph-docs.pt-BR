@@ -1,12 +1,13 @@
 ---
 title: Criar windowsMobileMSI
 description: Cria um novo objeto windowsMobileMSI.
-ms.openlocfilehash: b3826eeaa01a0d3f4b55f9927cf1bd305907253e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c3ba27b3b6009bf25fc98f2ee5151991fedca19
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038130"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353106"
 ---
 # <a name="create-windowsmobilemsi"></a>Criar windowsMobileMSI
 
@@ -53,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windowsMobileMSI
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -67,7 +68,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windowsMobileMSI
 |commandLine|String|A linha de comando.|
 |productCode|String|O código do produto.|
 |productVersion|String|A versão de produto do aplicativo de linha de negócios (LoB) Windows Mobile MSI.|
-|ignoreVersionDetection|Booliano|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina como true para o aplicativos de linha de negócios (LoB) Windows Mobile MSI que usam um recurso de atualização automática.|
+|ignoreVersionDetection|Boolean|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina como true para o aplicativos de linha de negócios (LoB) Windows Mobile MSI que usam um recurso de atualização automática.|
 |identityVersion|String|A versão da identidade.|
 |useDeviceContext|Booliano|Indica se a instalação MSI um modo duplo no contexto do dispositivo. Se for true, aplicativo será instalado para todos os usuários. Se for false, o aplicativo será instalado por usuário. Se for null, serviço usará o contexto de instalação do pacote MSI padrão. Em caso de modo duplo MSI, esse padrão serão por usuário.  Não podem ser definidas para aplicativos de modo não-duplo.  Não pode ser alterada após a criação inicial do aplicativo.|
 

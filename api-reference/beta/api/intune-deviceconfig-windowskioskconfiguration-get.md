@@ -1,12 +1,13 @@
 ---
 title: Obter windowsKioskConfiguration
 description: Leia as propriedades e os relacionamentos do objeto windowsKioskConfiguration.
-ms.openlocfilehash: 717f4a0ce9c785450a4694f3409c8c021d26a024
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4596eeaba219227048a81a9f4ecc6693a7c20204
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339134"
 ---
 # <a name="get-windowskioskconfiguration"></a>Obter windowsKioskConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar officeClientConfigurationAssignment
 description: Atualize as propriedades de um objeto officeClientConfigurationAssignment.
-ms.openlocfilehash: d97f5378918949786342c8e69b53e7dd4ef08e64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 78b0ae28bc61bc0d8d8c083502c6f6ef2cf7d0fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343031"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Atualizar officeClientConfigurationAssignment
 

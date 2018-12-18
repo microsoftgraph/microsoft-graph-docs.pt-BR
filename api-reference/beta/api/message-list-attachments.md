@@ -1,12 +1,13 @@
 ---
 title: Listar anexos
 description: Recupere uma lista de objetos attachment anexados a uma mensagem.
-ms.openlocfilehash: b4fee6d42b743f894d874e018eff9ba4e6ea2ec1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9f083af679335eb0bf54fa9bd0eadfaa7a5a1250
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037532"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350859"
 ---
 # <a name="list-attachments"></a>Listar anexos
 

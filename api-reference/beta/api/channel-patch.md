@@ -1,12 +1,13 @@
 ---
 title: Canal do patch
 description: Atualize as propriedades do canal especificado.
-ms.openlocfilehash: c7cc2db83fbab0e04f1620d71c4c7cf7a69b526f
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 267cc6bc148259bc573625fdb2775ac8b581a988
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328347"
 ---
 # <a name="patch-channel"></a>Canal do patch
 
@@ -16,7 +17,7 @@ Atualize as propriedades do [canal](../resources/channel.md)especificado.
 
 > **Observação**: não há um problema conhecido com permissões de aplicativo e essa API. Para obter detalhes, consulte a [lista de problemas conhecidos do](/graph/known-issues#application-permissions).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

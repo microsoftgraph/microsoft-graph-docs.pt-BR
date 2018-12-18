@@ -1,12 +1,13 @@
 ---
 title: função getLicensesForApp
 description: Ainda não documentado
-ms.openlocfilehash: d96a2736ee0fe0bcb2303aa12791e6222e8d55d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 20b4e17645e86a630b2f07f97ccd27fa47f84539
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037990"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327878"
 ---
 # <a name="getlicensesforapp-function"></a>função getLicensesForApp
 

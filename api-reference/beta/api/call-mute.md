@@ -1,12 +1,13 @@
 ---
 title: 'chamar: Ativar Mudo'
 description: Permite que o aplicativo ativar mudo em si.
-ms.openlocfilehash: e5fb28a7d1c72182b6710cc0adda269156cbb3a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 54de4aa598500d1effa1c66c74e5809ad3570959
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341584"
 ---
 # <a name="call-mute"></a>chamar: Ativar Mudo
 
@@ -14,7 +15,7 @@ ms.locfileid: "27036250"
 
 Permite que o aplicativo ativar mudo em si.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/mute
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |clientContext|String|O contexto de cliente.|
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsUniversalAppXAppAssignmentSettings
 description: Contém propriedades usadas durante a atribuição de um aplicativo móvel do AppX universais do Windows a um grupo.
-ms.openlocfilehash: 9694ab347be6edd1446df8aa7b46fb3652aee589
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46f54acb1116c177e330bda868b975bdf361fe5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037075"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329222"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>tipo de recurso de windowsUniversalAppXAppAssignmentSettings
 

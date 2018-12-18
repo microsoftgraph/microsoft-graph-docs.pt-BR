@@ -1,12 +1,13 @@
 ---
 title: Lista depIOSEnrollmentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depIOSEnrollmentProfile.
-ms.openlocfilehash: f3cf1c7107351315cfc1ee8586ad23f4f53dfc91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d853d119909429d85943494967f5b8a201ac680c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032910"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350446"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Lista depIOSEnrollmentProfiles
 

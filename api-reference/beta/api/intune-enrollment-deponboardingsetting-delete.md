@@ -1,12 +1,13 @@
 ---
 title: Excluir depOnboardingSetting
 description: Exclui um depOnboardingSetting.
-ms.openlocfilehash: d940b1a0b0e11590db9fa1c03d1a35e530438690
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 718fad673fc0e916c2687c368d7c542a42acdbde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341010"
 ---
 # <a name="delete-deponboardingsetting"></a>Excluir depOnboardingSetting
 

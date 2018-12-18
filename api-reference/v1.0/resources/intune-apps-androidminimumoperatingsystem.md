@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidMinimumOperatingSystem
 description: Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
-ms.openlocfilehash: dc1dd771eb394fe149079fbe46c552d23a759e80
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c477a624377febe6001b92f6694fe27b0666cf5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350467"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 

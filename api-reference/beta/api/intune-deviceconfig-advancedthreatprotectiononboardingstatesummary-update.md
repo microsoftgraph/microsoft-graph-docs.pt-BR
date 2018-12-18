@@ -1,12 +1,13 @@
 ---
 title: Atualizar advancedThreatProtectionOnboardingStateSummary
 description: Atualize as propriedades de um objeto advancedThreatProtectionOnboardingStateSummary.
-ms.openlocfilehash: e39a6086f78db393a3e75a99b475cc5db02ddb3d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a31dae3c1f79332ae03324d1ecbb604451bc7959
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039719"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340023"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Atualizar advancedThreatProtectionOnboardingStateSummary
 

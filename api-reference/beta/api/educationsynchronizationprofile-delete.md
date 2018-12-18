@@ -1,12 +1,13 @@
 ---
 title: Excluir um educationSynchronizationProfile
 description: Exclua um perfil de sincronização de dados escola no locatário com base no identificador.
-ms.openlocfilehash: 829b723b48eb9a15750bc9d0e00ba50d432e8ab6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: b0287133d579915279e0f9a02bf49dd981ccf419
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037772"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343299"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Excluir um educationSynchronizationProfile
 
@@ -14,10 +15,10 @@ ms.locfileid: "27037772"
 
 Exclua um de dados da escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no locatário com base no identificador.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 

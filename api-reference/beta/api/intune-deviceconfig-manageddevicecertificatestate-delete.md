@@ -1,12 +1,13 @@
 ---
 title: Excluir managedDeviceCertificateState
 description: Exclui um managedDeviceCertificateState.
-ms.openlocfilehash: eb9d886c9d5479c20ea4c65bb1447036cf3c35f7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e97757843bc8c4ef7444bd81cee6ffb0666ab94f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341612"
 ---
 # <a name="delete-manageddevicecertificatestate"></a>Excluir managedDeviceCertificateState
 

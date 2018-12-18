@@ -1,12 +1,13 @@
 ---
 title: 'educationSubmission: enviar'
-description: . Durante o processo de envio, todos os recursos serão copiados para o Balde submittedResources. O professor será observando a lista de recursos enviados para a classificação.
-ms.openlocfilehash: 566948278ffacb1169842c49aa11c78cba0a5f3f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Uma ação que indica que um estudante é feito com o trabalho e está pronto para informar na atribuição. Essa ação só pode ser executada pelo aluno.
+author: dipakboyed
+ms.openlocfilehash: 25fc24823081c6f148617ad31d0f7b797b0e2a80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034898"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343327"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: enviar
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034898"
 
 Uma ação que indica que um estudante é feito com o trabalho e está pronto para informar na atribuição. Essa ação só pode ser executada pelo aluno. Isso alterará o status do envio de "trabalho" para "enviado". Durante o processo de envio, todos os recursos serão copiados para o Balde submittedResources. O professor será observando a lista de recursos enviados para a classificação.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

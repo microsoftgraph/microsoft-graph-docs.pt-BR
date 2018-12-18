@@ -1,12 +1,13 @@
 ---
 title: Excluir dispositivo
 description: Exclui um dispositivo registrado.
-ms.openlocfilehash: 9e694eb23e6559e84fb26e549f867b9affb8a1c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae2f4b458ebd18c366c2b8aecf6b203ff5d42cda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005769"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342900"
 ---
 # <a name="delete-device"></a>Excluir dispositivo
 

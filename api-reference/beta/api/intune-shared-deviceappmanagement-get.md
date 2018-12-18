@@ -1,12 +1,13 @@
 ---
 title: Get deviceAppManagement
 description: Ler propriedades e relações de objetos de deviceAppManagement.
-ms.openlocfilehash: b73e616735ca3f096c01a9f7eba8a7d751bb7160
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 290a88af983f5c4b4bc6d032b8960c810960d969
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034335"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342711"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 

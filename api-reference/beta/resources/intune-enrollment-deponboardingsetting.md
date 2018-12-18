@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de depOnboardingSetting
 description: O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onboarded para Intune. A instância do serviço onboarded gerencia um Token Apple usado para sincronizar dados entre Apple e Intune.
-ms.openlocfilehash: 7991b03b8307db10d3a300b1b85be3fc1b825819
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac38b1716dd156c95fda9cee8fb76a9f75921b0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040570"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341157"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso de depOnboardingSetting
 
@@ -38,13 +39,13 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onb
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Booliano|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Boolean|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Nome amigável para o Token de Dep|
 |syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
 |defaultProfileDisplayName|String|Obtém sincronizados contagem de dispositivo|
-|dataSharingConsentGranted|Booliano|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+|dataSharingConsentGranted|Boolean|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -1,12 +1,13 @@
 ---
 title: Atualizar detectedApp
 description: Atualizar as propriedades de um objeto detectedApp.
-ms.openlocfilehash: 58fa37603b583a4ccf0579d2c6021ed5c1e60cc4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf4a30e83acdadf45babbc2c71799b207ba03506
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035110"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324793"
 ---
 # <a name="update-detectedapp"></a>Atualizar detectedApp
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar sideLoadingKey
 description: Atualize as propriedades de um objeto sideLoadingKey.
-ms.openlocfilehash: 5c9071a47726f602fcd07fd47341c70f7b4b2f38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6d616db947defb8e08926e40df23590c7d27e84d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038857"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337377"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 

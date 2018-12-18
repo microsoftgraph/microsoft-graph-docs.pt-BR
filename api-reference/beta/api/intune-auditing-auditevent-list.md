@@ -1,12 +1,13 @@
 ---
 title: Listar auditEvents
 description: Listar propriedades e relações dos objetos auditEvent.
-ms.openlocfilehash: 8b684ca2c70d7875c218d38d32f359313fa02ee3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4dd8ac91e44c080af1ffc49054947b73d17cdad5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038398"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350537"
 ---
 # <a name="list-auditevents"></a>Listar auditEvents
 

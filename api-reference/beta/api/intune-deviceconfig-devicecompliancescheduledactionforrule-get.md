@@ -1,12 +1,13 @@
 ---
 title: Get deviceComplianceScheduledActionForRule
 description: Ler propriedades e relações do objeto deviceComplianceScheduledActionForRule.
-ms.openlocfilehash: 6cd299a0d94ec7fff1be45aa9139dd72ec418adb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 03e637e7a496bc49d30709c5588b1551105fca5a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038371"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330342"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>Get deviceComplianceScheduledActionForRule
 

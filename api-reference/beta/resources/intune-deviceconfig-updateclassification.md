@@ -1,12 +1,13 @@
 ---
 title: tipo de enum updateClassification
 description: Valores possíveis para a classificação de atualização automática.
-ms.openlocfilehash: 5ea4bf39489b1fc27a84de1db8f5ad3ac0cec717
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf52ac76cb625d38af4737c0ca87bb47beffd6c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034616"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337951"
 ---
 # <a name="updateclassification-enum-type"></a>tipo de enum updateClassification
 
@@ -21,7 +22,7 @@ Valores possíveis para a classificação de atualização automática.
 |userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
 |recommendedAndImportant|1|Importante e recomendados.|
 |importante|2|Importante.|
-|nenhum|3|Nenhum.|
+|none|3|Nenhum.|
 
 
 

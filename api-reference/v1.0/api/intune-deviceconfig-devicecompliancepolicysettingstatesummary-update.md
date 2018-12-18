@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceCompliancePolicySettingStateSummary
 description: Atualizar as propriedades de um objeto deviceCompliancePolicySettingStateSummary.
-ms.openlocfilehash: 86709083793184d9e995105f3aba48be263225f7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 87fb75ea6e0a059a83f17a06697131e6efa77a97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007166"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351041"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Atualizar deviceCompliancePolicySettingStateSummary
 

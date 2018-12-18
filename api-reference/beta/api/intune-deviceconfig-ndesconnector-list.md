@@ -1,12 +1,13 @@
 ---
 title: Lista ndesConnectors
 description: Lista as propriedades e os relacionamentos dos objetos ndesConnector.
-ms.openlocfilehash: eb3737cea78ad7fa97bb40d05b5ac836e444b7a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd91f4aad8a3e4969594e34a7f8124411687c9be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040688"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340919"
 ---
 # <a name="list-ndesconnectors"></a>Lista ndesConnectors
 

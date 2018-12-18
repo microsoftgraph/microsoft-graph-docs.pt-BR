@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de vppTokenActionResult
 description: O status da ação executada com um token de programa de compra de Volume do Apple.
-ms.openlocfilehash: d0cb9e21b04ccb8748d1f9e78f0a3e9dd465ce81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0b8b074e879321d0aed361373c49e6ed1fd16e62
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040715"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341675"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>tipo de recurso de vppTokenActionResult
 

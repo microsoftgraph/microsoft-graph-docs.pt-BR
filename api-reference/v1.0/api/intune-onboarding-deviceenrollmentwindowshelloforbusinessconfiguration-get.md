@@ -1,12 +1,13 @@
 ---
 title: Obter deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Ler propriedades e relações do objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: ab801bc5e9a80d2998ae1bd6738f3b51ec11df1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb8a6b580b226b4b60cd357a1e52da49ef497e95
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005488"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339141"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Obter deviceEnrollmentWindowsHelloForBusinessConfiguration
 

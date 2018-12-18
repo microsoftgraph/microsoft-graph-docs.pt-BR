@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceComplianceSettingState
 description: Exclui deviceComplianceSettingState.
-ms.openlocfilehash: dcc5870b203f72a26e709fce62b83aa0b17a0661
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f1b2f45b8da823505d7c51dc9a6b3193dd209351
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005181"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339771"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>Excluir deviceComplianceSettingState
 

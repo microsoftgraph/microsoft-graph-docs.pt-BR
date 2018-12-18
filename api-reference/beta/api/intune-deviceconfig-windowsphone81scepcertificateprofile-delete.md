@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPhone81SCEPCertificateProfile
 description: Exclui um windowsPhone81SCEPCertificateProfile.
-ms.openlocfilehash: 7c1b4034e674496753ce1bab60d68bcb6a6a50ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4e956326bae372edf013097a22a77b19045f541a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324329"
 ---
 # <a name="delete-windowsphone81scepcertificateprofile"></a>Excluir windowsPhone81SCEPCertificateProfile
 

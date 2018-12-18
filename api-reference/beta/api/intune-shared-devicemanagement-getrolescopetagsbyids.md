@@ -1,12 +1,13 @@
 ---
 title: função getRoleScopeTagsByIds
 description: Ainda não documentado
-ms.openlocfilehash: 67722ad61a71f8d8572a95c5972992d4e0818931
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b6708a605ad0c528e691b0a9a3a218e178ff7730
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342487"
 ---
 # <a name="getrolescopetagsbyids-function"></a>função getRoleScopeTagsByIds
 

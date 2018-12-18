@@ -1,12 +1,13 @@
 ---
 title: Atualizar iosUpdateDeviceStatus
 description: Atualizar as propriedades de um objeto iosUpdateDeviceStatus.
-ms.openlocfilehash: 2b652dd6208dee20f164d57c92a8f0d322a58d8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d2fab69e918d92e07ed28f3e12aa59db9d50c53b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350208"
 ---
 # <a name="update-iosupdatedevicestatus"></a>Atualizar iosUpdateDeviceStatus
 

@@ -1,12 +1,13 @@
 ---
 title: Criar enterpriseCodeSigningCertificate
 description: Crie um novo objeto de enterpriseCodeSigningCertificate.
-ms.openlocfilehash: aa5d92c22a1cd4eb91a41b26ed92f76937ce9dcd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 337513242ae653a1d18f3ed9460cf26210534ab8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341094"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Criar enterpriseCodeSigningCertificate
 
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade.|
-|content|Binário|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
+|content|Binária|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
 |subject|String|O valor de assunto para o cert.|

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 description: Coleção de domínios como proxy da Proteção de Informações do Windows
-ms.openlocfilehash: 07539361d99211f2a787fe538745debf09fa4cf2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a385710dc38b5fb5927ee55e558fef67341585f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339344"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 

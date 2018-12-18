@@ -1,12 +1,13 @@
 ---
 title: Listar eventos
 description: Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
-ms.openlocfilehash: 4052f75abf4340d4acddbb79c1d318c7d1ca0f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 3cf431d600f36350d8654e9624b596222fcbff8b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034090"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341878"
 ---
 # <a name="list-events"></a>Listar eventos
 

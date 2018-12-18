@@ -1,12 +1,13 @@
 ---
 title: Lista officeSuiteApps
 description: Lista as propriedades e os relacionamentos dos objetos officeSuiteApp.
-ms.openlocfilehash: 51cf3388150411ca6e414da2f68a9951ed5360f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b6366da8bf36954fedaa9670f0de71ed723c06c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039038"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350663"
 ---
 # <a name="list-officesuiteapps"></a>Lista officeSuiteApps
 

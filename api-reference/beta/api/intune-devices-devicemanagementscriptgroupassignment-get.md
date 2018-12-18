@@ -1,12 +1,13 @@
 ---
 title: Obter deviceManagementScriptGroupAssignment
 description: Leia as propriedades e os relacionamentos do objeto deviceManagementScriptGroupAssignment.
-ms.openlocfilehash: ca37bb26c46cf7a5195b393395fe8fee96fd405b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6068a46a86d71794b58bc69ac7aedb1f9e13f56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324924"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Obter deviceManagementScriptGroupAssignment
 

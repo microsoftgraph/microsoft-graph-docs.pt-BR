@@ -1,12 +1,13 @@
 ---
 title: Lista windowsKioskConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsKioskConfiguration.
-ms.openlocfilehash: bb178bca4c1ce11958e28ed8c5ad4fa23ad4d668
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 59e4510f85bb47c53c00c679b0c8ea021aba2797
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350579"
 ---
 # <a name="list-windowskioskconfigurations"></a>Lista windowsKioskConfigurations
 

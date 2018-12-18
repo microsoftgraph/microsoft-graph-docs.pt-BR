@@ -1,12 +1,13 @@
 ---
 title: Atualizar iosVppEBookAssignment
 description: Atualizar as propriedades de um objeto iosVppEBookAssignment.
-ms.openlocfilehash: 9ab308f73712357daf17442045cc1982c25c8171
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 537c2ef5838dc68881f3de693a6591570219ece4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036197"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338147"
 ---
 # <a name="update-iosvppebookassignment"></a>Atualizar iosVppEBookAssignment
 

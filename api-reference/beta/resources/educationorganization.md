@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de educationOrganization
 description: 'Entidade abstrata usada para modelar o comum entre os tipos de organização diferentes dentro do setor de educação.  '
-ms.openlocfilehash: 86da4e19f9cc36de7a61ca2c76565a17ec3acac0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 54f281de29033418b6acb2f9821c5ebd1eaf4db0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036003"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349886"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso de educationOrganization
 

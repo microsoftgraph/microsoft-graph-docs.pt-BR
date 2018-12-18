@@ -1,12 +1,13 @@
 ---
 title: Obter depOnboardingSetting
 description: Leia as propriedades e os relacionamentos do objeto depOnboardingSetting.
-ms.openlocfilehash: b2adb79bfa02bc41b700873ff652ac473729bbd1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e56461e8e60c2e7ac5999f56b8beaf592db54645
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340961"
 ---
 # <a name="get-deponboardingsetting"></a>Obter depOnboardingSetting
 

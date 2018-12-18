@@ -1,12 +1,13 @@
 ---
 title: Get windows10TeamGeneralConfiguration
 description: LEr propriedades e relações do objeto windows10TeamGeneralConfiguration.
-ms.openlocfilehash: 4102eefba37ab0071415d4b609082046f5b690df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f5bff7f16ff3252e445569c313d47b862e26b50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038987"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341661"
 ---
 # <a name="get-windows10teamgeneralconfiguration"></a>Get windows10TeamGeneralConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Obtenha a equipe
 description: Recupere as propriedades e relacionamentos da equipe especificado.
-ms.openlocfilehash: e1f3b08134377492fc00f9bc0b43c190d1d8a81d
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: e91140b50a1120667a3df579d0e20144de776e59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222643"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329033"
 ---
 # <a name="get-team"></a>Obtenha a equipe
 
@@ -14,7 +15,7 @@ ms.locfileid: "27222643"
 
 Recupere as propriedades e relacionamentos da [equipe](../resources/team.md)especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

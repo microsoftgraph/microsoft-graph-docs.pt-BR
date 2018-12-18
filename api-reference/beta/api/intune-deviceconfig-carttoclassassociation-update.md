@@ -1,12 +1,13 @@
 ---
 title: Atualizar cartToClassAssociation
 description: Atualize as propriedades de um objeto cartToClassAssociation.
-ms.openlocfilehash: ecdfdca855920c26e607f24771e41392f74d7095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 43b272a5fa2871daebbf7cfeea890ba0b9e204e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038280"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343012"
 ---
 # <a name="update-carttoclassassociation"></a>Atualizar cartToClassAssociation
 

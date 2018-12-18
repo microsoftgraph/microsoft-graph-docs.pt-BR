@@ -1,12 +1,13 @@
 ---
 title: Atualizar educationAssignmentResource
 description: 'Atualize as propriedades de recurso associado a uma atribuição. Somente professores em uma classe podem alterar os objetos de recurso de atribuição.  '
-ms.openlocfilehash: 761dc4f656a41d8d984443b17d87b1b0961a2a8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 68c8f471462c489e9e655a1642731be3a8700ba4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343215"
 ---
 # <a name="update-educationassignmentresource"></a>Atualizar educationAssignmentResource
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034026"
 
 Atualize as propriedades de recurso associado a uma atribuição. Somente professores em uma classe podem alterar os objetos de recurso de atribuição.  
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +40,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Booliano| Indica se este recurso deve ser copiado para o objeto de recurso de cada student quando a atribuição é publicada.|
+|distributeForStudentWork|Boolean| Indica se este recurso deve ser copiado para o objeto de recurso de cada student quando a atribuição é publicada.|
 |recurso|educationResource| Objeto Resource. |
 
 ## <a name="response"></a>Resposta

@@ -1,12 +1,13 @@
 ---
 title: Atualizar managedDeviceMobileAppConfigurationDeviceSummary
 description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfigurationDeviceSummary.
-ms.openlocfilehash: cb1f021ad5c41ac513c5e70ae9053c50a8f9b821
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35a75cba4d67c23f5c011bfe7e75e23452d4c954
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004194"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330174"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Atualizar managedDeviceMobileAppConfigurationDeviceSummary
 

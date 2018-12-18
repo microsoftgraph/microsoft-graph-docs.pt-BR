@@ -1,12 +1,13 @@
 ---
 title: Adicionar anexo
 description: Use essa API para adicionar um anexo a uma publicação. Desde daí
-ms.openlocfilehash: 38126f015d19890a9a1f08d458f05505faa09e9b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 67e219c7ffd95a41926be97323a2215625b30d2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328340"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 

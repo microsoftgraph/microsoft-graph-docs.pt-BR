@@ -1,12 +1,13 @@
 ---
 title: 'chamar: Desativar Mudo'
 description: Permite que o aplicativo para desativar o mudo.
-ms.openlocfilehash: de2029a2fa5abeb777f83e8651c8b6c5a2c15991
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343467"
 ---
 # <a name="call-unmute"></a>chamar: Desativar Mudo
 
@@ -14,7 +15,7 @@ ms.locfileid: "27036549"
 
 Permite que o aplicativo para desativar o mudo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |clientContext|String|O contexto de cliente.|
 

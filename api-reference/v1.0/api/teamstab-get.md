@@ -1,12 +1,13 @@
 ---
 title: Obtenha o guia
 description: 'Recupere as propriedades e relacionamentos da guia especificado. '
-ms.openlocfilehash: 6dcc850bb42487cd8ca7f9cc9f7330b59fa965cc
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 30c98258585db9443e2481db5a9fb8c304b8d72b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222615"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339582"
 ---
 # <a name="get-tab"></a>Obtenha o guia
 
@@ -14,7 +15,7 @@ ms.locfileid: "27222615"
 
 Recupere as propriedades e relacionamentos da [guia](../resources/teamstab.md)especificado. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

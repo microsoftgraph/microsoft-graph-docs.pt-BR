@@ -1,12 +1,13 @@
 ---
 title: Excluir iosStoreApp
 description: Exclui iosStoreApp.
-ms.openlocfilehash: 10016a4e43effea3b7988ec2dbf1f65d9e52d5be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ea03ef5429c486e2ae8e93fbc4f394ef3219771
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338833"
 ---
 # <a name="delete-iosstoreapp"></a>Excluir iosStoreApp
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar rangefont
 description: Atualize as propriedades do objeto rangefont.
-ms.openlocfilehash: a70efe8c2ff3a6cf3b92061e17a3ec0b1637945d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 662bf18fe80ff8942841bad88eb207d1ff569249
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004474"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339953"
 ---
 # <a name="update-rangefont"></a>Atualizar rangefont
 

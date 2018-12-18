@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso targetedManagedAppConfiguration
 description: Configuração usada para distribuir um conjunto de configurações personalizadas, no estado em que se encontram, para todos os usuários do grupo de segurança visado
-ms.openlocfilehash: d854c632c03d4ffbfe85b24b8dcf27f9de2f4eff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7ab50d04c6c04ff616019ce5ca42f4452fe11494
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006648"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339645"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>Tipo de recurso targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ Herda de [managedAppConfiguration](../resources/intune-mam-managedappconfigurati
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |customSettings|Coleção [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres a serem enviados aos aplicativos para usuários para os quais a configuração tem escopo definido, não alterados por esse serviço Herdado de [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
-|isAssigned|Booliano|Indica se a política foi implantada a grupos de inclusão ou não.|
+|isAssigned|Boolean|Indica se a política foi implantada a grupos de inclusão ou não.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

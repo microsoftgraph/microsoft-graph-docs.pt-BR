@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartTitle
 description: Representa um objeto de título de gráfico de um gráfico.
-ms.openlocfilehash: ce2091c0cbd2435d96a1a931f7e46d6e2b8fb920
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b3d685c68b14ebe3f49eb3dd9186838c977c1cac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338098"
 ---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
 

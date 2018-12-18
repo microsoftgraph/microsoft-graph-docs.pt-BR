@@ -1,12 +1,13 @@
 ---
 title: Listar escolas
 description: Recupere uma lista de escolas nas quais a aula é ministrada.
-ms.openlocfilehash: 7144559d9fe2459f1087a2d8591a7fb286c4b5cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 17e4ca1c18b40cfaf4624bb4632e9dfaf46ed4aa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007333"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350761"
 ---
 # <a name="list-schools"></a>Listar escolas
 

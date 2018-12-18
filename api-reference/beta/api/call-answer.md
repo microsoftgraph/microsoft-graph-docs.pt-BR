@@ -1,12 +1,13 @@
 ---
 title: 'chamar: resposta'
 description: Atenda uma chamada de entrada.
-ms.openlocfilehash: d2cf1030179d8822fd4620224addbabb95c5482f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033690"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343201"
 ---
 # <a name="call-answer"></a>chamar: resposta
 
@@ -14,14 +15,14 @@ ms.locfileid: "27033690"
 
 Atenda uma chamada de entrada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                 |
 | :-------------- | :-----------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                        |
 | Delegado (conta pessoal da Microsoft) | Não suportado                        |
-| Aplicativo     | Nenhum                                                        |
+| Application     | Nenhum                                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
+| Parâmetro        | Type                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |A ID de inscrição ou de retorno de chamada no qual serão entregues retornos de chamada. (Necessário)                                                               |
 |acceptedModalities|String collection                         |A lista de aceitar modalidades. Valores possíveis são: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Necessário) |

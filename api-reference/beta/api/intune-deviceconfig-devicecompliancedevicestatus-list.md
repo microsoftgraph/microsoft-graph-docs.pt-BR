@@ -1,12 +1,13 @@
 ---
 title: Listar deviceComplianceDeviceStatuses
 description: Listar propriedades e relações dos objetos deviceComplianceDeviceStatus.
-ms.openlocfilehash: cd7932f785a4bf67c7f8d2ef3c3c129d4da03502
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0cf160e98be194bdbdbde29d3e06e3269db40bbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037994"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330328"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>Listar deviceComplianceDeviceStatuses
 

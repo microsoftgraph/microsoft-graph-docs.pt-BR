@@ -1,12 +1,13 @@
 ---
 title: 'participante: Ativar Mudo'
 description: Ativar Mudo de um participante específico na chamada.
-ms.openlocfilehash: 939fd0fd94304318786b0ecb7ae72da28b55e4b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350068"
 ---
 # <a name="participant-mute"></a>participante: Ativar Mudo
 
@@ -14,14 +15,14 @@ ms.locfileid: "27035927"
 
 Ativar Mudo de um participante específico na chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Application     | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |clientContext|String|O contexto de cliente.|
 

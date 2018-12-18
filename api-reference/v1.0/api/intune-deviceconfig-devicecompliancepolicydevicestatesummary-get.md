@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceCompliancePolicyDeviceStateSummary
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyDeviceStateSummary.
-ms.openlocfilehash: 748c812a2dad2444e30456faf9b5be8791f8ee18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4d0c97f94b7dd92f735cdec80d0acf9826ab4ba
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330160"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Acessar deviceCompliancePolicyDeviceStateSummary
 

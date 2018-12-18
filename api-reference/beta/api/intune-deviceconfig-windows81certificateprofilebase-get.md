@@ -1,12 +1,13 @@
 ---
 title: Obter windows81CertificateProfileBase
 description: Leia as propriedades e os relacionamentos do objeto windows81CertificateProfileBase.
-ms.openlocfilehash: d8bb0f7c140d0786190082aa817525c3e145e53e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c5ff7dd258f69546093d084b8159a5396376621
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035121"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341934"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Obter windows81CertificateProfileBase
 

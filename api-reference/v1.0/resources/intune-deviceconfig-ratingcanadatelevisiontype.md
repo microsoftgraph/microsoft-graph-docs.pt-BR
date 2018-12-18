@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingCanadaTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Canadá
-ms.openlocfilehash: 636a59e9bbb4c6ce09a9118b912cdd9c6be8440b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf11640b65fd5f0e724c7866dc14322306c3f760
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003764"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338707"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>tipo de enum ratingCanadaTelevisionType
 

@@ -1,12 +1,13 @@
 ---
 title: Criar termsAndConditionsAcceptanceStatus
 description: Cria um novo objeto termsAndConditionsAcceptanceStatus.
-ms.openlocfilehash: 0c23689addf5c1c7a53f2d9f5a7c5f09918fd9f7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 857e927d970f91070032dae95e699247aa7b11b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340590"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Criar termsAndConditionsAcceptanceStatus
 

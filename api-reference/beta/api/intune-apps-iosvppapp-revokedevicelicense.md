@@ -1,12 +1,13 @@
 ---
 title: ação de revokeDeviceLicense
 description: REVOKE atribuído iOS VPP dispositivo licença para fornecido app.
-ms.openlocfilehash: 4accb28bdc8bc7bcd81631f46eba7d78049c8f4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17ae2ed812d5c5b5a35926934d748fb730aafacf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040974"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353127"
 ---
 # <a name="revokedevicelicense-action"></a>ação de revokeDeviceLicense
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedDeviceId|String|DeviceId para quem a licença de aplicativo atribuídas é a ser revogado|
-|notifyManagedDevices|Booliano|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Boolean|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
 
 
 

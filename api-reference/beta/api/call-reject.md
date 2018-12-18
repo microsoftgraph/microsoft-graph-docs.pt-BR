@@ -1,12 +1,13 @@
 ---
 title: 'chamar: rejeitar'
 description: Rejeite uma chamada de entrada.
-ms.openlocfilehash: 4731d377021871569fcec895af832aeea66b3431
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 2516ead8d9fa158192a0d9c7c02ac8adb44f764a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343453"
 ---
 # <a name="call-reject"></a>chamar: rejeitar
 
@@ -14,14 +15,14 @@ ms.locfileid: "27036923"
 
 Rejeite uma chamada de entrada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Nenhum                                                       |
+| Application     | Nenhum                                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/reject
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |motivo|String|O motivo de rejeição.|
 

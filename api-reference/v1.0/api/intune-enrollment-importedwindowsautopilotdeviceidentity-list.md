@@ -1,12 +1,13 @@
 ---
 title: Listar importedWindowsAutopilotDeviceIdentities
 description: Lista as propriedades e relações de objetos importedWindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 74387db4dbfb4055a558f1213a2670e7ed3449a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38d825b5e906d7d0512cded444aefcc2ba3b0f2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003601"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27350845"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Listar importedWindowsAutopilotDeviceIdentities
 

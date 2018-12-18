@@ -1,12 +1,13 @@
 ---
 title: Listar iosGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos iosGeneralDeviceConfiguration.
-ms.openlocfilehash: c7ccd1c93c2ec163f984a13239c8bd93ed91e6eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2c6d243ac40f1089a2745413c5119e36f6b6e602
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035778"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343380"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Listar iosGeneralDeviceConfigurations
 

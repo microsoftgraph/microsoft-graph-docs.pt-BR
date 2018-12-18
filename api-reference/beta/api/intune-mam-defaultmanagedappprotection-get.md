@@ -1,12 +1,13 @@
 ---
 title: Get defaultManagedAppProtection
 description: Ler propriedades e relações do objeto defaultManagedAppProtection.
-ms.openlocfilehash: e4a4cb99515e6e7dbcbd68b5f64bd81704aff83e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1932ee08cc3ea879dc207dade7010fc029d49afa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037926"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27341619"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 

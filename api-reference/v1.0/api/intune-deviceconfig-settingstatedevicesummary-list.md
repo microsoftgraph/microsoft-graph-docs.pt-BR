@@ -1,12 +1,13 @@
 ---
 title: Listar settingStateDeviceSummaries
 description: Listar propriedades e relações dos objetos settingStateDeviceSummary.
-ms.openlocfilehash: 390af97482f0499923cad7850801eb2181de47ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4d2cb1153901bc934ae0b1f57c3d419a83ce2953
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27342354"
 ---
 # <a name="list-settingstatedevicesummaries"></a>Listar settingStateDeviceSummaries
 

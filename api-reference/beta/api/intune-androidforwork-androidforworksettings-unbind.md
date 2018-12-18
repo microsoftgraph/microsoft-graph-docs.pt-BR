@@ -1,12 +1,13 @@
 ---
 title: ação de desassociar
 description: Ainda não documentado
-ms.openlocfilehash: d8b578cedade0ec438f446dbd1f23b173d302098
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cfd4b9a740c97131c6e937e9dd8e9013dba95f9f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037249"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338532"
 ---
 # <a name="unbind-action"></a>ação de desassociar
 

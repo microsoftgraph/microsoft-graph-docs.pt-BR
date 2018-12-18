@@ -1,12 +1,13 @@
 ---
 title: Lista importedAppleDeviceIdentities
 description: Lista as propriedades e os relacionamentos dos objetos importedAppleDeviceIdentity.
-ms.openlocfilehash: b0b490f6c3de9166bbbd497a819cd3799eef6cff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c122f616a61a3fedf219c52384fcea97db1d203d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036064"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340989"
 ---
 # <a name="list-importedappledeviceidentities"></a>Lista importedAppleDeviceIdentities
 
