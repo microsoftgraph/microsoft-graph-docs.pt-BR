@@ -1,30 +1,31 @@
 ---
 title: Criar deviceCompliancePolicyAssignment
 description: Criar um novo objeto deviceCompliancePolicyAssignment.
-ms.openlocfilehash: d2aa0e08c52a0d055080ea0ad33ac8fc2dd53728
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee54fecbbddb4fc02b6a6c7b39d8cdc3633d59ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325414"
 ---
-# <a name="create-devicecompliancepolicyassignment"></a><span data-ttu-id="5cbac-103">Criar deviceCompliancePolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="5cbac-103">Create deviceCompliancePolicyAssignment</span></span>
+# <a name="create-devicecompliancepolicyassignment"></a><span data-ttu-id="7ba57-103">Criar deviceCompliancePolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="7ba57-103">Create deviceCompliancePolicyAssignment</span></span>
 
-> <span data-ttu-id="5cbac-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="5cbac-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5cbac-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="5cbac-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7ba57-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="7ba57-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7ba57-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="7ba57-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="5cbac-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="5cbac-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="7ba57-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="7ba57-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="5cbac-107">Criar um novo objeto [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).</span><span class="sxs-lookup"><span data-stu-id="5cbac-107">Create a new [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="5cbac-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="5cbac-108">Prerequisites</span></span>
-<span data-ttu-id="5cbac-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5cbac-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ba57-107">Criar um novo objeto [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).</span><span class="sxs-lookup"><span data-stu-id="7ba57-107">Create a new [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7ba57-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7ba57-108">Prerequisites</span></span>
+<span data-ttu-id="7ba57-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ba57-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5cbac-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5cbac-111">Permission type</span></span>|<span data-ttu-id="5cbac-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="5cbac-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7ba57-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7ba57-111">Permission type</span></span>|<span data-ttu-id="7ba57-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7ba57-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5cbac-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5cbac-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5cbac-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5cbac-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="5cbac-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5cbac-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5cbac-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5cbac-116">Not supported.</span></span>|
-|<span data-ttu-id="5cbac-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5cbac-117">Application</span></span>|<span data-ttu-id="5cbac-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5cbac-118">Not supported.</span></span>|
+|<span data-ttu-id="7ba57-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7ba57-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7ba57-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ba57-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="7ba57-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7ba57-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7ba57-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7ba57-116">Not supported.</span></span>|
+|<span data-ttu-id="7ba57-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7ba57-117">Application</span></span>|<span data-ttu-id="7ba57-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7ba57-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5cbac-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5cbac-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ba57-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7ba57-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -33,30 +34,30 @@ ms.locfileid: "27037593"
 POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5cbac-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5cbac-120">Request headers</span></span>
-|<span data-ttu-id="5cbac-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5cbac-121">Header</span></span>|<span data-ttu-id="5cbac-122">Valor</span><span class="sxs-lookup"><span data-stu-id="5cbac-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7ba57-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7ba57-120">Request headers</span></span>
+|<span data-ttu-id="7ba57-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7ba57-121">Header</span></span>|<span data-ttu-id="7ba57-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7ba57-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5cbac-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="5cbac-123">Authorization</span></span>|<span data-ttu-id="5cbac-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5cbac-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5cbac-125">Accept</span><span class="sxs-lookup"><span data-stu-id="5cbac-125">Accept</span></span>|<span data-ttu-id="5cbac-126">application/json</span><span class="sxs-lookup"><span data-stu-id="5cbac-126">application/json</span></span>|
+|<span data-ttu-id="7ba57-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7ba57-123">Authorization</span></span>|<span data-ttu-id="7ba57-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7ba57-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7ba57-125">Accept</span><span class="sxs-lookup"><span data-stu-id="7ba57-125">Accept</span></span>|<span data-ttu-id="7ba57-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7ba57-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5cbac-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5cbac-127">Request body</span></span>
-<span data-ttu-id="5cbac-128">No corpo da solicitação, forneça uma representação JSON do objeto deviceCompliancePolicyAssignment.</span><span class="sxs-lookup"><span data-stu-id="5cbac-128">In the request body, supply a JSON representation for the deviceCompliancePolicyAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ba57-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7ba57-127">Request body</span></span>
+<span data-ttu-id="7ba57-128">No corpo da solicitação, forneça uma representação JSON do objeto deviceCompliancePolicyAssignment.</span><span class="sxs-lookup"><span data-stu-id="7ba57-128">In the request body, supply a JSON representation for the deviceCompliancePolicyAssignment object.</span></span>
 
-<span data-ttu-id="5cbac-129">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCompliancePolicyAssignment.</span><span class="sxs-lookup"><span data-stu-id="5cbac-129">The following table shows the properties that are required when you create the deviceCompliancePolicyAssignment.</span></span>
+<span data-ttu-id="7ba57-129">A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCompliancePolicyAssignment.</span><span class="sxs-lookup"><span data-stu-id="7ba57-129">The following table shows the properties that are required when you create the deviceCompliancePolicyAssignment.</span></span>
 
-|<span data-ttu-id="5cbac-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5cbac-130">Property</span></span>|<span data-ttu-id="5cbac-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="5cbac-131">Type</span></span>|<span data-ttu-id="5cbac-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="5cbac-132">Description</span></span>|
+|<span data-ttu-id="7ba57-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ba57-130">Property</span></span>|<span data-ttu-id="7ba57-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ba57-131">Type</span></span>|<span data-ttu-id="7ba57-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ba57-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5cbac-133">id</span><span class="sxs-lookup"><span data-stu-id="5cbac-133">id</span></span>|<span data-ttu-id="5cbac-134">String</span><span class="sxs-lookup"><span data-stu-id="5cbac-134">String</span></span>|<span data-ttu-id="5cbac-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="5cbac-135">Key of the entity.</span></span>|
-|<span data-ttu-id="5cbac-136">destino</span><span class="sxs-lookup"><span data-stu-id="5cbac-136">target</span></span>|[<span data-ttu-id="5cbac-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="5cbac-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="5cbac-138">Destino da atribuição de políticas de conformidade.</span><span class="sxs-lookup"><span data-stu-id="5cbac-138">Target for the compliance policy assignment.</span></span>|
+|<span data-ttu-id="7ba57-133">id</span><span class="sxs-lookup"><span data-stu-id="7ba57-133">id</span></span>|<span data-ttu-id="7ba57-134">String</span><span class="sxs-lookup"><span data-stu-id="7ba57-134">String</span></span>|<span data-ttu-id="7ba57-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="7ba57-135">Key of the entity.</span></span>|
+|<span data-ttu-id="7ba57-136">destino</span><span class="sxs-lookup"><span data-stu-id="7ba57-136">target</span></span>|[<span data-ttu-id="7ba57-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="7ba57-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="7ba57-138">Destino da atribuição de políticas de conformidade.</span><span class="sxs-lookup"><span data-stu-id="7ba57-138">Target for the compliance policy assignment.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5cbac-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="5cbac-139">Response</span></span>
-<span data-ttu-id="5cbac-140">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5cbac-140">If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7ba57-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ba57-139">Response</span></span>
+<span data-ttu-id="7ba57-140">Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7ba57-140">If successful, this method returns a `201 Created` response code and a [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5cbac-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5cbac-141">Example</span></span>
-### <a name="request"></a><span data-ttu-id="5cbac-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5cbac-142">Request</span></span>
-<span data-ttu-id="5cbac-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5cbac-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7ba57-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7ba57-141">Example</span></span>
+### <a name="request"></a><span data-ttu-id="7ba57-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7ba57-142">Request</span></span>
+<span data-ttu-id="7ba57-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7ba57-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 Content-type: application/json
@@ -70,8 +71,8 @@ Content-length: 172
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5cbac-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="5cbac-144">Response</span></span>
-<span data-ttu-id="5cbac-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="5cbac-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7ba57-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ba57-144">Response</span></span>
+<span data-ttu-id="7ba57-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7ba57-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
