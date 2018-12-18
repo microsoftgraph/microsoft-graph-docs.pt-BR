@@ -1,12 +1,13 @@
 ---
 title: tipo de enum androidDeviceOwnerWiFiSecurityType
 description: Tipos de segurança Wi-Fi para dispositivo Android proprietário.
-ms.openlocfilehash: 09654e6863677bc7eb0a88452487bef183c649cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 02f3830d82e08a10f6726cf1ebd2e7f04a2e8f2e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306682"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>tipo de enum androidDeviceOwnerWiFiSecurityType
 

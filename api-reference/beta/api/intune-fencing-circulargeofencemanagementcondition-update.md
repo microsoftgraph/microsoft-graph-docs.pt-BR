@@ -1,12 +1,13 @@
 ---
 title: Atualizar circularGeofenceManagementCondition
 description: Atualize as propriedades de um objeto circularGeofenceManagementCondition.
-ms.openlocfilehash: d1bf21db47f25834f62241fb66a96bcf176f5d8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 630e62c4bc5825eee3efac6bc5323d86d327a25e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036097"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310091"
 ---
 # <a name="update-circulargeofencemanagementcondition"></a>Atualizar circularGeofenceManagementCondition
 

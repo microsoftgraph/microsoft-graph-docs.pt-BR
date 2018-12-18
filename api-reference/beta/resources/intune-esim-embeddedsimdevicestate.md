@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de embeddedSIMDeviceState
 description: Descreve o incorporado SIM código implantação estado de ativação em relação um dispositivo.
-ms.openlocfilehash: 03d5d5d5dea85b3ecccf98fe57bc0611e2986063
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef7611e96b1b6f3bba0a3c59dead85ede41b2eda
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308453"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>tipo de recurso de embeddedSIMDeviceState
 
@@ -34,7 +35,7 @@ Descreve o incorporado SIM código implantação estado de ativação em relaç�
 |universalIntegratedCircuitCardIdentifier|String|O Universal circuito integrado cartão identificador (UICCID) que identifica o hardware no qual um perfil é a serem implantados.|
 |deviceName|String|Nome do dispositivo para o qual a assinatura foi provisionado por exemplo, JOE de área de trabalho|
 |userName|Cadeia de caracteres|Nome de usuário que a assinatura foi provisionada para ex.: joe@contoso.com|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação perfil aplicado ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|estado|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação perfil aplicado ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |stateDetails|String|Descrição do estado do provisionamento de cadeia de caracteres.|
 
 ## <a name="relationships"></a>Relações

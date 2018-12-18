@@ -1,19 +1,20 @@
 ---
 title: Listar anexos
 description: Obtenha uma lista de objetos attachment anexado a uma tarefa do Outlook.
-ms.openlocfilehash: 11388a2a0bc2df1b0bb680e97326f7d0058c9e07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: db27cfa94e90607e64bed0bf71f55dfbea14b7e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037837"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309930"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Obtenha uma lista de objetos [attachment](../resources/attachment.md) anexado a uma tarefa do Outlook.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

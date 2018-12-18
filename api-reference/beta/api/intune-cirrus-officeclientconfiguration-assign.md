@@ -1,12 +1,13 @@
 ---
 title: atribuir ação
 description: Substitua direcionados todos os grupos de uma política.
-ms.openlocfilehash: dd892444d60338b73df4209eef00069667e15d48
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 00ecb5d5e34fb067bbca36eee5ff190344319d7b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039314"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307823"
 ---
 # <a name="assign-action"></a>atribuir ação
 

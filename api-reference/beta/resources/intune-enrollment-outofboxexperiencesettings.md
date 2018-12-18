@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de outOfBoxExperienceSettings
 description: Configuração inicial pelo usuário configuração
-ms.openlocfilehash: 7d685c7e229828309e2ee759396215c3cd8dfac9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545fbe5c27063397a4d08c40729227804ebfc56d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040530"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308404"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso de outOfBoxExperienceSettings
 
@@ -18,12 +19,12 @@ Configuração inicial pelo usuário configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hidePrivacySettings|Booliano|Mostrar ou ocultar as configurações de privacidade para o usuário|
-|hideEULA|Booliano|Mostrar ou ocultar o EULA ao usuário|
+|hidePrivacySettings|Boolean|Mostrar ou ocultar as configurações de privacidade para o usuário|
+|hideEULA|Boolean|Mostrar ou ocultar o EULA ao usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação de ingresso AAD. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Booliano|Se definido, em seguida, ignore a seleção de teclado página se estiver definida região e idioma|
-|hideEscapeLink|Booliano|Se definido como verdadeiro, em seguida, o usuário não pode começar novamente com uma conta diferente, na empresa entrar|
+|skipKeyboardSelectionPage|Boolean|Se definido, em seguida, ignore a seleção de teclado página se estiver definida região e idioma|
+|hideEscapeLink|Boolean|Se definido como verdadeiro, em seguida, o usuário não pode começar novamente com uma conta diferente, na empresa entrar|
 
 ## <a name="relationships"></a>Relações
 Nenhum

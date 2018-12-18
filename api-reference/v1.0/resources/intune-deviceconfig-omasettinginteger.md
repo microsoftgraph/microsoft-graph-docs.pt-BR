@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso omaSettingInteger
 description: Definição de números inteiros das configurações de OMA.
-ms.openlocfilehash: 36c22b423161d9f3c58c3085fb7b040c663d460b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6a2e6fe6e6782159afa99d91785ae9e854a2e99c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306549"
 ---
 # <a name="omasettinginteger-resource-type"></a>Tipo de recurso omaSettingInteger
 

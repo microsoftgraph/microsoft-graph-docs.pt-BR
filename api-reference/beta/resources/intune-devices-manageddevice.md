@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedDevice
 description: Dispositivos gerenciados ou pré-registrados pelo Intune
-ms.openlocfilehash: eaca9444df77c2f95f6a6f9845c9383cd53cd99f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ac55f444eb4c87f65befbc1ba33c2e9bc65dced2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038522"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309608"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -64,11 +65,11 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|A versão do sistema operacional do dispositivo.|
-|easActivated|Booliano|Se o dispositivo está ativado para Exchange ActiveSync.|
+|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync.|
 |easDeviceId|String|ID do Exchange ActiveSync do dispositivo.|
 |easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo.|
-|aadRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory.|
-|azureADRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory.|
+|aadRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory.|
+|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indica se o modo perdido está habilitado ou desabilitado. Os valores possíveis são: `disabled` e `enabled`.|
 |activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado.|
@@ -77,13 +78,13 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |azureADDeviceId|String|O identificador exclusivo do dispositivo do Azure Active Directory. Somente leitura.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Estado do registro do dispositivo. Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Nome de exibição da categoria do dispositivo|
-|isSupervised|Booliano|Status supervisionado do dispositivo|
+|isSupervised|Boolean|Status supervisionado do dispositivo|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez em que o dispositivo entrou em contato com o Exchange.|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|O estado de acesso do dispositivo no Exchange. Os valores possíveis são: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|A razão para o estado de acesso do dispositivo no Exchange. Os valores possíveis são: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo.|
 |remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota.|
-|isEncrypted|Booliano|Status da criptografia de dispositivo|
+|isEncrypted|Boolean|Status da criptografia de dispositivo|
 |userPrincipalName|String|Nome principal do usuário do dispositivo|
 |modelo|String|Modelo do dispositivo|
 |fabricante|String|Fabricante do dispositivo|
@@ -104,8 +105,8 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indica o estado de ameaças de um dispositivo quando um parceiro de Defesa contra ameaças móveis está em uso pela conta e pelo dispositivo. Somente leitura. Os valores possíveis são: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|coleção [loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último logon usuários de um dispositivo|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Relatórios de DateTime que a configuração preferMdmOverGroupPolicy foi definida.  Quando definido, as configurações de Intune MDM substituirão as configurações de diretiva de grupo se não houver um conflito. Somente leitura.|
-|autopilotEnrolled|Booliano|Relata se o dispositivo gerenciado está inscrito via piloto automático.|
-|requireUserEnrollmentApproval|Booliano|Relata se o dispositivo de iOS gerenciado é o registro de aprovação do usuário.|
+|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito via piloto automático.|
+|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo de iOS gerenciado é o registro de aprovação do usuário.|
 |managementCertificateExpirationDate|DateTimeOffset|Relata a data de validade do certificado de gerenciamento de dispositivo|
 |iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusiva do cartão de uma SIM.|
 |UDID|String|Identificador exclusivo do dispositivo para dispositivos iOS e macOS.|

@@ -1,12 +1,13 @@
 ---
 title: Lista mobileAppTroubleshootingEvents
 description: Lista as propriedades e os relacionamentos dos objetos mobileAppTroubleshootingEvent.
-ms.openlocfilehash: ff7bbad0564b0176c8c3196af47f97d607553ddf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cee6872731977fedddced00f3bad678d3b3e42da
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308670"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>Lista mobileAppTroubleshootingEvents
 

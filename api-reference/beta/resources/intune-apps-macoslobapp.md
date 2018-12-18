@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de macOSLobApp
 description: Contém propriedades e as propriedades herdadas para o aplicativo de LOB MacOS.
-ms.openlocfilehash: bf3e51b077d7bcf97a4966dfbe63d468fa02a97f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0494c46f770d1e46821ce23a7cedff22e0c087a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037526"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309559"
 ---
 # <a name="macoslobapp-resource-type"></a>tipo de recurso de macOSLobApp
 
@@ -37,7 +38,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -56,7 +57,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |identityVersion|String|A versão da identidade.|
 |md5HashChunkSize|Int32|O tamanho do bloco de hash MD5|
 |md5Hash|String collection|Os códigos de hash MD5|
-|ignoreVersionDetection|Booliano|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina essa opção para verdadeiro para macOS aplicativos de linha de negócios (LoB) que usam um recurso de atualização self.|
+|ignoreVersionDetection|Boolean|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina essa opção para verdadeiro para macOS aplicativos de linha de negócios (LoB) que usam um recurso de atualização self.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

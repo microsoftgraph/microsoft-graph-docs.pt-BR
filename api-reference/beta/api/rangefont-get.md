@@ -1,12 +1,13 @@
 ---
 title: Obter RangeFont
 description: Recupere as propriedades e os relacionamentos do objeto rangefont.
-ms.openlocfilehash: e2926b1eec312c13594caab1dcafbede9fdc3c77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 86d30418c7a392cb596d6670894691741dbcac5a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038160"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310112"
 ---
 # <a name="get-rangefont"></a>Obter RangeFont
 

@@ -1,12 +1,13 @@
 ---
 title: 'message: replyAll'
 description: 'Responder a todos os destinatários de uma mensagem especificando um comentário e modificar quaisquer propriedades atualizáveis '
-ms.openlocfilehash: c79320229aad67a406a6519762c7cdd99af2ad50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 035212224bca5cb6d173be9ea447cf16406ebf36
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039621"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307186"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -23,7 +24,7 @@ Como alternativa, você pode primeiro [criar uma mensagem de responder a todos d
 propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** . 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -49,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|

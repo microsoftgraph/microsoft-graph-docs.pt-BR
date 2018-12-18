@@ -1,12 +1,13 @@
 ---
 title: Get termsAndConditionsAcceptanceStatus
 description: Ler propriedades e relações do objeto termsAndConditionsAcceptanceStatus.
-ms.openlocfilehash: 2bacab6ed87d3d5487d709ce1cb6178c0d47b82d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6219be740c0dc945e61983d93e39529c48cbc56a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307676"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>Get termsAndConditionsAcceptanceStatus
 

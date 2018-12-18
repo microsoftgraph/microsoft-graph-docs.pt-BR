@@ -1,12 +1,13 @@
 ---
 title: Excluir depMacOSEnrollmentProfile
 description: Exclui um depMacOSEnrollmentProfile.
-ms.openlocfilehash: 61b7ad694e5e8470ea2f66506d6b00de345b05fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bad8bc7869ccd4bf367038e53faba7c366a5846b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034319"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308537"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>Excluir depMacOSEnrollmentProfile
 

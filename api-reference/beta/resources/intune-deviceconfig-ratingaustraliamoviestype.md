@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingAustraliaMoviesType
 description: Filmes classificação rótulos na Austrália
-ms.openlocfilehash: 68eef0de18ad74c8fed76c4218bad0ae18a070f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d282b4c0e58fb0fb5141068d3d59a10052c83490
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039355"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307095"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enum ratingAustraliaMoviesType
 

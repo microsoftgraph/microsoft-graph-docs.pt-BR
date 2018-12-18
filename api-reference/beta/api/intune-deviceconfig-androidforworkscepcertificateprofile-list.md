@@ -1,12 +1,13 @@
 ---
 title: Lista androidForWorkScepCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkScepCertificateProfile.
-ms.openlocfilehash: b6a7eadb115bae318f6b381aaa4f8b051df8c7ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5bc3fd447f099a5a5f9d93d76a08361bae592bac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039259"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310273"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>Lista androidForWorkScepCertificateProfiles
 

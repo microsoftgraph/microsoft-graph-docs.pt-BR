@@ -1,12 +1,13 @@
 ---
 title: Atualizar intuneBrandingProfile
 description: Atualize as propriedades de um objeto intuneBrandingProfile.
-ms.openlocfilehash: 094de592e0e8d80472f1b0c6ed3d751ac79ba863
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309944"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|String|Chave de perfil|
 |profileName|String|Nome do perfil|
 |profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Booliano|Apresenta se o perfil é usado para padrão.|
+|isDefaultProfile|Boolean|Apresenta se o perfil é usado para padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile última modificação.|
 |displayName|Cadeia de caracteres|Nome da empresa/organização exibido para usuários finais.|

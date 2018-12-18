@@ -1,12 +1,13 @@
 ---
 title: Criar windows10SecureAssessmentConfiguration
 description: Cria um novo objeto windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: 79fbeb6633cc589a58bcb24349e417f61b07377e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21964a84ac046adb7a27c511319a903ff2ab50f3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033255"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308348"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Criar windows10SecureAssessmentConfiguration
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -58,9 +59,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |launchUri|String|Link da URL para uma avaliação que é carregada automaticamente quando o navegador de avaliação segura é iniciado. Ele precisa ser uma URL válida (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|A conta usada para configurar o dispositivo Windows para realizar o teste. O usuário pode ser uma conta de domínio (domínio\usuário), uma conta do AAD (nomedeusuário@locatário.com) ou uma conta local (nomedeusuário).|
 |configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|O tipo de conta usado para por ConfigurationAccount. Os valores possíveis são: `azureADAccount`, `domainAccount`, `localAccount`.|
-|allowPrinting|Booliano|Indica se o aplicativo deve ou não ter permissão de impressão durante o teste.|
-|allowScreenCapture|Booliano|Indica se a capacidade de captura de tela deve ou não ser permitida durante um teste.|
-|allowTextSuggestion|Booliano|Indica se sugestões de texto devem ou não ser permitidas durante o teste.|
+|allowPrinting|Boolean|Indica se o aplicativo deve ou não ter permissão de impressão durante o teste.|
+|allowScreenCapture|Boolean|Indica se a capacidade de captura de tela deve ou não ser permitida durante um teste.|
+|allowTextSuggestion|Boolean|Indica se sugestões de texto devem ou não ser permitidas durante o teste.|
 
 
 

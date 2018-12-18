@@ -1,12 +1,13 @@
 ---
 title: ação de revokeAllLicenses
 description: IOS REVOKE todos atribuído VPP licencia para determinados aplicativos.
-ms.openlocfilehash: 576cbf5b63f9eb1f00a409483a36a483bf0c9892
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 970882bd4195ef0b478790d21f6addc937f9fd50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309230"
 ---
 # <a name="revokealllicenses-action"></a>ação de revokeAllLicenses
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|notifyManagedDevices|Booliano|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Boolean|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar enrollmentProfile
 description: Atualize as propriedades de um objeto enrollmentProfile.
-ms.openlocfilehash: 6d8d0b6650c1094f1d2c46ab197eeb1781e097d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038983"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308313"
 ---
 # <a name="update-enrollmentprofile"></a>Atualizar enrollmentProfile
 
@@ -49,9 +50,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|String|Nome do perfil|
 |description|String|Descrição do perfil|
-|requiresUserAuthentication|Booliano|Indica se o perfil exige autenticação do usuário|
+|requiresUserAuthentication|Boolean|Indica se o perfil exige autenticação do usuário|
 |configurationEndpointUrl|String|Url de ponto de extremidade de configuração a ser usado para registro|
-|enableAuthenticationViaCompanyPortal|Booliano|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
+|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
 
 
 

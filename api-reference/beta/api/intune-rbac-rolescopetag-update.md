@@ -1,12 +1,13 @@
 ---
 title: Atualizar roleScopeTag
 description: Atualize as propriedades de um objeto roleScopeTag.
-ms.openlocfilehash: d18f4f47be9aab01b1221e9ce7736878bb059bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3e1cdc0997e0c2f7ebb8d70c730785e40b4143d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039659"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306941"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 

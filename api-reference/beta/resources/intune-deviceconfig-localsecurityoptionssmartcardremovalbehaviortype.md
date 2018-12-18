@@ -1,12 +1,13 @@
 ---
 title: tipo de enum localSecurityOptionsSmartCardRemovalBehaviorType
 description: Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType
-ms.openlocfilehash: 4a4fdd6934805a688c95cd41f65149b4a727a60e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 91b55d4ba3b1fc8b27a5ab85e6f5ff7df74e9a59
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034914"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308733"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>tipo de enum localSecurityOptionsSmartCardRemovalBehaviorType
 

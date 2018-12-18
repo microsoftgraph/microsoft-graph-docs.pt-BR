@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceComplianceActionItem
 description: Leia as propriedades e as relações do objeto deviceComplianceActionItem.
-ms.openlocfilehash: 3575a137d3f08cf50684a82d00587a35e601c45b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2fd6762ca3f0d7128721eb240d7d00bcf1291da4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034874"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307949"
 ---
 # <a name="get-devicecomplianceactionitem"></a>Acessar deviceComplianceActionItem
 

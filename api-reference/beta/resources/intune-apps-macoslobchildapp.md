@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de macOSLobChildApp
 description: Contém propriedades o MacOS LOB App em um pacote de pacote
-ms.openlocfilehash: 6035e77843923eacbce8a1647de241fc79338766
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e62305ea856d42847b49be306d20bde737152163
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036562"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309867"
 ---
 # <a name="macoslobchildapp-resource-type"></a>tipo de recurso de macOSLobChildApp
 

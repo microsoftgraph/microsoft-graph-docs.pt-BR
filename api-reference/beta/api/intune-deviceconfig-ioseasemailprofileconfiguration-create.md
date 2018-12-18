@@ -1,12 +1,13 @@
 ---
 title: Criar iosEasEmailProfileConfiguration
 description: Crie um novo objeto de iosEasEmailProfileConfiguration.
-ms.openlocfilehash: 78cf37fc63f6cc62d40ffc1ef3deda587b65aaf3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b17b2683d792cfd4044ac4a91d9367ec1f963e15
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036848"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306402"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>Criar iosEasEmailProfileConfiguration
 
@@ -50,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -61,16 +62,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |customDomainName|String|Valor de nome de domínio personalizado usado ao gerar um perfil de email antes de instalar no dispositivo. Herdado de [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Nome da conta.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Método de autenticação para esse perfil de Email. Os valores possíveis são: `usernameAndPassword` e `certificate`.|
-|blockMovingMessagesToOtherEmailAccounts|Booliano|Indica se deve ou não bloquear mover mensagens para outras contas de email.|
-|blockSendingEmailFromThirdPartyApps|Booliano|Indica se ou não bloquear o envio de email a partir de aplicativos de terceiros.|
-|blockSyncingRecentlyUsedEmailAddresses|Booliano|Indica se deve ou não bloquear sincronizando endereços de email usados recentemente, por exemplo - ao redigir novo email.|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|Indica se deve ou não bloquear mover mensagens para outras contas de email.|
+|blockSendingEmailFromThirdPartyApps|Boolean|Indica se ou não bloquear o envio de email a partir de aplicativos de terceiros.|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|Indica se deve ou não bloquear sincronizando endereços de email usados recentemente, por exemplo - ao redigir novo email.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duração de email de tempo deve ser sincronizada com. . Os valores possíveis são: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Atributo de email que é separado a partir do AAD e inserido nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `userPrincipalName` e `primarySmtpAddress`.|
 |hostName|Cadeia de caracteres|Local do Exchange que (URL) que o aplicativo de email nativo se conecta ao.|
-|requireSmime|Booliano|Indica se deve ou não usar certificados S/MIME.|
-|smimeEnablePerMessageSwitch|Booliano|Indica se deve ou não permitir que os e-mails descriptografados.|
-|requireSsl|Booliano|Indica se deve ou não usar SSL.|
-|useOAuth|Booliano|Especifica se a conexão deve usar OAuth para autenticação.|
+|requireSmime|Boolean|Indica se deve ou não usar certificados S/MIME.|
+|smimeEnablePerMessageSwitch|Boolean|Indica se deve ou não permitir que os e-mails descriptografados.|
+|requireSsl|Boolean|Indica se deve ou não usar SSL.|
+|useOAuth|Boolean|Especifica se a conexão deve usar OAuth para autenticação.|
 
 
 

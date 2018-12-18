@@ -1,12 +1,13 @@
 ---
 title: Obter importedWindowsAutopilotDeviceIdentity
 description: Lê as propriedades e relações do objeto importedWindowsAutopilotDeviceIdentity.
-ms.openlocfilehash: ab57d7006a1d3046d47ab664d6b36c74fe772efe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0f9d1c80fae8144dc37110345f9162e3c006f9fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003804"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309356"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Obter importedWindowsAutopilotDeviceIdentity
 

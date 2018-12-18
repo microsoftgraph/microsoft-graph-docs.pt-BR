@@ -1,12 +1,13 @@
 ---
 title: 'chamar: redirecionar'
 description: Redirecione uma chamada recebida.
-ms.openlocfilehash: eeaff645c89910ac5dee4bc143d517cdd26389d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: dd24c1b3841152f8bd088f89c95ff8786cefb47c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033658"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309097"
 ---
 # <a name="call-redirect"></a>chamar: redirecionar
 
@@ -14,14 +15,14 @@ ms.locfileid: "27033658"
 
 Redirecione uma chamada recebida.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
 | :-------------- | :-------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                |
 | Delegado (conta pessoal da Microsoft) | Não suportado                |
-| Aplicativo     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,13 +39,13 @@ POST /applications/{id}/calls/{id}/redirect
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |destinos|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
 |targetDisposition|String|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
-|maskCallee|Booliano|Indica se o receptor de máscara.|
-|maskCaller|Booliano|Indica se o chamador de máscara.|
+|maskCallee|Boolean|Indica se o receptor de máscara.|
+|maskCaller|Boolean|Indica se o chamador de máscara.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta

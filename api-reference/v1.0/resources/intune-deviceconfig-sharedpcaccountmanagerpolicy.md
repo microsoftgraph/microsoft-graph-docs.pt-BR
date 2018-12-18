@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso sharedPCAccountManagerPolicy
 description: Política do gerenciador de conta de PC compartilhado. Aplica-se somente quando o gerenciador de contas está habilitado.
-ms.openlocfilehash: 72616fbecd20ab43db6aafcb9ecbce00530cb4db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7eafffbfac115c95cbf2c62be630cf7958965ce9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007499"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306563"
 ---
 # <a name="sharedpcaccountmanagerpolicy-resource-type"></a>Tipo de recurso sharedPCAccountManagerPolicy
 

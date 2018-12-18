@@ -1,12 +1,13 @@
 ---
 title: Listar blocos de anotações
 description: Recupere uma lista de objetos notebook.
-ms.openlocfilehash: 429c02d0032453fc00a7517af32cac8b9d3c66f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: c5925d858b7cbd567b018bd5d8491f2f20b33f66
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006234"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309825"
 ---
 # <a name="list-notebooks"></a>Listar blocos de anotações
 

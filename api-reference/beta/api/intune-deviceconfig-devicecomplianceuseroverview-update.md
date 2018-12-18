@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceComplianceUserOverview
 description: Atualizar as propriedades de um objeto deviceComplianceUserOverview.
-ms.openlocfilehash: b00c5576506aad566872dbf3477c643cd411782b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b703c5522670641961744cb6b7c3d62f8e46ae69
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040146"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310483"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Atualizar deviceComplianceUserOverview
 

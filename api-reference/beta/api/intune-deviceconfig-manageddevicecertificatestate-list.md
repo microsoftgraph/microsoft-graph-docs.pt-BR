@@ -1,12 +1,13 @@
 ---
 title: Lista managedDeviceCertificateStates
 description: Lista as propriedades e os relacionamentos dos objetos managedDeviceCertificateState.
-ms.openlocfilehash: 7cc5d4f2a1aed40ebb9ea6e40298b435aad58485
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7e5ac9bde17c20fe0a9aab2d5d88149a8c578cef
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038963"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308229"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Lista managedDeviceCertificateStates
 

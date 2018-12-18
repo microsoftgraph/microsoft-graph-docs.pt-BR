@@ -1,12 +1,13 @@
 ---
 title: Força a exclusão de domínio
 description: Exclui um domínio usando uma operação de longa execução assíncrona.
-ms.openlocfilehash: 20f00679998070b95af65292cadf83d76aa2add1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 85839d8bf7d36925661d0202c053574288763dc6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309111"
 ---
 # <a name="force-domain-deletion"></a>Força a exclusão de domínio
 
@@ -26,7 +27,7 @@ As seguintes ações são executadas como parte dessa operação:
 
 Após a exclusão de domínio for concluído, as operações de API para o domínio excluído retornará um código de status HTTP 404. Para verificar a exclusão de um domínio, você pode executar uma operação [obter o domínio](domain-get.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -57,7 +58,7 @@ POST /domains/{id}/forceDelete
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro | Tipo | Descrição |
+| Parâmetro | Type | Descrição |
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Opção para desabilitar contas de usuário que são renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderão entrar. Se definida como **true** o `users` atualizados como parte dessa operação será desabilitado.  Valor padrão é **true**. |
 

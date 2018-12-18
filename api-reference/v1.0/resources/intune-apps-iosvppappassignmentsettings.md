@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosVppAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel do iOS VPP a um grupo.
-ms.openlocfilehash: 6fc529fe1aeea6bdbef46ad0cd97fb5830250b4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 65a143c1f6cc9eed4dfdc6dabeb6f9379517277c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310245"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Tipo de recurso iosVppAppAssignmentSettings
 

@@ -1,12 +1,13 @@
 ---
 title: Função getEffectivePermissions
 description: Ainda não documentado
-ms.openlocfilehash: 2cfb9ad8117e121d990b85bd0afadfc9d4747caa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a7767182da36058891c4c9c627ea0015ac0880b4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307214"
 ---
 # <a name="geteffectivepermissions-function"></a>Função getEffectivePermissions
 

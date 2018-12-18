@@ -1,12 +1,13 @@
 ---
 title: Gerenciamento de dispositivos no Microsoft Intune
 description: ''
-ms.openlocfilehash: ba6f7d86b86718f7121b2c4f075b65f13b5e2176
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ed7dde45199ae411b84f29e31d00a9ca936f9d04
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038005"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310028"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -14,7 +15,7 @@ ms.locfileid: "27038005"
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
 
-- [Consentimento de Admin](intune-devices-adminconsent.md)
+- [Consentimento do administrador](intune-devices-adminconsent.md)
 - [Estado de consentimento do administrador](intune-devices-adminconsentstate.md)
 - [Certificado de notificação por push da Apple](intune-devices-applepushnotificationcertificate.md)
 - [Ator de auditoria](intune-auditing-auditactor.md)

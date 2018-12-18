@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsKioskLocalGroup
 description: A classe usada para identificar um grupo local para a configuração de quiosque
-ms.openlocfilehash: 456460e60bbf21130fc918f38922893e5430abe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb2e0cddd1c9b2530e1f146e966d707466c737d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306843"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso de windowsKioskLocalGroup
 

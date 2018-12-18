@@ -1,12 +1,13 @@
 ---
 title: Atualizar mobileAppContent
 description: Atualizar as propriedades de um objeto mobileAppContent.
-ms.openlocfilehash: e6db23b831fb41865509b6092e9b14d2eabff960
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 478c01624c7b8bf42b71fa8224b31b38e8f0ae58
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038389"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310511"
 ---
 # <a name="update-mobileappcontent"></a>Atualizar mobileAppContent
 

@@ -1,12 +1,13 @@
 ---
 title: 'participante: muteAll'
 description: Ativar Mudo de todos os participantes na chamada.
-ms.openlocfilehash: f0da6f44801559fe7258d61fff9d5c87cc606702
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034143"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310175"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -14,14 +15,14 @@ ms.locfileid: "27034143"
 
 Ativar Mudo de todos os participantes na chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Nenhum                                        |
+| Application                            | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |participantes|String collection|Os participantes para ser ativado.|
 |clientContext|String|O contexto de cliente.|

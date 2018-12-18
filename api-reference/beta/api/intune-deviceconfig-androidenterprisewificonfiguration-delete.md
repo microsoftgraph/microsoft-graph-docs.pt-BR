@@ -1,12 +1,13 @@
 ---
 title: Excluir androidEnterpriseWiFiConfiguration
 description: Exclui um androidEnterpriseWiFiConfiguration.
-ms.openlocfilehash: d216e6377e9227bf5e18d4d1952bb7698eb580fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5dc35335d41d96cfe3496c6b9245cb2f9a149c22
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035233"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307207"
 ---
 # <a name="delete-androidenterprisewificonfiguration"></a>Excluir androidEnterpriseWiFiConfiguration
 

@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: Permissões
 description: 'Publica um aplicativo para o catálogo de aplicativos do Microsoft Teams. '
-ms.openlocfilehash: c33a1d85673b9f59aade253b2ea5fd237eb5fc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 76750e385c8048c44d77064722d84c5765c2bcc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004184"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306150"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos ao catálogo de aplicativos da sua organização
 
@@ -14,7 +15,7 @@ ms.locfileid: "27004184"
 
 Publica um [aplicativo](../resources/teamsapp.md) para o catálogo de aplicativos do Microsoft Teams. Especificamente, essa API publica o aplicativo catálogo da sua organização (o catálogo de aplicativos do inquilino); o recurso criado terá `distributionMethod`  =  `organization`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 

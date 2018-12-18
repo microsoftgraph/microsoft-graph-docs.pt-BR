@@ -1,12 +1,13 @@
 ---
 title: Excluir um canal
 description: Exclua o canal.
-ms.openlocfilehash: eaf061df0725b10cb45ed03cc674b7ae4800272e
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 9eb4378920a652529ec99129cca50c7b2e7ad565
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309041"
 ---
 # <a name="delete-channel"></a>Excluir um canal
 
@@ -16,7 +17,7 @@ Exclua o [canal](../resources/channel.md).
 
 > **Observação**: não há um problema conhecido com permissões de aplicativo e essa API. Para obter detalhes, consulte a [lista de problemas conhecidos do](/graph/known-issues#application-permissions).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

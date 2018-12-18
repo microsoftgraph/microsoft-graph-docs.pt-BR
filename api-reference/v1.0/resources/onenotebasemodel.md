@@ -1,12 +1,13 @@
 ---
 title: recurso de onenoteEntityBaseModel
 description: Este é o tipo de base para entidades do OneNote.
-ms.openlocfilehash: 68a864437cec59d9b5f0d3e69161b49bca80231c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 25e2da6732fd831c6bbec5ae86bddeae7b702aa5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310462"
 ---
 # <a name="onenoteentitybasemodel-resource"></a>recurso de onenoteEntityBaseModel
 

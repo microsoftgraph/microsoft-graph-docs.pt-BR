@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsManagementAppHealthState
 description: Atualize as propriedades de um objeto windowsManagementAppHealthState.
-ms.openlocfilehash: e333e974e4c6ec52da3044359db5464ce9fa47bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040672"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309083"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Atualizar windowsManagementAppHealthState
 

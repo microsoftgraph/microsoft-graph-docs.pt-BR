@@ -1,12 +1,13 @@
 ---
 title: Listar contactFolders
 description: Obtenha a coleção de pasta de contatos na pasta de contatos padrão do usuário conectado.
-ms.openlocfilehash: fa19a848fe206a73503aa27adb258a49cc53baf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b1f467fa74fa2962efbfc5e02c0de0a45c28ddde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003663"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27310525"
 ---
 # <a name="list-contactfolders"></a>Listar contactFolders
 

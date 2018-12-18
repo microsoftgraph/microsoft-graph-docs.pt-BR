@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windows10VpnProxyServer
 description: Servidor de Proxy VPN.
-ms.openlocfilehash: cae448924087cba4b039eab92c83c8bffc94f9fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e21b964ab1bd648cd042a1364ecf5f0942ded085
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036330"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309454"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>tipo de recurso de windows10VpnProxyServer
 
@@ -24,7 +25,7 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 |automaticConfigurationScriptUrl|String|Url de script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Endereço. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |porta|Int32|Porta. 0 a 65.535 Inherited de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md) de valores válido|
-|bypassProxyServerForLocalAddress|Booliano|Ignorar servidor proxy para endereços locais.|
+|bypassProxyServerForLocalAddress|Boolean|Ignorar servidor proxy para endereços locais.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

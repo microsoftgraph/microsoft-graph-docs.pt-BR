@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceConfigurationDeviceOverview
 description: Atualizar as propriedades de um objeto deviceConfigurationDeviceOverview.
-ms.openlocfilehash: 9c2d2ce687e871bb9b85c78aae9dd69b65e1f00b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a6ff0247fbc242aeb230e351e974baaa60f58e55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036802"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308943"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Atualizar deviceConfigurationDeviceOverview
 

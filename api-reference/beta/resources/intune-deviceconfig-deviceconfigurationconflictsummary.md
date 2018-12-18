@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceConfigurationConflictSummary
 description: Resumo de um conjunto de políticas de configuração de dispositivo de conflito.
-ms.openlocfilehash: b292dd40bfb0502aa55109072ee9e9f59a8eb45a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c0caefc497c18fe7a8504324e048cec0e53bd3c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308985"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>tipo de recurso de deviceConfigurationConflictSummary
 

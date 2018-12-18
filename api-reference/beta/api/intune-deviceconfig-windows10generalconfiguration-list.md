@@ -1,12 +1,13 @@
 ---
 title: Listar windows10GeneralConfigurations
 description: Listar propriedades e relações dos objetos windows10GeneralConfiguration.
-ms.openlocfilehash: 01e7aa2744574e8e3ca97c66746ea53e9a30888c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b2a0edbe880410f407670f6b91a8920bd6948b7c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033833"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27307500"
 ---
 # <a name="list-windows10generalconfigurations"></a>Listar windows10GeneralConfigurations
 

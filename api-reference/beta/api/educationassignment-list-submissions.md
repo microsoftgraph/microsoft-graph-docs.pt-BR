@@ -1,12 +1,13 @@
 ---
 title: Envios de lista
 description: Liste todos os envios associados a essa atribuição. Um professor pode obter todos os envios enquanto um estudante só pode obter envios que eles estão associados.
-ms.openlocfilehash: b4b351fb96e7524fef8c17bba0ad6aeacd2b14db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: ac7bd47b4cbc4549f38239c4a68504bd20b3a2e8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033992"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308425"
 ---
 # <a name="list-submissions"></a>Envios de lista
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033992"
 
 Liste todos os envios associados a essa atribuição. Um professor pode obter todos os envios enquanto um estudante só pode obter envios que eles estão associados.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

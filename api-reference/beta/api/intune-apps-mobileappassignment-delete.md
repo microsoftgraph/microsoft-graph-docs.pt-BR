@@ -1,12 +1,13 @@
 ---
 title: Excluir mobileAppAssignment
 description: Exclui mobileAppAssignment.
-ms.openlocfilehash: 3a0eb4f0172352b5227a830286ccc86986711a49
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 55f9f1b776414d9baf0b5a19fb43ddd18baab2e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040951"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308145"
 ---
 # <a name="delete-mobileappassignment"></a>Excluir mobileAppAssignment
 

@@ -1,12 +1,13 @@
 ---
 title: Lista windows10PkcsCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos windows10PkcsCertificateProfile.
-ms.openlocfilehash: e4d9cf9f584e361584b816041382a884c10635b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ca2cddc5459a61c18d0afbea38fcb61c0aa9cccb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308247"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Lista windows10PkcsCertificateProfiles
 

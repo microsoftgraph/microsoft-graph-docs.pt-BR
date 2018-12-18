@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceManagementTroubleshootingEvent
 description: Exclui deviceManagementTroubleshootingEvent.
-ms.openlocfilehash: a8bea05b6a3f755253b397fcb846119e851d2b4c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7195eecf4676ca8eae5b87b5123957ba22a71989
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27309958"
 ---
 # <a name="delete-devicemanagementtroubleshootingevent"></a>Excluir deviceManagementTroubleshootingEvent
 

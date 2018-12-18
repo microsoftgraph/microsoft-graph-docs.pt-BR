@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso person
 description: Uma agregação de informações sobre uma pessoa em email, contatos e redes sociais. Pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (por exemplo, email e Skype).
-ms.openlocfilehash: d9533c3550ec870c887b1e447fd0daf114bcfc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: eccd5da56806b6608f5610579c61a171713990b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033256"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27308551"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
