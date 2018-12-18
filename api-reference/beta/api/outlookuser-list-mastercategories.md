@@ -1,51 +1,52 @@
 ---
 title: Listar categorias do Outlook
 description: Obtém todas as categorias que foram definidas para o usuário.
-ms.openlocfilehash: 7eff66ea876c88e6a75953f4bd219e817a9a2e2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: a90eb368c3c6a03db6dbdf3d77518029abbfdaa9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318302"
 ---
-# <a name="list-outlook-categories"></a><span data-ttu-id="58cce-103">Listar categorias do Outlook</span><span class="sxs-lookup"><span data-stu-id="58cce-103">List Outlook categories</span></span>
+# <a name="list-outlook-categories"></a><span data-ttu-id="42165-103">Listar categorias do Outlook</span><span class="sxs-lookup"><span data-stu-id="42165-103">List Outlook categories</span></span>
 
-> <span data-ttu-id="58cce-104">**Importante**: APIs sob a versão /beta no Microsoft Graph estiver em Visualizar e estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="58cce-104">**Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="58cce-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="58cce-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="42165-104">**Importante**: APIs sob a versão /beta no Microsoft Graph estiver em Visualizar e estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="42165-104">**Important**: APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="42165-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="42165-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="58cce-106">Obtém todas as categorias que foram definidas para o usuário.</span><span class="sxs-lookup"><span data-stu-id="58cce-106">Get all the categories that have been defined for the user.</span></span>
+<span data-ttu-id="42165-106">Obtém todas as categorias que foram definidas para o usuário.</span><span class="sxs-lookup"><span data-stu-id="42165-106">Get all the categories that have been defined for the user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="58cce-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="58cce-107">Permissions</span></span>
-<span data-ttu-id="58cce-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="58cce-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="42165-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="42165-107">Permissions</span></span>
+<span data-ttu-id="42165-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42165-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="58cce-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="58cce-110">Permission type</span></span>      | <span data-ttu-id="58cce-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="58cce-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="42165-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="42165-110">Permission type</span></span>      | <span data-ttu-id="42165-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="42165-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="58cce-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="58cce-112">Delegated (work or school account)</span></span> | <span data-ttu-id="58cce-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="58cce-113">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="58cce-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="58cce-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="58cce-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="58cce-115">MailboxSettings.Read</span></span>    |
-|<span data-ttu-id="58cce-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="58cce-116">Application</span></span> | <span data-ttu-id="58cce-117">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="58cce-117">MailboxSettings.Read</span></span> |
+|<span data-ttu-id="42165-112">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="42165-112">Delegated (work or school account)</span></span> | <span data-ttu-id="42165-113">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="42165-113">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="42165-114">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="42165-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42165-115">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="42165-115">MailboxSettings.Read</span></span>    |
+|<span data-ttu-id="42165-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="42165-116">Application</span></span> | <span data-ttu-id="42165-117">MailboxSettings.Read</span><span class="sxs-lookup"><span data-stu-id="42165-117">MailboxSettings.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="58cce-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="58cce-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42165-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="42165-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/masterCategories
 GET /users/{id|userPrincipalName}/outlook/masterCategories
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="58cce-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="58cce-119">Optional query parameters</span></span>
-<span data-ttu-id="58cce-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="58cce-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="42165-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="42165-119">Optional query parameters</span></span>
+<span data-ttu-id="42165-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="42165-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="58cce-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="58cce-121">Request headers</span></span>
-| <span data-ttu-id="58cce-122">Nome</span><span class="sxs-lookup"><span data-stu-id="58cce-122">Name</span></span>      |<span data-ttu-id="58cce-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="58cce-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42165-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="42165-121">Request headers</span></span>
+| <span data-ttu-id="42165-122">Nome</span><span class="sxs-lookup"><span data-stu-id="42165-122">Name</span></span>      |<span data-ttu-id="42165-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="42165-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="58cce-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="58cce-124">Authorization</span></span>  | <span data-ttu-id="58cce-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="58cce-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="42165-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="42165-124">Authorization</span></span>  | <span data-ttu-id="42165-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="42165-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="58cce-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="58cce-127">Request body</span></span>
-<span data-ttu-id="58cce-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="58cce-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42165-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="42165-127">Request body</span></span>
+<span data-ttu-id="42165-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="42165-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="58cce-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="58cce-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="42165-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="42165-129">Response</span></span>
 
-<span data-ttu-id="58cce-130">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="58cce-130">If successful, this method returns a `200 OK` response code and collection of [outlookCategory](../resources/outlookcategory.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="58cce-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="58cce-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="58cce-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="58cce-132">Request</span></span>
-<span data-ttu-id="58cce-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="58cce-133">Here is an example of the request.</span></span>
+<span data-ttu-id="42165-130">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [outlookCategory](../resources/outlookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="42165-130">If successful, this method returns a `200 OK` response code and collection of [outlookCategory](../resources/outlookcategory.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="42165-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="42165-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="42165-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="42165-132">Request</span></span>
+<span data-ttu-id="42165-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="42165-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_mastercategories"
@@ -53,8 +54,8 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/masterCategories
 ```
-##### <a name="response"></a><span data-ttu-id="58cce-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="58cce-134">Response</span></span>
-<span data-ttu-id="58cce-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="58cce-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="42165-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="42165-134">Response</span></span>
+<span data-ttu-id="42165-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="42165-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
