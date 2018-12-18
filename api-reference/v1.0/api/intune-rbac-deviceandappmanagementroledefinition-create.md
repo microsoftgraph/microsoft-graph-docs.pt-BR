@@ -1,12 +1,13 @@
 ---
 title: Criar deviceAndAppManagementRoleDefinition
 description: Cria um novo objeto deviceAndAppManagementRoleDefinition.
-ms.openlocfilehash: 71ac4a42dcf0795ad9e1e26d20be5be09fbf0705
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ad338b53aa49d140e36754d36a92f1eda4a6000a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006801"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348514"
 ---
 # <a name="create-deviceandappmanagementroledefinition"></a>Criar deviceAndAppManagementRoleDefinition
 

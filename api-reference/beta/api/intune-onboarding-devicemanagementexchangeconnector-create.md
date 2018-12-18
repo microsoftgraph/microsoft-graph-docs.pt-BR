@@ -1,12 +1,13 @@
 ---
 title: Criar deviceManagementExchangeConnector
 description: Crie um novo objeto deviceManagementExchangeConnector.
-ms.openlocfilehash: e27f1cd9d8bfff3a93bf0252af11f452abee9e31
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04794c97edef8495f2132cf556680678a5b63edf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348192"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 

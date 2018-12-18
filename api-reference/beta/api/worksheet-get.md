@@ -1,12 +1,13 @@
 ---
 title: Obter planilha
 description: Recupere as propriedades e os relacionamentos do objeto de planilha.
-ms.openlocfilehash: 84e376116f34ace924088c4792101be8de5bb6bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: dbf6cd6f00c746c1c0f95f4aee07986d6eb87a7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345805"
 ---
 # <a name="get-worksheet"></a>Obter planilha
 

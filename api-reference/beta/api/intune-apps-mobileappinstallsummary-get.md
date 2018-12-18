@@ -1,12 +1,13 @@
 ---
 title: Obter mobileAppInstallSummary
 description: Leia as propriedades e os relacionamentos do objeto mobileAppInstallSummary.
-ms.openlocfilehash: 132a59021650dcd605c07c47ce389d478ee0d348
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f44cb4ae473ad8306f2fa3a4e61f93da900b380
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040598"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345798"
 ---
 # <a name="get-mobileappinstallsummary"></a>Obter mobileAppInstallSummary
 

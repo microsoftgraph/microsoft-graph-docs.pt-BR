@@ -1,12 +1,13 @@
 ---
 title: Criar tabela
 description: Use essa API para criar uma nova tabela.
-ms.openlocfilehash: a56091ca2ed5e3bad69b3d618fe760db5b350c9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 54118ab3904918200617dbb55c983975817519f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037743"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348290"
 ---
 # <a name="create-table"></a>Criar tabela
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. 
 
-| Parâmetro       | Tipo|Descrição|
+| Parâmetro       | Type|Descrição|
 |:---------------|:----------|:----------|
 | Endereço  | string| Intervalo de endereço. Se você estiver retirando essa API de `worksheets/{id|name}/tables/add` path, there is no need to support the sheet name prefix in the address. However, if you are calling this off of `workbook/tables/add` path, then supply the sheet name on which the table needs to be created (example: `sheet1!A1:D4`)|
 | hasHeaders  | booliano|O valor booliano que indica se o intervalo tem rótulos de coluna. Se a origem não contiver cabeçalhos (ou seja, quando essa propriedade estiver definida como falso), o Excel gerará automaticamente um cabeçalho, deslocando os dados uma linha para baixo.|

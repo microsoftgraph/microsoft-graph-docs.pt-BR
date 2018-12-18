@@ -1,12 +1,13 @@
 ---
 title: Get deviceInstallState
 description: Ler propriedades e relações do objeto deviceInstallState.
-ms.openlocfilehash: b2e111b477a4fb7122dd0addf18c167890b2639a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a01272118b837460c664e45baeb00948f29a2ad5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039041"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348668"
 ---
 # <a name="get-deviceinstallstate"></a>Get deviceInstallState
 

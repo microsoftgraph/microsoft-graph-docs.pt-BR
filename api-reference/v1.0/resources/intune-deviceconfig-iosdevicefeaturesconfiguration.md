@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosDeviceFeaturesConfiguration
 description: Perfil de configuração de recursos do dispositivo iOS.
-ms.openlocfilehash: c64bf878ea9c97dbee4d42329c304469d9c111fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a53caaaaa7f24db5dfdb672200a1780b4d1c1467
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348836"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso iosDeviceFeaturesConfiguration
 

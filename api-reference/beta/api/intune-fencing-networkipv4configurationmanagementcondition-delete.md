@@ -1,12 +1,13 @@
 ---
 title: Excluir networkIPv4ConfigurationManagementCondition
 description: Exclui um networkIPv4ConfigurationManagementCondition.
-ms.openlocfilehash: bcd1243de51c73a204e50104e912e3cc37867b86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 513f4fcfd05419ed66dde8d0ad1e6ae560dfef96
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037923"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345266"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>Excluir networkIPv4ConfigurationManagementCondition
 

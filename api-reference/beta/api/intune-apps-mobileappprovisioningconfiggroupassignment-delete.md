@@ -1,12 +1,13 @@
 ---
 title: Excluir mobileAppProvisioningConfigGroupAssignment
 description: Exclui um mobileAppProvisioningConfigGroupAssignment.
-ms.openlocfilehash: a54e79c0272219dd2ccd7823f20a558225af7b38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: afe133c5f2500878a3fa632fe13b1f065e84d8ea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347702"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Excluir mobileAppProvisioningConfigGroupAssignment
 

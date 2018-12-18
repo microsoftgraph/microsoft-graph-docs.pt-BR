@@ -1,12 +1,13 @@
 ---
 title: Obter windowsAutopilotDeploymentProfileAssignment
 description: Leia as propriedades e os relacionamentos do objeto windowsAutopilotDeploymentProfileAssignment.
-ms.openlocfilehash: 7229ea44798b7efd21cd2ef7a7d01e3771173a15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eaeb8668c0ce4cc9fbf7c8353a999afccb6a3f14
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040292"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345336"
 ---
 # <a name="get-windowsautopilotdeploymentprofileassignment"></a>Obter windowsAutopilotDeploymentProfileAssignment
 

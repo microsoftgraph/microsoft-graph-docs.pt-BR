@@ -1,12 +1,13 @@
 ---
 title: Atualizar macOSGeneralDeviceConfiguration
 description: Atualiza as propriedades de um objeto macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: aad4f0ed0c0b4d30842e2e643526c0d42ff4f1a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84ea867f10a99f985e7789cab2071183b34751c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348486"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Atualizar macOSGeneralDeviceConfiguration
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -59,7 +60,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em CompliantAppsList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |emailInDomainSuffixes|String collection|Um endereço de email sem um sufixo que corresponde a qualquer uma dessas strings será considerado fora do domínio.|
-|passwordBlockSimple|Booliano|Bloquear senhas simples.|
+|passwordBlockSimple|Boolean|Bloquear senhas simples.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
 |passwordMinimumCharacterSetCount|Int32|Número de conjuntos de caracteres que uma senha deve conter. Valores válidos de 0 a 4|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
@@ -67,29 +68,29 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [macOSGeneralDev
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade necessários antes que a tela atinja o tempo limite.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Booliano|Se uma senha deve ou não ser exigida.|
-|keychainBlockCloudSync|Booliano|Indica se é ou não iCloud sincronização de conjunto de chaves bloqueado (macOS 10.12 e posterior).|
-|airPrintBlocked|Booliano|Indica se é ou não AirPrint bloqueados (macOS 10.12 e posterior).|
-|airPrintForceTrustedTLS|Booliano|Indica se os certificados confiáveis são necessários para a comunicação de impressão de TLS (macOS 10.13 e posterior).|
-|airPrintBlockiBeaconDiscovery|Booliano|Indica se ou não iBeacon descoberta de impressoras AirPrint está bloqueada. Isso impede que os avisos de AirPrint Bluetooth artificiais contra phishing para tráfego de rede (macOS 10.3 e posterior).|
-|safariBlockAutofill|Booliano|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
-|cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
-|iTunesBlockMusicService|Booliano|Indica se ou não bloquear o serviço de música e reverter o aplicativo de música para modo clássico.|
-|spotlightBlockInternetResults|Booliano|Indica se deve ou não bloquear destaque retornando todos os resultados de uma pesquisa na Internet.|
-|keyboardBlockDictation|Booliano|Indica se deve ou não bloquear o usuário usando a entrada de ditado.|
-|definitionLookupBlocked|Booliano|Indica se o bloqueio da pesquisa de definição ou não.|
-|appleWatchBlockAutoUnlock|Booliano|Indica se ou aos usuários de bloco de desbloquear sua Mac com Apple Watch.|
-|iTunesBlockFileSharing|Booliano|Indica se ou não para bloquear arquivos do que está sendo transferido usando iTunes.|
-|iCloudBlockDocumentSync|Booliano|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
-|iCloudBlockMail|Booliano|Indica se deve ou não bloquear iCloud de email está sincronizando.|
-|iCloudBlockAddressBook|Booliano|Indica se deve ou não bloquear iCloud da sincronização de contatos.|
-|iCloudBlockCalendar|Booliano|Indica se deve ou não bloquear iCloud seja sincronizado calendários.|
-|iCloudBlockReminders|Booliano|Indica se deve ou não bloquear iCloud lembretes de sincronização.|
-|iCloudBlockBookmarks|Booliano|Indica se deve ou não bloquear iCloud indicadores de sincronização.|
-|iCloudBlockNotes|Booliano|Indica se deve ou não bloquear iCloud seja sincronizado anotações.|
-|airDropBlocked|Booliano|Indica se deve ou não permitir que AirDrop.|
-|passwordBlockModification|Booliano|Indica se deve ou não permitir a modificação de uma senha.|
-|passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
+|passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
+|keychainBlockCloudSync|Boolean|Indica se é ou não iCloud sincronização de conjunto de chaves bloqueado (macOS 10.12 e posterior).|
+|airPrintBlocked|Boolean|Indica se é ou não AirPrint bloqueados (macOS 10.12 e posterior).|
+|airPrintForceTrustedTLS|Boolean|Indica se os certificados confiáveis são necessários para a comunicação de impressão de TLS (macOS 10.13 e posterior).|
+|airPrintBlockiBeaconDiscovery|Boolean|Indica se ou não iBeacon descoberta de impressoras AirPrint está bloqueada. Isso impede que os avisos de AirPrint Bluetooth artificiais contra phishing para tráfego de rede (macOS 10.3 e posterior).|
+|safariBlockAutofill|Boolean|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
+|cameraBlocked|Boolean|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
+|iTunesBlockMusicService|Boolean|Indica se ou não bloquear o serviço de música e reverter o aplicativo de música para modo clássico.|
+|spotlightBlockInternetResults|Boolean|Indica se deve ou não bloquear destaque retornando todos os resultados de uma pesquisa na Internet.|
+|keyboardBlockDictation|Boolean|Indica se deve ou não bloquear o usuário usando a entrada de ditado.|
+|definitionLookupBlocked|Boolean|Indica se o bloqueio da pesquisa de definição ou não.|
+|appleWatchBlockAutoUnlock|Boolean|Indica se ou aos usuários de bloco de desbloquear sua Mac com Apple Watch.|
+|iTunesBlockFileSharing|Boolean|Indica se ou não para bloquear arquivos do que está sendo transferido usando iTunes.|
+|iCloudBlockDocumentSync|Boolean|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
+|iCloudBlockMail|Boolean|Indica se deve ou não bloquear iCloud de email está sincronizando.|
+|iCloudBlockAddressBook|Boolean|Indica se deve ou não bloquear iCloud da sincronização de contatos.|
+|iCloudBlockCalendar|Boolean|Indica se deve ou não bloquear iCloud seja sincronizado calendários.|
+|iCloudBlockReminders|Boolean|Indica se deve ou não bloquear iCloud lembretes de sincronização.|
+|iCloudBlockBookmarks|Boolean|Indica se deve ou não bloquear iCloud indicadores de sincronização.|
+|iCloudBlockNotes|Boolean|Indica se deve ou não bloquear iCloud seja sincronizado anotações.|
+|airDropBlocked|Boolean|Indica se deve ou não permitir que AirDrop.|
+|passwordBlockModification|Boolean|Indica se deve ou não permitir a modificação de uma senha.|
+|passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
 
 
 

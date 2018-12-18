@@ -1,12 +1,13 @@
 ---
 title: tipo de enum teamsAsyncOperationType
 description: Tipos de teamsAsyncOperation. Os membros serão adicionados aqui assíncrono conforme mais operações são suportadas.
-ms.openlocfilehash: 1911041f50a79874bd1ae2ab41f26b42e85b4250
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 4ae7f070ffcce377fb4112ed5a54b4ad22d7973f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346848"
 ---
 # <a name="teamsasyncoperationtype-enum-type"></a>tipo de enum teamsAsyncOperationType
 

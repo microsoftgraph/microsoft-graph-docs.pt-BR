@@ -1,12 +1,13 @@
 ---
 title: Acessar remoteAssistancePartner
 description: Leia as propriedades e as relações do objeto remoteAssistancePartner.
-ms.openlocfilehash: d5bd42290f787ce4a4e6168498d25fc84407c279
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35b9a02919d656aa0b56617ee37d9d8c0675ee09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035717"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347184"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 

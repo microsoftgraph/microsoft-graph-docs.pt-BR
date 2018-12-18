@@ -1,12 +1,13 @@
 ---
 title: Listar groupLifecyclePolicies
 description: Listar todos os objetos groupLifecyclePolicies.
-ms.openlocfilehash: 1294120772aecf6f14c0bf71e463e18825285c19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dade0f0a11670c5ecb5eeb6626d479b4d4c4be63
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005390"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349228"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Listar groupLifecyclePolicies
 

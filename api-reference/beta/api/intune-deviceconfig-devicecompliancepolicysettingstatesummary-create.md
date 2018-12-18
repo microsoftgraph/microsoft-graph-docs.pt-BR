@@ -1,12 +1,13 @@
 ---
 title: Criar deviceCompliancePolicySettingStateSummary
 description: Crie um novo objeto deviceCompliancePolicySettingStateSummary.
-ms.openlocfilehash: f7fd5a8d65655b4015d0fcf6dee6377e008b9c99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9184e10a507b0f701b3ce9bb774725c05e82a929
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033920"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345553"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Criar deviceCompliancePolicySettingStateSummary
 

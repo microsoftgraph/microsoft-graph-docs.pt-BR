@@ -1,12 +1,13 @@
 ---
 title: Criar notificationMessageTemplate
 description: Criar um novo objeto notificationMessageTemplate.
-ms.openlocfilehash: 013acd831979fdbb22eb67be66552b2d21d590b6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 396d8cbcb312e4bbacc94770e3eceb4a4dc88067
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347625"
 ---
 # <a name="create-notificationmessagetemplate"></a>Criar notificationMessageTemplate
 

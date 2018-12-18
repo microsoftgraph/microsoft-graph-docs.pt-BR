@@ -1,12 +1,13 @@
 ---
 title: Use o Planejador de API REST
 description: Você pode usar a API do planejador no Microsoft Graph criar tarefas e atribuí-las aos usuários em um grupo no Office 365.
-ms.openlocfilehash: b6161218e5d65c96972a8fd5dd929b124d84c949
-ms.sourcegitcommit: 02ead22efd4f10cd50f89c9f5aa3b6dfda96aeec
+author: TarkanSevilmis
+ms.openlocfilehash: a57bdce9c61046d05bc969ff69d31971a85cf537
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123963"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346736"
 ---
 # <a name="use-the-planner-rest-api"></a>Use o Planejador de API REST
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto de vppToken.
-ms.openlocfilehash: 15151f7d5dadfd7cbbdefa088c72f2c70c0bba65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 56829adcba15ca1c46e5548212e71e619e339a1a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006594"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348997"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 

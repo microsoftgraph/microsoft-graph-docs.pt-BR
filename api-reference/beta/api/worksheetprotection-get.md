@@ -1,12 +1,13 @@
 ---
 title: Obter WorksheetProtection
 description: Leia as propriedades e os relacionamentos do objeto worksheetprotection.
-ms.openlocfilehash: 99e36a7aac9f6dbe81d9297f86c809ff9c63cf4a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d90ac4114995ff62cf703dfe8369a4bbc4b88801
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347093"
 ---
 # <a name="get-worksheetprotection"></a>Obter WorksheetProtection
 

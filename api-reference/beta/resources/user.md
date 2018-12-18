@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
-ms.openlocfilehash: 496e349162ddffe918c2d293cc9032cff6fd14c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c9d776091bba18a9459505b7d35d7ff15479cffe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040060"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348199"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -49,7 +50,7 @@ Esse recurso permite:
 |[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager.|
 |[Listar memberOf](../api/user-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os grupos, funções de diretório e unidades administrativas que o usuário é um membro direto da propriedade membro navegação.|
 |[Membro de lista transitivo](../api/user-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Liste os grupos, funções de diretório e unidades administrativas que o usuário é membro do. Essa operação é transitiva e inclui os grupos que o usuário é membro de aninhados. |
-|[Lista joinedTeams](../api/user-list-joinedteams.md) |coleção [Groups](group.md)| Obtenha Teams Microsoft que o usuário é um membro direto da propriedade joinedTeams navegação.|
+|[Listar joinedTeams](../api/user-list-joinedteams.md) |coleção [Groups](group.md)| Obtenha Teams Microsoft que o usuário é um membro direto da propriedade joinedTeams navegação.|
 |[Listar ownedDevices](../api/user-list-owneddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.|
 |[Listar ownedObjects](../api/user-list-ownedobjects.md) |Coleção [directoryObject](directoryobject.md)| Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects.|
 |[Listar plannerTasks](../api/planneruser-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obtenha plannerTasks atribuída ao usuário.|
@@ -81,7 +82,7 @@ Esse recurso permite:
 | Propriedade       | Tipo    | Descrição |
 |:---------------|:--------|:------------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
 |ageGroup|String|Define o grupo de idade do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
@@ -133,7 +134,7 @@ Esse recurso permite:
 |refreshTokensValidFromDateTime|DateTimeOffset| Qualquer atualização tokens ou tokens de sessões (cookies de sessão) emitidos antes desta vez são inválidos e aplicativos receberá um erro ao usar uma atualização inválida ou um token de sessões para adquirir um acesso delegado token (para acesso a APIs, como o Microsoft Graph).  Se isso acontecer, o aplicativo será necessário adquirir um novo token refresh fazendo uma solicitação ao ponto de extremidade autorizar. Somente leitura. Use [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) para redefinir.|
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que ele frequentou.|
-|showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter este usuário, caso contrário **false**. Se não definido, isso será tratado como **true**. Para usuários convidados por meio do Gerenciador de convite, definirá esta propriedade como **false**.|
+|showInAddressList|Boolean|**true** se a lista de endereços global do Outlook deve conter este usuário, caso contrário **false**. Se não definido, isso será tratado como **true**. Para usuários convidados por meio do Gerenciador de convite, definirá esta propriedade como **false**.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
 |state|String|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|

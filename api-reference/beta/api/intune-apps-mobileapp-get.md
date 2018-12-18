@@ -1,12 +1,13 @@
 ---
 title: Acessar mobileApp
 description: Leia as propriedades e as relações do objeto mobileApp.
-ms.openlocfilehash: 7fdae75d423c99565cceda6afce3797e959bb199
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 07829b1e73ee00e2caa2f128b5e21241ae308a9e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040595"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346064"
 ---
 # <a name="get-mobileapp"></a>Acessar mobileApp
 

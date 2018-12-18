@@ -1,12 +1,13 @@
 ---
 title: Obter dispositivo
 description: Obtém as propriedades e os relacionamentos de um objeto device.
-ms.openlocfilehash: 69c962d6b248738fb03bb3ac39cc37f667ea88e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 632094db64cce86a965751d97b0ae9c92d439d5c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033595"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348262"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -16,7 +17,7 @@ Obtém as propriedades e os relacionamentos de um objeto device.
 
 Desde que o recurso de **dispositivo** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância de **dispositivo** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

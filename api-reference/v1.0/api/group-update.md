@@ -1,12 +1,13 @@
 ---
 title: Atualizar grupo
 description: Atualizar as propriedades de um objeto group.
-ms.openlocfilehash: 60adb8b5d5fa075cab0f8255b619cb1f4eeafda4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 11144b477d6a19ae876eed1f561ade4a139564a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006456"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347401"
 ---
 # <a name="update-group"></a>Atualizar grupo
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsAutopilotDeploymentProfileAssignment
 description: Atualize as propriedades de um objeto windowsAutopilotDeploymentProfileAssignment.
-ms.openlocfilehash: 769c1f6e51a1a4702c5a73bb949f56879dbbf57d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 74dda8d18468bf24030964a822b3d27a2a9d4451
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038560"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346477"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>Atualizar windowsAutopilotDeploymentProfileAssignment
 

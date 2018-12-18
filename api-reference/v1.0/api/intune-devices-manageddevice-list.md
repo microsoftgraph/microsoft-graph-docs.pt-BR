@@ -1,12 +1,13 @@
 ---
 title: Listar managedDevices
 description: Listar propriedades e relações dos objetos managedDevice.
-ms.openlocfilehash: dcbc52ab3cf00181cd5345a9d6fe1f81f488106f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c0d44aa3589af1b0a2a82dfe9c1b9300361a34b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003803"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349277"
 ---
 # <a name="list-manageddevices"></a>Listar managedDevices
 

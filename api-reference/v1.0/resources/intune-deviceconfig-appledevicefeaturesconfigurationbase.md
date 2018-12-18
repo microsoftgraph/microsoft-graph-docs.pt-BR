@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso appleDeviceFeaturesConfigurationBase
 description: Perfil de configuração de recursos do dispositivo Apple.
-ms.openlocfilehash: cdc2fa09eb535e6fd30fc621f1bebeecf34c840e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c243d67c44e9e9c73999e023cd7ca7d2c9938a1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347219"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>Tipo de recurso appleDeviceFeaturesConfigurationBase
 

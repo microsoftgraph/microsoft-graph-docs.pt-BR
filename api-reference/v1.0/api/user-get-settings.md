@@ -1,19 +1,20 @@
 ---
 title: Obter configurações
 description: Leia o objeto de configurações de usuário e da organização.
-ms.openlocfilehash: c96054ba9fa32d7de9461e873f62db89cfe8a7e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 817cfff56b028e242f0cfb65b966ac6b3173059e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007083"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346834"
 ---
 # <a name="get-settings"></a>Obter configurações
 
 Leia o objeto de [configurações](../resources/user-settings.md) de usuário e da organização.
 Para saber como atualizar as propriedades do objeto de [configurações](../resources/user-settings.md) , consulte [Atualizar configurações de usuário](user-update-settings.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

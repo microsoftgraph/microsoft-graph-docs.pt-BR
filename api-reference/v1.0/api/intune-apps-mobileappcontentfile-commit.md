@@ -1,12 +1,13 @@
 ---
 title: ação de confirmação
 description: Confirma um arquivo de um determinado aplicativo.
-ms.openlocfilehash: 71096b2dc90ecd214bf6a1fb466e4f926b8c3b1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 728cbaeb431fd6f3f9b27b64d118a603bbf9347d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004190"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345434"
 ---
 # <a name="commit-action"></a>ação de confirmação
 

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartTitleFormat
 description: Fornece acesso à formatação de arte do Office para o título do gráfico.
-ms.openlocfilehash: af10c6722f8a46d08364df201e2cbe55b697f7a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 2f35df79f22ae0bd2fe771414bcbe838f5672ad1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347611"
 ---
 # <a name="charttitleformat-resource-type"></a>Tipo de recurso ChartTitleFormat
 

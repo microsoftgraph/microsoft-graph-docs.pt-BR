@@ -1,12 +1,13 @@
 ---
 title: Visão geral da API do Microsoft Bookings (versão prévia)
 description: O Microsoft Bookings fornece aplicativos móveis e online que tornam simples e eficiente o agendamento de compromissos para pequenas empresas e seus clientes. Qualquer pequena empresa que forneça serviços com base em agendamentos, como oficinas mecânicas, salões de cabeleireiros e empresas de advocacia, podem beneficiar com o gerenciamento de seus agendamentos para liberar tempo para tarefas mais importantes para expandir seus negócios. O Microsoft Bookings está disponível para empresas que possuem uma assinatura do Office 365 Business Premium.
-ms.openlocfilehash: 334b26b5f02e7060b0fddfe8264e138e9d3a2bdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 7e76c72950ea889b0c6029568ef287ee1ae5eedb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091674"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339813"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Visão geral da API do Microsoft Bookings (versão prévia)
 

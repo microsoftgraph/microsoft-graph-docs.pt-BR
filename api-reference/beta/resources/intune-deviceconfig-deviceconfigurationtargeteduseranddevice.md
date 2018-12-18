@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceConfigurationTargetedUserAndDevice
 description: Resumo de um conjunto de políticas de configuração de dispositivo de conflito.
-ms.openlocfilehash: 6f79a8fe24e06d2bdafa81c30cabf8158b4e5773
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345238"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso de deviceConfigurationTargetedUserAndDevice
 

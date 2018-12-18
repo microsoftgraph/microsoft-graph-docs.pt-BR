@@ -1,12 +1,13 @@
 ---
 title: Lista activeDirectoryWindowsAutopilotDeploymentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos activeDirectoryWindowsAutopilotDeploymentProfile.
-ms.openlocfilehash: 052c2ae0eb35076f2dd6bb19024015bd9ccc2a5e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3175a0bf9ec26d3ecb7cc1bd92eb356dd2c5f00c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035322"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348377"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>Lista activeDirectoryWindowsAutopilotDeploymentProfiles
 

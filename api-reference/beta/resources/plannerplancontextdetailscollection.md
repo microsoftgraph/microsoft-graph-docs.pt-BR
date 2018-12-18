@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de plannerPlanContextDetailsCollection
 description: " o valor é o objeto plannerPlanContextDetails."
-ms.openlocfilehash: 843be37ae0abc73de19e72c655b18834b7f5c03e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: 725239a83f1c059aeef39f68b0d4d58ce8c91013
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038572"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346764"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>tipo de recurso de plannerPlanContextDetailsCollection
 

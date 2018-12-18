@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso locateDeviceActionResult
 description: Resultado da ação de localização do dispositivo
-ms.openlocfilehash: de7a59826478f8e11cf44635dcc4e437b60d7e83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 82f8b5ba1bd1f1ce1584af50a4a2b3037e588adc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040921"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345448"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Tipo de recurso locateDeviceActionResult
 

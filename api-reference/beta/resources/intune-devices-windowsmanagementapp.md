@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsManagementApp
 description: Entidade de aplicativo de gerenciamento do Windows.
-ms.openlocfilehash: b1c5c673e755f87328574113c4a0b0088c033d0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 641538644dc313234e27b0f518a26d8a38c612b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039895"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346421"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>tipo de recurso de windowsManagementApp
 

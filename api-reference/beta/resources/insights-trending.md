@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de tendências
 description: Relacionamento de rich conectando a um usuário a documentos que são tendências em torno do usuário (são relevante para o usuário). Arquivos de OneDrive, os arquivos armazenados em sites de equipe do SharePoint podem tendências em torno do usuário e.
-ms.openlocfilehash: 7d240c4358047ca9ba3d6b8340fbfb7d893a6a1d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: ae3c3a876dba6c22a629cce5db8e5b4baa5fb5bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037159"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347996"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendências
 
@@ -33,7 +34,7 @@ Relacionamento de rich conectando a um usuário a documentos que são tendência
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entidade        | Usado para navegar até o documento tendência. |
+| recurso      | Entity        | Usado para navegar até o documento tendência. |
 
 ## <a name="json-representation"></a>Representação JSON
 

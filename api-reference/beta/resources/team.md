@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de equipe
 description: 'Uma equipe Teams da Microsoft é uma coleção de canais. '
-ms.openlocfilehash: 610aca1a95c877bd6246a501a8eea64ee761e58d
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: 0ed654bf4c8d627dd9466f9263b121f85800b853
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209695"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345476"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -43,12 +44,12 @@ Para obter mais informações sobre como trabalhar com grupos e membros de equip
 |:---------------|:--------|:----------|
 |displayName|string| O nome da equipe. |
 |description|string| Uma descrição opcional para a equipe. |
-|classificação|cadeia de caracteres| Um rótulo opcional. Normalmente, descreve a sensibilidade de dados ou de negócios da equipe. Deve corresponder a um conjunto pré-configurado no diretório de locatário. |
+|classificação|string| Um rótulo opcional. Normalmente, descreve a sensibilidade de dados ou de negócios da equipe. Deve corresponder a um conjunto pré-configurado no diretório de locatário. |
 |especialização|[teamSpecialization](teamspecialization.md)| Opcional. Indica se a equipe destina-se de um caso de uso específico.  Especialização cada equipe tem acesso aos comportamentos exclusivos e experiências destinadas ao seu caso de uso. |
 |visibilidade|[teamVisibilityType](teamvisibilitytype.md)| A visibilidade de um o grupo e da equipe. Por padrão, público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações para configurar o uso de Giphy, memes e adesivos na equipe de.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações para configurar se os convidados podem criar, atualizar ou excluir canais na equipe de.|
-|isArchived|Booliano|Se essa equipe está em modo somente leitura. |
+|isArchived|Boolean|Se essa equipe está em modo somente leitura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem realizar determinadas ações, por exemplo, criam canais e adicionar bots, na equipe de.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para configurar mensagens e menções na equipe de.|
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que irão para a equipe no cliente do Microsoft Teams. Esta é a URL que você obtém quando você uma equipe no cliente do Microsoft Teams do mouse em e selecione o **link para a equipe de obter**. Essa URL deve ser tratado como um blob opaco e não analisado. |

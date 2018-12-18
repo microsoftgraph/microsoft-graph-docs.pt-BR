@@ -1,12 +1,13 @@
 ---
 title: Excluir localizedNotificationMessage
 description: Exclui localizedNotificationMessage.
-ms.openlocfilehash: 270decfe44fb9e4709d55a4353792905128a9f43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c77aa563734ca9c57a64b2316de87928f571eee7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346099"
 ---
 # <a name="delete-localizednotificationmessage"></a>Excluir localizedNotificationMessage
 

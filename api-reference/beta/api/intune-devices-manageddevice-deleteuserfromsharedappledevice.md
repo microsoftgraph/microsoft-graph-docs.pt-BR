@@ -1,12 +1,13 @@
 ---
 title: Ação deleteUserFromSharedAppleDevice
 description: Excluir o usuário do dispositivo compartilhado da Apple
-ms.openlocfilehash: ad776fb984aeabad7830f47079719200ab16220b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 68b3e9b700e70c9c5d16c97d20edf6471f7d1fbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035730"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347982"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 

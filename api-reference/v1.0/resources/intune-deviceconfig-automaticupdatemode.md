@@ -1,12 +1,13 @@
 ---
 title: tipo de enum automaticUpdateMode
 description: Valores possíveis para o modo de atualização automática.
-ms.openlocfilehash: c98927e1c1f66e3bf10fa07496aa54ac91bad20b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 01e71e51a47a06aff12dd82e132d7eb468f26229
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003883"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346988"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enum automaticUpdateMode
 

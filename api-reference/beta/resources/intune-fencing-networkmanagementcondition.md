@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de networkManagementCondition
 description: Contém as informações para definir uma condição de gerenciamento de rede.
-ms.openlocfilehash: 0a514d079b7b5737c4ee4514920a203d8a4b3ae1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d906520d30b78b0acdb1f33d7b4d7046d84c53e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036772"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347590"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>tipo de recurso de networkManagementCondition
 

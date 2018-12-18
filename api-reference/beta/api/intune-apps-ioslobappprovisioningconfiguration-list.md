@@ -1,12 +1,13 @@
 ---
 title: Lista iosLobAppProvisioningConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosLobAppProvisioningConfiguration.
-ms.openlocfilehash: 5b103631a4824d5a9b18bbfc82bb582e9778c835
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f3535b412cb0eaac732b2237cc96adec88d19a35
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040978"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348472"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Lista iosLobAppProvisioningConfigurations
 

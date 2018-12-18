@@ -1,12 +1,13 @@
 ---
 title: Criar targetedManagedAppConfiguration
 description: Cria um novo objeto targetedManagedAppConfiguration.
-ms.openlocfilehash: 0bf32ede52b1fc09ff8729248df75de0ca14a94d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 36183c117ecf3e8d6c48dbd3e92e02a16535dbc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004250"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27349032"
 ---
 # <a name="create-targetedmanagedappconfiguration"></a>Criar targetedManagedAppConfiguration
 
@@ -52,7 +53,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar targetedManagedA
 |version|String|Versão da entidade. Herdado de [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |customSettings|Coleção [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres a serem enviados aos aplicativos para usuários para os quais a configuração tem escopo definido, não alterados por esse serviço Herdado de [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|
 |deployedAppCount|Int32|Contagem de aplicativos em que a política atual é implantada.|
-|isAssigned|Booliano|Indica se a política foi implantada a grupos de inclusão ou não.|
+|isAssigned|Boolean|Indica se a política foi implantada a grupos de inclusão ou não.|
 
 
 

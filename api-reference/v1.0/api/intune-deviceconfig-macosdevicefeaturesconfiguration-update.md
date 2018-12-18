@@ -1,12 +1,13 @@
 ---
 title: Atualizar macOSDeviceFeaturesConfiguration
 description: Atualizar as propriedades de um objeto macOSDeviceFeaturesConfiguration.
-ms.openlocfilehash: 35d58ce81fe5299a5845dc62b7521406865d9a37
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aecefa3e348613fa2aa0f9974f2aafbce56c8051
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003979"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348451"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 

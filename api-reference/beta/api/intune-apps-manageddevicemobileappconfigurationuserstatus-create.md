@@ -1,12 +1,13 @@
 ---
 title: Criar managedDeviceMobileAppConfigurationUserStatus
 description: Criar um novo objeto managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 326078bd431c3ae7846105300b8ea19a53aab2fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9fdd6a55f0a82de852e44e7ffdc0720830659c3b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038395"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345770"
 ---
 # <a name="create-manageddevicemobileappconfigurationuserstatus"></a>Criar managedDeviceMobileAppConfigurationUserStatus
 

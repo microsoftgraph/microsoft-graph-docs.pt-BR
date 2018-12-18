@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceEnrollmentType
 description: Maneiras possíveis de adição de um dispositivo móvel gerenciamento.
-ms.openlocfilehash: adee8eec9908953ab82268e19cf95edfb67ecc39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4a7eaa63a59efe756fc2cb7216ddbe7384e4858c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346981"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enum deviceEnrollmentType
 

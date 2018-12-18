@@ -1,12 +1,13 @@
 ---
 title: Atualizar userPFXCertificate
 description: Atualize as propriedades de um objeto userPFXCertificate.
-ms.openlocfilehash: 9fde1e8ff073df7acf76119ace0848616424951a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 48f60d9a11942fee657eebb5c8bbf33e50d24fe9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032925"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347604"
 ---
 # <a name="update-userpfxcertificate"></a>Atualizar userPFXCertificate
 
@@ -55,7 +56,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |providerName|String|Provedor de criptografia usado para criptografar essa blob.|
 |nome chave|String|Nome da chave (dentro do provedor) usado para criptografar o blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema usado pelo provedor durante a criptografia/descriptografia de preenchimento. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|encryptedPfxBlob|Binário|Blob PFX criptografado.|
+|encryptedPfxBlob|Binária|Blob PFX criptografado.|
 |encryptedPfxPassword|String|Senha PFX criptografada.|
 |createdDateTime|DateTimeOffset|Data/hora quando esse certificado PFX foi importado.|
 |lastModifiedDateTime|DateTimeOffset|Data/hora da última modificação desse certificado PFX.|

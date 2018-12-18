@@ -1,12 +1,13 @@
 ---
 title: Listar windowsInformationProtections
 description: Listar propriedades e relações dos objetos windowsInformationProtection.
-ms.openlocfilehash: 94c26f1128374a571d1d719659845246213e619f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34491a305124cf4d9f31ed6dcb1529f2c7b88e5b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039483"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348172"
 ---
 # <a name="list-windowsinformationprotections"></a>Listar windowsInformationProtections
 

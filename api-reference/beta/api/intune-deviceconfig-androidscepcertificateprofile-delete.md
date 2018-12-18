@@ -1,12 +1,13 @@
 ---
 title: Excluir androidScepCertificateProfile
 description: Exclui um androidScepCertificateProfile.
-ms.openlocfilehash: 8291fa9d0488068071eafc62e08fbf320b753b98
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bb97f2a4b5e37c0fcf599e8af1e3eb583e82e169
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037275"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347863"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>Excluir androidScepCertificateProfile
 

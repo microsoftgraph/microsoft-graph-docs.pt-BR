@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de importedWindowsAutopilotDeviceIdentityUpload
 description: Importe os dispositivos de piloto automático do windows usando o carregamento.
-ms.openlocfilehash: 6c22fed9fdd0a4caf103021e193b56f30aa6c094
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7009454d859f3151d6bd2635c4cc146692602644
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005100"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348885"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>tipo de recurso de importedWindowsAutopilotDeviceIdentityUpload
 

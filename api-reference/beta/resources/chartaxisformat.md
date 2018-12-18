@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ChartAxisFormat
 description: Abrange as propriedades de formatação do eixo do gráfico.
-ms.openlocfilehash: 847fdd8f8cb273e9f98f32d7c2501f00d0973537
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 8961ae7381646e40aedafe2cbd3bac3d2650d7a8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040281"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348255"
 ---
 # <a name="chartaxisformat-resource-type"></a>Tipo de recurso ChartAxisFormat
 

@@ -1,12 +1,13 @@
 ---
 title: Get managedAppRegistration
 description: Ler propriedades e relações do objeto managedAppRegistration.
-ms.openlocfilehash: c0065b9a50b52f69a224869e18982db984e3659e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ee86c4cee124a86666fb6947aaf89c4732fefd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005576"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346932"
 ---
 # <a name="get-managedappregistration"></a>Get managedAppRegistration
 

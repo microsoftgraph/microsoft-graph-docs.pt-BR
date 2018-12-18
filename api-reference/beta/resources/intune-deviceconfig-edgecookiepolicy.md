@@ -1,12 +1,13 @@
 ---
 title: tipo de enum edgeCookiePolicy
 description: Os valores possíveis para especificar quais os cookies são permitidos em Microsoft Edge.
-ms.openlocfilehash: 11e32ff21463ea4348057c89c7df0d8c89882fb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0a8482e7cf6def3161c081fe59e66f22e8718c40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033974"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348052"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>tipo de enum edgeCookiePolicy
 

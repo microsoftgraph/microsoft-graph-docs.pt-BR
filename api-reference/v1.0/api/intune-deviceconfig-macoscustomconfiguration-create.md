@@ -1,12 +1,13 @@
 ---
 title: Criar macOSCustomConfiguration
 description: Cria um novo objeto macOSCustomConfiguration.
-ms.openlocfilehash: 41938c7f1f898d1180a979edc6b1790249ed94f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 52c3e4adf4dd6c3e934d8d6ce482d1c2aeeadcde
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006132"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348801"
 ---
 # <a name="create-macoscustomconfiguration"></a>Criar macOSCustomConfiguration
 

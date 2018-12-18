@@ -1,12 +1,13 @@
 ---
 title: Obter windowsInformationProtectionAppLearningSummary
 description: Ler propriedades e relações do objeto windowsInformationProtectionAppLearningSummary.
-ms.openlocfilehash: 48031664a5a8a1351a51f32fe94f9c071e79f918
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6686a1d09f0e6ef8378587d410a1f356e981a991
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006026"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346267"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Obter windowsInformationProtectionAppLearningSummary
 

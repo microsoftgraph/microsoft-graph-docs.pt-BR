@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppOperation
 description: Representa uma operação aplicada a um registro de aplicativo.
-ms.openlocfilehash: 99d75983acda18e11d7abca667679eb66322dcf5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d92c467f1ff5eae403f348deac2cb6c17a3a950d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345406"
 ---
 # <a name="managedappoperation-resource-type"></a>Tipo de recurso managedAppOperation
 
@@ -27,7 +28,7 @@ Representa uma operação aplicada a um registro de aplicativo.
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
-|state|Cadeia de caracteres|O estado atual da operação|
+|estado|Cadeia de caracteres|O estado atual da operação|
 |id|String|Chave da entidade.|
 |version|String|Versão da entidade.|
 

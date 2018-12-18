@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetCollection: add'
 description: .Activate() nele.
-ms.openlocfilehash: 992524aae6dfca0619c043eb0ddb7a4100f50206
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: fc22e4b45732c9ef197ad9b1172ec87c8becbfc5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346596"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |name|string|Opcional. O nome da planilha a ser adicionada. Se especificado, o nome deve ser exclusivo. Se não especificado, o Excel determina o nome da nova planilha.|
 

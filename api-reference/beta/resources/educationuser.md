@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso educationUser
 description: Um usuário no sistema. Essa é uma variante específica de educação do usuário com a mesma `id` que o Microsoft Graph retornará do ponto de extremidade `/users` não específico da educação.
-ms.openlocfilehash: a5b16aa511530c4895dff8d81766595944812e08
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 10f11c8d621fc2558fa6a82ca1f5d2a0e2e3dc4a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032955"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347261"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 

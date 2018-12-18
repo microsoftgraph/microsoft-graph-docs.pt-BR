@@ -1,12 +1,13 @@
 ---
 title: Lista compartilhada
 description: Percepção calculada que retorna a lista de arquivos compartilhados com um usuário.
-ms.openlocfilehash: 589cb8da4ecb82149d11e0ad518d5a37749cc3da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 5d8c4632f2ccb48cc83c3467ddfe0c973f390947
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040423"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345812"
 ---
 # <a name="list-shared"></a>Lista compartilhada
 
@@ -14,7 +15,7 @@ ms.locfileid: "27040423"
 
 Percepção calculada que retorna a lista de arquivos compartilhados com um usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

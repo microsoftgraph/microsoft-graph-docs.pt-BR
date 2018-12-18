@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso auditActor
 description: Uma classe que contém as propriedades para Ator de auditoria.
-ms.openlocfilehash: f8a2858854a8efb07cd710c5bccb718dd504a81e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1b1f3a182aa710564bdf5e134a4ceabf22f3fb71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032899"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27348927"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 

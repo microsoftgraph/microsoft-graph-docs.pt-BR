@@ -1,12 +1,13 @@
 ---
 title: Obter workbookPivotTable
 description: Recupere as propriedades e relações do objeto workbookPivotTable.
-ms.openlocfilehash: 5853d7316f7953660064ee24cc9e927bd16a465e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 00f994fcbffeb8214a6326130746c0200c162107
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034425"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344888"
 ---
 # <a name="get-workbookpivottable"></a>Obter workbookPivotTable
 

@@ -1,12 +1,13 @@
 ---
 title: Acessar managedAndroidStoreApp
 description: Leia as propriedades e as relações do objeto managedAndroidStoreApp.
-ms.openlocfilehash: c116c8843228b5ea92edaaf6735b3fd2495b582a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 914102e24b2c594bcd1302cbcf7579470c28ae16
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004553"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347667"
 ---
 # <a name="get-managedandroidstoreapp"></a>Acessar managedAndroidStoreApp
 

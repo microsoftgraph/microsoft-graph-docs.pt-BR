@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ndesConnectorState
 description: O status atual do conector Ndes.
-ms.openlocfilehash: 30d0f4a6244bcf6d0365f81e00dd55a71acaa8bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e52f1651ab5e829e1ebe3dca77fc5056d17bf13f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037311"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347471"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>tipo de enum ndesConnectorState
 
@@ -18,7 +19,7 @@ O status atual do conector Ndes.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Estado não está disponível ainda para este conector.|
+|none|0|Estado não está disponível ainda para este conector.|
 |ativo|1|Conector NDES se conectou recentemente|
 |inativo|2|Nenhuma atividade recente para o conector Ndes|
 

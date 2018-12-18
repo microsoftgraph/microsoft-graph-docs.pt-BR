@@ -1,12 +1,13 @@
 ---
 title: Excluir targetedManagedAppPolicyAssignment
 description: Exclui targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: d064b5948448a7e6c7e1a783530d738b5e20e2c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a00f77bb25d43339d0291c2ba95607c85dd8b5cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006328"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347016"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Excluir targetedManagedAppPolicyAssignment
 

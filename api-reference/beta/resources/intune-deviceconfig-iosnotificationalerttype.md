@@ -1,12 +1,13 @@
 ---
 title: tipo de enum iosNotificationAlertType
 description: Tipo de alerta de configurações de notificação.
-ms.openlocfilehash: a9b26276ecd3edd5847cb5672831ac3cf8edf57c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f2321515cc243edc9c14a79bb90713b124d16e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037307"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347254"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enum iosNotificationAlertType
 
@@ -21,7 +22,7 @@ Tipo de alerta de configurações de notificação.
 |deviceDefault|0|Valor de padrão de dispositivo, sem intenção.|
 |Faixa|1|Faixa.|
 |modal|2|Modal.|
-|nenhum|3|Nenhum.|
+|none|3|Nenhum.|
 
 
 

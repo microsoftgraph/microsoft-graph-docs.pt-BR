@@ -1,12 +1,13 @@
 ---
 title: Atualizar importedDeviceIdentity
 description: Atualize as propriedades de um objeto importedDeviceIdentity.
-ms.openlocfilehash: 4c5ce8e592f04cbda5d5ffbbde0e38bbf7ee3602
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6910eedf448c85d919da74f5d4e04d11213cf6d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347709"
 ---
 # <a name="update-importeddeviceidentity"></a>Atualizar importedDeviceIdentity
 

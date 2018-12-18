@@ -1,12 +1,13 @@
 ---
 title: Listar deviceEnrollmentLimitConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentLimitConfiguration.
-ms.openlocfilehash: ba2ad89f4ae23df512235cbccab7117e79ab6ef2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a0a69a87a2fb9ebebf7a26cc5095982c7bacd5fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035000"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346050"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>Listar deviceEnrollmentLimitConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: Lista windows10CertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos windows10CertificateProfileBase.
-ms.openlocfilehash: a302073440257d05597276f6e32c89d884238c1b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6efda26760ecbcb50bba6334f8934489f75bab31
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037484"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347870"
 ---
 # <a name="list-windows10certificateprofilebases"></a>Lista windows10CertificateProfileBases
 

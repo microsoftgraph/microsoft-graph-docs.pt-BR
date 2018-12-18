@@ -1,12 +1,13 @@
 ---
 title: Obter eventos do Outlook em um calendário compartilhado ou delegado
 description: No Outlook, os clientes podem compartilhar um calendário com outros usuários e permitir que eles exibam ou modifiquem eventos nesse calendário. Os clientes também podem permitir que um representante aja em nome deles, para receber ou responder a solicitações de reunião ou então para criar ou alterar itens no calendário.
-ms.openlocfilehash: e05352e164b127adca1305dded5cbb00840eed52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 8ceb6a49b971c5ad01f27b53c0f3cd3cf047865d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091617"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27346561"
 ---
 # <a name="get-outlook-events-in-a-shared-or-delegated-calendar"></a>Obter eventos do Outlook em um calendário compartilhado ou delegado
 

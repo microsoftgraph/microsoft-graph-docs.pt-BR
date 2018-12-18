@@ -1,12 +1,13 @@
 ---
 title: Listar pessoas
 description: Recupere uma lista de objetos de pessoa ordenados por sua relevância para o usuário, que é determinado pelo relacionamentos de negócios e os padrões de colaboração e comunicação do usuário.
-ms.openlocfilehash: fc39f983251f668b4e1aa43ccb8be9cee5d23791
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: simonhult
+ms.openlocfilehash: 64d24111f295fd076024a889d050c8c48c104295
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035408"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347653"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -14,7 +15,7 @@ ms.locfileid: "27035408"
 
 Recupere uma lista de objetos de [pessoa](../resources/person.md) ordenados por sua relevância para o [usuário](../resources/user.md), que é determinado pelo relacionamentos de negócios e os padrões de colaboração e comunicação do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -1,12 +1,13 @@
 ---
 title: 'Range: LastCell'
 description: .
-ms.openlocfilehash: 6b5f8727a6ecbe3f4346654609dbbfcfce388b55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4ae70424c252dab716ec0fe2a83ea434411238c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003527"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347030"
 ---
 # <a name="range-lastcell"></a>Range: LastCell
 

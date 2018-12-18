@@ -1,12 +1,13 @@
 ---
 title: Listar deviceAndAppManagementRoleAssignments
 description: Lista propriedades e relações dos objetos deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: b4c5ef4fb932ace0f04b035701dd64580e5a64dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9aad45985a79cb4f1533b82e8c0f78d1ac44fddc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006523"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27345693"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Listar deviceAndAppManagementRoleAssignments
 

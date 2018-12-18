@@ -1,12 +1,13 @@
 ---
 title: Ação cleanWindowsDevice
 description: Limpar dispositivo Windows
-ms.openlocfilehash: 6e05fa7f1597f0c7742ba27b30a1054512e0a3a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1d4d9f232748ec4601e7af6f64980acb7972f40
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27347618"
 ---
 # <a name="cleanwindowsdevice-action"></a>Ação cleanWindowsDevice
 
