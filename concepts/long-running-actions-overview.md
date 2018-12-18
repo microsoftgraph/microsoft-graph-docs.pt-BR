@@ -1,14 +1,12 @@
 ---
-author: rgregg
-ms.author: rgregg
-ms.date: 09/10/2017
-ms.topic: conceptual
-ms.openlocfilehash: 687ed04d3ddcede391e9f16a2046cb186a093323
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: Como trabalhar com ações de execução longa (beta)
+description: Este artigo descreve o trabalho com ações de execução longa.
+ms.openlocfilehash: 73e00efd88b2656cc842c3c46f8a2241315ba184
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354521"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 

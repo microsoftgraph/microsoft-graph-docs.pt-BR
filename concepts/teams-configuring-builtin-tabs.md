@@ -1,12 +1,13 @@
 ---
 title: Configurar tipos de guia internos no Microsoft Teams
-description: 'Para criar ou configurar uma guia do Microsoft Teams usando as APIs do Microsoft Graph, '
-ms.openlocfilehash: 2485e65ebac0c7201fe8b8210f8e4af9b9c8f164
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs do Microsoft Graph
+author: nkramer
+ms.openlocfilehash: 05a7f719cdedad8ea9040721d9411e45529d3c09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316384"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
