@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de enterpriseCodeSigningCertificate
 description: Ainda não documentado
-ms.openlocfilehash: 39a33ba019bd5d7e393f38dbb4701374ac7c5304
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035175"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328697"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso de enterpriseCodeSigningCertificate
 
@@ -28,7 +29,7 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade.|
-|content|Binário|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
+|content|Binária|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
 |subject|String|O valor de assunto para o cert.|

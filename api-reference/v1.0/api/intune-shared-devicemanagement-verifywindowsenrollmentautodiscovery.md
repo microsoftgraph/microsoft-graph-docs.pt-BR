@@ -1,12 +1,13 @@
 ---
 title: Função verifyWindowsEnrollmentAutoDiscovery
 description: Ainda não documentado
-ms.openlocfilehash: bfc4967bb95b5aa76a827e7c8438ac60845d7445
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f981ae765981c067b08dc08dae96831f59d572b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004461"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344174"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Função verifyWindowsEnrollmentAutoDiscovery
 

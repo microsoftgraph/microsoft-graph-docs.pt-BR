@@ -1,12 +1,13 @@
 ---
 title: Acessar windows10EnterpriseModernAppManagementConfiguration
 description: Leia as propriedades e as relações do objeto windows10EnterpriseModernAppManagementConfiguration.
-ms.openlocfilehash: 70c689db666d71f9bbfebcb8d84510e6c6473938
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2053d26c8678fadbe0ebee7e3e0b0acac8b2ebea
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033825"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327164"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Acessar windows10EnterpriseModernAppManagementConfiguration
 

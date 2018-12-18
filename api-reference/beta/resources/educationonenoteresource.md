@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de educationOneNoteResource
 description: 'Uma subclasse de educationResource. Isso representa o local da página do OneNote.  '
-ms.openlocfilehash: cfaaaf0a97e2dcea3a0a2a7384c761b678858f5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: dc6fc6a71da12a27cb589e072371814e4bc33cc1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359861"
 ---
 # <a name="educationonenoteresource-resource-type"></a>tipo de recurso de educationOneNoteResource
 

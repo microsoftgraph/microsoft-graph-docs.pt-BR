@@ -1,12 +1,13 @@
 ---
 title: Criar officeClientConfigurationAssignment
 description: Adicione um grupo-alvo a uma política existente.
-ms.openlocfilehash: 60416fe200214864c063a9fae739d5f7bd436a69
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324833"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Criar officeClientConfigurationAssignment
 

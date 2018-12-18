@@ -1,12 +1,13 @@
 ---
 title: Lista locationManagementConditions
 description: Lista as propriedades e os relacionamentos dos objetos locationManagementCondition.
-ms.openlocfilehash: 1a58cafecd93a246ecb7d285ad15c841bfe32cdd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd45730df931828eb4c9bb8c92f4cb85628601be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036022"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335718"
 ---
 # <a name="list-locationmanagementconditions"></a>Lista locationManagementConditions
 

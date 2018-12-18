@@ -1,12 +1,13 @@
 ---
 title: 'RangeFill: clear'
 description: Redefine o plano de fundo do intervalo.
-ms.openlocfilehash: 7d992b2e33b045edb0d82141a1ab67de86abde5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5f63b534874def2d7f969a9bcd48e2e1019befd3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033133"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339876"
 ---
 # <a name="rangefill-clear"></a>RangeFill: clear
 

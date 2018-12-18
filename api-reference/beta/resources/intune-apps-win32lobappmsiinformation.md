@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de win32LobAppMsiInformation
 description: Contém propriedades de app MSI para um aplicativo Win32.
-ms.openlocfilehash: a5563d369d68a881f1b519c50dd9722ad864d7cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1753df68ab1f4b0e1649c16a4a7fa0ad49941bf9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040342"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326135"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>tipo de recurso de win32LobAppMsiInformation
 
@@ -21,7 +22,7 @@ Contém propriedades de app MSI para um aplicativo Win32.
 |productCode|String|O código do produto MSI.|
 |productVersion|String|A versão MSI do produto.|
 |upgradeCode|String|O código de atualização de MSI.|
-|requiresReboot|Booliano|Se o aplicativo MSI requer a máquina reinicie para concluir a instalação.|
+|requiresReboot|Boolean|Se o aplicativo MSI requer a máquina reinicie para concluir a instalação.|
 |tipo de pacote|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|O tipo de pacote MSI. Os valores possíveis são: `perMachine`, `perUser`, `dualPurpose`.|
 
 ## <a name="relationships"></a>Relacionamentos

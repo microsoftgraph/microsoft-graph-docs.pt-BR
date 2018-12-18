@@ -1,12 +1,13 @@
 ---
 title: Criar iosLobAppProvisioningConfiguration
 description: Crie um novo objeto de iosLobAppProvisioningConfiguration.
-ms.openlocfilehash: 0c51201e147ff588c210df2a988568807f7d9dcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 80d6b607d514758942ccd5f8334315fd62c0270a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333646"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Criar iosLobAppProvisioningConfiguration
 

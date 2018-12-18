@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10SecureAssessmentConfiguration
 description: Exclui windows10SecureAssessmentConfiguration.
-ms.openlocfilehash: ede3c8ca6dab2b5025ac871b67013cc720b9f61f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 861848bc7525d47e6eb274a985a69bd2595cf0bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040487"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325197"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>Excluir windows10SecureAssessmentConfiguration
 

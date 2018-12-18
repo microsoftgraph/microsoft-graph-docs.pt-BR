@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso WorksheetProtection
 description: Representa a proteção de um objeto de planilha.
-ms.openlocfilehash: aae92566503ce7bdb4a742c33b1a65c43937662c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 3df3ea522b7d4f476bf09173ed7998e62e9562d7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344286"
 ---
 # <a name="worksheetprotection-resource-type"></a>Tipo de recurso WorksheetProtection
 

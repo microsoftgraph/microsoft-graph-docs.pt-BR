@@ -1,12 +1,13 @@
 ---
 title: Obter managedAppPolicyDeploymentSummary
 description: Ler propriedades e relações do objeto managedAppPolicyDeploymentSummary.
-ms.openlocfilehash: 46abf9b5c0eedb8c8990646cf96317a8083e2a21
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7c33021c0bfa31f6a562bfc54efb4d8d195dadd8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041084"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334878"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Obter managedAppPolicyDeploymentSummary
 

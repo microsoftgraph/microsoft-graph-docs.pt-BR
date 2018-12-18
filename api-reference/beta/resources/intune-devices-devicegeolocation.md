@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceGeoLocation
 description: Localização do dispositivo
-ms.openlocfilehash: 2ab7f777d00b891ceb7aae127ac87868aec582cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b3e790809f79d8d943cc12cc0e5065972c9864ff
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034722"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328627"
 ---
 # <a name="devicegeolocation-resource-type"></a>Tipo de recurso deviceGeoLocation
 

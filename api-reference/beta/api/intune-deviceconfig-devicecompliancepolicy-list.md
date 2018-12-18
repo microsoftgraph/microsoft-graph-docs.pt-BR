@@ -1,12 +1,13 @@
 ---
 title: Listar deviceCompliancePolicies
 description: Listar propriedades e relações dos objetos deviceCompliancePolicy.
-ms.openlocfilehash: 540b3305c71f1672120b699112eb6a5729b0c909
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5bf70733119ec1f2d870015fac471216a191d013
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036421"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327542"
 ---
 # <a name="list-devicecompliancepolicies"></a>Listar deviceCompliancePolicies
 

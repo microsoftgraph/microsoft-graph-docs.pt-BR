@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagementSettings
 description: Ainda não documentado
-ms.openlocfilehash: 4a07c879e20139c9138fc7315172655aa48a40eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e444f0a92a2e28dfa571c51f08c886537701f3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004776"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343607"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Tipo de recurso deviceManagementSettings
 

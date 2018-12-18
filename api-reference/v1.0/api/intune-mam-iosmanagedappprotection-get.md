@@ -1,12 +1,13 @@
 ---
 title: Obter iosManagedAppProtections
 description: Ler propriedades e relações do objeto iosManagedAppProtection.
-ms.openlocfilehash: 468467c14e74682d2acf400ad6dab18fef86f193
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd4f6eeac74952f34a737cfef80c4af115caa6ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003600"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359434"
 ---
 # <a name="get-iosmanagedappprotection"></a>Obter iosManagedAppProtections
 

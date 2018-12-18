@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de loggedOnUser
 description: Usuário conectado
-ms.openlocfilehash: 37df6b5343df515a76bc6b755889156cb86c4bf0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2021d51356798dec906331797a2504f779264b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327171"
 ---
 # <a name="loggedonuser-resource-type"></a>tipo de recurso de loggedOnUser
 

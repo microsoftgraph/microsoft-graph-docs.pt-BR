@@ -1,12 +1,13 @@
 ---
 title: Atualizar roleAssignment
 description: Atualizar as propriedades de um objeto roleAssignment.
-ms.openlocfilehash: 0a5c817a2d5f722075976b730c425a62e3670954
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 705ab4e06774f81ed47353e15af870af5f437a0b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328501"
 ---
 # <a name="update-roleassignment"></a>Atualizar roleAssignment
 

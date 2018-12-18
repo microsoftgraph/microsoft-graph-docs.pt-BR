@@ -1,12 +1,13 @@
 ---
 title: Listar termsAndConditionses
 description: Listar propriedades e relações dos objetos termsAndConditions.
-ms.openlocfilehash: a1ea48bcc5fa024a4e946f9c7275dc0916a2cda6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a5613484d25c84b5cb01e631d97e93280e5c060
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040372"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327549"
 ---
 # <a name="list-termsandconditionses"></a>Listar termsAndConditionses
 

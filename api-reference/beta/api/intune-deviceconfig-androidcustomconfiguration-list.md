@@ -1,12 +1,13 @@
 ---
 title: Listar androidCustomConfigurations
 description: Listar propriedades e relações dos objetos androidCustomConfiguration.
-ms.openlocfilehash: 33785c4cdbb1160fa64d23a9b0a107e29f8dc76f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e7673b7cef5291d629e0ed3dadf5aa5f707aaaf2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039716"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329726"
 ---
 # <a name="list-androidcustomconfigurations"></a>Listar androidCustomConfigurations
 

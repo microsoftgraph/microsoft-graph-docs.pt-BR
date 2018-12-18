@@ -1,12 +1,13 @@
 ---
 title: Atualizar mobileAppCategory
 description: Atualizar as propriedades de um objeto mobileAppCategory.
-ms.openlocfilehash: cb0e431385a9b8ee21135ac6daf9faf9440f94a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c7c53344d28dc60dc5c0dc306615a3d700cdcf82
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325813"
 ---
 # <a name="update-mobileappcategory"></a>Atualizar mobileAppCategory
 

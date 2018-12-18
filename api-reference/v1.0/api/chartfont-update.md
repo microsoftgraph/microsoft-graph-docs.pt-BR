@@ -1,12 +1,13 @@
 ---
 title: Atualizar chartfont
 description: Atualiza as propriedades do objeto chartfont.
-ms.openlocfilehash: 271f30c71953156bb74fa587057aab9cc32a1dc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 5af44ad188ac8ea19f01595a1f24330e18524df6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003779"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331763"
 ---
 # <a name="update-chartfont"></a>Atualizar chartfont
 

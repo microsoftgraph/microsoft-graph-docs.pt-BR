@@ -1,12 +1,13 @@
 ---
 title: Listar anexos
 description: Recupera uma lista de objetos attachment anexados a um evento.
-ms.openlocfilehash: cc632ab14bf2c64628cdf5177da5601f4b04f4d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 051ab6fa9b2064ea62606f5d01de540600ed66c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034643"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333870"
 ---
 # <a name="list-attachments"></a>Listar anexos
 

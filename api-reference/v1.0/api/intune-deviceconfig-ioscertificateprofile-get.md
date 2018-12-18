@@ -1,12 +1,13 @@
 ---
 title: Acessar iosCertificateProfile
 description: Leia as propriedades e as relações do objeto iosCertificateProfile.
-ms.openlocfilehash: fb0cbb214f79c5621c093da9dff4b82ad9021f46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9bfdb14f9b7aec9e5446b0c266d4ee59b5e91860
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005485"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328550"
 ---
 # <a name="get-ioscertificateprofile"></a>Acessar iosCertificateProfile
 

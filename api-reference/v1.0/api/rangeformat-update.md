@@ -1,12 +1,13 @@
 ---
 title: Atualizar rangeformat
 description: Atualize as propriedades do objeto rangeformat.
-ms.openlocfilehash: 208e20e650e069c87ff177564b6a0400ba5e94ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 0aea5712db6eb149356e1c3c9db85e5aebcebf17
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003792"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344615"
 ---
 # <a name="update-rangeformat"></a>Atualizar rangeformat
 

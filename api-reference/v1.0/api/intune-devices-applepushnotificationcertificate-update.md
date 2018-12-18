@@ -1,12 +1,13 @@
 ---
 title: Atualizar applePushNotificationCertificate
 description: Atualizar as propriedades de um objeto applePushNotificationCertificate.
-ms.openlocfilehash: 640fae8367813682f890ee41e11614c44d933412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b81a6a9dc887ddfea387a904219bba529729d01a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335340"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 

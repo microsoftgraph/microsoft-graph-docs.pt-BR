@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de iosEduCertificateSettings
 description: Certificados raiz e PFX confiáveis para iOS EDU.
-ms.openlocfilehash: 348b8231ed87c46180c54eb5ebfe24d671c9015b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e373a7c878dd06870b13a32c428f837d741964c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332323"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso de iosEduCertificateSettings
 
@@ -18,7 +19,7 @@ Certificados raiz e PFX confiáveis para iOS EDU.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|trustedRootCertificate|Binário|Certificado raiz confiável.|
+|trustedRootCertificate|Binária|Certificado raiz confiável.|
 |Nome_arquivo_cert|String|Nome de arquivo a ser exibido na interface do usuário.|
 |certificationAuthority|String|Autoridade de certificação PKCS.|
 |certificationAuthorityName|String|Nome da autoridade de certificação PKCS.|

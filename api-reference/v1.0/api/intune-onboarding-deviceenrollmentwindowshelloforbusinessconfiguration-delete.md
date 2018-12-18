@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Exclui deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: cd1771df24e5f5696c1e38072882def5a10511e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 85799e808201b4f0d8761ac21f375edcae9a729c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005066"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329789"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Excluir deviceEnrollmentWindowsHelloForBusinessConfiguration
 

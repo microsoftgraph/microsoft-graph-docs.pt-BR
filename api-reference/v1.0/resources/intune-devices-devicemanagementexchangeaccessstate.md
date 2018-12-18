@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceManagementExchangeAccessState
 description: Estado de acesso do Exchange de dispositivo.
-ms.openlocfilehash: e4891656a85f91c520c783d9e5ce6beac8b08253
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 37db054314375411dc237746ca6ca3bdb99e9016
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004603"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328718"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>tipo de enum deviceManagementExchangeAccessState
 
@@ -16,7 +17,7 @@ Estado de acesso do Exchange de dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum estado de acesso descoberto do Exchange|
+|none|0|Nenhum estado de acesso descoberto do Exchange|
 |unknown|1|O estado de acesso de dispositivo para o Exchange é desconhecido|
 |permitido|2|Dispositivo tem acesso ao Exchange|
 |bloqueado|3|Dispositivo está bloqueado no Exchange|

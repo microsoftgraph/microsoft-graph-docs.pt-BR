@@ -1,12 +1,13 @@
 ---
 title: Excluir iosGeneralDeviceConfiguration
 description: Excluir um iosGeneralDeviceConfiguration.
-ms.openlocfilehash: a996407a21fe352824d5cf9668016380890e04bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea9cf3b849615f5fb7791c31c0d9ff04119cb81d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003786"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343712"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Excluir iosGeneralDeviceConfiguration
 

@@ -1,25 +1,25 @@
 ---
 title: 'usuário: exportPersonalData'
 description: Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar dados de um usuário organizacionais.
-ms.openlocfilehash: aceab65992bde3092676a2bfa144498f07f06095
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 27a299a4cfa6ccc3016a1f706b452840aa5dc396
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039358"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329119"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
 Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar dados de um usuário organizacionais.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  User.Export.All  |
+|Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Aplicativo | User.Export.All |
+|Application | User.Export.All e User.Read.All |
 
 >Observação: Export só pode ser executada por um administrador da empresa ao usar a permissão delegada.
 
@@ -37,7 +37,7 @@ POST /users/<id>/exportPersonalData
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |storageLocation|String|Esta é uma URL de assinatura (SAS) de acesso compartilhado para uma conta de armazenamento do Azure, para onde os dados devem ser exportados.|
 

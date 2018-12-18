@@ -1,12 +1,13 @@
 ---
 title: ação de unassignUserFromDevice
 description: Retira o usuário de um dispositivo de piloto automático.
-ms.openlocfilehash: 93feafa6ff8dc18cee8d5f0535b6a6fabe61ca81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9374111b9a73bdaa9ef25391c62bb1a5fbb38d8c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037937"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329733"
 ---
 # <a name="unassignuserfromdevice-action"></a>ação de unassignUserFromDevice
 

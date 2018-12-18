@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windows10AppsUpdateRecurrence
 description: Os valores possíveis para o aplicativo atualizam nos Windows10 recorrência.
-ms.openlocfilehash: 608668817ab0bacbe1c2c22bcbd1d7807ed997bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 940c5ad7affc6b46288942b5d307c0f0dbfece7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324301"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>tipo de enum windows10AppsUpdateRecurrence
 
@@ -18,7 +19,7 @@ Os valores possíveis para o aplicativo atualizam nos Windows10 recorrência.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Valor padrão, especifica uma única ocorrência.|
+|none|0|Valor padrão, especifica uma única ocorrência.|
 |diariamente|1|Diariamente.|
 |Semanalmente|2|Semanal.|
 |mensal|3|Mensalmente.|

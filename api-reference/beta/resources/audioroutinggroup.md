@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de audioRoutingGroup
 description: O grupo de roteamento áudio armazena uma rota de áudio privada entre os participantes em uma conversa com vários participantes. Fonte é o participante propriamente dito e os receptores são um subconjunto dos outros participantes da conversa com vários participantes.
-ms.openlocfilehash: 98c58e39773567f13a2723e94c0413efd2841cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033496"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344467"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso de audioRoutingGroup
 

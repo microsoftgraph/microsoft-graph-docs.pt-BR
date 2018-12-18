@@ -1,12 +1,13 @@
 ---
 title: Listar deviceConfigurationAssignments
 description: Listar propriedades e relações dos objetos deviceConfigurationAssignment.
-ms.openlocfilehash: 6d8407f17d5ef1cb5ac771fd86bd4365d9e92876
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 531e9bbdbae61b7ef86dad8c558cee9e20a015e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006270"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343943"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Listar deviceConfigurationAssignments
 

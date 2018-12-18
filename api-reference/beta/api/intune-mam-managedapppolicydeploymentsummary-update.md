@@ -1,12 +1,13 @@
 ---
 title: Atualizar managedAppPolicyDeploymentSummary
 description: Atualizar as propriedades de um objeto managedAppPolicyDeploymentSummary.
-ms.openlocfilehash: 2c0bf77e3dbd3720bcb0cfea28d69155174fb776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f3d8445ac8b937b1a4b5ce10c0b89987103967dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041139"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325183"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Atualizar managedAppPolicyDeploymentSummary
 

@@ -1,12 +1,13 @@
 ---
 title: Listar deviceManagementPartners
 description: Listar propriedades e relações de objetos de deviceManagementPartner.
-ms.openlocfilehash: c308dc378fdcd0257b72b4a5948635ec0c1fa257
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a70a05e965becc15633522b9e38f1ea85fcdea7f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004242"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27339806"
 ---
 # <a name="list-devicemanagementpartners"></a>Listar deviceManagementPartners
 

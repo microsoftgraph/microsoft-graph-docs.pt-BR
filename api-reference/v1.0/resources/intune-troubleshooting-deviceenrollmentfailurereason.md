@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceEnrollmentFailureReason
 description: Categorias de falha de nível superior para o registro.
-ms.openlocfilehash: 5bcf6887ca66f440bd2658d15704286f8b62f733
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6adf8918762832dd961a7cd3f2b625f2394c54cb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006705"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343950"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enum deviceEnrollmentFailureReason
 

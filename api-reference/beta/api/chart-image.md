@@ -1,12 +1,13 @@
 ---
 title: 'Chart: Image'
 description: Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.
-ms.openlocfilehash: 0930300413b68424d4d1613f0dbe76b531ae91f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6a86e8df1c49fb02626ed7d0d468c3031742d615
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033374"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325533"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -37,7 +38,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |height|number|Opcional. A altura desejada da imagem resultante.|
 |width|number|Opcional. A largura desejada da imagem resultante.|

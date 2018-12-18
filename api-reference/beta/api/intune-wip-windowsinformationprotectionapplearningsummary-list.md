@@ -1,12 +1,13 @@
 ---
 title: Listar windowsInformationProtectionAppLearningSummaries
 description: Listar propriedades e relações de objetos de windowsInformationProtectionAppLearningSummary.
-ms.openlocfilehash: 3d5616b772f3219889c942fe9e65569ecccb25ed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd3056eeb82dace50a5c7ab0112b14d6871022ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036009"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323811"
 ---
 # <a name="list-windowsinformationprotectionapplearningsummaries"></a>Listar windowsInformationProtectionAppLearningSummaries
 

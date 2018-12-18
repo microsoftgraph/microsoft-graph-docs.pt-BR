@@ -1,12 +1,13 @@
 ---
 title: Atualizar reportRoot
 description: Atualizar as propriedades de um objeto reportRoot.
-ms.openlocfilehash: a376cd399fbcb36b369839dc214b3e792bc8d104
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a8beb97dc236ec9a4db4584619184613268ce071
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005347"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326338"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enum emailSyncDuration
 description: Valores possíveis para a duração de sincronização de email.
-ms.openlocfilehash: 93b15c3fd8f20e8285fd8f4f78da79234e24ebc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 512e20ad13c13fdf92e45cfe0a37792d97e17fbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361163"
 ---
 # <a name="emailsyncduration-enum-type"></a>tipo de enum emailSyncDuration
 

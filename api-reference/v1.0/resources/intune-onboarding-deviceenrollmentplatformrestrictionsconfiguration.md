@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 description: Ainda não documentado
-ms.openlocfilehash: d49c4a94b36593204abd92567b2ea1855527deb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7463dbbfd28bc1b2138c862dc909933a683e7fac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343544"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestrictionsConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: 'usuário: getMailTips'
 description: Obter as Dicas de E-mail de um ou mais destinatários como disponíveis para o usuário conectado.
-ms.openlocfilehash: 2291c8569d3e283e86598c0fd6fe5a0f487e79e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 198e45647ce51997a8d92da63a5f63f03d05a675
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006941"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332680"
 ---
 # <a name="user-getmailtips"></a>usuário: getMailTips
 
@@ -14,7 +15,7 @@ Obtenha dicas de email de um ou mais destinatários conforme disponível ao entr
 
 Observe que, tornando uma `POST` chamada para o `getMailTips` ação, você poderá solicitar tipos específicos de dicas de email a ser retornado por mais de um destinatário de uma só vez. As dicas de email solicitadas são retornadas em uma coleção de [dicas de email](../resources/mailtips.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

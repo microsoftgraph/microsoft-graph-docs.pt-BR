@@ -1,12 +1,13 @@
 ---
 title: Criar iosCustomConfiguration
 description: Cria um novo objeto iosCustomConfiguration.
-ms.openlocfilehash: a301d959e21ad65d85c6b1fe27cd6b8366097edb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2b445ae1e8025eb90426c51580890c765842b622
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004329"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328802"
 ---
 # <a name="create-ioscustomconfiguration"></a>Criar iosCustomConfiguration
 

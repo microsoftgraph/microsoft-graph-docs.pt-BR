@@ -1,12 +1,13 @@
 ---
 title: Listar memberOf
 description: 'Obtenha todos os grupos e funções de diretório dos quais o usuário é um membro direto. '
-ms.openlocfilehash: 6d884868be083a3d547002760560816e10984436
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 25f5d8d01f97bd2a3afe90f596dfb7c18eaad857
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327129"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 

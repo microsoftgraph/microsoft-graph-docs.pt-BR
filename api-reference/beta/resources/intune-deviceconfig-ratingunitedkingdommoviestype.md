@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingUnitedKingdomMoviesType
 description: Filmes classificação rótulos no Reino Unido
-ms.openlocfilehash: 6d41c5c7ae8da1f1f27e4d9df4bfe9eb3a850597
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec8d134cc1ca3425c7503f6b072d37d88990191c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039829"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332386"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enum ratingUnitedKingdomMoviesType
 

@@ -1,12 +1,13 @@
 ---
 title: Lista userAppInstallStatuses
 description: Lista as propriedades e os relacionamentos dos objetos userAppInstallStatus.
-ms.openlocfilehash: 86bb3bc288a2890635e5ad676358b09c3c91ccb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0aeef4d97e63c42e11fefdb84a4dfb6138fdc6a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040955"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325421"
 ---
 # <a name="list-userappinstallstatuses"></a>Lista userAppInstallStatuses
 

@@ -1,12 +1,13 @@
 ---
 title: Listar os aplicativos publicados a partir do catálogo de aplicativos do Microsoft Teams
 description: 'Lista de aplicativos a partir do catálogo de aplicativos do Microsoft Teams. '
-ms.openlocfilehash: 84b5576ed2a7d38783e45b1384c79f05c9ea418b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 77867d5b75721fcb169da6ad6a8ff39c46de196e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041039"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326464"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados a partir do catálogo de aplicativos do Microsoft Teams
 
@@ -14,7 +15,7 @@ ms.locfileid: "27041039"
 
 Listar os [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams. Isso inclui aplicativos do repositório de Teams da Microsoft, bem como aplicativos de catálogo de aplicativos da sua organização (o catálogo de aplicativos do inquilino). Para obter os aplicativos do catálogo de aplicativos da sua organização somente, especifique `Organization` como o **distributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 

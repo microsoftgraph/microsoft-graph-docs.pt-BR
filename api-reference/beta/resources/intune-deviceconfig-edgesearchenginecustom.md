@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso edgeSearchEngineCustom
 description: Permite que os administradores de TI configurem um mecanismo de pesquisa padrão personalizado para dispositivos controlados por MDM.
-ms.openlocfilehash: 5312f53e43921d71e6c338ccb112a851773abc43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1a9c1dc12226bf13764a155e804d379d20825103
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036200"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344230"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Tipo de recurso edgeSearchEngineCustom
 

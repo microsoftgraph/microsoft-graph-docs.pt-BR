@@ -1,12 +1,13 @@
 ---
 title: Criar deviceAndAppManagementRoleAssignment
 description: Cria um novo objeto deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: ec8c641ca9d3d4d4f42cfe71f44bcb6f216be273
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4ed81fdc58a2675be6d5f0b991507914d5c92e89
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041207"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323986"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Criar deviceAndAppManagementRoleAssignment
 

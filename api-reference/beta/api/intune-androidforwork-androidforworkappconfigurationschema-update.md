@@ -1,12 +1,13 @@
 ---
 title: Atualizar androidForWorkAppConfigurationSchema
 description: Atualizar as propriedades de um objeto androidForWorkAppConfigurationSchema.
-ms.openlocfilehash: 8343d1f30d7e9b7e8ef8a7dec984c6af9c51e6a3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba4050ce741e1fdcfd3158e7f9e9d9e47f422882
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333898"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>Atualizar androidForWorkAppConfigurationSchema
 
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
-|exampleJson|Binário|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
+|exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
 |schemaItems|Coleção [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema|
 
 

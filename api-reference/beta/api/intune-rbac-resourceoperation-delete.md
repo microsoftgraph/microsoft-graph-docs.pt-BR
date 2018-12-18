@@ -1,12 +1,13 @@
 ---
 title: Excluir resourceOperation
 description: Exclui resourceOperation
-ms.openlocfilehash: 0bf2d4002856d16810f999f69ab6bf70e7e54d83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b180b3cc8afa79ff6f2484a4acc8d0b096984b90
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032946"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329328"
 ---
 # <a name="delete-resourceoperation"></a>Excluir resourceOperation
 

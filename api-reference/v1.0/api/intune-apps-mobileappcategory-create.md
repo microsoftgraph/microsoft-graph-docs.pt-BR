@@ -1,12 +1,13 @@
 ---
 title: Criar mobileAppCategory
 description: Criar um novo objeto mobileAppCategory.
-ms.openlocfilehash: a26f9f66e045a45abae57a744a1fd91293df72e0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 17084b8c02421b94b733a9ecb1011d647dab02d4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003733"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326331"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 

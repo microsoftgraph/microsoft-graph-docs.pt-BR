@@ -1,12 +1,13 @@
 ---
 title: Criar deviceEnrollmentPlatformRestrictionsConfiguration
 description: Criar um novo objeto deviceEnrollmentPlatformRestrictionsConfiguration.
-ms.openlocfilehash: 2783d0295bb0e8e585c25f5dfaa9d00441cbbf5f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2815043ae2a0c6f8c2130c413b15337c05fc1749
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004244"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324259"
 ---
 # <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a>Criar deviceEnrollmentPlatformRestrictionsConfiguration
 

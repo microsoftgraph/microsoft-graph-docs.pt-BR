@@ -1,12 +1,13 @@
 ---
 title: Atualizar editionUpgradeConfiguration
 description: Atualizar as propriedades de um objeto editionUpgradeConfiguration.
-ms.openlocfilehash: 81564ae9430566212efcc100de779dc83e9ed664
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 011a9869ae7c15853e246292ac0acb80e7ad650f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329110"
 ---
 # <a name="update-editionupgradeconfiguration"></a>Atualizar editionUpgradeConfiguration
 

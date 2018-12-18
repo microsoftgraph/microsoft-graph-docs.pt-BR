@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceManagementExchangeConnector
 description: Atualizar as propriedades de um objeto deviceManagementExchangeConnector.
-ms.openlocfilehash: ed63339a390a5fcba377236de8ddfe6c9b57bd5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1bbc3f05dd3cee4f2bc92cc279adda705f6a324e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005246"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359364"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 

@@ -1,12 +1,13 @@
 ---
 title: Obter windowsInformationProtectionAppLockerFile
 description: Ler propriedades e relações do objeto windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: 66b40f6b03d047be2508d758540b40badc51fcac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 95490ee9d15aac86bf011bded9ff01c9a257be74
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039664"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326555"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Obter windowsInformationProtectionAppLockerFile
 

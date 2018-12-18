@@ -1,12 +1,13 @@
 ---
 title: tipo de enum nonEapAuthenticationMethodForPeap
 description: Métodos de não-EAP para autenticação quando PEAP é o tipo EAP selecionado.
-ms.openlocfilehash: e71a951fae706c5ce11f8e0418840a9b7bca74b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6925547b3effbfe505d5586589e4f97a6f5c5662
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034605"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326982"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>tipo de enum nonEapAuthenticationMethodForPeap
 
@@ -18,7 +19,7 @@ Métodos de não-EAP para autenticação quando PEAP é o tipo EAP selecionado.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum.|
+|none|0|Nenhum.|
 |microsoftChapVersionTwo|1|Microsoft CHAP versão 2 (MS-CHAP v2).|
 
 

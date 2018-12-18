@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsDefenderAdvancedThreatProtectionConfiguration
 description: Exclui windowsDefenderAdvancedThreatProtectionConfiguration.
-ms.openlocfilehash: a4a888189faecd72cef8f1dbf2b1e0f01b4de510
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 159bb833905500d7a07f9eb0a63c135dfc99df3d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004635"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326422"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>Excluir windowsDefenderAdvancedThreatProtectionConfiguration
 

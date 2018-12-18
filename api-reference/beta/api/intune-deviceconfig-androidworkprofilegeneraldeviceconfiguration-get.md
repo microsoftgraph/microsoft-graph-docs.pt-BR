@@ -1,12 +1,13 @@
 ---
 title: Obter androidWorkProfileGeneralDeviceConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidWorkProfileGeneralDeviceConfiguration.
-ms.openlocfilehash: 5f9acc4778c626846ba10b3fbf0455fb3a955734
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: de88aed944a6613005f76b467ba0bf71550f1bb1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033877"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330447"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Obter androidWorkProfileGeneralDeviceConfiguration
 

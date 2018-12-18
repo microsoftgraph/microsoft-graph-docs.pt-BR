@@ -1,12 +1,13 @@
 ---
 title: função getUserIdsWithFlaggedAppRegistration
 description: Ainda não documentado
-ms.openlocfilehash: 48505328c44b06a267ecae281adc533409001dea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7f57ab3af48ac7e815b914be3339435d6be58fc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038559"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329376"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>função getUserIdsWithFlaggedAppRegistration
 

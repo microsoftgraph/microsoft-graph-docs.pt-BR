@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de ndesConnector
 description: Entidade que representa um conector OnPrem Ndes.
-ms.openlocfilehash: d8cce2601f0f51703cccabe0690165e67b0af2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e37a20c440546094424d0284bd1d7ffbbeb60bdd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033622"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332288"
 ---
 # <a name="ndesconnector-resource-type"></a>tipo de recurso de ndesConnector
 
@@ -29,7 +30,7 @@ Entidade que representa um conector OnPrem Ndes.
 |:---|:---|:---|
 |id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector Ndes|
-|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
+|estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|String|O nome amigável do conector Ndes.|
 
 ## <a name="relationships"></a>Relações

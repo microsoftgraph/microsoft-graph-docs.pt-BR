@@ -1,12 +1,13 @@
 ---
 title: Atualizar planilha
 description: Atualize as propriedades do objeto de planilha.
-ms.openlocfilehash: 16db37919009dbd935bcd8959111f888ffa97d2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ab61b65c03ea69a77253226c5be785d0314117bc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036941"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326436"
 ---
 # <a name="update-worksheet"></a>Atualizar planilha
 

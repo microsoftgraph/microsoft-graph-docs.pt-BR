@@ -1,12 +1,13 @@
 ---
 title: Criar windowsKioskConfiguration
 description: Crie um novo objeto de windowsKioskConfiguration.
-ms.openlocfilehash: 4878ea77d866e29f5b225ba6e50bc3394f3a3545
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 35630494206a234e248935a75483afa2da969ed4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035117"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327535"
 ---
 # <a name="create-windowskioskconfiguration"></a>Criar windowsKioskConfiguration
 
@@ -50,16 +51,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |kioskProfiles|coleção [windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)|Essa configuração de política permite definir uma lista de perfis de quiosque de uma configuração de quiosque. Esta coleção pode conter um máximo de 500 elementos.|
 |kioskBrowserDefaultUrl|String|Especifique a URL de padrão deve navegar o navegador no lançamento.|
-|kioskBrowserEnableHomeButton|Booliano|Habilite o botão de página inicial do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
-|kioskBrowserEnableNavigationButtons|Booliano|Habilite buttons(forward/back) de navegação do navegador quiosque. Por padrão, os botões de navegação são desabilitados.|
-|kioskBrowserEnableEndSessionButton|Booliano|Habilite o botão de sessão do navegador quiosque encerrar. Por padrão, o botão de sessão encerrar está desabilitado.|
+|kioskBrowserEnableHomeButton|Boolean|Habilite o botão de página inicial do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
+|kioskBrowserEnableNavigationButtons|Boolean|Habilite buttons(forward/back) de navegação do navegador quiosque. Por padrão, os botões de navegação são desabilitados.|
+|kioskBrowserEnableEndSessionButton|Boolean|Habilite o botão de sessão do navegador quiosque encerrar. Por padrão, o botão de sessão encerrar está desabilitado.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Especifique o número de minutos que a sessão está ociosa até que o navegador de quiosque reinicia em um estado atualizado.  Valores válidos são 1-1440. Valores válidos 1 a 1440|
 |kioskBrowserBlockedURLs|String collection|Especifique as URLs que os navegadores de quiosque não devem navegar|
 |kioskBrowserBlockedUrlExceptions|String collection|Especifique as URLs que o navegador de quiosque é permitido para navegar até|

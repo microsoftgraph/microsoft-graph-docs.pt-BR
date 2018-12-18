@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceComplianceUserOverview
 description: Leia as propriedades e relações de objetos de deviceComplianceUserOverview.
-ms.openlocfilehash: 5ee521067a126a4768997ea1c70f92226524c38a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 38eccb78c8f40e356a41de3f54a411294ac6c321
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040377"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327514"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>Acessar deviceComplianceUserOverview
 

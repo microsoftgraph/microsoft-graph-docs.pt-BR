@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de networkIPv4ConfigurationManagementCondition
 description: Configurações de rede IPv4 condições de gerenciamento baseadas na configuração podem ser definidas que acionará quando um dispositivo detecta certo IP. Um condições de gerenciamento de configuração IP só serão considerados TRUE quando a conexão de rede estiver ativo.
-ms.openlocfilehash: f8727fdf67f9602799b0ddacdb94c2c8570d72b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eba20d0ef5db1667cad2ffb85b9477c9044b28b9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039128"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344258"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso de networkIPv4ConfigurationManagementCondition
 

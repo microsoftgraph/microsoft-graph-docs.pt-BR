@@ -1,12 +1,13 @@
 ---
 title: Atualizar gráfico
 description: Atualiza as propriedades do objeto de gráfico.
-ms.openlocfilehash: 493207d158088c83c56287511dae26d475a1a7e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 086d4a2ea0ce823ace141df0d5576af732bf8c0f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036932"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328179"
 ---
 # <a name="update-chart"></a>Atualizar gráfico
 

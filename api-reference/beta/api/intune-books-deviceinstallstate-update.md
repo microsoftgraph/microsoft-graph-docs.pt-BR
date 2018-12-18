@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceInstallState
 description: Atualizar as propriedades de um objeto deviceInstallState.
-ms.openlocfilehash: bef58a3497a49fd027d67594ae8d8bcd26342d3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1f674b1c732b5804fd83c89620612354e8daccfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039520"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325631"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 

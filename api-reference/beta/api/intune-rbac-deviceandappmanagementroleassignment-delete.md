@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceAndAppManagementRoleAssignment
 description: Exclui deviceAndAppManagementRoleAssignment.
-ms.openlocfilehash: 5e9220c0a82be0587494b38124ecac3a3a850014
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2e148b579cf3f10df9d3a682c89b94fbb806e4a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038353"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329327"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Excluir deviceAndAppManagementRoleAssignment
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir microsoftStoreForBusinessContainedApp
 description: Exclui um microsoftStoreForBusinessContainedApp.
-ms.openlocfilehash: db439eee397635b4bdbc5770a4a0958fafd8d641
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fc288075baef414271a00e2e414e1b9090e387f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036554"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361170"
 ---
 # <a name="delete-microsoftstoreforbusinesscontainedapp"></a>Excluir microsoftStoreForBusinessContainedApp
 

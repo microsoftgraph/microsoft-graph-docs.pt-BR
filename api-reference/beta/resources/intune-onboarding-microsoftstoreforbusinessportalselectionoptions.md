@@ -1,12 +1,13 @@
 ---
 title: tipo de enum microsoftStoreForBusinessPortalSelectionOptions
 description: Portal ao qual o admin sincroniza disponíveis Store Microsoft para aplicativos de negócios. Isso está disponível no Console de administração do Intune.
-ms.openlocfilehash: 0e000bcf2c7f3bedf3b463098fa137f9954c461b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cc1e95b4dea6bf1de6439c4c0a12ad4888ff6bb9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037973"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359378"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de enum microsoftStoreForBusinessPortalSelectionOptions
 
@@ -18,7 +19,7 @@ Portal ao qual o admin sincroniza disponíveis Store Microsoft para aplicativos 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Essa opção não está disponível para a conta|
+|none|0|Essa opção não está disponível para a conta|
 |companyPortal|1|Somente para empresa Intune Portal.|
 |privateStore|2|Somente repositório MSFB particular.|
 

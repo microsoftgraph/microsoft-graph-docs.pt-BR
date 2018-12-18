@@ -1,12 +1,13 @@
 ---
 title: 'TableColumn: TotalRowRange'
 description: Obtém o objeto de intervalo associado à linha de totais da coluna.
-ms.openlocfilehash: e9fb1607fdb53a2d45e4d757109e23723328840f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 01e172aa5c7d5faba8b0a8d74de3bb411b82c8b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007346"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334843"
 ---
 # <a name="tablecolumn-totalrowrange"></a>TableColumn: TotalRowRange
 

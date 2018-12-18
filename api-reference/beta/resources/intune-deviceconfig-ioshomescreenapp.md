@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso iosHomeScreenApp
 description: Representa um ícone de um aplicativo na tela inicial
-ms.openlocfilehash: 5c8700e0164bebbe6e930ebbd07a01c27c0f2495
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 63bcfe53cc2d3ee60b5f784e99798f1f97e883af
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034041"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334962"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
 

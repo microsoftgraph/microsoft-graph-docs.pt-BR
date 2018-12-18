@@ -1,12 +1,13 @@
 ---
 title: Get eBookInstallSummary
 description: Ler propriedades e relações do objeto eBookInstallSummary.
-ms.openlocfilehash: e6febdb32ebb7c0183508b77870d8508bed35d52
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3147148562bfd9fbb751ffcfb316367f0bb5baeb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038399"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324462"
 ---
 # <a name="get-ebookinstallsummary"></a>Get eBookInstallSummary
 

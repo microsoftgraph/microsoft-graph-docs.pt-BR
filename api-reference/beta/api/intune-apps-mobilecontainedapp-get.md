@@ -1,12 +1,13 @@
 ---
 title: Obter mobileContainedApp
 description: Leia as propriedades e os relacionamentos do objeto mobileContainedApp.
-ms.openlocfilehash: cb03323f3d56704c8e64c5bd1f710e2e278f128e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dac57ef838c56868a655968317df653f3b0f5488
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036179"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359245"
 ---
 # <a name="get-mobilecontainedapp"></a>Obter mobileContainedApp
 

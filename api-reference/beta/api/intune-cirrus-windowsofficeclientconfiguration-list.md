@@ -1,12 +1,13 @@
 ---
 title: Lista windowsOfficeClientConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsOfficeClientConfiguration.
-ms.openlocfilehash: 0e14dc2ede95d0b1b5fcb4830e47292d2d604f7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 256ad449a12c8188346110d4ba5b7510d9657898
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340569"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Lista windowsOfficeClientConfigurations
 

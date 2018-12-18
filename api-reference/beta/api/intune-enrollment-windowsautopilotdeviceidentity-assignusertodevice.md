@@ -1,12 +1,13 @@
 ---
 title: ação de assignUserToDevice
 description: Atribui o usuário a dispositivos de piloto automático.
-ms.openlocfilehash: 7e3152b4ac158714d37f5d5eb1b830a21dd3745d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8446aa7e49905875b629287fd4847f761fec25c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036066"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329761"
 ---
 # <a name="assignusertodevice-action"></a>ação de assignUserToDevice
 

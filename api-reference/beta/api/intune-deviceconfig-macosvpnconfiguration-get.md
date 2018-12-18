@@ -1,12 +1,13 @@
 ---
 title: Obter macOSVpnConfiguration
 description: Leia as propriedades e os relacionamentos do objeto macOSVpnConfiguration.
-ms.openlocfilehash: 382869759bee49e85f95a47a66c68b0908e00ae0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1ce22b619db9b59dd89f53885ed9b48c360af8f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037745"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335851"
 ---
 # <a name="get-macosvpnconfiguration"></a>Obter macOSVpnConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Criar deviceCompliancePolicyAssignment
 description: Criar um novo objeto deviceCompliancePolicyAssignment.
-ms.openlocfilehash: d2aa0e08c52a0d055080ea0ad33ac8fc2dd53728
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee54fecbbddb4fc02b6a6c7b39d8cdc3633d59ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037593"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325414"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Criar deviceCompliancePolicyAssignment
 

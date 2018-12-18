@@ -1,12 +1,13 @@
 ---
 title: Acessar iosUpdateConfiguration
 description: Leia as propriedades e as relações do objeto iosUpdateConfiguration.
-ms.openlocfilehash: f6dfded1e1e809cb69ca976edd1fde31fd2937fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 09c27673f1ea379ece5d42348235b224bd80ec18
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003594"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344790"
 ---
 # <a name="get-iosupdateconfiguration"></a>Acessar iosUpdateConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Criar enrollmentTroubleshootingEvent
 description: Cria um novo objeto enrollmentTroubleshootingEvent.
-ms.openlocfilehash: 1c9e36f1cabdbe059bca467f8e1099b2c01c487c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ff50de23b6fd39e8e27202fd9b72c690e02aee4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004790"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331791"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Criar enrollmentTroubleshootingEvent
 

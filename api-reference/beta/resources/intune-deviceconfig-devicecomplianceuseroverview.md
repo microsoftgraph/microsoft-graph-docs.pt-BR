@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceComplianceUserOverview
 description: Ainda não documentado
-ms.openlocfilehash: ab4048bc8287c3ec225954c80009e69806480e4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6505cf0d563f129d4a683026f5dc828310c32792
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039164"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359385"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Tipo de recurso deviceComplianceUserOverview
 

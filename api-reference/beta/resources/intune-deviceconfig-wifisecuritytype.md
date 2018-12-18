@@ -1,12 +1,13 @@
 ---
 title: tipo de enum wiFiSecurityType
 description: Tipos de segurança Wi-Fi.
-ms.openlocfilehash: ee6afc55b4ccf8550c9df5c790cd325561cb6f3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 291bc3660971a90ea113959368542e715a86b570
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039118"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329187"
 ---
 # <a name="wifisecuritytype-enum-type"></a>tipo de enum wiFiSecurityType
 

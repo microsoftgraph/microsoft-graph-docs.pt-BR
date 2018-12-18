@@ -1,12 +1,13 @@
 ---
 title: Criar enrollmentConfigurationAssignment
 description: Criar um novo objeto enrollmentConfigurationAssignment.
-ms.openlocfilehash: 844415cb5e1b2a7160fdf08a992ffbd472d8e70c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2fcbecdb5f1333326888e86c74aab1b03252ccd2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038805"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344461"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Criar enrollmentConfigurationAssignment
 

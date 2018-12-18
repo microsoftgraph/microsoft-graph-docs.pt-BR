@@ -1,12 +1,13 @@
 ---
 title: Obter mailFolder
 description: Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
-ms.openlocfilehash: 394fe948b67dbfded176eff27aaa6222856e69ee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: ee4926b0d87988e0358d333ad347d895518dc1ae
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006915"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344832"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
@@ -18,7 +19,7 @@ Há dois cenários onde um aplicativo pode obter a pasta de correio de outro usu
 * Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

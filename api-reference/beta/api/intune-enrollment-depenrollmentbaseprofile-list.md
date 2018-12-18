@@ -1,12 +1,13 @@
 ---
 title: Lista depEnrollmentBaseProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depEnrollmentBaseProfile.
-ms.openlocfilehash: d504889ac4db2d2213860527b8e0774d76bdc217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce7edb9558864323ca08a4379ae0e6e8949c6875
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035940"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27340954"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>Lista depEnrollmentBaseProfiles
 

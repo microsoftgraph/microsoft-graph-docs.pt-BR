@@ -1,12 +1,13 @@
 ---
 title: Obter alerta
 description: " Recupere as propriedades e relacionamentos de um objeto de alerta."
-ms.openlocfilehash: b2c823257ffcb398639a89627b3a0e1cb407e085
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: Preetikr
+ms.openlocfilehash: fe265f82e6013081a33abeaa25baa78e0e87fdcb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184473"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326121"
 ---
 # <a name="get-alert"></a>Obter alerta
 

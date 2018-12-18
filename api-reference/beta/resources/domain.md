@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de domínio
 description: Representa um domínio associado ao locatário.
-ms.openlocfilehash: e142998a23f24ff2693f8a70f13c2c8a35432961
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 372a3fced98dce86715d9cc6feee9096da3fe00e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040896"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328977"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 

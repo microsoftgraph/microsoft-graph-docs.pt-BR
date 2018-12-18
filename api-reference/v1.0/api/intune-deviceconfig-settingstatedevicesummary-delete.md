@@ -1,12 +1,13 @@
 ---
 title: Excluir settingStateDeviceSummary
 description: Exclui settingStateDeviceSummary.
-ms.openlocfilehash: 23baebc8ed23cfd2e00efeabdfdccd6a30741583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 15e46e54c7ace2b251576b2701644013789c46ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005696"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328109"
 ---
 # <a name="delete-settingstatedevicesummary"></a>Excluir settingStateDeviceSummary
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bitLockerSystemDrivePolicy
 description: Políticas de Base de criptografia BitLocker.
-ms.openlocfilehash: 60388f020750ebd7f187b07777440b013ae5f02a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ba1199970099bb841fc363a747abb5b8dcac2ec1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035578"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332281"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>tipo de recurso de bitLockerSystemDrivePolicy
 
@@ -19,15 +20,15 @@ Políticas de Base de criptografia BitLocker.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Selecione o método de criptografia para unidades do sistema operacional. Os valores possíveis são: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
-|startupAuthenticationRequired|Booliano|Exigem autenticação adicional na inicialização.|
-|startupAuthenticationBlockWithoutTpmChip|Booliano|Indica se você deseja permitir BitLocker sem um TPM compatível (exige uma senha ou uma chave de inicialização em uma unidade flash USB).|
+|startupAuthenticationRequired|Boolean|Exigem autenticação adicional na inicialização.|
+|startupAuthenticationBlockWithoutTpmChip|Boolean|Indica se você deseja permitir BitLocker sem um TPM compatível (exige uma senha ou uma chave de inicialização em uma unidade flash USB).|
 |startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a inicialização do TPM é permitido/necessário/não permitido. Os valores possíveis são: `blocked`, `required`, `allowed`.|
 |startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se o pin de inicialização TPM é permitido/necessário/não permitido. Os valores possíveis são: `blocked`, `required`, `allowed`.|
 |startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a chave de inicialização do TPM será permitido/necessário/não permitido. Os valores possíveis são: `blocked`, `required`, `allowed`.|
 |startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Indica se a inicialização do TPM fixar chave e chave são permitidos/necessário/não permitido. Os valores possíveis são: `blocked`, `required`, `allowed`.|
 |minimumPinLength|Int32|Indica o tamanho mínimo do pin de inicialização. Valores válidos 4 a 20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Permite recuperar BitLocker criptografado unidades do sistema operacional na ausência das informações de chave de inicialização necessários. Essa configuração de política é aplicada quando você ativa o BitLocker.|
-|prebootRecoveryEnableMessageAndUrl|Booliano|Habilite a mensagem de recuperação antes da inicialização e a Url. Se requireStartupAuthentication for false, esse valor não afeta.|
+|prebootRecoveryEnableMessageAndUrl|Boolean|Habilite a mensagem de recuperação antes da inicialização e a Url. Se requireStartupAuthentication for false, esse valor não afeta.|
 |prebootRecoveryMessage|String|Define uma mensagem de recuperação personalizada.|
 |prebootRecoveryUrl|String|Define uma URL personalizada de recuperação.|
 

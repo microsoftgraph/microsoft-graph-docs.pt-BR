@@ -1,12 +1,13 @@
 ---
 title: Criar windowsManagedDevice
 description: Crie um novo objeto de windowsManagedDevice.
-ms.openlocfilehash: 79db6b0f2d5f8e918b42fb9b1c5a40b05983edae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 21626854a52ed305dbf237562e151e168330f170
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036915"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324441"
 ---
 # <a name="create-windowsmanageddevice"></a>Criar windowsManagedDevice
 
@@ -65,11 +66,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Herdada do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |osVersion|String|A versão do sistema operacional do dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|easActivated|Booliano|Se o dispositivo está ativado para Exchange ActiveSync. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easDeviceId|String|ID do Exchange ActiveSync do dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|aadRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|azureADRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|aadRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Herdada do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indica se o modo perdido está habilitado ou desabilitada Inherited em [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `disabled` e `enabled`.|
 |activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -78,13 +79,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |azureADDeviceId|String|O identificador exclusivo do dispositivo do Azure Active Directory. Somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Estado do registro do dispositivo. Herdada do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Nome de exibição de categoria dispositivo Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isSupervised|Booliano|Status do dispositivo supervisionado Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|isSupervised|Boolean|Status do dispositivo supervisionado Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez em que o dispositivo entrou em contato com o Exchange. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|O estado de acesso do dispositivo no Exchange. Herdada do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|A razão para o estado de acesso do dispositivo no Exchange. Herdada do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|isEncrypted|Booliano|Status de criptografia do dispositivo Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|isEncrypted|Boolean|Status de criptografia do dispositivo Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |userPrincipalName|String|Dispositivo nome principal de usuário Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |modelo|String|Modelo do dispositivo Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |fabricante|String|Fabricante do dispositivo Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -105,8 +106,8 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indica o estado de ameaças de um dispositivo quando um parceiro de Defesa contra ameaças móveis está em uso pela conta e pelo dispositivo. Somente leitura. Herdada do [managedDevice](../resources/intune-devices-manageddevice.md). Os valores possíveis são: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|coleção [loggedOnUser](../resources/intune-devices-loggedonuser.md)|Indica o último logon usuários de um dispositivo Inherited da [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Relatórios de DateTime que a configuração preferMdmOverGroupPolicy foi definida.  Quando definido, as configurações de Intune MDM substituirão as configurações de diretiva de grupo se não houver um conflito. Somente leitura. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|autopilotEnrolled|Booliano|Relata se o dispositivo gerenciado está inscrito via piloto automático. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
-|requireUserEnrollmentApproval|Booliano|Relata se o dispositivo de iOS gerenciado é o registro de aprovação do usuário. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|autopilotEnrolled|Boolean|Relata se o dispositivo gerenciado está inscrito via piloto automático. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
+|requireUserEnrollmentApproval|Boolean|Relata se o dispositivo de iOS gerenciado é o registro de aprovação do usuário. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementCertificateExpirationDate|DateTimeOffset|Relatórios de dispositivo gerenciamento data de validade certificado Inherited de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |iccid|String|Identificador de cartão de circuito integrado, é o número de identificação exclusiva do cartão de uma SIM. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|
 |UDID|String|Identificador exclusivo do dispositivo para dispositivos iOS e macOS. Herdado de [managedDevice](../resources/intune-devices-manageddevice.md)|

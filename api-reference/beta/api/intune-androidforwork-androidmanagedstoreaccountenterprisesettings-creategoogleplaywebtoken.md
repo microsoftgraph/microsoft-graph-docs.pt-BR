@@ -1,12 +1,13 @@
 ---
 title: ação de createGooglePlayWebToken
 description: Gera um token de web que é usado em um componente incorporável.
-ms.openlocfilehash: 26b58e5973063a74cac69d0bb70aa02adde7093f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 206113b445d8b190e02b292dd661bc3c207de288
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038413"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338539"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>ação de createGooglePlayWebToken
 

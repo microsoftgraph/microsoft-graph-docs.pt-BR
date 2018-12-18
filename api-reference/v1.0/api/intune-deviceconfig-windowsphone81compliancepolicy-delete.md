@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsPhone81CompliancePolicy
 description: Exclui windowsPhone81CompliancePolicy.
-ms.openlocfilehash: d0bece2e581f99d404c7d5ee2c6f459090f74ad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b08ba8ee82eb2c3d31c1ec51e57710bd65441f0e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007195"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359896"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>Excluir windowsPhone81CompliancePolicy
 

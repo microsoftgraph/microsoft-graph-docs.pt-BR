@@ -1,12 +1,13 @@
 ---
 title: Excluir remoteActionAudit
 description: Exclui um remoteActionAudit.
-ms.openlocfilehash: 2cc5fe355b55e092e24a47ef193c7b54e299faab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ce475fb687d2d0aa465a2535c3f952228dff8420
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359854"
 ---
 # <a name="delete-remoteactionaudit"></a>Excluir remoteActionAudit
 

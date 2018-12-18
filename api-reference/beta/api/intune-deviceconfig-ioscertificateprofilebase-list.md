@@ -1,12 +1,13 @@
 ---
 title: Lista iosCertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos iosCertificateProfileBase.
-ms.openlocfilehash: 25d4aab6a101496a4966b1145e5eae14035b9f99
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6cfee1e89726582fcf8ac961dd079ce1d7e0506e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033269"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332841"
 ---
 # <a name="list-ioscertificateprofilebases"></a>Lista iosCertificateProfileBases
 

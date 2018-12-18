@@ -1,12 +1,13 @@
 ---
 title: Excluir managedIOSLobApp
 description: Exclui managedIOSLobApp.
-ms.openlocfilehash: eba72f6c030f0530274630eac819b7dda88518d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 50b2907e4d085f1327d36c341b4b6ba366fb0d73
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007162"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344384"
 ---
 # <a name="delete-managedioslobapp"></a>Excluir managedIOSLobApp
 

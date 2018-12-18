@@ -1,12 +1,13 @@
 ---
 title: 'post: reply'
 description: 'Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo. Você pode especificar '
-ms.openlocfilehash: 9698efa8fcd2670f5a837652b8db327ef5c5f55d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 33cd99fd24dc5acfca4b96f232f748a0377d1564
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324224"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -38,7 +39,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|A nova postagem que está sendo respondida.|
 

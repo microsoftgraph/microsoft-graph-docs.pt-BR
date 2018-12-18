@@ -1,12 +1,13 @@
 ---
 title: Excluir enterpriseCodeSigningCertificate
 description: Exclui um enterpriseCodeSigningCertificate.
-ms.openlocfilehash: 3927b0a1588c9adc6cf1fb89918620aedf041148
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ec733f23e30dc00d62496e9b2bbd1f90236bf2d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039270"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27343845"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Excluir enterpriseCodeSigningCertificate
 

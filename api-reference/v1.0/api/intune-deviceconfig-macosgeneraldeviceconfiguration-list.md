@@ -1,12 +1,13 @@
 ---
 title: Listar macOSGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: 4844a059e527c37a0b1f13b56f8622fa8bcdbe91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 27acd8306ab473e2d176856163359e954fa3b0a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006466"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359217"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Listar macOSGeneralDeviceConfigurations
 

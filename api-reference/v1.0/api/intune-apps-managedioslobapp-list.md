@@ -1,12 +1,13 @@
 ---
 title: Listar managedIOSLobApps
 description: Listar propriedades e relações dos objetos managedIOSLobApp.
-ms.openlocfilehash: 8abe28a64baae857a16f95bd005568602fd6f8f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3dc053035c66fd7be477d6d8991247d5137b23f9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005589"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331448"
 ---
 # <a name="list-managedioslobapps"></a>Listar managedIOSLobApps
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir conversa
 description: Exclua uma conversa.
-ms.openlocfilehash: 9a6e590470343afd7990d6f24672fe1824c65a90
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: f62f009ae5de99df7fceb8414c54276ed4b3929d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035931"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359175"
 ---
 # <a name="delete-conversation"></a>Excluir conversa
 

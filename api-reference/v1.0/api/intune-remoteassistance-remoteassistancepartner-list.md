@@ -1,12 +1,13 @@
 ---
 title: Listar remoteAssistancePartners
 description: Listar propriedades e relações de objetos de remoteAssistancePartner.
-ms.openlocfilehash: 4f3095cf9f031a7dd6f0046fc9cdfdc28e2fb673
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 770e2935cc1ebab9eed75a70ed9adee34e07b9c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005455"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331616"
 ---
 # <a name="list-remoteassistancepartners"></a>Listar remoteAssistancePartners
 

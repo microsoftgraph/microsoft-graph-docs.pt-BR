@@ -1,12 +1,13 @@
 ---
 title: tipo de enum managedAppDataEncryptionType
 description: Representa o nível ao qual os dados de aplicativo são criptografados para aplicativos gerenciados
-ms.openlocfilehash: a642a3efc01f719ca72134f737fe2bdd2596d2b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6bd23f6cd590724c2c981ddf2c3087ead4c21817
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039080"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326114"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enum managedAppDataEncryptionType
 

@@ -1,12 +1,13 @@
 ---
 title: Listar macOSCompliancePolicies
 description: Listar propriedades e relações dos objetos macOSCompliancePolicy.
-ms.openlocfilehash: 70ef7d53822953c7469490f9e23873b4b2219c39
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0e283b8a2540968cf6a10ef0ae9be740a32c9d71
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006396"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327500"
 ---
 # <a name="list-macoscompliancepolicies"></a>Listar macOSCompliancePolicies
 

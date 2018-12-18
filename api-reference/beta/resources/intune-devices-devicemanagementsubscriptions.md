@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceManagementSubscriptions
 description: Inscrições de gerenciamento de dispositivo móvel do inquilino.
-ms.openlocfilehash: b317b6bf86dd72138d8cbdf0de19432b7655fc66
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 064363ff05617b48ffd5ef66d57c315545223910
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326149"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>tipo de enum deviceManagementSubscriptions
 
@@ -18,7 +19,7 @@ Inscrições de gerenciamento de dispositivo móvel do inquilino.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum|
+|none|0|Nenhum|
 |Intune|1|Inscrição do Microsoft Intune|
 |office365|2|Assinatura Office365|
 |intunePremium|4|Inscrição do Microsoft Intune Premium|

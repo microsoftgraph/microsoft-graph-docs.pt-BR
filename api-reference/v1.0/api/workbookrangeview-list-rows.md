@@ -1,12 +1,13 @@
 ---
 title: Linhas da lista rangeView
 description: Recupere uma lista de objetos da exibição de intervalo.
-ms.openlocfilehash: effc55e075b43c9916ca02bed8cdc2e39109d01e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: eabcc8742785264a26f1a1922fea7741a5fc99a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004841"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330510"
 ---
 # <a name="list-rangeview-rows"></a>Linhas da lista rangeView
 

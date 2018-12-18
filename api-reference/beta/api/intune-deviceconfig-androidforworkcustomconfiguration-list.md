@@ -1,12 +1,13 @@
 ---
 title: Lista androidForWorkCustomConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkCustomConfiguration.
-ms.openlocfilehash: 2c97cea5caf2d74a5f34264dd891ce009d9f09d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 95ace512553d17e4c9d40bcfecbfd432fc2c3b93
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034904"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359791"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>Lista androidForWorkCustomConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar microsoftStoreForBusinessContainedApp
 description: Atualize as propriedades de um objeto microsoftStoreForBusinessContainedApp.
-ms.openlocfilehash: b5a946a79b5040778cce24deaee3326f93380e76
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4b9e451e5632a8d4b923aae5de86c854febfa2a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324805"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Atualizar microsoftStoreForBusinessContainedApp
 
