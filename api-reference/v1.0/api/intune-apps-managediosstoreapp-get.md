@@ -1,12 +1,13 @@
 ---
 title: Acessar managedIOSStoreApp
 description: Leia as propriedades e as relações do objeto managedIOSStoreApp.
-ms.openlocfilehash: f6a06bdb6295bce4e5a46284cba57b1730cc3174
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cebe7a431b7b41f3f1cb05e4464e932118322516
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006849"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351538"
 ---
 # <a name="get-managediosstoreapp"></a>Acessar managedIOSStoreApp
 

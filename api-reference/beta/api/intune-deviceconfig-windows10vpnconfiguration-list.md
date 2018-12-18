@@ -1,12 +1,13 @@
 ---
 title: Lista windows10VpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windows10VpnConfiguration.
-ms.openlocfilehash: d8c2ce989cff6f8d7a499dab499e41377f96d05e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: efc1abfff951cf7ce8d6b69072511a380b1be450
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354884"
 ---
 # <a name="list-windows10vpnconfigurations"></a>Lista windows10VpnConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enum resultantAppStateDetail
 description: Enum indicando maiores detalhes sobre por que um aplicativo tem um determinado estado de instalação.
-ms.openlocfilehash: 6557047249483273abff93bbbd352cba72256755
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e06e8afb6ebb5e22abf11d9cd53150bed5288052
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352525"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enum resultantAppStateDetail
 

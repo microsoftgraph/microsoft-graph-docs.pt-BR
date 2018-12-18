@@ -1,12 +1,13 @@
 ---
 title: Get androidCompliancePolicy
 description: Ler propriedades e relações do objeto androidCompliancePolicy.
-ms.openlocfilehash: 55bdca82649f2508e4d4cbeced143069328d4e07
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 487effc72760f7d8861395c711ff50bc644b9152
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037252"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355024"
 ---
 # <a name="get-androidcompliancepolicy"></a>Get androidCompliancePolicy
 

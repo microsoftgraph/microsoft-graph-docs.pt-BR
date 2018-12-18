@@ -1,12 +1,13 @@
 ---
 title: Criar deviceComplianceUserStatus
 description: Criar um novo objeto deviceComplianceUserStatus.
-ms.openlocfilehash: ab4b20f463ec6d8e30b02ebc8eceb33b9637ed51
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7b5627999c3cbb3d895c7433fc71b6db2effd418
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005212"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353694"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Criar deviceComplianceUserStatus
 

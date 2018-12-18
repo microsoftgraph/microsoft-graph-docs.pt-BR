@@ -1,12 +1,13 @@
 ---
 title: Listar childFolders
 description: 'Obter a coleção de pasta sob a pasta especificada. Você pode usar o `.../me/MailFolders` atalho para obter o nível superior '
-ms.openlocfilehash: 5a01287fe90713846caf49a57610668042a70cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: e02e8ab7bf8ad4dd6a3028d72df7829f69277258
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006524"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351888"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 

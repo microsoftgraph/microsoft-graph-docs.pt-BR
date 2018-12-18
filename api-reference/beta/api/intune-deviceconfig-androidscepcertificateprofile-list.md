@@ -1,12 +1,13 @@
 ---
 title: Lista androidScepCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos androidScepCertificateProfile.
-ms.openlocfilehash: 425c00a28b5a7c584660941ddc951a05d54f0250
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 98660ae8d05be8882220c0e2c113f01f98863be3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036896"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352448"
 ---
 # <a name="list-androidscepcertificateprofiles"></a>Lista androidScepCertificateProfiles
 

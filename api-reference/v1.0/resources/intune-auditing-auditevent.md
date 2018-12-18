@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso auditEvent
 description: Uma classe que contém as propriedades de Evento de Auditoria.
-ms.openlocfilehash: 96e8ad79dccd1b85ea848c6a975e4ee8d5217738
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c19a7914790d7659a7b60000a81655d81a5dce52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003592"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351433"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 

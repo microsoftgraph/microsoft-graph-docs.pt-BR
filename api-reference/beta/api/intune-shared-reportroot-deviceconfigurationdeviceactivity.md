@@ -1,12 +1,13 @@
 ---
 title: Função deviceConfigurationDeviceActivity
 description: Metadados para o relatório de atividade do dispositivo de configuração do dispositivo
-ms.openlocfilehash: 547b91506420b864334b46a25516a4b15cefaa1a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 348df7182b724858ef06edaa50f318b0b6238d42
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038321"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351916"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Função deviceConfigurationDeviceActivity
 

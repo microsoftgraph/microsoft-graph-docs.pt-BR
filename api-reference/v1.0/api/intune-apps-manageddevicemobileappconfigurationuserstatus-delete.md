@@ -1,12 +1,13 @@
 ---
 title: Excluir managedDeviceMobileAppConfigurationUserStatus
 description: Exclui managedDeviceMobileAppConfigurationUserStatus.
-ms.openlocfilehash: 01bb4c6519efcc3cfaf05210d508fcdf2623e9a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d812b4ea42be7210dcc80a3e4202d8b7e208d360
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004831"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351468"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>Excluir managedDeviceMobileAppConfigurationUserStatus
 

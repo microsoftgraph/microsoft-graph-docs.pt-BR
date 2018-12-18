@@ -1,12 +1,13 @@
 ---
 title: Obter ndesConnector
 description: Leia as propriedades e os relacionamentos do objeto ndesConnector.
-ms.openlocfilehash: 3b9bc4efce46125e1d833da23ffc7cec4e8aae7f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ccff6dd13e37ccee19b9f86b91adcf2f6bbc9960
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035102"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352791"
 ---
 # <a name="get-ndesconnector"></a>Obter ndesConnector
 

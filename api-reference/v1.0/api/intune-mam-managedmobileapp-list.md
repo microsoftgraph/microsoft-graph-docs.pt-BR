@@ -1,12 +1,13 @@
 ---
 title: Listar managedMobileApps
 description: Listar propriedades e relações dos objetos managedMobileApp.
-ms.openlocfilehash: 7f0c9fce4ee4feeab3a78615c9f87db5b4d5775e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c89b6a76be5bee067e02e79353b90e4a7219bc57
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004866"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351244"
 ---
 # <a name="list-managedmobileapps"></a>Listar managedMobileApps
 

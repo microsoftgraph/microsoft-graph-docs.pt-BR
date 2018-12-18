@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de dailySchedule
 description: Agenda diária de execução de um script de gerenciamento de dispositivo recorrente.
-ms.openlocfilehash: 5d517b0bcd15f041b934a0ca936075bc6d3d3741
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 86a3dda75c0aecef6ba0672bc114092bd301a582
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038809"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351125"
 ---
 # <a name="dailyschedule-resource-type"></a>tipo de recurso de dailySchedule
 

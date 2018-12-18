@@ -1,12 +1,13 @@
 ---
 title: Obter iosVppAppAssignedLicense
 description: Leia as propriedades e os relacionamentos do objeto iosVppAppAssignedLicense.
-ms.openlocfilehash: 9a0cd6324ff247a31d4b2eea9bc5ca725f863919
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5a7098bfbb4f9945f202d0d9f356c4590a27bb7a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040008"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352882"
 ---
 # <a name="get-iosvppappassignedlicense"></a>Obter iosVppAppAssignedLicense
 

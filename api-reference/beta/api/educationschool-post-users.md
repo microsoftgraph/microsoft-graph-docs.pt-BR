@@ -1,12 +1,13 @@
 ---
 title: Adicionar educationUser a uma educationSchool
 description: Adicione um usuário a uma escola.
-ms.openlocfilehash: cdccc9147f8a6eb0ba8bd2c79b8ce28ecddb514f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 4c77a94b7b1c9af11d954a4ab903c597eded6a04
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034028"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352726"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>Adicionar educationUser a uma educationSchool
 

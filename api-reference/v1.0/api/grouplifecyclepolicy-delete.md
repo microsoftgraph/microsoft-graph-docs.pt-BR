@@ -1,12 +1,13 @@
 ---
 title: Excluir groupLifecyclePolicy
 description: Exclui um objeto groupLifecyclePolicy.
-ms.openlocfilehash: af154d2ff5e7b61a245f3b99d22f10d26f0204fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 606b8f5406277dbde34ca731c374a064b552ac97
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351587"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Excluir groupLifecyclePolicy
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10ImportedPFXCertificateProfile
 description: Exclui um windows10ImportedPFXCertificateProfile.
-ms.openlocfilehash: 7a81c6b96c351a9586aec1bd02cb4e4d8afcf238
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 587cee15696bfa61e50dfcabdb1c7d3ebdf91b3f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035090"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352721"
 ---
 # <a name="delete-windows10importedpfxcertificateprofile"></a>Excluir windows10ImportedPFXCertificateProfile
 

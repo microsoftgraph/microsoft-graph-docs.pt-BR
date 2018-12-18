@@ -1,12 +1,13 @@
 ---
-title: Permissions
+title: Permissões
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
-ms.openlocfilehash: affdd67d48056c4459e651fd5c64168d8356abe8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 9ce487d957f4bdaa2684d00865aeac7ea293ad67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003996"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351167"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Listar itens excluídos pertencentes a um usuário**
 
@@ -16,7 +17,7 @@ Atualmente, a funcionalidade de itens de lista excluída é suportada somente pa
 
 Esta é uma ação de serviço, o que significa que ele não dá suporte a paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificado por ID.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
@@ -49,7 +50,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 O corpo da solicitação requer os seguintes parâmetros:
 
-| Parâmetro    | Tipo |Descrição|
+| Parâmetro    | Type |Descrição|
 |:---------------|:--------|:----------|
 |userId|String|ID do proprietário.|
 |type|String|Tipo de objetos pertencentes para retornar; `Group` atualmente é o único valor com suporte.|

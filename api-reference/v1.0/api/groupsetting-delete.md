@@ -1,12 +1,13 @@
 ---
 title: Excluir uma configuração de grupo
 description: Excluir uma configuração de grupo.
-ms.openlocfilehash: 1c8a62225497aed066a2a25630103b0ee46b3963
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: c5e1dc6dc3fddfde756adb969714842dde4023cb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351475"
 ---
 # <a name="delete-a-group-setting"></a>Excluir uma configuração de grupo
 

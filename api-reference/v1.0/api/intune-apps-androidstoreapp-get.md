@@ -1,12 +1,13 @@
 ---
 title: Get androidStoreApp
 description: Ler propriedades e relações do objeto androidStoreApp.
-ms.openlocfilehash: 6dac1708444de2f4e53570649837b3926ad1c292
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8ab705f2b8c009ecc7ab6f27257b6bf4572188fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005514"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351461"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 

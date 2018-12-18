@@ -1,12 +1,13 @@
 ---
 title: Obter windowsPhone81ImportedPFXCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81ImportedPFXCertificateProfile.
-ms.openlocfilehash: 22634d9e15e31a77add3a4d0c694a53478655712
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7395d699f8d9b28f1a87997a5272d46d7fdca1e4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037150"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352021"
 ---
 # <a name="get-windowsphone81importedpfxcertificateprofile"></a>Obter windowsPhone81ImportedPFXCertificateProfile
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceManagementScript
 description: Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dispositivos windows registrados 10 Azure Active Directory ingressou do cliente. O script pode ser executado uma vez ou periodicamente.
-ms.openlocfilehash: c9d1a20eeaeb9b825fbdb553c702bf85ae272f25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351419"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso de deviceManagementScript
 
@@ -32,11 +33,11 @@ Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dis
 |displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de script a ser executado. Se não definido o script será executado uma vez|
-|scriptContent|Binário|O conteúdo de script.|
+|scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e hora em que o script de gerenciamento do dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação o script de gerenciamento de dispositivo.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que do script de gerenciamento de dispositivo é executado. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Booliano|Indica se a assinatura de script precisa ser verificada.|
+|enforceSignatureCheck|Boolean|Indica se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
 
 ## <a name="relationships"></a>Relações

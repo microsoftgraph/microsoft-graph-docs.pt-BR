@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso domainState
 description: Representa o status das operações assíncronas agendadas em um domínio.
-ms.openlocfilehash: 73a83eddb46b9305a6d74e283bae1c009361195d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 08484f29202ab348e2eca443a95f63ffbe645220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005948"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351671"
 ---
 # <a name="domainstate-resource-type"></a>Tipo de recurso domainState
 

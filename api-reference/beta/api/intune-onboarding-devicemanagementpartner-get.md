@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceManagementPartner
 description: Leia as propriedades e as relações do objeto deviceManagementPartner.
-ms.openlocfilehash: f00ebc9e7452ecb12a2ec0512b07cba23d559bb6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cb37c12f2624ff31d3346aaa525202a6919b50c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037886"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351860"
 ---
 # <a name="get-devicemanagementpartner"></a>Acessar deviceManagementPartner
 

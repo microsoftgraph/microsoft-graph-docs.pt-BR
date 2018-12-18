@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de identityRiskEvent
 description: 'Um evento de risco detectado pelo Windows Azure Active Directory proteção de identidade. É o tipo de base para cada tipo de evento de risco específico:'
-ms.openlocfilehash: e61f5e0dc2dae2c055636e3fd3737e16b2558458
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: cloudhandler
+ms.openlocfilehash: 4abe473b47d3ce52fd5b75b6adfd08dbc4af54fc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034831"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351734"
 ---
 # <a name="identityriskevent-resource-type"></a>tipo de recurso de identityRiskEvent
 

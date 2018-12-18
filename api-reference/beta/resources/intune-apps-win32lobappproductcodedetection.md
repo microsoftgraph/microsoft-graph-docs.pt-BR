@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de win32LobAppProductCodeDetection
 description: Contém propriedades de código e a versão do produto para detectar um aplicativo Win32
-ms.openlocfilehash: fcb9d5927ce1518a7bba2086a8578867d4fdf01a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d66dab5a43a11c480e0e30f70eb8aecbe47e1fa7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040927"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353981"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>tipo de recurso de win32LobAppProductCodeDetection
 

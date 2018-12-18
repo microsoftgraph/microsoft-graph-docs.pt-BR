@@ -1,12 +1,13 @@
 ---
 title: Atualizar androidForWorkSettings
 description: Atualizar as propriedades de um objeto de androidForWorkSettings.
-ms.openlocfilehash: 58d47117dd574dd6adf96f0ebeb46768c8c7368b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5514de226d138291743c5b017a50682e91e1e9ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041023"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352539"
 ---
 # <a name="update-androidforworksettings"></a>Atualizar androidForWorkSettings
 
@@ -55,7 +56,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [androidForWorkS
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação das configurações do Android for Work|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Indica quais usuários podem inscrever dispositivos no Android para gerenciamento de dispositivo de trabalho. Os valores possíveis são: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Especifica a quais grupos AAD podem registrar dispositivos no gerenciamento de dispositivos do Android for Work se enrollmentTarget estiver definido como 'Direcionado'|
-|deviceOwnerManagementEnabled|Booliano|Indica se essa conta é flighting para o gerenciamento de proprietário de dispositivo Android com CloudDPC.|
+|deviceOwnerManagementEnabled|Boolean|Indica se essa conta é flighting para o gerenciamento de proprietário de dispositivo Android com CloudDPC.|
 
 
 

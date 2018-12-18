@@ -1,12 +1,13 @@
 ---
 title: 'participante: configureMixer'
 description: Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.
-ms.openlocfilehash: 58ccdcb345d55ae28b30dd5ded6b95ef5b30fe81
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: e300d842ce0bad870160d2f3788b059de6d41784
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351986"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -14,14 +15,14 @@ ms.locfileid: "27155995"
 
 Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |participantMixerLevels|coleção [participantMixerLevel](../resources/participantmixerlevel.md)| Configuração do mixer redistribui para determinados participante de áudio.|
 |clientContext|String|O contexto de cliente.|

@@ -1,12 +1,13 @@
 ---
 title: Excluir iosEnterpriseWiFiConfiguration
 description: Exclui um iosEnterpriseWiFiConfiguration.
-ms.openlocfilehash: 10f010c9eb34cfb738f72bb9f00e0d375913084f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 043890a5789151f4865f969593135c98261a70d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034191"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352350"
 ---
 # <a name="delete-iosenterprisewificonfiguration"></a>Excluir iosEnterpriseWiFiConfiguration
 

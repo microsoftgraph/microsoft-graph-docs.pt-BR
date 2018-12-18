@@ -1,12 +1,13 @@
 ---
 title: Atualizar chartseries
 description: Atualiza as propriedades do objeto chartseries.
-ms.openlocfilehash: ea238fcf9cd3b03b99527bb0f9ab11440a8ed111
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: ad477e0c03eba4af78fc088a2f45f76976ec9c80
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003385"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355591"
 ---
 # <a name="update-chartseries"></a>Atualizar chartseries
 

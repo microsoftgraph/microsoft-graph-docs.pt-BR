@@ -1,12 +1,13 @@
 ---
 title: Remover educationUser de uma educationSchool
 description: Exclua um usuário de uma escola.
-ms.openlocfilehash: 05ca8d1940580ac2897c842905a754c37a8c8814
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: ce4a1f3d77d91cc31520f658788e788986923dbb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036229"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352685"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Remover educationUser de uma educationSchool
 

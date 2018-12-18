@@ -1,12 +1,13 @@
 ---
 title: Atualizar localizedNotificationMessage
 description: Atualizar as propriedades de um objeto localizedNotificationMessage.
-ms.openlocfilehash: d61f97d44e4c5b2e6f5b17e1538620f774200a18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 915a053501f40633be8662fb7196a84ff9db4b1b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034331"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27351790"
 ---
 # <a name="update-localizednotificationmessage"></a>Atualizar localizedNotificationMessage
 

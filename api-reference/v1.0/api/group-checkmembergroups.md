@@ -1,12 +1,13 @@
 ---
 title: 'group: checkMemberGroups'
 description: Verifique se a associação na lista especificada dos grupos. Retorna da lista os grupos dos quais
-ms.openlocfilehash: d0dc617300e29950e820dd94701173829fa6bb7b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6f31e4f53e99272c456f6bb4263054e9cb5a208f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005384"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352490"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -44,7 +45,7 @@ POST /groups/{id}/checkMemberGroups
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro | Tipo              | Descrição           |
+| Parâmetro | Type              | Descrição           |
 | :-------- | :---------------- | :-------------------- |
 | groupIds  | String collection | Uma matriz de IDs de grupo |
 

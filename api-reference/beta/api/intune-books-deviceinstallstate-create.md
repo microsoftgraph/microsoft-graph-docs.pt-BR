@@ -1,12 +1,13 @@
 ---
 title: Criar deviceInstallState
 description: Criar um novo objeto deviceInstallState.
-ms.openlocfilehash: b210ca932ee6132bd4b5c09988fae3c0bae9ca25
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f058dd32ca8f20864f5c7e143887b5191a7be8d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352413"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 

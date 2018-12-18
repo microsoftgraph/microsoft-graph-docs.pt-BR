@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceManagementTroubleshootingEvent
 description: Leia as propriedades e as relações do objeto deviceManagementTroubleshootingEvent.
-ms.openlocfilehash: 5758a2549d5cd145f0caf9397c849f4f8c960f84
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92c34ad8bf29eb2517ffe12049b2a125aa5b006c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039372"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27352014"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Acessar deviceManagementTroubleshootingEvent
 
