@@ -1,12 +1,13 @@
 ---
 title: Criar thread de bate-papo
 description: Crie um novo segmento de bate-papo no canal especificado, fornecendo as mensagens de raiz.
-ms.openlocfilehash: 9a2a35a086c6689d1b76a56b70cd3637ec23c3a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: fcd1c08c05b29d2150f4c436eac7765f40900920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325610"
 ---
 # <a name="create-chat-thread"></a>Criar thread de bate-papo
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033350"
 
 Crie um novo segmento de bate-papo no [canal](../resources/channel.md) especificado, fornecendo as mensagens de raiz.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

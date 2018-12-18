@@ -1,12 +1,13 @@
 ---
 title: Atualizar regra
 description: Altere as propriedades graváveis em um objeto messageRule e salve as alterações.
-ms.openlocfilehash: ab59d0687f80ade06416ab5c4926fbde52754449
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 9ecef5c23502065d0d9e6fc32850b1ce89a1508c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037794"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321781"
 ---
 # <a name="update-rule"></a>Atualizar regra
 

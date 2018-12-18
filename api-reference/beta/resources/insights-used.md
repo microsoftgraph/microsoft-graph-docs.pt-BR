@@ -1,12 +1,13 @@
 ---
 title: usado o tipo de recurso
-description: 'Uma compreensão dos representando documentos usados por um usuário específico. As ideias retorna os documentos mais relevantes que um usuário visualizados ou acessados. Isso inclui documentos em:'
-ms.openlocfilehash: 3c82d268a67ef52d0ddfdad9193558080048ad6b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Uma compreensão dos representando documentos usados por um usuário específico. As ideias retorna os documentos mais relevantes que um usuário visualizados ou acessados.
+author: simonhult
+ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038991"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323482"
 ---
 # <a name="used-resource-type"></a>usado o tipo de recurso
 
@@ -36,7 +37,7 @@ Uma compreensão dos representando documentos usados por um usuário específico
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entidade        | Usado para navegar até o item que foi usado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
+| recurso      | Entity        | Usado para navegar até o item que foi usado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso

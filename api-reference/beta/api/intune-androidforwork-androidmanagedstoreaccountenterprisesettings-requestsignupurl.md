@@ -1,12 +1,13 @@
 ---
 title: Ação requestSignupUrl
 description: Ainda não documentado
-ms.openlocfilehash: bce7cdecfa588eff7937ad11ee0dfb6b95d02fca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c674334ebd6b3b48fb1cd17c23b042346cea466b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037604"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327591"
 ---
 # <a name="requestsignupurl-action"></a>Ação requestSignupUrl
 

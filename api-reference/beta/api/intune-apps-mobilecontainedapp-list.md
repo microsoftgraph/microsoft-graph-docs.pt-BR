@@ -1,12 +1,13 @@
 ---
 title: Lista mobileContainedApps
 description: Lista as propriedades e os relacionamentos dos objetos mobileContainedApp.
-ms.openlocfilehash: 77f15813f2f6a7b15d365e93d48bd3c923d36354
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66c361e6e6a3e4935722a72389e38b9bbda5811c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035561"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27315705"
 ---
 # <a name="list-mobilecontainedapps"></a>Lista mobileContainedApps
 

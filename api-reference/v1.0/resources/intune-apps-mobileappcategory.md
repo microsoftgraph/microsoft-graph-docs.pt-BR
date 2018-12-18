@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso mobileAppCategory
 description: Contém as propriedades para uma única categoria de aplicativo do Intune.
-ms.openlocfilehash: 57dfa4d03f8b48fa7e467f04e3529d74082af3d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8da7a0ed8ff136cafef8b575b391897f40be86bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323804"
 ---
 # <a name="mobileappcategory-resource-type"></a>Tipo de recurso mobileAppCategory
 

@@ -1,12 +1,13 @@
 ---
 title: Obter androidEnterpriseWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidEnterpriseWiFiConfiguration.
-ms.openlocfilehash: a9414f6cffa6602f8ac7015c70aa34b032cec5c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9a30c7f2e3e33912b8babb0f65a07584f5c03660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037613"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327626"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>Obter androidEnterpriseWiFiConfiguration
 

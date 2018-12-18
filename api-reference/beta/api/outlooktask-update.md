@@ -1,12 +1,13 @@
 ---
 title: Atualizar outlooktask
 description: Alterar propriedades graváveis de uma tarefa do Outlook.
-ms.openlocfilehash: 1e2afb7fb69b4f305ffc69d0f40960edf9b6ca2c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0a162c81ef32cb35e930b000678234ede20e4874
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033457"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325701"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
@@ -18,7 +19,7 @@ A propriedade **completedDateTime** pode ser definida pela ação **completa** o
 
 Por padrão, esta operação (e as operações de tarefa POST, GET e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -52,9 +53,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e hora em que a tarefa foi criada. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data em que o fuso horário especificado que a tarefa deve ser concluído.|
-|hasAttachments|Booliano|Defina como true se a tarefa tiver anexos.|
+|hasAttachments|Boolean|Defina como true se a tarefa tiver anexos.|
 |importance|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isReminderOn|Booliano|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
+|isReminderOn|Boolean|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação a tarefa. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |owner|String|O nome da pessoa que criou a tarefa.|
 |parentFolderId|String|O identificador exclusivo para a pasta do pai da tarefa.|

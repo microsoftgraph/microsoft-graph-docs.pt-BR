@@ -1,12 +1,13 @@
 ---
 title: Acessar deviceCompliancePolicy
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicy.
-ms.openlocfilehash: 93ee4bb8ab6396248672e8f550a57d13b3fab362
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 54c998f79e8b916e549751186e2967b0482e23bf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322789"
 ---
 # <a name="get-devicecompliancepolicy"></a>Acessar deviceCompliancePolicy
 

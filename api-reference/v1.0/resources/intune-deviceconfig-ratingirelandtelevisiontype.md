@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
-ms.openlocfilehash: 81da82d4048314af416dd5de351086df8c85fdef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f172fb7b5122b6191818ee4b0f2e827215353bf4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005947"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330629"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enum ratingIrelandTelevisionType
 

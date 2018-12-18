@@ -1,12 +1,13 @@
 ---
 title: Listar nomes
 description: Recupere uma lista de objetos nameditem.
-ms.openlocfilehash: aa1ac80262f32a075166ae37459f9bf9578925c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: e2c17c68ba2dbfda976f391308ad3fc6cd79ed55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007556"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320185"
 ---
 # <a name="list-names"></a>Listar nomes
 

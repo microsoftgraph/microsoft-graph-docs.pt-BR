@@ -1,12 +1,13 @@
 ---
 title: 'event: accept'
 description: Aceite o evento específico em um calendário do usuário.
-ms.openlocfilehash: ad56fea689da9d4311000bba8bbbda0a2ff11c5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 62ca800a118331ce36ca22cc26c26391d9f186c6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038081"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320955"
 ---
 # <a name="event-accept"></a>event: accept
 
@@ -14,7 +15,7 @@ ms.locfileid: "27038081"
 
 Aceite o [evento](../resources/event.md) específico em um [calendário](../resources/calendar.md)do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -50,7 +51,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|

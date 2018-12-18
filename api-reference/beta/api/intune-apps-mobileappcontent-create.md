@@ -1,12 +1,13 @@
 ---
 title: Criar mobileAppContent
 description: Criar um novo objeto mobileAppContent.
-ms.openlocfilehash: 2aa9c3cfc876a5a2f6f1f6e6345a19989174f29a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ea0a7bbfadaa4c481f274e297fece36dce7afa6c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040220"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322439"
 ---
 # <a name="create-mobileappcontent"></a>Criar mobileAppContent
 

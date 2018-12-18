@@ -1,12 +1,13 @@
 ---
 title: 'WorksheetProtection: unprotect'
 description: Desprotege uma planilha.
-ms.openlocfilehash: fdb5d74a9f47c6cc3a56527058db02c9c30a1ed2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: b64c85d6d8f7c37b71c2082f1730045eeb6a055a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007555"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27319989"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 
@@ -35,7 +36,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |password|string|Opcional. Senha de proteção para a planilha.|
 

@@ -1,18 +1,19 @@
 ---
 title: Obter educationSynchronizationErrors
 description: 'Obtenha os erros gerados durante a validação de e/ou durante uma sincronização de um perfil de sincronização de dados escola específico no inquilino. '
-ms.openlocfilehash: 8d4341eafa515f79de6dda2f40f22c990ed5926c
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: mmast-msft
+ms.openlocfilehash: afd494f77e8298007c70643321c05660569ee1ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27209660"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322152"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
 Obtenha os erros gerados durante a validação de e/ou durante uma sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |

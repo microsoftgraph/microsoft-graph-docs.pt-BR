@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windowsAutopilotProfileAssignmentStatus
 description: Ainda não documentado
-ms.openlocfilehash: 0ec6dfaa6dbc87fe1d38a495ac177a84e70796a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 255aab9770305baa29e73278b3bfceec1079351a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033279"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320997"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enum windowsAutopilotProfileAssignmentStatus
 

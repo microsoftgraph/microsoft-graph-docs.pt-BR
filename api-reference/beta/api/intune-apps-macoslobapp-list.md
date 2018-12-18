@@ -1,12 +1,13 @@
 ---
 title: Lista macOSLobApps
 description: Lista as propriedades e os relacionamentos dos objetos macOSLobApp.
-ms.openlocfilehash: 80c7baf887c18fe341f4f00780157034de03f868
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bf65160d55f63808c93e9a8ca1aef6f4918423b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038033"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318561"
 ---
 # <a name="list-macoslobapps"></a>Lista macOSLobApps
 

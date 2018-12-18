@@ -1,12 +1,13 @@
 ---
 title: Atualizar roleDefinition
 description: Atualizar as propriedades de um objeto roleDefinition.
-ms.openlocfilehash: 2ceb1024b45efdf47deabac3c90fe923638f42d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a25c78e9ce6de976627c7a073eb9716ae22546e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004527"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322334"
 ---
 # <a name="update-roledefinition"></a>Atualizar roleDefinition
 

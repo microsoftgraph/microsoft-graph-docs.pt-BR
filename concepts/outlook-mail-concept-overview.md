@@ -1,12 +1,13 @@
 ---
 title: Visão geral da API de email do Outlook
 description: O Outlook é um hub de comunicação de mensagens do Office 365. Ele também permite gerenciar contatos, agendar reuniões, encontrar informações sobre usuários em uma organização,
-ms.openlocfilehash: a4ae3c00b578cf2f3bce7a23b73ec47dadc81cf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 7cf498c91464ae14dcf8bf3c3d5dba4bdf030455
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091711"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306612"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 

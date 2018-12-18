@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: removeGroup'
 description: Remove um grupo de uma política de ciclo de vida.
-ms.openlocfilehash: 9f0d60cbf82b60e021623d2096af14cb0b6a0e8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: a22dae0a8065653972667c7de410330d6c91a454
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004549"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321725"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -38,7 +39,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro | Tipo | Descrição |
+| Parâmetro | Type | Descrição |
 |:---------------|:--------|:----------|
 |groupId|Guid| A ID do grupo que será removido da política.|
 

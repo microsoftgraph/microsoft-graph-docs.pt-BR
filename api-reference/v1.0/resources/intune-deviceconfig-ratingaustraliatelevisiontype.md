@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingAustraliaTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Austrália
-ms.openlocfilehash: 852d18b1cd7ae1486cf2826f0af169e4e89703d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8444f7db49cc8a0453f58d4710334f0876e570c3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004821"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323055"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enum ratingAustraliaTelevisionType
 

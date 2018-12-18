@@ -1,12 +1,13 @@
 ---
 title: tipo de enum vppTokenActionFailureReason
 description: Tipos possíveis razões para uma falha de token de ação do programa de compra de Volume do Apple.
-ms.openlocfilehash: 0fece0417a5585540f15e3f8a8631fd30eaa414e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f36b92238b097f50990bbdb2f3c3584b2ff48901
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035747"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320957"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enum vppTokenActionFailureReason
 
@@ -18,7 +19,7 @@ Tipos possíveis razões para uma falha de token de ação do programa de compra
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum.|
+|none|0|Nenhum.|
 |appleFailure|1|Houve um erro no serviço da Apple.|
 |internalError|2|Houve um erro interno.|
 |expiredVppToken|3|Houve um erro, porque o token do programa de compra de Volume do Apple expirou.|

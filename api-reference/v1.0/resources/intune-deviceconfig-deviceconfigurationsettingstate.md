@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso deviceConfigurationSettingState
 description: Estado da definição de configuração de um determinado dispositivo.
-ms.openlocfilehash: 056d4e1b501d438feb5bbda6b7910c9998c73cdb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 545cb9bf0be410a5e9a0e25dbc242399c6dbc61f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005235"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320640"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 
@@ -19,7 +20,7 @@ Estado da definição de configuração de um determinado dispositivo.
 |configuração|Cadeia de caracteres|A configuração que está sendo relatada|
 |settingName|Cadeia de caracteres|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
 |instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração está sendo relatada.|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
 |errorDescription|Cadeia de caracteres|Descrição do erro|
 |userId|Cadeia de caracteres|UserId|

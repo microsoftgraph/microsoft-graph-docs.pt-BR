@@ -1,12 +1,13 @@
 ---
 title: ação de revokeUserLicense
 description: REVOKE atribuído iOS VPP licença de usuário para fornecido app.
-ms.openlocfilehash: 0222623ba5e1f3de0122a632a3ea9554bbd2c0ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033948"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332806"
 ---
 # <a name="revokeuserlicense-action"></a>ação de revokeUserLicense
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |userId|String|ID de usuário para quem a licença de aplicativo atribuídas é a ser revogado|
-|notifyManagedDevices|Booliano|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Boolean|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
 
 
 

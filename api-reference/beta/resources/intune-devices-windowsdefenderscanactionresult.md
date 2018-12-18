@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsDefenderScanActionResult
 description: Resultado da última verificação do Windows Defender
-ms.openlocfilehash: 9adfa41f21bb23f5073f0d62c1c49bc1cfea3912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa988a971925cf61db0ab9f7e962162565e8a4b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039350"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323034"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Tipo de recurso windowsDefenderScanActionResult
 

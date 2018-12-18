@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsKioskMultipleApps
 description: A classe usada para identificar a configuração de vários modos app para a configuração de quiosque
-ms.openlocfilehash: 2b52cbe343c4a8d81391ad448e8f10f64fef295e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 30591e15d29b06ffb807c8b435d0e3c8a6a1b0fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035780"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330139"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso de windowsKioskMultipleApps
 
@@ -22,8 +23,8 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Aplicativos|coleção [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Estes são os únicos repositório aplicativos do Windows que estarão disponíveis para início no menu Iniciar.|
-|showTaskBar|Booliano|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
-|disallowDesktopApps|Booliano|Essa configuração indica que os aplicativos da área de trabalho são permitidos. Definido como true.|
+|showTaskBar|Boolean|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
+|disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos da área de trabalho são permitidos. Definido como true.|
 |startMenuLayoutXml|Binária|Permite que os administradores substituir o layout de início padrão e impede que o usuário alterá-la.O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML deve estar em formato binário.|
 
 ## <a name="relationships"></a>Relações

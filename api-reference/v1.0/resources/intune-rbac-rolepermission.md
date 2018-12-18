@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso rolePermission
 description: Ainda não documentado
-ms.openlocfilehash: 16c78e2ee4475a717879d501aabeb5fe2ae0d481
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0433c3f3a0ab3ef63fcd2a44776c083ddb5b91a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005037"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325673"
 ---
 # <a name="rolepermission-resource-type"></a>Tipo de recurso rolePermission
 

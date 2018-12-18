@@ -1,12 +1,13 @@
 ---
 title: 'Planejador: delta'
 description: Recupera as alterações em objetos que o usuário está inscrito em.
-ms.openlocfilehash: 7c866946f0c9a873b99ee4efd6d9e2c7ce646be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: TarkanSevilmis
+ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038490"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323363"
 ---
 # <a name="planner-delta"></a>Planejador: delta
 
@@ -20,7 +21,7 @@ O valor de retorno deste método deve conter heterogêneo tipos de objetos do pl
 
 Para obter mais informações sobre o controle de alterações nos dados do Microsoft Graph, consulte [consulta delta de usar para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -79,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
->**Observação:** No objeto response mostrado pode ser abreviado para melhorar a legibilidade. Todas as propriedades alteradas serão retornadas de uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade. Todas as propriedades alteradas serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

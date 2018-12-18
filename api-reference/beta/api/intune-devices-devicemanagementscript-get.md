@@ -1,12 +1,13 @@
 ---
 title: Obter deviceManagementScript
 description: Leia as propriedades e os relacionamentos do objeto deviceManagementScript.
-ms.openlocfilehash: a786b9fc86fbf729f44725d720a8d5808919c1c7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 830f7f98795333f22eab30655169e954d38ab782
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038773"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318890"
 ---
 # <a name="get-devicemanagementscript"></a>Obter deviceManagementScript
 

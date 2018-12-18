@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceManagementScript
 description: Atualize as propriedades de um objeto deviceManagementScript.
-ms.openlocfilehash: d88579f130607b08b0d34620b701be5c239bc03f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0eb397960a9ddae4041578761d5001b729f1464
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325309"
 ---
 # <a name="update-devicemanagementscript"></a>Atualizar deviceManagementScript
 
@@ -50,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de script a ser executado. Se não definido o script será executado uma vez|
-|scriptContent|Binário|O conteúdo de script.|
+|scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e hora em que o script de gerenciamento do dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação o script de gerenciamento de dispositivo.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que do script de gerenciamento de dispositivo é executado. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Booliano|Indica se a assinatura de script precisa ser verificada.|
+|enforceSignatureCheck|Boolean|Indica se a assinatura de script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
 
 

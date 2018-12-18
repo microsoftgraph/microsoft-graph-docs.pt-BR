@@ -1,12 +1,13 @@
 ---
 title: Lista managementConditionStatements
 description: Lista as propriedades e os relacionamentos dos objetos managementConditionStatement.
-ms.openlocfilehash: 7bc14cba615e6cbb4823f2b194f1756a7d728473
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b151a441417ab9083b0db077921d5d3c33ca121
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039641"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325386"
 ---
 # <a name="list-managementconditionstatements"></a>Lista managementConditionStatements
 

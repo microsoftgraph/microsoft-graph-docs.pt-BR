@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsWifiConfiguration
 description: Exclui um windowsWifiConfiguration.
-ms.openlocfilehash: 1f7eb10c93ab6344711fc7a8e86765a3897c75cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ef47e32a8a9ff8dffd60f61b29dc89b44d0701e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035728"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332484"
 ---
 # <a name="delete-windowswificonfiguration"></a>Excluir windowsWifiConfiguration
 

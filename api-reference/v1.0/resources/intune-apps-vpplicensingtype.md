@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso vppLicensingType
 description: Contém propriedades para o tipo de licenciamento iOS Volume-Purchased Program (VPP).
-ms.openlocfilehash: 4e02cc4ee100fe9fa6be0eb116cff18e343fd8ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7958266fe208e0a04bc72ab658291c58455c763b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322558"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
 

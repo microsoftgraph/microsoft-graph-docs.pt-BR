@@ -1,12 +1,13 @@
 ---
 title: Acessar managedIOSLobApp
 description: Leia as propriedades e as relações do objeto managedIOSLobApp.
-ms.openlocfilehash: 1fce864ed1e627366e65a2d6e22d4fcb05713124
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1cbd197c3ba7115a2a8ab443c88eb8fa27630b8d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004710"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331168"
 ---
 # <a name="get-managedioslobapp"></a>Acessar managedIOSLobApp
 

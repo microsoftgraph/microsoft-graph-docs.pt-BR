@@ -1,12 +1,13 @@
 ---
 title: Ação targetApps
 description: Ainda não documentado
-ms.openlocfilehash: 950f106162b39e73d603874e9cdba50e9d34d101
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4f080244cf290a5bc35f76e9cb63dc93942ed0e3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323118"
 ---
 # <a name="targetapps-action"></a>Ação targetApps
 

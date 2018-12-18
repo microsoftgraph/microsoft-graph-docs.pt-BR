@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceInstallState
 description: Exclui deviceInstallState.
-ms.openlocfilehash: 448dbd2a5c1ede82ab6bfd04fa6e17ddef947779
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b018fd8494c93ff78d79e155e15236d9856a694d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040986"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325295"
 ---
 # <a name="delete-deviceinstallstate"></a>Excluir deviceInstallState
 

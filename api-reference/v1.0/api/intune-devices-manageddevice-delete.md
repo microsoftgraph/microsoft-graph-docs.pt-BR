@@ -1,12 +1,13 @@
 ---
 title: Excluir managedDevice
 description: Exclui managedDevice.
-ms.openlocfilehash: 6e8a843cae9ea93362952c85afe199caccd6d6aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 24273ab5e6a930609b9a830ffc18b6ab0b456121
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004230"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323230"
 ---
 # <a name="delete-manageddevice"></a>Excluir managedDevice
 

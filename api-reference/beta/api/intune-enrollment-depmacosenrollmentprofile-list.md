@@ -1,12 +1,13 @@
 ---
 title: Lista depMacOSEnrollmentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depMacOSEnrollmentProfile.
-ms.openlocfilehash: 07f2f30da3073922eec3f49258a07e51f6556b00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c2b5ab4fbf333eb0bac6a57b9696e986e2c68fe
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321508"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>Lista depMacOSEnrollmentProfiles
 

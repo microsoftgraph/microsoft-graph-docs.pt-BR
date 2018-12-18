@@ -1,12 +1,13 @@
 ---
 title: Listar deviceComplianceScheduledActionForRules
 description: Listar propriedades e relações dos objetos deviceComplianceScheduledActionForRule.
-ms.openlocfilehash: 13225132bb59574e643ba2e1b0e4e6ebeb99c91c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 551b1c336418c0abef8175b6f474904779eb4b2f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321536"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>Listar deviceComplianceScheduledActionForRules
 

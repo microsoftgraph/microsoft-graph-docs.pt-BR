@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso appListItem
 description: Representa um aplicativo na lista de aplicativos gerenciados
-ms.openlocfilehash: c9b39b5fdee8bb503ef66f729a6ee478581a6391
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a7e33b986f95f610abff2c7b5321f48f3668e488
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004051"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323594"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
 

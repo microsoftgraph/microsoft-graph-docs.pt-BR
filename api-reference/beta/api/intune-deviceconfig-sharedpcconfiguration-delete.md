@@ -1,12 +1,13 @@
 ---
 title: Excluir sharedPCConfiguration
 description: Exclui sharedPCConfiguration.
-ms.openlocfilehash: 8cc07605d28baa9b424dd8074ef12d53cb15ec4d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2de013448728da0942b13696be87820b0229fce0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038207"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318442"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Excluir sharedPCConfiguration
 

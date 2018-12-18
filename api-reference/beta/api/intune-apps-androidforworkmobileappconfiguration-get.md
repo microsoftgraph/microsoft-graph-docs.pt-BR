@@ -1,12 +1,13 @@
 ---
 title: Obter androidForWorkMobileAppConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkMobileAppConfiguration.
-ms.openlocfilehash: 67a22287358f1758300542f57cb3f90bee25b469
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cad80705b5ba68970acd4ad71e3f0d5558a072f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035823"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325687"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Obter androidForWorkMobileAppConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: 'Range: Column'
 description: Obtém uma coluna incluída no intervalo.
-ms.openlocfilehash: a445a567209f1d043cecf62b6f368f079ea70ca2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 4ba85cdfa0920a2da8f25c9cd38502372d1a30c9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005821"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326646"
 ---
 # <a name="range-column"></a>Range: Column
 
@@ -37,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/column
 ## <a name="path-parameters"></a>Parâmetros do caminho
 Forneça o caminho da solicitação, os seguintes parâmetros.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |column|Int32|O número da coluna do intervalo a ser recuperado. Indexados com zero.|
 

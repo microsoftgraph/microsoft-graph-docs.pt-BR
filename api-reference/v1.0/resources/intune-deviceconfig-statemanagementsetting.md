@@ -1,12 +1,13 @@
 ---
 title: tipo de enum stateManagementSetting
 description: Configuração de gerenciamento de estado.
-ms.openlocfilehash: 788dde589956d7ea1574f4344068c1ea1f9f59aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 480e7ea46c47e6a70b6c45d5903382a71b1dc4be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321200"
 ---
 # <a name="statemanagementsetting-enum-type"></a>tipo de enum stateManagementSetting
 

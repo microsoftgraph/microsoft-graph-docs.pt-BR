@@ -1,12 +1,13 @@
 ---
 title: Visão geral dos grupos do Office 365 no Microsoft Graph
 description: 'Os grupos do Office 365 fornecem o serviço de associação fundamental para os usuários compartilharem conversas, arquivos, anotações, calendários, planos e muitos outros ativos. '
-ms.openlocfilehash: bf230b6e698c065a443ddab47b68439f2d6291d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 7dcb13210a69737ae5f7889fe797afd9fec19c81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091637"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320458"
 ---
 # <a name="overview-of-office-365-groups-in-microsoft-graph"></a>Visão geral dos grupos do Office 365 no Microsoft Graph
 

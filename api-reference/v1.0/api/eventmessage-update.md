@@ -1,12 +1,13 @@
 ---
 title: Atualizar eventMessage
 description: Atualize as propriedades de um objeto eventMessage.
-ms.openlocfilehash: 2bad679d4e460705c1716bd682c9e1afb0acc22b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 20c910ae2d6562a4bb9a593a0fac32269dbd413f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004404"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27320417"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -41,9 +42,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |categories|String|As categorias associadas à mensagem.|
 |importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 
 ## <a name="response"></a>Resposta
 

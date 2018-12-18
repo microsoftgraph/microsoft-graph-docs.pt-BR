@@ -1,12 +1,13 @@
 ---
 title: Acessar managedMobileLobApp
 description: Leia as propriedades e as relações do objeto managedMobileLobApp.
-ms.openlocfilehash: 5a177ad9761f569a604a5a0122a3a4bb8ad828d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b15f4337c8ff5669d50ada9335f1fde7b111f205
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006671"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325463"
 ---
 # <a name="get-managedmobilelobapp"></a>Acessar managedMobileLobApp
 

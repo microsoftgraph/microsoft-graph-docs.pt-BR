@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsDeviceAccount
 description: Ainda não documentado
-ms.openlocfilehash: ca353a1bad5ef602fd930876c6640866639d5818
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ba97e6eadfe188b0e8c9f3ef90a56f738bf1993
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034409"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326961"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Tipo de recurso windowsDeviceAccount
 

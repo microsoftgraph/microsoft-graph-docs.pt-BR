@@ -1,12 +1,13 @@
 ---
 title: Obter embeddedSIMActivationCodePool
 description: Leia as propriedades e os relacionamentos do objeto embeddedSIMActivationCodePool.
-ms.openlocfilehash: 97752212df207e5c530c785b699382ac8c0f4a64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f81a9d52e824d81b50be4de32a0ceee66a5db06c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034192"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27318526"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>Obter embeddedSIMActivationCodePool
 

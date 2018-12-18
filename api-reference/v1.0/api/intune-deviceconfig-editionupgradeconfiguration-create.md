@@ -1,12 +1,13 @@
 ---
 title: Criar editionUpgradeConfiguration
 description: Cria um novo objeto editionUpgradeConfiguration.
-ms.openlocfilehash: 2c71c4514fd00c5ae50e5fe15b3a6b9c904e8ded
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9ea7bb6206b882f81cad3cfd62419dc887f04898
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003828"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332736"
 ---
 # <a name="create-editionupgradeconfiguration"></a>Criar editionUpgradeConfiguration
 

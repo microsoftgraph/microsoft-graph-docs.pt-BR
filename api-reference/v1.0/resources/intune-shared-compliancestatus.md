@@ -1,12 +1,13 @@
 ---
 title: tipo de enum complianceStatus
 description: Ainda não documentado
-ms.openlocfilehash: 6df7106711038034ab9e975bb92df007310d372a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e3c30e4751a642e8a772f1a7936f155c277cc2a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004376"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323377"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de enum complianceStatus
 

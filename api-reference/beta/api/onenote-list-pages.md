@@ -1,12 +1,13 @@
 ---
 title: Listar páginas
 description: Recuperar uma lista de objetos page.
-ms.openlocfilehash: 9144d443b7fe73cc2720c85adb4199ae6ab9a589
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: 75673f046d062b22285213df0c20445cc41910be
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041194"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27316643"
 ---
 # <a name="list-pages"></a>Listar páginas
 

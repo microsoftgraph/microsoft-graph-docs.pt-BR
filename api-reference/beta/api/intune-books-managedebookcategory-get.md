@@ -1,12 +1,13 @@
 ---
 title: Obter managedEBookCategory
 description: Leia as propriedades e os relacionamentos do objeto managedEBookCategory.
-ms.openlocfilehash: 6c97031aadcd373b0f5cfb520d775e4e999b423d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3a3ece59025b28ed26ffa03931d1de67c45ed140
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27321956"
 ---
 # <a name="get-managedebookcategory"></a>Obter managedEBookCategory
 

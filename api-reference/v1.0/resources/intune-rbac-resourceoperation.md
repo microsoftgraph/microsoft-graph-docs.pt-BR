@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso resourceOperation
 description: " operação é usada para atribuir um recurso de MobileApp a um grupo de segurança AAD.  Não é possível modificar as operações de recursos para funções internas."
-ms.openlocfilehash: eeefdd8960df680b4011e773b73c0ecbffd718b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fa004e2f1f41ca03d4b505599ef36e3548c1ab67
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331462"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 

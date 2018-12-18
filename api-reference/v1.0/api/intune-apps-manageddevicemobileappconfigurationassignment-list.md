@@ -1,12 +1,13 @@
 ---
 title: Listar managedDeviceMobileAppConfigurationAssignments
 description: Listar propriedades e relações dos objetos managedDeviceMobileAppConfigurationAssignment.
-ms.openlocfilehash: b65ce05047beab31acb7a34bde749be7788d2d91
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: db0a64dec86aa6dac0d869509de1e5a1abd5648e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323265"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>Listar managedDeviceMobileAppConfigurationAssignments
 
