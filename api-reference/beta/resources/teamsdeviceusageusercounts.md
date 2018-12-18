@@ -1,32 +1,33 @@
 ---
 title: tipo de recurso de teamsDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 9640af67efc18f0a70c636673169e884ce82d971
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 1255a8e1e92bb461d5c100c72e9030f57db5f8fa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27306507"
 ---
-# <a name="teamsdeviceusageusercounts-resource-type"></a><span data-ttu-id="3c9b1-103">tipo de recurso de teamsDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="3c9b1-103">teamsDeviceUsageUserCounts resource type</span></span>
+# <a name="teamsdeviceusageusercounts-resource-type"></a><span data-ttu-id="3a5e4-103">tipo de recurso de teamsDeviceUsageUserCounts</span><span class="sxs-lookup"><span data-stu-id="3a5e4-103">teamsDeviceUsageUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3c9b1-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3c9b1-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3a5e4-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3a5e4-104">Properties</span></span>
 
-| <span data-ttu-id="3c9b1-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3c9b1-105">Property</span></span>          | <span data-ttu-id="3c9b1-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="3c9b1-106">Type</span></span>   |
+| <span data-ttu-id="3a5e4-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3a5e4-105">Property</span></span>          | <span data-ttu-id="3a5e4-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="3a5e4-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="3c9b1-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="3c9b1-107">reportRefreshDate</span></span> | <span data-ttu-id="3c9b1-108">Data</span><span class="sxs-lookup"><span data-stu-id="3c9b1-108">Date</span></span>   |
-| <span data-ttu-id="3c9b1-109">web</span><span class="sxs-lookup"><span data-stu-id="3c9b1-109">web</span></span>               | <span data-ttu-id="3c9b1-110">Int64</span><span class="sxs-lookup"><span data-stu-id="3c9b1-110">Int64</span></span>  |
-| <span data-ttu-id="3c9b1-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="3c9b1-111">windowsPhone</span></span>      | <span data-ttu-id="3c9b1-112">Int64</span><span class="sxs-lookup"><span data-stu-id="3c9b1-112">Int64</span></span>  |
-| <span data-ttu-id="3c9b1-113">androidPhone</span><span class="sxs-lookup"><span data-stu-id="3c9b1-113">androidPhone</span></span>      | <span data-ttu-id="3c9b1-114">Int64</span><span class="sxs-lookup"><span data-stu-id="3c9b1-114">Int64</span></span>  |
-| <span data-ttu-id="3c9b1-115">IOS</span><span class="sxs-lookup"><span data-stu-id="3c9b1-115">ios</span></span>               | <span data-ttu-id="3c9b1-116">Int64</span><span class="sxs-lookup"><span data-stu-id="3c9b1-116">Int64</span></span>  |
-| <span data-ttu-id="3c9b1-117">mac</span><span class="sxs-lookup"><span data-stu-id="3c9b1-117">mac</span></span>               | <span data-ttu-id="3c9b1-118">Int64</span><span class="sxs-lookup"><span data-stu-id="3c9b1-118">Int64</span></span>  |
-| <span data-ttu-id="3c9b1-119">Windows</span><span class="sxs-lookup"><span data-stu-id="3c9b1-119">windows</span></span>           | <span data-ttu-id="3c9b1-120">Int64</span><span class="sxs-lookup"><span data-stu-id="3c9b1-120">Int64</span></span>  |
-| <span data-ttu-id="3c9b1-121">reportDate</span><span class="sxs-lookup"><span data-stu-id="3c9b1-121">reportDate</span></span>        | <span data-ttu-id="3c9b1-122">Data</span><span class="sxs-lookup"><span data-stu-id="3c9b1-122">Date</span></span>   |
-| <span data-ttu-id="3c9b1-123">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="3c9b1-123">reportPeriod</span></span>      | <span data-ttu-id="3c9b1-124">String</span><span class="sxs-lookup"><span data-stu-id="3c9b1-124">String</span></span> |
+| <span data-ttu-id="3a5e4-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="3a5e4-107">reportRefreshDate</span></span> | <span data-ttu-id="3a5e4-108">Data</span><span class="sxs-lookup"><span data-stu-id="3a5e4-108">Date</span></span>   |
+| <span data-ttu-id="3a5e4-109">web</span><span class="sxs-lookup"><span data-stu-id="3a5e4-109">web</span></span>               | <span data-ttu-id="3a5e4-110">Int64</span><span class="sxs-lookup"><span data-stu-id="3a5e4-110">Int64</span></span>  |
+| <span data-ttu-id="3a5e4-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="3a5e4-111">windowsPhone</span></span>      | <span data-ttu-id="3a5e4-112">Int64</span><span class="sxs-lookup"><span data-stu-id="3a5e4-112">Int64</span></span>  |
+| <span data-ttu-id="3a5e4-113">androidPhone</span><span class="sxs-lookup"><span data-stu-id="3a5e4-113">androidPhone</span></span>      | <span data-ttu-id="3a5e4-114">Int64</span><span class="sxs-lookup"><span data-stu-id="3a5e4-114">Int64</span></span>  |
+| <span data-ttu-id="3a5e4-115">IOS</span><span class="sxs-lookup"><span data-stu-id="3a5e4-115">ios</span></span>               | <span data-ttu-id="3a5e4-116">Int64</span><span class="sxs-lookup"><span data-stu-id="3a5e4-116">Int64</span></span>  |
+| <span data-ttu-id="3a5e4-117">mac</span><span class="sxs-lookup"><span data-stu-id="3a5e4-117">mac</span></span>               | <span data-ttu-id="3a5e4-118">Int64</span><span class="sxs-lookup"><span data-stu-id="3a5e4-118">Int64</span></span>  |
+| <span data-ttu-id="3a5e4-119">Windows</span><span class="sxs-lookup"><span data-stu-id="3a5e4-119">windows</span></span>           | <span data-ttu-id="3a5e4-120">Int64</span><span class="sxs-lookup"><span data-stu-id="3a5e4-120">Int64</span></span>  |
+| <span data-ttu-id="3a5e4-121">reportDate</span><span class="sxs-lookup"><span data-stu-id="3a5e4-121">reportDate</span></span>        | <span data-ttu-id="3a5e4-122">Data</span><span class="sxs-lookup"><span data-stu-id="3a5e4-122">Date</span></span>   |
+| <span data-ttu-id="3a5e4-123">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="3a5e4-123">reportPeriod</span></span>      | <span data-ttu-id="3a5e4-124">String</span><span class="sxs-lookup"><span data-stu-id="3a5e4-124">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="3c9b1-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3c9b1-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3a5e4-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3a5e4-125">JSON representation</span></span>
 
-<span data-ttu-id="3c9b1-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3c9b1-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3a5e4-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3a5e4-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
