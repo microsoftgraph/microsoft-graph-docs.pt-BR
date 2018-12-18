@@ -1,12 +1,13 @@
 ---
 title: Criar equipe
 description: Crie uma nova equipe em um grupo.
-ms.openlocfilehash: d7afffb331bf4a1714083ebb5f95147ec48a65d0
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 5bda73b667d23065bf8500346e7ce188dac318c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222545"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361702"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -18,7 +19,7 @@ Para criar uma equipe, o grupo deve ter um mínimo de um proprietário.
 
 Se o grupo foi criado há menos de 15 minutos, é possível para a chamada de equipe criar falha com um código de 404 erro devido aos atrasos de replicação. O padrão recomendado é repetir a chamada de equipe criar três vezes, com um atraso de segunda 10 entre chamadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

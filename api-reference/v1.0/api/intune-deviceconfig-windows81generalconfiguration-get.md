@@ -1,12 +1,13 @@
 ---
 title: Obter windows81GeneralConfiguration
 description: Ler propriedades e relações do objeto windows81GeneralConfiguration.
-ms.openlocfilehash: cc64f6ac791648b02558c7ce30e21b78841fac0e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fd35bee5e035317dd67b3eb2bb0ec20676e9a4d1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354016"
 ---
 # <a name="get-windows81generalconfiguration"></a>Obter windows81GeneralConfiguration
 

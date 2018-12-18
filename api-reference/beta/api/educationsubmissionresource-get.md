@@ -1,12 +1,13 @@
 ---
 title: Obter educationSubmissionResource
-description: " lista de recursos e devem ser consideradas de trabalho em andamento por um estudante. Este recurso é empacotado com um ponteiro possível de volta para o recurso de atribuição, se ele tiver sido copiado a atribuição."
-ms.openlocfilehash: 1bba0b8b4e89b0f3bc564f48187cfe46fc49cf46
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Recupera as propriedades de um recurso específico associado com o envio. Este recurso é na lista de recursos 'trabalho' e deve ser considerado de trabalho em andamento por um estudante. Este recurso é empacotado com um ponteiro possível de volta para o recurso de atribuição, se ele tiver sido copiado a atribuição.
+author: dipakboyed
+ms.openlocfilehash: d7c1e6fcbe97a9a0a4c1735e37798097f2605b30
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033304"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361912"
 ---
 # <a name="get-educationsubmissionresource"></a>Obter educationSubmissionResource
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033304"
 
 Recupera as propriedades de um recurso específico associado com o envio. Este recurso é na lista de recursos "trabalho" e deve ser considerado de trabalho em andamento por um estudante. Este recurso é empacotado com um ponteiro possível de volta para o recurso de atribuição, se ele tiver sido copiado a atribuição.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,12 +1,13 @@
 ---
 title: Criar deviceCategory
 description: Cria um novo objeto deviceCategory.
-ms.openlocfilehash: 43a731716150a7cc9515a6497840cc47271e88c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c01fd7c953a0b0fd148390d80aa27acb010daa3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005919"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362010"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 

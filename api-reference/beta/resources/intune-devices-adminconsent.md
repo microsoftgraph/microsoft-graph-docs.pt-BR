@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de adminConsent
 description: Informações de consentimento do administrador.
-ms.openlocfilehash: da7197c995d9c87ab69db11ae0c6c0804482877d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7e535eb3475745c8c8aabb2701d9b9e24b8d3b02
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037960"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354079"
 ---
 # <a name="adminconsent-resource-type"></a>tipo de recurso de adminConsent
 

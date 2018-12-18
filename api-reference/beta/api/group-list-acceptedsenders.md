@@ -1,12 +1,13 @@
 ---
 title: Listar acceptedSenders
 description: Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.
-ms.openlocfilehash: a4a4970abe0a6a866ed26fa04ebe3f7a0cee1f8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 8cd753dbdeea78e18e08a75ed4588ff67c225f09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040412"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361814"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 

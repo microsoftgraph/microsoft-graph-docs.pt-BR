@@ -1,12 +1,13 @@
 ---
 title: Integração dos alertas da API de Segurança do Microsoft Graph com o SIEM usando o Azure Monitor
 description: Os provedores de Segurança do Microsoft Graph podem ser gerenciados por meio de um único ponto de extremidade REST. Este ponto de extremidade pode ser configurado para o Azure Monitor, que dá suporte a conectores para vários produtos SIEM. As instruções nas etapas 1 e 2 deste artigo referem-se a todos os conectores do Azure Monitor compatíveis com o consumo por Hubs de Eventos. Este artigo descreve a integração de ponta a ponta do conector Splunk SIEM.
-ms.openlocfilehash: bdd1d1e192a4945c67727d20e594006a387fb156
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Preetikr
+ms.openlocfilehash: f303bc9e75599df9882e2c4dfa415481fd7890e1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091661"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27301502"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-your-siem-using-azure-monitor"></a>Integração dos alertas da API de Segurança do Microsoft Graph com o SIEM usando o Azure Monitor
 

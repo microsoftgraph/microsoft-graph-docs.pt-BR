@@ -1,12 +1,13 @@
 ---
 title: Lista iosVpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosVpnConfiguration.
-ms.openlocfilehash: dba55598a3ce7b01b871a5d8605a1cf18891ebdf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eeebea3787c5a37baa16a29c0f00a973903bffc0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033027"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362843"
 ---
 # <a name="list-iosvpnconfigurations"></a>Lista iosVpnConfigurations
 

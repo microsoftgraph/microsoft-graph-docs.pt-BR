@@ -1,12 +1,13 @@
 ---
 title: Criar windowsOfficeClientSecurityConfiguration
 description: Crie um novo objeto de windowsOfficeClientSecurityConfiguration.
-ms.openlocfilehash: 8d2764a0fffe5dc0bbae863e2747db05051e456f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 011212ddfe1790ebfb0c6191a41e4ba670555171
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033305"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324714"
 ---
 # <a name="create-windowsofficeclientsecurityconfiguration"></a>Criar windowsOfficeClientSecurityConfiguration
 

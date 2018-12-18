@@ -1,12 +1,13 @@
 ---
 title: Criar androidManagedStoreAppConfigurationSchema
 description: Crie um novo objeto de androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: cada5b0aae884517e42cdc7f1355d979fb4a4d9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e8cb3cc56eb1e6f0cded7539b86aea24194fba1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036513"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327731"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Criar androidManagedStoreAppConfigurationSchema
 
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
-|exampleJson|Binário|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
+|exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
 |schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Coleção de itens que representa uma opção de configuração nomeada no esquema|
 
 

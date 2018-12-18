@@ -1,12 +1,13 @@
 ---
 title: Criar deviceComplianceScheduledActionForRule
 description: Criar um novo objeto deviceComplianceScheduledActionForRule.
-ms.openlocfilehash: 79fdd763f3b194d27fad81cebb743f3455749dc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2bf76bc65fe139d41364c9fc1a162d2eadaedec4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327080"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Criar deviceComplianceScheduledActionForRule
 

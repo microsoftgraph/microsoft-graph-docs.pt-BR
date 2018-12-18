@@ -1,12 +1,13 @@
 ---
 title: Atualizar mobileAppAssignment
 description: Atualizar as propriedades de um objeto mobileAppAssignment.
-ms.openlocfilehash: 218197991a6bc1c7d80053159efd11d138052298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee6a6de3d20257121721ccb94f316230db8112d2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033293"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361114"
 ---
 # <a name="update-mobileappassignment"></a>Atualizar mobileAppAssignment
 

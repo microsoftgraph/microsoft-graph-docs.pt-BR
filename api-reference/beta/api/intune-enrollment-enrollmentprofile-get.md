@@ -1,12 +1,13 @@
 ---
 title: Obter enrollmentProfile
 description: Leia as propriedades e os relacionamentos do objeto enrollmentProfile.
-ms.openlocfilehash: 4aad25465b6acee5d348db7ccb81be3cf4223d16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19cc27203e7676414862bcd5587cb054fc7d7014
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038799"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327752"
 ---
 # <a name="get-enrollmentprofile"></a>Obter enrollmentProfile
 

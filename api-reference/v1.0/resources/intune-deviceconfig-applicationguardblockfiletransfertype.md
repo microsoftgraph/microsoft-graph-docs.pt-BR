@@ -1,12 +1,13 @@
 ---
 title: tipo de enum applicationGuardBlockFileTransferType
 description: Valores possíveis para applicationGuardBlockFileTransfer
-ms.openlocfilehash: ba0143a86dfd51f9a981e7ea4d399ac48e37d167
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5ec313ea62341734152382f3ff7852bf8bc051bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003388"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326618"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>tipo de enum applicationGuardBlockFileTransferType
 

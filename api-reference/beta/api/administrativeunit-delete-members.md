@@ -1,12 +1,13 @@
 ---
 title: Remover um membro
 description: Use essa API para remover o membro (usuário ou grupo) a partir de uma unidade administrativa.
-ms.openlocfilehash: dbf8ceaf66436ff44ea014ae5383e2f669fc7466
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 0b7b03042982b1eb50d9dfd7382186f0b3d28469
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034348"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353414"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034348"
 
 Use essa API para remover o membro (usuário ou grupo) a partir de uma unidade administrativa.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

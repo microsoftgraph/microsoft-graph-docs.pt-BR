@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 description: Contém propriedades usadas para atribuir um aplicativo móvel da Microsoft Store para Empresas a um grupo.
-ms.openlocfilehash: 62224841548c01ce84901251ab67204b82cbb4c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6c7fed2efda2b4c6d36eb53923b578535cce90e9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007398"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354618"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>tipo de recurso microsoftStoreForBusinessAppAssignmentSettings
 

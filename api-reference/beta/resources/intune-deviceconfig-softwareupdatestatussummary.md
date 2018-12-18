@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso softwareUpdateStatusSummary
 description: Ainda não documentado
-ms.openlocfilehash: d98a089c0dd7ac5b980455d00e28c62e3b38a944
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: fcdf2045afbd22596a90596b2f171ef79f71e9fb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033316"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326506"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Tipo de recurso softwareUpdateStatusSummary
 

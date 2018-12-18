@@ -1,12 +1,13 @@
 ---
 title: Excluir windowsUpdateForBusinessConfiguration
 description: Exclui windowsUpdateForBusinessConfiguration.
-ms.openlocfilehash: 6d29c695a0ef1973bf322ea3debd001848436093
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a036530f5c57ea7b856bb6ba210609b77f4ebff4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036742"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27324742"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>Excluir windowsUpdateForBusinessConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: 'notebook: getRecentNotebooks'
 description: Obtenha uma lista de instâncias recentNotebook que tenham sido acessadas pelo usuário conectado.
-ms.openlocfilehash: 598d703732060f6d2074ce53c3157597c0d3cc7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: Jewan-microsoft
+ms.openlocfilehash: ca0f39b3a7184e667b8ed848ac89ffd78ae096f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005211"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354135"
 ---
 # <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
 
@@ -33,7 +34,7 @@ O `<id | userPrincipalName>` para o usuário deve corresponder ao usuário codif
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |includePersonalNotebooks|Booliano|Inclua os blocos de anotações de propriedade do usuário. Defina para `true` para incluir os blocos de anotações pertencentes ao usuário; caso contrário, configure para `false`. Se você não incluir o parâmetro `includePersonalNotebooks`, sua solicitação retornará uma resposta de erro `400`.|
 

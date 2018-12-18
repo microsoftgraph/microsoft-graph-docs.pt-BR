@@ -1,12 +1,13 @@
 ---
 title: Acessar managedDeviceMobileAppConfigurationAssignment
 description: Leia as propriedades e as relações do objeto managedDeviceMobileAppConfigurationAssignment.
-ms.openlocfilehash: 4e6b6051b0beb5bc0a9f4f19aa16821fae067f6c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 12c70f594a944893a48ddfeb39b66e962e22ae87
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005393"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327661"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>Acessar managedDeviceMobileAppConfigurationAssignment
 

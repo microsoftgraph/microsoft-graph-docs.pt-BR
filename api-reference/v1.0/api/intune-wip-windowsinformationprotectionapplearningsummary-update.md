@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsInformationProtectionAppLearningSummary
 description: Atualizar as propriedades de um objeto windowsInformationProtectionAppLearningSummary.
-ms.openlocfilehash: 54eb3de891ad10a41bbe4ca747227b8b3af4f1d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 92302f282987a4cc6c56fbf3347e419696f58ee4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004462"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354317"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Atualizar windowsInformationProtectionAppLearningSummary
 

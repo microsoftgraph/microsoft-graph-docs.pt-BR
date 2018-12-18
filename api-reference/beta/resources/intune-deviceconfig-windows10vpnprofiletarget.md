@@ -1,12 +1,13 @@
 ---
 title: tipo de enum windows10VpnProfileTarget
 description: Tipos de destino de perfil do Windows 10 VPN.
-ms.openlocfilehash: 8868811a0459ac5428fe7d50e5cf3315742ecc2e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 66adac1fe6e517a442988a5f8e43f9aaafa2793e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038108"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361744"
 ---
 # <a name="windows10vpnprofiletarget-enum-type"></a>tipo de enum windows10VpnProfileTarget
 

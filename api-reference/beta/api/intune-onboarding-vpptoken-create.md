@@ -1,12 +1,13 @@
 ---
 title: Criar vppToken
 description: Criar um novo objeto vppToken.
-ms.openlocfilehash: f0213227e6bdcc33089bc224215b6722d02073dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ab4c4c061f7a527583768382f309ef8c9adcb709
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038835"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353001"
 ---
 # <a name="create-vpptoken"></a>Criar vppToken
 
@@ -59,10 +60,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o vppTok
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
 |displayName|String|Um administrador especificado token nome amigável.|
 |locationName|String|Localização de token retornada da Apple VPP.|
-|claimTokenManagementFromExternalMdm|Booliano|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
+|claimTokenManagementFromExternalMdm|Boolean|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
 
 
 

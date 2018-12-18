@@ -1,12 +1,13 @@
 ---
 title: 'chamar: changeScreenSharingRole'
 description: Iniciar e interromper o compartilhamento de tela na chamada. Essa API é usada para permitir que aplicativos compartilhar o conteúdo de tela com os participantes de uma chamada ou reunião.
-ms.openlocfilehash: f0aa69b43813bd248048ad1bd965dfbc4afc012b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036545"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328361"
 ---
 # <a name="call-changescreensharingrole"></a>chamar: changeScreenSharingRole
 
@@ -14,14 +15,14 @@ ms.locfileid: "27036545"
 
 Iniciar e interromper o compartilhamento de tela na chamada. Essa API é usada para permitir que aplicativos compartilhar o conteúdo de tela com os participantes de uma chamada ou reunião.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo                            | Calls.AccessMedia.All                       |
+| Application                            | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |role|String|Os valores possíveis são: 'Visualizador', 'Compartilhador'|
 

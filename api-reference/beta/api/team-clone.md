@@ -1,12 +1,13 @@
 ---
 title: Como clonar uma equipe
 description: Crie uma cópia de uma equipe. Esta operação também cria uma cópia do grupo correspondente.
-ms.openlocfilehash: b49fa4262fe65be03b99f2107e9ef1b2799bfeb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 79ae6f770e009f262adbda4872ddc51af626688f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041068"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361926"
 ---
 # <a name="clone-a-team"></a>Como clonar uma equipe
 
@@ -26,7 +27,7 @@ Quando as guias são clonados, eles são colocados em um estado não configurado
 A clonagem é uma operação de execução longa.
 Depois que o clone POST retorna, você precisará fazer a [operação](../resources/teamsasyncoperation.md) para verificar se ele está "em execução" ou "sucedidas" ou "Falha". Você deve continuar GET até que o status não é "executando". O atraso recomendado entre obtém é 5 segundos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

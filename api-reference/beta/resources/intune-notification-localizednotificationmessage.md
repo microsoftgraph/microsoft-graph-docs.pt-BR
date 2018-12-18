@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso localizedNotificationMessage
 description: O conteúdo do texto de um Modelo de mensagem de notificação para a localidade especificada.
-ms.openlocfilehash: 34daebc90ca6a58d28b351eebcfcc3a29b8b5021
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e04d1d6d98cbbdbbb2b28250305e3b42a20af688
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038657"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327087"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>tipo de recurso localizedNotificationMessage
 

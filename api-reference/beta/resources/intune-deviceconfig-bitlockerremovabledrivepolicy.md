@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso bitLockerRemovableDrivePolicy
 description: Políticas da unidade removível do BitLocker.
-ms.openlocfilehash: 726fb8aa0493ce17984719403a6fcf800300a9ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 15de11384195350b455cd4696a260aedf1de7a26
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040035"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354030"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>Tipo de recurso bitLockerRemovableDrivePolicy
 

@@ -1,12 +1,13 @@
 ---
 title: Listar usuários
 description: Recupera uma lista de objetos de usuário.
-ms.openlocfilehash: 13c9b2847e7acc1999f3ab23fadfea371036caf3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 6d80bde11d5370a87432394c191519bc9a1780ab
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361933"
 ---
 # <a name="list-users"></a>Listar usuários
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir windows10CompliancePolicy
 description: Exclui windows10CompliancePolicy.
-ms.openlocfilehash: dd02bbed89b30287aa11741583b55e165c29096b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 572961de375f2c9db35d70e30db743a3c6a25dcf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007274"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357922"
 ---
 # <a name="delete-windows10compliancepolicy"></a>Excluir windows10CompliancePolicy
 

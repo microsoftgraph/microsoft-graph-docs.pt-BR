@@ -1,12 +1,13 @@
 ---
 title: tipo de enum defenderCloudBlockLevelType
 description: Valores possíveis de nível de bloco de nuvem
-ms.openlocfilehash: 6ea336418a90a3d4caeab074cb71fce997ea1275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 19c101cc82673009a39d6545f7340fabf65b287a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005442"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326611"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>tipo de enum defenderCloudBlockLevelType
 

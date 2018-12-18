@@ -1,19 +1,20 @@
 ---
 title: Listar proprietários
 description: Recupere uma lista de objetos directoryObject.
-ms.openlocfilehash: 2db43b62d1d30813ed80e6d612e5c0d2770e283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 8b8cb478867639afa07f986c86f38e2460a17338
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033699"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27325862"
 ---
 # <a name="list-owners"></a>Listar proprietários
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere uma lista de objetos directoryObject.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

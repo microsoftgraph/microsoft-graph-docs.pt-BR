@@ -1,12 +1,13 @@
 ---
 title: Crie uma equipe
 description: Crie uma nova equipe.
-ms.openlocfilehash: 3f2fa97af217d6109f169e5b2ef75a0c71bde2e7
-ms.sourcegitcommit: 12c6e82f1417022540e534ebadbd0e8d7fb5abde
+author: nkramer
+ms.openlocfilehash: c77ca5ab76640c9c310b628f4eee106e7443fee7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "27210134"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362836"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -14,7 +15,7 @@ ms.locfileid: "27210134"
 
 Crie uma nova [equipe](../resources/team.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

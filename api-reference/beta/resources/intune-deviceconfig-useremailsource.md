@@ -1,12 +1,13 @@
 ---
 title: tipo de enum userEmailSource
 description: Valores possíveis para o nome de usuário origem ou fonte de email.
-ms.openlocfilehash: d2da2f1ad801d494439d7456f8347131c8523bd9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3be75acdb6d5de5310cbd0ad8a562961a476df45
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037310"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361870"
 ---
 # <a name="useremailsource-enum-type"></a>tipo de enum userEmailSource
 

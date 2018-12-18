@@ -1,12 +1,13 @@
 ---
 title: Listar deviceEnrollmentPlatformRestrictionsConfigurations
 description: Listar propriedades e relações de objeto de deviceEnrollmentPlatformRestrictionsConfiguration.
-ms.openlocfilehash: 006df0f78570d65c25aa2a619daee634d6921f34
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 344907fa14615bcaa4b0a0cffa6f79ed7c667ed2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005067"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353386"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Listar deviceEnrollmentPlatformRestrictionsConfigurations
 

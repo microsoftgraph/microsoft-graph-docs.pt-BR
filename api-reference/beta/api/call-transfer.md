@@ -1,12 +1,13 @@
 ---
 title: 'chamar: transferência'
 description: Transferir uma chamada ativa.
-ms.openlocfilehash: d02e028c4d7e3b51f3aee371e22d00b95841d9a0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037778"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362479"
 ---
 # <a name="call-transfer"></a>chamar: transferência
 
@@ -14,14 +15,14 @@ ms.locfileid: "27037778"
 
 Transferir uma chamada ativa.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
 | :-------------- | :-------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                |
 | Delegado (conta pessoal da Microsoft) | Não suportado                |
-| Aplicativo     | Calls.Initiate.All                                  |
+| Application     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    |Descrição|
+| Parâmetro      | Type    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
 |destino|[identitySet](../resources/identityset.md)||

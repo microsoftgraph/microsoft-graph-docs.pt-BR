@@ -1,12 +1,13 @@
 ---
 title: Get iosManagedAppRegistration
 description: Ler propriedades e relações do objeto iosManagedAppRegistration.
-ms.openlocfilehash: fdc2a0d0514b16b69c0d32e7412b0b288ac5715e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8d0a93b9cddce5c21d923758b783ab7e40d5b27b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037520"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354688"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 

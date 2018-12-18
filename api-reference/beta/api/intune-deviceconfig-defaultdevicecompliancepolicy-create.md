@@ -1,12 +1,13 @@
 ---
 title: Criar defaultDeviceCompliancePolicy
 description: Crie um novo objeto de defaultDeviceCompliancePolicy.
-ms.openlocfilehash: 8c05cc7eedc1249175b6738ea241dea37fa5cad4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7e58ac41c1839429d2a15a4590a6ce765a5341a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033892"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327094"
 ---
 # <a name="create-defaultdevicecompliancepolicy"></a>Criar defaultDeviceCompliancePolicy
 

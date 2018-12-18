@@ -1,12 +1,13 @@
 ---
 title: Lista macOSImportedPFXCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos macOSImportedPFXCertificateProfile.
-ms.openlocfilehash: 4946b30b16bfbceb4155987eafa6ac77d62bd7fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4b0f47303a29506cc5457893c54abc7a0ce27470
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357838"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>Lista macOSImportedPFXCertificateProfiles
 

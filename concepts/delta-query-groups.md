@@ -1,12 +1,13 @@
 ---
 title: Obter as alterações incrementais para grupos
 description: A consulta delta permite que você consulte adições, exclusões ou atualizações de grupos, por meio de uma série de chamadas de função delta. A consulta delta permite que você descubra as alterações nos grupos
-ms.openlocfilehash: b043d62e0d99b4d71e25a8367abc731d39ad6d45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: piotrci
+ms.openlocfilehash: c5c9e712ecbe5e4f82fb56cbcb2795d1cfffb354
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091535"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27302034"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Obter as alterações incrementais para grupos
 

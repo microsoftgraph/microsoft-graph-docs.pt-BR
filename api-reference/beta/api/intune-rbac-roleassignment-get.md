@@ -1,12 +1,13 @@
 ---
 title: Get roleAssignment
 description: Ler propriedades e relações do objeto roleAssignment.
-ms.openlocfilehash: 828fefca1bb753e1fc7940398d1159c05de7795e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 73b06e6a3a2105edadcfae0799413ae9baa8bc2c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033479"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354429"
 ---
 # <a name="get-roleassignment"></a>Get roleAssignment
 

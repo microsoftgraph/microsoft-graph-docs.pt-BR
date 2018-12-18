@@ -1,12 +1,13 @@
 ---
 title: tipo de enum win32LobAppRegistryDetectionType
 description: Contém todos os suporte para o tipo de detecção de dados de registro.
-ms.openlocfilehash: cd0fc2f2941ae6cbab19222a414c5f52fe2a726c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d47d13c01d282d73d65f559e016bde5f74248158
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034168"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362486"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>tipo de enum win32LobAppRegistryDetectionType
 

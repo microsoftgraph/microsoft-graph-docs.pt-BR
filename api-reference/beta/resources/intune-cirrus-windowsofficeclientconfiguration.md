@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsOfficeClientConfiguration
 description: Entidade que descreve as configurações de diretiva do office do Windows.
-ms.openlocfilehash: 5e1a3281ec6b970765c81ecfd238026d71066c59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f88868bca7165bc60f534c54f9d0ded19cd8f30c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035497"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353869"
 ---
 # <a name="windowsofficeclientconfiguration-resource-type"></a>tipo de recurso de windowsOfficeClientConfiguration
 

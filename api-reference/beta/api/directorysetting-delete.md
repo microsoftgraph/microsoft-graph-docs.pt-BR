@@ -1,12 +1,13 @@
 ---
 title: Excluir uma configuração de diretório
 description: Exclua uma configuração de diretório.
-ms.openlocfilehash: 442c4f0433dd1595708b478f527bf881a055713d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 94359db03bfd58af659b4891295063477fc658e5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038126"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353036"
 ---
 # <a name="delete-a-directory-setting"></a>Excluir uma configuração de diretório
 
@@ -16,7 +17,7 @@ Exclua uma configuração de diretório.
 
 > **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *Excluir groupSettings*.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

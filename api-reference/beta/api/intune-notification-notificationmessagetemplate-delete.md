@@ -1,12 +1,13 @@
 ---
 title: Excluir notificationMessageTemplate
 description: Exclui notificationMessageTemplate.
-ms.openlocfilehash: 503a643790e0ea5064529ee4e0ea34578cd9e72c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a9a8a2e8667a854119f31fc4772e91ef0290317e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033198"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362003"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Excluir notificationMessageTemplate
 

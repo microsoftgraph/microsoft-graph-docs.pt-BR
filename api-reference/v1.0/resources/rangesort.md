@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso RangeSort
 description: Gerencia as operações de classificação em objetos Range.
-ms.openlocfilehash: 09f9a6763c634ee12251651a650d29528a534084
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 44aa472b218fa2c5f4f0d0db1af6f9c919283197
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004440"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353505"
 ---
 # <a name="rangesort-resource-type"></a>Tipo de recurso RangeSort
 

@@ -1,12 +1,13 @@
 ---
 title: Criar importedWindowsAutopilotDeviceIdentityUpload
 description: Crie um novo objeto de importedWindowsAutopilotDeviceIdentityUpload.
-ms.openlocfilehash: 2538f08d18309d430896bae0e6d654903ac895bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f4042129f33b617546e32d46435179af5c9d3282
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036065"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354807"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Criar importedWindowsAutopilotDeviceIdentityUpload
 
