@@ -1,12 +1,13 @@
 ---
 title: Obter windowsAppX
 description: Leia as propriedades e os relacionamentos do objeto windowsAppX.
-ms.openlocfilehash: 53f42d37d45c42f6b4f65637a7da9b9f5a885826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee4ea8652acd1c64d9ee78e1ee22569c849c8220
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040177"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338882"
 ---
 # <a name="get-windowsappx"></a>Obter windowsAppX
 

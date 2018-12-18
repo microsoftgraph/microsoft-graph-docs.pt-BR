@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso settingSource
 description: Ainda não documentado
-ms.openlocfilehash: d819bcae6cf9654385096b0f34a4273a30b7e43e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a0ac952dcf48abcfc9daad7e107f63e75b565840
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007272"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333499"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 

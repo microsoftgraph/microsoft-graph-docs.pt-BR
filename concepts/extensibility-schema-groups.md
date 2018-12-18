@@ -1,12 +1,13 @@
 ---
 title: 'Adicionar dados personalizados a grupos usando as extensões do esquema '
 description: 'Por meio de um exemplo, vamos demonstrar como usar as *extensões de esquema*. '
-ms.openlocfilehash: 098853ffaa5292313c71259e97fb8f1a8063fec4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 101e4569d05a36a55cc264ef806df312f2667aa8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091613"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353596"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Adicionar dados personalizados a grupos usando as extensões do esquema 
 

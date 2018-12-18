@@ -1,12 +1,13 @@
 ---
 title: Lista workingWith
 description: Percepção calculada para a lista de usuários que um usuário tiver trabalhado com.
-ms.openlocfilehash: ce464667c66a430f20c60485712c649120dac4a5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 3d4b21745ddbb98567d75e240ae460c3e1a48966
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034795"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344748"
 ---
 # <a name="list-workingwith"></a>Lista workingWith
 
@@ -14,7 +15,7 @@ ms.locfileid: "27034795"
 
 Percepção calculada para a lista de usuários que um usuário tiver trabalhado com.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

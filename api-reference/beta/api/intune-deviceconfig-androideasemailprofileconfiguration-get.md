@@ -1,12 +1,13 @@
 ---
 title: Obter androidEasEmailProfileConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidEasEmailProfileConfiguration.
-ms.openlocfilehash: 1772949b5bc4371288e410b45e7463f7fd3b5ba3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6cb2900f8e2e4912bfa462ab610b67c46e27776d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035519"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355052"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>Obter androidEasEmailProfileConfiguration
 

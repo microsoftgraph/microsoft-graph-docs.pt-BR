@@ -1,12 +1,13 @@
 ---
 title: Lista iosWiFiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosWiFiConfiguration.
-ms.openlocfilehash: 74e71c2c74b9c71b749d23f9f36abd3f31038100
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: aa6468059f62985179a3cac408a634fa6f993e4e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039700"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338350"
 ---
 # <a name="list-ioswificonfigurations"></a>Lista iosWiFiConfigurations
 

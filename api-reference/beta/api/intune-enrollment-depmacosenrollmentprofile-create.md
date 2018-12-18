@@ -1,12 +1,13 @@
 ---
 title: Criar depMacOSEnrollmentProfile
 description: Crie um novo objeto de depMacOSEnrollmentProfile.
-ms.openlocfilehash: de789e3b09ba2445240b2cd5adf29fdfde3005d7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9b9d05045139dc83477760923fcc8924e1f83b1e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040893"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27338511"
 ---
 # <a name="create-depmacosenrollmentprofile"></a>Criar depMacOSEnrollmentProfile
 

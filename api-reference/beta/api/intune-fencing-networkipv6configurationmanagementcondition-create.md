@@ -1,12 +1,13 @@
 ---
 title: Criar networkIPv6ConfigurationManagementCondition
 description: Crie um novo objeto de networkIPv6ConfigurationManagementCondition.
-ms.openlocfilehash: be69c9a69653bb35413446fe69d36016cb344ced
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b59a194ac7d7853ff958435406ff7e7af01a21b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036798"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356431"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>Criar networkIPv6ConfigurationManagementCondition
 

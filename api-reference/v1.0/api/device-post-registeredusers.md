@@ -1,12 +1,13 @@
 ---
 title: Criar registeredUser
 description: Adiciona um usuário registrado ao dispositivo.
-ms.openlocfilehash: 986c0c4e4c89d2ac724f3c19bde381d4d1624f2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 765e82106fdfd23a6805a0bbda176635b279557d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004043"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27353743"
 ---
 # <a name="create-registereduser"></a>Criar registeredUser
 

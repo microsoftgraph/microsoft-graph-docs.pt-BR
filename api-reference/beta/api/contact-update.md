@@ -1,19 +1,20 @@
 ---
 title: Atualizar contato
 description: Atualize as propriedades do objeto de contato.
-ms.openlocfilehash: 2fbf597ebc8a6c65141c64ae42ae42266f14cbde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: d25efb55a090c4c0b5fa750b64a0b2a905327a76
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035636"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334101"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades do objeto de contato.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de canal
 description: 'Um canal é uma coleção de mensagens dentro de uma equipe. '
-ms.openlocfilehash: 17a2e2edb86bfe7e107e69414a70dbe92fe4d3bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: f9ab71213180732a0c8c626d5b32b9074bd135d9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004838"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337083"
 ---
 # <a name="channel-resource-type"></a>tipo de recurso de canal
 

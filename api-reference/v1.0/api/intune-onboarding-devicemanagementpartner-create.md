@@ -1,12 +1,13 @@
 ---
 title: Criar deviceManagementPartner
 description: Criar um novo objeto deviceManagementPartner.
-ms.openlocfilehash: 038bfecf443972921c7aeacc508e9b1b81331cf4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 11c8da3a5073f17e6bf104de4fc4fb081c36811b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006587"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27337069"
 ---
 # <a name="create-devicemanagementpartner"></a>Criar deviceManagementPartner
 

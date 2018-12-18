@@ -1,12 +1,13 @@
 ---
 title: Atualizar restrictedAppsViolation
 description: Atualize as propriedades de um objeto restrictedAppsViolation.
-ms.openlocfilehash: ad6fcfd8571890a06877f503520533f2907fd3cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4f5886d0957ec1ac266ac4c4b9259265fbc0a55
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033193"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27362780"
 ---
 # <a name="update-restrictedappsviolation"></a>Atualizar restrictedAppsViolation
 

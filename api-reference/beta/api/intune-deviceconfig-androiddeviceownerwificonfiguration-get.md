@@ -1,12 +1,13 @@
 ---
 title: Obter androidDeviceOwnerWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidDeviceOwnerWiFiConfiguration.
-ms.openlocfilehash: df327e42ce57e7026ab1e642ff4b687eb3f15e64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 040fc0223fa1a6922013c2ec747f3ac9cd87c769
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037265"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27354982"
 ---
 # <a name="get-androiddeviceownerwificonfiguration"></a>Obter androidDeviceOwnerWiFiConfiguration
 

@@ -1,12 +1,13 @@
 ---
 title: Criar deviceManagementTroubleshootingEvent
 description: Criar um novo objeto deviceManagementTroubleshootingEvent.
-ms.openlocfilehash: d1fef87009c0797511adef5204cbc5ab4d99c291
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cef96acd7db28fd9b686c01e748532e775cf5f01
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039145"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356403"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Criar deviceManagementTroubleshootingEvent
 

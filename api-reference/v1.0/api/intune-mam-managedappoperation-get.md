@@ -1,12 +1,13 @@
 ---
 title: Get managedAppOperation
 description: Ler propriedades e relações do objeto managedAppOperation.
-ms.openlocfilehash: 3c807be404cee49b4974625333eda63256ea7953
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e8a70f52ea696dd77957c35cd2206bb24427497d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003598"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344195"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 

@@ -1,12 +1,13 @@
 ---
 title: Get windowsUpdateForBusinessConfiguration
 description: Ler propriedades e relações do objeto windowsUpdateForBusinessConfiguration.
-ms.openlocfilehash: 6d48c9afe0b6d4cc0584caf188b2148b98dbdbcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0ddb0e650fb860d005268f26102de79e01026bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006272"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27344202"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 
