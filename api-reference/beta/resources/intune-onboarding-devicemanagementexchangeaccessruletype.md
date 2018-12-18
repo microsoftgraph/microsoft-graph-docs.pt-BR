@@ -1,12 +1,13 @@
 ---
 title: tipo de enum deviceManagementExchangeAccessRuleType
 description: Os critérios que define o tipo de dispositivo esta regra de acesso se aplica
-ms.openlocfilehash: 575f31cb8ba5bd31a9e5699580dc0624371e4d0b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8e0bc166de6396e1b56dd89a4545c9b12b2a71cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039441"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328529"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>tipo de enum deviceManagementExchangeAccessRuleType
 

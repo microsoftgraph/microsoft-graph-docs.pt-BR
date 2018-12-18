@@ -1,12 +1,13 @@
 ---
 title: ação de consentToDataSharing
 description: Ainda não documentado
-ms.openlocfilehash: dfd5cd5c536b25c82588f5895c11135f574a5c59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 2e2e8f198c10e1ff043544ee25dcdb889a9e2635
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040691"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329887"
 ---
 # <a name="consenttodatasharing-action"></a>ação de consentToDataSharing
 

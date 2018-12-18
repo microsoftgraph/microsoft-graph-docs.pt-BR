@@ -1,12 +1,13 @@
 ---
 title: tipo de enum certificateIssuanceStates
 description: Opções de estado de emissão de certificado.
-ms.openlocfilehash: 6335b6c6368e655c0a429b4c8fae3219b1bf8dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1076ce6cae423e8eed459c008e74e710e528e48d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037099"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328032"
 ---
 # <a name="certificateissuancestates-enum-type"></a>tipo de enum certificateIssuanceStates
 

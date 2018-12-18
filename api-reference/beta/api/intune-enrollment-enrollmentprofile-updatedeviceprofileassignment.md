@@ -1,12 +1,13 @@
 ---
 title: ação de updateDeviceProfileAssignment
 description: Ainda não documentado
-ms.openlocfilehash: b42460956f8e39e696bed5a2adc256e37ac7676e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9f9fb1b628d12dd1eacb2a30dfefa82a3736c23e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035078"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326702"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>ação de updateDeviceProfileAssignment
 

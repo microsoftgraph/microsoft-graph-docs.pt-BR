@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de userActivationCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 022b73310a54877889efebabbb6e8fc4ab71fb65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 396f6182d000df6d701e8c0cbad3dd02a258c4c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036137"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322915"
 ---
 # <a name="useractivationcounts-resource-type"></a>tipo de recurso de userActivationCounts
 
@@ -21,7 +22,7 @@ ms.locfileid: "27036137"
 | windows10Mobile   | Int64  | A ativação contar com 10 do Windows mobile. |
 | IOS               | Int64  | A contagem de ativação no iOS.             |
 | Android           | Int64  | A contagem de ativação em um dispositivo Android.  |
-| activatedOnSharedComputer   | Booliano | True se o usuário utilizou o produto em um computador compartilhado antes. |
+| activatedOnSharedComputer   | Boolean | True se o usuário utilizou o produto em um computador compartilhado antes. |
 
 ## <a name="json-representation"></a>Representação JSON
 

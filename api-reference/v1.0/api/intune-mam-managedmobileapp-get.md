@@ -1,12 +1,13 @@
 ---
 title: Acessar managedMobileApp
 description: Leia as propriedades e as relações do objeto managedMobileApp.
-ms.openlocfilehash: ea5fe4a4f69c3b2237770e4036d09476f6fdf52a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d0e08f0c0381645012883ae18bd54e19bbb45963
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336964"
 ---
 # <a name="get-managedmobileapp"></a>Acessar managedMobileApp
 

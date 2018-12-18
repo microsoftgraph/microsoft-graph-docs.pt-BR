@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedAppStatus
 description: Representa o status de proteção e configuração do aplicativo para a organização.
-ms.openlocfilehash: d25770468341e1f62e96273c6c925d322b385c89
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e23b20b53d7ad89a4bbd0df8510a66e0f7da581d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005799"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331588"
 ---
 # <a name="managedappstatus-resource-type"></a>Tipo de recurso managedAppStatus
 

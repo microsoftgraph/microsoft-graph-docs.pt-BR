@@ -1,12 +1,13 @@
 ---
 title: Listar planilhas
 description: Recupere uma lista de objetos de planilha.
-ms.openlocfilehash: 37cca19ac3f93e3795f242d7d1cc7da509b3a11d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 218138a8bb9c15430c3693ab137afea9de91e059
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041172"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332988"
 ---
 # <a name="list-worksheets"></a>Listar planilhas
 

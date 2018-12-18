@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de educationSubmission
 description: Envios pertencentes a uma atribuição. Um envio representa os recursos que um turn individual (ou de grupo) para uma atribuição e o nível/feedback que é retornado.
-ms.openlocfilehash: f0b1cc9ccd169d29c31eb96bb6305f6d7cdcd6b4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: 5535aef4db988e0f4c4417128b5b53bbed884cc2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033811"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328018"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso de educationSubmission
 

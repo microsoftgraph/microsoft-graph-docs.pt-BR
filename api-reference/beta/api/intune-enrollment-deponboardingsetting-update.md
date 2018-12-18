@@ -1,12 +1,13 @@
 ---
 title: Atualizar depOnboardingSetting
 description: Atualize as propriedades de um objeto depOnboardingSetting.
-ms.openlocfilehash: 931df96b837610044a8c9337fa1fbd5de2a3d52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d4a50c485da98a182562ca5bd353d71dd854b4f4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033206"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326779"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
 
@@ -52,13 +53,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Booliano|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Boolean|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Nome amigável para o Token de Dep|
 |syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
 |defaultProfileDisplayName|String|Obtém sincronizados contagem de dispositivo|
-|dataSharingConsentGranted|Booliano|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+|dataSharingConsentGranted|Boolean|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
 
 
 

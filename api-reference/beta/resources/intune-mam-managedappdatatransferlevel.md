@@ -1,12 +1,13 @@
 ---
 title: tipo de enum managedAppDataTransferLevel
 description: Dados podem ser transferidos de/para essas classes de aplicativos
-ms.openlocfilehash: 92ea576aa1fe0746b3a98a8ef01dc147b475b504
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 41e813e9ea3450a349966ec8a212fa45dd419625
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037291"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331910"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>tipo de enum managedAppDataTransferLevel
 
@@ -20,7 +21,7 @@ Dados podem ser transferidos de/para essas classes de aplicativos
 |:---|:---|:---|
 |allApps|0|Todos os aplicativos.|
 |managedApps|1|Aplicativos gerenciados.|
-|nenhum|2|Não há aplicativos.|
+|none|2|Não há aplicativos.|
 
 
 

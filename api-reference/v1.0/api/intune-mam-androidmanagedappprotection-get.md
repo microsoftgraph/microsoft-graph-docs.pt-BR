@@ -1,12 +1,13 @@
 ---
 title: Get androidManagedAppProtection
 description: Ler propriedades e relações do objeto androidManagedAppProtection.
-ms.openlocfilehash: ed5b0e8c2f4a56cdd6cc05eb4d6924bcb540b31d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1342ae17333f86b7512ffbc4af1f8d97cce6cbfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007447"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330132"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 

@@ -1,12 +1,13 @@
 ---
 title: Get macOSCustomConfiguration
 description: Ler propriedades e relações do objeto macOSCustomConfiguration.
-ms.openlocfilehash: ae1202f00cdd5b80004a209700335cf2a6776826
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 20e5cb57507bee1636fdb4dd299a7b8948ecd4f2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035443"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332855"
 ---
 # <a name="get-macoscustomconfiguration"></a>Get macOSCustomConfiguration
 

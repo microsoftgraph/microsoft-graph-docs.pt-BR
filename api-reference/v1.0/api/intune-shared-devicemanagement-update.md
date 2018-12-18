@@ -1,12 +1,13 @@
 ---
 title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
-ms.openlocfilehash: f63e9b717f912e255abccedf809772590eb44d1f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d8a84c61751fdbc8267b846a70adb44d2affbfa2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004626"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331665"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 

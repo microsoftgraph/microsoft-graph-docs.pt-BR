@@ -1,12 +1,13 @@
 ---
 title: Criar cartToClassAssociation
 description: Crie um novo objeto de cartToClassAssociation.
-ms.openlocfilehash: 87e4a21a998e4226d429bfd92fca5560b9d716e3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3ed7ef088acca7908ece1e0b5e61797bb54a2e9b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040149"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330650"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 

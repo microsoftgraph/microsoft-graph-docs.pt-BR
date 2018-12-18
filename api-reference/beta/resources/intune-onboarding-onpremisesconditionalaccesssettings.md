@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso onPremisesConditionalAccessSettings
 description: Entidade singleton que representa as Configurações de acesso condicional do Exchange OnPremises para um locatário.
-ms.openlocfilehash: e67fe43be627d98bd59d760fe1a6d5faa3137acc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d02553f0094a805ff1ba18926f6dbf2be0ceb32b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040708"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328599"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Tipo de recurso onPremisesConditionalAccessSettings
 

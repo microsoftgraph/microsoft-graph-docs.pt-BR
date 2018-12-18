@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsInformationProtectionAppLockerFile
 description: Atualizar as propriedades de um objeto windowsInformationProtectionAppLockerFile.
-ms.openlocfilehash: bb19293b88c5956ee6836a207af728ae06c36364
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ff0f0ae2d546c67c08a1d4928f8301aff476c776
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032914"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332253"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Atualizar windowsInformationProtectionAppLockerFile
 
@@ -51,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome amigável|
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
-|file|Binário|Arquivo como uma matriz de bytes|
+|file|Binária|Arquivo como uma matriz de bytes|
 |id|String|Chave da entidade.|
 |version|String|Versão da entidade.|
 

@@ -1,12 +1,13 @@
 ---
 title: Obter androidForWorkApp
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkApp.
-ms.openlocfilehash: 2eb915e0cfb875ca2e80a558a8f9639d904d9a16
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5eb9a3233ebdd2df86aff677e82ac629bfa18bb6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038045"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334045"
 ---
 # <a name="get-androidforworkapp"></a>Obter androidForWorkApp
 

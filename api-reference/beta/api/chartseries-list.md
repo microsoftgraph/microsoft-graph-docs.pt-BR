@@ -1,12 +1,13 @@
 ---
 title: Listar ChartSeriesCollection
 description: Recupere uma lista de objetos chartseries.
-ms.openlocfilehash: 9f100b1dcd4f8228e3d8124c1bb93707f217b1f8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 6f3fa59def5632fe76de16f22adcee5c6ce727e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033610"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328123"
 ---
 # <a name="list-chartseriescollection"></a>Listar ChartSeriesCollection
 

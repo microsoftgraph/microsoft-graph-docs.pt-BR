@@ -1,12 +1,13 @@
 ---
 title: Acessar managedAndroidLobApp
 description: Leia as propriedades e as relações do objeto managedAndroidLobApp.
-ms.openlocfilehash: f7e73d8d86808af9a3c230b016167901accc47a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a5ac7007105d8fe609b5530e3f86dc135ade8393
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033594"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330825"
 ---
 # <a name="get-managedandroidlobapp"></a>Acessar managedAndroidLobApp
 

@@ -1,12 +1,13 @@
 ---
 title: Obter objetos directory a partir de uma lista de ids
 description: Selecione ' opção de consulta não está disponível para esta operação.
-ms.openlocfilehash: e6f987a3269b209c5df71b4961cf73081286a76d
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: lleonard-msft
+ms.openlocfilehash: 335a6ba915e714ebbd95ba818d14043037f38050
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222441"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336285"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obter objetos directory a partir de uma lista de ids
 
@@ -49,7 +50,7 @@ POST /directoryObjects/getByIds
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro   | Tipo |Descrição|
+| Parâmetro   | Type |Descrição|
 |:---------------|:--------|:----------|
 |ids|Coleção de cadeias de caracteres| Uma coleção de ids para a qual retornar objetos. Você pode especificar até 1000 ids. |
 |tipos|Coleção de cadeias de caracteres| Uma coleção dos tipos de recursos que especifica o conjunto de conjuntos de recursos para pesquisar. Se não especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que derive da [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) pode ser especificado na coleção; Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta)e assim por diante. Para pesquisar referências a um parceiro de [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) organização especificar [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Se não especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório, exceto para referências a uma organização parceira de [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) . Os valores não diferenciam maiusculas de minúsculas.|

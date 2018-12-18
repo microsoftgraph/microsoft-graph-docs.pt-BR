@@ -1,12 +1,13 @@
 ---
 title: 'chamar: subscribeToTone'
 description: " telefone."
-ms.openlocfilehash: c3793931c2f06e54cdac278f0f0539b42d7e622c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 41c72cdeeb1017313f9f64c4bd268a2184229984
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037685"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328298"
 ---
 # <a name="call-subscribetotone"></a>chamar: subscribeToTone
 
@@ -14,14 +15,14 @@ ms.locfileid: "27037685"
 
 Assine DTMF (dual-tone multi-frequency sinalização). Isso permite que você seja notificado quando o usuário pressiona teclas em um telefone "discagem por tom".
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls.AccessMedia.All                       |
+| Application     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +39,7 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Tipo    | Descrição |
+| Parâmetro      | Type    | Descrição |
 |:---------------|:--------|:------------|
 | clientContext  | String  | O contexto de cliente. |
 

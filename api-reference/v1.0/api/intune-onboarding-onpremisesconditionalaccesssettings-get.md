@@ -1,12 +1,13 @@
 ---
 title: Obter onPremisesConditionalAccessSettings
 description: Ler propriedades e relações do objeto onPremisesConditionalAccessSettings.
-ms.openlocfilehash: 2f80db475d375e83f1dcf81d6a0b584419262ccc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31f5bb9804c8a4a469d877727f073919dfdff73e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007383"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332351"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Obter onPremisesConditionalAccessSettings
 

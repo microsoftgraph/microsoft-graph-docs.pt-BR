@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso windowsInformationProtectionApp
 description: Aplicativo para proteção de informações do Windows
-ms.openlocfilehash: 6f5bf2cd42ba2df96f3e9cc2b9b1c1954420c572
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ad47301dc7ec9650026021a2131d34b4d704e70
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040116"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334381"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Tipo de recurso windowsInformationProtectionApp
 

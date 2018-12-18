@@ -1,12 +1,13 @@
 ---
 title: Get iosUpdateDeviceStatus
 description: Ler propriedades e relações do objeto iosUpdateDeviceStatus.
-ms.openlocfilehash: 20dfe498d5a903eb20692129a573e313254511ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e49af975fc6eed33d5b0de506927f3eca4e4741e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038200"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332995"
 ---
 # <a name="get-iosupdatedevicestatus"></a>Get iosUpdateDeviceStatus
 

@@ -1,12 +1,13 @@
 ---
 title: Listar threads
 description: Obtém todos os threads em uma conversa de grupo.
-ms.openlocfilehash: 9d3a981b71b369e745acae0b362e5711a18f0272
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: e9203fce8d2b6b5b216d051bcb00193ced3da4a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005941"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333002"
 ---
 # <a name="list-threads"></a>Listar threads
 

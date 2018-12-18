@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de vpnProxyServer
 description: Servidor de Proxy VPN.
-ms.openlocfilehash: 31e711475bf0f797eead80ca3fe2f3c9af8ba27f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f622d476e041fd89a639c14113e273a16aca992f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034502"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27333471"
 ---
 # <a name="vpnproxyserver-resource-type"></a>tipo de recurso de vpnProxyServer
 

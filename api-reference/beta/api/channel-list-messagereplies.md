@@ -1,12 +1,13 @@
 ---
 title: Respostas de mensagens de canal de lista
 description: Liste todas as respostas de uma mensagem em um canal de uma equipe.
-ms.openlocfilehash: 7133f48233f2b164aa6643ba896dd0612645e7e8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: ac0447e8c0e29e21b60b52c78362c22b0acbd5de
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033056"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336628"
 ---
 # <a name="list-channel-message-replies"></a>Respostas de mensagens de canal de lista
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033056"
 
 Liste todas as respostas de uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

@@ -1,12 +1,13 @@
 ---
 title: Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Crie um novo objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
-ms.openlocfilehash: d653affdbe724fd80dc665839d73f49ee2fc15c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: f45ad5764521c8ab94ab4742764ee4a73ddfc660
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035517"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335067"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -58,7 +59,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceEnrollment
 |pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Ainda não documentado. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
 |pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Ainda não documentado. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
 |pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Ainda não documentado. Os valores possíveis são: `allowed`, `required`, `disallowed`.|
-|state|[Habilitação de](../resources/intune-shared-enablement.md)|Ainda não documentado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|estado|[Habilitação de](../resources/intune-shared-enablement.md)|Ainda não documentado. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |securityDeviceRequired|Booliano|Ainda não documentado|
 |unlockWithBiometricsEnabled|Booliano|Ainda não documentado|
 |remotePassportEnabled|Booliano|Ainda não documentado|

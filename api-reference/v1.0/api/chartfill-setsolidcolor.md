@@ -1,12 +1,13 @@
 ---
 title: 'ChartFill: setSolidColor'
 description: Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.
-ms.openlocfilehash: bcb8397217ee6cc574fe08f585d51a6243d83ca9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 566b6081c0beb41269c7e60e61cd44a5d76ed6f7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004017"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322880"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -37,7 +38,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/legend/format/fill/setSolidCol
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |color|string|Código de cor HTML que representa a cor #RRGGBB da linha de borda do formulário (por exemplo, "FFA500") ou uma cor HTML nomeada (por exemplo, "laranja").|
 

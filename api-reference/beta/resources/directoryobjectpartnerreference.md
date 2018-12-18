@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de directoryObjectPartnerReference
 description: Representa uma referência a um objeto de diretório em um locatário de parceiro. Herda de directoryObject.
-ms.openlocfilehash: ebdd7380eaa6b59488aca46120339f7175b640fa
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: lleonard-msft
+ms.openlocfilehash: 37a60c126ef74f3073f258ba799cf276fda4f5cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27224124"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336943"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso de directoryObjectPartnerReference
 
@@ -18,10 +19,10 @@ Representa uma referência a um objeto de diretório em uma organização parcei
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres| Descrição do objeto retornado. Somente leitura. |
-|displayName|Cadeia de caracteres| Nome do objeto de diretório retornado, como o grupo ou aplicativo. Somente leitura. |
+|description|String| Descrição do objeto retornado. Somente leitura. |
+|displayName|String| Nome do objeto de diretório retornado, como o grupo ou aplicativo. Somente leitura. |
 |externalPartnerTenantId|Guid| O identificador do locatário para o locatário de parceiro. Somente leitura. |
-|id|Cadeia de caracteres| O identificador exclusivo para o recurso. Herdado de [directoryObject](directoryobject.md?view=graph-rest-beta). Somente leitura. |
+|id|String| O identificador exclusivo para o recurso. Herdado de [directoryObject](directoryobject.md?view=graph-rest-beta). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON

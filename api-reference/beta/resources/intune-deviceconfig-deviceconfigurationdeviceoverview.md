@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceConfigurationDeviceOverview
 description: Ainda não documentado
-ms.openlocfilehash: 3ed4370b06de330238d426b5c77cfbc94a460a54
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 32011d2c354486a3ea9d029970cf57d76843bff3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036976"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332344"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>Tipo de recurso deviceConfigurationDeviceOverview
 

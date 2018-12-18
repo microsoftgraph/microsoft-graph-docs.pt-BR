@@ -1,12 +1,13 @@
 ---
 title: Criar MailFolder
 description: Use essa API para criar uma nova mailfolder filha.
-ms.openlocfilehash: 79ed32a316a9012c33d3c08d0c95f00ad2f90725
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 717baa63f3bb15355eaf59387b8fc701ab1288b7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331518"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -44,7 +45,7 @@ Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pa
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** é a propriedade gravável apenas para um objeto [mailFolder](../resources/mailfolder.md) .
 
-| Parâmetro | Tipo | Descrição |
+| Parâmetro | Type | Descrição |
 |:----------|:-----|:------------|
 |displayName|String|O nome de exibição da nova pasta.|
 

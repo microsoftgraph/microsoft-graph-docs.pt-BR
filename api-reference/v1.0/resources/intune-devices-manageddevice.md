@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso managedDevice
 description: Dispositivos gerenciados ou pré-registrados pelo Intune
-ms.openlocfilehash: c98d09131c5562efb22c327e489fb4d047c5f4b7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3d20c5eddf16933c4d428f88aa0dd00ebdeeef37
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003410"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331826"
 ---
 # <a name="manageddevice-resource-type"></a>Tipo de recurso managedDevice
 
@@ -55,23 +56,23 @@ Dispositivos gerenciados ou pré-registrados pelo Intune
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|A versão do sistema operacional do dispositivo.|
-|easActivated|Booliano|Se o dispositivo está ativado para Exchange ActiveSync.|
+|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync.|
 |easDeviceId|String|ID do Exchange ActiveSync do dispositivo.|
 |easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo.|
-|azureADRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory.|
+|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado.|
 |emailAddress|String|Email(s) do usuário associado ao dispositivo|
 |azureADDeviceId|String|O identificador exclusivo do dispositivo do Azure Active Directory. Somente leitura.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Estado do registro do dispositivo. Os valores possíveis são: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Nome de exibição da categoria do dispositivo|
-|isSupervised|Booliano|Status supervisionado do dispositivo|
+|isSupervised|Boolean|Status supervisionado do dispositivo|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Última vez em que o dispositivo entrou em contato com o Exchange.|
 |exchangeAccessState|[deviceManagementExchangeAccessState](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|O estado de acesso do dispositivo no Exchange. Os valores possíveis são: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[deviceManagementExchangeAccessStateReason](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|A razão para o estado de acesso do dispositivo no Exchange. Os valores possíveis são: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
 |remoteAssistanceSessionUrl|String|A URL que permite que uma sessão de assistência remota seja estabelecida com o dispositivo.|
 |remoteAssistanceSessionErrorDetails|String|Uma cadeia de caracteres de erro que identifica problemas durante a criação de objetos de sessão de Assistência remota.|
-|isEncrypted|Booliano|Status da criptografia de dispositivo|
+|isEncrypted|Boolean|Status da criptografia de dispositivo|
 |userPrincipalName|String|Nome principal do usuário do dispositivo|
 |modelo|String|Modelo do dispositivo|
 |fabricante|String|Fabricante do dispositivo|

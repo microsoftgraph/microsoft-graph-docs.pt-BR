@@ -1,12 +1,13 @@
 ---
 title: Listar iosDeviceFeaturesConfigurations
 description: Listar propriedades e relações dos objetos iosDeviceFeaturesConfiguration.
-ms.openlocfilehash: dffe7300f243f1c374889b56f9e17aa4c31ba6d0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 5b2ca852807ff484a39f4a307f9e00eb4108f5c2
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033273"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332862"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Listar iosDeviceFeaturesConfigurations
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de enum androidForWorkDefaultAppPermissionPolicyType
 description: Tipo de política permissão do aplicativo de padrão de Android para trabalho.
-ms.openlocfilehash: dd444a948591070e0695d5218daab1e1781c2ec8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 75e04b762a1c573bf47a14ed5b850fe909818bfa
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035403"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328907"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>tipo de enum androidForWorkDefaultAppPermissionPolicyType
 

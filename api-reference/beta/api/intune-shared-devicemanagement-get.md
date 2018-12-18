@@ -1,12 +1,13 @@
 ---
 title: Get deviceManagement
 description: Ler propriedades e relações do objeto deviceManagement.
-ms.openlocfilehash: adc45ed789e3e636282fee851997c3fbcc8d8318
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ebe44a865b76e2375b5c8df999d89697d6e94351
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036428"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323930"
 ---
 # <a name="get-devicemanagement"></a>Get deviceManagement
 

@@ -1,12 +1,13 @@
 ---
 title: Criar iosVppEBookAssignment
 description: Criar um novo objeto iosVppEBookAssignment.
-ms.openlocfilehash: 2b8dd451ae44267c792bf548ecdca27b2fb6d55e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b9a3bf5ba8c3eb0c8d2f92e66361ce7afa875c4d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003722"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334402"
 ---
 # <a name="create-iosvppebookassignment"></a>Criar iosVppEBookAssignment
 

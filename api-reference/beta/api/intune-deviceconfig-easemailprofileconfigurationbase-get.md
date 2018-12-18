@@ -1,12 +1,13 @@
 ---
 title: Obter easEmailProfileConfigurationBase
 description: Leia as propriedades e os relacionamentos do objeto easEmailProfileConfigurationBase.
-ms.openlocfilehash: 53a31647634a6c3e3393d6613d198419a973f715
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4019c22f2f07ee71c2bec0a558122db39e954a7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039936"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335634"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>Obter easEmailProfileConfigurationBase
 

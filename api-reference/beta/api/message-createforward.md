@@ -1,12 +1,13 @@
 ---
 title: 'message: createForward'
 description: 'Criar uma mensagem de rascunho sequencial para incluir um comentário ou atualizar as propriedades de mensagem  '
-ms.openlocfilehash: 8e7710871000222d1281a274ee270885097351f9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 6630bf8486f3fdbc53106ef334aeb23aa36f93dd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037082"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329775"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -20,7 +21,7 @@ tudo isso em um **createForward** chamada. Você pode então [enviar](../api/mes
 - Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Você deve especificar o `toRecipients` parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -46,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Tipo   |Descrição|
+| Parâmetro    | Type   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |toRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários.|

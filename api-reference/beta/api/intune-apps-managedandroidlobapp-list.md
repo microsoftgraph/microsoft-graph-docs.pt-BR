@@ -1,12 +1,13 @@
 ---
 title: Listar managedAndroidLobApps
 description: Listar propriedades e relações dos objetos managedAndroidLobApp.
-ms.openlocfilehash: 27637b721dffb53997fce52e2d1b9cd84b57c552
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9bffa4c979569e58ea26824073a06a02c2c2d608
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035900"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322859"
 ---
 # <a name="list-managedandroidlobapps"></a>Listar managedAndroidLobApps
 

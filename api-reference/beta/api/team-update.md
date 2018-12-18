@@ -1,12 +1,13 @@
 ---
 title: Equipe de atualização
 description: Atualize as propriedades da equipe especificado.
-ms.openlocfilehash: e5148b21fa832c45e1f89c1296fd0df64aaf71e0
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+author: nkramer
+ms.openlocfilehash: 19a3c55295bc54fcd7f1c9e24f88e386fc4dc2bb
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222475"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331916"
 ---
 # <a name="update-team"></a>Equipe de atualização
 
@@ -14,7 +15,7 @@ ms.locfileid: "27222475"
 
 Atualize as propriedades da [equipe](../resources/team.md)especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

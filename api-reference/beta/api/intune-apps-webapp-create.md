@@ -1,12 +1,13 @@
 ---
 title: Criar webApp
 description: Cria um novo objeto webApp.
-ms.openlocfilehash: ea048b1beb1c036ea8bc8c1bd4f6e904e446b87c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0ebe226b42fb0a35658a08107c9826a7401825db
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036586"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330923"
 ---
 # <a name="create-webapp"></a>Criar webApp
 
@@ -53,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar o webApp.
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -62,7 +63,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar o webApp.
 |uploadState|Int32|O estado de carregamento. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |appUrl|String|A URL do aplicativo Web.|
-|useManagedBrowser|Booliano|Se o navegador gerenciado deve ou não ser usado. Essa propriedade só é aplicável ao Android e ao IOS.|
+|useManagedBrowser|Boolean|Se o navegador gerenciado deve ou não ser usado. Essa propriedade só é aplicável ao Android e ao IOS.|
 
 
 

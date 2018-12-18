@@ -1,12 +1,13 @@
 ---
 title: Excluir remoteAssistancePartner
 description: Exclui remoteAssistancePartner.
-ms.openlocfilehash: d51439c2919833b0812690e62f33ff3186ba2a24
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1839288c8634730a782db960d573b354e60756b0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006910"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331350"
 ---
 # <a name="delete-remoteassistancepartner"></a>Excluir remoteAssistancePartner
 

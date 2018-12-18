@@ -1,12 +1,13 @@
 ---
 title: Criar remoteAssistancePartner
 description: Criar um novo objeto remoteAssistancePartner.
-ms.openlocfilehash: 1d6630622a3115cc7429547677c38e95bf96893a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 213898c6778b1700a2a3379bb8cd24689b5e671f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035721"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331105"
 ---
 # <a name="create-remoteassistancepartner"></a>Criar remoteAssistancePartner
 

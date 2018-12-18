@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso updateWindowsDeviceAccountActionParameter
 description: Ainda não documentado
-ms.openlocfilehash: f6403e4c3b106b318b7d551796911f6bcc0253c2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cd69ffa01473a40228d53ad2f68f793cadf838d5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005847"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335459"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Tipo de recurso updateWindowsDeviceAccountActionParameter
 

@@ -1,12 +1,13 @@
 ---
 title: Excluir um grupo de roteamento de áudio
 description: Exclua o audioRoutingGroup especificado.
-ms.openlocfilehash: cb4b4c2cf3f7023332acd443c63463d5251963ad
-ms.sourcegitcommit: 4a46cfd112c8089fc07e4e5ccdccaf415a3a0e7f
+author: VinodRavichandran
+ms.openlocfilehash: 025498e1ceb6178ede4c7ca938c7b0d3d05a80ee
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "27155988"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27323937"
 ---
 # <a name="delete-audio-routing-group"></a>Excluir um grupo de roteamento de áudio
 
@@ -14,14 +15,14 @@ ms.locfileid: "27155988"
 
 Exclua o especificado [audioRoutingGroup](../resources/audioroutinggroup.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)  |
 | :-------------- | :------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

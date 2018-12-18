@@ -1,12 +1,13 @@
 ---
 title: Listar windows10TeamGeneralConfigurations
 description: Lista propriedades e relações dos objetos windows10TeamGeneralConfiguration.
-ms.openlocfilehash: ad05a8c19337db5d49057b8dc7ff395297f66803
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bd438432e5d7cfc97ddd4945e3c2c7ab27d2c9c0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007401"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329894"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Listar windows10TeamGeneralConfigurations
 

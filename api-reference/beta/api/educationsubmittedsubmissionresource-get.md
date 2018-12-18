@@ -1,12 +1,13 @@
 ---
 title: Obter educationSubmittedSubmissionResource
 description: Retorna um recurso enviado. Isso estará disponível para um professor após um estudante enviou e estarão disponível para o estudante após o professor lançou o envio.  Observe que professores podem deixar as anotações em alguns recursos.
-ms.openlocfilehash: 89235ad1d33e86da13ec5f4637af7cda949a940a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dipakboyed
+ms.openlocfilehash: a956f7b18125f01798f804ab577450030a626b3a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336530"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>Obter educationSubmittedSubmissionResource
 
@@ -14,7 +15,7 @@ ms.locfileid: "27033995"
 
 Retorna um recurso enviado. Isso estará disponível para um professor após um estudante enviou e estarão disponível para o estudante após o professor lançou o envio.  Observe que professores podem deixar as anotações em alguns recursos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

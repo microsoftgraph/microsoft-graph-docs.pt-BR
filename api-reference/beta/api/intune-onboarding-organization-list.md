@@ -1,12 +1,13 @@
 ---
 title: Listar organizations
 description: Listar propriedades e relações de objetos de organização.
-ms.openlocfilehash: 9b4b211b71ad619d50b3813022bcc03bf24a87c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6e01ebb56c8630a847f8f384f10f3d21fe41fa6a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037884"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330713"
 ---
 # <a name="list-organizations"></a>Listar organizations
 

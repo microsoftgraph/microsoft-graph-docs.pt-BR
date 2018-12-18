@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingNewZealandMoviesType
 description: Filmes classificação rótulos na Nova Zelândia
-ms.openlocfilehash: 2c8e1d6564760cb7539e8e4c01167e5473b3fe18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3c647b2b5713de611b3ac321cce541efaff557ad
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004141"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27327675"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>tipo de enum ratingNewZealandMoviesType
 

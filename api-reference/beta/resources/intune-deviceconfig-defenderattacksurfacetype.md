@@ -1,12 +1,13 @@
 ---
 title: tipo de enum defenderAttackSurfaceType
 description: Valores possíveis de regras de redução de superfície de ataque Defender
-ms.openlocfilehash: 224ff03ce41d459a2bb33dae082bf945beddbfd8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 40970d9070065c6481e4ed8dfbf99b794878db6f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033761"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27328970"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>tipo de enum defenderAttackSurfaceType
 

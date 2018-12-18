@@ -1,12 +1,13 @@
 ---
 title: Ação beginOnboarding
 description: Ainda não documentado
-ms.openlocfilehash: 6ff2c6961e4586251d478b98bcef423b678ad02f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 49b733abc9bccc510bb19139a6e9cc7a45053a7e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035689"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335179"
 ---
 # <a name="beginonboarding-action"></a>Ação beginOnboarding
 

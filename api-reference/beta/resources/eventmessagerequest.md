@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de eventMessageRequest
 description: Uma mensagem que representa uma solicitação de reunião.
-ms.openlocfilehash: b63778d868000c57d8a900b67d0554c6f6bef2bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: f32393e0811543e7630c16e6889b31ce3dbc5920
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039061"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335641"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso de eventMessageRequest
 
@@ -90,11 +91,11 @@ Veja a seguir uma representação JSON do recurso
 |id|String|Somente leitura.|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Os valores possíveis são: `Focused` e `Other`.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isOutOfDate|Booliano|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isOutOfDate|Boolean|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |location|[Location](location.md)|O local da reunião solicitada.|
 |meetingMessageType|String| O tipo de mensagem de evento: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
@@ -126,7 +127,7 @@ Veja a seguir uma representação JSON do recurso
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
-|[Criar anexo](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Criar um novo Anexo postando na coleção attachments.|
+|[Criar anexo](../api/eventmessage-post-attachments.md) |[Anexo](attachment.md)| Criar um novo Anexo postando na coleção attachments.|
 |[List attachments](../api/eventmessage-list-attachments.md) |Coleção [Attachment](attachment.md)| Obter uma coleção de objetos Attachment.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
 |[Delete](../api/eventmessage-delete.md) | Nenhum |Excluir o objeto eventMessage. |

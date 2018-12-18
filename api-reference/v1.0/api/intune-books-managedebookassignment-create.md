@@ -1,12 +1,13 @@
 ---
 title: Criar managedEBookAssignment
 description: Criar um novo objeto managedEBookAssignment.
-ms.openlocfilehash: c471362f9f3cfddb9aa2cd3779ac66d28ec5d198
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 839052123c6ff0d4b4345ae8d8d0ad1bb921d674
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007000"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27322950"
 ---
 # <a name="create-managedebookassignment"></a>Criar managedEBookAssignment
 

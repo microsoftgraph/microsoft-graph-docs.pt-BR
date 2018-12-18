@@ -1,12 +1,13 @@
 ---
 title: Lista macOSWiFiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos macOSWiFiConfiguration.
-ms.openlocfilehash: ea3464a3b6fc3f71d948bb27d0cf48f3dd71cb20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10b5611aa09423d670598d012760bc99f4b49cc4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040582"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335669"
 ---
 # <a name="list-macoswificonfigurations"></a>Lista macOSWiFiConfigurations
 

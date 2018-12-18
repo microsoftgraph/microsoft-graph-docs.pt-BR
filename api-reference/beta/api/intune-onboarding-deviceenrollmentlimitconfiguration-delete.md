@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceEnrollmentLimitConfiguration
 description: Exclui deviceEnrollmentLimitConfiguration.
-ms.openlocfilehash: a12e5d3d7733f2c6fb3825d341b06548fe193994
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 31ae7c60f6a7014ef2203f11a60e4ff3b7d8c522
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032915"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336271"
 ---
 # <a name="delete-deviceenrollmentlimitconfiguration"></a>Excluir deviceEnrollmentLimitConfiguration
 

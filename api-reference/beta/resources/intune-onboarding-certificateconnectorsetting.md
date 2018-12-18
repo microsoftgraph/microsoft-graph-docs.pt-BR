@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de certificateConnectorSetting
 description: Configurações do conector de certificado.
-ms.openlocfilehash: 65f87002016c4d5bd6b19106ba1aa988ad30d92e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 8c993634eb4f41e16643ae3f40be74ecc3eb392f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032901"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326303"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>tipo de recurso de certificateConnectorSetting
 

@@ -1,12 +1,13 @@
 ---
 title: Listar windows81CompliancePolicies
 description: Listar propriedades e relações dos objetos windows81CompliancePolicy.
-ms.openlocfilehash: b167d1d890820598d31bcfd5d6abf56dc256f2c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 72c3416677f56380248a83bbf8dd5b22816ccd2f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006579"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335361"
 ---
 # <a name="list-windows81compliancepolicies"></a>Listar windows81CompliancePolicies
 

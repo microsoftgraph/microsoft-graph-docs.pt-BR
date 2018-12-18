@@ -1,12 +1,13 @@
 ---
 title: tipo de enum appListType
 description: Possíveis valores da lista de aplicativos de conformidade.
-ms.openlocfilehash: 3fcfecde8dbc9efe92f842e9d2b45b7f1579c217
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 3f0fa162131fc1f59beba1f057fa888e0f2260c5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038169"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331189"
 ---
 # <a name="applisttype-enum-type"></a>tipo de enum appListType
 
@@ -18,7 +19,7 @@ Possíveis valores da lista de aplicativos de conformidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Valor padrão, sem intenção.|
+|none|0|Valor padrão, sem intenção.|
 |appsInListCompliant|1|A lista representa os aplicativos que serão considerados compatível com (somente aplicativos na lista são compatíveis com).|
 |appsNotInListCompliant|2|A lista representa os aplicativos que serão considerados não compatível com (todos os aplicativos são compatíveis, exceto os aplicativos na lista).|
 

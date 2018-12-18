@@ -1,12 +1,13 @@
 ---
 title: Acessar windowsInformationProtectionNetworkLearningSummary
 description: Leia as propriedades e as relações do objeto windowsInformationProtectionNetworkLearningSummary.
-ms.openlocfilehash: 7dc5fafb725048016339332f7076a3a518fa0936
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 46c255b5e59ab4245b1945d588bc15b36b55aec8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006157"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332127"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Acessar windowsInformationProtectionNetworkLearningSummary
 

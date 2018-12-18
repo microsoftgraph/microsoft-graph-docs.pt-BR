@@ -1,12 +1,13 @@
 ---
 title: Criar mensagem
 description: Use essa API para criar uma nova mensagem em uma pasta de email.
-ms.openlocfilehash: 8aaec597d0b2c89e195dc5b3696e10b81f1cce36
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 0db7150c358065c6333091fd27754a8da969d673
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041173"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331335"
 ---
 # <a name="create-message"></a>Criar mensagem
 

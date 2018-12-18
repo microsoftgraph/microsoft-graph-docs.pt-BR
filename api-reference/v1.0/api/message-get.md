@@ -1,12 +1,13 @@
 ---
 title: Obter mensagem
 description: Recupere as propriedades e os relacionamentos de um objeto message.
-ms.openlocfilehash: be629306e6605856e80d911c86b96ccaf155f999
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 03ff42bc22d79caf1d432170d3a3ead50af4cea0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006826"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27332400"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -22,7 +23,7 @@ Há dois cenários onde um aplicativo pode obter uma mensagem na pasta de email 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

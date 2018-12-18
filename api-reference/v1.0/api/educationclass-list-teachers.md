@@ -1,12 +1,13 @@
 ---
 title: Listar professores
 description: Recupere uma lista de professores de uma aula. Os tokens delegados devem ser membros da aula para obterem a lista de professores.
-ms.openlocfilehash: 890bb08625852a221a64f1f70408f5bec22e81db
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 665f98c9d637358529d581a286a764ebfb93d7d0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005943"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331594"
 ---
 # <a name="list-teachers"></a>Listar professores
 

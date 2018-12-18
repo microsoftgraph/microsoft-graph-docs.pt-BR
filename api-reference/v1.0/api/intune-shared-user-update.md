@@ -1,12 +1,13 @@
 ---
 title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
-ms.openlocfilehash: cfb8a7d46d8383cdaae4f012cff4ed0a0ad93594
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dae6d6d16bfb1f849fa7a3a4e35e4c641718c70e
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005913"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27329423"
 ---
 # <a name="update-user"></a>Atualizar usuário
 

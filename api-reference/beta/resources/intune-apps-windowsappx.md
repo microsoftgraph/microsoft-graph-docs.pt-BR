@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de windowsAppX
 description: Contém propriedades e as propriedades herdadas para aplicativos do Windows AppX linha de negócios.
-ms.openlocfilehash: ca36c3d1519efccfcdb08c4af3b1ccf1a94f2e09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 372c1c2827e3d873d0266715502a837dca27d76b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039489"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336026"
 ---
 # <a name="windowsappx-resource-type"></a>tipo de recurso de windowsAppX
 
@@ -37,7 +38,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -52,7 +53,7 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |identityName|String|O Nome da Identidade.|
 |identityPublisherHash|String|O Hash do Publicador de Identidade.|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
-|isBundle|Booliano|Se o aplicativo é um pacote ou não.|
+|isBundle|Boolean|Se o aplicativo é um pacote ou não.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
 |identityVersion|String|A versão da identidade.|
 

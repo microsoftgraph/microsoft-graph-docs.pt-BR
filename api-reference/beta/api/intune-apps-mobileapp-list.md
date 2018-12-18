@@ -1,12 +1,13 @@
 ---
 title: Listar mobileApps
 description: Listar propriedades e relações dos objetos mobileApp.
-ms.openlocfilehash: e39ac7a6524b029f8815a74efd82e759614832e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 84ebb7e1dad52a075a84c50e6b6fc94d6e84e148
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040201"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27326184"
 ---
 # <a name="list-mobileapps"></a>Listar mobileApps
 

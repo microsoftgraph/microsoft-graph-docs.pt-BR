@@ -1,12 +1,13 @@
 ---
 title: Listar macOSCustomConfigurations
 description: Listar propriedades e relações dos objetos macOSCustomConfiguration.
-ms.openlocfilehash: 7200906df6beeddbf544c7e697dc84213063d9ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ae4186852a08d91e0fffa56068b0ec7aa8cb4155
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005785"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27330027"
 ---
 # <a name="list-macoscustomconfigurations"></a>Listar macOSCustomConfigurations
 

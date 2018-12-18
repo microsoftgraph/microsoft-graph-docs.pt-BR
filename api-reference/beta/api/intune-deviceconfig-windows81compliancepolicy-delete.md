@@ -1,12 +1,13 @@
 ---
 title: Excluir windows81CompliancePolicy
 description: Exclui windows81CompliancePolicy.
-ms.openlocfilehash: b6134ccdc3d1e9face1e73103dbf091f2facdc82
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a4932f13aaa738ede3338843233af8a29e5d8526
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038227"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27335221"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Excluir windows81CompliancePolicy
 

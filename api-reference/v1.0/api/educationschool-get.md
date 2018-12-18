@@ -1,12 +1,13 @@
 ---
 title: Obter educationSchool
 description: Recupere as propriedades e relações do objeto de escola.
-ms.openlocfilehash: bfa3d680446578e48954f828e6f07fed787e3b95
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: 4b4d68c2c71725f2ed3be1adb9067eea6d7d87bd
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004818"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27336774"
 ---
 # <a name="get-educationschool"></a>Obter educationSchool
 

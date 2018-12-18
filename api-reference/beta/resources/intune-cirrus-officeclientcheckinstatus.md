@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de officeClientCheckinStatus
 description: Entidade que descreve as estatísticas de check-in do inquilino.
-ms.openlocfilehash: a87a085d42ce0754e046b319b270ddf90a3bdba7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035755"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27331714"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso de officeClientCheckinStatus
 
@@ -22,7 +23,7 @@ Entidade que descreve as estatísticas de check-in do inquilino.
 |deviceName|String|Nome do dispositivo tentando fazer check-in.|
 |devicePlatform|String|Plataforma de dispositivo tentando fazer check-in.|
 |devicePlatformVersion|String|Versão de plataforma do dispositivo tentando fazer check-in.|
-|wasSuccessful|Booliano|Se o último check-in foi bem-sucedida.|
+|wasSuccessful|Boolean|Se o último check-in foi bem-sucedida.|
 |userId|String|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Último dispositivo tempo check-in em UTC.|
 |errorMessage|String|Mensagem de erro, se houver algum associado para o último check-in.|

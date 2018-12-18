@@ -1,12 +1,13 @@
 ---
 title: Ação remoteLock
 description: Bloqueio remoto
-ms.openlocfilehash: 2667ff57ca7d40420eb7ad7a929fbe6210b24d3a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4fd4a470b0f853bf565bc2aaee9f5802c085930a
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007445"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27334220"
 ---
 # <a name="remotelock-action"></a>Ação remoteLock
 
