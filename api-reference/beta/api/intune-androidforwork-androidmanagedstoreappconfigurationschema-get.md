@@ -1,12 +1,13 @@
 ---
 title: Obter androidManagedStoreAppConfigurationSchema
 description: Leia as propriedades e os relacionamentos do objeto androidManagedStoreAppConfigurationSchema.
-ms.openlocfilehash: dc0da9d8cf92a6c346178e44ee8fe08b81ce9f4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1c75c791c4db463eb0d6c796feb2d0e5479c33ac
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035895"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360596"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Obter androidManagedStoreAppConfigurationSchema
 

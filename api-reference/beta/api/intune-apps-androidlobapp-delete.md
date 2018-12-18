@@ -1,12 +1,13 @@
 ---
 title: Excluir androidLobApp
 description: Exclui androidLobApp.
-ms.openlocfilehash: cbab34abcc413d01547309406026dd41853ae1b9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 101082725986f50a7b2a09f7cc66ba8b8e05709b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035818"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357964"
 ---
 # <a name="delete-androidlobapp"></a>Excluir androidLobApp
 

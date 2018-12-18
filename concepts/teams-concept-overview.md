@@ -1,12 +1,13 @@
 ---
 title: Visão geral da API do Microsoft Teams
 description: 'O Microsoft Teams é o melhor hub para trabalhos em equipe e comunicações inteligentes. '
-ms.openlocfilehash: 1f210bf529769c96f22c2c7180d3736cdc9ed776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
-ms.translationtype: MT
+author: nkramer
+ms.openlocfilehash: 2297f92cb44c8a12512e4e06ffc2392d75626952
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091640"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358853"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -21,7 +22,7 @@ Se quiser reunir a nova equipe para discutir o problema de negócios, [adicione 
 
 ![Automatize os ciclos de vida da equipe criando uma equipe, adicionando membros e proprietários, definindo configurações de equipe, adicionando canais, instalando aplicativos, adicionando guias e arquivando ou excluindo a equipe quanto o momento chegar.](images/teams-lifecycle.png)
 
-Quando o problema de negócios for resolvido e você já não precisar da equipe virtual, use a API do Microsoft Teams para [arquivar](/graph/api/team-archive?view=graph-rest-1.0) ou [excluir](/graph/api/group-delete?view=graph-rest-1.0) a equipe. Se, ao criar a equipe virtual, você souber qual será sua duração máxima, defina uma [política de expiração de grupo do Office 365](https://support.office.com/pt-BR/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) para a equipe, que removerá a equipe automaticamente de acordo com a política.
+Quando o problema de negócios for resolvido e você já não precisar da equipe virtual, use a API do Microsoft Teams para [arquivar](/graph/api/team-archive?view=graph-rest-1.0) ou [excluir](/graph/api/group-delete?view=graph-rest-1.0) a equipe. Se, ao criar a equipe virtual, você souber qual será sua duração máxima, defina uma [política de expiração de grupo do Office 365](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) para a equipe, que removerá a equipe automaticamente de acordo com a política.
 
 ### <a name="get-work-done-even-when-no-one-is-around"></a>Faça com que o trabalho seja feito mesmo quando não houver ninguém por perto
 
@@ -69,7 +70,7 @@ As APIs do Microsoft Teams podem melhorar os aplicativos dentro e fora do Teams:
 |Sites| Exibem conteúdo aprimorado em suas páginas da Web.|
 |Serviços|Aprimoram seus aplicativos de cliente com dados do Microsoft Graph por meio do seu serviço Web.|
 | [Feed de atividades](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/activity-feed)|Envolve os usuários por meio de notificações do feed.|
-| Chamadas e reuniões online (visualização)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
+| [Chamadas e reuniões online (visualização)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Crie aplicativos do Microsoft Teams usando bots podem iniciar e participar de chamadas de áudio/vídeo, rotear/transferir chamadas com base em fluxos de resposta de voz interativa (IVR) e participe de reuniões online.|
 
 ## <a name="api-reference"></a>Referência da API
 

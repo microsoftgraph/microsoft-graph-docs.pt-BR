@@ -1,12 +1,13 @@
 ---
 title: Atualize a organização
 description: Atualizar as propriedades de um objeto organização.
-ms.openlocfilehash: 50167db2c2078421894fa86d7b24c0b93351616c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d26d11bb2f67b933ba5d78e444ae8e52d32339ce
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006583"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358895"
 ---
 # <a name="update-organization"></a>Atualize a organização
 

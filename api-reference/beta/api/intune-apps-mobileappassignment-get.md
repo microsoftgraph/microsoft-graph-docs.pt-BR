@@ -1,12 +1,13 @@
 ---
 title: Acessar mobileAppAssignment
 description: Leia as propriedades e as relações do objeto mobileAppAssignment.
-ms.openlocfilehash: 02c6ff72ac2ca384a8581ec5cf95ea26d11bcd3b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: dbb5732a612674d29a0489e198e2741e02e696a0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036178"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358062"
 ---
 # <a name="get-mobileappassignment"></a>Acessar mobileAppAssignment
 

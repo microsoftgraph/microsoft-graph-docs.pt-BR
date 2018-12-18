@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de managementConditionExpressionString
 description: Uma cadeia de caracteres de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
-ms.openlocfilehash: 456df27900aa10ead7e2bc090e5e06e0bcd7754f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eabcc730e86f74e2afc7c93874d47e787579c899
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040113"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361037"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>tipo de recurso de managementConditionExpressionString
 

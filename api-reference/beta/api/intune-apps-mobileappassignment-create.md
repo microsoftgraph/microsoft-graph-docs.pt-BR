@@ -1,12 +1,13 @@
 ---
 title: Criar mobileAppAssignment
 description: Criar um novo objeto mobileAppAssignment.
-ms.openlocfilehash: 1d8f2d5a26b61f799cea1a736450e7e7b6082e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d662002d02c688698f77e4fd2908b27b8863a5cf
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040205"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359056"
 ---
 # <a name="create-mobileappassignment"></a>Criar mobileAppAssignment
 

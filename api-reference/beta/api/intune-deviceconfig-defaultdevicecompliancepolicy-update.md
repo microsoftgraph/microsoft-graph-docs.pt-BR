@@ -1,12 +1,13 @@
 ---
 title: Atualizar defaultDeviceCompliancePolicy
 description: Atualize as propriedades de um objeto defaultDeviceCompliancePolicy.
-ms.openlocfilehash: 65dcf950a1d8f3bbcbbb19b4132713bfb13b5153
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6f4dcb134bcb03e3026c1361a34e38f7975ff495
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040155"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361009"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>Atualizar defaultDeviceCompliancePolicy
 

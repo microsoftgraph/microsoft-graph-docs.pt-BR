@@ -1,12 +1,13 @@
 ---
 title: tipo de enum managedAppFlaggedReason
 description: O motivo para o qual um usuário foi sinalizado
-ms.openlocfilehash: 3955c5c841b4eede13149c08ca61a3f3aa84e97a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 395cd446863b88fade45c7160302cd05132f1d52
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358419"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>tipo de enum managedAppFlaggedReason
 
@@ -18,7 +19,7 @@ O motivo para o qual um usuário foi sinalizado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Nenhum problema.|
+|none|0|Nenhum problema.|
 |rootedDevice|1|O registro de aplicativo está sendo executado em um dispositivo com raiz/desbloqueado.|
 
 

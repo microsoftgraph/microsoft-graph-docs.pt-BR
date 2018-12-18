@@ -1,12 +1,13 @@
 ---
 title: Get macOSGeneralDeviceConfiguration
 description: Ler propriedades e relações do objeto macOSGeneralDeviceConfiguration.
-ms.openlocfilehash: 683ccbe38bc2380763bc0673383b0e47403f019a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6ed46c223529d0dde59750db0ed135b71c08482f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003712"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359112"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 

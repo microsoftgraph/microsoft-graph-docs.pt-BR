@@ -1,12 +1,13 @@
 ---
 title: tipo de enum androidForWorkCrossProfileDataSharingType
 description: Android para trabalho cruzar o compartilhamento de tipo de dados de perfil.
-ms.openlocfilehash: 3fed0b50f77758292cbc7d6dd3d4e465b70f2c00
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: c2ed9206a59b03cf6391d81d236135fc878a93f0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040744"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360729"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>tipo de enum androidForWorkCrossProfileDataSharingType
 

@@ -1,12 +1,13 @@
 ---
 title: Remover professor
 description: Remova um professor de uma aula.
-ms.openlocfilehash: d0ae11901bf8e8cd05dd7705acad09a6604180fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: mmast-msft
+ms.openlocfilehash: c0ff720fb5a8c9b176728e55393cbb764da751a7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006822"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356977"
 ---
 # <a name="remove-teacher"></a>Remover professor
 

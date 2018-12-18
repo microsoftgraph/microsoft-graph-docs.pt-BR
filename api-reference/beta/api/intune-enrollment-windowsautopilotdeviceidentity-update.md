@@ -1,12 +1,13 @@
 ---
 title: Atualizar windowsAutopilotDeviceIdentity
 description: Atualize as propriedades de um objeto windowsAutopilotDeviceIdentity.
-ms.openlocfilehash: 1cf603f9d970379fb55eac416ffab092ae94587c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b1ec7e17602becbf70d825711f2e2ea55b278fb5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038815"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27356347"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Atualizar windowsAutopilotDeviceIdentity
 

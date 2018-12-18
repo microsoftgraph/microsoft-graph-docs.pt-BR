@@ -1,12 +1,13 @@
 ---
 title: Listar managedApps
 description: Listar propriedades e relações dos objetos managedApp.
-ms.openlocfilehash: 33b91220d034c3b24db471ea8800934c6907100a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: eb3f6536290fd39c2d857a28aa828599f5746590
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037331"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360162"
 ---
 # <a name="list-managedapps"></a>Listar managedApps
 

@@ -1,12 +1,13 @@
 ---
 title: ação de getTargetedUsersAndDevices
 description: Ainda não documentado
-ms.openlocfilehash: 95d3c93e15c3f52dc80dc55b6afe6e1dd11b9030
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: b0893a3942b3423d2bcb1aebeb77c893b0098b50
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033880"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357635"
 ---
 # <a name="gettargetedusersanddevices-action"></a>ação de getTargetedUsersAndDevices
 

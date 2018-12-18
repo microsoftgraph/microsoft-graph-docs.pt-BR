@@ -1,12 +1,13 @@
 ---
 title: Lista iosVppAppAssignedLicenses
 description: Lista as propriedades e os relacionamentos dos objetos iosVppAppAssignedLicense.
-ms.openlocfilehash: c8589cea1baf58c070ec21510bd06380d5e98885
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: ee5787593a841246165ad10673a772b6e24ddf09
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034278"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358181"
 ---
 # <a name="list-iosvppappassignedlicenses"></a>Lista iosVppAppAssignedLicenses
 

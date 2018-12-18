@@ -1,12 +1,13 @@
 ---
 title: Adicionar anexo
 description: Use essa API para adicionar um anexo a um evento. Desde daí
-ms.openlocfilehash: 6a5d07c8cbbeab6895a38d915c2fcdfa9e2e5c50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: angelgolfer-ms
+ms.openlocfilehash: 2f55646c8f0f115640ced91a90ef16d40599b3b3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035325"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27355955"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 

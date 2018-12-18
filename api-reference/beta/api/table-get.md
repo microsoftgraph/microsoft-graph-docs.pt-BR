@@ -1,12 +1,13 @@
 ---
 title: Obter tabela
 description: Recupere as propriedades e os relacionamentos do objeto de tabela.
-ms.openlocfilehash: 37f347077d343d4b86fdd82d1e5c3d493e6a022f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: 9bac729dc25b9433f5af1491be275e6a2ac47f22
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040030"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360316"
 ---
 # <a name="get-table"></a>Obter tabela
 

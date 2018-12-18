@@ -1,12 +1,13 @@
 ---
 title: Obter usuário
 description: Leia as propriedades e as relações do objeto user.
-ms.openlocfilehash: 3f786374650e3062c1da58381febfb983d673998
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: cf0ee7b2c6d9cf13176f65c174ee4b6ac986984b
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035378"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359686"
 ---
 # <a name="get-user"></a>Obter usuário
 

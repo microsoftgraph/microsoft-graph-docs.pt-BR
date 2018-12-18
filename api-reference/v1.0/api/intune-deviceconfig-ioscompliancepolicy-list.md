@@ -1,12 +1,13 @@
 ---
 title: Listar iosCompliancePolicies
 description: Listar propriedades e relações dos objetos iosCompliancePolicy.
-ms.openlocfilehash: 6722a04f6e4c60ba954d5c09d84de5c4ac86f41c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 909278a4f749f6d3f54309391dc65353924dc010
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004187"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359945"
 ---
 # <a name="list-ioscompliancepolicies"></a>Listar iosCompliancePolicies
 

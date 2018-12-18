@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso notificationMessageTemplate
 description: " seção. Use o objeto notificationMessageTemplate para criar suas próprias notificações personalizadas para os administradores escolherem durante a configuração de ações de não conformidade."
-ms.openlocfilehash: 1708dcb947eaa71f6a079b65041b6612267a160c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 110fdfd12c7fc8f556b276581c470d688ae4a35d
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004541"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358090"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Tipo de recurso notificationMessageTemplate
 

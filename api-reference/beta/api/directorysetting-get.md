@@ -1,12 +1,13 @@
 ---
 title: Fazer uma configuração de diretório
 description: Recupere as propriedades de um objeto de configuração do diretório específico.
-ms.openlocfilehash: ee0f4c2ea6120bbaba510315da304c8ab27d9e13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lleonard-msft
+ms.openlocfilehash: 7dfd6d7f7623aef082a43c0b67c1867edb691f31
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035313"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361471"
 ---
 # <a name="get-a-directory-setting"></a>Fazer uma configuração de diretório
 
@@ -16,7 +17,7 @@ Recupere as propriedades de um objeto de configuração do diretório específic
 
 > **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *obter groupSettings*.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

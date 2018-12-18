@@ -1,12 +1,13 @@
 ---
 title: Criar iosUpdateDeviceStatus
 description: Criar um novo objeto iosUpdateDeviceStatus.
-ms.openlocfilehash: 205bc02b37f3ba846e2fc7df0685d50fbd9e5279
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 7927912d236058128a9e5263d1d6a9090ce394a6
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038019"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358146"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Criar iosUpdateDeviceStatus
 

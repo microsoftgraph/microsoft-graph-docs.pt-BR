@@ -1,12 +1,13 @@
 ---
 title: Listar iosUpdateConfigurations
 description: Listar propriedades e relações dos objetos iosUpdateConfiguration.
-ms.openlocfilehash: 9214f906ae7eaa8338852b0aa84d9dbce08c61d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34149169708886f48ac38ad7bdc49fa898d12ed4
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040510"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360407"
 ---
 # <a name="list-iosupdateconfigurations"></a>Listar iosUpdateConfigurations
 

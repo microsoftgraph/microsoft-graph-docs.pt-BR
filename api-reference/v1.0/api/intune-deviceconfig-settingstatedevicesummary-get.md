@@ -1,12 +1,13 @@
 ---
 title: Get settingStateDeviceSummary
 description: Ler propriedades e relações do objeto settingStateDeviceSummary.
-ms.openlocfilehash: 1234a903bcaec283c27821f6c2c079680a047934
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 9e05165849e52b819b154597c53fb49865e4ab72
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006885"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359308"
 ---
 # <a name="get-settingstatedevicesummary"></a>Get settingStateDeviceSummary
 

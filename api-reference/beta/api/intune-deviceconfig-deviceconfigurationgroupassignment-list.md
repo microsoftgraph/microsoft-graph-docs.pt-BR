@@ -1,12 +1,13 @@
 ---
 title: Lista deviceConfigurationGroupAssignments
 description: Lista as propriedades e os relacionamentos dos objetos deviceConfigurationGroupAssignment.
-ms.openlocfilehash: b43c78d0b8ad99aaaaa86aeb713d45a425c91aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a1dce979ab078d22c755b77724abfd274a1872cc
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035828"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27361429"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>Lista deviceConfigurationGroupAssignments
 

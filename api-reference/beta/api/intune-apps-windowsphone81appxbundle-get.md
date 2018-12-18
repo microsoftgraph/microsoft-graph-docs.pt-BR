@@ -1,12 +1,13 @@
 ---
 title: Obter windowsPhone81AppXBundle
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81AppXBundle.
-ms.openlocfilehash: bbf32f723ae9794aafb6a337338b54430fd0cbaa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: a48b58201952f9d6115ee496e29355ab9015f21c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035286"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358111"
 ---
 # <a name="get-windowsphone81appxbundle"></a>Obter windowsPhone81AppXBundle
 

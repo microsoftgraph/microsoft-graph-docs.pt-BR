@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de teamsApp
 description: Um aplicativo no catálogo de aplicativos Microsoft Teams.
-ms.openlocfilehash: f8a96355c572287fc8bacc48f9a72e5da8d0f380
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: nkramer
+ms.openlocfilehash: 207974800e44e0db29b8c42f260a1ac16a18902f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005959"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359581"
 ---
 # <a name="teamsapp-resource-type"></a>tipo de recurso de teamsApp
 
@@ -36,7 +37,7 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 ### <a name="teamsappdistributionmethod-values"></a>valores de teamsAppDistributionMethod
 
-|Membro|Valor|Descrição|
+|Member|Valor|Descrição|
 |:---|:---|:---|
 |repositório|0| O aplicativo está disponível para todos os locatários por meio da loja de app Teams da Microsoft.|
 |organization|1|O aplicativo está disponível somente neste locatário.|

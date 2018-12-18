@@ -1,12 +1,13 @@
 ---
 title: 'usuário: translateExchangeIds'
 description: Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
-ms.openlocfilehash: e18c59df5a7ecbaa16b954bf74221c8d8d1de5d3
-ms.sourcegitcommit: 4aebfaefc23e02a98b2fec35958cd2110020f15f
+author: dkershaw10
+ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27184487"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360573"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -22,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | User.ReadBasic, User.Read, User.ReadWrite |
-| Aplicativo | User.Read.All, User.ReadWrite.All |
+| Application | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -41,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-| Parâmetro | Tipo | Descrição |
+| Parâmetro | Type | Descrição |
 |:----------|:-----|:------------|
 | inputIds | Coleção Edm.String | Uma coleção de identificadores para converter. Todos os identificadores na coleção devem ter o mesmo tipo de ID de fonte e devem ser para itens na mesma caixa de correio. Tamanho máximo dessa coleção é 1000 cadeias de caracteres. |
 | sourceIdType | exchangeIdFormat | O tipo de identificadores de na ID do `InputIds` parâmetro. |

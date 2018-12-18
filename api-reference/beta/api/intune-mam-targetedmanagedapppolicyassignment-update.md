@@ -1,12 +1,13 @@
 ---
 title: Atualizar targetedManagedAppPolicyAssignment
 description: Atualizar as propriedades de um objeto targetedManagedAppPolicyAssignment.
-ms.openlocfilehash: f165b66b016080d3461d8a512812373615e16a27
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4c0343d1790cf457dba5a28a999af5cc91eca66c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034328"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358923"
 ---
 # <a name="update-targetedmanagedapppolicyassignment"></a>Atualizar targetedManagedAppPolicyAssignment
 

@@ -1,12 +1,13 @@
 ---
 title: Acessar managedEBook
 description: Propriedades de leitura e relações do objeto managedEBook.
-ms.openlocfilehash: 852bce05d023dc2adff92ccb670da2b9996d45af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 1be4f5915334242055a37a942ea28077350c435f
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359644"
 ---
 # <a name="get-managedebook"></a>Acessar managedEBook
 

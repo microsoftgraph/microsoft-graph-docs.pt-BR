@@ -1,12 +1,13 @@
 ---
 title: Obter androidWorkProfileTrustedRootCertificate
 description: Leia as propriedades e os relacionamentos do objeto androidWorkProfileTrustedRootCertificate.
-ms.openlocfilehash: 66e323258e2b9aa677d3b73ed2e4dbd31e9417fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 473568f12b90af2af6e085202243dff1257059b1
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033875"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360078"
 ---
 # <a name="get-androidworkprofiletrustedrootcertificate"></a>Obter androidWorkProfileTrustedRootCertificate
 

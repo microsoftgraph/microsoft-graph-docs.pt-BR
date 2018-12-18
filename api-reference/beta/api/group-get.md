@@ -1,12 +1,13 @@
 ---
 title: Obter grupo
 description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
-ms.openlocfilehash: 5bd4635e3eb9004a33c60fee0c802e77fa15a709
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: dc61d3d42f95b47649183f2dbc0932b4b4327400
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040629"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358027"
 ---
 # <a name="get-group"></a>Obter grupo
 
@@ -69,7 +70,7 @@ GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErr
 
 Desde que o recurso de **grupo** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância de **grupo** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

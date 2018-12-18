@@ -1,19 +1,20 @@
 ---
 title: Criar uma configuração de diretório em grupos
 description: Use essa API para criar uma nova configuração de diretório para o grupo.
-ms.openlocfilehash: d8bb0750085a23df05100ec0072024d42247b3cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 2e400babc809bdc8d9277cad1bd41b8b714e4e92
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038910"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358993"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Criar uma configuração de diretório em grupos
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Use essa API para criar uma nova configuração de diretório para o grupo.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

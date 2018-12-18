@@ -1,12 +1,13 @@
 ---
 title: Listar linhas
 description: Recupere uma lista de objetos tablerow.
-ms.openlocfilehash: 5cb2cfd7965b1318b8697ff60112ea8b52403cd0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: lumine2008
+ms.openlocfilehash: d3ae25face1d2ca43d240c60621c390b7bf67da5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040642"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360113"
 ---
 # <a name="list-rows"></a>Listar linhas
 

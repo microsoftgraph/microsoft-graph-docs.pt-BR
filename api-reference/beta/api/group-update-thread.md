@@ -1,12 +1,13 @@
 ---
 title: Atualizar thread de conversas
 description: Atualize um objeto thread.
-ms.openlocfilehash: 56492be24d0e917bfed1cbe8f066f16bac873d14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: 5d95beec5eb95d6a62538aba62c57bd367c824a3
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039289"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358412"
 ---
 # <a name="update-conversation-thread"></a>Atualizar thread de conversas
 

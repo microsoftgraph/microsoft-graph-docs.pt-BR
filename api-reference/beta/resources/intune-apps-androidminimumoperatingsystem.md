@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidMinimumOperatingSystem
 description: Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
-ms.openlocfilehash: 6d64aa86da510678b9065cdc92baba8f671e7af0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 6b2533b5b92da20410c3657df9d7194fb6b08e86
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039210"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357509"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -26,9 +27,9 @@ Contém propriedades para o sistema operacional mínimo obrigatório para um apl
 |v4_4|Booliano|Versão 4.4 ou posterior.|
 |v5_0|Booliano|Versão 5.0 ou posterior.|
 |v5_1|Booliano|Versão 5.1 ou posterior.|
-|v6_0|Booliano|Versão 6.0 ou posterior.|
-|v7_0|Booliano|Versão 7.0 ou posterior.|
-|v7_1|Booliano|Versão 7.1 ou posterior.|
+|v6_0|Boolean|Versão 6.0 ou posterior.|
+|v7_0|Boolean|Versão 7.0 ou posterior.|
+|v7_1|Boolean|Versão 7.1 ou posterior.|
 |v8_0|Booliano|Versão 8.0 ou posterior.|
 |v8_1|Booliano|Versão 8.1 ou posterior.|
 |v9_0|Booliano|Versão 9.0 ou posterior.|

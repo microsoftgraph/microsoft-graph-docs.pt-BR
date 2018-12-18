@@ -1,12 +1,13 @@
 ---
 title: Lista androidPkcsCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos androidPkcsCertificateProfile.
-ms.openlocfilehash: c346dfe37b45ca596d068d23f4fde51c1ed2a9ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: d88ce8ebd6edf289befd3cec1d954282c44cab81
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040577"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360582"
 ---
 # <a name="list-androidpkcscertificateprofiles"></a>Lista androidPkcsCertificateProfiles
 

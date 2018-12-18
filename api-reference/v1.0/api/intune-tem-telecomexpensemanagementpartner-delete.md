@@ -1,12 +1,13 @@
 ---
 title: Excluir telecomExpenseManagementPartner
 description: Exclui telecomExpenseManagementPartner.
-ms.openlocfilehash: 6da35adff352d6e2404d83eb9144aa0363e04520
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 4d0a65c206f35d769c268b6d84a8681772c84df5
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003854"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359588"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Excluir telecomExpenseManagementPartner
 

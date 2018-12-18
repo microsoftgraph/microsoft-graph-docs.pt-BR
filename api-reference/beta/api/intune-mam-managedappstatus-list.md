@@ -1,12 +1,13 @@
 ---
 title: Listar managedAppStatuses
 description: Listar propriedades e relações dos objetos managedAppStatus.
-ms.openlocfilehash: ceea2e47688d7bc7d6e6aee0ed682c36fd45fa0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e4b1b16aa51d84e1404b81bcc12a5c235339a2e7
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040349"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357257"
 ---
 # <a name="list-managedappstatuses"></a>Listar managedAppStatuses
 

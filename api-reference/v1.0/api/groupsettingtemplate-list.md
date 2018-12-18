@@ -1,12 +1,13 @@
 ---
 title: Lista groupSettingTemplates
 description: Os Modelos de configuração de grupo representam um conjunto de modelos pelo qual as configurações de grupo podem ser criadas e usadas em um locatário.  Esta operação recupera a lista de objetos groupSettingTemplates disponíveis.
-ms.openlocfilehash: e3a92b174b4d1d95cbbf22385b56484441a6e3eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: dkershaw10
+ms.openlocfilehash: b47613093d8efa7fac99a313fff45d846d7a5073
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006976"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359357"
 ---
 # <a name="list-groupsettingtemplates"></a>Lista groupSettingTemplates
 

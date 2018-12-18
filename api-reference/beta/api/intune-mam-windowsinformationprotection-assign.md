@@ -1,12 +1,13 @@
 ---
 title: atribuir ação
 description: Ainda não documentado
-ms.openlocfilehash: d2ca94973c66486fc8cc9aeb3c4c793471ff2e13
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 70d66bfda498c6fbfa7065e0d35006563567bb08
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035464"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27359070"
 ---
 # <a name="assign-action"></a>atribuir ação
 

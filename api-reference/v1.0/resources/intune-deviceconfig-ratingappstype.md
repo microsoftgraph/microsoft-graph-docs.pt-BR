@@ -1,12 +1,13 @@
 ---
 title: tipo de enum ratingAppsType
 description: Aplicativos de classificação como o conteúdo de mídia
-ms.openlocfilehash: 3a880e1d871f76c4cc92e9ca81863f51d9540cde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: e0340b9e1a188df6fd7fea0972ba4db8da2060e0
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360736"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enum ratingAppsType
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar windows10EnrollmentCompletionPageConfiguration
 description: Atualize as propriedades de um objeto windows10EnrollmentCompletionPageConfiguration.
-ms.openlocfilehash: b3566d7b476c17557bdfc15f8ff9d86763123ab2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039228"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360043"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Atualizar windows10EnrollmentCompletionPageConfiguration
 
@@ -53,13 +54,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |createdDateTime|DateTimeOffset|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Booliano|Mostrar ou ocultar o progresso da instalação para o usuário|
-|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repetir a instalação em caso de falha de instalação|
-|allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear o dispositivo redefinir em caso de falha de instalação|
-|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
+|showInstallationProgress|Boolean|Mostrar ou ocultar o progresso da instalação para o usuário|
+|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repetir a instalação em caso de falha de instalação|
+|allowDeviceResetOnInstallFailure|Boolean|Permitir ou bloquear o dispositivo redefinir em caso de falha de instalação|
+|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
 |customErrorMessage|String|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
 |installProgressTimeoutInMinutes|Int32|Definir tempo limite de progresso de instalação em minutos|
-|allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
+|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
 |selectedMobileAppIds|String collection|Aplicativos selecionados para rastrear o status de instalação|
 
 

@@ -1,12 +1,13 @@
 ---
 title: Atualizar networkIPv6ConfigurationManagementCondition
 description: Atualize as propriedades de um objeto networkIPv6ConfigurationManagementCondition.
-ms.openlocfilehash: f0a1045cfe41ecf9ceedea9f309879be7f223b9c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 10014f1ddde4914b97f52e92901266e06ae07c99
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039453"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27357313"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>Atualizar networkIPv6ConfigurationManagementCondition
 

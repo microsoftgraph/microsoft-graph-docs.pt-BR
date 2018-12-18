@@ -1,12 +1,13 @@
 ---
 title: Excluir deviceManagementScript
 description: Exclui um deviceManagementScript.
-ms.openlocfilehash: bfbca0d626fcb46dc6a8a3b3cf32eaaed6818266
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 597a58c7ba5b344846dd741e3699e4048649e1a9
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035936"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360477"
 ---
 # <a name="delete-devicemanagementscript"></a>Excluir deviceManagementScript
 

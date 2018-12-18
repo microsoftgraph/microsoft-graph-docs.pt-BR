@@ -1,12 +1,13 @@
 ---
 title: Criar windows10CompliancePolicy
 description: Cria um novo objeto windows10CompliancePolicy.
-ms.openlocfilehash: 76ba188743ede8609e3d116d0b05d9aa50621bc7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 50d1230a6e1580008e501745f9c7918da5031187
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040381"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360911"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 
@@ -67,22 +68,22 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows 10.|
 |mobileOsMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |mobileOsMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
-|bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
-|secureBootEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
-|codeIntegrityEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
-|storageRequireEncryption|Booliano|Exige criptografia em dispositivos Windows.|
-|activeFirewallRequired|Booliano|Exigir um firewall ativas em dispositivos do Windows.|
-|defenderEnabled|Booliano|Exigem o Windows Defender Antimalware em dispositivos do Windows.|
+|earlyLaunchAntiMalwareDriverEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
+|bitLockerEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
+|secureBootEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
+|codeIntegrityEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
+|storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
+|activeFirewallRequired|Boolean|Exigir um firewall ativas em dispositivos do Windows.|
+|defenderEnabled|Boolean|Exigem o Windows Defender Antimalware em dispositivos do Windows.|
 |defenderVersion|String|Exigem a versão mínima do Windows Defender Antimalware em dispositivos do Windows.|
-|signatureOutOfDate|Booliano|Exigem o Windows Defender Antimalware assinatura a ser atualizado em dispositivos do Windows.|
-|rtpEnabled|Booliano|Exigem proteção em tempo real do Windows Defender Antimalware em dispositivos do Windows.|
-|antivirusRequired|Booliano|Exigir qualquer solução antivírus registrado na Central de Decurity do Windows para estar ligado e monitoramento (ex.: Symantec, Windows Defender).|
-|antiSpywareRequired|Booliano|Exigir qualquer solução de AntiSpyware registrado na Central de Decurity do Windows para estar ligado e monitoramento (ex.: Symantec, Windows Defender).|
+|signatureOutOfDate|Boolean|Exigem o Windows Defender Antimalware assinatura a ser atualizado em dispositivos do Windows.|
+|rtpEnabled|Boolean|Exigem proteção em tempo real do Windows Defender Antimalware em dispositivos do Windows.|
+|antivirusRequired|Boolean|Exigir qualquer solução antivírus registrado na Central de Decurity do Windows para estar ligado e monitoramento (ex.: Symantec, Windows Defender).|
+|antiSpywareRequired|Boolean|Exigir qualquer solução de AntiSpyware registrado na Central de Decurity do Windows para estar ligado e monitoramento (ex.: Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|coleção [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|O sistema operacional válido criar intervalos em dispositivos do Windows. Essa coleção pode conter um máximo de 10.000 elementos.|
-|deviceThreatProtectionEnabled|Booliano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
+|deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir o nível de risco mínimo de proteção contra ameaças de dispositivo a ser relatado não-conformidade. Os possíveis valores são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Booliano|Exigem a considerar o estado de conformidade do SCCM em consideração para Intune estado de conformidade.|
+|configurationManagerComplianceRequired|Boolean|Exigem a considerar o estado de conformidade do SCCM em consideração para Intune estado de conformidade.|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Get windowsPhone81CompliancePolicy
 description: Ler propriedades e relações do objeto windowsPhone81CompliancePolicy.
-ms.openlocfilehash: f5135af0bd1e304c569098bde86999933728f769
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 282a70a78178b3cd7df2d018248f9c2da5fc2389
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005189"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27358272"
 ---
 # <a name="get-windowsphone81compliancepolicy"></a>Get windowsPhone81CompliancePolicy
 

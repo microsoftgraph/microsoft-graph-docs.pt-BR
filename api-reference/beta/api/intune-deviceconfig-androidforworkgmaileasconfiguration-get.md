@@ -1,12 +1,13 @@
 ---
 title: Obter androidForWorkGmailEasConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkGmailEasConfiguration.
-ms.openlocfilehash: d8ebc94ad231b4abf3d86b864462bd963de58b7e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: bfc67d8971fe6dad67ae311c8fc12441f113f6f8
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040574"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360414"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>Obter androidForWorkGmailEasConfiguration
 

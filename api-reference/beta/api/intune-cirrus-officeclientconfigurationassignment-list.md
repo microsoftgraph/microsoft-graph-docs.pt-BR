@@ -1,12 +1,13 @@
 ---
 title: Lista officeClientConfigurationAssignments
 description: Lista as propriedades e os relacionamentos dos objetos officeClientConfigurationAssignment.
-ms.openlocfilehash: 8c8447a7e6339b40e958e019ddd0b9eed17b8c9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: tfitzmac
+ms.openlocfilehash: 34f926b0e02a963c1ab16ec7a0dd3eefcc06852c
+ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033299"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27360379"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Lista officeClientConfigurationAssignments
 
