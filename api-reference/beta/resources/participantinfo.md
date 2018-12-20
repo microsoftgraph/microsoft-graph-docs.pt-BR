@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de participantInfo
 description: Contém propriedades adicionais sobre a identidade dos participantes
-ms.openlocfilehash: c6f429e353d80ea53c5f5c00ca084ae7a8a4a7c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 335626d1c34e2c54a86b0494e931c2da3fe283e7
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033221"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380489"
 ---
 # <a name="participantinfo-resource-type"></a>tipo de recurso de participantInfo
 
@@ -16,7 +17,7 @@ Contém propriedades adicionais sobre a identidade dos participantes
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo                          | Descrição  |
+| Propriedade	       | Tipo                          | Descrição  |
 |:---------------|:------------------------------|:-------------|
 | identidade       | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a esse participante. |
 | languageId     | String                        | A cadeia de caracteres de cultura do idioma. |

@@ -2,12 +2,12 @@
 title: Chamada Delete
 description: Excluir ou desligar a uma chamada ativa.
 author: VinodRavichandran
-ms.openlocfilehash: 07183b4837e6107f347947b901d4efea76b7da98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ae12a6ee937075745957cfccbd4adcbd4dc2f5f8
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350964"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380251"
 ---
 # <a name="delete-call"></a>Chamada Delete
 
@@ -50,7 +50,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_call"
+  "name": "delete-call"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}

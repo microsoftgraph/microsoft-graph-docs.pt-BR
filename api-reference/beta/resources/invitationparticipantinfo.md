@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de invitationParticipantInfo
 description: O **InvitationParticipant** é usado para representar um conjunto de identidades associado a um convite para conversa e fornece os parâmetros adicionais de convite.
-ms.openlocfilehash: 8b00625dad1c41121b0359586742301e16d163fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f833fcd0c555dfcc88da4027313ed7f40da81428
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035511"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380482"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso de invitationParticipantInfo
 
@@ -16,7 +17,7 @@ O **InvitationParticipant** é usado para representar um conjunto de identidades
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade                           | Tipo                          | Descrição                                                                          |
+| Propriedade	                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | Os valores possíveis são: `default` e `voicemail`. |
 | identity                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a este convite.                   |

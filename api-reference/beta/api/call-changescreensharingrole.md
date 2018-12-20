@@ -2,12 +2,12 @@
 title: 'chamar: changeScreenSharingRole'
 description: Iniciar e interromper o compartilhamento de tela na chamada. Essa API é usada para permitir que aplicativos compartilhar o conteúdo de tela com os participantes de uma chamada ou reunião.
 author: VinodRavichandran
-ms.openlocfilehash: 4b4c7e0afa452bef414dd466086463aa16c9d9cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: a0f745fa6af1dbf97c19e95a70ca37350dacc408
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328361"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380455"
 ---
 # <a name="call-changescreensharingrole"></a>chamar: changeScreenSharingRole
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/changeScreenSharingRole
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |role|String|Os valores possíveis são: 'Visualizador', 'Compartilhador'|
 
@@ -54,7 +54,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_changeScreenSharingRole"
+  "name": "call-changeScreenSharingRole"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/changeScreenSharingRole

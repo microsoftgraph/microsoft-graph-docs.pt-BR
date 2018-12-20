@@ -1,12 +1,13 @@
 ---
 title: Obtenha um participante
 description: Recupere as propriedades e relacionamentos de um objeto de **participante** .
-ms.openlocfilehash: 4e97278b7ac93d784884c789f4da089e63e195ad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 8a306c3397a10222692022999194fe12c9501f87
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033752"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380188"
 ---
 # <a name="get-participant"></a>Obtenha um participante
 
@@ -14,14 +15,14 @@ ms.locfileid: "27033752"
 
 Recupere as propriedades e relacionamentos de um objeto de **participante** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Application     | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +32,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -50,7 +51,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 O exemplo a seguir mostra a solicitação.
 <!-- {
   "blockType": "request",
-  "name": "get_participant"
+  "name": "get-participant"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}

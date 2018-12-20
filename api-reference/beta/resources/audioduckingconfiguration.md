@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de audioDuckingConfiguration
 description: Parâmetros para desviando de outras fontes (Introdução gradual e sair de outras fontes.)
-ms.openlocfilehash: 16003933bc2436c333a80754eb9c4d5d9049172c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: e595e2a46f3e8bcbee2bb7ad0e3421216244db71
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041167"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380172"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso de audioDuckingConfiguration
 
@@ -16,7 +17,7 @@ Parâmetros para desviando de outras fontes (Introdução gradual e sair de outr
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade      | Tipo     | Descrição                                                                     |
+| Propriedade	      | Tipo     | Descrição                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
 | lowerLevel    | Int64    | O volume das fontes em % quando as fontes estão sendo ducked.             |
 | rampActive    | Int64    | A quantidade de tempo (em milissegundos) que leva para fontes ducked "desaparecer". |

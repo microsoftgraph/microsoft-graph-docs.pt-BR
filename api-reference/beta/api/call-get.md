@@ -2,12 +2,12 @@
 title: Fazer chamada
 description: Recupere as propriedades e relacionamentos de um objeto de chamada.
 author: VinodRavichandran
-ms.openlocfilehash: f2e3ee4b18dadfaeddd4df89745b469648644a36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316545"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380321"
 ---
 # <a name="get-call"></a>Fazer chamada
 
@@ -32,7 +32,7 @@ GET /applications/{id}/calls/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -52,7 +52,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "get_call"
+  "name": "get-call"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/calls/{id}
@@ -118,6 +118,7 @@ Content-Length: 2821
   },
   "meetingCapability": {
     "allowAnonymousUsersToDialOut": true,
+    "allowAnonymousUsersToStartMeeting": true,
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {

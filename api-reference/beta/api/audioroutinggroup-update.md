@@ -2,12 +2,12 @@
 title: Atualizar o grupo de roteamento de áudio
 description: Modificar fontes e receptores de um audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: ae9e67a9f116a9c1e9dec2b5d742f13917374718
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336684"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380363"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar o grupo de roteamento de áudio
 
@@ -39,7 +39,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade       | Tipo    |Descrição|
+| Propriedade	       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 | receptores | String collection | Os participantes de destino no audioRoutingGroup. |
 | routingMode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
@@ -55,7 +55,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "update_audioRoutingGroup"
+  "name": "update-audioRoutingGroup"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}

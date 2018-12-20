@@ -2,12 +2,12 @@
 title: 'participante: Ativar Mudo'
 description: Ativar Mudo de um participante específico na chamada.
 author: VinodRavichandran
-ms.openlocfilehash: ea84b2944b9a9dd75a72f05f6fa5c4327068e271
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 99a993ae67bb7b3cf49d1a4a9a50fd7cb9aee894
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350068"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380230"
 ---
 # <a name="participant-mute"></a>participante: Ativar Mudo
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |clientContext|String|O contexto de cliente.|
 
@@ -53,7 +53,7 @@ O exemplo a seguir mostra como chamar essa API.
 O exemplo a seguir mostra a solicitação.
 <!-- {
   "blockType": "request",
-  "name": "participant_mute"
+  "name": "participant-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute

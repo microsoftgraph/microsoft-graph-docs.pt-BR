@@ -1,12 +1,13 @@
 ---
 title: 'chamar: updateMetadata'
 description: Atualize os metadados do aplicativo associado a uma chamada.
-ms.openlocfilehash: fbd43db654294c92d05a8c4c6f12d2118298ff5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034955"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380538"
 ---
 # <a name="call-updatemetadata"></a>chamar: updateMetadata
 
@@ -14,14 +15,14 @@ ms.locfileid: "27034955"
 
 Atualize os metadados do aplicativo associado a uma chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Aplicativo     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +55,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_updateMetadata"
+  "name": "call-updateMetadata"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/updateMetadata

@@ -2,12 +2,12 @@
 title: 'chamar: redirecionar'
 description: Redirecione uma chamada recebida.
 author: VinodRavichandran
-ms.openlocfilehash: dd24c1b3841152f8bd088f89c95ff8786cefb47c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309097"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380216"
 ---
 # <a name="call-redirect"></a>chamar: redirecionar
 
@@ -39,13 +39,13 @@ POST /applications/{id}/calls/{id}/redirect
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |destinos|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
 |targetDisposition|String|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
-|maskCallee|Boolean|Indica se o receptor de máscara.|
-|maskCaller|Boolean|Indica se o chamador de máscara.|
+|maskCallee|Booliano|Indica se o receptor de máscara.|
+|maskCaller|Booliano|Indica se o chamador de máscara.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta
@@ -59,7 +59,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect

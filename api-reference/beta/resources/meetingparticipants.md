@@ -1,20 +1,23 @@
 ---
 title: tipo de recurso de meetingParticipants
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 4f91c9198018e903eccff7e8fe07d6668d9fd2c9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Participantes em uma reunião.
+author: VinodRavichandran
+ms.openlocfilehash: 7e44863004dab5405251e2effaf2af8c2ae31f67
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040712"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380279"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso de meetingParticipants
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
+Participantes em uma reunião.
+
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo    | Descrição|
+| Propriedade	       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | attendees | coleção [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 | organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |

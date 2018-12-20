@@ -2,12 +2,12 @@
 title: 'chamar: resposta'
 description: Atenda uma chamada de entrada.
 author: VinodRavichandran
-ms.openlocfilehash: df864a6a9043853e7c9e5b1f5546c4ae502ec4d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: c7de038e2323ab844590c884e15a639a3839dd86
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343201"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380510"
 ---
 # <a name="call-answer"></a>chamar: resposta
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/answer
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro        | Type                                     |Descrição                                                                                                                                    |
+| Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |A ID de inscrição ou de retorno de chamada no qual serão entregues retornos de chamada. (Necessário)                                                               |
 |acceptedModalities|String collection                         |A lista de aceitar modalidades. Valores possíveis são: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Necessário) |
@@ -56,7 +56,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -167,7 +167,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -320,7 +320,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

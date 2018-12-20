@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de chatInfo
 description: Informações sobre uma mensagem em Teams da Microsoft.
-ms.openlocfilehash: d7e90cf2cdf5180f6483675d919b4e635a1cd5fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 45af1a7e178286c77ed4bf90528eb602fd48a6bb
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033142"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380412"
 ---
 # <a name="chatinfo-resource-type"></a>tipo de recurso de chatInfo
 
@@ -16,7 +17,7 @@ Informações sobre uma mensagem em Teams da Microsoft.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo    | Descrição|
+| Propriedade	            | Tipo    | Descrição|
 |:--------------------|:--------|:-----------|
 | messageId           | String  | O identificador exclusivo para uma mensagem em um canal de Teams da Microsoft. |
 | replyChainMessageId | String  | A ID da mensagem de resposta. |

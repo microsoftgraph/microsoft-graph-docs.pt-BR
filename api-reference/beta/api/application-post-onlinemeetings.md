@@ -1,13 +1,13 @@
 ---
 title: Criar a reunião online
 description: Cria uma reunião online em nome de um usuário especificado no corpo da solicitação.
-author: lleonard-msft
-ms.openlocfilehash: 4a68e25156353b41c3ff43685d7b021a2454a927
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: VinodRavichandran
+ms.openlocfilehash: 7b40bd2b9bedcee4777138403eb895f972bab9fb
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331427"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380328"
 ---
 # <a name="create-online-meeting"></a>Criar a reunião online
 
@@ -51,7 +51,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "create_onlineMeeting_from_application"
+  "name": "create-onlinemeeting-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/onlineMeetings

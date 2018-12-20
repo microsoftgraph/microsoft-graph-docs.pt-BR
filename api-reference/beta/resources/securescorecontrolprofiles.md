@@ -1,12 +1,12 @@
 ---
 title: tipo de recurso de secureScoreControlProfiles
 description: Representa a pontuação seguro de um locatário por dados do controle. Por padrão, ela retorna todos os controles para um inquilino e explicitamente pode extrair controles individuais.
-ms.openlocfilehash: e02c9ae3b1431b131576e2e0e115377dd3480bc2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3e7dc463d7521e1980b41034ae4121ab610dd8f5
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038542"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380580"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>tipo de recurso de secureScoreControlProfiles
 
@@ -17,7 +17,7 @@ Representa a pontuação seguro de um locatário por dados do controle. Por padr
 
 ## <a name="methods"></a>Métodos
 
-| Método   | Tipo de retorno|Descrição|
+| Método		   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
 |[Lista secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
 
@@ -29,6 +29,7 @@ Representa a pontuação seguro de um locatário por dados do controle. Por padr
 |   azureTenantId   |   String  |   ID de cadeia de caracteres do GUID para o inquilino.  |
 |   controlName |   String  |   Nome do controle. |
 |   title   |   String  |   Título do controle.   |
+| complianceInformation | coleção [complianceInformation](complianceinformation.md) | A coleção de informações de conformidade associadas a proteger o controle de pontuação |
 |   controlCategory |   String  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infra-estrutura).  |
 |   actionType  |   Cadeia de caracteres  |   Controlar o tipo de ação (Config, revisão, comportamento). |
 |   service |   String  |   Serviço que possui o controle (Exchange, Sharepoint, Azure AD). |
@@ -42,10 +43,7 @@ Representa a pontuação seguro de um locatário por dados do controle. Por padr
 |   remediação |   String  |   Descrição do controle que ajudarão remediar. |
 |   remediationImpact | String  |   Descrição do impacto sobre os usuários da remediação. |
 |   actionUrl | String  |   URL para o qual o controle pode ser actioned. |
-|   controlStateUpdates |   String  |   Sinalizador para indicar onde o inquilino tenha marcado a um controle (Ignorar, thirdParty, examinado) (oferece suporte a [atualização](../api/securescorecontrolprofiles-update.md)). |
-|   tenantNote |    String  |   Inquilino pode ser definida por comentários do controle (suporta a [atualização](../api/securescorecontrolprofiles-update.md)). |
-|   assignedTo |    String  |   Inquilino pode atribuir o controle a um indivíduo (suporta a [atualização](../api/securescorecontrolprofiles-update.md)). |
-|   updatedBy | String  |   Nome principal do usuário de quem fez as alterações para o estado de um controle. |
+|   controlStateUpdates |   coleção [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o inquilino tenha marcado a um controle (Ignorar, thirdParty, examinado) (oferece suporte a [atualização](../api/securescorecontrolprofiles-update.md)). |
 
 ## <a name="relationships"></a>Relações
 

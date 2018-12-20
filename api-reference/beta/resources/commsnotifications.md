@@ -1,22 +1,25 @@
 ---
-title: tipo de recurso de notificações
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 96246491c386971fe18184f26269d4abe3af6e6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: tipo de recurso de commsNotifications
+description: Lista de notificações usado pelos servidores Communications para envio de notificações de vários em um único lote.
+author: VinodRavichandran
+ms.openlocfilehash: 052520a99081e5c09cd6e3ec3b74f74e9527d38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040830"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380447"
 ---
-# <a name="notifications-resource-type"></a>tipo de recurso de notificações
+# <a name="commsnotifications-resource-type"></a>tipo de recurso de commsNotifications
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
+Lista de notificações usado pelos servidores Communications para envio de notificações de vários em um único lote.
+
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo                                       | Descrição |
-|:---------------|:-------------------------------------------|:------------|
-| valor          | coleção de [notificação](commsnotification.md) | A notificação de alteração no recurso. |
+| Propriedade	       | Tipo                                                 | Descrição                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| valor          | coleção [commsNotification](commsnotification.md) | A notificação de alteração no recurso. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,7 +42,7 @@ Veja a seguir uma representação JSON do recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notifications resource",
+  "description": "commsNotifications resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

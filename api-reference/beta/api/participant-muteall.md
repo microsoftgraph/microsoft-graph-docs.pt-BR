@@ -2,12 +2,12 @@
 title: 'participante: muteAll'
 description: Ativar Mudo de todos os participantes na chamada.
 author: VinodRavichandran
-ms.openlocfilehash: 26369f3dc0c6502950c46ed1f9befe80ea1a320a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310175"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380496"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantes|String collection|Os participantes para ser ativado.|
 |clientContext|String|O contexto de cliente.|
@@ -54,7 +54,7 @@ O exemplo a seguir mostra como chamar essa API.
 O exemplo a seguir mostra a solicitação.
 <!-- {
   "blockType": "request",
-  "name": "participant_muteAll"
+  "name": "participant-muteAll"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll

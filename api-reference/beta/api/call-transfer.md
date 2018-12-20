@@ -2,12 +2,12 @@
 title: 'chamar: transferência'
 description: Transferir uma chamada ativa.
 author: VinodRavichandran
-ms.openlocfilehash: 1dc80e342b873c8ebcdb2051107836201e13fda4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 71d250453051c705dcc0646a8e4ad298253d0ee6
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362479"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380503"
 ---
 # <a name="call-transfer"></a>chamar: transferência
 
@@ -39,11 +39,9 @@ POST /applications/{id}/calls/{id}/transfer
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|destino|[identitySet](../resources/identityset.md)||
-|replacesCallId|String|Id de chamada original do participante que está sendo transferido.|
 |clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
@@ -60,7 +58,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_transfer"
+  "name": "call-transfer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
@@ -207,7 +205,7 @@ Content-Type: application/json
 ```
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "call_transfer"
+  "@odata.type": "call-transfer"
 }-->
 ```json
 {

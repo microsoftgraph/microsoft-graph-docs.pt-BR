@@ -2,12 +2,12 @@
 title: 'chamar: playPrompt'
 description: Reproduza um prompt na chamada.
 author: VinodRavichandran
-ms.openlocfilehash: 37192d916a1fe4365abafa0564329450a7c67077
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316580"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380342"
 ---
 # <a name="call-playprompt"></a>chamar: playPrompt
 
@@ -25,6 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
@@ -39,13 +40,13 @@ POST /applications/{id}/calls/{id}/playPrompt
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |solicita|coleção de [prompt](../resources/prompt.md)||
 |clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Se tiver êxito, este método retornará `200 OK` objeto response de código e [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -55,7 +56,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_playPrompt"
+  "name": "call-playPrompt"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/playPrompt
@@ -84,10 +85,10 @@ Content-Length: 166
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.playPromptOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
@@ -110,7 +111,7 @@ Content-Type: application/json
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.playPromptOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",

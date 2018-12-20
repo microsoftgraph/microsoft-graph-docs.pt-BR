@@ -2,12 +2,12 @@
 title: 'participante: convidar'
 description: Convide participantes à chamada ativa.
 author: VinodRavichandran
-ms.openlocfilehash: 8c09f3981c6af90680cd9e42d00184e28bc65d55
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335277"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380524"
 ---
 # <a name="participant-invite"></a>participante: convidar
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/participants/invite
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantes|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Para convidar os participantes.|
 |clientContext|String|O contexto de cliente.|
@@ -54,7 +54,7 @@ Os exemplos a seguir mostra como chamar essa API.
 O exemplo a seguir mostra a solicitação.
 <!-- {
   "blockType": "request",
-  "name": "participant_invite"
+  "name": "participant-invite"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/invite

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de callRoute
 description: O tipo de callRoute.
-ms.openlocfilehash: d2a85d34fe755c6e725abc9a1308a3837f0acf3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 9538fb8f27f60e869c19edc7bd19d7f6b29e8fff
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035371"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380153"
 ---
 # <a name="callroute-resource-type"></a>tipo de recurso de callRoute
 
@@ -16,7 +17,7 @@ O tipo de callRoute.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo                          | Descrição                                                  |
+| Propriedade	            | Tipo                          | Descrição                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | final               | [identitySet](identityset.md) | A identidade que foi resolvida na chamada.               |
 | Original            | [identitySet](identityset.md) | A identidade que originalmente utilizada na chamada.           |

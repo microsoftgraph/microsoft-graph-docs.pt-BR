@@ -1,20 +1,23 @@
 ---
 title: tipo de recurso de organizerMeetingInfo
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 00a7978c44c82ddd6b34802f29188a554e7e0b4f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Informações da reunião que contém o organizador da reunião.
+author: VinodRavichandran
+ms.openlocfilehash: 296b20125908caf73221c2a8380e91931deb7e61
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037010"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380209"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>tipo de recurso de organizerMeetingInfo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
+Informações da reunião que contém o organizador da reunião.
+
 ## <a name="properties"></a>Propriedades
 
-| Propriedade                     | Tipo                          | Descrição                                     |
+| Propriedade	                     | Tipo                          | Descrição                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | allowConversationWithoutHost | Booliano                       | Indica se uma conversa pode continuar depois que deixa o host da conversa. |
 | organizer                    | [identitySet](identityset.md) | O organizador da identidade do Windows Azure Active Directory.  |

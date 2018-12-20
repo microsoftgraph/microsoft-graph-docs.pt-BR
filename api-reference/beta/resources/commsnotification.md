@@ -1,19 +1,22 @@
 ---
-title: tipo de recurso de notificação
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: c09927cbe133c945b83a3bfc1b0eb74ef00bce2b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: tipo de recurso de commsNotification
+description: Comunicações notificação tipo base publicado pelos servidores do Communications Server para notificar mudanças.
+author: VinodRavichandran
+ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039595"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380265"
 ---
-# <a name="notification-resource-type"></a>tipo de recurso de notificação
+# <a name="commsnotification-resource-type"></a>tipo de recurso de commsNotification
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
+Comunicações notificação tipo base publicado pelos servidores do Communications Server para notificar mudanças.
+
 ## <a name="properties"></a>Propriedades
-| Propriedade       | Tipo    | Descrição                                                |
+| Propriedade	       | Tipo    | Descrição                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | Os valores possíveis são: `created`, `updated`, `deleted`.      |
 | recurso       | String  | URI do recurso que foi alterado.                      |
@@ -90,7 +93,7 @@ Veja a seguir uma representação JSON do recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notification resource",
+  "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

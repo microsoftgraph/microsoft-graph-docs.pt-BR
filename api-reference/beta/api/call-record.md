@@ -2,12 +2,12 @@
 title: 'chamar: registro'
 description: Registre a chamada.
 author: VinodRavichandran
-ms.openlocfilehash: 5de56ca417f5a6d06e8116802eeba2dd3d39e399
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303546"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380517"
 ---
 # <a name="call-record"></a>chamar: registro
 
@@ -39,15 +39,15 @@ POST /applications/{id}/calls/{id}/record
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |solicita|coleção [mediaprompt](../resources/mediaprompt.md) | Inicia a coleção de prompts para reproduzir (se houver) antes da gravação. Os clientes podem escolher especificar a ação de "playPrompt" separadamente ou especificar como parte do "Registro" - principalmente todos os registros são precedido por um prompt |
-|bargeInAllowed|Boolean| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
+|bargeInAllowed|Booliano| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Silêncio inicial máximo permitido desde o momento em que iniciamos a operação de registro antes de tempo limite e a operação de falha. Se podemos estiver reproduzindo um prompt, este timer começa após a conclusão da prompt. |
 |maxSilenceTimeoutInSeconds|Int32| O tempo limite de silêncio máximo em segundos.|
 |maxRecordDurationInSeconds|Int32| A duração máxima de registro em segundos.|
-|playBeep|Boolean| Reproduz um alarme sonoro depois de reproduzir o prompt.|
-|streamWhileRecording|Boolean|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
+|playBeep|Booliano| Reproduz um alarme sonoro depois de reproduzir o prompt.|
+|streamWhileRecording|Booliano|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
 |stopTones|String collection|Pare de toques especificados para terminar gravação.|
 |clientContext|String|O contexto de cliente.|
 
@@ -62,7 +62,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_record"
+  "name": "call-record"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/record

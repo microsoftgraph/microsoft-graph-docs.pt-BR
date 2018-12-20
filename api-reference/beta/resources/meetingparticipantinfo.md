@@ -1,20 +1,23 @@
 ---
 title: tipo de recurso de meetingParticipantInfo
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 1d9c22924f8f05255b5e01bad4bbcd6ae5957ffe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Informações sobre um participante em uma reunião.
+author: VinodRavichandran
+ms.openlocfilehash: 2bbb410ea26640ec05d66b5beb0c4b4ea24a42bd
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036806"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380195"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso de meetingParticipantInfo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
+Informações sobre um participante em uma reunião.
+
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo                          | Descrição                              |
+| Propriedade	       | Tipo                          | Descrição                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | identidade       | [identitySet](identityset.md) | Informações de identidade do participante. |
 | UPN            | String                        | Nome principal de usuário do participante.  |

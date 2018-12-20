@@ -1,20 +1,23 @@
 ---
 title: tipo de recurso de meetingInfo
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: c89b96be24211c9f9cce84c905a0b2857a92cd5c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Informações especificadas para criar ou ingressar em uma reunião de reunião.
+author: VinodRavichandran
+ms.openlocfilehash: f8039f05a2f25e254f7aefd740055babc1598dc1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037198"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380307"
 ---
 # <a name="meetinginfo-resource-type"></a>tipo de recurso de meetingInfo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
+Informações especificadas para criar ou ingressar em uma reunião de reunião.
+
 ## <a name="properties"></a>Propriedades
 
-| Propriedade       | Tipo    | Descrição|
+| Propriedade	       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | allowConversationWithoutHost | Booliano |  |
 

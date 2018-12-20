@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mediaStream
 description: O tipo de mediaStream.
-ms.openlocfilehash: 28eb98a3ab1be67c60c6ebd35deb7618f1618be3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040722"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380293"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso de mediaStream
 
@@ -16,7 +17,7 @@ O tipo de mediaStream.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade    | Tipo    | Descrição                                                                                                   |
+| Propriedade	    | Tipo    | Descrição                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
 | direção   | String  | A direção. Os valores possíveis são `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | rótulo       | String  | O rótulo de fluxo de mídia.                                                                                       |

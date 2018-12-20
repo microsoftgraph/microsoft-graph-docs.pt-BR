@@ -2,12 +2,12 @@
 title: 'chamar: Desativar Mudo'
 description: Permite que o aplicativo para desativar o mudo.
 author: VinodRavichandran
-ms.openlocfilehash: 7ac86b12363e692930597e3394ca0f78b30b0dee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343467"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380398"
 ---
 # <a name="call-unmute"></a>chamar: Desativar Mudo
 
@@ -39,7 +39,7 @@ POST /applications/{id}/calls/{id}/unmute
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro      | Type    |Descrição|
+| Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |clientContext|String|O contexto de cliente.|
 
@@ -54,7 +54,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "call_unmute"
+  "name": "call-unmute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/unmute

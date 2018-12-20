@@ -1,16 +1,19 @@
 ---
 title: Avisar o tipo de recurso
-description: Nenhum
-ms.openlocfilehash: 74991deb977d04fb92b9f4e1fedc05dacefafeb8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+description: Solicitar tipo base da ação.
+author: VinodRavichandran
+ms.openlocfilehash: 27018cf841641ac3f7fc2eba6f6304d911c3a7cd
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040673"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380160"
 ---
 # <a name="prompt-resource-type"></a>Avisar o tipo de recurso
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+Solicitar tipo base da ação.
 
 ## <a name="properties"></a>Propriedades
 

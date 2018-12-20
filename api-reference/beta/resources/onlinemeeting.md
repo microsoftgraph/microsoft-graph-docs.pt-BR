@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de onlineMeeting
 description: Informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição de captura.
-ms.openlocfilehash: 73e45f7f2c04df469f2c2fb0faf1c8a0f8680a64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034083"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380475"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso de onlineMeeting
 
@@ -16,13 +17,13 @@ Informações sobre a reunião, incluindo a URL de ingresso, a lista de particip
 
 ## <a name="methods"></a>Métodos
 
-| Método         | Tipo de retorno | Descrição |
+| Método		         | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 | [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos do objeto onlineMeeting. |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
+| Propriedade	                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | accessLevel               | String                                                 | O nível de acesso que controla a admissão na reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Representa as informações de acesso telefônicas de um onlineMeeting. |

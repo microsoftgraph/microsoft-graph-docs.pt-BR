@@ -1,12 +1,13 @@
 ---
 title: Get de Reunião Online
 description: Recupere as propriedades e relacionamentos de um objeto **onlineMeeting** .
-ms.openlocfilehash: 117b1f76212be0ece00d0e1c82f2106faf1fd275
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037057"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380377"
 ---
 # <a name="get-online-meeting"></a>Get de Reunião Online
 
@@ -17,7 +18,7 @@ Recupere as propriedades e relacionamentos de um objeto **onlineMeeting** .
 > **Observação:** O `GET` método está limitado a uma [id de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para interoperabilidade de vídeo de nuvem licenciados usuários e este método é usado para obter os detalhes para ingressar na reunião.
 > Para fluxos de regulares, o bot pode usar o `joinURL` ingressar em uma reunião e nenhuma pesquisa é necessária.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -25,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não são suportados.                                        |
 | Delegado (conta pessoal da Microsoft) | Não são suportados.                                        |
-| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +36,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -55,7 +56,7 @@ O exemplo a seguir mostra a solicitação.
 
 <!-- {
   "blockType": "request",
-  "name": "get_onlineMeeting"
+  "name": "get-onlineMeeting"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}

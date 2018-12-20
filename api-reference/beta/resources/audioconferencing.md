@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de audioConferencing
 description: Representa as informações de acesso telefônicas de um onlineMeeting.
-ms.openlocfilehash: dd23c6ade282e081482a8c079491644c663b4054
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 4e2ee26e6f9a86d50efcb21cd95b84b207488ef1
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035466"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380223"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso de audioConferencing
 
@@ -16,7 +17,7 @@ Representa as informações de acesso telefônicas de um [onlineMeeting](onlinem
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo    | Descrição                                                                    |
+| Propriedade	            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
 | dialinUrl           | String  | Uma URL para a página da web acessível externamente que contém informações de discagem. |
 | leaderPasscode      | String  | A senha de líder necessária para conectar ao provedor de conferência de áudio.      |

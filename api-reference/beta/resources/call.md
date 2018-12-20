@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de chamada
 description: O recurso de **chamada** é criado quando há uma chamada de entrada para o aplicativo ou o aplicativo cria uma nova chamada de saída por meio de um `POST` em `app/calls`.
-ms.openlocfilehash: 8819f03b844f1d67a56f8bbd9e6eca0608de92ea
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 3acc0b04a5cb4357857c948a4b28feef22863a02
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038236"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380566"
 ---
 # <a name="call-resource-type"></a>tipo de recurso de chamada
 
@@ -20,7 +21,7 @@ Embora a mesma identidade não pode ser convidada várias vezes, é possível pa
 
 ## <a name="methods"></a>Métodos
 
-| Método                                                            | Tipo de retorno                                       | Descrição                                  |
+| Método		                                                            | Tipo de retorno                                       | Descrição                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
 | [Fazer chamada](../api/call-get.md)                                    | [chamada](call.md)                                   | Leia as propriedades do objeto **de chamada** .      |
 | [Delete](../api/call-delete.md)                                   |                                                   | Excluir ou desligamento uma **chamada**de ativo.        |
@@ -37,7 +38,7 @@ Embora a mesma identidade não pode ser convidada várias vezes, é possível pa
 | [Criar audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Crie um novo audioRoutingGroup pelo lançamento à coleção audioRoutingGroups. |
 | [Lista audioRoutingGroups](../api/call-list-audioroutinggroups.md) | coleção [audioRoutingGroup](audioroutinggroup.md)|Obtenha uma coleção de objetos audioRoutingGroup.  |
 | **Resposta interativa de voz**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [commsOperation](commsoperation.md)               | Reproduza um prompt na chamada.                     |
+| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Reproduza um prompt na chamada.                     |
 | [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Registre a chamada.                             |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancele o processamento de mídia.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Assine os tons DTMF.                     |
@@ -49,7 +50,7 @@ Embora a mesma identidade não pode ser convidada várias vezes, é possível pa
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade            | Tipo                                                                                                   | Descrição                                                                                                                                                                                         |
+| Propriedade	            | Tipo                                                                                                   | Descrição                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | activeModalities    | Coleção de cadeia de caracteres                                                                                      | A lista de modalidades ativas. Os valores possíveis são: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Somente leitura. Servidor foi gerado.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | O participante que atendeu a chamada. Somente leitura. Servidor foi gerado.                                                                                                                                |
@@ -67,7 +68,7 @@ Embora a mesma identidade não pode ser convidada várias vezes, é possível pa
 | ringingTimeoutInSeconds | Int32                                                                                              | Tempo limite de toque para chamadas ponto a ponto                                                                                                                                                     |
 | routingPolicies     | String collection                                                                                      | Os valores possíveis são: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | O autor da chamada.                                                                                                                                                                         |
-| state               | String                                                                                                 | O estado de chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura. Servidor foi gerado.                         |
+| estado               | String                                                                                                 | O estado de chamada. Os valores possíveis são: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Somente leitura. Servidor foi gerado.                         |
 | subject             | String                                                                                                 | O assunto da conversa.                                                                                                                                                                    |
 | destinos             | coleção [participantInfo](participantinfo.md)                                                       | As metas da chamada.                                                                                                                                                                            |
 | tenantId            | String                                                                                                 | tenantId no Windows Azure Active Directory.                                                                                                                                                                 |
