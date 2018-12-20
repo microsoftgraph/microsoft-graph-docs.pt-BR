@@ -1,26 +1,29 @@
 ---
-title: tipo de recurso de notificações
-description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 96246491c386971fe18184f26269d4abe3af6e6e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+title: tipo de recurso de commsNotifications
+description: Lista de notificações usado pelos servidores Communications para envio de notificações de vários em um único lote.
+author: VinodRavichandran
+ms.openlocfilehash: 052520a99081e5c09cd6e3ec3b74f74e9527d38d
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040830"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380447"
 ---
-# <a name="notifications-resource-type"></a><span data-ttu-id="da10f-103">tipo de recurso de notificações</span><span class="sxs-lookup"><span data-stu-id="da10f-103">notifications resource type</span></span>
+# <a name="commsnotifications-resource-type"></a><span data-ttu-id="3ea58-103">tipo de recurso de commsNotifications</span><span class="sxs-lookup"><span data-stu-id="3ea58-103">commsNotifications resource type</span></span>
 
-> <span data-ttu-id="da10f-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="da10f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="da10f-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="da10f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3ea58-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="3ea58-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3ea58-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="3ea58-105">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="da10f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="da10f-106">Properties</span></span>
+<span data-ttu-id="3ea58-106">Lista de notificações usado pelos servidores Communications para envio de notificações de vários em um único lote.</span><span class="sxs-lookup"><span data-stu-id="3ea58-106">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
 
-| <span data-ttu-id="da10f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="da10f-107">Property</span></span>       | <span data-ttu-id="da10f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="da10f-108">Type</span></span>                                       | <span data-ttu-id="da10f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="da10f-109">Description</span></span> |
-|:---------------|:-------------------------------------------|:------------|
-| <span data-ttu-id="da10f-110">valor</span><span class="sxs-lookup"><span data-stu-id="da10f-110">value</span></span>          | <span data-ttu-id="da10f-111">coleção de [notificação](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="da10f-111">[notification](commsnotification.md) collection</span></span> | <span data-ttu-id="da10f-112">A notificação de alteração no recurso.</span><span class="sxs-lookup"><span data-stu-id="da10f-112">The notification of a change in the resource.</span></span> |
+## <a name="properties"></a><span data-ttu-id="3ea58-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3ea58-107">Properties</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="da10f-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="da10f-113">JSON representation</span></span>
+| <span data-ttu-id="3ea58-108">Propriedade	</span><span class="sxs-lookup"><span data-stu-id="3ea58-108">Property</span></span>       | <span data-ttu-id="3ea58-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="3ea58-109">Type</span></span>                                                 | <span data-ttu-id="3ea58-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3ea58-110">Description</span></span>                                   |
+|:---------------|:-----------------------------------------------------|:----------------------------------------------|
+| <span data-ttu-id="3ea58-111">valor</span><span class="sxs-lookup"><span data-stu-id="3ea58-111">value</span></span>          | <span data-ttu-id="3ea58-112">coleção [commsNotification](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="3ea58-112">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="3ea58-113">A notificação de alteração no recurso.</span><span class="sxs-lookup"><span data-stu-id="3ea58-113">The notification of a change in the resource.</span></span> |
 
-<span data-ttu-id="da10f-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="da10f-114">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ea58-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3ea58-114">JSON representation</span></span>
+
+<span data-ttu-id="3ea58-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3ea58-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +42,7 @@ ms.locfileid: "27040830"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notifications resource",
+  "description": "commsNotifications resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

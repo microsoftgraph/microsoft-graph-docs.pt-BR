@@ -1,29 +1,31 @@
 ---
 title: tipo de recurso de meetingCapability
 description: Contém os recursos de uma reunião
-ms.openlocfilehash: 438193d08ab5542f07d4cbf61704520d81433e50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+author: VinodRavichandran
+ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036414"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380244"
 ---
-# <a name="meetingcapability-resource-type"></a><span data-ttu-id="15ac3-103">tipo de recurso de meetingCapability</span><span class="sxs-lookup"><span data-stu-id="15ac3-103">meetingCapability resource type</span></span>
+# <a name="meetingcapability-resource-type"></a><span data-ttu-id="1d053-103">tipo de recurso de meetingCapability</span><span class="sxs-lookup"><span data-stu-id="1d053-103">meetingCapability resource type</span></span>
 
-> <span data-ttu-id="15ac3-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="15ac3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="15ac3-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="15ac3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1d053-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1d053-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1d053-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1d053-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="15ac3-106">Contém os recursos de uma reunião</span><span class="sxs-lookup"><span data-stu-id="15ac3-106">Contains the capabilities of a meeting</span></span>
+<span data-ttu-id="1d053-106">Contém os recursos de uma reunião</span><span class="sxs-lookup"><span data-stu-id="1d053-106">Contains the capabilities of a meeting</span></span>
 
-## <a name="properties"></a><span data-ttu-id="15ac3-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="15ac3-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1d053-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1d053-107">Properties</span></span>
 
-| <span data-ttu-id="15ac3-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="15ac3-108">Property</span></span>       | <span data-ttu-id="15ac3-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="15ac3-109">Type</span></span>    | <span data-ttu-id="15ac3-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="15ac3-110">Description</span></span>|
-|:---------------|:--------|:----------|
-| <span data-ttu-id="15ac3-111">allowAnonymousUsersToDialOut</span><span class="sxs-lookup"><span data-stu-id="15ac3-111">allowAnonymousUsersToDialOut</span></span> | <span data-ttu-id="15ac3-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="15ac3-112">Boolean</span></span> | <span data-ttu-id="15ac3-113">Indica se os usuários anônimos discagem é permitida em uma reunião.</span><span class="sxs-lookup"><span data-stu-id="15ac3-113">Indicates whether anonymous users dialout is allowed in a meeting.</span></span> |
-| <span data-ttu-id="15ac3-114">autoAdmittedUsers</span><span class="sxs-lookup"><span data-stu-id="15ac3-114">autoAdmittedUsers</span></span> | <span data-ttu-id="15ac3-115">String</span><span class="sxs-lookup"><span data-stu-id="15ac3-115">String</span></span> | <span data-ttu-id="15ac3-116">Os valores possíveis são: `everyoneInCompany` e `everyone`.</span><span class="sxs-lookup"><span data-stu-id="15ac3-116">Possible values are: `everyoneInCompany`, `everyone`.</span></span> |
+| <span data-ttu-id="1d053-108">Propriedade	</span><span class="sxs-lookup"><span data-stu-id="1d053-108">Property</span></span>                          | <span data-ttu-id="1d053-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d053-109">Type</span></span>    | <span data-ttu-id="1d053-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1d053-110">Description</span></span>                                                        |
+|:----------------------------------|:--------|:-------------------------------------------------------------------|
+| <span data-ttu-id="1d053-111">allowAnonymousUsersToDialOut</span><span class="sxs-lookup"><span data-stu-id="1d053-111">allowAnonymousUsersToDialOut</span></span>      | <span data-ttu-id="1d053-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="1d053-112">Boolean</span></span> | <span data-ttu-id="1d053-113">Indica se os usuários anônimos discagem é permitida em uma reunião.</span><span class="sxs-lookup"><span data-stu-id="1d053-113">Indicates whether anonymous users dialout is allowed in a meeting.</span></span> |
+| <span data-ttu-id="1d053-114">allowAnonymousUsersToStartMeeting</span><span class="sxs-lookup"><span data-stu-id="1d053-114">allowAnonymousUsersToStartMeeting</span></span> | <span data-ttu-id="1d053-115">Booliano</span><span class="sxs-lookup"><span data-stu-id="1d053-115">Boolean</span></span> | <span data-ttu-id="1d053-116">Indica se os usuários anônimos poderão iniciar uma reunião.</span><span class="sxs-lookup"><span data-stu-id="1d053-116">Indicates whether anonymous users are allowed to start a meeting.</span></span>  |
+| <span data-ttu-id="1d053-117">autoAdmittedUsers</span><span class="sxs-lookup"><span data-stu-id="1d053-117">autoAdmittedUsers</span></span>                 | <span data-ttu-id="1d053-118">String</span><span class="sxs-lookup"><span data-stu-id="1d053-118">String</span></span>  | <span data-ttu-id="1d053-119">Os valores possíveis são: `everyoneInCompany` e `everyone`.</span><span class="sxs-lookup"><span data-stu-id="1d053-119">Possible values are: `everyoneInCompany`, `everyone`.</span></span>              |
 
-## <a name="json-representation"></a><span data-ttu-id="15ac3-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="15ac3-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1d053-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1d053-120">JSON representation</span></span>
 
-<span data-ttu-id="15ac3-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="15ac3-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1d053-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1d053-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,6 +37,7 @@ ms.locfileid: "27036414"
 ```json
 {
   "allowAnonymousUsersToDialOut": true,
+  "allowAnonymousUsersToStartMeeting": true,
   "autoAdmittedUsers": "everyoneInCompany | everyone"
 }
 ```
