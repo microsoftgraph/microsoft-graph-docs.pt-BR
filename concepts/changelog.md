@@ -2,12 +2,12 @@
 title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
-ms.openlocfilehash: 4e8b70d5af01992e566c2d777db8f8a3c359f838
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 57bdb5da28edb2f3493e8f564316a19399bb9a70
+ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358559"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "27380594"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,7 +17,14 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="december-2018"></a>Dezembro de 2018
 
-### <a name="data-policy-api"></a>API da Política de Dados
+### <a name="security-apis"></a>APIs de segurança
+
+| **Tipo de alteração** | **Versão** | **Descrição**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | Introduzido um novo tipo complexo [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).|
+| Adição        | Beta        | Introduzido um novo tipo complexo [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
+
+### <a name="data-policy-api"></a>Política de API de dados
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -348,7 +355,9 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta       | A pontuação de segurança de APIs [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (e entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Atualizar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta)
+| Adição        | Beta       | A pontuação de segurança de APIs [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (e entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Atualizar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
+| Adição        | Beta        | Introduzido um novo tipo complexo [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) |
+
 
 
 ### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
@@ -620,7 +629,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|A ação [revokeDeviceLicense](/graph/api/intune-apps-iosvppapp-revokedevicelicense?view=graph-rest-beta) foi adicionada a [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta) |
 |Adição|beta|A ação [sendCustomNotificationToCompanyPortal](/graph/api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal?view=graph-rest-beta) foi adicionada a [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) |
 |Adição|beta|A ação **getLicensesForApp** foi adicionada ao conjunto [vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta) |
-|Exclusão|beta|Foram removidos os seguintes tipos de enumeração:<br/>**windowsUpdateInsiderBuildControl**<br/>|
+|Exclusão|Beta|Foram removidos os seguintes tipos de enumeração:<br/>**windowsUpdateInsiderBuildControl**<br/>|
 |Adição|beta|As propriedades **systemUpdateWindowStartMinutesAfterMidnight**, **systemUpdateWindowEndMinutesAfterMidnight** e **systemUpdateInstallType** foram adicionadas à entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)|
 |Alteração|beta|Foi alterado o tipo das seguintes propriedades na entidade [androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta):<br/>**passwordMinutesOfInactivityBeforeScreenTimeout** de Int64 para Int32<br/>|
 |Adição|beta|A propriedade **customKeyValueData** foi adicionada à entidade [androidForWorkVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkvpnconfiguration?view=graph-rest-beta)|
