@@ -2,12 +2,12 @@
 title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
-ms.openlocfilehash: 57bdb5da28edb2f3493e8f564316a19399bb9a70
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+ms.openlocfilehash: e4afc0f2b3a0302493f2d4d25f5c90777d5ffe73
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380594"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413194"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -356,7 +356,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta       | A pontuação de segurança de APIs [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (e entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Atualizar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
-| Adição        | Beta        | Introduzido um novo tipo complexo [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) |
+| Adição        | Beta        | Introduzido um novo tipo complexo [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
 
 
 
