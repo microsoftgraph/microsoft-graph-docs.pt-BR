@@ -1,13 +1,13 @@
 ---
 title: Obter contatos do Outlook em uma pasta compartilhada
-description: " isso também é "
+description: O Outlook permite que os clientes compartilhem pastas entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas de contatos individuais. O Outlook também permite que um cliente representante a outro usuário agir em nome do cliente.
 author: angelgolfer-ms
-ms.openlocfilehash: a3dd8cff5cac88d3ef273b63f40bc8af87910aa1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: d0dc5be8df709c3d736ff0baa55667926cfc5936
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315173"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413152"
 ---
 # <a name="get-outlook-contacts-in-a-shared-folder"></a>Obter contatos do Outlook em uma pasta compartilhada
 
@@ -16,6 +16,8 @@ O Outlook permite que os clientes compartilhem pastas entre si e forneçam acess
 O Microsoft Graph oferece suporte de forma programática à obtenção de contatos em pastas de contatos que foram compartilhadas por outros usuários, além de receber as pastas compartilhadas em si. O suporte também se aplica a pastas em uma caixa de correio delegada.
 
 Por exemplo, Henrique compartilhou com Diogo uma pasta de contatos personalizada e deu a ele acesso de leitura. Se Diogo se conectou ao seu aplicativo e forneceu permissões delegadas (Contacts.Read.Shared ou Contacts.ReadWrite.Shared), o aplicativo poderá acessar a pasta de contatos personalizada de Henrique e os contatos nessa pasta, conforme descrito abaixo.
+
+> **Observação** permissões de compartilhamento (Contacts.Read.Shared ou Contacts.ReadWrite.Shared) permitem que a você ler ou escrever contatos em uma pasta compartilhada ou delegada. Eles não têm suporte [subscrever alterar notificações](webhooks.md) em itens nessas pastas. Para configurar as assinaturas de notificação de alteração nos contatos na pasta de contatos compartilhada, representante ou qualquer outra de um usuário no locatário, use a permissão de aplicativo Contacts.Read.
 
 ## <a name="get-a-contact-in-the-shared-folder"></a>Obter um contato na pasta compartilhada
 

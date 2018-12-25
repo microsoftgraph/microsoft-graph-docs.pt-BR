@@ -1,19 +1,15 @@
 ---
 title: Obter mensagens do Outlook em uma pasta compartilhada ou delegada
-description: 'Esses tópicos também têm eventos similares de lista de seções: obter evento, obter calendário, listar contatos, obter contato, obter a pasta de contatos.'
+description: O Outlook permite que os clientes compartilhem pastas de e-mail entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente representante a outro usuário agir em nome do cliente.
 author: angelgolfer-ms
-ms.openlocfilehash: d90fa5d37fd7a07e4069bd5bcc0eb46f0cae29a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: cdb2228c64647497674402825577942323c3d2ff
+ms.sourcegitcommit: 8feddb85e436be5581557a199f2e46d5b4ebfa21
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320108"
+ms.lasthandoff: 12/22/2018
+ms.locfileid: "27413173"
 ---
-# <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obter mensagens do Outlook em uma pasta compartilhada ou delegada
-
-<!-- remove similar content in other topics when ready to publish - list messages, get message, get mail folder.
-These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder.
--->
+# <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Obtenha mensagens do Outlook em uma pasta compartilhada ou delegada
 
 O Outlook permite que os clientes compartilhem pastas de email entre si e forneçam acesso de "leitura", "criação", "modificação" ou "exclusão" a pastas individuais. O Outlook também permite que um cliente delegue outro usuário para agir em nome do cliente e acesse pastas de correio específicas ou toda a caixa de correio do cliente; isso também é conhecido como "delegação" no Outlook.
 
@@ -21,7 +17,9 @@ O Microsoft Graph oferece suporte de forma programática para receber mensagens 
 
 Por exemplo, Henrique compartilhou com Diogo e deu a ele acesso de leitura à sua caixa de entrada. Se Diogo estiver conectado em seu aplicativo e tiver fornecido permissões delegadas (Mail.Read.Shared ou Mail.ReadWrite.Shared), o aplicativo poderá acessar o email e a caixa de entrada do Henrique conforme descrito abaixo.
 
-## <a name="get-a-message-in-the-shared-folder"></a>Obter uma mensagem na pasta compartilhada
+> **Observação** permissões de compartilhamento (Mail.Read.Shared ou Mail.ReadWrite.Shared) permitem a você ler ou escrever mensagens em uma pasta compartilhada ou delegada. Eles não têm suporte [subscrever alterar notificações](webhooks.md) em pastas como essas. Para configurar as assinaturas de notificação de alteração em mensagens na pasta de e-mail compartilhado, representante ou qualquer outra de um usuário no locatário, use a permissão de aplicativo Mail.Read.
+
+## <a name="get-a-message-in-the-shared-folder"></a>Obtenha uma mensagem na pasta compartilhada
 
 Você pode obter uma mensagem específica na caixa de entrada do Henrique:
 
