@@ -15,15 +15,24 @@ Os tutoriais do Microsoft Graph são exercícios de treinamento passo a passo qu
 
 Os seguintes tutoriais estão disponíveis no momento:
 
-- [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
-- [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
-- [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
-- [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
-- [PHP](https://docs.microsoft.com/graph/tutorials/php/)
-- [Python](https://docs.microsoft.com/graph/tutorials/python/)
-- [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
-- [React](https://docs.microsoft.com/graph/tutorials/react/)
-- [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
+- 
+  [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
+- 
+  [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
+- 
+  [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
+- 
+  [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
+- 
+  [PHP](https://docs.microsoft.com/graph/tutorials/php/)
+- 
+  [Python](https://docs.microsoft.com/graph/tutorials/python/)
+- 
+  [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
+- 
+  [React](https://docs.microsoft.com/graph/tutorials/react/)
+- 
+  [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
 
 Não está vendo seu idioma ou plataforma preferidos? Solicite um tutorial para ele no [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis).
 
