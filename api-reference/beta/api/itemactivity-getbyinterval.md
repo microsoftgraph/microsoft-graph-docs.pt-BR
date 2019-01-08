@@ -3,12 +3,12 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: Obter estatísticas de atividade de item pelo intervalo
-ms.openlocfilehash: 0b5a9782528e75d4d50734dedc49460d30252410
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 3b3c7139678715a11365f2551c318dcf66e68e7a
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036078"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748187"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item pelo intervalo
 
@@ -22,7 +22,7 @@ Agregações da análise não podem estar disponíveis para todos os tipos de a�
 
 [itemActivityStats]: ../resources/itemactivitystat.md
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,7 +44,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-| Nome           | Valor              | Descrição
+| Parâmetro      | Tipo               | Descrição
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | cadeia de caracteres (timestamp) | A hora de início através do qual a atividades de agregação.
 | endDateTime    | cadeia de caracteres (timestamp) | A hora de término através do qual a atividades de agregação.

@@ -2,15 +2,15 @@
 title: 'user: reminderView'
 description: 'Retorne uma lista de lembretes de calendário nas horas de início e término especificadas. '
 author: dkershaw10
-ms.openlocfilehash: 2e0b0e8bb76ee50a9af7246739e4ab8da973d3a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 4437e3972c56f8b85f8fe38d3c23a2e3461106f9
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356788"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748322"
 ---
 # <a name="user-reminderview"></a>user: reminderView
-Retorne uma lista de lembretes de calendário nas horas de início e término especificadas. 
+Retorne uma lista de lembretes de evento em um calendário do usuário dentro do especificados de início e término. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +30,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="function-parameters"></a>Parâmetros de função
 Forneça os seguintes parâmetros de função com valores na URL solicitada.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |startDateTime|String|A data e hora de início do evento para o qual o lembrete está definido. O valor é representado no formato ISO 8601, por exemplo, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|A data e hora de término do evento para o qual o lembrete está definido. O valor é representado no formato ISO 8601, por exemplo, "2015-11-08T20:00:00.0000000".|

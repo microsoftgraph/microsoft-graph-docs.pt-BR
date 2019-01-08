@@ -1,19 +1,18 @@
 ---
 title: tipo de recurso organization
 description: " criar e excluir não são suportados. Herda de directoryObject."
-ms.openlocfilehash: 0059e14f5b007ff651870a48073d47ed3b4db108
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b98455c52d963d4e523253dc2a3b75137be9e854
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006381"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748329"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
-Representa um locatário do Azure Active Directory. Somente as operações de leitura e atualização têm suporte em locatários; criar e excluir não têm suporte. Herda de [directoryObject](directoryobject.md).
+Representa o locatário do Azure Active Directory que o usuário ou aplicativo está conectado ao. Somente as operações de leitura e a atualização são suportadas neste recurso; criar e excluir não são suportados. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview).
-
 
 ## <a name="methods"></a>Métodos
 
@@ -32,17 +31,18 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade                             | Tipo                                                              | Descrição                                                                                                                                                                                                                                                                          |
 |:-------------------------------------|:------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | assignedPlans                        | Coleção [assignedPlan](assignedplan.md)                        | A coleção de planos de serviço associados ao locatário. Não anulável.                                                                                                                                                                                                            |
+| businessPhones                      | String collection                                         | Número de telefone para a organização. Observação: Embora esta seja uma coleção de cadeia de caracteres, apenas um número pode ser definido para essa propriedade.                                                                                            |
 | city                                 | String                                                            | Nome da cidade do endereço da organização                                                                                                                                                                                                                                        |
-| companyLastDirSyncTime               | DateTimeOffset                                                    | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` |
 | country                              | String                                                            | Nome do país/região do endereço da organização                                                                                                                                                                                                                              |
 | countryLetterCode                    | String                                                            | Abreviação de país/região da organização                                                                                                                                                                                                                                     |
-| deletionTimestamp                    | DateTimeOffset                                                    | O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`                                                                                     |
-| dirSyncEnabled                       | Booliano                                                           | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).                        |
+|createdDateTime|DateTimeOffset| Carimbo de hora de quando a organização foi criada. O valor não pode ser modificado e é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+| deletedDateTime                    | DateTimeOffset                                                    | Representa a data e hora de quando o locatário do Azure AD foi excluído, usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.                                                                                     |
 | displayName                          | String                                                            | O nome de exibição do locatário.                                                                                                                                                                                                                                                     |
 | id                                   | String                                                            | O identificador exclusivo do locatário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.                                                                                                                                                            |
 |isMultipleDataLocationsForServicesEnabled|Booliano|**true** se a organização estiver habilitada; Multi-Geo **false** se a organização não estiver habilitado Multi-Geo; **Nulo** (padrão). Somente leitura. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 | marketingNotificationEmails          | Coleção de cadeias de caracteres                                                 | Não anulável.                                                                                                                                                                                                                                                                        |
-| objectType                           | String                                                            | Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa".                                                                                                                                                                                                 |
+| onPremisesLastSyncDateTime               | DateTimeOffset                                                    | A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
+| onPremisesSyncEnabled                       | Booliano                                                           | **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).                        |
 | postalCode                           | String                                                            | CEP do endereço da organização                                                                                                                                                                                                                                      |
 | preferredLanguage                    | String                                                            | O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en".                                                                                                                                                                                         |
 | privacyProfile                       | [privacyProfile](privacyprofile.md)                               | O perfil de privacidade de uma organização.                                                                                                                                                                                                                                              |
@@ -52,7 +52,6 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | state                                | String                                                            | Nome do estado do endereço da organização                                                                                                                                                                                                                                       |
 | street                               | String                                                            | Nome da rua do endereço da organização                                                                                                                                                                                                                                          |
 | technicalNotificationMails           | Coleção de cadeias de caracteres                                                 | Não anulável.                                                                                                                                                                                                                                                                        |
-| telephoneNumber                      | String                                                            | Número de telefone da organização                                                                                                                                                                                                                                                |
 | verifiedDomains                      | Coleção [VerifiedDomain](verifieddomain.md)                    | A coleção de domínios associados a este locatário. Não anulável.                                                                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
@@ -62,7 +61,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 ## <a name="json-representation"></a>Representação JSON
 
-Veja a seguir uma representação JSON do recurso
+Veja a seguir uma representação JSON do recurso.
 
 <!--{
   "blockType": "resource",
@@ -80,16 +79,14 @@ Veja a seguir uma representação JSON do recurso
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["string"],
   "city": "string",
-  "companyLastDirSyncTime": "2018-05-12T13:09:20.111Z",
   "country": "string",
   "countryLetterCode": "string",
-  "deletionTimestamp": "2018-05-12T15:37:52.763Z",
-  "dirSyncEnabled": true,
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
-  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -101,10 +98,8 @@ Veja a seguir uma representação JSON do recurso
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
-  "telephoneNumber": "555-555-6568",
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## <a name="see-also"></a>Confira também

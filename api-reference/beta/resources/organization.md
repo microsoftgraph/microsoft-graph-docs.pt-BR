@@ -1,22 +1,20 @@
 ---
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
-ms.openlocfilehash: 053656eb042ca04f2d487d47ee62624875fa4e17
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+ms.openlocfilehash: 1d13d10c79d2dfc39ec187265533cb6ea17a683b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191141"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748567"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Representa um locatário do Azure Active Directory. 
+Representa o locatário do Azure Active Directory que o usuário ou aplicativo está conectado ao. Somente as operações de leitura e a atualização são suportadas neste recurso; criar e excluir não são suportados. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite que você adicione seus próprios dados às propriedades personalizadas usando [extensions](/graph/extensibility-overview).
-
-Somente as operações de leitura e a atualização são suportadas no inquilinos; criar e excluir não são suportados. Herda de [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Métodos
 
@@ -34,12 +32,13 @@ Somente as operações de leitura e a atualização são suportadas no inquilino
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|A coleção de planos de serviço associados ao locatário. Não anulável.            |
+| businessPhones                      | String collection                                         | Número de telefone para a organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                            |
 |city|String| Nome da cidade do endereço da organização |
 |companyLastDirSyncTime|DateTimeOffset|A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |country|String| Nome do país/região do endereço da organização |
 |countryLetterCode|String| Abreviação de país/região da organização |
 |createdDateTime|DateTimeOffset| Carimbo de hora de quando a organização foi criada. O valor não pode ser modificado e é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|deletionTimestamp|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+| deletedDateTime                    | DateTimeOffset                                                    | Representa a data e hora de quando o locatário do Azure AD foi excluído, usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.                                                                                     |
 |dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
 |displayName|String|O nome de exibição do locatário.|
 |id|String|O identificador exclusivo do locatário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
@@ -56,11 +55,13 @@ Somente as operações de leitura e a atualização são suportadas no inquilino
 |state|String| Nome do estado do endereço da organização |
 |street|String| Nome da rua do endereço da organização |
 |technicalNotificationMails|Coleção de cadeias de caracteres| Não anulável. |
-|telephoneNumber|String| Número de telefone da organização |
 |verifiedDomains|Coleção [VerifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável.            |
 
 ## <a name="relationships"></a>Relações
-| extensões | coleção de [extensão](extension.md) | A coleção de extensões open definido para o recurso de organização. Anulável. |
+
+| Relação     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões open definido para o recurso de organização. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -82,10 +83,13 @@ Veja a seguir uma representação JSON do recurso
   "city": "string",
   "country": "string",
   "countryLetterCode": "string",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
+  "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
@@ -99,7 +103,6 @@ Veja a seguir uma representação JSON do recurso
   "technicalNotificationMails": ["string"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
-
 ```
 
 ## <a name="see-also"></a>Confira também

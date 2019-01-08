@@ -1,12 +1,12 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: Obtenha a lista de fusos horários com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário.
-ms.openlocfilehash: c5886cc435b482a0acfcd99c65f356efe3a99d59
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 9feb5e883b1516cdefe9e1b439bf59a0f3b9dd8f
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033766"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748469"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -39,7 +39,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-| Parâmetros da função       | Tipo | Descrição|
+| Parâmetro      | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | TimeZoneStandard  | Cadeia de caracteres  | Um formato de fuso horário. Os valores com suporte são: `Windows` e `Iana`. Opcional. |
 

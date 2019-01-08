@@ -1,19 +1,21 @@
 ---
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
-ms.openlocfilehash: 62e03d7bee58f14acc5d5ace12d55f95d1d07a2d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: a7b9521ccd39cb7cb64236c7d563a8a5c08d64a3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035007"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748560"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Atualize as propriedades da organização autenticada no momento.
+Atualize as propriedades da organização autenticada no momento. Nesse caso, `organization` é definido como uma coleção de exatamente um registro, e, portanto, sua **ID** deve ser especificado na solicitação.  A **ID** é também conhecido como a **tenantId** da organização.
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
@@ -23,17 +25,21 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-PATCH /organization
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /organization/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
@@ -57,8 +63,9 @@ Este é um exemplo da solicitação.
   "blockType": "request",
   "name": "update_organization"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/beta/organization
+PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
 Content-length: 411
 
@@ -74,13 +81,16 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
+
 ##### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit"
+  "@odata.type": "microsoft.graph.organization"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -89,6 +99,7 @@ HTTP/1.1 204 No Content
 
 - [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
+
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

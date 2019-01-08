@@ -1,12 +1,12 @@
 ---
 title: Membros do grupo de lista transitivos
 description: Obtenha uma lista de membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
-ms.openlocfilehash: a3cdc0048db3b3d1aa90b5d3426d22439a18b298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 703515f4549e409d3711699c79671ed0b1a93cb3
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036528"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748553"
 ---
 # <a name="list-group-transitive-members"></a>Membros do grupo de lista transitivos
 
@@ -14,7 +14,7 @@ ms.locfileid: "27036528"
 
 Obtenha uma lista de membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -63,7 +63,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
 ### <a name="response"></a>Resposta

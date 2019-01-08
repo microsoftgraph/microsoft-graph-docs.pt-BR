@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obter Unidade
-ms.openlocfilehash: 620797ec453f9456f6ea6a6dcb90d396f43a7a4b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 903eb9d5886bf2ec3b7f8672438f01482e754f9b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035893"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748588"
 ---
 # <a name="get-drive"></a>Obter Unidade
 
@@ -118,7 +118,7 @@ GET /drives/{driveId}
 
 Esse método é compatível com o [parâmetro de consulta $select][odata-query-parameters] para formar a resposta.
 
-## <a name="http-response"></a>Resposta HTTP
+## <a name="response"></a>Resposta
 
 Cada um desses métodos retorna um [recurso de unidade][drive-resource] para a unidade correspondente no corpo da resposta.
 

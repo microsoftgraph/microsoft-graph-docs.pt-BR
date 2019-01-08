@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Pesquisar arquivos
-ms.openlocfilehash: 73ddc65e45be2c0abafdcca24a63c6cdbb4bb6ba
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 591aa271a9e5a1d9ae69af2e5d8f6ea9ba7fe74b
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006343"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748217"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 
@@ -43,9 +43,9 @@ Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-pa
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-| Nome | Valor  | Descrição                                                                                                                          |
+| Parâmetro | Tipo  | Descrição                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| `q`  | string | O texto de consulta usado para pesquisar itens. Os valores podem ser correspondidos em vários campos, incluindo nome do arquivo, metadados e conteúdo do arquivo. |
+| t  | string | O texto de consulta usado para pesquisar itens. Os valores podem ser correspondidos em vários campos, incluindo nome do arquivo, metadados e conteúdo do arquivo. |
 
 ## <a name="example"></a>Exemplo
 

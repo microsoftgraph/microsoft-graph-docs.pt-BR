@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Obter Pastas Especiais
-ms.openlocfilehash: cbf7e3c3f5add9fd147ef8a8e8add7496ddbed7d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 8b8b1186682421a5ab564272fd473cb72819202d
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038129"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748497"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
 
@@ -57,7 +57,7 @@ Os nomes de pasta especial a seguir estão disponíveis no OneDrive e no OneDriv
 
 Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-parameters) `$expand` e `$select` para personalizar a resposta.
 
-## <a name="http-response"></a>Resposta HTTP
+## <a name="response"></a>Resposta
 
 Este método retorna um código de resposta `200 OK` e um objeto [driveItem](../resources/driveitem.md) no corpo da resposta.
 
@@ -91,7 +91,7 @@ Para solicitar os filhos de uma pasta especial, você pode solicitar a coleção
 GET /me/drive/special/{name}/children
 ```
 
-### <a name="http-response"></a>Resposta HTTP
+### <a name="response"></a>Resposta
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true} -->
 

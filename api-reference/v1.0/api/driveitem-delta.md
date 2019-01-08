@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
-ms.openlocfilehash: d1fa3cb1e28a22f8cd8b016b9f6a93ff9ec41583
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 0c884c69a7c162fb5009dfda80e8def4ee201033
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005887"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748546"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -46,7 +46,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-| Nome   | Valor  | Descrição                                                                                                                          |
+| Parâmetro   | Tipo  | Descrição                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token  | string | Opcional. Se não for especificado, enumera o estado atual da hierarquia. Se `latest`, retorna esvaziar a resposta com o token de delta mais recente. Se um token delta anterior, retorna o novo estado desde esse token.
 
@@ -205,10 +205,9 @@ Content-type: application/json
 * No OneDrive for Business e no SharePoint, `delta` só tem suporte na pasta `root`, e não em outras pastas dentro de uma unidade.
 
 * O delta não retornará as seguintes propriedades de DriveItem:
-
-* **cTag**
-* **lastModifiedBy**
-* **size**
+  * **cTag**
+  * **lastModifiedBy**
+  * **size**
 
 ## <a name="error-responses"></a>Respostas de erro
 

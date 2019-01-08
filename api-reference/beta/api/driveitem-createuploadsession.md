@@ -3,12 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Upload de arquivos retomável
-ms.openlocfilehash: 09f76b4427df446b2f063827029473a11dba6341
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033744"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748434"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -365,7 +365,7 @@ If-Match: {etag or ctag}
 
 **Observação:** você pode usar os cabeçalhos `@microsoft.graph.conflictBehavior` e `if-match` conforme esperado nessa chamada.
 
-### <a name="http-response"></a>Resposta HTTP
+### <a name="response"></a>Resposta
 
 Se o arquivo puder ser confirmado usando os novos metadados, uma resposta `HTTP 201 Created` ou `HTTP 200 OK` será retornada com os metadados de Item para o arquivo carregado.
 

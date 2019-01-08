@@ -2,24 +2,30 @@
 title: tipo de recurso de evento
 description: Um evento em um calendário.
 author: angelgolfer-ms
-ms.openlocfilehash: 45b5131b14e9bf50c8dc0bc3db869b706a3068ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340646"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748482"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Um evento em um calendário.
+Um evento em um calendário do [usuário](user.md) ou o calendário padrão de um [grupo](group.md)do Office 365.
 
 Esse recurso permite:
 
 - Adicionar seus próprios dados às propriedades personalizadas como [extensões](/graph/extensibility-overview).
 - Assinatura de [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/event-delta.md).
+
+> **Observação:** Existem algumas pequenas diferenças da maneira que você pode interagir com calendários do usuário, grupo calendários e seus eventos:
+
+ - Você pode organizar somente os calendários de usuário em um [calendarGroup](calendargroup.md).
+ - Outlook automaticamente aceita todas as solicitações de reunião em nome de grupos. Você pode [Aceitar](../api/event-accept.md), [Aceitar provisoriamente](../api/event-tentativelyaccept.md)ou [Recusar](../api/event-decline.md) solicitações de reunião para apenas calendários de _usuário_ .
+  - O Outlook não oferece suporte a lembretes para eventos de grupo. É possível [Adiar](../api/event-snoozereminder.md) ou [Descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) para apenas calendários de _usuário_ .
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -94,13 +100,13 @@ Veja a seguir uma representação JSON do recurso
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data e a hora em que o evento termina.|
-|hasAttachments|Boolean|Defina como true se o evento tiver anexos.|
+|hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |id|String| Somente leitura.|
 |importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isAllDay|Boolean|Defina como true se o evento durar o dia inteiro.|
-|isCancelled|Boolean|Defina como true se o evento tiver sido cancelado.|
-|isOrganizer|Boolean|Defina como true se o remetente da mensagem também for o organizador.|
-|isReminderOn|Boolean|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
+|isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
+|isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
+|isOrganizer|Booliano|Defina como true se o remetente da mensagem também for o organizador.|
+|isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|O local do evento.|
 |locations|Coleção de [local](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
@@ -111,7 +117,7 @@ Veja a seguir uma representação JSON do recurso
 |originalStartTimeZone|String|O fuso horário de início que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência do evento.|
 |reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-|responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+|responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|A ID para a série item mestre recorrente, se esse evento for parte de uma série recorrente.|
@@ -142,13 +148,13 @@ Veja a seguir uma representação JSON do recurso
 |[Atualizar](../api/event-update.md) | [event](event.md)   |Atualizar o objeto event. |
 |[Excluir](../api/event-delete.md) | Nenhum |Excluir o objeto event. |
 |[cancel](../api/event-cancel.md) | Nenhum | Enviar mensagem de cancelamento do organizador para todos os participantes e Cancelar reunião especificada. |
-|[accept](../api/event-accept.md)|Nenhum|Aceitar o evento especificado.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Nenhum|Aceitar provisoriamente o evento especificado.|
-|[decline](../api/event-decline.md)|Nenhum|Recusar o convite para o evento especificado.|
+|[accept](../api/event-accept.md)|Nenhum|Aceite o evento específico em um calendário do usuário.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Nenhum|Aceite provisoriamente o evento específico em um calendário do usuário.|
+|[decline](../api/event-decline.md)|Nenhum|Recusar o convite para o evento específico em um calendário do usuário.|
 |[forward](../api/event-forward.md)|Nenhum|Permite que o organizador ou o participante de um evento de reunião encaminhar a solicitação de reunião para um novo destinatário.|
 |[delta](../api/event-delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
-|[dismissReminder](../api/event-dismissreminder.md)|Nenhum|Descartar o lembrete para o evento especificado.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Nenhum|Adiar o lembrete para o evento especificado.|
+|[dismissReminder](../api/event-dismissreminder.md)|Nenhum|Descarte o lembrete para o evento específico em um calendário do usuário.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Nenhum|Adie um lembrete sobre o evento específico em um calendário do usuário até um novo horário.|
 |[Listar instâncias](../api/event-list-instances.md) |Coleção [Event](event.md)| Obter uma coleção de objetos Event.|
 |**Anexos**| | |
 |[List attachments](../api/event-list-attachments.md) |Coleção [Attachment](attachment.md)| Obtenha todos os anexos em um evento.|
