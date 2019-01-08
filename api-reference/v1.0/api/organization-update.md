@@ -1,60 +1,62 @@
 ---
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
-ms.openlocfilehash: ac07f3ded31f8d6c7169d24208ed7e8cf967e07a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: b9601b9b6fa7e961a807c009e6fd4acb00fd8b47
+ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006611"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27748525"
 ---
-# <a name="update-organization"></a><span data-ttu-id="34b7e-103">Atualize a organização</span><span class="sxs-lookup"><span data-stu-id="34b7e-103">Update organization</span></span>
+# <a name="update-organization"></a><span data-ttu-id="3e61c-103">Atualize a organização</span><span class="sxs-lookup"><span data-stu-id="3e61c-103">Update organization</span></span>
 
-<span data-ttu-id="34b7e-104">Atualize as propriedades da organização autenticada no momento.</span><span class="sxs-lookup"><span data-stu-id="34b7e-104">Update the properties of the currently authenticated organization.</span></span>
+<span data-ttu-id="3e61c-104">Atualize as propriedades da organização autenticada no momento.</span><span class="sxs-lookup"><span data-stu-id="3e61c-104">Update the properties of the currently authenticated organization.</span></span> <span data-ttu-id="3e61c-105">Nesse caso, `organization` é definido como uma coleção de exatamente um registro, e, portanto, sua **ID** deve ser especificado na solicitação.</span><span class="sxs-lookup"><span data-stu-id="3e61c-105">In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.</span></span>  <span data-ttu-id="3e61c-106">A **ID** é também conhecido como a **tenantId** da organização.</span><span class="sxs-lookup"><span data-stu-id="3e61c-106">The **ID** is also known as the **tenantId** of the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="34b7e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="34b7e-105">Permissions</span></span>
 
-<span data-ttu-id="34b7e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="34b7e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3e61c-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="3e61c-107">Permissions</span></span>
 
-|<span data-ttu-id="34b7e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="34b7e-108">Permission type</span></span> | <span data-ttu-id="34b7e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="34b7e-109">Permissions (from least to most privileged)</span></span> |
+<span data-ttu-id="3e61c-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3e61c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="3e61c-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3e61c-110">Permission type</span></span> | <span data-ttu-id="3e61c-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3e61c-111">Permissions (from least to most privileged)</span></span> |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="34b7e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="34b7e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="34b7e-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="34b7e-111">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="34b7e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="34b7e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="34b7e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="34b7e-113">Not supported.</span></span>    |
-|<span data-ttu-id="34b7e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="34b7e-114">Application</span></span> | <span data-ttu-id="34b7e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="34b7e-115">Not supported.</span></span> |
+|<span data-ttu-id="3e61c-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3e61c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3e61c-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3e61c-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3e61c-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3e61c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e61c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3e61c-115">Not supported.</span></span>    |
+|<span data-ttu-id="3e61c-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3e61c-116">Application</span></span> | <span data-ttu-id="3e61c-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3e61c-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="34b7e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="34b7e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e61c-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3e61c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization
+PATCH /organization/{id}
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="34b7e-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="34b7e-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3e61c-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3e61c-119">Request headers</span></span>
 
-| <span data-ttu-id="34b7e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="34b7e-118">Name</span></span>       | <span data-ttu-id="34b7e-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="34b7e-119">Type</span></span> | <span data-ttu-id="34b7e-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="34b7e-120">Description</span></span>|
+| <span data-ttu-id="3e61c-120">Nome</span><span class="sxs-lookup"><span data-stu-id="3e61c-120">Name</span></span>       | <span data-ttu-id="3e61c-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="3e61c-121">Type</span></span> | <span data-ttu-id="3e61c-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e61c-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="34b7e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="34b7e-121">Authorization</span></span>  | <span data-ttu-id="34b7e-122">string</span><span class="sxs-lookup"><span data-stu-id="34b7e-122">string</span></span>  | <span data-ttu-id="34b7e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="34b7e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3e61c-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="3e61c-123">Authorization</span></span>  | <span data-ttu-id="3e61c-124">string</span><span class="sxs-lookup"><span data-stu-id="3e61c-124">string</span></span>  | <span data-ttu-id="3e61c-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3e61c-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="34b7e-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="34b7e-125">Request body</span></span>
-<span data-ttu-id="34b7e-126">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="34b7e-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="34b7e-127">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="34b7e-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="34b7e-128">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="34b7e-128">For best performance, you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e61c-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3e61c-127">Request body</span></span>
 
-| <span data-ttu-id="34b7e-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="34b7e-129">Property</span></span>     | <span data-ttu-id="34b7e-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="34b7e-130">Type</span></span>   |<span data-ttu-id="34b7e-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="34b7e-131">Description</span></span>|
+<span data-ttu-id="3e61c-128">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="3e61c-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="3e61c-129">Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.</span><span class="sxs-lookup"><span data-stu-id="3e61c-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="3e61c-130">Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="3e61c-130">For best performance, you shouldn't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="3e61c-131">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3e61c-131">Property</span></span>     | <span data-ttu-id="3e61c-132">Tipo</span><span class="sxs-lookup"><span data-stu-id="3e61c-132">Type</span></span>   |<span data-ttu-id="3e61c-133">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e61c-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="34b7e-132">marketingNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="34b7e-132">marketingNotificationEmails</span></span>|<span data-ttu-id="34b7e-133">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="34b7e-133">String collection</span></span>|                                        <span data-ttu-id="34b7e-134">**Anotações**: não anulável.</span><span class="sxs-lookup"><span data-stu-id="34b7e-134">**Notes**: not nullable.</span></span>            |
-|<span data-ttu-id="34b7e-135">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="34b7e-135">privacyProfile</span></span>|[<span data-ttu-id="34b7e-136">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="34b7e-136">privacyProfile</span></span>](../resources/privacyprofile.md)|<span data-ttu-id="34b7e-137">O perfil de privacidade de uma organização (definir statementUrl e contactEmail).</span><span class="sxs-lookup"><span data-stu-id="34b7e-137">The privacy profile of an organization (set statementUrl and contactEmail).</span></span>            |
-|<span data-ttu-id="34b7e-138">securityComplianceNotificationMails</span><span class="sxs-lookup"><span data-stu-id="34b7e-138">securityComplianceNotificationMails</span></span>|<span data-ttu-id="34b7e-139">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="34b7e-139">String collection</span></span>||
-|<span data-ttu-id="34b7e-140">securityComplianceNotificationPhones</span><span class="sxs-lookup"><span data-stu-id="34b7e-140">securityComplianceNotificationPhones</span></span>|<span data-ttu-id="34b7e-141">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="34b7e-141">String collection</span></span>||
-|<span data-ttu-id="34b7e-142">technicalNotificationMails</span><span class="sxs-lookup"><span data-stu-id="34b7e-142">technicalNotificationMails</span></span>|<span data-ttu-id="34b7e-143">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="34b7e-143">String collection</span></span>|                                        <span data-ttu-id="34b7e-144">**Anotações**: não anulável.</span><span class="sxs-lookup"><span data-stu-id="34b7e-144">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="3e61c-134">marketingNotificationEmails</span><span class="sxs-lookup"><span data-stu-id="3e61c-134">marketingNotificationEmails</span></span>|<span data-ttu-id="3e61c-135">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3e61c-135">String collection</span></span>|                                        <span data-ttu-id="3e61c-136">**Anotações**: não anulável.</span><span class="sxs-lookup"><span data-stu-id="3e61c-136">**Notes**: not nullable.</span></span>            |
+|<span data-ttu-id="3e61c-137">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="3e61c-137">privacyProfile</span></span>|[<span data-ttu-id="3e61c-138">privacyProfile</span><span class="sxs-lookup"><span data-stu-id="3e61c-138">privacyProfile</span></span>](../resources/privacyprofile.md)|<span data-ttu-id="3e61c-139">O perfil de privacidade de uma organização (definir statementUrl e contactEmail).</span><span class="sxs-lookup"><span data-stu-id="3e61c-139">The privacy profile of an organization (set statementUrl and contactEmail).</span></span>            |
+|<span data-ttu-id="3e61c-140">securityComplianceNotificationMails</span><span class="sxs-lookup"><span data-stu-id="3e61c-140">securityComplianceNotificationMails</span></span>|<span data-ttu-id="3e61c-141">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="3e61c-141">String collection</span></span>||
+|<span data-ttu-id="3e61c-142">securityComplianceNotificationPhones</span><span class="sxs-lookup"><span data-stu-id="3e61c-142">securityComplianceNotificationPhones</span></span>|<span data-ttu-id="3e61c-143">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3e61c-143">String collection</span></span>||
+|<span data-ttu-id="3e61c-144">technicalNotificationMails</span><span class="sxs-lookup"><span data-stu-id="3e61c-144">technicalNotificationMails</span></span>|<span data-ttu-id="3e61c-145">Coleção de cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3e61c-145">String collection</span></span>|                                        <span data-ttu-id="3e61c-146">**Anotações**: não anulável.</span><span class="sxs-lookup"><span data-stu-id="3e61c-146">**Notes**: not nullable.</span></span>            |
 
-## <a name="response"></a><span data-ttu-id="34b7e-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="34b7e-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3e61c-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e61c-147">Response</span></span>
 
-<span data-ttu-id="34b7e-146">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="34b7e-146">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="3e61c-148">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="3e61c-148">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="34b7e-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="34b7e-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3e61c-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3e61c-149">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="34b7e-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="34b7e-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="3e61c-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3e61c-150">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -62,7 +64,7 @@ PATCH /organization
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization
+PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
 Content-length: 411
 
@@ -79,7 +81,7 @@ Content-length: 411
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="34b7e-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="34b7e-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="3e61c-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="3e61c-151">Response</span></span>
 
 <!-- {
   "blockType": "response",
