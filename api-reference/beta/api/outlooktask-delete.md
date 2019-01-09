@@ -1,19 +1,21 @@
 ---
 title: Excluir outlookTask
 description: Exclua a tarefa especificada do Outlook na caixa de correio do usuário.
-ms.openlocfilehash: 00c2c4d1e5b706b34b531380e32083be55c98776
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: cab78b8fea63c5044cc6faa6a1e4f09dd960bfd6
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040644"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771776"
 ---
 # <a name="delete-outlooktask"></a>Excluir outlookTask
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Exclua a tarefa especificada do Outlook na caixa de correio do usuário.
-## <a name="permissions"></a>Permissions
+
+## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -23,19 +25,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
-DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}
-DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/outlook/tasks/{id}
+DELETE /users/{id|userPrincipalName}/outlook/tasks/{id}
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
@@ -43,21 +48,27 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "delete_outlooktask"
 }-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADIyAAAhrb_QAAA=')
 ```
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. 
+
+### <a name="response"></a>Resposta
+
+Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

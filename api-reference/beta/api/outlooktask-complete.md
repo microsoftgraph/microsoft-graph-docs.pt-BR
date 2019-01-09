@@ -1,12 +1,12 @@
 ---
 title: 'outlookTask: completa'
 description: 'Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual, '
-ms.openlocfilehash: 732da0f3eb03f6a4674e1254586ae21b5f3334bb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+ms.openlocfilehash: 2a92fa0f95737581275f1b5516d68a7feab9578f
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039370"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771804"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: completa
 
@@ -16,11 +16,12 @@ Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** co
 
 Se estiver Concluindo uma tarefa em uma série recorrente, na resposta, a coleção de tarefa conterá tarefa concluída na série e a próxima tarefa na série.
 
-A propriedade **completedDateTime** representa a data quando a tarefa é concluída. Por padrão, a parte do tempo de **completedDateTime** é definida como meia-noite UTC. 
+A propriedade **completedDateTime** representa a data quando a tarefa é concluída. Por padrão, a parte do tempo de **completedDateTime** é definida como meia-noite UTC.
 
 Por padrão, esta operação (e as operações de tarefa POST, GET e PATCH) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -30,14 +31,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->
-```http
-POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}/complete
-POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}/complete
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/outlook/tasks/{id}/complete
+POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
@@ -45,33 +48,41 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 
 ## <a name="request-body"></a>Corpo da solicitação
 
+Não forneça um corpo de solicitação para esse método.
+
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objeto de coleção [outlookTask](../resources/outlooktask.md) e código de resposta no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 O exemplo a seguir marca a tarefa especificada como concluída. Hora oficial do Pacífico (PST) em Especifica o `Prefer: outlook.timezone` cabeçalho.
-##### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "outlooktask_complete"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/tasks('AAMkADA1MT15rfAAA=')/complete
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. O **completedDateTime** e outras propriedades relacionadas a data na resposta são expressos em PST. 
+### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. O **completedDateTime** e outras propriedades relacionadas a data na resposta são expressos em PST.
+
+> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.outlookTask",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

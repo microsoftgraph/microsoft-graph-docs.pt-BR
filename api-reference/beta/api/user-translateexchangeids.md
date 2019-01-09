@@ -2,12 +2,12 @@
 title: 'usuário: translateExchangeIds'
 description: Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
 author: dkershaw10
-ms.openlocfilehash: 6dd18fe041c2a303be4ad333b8beeaef168682b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
+ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360573"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27771818"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:----------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | User.ReadBasic, User.Read, User.ReadWrite |
-| Application | User.Read.All, User.ReadWrite.All |
+| Aplicativo | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -42,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-| Parâmetro | Type | Descrição |
+| Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
 | inputIds | Coleção Edm.String | Uma coleção de identificadores para converter. Todos os identificadores na coleção devem ter o mesmo tipo de ID de fonte e devem ser para itens na mesma caixa de correio. Tamanho máximo dessa coleção é 1000 cadeias de caracteres. |
 | sourceIdType | exchangeIdFormat | O tipo de identificadores de na ID do `InputIds` parâmetro. |
@@ -54,9 +54,16 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-------|:------------|
 | entryId | O formato de ID de entrada binário usado pelos clientes MAPI. |
 | ewsId | O formato de ID usado pelos clientes de serviços Web do Exchange. |
-| immutableEntryId | O formato de ID imutável compatível com MAPI. |
+| immutableEntryId | O compatível com MAPI imutável ID formato binário. |
 | restId | O formato de ID padrão usado pelo Microsoft Graph. |
 | restImmutableEntryId | O formato de ID imutável usado pelo Microsoft Graph. |
+
+Formatos binários (`entryId` e `immutableEntryId`) são URL-safe codificação base64. URL-safeness é implementado, modificando a codificação base64 dos dados binários da seguinte maneira:
+
+- Substituir `+` com`-`
+- Substituir `/` com`_`
+- Remova os caracteres de preenchimento à direita (`=`)
+- Adicionar um número inteiro até o final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam em original (`0`, `1`, ou `2`)
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +73,7 @@ Se tiver êxito, este método retornará `200 OK` código de resposta e um conju
 
 O exemplo a seguir mostra como converter vários identificadores do formato de API REST do normal (`restId`) para o formato de imutável REST (`restImmutableEntryId`).
 
-##### <a name="request"></a>Solicitação
+### <a name="request"></a>Solicitação
 
 Aqui está a solicitação de exemplo.
 <!-- {
@@ -88,7 +95,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
 
 Aqui está a resposta de exemplo
 <!-- {
