@@ -46,8 +46,7 @@ ms.locfileid: "27349039"
 
 <span data-ttu-id="ee7b5-132">Você pode fazer tudo isso e muito mais com a API do Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="ee7b5-132">You can do all this and more with the Microsoft Graph API.</span></span>
 
-><span data-ttu-id="ee7b5-133">
-  \*\*Observação:\*\* ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso do Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) e com a [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).</span><span class="sxs-lookup"><span data-stu-id="ee7b5-133">**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).</span></span>
+><span data-ttu-id="ee7b5-133">**Observação:** ao usar a API do Microsoft Graph, você concorda com os [Termos de Uso do Microsoft Graph](https://developer.microsoft.com/graph/docs/misc/terms-of-use) e com a [Política de Privacidade da Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839).</span><span class="sxs-lookup"><span data-stu-id="ee7b5-133">**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).</span></span>
 
 ### <a name="popular-requests"></a><span data-ttu-id="ee7b5-134">Solicitações mais usadas</span><span class="sxs-lookup"><span data-stu-id="ee7b5-134">Popular requests</span></span>
 
