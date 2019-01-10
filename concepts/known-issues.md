@@ -2,12 +2,12 @@
 title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: jthake-msft
-ms.openlocfilehash: e39cdb13a93c19a4a4829c69dc4b1090fd67d206
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+ms.openlocfilehash: 314b1cf1adab9f7454b6b7e3a3c3acf492d0648c
+ms.sourcegitcommit: 6e34c6995e4217a471950d76fdcf0731e6a17d0e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329159"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27791656"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -38,19 +38,9 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="application-permissions"></a>Permissões de aplicativos
-
-Ao fazer alterações em equipes e canais usando permissões de aplicativos, o Microsoft Teams renderiza a mensagem de controle postada no canal Geral com um nome em branco em vez do nome do aplicativo. Isso será corrigido em uma atualização futura. A correção atualizará retroativamente as mensagens de controle que já foram postadas.
-
 ### <a name="create-chat-thread-api"></a>Criar API de thread de chat
 
 A API atual para [criar um thread de chat](/graph/api/channel-post-chatthreads?view=graph-rest-beta) será substituída por uma API mais rica, consistente com o esquema para [listar mensagens de canais](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### <a name="graph-explorer-and-v10"></a>Explorador do Graph e v1.0
-
-As consultas de exemplos do Explorador do Graph ainda não foram atualizadas para a v1.0.
-Você ainda pode digitar v1.0 na caixa de texto na parte superior.
-Verifique se que você configurou o Explorador do Graph com as permissões apropriadas, como Group.ReadWrite.All e User.Read.All.
 
 ### <a name="graph-explorer-and-global-admins"></a>Explorador do Graph e administradores globais
 
