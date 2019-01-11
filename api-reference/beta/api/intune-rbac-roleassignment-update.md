@@ -2,12 +2,13 @@
 title: Atualizar roleAssignment
 description: Atualizar as propriedades de um objeto roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: 60d2fec52b4338229f53f8abd0d08f04f2c2d569
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4b5cde12d464d2b92f9348445bb793e4114833b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308873"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852014"
 ---
 # <a name="update-roleassignment"></a>Atualizar roleAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [roleAssignment](../resources/intune-rbac-roleassignment.md).
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleAss
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
 |descrição|Cadeia de caracteres|Descrição da atribuição de função.|
 |scopeMembers|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|

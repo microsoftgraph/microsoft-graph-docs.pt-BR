@@ -2,12 +2,13 @@
 title: Excluir evento
 description: Exclua um evento.
 author: angelgolfer-ms
-ms.openlocfilehash: 7f5880c20c6e9f31259910def9529c387c25abe0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 1af6179ec2f00feffe1604f28a942de4e7e7f64b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852406"
 ---
 # <a name="delete-event"></a>Excluir evento
 

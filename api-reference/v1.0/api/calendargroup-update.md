@@ -2,12 +2,13 @@
 title: Atualizar calendargroup
 description: Atualizar as propriedades do objeto calendargroup.
 author: angelgolfer-ms
-ms.openlocfilehash: 24b09f3cd3dc23daf799eac70e59e0c4e32d7079
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18234705606596ff9ce258188877e4146eb2ea25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857138"
 ---
 # <a name="update-calendargroup"></a>Atualizar calendargroup
 

@@ -2,12 +2,13 @@
 title: Excluir educationAssignmentResource
 description: .
 author: dipakboyed
-ms.openlocfilehash: 304ec56c8b2da36626f226104568cd353e58e88b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 99fe9dc64d969a19f4704660679e769b65c8316b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859133"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
@@ -15,7 +16,7 @@ ms.locfileid: "27322642"
 
 Exclua um recurso de uma atribuição. Somente professores na classe podem remover um recurso. Depois que uma atribuição tiver sido publicada aos alunos, professores não é possível remover os recursos que são marcados como "distributeToStudents".
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

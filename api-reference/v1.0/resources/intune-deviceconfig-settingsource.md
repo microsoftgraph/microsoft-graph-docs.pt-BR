@@ -2,12 +2,13 @@
 title: Tipo de recurso settingSource
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: a0ac952dcf48abcfc9daad7e107f63e75b565840
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 277b103550df042491ccadb6ab0176fbca3fff5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804547"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 
@@ -17,8 +18,8 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
-|displayName|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
+|displayName|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 Nenhum

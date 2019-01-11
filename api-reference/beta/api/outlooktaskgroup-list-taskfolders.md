@@ -2,19 +2,20 @@
 title: Lista taskFolders
 description: Obtenha as pastas de tarefas do Outlook em um outlookTaskGroup específico.
 author: angelgolfer-ms
-ms.openlocfilehash: b128542ddcfe78cb379da1a7b87f1ee012858cc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66f755a994ea04a862051b6b32ce3ae9e6b39d0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857649"
 ---
 # <a name="list-taskfolders"></a>Lista taskFolders
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Obtenha as pastas de tarefas do Outlook em um determinado [outlookTaskGroup](../resources/outlooktaskgroup.md).
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

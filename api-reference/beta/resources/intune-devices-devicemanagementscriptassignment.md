@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceManagementScriptAssignment
 description: Contém propriedades usadas para atribuir um script de gerenciamento de dispositivo a um grupo.
 author: tfitzmac
-ms.openlocfilehash: d0b08363de392a337338bb2cd892359b8b9a9345
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cc2da31d105ce9a8169607f3910c41801d86eb2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858748"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>tipo de recurso de deviceManagementScriptAssignment
 
@@ -28,7 +29,7 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição de grupo de script para gerenciamento do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade de atribuição de grupo de script para gerenciamento do dispositivo.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A Id de grupo do Active Directory do Windows Azure Pretendemos o script.|
 
 ## <a name="relationships"></a>Relações

@@ -2,12 +2,13 @@
 title: Excluir administrativeUnit
 description: Exclua um administrativeUnit.
 author: lleonard-msft
-ms.openlocfilehash: 1ae08969f8faaa113f1bffa25a204f68a3340d03
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c90fda4bdcbb6a431dbcb4caa6a50a130c7f78b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860050"
 ---
 # <a name="delete-administrativeunit"></a>Excluir administrativeUnit
 
@@ -15,7 +16,7 @@ ms.locfileid: "27331434"
 
 Exclua um [administrativeUnit](../resources/administrativeunit.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

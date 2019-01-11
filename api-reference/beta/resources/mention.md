@@ -2,12 +2,13 @@
 title: tipo de recurso mencionam
 description: Representa uma notificação para uma pessoa com base no endereço de email da pessoa.
 author: simonhult
-ms.openlocfilehash: a9c00daed067ecd41f0f687687ac9bf7f86d6f2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4ab60fafe00f14f69d79e482d0616576c73d1092
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858426"
 ---
 # <a name="mention-resource-type"></a>tipo de recurso mencionam
 
@@ -53,14 +54,14 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|aplicativo | String | O nome do aplicativo onde o mencionam é criado. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
-|clientReference | String | Um identificador exclusivo que representa um pai da instância do recurso. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
+|aplicativo | Cadeia de caracteres | O nome do aplicativo onde o mencionam é criado. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
+|clientReference | Cadeia de caracteres | Um identificador exclusivo que representa um pai da instância do recurso. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
 |createdBy  | [emailAddress](../resources/emailaddress.md) | As informações de email do usuário que fez a mencionam. |
 |createdDateTime  |DateTimeOffset |A data e hora em que o mencionam é criado no cliente. |
-|deepLink | String | Um link profundo web ao contexto do mencionam na instância do recurso. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
-|id | String| O identificador exclusivo de um mencionam em uma instância de recurso.|
+|deepLink | Cadeia de caracteres | Um link profundo web ao contexto do mencionam na instância do recurso. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
+|id | Cadeia de caracteres| O identificador exclusivo de um mencionam em uma instância de recurso.|
 |mencionado | [emailAddress](../resources/emailaddress.md) | As informações de email da pessoa mencionada. Obrigatório. |
-|mentionText | String | Opcional. Não é usado e o padrão como nulo para a **mensagem**. Para obter as menções em uma mensagem, consulte a propriedade **bodyPreview** da mensagem em vez disso. |
+|mentionText | Cadeia de caracteres | Opcional. Não é usado e o padrão como nulo para a **mensagem**. Para obter as menções em uma mensagem, consulte a propriedade **bodyPreview** da mensagem em vez disso. |
 |serverCreatedDateTime | DateTimeOffset | A data e hora em que o mencionam é criada no servidor. Opcional. Não é usado e o padrão como nulo para a **mensagem**. |
 
 ## <a name="relationships"></a>Relações

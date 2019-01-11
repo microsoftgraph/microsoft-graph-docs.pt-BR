@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: checkMemberGroups'
 description: Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
-ms.openlocfilehash: bf16206e9029ddcf687738c3a7db5a0a27a43903
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f9eb06fdb871c2466dec753e3c3deb9c8f1b1590
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852497"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
@@ -37,7 +38,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupIds|String||
+|groupIds|Cadeia de caracteres||
 
 ## <a name="response"></a>Resposta
 

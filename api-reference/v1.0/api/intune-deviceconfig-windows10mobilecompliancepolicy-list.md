@@ -2,12 +2,13 @@
 title: Listar windows10MobileCompliancePolicies
 description: Listar propriedades e relações dos objetos windows10MobileCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 31b66c44ccf39ac04d8527fd14082d4f9a2a6390
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0694ac12a442b1666beee8b4d5bf51ca61173f6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860169"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>Listar windows10MobileCompliancePolicies
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

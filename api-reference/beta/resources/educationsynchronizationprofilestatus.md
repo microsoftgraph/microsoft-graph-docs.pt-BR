@@ -2,12 +2,13 @@
 title: tipo de recurso de educationSynchronizationProfileStatus
 description: 'Representa o status da sincronização de um perfil de sincronização de dados escola. '
 author: mmast-msft
-ms.openlocfilehash: c92ba2226b28896f8df89a7aee66602651344154
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4476ffc7c64fb5d9852c46e2b748587e79d427c1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325995"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858160"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>tipo de recurso de educationSynchronizationProfileStatus
 

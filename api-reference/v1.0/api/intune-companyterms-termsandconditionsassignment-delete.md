@@ -2,12 +2,13 @@
 title: Excluir termsAndConditionsAssignment
 description: Exclui termsAndConditionsAssignment.
 author: tfitzmac
-ms.openlocfilehash: 33512787976a0c1dad8dd9f79cfa7c1a30ca0d36
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 84020415cd08794b64735adaa5b768acd548ab63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350789"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852077"
 ---
 # <a name="delete-termsandconditionsassignment"></a>Excluir termsAndConditionsAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

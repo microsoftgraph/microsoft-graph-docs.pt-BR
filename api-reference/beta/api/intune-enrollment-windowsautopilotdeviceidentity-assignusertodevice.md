@@ -2,12 +2,13 @@
 title: ação de assignUserToDevice
 description: Atribui o usuário a dispositivos de piloto automático.
 author: tfitzmac
-ms.openlocfilehash: 8446aa7e49905875b629287fd4847f761fec25c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33145d5852d80eef529cc58e34524c170bba62cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859455"
 ---
 # <a name="assignusertodevice-action"></a>ação de assignUserToDevice
 
@@ -39,7 +40,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -48,8 +49,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Ainda não documentado|
-|addressableUserName|String|Ainda não documentado|
+|userPrincipalName|Cadeia de caracteres|Ainda não documentado|
+|addressableUserName|Cadeia de caracteres|Ainda não documentado|
 
 
 

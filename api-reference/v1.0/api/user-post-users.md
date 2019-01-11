@@ -2,12 +2,13 @@
 title: Criar Usuário
 description: Use essa API para criar um novo usuário.
 author: dkershaw10
-ms.openlocfilehash: d5e85b0538790ce08f2ad36231830ac53cbf6e9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 218752a382da4ccb2bdbe240c8c57d03007b0169
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851650"
 ---
 # <a name="create-user"></a>Criar Usuário
 
@@ -37,7 +38,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [user](..
 
 A tabela a seguir mostra as propriedades que são necessárias ao criar um usuário.
 
-| Parâmetro | Type | Descrição|
+| Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled |booliano |true se a conta estiver habilitada; caso contrário, false.|
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|

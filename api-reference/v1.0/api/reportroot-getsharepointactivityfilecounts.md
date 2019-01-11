@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSharePointActivityFileCounts'
 description: Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.
-ms.openlocfilehash: cacc2b99b841a9775aa6b2b6a67ed03cf0cd82a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 46e522b620fed3f7a9da3b4d8e707f38abc07817
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853183"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 

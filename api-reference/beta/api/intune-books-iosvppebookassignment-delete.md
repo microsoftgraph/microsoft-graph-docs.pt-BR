@@ -2,12 +2,13 @@
 title: Excluir iosVppEBookAssignment
 description: Exclui iosVppEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 93c37fa6617276a0aae8401ba15db11d66e05ef1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 536e4270d18b87e620fb1ed1aa88003707c6616d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859154"
 ---
 # <a name="delete-iosvppebookassignment"></a>Excluir iosVppEBookAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedE
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

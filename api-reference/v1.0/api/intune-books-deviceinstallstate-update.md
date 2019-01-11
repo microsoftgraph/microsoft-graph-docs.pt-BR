@@ -2,12 +2,13 @@
 title: Atualizar deviceInstallState
 description: Atualizar as propriedades de um objeto deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: ad7a840021e2d18ea73f4e7d010768e8f24e6220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0962abe32198d684a158547a3af390cccfab22d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306724"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855640"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 
@@ -37,7 +38,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
@@ -46,7 +47,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceI
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|

@@ -2,12 +2,13 @@
 title: Ação wipeManagedAppRegistrationsByDeviceTag
 description: Emite uma operação de apagamento em um registro de aplicativo com uma marcação de dispositivo específica.
 author: tfitzmac
-ms.openlocfilehash: 227d702d217669215894c6e6c0cfd3fa67075277
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5613a3e80acf8e6091cfb37c9e9818231854321b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851111"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Ação wipeManagedAppRegistrationsByDeviceTag
 
@@ -39,7 +40,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

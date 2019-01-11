@@ -2,12 +2,13 @@
 title: tipo de recurso de macOSLobChildApp
 description: Contém propriedades o MacOS LOB App em um pacote de pacote
 author: tfitzmac
-ms.openlocfilehash: e62305ea856d42847b49be306d20bde737152163
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fd4440422ee184b62da4731f49ead4316a2fa45
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851244"
 ---
 # <a name="macoslobchildapp-resource-type"></a>tipo de recurso de macOSLobChildApp
 
@@ -19,9 +20,9 @@ Contém propriedades o MacOS LOB App em um pacote de pacote
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleId|String|O Nome da Identidade.|
-|buildNumber|String|O número de compilação da linha de MacOS do aplicativo de negócios (LoB).|
-|versionNumber|String|O número de versão da linha de MacOS do aplicativo de negócios (LoB).|
+|bundleId|Cadeia de caracteres|O Nome da Identidade.|
+|buildNumber|Cadeia de caracteres|O número de compilação da linha de MacOS do aplicativo de negócios (LoB).|
+|versionNumber|Cadeia de caracteres|O número de versão da linha de MacOS do aplicativo de negócios (LoB).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

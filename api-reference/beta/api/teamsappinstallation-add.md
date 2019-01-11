@@ -2,12 +2,13 @@
 title: Adicionar o aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
 author: nkramer
-ms.openlocfilehash: ed38f809c784c4178f7be2b028dc4c71a6206b1b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d3f67b8ea49f9940b60bcf0aec7eea15a59388b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855857"
 ---
 # <a name="add-app-to-team"></a>Adicionar o aplicativo à equipe
 
@@ -15,7 +16,7 @@ ms.locfileid: "27349165"
 
 Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)de especificado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +40,7 @@ POST /teams/{id}/installedApps
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|String|A id do aplicativo para adicionar.|
+|teamsApp|Cadeia de caracteres|A id do aplicativo para adicionar.|
 
 
 ## <a name="response"></a>Resposta

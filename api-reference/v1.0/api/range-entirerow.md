@@ -2,12 +2,13 @@
 title: 'Range: EntireRow'
 description: Obtém um objeto que representa toda a linha do intervalo.
 author: lumine2008
-ms.openlocfilehash: 930b2929eed5758759be0afa71d2d29229d68288
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 502456af2b3af0f7dfeeb9b419a57478a8aea252
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860211"
 ---
 # <a name="range-entirerow"></a>Range: EntireRow
 

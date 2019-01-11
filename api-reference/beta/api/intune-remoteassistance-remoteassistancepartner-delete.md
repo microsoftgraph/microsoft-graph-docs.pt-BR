@@ -2,12 +2,13 @@
 title: Excluir remoteAssistancePartner
 description: Exclui remoteAssistancePartner.
 author: tfitzmac
-ms.openlocfilehash: efa117d3172e93a8cf6864d172486eb5bbbaf05d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e0f8a774590ff13dcb515092ca2c7498143eb46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857418"
 ---
 # <a name="delete-remoteassistancepartner"></a>Excluir remoteAssistancePartner
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

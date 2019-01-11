@@ -2,12 +2,13 @@
 title: Listar managedAppStatuses
 description: Listar propriedades e relações dos objetos managedAppStatus.
 author: tfitzmac
-ms.openlocfilehash: 1cf73098931b4ae0e7f7eddf5169f991d5b3d695
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5a01f37045c7c9927604a87441ef6d5e007092c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319233"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855220"
 ---
 # <a name="list-managedappstatuses"></a>Listar managedAppStatuses
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppStatuses
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

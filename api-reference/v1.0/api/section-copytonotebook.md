@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToNotebook'
 description: Copia uma seção para um bloco de anotações específico.
-ms.openlocfilehash: 365e4745f01c3d011cbf8cf0186a16b5eb580c5b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fae817d1d256de490a246a43dfbfe6ca3a8c4e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856298"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 Copia uma seção para um bloco de anotações específico.

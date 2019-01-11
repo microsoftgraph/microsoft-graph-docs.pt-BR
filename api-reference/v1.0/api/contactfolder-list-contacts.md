@@ -1,12 +1,13 @@
 ---
 title: Listar contatos
 description: Obtém uma coleção de contatos da pasta de contatos padrão do usuário conectado (`.../me/contacts`), ou da pasta contato especificada.
-ms.openlocfilehash: f70ea5000a5d0228f49b8bfa6179a97cb5899c3c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a617cae074ee467d0c47ffcc86351a5e4d65e45a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855465"
 ---
 # <a name="list-contacts"></a>Listar contatos
 

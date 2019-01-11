@@ -1,12 +1,13 @@
 ---
 title: 'usuário: invalidateAllRefreshTokens'
 description: Invalida todos os tokens de atualização do usuário emitidos para aplicativos (bem como os cookies de sessão no navegador de um usuário), redefinindo a propriedade **refreshTokensValidFromDateTime** do usuário para a data e hora atual. Geralmente, essa operação é executada (por usuário ou um administrador), se o usuário tem um dispositivo perdido ou roubado.  Essa operação seria impedir o acesso a qualquer dado da organização acessado por meio de aplicativos no dispositivo sem que o usuário pela primeira vez, sendo necessário para entrar novamente. Na verdade, essa operação seria forçar o usuário entrar novamente para todos os aplicativos que eles tenham anteriormente consentiu, independente do dispositivo.
-ms.openlocfilehash: 23743c4bc372193a5478d79432b7bb4e0a9ec4ce
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4ece9866e703d47ab8f7b024496f92f30a4a14b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039887"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858076"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>usuário: invalidateAllRefreshTokens
 

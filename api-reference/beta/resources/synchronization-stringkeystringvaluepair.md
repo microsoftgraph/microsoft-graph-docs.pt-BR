@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de stringKeyStringValuePair
 description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é uma cadeia de caracteres.
-ms.openlocfilehash: 012625d78c8e07b3d38acba063acb57c751ced32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8f9c0f5c87dfd2080d24d31d304cfce4197c34de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855948"
 ---
 # <a name="stringkeystringvaluepair-resource-type"></a>tipo de recurso de stringKeyStringValuePair
 
@@ -17,7 +18,7 @@ Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|String|Chave.|
+|key|Cadeia de caracteres|Chave.|
 |valor|Cadeia de caracteres|Valor.|
 
 ## <a name="json-representation"></a>Representação JSON

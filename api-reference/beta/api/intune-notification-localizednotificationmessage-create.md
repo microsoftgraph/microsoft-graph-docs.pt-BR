@@ -2,12 +2,13 @@
 title: Criar localizedNotificationMessage
 description: Criar um novo objeto localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: 8070921493ec7430ee31376b0788d59013595184
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 555cfa1c6c34a99bf001b9c3b1f462f1a7d3e41c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853967"
 ---
 # <a name="create-localizednotificationmessage"></a>Criar localizedNotificationMessage
 
@@ -38,7 +39,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto localizedNotificationMessage.
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar localize
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |localidade|Cadeia de caracteres|A localidade para a qual esta mensagem se destina.|
 |subject|Cadeia de caracteres|O assunto do modelo da mensagem.|

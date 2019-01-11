@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsAutopilotDeploymentProfileAssignment
 description: Uma atribuição de um perfil da implantação piloto automático do Windows a um grupo de AAD.
 author: tfitzmac
-ms.openlocfilehash: b9141d9a3126d25dd6de5e342ebb463304e1ae02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fad8f082396598584af0cbb5fe1daee06bfd09e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851216"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>tipo de recurso de windowsAutopilotDeploymentProfileAssignment
 

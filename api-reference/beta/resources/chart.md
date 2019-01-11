@@ -2,12 +2,13 @@
 title: Tipo de recurso Chart
 description: Representa um objeto de gráfico em uma pasta de trabalho.
 author: lumine2008
-ms.openlocfilehash: cf03a768422fca50e68b88a64b9991aad878466f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d274b8ec505d15ea985af22627232dbe11dc3263
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856046"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
@@ -24,7 +25,7 @@ Representa um objeto de gráfico em uma pasta de trabalho.
 |[Create ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Crie uma nova ChartSeries postando na coleção de séries.|
 |[List series](../api/chart-list-series.md) |Coleção [ChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
 |[Update](../api/chart-update.md) | [Chart](chart.md)   |Atualize um objeto Chart. |
-|[Imagem](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
+|[Image](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
 |[Delete](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
 |[SetData](../api/chart-setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
 |[Setposition](../api/chart-setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
@@ -50,7 +51,7 @@ Representa um objeto de gráfico em uma pasta de trabalho.
 |formato|[ChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
 |legend|[ChartLegend](chartlegend.md)|Representa a legenda do gráfico. Somente leitura.|
 |series|Coleção [ChartSeries](chartseries.md)|Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.|
-|title|[ChartTitle](charttitle.md)|Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.|
+|título|[ChartTitle](charttitle.md)|Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.|
 |planilha|[Worksheet](worksheet.md)|A planilha que contém o gráfico atual. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

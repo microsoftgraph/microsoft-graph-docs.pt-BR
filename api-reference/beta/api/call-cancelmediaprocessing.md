@@ -2,12 +2,13 @@
 title: 'chamar: cancelMediaProcessing'
 description: Mídia cancela o processamento para todos quaisquer operações PlayPrompt ou o registro em andamento.
 author: VinodRavichandran
-ms.openlocfilehash: 5e95e4a1b56d7cea806e1a3d588403d81c200923
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9885e05bdca0d04daf597190eb118c81b8774c0a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380552"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859448"
 ---
 # <a name="call-cancelmediaprocessing"></a>chamar: cancelMediaProcessing
 
@@ -15,7 +16,7 @@ ms.locfileid: "27380552"
 
 Mídia cancela o processamento para todos quaisquer operações PlayPrompt ou o registro em andamento.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    | Descrição                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
 | todos os            | Booliano | O sinalizador indicando se pare todas as operações ou atual. |
-| clientContext  | String  | O contexto de cliente.                                            |
+| clientContext  | Cadeia de caracteres  | O contexto de cliente.                                            |
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso RangeFont
 description: Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, etc.
-ms.openlocfilehash: bafb7c052458c7b3f4001d7e999acc14c7aaabee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 32bbd29706966c4c4b15f038ebdbb872b1dd8193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006365"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856578"
 ---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
 

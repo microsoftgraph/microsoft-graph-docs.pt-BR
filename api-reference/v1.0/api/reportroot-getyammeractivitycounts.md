@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerActivityCounts'
 description: Obtenha as tendências da quantidade de atividade do Yammer em sua organização por quantas mensagens foram postadas, lidas e curtidas.
-ms.openlocfilehash: 17813cd7365afce535c38f993d548a66fda77cc6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb1e0a9dab16fffb3c1b6c8c0e2577942fa881c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858881"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 

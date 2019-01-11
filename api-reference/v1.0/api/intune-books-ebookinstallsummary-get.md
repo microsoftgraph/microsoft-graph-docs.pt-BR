@@ -2,12 +2,13 @@
 title: Get eBookInstallSummary
 description: Ler propriedades e relações do objeto eBookInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 186383e98e87fbf96af47d290593eee6d2f1723b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fad44d4597f59cdba8cb461caf0a46a9a47e9ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314571"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852084"
 ---
 # <a name="get-ebookinstallsummary"></a>Get eBookInstallSummary
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

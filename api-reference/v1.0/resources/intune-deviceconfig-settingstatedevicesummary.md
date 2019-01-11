@@ -2,12 +2,13 @@
 title: Tipo de recurso settingStateDeviceSummary
 description: Configuração e política de conformidade de dispositivo para um resumo de estado de configuração
 author: tfitzmac
-ms.openlocfilehash: 0394de24fb0dee6ba0df1434ea199b131cf05df8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09eb9059255d6236db6347961ad456f3ec3fd93a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860330"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Tipo de recurso settingStateDeviceSummary
 
@@ -26,7 +27,7 @@ Configuração e política de conformidade de dispositivo para um resumo de esta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |settingName|Cadeia de caracteres|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|

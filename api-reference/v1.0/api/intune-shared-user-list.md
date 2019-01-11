@@ -2,12 +2,13 @@
 title: Listar usuários
 description: Listar propriedades e relações de objetos de usuário.
 author: tfitzmac
-ms.openlocfilehash: 9d68b6855a80262daf359950967517a4ec8faa8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f286cd3bdb49f99fcc8db52b1fee8c204ccdee7c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856781"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -40,7 +41,7 @@ GET /users
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

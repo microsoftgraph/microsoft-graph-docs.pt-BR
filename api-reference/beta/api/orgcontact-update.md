@@ -1,12 +1,13 @@
 ---
 title: Atualizar orgcontact
 description: Atualize as propriedades do objeto orgcontact.
-ms.openlocfilehash: 04bc5bef07fb49c2c4fe730e89517de2f364628a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f48795bef6ea1a4833379f54747cbf2c291b2454
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859063"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -37,23 +38,23 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String||
+|city|Cadeia de caracteres||
 |country|String||
 |departamento|String||
 |onPremisesSyncEnabled|Booliano||
-|displayName|String||
-|givenName|String||
+|displayName|Cadeia de caracteres||
+|givenName|Cadeia de caracteres||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|Email|String||
-|mailNickname|String||
-|mobilePhone|String||
+|Email|Cadeia de caracteres||
+|mailNickname|Cadeia de caracteres||
+|mobilePhone|Cadeia de caracteres||
 |officeLocation|String||
-|postalCode|String||
+|postalCode|Cadeia de caracteres||
 |proxyAddresses|String||
-|state|String||
+|state|Cadeia de caracteres||
 |streetAddress|String||
-|surname|String||
+|surname|Cadeia de caracteres||
 |businessPhones|String||
 
 ## <a name="response"></a>Resposta

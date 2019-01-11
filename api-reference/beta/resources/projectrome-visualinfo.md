@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de visualInfo
 description: Um tipo complexo para representar a propriedade **visualElements** no objeto de atividade.
-ms.openlocfilehash: ac895e854051cb487fa9afd0ff9ada972b97aa19
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3e1dd3d7e4ecfaf5053f839f0ac0d0039692b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037241"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855311"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso de visualInfo
 
@@ -25,8 +26,8 @@ Se não for fornecido um cartão personalizado, será gerado um cartão simple u
 |Nome | Tipo | Descrição|
 |:----|:------|:-----------|
 |displayText | Cadeia de caracteres | Obrigatório. Uma breve descrição de texto de atividade de exclusivo do usuário (por exemplo, nome do documento em casos onde uma atividade refere-se a criação de documentos)|
-|description | String | Opcional. Descrição de texto mais longa da atividade exclusivo do usuário (exemplo: nome, primeira frase e/ou metadados de documentos)|
-|backgroundColor | String | Opcional. Cor de plano de fundo usada para processar a atividade na interface do usuário - cor de marca para a fonte da atividade do aplicativo. Deve ser uma cor hexadecimal válida|
+|description | Cadeia de caracteres | Opcional. Descrição de texto mais longa da atividade exclusivo do usuário (exemplo: nome, primeira frase e/ou metadados de documentos)|
+|backgroundColor | Cadeia de caracteres | Opcional. Cor de plano de fundo usada para processar a atividade na interface do usuário - cor de marca para a fonte da atividade do aplicativo. Deve ser uma cor hexadecimal válida|
 |content | Objeto sem JSON | Opcional. Parte personalizada de dados - objeto JSON usados para fornecer conteúdo personalizado para renderizar a atividade no UI do Shell do Windows|
 |attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Opcional. Objeto JSON usado para representar um ícone que representa o aplicativo usado para gerar a atividade|
 

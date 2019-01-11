@@ -2,12 +2,13 @@
 title: atribuir ação
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 0264f5aff78058887e6f219d08812eb6857737ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eede97b2c2cddf666e99f2f979520e3f9e9546fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858223"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

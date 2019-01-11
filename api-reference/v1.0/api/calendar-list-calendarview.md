@@ -1,12 +1,13 @@
 ---
 title: Listar calendarView
 description: Obtenha as ocorrências, exceções e única instâncias de eventos em um modo de exibição de calendário definido por um intervalo de tempo
-ms.openlocfilehash: 37f4b1e72f15e455ab611d9d9b85b18ca7bba68d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 48ec49eb5038e7a4c977af0248443e1ca7241cb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857698"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 
@@ -52,8 +53,8 @@ Forneça os seguintes parâmetros de consulta necessários com valores na URL so
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|startDateTime|String|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
-|endDateTime|String|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
+|startDateTime|Cadeia de caracteres|A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".|
+|endDateTime|Cadeia de caracteres|A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".|
 
 Este método também dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

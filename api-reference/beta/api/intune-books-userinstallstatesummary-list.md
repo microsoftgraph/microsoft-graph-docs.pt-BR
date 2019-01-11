@@ -2,12 +2,13 @@
 title: Listar userInstallStateSummaries
 description: Listar propriedades e relações dos objetos userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: fe0c423ef85f2b9492ffd22fae1340773ccaf627
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e1e189e51872cbb72b2b270ed72075aeb41cfa3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362675"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858720"
 ---
 # <a name="list-userinstallstatesummaries"></a>Listar userInstallStateSummaries
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

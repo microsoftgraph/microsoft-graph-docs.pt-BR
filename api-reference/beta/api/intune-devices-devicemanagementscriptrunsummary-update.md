@@ -2,12 +2,13 @@
 title: Atualizar deviceManagementScriptRunSummary
 description: Atualize as propriedades de um objeto deviceManagementScriptRunSummary.
 author: tfitzmac
-ms.openlocfilehash: 7acb5406d6806f9c28498f2766b8a92970893af0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7a82b01ccae7e3f5ca1e8c3b3b784791fe08df3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338371"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858321"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Atualizar deviceManagementScriptRunSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) .
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do script de gerenciamento de dispositivo execute entidade resumida.|
+|id|Cadeia de caracteres|Chave do script de gerenciamento de dispositivo execute entidade resumida.|
 |successDeviceCount|Int32|Contagem de sucesso do dispositivo.|
 |errorDeviceCount|Int32|Contagem de erros de dispositivo.|
 |successUserCount|Int32|Contagem de usuário de sucesso.|

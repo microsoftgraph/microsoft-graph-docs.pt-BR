@@ -2,12 +2,13 @@
 title: Acessar iosCompliancePolicy
 description: Leia as propriedades e as relações do objeto iosCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 89e0c7c6d121fbc6ef73b84ba644748e79bf46ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cfd7ea092053f6dd728b8a984a0a64292400bd8b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855549"
 ---
 # <a name="get-ioscompliancepolicy"></a>Acessar iosCompliancePolicy
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

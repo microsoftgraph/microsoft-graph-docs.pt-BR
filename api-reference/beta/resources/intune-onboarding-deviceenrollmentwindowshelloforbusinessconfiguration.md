@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 268d05b8bf20fddc28e331d5bde73286bb13fc6a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 553e4b5a5537076e5177c8ad73bab0a534a68628
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855941"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentWindowsHelloForBusinessConfiguration
 

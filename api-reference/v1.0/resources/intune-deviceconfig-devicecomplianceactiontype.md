@@ -2,12 +2,13 @@
 title: tipo de enum deviceComplianceActionType
 description: Enumeração de tipo de ação de agendadas
 author: tfitzmac
-ms.openlocfilehash: 84bef94d7352c13b49f223b859cea218932f8cad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92e43378f119a5e1a10604babb5ad23b2dfddf3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328683"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851433"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enum deviceComplianceActionType
 

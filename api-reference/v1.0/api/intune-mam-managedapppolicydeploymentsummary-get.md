@@ -2,12 +2,13 @@
 title: Obter managedAppPolicyDeploymentSummary
 description: Ler propriedades e relações do objeto managedAppPolicyDeploymentSummary.
 author: tfitzmac
-ms.openlocfilehash: 8cff2b8b083ede160c56d499d54980507c38fc85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1645ae6ee487a2e8507f73eebc95269781e6d039
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312093"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852231"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Obter managedAppPolicyDeploymentSummary
 
@@ -41,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: tipo de recurso de vpnRoute
 description: Definição de rota da VPN.
 author: tfitzmac
-ms.openlocfilehash: 64d755c4f21b47e928c64348a2f1d6dad1f7206a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eaa74a1cef7d2eee8148e240cd80ca72f94adcb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860568"
 ---
 # <a name="vpnroute-resource-type"></a>tipo de recurso de vpnRoute
 
@@ -19,7 +20,7 @@ Definição de rota da VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|destinationPrefix|String|Prefixo de destino (endereço IPv4/v6).|
+|destinationPrefix|Cadeia de caracteres|Prefixo de destino (endereço IPv4/v6).|
 |prefixSize|Int32|Tamanho de prefixo. (1-32). Valores válidos 1 a 32|
 
 ## <a name="relationships"></a>Relações

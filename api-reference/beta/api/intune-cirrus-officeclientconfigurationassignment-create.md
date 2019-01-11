@@ -2,12 +2,13 @@
 title: Criar officeClientConfigurationAssignment
 description: Adicione um grupo-alvo a uma política existente.
 author: tfitzmac
-ms.openlocfilehash: 850f82f005f46e15a598dd0e08043cca66ffe6bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24eee1797c00fd6ef6e380e2fdde20c5147567af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858692"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Criar officeClientConfigurationAssignment
 
@@ -38,7 +39,7 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto officeClientConfigurationAssignment.
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID do OfficeConfigurationAssignment.|
+|id|Cadeia de caracteres|ID do OfficeConfigurationAssignment.|
 |destino|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|A atribuição de destino definida pelo administrador a.|
 
 

@@ -2,12 +2,13 @@
 title: Atualizar embeddedSIMDeviceState
 description: Atualize as propriedades de um objeto embeddedSIMDeviceState.
 author: tfitzmac
-ms.openlocfilehash: 7c377199caae31bb45d65f0ad557cb27fb3916b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cad82e5e211120d79e011647063762ae6a69ec60
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318519"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858650"
 ---
 # <a name="update-embeddedsimdevicestate"></a>Atualizar embeddedSIMDeviceState
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) .
@@ -47,15 +48,15 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o status do dispositivo SIM incorporado. Valor atribuído quando criado gerado pelo sistema.|
+|id|Cadeia de caracteres|Identificador exclusivo para o status do dispositivo SIM incorporado. Valor atribuído quando criado gerado pelo sistema.|
 |createdDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi criado. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi modificado pela última vez. Lado de serviços atualizado.|
 |lastSyncDateTime|DateTimeOffset|A hora em que o dispositivo SIM incorporado último check-in. Lado de serviços atualizado.|
-|universalIntegratedCircuitCardIdentifier|String|O Universal circuito integrado cartão identificador (UICCID) que identifica o hardware no qual um perfil é a serem implantados.|
-|deviceName|String|Nome do dispositivo para o qual a assinatura foi provisionado por exemplo, JOE de área de trabalho|
+|universalIntegratedCircuitCardIdentifier|Cadeia de caracteres|O Universal circuito integrado cartão identificador (UICCID) que identifica o hardware no qual um perfil é a serem implantados.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo para o qual a assinatura foi provisionado por exemplo, JOE de área de trabalho|
 |userName|Cadeia de caracteres|Nome de usuário que a assinatura foi provisionada para ex.: joe@contoso.com|
 |estado|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação perfil aplicado ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|String|Descrição do estado do provisionamento de cadeia de caracteres.|
+|stateDetails|Cadeia de caracteres|Descrição do estado do provisionamento de cadeia de caracteres.|
 
 
 

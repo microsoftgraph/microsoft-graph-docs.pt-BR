@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de synchronizationTaskExecution
 description: Resume os resultados da execução do trabalho de sincronização.
-ms.openlocfilehash: 4aefba4bdf9ab850892344e6e34683e81d1a1afa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 99b6c66b15577ee4c6cbbf5ffe44e17cf0672696
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851503"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso de synchronizationTaskExecution
 
@@ -17,7 +18,7 @@ Resume os resultados da execução do trabalho de sincronização.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |Identificador da execução do trabalho.|
+|activityIdentifier           |Cadeia de caracteres |Identificador da execução do trabalho.|
 |countEntitled                |Int64  |Contagem de entradas processadas que foram atribuídas para esse aplicativo.|
 |countEntitledForProvisioning |Int64  |Contagem de entradas processadas que foram atribuídas pelo provisionamento.|
 |countEscrowed                |Int64  |Contagem de entradas que foram caucionados (erros).|
@@ -28,7 +29,7 @@ Resume os resultados da execução do trabalho de sincronização.
 |countImportedDeltas          |Int64  |Contagem de alterações de delta importadas.|
 |countImportedReferenceDeltas |Int64  |Contagem de alterações de delta importadas referentes às alterações de referência.|
 |erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se foi encontrado um erro, contém um objeto **synchronizationError** com detalhes.|
-|state                        |String |Resumindo o resultado dessa execução de código. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|estado                        |Cadeia de caracteres |Resumindo o resultado dessa execução de código. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
 |timeBegan                    |DateTimeOffset|Começou a hora quando esse trabalho é executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |timeEnded                    |DateTimeOffset|Quando esse trabalho é executado de tempo é encerrada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 

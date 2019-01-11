@@ -2,12 +2,13 @@
 title: tipo de enum deviceManagementPartnerTenantState
 description: Estado de parceiro deste locatário.
 author: tfitzmac
-ms.openlocfilehash: a597e038fc73ccaa730511ab3f27b0351600f6f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fd2529c2afd3589feab9a8cd4a796e78203858a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857330"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enum deviceManagementPartnerTenantState
 

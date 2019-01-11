@@ -2,12 +2,13 @@
 title: Atualizar androidForWorkAppConfigurationSchema
 description: Atualizar as propriedades de um objeto androidForWorkAppConfigurationSchema.
 author: tfitzmac
-ms.openlocfilehash: ba4050ce741e1fdcfd3158e7f9e9d9e47f422882
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f6bcc24b93100cf8aa11bf643ac347af013ff917
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859203"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a>Atualizar androidForWorkAppConfigurationSchema
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkApp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).

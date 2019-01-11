@@ -2,12 +2,13 @@
 title: tipo de recurso de teamsAppDefinition
 description: Os detalhes de uma versão de um teamsApp.
 author: nkramer
-ms.openlocfilehash: 71a1783131661aed120f375f7cc58d55fb0ca0d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a13f6ffd4ca5385b9e264f8b8a5b8bddfe0a1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851293"
 ---
 # <a name="teamsappdefinition-resource-type"></a>tipo de recurso de teamsAppDefinition
 

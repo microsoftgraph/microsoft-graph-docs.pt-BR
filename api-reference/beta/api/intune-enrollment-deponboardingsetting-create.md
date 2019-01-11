@@ -2,12 +2,13 @@
 title: Criar depOnboardingSetting
 description: Crie um novo objeto de depOnboardingSetting.
 author: tfitzmac
-ms.openlocfilehash: 11f2e5217e4040a7d4345c9271b459e608075498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 89e46c715b5f888ae3c9f1fb02a0566da8485944
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330657"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854898"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto depOnboardingSetting.
@@ -53,13 +54,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Boolean|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Booliano|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Nome amigável para o Token de Dep|
+|tokenName|Cadeia de caracteres|Nome amigável para o Token de Dep|
 |syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
-|defaultProfileDisplayName|String|Obtém sincronizados contagem de dispositivo|
-|dataSharingConsentGranted|Boolean|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+|defaultProfileDisplayName|Cadeia de caracteres|Obtém sincronizados contagem de dispositivo|
+|dataSharingConsentGranted|Booliano|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
 
 
 

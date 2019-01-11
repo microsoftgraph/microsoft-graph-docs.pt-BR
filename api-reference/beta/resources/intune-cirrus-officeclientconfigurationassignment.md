@@ -2,12 +2,13 @@
 title: tipo de recurso de officeClientConfigurationAssignment
 description: Atribuição de configuração de cliente do Office.
 author: tfitzmac
-ms.openlocfilehash: c2b8dc231fb390cbb2bd5dbb93b5226540b84f5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8f730a405207dbec9b08d80ec403ced4f257c36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851783"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>tipo de recurso de officeClientConfigurationAssignment
 
@@ -28,7 +29,7 @@ Atribuição de configuração de cliente do Office.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID do OfficeConfigurationAssignment.|
+|id|Cadeia de caracteres|ID do OfficeConfigurationAssignment.|
 |destino|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|A atribuição de destino definida pelo administrador a.|
 
 ## <a name="relationships"></a>Relações

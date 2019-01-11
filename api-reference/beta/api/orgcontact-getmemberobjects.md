@@ -1,12 +1,13 @@
 ---
 title: 'orgContact: getMemberObjects'
 description: Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
-ms.openlocfilehash: d68bd0d4d1ace57fa91b5874bf376fa0a3c4fef4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ac6c8fddf4cedae156ec25933ea8d9f95bf8020a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856571"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 

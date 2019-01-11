@@ -2,12 +2,13 @@
 title: Lista de aplicativos
 description: Recupere a lista de aplicativos nesta organização.
 author: lleonard-msft
-ms.openlocfilehash: 138a9e6d238fde44d5b5c47781bbd93cb2b73f98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5443010f613f1978c3b88a9cc57237ca7b844805
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336691"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854975"
 ---
 # <a name="list-applications"></a>Lista de aplicativos
 
@@ -15,7 +16,7 @@ ms.locfileid: "27336691"
 
 Recupere a lista de aplicativos nesta organização.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

@@ -2,12 +2,13 @@
 title: Listar androidManagedAppRegistrations
 description: Lista propriedades e relações dos objetos androidManagedAppRegistration.
 author: tfitzmac
-ms.openlocfilehash: e6fb7364e9b3dbef0fff3ca0e779d2740316f6f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e36b538d9eda0d7b161e1699b5f777683d1be51e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852329"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Listar androidManagedAppRegistrations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

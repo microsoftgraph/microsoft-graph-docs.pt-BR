@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso site
 description: Representa um site.
-ms.openlocfilehash: 14934aae418581f4c75c880be67bf51fd0bc293c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ffbee8a67527aac97bb4f60b7f8b1637ba1ebe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003968"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851363"
 ---
 # <a name="website-resource-type"></a>tipo de recurso site
 

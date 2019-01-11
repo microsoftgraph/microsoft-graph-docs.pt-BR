@@ -2,12 +2,13 @@
 title: ação de sendCustomNotificationToCompanyPortal
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 4dac88c0ec9325e5c1b268feda3c98226438f8b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5a3e4acedb95fe1092a6ef9eaacc2978fedcd9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851160"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>ação de sendCustomNotificationToCompanyPortal
 
@@ -39,7 +40,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -48,8 +49,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|notificationTitle|String|Ainda não documentado|
-|notificationBody|String|Ainda não documentado|
+|notificationTitle|Cadeia de caracteres|Ainda não documentado|
+|notificationBody|Cadeia de caracteres|Ainda não documentado|
 |groupsToNotify|String collection|Ainda não documentado|
 
 

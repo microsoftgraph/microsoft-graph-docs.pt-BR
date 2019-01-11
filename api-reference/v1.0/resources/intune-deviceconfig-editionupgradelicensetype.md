@@ -2,12 +2,13 @@
 title: tipo de enum editionUpgradeLicenseType
 description: Tipo de licença de atualização de edição
 author: tfitzmac
-ms.openlocfilehash: caa00a8ab144e6524eb327fa6b7fab3134a9915f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4fa0e515528f9e29e77f213d1636c3027585555
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856270"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de enum editionUpgradeLicenseType
 

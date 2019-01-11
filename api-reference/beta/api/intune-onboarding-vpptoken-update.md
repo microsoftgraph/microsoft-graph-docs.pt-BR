@@ -2,12 +2,13 @@
 title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto de vppToken.
 author: tfitzmac
-ms.openlocfilehash: 420efbc72ae8ef19bde91ca4b7a2ec5592f4e87a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 521d62ab5e4b66bda5307fbb52da842e54301bc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338749"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855066"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [vppToken](../resources/intune-onboarding-vpptoken.md).
@@ -60,10 +61,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
-|displayName|String|Um administrador especificado token nome amigável.|
-|locationName|String|Localização de token retornada da Apple VPP.|
-|claimTokenManagementFromExternalMdm|Boolean|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
+|displayName|Cadeia de caracteres|Um administrador especificado token nome amigável.|
+|locationName|Cadeia de caracteres|Localização de token retornada da Apple VPP.|
+|claimTokenManagementFromExternalMdm|Booliano|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
 
 
 

@@ -2,12 +2,13 @@
 title: Lista macOSLobApps
 description: Lista as propriedades e os relacionamentos dos objetos macOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: bf65160d55f63808c93e9a8ca1aef6f4918423b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80367f7fe096f0b23edb6f6c12ee2360fbfbfdd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859588"
 ---
 # <a name="list-macoslobapps"></a>Lista macOSLobApps
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

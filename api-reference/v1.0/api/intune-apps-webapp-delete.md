@@ -2,12 +2,13 @@
 title: Excluir webApp
 description: Exclui webApp.
 author: tfitzmac
-ms.openlocfilehash: 03e2a04c9282a917fde430c970b50afacfa94304
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 726b5e1824a4d8b8a26a20d5975a757d5474ad52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855395"
 ---
 # <a name="delete-webapp"></a>Excluir webApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

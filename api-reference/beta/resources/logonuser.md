@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de logonUser
 description: Contém informações com informações de estado sobre o usuário conectado nesse host
-ms.openlocfilehash: 80ff69453e99f5cd5103f85cd7d8c45696057f7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b7862555c62eb16aaceaa53d4df58541426e08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040122"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855591"
 ---
 # <a name="logonuser-resource-type"></a>tipo de recurso de logonUser
 
@@ -16,12 +17,12 @@ Contém informações com informações de estado sobre o usuário conectado nes
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|accountDomain|String|Domínio da conta de usuário usada para logon.|
-|accountName|String|Nome da conta da conta de usuário usada para logon.|
-|accountType|String|Tipo de conta de usuário, por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
+|accountDomain|Cadeia de caracteres|Domínio da conta de usuário usada para logon.|
+|accountName|Cadeia de caracteres|Nome da conta da conta de usuário usada para logon.|
+|accountType|Cadeia de caracteres|Tipo de conta de usuário, por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
 |firstSeenDateTime|DateTimeOffset|Data e hora em que o logon mais antigo por esta conta de usuário ocorreu (período determinado pelo provedor). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |lastSeenDateTime|DateTimeOffset|Data e hora em que o logon mais recente por esta conta de usuário ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|identificação de logon|String|ID de logon do usuário.|
+|identificação de logon|Cadeia de caracteres|ID de logon do usuário.|
 |logonTypes|String collection|Coleção dos tipos de logon observados para o usuário conectado ao primeiro ao último vistas. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
 ## <a name="json-representation"></a>Representação JSON

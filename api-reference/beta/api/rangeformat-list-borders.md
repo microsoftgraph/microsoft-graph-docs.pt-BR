@@ -2,12 +2,13 @@
 title: Listar bordas
 description: Recupere uma lista de objetos rangeborder.
 author: lumine2008
-ms.openlocfilehash: 4eece1113a1ce9a476acfbc042b2d803cfbd1c6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da5589a8bc033479aa1aa4c1961be77fe6d161c2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856438"
 ---
 # <a name="list-borders"></a>Listar bordas
 

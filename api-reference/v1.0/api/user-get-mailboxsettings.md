@@ -1,12 +1,13 @@
 ---
 title: Obter as configurações da caixa de correio do usuário
 description: 'Obtenha mailboxSettings do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente ao '
-ms.openlocfilehash: c6c176b278a724f5b4b22428b24915bd37b0b42a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 7181a914a34b425653958107d2c10f82f59d0395
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860477"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 

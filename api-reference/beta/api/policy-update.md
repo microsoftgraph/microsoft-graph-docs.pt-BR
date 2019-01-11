@@ -1,12 +1,13 @@
 ---
 title: Política de atualização
 description: Atualize propriedades em uma diretiva preexistente.
-ms.openlocfilehash: 426476b5545e511fe2da111acb1f47f38f32c96f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857152"
 ---
 # <a name="update-policy"></a>Política de atualização
 
@@ -39,10 +40,10 @@ No corpo da solicitação, fornecem um objeto JSON com os parâmetros que precis
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definição|String|A versão stringified do objeto de [diretiva](../resources/policy.md) .|
-|displayName|String|Um nome personalizado para a política.|
+|definição|Cadeia de caracteres|A versão stringified do objeto de [diretiva](../resources/policy.md) .|
+|displayName|Cadeia de caracteres|Um nome personalizado para a política.|
 |isOrganizationDefault|Booliano|Especifica se esta política é aplicada por padrão.|
-|type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
+|type|Cadeia de caracteres|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta
 

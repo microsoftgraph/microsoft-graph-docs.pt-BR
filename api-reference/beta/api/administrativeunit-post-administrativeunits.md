@@ -2,19 +2,20 @@
 title: Criar administrativeUnit
 description: Use essa API para criar um novo administrativeUnit.
 author: lleonard-msft
-ms.openlocfilehash: 320fe1b2269213d8fc4a0a8295f7ae84e0714cb1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ec6d1579e1a27317bd7d4e126a73a1b4175ec86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351153"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859868"
 ---
 # <a name="create-administrativeunit"></a>Criar administrativeUnit
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Use essa API para criar um novo [administrativeUnit](../resources/administrativeunit.md).
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

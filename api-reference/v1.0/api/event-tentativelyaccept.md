@@ -2,18 +2,19 @@
 title: 'event: tentativelyAccept'
 description: Aceite provisoriamente o evento específico em um calendário do usuário.
 author: angelgolfer-ms
-ms.openlocfilehash: be22b88c444b3720eaf204bda3246d4b99b90623
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9aa718385ecd41726e8e421e946a97e1ad9183c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856630"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
 Aceite provisoriamente o [evento](../resources/event.md) específico em um [calendário](../resources/calendar.md)do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -49,9 +50,9 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Texto incluído na resposta. Opcional.|
+|comment|Cadeia de caracteres|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta

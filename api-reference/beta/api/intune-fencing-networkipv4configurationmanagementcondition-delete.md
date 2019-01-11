@@ -2,12 +2,13 @@
 title: Excluir networkIPv4ConfigurationManagementCondition
 description: Exclui um networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: 513f4fcfd05419ed66dde8d0ad1e6ae560dfef96
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d935a19aafa8ae3688f5afd9f7986f2060f6a35f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851356"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>Excluir networkIPv4ConfigurationManagementCondition
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

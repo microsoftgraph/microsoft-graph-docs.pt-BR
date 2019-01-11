@@ -2,12 +2,13 @@
 title: 'message: reply'
 description: Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.
 author: angelgolfer-ms
-ms.openlocfilehash: e52dc393edf92f4fecfda93166392be0249ca4c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2ba3df6551aab9138e90fa5e3fc452f2929b4815
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363624"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856319"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -39,9 +40,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
+|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
 
 ## <a name="response"></a>Resposta
 

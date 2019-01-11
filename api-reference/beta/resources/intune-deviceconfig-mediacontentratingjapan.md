@@ -2,12 +2,13 @@
 title: Tipo de recurso mediaContentRatingJapan
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 98af9a6678b26c2cef15950cae769f3057009479
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8877e1b5f2c6031725c07a02b387da4ce5bc9136
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337426"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856522"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>Tipo de recurso mediaContentRatingJapan
 

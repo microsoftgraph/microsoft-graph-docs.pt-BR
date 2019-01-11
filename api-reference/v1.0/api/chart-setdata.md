@@ -2,12 +2,13 @@
 title: 'Chart: setData'
 description: Redefine os dados de origem do gráfico.
 author: lumine2008
-ms.openlocfilehash: e20d7c8f66d89ba07e5c0c04d7ca927bad9470eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b295b38df2cf7be1c568588d58bfb2cf529f4dc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858146"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setData
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |sourceData|Json|O objeto Range que corresponde aos dados de origem.|
 |seriesBy|string|Opcional. Especifica a maneira como colunas ou linhas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções: Auto (padrão), linhas, colunas.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|

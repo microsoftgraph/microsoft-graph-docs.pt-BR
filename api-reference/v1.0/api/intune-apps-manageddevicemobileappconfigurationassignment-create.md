@@ -2,12 +2,13 @@
 title: Criar managedDeviceMobileAppConfigurationAssignment
 description: Criar um novo objeto managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 998ba77acbd34a9aed605502ad833b708a79977d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b36079176a0f181c4a9d63799d8d91dc1e83d5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857572"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Criar managedDeviceMobileAppConfigurationAssignment
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto managedDeviceMobileAppConfigurationAssignment.

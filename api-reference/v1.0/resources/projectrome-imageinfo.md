@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de imageInfo
 description: Um tipo complexo para representar a propriedade **atribuição** na parte visualInfo do objeto atividade.
-ms.openlocfilehash: 051338230850da7e754c5e8ad4f7d9c52fe17b32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2bac97ff945c0e0975ffa19636a954308b895e88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856459"
 ---
 # <a name="imageinfo-resource-type"></a>tipo de recurso de imageInfo
 
@@ -16,8 +17,8 @@ Um tipo complexo para representar a propriedade **atribuição** na parte [visua
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|iconUrl | String | Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
-|alternateText | String | Opcional; conteúdo de texto ALT acessível para a imagem|
+|iconUrl | Cadeia de caracteres | Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
+|alternateText | Cadeia de caracteres | Opcional; conteúdo de texto ALT acessível para a imagem|
 |addImageQuery | Booliano | Opcional; parâmetro usado para indicar o servidor é capaz de processar imagem dinamicamente em resposta às parametrização. Por exemplo, – uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON

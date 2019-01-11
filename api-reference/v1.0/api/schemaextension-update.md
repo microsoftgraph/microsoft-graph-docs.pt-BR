@@ -1,12 +1,13 @@
 ---
 title: Atualizar schemaExtension
 description: Atualize as propriedades na definição da schemaExtension especificada.
-ms.openlocfilehash: a09b3a4e2e48eb550acd5e77c60ab7213cc52de8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1316536f513ba126a504e1ad20d66591091157e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855647"
 ---
 # <a name="update-schemaextension"></a>Atualizar schemaExtension
 
@@ -48,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
 |properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente as alterações aditivas são permitidas. |
-|status|String|O estado de ciclo de vida da extensão do esquema. O estado inicial após a criação é **InDevelopment**. Transições de estados possíveis vão de **InDevelopment** a **disponível** e **disponível** para **obsoleto**.|
+|status|Cadeia de caracteres|O estado de ciclo de vida da extensão do esquema. O estado inicial após a criação é **InDevelopment**. Transições de estados possíveis vão de **InDevelopment** a **disponível** e **disponível** para **obsoleto**.|
 |targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos do Microsoft Graph (que podem suportar extensões) ao qual a extensão de esquema pode ser aplicada.  Somente as alterações aditivas são permitidas.|
 
 ## <a name="response"></a>Resposta

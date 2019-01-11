@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToSectionGroup'
 description: Copia uma seção para um grupo de seção específico.
-ms.openlocfilehash: c73f24084c26d8b4c715ab164267bbc41c74ceb3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 58907c479096843cdde82ab27eeb318a00fcd32f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858678"
 ---
 # <a name="section-copytosectiongroup"></a>section: copyToSectionGroup
 
@@ -44,8 +45,8 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros qu
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
-|siteId|String|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteCollectionId|Cadeia de caracteres|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteId|Cadeia de caracteres|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
 |groupId|String|A id do grupo para o qual copiar. Use somente quando copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A id do grupo de seção de destino. |
 |renameAs|String|O nome da cópia. Restabelece o padrão do nome do item existente. |

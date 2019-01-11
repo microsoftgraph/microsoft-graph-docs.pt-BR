@@ -2,12 +2,13 @@
 title: função getLicensesForApp
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 20b4e17645e86a630b2f07f97ccd27fa47f84539
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a568350cacac5ca640857aeaa8fb6f6d91e5b3fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831469"
 ---
 # <a name="getlicensesforapp-function"></a>função getLicensesForApp
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/vppTokens/getLicensesForApp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
@@ -46,7 +47,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleId|String|Ainda não documentado|
+|bundleId|Cadeia de caracteres|Ainda não documentado|
 
 
 

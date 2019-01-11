@@ -2,12 +2,13 @@
 title: Lista usada
 description: Percepção calculada que retorna a lista de arquivos usados com um usuário.
 author: simonhult
-ms.openlocfilehash: 17f47e4e82d5cb038438b5d164c76371221de11a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a04c49447f0b615c39ad46aeede897fb2b281b5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342494"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854186"
 ---
 # <a name="list-used"></a>Lista usada
 
@@ -15,7 +16,7 @@ ms.locfileid: "27342494"
 
 Percepção calculada que retorna a lista de arquivos usados com um usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

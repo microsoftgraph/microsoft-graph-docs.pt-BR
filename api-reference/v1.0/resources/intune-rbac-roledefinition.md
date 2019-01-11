@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso roleDefinition
 description: 'O recurso de Definição de Função. A definição da função é a base do acesso baseado em função no Intune. A função combina um recurso do Intune, como um aplicativo móvel e permissões de função associadas, como Criar ou Ler para o recurso. Existem dois tipos de funções: internas e personalizadas. Funções internas não podem ser modificadas. Tanto funções internas quanto personalizadas devem ter atribuições a serem impostas. Crie funções personalizadas se quiser definir uma função que permita que qualquer um dos recursos disponíveis e permissões de funções sejam combinados em uma única função.'
-ms.openlocfilehash: 15be13c0a893ed0cdc7b77b47591cc28d32c9889
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d3f5ef8ddd67302b747b2f35b0e4f62f3f6c00d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804813"
 ---
 # <a name="roledefinition-resource-type"></a>Tipo de recurso roleDefinition
 
@@ -25,7 +26,7 @@ O recurso de Definição de Função. A definição da função é a base do ace
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
 |description|Cadeia de caracteres|Descrição da definição de Função.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|

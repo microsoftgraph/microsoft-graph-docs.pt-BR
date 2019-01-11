@@ -2,12 +2,13 @@
 title: Listar appleDeviceFeaturesConfigurationBases
 description: Listar propriedades e relações dos objetos appleDeviceFeaturesConfigurationBase.
 author: tfitzmac
-ms.openlocfilehash: 2faefe480dae789b420f25597b3dbb62d389d4cc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10eb2b70d3d61071597ba03a4097369271442672
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327395"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858132"
 ---
 # <a name="list-appledevicefeaturesconfigurationbases"></a>Listar appleDeviceFeaturesConfigurationBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

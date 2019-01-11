@@ -2,19 +2,20 @@
 title: Lista scopedMembers para uma função de diretório
 description: Recupere uma lista de objetos scopedRoleMembership para uma função de diretório.
 author: lleonard-msft
-ms.openlocfilehash: b3d0e8bc67b6ab670b7dc8a149bad0f031b03762
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbe294d2f55f7e4c0ee265aa180551e7078a5ab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859210"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Lista scopedMembers para uma função de diretório
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere uma lista de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) para uma função de diretório.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

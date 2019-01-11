@@ -2,12 +2,13 @@
 title: Excluir settingStateDeviceSummary
 description: Exclui settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: eced5e319738c93dd9faeb9142755c2e64bf2110
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 216ad313b7692998e43eb6d16f4852113292b8a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858461"
 ---
 # <a name="delete-settingstatedevicesummary"></a>Excluir settingStateDeviceSummary
 
@@ -47,7 +48,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

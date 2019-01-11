@@ -2,12 +2,13 @@
 title: tipo de enum androidManagedStoreAccountEnrollmentTarget
 description: Android para direcionamento de tipo para a conta de gerenciamento de dispositivos de trabalho
 author: tfitzmac
-ms.openlocfilehash: c6de12afa46d5b3cb32c2492db4c7f6dd683bb59
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c37b234e128f27694aafbf75b5083622bf39fe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852427"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>tipo de enum androidManagedStoreAccountEnrollmentTarget
 
@@ -19,7 +20,7 @@ Android para direcionamento de tipo para a conta de gerenciamento de dispositivo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Ainda não documentado|
+|nenhum|0|Ainda não documentado|
 |todos os|1|Ainda não documentado|
 |direcionado|2|Ainda não documentado|
 |targetedAsEnrollmentRestrictions|3|Ainda não documentado|

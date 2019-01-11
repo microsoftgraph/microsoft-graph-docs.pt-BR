@@ -2,12 +2,13 @@
 title: ação de importDeviceIdentityList
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: d3f719a9f2b7358acfa413810b6bd091d32f52f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d960efba1bca6f080d8d5847c458dbfd9537013a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851762"
 ---
 # <a name="importdeviceidentitylist-action"></a>ação de importDeviceIdentityList
 
@@ -38,7 +39,7 @@ POST /deviceManagement/importedDeviceIdentities/importDeviceIdentityList
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

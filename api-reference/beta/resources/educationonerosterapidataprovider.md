@@ -2,12 +2,13 @@
 title: recurso de educationOneRosterApiDataProvider
 description: Usado para configurar o perfil de sincronização de dados da escola quando a API OneRoster é usada como a fonte de entrada.
 author: mmast-msft
-ms.openlocfilehash: 66c79c5e5d5ced4efcd635d2976e83887e545a9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a99343ed8026eda9ecf56925986f4a0bfe10b3ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858153"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>recurso de educationOneRosterApiDataProvider
 
@@ -21,9 +22,9 @@ Derivado do [educationSynchronizationDataProvider](educationsynchronizationdatap
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **URL de conexão** | String | A URL da conexão para a instância de OneRoster. |
+| **URL de conexão** | Cadeia de caracteres | A URL da conexão para a instância de OneRoster. |
 | **schoolsIds** | String collection |  A lista de sourcedIds escola para sincronizar. |
-| **providerName** | String | O nome do provedor de serviços de OneRoster conforme definido pela [especificação OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
+| **providerName** | Cadeia de caracteres | O nome do provedor de serviços de OneRoster conforme definido pela [especificação OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
 | **connectionSettings** | [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Configurações de Conexão para a instância de OneRoster. Deve ser do tipo [educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) ou [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
 | **personalizações** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Personalização opcional a ser aplicado ao perfil de sincronização.|
 

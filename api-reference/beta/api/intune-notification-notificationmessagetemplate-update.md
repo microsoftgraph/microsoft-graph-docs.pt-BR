@@ -2,12 +2,13 @@
 title: Atualizar notificationMessageTemplate
 description: Atualizar as propriedades de um objeto notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: 02c431370560dc9785e682bc7307ee530ae1d4fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36611f8bb99546c8d4d30ce16497955b99902d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857390"
 ---
 # <a name="update-notificationmessagetemplate"></a>Atualizar notificationMessageTemplate
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [notific
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|Cadeia de caracteres|Nome de exibição do modelo de mensagem de notificação.|
 |defaultLocale|Cadeia de caracteres|A localidade padrão para fallback quando a localidade solicitada não está disponível.|

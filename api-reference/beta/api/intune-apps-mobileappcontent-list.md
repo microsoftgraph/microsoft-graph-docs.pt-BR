@@ -2,12 +2,13 @@
 title: Listar mobileAppContents
 description: Listar propriedades e relações dos objetos mobileAppContent.
 author: tfitzmac
-ms.openlocfilehash: abb91f1607431bdbc8013b21676ecf57142ddb78
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7bad446e73d5571c678dcb8a992c3f5b076c6029
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858895"
 ---
 # <a name="list-mobileappcontents"></a>Listar mobileAppContents
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileL
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

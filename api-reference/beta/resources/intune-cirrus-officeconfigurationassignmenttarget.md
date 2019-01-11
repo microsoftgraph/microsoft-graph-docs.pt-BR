@@ -2,12 +2,13 @@
 title: tipo de recurso de officeConfigurationAssignmentTarget
 description: Destino para atribuição de configuração do cliente Office.
 author: tfitzmac
-ms.openlocfilehash: e9b5dfb5d6ed418d155d292a154a75ef275a92c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1066ff813297e4445c812c42a870a7234f5869df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858685"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>tipo de recurso de officeConfigurationAssignmentTarget
 

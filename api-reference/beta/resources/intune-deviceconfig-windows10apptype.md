@@ -2,12 +2,13 @@
 title: tipo de enum windows10AppType
 description: Tipo de aplicativo do Windows 10.
 author: tfitzmac
-ms.openlocfilehash: c75f8d97ecaa3db4a917042b75dab49d8a313300
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f971d88b1ebcec7a40c0f44b203c683bfee27f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321991"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856543"
 ---
 # <a name="windows10apptype-enum-type"></a>tipo de enum windows10AppType
 

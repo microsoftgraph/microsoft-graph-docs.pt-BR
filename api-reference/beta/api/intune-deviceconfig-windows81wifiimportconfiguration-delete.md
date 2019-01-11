@@ -2,12 +2,13 @@
 title: Excluir windows81WifiImportConfiguration
 description: Exclui um windows81WifiImportConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 62b742ed30c22ef663a0dd21b28c757babef07d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7be2320d10e053dc2dfe439bc34df024869fba08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342340"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857845"
 ---
 # <a name="delete-windows81wifiimportconfiguration"></a>Excluir windows81WifiImportConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
