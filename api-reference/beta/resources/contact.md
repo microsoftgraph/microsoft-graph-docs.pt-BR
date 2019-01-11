@@ -2,12 +2,13 @@
 title: tipo de recurso contact
 description: Um contato é um item no Outlook no qual você pode organizar e salvar informações sobre as pessoas e organizações com quem se comunica. Os contatos estão contidos em pastas de contatos.
 author: angelgolfer-ms
-ms.openlocfilehash: 761fdd3ed6f9c4c9982c1bb7c23bfbff28409ce9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 933d8a8fb5f55df487b90b537bed91d4ff79146b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815453"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
@@ -93,7 +94,7 @@ Veja a seguir uma representação JSON do recurso
 |emailAddresses|coleção [typedEmailAddress](typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
 |sinalizar|[Sinalizador de acompanhamento](followupflag.md)|O valor de sinalizador que indica o status, data de início, data de conclusão ou data de conclusão do contato. |
-|gender |String |Gênero do contato. |
+|gender |Cadeia de caracteres |Gênero do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|
 |id|String|O identificador exclusivo do contato. Somente leitura.|

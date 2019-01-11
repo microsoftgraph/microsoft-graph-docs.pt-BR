@@ -2,12 +2,13 @@
 title: Listar iosManagedAppRegistrations
 description: Lista propriedades e relações dos objetos iosManagedAppRegistration.
 author: tfitzmac
-ms.openlocfilehash: 05bb64f17a199e05e8247163cc1de94b7a01b598
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 55dc20e62a9bd7eba87d07d99af4bbc3c6240242
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808803"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Listar iosManagedAppRegistrations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

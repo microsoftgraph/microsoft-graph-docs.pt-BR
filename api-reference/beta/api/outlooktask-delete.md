@@ -1,12 +1,13 @@
 ---
 title: Excluir outlookTask
 description: Exclua a tarefa especificada do Outlook na caixa de correio do usuário.
-ms.openlocfilehash: cab78b8fea63c5044cc6faa6a1e4f09dd960bfd6
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: cac976349f375360bf6e3dcd5e0e86d9b1a855af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807131"
 ---
 # <a name="delete-outlooktask"></a>Excluir outlookTask
 
@@ -14,7 +15,7 @@ ms.locfileid: "27771776"
 
 Exclua a tarefa especificada do Outlook na caixa de correio do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

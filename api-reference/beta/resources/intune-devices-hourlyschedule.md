@@ -2,12 +2,13 @@
 title: tipo de recurso de hourlySchedule
 description: Agendamento de execução por hora de um script de gerenciamento de dispositivo recorrente.
 author: tfitzmac
-ms.openlocfilehash: e73ff542b7de780d16d9f2bd76c11c2d0f92e8ae
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2f22cc44fdd9017ef6db6f014e4a9b756d46d034
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811288"
 ---
 # <a name="hourlyschedule-resource-type"></a>tipo de recurso de hourlySchedule
 

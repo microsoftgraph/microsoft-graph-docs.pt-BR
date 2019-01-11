@@ -2,12 +2,13 @@
 title: Excluir deviceManagementScriptGroupAssignment
 description: Exclui um deviceManagementScriptGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: bec5ef8159e88899a3b5161889c32da3a13a640a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df7b588b432bb90f01d2d74b13928fa11409aba4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808054"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>Excluir deviceManagementScriptGroupAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/grou
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

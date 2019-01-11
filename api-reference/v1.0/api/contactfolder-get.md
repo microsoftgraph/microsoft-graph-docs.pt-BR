@@ -2,12 +2,13 @@
 title: Obter contactFolder
 description: Obtenha uma pasta de contatos usando a respectiva ID.
 author: angelgolfer-ms
-ms.openlocfilehash: 4d898a4e983f9b1c8d1dac3499de1123a85c030f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0ce1c112161e2828d9646232ce577ddb759ac79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815327"
 ---
 # <a name="get-contactfolder"></a>Obter contactFolder
 
@@ -19,7 +20,7 @@ Há dois cenários onde um aplicativo pode obter a pasta de contato do outro usu
 * Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

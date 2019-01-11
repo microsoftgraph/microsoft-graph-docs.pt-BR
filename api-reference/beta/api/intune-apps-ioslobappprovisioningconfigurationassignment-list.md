@@ -2,12 +2,13 @@
 title: Lista iosLobAppProvisioningConfigurationAssignments
 description: Lista as propriedades e os relacionamentos dos objetos iosLobAppProvisioningConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 7056d64cc59adae5c4289a2fadae498f09137c90
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41230396c73ac1682b639488da733a497381e017
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823874"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>Lista iosLobAppProvisioningConfigurationAssignments
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

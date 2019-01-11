@@ -1,12 +1,13 @@
 ---
 title: 'orgContact: listar directReports'
 description: Obtenha os relatórios de diretos do contato.
-ms.openlocfilehash: e127f5df077c2311efb09c83984ecc2be66d1b14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f8008560b0ee24b7b3ee4d3ec5bccd53fa40bbfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033723"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813115"
 ---
 # <a name="orgcontact-list-directreports"></a>orgContact: listar directReports
 

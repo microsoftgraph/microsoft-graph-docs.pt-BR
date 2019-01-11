@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de plannerPlanContextCollection
 description: O recurso de **plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado. Este recurso é um tipo aberto e parte do objeto plannerPlan. O valor do par de valor da propriedade é o objeto plannerPlanContext.
-ms.openlocfilehash: ae17e604bf3d59b7b825fe36a8f93f05d5cc835f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 51a09353993a61324f31a03c8ffadd5462cac692
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805450"
 ---
 # <a name="plannerplancontextcollection-resource-type"></a>tipo de recurso de plannerPlanContextCollection
 

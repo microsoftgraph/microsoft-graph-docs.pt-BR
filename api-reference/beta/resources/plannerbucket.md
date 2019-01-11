@@ -2,12 +2,13 @@
 title: Tipo de recurso plannerBucket
 description: ) para tarefas em um plano no Office 365. Ele está contido em um plannerPlan e pode ter uma coleção de plannerTasks.
 author: TarkanSevilmis
-ms.openlocfilehash: e3b09e50c62842d5b3f60206da49e9596648c565
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4868fb3925fa3ae94571d5cc93b0da12434b00dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808117"
 ---
 # <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 
@@ -30,7 +31,7 @@ O recurso **plannerBucket** representa um Bucket (ou "coluna personalizada") par
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. ID do compartimento de memória. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](tasks-identifiers-disclaimer.md) é feita no serviço.|
+|id|Cadeia de caracteres| Somente leitura. ID do compartimento de memória. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](tasks-identifiers-disclaimer.md) é feita no serviço.|
 |name|String|Nome do bucket.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |planId|String|ID do plano ao qual o bucket pertence.|

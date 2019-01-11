@@ -2,19 +2,20 @@
 title: Atualizar o aplicativo
 description: Atualize as propriedades do objeto application.
 author: lleonard-msft
-ms.openlocfilehash: e664e212f81bab9f4e8b49bce60b4ec045fa5787
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819002"
 ---
 # <a name="update-application"></a>Atualizar o aplicativo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades do objeto application.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -39,14 +40,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
+|allowPublicClient|Booliano| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
 |API|[API](../resources/api.md)| Especifica as configurações para um aplicativo de API. |
 |appRoles|coleção [appRole](../resources/approle.md)|A coleção de funções de aplicativos que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
 |applicationAliases|String collection| Os URIs que identifique o aplicativo. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Operador *any* é necessário para expressões de filtro propriedades de valores múltiplos. Não anulável. |
 |createdDateTime|DateTimeOffset| A data e hora que o aplicativo foi registrado. |
 |deletedDateTime|DateTimeOffset| A data e hora que o aplicativo foi excluído. |
-|displayName|String|O nome de exibição para o aplicativo. |
-|id|String|O identificador exclusivo para o aplicativo. Herdado de [directoryObject](../resources/directoryobject.md). Chave. Não anulável. Somente leitura. |
+|displayName|Cadeia de caracteres|O nome de exibição para o aplicativo. |
+|id|Cadeia de caracteres|O identificador exclusivo para o aplicativo. Herdado de [directoryObject](../resources/directoryobject.md). Chave. Não anulável. Somente leitura. |
 |Info|[informationalUrl](../resources/informationalurl.md)| Informações básicas de perfil do aplicativo. | Especifica as configurações para clientes instalados como os dispositivos móveis ou da área de trabalho. |
 |keyCredentials|coleção [keyCredential](../resources/keycredential.md)|O conjunto de credenciais principais associados ao aplicativo não anuláveis. |
 |logotipo|Stream|O logotipo principal para o aplicativo. Não anulável. |

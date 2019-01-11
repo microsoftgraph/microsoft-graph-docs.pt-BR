@@ -2,12 +2,13 @@
 title: Excluir depMacOSEnrollmentProfile
 description: Exclui um depMacOSEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: bad8bc7869ccd4bf367038e53faba7c366a5846b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2433da2ccca80ae42cac34a21dad649b629a9806
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809279"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>Excluir depMacOSEnrollmentProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultM
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

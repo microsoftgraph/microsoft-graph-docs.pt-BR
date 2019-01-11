@@ -2,12 +2,13 @@
 title: Atualizar roleScopeTag
 description: Atualize as propriedades de um objeto roleScopeTag.
 author: tfitzmac
-ms.openlocfilehash: 3e1cdc0997e0c2f7ebb8d70c730785e40b4143d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bece75c05fa65a2c5def34ec1644a7375711ab97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306941"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808131"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [roleScopeTag](../resources/intune-rbac-rolescopetag.md) .
@@ -48,9 +49,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|String|A exibição ou o nome amigável da marca de escopo de função.|
-|description|String|Descrição da marca de escopo de função.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|displayName|Cadeia de caracteres|A exibição ou o nome amigável da marca de escopo de função.|
+|description|Cadeia de caracteres|Descrição da marca de escopo de função.|
 
 
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso TableRow
 description: Representa uma linha em uma tabela.
 author: lumine2008
-ms.openlocfilehash: de83ec8cae87f159c6f1f9687bd093873558c150
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe95b62236322451893e3859f9d6599cc637848c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807172"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -31,7 +32,7 @@ Representa uma linha em uma tabela.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|inteiro|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
+|índice|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
 |values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

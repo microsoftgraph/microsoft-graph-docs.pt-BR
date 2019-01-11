@@ -1,12 +1,13 @@
 ---
 title: Clientes de lista
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: a46e8dcc39b69e8391829c176eb01d075d23fccf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71b873492d4a711f3510756ef644a834cdc7a042
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809566"
 ---
 # <a name="list-customers"></a>Clientes de lista
 

@@ -2,12 +2,13 @@
 title: Criar restrictedAppsViolation
 description: Crie um novo objeto de restrictedAppsViolation.
 author: tfitzmac
-ms.openlocfilehash: 3f20463363c37e8ab9ed47bebb3b2323ca308656
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b608a831427169215da9df4631f4562989105a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313325"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818120"
 ---
 # <a name="create-restrictedappsviolation"></a>Criar restrictedAppsViolation
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto restrictedAppsViolation.
@@ -47,13 +48,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
-|userId|String|Identificador exclusivo do usuário, deve ser um Guid|
+|id|Cadeia de caracteres|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
+|userId|Cadeia de caracteres|Identificador exclusivo do usuário, deve ser um Guid|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|String|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
-|deviceName|String|Nome do dispositivo|
-|deviceConfigurationId|String|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
-|deviceConfigurationName|String|Nome do perfil de configuração de dispositivo|
+|managedDeviceId|Cadeia de caracteres|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
+|deviceName|Cadeia de caracteres|Nome do dispositivo|
+|deviceConfigurationId|Cadeia de caracteres|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
+|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração de dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado restrito de aplicativos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violadas|

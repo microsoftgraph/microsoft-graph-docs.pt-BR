@@ -2,12 +2,13 @@
 title: Obter mobileThreatDefenseConnector
 description: Propriedades de leitura e relações do objeto mobileThreatDefenseConnector.
 author: tfitzmac
-ms.openlocfilehash: 07e0d8fc3a66f941925bb5a36ae7093abe2368b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 64d5afcae9eb4bde80277ca7489408afb9dbf31f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811680"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Obter mobileThreatDefenseConnector
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

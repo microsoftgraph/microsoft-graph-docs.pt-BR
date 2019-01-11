@@ -2,12 +2,13 @@
 title: Listar notificationMessageTemplates
 description: Listar propriedades e relações dos objetos notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: daf84cfc898fc62e4224826a8ae83fcf84f696b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d47e3d85e0cf50d66b7587601204230074e9675
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346211"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805828"
 ---
 # <a name="list-notificationmessagetemplates"></a>Listar notificationMessageTemplates
 
@@ -36,7 +37,7 @@ GET /deviceManagement/notificationMessageTemplates
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceManagementScript
 description: Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dispositivos windows registrados 10 Azure Active Directory ingressou do cliente. O script pode ser executado uma vez ou periodicamente.
 author: tfitzmac
-ms.openlocfilehash: f35a0b4159c84535c4696f7b57c8486b866504b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 321d525aaf9de386ba639bc904915a06eda56a75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811043"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso de deviceManagementScript
 
@@ -29,16 +30,16 @@ Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dis
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o script de gerenciamento de dispositivo.|
-|displayName|String|Nome do script de gerenciamento de dispositivo.|
-|description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo para o script de gerenciamento de dispositivo.|
+|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
+|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de script a ser executado. Se não definido o script será executado uma vez|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e hora em que o script de gerenciamento do dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação o script de gerenciamento de dispositivo.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que do script de gerenciamento de dispositivo é executado. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indica se a assinatura de script precisa ser verificada.|
-|fileName|String|Nome do arquivo de script.|
+|enforceSignatureCheck|Booliano|Indica se a assinatura de script precisa ser verificada.|
+|fileName|Cadeia de caracteres|Nome do arquivo de script.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

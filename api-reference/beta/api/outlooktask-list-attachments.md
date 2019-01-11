@@ -2,12 +2,13 @@
 title: Listar anexos
 description: Obtenha uma lista de objetos attachment anexado a uma tarefa do Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: b998f6f7d3356728400cc7c609dd1014467ae4d6
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: c76a11b960b8c1bb30e943cdc59205d2e0c3d4d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771790"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818904"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -15,7 +16,7 @@ ms.locfileid: "27771790"
 
 Obtenha uma lista de objetos [attachment](../resources/attachment.md) anexado a uma tarefa do Outlook.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

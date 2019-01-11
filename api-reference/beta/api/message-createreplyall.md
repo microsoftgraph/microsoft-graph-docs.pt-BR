@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: 'Criar um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, '
-ms.openlocfilehash: 85cdef106fcd84764fe0d5f86d24ecef6b6ed29e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d56f79b415232954434841d89cbdc95bafc1c6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816923"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -49,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
+|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.|
 
 ## <a name="response"></a>Resposta

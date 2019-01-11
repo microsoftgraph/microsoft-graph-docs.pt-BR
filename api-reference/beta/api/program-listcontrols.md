@@ -1,12 +1,13 @@
 ---
 title: Lista programControls de um programa
 description: No recurso de avaliações de acesso do Azure AD, liste todos os objetos de programControl, vinculados a um programa específico.
-ms.openlocfilehash: 78b28851dadfa1c24bc5bc0556b1c471e7bc09e9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8895634b098474cdbeab695cbe730a1e2fd02e2c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033129"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809329"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Lista programControls de um programa
 

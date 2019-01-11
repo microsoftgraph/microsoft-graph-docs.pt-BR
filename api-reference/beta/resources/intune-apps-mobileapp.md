@@ -2,12 +2,13 @@
 title: Tipo de recurso mobileApp
 description: Uma classe abstrata que contém as propriedades base de aplicativos móveis do Intune.
 author: tfitzmac
-ms.openlocfilehash: e07f3d3c103ec5c6b2c03205f1d7ad5ef5cf2d09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01bde6a94c0d16b26b20d1ba30e69bec0457972e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812534"
 ---
 # <a name="mobileapp-resource-type"></a>Tipo de recurso mobileApp
 
@@ -28,19 +29,19 @@ Uma classe abstrata que contém as propriedades base de aplicativos móveis do I
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|displayName|String|O título do aplicativo importado ou definido pelo administrador.|
-|description|String|A descrição do aplicativo.|
-|publisher|String|O publicador do aplicativo.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador.|
+|description|Cadeia de caracteres|A descrição do aplicativo.|
+|publisher|Cadeia de caracteres|O publicador do aplicativo.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez.|
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador.|
-|privacyInformationUrl|String|A URL da declaração de privacidade.|
-|informationUrl|String|A URL de informações adicionais.|
-|owner|String|O proprietário do conteúdo.|
-|developer|String|O desenvolvedor do aplicativo.|
-|notes|String|Anotações para o aplicativo.|
+|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
+|informationUrl|Cadeia de caracteres|A URL de informações adicionais.|
+|owner|Cadeia de caracteres|O proprietário do conteúdo.|
+|developer|Cadeia de caracteres|O desenvolvedor do aplicativo.|
+|notes|Cadeia de caracteres|Anotações para o aplicativo.|
 |uploadState|Int32|O estado de carregamento.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Os valores possíveis são: `notPublished`, `processing`, `published`.|
 

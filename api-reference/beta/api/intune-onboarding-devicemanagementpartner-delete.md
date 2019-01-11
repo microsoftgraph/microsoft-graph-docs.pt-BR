@@ -2,12 +2,13 @@
 title: Excluir deviceManagementPartner
 description: Exclui deviceManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: d7b61cda45950039791a0a7f0407642335723228
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cf106f7084ede49a00cd8363f9d0cd5395747b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334906"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807438"
 ---
 # <a name="delete-devicemanagementpartner"></a>Excluir deviceManagementPartner
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

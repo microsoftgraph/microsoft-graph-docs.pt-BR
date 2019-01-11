@@ -2,12 +2,13 @@
 title: Obter androidForWorkWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f6967da5049b4765f21996d48f839c20f014b83c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15bc2dfa8e60201e2f6feb4fef78fb53d3ce2ac2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817364"
 ---
 # <a name="get-androidforworkwificonfiguration"></a>Obter androidForWorkWiFiConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

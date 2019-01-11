@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de agreementFile
 description: Representa um termos personalizável do arquivo do contrato de uso que gerencia de um inquilino com o Azure Active Directory (AD Azure). Ele contém metadados sobre o arquivo do contrato (por exemplo, o nome, o idioma, e se ele está o arquivo padrão).
-ms.openlocfilehash: f099715fd25fbae9d7b2a94d6de841b8766c30e2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f06792d63deabf25659a09e8aec5ed0e8f036472
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804505"
 ---
 # <a name="agreementfile-resource-type"></a>tipo de recurso de agreementFile
 
@@ -28,8 +29,8 @@ Representa um termos personalizável do arquivo do contrato de uso que gerencia 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |fileData|[agreementFileData](agreementfiledata.md)|Dados que representam as condições de usar o documento PDF. Somente leitura.|
-|fileName|String|Nome do arquivo contrato (por exemplo, TOU.pdf). Somente leitura.|
-|id|String|Somente leitura.|
+|fileName|Cadeia de caracteres|Nome do arquivo contrato (por exemplo, TOU.pdf). Somente leitura.|
+|id|Cadeia de caracteres|Somente leitura.|
 |isDefault|Booliano|Indica se esse é o arquivo padrão do contrato se nenhuma das culturas corresponder a preferência do cliente. Se nenhum dos arquivos estiverem marcados como padrão, primeiro será tratado como padrão. Somente leitura.|
 |idioma|Cadeia de caracteres|Cultura do arquivo no formato languagecode2-país/regioncode2 contrato. languagecode2 é um código de duas letras minúsculas, derivado do ISO 639-1. País/regioncode2 é derivado do ISO 3166 e normalmente consiste em duas letras maiusculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
 

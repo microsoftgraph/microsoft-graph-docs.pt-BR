@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de leakedCredentialsRiskEvent
 description: Um evento de risco detectado pelo Windows Azure Active Directory identidade proteção onde credenciais da conta foram detectadas à solta. Informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Windows Azure AD.
-ms.openlocfilehash: 2404564726c3ca7ee1f577b3d81daaa339941406
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7a8f2a8cf72b713fab30887fcc4d81b8a88e71ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815978"
 ---
 # <a name="leakedcredentialsriskevent-resource-type"></a>tipo de recurso de leakedCredentialsRiskEvent
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de aplicativo
 description: 'Representa um aplicativo. Qualquer aplicativo que outsources autenticação do Azure Active Directory (AD Azure) deve ser registrado em um diretório. Registro de aplicativo envolve informando Azure AD sobre seu aplicativo, incluindo a URL onde ele tem localizado, a URL para enviar respostas após a autenticação, o URI para identificar o seu aplicativo e muito mais. Para obter mais informações, consulte Noções básicas sobre o registro de um aplicativo no Azure AD. Herda de directoryObject. '
-ms.openlocfilehash: 66da35183b84d42d69d603cc840ba948d60d7bed
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805667"
 ---
 # <a name="application-resource-type"></a>tipo de recurso de aplicativo
 
@@ -45,8 +46,8 @@ Esse recurso permite:
 |appRoles|coleção [appRole](approle.md)|A coleção de funções de aplicativos que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
 |createdDateTime|DateTimeOffset| A data e hora que o aplicativo foi registrado. |
 |deletedDateTime|DateTimeOffset| A data e hora que o aplicativo foi excluído. |
-|displayName|String|O nome de exibição para o aplicativo. |
-|id|String|O identificador exclusivo para o aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
+|displayName|Cadeia de caracteres|O nome de exibição para o aplicativo. |
+|id|Cadeia de caracteres|O identificador exclusivo para o aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 |identifierUris|String collection| Os URIs que identifique o aplicativo. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Operador *any* é necessário para expressões de filtro propriedades de valores múltiplos. Não anulável. |
 |Info|[informationalUrl](informationalurl.md)| Informações básicas de perfil do aplicativo. |
 |isFallbackPublicClient|Booliano| Especifica o tipo de aplicativo de fallback como cliente pública, como um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false* indicando o tipo de aplicativo de fallback é confidencial cliente como o aplicativo web. Há determinadas situações em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) onde ele está configurado sem a especificação de um URI de redirecionamento). Nesses casos Azure AD irá interpretar o tipo de aplicativo com base no valor dessa propriedade.|
@@ -57,11 +58,11 @@ Esse recurso permite:
 |parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle do responsável para um aplicativo.|
 |passwordCredentials|coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associados ao aplicativo. Não anulável.|
 |publicClient|[publicClient](publicclient.md)| Especifica as configurações para clientes instalados como os dispositivos móveis ou da área de trabalho. |
-|publisherDomain| String | O domínio verificado publisher para o aplicativo. Somente leitura.|
+|publisherDomain| Cadeia de caracteres | O domínio verificado publisher para o aplicativo. Somente leitura.|
 |requiredResourceAccess|coleção [requiredResourceAccess](requiredresourceaccess.md)|Especifica os recursos que esse aplicativo requer acesso aos e o conjunto de escopos de permissão do OAuth e funções de aplicativos que ele precisa em cada um desses recursos. Essa configuração prévia do acesso a recursos necessários drives a experiência de consentimento. Não anulável.|
-|signInAudience | String | Especifica quais contas da Microsoft são suportadas para o aplicativo atual. Valores suportados são:<ul><li>**AzureADMyOrg**: os usuários com o Microsoft trabalhar ou escola conta no locatário do Azure AD da minha organização (isto é, inquilino único)</li><li>**AzureADMultipleOrgs**: os usuários com o Microsoft trabalhar ou escola conta no locatário do Azure AD da organização, qualquer (ou seja, multilocatário)</li> <li>**AzureADandPersonalMicrosoftAccount**: os usuários com uma conta pessoal da Microsoft ou uma conta de trabalho ou da escola no locatário do Azure AD da organização, qualquer</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|signInAudience | Cadeia de caracteres | Especifica quais contas da Microsoft são suportadas para o aplicativo atual. Valores suportados são:<ul><li>**AzureADMyOrg**: os usuários com o Microsoft trabalhar ou escola conta no locatário do Azure AD da minha organização (isto é, inquilino único)</li><li>**AzureADMultipleOrgs**: os usuários com o Microsoft trabalhar ou escola conta no locatário do Azure AD da organização, qualquer (ou seja, multilocatário)</li> <li>**AzureADandPersonalMicrosoftAccount**: os usuários com uma conta pessoal da Microsoft ou uma conta de trabalho ou da escola no locatário do Azure AD da organização, qualquer</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |marcas|String collection| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[web](web.md)| Especifica as configurações para um aplicativo web. |
+|web|[Web](web.md)| Especifica as configurações para um aplicativo web. |
 
 ## <a name="relationships"></a>Relações
 

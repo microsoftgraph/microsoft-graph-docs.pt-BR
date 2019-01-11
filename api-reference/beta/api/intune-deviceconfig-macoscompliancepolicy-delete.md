@@ -2,12 +2,13 @@
 title: Excluir macOSCompliancePolicy
 description: Exclui macOSCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: a4d9430f558b27b65974e594a1427282dc0572cf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb1f7468b1e8b78a760c127ad95cf1aff2e77fb2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338364"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817416"
 ---
 # <a name="delete-macoscompliancepolicy"></a>Excluir macOSCompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

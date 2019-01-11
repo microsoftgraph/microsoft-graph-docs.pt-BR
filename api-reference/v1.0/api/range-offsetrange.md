@@ -1,12 +1,13 @@
 ---
 title: 'Range: OffsetRange'
 description: Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.
-ms.openlocfilehash: fcbc13fa17e0df97eceb4705e7775d733d1728dd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7364420e660612995300e4fba964dc29de656be2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007041"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815915"
 ---
 # <a name="range-offsetrange"></a>Range: OffsetRange
 

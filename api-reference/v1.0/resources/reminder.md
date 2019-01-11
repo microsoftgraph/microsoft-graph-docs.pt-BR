@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso reminder
 description: Um lembrete para um evento em um calendário do usuário.
-ms.openlocfilehash: 131de8772c6b4fa400ab0f48197430611030c255
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815719"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
@@ -17,7 +18,7 @@ Um lembrete para um [evento](event.md) em um [calendário](calendar.md)do usuár
 |:---------------|:--------|:----------|
 |changeKey|String|Identifica a versão do lembrete. Toda vez que o lembrete é alterado, **changeKey** também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
-|eventId|String|A ID exclusiva do evento. Somente leitura.|
+|eventId|Cadeia de caracteres|A ID exclusiva do evento. Somente leitura.|
 |eventLocation|[Location](location.md)|O local do evento.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
 |eventSubject|Cadeia de caracteres|O texto da linha de assunto do evento.|

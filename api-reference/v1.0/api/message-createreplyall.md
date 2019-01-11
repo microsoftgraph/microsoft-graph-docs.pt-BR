@@ -1,12 +1,13 @@
 ---
 title: 'message: createReplyAll'
 description: Crie um rascunho para responder ao remetente e a todos os destinatários da mensagem especificada. Você pode atualizar o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente enviar o rascunho.
-ms.openlocfilehash: a48e5bf7f3ae330ff31a2b8d2827259798186c64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d09de032dc515173219a00b19a64d64ba0b72195
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804778"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 

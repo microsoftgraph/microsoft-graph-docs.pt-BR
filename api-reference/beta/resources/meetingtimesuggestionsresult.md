@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso meetingTimeSuggestionsResult
 description: Uma coleção de sugestões de reunião, se houver alguma, ou se não houver motivo.
-ms.openlocfilehash: 2c6cb28ea0ec899e693300b321c652fb814582f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aff5abd69297cd466027c1a614b2609697c00ce6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806836"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Tipo de recurso meetingTimeSuggestionsResult
 

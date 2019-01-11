@@ -2,12 +2,13 @@
 title: Listar managedAndroidStoreApps
 description: Listar propriedades e relações dos objetos managedAndroidStoreApp.
 author: tfitzmac
-ms.openlocfilehash: e281cf7421dc5266588701f87f2447c87c266106
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4c58b961cefa8aff2fad3b752ee240f8ef8d68e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813094"
 ---
 # <a name="list-managedandroidstoreapps"></a>Listar managedAndroidStoreApps
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: Obter Contract
 description: Recupere as propriedades e os relacionamentos do objeto contract.
-ms.openlocfilehash: 2542fd551277e0a8d9ef76cfe82c2f8c80ec3d7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd379286e161cc68e33af49bec20bb580512ef0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006291"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805772"
 ---
 # <a name="get-contract"></a>Obter Contract
 

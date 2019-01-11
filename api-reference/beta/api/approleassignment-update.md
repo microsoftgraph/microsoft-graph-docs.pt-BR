@@ -1,12 +1,13 @@
 ---
 title: Atualizar approleassignment
 description: Atualize as propriedades do objeto approleassignment.
-ms.openlocfilehash: 3c861afde396d9cab2f745c15c7de1d9a81c5dcc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d0f95e5413354a28e7b9b26e9b440f147c45931
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809629"
 ---
 # <a name="update-approleassignment"></a>Atualizar approleassignment
 
@@ -41,10 +42,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|A hora em que a concessão foi criada.|
 |id|Guid|A id de função que foi atribuída à entidade de segurança.  Essa função deve ser declarada pelo destino recurso aplicativo **resourceId** em sua propriedade **appRoles** . Onde o recurso não declarar todas as permissões, uma id do padrão (zero GUID) deve ser especificada.                            **Anotações**: não anulável.            |
-|principalDisplayName|String|O nome de exibição da entidade que foi concedido o acesso.|
+|principalDisplayName|Cadeia de caracteres|O nome de exibição da entidade que foi concedido o acesso.|
 |principalId|Guid|O identificador exclusivo (**objectId**) para a entidade sendo concedida o acesso.                            **Observações**: necessários.            |
-|principalType|String|O tipo de entidade.  Isso pode ser "User", "Grupo" ou "ServicePrincipal".|
-|resourceDisplayName|String|O nome de exibição do recurso para o qual a atribuição foi feita.|
+|principalType|Cadeia de caracteres|O tipo de entidade.  Isso pode ser "User", "Grupo" ou "ServicePrincipal".|
+|resourceDisplayName|Cadeia de caracteres|O nome de exibição do recurso para o qual a atribuição foi feita.|
 |resourceId|Guid|O identificador exclusivo (**objectId**) para o recurso de destino (entidade de serviço) para o qual a atribuição foi feita.|
 
 ## <a name="response"></a>Resposta

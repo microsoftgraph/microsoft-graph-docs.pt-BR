@@ -1,12 +1,13 @@
 ---
 title: recurso de educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 description: Quando OAuth2 Grant de credenciais de cliente será usado para se conectar ao provedor de dados, esse tipo de configurações de conexão deve ser usado para configurar o perfil.
-ms.openlocfilehash: 901fabb802d4ed5fa0c99538e52b9a07199eb298
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49a0a267ddb3a8f3a954888679806ea7913e24f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038871"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822579"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>recurso de educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 
@@ -20,8 +21,8 @@ Derivado do [educationSynchronizationConnectionSettings](educationsynchronizatio
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **tokenUrl** | String | A URL para obter tokens de acesso para o provedor de dados. |
-| **scope** | String | [O escopo da solicitação de acesso](https://tools.ietf.org/html/rfc6749#section-3.3). |
+| **tokenUrl** | Cadeia de caracteres | A URL para obter tokens de acesso para o provedor de dados. |
+| **scope** | Cadeia de caracteres | [O escopo da solicitação de acesso](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## <a name="json-representation"></a>Representação JSON
 <!-- {

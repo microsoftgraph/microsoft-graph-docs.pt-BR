@@ -2,12 +2,13 @@
 title: Criar deviceConfigurationConflictSummary
 description: Crie um novo objeto de deviceConfigurationConflictSummary.
 author: tfitzmac
-ms.openlocfilehash: f39d272d817ca2244f5b0d932fc9c955a1253b27
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323104"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812415"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Criar deviceConfigurationConflictSummary
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto deviceConfigurationConflictSummary.
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de diretivas em conflito com a configuração de determinado|
-|id|String|A identificação para este conjunto de diretivas conflitantes. Este id é as identificações de todas as políticas do ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
+|id|Cadeia de caracteres|A identificação para este conjunto de diretivas conflitantes. Este id é as identificações de todas as políticas do ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
 |contributingSettings|String collection|O conjunto de configurações em conflito com as políticas de determinado|
 |deviceCheckinsImpacted|Int32|A contagem de check-ins afetados pelas configurações e diretivas conflitantes|
 

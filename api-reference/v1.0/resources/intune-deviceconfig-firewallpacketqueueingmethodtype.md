@@ -2,12 +2,13 @@
 title: tipo de enum firewallPacketQueueingMethodType
 description: Valores possíveis para firewallPacketQueueingMethod
 author: tfitzmac
-ms.openlocfilehash: 9f3d63b7e58b6f9c5ba369c3ceb12d06704c4725
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1303287e521cf0b542047e8acaf122bc08a770a6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823216"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enum firewallPacketQueueingMethodType
 

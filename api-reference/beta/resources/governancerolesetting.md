@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de governanceRoleSetting
 description: " regra e assim por diante."
-ms.openlocfilehash: 64245b2d6f0aa9e0ea3ffda4a5eaebfb9fd205df
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d63685ae1a4383ce7ab245dda0fd7d1207c57f88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037429"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805884"
 ---
 # <a name="governancerolesetting-resource-type"></a>tipo de recurso de governanceRoleSetting
 
@@ -25,12 +26,12 @@ Representa um conjunto de configurações em cada definição de função que pr
 ## <a name="properties"></a>Propriedades
 |Propriedade               |Tipo                                      |Descrição|
 |:--------------------|:---------------------------------------|:----------|
-|id                   |String                                  |A identificação do roleSetting.|
+|id                   |Cadeia de caracteres                                  |A identificação do roleSetting.|
 |resourceId           |Cadeia de caracteres                                  |Obrigatório. A identificação do recurso que a configuração da função está associada.|
 |roleDefinitionId     |Cadeia de caracteres                                  |Obrigatório. A id da definição de função que a configuração da função está associada.|
 |isDefault            |Booliano                                 |Somente leitura. Indique se o roleSetting é um roleSetting padrão|
 |lastUpdatedDateTime  |DateTimeOffset                          |Somente leitura. A hora em que a configuração de funções foi atualizada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|lastUpdatedBy        |String                                  |Somente leitura. O nome de exibição do administrador que atualizada pela última vez o roleSetting.|
+|lastUpdatedBy        |Cadeia de caracteres                                  |Somente leitura. O nome de exibição do administrador que atualizada pela última vez o roleSetting.|
 |adminEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função elegíveis.|
 |adminMemberSettings  |coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
 |userEligibleSettings |coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um usuário tentar adicionar uma atribuição de função elegíveis. A configuração não é suportada por enquanto.|

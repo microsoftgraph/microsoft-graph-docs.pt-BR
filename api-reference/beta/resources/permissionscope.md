@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de permissionScope
 description: Representa um OAuth 2.0 delegada escopo de permissão. O OAuth 2.0 especificado escopos permissão delegada podem ser solicitados por aplicativos do cliente (por meio da coleção **requiredResourceAccess** no objeto de aplicativo) ao chamar um aplicativo de recurso. A propriedade **oauth2Permissions** da entidade ServicePrincipal e da entidade do aplicativo é uma coleção de **OAuth2Permission**.
-ms.openlocfilehash: b15ee9901632fca113d944000847c953e85be58c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a294316f5c6255d0873ce0dbe809c33dad89ae08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038639"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818148"
 ---
 # <a name="permissionscope-resource-type"></a>tipo de recurso de permissionScope
 
@@ -18,15 +19,15 @@ Representa um OAuth 2.0 delegada escopo de permissão. O OAuth 2.0 especificado 
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|adminConsentDescription|String| Texto de ajuda de permissão que aparece nas experiências de atribuição de consentimento e app admin. |
-|adminConsentDisplayName|String| Nome para exibição da permissão que aparece nas experiências de atribuição de consentimento e app admin. |
+|adminConsentDescription|Cadeia de caracteres| Texto de ajuda de permissão que aparece nas experiências de atribuição de consentimento e app admin. |
+|adminConsentDisplayName|Cadeia de caracteres| Nome para exibição da permissão que aparece nas experiências de atribuição de consentimento e app admin. |
 |id|Guid| Identificador de permissão de escopo exclusiva dentro da coleção oauth2Permissions. |
 |isEnabled|Boolean| Ao criar ou atualizar uma permissão, essa propriedade deverá ser definida como **true** (o que é o padrão). Para excluir uma permissão, essa propriedade primeiro deve ser definida como **false**. Nesse momento, em uma chamada subsequente, a permissão pode ser removida. |
-|origem|String| Para uso interno. |
-|type|String| Especifica se esta permissão de escopo pode ser consentiu por um usuário final, ou se é uma permissão de todo o inquilino deve ser consentiu por um administrador da empresa. Valores possíveis são o *usuário* ou *administrador*. |
-|userConsentDescription|String| Texto de ajuda de permissão que aparece na experiência de consentimento do usuário final. |
-|userConsentDisplayName|String| Nome para exibição da permissão que aparece na experiência de consentimento do usuário final. |
-|valor|String| O valor da declaração escopo que deve esperar que o aplicativo de recurso no token de acesso OAuth 2.0. |
+|origem|Cadeia de caracteres| Para uso interno. |
+|type|Cadeia de caracteres| Especifica se esta permissão de escopo pode ser consentiu por um usuário final, ou se é uma permissão de todo o inquilino deve ser consentiu por um administrador da empresa. Valores possíveis são o *usuário* ou *administrador*. |
+|userConsentDescription|Cadeia de caracteres| Texto de ajuda de permissão que aparece na experiência de consentimento do usuário final. |
+|userConsentDisplayName|Cadeia de caracteres| Nome para exibição da permissão que aparece na experiência de consentimento do usuário final. |
+|valor|Cadeia de caracteres| O valor da declaração escopo que deve esperar que o aplicativo de recurso no token de acesso OAuth 2.0. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

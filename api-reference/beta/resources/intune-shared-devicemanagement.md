@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagement
 description: 'O recurso de deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
-ms.openlocfilehash: 14303da517e26158d1432a67076e64424a40253c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036879"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823244"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -22,7 +23,7 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 - Gerenciamento de dispositivo
 - SIM eletrônico (ESIM)
 - Instalação da cerca
-- Notifications
+- Notificações
 - Detalhes, configurações e políticas de inclusão
 - Acesso remoto
 - Parceiros de assistência remota
@@ -51,7 +52,7 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo associado ao dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta Intune para dado locatário|
 |legacyPcManangementEnabled|Booliano|A propriedade habilitem Non-MDM gerenciados herdado gerenciamento de PC para essa conta. Esta propriedade é somente leitura.|
@@ -122,7 +123,7 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 |**Instalação da cerca**|
 |managementConditions|coleção [managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas ao gerenciamento de dispositivo da empresa.|
 |managementConditionStatements|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|As instruções de condição de gerenciamento associadas ao gerenciamento de dispositivo da empresa.|
-|**Notifications**|
+|**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
 |**Inclusão**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|As configurações de acesso condicional do Exchange no local. O acesso condicional no local exigirá que os dispositivos sejam registrados e estejam em conformidade para o acesso ao email|

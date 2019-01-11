@@ -1,12 +1,13 @@
 ---
 title: tipo de enum managedAppClipboardSharingLevel
 description: Representa o nível ao qual a área de transferência do dispositivo pode ser compartilhada entre aplicativos
-ms.openlocfilehash: 71c4ab2d629fdfee3ded68612d7060a0fa069809
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 363e80b2242f5ac4d481389633aaa72fcc27894a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808173"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>tipo de enum managedAppClipboardSharingLevel
 

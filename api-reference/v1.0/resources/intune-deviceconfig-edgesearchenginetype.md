@@ -2,12 +2,13 @@
 title: tipo de enum edgeSearchEngineType
 description: Permite que admind IT definir um mecanismo de pesquisa padrão predefinido para dispositivos controlados pelo MDM
 author: tfitzmac
-ms.openlocfilehash: 092ffd9e8ad1ae610bd3f9202f205a4ea348807a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29845e90418649b965d5b0ca1e5d9df211d4ae43
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346582"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804799"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>tipo de enum edgeSearchEngineType
 

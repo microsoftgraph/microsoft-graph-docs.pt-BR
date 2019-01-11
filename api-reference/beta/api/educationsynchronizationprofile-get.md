@@ -2,12 +2,13 @@
 title: Obtenha um educationSynchronizationProfile
 description: Recupere um perfil de sincronização de dados escola no locatário com base no identificador.
 author: mmast-msft
-ms.openlocfilehash: 6aa01f8c48bdaad58ae3a6a9c6ba719e91eb23a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25a791265719dc09c9297d30a6ff625ee093edc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823902"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Obtenha um educationSynchronizationProfile
 
@@ -15,7 +16,7 @@ ms.locfileid: "27360848"
 
 Recupere um de dados escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no locatário com base no identificador.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |

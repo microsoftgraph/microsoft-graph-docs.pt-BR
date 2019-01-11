@@ -2,12 +2,13 @@
 title: Atualizar tablecolumn
 description: Atualize as propriedades do objeto tablecolumn.
 author: lumine2008
-ms.openlocfilehash: 8b3d2872d574882b1d9fca24cee9e41e51ef3b23
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3e6bc61f66af286e348610c2463b6aad611f49c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306759"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806129"
 ---
 # <a name="update-tablecolumn"></a>Atualizar tablecolumn
 

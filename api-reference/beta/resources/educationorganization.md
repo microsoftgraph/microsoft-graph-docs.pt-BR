@@ -2,12 +2,13 @@
 title: tipo de recurso de educationOrganization
 description: 'Entidade abstrata usada para modelar o comum entre os tipos de organização diferentes dentro do setor de educação.  '
 author: mmast-msft
-ms.openlocfilehash: 54f281de29033418b6acb2f9821c5ebd1eaf4db0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9930a32e52e9380e26c6fa94095b3a7099beb70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822502"
 ---
 # <a name="educationorganization-resource-type"></a>tipo de recurso de educationOrganization
 
@@ -18,8 +19,8 @@ Entidade abstrata usada para modelar o comum entre os tipos de organização dif
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|String| Descrição da organização.|
-|displayName|String| Nome de exibição da organização.|
+|description|Cadeia de caracteres| Descrição da organização.|
+|displayName|Cadeia de caracteres| Nome de exibição da organização.|
 |externalSource|string| Fonte local a partir do qual esta organização foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relacionamentos

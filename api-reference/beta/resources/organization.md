@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
-ms.openlocfilehash: 2e9a9a32411164e270e2eb3a8830fa811ba5f9cb
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: a3912039a5cd51cbe0b170a866d1a2b35a57e924
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823139"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -41,7 +42,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | deletedDateTime                    | DateTimeOffset                                                    | Representa a data e hora de quando o locatário do Azure AD foi excluído, usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.                                                                                     |
 |dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
 |displayName|String|O nome de exibição do locatário.|
-|id|String|A ID do inquilino, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|id|Cadeia de caracteres|A ID do inquilino, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isMultipleDataLocationsForServicesEnabled|Booliano|**true** se a organização estiver habilitada; Multi-Geo **false** se a organização não estiver habilitado Multi-Geo; **Nulo** (padrão). Somente leitura. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Coleção de cadeias de caracteres| Não anulável.            |
 |objectType|String|Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |

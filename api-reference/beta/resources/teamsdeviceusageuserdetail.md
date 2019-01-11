@@ -2,12 +2,13 @@
 title: tipo de recurso de teamsDeviceUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 author: nkramer
-ms.openlocfilehash: 1947b66a59190945e5a6b823b47ef8df7d02683a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06e2cea1154c608b61642b07adbd96aae1710903
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328998"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807102"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>tipo de recurso de teamsDeviceUsageUserDetail
 
@@ -16,17 +17,17 @@ ms.locfileid: "27328998"
 | Propriedade          | Tipo    |
 | :---------------- | :------ |
 | reportRefreshDate | Data    |
-| userPrincipalName | String  |
+| userPrincipalName | Cadeia de caracteres  |
 | lastActivityDate  | Data    |
-| isDeleted         | Boolean |
+| isDeleted         | Booliano |
 | deletedDate       | Data    |
-| usedWeb           | Boolean |
-| usedWindowsPhone  | Boolean |
-| usediOS           | Boolean |
-| usedMac           | Boolean |
-| usedAndroidPhone  | Boolean |
-| usedWindows       | Boolean |
-| reportPeriod      | String  |
+| usedWeb           | Booliano |
+| usedWindowsPhone  | Booliano |
+| usediOS           | Booliano |
+| usedMac           | Booliano |
+| usedAndroidPhone  | Booliano |
+| usedWindows       | Booliano |
+| reportPeriod      | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 

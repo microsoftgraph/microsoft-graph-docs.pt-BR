@@ -1,25 +1,26 @@
 ---
 title: Obter dataPolicyOperation
 description: Recupere as propriedades do objeto dataPolicyOperation.
-ms.openlocfilehash: bee3261526914848eea423a30f8f59b0d072a791
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00ecde916a2b0632305c6e09437ce3138dc3344d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808978"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
 Recupere as propriedades do objeto dataPolicyOperation.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Application | User.Export.All e User.Read.All | 
+|Aplicativo | User.Export.All e User.Read.All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

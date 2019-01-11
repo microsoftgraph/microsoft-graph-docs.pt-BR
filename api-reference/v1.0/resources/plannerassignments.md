@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerAssignments
 description: 'O recurso de **plannerAssignments** representa atribuições de um recurso de plannerTask. Esse tipo é um tipo aberto. Nesse tipo de cada nome de propriedade '
-ms.openlocfilehash: 1cb080ff8d66c2319b77dd560f10422e1663a46d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 42d85a1787efbfa55196db36cbcdd09aae7d1a84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007239"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811904"
 ---
 # <a name="plannerassignments-resource-type"></a>Tipo de recurso plannerAssignments
 

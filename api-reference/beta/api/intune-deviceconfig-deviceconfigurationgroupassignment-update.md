@@ -2,12 +2,13 @@
 title: Atualizar deviceConfigurationGroupAssignment
 description: Atualize as propriedades de um objeto deviceConfigurationGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 7ea879c7d267337a247455235f069206b7b3b2a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4742cfb5fb61b94eda6b299927160d0e51f6ab98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313878"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822987"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Atualizar deviceConfigurationGroupAssignment
 
@@ -46,7 +47,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) .
@@ -55,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|targetGroupId|String|A identificação do grupo AAD pretendemos a configuração do dispositivo.|
-|excludeGroup|Boolean|Indica se este grupo devem ser excluídos. Padrões que o grupo deve ser incluído|
+|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|Cadeia de caracteres|A identificação do grupo AAD pretendemos a configuração do dispositivo.|
+|excludeGroup|Booliano|Indica se este grupo devem ser excluídos. Padrões que o grupo deve ser incluído|
 
 
 

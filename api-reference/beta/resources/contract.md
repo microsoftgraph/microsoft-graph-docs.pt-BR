@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso contact
 description: Representa uma parceria existente que o locatário parceiro tem com um locatário do cliente.
-ms.openlocfilehash: 7465a54c735b7c1e6f9d5ecb8bf79420b8de45c3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e502c72003c6d65305430bc1bf5a539d7235b5ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815320"
 ---
 # <a name="contract-resource-type"></a>Tipo de recurso contact
 

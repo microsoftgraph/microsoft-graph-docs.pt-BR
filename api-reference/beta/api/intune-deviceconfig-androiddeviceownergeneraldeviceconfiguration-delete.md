@@ -2,12 +2,13 @@
 title: Excluir androidDeviceOwnerGeneralDeviceConfiguration
 description: Exclui um androidDeviceOwnerGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a557c378f0956e7bb1e8babcb4048eaffa072afa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db7af88e47f17dad7829a7cb2872a5335b8df119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807592"
 ---
 # <a name="delete-androiddeviceownergeneraldeviceconfiguration"></a>Excluir androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

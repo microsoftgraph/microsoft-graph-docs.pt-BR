@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso meetingTimeSuggestionsResult
 description: Uma coleção de sugestões de reunião, se houver alguma, ou se não houver motivo.
-ms.openlocfilehash: 5504971618e6b8f6fdb82b203142e84c23c595f4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 85a0c3ade54204cb78957e81325869197f403c5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004452"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823692"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Tipo de recurso meetingTimeSuggestionsResult
 
@@ -44,7 +45,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|Um motivo para não retornando alguma sugestão de reunião. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, ou `unknown`. Essa propriedade será uma sequência vazia se a propriedade **meetingTimeSuggestions** incluir quaisquer sugestões de reunião.|
+|emptySuggestionsReason|Cadeia de caracteres|Um motivo para não retornando alguma sugestão de reunião. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, ou `unknown`. Essa propriedade será uma sequência vazia se a propriedade **meetingTimeSuggestions** incluir quaisquer sugestões de reunião.|
 |meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) collection|Uma matriz de sugestões de reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

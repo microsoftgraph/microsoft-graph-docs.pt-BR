@@ -2,12 +2,13 @@
 title: ação de syncWithAppleDeviceEnrollmentProgram
 description: Sincroniza entre Intune e o programa de inscrição do dispositivo Apple
 author: tfitzmac
-ms.openlocfilehash: 852a9ce3e7b9d349aee2e8b5d3baec732cd116f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6e13a9f245f7ca2a1ac197181fd82e6504e44f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308355"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812343"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>ação de syncWithAppleDeviceEnrollmentProgram
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/syncWithAp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

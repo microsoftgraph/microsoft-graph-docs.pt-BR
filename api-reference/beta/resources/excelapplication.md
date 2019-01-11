@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso de aplicativo
 description: Representa o aplicativo Excel que gerencia a pasta de trabalho.
-ms.openlocfilehash: 1772d69b55d03bf62d983a6dfb818dca651ebbd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8e2124910301818e753b1f90a3168da3a072862
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036369"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804435"
 ---
 # <a name="application-resource-type"></a>Tipo de recurso de aplicativo
 

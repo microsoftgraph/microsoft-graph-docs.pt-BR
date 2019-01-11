@@ -2,12 +2,13 @@
 title: 'usuário: getMailTips'
 description: Obter as Dicas de E-mail de um ou mais destinatários como disponíveis para o usuário conectado.
 author: dkershaw10
-ms.openlocfilehash: 198e45647ce51997a8d92da63a5f63f03d05a675
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49c1614a2e53563039d22b9c2823a7bb35379f3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332680"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808649"
 ---
 # <a name="user-getmailtips"></a>usuário: getMailTips
 
@@ -15,7 +16,7 @@ Obtenha dicas de email de um ou mais destinatários conforme disponível ao entr
 
 Observe que, tornando uma `POST` chamada para o `getMailTips` ação, você poderá solicitar tipos específicos de dicas de email a ser retornado por mais de um destinatário de uma só vez. As dicas de email solicitadas são retornadas em uma coleção de [dicas de email](../resources/mailtips.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -44,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |EmailAddresses|String collection|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
-|MailTipsOptions|String|Enumeração dos sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
+|MailTipsOptions|Cadeia de caracteres|Enumeração dos sinalizadores que representa as dicas de email solicitadas. Os valores possíveis são: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
 
 ## <a name="response"></a>Resposta
 

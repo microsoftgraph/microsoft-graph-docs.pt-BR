@@ -2,12 +2,13 @@
 title: Redefinir a sincronização de um educationSynchronizationProfile
 description: Redefina a sincronização de um perfil de sincronização de dados escola específico no inquilino.
 author: mmast-msft
-ms.openlocfilehash: 29d21318737ceba3bd380eaf20a9500a6a711857
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54352d29280d671aaddc152307d8669f64c11bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808537"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Redefinir a sincronização de um educationSynchronizationProfile
 
@@ -17,10 +18,10 @@ Redefina a sincronização de um de dados específicos escola [perfil de sincron
 
 > **Observação:** Essa operação fará com que a sincronização reiniciar. Quaisquer erros encontrados serão excluídos. Nenhum dado será excluído do Azure Active Directory (AD Azure). 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|

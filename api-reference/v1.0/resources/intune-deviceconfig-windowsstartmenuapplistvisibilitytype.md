@@ -2,12 +2,13 @@
 title: tipo de enum windowsStartMenuAppListVisibilityType
 description: Tipo de visibilidade de lista de aplicativos de menu Iniciar.
 author: tfitzmac
-ms.openlocfilehash: f63a9b0620fb08f9710575130ece1e3d02f6cf88
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0ed7c264cb8e3a107d24e3cc4b59340aa789f39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330601"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811834"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>tipo de enum windowsStartMenuAppListVisibilityType
 

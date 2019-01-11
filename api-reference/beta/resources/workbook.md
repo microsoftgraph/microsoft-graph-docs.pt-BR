@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso de pasta de trabalho
 description: A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
-ms.openlocfilehash: 398ba5f4cea3fd6094c18b02cc1db277a6c43433
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9479c6888dc27fd595db2313ab6a88617410530f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806794"
 ---
 # <a name="workbook-resource-type"></a>Tipo de recurso de pasta de trabalho
 

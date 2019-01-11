@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de privilegedRoleAssignment
 description: 'Representa uma atribuição de função privilegiado para um usuário específico. '
-ms.openlocfilehash: 40cfe6487184171fc0d120f9a0e2cd98070f96f0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec6bc34ecd56839c764592ff298475e8648f300b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823314"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>tipo de recurso de privilegedRoleAssignment
 

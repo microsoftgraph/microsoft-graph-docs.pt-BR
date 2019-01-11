@@ -2,12 +2,13 @@
 title: Excluir windowsDefenderAdvancedThreatProtectionConfiguration
 description: Exclui windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 159bb833905500d7a07f9eb0a63c135dfc99df3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdc21e468413d5b8c818ee32bdd873b7f30ed483
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804524"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>Excluir windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

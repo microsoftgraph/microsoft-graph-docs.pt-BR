@@ -2,12 +2,13 @@
 title: Função getAuditActivityTypes
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 05d2674f8049c107f3595bcd8f234f3dd01cfb2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0a8087b1a1bb61fcbd414da7d1f72bb33caccf9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350747"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823096"
 ---
 # <a name="getauditactivitytypes-function"></a>Função getAuditActivityTypes
 
@@ -38,7 +39,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.

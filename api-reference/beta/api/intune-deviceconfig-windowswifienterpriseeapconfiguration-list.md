@@ -2,12 +2,13 @@
 title: Lista windowsWifiEnterpriseEAPConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsWifiEnterpriseEAPConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9f9755f9cdb58c9fe46dc38d398359542765dd94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39991c4a7b0f8238f898f17602e59534f042de0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806864"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>Lista windowsWifiEnterpriseEAPConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

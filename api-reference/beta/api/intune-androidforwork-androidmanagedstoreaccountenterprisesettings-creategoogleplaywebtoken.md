@@ -2,12 +2,13 @@
 title: ação de createGooglePlayWebToken
 description: Gera um token de web que é usado em um componente incorporável.
 author: tfitzmac
-ms.openlocfilehash: 206113b445d8b190e02b292dd661bc3c207de288
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4eaf622d10eb631b45694e23313443b444068e7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338539"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808957"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>ação de createGooglePlayWebToken
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/createGoogle
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -47,7 +48,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|parentUri|String|O caminho de https da página que hospeda o componente.|
+|parentUri|Cadeia de caracteres|O caminho de https da página que hospeda o componente.|
 
 
 

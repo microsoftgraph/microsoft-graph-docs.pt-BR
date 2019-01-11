@@ -2,12 +2,13 @@
 title: Como clonar uma equipe
 description: Crie uma cópia de uma equipe. Esta operação também cria uma cópia do grupo correspondente.
 author: nkramer
-ms.openlocfilehash: 21671ccbe440a57f6d745f9587c09b4432e25c35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9239e58f28e4214ee82acad3d2c893f52fafefde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805751"
 ---
 # <a name="clone-a-team"></a>Como clonar uma equipe
 
@@ -27,7 +28,7 @@ Quando as guias são clonados, eles são colocados em um estado não configurado
 A clonagem é uma operação de execução longa.
 Depois que o clone POST retorna, você precisará fazer a [operação](../resources/teamsasyncoperation.md) para verificar se ele está "em execução" ou "sucedidas" ou "Falha". Você deve continuar GET até que o status não é "executando". O atraso recomendado entre obtém é 5 segundos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -56,7 +57,7 @@ POST /teams/{id}/clone
 |classificação|Cadeia de caracteres (opcional)|Descreve uma classificação para o grupo (por exemplo, o impacto comercial baixa, média ou alta). Se a classificação não for especificada, a classificação será copiada do team/grupo original.|
 |description|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, ele será deixado em branco.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|mailNickname|String|O alias de email para o grupo, exclusivo na organização. Esta propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, ele será calculado de displayName. Problema conhecido: esta propriedade é ignorada no momento.|
+|mailNickname|Cadeia de caracteres|O alias de email para o grupo, exclusivo na organização. Esta propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, ele será calculado de displayName. Problema conhecido: esta propriedade é ignorada no momento.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Uma lista separada por vírgulas das partes a ser clonada. Partes legais são "apps, guias, configurações, canais, membros".|
 |visibilidade|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica a visibilidade do grupo. Os valores possíveis são: **particular**e **público**. Se a visibilidade não for especificada, será copiada a visibilidade do team/grupo original. Se a equipe que está sendo clonado é uma equipe **educationClass** , o parâmetro visibilidade será ignorado e visibilidade do novo grupo será definida como HiddenMembership.|
 

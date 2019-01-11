@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de plannerRecentPlanReference
 description: 'O recurso de **plannerRecentPlanReference** digite representa uma referência a um plannerPlan que recentemente foi exibido por um usuário. '
-ms.openlocfilehash: ac774ffbf7ebdfe45211cf50c2ce065921de30f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ac17cd0a99d384cbc1f42e2e0d243c582204101
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033862"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805674"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>tipo de recurso de plannerRecentPlanReference
 
@@ -20,7 +21,7 @@ Aplicativos Lembre-se de que as entradas de **plannerRecentPlanReference** podem
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |lastAccessedDateTime|DateTimeOffset|A data e hora que o plano foi visualizado por último pelo usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|planTitle|String|O título do plano no momento em que o usuário exibidos-lo.|
+|planTitle|Cadeia de caracteres|O título do plano no momento em que o usuário exibidos-lo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

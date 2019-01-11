@@ -2,12 +2,13 @@
 title: Excluir o guia de canal
 description: 'Remove (unpin) uma guia de canal especificado dentro de uma equipe. '
 author: nkramer
-ms.openlocfilehash: eef80488fe1a14d8c7021dd25625aac0716665de
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2373dd8a27a747fef031631deafc4d771e9cbf29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320759"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811638"
 ---
 # <a name="delete-tab-from-channel"></a>Excluir o guia de canal
 
@@ -15,7 +16,7 @@ ms.locfileid: "27320759"
 
 Remove (unpin) uma guia de [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

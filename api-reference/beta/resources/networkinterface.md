@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso networkInterface
 description: Representa uma placa de Interface de rede (NIC) associado a este host.
-ms.openlocfilehash: 7044b4f469e74424b0dc27ffa38c5feb081faa45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92ea26b76de8fa6ffbcdcf0bc64b85a08d0f51af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033843"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823300"
 ---
 # <a name="networkinterface-resource-type"></a>tipo de recurso networkInterface
 
@@ -16,11 +17,11 @@ Representa uma placa de Interface de rede (NIC) associado a este host.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|String|Descrição do NIC (adaptador de Ethernet por exemplo, Conexão de área Local de adaptador de LAN sem fio * <> #, etc.).|
-|ipV4Address|String|Último endereço IPv4 associado a este NIC.|
-|ipV6Address|String|Última (também conhecido como global) endereço IPv6 público associado a este NIC.|
-|localIpV6Address|String|Últimos local endereço IPv6 (conexão local ou de site local) associado a este NIC.|
-|macAddress|String|Endereço MAC da NIC nesse host.|
+|description|Cadeia de caracteres|Descrição do NIC (adaptador de Ethernet por exemplo, Conexão de área Local de adaptador de LAN sem fio * <> #, etc.).|
+|ipV4Address|Cadeia de caracteres|Último endereço IPv4 associado a este NIC.|
+|ipV6Address|Cadeia de caracteres|Última (também conhecido como global) endereço IPv6 público associado a este NIC.|
+|localIpV6Address|Cadeia de caracteres|Últimos local endereço IPv6 (conexão local ou de site local) associado a este NIC.|
+|macAddress|Cadeia de caracteres|Endereço MAC da NIC nesse host.|
 
 ## <a name="json-representation"></a>Representação JSON
 

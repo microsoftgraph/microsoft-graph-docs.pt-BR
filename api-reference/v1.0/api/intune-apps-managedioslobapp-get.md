@@ -2,12 +2,13 @@
 title: Acessar managedIOSLobApp
 description: Leia as propriedades e as relações do objeto managedIOSLobApp.
 author: tfitzmac
-ms.openlocfilehash: 1cbd197c3ba7115a2a8ab443c88eb8fa27630b8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ca54af8933542d30d9a9ceea6cf561dacd8c90d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808215"
 ---
 # <a name="get-managedioslobapp"></a>Acessar managedIOSLobApp
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

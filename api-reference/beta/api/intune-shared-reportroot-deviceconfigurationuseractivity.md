@@ -2,12 +2,13 @@
 title: Função deviceConfigurationUserActivity
 description: Metadados para o relatório de atividades do usuário de configuração do dispositivo
 author: tfitzmac
-ms.openlocfilehash: 3cf73f5b8df21d7675ceeeed1b11bd1705e19c1c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b403fa45e228d1393127943dcbf9011b91ab18f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806360"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Função deviceConfigurationUserActivity
 
@@ -39,7 +40,7 @@ GET /reports/deviceConfigurationUserActivity
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

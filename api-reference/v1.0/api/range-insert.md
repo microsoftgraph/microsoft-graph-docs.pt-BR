@@ -1,12 +1,13 @@
 ---
 title: 'Range: insert'
 description: Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.
-ms.openlocfilehash: 242db28474965493ceb8a584e8d9fb01679f13d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78cd2d4018a96428b7e5336d00ca20bada4abd36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804869"
 ---
 # <a name="range-insert"></a>Range: insert
 
