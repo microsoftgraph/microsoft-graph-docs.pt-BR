@@ -2,48 +2,49 @@
 title: Listar usuários
 description: Recupera uma lista de objetos de usuário. Esses objetos de usuário incluirão propriedades específicas de educação.
 author: mmast-msft
-ms.openlocfilehash: dd7d086b4471b2938cb5480f9d351a46a27e1f06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 757193b03758d1caab081718c3d565c65747f19d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338497"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838112"
 ---
-# <a name="list-users"></a><span data-ttu-id="82f39-104">Listar usuários</span><span class="sxs-lookup"><span data-stu-id="82f39-104">List users</span></span>
+# <a name="list-users"></a><span data-ttu-id="4d96e-104">Listar usuários</span><span class="sxs-lookup"><span data-stu-id="4d96e-104">List users</span></span>
 
-> <span data-ttu-id="82f39-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="82f39-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="82f39-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="82f39-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="4d96e-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="4d96e-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4d96e-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="4d96e-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="82f39-107">Recupera uma lista de objetos de usuário.</span><span class="sxs-lookup"><span data-stu-id="82f39-107">Retrieve a list of user objects.</span></span> <span data-ttu-id="82f39-108">Esses objetos de usuário incluirão propriedades específicas de educação.</span><span class="sxs-lookup"><span data-stu-id="82f39-108">These user objects will include education-specific properties.</span></span>
+<span data-ttu-id="4d96e-107">Recupera uma lista de objetos de usuário.</span><span class="sxs-lookup"><span data-stu-id="4d96e-107">Retrieve a list of user objects.</span></span> <span data-ttu-id="4d96e-108">Esses objetos de usuário incluirão propriedades específicas de educação.</span><span class="sxs-lookup"><span data-stu-id="4d96e-108">These user objects will include education-specific properties.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="82f39-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="82f39-109">Permissions</span></span>
-<span data-ttu-id="82f39-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82f39-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d96e-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="4d96e-109">Permissions</span></span>
+<span data-ttu-id="4d96e-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4d96e-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="82f39-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="82f39-112">Permission type</span></span>      | <span data-ttu-id="82f39-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="82f39-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4d96e-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4d96e-112">Permission type</span></span>      | <span data-ttu-id="4d96e-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4d96e-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="82f39-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="82f39-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="82f39-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="82f39-115">Not supported.</span></span>  |
-|<span data-ttu-id="82f39-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="82f39-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="82f39-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="82f39-117">Not supported.</span></span>  |
-|<span data-ttu-id="82f39-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="82f39-118">Application</span></span> | <span data-ttu-id="82f39-119">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="82f39-119">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="4d96e-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4d96e-114">Delegated (work or school account)</span></span> |  <span data-ttu-id="4d96e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4d96e-115">Not supported.</span></span>  |
+|<span data-ttu-id="4d96e-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4d96e-116">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="4d96e-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4d96e-117">Not supported.</span></span>  |
+|<span data-ttu-id="4d96e-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4d96e-118">Application</span></span> | <span data-ttu-id="4d96e-119">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d96e-119">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="82f39-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="82f39-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d96e-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4d96e-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/users
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="82f39-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="82f39-121">Optional query parameters</span></span>
-<span data-ttu-id="82f39-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="82f39-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="4d96e-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4d96e-121">Optional query parameters</span></span>
+<span data-ttu-id="4d96e-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="4d96e-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="82f39-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="82f39-123">Request headers</span></span>
-| <span data-ttu-id="82f39-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="82f39-124">Header</span></span>       | <span data-ttu-id="82f39-125">Valor</span><span class="sxs-lookup"><span data-stu-id="82f39-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="4d96e-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4d96e-123">Request headers</span></span>
+| <span data-ttu-id="4d96e-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4d96e-124">Header</span></span>       | <span data-ttu-id="4d96e-125">Valor</span><span class="sxs-lookup"><span data-stu-id="4d96e-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="82f39-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="82f39-126">Authorization</span></span>  | <span data-ttu-id="82f39-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="82f39-p105">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="4d96e-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="4d96e-126">Authorization</span></span>  | <span data-ttu-id="4d96e-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4d96e-p105">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="82f39-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="82f39-129">Request body</span></span>
-<span data-ttu-id="82f39-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="82f39-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="82f39-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="82f39-131">Response</span></span>
-<span data-ttu-id="82f39-132">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [educationUser](../resources/educationuser.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="82f39-132">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="82f39-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="82f39-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="82f39-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="82f39-134">Request</span></span>
-<span data-ttu-id="82f39-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="82f39-135">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4d96e-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4d96e-129">Request body</span></span>
+<span data-ttu-id="4d96e-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4d96e-130">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="4d96e-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d96e-131">Response</span></span>
+<span data-ttu-id="4d96e-132">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [educationUser](../resources/educationuser.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4d96e-132">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4d96e-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4d96e-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4d96e-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4d96e-134">Request</span></span>
+<span data-ttu-id="4d96e-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="4d96e-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_users"
@@ -51,10 +52,10 @@ GET /education/users
 ```http
 GET https://graph.microsoft.com/beta/education/users
 ```
-##### <a name="response"></a><span data-ttu-id="82f39-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="82f39-136">Response</span></span>
-<span data-ttu-id="82f39-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="82f39-137">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="4d96e-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d96e-136">Response</span></span>
+<span data-ttu-id="4d96e-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="4d96e-137">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="82f39-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="82f39-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="4d96e-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4d96e-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
