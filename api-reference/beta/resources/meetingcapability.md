@@ -2,12 +2,13 @@
 title: tipo de recurso de meetingCapability
 description: Contém os recursos de uma reunião
 author: VinodRavichandran
-ms.openlocfilehash: 1a6f172922c0efbc9ad93e32141e364e2d0fc711
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825806"
 ---
 # <a name="meetingcapability-resource-type"></a>tipo de recurso de meetingCapability
 
@@ -17,7 +18,7 @@ Contém os recursos de uma reunião
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	                          | Tipo    | Descrição                                                        |
+| Propriedade                          | Tipo    | Descrição                                                        |
 |:----------------------------------|:--------|:-------------------------------------------------------------------|
 | allowAnonymousUsersToDialOut      | Booliano | Indica se os usuários anônimos discagem é permitida em uma reunião. |
 | allowAnonymousUsersToStartMeeting | Booliano | Indica se os usuários anônimos poderão iniciar uma reunião.  |

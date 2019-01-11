@@ -2,12 +2,13 @@
 title: Listar managedDevices
 description: Listar propriedades e relações dos objetos managedDevice.
 author: tfitzmac
-ms.openlocfilehash: 1c0d44aa3589af1b0a2a82dfe9c1b9300361a34b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f870ad57cd959acfff7ab02cb0e29e904fcb076
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830699"
 ---
 # <a name="list-manageddevices"></a>Listar managedDevices
 
@@ -38,7 +39,7 @@ GET /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

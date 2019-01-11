@@ -2,12 +2,13 @@
 title: tipo de enum mobileThreatPartnerTenantState
 description: Estado de parceiro deste locatário.
 author: tfitzmac
-ms.openlocfilehash: bfb861ef21efed9632d22f58cf35d239f592d27f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d93ca54d32a5e34132442f206a269430b5ab3ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846190"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enum mobileThreatPartnerTenantState
 

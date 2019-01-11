@@ -2,12 +2,13 @@
 title: Tipo de recurso windows10NetworkProxyServer
 description: Política de Servidor Proxy de Rede.
 author: tfitzmac
-ms.openlocfilehash: f0f56da348203c2b30a6d49e40e5148f4e7d818b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7efe08c565aaeab109339c43e80225b6946299c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876255"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Tipo de recurso windows10NetworkProxyServer
 

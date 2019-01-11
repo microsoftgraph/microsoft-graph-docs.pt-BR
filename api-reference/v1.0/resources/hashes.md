@@ -2,12 +2,13 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-ms.openlocfilehash: 92882910ecf86d19e1f0a8a5767d148f5aa95775
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3ed0023e80457598bd80b068156b60a5ace4984b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006868"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830482"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 

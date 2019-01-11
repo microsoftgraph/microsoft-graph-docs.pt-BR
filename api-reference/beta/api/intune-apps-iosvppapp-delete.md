@@ -2,12 +2,13 @@
 title: Excluir iosVppApp
 description: Exclui iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: 1ada3e59b302f763cc63c5cdc9a11bda86bcac56
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da40be70f4f6ead60e98c260f23a41cb32a722d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869646"
 ---
 # <a name="delete-iosvppapp"></a>Excluir iosVppApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

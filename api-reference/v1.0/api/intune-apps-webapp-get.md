@@ -2,12 +2,13 @@
 title: Acessar webApp
 description: Leia as propriedades e as relações do objeto webApp.
 author: tfitzmac
-ms.openlocfilehash: faf9c956d26fb9732c75da94f36b616fd2c2b112
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 11a016c2a956618f4a6d52f7388c5e83fa16914d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877690"
 ---
 # <a name="get-webapp"></a>Acessar webApp
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

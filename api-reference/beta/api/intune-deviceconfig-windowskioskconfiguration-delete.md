@@ -2,12 +2,13 @@
 title: Excluir windowsKioskConfiguration
 description: Exclui um windowsKioskConfiguration.
 author: tfitzmac
-ms.openlocfilehash: deebe593b86b4d57518bec8724a8db42a9d7830e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 62f38ddcc0a220b31cdcbeca02e1d0bd03339237
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302447"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847114"
 ---
 # <a name="delete-windowskioskconfiguration"></a>Excluir windowsKioskConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: tipo de enum configurationUsage
 description: Valores possíveis da lista ConfigurationUsage.
 author: tfitzmac
-ms.openlocfilehash: 7ecfbb77404e3f50c484680c7e3868ae3da3c228
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2bbbd0b88ff4c81c141a687b106ac1795f75b6b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808313"
 ---
 # <a name="configurationusage-enum-type"></a>tipo de enum configurationUsage
 

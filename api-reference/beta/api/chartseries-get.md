@@ -2,12 +2,13 @@
 title: Obter ChartSeries
 description: Recupera as propriedades e os relacionamentos do objeto chartseries.
 author: lumine2008
-ms.openlocfilehash: a45365cc863efc1810f37f01623180af152272f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 980e95bc02ce9ff5d71fd5c84c234b93e42e4349
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316503"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866861"
 ---
 # <a name="get-chartseries"></a>Obter ChartSeries
 

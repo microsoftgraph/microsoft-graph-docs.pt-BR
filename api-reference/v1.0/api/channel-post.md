@@ -1,12 +1,13 @@
 ---
 title: Criar canal
 description: Crie um novo canal em um Microsoft Team, conforme especificado no corpo da solicitação.
-ms.openlocfilehash: 9fb327e947585732e9a17151d4cc06e8d50c4bf1
-ms.sourcegitcommit: 72d4da2a6bfaf99fa4edaf6ce3b97b1a6d96d874
+localization_priority: Priority
+ms.openlocfilehash: d80659a3ecb69a33a9ea3a23a9ce94f13d6b95a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "27222579"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847590"
 ---
 # <a name="create-channel"></a>Criar canal
 

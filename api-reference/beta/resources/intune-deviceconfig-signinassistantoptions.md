@@ -2,12 +2,13 @@
 title: tipo de enum signInAssistantOptions
 description: Valores para o SignInAssistantSettings.
 author: tfitzmac
-ms.openlocfilehash: 97bcb162168964283e2e741f33980a7cf2904e7f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f80b67a40d0b551386b9f03273efb26e294d3520
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302118"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825393"
 ---
 # <a name="signinassistantoptions-enum-type"></a>tipo de enum signInAssistantOptions
 

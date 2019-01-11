@@ -2,12 +2,13 @@
 title: Excluir macOSOfficeSuiteApp
 description: Exclui macOSOfficeSuiteApp.
 author: tfitzmac
-ms.openlocfilehash: 0fa046de1db8fd3a8710a4fc93d29a01149e7397
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f3e846fa2b0f37cd5fce85c0ea94acc847b3d39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828977"
 ---
 # <a name="delete-macosofficesuiteapp"></a>Excluir macOSOfficeSuiteApp
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

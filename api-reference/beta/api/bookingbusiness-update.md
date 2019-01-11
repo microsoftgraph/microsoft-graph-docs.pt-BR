@@ -1,12 +1,13 @@
 ---
 title: Atualizar bookingbusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: c0d92e0ddf792e28cb488cf466a1462272086c8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824994"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 
@@ -39,13 +40,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|O endereço da empresa.|
 |businessHours|coleção [bookingWorkHours](../resources/bookingworkhours.md)|Os horários de operação para a empresa.|
-|businessType|String|O tipo de negócio.|
-|defaultCurrencyIso|String|O código para a moeda que a empresa opera em Microsoft Bookings.|
-|displayName|String|Um nome para a empresa que interage com os clientes.|
-|email|String|O endereço de email para a empresa.|
+|businessType|Cadeia de caracteres|O tipo de negócio.|
+|defaultCurrencyIso|Cadeia de caracteres|O código para a moeda que a empresa opera em Microsoft Bookings.|
+|displayName|Cadeia de caracteres|Um nome para a empresa que interage com os clientes.|
+|email|Cadeia de caracteres|O endereço de email para a empresa.|
 |phone|Cadeia de caracteres|O número de telefone para a empresa.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica como reservas podem ser criadas para esta empresa.|
-|webSiteUrl|String|A URL do site da web de negócios.|
+|webSiteUrl|Cadeia de caracteres|A URL do site da web de negócios.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.

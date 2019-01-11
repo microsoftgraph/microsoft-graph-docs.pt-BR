@@ -2,12 +2,13 @@
 title: Excluir mobileAppProvisioningConfigGroupAssignment
 description: Exclui um mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: afe133c5f2500878a3fa632fe13b1f065e84d8ea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5d0d316ab620050c1ba096289aaed372c8e70e02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869654"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Excluir mobileAppProvisioningConfigGroupAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

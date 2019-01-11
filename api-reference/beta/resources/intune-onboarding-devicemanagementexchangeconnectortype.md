@@ -2,12 +2,13 @@
 title: tipo de enum deviceManagementExchangeConnectorType
 description: O tipo de conector do Exchange.
 author: tfitzmac
-ms.openlocfilehash: 31459d4053e2ba1ef22a516995796baef2407dbf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49e61dc3a2a6ba7eee80891846cd2f58c2a22485
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876101"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>tipo de enum deviceManagementExchangeConnectorType
 

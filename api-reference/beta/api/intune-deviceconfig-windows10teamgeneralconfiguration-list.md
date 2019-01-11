@@ -2,12 +2,13 @@
 title: Listar windows10TeamGeneralConfigurations
 description: Lista propriedades e relações dos objetos windows10TeamGeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8776e14c41930ce84ee765e4a92fb467fdd01cfc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd0bb5e96bfe216d67865f4c55cdf1bba095a2e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847877"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>Listar windows10TeamGeneralConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

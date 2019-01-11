@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de oneDriveUsageAccountCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 959d6602cec98f7351ec3d9819fb9a59599d3e6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 021d0089969a6272996f604630b900af61a7a5a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868191"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>tipo de recurso de oneDriveUsageAccountCounts
 
@@ -15,11 +16,11 @@ ms.locfileid: "27037007"
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
-| siteType          | String |
+| siteType          | Cadeia de caracteres |
 | total             | Int64  |
 | ativo            | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

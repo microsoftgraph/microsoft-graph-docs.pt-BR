@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de grupo
 description: Representa um grupo do Windows Azure Active Directory (AD Azure), que pode ser um grupo do Office 365, uma equipe no Microsoft Teams, um grupo dinâmico ou um grupo de segurança.
-ms.openlocfilehash: d48448991b75946f9ac60a037fee3b083601954a
-ms.sourcegitcommit: 5747eb595bf0c7c391b2a5219c3ae9b6a48df26b
+localization_priority: Priority
+ms.openlocfilehash: 928eb9887665b117535bcf4fa13cf6a95b8ff283
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "27265231"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866889"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -87,7 +88,7 @@ Esse recurso permite:
 |[Listar plannerPlans](../api/plannergroup-list-plans.md) |Coleção [plannerPlan](plannerplan.md)| Obter os planos de planejador pertencentes ao grupo.|
 |**Configurações do usuário**| | |
 |[addFavorite](../api/group-addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.|
-|[removeFavorite](../api/group-removefavorite.md)|None|Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.|
+|[removeFavorite](../api/group-removefavorite.md)|Nenhum|Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.|
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação **memberOf**.|
 |[Listar joinedTeams](../api/user-list-joinedteams.md) |Coleção [group](group.md)| Obtenha o Microsoft Teams que o usuário é um membro direto.|
 |[subscribeByMail](../api/group-subscribebymail.md)|Nenhum|Defina a propriedade isSubscribedByMail como **true**. Permitir que o usuário atual receber as conversas de email. Suporte para Office 365 apenas para grupos.|
@@ -107,22 +108,22 @@ Esse recurso permite:
 |groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo para criar. Os valores possíveis são `Unified` para criar um grupo do Office 365, ou `DynamicMembership` para grupos dinâmicos.  Para todos os outro grupo tipos, como grupos de segurança e grupos de segurança habilitado para email, não defina essa propriedade.|
 |id|String|O identificador exclusivo do grupo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isSubscribedByMail|Booliano|O valor padrão é **true**. Indica se o usuário atual está inscrito para receber conversas de email.|
-|licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress`, e `ProcessingComplete`.|
+|licenseProcessingState|Cadeia de caracteres|Indica o status da atribuição de licença de grupo para todos os membros do grupo. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress`, e `ProcessingComplete`.|
 |Email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". Somente leitura. Oferece suporte a $filter.|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
 |mailNickname|Cadeia de caracteres|O alias de email do grupo que é exclusivo na organização. Essa propriedade deverá ser especificada quando um grupo for criado. Oferece suporte a $filter.|
-|membershipRule|String|A regra que determina os membros desse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para obter mais informações sobre a sintaxe da regra de associação, consulte [sintaxe de regras de participação](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
-|membershipRuleProcessingState|String|Indica se o processamento de associação dinâmica está no ou pausado. Os valores possíveis são "Ligado" ou "Pausado"|
+|membershipRule|Cadeia de caracteres|A regra que determina os membros desse grupo se o grupo for um grupo dinâmico (groupTypes contém `DynamicMembership`). Para obter mais informações sobre a sintaxe da regra de associação, consulte [sintaxe de regras de participação](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
+|membershipRuleProcessingState|Cadeia de caracteres|Indica se o processamento de associação dinâmica está no ou pausado. Os valores possíveis são "Ligado" ou "Pausado"|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local. O tipo de carimbo de hora representa as informações de data e hora usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Oferece suporte a $filter.|
 |onPremisesProvisioningErrors|coleção [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. Somente leitura. |
 |onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. Oferece suporte a $filter.|
-|preferredDataLocation|String|O local de dados preferida para o grupo. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredDataLocation|Cadeia de caracteres|O local de dados preferida para o grupo. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|O idioma preferencial para um grupo do Office 365. Deve seguir o código ISO 639-1; Por exemplo, "en-US".|
 |proxyAddresses|Coleção de cadeias de caracteres| Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` o operador **any** é necessário para expressões de filtro propriedades de valores múltiplos. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/grouplifecyclepolicy-renewgroup.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |securityEnabled|Booliano|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
-|tema|String|Especifica o tema de cor de um grupo Office 365. Os valores possíveis são `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` ou `Red`.|
+|tema|Cadeia de caracteres|Especifica o tema de cor de um grupo Office 365. Os valores possíveis são `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` ou `Red`.|
 |unseenConversationsCount|Int32|Contagem de conversas que foram entregues uma ou mais novas postagens desde a última visita do usuário conectado ao grupo. Essa propriedade é o mesmo **unseenCount**.|
 |unseenCount|Int32|Contagem de conversas que foram entregues uma ou mais novas postagens desde a última visita do usuário conectado ao grupo. Essa propriedade é o mesmo **unseenConversationsCount**.|
 |unseenMessagesCount|Int32|Contagem de novas postagens que foram entregues a conversas do grupo desde a última visita do usuário conectado ao grupo.|

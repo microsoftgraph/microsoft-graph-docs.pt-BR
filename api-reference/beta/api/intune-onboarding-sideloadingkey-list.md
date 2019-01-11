@@ -2,12 +2,13 @@
 title: Lista sideLoadingKeies
 description: Lista as propriedades e os relacionamentos dos objetos sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: d18a9dbffea23408f7ba32c89620bcf340fe47e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f0aef5a2762d2b1681ef39d9394d753164355d34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311120"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829404"
 ---
 # <a name="list-sideloadingkeies"></a>Lista sideLoadingKeies
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/sideLoadingKeys
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

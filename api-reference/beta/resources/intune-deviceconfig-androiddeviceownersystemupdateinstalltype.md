@@ -2,12 +2,13 @@
 title: tipo de enum androidDeviceOwnerSystemUpdateInstallType
 description: Atualizar tipos de sistema para o proprietário de dispositivo Android.
 author: tfitzmac
-ms.openlocfilehash: e2dc66851e0fa98d52a3fec30385e0fd27e6f6ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6fea4de641ebefe2b731135f4b1b95b6e1607d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323195"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869367"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>tipo de enum androidDeviceOwnerSystemUpdateInstallType
 

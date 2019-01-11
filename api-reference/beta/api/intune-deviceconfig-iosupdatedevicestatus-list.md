@@ -2,12 +2,13 @@
 title: Listar iosUpdateDeviceStatuses
 description: Listar propriedades e relações dos objetos iosUpdateDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 3069a34a9170180a5de543e11280ea0d8920656c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c022549b138292544936b25c3ae9dc450e7c68ef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847947"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Listar iosUpdateDeviceStatuses
 
@@ -38,7 +39,7 @@ GET /deviceManagement/iosUpdateStatuses
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Lista mobileAppTroubleshootingEvents
 description: Lista as propriedades e os relacionamentos dos objetos mobileAppTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: cee6872731977fedddced00f3bad678d3b3e42da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4185a9ae976bf944c90bb8687d8b8d56c085d9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851881"
 ---
 # <a name="list-mobileapptroubleshootingevents"></a>Lista mobileAppTroubleshootingEvents
 
@@ -38,7 +39,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

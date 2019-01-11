@@ -2,12 +2,13 @@
 title: Excluir windows10TeamGeneralConfiguration
 description: Excluir um windows10TeamGeneralConfiguration
 author: tfitzmac
-ms.openlocfilehash: b4badd2b6a4718519a40bbce06fee138fad80e08
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a979d4c1e39f520a0e232bcc447abb4cd3b09e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873427"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>Excluir windows10TeamGeneralConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

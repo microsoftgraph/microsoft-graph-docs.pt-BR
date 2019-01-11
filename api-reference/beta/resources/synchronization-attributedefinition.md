@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de attributeDefinition
 description: Descreve um atributo de um objeto.
-ms.openlocfilehash: 2199f8dbe5c528cf3b1b73f007fdae3451833815
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63b7f67808ab6695b30f5464d72aed2814e46c5a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040005"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829677"
 ---
 # <a name="attributedefinition-resource-type"></a>tipo de recurso de attributeDefinition
 
@@ -22,11 +23,11 @@ Descreve um atributo de um objeto.
 |caseExact      |Booliano    |`true`Se o valor desse atributo deve ser tratado como diferencia maiusculas de minúsculas. Essa configuração afeta como o mecanismo de sincronização detecta alterações para o atributo.|
 |metadados       |[metadataEntry](../resources/synchronization-metadataentry.md)    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
 |vários valores    |Booliano    |`true`Se um atributo pode ter vários valores. O padrão é `false`.|
-|Mutabilidade     |String     |Mutabilidade de um atributo. Os valores possíveis são: `ReadWrite`, `ReadOnly`, `Immutable`, `WriteOnly`. O padrão é `ReadWrite`.|
-|name           |String     |Nome do atributo. Deve ser exclusivo dentro da definição do objeto. Não anulável.|
+|Mutabilidade     |Cadeia de caracteres     |Mutabilidade de um atributo. Os valores possíveis são: `ReadWrite`, `ReadOnly`, `Immutable`, `WriteOnly`. O padrão é `ReadWrite`.|
+|name           |Cadeia de caracteres     |Nome do atributo. Deve ser exclusivo dentro da definição do objeto. Não anulável.|
 |obrigatório       |Booliano    |`true`Se o atributo é necessário. Objeto não pode ser criado se qualquer um dos atributos necessários estão ausentes. Se durante a sincronização, o atributo required não tiver nenhum valor, o valor padrão será usado. Se o valor do padrão não foi definido, a sincronização irá registrar um erro.|
 |referencedObjects|[referencedObject](../resources/synchronization-referencedobject.md) |Para atributos com `reference` digitar, listas de objetos referenciados (por exemplo, o `manager` atributo seria listar `User` como o objeto referenciado).|
-|type           |String     |Tipo de valor do atributo. Os valores possíveis são: `String`, `Integer`, `Reference`, `Binary`, `Boolean`. O padrão é `String`.|
+|type           |Cadeia de caracteres     |Tipo de valor do atributo. Os valores possíveis são: `String`, `Integer`, `Reference`, `Binary`, `Boolean`. O padrão é `String`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

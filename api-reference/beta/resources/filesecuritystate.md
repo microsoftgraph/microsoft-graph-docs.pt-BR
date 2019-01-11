@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de fileSecurityState
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: cbf535dd6b30387afbe361389fa6bcfca1fc68fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d18021591b24d26577e41897111b90310746d18
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040335"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869500"
 ---
 # <a name="filesecuritystate-resource-type"></a>tipo de recurso de fileSecurityState
 
@@ -19,9 +20,9 @@ Contém informações sobre o arquivo (não process) relacionada ao alerta.
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográficos e confidenciais local).|
-|name|String|Nome de arquivo (sem o caminho).|
-|caminho|String|Caminho do arquivo completo do arquivo/imageFile.|
-|riskScore|String|Provedor gerado/calculado o risco de pontuação do arquivo de alerta. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
+|name|Cadeia de caracteres|Nome de arquivo (sem o caminho).|
+|caminho|Cadeia de caracteres|Caminho do arquivo completo do arquivo/imageFile.|
+|riskScore|Cadeia de caracteres|Provedor gerado/calculado o risco de pontuação do arquivo de alerta. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,12 +1,13 @@
 ---
 title: Membro do lista servicePrincipal transitivo
 description: Obtenha os grupos e funções de diretório que esse serviço principal é um membro de. Essa operação é transitiva e incluirá todos os grupos que esse serviço principal é um membro aninhado do.
-ms.openlocfilehash: e08185e15f583173e585bf392f628a8d9c0800eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 814059a5abb0c98098436134d8e60e21e22b4b9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848143"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Membro do lista servicePrincipal transitivo
 

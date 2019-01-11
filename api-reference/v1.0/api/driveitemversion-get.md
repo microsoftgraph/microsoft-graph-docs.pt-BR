@@ -1,12 +1,13 @@
 ---
 title: Obter um recurso DriveItemVersion
 description: Recuperar os metadados de uma versão específica de um DriveItem.
-ms.openlocfilehash: 1b803e92b7a717514e794da5ac8da04c0ef05f6a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d16e6bf6a9fa797f952109a773cfd4227696e032
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007468"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868338"
 ---
 # <a name="get-a-driveitemversion-resource"></a>Obter um recurso DriveItemVersion
 

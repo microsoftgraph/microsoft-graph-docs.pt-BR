@@ -2,12 +2,13 @@
 title: Tipo de recurso workbookSessionInfo
 description: Fornece informações sobre a sessão de pasta de trabalho.
 author: lumine2008
-ms.openlocfilehash: 1e097cad70a6058aab28ad85d7cf6b3c3b52ac75
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 900ebdcefbdfa83e7b72b1c926a441f1c497626a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305982"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826926"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Tipo de recurso workbookSessionInfo
 

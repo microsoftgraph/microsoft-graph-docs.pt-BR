@@ -2,19 +2,20 @@
 title: Atualizar contato
 description: Atualize as propriedades do objeto de contato.
 author: angelgolfer-ms
-ms.openlocfilehash: d25efb55a090c4c0b5fa750b64a0b2a905327a76
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e205421413dabeec7667252a05fc8398bdd48e36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809321"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades do objeto de contato.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -59,7 +60,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |displayName|String|O nome para exibição do contato. Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de atualização.|
 |emailAddresses|coleção [typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
-|gender |String |Gênero do contato. |
+|gender |Cadeia de caracteres |Gênero do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|
 |imAddresses|String|Os endereços de mensagens instantâneas do contato.|

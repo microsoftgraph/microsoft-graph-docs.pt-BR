@@ -2,12 +2,13 @@
 title: tipo de enum win32LobAppFileSystemDetectionType
 description: Contém todos os tipo de detecção de sistema de arquivo com suporte.
 author: tfitzmac
-ms.openlocfilehash: 240d5e93400ce44dca97d72688e3e5ae9f386278
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1748b98732e77c8da7360dbd7a4474235da31925
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354009"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846561"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>tipo de enum win32LobAppFileSystemDetectionType
 

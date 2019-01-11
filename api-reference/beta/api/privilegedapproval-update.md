@@ -1,19 +1,20 @@
 ---
 title: Atualizar privilegedapproval
 description: Atualize as propriedades do objeto privilegedapproval.
-ms.openlocfilehash: b50f5fb5e50bc47c94b759ea1253c9c9117bfe5d
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 0ddab7d7a628be8513c27114e1e4ec3d13477784
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866882"
 ---
 # <a name="update-privilegedapproval"></a>Atualizar privilegedapproval
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades do objeto privilegedapproval.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -40,13 +41,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |approvalDuration|Duração||
 |approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Cadeia de caracteres||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Cadeia de caracteres||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset||
-|userId|String||
+|userId|Cadeia de caracteres||
 
 ## <a name="response"></a>Resposta
 

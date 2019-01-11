@@ -2,12 +2,13 @@
 title: tipo de enum managedDeviceRemoteAction
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 1a9db8f1c4f826d3645caf05c8ca42214930dd52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fc75efe53e561f90669c0619078c1b218531a6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827374"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>tipo de enum managedDeviceRemoteAction
 

@@ -2,12 +2,13 @@
 title: tipo de enum appleSubjectNameFormat
 description: Opções de formato de nome de entidade para dispositivos Apple.
 author: tfitzmac
-ms.openlocfilehash: 6aa3616050e3d908fd093310de5bbed065766fc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8c6eb02507dbf2de71aeb0d156807dcb3bcf89d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323671"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873063"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>tipo de enum appleSubjectNameFormat
 

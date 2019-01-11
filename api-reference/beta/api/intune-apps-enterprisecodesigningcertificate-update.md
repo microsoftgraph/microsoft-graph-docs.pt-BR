@@ -2,12 +2,13 @@
 title: Atualizar enterpriseCodeSigningCertificate
 description: Atualize as propriedades de um objeto enterpriseCodeSigningCertificate.
 author: tfitzmac
-ms.openlocfilehash: 4cf0eb5607af176e1c0cb0a6418f01339b2bb96f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5272c0ff0e18fd7200e85ff51575c10825dbf7f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332799"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829313"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Atualizar enterpriseCodeSigningCertificate
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSign
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .
@@ -51,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |content|Binária|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
-|subject|String|O valor de assunto para o cert.|
-|issuerName|String|O nome do emissor para o cert.|
-|emissor|String|O valor de emissor para o cert.|
+|subject|Cadeia de caracteres|O valor de assunto para o cert.|
+|issuerName|Cadeia de caracteres|O nome do emissor para o cert.|
+|emissor|Cadeia de caracteres|O valor de emissor para o cert.|
 |expirationDateTime|DateTimeOffset|A data de validade do Cert.|
 |uploadDateTime|DateTimeOffset|A data hora de certificado de assinatura de código padrão quando ele é carregado.|
 

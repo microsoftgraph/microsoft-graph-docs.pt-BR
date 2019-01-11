@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceOperatingSystemSummary
 description: Resumo do sistema operacional do dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 73615964d0c2b187c36b57956d534fa08d60684f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b4b53d7c7260e58458995093bbea17df5464e704
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846071"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Tipo de recurso deviceOperatingSystemSummary
 

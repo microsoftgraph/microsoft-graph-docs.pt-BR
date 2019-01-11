@@ -2,12 +2,13 @@
 title: Obter windowsAssignedAccessProfile
 description: Leia as propriedades e os relacionamentos do objeto windowsAssignedAccessProfile.
 author: tfitzmac
-ms.openlocfilehash: a4a4fd692c8147283950bb3a2d5de6ebebcd4173
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7fa26f3cdbb158991287ea8cdf5440a58bd469b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349760"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827241"
 ---
 # <a name="get-windowsassignedaccessprofile"></a>Obter windowsAssignedAccessProfile
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Excluir grupo
 description: Exclui um grupo.
 author: dkershaw10
-ms.openlocfilehash: ba159e5ce603d1da75b424f69a01f7bf8a3b2332
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9eb46ffbfe767accee457f9b5b6dc292891fb95c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341864"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865076"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
@@ -17,7 +18,7 @@ Exclui um grupo.
 
 Quando um grupo é excluído, o item é adicionado à [itens excluídos](../resources/directory.md). O grupo permanecerá em itens excluídos por até 30 dias. Um grupo pode ser restaurado totalmente de itens excluídos durante os 30 dias. Após 30 dias, itens excluídos são excluídos permanentemente.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

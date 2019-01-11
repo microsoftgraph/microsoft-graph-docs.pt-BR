@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso calendar
 description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um user ou o calendário padrão de um group do Office 365.
-ms.openlocfilehash: 90be98acace678b45626f812150362dfeed1f52d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: baa681d57109654aa29eed11cef4768d1599ba13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040898"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830671"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -47,8 +48,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. |
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|hexColor|String|Uma cor que representa o calendário. A cor é representada por um número hexadecimal de 6 dígitos, 3 bytes. Cada byte representa um dos componentes vermelhos, verdes e azuis da cor, do intervalo de 00 a FF em notação hexadecimal. |
-|id|String|O identificador exclusivo do grupo. Somente leitura.|
+|hexColor|Cadeia de caracteres|Uma cor que representa o calendário. A cor é representada por um número hexadecimal de 6 dígitos, 3 bytes. Cada byte representa um dos componentes vermelhos, verdes e azuis da cor, do intervalo de 00 a FF em notação hexadecimal. |
+|id|Cadeia de caracteres|O identificador exclusivo do grupo. Somente leitura.|
 |isDefaultCalendar|Booliano|True se este for padrão calendário do usuário, false caso contrário.|
 |isShared |Booliano |True se o usuário tiver compartilhado o calendário com outros usuários, false caso contrário. Desde que apenas o usuário que criou o calendário pode compartilhá-lo, **isShared** e **isSharedWithMe** não pode ser true para o mesmo usuário. |
 |isSharedWithMe |Booliano |True se o usuário foi shared neste calendário, false caso contrário. Essa propriedade será sempre false para o proprietário de um calendário.  |

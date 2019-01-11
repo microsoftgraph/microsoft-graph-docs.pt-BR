@@ -2,19 +2,20 @@
 title: Criar outlookTaskFolder
 description: Crie uma pasta de tarefas do Outlook em um outlookTaskGroup especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: e1e45cce9d047086d9aee025d38ca883fcda6fad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d6d6f103c1dd002f4c01e0dbdd71d1ebd7ddd10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823832"
 ---
 # <a name="create-outlooktaskfolder"></a>Criar outlookTaskFolder
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Crie uma pasta de tarefas do Outlook em um [outlookTaskGroup](../resources/outlooktaskgroup.md)de especificado.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

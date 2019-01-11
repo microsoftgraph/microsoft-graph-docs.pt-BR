@@ -2,12 +2,13 @@
 title: Acessar windowsInformationProtectionNetworkLearningSummary
 description: Leia as propriedades e as relações do objeto windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: e6d72251a8a7c223690e6d3a2e13ab1e2d754076
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 841ae46fffcd2b64fef8179022f34934f89f646a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334864"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846554"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Acessar windowsInformationProtectionNetworkLearningSummary
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

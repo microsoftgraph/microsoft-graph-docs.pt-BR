@@ -2,12 +2,13 @@
 title: tipo de recurso de iosLobAppProvisioningConfigurationAssignment
 description: Uma classe que contém as propriedades usadas para atribuição de grupo de um iOS LOB App provisionamento e configuração.
 author: tfitzmac
-ms.openlocfilehash: 795fe7e07fdd5a79e4d3d99f7d081bd458452473
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c136689f0b99423445eecb1b9309bf1794f389c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358216"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868842"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>tipo de recurso de iosLobAppProvisioningConfigurationAssignment
 
@@ -28,7 +29,7 @@ Uma classe que contém as propriedades usadas para atribuição de grupo de um i
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A atribuição do grupo de destino definida pelo administrador.|
 
 ## <a name="relationships"></a>Relações

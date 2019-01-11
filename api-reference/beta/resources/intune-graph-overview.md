@@ -2,12 +2,13 @@
 title: Uso da API do Graph para Intune
 description: " Implantações híbridas de Intune não são suportadas. "
 author: tfitzmac
-ms.openlocfilehash: cecce61dba0ddfc044c2e06e0e16d68401fcafb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 606c2324476492f8dc9271646d0109bb3d57de99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357243"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869710"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 

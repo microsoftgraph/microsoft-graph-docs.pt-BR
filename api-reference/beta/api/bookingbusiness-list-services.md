@@ -1,12 +1,13 @@
 ---
 title: Lista de serviços
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 74326f68f86eeb461b18e3533e9c4da262ccd847
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ceb26fe3e628db30860620871d495e98e80b711d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035634"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829649"
 ---
 # <a name="list-services"></a>Lista de serviços
 

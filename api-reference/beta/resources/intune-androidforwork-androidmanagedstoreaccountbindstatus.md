@@ -2,12 +2,13 @@
 title: tipo de enum androidManagedStoreAccountBindStatus
 description: Associe o status do inquilino com a API do EMM Google
 author: tfitzmac
-ms.openlocfilehash: c2c79b4fc3fafcfcf9681d9e4cce1808a3d3eb9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 54db1a86e691196ca55aed49afe4357d1026f8ce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868912"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>tipo de enum androidManagedStoreAccountBindStatus
 

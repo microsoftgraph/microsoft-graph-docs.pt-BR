@@ -2,12 +2,13 @@
 title: recurso de educationPowerSchoolDataProvider
 description: Usado para configurar o perfil de sincronização de dados da escola quando PowerSchool é usado como a fonte de entrada.
 author: mmast-msft
-ms.openlocfilehash: 714866d03c70aae8ea03a27b63fb3efbb4fa5ba4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48a23a2e2a50e2e235b5722466c67094275236a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312800"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868779"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>recurso de educationPowerSchoolDataProvider
 
@@ -21,12 +22,12 @@ Derivado do [educationSynchronizationDataProvider](educationsynchronizationdatap
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **URL de conexão** | String | A URL da conexão para a instância de PowerSchool. |
-| **clientId** | String |  A identificação do cliente usada para conectar ao PowerSchool. |
-| **clientSecret** | String |  O segredo do cliente para autenticar a conexão à instância PowerSchool. |
+| **URL de conexão** | Cadeia de caracteres | A URL da conexão para a instância de PowerSchool. |
+| **clientId** | Cadeia de caracteres |  A identificação do cliente usada para conectar ao PowerSchool. |
+| **clientSecret** | Cadeia de caracteres |  O segredo do cliente para autenticar a conexão à instância PowerSchool. |
 | **schoolsIds** | String collection |  A lista de escolas para sincronizar. |
-| **schoolYear** | String |  O ano escola para sincronizar. |
-| **allowTeachersInMultipleSchools** | Boolean |  Indica se a fonte tem vários identificadores para um único aluno ou professor. |
+| **schoolYear** | Cadeia de caracteres |  O ano escola para sincronizar. |
+| **allowTeachersInMultipleSchools** | Booliano |  Indica se a fonte tem vários identificadores para um único aluno ou professor. |
 | **personalizações** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Personalização opcional a ser aplicado ao perfil de sincronização.|
 
 ## <a name="json-representation"></a>Representação JSON

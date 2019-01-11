@@ -2,12 +2,13 @@
 title: Adicionar o aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
 author: nkramer
-ms.openlocfilehash: 41682d1280b9aaa76f6ef09d0b5ddbd5338d110f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e8a4e96486f017d208d7afe343dcee3add1827fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301999"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846519"
 ---
 # <a name="add-app-to-team"></a>Adicionar o aplicativo à equipe
 
@@ -15,7 +16,7 @@ ms.locfileid: "27301999"
 
 Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)de especificado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -2,19 +2,20 @@
 title: Listar directoryRoleTemplates
 description: Recupere uma lista de objetos directoryroletemplate.
 author: lleonard-msft
-ms.openlocfilehash: bc61c7b4c41fd3d5a6a884cf27c6f86c09aabf94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a61127b7fdd31ce55f44a42ac847c5ac50932cf6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848563"
 ---
 # <a name="list-directoryroletemplates"></a>Listar directoryRoleTemplates
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere uma lista de objetos directoryroletemplate.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

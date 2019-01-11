@@ -2,12 +2,13 @@
 title: Excluir windows10EasEmailProfileConfiguration
 description: Exclui um windows10EasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ca709bc7a1d2ffde0c0eb3f4da9188d98681906b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3489cd01c73cded23baa9fa4986b7804c752cedf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338336"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847653"
 ---
 # <a name="delete-windows10easemailprofileconfiguration"></a>Excluir windows10EasEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

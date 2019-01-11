@@ -2,12 +2,13 @@
 title: 'educationSubmission: unsubmit'
 description: 'Uma ação que indica que um estudante deseja trabalhar no envio da atribuição depois que ele foi ativado. Essa ação só pode ser executada pelo aluno. '
 author: dipakboyed
-ms.openlocfilehash: a61f2e9c05691266ae9248ca95700f173e0ee0b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 853dce22c7c79ffda7b823794259fa7be0363d02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304225"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829215"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 
@@ -15,7 +16,7 @@ ms.locfileid: "27304225"
 
 Uma ação que indica que um estudante deseja trabalhar no envio da atribuição depois que ele foi ativado. Essa ação só pode ser executada pelo aluno. Isso irá alterar o status do envio de "enviado" para "trabalho". Durante o processo de envio, todos os recursos serão copiados do submittedResources para o Balde workingResources. O professor será observando a lista de recursos úteis para a classificação.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

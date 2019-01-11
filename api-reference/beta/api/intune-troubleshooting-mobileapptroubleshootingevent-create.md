@@ -2,12 +2,13 @@
 title: Criar mobileAppTroubleshootingEvent
 description: Crie um novo objeto de mobileAppTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: de4f525cbc7ba84727662cc497afcd33d3d71920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb29e9de5bcebf0d40421280e779f12275ab7274
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886342"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Criar mobileAppTroubleshootingEvent
 
@@ -38,7 +39,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto mobileAppTroubleshootingEvent.

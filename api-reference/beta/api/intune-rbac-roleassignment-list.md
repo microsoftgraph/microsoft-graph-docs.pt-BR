@@ -2,12 +2,13 @@
 title: Listar roleAssignments
 description: Listar propriedades e relações de objeto de roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: 4d7ff77844b2005e761f1388dec190ad1bc102e4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 534fdd1e971dc46033be4d07679969f2d1a4c221
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310021"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868093"
 ---
 # <a name="list-roleassignments"></a>Listar roleAssignments
 
@@ -38,7 +39,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
