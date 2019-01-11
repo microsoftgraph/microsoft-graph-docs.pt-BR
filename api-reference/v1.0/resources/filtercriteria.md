@@ -1,20 +1,21 @@
 ---
 title: Tipo de recurso FilterCriteria
 description: Representa os critérios de filtragem aplicados a uma coluna.
-ms.openlocfilehash: 7fafbf8ef71eac9cf4896927f38ed1add5da9320
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 27fd3b6b211934c2cc81a11f203287c530993dde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007225"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808565"
 ---
-# <a name="filtercriteria-resource-type"></a><span data-ttu-id="e1ccb-103">Tipo de recurso FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="e1ccb-103">FilterCriteria resource type</span></span>
+# <a name="filtercriteria-resource-type"></a><span data-ttu-id="b58c0-103">Tipo de recurso FilterCriteria</span><span class="sxs-lookup"><span data-stu-id="b58c0-103">FilterCriteria resource type</span></span>
 
-<span data-ttu-id="e1ccb-104">Representa os critérios de filtragem aplicados a uma coluna.</span><span class="sxs-lookup"><span data-stu-id="e1ccb-104">Represents the filtering criteria applied to a column.</span></span>
+<span data-ttu-id="b58c0-104">Representa os critérios de filtragem aplicados a uma coluna.</span><span class="sxs-lookup"><span data-stu-id="b58c0-104">Represents the filtering criteria applied to a column.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e1ccb-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e1ccb-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b58c0-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b58c0-105">JSON representation</span></span>
 
-<span data-ttu-id="e1ccb-106">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e1ccb-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b58c0-106">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b58c0-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
