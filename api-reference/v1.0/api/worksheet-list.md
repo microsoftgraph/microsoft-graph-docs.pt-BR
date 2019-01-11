@@ -2,12 +2,13 @@
 title: Listar WorksheetCollection
 description: Recupere uma lista de objetos de planilha.
 author: lumine2008
-ms.openlocfilehash: 1680a7abce783d4b1954c9bb05e03627d57a3783
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c8ffa91c99355ecc42345793f026d17c7b5b3082
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885229"
 ---
 # <a name="list-worksheetcollection"></a>Listar WorksheetCollection
 

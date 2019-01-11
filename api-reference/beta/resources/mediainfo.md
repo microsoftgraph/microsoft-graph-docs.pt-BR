@@ -2,12 +2,13 @@
 title: tipo de recurso de mediaInfo
 description: As informações de mídia usadas em ações para solicita.
 author: VinodRavichandran
-ms.openlocfilehash: ea2eaa9e8e85da737df4c0c0170457fb3350820b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fe2c49e86bac9d5961310694b21e9439a4896ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885600"
 ---
 # <a name="mediainfo-resource-type"></a>tipo de recurso de mediaInfo
 
@@ -16,10 +17,10 @@ ms.locfileid: "27380272"
 As informações de mídia usadas em ações para solicita.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo    | Descrição                      |
+| Propriedade       | Tipo    | Descrição                      |
 |:---------------|:--------|:---------------------------------|
 | resourceId     | Cadeia de caracteres  | Identidade exclusiva do recurso. |
-| URI            | String  | Caminho para o recurso.            |
+| URI            | Cadeia de caracteres  | Caminho para o recurso.            |
 
 ## <a name="json-representation"></a>Representação JSON
 

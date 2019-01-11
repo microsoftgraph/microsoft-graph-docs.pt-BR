@@ -2,12 +2,13 @@
 title: Atualizar sideLoadingKey
 description: Atualize as propriedades de um objeto sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: 6d616db947defb8e08926e40df23590c7d27e84d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f4a6348df539924bdccbf3cacf8411442f877eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885628"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
@@ -47,12 +48,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Lado carregando o ID exclusivo principal.|
-|valor|String|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
-|displayName|String|Carregando da lado chave nome exibido para o ITPro Admins.|
-|description|String|Descrição de chave Carregando lado exibida para o ITPro Admins..|
+|id|Cadeia de caracteres|Lado carregando o ID exclusivo principal.|
+|valor|Cadeia de caracteres|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
+|displayName|Cadeia de caracteres|Carregando da lado chave nome exibido para o ITPro Admins.|
+|description|Cadeia de caracteres|Descrição de chave Carregando lado exibida para o ITPro Admins..|
 |totalActivation|Int32|Lado Carregando chave Total Activation exibida para o ITPro Admins.|
-|lastUpdatedDateTime|String|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
+|lastUpdatedDateTime|Cadeia de caracteres|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
 
 
 

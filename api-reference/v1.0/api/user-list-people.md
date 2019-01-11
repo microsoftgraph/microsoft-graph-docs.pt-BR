@@ -2,12 +2,13 @@
 title: Listar pessoas
 description: Recupere uma coleção de objetos person ordenados por relevância para o usuário, o que é determinado pelo padrões de comunicação e colaboração e pelas relações comerciais do usuário.
 author: simonhult
-ms.openlocfilehash: 52f3dade14af76732381bf71f0d8556f543287fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: c1152990e23a931f246c5319e795ef7568aadd76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350110"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881596"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -44,8 +45,8 @@ Este método oferece suporte aos [ parâmetros de consulta OData ](/graph/query-
 |$orderby|string|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
 |$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. Parâmetro funciona apenas para a pesquisa de pessoas de relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também oferece suporte a `topic` palavra-chave para localizar pessoas com base em tópicos extraídos de conversas de email com essa pessoa. Consulte a seção de *executar uma pesquisa difusa* em [obter as informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para obter informações e exemplos. |
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
-|$skip|inteiro|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
-|$top|inteiro|Número de resultados a ser retornado.|
+|$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
+|$top|int|Número de resultados a ser retornado.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 

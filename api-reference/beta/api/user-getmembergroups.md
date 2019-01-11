@@ -1,12 +1,13 @@
 ---
 title: 'usuário: getMemberGroups'
 description: Retorne todos os grupos que o usuário é membro de. A seleção é transitiva, ao contrário de leitura a
-ms.openlocfilehash: 4ac810c6102fe848dc551a1c8fe3b754ee226f67
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 097d6d6eafa031bf86460e97ced58d0063eee4ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879783"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 

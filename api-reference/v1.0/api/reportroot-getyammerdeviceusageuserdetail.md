@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getYammerDeviceUsageUserDetail function'
 description: Obtenha dados sobre o uso do dispositivo Yammer por usuário.
-ms.openlocfilehash: c112ba0948adb07dbb5264ab73f6458f2ef97b09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3097d2aa384389e29c0419265d49cde663d763e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005595"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880910"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceCompliancePolicyDeviceStateSummary
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 006b1ca71f8441898ba758397334c7ae31ac5690
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4aa91b68e9e389027f9e53b67757319af87980c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887595"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicyDeviceStateSummary
 
@@ -27,7 +28,7 @@ Ainda não documentado
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Quantidade de dispositivos que estão no período de cortesia|
 |configManagerCount|Int32|Quantidade de dispositivos que estão em conformidade gerenciada pelo System Center Configuration Manager|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|

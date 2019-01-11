@@ -2,12 +2,13 @@
 title: tipo de recurso de mobileAppInstallStatus
 description: Contém propriedades para o estado de instalação de um aplicativo móvel para um dispositivo.
 author: tfitzmac
-ms.openlocfilehash: ba2c0026d54235683a2f5d5b26c19b88ea11a9d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a81113001a1ff06b530b2b9249ee705b9cd5ac40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880497"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>tipo de recurso de mobileAppInstallStatus
 
@@ -28,19 +29,19 @@ Contém propriedades para o estado de instalação de um aplicativo móvel para 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|deviceName|String|Nome do dispositivo|
+|id|Cadeia de caracteres|Chave da entidade.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo|
 |deviceId|Cadeia de caracteres|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Última sincronização data hora|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes de estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|O erro de código para instalar ou desinstalar falhas.|
-|osVersion|String|Versão do sistema operacional|
+|osVersion|Cadeia de caracteres|Versão do sistema operacional|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
-|userPrincipalName|String|Nome UPN|
-|displayVersion|String|Versão legível humana do aplicativo|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|displayVersion|Cadeia de caracteres|Versão legível humana do aplicativo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

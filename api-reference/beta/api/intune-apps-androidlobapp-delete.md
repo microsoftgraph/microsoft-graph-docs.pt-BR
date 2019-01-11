@@ -2,12 +2,13 @@
 title: Excluir androidLobApp
 description: Exclui androidLobApp.
 author: tfitzmac
-ms.openlocfilehash: 101082725986f50a7b2a09f7cc66ba8b8e05709b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de6d3a9a2a4026fa019f509a3ee5800946fd3610
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883143"
 ---
 # <a name="delete-androidlobapp"></a>Excluir androidLobApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

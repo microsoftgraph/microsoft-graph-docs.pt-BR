@@ -2,12 +2,13 @@
 title: ação de uploadDepToken
 description: Carrega um novo token do programa de inscrição do dispositivo
 author: tfitzmac
-ms.openlocfilehash: 6fc303afa5efb5fab312732c95545b73004660a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e146ebe7d25c428c3451830eb7fa223096fff8af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330643"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886580"
 ---
 # <a name="uploaddeptoken-action"></a>ação de uploadDepToken
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/uploadDepT
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -48,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appleId|Cadeia de caracteres|Ainda não documentado|
-|depToken|String|Ainda não documentado|
+|depToken|Cadeia de caracteres|Ainda não documentado|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Obter sectionGroup
 description: Recupere as propriedades e os relacionamentos de um objeto sectionGroup.
-ms.openlocfilehash: 12ba258056ae1a317541e01b6747e8de5a97450f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e89460b45c03e35e36ab320433981eb0b60b3c7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878124"
 ---
 # <a name="get-sectiongroup"></a>Obter sectionGroup
 
