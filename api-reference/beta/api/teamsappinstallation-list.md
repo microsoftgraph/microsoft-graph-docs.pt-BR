@@ -2,12 +2,13 @@
 title: Lista de aplicativos na equipe
 description: Recupere a lista de aplicativos instalados na equipe de especificado.
 author: nkramer
-ms.openlocfilehash: d412085663a67a16fe435c8555d802cec662a23e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b1589a7497ef466f996edde4353198d0d59b535
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854401"
 ---
 # <a name="list-apps-in-team"></a>Lista de aplicativos na equipe
 
@@ -15,7 +16,7 @@ ms.locfileid: "27357285"
 
 Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)de especificado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

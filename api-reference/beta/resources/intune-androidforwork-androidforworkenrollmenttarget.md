@@ -2,12 +2,13 @@
 title: tipo de enum androidForWorkEnrollmentTarget
 description: Android para direcionamento de tipo para a conta de gerenciamento de dispositivos de trabalho
 author: tfitzmac
-ms.openlocfilehash: 75c446e65b8af1466bf1eb5988921c3e1a6b3ac9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec9ba5522871821bd84e7c3c8399dc3d9888b962
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852378"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enum androidForWorkEnrollmentTarget
 
@@ -19,7 +20,7 @@ Android para direcionamento de tipo para a conta de gerenciamento de dispositivo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Ainda não documentado|
+|nenhum|0|Ainda não documentado|
 |todos os|1|Ainda não documentado|
 |direcionado|2|Ainda não documentado|
 |targetedAsEnrollmentRestrictions|3|Ainda não documentado|

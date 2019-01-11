@@ -2,12 +2,13 @@
 title: ação de getTargetedUsersAndDevices
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: b0893a3942b3423d2bcb1aebeb77c893b0098b50
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b30d931d95266d096ba2ad36e88e2ccdf5c788f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848185"
 ---
 # <a name="gettargetedusersanddevices-action"></a>ação de getTargetedUsersAndDevices
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

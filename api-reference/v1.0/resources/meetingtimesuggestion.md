@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso meetingTimeSuggestion
 description: 'Uma sugestão de reunião que inclui informações sobre como tempo de reunião, a probabilidade de presença, indivíduo '
-ms.openlocfilehash: 345d09015be5e489c88cb89fe6a4175ebbab2874
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d1cca365c66c114063fbf859e241a5d9a81303e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007116"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845994"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
 
@@ -43,7 +44,7 @@ Veja a seguir uma representação JSON do recurso
 |locations|Coleção [location](location.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Um período de tempo sugerido para a reunião.|
 |organizerAvailability|freeBusyStatus| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|suggestionReason|String|Razão da sugestão de horário da reunião.|
+|suggestionReason|Cadeia de caracteres|Razão da sugestão de horário da reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

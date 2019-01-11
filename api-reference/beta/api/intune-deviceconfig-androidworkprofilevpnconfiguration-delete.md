@@ -2,12 +2,13 @@
 title: Excluir androidWorkProfileVpnConfiguration
 description: Exclui um androidWorkProfileVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 197cf31631d9baaf64cf8e87477d4a3698960ff3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dcd3b460df165cf3ab165a1a6c0bae35866e4995
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854324"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>Excluir androidWorkProfileVpnConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

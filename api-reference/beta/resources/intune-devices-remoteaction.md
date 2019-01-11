@@ -2,12 +2,13 @@
 title: tipo de enum remoteAction
 description: Ações remotas Intune oferece suporte.
 author: tfitzmac
-ms.openlocfilehash: 7b301757ec5bb8c9c9a0336cbc83d6a458579916
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e12b3c52ebe40dd8bccad56bdbc9c291486177c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847149"
 ---
 # <a name="remoteaction-enum-type"></a>tipo de enum remoteAction
 

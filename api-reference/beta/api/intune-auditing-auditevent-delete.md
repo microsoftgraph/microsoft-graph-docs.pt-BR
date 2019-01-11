@@ -2,12 +2,13 @@
 title: Excluir auditEvent
 description: Exclui auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 673ffed32a434ee6a0f4d60379f496ec5186b33a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: abfee6fb35ecdd86464d1d751d0cb72cab45b63d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302839"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853869"
 ---
 # <a name="delete-auditevent"></a>Excluir auditEvent
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/auditEvents/{auditEventId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

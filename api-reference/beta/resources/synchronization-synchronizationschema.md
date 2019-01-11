@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de synchronizationSchema
 description: Define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de instalação para um trabalho de sincronização específica. Normalmente, você irá personalizar alguns dos mapeamentos de atributo ou adicionar um filtro de escopo para sincronizar apenas os objetos que atender a uma determinada condição.
-ms.openlocfilehash: 13e57db5f78af2d3f0a8243d247fe5c3f3d5e0af
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847317"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso de synchronizationSchema
 
@@ -46,7 +47,7 @@ As seções a seguir descrevem os componentes de alto nível do esquema de sincr
 |:--------------|:----------|:---------------|
 |diretórios            |coleção [directoryDefinition](synchronization-directorydefinition.md)   |Descreve os objetos que fazem parte do [synchronizationJob](synchronization-synchronizationjob.md) ou [synchronizationTemplate](synchronization-synchronizationtemplate.md)e diretórios. |
 |synchronizationRules   |coleção [synchronizationRule](synchronization-synchronizationrule.md)   |Uma coleção de regras de sincronização configurados para o [synchronizationJob](synchronization-synchronizationjob.md) ou [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
-|version                |String                             |A versão do esquema, atualizado automaticamente com cada mudança de esquema.|
+|version                |Cadeia de caracteres                             |A versão do esquema, atualizado automaticamente com cada mudança de esquema.|
 
 
 ## <a name="json-representation"></a>Representação JSON

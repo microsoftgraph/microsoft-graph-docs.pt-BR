@@ -2,12 +2,13 @@
 title: Listar enrollmentConfigurationAssignments
 description: Listar propriedades e relações de objetos de enrollmentConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: 0aad76f06d9694c4abaedcd728f3df10a817865c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8691d2b05e7fe618c5ed7d3d4fd6ea314467e7fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849648"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Listar enrollmentConfigurationAssignments
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

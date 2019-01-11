@@ -2,12 +2,13 @@
 title: tipo de enum notificationTemplateBrandingOptions
 description: Opções de marcas para o modelo de mensagem. A identidade visual é definida no Console do administrador do Intune.
 author: tfitzmac
-ms.openlocfilehash: e42dcf06be05fce5659311187673549da828361a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db7707c904192547667c19d93085c7a1fc9081ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848885"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enum notificationTemplateBrandingOptions
 
@@ -19,7 +20,7 @@ Opções de marcas para o modelo de mensagem. A identidade visual é definida no
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhuma marca.|
+|nenhum|0|Nenhuma marca.|
 |includeCompanyLogo|1|Inclua o logotipo da empresa.|
 |includeCompanyName|2|Inclua o nome da empresa.|
 |includeContactInformation|4|Inclua informações de contato.|

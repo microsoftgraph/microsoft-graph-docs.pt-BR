@@ -2,12 +2,13 @@
 title: tipo de enum inkAccessSetting
 description: Valores para a configuração de InkWorkspaceAccess.
 author: tfitzmac
-ms.openlocfilehash: c906edecb11b1c2eeac0b714fb20c7e7403832f6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 909989a8256fc1a68bb0dc1ec753fde090efc828
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845976"
 ---
 # <a name="inkaccesssetting-enum-type"></a>tipo de enum inkAccessSetting
 

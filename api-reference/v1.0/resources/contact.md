@@ -2,12 +2,13 @@
 title: tipo de recurso contact
 description: Um contato é um item no Outlook no qual você pode organizar e salvar informações sobre as pessoas e organizações com quem se comunica. Os contatos estão contidos em pastas de contatos.
 author: angelgolfer-ms
-ms.openlocfilehash: 13eb3b1e3f88c5018031176cffbcc89a038073ed
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 6ff19278e6cf120404b892bb95881326ce281a72
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334969"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854373"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 

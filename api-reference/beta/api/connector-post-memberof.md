@@ -1,12 +1,13 @@
 ---
 title: Adicionar um conector para connectorGroup
 description: Use essa API para adicionar um conector para um novo connectorGroup.
-ms.openlocfilehash: 6dfc681f997953420811fbd7223a8c121934949e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 13967fc31bbf482a8eba6db9fe5e4dc1d7bf305d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854618"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Adicionar um conector para connectorGroup
 

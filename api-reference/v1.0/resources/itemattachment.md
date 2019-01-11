@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso itemAttachment
 description: 'Um contato, evento ou mensagem que está anexado a outro evento, mensagem ou postagem.  '
-ms.openlocfilehash: 79097b10327d895a41090e068a2fd8e9681df125
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: df996175e545b78f4ca9a1b6271b9cb012ffffce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853519"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
@@ -24,8 +25,8 @@ Derivado de [attachment](attachment.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentType|String|O tipo de conteúdo do anexo.|
-|id|String| A ID do anexo.|
+|contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
+|id|Cadeia de caracteres| A ID do anexo.|
 |isInline|Booliano|Defina como verdadeiro se o anexo estiver embutido, como uma imagem incorporada no corpo do item.|
 |lastModifiedDateTime|DateTimeOffset|Última data e hora em que o anexo foi alterado.|
 |name|Cadeia de caracteres|O nome de exibição do anexo.|

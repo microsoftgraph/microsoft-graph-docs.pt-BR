@@ -2,12 +2,13 @@
 title: Excluir androidWorkProfileCompliancePolicy
 description: Exclui um androidWorkProfileCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 6168f64e9f55312d2bc4916566afaa9101324abb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c898b948a5a4b3b36064553e70300aaae2620bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850803"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>Excluir androidWorkProfileCompliancePolicy
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

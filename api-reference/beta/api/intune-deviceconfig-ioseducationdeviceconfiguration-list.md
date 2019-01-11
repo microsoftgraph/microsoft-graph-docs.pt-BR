@@ -2,12 +2,13 @@
 title: Lista iosEducationDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosEducationDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9801e7603e49343f58f94e4267b05d3d75c5d880
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a26fb7ed8db98a6659b6d1fb9a1686abb4165ca5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847870"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>Lista iosEducationDeviceConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

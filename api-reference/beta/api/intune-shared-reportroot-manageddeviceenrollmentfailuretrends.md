@@ -2,12 +2,13 @@
 title: função managedDeviceEnrollmentFailureTrends
 description: Metadados para o relatório de tendências de falha de inscrição
 author: tfitzmac
-ms.openlocfilehash: 873169eb3532b149de337ff21afe4fb8c3f67fe1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c115ee0ada2297c237db839049f9cd33cb77e2ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853484"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>função managedDeviceEnrollmentFailureTrends
 
@@ -39,7 +40,7 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

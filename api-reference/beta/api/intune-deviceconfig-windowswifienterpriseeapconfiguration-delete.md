@@ -2,12 +2,13 @@
 title: Excluir windowsWifiEnterpriseEAPConfiguration
 description: Exclui um windowsWifiEnterpriseEAPConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 11fc745f9d644a1a4c8f376f1838e4ad69cbe50c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 487e3f10d4f6b27d0705a37e3d4a2724a5c595d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851545"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>Excluir windowsWifiEnterpriseEAPConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

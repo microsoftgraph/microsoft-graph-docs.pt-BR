@@ -2,12 +2,13 @@
 title: Obter androidTrustedRootCertificate
 description: Leia as propriedades e os relacionamentos do objeto androidTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: a96e5b393ecb9ea60fd9945beadc742b2e5bc4af
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10fdab252040490111c743532f121ad9b06bcb57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847996"
 ---
 # <a name="get-androidtrustedrootcertificate"></a>Obter androidTrustedRootCertificate
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

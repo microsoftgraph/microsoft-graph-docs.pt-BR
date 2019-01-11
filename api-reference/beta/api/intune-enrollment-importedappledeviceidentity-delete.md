@@ -2,12 +2,13 @@
 title: Excluir importedAppleDeviceIdentity
 description: Exclui um importedAppleDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: c1b7cd86bfd0a61a846da23e9bb0e2b34d989da0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2654baebd60e30085381f020afc7ff40118fb87b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847835"
 ---
 # <a name="delete-importedappledeviceidentity"></a>Excluir importedAppleDeviceIdentity
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/imported
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

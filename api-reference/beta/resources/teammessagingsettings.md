@@ -2,12 +2,13 @@
 title: tipo de recurso de teamMessagingSettings
 description: Configurações para configurar mensagens e menções na equipe de.
 author: nkramer
-ms.openlocfilehash: 94a102e6d0937651c990e61f4895c715b3c4bd95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 06aca84355a07052dcea316145dfff437eee743b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344244"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848255"
 ---
 # <a name="teammessagingsettings-resource-type"></a>tipo de recurso de teamMessagingSettings
 
@@ -18,11 +19,11 @@ Configurações para configurar mensagens e menções na [equipe](team.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Boolean|Se definido como true, os usuários pode editar suas mensagens.|
-|allowUserDeleteMessages|Boolean|Se definido como true, os usuários pode excluir suas mensagens.|
-|allowOwnerDeleteMessages|Boolean|Se definido como true, proprietários pode excluir qualquer mensagem.|
-|allowTeamMentions|Boolean|Se definido como true, @team menções são permitidas.|
-|allowChannelMentions|Boolean|Se definido como true, @channel menções são permitidas.|
+|allowUserEditMessages|Booliano|Se definido como true, os usuários pode editar suas mensagens.|
+|allowUserDeleteMessages|Booliano|Se definido como true, os usuários pode excluir suas mensagens.|
+|allowOwnerDeleteMessages|Booliano|Se definido como true, proprietários pode excluir qualquer mensagem.|
+|allowTeamMentions|Booliano|Se definido como true, @team menções são permitidas.|
+|allowChannelMentions|Booliano|Se definido como true, @channel menções são permitidas.|
 
 ## <a name="json-representation"></a>Representação JSON
 

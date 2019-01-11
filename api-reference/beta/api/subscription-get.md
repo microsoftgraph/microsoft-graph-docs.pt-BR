@@ -1,12 +1,13 @@
 ---
 title: Obter assinatura
 description: Recupere as propriedades e os relacionamentos da uma assinatura.
-ms.openlocfilehash: 5694015fe7e8cbf87b5d62f7ae4af35d1773532b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0feb4ffd49099eabb92e5519b25233100f2acbe5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846834"
 ---
 # <a name="get-subscription"></a>Obter assinatura
 

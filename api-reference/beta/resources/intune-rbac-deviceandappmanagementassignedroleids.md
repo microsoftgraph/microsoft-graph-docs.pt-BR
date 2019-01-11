@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceAndAppManagementAssignedRoleIds
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 034120b891812a43c6c1683f61e52f071dc89816
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1ae87f1a8430ef2539fe10e813390b0fbd68b267
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353379"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846337"
 ---
 # <a name="deviceandappmanagementassignedroleids-resource-type"></a>tipo de recurso de deviceAndAppManagementAssignedRoleIds
 

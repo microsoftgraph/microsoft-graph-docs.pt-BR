@@ -2,12 +2,13 @@
 title: Listar eventos
 description: Recupere uma lista de objetos de evento.
 author: dkershaw10
-ms.openlocfilehash: 12ad3cd2704d31b68aec033381b9c6c5bc23a7fb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: a224f50ebda1e6e2eac4a99b3ea49011bfcdb714
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852644"
 ---
 # <a name="list-events"></a>Listar eventos
 Recupere uma lista de objetos [event](../resources/event.md).

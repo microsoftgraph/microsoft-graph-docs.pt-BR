@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de teamGuestSettings
 description: Configurações para configurar se os convidados podem criar, atualizar ou excluir canais na equipe de.
-ms.openlocfilehash: 744e19165121d101a720a86bec0242fc31137768
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 15644f3761329589a4d770e777ae5fd63751e6be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036813"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851538"
 ---
 # <a name="teamguestsettings-resource-type"></a>tipo de recurso de teamGuestSettings
 

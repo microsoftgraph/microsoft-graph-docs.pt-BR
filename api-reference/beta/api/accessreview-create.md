@@ -1,12 +1,13 @@
 ---
 title: Criar accessReview
 description: No Windows Azure AD para acessar o recurso de revisões, crie um novo objeto accessReview.
-ms.openlocfilehash: 9d8e8b246c3c43e4f69172ea59715a8718d39d1e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ee5ce696f1d71c57adf9e6c5ee30c067536c8ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851440"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 

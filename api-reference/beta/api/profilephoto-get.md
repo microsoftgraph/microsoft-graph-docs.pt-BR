@@ -1,12 +1,13 @@
 ---
 title: Obter foto
 description: Obtenha o profilePhoto especificado ou seus metadados (**profilePhoto** propriedades).
-ms.openlocfilehash: 6374680e37d409a89b61d3e2244b45ccb29869e7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851734"
 ---
 # <a name="get-photo"></a>Obter foto
 

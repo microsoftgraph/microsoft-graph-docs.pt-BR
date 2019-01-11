@@ -2,12 +2,13 @@
 title: Atualizar mobileAppProvisioningConfigGroupAssignment
 description: Atualize as propriedades de um objeto mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: c113c16234cb51146aa2e627d39405f740d6aab3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848339"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Atualizar mobileAppProvisioningConfigGroupAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) .
@@ -47,8 +48,8 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|targetGroupId|String|A identificação do grupo AAD no qual o provisionamento de configuração de aplicativo está sendo direcionado.|
-|id|String|Chave da entidade.|
+|targetGroupId|Cadeia de caracteres|A identificação do grupo AAD no qual o provisionamento de configuração de aplicativo está sendo direcionado.|
+|id|Cadeia de caracteres|Chave da entidade.|
 
 
 

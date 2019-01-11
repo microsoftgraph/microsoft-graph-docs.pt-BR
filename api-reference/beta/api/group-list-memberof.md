@@ -2,12 +2,13 @@
 title: Membro do grupo de lista
 description: Obtenha grupos e unidades administrativas que o grupo é um membro direto.
 author: dkershaw10
-ms.openlocfilehash: fa8977cd128fdb51296b31dac2ee959aea8c80b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8a1badf9e52c9d0bc3319178f36d62d1327d3c63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853330"
 ---
 # <a name="list-group-memberof"></a>Membro do grupo de lista
 
@@ -17,7 +18,7 @@ Obtenha grupos e unidades administrativas que o grupo é um membro direto.
 
 Esta operação não é transitiva. Diferentemente obtendo Office 365 grupos de um usuário, isto retorna todos os tipos de grupos, não apenas a grupos do Office 365. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

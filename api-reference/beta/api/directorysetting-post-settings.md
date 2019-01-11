@@ -1,12 +1,13 @@
 ---
 title: Criar uma configuração de diretório
 description: Use essa API para criar uma nova definição, com base em modelos de disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que controlam se os membros de um grupo podem convidar usuários convidados pode ser definido. Depois que a capacidade de adicionar usuários convidados a um grupo estiver disponível, isso orientará esse comportamento.
-ms.openlocfilehash: 40e90f66c43032deea8ee866b13508fd73c0f17f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 692ca0d68522b5b268e9ee670c694e5a5c6bee90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848717"
 ---
 # <a name="create-a-directory-setting"></a>Criar uma configuração de diretório
 

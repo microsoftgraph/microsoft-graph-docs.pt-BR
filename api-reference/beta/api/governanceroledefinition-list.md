@@ -1,12 +1,13 @@
 ---
 title: Lista governanceRoleDefinitions
 description: Obtenha uma coleção de governanceRoleDefinitions em um recurso.
-ms.openlocfilehash: ed1d4e7b51d20ed6687c52364399385054db9912
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6586a1fec0be4610aa18d204cb8049a012aa7a04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854744"
 ---
 # <a name="list-governanceroledefinitions"></a>Lista governanceRoleDefinitions
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.

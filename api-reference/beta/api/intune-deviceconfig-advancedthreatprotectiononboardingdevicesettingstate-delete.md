@@ -2,12 +2,13 @@
 title: Excluir advancedThreatProtectionOnboardingDeviceSettingState
 description: Exclui um advancedThreatProtectionOnboardingDeviceSettingState.
 author: tfitzmac
-ms.openlocfilehash: b6082f84253b3ad1fe43f28433e00b2b341a64f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d2256241611759b8e2786042d91e226fce5e351
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344643"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27852672"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>Excluir advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advanced
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: Verificar grupos de membros
 description: Verificar a associação em uma lista especificada de grupos e retorna a partir dessa lista desses grupos
-ms.openlocfilehash: b7baccd19b9d5a84ecbca4d75bca053eb51bc3f6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033026"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854037"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 
@@ -44,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupIds|String|Uma coleção que contém as IDs de objetos dos grupos em que se deve verificar a associação. Até 20 grupos podem ser especificados.|
+|groupIds|Cadeia de caracteres|Uma coleção que contém as IDs de objetos dos grupos em que se deve verificar a associação. Até 20 grupos podem ser especificados.|
 
 ## <a name="response"></a>Resposta
 

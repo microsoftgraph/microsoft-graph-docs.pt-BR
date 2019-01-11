@@ -1,12 +1,13 @@
 ---
 title: Membros do grupo de lista
 description: Obtenha uma lista de membros de direto do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Esta operação não é transitiva.
-ms.openlocfilehash: 788939d2b81e7e5667b3a6164c7e44b83ce63a3e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: af54ef994fb0f62af43bf9f9ce3cd5fe5d2b1503
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033923"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854135"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 

@@ -2,12 +2,13 @@
 title: ação de desassociar
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: cfd4b9a740c97131c6e937e9dd8e9013dba95f9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd3b0ebcd6cc7969e79f13642a85d00aa4936625
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848871"
 ---
 # <a name="unbind-action"></a>ação de desassociar
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidForWorkSettings/unbind
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Chamada Delete
 description: Excluir ou desligar a uma chamada ativa.
 author: VinodRavichandran
-ms.openlocfilehash: ae12a6ee937075745957cfccbd4adcbd4dc2f5f8
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 1d7c1ef73282a74c1934a0dbaebf1743bdff44ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848682"
 ---
 # <a name="delete-call"></a>Chamada Delete
 
@@ -15,7 +16,7 @@ ms.locfileid: "27380251"
 
 Excluir ou desligar a uma chamada ativa.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bookingReminder
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: f5f7b30c296433dd96ffa14a75e3f0286e8a16a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f1708d4ac9606ad5c862cb9b1bc73e1ddcfec4a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853862"
 ---
 # <a name="bookingreminder-resource-type"></a>tipo de recurso de bookingReminder
 
@@ -20,7 +21,7 @@ Representa quando e para os quais enviar um lembrete de email.
 |:---------------|:--------|:----------|
 |mensagem|String|A mensagem do lembrete.|
 |deslocamento|Duração|A quantidade de tempo antes do início de um compromisso que o lembrete deve ser enviado. Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|recipients|String| As pessoas que recebem shouold o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
+|recipients|Cadeia de caracteres| As pessoas que recebem shouold o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

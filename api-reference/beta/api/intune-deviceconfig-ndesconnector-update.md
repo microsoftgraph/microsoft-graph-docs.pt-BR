@@ -2,12 +2,13 @@
 title: Atualizar ndesConnector
 description: Atualize as propriedades de um objeto ndesConnector.
 author: tfitzmac
-ms.openlocfilehash: 80a518a403ce2354ec2f0a633520baf98ae2c7c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ef3857d6b12803279c50540883125ec0685ff81b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847310"
 ---
 # <a name="update-ndesconnector"></a>Atualizar ndesConnector
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
@@ -47,10 +48,10 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave do conector NDES.|
+|id|Cadeia de caracteres|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector Ndes|
 |estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
-|displayName|String|O nome amigável do conector Ndes.|
+|displayName|Cadeia de caracteres|O nome amigável do conector Ndes.|
 
 
 

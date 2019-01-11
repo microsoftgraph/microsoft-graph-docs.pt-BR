@@ -2,12 +2,13 @@
 title: Criar mobileAppInstallStatus
 description: Crie um novo objeto de mobileAppInstallStatus.
 author: tfitzmac
-ms.openlocfilehash: 12dfa8e7f827ef2d2933249a6089d000ef868769
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eb20bc01884c895baaf88f2ccdee3af69d534b21
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854499"
 ---
 # <a name="create-mobileappinstallstatus"></a>Criar mobileAppInstallStatus
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto mobileAppInstallStatus.
@@ -48,19 +49,19 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|deviceName|String|Nome do dispositivo|
+|id|Cadeia de caracteres|Chave da entidade.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo|
 |deviceId|Cadeia de caracteres|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Última sincronização data hora|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes de estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|O erro de código para instalar ou desinstalar falhas.|
-|osVersion|String|Versão do sistema operacional|
+|osVersion|Cadeia de caracteres|Versão do sistema operacional|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
-|userPrincipalName|String|Nome UPN|
-|displayVersion|String|Versão legível humana do aplicativo|
+|userPrincipalName|Cadeia de caracteres|Nome UPN|
+|displayVersion|Cadeia de caracteres|Versão legível humana do aplicativo|
 
 
 

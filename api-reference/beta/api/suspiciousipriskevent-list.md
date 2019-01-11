@@ -1,12 +1,13 @@
 ---
 title: Lista suspiciousIpRiskEvents
 description: Recupere uma lista de objetos suspiciousipriskevent.
-ms.openlocfilehash: fe6d14b4f1c7fc1d65b6293de156a63ed2bd15a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2e540962f94e20cf0d9afed5fe56e0270ef5e6ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845588"
 ---
 # <a name="list-suspiciousipriskevents"></a>Lista suspiciousIpRiskEvents
 

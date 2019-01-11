@@ -2,12 +2,13 @@
 title: tipo de enum keySize
 description: Opções de tamanho da chave.
 author: tfitzmac
-ms.openlocfilehash: 03ba06cf8d2059536e46ca629ed6cbbd4ce5a9cb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19e12557f5e266ca8f6d5fddd35487d6efb89b8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851566"
 ---
 # <a name="keysize-enum-type"></a>tipo de enum keySize
 

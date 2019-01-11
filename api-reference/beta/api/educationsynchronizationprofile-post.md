@@ -2,12 +2,13 @@
 title: Criar um educationSynchronizationProfile
 description: 'Crie uma solicitação para um novo perfil de sincronização de dados escola no inquilino. Consulte o status para obter o status do perfil. '
 author: mmast-msft
-ms.openlocfilehash: 20c4a7f4dd1512a52bed4a12d1642b8d1138d0e3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c5ce12f43af4e32691c34038a9a0c0527d314c06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853848"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Criar um educationSynchronizationProfile
 
@@ -15,10 +16,10 @@ ms.locfileid: "27345308"
 
 Crie uma solicitação para um novo escola dados [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino. [O status da consulta](educationsynchronizationprofilestatus-get.md) para obter o status do perfil. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|

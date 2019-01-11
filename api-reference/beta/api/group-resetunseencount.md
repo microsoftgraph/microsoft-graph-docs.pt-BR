@@ -2,12 +2,13 @@
 title: 'group: resetUnseenCount'
 description: Redefina o unseenCount das postagens que o usuário atual não observou desde sua última visita. Suporte para Office 365 apenas para grupos.
 author: dkershaw10
-ms.openlocfilehash: f63a3668bc9059819c09bdc43dd78a138196a241
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 29102945e5a549db737cc94453ea4114b82a4dde
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853890"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
@@ -15,7 +16,7 @@ ms.locfileid: "27350152"
 
 Redefina o unseenCount das postagens que o usuário atual não observou desde sua última visita. Suporte para Office 365 apenas para grupos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -2,12 +2,13 @@
 title: Excluir mailFolder
 description: Exclua o mailFolder especificado ou mailSearchFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 99cff1e4e07a5df0d2a338a42f866db6172bcbd5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46a47bc10560269ae78977fb6ada1d177c46e45e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851552"
 ---
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 
@@ -19,7 +20,7 @@ Você pode especificar uma pasta de email por sua ID de pasta, ou por seu [nome 
 
 >**Observação** Você não poderá excluir itens na pasta itens recuperáveis exclusões (representado pelo nome da pasta conhecido `recoverableitemsdeletions`). Para obter mais informações, consulte [retenção de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [Limpar itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

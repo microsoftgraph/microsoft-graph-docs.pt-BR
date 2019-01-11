@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsKioskActiveDirectoryGroup
 description: A classe usada para identificar um grupo de diretório do Windows Azure para a configuração de quiosque
 author: tfitzmac
-ms.openlocfilehash: 618b93182d17d485a35d2567f45c218c6117658f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc9db9aa120411c423492efa162973e33cc4c303
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331770"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850523"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>tipo de recurso de windowsKioskActiveDirectoryGroup
 
@@ -22,7 +23,7 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupName|String|O nome do grupo AD que será bloqueado para esta configuração de quiosque|
+|groupName|Cadeia de caracteres|O nome do grupo AD que será bloqueado para esta configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhum

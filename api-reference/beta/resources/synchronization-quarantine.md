@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de synchronizationQuarantine
 description: Fornece informações sobre o estado de quarentena de um synchronizationJob.
-ms.openlocfilehash: b29da9644968ffe17abb02010f8aa5c304ca7905
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0077d48e69ed4c2c190d0b50a6fcfc1749626
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849725"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>tipo de recurso de synchronizationQuarantine
 
@@ -19,7 +20,7 @@ Fornece informações sobre o estado de quarentena de um [synchronizationJob](sy
 |:---------------|:--------|:----------|
 |currentBegan|DateTimeOffset|Data e hora de quando a quarentena foi última avaliada e impostas. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |nextAttempt|DateTimeOffset|Data e hora de quando a próxima tentativa reavalie a quarentena será feita. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|motivo|String|Um código que significa o motivo pelo qual a quarentena foi imposta. Os valores possíveis são: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException`, `Unknown`.|
+|motivo|Cadeia de caracteres|Um código que significa o motivo pelo qual a quarentena foi imposta. Os valores possíveis são: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException`, `Unknown`.|
 |seriesBegan|DateTimeOffset|Data e hora de quando a quarentena primeiro foi imposta nesta série (uma série inicia quando uma quarentena é imposta pela primeira vez e é redefinida assim que a quarentena está ativada). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |seriesCount|Int64|Número de vezes nesta série de quarentena foi avaliado novamente e deixado em vigor (uma série inicia quando quarentena é imposta pela primeira vez e é redefinida tão logo quarentena é elevada).|
 

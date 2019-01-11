@@ -1,19 +1,20 @@
 ---
 title: Obter privilegedApproval
 description: Recupere as propriedades e relações do objeto privilegedapproval.
-ms.openlocfilehash: 9fb7aee3184413aa51dc553e5a2bcd694076d579
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: eef213416232db67bb0c1134e35d4af94734b468
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748196"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847618"
 ---
 # <a name="get-privilegedapproval"></a>Obter privilegedApproval
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere as propriedades e relações do objeto privilegedapproval.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

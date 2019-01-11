@@ -2,12 +2,13 @@
 title: Criar contato
 description: Adicione um contato na pasta de contatos raiz ou no ponto de extremidade de contatos de outra pasta de contatos.
 author: dkershaw10
-ms.openlocfilehash: cb95f9affa637dfb04109fc7192c6ddafe61362a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f412310bac1f8767fdb62857d050ebcdc236fc5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846981"
 ---
 # <a name="create-contact"></a>Criar contato
 

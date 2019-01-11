@@ -2,12 +2,13 @@
 title: Obter deviceManagementScriptRunSummary
 description: Leia as propriedades e os relacionamentos do objeto deviceManagementScriptRunSummary.
 author: tfitzmac
-ms.openlocfilehash: d09943bfd24eba10258a38f00bca4d37a4795885
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2d8cc15493b2d667bf3c7358255ed66fa6e5bc4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847125"
 ---
 # <a name="get-devicemanagementscriptrunsummary"></a>Obter deviceManagementScriptRunSummary
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

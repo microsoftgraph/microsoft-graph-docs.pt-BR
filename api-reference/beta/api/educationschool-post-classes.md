@@ -2,12 +2,13 @@
 title: Adicionar educationClass a educationSchool
 description: Adicione uma aula a uma escola.
 author: mmast-msft
-ms.openlocfilehash: 2ac40545dadb083751192ae516fb131d43cccb64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e09bd141c0b474d44ce9d691cff29b5164f8f34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308845"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848577"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Adicionar educationClass a educationSchool
 

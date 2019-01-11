@@ -2,19 +2,20 @@
 title: Obter outlookTaskFolder
 description: Obtenha as propriedades e relacionamentos da pasta de tarefas do Outlook especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: 093741ebffb8c2bd3305399b61391af1216eef9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 61f31f95ab31aab254c3497f088117480e84a512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334059"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853540"
 ---
 # <a name="get-outlooktaskfolder"></a>Obter outlookTaskFolder
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Obtenha as propriedades e relacionamentos da pasta de tarefas do Outlook especificado.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

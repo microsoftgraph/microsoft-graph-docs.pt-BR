@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bookingPerson
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: d20f6ee9e14723a80f012cfffb1e4b8214f89739
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 606e0e0d1d851fac16b25310b278ca524124eb00
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038100"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845574"
 ---
 # <a name="bookingperson-resource-type"></a>tipo de recurso de bookingPerson
 
@@ -17,9 +18,9 @@ Este é um tipo de base para uma pessoa de uma empresa Microsoft Bookings, que p
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Um nome da entidade derivada, qual interfaces com os clientes.|
-|emailAddress|String|O endereço de email da pessoa.|
-|id|String| A ID da entidade derivada. Somente leitura.|
+|displayName|Cadeia de caracteres|Um nome da entidade derivada, qual interfaces com os clientes.|
+|emailAddress|Cadeia de caracteres|O endereço de email da pessoa.|
+|id|Cadeia de caracteres| A ID da entidade derivada. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

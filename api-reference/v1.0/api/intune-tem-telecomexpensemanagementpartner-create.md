@@ -2,12 +2,13 @@
 title: Criar telecomExpenseManagementPartner
 description: Cria um novo objeto telecomExpenseManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: 1dc3bf14bb8ffbf64a88608b1dabc4f655394602
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 95c562e8009f15911048ee5bac419f9e879af4c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845168"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Criar telecomExpenseManagementPartner
 
@@ -36,7 +37,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto telecomExpenseManagementPartner.

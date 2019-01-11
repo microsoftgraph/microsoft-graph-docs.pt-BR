@@ -2,12 +2,13 @@
 title: Get managedAppStatusRaw
 description: Ler propriedades e relações do objeto managedAppStatusRaw.
 author: tfitzmac
-ms.openlocfilehash: c308b36a49645b682b497f928c997eebdae6d520
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23b226de9b5c8d92faf8f2803e806d8ca1d65b56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854695"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

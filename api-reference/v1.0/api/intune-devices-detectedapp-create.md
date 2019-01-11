@@ -2,12 +2,13 @@
 title: Criar detectedApp
 description: Criar um novo objeto detectedApp.
 author: tfitzmac
-ms.openlocfilehash: 60c47746e49429e37a5a40a5c86714d209ff6c3d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41d7cd2c7b078baae265ecd9a9c4244b7191fedc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355479"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846323"
 ---
 # <a name="create-detectedapp"></a>Criar detectedApp
 
@@ -36,7 +37,7 @@ POST /deviceManagement/detectedApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto detectedApp.

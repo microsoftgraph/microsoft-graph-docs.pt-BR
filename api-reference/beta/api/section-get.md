@@ -1,12 +1,13 @@
 ---
 title: Obter seção
 description: Recupere as propriedades e os relacionamentos de um objeto section.
-ms.openlocfilehash: e4e46a220e02b5fe98e18a1f62125c7697efe052
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b9746715d01a51f0a35da3936e64b850020629ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846946"
 ---
 # <a name="get-section"></a>Obter seção
 

@@ -2,12 +2,13 @@
 title: Lista de tendências
 description: Percepção calculada que retorna a lista de itens de tendências em torno do usuário.
 author: simonhult
-ms.openlocfilehash: de169f9960a1694e452b8dcfd16aafde89d3ac29
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86b9daf96529d50d8767f234c3b1a6d9526eaac4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343411"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854786"
 ---
 # <a name="list-trending"></a>Lista de tendências
 
@@ -15,7 +16,7 @@ ms.locfileid: "27343411"
 
 Percepção calculada que retorna a lista de itens de tendências em torno do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

@@ -2,12 +2,13 @@
 title: Atualizar chartaxistitle
 description: Atualiza as propriedades do objeto chartaxistitle.
 author: lumine2008
-ms.openlocfilehash: d0267b974820e109cc2f680c0e296a4bb86c3708
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2668e841c6628e779d296696be7b2fbe9344b4aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853981"
 ---
 # <a name="update-chartaxistitle"></a>Atualizar chartaxistitle
 

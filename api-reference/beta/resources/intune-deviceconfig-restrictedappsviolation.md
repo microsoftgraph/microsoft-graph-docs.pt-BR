@@ -2,12 +2,13 @@
 title: tipo de recurso de restrictedAppsViolation
 description: Violação de perfil de configuração de aplicativos restritos por dispositivo por usuário
 author: tfitzmac
-ms.openlocfilehash: cb614bc56f27281198fcecb73bae2b7beddfa266
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aefd9996805f0ee454bebc8871662b0ceac05a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304932"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849375"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso de restrictedAppsViolation
 
@@ -28,13 +29,13 @@ Violação de perfil de configuração de aplicativos restritos por dispositivo 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
-|userId|String|Identificador exclusivo do usuário, deve ser um Guid|
+|id|Cadeia de caracteres|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
+|userId|Cadeia de caracteres|Identificador exclusivo do usuário, deve ser um Guid|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|String|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
-|deviceName|String|Nome do dispositivo|
-|deviceConfigurationId|String|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
-|deviceConfigurationName|String|Nome do perfil de configuração de dispositivo|
+|managedDeviceId|Cadeia de caracteres|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
+|deviceName|Cadeia de caracteres|Nome do dispositivo|
+|deviceConfigurationId|Cadeia de caracteres|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
+|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração de dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado restrito de aplicativos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violadas|

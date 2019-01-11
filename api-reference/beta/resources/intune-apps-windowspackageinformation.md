@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsPackageInformation
 description: Contém propriedades para as informações de pacote para uma linha do Windows do aplicativo de negócios.
 author: tfitzmac
-ms.openlocfilehash: dcc277c610e6ceb27a94ab41993e599a258dd55e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f7f3cd593670e071ae62bdb287bcebeee01d555
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342823"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849529"
 ---
 # <a name="windowspackageinformation-resource-type"></a>tipo de recurso de windowsPackageInformation
 
@@ -20,11 +21,11 @@ Contém propriedades para as informações de pacote para uma linha do Windows d
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode executar em. Os valores possíveis são: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|displayName|String|O nome de exibição.|
-|identityName|String|O Nome da Identidade.|
-|identityPublisher|String|O Editor de identidade.|
-|identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
-|identityVersion|String|A versão de identidade.|
+|displayName|Cadeia de caracteres|O nome de exibição.|
+|identityName|Cadeia de caracteres|O Nome da Identidade.|
+|identityPublisher|Cadeia de caracteres|O Editor de identidade.|
+|identityResourceIdentifier|Cadeia de caracteres|O Identificador de Recurso da Identidade.|
+|identityVersion|Cadeia de caracteres|A versão de identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
 
 ## <a name="relationships"></a>Relações
