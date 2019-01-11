@@ -1,12 +1,13 @@
 ---
 title: Obter impossibleTravelRiskEvent
 description: Recupere as propriedades e relacionamentos de um objeto impossibletravelriskevent.
-ms.openlocfilehash: 3bb5b052cca79e90c26e7e26f2b9cb798e97680f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6f9c6913fe1bdcd5576814f170eb75d51b28da40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036158"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843943"
 ---
 # <a name="get-impossibletravelriskevent"></a>Obter impossibleTravelRiskEvent
 

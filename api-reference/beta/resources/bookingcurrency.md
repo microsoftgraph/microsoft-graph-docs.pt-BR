@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bookingCurrency
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: a68b88160e42217f3605c4a4bb30f692e8dafc06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 96a5e04f705cca04e926ce25fd7e674528a60ccb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843670"
 ---
 # <a name="bookingcurrency-resource-type"></a>tipo de recurso de bookingCurrency
 
@@ -26,8 +27,8 @@ Representa uma moeda monetária compatíveis com uma [bookingBusiness](bookingbu
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Um código de moeda de 3 caracteres, com base em [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Por exemplo, o código de moeda para o dólar americano é USD e para o Dólar australiano é AUD. Somente leitura.|
-|símbolo|String| O símbolo da moeda. Por exemplo, o símbolo de moeda para o dólar americano e para o Dólar australiano é $.  |
+|id|Cadeia de caracteres| Um código de moeda de 3 caracteres, com base em [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Por exemplo, o código de moeda para o dólar americano é USD e para o Dólar australiano é AUD. Somente leitura.|
+|símbolo|Cadeia de caracteres| O símbolo da moeda. Por exemplo, o símbolo de moeda para o dólar americano e para o Dólar australiano é $.  |
 
 ## <a name="relationships"></a>Relações
 Nenhum

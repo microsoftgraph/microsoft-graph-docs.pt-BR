@@ -2,12 +2,13 @@
 title: Excluir windows10SecureAssessmentConfiguration
 description: Exclui windows10SecureAssessmentConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 69517aba33e89b97532e4b3683b129cbdb1cab72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eea16998875c54d6a15547e19733c1afab23a575
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357761"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844720"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>Excluir windows10SecureAssessmentConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

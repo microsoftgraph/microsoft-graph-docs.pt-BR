@@ -2,12 +2,13 @@
 title: função managedDeviceEnrollmentFailureDetails
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: e95a0590ee08fb29d2ae95cb68f0bded658ecf18
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357054"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840366"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>função managedDeviceEnrollmentFailureDetails
 
@@ -37,7 +38,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
@@ -47,8 +48,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |:---|:---|:---|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|filter|String|Ainda não documentado|
-|skipToken|String|Ainda não documentado|
+|filter|Cadeia de caracteres|Ainda não documentado|
+|skipToken|Cadeia de caracteres|Ainda não documentado|
 
 
 

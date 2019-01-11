@@ -1,12 +1,13 @@
 ---
 title: Criar mailSearchFolder
 description: Use essa API para criar um novo mailSearchFolder na caixa de correio do usuário especificado.
-ms.openlocfilehash: a35827a6b9164c8d4c1c0fe54a1897b2271fc5d6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 07c6b96bc2dec35d06b5563673012ca0eafb3885
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840184"
 ---
 # <a name="create-mailsearchfolder"></a>Criar mailSearchFolder
 
@@ -48,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| @odata.type | String | O tipo da pasta a ser criado. Definido como "microsoft.graph.mailSearchFolder". |
-| displayName | String | O nome de exibição da nova pasta.|
+| @odata.type | Cadeia de caracteres | O tipo da pasta a ser criado. Definido como "microsoft.graph.mailSearchFolder". |
+| displayName | Cadeia de caracteres | O nome de exibição da nova pasta.|
 | includeNestedFolders | Booliano | Como a hierarquia de pastas de caixa de correio deve ser percorrida. `true`significa que uma profundidade de pesquisa deve ser feito ao `false` significa rasos de pesquisa devem ser feito em vez disso. |
 | sourceFolderIDs | String collection | As pastas de caixa de correio que devem ser extraídas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 

@@ -1,12 +1,13 @@
 ---
 title: Criação de programa
 description: No Windows Azure AD para acessar o recurso de revisões, crie um novo objeto de programa.
-ms.openlocfilehash: 1ac3fa1f0b555fc92449adf0e57217d0a7d50375
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b982242bbdddb9769d64c9757d9041fddc215d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039150"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844013"
 ---
 # <a name="create-program"></a>Criação de programa
 
@@ -65,7 +66,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

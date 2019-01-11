@@ -2,12 +2,13 @@
 title: Adicionar anexo
 description: Use esta API para criar um novo Anexo.
 author: angelgolfer-ms
-ms.openlocfilehash: 4e0b2cb19737071b20269e4fab602dc10395a6b2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59e1271e6b27b68e813cb0386c8041a2608a82e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317959"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806465"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 

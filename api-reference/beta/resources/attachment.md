@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso attachment
 description: Você pode adicionar conteúdo relacionado a um evento,
-ms.openlocfilehash: f0bb9ec37d2fe3d034dce9532ad316d371c4937e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5648194b0f636c8757d1b20c492abc099dce377d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842788"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso attachment
 
@@ -44,7 +45,7 @@ A seguir estão as propriedades de base de qualquer recurso de anexo. Consulte o
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo MIME.|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |isInline|Booliano|`true` se o anexo for embutido; caso contrário, `false`.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |nome|Cadeia de caracteres|O nome de exibição do anexo. Isso não precisa ser o nome de arquivo real.|

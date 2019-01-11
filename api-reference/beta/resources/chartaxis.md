@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartAxis
 description: Representa um único eixo em um gráfico.
 author: lumine2008
-ms.openlocfilehash: 766a1a6823cc83efb3ecaf7250f230216fc13cb0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 077afe6a384b77c9b4bb3b1bab6a0e257a9175a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842718"
 ---
 # <a name="chartaxis-resource-type"></a>Tipo de recurso ChartAxis
 
@@ -37,7 +38,7 @@ Representa um único eixo em um gráfico.
 |formato|[ChartAxisFormat](chartaxisformat.md)|Representa a formatação de um objeto Chart, que inclui formatação de linha e de fonte. Somente leitura.|
 |majorGridlines|[ChartGridlines](chartgridlines.md)|Retorna um objeto de linha de grade que representa as principais linhas de grade do eixo especificado. Somente leitura.|
 |minorGridlines|[ChartGridlines](chartgridlines.md)|Retorna um objeto Gridlines que representa as linhas de grade secundárias do eixo especificado. Somente leitura.|
-|title|[ChartAxisTitle](chartaxistitle.md)|Representa o título do eixo. Somente leitura.|
+|título|[ChartAxisTitle](chartaxistitle.md)|Representa o título do eixo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

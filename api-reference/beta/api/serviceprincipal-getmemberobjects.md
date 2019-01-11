@@ -1,12 +1,13 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
 description: Obter a lista de grupos e funções de diretório que esse serviço principal é um membro de.  Essa verificação é transitiva.
-ms.openlocfilehash: 82fd1791b32c54a4670977e7ca5a66bdd92c1c14
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 46c23e18d2484b3dff38ed8791f203e823c4cc9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037906"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842116"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 

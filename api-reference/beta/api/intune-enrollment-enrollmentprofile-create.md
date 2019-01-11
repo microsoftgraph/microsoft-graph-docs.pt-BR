@@ -2,12 +2,13 @@
 title: Criar enrollmentProfile
 description: Crie um novo objeto de enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: becfc040bb7fa500a5378f16f50f6bcb2e4f106d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f10c8b04a19f541305dd63ec2f063a4fff1d8226
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313647"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843985"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto enrollmentProfile.
@@ -48,11 +49,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|displayName|String|Nome do perfil|
-|description|String|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil exige autenticação do usuário|
-|configurationEndpointUrl|String|Url de ponto de extremidade de configuração a ser usado para registro|
-|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
+|displayName|Cadeia de caracteres|Nome do perfil|
+|description|Cadeia de caracteres|Descrição do perfil|
+|requiresUserAuthentication|Booliano|Indica se o perfil exige autenticação do usuário|
+|configurationEndpointUrl|Cadeia de caracteres|Url de ponto de extremidade de configuração a ser usado para registro|
+|enableAuthenticationViaCompanyPortal|Booliano|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
 
 
 

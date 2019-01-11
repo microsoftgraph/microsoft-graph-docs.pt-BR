@@ -2,12 +2,13 @@
 title: Listar androidCompliancePolicies
 description: Listar propriedades e relações dos objetos androidCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 53097963cdd489006c176abd5dbf32633f7297d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f31fcb920bc44c87b4320d880d3f220c5f819a91
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842186"
 ---
 # <a name="list-androidcompliancepolicies"></a>Listar androidCompliancePolicies
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

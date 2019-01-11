@@ -2,12 +2,13 @@
 title: Criar managementConditionStatement
 description: Crie um novo objeto de managementConditionStatement.
 author: tfitzmac
-ms.openlocfilehash: 5402faee0c7ace84957f3ff6a2ef65844f5a527e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da085e2aa384e2ee3d4eedd611cfe14945b8fe1d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327346"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806437"
 ---
 # <a name="create-managementconditionstatement"></a>Criar managementConditionStatement
 
@@ -39,7 +40,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto managementConditionStatement.
@@ -48,9 +49,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
-|displayName|String|O nome definido admin da declaração de condição de gerenciamento.|
-|description|String|O administrador definidos descrição da declaração de condição de gerenciamento.|
+|id|Cadeia de caracteres|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
+|displayName|Cadeia de caracteres|O nome definido admin da declaração de condição de gerenciamento.|
+|description|Cadeia de caracteres|O administrador definidos descrição da declaração de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora que da última modificação a declaração de condição de gerenciamento. Lado de serviços atualizado.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão da instrução gerenciamento condição usada para avaliar se um gerenciamento de condição instrução foi ativado/desativado.|

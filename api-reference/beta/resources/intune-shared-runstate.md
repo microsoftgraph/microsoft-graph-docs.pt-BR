@@ -2,12 +2,13 @@
 title: tipo de enum runState
 description: Indica o tipo de status de execução do script de gerenciamento de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 87c845c02bd5a1571ab2f6382acbcc92cf81170d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 38831625e5f3fc5f3e05b599054c738482b0a6cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845000"
 ---
 # <a name="runstate-enum-type"></a>tipo de enum runState
 

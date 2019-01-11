@@ -2,12 +2,13 @@
 title: Listar managedApps
 description: Listar propriedades e relações dos objetos managedApp.
 author: tfitzmac
-ms.openlocfilehash: 86062047c11a44fa6586f1c0582dce78445291ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0669ec4c1e2c0eddd8217f30dc2f7705662fc1b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843124"
 ---
 # <a name="list-managedapps"></a>Listar managedApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

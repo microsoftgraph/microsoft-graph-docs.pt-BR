@@ -1,12 +1,13 @@
 ---
 title: Excluir assinatura
 description: Exclua uma assinatura.
-ms.openlocfilehash: be2c32f0915e8718203e46489be9861bf0f05451
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1e2efb9835e5e625bdac0385b5011cfe5c8c64b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842046"
 ---
 # <a name="delete-subscription"></a>Excluir assinatura
 

@@ -2,12 +2,13 @@
 title: tipo de recurso resetPasscodeActionResult
 description: Resultado da ação de redefinir a senha
 author: tfitzmac
-ms.openlocfilehash: 24d7a6f259f456c742c4317763dd9cefe8d185a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ead49e3c73dc65ebbc139fc7d1fd37743fe98be3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301105"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844706"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>tipo de recurso resetPasscodeActionResult
 

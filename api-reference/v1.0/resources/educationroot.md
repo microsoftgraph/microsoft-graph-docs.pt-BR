@@ -2,12 +2,13 @@
 title: Tipo de recurso educationRoot
 description: 'O namespace `/education` expõe funcionalidade específica ao setor de educação. '
 author: mmast-msft
-ms.openlocfilehash: 11aaaec20ccd688b16b74224d1a8c6937e52c5cd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb3f84c3417b2007485cabfa1a1078660f025f5e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840520"
 ---
 # <a name="educationroot-resource-type"></a>Tipo de recurso educationRoot
 

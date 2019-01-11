@@ -2,12 +2,13 @@
 title: Criar deviceCategory
 description: Cria um novo objeto deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 1c01fd7c953a0b0fd148390d80aa27acb010daa3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 59b6b581120f003167dafe230a2b9a8a485b4d74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843270"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
@@ -37,7 +38,7 @@ POST /deviceManagement/deviceCategories
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceCategory.

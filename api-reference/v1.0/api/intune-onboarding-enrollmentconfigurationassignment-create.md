@@ -2,12 +2,13 @@
 title: Criar enrollmentConfigurationAssignment
 description: Criar um novo objeto enrollmentConfigurationAssignment.
 author: tfitzmac
-ms.openlocfilehash: e2677c6a1ecabe71a0ff46c8e11e2e8d4515f786
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d378b9f4663a6f3770d00a0f7971d1bc4c3b01b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301614"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844083"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Criar enrollmentConfigurationAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto enrollmentConfigurationAssignment.
@@ -45,7 +46,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enrollme
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
 
 

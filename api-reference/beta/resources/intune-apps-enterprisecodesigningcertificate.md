@@ -2,12 +2,13 @@
 title: tipo de recurso de enterpriseCodeSigningCertificate
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: f16dbbf59af238e631e282d7e4d92dad46a7083b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ed023a831257dc28a9922e1e698a79ec13c951
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842130"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso de enterpriseCodeSigningCertificate
 
@@ -32,9 +33,9 @@ Ainda não documentado
 |content|Binária|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
-|subject|String|O valor de assunto para o cert.|
-|issuerName|String|O nome do emissor para o cert.|
-|emissor|String|O valor de emissor para o cert.|
+|subject|Cadeia de caracteres|O valor de assunto para o cert.|
+|issuerName|Cadeia de caracteres|O nome do emissor para o cert.|
+|emissor|Cadeia de caracteres|O valor de emissor para o cert.|
 |expirationDateTime|DateTimeOffset|A data de validade do Cert.|
 |uploadDateTime|DateTimeOffset|A data hora de certificado de assinatura de código padrão quando ele é carregado.|
 

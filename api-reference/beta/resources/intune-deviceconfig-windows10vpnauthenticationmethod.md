@@ -2,12 +2,13 @@
 title: tipo de enum windows10VpnAuthenticationMethod
 description: Tipos de conexão VPN 10 do Windows.
 author: tfitzmac
-ms.openlocfilehash: 311d69bf10950064e16e69f9d296edfed4535bd9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3613436b5df458f05fefc9037b8aadbc1265385
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810966"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>tipo de enum windows10VpnAuthenticationMethod
 

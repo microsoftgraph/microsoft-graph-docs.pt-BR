@@ -2,12 +2,13 @@
 title: tipo de recurso de iosSingleSignOnSettings
 description: iOS configurações de autenticação Kerberos de single sign-on
 author: tfitzmac
-ms.openlocfilehash: 6bde13865c1d6b34c433a92005681b247b99d984
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841059"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso de iosSingleSignOnSettings
 
@@ -21,9 +22,9 @@ iOS configurações de autenticação Kerberos de single sign-on
 |:---|:---|:---|
 |allowedAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de identificadores de aplicativo que têm permissão para usar esse logon. Se esse campo for omitido, o login se aplica a todos os aplicativos no dispositivo. Esta coleção pode conter um máximo de 500 elementos.|
 |allowedUrls|String collection|Lista das URLs de HTTP que deve coincidir para usar esse logon. Com o iOS 9.0 ou posterior, um caracteres curinga podem ser usadas.|
-|displayName|String|O nome de exibição das configurações de logon mostrado no dispositivo receptor.|
-|kerberosPrincipalName|String|Um nome UPN do Kerberos. Se não fornecido, o usuário é solicitado por um durante a instalação do perfil.|
-|kerberosRealm|String|Um nome de realm Kerberos. Maiusculas e minúsculas.|
+|displayName|Cadeia de caracteres|O nome de exibição das configurações de logon mostrado no dispositivo receptor.|
+|kerberosPrincipalName|Cadeia de caracteres|Um nome UPN do Kerberos. Se não fornecido, o usuário é solicitado por um durante a instalação do perfil.|
+|kerberosRealm|Cadeia de caracteres|Um nome de realm Kerberos. Maiusculas e minúsculas.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

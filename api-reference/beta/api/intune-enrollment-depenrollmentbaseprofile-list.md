@@ -2,12 +2,13 @@
 title: Lista depEnrollmentBaseProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depEnrollmentBaseProfile.
 author: tfitzmac
-ms.openlocfilehash: ce7edb9558864323ca08a4379ae0e6e8949c6875
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 549868f78db6b8e5b130bf03d8b588fb767a3a26
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806822"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>Lista depEnrollmentBaseProfiles
 
@@ -38,7 +39,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

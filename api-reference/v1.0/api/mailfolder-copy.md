@@ -2,12 +2,13 @@
 title: 'mailFolder: copy'
 description: Copie uma mailFolder e seu conteúdo para outra mailFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 44df53219e00479cdc48d057286f1af410e13c77
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94470a21a1a640f4333419620e79eaf7b8d1130b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356922"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844085"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -42,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro | Type | Descrição |
+| Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
 |destinationId|Cadeia de caracteres|O ID da pasta ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 

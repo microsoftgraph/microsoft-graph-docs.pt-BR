@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceEnrollmentPlatformRestriction
 description: Restrições de registro específicas de plataformas
 author: tfitzmac
-ms.openlocfilehash: 22401c83b3e68d66a2bd7a39359602e2aca0a932
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 009485c2051c47209074ae8b938e6b1b06de9eac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304120"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843859"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
 

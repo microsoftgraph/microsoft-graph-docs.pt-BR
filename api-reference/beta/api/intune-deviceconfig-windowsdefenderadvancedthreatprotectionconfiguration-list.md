@@ -2,12 +2,13 @@
 title: Listar windowsDefenderAdvancedThreatProtectionConfigurations
 description: Listar propriedades e relações dos objetos windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 463b4420da2077a46a90f90ddea69c57869e7603
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce4b7e55d97571b290be7eb4d1dbff67916d3b70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841402"
 ---
 # <a name="list-windowsdefenderadvancedthreatprotectionconfigurations"></a>Listar windowsDefenderAdvancedThreatProtectionConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

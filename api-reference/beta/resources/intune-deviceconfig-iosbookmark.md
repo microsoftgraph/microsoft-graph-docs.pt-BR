@@ -2,12 +2,13 @@
 title: tipo de recurso de iosBookmark
 description: indicador de URL iOS
 author: tfitzmac
-ms.openlocfilehash: e1577537e57365b2452e956e010f6c3f918bd743
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37cdcc1b886914b4b42e0a97e8947a565c75f5b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840996"
 ---
 # <a name="iosbookmark-resource-type"></a>tipo de recurso de iosBookmark
 
@@ -19,9 +20,9 @@ indicador de URL iOS
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|url|String|URL de permissão para acessar|
-|bookmarkFolder|String|A pasta em que o indicador deve ser adicionado no Safari|
-|displayName|String|O nome de exibição do indicador|
+|url|Cadeia de caracteres|URL de permissão para acessar|
+|bookmarkFolder|Cadeia de caracteres|A pasta em que o indicador deve ser adicionado no Safari|
+|displayName|Cadeia de caracteres|O nome de exibição do indicador|
 
 ## <a name="relationships"></a>Relações
 Nenhum

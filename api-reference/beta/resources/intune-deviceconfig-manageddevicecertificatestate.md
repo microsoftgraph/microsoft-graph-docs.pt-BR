@@ -2,12 +2,13 @@
 title: tipo de recurso de managedDeviceCertificateState
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: f26eb40d371c59a65f58bc87ac5a24d38f47a959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 087bd1e6ed1eb9c065d1c2f0f3a03941d77cc7bc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844041"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>tipo de recurso de managedDeviceCertificateState
 
@@ -28,7 +29,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Uso da chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades do período de validade. Os valores possíveis são: `days`, `months`, `years`.|
@@ -37,20 +38,20 @@ Ainda não documentado
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nome de entidade. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Formato de nome alternativo da entidade. Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar o status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|String|Nome de exibição de perfil de certificado|
+|certificateProfileDisplayName|Cadeia de caracteres|Nome de exibição de perfil de certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userDisplayName|String|Nome de exibição do usuário|
+|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
 |certificateExpirationDateTime|DateTimeOffset|Data de expiração de certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
-|certificateIssuer|String|Emissor|
-|certificateThumbprint|String|Impressão digital|
-|Número_serial_do_certificado|String|Número de série|
+|certificateIssuer|Cadeia de caracteres|Emissor|
+|certificateThumbprint|Cadeia de caracteres|Impressão digital|
+|Número_serial_do_certificado|Cadeia de caracteres|Número de série|
 |certificateKeyLength|Int32|Comprimento da chave|
-|certificateEnhancedKeyUsage|String|Uso estendido de chave|
+|certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
-|certificateSubjectNameFormatString|String|Sequência de formato de nome de entidade para formatos de nome de entidade personalizada|
-|certificateSubjectAlternativeNameFormatString|String|Sequência de formato de nome alternativo de entidade para formatos personalizados|
+|certificateSubjectNameFormatString|Cadeia de caracteres|Sequência de formato de nome de entidade para formatos de nome de entidade personalizada|
+|certificateSubjectAlternativeNameFormatString|Cadeia de caracteres|Sequência de formato de nome alternativo de entidade para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 

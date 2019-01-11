@@ -2,12 +2,13 @@
 title: Restaurar item excluído
 description: 'Restaura um item recentemente excluído de itens excluídos. '
 author: lleonard-msft
-ms.openlocfilehash: 0088daf7f84217ca921a1e3e80243d7002b5f6b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6206b850df7e808df05e191b6e0485f617a7e1ab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356536"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843872"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 

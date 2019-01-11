@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de educationAssignmentIndividualRecipient
 description: 'Usada dentro da propriedade assignment.assignTo. Quando definido para a lista de destinatários individual, serão de alunos selecionados na classe '
-ms.openlocfilehash: a71f1845b91f190afa98f3fad8d393a7f68f14c8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fab79d7836a7562c0518197600392021a71c45c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841815"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>tipo de recurso de educationAssignmentIndividualRecipient
 

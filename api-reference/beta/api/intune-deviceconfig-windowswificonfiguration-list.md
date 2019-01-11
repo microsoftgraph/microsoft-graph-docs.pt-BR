@@ -2,12 +2,13 @@
 title: Lista windowsWifiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsWifiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4e35f4e29237d8f20371553a1d4a5f4815744c0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e04b6d6e0f29bf76e4ac1b00f03b560380cb2d50
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842088"
 ---
 # <a name="list-windowswificonfigurations"></a>Lista windowsWifiConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: 'calendário: getSchedule'
 description: Obtenha as informações de disponibilidade para um conjunto de usuários, recursos ou listas de Distribuições por um período de tempo especificado.
-ms.openlocfilehash: 5122cf34530f18f872e80863f259f348193d252e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844559"
 ---
 # <a name="calendar-getschedule"></a>calendário: getSchedule
 
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|String|Representa a duração de um intervalo de tempo em um **availabilityView** na resposta. O padrão é 30 minutos, mínimo é de 6, máximo é 1440. Opcional.|
+|availabilityViewInterval|Cadeia de caracteres|Representa a duração de um intervalo de tempo em um **availabilityView** na resposta. O padrão é 30 minutos, mínimo é de 6, máximo é 1440. Opcional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que termina o período.|
 |agendamentos|String collection|Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações de disponibilidade.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que inicia o período.|

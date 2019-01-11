@@ -2,12 +2,13 @@
 title: Excluir androidEasEmailProfileConfiguration
 description: Exclui um androidEasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 853c6d46c2bf5747e031c626de82edcf90ebb871
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24052c83052ee024af797ad9b881cffaece3389c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357453"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842172"
 ---
 # <a name="delete-androideasemailprofileconfiguration"></a>Excluir androidEasEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Range
 description: Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.
-ms.openlocfilehash: d0b46587379383350fd6714b3c532dc191b641fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 65cbea6b0e025d5d4d574ebf1db3b924e042f497
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006616"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806535"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 
@@ -48,18 +49,18 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |:---------------|:--------|:----------|
 |address|string|Representa a referência do intervalo no estilo A1. O valor do endereço inclui a referência de planilha (por exemplo, Plan1!A1:B4). Somente leitura.|
 |addressLocal|string|Representa a referência de intervalo para o intervalo especificado no idioma do usuário. Somente leitura.|
-|cellCount|inteiro|Número de células no intervalo. Somente leitura.|
-|columnCount|inteiro|Representa o número total de colunas no intervalo. Somente leitura.|
+|cellCount|int|Número de células no intervalo. Somente leitura.|
+|columnCount|int|Representa o número total de colunas no intervalo. Somente leitura.|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|columnIndex|inteiro|Representa o número de colunas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
+|columnIndex|int|Representa o número de colunas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
 |formulas|Json|Representa a fórmula em notação A1.|
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
 |formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.|
 |hidden|booliano|Representa se todas as células do intervalo atual estão ocultas. Somente leitura.|
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula.|
-|rowCount|inteiro|Retorna o número total de linhas no intervalo. Somente leitura.|
+|rowCount|int|Retorna o número total de linhas no intervalo. Somente leitura.|
 |rowHidden|booliano|Representa se todas as linhas do intervalo atual estão ocultas.|
-|rowIndex|inteiro|Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
+|rowIndex|int|Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
 |text|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.|
 |valueTypes|Json|Representa o tipo de dados de cada célula. Os valores possíveis são: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Somente leitura.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|

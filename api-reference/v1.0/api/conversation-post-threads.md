@@ -2,12 +2,13 @@
 title: Criar thread
 description: 'Crie um novo thread na conversa especificada. '
 author: dkershaw10
-ms.openlocfilehash: e2c93e0c2a677afa584d0442ff1545f1926c7ec8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd231fd3108d70c0732b61f7f72b64111251d58e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304911"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839911"
 ---
 # <a name="create-thread"></a>Criar thread
 

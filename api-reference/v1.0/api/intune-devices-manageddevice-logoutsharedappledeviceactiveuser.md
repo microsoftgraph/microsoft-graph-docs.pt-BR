@@ -2,12 +2,13 @@
 title: Ação logoutSharedAppleDeviceActiveUser
 description: Sair do usuário ativo no dispositivo Apple compartilhado
 author: tfitzmac
-ms.openlocfilehash: 7f88f050e38d7d352b43722a7e0a71fca2fa4fb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93d33d534701d5aa1801513ae393f2cabff76dfb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843929"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>Ação logoutSharedAppleDeviceActiveUser
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

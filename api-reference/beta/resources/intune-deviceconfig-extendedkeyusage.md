@@ -2,12 +2,13 @@
 title: tipo de recurso de extendedKeyUsage
 description: Definição de uso estendido de chave personalizada
 author: tfitzmac
-ms.openlocfilehash: 2b6155a0fbb234cb0b2081a8a4a226a8d218dbc2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f1fd159a9b9fdb621a1e52bd080c005c8b93129c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840975"
 ---
 # <a name="extendedkeyusage-resource-type"></a>tipo de recurso de extendedKeyUsage
 
@@ -19,8 +20,8 @@ Definição de uso estendido de chave personalizada
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Nome do uso estendido de chave|
-|objectIdentifier|String|Identificador de objeto de uso da chave de estendido|
+|name|Cadeia de caracteres|Nome do uso estendido de chave|
+|objectIdentifier|Cadeia de caracteres|Identificador de objeto de uso da chave de estendido|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,12 +2,13 @@
 title: tipo de enum windowsDeviceType
 description: Contém propriedades para o tipo de dispositivo do Windows.
 author: tfitzmac
-ms.openlocfilehash: 74f169f66ab2fe1bf29fbd4a08c07c540367947f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d94bf34975c0bec7a7cb58e8b8cdcc099d500a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360687"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841080"
 ---
 # <a name="windowsdevicetype-enum-type"></a>tipo de enum windowsDeviceType
 
@@ -17,7 +18,7 @@ Contém propriedades para o tipo de dispositivo do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum sinalizador definido.|
+|nenhum|0|Nenhum sinalizador definido.|
 |área de trabalho|1|Ou não há suporte para o tipo de dispositivo do Windows de área de trabalho.|
 |celular|2|Ou não há suporte para o tipo de dispositivo Windows Mobile.|
 |holográfica|4|Ou não há suporte para o tipo de dispositivo do Windows holográfica.|

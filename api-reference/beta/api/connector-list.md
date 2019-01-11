@@ -1,12 +1,13 @@
 ---
 title: Conectores de lista
 description: Recupere uma lista de objetos do conector.
-ms.openlocfilehash: 663105bc3f2ac7ae8826a22dc6c849d1095551d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a66a6c11c6001c327648da5cd53fb781f507673d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808908"
 ---
 # <a name="list-connectors"></a>Conectores de lista
 

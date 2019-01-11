@@ -2,12 +2,13 @@
 title: Tipo de recurso fileEncryptionInfo
 description: Contém propriedades de informações de criptografia de arquivos para a versão de conteúdo de um aplicativo de linha de negócios.
 author: tfitzmac
-ms.openlocfilehash: c58865e746afcde8167c8d905c3b4064d8690a95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ed56f695da8dece64702472cd3822603e02dd8b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840688"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
 

@@ -2,19 +2,20 @@
 title: Excluir outlookTaskGroup
 description: Exclua o outlookTaskGroup especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: e2494823db2415afda2d6b5060c1a34e2d78d131
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cf370e04da89cf5f561ebb9aa720f507ca87a55
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319471"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843180"
 ---
 # <a name="delete-outlooktaskgroup"></a>Excluir outlookTaskGroup
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Exclua o especificado [outlookTaskGroup](../resources/outlooktaskgroup.md).
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

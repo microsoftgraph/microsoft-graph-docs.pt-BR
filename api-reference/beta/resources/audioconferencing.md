@@ -2,12 +2,13 @@
 title: tipo de recurso de audioConferencing
 description: Representa as informações de acesso telefônicas de um onlineMeeting.
 author: VinodRavichandran
-ms.openlocfilehash: 4e2ee26e6f9a86d50efcb21cd95b84b207488ef1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 9bd8343f29a797a24044f02aa2a00bd098c35007
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843621"
 ---
 # <a name="audioconferencing-resource-type"></a>tipo de recurso de audioConferencing
 
@@ -17,13 +18,13 @@ Representa as informações de acesso telefônicas de um [onlineMeeting](onlinem
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	            | Tipo    | Descrição                                                                    |
+| Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | Uma URL para a página da web acessível externamente que contém informações de discagem. |
-| leaderPasscode      | String  | A senha de líder necessária para conectar ao provedor de conferência de áudio.      |
-| participantPasscode | String  | A senha de participante necessária para conectar ao provedor de conferência de áudio. |
-| tollFreeNumber      | String  | O número de chamada gratuito para conectar ao provedor de conferência de áudio.              |
-| tollNumber          | String  | O número de Chamada Tarifada para conectar ao provedor de conferência de áudio.                   |
+| dialinUrl           | Cadeia de caracteres  | Uma URL para a página da web acessível externamente que contém informações de discagem. |
+| leaderPasscode      | Cadeia de caracteres  | A senha de líder necessária para conectar ao provedor de conferência de áudio.      |
+| participantPasscode | Cadeia de caracteres  | A senha de participante necessária para conectar ao provedor de conferência de áudio. |
+| tollFreeNumber      | Cadeia de caracteres  | O número de chamada gratuito para conectar ao provedor de conferência de áudio.              |
+| tollNumber          | Cadeia de caracteres  | O número de Chamada Tarifada para conectar ao provedor de conferência de áudio.                   |
 
 ## <a name="json-representation"></a>Representação JSON
 

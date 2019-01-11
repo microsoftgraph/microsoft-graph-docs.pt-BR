@@ -2,12 +2,13 @@
 title: tipo de recurso de embeddedSIMActivationCodePoolAssignment
 description: A incorporado entidade SIM ativação código pool atribuição atribui um embeddedSIMActivationCodePool específico a um grupo de dispositivo AAD.
 author: tfitzmac
-ms.openlocfilehash: 67d563a630fb1c1092416f1081c4decda0d9eaf4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8faac932014d4dc770748daa6a3d883b4e648d70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843306"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>tipo de recurso de embeddedSIMActivationCodePoolAssignment
 
@@ -28,7 +29,7 @@ A incorporado entidade SIM ativação código pool atribuição atribui um embed
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a atribuição de pool do código de ativação SIM incorporado. Valor atribuído quando criado gerado pelo sistema.|
+|id|Cadeia de caracteres|Identificador exclusivo para a atribuição de pool do código de ativação SIM incorporado. Valor atribuído quando criado gerado pelo sistema.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupos direcionados por pool de código de ativação SIM incorporado.|
 
 ## <a name="relationships"></a>Relações

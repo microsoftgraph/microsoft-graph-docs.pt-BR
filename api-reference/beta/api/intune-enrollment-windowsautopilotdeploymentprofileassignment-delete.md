@@ -2,12 +2,13 @@
 title: Excluir windowsAutopilotDeploymentProfileAssignment
 description: Exclui um windowsAutopilotDeploymentProfileAssignment.
 author: tfitzmac
-ms.openlocfilehash: 5d6aa06e98be733994d2f24e5183b3a2ea790f62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 298742713de340292d783782e5f5bdba33ce66af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841689"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>Excluir windowsAutopilotDeploymentProfileAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

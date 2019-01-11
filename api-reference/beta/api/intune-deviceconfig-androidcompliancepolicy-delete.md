@@ -2,12 +2,13 @@
 title: Excluir androidCompliancePolicy
 description: Exclui androidCompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 056eec42b27b94ae35e6f055a4893dd8bc9cbe4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ad3f23eb2bc65d279aef2a7e3089cfee844580ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354975"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842214"
 ---
 # <a name="delete-androidcompliancepolicy"></a>Excluir androidCompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

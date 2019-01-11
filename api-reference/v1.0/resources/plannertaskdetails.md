@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerTaskDetails
 description: O recurso **plannerTaskDetails** representa as informações adicionais sobre uma tarefa. Cada objeto task tem um objeto de detalhes.
-ms.openlocfilehash: 74ba1c5b7c607f30253463e6cfc256fd3119bf45
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a183ba0f9b19ea2de700913d29e9586442ba2c03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007236"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806570"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Tipo de recurso plannerTaskDetails
 
@@ -25,7 +26,7 @@ O recurso **plannerTaskDetails** representa as informações adicionais sobre um
 |:---------------|:--------|:----------|
 |lista de verificação|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens da lista de verificação na tarefa.|
 |description|String|Descrição da tarefa|
-|id|String| Somente leitura. ID dos detalhes da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner-identifiers-disclaimer.md) é feita no serviço.|
+|id|Cadeia de caracteres| Somente leitura. ID dos detalhes da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner-identifiers-disclaimer.md) é feita no serviço.|
 |previewType|string|Isto define o tipo de visualização que aparecerá na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido como `automatic` a visualização exibida for escolhida pelo app exibindo a tarefa.|
 |referências|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
 

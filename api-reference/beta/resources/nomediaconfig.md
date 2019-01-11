@@ -2,12 +2,13 @@
 title: tipo de recurso de noMediaConfig
 description: Configuração de mídia para não indicando nenhuma mídia.
 author: VinodRavichandran
-ms.openlocfilehash: 29d5230150a035d8ed2dd1223f66df4a8f4f30f2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c7bf75b2033c7b3340bde01b782b7eabe5ab0e76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806458"
 ---
 # <a name="nomediaconfig-resource-type"></a>tipo de recurso de noMediaConfig
 
@@ -17,7 +18,7 @@ Configuração de mídia para não indicando nenhuma mídia.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo    | Descrição|
+| Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | removeFromDefaultAudioGroup | Booliano |  |
 

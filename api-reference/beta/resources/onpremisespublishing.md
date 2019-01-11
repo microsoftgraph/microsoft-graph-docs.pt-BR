@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de onPremisesPublishing
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 8dba505347fc12d3c4a8521ebe32551d738dc4a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30ff6908a42a690e07d71b5d0c62fcb22dea3c34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037022"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842536"
 ---
 # <a name="onpremisespublishing-resource-type"></a>tipo de recurso de onPremisesPublishing
 
@@ -15,12 +16,12 @@ ms.locfileid: "27037022"
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|customDomainCertificate|String|Detalhes do certificado associado ao aplicativo quando um domínio personalizado está em uso. Nulo ao usar o domínio padrão.|
-|externalAuthenticationType|String|Detalha a configuração de pré-autenticação para os aplicativo os valores possíveis são: `passthru`, `aadPreAuthentication`.|
-|externalUrl|String|A url externa publicada para o aplicativo. Por exemplohttps://intranet-contoso.msappproxy.net/  |
-|internalUrl|String|A url interna do aplicativo. Por exemplohttps://intranet/ |
+|customDomainCertificate|Cadeia de caracteres|Detalhes do certificado associado ao aplicativo quando um domínio personalizado está em uso. Nulo ao usar o domínio padrão.|
+|externalAuthenticationType|Cadeia de caracteres|Detalha a configuração de pré-autenticação para os aplicativo os valores possíveis são: `passthru`, `aadPreAuthentication`.|
+|externalUrl|Cadeia de caracteres|A url externa publicada para o aplicativo. Por exemplohttps://intranet-contoso.msappproxy.net/  |
+|internalUrl|Cadeia de caracteres|A url interna do aplicativo. Por exemplohttps://intranet/ |
 |isOnPremPublishingEnabled|Booliano|Indica se o aplicativo atualmente está sendo publicado ou não.|
-|applicationServerTimeout|String|A duração o conector aguardará uma resposta do aplicativo back-end antes de fechar a conexão. Os valores possíveis são `default`, `long`. Uso `long` se seu servidor demorar mais de 75-60 segundos para responder às solicitações. Além disso, experimente `long` se não for possível acessar o aplicativo e o status de erro é "Backend Timeout".|
+|applicationServerTimeout|Cadeia de caracteres|A duração o conector aguardará uma resposta do aplicativo back-end antes de fechar a conexão. Os valores possíveis são `default`, `long`. Uso `long` se seu servidor demorar mais de 75-60 segundos para responder às solicitações. Além disso, experimente `long` se não for possível acessar o aplicativo e o status de erro é "Backend Timeout".|
 |isTranslateHostHeaderEnabled|Booliano|Indica se o aplicativo deve traduzir urls em cabeçalhos de resposta. Isso inclui a definição de site correto para os cookies.|
 
 ## <a name="json-representation"></a>Representação JSON

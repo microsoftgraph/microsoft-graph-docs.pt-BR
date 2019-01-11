@@ -2,12 +2,13 @@
 title: tipo de recurso de remoteActionAudit
 description: Relatório de ações remotos iniciadas nos dispositivos que pertencem a um determinado inquilino.
 author: tfitzmac
-ms.openlocfilehash: 48d74cb088a2e16e244898834e3d717302713e6f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7624610ed35a583e0ec11582caa1dccda5ce4ce7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840807"
 ---
 # <a name="remoteactionaudit-resource-type"></a>tipo de recurso de remoteActionAudit
 
@@ -28,14 +29,14 @@ Relatório de ações remotos iniciadas nos dispositivos que pertencem a um dete
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID do relatório.|
+|id|Cadeia de caracteres|ID do relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo Intune.|
 |userName|Cadeia de caracteres|\[preterido\] use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|String|Usuário que iniciou a ação de dispositivo, formato é UPN.|
+|initiatedByUserPrincipalName|Cadeia de caracteres|Usuário que iniciou a ação de dispositivo, formato é UPN.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Tempo quando a ação foi emitida, dado em UTC.|
-|deviceOwnerUserPrincipalName|String|Nome UPN do proprietário do dispositivo.|
-|deviceIMEI|String|IMEI do dispositivo.|
+|deviceOwnerUserPrincipalName|Cadeia de caracteres|Nome UPN do proprietário do dispositivo.|
+|deviceIMEI|Cadeia de caracteres|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## <a name="relationships"></a>Relações

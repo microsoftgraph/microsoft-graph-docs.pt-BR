@@ -2,12 +2,13 @@
 title: Excluir windows10PFXImportCertificateProfile
 description: Exclui um windows10PFXImportCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: c44d079106de4d2ab4284c6d446f3660fc0c5178
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 887f8207bf8f88a3799cd4cf063138f37d4462d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340457"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841542"
 ---
 # <a name="delete-windows10pfximportcertificateprofile"></a>Excluir windows10PFXImportCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

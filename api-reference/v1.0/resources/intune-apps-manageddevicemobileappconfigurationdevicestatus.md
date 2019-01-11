@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de managedDeviceMobileAppConfigurationDeviceStatus
 description: Contém propriedades, as propriedades herdadas e ações para um status de configuração de aplicativos móveis MDM para um dispositivo.
-ms.openlocfilehash: 439be36b7658c7975f3e458520098e8cbd4e849b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9698c249d8075a7567c3f54defa3d20a475174ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841437"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>tipo de recurso de managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -25,7 +26,7 @@ Contém propriedades, as propriedades herdadas e ações para um status de confi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso customTimeZone
 description: Representa um fuso horário em que a transição do horário padrão para o horário de verão, ou vice-versa, não é padrão.
-ms.openlocfilehash: 36d497e3e6ad52ca5a59f4bc322410ee271e73bf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7d43de045b99a1163ae8fc74e40d659d10cabe63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806521"
 ---
 # <a name="customtimezone-resource-type"></a>Tipo de recurso customTimeZone
 

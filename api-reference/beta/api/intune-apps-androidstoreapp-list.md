@@ -2,12 +2,13 @@
 title: Listar androidStoreApps
 description: Listar propriedades e relações dos objetos androidStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 0f3e1b0ca33d6995cd8dbdc30207395e5f5075a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 338ca3c6e0b0bab9978183a3331db93643e5f28a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843278"
 ---
 # <a name="list-androidstoreapps"></a>Listar androidStoreApps
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Listar educationSchools
 description: Recupere uma lista de todos os objetos de escola.
 author: mmast-msft
-ms.openlocfilehash: 361c0ae0f15244b78fcbd13bc7c190c0e53bf079
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39aa3625979b942b625389580f4c707af29f3077
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841374"
 ---
 # <a name="list-educationschools"></a>Listar educationSchools
 

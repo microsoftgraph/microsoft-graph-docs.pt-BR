@@ -2,12 +2,13 @@
 title: Guias de lista no canal
 description: 'Recupere a lista das guias no canal especificado dentro de uma equipe. '
 author: nkramer
-ms.openlocfilehash: b8d5c55fa02d859a419823ad171fbcc9221a609e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 628dcf57656782f2d921876dccb70173ef7b4623
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344566"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842879"
 ---
 # <a name="list-tabs-in-channel"></a>Guias de lista no canal
 
@@ -15,7 +16,7 @@ ms.locfileid: "27344566"
 
 Recupere a lista das [guias](../resources/teamstab.md) no [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso servicePlanInfo
 description: Contém informações sobre um plano de serviço associado a uma SKU inscrita. A propriedade **servicePlans** da entidade subscribedSku é uma coleção de **servicePlanInfo**.
-ms.openlocfilehash: 86246de74caef6bf0c778f5b6b38e185841394b1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0cb96a11b280fcda4e97a6dad30a9e5200c2e88
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842676"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Tipo de recurso servicePlanInfo
 
@@ -19,7 +20,7 @@ Contém informações sobre um plano de serviço associado a uma SKU inscrita. A
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |servicePlanId|Guid|O identificador exclusivo do plano de serviços.|
-|servicePlanName|String|O nome do plano de serviços.|
+|servicePlanName|Cadeia de caracteres|O nome do plano de serviços.|
 |provisioningStatus|String|O status de provisionamento do plano de serviços. Valores possíveis:<br/>"Success" – o serviço está totalmente provisionado.<br/>“Disabled” – o serviço foi desabilitado.<br/>"PendingInput" – o serviço ainda não está provisionado; aguardando confirmação do serviço.<br/>"PendingActivation" - serviço é provisionado, mas requer ativação explícita pelo administrador (por exemplo, plano de serviço Intune_O365).<br/>"PendingProvisioning" – a Microsoft adicionou um novo serviço ao SKU do produto e ele não foi ativado no locatário ainda.|
 |appliesTo|String|O objeto ao qual o plano de serviço pode ser atribuído. Valores possíveis:<br/>"Usuário" – o plano de serviço pode ser atribuído a usuários individuais.<br/>"Empresa" – o plano de serviço pode ser atribuído a todos os locatários.|
 

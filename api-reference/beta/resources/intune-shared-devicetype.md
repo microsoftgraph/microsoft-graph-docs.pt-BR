@@ -2,12 +2,13 @@
 title: tipo de enum deviceType
 description: Tipo de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: b1c610895cb5c8f3cd66267fbdfad95db7eac509
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 868b6d5c57fccee8bbd8143d09e6f22c89672079
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843810"
 ---
 # <a name="devicetype-enum-type"></a>tipo de enum deviceType
 
