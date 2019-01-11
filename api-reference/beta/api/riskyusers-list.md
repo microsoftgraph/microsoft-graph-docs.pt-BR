@@ -1,53 +1,54 @@
 ---
 title: Lista riskyUsers
 description: Recupere as propriedades e relacionamentos de um objeto **riskyUsers** .
-ms.openlocfilehash: d800f37c1e7e2d03edc0273d30e2be37c799d0d4
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Normal
+ms.openlocfilehash: bc5023df014e2abc1e7b510bc10a051f6b725e3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835235"
 ---
-# <a name="list-riskyusers"></a><span data-ttu-id="40867-103">Lista riskyUsers</span><span class="sxs-lookup"><span data-stu-id="40867-103">List riskyUsers</span></span>
+# <a name="list-riskyusers"></a><span data-ttu-id="6810d-103">Lista riskyUsers</span><span class="sxs-lookup"><span data-stu-id="6810d-103">List riskyUsers</span></span>
 
-> <span data-ttu-id="40867-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="40867-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="40867-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="40867-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6810d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="6810d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6810d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="6810d-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="40867-106">Recupere as propriedades e relacionamentos de um objeto **riskyUsers** .</span><span class="sxs-lookup"><span data-stu-id="40867-106">Retrieve the properties and relationships of a **riskyUsers** object.</span></span>
+<span data-ttu-id="6810d-106">Recupere as propriedades e relacionamentos de um objeto **riskyUsers** .</span><span class="sxs-lookup"><span data-stu-id="6810d-106">Retrieve the properties and relationships of a **riskyUsers** object.</span></span>
 
-> <span data-ttu-id="40867-107">**Observação:** Esta API requer uma licença de P2 Premium do Windows Azure AD.</span><span class="sxs-lookup"><span data-stu-id="40867-107">**Note:** This API requires an Azure AD Premium P2 license.</span></span>
+> <span data-ttu-id="6810d-107">**Observação:** Esta API requer uma licença de P2 Premium do Windows Azure AD.</span><span class="sxs-lookup"><span data-stu-id="6810d-107">**Note:** This API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="40867-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="40867-108">Permissions</span></span>
-<span data-ttu-id="40867-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="40867-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6810d-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="6810d-108">Permissions</span></span>
+<span data-ttu-id="6810d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6810d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="40867-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="40867-111">Permission type</span></span>      | <span data-ttu-id="40867-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="40867-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6810d-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6810d-111">Permission type</span></span>      | <span data-ttu-id="6810d-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6810d-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="40867-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="40867-113">Delegated (work or school account)</span></span> | <span data-ttu-id="40867-114">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="40867-114">IdentityriskyUser.Read.All</span></span>    |
-|<span data-ttu-id="40867-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="40867-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="40867-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="40867-116">Not supported.</span></span>    |
-|<span data-ttu-id="40867-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="40867-117">Application</span></span> | <span data-ttu-id="40867-118">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="40867-118">IdentityriskyUser.Read.All</span></span> |
+|<span data-ttu-id="6810d-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6810d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="6810d-114">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="6810d-114">IdentityriskyUser.Read.All</span></span>    |
+|<span data-ttu-id="6810d-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6810d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6810d-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6810d-116">Not supported.</span></span>    |
+|<span data-ttu-id="6810d-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6810d-117">Application</span></span> | <span data-ttu-id="6810d-118">IdentityriskyUser.Read.All</span><span class="sxs-lookup"><span data-stu-id="6810d-118">IdentityriskyUser.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="40867-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="40867-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6810d-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6810d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers/{query}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="40867-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="40867-120">Optional query parameters</span></span>
-<span data-ttu-id="40867-121">Este método oferece suporte `$filter` para personalizar a resposta da consulta.</span><span class="sxs-lookup"><span data-stu-id="40867-121">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="40867-122">Consulte o exemplo mais adiante neste tópico.</span><span class="sxs-lookup"><span data-stu-id="40867-122">See the example later in this topic.</span></span> 
+## <a name="optional-query-parameters"></a><span data-ttu-id="6810d-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="6810d-120">Optional query parameters</span></span>
+<span data-ttu-id="6810d-121">Este método oferece suporte `$filter` para personalizar a resposta da consulta.</span><span class="sxs-lookup"><span data-stu-id="6810d-121">This method supports `$filter` to customize the query response.</span></span> <span data-ttu-id="6810d-122">Consulte o exemplo mais adiante neste tópico.</span><span class="sxs-lookup"><span data-stu-id="6810d-122">See the example later in this topic.</span></span> 
 
-## <a name="request-headers"></a><span data-ttu-id="40867-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="40867-123">Request headers</span></span>
-| <span data-ttu-id="40867-124">Nome</span><span class="sxs-lookup"><span data-stu-id="40867-124">Name</span></span>      |<span data-ttu-id="40867-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="40867-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6810d-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6810d-123">Request headers</span></span>
+| <span data-ttu-id="6810d-124">Nome</span><span class="sxs-lookup"><span data-stu-id="6810d-124">Name</span></span>      |<span data-ttu-id="6810d-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="6810d-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="40867-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="40867-126">Authorization</span></span>  | <span data-ttu-id="40867-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="40867-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="40867-129">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="40867-129">Workbook-Session-Id</span></span>  | <span data-ttu-id="40867-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="40867-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="6810d-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="6810d-126">Authorization</span></span>  | <span data-ttu-id="6810d-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6810d-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6810d-129">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="6810d-129">Workbook-Session-Id</span></span>  | <span data-ttu-id="6810d-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="6810d-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="40867-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="40867-132">Request body</span></span>
-<span data-ttu-id="40867-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="40867-133">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6810d-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6810d-132">Request body</span></span>
+<span data-ttu-id="6810d-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="6810d-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="40867-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="40867-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6810d-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="6810d-134">Response</span></span>
 
-<span data-ttu-id="40867-135">Se tiver êxito, este método retornará um `200 OK` objeto response de código e [identityRiskEvent](../resources/identityriskevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="40867-135">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="40867-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="40867-136">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="40867-137">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="40867-137">Request 1</span></span>
-<span data-ttu-id="40867-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="40867-138">Here is an example of the request.</span></span>
+<span data-ttu-id="6810d-135">Se tiver êxito, este método retornará um `200 OK` objeto response de código e [identityRiskEvent](../resources/identityriskevent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6810d-135">If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6810d-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6810d-136">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="6810d-137">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="6810d-137">Request 1</span></span>
+<span data-ttu-id="6810d-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6810d-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent"
@@ -55,8 +56,8 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### <a name="response-1"></a><span data-ttu-id="40867-139">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="40867-139">Response 1</span></span>
-<span data-ttu-id="40867-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="40867-140">Here is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="6810d-139">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="6810d-139">Response 1</span></span>
+<span data-ttu-id="6810d-140">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6810d-140">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,8 +87,8 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-##### <a name="request-2"></a><span data-ttu-id="40867-141">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="40867-141">Request 2</span></span>
-<span data-ttu-id="40867-142">O exemplo a seguir mostra como usar `$filter` para obter a coleção de riskyUser cujo risco agregado nível é médio.</span><span class="sxs-lookup"><span data-stu-id="40867-142">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="6810d-141">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="6810d-141">Request 2</span></span>
+<span data-ttu-id="6810d-142">O exemplo a seguir mostra como usar `$filter` para obter a coleção de riskyUser cujo risco agregado nível é médio.</span><span class="sxs-lookup"><span data-stu-id="6810d-142">The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.</span></span>
 <!-- {
   "blockType": "request",
   "name": "list_riskyusers"
@@ -95,7 +96,7 @@ HTTP/1.1 200 OK
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
-##### <a name="response-2"></a><span data-ttu-id="40867-143">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="40867-143">Response 2</span></span>
+##### <a name="response-2"></a><span data-ttu-id="6810d-143">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="6810d-143">Response 2</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
