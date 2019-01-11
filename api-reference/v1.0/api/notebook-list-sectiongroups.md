@@ -2,12 +2,13 @@
 title: Listar sectionGroups
 description: Recupere uma lista de objetos section groups do bloco de anotações especificado.
 author: Jewan-microsoft
-ms.openlocfilehash: ad0a8d82fc5fff7bfe8a6b9895e7d94f9a4bc9e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 91ea3188b32657ad83963f12214e9987aa785d0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321417"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869136"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 

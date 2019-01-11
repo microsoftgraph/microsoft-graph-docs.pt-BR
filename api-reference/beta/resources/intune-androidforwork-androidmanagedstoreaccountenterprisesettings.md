@@ -2,12 +2,13 @@
 title: tipo de recurso de androidManagedStoreAccountEnterpriseSettings
 description: Configurações da empresa para um Android gerenciados repositório de conta.
 author: tfitzmac
-ms.openlocfilehash: c0dfea72e9d6a24b4d76cc839259acd642d51fa9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: db31210da358a8b6b7ebc674699dab4c622ae670
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326289"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869031"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>tipo de recurso de androidManagedStoreAccountEnterpriseSettings
 
@@ -25,21 +26,21 @@ Configurações da empresa para um Android gerenciados repositório de conta.
 |[Ação completeSignup](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|Nenhum|Ainda não documentado|
 |[Ação syncApps](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|Nenhum|Ainda não documentado|
 |[Ação de desvincular](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|Nenhum|Ainda não documentado|
-|[ação de createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Gera um token de web que é usado em um componente incorporável.|
+|[ação de createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|Cadeia de caracteres|Gera um token de web que é usado em um componente incorporável.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O Android armazenar identificador de configurações da empresa de conta|
+|id|Cadeia de caracteres|O Android armazenar identificador de configurações da empresa de conta|
 |bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Associe o status do inquilino com a API do EMM Google. Os valores possíveis são: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Hora da conclusão da última sincronização do aplicativo|
 |lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Resultado da última sincronização de aplicativo. Os possíveis valores são: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
-|ownerUserPrincipalName|String|UPN proprietária que criou a empresa|
-|ownerOrganizationName|String|Nome da organização usado quando a inclusão Android Enterprise|
+|ownerUserPrincipalName|Cadeia de caracteres|UPN proprietária que criou a empresa|
+|ownerOrganizationName|Cadeia de caracteres|Nome da organização usado quando a inclusão Android Enterprise|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação para configurações da empresa Android|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indica quais usuários podem inscrever dispositivos no gerenciamento de dispositivos Android Enterprise. Os valores possíveis são: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Especifica a quais grupos AAD podem registrar dispositivos no gerenciamento de dispositivos do Android for Work se enrollmentTarget estiver definido como 'Direcionado'|
-|deviceOwnerManagementEnabled|Boolean|Indica se essa conta é flighting para o gerenciamento de proprietário de dispositivo Android com CloudDPC.|
+|deviceOwnerManagementEnabled|Booliano|Indica se essa conta é flighting para o gerenciamento de proprietário de dispositivo Android com CloudDPC.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

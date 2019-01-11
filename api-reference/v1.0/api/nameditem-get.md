@@ -1,12 +1,13 @@
 ---
 title: Obter NamedItem
 description: Recupere as propriedades e os relacionamentos do objeto nameditem.
-ms.openlocfilehash: d60666630bffd99dd5dd7ce17f0eb6e40a80bf81
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee9ce271ebf6ad687324d2ba9d378ae7151460cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867190"
 ---
 # <a name="get-nameditem"></a>Obter NamedItem
 

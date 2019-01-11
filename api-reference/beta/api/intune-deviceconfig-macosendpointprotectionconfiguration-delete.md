@@ -2,12 +2,13 @@
 title: Excluir macOSEndpointProtectionConfiguration
 description: Exclui um macOSEndpointProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: c32a21a6db55a290d0a1af68e6c464bf9033c2c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d5b8fc960e2ff9dd1db88f735b746eeaba07d309
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315684"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868639"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>Excluir macOSEndpointProtectionConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

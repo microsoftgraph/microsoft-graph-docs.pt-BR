@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de yammerDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 7faec83d113da3f412c913177a717fdc69504310
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d3fbfaeac312096393c3c5a2d406327551cbaa33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867946"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>tipo de recurso de yammerDeviceUsageUserCounts
 
@@ -22,7 +23,7 @@ ms.locfileid: "27036635"
 | iPad              | Int32  |
 | outros             | Int32  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

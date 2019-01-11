@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppRegistration
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
 author: tfitzmac
-ms.openlocfilehash: 8a0663ab291dc77568ae91e5a65fab31e809d1a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 959bd294ab1752617cea6a6ea5bbe8f0a3802f0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339855"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869717"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -33,17 +34,17 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |managementSdkVersion|Cadeia de caracteres|Versão do SDK de gerenciamento do aplicativo|
 |platformVersion|Cadeia de caracteres|Versão do sistema operacional|
 |deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
-|deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
+|deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é gerenciado.|
-|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é o Azure Active Directory registrada.|
+|managedDeviceId|Cadeia de caracteres|O identificador de dispositivo gerenciado do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é gerenciado.|
+|azureADDeviceId|Cadeia de caracteres|O identificador de dispositivo do Azure Active Directory do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é o Azure Active Directory registrada.|
 |deviceModel|Cadeia de caracteres|O modelo de dispositivo para que o registro atual do aplicativo |
-|deviceManufacturer|String|O fabricante do dispositivo para que o registro atual do aplicativo |
+|deviceManufacturer|Cadeia de caracteres|O fabricante do dispositivo para que o registro atual do aplicativo |
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
-|userId|String|A ID de usuário à qual este registro de aplicativo pertence.|
+|userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
-|id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|version|Cadeia de caracteres|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
