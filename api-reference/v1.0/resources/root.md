@@ -3,22 +3,23 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Raiz
-ms.openlocfilehash: 23e81891956ea656c0f31920318f249916d3defa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4753174531517bd1b194c3023efbc31785695f5b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862043"
 ---
-# <a name="root-resource-type"></a><span data-ttu-id="b4476-102">Tipo de recurso Root</span><span class="sxs-lookup"><span data-stu-id="b4476-102">Root resource type</span></span>
+# <a name="root-resource-type"></a><span data-ttu-id="4cb6f-102">Tipo de recurso Root</span><span class="sxs-lookup"><span data-stu-id="4cb6f-102">Root resource type</span></span>
 
-<span data-ttu-id="b4476-103">A faceta **Root** indica que um objeto é o mais alto em sua hierarquia.</span><span class="sxs-lookup"><span data-stu-id="b4476-103">The **Root** facet indicates that an object is the top-most one in its hierarchy.</span></span>
-<span data-ttu-id="b4476-104">A presença (não nulo) do valor da faceta indica que o objeto é a raiz.</span><span class="sxs-lookup"><span data-stu-id="b4476-104">The presence (non-null) of the facet value indicates that the object is the root.</span></span>
-<span data-ttu-id="b4476-105">Um valor nulo (ou ausente) indica que o objeto não é a raiz.</span><span class="sxs-lookup"><span data-stu-id="b4476-105">A null (or missing) value indicates the object is not the root.</span></span>
+<span data-ttu-id="4cb6f-103">A faceta **Root** indica que um objeto é o mais alto em sua hierarquia.</span><span class="sxs-lookup"><span data-stu-id="4cb6f-103">The **Root** facet indicates that an object is the top-most one in its hierarchy.</span></span>
+<span data-ttu-id="4cb6f-104">A presença (não nulo) do valor da faceta indica que o objeto é a raiz.</span><span class="sxs-lookup"><span data-stu-id="4cb6f-104">The presence (non-null) of the facet value indicates that the object is the root.</span></span>
+<span data-ttu-id="4cb6f-105">Um valor nulo (ou ausente) indica que o objeto não é a raiz.</span><span class="sxs-lookup"><span data-stu-id="4cb6f-105">A null (or missing) value indicates the object is not the root.</span></span>
 
-<span data-ttu-id="b4476-106">**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.</span><span class="sxs-lookup"><span data-stu-id="b4476-106">**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.</span></span>
+<span data-ttu-id="4cb6f-106">**Observação**: Embora essa faceta esteja vazia no momento, em revisões futuras da API a faceta pode ser preenchida com propriedades adicionais.</span><span class="sxs-lookup"><span data-stu-id="4cb6f-106">**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b4476-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b4476-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4cb6f-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4cb6f-107">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.root" } -->
 
@@ -27,9 +28,9 @@ ms.locfileid: "27006339"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b4476-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b4476-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4cb6f-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4cb6f-108">Properties</span></span>
 
-<span data-ttu-id="b4476-109">O recurso **Root** não tem propriedades.</span><span class="sxs-lookup"><span data-stu-id="b4476-109">The **Root** resource has no properties.</span></span>
+<span data-ttu-id="4cb6f-109">O recurso **Root** não tem propriedades.</span><span class="sxs-lookup"><span data-stu-id="4cb6f-109">The **Root** resource has no properties.</span></span>
 
 
 <!-- {

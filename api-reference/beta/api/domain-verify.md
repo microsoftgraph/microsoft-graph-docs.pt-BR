@@ -2,56 +2,57 @@
 title: 'domain: verify'
 description: Valida a propriedade do domínio.
 author: lleonard-msft
-ms.openlocfilehash: 246d037d7f87ec463c6d68a9d9e22b4cff7cb695
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4948f2dc833db80c2cbc3f3b8aa7c487b7bb97aa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864698"
 ---
-# <a name="domain-verify"></a><span data-ttu-id="bc231-103">domain: verify</span><span class="sxs-lookup"><span data-stu-id="bc231-103">domain: verify</span></span>
+# <a name="domain-verify"></a><span data-ttu-id="9356d-103">domain: verify</span><span class="sxs-lookup"><span data-stu-id="9356d-103">domain: verify</span></span>
 
-> <span data-ttu-id="bc231-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="bc231-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bc231-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="bc231-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9356d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="9356d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9356d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="9356d-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="bc231-106">Valida a propriedade do domínio.</span><span class="sxs-lookup"><span data-stu-id="bc231-106">Validates the ownership of the domain.</span></span>
+<span data-ttu-id="9356d-106">Valida a propriedade do domínio.</span><span class="sxs-lookup"><span data-stu-id="9356d-106">Validates the ownership of the domain.</span></span>
 
-> <span data-ttu-id="bc231-p102">**Importante:** Aplica-se somente a um domínio não verificado. Para um domínio não verificado, a propriedade isVerified do [domínio](../resources/domain.md) é falsa.</span><span class="sxs-lookup"><span data-stu-id="bc231-p102">**Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.</span></span>
+> <span data-ttu-id="9356d-p102">**Importante:** Aplica-se somente a um domínio não verificado. Para um domínio não verificado, a propriedade isVerified do [domínio](../resources/domain.md) é falsa.</span><span class="sxs-lookup"><span data-stu-id="9356d-p102">**Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bc231-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="bc231-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9356d-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="9356d-109">Permissions</span></span>
 
-<span data-ttu-id="bc231-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bc231-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9356d-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9356d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="bc231-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bc231-112">Permission type</span></span>      | <span data-ttu-id="bc231-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bc231-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9356d-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9356d-112">Permission type</span></span>      | <span data-ttu-id="9356d-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9356d-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bc231-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bc231-114">Delegated (work or school account)</span></span> | <span data-ttu-id="bc231-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="bc231-115">Directory.Read.All</span></span>    |
-|<span data-ttu-id="bc231-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bc231-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bc231-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bc231-117">Not supported.</span></span>    |
-|<span data-ttu-id="bc231-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bc231-118">Application</span></span> | <span data-ttu-id="bc231-119">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bc231-119">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="9356d-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9356d-114">Delegated (work or school account)</span></span> | <span data-ttu-id="9356d-115">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="9356d-115">Directory.Read.All</span></span>    |
+|<span data-ttu-id="9356d-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9356d-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9356d-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9356d-117">Not supported.</span></span>    |
+|<span data-ttu-id="9356d-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9356d-118">Application</span></span> | <span data-ttu-id="9356d-119">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9356d-119">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bc231-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bc231-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9356d-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9356d-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains/{id}/verify
 ```
 
-> <span data-ttu-id="bc231-121">Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="bc231-121">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="9356d-121">Para {id}, especifique o domínio com seu nome de domínio totalmente qualificado.</span><span class="sxs-lookup"><span data-stu-id="9356d-121">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="bc231-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bc231-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9356d-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9356d-122">Request headers</span></span>
 
-| <span data-ttu-id="bc231-123">Nome</span><span class="sxs-lookup"><span data-stu-id="bc231-123">Name</span></span>       | <span data-ttu-id="bc231-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="bc231-124">Description</span></span>|
+| <span data-ttu-id="9356d-123">Nome</span><span class="sxs-lookup"><span data-stu-id="9356d-123">Name</span></span>       | <span data-ttu-id="9356d-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="9356d-124">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="bc231-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="bc231-125">Authorization</span></span>  | <span data-ttu-id="bc231-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bc231-p104">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="bc231-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bc231-128">Content-Type</span></span>  | <span data-ttu-id="bc231-129">application/json</span><span class="sxs-lookup"><span data-stu-id="bc231-129">application/json</span></span> |
+| <span data-ttu-id="9356d-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="9356d-125">Authorization</span></span>  | <span data-ttu-id="9356d-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9356d-p104">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="9356d-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9356d-128">Content-Type</span></span>  | <span data-ttu-id="9356d-129">application/json</span><span class="sxs-lookup"><span data-stu-id="9356d-129">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bc231-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bc231-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9356d-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9356d-130">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="bc231-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="bc231-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9356d-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="9356d-131">Response</span></span>
 
-<span data-ttu-id="bc231-132">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [domain](../resources/domain.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bc231-132">If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+<span data-ttu-id="9356d-132">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [domain](../resources/domain.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9356d-132">If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bc231-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bc231-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="bc231-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bc231-134">Request</span></span>
+## <a name="example"></a><span data-ttu-id="9356d-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9356d-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9356d-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9356d-134">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "domain_verify"
@@ -60,8 +61,8 @@ POST /domains/{id}/verify
 POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
 
-##### <a name="response"></a><span data-ttu-id="bc231-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="bc231-135">Response</span></span>
-<span data-ttu-id="bc231-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bc231-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9356d-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="9356d-135">Response</span></span>
+<span data-ttu-id="9356d-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9356d-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,48 +2,49 @@
 title: Excluir contactFolder
 description: Exclui uma contactFolder que não a padrão.
 author: angelgolfer-ms
-ms.openlocfilehash: 26ff5f9a2ef78d33fd60b498e891f031891b6f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b175251a1a9a4862dc1df36d607ed62e56c3e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864859"
 ---
-# <a name="delete-contactfolder"></a><span data-ttu-id="5389a-103">Excluir contactFolder</span><span class="sxs-lookup"><span data-stu-id="5389a-103">Delete contactFolder</span></span>
+# <a name="delete-contactfolder"></a><span data-ttu-id="fbb85-103">Excluir contactFolder</span><span class="sxs-lookup"><span data-stu-id="fbb85-103">Delete contactFolder</span></span>
 
-> <span data-ttu-id="5389a-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="5389a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5389a-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="5389a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fbb85-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="fbb85-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fbb85-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="fbb85-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="5389a-106">Exclui uma contactFolder que não a padrão.</span><span class="sxs-lookup"><span data-stu-id="5389a-106">Delete contactFolder other than the default contactFolder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="5389a-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="5389a-107">Permissions</span></span>
-<span data-ttu-id="5389a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5389a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fbb85-106">Exclui uma contactFolder que não a padrão.</span><span class="sxs-lookup"><span data-stu-id="fbb85-106">Delete contactFolder other than the default contactFolder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="fbb85-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="fbb85-107">Permissions</span></span>
+<span data-ttu-id="fbb85-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fbb85-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5389a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5389a-110">Permission type</span></span>      | <span data-ttu-id="5389a-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5389a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fbb85-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fbb85-110">Permission type</span></span>      | <span data-ttu-id="fbb85-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fbb85-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5389a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5389a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5389a-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5389a-113">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="5389a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5389a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5389a-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5389a-115">Contacts.ReadWrite</span></span>    |
-|<span data-ttu-id="5389a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5389a-116">Application</span></span> | <span data-ttu-id="5389a-117">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5389a-117">Contacts.ReadWrite</span></span> |
+|<span data-ttu-id="fbb85-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fbb85-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fbb85-113">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fbb85-113">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="fbb85-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fbb85-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fbb85-115">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fbb85-115">Contacts.ReadWrite</span></span>    |
+|<span data-ttu-id="fbb85-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fbb85-116">Application</span></span> | <span data-ttu-id="fbb85-117">Contacts.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fbb85-117">Contacts.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5389a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5389a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fbb85-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fbb85-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/contactFolders/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="5389a-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5389a-119">Request headers</span></span>
-| <span data-ttu-id="5389a-120">Nome</span><span class="sxs-lookup"><span data-stu-id="5389a-120">Name</span></span>       | <span data-ttu-id="5389a-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="5389a-121">Type</span></span> | <span data-ttu-id="5389a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="5389a-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fbb85-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fbb85-119">Request headers</span></span>
+| <span data-ttu-id="fbb85-120">Nome</span><span class="sxs-lookup"><span data-stu-id="fbb85-120">Name</span></span>       | <span data-ttu-id="fbb85-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="fbb85-121">Type</span></span> | <span data-ttu-id="fbb85-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="fbb85-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5389a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="5389a-123">Authorization</span></span>  | <span data-ttu-id="5389a-124">string</span><span class="sxs-lookup"><span data-stu-id="5389a-124">string</span></span>  | <span data-ttu-id="5389a-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5389a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fbb85-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="fbb85-123">Authorization</span></span>  | <span data-ttu-id="fbb85-124">string</span><span class="sxs-lookup"><span data-stu-id="fbb85-124">string</span></span>  | <span data-ttu-id="fbb85-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fbb85-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5389a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5389a-127">Request body</span></span>
-<span data-ttu-id="5389a-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5389a-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fbb85-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fbb85-127">Request body</span></span>
+<span data-ttu-id="fbb85-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fbb85-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5389a-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="5389a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fbb85-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="fbb85-129">Response</span></span>
 
-<span data-ttu-id="5389a-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5389a-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="fbb85-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fbb85-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5389a-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5389a-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5389a-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5389a-133">Request</span></span>
-<span data-ttu-id="5389a-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="5389a-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="fbb85-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fbb85-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fbb85-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fbb85-133">Request</span></span>
+<span data-ttu-id="fbb85-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fbb85-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_contactfolder"
@@ -51,8 +52,8 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/contactFolders/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="5389a-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="5389a-135">Response</span></span>
-<span data-ttu-id="5389a-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5389a-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="fbb85-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="fbb85-135">Response</span></span>
+<span data-ttu-id="fbb85-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fbb85-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
