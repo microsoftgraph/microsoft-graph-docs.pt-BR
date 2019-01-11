@@ -1,48 +1,49 @@
 ---
 title: 'Filter: clear'
 description: Limpa o filtro na coluna determinada.
-ms.openlocfilehash: 85a9249cf70ffdd44b8b84e0d28bec63ca743ca1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bea500516e898fbbad2bbb881be437004405fb84
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005376"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872237"
 ---
-# <a name="filter-clear"></a><span data-ttu-id="194b0-103">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="194b0-103">Filter: clear</span></span>
+# <a name="filter-clear"></a><span data-ttu-id="b3414-103">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="b3414-103">Filter: clear</span></span>
 
-<span data-ttu-id="194b0-104">Limpa o filtro na coluna determinada.</span><span class="sxs-lookup"><span data-stu-id="194b0-104">Clear the filter on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="194b0-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="194b0-105">Permissions</span></span>
-<span data-ttu-id="194b0-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="194b0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b3414-104">Limpa o filtro na coluna determinada.</span><span class="sxs-lookup"><span data-stu-id="b3414-104">Clear the filter on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b3414-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b3414-105">Permissions</span></span>
+<span data-ttu-id="b3414-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b3414-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="194b0-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="194b0-108">Permission type</span></span>      | <span data-ttu-id="194b0-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="194b0-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b3414-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b3414-108">Permission type</span></span>      | <span data-ttu-id="b3414-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b3414-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="194b0-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="194b0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="194b0-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="194b0-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="194b0-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="194b0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="194b0-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="194b0-113">Not supported.</span></span>    |
-|<span data-ttu-id="194b0-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="194b0-114">Application</span></span> | <span data-ttu-id="194b0-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="194b0-115">Not supported.</span></span> |
+|<span data-ttu-id="b3414-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b3414-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b3414-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b3414-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b3414-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b3414-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b3414-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3414-113">Not supported.</span></span>    |
+|<span data-ttu-id="b3414-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b3414-114">Application</span></span> | <span data-ttu-id="b3414-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b3414-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="194b0-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="194b0-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b3414-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b3414-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="194b0-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="194b0-117">Request headers</span></span>
-| <span data-ttu-id="194b0-118">Nome</span><span class="sxs-lookup"><span data-stu-id="194b0-118">Name</span></span>       | <span data-ttu-id="194b0-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="194b0-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b3414-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b3414-117">Request headers</span></span>
+| <span data-ttu-id="b3414-118">Nome</span><span class="sxs-lookup"><span data-stu-id="b3414-118">Name</span></span>       | <span data-ttu-id="b3414-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="b3414-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="194b0-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="194b0-120">Authorization</span></span>  | <span data-ttu-id="194b0-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="194b0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b3414-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="b3414-120">Authorization</span></span>  | <span data-ttu-id="b3414-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b3414-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="194b0-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="194b0-123">Request body</span></span>
-<span data-ttu-id="194b0-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="194b0-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b3414-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b3414-123">Request body</span></span>
+<span data-ttu-id="b3414-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b3414-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="194b0-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="194b0-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b3414-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3414-125">Response</span></span>
 
-<span data-ttu-id="194b0-p103">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="194b0-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="b3414-p103">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b3414-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="194b0-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="194b0-128">Example</span></span>
-<span data-ttu-id="194b0-129">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="194b0-129">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="194b0-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="194b0-130">Request</span></span>
-<span data-ttu-id="194b0-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="194b0-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b3414-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b3414-128">Example</span></span>
+<span data-ttu-id="b3414-129">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="b3414-129">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="b3414-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b3414-130">Request</span></span>
+<span data-ttu-id="b3414-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b3414-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -51,8 +52,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
 
-##### <a name="response"></a><span data-ttu-id="194b0-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="194b0-132">Response</span></span>
-<span data-ttu-id="194b0-133">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="194b0-133">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="b3414-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="b3414-132">Response</span></span>
+<span data-ttu-id="b3414-133">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b3414-133">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
