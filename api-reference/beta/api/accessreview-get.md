@@ -1,12 +1,13 @@
 ---
 title: Obter accessReview
 description: 'No Windows Azure AD para acessar o recurso de revisões, recuperar um objeto accessReview.  '
-ms.openlocfilehash: ecd802613e6ab36816800197c00595c90426fb2f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 471cebe3dbfa60e6cc05e2be546504216163ee0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894037"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -55,7 +56,7 @@ GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fe
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

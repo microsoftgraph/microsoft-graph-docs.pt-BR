@@ -2,12 +2,13 @@
 title: tipo de enum ratingFranceMoviesType
 description: Filmes rótulos de classificação na França
 author: tfitzmac
-ms.openlocfilehash: 22e14bc719fa36769a1857821bb924cfc1c7bb89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 591d13f6f1b291334606d24c2d6b9cd5d48f2a3d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306192"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894219"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>tipo de enum ratingFranceMoviesType
 

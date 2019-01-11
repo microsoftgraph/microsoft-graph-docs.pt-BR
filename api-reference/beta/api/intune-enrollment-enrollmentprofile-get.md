@@ -2,12 +2,13 @@
 title: Obter enrollmentProfile
 description: Leia as propriedades e os relacionamentos do objeto enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 19cc27203e7676414862bcd5587cb054fc7d7014
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 24e3e591ee0ccc9faf23cfaa718f05dceadb3699
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894380"
 ---
 # <a name="get-enrollmentprofile"></a>Obter enrollmentProfile
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

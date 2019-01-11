@@ -2,12 +2,13 @@
 title: tipo de recurso de alertTrigger
 description: Contém informações sobre as propriedades que disparou uma detecção (Propriedades existirem na entidade alerta).
 author: Preetikr
-ms.openlocfilehash: f0888e6caf78d806909f818a8b72fb21320e7796
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341263"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894338"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso de alertTrigger
 
@@ -17,9 +18,9 @@ Contém informações sobre as propriedades que disparou uma detecção (Proprie
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|name|String|Nome da propriedade servindo como um gatilho de detecção.|
-|type|String|Tipo da propriedade no par de chave: valor de interpretação. Por exemplo, String, Boolean, etc.|
-|valor|String|Valor da propriedade servindo como um gatilho de detecção.|
+|name|Cadeia de caracteres|Nome da propriedade servindo como um gatilho de detecção.|
+|type|Cadeia de caracteres|Tipo da propriedade no par de chave: valor de interpretação. Por exemplo, String, Boolean, etc.|
+|valor|Cadeia de caracteres|Valor da propriedade servindo como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON
 

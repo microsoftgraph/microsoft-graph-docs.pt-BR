@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso SortField
 description: Representa uma condição em uma operação de classificação.
-ms.openlocfilehash: bb5915e9d9637912b97c0425819acd15a6ed40ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fc93f33f7e1c6f366986cd5d1ca82ea186ad44b9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038899"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894275"
 ---
 # <a name="sortfield-resource-type"></a>Tipo de recurso SortField
 
@@ -20,7 +21,7 @@ Representa uma condição em uma operação de classificação.
 |ascending|booliano|Indica se a classificação é feita de forma crescente.|
 |color|string|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
 |dataOption|string|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal` e `TextAsNumber`.|
-|key|inteiro|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
+|key|int|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
 |sortOn|string|Representa o tipo de classificação dessa condição. Os valores possíveis são: `Value`, `CellColor`, `FontColor` e `Icon`.|
 
 ## <a name="relationships"></a>Relações

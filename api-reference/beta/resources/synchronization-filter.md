@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de filtro
 description: Determina quais objetos devem ser provisionados para o aplicativo. Por exemplo, você talvez queira apenas os usuários de provisão que estão localizados nos EUA. Quando um filtro de escopo estiver presente, os objetos que satisfazem o filtro não serão ignorados durante a sincronização.
-ms.openlocfilehash: 72885cfbd49083ce80b96cd389286d5c50937ffb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 754271e9d33159a14d1abf356280dd619643002f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894408"
 ---
 # <a name="filter-resource-type"></a>tipo de recurso de filtro
 

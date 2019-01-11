@@ -1,12 +1,13 @@
 ---
 title: Criar uma configuração de grupo
 description: Use essa API para criar uma nova configuração com base nos modelos disponíveis em groupSettingTemplates. Essas configurações podem ser no nível do locatário ou do grupo. A solicitação de criação precisa fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que rege se os membros de um grupo podem convidar usuários convidados pode ser definida. Isso controlará esse comportamento depois que a capacidade de adicionar usuários convidados a um grupo esteja disponível de forma geral.
-ms.openlocfilehash: b17ccd32934e1b26475175ec89da48fb8ea4b744
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5ba428380e6503f8d54682709d36e12b7ff4de3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005387"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894534"
 ---
 # <a name="create-a-group-setting"></a>Criar uma configuração de grupo
 

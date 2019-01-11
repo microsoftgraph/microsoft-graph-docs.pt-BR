@@ -2,12 +2,13 @@
 title: 'participante: convidar'
 description: Convide participantes à chamada ativa.
 author: VinodRavichandran
-ms.openlocfilehash: 732bd115fcf473825e1c1e24e10fb2edd6f04f04
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d87e7863583c45a200bb2d077134b66500b23b08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894310"
 ---
 # <a name="participant-invite"></a>participante: convidar
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380524"
 
 Convide participantes à chamada ativa.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Application     | Calls.InitiateGroupCalls.All                               |
+| Aplicativo     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantes|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Para convidar os participantes.|
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.

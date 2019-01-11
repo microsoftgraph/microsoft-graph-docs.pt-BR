@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de governanceRuleSetting
 description: Representa as regras que as configurações de função são compostas de.
-ms.openlocfilehash: 486b5163c59772c971cfc1d61a98817b7f0c16f5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7554c96daec70a95cde5ab0c3faedfba74764cff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894254"
 ---
 # <a name="governancerulesetting-resource-type"></a>tipo de recurso de governanceRuleSetting
 
@@ -18,7 +19,7 @@ Representa as regras que as configurações de função são compostas de.
 ## <a name="properties"></a>Propriedades
 |Propriedade      | Tipo         |Descrição|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |A id da regra. Por exemplo, ``ExpirationRule`` e ``MfaRule``.|
+|ruleIdentifier|Cadeia de caracteres        |A id da regra. Por exemplo, ``ExpirationRule`` e ``MfaRule``.|
 |configuração       |Cadeia de caracteres        |As configurações da regra. O valor é uma cadeia de caracteres JSON com uma lista de pares no formato de Parameter_Name:Parameter_Value. Por exemplo, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Representação JSON

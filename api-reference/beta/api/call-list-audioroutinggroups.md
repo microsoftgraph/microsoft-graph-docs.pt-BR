@@ -2,12 +2,13 @@
 title: Grupos de roteamento áudio de lista
 description: Recupere uma lista de objetos **audioRoutingGroup** .
 author: VinodRavichandran
-ms.openlocfilehash: 7ed00bbd3d000e71afe55a5e663408139174640b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3db2e4c95d522985afa815da78d4f02e4fedf854
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380132"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894429"
 ---
 # <a name="list-audio-routing-groups"></a>Grupos de roteamento áudio de lista
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380132"
 
 Recupere uma lista de objetos **audioRoutingGroup** .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não são suportados.                               |
 | Delegado (conta pessoal da Microsoft) | Não são suportados.                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

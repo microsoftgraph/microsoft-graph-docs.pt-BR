@@ -1,12 +1,13 @@
 ---
 title: Visão geral das propriedades estendidas do Outlook
 description: 'Propriedades estendidas permitem armazenar dados personalizados e especificamente servem como um mecanismo de fallback para aplicativos acessar '
-ms.openlocfilehash: 062c39eca7a32f52f88334b43a79ad413b986ad7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 18a7dff24f524a84c7b59286c2a6cb4d7aafef11
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004315"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894170"
 ---
 # <a name="outlook-extended-properties-overview"></a>Visão geral das propriedades estendidas do Outlook
 

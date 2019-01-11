@@ -2,12 +2,13 @@
 title: tipo de recurso de managedEBookCategory
 description: Contém propriedades para uma única categoria eBook Intune.
 author: tfitzmac
-ms.openlocfilehash: 5bc95696a9949fa4be2f58d39a18adf4875a9056
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b415554d47c33f06a917c10327dad983db762578
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894184"
 ---
 # <a name="managedebookcategory-resource-type"></a>tipo de recurso de managedEBookCategory
 
@@ -29,7 +30,7 @@ Contém propriedades para uma única categoria eBook Intune.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade.|
-|displayName|String|O nome da categoria eBook.|
+|displayName|Cadeia de caracteres|O nome da categoria eBook.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação do ManagedEBookCategory.|
 
 ## <a name="relationships"></a>Relações

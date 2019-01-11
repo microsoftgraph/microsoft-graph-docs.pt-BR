@@ -1,12 +1,13 @@
 ---
 title: Criar bookingBusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 2da2a36624664238badd63c73bc2967ace25635b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bfecb479a04f991799eb239c643e2cc521d8332c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894471"
 ---
 # <a name="create-bookingbusiness"></a>Criar bookingBusiness
 

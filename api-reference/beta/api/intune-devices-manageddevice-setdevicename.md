@@ -2,12 +2,13 @@
 title: ação de setDeviceName
 description: Definir o nome do dispositivo do dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 9856e9698da807e3bb3af1a3c30fa7e138569f48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 006ca412c59df6c4e0184827e52b3d790d7ea8bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894100"
 ---
 # <a name="setdevicename-action"></a>ação de setDeviceName
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -50,7 +51,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceName|String|Ainda não documentado|
+|deviceName|Cadeia de caracteres|Ainda não documentado|
 
 
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceInstallState
 description: Contém propriedades do estado de instalação de um dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 660ecb3dfae66e2f442027f61b82da69c2cee286
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94cd0f2181b23a37518a28cac3854f46dd4a2004
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894436"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
@@ -26,7 +27,7 @@ Contém propriedades do estado de instalação de um dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|

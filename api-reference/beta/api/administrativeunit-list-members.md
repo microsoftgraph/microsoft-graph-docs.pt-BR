@@ -2,12 +2,13 @@
 title: Listar membros
 description: Use essa API para obter os membros da lista (de usuário e de grupo) em uma unidade administrativa.
 author: lleonard-msft
-ms.openlocfilehash: d373c8353928d8e8d5d8b398aa09e62d457ba665
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2708f5e0395812f651942b26ab3ed303752d058d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894366"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -15,7 +16,7 @@ ms.locfileid: "27311659"
 
 Use essa API para obter os membros da lista (de usuário e de grupo) em uma unidade administrativa.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

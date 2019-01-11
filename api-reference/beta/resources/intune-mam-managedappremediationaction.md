@@ -2,12 +2,13 @@
 title: tipo de enum managedAppRemediationAction
 description: Um administrador que iniciou a ação a ser aplicada em um aplicativo gerenciado.
 author: tfitzmac
-ms.openlocfilehash: c464520051edcd5c3904f3b4b5bd5343dc043891
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ecc4b61400cac841a9a699f2d8e3e99e2f543a74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306654"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894198"
 ---
 # <a name="managedappremediationaction-enum-type"></a>tipo de enum managedAppRemediationAction
 

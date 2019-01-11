@@ -2,12 +2,13 @@
 title: tipo de enum mdmAuthority
 description: Define autoridade de gerenciamento de dispositivo móvel.
 author: tfitzmac
-ms.openlocfilehash: be582082eec4498bc86e6bc5b668b7c84c5edbf8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a3018cb94f742177b6efe4ce5f61d38312f2866
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894058"
 ---
 # <a name="mdmauthority-enum-type"></a>tipo de enum mdmAuthority
 
