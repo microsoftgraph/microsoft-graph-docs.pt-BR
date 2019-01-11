@@ -1,57 +1,58 @@
 ---
 title: 'Worksheet: UsedRange'
 description: O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.
-ms.openlocfilehash: 6da0ad6ab5fe71491d30eac1e95255d39ba37a18
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: edbe1a45f22ec07b0225be70549a2a7d59faf7eb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27894359"
 ---
-# <a name="worksheet-usedrange"></a><span data-ttu-id="88720-104">Worksheet: UsedRange</span><span class="sxs-lookup"><span data-stu-id="88720-104">Worksheet: UsedRange</span></span>
+# <a name="worksheet-usedrange"></a><span data-ttu-id="26dc6-104">Worksheet: UsedRange</span><span class="sxs-lookup"><span data-stu-id="26dc6-104">Worksheet: UsedRange</span></span>
 
-<span data-ttu-id="88720-p102">O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.</span><span class="sxs-lookup"><span data-stu-id="88720-p102">The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.</span></span>
-## <a name="permissions"></a><span data-ttu-id="88720-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="88720-107">Permissions</span></span>
-<span data-ttu-id="88720-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88720-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="26dc6-p102">O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.</span><span class="sxs-lookup"><span data-stu-id="26dc6-p102">The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function will return the top left cell.</span></span>
+## <a name="permissions"></a><span data-ttu-id="26dc6-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="26dc6-107">Permissions</span></span>
+<span data-ttu-id="26dc6-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26dc6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88720-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="88720-110">Permission type</span></span>      | <span data-ttu-id="88720-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="88720-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="26dc6-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="26dc6-110">Permission type</span></span>      | <span data-ttu-id="26dc6-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="26dc6-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="88720-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="88720-112">Delegated (work or school account)</span></span> | <span data-ttu-id="88720-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="88720-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="88720-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88720-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88720-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88720-115">Not supported.</span></span>    |
-|<span data-ttu-id="88720-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="88720-116">Application</span></span> | <span data-ttu-id="88720-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88720-117">Not supported.</span></span> |
+|<span data-ttu-id="26dc6-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="26dc6-112">Delegated (work or school account)</span></span> | <span data-ttu-id="26dc6-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="26dc6-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="26dc6-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="26dc6-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26dc6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26dc6-115">Not supported.</span></span>    |
+|<span data-ttu-id="26dc6-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="26dc6-116">Application</span></span> | <span data-ttu-id="26dc6-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26dc6-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="88720-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="88720-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26dc6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="26dc6-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/usedRange
 
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="88720-119">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="88720-119">Function parameters</span></span>
-<span data-ttu-id="88720-120">Na URL da solicitação, você pode fornecer parâmetros opcionais.</span><span class="sxs-lookup"><span data-stu-id="88720-120">In the request URL you may provide optional parameters.</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="26dc6-119">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="26dc6-119">Function parameters</span></span>
+<span data-ttu-id="26dc6-120">Na URL da solicitação, você pode fornecer parâmetros opcionais.</span><span class="sxs-lookup"><span data-stu-id="26dc6-120">In the request URL you may provide optional parameters.</span></span>
 
-| <span data-ttu-id="88720-121">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="88720-121">Parameter</span></span>    | <span data-ttu-id="88720-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="88720-122">Type</span></span>   |<span data-ttu-id="88720-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="88720-123">Description</span></span>|
+| <span data-ttu-id="26dc6-121">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="26dc6-121">Parameter</span></span>    | <span data-ttu-id="26dc6-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="26dc6-122">Type</span></span>   |<span data-ttu-id="26dc6-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="26dc6-123">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="88720-124">valuesOnly</span><span class="sxs-lookup"><span data-stu-id="88720-124">valuesOnly</span></span>|<span data-ttu-id="88720-125">Booliano</span><span class="sxs-lookup"><span data-stu-id="88720-125">Boolean</span></span>|<span data-ttu-id="88720-p104">Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).</span><span class="sxs-lookup"><span data-stu-id="88720-p104">Optional. Considers only cells with values as used cells (ignores formatting).</span></span>|
+|<span data-ttu-id="26dc6-124">valuesOnly</span><span class="sxs-lookup"><span data-stu-id="26dc6-124">valuesOnly</span></span>|<span data-ttu-id="26dc6-125">Booliano</span><span class="sxs-lookup"><span data-stu-id="26dc6-125">Boolean</span></span>|<span data-ttu-id="26dc6-p104">Opcional. Considera apenas as células com valores como células usadas (ignora a formatação).</span><span class="sxs-lookup"><span data-stu-id="26dc6-p104">Optional. Considers only cells with values as used cells (ignores formatting).</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="88720-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="88720-128">Request headers</span></span>
-| <span data-ttu-id="88720-129">Nome</span><span class="sxs-lookup"><span data-stu-id="88720-129">Name</span></span>       | <span data-ttu-id="88720-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="88720-130">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="26dc6-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="26dc6-128">Request headers</span></span>
+| <span data-ttu-id="26dc6-129">Nome</span><span class="sxs-lookup"><span data-stu-id="26dc6-129">Name</span></span>       | <span data-ttu-id="26dc6-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="26dc6-130">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="88720-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="88720-131">Authorization</span></span>  | <span data-ttu-id="88720-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="88720-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="88720-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="88720-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="88720-p106">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="88720-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="26dc6-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="26dc6-131">Authorization</span></span>  | <span data-ttu-id="26dc6-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="26dc6-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="26dc6-134">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="26dc6-134">Workbook-Session-Id</span></span>  | <span data-ttu-id="26dc6-p106">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="26dc6-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="88720-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="88720-137">Request body</span></span>
-<span data-ttu-id="88720-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="88720-138">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="26dc6-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="26dc6-137">Request body</span></span>
+<span data-ttu-id="26dc6-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="26dc6-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="88720-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="88720-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="26dc6-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="26dc6-139">Response</span></span>
 
-<span data-ttu-id="88720-140">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="88720-140">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="26dc6-140">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="26dc6-140">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="88720-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="88720-141">Example</span></span>
-<span data-ttu-id="88720-142">Aqui está um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="88720-142">Here is an example that shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="26dc6-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="26dc6-141">Example</span></span>
+<span data-ttu-id="26dc6-142">Aqui está um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="26dc6-142">Here is an example that shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="88720-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88720-143">Request</span></span>
-<span data-ttu-id="88720-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="88720-144">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="26dc6-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="26dc6-143">Request</span></span>
+<span data-ttu-id="26dc6-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="26dc6-144">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -61,8 +62,8 @@ GET /workbook/worksheets/{id|name}/usedRange
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange
 ```
 
-##### <a name="response"></a><span data-ttu-id="88720-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="88720-145">Response</span></span>
-<span data-ttu-id="88720-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="88720-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="26dc6-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="26dc6-145">Response</span></span>
+<span data-ttu-id="26dc6-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="26dc6-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,10 +80,10 @@ Content-length: 169
 }
 ```
 
-<span data-ttu-id="88720-149">Como alternativa, essa função pode ser chamada com o opcional `valuesOnly` parâmetro.</span><span class="sxs-lookup"><span data-stu-id="88720-149">Alternatively, this function can be called with the optional `valuesOnly` parameter.</span></span>
+<span data-ttu-id="26dc6-149">Como alternativa, essa função pode ser chamada com o opcional `valuesOnly` parâmetro.</span><span class="sxs-lookup"><span data-stu-id="26dc6-149">Alternatively, this function can be called with the optional `valuesOnly` parameter.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="88720-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88720-150">Request</span></span>
-<span data-ttu-id="88720-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="88720-151">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="26dc6-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="26dc6-150">Request</span></span>
+<span data-ttu-id="26dc6-151">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="26dc6-151">Here is an example of the request.</span></span>
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -92,8 +93,8 @@ Content-length: 169
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/usedRange(valuesOnly=true)
 ```
 
-##### <a name="response"></a><span data-ttu-id="88720-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="88720-152">Response</span></span>
-<span data-ttu-id="88720-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="88720-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="26dc6-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="26dc6-152">Response</span></span>
+<span data-ttu-id="26dc6-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="26dc6-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
