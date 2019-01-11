@@ -2,12 +2,13 @@
 title: Listar childFolders
 description: Obtém uma coleção de pastas filho sob a pasta de contatos especificada.
 author: angelgolfer-ms
-ms.openlocfilehash: 0df1361fd1f25b2ac6e7793fb78ed1063cc00d84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7574b1d269a5ebdda0dbcc4549e8669d6540e1a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873567"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 

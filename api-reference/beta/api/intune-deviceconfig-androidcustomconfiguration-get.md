@@ -2,12 +2,13 @@
 title: Get androidCustomConfiguration
 description: Ler propriedades e relações do objeto androidCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 27c057af115e48621a46218c6743962adef73312
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 33202bd076dd9e3d0cf5e197468c3598a8717f34
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870368"
 ---
 # <a name="get-androidcustomconfiguration"></a>Get androidCustomConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

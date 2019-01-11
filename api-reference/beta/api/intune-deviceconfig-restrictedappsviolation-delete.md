@@ -2,12 +2,13 @@
 title: Excluir restrictedAppsViolation
 description: Exclui um restrictedAppsViolation.
 author: tfitzmac
-ms.openlocfilehash: 0a5a746074f743d583f6512e12bd85419786146f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18f57161d6ac299aa16a1cdfc12b46a9358de259
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863165"
 ---
 # <a name="delete-restrictedappsviolation"></a>Excluir restrictedAppsViolation
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restricted
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

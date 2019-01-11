@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso ipRange
 description: Classe base de intervalo de IP para intervalo de endereços IPV4 e IPv6
-ms.openlocfilehash: e287ea24c3b144cd3188fa0ae3b6bb5eff6e729f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3281f42d563a5c702700d10fdc2acd60142935b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037561"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872840"
 ---
 # <a name="iprange-resource-type"></a>Tipo de recurso ipRange
 

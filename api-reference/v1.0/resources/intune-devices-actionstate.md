@@ -2,12 +2,13 @@
 title: tipo de enum actionState
 description: Estado da ação no dispositivo
 author: tfitzmac
-ms.openlocfilehash: 53ee72430ac646bf978a3167b87feaf398c8ac37
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c0c05e283b94473a5c8c43498ff5bf1dd82da7a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333380"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871936"
 ---
 # <a name="actionstate-enum-type"></a>tipo de enum actionState
 
@@ -17,7 +18,7 @@ Estado da ação no dispositivo
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Não é um estado de ação válido|
+|nenhum|0|Não é um estado de ação válido|
 |pendente|1|A ação é pendente|
 |cancelado|2|Ação foi cancelada.|
 |ativo|3|Ação está ativa.|

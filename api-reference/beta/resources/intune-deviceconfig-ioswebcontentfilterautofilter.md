@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de iosWebContentFilterAutoFilter
 description: Representa um tipo de configuração de filtro de conteúdo da Web, que habilita o recurso de filtro automático iOS e permite que o controle de acesso de URL adicional iOS. Quando construída sem valores de propriedade, o dispositivo iOS permitirá o filtro automático independentemente.
-ms.openlocfilehash: 04a221ac512ab3934702a2a9e3178ba23a2ac3ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02576565ecf764d33312477531d6a76c61911cb6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038744"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868128"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>tipo de recurso de iosWebContentFilterAutoFilter
 

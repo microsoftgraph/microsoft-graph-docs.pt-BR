@@ -1,12 +1,13 @@
 ---
 title: Relatórios de atividades do Yammer
 description: Você pode usar os relatórios de atividades do Yammer para entender o nível de compromisso da organização com o Yammer ao ver a quantidade de atividade gerada em toda a organização e o número de usuários únicos que publicam, curtem, e leem mensagens no Yammer.
-ms.openlocfilehash: ff9eaecf7b51cc5104c517b21fab88990e9a359e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 98b3172fef6baff0a1ba13f6f78ad92b58829f3d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003967"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871761"
 ---
 # <a name="yammer-activity-reports"></a>Relatórios de atividades do Yammer
 

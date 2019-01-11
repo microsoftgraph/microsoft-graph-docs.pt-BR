@@ -2,12 +2,13 @@
 title: Ação createToken
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 52c73a04044935979b21953f8a9496e10da84776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 875ff4be93e79279c516568e7279440953f5b82e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342550"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870011"
 ---
 # <a name="createtoken-action"></a>Ação createToken
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerE
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

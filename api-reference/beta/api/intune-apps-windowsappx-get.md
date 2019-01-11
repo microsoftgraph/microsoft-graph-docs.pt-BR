@@ -2,12 +2,13 @@
 title: Obter windowsAppX
 description: Leia as propriedades e os relacionamentos do objeto windowsAppX.
 author: tfitzmac
-ms.openlocfilehash: ee4ea8652acd1c64d9ee78e1ee22569c849c8220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa87736626fbd2a26849b67b6993f7706de7cd75
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869794"
 ---
 # <a name="get-windowsappx"></a>Obter windowsAppX
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

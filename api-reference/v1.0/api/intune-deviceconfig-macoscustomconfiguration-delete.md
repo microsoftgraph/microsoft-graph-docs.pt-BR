@@ -2,12 +2,13 @@
 title: Excluir macOSCustomConfiguration
 description: Exclui macOSCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 45523f61e1ee75a534b54ff50c4d70f1f6ff724b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34a08574f8a212b2222454166a8d090c39bd1669
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305107"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871908"
 ---
 # <a name="delete-macoscustomconfiguration"></a>Excluir macOSCustomConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

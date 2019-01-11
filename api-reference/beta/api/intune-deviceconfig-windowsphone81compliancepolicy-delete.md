@@ -2,12 +2,13 @@
 title: Excluir windowsPhone81CompliancePolicy
 description: Exclui windowsPhone81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 1026c2182d17616d2528e43574215c1d57678172
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd0da2092360ef94a05d1ba71b5a5ed8a2e9b36a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324210"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868485"
 ---
 # <a name="delete-windowsphone81compliancepolicy"></a>Excluir windowsPhone81CompliancePolicy
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

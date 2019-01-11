@@ -1,12 +1,13 @@
 ---
 title: Criar contrato
 description: Crie um novo objeto de contrato.
-ms.openlocfilehash: bfcab53b4233d133309c99a4825e184a42670458
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870634"
 ---
 # <a name="create-agreement"></a>Criar contrato
 
@@ -39,12 +40,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome para exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
-|arquivos/nome de arquivo|String|Nome do arquivo contrato (por exemplo, TOU.pdf).|
+|arquivos/nome de arquivo|Cadeia de caracteres|Nome do arquivo contrato (por exemplo, TOU.pdf).|
 |arquivos/isDefault|Booliano|Indica se esse é o arquivo de contrato padrão se nenhum da cultura corresponder a preferência do cliente. Se nenhum do arquivo é marcado como padrão, primeiro será tratado como padrão.|
-|arquivos/idioma|String|Cultura do arquivo no formato languagecode2-país/regioncode2 contrato. languagecode2 é um código de duas letras minúsculas, derivado do ISO 639-1. País/regioncode2 é derivado do ISO 3166 e normalmente consiste em duas letras maiusculas ou uma marca de idioma BCP-47 (por exemplo, en-US).|
-|arquivos/fileData/dados|Binário|Dados que representam os termos de uso do documento PDF.|
+|arquivos/idioma|Cadeia de caracteres|Cultura do arquivo no formato languagecode2-país/regioncode2 contrato. languagecode2 é um código de duas letras minúsculas, derivado do ISO 639-1. País/regioncode2 é derivado do ISO 3166 e normalmente consiste em duas letras maiusculas ou uma marca de idioma BCP-47 (por exemplo, en-US).|
+|arquivos/fileData/dados|Binária|Dados que representam os termos de uso do documento PDF.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `201, Created` objeto de [contrato](../resources/agreement.md) e código de resposta no corpo da resposta.

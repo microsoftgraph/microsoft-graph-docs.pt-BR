@@ -1,12 +1,13 @@
 ---
 title: Obter singleValueLegacyExtendedProperty
 description: Você pode obter uma instância de recurso único expandida com uma propriedade estendida específica, ou uma coleção de instâncias de recurso
-ms.openlocfilehash: 72ae071d2c5c92af02d26af2474c776a5dc1c83c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ee9d51f945650c8051badd27f1b934d03f47cc7b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039610"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873182"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -245,8 +246,8 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ## <a name="path-parameters"></a>Parâmetros do caminho
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|id_value|String|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
-|property_value |String|O valor da propriedade estendida a ser correspondida. Obrigatório quando indicado na seção **Solicitação HTTP** acima. Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}. Confira exemplos na [solicitação 4](#request-4) abaixo. |
+|id_value|Cadeia de caracteres|A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|property_value |Cadeia de caracteres|O valor da propriedade estendida a ser correspondida. Obrigatório quando indicado na seção **Solicitação HTTP** acima. Se {property_value} não for uma cadeia de caracteres, converta o `ep/value` para o tipo de dado Edm apropriado ao compará-lo com {property_value}. Confira exemplos na [solicitação 4](#request-4) abaixo. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|

@@ -2,12 +2,13 @@
 title: Criar enrollmentTroubleshootingEvent
 description: Cria um novo objeto enrollmentTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 213c81a66cca2696083f54a5e0fc4cad28cce9f1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94e3f1f98a8400d7794863e7b3852d50be97b712
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309909"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872685"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Criar enrollmentTroubleshootingEvent
 
@@ -38,7 +39,7 @@ POST /deviceManagement/troubleshootingEvents
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto enrollmentTroubleshootingEvent.

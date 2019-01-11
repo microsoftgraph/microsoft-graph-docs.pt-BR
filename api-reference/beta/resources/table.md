@@ -2,12 +2,13 @@
 title: Tipo de recurso Table
 description: Representa uma tabela do Excel.
 author: lumine2008
-ms.openlocfilehash: 06c87f4d4f50985f7c9e3420d481c564dbfa317b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fe5e9c196ac3df87ed99db75b27021c6e022e59
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872265"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 

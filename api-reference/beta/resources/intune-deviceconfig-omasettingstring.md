@@ -2,12 +2,13 @@
 title: Tipo de recurso omaSettingString
 description: Definição de cadeia de caracteres para configurações de OMA.
 author: tfitzmac
-ms.openlocfilehash: 34f25d7814c533ddc6d9ffe16ca45487382b4391
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78dfbeaf89e25903efcacf65346c7dda70e53803
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332554"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874659"
 ---
 # <a name="omasettingstring-resource-type"></a>Tipo de recurso omaSettingString
 

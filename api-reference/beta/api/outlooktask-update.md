@@ -2,12 +2,13 @@
 title: Atualizar outlooktask
 description: Alterar propriedades graváveis de uma tarefa do Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: 0cd4907c4ab1cb517ab2611cc4dc30431e496440
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771727"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874750"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
@@ -19,7 +20,7 @@ A propriedade **completedDateTime** pode ser definida pela ação **completa** o
 
 Por padrão, esta operação (e as operações de tarefa POST, GET e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -51,10 +52,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|assignedTo|String|O nome da pessoa que tenha sido atribuído a tarefa.|
+|assignedTo|Cadeia de caracteres|O nome da pessoa que tenha sido atribuído a tarefa.|
 |body|[itemBody](../resources/itembody.md)|O corpo da tarefa que normalmente contém informações sobre a tarefa. Observe que apenas o tipo de HTML é suportado.|
 |categories|String collection|As categorias associadas à tarefa.|
-|changeKey|String|A versão da tarefa.|
+|changeKey|Cadeia de caracteres|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e hora em que a tarefa foi criada. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data em que o fuso horário especificado que a tarefa deve ser concluído.|
@@ -62,14 +63,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |importance|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isReminderOn|Booliano|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação a tarefa. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|owner|String|O nome da pessoa que criou a tarefa.|
-|parentFolderId|String|O identificador exclusivo para a pasta do pai da tarefa.|
+|owner|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
+|parentFolderId|Cadeia de caracteres|O identificador exclusivo para a pasta do pai da tarefa.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora para um alerta de lembrete da tarefa ocorra.|
 |sensitivity|string|Indica o nível de privacidade para a tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado quando a tarefa for começar.|
 |status|string|Indica o estado ou o progresso da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|String|Uma breve descrição ou o título da tarefa.|
+|subject|Cadeia de caracteres|Uma breve descrição ou o título da tarefa.|
 
 ## <a name="response"></a>Resposta
 

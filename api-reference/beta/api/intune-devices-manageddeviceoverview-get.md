@@ -2,12 +2,13 @@
 title: Get managedDeviceOverview
 description: Ler propriedades e relações do objeto managedDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: c3d76e1b07e46245a3e4d391d5f44d04a84399a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94c6b1fc51a3bf2d518c50f7ef16def8234c2b12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827486"
 ---
 # <a name="get-manageddeviceoverview"></a>Get managedDeviceOverview
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

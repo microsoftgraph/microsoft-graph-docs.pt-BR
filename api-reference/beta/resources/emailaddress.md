@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso emailAddress
 description: Representa o nome e o endereço SMTP de uma instância da entidade, por exemplo, uma mensagem destinatário ou calendário proprietário.
-ms.openlocfilehash: f607fe4ce01b9a3c3f5e7af5aa1638fef3840177
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5286334378aa5d208cf171ecab0bdc1777a4073b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034176"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871222"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 
@@ -18,7 +19,7 @@ Representa o nome e o endereço SMTP de uma instância da entidade, por exemplo,
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email de uma instância da entidade.|
-|name|String|O nome de exibição de uma instância da entidade.|
+|name|Cadeia de caracteres|O nome de exibição de uma instância da entidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

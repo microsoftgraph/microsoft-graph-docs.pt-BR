@@ -2,12 +2,13 @@
 title: Atualizar windows10EnrollmentCompletionPageConfiguration
 description: Atualize as propriedades de um objeto windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
-ms.openlocfilehash: bcc62cc4bea069a6a29ce2d321578a86145a0446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9cc7d2cff8563d5e720e23c7f49bd88c42f47ec3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360043"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870075"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Atualizar windows10EnrollmentCompletionPageConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
@@ -54,13 +55,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |createdDateTime|DateTimeOffset|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|Ainda não está documentado Herdado de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|showInstallationProgress|Boolean|Mostrar ou ocultar o progresso da instalação para o usuário|
-|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repetir a instalação em caso de falha de instalação|
-|allowDeviceResetOnInstallFailure|Boolean|Permitir ou bloquear o dispositivo redefinir em caso de falha de instalação|
-|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
-|customErrorMessage|String|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
+|showInstallationProgress|Booliano|Mostrar ou ocultar o progresso da instalação para o usuário|
+|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repetir a instalação em caso de falha de instalação|
+|allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear o dispositivo redefinir em caso de falha de instalação|
+|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
+|customErrorMessage|Cadeia de caracteres|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
 |installProgressTimeoutInMinutes|Int32|Definir tempo limite de progresso de instalação em minutos|
-|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
+|allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
 |selectedMobileAppIds|String collection|Aplicativos selecionados para rastrear o status de instalação|
 
 

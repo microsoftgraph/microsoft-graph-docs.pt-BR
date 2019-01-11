@@ -1,12 +1,13 @@
 ---
 title: 'TableCollection: add'
 description: Cria uma nova tabela. O endereço de origem do intervalo determina a planilha à qual a tabela será adicionada. Se a tabela não puder ser adicionada (por exemplo, porque o endereço é inválido ou a tabela se sobreporia a outra), será gerado um erro.
-ms.openlocfilehash: 6435abe4a2671ec3937b7f1b0bbda8825fad1c7c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8053ce8e8d0ac62e096fa70255064e82a03630f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039834"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868443"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 

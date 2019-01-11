@@ -2,12 +2,13 @@
 title: tipo de enum subjectAlternativeNameType
 description: Opções de nome alternativo da entidade.
 author: tfitzmac
-ms.openlocfilehash: 2c1249c90998a24eca63da7d80e580ac497aa9b8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 914c4d577cc478e42e7982b9480bc8e43b8d88de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869542"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>tipo de enum subjectAlternativeNameType
 
@@ -19,7 +20,7 @@ Opções de nome alternativo da entidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum nome alternativo da entidade.|
+|nenhum|0|Nenhum nome alternativo da entidade.|
 |emailAddress|1|Endereço de email.|
 |userPrincipalName|2|Nome principal do usuário (UPN).|
 |customAzureADAttribute|4|Atributo do AD Azure personalizado.|

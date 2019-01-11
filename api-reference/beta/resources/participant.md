@@ -2,12 +2,13 @@
 title: tipo de recurso de participantes
 description: O tipo de participante.
 author: VinodRavichandran
-ms.openlocfilehash: 3fcc5fc5d95ded3b5424370cd180fde38c1a65be
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c125589506dbd529d2b45df4171e9d54b346cbba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380391"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869829"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso de participantes
 
@@ -17,7 +18,7 @@ O tipo de participante.
 
 ## <a name="methods"></a>Métodos
 
-| Método		                                                          | Tipo de retorno                              | Descrição                                       |
+| Método                                                          | Tipo de retorno                              | Descrição                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
 | [Obtenha um participante](../api/participant-get.md)                    | [participante](participant.md)            | Leia as propriedades do objeto **participante** .    |
 | [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure o participante mixer de áudio.            |
@@ -27,14 +28,14 @@ O tipo de participante.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	             | Tipo                                     | Descrição                                                  |
+| Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | A identificação dos participantes.                                          |
+| id                   | Cadeia de caracteres                                   | A identificação dos participantes.                                          |
 | Info                 | [participantInfo](participantinfo.md)    | O participante do participante.                          |
 | isInLobby            | booliano                                  | True se o participante estiver no lobby                          |
 | isMuted              | booliano                                  | True se o participante está sem som (cliente ou servidor sem áudio)    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
-| metadados             | String                                   | Um blob de dados fornecidos pelo participante na lista     |
+| metadados             | Cadeia de caracteres                                   | Um blob de dados fornecidos pelo participante na lista     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre se o participante tenha o recurso de gravação. |
 
 ## <a name="relationships"></a>Relações

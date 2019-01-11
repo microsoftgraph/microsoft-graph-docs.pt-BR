@@ -2,12 +2,13 @@
 title: Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: b8df80f71e6767e22a35db2d82a18e0a7263342d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8017ac803ffa07a2e122553dee3268b0193157f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869570"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentityState
 

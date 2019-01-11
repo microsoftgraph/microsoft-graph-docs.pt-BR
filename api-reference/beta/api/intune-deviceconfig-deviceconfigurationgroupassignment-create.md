@@ -2,12 +2,13 @@
 title: Criar deviceConfigurationGroupAssignment
 description: Crie um novo objeto de deviceConfigurationGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: c07356d3cf63699fda95e2be6fe361841e0b0d95
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4193470483918a2b690962ae3e190a08ac2f4c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355101"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869528"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
 
@@ -46,7 +47,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto deviceConfigurationGroupAssignment.
@@ -55,9 +56,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|targetGroupId|String|A identificação do grupo AAD pretendemos a configuração do dispositivo.|
-|excludeGroup|Boolean|Indica se este grupo devem ser excluídos. Padrões que o grupo deve ser incluído|
+|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|Cadeia de caracteres|A identificação do grupo AAD pretendemos a configuração do dispositivo.|
+|excludeGroup|Booliano|Indica se este grupo devem ser excluídos. Padrões que o grupo deve ser incluído|
 
 
 

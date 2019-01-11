@@ -2,12 +2,13 @@
 title: Acessar deviceEnrollmentLimitConfiguration
 description: Leia as propriedades e as relações do objeto deviceEnrollmentLimitConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3c92740fc369eb8ef7bc7ca881187d50dd476087
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: add496121251c29181a01800387fcfa858c75284
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869822"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Acessar deviceEnrollmentLimitConfiguration
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

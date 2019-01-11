@@ -2,12 +2,13 @@
 title: Atualizar importedWindowsAutopilotDeviceIdentityUpload
 description: Atualize as propriedades de um objeto importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
-ms.openlocfilehash: 4fb2274fdb172b6aeceba11364a6460cbe5cce58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 225259f74791e003aefc506cde69a7f32c98485e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870851"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Atualizar importedWindowsAutopilotDeviceIdentityUpload
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .

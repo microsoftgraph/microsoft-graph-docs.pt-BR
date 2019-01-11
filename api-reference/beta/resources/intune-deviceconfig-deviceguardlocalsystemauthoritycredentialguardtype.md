@@ -2,12 +2,13 @@
 title: tipo de enum deviceGuardLocalSystemAuthorityCredentialGuardType
 description: Valores possíveis de configurações do protetor de credencial.
 author: tfitzmac
-ms.openlocfilehash: 6f6c952d1c480d42db45de6345eba883ff5848a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f59fed69647ead4ccdda0523ae80571aebcb57c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346960"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871579"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>tipo de enum deviceGuardLocalSystemAuthorityCredentialGuardType
 

@@ -2,12 +2,13 @@
 title: Criar termsAndConditionsAcceptanceStatus
 description: Cria um novo objeto termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: 4a371d2ac03ef47ad0af4ae70aa248dcd96e4bf0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7ab313bb58e83c2d5ca9804fb84d95e807a4841
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348297"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863193"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Criar termsAndConditionsAcceptanceStatus
 
@@ -36,7 +37,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto termsAndConditionsAcceptanceStatus.

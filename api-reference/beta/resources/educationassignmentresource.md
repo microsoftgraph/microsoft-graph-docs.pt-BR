@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de educationAssignmentResource
 description: Um objeto wrapper que armazena os recursos associados a uma atribuição. O wrapper adiciona a propriedade **distributeForStudentWork** e indica as datas que este recurso será
-ms.openlocfilehash: 6907af5e4408248487b118c390bb2ec209700124
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868835"
 ---
 # <a name="educationassignmentresource-resource-type"></a>tipo de recurso de educationAssignmentResource
 
@@ -27,7 +28,7 @@ Um objeto wrapper que armazena os recursos associados a uma atribuição. O wrap
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Booliano|Indica se este recurso deve ser copiado para cada envio estudante para envio e modificação.|
-|id|String| Identificação desse recurso. Somente leitura.|
+|id|Cadeia de caracteres| Identificação desse recurso. Somente leitura.|
 |recurso|[educationResource](educationresource.md)|Objeto de recurso que tiver sido associado essa atribuição.|
 
 ## <a name="relationships"></a>Relações

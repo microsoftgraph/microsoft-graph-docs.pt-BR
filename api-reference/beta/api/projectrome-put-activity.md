@@ -1,12 +1,13 @@
 ---
 title: Criar ou substituir uma atividade
 description: Criar uma nova ou substituir uma atividade do usuário existente para seu aplicativo. Se você gostaria de criar uma atividade do usuário e seu relacionados **historyItems** em uma solicitação, você pode usar Inserir aprofundada.
-ms.openlocfilehash: 1a749f0c4303551ab9915c89d84e6757c61bd0a2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01fa9fff306dbd07af0964f27dd97b288b6bab67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871789"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 

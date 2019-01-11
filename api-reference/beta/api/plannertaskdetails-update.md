@@ -1,12 +1,13 @@
 ---
 title: Atualizar plannertaskdetails
 description: Atualize as propriedades do objeto **plannertaskdetails**.
-ms.openlocfilehash: e0f3768b1f6afcbbda6b7467973cf829beb3a072
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4c1ff4475f2479af22221a76ff693135e5daa7fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035662"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870718"
 ---
 # <a name="update-plannertaskdetails"></a>Atualizar plannertaskdetails
 

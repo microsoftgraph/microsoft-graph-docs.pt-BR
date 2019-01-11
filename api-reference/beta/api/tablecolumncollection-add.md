@@ -2,12 +2,13 @@
 title: 'TableColumnCollection: add'
 description: Adiciona uma nova coluna à tabela.
 author: lumine2008
-ms.openlocfilehash: a0897dc4eff387d14643b0a067ef92ad79755614
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bd3c1a2b1cbfcb8d0e47f9d7ec93b0695e9854c3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870235"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -39,9 +40,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/add
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|número|Especifica a posição relativa da nova coluna. A coluna anterior nessa posição é deslocada para a direita. O valor do índice deve ser igual ou menor que o valor do índice da última coluna, portanto não pode ser usado para acrescentar uma coluna ao final da tabela. Indexado com zero.|
+|índice|number|Especifica a posição relativa da nova coluna. A coluna anterior nessa posição é deslocada para a direita. O valor do índice deve ser igual ou menor que o valor do índice da última coluna, portanto não pode ser usado para acrescentar uma coluna ao final da tabela. Indexado com zero.|
 |values|(booliano, cadeia de caracteres ou número)|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
 
 ## <a name="response"></a>Resposta

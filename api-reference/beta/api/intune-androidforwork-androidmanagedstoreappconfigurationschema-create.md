@@ -2,12 +2,13 @@
 title: Criar androidManagedStoreAppConfigurationSchema
 description: Crie um novo objeto de androidManagedStoreAppConfigurationSchema.
 author: tfitzmac
-ms.openlocfilehash: 6e8cb3cc56eb1e6f0cded7539b86aea24194fba1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c3cf700bb835df981c419fc15b56ef5fbc905fea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874540"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Criar androidManagedStoreAppConfigurationSchema
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto androidManagedStoreAppConfigurationSchema.

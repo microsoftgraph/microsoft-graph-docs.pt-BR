@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailActivityCounts'
 description: Permite que você compreenda as tendências da atividade de email (como quantos foram enviados, lidos e recebidos) em sua organização.
-ms.openlocfilehash: beded762ab0f8a7047cbfa02df88d0de1a0c2ebd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f3ddc2d1b9a11668ee6d90ac2cfb9b07d1d0ce0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873707"
 ---
 # <a name="reportroot-getemailactivitycounts"></a>reportRoot: getEmailActivityCounts
 

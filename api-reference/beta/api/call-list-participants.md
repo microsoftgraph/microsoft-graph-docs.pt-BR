@@ -2,12 +2,13 @@
 title: Participantes da lista
 description: Recupere uma lista de objetos de participantes na chamada.
 author: VinodRavichandran
-ms.openlocfilehash: c22e276f7b7bb1ddd0a082bd54f0b5b8d93226c1
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 4b0fb6ede331168cb9f10483e4628cd76046f211
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870312"
 ---
 # <a name="list-participants"></a>Participantes da lista
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380440"
 
 Recupere uma lista de objetos de participantes na chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Application     | Nenhum                                        |
+| Aplicativo     | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

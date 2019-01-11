@@ -1,12 +1,13 @@
 ---
 title: Listar schemaExtensions
 description: 'Obtenha uma lista de objetos schemaExtension criados por qualquer apps que você é proprietário no locatário atual (que pode ser '
-ms.openlocfilehash: 9e366ae62276198ad08f322646c920816d25ec64
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f9d34552229f5b18035a2ba5d84b0ac0a4de5b4d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037903"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868415"
 ---
 # <a name="list-schemaextensions"></a>Listar schemaExtensions
 

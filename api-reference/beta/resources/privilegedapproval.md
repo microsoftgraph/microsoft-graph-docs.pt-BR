@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de privilegedApproval
 description: Representa uma aprovação solicitada no gerenciamento de identidades privilegiado para entrar em uma função.
-ms.openlocfilehash: 3f900ef4a141b2f71c303becd49789b86cefb1b5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dee8cffba02270308c6786b2549b66aa5ad9dfa8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868345"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso de privilegedApproval
 
@@ -30,14 +31,14 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 |:---------------|:--------|:----------|
 |approvalDuration|Duração||
 |approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Cadeia de caracteres||
+|approverReason|Cadeia de caracteres||
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String| Somente leitura.|
-|requestorReason|String||
-|roleId|String||
+|id|Cadeia de caracteres| Somente leitura.|
+|requestorReason|Cadeia de caracteres||
+|roleId|Cadeia de caracteres||
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|userId|String||
+|userId|Cadeia de caracteres||
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

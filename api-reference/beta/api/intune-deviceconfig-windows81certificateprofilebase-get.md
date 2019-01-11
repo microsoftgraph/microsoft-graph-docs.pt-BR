@@ -2,12 +2,13 @@
 title: Obter windows81CertificateProfileBase
 description: Leia as propriedades e os relacionamentos do objeto windows81CertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 8c5ff7dd258f69546093d084b8159a5396376621
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c89185b9211cf502c072a8ba4a3e28a199dcf5e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868730"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Obter windows81CertificateProfileBase
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

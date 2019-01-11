@@ -2,12 +2,13 @@
 title: tipo de recurso de resourceReference
 description: Tipo complexo que contém propriedades de ideias.
 author: simonhult
-ms.openlocfilehash: 2f1a44412eebbb7a74895c12db9a07696d6ee409
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ab2a79d66db6a45ecf3df748cf8f5740721ef80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363617"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874323"
 ---
 # <a name="resourcereference-resource-type"></a>tipo de recurso de resourceReference
 
@@ -32,5 +33,5 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade      | Tipo      | Descrição  |
 | ------------- |-----------| -------------|
 | webUrl        | String    | Uma URL, levando a item referenciado. |
-| id            | String    | Identificador exclusivo do item.           |
-| type          | String    | Um valor de cadeia de caracteres que pode ser usado para classificar o item, como "microsoft.graph.driveItem" |
+| id            | Cadeia de caracteres    | Identificador exclusivo do item.           |
+| type          | Cadeia de caracteres    | Um valor de cadeia de caracteres que pode ser usado para classificar o item, como "microsoft.graph.driveItem" |

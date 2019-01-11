@@ -2,12 +2,13 @@
 title: Ação syncApps
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: ad320caccc4d4c64f6281d6b2b0c1be43472c7e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 770d4dcc3a97b10d3efd96224d7e1a69305aec3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352707"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870508"
 ---
 # <a name="syncapps-action"></a>Ação syncApps
 
@@ -38,7 +39,7 @@ POST /deviceManagement/androidForWorkSettings/syncApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

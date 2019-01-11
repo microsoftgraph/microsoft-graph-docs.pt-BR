@@ -2,12 +2,13 @@
 title: Listar mailFolders
 description: 'Obtenha a coleção de pastas de email sob a pasta raiz do usuário conectado. '
 author: dkershaw10
-ms.openlocfilehash: 6dfe86022db740dbebfc79c3da5905a8dd0a6827
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 853b20ec3ed667fdf6dbc8b99645623d4872a09d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359973"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872447"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 

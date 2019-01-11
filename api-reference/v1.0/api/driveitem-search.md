@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Pesquisar arquivos
-ms.openlocfilehash: 591aa271a9e5a1d9ae69af2e5d8f6ea9ba7fe74b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: c51706bc3f8eb18ba571cc6896d9b350b2daf1c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748217"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868534"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 

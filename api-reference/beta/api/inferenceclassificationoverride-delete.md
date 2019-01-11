@@ -1,12 +1,13 @@
 ---
 title: Excluir inferenceClassificationOverride
 description: Excluir uma substituição de caixa de entrada com foco especificada por sua identificação.
-ms.openlocfilehash: 888902f1b4e2f9690e875162a5ed0a792bd02f72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7db351e11ccfa8e88fe97ff1ee22173a87242d57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037353"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870137"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Excluir inferenceClassificationOverride
 

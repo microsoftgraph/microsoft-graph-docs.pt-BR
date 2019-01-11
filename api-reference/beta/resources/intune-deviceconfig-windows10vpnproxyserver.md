@@ -2,12 +2,13 @@
 title: tipo de recurso de windows10VpnProxyServer
 description: Servidor de Proxy VPN.
 author: tfitzmac
-ms.openlocfilehash: e21b964ab1bd648cd042a1364ecf5f0942ded085
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 231740bbeaa6757456fa684eb71a5b59ebd4adc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872174"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>tipo de recurso de windows10VpnProxyServer
 
@@ -22,10 +23,10 @@ Herda de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|Url de script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|automaticConfigurationScriptUrl|Cadeia de caracteres|Url de script de configuração automática do proxy. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|Cadeia de caracteres|Endereço. Herdado de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |porta|Int32|Porta. 0 a 65.535 Inherited de [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md) de valores válido|
-|bypassProxyServerForLocalAddress|Boolean|Ignorar servidor proxy para endereços locais.|
+|bypassProxyServerForLocalAddress|Booliano|Ignorar servidor proxy para endereços locais.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

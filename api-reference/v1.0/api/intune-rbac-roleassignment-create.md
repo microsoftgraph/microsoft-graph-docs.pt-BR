@@ -2,12 +2,13 @@
 title: Criar roleAssignment
 description: Criar um novo objeto roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: ac3a8ee5b007c918a9b655cb2f396c872f9f2d92
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 769deaffbb153fe54bfe2e32c936868f9480efc6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871026"
 ---
 # <a name="create-roleassignment"></a>Criar roleAssignment
 
@@ -36,7 +37,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto roleAssignment.
@@ -45,7 +46,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleAssi
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
 |descrição|Cadeia de caracteres|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|

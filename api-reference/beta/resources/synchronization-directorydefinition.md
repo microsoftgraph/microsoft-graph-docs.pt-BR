@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de directoryDefinition
 description: Fornece as informações de mecanismo de sincronização sobre um diretório e seus objetos. Este recurso informa ao mecanismo de sincronização, por exemplo, se o diretório tem objetos com o nome de **usuário** e **grupo**, quais atributos são suportados para esses objetos e os tipos para esses atributos. Na ordem para o objeto e o atributo para participar de regras de sincronização e mapeamentos de objeto, ele devem ser definidos como parte da definição do diretório.
-ms.openlocfilehash: ddc32237efc18d43da23d815aea00ee01b2650be
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874519"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso de directoryDefinition
 
@@ -22,9 +23,9 @@ Definições do diretório são atualizadas como parte do [esquema de sincroniza
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id           |String     |Identificador de diretório. Não anulável.|
+|id           |Cadeia de caracteres     |Identificador de diretório. Não anulável.|
 |metadados       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
-|name           |String     |Nome do diretório. Deve ser exclusivo dentro do [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
+|name           |Cadeia de caracteres     |Nome do diretório. Deve ser exclusivo dentro do [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
 |objetos        |coleção [objectDefinition](synchronization-objectdefinition.md)    |Coleção de objetos compatíveis com o diretório.|
 
 ## <a name="json-representation"></a>Representação JSON

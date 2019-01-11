@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de plannerFavoritePlanReference
 description: 'O recurso de **plannerFavoritePlanReference** digite representa uma referência a um plannerPlan que foi marcada como favorita pelo usuário. '
-ms.openlocfilehash: bd399572dfce54ee7e46da6af60eb661484519de
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b17846eaa1b9a9859d23735d18a191cae4872542
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871320"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>tipo de recurso de plannerFavoritePlanReference
 
@@ -21,7 +22,7 @@ O recurso de **plannerFavoritePlanReference** digite representa uma referência 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido em [Como usar dicas de ordem no Planner](planner-order-hint-format.md).|
-|planTitle|String|Título do plano no momento em que o usuário marcado como um favorito.|
+|planTitle|Cadeia de caracteres|Título do plano no momento em que o usuário marcado como um favorito.|
 
 
 ## <a name="json-representation"></a>Representação JSON

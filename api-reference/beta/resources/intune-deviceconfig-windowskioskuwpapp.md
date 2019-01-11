@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsKioskUWPApp
 description: A classe base para um tipo de aplicativos
 author: tfitzmac
-ms.openlocfilehash: 328a91065692a7b315ade5dae86c15d6def320eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f456841962b399a1e9687017a0a8eaeb07a4ba7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305177"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871859"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>tipo de recurso de windowsKioskUWPApp
 
@@ -23,10 +24,10 @@ Herda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho de blocos de aplicativo para o layout de iniciar Inherited de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Representa o nome amigável de um aplicativo Inherited de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|String|Este é o único aplicativo usuário modelo ID (AUMID) que estarão disponíveis para uso no modo de quiosque de início|
+|name|Cadeia de caracteres|Representa o nome amigável de um aplicativo Inherited de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|appUserModelId|Cadeia de caracteres|Este é o único aplicativo usuário modelo ID (AUMID) que estarão disponíveis para uso no modo de quiosque de início|
 |appId|Cadeia de caracteres|Isso faz referência a um App Intune que será o destino para as atribuições mesmos como a configuração de quiosque|
-|containedAppId|String|Isso faz referência a um aplicativo contido de um App Intune|
+|containedAppId|Cadeia de caracteres|Isso faz referência a um aplicativo contido de um App Intune|
 
 ## <a name="relationships"></a>Relações
 Nenhum

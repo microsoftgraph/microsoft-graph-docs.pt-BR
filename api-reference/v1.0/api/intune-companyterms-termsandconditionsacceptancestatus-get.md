@@ -2,12 +2,13 @@
 title: Get termsAndConditionsAcceptanceStatus
 description: Ler propriedades e relações do objeto termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: e5e2148a1b7adfa095f065dcc6a292657765d677
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 42e6319f0ccc127ea0a13291bf8379ad56d14451
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870767"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>Get termsAndConditionsAcceptanceStatus
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

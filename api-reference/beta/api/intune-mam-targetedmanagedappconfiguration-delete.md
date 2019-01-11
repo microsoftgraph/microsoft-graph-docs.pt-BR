@@ -2,12 +2,13 @@
 title: Excluir targetedManagedAppConfiguration
 description: Excluir um targetedManagedAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ca0119194daf1215871f4dc3c0db917c46663784
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d55a774cfa8b5b5968e1666aac898d5623def4b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870018"
 ---
 # <a name="delete-targetedmanagedappconfiguration"></a>Excluir targetedManagedAppConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

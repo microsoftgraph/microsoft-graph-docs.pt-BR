@@ -2,12 +2,13 @@
 title: Atualizar mobileAppTroubleshootingEvent
 description: Atualize as propriedades de um objeto mobileAppTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 58e5b67329fb044f19c6f216fbb25f60ada44e9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1dee1ecb19f58412acbdcf529991f2491e0deabb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862802"
 ---
 # <a name="update-mobileapptroubleshootingevent"></a>Atualizar mobileAppTroubleshootingEvent
 
@@ -38,7 +39,7 @@ PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) .

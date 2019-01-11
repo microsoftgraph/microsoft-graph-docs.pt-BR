@@ -2,12 +2,13 @@
 title: Atualizar intuneBrandingProfile
 description: Atualize as propriedades de um objeto intuneBrandingProfile.
 author: tfitzmac
-ms.openlocfilehash: c4321b0197e30126c4d83371a31425af1d8e73bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6408e2c5e3efc8dd989cb109a98756576b974967
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27846652"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
@@ -47,10 +48,10 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave de perfil|
-|profileName|String|Nome do perfil|
-|profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Boolean|Apresenta se o perfil é usado para padrão.|
+|id|Cadeia de caracteres|Chave de perfil|
+|profileName|Cadeia de caracteres|Nome do perfil|
+|profileDescription|Cadeia de caracteres|Descrição do perfil|
+|isDefaultProfile|Booliano|Apresenta se o perfil é usado para padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile última modificação.|
 |displayName|Cadeia de caracteres|Nome da empresa/organização exibido para usuários finais.|

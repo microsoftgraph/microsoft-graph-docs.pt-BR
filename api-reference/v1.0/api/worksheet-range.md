@@ -2,12 +2,13 @@
 title: 'Worksheet: Range'
 description: Obtém o objeto de intervalo especificado pelo nome ou endereço.
 author: lumine2008
-ms.openlocfilehash: fec1ea97be1ca2c094af7e32deac0b6a37f4f086
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f057b93cbc0bd2e846330b9e5e1e49b2323bf8b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319863"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873315"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -35,7 +36,7 @@ GET /workbook/worksheets/{id|name}/range
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|string|Opcional. O endereço ou nome do intervalo. Caso não seja especificado, todo o intervalo da planilha será retornado.|
 

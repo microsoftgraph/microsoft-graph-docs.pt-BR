@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mailSearchFolder
 description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email que correspondam a critérios de pesquisa especificado. mailSearchFolder herda de mailFolder.
-ms.openlocfilehash: abce7c86e44fcee98042aecf753f0fdf4172365e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 62d4d8569977c99690e317a39a43bbc9d9dca3f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870389"
 ---
 # <a name="mailsearchfolder-resource-type"></a>tipo de recurso de mailSearchFolder
 
@@ -32,7 +33,7 @@ Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que con
 | isSupported | Booliano | Indica se uma pasta de pesquisa é editável usando APIs REST. |
 | includeNestedFolders | Booliano | Indica como a hierarquia de pastas de caixa de correio deve ser percorrida. `true`significa que uma profundidade de pesquisa deve ser feito ao `false` significa rasos de pesquisa devem ser feito em vez disso. |
 | sourceFolderIDs | String collection | As pastas de caixa de correio que devem ser extraídas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON
 

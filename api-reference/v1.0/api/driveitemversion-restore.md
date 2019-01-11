@@ -1,12 +1,13 @@
 ---
 title: Restaurar uma versão anterior de um DriveItem
 description: Restaura uma versão anterior de um DriveItem para ser a versão atual. Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do arquivo.
-ms.openlocfilehash: e8272678e048391279d5b2147985d4f1e83f0456
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0097d82bb9d317c0bee0392f21040f0963364183
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871607"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>Restaurar uma versão anterior de um DriveItem
 

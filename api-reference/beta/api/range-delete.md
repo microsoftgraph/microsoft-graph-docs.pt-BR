@@ -2,12 +2,13 @@
 title: 'Range: delete'
 description: Exclui as células associadas ao intervalo.
 author: lumine2008
-ms.openlocfilehash: 00b6d8a35012a3e6d1e6c0755a077d0575baa00e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1817a1c1481d86e08de4146215da6f6fc8de6a8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871782"
 ---
 # <a name="range-delete"></a>Range: delete
 
@@ -40,7 +41,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |shift|string|Especifica como deslocar as células.  Os valores possíveis são: `Up` e `Left`.|
 

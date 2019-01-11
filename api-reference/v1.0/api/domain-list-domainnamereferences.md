@@ -2,12 +2,13 @@
 title: Listar domainNameReferences
 description: Recupere uma lista de objetos directoryObject com uma referência ao domínio. A lista retornada conterá todos os objetos de diretório que tenham uma dependência no domínio.
 author: lleonard-msft
-ms.openlocfilehash: cb93b607b592661ec675cdf772916ffe16a7e97c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d42b45a56132d15c0030de8ff685885d60b129e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872167"
 ---
 # <a name="list-domainnamereferences"></a>Listar domainNameReferences
 

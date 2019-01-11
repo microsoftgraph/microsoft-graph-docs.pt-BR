@@ -2,12 +2,13 @@
 title: Atualizar microsoftStoreForBusinessContainedApp
 description: Atualize as propriedades de um objeto microsoftStoreForBusinessContainedApp.
 author: tfitzmac
-ms.openlocfilehash: e4b9e451e5632a8d4b923aae5de86c854febfa2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1250e6fd95caaa4e85761ce21d8db89faa139e81
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324805"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870003"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Atualizar microsoftStoreForBusinessContainedApp
 
@@ -40,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) .
@@ -49,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|A ID de modelo de usuário do aplicativo do aplicativo de um MicrosoftStoreForBusinessApp contido.|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Cadeia de caracteres|A ID de modelo de usuário do aplicativo do aplicativo de um MicrosoftStoreForBusinessApp contido.|
 
 
 

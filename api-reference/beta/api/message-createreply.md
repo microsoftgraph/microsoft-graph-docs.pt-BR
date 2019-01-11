@@ -2,12 +2,13 @@
 title: 'message: createReply'
 description: 'Criar um rascunho de uma mensagem de resposta para incluir um comentário ou atualizar as propriedades de mensagem '
 author: angelgolfer-ms
-ms.openlocfilehash: cf7bfb3ce584a17a3e4105d04c7e781b69c4901c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 45dfd80be469d6a921eb70ba54f468b531eeb047
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873441"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -20,7 +21,7 @@ Crie um rascunho de uma mensagem de resposta para incluir um comentário ou atua
 - Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
 - Se **replyTo** for especificado na mensagem original, por um formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta para os destinatários na **replyTo**e não os destinatários **de**. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -46,9 +47,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
+|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 ## <a name="response"></a>Resposta

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso eventMessage
 description: 'Uma mensagem que representa uma solicitação, cancelamento ou resposta de reunião (que pode ser uma destas: aceitação, aceitação provisória ou recusa). '
-ms.openlocfilehash: ab63a2d216b5ff12e88e887cb054ca3cb562620e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2a6b1768a97d07ed534699f6bbef7f4f1337a2b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034869"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872678"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -95,7 +96,7 @@ Veja a seguir uma representação JSON do recurso
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
-|conversationIndex|Binário|O índice da conversa que pertence o email.|
+|conversationIndex|Binária|O índice da conversa que pertence o email.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
@@ -124,9 +125,9 @@ Veja a seguir uma representação JSON do recurso
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de início da reunião solicitada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|String|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|Cadeia de caracteres|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
-|UnsubscribeData|String|As entradas válidas analisada a partir do cabeçalho de cancelar a lista.  São os dados para o comando mail no cabeçalho cancelar a assinatura lista se a propriedade UnsubscribeEnabled for true.|
+|UnsubscribeData|Cadeia de caracteres|As entradas válidas analisada a partir do cabeçalho de cancelar a lista.  São os dados para o comando mail no cabeçalho cancelar a assinatura lista se a propriedade UnsubscribeEnabled for true.|
 |UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  Seu valueTrue se a lista-Cancelar cabeçalho está em conformidade com a rfc-2369.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 

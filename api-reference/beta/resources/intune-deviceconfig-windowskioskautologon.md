@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsKioskAutologon
 description: A classe usada para identificar uma configuração de quiosque logon automático.
 author: tfitzmac
-ms.openlocfilehash: 0c3dd2003ace5d28a7e4807982b865689f7a6825
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dad399c4968ad8c1bdf098b8411f52bbc2a59fdb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870830"
 ---
 # <a name="windowskioskautologon-resource-type"></a>tipo de recurso de windowsKioskAutologon
 

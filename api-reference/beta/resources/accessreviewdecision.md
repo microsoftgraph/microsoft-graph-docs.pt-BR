@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de accessReviewDecision
 description: No Windows Azure AD access analisa o recurso, o `accessReviewDecision` representa uma decisão de revisão de acesso do Azure AD de acesso de uma entidade específica.  Dentro de uma revisão de acesso ou uma instância de uma análise mais acesso recorrentes, há um `accessReviewDecision` por usuário revisado.  Por exemplo, se um grupo tem dois convidados e um não-convidado como membros e uma revisão de acesso de convidados é executada para esse grupo, e em seguida, haverá dois objetos de decisão de revisão de acesso.  Se um revisor altera sua decisão ou outro revisor substitui-los, em seguida, a `accessReviewDecision` é atualizado.
-ms.openlocfilehash: 8eebbc6d99e6197da68731fe3a39d3b47e743573
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 208337f3427fad65499b400dee769d379c38dcb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041181"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870046"
 ---
 # <a name="accessreviewdecision-resource-type"></a>tipo de recurso de accessReviewDecision
 

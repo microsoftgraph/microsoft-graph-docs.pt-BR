@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso de ponto de extremidade
 description: 'Pontos de extremidade representam URLs para recursos associados a uma entidade.  Por exemplo, quando um novo grupo do Office 365 é criado, recursos adicionais também são criados como parte do grupo do Office 365. Eles incluem coisas como uma caixa de correio de grupo para conversas e uma pasta de OneDrive de grupo para documentos e arquivos. Mais informações sobre esses recursos de grupo do Office 365, incluindo suas URLs de recurso associado agora podem ser lido usando a navegação de *pontos de extremidade* no tipo de recurso de grupo. Isso permite que aplicativos entender esses recursos e até mesmo incorporar o recurso que URL experiências em suas próprias experiências. '
-ms.openlocfilehash: 8d95cef8e25095512e94d5aed5ec7540562862bd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5a342bee0a1918eb142542693198173239d1b3c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871279"
 ---
 # <a name="endpoint-resource-type"></a>Tipo de recurso de ponto de extremidade
 
@@ -24,12 +25,12 @@ Pontos de extremidade representam URLs para recursos associados a uma entidade. 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| recurso     | String  | Descreve o recurso que está associado a esse recurso. (por exemplo, mensagens, conversas, etc.)  Não são nulas. Somente leitura. |
-| id             | String  | Identificador exclusivo para o ponto de extremidade; Tecla. Não anulável. Somente leitura.|
-| providerId     | String  | Id do aplicativo de publicação do serviço subjacente. Não anulável. Somente leitura.|
-| providerName   | String  | Nome da publicação do serviço subjacente. Somente leitura.|
-| providerResourceId|String| Para grupos do Office 365, isso é definido como um nome conhecido do recurso (por exemplo, Yammer.FeedURL etc.). Não anulável. Somente leitura.|
-| URI            | String  | URL do recurso publicado. Não anulável. Somente leitura.|
+| recurso     | Cadeia de caracteres  | Descreve o recurso que está associado a esse recurso. (por exemplo, mensagens, conversas, etc.)  Não são nulas. Somente leitura. |
+| id             | Cadeia de caracteres  | Identificador exclusivo para o ponto de extremidade; Tecla. Não anulável. Somente leitura.|
+| providerId     | Cadeia de caracteres  | Id do aplicativo de publicação do serviço subjacente. Não anulável. Somente leitura.|
+| providerName   | Cadeia de caracteres  | Nome da publicação do serviço subjacente. Somente leitura.|
+| providerResourceId|Cadeia de caracteres| Para grupos do Office 365, isso é definido como um nome conhecido do recurso (por exemplo, Yammer.FeedURL etc.). Não anulável. Somente leitura.|
+| URI            | Cadeia de caracteres  | URL do recurso publicado. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

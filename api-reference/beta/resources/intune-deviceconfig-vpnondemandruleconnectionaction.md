@@ -2,12 +2,13 @@
 title: tipo de enum vpnOnDemandRuleConnectionAction
 description: Ação de Conexão da regra sob demanda de VPN.
 author: tfitzmac
-ms.openlocfilehash: e647f0e32845d9de0209d8acdb42ebe4397176e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a6f89cee571182330164456f40c23443652bcb40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317252"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869556"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>tipo de enum vpnOnDemandRuleConnectionAction
 

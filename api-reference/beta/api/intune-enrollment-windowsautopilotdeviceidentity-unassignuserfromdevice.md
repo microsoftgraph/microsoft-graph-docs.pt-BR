@@ -2,12 +2,13 @@
 title: ação de unassignUserFromDevice
 description: Retira o usuário de um dispositivo de piloto automático.
 author: tfitzmac
-ms.openlocfilehash: 9374111b9a73bdaa9ef25391c62bb1a5fbb38d8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 88e530fd1820b0be95d8eabc80ec244b54c3f33c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870515"
 ---
 # <a name="unassignuserfromdevice-action"></a>ação de unassignUserFromDevice
 
@@ -39,7 +40,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

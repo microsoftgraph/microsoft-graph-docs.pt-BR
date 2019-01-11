@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Icon
 description: Representa um ícone de célula.
-ms.openlocfilehash: 9485a831241ce92be3f8e7c4df5173285f926bbf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 833fa4cb4061a96b01077c3adeb7dcaed49e0a02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27872566"
 ---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
@@ -23,7 +24,7 @@ Representa um ícone de célula.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|inteiro|Representa o índice do ícone em determinado conjunto.|
+|índice|int|Representa o índice do ícone em determinado conjunto.|
 |set|string|Representa o que o ícone faz parte do conjunto. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars` , `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="relationships"></a>Relações

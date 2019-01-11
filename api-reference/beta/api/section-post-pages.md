@@ -1,12 +1,13 @@
 ---
 title: Criar página
 description: Crie uma nova página na seção especificado.
-ms.openlocfilehash: c3fead813e64ba6bc1b806601a2f02a0adade706
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e65118e6c2ef3396dc8bf16fa398bd4e237aa0ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040631"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871460"
 ---
 # <a name="create-page"></a>Criar página
 
