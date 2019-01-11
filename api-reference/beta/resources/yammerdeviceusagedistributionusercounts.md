@@ -1,31 +1,32 @@
 ---
 title: tipo de recurso de yammerDeviceUsageDistributionUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: f98c8831c147a82985d1e59b5559d88e1a4824c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ad8707d33c4200ea6729205819871d890929f001
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889030"
 ---
-# <a name="yammerdeviceusagedistributionusercounts-resource-type"></a><span data-ttu-id="f362b-103">tipo de recurso de yammerDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="f362b-103">yammerDeviceUsageDistributionUserCounts resource type</span></span>
+# <a name="yammerdeviceusagedistributionusercounts-resource-type"></a><span data-ttu-id="fee6f-103">tipo de recurso de yammerDeviceUsageDistributionUserCounts</span><span class="sxs-lookup"><span data-stu-id="fee6f-103">yammerDeviceUsageDistributionUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f362b-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f362b-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="fee6f-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fee6f-104">Properties</span></span>
 
-| <span data-ttu-id="f362b-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f362b-105">Property</span></span>          | <span data-ttu-id="f362b-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="f362b-106">Type</span></span>   |
+| <span data-ttu-id="fee6f-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fee6f-105">Property</span></span>          | <span data-ttu-id="fee6f-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="fee6f-106">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="f362b-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="f362b-107">reportRefreshDate</span></span> | <span data-ttu-id="f362b-108">Data</span><span class="sxs-lookup"><span data-stu-id="f362b-108">Date</span></span>   |
-| <span data-ttu-id="f362b-109">web</span><span class="sxs-lookup"><span data-stu-id="f362b-109">web</span></span>               | <span data-ttu-id="f362b-110">Int32</span><span class="sxs-lookup"><span data-stu-id="f362b-110">Int32</span></span>  |
-| <span data-ttu-id="f362b-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="f362b-111">windowsPhone</span></span>      | <span data-ttu-id="f362b-112">Int32</span><span class="sxs-lookup"><span data-stu-id="f362b-112">Int32</span></span>  |
-| <span data-ttu-id="f362b-113">androidPhone</span><span class="sxs-lookup"><span data-stu-id="f362b-113">androidPhone</span></span>      | <span data-ttu-id="f362b-114">Int32</span><span class="sxs-lookup"><span data-stu-id="f362b-114">Int32</span></span>  |
-| <span data-ttu-id="f362b-115">iPhone</span><span class="sxs-lookup"><span data-stu-id="f362b-115">iPhone</span></span>            | <span data-ttu-id="f362b-116">Int32</span><span class="sxs-lookup"><span data-stu-id="f362b-116">Int32</span></span>  |
-| <span data-ttu-id="f362b-117">iPad</span><span class="sxs-lookup"><span data-stu-id="f362b-117">iPad</span></span>              | <span data-ttu-id="f362b-118">Int32</span><span class="sxs-lookup"><span data-stu-id="f362b-118">Int32</span></span>  |
-| <span data-ttu-id="f362b-119">outros</span><span class="sxs-lookup"><span data-stu-id="f362b-119">other</span></span>             | <span data-ttu-id="f362b-120">Int32</span><span class="sxs-lookup"><span data-stu-id="f362b-120">Int32</span></span>  |
-| <span data-ttu-id="f362b-121">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="f362b-121">reportPeriod</span></span>      | <span data-ttu-id="f362b-122">String</span><span class="sxs-lookup"><span data-stu-id="f362b-122">String</span></span> |
+| <span data-ttu-id="fee6f-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="fee6f-107">reportRefreshDate</span></span> | <span data-ttu-id="fee6f-108">Data</span><span class="sxs-lookup"><span data-stu-id="fee6f-108">Date</span></span>   |
+| <span data-ttu-id="fee6f-109">web</span><span class="sxs-lookup"><span data-stu-id="fee6f-109">web</span></span>               | <span data-ttu-id="fee6f-110">Int32</span><span class="sxs-lookup"><span data-stu-id="fee6f-110">Int32</span></span>  |
+| <span data-ttu-id="fee6f-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="fee6f-111">windowsPhone</span></span>      | <span data-ttu-id="fee6f-112">Int32</span><span class="sxs-lookup"><span data-stu-id="fee6f-112">Int32</span></span>  |
+| <span data-ttu-id="fee6f-113">androidPhone</span><span class="sxs-lookup"><span data-stu-id="fee6f-113">androidPhone</span></span>      | <span data-ttu-id="fee6f-114">Int32</span><span class="sxs-lookup"><span data-stu-id="fee6f-114">Int32</span></span>  |
+| <span data-ttu-id="fee6f-115">iPhone</span><span class="sxs-lookup"><span data-stu-id="fee6f-115">iPhone</span></span>            | <span data-ttu-id="fee6f-116">Int32</span><span class="sxs-lookup"><span data-stu-id="fee6f-116">Int32</span></span>  |
+| <span data-ttu-id="fee6f-117">iPad</span><span class="sxs-lookup"><span data-stu-id="fee6f-117">iPad</span></span>              | <span data-ttu-id="fee6f-118">Int32</span><span class="sxs-lookup"><span data-stu-id="fee6f-118">Int32</span></span>  |
+| <span data-ttu-id="fee6f-119">outros</span><span class="sxs-lookup"><span data-stu-id="fee6f-119">other</span></span>             | <span data-ttu-id="fee6f-120">Int32</span><span class="sxs-lookup"><span data-stu-id="fee6f-120">Int32</span></span>  |
+| <span data-ttu-id="fee6f-121">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="fee6f-121">reportPeriod</span></span>      | <span data-ttu-id="fee6f-122">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fee6f-122">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="f362b-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f362b-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fee6f-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fee6f-123">JSON representation</span></span>
 
-<span data-ttu-id="f362b-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f362b-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fee6f-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fee6f-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

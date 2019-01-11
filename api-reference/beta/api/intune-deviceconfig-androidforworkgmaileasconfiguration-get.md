@@ -2,30 +2,31 @@
 title: Obter androidForWorkGmailEasConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkGmailEasConfiguration.
 author: tfitzmac
-ms.openlocfilehash: bfc67d8971fe6dad67ae311c8fc12441f113f6f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eeafd23ab0d6856fb152b300b62bd83270f6da5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360414"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869626"
 ---
-# <a name="get-androidforworkgmaileasconfiguration"></a><span data-ttu-id="10cea-103">Obter androidForWorkGmailEasConfiguration</span><span class="sxs-lookup"><span data-stu-id="10cea-103">Get androidForWorkGmailEasConfiguration</span></span>
+# <a name="get-androidforworkgmaileasconfiguration"></a><span data-ttu-id="0ae1a-103">Obter androidForWorkGmailEasConfiguration</span><span class="sxs-lookup"><span data-stu-id="0ae1a-103">Get androidForWorkGmailEasConfiguration</span></span>
 
-> <span data-ttu-id="10cea-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="10cea-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="10cea-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="10cea-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0ae1a-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0ae1a-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="10cea-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="10cea-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0ae1a-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="10cea-107">Leia as propriedades e os relacionamentos do objeto [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="10cea-107">Read properties and relationships of the [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="10cea-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="10cea-108">Prerequisites</span></span>
-<span data-ttu-id="10cea-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10cea-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0ae1a-107">Leia as propriedades e os relacionamentos do objeto [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="0ae1a-107">Read properties and relationships of the [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0ae1a-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="0ae1a-108">Prerequisites</span></span>
+<span data-ttu-id="0ae1a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ae1a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10cea-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="10cea-111">Permission type</span></span>|<span data-ttu-id="10cea-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="10cea-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0ae1a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0ae1a-111">Permission type</span></span>|<span data-ttu-id="0ae1a-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="0ae1a-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="10cea-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="10cea-113">Delegated (work or school account)</span></span>|<span data-ttu-id="10cea-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="10cea-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="10cea-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="10cea-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="10cea-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="10cea-116">Not supported.</span></span>|
-|<span data-ttu-id="10cea-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="10cea-117">Application</span></span>|<span data-ttu-id="10cea-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="10cea-118">Not supported.</span></span>|
+|<span data-ttu-id="0ae1a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0ae1a-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0ae1a-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="0ae1a-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="0ae1a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0ae1a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0ae1a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-116">Not supported.</span></span>|
+|<span data-ttu-id="0ae1a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0ae1a-117">Application</span></span>|<span data-ttu-id="0ae1a-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="10cea-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="10cea-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ae1a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0ae1a-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,29 +37,29 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="10cea-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="10cea-120">Optional query parameters</span></span>
-<span data-ttu-id="10cea-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="10cea-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="10cea-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="10cea-122">Request headers</span></span>
-|<span data-ttu-id="10cea-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="10cea-123">Header</span></span>|<span data-ttu-id="10cea-124">Valor</span><span class="sxs-lookup"><span data-stu-id="10cea-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="0ae1a-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0ae1a-120">Optional query parameters</span></span>
+<span data-ttu-id="0ae1a-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0ae1a-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0ae1a-122">Request headers</span></span>
+|<span data-ttu-id="0ae1a-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0ae1a-123">Header</span></span>|<span data-ttu-id="0ae1a-124">Valor</span><span class="sxs-lookup"><span data-stu-id="0ae1a-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="10cea-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="10cea-125">Authorization</span></span>|<span data-ttu-id="10cea-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="10cea-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="10cea-127">Accept</span><span class="sxs-lookup"><span data-stu-id="10cea-127">Accept</span></span>|<span data-ttu-id="10cea-128">application/json</span><span class="sxs-lookup"><span data-stu-id="10cea-128">application/json</span></span>|
+|<span data-ttu-id="0ae1a-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="0ae1a-125">Authorization</span></span>|<span data-ttu-id="0ae1a-126">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0ae1a-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0ae1a-127">Accept</span></span>|<span data-ttu-id="0ae1a-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0ae1a-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="10cea-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="10cea-129">Request body</span></span>
-<span data-ttu-id="10cea-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="10cea-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ae1a-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0ae1a-129">Request body</span></span>
+<span data-ttu-id="0ae1a-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10cea-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="10cea-131">Response</span></span>
-<span data-ttu-id="10cea-132">Se tiver êxito, este método retornará um `200 OK` objeto response de código e [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10cea-132">If successful, this method returns a `200 OK` response code and [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0ae1a-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="0ae1a-131">Response</span></span>
+<span data-ttu-id="0ae1a-132">Se tiver êxito, este método retornará um `200 OK` objeto response de código e [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-132">If successful, this method returns a `200 OK` response code and [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="10cea-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="10cea-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="10cea-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="10cea-134">Request</span></span>
-<span data-ttu-id="10cea-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="10cea-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="0ae1a-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0ae1a-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="0ae1a-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0ae1a-134">Request</span></span>
+<span data-ttu-id="0ae1a-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="10cea-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="10cea-136">Response</span></span>
-<span data-ttu-id="10cea-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="10cea-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0ae1a-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="0ae1a-136">Response</span></span>
+<span data-ttu-id="0ae1a-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0ae1a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -2,50 +2,51 @@
 title: Lista administrativeUnits
 description: Recupere uma lista de objetos administrativeUnit.
 author: lleonard-msft
-ms.openlocfilehash: 03ccd5293bc12d6f3e13128367c29fa0317accff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7abd0e3074202ddfd11df2696c22874ffd81554a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854814"
 ---
-# <a name="list-administrativeunits"></a><span data-ttu-id="ef814-103">Lista administrativeUnits</span><span class="sxs-lookup"><span data-stu-id="ef814-103">List administrativeUnits</span></span>
+# <a name="list-administrativeunits"></a><span data-ttu-id="97d26-103">Lista administrativeUnits</span><span class="sxs-lookup"><span data-stu-id="97d26-103">List administrativeUnits</span></span>
 
-> <span data-ttu-id="ef814-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="ef814-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ef814-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ef814-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="97d26-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="97d26-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="97d26-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="97d26-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ef814-106">Recupere uma lista de objetos [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="ef814-106">Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ef814-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="ef814-107">Permissions</span></span>
-<span data-ttu-id="ef814-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ef814-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="97d26-106">Recupere uma lista de objetos [administrativeUnit](../resources/administrativeunit.md) .</span><span class="sxs-lookup"><span data-stu-id="97d26-106">Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="97d26-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="97d26-107">Permissions</span></span>
+<span data-ttu-id="97d26-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97d26-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="ef814-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ef814-110">Permission type</span></span>      | <span data-ttu-id="ef814-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ef814-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97d26-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="97d26-110">Permission type</span></span>      | <span data-ttu-id="97d26-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="97d26-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ef814-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ef814-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ef814-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ef814-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ef814-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ef814-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef814-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ef814-115">Not supported.</span></span>    |
-|<span data-ttu-id="ef814-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ef814-116">Application</span></span> | <span data-ttu-id="ef814-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef814-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="97d26-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="97d26-112">Delegated (work or school account)</span></span> | <span data-ttu-id="97d26-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="97d26-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="97d26-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97d26-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97d26-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97d26-115">Not supported.</span></span>    |
+|<span data-ttu-id="97d26-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="97d26-116">Application</span></span> | <span data-ttu-id="97d26-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97d26-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ef814-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ef814-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97d26-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="97d26-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /administrativeUnits
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="ef814-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ef814-119">Optional query parameters</span></span>
-<span data-ttu-id="ef814-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ef814-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97d26-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="97d26-119">Optional query parameters</span></span>
+<span data-ttu-id="97d26-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="97d26-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ef814-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ef814-121">Request headers</span></span>
-| <span data-ttu-id="ef814-122">Nome</span><span class="sxs-lookup"><span data-stu-id="ef814-122">Name</span></span>      |<span data-ttu-id="ef814-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef814-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97d26-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="97d26-121">Request headers</span></span>
+| <span data-ttu-id="97d26-122">Nome</span><span class="sxs-lookup"><span data-stu-id="97d26-122">Name</span></span>      |<span data-ttu-id="97d26-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="97d26-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ef814-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="ef814-124">Authorization</span></span>  | <span data-ttu-id="ef814-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ef814-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="97d26-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="97d26-124">Authorization</span></span>  | <span data-ttu-id="97d26-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="97d26-p103">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ef814-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ef814-127">Request body</span></span>
-<span data-ttu-id="ef814-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ef814-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97d26-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="97d26-127">Request body</span></span>
+<span data-ttu-id="97d26-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="97d26-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ef814-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="ef814-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97d26-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="97d26-129">Response</span></span>
 
-<span data-ttu-id="ef814-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ef814-130">If successful, this method returns a `200 OK` response code and collection of [administrativeUnit](../resources/administrativeunit.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="ef814-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ef814-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ef814-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ef814-132">Request</span></span>
-<span data-ttu-id="ef814-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ef814-133">Here is an example of the request.</span></span>
+<span data-ttu-id="97d26-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="97d26-130">If successful, this method returns a `200 OK` response code and collection of [administrativeUnit](../resources/administrativeunit.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="97d26-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="97d26-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="97d26-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97d26-132">Request</span></span>
+<span data-ttu-id="97d26-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="97d26-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_administrativeunits"
@@ -53,8 +54,8 @@ GET /administrativeUnits
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits
 ```
-##### <a name="response"></a><span data-ttu-id="ef814-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="ef814-134">Response</span></span>
-<span data-ttu-id="ef814-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ef814-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="97d26-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="97d26-134">Response</span></span>
+<span data-ttu-id="97d26-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="97d26-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
