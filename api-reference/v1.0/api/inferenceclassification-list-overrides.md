@@ -1,48 +1,49 @@
 ---
 title: Substituições de lista
 description: Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
-ms.openlocfilehash: 7953c776b60f4e63aec03245817bfcf6630bbdf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ab8324ac892df570ed0d28fabb7b31f3280adcef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883892"
 ---
-# <a name="list-overrides"></a><span data-ttu-id="48c22-103">Substituições de lista</span><span class="sxs-lookup"><span data-stu-id="48c22-103">List overrides</span></span>
+# <a name="list-overrides"></a><span data-ttu-id="1160f-103">Substituições de lista</span><span class="sxs-lookup"><span data-stu-id="1160f-103">List overrides</span></span>
 
-<span data-ttu-id="48c22-104">Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.</span><span class="sxs-lookup"><span data-stu-id="48c22-104">Get the overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
+<span data-ttu-id="1160f-104">Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.</span><span class="sxs-lookup"><span data-stu-id="1160f-104">Get the overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
 
-<span data-ttu-id="48c22-p101">Cada substituição corresponde a um endereço SMTP de um remetente. Inicialmente, um usuário não tem quaisquer substituições.</span><span class="sxs-lookup"><span data-stu-id="48c22-p101">Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.</span></span>
-## <a name="permissions"></a><span data-ttu-id="48c22-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="48c22-107">Permissions</span></span>
-<span data-ttu-id="48c22-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48c22-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1160f-p101">Cada substituição corresponde a um endereço SMTP de um remetente. Inicialmente, um usuário não tem quaisquer substituições.</span><span class="sxs-lookup"><span data-stu-id="1160f-p101">Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1160f-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="1160f-107">Permissions</span></span>
+<span data-ttu-id="1160f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1160f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="48c22-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="48c22-110">Permission type</span></span>      | <span data-ttu-id="48c22-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="48c22-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1160f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1160f-110">Permission type</span></span>      | <span data-ttu-id="1160f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1160f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="48c22-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="48c22-112">Delegated (work or school account)</span></span> | <span data-ttu-id="48c22-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48c22-113">Mail.Read</span></span>    |
-|<span data-ttu-id="48c22-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="48c22-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48c22-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48c22-115">Mail.Read</span></span>    |
-|<span data-ttu-id="48c22-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="48c22-116">Application</span></span> | <span data-ttu-id="48c22-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48c22-117">Mail.Read</span></span> |
+|<span data-ttu-id="1160f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1160f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1160f-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1160f-113">Mail.Read</span></span>    |
+|<span data-ttu-id="1160f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1160f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1160f-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1160f-115">Mail.Read</span></span>    |
+|<span data-ttu-id="1160f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1160f-116">Application</span></span> | <span data-ttu-id="1160f-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1160f-117">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="48c22-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="48c22-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1160f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1160f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/inferenceClassification/overrides
 GET /users/{id}/inferenceClassification/overrides
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="48c22-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="48c22-119">Request headers</span></span>
-| <span data-ttu-id="48c22-120">Nome</span><span class="sxs-lookup"><span data-stu-id="48c22-120">Name</span></span>       | <span data-ttu-id="48c22-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="48c22-121">Type</span></span> | <span data-ttu-id="48c22-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="48c22-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1160f-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1160f-119">Request headers</span></span>
+| <span data-ttu-id="1160f-120">Nome</span><span class="sxs-lookup"><span data-stu-id="1160f-120">Name</span></span>       | <span data-ttu-id="1160f-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="1160f-121">Type</span></span> | <span data-ttu-id="1160f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="1160f-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="48c22-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="48c22-123">Authorization</span></span>  | <span data-ttu-id="48c22-124">string</span><span class="sxs-lookup"><span data-stu-id="48c22-124">string</span></span>  | <span data-ttu-id="48c22-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="48c22-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1160f-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="1160f-123">Authorization</span></span>  | <span data-ttu-id="1160f-124">string</span><span class="sxs-lookup"><span data-stu-id="1160f-124">string</span></span>  | <span data-ttu-id="1160f-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1160f-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="48c22-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="48c22-127">Request body</span></span>
-<span data-ttu-id="48c22-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="48c22-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1160f-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1160f-127">Request body</span></span>
+<span data-ttu-id="1160f-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1160f-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="48c22-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="48c22-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1160f-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="1160f-129">Response</span></span>
 
-<span data-ttu-id="48c22-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta. Retorna uma coleção vazia se o usuário não tiver quaisquer substituições configuradas.</span><span class="sxs-lookup"><span data-stu-id="48c22-p104">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body. An empty collection is returned if the user doesn't have any overrides set up.</span></span>
-## <a name="example"></a><span data-ttu-id="48c22-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="48c22-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="48c22-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="48c22-133">Request</span></span>
-<span data-ttu-id="48c22-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="48c22-134">Here is an example of the request.</span></span>
+<span data-ttu-id="1160f-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta. Retorna uma coleção vazia se o usuário não tiver quaisquer substituições configuradas.</span><span class="sxs-lookup"><span data-stu-id="1160f-p104">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body. An empty collection is returned if the user doesn't have any overrides set up.</span></span>
+## <a name="example"></a><span data-ttu-id="1160f-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1160f-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1160f-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1160f-133">Request</span></span>
+<span data-ttu-id="1160f-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1160f-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_overrides"
@@ -50,8 +51,8 @@ GET /users/{id}/inferenceClassification/overrides
 ```http
 GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ```
-##### <a name="response"></a><span data-ttu-id="48c22-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="48c22-135">Response</span></span>
-<span data-ttu-id="48c22-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="48c22-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1160f-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="1160f-135">Response</span></span>
+<span data-ttu-id="1160f-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1160f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
