@@ -2,12 +2,13 @@
 title: tipo de recurso de commsNotification
 description: Comunicações notificação tipo base publicado pelos servidores do Communications Server para notificar mudanças.
 author: VinodRavichandran
-ms.openlocfilehash: 65cb2884b98d25008779fcb80968a7b4d0481033
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 526ed88f4b1c5983a06b1830f5c0b0bb97cc874e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837146"
 ---
 # <a name="commsnotification-resource-type"></a>tipo de recurso de commsNotification
 
@@ -16,10 +17,10 @@ ms.locfileid: "27380265"
 Comunicações notificação tipo base publicado pelos servidores do Communications Server para notificar mudanças.
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	       | Tipo    | Descrição                                                |
+| Propriedade       | Tipo    | Descrição                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Os valores possíveis são: `created`, `updated`, `deleted`.      |
-| recurso       | String  | URI do recurso que foi alterado.                      |
+| changeType     | Cadeia de caracteres  | Os valores possíveis são: `created`, `updated`, `deleted`.      |
+| recurso       | Cadeia de caracteres  | URI do recurso que foi alterado.                      |
 
 > **Observação:** `resourceData` está disponível como dados adicionais. É uma entidade ou Collection(entity) dependendo do número de pacotes de notificação de alterações.
 

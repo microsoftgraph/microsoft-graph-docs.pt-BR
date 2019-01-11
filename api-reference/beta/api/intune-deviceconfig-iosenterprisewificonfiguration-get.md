@@ -2,12 +2,13 @@
 title: Obter iosEnterpriseWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto iosEnterpriseWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: c9e75d76b9c4deac53894268e6a7c9a8682d0061
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9707e8daa6b987c2e36a34a6a4b66a501e2be874
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27841730"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Obter iosEnterpriseWiFiConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

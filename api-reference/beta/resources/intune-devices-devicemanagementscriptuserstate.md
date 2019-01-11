@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceManagementScriptUserState
 description: Contém propriedades para o usuário executada no estado do script de gerenciamento de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: acce3d40d390c22d848b9ee3f8c94c997ae6da12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf355a6ab2c217fa802288f6d2f4f062a3c47f4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301208"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806024"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso de deviceManagementScriptUserState
 
@@ -28,10 +29,10 @@ Contém propriedades para o usuário executada no estado do script de gerenciame
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
 |successDeviceCount|Int32|Contagem de dispositivo de sucesso para usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivo de erro para usuário específico.|
-|userPrincipalName|String|Nome do princípio de usuário do usuário específico.|
+|userPrincipalName|Cadeia de caracteres|Nome do princípio de usuário do usuário específico.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

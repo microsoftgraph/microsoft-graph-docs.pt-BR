@@ -2,12 +2,13 @@
 title: Ação setPriority
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: d9d4eb0beb72187a71771148985466a5f72644a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9fb5080cedb1025aa49e6195e646a7a877655f1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826849"
 ---
 # <a name="setpriority-action"></a>Ação setPriority
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
