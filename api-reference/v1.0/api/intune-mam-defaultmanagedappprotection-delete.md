@@ -2,12 +2,13 @@
 title: Excluir defaultManagedAppProtection
 description: Exclui defaultManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: d9e9e4909d420fcf6747c6cfdba1d9c85a4d8667
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 14ad936589522672a726f9ea5415e82f5edf404c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319919"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837825"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>Excluir defaultManagedAppProtection
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProte
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

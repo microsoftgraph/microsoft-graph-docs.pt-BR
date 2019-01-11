@@ -2,12 +2,13 @@
 title: Obter RangeBorder
 description: Recupere as propriedades e os relacionamentos do objeto rangeborder.
 author: lumine2008
-ms.openlocfilehash: 117610360ea6b01fe0ece873d6e0019ba03429d8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 647be6655f360e69daead910aa7a51cd1c020ef0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836803"
 ---
 # <a name="get-rangeborder"></a>Obter RangeBorder
 

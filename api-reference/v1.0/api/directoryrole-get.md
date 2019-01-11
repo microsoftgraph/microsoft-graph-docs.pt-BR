@@ -2,12 +2,13 @@
 title: Obter directoryRole
 description: Recupere as propriedades de um objeto directoryRole.
 author: lleonard-msft
-ms.openlocfilehash: b5f25179c18a28aa3c12dd54c7230b5444dff3f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f8ff306359675f7bc2c569f507dbcb3baf33b384
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305296"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832225"
 ---
 # <a name="get-directoryrole"></a>Obter directoryRole
 

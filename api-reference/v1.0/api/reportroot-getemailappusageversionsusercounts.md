@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailAppUsageVersionsUserCounts'
 description: Obtenha a contagem de usuários exclusivos por versão da área de trabalho do Outlook.
-ms.openlocfilehash: 730bae521523f51a3ab41c1d480439fd4bc4a305
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d5699e736720ffec05eec8d506fe5bde42a29214
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833996"
 ---
 # <a name="reportroot-getemailappusageversionsusercounts"></a>reportRoot: getEmailAppUsageVersionsUserCounts
 

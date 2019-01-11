@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso educationSchool
 description: 'Escola A. O recurso **educationSchool** atualmente corresponde a um recurso administrativeUnit e compartilha a mesma ID.  '
-ms.openlocfilehash: 6a478428874c7c600f60a6924dc06be5f4e3ba11
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 20eacb87b68cbf490131b98a15d3ab3239d73478
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830447"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 

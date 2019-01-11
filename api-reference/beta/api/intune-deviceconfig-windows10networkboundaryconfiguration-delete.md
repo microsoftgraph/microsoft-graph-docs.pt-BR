@@ -2,12 +2,13 @@
 title: Excluir windows10NetworkBoundaryConfiguration
 description: Exclui um windows10NetworkBoundaryConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 8083c2266beb2f2899f314520a4283beb99c1b4c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b2a555de7b3876d6cc9e79e3203ace6ee00e8b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832218"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>Excluir windows10NetworkBoundaryConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

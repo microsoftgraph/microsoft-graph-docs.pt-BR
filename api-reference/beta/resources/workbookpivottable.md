@@ -2,12 +2,13 @@
 title: tipo de recurso de tabela dinâmica
 description: Representa uma Tabela Dinâmica do Excel.
 author: lumine2008
-ms.openlocfilehash: ac148cf84961aa0b745931351218289c985aceb0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aead84b21117b896f620a0722cf42c2e6c5d1293
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831539"
 ---
 # <a name="pivottable-resource-type"></a>tipo de recurso de tabela dinâmica
 

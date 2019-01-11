@@ -2,12 +2,13 @@
 title: Fazer chamada
 description: Recupere as propriedades e relacionamentos de um objeto de chamada.
 author: VinodRavichandran
-ms.openlocfilehash: df97b69f87a1562e56a96d84de1af740ab0aff65
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: c209c263f2dfcffe274bf726296d7e6c427afa6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380321"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833548"
 ---
 # <a name="get-call"></a>Fazer chamada
 
@@ -15,7 +16,7 @@ ms.locfileid: "27380321"
 
 Recupere as propriedades e relacionamentos de um objeto de chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |

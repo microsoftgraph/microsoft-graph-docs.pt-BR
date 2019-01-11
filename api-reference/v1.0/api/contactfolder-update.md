@@ -2,12 +2,13 @@
 title: Atualizar contactfolder
 description: Atualizar as propriedades do objeto contactfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 1bed74aa9efd6f8d82677d3c50feedc03fa34fe3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01ecca2b59482c1c2c75096b711904f3054fd338
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836418"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
@@ -38,8 +39,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
-|parentFolderId|String|A ID da pasta pai da pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
+|parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
 
 ## <a name="response"></a>Resposta
 

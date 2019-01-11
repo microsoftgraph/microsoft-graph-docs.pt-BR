@@ -1,12 +1,13 @@
 ---
 title: tipo de userIdentity
 description: 'Para o Windows Azure AD avaliações de acesso, esse tipo representa uma identidade de usuário do Windows Azure AD por um revisor de uma revisão de acesso.  '
-ms.openlocfilehash: 6cbbe7aa017572bcd753a57edbf82751ac4986a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b629fff4c5cecd513777cc5004646aac5f1c85b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036144"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839638"
 ---
 # <a name="useridentity-type"></a>tipo de userIdentity
 

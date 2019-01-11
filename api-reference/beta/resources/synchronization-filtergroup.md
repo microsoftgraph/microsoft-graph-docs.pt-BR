@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de filterGroup
 description: Define um conjunto de cláusulas que um objeto deve satisfazer para ser considerados no escopo. Um objeto é considerado no escopo do grupo (o grupo é avaliado para `true`) somente se todas as cláusulas do grupo são avaliadas para `true`.
-ms.openlocfilehash: d49f7a4364f1d8ce3e1c4daba3bb331cf9a9c001
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 174c02518069e949c49887d9e21e778e8455509a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836110"
 ---
 # <a name="filtergroup-resource-type"></a>tipo de recurso de filterGroup
 
@@ -18,7 +19,7 @@ Define um conjunto de cláusulas que um objeto deve satisfazer para ser consider
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |cláusulas|coleção [filterClause](synchronization-filterclause.md)|Filtre cláusulas (condições) desse grupo. Todas as cláusulas em um grupo devem ser atendidas para o grupo de filtro a ser avaliada como `true`.|
-|name|String|Legíveis nome do grupo de filtro.|
+|name|Cadeia de caracteres|Legíveis nome do grupo de filtro.|
 
 ## <a name="json-representation"></a>Representação JSON
 

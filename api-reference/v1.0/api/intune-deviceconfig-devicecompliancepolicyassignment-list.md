@@ -2,12 +2,13 @@
 title: Listar deviceCompliancePolicyAssignments
 description: Listar propriedades e relações dos objetosdeviceCompliancePolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: e1979293e28eb71f142f4631b636ae2f44994e80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a300fae9d8e6a39557b9da39ca33fdd0aa5c046c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359091"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839344"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>Listar deviceCompliancePolicyAssignments
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

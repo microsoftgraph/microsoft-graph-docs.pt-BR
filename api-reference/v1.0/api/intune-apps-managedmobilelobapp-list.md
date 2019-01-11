@@ -2,12 +2,13 @@
 title: Listar managedMobileLobApps
 description: Listar propriedades e relações dos objetos managedMobileLobApp.
 author: tfitzmac
-ms.openlocfilehash: 3ce9c6be53386ebaba7c0f52186407ad8ecc0c09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c094e4b135d4105ed068e7d0f41a0c6743c1b417
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832855"
 ---
 # <a name="list-managedmobilelobapps"></a>Listar managedMobileLobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: Criar convite
 description: Use essa API para criar um novo convite. O convite adiciona um usuário externo à organização.
-ms.openlocfilehash: 553204f469fcd6db8fb988070b43e75d8b679a74
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Priority
+ms.openlocfilehash: d885ab695f874996a017a75b37a53e91c3d61271
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830650"
 ---
 # <a name="create-invitation"></a>Criar convite
 

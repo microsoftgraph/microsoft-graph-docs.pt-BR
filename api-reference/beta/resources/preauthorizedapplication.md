@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de preAuthorizedApplication
 description: Representa um aplicativo e as permissões solicitadas para consentimento implícito. Requer um administrador tenha fornecido a consentimento para o aplicativo. preAuthorizedApplications não exigem o usuário concorda com as permissões solicitadas. Permissões listadas na preAuthorizedApplications não exigem consentimento do usuário. No entanto, qualquer permissões solicitadas adicionais não listados no preAuthorizedApplications exigem o consentimento do usuário.
-ms.openlocfilehash: d299aefcac541407e0e42d0b0933e903afa3e84d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fa26b8046b81db70300b8ff40abcbd2b84f3f0c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832792"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>tipo de recurso de preAuthorizedApplication
 

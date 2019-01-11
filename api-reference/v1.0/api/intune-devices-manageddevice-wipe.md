@@ -2,12 +2,13 @@
 title: Ação wipe
 description: Apagar um dispositivo
 author: tfitzmac
-ms.openlocfilehash: 6ac3c21b517523d46cfc2958a661d058a86d708e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3da2d5619c57a083c7702d3b9accfa8d52f20568
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311414"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834416"
 ---
 # <a name="wipe-action"></a>Ação wipe
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

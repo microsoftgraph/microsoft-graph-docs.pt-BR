@@ -2,12 +2,13 @@
 title: Atualizar CalendarGroup
 description: Use esta API para criar um novo CalendarGroup.
 author: dkershaw10
-ms.openlocfilehash: a68be3470489b20667112b67d15f4472a3817d4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e2d8d4a00a629fb2dfb7ca811a319a1859758fb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319044"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839428"
 ---
 # <a name="create-calendargroup"></a>Atualizar CalendarGroup
 

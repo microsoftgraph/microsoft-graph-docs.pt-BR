@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de stringKeyObjectValuePair
 description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de open do OData que espera tem uma propriedade denominada `value` ou seja um objeto JSON válido.
-ms.openlocfilehash: ae536b2aab87b9920c2afcbe324e30b5f5380dbb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8545a4ef5a4931d3b886c95b4f39218bc418f53d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036682"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831448"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>tipo de recurso de stringKeyObjectValuePair
 
@@ -17,7 +18,7 @@ Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|String|Chave.|
+|key|Cadeia de caracteres|Chave.|
 |valor|Qualquer|Objeto JSON arbitrário.|
 
 ## <a name="json-representation"></a>Representação JSON

@@ -1,12 +1,13 @@
 ---
 title: Listar páginas
 description: Recupere uma lista de objetos page da seção especificada.
-ms.openlocfilehash: 5fe7e5dad2368d5c3de4d2a2904059801bb0e82b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7745ffea6eb07528a76d29a1ff0d456f1d4a47e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006249"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836005"
 ---
 # <a name="list-pages"></a>Listar páginas
 

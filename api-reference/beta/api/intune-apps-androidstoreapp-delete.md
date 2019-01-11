@@ -2,12 +2,13 @@
 title: Excluir androidStoreApp
 description: Exclui androidStoreApp.
 author: tfitzmac
-ms.openlocfilehash: c49a2ac2c0261df3fa59a4807eec220c34f76bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 08156450a65b496dc9ca98ebaecb9d20be020ab1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361513"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833505"
 ---
 # <a name="delete-androidstoreapp"></a>Excluir androidStoreApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

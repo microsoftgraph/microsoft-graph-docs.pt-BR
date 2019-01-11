@@ -2,12 +2,13 @@
 title: Obter thread de conversas
 description: Obter um objeto thread.
 author: dkershaw10
-ms.openlocfilehash: ecfb1443c1210271d2fbce330a8237a57bdd07d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72ca77aa21a40ddeba84f6977b160996f94869b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838042"
 ---
 # <a name="get-conversation-thread"></a>Obter thread de conversas
 Obter um objeto [thread](../resources/conversationthread.md).

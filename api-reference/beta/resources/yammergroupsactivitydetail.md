@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de yammerGroupsActivityDetail
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 9a4bb00aecb2ae1d14b68a5388e0dedc7c41b1cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9e4ac61f2af69b4229c2e9c3df7c653428cc2033
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034108"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832029"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>tipo de recurso de yammerGroupsActivityDetail
 
@@ -15,17 +16,17 @@ ms.locfileid: "27034108"
 | Propriedade           | Tipo    |
 | :----------------- | :------ |
 | reportRefreshDate  | Data    |
-| groupDisplayName   | String  |
+| groupDisplayName   | Cadeia de caracteres  |
 | isDeleted          | Booliano |
-| ownerPrincipalName | String  |
+| ownerPrincipalName | Cadeia de caracteres  |
 | lastActivityDate   | Data    |
-| groupType          | String  |
+| groupType          | Cadeia de caracteres  |
 | office365Connected | Booliano |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |
 | likedCount         | Int64   |
-| reportPeriod       | String  |
+| reportPeriod       | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 

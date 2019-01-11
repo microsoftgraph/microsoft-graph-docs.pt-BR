@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceManagementScriptGroupAssignment
 description: Contém propriedades usadas para atribuir um script de gerenciamento de dispositivo a um grupo.
 author: tfitzmac
-ms.openlocfilehash: 446e293ee3d4c0cc2071f6a93e01bcdf8cf72a2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6dfeca71b20ffae27f99fdd4af0909332338b4f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345938"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832204"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>tipo de recurso de deviceManagementScriptGroupAssignment
 
@@ -28,8 +29,8 @@ Contém propriedades usadas para atribuir um script de gerenciamento de disposit
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição de grupo de script para gerenciamento do dispositivo.|
-|targetGroupId|String|A Id de grupo do Active Directory do Windows Azure Pretendemos o script.|
+|id|Cadeia de caracteres|Chave da entidade de atribuição de grupo de script para gerenciamento do dispositivo.|
+|targetGroupId|Cadeia de caracteres|A Id de grupo do Active Directory do Windows Azure Pretendemos o script.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

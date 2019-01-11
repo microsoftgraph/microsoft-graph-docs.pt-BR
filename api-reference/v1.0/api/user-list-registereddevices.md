@@ -1,12 +1,13 @@
 ---
 title: Listar registeredDevices
 description: Obtenha a lista de dispositivos registrado do usuário.
-ms.openlocfilehash: be157572183b165dfb3bd6e23fd7b7a46f29e94a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63d6f3333be40a6e62cfe0622030ff39e5482707
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005618"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834820"
 ---
 # <a name="list-registereddevices"></a>Listar registeredDevices
 

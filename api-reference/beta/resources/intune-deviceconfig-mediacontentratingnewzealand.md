@@ -2,12 +2,13 @@
 title: Tipo de recurso mediaContentRatingNewZealand
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: deb4a985ac5c65225ebd7b02aa1647d594352773
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 31d3dcf84b6343bcb03430fa27f901ca02580044
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307459"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837958"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>Tipo de recurso mediaContentRatingNewZealand
 

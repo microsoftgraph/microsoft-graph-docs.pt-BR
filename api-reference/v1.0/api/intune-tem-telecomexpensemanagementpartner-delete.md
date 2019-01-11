@@ -2,12 +2,13 @@
 title: Excluir telecomExpenseManagementPartner
 description: Exclui telecomExpenseManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: 4d0a65c206f35d769c268b6d84a8681772c84df5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 683e6e0bb6324b14043860aec5867ffca6fad6c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837839"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Excluir telecomExpenseManagementPartner
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

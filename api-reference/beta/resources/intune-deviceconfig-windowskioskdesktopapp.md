@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsKioskDesktopApp
 description: A classe base para um tipo de aplicativos
 author: tfitzmac
-ms.openlocfilehash: a5ef4000b66f15f5951b49a152d25df30167004d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53eb615dcd1ba2b88c6cdd4bb5a1b76b83b67eaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830972"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso de windowsKioskDesktopApp
 
@@ -23,10 +24,10 @@ Herda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho de blocos de aplicativo para o layout de iniciar Inherited de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Representa o nome amigável de um aplicativo Inherited de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|caminho|String|Definir o caminho de um aplicativo de área de trabalho|
-|desktopApplicationId|String|Definir o DesktopApplicationID do aplicativo|
-|desktopApplicationLinkPath|String|Definir o DesktopApplicationLinkPath do aplicativo|
+|name|Cadeia de caracteres|Representa o nome amigável de um aplicativo Inherited de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|caminho|Cadeia de caracteres|Definir o caminho de um aplicativo de área de trabalho|
+|desktopApplicationId|Cadeia de caracteres|Definir o DesktopApplicationID do aplicativo|
+|desktopApplicationLinkPath|Cadeia de caracteres|Definir o DesktopApplicationLinkPath do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

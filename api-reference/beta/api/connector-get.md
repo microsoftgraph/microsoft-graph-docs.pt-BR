@@ -1,12 +1,13 @@
 ---
 title: Obtenha o conector
 description: Recupere as propriedades de um objeto de conector.
-ms.openlocfilehash: f299648093350d4d91637268aa76908f69ca7a38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 59a27a24dbb0f91881c4be71c0715ce0c648c4d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036262"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833331"
 ---
 # <a name="get-connector"></a>Obtenha o conector
 

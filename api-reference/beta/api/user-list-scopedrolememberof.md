@@ -2,19 +2,20 @@
 title: Lista scopedAdministratorOf
 description: Recupere uma lista de scopedRoleMembership para o usuário.
 author: dkershaw10
-ms.openlocfilehash: 48aead850e7f7b90a38229da1016007aeec40a9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2969fcab8f5df4cdf9bfc21d18aa8916b39ca20f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836145"
 ---
 # <a name="list-scopedadministratorof"></a>Lista scopedAdministratorOf
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere uma lista de [scopedRoleMembership](../resources/scopedrolemembership.md) para o usuário.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

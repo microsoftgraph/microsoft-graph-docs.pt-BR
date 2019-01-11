@@ -1,12 +1,13 @@
 ---
 title: Lista identityProviders
 description: Recupere todos os identityProviders no diretório.
-ms.openlocfilehash: fd5662690b644bc7a34587a5bdfc519188a3d4ff
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43442a0bf354816c8c104d57d9720940d83bc0d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837961"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 

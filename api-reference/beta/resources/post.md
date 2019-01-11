@@ -2,12 +2,13 @@
 title: tipo de recurso post
 description: Representa um item de postagem individuais dentro de uma entidade converstaionThread.
 author: dkershaw10
-ms.openlocfilehash: 6030bd5ef3c59edbad9712b549531a193b808b14
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1912917347697a6f78876175e6fe9f9c160869e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363715"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834038"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -70,8 +71,8 @@ Veja a seguir uma representação JSON do recurso
 |createdDateTime|DateTimeOffset|Especifica quando a postagem foi criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|Usado em cenários de acesso de representante. Indica quem postou a mensagem em nome de outro usuário. Esta é uma propriedade padrão.|
 |hasAttachments|Booliano|Indica se a postagem tem pelo menos um anexo. Esta é uma propriedade padrão.|
-|id|String| Somente leitura.|
-|importance | String | A importância de uma postagem de grupo: `low`, `normal`, `high`. |
+|id|Cadeia de caracteres| Somente leitura.|
+|importance | Cadeia de caracteres | A importância de uma postagem de grupo: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |newParticipants|Coleção [recipient](recipient.md)|Participantes da conversa que foram adicionados ao thread como parte desta postagem.|
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|

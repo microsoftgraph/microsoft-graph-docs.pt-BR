@@ -2,12 +2,13 @@
 title: tipo de enum localSecurityOptionsInformationShownOnLockScreenType
 description: Valores possíveis para LocalSecurityOptionsInformationShownOnLockScreenType
 author: tfitzmac
-ms.openlocfilehash: 43ba3d7d076a436a210c7d98a16bc90f8731c3ab
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4e308f5f6df124c27e885e185db36e5ff706c8c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311246"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831497"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>tipo de enum localSecurityOptionsInformationShownOnLockScreenType
 

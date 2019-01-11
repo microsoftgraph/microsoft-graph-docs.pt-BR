@@ -2,12 +2,13 @@
 title: Acessar iosVppApp
 description: Leia as propriedades e as relações do objeto iosVppApp.
 author: tfitzmac
-ms.openlocfilehash: a908fcecb64bbe9624e837b4ab61454e61054338
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fdfb2e6e6c116058eea43d92a15adb886d73a463
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834983"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

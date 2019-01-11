@@ -2,12 +2,13 @@
 title: tipo de recurso de macOSFirewallApplication
 description: Representa um aplicativo na lista de aplicativos de firewall macOS
 author: tfitzmac
-ms.openlocfilehash: 0d248194eed1b6e1841d2e4533aa1f79b772ccc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 536f2f596286f6b5457557f575ba018c65001bfe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835214"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>tipo de recurso de macOSFirewallApplication
 
@@ -19,8 +20,8 @@ Representa um aplicativo na lista de aplicativos de firewall macOS
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleId|String|BundleId do aplicativo.|
-|allowsIncomingConnections|Boolean|Ou não são permitidas conexões de entrada.|
+|bundleId|Cadeia de caracteres|BundleId do aplicativo.|
+|allowsIncomingConnections|Booliano|Ou não são permitidas conexões de entrada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

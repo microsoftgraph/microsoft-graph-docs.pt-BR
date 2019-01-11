@@ -2,12 +2,13 @@
 title: Excluir termsAndConditionsAcceptanceStatus
 description: Exclui termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: f43a59630d476e8333777a287f738b7f900cdbe4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d7dfbde7c64f70832adbc1cded409eb512d20d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359917"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833541"
 ---
 # <a name="delete-termsandconditionsacceptancestatus"></a>Excluir termsAndConditionsAcceptanceStatus
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceSta
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

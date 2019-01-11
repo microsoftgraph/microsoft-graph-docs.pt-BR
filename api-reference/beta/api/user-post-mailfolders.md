@@ -1,12 +1,13 @@
 ---
 title: Criar MailFolder
 description: Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-ms.openlocfilehash: 6e6b42197dcb5b968a59303d2e9c8c8b1ddf6feb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fd625e221eea67d08407dc332d47880ce21f21e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838420"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -38,7 +39,7 @@ No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. 
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da nova pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 

@@ -2,12 +2,13 @@
 title: Excluir windowsAssignedAccessProfile
 description: Exclui um windowsAssignedAccessProfile.
 author: tfitzmac
-ms.openlocfilehash: 218c5bd18049ca804fe72822bb265d3a9e53a69b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9303bb38c97da7a5a40cd82d79d2081e40424c65
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831749"
 ---
 # <a name="delete-windowsassignedaccessprofile"></a>Excluir windowsAssignedAccessProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

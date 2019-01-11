@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de office365GroupsActivityGroupCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 12dc0121c8f37c694265fce0d6cb5f58e56e0966
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ed5386083b11fb6fe7f063a4890744532feeb081
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035831"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832617"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>tipo de recurso de office365GroupsActivityGroupCounts
 
@@ -18,7 +19,7 @@ ms.locfileid: "27035831"
 | total             | Int64  | O número total de grupos.              |
 | ativo            | Int64  | O número de grupos do active. Um grupo será considerado ativo se qualquer um dos seguintes ocorreu: email da caixa de correio recebida; de grupo usuário exibido, editado, compartilhados ou sincronizados arquivos na biblioteca de documentos do SharePoint; usuário exibir páginas do SharePoint; usuário postados, ler ou curtidas mensagens no Yammer grupos. |
 | reportDate        | Data   | A data em que um número de grupos estava ativo. |
-| reportPeriod      | String | O número de dias que abrange o relatório.    |
+| reportPeriod      | Cadeia de caracteres | O número de dias que abrange o relatório.    |
 
 ## <a name="json-representation"></a>Representação JSON
 
