@@ -2,12 +2,13 @@
 title: Acessar deviceCompliancePolicyAssignment
 description: Leia as propriedades e as relações do objeto deviceCompliancePolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: 51b85a2d9f25b22da47f3caf7aae6b55042f29e0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 284d3b5707d7b036e9f6ce5a4976768addd88765
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356991"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812240"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Acessar deviceCompliancePolicyAssignment
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

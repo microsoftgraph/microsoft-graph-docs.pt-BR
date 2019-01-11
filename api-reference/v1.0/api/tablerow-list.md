@@ -2,12 +2,13 @@
 title: Listar TableRowCollection
 description: Recupere uma lista de objetos tablerow.
 author: lumine2008
-ms.openlocfilehash: e59d090e38cea2ae5c2a82338cda4d94148a05be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afb37ed31fbcca19b5f54979a5221bd3d4272016
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815936"
 ---
 # <a name="list-tablerowcollection"></a>Listar TableRowCollection
 

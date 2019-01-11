@@ -1,12 +1,13 @@
 ---
 title: Atualizar alertas
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 9f8040220c64310a04293d43c0c31704c3f49261
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: efb9911eaeb9d980084c26ef329c7c837c9d04f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27041224"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815075"
 ---
 # <a name="update-alert"></a>Atualizar alertas
 
@@ -46,7 +47,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para os 
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista de alerta é atribuída a triagem, investigação ou correção.|
+|assignedTo|Cadeia de caracteres|Nome do analista de alerta é atribuída a triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Hora em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |comentários|String collection|Comentários de analistas no alerta (para gerenciamento de alerta do cliente).|
 |comentários|enumeração alertFeedback|Comentários analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|

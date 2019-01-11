@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de chatMessageReaction
 description: 'Representa uma reação a uma entidade chatMessage. '
-ms.openlocfilehash: 1ad1f7948405a8891ec9aa13065b71108e9c47c5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040849"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810063"
 ---
 # <a name="chatmessagereaction-resource-type"></a>tipo de recurso de chatMessageReaction
 

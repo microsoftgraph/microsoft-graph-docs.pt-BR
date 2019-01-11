@@ -2,12 +2,13 @@
 title: Listar enrollmentTroubleshootingEvents
 description: Lista propriedades e relações dos objetos enrollmentTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 3bbf54f875356dc8e475ee114c42e79d87cbf0bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aff26e8df23f8ccb2bcca46502d8a89c9dbb020e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346071"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813101"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Listar enrollmentTroubleshootingEvents
 
@@ -36,7 +37,7 @@ GET /deviceManagement/troubleshootingEvents
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

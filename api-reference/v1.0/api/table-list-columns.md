@@ -2,12 +2,13 @@
 title: Listar colunas
 description: Recupere uma lista de objetos tablecolumn.
 author: lumine2008
-ms.openlocfilehash: 52c3b930e16e8dca7386be5accff9cfb4937a949
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 17e1d552c4c7880befdfb2bd8ff01d852be9a137
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316829"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811127"
 ---
 # <a name="list-columns"></a>Listar colunas
 

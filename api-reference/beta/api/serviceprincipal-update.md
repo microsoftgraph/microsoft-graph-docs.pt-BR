@@ -1,12 +1,13 @@
 ---
 title: Atualizar serviceprincipal
 description: Atualize as propriedades do objeto serviceprincipal.
-ms.openlocfilehash: a24a8c949d48f577a3d7fe6208a1422819772801
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a8d4eebe64ac9c0c658ae9c43e2e92045be67424
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040666"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813024"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar serviceprincipal
 
@@ -38,22 +39,22 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled|Booliano|                **true** se a conta de serviço principal estiver ativada; Caso contrário, **false**.            |
-|appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
+|appDisplayName|Cadeia de caracteres|O nome de exibição exposto pelo aplicativo associado.|
 |appId|Cadeia de caracteres|O identificador exclusivo para o aplicativo associado (sua propriedade **appId** ).|
 |appRoleAssignmentRequired|Booliano|Especifica se um **appRoleAssignment** a um usuário ou grupo é necessária antes que o Azure AD emitirá um usuário ou um token de acesso ao aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
 |appRoles|appRole|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** sobre a entidade de aplicativo **Notes**: requer a versão 1.5 ou mais recente, não são nulas.            |
-|displayName|String|O nome de exibição para a entidade de serviço.|
-|errorUrl|String|            |
-|home page|String|A URL para a home page do aplicativo associado.|
+|displayName|Cadeia de caracteres|O nome de exibição para a entidade de serviço.|
+|errorUrl|Cadeia de caracteres|            |
+|home page|Cadeia de caracteres|A URL para a home page do aplicativo associado.|
 |keyCredentials|keyCredential|A coleção de credenciais de chave associado ao serviço principal.                            **Anotações**: não anulável.            |
-|logoutUrl|String| Especifica a URL que será usada pelo serviço de autorização da Microsoft para logout um usuário usando o [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou protocolos de logout SAML. |
+|logoutUrl|Cadeia de caracteres| Especifica a URL que será usada pelo serviço de autorização da Microsoft para logout um usuário usando o [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou protocolos de logout SAML. |
 |oauth2Permissions|oAuth2Permission|As permissões de OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **oauth2Permissions** sobre a entidade de aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
 |passwordCredentials|passwordCredential|A coleção de credenciais de senha associadas a entidade de serviço.                            **Anotações**: não anulável.            |
-|preferredTokenSigningKeyThumbprint|String|Reservado para uso interno apenas. Não gravar ou caso contrário, contam com esta propriedade. Pode ser removido em futuras versões.                            **Observações**: requer a versão 1.5 ou mais recente.            |
+|preferredTokenSigningKeyThumbprint|Cadeia de caracteres|Reservado para uso interno apenas. Não gravar ou caso contrário, contam com esta propriedade. Pode ser removido em futuras versões.                            **Observações**: requer a versão 1.5 ou mais recente.            |
 |publisherName|Cadeia de caracteres|O nome de exibição do inquilino no qual o aplicativo associado for especificado.|
-|replyUrls|String|As URLs que os tokens do usuário são enviados para entrada com o aplicativo associado ou o redirecionamento códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
-|samlMetadataUrl|String|            |
-|servicePrincipalNames|String|Os URIs que identificam o aplicativo associado. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não são nulas, o operador **any** é necessário para expressões de filtro propriedades de valores múltiplos; Para obter mais informações, consulte [suporte para consultas, filtros e opções de paginação](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|replyUrls|Cadeia de caracteres|As URLs que os tokens do usuário são enviados para entrada com o aplicativo associado ou o redirecionamento códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
+|samlMetadataUrl|Cadeia de caracteres|            |
+|servicePrincipalNames|Cadeia de caracteres|Os URIs que identificam o aplicativo associado. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não são nulas, o operador **any** é necessário para expressões de filtro propriedades de valores múltiplos; Para obter mais informações, consulte [suporte para consultas, filtros e opções de paginação](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
 |marcas|String|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta

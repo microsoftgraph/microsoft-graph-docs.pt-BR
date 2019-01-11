@@ -1,12 +1,13 @@
 ---
 title: Listar proprietários
 description: 'Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. '
-ms.openlocfilehash: 9bb7592827f5dfe9eef2aff0fa8917fe68f683dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a22e751d59d73b7bc3d3c00edafbce6c97f034f8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005379"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814732"
 ---
 # <a name="list-owners"></a>Listar proprietários
 Recupere uma lista de proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo. 

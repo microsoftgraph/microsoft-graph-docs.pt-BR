@@ -2,12 +2,13 @@
 title: Excluir sharedPCConfiguration
 description: Exclui sharedPCConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2de013448728da0942b13696be87820b0229fce0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 98f21b7b506e7f384b01c59f9662e7ae76ba4028
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318442"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812849"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Excluir sharedPCConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

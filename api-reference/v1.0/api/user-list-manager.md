@@ -1,12 +1,13 @@
 ---
 title: Listar gerente
 description: Obtenha o gerente do usuário. Retorna o usuário ou contato atribuído como gerente do usuário.
-ms.openlocfilehash: eb25449970311ceb7790b54c64191c669daeb004
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 886e3a0cc85fdf63b46f2b6428520910f30e9efa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812023"
 ---
 # <a name="list-manager"></a>Listar gerente
 

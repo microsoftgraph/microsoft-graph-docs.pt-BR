@@ -2,12 +2,13 @@
 title: Excluir windows10CustomConfiguration
 description: Exclui windows10CustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 92bfa3b216e9e615d57628e236b088941ef5d51c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86bef25cffad3bed3adbed8cb50d2a8eabf958b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807368"
 ---
 # <a name="delete-windows10customconfiguration"></a>Excluir windows10CustomConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: Redefinir accessReview
 description: No recurso de avaliações de acesso do Azure AD, redefina as decisões de um accessReview ativa no momento.  O objeto de destino pode ser uma revisão de acesso de uma única vez, ou uma instância de uma análise mais acesso recorrente.  Decisões anteriores não são mais registradas, mas os revisores podem continuar a atualização decisões.
-ms.openlocfilehash: b633a56926b56b33c509214d7574971056831967
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034347"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809573"
 ---
 # <a name="reset-accessreview"></a>Redefinir accessReview
 

@@ -1,19 +1,20 @@
 ---
 title: Tipo de recurso entity
 description: Nenhum
-ms.openlocfilehash: 381e1df86d96f416a36eca58c1b3f6a7f3e58f01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e0903ef3b90a0c176881bbee2aa5aafca4032ccc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005072"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810952"
 ---
 # <a name="entity-resource-type"></a>Tipo de recurso entity
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

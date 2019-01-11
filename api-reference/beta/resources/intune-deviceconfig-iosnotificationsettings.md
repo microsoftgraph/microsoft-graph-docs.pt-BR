@@ -2,12 +2,13 @@
 title: Tipo de recurso iosNotificationSettings
 description: Um item que descreve a configuração de notificação.
 author: tfitzmac
-ms.openlocfilehash: c24e0719e634d2939f88280431538b41fb0a1b5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2105d5641583f0d8216bd8f2241f40e5fbeea01d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810098"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de evento
 description: Um evento em um calendário.
 author: angelgolfer-ms
-ms.openlocfilehash: 3bb597f8e8e157f0a75b2538b233ee57934827c5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d083d860d77fe5bf777d14041de21ecc3308d838
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811736"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -65,7 +66,7 @@ Esse recurso permite:
 |end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
 |iCalUId|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. Somente leitura.|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |importance|importance|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
@@ -87,7 +88,7 @@ Esse recurso permite:
 |seriesMasterId|String|A ID para a série item mestre recorrente, se esse evento for parte de uma série recorrente.|
 |showAs|freeBusyStatus|O status a ser exibido. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
-|subject|String|O texto da linha de assunto do evento.|
+|subject|Cadeia de caracteres|O texto da linha de assunto do evento.|
 |type|eventType|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 

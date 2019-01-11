@@ -2,12 +2,13 @@
 title: Excluir calendário
 description: Exclua um calendário que não o calendário padrão.
 author: angelgolfer-ms
-ms.openlocfilehash: d8e2a7aaaff9f4489d5ef1cbcae97bcdbceb8f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4621314f179ddc1eac47b5f178ff50af670972db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809489"
 ---
 # <a name="delete-calendar"></a>Excluir calendário
 

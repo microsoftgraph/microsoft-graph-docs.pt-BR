@@ -2,12 +2,13 @@
 title: tipo de enum managementAgentType
 description: Tipo de agente de gerenciamento.
 author: tfitzmac
-ms.openlocfilehash: 702f71f3984bda34e31d0a614e45e387f45b587e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b8b4f5086ada7351dd41ac165dc600f81dc1fb4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321585"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813822"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enum managementAgentType
 

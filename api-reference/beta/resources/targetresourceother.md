@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de targetResourceOther
 description: Indica informações em um destino que não se enquadram com o restante das categorias de recurso de destino como usuário, aplicativo, função, grupo, chave. Derivado do recurso targetResource.
-ms.openlocfilehash: b7272694f2359870c6adc7f67257bfccfa3f5823
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 517ee89dbef8326ed6183fe264ab2d17cf5b54bd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041050"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807354"
 ---
 # <a name="targetresourceother-resource-type"></a>tipo de recurso de targetResourceOther
 Indica informações em um destino que não se enquadram com o restante das categorias de recurso de destino como usuário, aplicativo, função, grupo, chave. Derivado do recurso [targetResource](targetresource.md) .

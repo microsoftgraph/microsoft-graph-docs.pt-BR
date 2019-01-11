@@ -2,12 +2,13 @@
 title: 'chamar: Desativar Mudo'
 description: Permite que o aplicativo para desativar o mudo.
 author: VinodRavichandran
-ms.openlocfilehash: abd5abdf0e91a24e2f8de4d5fbb3fa0cc1d7b243
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 3f010b7b7fb790b40455c8e09b785ffe29af0983
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380398"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813675"
 ---
 # <a name="call-unmute"></a>chamar: Desativar Mudo
 
@@ -15,7 +16,7 @@ ms.locfileid: "27380398"
 
 Permite que o aplicativo para desativar o mudo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -41,7 +42,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` objeto response de código e [commsOperation](../resources/commsoperation.md) no corpo da resposta.

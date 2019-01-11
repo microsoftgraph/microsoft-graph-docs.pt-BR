@@ -2,19 +2,20 @@
 title: Excluir contato
 description: Exclua contato.
 author: angelgolfer-ms
-ms.openlocfilehash: a8f1ea8c1ee0f202e60d4efb05f65022a9269c01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6e0fd4dcf7abc1b52b0a99d4220e313bef11a6b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319268"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813374"
 ---
 # <a name="delete-contact"></a>Excluir contato
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Exclua contato.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

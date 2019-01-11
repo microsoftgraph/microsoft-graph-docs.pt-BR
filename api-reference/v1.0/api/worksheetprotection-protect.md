@@ -2,12 +2,13 @@
 title: 'WorksheetProtection: protect'
 description: Protege uma planilha. Gera uma exceção se a planilha estiver protegida.
 author: lumine2008
-ms.openlocfilehash: ac438fd76587f33aaa26928b34423bd2980e3560
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 03d2c9edf6f814f7bd5e460d340b07e714eb18ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308040"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816153"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -36,7 +37,7 @@ POST /workbook/worksheets/{id|name}/protection/protect
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |options|WorkbookWorksheetProtectionOptions|Opcional. Opções de proteção da planilha.|
 

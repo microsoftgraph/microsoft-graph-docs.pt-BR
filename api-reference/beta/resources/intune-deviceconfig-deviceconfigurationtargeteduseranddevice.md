@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceConfigurationTargetedUserAndDevice
 description: Resumo de um conjunto de políticas de configuração de dispositivo de conflito.
 author: tfitzmac
-ms.openlocfilehash: 04b0e31d0f3f099389e4901eb654139d286f4bd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46355f78f23060ecc901c3f98f0e3f7d13101d1e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809622"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso de deviceConfigurationTargetedUserAndDevice
 
@@ -20,10 +21,10 @@ Resumo de um conjunto de políticas de configuração de dispositivo de conflito
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |deviceId|Cadeia de caracteres|A id do dispositivo em que o check-in.|
-|deviceName|String|O nome do dispositivo em que o check-in.|
-|userId|String|A identificação do usuário no check-in.|
-|userDisplayName|String|O nome de exibição do usuário no check-in|
-|userPrincipalName|String|O UPN do usuário no check-in.|
+|deviceName|Cadeia de caracteres|O nome do dispositivo em que o check-in.|
+|userId|Cadeia de caracteres|A identificação do usuário no check-in.|
+|userDisplayName|Cadeia de caracteres|O nome de exibição do usuário no check-in|
+|userPrincipalName|Cadeia de caracteres|O UPN do usuário no check-in.|
 |lastCheckinDateTime|DateTimeOffset|Última hora de check-in para este par de dispositivo do usuário.|
 
 ## <a name="relationships"></a>Relações

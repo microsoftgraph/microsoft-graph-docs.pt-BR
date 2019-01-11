@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsMinimumOperatingSystem
 description: O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 author: tfitzmac
-ms.openlocfilehash: 2ed80e724c5f53510db5366e82d2e9dea2d90707
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 672bceca692702b4d108b8538626c2b767ffdf56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814515"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 
@@ -22,10 +23,10 @@ O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 |v8_0|Booliano|Windows 8.0 ou posterior.|
 |v8_1|Booliano|Windows 8.1 ou posterior.|
 |v10_0|Booliano|Windows 10.0 ou posterior.|
-|v10_1607|Boolean|Windows 1607 10 ou posterior.|
-|v10_1703|Boolean|Windows 1703 10 ou posterior.|
-|v10_1709|Boolean|Windows 1709 10 ou posterior.|
-|v10_1803|Boolean|Windows 1803 10 ou posterior.|
+|v10_1607|Booliano|Windows 1607 10 ou posterior.|
+|v10_1703|Booliano|Windows 1703 10 ou posterior.|
+|v10_1709|Booliano|Windows 1709 10 ou posterior.|
+|v10_1803|Booliano|Windows 1803 10 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

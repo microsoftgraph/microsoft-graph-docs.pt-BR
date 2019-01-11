@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de targetResourcePolicy
 description: 'Indica a política que foi afetada pela atividade de auditoria. Derivado do recurso targetResource.   '
-ms.openlocfilehash: 20486c535d0df4b3745f5cfc3414b320a9374075
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 355e6ac11741a2aa7aeb780bdac4b7be373092af
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813136"
 ---
 # <a name="targetresourcepolicy-resource-type"></a>tipo de recurso de targetResourcePolicy
 Indica a política que foi afetada pela atividade de auditoria. Derivado do recurso [targetResource](targetresource.md) .   
@@ -16,7 +17,7 @@ Indica a política que foi afetada pela atividade de auditoria. Derivado do recu
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|policyType|String|Indica o nome da política que alterado ou foi direcionados da alteração|
+|policyType|Cadeia de caracteres|Indica o nome da política que alterado ou foi direcionados da alteração|
 
 ## <a name="json-representation"></a>Representação JSON
 

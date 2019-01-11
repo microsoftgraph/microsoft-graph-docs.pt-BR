@@ -1,12 +1,13 @@
 ---
 title: Obter subscribedSku
 description: Recupere uma assinatura comercial específica que uma organização adquiriu.
-ms.openlocfilehash: cf7d8ef7aef8eaabdc30c02c9bf8e71478017823
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b867e59cbea04b181690f297f3c75df01ee0a0a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809958"
 ---
 # <a name="get-subscribedsku"></a>Obter subscribedSku
 Recupere uma assinatura comercial específica que uma organização adquiriu.

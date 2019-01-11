@@ -1,12 +1,13 @@
 ---
 title: tipo de enum androidManagedStoreAppConfigurationSchemaItemDataType
 description: Tipo de dados para um item de configuração dentro do esquema de configuração personalizada de um aplicativo Android
-ms.openlocfilehash: 4cfaeb1ba02746c7f3307a7d388a2c6a503d3d70
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 185785fec7de9b87342703b41063ad49a0bd1bf5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040697"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814872"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>tipo de enum androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -21,7 +22,7 @@ Tipo de dados para um item de configuração dentro do esquema de configuração
 |bool|0|Ainda não documentado|
 |inteiro|1|Ainda não documentado|
 |string|2|Ainda não documentado|
-|Escolha|3|Ainda não documentado|
+|choice|3|Ainda não documentado|
 |MultiSelect|4|Ainda não documentado|
 |pacote|5|Ainda não documentado|
 |bundleArray|6|Ainda não documentado|

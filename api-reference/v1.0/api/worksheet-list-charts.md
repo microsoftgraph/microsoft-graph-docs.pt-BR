@@ -2,12 +2,13 @@
 title: Listar gráficos
 description: Recupere uma lista de objetos de gráfico.
 author: lumine2008
-ms.openlocfilehash: 2c6366c87b18769ee07d995352ae2fca2f4d0513
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d61d243108f557870330b5c9a7a689f2b1a027fa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808726"
 ---
 # <a name="list-charts"></a>Listar gráficos
 

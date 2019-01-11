@@ -2,12 +2,13 @@
 title: tipo de recurso de callRoute
 description: O tipo de callRoute.
 author: VinodRavichandran
-ms.openlocfilehash: 9538fb8f27f60e869c19edc7bd19d7f6b29e8fff
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: e417a7e814b5a2a80da1fa9cd7a551f82e0c37db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380153"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815082"
 ---
 # <a name="callroute-resource-type"></a>tipo de recurso de callRoute
 
@@ -17,11 +18,11 @@ O tipo de callRoute.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	            | Tipo                          | Descrição                                                  |
+| Propriedade            | Tipo                          | Descrição                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | final               | [identitySet](identityset.md) | A identidade que foi resolvida na chamada.               |
 | Original            | [identitySet](identityset.md) | A identidade que originalmente utilizada na chamada.           |
-| routingType         | String                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
+| routingType         | Cadeia de caracteres                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

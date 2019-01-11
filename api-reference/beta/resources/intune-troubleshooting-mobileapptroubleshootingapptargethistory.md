@@ -2,12 +2,13 @@
 title: tipo de recurso de mobileAppTroubleshootingAppTargetHistory
 description: Item de histórico contido no evento Mobile App solução de problemas.
 author: tfitzmac
-ms.openlocfilehash: cdb901d4c532b57025837a2fb0cc0975ceba3f8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76595f4fd643e985d28bcb84ad1c4ea6d7be2ad6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810336"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>tipo de recurso de mobileAppTroubleshootingAppTargetHistory
 
@@ -23,7 +24,7 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Hora de quando o item de histórico ocorreu. Herdado de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|String|Identificação de grupo de segurança AAD ao qual ele estava direcionado.|
+|securityGroupId|Cadeia de caracteres|Identificação de grupo de segurança AAD ao qual ele estava direcionado.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`.|
 |errorCode|Cadeia de caracteres|Código de erro da falha, vazia se nenhum falha.|
 

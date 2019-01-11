@@ -2,12 +2,13 @@
 title: Excluir enrollmentTroubleshootingEvent
 description: Exclui um enrollmentTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: b611c1761b5e357dafa78fe99e7465aa18f1b55b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9c9055c2b3e64c37729859dbc26d71f26c9fa3c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816202"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>Excluir enrollmentTroubleshootingEvent
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

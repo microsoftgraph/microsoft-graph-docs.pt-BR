@@ -2,12 +2,13 @@
 title: 'chamar: Ativar Mudo'
 description: Permite que o aplicativo ativar mudo em si.
 author: VinodRavichandran
-ms.openlocfilehash: dc1baddb65521f4874f108dd28c7e9ec7b778a25
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813437"
 ---
 # <a name="call-mute"></a>chamar: Ativar Mudo
 
@@ -15,7 +16,7 @@ ms.locfileid: "27380161"
 
 Permite que o aplicativo ativar mudo em si.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -41,7 +42,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.

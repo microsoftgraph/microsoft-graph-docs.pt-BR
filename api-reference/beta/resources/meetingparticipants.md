@@ -2,12 +2,13 @@
 title: tipo de recurso de meetingParticipants
 description: Participantes em uma reunião.
 author: VinodRavichandran
-ms.openlocfilehash: 7e44863004dab5405251e2effaf2af8c2ae31f67
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: fad06a015429a7264d808b4997c94e90e4799825
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380279"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815112"
 ---
 # <a name="meetingparticipants-resource-type"></a>tipo de recurso de meetingParticipants
 
@@ -17,7 +18,7 @@ Participantes em uma reunião.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo    | Descrição|
+| Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | attendees | coleção [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 | organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |

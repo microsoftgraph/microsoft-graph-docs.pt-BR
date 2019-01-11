@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceAndAppManagementData
 description: Dados exportados
 author: tfitzmac
-ms.openlocfilehash: 4b1c8a77f3c293f412c69836afac7b1f28f971aa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 57bcabcb3ba6680e6fb76aedc6fe7caa55d5752d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816041"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso de deviceAndAppManagementData
 

@@ -2,12 +2,13 @@
 title: Obter um usuário
 description: Recupere as propriedades e os relacionamentos do objeto user.
 author: dkershaw10
-ms.openlocfilehash: eb2b3efe96e3fd4e4608ae045addaf8a1fe6911a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: cf517326c32a964617e12264079a94ce441413e0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815012"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -17,7 +18,7 @@ Recupere as propriedades e os relacionamentos do objeto user.
 
 Desde que o recurso de **usuário** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância de **usuário** .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

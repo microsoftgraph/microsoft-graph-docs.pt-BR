@@ -2,12 +2,13 @@
 title: Obter educationSubmission
 description: 'Recupere o envio de um determinado. Um objeto de envio representa trabalho student para uma atribuição. Recursos associados representam o envio isso funcione. Somente o aluno a que o envio é atribuído pode ver e modificar o envio. Um professor possui acesso total para todos os envios. '
 author: dipakboyed
-ms.openlocfilehash: 39e3591c0236d7a6fbc4896d4009fe5a00157d9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4eacc6ce261566afdc6d712172d35a46f9d9e595
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353078"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813360"
 ---
 # <a name="get-educationsubmission"></a>Obter educationSubmission
 
@@ -17,7 +18,7 @@ Recupere o envio de um determinado. Um objeto de envio representa trabalho stude
 
 O nível e os comentários feitos durante um professor também fazem parte deste objeto. Professores só podem adicionar ou alterar comentários e notas. Alunos não verá o nível ou comentários até que a atribuição foi liberada. As permissões básicas não incluir nível e comentários mas incluem todos os outros.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

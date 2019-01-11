@@ -2,12 +2,13 @@
 title: Tipo de recurso auditProperty
 description: Uma classe que contém as propriedades para a Propriedade de auditoria.
 author: tfitzmac
-ms.openlocfilehash: 801ac78cb81e126ff49c4c680fc0624611a9f6d6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0a04d924560e712a0656584693940b127210645
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316314"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812863"
 ---
 # <a name="auditproperty-resource-type"></a>Tipo de recurso auditProperty
 

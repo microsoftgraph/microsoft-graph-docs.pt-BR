@@ -1,12 +1,13 @@
 ---
 title: 'Worksheet: UsedRange'
 description: O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.
-ms.openlocfilehash: 424d8226a8f109242956b139670ed674ae50b43d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b3ac4919b9af0a9e655b449a986962838e1b32d7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815033"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 

@@ -2,12 +2,13 @@
 title: Excluir intuneBrandingProfile
 description: Exclui um intuneBrandingProfile.
 author: tfitzmac
-ms.openlocfilehash: dcb76f76528c88afbda800ae03159ac984617181
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b4cb1624b6b3a965864fdec01eaa1dd07927c04
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308656"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816237"
 ---
 # <a name="delete-intunebrandingprofile"></a>Excluir intuneBrandingProfile
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

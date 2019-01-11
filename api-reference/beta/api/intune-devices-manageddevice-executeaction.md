@@ -2,12 +2,13 @@
 title: ação de executeAction
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 8ab2749e694ac600c141e314018308efe34b4151
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a95d9dd38c317f83e53c0c4bca98a379602df8db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305149"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812548"
 ---
 # <a name="executeaction-action"></a>ação de executeAction
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

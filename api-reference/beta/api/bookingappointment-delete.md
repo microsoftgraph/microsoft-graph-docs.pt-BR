@@ -1,12 +1,13 @@
 ---
 title: Excluir bookingAppointment
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 076c08b240ee3bd9b0648a000f1399fa2f6060b3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a93f270326c1f1d3bcebcbd82ffdc0f29a3ed907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033698"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809440"
 ---
 # <a name="delete-bookingappointment"></a>Excluir bookingAppointment
 

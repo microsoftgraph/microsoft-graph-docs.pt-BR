@@ -2,12 +2,13 @@
 title: Excluir androidForWorkTrustedRootCertificate
 description: Exclui um androidForWorkTrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 2571e3fd270ef56e8b93ea44efc826cf89a8613f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ab73a40b7e50bde91d352f65fa8295894c9e5927
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318030"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812737"
 ---
 # <a name="delete-androidforworktrustedrootcertificate"></a>Excluir androidForWorkTrustedRootCertificate
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Criar mailFolder
 description: Use essa API para criar um novo mailFolder de filho.
 author: angelgolfer-ms
-ms.openlocfilehash: e893f28878b14fa76d8cda16a5b37f795ed235f2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c031f0bd621778fc38801a80788f977d45fbaffb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816419"
 ---
 # <a name="create-mailfolder"></a>Criar mailFolder
 
@@ -15,7 +16,7 @@ ms.locfileid: "27357271"
 
 Use essa API para criar um novo de filho [mailFolder](../resources/mailfolder.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -47,9 +48,9 @@ Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pa
 
 No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. **displayName** é a única propriedade gravável para um objeto [MailFolder](../resources/mailfolder.md).
 
-| Parâmetro | Type | Descrição |
+| Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|displayName|String|O nome de exibição da nova pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 

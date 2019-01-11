@@ -2,12 +2,13 @@
 title: Get detectedApp
 description: Ler propriedades e relações do objeto detectedApp.
 author: tfitzmac
-ms.openlocfilehash: d8d52d614d060d433fcee468a0b5663de33a5dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bdad0890f3060827ddd888dd47fa89911912322b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811184"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

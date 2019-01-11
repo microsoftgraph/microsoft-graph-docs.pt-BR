@@ -2,12 +2,13 @@
 title: 'chamar: redirecionar'
 description: Redirecione uma chamada recebida.
 author: VinodRavichandran
-ms.openlocfilehash: 9fff752f07f66cf3c236982495897234c9a1c38d
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: f581a5ce95368e7d852a5b1435ef05bf940f607c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380216"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809468"
 ---
 # <a name="call-redirect"></a>chamar: redirecionar
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380216"
 
 Redirecione uma chamada recebida.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
 | :-------------- | :-------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                |
 | Delegado (conta pessoal da Microsoft) | Não suportado                |
-| Application     | Calls.Initiate.All                                  |
+| Aplicativo     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |destinos|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
-|targetDisposition|String|O valor possível é:`default`|
+|targetDisposition|Cadeia de caracteres|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
 |maskCallee|Booliano|Indica se o receptor de máscara.|
 |maskCaller|Booliano|Indica se o chamador de máscara.|

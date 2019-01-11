@@ -1,12 +1,13 @@
 ---
 title: Obter identityProvider
 description: Recupere as propriedades de um identityProvider existente.
-ms.openlocfilehash: 238e222c820e62685fa7c9e7ca50f5efb33693cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f0d467bde092f84d092dbcee7c54c01e3ef849f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812968"
 ---
 # <a name="get-identityprovider"></a>Obter identityProvider
 

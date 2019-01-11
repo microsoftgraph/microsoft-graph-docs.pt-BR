@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de plannerPlanContextDetails
 description: O recurso de **plannerPlanContextDetails** contém informações adicionais sobre um plannerPlanContext.
-ms.openlocfilehash: 44c1099c1155372a23029cd0cc6a4decd68c5bc0
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec35a83e5ba2d2648c512f31f838f19bd3ec2e02
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812051"
 ---
 # <a name="plannerplancontextdetails-resource-type"></a>tipo de recurso de plannerPlanContextDetails
 
@@ -17,7 +18,7 @@ O recurso de **plannerPlanContextDetails** contém informações adicionais sobr
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|url|String|URL da experiência do usuário representada pelo associado [plannerPlanContext](plannerplancontext.md). |
+|url|Cadeia de caracteres|URL da experiência do usuário representada pelo associado [plannerPlanContext](plannerplancontext.md). |
 
 ## <a name="json-representation"></a>Representação JSON
 

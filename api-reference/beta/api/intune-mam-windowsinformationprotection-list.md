@@ -2,12 +2,13 @@
 title: Listar windowsInformationProtections
 description: Listar propriedades e relações dos objetos windowsInformationProtection.
 author: tfitzmac
-ms.openlocfilehash: 34491a305124cf4d9f31ed6dcb1529f2c7b88e5b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 397429d09e174957ed5b6ba7b52e4930b9869cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811659"
 ---
 # <a name="list-windowsinformationprotections"></a>Listar windowsInformationProtections
 
@@ -40,7 +41,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

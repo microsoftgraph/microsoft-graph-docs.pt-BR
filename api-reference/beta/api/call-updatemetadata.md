@@ -2,12 +2,13 @@
 title: 'chamar: updateMetadata'
 description: Atualize os metadados do aplicativo associado a uma chamada.
 author: VinodRavichandran
-ms.openlocfilehash: b81b41b827aee17fbc2ebed2dee56c15c5376a88
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2b736c56a7a517f0b68d656ab96933a34cf4a09d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380538"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813584"
 ---
 # <a name="call-updatemetadata"></a>chamar: updateMetadata
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380538"
 
 Atualize os metadados do aplicativo associado a uma chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,8 +42,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|metadados|String|Um blob de dados fornecidos pelo participante na lista.|
-|clientContext|String|O contexto de cliente.|
+|metadados|Cadeia de caracteres|Um blob de dados fornecidos pelo participante na lista.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.

@@ -2,12 +2,13 @@
 title: tipo de enum weeklySchedule
 description: Valores possíveis para semanalmente.
 author: tfitzmac
-ms.openlocfilehash: c42a0e596fd30c23ebaf962d3648c8d80d77e0a8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b01c71399016fcee2a5320c04dd20073f7d8673a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358370"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816244"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enum weeklySchedule
 

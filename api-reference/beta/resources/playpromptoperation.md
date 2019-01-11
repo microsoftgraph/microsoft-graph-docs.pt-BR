@@ -2,12 +2,13 @@
 title: tipo de recurso de playPromptOperation
 description: A operação playPrompt para obter o resultado da ação playPrompt.
 author: VinodRavichandran
-ms.openlocfilehash: d63b8f6cfa96706104cd7baaa08475974b12ca13
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: bc18b8f64dedd3fa4d758778bbee37c6bcfd46c6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814375"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso de playPromptOperation
 
@@ -17,12 +18,12 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	            | Tipo                        | Descrição|
+| Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | O contexto de cliente.                                                                |
-| completionReason    | String                      | Os valores possíveis são: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
+| clientContext       | Cadeia de caracteres                      | O contexto de cliente.                                                                |
+| completionReason    | Cadeia de caracteres                      | Os valores possíveis são: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | createdDateTime     | DateTimeOffset              | A hora de início da operação.                                                   |
-| id                  | String                      | Somente leitura.                                                                         |
+| id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | A hora da última ação da operação.                                      |
 | resultInfo          | [resultInfo](resultInfo.md) | As informações de resultado. Somente leitura. Servidor foi gerado.                               |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |

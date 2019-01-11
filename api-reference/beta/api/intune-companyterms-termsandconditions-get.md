@@ -2,12 +2,13 @@
 title: Acessar termsAndConditions
 description: Leia as propriedades e as relações do objeto termsAndConditions.
 author: tfitzmac
-ms.openlocfilehash: f0fe2114f7a4db978141665fb0b9348d80f328c6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 124b4ab425cd7d3a73b0dbd0f96c17ca31ef1c9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324735"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813682"
 ---
 # <a name="get-termsandconditions"></a>Acessar termsAndConditions
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

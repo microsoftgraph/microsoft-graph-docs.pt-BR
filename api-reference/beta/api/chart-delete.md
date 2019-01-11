@@ -2,12 +2,13 @@
 title: 'Chart: delete'
 description: Exclui o objeto de gráfico.
 author: lumine2008
-ms.openlocfilehash: bb92d9f66bfcaed1d72e4d288d7bbc465f9aa2eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7988c515d7b350653460721f9352b617b7853f7f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356543"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813563"
 ---
 # <a name="chart-delete"></a>Chart: delete
 

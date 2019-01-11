@@ -2,12 +2,13 @@
 title: ação de revokeAppleVppLicenses
 description: Revogar todas as licenças do Apple Vpp para um dispositivo
 author: tfitzmac
-ms.openlocfilehash: 03a38821a4ca7c8675dbd97d89b157ae6dd88fd4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 790147376b60708292ff4aaa542876f0ba1b44ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344893"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812127"
 ---
 # <a name="revokeapplevpplicenses-action"></a>ação de revokeAppleVppLicenses
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

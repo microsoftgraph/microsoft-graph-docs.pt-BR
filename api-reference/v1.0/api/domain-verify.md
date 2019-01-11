@@ -2,12 +2,13 @@
 title: 'domain: verify'
 description: Valida a propriedade do domínio.
 author: lleonard-msft
-ms.openlocfilehash: f6a8019d9530691e32ca8a8347d6fe8ff2ac15d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 359a266acf854e4353bce4eda0f65191ca2783c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814830"
 ---
 # <a name="domain-verify"></a>domain: verify
 

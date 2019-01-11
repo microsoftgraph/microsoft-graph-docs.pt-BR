@@ -2,12 +2,13 @@
 title: Canais de lista
 description: Recupere a lista de canais nesse conjunto.
 author: nkramer
-ms.openlocfilehash: 4a43c1abe07ce3c2e6c0f56c83151e5601f2824c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 23763e83f7e2e0d9333d39ebe439f8702b180f71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813521"
 ---
 # <a name="list-channels"></a>Canais de lista
 
@@ -15,7 +16,7 @@ ms.locfileid: "27309349"
 
 Recupere a lista de [canais](../resources/channel.md) nesse conjunto.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

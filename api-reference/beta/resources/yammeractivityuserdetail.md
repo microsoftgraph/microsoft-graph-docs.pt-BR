@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de yammerActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: a1ca33efe8327b1c1e52de25714df9c0bd45ee05
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d7869869466dc785b92db23f8b574eb2e77dd786
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039130"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816398"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>tipo de recurso de yammerActivityUserDetail
 
@@ -15,16 +16,16 @@ ms.locfileid: "27039130"
 | Propriedade          | Tipo              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
-| userPrincipalName | String            |
-| displayName       | String            |
-| userState         | String            |
+| userPrincipalName | Cadeia de caracteres            |
+| displayName       | Cadeia de caracteres            |
+| userState         | Cadeia de caracteres            |
 | stateChangeDate   | Data              |
 | lastActivityDate  | Data              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
 | assignedProducts  | String collection |
-| reportPeriod      | String            |
+| reportPeriod      | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

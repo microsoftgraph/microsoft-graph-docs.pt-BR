@@ -1,12 +1,13 @@
 ---
 title: Lista reservas calendarView
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: fed5cb09985ad00a3233899662148f5c4ce8ecd2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5abf88b4d0f0f5721ba3bcbf467406cfedfbe9f0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033711"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809461"
 ---
 # <a name="list-bookings-calendarview"></a>Lista reservas calendarView
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de dataSharingConsent
 description: Informações de consentimento do compartilhamento de dados.
 author: tfitzmac
-ms.openlocfilehash: 250ad388a5c619a6fd2753d172734145ea720776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e199674606b677e11ac610219b16ab8d5dbf2015
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816363"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso de dataSharingConsent
 
@@ -29,13 +30,13 @@ Informações de consentimento do compartilhamento de dados.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O consentimento de compartilhamento de dados Id|
-|Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
-|termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
-|concedido|Boolean|O estado foram concedido para os consentimento de compartilhamento de dados|
+|id|Cadeia de caracteres|O consentimento de compartilhamento de dados Id|
+|Nome_para_exibição_do_serviço|Cadeia de caracteres|O nome para exibição do fluxo de trabalho de serviço|
+|termsUrl|Cadeia de caracteres|O TermsUrl para os consentimento de compartilhamento de dados|
+|concedido|Booliano|O estado foram concedido para os consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
-|grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
+|grantedByUpn|Cadeia de caracteres|O Upn do usuário que tenha concedido consentimento para esta conta|
+|grantedByUserId|Cadeia de caracteres|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
 
 ## <a name="relationships"></a>Relações
 Nenhum

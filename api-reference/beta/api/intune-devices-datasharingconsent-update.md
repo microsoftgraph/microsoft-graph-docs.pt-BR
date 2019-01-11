@@ -2,12 +2,13 @@
 title: Atualizar dataSharingConsent
 description: Atualize as propriedades de um objeto dataSharingConsent.
 author: tfitzmac
-ms.openlocfilehash: 1d7759def9c11165fca0b646f166ac792c14369e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e2486b6d1900369bae17853be399eccb4fe8740
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317630"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816433"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
@@ -47,13 +48,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O consentimento de compartilhamento de dados Id|
-|Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
-|termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
-|concedido|Boolean|O estado foram concedido para os consentimento de compartilhamento de dados|
+|id|Cadeia de caracteres|O consentimento de compartilhamento de dados Id|
+|Nome_para_exibição_do_serviço|Cadeia de caracteres|O nome para exibição do fluxo de trabalho de serviço|
+|termsUrl|Cadeia de caracteres|O TermsUrl para os consentimento de compartilhamento de dados|
+|concedido|Booliano|O estado foram concedido para os consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
-|grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
+|grantedByUpn|Cadeia de caracteres|O Upn do usuário que tenha concedido consentimento para esta conta|
+|grantedByUserId|Cadeia de caracteres|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
 
 
 

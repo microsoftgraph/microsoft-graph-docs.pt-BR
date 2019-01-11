@@ -2,12 +2,13 @@
 title: Atualizar charttitle
 description: Atualiza as propriedades do objeto charttitle.
 author: lumine2008
-ms.openlocfilehash: c18fcd3f17c0925d2fddc9a69e723ab0cfacb45d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cf75fa7cf4ecca8e272a98915b765e9d56faef25
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810136"
 ---
 # <a name="update-charttitle"></a>Atualizar charttitle
 

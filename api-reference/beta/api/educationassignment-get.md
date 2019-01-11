@@ -2,12 +2,13 @@
 title: Obter educationAssignment
 description: " professores podem ver todas as atribuições em uma classe."
 author: dipakboyed
-ms.openlocfilehash: 384f99a48340e51c6d919b96471f31c9fbff27a6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f10b9e422e99bde6012de75f2c6bb445abc178ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341905"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813486"
 ---
 # <a name="get-educationassignment"></a>Obter educationAssignment
 
@@ -15,7 +16,7 @@ ms.locfileid: "27341905"
 
 Obtenha as propriedades e relacionamentos de uma atribuição. Alunos só podem ver atribuições atribuídas a eles; professores podem ver todas as atribuições em uma classe.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

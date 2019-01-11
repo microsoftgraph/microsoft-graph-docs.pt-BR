@@ -1,12 +1,13 @@
 ---
 title: 'notebook: copyNotebook'
 description: Copia um bloco de anotações para a pasta Blocos de anotações na biblioteca de documentos de destino. Se a pasta não existir, ela será criada.
-ms.openlocfilehash: d3289f4f22a683d82605d01cc0355dba7ca72f29
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 927cdd95a1cf39b27ac18faeeae11ccc56cfff6f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005165"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812765"
 ---
 # <a name="notebook-copynotebook"></a>notebook: copyNotebook
 Copia um bloco de anotações para a pasta Blocos de anotações na biblioteca de documentos de destino. Se a pasta não existir, ela será criada.

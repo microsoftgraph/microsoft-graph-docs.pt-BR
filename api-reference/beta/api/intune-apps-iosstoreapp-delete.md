@@ -2,12 +2,13 @@
 title: Excluir iosStoreApp
 description: Exclui iosStoreApp.
 author: tfitzmac
-ms.openlocfilehash: 9ea03ef5429c486e2ae8e93fbc4f394ef3219771
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25609e0799f2e46b73c14e7ced0967866fa19f22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812891"
 ---
 # <a name="delete-iosstoreapp"></a>Excluir iosStoreApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Excluir managedAppOperation
 description: Exclui managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 32e26f3c71537f75a62cab9c5fe7c9b8a8f8d127
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4efb319ede18a2a38f7d881f3d6be56ef8fbbaac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304267"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816447"
 ---
 # <a name="delete-managedappoperation"></a>Excluir managedAppOperation
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

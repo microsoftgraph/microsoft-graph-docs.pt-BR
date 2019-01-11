@@ -2,12 +2,13 @@
 title: Remover um scopedRoleMember
 description: Remova um membro da função com escopo de uma unidade administrativas.
 author: lleonard-msft
-ms.openlocfilehash: 0c312266b672a93d58723fd39a26cf7bd48bd7f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6490047faa31ac78e2cd918c46e3f3699cb3d19
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809650"
 ---
 # <a name="remove-a-scopedrolemember"></a>Remover um scopedRoleMember
 
@@ -15,7 +16,7 @@ ms.locfileid: "27303000"
 
 Remova um membro da função com escopo de uma unidade administrativas.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

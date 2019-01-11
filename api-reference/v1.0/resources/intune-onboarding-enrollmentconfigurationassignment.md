@@ -2,12 +2,13 @@
 title: Tipo de recurso enrollmentConfigurationAssignment
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: fa509dccf336755bc37c2c64080e6438fcc6bc5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec93693c306b5b45ace461644661398c9c654ce3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340205"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814942"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Tipo de recurso enrollmentConfigurationAssignment
 
@@ -26,7 +27,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Ainda não documentado|
+|id|Cadeia de caracteres|Ainda não documentado|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações

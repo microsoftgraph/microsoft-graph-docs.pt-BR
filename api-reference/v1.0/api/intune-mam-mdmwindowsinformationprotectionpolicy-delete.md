@@ -2,12 +2,13 @@
 title: Excluir mdmWindowsInformationProtectionPolicy
 description: Excluir um mdmWindowsInformationProtectionPolicy.
 author: tfitzmac
-ms.openlocfilehash: 00ef8d9a187d269f90f8a40213cf4dd08c8a72ca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53e3d582ba44a2b5f409b709c677963d3d257d44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353848"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810721"
 ---
 # <a name="delete-mdmwindowsinformationprotectionpolicy"></a>Excluir mdmWindowsInformationProtectionPolicy
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

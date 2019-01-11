@@ -2,12 +2,13 @@
 title: Listar ChartCollection
 description: Recupere uma lista de objetos de gráfico.
 author: lumine2008
-ms.openlocfilehash: 8f89700b6b7f25d437455ef09b7680ab6e9e024b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e81a2dd573e638275763754ffc14b23c7e05a239
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306017"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27813514"
 ---
 # <a name="list-chartcollection"></a>Listar ChartCollection
 
