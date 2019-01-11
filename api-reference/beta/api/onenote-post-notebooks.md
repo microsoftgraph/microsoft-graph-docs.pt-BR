@@ -2,12 +2,13 @@
 title: Criar bloco de anotações
 description: Crie um novo bloco de anotações do OneNote.
 author: Jewan-microsoft
-ms.openlocfilehash: e9290ed51f2ebf30cccaa8ecc82ab95767c9ed5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8ad8f2f68989796c2c041fdd758017044f0c73e9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826583"
 ---
 # <a name="create-notebook"></a>Criar bloco de anotações
 

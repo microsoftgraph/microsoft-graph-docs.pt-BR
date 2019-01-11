@@ -1,12 +1,13 @@
 ---
 title: 'aplicativo: delta'
 description: Get recentemente criado, atualizado ou excluído aplicativos sem precisar realizar uma leitura completa do conjunto de recurso inteiro. Consulte usando Delta consulta para obter detalhes.
-ms.openlocfilehash: 6393e9a1340b2867e37a1f9f350ff50f2ba8a1cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 594b7c05afdc8e3e3c89e8d2fb8e59f25cf4d4ea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034696"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825470"
 ---
 # <a name="application-delta"></a>aplicativo: delta
 

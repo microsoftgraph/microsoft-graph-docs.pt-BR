@@ -1,12 +1,13 @@
 ---
 title: Obter unfamiliarLocationRiskEvent
 description: Recupere as propriedades e relacionamentos de um objeto unfamiliarlocationriskevent.
-ms.openlocfilehash: e75399b79b8f3535741549ce49f5cfcb5ee40077
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d58fc2c5b2c84ae0b43bbc2b83345d6bc6bff700
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827929"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>Obter unfamiliarLocationRiskEvent
 

@@ -1,12 +1,13 @@
 ---
 title: Referência da API REST do Microsoft Graph v1.0
 description: Bem-vindo à referência da API REST do Microsoft Graph para o ponto de extremidade v1.0.
-ms.openlocfilehash: 628b631a877a29dc416671c4a0c5f9a5c0b849ec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006948"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829069"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 

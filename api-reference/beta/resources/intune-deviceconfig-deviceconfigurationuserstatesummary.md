@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceConfigurationUserStateSummary
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 6a17e6cfae7c0af987a9d7333614817622322dc7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5eb6ebc29b2482628daf1879a55d00048621b314
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830824"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>tipo de recurso de deviceConfigurationUserStateSummary
 
@@ -25,7 +26,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |unknownUserCount|Int32|Número de usuários desconhecidos|
 |notApplicableUserCount|Int32|Número de usuários não aplicáveis|
 |compliantUserCount|Int32|Número de usuários compatíveis|

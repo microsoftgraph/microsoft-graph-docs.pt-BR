@@ -2,12 +2,13 @@
 title: ação de extendFeatureUpdatesPause
 description: Estenda o recurso atualizações pausar para uma atualização do Windows para toque de negócios.
 author: tfitzmac
-ms.openlocfilehash: 24e1e2101b740d3c33e92ab52c40958a99d56078
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60f370a62095b741c976d5cd6ad16b5b3f8beb4b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812114"
 ---
 # <a name="extendfeatureupdatespause-action"></a>ação de extendFeatureUpdatesPause
 
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

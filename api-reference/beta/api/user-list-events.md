@@ -1,12 +1,13 @@
 ---
 title: Listar eventos
 description: 'Obtenha uma lista de objetos de eventos de calendário de padrão do usuário ou '
-ms.openlocfilehash: bab664d714a816b7c303e6a2f20cea4f583a3a50
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 3d4938d866d4dc2d0f5c5fad65b40085f86b35d8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041079"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825953"
 ---
 # <a name="list-events"></a>Listar eventos
 

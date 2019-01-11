@@ -2,12 +2,13 @@
 title: tipo de recurso contactFolder
 description: Uma pasta que contém contatos.
 author: angelgolfer-ms
-ms.openlocfilehash: 93b4586272e3e762cf182bddc489326503411c84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87276ced9a1b333eb502feab122bca88e86b5349
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810154"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
 
@@ -39,9 +40,9 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da pasta.|
+|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
 |id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
-|parentFolderId|String|A ID da pasta pai da pasta.|
+|parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
 |wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. No momento `contacts` é a única pasta Contatos reconhecidas.|
 
 ## <a name="relationships"></a>Relações

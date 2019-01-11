@@ -1,12 +1,13 @@
 ---
 title: Permissions
 description: 'Remova o aplicativo de catálogo de aplicativos da sua organização (o catálogo de aplicativos do inquilino). '
-ms.openlocfilehash: c3ee6433f38cfd52548af5ac27f3e3c9891af8d1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ba932f8d87691cd57e26e5c26904936ce39ba55f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040821"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830209"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Remova um aplicativo de catálogo de aplicativos da sua organização
 

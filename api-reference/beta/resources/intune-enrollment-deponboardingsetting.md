@@ -2,12 +2,13 @@
 title: tipo de recurso de depOnboardingSetting
 description: O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onboarded para Intune. A instância do serviço onboarded gerencia um Token Apple usado para sincronizar dados entre Apple e Intune.
 author: tfitzmac
-ms.openlocfilehash: ac38b1716dd156c95fda9cee8fb76a9f75921b0f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56f49ce8635120b06344abe13376271a3eb0a796
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341157"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827990"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso de depOnboardingSetting
 
@@ -24,7 +25,7 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onb
 |[Criar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Crie um novo objeto de [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
 |[Excluir depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Nenhum|Exclui um [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Atualizar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Atualize as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Obtenha uma chave pública para usar para criptografar o programa de inscrição do dispositivo Apple token|
+|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|Cadeia de caracteres|Obtenha uma chave pública para usar para criptografar o programa de inscrição do dispositivo Apple token|
 |[ação de uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Nenhum|Carrega um novo token do programa de inscrição do dispositivo|
 |[ação de syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Nenhum|Sincroniza entre Intune e o programa de inscrição do dispositivo Apple|
 |[ação de shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Nenhum|Ainda não documentado|
@@ -39,13 +40,13 @@ O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onb
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Boolean|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Booliano|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Nome amigável para o Token de Dep|
+|tokenName|Cadeia de caracteres|Nome amigável para o Token de Dep|
 |syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
-|defaultProfileDisplayName|String|Obtém sincronizados contagem de dispositivo|
-|dataSharingConsentGranted|Boolean|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+|defaultProfileDisplayName|Cadeia de caracteres|Obtém sincronizados contagem de dispositivo|
+|dataSharingConsentGranted|Booliano|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

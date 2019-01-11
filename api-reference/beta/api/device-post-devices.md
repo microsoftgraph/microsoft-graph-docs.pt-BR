@@ -2,19 +2,20 @@
 title: Criar dispositivo
 description: Crie um novo dispositivo.
 author: tfitzmac
-ms.openlocfilehash: e2b52c67ee34df9a609fbb53972ee8b859e6889f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4749b8cbd40a05de4d7b6c43b5cef7907d345add
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336138"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833254"
 ---
 # <a name="create-device"></a>Criar dispositivo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Crie um novo dispositivo.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

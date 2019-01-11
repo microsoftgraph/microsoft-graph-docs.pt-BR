@@ -2,12 +2,13 @@
 title: Atualizar Sessão
 description: 'Use esta API para atualizar uma sessão de pasta de trabalho existente. '
 author: lumine2008
-ms.openlocfilehash: 2ff0658286c3b220729761b4723953859b3bdf46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 686325dd106af01d1f8f3fcf94b5bdb9ad4b000f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343796"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831217"
 ---
 # <a name="refresh-session"></a>Atualizar Sessão
 

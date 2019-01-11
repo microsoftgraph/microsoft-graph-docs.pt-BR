@@ -2,12 +2,13 @@
 title: tipo de enum windowsAutopilotProfileAssignmentDetailedStatus
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: aa8d5e32720f7c2d6666085edd554f9dd7599b01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b8aef05c73fdedec5378a2b2ba5e40e4d52663c4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357803"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827262"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>tipo de enum windowsAutopilotProfileAssignmentDetailedStatus
 
@@ -19,7 +20,7 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhuma atribuição detalhadas de status|
+|nenhum|0|Nenhuma atribuição detalhadas de status|
 |hardwareRequirementsNotMet|1|Requisitos de hardware não forem atendidos. Isso pode acontecer se um perfil autoimplantação do piloto automático for atribuído a um dispositivo sem TPM 2.0.|
 
 

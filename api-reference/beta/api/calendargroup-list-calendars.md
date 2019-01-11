@@ -2,12 +2,13 @@
 title: Listar calendários
 description: Recupera uma lista de calendários que pertencem a um grupo de calendários.
 author: angelgolfer-ms
-ms.openlocfilehash: a6cf89b6c5670659d5864496118d125d3c60a903
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ffa22a25fcc5c42ca9a61ea09a5cc68d2f3351b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27814200"
 ---
 # <a name="list-calendars"></a>Listar calendários
 

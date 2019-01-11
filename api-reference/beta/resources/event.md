@@ -2,12 +2,13 @@
 title: tipo de recurso de evento
 description: Um evento em um calendário.
 author: angelgolfer-ms
-ms.openlocfilehash: e60b070ab6b02ca0373d4aebcef4202f42a4f1a5
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b1986a6d463e1750fea05144e5a8520c62e5a94a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826758"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -101,7 +102,7 @@ Veja a seguir uma representação JSON do recurso
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data e a hora em que o evento termina.|
 |hasAttachments|Booliano|Defina como true se o evento tiver anexos.|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 |isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 |isCancelled|Booliano|Defina como true se o evento tiver sido cancelado.|
@@ -123,7 +124,7 @@ Veja a seguir uma representação JSON do recurso
 |seriesMasterId|String|A ID para a série item mestre recorrente, se esse evento for parte de uma série recorrente.|
 |showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[DateTimeTimeZone](datetimetimezone.md)|A hora de início do evento.|
-|subject|String|O texto da linha de assunto do evento.|
+|subject|Cadeia de caracteres|O texto da linha de assunto do evento.|
 |type|String|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura|
 |UID|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. **Observação:** dessa propriedade tem a mesma finalidade como o `iCalUid` propriedade no [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0) no ponto de extremidade v 1.0, mas não é garantido que têm o mesmo valor.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|

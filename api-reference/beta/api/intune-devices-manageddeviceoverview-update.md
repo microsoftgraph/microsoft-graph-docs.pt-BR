@@ -2,12 +2,13 @@
 title: Atualizar managedDeviceOverview
 description: Atualizar as propriedades de um objeto managedDeviceOverview.
 author: tfitzmac
-ms.openlocfilehash: 004ebc370c0223b807c722bd40ce53021379e00d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5116d2d1bdd3b1b71252db528e9d0f476a219d42
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822523"
 ---
 # <a name="update-manageddeviceoverview"></a>Atualizar managedDeviceOverview
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/managedDeviceOverview
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).

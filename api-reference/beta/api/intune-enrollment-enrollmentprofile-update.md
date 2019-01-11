@@ -2,12 +2,13 @@
 title: Atualizar enrollmentProfile
 description: Atualize as propriedades de um objeto enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822593"
 ---
 # <a name="update-enrollmentprofile"></a>Atualizar enrollmentProfile
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .
@@ -48,11 +49,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|displayName|String|Nome do perfil|
-|description|String|Descrição do perfil|
-|requiresUserAuthentication|Boolean|Indica se o perfil exige autenticação do usuário|
-|configurationEndpointUrl|String|Url de ponto de extremidade de configuração a ser usado para registro|
-|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
+|displayName|Cadeia de caracteres|Nome do perfil|
+|description|Cadeia de caracteres|Descrição do perfil|
+|requiresUserAuthentication|Booliano|Indica se o perfil exige autenticação do usuário|
+|configurationEndpointUrl|Cadeia de caracteres|Url de ponto de extremidade de configuração a ser usado para registro|
+|enableAuthenticationViaCompanyPortal|Booliano|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
 
 
 

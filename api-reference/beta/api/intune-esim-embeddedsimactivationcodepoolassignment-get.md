@@ -2,12 +2,13 @@
 title: Obter embeddedSIMActivationCodePoolAssignment
 description: Leia as propriedades e os relacionamentos do objeto embeddedSIMActivationCodePoolAssignment.
 author: tfitzmac
-ms.openlocfilehash: 7663b0f5c57359e3fa9f1f0bff1c746914fae49c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1bb76adcb48a3cf6d31ffd3921b1316bc9c5a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321151"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827906"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>Obter embeddedSIMActivationCodePoolAssignment
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

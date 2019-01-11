@@ -2,12 +2,13 @@
 title: Tipo de recurso outlookItem
 description: Veja a seguir uma representação JSON do recurso
 author: angelgolfer-ms
-ms.openlocfilehash: 750239156e6f4e2874783ae160a7018fb58e259d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6911eb03187e068efb0df805c836b9ac90525402
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332512"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824567"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -39,9 +40,9 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categories|String collection|As categorias associadas ao item|
-|changeKey|String|Identifica a versão do item. Toda vez que o item for alterado, changeKey também é alterado. Isso permite que o Exchange para aplicar as alterações para a versão correta do objeto. Somente leitura.|
+|changeKey|Cadeia de caracteres|Identifica a versão do item. Toda vez que o item for alterado, changeKey também é alterado. Isso permite que o Exchange para aplicar as alterações para a versão correta do objeto. Somente leitura.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relações

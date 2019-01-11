@@ -2,12 +2,13 @@
 title: Obter windows10PkcsCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto windows10PkcsCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 4c731d5181e8a7fcb4f92b8d0fb44c93329344d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4794f727558a869c678a4a36b0b038eaf19240e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822453"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>Obter windows10PkcsCertificateProfile
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

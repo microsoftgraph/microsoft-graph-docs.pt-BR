@@ -2,12 +2,13 @@
 title: Atualizar chartgridlines
 description: Atualiza as propriedades do objeto chartgridlines.
 author: lumine2008
-ms.openlocfilehash: db55f639cbe95f80929467b0feefd260a64fc596
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6bba20f1bcf8a4cdccf56e7d390b5cf7c319fe97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346456"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826058"
 ---
 # <a name="update-chartgridlines"></a>Atualizar chartgridlines
 

@@ -2,12 +2,13 @@
 title: 'TableColumn: delete'
 description: Exclui a coluna da tabela.
 author: lumine2008
-ms.openlocfilehash: 8671a2ba6c37105e0746f12acbad50674ada5274
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96cd352df54decf5b86e63de89c6ab42819055a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826569"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 

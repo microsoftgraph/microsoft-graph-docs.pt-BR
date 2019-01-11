@@ -1,12 +1,13 @@
 ---
 title: Listar planos
 description: Recupere uma lista de objetos **plannerPlan** pertencentes a um objeto group.
-ms.openlocfilehash: f89ca21fb293f8d395a67f5132a8e962d058d4cb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: aa8466231ef580dabfb83aaaf4a0368b548495f1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005951"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815383"
 ---
 # <a name="list-plans"></a>Listar planos
 

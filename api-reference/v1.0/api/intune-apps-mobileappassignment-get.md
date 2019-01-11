@@ -2,12 +2,13 @@
 title: Acessar mobileAppAssignment
 description: Leia as propriedades e as relações do objeto mobileAppAssignment.
 author: tfitzmac
-ms.openlocfilehash: ca8905962126d53b476bde8d8322024fa8cbb3b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 790b6e6a8c0f970c7f4b0aa13ed739cec585d9d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831119"
 ---
 # <a name="get-mobileappassignment"></a>Acessar mobileAppAssignment
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

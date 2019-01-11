@@ -1,12 +1,13 @@
 ---
 title: Listar registeredOwners
 description: Recupera uma lista de usuários que são proprietários registrados do dispositivo. Um proprietário registrado é o usuário que se associou ao dispositivo na nuvem ou que registrou o dispositivo pessoal. O proprietário registrado é definido no momento do registro. Atualmente, só pode haver um proprietário.
-ms.openlocfilehash: 9b2acee14598c631c7f782391cb22a7917685e02
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a0b4fac3ef36ac3137307186ab736b812e5f0274
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037792"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833338"
 ---
 # <a name="list-registeredowners"></a>Listar registeredOwners
 

@@ -2,12 +2,13 @@
 title: Listar targetedManagedAppProtections
 description: Listar propriedades e relações dos objetos targetedManagedAppProtection.
 author: tfitzmac
-ms.openlocfilehash: 8ba4564e9a1995356d7210c039394df30d040446
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48fef12c16e01c3f05167abb21e7829c83c57b3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825463"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Listar targetedManagedAppProtections
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

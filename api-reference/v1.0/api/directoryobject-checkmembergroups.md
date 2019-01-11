@@ -1,12 +1,13 @@
 ---
 title: Verificar grupos de membros
 description: Verificar a associação em uma lista especificada de grupos e retorna a partir dessa lista desses grupos
-ms.openlocfilehash: 174531d11944a98c31d56b113a3221b75bac18e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 29e762974d5dbfa13a18722b87812fd07dcfbf9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825379"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 

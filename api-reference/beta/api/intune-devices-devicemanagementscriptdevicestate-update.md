@@ -2,12 +2,13 @@
 title: Atualizar deviceManagementScriptDeviceState
 description: Atualize as propriedades de um objeto deviceManagementScriptDeviceState.
 author: tfitzmac
-ms.openlocfilehash: a5dee56ac260642d1a0c105d62ee26499d7276df
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 15c9a951d63f99f02af5fc676176237323cc4864
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827339"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Atualizar deviceManagementScriptDeviceState
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
@@ -48,9 +49,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado de execução mais recente do script de gerenciamento de dispositivo. Os valores possíveis são: `unknown`, `success`, `fail`.|
-|resultMessage|String|Detalhes da saída de execução.|
+|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivo executa.|
 |errorCode|Int32|Código de erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|

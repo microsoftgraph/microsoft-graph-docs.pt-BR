@@ -2,12 +2,13 @@
 title: Obter a mensagem de canal
 description: Recupere uma única mensagem (sem respectivas respostas) em um canal de uma equipe.
 author: nkramer
-ms.openlocfilehash: 2da10f4151cc1ddaaa1bddfe376f4035a6baa180
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 202e2c341e58175e1807e1aa47c120f6c829a7c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829117"
 ---
 # <a name="get-channel-message"></a>Obter a mensagem de canal
 
@@ -15,7 +16,7 @@ ms.locfileid: "27309223"
 
 Recupere uma única [mensagem](../resources/chatmessage.md) (sem respectivas respostas) em um [canal](../resources/channel.md) de uma equipe.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|

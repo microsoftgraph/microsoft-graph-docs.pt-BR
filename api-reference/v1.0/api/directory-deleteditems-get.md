@@ -2,12 +2,13 @@
 title: Obter item excluído
 description: Recupera as propriedades de um item recentemente excluído em itens excluídos.
 author: lleonard-msft
-ms.openlocfilehash: e3a42fffba9a447661010ac9f6f5cff19df880c1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 928ec2c303567afc7edc8e50b52f3a9ac327af80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353708"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831336"
 ---
 # <a name="get-deleted-item"></a>Obter item excluído
 

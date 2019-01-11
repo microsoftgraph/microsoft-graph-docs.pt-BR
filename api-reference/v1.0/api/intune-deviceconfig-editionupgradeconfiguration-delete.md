@@ -2,12 +2,13 @@
 title: Excluir editionUpgradeConfiguration
 description: Exclui editionUpgradeConfiguration.
 author: tfitzmac
-ms.openlocfilehash: fdb8319e5e14857be2fc06721cf991d913ee6eb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5cb91c0fe87f79ef814d0bd047964134da3c5a29
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340394"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805324"
 ---
 # <a name="delete-editionupgradeconfiguration"></a>Excluir editionUpgradeConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

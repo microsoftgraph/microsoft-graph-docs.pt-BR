@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso dateTimeTimeZone
 description: Descreve a data, a hora e o fuso horário de um ponto no tempo.
-ms.openlocfilehash: 3ce02fbf82dabbbe354b2672cfd950812ea0bd32
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003857"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827325"
 ---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
 

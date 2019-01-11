@@ -2,12 +2,13 @@
 title: Excluir androidWorkProfileNineWorkEasConfiguration
 description: Exclui um androidWorkProfileNineWorkEasConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f145128970cda0b8193a71bbb0f8075ae1103c43
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b7c341940a8c60edf81c89e77ffc592b66b7aed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360218"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832715"
 ---
 # <a name="delete-androidworkprofilenineworkeasconfiguration"></a>Excluir androidWorkProfileNineWorkEasConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

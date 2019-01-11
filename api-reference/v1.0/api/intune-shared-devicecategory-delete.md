@@ -2,12 +2,13 @@
 title: Excluir deviceCategory
 description: Exclui deviceCategory.
 author: tfitzmac
-ms.openlocfilehash: 04c5d2f0c062e2cd5b5c066415e26273ef4d9231
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 43ceef30f28438c293ed8983ffc4748a4b54a2b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331644"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811148"
 ---
 # <a name="delete-devicecategory"></a>Excluir deviceCategory
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

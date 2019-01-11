@@ -2,12 +2,13 @@
 title: Listar deviceConfigurationUserStatuses
 description: Listar propriedades e relações dos objetos deviceConfigurationUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 3f8c1910cfc06a40b477f8a4010caaf167b060a3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5da16c1d1495359c138fc34491f100955fa72c33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827962"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>Listar deviceConfigurationUserStatuses
 
@@ -46,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

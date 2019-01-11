@@ -1,12 +1,13 @@
 ---
 title: Listar buckets
 description: Recupere uma lista de objetos **plannerbucket**.
-ms.openlocfilehash: 8010a8ac283aa93f1a00ff505143ec6f6eec76c4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea467d4a8aaa70eb298156c786c935608e21b440
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826198"
 ---
 # <a name="list-buckets"></a>Listar buckets
 

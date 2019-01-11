@@ -2,12 +2,13 @@
 title: função managedDeviceEnrollmentFailureDetails
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: f9dc6f0a1a0a211de1cbfb1443dc4393796bd2d4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6902a10d7558426d1547bfb590922c225414ad54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337580"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827332"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>função managedDeviceEnrollmentFailureDetails
 
@@ -39,15 +40,15 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|filter|String|Ainda não documentado|
-|skipToken|String|Ainda não documentado|
+|filter|Cadeia de caracteres|Ainda não documentado|
+|skipToken|Cadeia de caracteres|Ainda não documentado|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
 

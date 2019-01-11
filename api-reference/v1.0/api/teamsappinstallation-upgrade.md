@@ -2,12 +2,13 @@
 title: Um aplicativo em uma equipe de atualização
 description: Atualiza uma instalação de aplicativo em uma equipe
 author: nkramer
-ms.openlocfilehash: 7f3787d6c22f6def80c8d36950ae3beadfd36b90
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36ddc41e6c15def1c5570fc49c3b151c87a63421
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826597"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Um aplicativo em uma equipe de atualização
 
@@ -15,7 +16,7 @@ ms.locfileid: "27311925"
 
 Atualiza uma [instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

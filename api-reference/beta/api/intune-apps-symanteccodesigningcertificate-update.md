@@ -2,12 +2,13 @@
 title: Atualizar symantecCodeSigningCertificate
 description: Atualize as propriedades de um objeto symantecCodeSigningCertificate.
 author: tfitzmac
-ms.openlocfilehash: fe3580f0160c50c2580580ff3515a7842ccf610d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d95627e9a2c678097be0c3cb818a03906e8a06f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318057"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824735"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/symantecCodeSigningCertificate
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .
@@ -50,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |id|Cadeia de caracteres|A chave da entidade.|
 |content|Binária|O certificado de assinatura de código do Windows Symantec no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status de Cert provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
-|password|String|A senha necessária para o arquivo. pfx.|
+|password|Cadeia de caracteres|A senha necessária para o arquivo. pfx.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
-|subject|String|O valor de assunto para o cert.|
-|issuerName|String|O nome do emissor para o cert.|
-|emissor|String|O valor de emissor para o cert.|
+|subject|Cadeia de caracteres|O valor de assunto para o cert.|
+|issuerName|Cadeia de caracteres|O nome do emissor para o cert.|
+|emissor|Cadeia de caracteres|O valor de emissor para o cert.|
 |expirationDateTime|DateTimeOffset|A data de validade do Cert.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de assinatura de código padrão como Symantec Cert.|
 

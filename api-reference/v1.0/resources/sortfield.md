@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso SortField
 description: Representa uma condição em uma operação de classificação.
-ms.openlocfilehash: b6fc87e03b63a3e1cc34beef61a7538a913a118a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2c1b9a272fd024455d1297c5f59ca7684283e1a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006261"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825967"
 ---
 # <a name="sortfield-resource-type"></a>Tipo de recurso SortField
 
@@ -18,7 +19,7 @@ Representa uma condição em uma operação de classificação.
 |ascending|booliano|Indica se a classificação é feita de forma crescente.|
 |color|string|Representa a cor que é o destino da condição se a classificação estiver na cor da fonte ou da célula.|
 |dataOption|string|Representa as opções de classificação adicionais para esse campo. Os valores possíveis são: `Normal`, `TextAsNumber`.|
-|key|inteiro|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
+|key|int|Representa a coluna (ou linha, dependendo da orientação da classificação) em que a condição está. Representado como um deslocamento da primeira coluna (ou linha).|
 |sortOn|string|Representa o tipo de classificação dessa condição. Os valores possíveis são: `Value`, `CellColor`, `FontColor`, `Icon`.|
 |ícone|[WorkbookIcon](icon.md)|Representa o ícone que é o destino da condição se a classificação está no ícone da célula.|
 

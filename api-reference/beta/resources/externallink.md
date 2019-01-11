@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso externalLink
 description: Uma url que abre uma página do OneNote ou o bloco de anotações.
-ms.openlocfilehash: 8f0af6b3bfd327dff0d228ea181443d742332d0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ce832d5bd661408a55fdcde24f03b3955880a1ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036560"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828242"
 ---
 # <a name="externallink-resource-type"></a>Tipo de recurso externalLink
 

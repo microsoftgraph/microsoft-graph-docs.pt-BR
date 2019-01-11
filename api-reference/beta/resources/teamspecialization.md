@@ -2,12 +2,13 @@
 title: tipo de enum teamSpecialization
 description: Descreve o caso de uso especial para uma equipe.
 author: nkramer
-ms.openlocfilehash: 2e17f03374457ff8ddd9d3941eb56bebbec2dde6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 18e1993272a94df989066cf95d01b6a4f66fd8d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826037"
 ---
 # <a name="teamspecialization-enum-type"></a>tipo de enum teamSpecialization
 
@@ -19,5 +20,5 @@ Indica se a [equipe](../resources/team.md) destina-se de um caso de uso específ
 
 | Membro             | Valor | Descrição                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| none               | 0     | Tipo de uma equipe que dá a experiência de equipe padrão padrão.          |
+| nenhum               | 0     | Tipo de uma equipe que dá a experiência de equipe padrão padrão.          |
 | unknownFutureValue | 7     | Sentinel valor reservado como um espaço reservado para expansão futura do enum. |

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de educationResource
 description: Uma superclasse para todos os objetos de recursos no sistema. Um recurso é associado a uma **atribuição** e/ou o **envio**, que representa o objeto de aprendizado que está sendo
-ms.openlocfilehash: b7e64a946992bb0b43c5bfe50e8d92b5f7176856
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 0608f3c0fb84f05404032bed611f0af887e7bb67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038549"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827556"
 ---
 # <a name="educationresource-resource-type"></a>tipo de recurso de educationResource
 
@@ -22,7 +23,7 @@ Este recurso armazena as propriedades comuns em todos os tipos de recurso.
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Quem criou o recurso.|
 |createdDateTime|Momento em que o recurso foi criado.  DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|displayName|String|Exibe o nome do recurso.|
+|displayName|Cadeia de caracteres|Exibe o nome do recurso.|
 |lastModifiedBy|[identitySet](identityset.md)|Quem foi o último usuário para modificar o recurso.|
 |lastModifiedDateTime|DateTimeOffset|Momento no tempo de última modificação do recurso.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 

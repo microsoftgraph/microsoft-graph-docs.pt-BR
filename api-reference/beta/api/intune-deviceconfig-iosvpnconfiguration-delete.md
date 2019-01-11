@@ -2,12 +2,13 @@
 title: Excluir iosVpnConfiguration
 description: Exclui um iosVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5cc3cdb344426122c6a8daa1066c72af0d44cbe1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c597b0006913bc3edd8b53c874e54d22c47ccba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832260"
 ---
 # <a name="delete-iosvpnconfiguration"></a>Excluir iosVpnConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

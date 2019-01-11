@@ -1,12 +1,13 @@
 ---
 title: Excluir anexo
 description: Exclua um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
-ms.openlocfilehash: dbabde6b1783e477e3a15db3ea4d138be6e41b12
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: c8af55d2237dd481e89b888d9bc025e6a1093695
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771783"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824938"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -14,7 +15,7 @@ ms.locfileid: "27771783"
 
 Exclua um anexo de um [evento](../resources/event.md)do calendário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

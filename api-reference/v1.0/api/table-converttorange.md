@@ -2,12 +2,13 @@
 title: 'Table: convertToRange'
 description: Converte a tabela em um intervalo de células normal. Todos os dados são preservados.
 author: lumine2008
-ms.openlocfilehash: 4685d29bf84f7e30dc8e289ff46c4293e5553421
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4528daab7cfde480e93d75cdcb5f9a969f583144
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825372"
 ---
 # <a name="table-converttorange"></a>Table: convertToRange
 

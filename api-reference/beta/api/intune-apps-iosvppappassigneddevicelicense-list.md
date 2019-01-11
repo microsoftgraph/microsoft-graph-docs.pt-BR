@@ -2,12 +2,13 @@
 title: Lista iosVppAppAssignedDeviceLicenses
 description: Lista as propriedades e os relacionamentos dos objetos iosVppAppAssignedDeviceLicense.
 author: tfitzmac
-ms.openlocfilehash: a47028c3f19e7b152e38ff9b2488a81da0d98220
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 611b4c317b3d2edb03ee89c272be9b4e2027d7fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316265"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833289"
 ---
 # <a name="list-iosvppappassigneddevicelicenses"></a>Lista iosVppAppAssignedDeviceLicenses
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/assi
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

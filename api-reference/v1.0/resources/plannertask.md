@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso plannerTask
 description: O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma tarefa de Planejador está contida em uma plano e pode ser atribuída a um bucket em um plano. Cada objeto de tarefa tem um objeto details que pode conter mais informações sobre a tarefa. Confira mais informações sobre as relações entre grupo, plano e tarefa na visão geral.
-ms.openlocfilehash: 75fedd01913d89121912b336420d4cc063165250
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: a4c9ffc9c3bcd3e4a7b9df3348cdfe355a648a8d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006738"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832253"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -37,7 +38,7 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 |createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
-|id|String|Somente leitura. Identificação da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner-identifiers-disclaimer.md) é feita no serviço.|
+|id|Cadeia de caracteres|Somente leitura. Identificação da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner-identifiers-disclaimer.md) é feita no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |planId|String|ID do plano ao qual a tarefa pertence.|

@@ -2,12 +2,13 @@
 title: tipo de enum localSecurityOptionsMinimumSessionSecurity
 description: Valores possíveis para LocalSecurityOptionsMinimumSessionSecurity
 author: tfitzmac
-ms.openlocfilehash: 5feabd9c84ec42f55bb45b952be5af834fd84498
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb6912e7d3bba42364849165cceb28050ddacfae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350628"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833233"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>tipo de enum localSecurityOptionsMinimumSessionSecurity
 
@@ -19,7 +20,7 @@ Valores possíveis para LocalSecurityOptionsMinimumSessionSecurity
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Enviar respostas LM e NTLM|
+|nenhum|0|Enviar respostas LM e NTLM|
 |requireNtmlV2SessionSecurity|1|Enviar a segurança da sessão LM e o uso de NTLM NTLMv2 se negociado|
 |require128BitEncryption|2|Enviar respostas LM & NTLM somente|
 |ntlmV2And128BitEncryption|3|Enviar respostas LM & NTLMv2 somente|

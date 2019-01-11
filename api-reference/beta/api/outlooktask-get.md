@@ -1,12 +1,13 @@
 ---
 title: Obter outlookTask
 description: Obtenha as propriedades e relacionamentos de uma tarefa do Outlook na caixa de correio do usuário.
-ms.openlocfilehash: f528ccbf3fa27b6c4cd6226e63f1feedab1954e4
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: f93bc46a1bbe3f7a6c145458606174b6e3a13f1c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822222"
 ---
 # <a name="get-outlooktask"></a>Obter outlookTask
 
@@ -16,7 +17,7 @@ Obtenha as propriedades e relacionamentos de uma tarefa do Outlook na caixa de c
 
 Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

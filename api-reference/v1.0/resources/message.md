@@ -2,12 +2,13 @@
 title: tipo de recurso de mensagem
 description: Uma mensagem em uma mailFolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 57183290f872f56684e8b629b83bb31151bff134
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: d7519c98a9a9fd35ed5b1bdcdd85da5e876e5265
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748574"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833016"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de synchronizationTemplate
 description: " qualquer pessoa pode recuperar o modelo para ver as configurações padrão, incluindo o esquema de sincronização."
-ms.openlocfilehash: 90850ad43fdd14fc38ff6ae8cfa97f47806a289d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e98d3fa16d0a80ac9353aaa75200d8cb24d3e904
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833072"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>tipo de recurso de synchronizationTemplate
 
@@ -31,12 +32,12 @@ Você pode fornecer vários modelos para um aplicativo e designar um modelo padr
 
 | Propriedade      | Tipo                      | Descrição                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |String                     |Identificador exclusivo do modelo.|
+|id             |Cadeia de caracteres                     |Identificador exclusivo do modelo.|
 |ApplicationId  |Cadeia de caracteres                     |Identificador do aplicativo que pertence este modelo.|
 |Padrão.        |Booliano                    |`true`Se esse modelo é recomendado para ser o padrão para o aplicativo.|
 |description    |String                     |Descrição do modelo.|
-|detectáveis   |String                     |`true`Se este modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
-|factoryTag     |String                     |Uma das marcas de fábrica conhecido suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização qual implementação usar durante o processamento de trabalhos com base nesse modelo.|
+|detectáveis   |Cadeia de caracteres                     |`true`Se este modelo deve aparecer na coleção de modelos disponíveis para a instância do aplicativo (entidade de serviço).|
+|factoryTag     |Cadeia de caracteres                     |Uma das marcas de fábrica conhecido suportadas pelo mecanismo de sincronização. O **factoryTag** informa ao mecanismo de sincronização qual implementação usar durante o processamento de trabalhos com base nesse modelo.|
 |metadados       |coleção metadataEntry   |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
 
 ## <a name="relationships"></a>Relações

@@ -1,12 +1,13 @@
 ---
 title: Obter FormatProtection
 description: Recupere as propriedades e os relacionamentos do objeto formatprotection.
-ms.openlocfilehash: 4c586d070b506dd0ab10db8291863e051137f840
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd6d4ef53555d2c6eb8c9232d7a08ea7579e20e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005374"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831154"
 ---
 # <a name="get-formatprotection"></a>Obter FormatProtection
 

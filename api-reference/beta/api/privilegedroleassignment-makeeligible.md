@@ -1,12 +1,13 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
 description: Fazer a atribuição de função como qualificado. Se a atribuição de função já estiver elegível antes da chamada, ele não faz nada. Se a atribuição de função é permanente e o solicitante for diferente do usuário de destino, a atribuição de função se tornará qualificada e a função será desativada para o usuário de destino. Se o solicitante é o usuário de destino e a função é administrador de segurança ou administrador com privilégios de função, a função será ativada com a data de validade do padrão.
-ms.openlocfilehash: f39f508c7aeae4d85db92b43f406cd3497533e38
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033775"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822586"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 

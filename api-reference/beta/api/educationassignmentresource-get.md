@@ -2,19 +2,20 @@
 title: Obter educationAssignmentResource
 description: 'Obtenha as propriedades de um recurso específico em uma atribuição.  '
 author: dipakboyed
-ms.openlocfilehash: 25c448f3247631c9129a837bd00842588bf152d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da96f7476e6feda2f27b0653393de8c2eaac3022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358811"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27832953"
 ---
 # <a name="get-educationassignmentresource"></a>Obter educationAssignmentResource
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Obtenha as propriedades de um recurso específico em uma atribuição.  
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

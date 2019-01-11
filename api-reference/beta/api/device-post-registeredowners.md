@@ -2,12 +2,13 @@
 title: Criar registeredOwner
 description: Adiciona um usuário como proprietário registrado do dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 39cbd53b634b3f1388a27acf81e80ca2a7953693
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e1c8151f43ea7c4eb8e1235727a6b9f40f193853
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824259"
 ---
 # <a name="create-registeredowner"></a>Criar registeredOwner
 

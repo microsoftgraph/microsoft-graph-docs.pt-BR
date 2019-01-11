@@ -2,12 +2,13 @@
 title: tipo de enum folderProtectionType
 description: Valores possíveis de proteção de pasta
 author: tfitzmac
-ms.openlocfilehash: 93df62da9bb5d849cba86b52384f45bfe7bd760f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 435f3ea01f5a8ffc3c4cb54034d415d54732db5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350600"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826128"
 ---
 # <a name="folderprotectiontype-enum-type"></a>tipo de enum folderProtectionType
 

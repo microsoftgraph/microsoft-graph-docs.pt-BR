@@ -1,12 +1,13 @@
 ---
 title: Lista de aplicativos
 description: Recupere uma lista de objetos de aplicativos associados a connectorGroup.
-ms.openlocfilehash: 11d81454677b60e2402c4d1fe32aae5c974c1afc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f23bd18d646233fd932c10e5f2fe4d8bda1732d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036934"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833374"
 ---
 # <a name="list-applications"></a>Lista de aplicativos
 

@@ -2,12 +2,13 @@
 title: Listar managedEBookAssignments
 description: Listar propriedades e relações dos objetos managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: bb4f824c22a8d72a2b083606b8c9367bd15579a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 141d01a21a09f0706f5689cae527db072b9fb6a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303532"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825400"
 ---
 # <a name="list-managedebookassignments"></a>Listar managedEBookAssignments
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

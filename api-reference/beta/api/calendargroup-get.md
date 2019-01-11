@@ -2,12 +2,13 @@
 title: Obter calendarGroup
 description: Recupera as propriedades e os relacionamentos de um objeto de grupo de calendários.
 author: angelgolfer-ms
-ms.openlocfilehash: 28d59eeabbcf5dce70fc5ef5814a706d7955fa2a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 399dcccbb264b8bd19e72b5e887236269581256a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824875"
 ---
 # <a name="get-calendargroup"></a>Obter calendarGroup
 

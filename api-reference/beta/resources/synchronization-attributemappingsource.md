@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de attributeMappingSource
 description: 'Define como um valor deve ser extraída (ou transformados) do objeto de origem. Por exemplo, pode ser um valor simple tirado de um determinado atributo no objeto de origem, ou pode ser uma expressão mais complexa de cadeia de caracteres concatenação/extração/substituição com base em vários atributos de fonte. '
-ms.openlocfilehash: aeb39c829d7be081fe9ee08aa5845e6ced1194dc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825008"
 ---
 # <a name="attributemappingsource-resource-type"></a>tipo de recurso de attributeMappingSource
 
@@ -18,10 +19,10 @@ Define como um valor deve ser extraída (ou transformados) do objeto de origem. 
 
 | Propriedade              | Tipo                      | Descrição               |
 |:----------------------|:--------------------------|:--------------------------|
-|expressão             |String                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
-|name                   |String                     |Parâmetro nome da fonte de mapeamento. Dependendo do valor da propriedade **type** , isso pode ser o nome da função, o nome do atributo de origem, ou um valor de constante a ser usado. |
-|parameters             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se esse objeto representa uma função, lista os parâmetros da função. Parâmetros consistem em objetos **attributeMappingSource** sozinhos, permitindo expressões complexas. Se **tipo** não for `Function`, essa propriedade será null/vazio matriz. |
-|type                   | String                    |O tipo de fonte de mapeamento este atributo. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
+|expressão             |Cadeia de caracteres                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
+|name                   |Cadeia de caracteres                     |Parâmetro nome da fonte de mapeamento. Dependendo do valor da propriedade **type** , isso pode ser o nome da função, o nome do atributo de origem, ou um valor de constante a ser usado. |
+|parâmetros             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se esse objeto representa uma função, lista os parâmetros da função. Parâmetros consistem em objetos **attributeMappingSource** sozinhos, permitindo expressões complexas. Se **tipo** não for `Function`, essa propriedade será null/vazio matriz. |
+|type                   | Cadeia de caracteres                    |O tipo de fonte de mapeamento este atributo. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 

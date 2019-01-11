@@ -1,12 +1,13 @@
 ---
 title: Lista directoryAudits
 description: Fornece a lista de logs de auditoria gerados pelo Windows Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços dentro do Azure Active Directory como usuário, aplicativo, dispositivo e gerenciamento do grupo, privilegiado Identity Management, avaliações de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e Admin redefinições de senha ), Etc. de gerenciamento do grupo de auto-atendimento …
-ms.openlocfilehash: e607d866443a07f1405260b02a630276951ce310
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 08b9cd5ded6771883a6d0f1129cf44a808515f8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829334"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 

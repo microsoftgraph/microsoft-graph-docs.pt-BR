@@ -2,12 +2,13 @@
 title: Listar licenseDetails
 description: Recupere uma lista de objetos licenseDetails.
 author: dkershaw10
-ms.openlocfilehash: af15e2cf8fb2bb9484d4567517c71a735f11609c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f9869088e7ee6e8f4857ad3f8a7c4e3768e529b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301068"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826520"
 ---
 # <a name="list-licensedetails"></a>Listar licenseDetails
 

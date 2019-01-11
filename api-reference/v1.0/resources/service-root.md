@@ -1,12 +1,13 @@
 ---
 title: Raiz de serviço
 description: 25-10-2015 57:14:30--> UTC
-ms.openlocfilehash: edc0517393d180f606165016bcc141978a6f4408
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7fc6729eac7dc32e0f92770fc3357af960510dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006713"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827885"
 ---
 # <a name="service-root"></a>Raiz de serviço
 

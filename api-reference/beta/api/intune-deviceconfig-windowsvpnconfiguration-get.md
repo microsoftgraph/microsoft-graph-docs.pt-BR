@@ -2,12 +2,13 @@
 title: Obter windowsVpnConfiguration
 description: Leia as propriedades e os relacionamentos do objeto windowsVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: c0db31f9226430f6b0db8668917f829e71bfcd52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da7947d71cb6af125c9031393ddf0e6b842df771
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324119"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827087"
 ---
 # <a name="get-windowsvpnconfiguration"></a>Obter windowsVpnConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

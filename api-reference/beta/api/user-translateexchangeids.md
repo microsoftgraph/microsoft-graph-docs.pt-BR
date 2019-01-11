@@ -2,12 +2,13 @@
 title: 'usuário: translateExchangeIds'
 description: Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
 author: dkershaw10
-ms.openlocfilehash: ca8b8b1f587e545c3ebfb46efecd9c1c093a942a
-ms.sourcegitcommit: 6b1ba9b3be038cd6247de54a255bad560034fe42
+localization_priority: Normal
+ms.openlocfilehash: b59cc33765586648432736df6067e6c089318729
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27771818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831903"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -15,7 +16,7 @@ ms.locfileid: "27771818"
 
 Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

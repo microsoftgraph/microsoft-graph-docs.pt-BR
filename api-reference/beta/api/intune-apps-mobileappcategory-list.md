@@ -2,12 +2,13 @@
 title: Listar mobileAppCategories
 description: Listar propriedades e as relações dos objetos mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 1776a4c563a283a592d2a0ad37dc215423e91d0d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65248654cb84e7522d0eadf9789e4026109b8c9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304820"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833394"
 ---
 # <a name="list-mobileappcategories"></a>Listar mobileAppCategories
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

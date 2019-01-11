@@ -1,12 +1,13 @@
 ---
 title: 'groupLifecyclePolicy: renewGroup'
 description: Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
-ms.openlocfilehash: 13e1713d3d00e7feac0b23eae8a314e55341e20e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5472927769175912736f66a2d848f103cfb5b8c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035923"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833317"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
 

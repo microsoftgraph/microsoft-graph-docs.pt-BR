@@ -2,12 +2,13 @@
 title: Listar windowsUniversalAppXs
 description: Listar propriedades e relações dos objetos windowsUniversalAppX.
 author: tfitzmac
-ms.openlocfilehash: b6e02fe8b6441211f71012d8e45a9a027c6622ff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cea1fb11fe40db5234dd0c0f1a57539f804fe219
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811141"
 ---
 # <a name="list-windowsuniversalappxs"></a>Listar windowsUniversalAppXs
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

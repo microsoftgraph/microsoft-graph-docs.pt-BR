@@ -2,12 +2,13 @@
 title: Excluir localizedNotificationMessage
 description: Exclui localizedNotificationMessage.
 author: tfitzmac
-ms.openlocfilehash: c77aa563734ca9c57a64b2316de87928f571eee7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 02e20332549df460059ac4f992207d4c426af809
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825960"
 ---
 # <a name="delete-localizednotificationmessage"></a>Excluir localizedNotificationMessage
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de onPremisesExtensionAttributes
 description: A propriedade **onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizada. Um usuário **onPremisesSyncEnabled** , esse conjunto de propriedades é administrado no Active Directory no local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definida durante a criação ou atualização.
-ms.openlocfilehash: e5a56b5a846cf48cfc819b6d884689be10d6992e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c0cb765efe9e94c8254e45eaa9d55bc16382f6d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005670"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824742"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso de onPremisesExtensionAttributes
 
@@ -16,21 +17,21 @@ A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.m
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensionAttribute1|String| Primeiro atributo de extensão personalizável. |
-|extensionAttribute2|String| Segundo atributo de extensão personalizável. |
-|extensionAttribute3|String| Atributo do terceiro extensão personalizável. |
-|extensionAttribute4|String| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|String| Atributo do quinto extensão personalizável. |
-|extensionAttribute6|String| Sexto atributo de extensão personalizável. |
-|extensionAttribute7|String| Sétimo atributo de extensão personalizável. |
-|extensionAttribute8|String| Oitavo atributo de extensão personalizável. |
-|extensionAttribute9|String| Nono atributo de extensão personalizável. |
-|extensionAttribute10|String| Décimo atributo de extensão personalizável. |
-|extensionAttribute11|String| Atributo de extensão Décima primeira personalizável. |
-|extensionAttribute12|String| Atributo de extensão Décima segunda personalizável. |
-|extensionAttribute13|String| Atributo de extensão Décima terceira personalizável. |
-|extensionAttribute14|String| Atributo de extensão décima quarta personalizável. |
-|extensionAttribute15|String| Atributo de extensão Décima quinta personalizável. |
+|extensionAttribute1|Cadeia de caracteres| Primeiro atributo de extensão personalizável. |
+|extensionAttribute2|Cadeia de caracteres| Segundo atributo de extensão personalizável. |
+|extensionAttribute3|Cadeia de caracteres| Atributo do terceiro extensão personalizável. |
+|extensionAttribute4|Cadeia de caracteres| Quarto atributo de extensão personalizável. |
+|extensionAttribute5|Cadeia de caracteres| Atributo do quinto extensão personalizável. |
+|extensionAttribute6|Cadeia de caracteres| Sexto atributo de extensão personalizável. |
+|extensionAttribute7|Cadeia de caracteres| Sétimo atributo de extensão personalizável. |
+|extensionAttribute8|Cadeia de caracteres| Oitavo atributo de extensão personalizável. |
+|extensionAttribute9|Cadeia de caracteres| Nono atributo de extensão personalizável. |
+|extensionAttribute10|Cadeia de caracteres| Décimo atributo de extensão personalizável. |
+|extensionAttribute11|Cadeia de caracteres| Atributo de extensão Décima primeira personalizável. |
+|extensionAttribute12|Cadeia de caracteres| Atributo de extensão Décima segunda personalizável. |
+|extensionAttribute13|Cadeia de caracteres| Atributo de extensão Décima terceira personalizável. |
+|extensionAttribute14|Cadeia de caracteres| Atributo de extensão décima quarta personalizável. |
+|extensionAttribute15|Cadeia de caracteres| Atributo de extensão Décima quinta personalizável. |
 
 ## <a name="json-representation"></a>Representação JSON
 

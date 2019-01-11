@@ -2,12 +2,13 @@
 title: Excluir iosVppEBook
 description: Exclui um iosVppEBook.
 author: tfitzmac
-ms.openlocfilehash: 6fc3cc28a7d3524bd57b5792cfef40fa03d9b248
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cac216c4564aed51755353628e70d7ae9986dee4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355444"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828515"
 ---
 # <a name="delete-iosvppebook"></a>Excluir iosVppEBook
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

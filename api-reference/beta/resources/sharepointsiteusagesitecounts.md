@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de sharePointSiteUsageSiteCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 631e01a417e177e356b701ca8dc93ffa51b4f50f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 913f9de5972d857b859b713298a0413d615b8991
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034780"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828123"
 ---
 # <a name="sharepointsiteusagesitecounts-resource-type"></a>tipo de recurso de sharePointSiteUsageSiteCounts
 
@@ -15,11 +16,11 @@ ms.locfileid: "27034780"
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
-| siteType          | String |
+| siteType          | Cadeia de caracteres |
 | total             | Int64  |
 | ativo            | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

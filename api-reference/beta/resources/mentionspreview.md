@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mentionsPreview
 description: Representa informações sobre objetos mencionam em uma instância de recurso.
-ms.openlocfilehash: cf6bed3cdfb2d3f541438da0c06fcf8f4873c17e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1534b7f0ef48a80d0faaaa09880b91cb270e8eca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826106"
 ---
 # <a name="mentionspreview-resource-type"></a>tipo de recurso de mentionsPreview
 

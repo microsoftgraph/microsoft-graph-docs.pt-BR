@@ -2,12 +2,13 @@
 title: função getScopesForUser
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: e636dcbbfc106be59dd4fcbdb401aa22387f5835
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b0cd9a14602ce090de5d79720415a1e52d3b3145
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308964"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822418"
 ---
 # <a name="getscopesforuser-function"></a>função getScopesForUser
 
@@ -38,7 +39,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
@@ -46,7 +47,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|UserID|String|Ainda não documentado|
+|UserID|Cadeia de caracteres|Ainda não documentado|
 
 
 

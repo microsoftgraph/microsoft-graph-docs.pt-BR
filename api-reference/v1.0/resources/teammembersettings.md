@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de teamMemberSettings
 description: Configurações para configurar se os membros podem realizar determinadas ações, por exemplo, criam canais e adicionar bots, na equipe de.
-ms.openlocfilehash: 74d88e1d87c65745fe98da9b1ee21b26824dc4e6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b63bce5bc298f7d9599d8c6146d7962d319c79f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006184"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826065"
 ---
 # <a name="teammembersettings-resource-type"></a>tipo de recurso de teamMemberSettings
 

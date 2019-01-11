@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de targetResource
 description: Indica uma coleção de tipos de recursos de destino associado à atividade de auditoria. Cada tipo de recurso de destino herdará as propriedades descritas abaixo deste recurso.
-ms.openlocfilehash: ba3bee7ce89f73ed97610d62676c22d14488ed9f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828676"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso de targetResource
 Indica uma coleção de tipos de recursos de destino associado à atividade de auditoria. Cada tipo de recurso de destino herdará as propriedades descritas abaixo deste recurso.
@@ -15,8 +16,8 @@ Indica uma coleção de tipos de recursos de destino associado à atividade de a
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Indica o nome de exibição dos recursos descritos em tipos de recursos de destino abaixo.|
-|id|String|Indica a Id exclusiva do recurso (por exemplo: UserId, AppId, RoleId.).|
+|displayName|Cadeia de caracteres|Indica o nome de exibição dos recursos descritos em tipos de recursos de destino abaixo.|
+|id|Cadeia de caracteres|Indica a Id exclusiva do recurso (por exemplo: UserId, AppId, RoleId.).|
 |ModifiedProperties|coleção [modifiedProperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo a ser alterado. Isso é aplicável para qualquer atividades "Atualizar"|
 
 ### <a name="target-resource-types"></a>Tipos de recursos de destino
@@ -25,14 +26,14 @@ O tipo de recurso de destino varia de acordo com o recurso subjacente:
 
 |Nome do recurso| Referência|
 |-------------|----------|
-Dispositivo|[targetResourceDevice](targetresourcedevice.md)
+Device|[targetResourceDevice](targetresourcedevice.md)
 Diretório|[targetResourceDirectory] (targetresourcedirectory.md]
 Group|[targetResourceGroup](targetresourcegroup.md)
 Política|[targetResourcePolicy](targetresourcepolicy.md)
 Role|[targetResourceRole](targetresourcerole.md)
 Entidade de serviço|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)
 Usuário|[targetResourceUser](targetresourceuser.md)
-Outro|[targetResourceOther](targetresourceother.md)
+Outros|[targetResourceOther](targetresourceother.md)
 
 ## <a name="json-representation"></a>Representação JSON
 

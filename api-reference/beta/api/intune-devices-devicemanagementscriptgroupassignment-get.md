@@ -2,12 +2,13 @@
 title: Obter deviceManagementScriptGroupAssignment
 description: Leia as propriedades e os relacionamentos do objeto deviceManagementScriptGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 6068a46a86d71794b58bc69ac7aedb1f9e13f56d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b5ed43b70b80c9924c4443fd33a69c6c225fdceb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324924"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809356"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Obter deviceManagementScriptGroupAssignment
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

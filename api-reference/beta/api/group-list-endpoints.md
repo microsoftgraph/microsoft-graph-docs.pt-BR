@@ -2,12 +2,13 @@
 title: Lista de pontos de extremidade
 description: Recupere uma lista de objetos de ponto de extremidade.
 author: dkershaw10
-ms.openlocfilehash: d455cb8a5d1fb07a3d97cea376d9e2e49266892d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce208e34cd4d8401d537a36626eeefc7cb5ae126
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315943"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833261"
 ---
 # <a name="list-endpoints"></a>Lista de pontos de extremidade
 
@@ -15,7 +16,7 @@ ms.locfileid: "27315943"
 
 Recupere uma lista de objetos de [ponto de extremidade](../resources/endpoint.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

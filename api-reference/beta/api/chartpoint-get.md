@@ -2,12 +2,13 @@
 title: Obter ChartPoint
 description: Recupera as propriedades e os relacionamentos do objeto chartpoint.
 author: lumine2008
-ms.openlocfilehash: 0d9ee5ee41e5f1a382f6a86f05a4f03d1e736136
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3f50af34ed10cd9517409bfa4d067357a45a8a56
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833366"
 ---
 # <a name="get-chartpoint"></a>Obter ChartPoint
 

@@ -2,12 +2,13 @@
 title: Listar dispositivos
 description: 'Recupere uma lista de dispositivos registrados no diretório. '
 author: tfitzmac
-ms.openlocfilehash: 04275c3d6356fbf28434b7bbe6ebfbd54f6bba8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4cbe2ad3f43cfda274901fb6cdc7322d1c1e523
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824574"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 
@@ -15,7 +16,7 @@ ms.locfileid: "27320283"
 
 Recupere uma lista de dispositivos registrados no diretório. 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

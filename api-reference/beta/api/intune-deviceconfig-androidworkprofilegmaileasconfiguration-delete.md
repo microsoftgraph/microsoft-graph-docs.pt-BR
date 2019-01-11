@@ -2,12 +2,13 @@
 title: Excluir androidWorkProfileGmailEasConfiguration
 description: Exclui um androidWorkProfileGmailEasConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4c2301370eb89fda14aeec0c489648c22a9752ad
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49777d423928bf62fbd2080fa5d9937f3914e396
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827997"
 ---
 # <a name="delete-androidworkprofilegmaileasconfiguration"></a>Excluir androidWorkProfileGmailEasConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

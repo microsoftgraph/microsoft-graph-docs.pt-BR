@@ -2,12 +2,13 @@
 title: Criar deviceInstallState
 description: Criar um novo objeto deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: c9fd02e51f9b78473762d99763ea37cdaeffb197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 49979b883ffef895124d8bb57837d5c5103a0d67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350397"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825477"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceInstallState.
@@ -46,7 +47,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceIn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|

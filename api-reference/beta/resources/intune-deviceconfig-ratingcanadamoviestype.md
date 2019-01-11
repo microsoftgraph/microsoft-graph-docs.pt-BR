@@ -2,12 +2,13 @@
 title: tipo de enum ratingCanadaMoviesType
 description: Filmes classificação rótulos no Canadá
 author: tfitzmac
-ms.openlocfilehash: f314db7a633555ff48e60de20f7dc5635711b69b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c9443a673ab9e97ef6cb4967018f35bcb8b3b932
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347268"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826485"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>tipo de enum ratingCanadaMoviesType
 

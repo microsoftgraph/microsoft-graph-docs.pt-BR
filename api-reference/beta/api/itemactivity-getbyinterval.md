@@ -3,12 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: Obter estatísticas de atividade de item pelo intervalo
-ms.openlocfilehash: 3b3c7139678715a11365f2551c318dcf66e68e7a
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 7ca0e4e4767073d37ebeabbab10e1f50ce323599
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748187"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826863"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item pelo intervalo
 
@@ -22,7 +23,7 @@ Agregações da análise não podem estar disponíveis para todos os tipos de a�
 
 [itemActivityStats]: ../resources/itemactivitystat.md
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

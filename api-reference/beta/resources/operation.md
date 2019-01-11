@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de operação
 description: O status de uma operação de execução longa.
-ms.openlocfilehash: 71e6a1c47e1f3b18f1481700320779714d716bec
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035832"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830342"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso de operação
 
@@ -23,7 +24,7 @@ Nenhum
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | String          | A id da operação. Somente leitura. Servidor foi gerado.                                  |
+| id                 | Cadeia de caracteres          | A id da operação. Somente leitura. Servidor foi gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
