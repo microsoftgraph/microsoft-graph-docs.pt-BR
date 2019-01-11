@@ -1,12 +1,13 @@
 ---
 title: Lista de políticas
 description: Recupere todos os objetos de política no diretório.
-ms.openlocfilehash: 5abff0973a53dc3bddfd256dbc43faad519e20e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea97146b646068515ab6fdc7fab4b3cefb16031e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836052"
 ---
 # <a name="list-policies"></a>Lista de políticas
 

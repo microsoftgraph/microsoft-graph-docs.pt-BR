@@ -2,12 +2,13 @@
 title: ação de confirmação
 description: Confirma um arquivo de um determinado aplicativo.
 author: tfitzmac
-ms.openlocfilehash: 728cbaeb431fd6f3f9b27b64d118a603bbf9347d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53a72e5b773c7fd5b306ff1f0cc4a6422dd640fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836558"
 ---
 # <a name="commit-action"></a>ação de confirmação
 
@@ -36,7 +37,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

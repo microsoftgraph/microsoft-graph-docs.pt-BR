@@ -2,12 +2,13 @@
 title: Ação syncDevice
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 6515ea635fa35795b5946b8c624c1f592ab1dd22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 90a321ae025fc1b6fa963d3d1ce6d5111fd328cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356830"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850840"
 ---
 # <a name="syncdevice-action"></a>Ação syncDevice
 
@@ -38,7 +39,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

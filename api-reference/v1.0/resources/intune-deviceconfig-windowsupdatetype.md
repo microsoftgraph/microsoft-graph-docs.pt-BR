@@ -2,12 +2,13 @@
 title: tipo de enum windowsUpdateType
 description: Quais dispositivos de filial receberão suas atualizações do
 author: tfitzmac
-ms.openlocfilehash: 415dde619529ffa9bb40ab2cea36665558bb0ee9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 198b5f8db5698d309199964e4cb69f8981ceeb1a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838966"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enum windowsUpdateType
 

@@ -2,12 +2,13 @@
 title: Tipo de recurso onenoteOperationError
 description: Um erro de uma operação do OneNote que falhou.
 author: Jewan-microsoft
-ms.openlocfilehash: e31d47f9351a050eef134cde2f6a6a8bbdf526d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: df0bfd768d26c751a303f42e1f1123b863388faa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837335"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>Tipo de recurso onenoteOperationError
 

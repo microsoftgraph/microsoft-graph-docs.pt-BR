@@ -2,12 +2,13 @@
 title: Listar windowsInformationProtectionNetworkLearningSummaries
 description: Listar propriedades e relações de objetos de windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
-ms.openlocfilehash: bdb702881b7994d30cdcc02b0f583b6cb0fc5d69
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9b18e6c3a810fc2abe633ad1096ab9221cf379df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839190"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Listar windowsInformationProtectionNetworkLearningSummaries
 
@@ -36,7 +37,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

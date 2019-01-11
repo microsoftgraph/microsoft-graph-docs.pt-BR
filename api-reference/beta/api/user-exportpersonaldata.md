@@ -1,18 +1,19 @@
 ---
 title: 'usuário: exportPersonalData'
 description: Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar dados de um usuário organizacionais.
-ms.openlocfilehash: ffde9af132fbb15706fe54af8a6b3aaeba07d12b
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: d660994868e331fb8c1813bb9ff90aebe4790e9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845336"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
 Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar dados de um usuário organizacionais.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +40,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição |
 |:---------------|:--------|:----------|
-|storageLocation|String|Esta é uma URL de assinatura (SAS) de acesso compartilhado para uma conta de armazenamento do Azure, para onde os dados devem ser exportados.|
+|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura (SAS) de acesso compartilhado para uma conta de armazenamento do Azure, para onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`. Ele não retornará nada no corpo da resposta. A resposta conterá os seguintes cabeçalhos.

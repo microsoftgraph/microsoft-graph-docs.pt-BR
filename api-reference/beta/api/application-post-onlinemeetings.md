@@ -2,12 +2,13 @@
 title: Criar a reunião online
 description: Cria uma reunião online em nome de um usuário especificado no corpo da solicitação.
 author: VinodRavichandran
-ms.openlocfilehash: 7b40bd2b9bedcee4777138403eb895f972bab9fb
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: bd16b6979eed2c7d9386313f2ca07cb9ea2c5c6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380328"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838945"
 ---
 # <a name="create-online-meeting"></a>Criar a reunião online
 
@@ -17,14 +18,14 @@ Cria uma reunião online em nome de um usuário especificado no corpo da solicit
 
 > **Observação**: A reunião não será mostrado no calendário do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Application                            | OnlineMeetings.ReadWrite.All                |
+| Aplicativo                            | OnlineMeetings.ReadWrite.All                |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

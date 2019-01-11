@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de governanceRoleDefinition
 description: Representa as definições de função. Para obter recursos Azure, ela pode representar funções de RBAC do Azure, proprietário, leitor, colaborador, etc.
-ms.openlocfilehash: 057d74276b41abad47eb60ce48a99f1160c401ef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3f94dd1a741545760951875fbc064307823a65dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034777"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842445"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso de governanceRoleDefinition
 
@@ -26,10 +27,10 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` tem suporte nos `roleDefinitions` conjunto
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----|:----------|:----------|:----------|
-|id         |String     |A id da definição de função. |
+|id         |Cadeia de caracteres     |A id da definição de função. |
 |resourceId |Cadeia de caracteres     |Obrigatório. A identificação do recurso associado à definição de função. |
 |externalId   |Cadeia de caracteres     |A id externa da definição de função.|
-|displayName|String     |O nome de exibição da definição de função.|
+|displayName|Cadeia de caracteres     |O nome de exibição da definição de função.|
 |subjectCount|Int32     |Opcional. O número de assuntos que são atribuídas à função. Representa o status de acesso do solicitador para o recurso. Para obter a propriedade, faça uso explicitamente `$select=subjectCount` na consulta.|
 |eligibleAssignmentCount|Int32|Opcional. O número de atribuições de função elegíveis associado à definição de função. Para obter a propriedade, faça uso explicitamente `$select=eligibleAssignmentCount` na consulta.|
 |activeAssignmentCount|Int32    |Opcional. O número de atribuições de função ativa associado à definição de função.  Para obter a propriedade, faça uso explicitamente `$select=activeAssignmentCount` na consulta.|

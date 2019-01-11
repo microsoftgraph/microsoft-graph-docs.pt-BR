@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de office365ActiveUserDetail
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 95912e736459894a69f8e2e1a18c2aaf672a19a9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 462858f42b48560db4cd2f311ffdffd911504afe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035841"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833954"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>tipo de recurso de office365ActiveUserDetail
 
@@ -15,7 +16,7 @@ ms.locfileid: "27035841"
 | Propriedade                          | Tipo              | Descrição                              |
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | Data              | A última data do conteúdo.          |
-| userPrincipalName                 | String            | O usuário nome principal (UPN) do usuário. O UPN é um nome de logon estilo Internet para o usuário com base na Internet padrão RFC 822. Por convenção, isso deve ser mapeada para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleção de locatário de domínios verificados. Essa propriedade é obrigatória quando um usuário é criado. |
+| userPrincipalName                 | Cadeia de caracteres            | O usuário nome principal (UPN) do usuário. O UPN é um nome de logon estilo Internet para o usuário com base na Internet padrão RFC 822. Por convenção, isso deve ser mapeada para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleção de locatário de domínios verificados. Essa propriedade é obrigatória quando um usuário é criado. |
 | displayName                       | String            | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. |
 | isDeleted                         | Booliano           | Se esse usuário tiver sido excluído ou suave excluído. |
 | deletedDate                       | Data              | A data quando a operação de exclusão aconteceu. Valor padrão é "nulo" quando o usuário não foi excluído. |

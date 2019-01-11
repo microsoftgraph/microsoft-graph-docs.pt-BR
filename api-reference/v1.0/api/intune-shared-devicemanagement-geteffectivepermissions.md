@@ -2,12 +2,13 @@
 title: Função getEffectivePermissions
 description: Recupera permissões efetivas de usuário autenticado no momento
 author: tfitzmac
-ms.openlocfilehash: 3d4b277b0a5a3d5cc0584b602ad28c2e2e96e2b5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5c887aebdba69048ded387371ad2534ce4173668
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317000"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850775"
 ---
 # <a name="geteffectivepermissions-function"></a>Função getEffectivePermissions
 
@@ -38,7 +39,7 @@ GET /deviceManagement/getEffectivePermissions
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
@@ -46,7 +47,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|scope|String|Ainda não documentado|
+|scope|Cadeia de caracteres|Ainda não documentado|
 
 
 ## <a name="response"></a>Resposta

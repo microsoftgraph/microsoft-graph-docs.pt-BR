@@ -2,12 +2,13 @@
 title: Atualizar deviceEnrollmentPlatformRestrictionsConfiguration
 description: Atualizar as propriedades de um objeto deviceEnrollmentPlatformRestrictionsConfiguration.
 author: tfitzmac
-ms.openlocfilehash: dc7ac904df5ae18b0476cfeeb2d1c98a6533a7c3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3794933b6dabbc9f6a6bfc4957ff0e9a795c3f80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849466"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>Atualizar deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md).

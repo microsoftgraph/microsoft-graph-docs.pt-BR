@@ -1,12 +1,13 @@
 ---
 title: Relatórios de atividades de usuários do Microsoft Teams
 description: Use os relatórios de atividade do usuário Teams da Microsoft para obter ideias sobre a atividade do usuário Teams da Microsoft em sua organização.
-ms.openlocfilehash: 26af58ad88541fb4e9e0f64159505846bfe90bb5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2fc2eee8243a338204687114d2f1de3d2e794a9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034049"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845518"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Relatórios de atividades de usuários do Microsoft Teams
 

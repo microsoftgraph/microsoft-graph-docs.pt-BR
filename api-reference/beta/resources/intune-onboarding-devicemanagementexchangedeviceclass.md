@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceManagementExchangeDeviceClass
 description: Classe de dispositivo no Exchange.
 author: tfitzmac
-ms.openlocfilehash: 01e0877388391deaebbda18e48247f4e3585a63a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80142f4e05752a37c324cd20ce96e4c8e6668c03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316776"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839022"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>tipo de recurso de deviceManagementExchangeDeviceClass
 
@@ -19,7 +20,7 @@ Classe de dispositivo no Exchange.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Nome da classe do dispositivo que será afetada por essa regra.|
+|name|Cadeia de caracteres|Nome da classe do dispositivo que será afetada por essa regra.|
 |type|[deviceManagementExchangeAccessRuleType](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Tipo de dispositivo que é afetado por esta regra modelar p. ex., família. Os valores possíveis são: `family`, `model`.|
 
 ## <a name="relationships"></a>Relações

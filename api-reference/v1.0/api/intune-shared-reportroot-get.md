@@ -2,12 +2,13 @@
 title: Get reportRoot
 description: Ler propriedades e relações do objeto reportRoot.
 author: tfitzmac
-ms.openlocfilehash: aa79d3bbc03529c20e0ea66b91c89a92f7782b2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbf15ec9aab222c52c9fdcefaf3265bd1588dfd5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850438"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 
@@ -41,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

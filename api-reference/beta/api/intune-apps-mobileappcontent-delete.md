@@ -2,12 +2,13 @@
 title: Excluir mobileAppContent
 description: Exclui mobileAppContent.
 author: tfitzmac
-ms.openlocfilehash: fcce8b7a1a79506218b9ac0a306b5e1b9f22bbb7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0872e68d59de49409a198fa32a39fd7d37425288
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302608"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837447"
 ---
 # <a name="delete-mobileappcontent"></a>Excluir mobileAppContent
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobi
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

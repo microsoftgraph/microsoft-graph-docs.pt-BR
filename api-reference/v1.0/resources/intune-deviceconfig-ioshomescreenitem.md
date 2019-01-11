@@ -2,12 +2,13 @@
 title: Tipo de recurso iosHomeScreenItem
 description: Representa um item na tela inicial do iOS
 author: tfitzmac
-ms.openlocfilehash: 168214da57f2cc903bac110709d721061d4298cd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bbde13f06df55b984aed8f2e0920a6ec3e3ce158
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835802"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Tipo de recurso iosHomeScreenItem
 

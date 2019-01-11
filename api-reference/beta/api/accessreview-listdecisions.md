@@ -1,12 +1,13 @@
 ---
 title: Lista accessReview decisões
 description: No Windows Azure AD para acessar o recurso de revisões, recuperar as decisões de um objeto accessReview.
-ms.openlocfilehash: d8cf89706f053dfee6e98cdf23d2539874ac6997
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ade39abbf63c4e1eb71a6fa25fd3febd8a24c41b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849746"
 ---
 # <a name="list-accessreview-decisions"></a>Lista accessReview decisões
 
@@ -53,7 +54,7 @@ GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fe
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

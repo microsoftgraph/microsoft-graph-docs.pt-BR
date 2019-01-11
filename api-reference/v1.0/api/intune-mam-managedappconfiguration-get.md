@@ -2,12 +2,13 @@
 title: Get managedAppConfiguration
 description: Ler propriedades e relações do objeto managedAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 282ae5c8476ac623c0152bf89fb8ad3e5fda1852
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7638112219202d6a76e10691b31092bdc065c32e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302818"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837055"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

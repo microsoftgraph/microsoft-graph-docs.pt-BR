@@ -2,12 +2,13 @@
 title: Atualizar windowsManagementAppHealthState
 description: Atualize as propriedades de um objeto windowsManagementAppHealthState.
 author: tfitzmac
-ms.openlocfilehash: 72beed52f76531aacd3ba0c48e350954bd4ac525
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4af20e28e47fa65c0e57ae5030c84bd23e74e3e4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838630"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Atualizar windowsManagementAppHealthState
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .
@@ -47,12 +48,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o estado de integridade de aplicativo de gerenciamento do Windows|
+|id|Cadeia de caracteres|Identificador exclusivo para o estado de integridade de aplicativo de gerenciamento do Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo do gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Aplicativo de gerenciamento do Windows hora do último check-in.|
-|deviceName|String|Nome do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
-|deviceOSVersion|String|Versão do sistema operacional do Windows 10 do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
+|deviceOSVersion|Cadeia de caracteres|Versão do sistema operacional do Windows 10 do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
 
 
 

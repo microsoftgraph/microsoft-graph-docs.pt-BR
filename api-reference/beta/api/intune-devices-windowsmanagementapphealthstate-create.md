@@ -2,12 +2,13 @@
 title: Criar windowsManagementAppHealthState
 description: Crie um novo objeto de windowsManagementAppHealthState.
 author: tfitzmac
-ms.openlocfilehash: 5fec23dec7510c0b7b1a53b0be7d2dfe507959f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3df0880168c4b4ccb15b11e39124ec8ee7ab708
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359077"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838623"
 ---
 # <a name="create-windowsmanagementapphealthstate"></a>Criar windowsManagementAppHealthState
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/windowsManagementApp/healthStates
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto windowsManagementAppHealthState.
@@ -47,12 +48,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o estado de integridade de aplicativo de gerenciamento do Windows|
+|id|Cadeia de caracteres|Identificador exclusivo para o estado de integridade de aplicativo de gerenciamento do Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo do gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Aplicativo de gerenciamento do Windows hora do último check-in.|
-|deviceName|String|Nome do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
-|deviceOSVersion|String|Versão do sistema operacional do Windows 10 do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
+|deviceOSVersion|Cadeia de caracteres|Versão do sistema operacional do Windows 10 do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
 
 
 

@@ -2,12 +2,13 @@
 title: Atualizar advancedThreatProtectionOnboardingStateSummary
 description: Atualize as propriedades de um objeto advancedThreatProtectionOnboardingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: a31dae3c1f79332ae03324d1ecbb604451bc7959
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 67d127ae3fb4545857dca2719fd2ae8417a400fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340023"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837063"
 ---
 # <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Atualizar advancedThreatProtectionOnboardingStateSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) .

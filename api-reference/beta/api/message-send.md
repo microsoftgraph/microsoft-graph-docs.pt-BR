@@ -1,12 +1,13 @@
 ---
 title: 'message: send'
 description: Envie uma mensagem na pasta rascunho. A mensagem de rascunho pode ser um rascunho da nova mensagem, rascunho de responder, responder a todos com rascunho, ou
-ms.openlocfilehash: b295cd5b234bf9dafe1fbba44a03cdc6e9c1842e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6ccef4d1a58faea7678acefee5d175403a8827b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038947"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806640"
 ---
 # <a name="message-send"></a>message: send
 
@@ -38,7 +39,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Tamanho do conteúdo | número | 0. necessária. |
+| Tamanho do conteúdo | number | 0. necessária. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

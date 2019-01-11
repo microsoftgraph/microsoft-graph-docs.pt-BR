@@ -2,12 +2,13 @@
 title: tipo de enum windowsHelloForBusinessPinUsage
 description: Windows Olá para opções de uso de pin de negócios
 author: tfitzmac
-ms.openlocfilehash: 5b1c2e2e607997d0e6d2676462cb9a2268486493
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: de304049e9eb7ad9138b3bf6ebeef52d9297a36b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343817"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838679"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enum windowsHelloForBusinessPinUsage
 

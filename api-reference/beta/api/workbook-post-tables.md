@@ -2,12 +2,13 @@
 title: Criar tabela
 description: Use essa API para criar uma nova tabela.
 author: lumine2008
-ms.openlocfilehash: 75d4199b4c5cefcb17acccfedfb5c45a3f296de0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 093a3ebf55a938474bd479e353442adef5a22714
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321620"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838308"
 ---
 # <a name="create-table"></a>Criar tabela
 
@@ -38,7 +39,7 @@ POST /workbook/tables/$/add
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro           | Type      |Descrição|
+| Parâmetro           | Tipo      |Descrição|
 |:---------------|:----------|:----------|
 | Endereço  | string| Endereço do intervalo. Se você estiver chamando essa API fora do caminho `worksheets/{id or name}/tables/add`, não haverá necessidade do prefixo de nome da planilha no endereço. No entanto, se você a estiver chamando fora do caminho `workbook/tables/add`, forneça então o nome da planilha em que a tabela precisa ser criada (exemplo: `sheet1!A1:D4`)|
 | hasHeaders  | booliano|O valor booliano que indica se o intervalo tem rótulos de coluna. Se a origem não contiver cabeçalhos (ou seja, quando essa propriedade estiver definida como falso), o Excel gerará automaticamente um cabeçalho, deslocando os dados uma linha para baixo.|

@@ -2,12 +2,13 @@
 title: Obter iosMobileAppConfiguration
 description: Lê propriedades e relações do objeto iosMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4784930ca0d61d898af0801be2661148958c1bc7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 07b51e1ec6cb51d0a577c0dec5643fdac99525fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312996"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27843523"
 ---
 # <a name="get-iosmobileappconfiguration"></a>Obter iosMobileAppConfiguration
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

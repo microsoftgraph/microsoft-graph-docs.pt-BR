@@ -1,12 +1,13 @@
 ---
 title: Obter bookingAppointment
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: c3dedab3cbd5fc3848e222317d27527b19671b06
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b9b04a8104bfe6f4569a31d0e88616af4e97fdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035027"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850796"
 ---
 # <a name="get-bookingappointment"></a>Obter bookingAppointment
 

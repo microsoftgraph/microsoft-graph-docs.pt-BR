@@ -2,12 +2,13 @@
 title: Listar deviceComplianceActionItems
 description: Listar propriedades e relações dos objetos deviceComplianceActionItem.
 author: tfitzmac
-ms.openlocfilehash: eba2212581f1cfd1e5c753682f733fdcc83aa369
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0c1dd0a71844d071c191c58297f683f5ff629af5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346827"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839197"
 ---
 # <a name="list-devicecomplianceactionitems"></a>Listar deviceComplianceActionItems
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

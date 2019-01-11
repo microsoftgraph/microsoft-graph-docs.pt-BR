@@ -2,12 +2,13 @@
 title: Excluir aplicativo
 description: Exclui um aplicativo.
 author: lleonard-msft
-ms.openlocfilehash: e19ca94be2d8599f250908ab2aaa33d64b513b8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 46c02d0fc1730f5741175e5ab99e2082e60c8f48
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343495"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838812"
 ---
 # <a name="delete-application"></a>Excluir aplicativo
 
@@ -15,7 +16,7 @@ ms.locfileid: "27343495"
 
 Exclui um aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

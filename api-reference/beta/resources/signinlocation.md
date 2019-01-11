@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de signInLocation
 description: Fornece a cidade, estado e país/região de onde a entrar aconteceu.
-ms.openlocfilehash: a3d4f6ca5ec18e70960f45a3da1bb06d51ee1e65
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037238"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839134"
 ---
 # <a name="signinlocation-resource-type"></a>tipo de recurso de signInLocation
 Fornece a cidade, estado e país/região de onde a entrar aconteceu.
@@ -16,10 +17,10 @@ Fornece a cidade, estado e país/região de onde a entrar aconteceu.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|String|Fornece a cidade onde o sign-in se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
-|countryOrRegion|String|Fornece as informações de código de país (código de carta 2) onde o sign-in se originou.  Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|city|Cadeia de caracteres|Fornece a cidade onde o sign-in se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|countryOrRegion|Cadeia de caracteres|Fornece as informações de código de país (código de carta 2) onde o sign-in se originou.  Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece o latitude, longitude e altitude onde a entrar se originou.|
-|state|String|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|estado|Cadeia de caracteres|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

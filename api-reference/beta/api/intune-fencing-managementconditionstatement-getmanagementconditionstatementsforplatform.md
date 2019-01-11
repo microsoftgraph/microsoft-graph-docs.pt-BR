@@ -2,12 +2,13 @@
 title: função getManagementConditionStatementsForPlatform
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 6589cb380f5ea639b27cb4d3e2258b0bc9f1516f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fb658989b3be4870a4dcfcb7c65b172e00070b6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321935"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838742"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>função getManagementConditionStatementsForPlatform
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.

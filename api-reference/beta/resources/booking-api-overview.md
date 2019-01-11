@@ -1,12 +1,13 @@
 ---
 title: Use a API do reservas Microsoft no Microsoft Graph
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 5e553e2814c6e5554ea7bb2f4daef8c62057aff3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: def9260654baafe1953d629265c4b76a2afd2748
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037756"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845532"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Use a API do reservas Microsoft no Microsoft Graph
 

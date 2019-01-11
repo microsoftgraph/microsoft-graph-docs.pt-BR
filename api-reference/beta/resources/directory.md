@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso directory (itens excluídos)
 description: . Itens excluídos permanecerão disponíveis para restauração por até 30 dias. Após 30 dias, esses itens serão excluídos permanentemente.
-ms.openlocfilehash: 74b4d1ff94b567557fd90701b1c4bae479a8317e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 20685f2d9d61726d170744efb5fd2abb571fe934
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040337"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834444"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Tipo de recurso directory (itens excluídos)
 

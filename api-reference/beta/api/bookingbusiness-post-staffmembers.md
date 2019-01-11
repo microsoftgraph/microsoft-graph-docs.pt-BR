@@ -1,12 +1,13 @@
 ---
 title: Criar bookingStaffMember
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 01983d5a0831b47c2eddfa45dad917f30bdd7b8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 43935dbeeda30fb5f69b799993f772ffffa3eeed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035029"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838770"
 ---
 # <a name="create-bookingstaffmember"></a>Criar bookingStaffMember
 

@@ -2,12 +2,13 @@
 title: Lista iosCertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos iosCertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 6cfee1e89726582fcf8ac961dd079ce1d7e0506e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 974e8abe750c84fa5dcc82665705c0f884cd15c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332841"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836894"
 ---
 # <a name="list-ioscertificateprofilebases"></a>Lista iosCertificateProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

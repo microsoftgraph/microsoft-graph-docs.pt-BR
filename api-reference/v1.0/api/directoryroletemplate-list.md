@@ -2,12 +2,13 @@
 title: Listar directoryRoleTemplates
 description: Recupera uma lista de objetos directoryRoleTemplate.
 author: lleonard-msft
-ms.openlocfilehash: 0e43bdb3217827c8369ebe226a9aacea54996be2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 018339d67e24a7707a0baf0a4f4678c7bd9e0650
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840338"
 ---
 # <a name="list-directoryroletemplates"></a>Listar directoryRoleTemplates
 

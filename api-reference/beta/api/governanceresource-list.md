@@ -1,12 +1,13 @@
 ---
 title: Lista governanceResources
 description: Recupere uma coleção de governanceResource que o solicitante tem acesso.
-ms.openlocfilehash: a8f0fc03dbd880c82bca7c9d8f6e84a2940511d9
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 4527c7a5f59832fe69181a815af40a0e0e073c90
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191084"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838294"
 ---
 # <a name="list-governanceresources"></a>Lista governanceResources
 
@@ -14,10 +15,10 @@ ms.locfileid: "27191084"
 
 Recupere uma coleção de [governanceResource](../resources/governanceresource.md) que o solicitante tem acesso.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões              |
+|Tipo de permissão      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |

@@ -1,12 +1,13 @@
 ---
 title: " tipo de recurso de averageComparativeScore"
 description: Este recurso contém vários pontuações diferentes com base em por categoria de controle (identidade, dados, dispositivo, aplicativos, infra-estrutura) e escopos diferentes (por exemplo, média pelo setor vertical, média pelo tamanho da estação de empresa e assim por diante).
-ms.openlocfilehash: 08e4ec60788b21476d8f1491ab5548c7a4ca2e01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c32c1349edd70e80c1bf0fb12a36bd07e06ed39f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834591"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>tipo de recurso de averageComparativeScore
 
@@ -14,7 +15,7 @@ Este recurso contém vários pontuações diferentes com base em por categoria d
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|   base   |   String  |   Tipo de escopo (por AllTenants, TotalSeats, IndustryTypes).  |
+|   base   |   Cadeia de caracteres  |   Tipo de escopo (por AllTenants, TotalSeats, IndustryTypes).  |
 |   Média    |   Duplo  | Pontuação média dentro de base especificada. |
 |   deviceScore |   Duplo  | Pontuação média dentro de base especificada. |
 |   dataScore   |   Duplo  | Pontuação média dentro de base especificada. |

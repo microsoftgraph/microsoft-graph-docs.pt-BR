@@ -2,12 +2,13 @@
 title: ação de revokeUserLicense
 description: REVOKE atribuído iOS VPP licença de usuário para fornecido app.
 author: tfitzmac
-ms.openlocfilehash: 94d8dff027421d5b3b1c763439dbcf4ec3d2391f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 241306b812615bb804a3139082a439df9eeae059
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837300"
 ---
 # <a name="revokeuserlicense-action"></a>ação de revokeUserLicense
 
@@ -40,7 +41,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -49,8 +50,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userId|String|ID de usuário para quem a licença de aplicativo atribuídas é a ser revogado|
-|notifyManagedDevices|Boolean|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
+|userId|Cadeia de caracteres|ID de usuário para quem a licença de aplicativo atribuídas é a ser revogado|
+|notifyManagedDevices|Booliano|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
 
 
 

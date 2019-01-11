@@ -2,12 +2,13 @@
 title: Listar resourceOperations
 description: Listar propriedades e relações dos objetos resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: 210e7dfe8d321efccff6f5e985d0fa64a26d9f84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 524a92296febd521dae55289ac8a4ca7ddea7da3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321501"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835312"
 ---
 # <a name="list-resourceoperations"></a>Listar resourceOperations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/resourceOperations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

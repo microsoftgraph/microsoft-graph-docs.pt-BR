@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsNetworkIsolationPolicy
 description: Política de isolamento de rede do Windows
 author: tfitzmac
-ms.openlocfilehash: af8cac99a359136bbc3d5d19842b56b57c80c6c9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82026ba4d82b85a0275f83bb729b495e17ff5d5c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323286"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834611"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>tipo de recurso de windowsNetworkIsolationPolicy
 
@@ -23,9 +24,9 @@ Política de isolamento de rede do Windows
 |enterpriseCloudResources|Coleção [proxiedDomain](../resources/intune-shared-proxieddomain.md)|Contém uma lista de domínios de recurso da empresa hospedado na nuvem que precisam ser protegidos. As conexões com esses recursos são consideradas dados corporativos. Se um proxy for emparelhado com um recurso de nuvem, o tráfego para esse recurso será roteado pela rede da empresa por meio do servidor proxy indicado (na porta 80). Um servidor proxy usado para essa finalidade também deve ser configurado usando a política de EnterpriseInternalProxyServers. Esta coleção pode conter um máximo de 500 elementos.|
 |enterpriseIPRanges|Coleção [ipRange](../resources/intune-shared-iprange.md)|Define os intervalos IP da empresa que definem os computadores da rede corporativa. Dados provenientes desses computadores serão considerados parte da empresa e serão protegidos. Serão considerados um destino seguro para dados corporativos para serem compartilhadas desses locais. Esta coleção pode conter um máximo de 500 elementos.|
 |enterpriseInternalProxyServers|String collection|Esta é a lista separada por vírgula de servidores proxy internos. Por exemplo, "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". Esses proxies foram configurados pelo administrador para se conectarem a recursos específicos na Internet. Eles são considerados locais de rede da empresa. Os proxies somente são utilizados na configuração da diretiva de EnterpriseCloudResources para forçar o tráfego para os recursos de nuvem correspondentes por meio desses proxies.|
-|enterpriseIPRangesAreAuthoritative|Boolean|Valor booliano que informa ao cliente para aceitar a lista configurada e não usar heurística para tentar localizar outras sub-redes. O padrão é false.|
+|enterpriseIPRangesAreAuthoritative|Booliano|Valor booliano que informa ao cliente para aceitar a lista configurada e não usar heurística para tentar localizar outras sub-redes. O padrão é false.|
 |enterpriseProxyServers|String collection|Esta é uma lista de servidores proxy. Qualquer servidor não dessa lista é considerado fora da empresa.|
-|enterpriseProxyServersAreAuthoritative|Boolean|Valor booliano que informa ao cliente para aceitar a lista configurada de proxies e não tentar detectar outros proxies de trabalho. O padrão é false|
+|enterpriseProxyServersAreAuthoritative|Booliano|Valor booliano que informa ao cliente para aceitar a lista configurada de proxies e não tentar detectar outros proxies de trabalho. O padrão é false|
 |neutralDomainResources|String collection|Lista de nomes de domínio que podem ser usados para recursos pessoais ou de trabalho.|
 
 ## <a name="relationships"></a>Relações

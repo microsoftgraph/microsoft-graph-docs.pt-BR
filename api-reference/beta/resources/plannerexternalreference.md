@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerExternalReference
 description: O recurso de **plannerExternalReference** representa os metadados de uma referência (anexos como arquivo, URL). É o valor de pares de valor da propriedade no objeto externalReferences.
-ms.openlocfilehash: ad892b5e9f9a741e7a4994c509ac704ad1ca62a6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 104fd17698d57339de5c0d7a2ec4c5f42b254f49
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034065"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833773"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Tipo de recurso plannerExternalReference
 

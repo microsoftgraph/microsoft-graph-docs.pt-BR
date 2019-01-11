@@ -1,12 +1,13 @@
 ---
 title: Relatórios de atividades dos Grupos do Office 365
 description: Você pode obter ideias para a atividade do Office 365 grupos em sua organização e ver quantos grupos do Office 365 estão sendo criadas e usadas.
-ms.openlocfilehash: fed72d93c9a5fcdf5f6c30cf122ce4d838662a01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 69d1e4e1b52a5221831c5c335c23fe1e1016c398
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850033"
 ---
 # <a name="office-365-groups-activity-reports"></a>Relatórios de atividades dos Grupos do Office 365
 

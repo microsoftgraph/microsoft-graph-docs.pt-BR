@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de privilegedRoleSettings
 description: Representa as configurações para uma função privilegiada.
-ms.openlocfilehash: 14b4919d653de80c97f06aff507c011162c3c0e4
-ms.sourcegitcommit: 2532b8dd7f2533d956e2600855b3daeabdd9b8ff
+localization_priority: Normal
+ms.openlocfilehash: 971c48ce3ecdd2a219a111f3a11884377e20430c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27041223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842739"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso de privilegedRoleSettings
 

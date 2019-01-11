@@ -1,12 +1,13 @@
 ---
 title: Atualizar bookingservice
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: e39ad73b7f9acf2337db517e67895bc4601598a1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6eee5949d5d8cee23821d726563b4687febd77a7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035348"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838917"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
@@ -50,12 +51,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |defaultPrice|Duplo|O preço monetários padrão para o serviço.|
 |defaultPriceType|string|A maneira padrão de serviço é cobrada. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|coleção [bookingReminder](../resources/bookingreminder.md)|O padrão é definido de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente quando a ler este **bookingService** pela sua identificação.|
-|description|String|Uma descrição de texto para o serviço.|
-|displayName|String|Um nome de serviço.|
-|emailAddress|String|Um endereço de email|
-|id|String| Somente leitura.|
+|description|Cadeia de caracteres|Uma descrição de texto para o serviço.|
+|displayName|Cadeia de caracteres|Um nome de serviço.|
+|emailAddress|Cadeia de caracteres|Um endereço de email|
+|id|Cadeia de caracteres| Somente leitura.|
 |isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes de reserva.|
-|Observações|String|Informações adicionais sobre esse serviço.|
+|Observações|Cadeia de caracteres|Informações adicionais sobre esse serviço.|
 |postBuffer|Duração|Encerra o tempo de buffer após um compromisso para este serviço e antes que a próxima compromisso do cliente pode ser agendado.|
 |preBuffer|Duração|O tempo de buffer antes de um compromisso para esse serviço pode iniciar.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de diretivas que determinam como compromissos para esse tipo de serviço devem ser criados e gerenciados.|

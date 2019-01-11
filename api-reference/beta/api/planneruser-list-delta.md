@@ -2,12 +2,13 @@
 title: 'Planejador: delta'
 description: Recupera as alterações em objetos que o usuário está inscrito em.
 author: TarkanSevilmis
-ms.openlocfilehash: dcc60ad9c1bc5ea9e56099d4bc79fb57d4e95374
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4fe4ed9164c5baf9aea8819ba4f3140c23ec87d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838637"
 ---
 # <a name="planner-delta"></a>Planejador: delta
 
@@ -21,7 +22,7 @@ O valor de retorno deste método deve conter heterogêneo tipos de objetos do pl
 
 Para obter mais informações sobre o controle de alterações nos dados do Microsoft Graph, consulte [consulta delta de usar para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

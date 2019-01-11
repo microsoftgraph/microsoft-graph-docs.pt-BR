@@ -1,12 +1,13 @@
 ---
 title: 'post: forward'
 description: 'Encaminhe uma postagem para um destinatário. Você pode especificar a conversa pai e um thread na solicitação, '
-ms.openlocfilehash: 06dadc321edb1a3e37a0d09e6fcc07ec029d2945
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b670338061d70b4ee8663d443d1bb5706f9e9157
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837321"
 ---
 # <a name="post-forward"></a>post: forward
 

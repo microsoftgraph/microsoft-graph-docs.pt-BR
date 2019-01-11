@@ -2,12 +2,13 @@
 title: Excluir androidForWorkApp
 description: Exclui um androidForWorkApp.
 author: tfitzmac
-ms.openlocfilehash: 53ea38fe0e16f4222a9cf65395565787f63d2745
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dac70608702f7f3647187db654e42bfa62bc339f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833758"
 ---
 # <a name="delete-androidforworkapp"></a>Excluir androidForWorkApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Tipo de recurso reportRoot
 description: O recurso que representa uma instância dos Relatórios de históricos.
 author: tfitzmac
-ms.openlocfilehash: 46b4844487a1cb714dde791e6867c277c1693f66
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53fedc78575e48d77419a598b73e1760c8c6457c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303966"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850285"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 

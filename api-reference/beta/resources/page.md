@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso page
 description: Uma página em um bloco de anotações do OneNote.
-ms.openlocfilehash: 82b9ca00cb4488c33e73daa94844b11f8de301cd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5928f430fcbfe9f41c6aa83e99d7dfe737e8e1c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850131"
 ---
 # <a name="page-resource-type"></a>Tipo de recurso page
 

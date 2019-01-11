@@ -1,12 +1,13 @@
 ---
 title: Atualizar educationassignment
 description: Atualize o objeto assignment. Somente professores na classe podem fazer isso. Observe que você não pode usar uma solicitação de PATCH para alterar o status de uma atribuição. Use a ação de publicação para alterar o status da atribuição.
-ms.openlocfilehash: 8b23b7ac4b971856ed7a96b4991fca2e5220d069
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035892"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838287"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -43,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |allowStudentsToAddResourcesToSubmission|Booliano| Se um estudante pode adicionar recursos para o envio de um. Indicado se os únicos itens no envio provém da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada aos alunos. |
 |assignTo|educationAssignmentRecipient| Alunos que fazer a atribuição.|
-|displayName|String| Nome da atribuição. |
+|displayName|Cadeia de caracteres| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| Atribuição de data deve ser concluída. |
 |classificação|educationAssignmentGradeType| Como a atribuição vai ser Graduada.|
 |instruções|itemBody| Instruções a ser dada aos alunos junto com a atribuição. |

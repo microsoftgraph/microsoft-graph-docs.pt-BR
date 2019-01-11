@@ -2,12 +2,13 @@
 title: Excluir messageRule
 description: Exclua o objeto messageRule especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: 5fe208b72ddc28ca3d2ee5d2b0f1c48113e49c64
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2c303ffda5f9f43273178a6b23c72ee465b569dc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842305"
 ---
 # <a name="delete-messagerule"></a>Excluir messageRule
 

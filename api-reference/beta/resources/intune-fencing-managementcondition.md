@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de managementCondition
 description: Condições de gerenciamento são eventos que podem ser disparados dinamicamente como limites de geo, limites de tempo e limites de rede.
-ms.openlocfilehash: 3c2bc1d7594e61642b96398bfb55d6aa38f3283d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035173"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834108"
 ---
 # <a name="managementcondition-resource-type"></a>tipo de recurso de managementCondition
 
@@ -25,10 +26,10 @@ Condições de gerenciamento são eventos que podem ser disparados dinamicamente
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
-|nome exclusivo|String|Nome exclusivo para a condição de gerenciamento. Usadas nas expressões de condição de gerenciamento.|
-|displayName|String|O nome definido admin da condição de gerenciamento.|
-|description|String|O administrador definidos descrição da condição de gerenciamento.|
+|id|Cadeia de caracteres|Identificador exclusivo para a condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
+|nome exclusivo|Cadeia de caracteres|Nome exclusivo para a condição de gerenciamento. Usadas nas expressões de condição de gerenciamento.|
+|displayName|Cadeia de caracteres|O nome definido admin da condição de gerenciamento.|
+|description|Cadeia de caracteres|O administrador definidos descrição da condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora que da última modificação a condição de gerenciamento. Lado de serviços atualizado.|
 |eTag|String|ETag da condição de gerenciamento. Lado de serviços atualizado.|

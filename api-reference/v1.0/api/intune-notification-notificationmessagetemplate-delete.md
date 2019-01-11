@@ -2,12 +2,13 @@
 title: Excluir notificationMessageTemplate
 description: Exclui notificationMessageTemplate.
 author: tfitzmac
-ms.openlocfilehash: e96282d028b9d5db7c7258b8db96a2c9ca884786
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4a5cf523ebd306c108cfe2e1888038b7fd4ee6d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325757"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834766"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Excluir notificationMessageTemplate
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

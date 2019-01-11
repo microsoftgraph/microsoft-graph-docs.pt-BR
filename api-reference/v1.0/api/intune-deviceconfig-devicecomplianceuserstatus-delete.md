@@ -2,12 +2,13 @@
 title: Excluir deviceComplianceUserStatus
 description: Exclui deviceComplianceUserStatus.
 author: tfitzmac
-ms.openlocfilehash: 14bd169fb65c839e96a7405d8d99c5313f8c547b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6fa4542b28fb49be9d23c0cbfcabdd5ba058c018
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835676"
 ---
 # <a name="delete-devicecomplianceuserstatus"></a>Excluir deviceComplianceUserStatus
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/use
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

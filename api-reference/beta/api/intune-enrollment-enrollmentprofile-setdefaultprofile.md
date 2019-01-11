@@ -2,12 +2,13 @@
 title: ação de setDefaultProfile
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: e2399dcbdcef0d1fcec7515c7eb64ec3c865c855
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4be78e91767d1623c2d8370eaccec5b0e78727de
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836873"
 ---
 # <a name="setdefaultprofile-action"></a>ação de setDefaultProfile
 
@@ -38,7 +39,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

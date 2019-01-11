@@ -2,18 +2,19 @@
 title: Configurações de atualização
 description: 'Atualize as propriedades do objeto de configurações. '
 author: dkershaw10
-ms.openlocfilehash: 571acf47852e703ee3bb20bd0c37cc5736cc4f1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f39c0a2e98951bb61b0a9af1b5a1a196248d6118
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320248"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836243"
 ---
 # <a name="update-settings"></a>Configurações de atualização
 
 Atualize as propriedades do objeto de [configurações](../resources/user-settings.md) . Os usuários na mesma organização podem ter configurações diferentes com base em suas preferências ou nas diretivas de organização. Para obter as configurações atuais de usuário, consulte [configurações do usuário atual](user-get-settings.md). 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -48,7 +49,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|Definido como verdadeiro desabilitar o acesso de representante a [tendência](/graph/api/resources/insights-trending?view=graph-rest-beta) API e para desabilitar o acesso a documentos do Office me aprofundar para o usuário. Configuração como true também afeta a relevância do conteúdo exibido no Office 365 - por exemplo, sites sugeridos na página inicial do SharePoint e o modo de descoberta no OneDrive for Business mostram resultados menos relevantes. Essa configuração reflete o estado de controle no [Office me aprofundar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Booliano|Definido como verdadeiro desabilitar o acesso de representante a [tendência](/graph/api/resources/insights-trending?view=graph-rest-beta) API e para desabilitar o acesso a documentos do Office me aprofundar para o usuário. Configuração como true também afeta a relevância do conteúdo exibido no Office 365 - por exemplo, sites sugeridos na página inicial do SharePoint e o modo de descoberta no OneDrive for Business mostram resultados menos relevantes. Essa configuração reflete o estado de controle no [Office me aprofundar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Exemplo 
 

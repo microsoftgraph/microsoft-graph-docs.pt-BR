@@ -2,12 +2,13 @@
 title: 'TableRowCollection: ItemAt'
 description: Obtém uma linha com base em sua posição na coleção.
 author: lumine2008
-ms.openlocfilehash: 3a093dd9ee56d4377cdad1c9ba37c02790ffa1d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 01b0d1e5ba480479752ca3ac9469697ca49ca5c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323419"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27834178"
 ---
 # <a name="tablerowcollection-itemat"></a>TableRowCollection: ItemAt
 
@@ -39,9 +40,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/ItemAt
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|número|Valor de índice do objeto a ser recuperado. Indexados com zero.|
+|índice|number|Valor de índice do objeto a ser recuperado. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 

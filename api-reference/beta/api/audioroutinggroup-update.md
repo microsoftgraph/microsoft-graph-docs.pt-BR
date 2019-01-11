@@ -2,12 +2,13 @@
 title: Atualizar o grupo de roteamento de áudio
 description: Modificar fontes e receptores de um audioRoutingGroup.
 author: VinodRavichandran
-ms.openlocfilehash: f1fac21e2d52818ee068bfe64e8db7853332d993
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380363"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27833835"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar o grupo de roteamento de áudio
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380363"
 
 Modificar fontes e receptores de um [audioRoutingGroup](../resources/audioroutinggroup.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +40,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade	       | Tipo    |Descrição|
+| Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 | receptores | String collection | Os participantes de destino no audioRoutingGroup. |
 | routingMode | String | Os valores possíveis são: `oneToOne` e `multicast`. |

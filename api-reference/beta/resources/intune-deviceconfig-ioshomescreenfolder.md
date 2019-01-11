@@ -2,12 +2,13 @@
 title: Tipo de recurso iosHomeScreenFolder
 description: Uma pasta que contém as páginas de aplicativos na tela inicial
 author: tfitzmac
-ms.openlocfilehash: 983337c4376bb6212607630f96008a2c8a36b22b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 82e94f282e4d338c0422c613a0163a40ce76762e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835851"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Tipo de recurso iosHomeScreenFolder
 

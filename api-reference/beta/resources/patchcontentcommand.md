@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso patchContentCommand
 description: As alterações a serem feitas em uma página do OneNote em uma solicitação PATCH.
-ms.openlocfilehash: fb559a96aa5eef94dd07280b888da0df989b2363
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2e94f67a2a4e2e549d7367f0c48e31745d3bf659
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039937"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842725"
 ---
 # <a name="patchcontentcommand-resource-type"></a>Tipo de recurso patchContentCommand
 
@@ -40,7 +41,7 @@ Veja a seguir uma representação JSON do recurso, que é enviado no corpo da so
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |ação|String|A ação a ser executada no elemento de destino. Os valores possíveis são: `replace`, `append`, `delete`, `insert` ou `prepend`.|
-|content|String|Uma cadeia de caracteres de HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada usando o tipo de conteúdo `multipart/form-data` com uma parte "Commands". |
+|content|Cadeia de caracteres|Uma cadeia de caracteres de HTML bem formado para adicionar à página e dados binários de imagem ou arquivo. Se o conteúdo contiver dados binários, a solicitação deverá ser enviada usando o tipo de conteúdo `multipart/form-data` com uma parte "Commands". |
 |position|String|O local para adicionar o conteúdo fornecido em relação ao elemento de destino. Os valores possíveis são: `after` (padrão) ou `before`.|
 |destino|String|O elemento a atualizar. Deve ser `#<data-id>` ou o `<id>` gerado do elemento ou o `body` ou a palavra-chave de `title`.|
 

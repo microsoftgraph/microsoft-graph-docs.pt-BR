@@ -1,19 +1,20 @@
 ---
 title: Obter orgContact
 description: Recupere as propriedades e relações do objeto orgcontact.
-ms.openlocfilehash: 9297297bf341d622070c6ca200d99087588a8ce6
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: 4a806c48ef7fc9adc4a8eb94bc7c28e3add78d14
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283609"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842928"
 ---
 # <a name="get-orgcontact"></a>Obter orgContact
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere as propriedades e relações do objeto orgcontact.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

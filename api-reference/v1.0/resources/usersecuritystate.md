@@ -2,12 +2,13 @@
 title: tipo de recurso de userSecurityState
 description: Contém informações com informações de estado sobre a conta de usuário.
 author: dkershaw10
-ms.openlocfilehash: 5347ec599b88ffa65138c44cfb294339585484c8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d972ee674fbd1553e2b76a52876bc50274466c8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27845847"
 ---
 # <a name="usersecuritystate-resource-type"></a>tipo de recurso de userSecurityState
 
@@ -17,20 +18,20 @@ Contém informações com informações de estado sobre a conta de usuário.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|aadUserId|String|Usuário AAD objeto GUID (identificador) - representa a entidade de usuário físicos/multi-account.|
-|accountName|String|Nome da conta de usuário (sem o domínio do Active Directory ou domínio DNS) - conta (também chamado de `mailNickName`).|
+|aadUserId|Cadeia de caracteres|Usuário AAD objeto GUID (identificador) - representa a entidade de usuário físicos/multi-account.|
+|accountName|Cadeia de caracteres|Nome da conta de usuário (sem o domínio do Active Directory ou domínio DNS) - conta (também chamado de `mailNickName`).|
 |domainName|Cadeia de caracteres|Domínio NetBIOS/Active Directory da conta de usuário (ou seja, o formato domínio \ conta).|
 |emailRole|emailRole|Para alertas relacionados a email - o email de uma conta de usuário 'função'. Os valores possíveis são: `unknown`, `sender`, `recipient`.|
-|isVpn|Boolean|Indica se o usuário conectado por meio da VPN.|
+|isVpn|Booliano|Indica se o usuário conectado por meio da VPN.|
 |logonDateTime|DateTimeOffset|Hora em que a entrar ocorreu. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|identificação de logon|String|ID de usuário entrar.|
-|logonIp|String|Endereço IP que a solicitação de entrada se originou.|
-|logonLocation|String|Local (por um mapeamento de endereço IP) associado a um evento de entrada do usuário por esse usuário.|
+|identificação de logon|Cadeia de caracteres|ID de usuário entrar.|
+|logonIp|Cadeia de caracteres|Endereço IP que a solicitação de entrada se originou.|
+|logonLocation|Cadeia de caracteres|Local (por um mapeamento de endereço IP) associado a um evento de entrada do usuário por esse usuário.|
 |logonType|logonType|Método do usuário entrar. Os possíveis valores são: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 |onPremisesSecurityIdentifier|String|Active Directory (no local) identificador de segurança (SID) do usuário.|
-|riskScore|String|Pontuação de provedor gerado/calculado em risco da conta de usuário. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
+|riskScore|Cadeia de caracteres|Pontuação de provedor gerado/calculado em risco da conta de usuário. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
 |userAccountType|userAccountSecurityType|Tipo de conta de usuário (membros do grupo), por definição do Windows. Os valores possíveis são: `unknown`, `standard`, `power`, `administrator`.|
-|userPrincipalName|String|Entrar nome de usuário - formato da internet: (nome de conta de usuário) @(nome de domínio do DNS de conta de usuário).|
+|userPrincipalName|Cadeia de caracteres|Entrar nome de usuário - formato da internet: (nome de conta de usuário) @(nome de domínio do DNS de conta de usuário).|
 
 ## <a name="json-representation"></a>Representação JSON
 

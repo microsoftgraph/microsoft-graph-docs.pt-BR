@@ -2,12 +2,13 @@
 title: tipo de recurso de unsupportedDeviceConfigurationDetail
 description: Uma descrição por que não há suporte para uma entidade.
 author: tfitzmac
-ms.openlocfilehash: 4cccf49366a803e5f964605a4dc4ba7f56707823
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0a213961e6b816917b061bc56c792cf9a60e3a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839470"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso de unsupportedDeviceConfigurationDetail
 
@@ -20,7 +21,7 @@ Uma descrição por que não há suporte para uma entidade.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mensagem|String|Uma mensagem que explica por que não há suporte para uma entidade.|
-|propertyName|String|Se a mensagem está relacionada a uma propriedade específica à entidade original e, em seguida, o nome dessa propriedade.|
+|propertyName|Cadeia de caracteres|Se a mensagem está relacionada a uma propriedade específica à entidade original e, em seguida, o nome dessa propriedade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

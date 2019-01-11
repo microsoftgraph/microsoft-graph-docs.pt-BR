@@ -2,12 +2,13 @@
 title: Obter windowsManagementAppHealthSummary
 description: Leia as propriedades e os relacionamentos do objeto windowsManagementAppHealthSummary.
 author: tfitzmac
-ms.openlocfilehash: 36114684b03f1945fe6a302c44b6b04af751f938
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d6f86303130f9e25e77b016854eea81ead05e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335172"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27842123"
 ---
 # <a name="get-windowsmanagementapphealthsummary"></a>Obter windowsManagementAppHealthSummary
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

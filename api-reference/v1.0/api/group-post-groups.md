@@ -2,12 +2,13 @@
 title: Criar grupo
 description: 'Use esta API para criar um novo grupo conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:'
 author: dkershaw10
-ms.openlocfilehash: 2fff86d3bc86a8e78c295b1a4553006ac416ddd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 3f6a73b6fd2dcf76bb1ebd0fab4c02a673a1be8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322957"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849417"
 ---
 # <a name="create-group"></a>Criar grupo
 Use esta API para criar um novo grupo conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:

@@ -2,12 +2,13 @@
 title: Avisar o tipo de recurso
 description: Solicitar tipo base da ação.
 author: VinodRavichandran
-ms.openlocfilehash: 27018cf841641ac3f7fc2eba6f6304d911c3a7cd
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 2ea047ce21cb339f65bd6af8f361b2e91cd443f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837559"
 ---
 # <a name="prompt-resource-type"></a>Avisar o tipo de recurso
 

@@ -2,12 +2,13 @@
 title: tipo de enum vpnTrafficRuleAppType
 description: Indica o tipo de aplicativo que uma regra de tráfego VPN está associada.
 author: tfitzmac
-ms.openlocfilehash: 3ab20bf62029e57c93c80d5f49d964abb58a883d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 71e0af722c690188b3bb0e9dc33327f443cc9086
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347352"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27835809"
 ---
 # <a name="vpntrafficruleapptype-enum-type"></a>tipo de enum vpnTrafficRuleAppType
 
@@ -19,7 +20,7 @@ Indica o tipo de aplicativo que uma regra de tráfego VPN está associada.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|A regra de tráfego não está associada um aplicativo.|
+|nenhum|0|A regra de tráfego não está associada um aplicativo.|
 |área de trabalho|1|A regra de tráfego é associada um aplicativo de área de trabalho.|
 |universal|2|A regra de tráfego é associada um aplicativo Universal.|
 

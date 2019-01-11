@@ -2,12 +2,13 @@
 title: Lista androidForWorkCustomConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 95ace512553d17e4c9d40bcfecbfd432fc2c3b93
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b36a2d84bc68c5298d76fa05742e52c823aa689
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359791"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836964"
 ---
 # <a name="list-androidforworkcustomconfigurations"></a>Lista androidForWorkCustomConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

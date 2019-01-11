@@ -1,12 +1,13 @@
 ---
 title: 'driveItem: visualização'
 description: Essa ação permite que você obtenha URLs incorporáveis temporários e para um item para processar uma visualização temporária.
-ms.openlocfilehash: 741e449c972ad372aae30d9921cdb3b7fa1fc40d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c04a73d514dfb5a92030c4c2016579d469063f9d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850768"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -49,7 +50,7 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 |   Nome      |  Tipo         | Descrição
 |:------------|:--------------|:-----------------------------------------------
 | página        | número de sequência de caracteres / | Opcional. Número de página do documento para iniciar em, se aplicável. Especificado como cadeia de caracteres para uso futuro casos em torno de tipos de arquivo como ZIP.
-| zoom        | número        | Opcional. Amplie o nível para iniciar em, se aplicável.
+| zoom        | number        | Opcional. Amplie o nível para iniciar em, se aplicável.
 
 ## <a name="response"></a>Resposta
 

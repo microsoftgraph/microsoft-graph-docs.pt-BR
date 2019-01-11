@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsInformationProtectionIPRangeCollection
 description: Coleção de intervalos de IP da Proteção de Informações do Windows
 author: tfitzmac
-ms.openlocfilehash: 6767a69ab1f3fe1b90c2a6b6fc7e76ea1abe2d99
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 73995f6b8f5e376de53ec88772dc3713cc179f3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838602"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionIPRangeCollection
 
