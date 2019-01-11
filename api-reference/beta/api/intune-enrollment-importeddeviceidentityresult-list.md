@@ -2,30 +2,31 @@
 title: Lista importedDeviceIdentityResults
 description: Lista as propriedades e os relacionamentos dos objetos importedDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: e7d876c649d3f088d238e2fc804e61fbcddbf8b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0723c35588d73ca38dbd16208fffdb4ce02c010a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822208"
 ---
-# <a name="list-importeddeviceidentityresults"></a><span data-ttu-id="eda21-103">Lista importedDeviceIdentityResults</span><span class="sxs-lookup"><span data-stu-id="eda21-103">List importedDeviceIdentityResults</span></span>
+# <a name="list-importeddeviceidentityresults"></a><span data-ttu-id="96e69-103">Lista importedDeviceIdentityResults</span><span class="sxs-lookup"><span data-stu-id="96e69-103">List importedDeviceIdentityResults</span></span>
 
-> <span data-ttu-id="eda21-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="eda21-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="eda21-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="eda21-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="96e69-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="96e69-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="96e69-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="96e69-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="eda21-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="eda21-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="96e69-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="96e69-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="eda21-107">Lista as propriedades e os relacionamentos dos objetos [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) .</span><span class="sxs-lookup"><span data-stu-id="eda21-107">List properties and relationships of the [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="eda21-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="eda21-108">Prerequisites</span></span>
-<span data-ttu-id="eda21-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eda21-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="96e69-107">Lista as propriedades e os relacionamentos dos objetos [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) .</span><span class="sxs-lookup"><span data-stu-id="96e69-107">List properties and relationships of the [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="96e69-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="96e69-108">Prerequisites</span></span>
+<span data-ttu-id="96e69-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96e69-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="eda21-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="eda21-111">Permission type</span></span>|<span data-ttu-id="eda21-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="eda21-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="96e69-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="96e69-111">Permission type</span></span>|<span data-ttu-id="96e69-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="96e69-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="eda21-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="eda21-113">Delegated (work or school account)</span></span>|<span data-ttu-id="eda21-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="eda21-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="eda21-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="eda21-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="eda21-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="eda21-116">Not supported.</span></span>|
-|<span data-ttu-id="eda21-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="eda21-117">Application</span></span>|<span data-ttu-id="eda21-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="eda21-118">Not supported.</span></span>|
+|<span data-ttu-id="96e69-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="96e69-113">Delegated (work or school account)</span></span>|<span data-ttu-id="96e69-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="96e69-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="96e69-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="96e69-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="96e69-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96e69-116">Not supported.</span></span>|
+|<span data-ttu-id="96e69-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="96e69-117">Application</span></span>|<span data-ttu-id="96e69-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="96e69-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="eda21-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="eda21-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96e69-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="96e69-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,27 +35,27 @@ ms.locfileid: "27355598"
 GET /deviceManagement/importedDeviceIdentities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="eda21-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="eda21-120">Request headers</span></span>
-|<span data-ttu-id="eda21-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="eda21-121">Header</span></span>|<span data-ttu-id="eda21-122">Valor</span><span class="sxs-lookup"><span data-stu-id="eda21-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96e69-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="96e69-120">Request headers</span></span>
+|<span data-ttu-id="96e69-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="96e69-121">Header</span></span>|<span data-ttu-id="96e69-122">Valor</span><span class="sxs-lookup"><span data-stu-id="96e69-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="eda21-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="eda21-123">Authorization</span></span>|<span data-ttu-id="eda21-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="eda21-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="eda21-125">Accept</span><span class="sxs-lookup"><span data-stu-id="eda21-125">Accept</span></span>|<span data-ttu-id="eda21-126">application/json</span><span class="sxs-lookup"><span data-stu-id="eda21-126">application/json</span></span>|
+|<span data-ttu-id="96e69-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="96e69-123">Authorization</span></span>|<span data-ttu-id="96e69-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="96e69-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="96e69-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="96e69-125">Accept</span></span>|<span data-ttu-id="96e69-126">application/json</span><span class="sxs-lookup"><span data-stu-id="96e69-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="eda21-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="eda21-127">Request body</span></span>
-<span data-ttu-id="eda21-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="eda21-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96e69-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="96e69-127">Request body</span></span>
+<span data-ttu-id="96e69-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="96e69-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="eda21-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="eda21-129">Response</span></span>
-<span data-ttu-id="eda21-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="eda21-130">If successful, this method returns a `200 OK` response code and a collection of [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="96e69-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="96e69-129">Response</span></span>
+<span data-ttu-id="96e69-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="96e69-130">If successful, this method returns a `200 OK` response code and a collection of [importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="eda21-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="eda21-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="eda21-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="eda21-132">Request</span></span>
-<span data-ttu-id="eda21-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="eda21-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="96e69-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="96e69-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="96e69-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="96e69-132">Request</span></span>
+<span data-ttu-id="96e69-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="96e69-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities
 ```
 
-### <a name="response"></a><span data-ttu-id="eda21-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="eda21-134">Response</span></span>
-<span data-ttu-id="eda21-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eda21-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="96e69-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="96e69-134">Response</span></span>
+<span data-ttu-id="96e69-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="96e69-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

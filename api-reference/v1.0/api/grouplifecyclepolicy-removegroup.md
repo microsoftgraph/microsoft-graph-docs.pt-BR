@@ -2,54 +2,55 @@
 title: 'groupLifecyclePolicy: removeGroup'
 description: Remove um grupo de uma política de ciclo de vida.
 author: dkershaw10
-ms.openlocfilehash: a22dae0a8065653972667c7de410330d6c91a454
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b17403babef2295ce8d9c8d18b21e16c63889e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805534"
 ---
-# <a name="grouplifecyclepolicy-removegroup"></a><span data-ttu-id="1b101-103">groupLifecyclePolicy: removeGroup</span><span class="sxs-lookup"><span data-stu-id="1b101-103">groupLifecyclePolicy: removeGroup</span></span>
+# <a name="grouplifecyclepolicy-removegroup"></a><span data-ttu-id="6f931-103">groupLifecyclePolicy: removeGroup</span><span class="sxs-lookup"><span data-stu-id="6f931-103">groupLifecyclePolicy: removeGroup</span></span>
 
-<span data-ttu-id="1b101-104">Remove um grupo de uma política de ciclo de vida.</span><span class="sxs-lookup"><span data-stu-id="1b101-104">Removes a group from a lifecycle policy.</span></span>
+<span data-ttu-id="6f931-104">Remove um grupo de uma política de ciclo de vida.</span><span class="sxs-lookup"><span data-stu-id="6f931-104">Removes a group from a lifecycle policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1b101-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1b101-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6f931-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6f931-105">Permissions</span></span>
 
-<span data-ttu-id="1b101-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b101-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6f931-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f931-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1b101-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1b101-108">Permission type</span></span>      | <span data-ttu-id="1b101-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1b101-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6f931-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f931-108">Permission type</span></span>      | <span data-ttu-id="6f931-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6f931-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1b101-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1b101-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1b101-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1b101-111">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1b101-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1b101-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b101-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1b101-113">Not supported.</span></span>    |
-|<span data-ttu-id="1b101-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1b101-114">Application</span></span> | <span data-ttu-id="1b101-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1b101-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="6f931-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f931-110">Delegated (work or school account)</span></span> | <span data-ttu-id="6f931-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f931-111">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6f931-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f931-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6f931-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f931-113">Not supported.</span></span>    |
+|<span data-ttu-id="6f931-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f931-114">Application</span></span> | <span data-ttu-id="6f931-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6f931-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1b101-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1b101-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6f931-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f931-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies/{id}/removeGroup
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1b101-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1b101-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6f931-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f931-117">Request headers</span></span>
 
-| <span data-ttu-id="1b101-118">Nome</span><span class="sxs-lookup"><span data-stu-id="1b101-118">Name</span></span> | <span data-ttu-id="1b101-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="1b101-119">Description</span></span> |
+| <span data-ttu-id="6f931-118">Nome</span><span class="sxs-lookup"><span data-stu-id="6f931-118">Name</span></span> | <span data-ttu-id="6f931-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f931-119">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="1b101-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="1b101-120">Authorization</span></span> | <span data-ttu-id="1b101-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1b101-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1b101-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1b101-123">Content-Type</span></span>  | <span data-ttu-id="1b101-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1b101-124">application/json</span></span> |
+| <span data-ttu-id="6f931-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="6f931-120">Authorization</span></span> | <span data-ttu-id="6f931-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f931-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6f931-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6f931-123">Content-Type</span></span>  | <span data-ttu-id="6f931-124">application/json</span><span class="sxs-lookup"><span data-stu-id="6f931-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1b101-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1b101-125">Request body</span></span>
-<span data-ttu-id="1b101-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1b101-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6f931-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6f931-125">Request body</span></span>
+<span data-ttu-id="6f931-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f931-126">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="1b101-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="1b101-127">Parameter</span></span> | <span data-ttu-id="1b101-128">Type</span><span class="sxs-lookup"><span data-stu-id="1b101-128">Type</span></span> | <span data-ttu-id="1b101-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="1b101-129">Description</span></span> |
+| <span data-ttu-id="6f931-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="6f931-127">Parameter</span></span> | <span data-ttu-id="6f931-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f931-128">Type</span></span> | <span data-ttu-id="6f931-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f931-129">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1b101-130">groupId</span><span class="sxs-lookup"><span data-stu-id="1b101-130">groupId</span></span>|<span data-ttu-id="1b101-131">Guid</span><span class="sxs-lookup"><span data-stu-id="1b101-131">Guid</span></span>| <span data-ttu-id="1b101-132">A ID do grupo que será removido da política.</span><span class="sxs-lookup"><span data-stu-id="1b101-132">The id of the group to remove from the policy.</span></span>|
+|<span data-ttu-id="6f931-130">groupId</span><span class="sxs-lookup"><span data-stu-id="6f931-130">groupId</span></span>|<span data-ttu-id="6f931-131">Guid</span><span class="sxs-lookup"><span data-stu-id="6f931-131">Guid</span></span>| <span data-ttu-id="6f931-132">A ID do grupo que será removido da política.</span><span class="sxs-lookup"><span data-stu-id="6f931-132">The id of the group to remove from the policy.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1b101-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1b101-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6f931-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f931-133">Response</span></span>
 
-<span data-ttu-id="1b101-134">Quando é bem-sucedido, este método retorna um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="1b101-134">If successful, this method returns `200 OK` response code.</span></span> <span data-ttu-id="1b101-135">Quando o grupo é removido da política, o valor **true** é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1b101-135">If the group is removed from the policy, a **true** value is returned in the response body.</span></span> <span data-ttu-id="1b101-136">Caso contrário, um valor **false** é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1b101-136">Otherwise, a **false** value is returned in the reponse body.</span></span>
+<span data-ttu-id="6f931-134">Quando é bem-sucedido, este método retorna um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="6f931-134">If successful, this method returns `200 OK` response code.</span></span> <span data-ttu-id="6f931-135">Quando o grupo é removido da política, o valor **true** é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f931-135">If the group is removed from the policy, a **true** value is returned in the response body.</span></span> <span data-ttu-id="6f931-136">Caso contrário, um valor **false** é retornado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f931-136">Otherwise, a **false** value is returned in the reponse body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1b101-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1b101-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6f931-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6f931-137">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1b101-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1b101-138">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="6f931-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f931-138">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -65,7 +66,7 @@ Content-length: 57
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="1b101-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="1b101-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="6f931-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f931-139">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http

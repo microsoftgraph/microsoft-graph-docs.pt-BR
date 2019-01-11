@@ -1,26 +1,27 @@
 ---
 title: 'Range: insert'
 description: Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.
-ms.openlocfilehash: 242db28474965493ceb8a584e8d9fb01679f13d2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 78cd2d4018a96428b7e5336d00ca20bada4abd36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003507"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27804869"
 ---
-# <a name="range-insert"></a><span data-ttu-id="db3ea-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="db3ea-104">Range: insert</span></span>
+# <a name="range-insert"></a><span data-ttu-id="399a2-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="399a2-104">Range: insert</span></span>
 
-<span data-ttu-id="db3ea-p102">Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.</span><span class="sxs-lookup"><span data-stu-id="db3ea-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
-## <a name="permissions"></a><span data-ttu-id="db3ea-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="db3ea-107">Permissions</span></span>
-<span data-ttu-id="db3ea-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db3ea-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="399a2-p102">Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.</span><span class="sxs-lookup"><span data-stu-id="399a2-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
+## <a name="permissions"></a><span data-ttu-id="399a2-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="399a2-107">Permissions</span></span>
+<span data-ttu-id="399a2-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="399a2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="db3ea-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="db3ea-110">Permission type</span></span>      | <span data-ttu-id="db3ea-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="db3ea-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="399a2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="399a2-110">Permission type</span></span>      | <span data-ttu-id="399a2-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="399a2-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="db3ea-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="db3ea-112">Delegated (work or school account)</span></span> | <span data-ttu-id="db3ea-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="db3ea-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="db3ea-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="db3ea-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db3ea-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="db3ea-115">Not supported.</span></span>    |
-|<span data-ttu-id="db3ea-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="db3ea-116">Application</span></span> | <span data-ttu-id="db3ea-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="db3ea-117">Not supported.</span></span> |
+|<span data-ttu-id="399a2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="399a2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="399a2-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="399a2-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="399a2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="399a2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="399a2-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="399a2-115">Not supported.</span></span>    |
+|<span data-ttu-id="399a2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="399a2-116">Application</span></span> | <span data-ttu-id="399a2-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="399a2-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="db3ea-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="db3ea-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="399a2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="399a2-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/insert
@@ -28,27 +29,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="db3ea-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="db3ea-119">Request headers</span></span>
-| <span data-ttu-id="db3ea-120">Nome</span><span class="sxs-lookup"><span data-stu-id="db3ea-120">Name</span></span>       | <span data-ttu-id="db3ea-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="db3ea-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="399a2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="399a2-119">Request headers</span></span>
+| <span data-ttu-id="399a2-120">Nome</span><span class="sxs-lookup"><span data-stu-id="399a2-120">Name</span></span>       | <span data-ttu-id="399a2-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="399a2-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="db3ea-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="db3ea-122">Authorization</span></span>  | <span data-ttu-id="db3ea-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="db3ea-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="db3ea-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="db3ea-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="db3ea-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="db3ea-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="399a2-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="399a2-122">Authorization</span></span>  | <span data-ttu-id="399a2-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="399a2-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="399a2-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="399a2-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="399a2-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="399a2-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="db3ea-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="db3ea-128">Request body</span></span>
-<span data-ttu-id="db3ea-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="db3ea-129">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="399a2-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="399a2-128">Request body</span></span>
+<span data-ttu-id="399a2-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="399a2-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="db3ea-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="db3ea-130">Parameter</span></span>    | <span data-ttu-id="db3ea-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="db3ea-131">Type</span></span>   |<span data-ttu-id="db3ea-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="db3ea-132">Description</span></span>|
+| <span data-ttu-id="399a2-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="399a2-130">Parameter</span></span>    | <span data-ttu-id="399a2-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="399a2-131">Type</span></span>   |<span data-ttu-id="399a2-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="399a2-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="db3ea-133">shift</span><span class="sxs-lookup"><span data-stu-id="db3ea-133">shift</span></span>|<span data-ttu-id="db3ea-134">string</span><span class="sxs-lookup"><span data-stu-id="db3ea-134">string</span></span>|<span data-ttu-id="db3ea-135">Especifica como deslocar as células.</span><span class="sxs-lookup"><span data-stu-id="db3ea-135">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="db3ea-136">Os valores possíveis são: `Down`, `Right`.</span><span class="sxs-lookup"><span data-stu-id="db3ea-136">The possible values are: `Down`, `Right`.</span></span>|
+|<span data-ttu-id="399a2-133">shift</span><span class="sxs-lookup"><span data-stu-id="399a2-133">shift</span></span>|<span data-ttu-id="399a2-134">string</span><span class="sxs-lookup"><span data-stu-id="399a2-134">string</span></span>|<span data-ttu-id="399a2-135">Especifica como deslocar as células.</span><span class="sxs-lookup"><span data-stu-id="399a2-135">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="399a2-136">Os valores possíveis são: `Down`, `Right`.</span><span class="sxs-lookup"><span data-stu-id="399a2-136">The possible values are: `Down`, `Right`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="db3ea-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="db3ea-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="399a2-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="399a2-137">Response</span></span>
 
-<span data-ttu-id="db3ea-138">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="db3ea-138">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="399a2-138">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="399a2-138">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="db3ea-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="db3ea-139">Example</span></span>
-<span data-ttu-id="db3ea-140">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="db3ea-140">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="db3ea-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="db3ea-141">Request</span></span>
-<span data-ttu-id="db3ea-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="db3ea-142">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="399a2-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="399a2-139">Example</span></span>
+<span data-ttu-id="399a2-140">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="399a2-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="399a2-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="399a2-141">Request</span></span>
+<span data-ttu-id="399a2-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="399a2-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_insert"
@@ -63,8 +64,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="db3ea-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="db3ea-143">Response</span></span>
-<span data-ttu-id="db3ea-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="db3ea-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="399a2-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="399a2-143">Response</span></span>
+<span data-ttu-id="399a2-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="399a2-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
