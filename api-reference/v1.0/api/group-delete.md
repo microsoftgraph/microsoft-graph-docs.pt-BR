@@ -2,12 +2,13 @@
 title: Excluir grupo
 description: Excluir o grupo.
 author: dkershaw10
-ms.openlocfilehash: 6377c3d7865ebcc1ef13a649afbde083163e7048
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9d2e9cbe3a86906c815178b570cd6d7980ac89e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326275"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808306"
 ---
 # <a name="delete-group"></a>Excluir grupo
 Excluir o grupo.

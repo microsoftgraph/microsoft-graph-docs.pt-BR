@@ -2,12 +2,13 @@
 title: Get windowsPhone81CompliancePolicy
 description: Ler propriedades e relações do objeto windowsPhone81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 282a70a78178b3cd7df2d018248f9c2da5fc2389
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e20c509b97ccea78f2af5892a9e4b88a5bad0bb9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358272"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27824868"
 ---
 # <a name="get-windowsphone81compliancepolicy"></a>Get windowsPhone81CompliancePolicy
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

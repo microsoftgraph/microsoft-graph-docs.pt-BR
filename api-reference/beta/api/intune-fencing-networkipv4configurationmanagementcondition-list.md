@@ -2,12 +2,13 @@
 title: Lista networkIPv4ConfigurationManagementConditions
 description: Lista as propriedades e os relacionamentos dos objetos networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: 6e1707fa85788fb5085f37654645b0863b5a8b46
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f4fd7516320780850197a46f4abd83b18304d03
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363610"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828396"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Lista networkIPv4ConfigurationManagementConditions
 
@@ -39,7 +40,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

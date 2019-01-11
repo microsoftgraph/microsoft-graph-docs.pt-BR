@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de secureScores
 description: 'superior = n, onde n = o número de dias de dados que você deseja recuperar. '
-ms.openlocfilehash: 96d5c487bb854559b0128d93ea8e0783fcc61f0c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033980"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828732"
 ---
 # <a name="securescores-resource-type"></a>tipo de recurso de secureScores
 
@@ -27,9 +28,9 @@ Propriedades que contêm de tipo de entidade de segurança locatário pontuaçã
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   ID de cadeia de caracteres do GUID para o inquilino.  |
+|   azureTenantId   |   Cadeia de caracteres  |   ID de cadeia de caracteres do GUID para o inquilino.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
-|   id  |   String  |   Combinação de azureTenantId_createdDateTime.   |
+|   id  |   Cadeia de caracteres  |   Combinação de azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Licenciado contagem de usuários do determinado inquilino.    |
 |   activeUserCount |   Int32   |   Contagem de usuário ativo do determinado inquilino.  |
 |   currentScore    |   Duplo  |   Pontuação de locatário atual que já alcançou na data especificada.    |

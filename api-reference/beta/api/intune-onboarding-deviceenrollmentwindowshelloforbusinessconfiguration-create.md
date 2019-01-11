@@ -2,12 +2,13 @@
 title: Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Crie um novo objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f45ad5764521c8ab94ab4742764ee4a73ddfc660
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dd395803e5940855c3eb21e5ca1ca8b8b1ec3bdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829488"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Criar deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceEnrollmentWindowsHelloForBusinessConfiguration.

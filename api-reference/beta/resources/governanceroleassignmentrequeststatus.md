@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de governanceRoleAssignmentRequestStatus
 description: Representa o status do governanceRoleAssignmentRequest.
-ms.openlocfilehash: 06b0f17513d5d796d3fe71cbd3888963bc4a34ca
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c5daac53661cc607d51e5bfd1ec9031cfa599fca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034771"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808068"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso de governanceRoleAssignmentRequestStatus
 
@@ -18,8 +19,8 @@ Representa o status do [governanceRoleAssignmentRequest](../resources/governance
 ## <a name="properties"></a>Propriedades
 Propriedade       | Tipo |Descrição|
 |:----|:-------------|:-----|
-|status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.|
-|subStatus |String| O status de sub da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, e `ProvisioningStarted`.|
+|status |Cadeia de caracteres| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.|
+|subStatus |Cadeia de caracteres| O status de sub da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, e `ProvisioningStarted`.|
 |statusDetails       |coleção [keyValue](../resources/keyvalue.md)| Os detalhes do status da solicitação de atribuição de função. Ele representa os resultados de avaliação de regras diferentes. |
 
 ## <a name="json-representation"></a>Representação JSON

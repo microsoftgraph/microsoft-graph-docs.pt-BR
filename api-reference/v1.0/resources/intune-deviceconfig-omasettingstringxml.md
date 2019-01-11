@@ -2,12 +2,13 @@
 title: Tipo de recurso omaSettingStringXml
 description: Definição de StringXML para configurações de OMA.
 author: tfitzmac
-ms.openlocfilehash: c7f7d07a94550d86e6507e9202195d09e9555f60
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 263325829895c87a3aa8b443970f92df667a04ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332008"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829580"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 

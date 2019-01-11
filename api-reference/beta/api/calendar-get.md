@@ -1,12 +1,13 @@
 ---
 title: Obter calendário
 description: 'Obtenha as propriedades e as relações de um objeto calendar. O calendário pode ser uma para um usuário, '
-ms.openlocfilehash: b4dd218e25d154fa1641a7a62d3b79790a15f7da
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6c6deaaeb0cef1ae33c70a1140f835024dc093fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829520"
 ---
 # <a name="get-calendar"></a>Obter calendário
 

@@ -2,12 +2,13 @@
 title: Obter evento
 description: Obtenha as propriedades e as relações do objeto event especificado.
 author: angelgolfer-ms
-ms.openlocfilehash: 0dc01844049a2022499436518fe71e6b14c4ac9b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 491bf4c60d8de5f85b8ddff91ebbc0703c7cdd97
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352518"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828991"
 ---
 # <a name="get-event"></a>Obter evento
 

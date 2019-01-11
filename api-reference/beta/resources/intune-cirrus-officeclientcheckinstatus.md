@@ -2,12 +2,13 @@
 title: tipo de recurso de officeClientCheckinStatus
 description: Entidade que descreve as estatísticas de check-in do inquilino.
 author: tfitzmac
-ms.openlocfilehash: 0c6359d3cb6c776d0f26fdaf88ce7f2f03e5f8c7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff75c5d73db35c5c2ff70ad3a3dc3e4509745188
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331714"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825230"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso de officeClientCheckinStatus
 
@@ -19,14 +20,14 @@ Entidade que descreve as estatísticas de check-in do inquilino.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Nome principal de usuário usando o dispositivo.|
-|deviceName|String|Nome do dispositivo tentando fazer check-in.|
-|devicePlatform|String|Plataforma de dispositivo tentando fazer check-in.|
-|devicePlatformVersion|String|Versão de plataforma do dispositivo tentando fazer check-in.|
-|wasSuccessful|Boolean|Se o último check-in foi bem-sucedida.|
-|userId|String|Identificador de usuário usando o dispositivo.|
+|userPrincipalName|Cadeia de caracteres|Nome principal de usuário usando o dispositivo.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo tentando fazer check-in.|
+|devicePlatform|Cadeia de caracteres|Plataforma de dispositivo tentando fazer check-in.|
+|devicePlatformVersion|Cadeia de caracteres|Versão de plataforma do dispositivo tentando fazer check-in.|
+|wasSuccessful|Booliano|Se o último check-in foi bem-sucedida.|
+|userId|Cadeia de caracteres|Identificador de usuário usando o dispositivo.|
 |checkinDateTime|DateTimeOffset|Último dispositivo tempo check-in em UTC.|
-|errorMessage|String|Mensagem de erro, se houver algum associado para o último check-in.|
+|errorMessage|Cadeia de caracteres|Mensagem de erro, se houver algum associado para o último check-in.|
 |appliedPolicies|String collection|Lista de políticas entregues ao dispositivo como último check-in.|
 
 ## <a name="relationships"></a>Relações

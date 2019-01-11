@@ -2,12 +2,13 @@
 title: Obter androidWorkProfileCertificateProfileBase
 description: Leia as propriedades e os relacionamentos do objeto androidWorkProfileCertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 0f98a64ddec8d95ca634c4a4690e4ef27d680063
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 387701d1d13c6a52411ad5b49aa5d784f0317496
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808040"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Obter androidWorkProfileCertificateProfileBase
 
@@ -43,7 +44,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

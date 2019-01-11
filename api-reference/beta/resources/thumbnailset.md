@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: ThumbnailSet
-ms.openlocfilehash: d88e19242ea6c271e206a4c1a582fdbbfac8877b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 145134d6a3ad85134ea2d6c4d72e050bc17b31d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034366"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830184"
 ---
 # <a name="thumbnailset-resource-type"></a>Tipo de recurso ThumbnailSet
 
@@ -42,7 +43,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo                      | Descrição                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | A id de dentro do item. Somente leitura.                                                |
+| id       | Cadeia de caracteres                    | A id de dentro do item. Somente leitura.                                                |
 | large    | [Thumbnail](thumbnail.md) | Uma miniatura em escala 1920 x 1920.                                                     |
 | medium   | [Thumbnail](thumbnail.md) | Uma miniatura em escala 176 x 176.                                                       |
 | small    | [Thumbnail](thumbnail.md) | Uma miniatura cortada em 48 x 48.                                                        |
