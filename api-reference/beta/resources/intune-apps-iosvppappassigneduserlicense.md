@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de iosVppAppAssignedUserLicense
 description: iOS atribuição de licença de usuário do programa de compra do Volume. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
-ms.openlocfilehash: 162abf901ac02a6e4c8b2e5f0f1159829e06d1aa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3217fc338b2f0bb072de19cf0807a718a4998efa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806892"
 ---
 # <a name="iosvppappassigneduserlicense-resource-type"></a>tipo de recurso de iosVppAppAssignedUserLicense
 
@@ -30,11 +31,11 @@ Herda de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedli
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|String|O endereço de email do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userId|String|ID do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userId|Cadeia de caracteres|ID do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|Cadeia de caracteres|O nome de usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|String|O nome principal do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário. Herdado de [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

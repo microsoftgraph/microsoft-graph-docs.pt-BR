@@ -2,12 +2,13 @@
 title: tipo de enum deviceThreatProtectionLevel
 description: Níveis de proteção de ameaça de dispositivo para a API de proteção de ameaça do dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 755fd861196839ec261dd18f458b88aa97cf0191
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa287d9259ed88f1b2240fd9bbdcaf77bcf9170e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356004"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850579"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>tipo de enum deviceThreatProtectionLevel
 

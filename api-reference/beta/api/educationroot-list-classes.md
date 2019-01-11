@@ -2,12 +2,13 @@
 title: Listar classes
 description: 'Recupere uma lista de todos os objetos de classe. '
 author: mmast-msft
-ms.openlocfilehash: 73496c478525f0068438070afc3dcc836b8382ee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74639acd39ee6b11a7338692b23e5e14a7020eda
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823923"
 ---
 # <a name="list-classes"></a>Listar classes
 

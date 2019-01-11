@@ -2,12 +2,13 @@
 title: tipo de recurso de macOSMinimumOperatingSystem
 description: O sistema operacional mínimo necessário para um aplicativo MacOS.
 author: tfitzmac
-ms.openlocfilehash: ff9d4e3fc375f17d7b3c3efdd4af16cd7e87ceb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 21f557ebd3fbc1ae5e86a1991eb1a0207a902ce2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862087"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>tipo de recurso de macOSMinimumOperatingSystem
 
@@ -19,13 +20,13 @@ O sistema operacional mínimo necessário para um aplicativo MacOS.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v10_7|Boolean|Mac OS 10.7 ou posteriores.|
-|v10_8|Boolean|Mac OS 10,8 ou posteriores.|
-|v10_9|Boolean|Mac OS 10,9 ou posteriores.|
-|v10_10|Boolean|Mac OS 10.10 ou posteriores.|
-|v10_11|Boolean|Mac OS 10.11 ou posteriores.|
-|v10_12|Boolean|Mac OS 10.12 ou posteriores.|
-|v10_13|Boolean|Mac OS 10.13 ou posteriores.|
+|v10_7|Booliano|Mac OS 10.7 ou posteriores.|
+|v10_8|Booliano|Mac OS 10,8 ou posteriores.|
+|v10_9|Booliano|Mac OS 10,9 ou posteriores.|
+|v10_10|Booliano|Mac OS 10.10 ou posteriores.|
+|v10_11|Booliano|Mac OS 10.11 ou posteriores.|
+|v10_12|Booliano|Mac OS 10.12 ou posteriores.|
+|v10_13|Booliano|Mac OS 10.13 ou posteriores.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

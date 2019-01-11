@@ -2,12 +2,13 @@
 title: Lista de atribuições
 description: Recupere uma lista de objetos assignment. Um professor é permitido para ver todos os objetos de atribuição para a classe. Alunos só podem ver atribuições que são atribuídas a eles.
 author: mmast-msft
-ms.openlocfilehash: c7fbab429b238a0ae7f1814066eedfe793096f02
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a58406f26b45ccf3b16b6ff6bfa17e38b52590e7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361401"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823916"
 ---
 # <a name="list-assignments"></a>Lista de atribuições
 
@@ -15,7 +16,7 @@ ms.locfileid: "27361401"
 
 Recupere uma lista de objetos assignment. Um professor é permitido para ver todos os objetos de atribuição para a classe. Alunos só podem ver atribuições que são atribuídas a eles.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

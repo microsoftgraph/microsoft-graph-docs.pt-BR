@@ -2,12 +2,13 @@
 title: Atualizar deviceManagementScriptAssignment
 description: Atualize as propriedades de um objeto deviceManagementScriptAssignment.
 author: tfitzmac
-ms.openlocfilehash: 6afe48222bf3d74a88fb683222edebd5af025f12
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0689530f717b3ee8ecbd4ce6b967768912bdd41a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859014"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>Atualizar deviceManagementScriptAssignment
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) .
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de atribuição de grupo de script para gerenciamento do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade de atribuição de grupo de script para gerenciamento do dispositivo.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|A Id de grupo do Active Directory do Windows Azure Pretendemos o script.|
 
 

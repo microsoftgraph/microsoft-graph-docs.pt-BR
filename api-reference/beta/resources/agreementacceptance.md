@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de agreementAcceptance
 description: Representa o status atual de um usuário dentro do escopo dos termos de personalizável de uma empresa de uso possibilitada pela Azure Active Directory (AD Azure).
-ms.openlocfilehash: 23221fe88a65b003c8d26aca99eaf1f03d935722
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b1c8a5e40fe6a12daf23566ae902ddf61f3ee4df
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033143"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828278"
 ---
 # <a name="agreementacceptance-resource-type"></a>tipo de recurso de agreementAcceptance
 
@@ -27,15 +28,15 @@ Representa o status atual de um usuário dentro do escopo dos termos de personal
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|agreementFileId|String|ID do arquivo contrato aceito pelo usuário.|
-|agreementId|String|ID do contrato.|
-|id|String| Somente leitura.|
+|agreementFileId|Cadeia de caracteres|ID do arquivo contrato aceito pelo usuário.|
+|agreementId|Cadeia de caracteres|ID do contrato.|
+|id|Cadeia de caracteres| Somente leitura.|
 |recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|state|string| Os valores possíveis são: `accepted` e `declined`.|
-|userDisplayName|String|Nome para exibição do usuário quando a aceitação foi registrada.|
+|estado|string| Os valores possíveis são: `accepted` e `declined`.|
+|userDisplayName|Cadeia de caracteres|Nome para exibição do usuário quando a aceitação foi registrada.|
 |userEmail|Cadeia de caracteres|Email do usuário quando a aceitação foi registrada.|
-|userId|String|ID do usuário que aceitou o contrato.|
-|userPrincipalName|String|UPN do usuário quando a aceitação foi registrada.|
+|userId|Cadeia de caracteres|ID do usuário que aceitou o contrato.|
+|userPrincipalName|Cadeia de caracteres|UPN do usuário quando a aceitação foi registrada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

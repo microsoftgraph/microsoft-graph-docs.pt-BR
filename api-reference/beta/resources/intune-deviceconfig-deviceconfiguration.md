@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceConfiguration
 description: Configuração do dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 7d1c765ff643950947f23192969078dd12028c2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c789c114f422a6e541762fb33c311cfb75ffca85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865839"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Tipo de recurso deviceConfiguration
 
@@ -29,13 +30,13 @@ Configuração do dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade.|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura.|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo.|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo.|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |version|Int32|Versão da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações

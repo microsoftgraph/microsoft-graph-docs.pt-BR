@@ -2,12 +2,13 @@
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: 98da602683c61313b11862bc5dc567f4a04e4268
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97457b82bb74891ef4d709809efcae2d171df670
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27830405"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).

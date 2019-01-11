@@ -1,12 +1,13 @@
 ---
 title: 'message: reply'
 description: 'Responder ao remetente de uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis todas em uma **resposta** de chamada. '
-ms.openlocfilehash: 93130e8a877b9a7bdc553646037f583fd8da84fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3844969c8c4bbec9026aee8477db968d5a3b0e52
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037793"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27827458"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -50,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
+|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 ## <a name="response"></a>Resposta

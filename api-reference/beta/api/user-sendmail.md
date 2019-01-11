@@ -2,12 +2,13 @@
 title: Enviar email
 description: Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
 author: dkershaw10
-ms.openlocfilehash: bceafc0a5142a85acfca59872a9ee897ac839f19
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b0ac9b478bccf5080b2e8971bdb1ada881f5b28
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351762"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851055"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -20,7 +21,7 @@ Na mesma chamada de ação **sendMail** , você pode:
 - Incluir um [anexo](../resources/attachment.md)
 - Use um [mencionar](../resources/mention.md) chamar check-out de outro usuário na nova mensagem
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -44,10 +45,10 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
-|SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
+|SaveToSentItems|Booliano|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
 
 Se você quiser usar **mencionar** chamar check-out de outro usuário na nova mensagem:
 

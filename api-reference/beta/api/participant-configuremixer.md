@@ -2,12 +2,13 @@
 title: 'participante: configureMixer'
 description: Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.
 author: VinodRavichandran
-ms.openlocfilehash: c15cbc8a8de5a9ba7d7f3c20d20f99bf61006dbf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 6fa8e7395eb39a3d0a2c05daa8eb215377f3976f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380454"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836285"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380454"
 
 Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Application     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantMixerLevels|coleção [participantMixerLevel](../resources/participantmixerlevel.md)| Configuração do mixer redistribui para determinados participante de áudio.|
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.

@@ -2,12 +2,13 @@
 title: Excluir importedDeviceIdentityResult
 description: Exclui um importedDeviceIdentityResult.
 author: tfitzmac
-ms.openlocfilehash: 9fd04bdd1c57a5dae19024bbc3d44f9a05a850be
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 72f733249f64f18ea3998fca0dfd2baafdd1dd58
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340520"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858181"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>Excluir importedDeviceIdentityResult
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,19 +2,20 @@
 title: Atualizar administrativeunit
 description: Atualize as propriedades de um objeto administrativeUnit.
 author: lleonard-msft
-ms.openlocfilehash: 99ec27bc9a60e25d28202d2ebd82155089963c21
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b3a7de71e43b81927540c2eb8f85a45ce573e4b1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865671"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades de um objeto [administrativeUnit](../resources/administrativeunit.md) .
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

@@ -1,12 +1,13 @@
 ---
 title: Lista businessFlowTemplates
 description: No Windows Azure AD para acessar o recurso de revisões, liste todos os objetos businessFlowTemplate.
-ms.openlocfilehash: 9c6dc976244c60151cb2c230430ab6b4d0dc4b43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033704"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27829495"
 ---
 # <a name="list-businessflowtemplates"></a>Lista businessFlowTemplates
 
@@ -50,7 +51,7 @@ GET https://graph.microsoft.com/beta/businesFlowTemplates
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

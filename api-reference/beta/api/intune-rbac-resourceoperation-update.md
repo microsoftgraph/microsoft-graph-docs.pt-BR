@@ -2,12 +2,13 @@
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: 8050b91aee679f9dd29e78cbbad62f9f6352343e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851790"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).
@@ -48,11 +49,11 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|String|Categoria de recurso ao qual esta operação pertence.|
+|recurso|Cadeia de caracteres|Categoria de recurso ao qual esta operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Boolean|Determina se a permissão é validada para escopos definidos por atribuição de função.|
+|enabledForScopeValidation|Booliano|Determina se a permissão é validada para escopos definidos por atribuição de função.|
 
 
 

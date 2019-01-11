@@ -1,12 +1,13 @@
 ---
 title: Atualizar contrato
 description: Atualize as propriedades de um objeto de contrato.
-ms.openlocfilehash: b9405a8c469876a349b5c1b0c00e6f6a5f225e72
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b16a503b33193fa453ca52481854879ae4dcd121
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034075"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838728"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -37,7 +38,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|displayName|String|Nome para exibição do contrato.|
+|displayName|Cadeia de caracteres|Nome para exibição do contrato.|
 |isViewingBeforeAcceptanceRequired|Booliano|Se o usuário tem que expandir e exibir o contrato antes de aceitar.|
 
 ## <a name="response"></a>Resposta

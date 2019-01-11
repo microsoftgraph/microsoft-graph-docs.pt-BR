@@ -2,12 +2,13 @@
 title: Atualizar mobileAppContentFile
 description: Atualiza as propriedades de um objeto mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: ae091b562180c73c71ad9a58522face2c4457d53
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3b404be8c376bfaff89540eb22ce2cde5ddca2b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337930"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865475"
 ---
 # <a name="update-mobileappcontentfile"></a>Atualizar mobileAppContentFile
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md).
@@ -57,8 +58,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileAppConten
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|Um valor que indica se o arquivo é um arquivo framework.|
-|isDependency|Boolean|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
+|isFrameworkFile|Booliano|Um valor que indica se o arquivo é um arquivo framework.|
+|isDependency|Booliano|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
 
 
 

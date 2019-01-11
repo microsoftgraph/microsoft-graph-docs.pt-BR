@@ -2,12 +2,13 @@
 title: Obter importedAppleDeviceIdentity
 description: Leia as propriedades e os relacionamentos do objeto importedAppleDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: fc4a68086620e8c152703af8da1d604e3a4da7f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4b517f4cd363e730c2cdca9ed1dabd3cd62a389
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310189"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822607"
 ---
 # <a name="get-importedappledeviceidentity"></a>Obter importedAppleDeviceIdentity
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

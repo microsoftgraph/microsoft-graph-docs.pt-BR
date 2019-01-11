@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
 author: tfitzmac
-ms.openlocfilehash: d059574e1286bdcc1cc7199e0e1cbea1c7f9e9ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afe2b1518aa2ac9c803cc41fce2efffabf4c44d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352315"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27844839"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 
@@ -26,7 +27,7 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plataforma de configuração. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|

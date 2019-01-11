@@ -2,12 +2,13 @@
 title: Tipo de recurso roleAssignment
 description: O recurso de Atribuição de Função. Atribuições de função unem uma definição de função a membros e escopos. Pode haver uma ou mais atribuições de função por função. Aplica-se às funções internas e personalizadas.
 author: tfitzmac
-ms.openlocfilehash: 5c4b09151a7957f52dbaa525f696b89479a898ef
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cb3b07abc47224b2f96a35f4099d3a691b6c901
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302097"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27825491"
 ---
 # <a name="roleassignment-resource-type"></a>Tipo de recurso roleAssignment
 
@@ -28,7 +29,7 @@ O recurso de Atribuição de Função. Atribuições de função unem uma defini
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
 |descrição|Cadeia de caracteres|Descrição da atribuição de função.|
 |scopeMembers|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|

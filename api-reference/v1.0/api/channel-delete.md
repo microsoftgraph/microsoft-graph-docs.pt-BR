@@ -2,12 +2,13 @@
 title: Excluir um canal
 description: Exclua o canal.
 author: nkramer
-ms.openlocfilehash: e3500c536deca45b7444e149477c399cf1609a52
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e0996f067eb08928baee11ef5c3dd09efcabaca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359553"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27808208"
 ---
 # <a name="delete-channel"></a>Excluir um canal
 
@@ -19,7 +20,7 @@ Exclua o [canal](../resources/channel.md).
 
 > **Observação**: os dados no canais excluídos continuarão a serem armazenados durante várias semanas permitir que o proprietário de equipe para o canal de recuperação excluído. Durante esse tempo, um novo canal com o mesmo displayName não pode ser criado.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

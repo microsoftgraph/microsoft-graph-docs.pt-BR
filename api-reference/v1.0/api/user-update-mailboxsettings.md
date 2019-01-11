@@ -1,12 +1,13 @@
 ---
 title: Atualizar as configurações de caixa de correio do usuário
 description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de respostas automáticas (notificar pessoas automaticamente ao receber emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
-ms.openlocfilehash: b5d52771e67bb79abb7c325c908e0c5f155fff15
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cfc19337ed96a3cfefcfe5778807bc81e4c72fc7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27840640"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 

@@ -2,12 +2,13 @@
 title: Criar deviceAndAppManagementRoleAssignment
 description: Cria um novo objeto deviceAndAppManagementRoleAssignment.
 author: tfitzmac
-ms.openlocfilehash: 4ed81fdc58a2675be6d5f0b991507914d5c92e89
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a6f5d0e90ee15d6036c97b451c3796c357a8a2a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857439"
 ---
 # <a name="create-deviceandappmanagementroleassignment"></a>Criar deviceAndAppManagementRoleAssignment
 
@@ -38,7 +39,7 @@ POST /deviceManagement/roleAssignments
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceAndAppManagementRoleAssignment.
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceAn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |description|Cadeia de caracteres|Descrição da atribuição de função. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|
 |scopeMembers|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory. Herdado de [roleAssignment](../resources/intune-rbac-roleassignment.md)|

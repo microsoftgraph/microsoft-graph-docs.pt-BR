@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de risco
 description: Agrega o nível de risco, o estado de risco e detalhes de riscos para o usuário riscado, entrar ou evento de risco.
-ms.openlocfilehash: bc8ea5c30f78560ae8750e7750596f282feb4825
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da198ba27ca6cd0b762f322863f8c9bfd56a5cb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035746"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27810665"
 ---
 # <a name="risk-resource-type"></a>tipo de recurso de risco
 

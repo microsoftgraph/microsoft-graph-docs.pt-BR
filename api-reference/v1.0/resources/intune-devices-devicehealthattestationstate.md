@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceHealthAttestationState
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 5aeadafbdfc69a34b8ddc4599078c1374a043821
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb4f539bdcad96b1e87cf5f736846dbe8b7555f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320164"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27839169"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
 

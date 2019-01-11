@@ -2,12 +2,13 @@
 title: Ação windowsDefenderScan
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: d64ce1e595717d99608547ff4622d35d22d18552
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dc9f1abd2b9d938b286e2f585b427e97b0b54cf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305086"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836544"
 ---
 # <a name="windowsdefenderscan-action"></a>Ação windowsDefenderScan
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

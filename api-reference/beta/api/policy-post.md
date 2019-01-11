@@ -1,12 +1,13 @@
 ---
 title: Criar política
 description: Crie um novo objeto de diretiva especificando o nome para exibição, tipo de política e descrição da política.
-ms.openlocfilehash: fca6201d7afa6a78f15da0d37fb611e4114783e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040277"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831231"
 ---
 # <a name="create-policy"></a>Criar política
 
@@ -43,9 +44,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definição|String|A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .|
-|displayName|String|Um nome personalizado para a política.|
-|type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
+|definição|Cadeia de caracteres|A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .|
+|displayName|Cadeia de caracteres|Um nome personalizado para a política.|
+|type|Cadeia de caracteres|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta
 

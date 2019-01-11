@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso termsAndConditions
 description: Conteúdo dos C políticas é apresentado aos usuários após sua primeira tentativa de registrar em Intune e subsequentemente após edições onde um administrador requerido re-aceitação. Eles permitem que os administradores comuniquem as provisões com as quais um usuário deve concordar para que os dispositivos sejam registrados no Intune.
-ms.openlocfilehash: b47efb4151357c355a5ec01fbfddb85f1c4cb786
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8f6de8e97d8399d0c251eadafdcdacf09176cb6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036599"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858601"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 
@@ -27,15 +28,15 @@ Uma entidade termsAndConditions representa os metadados e conteúdos de determin
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da política de T&C.|
+|id|Cadeia de caracteres|Identificador exclusivo da política de T&C.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |modifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|Nome fornecido pelo administrador para a política de T&C. |
-|description|String|Descrição fornecida pelo administrador para a política de T&C.|
-|title|String|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
-|bodyText|String|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
-|acceptanceStatement|String|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo administrador para a política de T&C. |
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador para a política de T&C.|
+|title|Cadeia de caracteres|Título dos termos e condições fornecido pelo administrador. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
+|bodyText|Cadeia de caracteres|Corpo de texto de termos e condições fornecido pelo administrador, normalmente os termos em si. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
+|acceptanceStatement|Cadeia de caracteres|Explicação dos termos e condições fornecida pelo administrador, normalmente para descrever o que significa aceitar os termos e condições definidos na política de T&C. Isso é exibido ao usuário nos prompts de aceitação da política de T&C.|
 |version|Int32|Inteiro que indica a versão atual dos termos. Incrementado quando um administrador faz uma alteração nos termos e deseja solicitar que os usuários aceitem novamente a política de T&C modificada.|
 
 ## <a name="relationships"></a>Relações

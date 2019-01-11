@@ -2,12 +2,13 @@
 title: Atualizar eBookInstallSummary
 description: Atualizar as propriedades de um objeto eBookInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 200a84609523ed81ea7e5b9b3c50bd95913ddd80
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7198daad26b4409808e1e1a84e0b180f47fedfd4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318022"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811365"
 ---
 # <a name="update-ebookinstallsummary"></a>Atualizar eBookInstallSummary
 
@@ -36,7 +37,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).
@@ -45,7 +46,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [eBookInstallSum
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalaram este livro com êxito.|
 |failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este livro.|
 |notInstalledDeviceCount|Int32|Número de dispositivos que não instalaram este livro.|

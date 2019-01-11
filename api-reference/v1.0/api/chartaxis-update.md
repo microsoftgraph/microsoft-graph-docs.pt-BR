@@ -2,12 +2,13 @@
 title: Atualizar chartaxis
 description: Atualiza as propriedades do objeto chartaxis.
 author: lumine2008
-ms.openlocfilehash: 45bb7c25bfaed625300c7ac486a8c7bddb50ddbc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5218191979a886c4fc291f4bed3ab660adcf564f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350894"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27853631"
 ---
 # <a name="update-chartaxis"></a>Atualizar chartaxis
 

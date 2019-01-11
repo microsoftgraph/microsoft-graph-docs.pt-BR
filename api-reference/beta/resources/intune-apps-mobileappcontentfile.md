@@ -2,12 +2,13 @@
 title: Tipo de recurso mobileAppContentFile
 description: Contém propriedades de um único arquivo de instalação associado uma versão específica de mobileAppContent.
 author: tfitzmac
-ms.openlocfilehash: 4fd72fd43355cda820113797af627be6bdb37a98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7b4f05d75d2894664188b0ae6176def8011b2de7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348661"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851146"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Tipo de recurso mobileAppContentFile
 
@@ -40,8 +41,8 @@ Contém propriedades de um único arquivo de instalação associado uma versão 
 |azureStorageUriExpirationDateTime|DateTimeOffset|A hora de expiração do URI do armazenamento do Azure.|
 |manifest|Binária|As informações do manifesto.|
 |uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|O estado da solicitação de carregamento atual. Os valores possíveis são: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|Um valor que indica se o arquivo é um arquivo framework.|
-|isDependency|Boolean|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
+|isFrameworkFile|Booliano|Um valor que indica se o arquivo é um arquivo framework.|
+|isDependency|Booliano|Se o arquivo de conteúdo é uma dependência para o arquivo de conteúdo principal.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

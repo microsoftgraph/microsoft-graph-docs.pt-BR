@@ -1,12 +1,13 @@
 ---
 title: Atualizar mailSearchFolder
 description: Atualize as propriedades graváveis do objeto mailSearchFolder.
-ms.openlocfilehash: abe32817c45ee1e05fbb251bd46a31941eb4218b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 843dbe4d4312fdeb3485b0eb9e441a76b761dd46
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041177"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867225"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -41,10 +42,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | String | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
+| displayName | Cadeia de caracteres | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Booliano | Como a hierarquia de pastas de caixa de correio deve ser percorrida. `true`significa que uma profundidade de pesquisa deve ser feito ao `false` significa rasos de pesquisa devem ser feito em vez disso. |
 | sourceFolderIDs | String collection | As pastas de caixa de correio que devem ser extraídas. |
-| filterQuery | String | A consulta OData para filtrar as mensagens. |
+| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.

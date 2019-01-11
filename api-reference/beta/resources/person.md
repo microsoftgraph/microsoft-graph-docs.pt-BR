@@ -2,12 +2,13 @@
 title: Tipo de recurso person
 description: Uma agregação de informações sobre uma pessoa em email, contatos e redes sociais. Pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (por exemplo, email e Skype).
 author: simonhult
-ms.openlocfilehash: eccd5da56806b6608f5610579c61a171713990b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c0318986b01704501a2b7910888d6a5e962a5dca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308551"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865377"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
@@ -42,7 +43,7 @@ Uma agregação de informações sobre uma pessoa em email, contatos e redes soc
 |profession|string|A profissão da pessoa.|
 |sources|coleção [personDataSource](persondatasource.md)|As fontes de dados do usuário provêm, por exemplo, diretório ou contatos do Outlook.|
 |surname|string|O sobrenome da pessoa.|
-|title|string|Título da pessoa.|
+|título|string|Título da pessoa.|
 |userPrincipalName|string|O nome UPN da pessoa. O UPN é um nome de logon para a pessoa ao estilo da Internet com base na [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email da pessoa. O formato geral é alias@domínio.|
 |websites|Coleção [website](website.md)|Os sites da pessoa.|
 |yomiCompany|string|O nome japonês fonético da empresa da pessoa.|

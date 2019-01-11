@@ -2,12 +2,13 @@
 title: Atualizar iosLobAppProvisioningConfiguration
 description: Atualize as propriedades de um objeto iosLobAppProvisioningConfiguration.
 author: tfitzmac
-ms.openlocfilehash: df3cc8d27bb242998d513e98b8ce9b7ebfb24fd1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 637c1052f4097c3a33ff4c8fc4949ef48773ce68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313318"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859315"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>Atualizar iosLobAppProvisioningConfiguration
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .
@@ -47,14 +48,14 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data de validade do perfil opcional e hora.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |version|Int32|Versão da configuração do dispositivo.|
 
 

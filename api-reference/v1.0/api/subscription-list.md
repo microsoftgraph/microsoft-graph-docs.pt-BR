@@ -1,12 +1,13 @@
 ---
 title: Inscrições de lista
 description: Recupere as propriedades e relacionamentos de inscrições de webhook, com base na função do usuário com um locatário, o usuário e a ID de aplicativo.
-ms.openlocfilehash: df52fd51de120002a7eff57b32715b281744be93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 663586cc769f04be631e1f3c1bdf86bc4f798022
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007031"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850411"
 ---
 # <a name="list-subscriptions"></a>Inscrições de lista
 

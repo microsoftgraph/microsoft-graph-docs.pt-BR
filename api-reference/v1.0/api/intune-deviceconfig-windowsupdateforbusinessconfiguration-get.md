@@ -2,12 +2,13 @@
 title: Get windowsUpdateForBusinessConfiguration
 description: Ler propriedades e relações do objeto windowsUpdateForBusinessConfiguration.
 author: tfitzmac
-ms.openlocfilehash: b0ddb0e650fb860d005268f26102de79e01026bb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b13f12c48d9a3bf5fdfc8d50874be07906b39220
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344202"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27809258"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

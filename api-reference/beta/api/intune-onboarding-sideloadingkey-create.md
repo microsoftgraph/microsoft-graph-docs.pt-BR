@@ -2,12 +2,13 @@
 title: Criar sideLoadingKey
 description: Crie um novo objeto de sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: 6edce1838499a73c2c28199a87c46fa44a10fe1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 178236e03d508eb8a5017b67a1795fceca72bdee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356305"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27838868"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto sideLoadingKey.
@@ -47,12 +48,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Lado carregando o ID exclusivo principal.|
-|valor|String|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
-|displayName|String|Carregando da lado chave nome exibido para o ITPro Admins.|
-|description|String|Descrição de chave Carregando lado exibida para o ITPro Admins..|
+|id|Cadeia de caracteres|Lado carregando o ID exclusivo principal.|
+|valor|Cadeia de caracteres|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
+|displayName|Cadeia de caracteres|Carregando da lado chave nome exibido para o ITPro Admins.|
+|description|Cadeia de caracteres|Descrição de chave Carregando lado exibida para o ITPro Admins..|
 |totalActivation|Int32|Lado Carregando chave Total Activation exibida para o ITPro Admins.|
-|lastUpdatedDateTime|String|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
+|lastUpdatedDateTime|Cadeia de caracteres|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
 
 
 

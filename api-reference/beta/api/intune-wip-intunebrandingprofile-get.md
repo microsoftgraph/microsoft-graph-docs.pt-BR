@@ -2,12 +2,13 @@
 title: Obter intuneBrandingProfile
 description: Leia as propriedades e os relacionamentos do objeto intuneBrandingProfile.
 author: tfitzmac
-ms.openlocfilehash: 2c90dc24f85f6c259c48cdf0ba2e431ef5c8c55a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c068c6f48a391e24979b343046ea408333c8d16e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333569"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828305"
 ---
 # <a name="get-intunebrandingprofile"></a>Obter intuneBrandingProfile
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

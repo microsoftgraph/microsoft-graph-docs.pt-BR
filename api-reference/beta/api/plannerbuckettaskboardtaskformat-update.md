@@ -1,12 +1,13 @@
 ---
 title: Atualizar plannerBucketTaskBoardTaskFormat
 description: Atualize as propriedades do objeto **plannerBucketTaskBoardTaskFormat**.
-ms.openlocfilehash: 48700c59851a2a85a07db6fde54bf32f9f7e1abe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 631c1c48832e878d47dee93d992c09b3cb60748d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038692"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861457"
 ---
 # <a name="update-plannerbuckettaskboardtaskformat"></a>Atualizar plannerBucketTaskBoardTaskFormat
 

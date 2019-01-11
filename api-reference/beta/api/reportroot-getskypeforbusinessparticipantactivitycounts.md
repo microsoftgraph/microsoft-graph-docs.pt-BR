@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getSkypeForBusinessParticipantActivityCounts'
 description: Obtenha tendências de uso do número e o tipo de sessões de conferência das quais os usuários de sua organização participaram. Tipos de sessões de conferência incluem mensagens instantâneas, áudio/vídeo, compartilhamento de aplicativos, web e dial-in/out por terceiros.
-ms.openlocfilehash: ecb3938330b38492dbee6dd873421c96fbf23d56
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1eb086993ac5d66161d7f8201290be02b9d1bc0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27831322"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivitycounts"></a>reportRoot: getSkypeForBusinessParticipantActivityCounts
 

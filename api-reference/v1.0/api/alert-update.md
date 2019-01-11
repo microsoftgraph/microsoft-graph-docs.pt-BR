@@ -1,12 +1,13 @@
 ---
 title: Atualizar alertas
 description: Atualize uma propriedade editável **alerta** dentro de qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções. Esse método atualiza qualquer solução que tem um registro de alerta referenciado ID.
-ms.openlocfilehash: 6516d00bc7a542c3aa00244664e08194d96a9640
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dc5c1197e344aa181d827acc654e24bd5a048a06
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007390"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27858090"
 ---
 # <a name="update-alert"></a>Atualizar alertas
 
@@ -44,7 +45,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para os 
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista de alerta é atribuída a triagem, investigação ou correção.|
+|assignedTo|Cadeia de caracteres|Nome do analista de alerta é atribuída a triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Hora em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |comentários|String collection|Comentários de analistas no alerta (para gerenciamento de alerta do cliente).|
 |comentários|alertFeedback|Comentários analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|

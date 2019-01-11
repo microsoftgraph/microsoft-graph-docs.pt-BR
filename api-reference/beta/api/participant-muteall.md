@@ -2,12 +2,13 @@
 title: 'participante: muteAll'
 description: Ativar Mudo de todos os participantes na chamada.
 author: VinodRavichandran
-ms.openlocfilehash: fb395fd5a49a0a13616d32de9645f3899e4641d2
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380496"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27837804"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380496"
 
 Ativar Mudo de todos os participantes na chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não suportado                               |
 | Delegado (conta pessoal da Microsoft) | Não suportado                               |
-| Application                            | Nenhum                                        |
+| Aplicativo                            | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantes|String collection|Os participantes para ser ativado.|
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` objeto response de código e [commsOperation](../resources/commsoperation.md) no corpo da resposta.

@@ -2,12 +2,13 @@
 title: Criar ContactFolder
 description: 'Cria uma nova contactFolder como um filho de uma pasta especificada. '
 author: angelgolfer-ms
-ms.openlocfilehash: 9d13c398ca66b7b320637baf4d92557be63bf80b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 879c0b642a9db22184617544f9cb9be4a7d29cce
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301320"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27836292"
 ---
 # <a name="create-contactfolder"></a>Criar ContactFolder
 

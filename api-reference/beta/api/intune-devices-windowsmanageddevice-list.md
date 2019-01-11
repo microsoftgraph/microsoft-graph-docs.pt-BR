@@ -2,12 +2,13 @@
 title: Lista windowsManagedDevices
 description: Lista as propriedades e os relacionamentos dos objetos windowsManagedDevice.
 author: tfitzmac
-ms.openlocfilehash: 77edfc8bfa5d7deaa958f9eb1088e7a5cf50baba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e54387f05261d17e0337ebae8de1dd9ec280ca1f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349522"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823447"
 ---
 # <a name="list-windowsmanageddevices"></a>Lista windowsManagedDevices
 
@@ -40,7 +41,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

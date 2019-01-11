@@ -2,12 +2,13 @@
 title: 'chamar: registro'
 description: Registre a chamada.
 author: VinodRavichandran
-ms.openlocfilehash: 44b204a1185881cc9e1c96867e906c658c0d5ed9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859574"
 ---
 # <a name="call-record"></a>chamar: registro
 
@@ -15,14 +16,14 @@ ms.locfileid: "27380517"
 
 Registre a chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Application     | Calls.AccessMedia.All                       |
+| Aplicativo     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +50,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |playBeep|Booliano| Reproduz um alarme sonoro depois de reproduzir o prompt.|
 |streamWhileRecording|Booliano|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
 |stopTones|String collection|Pare de toques especificados para terminar gravação.|
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
