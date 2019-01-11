@@ -2,27 +2,28 @@
 title: tipo de recurso de plannerFavoritePlanReferenceCollection
 description: " o valor é o objeto plannerFavoritePlanReference."
 author: TarkanSevilmis
-ms.openlocfilehash: 056cb7b9ba728aa9dfe44ae4b90e550876461d6b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 933589d455a683598576aa5c83df8bd19e6b553f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344223"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828438"
 ---
-# <a name="plannerfavoriteplanreferencecollection-resource-type"></a><span data-ttu-id="b0a2d-103">tipo de recurso de plannerFavoritePlanReferenceCollection</span><span class="sxs-lookup"><span data-stu-id="b0a2d-103">plannerFavoritePlanReferenceCollection resource type</span></span>
+# <a name="plannerfavoriteplanreferencecollection-resource-type"></a><span data-ttu-id="fc9ac-103">tipo de recurso de plannerFavoritePlanReferenceCollection</span><span class="sxs-lookup"><span data-stu-id="fc9ac-103">plannerFavoritePlanReferenceCollection resource type</span></span>
 
-> <span data-ttu-id="b0a2d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b0a2d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="fc9ac-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fc9ac-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="b0a2d-106">O recurso de **plannerFavoritePlanReferenceCollection** representa a coleção de referências a planos que são marcados como um favorito por um usuário.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-106">The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user.</span></span> <span data-ttu-id="b0a2d-107">Este recurso é um tipo aberto e parte do objeto [plannerUser](planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="b0a2d-107">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="b0a2d-108">O nome da propriedade no par de valor da propriedade é a ID do plano correspondente; o valor é o objeto [plannerFavoritePlanReference](plannerfavoriteplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="b0a2d-108">The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.</span></span>
-
-
-## <a name="properties"></a><span data-ttu-id="b0a2d-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b0a2d-109">Properties</span></span>
-<span data-ttu-id="b0a2d-110">Você pode definir as propriedades desse tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-110">You can define the properties of this open type.</span></span> <span data-ttu-id="b0a2d-111">Os nomes de propriedade são `id` valores de recursos de [plannerPlan](plannerplan.md) e seus valores devem ser [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objetos.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-111">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects.</span></span> <span data-ttu-id="b0a2d-112">Para remover um item na lista de Favoritos, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-112">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+<span data-ttu-id="fc9ac-106">O recurso de **plannerFavoritePlanReferenceCollection** representa a coleção de referências a planos que são marcados como um favorito por um usuário.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-106">The **plannerFavoritePlanReferenceCollection** resource represents the collection of references to plans that are marked as a favorite by a user.</span></span> <span data-ttu-id="fc9ac-107">Este recurso é um tipo aberto e parte do objeto [plannerUser](planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="fc9ac-107">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="fc9ac-108">O nome da propriedade no par de valor da propriedade é a ID do plano correspondente; o valor é o objeto [plannerFavoritePlanReference](plannerfavoriteplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="fc9ac-108">The property name in the property-value pair is the ID of the corresponding plan; the value is the [plannerFavoritePlanReference](plannerfavoriteplanreference.md) object.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="b0a2d-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b0a2d-113">JSON representation</span></span>
+## <a name="properties"></a><span data-ttu-id="fc9ac-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fc9ac-109">Properties</span></span>
+<span data-ttu-id="fc9ac-110">Você pode definir as propriedades desse tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-110">You can define the properties of this open type.</span></span> <span data-ttu-id="fc9ac-111">Os nomes de propriedade são `id` valores de recursos de [plannerPlan](plannerplan.md) e seus valores devem ser [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objetos.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-111">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerFavoritePlanReference](plannerfavoriteplanreference.md) objects.</span></span> <span data-ttu-id="fc9ac-112">Para remover um item na lista de Favoritos, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-112">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
-<span data-ttu-id="b0a2d-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b0a2d-114">The following is a JSON representation of the resource.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="fc9ac-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fc9ac-113">JSON representation</span></span>
+
+<span data-ttu-id="fc9ac-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fc9ac-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
