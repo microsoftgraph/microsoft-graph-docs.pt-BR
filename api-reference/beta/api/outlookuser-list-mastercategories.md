@@ -2,12 +2,13 @@
 title: Listar categorias do Outlook
 description: Obtém todas as categorias que foram definidas para o usuário.
 author: angelgolfer-ms
-ms.openlocfilehash: a90eb368c3c6a03db6dbdf3d77518029abbfdaa9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1a328d64026454b17f865ec6652ec2ae9e3e686b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873308"
 ---
 # <a name="list-outlook-categories"></a>Listar categorias do Outlook
 

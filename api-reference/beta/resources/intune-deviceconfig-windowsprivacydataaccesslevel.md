@@ -2,12 +2,13 @@
 title: tipo de enum windowsPrivacyDataAccessLevel
 description: Determine o nível de acesso a categoria de dados de privacidade Windows específica.
 author: tfitzmac
-ms.openlocfilehash: 6eb1c1ea6eff28d90979da3ff998fd8442df353a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74ab32a703422203fec7a6c9ed1bc035e01949a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888771"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enum windowsPrivacyDataAccessLevel
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de freeBusyError
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: d1bf6671d6c506d9959fcd5abc8843c1a08c924b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 63cfc4b14ba6176d582155df57b7f7f787e63cf4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039204"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889765"
 ---
 # <a name="freebusyerror-resource-type"></a>tipo de recurso de freeBusyError
 
@@ -18,7 +19,7 @@ Representa informações de erro de tentar obter a disponibilidade de um usuári
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |mensagem |String |Descreve o erro. |
-|responseCode |String |O código de resposta do consultando para a disponibilidade do usuário, lista de distribuição ou recurso. |
+|responseCode |Cadeia de caracteres |O código de resposta do consultando para a disponibilidade do usuário, lista de distribuição ou recurso. |
 
 
 ## <a name="json-representation"></a>Representação JSON

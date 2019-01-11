@@ -2,12 +2,13 @@
 title: Excluir deviceCompliancePolicySettingStateSummary
 description: Exclui deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 7f56c2fd222f50cb57b9f86a4c7cc9f49c709f06
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e4b4e732af98c802f7c61a69d1e6c703003d5f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332918"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869122"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Excluir deviceCompliancePolicySettingStateSummary
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

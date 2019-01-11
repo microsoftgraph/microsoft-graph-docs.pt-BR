@@ -2,12 +2,13 @@
 title: tipo de enum windowsAutopilotSyncStatus
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 48b61be225ae4d1f3db54116f290149124f1a1b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d6f750364c3788157d346a0e2ad42942c4679a96
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305674"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859070"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>tipo de enum windowsAutopilotSyncStatus
 

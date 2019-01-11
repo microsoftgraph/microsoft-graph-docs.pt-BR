@@ -2,12 +2,13 @@
 title: 'educationSubmission: versão'
 description: " e indica que a classificação é feita. Essa ação só pode ser feita com o professor."
 author: dipakboyed
-ms.openlocfilehash: 9a21c45198ccd0ef933d58721c2d594cf29443bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a2723684f734a9e31dc08fb97d1e184400cac387
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308586"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859007"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: versão
 
@@ -15,7 +16,7 @@ ms.locfileid: "27308586"
 
 Esta ação faz com que o nível e os comentários associados a esse envio disponível ao aluno. Isso irá alterar o status do envio de "enviado" para "liberados" e indica que a classificação é feita. Essa ação só pode ser feita com o professor.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

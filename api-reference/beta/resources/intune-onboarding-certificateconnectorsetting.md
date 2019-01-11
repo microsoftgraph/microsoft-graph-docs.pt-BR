@@ -2,12 +2,13 @@
 title: tipo de recurso de certificateConnectorSetting
 description: Configurações do conector de certificado.
 author: tfitzmac
-ms.openlocfilehash: 8c993634eb4f41e16643ae3f40be74ecc3eb392f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56f12600b6aa78982dc51732d685dcd7c962d0b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326303"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888596"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>tipo de recurso de certificateConnectorSetting
 
@@ -21,9 +22,9 @@ Configurações do conector de certificado.
 |:---|:---|:---|
 |status|Int32|Status do conector de certificado|
 |certExpiryTime|DateTimeOffset|Certificado expirará tempo|
-|enrollmentError|String|Erro de inscrição do conector de certificado|
+|enrollmentError|Cadeia de caracteres|Erro de inscrição do conector de certificado|
 |lastConnectorConnectionTime|DateTimeOffset|Hora da última certificado conector conectado|
-|connectorVersion|String|Versão do conector de certificado|
+|connectorVersion|Cadeia de caracteres|Versão do conector de certificado|
 |lastUploadVersion|Int64|Versão do conector do último certificado carregado|
 
 ## <a name="relationships"></a>Relações

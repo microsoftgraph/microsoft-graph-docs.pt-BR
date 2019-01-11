@@ -2,12 +2,13 @@
 title: tipo de recurso de participantMixerLevel
 description: Configuração do mixer níveis para determinados participante de áudio
 author: VinodRavichandran
-ms.openlocfilehash: 9d5a5d740fbdf250f90b28539221e8231c0bf38c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 8a7b77c07240fbb5face70eb8ea21be55b85f1fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380139"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874134"
 ---
 # <a name="participantmixerlevel-resource-type"></a>tipo de recurso de participantMixerLevel
 
@@ -17,11 +18,11 @@ Configuração do mixer níveis para determinados participante de áudio
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	               | Tipo                                                      | Descrição                                                                                         |
+| Propriedade               | Tipo                                                      | Descrição                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | desviando                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuração do desviando (Introdução gradual e sair) de outras fontes para este partipant mistura personalizada.       |
 | exclusiveMode          | booliano                                                   | Se fontes sem nível de origem explícitas devem ser removidas da combinação.                       |
-| participante            | String                                                    | O participante para quem o mixer está sendo configurado.                                             |
+| participante            | Cadeia de caracteres                                                    | O participante para quem o mixer está sendo configurado.                                             |
 | sourceLevels           | coleção [audioSourceLevel](audiosourcelevel.md)        | Configuração de nível de outras fontes.                                                              |
 
 ## <a name="json-representation"></a>Representação JSON

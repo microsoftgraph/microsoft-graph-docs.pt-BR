@@ -1,12 +1,13 @@
 ---
 title: Configurar a sincronização com os atributos de extensão de diretório
 description: 'Você pode personalizar seu esquema de sincronização para incluir os atributos de extensão de diretório do Windows Azure Active Directory (AD Azure). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor da User.CommunityNickname em equipe de vendas. Neste cenário, você tem Connect do Azure AD configurado para provisionar um número de atributos de extensão do diretório do Windows Server Active Directory local para o Windows Azure AD. '
-ms.openlocfilehash: fa29e405b235107cd6773444085e7b409441c90e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 093d78b1e47e412a97ac8a4306c432465e24b5e1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039784"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850096"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com os atributos de extensão de diretório
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de chatMessage
 description: Representa uma mensagem de bate-papo individuais dentro de uma entidade de bate-papo ou de canal. A mensagem pode ser uma mensagem de raiz ou a parte de um segmento que é definido pela propriedade **replyToId** na mensagem.
-ms.openlocfilehash: 1fba27567d5a1c80a36a5758925ec427735504cf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033268"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855988"
 ---
 # <a name="chatmessage-resource-type"></a>tipo de recurso de chatMessage
 
@@ -26,11 +27,11 @@ Representa uma mensagem de bate-papo individuais dentro de uma entidade de bate-
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. Identificação exclusiva da mensagem.|
+|id|Cadeia de caracteres| Somente leitura. Identificação exclusiva da mensagem.|
 |replyToId| string | ID da mensagem pai mensagem/raiz do thread |
 |from|[identitySet](identityset.md)| Detalhes do remetente da mensagem|
 |etag| string | Número de versão da mensagem |
-|messageType|String|Os valores de tipo de mensagem, atual com suporte são: mensagem, chatEvent, digitando|
+|messageType|Cadeia de caracteres|Os valores de tipo de mensagem, atual com suporte são: mensagem, chatEvent, digitando|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de hora de quando a mensagem foi criada|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora de quando a mensagem foi editado/atualizado|
 |isDeleted|booliano|Representa se uma mensagem tiver sido excluída soft|

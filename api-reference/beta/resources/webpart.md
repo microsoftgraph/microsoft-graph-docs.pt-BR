@@ -3,12 +3,13 @@ author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
 title: Web Part
-ms.openlocfilehash: e9bb612e20bc3d2416503f571f5abf364215efb2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f7293b986b5e6d77d0601cffb6b60edc5dfd2dd7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036140"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856025"
 ---
 # <a name="webpart-resource"></a>recurso de Web Part
 
@@ -37,7 +38,7 @@ O recurso de **Web Part** representa o tipo e informações de renderização de
 
 | Propriedade                | Tipo             | Descrição
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | Um identificador exclusivo especificando o tipo de Web Part. Somente leitura.
+| **type**                | Cadeia de caracteres           | Um identificador exclusivo especificando o tipo de Web Part. Somente leitura.
 | **data**                | [sitePageData][] | As propriedades necessárias para a Web Part (varia de acordo com a Web Part)
 
 [sitePageData]: sitepagedata.md

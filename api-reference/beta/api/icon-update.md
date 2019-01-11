@@ -1,12 +1,13 @@
 ---
 title: Atualizar ícone
 description: Atualize as propriedades do objeto de ícone.
-ms.openlocfilehash: 5b9d049eb4d7bf3c596392c289738538799f8386
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 83e9845e87018a6f7b059a917643c1c51ccd01d5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27859175"
 ---
 # <a name="update-icon"></a>Atualizar ícone
 
@@ -38,7 +39,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|inteiro|Representa o índice do ícone em determinado conjunto.|
+|índice|int|Representa o índice do ícone em determinado conjunto.|
 |set|string|Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.|
 
 ## <a name="response"></a>Resposta

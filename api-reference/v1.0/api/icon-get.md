@@ -1,12 +1,13 @@
 ---
 title: Obter ícone
 description: Recupere as propriedades e os relacionamentos do objeto de ícone.
-ms.openlocfilehash: 4b33ba32da3130ce4ee47d58826796c4b50402fc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8d5f7f88892492230d2e77d587dc7f45b863f163
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003721"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869101"
 ---
 # <a name="get-icon"></a>Obter ícone
 

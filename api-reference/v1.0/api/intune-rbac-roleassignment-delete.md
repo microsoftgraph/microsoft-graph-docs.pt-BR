@@ -2,12 +2,13 @@
 title: Excluir roleAssignment
 description: Exclui roleAssignment.
 author: tfitzmac
-ms.openlocfilehash: 76ad4c0a683c5c51b2895e875e9259860f42e7d1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aa7e906b2ab4944789488dcf24658eb4421bb420
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889961"
 ---
 # <a name="delete-roleassignment"></a>Excluir roleAssignment
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

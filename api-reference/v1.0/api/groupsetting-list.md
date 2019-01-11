@@ -2,12 +2,13 @@
 title: Lista de configurações de grupo
 description: Recuperar uma lista de objetos de configuração de grupo.
 author: dkershaw10
-ms.openlocfilehash: 834e843ee470d559427775370ed723fe6dafaf5e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7eedf4401c19de698563a809f6e490085a92d7b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359637"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849788"
 ---
 # <a name="list-group-settings"></a>Lista de configurações de grupo
 

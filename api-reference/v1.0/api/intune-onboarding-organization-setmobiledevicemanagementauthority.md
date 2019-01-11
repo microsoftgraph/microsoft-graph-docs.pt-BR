@@ -2,12 +2,13 @@
 title: Ação setMobileDeviceManagementAuthority
 description: Define uma autoridade de gerenciamento de dispositivo móvel
 author: tfitzmac
-ms.openlocfilehash: 4292820d5a1844c9bb4dada571514932a29a77eb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b488b500ac203dfed0582eadc738c15ecf41950
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889793"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>Ação setMobileDeviceManagementAuthority
 
@@ -36,7 +37,7 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

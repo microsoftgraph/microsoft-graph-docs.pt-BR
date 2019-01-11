@@ -2,12 +2,13 @@
 title: tipo de recurso de outlookTaskGroup
 description: 'Um grupo de pastas (outlookTaskFolder) que contêm tarefas do Outlook (coleção de objetos outlookTask). '
 author: angelgolfer-ms
-ms.openlocfilehash: 9fed69e1401f2b11ae3630a3c4cef66fd9446920
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5e885c4c8cc2abe4b3890635e010d495267dc877
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878768"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>tipo de recurso de outlookTaskGroup
 
@@ -31,11 +32,11 @@ No Outlook, há um grupo de tarefas padrão `My Tasks` que não é possível ren
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|changeKey|String|A versão do grupo de tarefas.|
+|changeKey|Cadeia de caracteres|A versão do grupo de tarefas.|
 |groupKey|Edm.Guid|O identificador GUID exclusivo para o grupo de tarefa.|
-|id|String|O identificador de cadeia de caracteres exclusiva do grupo de tarefas. Somente leitura.|
-|isDefaultGroup|Boolean|True se o grupo de tarefa é o grupo de tarefas padrão.|
-|name|String|O nome do grupo de tarefas.|
+|id|Cadeia de caracteres|O identificador de cadeia de caracteres exclusiva do grupo de tarefas. Somente leitura.|
+|isDefaultGroup|Booliano|True se o grupo de tarefa é o grupo de tarefas padrão.|
+|name|Cadeia de caracteres|O nome do grupo de tarefas.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

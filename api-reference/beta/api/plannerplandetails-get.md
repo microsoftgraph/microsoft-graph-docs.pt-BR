@@ -1,12 +1,13 @@
 ---
 title: Obter plannerPlanDetails
 description: Recupere as propriedades e os relacionamentos de um objeto **plannerplandetails**.
-ms.openlocfilehash: 11873befbf5d29fcdace546a0281449e31697c8c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 096e2092a71545c5008d82305f7c137a911db419
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871992"
 ---
 # <a name="get-plannerplandetails"></a>Obter plannerPlanDetails
 

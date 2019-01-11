@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppPolicyDeploymentSummaryPerApp
 description: Representa o resumo da implantação da política por aplicativo.
 author: tfitzmac
-ms.openlocfilehash: 95c05696f6c080f90b9de61c309a577924e599b1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 025103e40e3babde67437952fe8730b0f04410d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354338"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855164"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummaryPerApp
 

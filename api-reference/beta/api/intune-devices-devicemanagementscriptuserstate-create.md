@@ -2,12 +2,13 @@
 title: Criar deviceManagementScriptUserState
 description: Crie um novo objeto de deviceManagementScriptUserState.
 author: tfitzmac
-ms.openlocfilehash: fbe9c964296854a92e62a86743d06d8577b675f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76be7695b64b660ec4da3b2d4d19928ea7b57bff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873350"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Criar deviceManagementScriptUserState
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementScriptUserState.
@@ -47,10 +48,10 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
+|id|Cadeia de caracteres|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
 |successDeviceCount|Int32|Contagem de dispositivo de sucesso para usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivo de erro para usuário específico.|
-|userPrincipalName|String|Nome do princípio de usuário do usuário específico.|
+|userPrincipalName|Cadeia de caracteres|Nome do princípio de usuário do usuário específico.|
 
 
 

@@ -1,12 +1,13 @@
 ---
 title: Criar outlookTaskGroup
 description: Crie um grupo de tarefas do Outlook na caixa de correio do usuário.
-ms.openlocfilehash: dc3efc7b663d5eab3d9165b1d72fec5dd187db53
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2640d540c3b5f81c14763f785c565268bb15d689
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27851909"
 ---
 # <a name="create-outlooktaskgroup"></a>Criar outlookTaskGroup
 

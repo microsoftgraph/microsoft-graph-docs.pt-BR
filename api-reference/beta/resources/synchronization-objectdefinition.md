@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de objectDefinition
 description: Descreve um objeto e seus atributos. Definições de objeto fazem parte do directoryDefinition, que é atualizado como parte do synchronizationSchema.
-ms.openlocfilehash: c4c2d54eb33f5140464e3e8aa479aa6baec72df8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040596"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866077"
 ---
 # <a name="objectdefinition-resource-type"></a>tipo de recurso de objectDefinition
 
@@ -20,7 +21,7 @@ Descreve um objeto e seus atributos. Definições de objeto fazem parte do [dire
 |:--------------|:----------|:---------------|
 |attributes     |coleção [attributeDefinition](synchronization-attributedefinition.md)    | Define os atributos do objeto. |
 |metadados       |coleção [metadataEntry](synchronization-metadataentry.md)   |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
-|name           |String     |Nome do objeto. Deve ser exclusivo dentro de uma definição de diretório. Não anulável.|
+|name           |Cadeia de caracteres     |Nome do objeto. Deve ser exclusivo dentro de uma definição de diretório. Não anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

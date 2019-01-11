@@ -2,12 +2,13 @@
 title: tipo de enum networkSingleSignOnType
 description: Wi-Fi rede Sign-On único configurações de tipo.
 author: tfitzmac
-ms.openlocfilehash: d88f9a4c4d0bde58c3093a736a767acc0d2abe33
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: abd333ffd59a3a287f371109f71bc1e3177a2b6e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345259"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877144"
 ---
 # <a name="networksinglesignontype-enum-type"></a>tipo de enum networkSingleSignOnType
 

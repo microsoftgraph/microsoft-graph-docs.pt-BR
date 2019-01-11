@@ -1,12 +1,13 @@
 ---
 title: Listar grupos transitivos do dispositivo
 description: Obtenha os grupos que o dispositivo é um membro de. Essa solicitação API é transitiva e também retornará todos os grupos que o dispositivo é um membro aninhado do.
-ms.openlocfilehash: 39589ec7c1858d773ed0907950142ec3b1f4cdef
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c15080fa3af336ec0a2bd14f0dd7812719bff52a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033597"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874967"
 ---
 # <a name="list-device-transitive-groups"></a>Listar grupos transitivos do dispositivo
 

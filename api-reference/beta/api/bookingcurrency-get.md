@@ -1,12 +1,13 @@
 ---
 title: Obter bookingCurrency
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 14238d40dc61b64ccca976830c68d093f401e214
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3b39b6ba83f77f9b47661e3bf4a98330b5f7ee0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855059"
 ---
 # <a name="get-bookingcurrency"></a>Obter bookingCurrency
 

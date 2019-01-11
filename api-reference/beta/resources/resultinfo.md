@@ -2,12 +2,13 @@
 title: tipo de recurso de resultInfo
 description: O tipo de resultInfo.
 author: VinodRavichandran
-ms.openlocfilehash: db208ed214213ec906dac18b65140f010014fc6c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ca814fd5c44f0f811099faed53354d08ce8befdc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855276"
 ---
 # <a name="resultinfo-resource-type"></a>tipo de recurso de resultInfo
 
@@ -17,11 +18,11 @@ O tipo de resultInfo.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	 | Tipo   | Descrição          |
+| Propriedade | Tipo   | Descrição          |
 | :------- | :----- | :------------------  |
-| código     | String | O código de resultado.     |
+| código     | Cadeia de caracteres | O código de resultado.     |
 | mensagem  | String | A mensagem.         |
-| Subcódigo  | String | O código de resultado de subsites. |
+| Subcódigo  | Cadeia de caracteres | O código de resultado de subsites. |
 
 ## <a name="json-representation"></a>Representação JSON
 

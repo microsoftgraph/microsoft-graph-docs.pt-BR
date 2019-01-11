@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de appIdentity
 description: Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui o Id do aplicativo, nome, ID de entidade de serviço e Name. Este recurso é chamado pelo API directoryAudit
-ms.openlocfilehash: 6fcbe8dbb1e17139111c5f1fa9e8681cd1b996a7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec61782fca0ab4004fab5a55bd4774c0d64afb3a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036960"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855780"
 ---
 # <a name="appidentity-resource-type"></a>tipo de recurso de appIdentity
 Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui o Id do aplicativo, nome, ID de entidade de serviço e Name. Este recurso é chamado pelo [directoryAudit](../api/directoryaudit-get.md) API
@@ -16,8 +17,8 @@ Indica a identidade do aplicativo que executou a ação ou foi alterada. Inclui 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |appId|Cadeia de caracteres|Refere-se o GUID exclusivo que representa a Id do aplicativo no Windows Azure Active Directory.|
-|displayName|String|Refere-se ao nome do aplicativo exibido no Portal do Windows Azure.|
-|servicePrincipalId|String|Refere-se o GUID exclusivo que indica o Id da entidade de serviço no Windows Azure Active Directory para o aplicativo correspondente.|
+|displayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no Portal do Windows Azure.|
+|servicePrincipalId|Cadeia de caracteres|Refere-se o GUID exclusivo que indica o Id da entidade de serviço no Windows Azure Active Directory para o aplicativo correspondente.|
 |servicePrincipalName|Cadeia de caracteres|Refere-se para o nome de entidade de serviço é o nome do aplicativo no inquilino. |
 
 ## <a name="json-representation"></a>Representação JSON

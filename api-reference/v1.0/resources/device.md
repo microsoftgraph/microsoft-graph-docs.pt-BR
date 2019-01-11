@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de dispositivo
 description: Representa um dispositivo registrado na organização. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de directoryObject.
-ms.openlocfilehash: c32267001b309b0f701ed17d30b29f93f64f0936
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27811708"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 

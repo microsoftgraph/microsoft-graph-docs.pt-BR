@@ -2,12 +2,13 @@
 title: Excluir vppToken
 description: Exclui um vppToken.
 author: tfitzmac
-ms.openlocfilehash: 34d079883344f0725b87d4c1b46c92a37000fb40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5bd776ccb6410fc19ee75ccf418471be44ddc5cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302853"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27856942"
 ---
 # <a name="delete-vpptoken"></a>Excluir vppToken
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

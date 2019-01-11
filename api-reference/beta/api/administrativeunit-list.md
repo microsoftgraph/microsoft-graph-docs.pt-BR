@@ -2,19 +2,20 @@
 title: Lista administrativeUnits
 description: Recupere uma lista de objetos administrativeUnit.
 author: lleonard-msft
-ms.openlocfilehash: 03ccd5293bc12d6f3e13128367c29fa0317accff
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7abd0e3074202ddfd11df2696c22874ffd81554a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27854814"
 ---
 # <a name="list-administrativeunits"></a>Lista administrativeUnits
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere uma lista de objetos [administrativeUnit](../resources/administrativeunit.md) .
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

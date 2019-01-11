@@ -2,12 +2,13 @@
 title: 'TableRow: delete'
 description: Exclui a linha da tabela.
 author: lumine2008
-ms.openlocfilehash: ade0918ba9ad6fc23ff3becc33ba38024ee9894a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fe77eba69cf177b18dcc1b060d1ab83678c91baa
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336915"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864460"
 ---
 # <a name="tablerow-delete"></a>TableRow: delete
 

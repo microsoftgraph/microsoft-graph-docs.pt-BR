@@ -2,12 +2,13 @@
 title: tipo de recurso de windows10AssociatedApps
 description: Definição de aplicativo do Windows 10 associados.
 author: tfitzmac
-ms.openlocfilehash: a990d3b1f9b2b33a1e98fd30f5dea4da7fbf4ae8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 097edb32ca01d673bb4d42802e8588edd20cf2d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344825"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869619"
 ---
 # <a name="windows10associatedapps-resource-type"></a>tipo de recurso de windows10AssociatedApps
 
@@ -20,7 +21,7 @@ Definição de aplicativo do Windows 10 associados.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |tipo de aplicativo|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Tipo de aplicativo. Os valores possíveis são: `desktop` e `universal`.|
-|identificador|String|Identificador.|
+|identificador|Cadeia de caracteres|Identificador.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

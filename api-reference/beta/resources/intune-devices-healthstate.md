@@ -2,12 +2,13 @@
 title: tipo de enum healthState
 description: Indica o estado de integridade do aplicativo de gerenciamento do Windows.
 author: tfitzmac
-ms.openlocfilehash: 831caf85b5beb4c90721aea44054b85d64817c84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b50023a71aaf33e2febf43e3ce96a1223eaa2ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308719"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878775"
 ---
 # <a name="healthstate-enum-type"></a>tipo de enum healthState
 

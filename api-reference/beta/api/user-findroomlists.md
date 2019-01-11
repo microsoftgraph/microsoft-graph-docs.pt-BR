@@ -2,12 +2,13 @@
 title: 'usuário: findRoomLists'
 description: Obtenha as listas de salas definidas em um locatário.
 author: dkershaw10
-ms.openlocfilehash: f96f8e5c6349e87d2d71820b7b7cd3b0367908f9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310770"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855731"
 ---
 # <a name="user-findroomlists"></a>usuário: findRoomLists
 
@@ -19,7 +20,7 @@ Inquilinos podem organizar as salas de reunião em listas de salas. Cada sala de
 Você pode obter todas as listas de sala no locatário, [fazer todas as salas](user-findrooms.md) no locatário ou [fazer todas as salas](user-findrooms.md) em uma lista de sala específico.
 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

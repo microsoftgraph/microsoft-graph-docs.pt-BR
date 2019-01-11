@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de signInStatus
 description: Fornece o status de entrada (sucesso ou falha) do sign-in
-ms.openlocfilehash: cafa0dffe1b1d798d87225ac82901cf041d5e4fa
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039985"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878635"
 ---
 # <a name="signinstatus-resource-type"></a>tipo de recurso de signInStatus
 Fornece o status de entrada (sucesso ou falha) do sign-in
@@ -16,7 +17,7 @@ Fornece o status de entrada (sucesso ou falha) do sign-in
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|additionalDetails|String|Fornece detalhes adicionais sobre a atividade de entrada|
+|additionalDetails|Cadeia de caracteres|Fornece detalhes adicionais sobre a atividade de entrada|
 |errorCode|Int32|Fornece o código de erro 5-6digit gerado durante uma falha de entrada. Confira a [lista de mensagens e códigos de erro](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 |failureReason|Cadeia de caracteres|Fornece a mensagem de erro ou o motivo da falha da atividade de entrada correspondente. Confira a [lista de mensagens e códigos de erro](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 

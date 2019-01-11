@@ -1,12 +1,13 @@
 ---
 title: Listar mensagens
 description: Lista de todas as mensagens na caixa de correio do usuário conectado ou essas mensagens em uma pasta especificada na caixa de correio ou unidade.
-ms.openlocfilehash: 8ecbe3df28169ba10deff3369a26cedc78dd3e8b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d35489a45e84fdba484e721989900217b23eb08c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035736"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849886"
 ---
 # <a name="list-messages"></a>Listar mensagens
 

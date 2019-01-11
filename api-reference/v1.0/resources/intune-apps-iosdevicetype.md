@@ -2,12 +2,13 @@
 title: Tipo de recurso do iosDeviceType
 description: Contém propriedades de possíveis tipos de dispositivos de iOS que o aplicativo móvel pode executar.
 author: tfitzmac
-ms.openlocfilehash: 3111bc4b5fc78f6ed60b4a241b48e443923f7159
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ffa46d1e8fb693822051250fb4a722815b1dcb73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313598"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866777"
 ---
 # <a name="iosdevicetype-resource-type"></a>Tipo de recurso do iosDeviceType
 

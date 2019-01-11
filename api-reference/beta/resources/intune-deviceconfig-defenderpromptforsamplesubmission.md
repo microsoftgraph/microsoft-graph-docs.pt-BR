@@ -2,12 +2,13 @@
 title: tipo de enum defenderPromptForSampleSubmission
 description: Valores possíveis para avisar o usuário para amostras de envio.
 author: tfitzmac
-ms.openlocfilehash: 19498f587759df56ae671b119b59abe7e7acd62c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0f1dbd79d58fa46a4e5e50f989e807763ff10356
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314928"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27849823"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enum defenderPromptForSampleSubmission
 

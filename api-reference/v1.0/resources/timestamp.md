@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso da carimbo de hora
 description: Data e hora informações para um ponto no tempo.
-ms.openlocfilehash: 4f392e880bb165841fd8a9a31b6ed00bf2ba36fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c63b3bba93f4b108a8eb9943d3fc2a1b2961f06c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004162"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888799"
 ---
 # <a name="timestamp-resource-type"></a>tipo de recurso da carimbo de hora
 
@@ -37,7 +38,7 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |data|Data|A parte da data do carimbo de hora.|
 |time|TimeOfDay|A parte do tempo do carimbo de hora.|
-|timeZone|String|A porção de fuso horário da carimbo de hora, o que é uma das áreas longitudinal 24 no mundo.|
+|timeZone|Cadeia de caracteres|A porção de fuso horário da carimbo de hora, o que é uma das áreas longitudinal 24 no mundo.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

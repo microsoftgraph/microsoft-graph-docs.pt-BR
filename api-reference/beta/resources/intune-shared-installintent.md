@@ -2,12 +2,13 @@
 title: tipo de enum installIntent
 description: Valores possíveis para a intenção de instalar escolhido pelo administrador a.
 author: tfitzmac
-ms.openlocfilehash: c32bafd0e9cc2b4325b9674a17ac8d14272bce9d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fd64622fd9471c0aff9f9d50ef9c0ad1a9e2ef63
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874974"
 ---
 # <a name="installintent-enum-type"></a>tipo de enum installIntent
 

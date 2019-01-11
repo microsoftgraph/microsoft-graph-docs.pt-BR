@@ -2,12 +2,13 @@
 title: Criar aplicativo
 description: Use essa API para criar um novo aplicativo.
 author: lleonard-msft
-ms.openlocfilehash: 9530c94598eeb2413af67782b50bbf70f415e2a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9a4ca06bfd19dbe6319bb276cd5c33fc13f6d81d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361527"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855003"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -15,7 +16,7 @@ ms.locfileid: "27361527"
 
 Use essa API para criar um novo aplicativo.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

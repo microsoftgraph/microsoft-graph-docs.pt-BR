@@ -2,12 +2,13 @@
 title: tipo de recurso de binaryManagementConditionExpression
 description: Uma expressão de condição de gerenciamento que é avaliada usando uma operação de binário.
 author: tfitzmac
-ms.openlocfilehash: 6f271be2527427daaa04436899552abb4d21475e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 509e03e7d492289fc9615f7f8ad47bf13d5bead4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27857047"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>tipo de recurso de binaryManagementConditionExpression
 
