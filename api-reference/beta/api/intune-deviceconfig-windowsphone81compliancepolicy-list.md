@@ -2,12 +2,13 @@
 title: Listar windowsPhone81CompliancePolicies
 description: Listar propriedades e relações dos objetos windowsPhone81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: c7ce1588e9be2258f81b89c961b5eb67cb499ee6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f5dc8242d3f76cf9c96e9d7232542f147a94a8c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361548"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890402"
 ---
 # <a name="list-windowsphone81compliancepolicies"></a>Listar windowsPhone81CompliancePolicies
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

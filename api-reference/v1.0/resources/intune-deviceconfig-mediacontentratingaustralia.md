@@ -2,12 +2,13 @@
 title: Tipo de recurso mediaContentRatingAustralia
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 01d809b43bc8ce68ffc92600d3634c8bd437a954
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0860a17671b2923c2be9b5b469f93d443e808f53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319499"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891480"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Tipo de recurso mediaContentRatingAustralia
 

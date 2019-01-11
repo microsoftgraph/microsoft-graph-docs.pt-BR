@@ -2,12 +2,13 @@
 title: tipo de enum binaryManagementConditionExpressionOperatorType
 description: Suporte a operadores binários para expressões de condição de gerenciamento.
 author: tfitzmac
-ms.openlocfilehash: 4b8fb4f1434f222c15bde5fd74261f021d282535
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2b836dba7c45eacf0f2d8ffe425b301733e60759
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346953"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891067"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>tipo de enum binaryManagementConditionExpressionOperatorType
 

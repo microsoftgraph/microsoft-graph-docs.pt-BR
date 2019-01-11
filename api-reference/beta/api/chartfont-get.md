@@ -2,12 +2,13 @@
 title: Obter ChartFont
 description: Recupera as propriedades e os relacionamentos do objeto chartfont.
 author: lumine2008
-ms.openlocfilehash: 2a40686b95e1cd30ca51c177c692ead08a62a7f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6b5ea27a182f009a029300a2d8268537bebc76f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316510"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892432"
 ---
 # <a name="get-chartfont"></a>Obter ChartFont
 

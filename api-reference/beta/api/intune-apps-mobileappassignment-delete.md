@@ -2,12 +2,13 @@
 title: Excluir mobileAppAssignment
 description: Exclui mobileAppAssignment.
 author: tfitzmac
-ms.openlocfilehash: 55f9f1b776414d9baf0b5a19fb43ddd18baab2e5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 65d511a390a75412d363d70059728f95d0e59064
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308145"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891704"
 ---
 # <a name="delete-mobileappassignment"></a>Excluir mobileAppAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Atualizar tablerow
 description: Atualize as propriedades do objeto tablerow.
 author: lumine2008
-ms.openlocfilehash: 3990885ac237ccfe5e7a01c71353b0ec44d1a14d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 989a8ad5e28f265ec6e3f248717ebf63748dff74
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314256"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891655"
 ---
 # <a name="update-tablerow"></a>Atualizar tablerow
 

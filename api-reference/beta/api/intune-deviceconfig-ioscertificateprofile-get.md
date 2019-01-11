@@ -2,12 +2,13 @@
 title: Acessar iosCertificateProfile
 description: Leia as propriedades e as relações do objeto iosCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 8281f5a64a150c9410d71974118dd1b0a9ce3c2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5685c1de0b18838c5b9c37d2d644a52c02440f79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891844"
 ---
 # <a name="get-ioscertificateprofile"></a>Acessar iosCertificateProfile
 
@@ -41,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

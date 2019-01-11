@@ -2,12 +2,13 @@
 title: tipo de recurso de mediaStream
 description: O tipo de mediaStream.
 author: VinodRavichandran
-ms.openlocfilehash: f870611700289f0254272b78e18e344d02dd123e
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380293"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889611"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso de mediaStream
 
@@ -17,13 +18,13 @@ O tipo de mediaStream.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	    | Tipo    | Descrição                                                                                                   |
+| Propriedade    | Tipo    | Descrição                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direção   | String  | A direção. Os valores possíveis são `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
+| direção   | Cadeia de caracteres  | A direção. Os valores possíveis são `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | rótulo       | String  | O rótulo de fluxo de mídia.                                                                                       |
-| mediaType   | String  | O tipo de mídia. Os valores possíveis são `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| mediaType   | Cadeia de caracteres  | O tipo de mídia. Os valores possíveis são `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
 | serverMuted | Booliano | Se a mídia está sem som pelo servidor.                                                                          |
-| sourceId    | String  | A ID de origem.                                                                                                |
+| sourceId    | Cadeia de caracteres  | A ID de origem.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

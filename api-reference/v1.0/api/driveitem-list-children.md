@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
-ms.openlocfilehash: 6e328446c626c3c96d00b67eef4423288a58b1cc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: d7d4dee8ec04e7b87a5239a84774bd03000e2aed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004652"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891137"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 

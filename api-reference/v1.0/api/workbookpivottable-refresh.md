@@ -2,12 +2,13 @@
 title: 'workbookPivotTable: atualizar'
 description: Atualiza a Tabela Dinâmica.
 author: lumine2008
-ms.openlocfilehash: b95c1d8d9c4d48a8e7204a099c21781a00a6d935
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 74bca619a96a4fded1bd93e21cb5b69d6f605882
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311988"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892355"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: atualizar
 

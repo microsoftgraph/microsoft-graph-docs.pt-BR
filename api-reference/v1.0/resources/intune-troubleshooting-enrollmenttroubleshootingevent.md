@@ -2,12 +2,13 @@
 title: Tipo de recurso enrollmentTroubleshootingEvent
 description: Evento que representa uma falha de registro.
 author: tfitzmac
-ms.openlocfilehash: 5030dc0bafb3afa3074324bceb7a9e3a19fe7bb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 416dee647ae79f8da1871e9c126038ee21c688a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323167"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805352"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>Tipo de recurso enrollmentTroubleshootingEvent
 

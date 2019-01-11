@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsAutopilotDeploymentProfile
 description: Perfil de implantação de piloto automático do Windows
 author: tfitzmac
-ms.openlocfilehash: 9534a9c252c3ab678bf2dea83d497c9541f30c47
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1538497dc5105dcd2e7f0c9ff7fdf83c3ddec56e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892194"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso de windowsAutopilotDeploymentProfile
 
@@ -25,16 +26,16 @@ Perfil de implantação de piloto automático do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave de perfil|
-|displayName|String|Nome do perfil|
-|description|String|Descrição do perfil|
+|id|Cadeia de caracteres|Chave de perfil|
+|displayName|Cadeia de caracteres|Nome do perfil|
+|description|Cadeia de caracteres|Descrição do perfil|
 |idioma|Cadeia de caracteres|Idioma configurado no dispositivo|
 |createdDateTime|DateTimeOffset|Hora da criação de perfil|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação da perfil|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Configuração inicial pelo usuário configuração|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuração de tela do status de inscrição|
-|extractHardwareHash|Boolean|Extração de HardwareHash para o perfil|
-|deviceNameTemplate|String|O modelo usado para nomear o dispositivo piloto automático. Isso pode ser um texto personalizado e também pode conter o número de série do dispositivo, ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo pode ser mais do que 15 caracteres.|
+|extractHardwareHash|Booliano|Extração de HardwareHash para o perfil|
+|deviceNameTemplate|Cadeia de caracteres|O modelo usado para nomear o dispositivo piloto automático. Isso pode ser um texto personalizado e também pode conter o número de série do dispositivo, ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo pode ser mais do que 15 caracteres.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

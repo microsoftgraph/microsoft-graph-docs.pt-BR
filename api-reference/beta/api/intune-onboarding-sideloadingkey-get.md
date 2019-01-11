@@ -2,12 +2,13 @@
 title: Obter sideLoadingKey
 description: Leia as propriedades e os relacionamentos do objeto sideLoadingKey.
 author: tfitzmac
-ms.openlocfilehash: cae8f35c31072cf7078a50eae4a9691bd9516f8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a56ec3c0deaea4ae2b1ab138870a3315e615abf7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308642"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806290"
 ---
 # <a name="get-sideloadingkey"></a>Obter sideLoadingKey
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

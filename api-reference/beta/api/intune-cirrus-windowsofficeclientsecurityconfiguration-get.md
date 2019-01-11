@@ -2,12 +2,13 @@
 title: Obter windowsOfficeClientSecurityConfiguration
 description: Obtenha um objeto de windowsOfficeClientSecurityConfiguration de diretiva de segurança específicos.
 author: tfitzmac
-ms.openlocfilehash: 6d549adaf511eff18b890b1fff16a3bfed08a054
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c088f5a588d68a462adc6e7918336f687ae92137
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891291"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Obter windowsOfficeClientSecurityConfiguration
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

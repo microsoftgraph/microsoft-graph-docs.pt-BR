@@ -2,12 +2,13 @@
 title: Obter windowsPhone81TrustedRootCertificate
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81TrustedRootCertificate.
 author: tfitzmac
-ms.openlocfilehash: 1bfb8c7e92c40cb6194dbcae1d56add7bbf0fc84
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a10578c6d1f70cb088b4d90f1c75207e1b00294
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355066"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890661"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>Obter windowsPhone81TrustedRootCertificate
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

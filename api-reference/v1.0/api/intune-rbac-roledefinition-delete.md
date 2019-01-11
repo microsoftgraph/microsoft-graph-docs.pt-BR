@@ -2,12 +2,13 @@
 title: Excluir roleDefinition
 description: Exclui roleDefinition
 author: tfitzmac
-ms.openlocfilehash: ab6dab16c5f81f1d531ec8a331e7660e287f5785
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c7722a5a9c6b92636b79f0891f224aa00cd24ee5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324175"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889989"
 ---
 # <a name="delete-roledefinition"></a>Excluir roleDefinition
 
@@ -37,7 +38,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

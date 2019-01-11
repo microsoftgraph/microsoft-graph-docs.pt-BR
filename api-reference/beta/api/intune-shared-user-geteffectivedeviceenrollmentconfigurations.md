@@ -2,12 +2,13 @@
 title: função getEffectiveDeviceEnrollmentConfigurations
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: b7bdf815f972f56892027a01db83539065fe9caf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f2ba565908920f87fa1392dc665f8a87b2600e3e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315250"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890640"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>função getEffectiveDeviceEnrollmentConfigurations
 
@@ -43,7 +44,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 

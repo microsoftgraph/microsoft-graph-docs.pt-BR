@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de attributeMappingParameterSchema
 description: Descreve um único parâmetro usado em um attributeMappingFunctionSchema.
-ms.openlocfilehash: 164387a345f245f390d24b89a349e02ee2242041
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 083f89ebc5a74e6fd58a33925b2bfa46801b7961
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039836"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892166"
 ---
 # <a name="attributemappingparameterschema-resource-type"></a>tipo de recurso de attributeMappingParameterSchema
 
@@ -19,7 +20,7 @@ Descreve um único parâmetro usado em um [attributeMappingFunctionSchema](../re
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
 |allowMultipleOccurrences    |Booliano                   |O parâmetro determinado pode ser fornecido várias vezes (por exemplo, a entrada de vários strings no `Concatenate(string,string,...)` função). |
-|name                        |String                    |Nome do parâmetro. |
+|name                        |Cadeia de caracteres                    |Nome do parâmetro. |
 |obrigatório                    |Booliano                   |`true`Se o parâmetro é obrigatório; Caso contrário, `false`. |
 |type                        |String                    |Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. O padrão é `String`.|
 

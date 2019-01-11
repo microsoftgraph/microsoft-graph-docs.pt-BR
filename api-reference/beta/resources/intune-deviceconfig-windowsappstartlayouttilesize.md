@@ -2,12 +2,13 @@
 title: tipo de enum windowsAppStartLayoutTileSize
 description: O tamanho de blocos de aplicativo do Windows no layout iniciar.
 author: tfitzmac
-ms.openlocfilehash: ef00ebd06528fdd8f5d832d11ef34ee9f0093a3b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dde8aff258e495fce58baafc40e44ba3041d2bc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313493"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891431"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enum windowsAppStartLayoutTileSize
 

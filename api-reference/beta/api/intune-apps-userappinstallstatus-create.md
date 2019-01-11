@@ -2,12 +2,13 @@
 title: Criar userAppInstallStatus
 description: Crie um novo objeto de userAppInstallStatus.
 author: tfitzmac
-ms.openlocfilehash: ef110f5ce911e7e2244ebe2a50bcad194421ecea
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7cbf61af7c9d25070c9b95f227b4db74f367d261
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891662"
 ---
 # <a name="create-userappinstallstatus"></a>Criar userAppInstallStatus
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto userAppInstallStatus.
@@ -47,9 +48,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
-|userPrincipalName|String|Nome Principal de usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome Principal de usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|

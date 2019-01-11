@@ -2,12 +2,13 @@
 title: tipo de plataforma do enum
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: cb36f18d4d98208d230a89d5a9407dcf31785fb6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 70703bd3c962def0d10099986ebe07ff2923ee8f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891900"
 ---
 # <a name="platform-enum-type"></a>tipo de plataforma do enum
 

@@ -2,12 +2,13 @@
 title: Listar ChartPointsCollection
 description: Recupera uma lista de objetos chartpoint.
 author: lumine2008
-ms.openlocfilehash: c6ab86bdc8a62ca4553c3bc36f3c8aec6f6ab44d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7f504c522e800b5194fd5df5a30a24526ea66fea
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27322012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888883"
 ---
 # <a name="list-chartpointscollection"></a>Listar ChartPointsCollection
 

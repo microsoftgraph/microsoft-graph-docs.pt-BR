@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de directorySettingTemplate
 description: Modelos de configuração de diretório representam as configurações definidas pelo sistema disponíveis para o inquilino. Configurações do diretório podem ser criadas com base nos directorySettingTemplates disponíveis e valores alterados de seus padrões predefinidas. Modelos de configuração do diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar as configurações de todo o locatário, ou podem representar as configurações de entidade específica.  Atualmente, os únicos modelos disponíveis se aplicam a grupos do Office e incluem configurações como se os usuários podem criar grupos ou convidar pessoas de fora da organização para se tornar membros de um grupo.
-ms.openlocfilehash: fa4906aa58805e6d1a027973f61b5d68ed47f2c1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e0df923854059723ee83380f7aa0f6425cf2afb9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033439"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27806143"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>tipo de recurso de directorySettingTemplate
 

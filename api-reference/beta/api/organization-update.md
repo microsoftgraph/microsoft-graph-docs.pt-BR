@@ -1,12 +1,13 @@
 ---
 title: Atualize a organização
 description: Atualize as propriedades da organização autenticada no momento.
-ms.openlocfilehash: a7b9521ccd39cb7cb64236c7d563a8a5c08d64a3
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: ae91b0f7cf92619f07f042c515bad2aab0d1035a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748560"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890416"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -14,7 +15,7 @@ ms.locfileid: "27748560"
 
 Atualize as propriedades da organização autenticada no momento. Nesse caso, `organization` é definido como uma coleção de exatamente um registro, e, portanto, sua **ID** deve ser especificado na solicitação.  A **ID** é também conhecido como a **tenantId** da organização.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

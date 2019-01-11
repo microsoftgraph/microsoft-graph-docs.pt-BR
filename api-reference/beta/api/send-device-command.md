@@ -1,12 +1,13 @@
 ---
 title: Enviar um comando de dispositivo
 description: 'Essa API permite que os recursos de projeto Roma para um dispositivo associado a uma conta da Microsoft de comando. Depois de fazer uma chamada GET em `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Dois tipos de comandos são suportados: LaunchURI e AppServices. Se você estiver usando LaunchURI, especifique os parâmetros de *tipo* e da *carga* . Para uma chamada de AppService, especifique o '
-ms.openlocfilehash: bf330ab1234ef6ce22c6a43711621827b628a7ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037083"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891984"
 ---
 # <a name="send-device-command"></a>Enviar um comando de dispositivo
 
@@ -81,13 +82,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |payload | Microsoft.Graph.JSON| Carga para enviar para um serviço do aplicativo ou iniciar um URI em um dispositivo. |
 |responsePayload | Microsoft.Graph.JSON| Carga retornado do dispositivo de destino. |
-|postBackURI | String | URI para enviar notificações subsequentes das atualizações de volta de postagem. |
-|packageFamilyName | String | Nome da família Windows pacote de aplicativo. |
-|appServiceName | String | Nome do serviço de aplicativo definido pelo aplicativo de destino. Será necessário se lançar um serviço do aplicativo. |
-|type| String | LaunchURI ou AppService. |
-|id| String | A identificação de um comando que foi enviado ao dispositivo. |
-|actionStatus | String | O [status](get-device-command-status.md) de um comando. |
-|erro| String| Quaisquer erros associados à solicitação do aplicativo de destino. |
+|postBackURI | Cadeia de caracteres | URI para enviar notificações subsequentes das atualizações de volta de postagem. |
+|packageFamilyName | Cadeia de caracteres | Nome da família Windows pacote de aplicativo. |
+|appServiceName | Cadeia de caracteres | Nome do serviço de aplicativo definido pelo aplicativo de destino. Será necessário se lançar um serviço do aplicativo. |
+|type| Cadeia de caracteres | LaunchURI ou AppService. |
+|id| Cadeia de caracteres | A identificação de um comando que foi enviado ao dispositivo. |
+|actionStatus | Cadeia de caracteres | O [status](get-device-command-status.md) de um comando. |
+|erro| Cadeia de caracteres| Quaisquer erros associados à solicitação do aplicativo de destino. |
 
 ## <a name="launch-uri-example"></a>Exemplo URI de início
 

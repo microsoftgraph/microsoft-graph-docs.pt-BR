@@ -1,12 +1,13 @@
 ---
 title: Relatório de atividades do SharePoint
 description: Você pode obter a atividade de todos os usuários licenciados para usar o SharePoint examinando sua interação com os arquivos. Você também pode observar o nível de colaboração em andamento com base no número de arquivos compartilhados.
-ms.openlocfilehash: fd516b5ca56f8625c98fce943cafc90b32346416
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f6454399f25c035a55eb25a64bc0e38d26f42634
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890395"
 ---
 # <a name="sharepoint-activity-reports"></a>Relatório de atividades do SharePoint
 

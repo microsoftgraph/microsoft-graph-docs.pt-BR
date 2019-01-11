@@ -2,12 +2,13 @@
 title: Excluir educationSubmissionResource
 description: Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se o recurso foi copiado da atribuição, uma nova cópia do recurso será criada depois que a cópia atual for excluída.
 author: dipakboyed
-ms.openlocfilehash: d56df6cee3884556186554d9c24ae09ed802c4f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 94e73f7b4c6c0c0bc85b21ee3e651f8e61234e80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313269"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828809"
 ---
 # <a name="delete-educationsubmissionresource"></a>Excluir educationSubmissionResource
 
@@ -15,7 +16,7 @@ ms.locfileid: "27313269"
 
 Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se o recurso foi copiado da atribuição, uma nova cópia do recurso será criada depois que a cópia atual for excluída. Isso permite "Redefinir" o recurso ao seu estado original. Se o recurso não foi copiado da atribuição, mas foi adicionado de student, o recurso simplesmente é excluído.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

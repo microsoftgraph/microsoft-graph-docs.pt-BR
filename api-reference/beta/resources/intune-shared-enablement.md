@@ -2,12 +2,13 @@
 title: tipo de enum habilitação
 description: 'Valores usados para indicar o status de um dispositivo. '
 author: tfitzmac
-ms.openlocfilehash: 5b1d494fd116eab437b4654d396b029e1384a817
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c77da7026640e9ad0a6f6f08f077d509cb411f22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356886"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888253"
 ---
 # <a name="enablement-enum-type"></a>tipo de enum habilitação
 

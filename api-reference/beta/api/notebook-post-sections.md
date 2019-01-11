@@ -2,12 +2,13 @@
 title: Criar seção
 description: Crie uma nova seção no bloco de anotações especificado.
 author: Jewan-microsoft
-ms.openlocfilehash: 026473c7bed93fa127fd8fc4db8c27cfcb47acdc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c6c091d399ae2b9fc69d249a3e2a34f3051c1611
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325764"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892460"
 ---
 # <a name="create-section"></a>Criar seção
 

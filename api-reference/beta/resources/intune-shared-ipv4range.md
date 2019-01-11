@@ -2,12 +2,13 @@
 title: Tipo de recurso iPv4Range
 description: Intervalo de IP V4
 author: tfitzmac
-ms.openlocfilehash: eae240d185a6cf0dc2fc7d0d83194dc9f3f6f00d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a1f76fcd99663fe7ddd34263c8304b5597e6941c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314767"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888288"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 

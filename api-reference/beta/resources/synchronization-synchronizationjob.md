@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de synchronizationJob
 description: Executa a sincronização por executar periodicamente em segundo plano, sondagem para que as alterações em um diretório e envio-los para um diretório diferente. O trabalho de sincronização sempre é específico para uma determinada instância de um aplicativo no seu locatário. Como parte da configuração do trabalho de sincronização, você precisará fornecer a autorização para ler e gravar objetos em seu diretório de destino e personalize o esquema de sincronização de tarefa.
-ms.openlocfilehash: 0e6428f2a088e5326f4412e743489c4d94b10296
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892145"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso de synchronizationJob
 
@@ -33,7 +34,7 @@ Executa a sincronização por executar periodicamente em segundo plano, sondagem
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id             |String                     |Identificador de trabalho de sincronização exclusivo. Somente leitura.|
+|id             |Cadeia de caracteres                     |Identificador de trabalho de sincronização exclusivo. Somente leitura.|
 |agenda       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Usada para executar o trabalho de agendamento. Somente leitura.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status do trabalho, que inclui quando o trabalho foi executado último, o estado atual do trabalho e erros.|
 |templateId     |String    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que esse trabalho se baseia.|

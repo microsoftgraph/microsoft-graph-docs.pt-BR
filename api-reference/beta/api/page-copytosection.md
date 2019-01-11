@@ -1,12 +1,13 @@
 ---
 title: 'page: copyToSection'
 description: Copia uma página para uma seção específica.
-ms.openlocfilehash: d725c72eb78613845e808a3ec3694513730bb01f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 10d0eecd2f84a33e66209f8297b72b8a4630b100
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038694"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892502"
 ---
 # <a name="page-copytosection"></a>page: copyToSection
 
@@ -44,8 +45,8 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros qu
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
-|siteId|String|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteCollectionId|Cadeia de caracteres|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteId|Cadeia de caracteres|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
 |groupId|String|A id do grupo para o qual copiar. Use somente quando copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A id da seção de destino.|
 

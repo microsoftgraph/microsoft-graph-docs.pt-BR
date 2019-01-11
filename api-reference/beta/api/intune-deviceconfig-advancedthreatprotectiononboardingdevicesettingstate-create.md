@@ -2,12 +2,13 @@
 title: Criar advancedThreatProtectionOnboardingDeviceSettingState
 description: Crie um novo objeto de advancedThreatProtectionOnboardingDeviceSettingState.
 author: tfitzmac
-ms.openlocfilehash: 221ecef8a9aebdd7a04ec889ff2a04d524ac05d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 71a6e2f7c46acda723f1197a1c3b9302c63d47ae
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342949"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882254"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>Criar advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -38,7 +39,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto advancedThreatProtectionOnboardingDeviceSettingState.

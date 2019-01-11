@@ -2,12 +2,13 @@
 title: Criar educationUser
 description: Crie um novo usuário.
 author: mmast-msft
-ms.openlocfilehash: 78574d9a7ee8ff641483b821bd243ef1b7acd985
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1636d137ae1a5b8938a59acf60a5eaae578e83f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358573"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892152"
 ---
 # <a name="create-educationuser"></a>Criar educationUser
 

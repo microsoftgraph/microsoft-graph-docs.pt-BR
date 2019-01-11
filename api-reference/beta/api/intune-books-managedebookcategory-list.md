@@ -2,12 +2,13 @@
 title: Lista managedEBookCategories
 description: Lista as propriedades e os relacionamentos dos objetos managedEBookCategory.
 author: tfitzmac
-ms.openlocfilehash: f4ffe260e1d6e66d981376cf0d5f96a22790a1f4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b263135e04c3ca27728deb1304d15a38e3a033a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892208"
 ---
 # <a name="list-managedebookcategories"></a>Lista managedEBookCategories
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

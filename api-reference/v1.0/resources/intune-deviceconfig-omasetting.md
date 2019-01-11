@@ -2,12 +2,13 @@
 title: Tipo de recurso omaSetting
 description: Configurações de OMA.
 author: tfitzmac
-ms.openlocfilehash: 564912635fbcd5e2846965d3546a3830119db252
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86cb06b35a0f64052860c268764696a1db8459e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340884"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888379"
 ---
 # <a name="omasetting-resource-type"></a>Tipo de recurso omaSetting
 

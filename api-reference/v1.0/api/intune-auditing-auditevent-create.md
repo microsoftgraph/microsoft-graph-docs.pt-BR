@@ -2,12 +2,13 @@
 title: Criar auditEvent
 description: Criar um novo objeto auditEvent.
 author: tfitzmac
-ms.openlocfilehash: 0997ca2e9a7bf5421d20e2e3c784ebd444943d4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7e333f960e66a11c1f70b1475f74bfbbdb990551
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318407"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889149"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -36,7 +37,7 @@ POST /deviceManagement/auditEvents
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto auditEvent.
@@ -45,7 +46,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar auditEve
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
-ms.openlocfilehash: f699ccebefc849a7bf9cacc6dbda61cbcbb9896d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 44769bab4a4f4b40a80d896bed2311554ea5e8ad
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034758"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889856"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -18,7 +19,7 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|String| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
+|name|Cadeia de caracteres| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
 |type|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
 #### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 
@@ -30,7 +31,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 | Booliano | Não é compatível com as mensagens, eventos e postagens. |
 | DateTime | Deve ser especificado no formato ISO 8601. Serão armazenados no UTC. |
 | Inteiro | Valor de 32 bits. Não é compatível com as mensagens, eventos e postagens. |
-| String | Máximo de 256 caracteres. |
+| Cadeia de caracteres | Máximo de 256 caracteres. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

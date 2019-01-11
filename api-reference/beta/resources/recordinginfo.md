@@ -2,12 +2,13 @@
 title: tipo de recurso de recordingInfo
 description: Informações de gravação para um participante.
 author: VinodRavichandran
-ms.openlocfilehash: 709edcc6d473ce610cbba7f628e4ebc5057b779c
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 85c2710452905f97235928bae71ff60c2d22983f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891935"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso de recordingInfo
 
@@ -17,10 +18,10 @@ Informações de gravação para um participante.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo    | Descrição|
+| Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | O participante que iniciou a gravação. |
-| status | String | Os valores possíveis são: `recordingCapable`, `notRecording`, `startedRecording`. |
+| status | Cadeia de caracteres | Os valores possíveis são: `recordingCapable`, `notRecording`, `startedRecording`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

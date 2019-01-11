@@ -2,12 +2,13 @@
 title: função getManagedDevicesWithAppFailures
 description: Recupera a lista de dispositivos com aplicativos com falha
 author: tfitzmac
-ms.openlocfilehash: 147ee26644c3e2c425f70434516e13b03407891b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cafda91617bfd183606877bfda352370f2364c9f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890066"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>função getManagedDevicesWithAppFailures
 
@@ -39,7 +40,7 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

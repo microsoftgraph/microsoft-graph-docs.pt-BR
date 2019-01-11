@@ -2,12 +2,13 @@
 title: Tipo de recurso person
 description: Uma agregação de informações sobre uma pessoa provenientes de emails, contatos e redes sociais. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório da sua organização e as pessoas de comunicações recentes (como emails e Skype).
 author: simonhult
-ms.openlocfilehash: 519f5ade493300bdaaafeade289cbefea687df58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: d61d1393795408636ac8f5720e018bb4ea885cb5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329453"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890990"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
@@ -30,11 +31,11 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |scoredEmailAddresses|Coleção [scoredEmailAddress](scoredemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|String|O nome fornecido da pessoa.|
 |id|String|O identificador exclusivo da pessoa. Somente leitura.|
-|imAddress|String|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
+|imAddress|Cadeia de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |isFavorite|Boolean|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
 |jobTitle|String|O cargo da pessoa.|
 |officeLocation|String|O local do escritório da pessoa.|
-|personNotes|String|As anotações de forma livre que o usuário fez sobre essa pessoa.|
+|personNotes|Cadeia de caracteres|As anotações de forma livre que o usuário fez sobre essa pessoa.|
 |personType|[personType](persontype.md) |O tipo de pessoa.|
 |telefones|Coleção [phone](phone.md)|Os números de telefone da pessoa.|
 |postalAddresses|[location](location.md) collection|Os endereços da pessoa.|

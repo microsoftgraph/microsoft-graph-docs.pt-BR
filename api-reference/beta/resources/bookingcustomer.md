@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bookingCustomer
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 1eef44dfe994238d654a21c5f26ec102dcf1881d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 02439b16235b3ff1560b5a74b15cd6ce2cb3075b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034194"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888974"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso de bookingCustomer
 
@@ -28,9 +29,9 @@ Representa um cliente de um [bookingBsiness](bookingbusiness.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome do cliente.|
-|emailAddress|String|O endereço SMTP do cliente.|
-|id|String| A identificação do cliente. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome do cliente.|
+|emailAddress|Cadeia de caracteres|O endereço SMTP do cliente.|
+|id|Cadeia de caracteres| A identificação do cliente. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

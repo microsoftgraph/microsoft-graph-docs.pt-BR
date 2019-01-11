@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de logon
 description: 'Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. '
-ms.openlocfilehash: e1975b7f690e340931cb2a4f00c29cc95b805a2e
-ms.sourcegitcommit: ba6b1d1a12dcb54916b4d3e529c856f6514e01e7
+localization_priority: Priority
+ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27241073"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889065"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de logon
 Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. 
@@ -21,19 +22,19 @@ Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appDisplayName|String|Refere-se ao nome do aplicativo exibido no Portal do Windows Azure.|
+|appDisplayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no Portal do Windows Azure.|
 |appId|Cadeia de caracteres|Refere-se o GUID exclusivo que representa a Id do aplicativo no Windows Azure Active Directory.|
-|clientAppUsed|String|Fornece o cliente herdado usado para entrar activty.E.g. inclui um navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP, POP.|
+|clientAppUsed|Cadeia de caracteres|Fornece o cliente herdado usado para entrar activty.E.g. inclui um navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP, POP.|
 |appliedConditionalAccessPolicy|coleção [conditionalAccessPolicy](conditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional que são acionadas pela atividade de entrada correspondente.|
 |conditionalAccessStatus|string| Fornece o status da política de acesso condicional disparado. Os valores possíveis são: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
-|originalRequestId|String|O id de solicitação da primeira solicitação na sequência de autenticação.|
+|originalRequestId|Cadeia de caracteres|O id de solicitação da primeira solicitação na sequência de autenticação.|
 |isInteractive|Booliano|Indica se um logon é interativo ou não.|
-|tokenIssuerName|String|Nome da identidade do provedor (por exemplo, sts.microsoft.com)|
-|tokenIssuerType|String|Fornece o tipo de identityProvider. Os valores possíveis são `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
+|tokenIssuerName|Cadeia de caracteres|Nome da identidade do provedor (por exemplo, sts.microsoft.com)|
+|tokenIssuerType|Cadeia de caracteres|Fornece o tipo de identityProvider. Os valores possíveis são `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
 |correlationId|Cadeia de caracteres|Refere-se a ID que é enviada pelo cliente quando o sign-in é iniciado. Isso é usado para solução de problemas da atividade de entrada correspondente ao chamar suporte ou da assistência técnica.|
 |createdDateTime|DateTimeOffset|Fornece a data e hora que o sign-in tenha sido iniciado. O tipo de carimbo de hora é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |deviceDetail|[deviceDetail](devicedetail.md)|Fornece as informações do dispositivo de onde a entrar ocorreu. Ele inclules informações como deviceId, sistema operacional, navegador. |
-|id|String|Indica a identificação exclusiva que representa a atividade de entrada.|
+|id|Cadeia de caracteres|Indica a identificação exclusiva que representa a atividade de entrada.|
 |ipAddress|Cadeia de caracteres|Fornece o endereço IP do cliente de onde a entrar ocorreu.|
 |location|[signInLocation](signinlocation.md)|Fornece a cidade, estado e código do país 2 de carta do qual a entrar ocorreu.|
 |processingTimeInMilliseconds|Int|Fornece o tempo em milissegundos no AD STS de processamento de solicitação|
@@ -46,12 +47,12 @@ Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em
 |networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Fornece detalhes sobre o local de rede.|
 |riskLevel|string| Fornece o nível de risco associado a entrar. Os valores possíveis são: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Fornece o status de entrada. Os valores possíveis incluem `Success` e `Failure`.|
-|userDisplayName|String|Indica a exibição do nome do usuário.|
-|userId|String|Indica o ID de usuário do usuário.|
-|userPrincipalName|String|Indica o UPN do usuário.|
-|resourceDisplayName|String|Indica o nome do recurso que o usuário entrado na|
+|userDisplayName|Cadeia de caracteres|Indica a exibição do nome do usuário.|
+|userId|Cadeia de caracteres|Indica o ID de usuário do usuário.|
+|userPrincipalName|Cadeia de caracteres|Indica o UPN do usuário.|
+|resourceDisplayName|Cadeia de caracteres|Indica o nome do recurso que o usuário entrado na|
 |resourceId|Cadeia de caracteres|Indica a identificação do recurso que o usuário entrado na.|
-|authenticationMethodsUsed|String|Indica a lista de métodos de autenticação usado|
+|authenticationMethodsUsed|Cadeia de caracteres|Indica a lista de métodos de autenticação usado|
 
 ## <a name="relationships"></a>Relações
 Nenhum

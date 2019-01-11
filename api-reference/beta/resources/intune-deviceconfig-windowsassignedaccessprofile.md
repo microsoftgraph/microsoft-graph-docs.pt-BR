@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsAssignedAccessProfile
 description: Perfil de acesso atribuído para Windows.
 author: tfitzmac
-ms.openlocfilehash: 6b01f362c31f6e2791a00d8ff02a7ecd5b798e3c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 93f71952c45f4fd8bbd397f0ea115abbe3faafac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328788"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890605"
 ---
 # <a name="windowsassignedaccessprofile-resource-type"></a>tipo de recurso de windowsAssignedAccessProfile
 
@@ -28,9 +29,9 @@ Perfil de acesso atribuído para Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|profileName|String|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu Iniciar e os usuários aos quais essa configuração de quiosque é atribuída.|
-|showTaskBar|Boolean|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|profileName|Cadeia de caracteres|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu Iniciar e os usuários aos quais essa configuração de quiosque é atribuída.|
+|showTaskBar|Booliano|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
 |appUserModelIds|String collection|Estes são os únicos repositório aplicativos do Windows que estarão disponíveis para início no menu Iniciar.|
 |desktopAppPaths|String collection|Estes são os caminhos dos aplicativos de área de trabalho que estarão disponíveis no menu Iniciar e os aplicativos somente o usuário será capaz de início.|
 |userAccounts|String collection|As contas de usuário que serão bloqueadas para esta configuração de quiosque.|

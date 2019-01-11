@@ -2,12 +2,13 @@
 title: Atualizar dispositivo
 description: Atualiza as propriedades de um dispositivo registrado.
 author: tfitzmac
-ms.openlocfilehash: e7a4987c11fdd9f67077944a2458f4bb68131ee3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaa8343307707142ca969c4257cc051e36a8cd7a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336824"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27889534"
 ---
 # <a name="update-device"></a>Atualizar dispositivo
 

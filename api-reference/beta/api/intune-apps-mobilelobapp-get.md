@@ -2,12 +2,13 @@
 title: Acessar mobileLobApp
 description: Leia as propriedades e as relações do objeto mobileLobApp.
 author: tfitzmac
-ms.openlocfilehash: 3dec2c91e3a2484f0b6f725cc96bb370230a1b72
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6bb78100423ec34bab42e62d40e69f596b61dc93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319128"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27891732"
 ---
 # <a name="get-mobilelobapp"></a>Acessar mobileLobApp
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

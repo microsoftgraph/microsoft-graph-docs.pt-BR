@@ -2,12 +2,13 @@
 title: Excluir managedMobileApp
 description: Exclui managedMobileApp.
 author: tfitzmac
-ms.openlocfilehash: ea2efb72282ad60e09e3f33370ea6edf0036961a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b678efab2333a759edaf620fe19193f589ca7e10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27358944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27890437"
 ---
 # <a name="delete-managedmobileapp"></a>Excluir managedMobileApp
 
@@ -41,7 +42,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

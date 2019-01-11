@@ -1,12 +1,13 @@
 ---
 title: Obter usuário
 description: Recupere o **usuário** do diretório simples que corresponde a esse **educationUser**.
-ms.openlocfilehash: e026fbb1b9294d99e124b16209465c530e229b86
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 428d564231e3922c074d5dd783592e6a9560dc43
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038653"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27892243"
 ---
 # <a name="get-user"></a>Obter usuário
 
