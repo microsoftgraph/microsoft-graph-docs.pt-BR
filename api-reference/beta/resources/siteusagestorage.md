@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de siteUsageStorage
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 1fdfa6cb2690d6dbacf5e534792061b6e64025d8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f656feacdbba3418049bd9f3072270aa04af798
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034384"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879923"
 ---
 # <a name="siteusagestorage-resource-type"></a>tipo de recurso de siteUsageStorage
 
@@ -15,10 +16,10 @@ ms.locfileid: "27034384"
 | Propriedade           | Tipo   |
 | :----------------- | :----- |
 | reportRefreshDate  | Data   |
-| siteType           | String |
+| siteType           | Cadeia de caracteres |
 | storageUsedInBytes | Int64  |
 | reportDate         | Data   |
-| reportPeriod       | String |
+| reportPeriod       | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

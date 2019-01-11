@@ -2,12 +2,13 @@
 title: Listar verificationDnsRecords
 description: Recupere uma lista de objetos domainDnsRecord.
 author: lleonard-msft
-ms.openlocfilehash: 4beaac56892a33a5b5dfe46e2739b933d1598c45
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 335fd90dc56903061f1c5c5bb86672de1a438fcb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323251"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874897"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 

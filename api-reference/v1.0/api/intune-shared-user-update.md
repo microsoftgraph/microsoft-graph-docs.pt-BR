@@ -2,12 +2,13 @@
 title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
 author: tfitzmac
-ms.openlocfilehash: dae6d6d16bfb1f849fa7a3a4e35e4c641718c70e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8af523c26ddd799b6084b9596db072cf74e40687
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329423"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879062"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -40,7 +41,7 @@ PATCH /users/{usersId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [user](../resources/intune-shared-user.md).

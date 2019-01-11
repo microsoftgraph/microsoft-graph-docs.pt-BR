@@ -2,12 +2,13 @@
 title: função getAssignedRoleIdsForLoggedInUser
 description: Recupera as definições de função atribuída e as atribuições de função do usuário autenticado no momento.
 author: tfitzmac
-ms.openlocfilehash: ccfa8c3eff38854f3576aa0cb50688c80fdacdcf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3385d43eb8ee2680d5e2684ffc21690f627a5034
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823601"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>função getAssignedRoleIdsForLoggedInUser
 
@@ -38,7 +39,7 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

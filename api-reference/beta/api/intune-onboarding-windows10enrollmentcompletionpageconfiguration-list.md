@@ -2,12 +2,13 @@
 title: Lista windows10EnrollmentCompletionPageConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 0a58303efbf97e8f447d0fdd0345d46d559b3c77
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ec24ae93a913e943706ed26a190cdb10c9bb10db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338721"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877151"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>Lista windows10EnrollmentCompletionPageConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

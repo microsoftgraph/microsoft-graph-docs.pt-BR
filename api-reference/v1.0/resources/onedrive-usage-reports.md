@@ -1,12 +1,13 @@
 ---
 title: Relatórios de uso do OneDrive
 description: Você pode usar os relatórios de uso do OneDrive para obter uma visão de alto nível do valor que você obteve do OneDrive em termos do número total de arquivos e armazenamento usados em todas as contas OneDrive da sua organização. Você pode então detalhar as tendências das contas OneDrive ativas, quantos usuários de arquivos interagiram e quanto de armazenamento é usado. Esses relatórios também podem fornecer dados sobre a conta do OneDrive.
-ms.openlocfilehash: 33064678ba3d9217ed83ae59b10cb375f4f95231
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1c0ba915d83373febe968bbc87642ec3c2f58c5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27004976"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876724"
 ---
 # <a name="onedrive-usage-reports"></a>Relatórios de uso do OneDrive
 

@@ -2,12 +2,13 @@
 title: Listar windowsPhone81CustomConfigurations
 description: Listar propriedades e relações dos objetos windowsPhone81CustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 2350613ad868c34cbc99c86e5732b62b612df3da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e11124fbcddd7e990ba75eedec4c85a4a4b40f70
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330806"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878677"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Listar windowsPhone81CustomConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

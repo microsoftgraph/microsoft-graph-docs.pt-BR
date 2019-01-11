@@ -1,12 +1,13 @@
 ---
 title: 'directoryObject: validateProperties'
 description: Valide se apelido de nome ou email de exibição de um grupo Office 365 está em conformidade com as políticas de nomenclatura.  Os clientes podem usar a API para determinar se um nome para exibição ou apelido de email é válido antes de tentar **criar** um grupo do Office 365. Para validar as propriedades de um grupo existente, use a função validateProperties para grupos.
-ms.openlocfilehash: 82592eff14829fdd8ae1d74c87f43402a3938adf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1f38a30d86cf5b28eea6b9891687c4dbca4b78fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879818"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: validateProperties
 
@@ -41,9 +42,9 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|entityType|String| `Group`é o tipo de entidade com suporte apenas. |
-|displayName|String| O nome de exibição do grupo para validar. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
-|mailNickname|String| O apelido de email do grupo para validar. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|entityType|Cadeia de caracteres| `Group`é o tipo de entidade com suporte apenas. |
+|displayName|Cadeia de caracteres| O nome de exibição do grupo para validar. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
+|mailNickname|Cadeia de caracteres| O apelido de email do grupo para validar. A propriedade não é necessária individualmente. No entanto, pelo menos uma propriedade (displayName ou mailNickname) é necessária. |
 |onBehalfOfUserId|Guid| A ID de objeto do usuário para representar ao chamar a API. Os resultados de validação são para os atributos e funções de onBehalfOfUserId. |
 
 ## <a name="response"></a>Resposta

@@ -2,12 +2,13 @@
 title: Excluir macOSDeviceFeaturesConfiguration
 description: Exclui macOSDeviceFeaturesConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ff436f0071346d89ab89ce68f8d99e00093d2b2f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0c85766a02ecba992ebd2e131d33e93f9f71c07
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301362"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878568"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Excluir macOSDeviceFeaturesConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

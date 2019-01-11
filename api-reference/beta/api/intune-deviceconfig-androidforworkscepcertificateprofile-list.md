@@ -2,12 +2,13 @@
 title: Lista androidForWorkScepCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkScepCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 5bc3fd447f099a5a5f9d93d76a08361bae592bac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 426e4c390133214132efe5c167a0adcd96c81306
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878110"
 ---
 # <a name="list-androidforworkscepcertificateprofiles"></a>Lista androidForWorkScepCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

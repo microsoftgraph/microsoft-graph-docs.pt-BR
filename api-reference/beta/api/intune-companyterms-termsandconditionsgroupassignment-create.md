@@ -2,12 +2,13 @@
 title: Criar termsAndConditionsGroupAssignment
 description: Crie um novo objeto de termsAndConditionsGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 54bcf9591cbfc9cd9369e434b11440a8247ea813
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d02e0f1a2e4f0a79f6baa9fec76a68c45ef3dec7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301383"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878579"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Criar termsAndConditionsGroupAssignment
 
@@ -38,7 +39,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto termsAndConditionsGroupAssignment.
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|targetGroupId|String|Identificador exclusivo de um grupo que a política de T & C é atribuída a.|
+|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo que a política de T & C é atribuída a.|
 
 
 

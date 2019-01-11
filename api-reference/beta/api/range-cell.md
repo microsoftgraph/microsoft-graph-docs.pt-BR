@@ -1,12 +1,13 @@
 ---
 title: 'Range: Cell'
 description: Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.
-ms.openlocfilehash: 641de24869d5a57b08f339b7552d67d07be7b75c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2806fdcdc6072067a4fb4012fb9dc908aa3c15f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040446"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877011"
 ---
 # <a name="range-cell"></a>Range: Cell
 
@@ -41,8 +42,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|row|número|O número da linha da célula a ser recuperada. Indexados com zero.|
-|column|número|O número da coluna da célula a ser recuperada. Indexados com zero.|
+|row|number|O número da linha da célula a ser recuperada. Indexados com zero.|
+|column|number|O número da coluna da célula a ser recuperada. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 

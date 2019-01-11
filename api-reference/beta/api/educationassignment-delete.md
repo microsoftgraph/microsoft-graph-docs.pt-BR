@@ -2,12 +2,13 @@
 title: Excluir educationAssignment
 description: Exclua uma atribuição existente. Somente professores dentro de uma classe podem excluir atribuições.
 author: dipakboyed
-ms.openlocfilehash: 94d99f65f491d641b74313a3ac9b06841b049731
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 09365c44bef4f12ad9be24f8ed30cfb0efc5c6f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352910"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874988"
 ---
 # <a name="delete-educationassignment"></a>Excluir educationAssignment
 
@@ -15,14 +16,14 @@ ms.locfileid: "27352910"
 
 Exclua uma atribuição existente. Somente professores dentro de uma classe podem excluir atribuições.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 |Delegado (conta pessoal da Microsoft) |   Não são suportados. |
-|Application | Não são suportados.  | 
+|Aplicativo | Não são suportados.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 

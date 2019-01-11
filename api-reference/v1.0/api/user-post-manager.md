@@ -1,12 +1,13 @@
 ---
 title: Atribuir um gerente
 description: Use essa API para atribuir um gerente ao usuário.
-ms.openlocfilehash: ab48d0546b533fcc137d31cdc889072abf48fcfe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddbb73b5306188f2126f7817ddde6d02bde6f850
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877494"
 ---
 # <a name="assign-a-manager"></a>Atribuir um gerente
 

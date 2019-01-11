@@ -2,12 +2,13 @@
 title: tipo de recurso de audioSourceLevel
 description: Configuração de nível de outras fontes.
 author: VinodRavichandran
-ms.openlocfilehash: 5d5abe7eba03891427b30ba1c8f63b15b3707e46
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: adf3c4805271d0a8d02d25fc8e7ecb547db10215
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880637"
 ---
 # <a name="audiosourcelevel-resource-type"></a>tipo de recurso de audioSourceLevel
 
@@ -17,11 +18,11 @@ Configuração de nível de outras fontes.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	               | Tipo    | Descrição                                                                                         |
+| Propriedade               | Tipo    | Descrição                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
 | duckOthers             | Booliano | Habilita a essa fonte para jantar de outras fontes enquanto estão ativos. Se definido como true, desviando nível deve ser definido.|
 | nível                  | Int64   | Desviando nível da fonte se `duckOthers` estiver definida como `true`.                                     |
-| participante            | String  | O fluxo de áudio participante do código-fonte.                                                                |
+| participante            | Cadeia de caracteres  | O fluxo de áudio participante do código-fonte.                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

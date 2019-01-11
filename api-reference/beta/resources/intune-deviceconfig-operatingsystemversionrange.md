@@ -2,12 +2,13 @@
 title: tipo de recurso de operatingSystemVersionRange
 description: Intervalo de versão do sistema operacional.
 author: tfitzmac
-ms.openlocfilehash: b853e71b2d8f66d24122afb51cea97fc6a8f8d7e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 56df6b53dc29247d3f718ad185152069a071a0f7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331161"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875800"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>tipo de recurso de operatingSystemVersionRange
 
@@ -19,9 +20,9 @@ Intervalo de versão do sistema operacional.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|String|A descrição deste intervalo (por exemplo, válido 1702 compilações)|
-|lowestVersion|String|A menor inclusive versão que contém esse intervalo.|
-|highestVersion|String|A versão inclusive maior que contém esse intervalo.|
+|description|Cadeia de caracteres|A descrição deste intervalo (por exemplo, válido 1702 compilações)|
+|lowestVersion|Cadeia de caracteres|A menor inclusive versão que contém esse intervalo.|
+|highestVersion|Cadeia de caracteres|A versão inclusive maior que contém esse intervalo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

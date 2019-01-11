@@ -2,12 +2,13 @@
 title: Trabalhando com a API de reuniões online no Microsoft Graph e de chamadas
 description: O Microsoft Graph chama e reuniões online API adiciona uma nova dimensão a como seus aplicativos e serviços podem interagir com os usuários, permitindo que os recursos de vídeos e voz. A API permite criar chamadas e receber chamadas de usuários e aplicativos no Microsoft Teams. Você pode usar essas APIs para criar um aplicativo de serviço (bot) que possa atuar como um participante de uma chamada ou reunião.
 author: VinodRavichandran
-ms.openlocfilehash: 1b7efc774dfee0e0617d5c4f99ba08351c9f2a1f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Priority
+ms.openlocfilehash: d7912f587dcc0181a2edd4072f0e07aa643d66be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380559"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876528"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Trabalhando com a API de reuniões online no Microsoft Graph e de chamadas
 
@@ -36,7 +37,7 @@ Uma chamada pode iniciar como ponto a ponto e escale para com vários participan
 
 Para receber uma chamada de entrada, você precisa registrar o bot de chamada. Quando o bot recebe a notificação de entrada, ela possui as seguintes opções.
 
-| Método		                              | Descrição                                  |
+| Método                              | Descrição                                  |
 |:------------------------------------|:---------------------------------------------|
 | [Resposta](../api/call-answer.md)     | Atenda a chamada de entrada.                    |
 | [Reject](../api/call-reject.md)     | Rejeitar e desligar a chamada.                  |
@@ -52,7 +53,7 @@ O bot pode redirecionar a chamada para outro usuário ou um bot. O bot também p
 
 Operações para o bot estão disponíveis no objeto de chamada. Eles afetam o bot como participante na chamada.
 
-| Método		                                                            | Descrição                                  |
+| Método                                                            | Descrição                                  |
 |:------------------------------------------------------------------|:---------------------------------------------|
 | [Sem áudio](../api/call-mute.md)                                       | Ativar Mudo self na chamada.                       |
 | [Desativar Mudo](../api/call-unmute.md)                                   | Desativar o mudo self na chamada.                     |
@@ -61,7 +62,7 @@ Operações para o bot estão disponíveis no objeto de chamada. Eles afetam o b
 
 Para interagir com outros participantes na chamada, use o objeto de participantes.
 
-| Método		                                                            | Descrição                                  |
+| Método                                                            | Descrição                                  |
 |:------------------------------------------------------------------|:---------------------------------------------|
 | [Participantes da lista](../api/call-list-participants.md)             | Obtenha uma coleção de objetos dos participantes.         |
 | [Convidar participantes](../api/participant-invite.md)               | Convide participantes à chamada ativa.      |
@@ -77,7 +78,7 @@ Quando o bot atende uma chamada de entrada ou ingressa em uma chamada de nova ou
 
 Bots pode gerenciar o fluxo de trabalho e descarregamento de processamento de áudio para a plataforma de mídia em tempo real Microsoft. Com o serviço hospedado de mídia, você tem enfatizam opções para implementar e hospedar seu bot. Considere o uso de um dos [SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks)disponíveis. Um bot de serviço hospedado mídia pode ser implementado como um serviço sem estado conforme ele não processará a mídia localmente.
 
-| Método		                                                        | Descrição                                             |
+| Método                                                        | Descrição                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|
 | [PlayPrompt](../api/call-playprompt.md)                       | Reproduza um clipe de áudio para o usuário.                         |
 | [Record](../api/call-record.md)                               | Opcionalmente, reproduzir um prompt e registre um clipe de áudio.      |

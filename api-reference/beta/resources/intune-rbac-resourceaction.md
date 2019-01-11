@@ -2,12 +2,13 @@
 title: Tipo de recurso resourceAction
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: c373cc15b1dfce1ca3cede9fa1c7a642da48f5bf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8d607ca2b250e9d2af55b74ef568a82c522bf761
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27319156"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876381"
 ---
 # <a name="resourceaction-resource-type"></a>Tipo de recurso resourceAction
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de officeClientConfiguration
 description: Configuração do cliente do Office.
 author: tfitzmac
-ms.openlocfilehash: 67a7845a2e0327e2e5de37d424274f6e2ee35604
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879629"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso de officeClientConfiguration
 
@@ -27,11 +28,11 @@ Configuração do cliente do Office.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|ID da diretiva de configuração do cliente do office.|
+|id|Cadeia de caracteres|ID da diretiva de configuração do cliente do office.|
 |userPreferencePayload|Stream|Configurações de preferência JSON da cadeia de caracteres em formato binário, esses valores podem ser substituídos pelo usuário.|
 |policyPayload|Stream|Configurações de diretiva JSON da cadeia de caracteres em formato binário, esses valores não podem ser alterados pelo usuário.|
-|description|String|Ainda não documentado|
-|displayName|String|Admin fornecida a descrição do cliente do office política de configuração.|
+|description|Cadeia de caracteres|Ainda não documentado|
+|displayName|Cadeia de caracteres|Admin fornecida a descrição do cliente do office política de configuração.|
 |lastModifiedDateTime|DateTime|Carimbo de data e hora modificadas por último da política.|
 |prioridade|Int32|Valor de prioridade deve ser um valor exclusivo para cada política em um locatário e será usado para resolução de conflito, valores inferiores média de prioridade é alta.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Check-in do resumo do usuário para a política.|

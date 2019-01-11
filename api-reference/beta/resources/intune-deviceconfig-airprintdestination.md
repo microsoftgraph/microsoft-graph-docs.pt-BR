@@ -2,12 +2,13 @@
 title: tipo de recurso de airPrintDestination
 description: Representa um destino AirPrint.
 author: tfitzmac
-ms.openlocfilehash: 046f85c65d382b34e6920f30f6b2718f817371a9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6d1548737956d35d42fc077afe92de1885a54581
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361051"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878586"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso de airPrintDestination
 
@@ -20,9 +21,9 @@ Representa um destino AirPrint.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ipAddress|Cadeia de caracteres|O endereço IP de destino AirPrint.|
-|resourcePath|String|O caminho do recurso associado à impressora. Isso corresponde ao parâmetro rp do registro Bonjour _ipps.tcp. Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, ipp/impressão, Epson_IPP_Printer.|
+|resourcePath|Cadeia de caracteres|O caminho do recurso associado à impressora. Isso corresponde ao parâmetro rp do registro Bonjour _ipps.tcp. Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, ipp/impressão, Epson_IPP_Printer.|
 |porta|Int32|A porta de escuta do destino AirPrint. Se essa chave não for especificado, AirPrint usará a porta padrão. Disponível no iOS 11.0 e versões posteriores.|
-|forceTls|Boolean|Se true conexões de AirPrint são protegidas pela segurança de camada de transporte (TLS). O padrão é false. Disponível no iOS 11.0 e versões posteriores.|
+|forceTls|Booliano|Se true conexões de AirPrint são protegidas pela segurança de camada de transporte (TLS). O padrão é false. Disponível no iOS 11.0 e versões posteriores.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

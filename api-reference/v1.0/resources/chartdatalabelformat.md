@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartDataLabelFormat
 description: Abrange as propriedades de formatação dos rótulos de dados do gráfico.
 author: lumine2008
-ms.openlocfilehash: 4c8961eb884a5ab603feda368934795cb73915d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 586b201b0bcc70765fb68aa7736664f493f5539b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356473"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876920"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Tipo de recurso ChartDataLabelFormat
 

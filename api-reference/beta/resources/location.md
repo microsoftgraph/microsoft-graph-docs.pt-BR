@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Location
 description: Representa informações de localização para um evento.
-ms.openlocfilehash: fec075d37bfb2d7eca80f5007db53801dda96ed8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 650876596e2cf9336054957cfd4c95bf4dad16b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033234"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879398"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
@@ -31,12 +32,12 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
-| displayName  | String | O nome associado ao local.                       |
-| locationEmailAddress | String | O endereço de email opcional do local. |
-| locationUri | String | URI opcional que representa o local. |
-| locationType | String | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
-| uniqueId | String | Apenas para uso interno.|
-| uniqueIdType | String | Apenas para uso interno. |
+| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
+| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local. |
+| locationUri | Cadeia de caracteres | URI opcional que representa o local. |
+| locationType | Cadeia de caracteres | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
+| uniqueId | Cadeia de caracteres | Apenas para uso interno.|
+| uniqueIdType | Cadeia de caracteres | Apenas para uso interno. |
 
 
 ## <a name="json-representation"></a>Representação JSON

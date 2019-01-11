@@ -2,12 +2,13 @@
 title: Obter androidEasEmailProfileConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidEasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 6cb2900f8e2e4912bfa462ab610b67c46e27776d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b00a3aa67646abe9c2d8263ab1ddda088f200e9c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355052"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879489"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>Obter androidEasEmailProfileConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

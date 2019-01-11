@@ -2,12 +2,13 @@
 title: Tipo de recurso termsAndConditionsAssignment
 description: C) política a um determinado grupo. Os usuários do grupo deverão aceitar os termos para que seus dispositivos sejam registrados no Intune.
 author: tfitzmac
-ms.openlocfilehash: a7b0e9deb391b9431be1ed4f282cb6e5a63ced6e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ce4a1d77f3a3db1f1faee94c5435730515ff6af6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351048"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875058"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Tipo de recurso termsAndConditionsAssignment
 

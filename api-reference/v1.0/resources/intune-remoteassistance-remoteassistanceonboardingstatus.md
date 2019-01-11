@@ -2,12 +2,13 @@
 title: tipo de enum remoteAssistanceOnboardingStatus
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 18360c8194bf1384d9fa887286a701a0cc2fd1ba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a0dade07bafe1149eb76b46ffd3fd5b9242c2891
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880035"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>tipo de enum remoteAssistanceOnboardingStatus
 

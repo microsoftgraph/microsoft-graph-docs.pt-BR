@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getEmailActivityUserDetail'
 description: Obtenha dados sobre as atividades de email que os usuários realizaram.
-ms.openlocfilehash: 11d8e081c15be137c181d0f2608f5821d3e2e63e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 4919f6ab0ea9bccb895b8c325f96d2da92488416
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003535"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875149"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 

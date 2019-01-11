@@ -2,12 +2,13 @@
 title: tipo de enum adminConsentState
 description: Estado de consentimento do administrador.
 author: tfitzmac
-ms.openlocfilehash: d8a22d29157e09b3c038232a34f854da49e9cb4b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 40f2c30327f7e8af3792c4332fb5605159a28628
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353778"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876794"
 ---
 # <a name="adminconsentstate-enum-type"></a>tipo de enum adminConsentState
 

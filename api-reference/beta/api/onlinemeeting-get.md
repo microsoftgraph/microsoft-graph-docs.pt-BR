@@ -2,12 +2,13 @@
 title: Get de Reunião Online
 description: Recupere as propriedades e relacionamentos de um objeto **onlineMeeting** .
 author: VinodRavichandran
-ms.openlocfilehash: bfae4273aba0583e6c10a7e10f9c67865326bacf
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 75f4b4372e8e2bf12deee4d77f8f271696c715d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380377"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880630"
 ---
 # <a name="get-online-meeting"></a>Get de Reunião Online
 
@@ -18,7 +19,7 @@ Recupere as propriedades e relacionamentos de um objeto **onlineMeeting** .
 > **Observação:** O `GET` método está limitado a uma [id de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para interoperabilidade de vídeo de nuvem licenciados usuários e este método é usado para obter os detalhes para ingressar na reunião.
 > Para fluxos de regulares, o bot pode usar o `joinURL` ingressar em uma reunião e nenhuma pesquisa é necessária.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:------------------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Não são suportados.                                        |
 | Delegado (conta pessoal da Microsoft) | Não são suportados.                                        |
-| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

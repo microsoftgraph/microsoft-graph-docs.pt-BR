@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de cloudAppSecurityState
 description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
-ms.openlocfilehash: 915044c3084e3d9a9435d602ecc7ec809d2168f2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007201"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876801"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso de cloudAppSecurityState
 
@@ -16,9 +17,9 @@ Contém informações de estado sobre o aplicativo de nuvem (destinationServiceN
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationServiceIp|String|Endereço IP de destino da conexão para o serviço/aplicativo de nuvem.|
-|destinationServiceName|String|Nome do serviço do aplicativo de nuvem (por exemplo "Equipe de vendas", "Recados", etc.).|
-|riskScore|String|Pontuação de risco de provedor-gerado/calculado do aplicativo/serviço de nuvem. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
+|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão para o serviço/aplicativo de nuvem.|
+|destinationServiceName|Cadeia de caracteres|Nome do serviço do aplicativo de nuvem (por exemplo "Equipe de vendas", "Recados", etc.).|
+|riskScore|Cadeia de caracteres|Pontuação de risco de provedor-gerado/calculado do aplicativo/serviço de nuvem. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
 
 ## <a name="json-representation"></a>Representação JSON
 

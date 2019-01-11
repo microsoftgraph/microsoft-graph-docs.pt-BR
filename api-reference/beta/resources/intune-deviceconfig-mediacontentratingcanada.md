@@ -2,12 +2,13 @@
 title: Tipo de recurso mediaContentRatingCanada
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: efdc88934e46c849f48c0eb24ddd49535b824044
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 430baf0e6adaf53d922dc6cf94c8640107869ec4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331952"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879930"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 

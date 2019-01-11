@@ -2,12 +2,13 @@
 title: Listar iosLobApps
 description: Listar propriedades e relações dos objetos iosLobApp.
 author: tfitzmac
-ms.openlocfilehash: c39599490a15240c3a7e8152d17f042dc247c0da
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 541ea39298eb8f6f4feb4235a9fc7967e3982dfb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316986"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879356"
 ---
 # <a name="list-ioslobapps"></a>Listar iosLobApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

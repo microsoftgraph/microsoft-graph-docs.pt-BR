@@ -1,12 +1,13 @@
 ---
 title: assignLicense
 description: Adicionar ou remover licenças do usuário habilitar ou desabilitar o uso de ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura do Office 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a usuários específicos. Você também pode ativar e desativar os planos de específicos associados a uma assinatura. Para saber mais sobre licenças e assinaturas, consulte este artigo do Technet.
-ms.openlocfilehash: ecfe1f97e2e951998e0a62eea68412279eae524f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041179"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876199"
 ---
 # <a name="assignlicense"></a>assignLicense
 

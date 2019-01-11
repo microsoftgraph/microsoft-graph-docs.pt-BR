@@ -2,12 +2,13 @@
 title: Tipo de recurso iosMinimumOperatingSystem
 description: Contém as propriedades do sistema operacional mínimo obrigatório para um aplicativo móvel iOS.
 author: tfitzmac
-ms.openlocfilehash: 5583006d4654f4244120fd9d6f55fe03307dc1fd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7243b337a53cca31054f99ae807e5c17cdd3e372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306045"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876263"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -21,7 +22,7 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 |v9_0|Booliano|Versão 9.0 ou posterior.|
 |v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Boolean|Versão 12.0 ou posterior.|
+|v12_0|Booliano|Versão 12.0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

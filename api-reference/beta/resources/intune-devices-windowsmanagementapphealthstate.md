@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsManagementAppHealthState
 description: Entidade de estado integridade do aplicativo de gerenciamento de Windows.
 author: tfitzmac
-ms.openlocfilehash: 5ff77ce54a99ed71a8f4b3498a469342b2e46367
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23381aed47ade8f42937f6bc48cfff33b36d1fa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27359700"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875296"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>tipo de recurso de windowsManagementAppHealthState
 
@@ -28,12 +29,12 @@ Entidade de estado integridade do aplicativo de gerenciamento de Windows.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o estado de integridade de aplicativo de gerenciamento do Windows|
+|id|Cadeia de caracteres|Identificador exclusivo para o estado de integridade de aplicativo de gerenciamento do Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Estado de integridade do aplicativo do gerenciamento do Windows. Os valores possíveis são: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Versão instalada do aplicativo de gerenciamento do Windows.|
+|installedVersion|Cadeia de caracteres|Versão instalada do aplicativo de gerenciamento do Windows.|
 |lastCheckInDateTime|DateTimeOffset|Aplicativo de gerenciamento do Windows hora do último check-in.|
-|deviceName|String|Nome do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
-|deviceOSVersion|String|Versão do sistema operacional do Windows 10 do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
+|deviceOSVersion|Cadeia de caracteres|Versão do sistema operacional do Windows 10 do dispositivo no qual o Windows o aplicativo de gerenciamento está instalado.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

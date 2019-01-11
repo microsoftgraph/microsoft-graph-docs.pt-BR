@@ -1,12 +1,13 @@
 ---
 title: Obter eventMessage
 description: Expanda o parâmetro sobre a propriedade de navegação de **evento** para obter o evento associado no calendário do participante.
-ms.openlocfilehash: 06b306146a15d98bb327352f568869267f26c37d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ea429ba661d9fd75c45adf50c1cec2bb5a2227cb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007485"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873812"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 

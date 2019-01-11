@@ -1,12 +1,13 @@
 ---
 title: 'message: createReply'
 description: Crie um rascunho da resposta para a mensagem especificada. Você pode atualizar o rascunho para adicionar conteúdo de resposta ao **corpo** ou alterar outras propriedades da mensagem, ou, simplesmente enviar o rascunho.
-ms.openlocfilehash: 0b98b7f5baea1067097d09b27c13872ef6fc139f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92fc487ad4fe57a7439e367e4238aeff3ddfd7ed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007489"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874198"
 ---
 # <a name="message-createreply"></a>message: createReply
 

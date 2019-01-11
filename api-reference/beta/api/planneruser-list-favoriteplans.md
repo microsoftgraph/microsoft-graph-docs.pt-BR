@@ -2,12 +2,13 @@
 title: Lista favoritePlans
 description: Recupere uma lista de plannerPlans que são marcados como favorito por um usuário. Você pode marcar um plano como favorito, atualizando o recurso plannerUser.
 author: TarkanSevilmis
-ms.openlocfilehash: c0f82522c41977df1aa034dbd14a86749b10b803
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1aada942a2437886683bc8041143f156e2ec848c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876297"
 ---
 # <a name="list-favoriteplans"></a>Lista favoritePlans
 
@@ -15,7 +16,7 @@ ms.locfileid: "27324581"
 
 Recupere uma lista de [plannerPlans](../resources/plannerplan.md) que são marcados como favorito por um usuário. Você pode marcar um plano como favorito, [Atualizando o recurso plannerUser](planneruser-update.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

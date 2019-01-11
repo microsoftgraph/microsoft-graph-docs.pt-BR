@@ -2,12 +2,13 @@
 title: tipo de recurso de educationCsvDataProvider
 description: 'Usado para configurar o perfil de sincronização de dados da escola quando arquivos CSV são a fonte de entrada.  '
 author: mmast-msft
-ms.openlocfilehash: 1a816d4e176147d549381465154e35cf0a821b98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb4d08a2a6750310a825f66ecfb0017abacd36fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317896"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878565"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>tipo de recurso de educationCsvDataProvider
 

@@ -2,12 +2,13 @@
 title: 'mensagem: Cancelar a assinatura'
 description: Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a assinatura de uma lista de distribuição de e-mail. Usa as informações do cabeçalho `List-Unsubscribe`.
 author: angelgolfer-ms
-ms.openlocfilehash: e516a8aa68bde02f056e503da9c85d4e7a6f62fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357222"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877683"
 ---
 # <a name="message-unsubscribe"></a>mensagem: Cancelar a assinatura
 
@@ -25,7 +26,7 @@ Se a propriedade **unsubscribeEnabled** de uma mensagem é `true`, você pode us
 
 Uma ação bem-sucedida **Cancelar** move a mensagem para a pasta **Itens excluídos** . A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

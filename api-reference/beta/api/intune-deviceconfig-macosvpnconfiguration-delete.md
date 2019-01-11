@@ -2,12 +2,13 @@
 title: Excluir macOSVpnConfiguration
 description: Exclui um macOSVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 059d1b80226a9e782aacbc990827dbc57b907f35
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 66f1dac8fa99c3430de7fe08fb053f8c172ea86c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310889"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881855"
 ---
 # <a name="delete-macosvpnconfiguration"></a>Excluir macOSVpnConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

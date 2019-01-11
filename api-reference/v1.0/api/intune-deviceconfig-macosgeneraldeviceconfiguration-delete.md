@@ -2,12 +2,13 @@
 title: Excluir macOSGeneralDeviceConfiguration
 description: Exclui macOSGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a7b4ac7e75a9fe0bb6bd8db9ab11e60b2596c584
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc6903eb5a549f249d63af027555e662466402bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329131"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876332"
 ---
 # <a name="delete-macosgeneraldeviceconfiguration"></a>Excluir macOSGeneralDeviceConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

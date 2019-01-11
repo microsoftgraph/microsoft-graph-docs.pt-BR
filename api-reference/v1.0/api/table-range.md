@@ -2,12 +2,13 @@
 title: 'Table: Range'
 description: Obtém o objeto de intervalo associado a toda a tabela.
 author: lumine2008
-ms.openlocfilehash: 1af9013892f688634338fd3be718cbe6cb6d190c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d842d2a1c1918506c840b420ab4e909cc815efb8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339127"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876976"
 ---
 # <a name="table-range"></a>Table: Range
 

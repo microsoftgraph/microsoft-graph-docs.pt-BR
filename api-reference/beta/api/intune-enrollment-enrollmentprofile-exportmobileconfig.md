@@ -2,12 +2,13 @@
 title: função exportMobileConfig
 description: Exporta a configuração móvel
 author: tfitzmac
-ms.openlocfilehash: d6f663a729e45433c6f56f08ba02bb642749f5f5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6a20c5c26e37133588ea5bc6c4abc81fcd38275a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350667"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878901"
 ---
 # <a name="exportmobileconfig-function"></a>função exportMobileConfig
 
@@ -38,7 +39,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

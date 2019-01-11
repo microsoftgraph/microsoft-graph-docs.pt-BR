@@ -2,12 +2,13 @@
 title: Atualizar windowsIdentityProtectionConfiguration
 description: Atualize as propriedades de um objeto windowsIdentityProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4131672de21560311ee1c2c1f8c1eb930a3de255
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 77f93941d7b8eb3153d376eb3d3314842672e10a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326891"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881582"
 ---
 # <a name="update-windowsidentityprotectionconfiguration"></a>Atualizar windowsIdentityProtectionConfiguration
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) .
@@ -49,15 +50,15 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Valor booleano usado para habilitar avançada antifalsificação para reconhecimento de recurso faciais na autenticação do Windows Olá face padrão.|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|Booliano|Valor booleano usado para habilitar avançada antifalsificação para reconhecimento de recurso faciais na autenticação do Windows Olá face padrão.|
 |pinMinimumLength|Int32|Valor inteiro que define o número mínimo de caracteres necessários para o Windows Olá PIN de negócios. Os valores válidos são de 4 a 127 inclusive e menor ou igual ao valor definido para o PIN máximo. Valores válidos 4 a 127|
 |pinMaximumLength|Int32|Valor inteiro que define o número máximo de caracteres permitido para o trabalho PIN. Valores válidos são de 4 a 127 inclusive e maior ou igual ao valor definido para o PIN mínimo. Valores válidos 4 a 127|
 |pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Esse valor configura o uso de caracteres maiusculos no Windows Olá PIN de negócios. Os valores possíveis são: `blocked`, `required`, `allowed`.|
@@ -65,11 +66,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Controla a capacidade de usar caracteres especiais no Windows Olá PIN de negócios. Os valores possíveis são: `blocked`, `required`, `allowed`.|
 |pinExpirationInDays|Int32|Valor inteiro Especifica o período (em dias) que um PIN pode ser usado antes que o sistema exige que o usuário alterá-la. Valores válidos são 0 para 730 inclusive. Valores válidos de 0 a 730|
 |pinPreviousBlockCount|Int32|Controla a capacidade de impedir que os usuários utilizem antigas PINs. Isso deve ser definido entre 0 e 50, inclusive, e o PIN atual do usuário está incluído nessa contagem. Se definido como 0, anterior PINs não são armazenadas. Histórico PIN não é preservado por meio de um PIN redefinir. Valores válidos de 0 a 50|
-|pinRecoveryEnabled|Boolean|Valor booleano que permite que um usuário alterar seus PINs usando o Windows Hello para o serviço de recuperação de PIN de negócios.|
+|pinRecoveryEnabled|Booliano|Valor booleano que permite que um usuário alterar seus PINs usando o Windows Hello para o serviço de recuperação de PIN de negócios.|
 |securityDeviceRequired|Booliano|Controla se será exigido um Trusted Platform Module (TPM) para provisionamento Windows Olá for Business. Um TPM fornece um benefício de segurança adicionais em que os dados armazenados nela não podem ser usados em outros dispositivos. Se definido como False, todos os dispositivos podem provisionar Windows Olá for Business, mesmo se não houver um TPM utilizável.|
 |unlockWithBiometricsEnabled|Booliano|Controla o uso de gestos biométricos, como nominal e a impressão digital, como uma alternativa para o Windows Olá PIN de negócios.  Se definido como False, biométricos gestos não é permitido. Os usuários ainda devem configurar um PIN como um backup em caso de falhas.|
-|useCertificatesForOnPremisesAuthEnabled|Boolean|Valor Boolean que permite Windows Olá for Business usar certificados para autenticar os recursos no local.|
-|windowsHelloForBusinessBlocked|Boolean|Valor Boolean que bloqueia Windows Olá para negócios como um método para fazer o login no Windows.|
+|useCertificatesForOnPremisesAuthEnabled|Booliano|Valor Boolean que permite Windows Olá for Business usar certificados para autenticar os recursos no local.|
+|windowsHelloForBusinessBlocked|Booliano|Valor Boolean que bloqueia Windows Olá para negócios como um método para fazer o login no Windows.|
 
 
 

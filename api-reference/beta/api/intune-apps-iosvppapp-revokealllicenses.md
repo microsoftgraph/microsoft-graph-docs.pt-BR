@@ -2,12 +2,13 @@
 title: ação de revokeAllLicenses
 description: IOS REVOKE todos atribuído VPP licencia para determinados aplicativos.
 author: tfitzmac
-ms.openlocfilehash: 970882bd4195ef0b478790d21f6addc937f9fd50
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cd79d1b7f5d963b0015a63f820092def886f2119
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879804"
 ---
 # <a name="revokealllicenses-action"></a>ação de revokeAllLicenses
 
@@ -40,7 +41,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.
@@ -49,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|notifyManagedDevices|Boolean|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Booliano|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
 
 
 

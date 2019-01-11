@@ -2,12 +2,13 @@
 title: Tipo de recurso educationStudent
 description: Informações adicionais incluídas a um educationUser que está presente quando a primaryRole de um usuário é `student`.
 author: mmast-msft
-ms.openlocfilehash: ce84c9f6abb71e99bf3d886e5bad9e7e97bcb513
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f87bbe9b15f89660a166c0ca1d9a1aaa4bbd9eff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313080"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878117"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
 

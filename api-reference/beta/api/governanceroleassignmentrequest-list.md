@@ -1,12 +1,13 @@
 ---
 title: Lista governanceRoleAssignmentRequests
 description: 'Recupere uma coleção de governanceRoleAssignmentRequests. '
-ms.openlocfilehash: 89cb6130b586a44723ec636cbdbe311e0bf8d510
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 24391cf851ddb7de698a0798a85bf6e7a8aa9770
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191155"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878985"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Lista governanceRoleAssignmentRequests
 
@@ -14,10 +15,10 @@ ms.locfileid: "27191155"
 
 Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões              |
+|Tipo de permissão      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |

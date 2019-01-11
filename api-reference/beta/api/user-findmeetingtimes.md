@@ -1,12 +1,13 @@
 ---
 title: 'user: findMeetingTimes'
 description: Sugerir horários de reunião e com base na disponibilidade do organizador e participante e restrições de tempo ou o local especificadas como parâmetros de locais.
-ms.openlocfilehash: 8768059b6c15f96c0798fc3c4542410515e32555
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: aae60b6148026725d325910c8c1ac0cd2ff376a2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038309"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878908"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 

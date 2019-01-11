@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso de profilePhoto
 description: Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.
-ms.openlocfilehash: c5f74e1dcd48e42a2e17d5a64e6ed4b9e9cca5e4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: b1901928a97356b2a9808a446d34981fd74bf456
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007415"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876563"
 ---
 # <a name="profilephoto-resource-type"></a>Tipo de recurso de profilePhoto
 Uma foto de perfil de um usuário, grupo ou contato do Outlook acessada do Exchange Online. Seus dados binários não são codificados em base 64.

@@ -2,12 +2,13 @@
 title: Criar managedAppOperation
 description: Criar um novo objeto managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 21b9fdd862b72b6935e694f3a7937e675dcd5343
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eac205f4e8bd443ed90784e85e623869b440b204
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313339"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877242"
 ---
 # <a name="create-managedappoperation"></a>Criar managedAppOperation
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto managedAppOperation.
@@ -50,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
 |estado|Cadeia de caracteres|O estado atual da operação|
-|id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|version|Cadeia de caracteres|Versão da entidade.|
 
 
 

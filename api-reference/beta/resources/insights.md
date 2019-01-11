@@ -2,12 +2,13 @@
 title: tipo de recurso de ideias de pesquisas
 description: Ideias são relações calculadas usando análises avançadas e técnicas de aprendizagem da máquina. Você pode, por exemplo, identificar documentos OneDrive tendências em torno de usuários.
 author: simonhult
-ms.openlocfilehash: f3269134f4a80462359a11d603c3f843be0c62f0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 9d7a1f141e3b6834edfa784a509a2de7968650d1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318596"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878089"
 ---
 # <a name="insights-resource-type"></a>tipo de recurso de ideias de pesquisas
 

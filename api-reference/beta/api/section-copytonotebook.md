@@ -1,12 +1,13 @@
 ---
 title: 'section: copyToNotebook'
 description: Copia uma seção para um bloco de anotações específico.
-ms.openlocfilehash: 393618ddae4fa20b47bdb77aa650185f3b2ed518
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7213220711051f0d4edd926305bcdc983cfa259a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27032936"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878033"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -43,8 +44,8 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros qu
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
-|siteId|String|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteCollectionId|Cadeia de caracteres|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteId|Cadeia de caracteres|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
 |groupId|String|A id do grupo para o qual copiar. Use somente quando copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A id do bloco de anotações de destino. |
 |renameAs|String|O nome da cópia. Restabelece o padrão do nome do item existente. |

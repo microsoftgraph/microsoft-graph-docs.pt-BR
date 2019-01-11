@@ -2,12 +2,13 @@
 title: Obter termsAndConditionsAssignment
 description: Ler propriedades e relações do objeto termsAndConditionsAssignment.
 author: tfitzmac
-ms.openlocfilehash: e2fc025eca77abb3951c4453adf8644a5a0ffc9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4f8cbe68d6e90569d499891e0d3592d9521dd0b8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335774"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878390"
 ---
 # <a name="get-termsandconditionsassignment"></a>Obter termsAndConditionsAssignment
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso mailFolder
 description: Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
-ms.openlocfilehash: 49fd4571e3ebe35e04e4da4276c1816829ebc599
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a44819f0248e8d6e410e2c6bd57e727ae719b1d2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881617"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -72,12 +73,12 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
-|displayName|String|O nome de exibição da mailFolder.|
-|id|String|Identificador exclusivo do mailFolder.|
+|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
+|id|Cadeia de caracteres|Identificador exclusivo do mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
-|wellKnownName|String|O nome da pasta conhecido para a pasta. Os valores possíveis são listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **null**.|
+|wellKnownName|Cadeia de caracteres|O nome da pasta conhecido para a pasta. Os valores possíveis são listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **null**.|
 
 **Acessar contagens de itens de forma eficiente**
 

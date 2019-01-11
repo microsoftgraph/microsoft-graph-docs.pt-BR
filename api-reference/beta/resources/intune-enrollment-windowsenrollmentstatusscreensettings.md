@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsEnrollmentStatusScreenSettings
 description: Configuração de tela do status de inscrição
 author: tfitzmac
-ms.openlocfilehash: 8ccf2565d722a09de5f08ebe7333436729ce1b2e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7263fdd8ab3d9a39d5081322c62cfcf76a4c7aa0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877445"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>tipo de recurso de windowsEnrollmentStatusScreenSettings
 
@@ -19,13 +20,13 @@ Configuração de tela do status de inscrição
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hideInstallationProgress|Boolean|Mostrar ou ocultar o progresso da instalação para o usuário|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|Permitir ou bloquear um usuário utilize um dispositivo antes da instalação de perfil e o aplicativo completo|
-|blockDeviceSetupRetryByUser|Boolean|Permitir que o usuário repetir a instalação em caso de falha de instalação|
-|allowLogCollectionOnInstallFailure|Boolean|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
-|customErrorMessage|String|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
+|hideInstallationProgress|Booliano|Mostrar ou ocultar o progresso da instalação para o usuário|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Booliano|Permitir ou bloquear um usuário utilize um dispositivo antes da instalação de perfil e o aplicativo completo|
+|blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repetir a instalação em caso de falha de instalação|
+|allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
+|customErrorMessage|Cadeia de caracteres|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
 |installProgressTimeoutInMinutes|Int32|Definir tempo limite de progresso de instalação em minutos|
-|allowDeviceUseOnInstallFailure|Boolean|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
+|allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,12 +2,13 @@
 title: Lista androidForWorkMobileAppConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: d727f5752d863bcc5efd803031ceff4cbd71c975
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4d8ae140fae118ec7778b0188706a518485fbbc8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879258"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>Lista androidForWorkMobileAppConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

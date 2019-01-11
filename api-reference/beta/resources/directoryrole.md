@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso directoryRole
 description: Representa uma função de diretório do Windows Azure AD. Funções de diretório do Windows Azure AD também são conhecidos como *funções de administrador*. Para obter mais informações sobre as funções de diretório (administrador), consulte a atribuição de funções de administrador no Azure AD. Com o Microsoft Graph, você pode atribuir usuários a funções de diretório para conceder as permissões da função de destino. Para ler uma função de diretório ou atualizar seus membros, ele deve primeiro ser ativado no inquilino. Por padrão, apenas a função do diretório de administradores de empresa é ativada. Para ativar a outras funções de diretório disponível, você enviar uma solicitação POST com a ID do directoryRoleTemplate na qual a função de diretório se baseia. Herda de directoryObject.
-ms.openlocfilehash: c3def9f75b62db1f07c648fed18f57f92f5c7f77
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30f9b56652d3e4c7ebb1466941930cea0cf12ebf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876220"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 

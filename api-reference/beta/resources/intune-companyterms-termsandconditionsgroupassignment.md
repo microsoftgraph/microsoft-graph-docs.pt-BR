@@ -2,12 +2,13 @@
 title: tipo de recurso de termsAndConditionsGroupAssignment
 description: C) política a um determinado grupo. Os usuários do grupo deverão aceitar os termos para que seus dispositivos sejam registrados no Intune.
 author: tfitzmac
-ms.openlocfilehash: 044d82e00e2da81c59de5cdb26b9441da351db8a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9ae49e1223c4b74fb8da8da7f5b42533fd33c8c0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874214"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>tipo de recurso de termsAndConditionsGroupAssignment
 
@@ -29,7 +30,7 @@ Uma entidade termsAndConditionsGroupAssignment representa a atribuição de uma 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|targetGroupId|String|Identificador exclusivo de um grupo que a política de T & C é atribuída a.|
+|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo que a política de T & C é atribuída a.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

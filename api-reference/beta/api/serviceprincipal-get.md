@@ -1,12 +1,13 @@
 ---
 title: Obter servicePrincipal
 description: Recupere as propriedades e relações do objeto serviceprincipal.
-ms.openlocfilehash: 903bec11787b4b5acc5da688f7b73bf2bbd76262
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 97b1f05fe672d935a88648cb010d1e7cb9dfeaa7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878887"
 ---
 # <a name="get-serviceprincipal"></a>Obter servicePrincipal
 

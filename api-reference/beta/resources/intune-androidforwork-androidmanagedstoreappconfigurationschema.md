@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de androidManagedStoreAppConfigurationSchema
 description: Esquema que descreve as configurações personalizadas de um aplicativo Android.
-ms.openlocfilehash: e3fe6a44da3b84eebadd45e4719e982fabb5a43a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9203d72739da7fa3c4acda0388676ed1c86f924e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037416"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27880231"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>tipo de recurso de androidManagedStoreAppConfigurationSchema
 
@@ -28,7 +29,7 @@ Esquema que descreve as configurações personalizadas de um aplicativo Android.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
-|exampleJson|Binário|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
+|exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
 |schemaItems|coleção [androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Conjunto de itens que representa uma opção de configuração nomeada no esquema|
 
 ## <a name="relationships"></a>Relações

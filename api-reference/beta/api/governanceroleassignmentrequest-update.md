@@ -1,12 +1,13 @@
 ---
 title: Atualizar governanceRoleAssignmentRequests
 description: Permitem que administradores atualizar suas decisões (`AdminApproved` ou `AdminDenied`) em governanceRoleAssignmentRequests que estão no status de `PendingAdminDecision`.
-ms.openlocfilehash: bd924acd8ddd3a79ad1fb97ac5f9bdc9baba17dd
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: 3d68e06688922177e2a1a183a9fe4bfc6be6a91d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191148"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874932"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
@@ -14,12 +15,12 @@ ms.locfileid: "27191148"
 
 Permitem que administradores atualizar suas decisões (`AdminApproved` ou `AdminDenied`) em [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão no status de `PendingAdminDecision`.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 >**Observação:** Essa API também requer que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) em relação ao qual pertence o [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) recurso. 
 
-|Tipo de permissão      | Permissões              |
+|Tipo de permissão      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
@@ -41,10 +42,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
-|motivo        |String                 |✓        |O motivo fornecido pelo administrador para a sua decisão.|
-|decisão        |String                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
+|motivo        |Cadeia de caracteres                 |✓        |O motivo fornecido pelo administrador para a sua decisão.|
+|decisão        |Cadeia de caracteres                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
 |agenda      |[governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Status da `AdminApproved`, é necessário.|
-|assignmentState      |String|         | O estado da atribuição e os valores pode ser `Eligible` ou `Active`. Decisão de `AdminApproved`, é necessário. |
+|assignmentState      |Cadeia de caracteres|         | O estado da atribuição e os valores pode ser `Eligible` ou `Active`. Decisão de `AdminApproved`, é necessário. |
 ### <a name="response"></a>Resposta
 Esse método só pode ser aplicado a solicitações que estejam no status de `PendingAdminDecision`.
 

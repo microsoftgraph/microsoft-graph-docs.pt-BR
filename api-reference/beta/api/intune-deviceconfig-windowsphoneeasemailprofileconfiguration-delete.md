@@ -2,12 +2,13 @@
 title: Excluir windowsPhoneEASEmailProfileConfiguration
 description: Exclui um windowsPhoneEASEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 5653d9b383443e7bc59519d618c46788adbe2ccc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1441f89468ddb91cc752f94b70fd3d094fa33d76
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878789"
 ---
 # <a name="delete-windowsphoneeasemailprofileconfiguration"></a>Excluir windowsPhoneEASEmailProfileConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

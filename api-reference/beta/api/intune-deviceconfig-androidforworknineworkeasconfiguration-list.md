@@ -2,12 +2,13 @@
 title: Lista androidForWorkNineWorkEasConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkNineWorkEasConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 1f54227c2d817bdc8c0bfe1471246d99268c3205
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 41b356e35aa9af41840361f58d3defe625dda8ec
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324406"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878593"
 ---
 # <a name="list-androidforworknineworkeasconfigurations"></a>Lista androidForWorkNineWorkEasConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: 'Table: HeaderRowRange'
 description: Obtém o objeto de intervalo associado à linha de cabeçalho da tabela.
 author: lumine2008
-ms.openlocfilehash: 9abec04918f8944ebbafc238812e4f50c97a997f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d8d584ef8f00bf6c88894a37df16b5cca231ea3b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336978"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27877431"
 ---
 # <a name="table-headerrowrange"></a>Table: HeaderRowRange
 

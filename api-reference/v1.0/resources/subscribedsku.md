@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso subscribedSku
 description: Contém informações sobre um serviço SKU assinado por uma empresa.
-ms.openlocfilehash: 5a3c3515d4d902810db32acf10b4cee6a889bfc9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 17290890ff27fded1aaf5d7fdb2c0cdacee09b0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873714"
 ---
 # <a name="subscribedsku-resource-type"></a>Tipo de recurso subscribedSku
 
@@ -30,7 +31,7 @@ Somente a operação de leitura é compatível com as SKUs inscritas; criar, atu
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Informações sobre o número e o status das licenças pré-pagas. |
 |servicePlans|Coleção [servicePlanInfo](serviceplaninfo.md)| Informações sobre os planos do serviço que estão disponíveis com o SKU. Não anulável |
 |skuId|Guid| O identificador exclusivo (GUID) do SKU do serviço. |
-|skuPartNumber|String| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". |
+|skuPartNumber|Cadeia de caracteres| O número de peça do SKU, por exemplo: "AAD_PREMIUM" ou "RMSBASIC". |
 
 ## <a name="relationships"></a>Relações
 Nenhum

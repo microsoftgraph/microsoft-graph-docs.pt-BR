@@ -2,12 +2,13 @@
 title: Confira também
 description: '{Esta é a visão geral de nível da API para o módulo de retransmissão de dispositivo}.'
 author: tfitzmac
-ms.openlocfilehash: a398fb25499c838788ae43905d1a7b0d0519167d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39b856d95232fc54e85dbefc0f46f5eadbc7a646
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312198"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875975"
 ---
 # <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>Usar a API de retransmissão do dispositivo para transferir a experiência do usuário entre dispositivos (preview)
 

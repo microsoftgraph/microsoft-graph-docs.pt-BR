@@ -1,12 +1,13 @@
 ---
 title: Obter educationClass
 description: "  grupo Administradores representam os professores na classe. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros."
-ms.openlocfilehash: 931c47a0885d8b82411410721fb0729aa250a422
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 9d4a48a12d05bd7ef6bd1c6204ce23755b26019e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874925"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
 

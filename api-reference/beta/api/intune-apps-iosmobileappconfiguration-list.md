@@ -2,12 +2,13 @@
 title: Listar iosMobileAppConfigurations
 description: Lista propriedades e relações dos objetos iosMobileAppConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3d56946ec2183cd486e9b1ffcebb2979590dfe82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f161d86bf7065e3ad04a8dff057e4d44cfc3955
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875093"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Listar iosMobileAppConfigurations
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: tipo de recurso de networkIPv6ConfigurationManagementCondition
 description: Configurações de rede IPv6 condições de gerenciamento baseadas na configuração podem ser definidas que acionará quando um dispositivo detecta certo IP. Uma condição de gerenciamento de configuração IP só será considerada TRUE quando a conexão de rede estiver ativo.
 author: tfitzmac
-ms.openlocfilehash: de74fddad090993f6829180ba6f5eaea9cdaf59a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a5bb68ac270082df51e5d91b1e7f08bc9c1a7cbf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27305737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27879552"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso de networkIPv6ConfigurationManagementCondition
 
@@ -32,16 +33,16 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|nome exclusivo|String|Nome exclusivo para a condição de gerenciamento. Usadas nas expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|String|O nome definido admin da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|String|O administrador definidos descrição da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|Cadeia de caracteres|Identificador exclusivo para a condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|nome exclusivo|Cadeia de caracteres|Nome exclusivo para a condição de gerenciamento. Usadas nas expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|Cadeia de caracteres|O nome definido admin da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|Cadeia de caracteres|O administrador definidos descrição da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado de serviço gerado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|A hora que da última modificação a condição de gerenciamento. Lado de serviços atualizado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag da condição de gerenciamento. Lado de serviços atualizado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV6Prefix|String|A sub-rede IPv6 seja conectada. Por exemplo, 2001:db8::/ / 32|
-|ipV6Gateway|String|O endereço de gateway IPv6 para. Por exemplo 2001:db8::1|
+|ipV6Prefix|Cadeia de caracteres|A sub-rede IPv6 seja conectada. Por exemplo, 2001:db8::/ / 32|
+|ipV6Gateway|Cadeia de caracteres|O endereço de gateway IPv6 para. Por exemplo 2001:db8::1|
 |ipV6DNSServerList|String collection|Um IPv6 os servidores DNS configurados para o adaptador.|
 |dnsSuffixList|String collection|Sufixos DNS válidos para a rede atual. Por exemplo, seattle.contoso.com|
 

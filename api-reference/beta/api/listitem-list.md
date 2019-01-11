@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/11/2017
 title: Recuperar itens de uma lista do SharePoint
-ms.openlocfilehash: 3c6a8259f17091612cf10e1501a24d9eb60e28d4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eaecf297e612f8eb832f13751571816dfe950942
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034413"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27874477"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 

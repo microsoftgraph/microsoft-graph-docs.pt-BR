@@ -2,12 +2,13 @@
 title: tipo de recurso de microsoftStoreForBusinessContainedApp
 description: Uma classe que representa um aplicativo contido de um MicrosoftStoreForBusinessApp.
 author: tfitzmac
-ms.openlocfilehash: a4ba31870ab98c509a16814bd52179e1f2deab63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f783475e2f1f49745b29903689e75d854c233352
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328284"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27876969"
 ---
 # <a name="microsoftstoreforbusinesscontainedapp-resource-type"></a>tipo de recurso de microsoftStoreForBusinessContainedApp
 
@@ -31,8 +32,8 @@ Herda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|A ID de modelo de usuário do aplicativo do aplicativo de um MicrosoftStoreForBusinessApp contido.|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|Cadeia de caracteres|A ID de modelo de usuário do aplicativo do aplicativo de um MicrosoftStoreForBusinessApp contido.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

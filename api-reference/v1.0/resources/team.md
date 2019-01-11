@@ -2,12 +2,13 @@
 title: tipo de recurso de equipe
 description: 'Uma equipe Teams da Microsoft é uma coleção de canais. '
 author: nkramer
-ms.openlocfilehash: 3bb6fde320dbab2c19f151015d7121c3fc840c97
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27878544"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -42,7 +43,7 @@ Para obter mais informações sobre como trabalhar com grupos e membros de equip
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações para configurar o uso de Giphy, memes e adesivos na equipe de.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações para configurar se os convidados podem criar, atualizar ou excluir canais na equipe de.|
-|isArchived|Boolean|Se essa equipe está em modo somente leitura. |
+|isArchived|Booliano|Se essa equipe está em modo somente leitura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem realizar determinadas ações, por exemplo, criam canais e adicionar bots, na equipe de.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para configurar mensagens e menções na equipe de.|
 |webUrl|cadeia de caracteres (somente leitura) | Um hiperlink que irão para a equipe no cliente do Microsoft Teams. Esta é a URL que você obtém quando você uma equipe no cliente do Microsoft Teams do mouse em e selecione o **link para a equipe de obter**. Essa URL deve ser tratado como um blob opaco e não analisado. |

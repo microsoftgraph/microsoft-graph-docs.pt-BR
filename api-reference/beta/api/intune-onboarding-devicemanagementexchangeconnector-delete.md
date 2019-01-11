@@ -2,12 +2,13 @@
 title: Excluir deviceManagementExchangeConnector
 description: Exclui deviceManagementExchangeConnector.
 author: tfitzmac
-ms.openlocfilehash: 04bd6dc1122cb8fcc81b28f334434b60d1672d65
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dfa0e4da8800a4091beea3b8347f283add80cc0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351720"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823587"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>Excluir deviceManagementExchangeConnector
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
