@@ -2,12 +2,13 @@
 title: Ação renewUpload
 description: Renova a URI SAS para um carregamento de arquivo de aplicativo.
 author: tfitzmac
-ms.openlocfilehash: c952b6e43121e7ad36b8b30d6b915477191840f3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 48c3c4efeae4e82404303c1a5baba9243ce6f23e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303826"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882429"
 ---
 # <a name="renewupload-action"></a>Ação renewUpload
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

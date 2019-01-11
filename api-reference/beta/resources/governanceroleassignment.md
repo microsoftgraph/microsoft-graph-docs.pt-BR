@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de governanceRoleAssignment
 description: Representa a atribuição de um usuário ou grupo a uma função.
-ms.openlocfilehash: 3b0520f4641c961358b2db990914fbdf8de254f8
-ms.sourcegitcommit: 82f9d0d10388572a3073b2dde8ca0a7b409135b8
+localization_priority: Normal
+ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27191134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882688"
 ---
 # <a name="governanceroleassignment-resource-type"></a>tipo de recurso de governanceRoleAssignment
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
@@ -31,16 +32,16 @@ Não `POST`, `PUT`, `PATCH`, ou `DELETE` operações são compatíveis com o `ro
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
-|id         |String     |A identificação da atribuição de função. Ela está no formato GUID.|
+|id         |Cadeia de caracteres     |A identificação da atribuição de função. Ela está no formato GUID.|
 |resourceId |Cadeia de caracteres     |Obrigatório. A identificação do recurso que a atribuição de função é associada. |
-|roleDefinitionId|String|Obrigatório. A ID da definição de função que a atribuição de função é associada. |
-|subjectId|String       |Obrigatório. A identificação do assunto da qual a atribuição de função é associada. |
-|linkedEligibleRoleAssignmentId|String|Caso se trate de um `active assignment` e criados devido a ativação em um `eligible assignment`, que representa a identificação do que `eligible assignment`; Caso contrário, o valor será `null`. |
+|roleDefinitionId|Cadeia de caracteres|Obrigatório. A ID da definição de função que a atribuição de função é associada. |
+|subjectId|Cadeia de caracteres       |Obrigatório. A identificação do assunto da qual a atribuição de função é associada. |
+|linkedEligibleRoleAssignmentId|Cadeia de caracteres|Caso se trate de um `active assignment` e criados devido a ativação em um `eligible assignment`, que representa a identificação do que `eligible assignment`; Caso contrário, o valor será `null`. |
 |externalId   |Cadeia de caracteres     |A identificação do recurso que é usado para identificar a atribuição de função no provedor externa.|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|Para uma atribuição de função de não permanente, esse é o tempo em que a atribuição de função será expirada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|assignmentState|String  |O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
-|memberType|String      |O tipo do membro. O valor pode ser: <ul><li>`Inherited`-a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`-a atribuição de função não é herdada, mas proveniente a associação de uma atribuição de grupo</li><li>`User`-a atribuição de função é herdada nem nem de atribuição de um grupo.</li></ul>|
+|assignmentState|Cadeia de caracteres  |O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
+|memberType|Cadeia de caracteres      |O tipo do membro. O valor pode ser: <ul><li>`Inherited`-a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`-a atribuição de função não é herdada, mas proveniente a associação de uma atribuição de grupo</li><li>`User`-a atribuição de função é herdada nem nem de atribuição de um grupo.</li></ul>|
 
 
 ## <a name="relationships"></a>Relações

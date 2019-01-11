@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Criar uma nova pasta
-ms.openlocfilehash: 7f1df04ecf6948ee30ddda9486058db19ae36412
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 113c9adaa54979fb4c80b23fd2c4cd4c69f8d09a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036917"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887392"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
 

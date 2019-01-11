@@ -2,12 +2,13 @@
 title: Listar domínios
 description: Recupere uma lista de objetos domain.
 author: lleonard-msft
-ms.openlocfilehash: 3b928a41f54ef20fbc5d3d217e6f97182d5c4b8c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da92dd436da728803a64599809c6954d3c851c6d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886783"
 ---
 # <a name="list-domains"></a>Listar domínios
 

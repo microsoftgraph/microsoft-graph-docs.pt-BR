@@ -2,12 +2,13 @@
 title: Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 description: Atualize as propriedades de um objeto androidDeviceOwnerGeneralDeviceConfiguration.
 author: tfitzmac
-ms.openlocfilehash: bf81569d5af7e223ff24e34bc031a19633d22edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bb4ce71c059f9fdcfa971237b46a28473059e742
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27340093"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887602"
 ---
 # <a name="update-androiddeviceownergeneraldeviceconfiguration"></a>Atualizar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -40,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) .
@@ -49,54 +50,54 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountsBlockModification|Boolean|Indica se ou não adicionando ou removendo contas está desabilitado.|
-|appsAllowInstallFromUnknownSources|Boolean|Indica se o usuário será permitido ou não para habilitar a configuração de fontes desconhecidos.|
+|accountsBlockModification|Booliano|Indica se ou não adicionando ou removendo contas está desabilitado.|
+|appsAllowInstallFromUnknownSources|Booliano|Indica se o usuário será permitido ou não para habilitar a configuração de fontes desconhecidos.|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Indica o valor da política de atualização automática de app. Os valores possíveis são: `notConfigured`, `userChoice`, `never`, `wiFiOnly`, `always`.|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Indica a política de permissão para as solicitações de permissões de tempo de execução se uma não estiver definida para o aplicativo especificamente. Os valores possíveis são: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|bluetoothBlockConfiguration|Boolean|Indica se deve ou não bloquear um usuário configurando bluetooth.|
-|bluetoothBlockContactSharing|Boolean|Indica se deve ou não bloquear um usuário compartilhando contatos via bluetooth.|
-|cameraBlocked|Boolean|Indica se ou não desabilitar o uso da câmera.|
-|cellularBlockWiFiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
-|dataRoamingBlocked|Boolean|Indica se deve ou não bloquear um usuário a partir de dados de roaming.|
-|dateTimeConfigurationBlocked|Boolean|Indica se ou não impedir que o usuário altere manualmente a data ou hora no dispositivo|
+|bluetoothBlockConfiguration|Booliano|Indica se deve ou não bloquear um usuário configurando bluetooth.|
+|bluetoothBlockContactSharing|Booliano|Indica se deve ou não bloquear um usuário compartilhando contatos via bluetooth.|
+|cameraBlocked|Booliano|Indica se ou não desabilitar o uso da câmera.|
+|cellularBlockWiFiTethering|Booliano|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado.|
+|dataRoamingBlocked|Booliano|Indica se deve ou não bloquear um usuário a partir de dados de roaming.|
+|dateTimeConfigurationBlocked|Booliano|Indica se ou não impedir que o usuário altere manualmente a data ou hora no dispositivo|
 |factoryResetDeviceAdministratorEmails|String collection|Lista de emails de conta do Google que serão necessários para autenticar depois que um dispositivo é redefinida antes que ele pode ser configurado de fábrica.|
-|factoryResetBlocked|Boolean|Indica se ou não a opção de redefinição de fábrica nas configurações está desabilitada.|
+|factoryResetBlocked|Booliano|Indica se ou não a opção de redefinição de fábrica nas configurações está desabilitada.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que será exibido quando o dispositivo estiver no modo de quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|microphoneForceMute|Boolean|Indica se deve ou não bloquear o mudo do microfone no dispositivo.|
-|networkEscapeHatchAllowed|Boolean|Indica se ou não o dispositivo permitirá a conexão com uma conexão de rede temporária no momento da inicialização.|
-|nfcBlockOutgoingBeam|Boolean|Indica se deve ou não bloquear feixe de saída NFC.|
-|passwordBlockKeyguard|Boolean|Indica se ou não o keyguard está desabilitado.|
+|microphoneForceMute|Booliano|Indica se deve ou não bloquear o mudo do microfone no dispositivo.|
+|networkEscapeHatchAllowed|Booliano|Indica se ou não o dispositivo permitirá a conexão com uma conexão de rede temporária no momento da inicialização.|
+|nfcBlockOutgoingBeam|Booliano|Indica se deve ou não bloquear feixe de saída NFC.|
+|passwordBlockKeyguard|Booliano|Indica se ou não o keyguard está desabilitado.|
 |passwordExpirationDays|Int32|Indica a quantidade de tempo em segundos que uma senha pode ser definida para antes que ele expire e uma nova senha será necessária. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Indica o comprimento mínimo da senha necessário no dispositivo. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Milissegundos de inatividade antes que os tempos de tela check-out.|
 |passwordPreviousPasswordCountToBlock|Int32|Indica o tamanho do histórico de senhas, onde o usuário não será capaz de inserir uma nova senha que é o mesmo que qualquer senha no histórico. Valores válidos de 0 a 24|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indica a qualidade mínimo da senha necessária no dispositivo. Os valores possíveis são: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indica o número de vezes que um usuário pode digitar uma senha incorreta antes que o dispositivo é apagado. Valores válidos de 4 a 11|
-|safeBootBlocked|Boolean|Indica se ou não reinicializar que o dispositivo em inicialização segura está desabilitado.|
-|screenCaptureBlocked|Boolean|Indica se ou não desabilitar a capacidade de fazer capturas de tela.|
-|securityAllowDebuggingFeatures|Boolean|Indica se deve ou não bloquear o usuário desde a habilitação de recursos de depuração no dispositivo.|
-|securityRequireVerifyApps|Boolean|Indica se ou não verifique apps é necessário.|
-|statusBarBlocked|Boolean|Indica se o status ou barra estiver desabilitada, incluindo notificações, configurações rápidas e outras camadas da tela.|
+|safeBootBlocked|Booliano|Indica se ou não reinicializar que o dispositivo em inicialização segura está desabilitado.|
+|screenCaptureBlocked|Booliano|Indica se ou não desabilitar a capacidade de fazer capturas de tela.|
+|securityAllowDebuggingFeatures|Booliano|Indica se deve ou não bloquear o usuário desde a habilitação de recursos de depuração no dispositivo.|
+|securityRequireVerifyApps|Booliano|Indica se ou não verifique apps é necessário.|
+|statusBarBlocked|Booliano|Indica se o status ou barra estiver desabilitada, incluindo notificações, configurações rápidas e outras camadas da tela.|
 |stayOnModes|coleção [androidDeviceOwnerBatteryPluggedMode](../resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)|Lista de modos nos quais a exibição do dispositivo permanecerão ativadas. Essa coleção pode conter um máximo de 4 elementos. Os valores possíveis são: `notConfigured`, `ac`, `usb`, `wireless`.|
-|storageAllowUsb|Boolean|Indica se deve ou não permitir o armazenamento em massa USB.|
-|storageBlockExternalMedia|Boolean|Indica se o bloqueio da mídia externa ou não.|
-|storageBlockUsbFileTransfer|Boolean|Indica se o bloqueio da transferência de arquivos USB ou não.|
+|storageAllowUsb|Booliano|Indica se deve ou não permitir o armazenamento em massa USB.|
+|storageBlockExternalMedia|Booliano|Indica se o bloqueio da mídia externa ou não.|
+|storageBlockUsbFileTransfer|Booliano|Indica se o bloqueio da transferência de arquivos USB ou não.|
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Indica o número de minutos após a meia-noite que inicia a janela de atualização do sistema. Valores válidos 0 a 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Indica o número de minutos após a meia-noite que termine a janela de atualização do sistema. Valores válidos 0 a 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|O tipo de configuração de atualização do sistema. Os valores possíveis são: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
-|usersBlockAdd|Boolean|Indica se ou não a adição de usuários e perfis está desabilitado.|
-|usersBlockRemove|Boolean|Indica se ou não desabilitar a remoção de outros usuários do dispositivo.|
-|volumeBlockAdjustment|Boolean|Indica se ou não ajustar que o volume de mestre está desabilitado.|
-|wifiBlockEditConfigurations|Boolean|Indica se deve ou não bloquear as configurações de conexão wifi de edição do usuário.|
-|wifiBlockEditPolicyDefinedConfigurations|Boolean|Indica se deve ou não bloquear edição apenas as redes definidas pela política do usuário.|
+|usersBlockAdd|Booliano|Indica se ou não a adição de usuários e perfis está desabilitado.|
+|usersBlockRemove|Booliano|Indica se ou não desabilitar a remoção de outros usuários do dispositivo.|
+|volumeBlockAdjustment|Booliano|Indica se ou não ajustar que o volume de mestre está desabilitado.|
+|wifiBlockEditConfigurations|Booliano|Indica se deve ou não bloquear as configurações de conexão wifi de edição do usuário.|
+|wifiBlockEditPolicyDefinedConfigurations|Booliano|Indica se deve ou não bloquear edição apenas as redes definidas pela política do usuário.|
 
 
 

@@ -2,12 +2,13 @@
 title: Listar pontos
 description: Recupera uma lista de objetos chartpoints.
 author: lumine2008
-ms.openlocfilehash: 7385c589f87604e454c8cd7e5a9cda260feb9440
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1d712c764489d7c818cb32c8195b0bbb83ad29e8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27309300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884585"
 ---
 # <a name="list-points"></a>Listar pontos
 

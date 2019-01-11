@@ -2,12 +2,13 @@
 title: Listar deviceManagementTroubleshootingEvents
 description: Listar propriedades e relações de objetos de deviceManagementTroubleshootingEvent.
 author: tfitzmac
-ms.openlocfilehash: 7d159e6f851c1e3635a85be2ab123436e267493b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e3ea9749fc67ef338c0b1ca20703208f3aee86a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325274"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885215"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Listar deviceManagementTroubleshootingEvents
 
@@ -38,7 +39,7 @@ GET /deviceManagement/troubleshootingEvents
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

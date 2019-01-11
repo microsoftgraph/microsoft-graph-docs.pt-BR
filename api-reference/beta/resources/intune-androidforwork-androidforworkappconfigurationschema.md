@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso androidForWorkAppConfigurationSchema
 description: Esquema descrevendo as configurações personalizadas de um aplicativo do Android for Work.
-ms.openlocfilehash: f555c7e1b9c62024531f4c4fc57a3fd3df3336fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fecb4c3983254643704e6c5966212272f8f1d65e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033772"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882891"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchema
 
@@ -28,7 +29,7 @@ Esquema descrevendo as configurações personalizadas de um aplicativo do Androi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|A chave da entidade ao qual o nome do pacote Android para o aplicativo cujo esquema corresponde a|
-|exampleJson|Binário|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
+|exampleJson|Binária|A matriz de bytes codificados de UTF8 que contém exemplo de cadeia JSON em conformidade com esse esquema que demonstra como definir a configuração para esse aplicativo|
 |schemaItems|Coleção [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Conjunto de itens que representa uma opção de configuração nomeada no esquema|
 
 ## <a name="relationships"></a>Relações

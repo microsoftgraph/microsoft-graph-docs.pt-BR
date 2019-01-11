@@ -2,12 +2,13 @@
 title: Listar escolas
 description: Recupere uma lista de escolas de um usuário.
 author: mmast-msft
-ms.openlocfilehash: 35810f4b1928249576ac1216356701489f68feca
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dfe2e48d0246e30d93bebd019c4b7f81ae788e66
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303266"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883495"
 ---
 # <a name="list-schools"></a>Listar escolas
 

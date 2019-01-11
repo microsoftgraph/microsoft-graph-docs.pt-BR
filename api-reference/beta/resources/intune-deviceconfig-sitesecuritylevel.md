@@ -2,12 +2,13 @@
 title: tipo de enum siteSecurityLevel
 description: Valores possíveis para o nível de segurança do site.
 author: tfitzmac
-ms.openlocfilehash: 58138b6a3c2e7ff245a1dfa78fabea2d7db01ba5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6010b699ea7915462debede5dbda7e3a4f01b518
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885446"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>tipo de enum siteSecurityLevel
 

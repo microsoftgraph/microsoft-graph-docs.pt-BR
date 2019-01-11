@@ -2,12 +2,13 @@
 title: Tipo de recurso TableColumn
 description: Representa uma coluna em uma tabela.
 author: lumine2008
-ms.openlocfilehash: d2d83859c15a24624d8711a7ef86e3b0c89448e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c2506c34e25ba4b3754e1fd7b13557b21176e09
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315124"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882114"
 ---
 # <a name="tablecolumn-resource-type"></a>Tipo de recurso TableColumn
 
@@ -33,7 +34,7 @@ Representa uma coluna em uma tabela.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|string|Retorna uma chave exclusiva que identifica a coluna na tabela. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.|
-|índice|inteiro|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
+|índice|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
 |name|string|Retorna o nome da coluna da tabela. Somente leitura.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 

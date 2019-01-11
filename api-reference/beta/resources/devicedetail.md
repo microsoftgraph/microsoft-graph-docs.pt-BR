@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de deviceDetail
 description: Indica os detalhes do dispositivo associados a um dispositivo usado para assinar. Inclui informações como o navegador do dispositivo e informações do sistema operacional, se o dispositivo for Azure AD gerenciado.
-ms.openlocfilehash: d7c1830ee5c99fc139a937fcee3896e2a9926592
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ca4679a8c484b6dc5b36ef39d3d6d039537cbdbb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034137"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884837"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso de deviceDetail
 Indica os detalhes do dispositivo associados a um dispositivo usado para assinar. Inclui informações como o navegador do dispositivo e informações do sistema operacional, se o dispositivo for Azure AD gerenciado.
@@ -16,13 +17,13 @@ Indica os detalhes do dispositivo associados a um dispositivo usado para assinar
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Navegador|String|Indica as informações do navegador dos usados para entrar no serviço.|
+|Navegador|Cadeia de caracteres|Indica as informações do navegador dos usados para entrar no serviço.|
 |deviceId|Cadeia de caracteres|Refere-se o UniqueID do dispositivo usado para entrar no serviço.|
-|displayName|String|Refere-se com o nome do dispositivo usado para entrar no serviço.|
+|displayName|Cadeia de caracteres|Refere-se com o nome do dispositivo usado para entrar no serviço.|
 |isCompliant|Booliano|Indica se o dispositivo é compatível com ou não.|
 |isManaged|Booliano|Indica se o dispositivo é gerenciado ou não.|
-|operatingSystem|String|Indica o nome do sistema operacional e versão usada para entrar no serviço.|
-|trustType|String|Indica se o dispositivo conectado é integrado ao domínio local de trabalho associado, AzureAD ingressado, as informações. |
+|operatingSystem|Cadeia de caracteres|Indica o nome do sistema operacional e versão usada para entrar no serviço.|
+|trustType|Cadeia de caracteres|Indica se o dispositivo conectado é integrado ao domínio local de trabalho associado, AzureAD ingressado, as informações. |
 
 ## <a name="json-representation"></a>Representação JSON
 

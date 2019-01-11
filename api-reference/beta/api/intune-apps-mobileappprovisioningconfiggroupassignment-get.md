@@ -2,12 +2,13 @@
 title: Obter mobileAppProvisioningConfigGroupAssignment
 description: Leia as propriedades e os relacionamentos do objeto mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 836e1897e9ff38ef3ca3ef5c1ae55e8874897caa
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a353435d8ec4ed89485de944f7552005a1befde2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330867"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887959"
 ---
 # <a name="get-mobileappprovisioningconfiggroupassignment"></a>Obter mobileAppProvisioningConfigGroupAssignment
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

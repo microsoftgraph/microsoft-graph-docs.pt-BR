@@ -2,12 +2,13 @@
 title: função managedDeviceEnrollmentAbandonmentSummary
 description: Metadados para o relatório de resumo de abandono de inscrição
 author: tfitzmac
-ms.openlocfilehash: 133f04da7256ec8f1bbec93c9614ce1dfcd477a0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c96df67827857e763d67329ce83a81d3bfa39720
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349508"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885397"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>função managedDeviceEnrollmentAbandonmentSummary
 
@@ -39,7 +40,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.
@@ -49,8 +50,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |:---|:---|:---|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|filter|String|Ainda não documentado|
-|skipToken|String|Ainda não documentado|
+|filter|Cadeia de caracteres|Ainda não documentado|
+|skipToken|Cadeia de caracteres|Ainda não documentado|
 
 
 

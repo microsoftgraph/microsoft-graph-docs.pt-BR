@@ -2,12 +2,13 @@
 title: Atualizar windowsProtectionState
 description: Atualize as propriedades de um objeto windowsProtectionState.
 author: tfitzmac
-ms.openlocfilehash: 8bdbe3d1841eb29f7616edcc5063cd025f282974
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 97a11b8a3a26bea6f59cf0791bc8f5356f6fdb85
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886867"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar windowsProtectionState
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
@@ -48,23 +49,23 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
-|malwareProtectionEnabled|Boolean|Anti-malware está habilitado ou não|
+|id|Cadeia de caracteres|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
+|malwareProtectionEnabled|Booliano|Anti-malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como limpar ou verificação completa ou pendentes reinicialização etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|Proteção em tempo real está habilitada ou não?|
-|networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Boolean|Verificação rápida vencidos ou não?|
-|fullScanOverdue|Boolean|Completos exame vencido ou não?|
-|signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
-|rebootRequired|Boolean|Reinicialização necessária ou não?|
-|fullScanRequired|Boolean|Verificação completa necessária ou não?|
-|engineVersion|String|Versão do mecanismo de proteção de ponto de extremidade atual|
-|signatureVersion|String|Versão atual de definições de malware|
-|antiMalwareVersion|String|Atual anti-malware versão|
+|realTimeProtectionEnabled|Booliano|Proteção em tempo real está habilitada ou não?|
+|networkInspectionSystemEnabled|Booliano|Sistema de inspeção de rede habilitado ou não?|
+|quickScanOverdue|Booliano|Verificação rápida vencidos ou não?|
+|fullScanOverdue|Booliano|Completos exame vencido ou não?|
+|signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
+|rebootRequired|Booliano|Reinicialização necessária ou não?|
+|fullScanRequired|Booliano|Verificação completa necessária ou não?|
+|engineVersion|Cadeia de caracteres|Versão do mecanismo de proteção de ponto de extremidade atual|
+|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
+|antiMalwareVersion|Cadeia de caracteres|Atual anti-malware versão|
 |lastQuickScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
-|lastQuickScanSignatureVersion|String|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|String|Última versão de assinatura de verificação completa|
+|lastQuickScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação rápida|
+|lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de informado último status de integridade do dispositivo|
 
 

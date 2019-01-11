@@ -2,12 +2,13 @@
 title: Ação scheduleActionsForRules
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: f069f8bb6c1c4540353f0eb43731bff6739c0a30
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4abc5a306ff8c398ed22437251bd7d08270d93dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306024"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882674"
 ---
 # <a name="scheduleactionsforrules-action"></a>Ação scheduleActionsForRules
 
@@ -38,7 +39,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

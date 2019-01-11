@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de historyItem
 description: Representa um item de histórico de uma atividade em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário emprega com que a atividade, o compromisso é capturado como um item de histórico que indica a hora de início e término para a atividade. À medida que o usuário emprega novamente com que a atividade ao longo do tempo, vários itens de histórico são registrados para atividade de um único usuário.
-ms.openlocfilehash: f413da4280f7b39f0be2a9dafd872ebee041ccc8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 510913be6a3f70190c7cf657d9540d75f481c3a9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006094"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882912"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso de historyItem
 
@@ -26,14 +27,14 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
 |status | status | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
-|userTimezone | String | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade. Valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
+|userTimezone | Cadeia de caracteres | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade. Valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi criado no servidor.|
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi modificado no servidor.|
 |id | Cadeia de caracteres | Obrigatório. GUID do conjunto de cliente para o objeto **historyItem** .|
 |startedDateTime | DateTimeOffset | Obrigatório. DateTime UTC quando **historyItem** (sessão atividade) foi iniciado. Necessário para o histórico de linha do tempo.|
 |lastActiveDateTime | DateTimeOffset | Opcional. DateTime UTC quando **historyItem** (sessão atividade) foi compreendido última como status ativo ou terminar - se for null, **historyItem** deve ser contínuo.|
 |expirationDateTime | DateTimeOffset | Opcional. DateTime UTC quando os **historyItem** passará rígido-delete. Pode ser definido pelo cliente.|
-|activeDurationSeconds | inteiro | Opcional. A duração de participação de usuário ativo. Se não fornecido, isso é calculado do **startedDateTime** e **lastActiveDateTime**.|
+|activeDurationSeconds | int | Opcional. A duração de participação de usuário ativo. Se não fornecido, isso é calculado do **startedDateTime** e **lastActiveDateTime**.|
 
 ## <a name="relationships"></a>Relações
 

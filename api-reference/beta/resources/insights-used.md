@@ -2,12 +2,13 @@
 title: usado o tipo de recurso
 description: Uma compreensão dos representando documentos usados por um usuário específico. As ideias retorna os documentos mais relevantes que um usuário visualizados ou acessados.
 author: simonhult
-ms.openlocfilehash: 89eac33ad954905c77a26df669bb15a2cf471edd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323482"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885530"
 ---
 # <a name="used-resource-type"></a>usado o tipo de recurso
 
@@ -28,7 +29,7 @@ Uma compreensão dos representando documentos usados por um usuário específico
 
 | Propriedade              | Tipo                      | Descrição  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Identificador exclusivo do relacionamento. Somente leitura.        |
+| id                    | Cadeia de caracteres                    | Identificador exclusivo do relacionamento. Somente leitura.        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | Informações sobre quando o item foi último exibidos e modificados pelo usuário. Somente leitura.     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento na sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento usado, como a url e o tipo de documento. Somente leitura     |

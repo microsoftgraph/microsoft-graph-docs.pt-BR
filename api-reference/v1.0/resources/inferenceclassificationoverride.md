@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso inferenceClassificationOverride
 description: Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
-ms.openlocfilehash: 3f3f07e870a4ba549062197a380633ab591c54fe
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8df0f1e5fa34c630c51de7c73234e6092448f867
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005245"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885061"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 

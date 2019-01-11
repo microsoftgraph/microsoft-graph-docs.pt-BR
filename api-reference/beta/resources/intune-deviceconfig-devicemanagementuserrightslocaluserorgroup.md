@@ -2,12 +2,13 @@
 title: tipo de recurso de deviceManagementUserRightsLocalUserOrGroup
 description: Representa informações para um usuário ou grupo local usado para a definição de direitos de usuário.
 author: tfitzmac
-ms.openlocfilehash: baabd2f3bb9e3bce44d172cd83f61f57c5c2c98d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d795e2b259c71612b1d0720796b6ad76145bb36d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303728"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885734"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>tipo de recurso de deviceManagementUserRightsLocalUserOrGroup
 
@@ -19,9 +20,9 @@ Representa informações para um usuário ou grupo local usado para a definiçã
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|O nome deste usuário local ou grupo.|
-|description|String|Descrição do Admin este usuário ou grupo local.|
-|securityIdentifier|String|O identificador de segurança deste usuário local ou grupo (por exemplo, * S-1-5-32-544).|
+|name|Cadeia de caracteres|O nome deste usuário local ou grupo.|
+|description|Cadeia de caracteres|Descrição do Admin este usuário ou grupo local.|
+|securityIdentifier|Cadeia de caracteres|O identificador de segurança deste usuário local ou grupo (por exemplo, * S-1-5-32-544).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

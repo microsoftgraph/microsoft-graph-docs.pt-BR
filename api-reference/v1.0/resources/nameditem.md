@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso NamedItem
 description: Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (conforme exibido no tipo abaixo), objetos de intervalo ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
-ms.openlocfilehash: 683bc93fdd9c14005b70cb125cf09eba5c8075a8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e413361cc42a0f8f65e23e12d36b49d2c7bcebb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883822"
 ---
 # <a name="nameditem-resource-type"></a>Tipo de recurso NamedItem
 

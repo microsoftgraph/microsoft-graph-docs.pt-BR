@@ -2,12 +2,13 @@
 title: Lista androidDeviceOwnerEnrollmentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos androidDeviceOwnerEnrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 5750d62f4ff39a8f3b4b5ef33bfc361861bd4cbe
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 79fb004fc57444f77c3110316516cb5ecec7ba31
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883157"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>Lista androidDeviceOwnerEnrollmentProfiles
 
@@ -38,7 +39,7 @@ GET /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Excluir managedEBookAssignment
 description: Exclui managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: 512ebf28739a29f941ce0a9175c7cdae2e6b9bc4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9424f028dd678aedf980fa9385188dc6e4e5df62
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313563"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882786"
 ---
 # <a name="delete-managedebookassignment"></a>Excluir managedEBookAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedE
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

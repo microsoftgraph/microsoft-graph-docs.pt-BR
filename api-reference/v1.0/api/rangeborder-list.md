@@ -2,12 +2,13 @@
 title: Listar RangeBorderCollection
 description: Recupere uma lista de objetos rangeborder.
 author: lumine2008
-ms.openlocfilehash: e4a63e60b5c088405f4418252151e8ce265aa21a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dbd57bd174d57a9bb711aea495784d62fca769dd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306171"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885328"
 ---
 # <a name="list-rangebordercollection"></a>Listar RangeBorderCollection
 

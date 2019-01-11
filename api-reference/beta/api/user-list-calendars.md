@@ -1,12 +1,13 @@
 ---
 title: Listar calendários
 description: 'Obtenha calendários de todos do usuário (propriedade de navegação `/calendars`), obtenha os calendários do grupo padrão de calendários ou de um grupo de calendários específico. '
-ms.openlocfilehash: 93919f434bfbd7d3f2c11e641c9712a6d48e45b2
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c59ee99c900aa39221530473c9323dfcaab721b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886510"
 ---
 # <a name="list-calendars"></a>Listar calendários
 

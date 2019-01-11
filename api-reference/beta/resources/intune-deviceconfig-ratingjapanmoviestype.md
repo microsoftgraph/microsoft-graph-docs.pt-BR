@@ -2,12 +2,13 @@
 title: tipo de enum ratingJapanMoviesType
 description: Filmes classificação rótulos no Japão
 author: tfitzmac
-ms.openlocfilehash: 4d7e52432655d623e899907b1ca76d9da95b6a7d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fa6b805fe43c6adb56bad01239f85decc20044fc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351769"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883682"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>tipo de enum ratingJapanMoviesType
 

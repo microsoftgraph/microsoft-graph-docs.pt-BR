@@ -2,12 +2,13 @@
 title: tipo de recurso de outlookTaskFolder
 description: 'Uma pasta que contém tarefas do Outlook (coleção de objetos outlookTask). '
 author: angelgolfer-ms
-ms.openlocfilehash: 505b6bf0fe172d701d85230b907727663595d9d3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306206"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882926"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>tipo de recurso de outlookTaskFolder
 
@@ -36,10 +37,10 @@ No Outlook, o grupo de tarefas padrão, `My Tasks`, contém uma pasta de tarefas
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|changeKey|String|A versão da pasta de tarefas.|
-|id|String|O identificador da pasta de tarefas, exclusivo na caixa de correio do usuário. Somente leitura.|
-|isDefaultFolder|Boolean|True se a pasta está na pasta de tarefas padrão.|
-|name|String|O nome da pasta de tarefas.|
+|changeKey|Cadeia de caracteres|A versão da pasta de tarefas.|
+|id|Cadeia de caracteres|O identificador da pasta de tarefas, exclusivo na caixa de correio do usuário. Somente leitura.|
+|isDefaultFolder|Booliano|True se a pasta está na pasta de tarefas padrão.|
+|name|Cadeia de caracteres|O nome da pasta de tarefas.|
 |parentGroupKey|Guid|O identificador GUID exclusivo para o grupo do pai da pasta tarefa.|
 
 ## <a name="relationships"></a>Relações

@@ -2,12 +2,13 @@
 title: tipo de enum embeddedSIMDeviceStateValue
 description: Descreve os diversos estados de um código de ativação SIM incorporado.
 author: tfitzmac
-ms.openlocfilehash: 51e550669d9cd29d7d5bb246fe2cba017b02187c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3974c0df65ef9f59242f390b7166e11c3e0c592
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320591"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886055"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>tipo de enum embeddedSIMDeviceStateValue
 

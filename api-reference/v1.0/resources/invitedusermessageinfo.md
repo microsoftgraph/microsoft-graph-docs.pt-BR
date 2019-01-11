@@ -1,12 +1,13 @@
 ---
 title: Configurando a mensagem de convite
 description: O objeto invitedUserMessageInfo permite que você configure a mensagem de convite.
-ms.openlocfilehash: c8258d2b90d1aa5f5081b271ccc70fcb7408b132
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 06be157e61fd6d466cc2b18546bb29762d0133a8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006640"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885866"
 ---
 # <a name="configuring-the-invitation-message"></a>Configurando a mensagem de convite
 

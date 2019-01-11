@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de office365ActiveUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 63d0469f5531d68a7b81c37014103a02e977e870
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 887f9b08d7f46aac023fbd0f34e6174e5f422760
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036517"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882716"
 ---
 # <a name="office365activeusercounts-resource-type"></a>tipo de recurso de office365ActiveUserCounts
 
@@ -23,7 +24,7 @@ ms.locfileid: "27036517"
 | Yammer            | Int64  | O número de usuários ativos no Yammer. Qualquer usuário que pode postar, ler ou like mensagens é considerado um usuário ativo. |
 | equipes             | Int64  | O número de usuários ativos em Microsoft Teams. Qualquer usuário que as mensagens postadas no canais de equipe, mensagens enviadas em sessões de bate-papo privado ou participou chamadas ou reuniões é considerado um usuário ativo. |
 | reportDate        | Data   | A data em que um número de usuários estava ativo. |
-| reportPeriod      | String | O número de dias que abrange o relatório.    |
+| reportPeriod      | Cadeia de caracteres | O número de dias que abrange o relatório.    |
 
 ## <a name="json-representation"></a>Representação JSON
 

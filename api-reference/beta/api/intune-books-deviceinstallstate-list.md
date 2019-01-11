@@ -2,12 +2,13 @@
 title: Listar deviceInstallStates
 description: Listar propriedades e relações dos objetos deviceInstallState.
 author: tfitzmac
-ms.openlocfilehash: a2449f350c38e5ab530d38b5002e6d36218d3621
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 0352a70246726437961435b75feebfbd6af24f71
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308509"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883122"
 ---
 # <a name="list-deviceinstallstates"></a>Listar deviceInstallStates
 
@@ -39,7 +40,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

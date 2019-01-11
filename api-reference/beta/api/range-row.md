@@ -2,12 +2,13 @@
 title: 'Range: Row'
 description: Obtém uma linha contida no intervalo.
 author: lumine2008
-ms.openlocfilehash: b90238e76bff546b975624bd3723764aa6c3b535
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 006af432d0ea6e16b38694f37411f576f9fc9ed3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885516"
 ---
 # <a name="range-row"></a>Range: Row
 
@@ -40,9 +41,9 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|row|número|O número da linha do intervalo a ser recuperado. Indexados com zero.|
+|row|number|O número da linha do intervalo a ser recuperado. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 

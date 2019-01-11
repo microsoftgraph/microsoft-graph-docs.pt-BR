@@ -2,12 +2,13 @@
 title: tipo de recurso de outOfBoxExperienceSettings
 description: Configuração inicial pelo usuário configuração
 author: tfitzmac
-ms.openlocfilehash: 545fbe5c27063397a4d08c40729227804ebfc56d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af276dd520df9ee3b257650e703813de355bed9a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308404"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882730"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso de outOfBoxExperienceSettings
 
@@ -19,12 +20,12 @@ Configuração inicial pelo usuário configuração
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hidePrivacySettings|Boolean|Mostrar ou ocultar as configurações de privacidade para o usuário|
-|hideEULA|Boolean|Mostrar ou ocultar o EULA ao usuário|
+|hidePrivacySettings|Booliano|Mostrar ou ocultar as configurações de privacidade para o usuário|
+|hideEULA|Booliano|Mostrar ou ocultar o EULA ao usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação de ingresso AAD. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Boolean|Se definido, em seguida, ignore a seleção de teclado página se estiver definida região e idioma|
-|hideEscapeLink|Boolean|Se definido como verdadeiro, em seguida, o usuário não pode começar novamente com uma conta diferente, na empresa entrar|
+|skipKeyboardSelectionPage|Booliano|Se definido, em seguida, ignore a seleção de teclado página se estiver definida região e idioma|
+|hideEscapeLink|Booliano|Se definido como verdadeiro, em seguida, o usuário não pode começar novamente com uma conta diferente, na empresa entrar|
 
 ## <a name="relationships"></a>Relações
 Nenhum

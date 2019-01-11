@@ -2,12 +2,13 @@
 title: Lista androidForWorkImportedPFXCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: e2b1ed63666ee3bd0cfded2c5c8eff3ec5cdde13
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cdddd96298c62a8313f621c073bc5a7398df1115
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311064"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888022"
 ---
 # <a name="list-androidforworkimportedpfxcertificateprofiles"></a>Lista androidForWorkImportedPFXCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso Worksheet
 description: Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, gráficos, etc.
-ms.openlocfilehash: 3d2f5a62c8568a8717909c0fbf051566cab3a880
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 50d531aee3ed242f30be2c225ae9cd38bd6c6e89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003546"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884809"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 
@@ -37,7 +38,7 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 |:---------------|:--------|:----------|
 |id|string|Retorna um valor que identifica de forma exclusiva a planilha em uma determinada pasta de trabalho. O valor do identificador permanece o mesmo, ainda que a planilha seja renomeada ou movida. Somente leitura.|
 |name|string|O nome de exibição da planilha.|
-|position|inteiro|A posição baseada em zero da planilha na pasta de trabalho.|
+|position|int|A posição baseada em zero da planilha na pasta de trabalho.|
 |visibilidade|string|A visibilidade da planilha. Os valores possíveis são: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="relationships"></a>Relações

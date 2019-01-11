@@ -2,12 +2,13 @@
 title: Lista importedDeviceIdentities
 description: Lista as propriedades e os relacionamentos dos objetos importedDeviceIdentity.
 author: tfitzmac
-ms.openlocfilehash: 7a57a4340417b7aa2b78055ffc9371ec78185a5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 093fc726da0e7a66193022e1c021781c96f6964b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315012"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882142"
 ---
 # <a name="list-importeddeviceidentities"></a>Lista importedDeviceIdentities
 
@@ -38,7 +39,7 @@ GET /deviceManagement/importedDeviceIdentities
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

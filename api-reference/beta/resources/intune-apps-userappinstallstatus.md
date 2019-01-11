@@ -2,12 +2,13 @@
 title: tipo de recurso de userAppInstallStatus
 description: Contém propriedades para o status de instalação de um usuário.
 author: tfitzmac
-ms.openlocfilehash: 024fff32aac2a268a2e0bbec81a6d46b31012a11
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f4d848a4fe4cd742df8a83184d539d7ff27290b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302755"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885201"
 ---
 # <a name="userappinstallstatus-resource-type"></a>tipo de recurso de userAppInstallStatus
 
@@ -28,9 +29,9 @@ Contém propriedades para o status de instalação de um usuário.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
-|userPrincipalName|String|Nome Principal de usuário.|
+|userPrincipalName|Cadeia de caracteres|Nome Principal de usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|
 |notInstalledDeviceCount|Int32|Sem contagem de dispositivos instalados.|

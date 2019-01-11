@@ -2,12 +2,13 @@
 title: Criar deviceEnrollmentLimitConfiguration
 description: Criar um novo objeto deviceEnrollmentLimitConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 4a3f9230b29fbe78e4a3771812bdfa435b1e2c5f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c01d2c50d77044f4b7280c35605bb64171b18337
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310420"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27828837"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>Criar deviceEnrollmentLimitConfiguration
 
@@ -36,7 +37,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto deviceEnrollmentLimitConfiguration.

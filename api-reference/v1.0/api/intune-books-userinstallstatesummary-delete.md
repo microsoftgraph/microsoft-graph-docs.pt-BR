@@ -2,12 +2,13 @@
 title: Excluir userInstallStateSummary
 description: Exclui userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: f95f21b13f02f386b8dcfd1082d2735185051776
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c91eee1f5365ec55dbf957da4f7c562501f1d703
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883864"
 ---
 # <a name="delete-userinstallstatesummary"></a>Excluir userInstallStateSummary
 
@@ -36,7 +37,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

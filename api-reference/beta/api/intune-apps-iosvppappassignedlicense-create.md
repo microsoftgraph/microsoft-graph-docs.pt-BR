@@ -2,12 +2,13 @@
 title: Criar iosVppAppAssignedLicense
 description: Crie um novo objeto de iosVppAppAssignedLicense.
 author: tfitzmac
-ms.openlocfilehash: a77ac7d98df2dc99555603e83adb5d09e5e14a3f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 225b7168d584faa2e5ff1ec2910fe0e3e53fda8a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304638"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887098"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Criar iosVppAppAssignedLicense
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto iosVppAppAssignedLicense.
@@ -47,11 +48,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|userEmailAddress|String|O endereço de email do usuário.|
-|userId|String|ID do usuário.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
+|userId|Cadeia de caracteres|ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome da entidade de segurança do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 
 

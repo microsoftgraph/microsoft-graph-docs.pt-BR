@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveItem
-ms.openlocfilehash: 1344d9a82459704354fc20a07c329949c4f5fc23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 255b9de7ad565228da093a9a40d23c3360df28b2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882261"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso de driveItem
 
@@ -109,7 +110,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
 | folder               | [folder][]         | Metadados de pasta, se o item for uma pasta. Somente leitura.
 | id                   | String             | O identificador exclusivo do item na Unidade. Somente leitura.
-| imagem                | [image][]          | Metadados de imagem, se o item for uma imagem. Somente leitura.
+| image                | [image][]          | Metadados de imagem, se o item for uma imagem. Somente leitura.
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.

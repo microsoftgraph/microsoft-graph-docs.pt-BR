@@ -2,12 +2,13 @@
 title: Tipo de recurso managedAppPolicy
 description: O recurso ManagedAppPolicy representa um tipo de base para políticas específicas de plataformas.
 author: tfitzmac
-ms.openlocfilehash: b1efe085bc2fc43804049ff4b091e10c458b9a98
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5766e3a467a157bac0d876fd0178dc3ba1cb94e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27310546"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888078"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
@@ -24,12 +25,12 @@ O recurso ManagedAppPolicy representa um tipo de base para políticas específic
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|Nome de exibição da política.|
-|descrição|String|Descrição da política.|
+|displayName|Cadeia de caracteres|Nome de exibição da política.|
+|descrição|Cadeia de caracteres|Descrição da política.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política.|
 |lastModifiedDateTime|DateTimeOffset|Última hora em que a política foi modificada.|
-|id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|version|Cadeia de caracteres|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

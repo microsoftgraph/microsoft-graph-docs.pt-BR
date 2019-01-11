@@ -2,12 +2,13 @@
 title: tipo de enum vppTokenSyncStatus
 description: Status de sincronização possíveis associados com um token de programa de compra de Volume do Apple.
 author: tfitzmac
-ms.openlocfilehash: 18a0fcf9f4d22d7904cb76d1fc45d80b14dfc7d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 721fe355d2eb29f0d9b258be175aa42345b34800
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344237"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883683"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>tipo de enum vppTokenSyncStatus
 
@@ -19,7 +20,7 @@ Status de sincronização possíveis associados com um token de programa de comp
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Status do padrão.|
+|nenhum|0|Status do padrão.|
 |inProgress|1|Última sincronização em andamento.|
 |concluído|2|Última sincronização concluída com êxito.|
 |Falha|3|Falha na última sincronização.|

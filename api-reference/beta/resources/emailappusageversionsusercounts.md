@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de emailAppUsageVersionsUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 7b4a59a1e15ddf41f0e4204efc4d3e0c6549e587
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2aff22c0ae1d3042859f3457f398ef5d0a5ffbe7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038537"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884844"
 ---
 # <a name="emailappusageversionsusercounts-resource-type"></a>tipo de recurso de emailAppUsageVersionsUserCounts
 
@@ -20,7 +21,7 @@ ms.locfileid: "27038537"
 | outlook2010       | Int64  |
 | outlook2007       | Int64  |
 | indeterminado      | Int64  |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

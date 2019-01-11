@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso workingHours
 description: Representa os dias da semana e as horas de um fuso horário específico que o usuário trabalha.
-ms.openlocfilehash: 915ec185931d3f7e77f010517a3ef0c3bff92204
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d34da38ad1a007f6c63154cb496006585df95c13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885733"
 ---
 # <a name="workinghours-resource-type"></a>Tipo de recurso workingHours
 

@@ -2,12 +2,13 @@
 title: 'message: replyAll'
 description: Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.
 author: angelgolfer-ms
-ms.openlocfilehash: cefe4d92d23cb9531f6fa66f74d1c9af87ef429e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8e2d9b2481e4fb0fc4e6e166dae1189baa77b7e5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884305"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -39,9 +40,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
+|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
 
 ## <a name="response"></a>Resposta
 

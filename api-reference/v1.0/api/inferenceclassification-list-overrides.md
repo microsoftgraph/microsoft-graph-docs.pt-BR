@@ -1,12 +1,13 @@
 ---
 title: Substituições de lista
 description: Obtenha as substituições que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
-ms.openlocfilehash: 7953c776b60f4e63aec03245817bfcf6630bbdf8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ab8324ac892df570ed0d28fabb7b31f3280adcef
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27003730"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883892"
 ---
 # <a name="list-overrides"></a>Substituições de lista
 

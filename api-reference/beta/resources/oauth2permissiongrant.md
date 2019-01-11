@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de oAuth2PermissionGrant
 description: Representa os escopos de OAuth 2.0 (permissões delegadas) que tiverem sido concedidos a um aplicativo (representado por uma entidade de serviço) como parte do processo de consentimento do usuário ou administrador.
-ms.openlocfilehash: 8fc5154ddba1b78976dc3e24c6712f9fc8944f43
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 835e4a2c1a8d19c9c21e706adbf2f10a6a505bb3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034344"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884445"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso de oAuth2PermissionGrant
 
@@ -42,13 +43,13 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|clientId|String| A id da entidade de segurança do serviço concedido consentimento para representar o usuário ao acessar o recurso (representado pela propriedade resourceId). |
-|consentType|String| Indica se o consentimento foi fornecido pelo administrador (em nome da organização) ou por um indivíduo. Os valores possíveis são *AllPrincipals* ou *Principal*. |
+|clientId|Cadeia de caracteres| A id da entidade de segurança do serviço concedido consentimento para representar o usuário ao acessar o recurso (representado pela propriedade resourceId). |
+|consentType|Cadeia de caracteres| Indica se o consentimento foi fornecido pelo administrador (em nome da organização) ou por um indivíduo. Os valores possíveis são *AllPrincipals* ou *Principal*. |
 |expiryTime|DateTimeOffset| Atualmente, o valor de tempo de expiração será ignorado. |
-|id|String| Identificador exclusivo. Somente leitura.|
-|principalId|String| Este valor é null se consentType for *AllPrincipals* e o consentimento se aplica a todos os usuários na organização. Se consentType for *Principal*, essa propriedade especifica a id do usuário que concedidas consentimento e aplica-se somente para esse usuário. |
+|id|Cadeia de caracteres| Identificador exclusivo. Somente leitura.|
+|principalId|Cadeia de caracteres| Este valor é null se consentType for *AllPrincipals* e o consentimento se aplica a todos os usuários na organização. Se consentType for *Principal*, essa propriedade especifica a id do usuário que concedidas consentimento e aplica-se somente para esse usuário. |
 |resourceId|Cadeia de caracteres| Especifica a id da entidade de serviço recurso ao qual tem permissão para acesso. |
-|scope|String| Especifica o valor da declaração [escopo](/graph/permissions-reference) que o aplicativo de recurso deve esperar que no token de acesso OAuth 2.0. Por exemplo, *User.Read* |
+|escopo|Cadeia de caracteres| Especifica o valor da declaração [escopo](/graph/permissions-reference) que o aplicativo de recurso deve esperar que no token de acesso OAuth 2.0. Por exemplo, *User.Read* |
 |startTime|DateTimeOffset| Atualmente, o valor de hora de início será ignorado. |
 
 ## <a name="relationships"></a>Relações

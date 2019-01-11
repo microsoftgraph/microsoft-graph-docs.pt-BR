@@ -2,12 +2,13 @@
 title: Acessar deviceManagementPartner
 description: Leia as propriedades e as relações do objeto deviceManagementPartner.
 author: tfitzmac
-ms.openlocfilehash: 6ab545598d8cbdc985510e6d7bd87e6a9804c42e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5696ce5ad5a723ef7940c01353270fce50df2f2e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884228"
 ---
 # <a name="get-devicemanagementpartner"></a>Acessar deviceManagementPartner
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

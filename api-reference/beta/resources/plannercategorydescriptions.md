@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerCategoryDescriptions
 description: 'O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto plan details. Pode haver até 6 categorias definidas. '
-ms.openlocfilehash: eb54a42cd3e86a9f2c39ff46d45c71fb04142dad
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ebfe1fc69ccd143d6f84afab9c5c2ed2054df3d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882751"
 ---
 # <a name="plannercategorydescriptions-resource-type"></a>Tipo de recurso plannerCategoryDescriptions
 

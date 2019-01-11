@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de governancePermission
 description: 'Representa a permissão de acesso que tenha um governanceSubject um governanceResource específico.  '
-ms.openlocfilehash: d7b3e1eb70c89c278ccc2a8b3e9a16e265e4ae97
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e082ca50e5642e865b3e30859eea607df63a03b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037736"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882870"
 ---
 # <a name="governancepermission-resource-type"></a>tipo de recurso de governancePermission
 
@@ -18,7 +19,7 @@ Representa a permissão de acesso que um [governanceSubject](../resources/govern
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accessLevel|String|O nível de acesso. Valores válidos: ``None``, ``UserRead``, ``AdminRead``, e ``AdminReadWrite``.|
+|accessLevel|Cadeia de caracteres|O nível de acesso. Valores válidos: ``None``, ``UserRead``, ``AdminRead``, e ``AdminReadWrite``.|
 |isActive|Booliano|Indique se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
 |isEligible|Booliano|Indica se o solicitante tem qualquer atribuição de função elegíveis para o nível de acesso.|
 

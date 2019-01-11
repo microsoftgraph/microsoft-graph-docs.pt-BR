@@ -2,12 +2,13 @@
 title: Obter managedEBookCategory
 description: Leia as propriedades e os relacionamentos do objeto managedEBookCategory.
 author: tfitzmac
-ms.openlocfilehash: 3a3ece59025b28ed26ffa03931d1de67c45ed140
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9420f6c278861fe9771f78a5b9286ffb886142fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321956"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882876"
 ---
 # <a name="get-managedebookcategory"></a>Obter managedEBookCategory
 
@@ -41,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

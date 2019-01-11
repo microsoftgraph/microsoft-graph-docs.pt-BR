@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOffice365ActiveUserDetail'
 description: Obtenha dados sobre os usuários ativos do Office 365.
-ms.openlocfilehash: 340428bba0bbba8c333cde98e7ad38f28186e662
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dd727648c9b4b0000888a0d45d55737280fc11ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034763"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882380"
 ---
 # <a name="reportroot-getoffice365activeuserdetail"></a>reportRoot: getOffice365ActiveUserDetail
 

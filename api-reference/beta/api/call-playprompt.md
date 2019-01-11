@@ -2,12 +2,13 @@
 title: 'chamar: playPrompt'
 description: Reproduza um prompt na chamada.
 author: VinodRavichandran
-ms.openlocfilehash: e432375fdfc9d31822698997f4fda27180e08ac9
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: 47d4dac56f1424f71fff20f63c9d68f3f09d3926
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380342"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883654"
 ---
 # <a name="call-playprompt"></a>chamar: playPrompt
 
@@ -15,7 +16,7 @@ ms.locfileid: "27380342"
 
 Reproduza um prompt na chamada.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -43,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |solicita|coleção de [prompt](../resources/prompt.md)||
-|clientContext|String|O contexto de cliente.|
+|clientContext|Cadeia de caracteres|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` objeto response de código e [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.

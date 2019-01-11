@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de scopedRoleMembership
 description: Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que ainda mais destinada para uma unidade administrativa (AU).  Isso oferece um mecanismo para permitir que um adminsistrator locatário toda empresa delegar privilégios administrativos para um usuário gerencie usuários e grupos em um subconjunto da organização (o subconjunto está sendo definido por um AU).
-ms.openlocfilehash: bd635a5b1b06b98657ba24c397e2f67afb76fa8f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a83acf82eadd9798a86a1a6456d5b2c4ca60be73
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036460"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884795"
 ---
 # <a name="scopedrolemembership-resource-type"></a>tipo de recurso de scopedRoleMembership
 

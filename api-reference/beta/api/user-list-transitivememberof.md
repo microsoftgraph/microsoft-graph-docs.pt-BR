@@ -1,12 +1,13 @@
 ---
 title: Membro transitivo do usuário de lista
 description: Obtenha os grupos, funções de diretório e unidades administrativas que o usuário é membro do. Essa solicitação API é transitiva e também retornará todos os grupos que o usuário é membro de aninhados.
-ms.openlocfilehash: b507e7e0e54fcd37b4a31a9a6cf9e07b32e41244
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eadb9722bc323ea056d015ac15c8aed975306eee
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040276"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887910"
 ---
 # <a name="list-user-transitive-memberof"></a>Membro transitivo do usuário de lista
 

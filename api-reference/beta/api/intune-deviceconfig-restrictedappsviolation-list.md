@@ -2,12 +2,13 @@
 title: Lista restrictedAppsViolations
 description: Lista as propriedades e os relacionamentos dos objetos restrictedAppsViolation.
 author: tfitzmac
-ms.openlocfilehash: 7c39927b681953296bb23715457a7353151e58b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 52f0d9a6d590c6f9b194817c1ec7aac3cc2bdc5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27881925"
 ---
 # <a name="list-restrictedappsviolations"></a>Lista restrictedAppsViolations
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

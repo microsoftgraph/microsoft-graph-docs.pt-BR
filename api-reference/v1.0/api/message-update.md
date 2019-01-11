@@ -2,17 +2,18 @@
 title: Atualizar mensagem
 description: Atualizar as propriedades do objeto message.
 author: angelgolfer-ms
-ms.openlocfilehash: c15d4ac183b41b2ab927fc39e175df80626f348e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: 24705fbf986f9ecf1142e66d189ae2071e1be223
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748504"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884781"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 
 Atualize as propriedades de um objeto de mensagem.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -44,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. |
 |from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Deve corresponder à caixa de correio real usada.|
-|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
+|importance|Cadeia de caracteres|A importância da mensagem. Os valores possíveis são: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou importância, ou em um caso de sobreposição explícito. Os valores possíveis são: `focused` ou `other`. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Somente se atualizável isDraft = true.|
 |isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|

@@ -2,12 +2,13 @@
 title: Atualizar windowsManagementAppHealthSummary
 description: Atualize as propriedades de um objeto windowsManagementAppHealthSummary.
 author: tfitzmac
-ms.openlocfilehash: 274ffcc65706f7d730815d4a8350af2dee68f763
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 068e99b09d2204c3e33955a2407e9bbac3ff31b4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307067"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887189"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Atualizar windowsManagementAppHealthSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade Windows management app integridade resumida.|
+|id|Cadeia de caracteres|Chave da entidade Windows management app integridade resumida.|
 |healthyDeviceCount|Int32|Contagem de dispositivo íntegro.|
 |unhealthyDeviceCount|Int32|Contagem de dispositivo não íntegros.|
 |unknownDeviceCount|Int32|Contagem de dispositivo desconhecido.|

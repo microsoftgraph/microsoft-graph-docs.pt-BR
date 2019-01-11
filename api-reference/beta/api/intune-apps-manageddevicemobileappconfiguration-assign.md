@@ -2,12 +2,13 @@
 title: atribuir ação
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 36adb4ea6cfbaf562513e17131b8b833a59c9df3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d0ea93657f7f97604cd91b0eac46f200880745d6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311358"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887854"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON dos parâmetros.

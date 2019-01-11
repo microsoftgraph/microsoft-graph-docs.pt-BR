@@ -2,12 +2,13 @@
 title: Listar deviceManagementExchangeConnectors
 description: Listar propriedades e relações de objeto de deviceManagementExchangeConnector.
 author: tfitzmac
-ms.openlocfilehash: 7f3709e22dfc9f545be25500c5f1344ade81d6fc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3814e5d971cd0a1c04a654cb135edc6b15c22603
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27343481"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884200"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>Listar deviceManagementExchangeConnectors
 
@@ -36,7 +37,7 @@ GET /deviceManagement/exchangeConnectors
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

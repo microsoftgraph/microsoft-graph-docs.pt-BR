@@ -2,12 +2,13 @@
 title: Criar mobileAppCategory
 description: Criar um novo objeto mobileAppCategory.
 author: tfitzmac
-ms.openlocfilehash: 7fa2b8220069dd98ec35124f589a3e38a2a33317
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a84d141a15a55d95d5429511a8db208f24ed984c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330944"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887280"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 
@@ -39,7 +40,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto mobileAppCategory.

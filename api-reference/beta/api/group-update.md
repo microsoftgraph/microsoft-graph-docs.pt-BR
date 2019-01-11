@@ -2,12 +2,13 @@
 title: Atualizar grupo
 description: Atualizar as propriedades de um objeto group.
 author: dkershaw10
-ms.openlocfilehash: 801143f0bb0a0e5012cf946e52cf4fd4cff34556
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 87a9c167b3ba697831ad8b992fc38cb2fc4e7c47
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348430"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27848990"
 ---
 # <a name="update-group"></a>Atualizar grupo
 
@@ -15,7 +16,7 @@ ms.locfileid: "27348430"
 
 Atualize as propriedades de um objeto [group](../resources/group.md) .
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

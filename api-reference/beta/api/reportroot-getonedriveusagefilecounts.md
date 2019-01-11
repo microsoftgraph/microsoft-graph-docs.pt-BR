@@ -1,12 +1,13 @@
 ---
 title: 'reportRoot: getOneDriveUsageFileCounts'
 description: Obtenha o número total de arquivos em todos os sites e quantos são arquivos ativos. Um arquivo é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado.
-ms.openlocfilehash: 5b67166cb6019154e6238b7307f622fed361350a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: dc42e6e12171c0f7fe5b26886b06ec694af68878
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883304"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 

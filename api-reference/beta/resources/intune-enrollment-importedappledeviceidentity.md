@@ -2,12 +2,13 @@
 title: tipo de recurso de importedAppleDeviceIdentity
 description: O recurso de importedAppleDeviceIdentity representa a identidade do dispositivo importadas de um dispositivo da Apple.
 author: tfitzmac
-ms.openlocfilehash: 966e384b63026def366ba19ea634d635d77d9083
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b7ad629721190b67e001ea56ca732eb325358768
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317588"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887441"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>tipo de recurso de importedAppleDeviceIdentity
 
@@ -29,15 +30,15 @@ O recurso de importedAppleDeviceIdentity representa a identidade do dispositivo 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|serialNumber|String|Número de série do dispositivo|
-|requestedEnrollmentProfileId|String|Administração de Id de perfil de inscrição pretende aplicáveis ao dispositivo durante o próximo registro|
+|id|Cadeia de caracteres|Chave da entidade.|
+|serialNumber|Cadeia de caracteres|Número de série do dispositivo|
+|requestedEnrollmentProfileId|Cadeia de caracteres|Administração de Id de perfil de inscrição pretende aplicáveis ao dispositivo durante o próximo registro|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|O perfil de inscrição de tempo foi atribuído ao dispositivo|
-|isSupervised|Boolean|Indica se o dispositivo Apple seja supervisionado. Mais informações estão em:https://support.apple.com/en-us/HT202837|
+|isSupervised|Booliano|Indica se o dispositivo Apple seja supervisionado. Mais informações estão em:https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Fonte de descoberta do dispositivo Apple. Os valores possíveis são: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |createdDateTime|DateTimeOffset|Criada data hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última contatado data hora do dispositivo|
-|description|String|A descrição do dispositivo|
+|description|Cadeia de caracteres|A descrição do dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|O estado do dispositivo em Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

@@ -2,12 +2,13 @@
 title: Excluir windowsPhone81AppXBundle
 description: Exclui um windowsPhone81AppXBundle.
 author: tfitzmac
-ms.openlocfilehash: e63d69255866565807ac23e3f6801bdd97be9861
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b2b4cb1df708f6773a67dab134fe6f1989d16574
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318897"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887105"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>Excluir windowsPhone81AppXBundle
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

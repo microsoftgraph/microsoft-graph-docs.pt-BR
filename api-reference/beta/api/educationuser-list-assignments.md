@@ -1,12 +1,13 @@
 ---
 title: Lista de atribuições
 description: Retorna uma lista de atribuições atribuídas a um usuário para todas as classes. Esse namespace utilitário permite que um chamador localizar as atribuições de todos os student em uma única chamada em vez de solicitar atribuições de cada classe. A lista de atribuição contém o que é necessário para obter as informações detalhadas para a atribuição no namespace da classe. Todas as outras operações na atribuição devem usar o namespace de classe.
-ms.openlocfilehash: 7c70d6bab1f143caa232e2be89a1f02870d251ac
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 92a52f38a305515824a34e87bc3d23d16a2be4c7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883199"
 ---
 # <a name="list-assignments"></a>Lista de atribuições
 

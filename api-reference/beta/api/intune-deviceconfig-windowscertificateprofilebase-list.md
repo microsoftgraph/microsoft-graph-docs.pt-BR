@@ -2,12 +2,13 @@
 title: Lista windowsCertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos windowsCertificateProfileBase.
 author: tfitzmac
-ms.openlocfilehash: 9fc17abe0b874cd360e94d1a28115823724c6f2d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 770a17633b531c63e9defea6f3858b137e5155b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344874"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886279"
 ---
 # <a name="list-windowscertificateprofilebases"></a>Lista windowsCertificateProfileBases
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

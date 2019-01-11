@@ -2,12 +2,13 @@
 title: Lista iosImportedPFXCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos iosImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: c3695401beefe1e3fa70314bca0a1bcd6aebbd9f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 39c6eb95419b55550f29aedf846939f9cd474f57
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342438"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886895"
 ---
 # <a name="list-iosimportedpfxcertificateprofiles"></a>Lista iosImportedPFXCertificateProfiles
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

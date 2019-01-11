@@ -2,12 +2,13 @@
 title: Listar managedAppOperations
 description: Listar propriedades e relações de objetos de managedAppOperation.
 author: tfitzmac
-ms.openlocfilehash: 4ca6e63e1949fb328db95a07a537f0fe9e5c732e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e7f202d0efdab8b327d981ede61c8c0af982fc98
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354310"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882884"
 ---
 # <a name="list-managedappoperations"></a>Listar managedAppOperations
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

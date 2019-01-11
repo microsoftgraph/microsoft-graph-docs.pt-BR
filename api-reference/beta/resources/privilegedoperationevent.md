@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de privilegedOperationEvent
 description: Representa um evento de auditoria que seja gerado pelo gerenciamento de identidades privilegiado para as operações de função, como um administrador gerencia as funções privilegiadas, um usuário ativa sua função e um usuário desativa a sua função.
-ms.openlocfilehash: e35e0744a8a8d54ad9f1cc8cd536b05283eaa9fb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: cc7374f4cf3bc18fbf2f3c36ee4f57e6d703434b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882681"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>tipo de recurso de privilegedOperationEvent
 

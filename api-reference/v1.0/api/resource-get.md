@@ -1,12 +1,13 @@
 ---
 title: Obter recurso
 description: Recupere os dados binários do objeto resource de um arquivo ou imagem.
-ms.openlocfilehash: e96dcce0793b4d3faf4afcdb8d07204ebafd7444
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ec28daacf61e18f16e5c6598d036759eac1fb131
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007280"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884788"
 ---
 # <a name="get-resource"></a>Obter recurso
 

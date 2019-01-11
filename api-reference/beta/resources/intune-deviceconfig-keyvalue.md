@@ -2,12 +2,13 @@
 title: tipo de recurso keyValue
 description: Definição do valor da chave.
 author: tfitzmac
-ms.openlocfilehash: 5e5754657e679f3a703c2b5dec7cea36d1bad860
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aae0fea85c5dd4f647a72c0fe66890bd8b82520b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27885012"
 ---
 # <a name="keyvalue-resource-type"></a>tipo de recurso keyValue
 
@@ -19,7 +20,7 @@ Definição do valor da chave.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|String|Chave.|
+|key|Cadeia de caracteres|Chave.|
 |valor|Cadeia de caracteres|Valor.|
 
 ## <a name="relationships"></a>Relações

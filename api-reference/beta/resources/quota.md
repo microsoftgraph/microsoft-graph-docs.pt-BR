@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Cota
-ms.openlocfilehash: f4518021da8ad180b91472feb52199678c2edc83
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a63b41253569dbb3d666a76b0a7495839ef61b12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039190"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882408"
 ---
 # <a name="quota-resource-type"></a>tipo de recurso de cota
 
@@ -47,7 +48,7 @@ Veja a seguir uma representação JSON do recurso.
 | used          | Int64  | Espaço total, em bytes. Somente leitura.                                      |
 | remaining     | Int64  | Espaço total restante antes de atingir o limite de cota, em bytes. Somente leitura. |
 | deleted       | Int64  | Espaço total consumido por arquivos na Lixeira, em bytes. Somente leitura.      |
-| state         | string | Valor de enumeração que indica o estado do espaço de armazenamento. Somente leitura. |
+| estado         | string | Valor de enumeração que indica o estado do espaço de armazenamento. Somente leitura. |
 | storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Informações sobre planos de cota de armazenamento da unidade. Somente no OneDrive pessoal.|
 
 ### <a name="state-enumeration-values"></a>Valores de enumeração State

@@ -2,12 +2,13 @@
 title: Criar grupo
 description: 'Use esta API para criar um novo grupo conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:'
 author: dkershaw10
-ms.openlocfilehash: 1c77b3a33b19e9f0254642ef89e3d7fddc224b9a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 5876c1c327cd1095124675046089a0f8a71a7ca0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320766"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887637"
 ---
 # <a name="create-group"></a>Criar grupo
 
@@ -21,7 +22,7 @@ Use essa API para criar um novo [grupo](../resources/group.md) conforme especifi
 
 > **Observação**: para criar uma [equipe](../resources/team.md), primeiro criar um grupo e adicionar uma equipe a ela, consulte [Criar equipe](../api/team-put-teams.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

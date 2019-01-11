@@ -2,12 +2,13 @@
 title: Listar settingStateDeviceSummaries
 description: Listar propriedades e relações dos objetos settingStateDeviceSummary.
 author: tfitzmac
-ms.openlocfilehash: 5a18bb843e11eaf8d87ba9b6977cbd4f47e9d23b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 10ffa86bb266b4757a986174ee993eda156b6f0d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308327"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882002"
 ---
 # <a name="list-settingstatedevicesummaries"></a>Listar settingStateDeviceSummaries
 
@@ -47,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

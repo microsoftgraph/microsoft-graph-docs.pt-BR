@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bookingStaffMember
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: ad8af6ead37bff4b60c5c4d5ef39ae7628cf100e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884452"
 ---
 # <a name="bookingstaffmember-resource-type"></a>tipo de recurso de bookingStaffMember
 
@@ -37,9 +38,9 @@ Quando os compromissos de reserva, a API de reservas considera as configuraçõe
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Booliano|True significa que se o membro da equipe é um usuário do Office 365, a API de reservas seria Verificar disponibilidade do membro da equipe no seu calendário pessoal no Office 365, antes de fazer uma reserva. |
 |colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **detalhes da equipe** no aplicativo reservas.|
-|displayName|String|O nome do membro da equipe, como exibido aos clientes. Obrigatório.|
-|emailAddress|String|O endereço de email do membro da equipe. Isso pode ser em inquilino do Office 365 como a empresa ou em um domínio de email diferentes. Esse endereço de email pode ser usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na diretiva de agendamento dos negócios. Obrigatório.|
-|id|String| A identificação do membro da equipe, em um formato GUID. Somente leitura.|
+|displayName|Cadeia de caracteres|O nome do membro da equipe, como exibido aos clientes. Obrigatório.|
+|emailAddress|Cadeia de caracteres|O endereço de email do membro da equipe. Isso pode ser em inquilino do Office 365 como a empresa ou em um domínio de email diferentes. Esse endereço de email pode ser usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na diretiva de agendamento dos negócios. Obrigatório.|
+|id|Cadeia de caracteres| A identificação do membro da equipe, em um formato GUID. Somente leitura.|
 |role|string| A função de membro da equipe de negócios. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`. Obrigatório.|
 |useBusinessHours|Booliano|True significa disponibilidade do membro da equipe é como especificado na propriedade **businessHours** dos negócios. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHours** do membro da equipe.|
 |workingHours|coleção [bookingWorkHours](bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para marcação. Por padrão, eles são inicializados para ser o mesmo que a propriedade **businessHours** dos negócios.|

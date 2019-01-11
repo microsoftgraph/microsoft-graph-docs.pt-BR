@@ -2,12 +2,13 @@
 title: Obter windowsPhone81VpnConfiguration
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81VpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 845f5f9ecb26227e1ca72663b5996864e35aaaba
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7d7e3aaee8b2be09fbd6bab81f9d7e773aefab67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886335"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>Obter windowsPhone81VpnConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

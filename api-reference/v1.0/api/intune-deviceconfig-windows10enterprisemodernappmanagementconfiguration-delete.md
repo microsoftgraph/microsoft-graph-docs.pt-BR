@@ -2,12 +2,13 @@
 title: Excluir windows10EnterpriseModernAppManagementConfiguration
 description: Exclui windows10EnterpriseModernAppManagementConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 7acc1309cf8e9d5857f55ec424b7ce8456953214
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a4872295193111b11f0614480dd4fdeb6908bf4f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27360393"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887238"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>Excluir windows10EnterpriseModernAppManagementConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

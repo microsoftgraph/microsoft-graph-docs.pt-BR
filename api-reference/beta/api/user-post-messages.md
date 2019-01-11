@@ -1,12 +1,13 @@
 ---
 title: Criar mensagem
 description: Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
-ms.openlocfilehash: 21a5f9dc54afdbfd6298841f1f441a78103ab28c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ff4472b84ed218607ff6cda2b991f6bf2b63cda3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035405"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27883731"
 ---
 # <a name="create-message"></a>Criar mensagem
 

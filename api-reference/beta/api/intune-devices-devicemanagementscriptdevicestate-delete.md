@@ -2,12 +2,13 @@
 title: Excluir deviceManagementScriptDeviceState
 description: Exclui um deviceManagementScriptDeviceState.
 author: tfitzmac
-ms.openlocfilehash: 27d74e0c5cfdccab80d377369a5cd6058a877a58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a133917e229f4144b146cb4efc1ab73f84a09b6c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318260"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27882744"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>Excluir deviceManagementScriptDeviceState
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Lista windowsManagementAppHealthStates
 description: Lista as propriedades e os relacionamentos dos objetos windowsManagementAppHealthState.
 author: tfitzmac
-ms.openlocfilehash: 68f1c1b1c59d1a70590356b791fcbf1dc25fd6c5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 23411e7478068caa9d6168746212d2e9042a6c44
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27886440"
 ---
 # <a name="list-windowsmanagementapphealthstates"></a>Lista windowsManagementAppHealthStates
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/windowsManagementApp/healthStates
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

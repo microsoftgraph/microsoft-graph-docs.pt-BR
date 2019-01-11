@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsProtectionState
 description: Entidade de status de proteção do dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 636b969ddafde5976939df764ae1180e19a181c0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5a21cc27039f3119836e0027b2558cadadab1b5d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328074"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27884102"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso de windowsProtectionState
 
@@ -25,23 +26,23 @@ Entidade de status de proteção do dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
-|malwareProtectionEnabled|Boolean|Anti-malware está habilitado ou não|
+|id|Cadeia de caracteres|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
+|malwareProtectionEnabled|Booliano|Anti-malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como limpar ou verificação completa ou pendentes reinicialização etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|Proteção em tempo real está habilitada ou não?|
-|networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Boolean|Verificação rápida vencidos ou não?|
-|fullScanOverdue|Boolean|Completos exame vencido ou não?|
-|signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
-|rebootRequired|Boolean|Reinicialização necessária ou não?|
-|fullScanRequired|Boolean|Verificação completa necessária ou não?|
-|engineVersion|String|Versão do mecanismo de proteção de ponto de extremidade atual|
-|signatureVersion|String|Versão atual de definições de malware|
-|antiMalwareVersion|String|Atual anti-malware versão|
+|realTimeProtectionEnabled|Booliano|Proteção em tempo real está habilitada ou não?|
+|networkInspectionSystemEnabled|Booliano|Sistema de inspeção de rede habilitado ou não?|
+|quickScanOverdue|Booliano|Verificação rápida vencidos ou não?|
+|fullScanOverdue|Booliano|Completos exame vencido ou não?|
+|signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
+|rebootRequired|Booliano|Reinicialização necessária ou não?|
+|fullScanRequired|Booliano|Verificação completa necessária ou não?|
+|engineVersion|Cadeia de caracteres|Versão do mecanismo de proteção de ponto de extremidade atual|
+|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
+|antiMalwareVersion|Cadeia de caracteres|Atual anti-malware versão|
 |lastQuickScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
-|lastQuickScanSignatureVersion|String|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|String|Última versão de assinatura de verificação completa|
+|lastQuickScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação rápida|
+|lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de informado último status de integridade do dispositivo|
 
 ## <a name="relationships"></a>Relações

@@ -2,12 +2,13 @@
 title: Excluir androidVpnConfiguration
 description: Exclui um androidVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: a035edf78c9abce8cc4eac837e8b259771a1d71d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dab1f85298a7728d7a1bec152178066c68ff1a6b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27887028"
 ---
 # <a name="delete-androidvpnconfiguration"></a>Excluir androidVpnConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
