@@ -2,13 +2,14 @@
 title: tipo de recurso de teamsCatalogApp
 description: Consulte teamsApp.
 author: nkramer
-ms.openlocfilehash: a7df56d9d9a0bd36f50d7e9e56193539d55b18e9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7afcd6332cb4ef32d123f9b982d7f46665d19c32
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27847926"
 ---
-# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="5205c-103">tipo de recurso de teamsCatalogApp</span><span class="sxs-lookup"><span data-stu-id="5205c-103">teamsCatalogApp resource type</span></span>
+# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="3f48d-103">tipo de recurso de teamsCatalogApp</span><span class="sxs-lookup"><span data-stu-id="3f48d-103">teamsCatalogApp resource type</span></span>
 
-<span data-ttu-id="5205c-104">consulte [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="5205c-104">see [teamsApp](teamsapp.md).</span></span>
+<span data-ttu-id="3f48d-104">consulte [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="3f48d-104">see [teamsApp](teamsapp.md).</span></span>
