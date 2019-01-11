@@ -2,12 +2,13 @@
 title: Get iosDeviceFeaturesConfiguration
 description: Ler propriedades e relações do objeto iosDeviceFeaturesConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 7ebec8b5bb1462d035d5c3d4da6580779d235124
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 34fcfddce904e10e48f70ea8635b49fd6546d620
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352693"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817322"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>Get iosDeviceFeaturesConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

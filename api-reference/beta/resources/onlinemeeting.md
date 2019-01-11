@@ -2,12 +2,13 @@
 title: tipo de recurso de onlineMeeting
 description: Informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição de captura.
 author: VinodRavichandran
-ms.openlocfilehash: 3a2b26ac212bd7a77428dab9f5618db8165de65b
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: b1a0b09c0e7c792b0a9662c08daecd212c027c89
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380475"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805156"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso de onlineMeeting
 
@@ -17,15 +18,15 @@ Informações sobre a reunião, incluindo a URL de ingresso, a lista de particip
 
 ## <a name="methods"></a>Métodos
 
-| Método		         | Tipo de retorno | Descrição |
+| Método         | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
 | [Obter onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Leia as propriedades e os relacionamentos do objeto onlineMeeting. |
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	                  | Tipo                                                   | Descrição                                                                                                                |
+| Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | O nível de acesso que controla a admissão na reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
+| accessLevel               | Cadeia de caracteres                                                 | O nível de acesso que controla a admissão na reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Representa as informações de acesso telefônicas de um onlineMeeting. |
 | canceledDateTime          | DateTime                                               | A hora de quando a reunião foi cancelada. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | O chat associado a esta reunião. |
@@ -33,13 +34,13 @@ Informações sobre a reunião, incluindo a URL de ingresso, a lista de particip
 | endDateTime               | DateTime                                               | Hora de término da reunião. |
 | entryExitAnnouncement     | Booliano                                                | O status de comunicados de participação da reunião online. Quando os anúncios de presença estão habilitados, a reunião online lançará os nomes dos participantswho ingressar na reunião através do áudio. |
 | expirationDateTime        | DateTime                                               | A data de tempo Universal Coordenado (UTC) e a hora após o qual a absoluto da reunião online pode ser excluída. O dia e hora devem estar entre um ano antes e dez anos após a data atual e a hora no servidor. |
-| id                        | String                                                 | A ID associada a reunião online. Usado em uma solicitação HTTP GET, como a ID. Somente leitura. Servidor foi gerado. |
+| id                        | Cadeia de caracteres                                                 | A ID associada a reunião online. Usado em uma solicitação HTTP GET, como a ID. Somente leitura. Servidor foi gerado. |
 | isCancelled               | Booliano                                                | Se a reunião foi cancelada. |
-| joinUrl                   | String                                                 | A URL que é usada durante a reunião online está unida a partir da web. |
-| meetingType               | String                                                 | Os valores possíveis são: `meetNow`, `scheduled`, `recurring`,`broadcast` |
+| joinUrl                   | Cadeia de caracteres                                                 | A URL que é usada durante a reunião online está unida a partir da web. |
+| meetingType               | Cadeia de caracteres                                                 | Os valores possíveis são: `meetNow`, `scheduled`, `recurring`,`broadcast` |
 | participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados a reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime             | DateTime                                               | Inicie o horário da reunião. |
-| subject                   | String                                                 | O assunto da reunião online. |
+| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
 
 ## <a name="relationships"></a>Relações
 Nenhum

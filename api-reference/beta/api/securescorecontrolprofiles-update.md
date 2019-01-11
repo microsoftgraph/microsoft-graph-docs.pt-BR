@@ -1,12 +1,13 @@
 ---
 title: Atualizar secureScoreControlProfiles
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: afbfcd1889c55dd53241ff8d796bb3ab492b2acf
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033134"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817651"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Atualizar secureScoreControlProfiles
 
@@ -45,9 +46,9 @@ No corpo da solicitação, fornece uma representação JSON dos valores para os 
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista de controle é atribuída a triagem, implementação ou correção.|
-|tenantNote|String|Comentários de analistas no controle (para gerenciamento de controle do cliente).|
-|controlStateUpdates| String|Analista orientada a configuração no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
+|assignedTo|Cadeia de caracteres|Nome do analista de controle é atribuída a triagem, implementação ou correção.|
+|tenantNote|Cadeia de caracteres|Comentários de analistas no controle (para gerenciamento de controle do cliente).|
+|controlStateUpdates| Cadeia de caracteres|Analista orientada a configuração no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Resposta

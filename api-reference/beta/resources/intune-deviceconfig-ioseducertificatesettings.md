@@ -2,12 +2,13 @@
 title: tipo de recurso de iosEduCertificateSettings
 description: Certificados raiz e PFX confiáveis para iOS EDU.
 author: tfitzmac
-ms.openlocfilehash: 8e373a7c878dd06870b13a32c428f837d741964c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bf6b0da4d3ff7af562ae99e81e10f52351bd735d
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332323"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822075"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>tipo de recurso de iosEduCertificateSettings
 
@@ -20,10 +21,10 @@ Certificados raiz e PFX confiáveis para iOS EDU.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |trustedRootCertificate|Binária|Certificado raiz confiável.|
-|Nome_arquivo_cert|String|Nome de arquivo a ser exibido na interface do usuário.|
-|certificationAuthority|String|Autoridade de certificação PKCS.|
-|certificationAuthorityName|String|Nome da autoridade de certificação PKCS.|
-|certificateTemplateName|String|Nome do modelo de certificado PKCS.|
+|Nome_arquivo_cert|Cadeia de caracteres|Nome de arquivo a ser exibido na interface do usuário.|
+|certificationAuthority|Cadeia de caracteres|Autoridade de certificação PKCS.|
+|certificationAuthorityName|Cadeia de caracteres|Nome da autoridade de certificação PKCS.|
+|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS.|
 |renewalThresholdPercentage|Int32|Porcentagem de limite de renovação de certificados. Valores válidos 1 a 99|
 |certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Escala para o período de validade do certificado. Os valores possíveis são: `days`, `months`, `years`.|

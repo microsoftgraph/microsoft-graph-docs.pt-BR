@@ -2,12 +2,13 @@
 title: Get windows10GeneralConfiguration
 description: Ler propriedades e relações do objeto windows10GeneralConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 9f0ae3d32df8290616bcf50defa84515575c5bf2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c21eb0522ea3c673fda6244e834323028bcec26c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313311"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816888"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

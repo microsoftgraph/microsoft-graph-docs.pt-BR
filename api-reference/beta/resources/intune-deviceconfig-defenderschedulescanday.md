@@ -2,12 +2,13 @@
 title: tipo de enum defenderScheduleScanDay
 description: 'Valores possíveis de DefenderScheduleScanDay '
 author: tfitzmac
-ms.openlocfilehash: 9c028e24aae3421a8f7aef23161443c8cf796e1f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2fd7bd34ddda9adabb774dda849926b980136d54
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346505"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820829"
 ---
 # <a name="defenderschedulescanday-enum-type"></a>tipo de enum defenderScheduleScanDay
 

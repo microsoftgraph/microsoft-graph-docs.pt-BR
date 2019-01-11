@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsUpdateActiveHoursInstall
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 6d1328723f546f553bc31903d36ada2242d8cda3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 797cfc0f9279f0ab232991a95714d31ce37211a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818421"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>Tipo de recurso windowsUpdateActiveHoursInstall
 

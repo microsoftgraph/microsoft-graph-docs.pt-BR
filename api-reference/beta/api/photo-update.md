@@ -1,12 +1,13 @@
 ---
 title: Atualizar foto
 description: Atualize as propriedades do objeto de foto.
-ms.openlocfilehash: 8071c9e331f9af72c9a288239206f396d9ad3fcb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 56a8d892ae92f92f5103dc3d88a2f95a5bbb262b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033418"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818379"
 ---
 # <a name="update-photo"></a>Atualizar foto
 

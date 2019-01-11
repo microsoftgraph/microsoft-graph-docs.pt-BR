@@ -2,12 +2,13 @@
 title: 'Range: LastRow'
 description: .
 author: lumine2008
-ms.openlocfilehash: 384304a008ba4204a2ebd2e0837b814f3956520d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3e1aaaee039da7777fc2c32f978ca049900582ba
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27301558"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816776"
 ---
 # <a name="range-lastrow"></a>Range: LastRow
 

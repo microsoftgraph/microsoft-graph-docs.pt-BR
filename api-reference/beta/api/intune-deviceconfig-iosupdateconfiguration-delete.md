@@ -2,12 +2,13 @@
 title: Excluir iosUpdateConfiguration
 description: Exclui iosUpdateConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 75240ac580c70418d4114ba28b7c427338070ab6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 22a3141e9444e933586513f722f6f2c390a02f93
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330433"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817966"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Excluir iosUpdateConfiguration
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

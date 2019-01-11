@@ -2,12 +2,13 @@
 title: tipo de recurso de mobileAppIntentAndState
 description: A intenção de MobileApp e estado de instalação para um determinado dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 40ffbac3f86ccce3037a6585fa608dd4055bd428
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 037faeb02f18f304153dbe19fef640cc1183ddcd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356053"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819793"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>tipo de recurso de mobileAppIntentAndState
 

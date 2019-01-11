@@ -2,12 +2,13 @@
 title: Criar conversa
 description: 'Crie uma nova conversa incluindo um thread e uma postagem. '
 author: dkershaw10
-ms.openlocfilehash: ac3fa0e20f5045788e35b47a2ca496b4561187b6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: eed594010d67953feecd7bdd28b9672401ac4d23
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316727"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821550"
 ---
 # <a name="create-conversation"></a>Criar conversa
 Crie uma nova [conversa](../resources/conversation.md) incluindo um thread e uma postagem. 

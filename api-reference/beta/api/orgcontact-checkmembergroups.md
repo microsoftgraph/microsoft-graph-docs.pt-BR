@@ -1,12 +1,13 @@
 ---
 title: 'orgContact: checkMemberGroups'
 description: Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
-ms.openlocfilehash: d064775772bb05963e3cd789346e32bf80b7587c
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: eea07a97a4ed12d5c8659875c449d4b019392475
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037053"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821382"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
@@ -37,7 +38,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupIds|String||
+|groupIds|Cadeia de caracteres||
 
 ## <a name="response"></a>Resposta
 

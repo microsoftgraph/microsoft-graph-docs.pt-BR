@@ -2,12 +2,13 @@
 title: Atualizar managedDeviceMobileAppConfigurationDeviceStatus
 description: Atualize as propriedades de um objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
-ms.openlocfilehash: 71e66590f59d1dbe1acb78d497bc924c9a457a22
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b89d99c40646d92b48c3da80fed9c7137b2296c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315768"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819198"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Atualizar managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -39,7 +40,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) .
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|

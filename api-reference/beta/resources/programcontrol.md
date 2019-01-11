@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de programControl
 description: No Windows Azure AD access analisa o recurso, o objeto de controle do programa representa um controle, vinculando uma revisão de acesso a um programa.
-ms.openlocfilehash: 03e70ffdf0607eeb11abaf1b12065b4092294d23
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036146"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817819"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso de programControl
 

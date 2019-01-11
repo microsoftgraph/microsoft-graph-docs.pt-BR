@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de dispositivo
 description: Representa um dispositivo registrado no diretório. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de directoryObject.
-ms.openlocfilehash: 41fc53790c9c12415606e9f6f993407e97068fe6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: c39e466d6cf0e1dff3b62ff9acbb2123cafceb0c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041038"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821669"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -41,7 +42,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |deviceId|Guid| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
-|deviceMetadata|String| Apenas para uso interno. Definido como nulo. |
+|deviceMetadata|Cadeia de caracteres| Apenas para uso interno. Definido como nulo. |
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|String| O nome de exibição do dispositivo. Obrigatório. |
 |id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura.|
@@ -50,15 +51,15 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura. |
 |onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura.|
 |operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. |
-|operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. |
+|operatingSystemVersion|Cadeia de caracteres| A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
 |trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
-|Nome| String | Nome amigável de um dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
-|Status | String| O dispositivo está online ou offline. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
-|Plataforma |String|Plataforma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma.|
-|Tipo| String| Fator forma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
-|Modelo| String| Modelo do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
-|Fabricante| String| Fabricante do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|Nome| Cadeia de caracteres | Nome amigável de um dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|Status | Cadeia de caracteres| O dispositivo está online ou offline. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|Plataforma |Cadeia de caracteres|Plataforma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma.|
+|Tipo| Cadeia de caracteres| Fator forma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|Modelo| Cadeia de caracteres| Modelo do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|Fabricante| Cadeia de caracteres| Fabricante do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

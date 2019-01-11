@@ -2,12 +2,13 @@
 title: Criar ChartSeries
 description: Use essa API para criar novas ChartSeries.
 author: lumine2008
-ms.openlocfilehash: 727be89be598ff86d852a161f9888b286517f538
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6f2d6fbeb78f1b173de2c7bd329ae9d6051401fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304876"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816860"
 ---
 # <a name="create-chartseries"></a>Criar ChartSeries
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de win32LobAppProductCodeDetection
 description: Contém propriedades de código e a versão do produto para detectar um aplicativo Win32
 author: tfitzmac
-ms.openlocfilehash: d66dab5a43a11c480e0e30f70eb8aecbe47e1fa7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3a461661d2b2a37cd7f4e9a37561ea682ea0e0f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353981"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812464"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>tipo de recurso de win32LobAppProductCodeDetection
 
@@ -22,9 +23,9 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|productCode|String|O código do produto do aplicativo Win32 linha de negócios (LoB).|
+|productCode|Cadeia de caracteres|O código do produto do aplicativo Win32 linha de negócios (LoB).|
 |productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detectar a versão do produto. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|productVersion|String|A versão de produto do aplicativo do Win32 linha de negócios (LoB).|
+|productVersion|Cadeia de caracteres|A versão de produto do aplicativo do Win32 linha de negócios (LoB).|
 
 ## <a name="relationships"></a>Relações
 Nenhum

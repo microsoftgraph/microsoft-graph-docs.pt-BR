@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceAndAppManagementAssignmentTarget
 description: Tipo base para destinos de atribuição.
 author: tfitzmac
-ms.openlocfilehash: 3c787e48bba9aac30b5e6a3559baf4e3b4aa0d85
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a8ecbd5322691123cd2f187aabb31fc6ae67fed7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321655"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816496"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Tipo de recurso deviceAndAppManagementAssignmentTarget
 

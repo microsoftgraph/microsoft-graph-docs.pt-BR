@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de physicalOfficeAddress
 description: Representa o endereço comercial de um recurso, como um contato ou evento.
-ms.openlocfilehash: 472e4dfd03670f5fd4ff6b5c5c53342fff5c391a
-ms.sourcegitcommit: f3d479edf03935d0edbbc7668a65f7cde2a56c92
+localization_priority: Normal
+ms.openlocfilehash: bd4274e29b2ef0f9e7e8318528d18103be19fabc
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27284095"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817784"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>tipo de recurso de physicalOfficeAddress
 
@@ -17,7 +18,7 @@ Representa o endereço comercial de um recurso, como um contato organizacional.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |city|Cadeia de caracteres|A cidade.|
-|countryOrRegion|String|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
+|countryOrRegion|Cadeia de caracteres|O país ou a região. É um valor de cadeia de caracteres de formato livre, por exemplo, "Brasil".|
 |officeLocation  | String | Local do escritório, como número de construção e do office para um contato organizacional.  |
 |postalCode|Cadeia de caracteres|O código de endereçamento postal, ou CEP.|
 |state|Cadeia de caracteres|O estado.|

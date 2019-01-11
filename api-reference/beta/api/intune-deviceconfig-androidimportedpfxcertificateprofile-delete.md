@@ -2,12 +2,13 @@
 title: Excluir androidImportedPFXCertificateProfile
 description: Exclui um androidImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: d6a8b08748c4926c78d6759335a1aff3413b669b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aca61d96a7412c67150eb9a0495accc899857302
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335914"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27812485"
 ---
 # <a name="delete-androidimportedpfxcertificateprofile"></a>Excluir androidImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

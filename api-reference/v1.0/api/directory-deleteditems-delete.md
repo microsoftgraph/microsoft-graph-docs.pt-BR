@@ -2,12 +2,13 @@
 title: Excluir permanentemente item
 description: Exclui permanentemente um item de itens excluídos.
 author: lleonard-msft
-ms.openlocfilehash: ef0755f757bdc2e3588acd07d86620a187002e77
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00f44be1c89b35b81f3665d4bd568939ed309e22
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339449"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805184"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 

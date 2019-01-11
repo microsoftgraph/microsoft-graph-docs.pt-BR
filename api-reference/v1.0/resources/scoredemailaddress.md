@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso scoredEmailAddress
 description: Representa um endereço de email pontuado.
-ms.openlocfilehash: 9cdd33a6df9eefca0f7a00c5fe8b17832e0056d9
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 740173e7d5f93dc875c08508bf73100727fdf415
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007506"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819471"
 ---
 # <a name="scoredemailaddress-resource-type"></a>tipo de recurso scoredEmailAddress
 

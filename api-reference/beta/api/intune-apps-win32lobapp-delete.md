@@ -2,12 +2,13 @@
 title: Excluir win32LobApp
 description: Exclui um win32LobApp.
 author: tfitzmac
-ms.openlocfilehash: a5bd43c7196ddd8aa9bf769878eddbda69582415
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 83596e3118fb53e4d70c3c23dea60ebca7ef7fe1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27356445"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818351"
 ---
 # <a name="delete-win32lobapp"></a>Excluir win32LobApp
 
@@ -40,7 +41,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIn
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

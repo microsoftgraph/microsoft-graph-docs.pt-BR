@@ -2,12 +2,13 @@
 title: tipo de recurso de windowsDomainJoinConfiguration
 description: Configuração de dispositivo ingressar de domínio do Windows.
 author: tfitzmac
-ms.openlocfilehash: 545c69864c2f325fcf6817941191872746304abc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 53a3eab41ead346329849be5163452eb9287d94a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349354"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27823167"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>tipo de recurso de windowsDomainJoinConfiguration
 
@@ -31,18 +32,18 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |**Configuração do dispositivo**|
-|activeDirectoryDomainName|String|Nome de domínio Active Directory para ingressar.|
-|computerNameStaticPrefix|String|Fixo prefixo a ser usado para o nome do computador.|
+|activeDirectoryDomainName|Cadeia de caracteres|Nome de domínio Active Directory para ingressar.|
+|computerNameStaticPrefix|Cadeia de caracteres|Fixo prefixo a ser usado para o nome do computador.|
 |computerNameSuffixRandomCharCount|Int32|Caracteres gerados dinamicamente usados como o sufixo de nome do computador. Valores válidos 3 e 14|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|organizationalUnit|String|Unidade organizacional (UO) onde a conta de computador será criada. Se esse parâmetro for NULL, será usado o contêiner de objeto de computador bem conhecido como publicado no domínio.|
+|organizationalUnit|Cadeia de caracteres|Unidade organizacional (UO) onde a conta de computador será criada. Se esse parâmetro for NULL, será usado o contêiner de objeto de computador bem conhecido como publicado no domínio.|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 
 ## <a name="relationships"></a>Relações

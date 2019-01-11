@@ -2,12 +2,13 @@
 title: Criar remoteAssistancePartner
 description: Criar um novo objeto remoteAssistancePartner.
 author: tfitzmac
-ms.openlocfilehash: 477f16ef50828d7248cb75697c59163ab76702f8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 552778ec608d7be1178d6bc86011d4d7dff62bb1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334325"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820871"
 ---
 # <a name="create-remoteassistancepartner"></a>Criar remoteAssistancePartner
 
@@ -36,7 +37,7 @@ POST /deviceManagement/remoteAssistancePartners
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto remoteAssistancePartner.

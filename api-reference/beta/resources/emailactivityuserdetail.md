@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de emailActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 4f74b4af41c44e41b07bae1a8421011bc5188efc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 16512c3a8a4dab62d4a71406d6c33d52a5a9bc08
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033135"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817995"
 ---
 # <a name="emailactivityuserdetail-resource-type"></a>tipo de recurso de emailActivityUserDetail
 
@@ -15,8 +16,8 @@ ms.locfileid: "27033135"
 | Propriedade          | Tipo              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
-| userPrincipalName | String            |
-| displayName       | String            |
+| userPrincipalName | Cadeia de caracteres            |
+| displayName       | Cadeia de caracteres            |
 | isDeleted         | Booliano           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
@@ -24,7 +25,7 @@ ms.locfileid: "27033135"
 | receiveCount      | Int64             |
 | readCount         | Int64             |
 | assignedProducts  | String collection |
-| reportPeriod      | String            |
+| reportPeriod      | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

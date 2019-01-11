@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso plannerUser
 description: 'O recurso de **plannerUser** fornece acesso aos recursos do Planejador de um usuário. '
-ms.openlocfilehash: 592a26daacd1bd6d0a780ca0180d3ec5a57b6eb1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037232"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820801"
 ---
 # <a name="planneruser-resource-type"></a>Tipo de recurso plannerUser
 
@@ -28,7 +29,7 @@ O recurso de **plannerUser** fornece acesso aos recursos do Planejador de um [us
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Somente leitura. Identificador do plannerUser|
+|id|Cadeia de caracteres| Somente leitura. Identificador do plannerUser|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md)| Uma coleção que contém as referências para os planos de que o usuário tenha marcado como Favoritos.|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md)| Uma coleção que contém referências para os planos que foram visualizados recentemente pelo usuário em aplicativos que suportam planos recentes.|
 

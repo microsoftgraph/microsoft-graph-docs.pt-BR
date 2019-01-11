@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsInformationProtectionDesktopApp
 description: Aplicativo da área de trabalho para a proteção de informações do Windows
 author: tfitzmac
-ms.openlocfilehash: 5164e6d1a9165139de1895dfae38dd8c90927504
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c381541379feacff7611e77882069c5fe2119e67
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345511"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822061"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>Tipo de recurso windowsInformationProtectionDesktopApp
 

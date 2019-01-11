@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de onPremisesProvisioningError
 description: Representa os erros de sincronização de diretório para o usuário, grupo ou organizacionais entidades visita quando a sincronização local diretórios no Windows Azure Active Directory.
-ms.openlocfilehash: 9fa7850d39c9f7a490135a127938fc7fae30b6f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 1ea9efcd4d9db5cf7cc5b8f0a18b35345d06c3fe
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817735"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>tipo de recurso de onPremisesProvisioningError
 
@@ -20,8 +21,8 @@ Representa os erros de sincronização de diretório para as entidades de [usuá
 |:---------------|:--------|:----------|
 |Ferramentas para desenvolvedores|Cadeia de caracteres| Categoria do erro provisionamento. Observação: No momento, há apenas um valor possível. Valores possíveis: *PropertyConflict* - indica um valor de propriedade não é exclusivo. Outros objetos contenham o mesmo valor da propriedade. |
 |occurredDateTime|DateTimeOffset| A data e hora em que o erro ocorreu. |
-|propertyCausingError|String| Nome da propriedade diretório que causou o erro. Valores possíveis atuais: *UserPrincipalName* ou *ProxyAddress* |
-|valor|String| Valor da propriedade que causou o erro. |
+|propertyCausingError|Cadeia de caracteres| Nome da propriedade diretório que causou o erro. Valores possíveis atuais: *UserPrincipalName* ou *ProxyAddress* |
+|valor|Cadeia de caracteres| Valor da propriedade que causou o erro. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

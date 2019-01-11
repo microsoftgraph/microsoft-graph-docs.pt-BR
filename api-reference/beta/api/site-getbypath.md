@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Acessar site do SharePoint pelo caminho
-ms.openlocfilehash: 7d63fd3651ab870318af46a298d6b945f331eda8
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: 09d9aef99f552079e8e5e4f7d0d260964a182786
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748273"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821529"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obter um recurso de site pelo caminho
 

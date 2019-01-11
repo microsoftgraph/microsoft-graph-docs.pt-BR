@@ -2,12 +2,13 @@
 title: Listar termsAndConditionsAcceptanceStatuses
 description: Listar propriedades e relações dos objetos termsAndConditionsAcceptanceStatus.
 author: tfitzmac
-ms.openlocfilehash: c32cbde73a27ce88fdb6049cf2e3aacf869b1bdd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 50056f192fb91fb6b2f6922824ab35a5138f5fd7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321109"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816916"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Listar termsAndConditionsAcceptanceStatuses
 
@@ -36,7 +37,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

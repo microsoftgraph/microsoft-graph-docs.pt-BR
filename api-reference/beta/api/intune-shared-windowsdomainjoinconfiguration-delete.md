@@ -2,12 +2,13 @@
 title: Excluir windowsDomainJoinConfiguration
 description: Exclui um windowsDomainJoinConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 3c30f871ed56556052e30965fa8f1e33be4e276d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 04ef2c85351614533e21a107e8e1cbf9636bd753
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315152"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821717"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>Excluir windowsDomainJoinConfiguration
 
@@ -41,7 +42,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

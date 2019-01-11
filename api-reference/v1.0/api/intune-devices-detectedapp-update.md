@@ -2,12 +2,13 @@
 title: Atualizar detectedApp
 description: Atualizar as propriedades de um objeto detectedApp.
 author: tfitzmac
-ms.openlocfilehash: f9fca5810ab40b9d1001b4c711ec62d9d5bfd36a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 86b8eb3bc1bac0902ce36bd763c633f06919d2fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304869"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821928"
 ---
 # <a name="update-detectedapp"></a>Atualizar detectedApp
 
@@ -36,7 +37,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [detectedApp](../resources/intune-devices-detectedapp.md).

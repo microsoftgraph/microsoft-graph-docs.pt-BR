@@ -2,12 +2,13 @@
 title: Excluir windowsPhone81ImportedPFXCertificateProfile
 description: Exclui um windowsPhone81ImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 708d520d9a6cb6d643d90ea0e3e9c0de410c0bd8
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aedfeed49ed9df4b3dba5be9287a9a0c323cfc19
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354954"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816609"
 ---
 # <a name="delete-windowsphone81importedpfxcertificateprofile"></a>Excluir windowsPhone81ImportedPFXCertificateProfile
 
@@ -40,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Tipo de recurso iosVppEBookAssignment
 description: Contém propriedades usadas para atribuir um livro eletrônico iOS VPP a um grupo.
 author: tfitzmac
-ms.openlocfilehash: 1383c3370c7074e615d9b95300bbd57d940fc81f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d9f366e4f698e4b04911b89a0e65ee9e9ddd8e35
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314270"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818323"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Tipo de recurso iosVppEBookAssignment
 
@@ -31,7 +32,7 @@ Herda de [managedEBookAssignment](../resources/intune-books-managedebookassignme
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herda do [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herda do [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição do livro eletrônico. Herda do [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|A tentativa de instalação do livro eletrônico. Herdada do [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 

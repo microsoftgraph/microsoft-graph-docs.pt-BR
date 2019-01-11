@@ -2,12 +2,13 @@
 title: Listar detectedApps
 description: Listar propriedades e relações dos objetos detectedApp.
 author: tfitzmac
-ms.openlocfilehash: a307336773ff5b39f7335709f7d62ea8770d364a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b710cc87f4f862b0d720d1320fde3a457a592fc3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335382"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817903"
 ---
 # <a name="list-detectedapps"></a>Listar detectedApps
 
@@ -36,7 +37,7 @@ GET /deviceManagement/detectedApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

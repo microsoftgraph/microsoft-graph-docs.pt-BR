@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de mailboxUsageDetail
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: af49fac7c6286c7e9f9ce1e6d7ffdede225b4072
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 25cb41e38138a677bfc6636b035003bb8fc5858c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034793"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818008"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>tipo de recurso de mailboxUsageDetail
 
@@ -15,8 +16,8 @@ ms.locfileid: "27034793"
 | Propriedade                        | Tipo    |
 | :------------------------------ | :------ |
 | reportRefreshDate               | Data    |
-| userPrincipalName               | String  |
-| displayName                     | String  |
+| userPrincipalName               | Cadeia de caracteres  |
+| displayName                     | Cadeia de caracteres  |
 | isDeleted                       | Booliano |
 | deletedDate                     | Data    |
 | createdDate                     | Data    |
@@ -26,7 +27,7 @@ ms.locfileid: "27034793"
 | issueWarningQuotaInBytes        | Int64   |
 | prohibitSendQuotaInBytes        | Int64   |
 | prohibitSendReceiveQuotaInBytes | Int64   |
-| reportPeriod                    | String  |
+| reportPeriod                    | Cadeia de caracteres  |
 
 ## <a name="json-representation"></a>Representação JSON
 

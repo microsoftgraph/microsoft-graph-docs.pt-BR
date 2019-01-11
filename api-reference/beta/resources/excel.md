@@ -1,12 +1,13 @@
 ---
 title: Trabalhando com o Excel no Microsoft Graph
 description: 'Você pode usar o Microsoft Graph para permitir que aplicativos Web e móveis leiam e modifiquem pastas de trabalho do Excel armazenadas no OneDrive, no SharePoint ou em outras plataformas de armazenamento com suporte. O recurso `Workbook` (ou arquivo do Excel) contém todos os outros recursos do Excel por meio de relações. Você pode acessar uma pasta de trabalho por meio da API Drive identificando a localização do arquivo na URL. Por exemplo:'
-ms.openlocfilehash: c5dae7620989adf4f02a8b8518a334255607b591
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 152aaf1dc8cd8cd98854b2908548f44deb2e49a3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038283"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820591"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Trabalhando com o Excel no Microsoft Graph
 
@@ -1108,7 +1109,7 @@ Na solicitação de definição a seguir, somente algumas partes do formato de n
 }
 ```
 
-#### <a name="null-input-for-a-property"></a>Entrada nula para uma propriedade
+#### <a name="null-input-for-a-property"></a>entrada nula para uma propriedade
 
 `null` não é uma entrada válida única para toda a propriedade. Por exemplo, o modelo a seguir não é válido, uma vez que os valores inteiros não podem ser ignorados ou definidos como nulos.
 

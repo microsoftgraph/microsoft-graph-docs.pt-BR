@@ -2,12 +2,13 @@
 title: tipo de enum mdmAppConfigKeyType
 description: Tipos principais de configuração de aplicativo.
 author: tfitzmac
-ms.openlocfilehash: 60e1296b1e66101b04c6d25d9450d128dd41f672
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3f63c653da4187ac962771ada9dae8d0f8444b6a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306525"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821991"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>tipo de enum mdmAppConfigKeyType
 

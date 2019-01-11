@@ -2,12 +2,13 @@
 title: Listar iosCustomConfigurations
 description: Listar propriedades e relações dos objetos iosCustomConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 09a0d9a22c124bdc4c5d9532b712b6ece0ba5987
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b0b0965131043cb36e391b1afe12ab16acac4cd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27352308"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820577"
 ---
 # <a name="list-ioscustomconfigurations"></a>Listar iosCustomConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

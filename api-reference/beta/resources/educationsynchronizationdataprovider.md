@@ -2,12 +2,13 @@
 title: tipo de recurso de educationSynchronizationDataProvider
 description: 'Representa o esquema SIS de origem. Isso permite que o sistema para saber como mapear os dados de entrada para o esquema do Active Directory (AD Azure) do Azure. '
 author: mmast-msft
-ms.openlocfilehash: 04cbd38a158475c3a039a755ff885a6796ae3bf1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 692b0c17fe14dc63e0f6b3bceb0eb5291d307685
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27339883"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818036"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>tipo de recurso de educationSynchronizationDataProvider
 
@@ -18,7 +19,7 @@ Representa o esquema SIS de origem. Isso permite que o sistema para saber como m
 > **Observação:** Este tipo complexo é abstrato. Consulte os tipos específicos de provedores de dados listados.
 
 ## <a name="derived-types"></a>Tipos derivados
-| Type | Descrição | 
+| Tipo | Descrição | 
 |:-|:-|:-|
 | [educationcsvdataprovider](educationcsvdataprovider.md) | Usada com arquivos CSV como a fonte de entrada. |
 | [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | Usada com PowerSchool como a fonte de entrada. |

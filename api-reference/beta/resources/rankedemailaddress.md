@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de rankedEmailAddress
 description: Representa um endereço de email classificados.
-ms.openlocfilehash: 9234f527ecba6dc83f2e4f80911442d4a083503a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bb3b906929bddcb52a57a478647000e7e16fa0be
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039977"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818512"
 ---
 # <a name="rankedemailaddress-resource-type"></a>tipo de recurso de rankedEmailAddress
 

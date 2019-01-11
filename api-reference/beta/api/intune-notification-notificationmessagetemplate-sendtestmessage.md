@@ -2,12 +2,13 @@
 title: Ação sendTestMessage
 description: Envia mensagens de teste usando o notificationMessageTemplate especificado no local padrão
 author: tfitzmac
-ms.openlocfilehash: d6c39c74b570d78acc0d08bca20f90bae9b089b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e84e73780dd331e291ae0fead438d42fdcd4c886
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27342368"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821816"
 ---
 # <a name="sendtestmessage-action"></a>Ação sendTestMessage
 
@@ -38,7 +39,7 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

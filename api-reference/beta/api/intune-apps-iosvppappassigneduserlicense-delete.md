@@ -2,12 +2,13 @@
 title: Excluir iosVppAppAssignedUserLicense
 description: Exclui um iosVppAppAssignedUserLicense.
 author: tfitzmac
-ms.openlocfilehash: 57f736c4d5aaebbfdc9d7efbc1b9a1e394eacc81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 030a888f7ffda5453b242fd69670d5c4608e0800
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27341815"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818491"
 ---
 # <a name="delete-iosvppappassigneduserlicense"></a>Excluir iosVppAppAssignedUserLicense
 
@@ -38,7 +39,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/a
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

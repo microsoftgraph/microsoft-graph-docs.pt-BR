@@ -2,12 +2,13 @@
 title: Excluir windows10EndpointProtectionConfiguration
 description: Exclui windows10EndpointProtectionConfiguration.
 author: tfitzmac
-ms.openlocfilehash: ef7d73c0455fdf1bda80b68aac8ba13b9c547941
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 92d37e08c551b0d12c6adb2f74df481a438af2c1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331147"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819023"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Excluir windows10EndpointProtectionConfiguration
 
@@ -36,7 +37,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

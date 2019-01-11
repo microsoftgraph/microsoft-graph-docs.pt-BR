@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de conditionalAccessPolicy
 description: Indica que os atributos relacionados a uma política de acesso condicional ou diretivas que é disparado pela atividade correspondente entrar
-ms.openlocfilehash: 56a06d6b5fcba96dc472eb63fe24ba3920b0dd09
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7b043e739f84715fb02fbdbd25599e5cfccc284a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040872"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820640"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>tipo de recurso de conditionalAccessPolicy
 Indica que os atributos relacionados a uma política de acesso condicional ou diretivas que é disparado pela atividade correspondente entrar
@@ -16,11 +17,11 @@ Indica que os atributos relacionados a uma política de acesso condicional ou di
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Refere-se com o nome da política de acesso condicional (exemplo: "Exigir MFA para a equipe de vendas").|
+|displayName|Cadeia de caracteres|Refere-se com o nome da política de acesso condicional (exemplo: "Exigir MFA para a equipe de vendas").|
 |enforcedGrantControls|String collection|Refere-se aos controles grant impostos com a política de acesso condicional (exemplo: "Exigem a autenticação multifator").|
 |enforcedSessionControls|String collection|Refere-se aos controles sessão impostos com a política de acesso condicional (exemplo: "Exigem controles app imposto").|
-|id|String|GUID exclusivo da política de acesso condicional|
-|result|String| Indica o resultado da política de autoridade de certificação que tiver sido disparado. Valores possíveis são:<br/> `success` <br/> `failure` <br/> `notApplied`-Diretiva não será aplicada, porque as condições da diretiva não foram atendidas. <br/> `notEnabled`-Isso acontece devido à política em estado desabilitado.|
+|id|Cadeia de caracteres|GUID exclusivo da política de acesso condicional|
+|result|Cadeia de caracteres| Indica o resultado da política de autoridade de certificação que tiver sido disparado. Valores possíveis são:<br/> `success` <br/> `failure` <br/> `notApplied`-Diretiva não será aplicada, porque as condições da diretiva não foram atendidas. <br/> `notEnabled`-Isso acontece devido à política em estado desabilitado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

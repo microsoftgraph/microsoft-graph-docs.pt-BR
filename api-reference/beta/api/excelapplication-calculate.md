@@ -1,12 +1,13 @@
 ---
 title: 'Aplicativo: calcular'
 description: Recalcula todas as pastas de trabalho abertas no Excel no momento.
-ms.openlocfilehash: 5d2d0d5603f70691d2c73548bd7a20acc03c340e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3d80fc89c002d7c89fcc5d68920895b9b1fe1c4e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037716"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818330"
 ---
 # <a name="application-calculate"></a>Aplicativo: calcular
 

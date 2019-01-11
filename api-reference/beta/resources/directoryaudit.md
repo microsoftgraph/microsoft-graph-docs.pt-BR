@@ -2,12 +2,13 @@
 title: tipo de recurso de directoryAudit
 description: Esse recurso representa os itens de auditoria de diretório e sua coleção
 author: lleonard-msft
-ms.openlocfilehash: 5cbfc1320f721afd71ed3f196bb94a5c716d2c5c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: f3b1aa12c18205379220a924be81b53bf6014900
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312786"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820507"
 ---
 # <a name="directoryaudit-resource-type"></a>tipo de recurso de directoryAudit
 Esse recurso representa os itens de auditoria de diretório e sua coleção
@@ -25,15 +26,15 @@ Esse recurso representa os itens de auditoria de diretório e sua coleção
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indica a data e hora que a atividade foi executada. O tipo de carimbo de hora é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|activityDisplayName|String|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades conectado, consulte [lista de atividades do Windows Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|activityDisplayName|Cadeia de caracteres|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades conectado, consulte [lista de atividades do Windows Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
 |additionalDetails|coleção [keyValue](keyvalue.md)|Indica detalhes adicionais sobre a atividade.|
 |Ferramentas para desenvolvedores|Cadeia de caracteres|Indica qual categoria de recurso que está programada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
 |correlationId|GUID|Indica uma identificação exclusiva que ajuda a correlacionar atividades que se estendem por vários serviços. Podem ser usadas para logs de rastreamento em serviços.|
-|id|String| Indica a ID exclusiva da atividade. Este é um GUID.|
+|id|Cadeia de caracteres| Indica a ID exclusiva da atividade. Este é um GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Indica informações sobre o usuário ou aplicativo iniciado a atividade.|
-|loggedByService|String|Indica informações no qual o serviço iniciou a atividade (por exemplo: gerenciamento de senha pessoal, Core diretório, B2C, usuários convidados, Microsoft Identity Manager, privilegiado gerenciamento de identidade.|
+|loggedByService|Cadeia de caracteres|Indica informações no qual o serviço iniciou a atividade (por exemplo: gerenciamento de senha pessoal, Core diretório, B2C, usuários convidados, Microsoft Identity Manager, privilegiado gerenciamento de identidade.|
 |result|string| Indica o resultado da atividade. Os valores possíveis são: `success`, `failure`, `timeout`, `unknownFutureValue`.||
-|resultReason|String|Indica o motivo da falha se o resultado é "Falha" ou "timeout".|
+|resultReason|Cadeia de caracteres|Indica o motivo da falha se o resultado é "Falha" ou "timeout".|
 |targetResources|coleção [targetResource](targetresource.md)|Indica informações no qual o recurso foi alterado devido a atividade. Tipo de recurso de destino pode ser um usuário, dispositivo, diretório, App, função, grupo, política ou outros.
 
 ## <a name="relationships"></a>Relações

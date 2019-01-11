@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso directoryRoleTemplate
 description: 'Representa um modelo de função de diretório. Um modelo de função directory Especifica os valores de propriedade de uma função de diretório (directoryRole). Há um objeto de modelo de função de diretório associado para cada uma das funções do diretório que podem ser ativadas em um locatário. Para ler uma função de diretório ou atualizar seus membros, ele deve primeiro ser ativado no inquilino. Por padrão, apenas a função do diretório de administradores de empresa é ativada. Para ativar a outras funções de diretório disponível você enviar uma solicitação POST para o `/directoryRoles` ponto de extremidade com a ID do modelo de função de diretório no qual a função de diretório se baseia especificado no parâmetro **roleTemplateId** da solicitação. Após a conclusão bem-sucedida dessa solicitação, você pode iniciar, em seguida, ler e atribuir membros da função de diretório. **Observação**: um modelo de função de diretório é exposto para a função do diretório de usuários. A função do diretório de usuários é implícita e não é visível para os clientes de diretório. Cada usuário no locatário é atribuído a essa função pela infra-estrutura. A função já está ativada. Não use esse modelo.'
-ms.openlocfilehash: 088b630a05044f4b3dba59dd1ff6c9a11dce6c0f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: bffff81db3416c538031bce58cfc80580c06f48e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033160"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821186"
 ---
 # <a name="directoryroletemplate-resource-type"></a>tipo de recurso directoryRoleTemplate
 
@@ -26,7 +27,7 @@ Representa um modelo de função de diretório. Um modelo de função de diretó
 |:---------------|:--------|:----------|
 |description|String|A descrição definida para a função de diretório. Somente leitura.|
 |displayName|String|O nome de exibição para definir para a função de diretório. Somente leitura. |
-|id|String|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo do modelo. Herdado de [directoryObject](directoryobject.md). Você especifica a **id** do modelo de função do diretório para a propriedade **roleTemplateId** na solicitação POST para ativar um [directoryRole](directoryrole.md) em um locatário. Chave, Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

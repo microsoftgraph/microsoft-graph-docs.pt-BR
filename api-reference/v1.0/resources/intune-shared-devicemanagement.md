@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceManagement
 description: 'O recurso de deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
-ms.openlocfilehash: 4e092c3d1ae318da47f52e6ccfb2d5efe577e8eb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e7517ac2c9560723c6c3c4dce2dc070b1ec96af3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006312"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822201"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
@@ -20,7 +21,7 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 - Gerenciamento de dispositivo  
 - Proteção de ponto de extremidade  
 - Perfis de inscrição  
-- Notifications  
+- Notificações  
 - Detalhes, configurações e políticas de inclusão  
 - Políticas de RBAC (controle) de acesso baseado em função  
 - Parceiros de assistência remota  
@@ -41,7 +42,7 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
 |configurações|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
@@ -72,7 +73,7 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 |**Registro**|
 |importedWindowsAutopilotDeviceIdentities|Coleção [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Coleção de dispositivos do Windows AutoPilot importados.|
 |importedWindowsAutopilotDeviceIdentityUploads|coleção [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Coleção de piloto automático do Windows carregar de dispositivos.|
-|**Notifications**|
+|**Notificações**|
 |notificationMessageTemplates|Conjunto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Os modelos de mensagens de notificação.|
 |**Inclusão**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|As configurações de acesso condicional do Exchange no local. O acesso condicional no local exigirá que os dispositivos sejam registrados e estejam em conformidade para o acesso ao email|

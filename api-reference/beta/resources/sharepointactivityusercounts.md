@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de sharePointActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 271ea6a70d56c55cf5a9561c2a1485c674a365f1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: ffbbb8c4d33c94678e8d57d1d9e69da91b22fb39
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036440"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819927"
 ---
 # <a name="sharepointactivityusercounts-resource-type"></a>tipo de recurso de sharePointActivityUserCounts
 
@@ -21,7 +22,7 @@ ms.locfileid: "27036440"
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | String |
+| reportPeriod      | Cadeia de caracteres |
 
 ## <a name="json-representation"></a>Representação JSON
 

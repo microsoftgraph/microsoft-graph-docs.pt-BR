@@ -2,12 +2,13 @@
 title: tipo de recurso de commsOperation
 description: O status de determinadas operações de execução longa.
 author: VinodRavichandran
-ms.openlocfilehash: 09d3f81e8f6307850d94cfab43f98426dae47a5f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: d70ad6535d5ae829de4b9bac3c5b9fea9b53188b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380349"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821445"
 ---
 # <a name="commsoperation-resource-type"></a>tipo de recurso de commsOperation
 
@@ -20,11 +21,11 @@ Nenhum
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	           | Tipo                        | Descrição                                                                     |
+| Propriedade           | Tipo                        | Descrição                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | O contexto de cliente.                                                             |
+| clientContext      | Cadeia de caracteres                      | O contexto de cliente.                                                             |
 | createdDateTime    | DateTimeOffset              | A hora de início da operação.                                                |
-| id                 | String                      | A id da operação. Somente leitura. Servidor foi gerado.                                  |
+| id                 | Cadeia de caracteres                      | A id da operação. Somente leitura. Servidor foi gerado.                                  |
 | lastActionDateTime | DateTimeOffset              | A hora da última ação da operação.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura. Servidor foi gerado.                            |
 | status             | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |

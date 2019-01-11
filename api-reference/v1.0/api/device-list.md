@@ -2,12 +2,13 @@
 title: Listar dispositivos
 description: Recupera uma lista de objetos de dispositivos registrados na organização.
 author: tfitzmac
-ms.openlocfilehash: a17dcdd3fc15a04276095b2f356cc780ae6a8fee
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 433938618d936ff48b83c74febe847ef6e7f7512
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314375"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805093"
 ---
 # <a name="list-devices"></a>Listar dispositivos
 

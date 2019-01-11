@@ -2,12 +2,13 @@
 title: Tipo de recurso outlookItem
 description: Veja a seguir uma representação JSON do recurso
 author: angelgolfer-ms
-ms.openlocfilehash: 4d375606a5104d48955561df3b904922a5daf042
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b88a450465798386ad57e82ff76896417301a606
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315019"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817630"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -41,7 +42,7 @@ Veja a seguir uma representação JSON do recurso
 |categories|Coleção de cadeias de caracteres||
 |changeKey|Cadeia de caracteres||
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String| Somente leitura.|
+|id|Cadeia de caracteres| Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
 ## <a name="relationships"></a>Relações

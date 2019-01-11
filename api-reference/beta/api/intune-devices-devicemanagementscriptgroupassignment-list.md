@@ -2,12 +2,13 @@
 title: Lista deviceManagementScriptGroupAssignments
 description: Lista as propriedades e os relacionamentos dos objetos deviceManagementScriptGroupAssignment.
 author: tfitzmac
-ms.openlocfilehash: 1d57bdb9de953b080d88836d6de7ae25b7ec3feb
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4773bb8431627f3bb23dc6e1b9584a4c6067de40
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327360"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816986"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a>Lista deviceManagementScriptGroupAssignments
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

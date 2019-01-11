@@ -2,12 +2,13 @@
 title: Atualizar um educationSynchronizationProfile
 description: Atualize as propriedades de um perfil de sincronização de dados escola existente no inquilino.
 author: mmast-msft
-ms.openlocfilehash: 17bf46eb4ebd6783f7bafba828ff1bcb7ad5ac48
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818526"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Atualizar um educationSynchronizationProfile
 
@@ -15,10 +16,10 @@ ms.locfileid: "27361464"
 
 Atualize as propriedades de um existente escola dados do [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissões |
+| Tipo de permissão | Permissions |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
 |Delegada (conta pessoal da Microsoft|Sem suporte.|

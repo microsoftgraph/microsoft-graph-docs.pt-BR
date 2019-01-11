@@ -2,12 +2,13 @@
 title: tipo de recurso de mensagem
 description: Uma mensagem em uma pasta de caixa de correio.
 author: angelgolfer-ms
-ms.openlocfilehash: d6bef72e1ac7634bee7f78a645828f0f73f9d09e
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Priority
+ms.openlocfilehash: b6d5e3b66209515d03ad7e60a56bbde2c62442e2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748476"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817280"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -117,7 +118,7 @@ Veja a seguir uma representação JSON do recurso
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
-|unsubscribeData|String|As entradas válidas analisada a partir do cabeçalho de cancelar a lista.  São os dados para o comando mail no cabeçalho cancelar a assinatura lista se a propriedade UnsubscribeEnabled for true.|
+|unsubscribeData|Cadeia de caracteres|As entradas válidas analisada a partir do cabeçalho de cancelar a lista.  São os dados para o comando mail no cabeçalho cancelar a assinatura lista se a propriedade UnsubscribeEnabled for true.|
 |unsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  Seu valueTrue se a lista-Cancelar cabeçalho está em conformidade com a rfc-2369.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de securityVendorInformation
 description: " subProvider = AppLocker)."
-ms.openlocfilehash: 0eef5b1d53f4b7b61af0ccede6e02ffc7bdf76ab
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: e9d8551c085c05007388bf0c6e33143994c6969b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006359"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820143"
 ---
 # <a name="securityvendorinformation-resource-type"></a>tipo de recurso de securityVendorInformation
 
@@ -16,10 +17,10 @@ Contém detalhes sobre o fornecedor de serviço do produto de segurança, o prov
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|provedor |String|Provedor específico (produto ou serviço - não a empresa de fornecedor); Por exemplo, WindowsDefenderATP.|
-|providerVersion|String|Versão do provedor ou subprovider, se ela existir, que gerou o alerta. *Required*|
-|subProvider|String|Subprovider específico (abaixo de agregação de provedor;) Por exemplo, WindowsDefenderATP.SmartScreen.|
-|fornecedor |String|Nome do alerta fornecedor (por exemplo, Microsoft, Dell, FireEye). *Required*|
+|provedor |Cadeia de caracteres|Provedor específico (produto ou serviço - não a empresa de fornecedor); Por exemplo, WindowsDefenderATP.|
+|providerVersion|Cadeia de caracteres|Versão do provedor ou subprovider, se ela existir, que gerou o alerta. *Required*|
+|subProvider|Cadeia de caracteres|Subprovider específico (abaixo de agregação de provedor;) Por exemplo, WindowsDefenderATP.SmartScreen.|
+|fornecedor |Cadeia de caracteres|Nome do alerta fornecedor (por exemplo, Microsoft, Dell, FireEye). *Required*|
 
 
 ## <a name="json-representation"></a>Representação JSON

@@ -2,19 +2,20 @@
 title: Obter outlookTaskGroup
 description: Obtenha as propriedades e relacionamentos do grupo de tarefas especificado do Outlook.
 author: angelgolfer-ms
-ms.openlocfilehash: c464a6ac9b219ca84538e6d369009e0f5f515c51
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 00abd783f8fa9ff726f5ada8f286529beddc9073
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306745"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816769"
 ---
 # <a name="get-outlooktaskgroup"></a>Obter outlookTaskGroup
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Obtenha as propriedades e relacionamentos do grupo de tarefas especificado do Outlook.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

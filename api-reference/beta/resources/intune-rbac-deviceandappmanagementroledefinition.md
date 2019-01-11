@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso deviceAndAppManagementRoleDefinition
 description: 'O recurso de Definição de Função. A definição da função é a base do acesso baseado em função no Intune. A função combina um recurso do Intune, como um aplicativo móvel e permissões de função associadas, como Criar ou Ler para o recurso. Existem dois tipos de funções: internas e personalizadas. Funções internas não podem ser modificadas. Tanto funções internas quanto personalizadas devem ter atribuições a serem impostas. Crie funções personalizadas se quiser definir uma função que permita que qualquer um dos recursos disponíveis e permissões de funções sejam combinados em uma única função.'
-ms.openlocfilehash: 90c701afc33a16cfb2747c40d53d47e74c3cedde
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a7bdf06be22c2efb11e7fbccf2bd76e5bb9459a5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036410"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805254"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Tipo de recurso deviceAndAppManagementRoleDefinition
 
@@ -30,7 +31,7 @@ Herda de [roleDefinition](../resources/intune-rbac-roledefinition.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |description|Cadeia de caracteres|Descrição da definição de Função. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |permissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|

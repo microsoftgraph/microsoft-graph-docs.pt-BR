@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso itemBody
 description: Representa as propriedades do corpo de um item, como uma mensagem, um evento ou uma postagem de grupo.
-ms.openlocfilehash: ebcc2797052ac3a5a73547332e37c5e9c1bd3a41
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2eaf3b5e13833665c452eeecd74169915f5ac2fd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006082"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27805226"
 ---
 # <a name="itembody-resource-type"></a>Tipo de recurso itemBody
 

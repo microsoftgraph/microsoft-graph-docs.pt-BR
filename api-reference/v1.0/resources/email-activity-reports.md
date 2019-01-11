@@ -1,12 +1,13 @@
 ---
 title: Relatórios de atividades do email
 description: Use os relatórios de atividades de email para obter uma visão de alto nível do tráfego de email em sua organização. Você também pode detalhar o widget Atividade de email para entender as tendências e os detalhes da atividade de email por usuário em sua organização.
-ms.openlocfilehash: 94ec22ce024485f33f6ba47f90a4023845795b33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 7ba0a381006a0eba3c0aec8adc864f8c15c5a5f5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821424"
 ---
 # <a name="email-activity-reports"></a>Relatórios de atividades do email
 

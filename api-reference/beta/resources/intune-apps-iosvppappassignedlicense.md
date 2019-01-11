@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de iosVppAppAssignedLicense
 description: iOS atribuição de licença de Volume programa de compra. Essa classe não oferece suporte para Criar, Excluir ou Atualizar.
-ms.openlocfilehash: f1083934844f808c2630ecaeaa195734235e2a55
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2264a83b7d0f5c5610a4a477ec9d1d33a6d943f9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040465"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27815569"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>tipo de recurso de iosVppAppAssignedLicense
 
@@ -27,11 +28,11 @@ iOS atribuição de licença de Volume programa de compra. Essa classe não ofer
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|userEmailAddress|String|O endereço de email do usuário.|
-|userId|String|ID do usuário.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
+|userId|Cadeia de caracteres|ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|String|O nome principal do usuário.|
+|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -2,12 +2,13 @@
 title: Criar androidEasEmailProfileConfiguration
 description: Crie um novo objeto de androidEasEmailProfileConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 38e4e36917ac1679420261746713205f77693b73
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b59a1e551aaad0e4ad23c1001ca3fea515333ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361968"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817777"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>Criar androidEasEmailProfileConfiguration
 
@@ -39,7 +40,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto androidEasEmailProfileConfiguration.
@@ -48,29 +49,29 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountName|String|Nome da conta do Exchange ActiveSync, exibido aos usuários como o nome do perfil EAS (this).|
+|accountName|Cadeia de caracteres|Nome da conta do Exchange ActiveSync, exibido aos usuários como o nome do perfil EAS (this).|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Método de autenticação para o Exchange ActiveSync. Os valores possíveis são: `usernameAndPassword` e `certificate`.|
-|syncCalendar|Boolean|Alterna o calendário está sincronizando. Se definido como false calendário está desativado no dispositivo.|
-|syncContacts|Boolean|Alterna a sincronização de contatos. Se definido como falsos contatos está desativado no dispositivo.|
-|syncTasks|Boolean|Alterna a sincronização de tarefas. Se definido como falsos tarefas está desativado no dispositivo.|
-|syncNotes|Boolean|Alterna a sincronização de notas. Se definido como falsos anotações está desativado no dispositivo.|
+|syncCalendar|Booliano|Alterna o calendário está sincronizando. Se definido como false calendário está desativado no dispositivo.|
+|syncContacts|Booliano|Alterna a sincronização de contatos. Se definido como falsos contatos está desativado no dispositivo.|
+|syncTasks|Booliano|Alterna a sincronização de tarefas. Se definido como falsos tarefas está desativado no dispositivo.|
+|syncNotes|Booliano|Alterna a sincronização de notas. Se definido como falsos anotações está desativado no dispositivo.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duração de email de tempo deve ser sincronizada para. Os valores possíveis são: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Atributo de email que é separado a partir do AAD e inserido nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `userPrincipalName` e `primarySmtpAddress`.|
 |emailSyncSchedule|[emailSyncSchedule](../resources/intune-deviceconfig-emailsyncschedule.md)|Agenda de sincronização de email. Os valores possíveis são: `userDefined`, `asMessagesArrive`, `manual`, `fifteenMinutes`, `thirtyMinutes`, `sixtyMinutes`, `basedOnMyUsage`.|
 |hostName|Cadeia de caracteres|Exchange local (URL) que o aplicativo de email nativo se conecta ao.|
-|requireSmime|Boolean|Indica se deve ou não usar certificados S/MIME.|
-|requireSsl|Boolean|Indica se deve ou não usar SSL.|
+|requireSmime|Booliano|Indica se deve ou não usar certificados S/MIME.|
+|requireSsl|Booliano|Indica se deve ou não usar SSL.|
 |usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Atributo de nome de usuário que é separado a partir do AAD e inserido nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `username`, `userPrincipalName`, `samAccountName`, `primarySmtpAddress`.|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|Atributo nome_do_domínio que é separado a partir do AAD e inserido nesse perfil antes da instalação no dispositivo. Os valores possíveis são: `fullDomainName` e `netBiosDomainName`.|
-|customDomainName|String|Valor de nome de domínio personalizado usado ao gerar um perfil de email antes de instalar no dispositivo.|
+|customDomainName|Cadeia de caracteres|Valor de nome de domínio personalizado usado ao gerar um perfil de email antes de instalar no dispositivo.|
 
 
 

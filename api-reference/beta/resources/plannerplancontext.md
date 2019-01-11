@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de plannerPlanContext
 description: O recurso de **plannerPlanContext** representa a relação entre um plannerPlan a uma experiência de usuário fora do planejador. Planos no planejador podem ser exibidos em outras experiências, como Teams da Microsoft, para controlar o trabalho no contexto dessa experiência.
-ms.openlocfilehash: 84512c03081a3e1fd2b15456c64cecf3f9c39435
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037297"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820976"
 ---
 # <a name="plannerplancontext-resource-type"></a>tipo de recurso de plannerPlanContext
 
@@ -20,10 +21,10 @@ A experiência que a entrada **plannerPlanContext** reresents pode ser identific
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|associationType|String|Anulável. Um tipo definido pelo aplicativo de associação entre o [plannerPlan](plannerplan.md) e o aplicativo. O aplicativo pode usar essas informações para rastrear diferentes tipos de relacionamentos para o mesmo [plannerPlan](plannerplan.md).|
+|associationType|Cadeia de caracteres|Anulável. Um tipo definido pelo aplicativo de associação entre o [plannerPlan](plannerplan.md) e o aplicativo. O aplicativo pode usar essas informações para rastrear diferentes tipos de relacionamentos para o mesmo [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Somente leitura. A data e hora em que o **plannerPlanContext** foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |displayNameSegments|String collection|Os segmentos do nome da experiência do externo. Segmentos representam uma estrutura hierárquica que permite a outros aplicativos exibir o relacionamento.|
-|ownerAppId|String|Somente leitura. ID do aplicativo que criou o **plannerPlanContext**.|
+|ownerAppId|Cadeia de caracteres|Somente leitura. ID do aplicativo que criou o **plannerPlanContext**.|
 
 ## <a name="json-representation"></a>Representação JSON
 

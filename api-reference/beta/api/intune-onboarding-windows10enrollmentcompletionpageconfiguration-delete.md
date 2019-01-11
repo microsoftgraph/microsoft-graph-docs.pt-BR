@@ -2,12 +2,13 @@
 title: Excluir windows10EnrollmentCompletionPageConfiguration
 description: Exclui um windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
-ms.openlocfilehash: f77b44880817f3100bae0e4197e3f7f6c5e3b579
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: dc408ca4aa07744ccc6edd08d3d412874a717a16
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362822"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27816524"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>Excluir windows10EnrollmentCompletionPageConfiguration
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

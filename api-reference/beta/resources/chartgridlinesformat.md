@@ -2,12 +2,13 @@
 title: Tipo de recurso ChartGridlinesFormat
 description: Abrange as propriedades de formatação das linhas de grade do gráfico.
 author: lumine2008
-ms.openlocfilehash: 8fb5dbf93b46009759922fd9e7617309ef3fff15
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 25b7ed31b462a24fc5b6587e7de8ef5f405ae084
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311099"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820619"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Tipo de recurso ChartGridlinesFormat
 

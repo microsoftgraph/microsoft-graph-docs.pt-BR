@@ -2,12 +2,13 @@
 title: Get managedEBookAssignment
 description: Ler propriedades e relações do objeto managedEBookAssignment.
 author: tfitzmac
-ms.openlocfilehash: ea88a296849d109ac6a38fa39774d5be7be18133
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ac7dc8a9caf9e346a0b71933fa0ffe17add6597a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323020"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821179"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

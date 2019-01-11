@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de synchronizationStatus
 description: Representa o status atual do synchronizationJob.
-ms.openlocfilehash: cf1b1e79e5ad784f1f43a2e5bf082c68b41e96ae
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041081"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27817028"
 ---
 # <a name="synchronizationstatus-resource-type"></a>tipo de recurso de synchronizationStatus
 
@@ -18,7 +19,7 @@ Representa o status atual do [synchronizationJob](synchronization-synchronizatio
 
 | Propriedade                              | Tipo      | Descrição    |
 |:--------------------------------------|:----------|:---------------|
-|código|String|Código de alto nível de status do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
+|código|Cadeia de caracteres|Código de alto nível de status do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Número de consecutivos vezes esse trabalho falhou.|
 |escrowsPruned|Booliano|`true`Se escrows do trabalho (erros de nível de objeto) foram removidos durante a sincronização inicial. Escrows podem ser removidos se durante a sincronização inicial, você atingir o limite de erros que faria normalmente para inserir o trabalho em quarentena. Em vez de entrar em quarentena, o processo de sincronização limpa erros do trabalho e continua até que a sincronização inicial for concluída. Quando a sincronização inicial for concluída, o trabalho será pausar e aguarde o cliente limpar os erros.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho.|
@@ -29,7 +30,7 @@ Representa o status atual do [synchronizationJob](synchronization-synchronizatio
 |steadyStateFirstAchievedTime|DateTimeOffset|A hora quando estável (sem alterações para o processo de mais) obteve pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|A hora quando estável (sem alterações para o processo de mais) última obteve. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|coleção [stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)|Contagem de objetos sincronizados, listados por tipo de objeto.|
-|troubleshootingUrl|String|Se ocorrer um erro, a URL com as etapas de solução de problemas para o problema.|
+|troubleshootingUrl|Cadeia de caracteres|Se ocorrer um erro, a URL com as etapas de solução de problemas para o problema.|
 
 ### <a name="synchronization-status-code-details"></a>Detalhes do código de status de sincronização
 

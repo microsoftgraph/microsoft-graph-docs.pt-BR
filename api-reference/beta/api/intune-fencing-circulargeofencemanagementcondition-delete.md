@@ -2,12 +2,13 @@
 title: Excluir circularGeofenceManagementCondition
 description: Exclui um circularGeofenceManagementCondition.
 author: tfitzmac
-ms.openlocfilehash: ed7ee0be1b96cefbdbd2e648accd01db29693d5d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: fba8dd99e99648d0b24612d03316cb91c119b0ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338987"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818295"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>Excluir circularGeofenceManagementCondition
 
@@ -39,7 +40,7 @@ DELETE /deviceManagement/managementConditions/{managementConditionId}/management
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

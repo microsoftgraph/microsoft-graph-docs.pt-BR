@@ -2,12 +2,13 @@
 title: Listar managedIOSStoreApps
 description: Listar propriedades e relações dos objetos managedIOSStoreApp.
 author: tfitzmac
-ms.openlocfilehash: c5d8f0153f7c28f92578b92fbd0f4b0aac0ff885
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a337136683aefe59a56f816c3627d0bc49eea1e6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324106"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821697"
 ---
 # <a name="list-managediosstoreapps"></a>Listar managedIOSStoreApps
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

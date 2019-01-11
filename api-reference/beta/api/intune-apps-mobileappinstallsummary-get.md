@@ -2,12 +2,13 @@
 title: Obter mobileAppInstallSummary
 description: Leia as propriedades e os relacionamentos do objeto mobileAppInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 6f44cb4ae473ad8306f2fa3a4e61f93da900b380
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: aaf1d3a0a1c64fb71e336de4e2a9c37142e72b86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27345798"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27818113"
 ---
 # <a name="get-mobileappinstallsummary"></a>Obter mobileAppInstallSummary
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

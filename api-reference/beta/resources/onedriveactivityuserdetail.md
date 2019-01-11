@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de oneDriveActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
-ms.openlocfilehash: 679ec9b8452d388fe311e67d88bcfffd6fe73d93
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 2f498c7c9507c4210f12f76d57f62729f84da578
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27035852"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27820787"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>tipo de recurso de oneDriveActivityUserDetail
 
@@ -15,7 +16,7 @@ ms.locfileid: "27035852"
 | Propriedade                  | Tipo              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Data              |
-| userPrincipalName         | String            |
+| userPrincipalName         | Cadeia de caracteres            |
 | isDeleted                 | Booliano           |
 | deletedDate               | Data              |
 | lastActivityDate          | Data              |
@@ -24,7 +25,7 @@ ms.locfileid: "27035852"
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
 | assignedProducts          | String collection |
-| reportPeriod              | String            |
+| reportPeriod              | Cadeia de caracteres            |
 
 ## <a name="json-representation"></a>Representação JSON
 

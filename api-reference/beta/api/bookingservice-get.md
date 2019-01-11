@@ -1,12 +1,13 @@
 ---
 title: Obter bookingService
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 25ced555f4962ef073f6f01c4eed4767ad1c9e01
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 7a309e076f480d051a1da47265dedaf4c32207d9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034089"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819688"
 ---
 # <a name="get-bookingservice"></a>Obter bookingService
 

@@ -2,12 +2,13 @@
 title: Ação syncMicrosoftStoreForBusinessApps
 description: Sincroniza a conta do Intune com o Microsoft Store para Empresas
 author: tfitzmac
-ms.openlocfilehash: b26b379631cf5b28594e3cf247b735d6118e9b40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: bba25378dae6f74104cb3ecc3a336404181b9a79
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354331"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821641"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Ação syncMicrosoftStoreForBusinessApps
 
@@ -37,7 +38,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

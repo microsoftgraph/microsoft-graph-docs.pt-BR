@@ -2,12 +2,13 @@
 title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
 author: dkershaw10
-ms.openlocfilehash: 5bd1c858a34cf4afb1b9c61e4550fce05511232e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 5bccf297bb26a6d6bcea9a8c2f82f7853a6afd83
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334913"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27807326"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -47,7 +48,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |country|String|País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. Oferece suporte a $filter.|
+|employeeId|Cadeia de caracteres|O identificador de funcionário atribuído ao usuário pela organização. Oferece suporte a $filter.|
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|

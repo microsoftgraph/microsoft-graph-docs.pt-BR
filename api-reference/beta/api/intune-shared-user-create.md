@@ -2,12 +2,13 @@
 title: Criar usuário
 description: Criar um novo objeto user.
 author: tfitzmac
-ms.openlocfilehash: dddfa5e6788aa56c1a983a889f692fc7cbdc4d94
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9146f7292e003bb64c958e91d1305544b3980442
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27307669"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27821704"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -46,7 +47,7 @@ POST /users
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 

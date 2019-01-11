@@ -2,12 +2,13 @@
 title: tipo de enum hashAlgorithms
 description: Opções de algoritmo de hash.
 author: tfitzmac
-ms.openlocfilehash: eb02601cb1c0aa0782c05d42be37ec7c527f7c62
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9d0dd3be7534f81c185d4cd051b4d7c77e4d8653
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328114"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27819422"
 ---
 # <a name="hashalgorithms-enum-type"></a>tipo de enum hashAlgorithms
 
