@@ -2,12 +2,13 @@
 title: Excluir deviceCompliancePolicyAssignment
 description: Exclui deviceCompliancePolicyAssignment.
 author: tfitzmac
-ms.openlocfilehash: 5f90c89094b99e5e7cb0b761dfe636e1a53cadb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: a3e9e0db7e8fe6c8b6119961ffd0aa23a11ae8b6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27302426"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864110"
 ---
 # <a name="delete-devicecompliancepolicyassignment"></a>Excluir deviceCompliancePolicyAssignment
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/ass
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

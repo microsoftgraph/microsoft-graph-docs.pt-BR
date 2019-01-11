@@ -1,12 +1,13 @@
 ---
 title: Criar uma propriedade estendida de vários valores
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
-ms.openlocfilehash: 17f1bf0a4dd03de3704349fcfd496b768f60d56f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 54be6f428ac5d7b604093fdad3a03b48b89243a0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037392"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863046"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar uma propriedade estendida de vários valores
 
@@ -151,7 +152,7 @@ PATCH /groups/{id}/events/{id}
 
 Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) na propriedade da coleção **multiValueExtendedProperties** da instância de recurso.
 
-|**.**|**Tipo**|**Descrição**|
+|**Propriedade**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
 |id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|

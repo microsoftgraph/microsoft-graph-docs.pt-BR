@@ -2,12 +2,13 @@
 title: tipo de enum importedDeviceIdentityType
 description: Ainda não documentado
 author: tfitzmac
-ms.openlocfilehash: 46c4e7d8ce2c06a4e806329753920892c0cc46ac
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ead5ad597752b018dcf9d484e79c2fa08b937847
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328648"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863368"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>tipo de enum importedDeviceIdentityType
 

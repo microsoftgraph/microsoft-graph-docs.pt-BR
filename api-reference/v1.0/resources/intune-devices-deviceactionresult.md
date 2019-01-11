@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceActionResult
 description: Resultado de ação de dispositivo
 author: tfitzmac
-ms.openlocfilehash: 48429e059616d9af0e3cbdac8544e68354b94fb5
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1b802d1b09fbe65e9e1e72e4c34a387462e12113
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27320542"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861121"
 ---
 # <a name="deviceactionresult-resource-type"></a>Tipo de recurso deviceActionResult
 

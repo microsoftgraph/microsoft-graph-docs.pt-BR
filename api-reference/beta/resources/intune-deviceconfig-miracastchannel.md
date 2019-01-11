@@ -2,12 +2,13 @@
 title: tipo de enum miracastChannel
 description: Valores possíveis para o canal de Miracast.
 author: tfitzmac
-ms.openlocfilehash: f874cfaee0a20b4aaa82af0605df864179d8635e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 35b5b77115b3084ac1e1f253b2de70a677566a8e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317378"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866980"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enum miracastChannel
 

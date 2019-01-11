@@ -2,12 +2,13 @@
 title: Atualizar windowsAssignedAccessProfile
 description: Atualize as propriedades de um objeto windowsAssignedAccessProfile.
 author: tfitzmac
-ms.openlocfilehash: 84cbc1aaaebf9383c3d113d7f309c61de0cdeb67
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4bfa70208a456d7b7d2a2d0ae524d9edd9508cab
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331357"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867043"
 ---
 # <a name="update-windowsassignedaccessprofile"></a>Atualizar windowsAssignedAccessProfile
 
@@ -38,7 +39,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) .
@@ -47,9 +48,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|profileName|String|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu Iniciar e os usuários aos quais essa configuração de quiosque é atribuída.|
-|showTaskBar|Boolean|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|profileName|Cadeia de caracteres|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu Iniciar e os usuários aos quais essa configuração de quiosque é atribuída.|
+|showTaskBar|Booliano|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
 |appUserModelIds|String collection|Estes são os únicos repositório aplicativos do Windows que estarão disponíveis para início no menu Iniciar.|
 |desktopAppPaths|String collection|Estes são os caminhos dos aplicativos de área de trabalho que estarão disponíveis no menu Iniciar e os aplicativos somente o usuário será capaz de início.|
 |userAccounts|String collection|As contas de usuário que serão bloqueadas para esta configuração de quiosque.|

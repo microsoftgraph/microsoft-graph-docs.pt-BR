@@ -2,12 +2,13 @@
 title: tipo de recurso de mobileAppTroubleshootingHistoryItem
 description: Item de histórico contido no evento Mobile App solução de problemas.
 author: tfitzmac
-ms.openlocfilehash: 132039a0b6e457ebd2ca3e545f6f15dd4ad7ac58
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 4db29e7badc8748e4aa64f318b68e0f21d0da5db
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27329523"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867925"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>tipo de recurso de mobileAppTroubleshootingHistoryItem
 

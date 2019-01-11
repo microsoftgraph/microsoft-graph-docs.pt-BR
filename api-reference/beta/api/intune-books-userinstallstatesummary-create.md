@@ -2,12 +2,13 @@
 title: Criar userInstallStateSummary
 description: Criar um novo objeto userInstallStateSummary.
 author: tfitzmac
-ms.openlocfilehash: 1f90c76382379f1e448c02d5b83a415c9a97fc82
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8346d64a550d1e13edb939fb8d79e4e60272cbd9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864705"
 ---
 # <a name="create-userinstallstatesummary"></a>Criar userInstallStateSummary
 
@@ -38,7 +39,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto userInstallStateSummary.
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userInst
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|
 |failedDeviceCount|Int32|Falha na contagem de dispositivos.|

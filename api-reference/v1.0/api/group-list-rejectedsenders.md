@@ -2,12 +2,13 @@
 title: Listar rejectedSenders
 description: 'Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo. '
 author: dkershaw10
-ms.openlocfilehash: 9c6cc6cf53671e67d5a20660ef3aa94dd5b1a449
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 58d8b15c6d20c3fbec895cc3a8050238bbe9507b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311302"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867659"
 ---
 # <a name="list-rejectedsenders"></a>Listar rejectedSenders
 Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo. 

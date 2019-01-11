@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsInformationProtectionStoreApp
 description: Aplicativo de loja para proteção de informações do Windows
 author: tfitzmac
-ms.openlocfilehash: f4d26a7e650e5a8762f9b48b40021798c8bd3cf7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3d1f5dfe28928b5cea63c487f322429589938278
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27328984"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867512"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>Tipo de recurso windowsInformationProtectionStoreApp
 

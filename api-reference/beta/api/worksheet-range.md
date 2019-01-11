@@ -2,12 +2,13 @@
 title: 'Worksheet: Range'
 description: Obtém o objeto de intervalo especificado pelo nome ou endereço.
 author: lumine2008
-ms.openlocfilehash: 449851fca7d6f5f57193bf456f7358b76e68e3b0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 78865ab8f7e4aa7d59bb6f3c782731bae058ae80
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308271"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860666"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -38,7 +39,7 @@ POST /workbook/worksheets/{id|name}/Range
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|string|Opcional. O endereço ou nome do intervalo. Caso não seja especificado, todo o intervalo da planilha será retornado.|
 

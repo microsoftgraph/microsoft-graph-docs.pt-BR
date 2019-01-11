@@ -2,12 +2,13 @@
 title: tipo de enum vpnProviderType
 description: Tipo de provedor para VPN-app.
 author: tfitzmac
-ms.openlocfilehash: d8f002582879302bcbe0fb965110eaa5e674a689
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea3e3fcac5fc84270fcdb63b6ab673cb9f55aea9
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351594"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861282"
 ---
 # <a name="vpnprovidertype-enum-type"></a>tipo de enum vpnProviderType
 

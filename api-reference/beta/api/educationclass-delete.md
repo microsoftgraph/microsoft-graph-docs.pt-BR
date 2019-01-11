@@ -1,12 +1,13 @@
 ---
 title: Excluir educationClass
 description: Exclua uma aula. Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
-ms.openlocfilehash: e63903f1a6db2c223071f04db26f31e3cfbc2168
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f042d7290b99f54efc6809162647ecbb6395f006
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038069"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864635"
 ---
 # <a name="delete-educationclass"></a>Excluir educationClass
 

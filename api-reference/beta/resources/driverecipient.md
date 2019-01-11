@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: DriveRecipient
-ms.openlocfilehash: c658b45ad2e99fc447459e80bfca12c29029f5b8
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1bc78a8ec0648ce90221e4ad1f4473e49b625b7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863725"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
 
@@ -35,9 +36,9 @@ O recurso de destinatários possui essas propriedades.
 
 | Nome da propriedade | Tipo   | Descrição                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
-| alias         | String | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
-| objectId      | String | O identificador exclusivo para o destinatário no diretório.                                               |
+| email         | Cadeia de caracteres | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
+| alias         | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
+| objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
 
 ## <a name="remarks"></a>Comentários
 

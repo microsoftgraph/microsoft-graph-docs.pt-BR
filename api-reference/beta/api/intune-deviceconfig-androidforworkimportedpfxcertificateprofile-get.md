@@ -2,12 +2,13 @@
 title: Obter androidForWorkImportedPFXCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto androidForWorkImportedPFXCertificateProfile.
 author: tfitzmac
-ms.openlocfilehash: 4729380334e65094f42e717cf48ac03fecce42dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 37f33473ab9333a4435f898f975f6d3139b7107f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27349627"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863886"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Obter androidForWorkImportedPFXCertificateProfile
 
@@ -42,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

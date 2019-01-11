@@ -2,12 +2,13 @@
 title: Excluir contactFolder
 description: Exclui uma contactFolder que não a padrão.
 author: angelgolfer-ms
-ms.openlocfilehash: 26ff5f9a2ef78d33fd60b498e891f031891b6f17
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f9b175251a1a9a4862dc1df36d607ed62e56c3e3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334010"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864859"
 ---
 # <a name="delete-contactfolder"></a>Excluir contactFolder
 

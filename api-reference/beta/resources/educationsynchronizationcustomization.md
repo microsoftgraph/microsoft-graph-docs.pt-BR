@@ -2,12 +2,13 @@
 title: tipo de recurso de educationSynchronizationCustomization
 description: 'Fornece configurações para personalizar a sincronização de perfil de dados da escola das entidades que recurso. A personalização pode ser aplicada a todas as entidades que está sendo sincronizadas. '
 author: mmast-msft
-ms.openlocfilehash: d4f67c9f56198350731c18fe3da8b512522c4d71
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9294af5796daeefb394ed1625a9a36128ae7b2a4
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350633"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860897"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso de educationSynchronizationCustomization
 
@@ -23,8 +24,8 @@ Fornece configurações para personalizar a sincronização de perfil de dados d
 |:-|:-|:-|
 | **optionalPropertiesToSync** | coleção de cadeia de caracteres |  A coleção de nomes de propriedade para sincronização. Se definido como nulo, todas as propriedades serão sincronizados.       |
 | **synchronizationStartDate** | DateTime |  A data em que a sincronização deve ser iniciado. Este valor deve ser definido como uma data futura. Se definido como null, o recurso será sincronizado após a conclusão da configuração do perfil. **Observação:** Isso se aplica apenas à propriedade **StudentEnrollment** .      |
-|**isSyncDeferred** |Boolean | Indica se a sincronização da entidade pai é adiada para uma data posterior. |
-| **allowDisplayNameUpdate** | Boolean |  Indica se o nome de exibição do recurso pode ser substituído pela sincronização.         |
+|**isSyncDeferred** |Booliano | Indica se a sincronização da entidade pai é adiada para uma data posterior. |
+| **allowDisplayNameUpdate** | Booliano |  Indica se o nome de exibição do recurso pode ser substituído pela sincronização.         |
 
 
 ## <a name="json-representation"></a>Representação JSON

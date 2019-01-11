@@ -2,12 +2,13 @@
 title: tipo de recurso de win32LobAppRegistryDetection
 description: Contém propriedades do registro para detectar um aplicativo Win32
 author: tfitzmac
-ms.openlocfilehash: 5adeca1b569531d15657acc2a8960bab60580dc6
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: faccc030a9f15b511af4123c94687c904e60ff10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347737"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867134"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>tipo de recurso de win32LobAppRegistryDetection
 
@@ -22,12 +23,12 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|check32BitOn64System|Boolean|Um valor indicando se nesse caminho do registro é para verificação de aplicativo de 32 bits no sistema de 64 bits|
-|caminho-chave|String|O caminho da chave do registro para detectar app Win32 linha de negócios (LoB)|
-|valueName|String|O nome do valor do registro|
+|check32BitOn64System|Booliano|Um valor indicando se nesse caminho do registro é para verificação de aplicativo de 32 bits no sistema de 64 bits|
+|caminho-chave|Cadeia de caracteres|O caminho da chave do registro para detectar app Win32 linha de negócios (LoB)|
+|valueName|Cadeia de caracteres|O nome do valor do registro|
 |tipo de detecção|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|O tipo de detecção de dados de registro. Os possíveis valores são: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operador|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|O operador para detecção de dados de registro. Os valores possíveis são: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|String|O valor de detecção do registro|
+|detectionValue|Cadeia de caracteres|O valor de detecção do registro|
 
 ## <a name="relationships"></a>Relações
 Nenhum

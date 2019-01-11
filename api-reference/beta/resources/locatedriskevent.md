@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de locatedRiskEvent
 description: 'Um evento de risco detectado pelo Windows Azure Active Directory identidade proteção baseado nos dados de local. Os tipos de evento de risco localizado incluem:'
-ms.openlocfilehash: e84cff5985905977b6b1eeb75a9ef9703a2a2078
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 256c7a980fb9540e7e80337a5b8aad29fe73f26a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036062"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867554"
 ---
 # <a name="locatedriskevent-resource-type"></a>tipo de recurso de locatedRiskEvent
 

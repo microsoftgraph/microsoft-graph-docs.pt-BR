@@ -1,12 +1,13 @@
 ---
 title: Get plannerTaskDetails
 description: Recupere as propriedades e os relacionamentos do objeto **plannertaskdetails**.
-ms.openlocfilehash: 04ad88d629b3835f691ca01e544229ddefbd9ac3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5edf56f2c201ed84ae3c8cb4cb25f9c5cc74b96e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27041102"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860925"
 ---
 # <a name="get-plannertaskdetails"></a>Get plannerTaskDetails
 

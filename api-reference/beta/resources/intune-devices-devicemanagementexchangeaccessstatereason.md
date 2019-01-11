@@ -2,12 +2,13 @@
 title: tipo de enum deviceManagementExchangeAccessStateReason
 description: Motivo de estado de acesso do Exchange de dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 03e89b2405aac185f8b937828ade07479ced4cc3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: c4e02f8536d7be21d850907c0239fec01e4d1920
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318351"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863781"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enum deviceManagementExchangeAccessStateReason
 
@@ -19,7 +20,7 @@ Motivo de estado de acesso do Exchange de dispositivo.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Não há motivo de estado acesso descoberto do Exchange|
+|nenhum|0|Não há motivo de estado acesso descoberto do Exchange|
 |unknown|1|Motivo de estado de acesso desconhecido|
 |exchangeGlobalRule|2|Estado de acesso determinado pela regra Global do Exchange|
 |exchangeIndividualRule|3|Estado de acesso determinado pela regra Individual do Exchange|

@@ -2,12 +2,13 @@
 title: Get auditEvent
 description: Ler propriedades e relações do objeto auditEvent.
 author: tfitzmac
-ms.openlocfilehash: b47d376994ec6bd1e344234b6f08039f1ab35915
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 6ac6ccc3f1faccd6c158ae14f0a2696ec5e8684f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864831"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 
@@ -40,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

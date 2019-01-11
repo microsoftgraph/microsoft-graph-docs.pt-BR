@@ -1,12 +1,13 @@
 ---
 title: tipo de enum managedAppAvailability
 description: Disponibilidade de um aplicativo (MAM) gerenciado.
-ms.openlocfilehash: 13a9c211c4c6bb2df163759827a8950b9ac4a0c6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: da6868357e068c7cff2ca43ad603465d26c9a81a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040731"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861933"
 ---
 # <a name="managedappavailability-enum-type"></a>tipo de enum managedAppAvailability
 

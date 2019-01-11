@@ -2,12 +2,13 @@
 title: tipo de enum firewallPreSharedKeyEncodingMethodType
 description: Valores possíveis para firewallPreSharedKeyEncodingMethod
 author: tfitzmac
-ms.openlocfilehash: 3ed2456f54bd27a3efa04d959edba48f7c100692
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2dd5eb58c4fe2e8729ab1adc4aa55ad0c701157f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324929"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862150"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>tipo de enum firewallPreSharedKeyEncodingMethodType
 
@@ -20,7 +21,7 @@ Valores possíveis para firewallPreSharedKeyEncodingMethod
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|0|Nenhum valor configurado por Intune, não substituir o valor padrão de dispositivo configurada pelo usuário|
-|none|1|Chave pré compartilhada não é codificado. Em vez disso, ele é mantido em seu formato de caractere largo|
+|nenhum|1|Chave pré compartilhada não é codificado. Em vez disso, ele é mantido em seu formato de caractere largo|
 |utF8|2|Codificar a chave pré compartilhada usando a codificação UTF-8|
 
 

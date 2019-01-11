@@ -2,12 +2,13 @@
 title: Obter organização
 description: Leia as propriedades e as relações do objeto organização.
 author: tfitzmac
-ms.openlocfilehash: c741449f18bfba0bb25d07ad0edf578a9760c2dc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: af2d9e496320eb3c286da2a489442da26388beaf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27316972"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867267"
 ---
 # <a name="get-organization"></a>Acessar organização
 
@@ -38,7 +39,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

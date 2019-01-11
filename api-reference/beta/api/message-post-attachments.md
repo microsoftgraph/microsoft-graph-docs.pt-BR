@@ -2,12 +2,13 @@
 title: Adicionar anexo
 description: 'Use esta API para adicionar um anexo a uma mensagem. '
 author: angelgolfer-ms
-ms.openlocfilehash: 6f6a25f940429637e4b04f200e9a0fcee067c011
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9457aa138068b3059b1fabbd606268f6e756b94e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27318904"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862766"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 

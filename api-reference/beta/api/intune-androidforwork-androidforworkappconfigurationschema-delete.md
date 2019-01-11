@@ -2,12 +2,13 @@
 title: Excluir androidForWorkAppConfigurationSchema
 description: Exclui androidForWorkAppConfigurationSchema.
 author: tfitzmac
-ms.openlocfilehash: e88f137fc3b3893337d6b20f65ef07c887e0c0b7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 60189f21ea3e6b2e45f597f94f5a6ab5241be029
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27346673"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865489"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>Excluir androidForWorkAppConfigurationSchema
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAp
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

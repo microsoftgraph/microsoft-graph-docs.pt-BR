@@ -2,12 +2,13 @@
 title: Lista windowsPrivacyDataAccessControlItems
 description: Lista as propriedades e os relacionamentos dos objetos windowsPrivacyDataAccessControlItem.
 author: tfitzmac
-ms.openlocfilehash: 642db3e0381adf3bedfff52baf4987b7ea43cdaf
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 1f6730bd76f0531767f8329ac72671fea1cad364
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27303168"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862591"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>Lista windowsPrivacyDataAccessControlItems
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

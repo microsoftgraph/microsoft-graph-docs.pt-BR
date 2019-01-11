@@ -2,12 +2,13 @@
 title: 'evento: dismissReminder'
 description: Descarte um lembrete que tiver sido disparado para um evento em um calendário do usuário.
 author: angelgolfer-ms
-ms.openlocfilehash: 22c3860beb563c39a252e941d464e8ce1671783c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 570a9b34031afe6d53b6e577127180ebdbe7a163
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304169"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864936"
 ---
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 
@@ -15,7 +16,7 @@ ms.locfileid: "27304169"
 
 Descarte um lembrete que tiver sido disparado para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md)do usuário.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

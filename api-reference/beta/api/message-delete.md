@@ -1,12 +1,13 @@
 ---
 title: Excluir mensagem
 description: Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
-ms.openlocfilehash: 8f7429dfa4ee586f7bb6c263bdbb80971416d006
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3a76c936f72ebd238ee6d7a898dfd6a3e0356036
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040733"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864523"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 

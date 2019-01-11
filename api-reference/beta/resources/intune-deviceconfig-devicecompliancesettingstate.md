@@ -2,12 +2,13 @@
 title: Tipo de recurso deviceComplianceSettingState
 description: Estado de configuração de conformidade de um determinado dispositivo.
 author: tfitzmac
-ms.openlocfilehash: 4fe74d529d0768f773652ce0bbc6aa37f221db9e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 697072009243b3e7f008d59f43030badb16a55a1
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326492"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861835"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 

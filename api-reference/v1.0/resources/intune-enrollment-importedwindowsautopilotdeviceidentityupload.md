@@ -2,12 +2,13 @@
 title: tipo de recurso de importedWindowsAutopilotDeviceIdentityUpload
 description: Importe os dispositivos de piloto automático do windows usando o carregamento.
 author: tfitzmac
-ms.openlocfilehash: 7009454d859f3151d6bd2635c4cc146692602644
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: da4a543dcc3275dd2c68943bab54c0ef7120a1b5
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27348885"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861240"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>tipo de recurso de importedWindowsAutopilotDeviceIdentityUpload
 
@@ -22,7 +23,7 @@ Importe os dispositivos de piloto automático do windows usando o carregamento.
 |[Criar importedWindowsAutopilotDeviceIdentityUpload](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Crie um novo objeto de [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .|
 |[Excluir importedWindowsAutopilotDeviceIdentityUpload](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md)|Nenhum|Exclui um [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).|
 |[Atualizar importedWindowsAutopilotDeviceIdentityUpload](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Atualize as propriedades de um objeto [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .|
-|[função autopilotDeviceStream](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|String|Crie uma solicitação de carregamento com fluxo de dispositivo piloto automático nela.|
+|[função autopilotDeviceStream](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|Cadeia de caracteres|Crie uma solicitação de carregamento com fluxo de dispositivo piloto automático nela.|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

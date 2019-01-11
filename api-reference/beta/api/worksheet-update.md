@@ -2,12 +2,13 @@
 title: Atualizar planilha
 description: Atualize as propriedades do objeto de planilha.
 author: lumine2008
-ms.openlocfilehash: ab61b65c03ea69a77253226c5be785d0314117bc
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ff0670cc08d12ed2443b590026bae9efa26e5481
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27326436"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860673"
 ---
 # <a name="update-worksheet"></a>Atualizar planilha
 
@@ -40,7 +41,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|string|O nome de exibição da planilha.|
-|position|inteiro|A posição baseada em zero da planilha na pasta de trabalho.|
+|position|int|A posição baseada em zero da planilha na pasta de trabalho.|
 |visibilidade|string|A visibilidade da planilha. Os valores possíveis são: `Visible`, `Hidden` e `VeryHidden`.|
 
 ## <a name="response"></a>Resposta

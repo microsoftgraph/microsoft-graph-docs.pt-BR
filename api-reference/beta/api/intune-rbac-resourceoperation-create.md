@@ -2,12 +2,13 @@
 title: Criar resourceOperation
 description: Criar um novo objeto resourceOperation.
 author: tfitzmac
-ms.openlocfilehash: bc3b0c8193d77177b83f139827fad1a3a9686fb4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317833"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862598"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -38,7 +39,7 @@ POST /deviceManagement/resourceOperations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto resourceOperation.
@@ -48,11 +49,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|String|Categoria de recurso ao qual esta operação pertence.|
+|recurso|Cadeia de caracteres|Categoria de recurso ao qual esta operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Boolean|Determina se a permissão é validada para escopos definidos por atribuição de função.|
+|enabledForScopeValidation|Booliano|Determina se a permissão é validada para escopos definidos por atribuição de função.|
 
 
 

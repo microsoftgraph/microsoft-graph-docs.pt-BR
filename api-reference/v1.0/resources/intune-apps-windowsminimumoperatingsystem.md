@@ -2,12 +2,13 @@
 title: Tipo de recurso windowsMinimumOperatingSystem
 description: O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 author: tfitzmac
-ms.openlocfilehash: ea1953bd0d58d4e578ffb7171fc157166072189b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: d80a7c957b4a03132b349ebd609e21481322021a
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314725"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863788"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Tipo de recurso windowsMinimumOperatingSystem
 

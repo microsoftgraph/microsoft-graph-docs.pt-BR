@@ -2,12 +2,13 @@
 title: 'TableSort: reapply'
 description: Reaplica os parâmetros de classificação atuais à tabela.
 author: lumine2008
-ms.openlocfilehash: 2e5372cb0839db8aa63761bb7952c1c91d656948
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 80e4b10c31151632df9c04bc72b9f421dfd245f3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331819"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862472"
 ---
 # <a name="tablesort-reapply"></a>TableSort: reapply
 

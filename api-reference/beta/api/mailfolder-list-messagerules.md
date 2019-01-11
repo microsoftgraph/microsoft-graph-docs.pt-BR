@@ -1,12 +1,13 @@
 ---
 title: Listar regras
 description: Obtenha todos os objetos messageRule definidos para a Caixa de Entrada do usuário.
-ms.openlocfilehash: 9cd56e3ad7c63a2b8ad84758ac7d26c3c349810a
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 3145c1f2b2900971021b6799917996e23cf36866
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040524"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863361"
 ---
 # <a name="list-rules"></a>Listar regras
 

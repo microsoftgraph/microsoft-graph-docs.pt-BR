@@ -1,12 +1,13 @@
 ---
 title: 'message: forward'
 description: 'Encaminhar uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis  '
-ms.openlocfilehash: 3edb96a90c99f1bc9eb2d8499e9cda83774a7ab3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b601ea1152e9f5b0c5796779967393b956fd2da0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040748"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864677"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -50,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|String|Um comentário a incluir. Não pode ficar vazio.|
+|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
 |toRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de targetResourceDevice
 description: Indica o objeto de dispositivo que foi adicionado, atualizado ou excluído por administradores como parte da atividade de auditoria. Derivado do recurso targetResource.
-ms.openlocfilehash: df9c7bfef17139fed5fa53d6642fe40b2d0f9bd6
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f1aae6f019dd352a0493893cba43ae972929bb33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036678"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863158"
 ---
 # <a name="targetresourcedevice-resource-type"></a>tipo de recurso de targetResourceDevice
 Indica o objeto de dispositivo que foi adicionado, atualizado ou excluído por administradores como parte da atividade de auditoria. Derivado do recurso [targetResource](targetresource.md) .

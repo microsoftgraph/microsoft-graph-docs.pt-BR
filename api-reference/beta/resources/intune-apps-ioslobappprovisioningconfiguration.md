@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de iosLobAppProvisioningConfiguration
 description: Este tópico fornece descrições das declarado métodos, propriedades e relações expostas pelo recurso IOS Lob provisionamento de configuração de aplicativos.
-ms.openlocfilehash: 07ae7c53f481aa6f2c9ad083881752591ab421fd
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fba0e89eb1caec8282dbd70fa71140bf9dff0ecd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037174"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866392"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>tipo de recurso de iosLobAppProvisioningConfiguration
 
@@ -28,14 +29,14 @@ Este tópico fornece descrições das declarado métodos, propriedades e relaç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data de validade do perfil opcional e hora.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
 |version|Int32|Versão da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações

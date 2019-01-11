@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso do programa
 description: 'No Windows Azure AD access analisa o recurso, um programa é um contêiner, mantendo os controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para torná-la mais fáceis de localizar relacionados access analisa.  '
-ms.openlocfilehash: cb08d0edb7487be95e159ed5e2a2546a92e7bce7
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863900"
 ---
 # <a name="program-resource-type"></a>tipo de recurso do programa
 

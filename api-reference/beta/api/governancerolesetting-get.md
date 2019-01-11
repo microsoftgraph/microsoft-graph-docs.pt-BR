@@ -1,12 +1,13 @@
 ---
 title: Obter governanceRoleSetting
 description: Recupere as propriedades e relacionamentos de um governanceRoleSetting.
-ms.openlocfilehash: 2b0a54fc31ec18816e32bfa2377ddcc0974ac09d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: db4c2a287ba1089c4aac73b9f0cf6e204a726c86
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864509"
 ---
 # <a name="get-governancerolesetting"></a>Obter governanceRoleSetting
 

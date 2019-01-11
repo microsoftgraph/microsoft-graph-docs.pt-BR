@@ -2,12 +2,13 @@
 title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
 author: tfitzmac
-ms.openlocfilehash: d8a84c61751fdbc8267b846a70adb44d2affbfa2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e88b6379e340865adeb41bb0430fd8eecc8f0b69
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331665"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860680"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -49,7 +50,7 @@ PATCH /deviceManagement
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).
@@ -58,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo do dispositivo|
+|id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
 |configurações|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|

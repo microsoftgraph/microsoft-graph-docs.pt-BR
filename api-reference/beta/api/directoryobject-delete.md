@@ -2,19 +2,20 @@
 title: Excluir directoryObject
 description: Exclua directoryObject.
 author: lleonard-msft
-ms.openlocfilehash: f53ffc488529c2af4b566ada52f213d1fc132c60
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e291004f13eaf6d0f24750002c8068d3e97b3052
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361408"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865190"
 ---
 # <a name="delete-directoryobject"></a>Excluir directoryObject
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Exclua directoryObject.
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

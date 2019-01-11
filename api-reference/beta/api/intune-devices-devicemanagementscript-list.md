@@ -2,12 +2,13 @@
 title: Lista deviceManagementScripts
 description: Lista as propriedades e os relacionamentos dos objetos deviceManagementScript.
 author: tfitzmac
-ms.openlocfilehash: 4c3f9163445fce348fe3e2a9b2635a0c44cab864
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7c98ed25e43a0bb7990f900de816ee54a44c3da7
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363701"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863634"
 ---
 # <a name="list-devicemanagementscripts"></a>Lista deviceManagementScripts
 
@@ -38,7 +39,7 @@ GET /deviceManagement/deviceManagementScripts
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

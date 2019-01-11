@@ -2,12 +2,13 @@
 title: Grupos de dispositivos de lista
 description: Obtenha os grupos dos quais este dispositivo é um membro direto. Esta operação não é transitiva.
 author: tfitzmac
-ms.openlocfilehash: da0001ab6a609e6f262aa6880306977b9c655b01
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 3a1e91aced444ef78bfce3950aa31710791362bf
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27336488"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865657"
 ---
 # <a name="list-device-groups"></a>Grupos de dispositivos de lista
 
@@ -15,7 +16,7 @@ ms.locfileid: "27336488"
 
 Obtenha os grupos dos quais este dispositivo é um membro direto. Esta operação não é transitiva.
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

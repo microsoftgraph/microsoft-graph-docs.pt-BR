@@ -1,12 +1,13 @@
 ---
 title: Criar extensão aberta
 description: Criar uma extensão aberta (objeto openTypeExtension) e adicionar propriedades personalizadas
-ms.openlocfilehash: 80747559d310f033419fe3b24add1dc27debb90e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 363bd629b5b7c9041f36ce039403717f715e202c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037437"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863032"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 

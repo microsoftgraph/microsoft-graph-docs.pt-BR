@@ -2,12 +2,13 @@
 title: Excluir managedDevice
 description: Exclui managedDevice.
 author: tfitzmac
-ms.openlocfilehash: 24273ab5e6a930609b9a830ffc18b6ab0b456121
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: f66debc301af301674145c6bf9a50c8f3e4f0bf0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27323230"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865146"
 ---
 # <a name="delete-manageddevice"></a>Excluir managedDevice
 
@@ -38,7 +39,7 @@ DELETE /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDev
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

@@ -2,12 +2,13 @@
 title: Ação recoverPasscode
 description: Recuperar senha
 author: tfitzmac
-ms.openlocfilehash: 48a9c7cdba91780a1a50e16184267319a6441eb3
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 76b0fac0e6413390b98c8d4c607a956fc3f4eacd
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27314046"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862696"
 ---
 # <a name="recoverpasscode-action"></a>Ação recoverPasscode
 
@@ -41,7 +42,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

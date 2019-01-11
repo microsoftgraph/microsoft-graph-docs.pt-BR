@@ -1,12 +1,13 @@
 ---
 title: Tipo de recurso report
 description: Um relatório que varia de acordo com o fluxo de trabalho, qualquer um dos dispositivos falhas de histórico ou inscrição de perfil de configuração.
-ms.openlocfilehash: f79e1264ed82c05ea2fba4a61494589fb54dead5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 8854bb0f32c1360a4c529137a3f587f7a3cba5f2
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006058"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862157"
 ---
 # <a name="report-resource-type"></a>Tipo de recurso report
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de osVersionCount
 description: Contagem de dispositivos com malware para cada versão do sistema operacional
 author: tfitzmac
-ms.openlocfilehash: ccc031c6060604b36166b4869d02f08854dfdd2c
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 227e802de7226d653d68997268c9bf4eac4aa259
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27331994"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864145"
 ---
 # <a name="osversioncount-resource-type"></a>tipo de recurso de osVersionCount
 
@@ -19,7 +20,7 @@ Contagem de dispositivos com malware para cada versão do sistema operacional
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|osVersion|String|Versão do sistema operacional|
+|osVersion|Cadeia de caracteres|Versão do sistema operacional|
 |deviceCount|Int32|Contagem de dispositivos com malware para a versão do sistema operacional|
 |lastUpdateDateTime|DateTimeOffset|O carimbo de hora da última atualização do dispositivo contar em UTC|
 

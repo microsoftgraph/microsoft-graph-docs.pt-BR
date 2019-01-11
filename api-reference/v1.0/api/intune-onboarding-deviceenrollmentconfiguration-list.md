@@ -2,12 +2,13 @@
 title: Listar deviceEnrollmentConfigurations
 description: Listar propriedades e relações de objetos de deviceEnrollmentConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 541eb2cc30280c0c8c92bb155ce375a400cd8680
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8f5649cbe7b46c69e0e9408c7d724088ada27ac6
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344916"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864614"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>Listar deviceEnrollmentConfigurations
 
@@ -36,7 +37,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

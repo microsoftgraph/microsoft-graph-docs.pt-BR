@@ -1,12 +1,13 @@
 ---
 title: Atribuir política
 description: Atribui uma política a um aplicativo ou entidade de serviço.
-ms.openlocfilehash: 25dee4ac43716949125795114318d2571d5b8647
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 30ba92c1d0308f9c4846702008a203821ae2b7b0
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27039578"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865454"
 ---
 # <a name="assign-policy"></a>Atribuir política
 

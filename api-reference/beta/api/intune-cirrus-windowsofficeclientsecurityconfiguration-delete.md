@@ -2,12 +2,13 @@
 title: Excluir windowsOfficeClientSecurityConfiguration
 description: Exclui um windowsOfficeClientSecurityConfiguration de diretiva de segurança.
 author: tfitzmac
-ms.openlocfilehash: 779ded74f3b07934db9fa10f1495bb6f3baf35e1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 7fbfb6ab9c38935ae5dd738baad4dd5b480c728b
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27324847"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865230"
 ---
 # <a name="delete-windowsofficeclientsecurityconfiguration"></a>Excluir windowsOfficeClientSecurityConfiguration
 
@@ -38,7 +39,7 @@ DELETE /officeConfiguration/clientConfigurations/{key}
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

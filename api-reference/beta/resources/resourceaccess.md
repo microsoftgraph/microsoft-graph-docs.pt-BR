@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de resourceAccess
 description: Especifica um escopo de permissão do OAuth 2.0 ou uma função do aplicativo que requer um aplicativo. A propriedade **resourceAccess** do tipo requiredResourceAccess é uma coleção de **ResourceAccess**.
-ms.openlocfilehash: 56e9b2b006d63d2a9abebc9e9585744b08438800
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: f5389915897c3aab8b8277a45b54042bc861b290
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27038531"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27862332"
 ---
 # <a name="resourceaccess-resource-type"></a>tipo de recurso de resourceAccess
 
@@ -38,7 +39,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Guid|O identificador exclusivo para uma das instâncias [oAuth2Permission](oauth2permission.md) ou [appRole](approle.md) que expõe o aplicativo do recurso.|
-|type|String|Especifica se a propriedade **id** faz referência a um [oAuth2Permission](oauth2permission.md) ou um [appRole](approle.md). Valores possíveis são "escopo" ou "role".|
+|type|Cadeia de caracteres|Especifica se a propriedade **id** faz referência a um [oAuth2Permission](oauth2permission.md) ou um [appRole](approle.md). Valores possíveis são "escopo" ou "role".|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

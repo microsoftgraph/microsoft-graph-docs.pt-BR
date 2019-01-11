@@ -2,12 +2,13 @@
 title: Equipe de arquivo morto
 description: 'Arquive a equipe especificada. '
 author: nkramer
-ms.openlocfilehash: 6e90b7ddaae68291a0d7e970618519ddaec660e7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 984fbd7692f28ab2ebf8f3be0411447b51bf2d13
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27332645"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866189"
 ---
 # <a name="archive-team"></a>Equipe de arquivo morto
 
@@ -22,7 +23,7 @@ Para arquivar equipe, a equipe e o [grupo](../resources/group.md) devem ter um p
 
 Para restaurar uma equipe de seu estado arquivado, use a API para [unarchive](team-unarchive.md).
 
-## <a name="permissions"></a>Permissões
+## <a name="permissions"></a>Permissions
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

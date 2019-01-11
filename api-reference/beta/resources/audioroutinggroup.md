@@ -2,12 +2,13 @@
 title: tipo de recurso de audioRoutingGroup
 description: O grupo de roteamento áudio armazena uma rota de áudio privada entre os participantes em uma conversa com vários participantes. Fonte é o participante propriamente dito e os receptores são um subconjunto dos outros participantes da conversa com vários participantes.
 author: VinodRavichandran
-ms.openlocfilehash: 0e1db47963576e728a07a6b99ecff09a0f4640d0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27344467"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27860645"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso de audioRoutingGroup
 
@@ -29,9 +30,9 @@ O grupo de roteamento áudio armazena uma rota de áudio privada entre os partic
 
 | Propriedade      | Tipo              | Descrição                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Somente leitura. Servidor foi gerado.                                         |
+| id            | Cadeia de caracteres            | Somente leitura. Servidor foi gerado.                                         |
 | receptores     | Coleção de cadeia de caracteres | Lista de recebimento de ids de participante.                                   |
-| routingMode   | String            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
+| routingMode   | Cadeia de caracteres            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
 | sources       | Coleção de cadeia de caracteres | Lista de ids de participante de origem.                                      |
 
 > **Observação:** Modo de roteamento determina as restrições nas fontes e receptores. Há suporte para os seguintes grupos de roteamento.

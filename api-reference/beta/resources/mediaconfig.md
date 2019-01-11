@@ -2,12 +2,13 @@
 title: tipo de recurso de mediaConfig
 description: A configuração de mídia usada para conectar a uma chamada.
 author: VinodRavichandran
-ms.openlocfilehash: 1b68d9236ba78ae1a83228b3382c96fc81516d1f
-ms.sourcegitcommit: 0b3a57ac8b99871e56389f9be15e4f96e219f635
+localization_priority: Normal
+ms.openlocfilehash: ec76adf2d3a508ebe2518ed0010a1c653daca546
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380258"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867344"
 ---
 # <a name="mediaconfig-resource-type"></a>tipo de recurso de mediaConfig
 
@@ -17,7 +18,7 @@ A configuração de mídia usada para conectar a uma chamada.
 
 ## <a name="properties"></a>Propriedades
 
-| Propriedade	       | Tipo    | Descrição|
+| Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
 | removeFromDefaultAudioGroup | Booliano |  |
 

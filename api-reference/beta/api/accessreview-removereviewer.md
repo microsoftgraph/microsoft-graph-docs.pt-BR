@@ -1,12 +1,13 @@
 ---
 title: Remover accessReview revisor
 description: 'No recurso de avaliações de acesso do Azure AD, atualize um objeto accessReview existente para remover um usuário como um revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso onde os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do access no qual os usuários revisam sua próprias acesso e não foi projetada para uma revisão de acesso na qual os proprietários do grupo são atribuídos como os revisores. '
-ms.openlocfilehash: 2f2e1be904b98ed4dc2b3b34088b344e05b03473
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27034650"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866021"
 ---
 # <a name="remove-accessreview-reviewer"></a>Remover accessReview revisor
 

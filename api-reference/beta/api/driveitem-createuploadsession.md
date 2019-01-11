@@ -3,12 +3,13 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Upload de arquivos retomável
-ms.openlocfilehash: b4519de2a4fb417ce8a0b4524fff6d60547be7ec
-ms.sourcegitcommit: 37591c2299c80e7675cd2b5f781e1eeeba628a60
+localization_priority: Normal
+ms.openlocfilehash: c8ab45f9915b16f75e8b44ad50215c4e73c13fff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27748434"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865174"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -93,7 +94,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já é utilizad
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| description          | String             | Fornece uma descrição do usuário visíveis do item. Leitura e gravação. Somente em OneDrive pessoal.
+| description          | Cadeia de caracteres             | Fornece uma descrição do usuário visíveis do item. Leitura e gravação. Somente em OneDrive pessoal.
 | name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação

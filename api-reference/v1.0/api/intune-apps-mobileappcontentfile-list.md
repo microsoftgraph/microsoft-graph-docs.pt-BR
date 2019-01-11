@@ -2,12 +2,13 @@
 title: Listar mobileAppContentFiles
 description: Listar propriedades e relações dos objetos mobileAppContentFile.
 author: tfitzmac
-ms.openlocfilehash: bfbb4fd6371808dd3245dcc9132553057889c2d7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e4107a0f2f9fc90724df6b2871cbc9b45ec4812e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27330125"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27867505"
 ---
 # <a name="list-mobileappcontentfiles"></a>Listar mobileAppContentFiles
 
@@ -36,7 +37,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

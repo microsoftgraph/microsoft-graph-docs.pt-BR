@@ -2,12 +2,13 @@
 title: Lista windowsPhone81AppXs
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81AppX.
 author: tfitzmac
-ms.openlocfilehash: 94f9cafa6261b48dea49356b208b20b6a076cd40
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: b799dfcf8daf0b07bdc0f4a7ef9ffc5dc7509466
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27361142"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864551"
 ---
 # <a name="list-windowsphone81appxs"></a>Lista windowsPhone81AppXs
 
@@ -38,7 +39,7 @@ GET /deviceAppManagement/mobileApps
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

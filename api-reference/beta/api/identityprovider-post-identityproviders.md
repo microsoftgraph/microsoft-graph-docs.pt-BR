@@ -1,12 +1,13 @@
 ---
 title: Criar identityProvider
 description: Crie um novo identityProvider especificando o nome para exibição, tipo de identityProvider, ID de cliente e segredo do cliente.
-ms.openlocfilehash: 8786cbf6676567a0c6aaef5bf497f50cff1ce9a4
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 50ead5acbbda7725e44de55865d6fe2184c89647
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037689"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866231"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
 
@@ -46,10 +47,10 @@ No corpo da solicitação, fornecem uma representação de JSON do objeto [ident
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|String|A identificação do cliente para o aplicativo. Esta é a ID de cliente obtida ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|String|O segredo do cliente para o aplicativo. Esse é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
-|name|String|O nome de exibição do provedor de identidade.|
-|type|String|O tipo de provedor de identidade. Ele deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|Cadeia de caracteres|A identificação do cliente para o aplicativo. Esta é a ID de cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Esse é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
+|name|Cadeia de caracteres|O nome de exibição do provedor de identidade.|
+|type|Cadeia de caracteres|O tipo de provedor de identidade. Ele deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ## <a name="response"></a>Resposta
 

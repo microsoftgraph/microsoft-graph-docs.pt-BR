@@ -2,12 +2,13 @@
 title: Atualizar mobileAppInstallSummary
 description: Atualize as propriedades de um objeto mobileAppInstallSummary.
 author: tfitzmac
-ms.openlocfilehash: 94dc7fa5023d26de91b4d64efda27332dd51de63
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 19bd1e61359c5d2bdaff6ee87e807bae7dba0f05
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315635"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864796"
 ---
 # <a name="update-mobileappinstallsummary"></a>Atualizar mobileAppInstallSummary
 
@@ -38,7 +39,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON para o objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalou com sucesso deste aplicativo.|
 |failedDeviceCount|Int32|Número de dispositivos que não tenha conseguido instalar esse aplicativo.|
 |notApplicableDeviceCount|Int32|Número de dispositivos que não são aplicáveis para esse aplicativo.|

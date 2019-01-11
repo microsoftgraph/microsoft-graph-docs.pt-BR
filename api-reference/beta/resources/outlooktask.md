@@ -2,12 +2,13 @@
 title: tipo de recurso outlookTask
 description: 'Um item do Outlook que pode rastrear um item de trabalho. '
 author: angelgolfer-ms
-ms.openlocfilehash: 959e7ee7d6b1844d4b66b8ab53747e26aa91d492
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 71f649c0ef5fd23caafc9bcd3e35282287d35372
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27335228"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865559"
 ---
 # <a name="outlooktask-resource-type"></a>tipo de recurso outlookTask
 
@@ -52,26 +53,26 @@ Prefer: outlook.timezone="Eastern Standard Time"
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|O nome da pessoa que tenha sido atribuído a tarefa.|
+|assignedTo|Cadeia de caracteres|O nome da pessoa que tenha sido atribuído a tarefa.|
 |body|[itemBody](itembody.md)|O corpo da tarefa que normalmente contém informações sobre a tarefa. Observe que apenas o tipo de HTML é suportado.|
 |categories|String collection|As categorias associadas à tarefa. Cada categoria corresponde à propriedade **displayName** de um [outlookCategory](outlookcategory.md) que o usuário tenha definido.|
-|changeKey|String|A versão da tarefa.|
+|changeKey|Cadeia de caracteres|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
 |createdDateTime|DateTimeOffset|A data e hora em que a tarefa foi criada. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data em que o fuso horário especificado que a tarefa deve ser concluído.|
-|hasAttachments|Boolean|Defina como true se a tarefa tiver anexos.|
-|id|String|O identificador exclusivo da tarefa. Somente leitura.|
+|hasAttachments|Booliano|Defina como true se a tarefa tiver anexos.|
+|id|Cadeia de caracteres|O identificador exclusivo da tarefa. Somente leitura.|
 |importance|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isReminderOn|Boolean|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
+|isReminderOn|Booliano|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação a tarefa. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|owner|String|O nome da pessoa que criou a tarefa.|
-|parentFolderId|String|O identificador exclusivo para a pasta do pai da tarefa.|
+|owner|Cadeia de caracteres|O nome da pessoa que criou a tarefa.|
+|parentFolderId|Cadeia de caracteres|O identificador exclusivo para a pasta do pai da tarefa.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da tarefa.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data e hora para um alerta de lembrete da tarefa ocorra.|
 |sensitivity|string|Indica o nível de privacidade para a tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|A data no fuso horário especificado quando a tarefa for começar.|
 |status|string|Indica o estado ou o progresso da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|String|Uma breve descrição ou o título da tarefa.|
+|subject|Cadeia de caracteres|Uma breve descrição ou o título da tarefa.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

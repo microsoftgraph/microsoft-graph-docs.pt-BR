@@ -2,12 +2,13 @@
 title: Tipo de recurso auditEvent
 description: Uma classe que contém as propriedades de Evento de Auditoria.
 author: tfitzmac
-ms.openlocfilehash: 99fbcfb07f08d10b20d8d57d0b16bc6d020f9e09
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: e39d6fb744ee1af2289efec8a7dec722672029d3
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27354002"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864117"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -30,7 +31,7 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|

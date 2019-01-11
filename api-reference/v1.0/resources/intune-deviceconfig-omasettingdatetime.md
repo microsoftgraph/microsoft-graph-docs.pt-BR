@@ -2,12 +2,13 @@
 title: Tipo de recurso omaSettingDateTime
 description: Definição de datetime para configurações de OMA.
 author: tfitzmac
-ms.openlocfilehash: 9a525d031c9f24cf18495d83e22467e103bca6d9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: afd66ce8838abc3ade8857ec5a4bda74144d6792
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27363687"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27865175"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Tipo de recurso omaSettingDateTime
 

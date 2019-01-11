@@ -1,12 +1,13 @@
 ---
 title: Restaura uma versão anterior de um ListItem
 description: Restaura uma versão anterior de um ListItem para ser a versão atual. Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do item.
-ms.openlocfilehash: f8dc4196c40c51287e93aaa667c325e8d4f6dcfb
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 6fb315986a8dc22363e22235f8cf65e0cbc21fed
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005214"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27866959"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Restaura uma versão anterior de um ListItem
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso de bookingBusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
-ms.openlocfilehash: 0ea11dcd16a129e6d6648be4b09435c5c052de9e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: fb8b79b4c728236ebc8231bae5da74e65466c20c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27036752"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27861632"
 ---
 # <a name="bookingbusiness-resource-type"></a>tipo de recurso de bookingBusiness
 
@@ -40,16 +41,16 @@ Representa uma empresa no Microsoft Bookings. Esse é o objeto de nível superio
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|O endereço da empresa. A propriedade **address** , juntamente com o **telefone** e **webSiteUrl**, aparecem no rodapé de um página de agendamento de negócios.|
 |businessHours|coleção [bookingWorkHours](bookingworkhours.md)|Os horários de operação para a empresa.|
-|businessType|String|O tipo de negócio.|
-|defaultCurrencyIso|String|O código para a moeda que a empresa opera em Microsoft Bookings.|
-|displayName|String|O nome da empresa, interfaces com os clientes. Esse nome é exibido na parte superior do negócio o agendamento de página.|
-|email|String|O endereço de email para a empresa.|
-|id|String|Um identificador programático exclusivo para a empresa. Somente leitura.|
+|businessType|Cadeia de caracteres|O tipo de negócio.|
+|defaultCurrencyIso|Cadeia de caracteres|O código para a moeda que a empresa opera em Microsoft Bookings.|
+|displayName|Cadeia de caracteres|O nome da empresa, interfaces com os clientes. Esse nome é exibido na parte superior do negócio o agendamento de página.|
+|email|Cadeia de caracteres|O endereço de email para a empresa.|
+|id|Cadeia de caracteres|Um identificador programático exclusivo para a empresa. Somente leitura.|
 |isPublished|Booliano|A página de agendamento tenha sido disponibilizada para clientes externos. Use as ações de **Publicar** e **cancelamento de publicação** para definir essa propriedade. Somente leitura.|
 |phone|Cadeia de caracteres|O número de telefone para a empresa. A propriedade de **telefone** , junto com o **endereço** e **webSiteUrl**, aparecem no rodapé de um página de agendamento de negócios.|
-|publicUrl|String|A URL para a página de agendamento, que é definida após você [Publicar](../api/bookingbusiness-publish.md) ou [Cancelar a publicação](../api/bookingbusiness-unpublish.md) de página. Somente leitura.|
+|publicUrl|Cadeia de caracteres|A URL para a página de agendamento, que é definida após você [Publicar](../api/bookingbusiness-publish.md) ou [Cancelar a publicação](../api/bookingbusiness-unpublish.md) de página. Somente leitura.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica como reservas podem ser criadas para esta empresa.|
-|webSiteUrl|String|A URL do site da web de negócios. A propriedade de **webSiteUrl** , o **endereço**, **telefone**, aparecem no rodapé de uma página de agendamento de negócios.|
+|webSiteUrl|Cadeia de caracteres|A URL do site da web de negócios. A propriedade de **webSiteUrl** , o **endereço**, **telefone**, aparecem no rodapé de uma página de agendamento de negócios.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
