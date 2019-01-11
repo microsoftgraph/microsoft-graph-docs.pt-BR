@@ -1,12 +1,13 @@
 ---
 title: Listar membros
 description: Recupere uma lista de objetos de conector associados a um connectorGroup.
-ms.openlocfilehash: 504cba20c0d93db9f0c0333dcf7578e051b3009f
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5b8cd2d57f842e6c38d56ad25f53a4f80a9f1382
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27037677"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27869974"
 ---
 # <a name="list-members"></a>Listar membros
 

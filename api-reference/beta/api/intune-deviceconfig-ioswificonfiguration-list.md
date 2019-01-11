@@ -2,12 +2,13 @@
 title: Lista iosWiFiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosWiFiConfiguration.
 author: tfitzmac
-ms.openlocfilehash: aa6468059f62985179a3cac408a634fa6f993e4e
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 2a5c55a03b7858f05931dc60d638f375f67c271e
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27338350"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27873805"
 ---
 # <a name="list-ioswificonfigurations"></a>Lista iosWiFiConfigurations
 
@@ -39,7 +40,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

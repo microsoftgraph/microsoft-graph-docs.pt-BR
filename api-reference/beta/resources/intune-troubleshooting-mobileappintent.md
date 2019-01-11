@@ -2,12 +2,13 @@
 title: tipo de enum mobileAppIntent
 description: Indica o status do aplicativo no dispositivo móvel.
 author: tfitzmac
-ms.openlocfilehash: 0a230279a947ab60314a53872670fff871eff745
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 8b8119cd188823beabf5b273e5324d0098e5b9ff
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347226"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27875408"
 ---
 # <a name="mobileappintent-enum-type"></a>tipo de enum mobileAppIntent
 

@@ -1,12 +1,13 @@
 ---
 title: tipo de recurso fileAttachment
 description: 'Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um evento, a mensagem ou postagem. O **contentBytes** '
-ms.openlocfilehash: 97c9b22c379b00fa76a9dee45389e57269e6fc20
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 81de7a12ca371158d7f6369861a8a197fd544821
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27006870"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27870053"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -32,8 +33,8 @@ Derivado de [attachment](attachment.md).
 |contentBytes|Binária|O conteúdo do arquivo codificado pela base64.|
 |contentId|String|A ID do anexo no repositório do Exchange.|
 |contentLocation|String|O URI (Uniform Resource Identifier) que corresponde ao local do conteúdo do anexo.|
-|contentType|String|O tipo de conteúdo do anexo.|
-|id|String|A ID do anexo.|
+|contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
+|id|Cadeia de caracteres|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
 |name|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
