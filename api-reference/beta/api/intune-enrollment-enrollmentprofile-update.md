@@ -2,30 +2,31 @@
 title: Atualizar enrollmentProfile
 description: Atualize as propriedades de um objeto enrollmentProfile.
 author: tfitzmac
-ms.openlocfilehash: 1f268d07e3636682d77edb238c59e2acaa7ec7d2
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27308313"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27822593"
 ---
-# <a name="update-enrollmentprofile"></a><span data-ttu-id="7accb-103">Atualizar enrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="7accb-103">Update enrollmentProfile</span></span>
+# <a name="update-enrollmentprofile"></a><span data-ttu-id="84261-103">Atualizar enrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="84261-103">Update enrollmentProfile</span></span>
 
-> <span data-ttu-id="7accb-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="7accb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7accb-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="7accb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="84261-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="84261-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="84261-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="84261-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="7accb-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="7accb-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="84261-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="84261-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="7accb-107">Atualize as propriedades de um objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="7accb-107">Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="7accb-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7accb-108">Prerequisites</span></span>
-<span data-ttu-id="7accb-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7accb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="84261-107">Atualize as propriedades de um objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="84261-107">Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="84261-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="84261-108">Prerequisites</span></span>
+<span data-ttu-id="84261-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="84261-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7accb-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7accb-111">Permission type</span></span>|<span data-ttu-id="7accb-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7accb-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="84261-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="84261-111">Permission type</span></span>|<span data-ttu-id="84261-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="84261-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7accb-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7accb-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7accb-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7accb-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="7accb-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7accb-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7accb-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7accb-116">Not supported.</span></span>|
-|<span data-ttu-id="7accb-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7accb-117">Application</span></span>|<span data-ttu-id="7accb-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7accb-118">Not supported.</span></span>|
+|<span data-ttu-id="84261-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="84261-113">Delegated (work or school account)</span></span>|<span data-ttu-id="84261-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="84261-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="84261-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="84261-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="84261-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="84261-116">Not supported.</span></span>|
+|<span data-ttu-id="84261-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="84261-117">Application</span></span>|<span data-ttu-id="84261-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="84261-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7accb-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7accb-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="84261-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="84261-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,34 +35,34 @@ ms.locfileid: "27308313"
 PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7accb-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7accb-120">Request headers</span></span>
-|<span data-ttu-id="7accb-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7accb-121">Header</span></span>|<span data-ttu-id="7accb-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7accb-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="84261-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="84261-120">Request headers</span></span>
+|<span data-ttu-id="84261-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="84261-121">Header</span></span>|<span data-ttu-id="84261-122">Valor</span><span class="sxs-lookup"><span data-stu-id="84261-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7accb-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7accb-123">Authorization</span></span>|<span data-ttu-id="7accb-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7accb-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7accb-125">Accept</span><span class="sxs-lookup"><span data-stu-id="7accb-125">Accept</span></span>|<span data-ttu-id="7accb-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7accb-126">application/json</span></span>|
+|<span data-ttu-id="84261-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="84261-123">Authorization</span></span>|<span data-ttu-id="84261-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="84261-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="84261-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="84261-125">Accept</span></span>|<span data-ttu-id="84261-126">application/json</span><span class="sxs-lookup"><span data-stu-id="84261-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7accb-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7accb-127">Request body</span></span>
-<span data-ttu-id="7accb-128">No corpo da solicitação, fornece uma representação JSON para o objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="7accb-128">In the request body, supply a JSON representation for the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="84261-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="84261-127">Request body</span></span>
+<span data-ttu-id="84261-128">No corpo da solicitação, fornece uma representação JSON para o objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="84261-128">In the request body, supply a JSON representation for the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
 
-<span data-ttu-id="7accb-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span><span class="sxs-lookup"><span data-stu-id="7accb-129">The following table shows the properties that are required when you create the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span></span>
+<span data-ttu-id="84261-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span><span class="sxs-lookup"><span data-stu-id="84261-129">The following table shows the properties that are required when you create the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span></span>
 
-|<span data-ttu-id="7accb-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7accb-130">Property</span></span>|<span data-ttu-id="7accb-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7accb-131">Type</span></span>|<span data-ttu-id="7accb-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7accb-132">Description</span></span>|
+|<span data-ttu-id="84261-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="84261-130">Property</span></span>|<span data-ttu-id="84261-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="84261-131">Type</span></span>|<span data-ttu-id="84261-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="84261-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7accb-133">id</span><span class="sxs-lookup"><span data-stu-id="7accb-133">id</span></span>|<span data-ttu-id="7accb-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7accb-134">String</span></span>|<span data-ttu-id="7accb-135">O GUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="7accb-135">The GUID for the object</span></span>|
-|<span data-ttu-id="7accb-136">displayName</span><span class="sxs-lookup"><span data-stu-id="7accb-136">displayName</span></span>|<span data-ttu-id="7accb-137">String</span><span class="sxs-lookup"><span data-stu-id="7accb-137">String</span></span>|<span data-ttu-id="7accb-138">Nome do perfil</span><span class="sxs-lookup"><span data-stu-id="7accb-138">Name of the profile</span></span>|
-|<span data-ttu-id="7accb-139">description</span><span class="sxs-lookup"><span data-stu-id="7accb-139">description</span></span>|<span data-ttu-id="7accb-140">String</span><span class="sxs-lookup"><span data-stu-id="7accb-140">String</span></span>|<span data-ttu-id="7accb-141">Descrição do perfil</span><span class="sxs-lookup"><span data-stu-id="7accb-141">Description of the profile</span></span>|
-|<span data-ttu-id="7accb-142">requiresUserAuthentication</span><span class="sxs-lookup"><span data-stu-id="7accb-142">requiresUserAuthentication</span></span>|<span data-ttu-id="7accb-143">Boolean</span><span class="sxs-lookup"><span data-stu-id="7accb-143">Boolean</span></span>|<span data-ttu-id="7accb-144">Indica se o perfil exige autenticação do usuário</span><span class="sxs-lookup"><span data-stu-id="7accb-144">Indicates if the profile requires user authentication</span></span>|
-|<span data-ttu-id="7accb-145">configurationEndpointUrl</span><span class="sxs-lookup"><span data-stu-id="7accb-145">configurationEndpointUrl</span></span>|<span data-ttu-id="7accb-146">String</span><span class="sxs-lookup"><span data-stu-id="7accb-146">String</span></span>|<span data-ttu-id="7accb-147">Url de ponto de extremidade de configuração a ser usado para registro</span><span class="sxs-lookup"><span data-stu-id="7accb-147">Configuration endpoint url to use for Enrollment</span></span>|
-|<span data-ttu-id="7accb-148">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="7accb-148">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="7accb-149">Boolean</span><span class="sxs-lookup"><span data-stu-id="7accb-149">Boolean</span></span>|<span data-ttu-id="7accb-150">Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="7accb-150">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
+|<span data-ttu-id="84261-133">id</span><span class="sxs-lookup"><span data-stu-id="84261-133">id</span></span>|<span data-ttu-id="84261-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="84261-134">String</span></span>|<span data-ttu-id="84261-135">O GUID do objeto.</span><span class="sxs-lookup"><span data-stu-id="84261-135">The GUID for the object</span></span>|
+|<span data-ttu-id="84261-136">displayName</span><span class="sxs-lookup"><span data-stu-id="84261-136">displayName</span></span>|<span data-ttu-id="84261-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="84261-137">String</span></span>|<span data-ttu-id="84261-138">Nome do perfil</span><span class="sxs-lookup"><span data-stu-id="84261-138">Name of the profile</span></span>|
+|<span data-ttu-id="84261-139">description</span><span class="sxs-lookup"><span data-stu-id="84261-139">description</span></span>|<span data-ttu-id="84261-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="84261-140">String</span></span>|<span data-ttu-id="84261-141">Descrição do perfil</span><span class="sxs-lookup"><span data-stu-id="84261-141">Description of the profile</span></span>|
+|<span data-ttu-id="84261-142">requiresUserAuthentication</span><span class="sxs-lookup"><span data-stu-id="84261-142">requiresUserAuthentication</span></span>|<span data-ttu-id="84261-143">Booliano</span><span class="sxs-lookup"><span data-stu-id="84261-143">Boolean</span></span>|<span data-ttu-id="84261-144">Indica se o perfil exige autenticação do usuário</span><span class="sxs-lookup"><span data-stu-id="84261-144">Indicates if the profile requires user authentication</span></span>|
+|<span data-ttu-id="84261-145">configurationEndpointUrl</span><span class="sxs-lookup"><span data-stu-id="84261-145">configurationEndpointUrl</span></span>|<span data-ttu-id="84261-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="84261-146">String</span></span>|<span data-ttu-id="84261-147">Url de ponto de extremidade de configuração a ser usado para registro</span><span class="sxs-lookup"><span data-stu-id="84261-147">Configuration endpoint url to use for Enrollment</span></span>|
+|<span data-ttu-id="84261-148">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="84261-148">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="84261-149">Booliano</span><span class="sxs-lookup"><span data-stu-id="84261-149">Boolean</span></span>|<span data-ttu-id="84261-150">Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.</span><span class="sxs-lookup"><span data-stu-id="84261-150">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7accb-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="7accb-151">Response</span></span>
-<span data-ttu-id="7accb-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7accb-152">If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="84261-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="84261-151">Response</span></span>
+<span data-ttu-id="84261-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="84261-152">If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7accb-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7accb-153">Example</span></span>
-### <a name="request"></a><span data-ttu-id="7accb-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7accb-154">Request</span></span>
-<span data-ttu-id="7accb-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7accb-155">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="84261-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="84261-153">Example</span></span>
+### <a name="request"></a><span data-ttu-id="84261-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="84261-154">Request</span></span>
+<span data-ttu-id="84261-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="84261-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 Content-type: application/json
@@ -76,8 +77,8 @@ Content-length: 250
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7accb-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="7accb-156">Response</span></span>
-<span data-ttu-id="7accb-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7accb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="84261-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="84261-156">Response</span></span>
+<span data-ttu-id="84261-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="84261-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,50 +1,51 @@
 ---
 title: Criar MailFolder
 description: Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
-ms.openlocfilehash: 5ab8870de334781b59e68cb1d090db5067d53796
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: b90d000663e640a7d74b2b82ceb857bb021a328f
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27005422"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826961"
 ---
-# <a name="create-mailfolder"></a><span data-ttu-id="15a8f-103">Criar MailFolder</span><span class="sxs-lookup"><span data-stu-id="15a8f-103">Create MailFolder</span></span>
+# <a name="create-mailfolder"></a><span data-ttu-id="aa183-103">Criar MailFolder</span><span class="sxs-lookup"><span data-stu-id="aa183-103">Create MailFolder</span></span>
 
-<span data-ttu-id="15a8f-104">Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="15a8f-104">Use this API to create a new mail folder in the root folder of the user's mailbox.</span></span>
-## <a name="permissions"></a><span data-ttu-id="15a8f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="15a8f-105">Permissions</span></span>
-<span data-ttu-id="15a8f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15a8f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="aa183-104">Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.</span><span class="sxs-lookup"><span data-stu-id="aa183-104">Use this API to create a new mail folder in the root folder of the user's mailbox.</span></span>
+## <a name="permissions"></a><span data-ttu-id="aa183-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="aa183-105">Permissions</span></span>
+<span data-ttu-id="aa183-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aa183-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="15a8f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="15a8f-108">Permission type</span></span>      | <span data-ttu-id="15a8f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="15a8f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="aa183-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="aa183-108">Permission type</span></span>      | <span data-ttu-id="aa183-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="aa183-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="15a8f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="15a8f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="15a8f-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15a8f-111">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="15a8f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="15a8f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15a8f-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15a8f-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="15a8f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="15a8f-114">Application</span></span> | <span data-ttu-id="15a8f-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="15a8f-115">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="aa183-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="aa183-110">Delegated (work or school account)</span></span> | <span data-ttu-id="aa183-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa183-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="aa183-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="aa183-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aa183-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa183-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="aa183-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="aa183-114">Application</span></span> | <span data-ttu-id="aa183-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="aa183-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="15a8f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="15a8f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aa183-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="aa183-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/mailFolders
 ```
-## <a name="request-headers"></a><span data-ttu-id="15a8f-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="15a8f-117">Request headers</span></span>
-| <span data-ttu-id="15a8f-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="15a8f-118">Header</span></span>       | <span data-ttu-id="15a8f-119">Valor</span><span class="sxs-lookup"><span data-stu-id="15a8f-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="aa183-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="aa183-117">Request headers</span></span>
+| <span data-ttu-id="aa183-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="aa183-118">Header</span></span>       | <span data-ttu-id="aa183-119">Valor</span><span class="sxs-lookup"><span data-stu-id="aa183-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="15a8f-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="15a8f-120">Authorization</span></span>  | <span data-ttu-id="15a8f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="15a8f-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="15a8f-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="15a8f-123">Content-Type</span></span>  | <span data-ttu-id="15a8f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="15a8f-124">application/json</span></span>  |
+| <span data-ttu-id="aa183-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="aa183-120">Authorization</span></span>  | <span data-ttu-id="aa183-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="aa183-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="aa183-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="aa183-123">Content-Type</span></span>  | <span data-ttu-id="aa183-124">application/json</span><span class="sxs-lookup"><span data-stu-id="aa183-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="15a8f-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="15a8f-125">Request body</span></span>
-<span data-ttu-id="15a8f-p103">No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. **displayName** é a única propriedade gravável para um objeto [MailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="15a8f-p103">In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a [MailFolder](../resources/mailfolder.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aa183-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="aa183-125">Request body</span></span>
+<span data-ttu-id="aa183-p103">No corpo da solicitação, forneça um objeto JSON com os parâmetros a seguir. **displayName** é a única propriedade gravável para um objeto [MailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="aa183-p103">In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a [MailFolder](../resources/mailfolder.md) object.</span></span>
 
-| <span data-ttu-id="15a8f-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="15a8f-128">Parameter</span></span>    | <span data-ttu-id="15a8f-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="15a8f-129">Type</span></span>   |<span data-ttu-id="15a8f-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="15a8f-130">Description</span></span>|
+| <span data-ttu-id="aa183-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="aa183-128">Parameter</span></span>    | <span data-ttu-id="aa183-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="aa183-129">Type</span></span>   |<span data-ttu-id="aa183-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa183-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="15a8f-131">displayName</span><span class="sxs-lookup"><span data-stu-id="15a8f-131">displayName</span></span>|<span data-ttu-id="15a8f-132">String</span><span class="sxs-lookup"><span data-stu-id="15a8f-132">String</span></span>|<span data-ttu-id="15a8f-133">O nome de exibição da nova pasta.</span><span class="sxs-lookup"><span data-stu-id="15a8f-133">The display name of the new folder.</span></span>|
+|<span data-ttu-id="aa183-131">displayName</span><span class="sxs-lookup"><span data-stu-id="aa183-131">displayName</span></span>|<span data-ttu-id="aa183-132">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="aa183-132">String</span></span>|<span data-ttu-id="aa183-133">O nome de exibição da nova pasta.</span><span class="sxs-lookup"><span data-stu-id="aa183-133">The display name of the new folder.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="15a8f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="15a8f-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="aa183-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa183-134">Response</span></span>
 
-<span data-ttu-id="15a8f-135">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="15a8f-135">If successful, this method returns `201 Created` response code and a [MailFolder](../resources/mailfolder.md) object in the response body.</span></span>
+<span data-ttu-id="aa183-135">Se bem-sucedido, este método retorna o código de resposta `201 Created` e um objeto [MailFolder](../resources/mailfolder.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="aa183-135">If successful, this method returns `201 Created` response code and a [MailFolder](../resources/mailfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="15a8f-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="15a8f-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="15a8f-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="15a8f-137">Request</span></span>
-<span data-ttu-id="15a8f-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="15a8f-138">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="aa183-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="aa183-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="aa183-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="aa183-137">Request</span></span>
+<span data-ttu-id="aa183-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="aa183-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_user"
@@ -59,8 +60,8 @@ Content-length: 159
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="15a8f-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="15a8f-139">Response</span></span>
-<span data-ttu-id="15a8f-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="15a8f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="aa183-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="aa183-139">Response</span></span>
+<span data-ttu-id="aa183-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="aa183-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,51 +2,52 @@
 title: Um aplicativo em uma equipe de atualização
 description: Atualiza uma instalação de aplicativo em uma equipe
 author: nkramer
-ms.openlocfilehash: 7f3787d6c22f6def80c8d36950ae3beadfd36b90
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.openlocfilehash: 36ddc41e6c15def1c5570fc49c3b151c87a63421
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311925"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27826597"
 ---
-# <a name="upgrade-an-app-in-a-team"></a><span data-ttu-id="1ed53-103">Um aplicativo em uma equipe de atualização</span><span class="sxs-lookup"><span data-stu-id="1ed53-103">Upgrade an app in a team</span></span>
+# <a name="upgrade-an-app-in-a-team"></a><span data-ttu-id="c5b33-103">Um aplicativo em uma equipe de atualização</span><span class="sxs-lookup"><span data-stu-id="c5b33-103">Upgrade an app in a team</span></span>
 
 
 
-<span data-ttu-id="1ed53-104">Atualiza uma [instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1ed53-104">Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.</span></span>
+<span data-ttu-id="c5b33-104">Atualiza uma [instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="c5b33-104">Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1ed53-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1ed53-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c5b33-105">Permissions</span><span class="sxs-lookup"><span data-stu-id="c5b33-105">Permissions</span></span>
 
-<span data-ttu-id="1ed53-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ed53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c5b33-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c5b33-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1ed53-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1ed53-108">Permission type</span></span>      | <span data-ttu-id="1ed53-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1ed53-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c5b33-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c5b33-108">Permission type</span></span>      | <span data-ttu-id="c5b33-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c5b33-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1ed53-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1ed53-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1ed53-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1ed53-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1ed53-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1ed53-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ed53-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ed53-113">Not supported.</span></span>    |
-|<span data-ttu-id="1ed53-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1ed53-114">Application</span></span> | <span data-ttu-id="1ed53-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1ed53-115">Not supported.</span></span> |
+|<span data-ttu-id="c5b33-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c5b33-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c5b33-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5b33-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c5b33-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c5b33-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c5b33-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c5b33-113">Not supported.</span></span>    |
+|<span data-ttu-id="c5b33-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c5b33-114">Application</span></span> | <span data-ttu-id="c5b33-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c5b33-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1ed53-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1ed53-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c5b33-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c5b33-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1ed53-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1ed53-117">Request headers</span></span>
-| <span data-ttu-id="1ed53-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1ed53-118">Header</span></span>       | <span data-ttu-id="1ed53-119">Valor</span><span class="sxs-lookup"><span data-stu-id="1ed53-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c5b33-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c5b33-117">Request headers</span></span>
+| <span data-ttu-id="c5b33-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c5b33-118">Header</span></span>       | <span data-ttu-id="c5b33-119">Valor</span><span class="sxs-lookup"><span data-stu-id="c5b33-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="1ed53-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="1ed53-120">Authorization</span></span>  | <span data-ttu-id="1ed53-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1ed53-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c5b33-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="c5b33-120">Authorization</span></span>  | <span data-ttu-id="c5b33-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c5b33-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1ed53-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1ed53-123">Request body</span></span>
-<span data-ttu-id="1ed53-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1ed53-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c5b33-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c5b33-123">Request body</span></span>
+<span data-ttu-id="c5b33-124">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c5b33-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1ed53-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ed53-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c5b33-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="c5b33-125">Response</span></span>
 
-<span data-ttu-id="1ed53-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1ed53-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c5b33-p103">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c5b33-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1ed53-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1ed53-128">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c5b33-128">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c5b33-128">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1ed53-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1ed53-129">Request</span></span>
-<span data-ttu-id="1ed53-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1ed53-130">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="c5b33-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c5b33-129">Request</span></span>
+<span data-ttu-id="c5b33-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c5b33-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -55,10 +56,10 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### <a name="response"></a><span data-ttu-id="1ed53-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="1ed53-131">Response</span></span>
-<span data-ttu-id="1ed53-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1ed53-132">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="c5b33-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="c5b33-131">Response</span></span>
+<span data-ttu-id="c5b33-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c5b33-132">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="1ed53-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1ed53-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c5b33-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c5b33-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
