@@ -3,12 +3,13 @@ title: tipo de recurso de intuneBrandingProfile
 description: Essa entidade contém dados que são utilizados em Personalizar a aparência de nível de locatário de aplicativos do Portal da empresa, bem como o portal da web de usuário final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2ee2fee902b4aca542810dc058b7d16aaedb9c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820605"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930261"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso de intuneBrandingProfile
 
@@ -29,9 +30,9 @@ Essa entidade contém dados que são utilizados em Personalizar a aparência de 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave de perfil|
-|profileName|Cadeia de caracteres|Nome do perfil|
-|profileDescription|Cadeia de caracteres|Descrição do perfil|
+|id|String|Chave de perfil|
+|profileName|String|Nome do perfil|
+|profileDescription|String|Descrição do perfil|
 |isDefaultProfile|Booliano|Apresenta se o perfil é usado para padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile última modificação.|

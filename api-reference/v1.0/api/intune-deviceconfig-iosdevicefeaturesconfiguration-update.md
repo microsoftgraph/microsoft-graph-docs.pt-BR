@@ -3,12 +3,13 @@ title: Atualizar iosDeviceFeaturesConfiguration
 description: Atualizar as propriedades de um objeto iosDeviceFeaturesConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 686c8ac43cd0290325fd3664da0a54ea3b2a7631
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 213e244860f5941aa8be7821973192c6d9d51e71
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932760"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>Atualizar iosDeviceFeaturesConfiguration
 
@@ -46,14 +47,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosDevi
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|assetTagTemplate|Cadeia de caracteres|Informações de marcação de ativos para o dispositivo, exibidas na janela de login e na tela de bloqueio.|
-|lockScreenFootnote|Cadeia de caracteres|Uma nota de rodapé exibida na janela de login e na tela de bloqueio. Disponível no iOS 9.3.1 e posterior.|
+|assetTagTemplate|String|Informações de marcação de ativos para o dispositivo, exibidas na janela de login e na tela de bloqueio.|
+|lockScreenFootnote|String|Uma nota de rodapé exibida na janela de login e na tela de bloqueio. Disponível no iOS 9.3.1 e posterior.|
 |homeScreenDockIcons|Coleção [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Uma lista dos aplicativos e pastas exibidos em um dock de tela inicial. Esta coleção pode conter um máximo de 500 elementos.|
 |homeScreenPages|Coleção [iosHomeScreenPage](../resources/intune-deviceconfig-ioshomescreenpage.md)|Uma lista de páginas na tela inicial. Esta coleção pode conter um máximo de 500 elementos.|
 |notificationSettings|Coleção [iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md)|Configurações de notificação para cada ID de pacote. Aplicáveis apenas a dispositivos no modo supervisionado (iOS 9.3 e posterior). Esta coleção pode conter um máximo de 500 elementos.|

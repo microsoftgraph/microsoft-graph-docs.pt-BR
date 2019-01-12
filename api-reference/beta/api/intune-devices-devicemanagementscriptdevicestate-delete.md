@@ -3,12 +3,13 @@ title: Excluir deviceManagementScriptDeviceState
 description: Exclui um deviceManagementScriptDeviceState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a133917e229f4144b146cb4efc1ab73f84a09b6c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4af1cfade771607d35f424388ba6676913b89947
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913565"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>Excluir deviceManagementScriptDeviceState
 

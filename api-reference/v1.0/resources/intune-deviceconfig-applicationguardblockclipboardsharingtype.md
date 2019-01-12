@@ -3,12 +3,13 @@ title: tipo de enum applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6fe418aa1f91c0e65770b797781dda9e29803d86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7dacce6dbe91a2bbc76b52795bc20de4cf0e5f71
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865972"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911879"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>tipo de enum applicationGuardBlockClipboardSharingType
 

@@ -3,12 +3,13 @@ title: Tipo de recurso resourceOperation
 description: " operação é usada para atribuir um recurso de MobileApp a um grupo de segurança AAD.  Não é possível modificar as operações de recursos para funções internas."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 20bdb309883c4aa713e94ac1346441544f67c774
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fd8a0620c56299446d8c0315ca66b318c7e6d71c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871698"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914784"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -31,7 +32,7 @@ Isso define uma operação ou ação que pode ser executada em um recurso (ou en
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso ao qual esta operação pertence.|
+|recurso|String|Categoria de recurso ao qual esta operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|

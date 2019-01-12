@@ -3,12 +3,13 @@ title: tipo de recurso de osVersionCount
 description: Contagem de dispositivos com malware para cada versão do sistema operacional
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 227e802de7226d653d68997268c9bf4eac4aa259
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de841e679ede22492d26f2a1587e775179c45761
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864145"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911837"
 ---
 # <a name="osversioncount-resource-type"></a>tipo de recurso de osVersionCount
 
@@ -20,7 +21,7 @@ Contagem de dispositivos com malware para cada versão do sistema operacional
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|osVersion|Cadeia de caracteres|Versão do sistema operacional|
+|osVersion|String|Versão do sistema operacional|
 |deviceCount|Int32|Contagem de dispositivos com malware para a versão do sistema operacional|
 |lastUpdateDateTime|DateTimeOffset|O carimbo de hora da última atualização do dispositivo contar em UTC|
 

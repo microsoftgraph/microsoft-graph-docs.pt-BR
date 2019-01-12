@@ -3,12 +3,13 @@ title: tipo de recurso de mobileAppProvisioningConfigGroupAssignment
 description: Contém as propriedades usadas para atribuir uma configuração de provisionamento de aplicativos a um grupo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 32c5bb83fc3991d36c4e52a4350b0e05496b32fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6996bf29776910d8af3da08d63003889b817cfbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840779"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912131"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>tipo de recurso de mobileAppProvisioningConfigGroupAssignment
 
@@ -29,8 +30,8 @@ Contém as propriedades usadas para atribuir uma configuração de provisionamen
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|targetGroupId|Cadeia de caracteres|A identificação do grupo AAD no qual o provisionamento de configuração de aplicativo está sendo direcionado.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|String|A identificação do grupo AAD no qual o provisionamento de configuração de aplicativo está sendo direcionado.|
+|id|String|Chave da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

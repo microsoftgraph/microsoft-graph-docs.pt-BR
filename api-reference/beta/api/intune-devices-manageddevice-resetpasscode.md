@@ -3,12 +3,13 @@ title: Ação resetPasscode
 description: Redefinir senha
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: be84428cde043885d67509a6e023f16cccd03f64
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53d491cc89e35761e5e161ec714e0392c32acc59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882170"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929274"
 ---
 # <a name="resetpasscode-action"></a>Ação resetPasscode
 

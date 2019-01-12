@@ -3,12 +3,13 @@ title: 'message: replyAll'
 description: Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 8e2d9b2481e4fb0fc4e6e166dae1189baa77b7e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 838db9244f57bfde872a7793d1cd7d9b4367c6f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884305"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912656"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
+|comment|String|Um comentário a incluir. Não pode ficar vazio.|
 
 ## <a name="response"></a>Resposta
 

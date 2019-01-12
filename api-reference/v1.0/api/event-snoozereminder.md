@@ -3,18 +3,19 @@ title: 'event: snoozeReminder'
 description: Adie um lembrete para um evento em um calendário do usuário até um novo horário.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c432eda53b575e1aaf1b48bfb8f6f38db9693ab6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d3f8ffab576182f5e67dad49e34c67d886fe0bde
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821690"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932410"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
 Adie um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) do usuário até um novo horário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

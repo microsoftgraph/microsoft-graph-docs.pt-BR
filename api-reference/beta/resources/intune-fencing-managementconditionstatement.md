@@ -3,12 +3,13 @@ title: tipo de recurso de managementConditionStatement
 description: Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que habilitar/desabilitar configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidos forem atendidas.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c6281d151555c0c58a0eb608e9dafc754384369f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82a99e878337cf04659b8bc7da7e821bd8afb6aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878397"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929981"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso de managementConditionStatement
 
@@ -31,9 +32,9 @@ Uma instrução de condição de gerenciamento é um grupo de condições de ger
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
-|displayName|Cadeia de caracteres|O nome definido admin da declaração de condição de gerenciamento.|
-|description|Cadeia de caracteres|O administrador definidos descrição da declaração de condição de gerenciamento.|
+|id|String|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
+|displayName|String|O nome definido admin da declaração de condição de gerenciamento.|
+|description|String|O administrador definidos descrição da declaração de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora que da última modificação a declaração de condição de gerenciamento. Lado de serviços atualizado.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão da instrução gerenciamento condição usada para avaliar se um gerenciamento de condição instrução foi ativado/desativado.|

@@ -3,12 +3,13 @@ title: Atualizar chartlegend
 description: Atualiza as propriedades do objeto chartlegend.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e4408f5a65059fe2b5c79299b712bf465e0bbd7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: bdd765cebe86015bdd01ef42c9db829a89c7749f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930254"
 ---
 # <a name="update-chartlegend"></a>Atualizar chartlegend
 

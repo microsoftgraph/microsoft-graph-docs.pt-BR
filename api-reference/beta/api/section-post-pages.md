@@ -2,12 +2,14 @@
 title: Criar página
 description: Crie uma nova página na seção especificado.
 localization_priority: Normal
-ms.openlocfilehash: e65118e6c2ef3396dc8bf16fa398bd4e237aa0ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 8957609ffd3768edb456835b522dbbb7a145b6bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871460"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912789"
 ---
 # <a name="create-page"></a>Criar página
 

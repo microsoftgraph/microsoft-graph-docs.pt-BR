@@ -3,12 +3,13 @@ title: tipo de recurso de educationSubmissionIndividualRecipient
 description: 'Uma subclasse de educationSubmissionRecipient que indica que um envio é atribuído a um indivíduo na classe.  '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 109919afbbc9fced24b46dede09c3a92df4f8c17
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 4b412b95577f3f111233f78aaa033bb12daab308
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912929"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>tipo de recurso de educationSubmissionIndividualRecipient
 
@@ -20,7 +21,7 @@ Uma subclasse de [educationSubmissionRecipient](educationsubmissionrecipient.md)
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|userId|Cadeia de caracteres|ID de usuário do usuário ao qual o envio é atribuído.|
+|userId|String|ID de usuário do usuário ao qual o envio é atribuído.|
 
 ## <a name="json-representation"></a>Representação JSON
 

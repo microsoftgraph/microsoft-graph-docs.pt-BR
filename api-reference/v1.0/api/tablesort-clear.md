@@ -2,12 +2,14 @@
 title: 'TableSort: clear'
 description: Limpa a classificação que está na tabela. Essa ação não modifica a ordenação da tabela, mas limpa o estado dos botões do cabeçalho.
 localization_priority: Normal
-ms.openlocfilehash: 00d81e05ccaea45be0ce67cd29b828e2d7ce1634
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 90ac8b30c3b8513bdd73fa40746268212a8c0df9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842746"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912187"
 ---
 # <a name="tablesort-clear"></a>TableSort: clear
 

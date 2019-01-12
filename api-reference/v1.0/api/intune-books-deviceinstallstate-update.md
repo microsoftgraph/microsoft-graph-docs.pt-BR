@@ -3,12 +3,13 @@ title: Atualizar deviceInstallState
 description: Atualizar as propriedades de um objeto deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a0962abe32198d684a158547a3af390cccfab22d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b287592590d99fa7df7e53903e335452fbc1432a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855640"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932424"
 ---
 # <a name="update-deviceinstallstate"></a>Atualizar deviceInstallState
 
@@ -47,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceI
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|

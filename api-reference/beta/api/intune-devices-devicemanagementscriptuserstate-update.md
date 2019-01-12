@@ -3,12 +3,13 @@ title: Atualizar deviceManagementScriptUserState
 description: Atualize as propriedades de um objeto deviceManagementScriptUserState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e5c3f991a8deaa3a68e7434426cc51c7ea205ef3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 301715f0c2ec522f0999a5551ae45167b5e726bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806906"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928743"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Atualizar deviceManagementScriptUserState
 
@@ -48,10 +49,10 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
+|id|String|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
 |successDeviceCount|Int32|Contagem de dispositivo de sucesso para usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivo de erro para usuário específico.|
-|userPrincipalName|Cadeia de caracteres|Nome do princípio de usuário do usuário específico.|
+|userPrincipalName|String|Nome do princípio de usuário do usuário específico.|
 
 
 

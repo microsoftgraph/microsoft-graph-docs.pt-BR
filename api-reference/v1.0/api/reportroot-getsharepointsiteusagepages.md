@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointSiteUsagePages'
 description: Obtenha o número de páginas visualizadas em todos os sites.
 localization_priority: Normal
-ms.openlocfilehash: f495f3c0dc311e1a0260df5375f93940bffd95bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d8194e26ff60ae925100b9d77cf18145218d465c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850187"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914217"
 ---
 # <a name="reportroot-getsharepointsiteusagepages"></a>reportRoot: getSharePointSiteUsagePages
 

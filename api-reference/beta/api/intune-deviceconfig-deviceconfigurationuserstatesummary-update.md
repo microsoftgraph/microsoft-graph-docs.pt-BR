@@ -3,12 +3,13 @@ title: Atualizar deviceConfigurationUserStateSummary
 description: Atualize as propriedades de um objeto deviceConfigurationUserStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 36d9065e906a7a4da9f61b30cc4588e494389401
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7bce2ebe487805526ab51199c13dc5d65215175d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933166"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Atualizar deviceConfigurationUserStateSummary
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |unknownUserCount|Int32|Número de usuários desconhecidos|
 |notApplicableUserCount|Int32|Número de usuários não aplicáveis|
 |compliantUserCount|Int32|Número de usuários compatíveis|

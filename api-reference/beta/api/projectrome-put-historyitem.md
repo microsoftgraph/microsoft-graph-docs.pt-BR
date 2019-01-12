@@ -2,12 +2,13 @@
 title: Criar ou substituir um historyItem
 description: Criar uma nova ou substituir um item de histórico existente para uma atividade do usuário existente.
 localization_priority: Normal
-ms.openlocfilehash: 008e4bc8470ffddce4f60f71bdff68ca13ad39c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 6ea4a45f2b9d0021bb339e8edadd9006042a9456
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929694"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Criar ou substituir um historyItem
 
@@ -15,7 +16,7 @@ ms.locfileid: "27807886"
 
 Criar uma nova ou substituir um item de histórico existente para uma atividade do usuário existente.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
