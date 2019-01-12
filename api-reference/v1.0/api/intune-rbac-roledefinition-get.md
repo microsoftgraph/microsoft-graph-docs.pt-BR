@@ -3,28 +3,29 @@ title: Acessar roleDefinition
 description: Leia as propriedades e as relações do objeto roleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d4df6a9a3acdfc4f4e1ff97f4eb8f8b189e1a0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ae3eb37f3a3a3a0d835d405b89d5ab5102c3e43e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805212"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947110"
 ---
-# <a name="get-roledefinition"></a><span data-ttu-id="7eb34-103">Acessar roleDefinition</span><span class="sxs-lookup"><span data-stu-id="7eb34-103">Get roleDefinition</span></span>
+# <a name="get-roledefinition"></a><span data-ttu-id="35181-103">Acessar roleDefinition</span><span class="sxs-lookup"><span data-stu-id="35181-103">Get roleDefinition</span></span>
 
-> <span data-ttu-id="7eb34-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="7eb34-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="35181-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="35181-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="7eb34-105">Leia as propriedades e as relações do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="7eb34-105">Read properties and relationships of the [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="7eb34-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="7eb34-106">Prerequisites</span></span>
-<span data-ttu-id="7eb34-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7eb34-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="35181-105">Leia as propriedades e as relações do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="35181-105">Read properties and relationships of the [roleDefinition](../resources/intune-rbac-roledefinition.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="35181-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="35181-106">Prerequisites</span></span>
+<span data-ttu-id="35181-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35181-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7eb34-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7eb34-109">Permission type</span></span>|<span data-ttu-id="7eb34-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="7eb34-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="35181-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="35181-109">Permission type</span></span>|<span data-ttu-id="35181-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="35181-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7eb34-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7eb34-111">Delegated (work or school account)</span></span>|<span data-ttu-id="7eb34-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="7eb34-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="7eb34-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7eb34-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7eb34-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7eb34-114">Not supported.</span></span>|
-|<span data-ttu-id="7eb34-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7eb34-115">Application</span></span>|<span data-ttu-id="7eb34-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7eb34-116">Not supported.</span></span>|
+|<span data-ttu-id="35181-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="35181-111">Delegated (work or school account)</span></span>|<span data-ttu-id="35181-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="35181-112">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="35181-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="35181-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="35181-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="35181-114">Not supported.</span></span>|
+|<span data-ttu-id="35181-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="35181-115">Application</span></span>|<span data-ttu-id="35181-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="35181-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7eb34-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7eb34-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="35181-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="35181-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,29 +35,29 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}
 GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/roleDefinition
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7eb34-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7eb34-118">Optional query parameters</span></span>
-<span data-ttu-id="7eb34-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7eb34-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="7eb34-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7eb34-120">Request headers</span></span>
-|<span data-ttu-id="7eb34-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7eb34-121">Header</span></span>|<span data-ttu-id="7eb34-122">Valor</span><span class="sxs-lookup"><span data-stu-id="7eb34-122">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="35181-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="35181-118">Optional query parameters</span></span>
+<span data-ttu-id="35181-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="35181-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="35181-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="35181-120">Request headers</span></span>
+|<span data-ttu-id="35181-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="35181-121">Header</span></span>|<span data-ttu-id="35181-122">Valor</span><span class="sxs-lookup"><span data-stu-id="35181-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7eb34-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="7eb34-123">Authorization</span></span>|<span data-ttu-id="7eb34-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7eb34-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7eb34-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="7eb34-125">Accept</span></span>|<span data-ttu-id="7eb34-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7eb34-126">application/json</span></span>|
+|<span data-ttu-id="35181-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="35181-123">Authorization</span></span>|<span data-ttu-id="35181-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="35181-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="35181-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="35181-125">Accept</span></span>|<span data-ttu-id="35181-126">application/json</span><span class="sxs-lookup"><span data-stu-id="35181-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7eb34-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7eb34-127">Request body</span></span>
-<span data-ttu-id="7eb34-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7eb34-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="35181-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="35181-127">Request body</span></span>
+<span data-ttu-id="35181-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="35181-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7eb34-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="7eb34-129">Response</span></span>
-<span data-ttu-id="7eb34-130">Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [roleDefinition](../resources/intune-rbac-roledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7eb34-130">If successful, this method returns a `200 OK` response code and [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="35181-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="35181-129">Response</span></span>
+<span data-ttu-id="35181-130">Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [roleDefinition](../resources/intune-rbac-roledefinition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="35181-130">If successful, this method returns a `200 OK` response code and [roleDefinition](../resources/intune-rbac-roledefinition.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7eb34-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7eb34-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="7eb34-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7eb34-132">Request</span></span>
-<span data-ttu-id="7eb34-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7eb34-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="35181-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="35181-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="35181-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="35181-132">Request</span></span>
+<span data-ttu-id="35181-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="35181-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDefinitionId}
 ```
 
-### <a name="response"></a><span data-ttu-id="7eb34-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="7eb34-134">Response</span></span>
-<span data-ttu-id="7eb34-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7eb34-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="35181-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="35181-134">Response</span></span>
+<span data-ttu-id="35181-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="35181-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
