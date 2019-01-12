@@ -1,13 +1,15 @@
 ---
 title: Criar páginas do OneNote
 description: " Blocos de anotações empresariais no Office 365"
-author: Jewan-microsoft
-ms.openlocfilehash: 68ae0fa13e70e53b184b3bf8eb9e6f93ea9ab82f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Priority
+ms.prod: onenote
+ms.openlocfilehash: ce2da5df9dddc54f2257ee9dd110c4f6460bd03d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27321101"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949616"
 ---
 # <a name="create-onenote-pages"></a>Criar páginas do OneNote
 

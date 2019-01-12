@@ -3,12 +3,13 @@ title: Atualizar defaultDeviceCompliancePolicy
 description: Atualize as propriedades de um objeto defaultDeviceCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a6bad561bc82777c594191a34eb6dec8b3a3e3ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dae2317d87063c82739a50a15d53b59ca6adac37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949462"
 ---
 # <a name="update-defaultdevicecompliancepolicy"></a>Atualizar defaultDeviceCompliancePolicy
 

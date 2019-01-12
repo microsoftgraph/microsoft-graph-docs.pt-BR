@@ -3,12 +3,13 @@ title: Tipo de recurso iosDeviceFeaturesConfiguration
 description: Perfil de configuração de recursos do dispositivo iOS.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3ffb4604e0902deb2d1a7f8f3630426aab39a3ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 062c1a264b3fcf9c3b49f9de35ee505e0823cc2c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841451"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949889"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>Tipo de recurso iosDeviceFeaturesConfiguration
 

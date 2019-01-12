@@ -2,12 +2,14 @@
 title: tipo de recurso de teamFunSettings
 description: Configurações para configurar o uso de Giphy, memes e adesivos na equipe de.
 localization_priority: Normal
-ms.openlocfilehash: c53d3215e5f515361c66fe2d3d0ad10a5338e0c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: b4c30afb6d0c10e8f011b779cf257a1627ff7b48
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852063"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949777"
 ---
 # <a name="teamfunsettings-resource-type"></a>tipo de recurso de teamFunSettings
 

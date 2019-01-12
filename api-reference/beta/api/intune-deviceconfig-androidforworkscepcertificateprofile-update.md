@@ -3,12 +3,13 @@ title: Atualizar androidForWorkScepCertificateProfile
 description: Atualize as propriedades de um objeto androidForWorkScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a0cb546566584408d2428c05a3d5326aaebda67f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e034b7c4dde6a6dbbfc1de41a2d5ea25c7d8f49f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946718"
 ---
 # <a name="update-androidforworkscepcertificateprofile"></a>Atualizar androidForWorkScepCertificateProfile
 

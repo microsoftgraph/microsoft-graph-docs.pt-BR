@@ -3,12 +3,13 @@ title: tipo de enum windowsSModeConfiguration
 description: As possíveis opções para configurar o modo S desbloquear
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e37bd51be1b5476e8b4590b92b3caeeed92ac45
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28106a073a6bb213fe17e80193cb32d1e6b3b9ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830734"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947376"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>tipo de enum windowsSModeConfiguration
 

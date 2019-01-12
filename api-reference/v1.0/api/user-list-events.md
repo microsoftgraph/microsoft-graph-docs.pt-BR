@@ -2,12 +2,14 @@
 title: Listar eventos
 description: 'Obtenha uma lista de objetos de evento na caixa de correio do usuário. A lista contém único '
 localization_priority: Priority
-ms.openlocfilehash: a4766528e8a8e9ee71075377bccc5dfbeaaa4c06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: b5e23391c434e2ace5a567bb23efe5539ad7aee5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852035"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946305"
 ---
 # <a name="list-events"></a>Listar eventos
 

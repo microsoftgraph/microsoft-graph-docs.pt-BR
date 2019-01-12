@@ -3,12 +3,13 @@ title: Tipo de recurso windowsUniversalAppX
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Windows Universal AppX.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 025560143081e1bb8f520aa89e281f4d00955d31
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 57841eed17fbd96cd8214e066ddd47dfde4c8699
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866294"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949595"
 ---
 # <a name="windowsuniversalappx-resource-type"></a>Tipo de recurso windowsUniversalAppX
 

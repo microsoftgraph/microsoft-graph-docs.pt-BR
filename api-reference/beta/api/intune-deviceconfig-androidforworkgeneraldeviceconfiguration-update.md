@@ -3,12 +3,13 @@ title: Atualizar androidForWorkGeneralDeviceConfiguration
 description: Atualize as propriedades de um objeto androidForWorkGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9f678a722071c233c2f58016cfa548837d551e37
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8ce1ed2f1214983433ab3b4ae588a7db98130535
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853196"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948664"
 ---
 # <a name="update-androidforworkgeneraldeviceconfiguration"></a>Atualizar androidForWorkGeneralDeviceConfiguration
 

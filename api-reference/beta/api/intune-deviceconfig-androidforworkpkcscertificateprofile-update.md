@@ -3,12 +3,13 @@ title: Atualizar androidForWorkPkcsCertificateProfile
 description: Atualize as propriedades de um objeto androidForWorkPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 28f2b67f858b95b934c8578f34565e20a4d79d59
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5056ec1e4cc3efe39334fa7e08b8744d6c5ecce2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887168"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948418"
 ---
 # <a name="update-androidforworkpkcscertificateprofile"></a>Atualizar androidForWorkPkcsCertificateProfile
 

@@ -1,12 +1,14 @@
 ---
 title: 'Usar a API de notificações do Microsoft Graph para habilitar experiências de notificação centradas em humanos '
 description: 'As notificações são a maneira mais eficaz de voltar a envolver os usuários. Eles podem chamam a atenção de seus usuários e trazê-los de volta para o aplicativo. Em um mundo de vários dispositivos, seus usuários podem acessar seus aplicativos e serviços em qualquer lugar e em diferentes plataformas e dispositivos nos quais os aplicativos estão presentes. '
-ms.openlocfilehash: 7ff36d7e0d406cb7918e2999812e3c756ae3b5bc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: e3ccdd3cc7274042ae5b2531874cb6b8e2612fd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091590"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947117"
 ---
 # <a name="using-the-notifications-api-in-microsoft-graph-to-enable-human-centric-notification-experiences"></a>Usar a API de notificações do Microsoft Graph para habilitar experiências de notificação centradas em humanos 
 

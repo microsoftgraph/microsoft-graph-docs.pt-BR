@@ -2,12 +2,14 @@
 title: tipo de recurso de androidEasEmailProfileConfiguration
 description: Fornecendo configurações neste perfil, você poderá instruir o cliente de email nativos em dispositivos KNOX para se comunicar com um servidor Exchange e obter email, calendário, contatos, tarefas e anotações. Além disso, você também pode especificar o quanto email para sincronização e com que frequência o dispositivo deve sincronizar.
 localization_priority: Normal
-ms.openlocfilehash: e1170db88d7794a301f29b3c385ce77af0738f05
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: ea2ea73f79e8a749463691ddda57b0cc0bca9f9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947524"
 ---
 # <a name="androideasemailprofileconfiguration-resource-type"></a>tipo de recurso de androidEasEmailProfileConfiguration
 

@@ -3,12 +3,13 @@ title: Tipo de recurso omaSettingString
 description: Definição de cadeia de caracteres para configurações de OMA.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 78dfbeaf89e25903efcacf65346c7dda70e53803
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ce33092b2ed011b6f3d7460ab988fbb195a1bd5a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874659"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946602"
 ---
 # <a name="omasettingstring-resource-type"></a>Tipo de recurso omaSettingString
 

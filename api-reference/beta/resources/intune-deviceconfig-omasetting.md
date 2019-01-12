@@ -3,12 +3,13 @@ title: Tipo de recurso omaSetting
 description: Configurações de OMA.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9abc7db7b6d2ad16aa13886905c348e6c8f01b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e6cb37078eb6c5b4aee00a9ac7bfc77061ec0bcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826471"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946592"
 ---
 # <a name="omasetting-resource-type"></a>Tipo de recurso omaSetting
 

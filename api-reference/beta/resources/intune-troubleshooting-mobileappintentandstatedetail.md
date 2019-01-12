@@ -3,12 +3,13 @@ title: tipo de recurso de mobileAppIntentAndStateDetail
 description: A intenção de App Mobile e o estado de instalação para um determinado dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ad20ef00cbc8e5295a96107fbce2f5e7f1cb978a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 169988d8a3a114bbae7a06583565c9abd3414b4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805807"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946683"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>tipo de recurso de mobileAppIntentAndStateDetail
 

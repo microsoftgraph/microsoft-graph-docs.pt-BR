@@ -3,12 +3,13 @@ title: Atualizar windowsPhone81AppXBundle
 description: Atualize as propriedades de um objeto windowsPhone81AppXBundle.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 14f221eae60a64629eea3fd5e9a2246a36e76ae3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2902e95fc8b92a33f2b7e9597e8d96123e8eaef3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808593"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949091"
 ---
 # <a name="update-windowsphone81appxbundle"></a>Atualizar windowsPhone81AppXBundle
 

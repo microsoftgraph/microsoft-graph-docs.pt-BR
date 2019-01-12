@@ -3,12 +3,13 @@ title: Obter androidScepCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto androidScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d5eb50b9ad55b2756b88989067ef45ff5528466f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a926945f6eb7a05b45822a40e4f4702653d53c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813010"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948307"
 ---
 # <a name="get-androidscepcertificateprofile"></a>Obter androidScepCertificateProfile
 

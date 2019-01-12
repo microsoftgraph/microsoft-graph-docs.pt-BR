@@ -1,12 +1,15 @@
 ---
 title: Exibir uma imagem de gráfico do Excel com o Microsoft Graph
 description: Ao executar uma operação GET para recuperar uma imagem de gráfico, a API do Excel retorna a imagem como uma cadeia de caracteres de Base 64.
-ms.openlocfilehash: ae721547fca9a6fe835843544bf550c5fe222426
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 5cdf5522ccd0a72798ee62211e9221cf2ea9cd53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946368"
 ---
 # <a name="display-a-chart-image-in-excel-with-microsoft-graph"></a>Exibir uma imagem de gráfico do Excel com o Microsoft Graph
 

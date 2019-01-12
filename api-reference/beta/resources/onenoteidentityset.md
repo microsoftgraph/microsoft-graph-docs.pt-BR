@@ -2,12 +2,14 @@
 title: tipo de recurso de oneNoteIdentitySet
 description: '**Suporte em breve**'
 localization_priority: Normal
-ms.openlocfilehash: d2969d073503a9fd586641abeb3d82f719db8545
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 9043b08a8586bcc9a0043a2fde13f0d5d9eea4a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874082"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947166"
 ---
 # <a name="onenoteidentityset-resource-type"></a>tipo de recurso de oneNoteIdentitySet
 
