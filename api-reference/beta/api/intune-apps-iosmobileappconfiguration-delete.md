@@ -3,12 +3,13 @@ title: Excluir iosMobileAppConfiguration
 description: Exclui um iosMobileAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60c94926eec662ec4ed5e9e800de1f19973bccfb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 50f61eed8d5163c5557c488fd1f08a46d083a524
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875254"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979030"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Excluir iosMobileAppConfiguration
 

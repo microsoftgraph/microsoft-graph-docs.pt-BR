@@ -2,12 +2,14 @@
 title: 'group: subscribeByMail'
 description: Chamar esse método permitirá que o usuário atual receber notificações de email para esse grupo, sobre novas postagens, eventos e arquivos nesse grupo. Suporte para Office 365 apenas para grupos.
 localization_priority: Normal
-ms.openlocfilehash: 5cbb5d461f5e3cc71790f6546c6ebf638ffa31d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: da277a586a793c07067f793088b15d4570efbf1c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813164"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984672"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 
@@ -15,7 +17,7 @@ ms.locfileid: "27813164"
 
 Chamar esse método permitirá que o usuário atual receber notificações de email para esse grupo, sobre novas postagens, eventos e arquivos nesse grupo. Suporte para Office 365 apenas para grupos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

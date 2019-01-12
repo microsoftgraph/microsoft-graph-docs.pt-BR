@@ -2,12 +2,14 @@
 title: tipo de recurso de plannerRecentPlanReferenceCollection
 description: O recurso de **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram visualizados recentemente por um usuário. Este recurso é um tipo aberto e parte do objeto plannerUser. O nome da propriedade é a ID do plano correspondente. O valor do par de valor da propriedade é o objeto plannerRecentPlanReference.
 localization_priority: Normal
-ms.openlocfilehash: e77769cbe3a7e53dce518c73cd7c5228d1077dac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 84eaedb2f37aefae32b5efac1e5a4a5dfb38e0d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877340"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980759"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>tipo de recurso de plannerRecentPlanReferenceCollection
 

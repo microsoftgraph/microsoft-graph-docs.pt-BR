@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
 localization_priority: Priority
-ms.openlocfilehash: edf47b1ab6ecd910a5ad2dbc2e87454963a12555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 727877f0fde95586f8223557aa1b841507b91c02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815985"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987843"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 

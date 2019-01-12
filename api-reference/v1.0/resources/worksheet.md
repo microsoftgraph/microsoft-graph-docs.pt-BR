@@ -2,12 +2,14 @@
 title: Tipo de recurso Worksheet
 description: Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, gráficos, etc.
 localization_priority: Priority
-ms.openlocfilehash: 50d531aee3ed242f30be2c225ae9cd38bd6c6e89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 60e31738329943d96e1a4f3ea8293851e759eaff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884809"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983867"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 

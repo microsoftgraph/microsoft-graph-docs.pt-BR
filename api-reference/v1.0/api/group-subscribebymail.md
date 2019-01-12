@@ -2,12 +2,14 @@
 title: 'group: subscribeByMail'
 description: Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 4127ae68caba0295426f81dc1c0c537ee2fb96b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 20d34ba100ee795077e59c8a98d15d5e45b29dff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837979"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986464"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 Chamar esse método permitirá que o usuário atual receba notificações por email para este grupo, sobre novas postagens, eventos e arquivos do grupo. Suporte apenas para grupos do Office 365.

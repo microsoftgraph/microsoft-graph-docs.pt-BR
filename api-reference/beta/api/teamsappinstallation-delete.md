@@ -3,12 +3,13 @@ title: Excluir o aplicativo da equipe
 description: Desinstala um aplicativo da equipe do especificado.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: b0d1c7d8344218d6eba4165e94b09158d60846ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 55e5b1a87c010a0e9a36353d8da82a8433dd3ebd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852490"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983573"
 ---
 # <a name="delete-app-from-team"></a>Excluir o aplicativo da equipe
 
@@ -16,7 +17,7 @@ ms.locfileid: "27852490"
 
 Desinstala um [aplicativo](../resources/teamsappinstallation.md) da [equipe](../resources/team.md)especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

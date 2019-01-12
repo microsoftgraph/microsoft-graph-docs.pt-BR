@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Criar uma nova pasta
 localization_priority: Normal
-ms.openlocfilehash: 113c9adaa54979fb4c80b23fd2c4cd4c69f8d09a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 0bdd5f76303d5097af3edd1fd9e2a8469d4a47a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984616"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
 

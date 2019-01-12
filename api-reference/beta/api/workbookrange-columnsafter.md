@@ -3,12 +3,13 @@ title: 'workbookRange: columnsAfter'
 description: Obtém um determinado número de colunas à direita do intervalo especificado.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 9bdab549d3dc2511e17df1f838ce5ca146b0485a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 7b5a7625f6caa7bddbb21e23e670508e989f974a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890864"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982334"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 

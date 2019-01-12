@@ -3,12 +3,13 @@ title: 'usuário: findRoomLists'
 description: Obtenha as listas de salas definidas em um locatário.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855731"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979289"
 ---
 # <a name="user-findroomlists"></a>usuário: findRoomLists
 
@@ -20,7 +21,7 @@ Inquilinos podem organizar as salas de reunião em listas de salas. Cada sala de
 Você pode obter todas as listas de sala no locatário, [fazer todas as salas](user-findrooms.md) no locatário ou [fazer todas as salas](user-findrooms.md) em uma lista de sala específico.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

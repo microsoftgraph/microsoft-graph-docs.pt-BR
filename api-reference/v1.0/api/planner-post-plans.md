@@ -2,12 +2,14 @@
 title: Criar plannerPlan
 description: Use essa API para criar um novo **plannerPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 4a896ab44e0e66ae81f3cfa43ac73ecbc5209acc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d03cab3aafb264ef6768e2c79a3787a2b6e3c134
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871663"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991276"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
 

@@ -2,12 +2,14 @@
 title: 'evento: encaminhar'
 description: 'Essa ação permite que o organizador ou o participante de um evento de reunião para encaminhar o '
 author: angelgolfer-ms
-ms.openlocfilehash: 77f2c99b1adc7fcece353120e4692b37fd65a78f
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: fe8d108ebeb15c2684e1997b8a02cc28a99101b1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27355990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990667"
 ---
 # <a name="event-forward"></a>evento: encaminhar
 
@@ -56,7 +58,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
-| Parâmetro    | Type   |Descrição|
+| Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Comentário|String|Um comentário a incluir. Não pode ficar vazio.|
 |ToRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários para os quais o evento será encaminhado.|

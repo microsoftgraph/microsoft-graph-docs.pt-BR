@@ -3,12 +3,13 @@ title: Atualizar managedAppOperation
 description: Atualizar as propriedades de um objeto managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d4ddc127c6d35a44f10e6ad9ff6f1fef82462392
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d0baf0b503edcde0bdc03329ec354a4d6e42a4c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980129"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
 
@@ -49,8 +50,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
 |estado|Cadeia de caracteres|O estado atual da operação|
-|id|Cadeia de caracteres|Chave da entidade.|
-|version|Cadeia de caracteres|Versão da entidade.|
+|id|String|Chave da entidade.|
+|version|String|Versão da entidade.|
 
 
 

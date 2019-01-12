@@ -2,19 +2,21 @@
 title: Atualizar bookingbusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3f20d466614e35cce701999fabfb631e081a02ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824994"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991332"
 ---
 # <a name="update-bookingbusiness"></a>Atualizar bookingbusiness
 
  > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
  
 Atualize as propriedades de um objeto [bookingBusiness](../resources/bookingbusiness.md) .
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -40,13 +42,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|O endereço da empresa.|
 |businessHours|coleção [bookingWorkHours](../resources/bookingworkhours.md)|Os horários de operação para a empresa.|
-|businessType|Cadeia de caracteres|O tipo de negócio.|
-|defaultCurrencyIso|Cadeia de caracteres|O código para a moeda que a empresa opera em Microsoft Bookings.|
-|displayName|Cadeia de caracteres|Um nome para a empresa que interage com os clientes.|
-|email|Cadeia de caracteres|O endereço de email para a empresa.|
+|businessType|String|O tipo de negócio.|
+|defaultCurrencyIso|String|O código para a moeda que a empresa opera em Microsoft Bookings.|
+|displayName|String|Um nome para a empresa que interage com os clientes.|
+|email|String|O endereço de email para a empresa.|
 |phone|Cadeia de caracteres|O número de telefone para a empresa.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Especifica como reservas podem ser criadas para esta empresa.|
-|webSiteUrl|Cadeia de caracteres|A URL do site da web de negócios.|
+|webSiteUrl|String|A URL do site da web de negócios.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204, No Content`. Não retorna nada no corpo da resposta.

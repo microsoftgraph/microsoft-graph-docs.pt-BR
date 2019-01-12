@@ -2,12 +2,14 @@
 title: tipo de enum managedAppPinCharacterSet
 description: Conjunto de caracteres que será usado para o aplicativo de um usuário PIN
 localization_priority: Normal
-ms.openlocfilehash: dce3d39869a4d41ee88866a1d7c8da0af425849a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: d2d46e030224d21c8d0876a9f940d85e94a88591
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978365"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>tipo de enum managedAppPinCharacterSet
 

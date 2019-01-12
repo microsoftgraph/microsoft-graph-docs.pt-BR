@@ -2,12 +2,13 @@
 title: Relatórios de atividades do participante do Skype for Business
 description: Você pode usar os relatórios de atividade do participante do Skype for Business para obter dados sobre as atividades em conferências em toda a organização. Esses dados são muito úteis quando você está investigando, planejando e tomando outras decisões comerciais para sua organização.
 localization_priority: Normal
-ms.openlocfilehash: 05e0ffb222696f66e9c1a4fce49c01076805d893
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 415dc3c660156981eca712b8549dc2052149847c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847828"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987759"
 ---
 # <a name="skype-for-business-participant-activity-reports"></a>Relatórios de atividades do participante do Skype for Business
 

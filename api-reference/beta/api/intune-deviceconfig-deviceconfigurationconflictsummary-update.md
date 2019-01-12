@@ -3,12 +3,13 @@ title: Atualizar deviceConfigurationConflictSummary
 description: Atualize as propriedades de um objeto deviceConfigurationConflictSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4fb01b5fe7321d25e6b1d7e346a029e830375247
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2f9bc6beef2fac86f0be79189db3bcf91f787237
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812758"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978302"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Atualizar deviceConfigurationConflictSummary
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de diretivas em conflito com a configuração de determinado|
-|id|Cadeia de caracteres|A identificação para este conjunto de diretivas conflitantes. Este id é as identificações de todas as políticas do ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
+|id|String|A identificação para este conjunto de diretivas conflitantes. Este id é as identificações de todas as políticas do ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
 |contributingSettings|String collection|O conjunto de configurações em conflito com as políticas de determinado|
 |deviceCheckinsImpacted|Int32|A contagem de check-ins afetados pelas configurações e diretivas conflitantes|
 

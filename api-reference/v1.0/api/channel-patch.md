@@ -3,12 +3,13 @@ title: Canal do patch
 description: Atualize as propriedades do canal especificado.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 73d777999d6112de44cffc6fb8e9a4cd36ee093c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4c3a03aaab52da62f56ca376035e56a9b8584832
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832829"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984336"
 ---
 # <a name="patch-channel"></a>Canal do patch
 
@@ -18,7 +19,7 @@ Atualize as propriedades do [canal](../resources/channel.md)especificado.
 
 > **Observação**: não há um problema conhecido com permissões de aplicativo e essa API. Para obter detalhes, consulte a [lista de problemas conhecidos do](/graph/known-issues#application-permissions).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

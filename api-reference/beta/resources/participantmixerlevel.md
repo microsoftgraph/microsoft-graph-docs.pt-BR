@@ -3,12 +3,13 @@ title: tipo de recurso de participantMixerLevel
 description: Configuração do mixer níveis para determinados participante de áudio
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 8a7b77c07240fbb5face70eb8ea21be55b85f1fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9bf0788b1f7822311882cfa2133083d81deff16b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977781"
 ---
 # <a name="participantmixerlevel-resource-type"></a>tipo de recurso de participantMixerLevel
 
@@ -22,7 +23,7 @@ Configuração do mixer níveis para determinados participante de áudio
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | desviando                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuração do desviando (Introdução gradual e sair) de outras fontes para este partipant mistura personalizada.       |
 | exclusiveMode          | booliano                                                   | Se fontes sem nível de origem explícitas devem ser removidas da combinação.                       |
-| participante            | Cadeia de caracteres                                                    | O participante para quem o mixer está sendo configurado.                                             |
+| participante            | String                                                    | O participante para quem o mixer está sendo configurado.                                             |
 | sourceLevels           | coleção [audioSourceLevel](audiosourcelevel.md)        | Configuração de nível de outras fontes.                                                              |
 
 ## <a name="json-representation"></a>Representação JSON

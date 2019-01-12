@@ -2,12 +2,13 @@
 title: 'driveItem: visualização'
 description: Essa ação permite que você obtenha URLs incorporáveis temporários e para um item para processar uma visualização temporária.
 localization_priority: Normal
-ms.openlocfilehash: 4487e18ed1921f4164c335ba477e0ae5b74e456a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833170"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980871"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -21,7 +22,7 @@ Se você quiser obter links incorporável vida útil longa, use o [createLink][]
 
 [createLink]: driveitem-createlink.md
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

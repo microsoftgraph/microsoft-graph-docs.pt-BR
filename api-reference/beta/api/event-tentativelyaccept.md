@@ -3,12 +3,13 @@ title: 'event: tentativelyAccept'
 description: Aceite provisoriamente o evento específico em um calendário do usuário.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: cfa285659695bf17bfc7e3eea05343714951d761
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d947e5feaa6a420087cb4acf285fb196ca834eb0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833751"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980591"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -16,7 +17,7 @@ ms.locfileid: "27833751"
 
 Aceite provisoriamente o [evento](../resources/event.md) específico em um [calendário](../resources/calendar.md)do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -54,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Texto incluído na resposta. Opcional.|
+|comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta

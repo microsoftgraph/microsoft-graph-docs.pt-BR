@@ -3,12 +3,13 @@ title: Tipo de recurso calendarGroup
 description: Um grupo de calendários do usuário.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4d141b63b840daa7730d17f9dcfc2e527c1ed66b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 10a840fd9ae9835eb5ca6a96b88719605f89245b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810322"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985288"
 ---
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
 
@@ -33,9 +34,9 @@ Um grupo de calendários do usuário.
 | Propriedade  | Tipo   | Descrição                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name      | Cadeia de caracteres | O nome do grupo.                                                                                                                                                                                           |
-| changeKey | Cadeia de caracteres | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
+| changeKey | String | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
 | classId   | Guid   | O identificador de classe. Somente leitura.                                                                                                                                                                          |
-| id        | Cadeia de caracteres | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
+| id        | String | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Relações
 

@@ -3,12 +3,13 @@ title: Tipo de recurso omaSettingBoolean
 description: Definição booliana para configurações de OMA.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 46bca1f6052dae3f4699b88258abce4b346c67bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0b3f2d04c9476cc10a67c1e68ba9a29288e8875
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986632"
 ---
 # <a name="omasettingboolean-resource-type"></a>Tipo de recurso omaSettingBoolean
 

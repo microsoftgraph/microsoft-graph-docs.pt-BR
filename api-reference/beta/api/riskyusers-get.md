@@ -2,12 +2,14 @@
 title: Obter riskyUsers
 description: Recupere as propriedades e relacionamentos de um objeto **riskyUsers** .
 localization_priority: Normal
-ms.openlocfilehash: da26be10b5a1aa631bd55f977ead806ed89c1406
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: cloudhandler
+ms.prod: security
+ms.openlocfilehash: cde236c0b4328e39f91c7a023f1fa8dbf95fcff7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891123"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977771"
 ---
 # <a name="get-riskyusers"></a>Obter riskyUsers
 
@@ -17,7 +19,7 @@ Recupere as propriedades e relacionamentos de um objeto **riskyUsers** .
 
 > **Observação:** Esta API requer uma licença de P2 Premium do Windows Azure AD.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

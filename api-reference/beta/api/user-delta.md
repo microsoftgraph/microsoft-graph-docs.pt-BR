@@ -2,12 +2,14 @@
 title: 'user: delta'
 description: Get recentemente criado, atualizado ou excluído usuários sem precisar realizar uma leitura completa do conjunto de usuários inteira. Consulte controlar alterações para obter detalhes.
 localization_priority: Normal
-ms.openlocfilehash: 2aaee8a5722c22ad8fc381f0a4b1d577461b3991
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f63a426c97aaf695447de9075b91fb2c534309db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856193"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984630"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -15,7 +17,7 @@ ms.locfileid: "27856193"
 
 Get recentemente criado, atualizado ou excluído usuários sem precisar realizar uma leitura completa do conjunto de usuários inteira. Consulte [controlar alterações](/graph/delta-query-overview) para obter detalhes.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

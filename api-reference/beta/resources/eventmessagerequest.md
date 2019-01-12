@@ -3,12 +3,13 @@ title: tipo de recurso de eventMessageRequest
 description: Uma mensagem que representa uma solicitação de reunião.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 6a4af3bef767213c977dde1195c89d1de02a0cf8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5350b864ee38774f5b329110de6caf41f23dfe37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981095"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso de eventMessageRequest
 
@@ -89,7 +90,7 @@ Veja a seguir uma representação JSON do recurso
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
 |hasAttachments|Boolean|Indica se a mensagem tem anexos.|
-|id|Cadeia de caracteres|Somente leitura.|
+|id|String|Somente leitura.|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Os valores possíveis são: `Focused` e `Other`.|
 |isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
@@ -112,7 +113,7 @@ Veja a seguir uma representação JSON do recurso
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de início da reunião solicitada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|Cadeia de caracteres|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|String|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 

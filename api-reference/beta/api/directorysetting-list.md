@@ -3,12 +3,13 @@ title: Configurações do diretório de lista
 description: Recupere uma lista de objetos de configuração do diretório.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 73756c81f19643fedcec0faa5f43125a7c389b35
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 651d8588c416d25dd20ac07a36ac3ca30f1b334e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833401"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985267"
 ---
 # <a name="list-directory-settings"></a>Configurações do diretório de lista
 
@@ -18,7 +19,7 @@ Recupere uma lista de objetos de configuração do diretório.
 
 > **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *groupSettings de lista*.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

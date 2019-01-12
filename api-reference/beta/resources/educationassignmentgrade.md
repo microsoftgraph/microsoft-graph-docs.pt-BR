@@ -2,12 +2,14 @@
 title: tipo de recurso de educationAssignmentGrade
 description: " No entanto, todos os tipos de classificação (pontos, aprovação/reprovação e assim por diante) são subclasses isso"
 localization_priority: Normal
-ms.openlocfilehash: 371346c6ff23623a118b9ee169e563e75e2429f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: ecdd92c84399ee17d2808301d997830725fb5642
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889009"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982355"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>tipo de recurso de educationAssignmentGrade
 

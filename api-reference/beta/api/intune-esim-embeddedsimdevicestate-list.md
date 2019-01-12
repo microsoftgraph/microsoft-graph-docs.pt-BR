@@ -3,12 +3,13 @@ title: Lista embeddedSIMDeviceStates
 description: Lista as propriedades e os relacionamentos dos objetos embeddedSIMDeviceState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c0838d4344ed69e1d6d98b7a1a52a7f10e5d416b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1dd0a89ee2db77ca23580090eb13d111ea5a670
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846939"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979555"
 ---
 # <a name="list-embeddedsimdevicestates"></a>Lista embeddedSIMDeviceStates
 

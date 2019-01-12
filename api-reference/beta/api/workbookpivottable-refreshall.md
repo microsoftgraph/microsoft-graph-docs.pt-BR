@@ -3,12 +3,13 @@ title: 'workbookPivotTable: refreshAll'
 description: Atualiza a tabela dinâmica dentro de uma determinada planilha.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: cd70ed9a0f0681ac8b1f90d2839e85a419762653
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6edad0def37d67dddb6258814c6d4a4004a93366
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822299"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982236"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 

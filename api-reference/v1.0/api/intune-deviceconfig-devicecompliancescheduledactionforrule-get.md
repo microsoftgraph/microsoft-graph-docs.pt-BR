@@ -3,12 +3,13 @@ title: Get deviceComplianceScheduledActionForRule
 description: Ler propriedades e relações do objeto deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b5c8bc8dc0e0f6fc7d1ec377de478d410fb8bcfc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2485d68200d1d9e08681a62cc0b366a19df11954
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888501"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983916"
 ---
 # <a name="get-devicecompliancescheduledactionforrule"></a>Get deviceComplianceScheduledActionForRule
 

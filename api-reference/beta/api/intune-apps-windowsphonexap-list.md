@@ -3,12 +3,13 @@ title: Lista windowsPhoneXAPs
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhoneXAP.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f2e683ea10bbea78f5364b21168b8e99cee9a4ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7fbfe4c8cb5e19017d7f15c4c0121511a7523d99
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875107"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985211"
 ---
 # <a name="list-windowsphonexaps"></a>Lista windowsPhoneXAPs
 

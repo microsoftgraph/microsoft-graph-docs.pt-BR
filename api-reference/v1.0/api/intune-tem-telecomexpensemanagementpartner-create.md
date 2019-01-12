@@ -3,12 +3,13 @@ title: Criar telecomExpenseManagementPartner
 description: Cria um novo objeto telecomExpenseManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 95c562e8009f15911048ee5bac419f9e879af4c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ca3a94da0c908bec0af44075dcb15b6fa4f007a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845168"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984798"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Criar telecomExpenseManagementPartner
 

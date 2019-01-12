@@ -3,12 +3,13 @@ title: tipo de recurso de educationSubmissionRecipient
 description: Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade **submission.recipient** .
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 41a1630322e148471a00ddd1779d85e9b5d1845b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 6a2e5f601e6ea8689983144cc49104df433284bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891977"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982131"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>tipo de recurso de educationSubmissionRecipient
 

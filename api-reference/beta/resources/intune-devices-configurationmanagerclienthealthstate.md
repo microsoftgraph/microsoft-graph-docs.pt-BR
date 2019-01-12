@@ -3,12 +3,13 @@ title: tipo de recurso de configurationManagerClientHealthState
 description: Estado de integridade de cliente do Configuration manager
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9eedca9f3ab7ddf10ab73c62d986fed393dcfa48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d202b5f672977e8bb1a5fe05ba56937005825ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981739"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>tipo de recurso de configurationManagerClientHealthState
 

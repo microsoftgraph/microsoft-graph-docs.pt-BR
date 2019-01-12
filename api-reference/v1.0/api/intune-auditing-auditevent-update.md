@@ -3,12 +3,13 @@ title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 63da381029325977f7cdcf74b8de776c668e0656
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f50bf7d2d67bf8d4fdfa78eed446c16dc82aa2b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815712"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991028"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -46,7 +47,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome de exibição do evento.|
 |componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|

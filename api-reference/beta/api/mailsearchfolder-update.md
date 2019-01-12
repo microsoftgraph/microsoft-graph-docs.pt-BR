@@ -2,12 +2,14 @@
 title: Atualizar mailSearchFolder
 description: Atualize as propriedades graváveis do objeto mailSearchFolder.
 localization_priority: Normal
-ms.openlocfilehash: 843dbe4d4312fdeb3485b0eb9e441a76b761dd46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: cf76198a42365f376421a95f795d19ac3bab4f0c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867225"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985414"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -15,7 +17,7 @@ ms.locfileid: "27867225"
 
 Atualize as propriedades graváveis do objeto [mailSearchFolder](../resources/mailsearchfolder.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -42,10 +44,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| displayName | Cadeia de caracteres | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
+| displayName | String | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Booliano | Como a hierarquia de pastas de caixa de correio deve ser percorrida. `true`significa que uma profundidade de pesquisa deve ser feito ao `false` significa rasos de pesquisa devem ser feito em vez disso. |
 | sourceFolderIDs | String collection | As pastas de caixa de correio que devem ser extraídas. |
-| filterQuery | Cadeia de caracteres | A consulta OData para filtrar as mensagens. |
+| filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.

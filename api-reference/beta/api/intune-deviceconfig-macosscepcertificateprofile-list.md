@@ -3,12 +3,13 @@ title: Lista macOSScepCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos macOSScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 88b06c33ef87a3f918be3dfd95bd1f33f9d810a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a72c172852b57de2ad92b4f017006257886df2fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869402"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983034"
 ---
 # <a name="list-macosscepcertificateprofiles"></a>Lista macOSScepCertificateProfiles
 

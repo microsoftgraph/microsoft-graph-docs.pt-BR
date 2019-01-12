@@ -3,12 +3,13 @@ title: Obter ChartLineFormat
 description: Recupera as propriedades e os relacionamentos do objeto chartlineformat.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 45f45a079d24d65cf0c2224fd58233222ce472b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2fd3136bb03785021ce9e465dd4d3653f49c4d37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833359"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980661"
 ---
 # <a name="get-chartlineformat"></a>Obter ChartLineFormat
 

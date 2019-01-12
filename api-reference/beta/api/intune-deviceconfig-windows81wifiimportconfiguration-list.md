@@ -3,12 +3,13 @@ title: Lista windows81WifiImportConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windows81WifiImportConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7ee5c6c8ad2a4d686a7f9df8425f64b6f31a0b14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 98a700a8ba9936d02ae9e84de6aa9ea01367485f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882464"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982915"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Lista windows81WifiImportConfigurations
 

@@ -3,12 +3,13 @@ title: Excluir windows10NetworkBoundaryConfiguration
 description: Exclui um windows10NetworkBoundaryConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b2a555de7b3876d6cc9e79e3203ace6ee00e8b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 41440149a850993dd6047de2dd9b3fd97e3d780d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832218"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979058"
 ---
 # <a name="delete-windows10networkboundaryconfiguration"></a>Excluir windows10NetworkBoundaryConfiguration
 

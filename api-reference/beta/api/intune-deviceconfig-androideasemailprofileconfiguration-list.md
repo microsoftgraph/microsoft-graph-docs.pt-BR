@@ -3,12 +3,13 @@ title: Lista androidEasEmailProfileConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidEasEmailProfileConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3306c052f05eb05f84d0c250495a8af0e71a79bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b4ffc7f1158dbdb3c32aa65779a433b99a31d3b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863620"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978841"
 ---
 # <a name="list-androideasemailprofileconfigurations"></a>Lista androidEasEmailProfileConfigurations
 

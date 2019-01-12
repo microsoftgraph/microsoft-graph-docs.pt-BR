@@ -2,12 +2,14 @@
 title: 'outlookUser: supportedLanguages'
 description: Obtenha a lista de locais e idiomas com suporte para o usuário, conforme configurado no servidor de caixa de correio do usuário.
 localization_priority: Normal
-ms.openlocfilehash: 8d3a830a34d4b6d59bae1a601562ab6d70f7a39f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 0e72178d1575e9fcae3462ea8eb674fa63d97c36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868576"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979268"
 ---
 # <a name="outlookuser-supportedlanguages"></a>outlookUser: supportedLanguages
 

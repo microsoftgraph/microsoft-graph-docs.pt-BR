@@ -3,12 +3,13 @@ title: Lista windows81CertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos windows81CertificateProfileBase.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e18bfecb4936b03e4dda173500dd289416e0b2db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0aa7029e53e8bb2d10f5f2e397a59cb4c5fc7b76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982796"
 ---
 # <a name="list-windows81certificateprofilebases"></a>Lista windows81CertificateProfileBases
 

@@ -2,12 +2,14 @@
 title: tipo de recurso de educationAssignment
 description: O recurso de **educationAssignment** representa uma tarefa ou a unidade de trabalho atribuído a um estudante ou membro da equipe em uma classe como parte de sua estudo. Apenas professores ou proprietários de equipe podem criar atribuições. Atribuições contêm folhetos e que deseja que seja o professor student para trabalhar em tarefas. Cada atribuição de student tem um envio associado que contém qualquer trabalho que seu professor solicitado a ser ativado. Um professor pode adicionar comentários e pontuações para o envio ativado pelo aluno.
 localization_priority: Normal
-ms.openlocfilehash: d9d7b11dcd476f0fdd2bbb24364dd0e1e026f200
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982257"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso de educationAssignment
 
@@ -35,16 +37,16 @@ A atribuição de APIs são expostas no namespace.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Somente leitura.|
+|id|String| Somente leitura.|
 |allowLateSubmissions|Booliano| Identifica se alunos podem enviar após a data de vencimento. Se essa propriedade não for especificada durante a criação, padrão será true. |
 |allowStudentsToAddResourcesToSubmission|Booliano| Identifica se alunos podem adicionar seus próprios recursos para um envio ou se eles só podem modificar recursos adicionados com o professor. |
 |assignDateTime|DateTimeOffset|A data quando a atribuição deve se tornar ativa.  Se no futuro, a atribuição não será mostrada ao aluno até esta data.  O tipo de **carimbo de hora** representa as informações de data e hora usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classe todo deve receber um objeto de envio depois que a atribuição é publicada. |
 |assignedDateTime|DateTimeOffset|No momento em que a atribuição foi publicada para alunos e a atribuição é mostrada na linha do tempo de alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|classId|Cadeia de caracteres| Classe que essa atribuição pertence. |
+|classId|String| Classe que essa atribuição pertence. |
 |createdBy|[identitySet](identityset.md)| Quem criou a atribuição. |
 |createdDateTime|DateTimeOffset|Momento em que a atribuição foi criada.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|displayName|Cadeia de caracteres|Nome da atribuição.|
+|displayName|String|Nome da atribuição.|
 |dueDateTime|DateTimeOffset|Data quando a atribuição de alunos é vencimento.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |classificação|[educationAssignmentGradeType](educationassignmentgradetype.md)|Como a atribuição vai ser Graduada. |
 |instruções|[itemBody](itembody.md)| Instruções para a atribuição.  Isso também saberá o nome de exibição dizem student o que fazer. |

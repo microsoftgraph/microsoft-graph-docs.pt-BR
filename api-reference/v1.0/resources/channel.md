@@ -3,12 +3,13 @@ title: tipo de recurso de canal
 description: 'Um canal é uma coleção de mensagens dentro de uma equipe. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 9a7b12646f36152bef17cec2d206e8e84abdcbbe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: f513a0c8de51cdfb8ca692098cab403dd74d747a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826562"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986345"
 ---
 # <a name="channel-resource-type"></a>tipo de recurso de canal
 
@@ -30,9 +31,9 @@ Um canal é uma coleção de mensagens dentro de uma [equipe](../resources/team.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres|Descrição textual opcional para o canal.|
-|displayName|Cadeia de caracteres|Nome de canal como ele será exibido ao usuário no Microsoft Teams.|
-|id|Cadeia de caracteres|Identificador exclusivo dos canais. Somente leitura.|
+|description|String|Descrição textual opcional para o canal.|
+|displayName|String|Nome de canal como ele será exibido ao usuário no Microsoft Teams.|
+|id|String|Identificador exclusivo dos canais. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

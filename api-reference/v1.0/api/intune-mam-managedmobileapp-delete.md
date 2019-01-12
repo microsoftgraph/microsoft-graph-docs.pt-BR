@@ -3,12 +3,13 @@ title: Excluir managedMobileApp
 description: Exclui managedMobileApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9b8d0a353b5be45c3cd8c9af280eb71ae9b4a376
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1266cdc14efca5870606d148989009835d050e5a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877487"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981928"
 ---
 # <a name="delete-managedmobileapp"></a>Excluir managedMobileApp
 

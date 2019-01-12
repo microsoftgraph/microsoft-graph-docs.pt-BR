@@ -3,12 +3,13 @@ title: tipo de recurso de userActivationCounts
 description: Veja a seguir uma representação JSON do recurso.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: cae194545f13d312ee78b572659017752e43a6a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 535355d6be3f6b617d7eb293890aa05a517cfc3b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980346"
 ---
 # <a name="useractivationcounts-resource-type"></a>tipo de recurso de userActivationCounts
 
@@ -16,7 +17,7 @@ ms.locfileid: "27845287"
 
 | Propriedade          | Tipo   | Descrição                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | Cadeia de caracteres | O tipo de produto, como "Office 365 ProPlus", "Cliente do projeto," ou "Visio Pro para Office 365". |
+| productType       | String | O tipo de produto, como "Office 365 ProPlus", "Cliente do projeto," ou "Visio Pro para Office 365". |
 | lastActivatedDate | Data   | A data da ativação mais recente.       |
 | Windows           | Int64  | A contagem de ativação do Windows. Esse número inclui cada ativação em qualquer computador do Windows. |
 | mac               | Int64  | A contagem de ativação no Mac OS.          |

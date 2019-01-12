@@ -2,12 +2,14 @@
 title: 'outlookTask: completa'
 description: 'Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual, '
 localization_priority: Normal
-ms.openlocfilehash: 6a033624a1fafbc30b200550acc466f7fdb432d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 966f5c2a6d429169cff3bd6746ebb0bace34ad15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891914"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979632"
 ---
 # <a name="outlooktask-complete"></a>outlookTask: completa
 
@@ -21,7 +23,7 @@ A propriedade **completedDateTime** representa a data quando a tarefa é conclu�
 
 Por padrão, esta operação (e as operações de tarefa POST, GET e PATCH) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

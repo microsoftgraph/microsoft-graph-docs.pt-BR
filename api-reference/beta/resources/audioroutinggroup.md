@@ -3,12 +3,13 @@ title: tipo de recurso de audioRoutingGroup
 description: O grupo de roteamento áudio armazena uma rota de áudio privada entre os participantes em uma conversa com vários participantes. Fonte é o participante propriamente dito e os receptores são um subconjunto dos outros participantes da conversa com vários participantes.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860645"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980185"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso de audioRoutingGroup
 
@@ -30,9 +31,9 @@ O grupo de roteamento áudio armazena uma rota de áudio privada entre os partic
 
 | Propriedade      | Tipo              | Descrição                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | Cadeia de caracteres            | Somente leitura. Servidor foi gerado.                                         |
+| id            | String            | Somente leitura. Servidor foi gerado.                                         |
 | receptores     | Coleção de cadeia de caracteres | Lista de recebimento de ids de participante.                                   |
-| routingMode   | Cadeia de caracteres            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
+| routingMode   | String            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
 | sources       | Coleção de cadeia de caracteres | Lista de ids de participante de origem.                                      |
 
 > **Observação:** Modo de roteamento determina as restrições nas fontes e receptores. Há suporte para os seguintes grupos de roteamento.

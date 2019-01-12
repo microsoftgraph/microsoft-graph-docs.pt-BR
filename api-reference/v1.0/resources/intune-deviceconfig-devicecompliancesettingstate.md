@@ -3,12 +3,13 @@ title: Tipo de recurso deviceComplianceSettingState
 description: Estado de configuração de conformidade de um determinado dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf9c4ae52b4bf3ff98599cdf8d71efcd0c229b14
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8960352e88466177b99bc9cc9724da2da5d9b71d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811050"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990912"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 

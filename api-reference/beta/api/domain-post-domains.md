@@ -3,12 +3,13 @@ title: Criar domínio
 description: Adiciona um domínio ao inquilino.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 438b0c555b5e11708bf9390f8905fe9c51c04e7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8f21ab37cf9648224e087ad193437eaabcb0a666
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984756"
 ---
 # <a name="create-domain"></a>Criar domínio
 

@@ -3,12 +3,13 @@ title: tipo de recurso de roleScopeTag
 description: Marca de escopo de função
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a48f74b9ecdb7a5f6eec87581fb0826160c4334b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 609d4202069f6e4258c9824a65b72ab769c365b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981851"
 ---
 # <a name="rolescopetag-resource-type"></a>tipo de recurso de roleScopeTag
 
@@ -29,9 +30,9 @@ Marca de escopo de função
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|Cadeia de caracteres|A exibição ou o nome amigável da marca de escopo de função.|
-|description|Cadeia de caracteres|Descrição da marca de escopo de função.|
+|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|displayName|String|A exibição ou o nome amigável da marca de escopo de função.|
+|description|String|Descrição da marca de escopo de função.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

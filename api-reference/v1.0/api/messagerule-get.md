@@ -3,12 +3,13 @@ title: Obter regra
 description: Obtenha as propriedades e as relações de um objeto messageRule.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: cfc934ffccb5dd4462f7cf51c318bef198d952dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: bbc7265346b3c9f99d0bf5ab4678b107050806e7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978771"
 ---
 # <a name="get-rule"></a>Obter regra
 
