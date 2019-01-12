@@ -3,12 +3,13 @@ title: Obter windowsPrivacyDataAccessControlItem
 description: Leia as propriedades e os relacionamentos do objeto windowsPrivacyDataAccessControlItem.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 400dd4ab11f6a5885f0bf141459843ed4f407bd7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f0f9d30a8c059c05909d06a71a6de9151efa313
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836446"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930107"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Obter windowsPrivacyDataAccessControlItem
 

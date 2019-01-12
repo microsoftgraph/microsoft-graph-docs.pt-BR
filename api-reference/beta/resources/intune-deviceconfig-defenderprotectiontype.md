@@ -3,12 +3,13 @@ title: tipo de enum defenderProtectionType
 description: Possíveis valores da proteção Defender
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f0f63a3c29975fb19f91b0c721b36470f3bc5c07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dde8b8eb65be406d0897947597f0e15e2ed29e4c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882415"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924290"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>tipo de enum defenderProtectionType
 

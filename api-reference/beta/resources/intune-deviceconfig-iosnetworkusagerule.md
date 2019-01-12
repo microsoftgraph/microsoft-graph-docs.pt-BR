@@ -2,12 +2,14 @@
 title: Tipo de recurso iosNetworkUsageRule
 description: Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenciados usam redes, como redes de dados celulares.
 localization_priority: Normal
-ms.openlocfilehash: 6cf2f0cd88c25a625b12b3adcaac6ccc366ea0e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7476f49c6049eb18e56fa57310aa75707f566bd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860995"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912019"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
 

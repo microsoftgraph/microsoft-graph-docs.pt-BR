@@ -2,12 +2,13 @@
 title: Visão geral de usuários do Microsoft Graph
 description: Os usuários são a representação de uma conta de usuário corporativa ou de estudante do Azure Active Directory (Azure AD) ou uma conta da Microsoft no Microsoft Graph. O recurso **usuário** no Microsoft Graph é um hub do qual você pode acessar as relações e os recursos que são relevantes para seus usuários.
 author: dkershaw10
-ms.openlocfilehash: f9e64ecd3f3a46a74b7a6bcd65955419fd102296
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: b9854da9225f6ce254d44672e015e07908e09294
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337300"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27855248"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Visão geral de usuários do Microsoft Graph
 

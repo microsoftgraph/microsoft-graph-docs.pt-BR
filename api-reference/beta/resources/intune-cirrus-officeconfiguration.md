@@ -3,12 +3,13 @@ title: tipo de recurso de officeConfiguration
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 096a54db296181e58020bb9bc694056c0b9e949a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 767782e26dd203e2ab5488b30520d8cbcf44d1e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817252"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921357"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso de officeConfiguration
 

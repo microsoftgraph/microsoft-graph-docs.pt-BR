@@ -3,12 +3,13 @@ title: Criar androidForWorkNineWorkEasConfiguration
 description: Crie um novo objeto de androidForWorkNineWorkEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f6dca00ea419ae3ea18d66a089204b494ae37b40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b186f446400455c4e969fc22074ecf2f9f3b9104
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842522"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929498"
 ---
 # <a name="create-androidforworknineworkeasconfiguration"></a>Criar androidForWorkNineWorkEasConfiguration
 

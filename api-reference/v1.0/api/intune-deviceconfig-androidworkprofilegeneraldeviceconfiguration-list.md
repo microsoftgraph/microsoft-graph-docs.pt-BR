@@ -3,12 +3,13 @@ title: Lista androidWorkProfileGeneralDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2034adf64afa648621fde17e8a3dec7026620e18
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bba0ef30142afa2e033606f613d7748046a076a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929736"
 ---
 # <a name="list-androidworkprofilegeneraldeviceconfigurations"></a>Lista androidWorkProfileGeneralDeviceConfigurations
 

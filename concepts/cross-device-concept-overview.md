@@ -1,12 +1,14 @@
 ---
 title: Experiências entre dispositivos no Microsoft Graph
 description: 'No mundo atual, com tantos dispositivos, a forma como os clientes usam os dispositivos abrange diferentes plataformas e formatos: eles podem ler as notícias de manhã no tablet, ler os emails no celular no caminho para o trabalho e usar computadores de mesa no trabalho. À noite, podem assistir a filmes em seus consoles de mídia domésticos e usar alto-falantes inteligentes para ouvir as notícias do dia. O cliente comum utiliza diversos dispositivos e plataformas ao longo do dia. '
-ms.openlocfilehash: 83557d59f964631fe12a8a5cb7f00121955432d3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: project-rome
+ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091566"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920678"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Experiências entre dispositivos no Microsoft Graph
 

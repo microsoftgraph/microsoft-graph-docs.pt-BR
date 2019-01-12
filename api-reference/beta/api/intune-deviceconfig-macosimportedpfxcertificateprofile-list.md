@@ -3,12 +3,13 @@ title: Lista macOSImportedPFXCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos macOSImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 011548f672c14c8c2d9bb9a83a241136a7c25168
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b19625c38bf5922f6261c65c193aca40dcbf2bb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891172"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929715"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>Lista macOSImportedPFXCertificateProfiles
 

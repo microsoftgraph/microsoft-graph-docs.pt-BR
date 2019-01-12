@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveUsageAccountCounts'
 description: Obtenha a tendência no número de sites ativos do OneDrive for Business. Qualquer site em que usuários visualizaram, modificaram, carregaram, baixaram, compartilharam ou sincronizaram arquivos é considerado um site ativo.
 localization_priority: Normal
-ms.openlocfilehash: 2db065d71e741abe9a3a9fe20e3de62b78115cbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 0d8257d359f56b364a6fffeb6b1c695295949fce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806213"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925200"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 

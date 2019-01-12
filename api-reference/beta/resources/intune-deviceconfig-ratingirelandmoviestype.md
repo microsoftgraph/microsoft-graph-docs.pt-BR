@@ -3,12 +3,13 @@ title: tipo de enum ratingIrelandMoviesType
 description: Filmes rótulos na Irlanda de classificação
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f5af5fb771821096eb006c0727ef8efb5e45136
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7c9113ab10f419f93f1ad172a88bb4a7624c8bc6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924115"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>tipo de enum ratingIrelandMoviesType
 

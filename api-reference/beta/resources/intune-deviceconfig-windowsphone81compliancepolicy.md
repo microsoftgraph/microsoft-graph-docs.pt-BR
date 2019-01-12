@@ -3,12 +3,13 @@ title: Tipo de recurso windowsPhone81CompliancePolicy
 description: Essa classe contém as configurações de conformidade do Windows 8.1 Mobile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7c590b17865cab6ca745582947431ecbd2b7fed0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f800780560050ace543627b7348869b9daac0f94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912502"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>Tipo de recurso windowsPhone81CompliancePolicy
 

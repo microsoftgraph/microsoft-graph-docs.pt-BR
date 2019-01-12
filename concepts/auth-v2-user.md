@@ -2,12 +2,14 @@
 title: Obter acesso em nome de um usuário
 description: 'Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. '
 author: jackson-woods
-ms.openlocfilehash: 80c421898014be09d3ffbd2213bee9e4ec20cfb9
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27317315"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914266"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. 

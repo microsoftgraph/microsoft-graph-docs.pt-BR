@@ -3,12 +3,13 @@ title: 'TableColumnCollection: ItemAt'
 description: Obtém uma coluna com base em sua posição na coleção.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f70ca1a8fe7c2a878a4f21a3b960d8ce99d21380
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 580b94b1df6abf8a86db817456361bd3e7001843
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922358"
 ---
 # <a name="tablecolumncollection-itemat"></a>TableColumnCollection: ItemAt
 

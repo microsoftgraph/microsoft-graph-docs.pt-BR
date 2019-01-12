@@ -1,14 +1,15 @@
 ---
 title: Excluir dispositivo
 description: Exclui um dispositivo registrado.
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: c2b34cffbff6b3c627ed13d6e4b2917f6f36f4f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6088f7667346e472531b065b5c13eb2953529aea
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854569"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921336"
 ---
 # <a name="delete-device"></a>Excluir dispositivo
 

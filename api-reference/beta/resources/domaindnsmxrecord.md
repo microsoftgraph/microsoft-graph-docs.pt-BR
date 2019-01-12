@@ -3,12 +3,13 @@ title: Tipo de recurso domainDnsMxRecord
 description: Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: c6ffa526b359eed6bafa7f38562d5d61c4f4562a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 90744a9a800fd3a330b9df41299e335c5852446a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923506"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>Tipo de recurso domainDnsMxRecord
 

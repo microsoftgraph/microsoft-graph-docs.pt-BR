@@ -3,12 +3,13 @@ title: Tipo de recurso deviceAppManagement
 description: Entidade singleton que atua como um contêiner para todas as funcionalidades de gerenciamento de aplicativos de dispositivos.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7be07f04c33dcb81ab0dfe350290fa95fb8c1679
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a68d9ff7b86adb1aa64f487b585fd505a40e7fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922141"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Tipo de recurso deviceAppManagement
 

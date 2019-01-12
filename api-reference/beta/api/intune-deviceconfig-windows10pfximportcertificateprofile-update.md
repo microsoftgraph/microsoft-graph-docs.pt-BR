@@ -3,12 +3,13 @@ title: Atualizar windows10PFXImportCertificateProfile
 description: Atualize as propriedades de um objeto windows10PFXImportCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2186938982575469ef00ba5dc80c8ee215aaf77
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f055b39452097c398a9a41a860149cbcee969bb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823475"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928623"
 ---
 # <a name="update-windows10pfximportcertificateprofile"></a>Atualizar windows10PFXImportCertificateProfile
 

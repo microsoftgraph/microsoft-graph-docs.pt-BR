@@ -3,12 +3,13 @@ title: Tipo de recurso targetedManagedAppProtection
 description: Política usada para definir configurações de gerenciamento detalhadas direcionadas a grupos de segurança específicos
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8441cc569ddbf1c47ebf00979ed0c7e19c5d1947
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2dde41d87ee85efc236781b949ca378ed28408c5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821872"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919873"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Tipo de recurso targetedManagedAppProtection
 

@@ -3,12 +3,13 @@ title: tipo de recurso de teamsAppInstallation
 description: 'Um teamsApp instalado em uma equipe. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 037cda1a98f45db94ecfc31b112bc3ab82bf4698
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 153b131cd24709995d7215b1cf568a8565f42a80
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891186"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929477"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso de teamsAppInstallation
 

@@ -1,12 +1,13 @@
 ---
 title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: "  "
-ms.openlocfilehash: a4641b4e4de5adcb3ce6b935aaabe504d76e6676
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 6e38985732c95cf928e78aad62d569134c19d8ca
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091571"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27888988"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 

@@ -3,12 +3,13 @@ title: Excluir windowsWifiEnterpriseEAPConfiguration
 description: Exclui um windowsWifiEnterpriseEAPConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 487e3f10d4f6b27d0705a37e3d4a2724a5c595d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 58acd8fa5a194fce975f74b312944a49c995d937
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931102"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>Excluir windowsWifiEnterpriseEAPConfiguration
 

@@ -3,12 +3,13 @@ title: Atualizar windows10GeneralConfiguration
 description: Atualizar as propriedades de um objeto windows10GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1a2b8c85baca45304cd989b544b43d868f6bc78f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ebf649858d8f3ee6349674ac00eff300fa62cf03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928462"
 ---
 # <a name="update-windows10generalconfiguration"></a>Atualizar windows10GeneralConfiguration
 

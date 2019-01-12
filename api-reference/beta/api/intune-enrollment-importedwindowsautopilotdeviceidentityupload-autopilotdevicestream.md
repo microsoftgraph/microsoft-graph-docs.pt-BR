@@ -3,12 +3,13 @@ title: função autopilotDeviceStream
 description: Crie uma solicitação de carregamento com fluxo de dispositivo piloto automático nela.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b574b8b4266f1a121f097d8ce73e7a57cf7c44f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7095e7096629c0ab3a89fdc2e9446c22b557cc81
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885887"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914945"
 ---
 # <a name="autopilotdevicestream-function"></a>função autopilotDeviceStream
 

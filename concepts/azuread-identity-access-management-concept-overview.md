@@ -2,12 +2,13 @@
 title: Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 description: 'O Active Directory do Azure (Azure AD) ajuda a centralizar o gerenciamento de identidade e acesso para permitir acesso seguro e produtivo entre aplicativos, dispositivos, serviços e infraestrutura. As organizações podem usar o Azure AD para gerenciar identidades e controlar o acesso em ambientes locais, híbridos e em nuvem.  '
 author: jackson-woods
-ms.openlocfilehash: 00fa42c22b0e8a3f497933cf6e893e690a24b2bd
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 634b2c806065f6e1b7cd2a0f2aca41cfdb2aa7fb
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27337958"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27871502"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Visão geral da API de gerenciamento de identidade e acesso do Azure AD
 

@@ -1,12 +1,13 @@
 ---
 title: Percorrer o Microsoft Graph
 description: Além de usar a API do Microsoft Graph para ler e gravar dados, você pode usar diversos padrões de solicitação para desviar pelos recursos no Microsoft Graph. O documento de metadados também ajuda a entender o modelo de dados dos recursos e das relações no Microsoft Graph.
-ms.openlocfilehash: 33f9ace57c7a0c3166e43a6ca1264174962752e1
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: dc4cafc00516f4222ba6ec860dd45ff96d608dd8
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091573"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27863830"
 ---
 # <a name="traverse-microsoft-graph"></a>Percorrer o Microsoft Graph
 

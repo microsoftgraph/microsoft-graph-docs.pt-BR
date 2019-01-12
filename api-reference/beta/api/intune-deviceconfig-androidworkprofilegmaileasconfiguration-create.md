@@ -3,12 +3,13 @@ title: Criar androidWorkProfileGmailEasConfiguration
 description: Crie um novo objeto de androidWorkProfileGmailEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9e39d9df8edabceb782f400b99b6147e93736928
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fdaf02a2ea929a41d762f20d1c4c6033bd8b8211
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817490"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916954"
 ---
 # <a name="create-androidworkprofilegmaileasconfiguration"></a>Criar androidWorkProfileGmailEasConfiguration
 

@@ -3,12 +3,13 @@ title: Criar importedDeviceIdentity
 description: Crie um novo objeto de importedDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3a6ca16d9bfa4a79d723816544e9a7bcf3f77df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e0efa7cdccd24f01539840beb3d0a53342323a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870522"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930130"
 ---
 # <a name="create-importeddeviceidentity"></a>Criar importedDeviceIdentity
 

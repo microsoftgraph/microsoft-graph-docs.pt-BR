@@ -2,12 +2,14 @@
 title: Atualizar plannerUser
 description: Atualize as propriedades de um objeto plannerUser. Você pode usar essa operação para adicionar ou remover os planos da lista de planos de favoritos do usuário e indicar que o usuário estiver planejando acessou recentemente.
 localization_priority: Normal
-ms.openlocfilehash: ae09deff65c5de08d80e34140abacd43d43a94b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 733743ffee8e29d66f2ebe411d127161e7e8eb2a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925886"
 ---
 # <a name="update-planneruser"></a>Atualizar plannerUser
 

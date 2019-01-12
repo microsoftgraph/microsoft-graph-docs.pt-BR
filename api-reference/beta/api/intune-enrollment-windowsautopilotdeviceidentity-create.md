@@ -3,12 +3,13 @@ title: Criar windowsAutopilotDeviceIdentity
 description: Crie um novo objeto de windowsAutopilotDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6dbefc09b95aefdb652174cc9a1d1e4af45387cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 56d200bd53e94715ba102f6c96bba3e3b5dd892b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919096"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 

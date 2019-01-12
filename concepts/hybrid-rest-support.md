@@ -1,12 +1,13 @@
 ---
 title: Usar APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 description: O Microsoft Graph sempre forneceu acesso a caixas de correio do cliente na nuvem no Exchange Online como parte do Office 365.
-ms.openlocfilehash: 78b324765c580e76f080e2e8023e52617b3851f3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091556"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27864348"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Usar as APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 

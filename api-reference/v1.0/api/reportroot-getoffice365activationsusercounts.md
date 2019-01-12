@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Obter a contagem de usuários que estão habilitados e aqueles que ativado a assinatura do Office na área de trabalho ou dispositivos ou computadores de compartilhadas.
 localization_priority: Normal
-ms.openlocfilehash: 79f6f67525aa500fd6e852a5b1322166769caff7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 9b284793ba4031c9354e9134b81798e738410f38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921119"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 

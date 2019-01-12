@@ -3,12 +3,13 @@ title: tipo de enum policyPlatformType
 description: Tipos de plataforma Suppoorted para políticas.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6ac41cfe96a452dab4164c73327494684f15debf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0eef91313b308824b4e2395efb8e7aa95cf0c1ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862038"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919301"
 ---
 # <a name="policyplatformtype-enum-type"></a>tipo de enum policyPlatformType
 

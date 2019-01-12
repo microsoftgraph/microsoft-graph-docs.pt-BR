@@ -2,12 +2,14 @@
 title: 'educationAssignment: publicar'
 description: Esta ação altera o estado de uma atribuição de seu status de rascunho original para o status publicado. Somente um professor na classe pode fazer essa chamada. Quando uma atribuição está no status de rascunho, alunos não verá a atribuição, nem haverá quaisquer objetos de envio. Quando você chamar essa API, são criados objetos de envio e a atribuição aparece na lista de student.
 localization_priority: Normal
-ms.openlocfilehash: 09261da506113f53c6b6b9ff98af69c7dba4c784
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: c7cdaebb91490270cc0a8f205b41a89b662a7a13
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926698"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: publicar
 
