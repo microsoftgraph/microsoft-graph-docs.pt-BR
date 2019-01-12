@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Pesquisar arquivos
 localization_priority: Normal
-ms.openlocfilehash: f2283d7a3c93c470153869eb4572eb05733fc77b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: ee1d8f6ba1c22426beb70d9ad89650e48e6900ff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959689"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 

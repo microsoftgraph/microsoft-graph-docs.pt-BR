@@ -3,12 +3,13 @@ title: Excluir androidWorkProfileGeneralDeviceConfiguration
 description: Exclui um androidWorkProfileGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0db271165ec8b7d75afb2c57f8869f97417f0b62
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 64424ae7b0e5e59e5b39e6763e4a1bd3dfedaa0c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839848"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959997"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Excluir androidWorkProfileGeneralDeviceConfiguration
 

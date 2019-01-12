@@ -3,12 +3,13 @@ title: Tipo de recurso uri
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1696d8020d467e0ba49f21b301aead4dfb502d4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2d7ff44e2963fff861756876fa960f2d52a90168
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877221"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966794"
 ---
 # <a name="uri-resource-type"></a>Tipo de recurso uri
 

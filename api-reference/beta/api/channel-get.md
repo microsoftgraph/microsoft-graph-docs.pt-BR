@@ -3,12 +3,13 @@ title: Obtenha o canal
 description: Recupere as propriedades e relacionamentos de um canal.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 11818ffb8485fa8993220867e3720418c277f096
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bd02ce2e46dc176ee9c94f0f20c880e278efe5f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875363"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966360"
 ---
 # <a name="get-channel"></a>Obtenha o canal
 

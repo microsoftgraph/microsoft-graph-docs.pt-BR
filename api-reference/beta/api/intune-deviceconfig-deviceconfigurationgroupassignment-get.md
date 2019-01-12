@@ -3,12 +3,13 @@ title: Obter deviceConfigurationGroupAssignment
 description: Leia as propriedades e os relacionamentos do objeto deviceConfigurationGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: df541040850189617cf2e5f4b584de46751b9ed6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 09faec45d80eec6eb65f5101295a72501635abc8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873952"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967788"
 ---
 # <a name="get-deviceconfigurationgroupassignment"></a>Obter deviceConfigurationGroupAssignment
 

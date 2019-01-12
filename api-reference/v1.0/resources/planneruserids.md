@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerUserIds
 description: O recurso **plannerUserIds** representa a lista de ids de usuários com a qual um plano é compartilhado. Este é um Tipo Aberto. Se você estiver aproveitando os Grupos do Office 365, use a API de Grupos para gerenciar a associação a um grupo para compartilhar o plano do grupo. Você também pode adicionar membros existentes do grupo a essa coleção, embora isso não seja necessário para que eles possam acessar o plano do grupo.
 localization_priority: Normal
-ms.openlocfilehash: d1ded78b76b2e8284a7563ad43b2c466cda4cc5e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 33a1d6472f4c146d0875ec35fdee920652b7de39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879020"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966955"
 ---
 # <a name="planneruserids-resource-type"></a>Tipo de recurso plannerUserIds
 

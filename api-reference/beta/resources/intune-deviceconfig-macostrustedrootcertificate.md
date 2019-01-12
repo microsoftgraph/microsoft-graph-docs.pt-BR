@@ -3,12 +3,13 @@ title: tipo de recurso de macOSTrustedRootCertificate
 description: Perfil de configuração do certificado raiz confiáveis do sistema operacional X.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c7c39be9a4c09b5235ef10e17eab3c0bbfac2f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 70b179a147a0c0e5358be87319c9afc29dea00e0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851405"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963000"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>tipo de recurso de macOSTrustedRootCertificate
 

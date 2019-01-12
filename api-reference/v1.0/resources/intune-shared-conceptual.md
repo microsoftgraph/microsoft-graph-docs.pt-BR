@@ -2,12 +2,14 @@
 title: Recursos compartilhados no Microsoft Intune
 description: Esses pontos de extremidade são usados em vários API do Microsoft Graph Intune fluxos de trabalho.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações são suportadas somente para fluxos de trabalho específicos.
 localization_priority: Normal
-ms.openlocfilehash: d0d615be8d185c5dfe24d58f6a2e371e6baf18c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: cfb3acbb3b736fcb96d22773301ca6e2e3e4403f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840065"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966773"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 

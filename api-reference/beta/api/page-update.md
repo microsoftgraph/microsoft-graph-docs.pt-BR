@@ -2,12 +2,14 @@
 title: Atualizar página
 description: Atualize o conteúdo de uma página do OneNote.
 localization_priority: Normal
-ms.openlocfilehash: 78dc12f9eb5c041ae58f49aae137063b8a94bce3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 91be57e33bba2d90725beaee8607fd3e2eddb84a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833403"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960691"
 ---
 # <a name="update-page"></a>Atualizar página
 

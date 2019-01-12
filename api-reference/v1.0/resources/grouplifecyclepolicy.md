@@ -2,12 +2,14 @@
 title: Tipo de recurso groupLifecyclePolicy
 description: Representa uma política de ciclo de vida de um Grupo do Office 365. Uma política de ciclo de vida permite aos administradores definir um período de validade para os grupos. Por exemplo, após 180 dias o grupo expira. Quando um grupo alcança esse prazo, os proprietários devem renovar o grupo por um período definido pelo administrador. Depois de renovado, o período de validade é estendido de acordo com o número de dias definido na política. Por exemplo, a nova validade do grupo é de 180 dias após a renovação. Caso não seja renovado, ele expirará e será excluído. É possível renovar o grupo no prazo de 30 dias da data de exclusão.
 localization_priority: Normal
-ms.openlocfilehash: cbc499bdf31a50873a2c2e1131630da4472b970d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 65cf8d5d06262f1d5700de26b4c4f62b005020d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865163"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964162"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Tipo de recurso groupLifecyclePolicy
 

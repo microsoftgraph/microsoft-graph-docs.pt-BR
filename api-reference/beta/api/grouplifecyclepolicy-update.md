@@ -3,12 +3,13 @@ title: Atualizar groupLifecyclePolicy
 description: Atualiza as propriedades de um objeto do tipo de recurso groupLifecyclePolicy.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: c428e2d513c359b2b59a7cbb3883458b450ac429
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 5914f0047a591ba53b160ba988342c13f0741fd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864908"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955958"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Atualizar groupLifecyclePolicy
 

@@ -2,12 +2,14 @@
 title: Tipo de recurso termsAndConditions
 description: Conteúdo dos C políticas é apresentado aos usuários após sua primeira tentativa de registrar em Intune e subsequentemente após edições onde um administrador requerido re-aceitação. Eles permitem que os administradores comuniquem as provisões com as quais um usuário deve concordar para que os dispositivos sejam registrados no Intune.
 localization_priority: Normal
-ms.openlocfilehash: 8f6de8e97d8399d0c251eadafdcdacf09176cb6d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: aab2ca99726c6e5388dfa5641b19d7c40dd920de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858601"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965674"
 ---
 # <a name="termsandconditions-resource-type"></a>Tipo de recurso termsAndConditions
 

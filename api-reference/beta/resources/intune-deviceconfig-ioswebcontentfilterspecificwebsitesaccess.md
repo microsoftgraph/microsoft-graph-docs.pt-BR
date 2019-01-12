@@ -2,12 +2,14 @@
 title: tipo de recurso de iosWebContentFilterSpecificWebsitesAccess
 description: Representa um tipo de configuração de filtro de conteúdo da Web, que instala os indicadores de URL no navegador de internas iOS iOS. Um exemplo de cenário é na sala de aula onde professores gostaria de alunos para navegar sites por meio de indicadores de navegador configurados em seus dispositivos iOS e sem acesso a outros sites.
 localization_priority: Normal
-ms.openlocfilehash: 0dc3023c37311dc5fdeb2700b8a0fec58bdb4725
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 3b117aca95c43f36c216d6249221d689ae2da325
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844951"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942693"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>tipo de recurso de iosWebContentFilterSpecificWebsitesAccess
 

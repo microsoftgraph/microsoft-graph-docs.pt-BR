@@ -3,12 +3,13 @@ title: Excluir windowsInformationProtectionAppLockerFile
 description: Exclui windowsInformationProtectionAppLockerFile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5fa36b39caa159b08b15a9743feb67d26a6c4d04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 080bc1c6f285e62342fbf027718d69bed0a0b791
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830398"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961565"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>Excluir windowsInformationProtectionAppLockerFile
 

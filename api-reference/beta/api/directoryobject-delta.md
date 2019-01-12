@@ -2,12 +2,14 @@
 title: 'directoryObject: delta'
 description: 'Get recentemente criado, atualizado ou excluído objetos de diretório dos seguintes tipos: usuário, grupo e contato organizacional, em uma consulta delta único. Consulte controlar alterações para obter detalhes.'
 localization_priority: Normal
-ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 59ab4f819072120533215277b8b14ac1f3c94bf7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854492"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956196"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 

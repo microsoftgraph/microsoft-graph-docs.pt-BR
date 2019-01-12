@@ -3,12 +3,13 @@ title: Tipo de recurso educationTerm
 description: Termo A. Isso representa uma parte designada do ano acadêmico. É usada dentro de educationClass.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 67e7cd6c9942b61bb6f9ba45f8f25952ae916c5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: bc068df7a31c1b3903e8735ba1255cc3a6f0ae73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835144"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962755"
 ---
 # <a name="educationterm-resource-type"></a>Tipo de recurso educationTerm
 

@@ -2,12 +2,14 @@
 title: Atualizar educationassignment
 description: Atualize o objeto assignment. Somente professores na classe podem fazer isso. Observe que você não pode usar uma solicitação de PATCH para alterar o status de uma atribuição. Use a ação de publicação para alterar o status da atribuição.
 localization_priority: Normal
-ms.openlocfilehash: 78d5b526468fbdf35c3529084f878f8c35216c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838287"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960347"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 

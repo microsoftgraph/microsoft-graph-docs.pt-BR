@@ -3,12 +3,13 @@ title: Atualizar mobileAppProvisioningConfigGroupAssignment
 description: Atualize as propriedades de um objeto mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b341de06c1bd5d504e4835ebef8fce2aa3a5aac7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d2526c69091c9d41a1b9ebb181f4abbbc01bf23
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848339"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954992"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Atualizar mobileAppProvisioningConfigGroupAssignment
 
@@ -48,8 +49,8 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|targetGroupId|Cadeia de caracteres|A identificação do grupo AAD no qual o provisionamento de configuração de aplicativo está sendo direcionado.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|targetGroupId|String|A identificação do grupo AAD no qual o provisionamento de configuração de aplicativo está sendo direcionado.|
+|id|String|Chave da entidade.|
 
 
 

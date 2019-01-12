@@ -3,12 +3,13 @@ title: Obter ChartAxis
 description: Lê as propriedades e os relacionamentos do objeto chartaxis.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: d826f6d98026afb05ac095ab438b6b00e66ad0a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 023b83d543911ea5e2563f989b57639b2feadc03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824609"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966115"
 ---
 # <a name="get-chartaxis"></a>Obter ChartAxis
 

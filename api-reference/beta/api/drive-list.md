@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar unidades
 localization_priority: Normal
-ms.openlocfilehash: 81b5221e9c2823ac9729310d002f755e1c63e061
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 5c85533a2c335158d953749ae329cc6cd2b7ec37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843404"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966227"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
 

@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointActivityUserCounts'
 description: Obtenha a tendência no número de usuários ativos. Um usuário é considerado ativo se ele ou ela executou uma atividade de arquivo (salvar, sincronizar, modificar ou compartilhar) ou visitou uma página dentro do período de tempo especificado.
 localization_priority: Normal
-ms.openlocfilehash: 356f079a1d0836b6cd824a30d6882ed12f0155fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: a48cd5ed0cb4d2874c73502beb3fe2da09d330c5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964596"
 ---
 # <a name="reportroot-getsharepointactivityusercounts"></a>reportRoot: getSharePointActivityUserCounts
 
