@@ -1,12 +1,15 @@
 ---
 title: Atualizar um formato de intervalo no Excel com o Microsoft Graph
 description: Os exemplos a seguir demonstram como atualizar as propriedades RangeFormat, RangeFill e RangeFont de um intervalo especificado.
-ms.openlocfilehash: 17c8a8cc8e20887329ff79b4983f69e25d1e2dee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: ad1aae186fb7803ff38c321f87bd786096d257a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091568"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971638"
 ---
 # <a name="update-a-range-format-in-excel-with-microsoft-graph"></a>Atualizar um formato de intervalo no Excel com o Microsoft Graph
 

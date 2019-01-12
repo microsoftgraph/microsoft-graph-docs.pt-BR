@@ -1,13 +1,15 @@
 ---
 title: Integrar alertas da API de Segurança do Microsoft Graph com um SIEM
 description: A API de Segurança do Microsoft Graph permite o gerenciamento de alertas de segurança de todos os produtos de segurança da Microsoft, conhecidos como provedores de Segurança do Microsoft Graph, por meio de um ponto de extremidade REST único. Talvez algumas organizações já incluam dados de log específicos do Azure por meio do Azure Monitor em soluções do SIEM. Para simplificar a integração, os alertas de segurança disponíveis por meio da API de Segurança do Microsoft Graph também possam ser provisionados pelo cliente para sua assinatura por meio do Azure Monitor. Se a organização já tiver configurado a integração do Azure Monitor com sua solução do SIEM, você já poderá transmitir facilmente os alertas de segurança da organização, além dos dados existentes disponíveis, pelo Azure Monitor.
-author: Preetikr
-ms.openlocfilehash: 24b2261e2a320e5384fba97802eab43991c34254
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: preetikr
+localization_priority: Priority
+ms.prod: security
+ms.openlocfilehash: 8fb56ccb3f24ad50faaedbde1be7608452cca2ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27327381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986457"
 ---
 # <a name="integrate-microsoft-graph-security-api-alerts-with-a-siem"></a>Integrar alertas da API de Segurança do Microsoft Graph com um SIEM
 

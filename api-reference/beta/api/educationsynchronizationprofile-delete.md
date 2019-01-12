@@ -3,12 +3,13 @@ title: Excluir um educationSynchronizationProfile
 description: Exclua um perfil de sincronização de dados escola no locatário com base no identificador.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 09cc19b22cfa433cef39c81a6cbeadeddcf52ace
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: d3c55cd90734fa78654baf10c940cd0debc57c50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870361"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976153"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Excluir um educationSynchronizationProfile
 

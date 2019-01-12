@@ -3,12 +3,13 @@ title: Atualizar androidDeviceOwnerWiFiConfiguration
 description: Atualize as propriedades de um objeto androidDeviceOwnerWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8e678b3267350233e2f2b308bdde2d99f6b4ddd8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d647dcf4c5c2d61fe651348b1d7ab5a6e1d92357
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842446"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978960"
 ---
 # <a name="update-androiddeviceownerwificonfiguration"></a>Atualizar androidDeviceOwnerWiFiConfiguration
 

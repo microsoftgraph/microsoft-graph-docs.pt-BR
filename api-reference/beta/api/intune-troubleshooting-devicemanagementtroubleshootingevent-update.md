@@ -3,12 +3,13 @@ title: Atualizar deviceManagementTroubleshootingEvent
 description: Atualizar as propriedades de um objeto deviceManagementTroubleshootingEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0319e9ad7a56c0fb6214731694b7dd529db8e8e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 496404d4a12080c9809d47f834e18e7cd5c793df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836481"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978344"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Atualizar deviceManagementTroubleshootingEvent
 

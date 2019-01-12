@@ -2,12 +2,13 @@
 title: Obtenha as atividades do usuário
 description: Obtenha atividades para um determinado usuário. Diferentemente do **recente** função OData, atividades sem históricos serão retornadas. A permissão UserActivity.ReadWrite.CreatedByApp serão aplicadas a filtragem extra à resposta, para que apenas as atividades criadas pelo seu aplicativo são retornadas. A filtragem do lado do servidor pode resultar em páginas vazias se o usuário é particularmente ativo e outros aplicativos criou atividades mais recentes. Para obter as atividades do seu aplicativo, use a propriedade **nextLink** para paginar.
 localization_priority: Normal
-ms.openlocfilehash: 7339805d4ef45cc9b0806c2ce6c14e7316bdba85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: dce6420e33a5d57eb78d8ea4842ed759ebcdd11c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971792"
 ---
 # <a name="get-user-activities"></a>Obtenha as atividades do usuário
 

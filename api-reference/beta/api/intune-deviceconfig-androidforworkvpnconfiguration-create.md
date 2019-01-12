@@ -3,12 +3,13 @@ title: Criar androidForWorkVpnConfiguration
 description: Crie um novo objeto de androidForWorkVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0e1e6b8bc7374ae6218434dc7b00d7bcd8b8d5c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1694629b736fcafb85e446d72f803466822edbf4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969482"
 ---
 # <a name="create-androidforworkvpnconfiguration"></a>Criar androidForWorkVpnConfiguration
 

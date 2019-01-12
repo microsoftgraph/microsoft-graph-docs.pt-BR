@@ -3,12 +3,13 @@ title: Tipo de recurso windowsInformationProtectionDesktopApp
 description: Aplicativo da área de trabalho para a proteção de informações do Windows
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c381541379feacff7611e77882069c5fe2119e67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ba45dd4f3bb450cfc9822fb68f1b4511f69da2fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822061"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977385"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>Tipo de recurso windowsInformationProtectionDesktopApp
 

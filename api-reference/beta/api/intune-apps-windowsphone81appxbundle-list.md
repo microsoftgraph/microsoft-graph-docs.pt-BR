@@ -3,12 +3,13 @@ title: Lista windowsPhone81AppXBundles
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81AppXBundle.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1803bbea3c2e470655717c67b09fdc1f06462f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 43b04a2672a3b5a0d9c114654eec4064e558e5a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883171"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968572"
 ---
 # <a name="list-windowsphone81appxbundles"></a>Lista windowsPhone81AppXBundles
 

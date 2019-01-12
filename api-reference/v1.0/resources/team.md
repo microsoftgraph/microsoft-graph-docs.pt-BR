@@ -3,12 +3,13 @@ title: tipo de recurso de equipe
 description: 'Uma equipe Teams da Microsoft é uma coleção de canais. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 85694e18771ac17873f97cedf68d074ee550f787
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 7dff1bb05b2abe604963657d4691766eeeaae4ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878544"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976930"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 

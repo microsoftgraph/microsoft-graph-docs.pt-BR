@@ -3,12 +3,13 @@ title: tipo de recurso de managementConditionExpressionString
 description: Uma cadeia de caracteres de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 815d799bc37328062a717097fd27bc0870a315f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 872282914dc57be4e8e9bc7d476e7767907ec913
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811575"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968845"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>tipo de recurso de managementConditionExpressionString
 

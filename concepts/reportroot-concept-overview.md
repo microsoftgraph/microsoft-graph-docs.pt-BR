@@ -1,12 +1,14 @@
 ---
 title: Visão geral da API de relatórios do Microsoft Graph
 description: Os relatórios de uso do centro de administração do Microsoft 365 permitem que os administradores entendam o uso que sua empresa faz dos serviços do Office 365. Você pode usar a API de relatórios do Microsoft Graph para realizar a integração com os relatórios de uso do Office 365.
-ms.openlocfilehash: d923d0003a276be15620998c53693a9bab7116d5
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+ms.prod: reports
+ms.openlocfilehash: 065a32d9c86ab4e353d876bef3fdf76ecdd535e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091673"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981312"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Visão geral da API de relatórios do Microsoft Graph
 

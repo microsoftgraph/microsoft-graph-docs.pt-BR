@@ -3,12 +3,13 @@ title: Excluir termsAndConditions
 description: Exclui termsAndConditions.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d3e1584abe605f9f35cb29587ce59684fa2b2e12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 763a09e0fc557c6b6f3fba76a9aebb393a8f8466
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985442"
 ---
 # <a name="delete-termsandconditions"></a>Excluir termsAndConditions
 

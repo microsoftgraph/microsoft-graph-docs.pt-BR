@@ -3,12 +3,13 @@ title: tipo de recurso de deviceManagementScriptDeviceState
 description: Contém propriedades para o dispositivo executada no estado do script de gerenciamento de dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d67b7a43817864906984ce21c90536572b0747d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7f50026e549e9927b33ebe8a27b6206daecf0ea5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890535"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968852"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso de deviceManagementScriptDeviceState
 

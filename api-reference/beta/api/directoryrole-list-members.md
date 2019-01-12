@@ -3,12 +3,13 @@ title: Listar membros
 description: Recupera uma lista dos usuários atribuídos à função de diretório.  Somente usuários podem ser atribuídos a uma função de diretório.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 3d7f0ee776646933743cd1fefb63eaa620ffe7ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ad27b5d4a56bee9e149b9f6de87271a86e9945e4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824805"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970805"
 ---
 # <a name="list-members"></a>Listar membros
 
