@@ -3,12 +3,13 @@ title: Criar iosEasEmailProfileConfiguration
 description: Crie um novo objeto de iosEasEmailProfileConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c14913d440720e3d28e83bb267e5218dead82d5e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b325d251d65df5b76562d12d331d12bf388b9a39
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868863"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955419"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>Criar iosEasEmailProfileConfiguration
 

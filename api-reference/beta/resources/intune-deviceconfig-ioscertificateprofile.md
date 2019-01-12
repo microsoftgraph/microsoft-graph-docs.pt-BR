@@ -3,12 +3,13 @@ title: Tipo de recurso iosCertificateProfile
 description: Configuração do dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 58bddac4d44aa1e778460e3e208bb9b791dcd647
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dda308ada91cbeb13947a5e5fca5945d1f903821
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866931"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985659"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>Tipo de recurso iosCertificateProfile
 

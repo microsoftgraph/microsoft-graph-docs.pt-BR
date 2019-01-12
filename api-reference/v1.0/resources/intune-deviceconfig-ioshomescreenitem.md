@@ -3,12 +3,13 @@ title: Tipo de recurso iosHomeScreenItem
 description: Representa um item na tela inicial do iOS
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bbde13f06df55b984aed8f2e0920a6ec3e3ce158
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ff573a6f7ae0d78113a32514bc312c3920b216f1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835802"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987619"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Tipo de recurso iosHomeScreenItem
 

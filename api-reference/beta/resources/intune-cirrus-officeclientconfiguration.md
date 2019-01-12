@@ -3,12 +3,13 @@ title: tipo de recurso de officeClientConfiguration
 description: Configuração do cliente do Office.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 297383f8b7450e6d0df268afc4c009b3110205ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ddc1846afe96c99b616f28d6c831adca3eae960
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879629"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984056"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso de officeClientConfiguration
 

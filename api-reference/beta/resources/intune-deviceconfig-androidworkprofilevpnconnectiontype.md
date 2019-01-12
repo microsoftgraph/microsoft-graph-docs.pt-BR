@@ -3,12 +3,13 @@ title: tipo de enum androidWorkProfileVpnConnectionType
 description: Tipo de conexão VPN de perfil de trabalho Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 176b0170580757a891f6d921d4589b629f70c219
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ecef95a2426890573b2317f665d155b82a1a3b11
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875495"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983188"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>tipo de enum androidWorkProfileVpnConnectionType
 

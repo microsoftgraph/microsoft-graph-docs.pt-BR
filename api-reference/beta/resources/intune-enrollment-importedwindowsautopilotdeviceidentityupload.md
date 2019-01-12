@@ -3,12 +3,13 @@ title: tipo de recurso de importedWindowsAutopilotDeviceIdentityUpload
 description: Importe os dispositivos de piloto automático do windows usando o carregamento.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c0b30b8fc76aa38f6e8a39c4dd3fb1b73bde8be8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4419b81e1d67dc5932f0d48f6c762c6b9c1c7bf1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878054"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982033"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>tipo de recurso de importedWindowsAutopilotDeviceIdentityUpload
 

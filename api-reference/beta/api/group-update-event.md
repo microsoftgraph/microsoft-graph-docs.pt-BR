@@ -3,12 +3,13 @@ title: Atualizar evento
 description: Atualize um objeto event.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1499ab66d698f8f22bde79d0ef3e53fdd8722302
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 092e5fdb8f70ec73d1c8a33230f596b9fdbf3b19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879223"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979996"
 ---
 # <a name="update-event"></a>Atualizar evento
 

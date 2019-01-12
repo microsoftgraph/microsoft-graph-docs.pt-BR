@@ -3,12 +3,13 @@ title: tipo de recurso de appleVpnConfiguration
 description: Perfil de configuração de VPN da Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 85a70322a601fd09c9b944fcfd1d07885fa8f1fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ec31f17bbc6dd1c99c8bc748642584615c589cbb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853253"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983321"
 ---
 # <a name="applevpnconfiguration-resource-type"></a>tipo de recurso de appleVpnConfiguration
 

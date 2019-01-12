@@ -3,12 +3,13 @@ title: tipo de recurso de windows10AppsForceUpdateSchedule
 description: Agendamento de atualização do Windows 10 force para aplicativos
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ef8a0583bd02a62a4461a3415aae86833e24e948
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 50793ee4ba26adc4b89cc8d36b3e8186debc402a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811231"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981984"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso de windows10AppsForceUpdateSchedule
 

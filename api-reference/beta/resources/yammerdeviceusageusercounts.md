@@ -2,12 +2,13 @@
 title: tipo de recurso de yammerDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: d3fbfaeac312096393c3c5a2d406327551cbaa33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 878fe76fa65d5f8b12be382a161ace9271c6e415
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981536"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>tipo de recurso de yammerDeviceUsageUserCounts
 

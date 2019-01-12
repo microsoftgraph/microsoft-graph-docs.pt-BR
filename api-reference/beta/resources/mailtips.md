@@ -2,12 +2,14 @@
 title: tipo de recurso de dicas de email
 description: 'Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles estão redigindo uma mensagem. Por exemplo, uma mensagem de ausência temporária '
 localization_priority: Normal
-ms.openlocfilehash: 62955594412b2d42a4d05b4b13858c4e511605df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: ed6d43e033b020b884a6cd1b6220b1ff566a507b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860638"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985953"
 ---
 # <a name="mailtips-resource-type"></a>tipo de recurso de dicas de email
 

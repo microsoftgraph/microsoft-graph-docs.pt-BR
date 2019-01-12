@@ -2,12 +2,14 @@
 title: Listar calendarView
 description: 'Obtenha as ocorrências, exceções e única instâncias de eventos em um modo de exibição de calendário definido por um intervalo de tempo de calendário, o padrão do usuário '
 localization_priority: Priority
-ms.openlocfilehash: 301573e5ecde07623c17dcf511ea70036f9a06ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2f90f1f5d3af6da0e84919128b362777268f4e0e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874379"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984224"
 ---
 # <a name="list-calendarview"></a>Listar calendarView
 

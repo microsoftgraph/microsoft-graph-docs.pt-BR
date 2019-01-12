@@ -2,12 +2,14 @@
 title: Equipe de unarchive
 description: Restaure uma equipe arquivada. Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, aceitar pelas configurações de locatário e equipe. As equipes são arquivadas usando a API de arquivamento.
 localization_priority: Normal
-ms.openlocfilehash: f203e10c4f82379efcc6da3aff96bc1bc5bf702e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 36e4183f53afab6ba836bacd909b616910dc0c42
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982075"
 ---
 # <a name="unarchive-team"></a>Equipe de unarchive
 

@@ -3,12 +3,13 @@ title: Obter evento
 description: Obter um objeto event.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1ac0dd97253085bf42c5123ac6fca08baea00fbf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 6ab5248fb7747238157f24845a244d9f4a6c2e73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886811"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986723"
 ---
 # <a name="get-event"></a>Obter evento
 Obter um objeto [event](../resources/event.md).

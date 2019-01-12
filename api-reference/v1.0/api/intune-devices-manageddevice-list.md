@@ -3,12 +3,13 @@ title: Listar managedDevices
 description: Listar propriedades e relações dos objetos managedDevice.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1f870ad57cd959acfff7ab02cb0e29e904fcb076
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 126d99c79c095d246003601479a6844be3ebaf70
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830699"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986646"
 ---
 # <a name="list-manageddevices"></a>Listar managedDevices
 

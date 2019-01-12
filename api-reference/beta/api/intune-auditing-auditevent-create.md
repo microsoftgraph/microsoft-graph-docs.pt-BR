@@ -3,12 +3,13 @@ title: Criar auditEvent
 description: Criar um novo objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dcc7a84e22b86e4ec0f9e5d17eb05f75cbe83c6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6b673e2c7090ecfee3368d76f4690dd309ffdd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980276"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 

@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: Obtenha uma página em um site
 localization_priority: Normal
-ms.openlocfilehash: a212dab1c7a15a51d525b332ca5822da8fe28bdd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: da6216e15100baa53a65aacb9a801012a8efc85b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806668"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991913"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Obtenha uma página na lista de páginas de site de um site
 

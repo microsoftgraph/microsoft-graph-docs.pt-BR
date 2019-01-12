@@ -3,12 +3,13 @@ title: 'conversationThread: reply'
 description: 'Responder a um segmento em uma conversa de grupo e adicionar uma nova postagem a ela. Você pode especificar a conversa pai '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 60d06a44f942e7c974381f717324c2c5b120454f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 7662a8bcc2ba61d37b279b4ae1cc04cf14171f6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887462"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956491"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 

@@ -2,12 +2,14 @@
 title: tipo de recurso de educationIdentityDomain
 description: 'Representa o mapeamento entre um tipo de usuário de educação e o domínio em que a conta do usuário pertence. O recurso de domínio é parte da configuração de criação de identidade. '
 localization_priority: Normal
-ms.openlocfilehash: 5675499aca010f90deeb517210065ac4802d66b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 280ae1a65e0c14e7960d316cc21154e405f2ee0d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807746"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982026"
 ---
 # <a name="educationidentitydomain-resource-type"></a>tipo de recurso de educationIdentityDomain
 

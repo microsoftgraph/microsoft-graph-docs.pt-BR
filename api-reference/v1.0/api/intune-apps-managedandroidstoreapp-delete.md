@@ -3,12 +3,13 @@ title: Excluir managedAndroidStoreApp
 description: Exclui managedAndroidStoreApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 907fd1e24f37e3febe867c0ac8e64ca7e951c0b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a659f8aae2b6b04ff7843e893edd5547a73058d8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872481"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986765"
 ---
 # <a name="delete-managedandroidstoreapp"></a>Excluir managedAndroidStoreApp
 

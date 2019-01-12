@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerPlan
 description: O recurso de **plannerPlan** representa um plano no Office 365. Um plano pode pertencer a um grupo e contém uma coleção de plannerTasks. Ele também pode ter uma coleção de plannerBuckets. Cada objeto de plano tem um objeto de detalhes que pode conter mais informações sobre o plano. Para obter mais informações sobre os relacionamentos entre grupos, planos e tarefas, consulte planejador.
 localization_priority: Priority
-ms.openlocfilehash: cfcc94fab067cc76bb530edbdb8477183ebf3531
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 9e77f2c0163f9093d931c46098498caa8c43f42c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873007"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987892"
 ---
 # <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
 

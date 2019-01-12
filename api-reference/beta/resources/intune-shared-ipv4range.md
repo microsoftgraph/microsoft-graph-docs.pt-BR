@@ -3,12 +3,13 @@ title: Tipo de recurso iPv4Range
 description: Intervalo de IP V4
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a1f76fcd99663fe7ddd34263c8304b5597e6941c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 57bcaabfc5155e6b6733de2dc228dd240515281b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888288"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980178"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 

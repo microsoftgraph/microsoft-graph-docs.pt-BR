@@ -3,12 +3,13 @@ title: tipo de recurso de networkIPv6ConfigurationManagementCondition
 description: Configurações de rede IPv6 condições de gerenciamento baseadas na configuração podem ser definidas que acionará quando um dispositivo detecta certo IP. Uma condição de gerenciamento de configuração IP só será considerada TRUE quando a conexão de rede estiver ativo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a5bb68ac270082df51e5d91b1e7f08bc9c1a7cbf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a2c7178fc522c95c870a9b34657e1afe3a407f09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879552"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983433"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>tipo de recurso de networkIPv6ConfigurationManagementCondition
 

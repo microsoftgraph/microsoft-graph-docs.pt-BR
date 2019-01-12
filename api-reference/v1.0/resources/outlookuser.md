@@ -3,12 +3,13 @@ title: Tipo de recurso outlookUser
 description: Representa os serviços do Outlook disponíveis para um usuário.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 6a4f15266ebfda3e2af43a5d39e28803fe9d87b5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 32d621b71770d220487b60b4573fb34cdf28d526
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837370"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982817"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
 

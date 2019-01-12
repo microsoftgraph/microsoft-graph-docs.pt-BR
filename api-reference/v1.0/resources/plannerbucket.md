@@ -3,12 +3,13 @@ title: Tipo de recurso plannerBucket
 description: ) para tarefas em um plano no Office 365. Ele está contido em um plannerPlan e pode ter uma coleção de plannerTasks.
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 592d0e24f527d7ae343bd29e71a3dfdf0247720f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 8cfc25e5554b20d4f808c8929b53549f4c44d7a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982831"
 ---
 # <a name="plannerbucket-resource-type"></a>Tipo de recurso plannerBucket
 

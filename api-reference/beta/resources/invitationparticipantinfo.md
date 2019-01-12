@@ -3,12 +3,13 @@ title: tipo de recurso de invitationParticipantInfo
 description: O **InvitationParticipant** é usado para representar um conjunto de identidades associado a um convite para conversa e fornece os parâmetros adicionais de convite.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7a6fb418b7076b0f0a42dc05b6afe71dcda6a71e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8febd66915ee0b4fba26d9253cd56d67086e63bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864999"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982894"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso de invitationParticipantInfo
 

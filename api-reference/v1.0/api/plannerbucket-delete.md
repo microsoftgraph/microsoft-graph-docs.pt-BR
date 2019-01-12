@@ -2,12 +2,14 @@
 title: Excluir plannerBucket
 description: Exclua **plannerBucket**.
 localization_priority: Normal
-ms.openlocfilehash: 282d95b4658307ef8237f05d0e8e3172badd3ab3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 0e0693d6bc95b6e541c166aca12d09cccf56646d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818897"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986437"
 ---
 # <a name="delete-plannerbucket"></a>Excluir plannerBucket
 

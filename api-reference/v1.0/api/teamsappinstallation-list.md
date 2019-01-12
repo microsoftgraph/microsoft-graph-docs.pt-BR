@@ -3,12 +3,13 @@ title: Lista de aplicativos na equipe
 description: Recupere a lista de aplicativos instalados na equipe de especificado.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: fbc603475cf1bdfcbdb50cff26d5fbfd7c2d34f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3289f7abc80e20a11d38c9ab35a9961981b81dd1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864243"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985729"
 ---
 # <a name="list-apps-in-team"></a>Lista de aplicativos na equipe
 

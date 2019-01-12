@@ -3,12 +3,13 @@ title: checkMemberGroups
 description: Verifique se a associação na lista especificada dos grupos. Retorna da lista os grupos dos quais
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: ee19b25648131cfa56e110c252c245436816ccbd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a259416525cbd339f68962674a3441c10f6b3235
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805520"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981347"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 

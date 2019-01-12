@@ -3,12 +3,13 @@ title: Listar anexos
 description: Recupera uma lista de objetos attachment anexados a um evento.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: d05bb4194a60346b97e6be368d6790fdebf8e12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 9100788d30c4d9dcaacbb00e6fb72f8368bc0473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990387"
 ---
 # <a name="list-attachments"></a>Listar anexos
 

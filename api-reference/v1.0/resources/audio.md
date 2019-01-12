@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: VinodRavichandran
 ms.date: 09/10/2017
 title: Áudio
 localization_priority: Normal
-ms.openlocfilehash: 452ba08c5d01dc27cfe6ced0d34471e79f30a589
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8265850a6194938cc3547d081c71256bb2aa9251
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809013"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990303"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 

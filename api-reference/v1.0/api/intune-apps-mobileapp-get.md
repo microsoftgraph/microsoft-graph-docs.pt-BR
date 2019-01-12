@@ -3,12 +3,13 @@ title: Acessar mobileApp
 description: Leia as propriedades e as relações do objeto mobileApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 235ca522cf55d51a22cc6116969a426f92e2b3d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ea815b3d69085c085e505e0aee8cabec26f41b95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879727"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990233"
 ---
 # <a name="get-mobileapp"></a>Acessar mobileApp
 

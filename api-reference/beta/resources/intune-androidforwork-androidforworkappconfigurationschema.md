@@ -2,12 +2,14 @@
 title: Tipo de recurso androidForWorkAppConfigurationSchema
 description: Esquema descrevendo as configurações personalizadas de um aplicativo do Android for Work.
 localization_priority: Normal
-ms.openlocfilehash: fecb4c3983254643704e6c5966212272f8f1d65e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 48b153fa23e1ca72918bf6651c2948978c05d46b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882891"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955930"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchema
 

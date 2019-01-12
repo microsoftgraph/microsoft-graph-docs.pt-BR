@@ -3,12 +3,13 @@ title: Obter windows10CertificateProfileBase
 description: Leia as propriedades e os relacionamentos do objeto windows10CertificateProfileBase.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eae4bab910220e8f25152de45bdfd128cb7f23af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1e9596cc1cfacd89435394f5db62bf1a2a3e3e87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868940"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984399"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Obter windows10CertificateProfileBase
 

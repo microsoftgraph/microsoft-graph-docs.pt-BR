@@ -3,12 +3,13 @@ title: tipo de recurso de managementCertificateWithThumbprint
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d8f18e7fc117f00f99346267f544abc7d12db17e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6e6259c1f90547ff875fa31d3f383606749bc0dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827213"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983349"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>tipo de recurso de managementCertificateWithThumbprint
 

@@ -2,12 +2,14 @@
 title: tipo de recurso de bookingStaffMember
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: b7369ad3662bf86aaca14bc78ea52a1ebddcb4df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985946"
 ---
 # <a name="bookingstaffmember-resource-type"></a>tipo de recurso de bookingStaffMember
 

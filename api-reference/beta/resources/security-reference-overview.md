@@ -2,12 +2,14 @@
 title: Use a API do Microsoft Graph para detecção de ameaças de segurança e proteção (preview)
 description: A sofisticação das ameaças à segurança continua escalar, afetar a economia global. Dano quase sempre é feito muito antes de organizações mesmo descobrem a ele. Você pode usar o Microsoft Graph para criar ou estender as soluções de segurança que consolidem e correlacionam os alertas de segurança de várias fontes, detectarem ameaças que tentam comprometer a identidade do usuário, unlock dados contextuais para informar investigações e automatizar operações de segurança para maior eficiência.
 localization_priority: Normal
-ms.openlocfilehash: f728ddbee32a25742b5e0062ff442c552121c353
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804449"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980283"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Use a API do Microsoft Graph para detecção de ameaças de segurança e proteção (preview)
 

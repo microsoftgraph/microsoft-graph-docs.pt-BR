@@ -3,12 +3,13 @@ title: Atualizar windowsPhone81CustomConfiguration
 description: Atualizar as propriedades de um objeto windowsPhone81CustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ba2d7145fa34e7f4afbfa19f09cb11a6debb95f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5280485f90ec42bfab4f342421e2aaf4b8140617
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847170"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983755"
 ---
 # <a name="update-windowsphone81customconfiguration"></a>Atualizar windowsPhone81CustomConfiguration
 

@@ -3,12 +3,13 @@ title: Atualizar o aplicativo
 description: Atualize as propriedades do objeto application.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: fafc1a339b96bfffdfbce24566b69bbd776825db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ecdf1d7f4f291b415e83b3926f8f82ea81f73390
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819002"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990702"
 ---
 # <a name="update-application"></a>Atualizar o aplicativo
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Obter uma versão anterior de um item de lista - API do SharePoint
 localization_priority: Normal
-ms.openlocfilehash: 7f009eb006e44dd2f8e25052b0326ffc92243c7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 4068ebd1e8a245f2418954ce04bad1f78530acd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881603"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983874"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>Obter um recurso ListItemVersion (prévia)
 
