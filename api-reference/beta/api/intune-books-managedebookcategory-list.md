@@ -3,30 +3,31 @@ title: Lista managedEBookCategories
 description: Lista as propriedades e os relacionamentos dos objetos managedEBookCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b263135e04c3ca27728deb1304d15a38e3a033a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5b5859429a4a3cc44904f0173cdba5e816237739
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892208"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950225"
 ---
-# <a name="list-managedebookcategories"></a><span data-ttu-id="fda04-103">Lista managedEBookCategories</span><span class="sxs-lookup"><span data-stu-id="fda04-103">List managedEBookCategories</span></span>
+# <a name="list-managedebookcategories"></a><span data-ttu-id="f3f40-103">Lista managedEBookCategories</span><span class="sxs-lookup"><span data-stu-id="f3f40-103">List managedEBookCategories</span></span>
 
-> <span data-ttu-id="fda04-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="fda04-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fda04-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="fda04-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f3f40-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="f3f40-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f3f40-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="f3f40-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="fda04-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="fda04-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f3f40-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="f3f40-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="fda04-107">Lista as propriedades e os relacionamentos dos objetos [managedEBookCategory](../resources/intune-books-managedebookcategory.md) .</span><span class="sxs-lookup"><span data-stu-id="fda04-107">List properties and relationships of the [managedEBookCategory](../resources/intune-books-managedebookcategory.md) objects.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="fda04-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="fda04-108">Prerequisites</span></span>
-<span data-ttu-id="fda04-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fda04-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f3f40-107">Lista as propriedades e os relacionamentos dos objetos [managedEBookCategory](../resources/intune-books-managedebookcategory.md) .</span><span class="sxs-lookup"><span data-stu-id="f3f40-107">List properties and relationships of the [managedEBookCategory](../resources/intune-books-managedebookcategory.md) objects.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f3f40-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f3f40-108">Prerequisites</span></span>
+<span data-ttu-id="f3f40-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3f40-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fda04-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fda04-111">Permission type</span></span>|<span data-ttu-id="fda04-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="fda04-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f3f40-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f3f40-111">Permission type</span></span>|<span data-ttu-id="f3f40-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f3f40-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fda04-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fda04-113">Delegated (work or school account)</span></span>|<span data-ttu-id="fda04-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="fda04-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="fda04-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fda04-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fda04-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fda04-116">Not supported.</span></span>|
-|<span data-ttu-id="fda04-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fda04-117">Application</span></span>|<span data-ttu-id="fda04-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fda04-118">Not supported.</span></span>|
+|<span data-ttu-id="f3f40-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f3f40-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f3f40-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f3f40-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="f3f40-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f3f40-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f3f40-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f3f40-116">Not supported.</span></span>|
+|<span data-ttu-id="f3f40-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f3f40-117">Application</span></span>|<span data-ttu-id="f3f40-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f3f40-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fda04-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fda04-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f3f40-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f3f40-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,27 +37,27 @@ GET /deviceAppManagement/managedEBookCategories
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fda04-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fda04-120">Request headers</span></span>
-|<span data-ttu-id="fda04-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="fda04-121">Header</span></span>|<span data-ttu-id="fda04-122">Valor</span><span class="sxs-lookup"><span data-stu-id="fda04-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f3f40-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f3f40-120">Request headers</span></span>
+|<span data-ttu-id="f3f40-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f3f40-121">Header</span></span>|<span data-ttu-id="f3f40-122">Valor</span><span class="sxs-lookup"><span data-stu-id="f3f40-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fda04-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="fda04-123">Authorization</span></span>|<span data-ttu-id="fda04-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fda04-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fda04-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="fda04-125">Accept</span></span>|<span data-ttu-id="fda04-126">application/json</span><span class="sxs-lookup"><span data-stu-id="fda04-126">application/json</span></span>|
+|<span data-ttu-id="f3f40-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="f3f40-123">Authorization</span></span>|<span data-ttu-id="f3f40-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f3f40-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f3f40-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f3f40-125">Accept</span></span>|<span data-ttu-id="f3f40-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f3f40-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fda04-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fda04-127">Request body</span></span>
-<span data-ttu-id="fda04-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fda04-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f3f40-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f3f40-127">Request body</span></span>
+<span data-ttu-id="f3f40-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f3f40-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fda04-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="fda04-129">Response</span></span>
-<span data-ttu-id="fda04-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [managedEBookCategory](../resources/intune-books-managedebookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fda04-130">If successful, this method returns a `200 OK` response code and a collection of [managedEBookCategory](../resources/intune-books-managedebookcategory.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f3f40-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3f40-129">Response</span></span>
+<span data-ttu-id="f3f40-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [managedEBookCategory](../resources/intune-books-managedebookcategory.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f3f40-130">If successful, this method returns a `200 OK` response code and a collection of [managedEBookCategory](../resources/intune-books-managedebookcategory.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fda04-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fda04-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="fda04-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fda04-132">Request</span></span>
-<span data-ttu-id="fda04-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fda04-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f3f40-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f3f40-131">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f3f40-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3f40-132">Request</span></span>
+<span data-ttu-id="f3f40-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f3f40-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBookCategories
 ```
 
-### <a name="response"></a><span data-ttu-id="fda04-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="fda04-134">Response</span></span>
-<span data-ttu-id="fda04-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fda04-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f3f40-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3f40-134">Response</span></span>
+<span data-ttu-id="f3f40-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f3f40-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

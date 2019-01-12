@@ -2,32 +2,33 @@
 title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Obter a contagem de usuários que estão habilitados e aqueles que ativado a assinatura do Office na área de trabalho ou dispositivos ou computadores de compartilhadas.
 localization_priority: Normal
-ms.openlocfilehash: dd86940ad25a63f7b9657b850d33721438525770
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 18d1ba6da1faf983fe8da3756bb843fe6ac328e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950568"
 ---
-# <a name="reportroot-getoffice365activationsusercounts"></a><span data-ttu-id="7661f-103">reportRoot: getOffice365ActivationsUserCounts</span><span class="sxs-lookup"><span data-stu-id="7661f-103">reportRoot: getOffice365ActivationsUserCounts</span></span>
+# <a name="reportroot-getoffice365activationsusercounts"></a><span data-ttu-id="64503-103">reportRoot: getOffice365ActivationsUserCounts</span><span class="sxs-lookup"><span data-stu-id="64503-103">reportRoot: getOffice365ActivationsUserCounts</span></span>
 
-> <span data-ttu-id="7661f-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="7661f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7661f-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="7661f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="64503-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="64503-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="64503-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="64503-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="7661f-106">Obter a contagem de usuários que estão habilitados e aqueles que ativado a assinatura do Office na área de trabalho ou dispositivos ou computadores de compartilhadas.</span><span class="sxs-lookup"><span data-stu-id="7661f-106">Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.</span></span>
+<span data-ttu-id="64503-106">Obter a contagem de usuários que estão habilitados e aqueles que ativado a assinatura do Office na área de trabalho ou dispositivos ou computadores de compartilhadas.</span><span class="sxs-lookup"><span data-stu-id="64503-106">Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.</span></span>
 
-> <span data-ttu-id="7661f-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Ativações do Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="7661f-107">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
+> <span data-ttu-id="64503-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Ativações do Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="64503-107">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7661f-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="7661f-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="64503-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="64503-108">Permissions</span></span>
 
-<span data-ttu-id="7661f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7661f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="64503-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64503-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7661f-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7661f-111">Permission type</span></span>                        | <span data-ttu-id="7661f-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7661f-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="64503-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="64503-111">Permission type</span></span>                        | <span data-ttu-id="64503-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="64503-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="7661f-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7661f-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="7661f-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7661f-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="7661f-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7661f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7661f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7661f-116">Not supported.</span></span>                           |
-| <span data-ttu-id="7661f-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7661f-117">Application</span></span>                            | <span data-ttu-id="7661f-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7661f-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="64503-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="64503-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="64503-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="64503-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="64503-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="64503-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64503-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="64503-116">Not supported.</span></span>                           |
+| <span data-ttu-id="64503-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="64503-117">Application</span></span>                            | <span data-ttu-id="64503-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="64503-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="7661f-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7661f-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64503-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="64503-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -35,45 +36,45 @@ ms.locfileid: "27871824"
 GET /reports/getOffice365ActivationsUserCounts
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="7661f-120">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="7661f-120">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="64503-120">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="64503-120">Query parameters</span></span>
 
-<span data-ttu-id="7661f-121">Este método oferece suporte a `$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7661f-121">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="7661f-122">O tipo de saída padrão é texto/csv.</span><span class="sxs-lookup"><span data-stu-id="7661f-122">The default output type is text/csv.</span></span> <span data-ttu-id="7661f-123">No entanto, se você deseja especificar o tipo de saída, você pode usar o parâmetro de consulta OData $format definido como texto/csv ou aplicativo/json.</span><span class="sxs-lookup"><span data-stu-id="7661f-123">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="64503-121">Este método oferece suporte a `$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="64503-121">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="64503-122">O tipo de saída padrão é texto/csv.</span><span class="sxs-lookup"><span data-stu-id="64503-122">The default output type is text/csv.</span></span> <span data-ttu-id="64503-123">No entanto, se você deseja especificar o tipo de saída, você pode usar o parâmetro de consulta OData $format definido como texto/csv ou aplicativo/json.</span><span class="sxs-lookup"><span data-stu-id="64503-123">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="7661f-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7661f-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="64503-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="64503-124">Request headers</span></span>
 
-| <span data-ttu-id="7661f-125">Nome</span><span class="sxs-lookup"><span data-stu-id="7661f-125">Name</span></span>          | <span data-ttu-id="7661f-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="7661f-126">Description</span></span>               |
+| <span data-ttu-id="64503-125">Nome</span><span class="sxs-lookup"><span data-stu-id="64503-125">Name</span></span>          | <span data-ttu-id="64503-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="64503-126">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="7661f-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="7661f-127">Authorization</span></span> | <span data-ttu-id="7661f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7661f-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="64503-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="64503-127">Authorization</span></span> | <span data-ttu-id="64503-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="64503-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7661f-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="7661f-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="64503-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="64503-130">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="7661f-131">CSV</span><span class="sxs-lookup"><span data-stu-id="7661f-131">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="64503-131">CSV</span><span class="sxs-lookup"><span data-stu-id="64503-131">CSV</span></span>
 
-<span data-ttu-id="7661f-132">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="7661f-132">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="7661f-133">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="7661f-133">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="64503-132">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="64503-132">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="64503-133">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="64503-133">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="7661f-134">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="7661f-134">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="64503-134">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="64503-134">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="7661f-135">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="7661f-135">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="64503-135">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="64503-135">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="7661f-136">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="7661f-136">Report Refresh Date</span></span>
-- <span data-ttu-id="7661f-137">Tipo de produto</span><span class="sxs-lookup"><span data-stu-id="7661f-137">Product Type</span></span>
-- <span data-ttu-id="7661f-138">Atribuído</span><span class="sxs-lookup"><span data-stu-id="7661f-138">Assigned</span></span>
-- <span data-ttu-id="7661f-139">Ativado</span><span class="sxs-lookup"><span data-stu-id="7661f-139">Activated</span></span>
-- <span data-ttu-id="7661f-140">Ativação do computador compartilhado</span><span class="sxs-lookup"><span data-stu-id="7661f-140">Shared Computer Activation</span></span>
+- <span data-ttu-id="64503-136">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="64503-136">Report Refresh Date</span></span>
+- <span data-ttu-id="64503-137">Tipo de produto</span><span class="sxs-lookup"><span data-stu-id="64503-137">Product Type</span></span>
+- <span data-ttu-id="64503-138">Atribuído</span><span class="sxs-lookup"><span data-stu-id="64503-138">Assigned</span></span>
+- <span data-ttu-id="64503-139">Ativado</span><span class="sxs-lookup"><span data-stu-id="64503-139">Activated</span></span>
+- <span data-ttu-id="64503-140">Ativação do computador compartilhado</span><span class="sxs-lookup"><span data-stu-id="64503-140">Shared Computer Activation</span></span>
 
-### <a name="json"></a><span data-ttu-id="7661f-141">JSON</span><span class="sxs-lookup"><span data-stu-id="7661f-141">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="64503-141">JSON</span><span class="sxs-lookup"><span data-stu-id="64503-141">JSON</span></span>
 
-<span data-ttu-id="7661f-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7661f-142">If successful, this method returns a `200 OK` response code and an **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** object in the response body.</span></span>
+<span data-ttu-id="64503-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="64503-142">If successful, this method returns a `200 OK` response code and an **[office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7661f-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7661f-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="64503-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="64503-143">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="7661f-144">CSV</span><span class="sxs-lookup"><span data-stu-id="7661f-144">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="64503-144">CSV</span><span class="sxs-lookup"><span data-stu-id="64503-144">CSV</span></span>
 
-<span data-ttu-id="7661f-145">O exemplo a seguir é um exemplo que emite CSV.</span><span class="sxs-lookup"><span data-stu-id="7661f-145">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="64503-145">O exemplo a seguir é um exemplo que emite CSV.</span><span class="sxs-lookup"><span data-stu-id="64503-145">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7661f-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7661f-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="64503-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64503-146">Request</span></span>
 
-<span data-ttu-id="7661f-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7661f-147">The following is an example of the request.</span></span>
+<span data-ttu-id="64503-147">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="64503-147">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -84,9 +85,9 @@ GET /reports/getOffice365ActivationsUserCounts
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="7661f-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="7661f-148">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="64503-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="64503-148">Response</span></span>
 
-<span data-ttu-id="7661f-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7661f-149">The following is an example of the response.</span></span>
+<span data-ttu-id="64503-149">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="64503-149">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -96,7 +97,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="7661f-150">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="7661f-150">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="64503-150">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="64503-150">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -111,13 +112,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 ```
 
-### <a name="json"></a><span data-ttu-id="7661f-151">JSON</span><span class="sxs-lookup"><span data-stu-id="7661f-151">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="64503-151">JSON</span><span class="sxs-lookup"><span data-stu-id="64503-151">JSON</span></span>
 
-<span data-ttu-id="7661f-152">O exemplo a seguir é um exemplo que retorne JSON.</span><span class="sxs-lookup"><span data-stu-id="7661f-152">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="64503-152">O exemplo a seguir é um exemplo que retorne JSON.</span><span class="sxs-lookup"><span data-stu-id="64503-152">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="7661f-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7661f-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="64503-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="64503-153">Request</span></span>
 
-<span data-ttu-id="7661f-154">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="7661f-154">The following example shows the request.</span></span>
+<span data-ttu-id="64503-154">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="64503-154">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -128,11 +129,11 @@ Report Refresh Date,Product Type,Assigned,Activated,Shared Computer Activation
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="7661f-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="7661f-155">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="64503-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="64503-155">Response</span></span>
 
-<span data-ttu-id="7661f-156">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="7661f-156">The following example shows the response.</span></span>
+<span data-ttu-id="64503-156">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="64503-156">The following example shows the response.</span></span>
 
-> <span data-ttu-id="7661f-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7661f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="64503-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="64503-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
