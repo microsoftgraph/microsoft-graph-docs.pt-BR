@@ -4,28 +4,29 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar arquivos recentes
 localization_priority: Normal
-ms.openlocfilehash: ede3f5683dc17d1de82dbc94acc06cc531cecfdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3548a708084da5b5c22bd31be1130630a577d7bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922722"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="9700f-102">Listar arquivos recentes</span><span class="sxs-lookup"><span data-stu-id="9700f-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="87ae2-102">Listar arquivos recentes</span><span class="sxs-lookup"><span data-stu-id="87ae2-102">List recent files</span></span>
 
-<span data-ttu-id="9700f-p101">Listar uma coleção de itens que foram usados recentemente pelo usuário conectado. Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.</span><span class="sxs-lookup"><span data-stu-id="9700f-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="87ae2-p101">Listar uma coleção de itens que foram usados recentemente pelo usuário conectado. Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.</span><span class="sxs-lookup"><span data-stu-id="87ae2-p101">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9700f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="9700f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="87ae2-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="87ae2-105">Permissions</span></span>
 
-<span data-ttu-id="9700f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9700f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="87ae2-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="87ae2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9700f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9700f-108">Permission type</span></span>      | <span data-ttu-id="9700f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9700f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="87ae2-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="87ae2-108">Permission type</span></span>      | <span data-ttu-id="87ae2-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="87ae2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9700f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9700f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9700f-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9700f-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9700f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9700f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9700f-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9700f-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9700f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9700f-114">Application</span></span> | <span data-ttu-id="9700f-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9700f-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="87ae2-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="87ae2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="87ae2-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87ae2-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="87ae2-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="87ae2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="87ae2-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87ae2-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="87ae2-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="87ae2-114">Application</span></span> | <span data-ttu-id="87ae2-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="87ae2-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9700f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9700f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="87ae2-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="87ae2-116">HTTP request</span></span>
 
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
@@ -37,9 +38,9 @@ ms.locfileid: "27888267"
 GET /me/drive/recent
 ```
 
-## <a name="response"></a><span data-ttu-id="9700f-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="9700f-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="87ae2-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="87ae2-117">Response</span></span>
 
-<span data-ttu-id="9700f-118">Esse método retorna uma coleção de recursos [DriveItem](../resources/driveitem.md) para itens que o proprietário da unidade acessou recentemente.</span><span class="sxs-lookup"><span data-stu-id="9700f-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+<span data-ttu-id="87ae2-118">Esse método retorna uma coleção de recursos [DriveItem](../resources/driveitem.md) para itens que o proprietário da unidade acessou recentemente.</span><span class="sxs-lookup"><span data-stu-id="87ae2-118">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -85,9 +86,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="9700f-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="9700f-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="87ae2-119">Comentários</span><span class="sxs-lookup"><span data-stu-id="87ae2-119">Remarks</span></span>
 
-<span data-ttu-id="9700f-p103">Alguns driveItems retornados da ação **recent** incluirão a faceta **remoteItem** que indica que eles são itens de outra unidade. Para acessar o objeto driveItem original, você precisará fazer uma solicitação usando as informações fornecidas em **remoteItem** no seguinte formato:</span><span class="sxs-lookup"><span data-stu-id="9700f-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="87ae2-p103">Alguns driveItems retornados da ação **recent** incluirão a faceta **remoteItem** que indica que eles são itens de outra unidade. Para acessar o objeto driveItem original, você precisará fazer uma solicitação usando as informações fornecidas em **remoteItem** no seguinte formato:</span><span class="sxs-lookup"><span data-stu-id="87ae2-p103">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

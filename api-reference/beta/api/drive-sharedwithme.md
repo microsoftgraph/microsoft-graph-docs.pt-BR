@@ -4,33 +4,34 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar arquivos compartilhados comigo
 localization_priority: Normal
-ms.openlocfilehash: 9144c906a3f363ba10564dde36ca11c352a4fdcf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 36235f60a11755c6040a1d20c391e9b3cbca8d0a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881505"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922106"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="ff0c0-102">Listar itens compartilhados com o usuário conectado</span><span class="sxs-lookup"><span data-stu-id="ff0c0-102">List items shared with the signed-in user</span></span>
+# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="ed7e3-102">Listar itens compartilhados com o usuário conectado</span><span class="sxs-lookup"><span data-stu-id="ed7e3-102">List items shared with the signed-in user</span></span>
 
-> <span data-ttu-id="ff0c0-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="ff0c0-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ff0c0-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ff0c0-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ed7e3-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="ed7e3-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ed7e3-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ed7e3-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ff0c0-105">Recupere uma coleção de recursos [DriveItem](../resources/driveitem.md) que foram compartilhados com o proprietário de [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="ff0c0-105">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
+<span data-ttu-id="ed7e3-105">Recupere uma coleção de recursos [DriveItem](../resources/driveitem.md) que foram compartilhados com o proprietário de [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="ed7e3-105">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ff0c0-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ff0c0-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed7e3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="ed7e3-106">Permissions</span></span>
 
-<span data-ttu-id="ff0c0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ff0c0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ed7e3-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ed7e3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ff0c0-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ff0c0-109">Permission type</span></span>      | <span data-ttu-id="ff0c0-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ff0c0-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ed7e3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ed7e3-109">Permission type</span></span>      | <span data-ttu-id="ed7e3-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ed7e3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ff0c0-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ff0c0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ff0c0-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff0c0-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ff0c0-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ff0c0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ff0c0-114">Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff0c0-114">Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ff0c0-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ff0c0-115">Application</span></span> | <span data-ttu-id="ff0c0-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ff0c0-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ed7e3-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ed7e3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ed7e3-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed7e3-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ed7e3-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ed7e3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed7e3-114">Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed7e3-114">Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ed7e3-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ed7e3-115">Application</span></span> | <span data-ttu-id="ed7e3-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed7e3-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-<span data-ttu-id="ff0c0-117">**Observação:** embora a solicitação /sharedWithMe tenha êxito com as permissões Files.Read ou Files.ReadWrite, algumas propriedades podem estar ausentes.</span><span class="sxs-lookup"><span data-stu-id="ff0c0-117">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
-<span data-ttu-id="ff0c0-118">Além disso, sem uma das permissões **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.</span><span class="sxs-lookup"><span data-stu-id="ff0c0-118">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
+<span data-ttu-id="ed7e3-117">**Observação:** embora a solicitação /sharedWithMe tenha êxito com as permissões Files.Read ou Files.ReadWrite, algumas propriedades podem estar ausentes.</span><span class="sxs-lookup"><span data-stu-id="ed7e3-117">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
+<span data-ttu-id="ed7e3-118">Além disso, sem uma das permissões **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.</span><span class="sxs-lookup"><span data-stu-id="ed7e3-118">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="ff0c0-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ff0c0-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed7e3-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ed7e3-119">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
@@ -38,9 +39,9 @@ ms.locfileid: "27881505"
 GET /me/drive/sharedWithMe
 ```
 
-## <a name="response"></a><span data-ttu-id="ff0c0-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="ff0c0-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ed7e3-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="ed7e3-120">Response</span></span>
 
-<span data-ttu-id="ff0c0-p104">Isso retorna uma coleção de recursos [DriveItem](../resources/driveitem.md) que contêm DriveItem recursos compartilhados com o proprietário da unidade. Neste exemplo, como a unidade é a do usuário padrão, isso retorna itens compartilhados com o usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="ff0c0-p104">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
+<span data-ttu-id="ed7e3-p104">Isso retorna uma coleção de recursos [DriveItem](../resources/driveitem.md) que contêm DriveItem recursos compartilhados com o proprietário da unidade. Neste exemplo, como a unidade é a do usuário padrão, isso retorna itens compartilhados com o usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="ed7e3-p104">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
 
@@ -80,9 +81,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="ff0c0-123">Comentários</span><span class="sxs-lookup"><span data-stu-id="ff0c0-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ed7e3-123">Comentários</span><span class="sxs-lookup"><span data-stu-id="ed7e3-123">Remarks</span></span>
 
-<span data-ttu-id="ff0c0-p105">DriveItems retornados da ação **sharedWithMe** sempre incluirão a faceta [**remoteItem**](../resources/remoteitem.md), que indica que são itens de uma unidade diferente. Para acessar o recurso compartilhado DriveItem, você precisará fazer uma solicitação usando as informações fornecidas em **remoteItem** no seguinte formato:</span><span class="sxs-lookup"><span data-stu-id="ff0c0-p105">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="ed7e3-p105">DriveItems retornados da ação **sharedWithMe** sempre incluirão a faceta [**remoteItem**](../resources/remoteitem.md), que indica que são itens de uma unidade diferente. Para acessar o recurso compartilhado DriveItem, você precisará fazer uma solicitação usando as informações fornecidas em **remoteItem** no seguinte formato:</span><span class="sxs-lookup"><span data-stu-id="ed7e3-p105">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
