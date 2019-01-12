@@ -2,26 +2,28 @@
 title: tipo de recurso de mailTipsError
 description: Um erro que ocorre durante uma ação.
 localization_priority: Normal
-ms.openlocfilehash: a4916bc34d7c76dc6c6592ee03e64b20a6485190
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 499949c5995025e9327e1f662365b0c5e43c80f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892090"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934202"
 ---
-# <a name="mailtipserror-resource-type"></a><span data-ttu-id="9da56-103">tipo de recurso de mailTipsError</span><span class="sxs-lookup"><span data-stu-id="9da56-103">mailTipsError resource type</span></span>
+# <a name="mailtipserror-resource-type"></a><span data-ttu-id="59e33-103">tipo de recurso de mailTipsError</span><span class="sxs-lookup"><span data-stu-id="59e33-103">mailTipsError resource type</span></span>
 
-<span data-ttu-id="9da56-104">Um erro que ocorre durante uma ação.</span><span class="sxs-lookup"><span data-stu-id="9da56-104">An error that occurs during an action.</span></span>
+<span data-ttu-id="59e33-104">Um erro que ocorre durante uma ação.</span><span class="sxs-lookup"><span data-stu-id="59e33-104">An error that occurs during an action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9da56-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9da56-105">Properties</span></span>
-| <span data-ttu-id="9da56-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9da56-106">Property</span></span>     | <span data-ttu-id="9da56-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="9da56-107">Type</span></span>   |<span data-ttu-id="9da56-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="9da56-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="59e33-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="59e33-105">Properties</span></span>
+| <span data-ttu-id="59e33-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="59e33-106">Property</span></span>     | <span data-ttu-id="59e33-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="59e33-107">Type</span></span>   |<span data-ttu-id="59e33-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="59e33-108">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="9da56-109">mensagem</span><span class="sxs-lookup"><span data-stu-id="9da56-109">message</span></span> | <span data-ttu-id="9da56-110">String</span><span class="sxs-lookup"><span data-stu-id="9da56-110">String</span></span> | <span data-ttu-id="9da56-111">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="9da56-111">The error message.</span></span> |
-| <span data-ttu-id="9da56-112">código</span><span class="sxs-lookup"><span data-stu-id="9da56-112">code</span></span> | <span data-ttu-id="9da56-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9da56-113">String</span></span> | <span data-ttu-id="9da56-114">O código do erro.</span><span class="sxs-lookup"><span data-stu-id="9da56-114">The error code.</span></span> |
+| <span data-ttu-id="59e33-109">mensagem</span><span class="sxs-lookup"><span data-stu-id="59e33-109">message</span></span> | <span data-ttu-id="59e33-110">String</span><span class="sxs-lookup"><span data-stu-id="59e33-110">String</span></span> | <span data-ttu-id="59e33-111">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="59e33-111">The error message.</span></span> |
+| <span data-ttu-id="59e33-112">código</span><span class="sxs-lookup"><span data-stu-id="59e33-112">code</span></span> | <span data-ttu-id="59e33-113">String</span><span class="sxs-lookup"><span data-stu-id="59e33-113">String</span></span> | <span data-ttu-id="59e33-114">O código do erro.</span><span class="sxs-lookup"><span data-stu-id="59e33-114">The error code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="9da56-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9da56-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="59e33-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="59e33-115">JSON representation</span></span>
 
-<span data-ttu-id="9da56-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9da56-116">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="59e33-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="59e33-116">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

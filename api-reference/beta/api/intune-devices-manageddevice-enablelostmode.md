@@ -3,30 +3,31 @@ title: ação de enableLostMode
 description: Habilitar o modo perdido
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f8ba6a21466c2a612920754e18a0252ef8f2b826
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0bd7d58a70d60b040b25dcb38574e16edb309599
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934321"
 ---
-# <a name="enablelostmode-action"></a><span data-ttu-id="88997-103">ação de enableLostMode</span><span class="sxs-lookup"><span data-stu-id="88997-103">enableLostMode action</span></span>
+# <a name="enablelostmode-action"></a><span data-ttu-id="046ef-103">ação de enableLostMode</span><span class="sxs-lookup"><span data-stu-id="046ef-103">enableLostMode action</span></span>
 
-> <span data-ttu-id="88997-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="88997-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="88997-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="88997-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="046ef-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="046ef-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="046ef-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="046ef-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="88997-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="88997-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="046ef-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="046ef-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="88997-107">Habilitar o modo perdido</span><span class="sxs-lookup"><span data-stu-id="88997-107">Enable lost mode</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="88997-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="88997-108">Prerequisites</span></span>
-<span data-ttu-id="88997-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88997-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="046ef-107">Habilitar o modo perdido</span><span class="sxs-lookup"><span data-stu-id="046ef-107">Enable lost mode</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="046ef-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="046ef-108">Prerequisites</span></span>
+<span data-ttu-id="046ef-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="046ef-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88997-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="88997-111">Permission type</span></span>|<span data-ttu-id="88997-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="88997-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="046ef-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="046ef-111">Permission type</span></span>|<span data-ttu-id="046ef-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="046ef-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="88997-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="88997-113">Delegated (work or school account)</span></span>|<span data-ttu-id="88997-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="88997-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="88997-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88997-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="88997-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88997-116">Not supported.</span></span>|
-|<span data-ttu-id="88997-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="88997-117">Application</span></span>|<span data-ttu-id="88997-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="88997-118">Not supported.</span></span>|
+|<span data-ttu-id="046ef-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="046ef-113">Delegated (work or school account)</span></span>|<span data-ttu-id="046ef-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="046ef-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="046ef-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="046ef-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="046ef-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="046ef-116">Not supported.</span></span>|
+|<span data-ttu-id="046ef-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="046ef-117">Application</span></span>|<span data-ttu-id="046ef-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="046ef-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="88997-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="88997-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="046ef-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="046ef-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +39,31 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/enableLostMode
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="88997-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="88997-120">Request headers</span></span>
-|<span data-ttu-id="88997-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="88997-121">Header</span></span>|<span data-ttu-id="88997-122">Valor</span><span class="sxs-lookup"><span data-stu-id="88997-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="046ef-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="046ef-120">Request headers</span></span>
+|<span data-ttu-id="046ef-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="046ef-121">Header</span></span>|<span data-ttu-id="046ef-122">Valor</span><span class="sxs-lookup"><span data-stu-id="046ef-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="88997-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="88997-123">Authorization</span></span>|<span data-ttu-id="88997-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="88997-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="88997-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="88997-125">Accept</span></span>|<span data-ttu-id="88997-126">application/json</span><span class="sxs-lookup"><span data-stu-id="88997-126">application/json</span></span>|
+|<span data-ttu-id="046ef-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="046ef-123">Authorization</span></span>|<span data-ttu-id="046ef-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="046ef-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="046ef-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="046ef-125">Accept</span></span>|<span data-ttu-id="046ef-126">application/json</span><span class="sxs-lookup"><span data-stu-id="046ef-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="88997-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="88997-127">Request body</span></span>
-<span data-ttu-id="88997-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="88997-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="046ef-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="046ef-127">Request body</span></span>
+<span data-ttu-id="046ef-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="046ef-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="88997-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="88997-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="046ef-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="046ef-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="88997-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="88997-130">Property</span></span>|<span data-ttu-id="88997-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="88997-131">Type</span></span>|<span data-ttu-id="88997-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="88997-132">Description</span></span>|
+|<span data-ttu-id="046ef-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="046ef-130">Property</span></span>|<span data-ttu-id="046ef-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="046ef-131">Type</span></span>|<span data-ttu-id="046ef-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="046ef-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="88997-133">mensagem</span><span class="sxs-lookup"><span data-stu-id="88997-133">message</span></span>|<span data-ttu-id="88997-134">String</span><span class="sxs-lookup"><span data-stu-id="88997-134">String</span></span>|<span data-ttu-id="88997-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="88997-135">Not yet documented</span></span>|
-|<span data-ttu-id="88997-136">phoneNumber</span><span class="sxs-lookup"><span data-stu-id="88997-136">phoneNumber</span></span>|<span data-ttu-id="88997-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="88997-137">String</span></span>|<span data-ttu-id="88997-138">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="88997-138">Not yet documented</span></span>|
-|<span data-ttu-id="88997-139">rodapé</span><span class="sxs-lookup"><span data-stu-id="88997-139">footer</span></span>|<span data-ttu-id="88997-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="88997-140">String</span></span>|<span data-ttu-id="88997-141">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="88997-141">Not yet documented</span></span>|
+|<span data-ttu-id="046ef-133">mensagem</span><span class="sxs-lookup"><span data-stu-id="046ef-133">message</span></span>|<span data-ttu-id="046ef-134">String</span><span class="sxs-lookup"><span data-stu-id="046ef-134">String</span></span>|<span data-ttu-id="046ef-135">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="046ef-135">Not yet documented</span></span>|
+|<span data-ttu-id="046ef-136">phoneNumber</span><span class="sxs-lookup"><span data-stu-id="046ef-136">phoneNumber</span></span>|<span data-ttu-id="046ef-137">String</span><span class="sxs-lookup"><span data-stu-id="046ef-137">String</span></span>|<span data-ttu-id="046ef-138">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="046ef-138">Not yet documented</span></span>|
+|<span data-ttu-id="046ef-139">rodapé</span><span class="sxs-lookup"><span data-stu-id="046ef-139">footer</span></span>|<span data-ttu-id="046ef-140">String</span><span class="sxs-lookup"><span data-stu-id="046ef-140">String</span></span>|<span data-ttu-id="046ef-141">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="046ef-141">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="88997-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="88997-142">Response</span></span>
-<span data-ttu-id="88997-143">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="88997-143">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="046ef-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="046ef-142">Response</span></span>
+<span data-ttu-id="046ef-143">Se tiver êxito, esta ação retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="046ef-143">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="88997-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="88997-144">Example</span></span>
-### <a name="request"></a><span data-ttu-id="88997-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="88997-145">Request</span></span>
-<span data-ttu-id="88997-146">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="88997-146">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="046ef-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="046ef-144">Example</span></span>
+### <a name="request"></a><span data-ttu-id="046ef-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="046ef-145">Request</span></span>
+<span data-ttu-id="046ef-146">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="046ef-146">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/enableLostMode
 
@@ -76,8 +77,8 @@ Content-length: 103
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="88997-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="88997-147">Response</span></span>
-<span data-ttu-id="88997-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="88997-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="046ef-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="046ef-147">Response</span></span>
+<span data-ttu-id="046ef-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="046ef-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
