@@ -3,12 +3,13 @@ title: tipo de enum deviceRegistrationState
 description: Status do registro do dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7633419ebeeb5c5865cd1a80c251effbf314b018
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d6d6b38beb34b8725587d9284dd524008320bba3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961859"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enum deviceRegistrationState
 

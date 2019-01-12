@@ -2,12 +2,14 @@
 title: Tipo de recurso deviceManagement
 description: 'O recurso de deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  '
 localization_priority: Normal
-ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961334"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 

@@ -3,12 +3,13 @@ title: Excluir androidForWorkCompliancePolicy
 description: Exclui um androidForWorkCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 030f7fe92a9630e3791f020b1008a1abc4a18685
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3477fddc83f1821d8763f4bb7073d002f532746d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873650"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939298"
 ---
 # <a name="delete-androidforworkcompliancepolicy"></a>Excluir androidForWorkCompliancePolicy
 

@@ -3,12 +3,13 @@ title: Excluir windows10VpnConfiguration
 description: Exclui um windows10VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 409bb303e4c5fcdedbca2a773c161cb857f3f5c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6d60eba5a66b1150998f04c58a3633dff0fa7f8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873686"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930408"
 ---
 # <a name="delete-windows10vpnconfiguration"></a>Excluir windows10VpnConfiguration
 

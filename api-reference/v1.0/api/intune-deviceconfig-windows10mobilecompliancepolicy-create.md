@@ -3,12 +3,13 @@ title: Criar windows10MobileCompliancePolicy
 description: Cria um novo objeto windows10MobileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a75a15155f55102c58bc2888b867ff9ae82a75d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 745504fa748051bf8a65de588b30295a22725b60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875051"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937205"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>Criar windows10MobileCompliancePolicy
 
