@@ -3,12 +3,13 @@ title: Tipo de recurso androidStoreApp
 description: Contém propriedades e propriedades herdadas para aplicativos da loja Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7296275231079dd8e75225ec461a6b3eb269da8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 559888069f34ebbe199a47f377b4fa833fbfd177
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826854"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977392"
 ---
 # <a name="androidstoreapp-resource-type"></a>Tipo de recurso androidStoreApp
 

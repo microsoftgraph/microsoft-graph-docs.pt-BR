@@ -1,14 +1,15 @@
 ---
 title: tipo de recurso de alertTrigger
 description: Contém informações sobre as propriedades que disparou uma detecção (Propriedades existirem na entidade alerta).
-author: Preetikr
+author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 3a2f6818bad0c5600e4b2a2a2682707643d1900c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894338"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991255"
 ---
 # <a name="alerttrigger-resource-type"></a>tipo de recurso de alertTrigger
 

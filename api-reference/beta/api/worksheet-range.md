@@ -3,12 +3,13 @@ title: 'Worksheet: Range'
 description: Obtém o objeto de intervalo especificado pelo nome ou endereço.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 78865ab8f7e4aa7d59bb6f3c782731bae058ae80
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3d4241e6aeccd0d400388e03a4ce1254df7d0dc0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860666"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970994"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 

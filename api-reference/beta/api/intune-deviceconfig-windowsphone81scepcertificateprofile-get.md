@@ -3,12 +3,13 @@ title: Obter windowsPhone81SCEPCertificateProfile
 description: Leia as propriedades e os relacionamentos do objeto windowsPhone81SCEPCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2f7c933b2dbbf19b4d332a98fc34fc6cadc2a9c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 51dbdb1439b64cab13902a1443d6c25b602f3308
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812289"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970049"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Obter windowsPhone81SCEPCertificateProfile
 

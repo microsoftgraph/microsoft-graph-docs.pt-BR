@@ -2,12 +2,14 @@
 title: Listar tarefas
 description: Recupere uma lista de objetos **plannertask** atribuídos a um Usuário.
 localization_priority: Normal
-ms.openlocfilehash: 665a37709699571e3b61389738db4d19ed6fef96
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b74a7a6c87635a9da541b66c058e9adbb831671e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916030"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 

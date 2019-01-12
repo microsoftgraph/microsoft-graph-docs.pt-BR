@@ -3,12 +3,13 @@ title: Criar windows81WifiImportConfiguration
 description: Crie um novo objeto de windows81WifiImportConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2af2f81e16c33d72eef4e930a7ac26c38980c0a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9fcb592903d0be17f0a1f7bfed3c77e50dbc2e35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873413"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973444"
 ---
 # <a name="create-windows81wifiimportconfiguration"></a>Criar windows81WifiImportConfiguration
 

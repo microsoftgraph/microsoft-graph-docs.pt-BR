@@ -3,12 +3,13 @@ title: Atualizar androidForWorkEnrollmentProfile
 description: Atualizar as propriedades de um objeto androidForWorkEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a9f7f98e8fc1192ce80ce054f6699690189905b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5c65c01996ce482d7456396fd831a9ab2aa465b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824042"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916205"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Atualizar androidForWorkEnrollmentProfile
 
@@ -48,16 +49,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|Cadeia de caracteres|GUID de locatário ao qual o perfil de registro pertence.|
-|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
-|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
-|description|Cadeia de caracteres|Descrição do perfil de registro.|
+|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
+|id|String|GUID exclusivo do perfil de registro.|
+|displayName|String|Nome de exibição do perfil de registro.|
+|description|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|Cadeia de caracteres|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
-|qrCodeContent|Cadeia de caracteres|Cadeia de caracteres usada para gerar um código QR para o token.|
+|qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
 
 

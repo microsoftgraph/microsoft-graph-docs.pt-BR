@@ -3,12 +3,13 @@ title: tipo de recurso vpnServer
 description: Definição do servidor VPN.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b48daa95cc2227f6d1691902a75614446c93a10a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 61eaedb7ecca3f4a7074d079f2b10164dfe2ad76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889870"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969545"
 ---
 # <a name="vpnserver-resource-type"></a>tipo de recurso vpnServer
 

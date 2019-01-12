@@ -3,12 +3,13 @@ title: tipo de recurso de depOnboardingSetting
 description: O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onboarded para Intune. A instância do serviço onboarded gerencia um Token Apple usado para sincronizar dados entre Apple e Intune.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 56f49ce8635120b06344abe13376271a3eb0a796
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e4b45c4a14258fbe53e8cdfd8c5e83b8c858966b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970679"
 ---
 # <a name="deponboardingsetting-resource-type"></a>tipo de recurso de depOnboardingSetting
 

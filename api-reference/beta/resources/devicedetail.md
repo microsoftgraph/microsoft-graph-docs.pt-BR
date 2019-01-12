@@ -2,12 +2,14 @@
 title: tipo de recurso de deviceDetail
 description: Indica os detalhes do dispositivo associados a um dispositivo usado para assinar. Inclui informações como o navegador do dispositivo e informações do sistema operacional, se o dispositivo for Azure AD gerenciado.
 localization_priority: Normal
-ms.openlocfilehash: ca4679a8c484b6dc5b36ef39d3d6d039537cbdbb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 18d55e397cf6c892cd37aea930d446c630017a92
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884837"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971358"
 ---
 # <a name="devicedetail-resource-type"></a>tipo de recurso de deviceDetail
 Indica os detalhes do dispositivo associados a um dispositivo usado para assinar. Inclui informações como o navegador do dispositivo e informações do sistema operacional, se o dispositivo for Azure AD gerenciado.

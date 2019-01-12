@@ -2,12 +2,14 @@
 title: Criar uma configuração de diretório
 description: Use essa API para criar uma nova definição, com base em modelos de disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que controlam se os membros de um grupo podem convidar usuários convidados pode ser definido. Depois que a capacidade de adicionar usuários convidados a um grupo estiver disponível, isso orientará esse comportamento.
 localization_priority: Normal
-ms.openlocfilehash: 692ca0d68522b5b268e9ee670c694e5a5c6bee90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6754e8e4210da0161a6f0cd790dc355e4788e121
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848717"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921763"
 ---
 # <a name="create-a-directory-setting"></a>Criar uma configuração de diretório
 
@@ -20,7 +22,7 @@ Use essa API para criar uma nova definição, com base em modelos de disponívei
 Para obter uma lista de modelos e as propriedades que eles oferecem suporte na versão beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Para os pontos de extremidade v 1.0, chamada [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

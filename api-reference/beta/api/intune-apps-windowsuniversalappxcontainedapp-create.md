@@ -3,12 +3,13 @@ title: Criar windowsUniversalAppXContainedApp
 description: Crie um novo objeto de windowsUniversalAppXContainedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 283852a1539fd16bb6c19f9db0d1770d9eb7e466
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0466628ed1b2e6f3e0e196498b7cef3bb9daf24
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863823"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920979"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Criar windowsUniversalAppXContainedApp
 
@@ -50,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Cadeia de caracteres|A ID de modelo de usuário do aplicativo do aplicativo de um aplicativo WindowsUniversalAppX contido.|
+|id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String|A ID de modelo de usuário do aplicativo do aplicativo de um aplicativo WindowsUniversalAppX contido.|
 
 
 

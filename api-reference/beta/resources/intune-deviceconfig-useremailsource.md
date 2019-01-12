@@ -3,12 +3,13 @@ title: tipo de enum userEmailSource
 description: Valores possíveis para o nome de usuário origem ou fonte de email.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9d642992b233d6a249971b4e36099a4ff5ceb730
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bbc524507492357b58d27b5eaf3291177351eb72
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861611"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955055"
 ---
 # <a name="useremailsource-enum-type"></a>tipo de enum userEmailSource
 

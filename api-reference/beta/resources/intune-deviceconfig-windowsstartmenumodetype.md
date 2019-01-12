@@ -2,12 +2,14 @@
 title: tipo de enum windowsStartMenuModeType
 description: Tipo de modos de exibição para o menu Iniciar.
 author: tfitzmac
-ms.openlocfilehash: fb0f80a24442af2ce584123633c1d25b41f7077b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: c713652e73595e1fadc5c62e9d5b3951bcda85a9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27357362"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987717"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>tipo de enum windowsStartMenuModeType
 

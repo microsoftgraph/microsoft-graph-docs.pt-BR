@@ -3,12 +3,13 @@ title: Criar dataSharingConsent
 description: Crie um novo objeto de dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d329072b6e18f8ecbb745769e872c76fdae86b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862283"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919075"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -48,13 +49,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O consentimento de compartilhamento de dados Id|
-|Nome_para_exibição_do_serviço|Cadeia de caracteres|O nome para exibição do fluxo de trabalho de serviço|
-|termsUrl|Cadeia de caracteres|O TermsUrl para os consentimento de compartilhamento de dados|
+|id|String|O consentimento de compartilhamento de dados Id|
+|Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
+|termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
 |concedido|Booliano|O estado foram concedido para os consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|Cadeia de caracteres|O Upn do usuário que tenha concedido consentimento para esta conta|
-|grantedByUserId|Cadeia de caracteres|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
+|grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
+|grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
 
 
 

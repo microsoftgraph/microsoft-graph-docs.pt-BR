@@ -3,12 +3,13 @@ title: Criar macOSCompliancePolicy
 description: Cria um novo objeto macOSCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ad826b09c98c248a4223ca733dda38d3f05b07e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 68e4e59882a2d861a7a65c6077bfa685f8b5b86b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874596"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973675"
 ---
 # <a name="create-macoscompliancepolicy"></a>Criar macOSCompliancePolicy
 

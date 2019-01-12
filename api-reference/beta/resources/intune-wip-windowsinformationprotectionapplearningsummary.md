@@ -3,12 +3,13 @@ title: Tipo de recurso windowsInformationProtectionAppLearningSummary
 description: Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6394f9560bfe0ee2a81f38671d196dc3ba5588aa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cb2de8ba6b3a8daec7d13cb72a683bdec74e6c28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819828"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987696"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLearningSummary
 

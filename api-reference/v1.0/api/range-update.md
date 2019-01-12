@@ -3,12 +3,13 @@ title: Intervalo de atualização
 description: Atualize as propriedades do objeto range.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 086dd7271ade9d3ab3e853692b3f1d084a53bbed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821984"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987598"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 

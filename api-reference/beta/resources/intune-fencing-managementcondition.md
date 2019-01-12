@@ -2,12 +2,14 @@
 title: tipo de recurso de managementCondition
 description: Condições de gerenciamento são eventos que podem ser disparados dinamicamente como limites de geo, limites de tempo e limites de rede.
 localization_priority: Normal
-ms.openlocfilehash: a836aeaa660de8f02c4e441e9eb390e1513c917c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e0aeb73a93cd4c61b6d4680f73c2a9b8cee830c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834108"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986737"
 ---
 # <a name="managementcondition-resource-type"></a>tipo de recurso de managementCondition
 

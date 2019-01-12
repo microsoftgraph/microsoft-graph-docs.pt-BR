@@ -2,12 +2,14 @@
 title: tipo de recurso de mailTipsError
 description: Um erro que ocorre durante uma ação.
 localization_priority: Normal
-ms.openlocfilehash: 7df13bb45471d89fdf25b4a251e441bbf2dfad9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: b9efff5538d7eb6be0fe468f70a4ff59ddf9d14a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865621"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916198"
 ---
 # <a name="mailtipserror-resource-type"></a>tipo de recurso de mailTipsError
 
@@ -19,7 +21,7 @@ Um erro que ocorre durante uma ação.
 | Propriedade     | Tipo   |Descrição|
 |:-----|:-----|:-----|
 | mensagem | String | A mensagem de erro. |
-| código | Cadeia de caracteres | O código do erro. |
+| código | String | O código do erro. |
 
 ## <a name="json-representation"></a>Representação JSON
 

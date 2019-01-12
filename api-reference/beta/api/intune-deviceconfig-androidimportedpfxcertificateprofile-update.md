@@ -3,12 +3,13 @@ title: Atualizar androidImportedPFXCertificateProfile
 description: Atualize as propriedades de um objeto androidImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7b7a70297a093c714fe6c28998bb8e708f34276a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abb760640a0fb8d147fb9adc6f3b68935ef5bf8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991185"
 ---
 # <a name="update-androidimportedpfxcertificateprofile"></a>Atualizar androidImportedPFXCertificateProfile
 

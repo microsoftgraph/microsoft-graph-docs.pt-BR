@@ -3,12 +3,13 @@ title: tipo de enum installIntent
 description: Valores possíveis para a intenção de instalar escolhido pelo administrador a.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6849e333c6487029706c5a2485a174c10e665f46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aaea49b0c808b0591a059f46ed0eb06fa17b6177
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972051"
 ---
 # <a name="installintent-enum-type"></a>tipo de enum installIntent
 

@@ -3,12 +3,13 @@ title: Lista androidWorkProfileCertificateProfileBases
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileCertificateProfileBase.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b73562cfe017d783059ed13a2b1388c0dc43b18c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 516b1a281c854926e3d608235ecb0bb5e1934c03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891025"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969965"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>Lista androidWorkProfileCertificateProfileBases
 

@@ -2,12 +2,14 @@
 title: Obter groupLifecyclePolicy
 description: Recupera as propriedades e os relacionamentos de um objeto groupLifecyclePolicies.
 author: dkershaw10
-ms.openlocfilehash: ef239385766b33c4a03576200c6c9abf3938c25a
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: groups
+ms.openlocfilehash: ea7833e9129d31c6c01963755e282a8cc34b65b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312520"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921035"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Obter groupLifecyclePolicy
 

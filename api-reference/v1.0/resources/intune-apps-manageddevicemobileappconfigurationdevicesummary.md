@@ -2,12 +2,14 @@
 title: Tipo de recurso managedDeviceMobileAppConfigurationDeviceSummary
 description: Contém propriedades, propriedades herdadas e ações para um resumo de status do dispositivo de configuração de aplicativo móvel de MDM.
 localization_priority: Normal
-ms.openlocfilehash: 47a323a074bd42d1e075a2a5ddd6aeb9181c98eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 597b153a2897f37a6c6d497617bd374ade56c6e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971379"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationDeviceSummary
 

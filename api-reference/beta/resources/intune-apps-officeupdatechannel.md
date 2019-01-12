@@ -3,12 +3,13 @@ title: tipo de enum officeUpdateChannel
 description: A enumeração para especificar o canal de atualizações de Office365.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 753c85c451934e8a9c2ee0f8fe2439900c487ded
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7c998c82aa580e3178ed46fc741413356b37660d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828480"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923625"
 ---
 # <a name="officeupdatechannel-enum-type"></a>tipo de enum officeUpdateChannel
 

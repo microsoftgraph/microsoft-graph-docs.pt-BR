@@ -3,12 +3,13 @@ title: Tipo de recurso ChartLineFormat
 description: Abrange as opções de formatação dos elementos de linha.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: b2b7e8bd5c0b489ed42baaa3939f7a839c74c3e7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 34867056e2936ff95351a78ad6ee5f2ac47cf18e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991773"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
 

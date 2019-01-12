@@ -3,12 +3,13 @@ title: Obter macOSWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto macOSWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: af0666d02dada6dfe694773b52b30e8b67f8dc83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aa93139bafd07cf6e1766cef2aabfb1cbe7e02fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822537"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955279"
 ---
 # <a name="get-macoswificonfiguration"></a>Obter macOSWiFiConfiguration
 

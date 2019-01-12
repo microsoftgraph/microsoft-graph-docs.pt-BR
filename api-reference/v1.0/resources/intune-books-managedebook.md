@@ -3,12 +3,13 @@ title: Tipo de recurso managedEBook
 description: Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 61a4098850f9b3b4a6b82f2fcee5d1ce89b0696d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a2da2254b5d86a16d3a0e60fae0c0ea4215d54a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830251"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917857"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -25,7 +26,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico.|
 |description|Cadeia de caracteres|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
@@ -33,8 +34,8 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico.|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais.|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
+|informationUrl|String|A URL de informações adicionais.|
+|privacyInformationUrl|String|A URL da declaração de privacidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

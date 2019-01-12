@@ -3,12 +3,13 @@ title: Lista embeddedSIMActivationCodePools
 description: Lista as propriedades e os relacionamentos dos objetos embeddedSIMActivationCodePool.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 011c55c6bea026e2e110c35a99545f6d5abf89f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8398db4600eb89a77c16960e105ed74d7aa17eb1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848353"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920286"
 ---
 # <a name="list-embeddedsimactivationcodepools"></a>Lista embeddedSIMActivationCodePools
 

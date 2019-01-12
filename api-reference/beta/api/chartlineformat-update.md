@@ -3,12 +3,13 @@ title: Atualizar chartlineformat
 description: Atualiza as propriedades do objeto chartlineformat.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c47ec9159ba6592de2a57c50ff1a22bad0b52e3b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: d3f7b5c8e4b542dd249ea10a0fea92b28587db97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892376"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921903"
 ---
 # <a name="update-chartlineformat"></a>Atualizar chartlineformat
 

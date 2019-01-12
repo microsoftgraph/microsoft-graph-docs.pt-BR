@@ -2,12 +2,14 @@
 title: 'directoryRole: delta'
 description: Get recentemente criado, atualizado ou excluído funções de diretório sem precisar realizar uma leitura completa do conjunto de recurso inteiro. Consulte usando Delta consulta para obter detalhes.
 localization_priority: Normal
-ms.openlocfilehash: 9eb847f390b4f05f56945a6496325bbeaccdf410
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c5f17ed70426d8102870537354edf3cea9a723b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916744"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: delta
 
@@ -15,7 +17,7 @@ ms.locfileid: "27809118"
 
 Get recentemente criado, atualizado ou excluído funções de diretório sem precisar realizar uma leitura completa do conjunto de recurso inteiro. Consulte [Usando Delta consulta](/graph/delta-query-overview) para obter detalhes.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

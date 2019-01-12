@@ -1,21 +1,22 @@
 ---
 title: Criar proprietário
 description: Use essa API para criar um novo proprietário.
-author: lleonard-msft
+author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 82a117fb42cdd80ae83ef24b9c0fedf74dbd3d04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d3bb4ae2e944ae9a292545bba462381fd7212130
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833772"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922303"
 ---
 # <a name="create-owner"></a>Criar proprietário
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Use essa API para criar um novo proprietário.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

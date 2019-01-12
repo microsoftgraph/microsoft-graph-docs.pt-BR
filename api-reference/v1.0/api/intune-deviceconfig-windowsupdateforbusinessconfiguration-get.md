@@ -3,12 +3,13 @@ title: Get windowsUpdateForBusinessConfiguration
 description: Ler propriedades e relações do objeto windowsUpdateForBusinessConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b13f12c48d9a3bf5fdfc8d50874be07906b39220
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a7e9344ae8550bcc1992ba24d24fd94dff3821c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991017"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 

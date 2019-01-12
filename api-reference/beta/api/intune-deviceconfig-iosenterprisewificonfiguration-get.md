@@ -3,12 +3,13 @@ title: Obter iosEnterpriseWiFiConfiguration
 description: Leia as propriedades e os relacionamentos do objeto iosEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9707e8daa6b987c2e36a34a6a4b66a501e2be874
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: baf75b325dc98e1346c8e24c6f8d7de6eb17e89a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973612"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Obter iosEnterpriseWiFiConfiguration
 

@@ -3,12 +3,13 @@ title: Atualizar educationsubmission
 description: Adicione um nível e os comentários para o envio de um. Professores só podem executar essa operação. Observe que a permissão básica não tem acesso às propriedades do nível e, portanto, não é possível gravar em nível ou comentários. Essa ação não libera o nível e comentários ao aluno. Um professor deve executar uma ação de versão explícita para os dados de nível a ser retornado ao aluno.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 516940f9a6dd43460aa0ceb9b955c41dc89196c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 7ebe8445a6537333ed17f3626a58258a952ee844
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828781"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975334"
 ---
 # <a name="update-educationsubmission"></a>Atualizar educationsubmission
 

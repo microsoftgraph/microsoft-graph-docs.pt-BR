@@ -3,12 +3,13 @@ title: Visão geral sobre pessoas
 description: O Microsoft Graph fornece acesso a dados úteis de pessoas.
 author: simonhult
 localization_priority: Priority
-ms.openlocfilehash: b91838c925148e75c578e00fd356f1e5c8226fb6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: bbfbcbf7826190e092929f48d02f98d3bc811153
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888732"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971769"
 ---
 # <a name="people-overview"></a>Visão geral sobre pessoas
 

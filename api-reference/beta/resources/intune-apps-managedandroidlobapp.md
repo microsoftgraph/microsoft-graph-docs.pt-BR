@@ -3,12 +3,13 @@ title: managedAndroidLobApp resource type
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Android gerenciados.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c19928b0bde339962bb00fc3e8f81845e00011dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 79c2143700d52e2bf3119e0be5445f3b65163ed1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822754"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990842"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp resource type
 

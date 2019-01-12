@@ -3,12 +3,13 @@ title: tipo de recurso de bitLockerSystemDrivePolicy
 description: Políticas de Base de criptografia BitLocker.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 030051faf1405cf15c138384c1b6ab8891fbae95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 28c3b597f25e7ea83577c18620280885f4149dcf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867428"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924654"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>tipo de recurso de bitLockerSystemDrivePolicy
 
@@ -30,8 +31,8 @@ Políticas de Base de criptografia BitLocker.
 |minimumPinLength|Int32|Indica o tamanho mínimo do pin de inicialização. Valores válidos 4 a 20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Permite recuperar BitLocker criptografado unidades do sistema operacional na ausência das informações de chave de inicialização necessários. Essa configuração de política é aplicada quando você ativa o BitLocker.|
 |prebootRecoveryEnableMessageAndUrl|Booliano|Habilite a mensagem de recuperação antes da inicialização e a Url. Se requireStartupAuthentication for false, esse valor não afeta.|
-|prebootRecoveryMessage|Cadeia de caracteres|Define uma mensagem de recuperação personalizada.|
-|prebootRecoveryUrl|Cadeia de caracteres|Define uma URL personalizada de recuperação.|
+|prebootRecoveryMessage|String|Define uma mensagem de recuperação personalizada.|
+|prebootRecoveryUrl|String|Define uma URL personalizada de recuperação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

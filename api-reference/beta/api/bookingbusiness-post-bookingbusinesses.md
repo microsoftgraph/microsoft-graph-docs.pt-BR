@@ -2,12 +2,14 @@
 title: Criar bookingBusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: bfecb479a04f991799eb239c643e2cc521d8332c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: aa5c4b9eaa2426736d23f42856d19ab14e6a1a43
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894471"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922316"
 ---
 # <a name="create-bookingbusiness"></a>Criar bookingBusiness
 
@@ -16,7 +18,7 @@ ms.locfileid: "27894471"
 Crie um novo negócio Microsoft Bookings em um locatário. 
 
 Esta é a primeira etapa na configuração de uma empresa reservas onde você deve especificar o nome de exibição de negócios. Você pode incluir outras informações como endereço comercial, o endereço do site e a diretiva de agendamento, ou definir essas informações posteriormente através da [atualização](bookingbusiness-update.md) , o **bookingBusiness**.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

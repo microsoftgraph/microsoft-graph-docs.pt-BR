@@ -3,12 +3,13 @@ title: 'workbookRangeView: intervalo'
 description: Retorne o intervalo associado com o recurso rangeView.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8c116a80e01c0b649ff1846de3e324874e7dd837
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 616d65c490f7691ec8ab83ffd12eaba480f4734a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863417"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970901"
 ---
 # <a name="workbookrangeview-range"></a>workbookRangeView: intervalo
 

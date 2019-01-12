@@ -2,12 +2,14 @@
 title: Tipo de recurso roleDefinition
 description: 'O recurso de Definição de Função. A definição da função é a base do acesso baseado em função no Intune. A função combina um recurso do Intune, como um aplicativo móvel e permissões de função associadas, como Criar ou Ler para o recurso. Existem dois tipos de funções: internas e personalizadas. Funções internas não podem ser modificadas. Tanto funções internas quanto personalizadas devem ter atribuições a serem impostas. Crie funções personalizadas se quiser definir uma função que permita que qualquer um dos recursos disponíveis e permissões de funções sejam combinados em uma única função.'
 localization_priority: Normal
-ms.openlocfilehash: d3f5ef8ddd67302b747b2f35b0e4f62f3f6c00d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f09b94649f30909c2efc2d9851503b5b8db14127
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804813"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971869"
 ---
 # <a name="roledefinition-resource-type"></a>Tipo de recurso roleDefinition
 

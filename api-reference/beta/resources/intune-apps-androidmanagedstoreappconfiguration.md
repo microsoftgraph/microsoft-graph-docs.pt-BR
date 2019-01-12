@@ -2,12 +2,14 @@
 title: tipo de recurso de androidManagedStoreAppConfiguration
 description: Contém propriedades, as propriedades herdadas e ações para configurações de aplicativos móveis Android Enterprise.
 localization_priority: Normal
-ms.openlocfilehash: 53d8ad4e566bac9d96c467e459ac08bc2e4d011d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 471c2b40d4aa58072be0e1eafb8ecdc114922c25
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866350"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987213"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>tipo de recurso de androidManagedStoreAppConfiguration
 

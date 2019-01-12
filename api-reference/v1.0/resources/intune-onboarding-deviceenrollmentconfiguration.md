@@ -3,12 +3,13 @@ title: Tipo de recurso deviceEnrollmentConfiguration
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee0afc4cb8f8f2d1f645fcd9826cafc771824a07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d62bc9406b00632613d172df2ae4b4ab3fa045ab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865552"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922496"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
@@ -26,9 +27,9 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
-|displayName|Cadeia de caracteres|Ainda não documentado|
-|descrição|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
+|displayName|String|Ainda não documentado|
+|descrição|String|Ainda não documentado|
 |prioridade|Int32|Ainda não documentado|
 |createdDateTime|DateTimeOffset|Ainda não documentado|
 |lastModifiedDateTime|DateTimeOffset|Ainda não documentado|

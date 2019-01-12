@@ -3,12 +3,13 @@ title: tipo de recurso de mobileAppInstallSummary
 description: Contém propriedades para o resumo da instalação de um aplicativo móvel.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b730f73b8a86c8acba531ab0d30a67b2f8e7a7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a75dba8303d254aff911cc66931d52abb8b76c07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820353"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916023"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso de mobileAppInstallSummary
 
@@ -26,7 +27,7 @@ Contém propriedades para o resumo da instalação de um aplicativo móvel.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |installedDeviceCount|Int32|Número de dispositivos que instalou com sucesso deste aplicativo.|
 |failedDeviceCount|Int32|Número de dispositivos que não tenha conseguido instalar esse aplicativo.|
 |notApplicableDeviceCount|Int32|Número de dispositivos que não são aplicáveis para esse aplicativo.|

@@ -3,12 +3,13 @@ title: tipo de recurso de mediaStream
 description: O tipo de mediaStream.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fd003bde0eca5fd21cb12c23d5c83699a6b79c8e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889611"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916961"
 ---
 # <a name="mediastream-resource-type"></a>tipo de recurso de mediaStream
 
@@ -20,11 +21,11 @@ O tipo de mediaStream.
 
 | Propriedade    | Tipo    | Descrição                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direção   | Cadeia de caracteres  | A direção. Os valores possíveis são `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
+| direção   | String  | A direção. Os valores possíveis são `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | rótulo       | String  | O rótulo de fluxo de mídia.                                                                                       |
-| mediaType   | Cadeia de caracteres  | O tipo de mídia. Os valores possíveis são `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| mediaType   | String  | O tipo de mídia. Os valores possíveis são `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
 | serverMuted | Booliano | Se a mídia está sem som pelo servidor.                                                                          |
-| sourceId    | Cadeia de caracteres  | A ID de origem.                                                                                                |
+| sourceId    | String  | A ID de origem.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

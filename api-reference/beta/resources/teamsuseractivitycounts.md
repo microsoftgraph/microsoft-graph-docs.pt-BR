@@ -3,12 +3,13 @@ title: tipo de recurso de teamsUserActivityCounts
 description: Veja a seguir uma representação JSON do recurso.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: c7351795f6b3dafbac996844fc1ac11cd24bbc03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bcc0e9d1ed5c93c3d9f4ba97165d0413025a89cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886587"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987521"
 ---
 # <a name="teamsuseractivitycounts-resource-type"></a>tipo de recurso de teamsUserActivityCounts
 

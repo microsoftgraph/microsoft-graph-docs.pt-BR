@@ -3,12 +3,13 @@ title: Criar embeddedSIMDeviceState
 description: Crie um novo objeto de embeddedSIMDeviceState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 27bf12ff0bcb2ed61f5bb689a1994373d9efd551
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 815d0e401e733f50ebe5734bee55311932d85ea6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832873"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919068"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Criar embeddedSIMDeviceState
 
@@ -48,15 +49,15 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o status do dispositivo SIM incorporado. Valor atribuído quando criado gerado pelo sistema.|
+|id|String|Identificador exclusivo para o status do dispositivo SIM incorporado. Valor atribuído quando criado gerado pelo sistema.|
 |createdDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi criado. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi modificado pela última vez. Lado de serviços atualizado.|
 |lastSyncDateTime|DateTimeOffset|A hora em que o dispositivo SIM incorporado último check-in. Lado de serviços atualizado.|
-|universalIntegratedCircuitCardIdentifier|Cadeia de caracteres|O Universal circuito integrado cartão identificador (UICCID) que identifica o hardware no qual um perfil é a serem implantados.|
-|deviceName|Cadeia de caracteres|Nome do dispositivo para o qual a assinatura foi provisionado por exemplo, JOE de área de trabalho|
+|universalIntegratedCircuitCardIdentifier|String|O Universal circuito integrado cartão identificador (UICCID) que identifica o hardware no qual um perfil é a serem implantados.|
+|deviceName|String|Nome do dispositivo para o qual a assinatura foi provisionado por exemplo, JOE de área de trabalho|
 |userName|Cadeia de caracteres|Nome de usuário que a assinatura foi provisionada para ex.: joe@contoso.com|
 |estado|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação perfil aplicado ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|Cadeia de caracteres|Descrição do estado do provisionamento de cadeia de caracteres.|
+|stateDetails|String|Descrição do estado do provisionamento de cadeia de caracteres.|
 
 
 

@@ -3,12 +3,13 @@ title: tipo de enum userPfxIntendedPurpose
 description: Suporte a valores para a finalidade de um certificado PFX do usuário.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 89d2402b0a652cdb94a392b5ec0b6997b972b6be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 02042eadf9c5687e387f5e9a2ce5eb9f588ff9cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885859"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923261"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>tipo de enum userPfxIntendedPurpose
 

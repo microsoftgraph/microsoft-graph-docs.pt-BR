@@ -3,12 +3,13 @@ title: Adicionar membro da função de diretório
 description: Use esta API para criar um novo membro de função de diretório.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 11b06eac57d0850e8df5233bba47966f6b7932d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f138be1632c72f8c31eb08fcdaefc50e7affb3e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886636"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991528"
 ---
 # <a name="add-directory-role-member"></a>Adicionar membro da função de diretório
 

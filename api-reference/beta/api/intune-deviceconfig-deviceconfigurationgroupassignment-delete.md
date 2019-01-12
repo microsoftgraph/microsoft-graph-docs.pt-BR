@@ -3,12 +3,13 @@ title: Excluir deviceConfigurationGroupAssignment
 description: Exclui um deviceConfigurationGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 227ca3e27acf0880da41dcfcd5c19f8ac31f1aad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 755543bd6c8ac7a333eb9d8e25b216f3ee629a01
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977882"
 ---
 # <a name="delete-deviceconfigurationgroupassignment"></a>Excluir deviceConfigurationGroupAssignment
 

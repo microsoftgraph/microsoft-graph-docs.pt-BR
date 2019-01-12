@@ -2,12 +2,14 @@
 title: 'grupo: validateProperties'
 description: Valide se apelido de nome ou email de exibição de um grupo Office 365 está em conformidade com as políticas de nomenclatura. Os clientes podem usar a API para determinar se um nome para exibição ou apelido de email é válido antes de tentar **Atualizar** um grupo do Office 365. Para validar as propriedades antes de criar um grupo, use a função de validateProperties para objetos de diretório.
 localization_priority: Normal
-ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 5361e05d2a58e2d4c27bd662f158d4f185c447fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990884"
 ---
 # <a name="group-validateproperties"></a>grupo: validateProperties
 

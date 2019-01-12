@@ -3,12 +3,13 @@ title: Excluir contato
 description: Exclua contato.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 6e0fd4dcf7abc1b52b0a99d4220e313bef11a6b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 1cacb801ad872d14898e1799987acb248cfdb446
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813374"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990415"
 ---
 # <a name="delete-contact"></a>Excluir contato
 

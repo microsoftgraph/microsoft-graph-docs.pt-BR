@@ -3,12 +3,13 @@ title: Criar iosUpdateConfiguration
 description: Cria um novo objeto iosUpdateConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 400db047bdc4c4118d38e915cf90e8481d7d02dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0ec871325f72d473de1f8f804fdbe5b8caace0b9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806955"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978077"
 ---
 # <a name="create-iosupdateconfiguration"></a>Criar iosUpdateConfiguration
 

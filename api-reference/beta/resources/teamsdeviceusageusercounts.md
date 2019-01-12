@@ -3,12 +3,13 @@ title: tipo de recurso de teamsDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 07a43b024d133e5ac1d8eb8a2665fd3027001edb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 671dfada02b9c16d3392d0a97023b82020fd1218
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857348"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987395"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>tipo de recurso de teamsDeviceUsageUserCounts
 

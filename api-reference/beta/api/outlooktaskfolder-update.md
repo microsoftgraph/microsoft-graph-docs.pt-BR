@@ -3,12 +3,13 @@ title: Atualizar outlooktaskfolder
 description: Atualize as propriedades graváveis de uma pasta de tarefas do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: af86b85df5529f7f8c15ce2e4977d4b0fe2f00ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874351"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925676"
 ---
 # <a name="update-outlooktaskfolder"></a>Atualizar outlooktaskfolder
 
@@ -17,7 +18,7 @@ ms.locfileid: "27874351"
 Atualize as propriedades graváveis de uma pasta de tarefas do Outlook.
 
 Você não pode alterar o valor da propriedade de **nome** da pasta de tarefas padrão, "Tarefas".
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -42,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|Cadeia de caracteres|O nome da pasta de tarefas.|
+|name|String|O nome da pasta de tarefas.|
 
 ## <a name="response"></a>Resposta
 
