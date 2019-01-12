@@ -3,12 +3,13 @@ title: tipo de enum androidDeviceOwnerRequiredPasswordType
 description: Política do proprietário do dispositivo Android necessários tipo de senha.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c53cc67d01886b76a20eef149a59c1d1fef4fc83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1208de597baff9dd05a48663435a3a928f3dae9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887644"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938038"
 ---
 # <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a>tipo de enum androidDeviceOwnerRequiredPasswordType
 

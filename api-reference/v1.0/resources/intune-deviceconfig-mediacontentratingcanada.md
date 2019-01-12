@@ -3,12 +3,13 @@ title: Tipo de recurso mediaContentRatingCanada
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c40691556e9a8f674256c040a98f22e6ef9d717f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b4151b810fcfbc56c652492fff9fa1f3f841189
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932179"
 ---
 # <a name="mediacontentratingcanada-resource-type"></a>Tipo de recurso mediaContentRatingCanada
 

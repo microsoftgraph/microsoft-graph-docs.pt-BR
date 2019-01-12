@@ -2,12 +2,14 @@
 title: Visão geral da API de contatos pessoais do Outlook
 description: Os contatos do Outlook permitem que você armazene dados de contatos pessoais e fazem parte de um hub de mensagens do Outlook no Office 365. Pelo Outlook, você pode gerenciar emails, agendar reuniões, saber mais sobre os usuários de uma organização, iniciar conversas online, compartilhar arquivos e colaborar em grupos.
 author: angelgolfer-ms
-ms.openlocfilehash: bccf32fd0cc3022a146e16590d915c4b85d60127
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: outlook
+ms.openlocfilehash: 6991845e05373a1c874553b8b195f77fb79757b7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27347513"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937317"
 ---
 # <a name="outlook-personal-contacts-api-overview"></a>Visão geral da API de contatos pessoais do Outlook
 

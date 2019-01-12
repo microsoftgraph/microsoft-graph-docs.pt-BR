@@ -3,12 +3,13 @@ title: tipo de recurso de outlookTaskFolder
 description: 'Uma pasta que contém tarefas do Outlook (coleção de objetos outlookTask). '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4b4c4bade46022b30c6e4e1f50aae58d32656f0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6e5b1297bfae4d03c42988329e661979e899e2bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882926"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937688"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>tipo de recurso de outlookTaskFolder
 

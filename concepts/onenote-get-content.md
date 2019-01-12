@@ -1,13 +1,15 @@
 ---
 title: Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 description: " Blocos de anotações empresariais no Office 365"
-author: Jewan-microsoft
-ms.openlocfilehash: 3eff4548114d498b31d086f4a4825787c0971665
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Priority
+ms.prod: onenote
+ms.openlocfilehash: 883833bccd4663be4d62cbbd46ce7f2a2a471b4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27325008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945031"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 

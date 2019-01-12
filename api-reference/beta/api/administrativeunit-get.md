@@ -3,12 +3,13 @@ title: Obter administrativeUnit
 description: Recupere as propriedades e relacionamentos de um objeto administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 12c7931d0ff2e26a5298cf3fecf92a7bee55e9ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d91db6fa5365d9e0db7f655ecab75fa594b4ea8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849291"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931941"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 

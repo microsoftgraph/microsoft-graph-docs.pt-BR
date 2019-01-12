@@ -1,12 +1,15 @@
 ---
 title: Tipo de recurso educationSchool
 description: 'Recurso usado para gerenciar aulas, professores e alunos da escola representada.  '
-ms.openlocfilehash: 8a87b3a0ceebf9a3dd66978da1bdde2d677ef63e
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27007148"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925816"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 

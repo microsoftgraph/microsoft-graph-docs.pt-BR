@@ -3,12 +3,13 @@ title: Listar os aplicativos publicados a partir do catálogo de aplicativos do 
 description: 'Lista de aplicativos a partir do catálogo de aplicativos do Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 494bc371f88cd15a7c96ff0c145e6593c0716b5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fc8648ac99a3b502956ce07d5c5b53bab930095e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887057"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945584"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados a partir do catálogo de aplicativos do Microsoft Teams
 

@@ -3,12 +3,13 @@ title: tipo de recurso de participantes
 description: O tipo de participante.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: c125589506dbd529d2b45df4171e9d54b346cbba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d6a4474525086fb1e8aefe00ad37acaf6511e9f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869829"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938326"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso de participantes
 

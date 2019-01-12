@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
-ms.openlocfilehash: a0c55967ed7f7a397e0c8c0a4ce607921dc8a9f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 7fb11fc9dc2f55b853ec512255ffa06f8a53cef6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830545"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933670"
 ---
 # <a name="sitecollection-resource"></a>Recurso SiteCollection
 

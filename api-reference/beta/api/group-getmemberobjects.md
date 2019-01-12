@@ -2,12 +2,14 @@
 title: 'group: getMemberObjects'
 description: 'Retorne todos os grupos e unidades administrativas que o grupo é um membro de. A seleção é transitiva. Observação: Grupos não podem ser membros das funções de diretório, portanto nenhuma função de diretório será retornada.'
 localization_priority: Normal
-ms.openlocfilehash: 72d9bc23fa5499ebf1f43d8baee9c9562a57c645
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: a83987a15f384cf17e268a8bdbd6791164484f7e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838105"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935924"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 

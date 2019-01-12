@@ -2,12 +2,14 @@
 title: tipo de recurso de educationIdentityCreationConfiguration
 description: Define as configurações na criação das identidades de perfil de dados escola. Essas identidades incluem alunos e professores. Com base nessas configurações, os usuários serão criados no diretório.
 localization_priority: Normal
-ms.openlocfilehash: 86624c7203dc6425372556572c40efda2bc1a53f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: cb7d3d101c547f1ced1b16bf857b7a7e953dc91b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858860"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912747"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>tipo de recurso de educationIdentityCreationConfiguration
 

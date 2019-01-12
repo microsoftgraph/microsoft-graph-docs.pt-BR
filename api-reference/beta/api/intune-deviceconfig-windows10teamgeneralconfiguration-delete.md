@@ -3,12 +3,13 @@ title: Excluir windows10TeamGeneralConfiguration
 description: Excluir um windows10TeamGeneralConfiguration
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2a979d4c1e39f520a0e232bcc447abb4cd3b09e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bcac7d19109e7d7545f59a404545db74f13008a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873427"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940558"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>Excluir windows10TeamGeneralConfiguration
 

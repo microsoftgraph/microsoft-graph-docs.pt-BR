@@ -2,12 +2,14 @@
 title: Tipo de recurso windowsPhone81CustomConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windowsPhone81CustomConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: fec30b87e832ce4f35015d014d5b2017f81142ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 34a0352490e213abff2c3d55376a9ed2c3fc1239
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940110"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>Tipo de recurso windowsPhone81CustomConfiguration
 

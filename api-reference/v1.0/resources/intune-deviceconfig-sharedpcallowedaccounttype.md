@@ -3,12 +3,13 @@ title: tipo de enum sharedPCAllowedAccountType
 description: Tipo de contas que têm permissão para compartilhar o PC.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2fd7861987990a058ebac0c5b1543debb4522aa4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 37a651bda4283bc5f1bb43482fc527cc3a579343
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940019"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>tipo de enum sharedPCAllowedAccountType
 

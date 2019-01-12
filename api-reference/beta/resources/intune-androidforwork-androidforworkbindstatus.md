@@ -3,12 +3,13 @@ title: tipo de enum androidForWorkBindStatus
 description: Associe o status do inquilino com a API do EMM Google
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c5959549aabe5d5059fe8929e2505515b781c21c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 32bbfa92e91be7bd7773396dfca22c0763bbbfd3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841878"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933838"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>tipo de enum androidForWorkBindStatus
 

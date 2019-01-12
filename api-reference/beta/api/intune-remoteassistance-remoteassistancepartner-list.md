@@ -3,12 +3,13 @@ title: Listar remoteAssistancePartners
 description: Listar propriedades e relações de objetos de remoteAssistancePartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3451a6cda1edbff2e91e9a04929804a460a02940
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d374758bf6b01294784df487a05b9effbf23e5be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811778"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935266"
 ---
 # <a name="list-remoteassistancepartners"></a>Listar remoteAssistancePartners
 

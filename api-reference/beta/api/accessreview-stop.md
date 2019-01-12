@@ -2,12 +2,14 @@
 title: Parar accessReview
 description: No Windows Azure AD para acessar o recurso de revisões, parar uma accessReview ativa no momento.  O objeto de destino pode ser uma revisão de acesso de uma única vez, ou uma instância de uma análise mais acesso recorrente.  (Para impedir que uma análise mais acesso recorrente iniciando a instâncias futuras, atualizá-lo para alterar sua data de término agendada).  Após o acesso revisar paradas, revisores não podem dar entrada e as decisões de revisão de acesso podem ser aplicadas.
 localization_priority: Normal
-ms.openlocfilehash: 57c0473b58b8ca4bbbb4e9f182b7da4582af4c38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8d71796272cf9852683688a47f3d78eebd849357
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860113"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941461"
 ---
 # <a name="stop-accessreview"></a>Parar accessReview
 

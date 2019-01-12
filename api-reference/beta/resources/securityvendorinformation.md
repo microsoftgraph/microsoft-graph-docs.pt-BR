@@ -2,12 +2,14 @@
 title: tipo de recurso de securityVendorInformation
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 34e565a69f716f0d167240ab753e5d192758508a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 0137abd7a9df0df94f73e18d7efa201008031ff6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939921"
 ---
 # <a name="securityvendorinformation-resource-type"></a>tipo de recurso de securityVendorInformation
 

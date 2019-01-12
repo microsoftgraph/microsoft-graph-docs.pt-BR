@@ -3,12 +3,13 @@ title: Tipo de recurso deviceComplianceDeviceStatus
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ceb97152da7e3f1421319a4e890c9467bde1fc0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac841b02107597809ec265678f0c53a9d71247a3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940901"
 ---
 # <a name="devicecompliancedevicestatus-resource-type"></a>Tipo de recurso deviceComplianceDeviceStatus
 

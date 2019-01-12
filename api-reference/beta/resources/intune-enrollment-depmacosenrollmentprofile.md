@@ -3,12 +3,13 @@ title: tipo de recurso de depMacOSEnrollmentProfile
 description: O recurso de DepMacOSEnrollmentProfile representa um perfil de inscrição do programa de inscrição de dispositivo da Apple (DEP) específico macOS configuração. Esse tipo de perfil deve ser atribuído aos números de série do Apple DEP antes os dispositivos correspondentes podem registrar-se por meio do DEP.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb0e61681d47da2b3008d2589bfe6720ca89a8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 617650afee6f3eac142ffe69d6b187a5e71b0143
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812156"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939326"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>tipo de recurso de depMacOSEnrollmentProfile
 

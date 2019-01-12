@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Obter Pastas Especiais
 localization_priority: Normal
-ms.openlocfilehash: 9975f02a0f9740b27eab7786995a9dd794cb3f80
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a24b73e8f10c15e5bf8ab32ee99e193f7bddc1c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836719"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932130"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
 

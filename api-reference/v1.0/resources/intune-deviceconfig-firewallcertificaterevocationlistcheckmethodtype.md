@@ -3,12 +3,13 @@ title: tipo de enum firewallCertificateRevocationListCheckMethodType
 description: Valores possíveis para firewallCertificateRevocationListCheckMethod
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2beee8f7c4f049aa1918b7e1516c3ce586a8cad0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e479b10339ab515a17f67d85de0c8d43c1507825
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940054"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enum firewallCertificateRevocationListCheckMethodType
 

@@ -3,12 +3,13 @@ title: tipo de enum discoverySource
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec4c7c9f29ef116b851f925fecdaf1de0f79cf2e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f322c3ba290bf4e79f85c7903d9716cd65562dd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885971"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913027"
 ---
 # <a name="discoverysource-enum-type"></a>tipo de enum discoverySource
 

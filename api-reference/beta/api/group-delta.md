@@ -2,12 +2,14 @@
 title: 'group: delta'
 description: Get recentemente criado, atualizado ou excluído grupos, incluindo as alterações de associação de grupo, sem precisar realizar uma leitura completa da coleção grupo inteiro. Consulte usando Delta consulta para obter detalhes.
 localization_priority: Normal
-ms.openlocfilehash: 5645fa950faca9f5a49b9db6288eb138553aad0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 032dc8906c14ad0ea89ca8eda55d4dc53637efe6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936323"
 ---
 # <a name="group-delta"></a>group: delta
 

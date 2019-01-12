@@ -3,12 +3,13 @@ title: Ação deleteUserFromSharedAppleDevice
 description: Excluir o usuário do dispositivo compartilhado da Apple
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a4ed5a58f73bc219a092e6972821bb1d84040941
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 139df872316662f8c32055be175cd6f3584129e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841724"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925214"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 

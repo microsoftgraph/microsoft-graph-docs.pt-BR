@@ -2,12 +2,14 @@
 title: Excluir bookingCustomer
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 3f0618f03234a0a4b1c31c9ac81fc3eb120f40fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 1e2c303733b850d45b8c805f40fc42bc835cc313
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849179"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941545"
 ---
 # <a name="delete-bookingcustomer"></a>Excluir bookingCustomer
 

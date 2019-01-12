@@ -3,12 +3,13 @@ title: Tipo de recurso domainDnsSrvRecord
 description: Representa um registro SRV adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 655dc6fcbccdcb6e1794c94d97dd8e7fc4837f04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 28c590ff210952fc5d54ace61c08348383ce393a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938262"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Tipo de recurso domainDnsSrvRecord
 

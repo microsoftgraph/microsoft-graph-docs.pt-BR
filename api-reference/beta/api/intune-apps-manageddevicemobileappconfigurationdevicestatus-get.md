@@ -3,12 +3,13 @@ title: Obter managedDeviceMobileAppConfigurationDeviceStatus
 description: Leia as propriedades e os relacionamentos do objeto managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fccf60e5ba74c6d110742e8cea9209735316a247
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 75b8745737bafc690569259e5f4b1970ba1081a1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818309"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944993"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>Obter managedDeviceMobileAppConfigurationDeviceStatus
 

@@ -3,12 +3,13 @@ title: Criar ChartPoints
 description: Use essa API para criar novos ChartPoints.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7cda87f06ca55bf974e190161d85419d35001d6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3c7ee1257dbe32169b6619b6c2d185bf37d39b7d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824217"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921448"
 ---
 # <a name="create-chartpoints"></a>Criar ChartPoints
 

@@ -3,12 +3,13 @@ title: Atualizar depIOSEnrollmentProfile
 description: Atualize as propriedades de um objeto depIOSEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6b6f9bf083a0f1d760f49b1cd41b3c6bc187c5c0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cfbae59533112d69d4616f77d2dbeb79a6361332
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847989"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935959"
 ---
 # <a name="update-depiosenrollmentprofile"></a>Atualizar depIOSEnrollmentProfile
 

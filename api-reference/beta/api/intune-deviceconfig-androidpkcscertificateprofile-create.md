@@ -3,12 +3,13 @@ title: Criar androidPkcsCertificateProfile
 description: Crie um novo objeto de androidPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cfdb80fbe0c4d31d5b7d7b48870208e7385dfd11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b23a029c3e802e2c4206afd499d4592c32097c4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933369"
 ---
 # <a name="create-androidpkcscertificateprofile"></a>Criar androidPkcsCertificateProfile
 

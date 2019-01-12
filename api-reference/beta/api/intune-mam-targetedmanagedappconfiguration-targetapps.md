@@ -3,12 +3,13 @@ title: Ação targetApps
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 957a1003554299e3dec52b05838fe58e0b2eea4d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7121e8901e9c9c94196b1d7441c29b7ecc9fd6fb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882065"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945333"
 ---
 # <a name="targetapps-action"></a>Ação targetApps
 

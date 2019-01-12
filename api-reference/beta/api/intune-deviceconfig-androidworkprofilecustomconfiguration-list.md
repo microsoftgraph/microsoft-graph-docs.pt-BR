@@ -3,12 +3,13 @@ title: Lista androidWorkProfileCustomConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c40cd6d71ff22c4ec393759623f53bc044b51f56
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: db2a6b46c8aa76ec275daddeab11739881433c1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836999"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943848"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>Lista androidWorkProfileCustomConfigurations
 

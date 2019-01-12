@@ -3,12 +3,13 @@ title: tipo de recurso de windows10VpnConfiguration
 description: Fornecendo as configurações neste perfil, você poderá instruir o dispositivo Windows 10 (área de trabalho ou celular) para se conectar ao ponto de extremidade VPN desejado. Especificando os tipos de segurança e o método de autenticação esperado pelo ponto de extremidade VPN que você pode fazer a conexão VPN perfeita para usuário final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72617e1d91a6a9ce180e63733a209bcee7e204bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 775a4dfbeb46c27264b5539c51c63b29b488565b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937765"
 ---
 # <a name="windows10vpnconfiguration-resource-type"></a>tipo de recurso de windows10VpnConfiguration
 

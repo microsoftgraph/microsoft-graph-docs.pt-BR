@@ -3,12 +3,13 @@ title: Remover acceptedSender
 description: 'Remova um usuário ou grupo da lista acceptedSenders. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 8f728e3075d64de3b1241079c57512b8699e2262
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 9dd91d52ef445b236e71d85790b4dc81d15bd210
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819135"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935077"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 
