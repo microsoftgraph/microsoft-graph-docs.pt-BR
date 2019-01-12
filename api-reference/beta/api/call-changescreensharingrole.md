@@ -3,12 +3,13 @@ title: 'chamar: changeScreenSharingRole'
 description: Iniciar e interromper o compartilhamento de tela na chamada. Essa API é usada para permitir que aplicativos compartilhar o conteúdo de tela com os participantes de uma chamada ou reunião.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 64c85025a7aa1f3095fe6ddd8d7d398348a2a1ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c7463f54ab5bfc74a55ed7dc5360a4f16876116c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865006"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976223"
 ---
 # <a name="call-changescreensharingrole"></a>chamar: changeScreenSharingRole
 
@@ -16,7 +17,7 @@ ms.locfileid: "27865006"
 
 Iniciar e interromper o compartilhamento de tela na chamada. Essa API é usada para permitir que aplicativos compartilhar o conteúdo de tela com os participantes de uma chamada ou reunião.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|role|Cadeia de caracteres|Os valores possíveis são: 'Visualizador', 'Compartilhador'|
+|role|String|Os valores possíveis são: 'Visualizador', 'Compartilhador'|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta.

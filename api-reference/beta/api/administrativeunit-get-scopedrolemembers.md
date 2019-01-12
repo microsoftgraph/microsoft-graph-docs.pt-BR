@@ -2,12 +2,14 @@
 title: Obtenha um scopedRoleMember
 description: Recupere um recurso scopedRoleMembership específico.
 author: lleonard-msft
-ms.openlocfilehash: a0a947895c7c172ae4e3f3a44566e5ea19e9dc8d
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bf707c4bca33302286ab686cf74d9faba63fac7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27304456"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971701"
 ---
 # <a name="get-a-scopedrolemember"></a>Obtenha um scopedRoleMember
 

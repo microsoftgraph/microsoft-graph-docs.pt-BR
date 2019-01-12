@@ -3,12 +3,13 @@ title: Get managedDevice
 description: Ler propriedades e relações do objeto managedDevice.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: be7701eeb508641624f42111309592b32bec7288
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b635a6d2a8bed87742f17f53cd7570e0c58ef83c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879916"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975635"
 ---
 # <a name="get-manageddevice"></a>Get managedDevice
 

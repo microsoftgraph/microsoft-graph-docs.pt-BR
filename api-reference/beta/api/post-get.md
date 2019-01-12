@@ -3,12 +3,13 @@ title: Obter postagem
 description: 'Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado. Você pode especificar ambas pai '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 5bcb303a302d1236b9d74800c1bd5a0388aebed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: ecccee4f63136d43c375e648e9a073e489f99c17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968586"
 ---
 # <a name="get-post"></a>Obter postagem
 

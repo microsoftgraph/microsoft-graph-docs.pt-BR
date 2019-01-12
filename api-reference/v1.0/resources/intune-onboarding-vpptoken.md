@@ -3,12 +3,13 @@ title: Tipo de recurso vppToken
 description: Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume Purchase Program para Empresas ou Educação. Isso envolve configurar uma conta do Apple VPP do site da Apple e carregar o token do Apple VPP Empresarial ou Educacional ao Intune. Você pode sincronizar suas informações de volume de compras com o Intune e acompanhar o uso do aplicativo comprado por volume. Você pode carregar vários tokens do Apple VPP Empresarial ou Educacional.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f9d3b5be157612001ce388a9ab337de9a08fa9a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1e49c075b23ead38b4893c38283521d550428e2c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806255"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973451"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 

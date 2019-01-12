@@ -3,12 +3,13 @@ title: Criar sideLoadingKey
 description: Crie um novo objeto de sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 178236e03d508eb8a5017b67a1795fceca72bdee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 140dc11778bad432d388f8d22173cd31cbdef915
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838868"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974842"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
@@ -48,12 +49,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Lado carregando o ID exclusivo principal.|
-|valor|Cadeia de caracteres|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
-|displayName|Cadeia de caracteres|Carregando da lado chave nome exibido para o ITPro Admins.|
-|description|Cadeia de caracteres|Descrição de chave Carregando lado exibida para o ITPro Admins..|
+|id|String|Lado carregando o ID exclusivo principal.|
+|valor|String|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
+|displayName|String|Carregando da lado chave nome exibido para o ITPro Admins.|
+|description|String|Descrição de chave Carregando lado exibida para o ITPro Admins..|
 |totalActivation|Int32|Lado Carregando chave Total Activation exibida para o ITPro Admins.|
-|lastUpdatedDateTime|Cadeia de caracteres|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
+|lastUpdatedDateTime|String|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
 
 
 

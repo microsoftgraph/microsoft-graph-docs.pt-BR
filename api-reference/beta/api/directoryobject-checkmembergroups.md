@@ -2,12 +2,14 @@
 title: Verificar grupos de membros
 description: Verificar a associação em uma lista especificada de grupos e retorna a partir dessa lista desses grupos
 localization_priority: Normal
-ms.openlocfilehash: cfa9f1a50ffd284233707799a8d05d6b5c46dfc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 93ff0a0cb215e489490e50bde40f56e5b562be95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854037"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971085"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 
@@ -15,7 +17,7 @@ ms.locfileid: "27854037"
 
 Verifique se a associação em uma lista especificada de grupos e retorna a partir dessa lista esses grupos dos quais o usuário especificado, o grupo, o serviço principal ou o objeto de diretório é membro. Essa função é transitiva.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -45,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|groupIds|Cadeia de caracteres|Uma coleção que contém as IDs de objetos dos grupos em que se deve verificar a associação. Até 20 grupos podem ser especificados.|
+|groupIds|String|Uma coleção que contém as IDs de objetos dos grupos em que se deve verificar a associação. Até 20 grupos podem ser especificados.|
 
 ## <a name="response"></a>Resposta
 

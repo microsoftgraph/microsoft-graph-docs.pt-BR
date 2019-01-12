@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointSiteUsageStorage'
 description: Obtenha a tendência de armazenamento alocado e consumido durante o período de relatório.
 localization_priority: Normal
-ms.openlocfilehash: 327333dc25b335e6529ae882786dadc2d7d0b1a4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: c8f99317bbbb122140a9478a14ed6db52c8ed859
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846211"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965835"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 

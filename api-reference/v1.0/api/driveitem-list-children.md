@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
 localization_priority: Priority
-ms.openlocfilehash: d7d4dee8ec04e7b87a5239a84774bd03000e2aed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891137"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972478"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 

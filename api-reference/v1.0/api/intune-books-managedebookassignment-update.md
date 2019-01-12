@@ -3,12 +3,13 @@ title: Atualizar managedEBookAssignment
 description: Atualizar as propriedades de um objeto managedEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cad8ce31a9de355b79407ee4658ea13ef0415732
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dab98e40f2b0d8371fdccaecfc24d2e4447a0ec8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976839"
 ---
 # <a name="update-managedebookassignment"></a>Atualizar managedEBookAssignment
 
@@ -46,7 +47,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição do livro eletrônico.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|A tentativa de instalação do livro eletrônico. Os valores possíveis são: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 

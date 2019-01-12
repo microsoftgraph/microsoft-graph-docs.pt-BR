@@ -3,12 +3,13 @@ title: tipo de recurso de symantecCodeSigningCertificate
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a2e4f53e0ca7329f163b507677e2b91a4c02fe12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c195a31dae12c1a67d8226a219fe57a68bf905d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845007"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965933"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso de symantecCodeSigningCertificate
 
@@ -29,11 +30,11 @@ Ainda não documentado
 |id|Cadeia de caracteres|A chave da entidade.|
 |content|Binária|O certificado de assinatura de código do Windows Symantec no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status de Cert provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
-|password|Cadeia de caracteres|A senha necessária para o arquivo. pfx.|
+|password|String|A senha necessária para o arquivo. pfx.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
-|subject|Cadeia de caracteres|O valor de assunto para o cert.|
-|issuerName|Cadeia de caracteres|O nome do emissor para o cert.|
-|emissor|Cadeia de caracteres|O valor de emissor para o cert.|
+|subject|String|O valor de assunto para o cert.|
+|issuerName|String|O nome do emissor para o cert.|
+|emissor|String|O valor de emissor para o cert.|
 |expirationDateTime|DateTimeOffset|A data de validade do Cert.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de assinatura de código padrão como Symantec Cert.|
 

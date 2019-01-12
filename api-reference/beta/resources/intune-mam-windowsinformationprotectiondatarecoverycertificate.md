@@ -3,12 +3,13 @@ title: Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 description: DataRecoveryCertificate da proteção de informações do Windows
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f7b27bf766e17000f20679e86c006675f81e92bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5e686ab1a6c1e586c8bd32c56d3480102503b4be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826840"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976251"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 

@@ -3,12 +3,13 @@ title: Obter contato
 description: Recupere as propriedades e relacionamentos de objeto de contato.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 9bcd9e9a9a5e5a59a31e6ddc548f622ba69c638d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5e7064072ff3adf416f34e1aa4e2b12d0c661a65
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838273"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975495"
 ---
 # <a name="get-contact"></a>Obter contato
 
@@ -22,7 +23,7 @@ Há dois cenários em que um aplicativo pode receber um contato na pasta de cont
 * Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

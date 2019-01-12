@@ -3,12 +3,13 @@ title: Excluir windows81CompliancePolicy
 description: Exclui windows81CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d82b5828f473f03fa9027e6ffe7a0ffb07d2ad3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7b3cb5981a41d54773a47936f344466c93c42843
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842830"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975425"
 ---
 # <a name="delete-windows81compliancepolicy"></a>Excluir windows81CompliancePolicy
 

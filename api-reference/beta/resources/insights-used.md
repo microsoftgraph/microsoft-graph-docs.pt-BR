@@ -3,12 +3,13 @@ title: usado o tipo de recurso
 description: Uma compreensão dos representando documentos usados por um usuário específico. As ideias retorna os documentos mais relevantes que um usuário visualizados ou acessados.
 author: simonhult
 localization_priority: Normal
-ms.openlocfilehash: cb41fcb7cef5c9e39f9100ebd1d8c2640f06e2d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: insights
+ms.openlocfilehash: 2f8479896f8c06fdc6193cfa8c18a0c3d8293bc7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885530"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976055"
 ---
 # <a name="used-resource-type"></a>usado o tipo de recurso
 
@@ -29,7 +30,7 @@ Uma compreensão dos representando documentos usados por um usuário específico
 
 | Propriedade              | Tipo                      | Descrição  |
 | -------------         |---------------            | -------------|
-| id                    | Cadeia de caracteres                    | Identificador exclusivo do relacionamento. Somente leitura.        |
+| id                    | String                    | Identificador exclusivo do relacionamento. Somente leitura.        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | Informações sobre quando o item foi último exibidos e modificados pelo usuário. Somente leitura.     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento na sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento usado, como a url e o tipo de documento. Somente leitura     |

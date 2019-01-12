@@ -3,12 +3,13 @@ title: Lista depEnrollmentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6caf7ad08df7a848c81d307b7449f3ceb6fbca06
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e5b8528991b26237ae665394e37d9e50c2483fe2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886482"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975530"
 ---
 # <a name="list-depenrollmentprofiles"></a>Lista depEnrollmentProfiles
 

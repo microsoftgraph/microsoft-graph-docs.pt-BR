@@ -3,12 +3,13 @@ title: tipo de enum certificateStatus
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2c4e62bab954812a46a05b2ee75c98f2adb63c99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c6a52933c3969f4f9d5da3bbbd7688efb369bc86
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804680"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977246"
 ---
 # <a name="certificatestatus-enum-type"></a>tipo de enum certificateStatus
 

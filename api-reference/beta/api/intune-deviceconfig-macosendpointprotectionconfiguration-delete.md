@@ -3,12 +3,13 @@ title: Excluir macOSEndpointProtectionConfiguration
 description: Exclui um macOSEndpointProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d5b8fc960e2ff9dd1db88f735b746eeaba07d309
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 19bbd76a0829b66ea411c28f5f78be931788bbc9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868639"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968239"
 ---
 # <a name="delete-macosendpointprotectionconfiguration"></a>Excluir macOSEndpointProtectionConfiguration
 

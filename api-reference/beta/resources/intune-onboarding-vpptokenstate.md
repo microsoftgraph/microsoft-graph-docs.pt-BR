@@ -2,12 +2,14 @@
 title: tipo de enum vppTokenState
 description: Estados possíveis associados a um token de programa de compra de Volume do Apple.
 author: tfitzmac
-ms.openlocfilehash: 70ff74a888e351d7f55c64a68771e221f9a644b4
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: b8e2148cccbb891b1c139abd9d15ba424b3b3e9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27306577"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967375"
 ---
 # <a name="vpptokenstate-enum-type"></a>tipo de enum vppTokenState
 

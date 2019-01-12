@@ -3,12 +3,13 @@ title: 'message: replyAll'
 description: 'Responder a todos os destinatários de uma mensagem especificando um comentário e modificar quaisquer propriedades atualizáveis '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5377de8737445f61d34e1d1148af9376cb7e9658
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 1abbf271350c6bbbd10af1f17c6c7d3069c3cf22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843299"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976363"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -25,7 +26,7 @@ Como alternativa, você pode primeiro [criar uma mensagem de responder a todos d
 propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** . 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -53,7 +54,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
+|comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 ## <a name="response"></a>Resposta

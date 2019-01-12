@@ -3,12 +3,13 @@ title: Criar deviceConfigurationConflictSummary
 description: Crie um novo objeto de deviceConfigurationConflictSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e120e6ce3070012eb1dffcfb06cf77040c0f44cb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ea5aa43cf4df325afbffddcc1323f98bf89a3166
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812415"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968397"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Criar deviceConfigurationConflictSummary
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de diretivas em conflito com a configuração de determinado|
-|id|Cadeia de caracteres|A identificação para este conjunto de diretivas conflitantes. Este id é as identificações de todas as políticas do ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
+|id|String|A identificação para este conjunto de diretivas conflitantes. Este id é as identificações de todas as políticas do ConflictingDeviceConfigurations em ordem lexicographical separada por sublinhados.|
 |contributingSettings|String collection|O conjunto de configurações em conflito com as políticas de determinado|
 |deviceCheckinsImpacted|Int32|A contagem de check-ins afetados pelas configurações e diretivas conflitantes|
 

@@ -2,12 +2,14 @@
 title: Listar membros
 description: Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
 localization_priority: Normal
-ms.openlocfilehash: 1326af76400960c42bbab6a952d31ebc32d97538
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 83d1f6e52e11afc60c84977676279ae02182e047
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972583"
 ---
 # <a name="list-members"></a>Listar membros
 

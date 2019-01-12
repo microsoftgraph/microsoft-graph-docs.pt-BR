@@ -3,12 +3,13 @@ title: Atualizar cartToClassAssociation
 description: Atualize as propriedades de um objeto cartToClassAssociation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da569d1452cff24b5e93d92eb96cbd5047fe6e0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a140aa3e14895cf0fc7dd5ca2be54afdb1d86052
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967676"
 ---
 # <a name="update-carttoclassassociation"></a>Atualizar cartToClassAssociation
 
@@ -48,12 +49,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |version|Int32|Versão do CartToClassAssociation.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|description|Cadeia de caracteres|Admin fornecido descrição do que o CartToClassAssociation.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|description|String|Admin fornecido descrição do que o CartToClassAssociation.|
 |deviceCartIds|String collection|Identificadores de carrinhos de dispositivo a ser associado a classes.|
 |classroomIds|String collection|Identificadores de salas a ser associado ao dispositivo carrinhos de.|
 

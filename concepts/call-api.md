@@ -1,12 +1,15 @@
 ---
 title: Chamando a API do Microsoft Graph
 description: 'Para acessar e manipular um recurso do Microsoft Graph, você chama e especifica as URLs de recurso usando uma das operações a seguir:   '
-ms.openlocfilehash: c8b678ce41488d6854e436e7dc5fc97989b54aee
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: VinodRavichandran
+ms.prod: microsoft-teams
+ms.openlocfilehash: 627fb614f8084abe6980ed095a7a55adfa6a3f12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091622"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970413"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Chamando a API do Microsoft Graph
 

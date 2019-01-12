@@ -3,12 +3,13 @@ title: Listar managedEBookAssignments
 description: Listar propriedades e relações dos objetos managedEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdcfbca3e08e87eb6811162a1c2a9ea833b29d3f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c1663ce272bc5dc94dfc77034354cf57ba615faa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808082"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968258"
 ---
 # <a name="list-managedebookassignments"></a>Listar managedEBookAssignments
 

@@ -3,12 +3,13 @@ title: Criar um grupo de roteamento de áudio
 description: Crie um novo **audioRoutingGroup**.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 4f8a430e46137d54df5fc6d99a9676f4faa0d5ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fe623a581233324e13c949d16570b1396fdd663c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838476"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966381"
 ---
 # <a name="create-audio-routing-group"></a>Criar um grupo de roteamento de áudio
 
@@ -16,7 +17,7 @@ ms.locfileid: "27838476"
 
 Crie um novo **audioRoutingGroup**.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |

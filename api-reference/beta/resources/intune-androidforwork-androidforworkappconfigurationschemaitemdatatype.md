@@ -2,12 +2,14 @@
 title: tipo de enum androidForWorkAppConfigurationSchemaItemDataType
 description: Tipo de dados para um item de configuração dentro de um Android para o esquema de configuração personalizada do aplicativo de trabalho
 localization_priority: Normal
-ms.openlocfilehash: ff5ca9fedd3632960bf249dd40fb3e8a98ab23a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 74a6cafdc95c488dab60a60e1c6244bc41c46d55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886622"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965521"
 ---
 # <a name="androidforworkappconfigurationschemaitemdatatype-enum-type"></a>tipo de enum androidForWorkAppConfigurationSchemaItemDataType
 

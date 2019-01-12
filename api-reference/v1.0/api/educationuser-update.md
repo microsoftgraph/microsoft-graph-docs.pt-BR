@@ -2,12 +2,14 @@
 title: Atualizar propriedades de educationUser
 description: Atualize as propriedades de um objeto **educationuser**.
 localization_priority: Normal
-ms.openlocfilehash: aef8640f49ad6ff4d91755fd5200000f4a0e856d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 0c93ecd601e941cd68f0b6f8d668775e7de3feef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856646"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975955"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 

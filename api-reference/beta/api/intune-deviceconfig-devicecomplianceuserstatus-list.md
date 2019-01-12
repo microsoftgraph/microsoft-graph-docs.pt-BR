@@ -3,12 +3,13 @@ title: Listar deviceComplianceUserStatuses
 description: Listar propriedades e relações dos objetos deviceComplianceUserStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1b1ac8c92c6ae17deec8c10de425907a410f16c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 61243c91e04d026a34352c937838687712715824
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968901"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>Listar deviceComplianceUserStatuses
 

@@ -3,12 +3,13 @@ title: tipo de enum certificateDestinationStore
 description: Valores possíveis para o repositório de destino do certificado.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 64b57a24749b4f7f64dd1ce0cb852dd23f799f92
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b9a300191476075f0bb7fab5f4ea358d7b7390d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873959"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967949"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>tipo de enum certificateDestinationStore
 

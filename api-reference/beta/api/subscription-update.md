@@ -2,12 +2,13 @@
 title: Atualizar assinatura
 description: Renove uma assinatura ampliando seu tempo de validade.
 localization_priority: Normal
-ms.openlocfilehash: 63bcf8f4084053356819601cd6306ad3ff5238c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: 3404a561f50e5d2f99d5d1db56f13772a1165c73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836117"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968530"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 

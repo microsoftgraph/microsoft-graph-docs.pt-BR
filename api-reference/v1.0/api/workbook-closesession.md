@@ -3,12 +3,13 @@ title: Fechar Sessão
 description: 'Use esta API para fechar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 0e4d00b1ebf9ba90f6085f8dc7fc1005375efc0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 9fbbaea28f93b757881550f36d76540fb6cfb388
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818631"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972856"
 ---
 # <a name="close-session"></a>Fechar Sessão
 

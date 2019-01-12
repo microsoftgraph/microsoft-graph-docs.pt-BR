@@ -3,12 +3,13 @@ title: Lista androidDeviceOwnerGeneralDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidDeviceOwnerGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c45dac2aea007b2c9b54828376d8ae0b519fd736
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: af6a935b4901f0fdc90138fe41112cd7a7fc36c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838567"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973724"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Lista androidDeviceOwnerGeneralDeviceConfigurations
 

@@ -3,12 +3,13 @@ title: Atualizar importedDeviceIdentity
 description: Atualize as propriedades de um objeto importedDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9072c0b5e8a01c72352b9250b4167cdb5ec190fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a66ceb575363f8a48dd0d23e61a6ecbc994ea582
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838427"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973486"
 ---
 # <a name="update-importeddeviceidentity"></a>Atualizar importedDeviceIdentity
 
@@ -48,13 +49,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da identidade do dispositivo importada|
-|importedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo importada|
+|id|String|ID da identidade do dispositivo importada|
+|importedDeviceIdentifier|String|Identificador de dispositivo importada|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade do dispositivo importada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Última data e hora modificadas da descrição|
 |createdDateTime|DateTimeOffset|Criada data hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última contatado data hora do dispositivo|
-|description|Cadeia de caracteres|A descrição do dispositivo|
+|description|String|A descrição do dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|O estado do dispositivo em Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
