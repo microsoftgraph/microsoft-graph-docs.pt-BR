@@ -3,12 +3,13 @@ title: 'chamar: Ativar Mudo'
 description: Permite que o aplicativo ativar mudo em si.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 603c0d49f47291ec5050cd08dfbb0cc0faa2bc0e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fa4baed5af378c58f8e25dbdc5413c1bef743c32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956658"
 ---
 # <a name="call-mute"></a>chamar: Ativar Mudo
 
@@ -16,7 +17,7 @@ ms.locfileid: "27813437"
 
 Permite que o aplicativo ativar mudo em si.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -42,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|clientContext|Cadeia de caracteres|O contexto de cliente.|
+|clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` código de resposta e um objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.

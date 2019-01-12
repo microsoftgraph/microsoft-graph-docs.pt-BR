@@ -2,12 +2,14 @@
 title: 'calendário: getSchedule'
 description: Obtenha as informações de disponibilidade para um conjunto de usuários, recursos ou listas de Distribuições por um período de tempo especificado.
 localization_priority: Priority
-ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844559"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956952"
 ---
 # <a name="calendar-getschedule"></a>calendário: getSchedule
 
@@ -15,7 +17,7 @@ ms.locfileid: "27844559"
 
 Obtenha as informações de disponibilidade para um conjunto de usuários, recursos ou listas de Distribuições por um período de tempo especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -43,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Cadeia de caracteres|Representa a duração de um intervalo de tempo em um **availabilityView** na resposta. O padrão é 30 minutos, mínimo é de 6, máximo é 1440. Opcional.|
+|availabilityViewInterval|String|Representa a duração de um intervalo de tempo em um **availabilityView** na resposta. O padrão é 30 minutos, mínimo é de 6, máximo é 1440. Opcional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que termina o período.|
 |agendamentos|String collection|Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações de disponibilidade.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que inicia o período.|

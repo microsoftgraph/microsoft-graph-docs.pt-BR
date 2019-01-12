@@ -3,12 +3,13 @@ title: 'chamar: playPrompt'
 description: Reproduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 47d4dac56f1424f71fff20f63c9d68f3f09d3926
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bd2ba6430e6c49039d32a54413e03bd27be574f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883654"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951254"
 ---
 # <a name="call-playprompt"></a>chamar: playPrompt
 
@@ -16,7 +17,7 @@ ms.locfileid: "27883654"
 
 Reproduza um prompt na chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -44,7 +45,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |solicita|coleção de [prompt](../resources/prompt.md)||
-|clientContext|Cadeia de caracteres|O contexto de cliente.|
+|clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` objeto response de código e [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.

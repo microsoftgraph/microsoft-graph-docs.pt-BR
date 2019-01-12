@@ -3,12 +3,13 @@ title: Tipo de recurso RangeBorder
 description: Representa a borda de um objeto.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 33ed0410ab807cf9d9d6a0a49cb06b43d9966e46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 8404a45ea7c56bbbb318994daa55229706d700a2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853526"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960235"
 ---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
 

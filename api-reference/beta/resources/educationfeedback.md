@@ -3,12 +3,13 @@ title: tipo de recurso de educationFeedback
 description: Os comentários feitos durante um professor para um estudante. Essa propriedade representa a parte de texto dos comentários, juntamente com quem.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 0d08f3bc5c7b4882693cdcbba41b364734c6ccef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 96f1e0f4d6be070548d984786042a801d764ece9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873560"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962685"
 ---
 # <a name="educationfeedback-resource-type"></a>tipo de recurso de educationFeedback
 

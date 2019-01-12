@@ -2,12 +2,14 @@
 title: Lista bookingBusinesses
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 270bda6aca601951ea56a9ddf9364d1459496699
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 51b8e049b45542de9940168c994bed8fbd273b60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849207"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951450"
 ---
 # <a name="list-bookingbusinesses"></a>Lista bookingBusinesses
 
@@ -20,7 +22,7 @@ Essa operação retorna apenas a **id** e o **displayName** de cada business res
 Você também pode consultar para empresas reservas especificando-se uma cadeia de caracteres em uma `query` parâmetro para subsequência entre as empresas de um inquilino. Veja um [exemplo](#request-2) abaixo.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -3,12 +3,13 @@ title: Lista trendingAround
 description: Percepção calculada que retorna a lista de itens de tendências em torno de um usuário.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1fca9fe47d1656b8b499fbf2e1f3fa1ee638f37e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3e06cdf6cc1f082f1e1c40f61551ec3d643e5246
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839456"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964120"
 ---
 # <a name="list-trendingaround"></a>Lista trendingAround
 
@@ -18,7 +19,7 @@ Percepção calculada que retorna a lista de itens de tendências em torno de um
 
 **Observação:** Essa API será preterida e substituída pela [API de tendências](../resources/insights-trending.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

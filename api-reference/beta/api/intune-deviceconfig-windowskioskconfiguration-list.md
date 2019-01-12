@@ -2,12 +2,14 @@
 title: Lista windowsKioskConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsKioskConfiguration.
 author: tfitzmac
-ms.openlocfilehash: 59e4510f85bb47c53c00c679b0c8ea021aba2797
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: 66fde1d5f81063050edc35260b9f5d39b0fe25a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27350579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950092"
 ---
 # <a name="list-windowskioskconfigurations"></a>Lista windowsKioskConfigurations
 
@@ -39,7 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Cabeçalho|Valor|
 |:---|:---|
 |Autorização|&lt;Token&gt; de portador obrigatório.|
-|Accept|application/json|
+|Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

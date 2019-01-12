@@ -2,25 +2,27 @@
 title: 'usuário: exportPersonalData'
 description: Envia uma solicitação de operação de política de dados, feita por um administrador da empresa para exportar dados de um usuário organizacionais.
 localization_priority: Normal
-ms.openlocfilehash: db20b0cb7eb11358298ce5b9fc59357a18fcb9be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ba26d2b2bc5af63f01a4333490d9850ffa3dd767
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954299"
 ---
 # <a name="user-exportpersonaldata"></a>usuário: exportPersonalData
 
 Envie uma solicitação de operação de política de dados de um administrador da empresa ou de um aplicativo para exportar dados de um usuário organizacional.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  User.Export.All, User.Read.All  |
 |Delegado (conta pessoal da Microsoft) |  Não aplicável  |
-|Aplicativo | User.Export.All, User.Read.All |
+|Aplicação | User.Export.All, User.Read.All |
 
 >**Observação:** A exportação só pode ser executada por um administrador da empresa quando permissões delegadas são usadas.
 
@@ -40,7 +42,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|storageLocation|Cadeia de caracteres|Esta é uma URL de assinatura (SAS) de acesso compartilhado para uma conta de armazenamento do Azure, para onde os dados devem ser exportados.|
+|storageLocation|String|Esta é uma URL de assinatura (SAS) de acesso compartilhado para uma conta de armazenamento do Azure, para onde os dados devem ser exportados.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `202 Accepted`. Ele não retornará nada no corpo da resposta. A resposta conterá os seguintes cabeçalhos de resposta.

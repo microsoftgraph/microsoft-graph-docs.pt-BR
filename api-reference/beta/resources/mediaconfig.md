@@ -3,12 +3,13 @@ title: tipo de recurso de mediaConfig
 description: A configuração de mídia usada para conectar a uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ec76adf2d3a508ebe2518ed0010a1c653daca546
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 74b3b5dc4c71db80e94216756a3513a03011572a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948916"
 ---
 # <a name="mediaconfig-resource-type"></a>tipo de recurso de mediaConfig
 

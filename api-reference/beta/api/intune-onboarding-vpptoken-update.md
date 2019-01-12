@@ -3,12 +3,13 @@ title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto de vppToken.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 521d62ab5e4b66bda5307fbb52da842e54301bc5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1e38660c1fa83ced205b0bbcc506303a3968c41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954143"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
@@ -62,8 +63,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
-|displayName|Cadeia de caracteres|Um administrador especificado token nome amigável.|
-|locationName|Cadeia de caracteres|Localização de token retornada da Apple VPP.|
+|displayName|String|Um administrador especificado token nome amigável.|
+|locationName|String|Localização de token retornada da Apple VPP.|
 |claimTokenManagementFromExternalMdm|Booliano|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
 
 

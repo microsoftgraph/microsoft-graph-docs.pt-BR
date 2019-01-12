@@ -3,12 +3,13 @@ title: Atualizar applePushNotificationCertificate
 description: Atualizar as propriedades de um objeto applePushNotificationCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9eaca912e32c8575c692746040fc23535906466
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6cc1b113b964dbc2f2ffdaae1e52639ec2463f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821746"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964834"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Atualizar applePushNotificationCertificate
 
@@ -53,8 +54,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [applePu
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de caracteres|O status de carregamento de certificado.|
-|certificateUploadFailureReason|Cadeia de caracteres|O motivo pelo qual o carregamento do certificado falhou.|
+|certificateUploadStatus|String|O status de carregamento de certificado.|
+|certificateUploadFailureReason|String|O motivo pelo qual o carregamento do certificado falhou.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 

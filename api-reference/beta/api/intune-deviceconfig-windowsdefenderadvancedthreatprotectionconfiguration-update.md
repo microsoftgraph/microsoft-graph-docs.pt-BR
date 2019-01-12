@@ -3,12 +3,13 @@ title: Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 description: Atualizar as propriedades de um objeto windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6955851660277a6369e29d3e83e7fc2c08081d22
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc0d6d5225b62a21bb9fe53818562cf10aa8aa73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812072"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949105"
 ---
 # <a name="update-windowsdefenderadvancedthreatprotectionconfiguration"></a>Atualizar windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -50,21 +51,21 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|advancedThreatProtectionOnboardingBlob|Cadeia de caracteres|Windows Defender AdvancedThreatProtection inclusão Blob.|
-|advancedThreatProtectionOnboardingFilename|Cadeia de caracteres|Nome do arquivo do qual AdvancedThreatProtectionOnboardingBlob foi obtido.|
+|advancedThreatProtectionOnboardingBlob|String|Windows Defender AdvancedThreatProtection inclusão Blob.|
+|advancedThreatProtectionOnboardingFilename|String|Nome do arquivo do qual AdvancedThreatProtectionOnboardingBlob foi obtido.|
 |advancedThreatProtectionAutoPopulateOnboardingBlob|Booliano|Auto preencher blob de inclusão programaticamente a partir de serviço de proteção de ameaça avançadas|
 |allowSampleSharing|Booliano|Regra para "Permitir o compartilhamento de exemplo" de AdvancedThreatProtection do Windows Defender|
 |enableExpeditedTelemetryReporting|Booliano|Acelera a frequência de relatórios de telemetria da Proteção Avançada Contra Ameaças do Windows Defender.|
-|advancedThreatProtectionOffboardingBlob|Cadeia de caracteres|Windows Defender AdvancedThreatProtection exclusão Blob.|
-|advancedThreatProtectionOffboardingFilename|Cadeia de caracteres|Nome do arquivo do qual AdvancedThreatProtectionOffboardingBlob foi obtido.|
+|advancedThreatProtectionOffboardingBlob|String|Windows Defender AdvancedThreatProtection exclusão Blob.|
+|advancedThreatProtectionOffboardingFilename|String|Nome do arquivo do qual AdvancedThreatProtectionOffboardingBlob foi obtido.|
 
 
 

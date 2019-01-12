@@ -2,12 +2,14 @@
 title: tipo de recurso de dicas de email
 description: 'Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles estão redigindo uma mensagem. Por exemplo, uma mensagem de ausência temporária '
 localization_priority: Normal
-ms.openlocfilehash: 0506d10ad4b1c5eb473b04a30eb8d48334685574
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: d1ee1af2ae5b62d085942615ae0bd3ec320b19b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891690"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951800"
 ---
 # <a name="mailtips-resource-type"></a>tipo de recurso de dicas de email
 
@@ -18,7 +20,7 @@ Mensagens informativas sobre um destinatário, que são exibidas aos usuários e
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Dicas para a resposta automática de email se ele foi configurado pelo destinatário. |
-| customMailTip | Cadeia de caracteres | Uma dica de email personalizado que pode ser definida na caixa de correio do destinatário. |
+| customMailTip | String | Uma dica de email personalizado que pode ser definida na caixa de correio do destinatário. |
 | deliveryRestricted| Booliano | Se caixa de correio do destinatário é restrita, por exemplo, aceitar mensagens de apenas uma lista de remetentes confiáveis, predefinida rejeitar mensagens de uma lista de remetentes predefinida, ou aceitar mensagens de apenas os remetentes autenticados. |
 | emailAddress | [emailAddress](../resources/emailaddress.md) | O endereço de email do destinatário para obter dicas de email para. |
 | erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a ação [getMailTips](../api/user-getmailtips.md) . |

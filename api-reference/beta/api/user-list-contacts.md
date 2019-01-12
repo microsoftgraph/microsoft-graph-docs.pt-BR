@@ -2,12 +2,14 @@
 title: Listar contatos
 description: Obtenha os contatos na caixa de correio do usuário.
 localization_priority: Normal
-ms.openlocfilehash: b78009d44fd442bab31b9911056023256a1d5102
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2b427be9872aff70ecf5ed3166e94a48b94a62ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886615"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953627"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -21,7 +23,7 @@ Há dois cenários onde um aplicativo pode obter contatos na pasta de contatos d
 * Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerGroupsActivityGroupCounts'
 description: Obtenha o número total de grupos que existiam e quantos incluíam atividade de conversação em grupo.
 localization_priority: Normal
-ms.openlocfilehash: fc3c6bc1b2c8672d4e02b18c62da8142052c3c62
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d0daae8bab7ddce1fa6412d064429b40b290a044
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894233"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954264"
 ---
 # <a name="reportroot-getyammergroupsactivitygroupcounts"></a>reportRoot: getYammerGroupsActivityGroupCounts
 

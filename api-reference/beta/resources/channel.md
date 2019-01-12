@@ -3,12 +3,13 @@ title: tipo de recurso de canal
 description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 058632c9f56462195db0cd268fd0af262d4292f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 6529c555e418589cb757a1bc52bda520bd792745
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952325"
 ---
 # <a name="channel-resource-type"></a>tipo de recurso de canal
 
@@ -32,9 +33,9 @@ Um canal é uma coleção de [chatMessages](chatmessage.md) dentro de uma [equip
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres|Descrição textual opcional para o canal.|
-|displayName|Cadeia de caracteres|Nome de canal como ele será exibido ao usuário no Microsoft Teams.|
-|id|Cadeia de caracteres|Identificador exclusivo dos canais. Somente leitura.|
+|description|String|Descrição textual opcional para o canal.|
+|displayName|String|Nome de canal como ele será exibido ao usuário no Microsoft Teams.|
+|id|String|Identificador exclusivo dos canais. Somente leitura.|
 |isFavoriteByDefault|Booliano|Se o canal deve ser marcado automaticamente 'favorito' para todos os membros da equipe. Padrão: `false`.|
 |email|Booliano| O endereço de email de mensagens enviadas para o canal. Somente leitura.|
 |webUrl|String|Um hiperlink que irá navegar até o canal de Teams da Microsoft. Esta é a URL que você obtém quando você um canal em Microsoft Teams do mouse em e selecione o link de Get para canal. Essa URL deve ser tratado como um blob opaco e não analisado. Somente leitura.|

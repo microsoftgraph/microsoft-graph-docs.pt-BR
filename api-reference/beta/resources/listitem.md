@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
-ms.openlocfilehash: b2e151937d5e8db633edeb5d521d6e0c875b6d78
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866084"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950722"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 

@@ -3,12 +3,13 @@ title: ação de confirmação
 description: Confirma um arquivo de um determinado aplicativo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53a72e5b773c7fd5b306ff1f0cc4a6422dd640fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0b225a74f3a273e9e5dda7752b94e4a445d9794c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836558"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952339"
 ---
 # <a name="commit-action"></a>ação de confirmação
 

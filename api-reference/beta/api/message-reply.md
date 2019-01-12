@@ -2,12 +2,14 @@
 title: 'message: reply'
 description: 'Responder ao remetente de uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis todas em uma **resposta** de chamada. '
 localization_priority: Normal
-ms.openlocfilehash: 3844969c8c4bbec9026aee8477db968d5a3b0e52
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: e8931b315cd0ee21228cf70ca36fa7be5bed7f70
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827458"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962874"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -23,7 +25,7 @@ Outra opção é primeiro [criar um rascunho de mensagem de resposta](../api/mes
 - Se a propriedade **replyTo** for especificada na mensagem original, por um formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta para os destinatários em **replyTo** e não o destinatário na propriedade **da** . 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -51,7 +53,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
+|comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 ## <a name="response"></a>Resposta

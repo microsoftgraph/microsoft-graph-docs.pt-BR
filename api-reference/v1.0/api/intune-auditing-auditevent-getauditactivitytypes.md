@@ -3,12 +3,13 @@ title: Função getAuditActivityTypes
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e750db76d6c022faf3149cc24d43a448ca235eed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3a8151169f1173594be3697e721e89556416e718
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889499"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952675"
 ---
 # <a name="getauditactivitytypes-function"></a>Função getAuditActivityTypes
 

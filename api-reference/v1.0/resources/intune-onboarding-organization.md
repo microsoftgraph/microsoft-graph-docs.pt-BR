@@ -3,12 +3,13 @@ title: tipo de recurso organization
 description: O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b87866520e62850f169861f4fac0a9a2454ea3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd38274fea11f4312b60719fe04464d9b283fe9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814431"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961369"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso da organização
 

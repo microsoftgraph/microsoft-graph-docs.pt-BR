@@ -1,14 +1,15 @@
 ---
 title: Listar páginas
 description: Recuperar uma lista de objetos page.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829362"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955643"
 ---
 # <a name="list-pages"></a>Listar páginas
 

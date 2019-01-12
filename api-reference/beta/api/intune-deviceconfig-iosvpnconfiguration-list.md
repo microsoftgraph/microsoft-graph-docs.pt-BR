@@ -3,12 +3,13 @@ title: Lista iosVpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a13501285ccaaf3322da917eefc0e7face70eda2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e17edc4ddd0125166f26bafb8e7e1e734a640764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812982"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958023"
 ---
 # <a name="list-iosvpnconfigurations"></a>Lista iosVpnConfigurations
 

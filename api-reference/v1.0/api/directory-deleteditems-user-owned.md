@@ -1,14 +1,15 @@
 ---
-title: Permissions
+title: Permissões
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 2c4dfb7300d75ec066cf7c76c582d7bc4014e27a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1d57bbada024bdb2358c39ce9183004ea53289dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890080"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962727"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Listar itens excluídos pertencentes a um usuário**
 
@@ -18,7 +19,7 @@ Atualmente, a funcionalidade de itens de lista excluída é suportada somente pa
 
 Esta é uma ação de serviço, o que significa que ele não dá suporte a paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificado por ID.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
@@ -53,8 +54,8 @@ O corpo da solicitação requer os seguintes parâmetros:
 
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|userId|Cadeia de caracteres|ID do proprietário.|
-|type|Cadeia de caracteres|Tipo de objetos pertencentes para retornar; `Group` atualmente é o único valor com suporte.|
+|userId|String|ID do proprietário.|
+|type|String|Tipo de objetos pertencentes para retornar; `Group` atualmente é o único valor com suporte.|
 
 
 ## <a name="response"></a>Resposta

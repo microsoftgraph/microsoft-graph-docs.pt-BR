@@ -3,12 +3,13 @@ title: Listar microsoftStoreForBusinessApps
 description: Listar propriedades e relações dos objetos microsoftStoreForBusinessApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 979a5ddaf3f7594b6d4ef2b474f873d5f9806506
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e03085b793ebdda1ab3b52300d38307c551d908b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894135"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956350"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Listar microsoftStoreForBusinessApps
 

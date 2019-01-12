@@ -3,12 +3,13 @@ title: Lista androidForWorkMobileAppConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidForWorkMobileAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4d8ae140fae118ec7778b0188706a518485fbbc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ed86ebb72c20b143234006a07655e2e7b2a7cd61
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960025"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>Lista androidForWorkMobileAppConfigurations
 

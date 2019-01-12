@@ -3,12 +3,13 @@ title: Criar enterpriseCodeSigningCertificate
 description: Crie um novo objeto de enterpriseCodeSigningCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec84f55fc94d1cdbf29e0cc65d6da029a3435315
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 302c10d1e0fbc5e182180a32ad96d614555d1d04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883360"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956189"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Criar enterpriseCodeSigningCertificate
 
@@ -52,9 +53,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |content|Binária|O certificado de assinatura de código de empresa do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O Status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|Cadeia de caracteres|O nome do assunto para o cert.|
-|subject|Cadeia de caracteres|O valor de assunto para o cert.|
-|issuerName|Cadeia de caracteres|O nome do emissor para o cert.|
-|emissor|Cadeia de caracteres|O valor de emissor para o cert.|
+|subject|String|O valor de assunto para o cert.|
+|issuerName|String|O nome do emissor para o cert.|
+|emissor|String|O valor de emissor para o cert.|
 |expirationDateTime|DateTimeOffset|A data de validade do Cert.|
 |uploadDateTime|DateTimeOffset|A data hora de certificado de assinatura de código padrão quando ele é carregado.|
 

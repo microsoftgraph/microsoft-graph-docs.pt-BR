@@ -3,12 +3,13 @@ title: Excluir windows10GeneralConfiguration
 description: Exclui windows10GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 643b9bc5a0f7b8fa776a38adc53fc68711c86aff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4e573835d95b7d867880d3afd506481b82a0fe17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890192"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962027"
 ---
 # <a name="delete-windows10generalconfiguration"></a>Excluir windows10GeneralConfiguration
 

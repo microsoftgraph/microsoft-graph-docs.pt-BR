@@ -2,12 +2,14 @@
 title: tipo de recurso de educationAssignmentRecipient
 description: Usada dentro da propriedade **assignments.assignTo** . Essa superclasse é abstrata e não é possível
 localization_priority: Normal
-ms.openlocfilehash: fbc9bb473f3faf31d472afe9a5df72594a08992a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: 5f9447bd04bb6338260291a48e32ee124064e155
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827430"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957785"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>tipo de recurso de educationAssignmentRecipient
 

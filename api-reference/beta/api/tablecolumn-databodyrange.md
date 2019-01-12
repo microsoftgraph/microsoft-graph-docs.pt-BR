@@ -3,12 +3,13 @@ title: 'TableColumn: DataBodyRange'
 description: Obtém o objeto de intervalo associado ao corpo de dados da coluna.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 71af6009771fe20b729ba5968b0b542e2f84c937
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 763629516334899e1cdce881d7204dc6c30a361c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887812"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955636"
 ---
 # <a name="tablecolumn-databodyrange"></a>TableColumn: DataBodyRange
 

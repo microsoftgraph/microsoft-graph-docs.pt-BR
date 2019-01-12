@@ -2,12 +2,14 @@
 title: 'usuário: invalidateAllRefreshTokens'
 description: Invalida todos os tokens de atualização do usuário emitidos para aplicativos (bem como os cookies de sessão no navegador de um usuário), redefinindo a propriedade **refreshTokensValidFromDateTime** do usuário para a data e hora atual. Geralmente, essa operação é executada (por usuário ou um administrador), se o usuário tem um dispositivo perdido ou roubado.  Essa operação seria impedir o acesso a qualquer dado da organização acessado por meio de aplicativos no dispositivo sem que o usuário pela primeira vez, sendo necessário para entrar novamente. Na verdade, essa operação seria forçar o usuário entrar novamente para todos os aplicativos que eles tenham anteriormente consentiu, independente do dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: 4ece9866e703d47ab8f7b024496f92f30a4a14b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 740829e4ebd3b64308e514ab1c7633db7f35e7d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858076"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950176"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>usuário: invalidateAllRefreshTokens
 
@@ -17,7 +19,7 @@ Invalida todos os tokens de atualização do usuário emitidos para aplicativos 
 
 Para os desenvolvedores, se o aplicativo tenta resgatar um token de acesso delegado para este usuário, usando um token invalidado refresh, o aplicativo receberá um erro. Se isso acontecer, o aplicativo será necessário adquirir um novo token refresh fazendo uma solicitação ao ponto de extremidade autorizar, que irá forçar o usuário entrar.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 + Para um aplicativo permitir o assinadas no usuário para invalidar aplicativos eles tenham consentiu: User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All

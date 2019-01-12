@@ -3,12 +3,13 @@ title: Obter advancedThreatProtectionOnboardingStateSummary
 description: Leia as propriedades e os relacionamentos do objeto advancedThreatProtectionOnboardingStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b298ddb0f8f1e82283902c2385d5fbce2b5f2e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5dcf31153524feec73342f75dfaf432ec36b527c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863655"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958135"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>Obter advancedThreatProtectionOnboardingStateSummary
 

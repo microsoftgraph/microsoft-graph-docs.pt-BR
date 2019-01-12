@@ -3,12 +3,13 @@ title: Listar deviceCompliancePolicySettingStateSummaries
 description: Listar propriedades e relações dos objetos deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3125a764386890a718037387ab37508bef7f224c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8cff028cc5dad0ea1ad2df36c1b364b15b788bfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888295"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950533"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>Listar deviceCompliancePolicySettingStateSummaries
 

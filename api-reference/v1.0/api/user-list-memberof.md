@@ -3,12 +3,13 @@ title: Listar memberOf
 description: 'Obtenha todos os grupos e funções de diretório dos quais o usuário é um membro direto. '
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: cd43e3853d25a55ac8c41f170736a8c37477906e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 389cbe5a62b75e9396077d9710c0b92a497e8bd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811372"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962524"
 ---
 # <a name="list-memberof"></a>Listar memberOf
 

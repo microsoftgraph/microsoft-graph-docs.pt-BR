@@ -3,12 +3,13 @@ title: Listar tabelas
 description: Recupere uma lista de objetos de tabela.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7ede107368a7fbdfe18b116c64c61da473afa778
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: ab522b7d1dbad03ca6c9f10d70ae32d2793b06dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959336"
 ---
 # <a name="list-tables"></a>Listar tabelas
 
