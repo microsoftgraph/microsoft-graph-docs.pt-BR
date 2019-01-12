@@ -3,12 +3,13 @@ title: Atualizar depOnboardingSetting
 description: Atualize as propriedades de um objeto depOnboardingSetting.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 05b31f007aece229dacee41af354fdf7ab2807ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7624c99b812f67e76551e9f082da0af49c03bc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891116"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924234"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
 
@@ -57,9 +58,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |shareTokenWithSchoolDataSyncService|Booliano|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|Cadeia de caracteres|Nome amigável para o Token de Dep|
+|tokenName|String|Nome amigável para o Token de Dep|
 |syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
-|defaultProfileDisplayName|Cadeia de caracteres|Obtém sincronizados contagem de dispositivo|
+|defaultProfileDisplayName|String|Obtém sincronizados contagem de dispositivo|
 |dataSharingConsentGranted|Booliano|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
 
 

@@ -2,18 +2,20 @@
 title: Lista directoryAudits
 description: Fornece a lista de logs de auditoria gerados pelo Windows Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços dentro do Azure Active Directory como usuário, aplicativo, dispositivo e gerenciamento do grupo, privilegiado Identity Management, avaliações de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e Admin redefinições de senha ), Etc. de gerenciamento do grupo de auto-atendimento …
 localization_priority: Priority
-ms.openlocfilehash: 08b9cd5ded6771883a6d0f1129cf44a808515f8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: df6a737696c855cd60e396c6571169f8c46b3952
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829334"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921259"
 ---
 # <a name="list-directoryaudits"></a>Lista directoryAudits
 
 Fornece a lista de logs de auditoria gerados pelo Windows Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços dentro do Azure Active Directory como usuário, aplicativo, dispositivo e gerenciamento do grupo, privilegiado Identity Management, avaliações de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e Admin redefinições de senha ), Etc. de gerenciamento do grupo de auto-atendimento …
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

@@ -2,12 +2,14 @@
 title: Lista accessReview decisões
 description: No Windows Azure AD para acessar o recurso de revisões, recuperar as decisões de um objeto accessReview.
 localization_priority: Normal
-ms.openlocfilehash: ade39abbf63c4e1eb71a6fa25fd3febd8a24c41b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4f89fdbce1c87ce9ef8a6ba8c5b7f9b7be410617
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849746"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927006"
 ---
 # <a name="list-accessreview-decisions"></a>Lista accessReview decisões
 
@@ -17,7 +19,7 @@ O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, pode re
 
 Observe que uma análise mais acesso recorrente não terá um `decisions` relacionamento.  Em vez disso, o chamador deve navegar o `instance` relação para encontrar um `accessReview` objeto para uma instância atual ou passado da revisão acesso.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |

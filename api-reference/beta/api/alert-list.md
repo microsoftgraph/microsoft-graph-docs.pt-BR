@@ -2,12 +2,14 @@
 title: Listar alertas
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 6036514c2aeabe287fd019ce69157d4b7897af60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 507ad72b8d50e2343bfd99446e178e09ea65ac8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860204"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927839"
 ---
 # <a name="list-alerts"></a>Listar alertas
 
@@ -15,7 +17,7 @@ ms.locfileid: "27860204"
 
 Recupere uma lista de objetos de [alerta](../resources/alert.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

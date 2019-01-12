@@ -2,12 +2,13 @@
 title: 'reportRoot: getSharePointActivityPages'
 description: Obtenha o número de páginas exclusivas visitadas pelos usuários.
 localization_priority: Normal
-ms.openlocfilehash: 2c9f39467940b6aeab2a26568cb0e11c7dd4c616
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 5a04662ec4501f5277ce92276266393d309a5ff0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916352"
 ---
 # <a name="reportroot-getsharepointactivitypages"></a>reportRoot: getSharePointActivityPages
 

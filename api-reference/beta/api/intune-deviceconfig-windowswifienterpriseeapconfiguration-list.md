@@ -3,12 +3,13 @@ title: Lista windowsWifiEnterpriseEAPConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsWifiEnterpriseEAPConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 39991c4a7b0f8238f898f17602e59534f042de0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3724a7b5facd634c1457ccbd218ddfdb6505ce68
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806864"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978082"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>Lista windowsWifiEnterpriseEAPConfigurations
 

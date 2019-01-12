@@ -3,12 +3,13 @@ title: Listar nomes
 description: 'Recupere uma lista de itens nomeados associados à planilha. '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 2b773f15776d1db3b5eecf15de6b2df75b3b8c32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4273ad75b012bf2884cd8b055c2fdb6e7e1abaff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822383"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927020"
 ---
 # <a name="list-names"></a>Listar nomes
 

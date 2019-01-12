@@ -3,12 +3,13 @@ title: tipo de recurso de importedAppleDeviceIdentity
 description: O recurso de importedAppleDeviceIdentity representa a identidade do dispositivo importadas de um dispositivo da Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b7ad629721190b67e001ea56ca732eb325358768
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf6c13e4bb34141e2f1ee7e98556cf0e4a8fb6e3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977476"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>tipo de recurso de importedAppleDeviceIdentity
 

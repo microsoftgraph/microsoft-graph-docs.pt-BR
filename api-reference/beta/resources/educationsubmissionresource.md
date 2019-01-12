@@ -3,12 +3,13 @@ title: tipo de recurso de educationSubmissionResource
 description: 'Um wrapper em torno de um recurso para uso em um envio. O wrapper adiciona um ponteiro para o recurso de atribuição, se isso foi copiado da atribuição.  '
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 8703072fccb77a2577db6ce0717647e79a47fdc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f242e4206c174634a3a8c3248942284798bb1550
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875982"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979177"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>tipo de recurso de educationSubmissionResource
 

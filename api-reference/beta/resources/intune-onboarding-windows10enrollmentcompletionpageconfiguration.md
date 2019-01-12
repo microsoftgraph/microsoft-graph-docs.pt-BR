@@ -3,12 +3,13 @@ title: tipo de recurso de windows10EnrollmentCompletionPageConfiguration
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f843a36c5852f3a565894e5ea7e2d6f0ff70954e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bacbe1707a9e552d90f6f8b9d18a710f8a3a9761
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920202"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>tipo de recurso de windows10EnrollmentCompletionPageConfiguration
 
@@ -43,7 +44,7 @@ Herda de [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceen
 |blockDeviceSetupRetryByUser|Booliano|Permitir que o usuário repetir a instalação em caso de falha de instalação|
 |allowDeviceResetOnInstallFailure|Booliano|Permitir ou bloquear o dispositivo redefinir em caso de falha de instalação|
 |allowLogCollectionOnInstallFailure|Booliano|Permitir ou bloquear o conjunto de log em caso de falha de instalação|
-|customErrorMessage|Cadeia de caracteres|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
+|customErrorMessage|String|Definir a mensagem de erro personalizada para mostrar após a falha de instalação|
 |installProgressTimeoutInMinutes|Int32|Definir tempo limite de progresso de instalação em minutos|
 |allowDeviceUseOnInstallFailure|Booliano|Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação|
 |selectedMobileAppIds|String collection|Aplicativos selecionados para rastrear o status de instalação|

@@ -3,12 +3,13 @@ title: Criar windowsPhone81GeneralConfiguration
 description: Criar um novo objeto windowsPhone81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 594dc82a4be7e939bd04d937cbf4d2ed583d7ddd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9cf904f48668273da01e07800ee65a9752eed841
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867078"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978855"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Criar windowsPhone81GeneralConfiguration
 

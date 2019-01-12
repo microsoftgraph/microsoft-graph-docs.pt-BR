@@ -3,12 +3,13 @@ title: 'participante: muteAll'
 description: Ativar Mudo de todos os participantes na chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7141c5f8ee190fd3df8cca3f30f14c537165986b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: e8cd6478aeb0b467d65f452417d5de43d335d89f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837804"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920146"
 ---
 # <a name="participant-muteall"></a>participante: muteAll
 
@@ -16,7 +17,7 @@ ms.locfileid: "27837804"
 
 Ativar Mudo de todos os participantes na chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
@@ -43,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantes|String collection|Os participantes para ser ativado.|
-|clientContext|Cadeia de caracteres|O contexto de cliente.|
+|clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` objeto response de código e [commsOperation](../resources/commsoperation.md) no corpo da resposta.

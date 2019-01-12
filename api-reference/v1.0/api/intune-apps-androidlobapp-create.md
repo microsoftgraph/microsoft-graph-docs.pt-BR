@@ -3,12 +3,13 @@ title: Criar androidLobApp
 description: Cria um novo objeto androidLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 25ccd06df28c5c75f348d74aeb06d6dd192bce26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8a16fd332dda41e7b538f60118ec34eda538c0c6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829089"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991570"
 ---
 # <a name="create-androidlobapp"></a>Criar androidLobApp
 

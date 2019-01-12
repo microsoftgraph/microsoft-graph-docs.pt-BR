@@ -2,12 +2,14 @@
 title: Obter organização
 description: Recupere as propriedades e os relacionamentos da organização autenticada no momento.
 localization_priority: Normal
-ms.openlocfilehash: f8076d36c47ea9d517b43eb827d702350c364132
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c4f0b325100ac8543e51320609e8c4e39ce130fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826744"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915449"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -17,7 +19,7 @@ Recupere as propriedades e os relacionamentos da organização autenticada no mo
 
 Desde que o recurso de **organização** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância da **organização** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

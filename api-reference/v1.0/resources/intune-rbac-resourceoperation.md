@@ -3,12 +3,13 @@ title: Tipo de recurso resourceOperation
 description: " operação é usada para atribuir um recurso de MobileApp a um grupo de segurança AAD.  Não é possível modificar as operações de recursos para funções internas."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 47dccffe445024e9e6b086b17f87789316db6585
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e193060ca07fa79caea90dc2578364958551cd8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811848"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956322"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 

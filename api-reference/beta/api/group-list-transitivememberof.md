@@ -2,12 +2,14 @@
 title: Membro transitivo do grupo de lista
 description: Obtenha grupos e unidades administrativas que o grupo é um membro de.  Essa operação é transitiva e também incluirá todos os grupos que este grupos é um membro aninhado do. Diferentemente obtendo Office 365 grupos de um usuário, isto retorna todos os tipos de grupos, não apenas a grupos do Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 2dececa36b96cfae866afe2f03d4ebb926467ae0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: ec03ca6fce354f2a0b81cf0f81bf3061db504365
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887399"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921665"
 ---
 # <a name="list-group-transitive-memberof"></a>Membro transitivo do grupo de lista
 
@@ -15,7 +17,7 @@ ms.locfileid: "27887399"
 
 Obtenha grupos e unidades administrativas que o grupo é um membro de.  Essa operação é transitiva e também incluirá todos os grupos que este grupos é um membro aninhado do. Diferentemente obtendo Office 365 grupos de um usuário, isto retorna todos os tipos de grupos, não apenas a grupos do Office 365.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

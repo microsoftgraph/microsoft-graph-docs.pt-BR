@@ -2,12 +2,14 @@
 title: Tipo de recurso androidGeneralDeviceConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso androidGeneralDeviceConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 068a081ff6a52735bc2366a1b6a8af55801eed65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 034c5d2f9e7452e1f1877fb7ca933f27d7df35ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976601"
 ---
 # <a name="androidgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso androidGeneralDeviceConfiguration
 

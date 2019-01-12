@@ -3,12 +3,13 @@ title: tipo de recurso keyValue
 description: Definição do valor da chave.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aae0fea85c5dd4f647a72c0fe66890bd8b82520b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5027388b455a41bc5895009a4ce79ca195ab8340
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957876"
 ---
 # <a name="keyvalue-resource-type"></a>tipo de recurso keyValue
 

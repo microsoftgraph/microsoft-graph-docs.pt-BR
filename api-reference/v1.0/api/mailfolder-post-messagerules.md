@@ -3,12 +3,13 @@ title: Criar regra
 description: 'Crie um objeto messageRule especificando um conjunto de condições e ações. '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4adea9e35a3dcd5278c96f5689167554b1700d94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: a1ed88c0beec0b9b8767e8b49111aa65f3a5b6f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916142"
 ---
 # <a name="create-rule"></a>Criar regra
 
