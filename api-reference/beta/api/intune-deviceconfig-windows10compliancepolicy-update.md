@@ -3,12 +3,13 @@ title: Atualizar windows10CompliancePolicy
 description: Atualiza as propriedades de um objeto windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60d2d40bdab8277f0fb996147f7ba43b7b3d3dcb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fb689181fdc22e34bb5b85ee42c1f38e4a26905a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970138"
 ---
 # <a name="update-windows10compliancepolicy"></a>Atualizar windows10CompliancePolicy
 

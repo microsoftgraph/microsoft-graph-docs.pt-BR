@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveActivityUserDetail'
 description: Obtenha dados sobre as atividades do OneDrive por usuário.
 localization_priority: Normal
-ms.openlocfilehash: 881221815aab0dfd65b8bff97f36d2bfa8086061
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 660a42d597ce7878f1fa8a5cacaf5dc6b42e8438
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807907"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969622"
 ---
 # <a name="reportroot-getonedriveactivityuserdetail"></a>reportRoot: getOneDriveActivityUserDetail
 

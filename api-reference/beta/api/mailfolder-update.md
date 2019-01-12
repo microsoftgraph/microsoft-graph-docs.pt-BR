@@ -3,12 +3,13 @@ title: Atualizar mailFolder
 description: Atualize as propriedades do objeto mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f9b0af67b4fdedbf6ecbbcfe591057a4aeb86351
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 33e900933bc643f36e8f8a7783ea2083b3c03887
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976580"
 ---
 # <a name="update-mailfolder"></a>Atualizar mailFolder
 
@@ -16,7 +17,7 @@ ms.locfileid: "27873893"
 
 Atualize as propriedades do objeto [mailFolder](../resources/mailfolder.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -43,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
+|displayName|String|O nome de exibição da mailFolder.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.

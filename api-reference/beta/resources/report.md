@@ -2,12 +2,13 @@
 title: Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
 description: Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Office 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Office 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Office 365.
 localization_priority: Priority
-ms.openlocfilehash: 1fcefc9c5fb5ba57551b75b74081ea60a1bcf1b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: ff0ac12d2a216face3381574effb080624af97e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861331"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978022"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
 

@@ -3,12 +3,13 @@ title: tipo de recurso de windowsKioskAppBase
 description: A classe base para um tipo de aplicativos
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa83243959105b09707fa28a53271d8f95c5fd1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9b13807fdb0319b3c9a15248fa2d50ffc46ac164
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845154"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977021"
 ---
 # <a name="windowskioskappbase-resource-type"></a>tipo de recurso de windowsKioskAppBase
 

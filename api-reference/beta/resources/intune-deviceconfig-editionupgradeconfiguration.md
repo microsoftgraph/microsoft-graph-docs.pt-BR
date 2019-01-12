@@ -3,12 +3,13 @@ title: Tipo de recurso editionUpgradeConfiguration
 description: Configuração de atualização da edição do Windows 10.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 71651929cf2c83831d1bd6676e8f36c2ff38c495
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 99156c8eb9175ebf75c78db6fd4765d163b9a7aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880217"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991948"
 ---
 # <a name="editionupgradeconfiguration-resource-type"></a>Tipo de recurso editionUpgradeConfiguration
 

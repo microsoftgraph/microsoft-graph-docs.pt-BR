@@ -3,12 +3,13 @@ title: Listar iosUpdateDeviceStatuses
 description: Listar propriedades e relações dos objetos iosUpdateDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c022549b138292544936b25c3ae9dc450e7c68ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c203e39951753951bbcbd27c90f30874b36d5245
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847947"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979071"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Listar iosUpdateDeviceStatuses
 

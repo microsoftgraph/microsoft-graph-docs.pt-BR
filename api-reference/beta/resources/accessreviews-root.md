@@ -2,12 +2,14 @@
 title: Analisa de acesso do Azure AD
 description: Você pode usar o Windows Azure AD acessar revisões para configurar o acesso de ocorrência única ou recorrente avaliações de certificação de direitos de acesso do usuário.
 localization_priority: Normal
-ms.openlocfilehash: 259a88bf95bfe0796e0ee46dd2d0a64c68831a64
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 24571e8d83d6d321ba2bf20d9beae9ba6487e286
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860785"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975348"
 ---
 # <a name="azure-ad-access-reviews"></a>Analisa de acesso do Azure AD
 
