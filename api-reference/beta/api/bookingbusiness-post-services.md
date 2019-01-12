@@ -2,48 +2,50 @@
 title: Criar bookingService
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 73e38c0abfeacb43d3ac7f4e28345ac56becb667
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 13a180a74866d79ecf4540a0feac58d044082a04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814291"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990345"
 ---
-# <a name="create-bookingservice"></a><span data-ttu-id="45b8a-104">Criar bookingService</span><span class="sxs-lookup"><span data-stu-id="45b8a-104">Create bookingService</span></span>
+# <a name="create-bookingservice"></a><span data-ttu-id="8b6db-104">Criar bookingService</span><span class="sxs-lookup"><span data-stu-id="8b6db-104">Create bookingService</span></span>
 
- > <span data-ttu-id="45b8a-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="45b8a-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="45b8a-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="45b8a-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="8b6db-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="8b6db-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8b6db-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="8b6db-106">Use of these APIs in production applications is not supported.</span></span>
  
-<span data-ttu-id="45b8a-107">Crie um novo [bookingService](../resources/bookingservice.md) para o especificado [bookingbusiness](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="45b8a-107">Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="45b8a-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="45b8a-108">Permissions</span></span>
-<span data-ttu-id="45b8a-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45b8a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8b6db-107">Crie um novo [bookingService](../resources/bookingservice.md) para o especificado [bookingbusiness](../resources/bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="8b6db-107">Create a new [bookingService](../resources/bookingservice.md) for the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8b6db-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="8b6db-108">Permissions</span></span>
+<span data-ttu-id="8b6db-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8b6db-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45b8a-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="45b8a-111">Permission type</span></span>      | <span data-ttu-id="45b8a-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="45b8a-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8b6db-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="8b6db-111">Permission type</span></span>      | <span data-ttu-id="8b6db-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="8b6db-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45b8a-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="45b8a-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="45b8a-114">Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="45b8a-114">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="45b8a-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="45b8a-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45b8a-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="45b8a-116">Not supported.</span></span>   |
-|<span data-ttu-id="45b8a-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="45b8a-117">Application</span></span> | <span data-ttu-id="45b8a-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="45b8a-118">Not supported.</span></span>  |
+|<span data-ttu-id="8b6db-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8b6db-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="8b6db-114">Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="8b6db-114">Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="8b6db-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8b6db-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8b6db-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8b6db-116">Not supported.</span></span>   |
+|<span data-ttu-id="8b6db-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="8b6db-117">Application</span></span> | <span data-ttu-id="8b6db-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="8b6db-118">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="45b8a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="45b8a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8b6db-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8b6db-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/services
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="45b8a-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="45b8a-120">Request headers</span></span>
-| <span data-ttu-id="45b8a-121">Nome</span><span class="sxs-lookup"><span data-stu-id="45b8a-121">Name</span></span>       | <span data-ttu-id="45b8a-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="45b8a-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8b6db-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8b6db-120">Request headers</span></span>
+| <span data-ttu-id="8b6db-121">Nome</span><span class="sxs-lookup"><span data-stu-id="8b6db-121">Name</span></span>       | <span data-ttu-id="8b6db-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="8b6db-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="45b8a-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="45b8a-123">Authorization</span></span>  | <span data-ttu-id="45b8a-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="45b8a-124">Bearer {code}</span></span>|
+| <span data-ttu-id="8b6db-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="8b6db-123">Authorization</span></span>  | <span data-ttu-id="8b6db-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="8b6db-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="45b8a-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="45b8a-125">Request body</span></span>
-<span data-ttu-id="45b8a-126">No corpo da solicitação, fornece uma representação JSON do objeto [bookingService](../resources/bookingservice.md) .</span><span class="sxs-lookup"><span data-stu-id="45b8a-126">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8b6db-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8b6db-125">Request body</span></span>
+<span data-ttu-id="8b6db-126">No corpo da solicitação, fornece uma representação JSON do objeto [bookingService](../resources/bookingservice.md) .</span><span class="sxs-lookup"><span data-stu-id="8b6db-126">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="45b8a-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="45b8a-127">Response</span></span>
-<span data-ttu-id="45b8a-128">Se tiver êxito, este método retornará `201, Created` objeto response de código e [bookingService](../resources/bookingservice.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="45b8a-128">If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8b6db-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="8b6db-127">Response</span></span>
+<span data-ttu-id="8b6db-128">Se tiver êxito, este método retornará `201, Created` objeto response de código e [bookingService](../resources/bookingservice.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="8b6db-128">If successful, this method returns `201, Created` response code and [bookingService](../resources/bookingservice.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45b8a-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="45b8a-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="45b8a-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="45b8a-130">Request</span></span>
-<span data-ttu-id="45b8a-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="45b8a-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="8b6db-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8b6db-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8b6db-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8b6db-130">Request</span></span>
+<span data-ttu-id="8b6db-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="8b6db-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_bookingservice_from_bookingbusiness"
@@ -112,9 +114,9 @@ Content-type: application/json
     ]
 }
 ```
-<span data-ttu-id="45b8a-132">No corpo da solicitação, fornece uma representação JSON do objeto [bookingService](../resources/bookingservice.md) .</span><span class="sxs-lookup"><span data-stu-id="45b8a-132">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="45b8a-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="45b8a-133">Response</span></span>
-<span data-ttu-id="45b8a-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="45b8a-134">The following is an example of the response.</span></span> <span data-ttu-id="45b8a-135">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="45b8a-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="45b8a-136">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="45b8a-136">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8b6db-132">No corpo da solicitação, fornece uma representação JSON do objeto [bookingService](../resources/bookingservice.md) .</span><span class="sxs-lookup"><span data-stu-id="8b6db-132">In the request body, supply a JSON representation of [bookingService](../resources/bookingservice.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="8b6db-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="8b6db-133">Response</span></span>
+<span data-ttu-id="8b6db-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="8b6db-134">The following is an example of the response.</span></span> <span data-ttu-id="8b6db-135">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="8b6db-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="8b6db-136">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8b6db-136">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

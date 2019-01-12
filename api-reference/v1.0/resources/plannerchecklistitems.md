@@ -2,24 +2,26 @@
 title: Tipo de recurso plannerChecklistItems
 description: O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto task details. O valor no par propriedade-valor é o objeto checklistItem.
 localization_priority: Normal
-ms.openlocfilehash: 9ccc5e8526afb8e09c757f2a3524a667bbdce8b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 17c1d8c0529e0d85ebc784d25c2dc284f1775c0f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831735"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982698"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="7f717-106">Tipo de recurso plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="7f717-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="d380a-106">Tipo de recurso plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="d380a-106">plannerChecklistItems resource type</span></span>
 
-<span data-ttu-id="7f717-p102">O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).</span><span class="sxs-lookup"><span data-stu-id="7f717-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="d380a-p102">O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).</span><span class="sxs-lookup"><span data-stu-id="d380a-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="7f717-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7f717-111">Properties</span></span>
-<span data-ttu-id="7f717-p103">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="7f717-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="d380a-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d380a-111">Properties</span></span>
+<span data-ttu-id="d380a-p103">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="d380a-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="7f717-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7f717-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d380a-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d380a-116">JSON representation</span></span>
 
-<span data-ttu-id="7f717-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="7f717-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="d380a-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="d380a-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +42,7 @@ ms.locfileid: "27831735"
   }
 }
 ```
-<span data-ttu-id="7f717-118">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="7f717-118">// Example</span></span>
+<span data-ttu-id="d380a-118">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="d380a-118">// Example</span></span>
 
 ```json
 {
