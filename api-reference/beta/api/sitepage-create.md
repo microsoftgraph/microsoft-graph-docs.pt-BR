@@ -4,30 +4,31 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: Cria uma nova página em um site do SharePoint
 localization_priority: Normal
-ms.openlocfilehash: 8b3c1f6cabbacd62e671a27c03658c68b237ef92
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 112c9f564c549bbae06430d4c2353c26abbac908
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885593"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921735"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="32529-102">Criar uma página na lista de páginas de site de um site</span><span class="sxs-lookup"><span data-stu-id="32529-102">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="43a16-102">Criar uma página na lista de páginas de site de um site</span><span class="sxs-lookup"><span data-stu-id="43a16-102">Create a page in the site pages list of a site</span></span>
 
-> <span data-ttu-id="32529-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="32529-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="32529-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="32529-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="43a16-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="43a16-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="43a16-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="43a16-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="32529-105">Crie um novo [sitePage][] na de páginas do site [lista][] em um [site][].</span><span class="sxs-lookup"><span data-stu-id="32529-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="43a16-105">Crie um novo [sitePage][] na de páginas do site [lista][] em um [site][].</span><span class="sxs-lookup"><span data-stu-id="43a16-105">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="32529-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="32529-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="43a16-106">Permissions</span><span class="sxs-lookup"><span data-stu-id="43a16-106">Permissions</span></span>
 
-<span data-ttu-id="32529-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32529-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="43a16-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43a16-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="32529-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="32529-109">Permission type</span></span>      | <span data-ttu-id="32529-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="32529-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43a16-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="43a16-109">Permission type</span></span>      | <span data-ttu-id="43a16-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="43a16-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="32529-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="32529-111">Delegated (work or school account)</span></span> | <span data-ttu-id="32529-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32529-112">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="32529-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="32529-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32529-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="32529-114">Not supported.</span></span>    |
-|<span data-ttu-id="32529-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="32529-115">Application</span></span> | <span data-ttu-id="32529-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="32529-116">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="43a16-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="43a16-111">Delegated (work or school account)</span></span> | <span data-ttu-id="43a16-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43a16-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="43a16-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="43a16-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43a16-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43a16-114">Not supported.</span></span>    |
+|<span data-ttu-id="43a16-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="43a16-115">Application</span></span> | <span data-ttu-id="43a16-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43a16-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="32529-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="32529-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43a16-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="43a16-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,13 +36,13 @@ ms.locfileid: "27885593"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="32529-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="32529-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="43a16-118">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="43a16-118">Request body</span></span>
 
-<span data-ttu-id="32529-119">No corpo da solicitação, fornece uma representação JSON do recurso [sitePage][] para criar.</span><span class="sxs-lookup"><span data-stu-id="32529-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="43a16-119">No corpo da solicitação, fornece uma representação JSON do recurso [sitePage][] para criar.</span><span class="sxs-lookup"><span data-stu-id="43a16-119">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="32529-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="32529-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="43a16-120">Exemplo</span><span class="sxs-lookup"><span data-stu-id="43a16-120">Example</span></span>
 
-<span data-ttu-id="32529-121">O exemplo a seguir mostra como criar uma nova página.</span><span class="sxs-lookup"><span data-stu-id="32529-121">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="43a16-121">O exemplo a seguir mostra como criar uma nova página.</span><span class="sxs-lookup"><span data-stu-id="43a16-121">The following example shows how to create a new page.</span></span>
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -98,9 +99,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="32529-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="32529-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="43a16-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="43a16-122">Response</span></span>
 
-<span data-ttu-id="32529-123">Se tiver êxito, esse método retorna um [sitePage][] no corpo da resposta para a página criada.</span><span class="sxs-lookup"><span data-stu-id="32529-123">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="43a16-123">Se tiver êxito, esse método retorna um [sitePage][] no corpo da resposta para a página criada.</span><span class="sxs-lookup"><span data-stu-id="43a16-123">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -181,7 +182,7 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="32529-124">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="32529-124">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="32529-125">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="32529-125">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="43a16-124">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="43a16-124">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="43a16-125">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="43a16-125">Default properties will be returned from the actual call.</span></span>
 
 [lista]: ../resources/list.md
 [list]: ../resources/list.md

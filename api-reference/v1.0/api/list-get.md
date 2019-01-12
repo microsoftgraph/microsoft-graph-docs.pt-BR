@@ -4,43 +4,44 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: Obter uma lista do SharePoint
 localization_priority: Priority
-ms.openlocfilehash: 0485a8bf3c37af3c659e7a630b65a5fd8f1849f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 63b6fc4d2324c44c20e25fabe7ce0a89ce503ae3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809881"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916114"
 ---
-# <a name="get-metadata-for-a-list"></a><span data-ttu-id="57323-102">Obter metadados de uma lista</span><span class="sxs-lookup"><span data-stu-id="57323-102">Get metadata for a list</span></span>
+# <a name="get-metadata-for-a-list"></a><span data-ttu-id="7c445-102">Obter metadados de uma lista</span><span class="sxs-lookup"><span data-stu-id="7c445-102">Get metadata for a list</span></span>
 
-<span data-ttu-id="57323-103">Retorna os metadados de uma [list][].</span><span class="sxs-lookup"><span data-stu-id="57323-103">Returns the metadata for a [list][].</span></span>
+<span data-ttu-id="7c445-103">Retorna os metadados de uma [list][].</span><span class="sxs-lookup"><span data-stu-id="7c445-103">Returns the metadata for a [list][].</span></span>
 
 [list]: ../resources/list.md
 
-## <a name="permissions"></a><span data-ttu-id="57323-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="57323-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7c445-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7c445-105">Permissions</span></span>
 
-<span data-ttu-id="57323-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57323-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7c445-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7c445-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="57323-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="57323-108">Permission type</span></span>      | <span data-ttu-id="57323-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="57323-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7c445-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7c445-108">Permission type</span></span>      | <span data-ttu-id="7c445-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7c445-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="57323-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="57323-110">Delegated (work or school account)</span></span> | <span data-ttu-id="57323-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57323-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="57323-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="57323-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57323-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="57323-113">Not supported.</span></span>    |
-|<span data-ttu-id="57323-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="57323-114">Application</span></span> | <span data-ttu-id="57323-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="57323-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7c445-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7c445-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7c445-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7c445-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7c445-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7c445-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c445-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7c445-113">Not supported.</span></span>    |
+|<span data-ttu-id="7c445-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7c445-114">Application</span></span> | <span data-ttu-id="7c445-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7c445-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57323-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="57323-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7c445-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7c445-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a><span data-ttu-id="57323-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="57323-117">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7c445-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7c445-117">Request body</span></span>
 
-<span data-ttu-id="57323-118">Não forneça um corpo de solicitação com esse método.</span><span class="sxs-lookup"><span data-stu-id="57323-118">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="7c445-118">Não forneça um corpo de solicitação com esse método.</span><span class="sxs-lookup"><span data-stu-id="7c445-118">Do not supply a request body with this method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="57323-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="57323-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7c445-119">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7c445-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="57323-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="57323-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7c445-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7c445-120">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
@@ -48,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 GET /sites/{site-id}/lists/{list-id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="57323-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="57323-121">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7c445-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c445-121">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -68,9 +69,9 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="57323-122">Com instruções `select` e `expand`, você pode recuperar metadados de lista, definições de coluna e itens de lista em uma única solicitação.</span><span class="sxs-lookup"><span data-stu-id="57323-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
+<span data-ttu-id="7c445-122">Com instruções `select` e `expand`, você pode recuperar metadados de lista, definições de coluna e itens de lista em uma única solicitação.</span><span class="sxs-lookup"><span data-stu-id="7c445-122">With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="57323-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="57323-123">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7c445-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7c445-123">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
@@ -78,7 +79,7 @@ Content-type: application/json
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
-#### <a name="response"></a><span data-ttu-id="57323-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="57323-124">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7c445-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c445-124">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
