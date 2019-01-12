@@ -3,30 +3,31 @@ title: Atualizar mobileAppCategory
 description: Atualizar as propriedades de um objeto mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb21e4e3b564f50538f7399f8715c7f55a56b58b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 31a0d77c5fdbe028d0cad2d566965b6f61412c5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869773"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945738"
 ---
-# <a name="update-mobileappcategory"></a><span data-ttu-id="6c472-103">Atualizar mobileAppCategory</span><span class="sxs-lookup"><span data-stu-id="6c472-103">Update mobileAppCategory</span></span>
+# <a name="update-mobileappcategory"></a><span data-ttu-id="f434b-103">Atualizar mobileAppCategory</span><span class="sxs-lookup"><span data-stu-id="f434b-103">Update mobileAppCategory</span></span>
 
-> <span data-ttu-id="6c472-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="6c472-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6c472-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="6c472-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f434b-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="f434b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f434b-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="f434b-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="6c472-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="6c472-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f434b-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="f434b-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="6c472-107">Atualizar as propriedades de um objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="6c472-107">Update the properties of a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="6c472-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6c472-108">Prerequisites</span></span>
-<span data-ttu-id="6c472-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6c472-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f434b-107">Atualizar as propriedades de um objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="f434b-107">Update the properties of a [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f434b-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f434b-108">Prerequisites</span></span>
+<span data-ttu-id="f434b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f434b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6c472-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6c472-111">Permission type</span></span>|<span data-ttu-id="6c472-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6c472-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f434b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f434b-111">Permission type</span></span>|<span data-ttu-id="f434b-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f434b-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="6c472-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6c472-113">Delegated (work or school account)</span></span>|<span data-ttu-id="6c472-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6c472-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="6c472-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6c472-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6c472-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c472-116">Not supported.</span></span>|
-|<span data-ttu-id="6c472-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6c472-117">Application</span></span>|<span data-ttu-id="6c472-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c472-118">Not supported.</span></span>|
+|<span data-ttu-id="f434b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f434b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f434b-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f434b-114">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="f434b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f434b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f434b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f434b-116">Not supported.</span></span>|
+|<span data-ttu-id="f434b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f434b-117">Application</span></span>|<span data-ttu-id="f434b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f434b-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="6c472-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6c472-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f434b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f434b-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +37,31 @@ PATCH /deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="6c472-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6c472-120">Request headers</span></span>
-|<span data-ttu-id="6c472-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6c472-121">Header</span></span>|<span data-ttu-id="6c472-122">Valor</span><span class="sxs-lookup"><span data-stu-id="6c472-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f434b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f434b-120">Request headers</span></span>
+|<span data-ttu-id="f434b-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f434b-121">Header</span></span>|<span data-ttu-id="f434b-122">Valor</span><span class="sxs-lookup"><span data-stu-id="f434b-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="6c472-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6c472-123">Authorization</span></span>|<span data-ttu-id="6c472-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6c472-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="6c472-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6c472-125">Accept</span></span>|<span data-ttu-id="6c472-126">application/json</span><span class="sxs-lookup"><span data-stu-id="6c472-126">application/json</span></span>|
+|<span data-ttu-id="f434b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="f434b-123">Authorization</span></span>|<span data-ttu-id="f434b-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f434b-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f434b-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f434b-125">Accept</span></span>|<span data-ttu-id="f434b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f434b-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="6c472-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6c472-127">Request body</span></span>
-<span data-ttu-id="6c472-128">No corpo da solicitação, forneça uma representação JSON do objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="6c472-128">In the request body, supply a JSON representation for the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f434b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f434b-127">Request body</span></span>
+<span data-ttu-id="f434b-128">No corpo da solicitação, forneça uma representação JSON do objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="f434b-128">In the request body, supply a JSON representation for the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object.</span></span>
 
-<span data-ttu-id="6c472-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="6c472-129">The following table shows the properties that are required when you create the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span></span>
+<span data-ttu-id="f434b-129">A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span><span class="sxs-lookup"><span data-stu-id="f434b-129">The following table shows the properties that are required when you create the [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).</span></span>
 
-|<span data-ttu-id="6c472-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6c472-130">Property</span></span>|<span data-ttu-id="6c472-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="6c472-131">Type</span></span>|<span data-ttu-id="6c472-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="6c472-132">Description</span></span>|
+|<span data-ttu-id="f434b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f434b-130">Property</span></span>|<span data-ttu-id="f434b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="f434b-131">Type</span></span>|<span data-ttu-id="f434b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="f434b-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6c472-133">id</span><span class="sxs-lookup"><span data-stu-id="6c472-133">id</span></span>|<span data-ttu-id="6c472-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6c472-134">String</span></span>|<span data-ttu-id="6c472-135">A chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="6c472-135">The key of the entity.</span></span>|
-|<span data-ttu-id="6c472-136">displayName</span><span class="sxs-lookup"><span data-stu-id="6c472-136">displayName</span></span>|<span data-ttu-id="6c472-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="6c472-137">String</span></span>|<span data-ttu-id="6c472-138">O nome da categoria do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="6c472-138">The name of the app category.</span></span>|
-|<span data-ttu-id="6c472-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="6c472-139">lastModifiedDateTime</span></span>|<span data-ttu-id="6c472-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6c472-140">DateTimeOffset</span></span>|<span data-ttu-id="6c472-141">A data e hora que a mobileAppCategory foi modificada pela última vez.</span><span class="sxs-lookup"><span data-stu-id="6c472-141">The date and time the mobileAppCategory was last modified.</span></span>|
+|<span data-ttu-id="f434b-133">id</span><span class="sxs-lookup"><span data-stu-id="f434b-133">id</span></span>|<span data-ttu-id="f434b-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f434b-134">String</span></span>|<span data-ttu-id="f434b-135">A chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="f434b-135">The key of the entity.</span></span>|
+|<span data-ttu-id="f434b-136">displayName</span><span class="sxs-lookup"><span data-stu-id="f434b-136">displayName</span></span>|<span data-ttu-id="f434b-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f434b-137">String</span></span>|<span data-ttu-id="f434b-138">O nome da categoria do aplicativo.</span><span class="sxs-lookup"><span data-stu-id="f434b-138">The name of the app category.</span></span>|
+|<span data-ttu-id="f434b-139">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f434b-139">lastModifiedDateTime</span></span>|<span data-ttu-id="f434b-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f434b-140">DateTimeOffset</span></span>|<span data-ttu-id="f434b-141">A data e hora que a mobileAppCategory foi modificada pela última vez.</span><span class="sxs-lookup"><span data-stu-id="f434b-141">The date and time the mobileAppCategory was last modified.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="6c472-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c472-142">Response</span></span>
-<span data-ttu-id="6c472-143">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6c472-143">If successful, this method returns a `200 OK` response code and an updated [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f434b-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="f434b-142">Response</span></span>
+<span data-ttu-id="f434b-143">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f434b-143">If successful, this method returns a `200 OK` response code and an updated [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="6c472-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6c472-144">Example</span></span>
-### <a name="request"></a><span data-ttu-id="6c472-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6c472-145">Request</span></span>
-<span data-ttu-id="6c472-146">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6c472-146">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="f434b-144">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f434b-144">Example</span></span>
+### <a name="request"></a><span data-ttu-id="f434b-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f434b-145">Request</span></span>
+<span data-ttu-id="f434b-146">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f434b-146">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories/{mobileAppCategoryId}
 Content-type: application/json
@@ -72,8 +73,8 @@ Content-length: 107
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="6c472-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c472-147">Response</span></span>
-<span data-ttu-id="6c472-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6c472-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f434b-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="f434b-147">Response</span></span>
+<span data-ttu-id="f434b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f434b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

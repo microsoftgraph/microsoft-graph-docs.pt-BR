@@ -3,49 +3,50 @@ title: Obter directoryRole
 description: Recupere as propriedades de um objeto directoryRole.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: bb438f2362c7f6c7d95dd0b1952bac29aa21616a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 621e56cca0703e87278120596fd47a9d4001effb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935805"
 ---
-# <a name="get-directoryrole"></a><span data-ttu-id="4216d-103">Obter directoryRole</span><span class="sxs-lookup"><span data-stu-id="4216d-103">Get directoryRole</span></span>
+# <a name="get-directoryrole"></a><span data-ttu-id="a8d15-103">Obter directoryRole</span><span class="sxs-lookup"><span data-stu-id="a8d15-103">Get directoryRole</span></span>
 
-> <span data-ttu-id="4216d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="4216d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4216d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="4216d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a8d15-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="a8d15-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a8d15-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="a8d15-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="4216d-106">Recupere as propriedades de um objeto directoryRole.</span><span class="sxs-lookup"><span data-stu-id="4216d-106">Retrieve the properties of a directoryRole object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="4216d-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="4216d-107">Permissions</span></span>
-<span data-ttu-id="4216d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4216d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a8d15-106">Recupere as propriedades de um objeto directoryRole.</span><span class="sxs-lookup"><span data-stu-id="a8d15-106">Retrieve the properties of a directoryRole object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a8d15-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="a8d15-107">Permissions</span></span>
+<span data-ttu-id="a8d15-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a8d15-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4216d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4216d-110">Permission type</span></span>      | <span data-ttu-id="4216d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4216d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a8d15-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a8d15-110">Permission type</span></span>      | <span data-ttu-id="a8d15-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a8d15-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4216d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4216d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4216d-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4216d-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="4216d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4216d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4216d-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4216d-115">Not supported.</span></span>    |
-|<span data-ttu-id="4216d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4216d-116">Application</span></span> | <span data-ttu-id="4216d-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4216d-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="a8d15-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a8d15-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a8d15-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a8d15-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="a8d15-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a8d15-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8d15-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a8d15-115">Not supported.</span></span>    |
+|<span data-ttu-id="a8d15-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a8d15-116">Application</span></span> | <span data-ttu-id="a8d15-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8d15-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4216d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4216d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a8d15-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a8d15-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="4216d-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="4216d-119">Optional query parameters</span></span>
-<span data-ttu-id="4216d-120">Esse método **não** tem suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta (por exemplo, $filter não tem suporte aqui).</span><span class="sxs-lookup"><span data-stu-id="4216d-120">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a8d15-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a8d15-119">Optional query parameters</span></span>
+<span data-ttu-id="a8d15-120">Esse método **não** tem suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta (por exemplo, $filter não tem suporte aqui).</span><span class="sxs-lookup"><span data-stu-id="a8d15-120">This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4216d-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4216d-121">Request headers</span></span>
-| <span data-ttu-id="4216d-122">Nome</span><span class="sxs-lookup"><span data-stu-id="4216d-122">Name</span></span>       | <span data-ttu-id="4216d-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="4216d-123">Type</span></span> | <span data-ttu-id="4216d-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="4216d-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a8d15-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a8d15-121">Request headers</span></span>
+| <span data-ttu-id="a8d15-122">Nome</span><span class="sxs-lookup"><span data-stu-id="a8d15-122">Name</span></span>       | <span data-ttu-id="a8d15-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="a8d15-123">Type</span></span> | <span data-ttu-id="a8d15-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="a8d15-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="4216d-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="4216d-125">Authorization</span></span>  | <span data-ttu-id="4216d-126">string</span><span class="sxs-lookup"><span data-stu-id="4216d-126">string</span></span>  | <span data-ttu-id="4216d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4216d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a8d15-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="a8d15-125">Authorization</span></span>  | <span data-ttu-id="a8d15-126">string</span><span class="sxs-lookup"><span data-stu-id="a8d15-126">string</span></span>  | <span data-ttu-id="a8d15-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a8d15-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4216d-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4216d-129">Request body</span></span>
-<span data-ttu-id="4216d-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="4216d-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a8d15-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a8d15-129">Request body</span></span>
+<span data-ttu-id="a8d15-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a8d15-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4216d-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="4216d-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a8d15-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8d15-131">Response</span></span>
 
-<span data-ttu-id="4216d-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryRole](../resources/directoryrole.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4216d-132">If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="4216d-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4216d-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="4216d-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4216d-134">Request</span></span>
-<span data-ttu-id="4216d-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4216d-135">Here is an example of the request.</span></span>
+<span data-ttu-id="a8d15-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [directoryRole](../resources/directoryrole.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a8d15-132">If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a8d15-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a8d15-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a8d15-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a8d15-134">Request</span></span>
+<span data-ttu-id="a8d15-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a8d15-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directoryrole"
@@ -53,8 +54,8 @@ GET /directoryRoles/{id}
 ```http
 GET https://graph.microsoft.com/beta/directoryRoles/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="4216d-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="4216d-136">Response</span></span>
-<span data-ttu-id="4216d-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4216d-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a8d15-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8d15-136">Response</span></span>
+<span data-ttu-id="a8d15-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a8d15-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
