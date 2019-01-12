@@ -3,12 +3,13 @@ title: Excluir windowsOfficeClientConfiguration
 description: Exclua uma política não relacionadas à segurança específica.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f24d9a8a39cffcbb6a9aeec614ba2a02d2c3d7e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 24064d19ae3ac20813a94cf19bdd20544c991380
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859841"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933957"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>Excluir windowsOfficeClientConfiguration
 

@@ -3,12 +3,13 @@ title: Atualizar roleDefinition
 description: Atualizar as propriedades de um objeto roleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fa2b274411d88d3fa13460135cd0bf5c037b3ffe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3afe285537bc6ff3476b2aadf70d104801baa793
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841136"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934181"
 ---
 # <a name="update-roledefinition"></a>Atualizar roleDefinition
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleDef
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. É somente leitura e é gerada automaticamente.|
+|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
 |displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
 |description|Cadeia de caracteres|Descrição da definição de Função.|
 |permissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|

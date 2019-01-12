@@ -2,19 +2,21 @@
 title: Lista de compromissos
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 920a0d53635e5d017ecd51ee75d3b244aafcb802
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3334e4db060868fa7b514d50d1d879e4d0182b08
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839008"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946830"
 ---
 # <a name="list-appointments"></a>Lista de compromissos
 
  > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
  
 Obtenha uma lista de objetos [bookingAppointment](../resources/bookingappointment.md) para o especificado [bookingbusiness](../resources/bookingbusiness.md).
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

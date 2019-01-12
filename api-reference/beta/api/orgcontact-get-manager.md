@@ -2,12 +2,14 @@
 title: 'orgContact: Get manager'
 description: Obtenha o gerente do contato
 localization_priority: Normal
-ms.openlocfilehash: 18839c2184bb92dae1e23f125885541408696c98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8b660fabfe03d6e34897375f7f36470774f95450
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826541"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942889"
 ---
 # <a name="orgcontact-get-manager"></a>orgContact: Get manager
 
@@ -15,7 +17,7 @@ ms.locfileid: "27826541"
 
 Obtenha o gerente do contato
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

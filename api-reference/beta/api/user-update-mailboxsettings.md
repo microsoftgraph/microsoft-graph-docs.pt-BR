@@ -2,12 +2,14 @@
 title: Atualizar as configurações de caixa de correio do usuário
 description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de respostas automáticas (notificar pessoas automaticamente ao receber emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
 localization_priority: Normal
-ms.openlocfilehash: 67b8c3dbc0dd4c4de9c94807d09bbd0f9ff79f4f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 96896d7b5440887f023b4817195af2f55beb6752
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889695"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938122"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -21,7 +23,7 @@ Você pode habilitar, configurar ou desabilitar um ou mais destas configuraçõe
 
 Ao atualizar o fuso horário preferencial de um usuário, você pode especificá-lo no formato do Windows ou da [Autoridade para Atribuição de Números na Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário de Olson). Você pode também personalizar o fuso horário conforme mostrado no [exemplo 2](#request-2) abaixo.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

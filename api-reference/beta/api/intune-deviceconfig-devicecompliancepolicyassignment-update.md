@@ -3,12 +3,13 @@ title: Atualizar deviceCompliancePolicyAssignment
 description: Atualizar as propriedades de um objeto deviceCompliancePolicyAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b86a3e338574aa97f463a9c7a52b41a5fea1e4b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2e71f053d48ad4931d5858075409436e72dae12d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868793"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938892"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>Atualizar deviceCompliancePolicyAssignment
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Destino da atribuição de políticas de conformidade.|
 
 

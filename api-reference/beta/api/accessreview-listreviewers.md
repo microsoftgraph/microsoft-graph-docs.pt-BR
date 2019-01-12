@@ -2,19 +2,21 @@
 title: Listar accessReview revisores
 description: No Windows Azure AD para acessar o recurso de revisões, recuperar os revisores de um objeto accessReview.
 localization_priority: Normal
-ms.openlocfilehash: 042887944902be9a603ae0581835c8d55355f8a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829369"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946809"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar accessReview revisores
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, pode recupere os revisores de um objeto [accessReview](../resources/accessreview.md) .
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |

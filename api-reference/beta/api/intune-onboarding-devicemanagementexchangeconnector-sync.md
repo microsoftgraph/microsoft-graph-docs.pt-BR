@@ -3,12 +3,13 @@ title: ação sync
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 06c94a4c0e42f5ec1645e85f8ff091aab8863568
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e42eab564e641036e343a4fa533144d767baf56c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944030"
 ---
 # <a name="sync-action"></a>ação sync
 

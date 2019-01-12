@@ -3,12 +3,13 @@ title: 'chamar: registro'
 description: Registre a chamada.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: afb74bb656eb6fcc09fdab71477843748bc5616d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9afd607ca15c2bac16d2aba4d0ab2c5b52f71864
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859574"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936365"
 ---
 # <a name="call-record"></a>chamar: registro
 
@@ -16,14 +17,14 @@ ms.locfileid: "27859574"
 
 Registre a chamada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls.AccessMedia.All                       |
+| Aplicação     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |playBeep|Booliano| Reproduz um alarme sonoro depois de reproduzir o prompt.|
 |streamWhileRecording|Booliano|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
 |stopTones|String collection|Pare de toques especificados para terminar gravação.|
-|clientContext|Cadeia de caracteres|O contexto de cliente.|
+|clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.

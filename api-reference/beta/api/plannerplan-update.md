@@ -2,12 +2,14 @@
 title: Atualizar plannerPlan
 description: Atualize as propriedades do objeto **plannerPlan** .
 localization_priority: Normal
-ms.openlocfilehash: 6e15ff81f48a7e98a53cefea0bee5c33be24b34f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 46c4c5707d4e602b75e48a989e6e67136c12387a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876444"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945227"
 ---
 # <a name="update-plannerplan"></a>Atualizar plannerPlan
 
@@ -15,7 +17,7 @@ ms.locfileid: "27876444"
 
 Atualize as propriedades do objeto **plannerPlan** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

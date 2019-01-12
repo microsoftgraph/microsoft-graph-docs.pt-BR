@@ -2,19 +2,21 @@
 title: Obtenha o aplicativo
 description: Recupere as propriedades e relações do objeto application.
 localization_priority: Normal
-ms.openlocfilehash: 9226e697f3e8439740003887d8560ffaac9df2fa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 833a6470a1db8cef0ce26ca4cecfe1c5039fa159
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864488"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935826"
 ---
 # <a name="get-application"></a>Obtenha o aplicativo
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Recupere as propriedades e relações do objeto application.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

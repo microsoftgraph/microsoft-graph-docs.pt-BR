@@ -3,12 +3,13 @@ title: função managedDeviceEnrollmentAbandonmentDetails
 description: Metadados para o relatório de detalhes de abandono de inscrição
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0f3913bee2e3adae3932ff1ad6b036a3f96482ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e2031657c3aff7d09d126b6eff01beaf34813a0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840786"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939907"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>função managedDeviceEnrollmentAbandonmentDetails
 
@@ -50,8 +51,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |:---|:---|:---|
 |skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|filter|Cadeia de caracteres|Ainda não documentado|
-|skipToken|Cadeia de caracteres|Ainda não documentado|
+|filter|String|Ainda não documentado|
+|skipToken|String|Ainda não documentado|
 
 
 

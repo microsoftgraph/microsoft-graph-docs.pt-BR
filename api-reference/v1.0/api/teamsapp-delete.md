@@ -1,13 +1,15 @@
 ---
-title: Permissions
+title: Permissões
 description: 'Remova o aplicativo de catálogo de aplicativos da sua organização (o catálogo de aplicativos do inquilino). '
 localization_priority: Normal
-ms.openlocfilehash: e19826407a5f809787beffc8211f77ddce21d043
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 58984044ea59bd38f0232bfa9407c01f97f22708
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804925"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943603"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Remova um aplicativo de catálogo de aplicativos da sua organização
 
@@ -15,7 +17,7 @@ ms.locfileid: "27804925"
 
 Remova o [aplicativo](../resources/teamsapp.md) de catálogo de aplicativos da sua organização (o catálogo de aplicativos do inquilino). Para remover o seu aplicativo de catálogo de aplicativos da sua organização, especifique `organization` como o **distributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 

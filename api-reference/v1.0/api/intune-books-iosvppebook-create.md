@@ -3,12 +3,13 @@ title: Criar iosVppEBook
 description: Cria um novo objeto iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1c8946efab803393c349fb011b714b78a075dd69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d3b3b9b9212517d4d9697d4bcdad371fe2eca8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815866"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942189"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
@@ -46,7 +47,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |description|Cadeia de caracteres|Descrição. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|Cadeia de caracteres|Publicador. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
@@ -54,8 +55,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|

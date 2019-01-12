@@ -3,12 +3,13 @@ title: Criar resourceOperation
 description: Criar um novo objeto resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea0a77b56cbbfd68a7886e220b29222b794cf932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8aa701d51d51d326340ff5ebddc9cc97c5962402
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862598"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938661"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso ao qual esta operação pertence.|
+|recurso|String|Categoria de recurso ao qual esta operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|

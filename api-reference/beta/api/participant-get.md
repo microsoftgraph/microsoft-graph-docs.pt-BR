@@ -3,12 +3,13 @@ title: Obtenha um participante
 description: Recupere as propriedades e relacionamentos de um objeto de **participante** .
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: bdcf52f844ea000458d35aa211e7c32a5c6566e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: c43c4b9bc1fca7652b1e44657fc03ab8ce6b6214
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837692"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945542"
 ---
 # <a name="get-participant"></a>Obtenha um participante
 
@@ -16,14 +17,14 @@ ms.locfileid: "27837692"
 
 Recupere as propriedades e relacionamentos de um objeto de **participante** .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Nenhum                                        |
+| Aplicação     | Nenhum                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

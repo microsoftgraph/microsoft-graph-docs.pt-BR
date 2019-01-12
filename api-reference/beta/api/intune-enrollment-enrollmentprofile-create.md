@@ -3,12 +3,13 @@ title: Criar enrollmentProfile
 description: Crie um novo objeto de enrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f10c8b04a19f541305dd63ec2f063a4fff1d8226
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf4133e636cd9eedf7737e2003d1ba733a6e08ec
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843985"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934139"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
 
@@ -49,10 +50,10 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|O GUID do objeto.|
-|displayName|Cadeia de caracteres|Nome do perfil|
-|description|Cadeia de caracteres|Descrição do perfil|
+|displayName|String|Nome do perfil|
+|description|String|Descrição do perfil|
 |requiresUserAuthentication|Booliano|Indica se o perfil exige autenticação do usuário|
-|configurationEndpointUrl|Cadeia de caracteres|Url de ponto de extremidade de configuração a ser usado para registro|
+|configurationEndpointUrl|String|Url de ponto de extremidade de configuração a ser usado para registro|
 |enableAuthenticationViaCompanyPortal|Booliano|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa.|
 
 

@@ -3,12 +3,13 @@ title: Criar restrictedAppsViolation
 description: Crie um novo objeto de restrictedAppsViolation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b608a831427169215da9df4631f4562989105a2a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: de7a461fd3591f3473ccfa8f15d85fa2dbab6808
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818120"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940565"
 ---
 # <a name="create-restrictedappsviolation"></a>Criar restrictedAppsViolation
 
@@ -48,13 +49,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
-|userId|Cadeia de caracteres|Identificador exclusivo do usuário, deve ser um Guid|
+|id|String|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
+|userId|String|Identificador exclusivo do usuário, deve ser um Guid|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|Cadeia de caracteres|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
-|deviceName|Cadeia de caracteres|Nome do dispositivo|
-|deviceConfigurationId|Cadeia de caracteres|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
-|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração de dispositivo|
+|managedDeviceId|String|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
+|deviceName|String|Nome do dispositivo|
+|deviceConfigurationId|String|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
+|deviceConfigurationName|String|Nome do perfil de configuração de dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado restrito de aplicativos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violadas|

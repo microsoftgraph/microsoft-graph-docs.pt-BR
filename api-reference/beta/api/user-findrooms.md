@@ -2,12 +2,14 @@
 title: 'usuário: findRooms'
 description: 'Obtenha todas as salas de reunião no locatário do usuário ou em uma lista de salas específico. '
 localization_priority: Priority
-ms.openlocfilehash: 12ddd4c6956d743322ff86c93c5d445f6966e29a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845413"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934006"
 ---
 # <a name="user-findrooms"></a>usuário: findRooms
 
@@ -17,7 +19,7 @@ Obtenha todas as salas de reunião no locatário do usuário ou em uma lista de 
 
 Inquilinos podem organizar as salas de reunião em listas de salas. Cada sala de reunião e a lista de salas é representado por uma instância de [emailAddress](../resources/emailaddress.md) . Você pode [fazer todas as listas de sala](user-findroomlists.md) no locatário, fazer todas as salas no locatário ou fazer todas as salas em uma lista de sala específico. Você pode acessar as primeiras 100 salas no inquilino.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 

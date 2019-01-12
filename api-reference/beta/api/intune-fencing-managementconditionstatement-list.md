@@ -3,12 +3,13 @@ title: Lista managementConditionStatements
 description: Lista as propriedades e os relacionamentos dos objetos managementConditionStatement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b97d7375918b672967932692095572779c8aa48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2439229e02d2e626d9325ba30fa828e2968d461f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854268"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934580"
 ---
 # <a name="list-managementconditionstatements"></a>Lista managementConditionStatements
 

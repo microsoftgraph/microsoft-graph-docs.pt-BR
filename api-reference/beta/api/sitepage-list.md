@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: Lista as páginas em um site
 localization_priority: Normal
-ms.openlocfilehash: 57c63ac897ed2a59059f85cf5c32412bd18f07db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 3049ca860d889e069e941f5437f4f560fef9ef44
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871404"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942623"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Lista as páginas na lista de páginas de site de um site
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Upload de arquivos retomável
 localization_priority: Priority
-ms.openlocfilehash: 84c16f83113452d920c6c2f13a0e0f37577aa0f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 21a6ed64e22e6a8fa7460418de4461adf36e0c4b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812086"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942476"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 

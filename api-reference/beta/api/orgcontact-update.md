@@ -2,19 +2,21 @@
 title: Atualizar orgcontact
 description: Atualize as propriedades do objeto orgcontact.
 localization_priority: Normal
-ms.openlocfilehash: f48795bef6ea1a4833379f54747cbf2c291b2454
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2f7943234dbff62da070b51a3ae6d92d2bdb28d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859063"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938815"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Atualize as propriedades do objeto orgcontact.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -38,23 +40,23 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|Cadeia de caracteres||
+|city|String||
 |country|String||
 |departamento|String||
 |onPremisesSyncEnabled|Booliano||
-|displayName|Cadeia de caracteres||
-|givenName|Cadeia de caracteres||
+|displayName|String||
+|givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|Email|Cadeia de caracteres||
-|mailNickname|Cadeia de caracteres||
-|mobilePhone|Cadeia de caracteres||
+|Email|String||
+|mailNickname|String||
+|mobilePhone|String||
 |officeLocation|String||
-|postalCode|Cadeia de caracteres||
+|postalCode|String||
 |proxyAddresses|String||
-|state|Cadeia de caracteres||
+|state|String||
 |streetAddress|String||
-|surname|Cadeia de caracteres||
+|surname|String||
 |businessPhones|String||
 
 ## <a name="response"></a>Resposta

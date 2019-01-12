@@ -3,12 +3,13 @@ title: Atualizar mobileThreatDefenseConnector
 description: Atualiza as propriedades de um objeto mobileThreatDefenseConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2d256ac641d403d12417de9afcbfb473d9bfe944
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d39a051f3c6dcf74715d98743f067be4f4223f9d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865664"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945857"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Atualizar mobileThreatDefenseConnector
 
@@ -48,7 +49,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [mobileThreatDef
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Ainda não documentado|
+|id|String|Ainda não documentado|
 |lastHeartbeatDateTime|DateTimeOffset|Data e hora da última Pulsação recebida de um Parceiro de Sincronização de Dados|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Estado de parceiro de sincronização de dados para essa conta. Os valores possíveis são: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Boolean|No Android, definir se os dados do parceiro de sincronização de dados devem ser usados durante avaliações de conformidade|

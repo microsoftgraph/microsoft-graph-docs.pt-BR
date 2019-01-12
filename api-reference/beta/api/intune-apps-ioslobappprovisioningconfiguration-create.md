@@ -3,12 +3,13 @@ title: Criar iosLobAppProvisioningConfiguration
 description: Crie um novo objeto de iosLobAppProvisioningConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7879cc256a041b960f8d4e728e19bfa5f4f0ffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d5a39a91156ebba649a3463568517d9b55a7fdfa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809097"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944758"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Criar iosLobAppProvisioningConfiguration
 
@@ -48,14 +49,14 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data de validade do perfil opcional e hora.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |version|Int32|Versão da configuração do dispositivo.|
 
 

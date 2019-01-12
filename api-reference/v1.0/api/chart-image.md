@@ -3,12 +3,13 @@ title: 'Chart: Image'
 description: Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: f79f52e619281817c95f41efd8a96b3dcfa7d6e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831609"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939718"
 ---
 # <a name="chart-image"></a>Chart: Image
 

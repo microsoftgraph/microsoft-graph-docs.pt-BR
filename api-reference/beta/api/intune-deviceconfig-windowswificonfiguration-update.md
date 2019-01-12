@@ -3,12 +3,13 @@ title: Atualizar windowsWifiConfiguration
 description: Atualize as propriedades de um objeto windowsWifiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c58ede51940c1d913632668919532ba6d61ad201
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7e640befb9cc7e4d0b2df52c2f35aba8ed4a0fbc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847107"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946431"
 ---
 # <a name="update-windowswificonfiguration"></a>Atualizar windowsWifiConfiguration
 
@@ -50,26 +51,26 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|preSharedKey|Cadeia de caracteres|Esta é a chave pré compartilhada para rede Wi-Fi WPA Pessoal.|
+|preSharedKey|String|Esta é a chave pré compartilhada para rede Wi-Fi WPA Pessoal.|
 |wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Especifica o tipo de segurança Wifi. Os possíveis valores são: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Especifica o tipo de limite de conexão monitorados para a conexão wifi. Os valores possíveis são: `unrestricted`, `fixed`, `variable`.|
-|SSID|Cadeia de caracteres|Especifique o SSID da conexão wifi.|
-|networkName|Cadeia de caracteres|Especifique o nome da configuração de rede.|
+|SSID|String|Especifique o SSID da conexão wifi.|
+|networkName|String|Especifique o nome da configuração de rede.|
 |connectAutomatically|Booliano|Especifique se a conexão wifi deve conectar automaticamente quando estiver no intervalo.|
 |connectToPreferredNetwork|Booliano|Especifique se a conexão wifi deve se conectar às redes mais preferenciais quando já conectado a este.  Requer ConnectAutomatically seja true.|
 |connectWhenNetworkNameIsHidden|Booliano|Especifique se a conexão wifi deve conectar automaticamente mesmo quando o SSID não está transmitindo.|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Especifica a configuração para configuração de Wi-Fi do proxy. Os valores possíveis são: `none`, `manual`, `automatic`.|
-|proxyManualAddress|Cadeia de caracteres|Especifique o endereço IP do servidor proxy.|
+|proxyManualAddress|String|Especifique o endereço IP do servidor proxy.|
 |proxyManualPort|Int32|Especifique a porta para o servidor proxy.|
-|proxyAutomaticConfigurationUrl|Cadeia de caracteres|Especifique a URL para o script de configuração do servidor proxy.|
+|proxyAutomaticConfigurationUrl|String|Especifique a URL para o script de configuração do servidor proxy.|
 |forceFIPSCompliance|Booliano|Especifique se deseja forçar a conformidade FIPS.|
 
 

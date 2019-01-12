@@ -3,12 +3,13 @@ title: Lista windows81TrustedRootCertificates
 description: Lista as propriedades e os relacionamentos dos objetos windows81TrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b0f2bd38e2d481cef1e90ea3251755117388ee4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 24d26f7808d6ff07a6897310d90d63e7b21be53b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807375"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948468"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>Lista windows81TrustedRootCertificates
 

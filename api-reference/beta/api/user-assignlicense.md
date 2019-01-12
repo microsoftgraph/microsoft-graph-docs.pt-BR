@@ -2,12 +2,14 @@
 title: assignLicense
 description: Adicionar ou remover licenças do usuário habilitar ou desabilitar o uso de ofertas de nuvem da Microsoft. Por exemplo, uma organização pode ter uma assinatura do Office 365 Enterprise E3 com 100 licenças e essa solicitação atribui uma dessas licenças a usuários específicos. Você também pode ativar e desativar os planos de específicos associados a uma assinatura. Para saber mais sobre licenças e assinaturas, consulte este artigo do Technet.
 localization_priority: Normal
-ms.openlocfilehash: 71287b47a0a42ce4f89635fe6a1769c78874ae36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 82347f46855baa91b5a42452cdbacc914bc89cdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876199"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933789"
 ---
 # <a name="assignlicense"></a>assignLicense
 
@@ -17,7 +19,7 @@ Adicionar ou remover licenças do usuário habilitar ou desabilitar o uso de ofe
 
 Para obter as assinaturas disponíveis no diretório, execute um [obter subscribedSkus solicitação](subscribedsku-list.md). 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

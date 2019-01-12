@@ -2,12 +2,14 @@
 title: Redefinir accessReview
 description: No recurso de avaliações de acesso do Azure AD, redefina as decisões de um accessReview ativa no momento.  O objeto de destino pode ser uma revisão de acesso de uma única vez, ou uma instância de uma análise mais acesso recorrente.  Decisões anteriores não são mais registradas, mas os revisores podem continuar a atualização decisões.
 localization_priority: Normal
-ms.openlocfilehash: 750b9e4da130a087350b7b78c53e71c835d12be1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0b1f107733543380dbd6ad095133f09befc03736
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809573"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941489"
 ---
 # <a name="reset-accessreview"></a>Redefinir accessReview
 
@@ -15,7 +17,7 @@ ms.locfileid: "27809573"
 
 No Windows Azure AD [access analisa](../resources/accessreviews-root.md) recurso, redefina as decisões de um ativo no momento [accessReview](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso de uma única vez, ou uma instância de uma análise mais acesso recorrente.  Decisões anteriores não são mais registradas, mas os revisores podem continuar a atualização decisões.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |

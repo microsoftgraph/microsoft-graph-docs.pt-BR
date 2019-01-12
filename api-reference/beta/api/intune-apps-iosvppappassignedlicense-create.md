@@ -3,12 +3,13 @@ title: Criar iosVppAppAssignedLicense
 description: Crie um novo objeto de iosVppAppAssignedLicense.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 225b7168d584faa2e5ff1ec2910fe0e3e53fda8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65c0b449b1b9add9697d5c1453245efbd1b2e213
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936316"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Criar iosVppAppAssignedLicense
 
@@ -48,11 +49,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
-|userId|Cadeia de caracteres|ID do usuário.|
+|id|String|Chave da entidade.|
+|userEmailAddress|String|O endereço de email do usuário.|
+|userId|String|ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
-|userPrincipalName|Cadeia de caracteres|O nome da entidade de segurança do usuário.|
+|userPrincipalName|String|O nome da entidade de segurança do usuário.|
 
 
 

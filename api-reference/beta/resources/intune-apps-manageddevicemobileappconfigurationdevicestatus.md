@@ -2,12 +2,14 @@
 title: tipo de recurso de managedDeviceMobileAppConfigurationDeviceStatus
 description: Contém propriedades, as propriedades herdadas e ações para um status de configuração de aplicativos móveis MDM para um dispositivo.
 localization_priority: Normal
-ms.openlocfilehash: e9a5d5c0b38fb559384df88a6b875ad16d912343
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 43bc21430bb6e03f5e8503b1efe9fbae306fcffd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869192"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947866"
 ---
 # <a name="manageddevicemobileappconfigurationdevicestatus-resource-type"></a>tipo de recurso de managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -28,7 +30,7 @@ Contém propriedades, as propriedades herdadas e ações para um status de confi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo de DevicePolicyStatus.|
 |userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
 |deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|

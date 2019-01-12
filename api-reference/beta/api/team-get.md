@@ -3,12 +3,13 @@ title: Obtenha a equipe
 description: Recupere as propriedades e relacionamentos da equipe especificado.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: 24db268910aa672e2fd095a44271b4908465f666
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 4ec9c53dbb474afabc3c2a67e480bf9972dfefc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889632"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947705"
 ---
 # <a name="get-team"></a>Obtenha a equipe
 
@@ -16,7 +17,7 @@ ms.locfileid: "27889632"
 
 Recupere as propriedades e relacionamentos da [equipe](../resources/team.md)especificado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

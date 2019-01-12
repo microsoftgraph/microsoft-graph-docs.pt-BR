@@ -2,12 +2,14 @@
 title: Listar planos
 description: Recupere uma lista de objetos **plannerplan**.
 localization_priority: Normal
-ms.openlocfilehash: e78bb0e21b892709371c1362febbfde05491781b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 9b6a8639957196e0dc5acfed861743a74e5750c1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887896"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943435"
 ---
 # <a name="list-plans"></a>Listar planos
 

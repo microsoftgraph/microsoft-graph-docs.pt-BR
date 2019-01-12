@@ -2,12 +2,13 @@
 title: Criar ou substituir uma atividade
 description: Criar uma nova ou substituir uma atividade do usuário existente para seu aplicativo. Se você gostaria de criar uma atividade do usuário e seu relacionados **historyItems** em uma solicitação, você pode usar Inserir aprofundada.
 localization_priority: Normal
-ms.openlocfilehash: 01fa9fff306dbd07af0964f27dd97b288b6bab67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eca8e03e45a5a2d4ae6c4c08218189edcf98a03a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871789"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944744"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 
@@ -15,7 +16,7 @@ ms.locfileid: "27871789"
 
 Criar uma nova ou substituir uma atividade do usuário existente para seu aplicativo. Se você gostaria de criar uma atividade do usuário e seu relacionados **historyItems** em uma solicitação, você pode usar a [profundidade inserir](projectrome-put-activity.md#example-2---deep-insert).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

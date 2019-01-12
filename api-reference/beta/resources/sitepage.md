@@ -4,12 +4,13 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
-ms.openlocfilehash: d4673138106e23afedb5ff0f28d8ce72fa2797b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871488"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939235"
 ---
 # <a name="sitepage-resource"></a>recurso de sitePage
 
