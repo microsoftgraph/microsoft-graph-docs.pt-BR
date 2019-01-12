@@ -2,30 +2,31 @@
 title: tipo de recurso de imageInfo
 description: Um tipo complexo para representar a propriedade **atribuição** na parte visualInfo do objeto atividade.
 localization_priority: Normal
-ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 347e07b70e8bad6dce8571dd1fbac5cd00d9abdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978687"
 ---
-# <a name="imageinfo-resource-type"></a><span data-ttu-id="8c5eb-103">tipo de recurso de imageInfo</span><span class="sxs-lookup"><span data-stu-id="8c5eb-103">imageInfo resource type</span></span>
+# <a name="imageinfo-resource-type"></a><span data-ttu-id="1d852-103">tipo de recurso de imageInfo</span><span class="sxs-lookup"><span data-stu-id="1d852-103">imageInfo resource type</span></span>
 
-> <span data-ttu-id="8c5eb-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="8c5eb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8c5eb-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="8c5eb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1d852-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1d852-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1d852-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1d852-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="8c5eb-106">Um tipo complexo para representar a propriedade **atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do objeto [atividade](../resources/projectrome-activity.md) .</span><span class="sxs-lookup"><span data-stu-id="8c5eb-106">A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="1d852-106">Um tipo complexo para representar a propriedade **atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do objeto [atividade](../resources/projectrome-activity.md) .</span><span class="sxs-lookup"><span data-stu-id="1d852-106">A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8c5eb-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8c5eb-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1d852-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1d852-107">Properties</span></span>
 
-|<span data-ttu-id="8c5eb-108">Nome</span><span class="sxs-lookup"><span data-stu-id="8c5eb-108">Name</span></span> | <span data-ttu-id="8c5eb-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="8c5eb-109">Type</span></span> | <span data-ttu-id="8c5eb-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="8c5eb-110">Description</span></span>|
+|<span data-ttu-id="1d852-108">Nome</span><span class="sxs-lookup"><span data-stu-id="1d852-108">Name</span></span> | <span data-ttu-id="1d852-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="1d852-109">Type</span></span> | <span data-ttu-id="1d852-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="1d852-110">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="8c5eb-111">iconUrl</span><span class="sxs-lookup"><span data-stu-id="8c5eb-111">iconUrl</span></span> | <span data-ttu-id="8c5eb-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8c5eb-112">String</span></span> | <span data-ttu-id="8c5eb-113">Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade</span><span class="sxs-lookup"><span data-stu-id="8c5eb-113">Optional; URI that points to an icon which represents the application used to generate the activity</span></span>|
-|<span data-ttu-id="8c5eb-114">alternateText</span><span class="sxs-lookup"><span data-stu-id="8c5eb-114">alternateText</span></span> | <span data-ttu-id="8c5eb-115">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="8c5eb-115">String</span></span> | <span data-ttu-id="8c5eb-116">Opcional; conteúdo de texto ALT acessível para a imagem</span><span class="sxs-lookup"><span data-stu-id="8c5eb-116">Optional; alt-text accessible content for the image</span></span>|
-|<span data-ttu-id="8c5eb-117">addImageQuery</span><span class="sxs-lookup"><span data-stu-id="8c5eb-117">addImageQuery</span></span> | <span data-ttu-id="8c5eb-118">Booliano</span><span class="sxs-lookup"><span data-stu-id="8c5eb-118">Boolean</span></span> | <span data-ttu-id="8c5eb-119">Opcional; parâmetro usado para indicar o servidor é capaz de processar imagem dinamicamente em resposta às parametrização.</span><span class="sxs-lookup"><span data-stu-id="8c5eb-119">Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.</span></span> <span data-ttu-id="8c5eb-120">Por exemplo, – uma imagem de alto contraste</span><span class="sxs-lookup"><span data-stu-id="8c5eb-120">For example – a high contrast image</span></span>|
+|<span data-ttu-id="1d852-111">iconUrl</span><span class="sxs-lookup"><span data-stu-id="1d852-111">iconUrl</span></span> | <span data-ttu-id="1d852-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1d852-112">String</span></span> | <span data-ttu-id="1d852-113">Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade</span><span class="sxs-lookup"><span data-stu-id="1d852-113">Optional; URI that points to an icon which represents the application used to generate the activity</span></span>|
+|<span data-ttu-id="1d852-114">alternateText</span><span class="sxs-lookup"><span data-stu-id="1d852-114">alternateText</span></span> | <span data-ttu-id="1d852-115">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="1d852-115">String</span></span> | <span data-ttu-id="1d852-116">Opcional; conteúdo de texto ALT acessível para a imagem</span><span class="sxs-lookup"><span data-stu-id="1d852-116">Optional; alt-text accessible content for the image</span></span>|
+|<span data-ttu-id="1d852-117">addImageQuery</span><span class="sxs-lookup"><span data-stu-id="1d852-117">addImageQuery</span></span> | <span data-ttu-id="1d852-118">Booliano</span><span class="sxs-lookup"><span data-stu-id="1d852-118">Boolean</span></span> | <span data-ttu-id="1d852-119">Opcional; parâmetro usado para indicar o servidor é capaz de processar imagem dinamicamente em resposta às parametrização.</span><span class="sxs-lookup"><span data-stu-id="1d852-119">Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.</span></span> <span data-ttu-id="1d852-120">Por exemplo, – uma imagem de alto contraste</span><span class="sxs-lookup"><span data-stu-id="1d852-120">For example – a high contrast image</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="8c5eb-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8c5eb-121">JSON Representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1d852-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1d852-121">JSON Representation</span></span>
 
-<span data-ttu-id="8c5eb-122">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="8c5eb-122">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="1d852-122">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="1d852-122">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
