@@ -2,12 +2,14 @@
 title: Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 description: Teams da Microsoft é um espaço de trabalho com base em bate-papo no Office 365 que fornece acesso interno aos calendários específicas para a equipe, arquivos, anotações do OneNote, planos de planejador e muito mais.
 localization_priority: Priority
-ms.openlocfilehash: 1e46bb3c31b30ec8ef776c4377bd391355abd50d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8b14d975c1d1f58fd9c4724428b4800c567a5606
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924521"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Usar o Microsoft Graph API para trabalhar com o Microsoft Teams
 

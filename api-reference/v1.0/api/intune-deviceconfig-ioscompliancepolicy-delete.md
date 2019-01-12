@@ -3,12 +3,13 @@ title: Excluir iosCompliancePolicy
 description: Exclui iosCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7d75ac6b0f5918df07978bc59af3dbece7c361c9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a8609afb2030399b735e96bf43063ba689176689
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859469"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918144"
 ---
 # <a name="delete-ioscompliancepolicy"></a>Excluir iosCompliancePolicy
 

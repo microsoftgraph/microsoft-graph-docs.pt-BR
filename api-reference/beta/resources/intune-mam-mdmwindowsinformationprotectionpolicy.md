@@ -3,12 +3,13 @@ title: Tipo de recurso mdmWindowsInformationProtectionPolicy
 description: Política para proteção de informações do Windows com MDM
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b9c035ea4e5a9dcd3d945eb8f76988d77268c582
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c4bd056a59dbba75f7bf120e96b43765527be4e9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886755"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912530"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Tipo de recurso mdmWindowsInformationProtectionPolicy
 

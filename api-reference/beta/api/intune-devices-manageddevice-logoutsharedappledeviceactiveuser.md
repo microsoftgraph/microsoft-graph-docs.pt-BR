@@ -3,12 +3,13 @@ title: Ação logoutSharedAppleDeviceActiveUser
 description: Sair do usuário ativo no dispositivo Apple compartilhado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 19dbfa176b789b553157a73537afe2f9aa4d7e5e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6f464d20ef1f70a028b96330a178eabdf70a8c4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852462"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918753"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>Ação logoutSharedAppleDeviceActiveUser
 

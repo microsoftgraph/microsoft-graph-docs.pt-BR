@@ -3,12 +3,13 @@ title: tipo de recurso de macOSEndpointProtectionConfiguration
 description: Perfil de configuração de proteção de ponto de extremidade MacOS.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c94580ba513383403eafba6f24ebc9c2d5aa9e13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b1fe7383dd1ad1e914d7c6d4a28949309492b494
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808481"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918221"
 ---
 # <a name="macosendpointprotectionconfiguration-resource-type"></a>tipo de recurso de macOSEndpointProtectionConfiguration
 

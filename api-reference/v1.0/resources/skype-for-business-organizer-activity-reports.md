@@ -2,12 +2,13 @@
 title: Relatórios de atividades do organizador do Skype for Business
 description: Você pode usar os relatórios de atividade do organizador do Skype for Business para obter dados sobre as atividades em conferências organizadas em toda a organização. Esses dados são muito úteis quando você está investigando, planejando e tomando outras decisões comerciais para sua organização.
 localization_priority: Normal
-ms.openlocfilehash: 3b0d9943ab2ec73cadd7984c383f79582b084a32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 6a429e2b446e5f2ec32770a2b17caf5e6567556e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926600"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Relatórios de atividades do organizador do Skype for Business
 

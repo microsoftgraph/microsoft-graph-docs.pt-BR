@@ -3,12 +3,13 @@ title: Criar tabela
 description: Use essa API para criar uma nova tabela.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7e259e8a2d8cb6e725027baca803e94288dd3060
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 74c24a1bec21f8c3bfb4b4431f74f10da95bafe4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882821"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911473"
 ---
 # <a name="create-table"></a>Criar tabela
 

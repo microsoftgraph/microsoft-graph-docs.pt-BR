@@ -3,12 +3,13 @@ title: Obter androidWorkProfileGeneralDeviceConfiguration
 description: Leia as propriedades e os relacionamentos do objeto androidWorkProfileGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e977ed702559d970e7928c26fdf441647602f901
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9d8a12d4bfa4ec02525bb2ece36f0aa8ea142e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842018"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913538"
 ---
 # <a name="get-androidworkprofilegeneraldeviceconfiguration"></a>Obter androidWorkProfileGeneralDeviceConfiguration
 

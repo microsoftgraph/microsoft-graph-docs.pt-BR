@@ -3,12 +3,13 @@ title: Obter iosLobAppProvisioningConfigurationAssignment
 description: Leia as propriedades e os relacionamentos do objeto iosLobAppProvisioningConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4755bab0c834c9a44a5ff1598f1b193920d5b90a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 03005905f1b42b3153665f4c88d56390c95e157e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823860"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919509"
 ---
 # <a name="get-ioslobappprovisioningconfigurationassignment"></a>Obter iosLobAppProvisioningConfigurationAssignment
 

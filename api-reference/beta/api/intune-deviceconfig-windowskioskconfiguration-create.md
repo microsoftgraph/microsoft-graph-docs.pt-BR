@@ -3,12 +3,13 @@ title: Criar windowsKioskConfiguration
 description: Crie um novo objeto de windowsKioskConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 75e500ae8cf8ce272ee8571de24f18723f0594e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d17f1af1ca96c077810d2c5c64427ed40751b988
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868373"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925550"
 ---
 # <a name="create-windowskioskconfiguration"></a>Criar windowsKioskConfiguration
 

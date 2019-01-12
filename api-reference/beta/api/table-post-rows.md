@@ -2,12 +2,14 @@
 title: Criar TableRow
 description: 'Adiciona linhas até o final da tabela. Observe que a API pode aceitar os dados de várias linhas usando essa API. Adicionar uma linha por vez pode levar à redução de desempenho. A abordagem recomendada seria as linhas juntos em uma única chamada em vez de fazer a inserção de linha única de lote. Para obter melhores resultados, coletado linhas a ser inserido no lado do aplicativo e realizar linhas única Adicionar operação. Experimentar o número de linhas para determinar o número ideal de linhas para usar em única chamada de API. '
 localization_priority: Normal
-ms.openlocfilehash: 0b20c44952ecdd54794d58fda7295be9b71fc4ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 7e5b44d5ef46dbbd534594aec16f1e6ac180c754
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813794"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918277"
 ---
 # <a name="create-tablerow"></a>Criar TableRow
 

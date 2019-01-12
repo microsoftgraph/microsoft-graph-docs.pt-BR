@@ -2,12 +2,14 @@
 title: 'bookingBusiness: publicar'
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 58dfc0487a12524f3d87992c5d3cc288e092db01
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 33e11fac5690e66664038705b482480ef689db6e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809405"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917318"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: publicar
 

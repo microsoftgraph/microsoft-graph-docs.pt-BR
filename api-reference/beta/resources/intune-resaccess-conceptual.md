@@ -3,12 +3,13 @@ title: Gerenciar certificados de acesso de recurso no Intune
 description: Você pode importar certificados PFX usando a API do Microsoft Graph para Intune.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 78c4204a29438ab8f59b4c4b0fe35007a4ccce82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d65194cbfc81166bd79bb7a46f3b2ea841d0102a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809902"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926775"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Gerenciar certificados de acesso de recurso no Intune
 

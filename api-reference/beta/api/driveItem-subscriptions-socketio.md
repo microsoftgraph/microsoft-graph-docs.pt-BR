@@ -2,12 +2,13 @@
 title: Obtenha o ponto de extremidade do websocket
 description: Não há suporte para o uso dessas APIs em aplicativos de produção.
 localization_priority: Normal
-ms.openlocfilehash: a981a4d02d2e40fec0cb2bca397c7b7794d36867
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 5a608dc938fd0a57108ffd8361aed5de575ec92c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859791"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915820"
 ---
 # <a name="get-websocket-endpoint"></a>Obtenha o ponto de extremidade do websocket
 

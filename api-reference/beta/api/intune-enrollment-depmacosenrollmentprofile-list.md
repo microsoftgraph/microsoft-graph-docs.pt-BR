@@ -3,12 +3,13 @@ title: Lista depMacOSEnrollmentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depMacOSEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 262d17b29bc1dd0c8a0a1a25ec6b077a33be22c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aef15176d3a1572b9a94e966d644b654bb094d06
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913531"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>Lista depMacOSEnrollmentProfiles
 

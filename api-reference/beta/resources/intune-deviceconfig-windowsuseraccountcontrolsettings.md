@@ -3,12 +3,13 @@ title: tipo de enum windowsUserAccountControlSettings
 description: Valores possíveis para configurações de controle de conta de usuário do Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c2803e2d15b907fc2a05303be8a0b4e4db4ce66f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd16db4236096687ddcc9f169dd657c938fd6815
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27911809"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enum windowsUserAccountControlSettings
 

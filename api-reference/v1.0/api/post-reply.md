@@ -3,12 +3,13 @@ title: 'post: reply'
 description: 'Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo. Você pode especificar '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: f4692680833b45e0b2542a7d55c5bda3a861af07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 4c53339170a133ef468112843fd378b5dbdc7c60
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814816"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923926"
 ---
 # <a name="post-reply"></a>post: reply
 

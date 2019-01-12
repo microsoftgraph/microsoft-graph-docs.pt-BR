@@ -3,12 +3,13 @@ title: tipo de enum wiFiSecurityType
 description: Tipos de segurança Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 90290b9b47154b95aca81d931fa66e7984688db1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6ddadaa31febaea08050ad49ffa540de53ff4819
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839918"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920216"
 ---
 # <a name="wifisecuritytype-enum-type"></a>tipo de enum wiFiSecurityType
 

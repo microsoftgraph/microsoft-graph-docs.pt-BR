@@ -2,12 +2,14 @@
 title: Tipo de recurso RangeFormat
 description: Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
 localization_priority: Normal
-ms.openlocfilehash: 86ec37ffa85d7d9785b6a2f632ff3f337ce0e734
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: f0e57522812b966c39a6981de964e786d33c5006
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823804"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919208"
 ---
 # <a name="rangeformat-resource-type"></a>Tipo de recurso RangeFormat
 

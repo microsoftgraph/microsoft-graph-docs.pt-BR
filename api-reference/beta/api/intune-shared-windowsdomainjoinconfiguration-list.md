@@ -3,12 +3,13 @@ title: Lista windowsDomainJoinConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsDomainJoinConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 36620c4b4d03bb883d5b69fd1707f2fe384f9347
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6aa69b7d880000923970a0ea5443633876a93ad8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867729"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925333"
 ---
 # <a name="list-windowsdomainjoinconfigurations"></a>Lista windowsDomainJoinConfigurations
 

@@ -2,12 +2,14 @@
 title: Obter administrativeUnit
 description: Recupere o diretório simples **administrativeUnit** que corresponde a essa **educationSchool**.
 localization_priority: Normal
-ms.openlocfilehash: a088afb50170d1fe43d61dafdd9a711249fddf4a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: e072225ad296c59953a3f4de0c0fc1c88076ca90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813185"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915351"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 

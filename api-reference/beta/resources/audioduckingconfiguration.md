@@ -3,12 +3,13 @@ title: tipo de recurso de audioDuckingConfiguration
 description: Parâmetros para desviando de outras fontes (Introdução gradual e sair de outras fontes.)
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 713e7012381bf6b727321494f81e75c88c66ebe6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: b4132946573342976bb1f20c593454a8e18030d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891557"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916870"
 ---
 # <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso de audioDuckingConfiguration
 

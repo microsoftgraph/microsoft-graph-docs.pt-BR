@@ -2,12 +2,14 @@
 title: Atualizar plannerAssignedToTaskBoardTaskFormat
 description: Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat**.
 localization_priority: Normal
-ms.openlocfilehash: 2586e0d413ce6debcc90b720c2ec45773518507e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: b388d3d19287c4a5c039763ce812c22b87515622
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856801"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915701"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 

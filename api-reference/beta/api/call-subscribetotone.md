@@ -3,12 +3,13 @@ title: 'chamar: subscribeToTone'
 description: Assine DTMF (dual-tone multi-frequency sinalização). Isso permite que você seja notificado quando o usuário pressiona teclas em um telefone 'discagem por tom'.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 226edd59e7d826dd7304ae45ec58c360e8ef3191
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 929fac43017df2bdee106dd9687c221c65a20fbd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833429"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916877"
 ---
 # <a name="call-subscribetotone"></a>chamar: subscribeToTone
 

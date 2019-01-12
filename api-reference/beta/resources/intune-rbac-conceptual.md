@@ -2,12 +2,14 @@
 title: Controle de acesso baseado em função no Microsoft Intune
 description: 'O controle de acesso baseado em função do Intune determina quem pode executar ações em objetos do Intune e fazer alterações para aplicativos gerenciados, usuários e dispositivos.   '
 localization_priority: Normal
-ms.openlocfilehash: 7772ad42d96f6c8907f813e8e62cfb4429fe2cc2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: cbbd04aacd80c8ad3c3082505ab052e2bdd65cbe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804883"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924353"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 

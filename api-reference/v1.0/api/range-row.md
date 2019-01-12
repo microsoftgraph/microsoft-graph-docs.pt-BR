@@ -3,12 +3,13 @@ title: 'Range: Row'
 description: Obtém uma linha contida no intervalo.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 647ef8cb8afeb87662158d2f880ef0bb0de0ba6d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: ab08c923d7337f53b96ec4a46246a7d8087794b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829740"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919460"
 ---
 # <a name="range-row"></a>Range: Row
 

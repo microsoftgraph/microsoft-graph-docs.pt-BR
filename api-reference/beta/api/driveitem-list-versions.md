@@ -2,12 +2,13 @@
 title: Listando versões de um DriveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 localization_priority: Normal
-ms.openlocfilehash: 230c0aa319daa1f17534a91ab54655a9b13375c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 52df6b0f7e452d358160de886ed61824fd2d48d0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883787"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915722"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Listando versões de um DriveItem
 

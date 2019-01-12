@@ -3,12 +3,13 @@ title: tipo de enum managedDevicePartnerReportedHealthState
 description: Estados de integridade disponíveis para a API de integridade do dispositivo
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9c714c9ed2b070106a37b41712eeb29210d98e60
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85d6731fc34bb3133fa7aed631d3d687a45a7dce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841247"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919047"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>tipo de enum managedDevicePartnerReportedHealthState
 

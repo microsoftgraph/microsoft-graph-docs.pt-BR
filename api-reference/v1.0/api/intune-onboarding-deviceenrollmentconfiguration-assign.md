@@ -3,12 +3,13 @@ title: atribuir ação
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f0576cefc39731aa0ca1097191704b6dc5d1c44b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 20cdbb46d2498ff2b66b99a86959d30218025e14
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876752"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914053"
 ---
 # <a name="assign-action"></a>atribuir ação
 

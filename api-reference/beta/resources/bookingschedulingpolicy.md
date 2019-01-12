@@ -2,12 +2,14 @@
 title: tipo de recurso de bookingSchedulingPolicy
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 15f9e0dea22a7cfb5eab437bcc023fe3387bb2ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 039d76b00787c9bf2e4f0bee4eb927a7628a9e76
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805359"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27914632"
 ---
 # <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso de bookingSchedulingPolicy
 

@@ -3,12 +3,13 @@ title: 'ChartSeriesCollection: ItemAt'
 description: Recupera uma série com base na respectiva posição na coleção.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: b164bd145dc0552bf5eef613c6650b586a3132ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6d6d9cc9b8625d5303843d7427d3eb3e23cec82b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839666"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912761"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 

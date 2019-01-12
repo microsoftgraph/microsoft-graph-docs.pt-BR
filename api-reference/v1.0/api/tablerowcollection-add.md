@@ -2,12 +2,14 @@
 title: 'TableRowCollection: add'
 description: 'Adiciona linhas até o final da tabela. Observe que a API pode aceitar os dados de várias linhas usando essa API. Adicionar uma linha por vez pode levar à redução de desempenho. A abordagem recomendada seria as linhas juntos em uma única chamada em vez de fazer a inserção de linha única de lote. Para obter melhores resultados, coletado linhas a ser inserido no lado do aplicativo e realizar linhas única Adicionar operação. Experimentar o número de linhas para determinar o número ideal de linhas para usar em única chamada de API. '
 localization_priority: Normal
-ms.openlocfilehash: 131f574186a1c9813a6c9fb8ab6bd4a068da0b3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: f51e7b9ff52c728a7ac2446d538b939d8d5be57a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870921"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27912558"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 

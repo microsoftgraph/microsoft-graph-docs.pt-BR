@@ -3,12 +3,13 @@ title: Lista androidVpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4d4fbe96a6463e81d010af19295bb57b46c41c8c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d88fbdb9dd79ac99f6c5391abc3b7ec1c4085211
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833387"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918655"
 ---
 # <a name="list-androidvpnconfigurations"></a>Lista androidVpnConfigurations
 

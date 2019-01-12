@@ -3,12 +3,13 @@ title: Listar deviceConfigurations
 description: Listar propriedades e relações dos objetos deviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ad4b564a45a0d88c470a4d8e4694682d599ffdd1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ebeb789bc9124176e63db6cb8b653ea232c49a24
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854202"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917542"
 ---
 # <a name="list-deviceconfigurations"></a>Listar deviceConfigurations
 

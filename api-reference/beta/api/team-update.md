@@ -3,12 +3,13 @@ title: Equipe de atualização
 description: Atualize as propriedades da equipe especificado.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 478da815a7bdf5dca15ddba358b5e12c46c1f045
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bb882a31916d31744d57cdc0ef3d2a161361b628
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885285"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925984"
 ---
 # <a name="update-team"></a>Equipe de atualização
 

@@ -3,12 +3,13 @@ title: Remover membro da função de diretório
 description: Remove um membro de um directoryRole.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a788d9b7ed6b71163bb1b189681cdf7c5fee7575
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c870e1d6d9e294aadef50fb08d9e173e5aa62f5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850978"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917549"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
 

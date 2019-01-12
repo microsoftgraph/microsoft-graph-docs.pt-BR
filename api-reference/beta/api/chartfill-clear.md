@@ -3,12 +3,13 @@ title: 'ChartFill: clear'
 description: Limpe a cor de preenchimento de um elemento do gráfico.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3dc40f7ece8eb8bb5821e6ee924a80f0c19cf5f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4ba5ad8b29bc592a430e218cfce15c577d5c2a3b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843801"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922190"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 

@@ -3,12 +3,13 @@ title: tipo de recurso de windows81TrustedRootCertificate
 description: Perfil de configuração de certificado confiáveis do Windows 8.1
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 52380091787470247545954e7561739a13ee8ef4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 163466d6a19a6c1430a02ee2755e49f025edf4f4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810511"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919864"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>tipo de recurso de windows81TrustedRootCertificate
 

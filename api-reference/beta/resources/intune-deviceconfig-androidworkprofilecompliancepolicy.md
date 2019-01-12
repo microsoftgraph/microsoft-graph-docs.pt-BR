@@ -3,12 +3,13 @@ title: tipo de recurso de androidWorkProfileCompliancePolicy
 description: Esta classe contém configurações de conformidade para o perfil de trabalho Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8f3180c9f8a12aad8c17717265f37b81c44b0288
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 27dd435a83326427cf1583629e6cd77fc497fa32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850600"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918158"
 ---
 # <a name="androidworkprofilecompliancepolicy-resource-type"></a>tipo de recurso de androidWorkProfileCompliancePolicy
 

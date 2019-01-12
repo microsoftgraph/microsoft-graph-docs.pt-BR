@@ -2,12 +2,14 @@
 title: Obter onenoteOperation
 description: 'Obtenha o status de uma operação demorada do OneNote. Isso se aplica a operações que retornam o cabeçalho **Operation-Location** na resposta, como `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.   '
 localization_priority: Normal
-ms.openlocfilehash: b62f83266560f217d9569c6ee7ca39dd53198bb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 7974d12e0130fb61da6ee20afe35c3d0dd0e6575
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824763"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27913776"
 ---
 # <a name="get-onenoteoperation"></a>Obter onenoteOperation
 
