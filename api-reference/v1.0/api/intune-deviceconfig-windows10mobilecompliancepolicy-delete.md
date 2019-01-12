@@ -3,12 +3,13 @@ title: Excluir windows10MobileCompliancePolicy
 description: Exclui windows10MobileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cb0b2b53343807d3650efc2b869b1e145a4f0d6f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4aca1fd6166df652e4e5dd43f1b35f0a6b36ff29
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814319"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942021"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>Excluir windows10MobileCompliancePolicy
 

@@ -2,12 +2,14 @@
 title: tipo de recurso de windowsPhoneEASEmailProfileConfiguration
 description: Fornecendo configurações neste perfil, você poderá instruir o cliente de email nativos no Windows Phone para se comunicar com um servidor Exchange e obter email, calendário, contatos e tarefas. Além disso, você também pode especificar o quanto email para sincronização e com que frequência o dispositivo deve sincronizar.
 localization_priority: Normal
-ms.openlocfilehash: 03442c352d0868ee8d75a16ce2934d9b8c22a992
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e48ad65da5c91278460dea2c8c6a74707f7b3f41
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809818"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932494"
 ---
 # <a name="windowsphoneeasemailprofileconfiguration-resource-type"></a>tipo de recurso de windowsPhoneEASEmailProfileConfiguration
 

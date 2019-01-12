@@ -3,12 +3,13 @@ title: tipo de recurso de meetingCapability
 description: Contém os recursos de uma reunião
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 3a7f291c81522d33bffbcce6e97a407f09234db5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 342d264c1f4c670d159c15558c78cc896d4a9487
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825806"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931360"
 ---
 # <a name="meetingcapability-resource-type"></a>tipo de recurso de meetingCapability
 

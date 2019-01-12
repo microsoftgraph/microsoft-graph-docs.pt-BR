@@ -3,12 +3,13 @@ title: Listar defaultManagedAppProtections
 description: Listar propriedades e relações dos objetos defaultManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f81d45eb43c565620216ba15a7ee14b4c4b8257b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e9523f8dddaf2ae4fee28d3497649b9cbe2f223e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848976"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928784"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Listar defaultManagedAppProtections
 

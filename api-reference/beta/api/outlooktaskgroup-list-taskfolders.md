@@ -3,12 +3,13 @@ title: Lista taskFolders
 description: Obtenha as pastas de tarefas do Outlook em um outlookTaskGroup específico.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 66f755a994ea04a862051b6b32ce3ae9e6b39d0a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: baeba1a4dd0e046e59ce85a9a323dbf17fc48450
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857649"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944247"
 ---
 # <a name="list-taskfolders"></a>Lista taskFolders
 

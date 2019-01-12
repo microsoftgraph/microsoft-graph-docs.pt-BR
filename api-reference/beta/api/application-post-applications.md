@@ -1,14 +1,15 @@
 ---
 title: Criar aplicativo
 description: Use essa API para criar um novo aplicativo.
-author: lleonard-msft
+author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: 9a4ca06bfd19dbe6319bb276cd5c33fc13f6d81d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8cde90f31f7583d24361f6935701a91f69d7cfde
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855003"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941468"
 ---
 # <a name="create-application"></a>Criar aplicativo
 

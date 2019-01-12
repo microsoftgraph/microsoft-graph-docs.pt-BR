@@ -2,12 +2,13 @@
 title: Baixar o conteúdo de um recurso de DriveItemVersion
 description: Recuperar o conteúdo de uma versão específica de um DriveItem.
 localization_priority: Normal
-ms.openlocfilehash: 1b6027e6f9b3e8b771bfe410045e63d023955674
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: b6b1f8fbb840cba88f05cb30e2617ca23cb6ad1f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883962"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960837"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource"></a>Baixar o conteúdo de um recurso de DriveItemVersion
 

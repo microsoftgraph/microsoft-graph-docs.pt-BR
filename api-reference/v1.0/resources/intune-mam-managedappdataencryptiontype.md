@@ -3,12 +3,13 @@ title: tipo de enum managedAppDataEncryptionType
 description: Representa o nível ao qual os dados de aplicativo são criptografados para aplicativos gerenciados
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f57904d45b24f6aaae9d67394facb07692add67e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 08ac7a36e142a1d19dbaaeb0263ef095072a9e01
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834143"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956812"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>tipo de enum managedAppDataEncryptionType
 

@@ -3,12 +3,13 @@ title: Tipo de recurso mimeContent
 description: Contém as propriedades de um conteúdo genérico MIME.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 826606d41feb0f0a156a1b8240bde7f4ac926a5a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ee38eee9100982f6dc5f22315af480a783cc4252
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838224"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962118"
 ---
 # <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
 

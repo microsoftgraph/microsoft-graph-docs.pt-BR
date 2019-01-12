@@ -3,12 +3,13 @@ title: Lista favoritePlans
 description: Recupere uma lista de plannerPlans que são marcados como favorito por um usuário. Você pode marcar um plano como favorito, atualizando o recurso plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: 1aada942a2437886683bc8041143f156e2ec848c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: 15938b2ed3acc9a944d775dc19211745c52ca2fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876297"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931311"
 ---
 # <a name="list-favoriteplans"></a>Lista favoritePlans
 

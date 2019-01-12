@@ -3,12 +3,13 @@ title: Ação revokeToken
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2520b6d14f06f5f3869d2ceb7cdf2094d39c696f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 397b1c3fe82de79a70bf7949c5ad2dca1a6df9ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879188"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956735"
 ---
 # <a name="revoketoken-action"></a>Ação revokeToken
 

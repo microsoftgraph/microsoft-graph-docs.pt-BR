@@ -3,12 +3,13 @@ title: tipo de enum safeSearchFilterType
 description: Especifica qual nível de pesquisa segura (filtragem de conteúdo para adultos) é necessária
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 28aea918c35bb9d90f514e4a8838f219c212405b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 788a266cdd0161ce1cfef426a7fcf4d9726e3324
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830853"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964610"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enum safeSearchFilterType
 

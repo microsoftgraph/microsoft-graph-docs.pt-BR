@@ -3,12 +3,13 @@ title: tipo de enum ratingGermanyMoviesType
 description: Filmes classificação rótulos na Alemanha
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 170dbf4614b34f8dacfa55f7d635146e06d56ea4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8806461969b5bea7957d5be75722181654de9097
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874687"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922001"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>tipo de enum ratingGermanyMoviesType
 

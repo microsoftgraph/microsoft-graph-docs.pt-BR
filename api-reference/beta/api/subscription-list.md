@@ -2,12 +2,13 @@
 title: Inscrições de lista
 description: " Consulte os cenários abaixo para obter detalhes."
 localization_priority: Normal
-ms.openlocfilehash: 1b751b8632d82626e2ba87bf00a054b2be4f25f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: piotrci
+ms.openlocfilehash: e7b6c618c35aa9952673b79f238777a71bc41f6a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928777"
 ---
 # <a name="list-subscriptions"></a>Inscrições de lista
 

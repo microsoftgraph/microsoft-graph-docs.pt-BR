@@ -3,12 +3,13 @@ title: Lista iosWiFiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2a5c55a03b7858f05931dc60d638f375f67c271e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96df10afd97273adaec7d160b02a79468655c766
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873805"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961187"
 ---
 # <a name="list-ioswificonfigurations"></a>Lista iosWiFiConfigurations
 

@@ -3,12 +3,13 @@ title: Criar macOSWiFiConfiguration
 description: Crie um novo objeto de macOSWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c4d789a273676c8294438717498d1d1e9dc44c73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c0a328af08f01357b2730123291566b5185a7154
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817189"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955307"
 ---
 # <a name="create-macoswificonfiguration"></a>Criar macOSWiFiConfiguration
 

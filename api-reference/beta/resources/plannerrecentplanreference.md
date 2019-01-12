@@ -2,12 +2,14 @@
 title: tipo de recurso de plannerRecentPlanReference
 description: 'O recurso de **plannerRecentPlanReference** digite representa uma referência a um plannerPlan que recentemente foi exibido por um usuário. '
 localization_priority: Normal
-ms.openlocfilehash: 6ac17cd0a99d384cbc1f42e2e0d243c582204101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: bafaf6d20dc8f64ffe49eb4e2f998607708a2773
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943522"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>tipo de recurso de plannerRecentPlanReference
 

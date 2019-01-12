@@ -3,12 +3,13 @@ title: Excluir permanentemente item
 description: Exclui permanentemente um item de itens excluídos.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a5f9bfb7a235386abb6f0e885aa9ada5f1e32517
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: e8a63418736e9a534ef9ab0279bd9d5472f60af7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853968"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926614"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 

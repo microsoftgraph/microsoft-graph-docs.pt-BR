@@ -3,12 +3,13 @@ title: Criar androidWorkProfileCompliancePolicy
 description: Crie um novo objeto de androidWorkProfileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3acd506e40c9054ce3ca5d4128ed9cef2228f8f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 578d3c0357c57fa22ecd3894c1143cf4e7680bcc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846498"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929904"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>Criar androidWorkProfileCompliancePolicy
 

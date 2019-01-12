@@ -3,12 +3,13 @@ title: Listar mobileAppContents
 description: Listar propriedades e relações dos objetos mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7bad446e73d5571c678dcb8a992c3f5b076c6029
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: afd38f27587ff7c92afb1a839f5233c30ac39de2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858895"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945878"
 ---
 # <a name="list-mobileappcontents"></a>Listar mobileAppContents
 

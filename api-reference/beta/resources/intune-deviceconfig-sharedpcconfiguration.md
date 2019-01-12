@@ -2,12 +2,14 @@
 title: Tipo de recurso sharedPCConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso sharedPCConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 8671d4a5241439eaec12e09e250eff1b2caa4592
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 18c249a775631324f99d146fe9c358f0504284b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831133"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962482"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Tipo de recurso sharedPCConfiguration
 

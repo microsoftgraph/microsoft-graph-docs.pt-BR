@@ -3,12 +3,13 @@ title: Atualizar windows10VpnConfiguration
 description: Atualize as propriedades de um objeto windows10VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2cdda69c06c0c204a69d14100adc0abbf7ecdc3f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 91a7daaaafc4c938074b58a2daaf1faef8b99df2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807767"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952745"
 ---
 # <a name="update-windows10vpnconfiguration"></a>Atualizar windows10VpnConfiguration
 

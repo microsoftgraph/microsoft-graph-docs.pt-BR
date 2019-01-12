@@ -3,12 +3,13 @@ title: Trabalhando com a API de reuniões online no Microsoft Graph e de chamada
 description: O Microsoft Graph chama e reuniões online API adiciona uma nova dimensão a como seus aplicativos e serviços podem interagir com os usuários, permitindo que os recursos de vídeos e voz. A API permite criar chamadas e receber chamadas de usuários e aplicativos no Microsoft Teams. Você pode usar essas APIs para criar um aplicativo de serviço (bot) que possa atuar como um participante de uma chamada ou reunião.
 author: VinodRavichandran
 localization_priority: Priority
-ms.openlocfilehash: d7912f587dcc0181a2edd4072f0e07aa643d66be
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: bde47093496e70d0113f9d3a522c845148748f42
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956357"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Trabalhando com a API de reuniões online no Microsoft Graph e de chamadas
 

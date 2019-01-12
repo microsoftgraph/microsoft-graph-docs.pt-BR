@@ -3,12 +3,13 @@ title: Ação syncApps
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 770d4dcc3a97b10d3efd96224d7e1a69305aec3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 71f073f22ac6cc80b75567d11203758c872ff662
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870508"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940999"
 ---
 # <a name="syncapps-action"></a>Ação syncApps
 

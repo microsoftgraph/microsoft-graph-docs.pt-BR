@@ -3,12 +3,13 @@ title: ação de uploadDepToken
 description: Carrega um novo token do programa de inscrição do dispositivo
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e146ebe7d25c428c3451830eb7fa223096fff8af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 080a04b36049f2364203db3567cc95790a17c3aa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886580"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925053"
 ---
 # <a name="uploaddeptoken-action"></a>ação de uploadDepToken
 

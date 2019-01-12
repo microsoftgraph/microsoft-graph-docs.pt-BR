@@ -2,12 +2,14 @@
 title: tipo de recurso de bookingWorkHours
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 94920287cd7358c68686da2d0969c676e3c481ee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: af606cf8ea867c040c20db3b4082761b3de69052
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888953"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958471"
 ---
 # <a name="bookingworkhours-resource-type"></a>tipo de recurso de bookingWorkHours
 

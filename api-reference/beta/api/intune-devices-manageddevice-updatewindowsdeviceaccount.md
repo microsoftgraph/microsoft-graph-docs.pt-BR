@@ -3,12 +3,13 @@ title: Ação updateWindowsDeviceAccount
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cd7f27e166b1fc14ba148f17a374d2941d05b664
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2990410bbdc343f85f422e1bf40dc1b6fe120864
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877606"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954089"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>Ação updateWindowsDeviceAccount
 

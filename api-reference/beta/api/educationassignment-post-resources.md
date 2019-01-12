@@ -2,12 +2,14 @@
 title: Criar educationAssignmentResource
 description: OData.Type para indicar qual tipo de recurso está sendo criado. Observe que recursos baseados no arquivo devem ser carregados primeiro para as atribuições **resourceFolder**.
 localization_priority: Normal
-ms.openlocfilehash: 206e7db8c8e96f230bc0062fa9b080831b1b4e1a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: 46233ec2f8c8acb698dd707f7df06edaca70fec4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854009"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965387"
 ---
 # <a name="create-educationassignmentresource"></a>Criar educationAssignmentResource
 

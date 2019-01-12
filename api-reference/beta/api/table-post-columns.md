@@ -3,12 +3,13 @@ title: Criar TableColumn
 description: Use essa API para criar uma nova TableColumn.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 8c315cd4de26dd610a99e7df66b67856e17b3fb0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c6a0dc30be0e423129a0bd7ec9c6582e6f582d96
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820724"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959780"
 ---
 # <a name="create-tablecolumn"></a>Criar TableColumn
 

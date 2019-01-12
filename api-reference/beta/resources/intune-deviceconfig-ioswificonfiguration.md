@@ -3,12 +3,13 @@ title: tipo de recurso de iosWiFiConfiguration
 description: Fornecendo as configurações neste perfil, você poderá instruir o dispositivo iOS para se conectar ao ponto de extremidade Wi-Fi desejado. Especificando os tipos de segurança e o método de autenticação esperado pelo ponto de extremidade Wi-Fi que você pode fazer a conexão Wi-Fi perfeita para usuário final. Esse perfil fornece tipos de segurança limitado e mais simples que perfil corporativa Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 039b50674604d2d8a108ff08ce7f865beec1f69b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0d08c131a33c5a1a33853d7eb37b563a7723637
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927923"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>tipo de recurso de iosWiFiConfiguration
 

@@ -3,12 +3,13 @@ title: Atualizar outlooktask
 description: Alterar propriedades graváveis de uma tarefa do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 13426446fec4e7d33ea0f7fe35cd28d12e4e61d0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: c0d2ff13f3e7971e686389709fbdde027458ef67
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874750"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964932"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 

@@ -3,12 +3,13 @@ title: Atualizar microsoftStoreForBusinessApp
 description: Atualiza as propriedades de um objeto microsoftStoreForBusinessApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a4e54e3d7b38471b4c9d86cc50cb6b7536205008
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e063091b1fde917ffa7b15607e74d425d2ebc29d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960872"
 ---
 # <a name="update-microsoftstoreforbusinessapp"></a>Atualizar microsoftStoreForBusinessApp
 

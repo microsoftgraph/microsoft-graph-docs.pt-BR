@@ -3,12 +3,13 @@ title: Tipo de recurso appListItem
 description: Representa um aplicativo na lista de aplicativos gerenciados
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0b9d7df95ce8ddb71439763eb02b205772e06300
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a70f68d291036a7a01823c1946aac655aee6e71c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820318"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954425"
 ---
 # <a name="applistitem-resource-type"></a>Tipo de recurso appListItem
 

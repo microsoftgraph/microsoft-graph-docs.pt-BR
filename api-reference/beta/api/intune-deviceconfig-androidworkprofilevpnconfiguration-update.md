@@ -3,12 +3,13 @@ title: Atualizar androidWorkProfileVpnConfiguration
 description: Atualize as propriedades de um objeto androidWorkProfileVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6c1ff2e73ce14568d1ce7c725db1ffc3ae206d64
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 96b40f2fc9b95bef1c76296adff38c7dd54b6284
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868891"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958191"
 ---
 # <a name="update-androidworkprofilevpnconfiguration"></a>Atualizar androidWorkProfileVpnConfiguration
 

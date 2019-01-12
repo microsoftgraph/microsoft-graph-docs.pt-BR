@@ -3,12 +3,13 @@ title: Lista submittedResources
 description: Lista os recursos que foram enviados para classificação oficialmente. O aluno proprietária o envio não pode alterar a lista enviada sem reenviar a atribuição. Este é um wrapper em torno do recurso real e pode conter um ponteiro de volta para o recurso de atribuição real se este recurso foi copiado da atribuição.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: da036713e6683aaef6576145dfe32b3b6eeaf11e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a798ea45ca88520954bbde20a264fff9455f3102
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824140"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934986"
 ---
 # <a name="list-submittedresources"></a>Lista submittedResources
 

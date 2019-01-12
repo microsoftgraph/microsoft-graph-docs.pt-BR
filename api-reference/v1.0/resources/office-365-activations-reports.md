@@ -2,12 +2,13 @@
 title: Relatórios de ativações do Office 365
 description: Os relatórios de ativação do Office 365 oferecem uma visão de quais usuários ativaram suas assinaturas do Office 365 em pelo menos um dispositivo. Esses relatórios fornecem dados sobre as ativações de assinaturas do Office 365 ProPlus, do Project e do Visio Pro para Office 365, bem como o detalhamento das ativações entre desktops e dispositivos. Esses relatórios podem ajudar a identificar os usuários que podem precisar de suporte adicional para ativar a assinatura do Office.
 localization_priority: Normal
-ms.openlocfilehash: 6e91025c43a9dd6d7196fef3b4496883057ee0df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 8bb526c0efeb6b40cee5abea07fb4671e690ddef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818267"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952808"
 ---
 # <a name="office-365-activations-reports"></a>Relatórios de ativações do Office 365
 

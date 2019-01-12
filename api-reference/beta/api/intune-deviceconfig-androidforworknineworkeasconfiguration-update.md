@@ -3,12 +3,13 @@ title: Atualizar androidForWorkNineWorkEasConfiguration
 description: Atualize as propriedades de um objeto androidForWorkNineWorkEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44661e21fec5d4dc764b5ef3ea87dcef02753a00
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 801138eb8d6095a7f924b73fb053a802cdde1b12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828298"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955741"
 ---
 # <a name="update-androidforworknineworkeasconfiguration"></a>Atualizar androidForWorkNineWorkEasConfiguration
 

@@ -3,12 +3,13 @@ title: Lista ndesConnectors
 description: Lista as propriedades e os relacionamentos dos objetos ndesConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e9406151d58940f0a8a0f220a938be38743cf60d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c06fbaf735fbcdce0c0f1f9428d7c6bd75013450
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832561"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940516"
 ---
 # <a name="list-ndesconnectors"></a>Lista ndesConnectors
 

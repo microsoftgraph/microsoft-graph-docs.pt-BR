@@ -3,12 +3,13 @@ title: Lista iosEduDeviceConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosEduDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 59ae3c472a1ecb3f89f294db3f9f1508558ea9ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5d74a6a88e804156b47b005330119b5e12da033f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935014"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>Lista iosEduDeviceConfigurations
 

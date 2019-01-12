@@ -3,12 +3,13 @@ title: tipo de recurso de networkIPv4ConfigurationManagementCondition
 description: Configurações de rede IPv4 condições de gerenciamento baseadas na configuração podem ser definidas que acionará quando um dispositivo detecta certo IP. Um condições de gerenciamento de configuração IP só serão considerados TRUE quando a conexão de rede estiver ativo.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6964f3e84deacdd20a1c5909fb6bd8c87ddcd8f3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 412f5de452e23eeb58f536655c4678526e996e07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847296"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962104"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso de networkIPv4ConfigurationManagementCondition
 

@@ -2,12 +2,13 @@
 title: tipo de recurso de sharePointSiteUsageFileCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: b304a5bb519f8ffb2a23087b2ea38fd12fde6fab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 1c88cd75e1b38da87042b7b67388ef869c15ec38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836124"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950428"
 ---
 # <a name="sharepointsiteusagefilecounts-resource-type"></a>tipo de recurso de sharePointSiteUsageFileCounts
 

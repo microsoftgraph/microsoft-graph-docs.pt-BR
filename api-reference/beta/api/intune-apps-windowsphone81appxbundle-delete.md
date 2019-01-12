@@ -3,12 +3,13 @@ title: Excluir windowsPhone81AppXBundle
 description: Exclui um windowsPhone81AppXBundle.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b2b4cb1df708f6773a67dab134fe6f1989d16574
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8388693f198cb1241b51e531f3bc2e343b98d488
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887105"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943876"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>Excluir windowsPhone81AppXBundle
 

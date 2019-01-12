@@ -3,12 +3,13 @@ title: tipo de recurso de win32LobAppFileSystemDetection
 description: Contém o caminho de arquivo ou pasta para detectar um aplicativo Win32
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 13a994d39ec42ddcb45bc71aac739864a6ef6dc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c901949295b1ff411dec5e9827b7991c922c2315
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849270"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958205"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>tipo de recurso de win32LobAppFileSystemDetection
 

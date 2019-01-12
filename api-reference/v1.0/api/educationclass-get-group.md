@@ -2,12 +2,14 @@
 title: Obter grupo
 description: Recupere o **group** do Office 365 que corresponde a essa **educationClass**.
 localization_priority: Normal
-ms.openlocfilehash: da7e179802739f39465cfb462c92c527ecac3d7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: d467e36afe09ee37b51afcf25ed8f1917ed6ab16
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825344"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931696"
 ---
 # <a name="get-group"></a>Obter grupo
 

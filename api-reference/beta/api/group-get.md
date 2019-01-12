@@ -3,12 +3,13 @@ title: Obter grupo
 description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 48bc4322326087895542ac24e23c7a57f5ddf07e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 99215af564be186edaf57563ae493f363c9cc2fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838672"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941048"
 ---
 # <a name="get-group"></a>Obter grupo
 

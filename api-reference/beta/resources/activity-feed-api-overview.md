@@ -2,12 +2,13 @@
 title: Use a API REST de feed de atividade
 description: 'Você pode usar a API de feed no Microsoft Graph de atividade para retomar a atividade do usuário em plataformas e dispositivos. Solicitações de API de feed de atividade são realizadas em nome de um usuário por meio de permissões delegadas e a permissão de atividade do usuário, que pode ser usada com contas pessoais ou comercial e escola. '
 localization_priority: Normal
-ms.openlocfilehash: 677d98d8658c282c5db822c46a78fc664a34fbc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842851"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943393"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Use a API REST de feed de atividade
 

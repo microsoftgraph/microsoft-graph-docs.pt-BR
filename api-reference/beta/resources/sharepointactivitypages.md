@@ -2,12 +2,13 @@
 title: tipo de recurso de sharePointActivityPages
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: 758dcfd2e1c48b0bf8d0d85f06a68f26bfbbef99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: febca3bb97bc81d39838f168779d271a6e986bef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811841"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930961"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>tipo de recurso de sharePointActivityPages
 

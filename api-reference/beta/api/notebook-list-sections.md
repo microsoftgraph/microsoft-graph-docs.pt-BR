@@ -1,14 +1,15 @@
 ---
 title: Listar seções
 description: Recupere uma lista de objetos section do bloco de anotações especificado.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 9bb7889bbcee720b914b89219642b781af2debed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: ce9005068827176e08eb17e8b5e63b2e3a9db39b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870298"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943421"
 ---
 # <a name="list-sections"></a>Listar seções
 

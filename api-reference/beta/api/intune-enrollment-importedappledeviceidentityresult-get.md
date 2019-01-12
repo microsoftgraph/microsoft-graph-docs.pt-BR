@@ -3,12 +3,13 @@ title: Obter importedAppleDeviceIdentityResult
 description: Leia as propriedades e os relacionamentos do objeto importedAppleDeviceIdentityResult.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 865ffb9e720449ab0ceedefd2b8d4cd425e203bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0dcca0b1da7d377f8d39efa96a3961151600999a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817315"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934979"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>Obter importedAppleDeviceIdentityResult
 

@@ -3,12 +3,13 @@ title: tipo de enum weeklySchedule
 description: Valores possíveis para semanalmente.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b01c71399016fcee2a5320c04dd20073f7d8673a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: ac2380b38c88c6f5cd35b333cdfcded3c4ee11fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928427"
 ---
 # <a name="weeklyschedule-enum-type"></a>tipo de enum weeklySchedule
 

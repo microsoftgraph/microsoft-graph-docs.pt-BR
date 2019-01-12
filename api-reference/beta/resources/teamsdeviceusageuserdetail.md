@@ -3,12 +3,13 @@ title: tipo de recurso de teamsDeviceUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 06e2cea1154c608b61642b07adbd96aae1710903
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 8cdd2fe1a212bb1d36846b80fc1b558c576deb47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807102"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953782"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>tipo de recurso de teamsDeviceUsageUserDetail
 

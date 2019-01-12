@@ -3,12 +3,13 @@ title: Atualizar planilha
 description: Atualize as propriedades do objeto de planilha.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: ff0670cc08d12ed2443b590026bae9efa26e5481
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e2139e1e350ab4c0f416e48181398011666274b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860673"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942028"
 ---
 # <a name="update-worksheet"></a>Atualizar planilha
 
