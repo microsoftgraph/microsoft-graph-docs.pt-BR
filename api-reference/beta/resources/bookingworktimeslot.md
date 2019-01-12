@@ -2,29 +2,31 @@
 title: tipo de recurso de bookingWorkTimeSlot
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 69a802e4addd3c0cb821a630707a62724ea984a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 33dd856d678d2cf1ba9da2a747c0bd46f2fd4932
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839554"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968481"
 ---
-# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="4152a-104">tipo de recurso de bookingWorkTimeSlot</span><span class="sxs-lookup"><span data-stu-id="4152a-104">bookingWorkTimeSlot resource type</span></span>
+# <a name="bookingworktimeslot-resource-type"></a><span data-ttu-id="1e5f1-104">tipo de recurso de bookingWorkTimeSlot</span><span class="sxs-lookup"><span data-stu-id="1e5f1-104">bookingWorkTimeSlot resource type</span></span>
 
- > <span data-ttu-id="4152a-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="4152a-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4152a-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="4152a-106">Use of these APIs in production applications is not supported.</span></span>
+ > <span data-ttu-id="1e5f1-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1e5f1-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-106">Use of these APIs in production applications is not supported.</span></span>
  
-<span data-ttu-id="4152a-107">Os horários de início e término para trabalho.</span><span class="sxs-lookup"><span data-stu-id="4152a-107">The start and end times for work.</span></span>
+<span data-ttu-id="1e5f1-107">Os horários de início e término para trabalho.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-107">The start and end times for work.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="4152a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4152a-108">Properties</span></span>
-| <span data-ttu-id="4152a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4152a-109">Property</span></span>     | <span data-ttu-id="4152a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="4152a-110">Type</span></span>   |<span data-ttu-id="4152a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="4152a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="1e5f1-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1e5f1-108">Properties</span></span>
+| <span data-ttu-id="1e5f1-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1e5f1-109">Property</span></span>     | <span data-ttu-id="1e5f1-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="1e5f1-110">Type</span></span>   |<span data-ttu-id="1e5f1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1e5f1-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4152a-112">end</span><span class="sxs-lookup"><span data-stu-id="4152a-112">end</span></span>|<span data-ttu-id="4152a-113">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="4152a-113">TimeOfDay</span></span>|<span data-ttu-id="4152a-114">A hora do dia em que trabalham inicia.</span><span class="sxs-lookup"><span data-stu-id="4152a-114">The time of the day that work starts.</span></span> <span data-ttu-id="4152a-115">Por exemplo, 08:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="4152a-115">For example, 08:00:00.0000000.</span></span>|
-|<span data-ttu-id="4152a-116">start</span><span class="sxs-lookup"><span data-stu-id="4152a-116">start</span></span>|<span data-ttu-id="4152a-117">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="4152a-117">TimeOfDay</span></span>|<span data-ttu-id="4152a-118">A hora do dia em que trabalham paradas.</span><span class="sxs-lookup"><span data-stu-id="4152a-118">The time of the day that work stops.</span></span> <span data-ttu-id="4152a-119">Por exemplo, 17:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="4152a-119">For example, 17:00:00.0000000.</span></span>|
+|<span data-ttu-id="1e5f1-112">end</span><span class="sxs-lookup"><span data-stu-id="1e5f1-112">end</span></span>|<span data-ttu-id="1e5f1-113">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="1e5f1-113">TimeOfDay</span></span>|<span data-ttu-id="1e5f1-114">A hora do dia em que trabalham inicia.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-114">The time of the day that work starts.</span></span> <span data-ttu-id="1e5f1-115">Por exemplo, 08:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-115">For example, 08:00:00.0000000.</span></span>|
+|<span data-ttu-id="1e5f1-116">start</span><span class="sxs-lookup"><span data-stu-id="1e5f1-116">start</span></span>|<span data-ttu-id="1e5f1-117">TimeOfDay</span><span class="sxs-lookup"><span data-stu-id="1e5f1-117">TimeOfDay</span></span>|<span data-ttu-id="1e5f1-118">A hora do dia em que trabalham paradas.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-118">The time of the day that work stops.</span></span> <span data-ttu-id="1e5f1-119">Por exemplo, 17:00:00.0000000.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-119">For example, 17:00:00.0000000.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4152a-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4152a-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1e5f1-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1e5f1-120">JSON representation</span></span>
 
-<span data-ttu-id="4152a-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4152a-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1e5f1-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1e5f1-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
