@@ -4,42 +4,43 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Acessar site do SharePoint pelo caminho
 localization_priority: Normal
-ms.openlocfilehash: 4dab98e342c012884232cca21cd532b63b450ea8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: baf8b4a8d319450d7558bdcf73c34dc7845d0c57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867834"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948804"
 ---
-# <a name="get-a-site-resource-by-path"></a><span data-ttu-id="18dd9-102">Obter um recurso de site pelo caminho</span><span class="sxs-lookup"><span data-stu-id="18dd9-102">Get a site resource by path</span></span>
+# <a name="get-a-site-resource-by-path"></a><span data-ttu-id="fe637-102">Obter um recurso de site pelo caminho</span><span class="sxs-lookup"><span data-stu-id="fe637-102">Get a site resource by path</span></span>
 
-<span data-ttu-id="18dd9-p101">Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="18dd9-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="fe637-p101">Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="fe637-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [site]: ../resources/site.md
 
-<span data-ttu-id="18dd9-106">Além de recuperar um [site pelo ID](site-get.md), você pode recuperar um site com base no caminho da URL relativa ao servidor.</span><span class="sxs-lookup"><span data-stu-id="18dd9-106">In addition to retrieving a [site by ID](site-get.md) you can retrieve a site based on server-relative URL path.</span></span>
+<span data-ttu-id="fe637-106">Além de recuperar um [site pelo ID](site-get.md), você pode recuperar um site com base no caminho da URL relativa ao servidor.</span><span class="sxs-lookup"><span data-stu-id="fe637-106">In addition to retrieving a [site by ID](site-get.md) you can retrieve a site based on server-relative URL path.</span></span>
 
-* <span data-ttu-id="18dd9-107">Nome do host do conjunto de sites (contoso.sharepoint.com)</span><span class="sxs-lookup"><span data-stu-id="18dd9-107">Site collection hostname (contoso.sharepoint.com)</span></span>
-* <span data-ttu-id="18dd9-108">Caminho do site, em relação ao nome de host do servidor.</span><span class="sxs-lookup"><span data-stu-id="18dd9-108">Site path, relative to server hostname.</span></span>
+* <span data-ttu-id="fe637-107">Nome do host do conjunto de sites (contoso.sharepoint.com)</span><span class="sxs-lookup"><span data-stu-id="fe637-107">Site collection hostname (contoso.sharepoint.com)</span></span>
+* <span data-ttu-id="fe637-108">Caminho do site, em relação ao nome de host do servidor.</span><span class="sxs-lookup"><span data-stu-id="fe637-108">Site path, relative to server hostname.</span></span>
 
-<span data-ttu-id="18dd9-109">Há também um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="18dd9-109">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
+<span data-ttu-id="fe637-109">Há também um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:</span><span class="sxs-lookup"><span data-stu-id="fe637-109">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
 
-* <span data-ttu-id="18dd9-110">`/sites/root`: O site raiz do locatário.</span><span class="sxs-lookup"><span data-stu-id="18dd9-110">`/sites/root`: The tenant root site.</span></span>
-* <span data-ttu-id="18dd9-111">`/groups/{group-id}/sites/root`: O site da equipe do grupo.</span><span class="sxs-lookup"><span data-stu-id="18dd9-111">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
+* <span data-ttu-id="fe637-110">`/sites/root`: O site raiz do locatário.</span><span class="sxs-lookup"><span data-stu-id="fe637-110">`/sites/root`: The tenant root site.</span></span>
+* <span data-ttu-id="fe637-111">`/groups/{group-id}/sites/root`: O site da equipe do grupo.</span><span class="sxs-lookup"><span data-stu-id="fe637-111">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18dd9-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="18dd9-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fe637-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="fe637-112">Permissions</span></span>
 
-<span data-ttu-id="18dd9-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18dd9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fe637-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe637-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="18dd9-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="18dd9-115">Permission type</span></span>      | <span data-ttu-id="18dd9-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="18dd9-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fe637-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fe637-115">Permission type</span></span>      | <span data-ttu-id="fe637-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fe637-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="18dd9-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="18dd9-117">Delegated (work or school account)</span></span> | <span data-ttu-id="18dd9-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18dd9-118">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="18dd9-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="18dd9-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18dd9-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="18dd9-120">Not supported.</span></span>    |
-|<span data-ttu-id="18dd9-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="18dd9-121">Application</span></span> | <span data-ttu-id="18dd9-122">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18dd9-122">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="fe637-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fe637-117">Delegated (work or school account)</span></span> | <span data-ttu-id="fe637-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe637-118">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="fe637-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fe637-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fe637-120">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fe637-120">Not supported.</span></span>    |
+|<span data-ttu-id="fe637-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fe637-121">Application</span></span> | <span data-ttu-id="fe637-122">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe637-122">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="18dd9-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="18dd9-123">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fe637-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fe637-123">HTTP Request</span></span>
 
-<span data-ttu-id="18dd9-124">Para acessar o site raiz do SharePoint com um caminho relativo:</span><span class="sxs-lookup"><span data-stu-id="18dd9-124">To access the root SharePoint site with a relative path:</span></span>
+<span data-ttu-id="fe637-124">Para acessar o site raiz do SharePoint com um caminho relativo:</span><span class="sxs-lookup"><span data-stu-id="fe637-124">To access the root SharePoint site with a relative path:</span></span>
 
 <!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
@@ -47,9 +48,9 @@ ms.locfileid: "27867834"
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## <a name="response"></a><span data-ttu-id="18dd9-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="18dd9-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fe637-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="fe637-125">Response</span></span>
 
-<span data-ttu-id="18dd9-126">Este método retorna um recurso de [site][] para o site referenciado pelo identificador exclusivo.</span><span class="sxs-lookup"><span data-stu-id="18dd9-126">This method returns a [site][] resource for the site referenced by the unique identifier.</span></span>
+<span data-ttu-id="fe637-126">Este método retorna um recurso de [site][] para o site referenciado pelo identificador exclusivo.</span><span class="sxs-lookup"><span data-stu-id="fe637-126">This method returns a [site][] resource for the site referenced by the unique identifier.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.site" } -->
 
