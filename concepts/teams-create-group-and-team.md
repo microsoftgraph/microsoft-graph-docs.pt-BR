@@ -2,27 +2,29 @@
 title: Criar um grupo com uma equipe do Microsoft Teams
 description: 'A criação de um grupo que inclui uma equipe envolve duas etapas: '
 author: nkramer
-ms.openlocfilehash: ea11d0ee7ee4e6e1d0bf6dc10ab8c9d064aa3610
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-teams
+ms.openlocfilehash: 06b25a6da159030407c904622ffebde09c704d98
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27313885"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970476"
 ---
-# <a name="creating-a-group-with-a-microsoft-teams-team"></a><span data-ttu-id="51ead-103">Criar um grupo com uma equipe do Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="51ead-103">Creating a group with a Microsoft Teams team</span></span>
+# <a name="creating-a-group-with-a-microsoft-teams-team"></a><span data-ttu-id="c1f22-103">Criar um grupo com uma equipe do Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="c1f22-103">Creating a group with a Microsoft Teams team</span></span>
 
-<span data-ttu-id="51ead-104">A criação de um [grupo](/graph/api/resources/group?view=graph-rest-beta) que inclui uma [equipe](/graph/api/resources/team?view=graph-rest-beta) envolve duas etapas:</span><span class="sxs-lookup"><span data-stu-id="51ead-104">Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps:</span></span> 
+<span data-ttu-id="c1f22-104">A criação de um [grupo](/graph/api/resources/group?view=graph-rest-beta) que inclui uma [equipe](/graph/api/resources/team?view=graph-rest-beta) envolve duas etapas:</span><span class="sxs-lookup"><span data-stu-id="c1f22-104">Creating a [group](/graph/api/resources/group?view=graph-rest-beta) that includes a [team](/graph/api/resources/team?view=graph-rest-beta) involves two steps:</span></span> 
 
-- <span data-ttu-id="51ead-105">[Criar um grupo](/graph/api/group-post-groups?view=graph-rest-beta) com as propriedades certas.</span><span class="sxs-lookup"><span data-stu-id="51ead-105">[Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.</span></span>
-- <span data-ttu-id="51ead-106">[Adicionar uma equipe](/graph/api/team-put-teams?view=graph-rest-beta) ao grupo.</span><span class="sxs-lookup"><span data-stu-id="51ead-106">[Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.</span></span>
+- <span data-ttu-id="c1f22-105">[Criar um grupo](/graph/api/group-post-groups?view=graph-rest-beta) com as propriedades certas.</span><span class="sxs-lookup"><span data-stu-id="c1f22-105">[Create a group](/graph/api/group-post-groups?view=graph-rest-beta) with the right properties.</span></span>
+- <span data-ttu-id="c1f22-106">[Adicionar uma equipe](/graph/api/team-put-teams?view=graph-rest-beta) ao grupo.</span><span class="sxs-lookup"><span data-stu-id="c1f22-106">[Add a team](/graph/api/team-put-teams?view=graph-rest-beta) to the group.</span></span>
 
-## <a name="create-a-group"></a><span data-ttu-id="51ead-107">Criar um grupo</span><span class="sxs-lookup"><span data-stu-id="51ead-107">Create a group</span></span>
+## <a name="create-a-group"></a><span data-ttu-id="c1f22-107">Criar um grupo</span><span class="sxs-lookup"><span data-stu-id="c1f22-107">Create a group</span></span>
 
-<span data-ttu-id="51ead-108">Para incluir uma equipe, você precisa definir os seguintes valores de propriedade, conforme mostra o exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="51ead-108">In order to include a team, you need to set the following property values, as shown in the following example:</span></span>
+<span data-ttu-id="c1f22-108">Para incluir uma equipe, você precisa definir os seguintes valores de propriedade, conforme mostra o exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="c1f22-108">In order to include a team, you need to set the following property values, as shown in the following example:</span></span>
 
-- <span data-ttu-id="51ead-109">**groupTypes** = { "Unified" }</span><span class="sxs-lookup"><span data-stu-id="51ead-109">**groupTypes** = { "Unified" }</span></span> 
-- <span data-ttu-id="51ead-110">**mailEnabled** = true</span><span class="sxs-lookup"><span data-stu-id="51ead-110">**mailEnabled** = true</span></span>
-- <span data-ttu-id="51ead-111">**securityEnabled** = false</span><span class="sxs-lookup"><span data-stu-id="51ead-111">**securityEnabled** = false</span></span>
+- <span data-ttu-id="c1f22-109">**groupTypes** = { "Unified" }</span><span class="sxs-lookup"><span data-stu-id="c1f22-109">**groupTypes** = { "Unified" }</span></span> 
+- <span data-ttu-id="c1f22-110">**mailEnabled** = true</span><span class="sxs-lookup"><span data-stu-id="c1f22-110">**mailEnabled** = true</span></span>
+- <span data-ttu-id="c1f22-111">**securityEnabled** = false</span><span class="sxs-lookup"><span data-stu-id="c1f22-111">**securityEnabled** = false</span></span>
 
 ```http
 POST /groups
@@ -47,9 +49,9 @@ POST /groups
 }
 ```
 
-<span data-ttu-id="51ead-112">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="51ead-112">The following example shows response.</span></span> 
+<span data-ttu-id="c1f22-112">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="c1f22-112">The following example shows response.</span></span> 
 
-><span data-ttu-id="51ead-113">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="51ead-113">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="51ead-114">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="51ead-114">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c1f22-113">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c1f22-113">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="c1f22-114">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c1f22-114">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -61,18 +63,18 @@ Content-length: xxx
 }
 ```
 
-## <a name="add-a-team-to-the-group"></a><span data-ttu-id="51ead-115">Adicionar uma equipe ao grupo.</span><span class="sxs-lookup"><span data-stu-id="51ead-115">Add a team to the group</span></span>
+## <a name="add-a-team-to-the-group"></a><span data-ttu-id="c1f22-115">Adicionar uma equipe ao grupo.</span><span class="sxs-lookup"><span data-stu-id="c1f22-115">Add a team to the group</span></span>
 
-<span data-ttu-id="51ead-116">Adicione uma equipe ao grupo, conforme exibido.</span><span class="sxs-lookup"><span data-stu-id="51ead-116">Add a team to the group, as shown.</span></span>
+<span data-ttu-id="c1f22-116">Adicione uma equipe ao grupo, conforme exibido.</span><span class="sxs-lookup"><span data-stu-id="c1f22-116">Add a team to the group, as shown.</span></span>
 
 ```http
 PUT /groups/{id}/team
 { }
 ```
 
-<span data-ttu-id="51ead-117">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="51ead-117">The following example shows the response.</span></span> 
+<span data-ttu-id="c1f22-117">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="c1f22-117">The following example shows the response.</span></span> 
 
-><span data-ttu-id="51ead-118">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="51ead-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="51ead-119">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="51ead-119">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c1f22-118">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="c1f22-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="c1f22-119">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c1f22-119">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -90,4 +92,4 @@ Content-length: xxx
 }
 ```
 
-<span data-ttu-id="51ead-120">A equipe criada tem a mesma ID do que o grupo.</span><span class="sxs-lookup"><span data-stu-id="51ead-120">The created team has the same ID as the group.</span></span>
+<span data-ttu-id="c1f22-120">A equipe criada tem a mesma ID do que o grupo.</span><span class="sxs-lookup"><span data-stu-id="c1f22-120">The created team has the same ID as the group.</span></span>
