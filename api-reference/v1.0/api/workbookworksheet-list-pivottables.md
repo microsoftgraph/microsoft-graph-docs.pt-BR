@@ -3,48 +3,49 @@ title: Listar pivotTables
 description: Recupere uma lista de objetos workbookpivottable.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6de7870f0fe16582e463ac1ff833ad282460888e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 427a1b1a61ac4594497d8016eaa2eb8eed9fd732
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886013"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965751"
 ---
-# <a name="list-pivottables"></a><span data-ttu-id="54857-103">Listar pivotTables</span><span class="sxs-lookup"><span data-stu-id="54857-103">List pivotTables</span></span>
+# <a name="list-pivottables"></a><span data-ttu-id="990bc-103">Listar pivotTables</span><span class="sxs-lookup"><span data-stu-id="990bc-103">List pivotTables</span></span>
 
-<span data-ttu-id="54857-104">Recupere uma lista de objetos workbookpivottable.</span><span class="sxs-lookup"><span data-stu-id="54857-104">Retrieve a list of workbookpivottable objects.</span></span>
+<span data-ttu-id="990bc-104">Recupere uma lista de objetos workbookpivottable.</span><span class="sxs-lookup"><span data-stu-id="990bc-104">Retrieve a list of workbookpivottable objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="54857-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="54857-105">Permissions</span></span>
-<span data-ttu-id="54857-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="54857-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="990bc-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="990bc-105">Permissions</span></span>
+<span data-ttu-id="990bc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="990bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="54857-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="54857-108">Permission type</span></span>      | <span data-ttu-id="54857-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="54857-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="990bc-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="990bc-108">Permission type</span></span>      | <span data-ttu-id="990bc-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="990bc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="54857-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="54857-110">Delegated (work or school account)</span></span> | <span data-ttu-id="54857-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="54857-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="54857-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="54857-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="54857-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="54857-113">Not supported.</span></span>    |
-|<span data-ttu-id="54857-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="54857-114">Application</span></span> | <span data-ttu-id="54857-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="54857-115">Not supported.</span></span> |
+|<span data-ttu-id="990bc-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="990bc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="990bc-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="990bc-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="990bc-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="990bc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="990bc-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="990bc-113">Not supported.</span></span>    |
+|<span data-ttu-id="990bc-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="990bc-114">Application</span></span> | <span data-ttu-id="990bc-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="990bc-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="54857-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="54857-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="990bc-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="990bc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="54857-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="54857-117">Optional query parameters</span></span>
-<span data-ttu-id="54857-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="54857-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="990bc-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="990bc-117">Optional query parameters</span></span>
+<span data-ttu-id="990bc-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="990bc-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="54857-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="54857-119">Request headers</span></span>
-| <span data-ttu-id="54857-120">Nome</span><span class="sxs-lookup"><span data-stu-id="54857-120">Name</span></span>      |<span data-ttu-id="54857-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="54857-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="990bc-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="990bc-119">Request headers</span></span>
+| <span data-ttu-id="990bc-120">Nome</span><span class="sxs-lookup"><span data-stu-id="990bc-120">Name</span></span>      |<span data-ttu-id="990bc-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="990bc-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="54857-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="54857-122">Authorization</span></span>  | <span data-ttu-id="54857-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="54857-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="54857-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="54857-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="54857-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="54857-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="990bc-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="990bc-122">Authorization</span></span>  | <span data-ttu-id="990bc-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="990bc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="990bc-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="990bc-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="990bc-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="990bc-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="54857-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="54857-128">Request body</span></span>
-<span data-ttu-id="54857-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="54857-129">Do not supply a request body for this method.</span></span>
-### <a name="response"></a><span data-ttu-id="54857-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="54857-130">Response</span></span>
-<span data-ttu-id="54857-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [workbookPivotTable](../resources/workbookpivottable.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="54857-131">If successful, this method returns a `200 OK` response code and collection of [workbookPivotTable](../resources/workbookpivottable.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="54857-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="54857-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="54857-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="54857-133">Request</span></span>
-<span data-ttu-id="54857-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="54857-134">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="990bc-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="990bc-128">Request body</span></span>
+<span data-ttu-id="990bc-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="990bc-129">Do not supply a request body for this method.</span></span>
+### <a name="response"></a><span data-ttu-id="990bc-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="990bc-130">Response</span></span>
+<span data-ttu-id="990bc-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [workbookPivotTable](../resources/workbookpivottable.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="990bc-131">If successful, this method returns a `200 OK` response code and collection of [workbookPivotTable](../resources/workbookpivottable.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="990bc-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="990bc-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="990bc-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="990bc-133">Request</span></span>
+<span data-ttu-id="990bc-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="990bc-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_pivottables"
@@ -52,8 +53,8 @@ GET /me/drive/root/workbook/worksheets/{id}/pivotTables
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
-##### <a name="response"></a><span data-ttu-id="54857-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="54857-135">Response</span></span>
-<span data-ttu-id="54857-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="54857-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="990bc-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="990bc-135">Response</span></span>
+<span data-ttu-id="990bc-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="990bc-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
