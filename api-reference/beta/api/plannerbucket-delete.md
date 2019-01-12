@@ -2,50 +2,52 @@
 title: Excluir plannerBucket
 description: Exclua **plannerBucket**.
 localization_priority: Normal
-ms.openlocfilehash: 72e354da31adac48b122b7eb071d4ef8e42d97e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d1c3f0540b3a27a396229fa19dac2bcfe3a231de
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829285"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933222"
 ---
-# <a name="delete-plannerbucket"></a><span data-ttu-id="a3ba9-103">Excluir plannerBucket</span><span class="sxs-lookup"><span data-stu-id="a3ba9-103">Delete plannerBucket</span></span>
+# <a name="delete-plannerbucket"></a><span data-ttu-id="c7464-103">Excluir plannerBucket</span><span class="sxs-lookup"><span data-stu-id="c7464-103">Delete plannerBucket</span></span>
 
-> <span data-ttu-id="a3ba9-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a3ba9-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c7464-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="c7464-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c7464-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c7464-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="a3ba9-106">Exclua **plannerBucket**.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-106">Delete **plannerBucket**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a3ba9-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="a3ba9-107">Permissions</span></span>
-<span data-ttu-id="a3ba9-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3ba9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c7464-106">Exclua **plannerBucket**.</span><span class="sxs-lookup"><span data-stu-id="c7464-106">Delete **plannerBucket**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c7464-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c7464-107">Permissions</span></span>
+<span data-ttu-id="c7464-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7464-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a3ba9-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a3ba9-110">Permission type</span></span>      | <span data-ttu-id="a3ba9-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a3ba9-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c7464-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c7464-110">Permission type</span></span>      | <span data-ttu-id="c7464-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c7464-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a3ba9-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a3ba9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a3ba9-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3ba9-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a3ba9-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a3ba9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3ba9-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-115">Not supported.</span></span>    |
-|<span data-ttu-id="a3ba9-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a3ba9-116">Application</span></span> | <span data-ttu-id="a3ba9-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-117">Not supported.</span></span> |
+|<span data-ttu-id="c7464-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c7464-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c7464-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7464-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c7464-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c7464-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7464-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c7464-115">Not supported.</span></span>    |
+|<span data-ttu-id="c7464-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c7464-116">Application</span></span> | <span data-ttu-id="c7464-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c7464-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a3ba9-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a3ba9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c7464-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c7464-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /planner/buckets/<id>
 ```
-## <a name="request-headers"></a><span data-ttu-id="a3ba9-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a3ba9-119">Request headers</span></span>
-| <span data-ttu-id="a3ba9-120">Nome</span><span class="sxs-lookup"><span data-stu-id="a3ba9-120">Name</span></span>       | <span data-ttu-id="a3ba9-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="a3ba9-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c7464-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c7464-119">Request headers</span></span>
+| <span data-ttu-id="c7464-120">Nome</span><span class="sxs-lookup"><span data-stu-id="c7464-120">Name</span></span>       | <span data-ttu-id="c7464-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="c7464-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a3ba9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="a3ba9-122">Authorization</span></span>  | <span data-ttu-id="a3ba9-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a3ba9-125">If-Match</span><span class="sxs-lookup"><span data-stu-id="a3ba9-125">If-Match</span></span>  | <span data-ttu-id="a3ba9-p104">O último valor ETag conhecido do objeto **plannerBucket** a ser excluído. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-p104">Last known ETag value for the **plannerBucket** to be deleted. Required.</span></span>|
+| <span data-ttu-id="c7464-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c7464-122">Authorization</span></span>  | <span data-ttu-id="c7464-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c7464-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c7464-125">If-Match</span><span class="sxs-lookup"><span data-stu-id="c7464-125">If-Match</span></span>  | <span data-ttu-id="c7464-p104">O último valor ETag conhecido do objeto **plannerBucket** a ser excluído. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c7464-p104">Last known ETag value for the **plannerBucket** to be deleted. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a3ba9-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a3ba9-128">Request body</span></span>
-<span data-ttu-id="a3ba9-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c7464-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c7464-128">Request body</span></span>
+<span data-ttu-id="c7464-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c7464-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a3ba9-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3ba9-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c7464-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7464-130">Response</span></span>
 
-<span data-ttu-id="a3ba9-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c7464-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c7464-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-<span data-ttu-id="a3ba9-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="a3ba9-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="c7464-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="c7464-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="a3ba9-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a3ba9-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a3ba9-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a3ba9-137">Request</span></span>
-<span data-ttu-id="a3ba9-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-138">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c7464-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c7464-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c7464-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c7464-137">Request</span></span>
+<span data-ttu-id="c7464-138">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c7464-138">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_plannerbucket"
@@ -54,8 +56,8 @@ DELETE /planner/buckets/<id>
 DELETE https://graph.microsoft.com/beta/planner/buckets/<id>
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
-##### <a name="response"></a><span data-ttu-id="a3ba9-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="a3ba9-139">Response</span></span>
-<span data-ttu-id="a3ba9-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a3ba9-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c7464-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="c7464-139">Response</span></span>
+<span data-ttu-id="c7464-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c7464-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
