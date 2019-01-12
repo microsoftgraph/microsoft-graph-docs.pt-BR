@@ -4,32 +4,33 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Localizar sites do SharePoint por palavra-chave
 localization_priority: Normal
-ms.openlocfilehash: e811dc54f37a55331e0b6c4f25c95f4ce89be142
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 5a8f31080b2f06ccfb293f631fd18a716b3f2b09
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821438"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942847"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="90b5a-102">Procurar sites</span><span class="sxs-lookup"><span data-stu-id="90b5a-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="d7109-102">Procurar sites</span><span class="sxs-lookup"><span data-stu-id="d7109-102">Search for sites</span></span>
 
-> <span data-ttu-id="90b5a-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="90b5a-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="90b5a-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="90b5a-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d7109-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="d7109-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d7109-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="d7109-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="90b5a-105">Pesquise em um locatário do SharePoint por [sites][] que correspondam a palavras-chave fornecidas.</span><span class="sxs-lookup"><span data-stu-id="90b5a-105">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="d7109-105">Pesquise em um locatário do SharePoint por [sites][] que correspondam a palavras-chave fornecidas.</span><span class="sxs-lookup"><span data-stu-id="d7109-105">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="90b5a-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="90b5a-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d7109-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="d7109-107">Permissions</span></span>
 
-<span data-ttu-id="90b5a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="90b5a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d7109-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d7109-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="90b5a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="90b5a-110">Permission type</span></span>                        | <span data-ttu-id="90b5a-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="90b5a-111">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="d7109-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d7109-110">Permission type</span></span>                        | <span data-ttu-id="d7109-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d7109-111">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="90b5a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="90b5a-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="90b5a-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="90b5a-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="90b5a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="90b5a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="90b5a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="90b5a-115">Not supported.</span></span>
-|<span data-ttu-id="90b5a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="90b5a-116">Application</span></span>                            | <span data-ttu-id="90b5a-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="90b5a-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="d7109-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d7109-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d7109-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7109-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="d7109-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d7109-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7109-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d7109-115">Not supported.</span></span>
+|<span data-ttu-id="d7109-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d7109-116">Application</span></span>                            | <span data-ttu-id="d7109-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d7109-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="90b5a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="90b5a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d7109-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d7109-118">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -37,7 +38,7 @@ ms.locfileid: "27821438"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="90b5a-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="90b5a-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d7109-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="d7109-119">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
