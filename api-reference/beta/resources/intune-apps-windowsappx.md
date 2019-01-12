@@ -3,12 +3,13 @@ title: tipo de recurso de windowsAppX
 description: Contém propriedades e as propriedades herdadas para aplicativos do Windows AppX linha de negócios.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a39c93aaec3d27a75775a3760eedf9a85bcb8fd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2884dfce6d53d2138fca7e1f89d555a56088bd5b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889337"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965695"
 ---
 # <a name="windowsappx-resource-type"></a>tipo de recurso de windowsAppX
 

@@ -2,12 +2,14 @@
 title: tipo de recurso de androidWorkProfileNineWorkEasConfiguration
 description: Fornecendo configurações neste perfil, você poderá instruir o cliente de email de trabalho nove em dispositivos Android perfil de trabalho para se comunicar com um servidor Exchange e obter email, calendário, contatos, tarefas e anotações. Além disso, você também pode especificar o quanto email para sincronização e com que frequência o dispositivo deve sincronizar.
 localization_priority: Normal
-ms.openlocfilehash: 3bc29aabb637c38fc90054e3100aef89d6a71a3d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 7ee7f42a37a882d71318acbcf0b472a808cb8104
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847366"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943960"
 ---
 # <a name="androidworkprofilenineworkeasconfiguration-resource-type"></a>tipo de recurso de androidWorkProfileNineWorkEasConfiguration
 

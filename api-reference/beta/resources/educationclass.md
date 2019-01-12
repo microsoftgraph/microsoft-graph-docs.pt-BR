@@ -1,12 +1,15 @@
 ---
 title: Tipo de recurso educationClass
 description: 'Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo do Office 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  '
-ms.openlocfilehash: 49b307cb59b6e1a3002f70f9a1b367251040250b
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f651e695ddf0b7139a31d077dcf021fced91293a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27033169"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962916"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 

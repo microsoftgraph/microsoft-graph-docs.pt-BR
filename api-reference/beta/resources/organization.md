@@ -2,12 +2,14 @@
 title: tipo de recurso organization
 description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
-ms.openlocfilehash: a3912039a5cd51cbe0b170a866d1a2b35a57e924
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 86263fe11ebf3bb25e17cbd2b950195fa122f778
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823139"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927447"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 

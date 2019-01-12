@@ -3,12 +3,13 @@ title: tipo de enum windowsUserType
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08d360ddbfcfa5ddbdf036b4b149898a71fd38a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 68061c78e5fbba70436eda4cabcdf1ed1d26bc5d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856893"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962720"
 ---
 # <a name="windowsusertype-enum-type"></a>tipo de enum windowsUserType
 

@@ -3,12 +3,13 @@ title: tipo de recurso de teamsTemplate
 description: Descreve a entidade teamsTemplate.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 6e847c7ef0b13dd9c4281c17939164128be8b6a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 9bd5047950ed1ed3c57950d2c4b708a78b570649
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818869"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940082"
 ---
 # <a name="teamstemplate-resource-type"></a>tipo de recurso de teamsTemplate
 

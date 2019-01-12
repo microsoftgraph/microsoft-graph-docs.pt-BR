@@ -3,12 +3,13 @@ title: Criar windowsAutopilotDeploymentProfileAssignment
 description: Crie um novo objeto de windowsAutopilotDeploymentProfileAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5edb72c852be52340eae366c0f2031385fb7ad4d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a336ac9540c90cdebf452a08037bd46d5fa33d01
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851741"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983622"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Criar windowsAutopilotDeploymentProfileAssignment
 

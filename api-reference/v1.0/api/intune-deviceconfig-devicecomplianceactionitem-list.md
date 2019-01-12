@@ -3,12 +3,13 @@ title: Listar deviceComplianceActionItems
 description: Listar propriedades e relações dos objetos deviceComplianceActionItem.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0c1dd0a71844d071c191c58297f683f5ff629af5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3d9b5d154e345dd71a3fb9e34085c18b22f3ff46
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952255"
 ---
 # <a name="list-devicecomplianceactionitems"></a>Listar deviceComplianceActionItems
 

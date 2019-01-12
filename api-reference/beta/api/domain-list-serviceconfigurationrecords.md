@@ -3,12 +3,13 @@ title: Listar serviceConfigurationRecords
 description: Recupera uma lista de objetos domainDnsRecord necessários para ativar os serviços do domínio.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: a68938b7eb5b2abed1a2d0476fdfeb5fdd783ec4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2880a8336d15b675cd5debc6008d8de8f4d191f7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833716"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965534"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Listar serviceConfigurationRecords
 

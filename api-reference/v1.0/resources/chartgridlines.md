@@ -2,12 +2,14 @@
 title: Tipo de recurso ChartGridlines
 description: Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
 author: lumine2008
-ms.openlocfilehash: 2aaf044b09d061af4853e76e0f2ba118bd1b2321
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: excel
+ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27353029"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956945"
 ---
 # <a name="chartgridlines-resource-type"></a>Tipo de recurso ChartGridlines
 

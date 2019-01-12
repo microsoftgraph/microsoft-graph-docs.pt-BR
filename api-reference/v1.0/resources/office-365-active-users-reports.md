@@ -2,12 +2,13 @@
 title: Relatórios dos usuários ativos do Office 365
 description: Você pode usar os relatórios dos usuários ativos do Office 365 para descobrir quantas licenças de produtos estão sendo usadas por indivíduos em sua organização e detalhar informações sobre quais usuários estão usando quais produtos. Esses relatórios podem ajudar os administradores a identificar produtos ou usuários subutilizados que possam precisar de treinamento ou informações adicionais.
 localization_priority: Normal
-ms.openlocfilehash: 31707a5cd3f39f443e3da5c6b169261a75b3986e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 0ac5c3080469b8d918ee631edaf1473141a60dca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881470"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917997"
 ---
 # <a name="office-365-active-users-reports"></a>Relatórios dos usuários ativos do Office 365
 

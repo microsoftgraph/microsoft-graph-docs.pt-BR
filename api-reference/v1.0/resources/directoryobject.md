@@ -2,12 +2,14 @@
 title: Tipo de recurso directoryObject
 description: Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
 localization_priority: Priority
-ms.openlocfilehash: 0da74c8f034de37bf442fba6d1609623e81da372
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: da596d80bee17e55f8ecffe8f212e686af8e30d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851693"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964134"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
