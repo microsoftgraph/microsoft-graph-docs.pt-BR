@@ -3,49 +3,50 @@ title: Remover rejectedSender
 description: Remove um usuário ou grupo da lista rejectedSenders.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 5399caf73e089d69247ff0ab004793b778d3fb75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 5b67968c805b36a93afc7841bfbe162abc2a89ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883556"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984539"
 ---
-# <a name="remove-rejectedsender"></a><span data-ttu-id="c72fe-103">Remover rejectedSender</span><span class="sxs-lookup"><span data-stu-id="c72fe-103">Remove rejectedSender</span></span>
+# <a name="remove-rejectedsender"></a><span data-ttu-id="1aed5-103">Remover rejectedSender</span><span class="sxs-lookup"><span data-stu-id="1aed5-103">Remove rejectedSender</span></span>
 
-> <span data-ttu-id="c72fe-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="c72fe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c72fe-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c72fe-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1aed5-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1aed5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1aed5-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1aed5-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="c72fe-106">Remove um usuário ou grupo da lista rejectedSenders.</span><span class="sxs-lookup"><span data-stu-id="c72fe-106">Remove a user or group from the rejectedSenders list.</span></span>
+<span data-ttu-id="1aed5-106">Remove um usuário ou grupo da lista rejectedSenders.</span><span class="sxs-lookup"><span data-stu-id="1aed5-106">Remove a user or group from the rejectedSenders list.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c72fe-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c72fe-107">Permissions</span></span>
-<span data-ttu-id="c72fe-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c72fe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1aed5-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="1aed5-107">Permissions</span></span>
+<span data-ttu-id="1aed5-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1aed5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c72fe-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c72fe-110">Permission type</span></span>                        | <span data-ttu-id="c72fe-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c72fe-111">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="1aed5-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1aed5-110">Permission type</span></span>                        | <span data-ttu-id="1aed5-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1aed5-111">Permissions (from least to most privileged)</span></span>  |
 |:---------------------------------------|:-------------------------------------------- |
-| <span data-ttu-id="c72fe-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c72fe-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="c72fe-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c72fe-113">Group.ReadWrite.All</span></span>  |  
-| <span data-ttu-id="c72fe-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c72fe-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c72fe-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c72fe-115">Not supported.</span></span> |
-| <span data-ttu-id="c72fe-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c72fe-116">Application</span></span>                            | <span data-ttu-id="c72fe-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c72fe-117">Not supported.</span></span> |
+| <span data-ttu-id="1aed5-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1aed5-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="1aed5-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1aed5-113">Group.ReadWrite.All</span></span>  |  
+| <span data-ttu-id="1aed5-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1aed5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1aed5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1aed5-115">Not supported.</span></span> |
+| <span data-ttu-id="1aed5-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1aed5-116">Application</span></span>                            | <span data-ttu-id="1aed5-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1aed5-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c72fe-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c72fe-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1aed5-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1aed5-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c72fe-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c72fe-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1aed5-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1aed5-119">Request headers</span></span>
 
-| <span data-ttu-id="c72fe-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c72fe-120">Header</span></span>         | <span data-ttu-id="c72fe-121">Valor</span><span class="sxs-lookup"><span data-stu-id="c72fe-121">Value</span></span>                      |
+| <span data-ttu-id="1aed5-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1aed5-120">Header</span></span>         | <span data-ttu-id="1aed5-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1aed5-121">Value</span></span>                      |
 |:---------------|:---------------------------|
-| <span data-ttu-id="c72fe-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c72fe-122">Authorization</span></span>  | <span data-ttu-id="c72fe-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c72fe-p103">Bearer {token}. Required.</span></span>  
+| <span data-ttu-id="1aed5-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1aed5-122">Authorization</span></span>  | <span data-ttu-id="1aed5-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1aed5-p103">Bearer {token}. Required.</span></span>  
 
-## <a name="request-body"></a><span data-ttu-id="c72fe-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c72fe-125">Request body</span></span>
-<span data-ttu-id="c72fe-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c72fe-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1aed5-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1aed5-125">Request body</span></span>
+<span data-ttu-id="1aed5-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1aed5-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c72fe-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="c72fe-127">Response</span></span>
-<span data-ttu-id="c72fe-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c72fe-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1aed5-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="1aed5-127">Response</span></span>
+<span data-ttu-id="1aed5-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1aed5-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c72fe-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c72fe-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="c72fe-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c72fe-131">Request</span></span>
-<span data-ttu-id="c72fe-132">Estes são alguns exemplos de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c72fe-132">The following are a couple of examples of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1aed5-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1aed5-130">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="1aed5-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1aed5-131">Request</span></span>
+<span data-ttu-id="1aed5-132">Estes são alguns exemplos de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1aed5-132">The following are a couple of examples of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "remove_rejectedSender_from_group"
@@ -56,8 +57,8 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=htt
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
 
-#### <a name="response"></a><span data-ttu-id="c72fe-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="c72fe-133">Response</span></span>
-<span data-ttu-id="c72fe-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c72fe-134">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="1aed5-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1aed5-133">Response</span></span>
+<span data-ttu-id="1aed5-134">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1aed5-134">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
