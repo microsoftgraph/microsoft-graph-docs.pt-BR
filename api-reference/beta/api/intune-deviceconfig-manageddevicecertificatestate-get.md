@@ -3,12 +3,13 @@ title: Obter managedDeviceCertificateState
 description: Leia as propriedades e os relacionamentos do objeto managedDeviceCertificateState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ae84915623f17d5b79e933028e57459e5e5addf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bc99c6d5277d7c5379721a89d19179a0b8392b6c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822684"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967571"
 ---
 # <a name="get-manageddevicecertificatestate"></a>Obter managedDeviceCertificateState
 

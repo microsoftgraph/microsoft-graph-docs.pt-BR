@@ -3,12 +3,13 @@ title: Atualizar macOSScepCertificateProfile
 description: Atualize as propriedades de um objeto macOSScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0271faf63a3f117301cb21d2082f36e3085a9238
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9e654208e006b04c846721fe2cd3446183553902
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879118"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968019"
 ---
 # <a name="update-macosscepcertificateprofile"></a>Atualizar macOSScepCertificateProfile
 

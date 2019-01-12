@@ -3,12 +3,13 @@ title: Atualizar macOSEndpointProtectionConfiguration
 description: Atualize as propriedades de um objeto macOSEndpointProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 69b3374c6931e7b7fabbde753bc2aad61313b5c8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6a9f2c5a1523b934258734befb7e5bea5955e4bc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890787"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967907"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>Atualizar macOSEndpointProtectionConfiguration
 
