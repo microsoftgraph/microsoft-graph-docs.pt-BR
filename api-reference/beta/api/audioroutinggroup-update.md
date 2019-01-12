@@ -3,12 +3,13 @@ title: Atualizar o grupo de roteamento de áudio
 description: Modificar fontes e receptores de um audioRoutingGroup.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: b12d93d3cd8255cb735beaba7c78684a2b3b3a9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: ca6e77e71abb7d7a934944ce7fd4de10d79e1a94
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833835"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956903"
 ---
 # <a name="update-audio-routing-group"></a>Atualizar o grupo de roteamento de áudio
 

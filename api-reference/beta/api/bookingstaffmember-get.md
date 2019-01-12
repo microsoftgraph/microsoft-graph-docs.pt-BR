@@ -2,12 +2,14 @@
 title: Obter bookingStaffMember
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 1bb00a0df9a8497f99a04a1d293505302400832f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: ad550bbcc1608d3770d8047f6081fc20fd419822
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819639"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956889"
 ---
 # <a name="get-bookingstaffmember"></a>Obter bookingStaffMember
 

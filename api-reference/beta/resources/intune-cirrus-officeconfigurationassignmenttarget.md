@@ -3,12 +3,13 @@ title: tipo de recurso de officeConfigurationAssignmentTarget
 description: Destino para atribuição de configuração do cliente Office.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1066ff813297e4445c812c42a870a7234f5869df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a39dfde0ca79fd4a61b1bfa658af3793a1e9e06
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858685"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957596"
 ---
 # <a name="officeconfigurationassignmenttarget-resource-type"></a>tipo de recurso de officeConfigurationAssignmentTarget
 

@@ -3,12 +3,13 @@ title: Tipo de recurso resourceAction
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8d607ca2b250e9d2af55b74ef568a82c522bf761
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 17d8bd52996ca9b129292c204dd498fcc5a65ac6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876381"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963238"
 ---
 # <a name="resourceaction-resource-type"></a>Tipo de recurso resourceAction
 

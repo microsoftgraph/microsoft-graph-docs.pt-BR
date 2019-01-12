@@ -3,12 +3,13 @@ title: tipo de enum wiFiAuthenticationMethod
 description: Método de autenticação Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 15abeae8d3029e823439020857e045ef13f1b7b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f86b8529c907f7ecb5b5d3e38c7e86ff620e45c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878831"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962244"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>tipo de enum wiFiAuthenticationMethod
 

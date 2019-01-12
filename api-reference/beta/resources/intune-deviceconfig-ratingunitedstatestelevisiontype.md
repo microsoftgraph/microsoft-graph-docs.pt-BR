@@ -3,12 +3,13 @@ title: tipo de enum ratingUnitedStatesTelevisionType
 description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 036ea2cbe81076a45dfcbc9aadfc433af60e00c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9f4492fac5bc003fdaba15a39b0f58892872ea87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875870"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964799"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enum ratingUnitedStatesTelevisionType
 

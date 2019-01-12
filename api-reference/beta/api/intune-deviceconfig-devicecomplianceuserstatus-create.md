@@ -3,12 +3,13 @@ title: Criar deviceComplianceUserStatus
 description: Criar um novo objeto deviceComplianceUserStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b421e9d53d38c4b9c35c92d9c2eeaf8db1de9afe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9f19cef57da92e0c008e2aec21e078d767abe350
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873861"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958919"
 ---
 # <a name="create-devicecomplianceuserstatus"></a>Criar deviceComplianceUserStatus
 

@@ -3,12 +3,13 @@ title: tipo de recurso de configurações
 description: 'As configurações do usuário atual. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 107ec7c425e4818f9233755e54d867b07087aa3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 7beddf0c0ac1d6279d5e6e53b8a87844f19efba6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805016"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967970"
 ---
 # <a name="settings-resource-type"></a>tipo de recurso de configurações
 

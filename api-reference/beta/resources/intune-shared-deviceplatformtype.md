@@ -3,12 +3,13 @@ title: tipo de enum devicePlatformType
 description: Tipos de plataforma com suporte.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 53d3275b906276caefa9a655f12146fb73e0d7c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 50fbe24b39d3edaa5b6b5c5487aea42f63854eb8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819331"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974361"
 ---
 # <a name="deviceplatformtype-enum-type"></a>tipo de enum devicePlatformType
 

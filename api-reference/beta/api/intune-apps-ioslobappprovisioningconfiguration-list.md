@@ -3,12 +3,13 @@ title: Lista iosLobAppProvisioningConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos iosLobAppProvisioningConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8c61c5eba8b9bdb9654d573fbdf90e20bd8ff7cf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a128c77d4371cefbd8a7945da793f4ed601d65f5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892453"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919586"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Lista iosLobAppProvisioningConfigurations
 

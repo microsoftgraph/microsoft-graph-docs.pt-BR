@@ -3,12 +3,13 @@ title: Excluir usuário
 description: Exclui usuário.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cc1979284cada76f76a98acc8956271b7224aa53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3bb78ef11b67ba2a4d0c5f8ab9b15c65ad2ec26f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837832"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961523"
 ---
 # <a name="delete-user"></a>Excluir usuário
 

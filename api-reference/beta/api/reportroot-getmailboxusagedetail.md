@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageDetail'
 description: Obtenha dados sobre o uso da caixa de correio.
 localization_priority: Normal
-ms.openlocfilehash: 09fbb0ce1a4c652d4e24194b36edd790b1ec63f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: de0a401fdfb96bcaf216e987c3f498edf348097c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865153"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984882"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 

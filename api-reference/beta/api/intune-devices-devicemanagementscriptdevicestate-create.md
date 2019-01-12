@@ -3,12 +3,13 @@ title: Criar deviceManagementScriptDeviceState
 description: Crie um novo objeto de deviceManagementScriptDeviceState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d4f2dcd346aaef4d71b0309f65b7f6a7005c4346
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9663be4b0079763f8b0055bd68c9ccbc9c833fa5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874253"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963903"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Criar deviceManagementScriptDeviceState
 

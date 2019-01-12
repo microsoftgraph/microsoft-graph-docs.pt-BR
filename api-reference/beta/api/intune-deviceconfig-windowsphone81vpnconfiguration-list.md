@@ -3,12 +3,13 @@ title: Lista windowsPhone81VpnConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a25937c9b4f98a9fa54de4459b9e8228db1b23e3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 99ec97ab7edb6442050a9d5b395ebc6f0b83b66e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958548"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>Lista windowsPhone81VpnConfigurations
 

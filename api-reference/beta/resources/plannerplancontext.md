@@ -2,12 +2,14 @@
 title: tipo de recurso de plannerPlanContext
 description: O recurso de **plannerPlanContext** representa a relação entre um plannerPlan a uma experiência de usuário fora do planejador. Planos no planejador podem ser exibidos em outras experiências, como Teams da Microsoft, para controlar o trabalho no contexto dessa experiência.
 localization_priority: Normal
-ms.openlocfilehash: fb86dc2e6fb16fe4e8c2a77d52b3a03f94a1d08a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: e118e32ea74332f0d8d0f958f7c55cd9980acb8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820976"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962888"
 ---
 # <a name="plannerplancontext-resource-type"></a>tipo de recurso de plannerPlanContext
 

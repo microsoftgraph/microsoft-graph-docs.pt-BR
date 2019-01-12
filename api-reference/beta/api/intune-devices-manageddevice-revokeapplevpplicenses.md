@@ -3,12 +3,13 @@ title: ação de revokeAppleVppLicenses
 description: Revogar todas as licenças do Apple Vpp para um dispositivo
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 790147376b60708292ff4aaa542876f0ba1b44ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2329482588ff7f54444187527134586318a0ae5e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812127"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960684"
 ---
 # <a name="revokeapplevpplicenses-action"></a>ação de revokeAppleVppLicenses
 

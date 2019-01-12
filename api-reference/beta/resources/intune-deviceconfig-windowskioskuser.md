@@ -3,12 +3,13 @@ title: tipo de recurso de windowsKioskUser
 description: A classe de base do usuário usada para identificar as informações de conta para a configuração de quiosque
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5dade4885d2d39089ddf4888227280a1abfbba86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7fdffb3c3204a16c9a841eb8a27a43c3ad51f7cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805961"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974641"
 ---
 # <a name="windowskioskuser-resource-type"></a>tipo de recurso de windowsKioskUser
 

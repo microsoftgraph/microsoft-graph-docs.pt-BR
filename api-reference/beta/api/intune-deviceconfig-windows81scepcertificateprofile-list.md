@@ -3,12 +3,13 @@ title: Lista windows81SCEPCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos windows81SCEPCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4e63efa3730f75a7c7d48fc2d7a2855e6078d2fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a54ec322735d8e8519f8feb0766be6370251f179
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958289"
 ---
 # <a name="list-windows81scepcertificateprofiles"></a>Lista windows81SCEPCertificateProfiles
 

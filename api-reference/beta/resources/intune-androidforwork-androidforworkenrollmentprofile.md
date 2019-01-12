@@ -2,12 +2,14 @@
 title: Tipo de recurso androidForWorkEnrollmentProfile
 description: Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento de Nuvem do Google.
 localization_priority: Normal
-ms.openlocfilehash: a10e3a153cc21837ab015ab0c08e8c8b6ee0ac9b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: fbb497bbf56aaa830f2932a31e39ef61981ae2dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890969"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957575"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Tipo de recurso androidForWorkEnrollmentProfile
 

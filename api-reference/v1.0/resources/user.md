@@ -2,12 +2,14 @@
 title: tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
 author: dkershaw10
-ms.openlocfilehash: 65d113ef86159ebc45160f2caa31fa51c9aa7571
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27312478"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964456"
 ---
 # <a name="user-resource-type"></a>tipo de recurso de usuário
 
@@ -69,15 +71,15 @@ Esse recurso permite:
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
-|ageGroup|String|Define o grupo de idade do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações. |
+|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
+|ageGroup|Cadeia de caracteres|Define o grupo de idade do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado. Oferece suporte a $filter.|
 |companyName | String | O nome da empresa em que o usuário está associado. Somente leitura. |
-|consentProvidedForMinor|String|Define se o consentimento tiver sido obtido aos menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações.|
+|consentProvidedForMinor|Cadeia de caracteres|Define se o consentimento tiver sido obtido aos menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações.|
 |country|String|País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
 |createdDateTime | DateTimeOffset |A data de criação do objeto de usuário. |
 |departamento|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
@@ -95,20 +97,20 @@ Esse recurso permite:
 |mobilePhone|String|O número de celular principal do usuário.|
 |mySite|String|A URL do site pessoal do usuário.|
 |officeLocation|String|A localização do escritório no local de trabalho do usuário.|
-|onPremisesDomainName|String| Contém o local `domainFQDN`, também chamada Nome_de_domínio_dns sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
+|onPremisesDomainName|Cadeia de caracteres| Contém o local `domainFQDN`, também chamada Nome_de_domínio_dns sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais são não selecionável nem filtráveis. Para uma `onPremisesSyncEnabled` usuário, esse conjunto de propriedades mastered local e é somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é false), essas propriedades podem ser definida durante a criação ou atualização. |
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local para seus objetos de usuário do Windows Azure AD. Esta propriedade deve ser especificada ao criar uma nova conta de usuário no gráfico, se você estiver usando um domínio federado para a propriedade de **userPrincipalName** (UPN) do usuário. **Importante:** O **$** e **\_** caracteres não podem ser usados ao especificar essa propriedade. Oferece suporte a $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
 |onPremisesProvisioningErrors|coleção [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
-|onPremisesSamAccountName|String| Contém o local `samAccountName` sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
+|onPremisesSamAccountName|Cadeia de caracteres| Contém o local `samAccountName` sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
-|onPremisesUserPrincipalName|String| Contém o local `userPrincipalName` sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
+|onPremisesUserPrincipalName|Cadeia de caracteres| Contém o local `userPrincipalName` sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
-|preferredDataLocation|String|A localização de dados preferida para o usuário. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredDataLocation|Cadeia de caracteres|A localização de dados preferida para o usuário. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
 |provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |

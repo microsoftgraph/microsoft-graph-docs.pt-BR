@@ -3,12 +3,13 @@ title: tipo de recurso de androidForWorkWiFiConfiguration
 description: Fornecendo as configurações neste perfil, você poderá instruir o Android para o dispositivo de trabalho para se conectar ao ponto de extremidade Wi-Fi desejado. Especificando os tipos de segurança e o método de autenticação esperado pelo ponto de extremidade Wi-Fi que você pode fazer a conexão Wi-Fi perfeita para usuário final. Esse perfil fornece tipos de segurança limitado e mais simples que perfil corporativa Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9c24e1b271d2f57955cf8595fbe58a0efff5f92f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3df66b26f948e149c7a7395a38eb4bd727bbd97f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868996"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967795"
 ---
 # <a name="androidforworkwificonfiguration-resource-type"></a>tipo de recurso de androidForWorkWiFiConfiguration
 

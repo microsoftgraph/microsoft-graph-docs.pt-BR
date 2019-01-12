@@ -2,12 +2,14 @@
 title: Listar grupos
 description: Lista todos os grupos disponíveis em uma organização, incluindo, mas não limitando-se a, grupos do Office 365.
 localization_priority: Priority
-ms.openlocfilehash: dd243d1f07b98564bb5aa4751664337c0f0654cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 504ee61bcf246362332cec2382048aa1c5e91d75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813269"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916506"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -30,7 +32,7 @@ Para retornar os grupos que contêm membros com erros de licença, use o parâme
 ```http 
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true 
 ```
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

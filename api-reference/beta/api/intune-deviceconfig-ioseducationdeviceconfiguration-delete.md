@@ -3,12 +3,13 @@ title: Excluir iosEducationDeviceConfiguration
 description: Exclui um iosEducationDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 452a5798b745220e3e5144adfc2d0f9b7daad926
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 19c0b017e8ce1e56aa9395b387bd15161523e674
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806983"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967732"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>Excluir iosEducationDeviceConfiguration
 

@@ -3,12 +3,13 @@ title: Criar deviceManagementScript
 description: Crie um novo objeto de deviceManagementScript.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4a9f62c4e67b73dd5dc37e6cd5c46c2e6a4ad396
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3ef3f9436de79b5839912a44915238267f0c26dd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838028"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924024"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
@@ -48,16 +49,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o script de gerenciamento de dispositivo.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
-|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
+|id|String|Identificador exclusivo para o script de gerenciamento de dispositivo.|
+|displayName|String|Nome do script de gerenciamento de dispositivo.|
+|description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de script a ser executado. Se não definido o script será executado uma vez|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e hora em que o script de gerenciamento do dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação o script de gerenciamento de dispositivo.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que do script de gerenciamento de dispositivo é executado. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indica se a assinatura de script precisa ser verificada.|
-|fileName|Cadeia de caracteres|Nome do arquivo de script.|
+|fileName|String|Nome do arquivo de script.|
 
 
 

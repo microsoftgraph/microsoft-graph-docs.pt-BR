@@ -3,12 +3,13 @@ title: Lista windowsPhone81StoreApps
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81StoreApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2db06e073229255de104df9733c8935180999d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 499f045159fe0364d0bef6843307df8db8cf20be
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813310"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920157"
 ---
 # <a name="list-windowsphone81storeapps"></a>Lista windowsPhone81StoreApps
 

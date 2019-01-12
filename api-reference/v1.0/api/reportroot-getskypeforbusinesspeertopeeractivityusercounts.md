@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts'
 description: Obtenha tendências de uso do número de usuários únicos e o tipo de sessões ponto a ponto realizadas em sua organização. Os tipos de sessões incluem mensagens instantâneas, áudio, vídeo, compartilhamento de aplicativos e transferência de arquivos em sessões ponto a ponto.
 localization_priority: Normal
-ms.openlocfilehash: 84402088f6b5557520e1a12888afa2060c01035c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: a916e4c0d013f0961dd8e8e4e6daa477ef1bc788
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916366"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityusercounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 

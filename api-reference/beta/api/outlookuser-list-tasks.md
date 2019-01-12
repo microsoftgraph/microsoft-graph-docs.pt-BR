@@ -2,12 +2,14 @@
 title: Listar tarefas
 description: Obtenha todas as tarefas do Outlook na caixa de correio do usuário.
 localization_priority: Normal
-ms.openlocfilehash: e3d0753d639d4051ed03cbebf131e931a58fab30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: b39882dfcb4f6fa8eb9af679fb303605be4e0ded
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877914"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920195"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -17,7 +19,7 @@ Obtenha todas as tarefas do Outlook na caixa de correio do usuário.
 
 Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC. Ver um [exemplo](outlooktask-get.md#example-2) para obter uma única tarefa. Você pode aplicar o cabeçalho da mesma forma para obter várias tarefas. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

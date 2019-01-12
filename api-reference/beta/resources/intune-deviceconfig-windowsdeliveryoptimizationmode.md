@@ -3,12 +3,13 @@ title: tipo de enum windowsDeliveryOptimizationMode
 description: Modo de otimização de entrega para distribuição de ponto
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e62416328e596737c36d920d6877773c905680c5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 004bb3d3984d8d304f89dc339899035d218546a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972653"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enum windowsDeliveryOptimizationMode
 

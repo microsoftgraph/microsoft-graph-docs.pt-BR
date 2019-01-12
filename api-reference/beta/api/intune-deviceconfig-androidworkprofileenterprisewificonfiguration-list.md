@@ -3,12 +3,13 @@ title: Lista androidWorkProfileEnterpriseWiFiConfigurations
 description: Lista as propriedades e os relacionamentos dos objetos androidWorkProfileEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 394134d2a94c4126a0b2d63992c1f506132acb85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2bcedd7040a879ecfb9b21698c4849a4f7d5da5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817126"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919558"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>Lista androidWorkProfileEnterpriseWiFiConfigurations
 

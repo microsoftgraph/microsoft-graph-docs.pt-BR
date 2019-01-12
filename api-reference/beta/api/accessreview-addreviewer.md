@@ -2,12 +2,14 @@
 title: Adicionar Revisor accessReview
 description: 'No recurso de avaliações de acesso do Azure AD, atualize um objeto accessReview existente para adicionar outro usuário como um revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso onde os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do access no qual os usuários revisam sua próprias acesso e não foi projetada para uma revisão de acesso na qual os proprietários do grupo são atribuídos como os revisores. '
 localization_priority: Normal
-ms.openlocfilehash: ab339a6538fc41d7e538c51251302c5e589367f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a7745cf6424f3aa8b9bca16f4db961801d203431
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838763"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956861"
 ---
 # <a name="add-accessreview-reviewer"></a>Adicionar Revisor accessReview
 

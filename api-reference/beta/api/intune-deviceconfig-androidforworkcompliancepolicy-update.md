@@ -3,12 +3,13 @@ title: Atualizar androidForWorkCompliancePolicy
 description: Atualize as propriedades de um objeto androidForWorkCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b02e7f54d5281478c2489dd86eb4f2d25f27fc7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c42dc997934dbc091eb632c79da803df7f49b377
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812730"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973738"
 ---
 # <a name="update-androidforworkcompliancepolicy"></a>Atualizar androidForWorkCompliancePolicy
 

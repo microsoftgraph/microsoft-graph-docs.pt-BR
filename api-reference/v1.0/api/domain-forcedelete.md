@@ -3,12 +3,13 @@ title: Força a exclusão de domínio
 description: Exclui um domínio usando uma operação de longa execução assíncrona.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 22ad640195fa9b14e0407a479438bf618d8f19c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831350"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918424"
 ---
 # <a name="force-domain-deletion"></a>Força a exclusão de domínio
 
@@ -28,7 +29,7 @@ As seguintes ações são executadas como parte dessa operação:
 
 Após a exclusão de domínio for concluído, as operações de API para o domínio excluído retornará um código de status HTTP 404. Para verificar a exclusão de um domínio, você pode executar uma operação [obter o domínio](domain-get.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

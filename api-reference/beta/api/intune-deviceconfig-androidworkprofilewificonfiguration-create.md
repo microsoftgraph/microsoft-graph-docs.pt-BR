@@ -3,12 +3,13 @@ title: Criar androidWorkProfileWiFiConfiguration
 description: Crie um novo objeto de androidWorkProfileWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5723c9ba230805856563999c92146fbc9a248ad2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3e7949c7f583c8f36a959ffd2013b260b958e6af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817368"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957841"
 ---
 # <a name="create-androidworkprofilewificonfiguration"></a>Criar androidWorkProfileWiFiConfiguration
 

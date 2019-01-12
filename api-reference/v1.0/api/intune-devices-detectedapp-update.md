@@ -3,12 +3,13 @@ title: Atualizar detectedApp
 description: Atualizar as propriedades de um objeto detectedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 86b8eb3bc1bac0902ce36bd763c633f06919d2fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 68572281eab1d1449a3d855ebd3e9563adb3bd46
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821928"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926544"
 ---
 # <a name="update-detectedapp"></a>Atualizar detectedApp
 
