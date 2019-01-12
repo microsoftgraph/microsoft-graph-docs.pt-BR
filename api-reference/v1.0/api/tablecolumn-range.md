@@ -3,12 +3,13 @@ title: 'TableColumn: Range'
 description: Obtém o objeto de intervalo associado a toda a coluna.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: c71b1ec11e9d134ce7332ff699532189c17c127a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6bdeba563e34f81654df27dbbd1fde1730d4e2bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814578"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961341"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 

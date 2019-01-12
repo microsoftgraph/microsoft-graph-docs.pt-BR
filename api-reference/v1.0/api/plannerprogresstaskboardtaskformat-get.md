@@ -2,12 +2,14 @@
 title: Get plannerProgressTaskBoardTaskFormat
 description: Recupere as propriedades e os relacionamentos do objeto **plannerProgressTaskBoardTaskFormat**.
 localization_priority: Normal
-ms.openlocfilehash: 46a6987903654d228bc4a8e51dc6d3b90593af3c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 828f54d43094f0cc08918321c4be51c547e3ddcc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823279"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27933726"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>Get plannerProgressTaskBoardTaskFormat
 

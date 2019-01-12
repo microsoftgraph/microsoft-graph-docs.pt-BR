@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: Obter uma lista do SharePoint
 localization_priority: Normal
-ms.openlocfilehash: f3519b707e2e1b5899cbb54b1a52350cc46136ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: f9744ec25d852359246e84c83ba3bd1dec92ff17
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856956"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927951"
 ---
 # <a name="get-metadata-for-a-list"></a>Obter metadados de uma lista
 

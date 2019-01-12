@@ -3,12 +3,13 @@ title: tipo de recurso de windows81WifiImportConfiguration
 description: " Wi-Fi Importar configuração. Configurando esse perfil, você poderá instruir dispositivos de Windows 8.1 (e posteriores) para se conectar ao ponto de extremidade Wi-Fi desejado. Conectar um dispositivo do Windows 8.1 à rede Wi-Fi desejada e extraia o XML no dispositivo para incorporar posteriormente a esse perfil Wi-Fi."
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4c567d9b82c301e262c83d69d013b459ed6a1636
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 11245d69efcc397cafa7798c3284b724e9ee2e90
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826835"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932746"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>tipo de recurso de windows81WifiImportConfiguration
 

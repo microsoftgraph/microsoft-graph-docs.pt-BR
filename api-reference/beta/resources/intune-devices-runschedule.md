@@ -3,12 +3,13 @@ title: tipo de recurso de runSchedule
 description: Execute o agendamento de um script de gerenciamento de dispositivo recorrente.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e7221424f5bc6896f1ecbbea72edf1f78b9f5221
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: da72a8df9a0a23de2d5aac1fa24c251baa9c34c7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831392"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932340"
 ---
 # <a name="runschedule-resource-type"></a>tipo de recurso de runSchedule
 

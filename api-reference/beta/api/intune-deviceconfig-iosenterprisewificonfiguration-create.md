@@ -3,12 +3,13 @@ title: Criar iosEnterpriseWiFiConfiguration
 description: Crie um novo objeto de iosEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9017873be0175f08a17641787b3f84de2e3bc160
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3108defc4d88aacde3139862642e308ce7917da5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929190"
 ---
 # <a name="create-iosenterprisewificonfiguration"></a>Criar iosEnterpriseWiFiConfiguration
 

@@ -3,12 +3,13 @@ title: tipo de recurso de androidVpnConfiguration
 description: Fornecendo as configurações neste perfil, você poderá instruir o dispositivo Android para se conectar ao ponto de extremidade VPN desejado. Especificando os tipos de segurança e o método de autenticação esperado pelo ponto de extremidade VPN que você pode fazer a conexão VPN perfeita para usuário final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3338dec188994919fb680038553355808a39b0a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 86414a355f95858bcb6f6ab67c67d5ec068e53a6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948258"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>tipo de recurso de androidVpnConfiguration
 

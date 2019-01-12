@@ -3,12 +3,13 @@ title: Obter targetedManagedAppProtection
 description: Ler propriedades e relações do objeto targetedManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 72cb465c708277c71d00b209718e4374b052c409
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bead70fec32c878b350c0b8ae65b5c0683e4dad0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828382"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930653"
 ---
 # <a name="get-targetedmanagedappprotection"></a>Obter targetedManagedAppProtection
 

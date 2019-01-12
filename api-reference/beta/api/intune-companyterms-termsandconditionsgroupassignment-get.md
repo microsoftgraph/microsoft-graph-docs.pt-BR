@@ -3,12 +3,13 @@ title: Obter termsAndConditionsGroupAssignment
 description: Leia as propriedades e os relacionamentos do objeto termsAndConditionsGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1a762bf9161585f6ec29331ebebd490c8cccd44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bc8e21b2bc5d0852934139a5dbf806c4813cbd2f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859798"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936533"
 ---
 # <a name="get-termsandconditionsgroupassignment"></a>Obter termsAndConditionsGroupAssignment
 

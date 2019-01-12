@@ -3,12 +3,13 @@ title: Tipo de recurso importedWindowsAutopilotDeviceIdentity
 description: Dispositivos importados do Windows AutoPilot.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a85c526c9e592675f9cf1db41ebb2535c2e9c981
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 14d37dcd8f976a5d2bfadcac452750093a3a5d97
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27929782"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Tipo de recurso importedWindowsAutopilotDeviceIdentity
 

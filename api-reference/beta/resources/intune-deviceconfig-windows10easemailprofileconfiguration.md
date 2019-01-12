@@ -2,12 +2,14 @@
 title: tipo de recurso de windows10EasEmailProfileConfiguration
 description: Fornecendo configurações neste perfil, você poderá instruir o cliente de email nativo (Outlook) em dispositivos Windows 10 para se comunicar com um servidor Exchange e obter email, calendário, contatos e tarefas. Além disso, você também pode especificar o quanto email para sincronização e com que frequência o dispositivo deve sincronizar.
 localization_priority: Normal
-ms.openlocfilehash: be74fa183836c271f9a86b299c03c05972eccf0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 22aef1d92aa8c58f454ed3e1c12f6c5d353fd287
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816664"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962328"
 ---
 # <a name="windows10easemailprofileconfiguration-resource-type"></a>tipo de recurso de windows10EasEmailProfileConfiguration
 

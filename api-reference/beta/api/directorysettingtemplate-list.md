@@ -2,12 +2,14 @@
 title: Lista directorySettingTemplates
 description: A definição de modelos de diretório representa um conjunto de modelos de configurações de diretório, do qual directory configurações podem ser criadas e usadas em um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
 localization_priority: Normal
-ms.openlocfilehash: 288a914da11c09cd39767a48d527510998c9be1d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 918e7072c4c4006a6853de584e994a1e5d72e14d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833324"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931017"
 ---
 # <a name="list-directorysettingtemplates"></a>Lista directorySettingTemplates
 

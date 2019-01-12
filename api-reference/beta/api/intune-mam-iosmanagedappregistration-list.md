@@ -3,12 +3,13 @@ title: Listar iosManagedAppRegistrations
 description: Lista propriedades e relações dos objetos iosManagedAppRegistration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 55dc20e62a9bd7eba87d07d99af4bbc3c6240242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5fc0b65f2521780bca08e6d5fd69ed8817f15dd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808803"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928756"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Listar iosManagedAppRegistrations
 

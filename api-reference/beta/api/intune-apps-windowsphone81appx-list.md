@@ -3,12 +3,13 @@ title: Lista windowsPhone81AppXs
 description: Lista as propriedades e os relacionamentos dos objetos windowsPhone81AppX.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b799dfcf8daf0b07bdc0f4a7ef9ffc5dc7509466
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 470a9c7feaeb133cdb02b452fb587f9e40c2eb36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864551"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939669"
 ---
 # <a name="list-windowsphone81appxs"></a>Lista windowsPhone81AppXs
 

@@ -3,12 +3,13 @@ title: Acessar deviceAndAppManagementRoleDefinition
 description: Leia as propriedades e as relações do objeto deviceAndAppManagementRoleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b36bf9ab710877194797abeb4399914229d48753
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 290bed26538b249f01b4ceb2d7efa6257e2c37bf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826177"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938710"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Acessar deviceAndAppManagementRoleDefinition
 

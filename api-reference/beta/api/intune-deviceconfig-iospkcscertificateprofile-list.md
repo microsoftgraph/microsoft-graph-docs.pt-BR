@@ -3,12 +3,13 @@ title: Lista iosPkcsCertificateProfiles
 description: Lista as propriedades e os relacionamentos dos objetos iosPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8483d7edcf2acc3b97591e941eb4d254f3642d77
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 43a189dc82a0de55ef8aac3eb4e568edceb700c9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842844"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955048"
 ---
 # <a name="list-iospkcscertificateprofiles"></a>Lista iosPkcsCertificateProfiles
 

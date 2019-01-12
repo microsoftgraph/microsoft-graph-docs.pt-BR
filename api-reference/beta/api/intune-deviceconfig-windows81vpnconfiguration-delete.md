@@ -3,12 +3,13 @@ title: Excluir windows81VpnConfiguration
 description: Exclui um windows81VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b86a70992740354cee066ec63e9fe0f73cfd3b13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 48cae3917aa654d73168761cb34cea65e7defa40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831938"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964904"
 ---
 # <a name="delete-windows81vpnconfiguration"></a>Excluir windows81VpnConfiguration
 

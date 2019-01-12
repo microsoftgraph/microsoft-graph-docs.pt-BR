@@ -3,12 +3,13 @@ title: Atualizar macOSCompliancePolicy
 description: Atualiza as propriedades de um objeto macOSCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93bf199d9024ebadd9a8960d53d9185a3dadd10c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 63484fddcba470d2534c54fa0b2d70e855f43df7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852238"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938843"
 ---
 # <a name="update-macoscompliancepolicy"></a>Atualizar macOSCompliancePolicy
 

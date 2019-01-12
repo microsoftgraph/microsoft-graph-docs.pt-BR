@@ -3,12 +3,13 @@ title: Excluir macOSEnterpriseWiFiConfiguration
 description: Exclui um macOSEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e4a562ae02263e3af7f15a9da42bbf925023edeb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 398a9d6c022040b48286f6189a329906ef573944
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878306"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954411"
 ---
 # <a name="delete-macosenterprisewificonfiguration"></a>Excluir macOSEnterpriseWiFiConfiguration
 

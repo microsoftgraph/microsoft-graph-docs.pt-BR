@@ -2,12 +2,14 @@
 title: tipo de recurso de bookingAppointment
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: aed5f26d69835c69021e8c3c8c5e27f5180d6c69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 0314c8a4d451625c2ee1df332c342c1871a098ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856109"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934090"
 ---
 # <a name="bookingappointment-resource-type"></a>tipo de recurso de bookingAppointment
 

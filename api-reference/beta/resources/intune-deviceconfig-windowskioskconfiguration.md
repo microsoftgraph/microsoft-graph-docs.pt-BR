@@ -2,12 +2,14 @@
 title: tipo de recurso de windowsKioskConfiguration
 description: Esta entidade fornece descrições dos declarado métodos, propriedades e os relacionamentos expostos pelo recurso de quiosque.
 localization_priority: Normal
-ms.openlocfilehash: b7ebcabeda93a6a58b21e110cd8ee6ac79452b25
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 2eecf86346af0d0f029b800347eb7a3ba08f4e19
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876714"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937933"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>tipo de recurso de windowsKioskConfiguration
 

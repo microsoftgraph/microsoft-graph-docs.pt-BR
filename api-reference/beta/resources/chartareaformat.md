@@ -3,12 +3,13 @@ title: Tipo de recurso ChartAreaFormat
 description: Abrange as propriedades de formatação da área geral do gráfico.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 87c3bd41bb022880a2468b459c6332aba00d20d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: b536bc1ef7b5ea7c3e7c5ac92be79aecd5e27c53
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852980"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938115"
 ---
 # <a name="chartareaformat-resource-type"></a>Tipo de recurso ChartAreaFormat
 

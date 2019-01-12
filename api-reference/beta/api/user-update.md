@@ -3,12 +3,13 @@ title: Atualizar usuário
 description: Atualize as propriedades de um objeto user.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 5bccf297bb26a6d6bcea9a8c2f82f7853a6afd83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 00efdeed6fdb85aeccde5fae63e813b8b5e65961
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807326"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939109"
 ---
 # <a name="update-user"></a>Atualizar usuário
 

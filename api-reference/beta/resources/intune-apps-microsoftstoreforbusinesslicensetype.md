@@ -3,12 +3,13 @@ title: tipo de enum microsoftStoreForBusinessLicenseType
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 632748db6c33bdb30759cee66894e621ced7cf24
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b7320a45ab9533912d4708f90aab6bfd94f87d31
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894122"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939221"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>tipo de enum microsoftStoreForBusinessLicenseType
 

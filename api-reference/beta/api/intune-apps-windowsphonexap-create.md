@@ -3,12 +3,13 @@ title: Criar windowsPhoneXAP
 description: Crie um novo objeto de windowsPhoneXAP.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b219870d1d3539ee9b29b221af45fc38210c777e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7ff4f085a79cf16ae724df045cd6140161945a57
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808824"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939788"
 ---
 # <a name="create-windowsphonexap"></a>Criar windowsPhoneXAP
 

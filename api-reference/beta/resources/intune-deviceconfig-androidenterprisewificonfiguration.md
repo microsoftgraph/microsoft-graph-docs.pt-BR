@@ -3,12 +3,13 @@ title: tipo de recurso de androidEnterpriseWiFiConfiguration
 description: Fornecendo as configurações neste perfil, você poderá instruir o dispositivo Android para se conectar ao ponto de extremidade Wi-Fi desejado. Especificando os tipos de segurança e o método de autenticação esperado pelo ponto de extremidade Wi-Fi que você pode fazer a conexão Wi-Fi perfeita para usuário final.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bdb2fd80c37ef7662801473bea53c1af6fbac363
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 53751acedb869b3a796c11634dab99b76b967986
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805898"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919474"
 ---
 # <a name="androidenterprisewificonfiguration-resource-type"></a>tipo de recurso de androidEnterpriseWiFiConfiguration
 

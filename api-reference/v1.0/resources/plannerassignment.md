@@ -2,12 +2,14 @@
 title: Tipo de recurso plannerAssignment
 description: O recurso de **plannerAssignment** representa a atribuição de uma tarefa a um usuário. Esse tipo é usado em plannerAssignments do tipo aberto.
 localization_priority: Normal
-ms.openlocfilehash: a2766653fdd7fe29c40529e77bbff2c72e8e6be7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d4be0d001d3dcfb5d65e25a1e9cbd61e5212383f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934643"
 ---
 # <a name="plannerassignment-resource-type"></a>Tipo de recurso plannerAssignment
 

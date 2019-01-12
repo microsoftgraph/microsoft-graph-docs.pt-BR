@@ -3,12 +3,13 @@ title: Obter windows10NetworkBoundaryConfiguration
 description: Leia as propriedades e os relacionamentos do objeto windows10NetworkBoundaryConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1e0c5a32b430a406e753f67d0797fca401d04bc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e99faa1c725111e0040c443751f8c4c461d18310
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841514"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27931703"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Obter windows10NetworkBoundaryConfiguration
 

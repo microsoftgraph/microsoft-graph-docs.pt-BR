@@ -3,12 +3,13 @@ title: Tipo de recurso macOSCompliancePolicy
 description: Essa classe contém configurações de conformidade para o Mac OS.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93fa2f617a22a63524572193cb02fbb1e370e17e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 370dc743e31629e9625bd11c6df038fcb93ee84d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810987"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961901"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Tipo de recurso macOSCompliancePolicy
 

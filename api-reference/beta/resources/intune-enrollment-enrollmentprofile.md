@@ -2,12 +2,14 @@
 title: tipo de recurso de enrollmentProfile
 description: O recurso de enrollmentProfile representa uma coleção de configurações que devem ser fornecidas a inscrição prévia para habilitar inscrevendo determinados dispositivos cujas identidades foram pré-configurados. As identidades de dispositivo pré-configurados são atribuídas a esse tipo de perfil para aplicar as configurações do perfil no registro do dispositivo correspondente.
 localization_priority: Normal
-ms.openlocfilehash: 43aa6f5f3e8093da0c066012d763e5f0f6455da6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b88745c060e71e32199a96b23f94fa0d3229d451
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894303"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935588"
 ---
 # <a name="enrollmentprofile-resource-type"></a>tipo de recurso de enrollmentProfile
 

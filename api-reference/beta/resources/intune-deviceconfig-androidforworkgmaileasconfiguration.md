@@ -2,12 +2,14 @@
 title: tipo de recurso de androidForWorkGmailEasConfiguration
 description: Fornecendo configurações neste perfil, você poderá instruir o cliente de email do Gmail em dispositivos Android para trabalho para se comunicar com um servidor Exchange e obter email, calendário, contatos, tarefas e anotações. Além disso, você também pode especificar o quanto email para sincronização e com que frequência o dispositivo deve sincronizar.
 localization_priority: Normal
-ms.openlocfilehash: e912ad1db2aaff82333c69f7fede37d4f16bf0e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: f974da3c84a0db18517b7d9210623f631c30c037
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928629"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>tipo de recurso de androidForWorkGmailEasConfiguration
 

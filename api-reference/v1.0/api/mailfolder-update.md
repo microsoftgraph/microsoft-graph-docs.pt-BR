@@ -2,12 +2,14 @@
 title: Atualizar mailfolder
 description: Atualizar as propriedades do objeto de mailfolder.
 author: angelgolfer-ms
-ms.openlocfilehash: 2c740d72557204d01abea4e2582467c740295197
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: outlook
+ms.openlocfilehash: 849b5e99f96b3ca891ef719e6ae45e8a2bcdd372
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27315047"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27938647"
 ---
 # <a name="update-mailfolder"></a>Atualizar mailfolder
 
@@ -38,7 +40,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|O nome de exibição da mailFolder.|
+|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
 
 ## <a name="response"></a>Resposta
 

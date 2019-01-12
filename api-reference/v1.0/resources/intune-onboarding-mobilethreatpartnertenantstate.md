@@ -3,12 +3,13 @@ title: tipo de enum mobileThreatPartnerTenantState
 description: Estado de parceiro deste locatário.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3d93ca54d32a5e34132442f206a269430b5ab3ef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 195fe8fcfac70bc0e98a0ac2f94c28a63b5c9983
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846190"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27937450"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enum mobileThreatPartnerTenantState
 

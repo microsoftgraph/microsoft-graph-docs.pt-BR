@@ -3,12 +3,13 @@ title: 'domínio: forceDelete'
 description: Exclui um domínio usando uma operação assíncrona.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: e90b960bc2e2ff63068b1d91029371044075be27
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6c3d942352a0db20d6e46a4b00686ad948bd6798
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838056"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965121"
 ---
 # <a name="domain-forcedelete"></a>domínio: forceDelete
 

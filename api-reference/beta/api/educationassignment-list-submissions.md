@@ -3,12 +3,13 @@ title: Envios de lista
 description: Liste todos os envios associados a essa atribuição. Um professor pode obter todos os envios enquanto um estudante só pode obter envios que eles estão associados.
 author: dipakboyed
 localization_priority: Normal
-ms.openlocfilehash: 0b807a1b19bdb47e3b184ffdce4a15b38740c574
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 2a4de863b69de420e89a9272e532fa889486fc22
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883205"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915183"
 ---
 # <a name="list-submissions"></a>Envios de lista
 
