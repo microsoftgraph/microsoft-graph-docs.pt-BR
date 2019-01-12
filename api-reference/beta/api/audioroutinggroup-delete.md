@@ -3,50 +3,51 @@ title: Excluir um grupo de roteamento de áudio
 description: Exclua o grupo de roteamento de áudio especificado.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: e8c5d28d2bdb620dc32e5c31d6926ed8b9e1c34e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 40d995b088b63a4b8412c0e046e78621c1561b4d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936806"
 ---
-# <a name="delete-audio-routing-group"></a><span data-ttu-id="e320d-103">Excluir um grupo de roteamento de áudio</span><span class="sxs-lookup"><span data-stu-id="e320d-103">Delete audio routing group</span></span>
+# <a name="delete-audio-routing-group"></a><span data-ttu-id="86790-103">Excluir um grupo de roteamento de áudio</span><span class="sxs-lookup"><span data-stu-id="86790-103">Delete audio routing group</span></span>
 
-> <span data-ttu-id="e320d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="e320d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e320d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e320d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="86790-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="86790-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="86790-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="86790-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="e320d-106">Exclua o especificado [audioRoutingGroup](../resources/audioroutinggroup.md).</span><span class="sxs-lookup"><span data-stu-id="e320d-106">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
+<span data-ttu-id="86790-106">Exclua o especificado [audioRoutingGroup](../resources/audioroutinggroup.md).</span><span class="sxs-lookup"><span data-stu-id="86790-106">Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e320d-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="e320d-107">Permissions</span></span>
-<span data-ttu-id="e320d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e320d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="86790-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="86790-107">Permissions</span></span>
+<span data-ttu-id="86790-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="86790-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="e320d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e320d-110">Permission type</span></span> | <span data-ttu-id="e320d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e320d-111">Permissions (from least to most privileged)</span></span>  |
+| <span data-ttu-id="86790-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="86790-110">Permission type</span></span> | <span data-ttu-id="86790-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="86790-111">Permissions (from least to most privileged)</span></span>  |
 | :-------------- | :------------------------------------------- |
-| <span data-ttu-id="e320d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e320d-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e320d-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="e320d-113">Not Supported</span></span>        |
-| <span data-ttu-id="e320d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e320d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e320d-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="e320d-115">Not Supported</span></span>        |
-| <span data-ttu-id="e320d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e320d-116">Application</span></span>     | <span data-ttu-id="e320d-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="e320d-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="86790-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="86790-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="86790-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="86790-113">Not Supported</span></span>        |
+| <span data-ttu-id="86790-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="86790-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="86790-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="86790-115">Not Supported</span></span>        |
+| <span data-ttu-id="86790-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="86790-116">Application</span></span>     | <span data-ttu-id="86790-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="86790-117">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e320d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e320d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="86790-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="86790-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
 DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e320d-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e320d-119">Request headers</span></span>
-| <span data-ttu-id="e320d-120">Nome</span><span class="sxs-lookup"><span data-stu-id="e320d-120">Name</span></span>          | <span data-ttu-id="e320d-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="e320d-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="86790-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="86790-119">Request headers</span></span>
+| <span data-ttu-id="86790-120">Nome</span><span class="sxs-lookup"><span data-stu-id="86790-120">Name</span></span>          | <span data-ttu-id="86790-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="86790-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="e320d-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="e320d-122">Authorization</span></span> | <span data-ttu-id="e320d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e320d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="86790-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="86790-122">Authorization</span></span> | <span data-ttu-id="86790-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="86790-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e320d-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e320d-125">Request body</span></span>
-<span data-ttu-id="e320d-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e320d-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="86790-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="86790-125">Request body</span></span>
+<span data-ttu-id="86790-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="86790-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e320d-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="e320d-127">Response</span></span>
-<span data-ttu-id="e320d-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e320d-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="86790-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="86790-127">Response</span></span>
+<span data-ttu-id="86790-p104">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="86790-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e320d-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e320d-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="86790-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="86790-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e320d-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e320d-131">Request</span></span>
-<span data-ttu-id="e320d-132">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e320d-132">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="86790-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="86790-131">Request</span></span>
+<span data-ttu-id="86790-132">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="86790-132">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -56,9 +57,9 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
-##### <a name="response"></a><span data-ttu-id="e320d-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="e320d-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="86790-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="86790-133">Response</span></span>
 
-> <span data-ttu-id="e320d-p105">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e320d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="86790-p105">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="86790-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

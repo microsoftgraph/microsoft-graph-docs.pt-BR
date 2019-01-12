@@ -2,50 +2,52 @@
 title: Obter um modelo de configuração de grupo
 description: Um modelo de configuração de grupo representa um modelo de configurações pelo qual as configurações podem ser criadas dentro de um locatário. Esta operação permite recuperação das propriedades do objeto groupSettingTemplate, inclusive as configurações disponíveis e seus padrões.
 localization_priority: Normal
-ms.openlocfilehash: 17e385c564337fcaa1255685e2b5808caec5cba4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ed817747f947f3f8ef7d71d235a40e4237039db1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804995"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934300"
 ---
-# <a name="get-a-group-setting-template"></a><span data-ttu-id="97807-104">Obter um modelo de configuração de grupo</span><span class="sxs-lookup"><span data-stu-id="97807-104">Get a group setting template</span></span>
+# <a name="get-a-group-setting-template"></a><span data-ttu-id="3b655-104">Obter um modelo de configuração de grupo</span><span class="sxs-lookup"><span data-stu-id="3b655-104">Get a group setting template</span></span>
 
-<span data-ttu-id="97807-p102">Um modelo de configuração de grupo representa um modelo de configurações pelo qual as configurações podem ser criadas dentro de um locatário. Esta operação permite recuperação das propriedades do objeto [groupSettingTemplate](../resources/groupsettingtemplate.md), inclusive as configurações disponíveis e seus padrões.</span><span class="sxs-lookup"><span data-stu-id="97807-p102">A group setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the [groupSettingTemplate](../resources/groupsettingtemplate.md) object, including the available settings and their defaults.</span></span>
+<span data-ttu-id="3b655-p102">Um modelo de configuração de grupo representa um modelo de configurações pelo qual as configurações podem ser criadas dentro de um locatário. Esta operação permite recuperação das propriedades do objeto [groupSettingTemplate](../resources/groupsettingtemplate.md), inclusive as configurações disponíveis e seus padrões.</span><span class="sxs-lookup"><span data-stu-id="3b655-p102">A group setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the [groupSettingTemplate](../resources/groupsettingtemplate.md) object, including the available settings and their defaults.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="97807-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="97807-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3b655-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="3b655-107">Permissions</span></span>
 
-<span data-ttu-id="97807-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97807-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3b655-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b655-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="97807-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="97807-110">Permission type</span></span>      | <span data-ttu-id="97807-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="97807-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3b655-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b655-110">Permission type</span></span>      | <span data-ttu-id="3b655-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3b655-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97807-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="97807-112">Delegated (work or school account)</span></span> | <span data-ttu-id="97807-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="97807-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="97807-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97807-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97807-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97807-115">Not supported.</span></span>    |
-|<span data-ttu-id="97807-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="97807-116">Application</span></span> | <span data-ttu-id="97807-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97807-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="3b655-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b655-112">Delegated (work or school account)</span></span> | <span data-ttu-id="3b655-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3b655-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3b655-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b655-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b655-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b655-115">Not supported.</span></span>    |
+|<span data-ttu-id="3b655-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3b655-116">Application</span></span> | <span data-ttu-id="3b655-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b655-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="97807-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="97807-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b655-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b655-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groupSettingTemplates/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="97807-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="97807-119">Optional query parameters</span></span>
-<span data-ttu-id="97807-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="97807-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3b655-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3b655-119">Optional query parameters</span></span>
+<span data-ttu-id="3b655-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3b655-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="97807-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="97807-121">Request headers</span></span>
-| <span data-ttu-id="97807-122">Nome</span><span class="sxs-lookup"><span data-stu-id="97807-122">Name</span></span> | <span data-ttu-id="97807-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="97807-123">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="3b655-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3b655-121">Request headers</span></span>
+| <span data-ttu-id="3b655-122">Nome</span><span class="sxs-lookup"><span data-stu-id="3b655-122">Name</span></span> | <span data-ttu-id="3b655-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="3b655-123">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="97807-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="97807-124">Authorization</span></span> | <span data-ttu-id="97807-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="97807-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3b655-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="3b655-124">Authorization</span></span> | <span data-ttu-id="3b655-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3b655-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="97807-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="97807-127">Request body</span></span>
-<span data-ttu-id="97807-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="97807-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3b655-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3b655-127">Request body</span></span>
+<span data-ttu-id="3b655-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3b655-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="97807-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="97807-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3b655-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b655-129">Response</span></span>
 
-<span data-ttu-id="97807-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [groupSettingTemplate](../resources/groupsettingtemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="97807-130">If successful, this method returns a `200 OK` response code and [groupSettingTemplate](../resources/groupsettingtemplate.md) object in the response body.</span></span>
+<span data-ttu-id="3b655-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [groupSettingTemplate](../resources/groupsettingtemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3b655-130">If successful, this method returns a `200 OK` response code and [groupSettingTemplate](../resources/groupsettingtemplate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="97807-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="97807-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="97807-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97807-132">Request</span></span>
+## <a name="example"></a><span data-ttu-id="3b655-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3b655-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3b655-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b655-132">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_groupsettingtemplate"
@@ -53,9 +55,9 @@ GET /groupSettingTemplates/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="97807-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="97807-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3b655-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b655-133">Response</span></span>
 
-<span data-ttu-id="97807-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="97807-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3b655-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3b655-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
