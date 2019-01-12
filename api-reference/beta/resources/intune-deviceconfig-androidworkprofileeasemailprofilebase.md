@@ -3,12 +3,13 @@ title: tipo de recurso de androidWorkProfileEasEmailProfileBase
 description: Base de dados de perfis por Email Android EAS de perfil de trabalho
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a2f496148c72b51441540d66034b81b27decdde7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d332890088eeb02a8e57b1445bd6fc571fd0d1cd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891242"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954719"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>tipo de recurso de androidWorkProfileEasEmailProfileBase
 

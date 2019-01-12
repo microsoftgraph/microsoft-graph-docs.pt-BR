@@ -3,12 +3,13 @@ title: 'WorksheetProtection: unprotect'
 description: Desprotege uma planilha.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 52feaf77964949fee9bbedbf3ced2967226bb486
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e80c98123f8fefebfe0f57ded1acb27c475c6633
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850516"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952759"
 ---
 # <a name="worksheetprotection-unprotect"></a>WorksheetProtection: unprotect
 

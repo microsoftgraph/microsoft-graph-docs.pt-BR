@@ -3,12 +3,13 @@ title: androidLobApp resource type
 description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 16ae8d15f2262dffc45ad7a8b1db129418d035ad
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f12af09806e19ae99a898d9e7f933af947d6a850
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888733"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950911"
 ---
 # <a name="androidlobapp-resource-type"></a>androidLobApp resource type
 

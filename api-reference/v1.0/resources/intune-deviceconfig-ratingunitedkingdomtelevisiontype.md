@@ -3,12 +3,13 @@ title: tipo de enum ratingUnitedKingdomTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Reino Unido
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e1dfe0a089df3bf3b500ea1199f2384aaf8a960e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 259dfa943b594994ec19ee34eb42e6f406a7103f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815705"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954971"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>tipo de enum ratingUnitedKingdomTelevisionType
 

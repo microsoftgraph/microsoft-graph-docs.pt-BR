@@ -3,12 +3,13 @@ title: Tipo de recurso ChartDataLabels
 description: Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 7e45db4129422c32af809d46c076b2f6d82eff89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 16e2e3acafc98a4066b8620f41f15c7cae1667cc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876192"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954677"
 ---
 # <a name="chartdatalabels-resource-type"></a>Tipo de recurso ChartDataLabels
 

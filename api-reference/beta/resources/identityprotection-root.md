@@ -3,12 +3,13 @@ title: Use a proteção de identidade do Windows Azure AD API (preview)
 description: Você pode usar o Microsoft Graph para consultar o recurso de identityRiskEvent para cada tipo de evento de risco detectado pelo proteção de identidade do Windows Azure AD. Esses eventos estão disponíveis para clientes com o Windows Azure AD Premium P2. Um subconjunto de eventos está disponível para clientes com o Windows Azure AD Premium P1.
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: 8ae87a13565f660b06179712220806f11f611d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849774"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953620"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Use a proteção de identidade do Windows Azure AD API (preview)
 

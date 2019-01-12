@@ -2,12 +2,14 @@
 title: Criar ContactFolder
 description: Crie uma nova contactFolder sob a pasta de contatos padrão do usuário.
 localization_priority: Normal
-ms.openlocfilehash: 4bd4fb26c78127fce9fff691cf187020428d9ab5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0b9cf3dfb855b261b47e1a5614eda7602a50a363
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953548"
 ---
 # <a name="create-contactfolder"></a>Criar ContactFolder
 

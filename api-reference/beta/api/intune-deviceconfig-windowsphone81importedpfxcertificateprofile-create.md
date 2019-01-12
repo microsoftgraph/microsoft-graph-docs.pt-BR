@@ -3,12 +3,13 @@ title: Criar windowsPhone81ImportedPFXCertificateProfile
 description: Crie um novo objeto de windowsPhone81ImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 23e5b52e69e15dc37f94048a2b9b309d09ec0d32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 90787a80b1698a829d26607b3666605e213d482a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852043"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950883"
 ---
 # <a name="create-windowsphone81importedpfxcertificateprofile"></a>Criar windowsPhone81ImportedPFXCertificateProfile
 

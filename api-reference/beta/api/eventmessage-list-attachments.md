@@ -3,12 +3,13 @@ title: Listar anexos
 description: Recuperar uma lista de objetos de anexo.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: b5ca42a0ee191b62ab8c5484acce41acf7d924a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5b54e26acbb08b7960693b3e5a1e531fc4c20708
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853946"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951345"
 ---
 # <a name="list-attachments"></a>Listar anexos
 

@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Obtenha uma versão anterior de um registro de lista do SharePoint
 localization_priority: Normal
-ms.openlocfilehash: fdd13b2fb5f522249157439792e95dc75f212c04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 8b8e6a1b49a5e1ab387f18fecb98212dbbc975f6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827311"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954348"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>Listar versões de um item de lista (prévia)
 

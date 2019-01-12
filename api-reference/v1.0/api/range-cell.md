@@ -2,12 +2,14 @@
 title: 'Range: Cell'
 description: Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.
 localization_priority: Normal
-ms.openlocfilehash: 3d72f78b6767dffe52e42ae210c24b9d96cc87d1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862976"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951478"
 ---
 # <a name="range-cell"></a>Range: Cell
 

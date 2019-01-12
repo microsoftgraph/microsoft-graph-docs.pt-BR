@@ -3,12 +3,13 @@ title: tipo de recurso de iosSingleSignOnSettings
 description: iOS configurações de autenticação Kerberos de single sign-on
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 17c2e100f9762334173ca6ca7049d1e5933f8616
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 54c5656de6262692324cce8ab71a0e100672c050
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841059"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27952668"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>tipo de recurso de iosSingleSignOnSettings
 

@@ -3,12 +3,13 @@ title: Lista recentPlans
 description: Recupere uma lista de plannerPlans recentemente exibidos por um usuário. Você pode atualizar planos visualizados recentemente, atualizando o recurso plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
-ms.openlocfilehash: bfc2ffff15db55c289a95223ced6cb15af0535cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: planner
+ms.openlocfilehash: eaafa89c9345f3f12cad6551e2ed76ae42a32728
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884487"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950771"
 ---
 # <a name="list-recentplans"></a>Lista recentPlans
 

@@ -2,12 +2,14 @@
 title: tipo de recurso de educationFileResource
 description: Uma subclasse de educationResource que representa um objeto de arquivo que está associado a atribuição ou o envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem manipulação especial dentro do sistema. O recurso de arquivo deve ser armazenado em **resourceFolder** que está associado a atribuição ou o envio que este recurso está anexado.
 localization_priority: Normal
-ms.openlocfilehash: 5fda86b80030a2bc0c885b4dd90a384b7ede7fff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: 96c03dc1571e0f8686116f169706aa35003f92a3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858083"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953650"
 ---
 # <a name="educationfileresource-resource-type"></a>tipo de recurso de educationFileResource
 

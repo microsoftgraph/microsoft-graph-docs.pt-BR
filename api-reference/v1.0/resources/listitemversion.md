@@ -2,12 +2,13 @@
 title: Tipo de recurso ListItemVersion
 description: O recurso **listItemVersion** representa uma versão anterior de um recurso ListItem.
 localization_priority: Normal
-ms.openlocfilehash: 41dcbeee3f098b6c156a7ddfe484ef42cca8b6d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 6e21be59b71a8f348931603c799ebbbe225e5d3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810679"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951842"
 ---
 # <a name="listitemversion-resource-type"></a>Tipo de recurso ListItemVersion
 

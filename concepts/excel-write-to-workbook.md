@@ -1,12 +1,15 @@
 ---
 title: Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
 description: q=excelstarter).
-ms.openlocfilehash: a36e44ce390f0947fbc2d5615551f17becf11b33
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Priority
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 234130a8fa56dfdc078c694069a9fe879140d27f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27091552"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954880"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
 
