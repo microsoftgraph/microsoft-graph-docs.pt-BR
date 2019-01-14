@@ -2,12 +2,14 @@
 title: Obter tokens de acesso para chamar o Microsoft Graph
 description: 'Para chamar o Microsoft Graph, seu aplicativo deve adquirir um token de acesso do Azure Active Directory (Azure AD), o serviço de identidade em nuvem da Microsoft. O token de acesso contém informações (ou declarações) sobre seu aplicativo e as permissões que ele possui para os recursos e APIs disponíveis no Microsoft Graph. Para obter um token de acesso, o aplicativo deve ser capaz de se autenticar com o Azure AD e ter a autorização de um usuário ou administrador para acessar os recursos necessários do Microsoft Graph. '
 author: jackson-woods
-ms.openlocfilehash: 2352802393d3e36c611dfab1d767e6bd76d69d8b
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d08c481ab7a42eee4cfabb8c6869225cb6d547ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334297"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27932067"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Obter tokens de acesso para chamar o Microsoft Graph
 
@@ -144,7 +146,6 @@ O Azure AD v2.0 oferece mais algumas vantagens. Por exemplo:
 Como o Azure AD v2.0 é mais recente do que o Azure AD e os recursos ainda estão sendo adicionados, existem algumas limitações no ponto de extremidade do v2.0 que você precisa incluir em sua decisão. Por exemplo:
 
 * Alguns recursos podem ainda não ser totalmente implementados na versão 2.0. Por exemplo, o aplicativo pode não funcionar caso o cliente corporativo habilite os recursos Enterprise Mobility + Security, como [acesso condicional ao dispositivo](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-device-policies).
-* Não é possível chamar o Microsoft Graph a partir de uma [API da Web autônoma](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types). 
 * Não é possível chamar aplicativos do provedor de Soluções na Nuvem.
 * A [autenticação integrada do Windows para locatários federados](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-for-work-and-school-accounts) não tem suporte. Isso significa que os usuários de locatários federados do Azure AD não podem autenticar silenciosamente com sua instância local do Active Directory. Eles terão que digitar as credenciais novamente.
 
