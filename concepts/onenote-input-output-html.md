@@ -1,13 +1,15 @@
 ---
 title: HTML de entrada e saída nas páginas do OneNote
 description: 'O HTML que define o conteúdo e a estrutura da página quando você cria ou atualiza uma página do OneNote é chamado de *HTML de entrada*. '
-author: Jewan-microsoft
-ms.openlocfilehash: e169cf17804794d5120b2e968328b06d29a0a5a1
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+author: jewan-microsoft
+localization_priority: Priority
+ms.prod: onenote
+ms.openlocfilehash: 0cc2c0994a5e4d2a45e78c055af466f1c4999de6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27351251"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981529"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>HTML de entrada e saída nas páginas do OneNote
 
