@@ -18,7 +18,7 @@ O Microsoft Graph permite que você se integre com o melhor dos serviços do Off
 
 Na parte central do Microsoft Graph estão os conceitos de usuário e de grupo. 
 
-Um _usuário_ do Microsoft Graph é uma pessoa entre milhões que usam serviços em nuvem do Microsoft 365. O ponto principal é quem é protegido e o acesso é bem gerenciado. Os dados do usuário é que orientam os negócios. Os serviços do Microsoft Graph disponibilizam esses dados para empresas em contextos sofisticados, atualizações em tempo real e insights profundos e, sempre, apenas com as permissões apropriadas.
+Um _usuário_ do Microsoft Graph é uma pessoa entre milhões que usam serviços em nuvem do Microsoft 365. Ele é o foco principal, aquele que é protegido e cujo acesso é bem gerenciado. Os dados do usuário é que orientam os negócios. Os serviços do Microsoft Graph disponibilizam esses dados para empresas em contextos sofisticados, atualizações em tempo real e insights profundos e, sempre, apenas com as permissões apropriadas.
 
 Um _grupo_ do Office 365 é a principal entidade que permite aos usuários colaborar. Ele integra-se a outros serviços possibilitando cenários mais sofisticados no planejamento de tarefas, trabalho em equipe, educação e muito mais. 
 
