@@ -4,12 +4,12 @@ description: Eventos recorrentes são uma parte importante do calendário do Out
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 27c407ccd288323866fbd6599050f0036b9d363d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961789"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016761"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Agendar compromissos repetidos como eventos recorrentes no Outlook
 
@@ -203,7 +203,7 @@ O padrão anual relativo faz com que um evento se repita no mesmo dia da semana 
 | **índice** | Opcional | Especifica em qual instância dos dias permitidos especificados em **daysOfsWeek** o evento ocorre, contando a partir da primeira instância no mês. Valores possíveis: `first`, `second`, `third`, `fourth` e `last`. Valor padrão: `first`. |
 | **Mês** | Obrigatório | Especifica em qual mês o evento ocorre. |
 | **intervalo** | Obrigatório | Especifica o número de anos entre cada ocorrência. |
-| **type** | Obrigatório | Tem que ser definida como `relativeMonthly`. |
+| **type** | Obrigatório | Tem que ser definida como `relativeYearly`. |
 
 #### <a name="examples"></a>Exemplos
 
