@@ -4,12 +4,12 @@ description: Atualize as propriedades da guia especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f7bb00fb58513c32c66f72a9ef852e799674a52e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 342026dc592dc447c85d3885b4706e5c0891ef26
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944702"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016727"
 ---
 # <a name="update-tab"></a>Guia de atualização
 
@@ -17,7 +17,7 @@ ms.locfileid: "27944702"
 
 Atualize as propriedades da [guia](../resources/teamstab.md)especificado. Isso pode ser usado para configurar o conteúdo da guia.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 

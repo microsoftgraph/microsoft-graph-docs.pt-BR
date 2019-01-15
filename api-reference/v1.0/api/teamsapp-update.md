@@ -4,12 +4,12 @@ description: 'Atualize um aplicativo publicado anteriormente para o catálogo de
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 44ca5870fd585ef7cd5aa0c0282eac42d41c1a18
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b89380a423bf01f6a2bd7e56086cc9290be094cb
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948519"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016622"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Atualizar aplicativos publicados no catálogo de aplicativos da sua organização
 
@@ -59,7 +59,7 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>Solicitação
 
 ```
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
 

@@ -4,12 +4,12 @@ description: 'Lista de aplicativos a partir do catálogo de aplicativos do Micro
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fc8648ac99a3b502956ce07d5c5b53bab930095e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a19c852b4cca08b7318ef33cdf24929e5f4c3042
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945584"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016664"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados a partir do catálogo de aplicativos do Microsoft Teams
 
@@ -17,7 +17,7 @@ ms.locfileid: "27945584"
 
 Listar os [aplicativos](../resources/teamsapp.md) do catálogo de aplicativos do Microsoft Teams. Isso inclui aplicativos do repositório de Teams da Microsoft, bem como aplicativos de catálogo de aplicativos da sua organização (o catálogo de aplicativos do inquilino). Para obter os aplicativos do catálogo de aplicativos da sua organização somente, especifique `Organization` como o **distributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
@@ -58,7 +58,7 @@ O exemplo a seguir lista todos os aplicativos que são específicos para seu loc
 
 #### <a name="request"></a>Solicitação
 ```
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
 #### <a name="response"></a>Resposta
@@ -85,7 +85,7 @@ O exemplo a seguir lista aplicativos com uma ID especificada.
 
 #### <a name="request"></a>Solicitação
 ```
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### <a name="response"></a>Resposta

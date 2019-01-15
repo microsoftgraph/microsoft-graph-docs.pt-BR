@@ -4,12 +4,12 @@ description: Restaure uma equipe arquivada. Isso restaura a capacidade dos usuá
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 36e4183f53afab6ba836bacd909b616910dc0c42
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b015be832093b0e68f304600afbc52421f654857
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982075"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016706"
 ---
 # <a name="unarchive-team"></a>Equipe de unarchive
 
@@ -19,7 +19,7 @@ Restaure uma [equipe](../resources/team.md)de arquivados. Isso restaura a capaci
 
 Unarchiving é uma operação assíncrona. Uma equipe é não arquivada depois que a operação assíncrona for concluída com êxito, que podem ocorrer na sequência de resposta dessa API.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -56,7 +56,7 @@ O exemplo a seguir é um exemplo de uma solicitação.
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/unarchive
+POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>Resposta

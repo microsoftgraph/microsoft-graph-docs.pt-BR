@@ -4,12 +4,12 @@ description: Use essa API para criar um novo usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fd62d51d86491999ef74480530042921de33a79c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cb8d8f882905141e63bf9d1710cc7b8190d93a9c
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973066"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016755"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -17,7 +17,7 @@ ms.locfileid: "27973066"
 
 Use essa API para criar um novo usuário.
 O corpo da solicitação contém o usuário crie. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar todas as outras propriedades graváveis.
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -73,7 +73,7 @@ Content-type: application/json
   "accountEnabled": true,
   "displayName": "displayName-value",
   "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value@onmicrosoft.com",
+  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"

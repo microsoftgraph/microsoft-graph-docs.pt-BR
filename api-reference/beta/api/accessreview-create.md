@@ -4,12 +4,12 @@ description: No Windows Azure AD para acessar o recurso de revisões, crie um no
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bb8db52dd3e5086ba9559ef318a94b8ac3a3918
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: de8574566a8ca1eedb1f0f55230fb91053370ccc
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942266"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016720"
 ---
 # <a name="create-accessreview"></a>Criar accessReview
 
@@ -21,7 +21,7 @@ Antes de fazer essa solicitação, o chamador deve ter anteriormente [recuperada
 
 Depois de fazer essa solicitação, o chamador deve [criar um programControl](programcontrol-create.md), para vincular a revisão de acesso a um programa.  
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -52,11 +52,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 | `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isto deve ser de pelo menos um dia mais recente do que a data de início.   |
 | `description`             |`String`                                                        | A descrição, para mostrar aos revisores. |
 | `businessFlowTemplateId`  |`String`                                                        | O identificador de modelo de fluxo corporativos, obtido de uma [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | O tipo de relacionamento de revisor para os direitos de acesso do objeto revisado, uma das `self`, `delegate` ou `entityOwners`. | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual uma revisão de acesso é criada, como um associações de um grupo ou as atribuições de usuários para um aplicativo. | 
+| `reviewerType`            |`String`                                                        | O tipo de relacionamento de revisor para os direitos de acesso do objeto revisado, uma das `self`, `delegated`, ou `entityOwners`. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual uma revisão de acesso é criada, como a associação de um grupo ou as atribuições de usuários para um aplicativo. | 
 
 
-Se o reviewerType sendo fornecido tem o valor `delegate`, e em seguida, o chamador também deverá incluir o `reviewers` propriedade, com uma coleção de [userIdentity](../resources/useridentity.md) dos revisores.
+Se o reviewerType sendo fornecido tem o valor `delegated`, e em seguida, o chamador também deverá incluir o `reviewers` propriedade, com uma coleção de [userIdentity](../resources/useridentity.md) dos revisores.
 
 Além disso, o chamador pode incluir configurações, para criar uma série recorrente de revisão ou alterar do comportamento padrão de revisão. Em particular, para criar uma análise mais recorrente, o chamador deve incluir a `accessReviewRecurrenceSettings` dentro do access, revise as configurações,
 
@@ -86,7 +86,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -100,10 +100,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -126,7 +138,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

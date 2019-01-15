@@ -1,15 +1,15 @@
 ---
-title: Permissions
+title: Permissões
 description: 'Publica um aplicativo para o catálogo de aplicativos do Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7faf5847b78d6221b5167c775def75ae9a2ce629
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911872"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016741"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos ao catálogo de aplicativos da sua organização
 
@@ -17,7 +17,7 @@ ms.locfileid: "27911872"
 
 Publica um [aplicativo](../resources/teamsapp.md) para o catálogo de aplicativos do Microsoft Teams. Especificamente, essa API publica o aplicativo catálogo da sua organização (o catálogo de aplicativos do inquilino); o recurso criado terá `distributionMethod`  =  `organization`.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
@@ -55,7 +55,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 ### <a name="request"></a>Solicitação
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 

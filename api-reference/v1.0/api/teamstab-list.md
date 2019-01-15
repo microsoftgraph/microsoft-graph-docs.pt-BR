@@ -4,12 +4,12 @@ description: 'Recupere a lista das guias no canal especificado dentro de uma equ
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d481b34036cc68d59b044c29b21bcdc9461af5ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d731ff9218efd5db240084a462b2acf08641c46b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981088"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016629"
 ---
 # <a name="list-tabs-in-channel"></a>Guias de lista no canal
 
@@ -53,7 +53,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e a col
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 ```
 
 #### <a name="response"></a>Resposta

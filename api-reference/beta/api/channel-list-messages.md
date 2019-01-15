@@ -4,12 +4,12 @@ description: 'Recupere a lista de mensagens (sem as respostas) em um canal de um
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1af48a84d6ffd39d8e592fa6db54388f4c9460a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b7059f7bb54fb6a22f6755d3c78567bf16924779
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966591"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016769"
 ---
 # <a name="list-channel-messages"></a>Lista de mensagens de canal
 
@@ -17,7 +17,7 @@ ms.locfileid: "27966591"
 
 Recupere a lista de [mensagens](../resources/chatmessage.md) (sem as respostas) em um [canal](../resources/channel.md) de uma [equipe](../resources/team.md). Para obter as respostas de uma mensagem, chame as [respostas de mensagens de lista](channel-get-messagereply.md) ou [Obtenha a resposta de mensagem](channel-list-messagereplies.md) API. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (da com menos para a com mais privilégios)|
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [chatmessage](../resources/channel.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [chatmessage](../resources/chatmessage.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -4,12 +4,12 @@ description: 'Arquive a equipe especificada. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a9a2d7c3994d3b1d3e96c1c7f4d16195bb135ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c7ac186eeb937b1dda0b1df4878260e61fe30b18
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961404"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016636"
 ---
 # <a name="archive-team"></a>Equipe de arquivo morto
 
@@ -24,7 +24,7 @@ Para arquivar equipe, a equipe e o [grupo](../resources/group.md) devem ter um p
 
 Para restaurar uma equipe de seu estado arquivado, use a API para [unarchive](team-unarchive.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -66,7 +66,7 @@ O exemplo a seguir é um exemplo de uma solicitação.
   "name": "archive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/archive
+POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
 #### <a name="response"></a>Resposta
 O exemplo a seguir é um exemplo de uma resposta.

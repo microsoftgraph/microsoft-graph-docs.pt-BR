@@ -4,12 +4,12 @@ description: Recupere as propriedades e relacionamentos de um canal.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9782bf401f92f6e4654d6d7ab261ad93b753e047
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5b5f70b79deaf7fa90b6083dcbd4c83a09aa84e5
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966038"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016650"
 ---
 # <a name="get-channel"></a>Obtenha o canal
 
@@ -58,7 +58,7 @@ Este é um exemplo da solicitação.
   "name": "get_channel"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 

@@ -4,12 +4,12 @@ description: 'Recupere as propriedades e relacionamentos da guia especificado. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 70782682e2e87de50459384d782a56ccb7e6cfe8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dd23ffc6bcfdeb8821e2227331e2be801f348ce8
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945598"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016671"
 ---
 # <a name="get-tab"></a>Obtenha o guia
 
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 

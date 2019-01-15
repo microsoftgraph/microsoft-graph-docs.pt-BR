@@ -4,12 +4,12 @@ description: No recurso de avaliações de acesso do Azure AD, atualize um objet
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e4e74daa092c6f18c845c7f0c468af90385b899b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941349"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016748"
 ---
 # <a name="update-accessreview"></a>Atualizar accessReview
 
@@ -17,10 +17,10 @@ ms.locfileid: "27941349"
 
 No recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, atualize um objeto [accessReview](../resources/accessreview.md) existente para alterar uma ou mais das suas propriedades.
 
-Essa API não deve alterar os revisores ou decisões de uma revisão.  Para alterar os revisores, use o [addReviewer](accessreview-addreviewer.md) ou [removeReviewer](accessreview-removereviewer.md) APIs.  Para interromper uma revisão ocasional já iniciado ou uma instância já iniciado de uma revisão recorrente, no início, use o [Parar](accessreview-stop.md) API e para aplicar as decisões para os destino grupo ou app direitos de acesso, use a [Aplicar](accessreview-apply.md) API. 
+Essa API não deve alterar os revisores ou decisões de uma revisão.  Para alterar os revisores, use o [addReviewer](accessreview-addreviewer.md) ou [removeReviewer](accessreview-removereviewer.md) APIs.  Para interromper uma revisão ocasional já iniciado ou uma instância já iniciado de uma revisão recorrente, no início, use o [Parar](accessreview-stop.md) API. Para aplicar as decisões os direitos de acesso de grupo ou o aplicativo de destino, use a [Aplicar](accessreview-apply.md) API. 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -40,7 +40,7 @@ PATCH /accessReviews('{reviewId}')
 | Autorização | string | Portador \{token\}. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação de JSON dos parâmetros de um objeto [accessReview](../resources/accessreview.md) .
+No corpo da solicitação, fornece uma representação JSON dos parâmetros de um objeto [accessReview](../resources/accessreview.md) .
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um accessReview.
 
@@ -94,7 +94,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

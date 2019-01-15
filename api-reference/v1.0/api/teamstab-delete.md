@@ -4,12 +4,12 @@ description: 'Remove (unpin) uma guia de canal especificado dentro de uma equipe
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 672077e4b1ac383ca6e6bb415ff25639fb03dc08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9b66bf69645c9a76ea11375984cf8c56e0dff6bd
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917430"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016692"
 ---
 # <a name="delete-tab-from-channel"></a>Excluir o guia de canal
 
@@ -54,7 +54,7 @@ Este é um exemplo de solicitação.
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

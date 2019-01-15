@@ -4,12 +4,12 @@ description: Recupere a lista de canais nesse conjunto.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 609b83032877b77923e8444926aec785e4ae84db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d6d149a0e38fb5e02a2c32f9ad218fb95f32911
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932690"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016641"
 ---
 # <a name="list-channels"></a>Canais de lista
 
@@ -17,7 +17,7 @@ ms.locfileid: "27932690"
 
 Recupere a lista de [canais](../resources/channel.md) nesse conjunto.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -58,7 +58,7 @@ Este é um exemplo da solicitação.
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

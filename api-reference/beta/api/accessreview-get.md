@@ -4,12 +4,12 @@ description: 'No Windows Azure AD para acessar o recurso de revisões, recuperar
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be946e07a7714dc744847d73ee49718237fac92e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a13776b9aa215d752797b6ba2de2f477660ed31d
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926656"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016652"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
@@ -21,7 +21,7 @@ Para recuperar os revisores da revisão access, use os [Revisores de accessRevie
 
 Se essa for uma análise mais acesso recorrente, em seguida, use o `instances` relação para recuperar uma coleção de [accessReview](../resources/accessreview.md) de passado, instâncias atuais e futuros da revisão acesso.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -77,16 +77,23 @@ Content-type: application/json
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "reviewerType": "self",
     "description": "",
+    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
     "settings": {
-        "reviewId": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
         "mailNotificationsEnabled": true,
         "remindersEnabled": true,
         "justificationRequiredOnApproval": true,
+        "autoReviewEnabled": false,
+        "activityDurationInDays": 30,
+        "autoApplyReviewResultsEnabled": false,
+        "accessRecommendationsEnabled": false,
         "recurrenceSettings": {
             "recurrenceType": "onetime",
             "recurrenceEndType": "endBy",
             "durationInDays": 0,
             "recurrenceCount": 0
+        },
+        "autoReviewSettings": {
+            "notReviewedResult": "Deny"
         }
     }
 }

@@ -4,12 +4,12 @@ description: 'No Windows Azure AD access analisa o recurso, o `accessReview` rep
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6d97382957b7c61625ec54af4c572962be839b4a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950659"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016734"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso de accessReview
 
@@ -36,7 +36,7 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview`
 |[Redefinir accessReview decisões](../api/accessreview-reset.md) |     Nenhum.   |   Redefina as decisões em um accessReview em andamento.|
 |[Aplicar accessReview decisões](../api/accessreview-apply.md) |     Nenhum.   |   Aplique as decisões de um accessReview concluída.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -52,12 +52,12 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview`
 | `displayName`             |`String`                                                        | O nome de revisão de acesso. Necessários na criação. |
 | `startDateTime`           |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para ser iniciar.  Isso poderia ser uma data no futuro.  Necessários na criação. |
 | `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isto deve ser de pelo menos um dia mais recente do que a data de início.  Necessários na criação. |
-| `status`                  |`String`                                                        | Este campo somente leitura Especifica o status atual de um accessReview. Os estados típicos incluem `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, e `AutoReviewed`. |
+| `status`                  |`String`                                                        | Este campo somente leitura Especifica o status de um accessReview. Os estados típicos incluem `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, e `AutoReviewed`. |
 | `description`             |`String`                                                        | A descrição fornecida pelo criador de revisão do access, para mostrar aos revisores. |
 | `businessFlowTemplateId`  |`String`                                                        | O identificador de modelo de fluxo de negócios. Necessários na criação. |
-| `reviewerType`            |`String`                                                        | O tipo de relacionamento de revisor ao objeto de destino, uma das `self`, `delegate` ou `entityOwners`. Necessários na criação. | 
+| `reviewerType`            |`String`                                                        | O tipo de relacionamento de revisor ao objeto de destino, uma das `self`, `delegated` ou `entityOwners`. Necessários na criação. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | O usuário que criou este examinar. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual o access analisa é das atribuições de direitos de acesso, como as associações de usuários a um grupo ou atribuições de usuários para um aplicativo. Necessários na criação. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual o access analisa é revisar as atribuições de direitos de acesso. Isso pode ser o grupo para a revisão de associações de usuários em um grupo, ou o aplicativo para uma análise das atribuições de usuários para um aplicativo. Necessários na criação. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | As configurações de um accessReview, consulte a definição de tipo abaixo. |
 
 
@@ -74,7 +74,7 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview`
 | `myDecisions`             |coleção [accessReviewDecision](accessreviewdecision.md) | A coleção de decisões para o chamador, se o chamador é um revisor. |
 | `instances`               |coleção [accessReview](accessreview.md)         | A coleção de avaliações de acesso instâncias passado, presente e futuro, se esse objeto é uma análise mais acesso recorrente. |
 
-Se houver relações presentes em um objeto, dependem se o objeto for uma revisão de acesso de uma única vez, a série de uma análise mais acesso recorrentes, ou uma instância de uma análise mais acesso recorrente.
+Se essas relações estão presentes em um objeto, depende se o objeto for uma revisão de acesso de uma única vez, a série de uma análise mais acesso recorrentes, ou uma instância de uma análise mais acesso recorrente.
 
 | Cenário | Possui revisores? | Tem decisões e myDecisions? | Possui instâncias? |
 |:---------|:---------------|:---------------|:---------------|
@@ -125,7 +125,7 @@ O `accessReviewSettings` fornece configurações adicionais ao criar uma revisã
 | `autoReviewEnabled`|`Boolean` | Sinalizador para indicar se o recurso deve definir uma decisão se o revisor não fornecer um, para uso com auto-apply, está habilitado. |
 | `autoReviewSettings`|`microsoft.graph.autoReviewSettings` | As configurações detalhadas sobre como o recurso deve definir a decisão de revisão, para uso com auto-apply, descrito abaixo. |
 | `recurrenceSettings`|`microsoft.graph.accessReviewRecurrenceSettings` | Configurações detalhadas para recorrência, descrito abaixo. |
-| `autoApplyReviewResultsEnabled`|`Boolean` | Sinalizador para indicar se aplicar automaticamente o recurso, para alterar automaticamente o recurso de acesso do objeto de destino, está habilitado.  Se não estiver habilitado, um usuário deve aplicar subsequentemente a alteração da revisão acesso após a revisão do access está concluída. |
+| `autoApplyReviewResultsEnabled`|`Boolean` | Sinalizador para indicar se aplicar automaticamente o recurso, para alterar automaticamente o recurso de acesso do objeto de destino, está habilitado.  Se não estiver habilitado, um usuário deve, após a conclusão da revisão, se aplicam a revisão de acesso. |
 | `accessRecommendationsEnabled`|`Boolean` | Sinalizador para indicar se mostrar as recomendações para revisores está habilitado. |
 
 
@@ -145,10 +145,10 @@ O `accessReviewRecurrenceSettings` é incorporado dentro as configurações de r
 
 | Propriedade                     | Tipo                                                                                                          | Descrição |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
-| `recurrenceType`|`String`    | O intervalo de recorrência, que deve ser um dos `onetime`, `weekly`, `monthly`, `quarterly` ou `annual`.                                                                   |
-| `recurrenceEndType`|`String` | Como a recorrência será finalizado. Ele pode ser uma das `Never`, que não há nenhuma explícita final da série de recorrência, `Endby`, que a recorrência termina em uma determinada data, e `occurrences`, que a série termina após ter concluído a determinado número de instâncias da revisão. |
+| `recurrenceType`|`String`    | O intervalo de recorrência, que deve ser um dos `onetime`, `weekly`, `monthly`, `quarterly`, ou `annual`.                                                                   |
+| `recurrenceEndType`|`String` | Como a recorrência terminará. Se for `Never`, e em seguida, não há nenhum fim explícito da série recorrência. Se for `endBy`, em seguida, a recorrência terminará em uma determinada data. Se for `occurrences`, em seguida, a série terminará após `recurrentCount` concluíram instâncias da revisão. |
 | `durationInDays`|`Int32`     | A duração em dias para recorrência.                                                                              |
-| `recurrenceCount`|`Int32`    | A contagem de recorrências, se o valor da `recurrenceEndType` é `occurrences`.                                                        |
+| `recurrenceCount`|`Int32`    | A contagem de recorrências, se o valor da `recurrenceEndType` é `occurrences`, ou caso contrário, 0.                                                        |
 
 
 
