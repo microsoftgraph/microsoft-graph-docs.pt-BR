@@ -4,12 +4,12 @@ description: O Outlook é um hub de comunicação de mensagens do Office 365. El
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 462e00825a9dd54a6628ca638b06fb56c6cb5c8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 71bf282eea44edc0cb0ac38953e9b1e67bc05c39
+ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976622"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327982"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
@@ -70,6 +70,7 @@ Está procurando a referência de API para esse serviço?
   - Formas de [organizar mensagens](outlook-organize-messages.md)
   - Como [receber mensagens compartilhadas](outlook-share-messages-folders.md)
   - [Obter identificadores imutáveis para recursos do Outlook](outlook-immutable-id.md)
+  - Como [enviar email de outro usuário](outlook-send-mail-from-other-user.md)
 
 - Saiba mais sobre como [usar a API de email](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) e seus [casos de uso](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) no Microsoft Graph v1.0.
 

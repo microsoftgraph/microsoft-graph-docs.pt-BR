@@ -2,12 +2,13 @@
 title: 'Referência de permissões do Microsoft Graph '
 description: 'O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. '
 author: jackson-woods
-ms.openlocfilehash: c90fd13299f92dd3bd48067528088e755fe2afe7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Priority
+ms.openlocfilehash: 02867d6651820fabbb374cddfb69c4a8011390f0
+ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27334787"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328003"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. 
@@ -453,7 +454,9 @@ No caso de Permissões de aplicativo, há algumas limitações para APIs com sup
 
 Em alguns casos, um aplicativo pode precisar de [Permissões de diretório](#directory-permissions) para ler algumas propriedades do grupo como `member` e `memberOf`. Por exemplo, se um grupo tiver um ou mais [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) como membros, o aplicativo precisará de permissões eficazes para ler as entidades de serviço através do recebimento de uma das _Permissões de diretório\*_, caso contrário, o Microsoft Graph retornará um erro. No caso de Permissões Delegadas, o usuário conectado deve ter privilégios suficientes na organização para ler as entidades de serviço. A mesma orientação se aplica à propriedade `memberOf` que pode retornar [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
-As Permissões de grupo também são usadas para controlar o acesso a APIs e recursos do [Microsoft Planner](/graph/api/resources/planner-overview?view=graph-rest-beta). Somente as permissões delegadas são suportadas pelas APIs do Microsoft Planner; as permissões de aplicativo não são suportadas. Contas pessoais da Microsoft não são suportadas.
+As Permissões de grupo também são usadas para controlar o acesso a APIs e recursos do [Microsoft Teams](/graph/api/resources/teams-api-overview). 
+
+As Permissões de grupo também são usadas para controlar o acesso a APIs e recursos do [Microsoft Planner](/graph/api/resources/planner-overview). Somente as permissões delegadas são suportadas pelas APIs do Microsoft Planner; as permissões de aplicativo não são suportadas. Contas pessoais da Microsoft não são suportadas.
 
 
 ### <a name="example-usage"></a>Exemplo de uso
@@ -1097,6 +1100,7 @@ Para ler as associações de grupos de um usuário (`memberOf`), o aplicativo de
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 
+<a name="msprod-microsoft-identity-platform"></a>ms.prod: "plataforma de identidade microsoft"
 ---
 ## <a name="user-activity-permissions"></a>Permissões de Atividades do Usuário
 
