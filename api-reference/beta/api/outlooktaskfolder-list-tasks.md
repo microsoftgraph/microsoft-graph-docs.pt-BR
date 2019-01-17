@@ -3,12 +3,13 @@ title: Listar tarefas
 description: Obtenha todas as tarefas do Outlook na pasta especificada.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: ee6b4c2454ba6bfad0c0f4e6acd826917f02ca93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ec814616447db842f4eaaa230cd6634e98859198
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863074"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924514"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -20,7 +21,7 @@ Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir
 
 Se houver mais de um grupo de tarefa e você deseja obter todas as tarefas em um grupo de tarefa específica, primeiro [fazer todas as pastas de tarefa nesse grupo de tarefa](outlooktaskgroup-list-taskfolders.md)e, em seguida, obtenha as tarefas em cada uma dessas pastas de tarefa. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

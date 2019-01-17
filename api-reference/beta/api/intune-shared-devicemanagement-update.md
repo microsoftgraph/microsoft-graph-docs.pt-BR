@@ -3,12 +3,13 @@ title: Atualizar deviceManagement
 description: Atualizar as propriedades de um objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cd202c2a015b25234a7bf6ffdbedbd1b9f17eacd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4d8465ee45a2a6c23dedc4fe049ef1f73bb25218
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846827"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924689"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -77,7 +78,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitido por locatário.|
 |configurações|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
-|accountMoveCompletionDateTime|DateTimeOffset|A data e a hora quando os dados de inquilinos movidos entre scaleunits.|
+|accountMoveCompletionDateTime|DateTimeOffset|A data hora & ao mover os dados de inquilinos entre scaleunits.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informações de consentimento do administrador.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Visão geral de proteção do dispositivo.|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regra de limpeza do dispositivo|

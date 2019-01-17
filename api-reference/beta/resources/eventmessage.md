@@ -2,12 +2,14 @@
 title: Tipo de recurso eventMessage
 description: 'Uma mensagem que representa uma solicitação, cancelamento ou resposta de reunião (que pode ser uma destas: aceitação, aceitação provisória ou recusa). '
 localization_priority: Normal
-ms.openlocfilehash: 2a6b1768a97d07ed534699f6bbef7f4f1337a2b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 3f7a2f539d7a21e47b3e35857c6475ae44f32cad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872678"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939998"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 

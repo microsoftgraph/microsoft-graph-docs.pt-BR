@@ -1,12 +1,13 @@
 ---
 title: Obter synchronizationJob
 description: Recupere o trabalho de sincronização existentes e suas propriedades.
-ms.openlocfilehash: c0c999d5b9ce168ba3f21af20ec5cff026d68f8d
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 5e6be3cc707fdb70b80c6bd2ebe924232aaa674c
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27040636"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27850313"
 ---
 # <a name="get-synchronizationjob"></a>Obter synchronizationJob
 
@@ -14,7 +15,7 @@ ms.locfileid: "27040636"
 
 Recupere o trabalho de sincronização existentes e suas propriedades.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |

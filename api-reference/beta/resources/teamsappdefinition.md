@@ -3,12 +3,13 @@ title: tipo de recurso de teamsAppDefinition
 description: Os detalhes de uma versão de um teamsApp.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: 8a13f6ffd4ca5385b9e264f8b8a5b8bddfe0a1fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 312b9347519935c4ff34f51cee24e0082c3da58e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851293"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969762"
 ---
 # <a name="teamsappdefinition-resource-type"></a>tipo de recurso de teamsAppDefinition
 
@@ -21,9 +22,9 @@ Os detalhes de uma versão de um [teamsApp](teamsapp.md).
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Uma identificação exclusiva (não o appid equipes). |
-| teamsAppId          | string   | A identificação de manifesto do aplicativo de equipes. |
+| teamsAppId          | cadeia de caracteres   | A identificação de manifesto do aplicativo de equipes. |
 | displayName         | string   | O nome do aplicativo fornecido pelo desenvolvedor do aplicativo. |
-| version             | string   | O número de versão do aplicativo. |
+| version             | cadeia de caracteres   | O número de versão do aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

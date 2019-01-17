@@ -2,12 +2,13 @@
 title: tipo de recurso de atividade
 description: Representa uma única atividade dentro de um aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário emprega com que a atividade, o compromisso é capturado como um item de histórico que indica a hora de início e término para a atividade. À medida que o usuário emprega novamente com que a atividade ao longo do tempo, vários itens de histórico são registrados para atividade de um único usuário.
 localization_priority: Normal
-ms.openlocfilehash: 79ed44ef0f6a38fbef8ead233debce3fc9e66b42
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: eade448e9585ac3678c81548c242bd467e71df40
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877067"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991073"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso de atividade
 
