@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34db44b1048431f8d1bf0be715e35bcdab6ae80b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970749"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726537"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -60,7 +60,7 @@ Para as guias do Microsoft Stream, o `teamsAppId` é `com.microsoftstream.embed.
 ## <a name="microsoft-forms-tabs"></a>Guias do Microsoft Forms
 
 Para as guias do Microsoft Forms, o `teamsAppId` é `81fef3a6-72aa-4648-a763-de824aeafb7d`.
-Configuração:
+A configuração é a mostrada a seguir.
 
 | Propriedade   | Tipo        | Descrição                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
@@ -80,13 +80,38 @@ A tabela a seguir lista o `teamsAppId` para cada aplicativo.
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-Essa configuração não é compatível.
+A configuração é a mostrada a seguir.
+
+| Propriedade   | Tipo        | Descrição                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | A ID de sourceDoc do arquivo. Para encontrá-la, abra o arquivo no SharePoint e procure a barra de endereços - a URL terá uma cláusula `sourcedoc=%7B{sourceDocId}%7D`. Você também pode derivar isso na webUrl do item de unidade do SharePoint para o documento. Para saber mais, confira [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| contentUrl | string      | A URL do arquivo no formato `{folder-webUrl}/{item-name}`. {folder-webUrl} é a webUrl da pasta do SharePoint que contém o arquivo. Para localizá-la, abra o arquivo no SharePoint e procure na barra de endereços, ou use a propriedade webUrl em [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} é o nome do arquivo (por exemplo, file.docx), que é a propriedade `name` em [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| removeUrl  | string      | Nulo                                                     |
+| websiteUrl | string      | Nulo                                       |
+
+### <a name="example-create-a-configured-word-tab"></a>Exemplo: criar uma guia configurada do Word
+
+O exemplo a seguir criar uma guia configurada do Word.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+  "displayName": "word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "configuration": {
+     "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
+     "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
+     "removeUrl": null,
+     "websiteUrl": null
+  }
+}
+```
 
 ## <a name="wiki-tabs"></a>Guias da wiki
 
 Para as guias da wiki, o `teamsAppId` é `com.microsoft.teamspace.tab.wiki`.
 As guias da wiki não dão suporte à configuração por meio do Graph.
-Observe, contudo, que não há muito o que configurar. Em uma guia da wiki não configurada, o primeiro usuário precisa apenas clicar em **Configurar guia** para configurá-la.
+Observe, contudo, que não há muito o que configurar. Em uma guia da wiki não configurada, o primeiro usuário precisa apenas escolher **Configurar guia** para configurá-la.
 
 ## <a name="document-library-tabs"></a>Guias de biblioteca de documentos
 
@@ -112,4 +137,4 @@ Essa configuração não é compatível.
 
 Para as guias de lista e de página do SharePoint, o `teamsAppId` é `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Essa configuração não é compatível.
-Se é desejável configurar, considere usar uma guia do site.
+Se você quiser configurar a guia, considere usar uma guia do site.
