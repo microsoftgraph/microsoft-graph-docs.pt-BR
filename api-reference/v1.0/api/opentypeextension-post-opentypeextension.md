@@ -2,24 +2,25 @@
 title: Criar extensão aberta
 description: Crie uma extensão aberta (objeto openTypeExtension) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso.
 localization_priority: Priority
-ms.openlocfilehash: a07dddff6347021dabecfff185ddac5c27c5d0a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+author: dkershaw10
+ms.openlocfilehash: 0823cb549527f7e5851e9d47e328b427eb64539f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872538"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962342"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
 Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) e adicione propriedades personalizadas em uma instância nova ou existente de um recurso.
 
-> **Observação:** Se você estiver criando extensões open nos recursos do Outlook, consulte **Considerações específicas do Outlook** em [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
+> **Observação:** Se você estiver criando extensões abertas em recursos do Outlook, confira **considerações específicas do Outlook** no [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
-Dependendo do recurso que você está criando a extensão na e a permissão tipo (delegado ou aplicativo) solicitada, a permissão especificada na tabela a seguir é o menos privilegiada necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso que você está criando a extensão do e a permissão tipo (delegado ou aplicativo) solicitado, permissão especificado na tabela a seguir é menos privilegiados necessário para fazer chamadas de API este. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicativo |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
@@ -29,13 +30,13 @@ Dependendo do recurso que você está criando a extensão na e a permissão tipo
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [usuário](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Crie uma extensão em uma nova instância de recurso
 
-Use a mesma solicitação REST que você usa para criar a instância.
+Use a mesma solicitação REST usada para criar a instância.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +47,7 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Observação:** Esta sintaxe mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permite que você crie essas instâncias de recurso suporta as extensões de open criação de forma semelhante.
+>**Observação:** Esta sintaxe acima mostra algumas maneiras comuns de criar as instâncias de recursos com suporte. Todas as outras sintaxes POST que permitem criar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre a inclusão de propriedades da nova instância do recurso _e a extensão_ no corpo da solicitação.
 
@@ -67,7 +68,7 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância de recurso, para criar uma extensão nela. Oferece suporte a todas as outras sintaxes que permite que você identifique essas instâncias de recurso, Criando extensões open de forma semelhante.
+>**Observação:** Esta sintaxe mostra algumas maneiras comuns de identificar uma instância do recurso, para criar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à criação de extensões abertas nelas de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extensão_ no corpo da solicitação.
 
@@ -100,8 +101,8 @@ Ao criar uma extensão em uma _nova_ instância de recursos, além de novos obje
 
 Dependendo da operação, o código de resposta pode ser `201 Created` ou `202 Accepted`.
 
-Quando você cria uma extensão usando a mesma operação que você pode usar para criar uma instância de recurso, a operação retorna o código de resposta mesmo que ele retorna ao usar a operação para criar a instância de recurso sem a extensão.
-Consulte os tópicos correspondentes para criar a instância, como listadas [acima](#create-an-extension-in-a-new-resource-instance).
+Quando você cria uma extensão usando a mesma operação usada para criar uma instância de recurso, a operação retorna o mesmo código de resposta retornado quando você usa a operação para criar a instância do recurso sem a extensão.
+Consulte os tópicos correspondentes para criar a instância conforme listado [cima](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Corpo da resposta
 
@@ -122,7 +123,7 @@ O primeiro exemplo cria uma mensagem e uma extensão na mesma chamada. O corpo d
 
   - O tipo `microsoft.graph.openTypeExtension`.
   - O nome da extensão "Com.Contoso.Referral".
-  - Dados adicionais a serem armazenados como três propriedades personalizadas na carga JSON: `companyName`, `expirationDate`, e `dealValue`.
+  - Dados adicionais a serem armazenados como três propriedades personalizadas no conteúdo JSON: `companyName`, `expirationDate` e `dealValue`.
 
 <!-- {
   "blockType": "ignored",
@@ -446,7 +447,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 Veja a seguir a resposta do quinto exemplo, que contém a nova conversa e uma ID de thread. Esse novo thread contém uma postagem criada automaticamente que, por sua vez, contém a nova extensão.
 
-Observação: O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 Para obter a nova extensão, primeiro [obtenha todas as postagens](../api/conversationthread-list-posts.md) desse thread. Inicialmente, deve haver somente uma. Em seguida, aplique a ID da postagem e o nome da extensão `Com.Contoso.Benefits` para [obter a extensão](../api/opentypeextension-get.md).
 
