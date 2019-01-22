@@ -4,152 +4,155 @@ description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 99215af564be186edaf57563ae493f363c9cc2fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 18eb80938247d56326620a6ac866073acad6f715
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941048"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353073"
 ---
-# <a name="get-group"></a><span data-ttu-id="d67b8-103">Obter grupo</span><span class="sxs-lookup"><span data-stu-id="d67b8-103">Get group</span></span>
+# <a name="get-group"></a><span data-ttu-id="b37b2-103">Obter grupo</span><span class="sxs-lookup"><span data-stu-id="b37b2-103">Get group</span></span>
 
-> <span data-ttu-id="d67b8-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="d67b8-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d67b8-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="d67b8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b37b2-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="b37b2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b37b2-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="b37b2-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="d67b8-106">Obtenha as propriedades e relacionamentos de um objeto [group](../resources/group.md) .</span><span class="sxs-lookup"><span data-stu-id="d67b8-106">Get the properties and relationships of a [group](../resources/group.md) object.</span></span>
+<span data-ttu-id="b37b2-106">Obtenha as propriedades e os relacionamentos de um objeto [group](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="b37b2-106">Get the properties and relationships of a group object.</span></span>
 
-##### <a name="default-properties"></a><span data-ttu-id="d67b8-107">Propriedades padrão</span><span class="sxs-lookup"><span data-stu-id="d67b8-107">Default properties</span></span>
+<span data-ttu-id="b37b2-107">Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="b37b2-107">This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section.</span></span> 
 
-<span data-ttu-id="d67b8-p102">O seguinte item representa o conjunto padrão de propriedades que são retornadas ao obter ou listar grupos. Este é um subconjunto de todas as propriedades disponíveis.</span><span class="sxs-lookup"><span data-stu-id="d67b8-p102">The following represent the default set of properties that are returned when getting or listing groups. These are a subset of all available properties.</span></span> 
+<span data-ttu-id="b37b2-108">Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData.</span><span class="sxs-lookup"><span data-stu-id="b37b2-108">To get properties that are _not_ returned by default, specify them in a `$select` OData query option.</span></span> <span data-ttu-id="b37b2-109">Veja um [exemplo](#request-2) de `$select`.</span><span class="sxs-lookup"><span data-stu-id="b37b2-109">See an [example](#request-2) of the `$select` header in use.</span></span> <span data-ttu-id="b37b2-110">A propriedade **hasMembersWithLicenseErrors** é uma exceção.</span><span class="sxs-lookup"><span data-stu-id="b37b2-110">An exception is the **hasMembersWithLicenseErrors** property.</span></span> <span data-ttu-id="b37b2-111">Veja um [exemplo](group-list.md#request-2) de como usar essa propriedade.</span><span class="sxs-lookup"><span data-stu-id="b37b2-111">See an [example](group-list.md#request-2) of how to use this property.</span></span>
 
-* <span data-ttu-id="d67b8-110">classificação</span><span class="sxs-lookup"><span data-stu-id="d67b8-110">classification</span></span>
-* <span data-ttu-id="d67b8-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="d67b8-111">createdDateTime</span></span>
-* <span data-ttu-id="d67b8-112">description</span><span class="sxs-lookup"><span data-stu-id="d67b8-112">description</span></span>
-* <span data-ttu-id="d67b8-113">displayName</span><span class="sxs-lookup"><span data-stu-id="d67b8-113">displayName</span></span>
-* <span data-ttu-id="d67b8-114">groupTypes</span><span class="sxs-lookup"><span data-stu-id="d67b8-114">groupTypes</span></span>
-* <span data-ttu-id="d67b8-115">id</span><span class="sxs-lookup"><span data-stu-id="d67b8-115">id</span></span>
-* <span data-ttu-id="d67b8-116">Email</span><span class="sxs-lookup"><span data-stu-id="d67b8-116">mail</span></span>
-* <span data-ttu-id="d67b8-117">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="d67b8-117">mailEnabled</span></span>
-* <span data-ttu-id="d67b8-118">mailNickname</span><span class="sxs-lookup"><span data-stu-id="d67b8-118">mailNickname</span></span>
-* <span data-ttu-id="d67b8-119">membershipRule</span><span class="sxs-lookup"><span data-stu-id="d67b8-119">membershipRule</span></span>
-* <span data-ttu-id="d67b8-120">membershipRuleProcessingState</span><span class="sxs-lookup"><span data-stu-id="d67b8-120">membershipRuleProcessingState</span></span>
-* <span data-ttu-id="d67b8-121">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="d67b8-121">onPremisesLastSyncDateTime</span></span>
-* <span data-ttu-id="d67b8-122">onPremisesSecurityIdentifier</span><span class="sxs-lookup"><span data-stu-id="d67b8-122">onPremisesSecurityIdentifier</span></span>
-* <span data-ttu-id="d67b8-123">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="d67b8-123">onPremisesSyncEnabled</span></span>
-* <span data-ttu-id="d67b8-124">preferredLanguage - não suportado; um valor para essa propriedade não pode ser definida e retorna `null` quando chamado.</span><span class="sxs-lookup"><span data-stu-id="d67b8-124">preferredLanguage - Not supported; a value for this property cannot be set and returns `null` when called.</span></span>
-* <span data-ttu-id="d67b8-125">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="d67b8-125">proxyAddresses</span></span>
-* <span data-ttu-id="d67b8-126">renewedDateTime</span><span class="sxs-lookup"><span data-stu-id="d67b8-126">renewedDateTime</span></span>
-* <span data-ttu-id="d67b8-127">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="d67b8-127">securityEnabled</span></span>
-* <span data-ttu-id="d67b8-128">tema</span><span class="sxs-lookup"><span data-stu-id="d67b8-128">theme</span></span>
-* <span data-ttu-id="d67b8-129">visibilidade</span><span class="sxs-lookup"><span data-stu-id="d67b8-129">visibility</span></span>
+<span data-ttu-id="b37b2-112">Como o recurso **group** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **group**.</span><span class="sxs-lookup"><span data-stu-id="b37b2-112">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
 
-<span data-ttu-id="d67b8-130">As seguintes propriedades de grupo não são retornadas por padrão:</span><span class="sxs-lookup"><span data-stu-id="d67b8-130">The following group properties are not returned by default:</span></span>
+## <a name="permissions"></a><span data-ttu-id="b37b2-113">Permissões</span><span class="sxs-lookup"><span data-stu-id="b37b2-113">Permissions</span></span>
+<span data-ttu-id="b37b2-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b37b2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="d67b8-131">accessType</span><span class="sxs-lookup"><span data-stu-id="d67b8-131">accessType</span></span>
-* <span data-ttu-id="d67b8-132">allowExternalSenders</span><span class="sxs-lookup"><span data-stu-id="d67b8-132">allowExternalSenders</span></span>
-* <span data-ttu-id="d67b8-133">autoSubscribeNewMembers</span><span class="sxs-lookup"><span data-stu-id="d67b8-133">autoSubscribeNewMembers</span></span>
-* <span data-ttu-id="d67b8-134">hasMembersWithLicenseErrors</span><span class="sxs-lookup"><span data-stu-id="d67b8-134">hasMembersWithLicenseErrors</span></span>
-* <span data-ttu-id="d67b8-135">isSubscribedByMail</span><span class="sxs-lookup"><span data-stu-id="d67b8-135">isSubscribedByMail</span></span>
-* <span data-ttu-id="d67b8-136">isFavorite</span><span class="sxs-lookup"><span data-stu-id="d67b8-136">isFavorite</span></span>
-* <span data-ttu-id="d67b8-137">unseenConversationsCount</span><span class="sxs-lookup"><span data-stu-id="d67b8-137">unseenConversationsCount</span></span>
-* <span data-ttu-id="d67b8-138">unseenCount</span><span class="sxs-lookup"><span data-stu-id="d67b8-138">unseenCount</span></span>
-* <span data-ttu-id="d67b8-139">unseenMessagesCount</span><span class="sxs-lookup"><span data-stu-id="d67b8-139">unseenMessagesCount</span></span>
-
-<span data-ttu-id="d67b8-140">Para fazer essas propriedades (exceto **isFavorite** e **hasMembersWithLicenseErrors**), use o `$select` parâmetro de consulta.</span><span class="sxs-lookup"><span data-stu-id="d67b8-140">To get these properties (except **isFavorite** and **hasMembersWithLicenseErrors**), use the `$select` query parameter.</span></span> <span data-ttu-id="d67b8-141">Eis alguns exemplos:</span><span class="sxs-lookup"><span data-stu-id="d67b8-141">The following are examples:</span></span> 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-<span data-ttu-id="d67b8-142">Para retornar os grupos que contêm membros com erros de licença, use o parâmetro de consulta **$filter** :</span><span class="sxs-lookup"><span data-stu-id="d67b8-142">To return groups containing members with license errors, use the **$filter** query parameter:</span></span>
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
-```
-
-<span data-ttu-id="d67b8-143">Desde que o recurso de **grupo** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância de **grupo** .</span><span class="sxs-lookup"><span data-stu-id="d67b8-143">Since the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.</span></span>
-
-## <a name="permissions"></a><span data-ttu-id="d67b8-144">Permissions</span><span class="sxs-lookup"><span data-stu-id="d67b8-144">Permissions</span></span>
-<span data-ttu-id="d67b8-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d67b8-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="d67b8-147">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d67b8-147">Permission type</span></span>      | <span data-ttu-id="d67b8-148">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d67b8-148">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b37b2-116">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b37b2-116">Permission type</span></span>      | <span data-ttu-id="b37b2-117">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b37b2-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d67b8-149">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d67b8-149">Delegated (work or school account)</span></span> | <span data-ttu-id="d67b8-150">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d67b8-150">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d67b8-151">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d67b8-151">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d67b8-152">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d67b8-152">Not supported.</span></span>    |
-|<span data-ttu-id="d67b8-153">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d67b8-153">Application</span></span> | <span data-ttu-id="d67b8-154">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d67b8-154">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="b37b2-118">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b37b2-118">Delegated (work or school account)</span></span> | <span data-ttu-id="b37b2-119">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b37b2-119">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b37b2-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b37b2-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b37b2-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b37b2-121">Not supported.</span></span>    |
+|<span data-ttu-id="b37b2-122">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b37b2-122">Application</span></span> | <span data-ttu-id="b37b2-123">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b37b2-123">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d67b8-155">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d67b8-155">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b37b2-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b37b2-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d67b8-156">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d67b8-156">Optional query parameters</span></span>
-<span data-ttu-id="d67b8-157">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d67b8-157">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b37b2-125">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="b37b2-125">Optional query parameters</span></span>
+<span data-ttu-id="b37b2-126">É possível usar a opção de consulta `$select` para obter propriedades específicas do grupo, inclusive aquelas que não são retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="b37b2-126">You can use `$select` to get specific group properties, including those that are not returned by default.</span></span> <span data-ttu-id="b37b2-127">Veja um [exemplo](#request-2) abaixo.</span><span class="sxs-lookup"><span data-stu-id="b37b2-127">See an [example](#request-2).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d67b8-158">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d67b8-158">Request headers</span></span>
-| <span data-ttu-id="d67b8-159">Nome</span><span class="sxs-lookup"><span data-stu-id="d67b8-159">Name</span></span>       | <span data-ttu-id="d67b8-160">Tipo</span><span class="sxs-lookup"><span data-stu-id="d67b8-160">Type</span></span> | <span data-ttu-id="d67b8-161">Descrição</span><span class="sxs-lookup"><span data-stu-id="d67b8-161">Description</span></span>|
+<span data-ttu-id="b37b2-128">Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de consulta OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b37b2-128">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="b37b2-129">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b37b2-129">Request headers</span></span>
+| <span data-ttu-id="b37b2-130">Nome</span><span class="sxs-lookup"><span data-stu-id="b37b2-130">Name</span></span>       | <span data-ttu-id="b37b2-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="b37b2-131">Type</span></span> | <span data-ttu-id="b37b2-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="b37b2-132">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="d67b8-162">Autorização</span><span class="sxs-lookup"><span data-stu-id="d67b8-162">Authorization</span></span>  | <span data-ttu-id="d67b8-163">string</span><span class="sxs-lookup"><span data-stu-id="d67b8-163">string</span></span>  | <span data-ttu-id="d67b8-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d67b8-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b37b2-133">Autorização</span><span class="sxs-lookup"><span data-stu-id="b37b2-133">Authorization</span></span>  | <span data-ttu-id="b37b2-134">string</span><span class="sxs-lookup"><span data-stu-id="b37b2-134">string</span></span>  | <span data-ttu-id="b37b2-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b37b2-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d67b8-166">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d67b8-166">Request body</span></span>
-<span data-ttu-id="d67b8-167">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d67b8-167">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b37b2-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b37b2-137">Request body</span></span>
+<span data-ttu-id="b37b2-138">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b37b2-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d67b8-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="d67b8-168">Response</span></span>
-<span data-ttu-id="d67b8-169">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d67b8-169">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b37b2-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="b37b2-139">Response</span></span>
+<span data-ttu-id="b37b2-140">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b37b2-140">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="b37b2-141">Retorna as propriedades padrão, a menos que você use `$select` para especificar as propriedades específicas.</span><span class="sxs-lookup"><span data-stu-id="b37b2-141">It returns the default properties unless you use `$select` to specify specific properties.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d67b8-170">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d67b8-170">Example</span></span>
-### <a name="request"></a><span data-ttu-id="d67b8-171">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d67b8-171">Request</span></span>
-<span data-ttu-id="d67b8-172">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="d67b8-172">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b37b2-142">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b37b2-142">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="b37b2-143">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="b37b2-143">Request 1</span></span>
+<span data-ttu-id="b37b2-144">Este é um exemplo de solicitação GET.</span><span class="sxs-lookup"><span data-stu-id="b37b2-144">The following is an example of a GET request.</span></span> 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}
+GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-### <a name="response"></a><span data-ttu-id="d67b8-173">Resposta</span><span class="sxs-lookup"><span data-stu-id="d67b8-173">Response</span></span>
-<span data-ttu-id="d67b8-174">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="d67b8-174">The following is an example of the response.</span></span> 
-><span data-ttu-id="d67b8-175">**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade.</span><span class="sxs-lookup"><span data-stu-id="d67b8-175">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="d67b8-176">As propriedades padrão serão retornadas de uma chamada real, conforme descrito anteriormente.</span><span class="sxs-lookup"><span data-stu-id="d67b8-176">The default properties will be returned from an actual call, as described before.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="b37b2-145">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="b37b2-145">Response 1</span></span>
+<span data-ttu-id="b37b2-146">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b37b2-146">The following is an example of the response.</span></span> <span data-ttu-id="b37b2-147">Ele inclui apenas as propriedades padrão.</span><span class="sxs-lookup"><span data-stu-id="b37b2-147">It includes only the default properties.</span></span>
+
+><span data-ttu-id="b37b2-148">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="b37b2-148">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b37b2-149">Todas as propriedades padrão serão retornadas em uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b37b2-149">All the default properties are returned in an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T02:21:05Z",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
+  "expirationDateTime": null,
   "groupTypes": [
-    "groupTypes-value"
+      "Unified"
   ],
-  "mail": "mail-value",
+  "mail": "golfassist@contoso.com",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
+  "mailNickname": "golfassist",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "preferredLanguage": null,
   "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+      "smtp:golfassist@contoso.onmicrosoft.com",
+      "SMTP:golfassist@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T02:21:05Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "theme": null,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d67b8-177">Confira também</span><span class="sxs-lookup"><span data-stu-id="d67b8-177">See also</span></span>
+#### <a name="request-2"></a><span data-ttu-id="b37b2-150">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="b37b2-150">Request 2</span></span>
+<span data-ttu-id="b37b2-151">O exemplo a seguir usa uma opção de consulta `$select` para obter algumas propriedades não retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="b37b2-151">The next example uses a `$select` query option to get a few properties that are not returned by default.</span></span> 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
 
-- [<span data-ttu-id="d67b8-178">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="d67b8-178">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="d67b8-179">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="d67b8-179">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="d67b8-180">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="d67b8-180">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
+#### <a name="response-2"></a><span data-ttu-id="b37b2-152">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="b37b2-152">Response 2</span></span>
+<span data-ttu-id="b37b2-153">Veja a seguir o exemplo de uma resposta que inclui as propriedades solicitadas não retornadas por padrão.</span><span class="sxs-lookup"><span data-stu-id="b37b2-153">The following is an example of the response which includes the requested non-default properties.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
+}
+```
+
+## <a name="see-also"></a><span data-ttu-id="b37b2-154">Confira também</span><span class="sxs-lookup"><span data-stu-id="b37b2-154">See also</span></span>
+
+- [<span data-ttu-id="b37b2-155">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="b37b2-155">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="b37b2-156">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="b37b2-156">Add custom data to users using open extensions</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="b37b2-157">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="b37b2-157">Add custom data to groups using schema extensions</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
