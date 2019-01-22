@@ -4,12 +4,12 @@ description: 'Use esta API para criar um novo grupo, conforme especificado no co
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: d0c02dfe2eba9488848cefb7f85241a2c40210e4
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: c82774e72e6841f84d879ce3ce34febb8d88c2fd
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726578"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353094"
 ---
 # <a name="create-group"></a>Criar grupo
 Use esta API para criar um novo grupo conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:
@@ -73,7 +73,7 @@ Especifique a propriedade **groupTypes**, se estiver criando um Grupo do Office 
 Especifique outras propriedades graváveis conforme necessário para o grupo. Confira mais informações nas propriedades do recurso [group](../resources/group.md).
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [group](../resources/group.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [group](../resources/group.md) no corpo da resposta. A resposta inclui somente as propriedades padrão do grupo.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request-1"></a>Solicitação 1

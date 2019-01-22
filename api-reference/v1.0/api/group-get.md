@@ -4,12 +4,12 @@ description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 321e24ef8b36547a4823578d7f6823397d0eed69
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726593"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353087"
 ---
 # <a name="get-group"></a>Obter grupo
 Obtenha as propriedades e os relacionamentos de um objeto de grupo.
@@ -45,7 +45,7 @@ Para saber mais sobre as opções de consulta do OData, confira [Parâmetros de 
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [group](../resources/group.md) no corpo da resposta. Retorna as propriedades padrão, a menos que você use `$select` para especificar as propriedades específicas.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request-1"></a>Solicitação 1
