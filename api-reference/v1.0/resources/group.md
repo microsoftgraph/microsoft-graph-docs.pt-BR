@@ -1,24 +1,26 @@
 ---
 title: tipo de recurso de grupo
-description: Representa um grupo do Windows Azure Active Directory (AD Azure), que pode ser um grupo do Office 365, um grupo dinâmico ou um grupo de segurança.
+description: Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, um grupo dinâmico ou um grupo de segurança.
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: d5b3ce7c8a7af318fdf8dc0eb46b08c57619071a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 910af8e2eb87d2e36d39fbf1873477ecfc114c38
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931843"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726607"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
 Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, um grupo dinâmico ou um grupo de segurança. Herda de [directoryObject](directoryobject.md).
 
+Por motivos de desempenho, as operações [create](../api/group-post-groups.md), [get](../api/group-get.md) e [list](../api/group-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades _padrão_ estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](../api/group-get.md#request-2).
+
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas como [extensões](/graph/extensibility-overview).
-- Assinatura de [notificações de alteração](/graph/webhooks).
+- Adicionar seus próprios dados às propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Assinar as [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user-delta.md).
 
 
@@ -85,48 +87,48 @@ Esse recurso permite:
 |[Listar fotos](../api/group-list-photos.md) |Coleção [profilePhoto](photo.md)| Obter um conjunto de fotos de perfil para o grupo.|
 |[Listar plannerPlans](../api/plannergroup-list-plans.md) |Coleção [plannerPlan](plannerplan.md)| Obter os planos de planejador pertencentes ao grupo.|
 |**Configurações do usuário**| | |
-|[addFavorite](../api/group-addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.|
-|[removeFavorite](../api/group-removefavorite.md)|Nenhum|Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.|
+|[addFavorite](../api/group-addfavorite.md)|Nenhum|Adicionar o grupo à lista de grupos de favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
+|[removeFavorite](../api/group-removefavorite.md)|Nenhum|Remover o grupo da lista de grupos favoritos do usuário conectado. Com suporte apenas para grupos do Office 365.|
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse usuário é membro direto, da propriedade de navegação **memberOf**.|
-|[subscribeByMail](../api/group-subscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **true**. Permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
-|[unsubscribeByMail](../api/group-unsubscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **false**. Não permitindo que o usuário atual receba conversas por email. Com suporte apenas para grupos do Office 365.|
-|[resetUnseenCount](../api/group-resetunseencount.md)|None|Redefinir unseenCount como 0 para todas as postagens que o usuário atual não viu desde sua última visita. Com suporte apenas para grupos do Office 365.|
+|[subscribeByMail](../api/group-subscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **true**. Permitir que o usuário conectado receba conversas por email. Com suporte apenas para grupos do Office 365.|
+|[unsubscribeByMail](../api/group-unsubscribebymail.md)|Nenhum|Definir a propriedade isSubscribedByMail como **false**. Desabilitar o recebimento de conversas por email do usuário conectado. Com suporte apenas para grupos do Office 365.|
+|[resetUnseenCount](../api/group-resetunseencount.md)|Nenhum|Redefinir unseenCount como 0 para todas as postagens que o usuário conectado não tenha visto desde a última visita. Com suporte apenas para grupos do Office 365.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowExternalSenders|Boolean|O padrão é **false**. Indica se as pessoas externas à empresa podem enviar mensagens para o grupo.|
-|autoSubscribeNewMembers|Booliano|O padrão é **false**. Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo.|
-|classificação|String|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para esta propriedade são definidos criando um valor de [configuração](groupsetting.md) ClassificationList com base na [definição de modelo](groupsettingtemplate.md).|
-|createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|description|String|Uma descrição opcional para o grupo. |
-|displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo para criar. Os valores possíveis são `Unified` para criar um grupo do Office 365, ou `DynamicMembership` para grupos dinâmicos.  Para todos os outro grupo tipos, como grupos de segurança e grupos de segurança habilitado para email, não defina essa propriedade. Oferece suporte a $filter.|
-|id|String|O identificador exclusivo do grupo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|isSubscribedByMail|Booliano|O valor padrão é **true**. Indica se o usuário atual está inscrito para receber conversas de email.|
-|Email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". Somente leitura. Oferece suporte a $filter.|
-|mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange.|
-|mailNickname|Cadeia de caracteres|O alias de email do grupo que é exclusivo na organização. Essa propriedade deverá ser especificada quando um grupo for criado. Oferece suporte a $filter.|
-|onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. Oferece suporte a $filter.|
-|onPremisesProvisioningErrors|coleção [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
-|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. Somente leitura. |
-|onPremisesSyncEnabled|Booliano|**True** se esse grupo está sincronizado de um diretório local; **false** se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. Oferece suporte a $filter.|
-|preferredDataLocation|String|O local de dados preferida para o grupo. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|proxyAddresses|Coleção de cadeias de caracteres| O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura. Não anulável. Oferece suporte a $filter. |
-|renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|securityEnabled|Booliano|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também é true, o grupo é um grupo de segurança habilitado para email; caso contrário, é um grupo de segurança. Deve ser **false** para grupos do Office 365. Oferece suporte a $filter.|
-|unseenCount|Int32|Contagem de conversas que foram entregues uma ou mais novas postagens desde a última visita do usuário conectado ao grupo.|
-|visibility|String| Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `private`, `public`, ou `hiddenmembership`; os valores em branco são tratados como público.  Consulte [as opções de visibilidade de grupo](#group-visibility-options) para saber mais.<br>Visibilidade pode ser definida somente quando um grupo é criado; não é editável.<br>Visibilidade somente há suporte para grupos unificados; Não há suporte para grupos de segurança.|
+|allowExternalSenders|Boolean| Indica se as pessoas externas à empresa podem enviar mensagens para o grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select. |
+|autoSubscribeNewMembers|Boolean|Indica se os novos membros adicionados ao grupo serão inscritos automaticamente para o recebimento de notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
+|classificação|String|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para esta propriedade são definidos criando um valor de [configuração](groupsetting.md) ClassificationList com base na [definição de modelo](groupsettingtemplate.md).<br><br>Retornado por padrão.|
+|createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
+|description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
+|displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
+|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo a ser criado. Os valores possíveis são `Unified` para criar um grupo do Office 365 ou `DynamicMembership` para grupos dinâmicos.  Para todos os outros tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é **true**. <br><br>Retornado apenas em $select. |
+|email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
+|mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange. <br><br>Retornado por padrão.|
+|mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
+|onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. <br><br>Retornado por padrão.|
+|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado de um local para a nuvem. <br><br>Retornado por padrão. Somente leitura. |
+|onPremisesSyncEnabled|Boolean|**True** se esse grupo estiver sincronizado usando um diretório local; **false** se esse grupo tiver sido sincronizado originalmente usando um diretório local, mas não estiver mais sincronizado; **null** se esse objeto nunca tiver sido sincronizado usando um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
+|preferredDataLocation|String|O local de dados preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
+|proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para filtrar expressões em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
+|renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura.|
+|securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também for true, o grupo será um de segurança habilitado para email; caso contrário, será um grupo de segurança. Deve ser **false** para grupos do Office 365. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. <br><br>Retornado apenas em $select. |
+|visibility|String| Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `private`, `public` ou `hiddenmembership`; os valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
 
-### <a name="group-visibility-options"></a>Opções de visibilidade de grupo
+### <a name="group-visibility-options"></a>Opções de visibilidade do grupo
 
-Aqui está o que significa que cada valor de propriedade de **visibilidade** :
+Veja o que cada valor da propriedade de **visibilidade** significa:
  
 |Valor|Descrição|
 |:----|-----------|
-| `public` | Qualquer pessoa pode ingressar no grupo sem a necessidade de permissão do proprietário.<br>Qualquer pessoa pode ver o conteúdo do grupo.|
-| `private` | Permissão do proprietário é necessária para ingressar no grupo.<br>Não membros não é possível exibir o conteúdo do grupo.|
-| `hiddenmembership` | Permissão do proprietário é necessária para ingressar no grupo.<br>Não membros não é possível exibir o conteúdo do grupo.<br>Não membros não podem ver os membros do grupo.<br>Administradores (global, empresa, usuário e assistência técnica) podem exibir a associação do grupo.<br>O grupo aparece no catálogo de endereços global (GAL).|
+| `public` | Qualquer pessoa pode ingressar no grupo sem precisar de permissão de proprietário.<br>Qualquer pessoa pode exibir o conteúdo do grupo.|
+| `private` | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.|
+| `hiddenmembership` | A permissão de proprietário é necessária para ingressar no grupo.<br>Não membros não podem exibir o conteúdo do grupo.<br>Não membros não podem ver os membros do grupo.<br>Administradores (global, empresa, usuário e helpdesk) podem visualizar a associação do grupo.<br>O grupo aparece no catálogo de endereços global (GAL).|
 
 
 ## <a name="relationships"></a>Relações
@@ -137,18 +139,18 @@ Aqui está o que significa que cada valor de propriedade de **visibilidade** :
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Somente leitura.|
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
-|Unidade|[drive](drive.md)|Unidade de padrão do grupo. Somente leitura.|
-|drives|Coleção [drive](drive.md)|Unidades do grupo. Somente leitura.|
+|Unidade|[unidade](drive.md)|Unidade padrão do grupo. Somente leitura.|
+|unidades|Coleção [drive](drive.md)|As unidades do grupo. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos de calendário do grupo.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
-|groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|A coleção de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
+|groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|O conjunto de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
 |membros|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança) Anulável.|
-|onenote|[OneNote](onenote.md)| Somente leitura.|
+|onenote|[Onenote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 10 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança). Anulável.|
 |Foto|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
 |fotos|Coleção [profilePhoto](profilephoto.md)| As fotos de perfil pertencentes ao grupo. Somente leitura. Anulável.|
-|planejador|[plannerGroup](plannergroup.md)| Ponto de entrada para o recurso Planejador que pode existir para um grupo unificado.|
+|planejador|[plannerGroup](plannergroup.md)| Ponto de entrada para o recurso Planejador que pode existir para um Grupo unificado.|
 |rejectedSenders|Coleção [directoryObject](directoryobject.md)|A lista de usuários ou grupos que não têm permissão para criar eventos de calendário ou postagens nesse grupo. Anulável|
 |configurações|Conjunto [groupSetting](groupsetting.md)| Somente leitura. Anulável.|
 |sites|conjunto de [sites](site.md)|A lista de sites do SharePoint nesse grupo. Acesse o site padrão com /sites/root.|
