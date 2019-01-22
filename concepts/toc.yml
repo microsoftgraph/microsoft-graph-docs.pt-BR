@@ -166,6 +166,13 @@ items:
             href: planner-concept-overview.md
           - name: Trabalho em equipe
             href: teams-concept-overview.md
+            items:
+              - name: Criar um grupo e equipe
+                href: teams-create-group-and-team.md
+              - name: Listar todas as equipes
+                href: teams-list-all-teams.md
+              - name: Como configurar guias internas
+                href: teams-configuring-builtin-tabs.md
           - name: Pastas de trabalho e gráficos
             href: excel-concept-overview.md
             items:
