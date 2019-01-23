@@ -1,36 +1,38 @@
 ---
 title: tipo de recurso de windowsPackageInformation
 description: Contém propriedades para as informações de pacote para uma linha do Windows do aplicativo de negócios.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ac0f9aad1cdba1eaaac12754fd4a4d0ad4a6db32
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 112d84c5bae889e24b889b4598d61a6b3d63db50
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403277"
 ---
 # <a name="windowspackageinformation-resource-type"></a>tipo de recurso de windowsPackageInformation
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Contém propriedades para as informações de pacote para uma linha do Windows do aplicativo de negócios.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode executar em. Os valores possíveis são: `none`, `x86`, `x64`, `arm`, `neutral`.|
-|displayName|Cadeia de caracteres|O nome de exibição.|
-|identityName|Cadeia de caracteres|O Nome da Identidade.|
-|identityPublisher|Cadeia de caracteres|O Editor de identidade.|
-|identityResourceIdentifier|Cadeia de caracteres|O Identificador de Recurso da Identidade.|
-|identityVersion|Cadeia de caracteres|A versão de identidade.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode executar em. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|displayName|String|O nome de exibição.|
+|identityName|String|O Nome da Identidade.|
+|identityPublisher|String|O Editor de identidade.|
+|identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
+|identityVersion|String|A versão de identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -59,7 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 

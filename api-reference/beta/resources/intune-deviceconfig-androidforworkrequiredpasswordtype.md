@@ -1,23 +1,24 @@
 ---
 title: tipo de enum androidForWorkRequiredPasswordType
 description: Android para o trabalho necessário tipo de senha.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cc944cf87e9a8daa5c50f31fbb095f09dbee1a65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3da48449de63fa134c68e3f27fd415c286666e4e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933577"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419601"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>tipo de enum androidForWorkRequiredPasswordType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Android para o trabalho necessário tipo de senha.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -29,7 +30,6 @@ Android para o trabalho necessário tipo de senha.
 |atLeastAlphabetic|5|Senha de pelo menos alfabética necessária.|
 |atLeastAlphanumeric|6|Senha de pelo menos alfanumérica necessária.|
 |alphanumericWithSymbols|7|Pelo menos alfanumérico com senha de símbolos necessária.|
-
 
 
 

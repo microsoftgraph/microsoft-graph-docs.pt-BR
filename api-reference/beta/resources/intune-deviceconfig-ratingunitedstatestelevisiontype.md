@@ -1,23 +1,24 @@
 ---
 title: tipo de enum ratingUnitedStatesTelevisionType
 description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9f4492fac5bc003fdaba15a39b0f58892872ea87
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 405aad7e63d1c323503dde0b0bd8829702a7dcaf
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964799"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403354"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enum ratingUnitedStatesTelevisionType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Rótulos de classificação de conteúdo de TV nos Estados Unidos
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -29,7 +30,6 @@ Rótulos de classificação de conteúdo de TV nos Estados Unidos
 |parentalGuidance|5|TV-PG, orientação dos pais|
 |childrenAbove14|6|14 de TV, filhos age 14 e acima|
 |adultos|7|TV-MA, somente para adultos|
-
 
 
 

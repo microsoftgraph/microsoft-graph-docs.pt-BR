@@ -4,12 +4,12 @@ description: 'Fornece configurações para personalizar a sincronização de per
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c4e8810202dbae5fdc3d978bd27e0463f0424d2e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 51563255c11406c26cfa3b02b7b7bb868ed935c8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415653"
 ---
 # <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso de educationSynchronizationCustomization
 
@@ -25,8 +25,8 @@ Fornece configurações para personalizar a sincronização de perfil de dados d
 |:-|:-|:-|
 | **optionalPropertiesToSync** | coleção de cadeia de caracteres |  A coleção de nomes de propriedade para sincronização. Se definido como nulo, todas as propriedades serão sincronizados.       |
 | **synchronizationStartDate** | DateTime |  A data em que a sincronização deve ser iniciado. Este valor deve ser definido como uma data futura. Se definido como null, o recurso será sincronizado após a conclusão da configuração do perfil. **Observação:** Isso se aplica apenas à propriedade **StudentEnrollment** .      |
-|**isSyncDeferred** |Booliano | Indica se a sincronização da entidade pai é adiada para uma data posterior. |
-| **allowDisplayNameUpdate** | Booliano |  Indica se o nome de exibição do recurso pode ser substituído pela sincronização.         |
+|**isSyncDeferred** |Boolean | Indica se a sincronização da entidade pai é adiada para uma data posterior. |
+| **allowDisplayNameUpdate** | Boolean |  Indica se o nome de exibição do recurso pode ser substituído pela sincronização.         |
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -35,7 +35,7 @@ Fornece configurações para personalizar a sincronização de perfil de dados d
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomization"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
 }-->
 
 ```json

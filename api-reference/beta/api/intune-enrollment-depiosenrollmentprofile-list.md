@@ -1,25 +1,26 @@
 ---
 title: Lista depIOSEnrollmentProfiles
 description: Lista as propriedades e os relacionamentos dos objetos depIOSEnrollmentProfile.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5493628c79ebdc396df907ac3f2556e762cf6091
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 981806afcb24855cd9fb1a881a021c0e65cb983f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402311"
 ---
 # <a name="list-depiosenrollmentprofiles"></a>Lista depIOSEnrollmentProfiles
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Lista as propriedades e os relacionamentos dos objetos [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,6 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
@@ -60,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1559
+Content-Length: 2006
 
 {
   "value": [
@@ -72,6 +74,7 @@ Content-Length: 1559
       "requiresUserAuthentication": true,
       "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
       "enableAuthenticationViaCompanyPortal": true,
+      "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
       "isDefault": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
@@ -88,6 +91,8 @@ Content-Length: 1559
       "zoomDisabled": true,
       "siriDisabled": true,
       "diagnosticsDisabled": true,
+      "displayToneSetupDisabled": true,
+      "privacyPaneDisabled": true,
       "iTunesPairingMode": "allow",
       "managementCertificates": [
         {
@@ -101,12 +106,18 @@ Content-Length: 1559
       "sharedIPadMaximumUserCount": 10,
       "enableSharedIPad": true,
       "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-      "enableSingleAppEnrollmentMode": true
+      "enableSingleAppEnrollmentMode": true,
+      "homeButtonScreenDisabled": true,
+      "iMessageAndFaceTimeScreenDisabled": true,
+      "onBoardingScreenDisabled": true,
+      "screenTimeScreenDisabled": true,
+      "simSetupScreenDisabled": true,
+      "softwareUpdateScreenDisabled": true,
+      "watchMigrationScreenDisabled": true
     }
   ]
 }
 ```
-
 
 
 

@@ -1,30 +1,30 @@
 ---
 title: tipo de enum ratingUnitedKingdomTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Reino Unido
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 22032f51341cd19eb104d758f772c7e2028b8eb1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: aa7f6c0753bb5e5c0d74925a2feea5b16e8c663f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403403"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>tipo de enum ratingUnitedKingdomTelevisionType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Rótulos de classificação de conteúdo de TV no Reino Unido
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
 |allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
 |cuidado|2|Permitindo que o conteúdo de TV com uma mensagem de aviso|
-
 
 
 

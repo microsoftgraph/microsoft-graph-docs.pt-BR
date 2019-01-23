@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00859a4d9c230682a9ac66f5d46e9852ba141ce5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6a984e0d6671416f84c51211019854a808f9728
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990870"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420070"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Gerenciamento de dispositivos no Microsoft Intune
 
@@ -19,7 +19,12 @@ ms.locfileid: "27990870"
 
 - [Consentimento do administrador](intune-devices-adminconsent.md)
 - [Estado de consentimento do administrador](intune-devices-adminconsentstate.md)
+- [Detalhes do download de conjunto de log de aplicativos](intune-devices-applogcollectiondownloaddetails.md)
+- [Solicitação de conjunto de log de aplicativo](intune-devices-applogcollectionrequest.md)
+- [Algoritmo de descriptografia do log de aplicativo](intune-devices-applogdecryptionalgorithm.md)
+- [Estado de carregamento do log de aplicativo](intune-devices-apploguploadstate.md)
 - [Certificado de notificação por push da Apple](intune-devices-applepushnotificationcertificate.md)
+- [Evento de solução de problemas token VPP da Apple](intune-troubleshooting-applevpptokentroubleshootingevent.md)
 - [Ator de auditoria](intune-auditing-auditactor.md)
 - [Evento de auditoria](intune-auditing-auditevent.md)
 - [Propriedade de auditoria](intune-auditing-auditproperty.md)
@@ -55,15 +60,17 @@ ms.locfileid: "27990870"
 - [Estado do usuário de script de gerenciamento de dispositivo](intune-devices-devicemanagementscriptuserstate.md)
 - [Estado de assinatura do gerenciamento de dispositivo](intune-devices-devicemanagementsubscriptionstate.md)
 - [Inscrições de gerenciamento de dispositivo](intune-devices-devicemanagementsubscriptions.md)
+- [Detalhes de erro de solução de problemas do dispositivo gerenciamento](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
+- [Recurso de erro de solução de problemas da gerenciamento de dispositivo](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Evento de solução de problemas com o gerenciamento de dispositivos](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Resumo do sistema operacional do dispositivo](intune-devices-deviceoperatingsystemsummary.md)
 - [Visão geral sobre a proteção do dispositivo](intune-devices-deviceprotectionoverview.md)
 - [Estado do registro de dispositivo](intune-devices-deviceregistrationstate.md)
-- [Incorporado s i m código de ativação](intune-esim-embeddedsimactivationcode.md)
-- [Incorporado s i m pool de código de ativação](intune-esim-embeddedsimactivationcodepool.md)
-- [Incorporado s i m atribuição de pool de código de ativação](intune-esim-embeddedsimactivationcodepoolassignment.md)
-- [Incorporado s i m estado do dispositivo](intune-esim-embeddedsimdevicestate.md)
-- [Incorporado s i m valor de estado do dispositivo](intune-esim-embeddedsimdevicestatevalue.md)
+- [Código de ativação SIM incorporado](intune-esim-embeddedsimactivationcode.md)
+- [Pool de código de ativação SIM incorporado](intune-esim-embeddedsimactivationcodepool.md)
+- [Atribuição do pool de código da ativação do incorporado SIM](intune-esim-embeddedsimactivationcodepoolassignment.md)
+- [Estado do dispositivo SIM incorporado](intune-esim-embeddedsimdevicestate.md)
+- [Valor de estado do dispositivo SIM incorporado](intune-esim-embeddedsimdevicestatevalue.md)
 - [Evento de solução de problemas de registro](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Informações de hardware](intune-devices-hardwareinformation.md)
 - [Estado de integridade](intune-devices-healthstate.md)
@@ -97,7 +104,6 @@ ms.locfileid: "27990870"
 - [Histórico de destino do aplicativo de solução de problemas de aplicativos móveis](intune-troubleshooting-mobileapptroubleshootingapptargethistory.md)
 - [Histórico de atualização do aplicativo de solução de problemas de aplicativos móveis](intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md)
 - [Histórico de check-in do dispositivo de solução de problemas de aplicativos móveis](intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md)
-- [Evento de solução de problemas de aplicativos móveis](intune-troubleshooting-mobileapptroubleshootingevent.md)
 - [Item de histórico de solução de problemas de aplicativos móveis](intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 - [IPv4 condição de gerenciamento de configuração de rede](intune-fencing-networkipv4configurationmanagementcondition.md)
 - [Rede de condição de gerenciamento de configuração de IPv6](intune-fencing-networkipv6configurationmanagementcondition.md)

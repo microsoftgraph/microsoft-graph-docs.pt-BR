@@ -3,21 +3,22 @@ title: tipo de recurso de windowsKioskConfiguration
 description: Esta entidade fornece descrições dos declarado métodos, propriedades e os relacionamentos expostos pelo recurso de quiosque.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 2eecf86346af0d0f029b800347eb7a3ba08f4e19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f091d9700721a1be1baf5982b0fb8ce0fe3b00ec
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937933"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403956"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>tipo de recurso de windowsKioskConfiguration
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Esta entidade fornece descrições dos declarado métodos, propriedades e os relacionamentos expostos pelo recurso de quiosque.
+
 
 Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -33,22 +34,24 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|kioskProfiles|coleção [windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)|Essa configuração de política permite definir uma lista de perfis de quiosque de uma configuração de quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskBrowserDefaultUrl|Cadeia de caracteres|Especifique a URL de padrão deve navegar o navegador no lançamento.|
-|kioskBrowserEnableHomeButton|Booliano|Habilite o botão de página inicial do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
-|kioskBrowserEnableNavigationButtons|Booliano|Habilite buttons(forward/back) de navegação do navegador quiosque. Por padrão, os botões de navegação são desabilitados.|
-|kioskBrowserEnableEndSessionButton|Booliano|Habilite o botão de sessão do navegador quiosque encerrar. Por padrão, o botão de sessão encerrar está desabilitado.|
+|kioskProfiles|coleção [windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)|Essa configuração de política permite definir uma lista de perfis de quiosque de uma configuração de quiosque. Essa coleção pode conter um máximo de 3 elementos.|
+|kioskBrowserDefaultUrl|String|Especifique a URL de padrão deve navegar o navegador no lançamento.|
+|kioskBrowserEnableHomeButton|Boolean|Habilite o botão de página inicial do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
+|kioskBrowserEnableNavigationButtons|Boolean|Habilite buttons(forward/back) de navegação do navegador quiosque. Por padrão, os botões de navegação são desabilitados.|
+|kioskBrowserEnableEndSessionButton|Boolean|Habilite o botão de sessão do navegador quiosque encerrar. Por padrão, o botão de sessão encerrar está desabilitado.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Especifique o número de minutos que a sessão está ociosa até que o navegador de quiosque reinicia em um estado atualizado.  Valores válidos são 1-1440. Valores válidos 1 a 1440|
 |kioskBrowserBlockedURLs|String collection|Especifique as URLs que os navegadores de quiosque não devem navegar|
 |kioskBrowserBlockedUrlExceptions|String collection|Especifique as URLs que o navegador de quiosque é permitido para navegar até|
+|edgeKioskEnablePublicBrowsing|Boolean|Habilite o modo de quiosque navegação pública para o navegador do Microsoft Edge. O padrão é false.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Especifica o tempo em minutos a partir da última atividade do usuário antes de quiosque Microsoft Edge redefine.  Valores válidos são 0-1440. O padrão é 5. 0 não indica que nenhuma reset. Valores válidos 0 a 1440|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -94,6 +97,7 @@ Veja a seguir uma representação JSON do recurso.
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "String",
             "name": "String",
+            "appType": "String",
             "appUserModelId": "String",
             "appId": "String",
             "containedAppId": "String"
@@ -120,10 +124,11 @@ Veja a seguir uma representação JSON do recurso.
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "String"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true,
+  "edgeKioskResetAfterIdleTimeInMinutes": 1024
 }
 ```
-
 
 
 
