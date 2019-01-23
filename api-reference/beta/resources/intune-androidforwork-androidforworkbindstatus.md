@@ -1,23 +1,24 @@
 ---
 title: tipo de enum androidForWorkBindStatus
 description: Associe o status do inquilino com a API do EMM Google
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 32bbfa92e91be7bd7773396dfca22c0763bbbfd3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: acb6fbf3946973dec75da5ea3b31a6e3faa486d0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933838"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399462"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>tipo de enum androidForWorkBindStatus
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Associe o status do inquilino com a API do EMM Google
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ Associe o status do inquilino com a API do EMM Google
 |limite|1|Ainda não documentado|
 |boundAndValidated|2|Ainda não documentado|
 |desvinculação|3|Ainda não documentado|
-
 
 
 

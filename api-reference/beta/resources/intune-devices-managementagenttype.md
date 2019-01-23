@@ -1,23 +1,24 @@
 ---
 title: tipo de enum managementAgentType
 description: Tipo de agente de gerenciamento.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1711ad647afabc2b8877bd2f99b049bd1c1dd4e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9c42d4ea4a5114bc42966891e4cd60ea87ca303e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914280"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401002"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enum managementAgentType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Tipo de agente de gerenciamento.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -33,7 +34,6 @@ Tipo de agente de gerenciamento.
 |jamf|32|Os atributos de dispositivo são buscados no Jamf.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado por CloudDPC do Google.|
 |microsoft365ManagedMdm|258|Este dispositivo é gerenciado pelo Microsoft 365 através de Intune.|
-
 
 
 

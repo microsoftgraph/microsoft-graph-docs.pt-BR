@@ -1,32 +1,34 @@
 ---
 title: tipo de recurso de operatingSystemVersionRange
 description: Intervalo de versão do sistema operacional.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c0b81482ad4b48ad5fe59b1ec0109fcd3bf03f83
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: aaac008b013a8bf2cfd1a88d1fab06a523abb949
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918543"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398524"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>tipo de recurso de operatingSystemVersionRange
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Intervalo de versão do sistema operacional.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|Cadeia de caracteres|A descrição deste intervalo (por exemplo, válido 1702 compilações)|
-|lowestVersion|Cadeia de caracteres|A menor inclusive versão que contém esse intervalo.|
-|highestVersion|Cadeia de caracteres|A versão inclusive maior que contém esse intervalo.|
+|description|String|A descrição deste intervalo (por exemplo, válido 1702 compilações)|
+|lowestVersion|String|A menor inclusive versão que contém esse intervalo.|
+|highestVersion|String|A versão inclusive maior que contém esse intervalo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -42,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "highestVersion": "String"
 }
 ```
-
 
 
 
