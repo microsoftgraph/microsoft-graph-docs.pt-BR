@@ -4,12 +4,12 @@ description: 'Representa o esquema SIS de origem. Isso permite que o sistema par
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f49d263703751b5dabd82ab904b6d572e5a7b263
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f1e51bd0039b28aa08fa71956efc5143df77651c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420966"
 ---
 # <a name="educationsynchronizationdataprovider-resource-type"></a>tipo de recurso de educationSynchronizationDataProvider
 
@@ -29,3 +29,18 @@ Representa o esquema SIS de origem. Isso permite que o sistema para saber como m
 ## <a name="properties"></a>Propriedades
 
 Não há propriedades são expostas por esse tipo.
+
+
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationSynchronizationDataProvider "
+}-->
+
+```json
+{
+}
+```

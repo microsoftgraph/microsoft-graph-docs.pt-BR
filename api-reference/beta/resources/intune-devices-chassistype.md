@@ -1,23 +1,24 @@
 ---
 title: tipo de enum chassisType
 description: Tipo de chassi.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7ad3d520042b44feb3bdd32ca07e6d783ce7d228
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 29daba2a6e1c9aacf97b3b5b946d925c4163ea69
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422380"
 ---
 # <a name="chassistype-enum-type"></a>tipo de enum chassisType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Tipo de chassi.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -30,7 +31,6 @@ Tipo de chassi.
 |Tablet|101|Tablet móvel.|
 |mobileOther|102|Outro mobile.|
 |mobileUnknown|103|Unknown móvel.|
-
 
 
 

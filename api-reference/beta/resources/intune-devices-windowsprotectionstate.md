@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de windowsProtectionState
 description: Entidade de status de proteção do dispositivo.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7f15044f597fb04e98571de7aec8796e9a9ddf74
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954523"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423584"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso de windowsProtectionState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Entidade de status de proteção do dispositivo.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -27,23 +28,23 @@ Entidade de status de proteção do dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
-|malwareProtectionEnabled|Booliano|Anti-malware está habilitado ou não|
+|id|String|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
+|malwareProtectionEnabled|Boolean|Anti-malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como limpar ou verificação completa ou pendentes reinicialização etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Booliano|Proteção em tempo real está habilitada ou não?|
-|networkInspectionSystemEnabled|Booliano|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Booliano|Verificação rápida vencidos ou não?|
-|fullScanOverdue|Booliano|Completos exame vencido ou não?|
-|signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
-|rebootRequired|Booliano|Reinicialização necessária ou não?|
-|fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão do mecanismo de proteção de ponto de extremidade atual|
-|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Atual anti-malware versão|
+|realTimeProtectionEnabled|Boolean|Proteção em tempo real está habilitada ou não?|
+|networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
+|quickScanOverdue|Boolean|Verificação rápida vencidos ou não?|
+|fullScanOverdue|Boolean|Completos exame vencido ou não?|
+|signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
+|rebootRequired|Boolean|Reinicialização necessária ou não?|
+|fullScanRequired|Boolean|Verificação completa necessária ou não?|
+|engineVersion|String|Versão do mecanismo de proteção de ponto de extremidade atual|
+|signatureVersion|String|Versão atual de definições de malware|
+|antiMalwareVersion|String|Atual anti-malware versão|
 |lastQuickScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Última versão de assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de informado último status de integridade do dispositivo|
 
 ## <a name="relationships"></a>Relações
@@ -82,7 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

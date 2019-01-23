@@ -1,25 +1,26 @@
 ---
 title: Criar cartToClassAssociation
 description: Crie um novo objeto de cartToClassAssociation.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 81efbb2c9c06b9a07b1af9ce8f796dd5325ad5fc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e2368507adbf7e0065b10d4c0c93353d81d5d936
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925473"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423668"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Crie um novo objeto de [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,12 +50,12 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |version|Int32|Versão do CartToClassAssociation.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
-|description|Cadeia de caracteres|Admin fornecido descrição do que o CartToClassAssociation.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
+|description|String|Admin fornecido descrição do que o CartToClassAssociation.|
 |deviceCartIds|String collection|Identificadores de carrinhos de dispositivo a ser associado a classes.|
 |classroomIds|String collection|Identificadores de salas a ser associado ao dispositivo carrinhos de.|
 
@@ -64,16 +65,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 Content-type: application/json
-Content-length: 335
+Content-length: 271
 
 {
   "@odata.type": "#microsoft.graph.cartToClassAssociation",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "version": 7,
   "displayName": "Display Name value",
   "description": "Description value",
@@ -109,7 +110,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

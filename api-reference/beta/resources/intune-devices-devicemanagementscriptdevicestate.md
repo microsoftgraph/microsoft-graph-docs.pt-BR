@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de deviceManagementScriptDeviceState
 description: Contém propriedades para o dispositivo executada no estado do script de gerenciamento de dispositivo.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7f50026e549e9927b33ebe8a27b6206daecf0ea5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8274a6dd5b38ee419738d250af0267533de6f00a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968852"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422471"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>tipo de recurso de deviceManagementScriptDeviceState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Contém propriedades para o dispositivo executada no estado do script de gerenciamento de dispositivo.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -30,9 +31,9 @@ Contém propriedades para o dispositivo executada no estado do script de gerenci
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
+|id|String|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado de execução mais recente do script de gerenciamento de dispositivo. Os valores possíveis são: `unknown`, `success`, `fail`.|
-|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
+|resultMessage|String|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivo executa.|
 |errorCode|Int32|Código de erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
@@ -61,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorDescription": "String"
 }
 ```
-
 
 
 

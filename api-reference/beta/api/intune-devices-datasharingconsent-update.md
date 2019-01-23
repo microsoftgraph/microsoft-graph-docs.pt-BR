@@ -1,25 +1,26 @@
 ---
 title: Atualizar dataSharingConsent
 description: Atualize as propriedades de um objeto dataSharingConsent.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b3893a272e2fc369bf3528bb1bb5878775add521
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 143e2c655adac2403f49bb92afff2aca30a3653f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938563"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421113"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualize as propriedades de um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O consentimento de compartilhamento de dados Id|
-|Nome_para_exibição_do_serviço|Cadeia de caracteres|O nome para exibição do fluxo de trabalho de serviço|
-|termsUrl|Cadeia de caracteres|O TermsUrl para os consentimento de compartilhamento de dados|
-|concedido|Booliano|O estado foram concedido para os consentimento de compartilhamento de dados|
+|id|String|O consentimento de compartilhamento de dados Id|
+|Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
+|termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
+|concedido|Boolean|O estado foram concedido para os consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|Cadeia de caracteres|O Upn do usuário que tenha concedido consentimento para esta conta|
-|grantedByUserId|Cadeia de caracteres|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
+|grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
+|grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
 
 
 
@@ -63,14 +64,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{dataSharingConsentId}
 Content-type: application/json
-Content-length: 276
+Content-length: 333
 
 {
+  "@odata.type": "#microsoft.graph.dataSharingConsent",
   "serviceDisplayName": "Service Display Name value",
   "termsUrl": "https://example.com/termsUrl/",
   "granted": true,
@@ -98,7 +101,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

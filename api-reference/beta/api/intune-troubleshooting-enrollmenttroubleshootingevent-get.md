@@ -1,25 +1,26 @@
 ---
 title: Get enrollmentTroubleshootingEvent
 description: Propriedades de leitura e relações do objeto enrollmentTroubleshootingEvent.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e22246c3401d0a45d0b1df70fa5a35bde2b253c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 46016764cc47cdcae6b54f1bb8fc5a0f8b7e902f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421057"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Propriedades de leitura e relações do objeto [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -37,7 +38,8 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsoft.com/en-us/graph/query-parameters) para ajudar a personalizar a resposta.
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Cabeçalho|Valor|
 |:---|:---|
@@ -51,6 +53,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
@@ -62,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 601
+Content-Length: 1318
 
 {
   "value": {
@@ -70,6 +73,28 @@ Content-Length: 601
     "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
     "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
     "correlationId": "Correlation Id value",
+    "troubleshootingErrorDetails": {
+      "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+      "context": "Context value",
+      "failure": "Failure value",
+      "failureDetails": "Failure Details value",
+      "remediation": "Remediation value",
+      "resources": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+          "text": "Text value",
+          "link": "Link value"
+        }
+      ]
+    },
+    "eventName": "Event Name value",
+    "additionalInformation": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
     "managedDeviceIdentifier": "Managed Device Identifier value",
     "operatingSystem": "Operating System value",
     "osVersion": "Os Version value",
@@ -81,7 +106,6 @@ Content-Length: 601
   }
 }
 ```
-
 
 
 

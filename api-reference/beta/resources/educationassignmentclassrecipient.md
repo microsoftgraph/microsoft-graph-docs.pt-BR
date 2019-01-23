@@ -4,12 +4,12 @@ description: 'Usada dentro da propriedade assignment.assignTo. Quando definido c
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: db5ddb1875b9c149d400c74c9fffdd37935853e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d42be11f79441f802a0c8885ca5fd3817e744b04
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934293"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422163"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>tipo de recurso de educationAssignmentClassRecipient
 
@@ -23,6 +23,21 @@ Este recurso é uma subclasse de [educationAssignmentRecipient](educationassignm
 
 Nenhum.
 
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationAssignmentClassRecipient"
+}-->
+
+```json
+{
+
+}
+
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
