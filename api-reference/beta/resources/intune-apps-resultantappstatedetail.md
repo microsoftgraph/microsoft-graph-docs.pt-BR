@@ -1,23 +1,24 @@
 ---
 title: tipo de enum resultantAppStateDetail
 description: Enum indicando maiores detalhes sobre por que um aplicativo tem um determinado estado de instalação.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cf665c81219e501ea96d6fcf213214ec8a7327d2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 34b4d885f9ed2a23669bc2e30c91de40af8d915b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410235"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>tipo de enum resultantAppStateDetail
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Enum indicando maiores detalhes sobre por que um aplicativo tem um determinado estado de instalação.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -32,7 +33,6 @@ Enum indicando maiores detalhes sobre por que um aplicativo tem um determinado e
 |minimumOsVersionNotMet|-1002|Versão do sistema operacional no dispositivo de destino é menor que o mínimo configurado.|
 |minimumDiskSpaceNotMet|-1001|Espaço em disco disponível no dispositivo de destino é menor que o mínimo configurado.|
 |processorArchitectureNotApplicable|-1000|Arquitetura de dispositivo (ex.: x86/amd64) não é aplicável para o aplicativo.|
-
 
 
 

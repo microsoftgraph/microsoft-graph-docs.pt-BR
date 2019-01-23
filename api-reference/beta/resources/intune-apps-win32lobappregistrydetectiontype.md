@@ -1,23 +1,24 @@
 ---
 title: tipo de enum win32LobAppRegistryDetectionType
 description: Contém todos os suporte para o tipo de detecção de dados de registro.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0098f0aec6b23f9660fe69064c0c3131b009cab1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 188f206e42b55e0c2cc2f8b6ed831f19a4b2052a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965863"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411082"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>tipo de enum win32LobAppRegistryDetectionType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Contém todos os suporte para o tipo de detecção de dados de registro.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ Contém todos os suporte para o tipo de detecção de dados de registro.
 |string|3|Tipo de valor de cadeia de caracteres.|
 |inteiro|4|Tipo de valor inteiro.|
 |version|5|Tipo de valor de versão.|
-
 
 
 

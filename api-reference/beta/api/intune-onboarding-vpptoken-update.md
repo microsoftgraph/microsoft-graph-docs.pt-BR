@@ -1,25 +1,26 @@
 ---
 title: Atualizar vppToken
 description: Atualizar as propriedades de um objeto de vppToken.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d1e38660c1fa83ced205b0bbcc506303a3968c41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 02bd90c2a169dd600ae3dda475728da9e11fc587
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408233"
 ---
 # <a name="update-vpptoken"></a>Atualizar vppToken
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualizar as propriedades de um objeto [vppToken](../resources/intune-onboarding-vpptoken.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -62,10 +63,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
 |displayName|String|Um administrador especificado token nome amigável.|
 |locationName|String|Localização de token retornada da Apple VPP.|
-|claimTokenManagementFromExternalMdm|Booliano|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
+|claimTokenManagementFromExternalMdm|Boolean|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
+|roleScopeTagIds|String collection|Função IDs de marcas de escopo atribuída a essa entidade.|
 
 
 
@@ -73,21 +75,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar o [vppTo
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [vppToken](../resources/intune-onboarding-vpptoken.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/vppTokens/{vppTokenId}
 Content-type: application/json
-Content-length: 957
+Content-length: 1002
 
 {
+  "@odata.type": "#microsoft.graph.vppToken",
   "organizationName": "Organization Name value",
   "vppTokenAccountType": "education",
   "appleId": "Apple Id value",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "tokenActionResults": [
     {
@@ -104,7 +107,10 @@ Content-length: 957
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -113,7 +119,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1115
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -141,10 +147,12 @@ Content-Length: 1053
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

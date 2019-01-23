@@ -1,25 +1,26 @@
 ---
 title: Criar windowsUpdateForBusinessConfiguration
 description: Cria um novo objeto windowsUpdateForBusinessConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: da5951d2ef74b0d6da132f19ca1514c46fe70f86
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: dade72412a64b5703fa253eda0a40829f2475549
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935532"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406189"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Criar windowsUpdateForBusinessConfiguration
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Cria um novo objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,34 +51,34 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsU
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Modo de otimização de entrega. Os valores possíveis são: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
 |prereleaseFeatures|[prereleaseFeatures](../resources/intune-deviceconfig-prereleasefeatures.md)|Os recursos de pré-lançamento. Os valores possíveis são: `userDefined`, `settingsOnly`, `settingsAndExperimentations`, `notAllowed`.|
-|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Modo de atualização automática. Os valores possíveis são: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`.|
-|microsoftUpdateServiceAllowed|Booliano|Permitir serviço Microsoft Update|
-|driversExcluded|Booliano|Excluir drivers de atualização do Windows|
+|automaticUpdateMode|[automaticUpdateMode](../resources/intune-deviceconfig-automaticupdatemode.md)|Modo de atualização automática. Os valores possíveis são: `userDefined`, `notifyDownload`, `autoInstallAtMaintenanceTime`, `autoInstallAndRebootAtMaintenanceTime`, `autoInstallAndRebootAtScheduledTime`, `autoInstallAndRebootWithoutEndUserControl`, `windowsDefault`.|
+|microsoftUpdateServiceAllowed|Boolean|Permitir serviço Microsoft Update|
+|driversExcluded|Boolean|Excluir drivers de atualização do Windows|
 |installationSchedule|[windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-windowsupdateinstallscheduletype.md)|Cronograma de instalação|
 |qualityUpdatesDeferralPeriodInDays|Int32|Aditar atualizações de qualidade por este número de dias|
 |featureUpdatesDeferralPeriodInDays|Int32|Aditar atualizações de recursos por este número de dias|
-|qualityUpdatesPaused|Booliano|Pausar atualizações de qualidade|
-|featureUpdatesPaused|Booliano|Pausar atualizações de recursos|
+|qualityUpdatesPaused|Boolean|Pausar atualizações de qualidade|
+|featureUpdatesPaused|Boolean|Pausar atualizações de recursos|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de qualidade|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de recursos|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determina quais dispositivos de filial receberão suas atualizações de. Os possíveis valores são: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Booliano|Defina ignorar a verificação de todos os antes da reinicialização: nível de bateria = 40%, a presença do usuário, exibição necessários, o modo de apresentação, o modo de tela inteira, o estado de chamada telefônica, modo jogo etc. |
+|skipChecksBeforeRestart|Boolean|Defina ignorar a verificação de todos os antes da reinicialização: nível de bateria = 40%, a presença do usuário, exibição necessários, o modo de apresentação, o modo de tela inteira, o estado de chamada telefônica, modo jogo etc. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Agendada a instalação da atualização as semanas do mês. Os possíveis valores são: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|qualityUpdatesPauseStartDateTime|Cadeia de caracteres|Qualidade pausa de atualizações iniciar datetime|
-|featureUpdatesPauseStartDateTime|Cadeia de caracteres|Recurso Iniciar de pausar atualizações datetime|
+|qualityUpdatesPauseStartDate|Data|Data de início da pausa de atualizações de qualidade. Esta propriedade é somente leitura.|
+|featureUpdatesPauseStartDate|Data|Data de início do recurso atualizações pausar. Esta propriedade é somente leitura.|
 |featureUpdatesRollbackWindowInDays|Int32|O número de dias após uma atualização de recurso para o qual uma reversão é válida|
-|qualityUpdatesWillBeRolledBack|Booliano|Especifica se a reversão de atualizações de qualidade do dispositivo próximo check-in|
-|featureUpdatesWillBeRolledBack|Booliano|Especifica se a reversão de atualizações de recurso no dispositivo próximo check-in|
+|qualityUpdatesWillBeRolledBack|Boolean|Especifica se a reversão de atualizações de qualidade do dispositivo próximo check-in|
+|featureUpdatesWillBeRolledBack|Boolean|Especifica se a reversão de atualizações de recurso no dispositivo próximo check-in|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Datetime Iniciar de reversão de atualizações de qualidade|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Datetime Iniciar de reversão de atualizações do recurso|
 |engagedRestartDeadlineInDays|Int32|Prazo final em dias antes de agendar automaticamente e executá-lo uma reinicialização pendente fora do horário ativo, com o intervalo válido de 2 a 30 dias|
@@ -86,6 +87,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsU
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Especifique o método pelo qual a reinicialização automática necessário notificação é liberada. Os valores possíveis são: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Especifique o período para notificações de lembrete de aviso de reinicialização automática. Valores compatíveis: 2, 4, 8, 12 ou 24 (horas).|
 |scheduleImminentRestartWarningInMinutes|Int32|Especifique o período para notificações de aviso iminente da reinicialização automática. Suporte para valores: 15, 30 ou 60 (minutos).|
+|userPauseAccess|[habilitação] (.. /Resources/Intune-Shared-Enablement
+.MD)|Especifica se é habilitar o acesso do usuário final pausar atualizações de software. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -93,16 +96,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsU
 Se bem-sucedido, este método retornará um código de resposta `201 Created` e um objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1863
+Content-length: 1804
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -129,8 +132,8 @@ Content-length: 1863
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -141,7 +144,8 @@ Content-length: 1863
   "engagedRestartTransitionScheduleInDays": 6,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
-  "scheduleImminentRestartWarningInMinutes": 7
+  "scheduleImminentRestartWarningInMinutes": 7,
+  "userPauseAccess": "enabled"
 }
 ```
 
@@ -150,7 +154,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1971
+Content-Length: 1976
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -183,8 +187,8 @@ Content-Length: 1971
   "businessReadyUpdatesOnly": "all",
   "skipChecksBeforeRestart": true,
   "updateWeeks": "firstWeek",
-  "qualityUpdatesPauseStartDateTime": "Quality Updates Pause Start Date Time value",
-  "featureUpdatesPauseStartDateTime": "Feature Updates Pause Start Date Time value",
+  "qualityUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
+  "featureUpdatesPauseStartDate": "<Unknown Primitive Type Edm.Date>",
   "featureUpdatesRollbackWindowInDays": 2,
   "qualityUpdatesWillBeRolledBack": true,
   "featureUpdatesWillBeRolledBack": true,
@@ -195,10 +199,10 @@ Content-Length: 1971
   "engagedRestartTransitionScheduleInDays": 6,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
-  "scheduleImminentRestartWarningInMinutes": 7
+  "scheduleImminentRestartWarningInMinutes": 7,
+  "userPauseAccess": "enabled"
 }
 ```
-
 
 
 

@@ -1,35 +1,37 @@
 ---
 title: tipo de recurso de deviceConfigurationTargetedUserAndDevice
 description: Resumo de um conjunto de políticas de configuração de dispositivo de conflito.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 234cc9c909875d835ba54709f30f1ca306eb0954
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410739"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>tipo de recurso de deviceConfigurationTargetedUserAndDevice
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Resumo de um conjunto de políticas de configuração de dispositivo de conflito.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |deviceId|Cadeia de caracteres|A id do dispositivo em que o check-in.|
-|deviceName|Cadeia de caracteres|O nome do dispositivo em que o check-in.|
-|userId|Cadeia de caracteres|A identificação do usuário no check-in.|
-|userDisplayName|Cadeia de caracteres|O nome de exibição do usuário no check-in|
-|userPrincipalName|Cadeia de caracteres|O UPN do usuário no check-in.|
+|deviceName|String|O nome do dispositivo em que o check-in.|
+|userId|String|A identificação do usuário no check-in.|
+|userDisplayName|String|O nome de exibição do usuário no check-in|
+|userPrincipalName|String|O UPN do usuário no check-in.|
 |lastCheckinDateTime|DateTimeOffset|Última hora de check-in para este par de dispositivo do usuário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -48,7 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

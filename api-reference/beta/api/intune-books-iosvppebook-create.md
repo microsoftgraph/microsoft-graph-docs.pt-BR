@@ -1,25 +1,26 @@
 ---
 title: Criar iosVppEBook
 description: Cria um novo objeto iosVppEBook.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 96fb518c3ecc9434aaa1c0bd4da1cf18271a8a57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409752"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Cria um novo objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,7 +50,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |description|Cadeia de caracteres|Descrição. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|Cadeia de caracteres|Publicador. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
@@ -57,8 +58,8 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
@@ -67,6 +68,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
+|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade.|
 
 
 
@@ -74,12 +76,13 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 Se tiver êxito, este método retornará o código de resposta `201 Created` e um objeto [iosVppEBook](../resources/intune-books-iosvppebook.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 Content-type: application/json
-Content-length: 856
+Content-length: 854
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -92,7 +95,6 @@ Content-length: 856
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
@@ -104,7 +106,10 @@ Content-length: 856
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -113,7 +118,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 964
+Content-Length: 1026
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -140,10 +145,12 @@ Content-Length: 964
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

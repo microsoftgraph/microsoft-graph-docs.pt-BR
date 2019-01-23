@@ -4,12 +4,12 @@ description: Representa as informações de licença para atribuir às contas de
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 757e080a8b2c6f3f01fa1663f10c9b0b98eaf4d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c60b868ab8d973f6249d7e9ea2b30415d4b8a1b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409675"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>tipo de recurso de educationSynchronizationLicenseAssignment
 
@@ -30,12 +30,12 @@ Representa as informações de licença para atribuir às contas de usuário. O 
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment"
+  "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "skuIds": ["String"]
 }
 ```

@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de intuneBrandingProfile
 description: Essa entidade contém dados que são utilizados em Personalizar a aparência de nível de locatário de aplicativos do Portal da empresa, bem como o portal da web de usuário final.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411096"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso de intuneBrandingProfile
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Essa entidade contém dados que são utilizados em Personalizar a aparência de nível de locatário de aplicativos do Portal da empresa, bem como o portal da web de usuário final.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ Essa entidade contém dados que são utilizados em Personalizar a aparência de 
 |[Criar intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Crie um novo objeto de [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
 |[Excluir intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|Nenhum|Exclui um [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[Atualizar intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Atualize as propriedades de um objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Ação assign](../api/intune-wip-intunebrandingprofile-assign.md)|Nenhum|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -33,7 +35,7 @@ Essa entidade contém dados que são utilizados em Personalizar a aparência de 
 |id|String|Chave de perfil|
 |profileName|String|Nome do perfil|
 |profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Booliano|Apresenta se o perfil é usado para padrão.|
+|isDefaultProfile|Boolean|Apresenta se o perfil é usado para padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile última modificação.|
 |displayName|Cadeia de caracteres|Nome da empresa/organização exibido para usuários finais.|
@@ -52,7 +54,10 @@ Essa entidade contém dados que são utilizados em Personalizar a aparência de 
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial de aplicativos de Portal da empresa|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+|Relação|Tipo|Descrição|
+|:---|:---|:---|
+|assignments|coleção [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md)|A lista de atribuições de grupo para o perfil de marcação.|
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -103,7 +108,6 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
-
 
 
 
