@@ -1,0 +1,71 @@
+---
+title: tipo de recurso de groupPolicyPresentationMultiTextBox
+description: Representa um elemento de multiTextBox ADMX e um elemento de multiText ADMX.
+localization_priority: Normal
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 85253b6a1af70e75dcba3849fc06dc50935de306
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29429068"
+---
+# <a name="grouppolicypresentationmultitextbox-resource-type"></a><span data-ttu-id="a1ac1-103">tipo de recurso de groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-103">groupPolicyPresentationMultiTextBox resource type</span></span>
+
+> <span data-ttu-id="a1ac1-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a1ac1-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="a1ac1-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="a1ac1-107">Representa um elemento de multiTextBox ADMX e um elemento de multiText ADMX.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-107">Represents an ADMX multiTextBox element and an ADMX multiText element.</span></span>
+
+
+<span data-ttu-id="a1ac1-108">Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="a1ac1-108">Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="a1ac1-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="a1ac1-109">Methods</span></span>
+|<span data-ttu-id="a1ac1-110">Método</span><span class="sxs-lookup"><span data-stu-id="a1ac1-110">Method</span></span>|<span data-ttu-id="a1ac1-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="a1ac1-111">Return Type</span></span>|<span data-ttu-id="a1ac1-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="a1ac1-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="a1ac1-113">Lista groupPolicyPresentationMultiTextBoxes</span><span class="sxs-lookup"><span data-stu-id="a1ac1-113">List groupPolicyPresentationMultiTextBoxes</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md)|<span data-ttu-id="a1ac1-114">coleção [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)</span><span class="sxs-lookup"><span data-stu-id="a1ac1-114">[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) collection</span></span>|<span data-ttu-id="a1ac1-115">Lista as propriedades e os relacionamentos dos objetos [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="a1ac1-115">List properties and relationships of the [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) objects.</span></span>|
+|[<span data-ttu-id="a1ac1-116">Obter groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-116">Get groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md)|[<span data-ttu-id="a1ac1-117">groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-117">groupPolicyPresentationMultiTextBox</span></span>](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|<span data-ttu-id="a1ac1-118">Leia as propriedades e os relacionamentos do objeto [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="a1ac1-118">Read properties and relationships of the [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) object.</span></span>|
+|[<span data-ttu-id="a1ac1-119">Criar groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-119">Create groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-create.md)|[<span data-ttu-id="a1ac1-120">groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-120">groupPolicyPresentationMultiTextBox</span></span>](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|<span data-ttu-id="a1ac1-121">Crie um novo objeto de [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="a1ac1-121">Create a new [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) object.</span></span>|
+|[<span data-ttu-id="a1ac1-122">Excluir groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-122">Delete groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-delete.md)|<span data-ttu-id="a1ac1-123">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a1ac1-123">None</span></span>|<span data-ttu-id="a1ac1-124">Exclui um [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md).</span><span class="sxs-lookup"><span data-stu-id="a1ac1-124">Deletes a [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md).</span></span>|
+|[<span data-ttu-id="a1ac1-125">Atualizar groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-125">Update groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-update.md)|[<span data-ttu-id="a1ac1-126">groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="a1ac1-126">groupPolicyPresentationMultiTextBox</span></span>](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|<span data-ttu-id="a1ac1-127">Atualize as propriedades de um objeto [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="a1ac1-127">Update the properties of a [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="a1ac1-128">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a1ac1-128">Properties</span></span>
+|<span data-ttu-id="a1ac1-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a1ac1-129">Property</span></span>|<span data-ttu-id="a1ac1-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="a1ac1-130">Type</span></span>|<span data-ttu-id="a1ac1-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="a1ac1-131">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="a1ac1-132">rótulo</span><span class="sxs-lookup"><span data-stu-id="a1ac1-132">label</span></span>|<span data-ttu-id="a1ac1-133">String</span><span class="sxs-lookup"><span data-stu-id="a1ac1-133">String</span></span>|<span data-ttu-id="a1ac1-134">Rótulo de texto localizado para qualquer entidade de apresentação.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-134">Localized text label for any presentation entity.</span></span> <span data-ttu-id="a1ac1-135">O valor padrão é vazio.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-135">The default value is empty.</span></span> <span data-ttu-id="a1ac1-136">Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="a1ac1-136">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="a1ac1-137">id</span><span class="sxs-lookup"><span data-stu-id="a1ac1-137">id</span></span>|<span data-ttu-id="a1ac1-138">String</span><span class="sxs-lookup"><span data-stu-id="a1ac1-138">String</span></span>|<span data-ttu-id="a1ac1-139">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-139">Key of the entity.</span></span> <span data-ttu-id="a1ac1-140">Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="a1ac1-140">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="a1ac1-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="a1ac1-141">lastModifiedDateTime</span></span>|<span data-ttu-id="a1ac1-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a1ac1-142">DateTimeOffset</span></span>|<span data-ttu-id="a1ac1-143">A data e hora que a entidade foi modificado pela última vez.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-143">The date and time the entity was last modified.</span></span> <span data-ttu-id="a1ac1-144">Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="a1ac1-144">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="a1ac1-145">obrigatório</span><span class="sxs-lookup"><span data-stu-id="a1ac1-145">required</span></span>|<span data-ttu-id="a1ac1-146">Boolean</span><span class="sxs-lookup"><span data-stu-id="a1ac1-146">Boolean</span></span>|<span data-ttu-id="a1ac1-147">Requisito para inserir um valor na caixa de texto.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-147">Requirement to enter a value in the text box.</span></span> <span data-ttu-id="a1ac1-148">O valor padrão é false.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-148">Default value is false.</span></span>|
+|<span data-ttu-id="a1ac1-149">maxLength</span><span class="sxs-lookup"><span data-stu-id="a1ac1-149">maxLength</span></span>|<span data-ttu-id="a1ac1-150">Int64</span><span class="sxs-lookup"><span data-stu-id="a1ac1-150">Int64</span></span>|<span data-ttu-id="a1ac1-151">Um inteiro não assinado que especifica o número máximo de caracteres de texto.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-151">An unsigned integer that specifies the maximum number of text characters.</span></span> <span data-ttu-id="a1ac1-152">Valor padrão é 1023.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-152">Default value is 1023.</span></span>|
+|<span data-ttu-id="a1ac1-153">maxStrings</span><span class="sxs-lookup"><span data-stu-id="a1ac1-153">maxStrings</span></span>|<span data-ttu-id="a1ac1-154">Int64</span><span class="sxs-lookup"><span data-stu-id="a1ac1-154">Int64</span></span>|<span data-ttu-id="a1ac1-155">Um inteiro não assinado que especifica o número máximo de cadeias de caracteres.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-155">An unsigned integer that specifies the maximum number of strings.</span></span> <span data-ttu-id="a1ac1-156">Valor padrão é 0.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-156">Default value is 0.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="a1ac1-157">Relações</span><span class="sxs-lookup"><span data-stu-id="a1ac1-157">Relationships</span></span>
+|<span data-ttu-id="a1ac1-158">Relação</span><span class="sxs-lookup"><span data-stu-id="a1ac1-158">Relationship</span></span>|<span data-ttu-id="a1ac1-159">Tipo</span><span class="sxs-lookup"><span data-stu-id="a1ac1-159">Type</span></span>|<span data-ttu-id="a1ac1-160">Descrição</span><span class="sxs-lookup"><span data-stu-id="a1ac1-160">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="a1ac1-161">definição</span><span class="sxs-lookup"><span data-stu-id="a1ac1-161">definition</span></span>|[<span data-ttu-id="a1ac1-162">groupPolicyDefinition</span><span class="sxs-lookup"><span data-stu-id="a1ac1-162">groupPolicyDefinition</span></span>](../resources/intune-grouppolicy-grouppolicydefinition.md)|<span data-ttu-id="a1ac1-163">A definição de política de grupo associada à apresentação.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-163">The group policy definition associated with the presentation.</span></span> <span data-ttu-id="a1ac1-164">Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="a1ac1-164">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="a1ac1-165">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a1ac1-165">JSON Representation</span></span>
+<span data-ttu-id="a1ac1-166">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a1ac1-166">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.groupPolicyPresentationMultiTextBox"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.groupPolicyPresentationMultiTextBox",
+  "label": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "required": true,
+  "maxLength": 1024,
+  "maxStrings": 1024
+}
+```
+
+
+
+
