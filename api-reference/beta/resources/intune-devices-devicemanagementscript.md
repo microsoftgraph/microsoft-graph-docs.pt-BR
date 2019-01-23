@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de deviceManagementScript
 description: Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dispositivos windows registrados 10 Azure Active Directory ingressou do cliente. O script pode ser executado uma vez ou periodicamente.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4fda826ec8033cd51ad4dd13dbc5b523a21e9e3a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412524"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso de deviceManagementScript
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dispositivos windows registrados 10 Azure Active Directory ingressou do cliente. O script pode ser executado uma vez ou periodicamente.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -31,16 +32,18 @@ Intune irá fornecer a capacidade de executar seus scripts do Powershell nos dis
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o script de gerenciamento de dispositivo.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
-|description|Cadeia de caracteres|Descrição opcional para o script de gerenciamento de dispositivo.|
+|id|String|Identificador exclusivo para o script de gerenciamento de dispositivo.|
+|displayName|String|Nome do script de gerenciamento de dispositivo.|
+|description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de script a ser executado. Se não definido o script será executado uma vez|
 |scriptContent|Binária|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e hora em que o script de gerenciamento do dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação o script de gerenciamento de dispositivo.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que do script de gerenciamento de dispositivo é executado. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Booliano|Indica se a assinatura de script precisa ser verificada.|
-|fileName|Cadeia de caracteres|Nome do arquivo de script.|
+|enforceSignatureCheck|Boolean|Indica se a assinatura de script precisa ser verificada.|
+|fileName|String|Nome do arquivo de script.|
+|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para essa instância do PowerShellScript.|
+|runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como de 32 bits|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -73,10 +76,13 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",
   "enforceSignatureCheck": true,
-  "fileName": "String"
+  "fileName": "String",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "runAs32Bit": true
 }
 ```
-
 
 
 
