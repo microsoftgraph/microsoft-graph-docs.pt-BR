@@ -1,4 +1,5 @@
 name: Documentos do Graph
+metadata: {}
 items:
   - name: Visão geral do Microsoft Graph
     href: overview.md

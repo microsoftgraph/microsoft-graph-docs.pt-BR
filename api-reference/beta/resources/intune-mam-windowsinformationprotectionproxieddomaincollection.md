@@ -1,33 +1,35 @@
 ---
 title: Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 description: Coleção de domínios como proxy da Proteção de Informações do Windows
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a2f4b1e29afd113c2e06b611fabd525f9f5a6ba1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c65a4b6a94f317c5d75b440aeef7fe387496be32
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916898"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421673"
 ---
-# <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a><span data-ttu-id="19f93-103">Tipo de recurso windowsInformationProtectionProxiedDomainCollection</span><span class="sxs-lookup"><span data-stu-id="19f93-103">windowsInformationProtectionProxiedDomainCollection resource type</span></span>
+# <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a><span data-ttu-id="cec9a-103">Tipo de recurso windowsInformationProtectionProxiedDomainCollection</span><span class="sxs-lookup"><span data-stu-id="cec9a-103">windowsInformationProtectionProxiedDomainCollection resource type</span></span>
 
-> <span data-ttu-id="19f93-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="19f93-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="19f93-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="19f93-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cec9a-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="cec9a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cec9a-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="cec9a-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="19f93-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="19f93-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="cec9a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="cec9a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="19f93-107">Coleção de domínios como proxy da Proteção de Informações do Windows</span><span class="sxs-lookup"><span data-stu-id="19f93-107">Windows Information Protection Proxied Domain Collection</span></span>
-## <a name="properties"></a><span data-ttu-id="19f93-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="19f93-108">Properties</span></span>
-|<span data-ttu-id="19f93-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="19f93-109">Property</span></span>|<span data-ttu-id="19f93-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="19f93-110">Type</span></span>|<span data-ttu-id="19f93-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="19f93-111">Description</span></span>|
+<span data-ttu-id="cec9a-107">Coleção de domínios como proxy da Proteção de Informações do Windows</span><span class="sxs-lookup"><span data-stu-id="cec9a-107">Windows Information Protection Proxied Domain Collection</span></span>
+
+## <a name="properties"></a><span data-ttu-id="cec9a-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="cec9a-108">Properties</span></span>
+|<span data-ttu-id="cec9a-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cec9a-109">Property</span></span>|<span data-ttu-id="cec9a-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="cec9a-110">Type</span></span>|<span data-ttu-id="cec9a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="cec9a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="19f93-112">displayName</span><span class="sxs-lookup"><span data-stu-id="19f93-112">displayName</span></span>|<span data-ttu-id="19f93-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="19f93-113">String</span></span>|<span data-ttu-id="19f93-114">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="19f93-114">Display name</span></span>|
-|<span data-ttu-id="19f93-115">proxiedDomains</span><span class="sxs-lookup"><span data-stu-id="19f93-115">proxiedDomains</span></span>|<span data-ttu-id="19f93-116">Coleção [proxiedDomain](../resources/intune-shared-proxieddomain.md)</span><span class="sxs-lookup"><span data-stu-id="19f93-116">[proxiedDomain](../resources/intune-shared-proxieddomain.md) collection</span></span>|<span data-ttu-id="19f93-117">Coleção de domínios com proxy</span><span class="sxs-lookup"><span data-stu-id="19f93-117">Collection of proxied domains</span></span>|
+|<span data-ttu-id="cec9a-112">displayName</span><span class="sxs-lookup"><span data-stu-id="cec9a-112">displayName</span></span>|<span data-ttu-id="cec9a-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cec9a-113">String</span></span>|<span data-ttu-id="cec9a-114">Nome de exibição</span><span class="sxs-lookup"><span data-stu-id="cec9a-114">Display name</span></span>|
+|<span data-ttu-id="cec9a-115">proxiedDomains</span><span class="sxs-lookup"><span data-stu-id="cec9a-115">proxiedDomains</span></span>|<span data-ttu-id="cec9a-116">Coleção [proxiedDomain](../resources/intune-shared-proxieddomain.md)</span><span class="sxs-lookup"><span data-stu-id="cec9a-116">[proxiedDomain](../resources/intune-shared-proxieddomain.md) collection</span></span>|<span data-ttu-id="cec9a-117">Coleção de domínios com proxy</span><span class="sxs-lookup"><span data-stu-id="cec9a-117">Collection of proxied domains</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="19f93-118">Relações</span><span class="sxs-lookup"><span data-stu-id="19f93-118">Relationships</span></span>
-<span data-ttu-id="19f93-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="19f93-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="19f93-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="19f93-120">JSON Representation</span></span>
-<span data-ttu-id="19f93-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="19f93-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="cec9a-118">Relações</span><span class="sxs-lookup"><span data-stu-id="cec9a-118">Relationships</span></span>
+<span data-ttu-id="cec9a-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="cec9a-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="cec9a-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="cec9a-120">JSON Representation</span></span>
+<span data-ttu-id="cec9a-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="cec9a-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionProxiedDomainCollection"
@@ -46,7 +48,6 @@ ms.locfileid: "27916898"
   ]
 }
 ```
-
 
 
 
