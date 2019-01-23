@@ -1,33 +1,34 @@
 ---
 title: Atualizar windowsAutopilotDeploymentProfileAssignment
 description: Atualize as propriedades de um objeto windowsAutopilotDeploymentProfileAssignment.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 601fd03c2a7a088619d7fd5cbdb7149967de2946
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8267019105d42260ec346595680ea8d4805c35dc
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408086"
 ---
-# <a name="update-windowsautopilotdeploymentprofileassignment"></a><span data-ttu-id="9347b-103">Atualizar windowsAutopilotDeploymentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="9347b-103">Update windowsAutopilotDeploymentProfileAssignment</span></span>
+# <a name="update-windowsautopilotdeploymentprofileassignment"></a><span data-ttu-id="37793-103">Atualizar windowsAutopilotDeploymentProfileAssignment</span><span class="sxs-lookup"><span data-stu-id="37793-103">Update windowsAutopilotDeploymentProfileAssignment</span></span>
 
-> <span data-ttu-id="9347b-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="9347b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9347b-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="9347b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="37793-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="37793-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="37793-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="37793-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9347b-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="9347b-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="37793-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="37793-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9347b-107">Atualize as propriedades de um objeto [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="9347b-107">Update the properties of a [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9347b-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9347b-108">Prerequisites</span></span>
-<span data-ttu-id="9347b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9347b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="37793-107">Atualize as propriedades de um objeto [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="37793-107">Update the properties of a [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
 
-|<span data-ttu-id="9347b-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9347b-111">Permission type</span></span>|<span data-ttu-id="9347b-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9347b-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="37793-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="37793-108">Prerequisites</span></span>
+<span data-ttu-id="37793-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="37793-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="37793-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="37793-111">Permission type</span></span>|<span data-ttu-id="37793-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="37793-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9347b-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9347b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9347b-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9347b-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="9347b-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9347b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9347b-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9347b-116">Not supported.</span></span>|
-|<span data-ttu-id="9347b-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9347b-117">Application</span></span>|<span data-ttu-id="9347b-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9347b-118">Not supported.</span></span>|
+|<span data-ttu-id="37793-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="37793-113">Delegated (work or school account)</span></span>|<span data-ttu-id="37793-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37793-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="37793-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="37793-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="37793-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="37793-116">Not supported.</span></span>|
+|<span data-ttu-id="37793-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="37793-117">Application</span></span>|<span data-ttu-id="37793-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="37793-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9347b-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9347b-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="37793-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="37793-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,44 +37,46 @@ ms.locfileid: "27977847"
 PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9347b-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9347b-120">Request headers</span></span>
-|<span data-ttu-id="9347b-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9347b-121">Header</span></span>|<span data-ttu-id="9347b-122">Valor</span><span class="sxs-lookup"><span data-stu-id="9347b-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="37793-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="37793-120">Request headers</span></span>
+|<span data-ttu-id="37793-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="37793-121">Header</span></span>|<span data-ttu-id="37793-122">Valor</span><span class="sxs-lookup"><span data-stu-id="37793-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9347b-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="9347b-123">Authorization</span></span>|<span data-ttu-id="9347b-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9347b-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9347b-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="9347b-125">Accept</span></span>|<span data-ttu-id="9347b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9347b-126">application/json</span></span>|
+|<span data-ttu-id="37793-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="37793-123">Authorization</span></span>|<span data-ttu-id="37793-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="37793-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="37793-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="37793-125">Accept</span></span>|<span data-ttu-id="37793-126">application/json</span><span class="sxs-lookup"><span data-stu-id="37793-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9347b-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9347b-127">Request body</span></span>
-<span data-ttu-id="9347b-128">No corpo da solicitação, fornece uma representação JSON para o objeto [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="9347b-128">In the request body, supply a JSON representation for the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="37793-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="37793-127">Request body</span></span>
+<span data-ttu-id="37793-128">No corpo da solicitação, fornece uma representação JSON para o objeto [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="37793-128">In the request body, supply a JSON representation for the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
 
-<span data-ttu-id="9347b-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).</span><span class="sxs-lookup"><span data-stu-id="9347b-129">The following table shows the properties that are required when you create the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).</span></span>
+<span data-ttu-id="37793-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).</span><span class="sxs-lookup"><span data-stu-id="37793-129">The following table shows the properties that are required when you create the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md).</span></span>
 
-|<span data-ttu-id="9347b-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9347b-130">Property</span></span>|<span data-ttu-id="9347b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="9347b-131">Type</span></span>|<span data-ttu-id="9347b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="9347b-132">Description</span></span>|
+|<span data-ttu-id="37793-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="37793-130">Property</span></span>|<span data-ttu-id="37793-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="37793-131">Type</span></span>|<span data-ttu-id="37793-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="37793-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9347b-133">id</span><span class="sxs-lookup"><span data-stu-id="9347b-133">id</span></span>|<span data-ttu-id="9347b-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9347b-134">String</span></span>|<span data-ttu-id="9347b-135">A chave da atribuição.</span><span class="sxs-lookup"><span data-stu-id="9347b-135">The key of the assignment.</span></span>|
-|<span data-ttu-id="9347b-136">destino</span><span class="sxs-lookup"><span data-stu-id="9347b-136">target</span></span>|[<span data-ttu-id="9347b-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="9347b-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="9347b-138">O destino da atribuição para o perfil da implantação piloto automático do Windows.</span><span class="sxs-lookup"><span data-stu-id="9347b-138">The assignment target for the Windows Autopilot deployment profile.</span></span>|
+|<span data-ttu-id="37793-133">id</span><span class="sxs-lookup"><span data-stu-id="37793-133">id</span></span>|<span data-ttu-id="37793-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="37793-134">String</span></span>|<span data-ttu-id="37793-135">A chave da atribuição.</span><span class="sxs-lookup"><span data-stu-id="37793-135">The key of the assignment.</span></span>|
+|<span data-ttu-id="37793-136">destino</span><span class="sxs-lookup"><span data-stu-id="37793-136">target</span></span>|[<span data-ttu-id="37793-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="37793-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="37793-138">O destino da atribuição para o perfil da implantação piloto automático do Windows.</span><span class="sxs-lookup"><span data-stu-id="37793-138">The assignment target for the Windows Autopilot deployment profile.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9347b-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="9347b-139">Response</span></span>
-<span data-ttu-id="9347b-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9347b-140">If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="37793-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="37793-139">Response</span></span>
+<span data-ttu-id="37793-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="37793-140">If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9347b-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9347b-141">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9347b-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9347b-142">Request</span></span>
-<span data-ttu-id="9347b-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9347b-143">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="37793-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="37793-141">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="37793-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="37793-142">Request</span></span>
+<span data-ttu-id="37793-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="37793-143">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
 Content-type: application/json
-Content-length: 101
+Content-length: 183
 
 {
+  "@odata.type": "#microsoft.graph.windowsAutopilotDeploymentProfileAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
   }
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9347b-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="9347b-144">Response</span></span>
-<span data-ttu-id="9347b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9347b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="37793-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="37793-144">Response</span></span>
+<span data-ttu-id="37793-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="37793-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -87,7 +90,6 @@ Content-Length: 232
   }
 }
 ```
-
 
 
 
