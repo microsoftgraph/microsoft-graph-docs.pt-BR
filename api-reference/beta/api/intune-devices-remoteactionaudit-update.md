@@ -1,25 +1,26 @@
 ---
 title: Atualizar remoteActionAudit
 description: Atualize as propriedades de um objeto remoteActionAudit.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 76c61651ab18b838f2cd403036b21b3895614b19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 6078b3f6fd5236bd0e6e1a51f5f52cbf69a59c83
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396186"
 ---
 # <a name="update-remoteactionaudit"></a>Atualizar remoteActionAudit
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualize as propriedades de um objeto [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,14 +50,14 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID do relatório.|
+|id|String|ID do relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo Intune.|
 |userName|Cadeia de caracteres|\[preterido\] use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|Cadeia de caracteres|Usuário que iniciou a ação de dispositivo, formato é UPN.|
+|initiatedByUserPrincipalName|String|Usuário que iniciou a ação de dispositivo, formato é UPN.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Tempo quando a ação foi emitida, dado em UTC.|
-|deviceOwnerUserPrincipalName|Cadeia de caracteres|Nome UPN do proprietário do dispositivo.|
-|deviceIMEI|Cadeia de caracteres|IMEI do dispositivo.|
+|deviceOwnerUserPrincipalName|String|Nome UPN do proprietário do dispositivo.|
+|deviceIMEI|String|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 
@@ -65,14 +66,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
-Content-length: 399
+Content-length: 455
 
 {
+  "@odata.type": "#microsoft.graph.remoteActionAudit",
   "deviceDisplayName": "Device Display Name value",
   "userName": "User Name value",
   "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
@@ -104,7 +107,6 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
-
 
 
 

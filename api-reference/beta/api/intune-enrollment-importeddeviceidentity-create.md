@@ -1,25 +1,26 @@
 ---
 title: Criar importedDeviceIdentity
 description: Crie um novo objeto de importedDeviceIdentity.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9e0efa7cdccd24f01539840beb3d0a53342323a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d0274f3a48c3481cc5540eb9025da353f0ea0bf2
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396711"
 ---
 # <a name="create-importeddeviceidentity"></a>Criar importedDeviceIdentity
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Crie um novo objeto de [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da identidade do dispositivo importada|
-|importedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo importada|
+|id|String|ID da identidade do dispositivo importada|
+|importedDeviceIdentifier|String|Identificador de dispositivo importada|
 |importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Tipo de identidade do dispositivo importada. Os valores possíveis são: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Última data e hora modificadas da descrição|
 |createdDateTime|DateTimeOffset|Criada data hora do dispositivo|
 |lastContactedDateTime|DateTimeOffset|Última contatado data hora do dispositivo|
-|description|Cadeia de caracteres|A descrição do dispositivo|
+|description|String|A descrição do dispositivo|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|O estado do dispositivo em Intune. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[plataforma](../resources/intune-enrollment-platform.md)|A plataforma do dispositivo. Os possíveis valores são: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
@@ -65,18 +66,18 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentities
 Content-type: application/json
-Content-length: 396
+Content-length: 332
 
 {
   "@odata.type": "#microsoft.graph.importedDeviceIdentity",
   "importedDeviceIdentifier": "Imported Device Identifier value",
   "importedDeviceIdentityType": "imei",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "description": "Description value",
   "enrollmentState": "enrolled",
@@ -104,7 +105,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: tipo de enum deviceRegistrationState
 description: Status do registro do dispositivo.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d6d6b38beb34b8725587d9284dd524008320bba3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 90f2dc7f8c11940fa01047d8c61f23c8f0389ed8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961859"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396753"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enum deviceRegistrationState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Status do registro do dispositivo.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -29,7 +30,6 @@ Status do registro do dispositivo.
 |certificateReset|6|O certificado do dispositivo foi redefinido.|
 |notRegisteredPendingEnrollment|7|O dispositivo não está registrado e pendentes de inscrição.|
 |unknown|8|O status do registro de dispositivo é desconhecido.|
-
 
 
 

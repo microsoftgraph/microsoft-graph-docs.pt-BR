@@ -4,16 +4,18 @@ description: 'O recurso de deviceManagement representa um contêiner cujo conte�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 05620a5b34125920399434824d9f42ccea989c72
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961334"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396417"
 ---
 # <a name="devicemanagement-resource-type"></a>Tipo de recurso deviceManagement
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 O recurso de deviceManagement representa um contêiner cujo conteúdo varia de acordo com o fluxo de trabalho, incluindo:  
 
@@ -54,14 +56,14 @@ O recurso de deviceManagement representa um contêiner cujo conteúdo varia de a
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo associado ao dispositivo.|
+|id|String|Identificador exclusivo associado ao dispositivo.|
 |**Configuração do dispositivo**|
 |intuneAccountId|Guid|ID da conta Intune para dado locatário|
-|legacyPcManangementEnabled|Booliano|A propriedade habilitem Non-MDM gerenciados herdado gerenciamento de PC para essa conta. Esta propriedade é somente leitura.|
+|legacyPcManangementEnabled|Boolean|A propriedade habilitem Non-MDM gerenciados herdado gerenciamento de PC para essa conta. Esta propriedade é somente leitura.|
 |maximumDepTokens|Int32|Número máximo de tokens DEP permitido por locatário.|
 |configurações|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
-|accountMoveCompletionDateTime|DateTimeOffset|A data e a hora quando os dados de inquilinos movidos entre scaleunits.|
+|accountMoveCompletionDateTime|DateTimeOffset|A data hora & ao mover os dados de inquilinos entre scaleunits.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informações de consentimento do administrador.|
 |deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Visão geral de proteção do dispositivo.|
 |managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regra de limpeza do dispositivo|

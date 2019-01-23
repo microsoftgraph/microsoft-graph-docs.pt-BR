@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de managementConditionStatement
 description: Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que habilitar/desabilitar configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidos forem atendidas.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 82a99e878337cf04659b8bc7da7e821bd8afb6aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3292dae241a3f79cc7d3417c93ccc1187c8b8d17
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395990"
 ---
 # <a name="managementconditionstatement-resource-type"></a>tipo de recurso de managementConditionStatement
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que habilitar/desabilitar configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidos forem atendidas.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -72,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

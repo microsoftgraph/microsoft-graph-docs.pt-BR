@@ -4,12 +4,12 @@ description: 'Representa o status da sincronização de um perfil de sincroniza�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d16619b0cf1e2c09358cf585b896b0c7c7d4f318
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1fd77f48544e5e6bc0c582e4ce9fb2a5b1b6601a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928924"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396151"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>tipo de recurso de educationSynchronizationProfileStatus
 
@@ -29,7 +29,7 @@ Representa o status da sincronização de um [perfil de sincronização](educati
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **status** | string | O status de uma sincronização. Os valores possíveis são: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
+| **status** | educationSynchronizationStatus | O status de uma sincronização. Os valores possíveis são: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
 | **lastSynchronizationDateTime** | DateTimeOffset | Representa a hora quando as alterações mais recentes têm foi observadas no diretório.  |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -38,7 +38,7 @@ Representa o status da sincronização de um [perfil de sincronização](educati
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
 }-->
 
 ```json

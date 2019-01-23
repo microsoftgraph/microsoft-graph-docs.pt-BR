@@ -1,23 +1,24 @@
 ---
 title: tipo de enum ratingAustraliaTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Austrália
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5af818245d4b71a038cdfa0cd3a4f3c188e76e60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 148e8c1bb12f8563261402b98e4ff0552e83f3f6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29392889"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enum ratingAustraliaTelevisionType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Rótulos de classificação de conteúdo de TV na Austrália
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -30,7 +31,6 @@ Rótulos de classificação de conteúdo de TV na Austrália
 |implementação avançada|6|A classificação M é recomendada para os visualizadores de mais de 15|
 |agesAbove15|7|A classificação MA15 + não é adequada para os visualizadores em 15|
 |agesAbove15AdultViolence|8|A classificação AV15 + não é adequada para os visualizadores em 15, adulto violência específicos|
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: Criar managedDeviceCertificateState
 description: Crie um novo objeto de managedDeviceCertificateState.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0b48550d3cea0fef3e57821f0ef89a75bdcc412a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f8efc74f2f8abad4b659f41ac53d270af5dab2a3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396312"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Criar managedDeviceCertificateState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Crie um novo objeto de [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -65,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Uso da chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades do período de validade. Os valores possíveis são: `days`, `months`, `years`.|
@@ -74,20 +75,20 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nome de entidade. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Formato de nome alternativo da entidade. Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar o status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Cadeia de caracteres|Nome de exibição de perfil de certificado|
+|certificateProfileDisplayName|String|Nome de exibição de perfil de certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
+|userDisplayName|String|Nome de exibição do usuário|
 |certificateExpirationDateTime|DateTimeOffset|Data de expiração de certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
-|certificateIssuer|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Impressão digital|
-|Número_serial_do_certificado|Cadeia de caracteres|Número de série|
+|certificateIssuer|String|Emissor|
+|certificateThumbprint|String|Impressão digital|
+|Número_serial_do_certificado|String|Número de série|
 |certificateKeyLength|Int32|Comprimento da chave|
-|certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
+|certificateEnhancedKeyUsage|String|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
-|certificateSubjectNameFormatString|Cadeia de caracteres|Sequência de formato de nome de entidade para formatos de nome de entidade personalizada|
-|certificateSubjectAlternativeNameFormatString|Cadeia de caracteres|Sequência de formato de nome alternativo de entidade para formatos personalizados|
+|certificateSubjectNameFormatString|String|Sequência de formato de nome de entidade para formatos de nome de entidade personalizada|
+|certificateSubjectAlternativeNameFormatString|String|Sequência de formato de nome alternativo de entidade para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 
@@ -97,6 +98,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
@@ -169,7 +171,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
 
 
 

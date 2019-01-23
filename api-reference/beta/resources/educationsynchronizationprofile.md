@@ -4,12 +4,12 @@ description: Representa um conjunto de configurações usadas para sincronizar a
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a9976538923d35c38bda001d73cabc1b4c3f6814
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b753e904a0c70d5c0ae83dbb3d9a88aff8401eac
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396949"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso de educationSynchronizationProfile
 
@@ -39,9 +39,9 @@ Representa um conjunto de configurações usadas para sincronizar as informaçõ
 |:-|:-|:-|
 | **displayName** | string |  Nome do perfil de configuração para sincronização de identidades.         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  O provedor de dados usado para o perfil.         |
-| **identitysynchronizationconfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Configuração de [criação](educationidentitycreationconfiguration.md) ou [correspondentes](educationidentitymatchingconfiguration.md) da identidade.        |
+| **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Configuração de [criação](educationidentitycreationconfiguration.md) ou [correspondentes](educationidentitymatchingconfiguration.md) da identidade.        |
 | **licensesToAssign** | coleção [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)|  Configuração de licença.        |
-| **state** | string |  O estado do perfil. Os valores possíveis são: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
+| **state** | educationSynchronizationProfileState |  O estado do perfil. Os valores possíveis são: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
 ## <a name="relationships"></a>Relações
 
@@ -58,7 +58,7 @@ A seguir está uma representação JSON do recurso **educationSynchronizationPro
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
@@ -67,8 +67,8 @@ A seguir está uma representação JSON do recurso **educationSynchronizationPro
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},
     "errors": [{"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus" }],
-    "dataProvider": { "@odata.type": "#microsoft.graph.educationcsvdataprovider" },
-    "identitySynchronizationConfiguration": { "@odata.type": "#microsoft.graph.educationIdentitySynchronizationConfiguration" },
+    "dataProvider": { "@odata.type": "microsoft.graph.educationCsvDataProvider" },
+    "identitySynchronizationConfiguration": { "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration" },
     "licensesToAssign": [{"@odata.type":"microsoft.graph.educationSynchronizationLicenseAssignment"}],
     "handleSpecialCharacterConstraint": "Boolean"
 }

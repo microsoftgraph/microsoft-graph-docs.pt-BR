@@ -1,25 +1,26 @@
 ---
 title: Atualizar windows10EndpointProtectionConfiguration
 description: Atualizar as propriedades de um objeto windows10EndpointProtectionConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 36d71a14900d3400874ac39bd1fa59c534208676
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9bb398da325f6895eee7dd5e53938f8dafc5d5f6
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393617"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Atualizar windows10EndpointProtectionConfiguration
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualizar as propriedades de um objeto [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,14 +52,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Booliano|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|Essa diretiva destina-se para fornecer segurança adicional em relação a dispositivos externos de capaz de DMA. Ele permite mais controle sobre a enumeração de dispositivos externos de capaz de DMA incompatível com área restrita e isolamento de memória DMA Remapping/dispositivo. Essa diretiva só entrará em vigor quando Kernel DMA proteção é suportada e ativada pelo firmware do sistema. Proteção de DMA kernel é um recurso de plataforma que não pode ser controlado por meio da diretiva ou pelo usuário final. Ele deve ser suportada pelo sistema no momento da fabricação. Para verificar se o sistema suporta Kernel DMA proteção, verifique o campo de proteção do Kernel DMA na página Resumo da MSINFO32.exe. Os valores possíveis são: `deviceDefault`, `blockAll`, `allowAll`.|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário é usado pelo Gerenciador de credenciais durante Backup/restauração. As credenciais dos usuários salvas podem ficar comprometidas se esse privilégio é fornecido a outras entidades. Somente os estados não-configuradas e permitidos são suportados|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Este direito de usuário determina quais usuários e grupos têm permissão para se conectar ao computador pela rede. Há suporte para o estado permitidos.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário determina quais usuários e grupos estão bloco de conectar-se ao computador pela rede. Bloco de controle de sessão é suportado.|
@@ -88,84 +90,84 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário determina quais usuários podem ignorar o arquivo, diretório, registro e outros objetos persistentes permissões ao restaurar backup de arquivos e diretórios e determina quais usuários podem definir qualquer entidade de segurança válida como o proprietário de um objeto. Somente os estados não-configuradas e permitidos são suportados.|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Esse direito de usuário determina quais usuários podem apropriar-se de qualquer objeto protegível no sistema, incluindo objetos do Active Directory, arquivos e pastas, impressoras, chaves do registro, processos e segmentos. Somente os estados não-configuradas e permitidos são suportados.|
 |userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Essa configuração de segurança determina quais contas de serviço são impedidas de registrar um processo como um serviço. Observação: Essa configuração de segurança não se aplica às contas de sistema, serviço Local ou serviço de rede. Único estado bloqueado é suportado.|
-|xboxServicesEnableXboxGameSaveTask|Booliano|Essa configuração determina se salvar jogo do xbox está habilitado (1) ou desativada (0).|
+|xboxServicesEnableXboxGameSaveTask|Boolean|Essa configuração determina se salvar jogo do xbox está habilitado (1) ou desativada (0).|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Essa configuração determina se o tipo de início do serviço de gerenciamento de acessório é Automatic(2), Manual(3), Disabled(4). Padrão: Manual. Os valores possíveis são: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Essa configuração determina se o tipo de início do serviço do Gerenciador de autenticação Live é Automatic(2), Manual(3), Disabled(4). Padrão: Manual. Os valores possíveis são: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveGameSaveServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Essa configuração determina se o jogo Live salvar o tipo de início do serviço é Automatic(2), Manual(3), Disabled(4). Padrão: Manual. Os valores possíveis são: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Essa configuração determina se o tipo de início do serviço de rede é Automatic(2), Manual(3), Disabled(4). Padrão: Manual. Os valores possíveis são: `manual`, `automatic`, `disabled`.|
-|localSecurityOptionsBlockMicrosoftAccounts|Booliano|Impedir que os usuários adicionem novas contas da Microsoft para este computador.|
-|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Booliano|Habilite as contas locais que não são protegida para logon de locais que não seja o dispositivo físico de senha. É habilitada por padrão|
-|localSecurityOptionsEnableAdministratorAccount|Booliano|Determina se a conta de Administrador Local está habilitada ou desabilitada.|
-|localSecurityOptionsAdministratorAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado com o identificador de segurança (SID) da conta "Administrador".|
-|localSecurityOptionsEnableGuestAccount|Booliano|Determina se a conta de convidado está habilitada ou desabilitada.|
-|localSecurityOptionsGuestAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado com o identificador de segurança (SID) da conta "Convidado".|
-|localSecurityOptionsAllowUndockWithoutHavingToLogon|Booliano|Impedir que um computador portátil sendo não encaixado sem precisar fazer logon.|
-|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Booliano|Restringir instalando drivers de impressora como parte da conexão a uma impressora compartilhada ao grupo Administradores apenas.|
-|localSecurityOptionsBlockRemoteOpticalDriveAccess|Booliano|A ativação dessa configuração permite que somente usuário conectado interativamente mídia de CD-ROM do access.|
+|localSecurityOptionsBlockMicrosoftAccounts|Boolean|Impedir que os usuários adicionem novas contas da Microsoft para este computador.|
+|localSecurityOptionsBlockRemoteLogonWithBlankPassword|Boolean|Habilite as contas locais que não são protegida para logon de locais que não seja o dispositivo físico de senha. É habilitada por padrão|
+|localSecurityOptionsDisableAdministratorAccount|Boolean|Determina se a conta de Administrador Local está habilitada ou desabilitada.|
+|localSecurityOptionsAdministratorAccountName|String|Defina um nome de conta diferente a ser associado com o identificador de segurança (SID) da conta "Administrador".|
+|localSecurityOptionsDisableGuestAccount|Boolean|Determina se a conta de convidado está habilitada ou desabilitada.|
+|localSecurityOptionsGuestAccountName|String|Defina um nome de conta diferente a ser associado com o identificador de segurança (SID) da conta "Convidado".|
+|localSecurityOptionsAllowUndockWithoutHavingToLogon|Boolean|Impedir que um computador portátil sendo não encaixado sem precisar fazer logon.|
+|localSecurityOptionsBlockUsersInstallingPrinterDrivers|Boolean|Restringir instalando drivers de impressora como parte da conexão a uma impressora compartilhada ao grupo Administradores apenas.|
+|localSecurityOptionsBlockRemoteOpticalDriveAccess|Boolean|A ativação dessa configuração permite que somente usuário conectado interativamente mídia de CD-ROM do access.|
 |localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser|[localSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUserType](../resources/intune-deviceconfig-localsecurityoptionsformatandejectofremovablemediaallowedusertype.md)|Defina quem tem permissão para formatar e ejeção mídia NTFS removível. Os valores possíveis são: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
 |localSecurityOptionsMachineInactivityLimit|Int32|Defina o máximo de minutos de inatividade na tela de login da área de trabalho interativo até o protetor de tela é executado. Valores válidos 0 e 9999|
 |localSecurityOptionsMachineInactivityLimitInMinutes|Int32|Defina o máximo de minutos de inatividade na tela de login da área de trabalho interativo até o protetor de tela é executado. Valores válidos 0 e 9999|
-|localSecurityOptionsDoNotRequireCtrlAltDel|Booliano|Exigir CTRL + ALT + DEL a ser pressionada para que um usuário possa fazer logon.|
-|localSecurityOptionsHideLastSignedInUser|Booliano|Não exibe o nome de usuário da última pessoa que entraram nesse dispositivo.|
-|localSecurityOptionsHideUsernameAtSignIn|Booliano|Não exibe o nome de usuário da pessoa entrando para este dispositivo após credenciais são inseridas e antes de área de trabalho do dispositivo é mostrada.|
-|localSecurityOptionsLogOnMessageTitle|Cadeia de caracteres|Defina o título da mensagem para usuários tentando fazer logon.|
-|localSecurityOptionsLogOnMessageText|Cadeia de caracteres|Definir o texto da mensagem para os usuários que tentarem fazer logon.|
-|localSecurityOptionsAllowPKU2UAuthenticationRequests|Booliano|Solicitações de autenticação de bloco PKU2U para este dispositivo usar identidades on-line.|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Booliano|Auxiliar da UI do boolean para entidade LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Cadeia de caracteres|Edite a cadeia de caracteres de linguagem de definição de descritor de segurança padrão para permitir ou negar a usuários e grupos para fazer chamadas remotas para o SAM.|
+|localSecurityOptionsDoNotRequireCtrlAltDel|Boolean|Exigir CTRL + ALT + DEL a ser pressionada para que um usuário possa fazer logon.|
+|localSecurityOptionsHideLastSignedInUser|Boolean|Não exibe o nome de usuário da última pessoa que entraram nesse dispositivo.|
+|localSecurityOptionsHideUsernameAtSignIn|Boolean|Não exibe o nome de usuário da pessoa entrando para este dispositivo após credenciais são inseridas e antes de área de trabalho do dispositivo é mostrada.|
+|localSecurityOptionsLogOnMessageTitle|String|Defina o título da mensagem para usuários tentando fazer logon.|
+|localSecurityOptionsLogOnMessageText|String|Definir o texto da mensagem para os usuários que tentarem fazer logon.|
+|localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Solicitações de autenticação de bloco PKU2U para este dispositivo usar identidades on-line.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Boolean|Auxiliar da UI do boolean para entidade LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Edite a cadeia de caracteres de linguagem de definição de descritor de segurança padrão para permitir ou negar a usuários e grupos para fazer chamadas remotas para o SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um cliente exija a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um servidor exija a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Essa configuração de segurança determina qual protocolo de autenticação de desafio/resposta é usado para logons de rede. Os possíveis valores são: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
-|lanManagerWorkstationEnableInsecureGuestLogons|Booliano|Se for habilitada, o cliente SMB permitirá que os logons de convidado inseguros. Se não estiver configurado, o cliente SMB rejeitará logons de convidado inseguros.|
-|localSecurityOptionsClearVirtualMemoryPageFile|Booliano|Essa configuração de segurança determina se o arquivo de paginação de memória virtual será limpo quando o sistema for desligado.|
-|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Booliano|Essa configuração de segurança determina se um computador pode ser desligado sem precisar fazer logon no Windows.|
-|localSecurityOptionsAllowUIAccessApplicationElevation|Booliano|Permitir aplicativos UIAccess solicitar elevação sem usar a área de trabalho segura.|
-|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Booliano|Virtualizar falhas de gravação de arquivo e registro a para por usuário locais|
-|localSecurityOptionsOnlyElevateSignedExecutables|Booliano|Impor a validação de caminho de certificação PKI para um determinado arquivo executável antes que ele tem permissão para executar.|
+|lanManagerWorkstationDisableInsecureGuestLogons|Boolean|Se for habilitada, o cliente SMB permitirá que os logons de convidado inseguros. Se não estiver configurado, o cliente SMB rejeitará logons de convidado inseguros.|
+|localSecurityOptionsClearVirtualMemoryPageFile|Boolean|Essa configuração de segurança determina se o arquivo de paginação de memória virtual será limpo quando o sistema for desligado.|
+|localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Boolean|Essa configuração de segurança determina se um computador pode ser desligado sem precisar fazer logon no Windows.|
+|localSecurityOptionsAllowUIAccessApplicationElevation|Boolean|Permitir aplicativos UIAccess solicitar elevação sem usar a área de trabalho segura.|
+|localSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations|Boolean|Virtualizar falhas de gravação de arquivo e registro a para por usuário locais|
+|localSecurityOptionsOnlyElevateSignedExecutables|Boolean|Impor a validação de caminho de certificação PKI para um determinado arquivo executável antes que ele tem permissão para executar.|
 |localSecurityOptionsAdministratorElevationPromptBehavior|[localSecurityOptionsAdministratorElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)|Defina o comportamento da solicitação de elevação para administradores no modo de aprovação de administrador. Os valores possíveis são: `notConfigured`, `elevateWithoutPrompting`, `promptForCredentialsOnTheSecureDesktop`, `promptForConsentOnTheSecureDesktop`, `promptForCredentials`, `promptForConsent`, `promptForConsentForNonWindowsBinaries`.|
 |localSecurityOptionsStandardUserElevationPromptBehavior|[localSecurityOptionsStandardUserElevationPromptBehaviorType](../resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)|Defina o comportamento da solicitação de elevação para usuários padrão. Os valores possíveis são: `notConfigured`, `automaticallyDenyElevationRequests`, `promptForCredentialsOnTheSecureDesktop`, `promptForCredentials`.|
-|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Booliano|Habilite todas as solicitações de elevação ir para a área de trabalho do usuário interativa em vez de área de trabalho segura. Configurações de diretiva de comportamento de solicitação para administradores e usuários padrão são usadas.|
-|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Booliano|Instalações de aplicativo exigir privilégios elevados vai solicitar credenciais de administrador. É habilitada por padrão|
-|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Booliano|Permitir aplicativos UIAccess solicitar elevação sem usar a área de trabalho segura. É habilitada por padrão|
-|localSecurityOptionsUseAdminApprovalMode|Booliano|Define se a conta de administrador interna usa o modo de aprovação de administrador ou executa todos os aplicativos com privilégios de administrador completo. É habilitada por padrão|
-|localSecurityOptionsUseAdminApprovalModeForAdministrators|Booliano|Defina se o modo de aprovação de administrador e todas as configurações de diretiva UAC estão habilitadas, é habilitada por padrão|
+|localSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation|Boolean|Habilite todas as solicitações de elevação ir para a área de trabalho do usuário interativa em vez de área de trabalho segura. Configurações de diretiva de comportamento de solicitação para administradores e usuários padrão são usadas.|
+|localSecurityOptionsDetectApplicationInstallationsAndPromptForElevation|Boolean|Instalações de aplicativo exigir privilégios elevados vai solicitar credenciais de administrador. É habilitada por padrão|
+|localSecurityOptionsAllowUIAccessApplicationsForSecureLocations|Boolean|Permitir aplicativos UIAccess solicitar elevação sem usar a área de trabalho segura. É habilitada por padrão|
+|localSecurityOptionsUseAdminApprovalMode|Boolean|Define se a conta de administrador interna usa o modo de aprovação de administrador ou executa todos os aplicativos com privilégios de administrador completo. É habilitada por padrão|
+|localSecurityOptionsUseAdminApprovalModeForAdministrators|Boolean|Defina se o modo de aprovação de administrador e todas as configurações de diretiva UAC estão habilitadas, é habilitada por padrão|
 |localSecurityOptionsInformationShownOnLockScreen|[localSecurityOptionsInformationShownOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype.md)|Configure as informações do usuário que são exibidas quando a sessão está bloqueada. Se não estiver configurado, username, domínio e nome de exibição do usuário são mostrados. Os valores possíveis são: `notConfigured`, `userDisplayNameDomainUser`, `userDisplayNameOnly`, `doNotDisplayUser`.|
 |localSecurityOptionsInformationDisplayedOnLockScreen|[localSecurityOptionsInformationDisplayedOnLockScreenType](../resources/intune-deviceconfig-localsecurityoptionsinformationdisplayedonlockscreentype.md)|Configure as informações do usuário que são exibidas quando a sessão está bloqueada. Se não estiver configurado, username, domínio e nome de exibição do usuário são mostrados. Os valores possíveis são: `notConfigured`, `administrators`, `administratorsAndPowerUsers`, `administratorsAndInteractiveUsers`.|
-|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Booliano|Essa configuração determina se o cliente SMB tentará negociar a assinatura de pacotes SMB.|
-|localSecurityOptionsClientDigitallySignCommunicationsAlways|Booliano|Essa configuração de segurança determina se a assinatura de pacotes é exigida pelo componente cliente do SMB.|
-|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Booliano|Se essa configuração de segurança estiver habilitada, o redirecionador de bloco de mensagens do servidor (SMB) é permitido para enviar senhas de texto sem formatação para servidores SMB não Microsoft que não têm suporte para criptografia de senha durante a autenticação.|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Booliano|Essa configuração de segurança determina se a assinatura de pacotes é exigida pelo componente de servidor SMB.|
-|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Booliano|Essa configuração de segurança determina se o servidor SMB irá negociar assinatura com clientes que solicitarem de pacotes SMB.|
-|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Booliano|Por padrão, essa configuração de segurança restringe o acesso anônimo a compartilhamentos e pipes para as configurações de pipes nomeados que podem ser acessados anonimamente e compartilhamentos que podem ser acessados anonimamente|
-|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Booliano|Essa configuração de segurança determina quais permissões adicionais serão concedidas para conexões anônimas ao computador.|
-|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Booliano|Essa configuração de segurança determina se deve ser permite que usuários anônimos executem determinadas atividades, como enumeração de nomes de contas de domínio e compartilhamentos de rede.|
-|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Booliano|Essa configuração de segurança determina se, na próxima alteração de senha, o valor de hash do LM (LAN Manager) para a nova senha é armazenado. Ele não é armazenado por padrão.|
+|localSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees|Boolean|Essa configuração determina se o cliente SMB tentará negociar a assinatura de pacotes SMB.|
+|localSecurityOptionsClientDigitallySignCommunicationsAlways|Boolean|Essa configuração de segurança determina se a assinatura de pacotes é exigida pelo componente cliente do SMB.|
+|localSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers|Boolean|Se essa configuração de segurança estiver habilitada, o redirecionador de bloco de mensagens do servidor (SMB) é permitido para enviar senhas de texto sem formatação para servidores SMB não Microsoft que não têm suporte para criptografia de senha durante a autenticação.|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsAlways|Boolean|Essa configuração de segurança determina se a assinatura de pacotes é exigida pelo componente de servidor SMB.|
+|localSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees|Boolean|Essa configuração de segurança determina se o servidor SMB irá negociar assinatura com clientes que solicitarem de pacotes SMB.|
+|localSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares|Boolean|Por padrão, essa configuração de segurança restringe o acesso anônimo a compartilhamentos e pipes para as configurações de pipes nomeados que podem ser acessados anonimamente e compartilhamentos que podem ser acessados anonimamente|
+|localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts|Boolean|Essa configuração de segurança determina quais permissões adicionais serão concedidas para conexões anônimas ao computador.|
+|localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares|Boolean|Essa configuração de segurança determina se deve ser permite que usuários anônimos executem determinadas atividades, como enumeração de nomes de contas de domínio e compartilhamentos de rede.|
+|localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange|Boolean|Essa configuração de segurança determina se, na próxima alteração de senha, o valor de hash do LM (LAN Manager) para a nova senha é armazenado. Ele não é armazenado por padrão.|
 |localSecurityOptionsSmartCardRemovalBehavior|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|Essa configuração de segurança determina o que acontece quando o cartão inteligente de um usuário conectado é removido do leitor de cartão inteligente. Os valores possíveis são: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
-|defenderSecurityCenterDisableAppBrowserUI|Booliano|Usada para desabilitar a exibição da área de proteção de aplicativo e de navegador.|
-|defenderSecurityCenterDisableFamilyUI|Booliano|Usada para desabilitar a exibição da área de opções da família.|
-|defenderSecurityCenterDisableHealthUI|Booliano|Usada para desabilitar a exibição da área de integridade e desempenho do dispositivo.|
-|defenderSecurityCenterDisableNetworkUI|Booliano|Usada para desabilitar a exibição da área de proteção de rede e de firewall.|
-|defenderSecurityCenterDisableVirusUI|Booliano|Usada para desabilitar a exibição da área de proteção de vírus e ameaças.|
-|defenderSecurityCenterDisableAccountUI|Booliano|Usada para desabilitar a exibição da área de proteção de conta.|
-|defenderSecurityCenterDisableHardwareUI|Booliano|Usada para desabilitar a exibição da área de proteção de hardware.|
-|defenderSecurityCenterDisableRansomwareUI|Booliano|Usada para desabilitar a exibição da área de proteção do ransomware. |
-|defenderSecurityCenterDisableSecureBootUI|Booliano|Usada para desabilitar a exibição da área de inicialização segura em segurança de dispositivo.|
-|defenderSecurityCenterDisableTroubleshootingUI|Booliano|Usada para desabilitar a exibição do processo de segurança, a solução de problemas em segurança de dispositivo.|
-|defenderSecurityCenterOrganizationDisplayName|Cadeia de caracteres|O nome de empresa que é exibido para os usuários.|
-|defenderSecurityCenterHelpEmail|Cadeia de caracteres|O endereço de email que será exibido aos usuários.|
-|defenderSecurityCenterHelpPhone|Cadeia de caracteres|O número de telefone ou o ID do Skype que será exibido aos usuários.|
-|defenderSecurityCenterHelpURL|Cadeia de caracteres|Portal da Ajuda URL isso será exibido aos usuários.|
+|defenderSecurityCenterDisableAppBrowserUI|Boolean|Usada para desabilitar a exibição da área de proteção de aplicativo e de navegador.|
+|defenderSecurityCenterDisableFamilyUI|Boolean|Usada para desabilitar a exibição da área de opções da família.|
+|defenderSecurityCenterDisableHealthUI|Boolean|Usada para desabilitar a exibição da área de integridade e desempenho do dispositivo.|
+|defenderSecurityCenterDisableNetworkUI|Boolean|Usada para desabilitar a exibição da área de proteção de rede e de firewall.|
+|defenderSecurityCenterDisableVirusUI|Boolean|Usada para desabilitar a exibição da área de proteção de vírus e ameaças.|
+|defenderSecurityCenterDisableAccountUI|Boolean|Usada para desabilitar a exibição da área de proteção de conta.|
+|defenderSecurityCenterDisableHardwareUI|Boolean|Usada para desabilitar a exibição da área de proteção de hardware.|
+|defenderSecurityCenterDisableRansomwareUI|Boolean|Usada para desabilitar a exibição da área de proteção do ransomware. |
+|defenderSecurityCenterDisableSecureBootUI|Boolean|Usada para desabilitar a exibição da área de inicialização segura em segurança de dispositivo.|
+|defenderSecurityCenterDisableTroubleshootingUI|Boolean|Usada para desabilitar a exibição do processo de segurança, a solução de problemas em segurança de dispositivo.|
+|defenderSecurityCenterOrganizationDisplayName|String|O nome de empresa que é exibido para os usuários.|
+|defenderSecurityCenterHelpEmail|String|O endereço de email que será exibido aos usuários.|
+|defenderSecurityCenterHelpPhone|String|O número de telefone ou o ID do Skype que será exibido aos usuários.|
+|defenderSecurityCenterHelpURL|String|Portal da Ajuda URL isso será exibido aos usuários.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notificações para mostrar de exibido áreas de aplicativo. Os valores possíveis são: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configurar onde exibir contato de TI informações aos usuários finais. Os valores possíveis são: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
-|firewallBlockStatefulFTP|Booliano|Bloqueia conexões de FTP com estado ao dispositivo|
+|firewallBlockStatefulFTP|Boolean|Bloqueia conexões de FTP com estado ao dispositivo|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configura o tempo limite ocioso das associações de segurança, em segundos, de 300 para 3.600, inclusive. Após esse período, as associações de segurança expirarão e serão excluídas. Valores válidos de 300 a 3.600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Selecione a chave pré compartilhada codificação a ser usada. Os valores possíveis são: `deviceDefault`, `none`, `utF8`.|
-|firewallIPSecExemptionsAllowNeighborDiscovery|Booliano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
-|firewallIPSecExemptionsAllowICMP|Booliano|Configura isenções IPSec para permitir ICMP|
-|firewallIPSecExemptionsAllowRouterDiscovery|Booliano|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
-|firewallIPSecExemptionsAllowDHCP|Booliano|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
+|firewallIPSecExemptionsAllowNeighborDiscovery|Boolean|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de vizinhos|
+|firewallIPSecExemptionsAllowICMP|Boolean|Configura isenções IPSec para permitir ICMP|
+|firewallIPSecExemptionsAllowRouterDiscovery|Boolean|Configura isenções IPSec para permitir códigos do tipo ICMP IPv6 de descoberta de roteadores|
+|firewallIPSecExemptionsAllowDHCP|Boolean|Configura isenções IPSec para permitir tráfego DHCP de IPv4 e IPv6|
 |firewallCertificateRevocationListCheckMethod|[firewallCertificateRevocationListCheckMethodType](../resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)|Especifique como a lista de revogação de certificado deve ser impostas. Os valores possíveis são: `deviceDefault`, `none`, `attempt`, `require`.|
-|firewallMergeKeyingModuleSettings|Booliano|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
+|firewallMergeKeyingModuleSettings|Boolean|Se um conjunto de autenticação não for totalmente suportado por um módulo de chave, direcione o módulo para ignorar apenas pacotes de autenticação não compatíveis, em vez de todo o conjunto|
 |firewallPacketQueueingMethod|[firewallPacketQueueingMethodType](../resources/intune-deviceconfig-firewallpacketqueueingmethodtype.md)|Configura como queueing pacotes deve ser aplicada no cenário túnel gateway. Os valores possíveis são: `deviceDefault`, `disabled`, `queueInbound`, `queueOutbound`, `queueBoth`.|
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes do domínio|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Define as configurações de perfil de firewall das redes públicas|
@@ -198,31 +200,34 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |defenderAdditionalGuardedFolders|String collection|Lista de caminhos de pasta a serem adicionados à lista de pastas protegidas|
 |defenderNetworkProtectionType|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Valor que indica o comportamento do NetworkProtection. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binária|Conteúdo XML com informações sobre a proteção contra vulnerabilidades.|
-|defenderExploitProtectionXmlFileName|Cadeia de caracteres|Nome do arquivo do qual DefenderExploitProtectionXml foi obtido.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Booliano|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
+|defenderExploitProtectionXmlFileName|String|Nome do arquivo do qual DefenderExploitProtectionXml foi obtido.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indica se o usuário será ou não impedido de substituir as configurações de Exploit Protection.|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Permite que o administrador escolha quais tipos de aplicativo permitir nos dispositivos. Os valores possíveis são: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Ative o protetor de credencial quando o nível de segurança de plataforma com inicialização seguro e virtualização com base em segurança estão habilitadas. Os valores possíveis são: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
-|deviceGuardEnableVirtualizationBasedSecurity|Booliano|Ativa as teclas de virtualização com base em Security(VBS).|
-|deviceGuardEnableSecureBootWithDMA|Booliano|Especifica se o nível de segurança de plataforma está habilitado na próxima reinicialização.|
-|smartScreenEnableInShell|Booliano|Permite que os administradores de TI configurem SmartScreen para Windows.|
-|smartScreenBlockOverrideForFiles|Booliano|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
-|applicationGuardEnabled|Booliano|Habilitar o Windows Defender Application Guard|
+|deviceGuardEnableVirtualizationBasedSecurity|Boolean|Ativa as teclas de virtualização com base em Security(VBS).|
+|deviceGuardEnableSecureBootWithDMA|Boolean|Especifica se o nível de segurança de plataforma está habilitado na próxima reinicialização.|
+|deviceGuardLaunchSystemGuard|[habilitação] (.. /Resources/Intune-Shared-Enablement
+.MD)|Permite que o administrador de TI configurar o lançamento do protetor de sistema. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|smartScreenEnableInShell|Boolean|Permite que os administradores de TI configurem SmartScreen para Windows.|
+|smartScreenBlockOverrideForFiles|Boolean|Permite que administradores de TI controlem se os usuários podem ignorar avisos do SmartScreen e executar arquivos maliciosos.|
+|applicationGuardEnabled|Boolean|Habilitar o Windows Defender Application Guard|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Habilite o protetor de aplicativo do Windows Defender para versões mais recentes do Windows. Os valores possíveis são: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Área de transferência de bloqueio para um arquivo de imagem de transferência, arquivo de texto ou nenhum deles. Os valores possíveis são: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
-|applicationGuardBlockNonEnterpriseContent|Booliano|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
-|applicationGuardAllowPersistence|Booliano|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web, etc.)|
-|applicationGuardForceAuditing|Booliano|A auditoria forçada manterá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema, etc.)
+|applicationGuardBlockNonEnterpriseContent|Boolean|Impedir sites corporativos de carregar conteúdos que não sejam da empresa, como plug-ins de terceiros|
+|applicationGuardAllowPersistence|Boolean|Permitir dados persistentes gerados por usuários dentro do contêiner do App Guard (favoritos, cookies, senhas da Web, etc.)|
+|applicationGuardForceAuditing|Boolean|A auditoria forçada manterá logs e eventos do Windows para atender aos critérios de segurança/conformidade (exemplos de evento são logon e logoff do usuário, uso de direitos de privilégios, instalação de software, as alterações do sistema, etc.)
 |
 |applicationGuardBlockClipboardSharing|[applicationGuardBlockClipboardSharingType](../resources/intune-deviceconfig-applicationguardblockclipboardsharingtype.md)|Impedir a área de transferência de compartilhar dados do Host para o Contêiner, do Contêiner para o Host ou em ambas as direções. Os valores possíveis são: `notConfigured`, `blockBoth`, `blockHostToContainer`, `blockContainerToHost`, `blockNone`.|
-|applicationGuardAllowPrintToPDF|Booliano|Permitir a impressão em PDF pelo contêiner|
-|applicationGuardAllowPrintToXPS|Booliano|Permitir a impressão em XPS pelo contêiner|
-|applicationGuardAllowPrintToLocalPrinters|Booliano|Permitir a impressão em Impressoras Locais pelo contêiner|
-|applicationGuardAllowPrintToNetworkPrinters|Booliano|Permitir a impressão em Impressoras da Rede pelo contêiner|
-|applicationGuardAllowVirtualGPU|Booliano|Permitir guard aplicativo usar GPU virtual|
-|applicationGuardAllowFileSaveOnHost|Booliano|Permitir que os usuários baixem arquivos de borda no contêiner do protetor de aplicativo e salvá-los no host do sistema de arquivos|
-|bitLockerDisableWarningForOtherDiskEncryption|Booliano|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
-|bitLockerEnableStorageCardEncryptionOnMobile|Booliano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
-|bitLockerEncryptDevice|Booliano|Permite que o administrador exija que a criptografia seja ativada usando BitLocker.|
+|applicationGuardAllowPrintToPDF|Boolean|Permitir a impressão em PDF pelo contêiner|
+|applicationGuardAllowPrintToXPS|Boolean|Permitir a impressão em XPS pelo contêiner|
+|applicationGuardAllowPrintToLocalPrinters|Boolean|Permitir a impressão em Impressoras Locais pelo contêiner|
+|applicationGuardAllowPrintToNetworkPrinters|Boolean|Permitir a impressão em Impressoras da Rede pelo contêiner|
+|applicationGuardAllowVirtualGPU|Boolean|Permitir guard aplicativo usar GPU virtual|
+|applicationGuardAllowFileSaveOnHost|Boolean|Permitir que os usuários baixem arquivos de borda no contêiner do protetor de aplicativo e salvá-los no host do sistema de arquivos|
+|bitLockerAllowStandardUserEncryption|Boolean|Permite que o administrador permitir que usuários padrão habilitar o encrpytion durante ingressar do Windows Azure AD.|
+|bitLockerDisableWarningForOtherDiskEncryption|Boolean|Permite que o administrador desabilite o aviso de outras criptografias de disco nas máquinas dos usuários.|
+|bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Permite que o administrador exija que a criptografia seja ativada usando BitLocker. Essa política é válida apenas para uma SKU móvel.|
+|bitLockerEncryptDevice|Boolean|Permite que o administrador exija que a criptografia seja ativada usando BitLocker.|
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|Política de unidade de disco BitLocker sistema.|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|O BitLocker fixa direcionar a política.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Política da unidade removível do BitLocker.|
@@ -233,15 +238,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 26312
+Content-length: 26475
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -249,6 +255,7 @@ Content-length: 26312
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -604,9 +611,9 @@ Content-length: 26312
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -625,7 +632,7 @@ Content-length: 26312
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -794,6 +801,7 @@ Content-length: 26312
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -809,6 +817,7 @@ Content-length: 26312
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -865,7 +874,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 26499
+Content-Length: 26647
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -879,6 +888,7 @@ Content-Length: 26499
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -1234,9 +1244,9 @@ Content-Length: 26499
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -1255,7 +1265,7 @@ Content-Length: 26499
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -1424,6 +1434,7 @@ Content-Length: 26499
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -1439,6 +1450,7 @@ Content-Length: 26499
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -1489,7 +1501,6 @@ Content-Length: 26499
   }
 }
 ```
-
 
 
 

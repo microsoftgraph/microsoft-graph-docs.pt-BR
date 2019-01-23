@@ -4,12 +4,12 @@ description: As políticas de proteção de aplicativos do Microsoft Intune ajud
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2a701dfc36615facdf64e7588f8688eb495906a3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90764386d1241a0cec7552435ebd605d61dcae5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395003"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -24,6 +24,7 @@ Use as políticas de proteção de aplicativos do Intune para ajudar a proteger 
 Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de proteção de aplicativos no Intune:
 
 - [Perfil de inscrição de proprietário do dispositivo Android](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Código da empresa de inscrição Android](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android para o aplicativo de trabalho](intune-apps-androidforworkapp.md)
 - [Esquema de configuração do aplicativo Android for Work](intune-androidforwork-androidforworkappconfigurationschema.md)
 - [Item de esquema de configuração do aplicativo Android for Work](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
@@ -73,6 +74,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [iOS VPP app revogar o resultado de ação de licenças](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Livro eletrônico do VPP do iOS](intune-books-iosvppebook.md)
 - [Atribuição de livros eletrônicos do VPP do iOS](intune-books-iosvppebookassignment.md)
+- [Mac os VPP app](intune-apps-macosvppapp.md)
+- [Licença de aplicativo atribuída VPP Mac SO](intune-apps-macosvppappassignedlicense.md)
+- [Configurações do sistema operacional do Mac VPP app atribuição](intune-apps-macosvppappassignmentsettings.md)
+- [Mac SO VPP app revogar o resultado de ação de licenças](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [aplicativos LOB macOS](intune-apps-macoslobapp.md)
 - [macOS LOB filho app](intune-apps-macoslobchildapp.md)
 - [macOS mínimos do sistema operacional](intune-apps-macosminimumoperatingsystem.md)
@@ -111,10 +116,17 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Estado de publicação de aplicativos móveis](intune-apps-mobileapppublishingstate.md)
 - [Mobile contidos app](intune-apps-mobilecontainedapp.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
+- [Status de check-in de cliente do Office](intune-cirrus-officeclientcheckinstatus.md)
+- [Configuração de cliente do Office](intune-cirrus-officeclientconfiguration.md)
+- [Atribuição de configuração de cliente do Office](intune-cirrus-officeclientconfigurationassignment.md)
+- [Configuração do Office](intune-cirrus-officeconfiguration.md)
+- [Destino de atribuição de configuração do Office](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Destino da atribuição de grupo do Office configuração](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Id de produto do Office](intune-apps-officeproductid.md)
 - [Aplicativo do Office suite](intune-apps-officesuiteapp.md)
 - [O nível de exibição do progresso instalar o pacote do Office](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Canal de atualização do Office](intune-apps-officeupdatechannel.md)
+- [Resumo checkin de usuário do Office](intune-cirrus-officeusercheckinsummary.md)
 - [Detalhes de estado do aplicativo resultante](intune-apps-resultantappstatedetail.md)
 - [Certificado de assinatura de código Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Status de instalação de aplicativo do usuário](intune-apps-userappinstallstatus.md)
@@ -122,6 +134,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de licenciamento do VPP](intune-apps-vpplicensingtype.md)
 - [Aplicativo Web](intune-apps-webapp.md)
 - [Aplicativos LOB Win32](intune-apps-win32lobapp.md)
+- [Configurações de atribuição de aplicativos LOB Win32](intune-apps-win32lobappassignmentsettings.md)
 - [Detecção de aplicativos LOB Win32](intune-apps-win32lobappdetection.md)
 - [Operador de detecção de aplicativos LOB Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Detecção de sistema de arquivo de aplicativo LOB Win32](intune-apps-win32lobappfilesystemdetection.md)
@@ -129,6 +142,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Instalar o aplicativo LOB Win32 experiência](intune-apps-win32lobappinstallexperience.md)
 - [Informações sobre o msi app Win32 LOB](intune-apps-win32lobappmsiinformation.md)
 - [Tipo de pacote msi de aplicativos LOB Win32](intune-apps-win32lobappmsipackagetype.md)
+- [Notificação de aplicativos LOB Win32](intune-apps-win32lobappnotification.md)
 - [Win32 LOB a detecção de script do aplicativo power shell](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Detecção de código de produto de aplicativos LOB Win32](intune-apps-win32lobappproductcodedetection.md)
 - [Detecção de registro de aplicativo LOB Win32](intune-apps-win32lobappregistrydetection.md)
@@ -141,6 +155,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de dispositivo do Windows](intune-apps-windowsdevicetype.md)
 - [Sistema operacional mínimo do Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Configuração de cliente do office Windows](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Configuração de segurança do Windows office client](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Informações de pacote do Windows](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Pacote do Windows Phone 8.1 AppX](intune-apps-windowsphone81appxbundle.md)

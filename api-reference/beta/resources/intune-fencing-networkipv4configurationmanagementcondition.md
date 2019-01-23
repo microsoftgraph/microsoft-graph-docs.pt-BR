@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de networkIPv4ConfigurationManagementCondition
 description: Configurações de rede IPv4 condições de gerenciamento baseadas na configuração podem ser definidas que acionará quando um dispositivo detecta certo IP. Um condições de gerenciamento de configuração IP só serão considerados TRUE quando a conexão de rede estiver ativo.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 412f5de452e23eeb58f536655c4678526e996e07
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4a9642e1a22e3344f04433eaabfc29beab9e9d13
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395430"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>tipo de recurso de networkIPv4ConfigurationManagementCondition
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Configurações de rede IPv4 condições de gerenciamento baseadas na configuração podem ser definidas que acionará quando um dispositivo detecta certo IP. Um condições de gerenciamento de configuração IP só serão considerados TRUE quando a conexão de rede estiver ativo.
+
 
 Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md)
 
@@ -33,17 +34,17 @@ Herda de [networkManagementCondition](../resources/intune-fencing-networkmanagem
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para a condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|nome exclusivo|Cadeia de caracteres|Nome exclusivo para a condição de gerenciamento. Usadas nas expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|Cadeia de caracteres|O nome definido admin da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|Cadeia de caracteres|O administrador definidos descrição da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|String|Identificador exclusivo para a condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|nome exclusivo|String|Nome exclusivo para a condição de gerenciamento. Usadas nas expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|String|O nome definido admin da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|String|O administrador definidos descrição da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado de serviço gerado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|A hora que da última modificação a condição de gerenciamento. Lado de serviços atualizado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag da condição de gerenciamento. Lado de serviços atualizado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV4Prefix|Cadeia de caracteres|A sub-rede IPv4 seja conectada. Por exemplo, 10.0.0.0/8|
-|ipV4Gateway|Cadeia de caracteres|O endereço de gateway IPv4. Por exemplo, 10.0.0.0|
-|ipV4DHCPServer|Cadeia de caracteres|O endereço IPv4 do servidor DHCP para o adaptador.|
+|ipV4Prefix|String|A sub-rede IPv4 seja conectada. Por exemplo, 10.0.0.0/8|
+|ipV4Gateway|String|O endereço de gateway IPv4. Por exemplo, 10.0.0.0|
+|ipV4DHCPServer|String|O endereço IPv4 do servidor DHCP para o adaptador.|
 |ipV4DNSServerList|String collection|Os servidores de DNS IPv4 configurados para o adaptador.|
 |dnsSuffixList|String collection|Sufixos DNS válidos para a rede atual. Por exemplo, seattle.contoso.com|
 
@@ -84,7 +85,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

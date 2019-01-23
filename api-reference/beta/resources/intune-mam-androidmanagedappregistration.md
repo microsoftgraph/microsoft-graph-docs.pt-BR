@@ -1,24 +1,25 @@
 ---
 title: androidManagedAppRegistration resource type
-description: Representa os detalhes de sincronização de um aplicativo para Android, com recursos de gerenciamento, para um usuário específico.
+description: Representa os detalhes de sincronização de um aplicativo para Android, com recursos de gerenciamento, para um usuário específico. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 386ac37d2b3882e64f1289e4795ec846dd441ff3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 627de31a0d51aea6f91a10adf9c2cfb3da95b588
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395535"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration resource type
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Representa os detalhes de sincronização de um aplicativo para Android, com recursos de gerenciamento, para um usuário específico.
 O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
+
 
 Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
@@ -34,21 +35,22 @@ Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora de criação. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|applicationVersion|Cadeia de caracteres|Versão do aplicativo. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|managementSdkVersion|Cadeia de caracteres|Versão do SDK do gerenciamento de aplicativos. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|platformVersion|Cadeia de caracteres|Versão do sistema operacional. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceType|Cadeia de caracteres|Tipo de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceName|Cadeia de caracteres|Nome de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|managedDeviceId|Cadeia de caracteres|O identificador de dispositivo gerenciado do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é gerenciado. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|azureADDeviceId|Cadeia de caracteres|O identificador de dispositivo do Azure Active Directory do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é o Azure Active Directory registrada. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|applicationVersion|String|Versão do aplicativo. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|managementSdkVersion|String|Versão do SDK do gerenciamento de aplicativos. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|platformVersion|String|Versão do sistema operacional. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceType|String|Tipo de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceName|String|Nome de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é gerenciado. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é o Azure Active Directory registrada. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceModel|Cadeia de caracteres|O modelo de dispositivo para que o registro atual do aplicativo Inherited de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|Cadeia de caracteres|O fabricante do dispositivo para que o registro atual do aplicativo Inherited de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceManufacturer|String|O fabricante do dispositivo para que o registro atual do aplicativo Inherited de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. Aplicativo em execução em um dispositivo root. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|userId|Cadeia de caracteres|A ID de usuário à qual este registro de aplicativo pertence. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|userId|String|A ID de usuário à qual este registro de aplicativo pertence. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|version|Cadeia de caracteres|Versão da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|String|Chave da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|version|String|Versão da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|patchVersion|String|A versão de patch para o registro atual do aplicativo android|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -89,10 +91,10 @@ Veja a seguir uma representação JSON do recurso.
     "packageId": "String"
   },
   "id": "String (identifier)",
-  "version": "String"
+  "version": "String",
+  "patchVersion": "String"
 }
 ```
-
 
 
 

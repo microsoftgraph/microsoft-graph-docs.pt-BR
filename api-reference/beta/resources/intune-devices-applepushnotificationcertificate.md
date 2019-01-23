@@ -1,23 +1,24 @@
 ---
 title: Tipo de recurso applePushNotificationCertificate
 description: Certificado de notificação por push da Apple.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9c8d968e48b1aa5e02c554dc8a5392165f0a3f9e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a8a5df851f1826cd3e1e124bf8c2cda89b24da8e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395584"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Tipo de recurso applePushNotificationCertificate
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Certificado de notificação por push da Apple.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -33,12 +34,13 @@ Certificado de notificação por push da Apple.
 |topicIdentifier|Cadeia de caracteres|ID do tópico.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação de certificado de notificações por push da Apple.|
 |expirationDateTime|DateTimeOffset|Data e hora do vencimento de certificado de notificações por push da Apple.|
-|certificateUploadStatus|Cadeia de caracteres|O status de carregamento de certificado.|
-|certificateUploadFailureReason|Cadeia de caracteres|O motivo pelo qual o carregamento do certificado falhou.|
+|certificateUploadStatus|String|O status de carregamento de certificado.|
+|certificateUploadFailureReason|String|O motivo pelo qual o carregamento do certificado falhou.|
 |certificado|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -60,7 +62,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificate": "String"
 }
 ```
-
 
 
 

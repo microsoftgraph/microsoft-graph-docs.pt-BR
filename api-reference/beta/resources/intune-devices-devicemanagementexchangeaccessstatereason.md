@@ -1,27 +1,28 @@
 ---
 title: tipo de enum deviceManagementExchangeAccessStateReason
 description: Motivo de estado de acesso do Exchange de dispositivo.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 25d5ac8a5624352b9c474caf4088709ca1453387
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b7a076239e49c59cb95cd1c1f644bc9a2f1f906e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395857"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>tipo de enum deviceManagementExchangeAccessStateReason
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Motivo de estado de acesso do Exchange de dispositivo.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Não há motivo de estado acesso descoberto do Exchange|
+|none|0|Não há motivo de estado acesso descoberto do Exchange|
 |unknown|1|Motivo de estado de acesso desconhecido|
 |exchangeGlobalRule|2|Estado de acesso determinado pela regra Global do Exchange|
 |exchangeIndividualRule|3|Estado de acesso determinado pela regra Individual do Exchange|
@@ -37,7 +38,6 @@ Motivo de estado de acesso do Exchange de dispositivo.
 |azureADBlockDueToAccessPolicy|14|Estado de acesso revogado pela política de acesso AAD|
 |compromisedPassword|15|Estado de acesso revogado por senha comprometida|
 |deviceNotKnownWithManagedApp|16|Estado de acesso revogado pelo desafio de aplicativo gerenciado|
-
 
 
 

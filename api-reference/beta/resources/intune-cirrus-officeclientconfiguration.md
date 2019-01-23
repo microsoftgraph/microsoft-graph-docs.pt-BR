@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de officeClientConfiguration
 description: Configuração do cliente do Office.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3ddc1846afe96c99b616f28d6c831adca3eae960
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c171f5f9f3dcedcab0d14b98a6fea0ba8fbe41eb
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984056"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393232"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>tipo de recurso de officeClientConfiguration
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Configuração do cliente do Office.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,11 +30,11 @@ Configuração do cliente do Office.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID da diretiva de configuração do cliente do office.|
+|id|String|ID da diretiva de configuração do cliente do office.|
 |userPreferencePayload|Stream|Configurações de preferência JSON da cadeia de caracteres em formato binário, esses valores podem ser substituídos pelo usuário.|
 |policyPayload|Stream|Configurações de diretiva JSON da cadeia de caracteres em formato binário, esses valores não podem ser alterados pelo usuário.|
-|description|Cadeia de caracteres|Ainda não documentado|
-|displayName|Cadeia de caracteres|Admin fornecida a descrição do cliente do office política de configuração.|
+|description|String|Ainda não documentado|
+|displayName|String|Admin fornecida a descrição do cliente do office política de configuração.|
 |lastModifiedDateTime|DateTime|Carimbo de data e hora modificadas por último da política.|
 |prioridade|Int32|Valor de prioridade deve ser um valor exclusivo para cada política em um locatário e será usado para resolução de conflito, valores inferiores média de prioridade é alta.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Check-in do resumo do usuário para a política.|

@@ -1,25 +1,26 @@
 ---
 title: Atualizar deviceManagementScriptDeviceState
 description: Atualize as propriedades de um objeto deviceManagementScriptDeviceState.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 857c1cca958088c1c884cb06b7f6e8416b3d8f1e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 35768793279cdb96494a26dac8854f74e3c267ad
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395150"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Atualizar deviceManagementScriptDeviceState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualize as propriedades de um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
+|id|String|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado de execução mais recente do script de gerenciamento de dispositivo. Os valores possíveis são: `unknown`, `success`, `fail`.|
-|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
+|resultMessage|String|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivo executa.|
 |errorCode|Int32|Código de erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
@@ -63,14 +64,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 Content-type: application/json
-Content-length: 209
+Content-length: 281
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
   "runState": "success",
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
@@ -96,7 +99,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 
