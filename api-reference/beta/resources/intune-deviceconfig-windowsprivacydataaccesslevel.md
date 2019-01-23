@@ -1,23 +1,24 @@
 ---
 title: tipo de enum windowsPrivacyDataAccessLevel
 description: Determine o nível de acesso a categoria de dados de privacidade Windows específica.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 64db5eb78708a0cfa835bd695ba01b2c267fc4fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b5d6fed0897b22a6a6b478dc5d2b7954faca42b2
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959311"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410620"
 ---
 # <a name="windowsprivacydataaccesslevel-enum-type"></a>tipo de enum windowsPrivacyDataAccessLevel
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Determine o nível de acesso a categoria de dados de privacidade Windows específica.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ Determine o nível de acesso a categoria de dados de privacidade Windows especí
 |forceAllow|1|Aplicativos poderão acessar os dados de privacidade especificado.|
 |forceDeny|2|Aplicativos serão negados para acessar os dados de privacidade especificado.|
 |userInControl|3|Os usuários serão solicitados quando apps tentam acessar os dados de privacidade especificado.|
-
 
 
 

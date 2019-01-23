@@ -1,25 +1,26 @@
 ---
 title: Criar windowsAutopilotDeviceIdentity
 description: Crie um novo objeto de windowsAutopilotDeviceIdentity.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 56d200bd53e94715ba102f6c96bba3e3b5dd892b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9d9287738b33b1afe55a3f22c441b888ae7d77b4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919096"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406392"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Crie um novo objeto de [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -55,15 +56,15 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil detalhadas de status do dispositivo Windows piloto automático. Os valores possíveis são: `none` e `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Perfil definir a hora do dispositivo Windows piloto automático.|
 |orderIdentifier|Cadeia de caracteres|Ordem o identificador do dispositivo Windows piloto automático.|
-|purchaseOrderIdentifier|Cadeia de caracteres|Identificador de ordem de compra do dispositivo Windows piloto automático.|
+|purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo Windows piloto automático.|
 |serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|fabricante|Cadeia de caracteres|OEM do fabricante do dispositivo Windows piloto automático.|
-|modelo|Cadeia de caracteres|Nome do modelo do dispositivo Windows piloto automático.|
+|fabricante|String|OEM do fabricante do dispositivo Windows piloto automático.|
+|modelo|String|Nome do modelo do dispositivo Windows piloto automático.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Estado de inscrição Intune do dispositivo Windows piloto automático. Os possíveis valores são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune última contatado data hora do dispositivo Windows piloto automático.|
-|addressableUserName|Cadeia de caracteres|Nome de usuário endereçável.|
-|userPrincipalName|Cadeia de caracteres|Nome Principal de usuário.|
+|addressableUserName|String|Nome de usuário endereçável.|
+|userPrincipalName|String|Nome Principal de usuário.|
 
 
 
@@ -71,6 +72,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
@@ -121,7 +123,6 @@ Content-Length: 804
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

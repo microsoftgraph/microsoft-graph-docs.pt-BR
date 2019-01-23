@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de remoteActionAudit
 description: Relatório de ações remotos iniciadas nos dispositivos que pertencem a um determinado inquilino.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ad583f13311e5baece70c5ec28ca8f7c73f5349e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ebe93b2f2e70011fb75a08b91938f26d723d1d5c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404908"
 ---
 # <a name="remoteactionaudit-resource-type"></a>tipo de recurso de remoteActionAudit
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Relatório de ações remotos iniciadas nos dispositivos que pertencem a um determinado inquilino.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -30,18 +31,19 @@ Relatório de ações remotos iniciadas nos dispositivos que pertencem a um dete
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|ID do relatório.|
+|id|String|ID do relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo Intune.|
 |userName|Cadeia de caracteres|\[preterido\] use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|Cadeia de caracteres|Usuário que iniciou a ação de dispositivo, formato é UPN.|
+|initiatedByUserPrincipalName|String|Usuário que iniciou a ação de dispositivo, formato é UPN.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode`, `cleanWindowsDevice`, `logoutSharedAppleDeviceActiveUser`, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` .|
 |requestDateTime|DateTimeOffset|Tempo quando a ação foi emitida, dado em UTC.|
-|deviceOwnerUserPrincipalName|Cadeia de caracteres|Nome UPN do proprietário do dispositivo.|
-|deviceIMEI|Cadeia de caracteres|IMEI do dispositivo.|
+|deviceOwnerUserPrincipalName|String|Nome UPN do proprietário do dispositivo.|
+|deviceIMEI|String|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -64,7 +66,6 @@ Veja a seguir uma representação JSON do recurso.
   "actionState": "String"
 }
 ```
-
 
 
 

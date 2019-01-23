@@ -1,23 +1,24 @@
 ---
 title: tipo de enum miracastChannel
 description: Valores possíveis para o canal de Miracast.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4e68cd77caf5be311e44d6ab2911feecf712e48a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b516a0e5e54737c0857aba137be3614cecd60292
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404999"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enum miracastChannel
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Valores possíveis para o canal de Miracast.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -42,7 +43,6 @@ Valores possíveis para o canal de Miracast.
 |oneHundredFiftySeven|157|OneHundredFifty-sete.|
 |oneHundredSixtyOne|161|Um OneHundredSixty.|
 |oneHundredSixtyFive|165|Cinco OneHundredSixty.|
-
 
 
 

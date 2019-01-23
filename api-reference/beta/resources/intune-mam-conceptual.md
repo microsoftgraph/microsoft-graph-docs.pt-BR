@@ -4,12 +4,12 @@ description: As políticas de proteção de aplicativos do Microsoft Intune ajud
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ca628b81015527cb5ab7e508bebbb2808cdcde7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 563f787f2eb37b278a16c35639e0d607d3d9ee68
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418999"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -30,6 +30,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Tipo de aplicativo](intune-wip-applicationtype.md)
 - [Proteção de aplicativo gerenciado padrão](intune-mam-defaultmanagedappprotection.md)
 - [Perfil de marcação Intune](intune-wip-intunebrandingprofile.md)
+- [Atribuição de perfil marca Intune](intune-wip-intunebrandingprofileassignment.md)
 - [Proteção de aplicativo gerenciado iOS](intune-mam-iosmanagedappprotection.md)
 - [Registro de aplicativo gerenciado iOS](intune-mam-iosmanagedappregistration.md)
 - [Identificador de aplicativo móvel iOS](intune-mam-iosmobileappidentifier.md)
@@ -63,6 +64,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Arquivo do bloqueador de aplicativos da proteção de informações do Windows](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Certificado de recuperação de dados de proteção de informações do Windows](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Aplicativo da área de trabalho da proteção de informações do Windows](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Registro de dispositivo de proteção de informações do Windows](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Nível de imposição de proteção de informações do Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Coleção de intervalos de IP da Proteção de Informações do Windows](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Resumo de aprendizagem da rede de proteção de informações do Windows](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -71,3 +73,4 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Coleção de domínios como proxy da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Aplicativo de loja de proteção de informações do Windows](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Ações de apagamento de proteção de informações do Windows](intune-mam-windowsinformationprotectionwipeaction.md)

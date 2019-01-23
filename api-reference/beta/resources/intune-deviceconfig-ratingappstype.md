@@ -1,23 +1,24 @@
 ---
 title: tipo de enum ratingAppsType
 description: Aplicativos de classificação como o conteúdo de mídia
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 709734a36010ded195a93b383adefc80f729c4fe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2b8abf9bd3c1c8e0a0fdf9fb4aaada295c22f5cb
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953403"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406560"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enum ratingAppsType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Aplicativos de classificação como o conteúdo de mídia
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ Aplicativos de classificação como o conteúdo de mídia
 |agesAbove9|3|9 + age 9 e acima|
 |agesAbove12|4|12 + 12 anos e acima |
 |agesAbove17|5|17 + age 17 e acima|
-
 
 
 

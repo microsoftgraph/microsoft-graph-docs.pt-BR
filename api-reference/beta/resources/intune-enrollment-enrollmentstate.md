@@ -1,23 +1,24 @@
 ---
 title: tipo de enum enrollmentState
 description: Ainda não documentado
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9394755c5b6e6de8ed039b226d03074f1ef16cc3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b71f41d459e3fdb50fd853c62a855b4591a8ca8e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419104"
 ---
 # <a name="enrollmentstate-enum-type"></a>tipo de enum enrollmentState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Ainda não documentado
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ Ainda não documentado
 |Falha|3|Não inscritos e não houver registro de falha de inscrição.|
 |notContacted|4|Dispositivo é importado, mas não inscritos.|
 |bloqueado|5|Dispositivo está inscrito como userless, mas seja bloqueado para mover para a inscrição do usuário porque o aplicativo falha na instalação.|
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Tipo de recurso vppToken
 description: Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume Purchase Program para Empresas ou Educação. Isso envolve configurar uma conta do Apple VPP do site da Apple e carregar o token do Apple VPP Empresarial ou Educacional ao Intune. Você pode sincronizar suas informações de volume de compras com o Intune e acompanhar o uso do aplicativo comprado por volume. Você pode carregar vários tokens do Apple VPP Empresarial ou Educacional.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c69329cefc99d2a57907c8bc0fe34beb8371f1d9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a21ac5a85094692fe52c7817ee31636c872e131e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419874"
 ---
 # <a name="vpptoken-resource-type"></a>Tipo de recurso vppToken
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume Purchase Program para Empresas ou Educação. Isso envolve configurar uma conta do Apple VPP do site da Apple e carregar o token do Apple VPP Empresarial ou Educacional ao Intune. Você pode sincronizar suas informações de volume de compras com o Intune e acompanhar o uso do aplicativo comprado por volume. Você pode carregar vários tokens do Apple VPP Empresarial ou Educacional.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -46,13 +47,15 @@ Você adquire várias licenças de aplicativos do iOS por meio do Apple Volume P
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Status atual de sincronização da última sincronização de aplicativo que foi feita usando o Token do Apple Volume Purchase Program. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`. Os valores possíveis são: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Boolean|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
 |countryOrRegion|Cadeia de caracteres|Se os aplicativos para o token VPP serão automaticamente atualizados ou não.|
-|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
-|displayName|Cadeia de caracteres|Um administrador especificado token nome amigável.|
-|locationName|Cadeia de caracteres|Localização de token retornada da Apple VPP.|
-|claimTokenManagementFromExternalMdm|Booliano|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o programa de compra de Volume do Apple.|
+|displayName|String|Um administrador especificado token nome amigável.|
+|locationName|String|Localização de token retornada da Apple VPP.|
+|claimTokenManagementFromExternalMdm|Boolean|Admin consentir em permitir que reclamam token gerenciamento do MDM externo.|
+|roleScopeTagIds|String collection|Função IDs de marcas de escopo atribuída a essa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -88,10 +91,12 @@ Veja a seguir uma representação JSON do recurso.
   "dataSharingConsentGranted": true,
   "displayName": "String",
   "locationName": "String",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

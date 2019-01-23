@@ -4,12 +4,12 @@ description: Informações adicionais incluídas a um educationUser que está pr
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b6f6cf8e8a79c427403c2f2157228c8ce130b313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 19ce3e28ccedc5f6165c8c333afb2ccd10343f14
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406903"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
 
@@ -22,7 +22,7 @@ Informações adicionais incluídas a um [educationUser](educationuser.md) que e
 |:---------------|:--------|:----------|
 |birthDate|Data| Data de nascimento do aluno.|
 |externalId|Cadeia de caracteres| ID do aluno no sistema de origem.|
-|gender|`educationGender enumeration`| Os valores possíveis são: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|educationGender| Os valores possíveis são: `female`, `male`, `other`, `unkownFutureValue`.|
 |grade|Cadeia de caracteres|Nível de classificação atual do aluno.|
 |graduationYear|Cadeia de caracteres| Ano que o aluno está graduando na escola.|
 |studentNumber|Cadeia de caracteres| Número do aluno.|

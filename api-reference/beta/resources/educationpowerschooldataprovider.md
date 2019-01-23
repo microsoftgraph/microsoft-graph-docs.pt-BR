@@ -4,12 +4,12 @@ description: Usado para configurar o perfil de sincronização de dados da escol
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a22c3cf68a4a5b4c12dc4e7105f17eed4fc006f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4028170c2780cee426ec961a44b51e0362b0187f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982754"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406917"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>recurso de educationPowerSchoolDataProvider
 
@@ -28,7 +28,7 @@ Derivado do [educationSynchronizationDataProvider](educationsynchronizationdatap
 | **clientSecret** | String |  O segredo do cliente para autenticar a conexão à instância PowerSchool. |
 | **schoolsIds** | String collection |  A lista de escolas para sincronizar. |
 | **schoolYear** | String |  O ano escola para sincronizar. |
-| **allowTeachersInMultipleSchools** | Booliano |  Indica se a fonte tem vários identificadores para um único aluno ou professor. |
+| **allowTeachersInMultipleSchools** | Boolean |  Indica se a fonte tem vários identificadores para um único aluno ou professor. |
 | **personalizações** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Personalização opcional a ser aplicado ao perfil de sincronização.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -37,12 +37,12 @@ Derivado do [educationSynchronizationDataProvider](educationsynchronizationdatap
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider"
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
+    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
     "connectionUrl": "String",
     "clientId": "String",
     "clientSecret": "String",

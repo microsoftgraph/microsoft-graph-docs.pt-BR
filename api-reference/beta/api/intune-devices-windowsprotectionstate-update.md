@@ -1,25 +1,26 @@
 ---
 title: Atualizar windowsProtectionState
 description: Atualize as propriedades de um objeto windowsProtectionState.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ce3c4fcd46e2d627f94e1728d38e9a8f0f91ad30
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: faad744f1a7910b693ea7f87ea0e2ab5dddd7a25
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939872"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406203"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar windowsProtectionState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualize as propriedades de um objeto [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,23 +51,23 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
-|malwareProtectionEnabled|Booliano|Anti-malware está habilitado ou não|
+|id|String|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
+|malwareProtectionEnabled|Boolean|Anti-malware está habilitado ou não|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como limpar ou verificação completa ou pendentes reinicialização etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Booliano|Proteção em tempo real está habilitada ou não?|
-|networkInspectionSystemEnabled|Booliano|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Booliano|Verificação rápida vencidos ou não?|
-|fullScanOverdue|Booliano|Completos exame vencido ou não?|
-|signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
-|rebootRequired|Booliano|Reinicialização necessária ou não?|
-|fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão do mecanismo de proteção de ponto de extremidade atual|
-|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Atual anti-malware versão|
+|realTimeProtectionEnabled|Boolean|Proteção em tempo real está habilitada ou não?|
+|networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
+|quickScanOverdue|Boolean|Verificação rápida vencidos ou não?|
+|fullScanOverdue|Boolean|Completos exame vencido ou não?|
+|signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
+|rebootRequired|Boolean|Reinicialização necessária ou não?|
+|fullScanRequired|Boolean|Verificação completa necessária ou não?|
+|engineVersion|String|Versão do mecanismo de proteção de ponto de extremidade atual|
+|signatureVersion|String|Versão atual de definições de malware|
+|antiMalwareVersion|String|Atual anti-malware versão|
 |lastQuickScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Última versão de assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Última versão de assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Última versão de assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Tempo de informado último status de integridade do dispositivo|
 
 
@@ -75,14 +76,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 Content-type: application/json
-Content-length: 804
+Content-length: 865
 
 {
+  "@odata.type": "#microsoft.graph.windowsProtectionState",
   "malwareProtectionEnabled": true,
   "deviceState": "fullScanPending",
   "realTimeProtectionEnabled": true,
@@ -132,7 +135,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

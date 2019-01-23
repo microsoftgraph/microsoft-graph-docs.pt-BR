@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de managedDeviceCertificateState
 description: Ainda não documentado
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 13bd57eeb37c3a35f32fd9afc57726730b4f7183
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b0975049cd7597735a32b646cc5d719b371a5d27
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922134"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419097"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>tipo de recurso de managedDeviceCertificateState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Ainda não documentado
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -30,7 +31,7 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Plataforma do dispositivo. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Uso da chave. Os valores possíveis são: `keyEncipherment` e `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Unidades do período de validade. Os valores possíveis são: `days`, `months`, `years`.|
@@ -39,25 +40,26 @@ Ainda não documentado
 |certificateSubjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Formato de nome de entidade. Os valores possíveis são: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |certificateSubjectAlternativeNameFormat|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Formato de nome alternativo da entidade. Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revogar o status. Os valores possíveis são: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|certificateProfileDisplayName|Cadeia de caracteres|Nome de exibição de perfil de certificado|
+|certificateProfileDisplayName|String|Nome de exibição de perfil de certificado|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
-|userDisplayName|Cadeia de caracteres|Nome de exibição do usuário|
+|userDisplayName|String|Nome de exibição do usuário|
 |certificateExpirationDateTime|DateTimeOffset|Data de expiração de certificado|
 |certificateLastIssuanceStateChangedDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
 |lastCertificateStateChangeDateTime|DateTimeOffset|Última alteração de estado de emissão de certificado|
-|certificateIssuer|Cadeia de caracteres|Emissor|
-|certificateThumbprint|Cadeia de caracteres|Impressão digital|
-|Número_serial_do_certificado|Cadeia de caracteres|Número de série|
+|certificateIssuer|String|Emissor|
+|certificateThumbprint|String|Impressão digital|
+|Número_serial_do_certificado|String|Número de série|
 |certificateKeyLength|Int32|Comprimento da chave|
-|certificateEnhancedKeyUsage|Cadeia de caracteres|Uso estendido de chave|
+|certificateEnhancedKeyUsage|String|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
-|certificateSubjectNameFormatString|Cadeia de caracteres|Sequência de formato de nome de entidade para formatos de nome de entidade personalizada|
-|certificateSubjectAlternativeNameFormatString|Cadeia de caracteres|Sequência de formato de nome alternativo de entidade para formatos personalizados|
+|certificateSubjectNameFormatString|String|Sequência de formato de nome de entidade para formatos de nome de entidade personalizada|
+|certificateSubjectAlternativeNameFormatString|String|Sequência de formato de nome alternativo de entidade para formatos personalizados|
 |certificateIssuanceDateTime|DateTimeOffset|Data de emissão|
 |certificateErrorCode|Int32|Código de erro|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -96,7 +98,6 @@ Veja a seguir uma representação JSON do recurso.
   "certificateErrorCode": 1024
 }
 ```
-
 
 
 

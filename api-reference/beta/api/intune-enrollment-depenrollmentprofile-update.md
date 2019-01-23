@@ -1,25 +1,26 @@
 ---
 title: Atualizar depEnrollmentProfile
 description: Atualize as propriedades de um objeto depEnrollmentProfile.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a25f9604f0fd7808cb938dc1720e137db825ab4f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5f8bb392eba1ca79815d72baf9f89e790cb16d95
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983181"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419524"
 ---
 # <a name="update-depenrollmentprofile"></a>Atualizar depEnrollmentProfile
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualize as propriedades de um objeto [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,36 +50,37 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|Cadeia de caracteres|Nome do perfil Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|Cadeia de caracteres|Descrição do perfil de Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|requiresUserAuthentication|Booliano|Indica se o perfil exige autenticação do usuário Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|Cadeia de caracteres|Url de ponto de extremidade de configuração a ser usado para inscrição herdada do [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Booliano|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|isDefault|Booliano|Indica se esse é o perfil padrão|
-|supervisedModeEnabled|Booliano|Modo supervisionado, True para habilitar, false caso contrário. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter informações adicionais.|
-|supportDepartment|Cadeia de caracteres|Informações do departamento de suporte|
-|passCodeDisabled|Booliano|Indica se o painel de configuração de senha está desabilitado|
-|isMandatory|Booliano|Indica se o perfil é obrigatório|
-|locationDisabled|Booliano|Indica se o painel de configuração do serviço local está desabilitado|
-|supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte|
+|id|String|O GUID do objeto Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Nome do perfil Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|String|Descrição do perfil de Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requiresUserAuthentication|Boolean|Indica se o perfil exige autenticação do usuário Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|Url de ponto de extremidade de configuração a ser usado para inscrição herdada do [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Indica para autenticar com o Assistente de configuração do Apple em vez do Portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o Portal da empresa é necessária em dispositivos de inscritos do Assistente de instalação Inherited de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|isDefault|Boolean|Indica se esse é o perfil padrão|
+|supervisedModeEnabled|Boolean|Modo supervisionado, True para habilitar, false caso contrário. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter informações adicionais.|
+|supportDepartment|String|Informações do departamento de suporte|
+|passCodeDisabled|Boolean|Indica se o painel de configuração de senha está desabilitado|
+|isMandatory|Boolean|Indica se o perfil é obrigatório|
+|locationDisabled|Boolean|Indica se o painel de configuração do serviço local está desabilitado|
+|supportPhoneNumber|String|Número de telefone de suporte|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indica a modo de emparelhamento de iTunes. Os valores possíveis são: `disallow`, `allow`, `requiresCertificate`.|
-|profileRemovalDisabled|Booliano|Indica se a opção de remoção do perfil está desabilitada|
+|profileRemovalDisabled|Boolean|Indica se a opção de remoção do perfil está desabilitada|
 |managementCertificates|coleção [managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Certificados de gerenciamento para configurador da Apple|
-|restoreBlocked|Booliano|Indica se o painel de configuração de restauração será bloqueado|
-|restoreFromAndroidDisabled|Booliano|Indica se a restauração do Android está desabilitada|
-|appleIdDisabled|Booliano|Indica se o painel de configuração de id do Apple está desabilitado|
-|termsAndConditionsDisabled|Booliano|Indica se o painel de configuração de 'Termos e condições' está desabilitado|
-|touchIdDisabled|Booliano|Indica se o painel de configuração de id de toque está desabilitado|
-|applePayDisabled|Booliano|Indica se o painel de configuração de pagamento do Apple está desabilitado|
-|zoomDisabled|Booliano|Indica se o painel de configuração de zoom está desabilitado|
-|siriDisabled|Booliano|Indica se o painel de configuração de siri está desabilitado|
-|diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnósticos está desabilitado|
-|macOSRegistrationDisabled|Booliano|Indica se o registro do Mac OS está desabilitado|
-|macOSFileVaultDisabled|Booliano|Indica se o armazenamento de arquivo do Mac OS está desabilitado|
-|awaitDeviceConfiguredConfirmation|Booliano|Indica se o dispositivo será necessário aguardar a confirmação configurada|
+|restoreBlocked|Boolean|Indica se o painel de configuração de restauração será bloqueado|
+|restoreFromAndroidDisabled|Boolean|Indica se a restauração do Android está desabilitada|
+|appleIdDisabled|Boolean|Indica se o painel de configuração de id do Apple está desabilitado|
+|termsAndConditionsDisabled|Boolean|Indica se o painel de configuração de 'Termos e condições' está desabilitado|
+|touchIdDisabled|Boolean|Indica se o painel de configuração de id de toque está desabilitado|
+|applePayDisabled|Boolean|Indica se o painel de configuração de pagamento do Apple está desabilitado|
+|zoomDisabled|Boolean|Indica se o painel de configuração de zoom está desabilitado|
+|siriDisabled|Boolean|Indica se o painel de configuração de siri está desabilitado|
+|diagnosticsDisabled|Boolean|Indica se o painel de configuração de diagnósticos está desabilitado|
+|macOSRegistrationDisabled|Boolean|Indica se o registro do Mac OS está desabilitado|
+|macOSFileVaultDisabled|Boolean|Indica se o armazenamento de arquivo do Mac OS está desabilitado|
+|awaitDeviceConfiguredConfirmation|Boolean|Indica se o dispositivo será necessário aguardar a confirmação configurada|
 |sharedIPadMaximumUserCount|Int32|Especifica o número máximo de usuários que podem utilizar um iPad compartilhado. Só é aplicável no modo compartilhado iPad.|
-|enableSharedIPad|Booliano|Isso indica se o dispositivo é registrado em um modo que permite que vários cenários de usuário. Só é aplicável no compartilhados iPads.|
+|enableSharedIPad|Boolean|Isso indica se o dispositivo é registrado em um modo que permite que vários cenários de usuário. Só é aplicável no compartilhados iPads.|
 
 
 
@@ -86,19 +88,22 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 Content-type: application/json
-Content-length: 1231
+Content-length: 1354
 
 {
+  "@odata.type": "#microsoft.graph.depEnrollmentProfile",
   "displayName": "Display Name value",
   "description": "Description value",
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
@@ -137,7 +142,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1339
+Content-Length: 1403
 
 {
   "@odata.type": "#microsoft.graph.depEnrollmentProfile",
@@ -147,6 +152,7 @@ Content-Length: 1339
   "requiresUserAuthentication": true,
   "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
   "enableAuthenticationViaCompanyPortal": true,
+  "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "Support Department value",
@@ -179,7 +185,6 @@ Content-Length: 1339
   "enableSharedIPad": true
 }
 ```
-
 
 
 
