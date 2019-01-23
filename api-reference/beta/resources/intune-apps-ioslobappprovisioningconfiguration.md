@@ -3,21 +3,22 @@ title: tipo de recurso de iosLobAppProvisioningConfiguration
 description: Este tópico fornece descrições das declarado métodos, propriedades e relações expostas pelo recurso IOS Lob provisionamento de configuração de aplicativos.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 2d91508316ab0d164fbc2d4730e905112d82ba8f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a2a0457c306e21b8e82304acf920654a269712ee
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965604"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415576"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>tipo de recurso de iosLobAppProvisioningConfiguration
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Este tópico fornece descrições das declarado métodos, propriedades e relações expostas pelo recurso IOS Lob provisionamento de configuração de aplicativos.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -31,14 +32,14 @@ Este tópico fornece descrições das declarado métodos, propriedades e relaç�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data de validade do perfil opcional e hora.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*.mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo.|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |version|Int32|Versão da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações
@@ -71,7 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "version": 1024
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: Atualizar macOSLobApp
 description: Atualize as propriedades de um objeto macOSLobApp.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 03ffd4ade590a53502f220a3dff852201bdaf1b5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: bcf3301fb022f672db1340f45296ca19763a4d63
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985218"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413595"
 ---
 # <a name="update-macoslobapp"></a>Atualizar macOSLobApp
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Atualize as propriedades de um objeto [macOSLobApp](../resources/intune-apps-macoslobapp.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -58,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|isFeatured|Boolean|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -66,6 +67,8 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |Observações|String|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|O estado de carregamento. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|Lista de ids de marca de escopo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -77,7 +80,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |identityVersion|String|A versão da identidade.|
 |md5HashChunkSize|Int32|O tamanho do bloco de hash MD5|
 |md5Hash|String collection|Os códigos de hash MD5|
-|ignoreVersionDetection|Booliano|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina essa opção para verdadeiro para macOS aplicativos de linha de negócios (LoB) que usam um recurso de atualização self.|
+|ignoreVersionDetection|Boolean|Um booliano para controlar se a versão do aplicativo será usada para detectar o aplicativo depois que ele for instalado em um dispositivo. Defina essa opção para verdadeiro para macOS aplicativos de linha de negócios (LoB) que usam um recurso de atualização self.|
 
 
 
@@ -85,14 +88,16 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [macOSLobApp](../resources/intune-apps-macoslobapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1476
+Content-length: 1547
 
 {
+  "@odata.type": "#microsoft.graph.macOSLobApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -101,7 +106,6 @@ Content-length: 1476
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -110,6 +114,10 @@ Content-length: 1476
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -148,7 +156,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1634
+Content-Length: 1719
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -171,6 +179,10 @@ Content-Length: 1634
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -203,7 +215,6 @@ Content-Length: 1634
   "ignoreVersionDetection": true
 }
 ```
-
 
 
 

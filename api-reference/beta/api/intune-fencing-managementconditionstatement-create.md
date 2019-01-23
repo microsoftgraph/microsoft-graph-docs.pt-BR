@@ -1,25 +1,26 @@
 ---
 title: Criar managementConditionStatement
 description: Crie um novo objeto de managementConditionStatement.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0c884f1b7239dc2f73438c007202ab783a5bdf1d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: eba9d3f96d7d3a8b1f855c94b18aab6a6450651f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29417354"
 ---
 # <a name="create-managementconditionstatement"></a>Criar managementConditionStatement
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Crie um novo objeto de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
-|displayName|Cadeia de caracteres|O nome definido admin da declaração de condição de gerenciamento.|
-|description|Cadeia de caracteres|O administrador definidos descrição da declaração de condição de gerenciamento.|
+|id|String|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
+|displayName|String|O nome definido admin da declaração de condição de gerenciamento.|
+|description|String|O administrador definidos descrição da declaração de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi criada. Lado de serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora que da última modificação a declaração de condição de gerenciamento. Lado de serviços atualizado.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão da instrução gerenciamento condição usada para avaliar se um gerenciamento de condição instrução foi ativado/desativado.|
@@ -66,6 +67,7 @@ Isso é calculado a partir procurando as condições de gerenciamento associadas
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
@@ -110,7 +112,6 @@ Content-Length: 491
   ]
 }
 ```
-
 
 
 
