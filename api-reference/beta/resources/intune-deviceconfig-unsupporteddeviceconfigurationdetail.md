@@ -1,33 +1,35 @@
 ---
 title: tipo de recurso de unsupportedDeviceConfigurationDetail
 description: Uma descrição por que não há suporte para uma entidade.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6b82dcf28652cbe54a4932a641579101cb392639
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c03bdb20fc4c48fa7820e09b9212bf73250599aa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949770"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400386"
 ---
-# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a><span data-ttu-id="86c82-103">tipo de recurso de unsupportedDeviceConfigurationDetail</span><span class="sxs-lookup"><span data-stu-id="86c82-103">unsupportedDeviceConfigurationDetail resource type</span></span>
+# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a><span data-ttu-id="bd30d-103">tipo de recurso de unsupportedDeviceConfigurationDetail</span><span class="sxs-lookup"><span data-stu-id="bd30d-103">unsupportedDeviceConfigurationDetail resource type</span></span>
 
-> <span data-ttu-id="86c82-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="86c82-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="86c82-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="86c82-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bd30d-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="bd30d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bd30d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="bd30d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="86c82-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="86c82-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bd30d-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="bd30d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="86c82-107">Uma descrição por que não há suporte para uma entidade.</span><span class="sxs-lookup"><span data-stu-id="86c82-107">A description of why an entity is unsupported.</span></span>
-## <a name="properties"></a><span data-ttu-id="86c82-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="86c82-108">Properties</span></span>
-|<span data-ttu-id="86c82-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="86c82-109">Property</span></span>|<span data-ttu-id="86c82-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="86c82-110">Type</span></span>|<span data-ttu-id="86c82-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="86c82-111">Description</span></span>|
+<span data-ttu-id="bd30d-107">Uma descrição por que não há suporte para uma entidade.</span><span class="sxs-lookup"><span data-stu-id="bd30d-107">A description of why an entity is unsupported.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="bd30d-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bd30d-108">Properties</span></span>
+|<span data-ttu-id="bd30d-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bd30d-109">Property</span></span>|<span data-ttu-id="bd30d-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bd30d-110">Type</span></span>|<span data-ttu-id="bd30d-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bd30d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="86c82-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="86c82-112">message</span></span>|<span data-ttu-id="86c82-113">String</span><span class="sxs-lookup"><span data-stu-id="86c82-113">String</span></span>|<span data-ttu-id="86c82-114">Uma mensagem que explica por que não há suporte para uma entidade.</span><span class="sxs-lookup"><span data-stu-id="86c82-114">A message explaining why an entity is unsupported.</span></span>|
-|<span data-ttu-id="86c82-115">propertyName</span><span class="sxs-lookup"><span data-stu-id="86c82-115">propertyName</span></span>|<span data-ttu-id="86c82-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="86c82-116">String</span></span>|<span data-ttu-id="86c82-117">Se a mensagem está relacionada a uma propriedade específica à entidade original e, em seguida, o nome dessa propriedade.</span><span class="sxs-lookup"><span data-stu-id="86c82-117">If message is related to a specific property in the original entity, then the name of that property.</span></span>|
+|<span data-ttu-id="bd30d-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="bd30d-112">message</span></span>|<span data-ttu-id="bd30d-113">String</span><span class="sxs-lookup"><span data-stu-id="bd30d-113">String</span></span>|<span data-ttu-id="bd30d-114">Uma mensagem que explica por que não há suporte para uma entidade.</span><span class="sxs-lookup"><span data-stu-id="bd30d-114">A message explaining why an entity is unsupported.</span></span>|
+|<span data-ttu-id="bd30d-115">propertyName</span><span class="sxs-lookup"><span data-stu-id="bd30d-115">propertyName</span></span>|<span data-ttu-id="bd30d-116">String</span><span class="sxs-lookup"><span data-stu-id="bd30d-116">String</span></span>|<span data-ttu-id="bd30d-117">Se a mensagem está relacionada a uma propriedade específica à entidade original e, em seguida, o nome dessa propriedade.</span><span class="sxs-lookup"><span data-stu-id="bd30d-117">If message is related to a specific property in the original entity, then the name of that property.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="86c82-118">Relações</span><span class="sxs-lookup"><span data-stu-id="86c82-118">Relationships</span></span>
-<span data-ttu-id="86c82-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="86c82-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="86c82-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="86c82-120">JSON Representation</span></span>
-<span data-ttu-id="86c82-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="86c82-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="bd30d-118">Relações</span><span class="sxs-lookup"><span data-stu-id="bd30d-118">Relationships</span></span>
+<span data-ttu-id="bd30d-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="bd30d-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="bd30d-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bd30d-120">JSON Representation</span></span>
+<span data-ttu-id="bd30d-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bd30d-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unsupportedDeviceConfigurationDetail"
@@ -40,7 +42,6 @@ ms.locfileid: "27949770"
   "propertyName": "String"
 }
 ```
-
 
 
 

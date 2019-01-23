@@ -1,33 +1,34 @@
 ---
 title: Excluir embeddedSIMDeviceState
 description: Exclui um embeddedSIMDeviceState.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3129e06bf8af8c0dfff3c831a4d4bf7b4c90a6cf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3e926e4eedcaa352400225463f0cbd218b077289
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933306"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400582"
 ---
-# <a name="delete-embeddedsimdevicestate"></a><span data-ttu-id="9d339-103">Excluir embeddedSIMDeviceState</span><span class="sxs-lookup"><span data-stu-id="9d339-103">Delete embeddedSIMDeviceState</span></span>
+# <a name="delete-embeddedsimdevicestate"></a><span data-ttu-id="50824-103">Excluir embeddedSIMDeviceState</span><span class="sxs-lookup"><span data-stu-id="50824-103">Delete embeddedSIMDeviceState</span></span>
 
-> <span data-ttu-id="9d339-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="9d339-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9d339-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="9d339-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="50824-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="50824-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="50824-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="50824-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9d339-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="9d339-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="50824-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="50824-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9d339-107">Exclui um [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).</span><span class="sxs-lookup"><span data-stu-id="9d339-107">Deletes a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9d339-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="9d339-108">Prerequisites</span></span>
-<span data-ttu-id="9d339-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9d339-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="50824-107">Exclui um [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).</span><span class="sxs-lookup"><span data-stu-id="50824-107">Deletes a [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).</span></span>
 
-|<span data-ttu-id="9d339-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9d339-111">Permission type</span></span>|<span data-ttu-id="9d339-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="9d339-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="50824-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="50824-108">Prerequisites</span></span>
+<span data-ttu-id="50824-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="50824-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="50824-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="50824-111">Permission type</span></span>|<span data-ttu-id="50824-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="50824-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9d339-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9d339-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9d339-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9d339-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="9d339-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9d339-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9d339-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9d339-116">Not supported.</span></span>|
-|<span data-ttu-id="9d339-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9d339-117">Application</span></span>|<span data-ttu-id="9d339-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9d339-118">Not supported.</span></span>|
+|<span data-ttu-id="50824-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="50824-113">Delegated (work or school account)</span></span>|<span data-ttu-id="50824-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50824-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="50824-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50824-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="50824-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50824-116">Not supported.</span></span>|
+|<span data-ttu-id="50824-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="50824-117">Application</span></span>|<span data-ttu-id="50824-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50824-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9d339-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9d339-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50824-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50824-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +37,31 @@ ms.locfileid: "27933306"
 DELETE /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates/{embeddedSIMDeviceStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9d339-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9d339-120">Request headers</span></span>
-|<span data-ttu-id="9d339-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="9d339-121">Header</span></span>|<span data-ttu-id="9d339-122">Valor</span><span class="sxs-lookup"><span data-stu-id="9d339-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="50824-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50824-120">Request headers</span></span>
+|<span data-ttu-id="50824-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="50824-121">Header</span></span>|<span data-ttu-id="50824-122">Valor</span><span class="sxs-lookup"><span data-stu-id="50824-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9d339-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="9d339-123">Authorization</span></span>|<span data-ttu-id="9d339-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9d339-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9d339-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="9d339-125">Accept</span></span>|<span data-ttu-id="9d339-126">application/json</span><span class="sxs-lookup"><span data-stu-id="9d339-126">application/json</span></span>|
+|<span data-ttu-id="50824-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="50824-123">Authorization</span></span>|<span data-ttu-id="50824-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50824-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="50824-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="50824-125">Accept</span></span>|<span data-ttu-id="50824-126">application/json</span><span class="sxs-lookup"><span data-stu-id="50824-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9d339-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9d339-127">Request body</span></span>
-<span data-ttu-id="9d339-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9d339-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="50824-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50824-127">Request body</span></span>
+<span data-ttu-id="50824-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="50824-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9d339-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d339-129">Response</span></span>
-<span data-ttu-id="9d339-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="9d339-130">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="50824-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="50824-129">Response</span></span>
+<span data-ttu-id="50824-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="50824-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9d339-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9d339-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9d339-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9d339-132">Request</span></span>
-<span data-ttu-id="9d339-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9d339-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="50824-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="50824-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="50824-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="50824-132">Request</span></span>
+<span data-ttu-id="50824-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="50824-133">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates/{embeddedSIMDeviceStateId}
 ```
 
-### <a name="response"></a><span data-ttu-id="9d339-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="9d339-134">Response</span></span>
-<span data-ttu-id="9d339-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9d339-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="50824-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="50824-134">Response</span></span>
+<span data-ttu-id="50824-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="50824-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

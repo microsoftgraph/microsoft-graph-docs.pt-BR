@@ -1,38 +1,40 @@
 ---
 title: tipo de recurso de windowsEnrollmentStatusScreenSettings
 description: Configuração de tela do status de inscrição
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: abc48a1d63cc514d2ec887a7758e69a0ea8112a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e5ffb2827988b80b4d6563d8a92c9ccea7ac9828
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399931"
 ---
-# <a name="windowsenrollmentstatusscreensettings-resource-type"></a><span data-ttu-id="d04f1-103">tipo de recurso de windowsEnrollmentStatusScreenSettings</span><span class="sxs-lookup"><span data-stu-id="d04f1-103">windowsEnrollmentStatusScreenSettings resource type</span></span>
+# <a name="windowsenrollmentstatusscreensettings-resource-type"></a><span data-ttu-id="65c64-103">tipo de recurso de windowsEnrollmentStatusScreenSettings</span><span class="sxs-lookup"><span data-stu-id="65c64-103">windowsEnrollmentStatusScreenSettings resource type</span></span>
 
-> <span data-ttu-id="d04f1-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="d04f1-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d04f1-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="d04f1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="65c64-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="65c64-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="65c64-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="65c64-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="d04f1-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="d04f1-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="65c64-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="65c64-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d04f1-107">Configuração de tela do status de inscrição</span><span class="sxs-lookup"><span data-stu-id="d04f1-107">Enrollment status screen setting</span></span>
-## <a name="properties"></a><span data-ttu-id="d04f1-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d04f1-108">Properties</span></span>
-|<span data-ttu-id="d04f1-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d04f1-109">Property</span></span>|<span data-ttu-id="d04f1-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="d04f1-110">Type</span></span>|<span data-ttu-id="d04f1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="d04f1-111">Description</span></span>|
+<span data-ttu-id="65c64-107">Configuração de tela do status de inscrição</span><span class="sxs-lookup"><span data-stu-id="65c64-107">Enrollment status screen setting</span></span>
+
+## <a name="properties"></a><span data-ttu-id="65c64-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="65c64-108">Properties</span></span>
+|<span data-ttu-id="65c64-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="65c64-109">Property</span></span>|<span data-ttu-id="65c64-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="65c64-110">Type</span></span>|<span data-ttu-id="65c64-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="65c64-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d04f1-112">hideInstallationProgress</span><span class="sxs-lookup"><span data-stu-id="d04f1-112">hideInstallationProgress</span></span>|<span data-ttu-id="d04f1-113">Booliano</span><span class="sxs-lookup"><span data-stu-id="d04f1-113">Boolean</span></span>|<span data-ttu-id="d04f1-114">Mostrar ou ocultar o progresso da instalação para o usuário</span><span class="sxs-lookup"><span data-stu-id="d04f1-114">Show or hide installation progress to user</span></span>|
-|<span data-ttu-id="d04f1-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span><span class="sxs-lookup"><span data-stu-id="d04f1-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span></span>|<span data-ttu-id="d04f1-116">Booliano</span><span class="sxs-lookup"><span data-stu-id="d04f1-116">Boolean</span></span>|<span data-ttu-id="d04f1-117">Permitir ou bloquear um usuário utilize um dispositivo antes da instalação de perfil e o aplicativo completo</span><span class="sxs-lookup"><span data-stu-id="d04f1-117">Allow or block user to use device before profile and app installation complete</span></span>|
-|<span data-ttu-id="d04f1-118">blockDeviceSetupRetryByUser</span><span class="sxs-lookup"><span data-stu-id="d04f1-118">blockDeviceSetupRetryByUser</span></span>|<span data-ttu-id="d04f1-119">Booliano</span><span class="sxs-lookup"><span data-stu-id="d04f1-119">Boolean</span></span>|<span data-ttu-id="d04f1-120">Permitir que o usuário repetir a instalação em caso de falha de instalação</span><span class="sxs-lookup"><span data-stu-id="d04f1-120">Allow the user to retry the setup on installation failure</span></span>|
-|<span data-ttu-id="d04f1-121">allowLogCollectionOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="d04f1-121">allowLogCollectionOnInstallFailure</span></span>|<span data-ttu-id="d04f1-122">Booliano</span><span class="sxs-lookup"><span data-stu-id="d04f1-122">Boolean</span></span>|<span data-ttu-id="d04f1-123">Permitir ou bloquear o conjunto de log em caso de falha de instalação</span><span class="sxs-lookup"><span data-stu-id="d04f1-123">Allow or block log collection on installation failure</span></span>|
-|<span data-ttu-id="d04f1-124">customErrorMessage</span><span class="sxs-lookup"><span data-stu-id="d04f1-124">customErrorMessage</span></span>|<span data-ttu-id="d04f1-125">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d04f1-125">String</span></span>|<span data-ttu-id="d04f1-126">Definir a mensagem de erro personalizada para mostrar após a falha de instalação</span><span class="sxs-lookup"><span data-stu-id="d04f1-126">Set custom error message to show upon installation failure</span></span>|
-|<span data-ttu-id="d04f1-127">installProgressTimeoutInMinutes</span><span class="sxs-lookup"><span data-stu-id="d04f1-127">installProgressTimeoutInMinutes</span></span>|<span data-ttu-id="d04f1-128">Int32</span><span class="sxs-lookup"><span data-stu-id="d04f1-128">Int32</span></span>|<span data-ttu-id="d04f1-129">Definir tempo limite de progresso de instalação em minutos</span><span class="sxs-lookup"><span data-stu-id="d04f1-129">Set installation progress timeout in minutes</span></span>|
-|<span data-ttu-id="d04f1-130">allowDeviceUseOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="d04f1-130">allowDeviceUseOnInstallFailure</span></span>|<span data-ttu-id="d04f1-131">Booliano</span><span class="sxs-lookup"><span data-stu-id="d04f1-131">Boolean</span></span>|<span data-ttu-id="d04f1-132">Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação</span><span class="sxs-lookup"><span data-stu-id="d04f1-132">Allow the user to continue using the device on installation failure</span></span>|
+|<span data-ttu-id="65c64-112">hideInstallationProgress</span><span class="sxs-lookup"><span data-stu-id="65c64-112">hideInstallationProgress</span></span>|<span data-ttu-id="65c64-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="65c64-113">Boolean</span></span>|<span data-ttu-id="65c64-114">Mostrar ou ocultar o progresso da instalação para o usuário</span><span class="sxs-lookup"><span data-stu-id="65c64-114">Show or hide installation progress to user</span></span>|
+|<span data-ttu-id="65c64-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span><span class="sxs-lookup"><span data-stu-id="65c64-115">allowDeviceUseBeforeProfileAndAppInstallComplete</span></span>|<span data-ttu-id="65c64-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="65c64-116">Boolean</span></span>|<span data-ttu-id="65c64-117">Permitir ou bloquear um usuário utilize um dispositivo antes da instalação de perfil e o aplicativo completo</span><span class="sxs-lookup"><span data-stu-id="65c64-117">Allow or block user to use device before profile and app installation complete</span></span>|
+|<span data-ttu-id="65c64-118">blockDeviceSetupRetryByUser</span><span class="sxs-lookup"><span data-stu-id="65c64-118">blockDeviceSetupRetryByUser</span></span>|<span data-ttu-id="65c64-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="65c64-119">Boolean</span></span>|<span data-ttu-id="65c64-120">Permitir que o usuário repetir a instalação em caso de falha de instalação</span><span class="sxs-lookup"><span data-stu-id="65c64-120">Allow the user to retry the setup on installation failure</span></span>|
+|<span data-ttu-id="65c64-121">allowLogCollectionOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="65c64-121">allowLogCollectionOnInstallFailure</span></span>|<span data-ttu-id="65c64-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="65c64-122">Boolean</span></span>|<span data-ttu-id="65c64-123">Permitir ou bloquear o conjunto de log em caso de falha de instalação</span><span class="sxs-lookup"><span data-stu-id="65c64-123">Allow or block log collection on installation failure</span></span>|
+|<span data-ttu-id="65c64-124">customErrorMessage</span><span class="sxs-lookup"><span data-stu-id="65c64-124">customErrorMessage</span></span>|<span data-ttu-id="65c64-125">String</span><span class="sxs-lookup"><span data-stu-id="65c64-125">String</span></span>|<span data-ttu-id="65c64-126">Definir a mensagem de erro personalizada para mostrar após a falha de instalação</span><span class="sxs-lookup"><span data-stu-id="65c64-126">Set custom error message to show upon installation failure</span></span>|
+|<span data-ttu-id="65c64-127">installProgressTimeoutInMinutes</span><span class="sxs-lookup"><span data-stu-id="65c64-127">installProgressTimeoutInMinutes</span></span>|<span data-ttu-id="65c64-128">Int32</span><span class="sxs-lookup"><span data-stu-id="65c64-128">Int32</span></span>|<span data-ttu-id="65c64-129">Definir tempo limite de progresso de instalação em minutos</span><span class="sxs-lookup"><span data-stu-id="65c64-129">Set installation progress timeout in minutes</span></span>|
+|<span data-ttu-id="65c64-130">allowDeviceUseOnInstallFailure</span><span class="sxs-lookup"><span data-stu-id="65c64-130">allowDeviceUseOnInstallFailure</span></span>|<span data-ttu-id="65c64-131">Boolean</span><span class="sxs-lookup"><span data-stu-id="65c64-131">Boolean</span></span>|<span data-ttu-id="65c64-132">Permitir que o usuário continue a usar o dispositivo em caso de falha de instalação</span><span class="sxs-lookup"><span data-stu-id="65c64-132">Allow the user to continue using the device on installation failure</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d04f1-133">Relações</span><span class="sxs-lookup"><span data-stu-id="d04f1-133">Relationships</span></span>
-<span data-ttu-id="d04f1-134">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d04f1-134">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="d04f1-135">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d04f1-135">JSON Representation</span></span>
-<span data-ttu-id="d04f1-136">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d04f1-136">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="65c64-133">Relações</span><span class="sxs-lookup"><span data-stu-id="65c64-133">Relationships</span></span>
+<span data-ttu-id="65c64-134">Nenhum</span><span class="sxs-lookup"><span data-stu-id="65c64-134">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="65c64-135">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="65c64-135">JSON Representation</span></span>
+<span data-ttu-id="65c64-136">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="65c64-136">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings"
@@ -50,7 +52,6 @@ ms.locfileid: "27978568"
   "allowDeviceUseOnInstallFailure": true
 }
 ```
-
 
 
 
