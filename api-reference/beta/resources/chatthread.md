@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso de chatThread
-description: Um chatThread é uma coleção de chatMessages em Teams da Microsoft.
+title: tipo de recurso chatThread
+description: Um chatThread é uma coleção de chatMessages no Microsoft Teams.
 localization_priority: Priority
-ms.openlocfilehash: 5060d7ea846f5aedec5551aaf247642a36f73c1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 19365109c2008d52d3597b3d23fc1baefa5cfd1c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833240"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399602"
 ---
-# <a name="chatthread-resource-type"></a>tipo de recurso de chatThread
+# <a name="chatthread-resource-type"></a>tipo de recurso chatThread
 
 > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-Um chatThread é uma coleção de [chatMessages](chatmessage.md) em Teams da Microsoft.
+Um chatThread é uma coleção de [chatMessages](chatmessage.md) no Microsoft Teams.
 
-> Atualmente, chatThreads pode ser [criado no canais](../api/channel-post-chatthreads.md).  Versões de futuro API dará suporte a chatThreads existente, bem como leitura/gravação chats diretos entre os usuários que estão fora do escopo de uma equipe ou canal de leitura.
+> Atualmente, os chatThreads podem ser[criados em canais](../api/channel-post-chatthreads.md).  Os lançamentos futuros da API terão suporte para leitura dos chatThreads existentes, além de chats diretos de leitura/escrita entre os usuários que estão fora do escopo da equipe ou do canal.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar thread](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) |Inicie um novo segmento no canal especificado, fornecendo a primeira mensagem.|
+|[Criar thread](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) |Inicia uma nova thread no canal especificado, fornecendo a primeira mensagem.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Somente leitura.|
+|id|String| Somente leitura.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |rootMessage|[chatMessage](chatmessage.md)| Anulável.|
-|chatMessages|coleção [chatMessage](chatmessage.md)| Anulável.|
+|chatMessages|coleção de [chatMessage](chatmessage.md)| Anulável.|
 
-> Atualmente essas relações existe implicitamente, mas não pode ler ou gravados.  Versões beta futuras API dará suporte a isso.
+> Atualmente essas relações existem implicitamente, mas não podem ler ou escreveu.  As versões Beta futuras da API oferecerão suporte para isso.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -51,7 +51,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```
