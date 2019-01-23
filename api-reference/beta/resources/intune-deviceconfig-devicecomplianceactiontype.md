@@ -1,23 +1,24 @@
 ---
 title: tipo de enum deviceComplianceActionType
 description: Enumeração de tipo de ação de agendadas
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f1856847cb8a8ecf48ee6d13067bd24515326d89
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cd0db68a21fff79ddbab924e8a1d9bd2ff2e542d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973206"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425740"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>tipo de enum deviceComplianceActionType
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Enumeração de tipo de ação de agendadas
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -29,7 +30,6 @@ Enumeração de tipo de ação de agendadas
 |removeResourceAccessProfiles|5|Remover o recurso perfis de acesso do dispositivo|
 |pushNotification|9|Enviar notificação por push para dispositivos|
 |remoteLock|10|Bloquear remotamente o dispositivo|
-
 
 
 

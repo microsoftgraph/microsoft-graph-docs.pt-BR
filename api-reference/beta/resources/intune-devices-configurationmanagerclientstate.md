@@ -1,23 +1,24 @@
 ---
 title: tipo de enum configurationManagerClientState
 description: Estado de cliente do Gerenciador de configuração
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fc6f3f2db68273097d70ba9dccc6844b86afa3f6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 82f4b677001346f9bd32c1bc54bed6e7fbac253d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425782"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>tipo de enum configurationManagerClientState
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Estado de cliente do Gerenciador de configuração
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ Estado de cliente do Gerenciador de configuração
 |installFailed|8|Falha na instalação do agente do Gerenciador de configuração.|
 |updateFailed|11|Falha na atualização da versão x a y da versão do agente do Gerenciador de configuração. |
 |communicationError|19|O agente do Gerenciador de configuração foi capaz de acessar o serviço do Gerenciador de configuração no passado, mas agora não é mais possível. |
-
 
 
 

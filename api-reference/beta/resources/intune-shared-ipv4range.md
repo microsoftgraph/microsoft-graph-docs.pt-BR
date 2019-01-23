@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso iPv4Range
-description: Intervalo de IP V4
+description: Descreve o recurso de iPv4Range da Microsoft Graph API para Intune, que oferece suporte a vários fluxos de trabalho.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 57bcaabfc5155e6b6733de2dc228dd240515281b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9ac2656b7c79cceba70879fe478aec65a5bd7250
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425222"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 

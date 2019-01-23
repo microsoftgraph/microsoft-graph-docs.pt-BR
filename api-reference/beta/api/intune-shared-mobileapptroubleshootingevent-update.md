@@ -1,0 +1,100 @@
+---
+title: Atualizar mobileAppTroubleshootingEvent
+description: Descreve o método mobileAppTroubleshootingEvent de atualização da Microsoft Graph API para Intune, que oferece suporte a vários fluxos de trabalho.
+localization_priority: Normal
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 10bf103a3e796cb5a9e84f1c87ff0571c0bbf551
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29429127"
+---
+# <a name="update-mobileapptroubleshootingevent"></a>Atualizar mobileAppTroubleshootingEvent
+
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+
+Atualize as propriedades de um objeto [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .
+
+## <a name="prerequisites"></a>Pré-requisitos
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+
+|Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
+|:---|:---|
+|Delegado (conta corporativa ou de estudante)||
+|&nbsp; &nbsp; **Gerenciamento de dispositivo**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Solução de problemas**|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Aplicativo|Sem suporte.|
+
+## <a name="http-request"></a>Solicitação HTTP
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
+PATCH /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
+```
+
+## <a name="request-headers"></a>Cabeçalhos de solicitação
+|Cabeçalho|Valor|
+|:---|:---|
+|Autorização|&lt;Token&gt; de portador obrigatório.|
+|Aceitar|application/json|
+
+## <a name="request-body"></a>Corpo da solicitação
+No corpo da solicitação, fornece uma representação JSON para o objeto [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .
+
+A tabela a seguir mostra as propriedades que são necessárias quando você cria o [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).
+
+|Propriedade|Tipo|Descrição|
+|:---|:---|:---|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|**Solução de problemas**|
+|informações adicionais|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de chave de cadeia de caracteres e pares de valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas.|
+|ApplicationId|Cadeia de caracteres|Identificador de aplicativo Intune.|
+|correlationId|Cadeia de caracteres|ID usado para a falha no serviço de rastreamento. |
+|eventDateTime|DateTimeOffset|Hora de quando o evento ocorreu. |
+|eventName|String|Nome do evento correspondente ao evento de solução de problemas. Opcional.|
+|histórico|coleção [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Aplicativo Mobile Intune Item do histórico de solução de problemas.|
+|managedDeviceIdentifier|Cadeia de caracteres|Identificador de dispositivo criado ou coletado pelo Intune.|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Objeto que contém informações detalhadas sobre o erro e suas atualizações. |
+|userId|Cadeia de caracteres|Identificador do usuário que tentou registrar o dispositivo.|
+
+## <a name="response"></a>Resposta
+Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) no corpo da resposta.
+
+## <a name="example"></a>Exemplo
+
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+``` http
+PATCH https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}
+Content-type: application/json
+Content-length: 71
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppTroubleshootingEvent"
+}
+```
+
+### <a name="response"></a>Resposta
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 120
+
+{
+  "@odata.type": "#microsoft.graph.mobileAppTroubleshootingEvent",
+  "id": "77943c10-3c10-7794-103c-9477103c9477"
+}
+```
+
+
+
+

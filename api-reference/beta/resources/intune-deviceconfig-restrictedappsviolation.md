@@ -1,23 +1,24 @@
 ---
 title: tipo de recurso de restrictedAppsViolation
 description: Violação de perfil de configuração de aplicativos restritos por dispositivo por usuário
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 14979303c37cf189379a71b8cabc38f31e6b16b2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: dcbd7def59d17dcd6e906e1e6bef85e3a448b880
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424977"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>tipo de recurso de restrictedAppsViolation
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
 
 Violação de perfil de configuração de aplicativos restritos por dispositivo por usuário
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -30,19 +31,20 @@ Violação de perfil de configuração de aplicativos restritos por dispositivo 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
-|userId|Cadeia de caracteres|Identificador exclusivo do usuário, deve ser um Guid|
+|id|String|Identificador exclusivo para o objeto. Composto de accountId, deviceId, policyId e userId|
+|userId|String|Identificador exclusivo do usuário, deve ser um Guid|
 |userName|Cadeia de caracteres|Nome de usuário|
-|managedDeviceId|Cadeia de caracteres|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
-|deviceName|Cadeia de caracteres|Nome do dispositivo|
-|deviceConfigurationId|Cadeia de caracteres|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
-|deviceConfigurationName|Cadeia de caracteres|Nome do perfil de configuração de dispositivo|
+|managedDeviceId|String|Identificador exclusivo do dispositivo gerenciado, deve ser um Guid|
+|deviceName|String|Nome do dispositivo|
+|deviceConfigurationId|String|Identificador exclusivo do perfil do configuração de dispositivo, deve ser um Guid|
+|deviceConfigurationName|String|Nome do perfil de configuração de dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Estado restrito de aplicativos. Os valores possíveis são: `prohibitedApps` e `notApprovedApps`.|
 |restrictedApps|coleção [managedDeviceReportedApp](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Lista de aplicativos restritos violadas|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
@@ -71,7 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
 
 
 

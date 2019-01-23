@@ -4,18 +4,18 @@ description: 'Obtenha os erros gerados durante a validação de e/ou durante uma
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6a15070b68e9cf249a6b6a7841ea24b0e265a24e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926138"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425124"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
 Obtenha os erros gerados durante a validação de e/ou durante uma sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino. 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
@@ -60,7 +60,7 @@ Este é um exemplo de resposta.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationError",
+  "@odata.type": "microsoft.graph.educationSynchronizationError",
   "isCollection": true
 } -->
 ```http
