@@ -1,15 +1,15 @@
 ---
 title: 'usuário: getMemberGroups'
-description: Retorne todos os grupos que o usuário é membro de. A seleção é transitiva, ao contrário de leitura a
+description: Retorne todos os grupos dos quais o usuário é membro. A verificação foi transitiva, ao contrário de leitura a
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb8caefae8b7c3ced9630309cae51a3b74b45937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415135"
 ---
 # <a name="user-getmembergroups"></a>usuário: getMemberGroups
 
@@ -23,11 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | ~~User.Read and Group.Read.All~~, ~~User.ReadBasic.All and Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegado (conta corporativa ou de estudante)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                                                                                       |
-| Aplicativo                            | _Group.Read.All_, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Aplicativo                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
-> **Observação:** Essa API atualmente requer o `Directory.Read.All` permissão ou superior. Usando a permissão Group.Read.All, sozinhos ou em combinação com um `User.` permissão, retornará um erro. Este é um bug conhecido.
+> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usar a permissão Group.Read.All sozinha ou em combinação com uma permissão `User.` retornará um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
