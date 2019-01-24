@@ -4,12 +4,12 @@ description: 'Use esta API para criar um novo grupo, conforme especificado no co
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: c82774e72e6841f84d879ce3ce34febb8d88c2fd
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: bc83ccc3c32dbde12b93c1d22eb7640e4e72fcb8
+ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353094"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29442315"
 ---
 # <a name="create-group"></a>Criar grupo
 Use esta API para criar um novo grupo conforme especificado no corpo da solicitação. Você pode criar um dos três tipos de grupos:
@@ -146,14 +146,14 @@ Content-type: application/json
 A segunda solicitação de exemplo cria um Grupo do Office 365 com um proprietário especificado.
 <!-- {
   "blockType": "request",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
-  "description": "Group with designated owner",
+  "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
     "Unified"
@@ -163,18 +163,22 @@ Content-Type: application/json
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ],
+  "members@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/ff7cb387-6688-423c-8188-3da9532a73cc",
+    "https://graph.microsoft.com/v1.0/users/69456242-0067-49d3-ba96-9de6f2728e14"
   ]
 }
 ```
 
 #### <a name="response-2"></a>Resposta 2
-Veja a seguir o exemplo de uma resposta bem-sucedida. Ele inclui apenas propriedades padrão. Posteriormente, você pode obter a propriedade de navegação **owners** do grupo para verificar os detalhes do proprietário. 
+Veja a seguir o exemplo de uma resposta bem-sucedida. Ele inclui apenas propriedades padrão. Posteriormente, você pode acessar as propriedades de navegação de grupo **proprietários** ou **membros** para verificar o proprietário ou membros. 
 >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades padrão serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -187,7 +191,7 @@ Content-type: application/json
     "classification": null,
     "createdDateTime": "2018-12-27T22:17:07Z",
     "creationOptions": [],
-    "description": "Group with designated owner",
+    "description": "Group with designated owner and members",
     "displayName": "Operations group",
     "groupTypes": [
         "Unified"
