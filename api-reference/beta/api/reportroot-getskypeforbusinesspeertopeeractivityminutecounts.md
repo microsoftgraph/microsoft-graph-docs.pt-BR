@@ -3,16 +3,16 @@ title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts'
 description: Obtenha tendências de uso da duração em minutos e tipo de sessões ponto a ponto realizadas em sua organização. Tipos de sessões incluem áudio e vídeo.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 357c3d2e972cc70be4d517556946a6c08d56b447
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 383b3608adf9cf44e2400a2b76e7a099aa09d5ce
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945080"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530003"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivityminutecounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha tendências de uso da duração em minutos e tipo de sessões ponto a ponto realizadas em sua organização. Tipos de sessões incluem áudio e vídeo.
 
@@ -165,3 +165,11 @@ Content-Length: 251
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

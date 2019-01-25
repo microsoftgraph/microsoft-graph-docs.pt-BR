@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Miniatura
 localization_priority: Normal
-ms.openlocfilehash: 22602d534c3fd1f308a5e2bb67992bd76086c4fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 05fcb6ec4b0821a4243692aab9c15419eb2f630d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863221"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529751"
 ---
 # <a name="thumbnail-resource-type"></a>Tipo de recurso thumbnail
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O tipo de recurso **thumbnail** representa a miniatura de uma imagem, vídeo, documento ou qualquer item que tenha uma representação de bitmap.
 
@@ -48,7 +48,7 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
 | url          | Cadeia de caracteres | A URL usada para buscar o conteúdo da miniatura.                                                                                |
 | width        | Int32  | A largura da miniatura em pixels.                                                                                      |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 
 | Nome    | Tipo   | Descrição                           |
 | :------ | :----- | :------------------------------------ |
@@ -56,9 +56,14 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Thumbnail resource represents a single thumbnail for an item.",
   "section": "documentation",
-  "tocPath": "Resources/Thumbnail"
-} -->
+  "tocPath": "Resources/Thumbnail",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/thumbnail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

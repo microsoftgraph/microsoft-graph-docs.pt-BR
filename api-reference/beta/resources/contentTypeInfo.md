@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
-ms.openlocfilehash: e394d52a5f7ed5e8dce1c61d31d787d62bd36e56
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 196a71be06b4e3c02330aba21559341650caa550
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892334"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530059"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Tipo de recurso ContentTypeInfo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **contentTypeInfo** indica o tipo de conteúdo do SharePoint de um item.
 
@@ -36,10 +36,15 @@ Aqui está uma representação JSON de um recurso **contentTypeInfo**.
 | **id**         | string  | A id do tipo de conteúdo.
 | **name**       | string  | O nome do tipo de conteúdo.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeInfo"
-} -->
+  "tocPath": "Resources/ContentTypeInfo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contenttypeinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

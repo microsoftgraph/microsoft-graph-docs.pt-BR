@@ -1,20 +1,20 @@
 ---
 title: Lista de compromissos
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Obtenha uma lista de objetos bookingAppointment para o bookingbusiness especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 3334e4db060868fa7b514d50d1d879e4d0182b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95813191678d3d2dd16e9d1b18db5869c0fbf1e1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946830"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529268"
 ---
 # <a name="list-appointments"></a>Lista de compromissos
 
- > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Obtenha uma lista de objetos [bookingAppointment](../resources/bookingappointment.md) para o especificado [bookingbusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  | 
+|Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ GET /bookingBusinesses/{id}/appointments
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Para obter o conjunto de compromissos de uma empresa reservas dentro de um intervalo de datas, em vez de `$filter`, [Obtenha o calendarView](bookingbusiness-list-calendarview.md) para aquele intervalo de data. 
+Para obter o conjunto de compromissos de uma empresa reservas dentro de um intervalo de datas, em vez de `$filter`, [Obtenha o calendarView](bookingbusiness-list-calendarview.md) para aquele intervalo de data.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -243,10 +243,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List appointments",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-list-appointments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

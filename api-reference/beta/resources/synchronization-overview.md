@@ -2,16 +2,16 @@
 title: Visão geral da API de sincronização do Azure AD
 description: ') permite que você automatize a criação, manutenção e remoção de identidades em nuvem aplicativos (software como um serviço ou SaaS) como a pasta de recados, a equipe de vendas, ServiceNow e muito mais. Você pode usar a APIs de sincronização no Microsoft Graph gerenciar a sincronização de identidade programaticamente, incluindo:'
 localization_priority: Normal
-ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884683"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529555"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Sincronização de identidades do Azure Active Directory (AD Azure) (também chamada de "provisionamento") permite automatizar a criação, manutenção e remoção de identidades em nuvem (software como um serviço ou SaaS) aplicativos, como a pasta de recados, a equipe de vendas, ServiceNow, e muito mais. Você pode usar a APIs de sincronização no Microsoft Graph gerenciar a sincronização de identidade programaticamente, incluindo:
 
@@ -62,7 +62,7 @@ A API de sincronização do Azure AD usa OAuth 2.0 para autorização. Antes de 
 
 O exemplo a seguir mostra como localizar o objeto de entidade de serviço por nome para exibição.
 
-**Solicitação** 
+Solicitação 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -94,14 +94,12 @@ HTTP/1.1 200 OK
 
 O exemplo a seguir mostra como localizar o objeto de entidade de serviço por ID de aplicativo.
 
-**Solicitação** 
-<!-- { "blockType": "ignored" } -->
+Solicitação
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**Resposta**
-<!-- { "blockType": "ignored" } -->
+Resposta
 ```http
 HTTP/1.1 200 OK
 {
@@ -119,15 +117,13 @@ HTTP/1.1 200 OK
 
 O exemplo a seguir mostra como listar os trabalhos de sincronização existente.
 
-**Solicitação**
-<!-- { "blockType": "ignored" } -->
+Solicitação
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**Resposta**
-<!-- { "blockType": "ignored" } -->
+Resposta
 ```http
 HTTP/1.1 200 OK
 {
@@ -149,16 +145,14 @@ HTTP/1.1 200 OK
 ### <a name="get-synchronization-job-status"></a>Obter o status do trabalho de sincronização
 O exemplo a seguir mostra como obter o status de um trabalho de sincronização.
 
-**Solicitação**
-<!-- { "blockType": "ignored" } -->
+Solicitação
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**Resposta**
-<!-- { "blockType": "ignored" } -->
+Resposta
 ```http
     HTTP/1.1 200 OK
     {
@@ -176,14 +170,12 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ### <a name="get-synchronization-schema"></a>Obter o esquema de sincronização
 O exemplo a seguir mostra como obter o esquema de sincronização.
 
-**Solicitação**
-<!-- { "blockType": "ignored" } -->
+Solicitação
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**Resposta**
-<!-- { "blockType": "ignored" } -->
+Resposta
 ```http
 HTTP/1.1 200 OK
 {
@@ -198,3 +190,11 @@ HTTP/1.1 200 OK
 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

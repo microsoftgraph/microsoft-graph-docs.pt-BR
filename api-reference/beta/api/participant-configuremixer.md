@@ -4,16 +4,16 @@ description: Configure como áudio misto para diferentes participantes em uma co
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9b1cff0cee8ffd8d5bc3d13fa27aacc419754a6f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0be23ec4c9e7835c919328655e89880003546472
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969615"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530038"
 ---
 # <a name="participant-configuremixer"></a>participante: configureMixer
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicação     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |participantMixerLevels|coleção [participantMixerLevel](../resources/participantmixerlevel.md)| Configuração do mixer redistribui para determinados participante de áudio.|
-|clientContext|String|O contexto de cliente.|
+|ClientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
@@ -134,10 +134,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participant: configureMixer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/participant-configuremixer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

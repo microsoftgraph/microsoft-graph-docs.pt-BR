@@ -4,16 +4,16 @@ description: No Windows Azure AD para acessar o recurso de revisões, recuperar 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d2227ed6343900780df57aeece2fe511f07da04f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946809"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529275"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar accessReview revisores
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, pode recupere os revisores de um objeto [accessReview](../resources/accessreview.md) .
 ## <a name="permissions"></a>Permissões
@@ -33,7 +33,7 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Portador \{token\}. Obrigatório. |
+| Autorização | string | Token de portador Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Nenhum corpo da solicitação deve ser fornecido.
@@ -82,10 +82,15 @@ Content-type: application/json
 |[Remover accessReview revisor](accessreview-removereviewer.md) | Nenhum. |   Remova um revisor de um accessReview. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview reviewers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Retorne todos os grupos dos quais o grupo especificado é membro. A
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e485c80a06fc2d124dec728ab3ffcdfb8dcce105
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a5a6472427960d6e6179a80114fe9c9205e9e022
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921532"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529240"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retorne todos os grupos dos quais o grupo especificado é membro. A verificação é transitiva, diferentemente da leitura da propriedade de navegação [memberOf](../api/group-list-memberof.md), que retorna somente os grupos dos quais o grupo é membro direto.
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
 | Aplicativo                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** Essa API atualmente requer o `Directory.Read.All` permissão ou superior. Usando o `Group.Read.All` permissão retornará um erro. Este é um bug conhecido.
+> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando o `Group.Read.All` permissão retornará um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -106,10 +106,15 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: getMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

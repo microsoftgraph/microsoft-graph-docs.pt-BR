@@ -2,16 +2,16 @@
 title: Gerenciar a Caixa de Entrada Prioritária
 description: 'Caixa de entrada focada lhe permite exibir mensagens importantes no `Focused` guia da caixa de entrada e o restante das mensagens na caixa de entrada do `Other` guia. O sistema de classificação '
 localization_priority: Normal
-ms.openlocfilehash: 22852f4a2593d8bd624158ec4e33a90cb813a9da
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5ee5d5f9dd48faa7d0590cbbc6dfda39d8f117e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859581"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529247"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A caixa de entrada prioritária permite que você veja mensagens importantes na guia `Focused` da Caixa de Entrada e o restante das mensagens na guia `Other`. O sistema de classificação organiza inicialmente as mensagens da Caixa de Entrada de maneira padrão. Você pode corrigir e treinar o sistema ao longo do tempo por meio da interface do usuário ou programaticamente. Quanto mais você usar esse recurso, melhor o sistema poderá deduzir quais mensagens de entrada são importantes.
 
@@ -33,3 +33,11 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 [Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md) | [Listar substituições de todos os usuários](../api/inferenceclassification-list-overrides.md) |
 
 [Carregar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) | [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md) 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/manage-focused-inbox.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

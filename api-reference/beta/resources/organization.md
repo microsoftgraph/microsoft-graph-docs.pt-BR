@@ -4,16 +4,16 @@ description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 86263fe11ebf3bb25e17cbd2b950195fa122f778
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927447"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529422"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o locatário do Azure Active Directory que o usuário ou aplicativo está conectado ao. Somente as operações de leitura e a atualização são suportadas neste recurso; criar e excluir não são suportados. Herda de [directoryObject](directoryobject.md).
 
@@ -23,7 +23,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter organização](../api/organization-get.md) | [organization](organization.md) |Leia as propriedades e as relações do objeto de organização.|
+|[Obter organização](../api/organization-get.md) | [organização](organization.md) |Leia as propriedades e as relações do objeto de organização.|
 |[Update](../api/organization-update.md) | [organization](organization.md)  |Atualize o objeto organization. As únicas propriedades que podem ser atualizadas são: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** e **privacyProfile**. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -35,7 +35,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|A coleção de planos de serviço associados ao locatário. Não anulável.            |
-| businessPhones                      | String collection                                         | Número de telefone para a organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                            |
+| businessPhones                      | String collection                                         | Número de telefone da organização **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                            |
 |city|String| Nome da cidade do endereço da organização |
 |companyLastDirSyncTime|DateTimeOffset|A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |country|String| Nome do país/região do endereço da organização |
@@ -44,19 +44,19 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | deletedDateTime                    | DateTimeOffset                                                    | Representa a data e hora de quando o locatário do Azure AD foi excluído, usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.                                                                                     |
 |dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
 |displayName|String|O nome de exibição do locatário.|
-|id|Cadeia de caracteres|A ID do inquilino, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|isMultipleDataLocationsForServicesEnabled|Booliano|**true** se a organização estiver habilitada; Multi-Geo **false** se a organização não estiver habilitado Multi-Geo; **Nulo** (padrão). Somente leitura. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|Coleção de cadeias de caracteres| Não anulável.            |
+|id|String|A ID do inquilino, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|isMultipleDataLocationsForServicesEnabled|Booliano|**true** se a organização estiver habilitada; Multi-Geo **false** se a organização não estiver habilitado Multi-Geo; **Nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|marketingNotificationEmails|String collection| Não anulável.            |
 |objectType|String|Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 |postalCode|String| CEP do endereço da organização |
 |preferredLanguage|String| O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| O perfil de privacidade de uma organização.            |
 |provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)| Não anulável.            |
 |provisioningErrors|Coleção ProvisioningError| Não anulável.            |
-|securityComplianceNotificationMails|Coleção de cadeias de caracteres||
+|securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
 |state|String| Nome do estado do endereço da organização |
-|street|String| Nome da rua do endereço da organização |
+|street|Cadeia de caracteres| Nome da rua do endereço da organização |
 |technicalNotificationMails|Coleção de cadeias de caracteres| Não anulável. |
 |verifiedDomains|Coleção [VerifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável.            |
 
@@ -116,10 +116,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: Excluir uma entrada de uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 1b61c9359ca349a7f7882a204e8e474aba00444b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 13c6504753eb5987db8c0282ef2f59bca72a8d43
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968458"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530143"
 ---
 # <a name="delete-an-item-from-a-list"></a>Excluir um item de uma lista.
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remover um item de uma [list][].
 
@@ -68,10 +68,15 @@ Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Delete"
-} -->
+  "tocPath": "ListItem/Delete",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

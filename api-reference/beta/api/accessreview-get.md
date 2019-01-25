@@ -4,16 +4,16 @@ description: 'No Windows Azure AD para acessar o recurso de revisões, recuperar
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a13776b9aa215d752797b6ba2de2f477660ed31d
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: 26551f27fdf328865509cd02011f3ee2344f5e82
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016652"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529142"
 ---
 # <a name="get-accessreview"></a>Obter accessReview
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No recurso de [acesso analisa](../resources/accessreviews-root.md) Azure AD, recupere um objeto de [accessReview](../resources/accessreview.md) .  
 
@@ -38,7 +38,7 @@ GET /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Portador \{token\}. Obrigatório. |
+| Autorização | string | Token de portador Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Nenhum corpo da solicitação deve ser fornecido.
@@ -110,10 +110,15 @@ Content-type: application/json
 |[Listar meus decisões accessReview](accessreview-listmydecisions.md) |        coleção [accessReviewDecision](../resources/accessreviewdecision.md)|    Como um revisor, obtenha Minhas decisões de um accessReview.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

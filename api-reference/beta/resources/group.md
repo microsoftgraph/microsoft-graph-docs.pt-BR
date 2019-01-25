@@ -4,19 +4,18 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 50e6062eacd59e0497ec75333296669d001e2c53
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726614"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526176"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um grupo do Azure Active Directory (Azure AD), que pode ser um grupo do Office 365, uma equipe no Microsoft Teams, um grupo dinâmico ou um grupo de segurança.
-Herda de [directoryObject](directoryobject.md).
 
 Por motivos de desempenho, as operações [create](../api/group-post-groups.md), [get](../api/group-get.md) e [list](../api/group-list.md) retornam por padrão apenas um subconjunto das propriedades usadas com mais frequência. Essas propriedades _padrão_ estão listadas na seção [Propriedades](#properties). Para obter as propriedades não retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](../api/group-get.md#request-2).
 
@@ -155,7 +154,7 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 |conversations|Coleção [conversation](conversation.md)|As conversas do grupo.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| O usuário (ou aplicativo) que criou o grupo. OBSERVAÇÃO: Não definido se o usuário for um administrador. Somente leitura.|
 |Unidade|[unidade](drive.md)|Unidade padrão do grupo. Somente leitura.|
-|drives|Coleção [drive](drive.md)|As unidades do grupo. Somente leitura.|
+|unidades|Coleção [drive](drive.md)|As unidades do grupo. Somente leitura.|
 |pontos de extremidade|conjunto [Ponto de extremidade](endpoint.md)| Pontos de extremidade do grupo. Somente leitura. Anulável.|
 |eventos|Coleção [event](event.md)|Eventos do grupo.|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o grupo. Somente leitura. Anulável.|
@@ -260,10 +259,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

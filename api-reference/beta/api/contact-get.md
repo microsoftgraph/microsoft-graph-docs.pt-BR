@@ -4,16 +4,16 @@ description: Recupere as propriedades e relacionamentos de objeto de contato.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5e7064072ff3adf416f34e1aa4e2b12d0c661a65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e758a088400168ca755aae755054fcd57c1d092a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975495"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530115"
 ---
 # <a name="get-contact"></a>Obter contato
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e relacionamentos de objeto de contato.
 
@@ -43,13 +43,13 @@ Um [contato](../resources/contact.md) de um nível superior [contactFolder](../r
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-Um [contato](../resources/contact.md) contidos em uma pasta filho de um [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado no filho de um filho e assim por diante.
+Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md). O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho, e assim por diante.
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-|Nome|Valor|Descrição|
+|Nome|Value|Descrição|
 |:---------------|:--------|:-------|
 |$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relações do objeto de [contato](../resources/contact.md) para nomes com suporte. |
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta.|
@@ -164,10 +164,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get contact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/contact-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
